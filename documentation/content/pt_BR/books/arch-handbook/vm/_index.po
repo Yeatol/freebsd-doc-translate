@@ -2,12 +2,13 @@
 # Copyright (C) YEAR The FreeBSD Project
 # This file is distributed under the same license as the FreeBSD Documentation package.
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2021.
+# Alexandre Vasconcelos <alexandre@secbase.com.br>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
 "POT-Creation-Date: 2026-08-16 15:11-0300\n"
-"PO-Revision-Date: 2021-11-05 11:08+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2026-10-25 04:45+0000\n"
+"Last-Translator: Alexandre Vasconcelos <alexandre@secbase.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/documentation/booksarch-handbookvm_index/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,31 +16,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:1
 #, no-wrap
 msgid "Virtual Memory System in FreeBSD"
-msgstr ""
+msgstr "Sistema de Memória Virtual no FreeBSD"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:1
 #, no-wrap
 msgid "Chapter 7. Virtual Memory System"
-msgstr ""
+msgstr "Capítulo 7. Sistema de Memória Virtual"
 
 #. type: Title =
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:14
 #, no-wrap
 msgid "Virtual Memory System"
-msgstr ""
+msgstr "Sistema de Memória Virtual"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:51
 #, no-wrap
 msgid "Management of Physical Memory `vm_page_t`"
-msgstr ""
+msgstr "Gerenciamento da Memória Física `vm_page_t`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:54
@@ -48,6 +49,10 @@ msgid ""
 "structure. Pages of physical memory are categorized through the placement of "
 "their respective `vm_page_t` structures on one of several paging queues."
 msgstr ""
+"A memória física é gerenciada página a página por meio da estrutura "
+"`vm_page_t`. As páginas de memória física são categorizadas mediante a "
+"alocação de suas respectivas estruturas `vm_page_t` em uma de várias filas "
+"de paginação."
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:56
@@ -57,6 +62,10 @@ msgid ""
 "representing the state that it is in. Wired pages are not placed on any "
 "queue."
 msgstr ""
+"Uma página pode estar nos estados conectado (wired), ativo, inativo, em "
+"cache ou livre. Com exceção do estado conectado, a página é normalmente "
+"colocada em uma fila de lista duplamente encadeada que representa o estado "
+"em que se encontra. Páginas conectadas não são colocadas em nenhuma fila."
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:58
