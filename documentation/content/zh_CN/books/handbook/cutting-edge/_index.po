@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Information about how to keep a FreeBSD system up-to-date with freebsd-update or Git, how to rebuild and reinstall the entire base system, etc"
-msgstr ""
+msgstr "有关如何使用 freebsd-update 或 Git 保持 FreeBSD 系统为最新版本、如何重建并重新安装整个基本系统等信息"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1
@@ -76,8 +76,9 @@ msgstr "读完本章节，你将会知道："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:63
+#, fuzzy
 msgid "How to keep a FreeBSD system up-to-date with freebsd-update or Git."
-msgstr ""
+msgstr "如何使用 freebsd-update 或 Git 保持 FreeBSD 系统为最新版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:64
@@ -88,10 +89,11 @@ msgstr "如何比对已安装系统与已知原始复本间的状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:65
+#, fuzzy
 msgid ""
 "How to keep the installed documentation up-to-date with Git or documentation "
 "ports."
-msgstr ""
+msgstr "如何使用 Git 或文档 ports 保持已安装的文档为最新版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:66
@@ -114,65 +116,71 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:71
+#, fuzzy
 msgid ""
 "Properly set up the network connection (crossref:advanced-"
 "networking[advanced-networking,Advanced Networking])."
-msgstr ""
+msgstr "正确设置网络连接（crossref:advanced-networking[advanced-networking,高级网络]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:72
+#, fuzzy
 msgid ""
 "Know how to install additional third-party software (crossref:ports[ports,"
 "Installing Applications: Packages and Ports])."
-msgstr ""
+msgstr "了解如何安装其他第三方软件（crossref:ports[ports,安装应用程序：软件包和 Ports]）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:77
+#, fuzzy
 msgid ""
 "Throughout this chapter, `git` is used to obtain and update FreeBSD "
 "sources.  Optionally, the package:devel/git[] port or package may be used."
-msgstr ""
+msgstr "本章中使用 `git` 获取和更新 FreeBSD 源代码。也可以选择使用 package:devel/git[] port 或软件包。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Major and Minor Versions"
-msgstr ""
+msgstr "主要版本和次要版本"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:86
+#, fuzzy
 msgid ""
 "Since FreeBSD 6.0-RELEASE, FreeBSD releases have adhered strictly to a two-"
 "level numbering scheme.  We use the term “major version” to describe the "
 "first part of the version number, e.g. the “14” in “14.3-RELEASE”, and the "
 "term “minor version” to describe the second part of the version number, e.g. "
 "the “3” in “14.3-RELEASE”."
-msgstr ""
+msgstr "从 FreeBSD 6.0-RELEASE 开始，FreeBSD 发行版严格遵循两级编号方案。我们使用“主要版本”一词来描述版本号的第一部分，例如“14.3-RELEASE”中的“14”；使用“次要版本”一词来描述版本号的第二部分，例如“14.3-RELEASE”中的“3”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:88
+#, fuzzy
 msgid ""
 "Additionally, FreeBSD release branches have a patch level, which is omitted "
 "when zero and incremented with every batch of security advisories and errata "
 "notices, e.g. “14.3-RELEASE-p7” for the seventh batch of patches published "
 "for FreeBSD 14.3."
-msgstr ""
+msgstr "此外，FreeBSD 发行分支还有一个补丁级别；级别为零时会省略该数字，每批安全公告和勘误通知发布后，该级别都会递增。例如，针对 FreeBSD 14.3 发布的第七批补丁版本为“14.3-RELEASE-p7”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:91
+#, fuzzy
 msgid ""
 "As a consequence of the https://www.FreeBSD.org/security/#model[FreeBSD "
 "support model], FreeBSD version numbers increase monotonically within the "
 "same major version, but not across different major versions.  For instance, "
 "FreeBSD 14.2-RELEASE, 13.5-RELEASE, 14.3-RELEASE, 15.0-RELEASE, 14.4-"
 "RELEASE, and 15.1-RELEASE were released in that order."
-msgstr ""
+msgstr "根据 link:https://www.FreeBSD.org/security/#model[FreeBSD 支持模式]，FreeBSD 版本号在同一个主要版本内单调递增，但在不同主要版本之间不遵循此规律。例如，FreeBSD 14.2-RELEASE、13.5-RELEASE、14.3-RELEASE、15.0-RELEASE、14.4-RELEASE 和 15.1-RELEASE 按此顺序发布。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:92
@@ -183,31 +191,34 @@ msgstr "更新与升级 FreeBSD"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:95
+#, fuzzy
 msgid ""
 "We use the term “updating” to describe applying security or errata patches "
 "which may increment the patch level but do not increment the version number, "
 "and the term “upgrading” to describe replacing the entire base system with "
 "one with a different version number."
-msgstr ""
+msgstr "我们使用“更新”一词来描述应用安全补丁或勘误补丁的过程；此过程可能会提高补丁级别，但不会增加版本号。我们使用“升级”一词来描述将整个基本系统替换为不同版本号的系统。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Upgrade Paths"
-msgstr ""
+msgstr "升级路径"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:100
+#, fuzzy
 msgid ""
 "Once installed, FreeBSD may be updated or upgraded using crossref:cutting-"
 "edge[updating-upgrading-freebsdupdate,binary patches], crossref:cutting-"
 "edge[pkgbase,packages], or crossref:cutting-edge[makeworld,from source].  In "
 "all cases FreeBSD only supports updating or upgrading from a chronologically "
 "older version to a more recent one."
-msgstr ""
+msgstr "安装后，可以使用 crossref:cutting-edge[updating-upgrading-freebsdupdate,二进制补丁]、crossref:cutting-edge[pkgbase,软件包] 或 crossref:cutting-edge[makeworld,从源代码构建] 更新或升级 FreeBSD。所有情况下，FreeBSD 仅支持从时间上较早的版本更新或升级到较新的版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:103
+#, fuzzy
 msgid ""
 "Specifically, FreeBSD supports updating to a more recent patch level of the "
 "same version, or upgrading from a given version to either a more recent "
@@ -218,7 +229,7 @@ msgid ""
 "released in March 2026, to 15.0, released three months earlier in December "
 "2025), or skipping a major version (e.g. from 13.5 to 15.1) is neither "
 "recommended nor supported, even if the tools allow it."
-msgstr ""
+msgstr "具体而言，FreeBSD 支持更新到同一版本的较高补丁级别，也支持从指定版本升级到同一主要版本中较新的次要版本（例如从 14.3 升级到 14.4），或升级到下一个主要版本中较新的版本（例如从 14.3 升级到 15.0 或 15.1）。迁移到同一主要版本中较旧的发行版（例如从 14.4 降级到 14.3）、迁移到下一个主要版本中较旧的发行版（例如从 2026 年 3 月发布的 14.4 升级到三个月前，即 2025 年 12 月发布的 15.0），或跳过一个主要版本（例如从 13.5 升级到 15.1）均不受支持，也不建议这样做，即使相关工具允许操作。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:105
@@ -241,6 +252,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:113
+#, fuzzy
 msgid ""
 "This utility supports binary security and errata updates to FreeBSD, without "
 "the need to manually compile and install the patch or a new kernel.  Binary "
@@ -248,24 +260,26 @@ msgid ""
 "by the security team.  The list of supported releases and their estimated "
 "end-of-life dates are listed at https://www.FreeBSD.org/security/[https://"
 "www.FreeBSD.org/security/]."
-msgstr ""
+msgstr "此工具支持对 FreeBSD 应用二进制安全更新和勘误更新，无需手动编译和安装补丁或新内核。所有安全团队当前支持的架构和发行版都提供二进制更新。受支持的发行版及其预计停止支持日期列于 link:https://www.FreeBSD.org/security/[https://www.FreeBSD.org/security/]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:117
+#, fuzzy
 msgid ""
 "This utility also supports operating system upgrades to minor point releases "
 "as well as upgrades to another release branch.  Before upgrading to a new "
 "release, review its release announcement as it contains important "
 "information pertinent to the release.  Release announcements are available "
 "from https://www.FreeBSD.org/releases/[https://www.FreeBSD.org/releases/]."
-msgstr ""
+msgstr "此工具还支持将操作系统升级到次要点发行版，以及升级到其他发行分支。升级到新发行版之前，请查看其发行公告，因为其中包含与该发行版相关的重要信息。发行公告可在 link:https://www.FreeBSD.org/releases/[https://www.FreeBSD.org/releases/] 获取。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:121
+#, fuzzy
 msgid ""
 "If a man:crontab[5] utilizing the features of man:freebsd-update[8] exists, "
 "it must be disabled before upgrading the operating system."
-msgstr ""
+msgstr "如果存在使用 man:freebsd-update[8] 功能的 man:crontab[5]，必须在升级操作系统之前将其禁用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:124
@@ -370,12 +384,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:165
+#, fuzzy
 msgid ""
 "This option will only update unmodified configuration files in the specified "
 "directories.  Any changes made by the user will prevent the automatic "
 "updating of these files.  There is another option, `KeepModifiedMetadata`, "
 "which will instruct `freebsd-update` to save the changes during the merge."
-msgstr ""
+msgstr "此选项只会更新指定目录中未修改的配置文件。用户所做的任何更改都会阻止这些文件自动更新。另有一个选项 `KeepModifiedMetadata`，可指示 `freebsd-update` 在合并过程中保存这些更改。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:171
@@ -391,13 +406,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:177
+#, fuzzy
 msgid ""
 "List of directories with configuration files that `freebsd-update` should "
 "attempt to merge.  The file merge process is a series of man:diff[1] "
 "patches.  Merges are either accepted, open an editor, or cause `freebsd-"
 "update` to abort.  When in doubt, backup [.filename]#/etc# and just accept "
 "the merges."
-msgstr ""
+msgstr "列出 `freebsd-update` 应尝试合并配置文件的目录。文件合并过程由一系列 man:diff[1] 补丁组成。合并操作可能会被接受、打开编辑器，或导致 `freebsd-update` 中止。如有疑问，请备份 [.filename]#/etc# 并直接接受合并结果。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:183
@@ -440,17 +456,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:199
+#, fuzzy
 msgid ""
 "When this option is set to `yes`, `freebsd-update` will assume that the "
 "`Components` list is complete and will not attempt to make changes outside "
 "of the list.  Effectively, `freebsd-update` will attempt to update every "
 "file which belongs to the `Components` list."
-msgstr ""
+msgstr "此选项设为 `yes` 时，`freebsd-update` 会假定 `Components` 列表是完整的，不会尝试更改列表之外的内容。实际上，`freebsd-update` 会尝试更新属于 `Components` 列表的每个文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:201
+#, fuzzy
 msgid "Refer to man:freebsd-update.conf[5] for more details."
-msgstr ""
+msgstr "更多详情请参阅 man:freebsd-update.conf[5]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:203
@@ -460,12 +478,13 @@ msgstr "套用安全性修补"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:207
+#, fuzzy
 msgid ""
 "The process of applying FreeBSD security patches has been simplified, "
 "allowing an administrator to keep a system fully patched using `freebsd-"
 "update`.  More information about FreeBSD security advisories can be found in "
 "crossref:security[security-advisories,\"FreeBSD Security Advisories\"]."
-msgstr ""
+msgstr "应用 FreeBSD 安全补丁的过程已得到简化，管理员可以使用 `freebsd-update` 使系统保持完整修补状态。有关 FreeBSD 安全公告的更多信息，请参阅 crossref:security[security-advisories,\"FreeBSD 安全公告\"]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:211
@@ -482,11 +501,11 @@ msgstr ""
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:216
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# freebsd-update fetch\n"
 "# freebsd-update install\n"
-msgstr ""
+msgstr "# freebsd-update fetch\n# freebsd-update install\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:220
@@ -531,11 +550,12 @@ msgstr "@daily                                  root    freebsd-update cron\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:237
+#, fuzzy
 msgid ""
 "If patches exist, they will automatically be downloaded but will not be "
 "applied.  The `root` user will be sent an email so that the patches may be "
 "reviewed and manually installed with `freebsd-update install`."
-msgstr ""
+msgstr "如果存在补丁，系统会自动下载，但不会应用。系统会向 `root` 用户发送电子邮件，以便其审查补丁并使用 `freebsd-update install` 手动安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:239
@@ -549,11 +569,11 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# freebsd-update rollback\n"
 "Uninstalling updates... done.\n"
-msgstr ""
+msgstr "# freebsd-update rollback\n正在卸载更新……完成。\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:247
@@ -566,23 +586,25 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:252
+#, fuzzy
 msgid ""
 "Only the [.filename]#GENERIC# kernel can be automatically updated by "
 "`freebsd-update`.  If a custom kernel is installed, it will have to be "
 "rebuilt and reinstalled after `freebsd-update` finishes installing the "
 "updates.  The default kernel name is _GENERIC_.  The man:uname[1] command "
 "may be used to verify its installation."
-msgstr ""
+msgstr "`freebsd-update` 只能自动更新 [.filename]#GENERIC# 内核。如果安装了自定义内核，则必须在 `freebsd-update` 完成更新安装后重新构建并安装该内核。默认内核名称为 _GENERIC_。可以使用 man:uname[1] 命令确认内核是否已安装。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:258
+#, fuzzy
 msgid ""
 "Always keep a copy of the [.filename]#GENERIC# kernel in [.filename]#/boot/"
 "GENERIC#.  It will be helpful in diagnosing a variety of problems and in "
 "performing version upgrades.  Refer to crossref:cutting-edge[freebsd-update-"
 "custom-kernel-9x, Custom Kernels with FreeBSD 9.X and Later] for "
 "instructions on how to get a copy of the [.filename]#GENERIC# kernel."
-msgstr ""
+msgstr "务必在 [.filename]#/boot/GENERIC# 中保留一份 [.filename]#GENERIC# 内核副本。它有助于诊断各种问题和执行版本升级。有关如何获取 [.filename]#GENERIC# 内核副本的说明，请参阅 crossref:cutting-edge[freebsd-update-custom-kernel-9x,FreeBSD 9.X 及更高版本中的自定义内核]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:263
@@ -629,65 +651,74 @@ msgstr "执行主要及次要版号升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:275
+#, fuzzy
 msgid ""
 "Upgrading to a newer minor or major version can be performed by providing "
 "`freebsd-update` with a release version target."
-msgstr ""
+msgstr "升级到较新的次要版本或主要版本时，可以向 `freebsd-update` 指定目标发行版本。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:281
+#, fuzzy
 msgid ""
 "After each new `RELEASE`, FreeBSD package build servers will, for a limited "
 "period, *not* use the newer version of the operating system.  This provides "
 "continuity for the many users who do not upgrade immediately after a release "
 "announcement.  For example:"
-msgstr ""
+msgstr "每次发布新的 `RELEASE` 后，FreeBSD 软件包构建服务器会在有限时间内暂不使用较新版本的操作系统。这样可以照顾许多不会在发行公告发布后立即升级的用户。例如："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:283
+#, fuzzy
 msgid ""
 "packages for users of 13.1 and 13.2 will be built on a server running 13.1, "
 "until 13.1 reaches end of life"
-msgstr ""
+msgstr "面向 13.1 和 13.2 用户的软件包会在运行 13.1 的服务器上构建，直至 13.1 停止支持"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:285
+#, fuzzy
 msgid "and, critically:"
-msgstr ""
+msgstr "更重要的是："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:287
+#, fuzzy
 msgid "a kernel module that is built on 13.1 might *not* be suitable for 13.2."
-msgstr ""
+msgstr "在 13.1 上构建的内核模块可能不适用于 13.2。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:289
+#, fuzzy
 msgid ""
 "So, with any minor or major OS upgrade, if the package requirements include "
 "any kernel module:"
-msgstr ""
+msgstr "因此，在进行任何次要版本或主要版本的操作系统升级时，如果软件包依赖项中包含内核模块："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:291
+#, fuzzy
 msgid "*be prepared to build the module from source*."
-msgstr ""
+msgstr "*请做好从源代码构建该模块的准备*。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:298
+#, fuzzy
 msgid ""
 "If the system is running a custom kernel, make sure that a copy of the [."
 "filename]#GENERIC# kernel exists in [.filename]#/boot/GENERIC# before "
 "starting the upgrade.  Refer to crossref:cutting-edge[freebsd-update-custom-"
 "kernel-9x, Custom Kernels with FreeBSD 9.X and Later] for instructions on "
 "how to get a copy of the [.filename]#GENERIC# kernel."
-msgstr ""
+msgstr "如果系统运行的是自定义内核，请在开始升级前确认 [.filename]#/boot/GENERIC# 中存在 [.filename]#GENERIC# 内核副本。有关如何获取 [.filename]#GENERIC# 内核副本的说明，请参阅 crossref:cutting-edge[freebsd-update-custom-kernel-9x,FreeBSD 9.X 及更高版本中的自定义内核]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:301
+#, fuzzy
 msgid ""
 "Before upgrading to a new version, ensure the existing FreeBSD installation "
 "is up to date with respect to security and errata patches:"
-msgstr ""
+msgstr "升级到新版本之前，请确保现有 FreeBSD 安装已应用最新的安全补丁和勘误补丁："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:309
@@ -702,9 +733,9 @@ msgstr "在FreeBSD 9.0系统执行以下指令，将会把系统升级至FreeBSD
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# freebsd-update -r 13.2-RELEASE upgrade\n"
-msgstr ""
+msgstr "# freebsd-update -r 13.2-RELEASE upgrade\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:318
@@ -720,39 +751,39 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Looking up update.FreeBSD.org mirrors... 1 mirrors found.\n"
 "Fetching metadata signature for 13.1-RELEASE from update1.FreeBSD.org... done.\n"
 "Fetching metadata index... done.\n"
 "Inspecting system... done.\n"
-msgstr ""
+msgstr "正在查找 update.FreeBSD.org 镜像……找到 1 个镜像。\n正在从 update1.FreeBSD.org 获取 13.1-RELEASE 的元数据签名……完成。\n正在获取元数据索引……完成。\n正在检查系统……完成。\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "The following components of FreeBSD seem to be installed:\n"
 "kernel/smp src/base src/bin src/contrib src/crypto src/etc src/games\n"
 "src/gnu src/include src/krb5 src/lib src/libexec src/release src/rescue\n"
 "src/sbin src/secure src/share src/sys src/tools src/ubin src/usbin\n"
 "world/base world/info world/lib32 world/manpages\n"
-msgstr ""
+msgstr "以下 FreeBSD 组件似乎已安装：\nkernel/smp src/base src/bin src/contrib src/crypto src/etc src/games\nsrc/gnu src/include src/krb5 src/lib src/libexec src/release src/rescue\nsrc/sbin src/secure src/share src/sys src/tools src/ubin src/usbin\nworld/base world/info world/lib32 world/manpages\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "The following components of FreeBSD do not seem to be installed:\n"
 "kernel/generic world/catpages world/dict world/doc world/games\n"
 "world/proflibs\n"
-msgstr ""
+msgstr "以下 FreeBSD 组件似乎未安装：\nkernel/generic world/catpages world/dict world/doc world/games\nworld/proflibs\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Does this look reasonable (y/n)? y\n"
-msgstr ""
+msgstr "这样看起来合理吗（y/n）？ y\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:341
@@ -774,13 +805,13 @@ msgstr "当使用自定义核心，上述的步骤将会产生如下的警告：
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "WARNING: This system is running a \"MYKERNEL\" kernel, which is not a\n"
 "kernel configuration distributed as part of FreeBSD 13.1-RELEASE.\n"
 "This kernel will not be updated: you MUST update the kernel manually\n"
 "before running \"/usr/sbin/freebsd-update install\"\n"
-msgstr ""
+msgstr "警告：此系统运行的是“MYKERNEL”内核，该内核配置并非 FreeBSD 13.1-RELEASE 的发行内容。\n此内核不会更新：运行“/usr/sbin/freebsd-update install”之前，必须手动更新内核\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:354
@@ -831,23 +862,24 @@ msgstr ""
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:374
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:410
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# freebsd-update install\n"
-msgstr ""
+msgstr "# freebsd-update install\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:381
+#, fuzzy
 msgid ""
 "The kernel and kernel modules will be patched first.  If the system is "
 "running with a custom kernel, use man:nextboot[8] to set the kernel for the "
 "next boot to the updated [.filename]#/boot/GENERIC#:"
-msgstr ""
+msgstr "首先会修补内核和内核模块。如果系统运行的是自定义内核，请使用 man:nextboot[8] 将下次启动的内核设置为已更新的 [.filename]#/boot/GENERIC#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# nextboot -k GENERIC\n"
-msgstr ""
+msgstr "# nextboot -k GENERIC\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:394
@@ -877,9 +909,9 @@ msgstr "机器现在应使用更新过的核心重启："
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:401
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1104
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# shutdown -r now\n"
-msgstr ""
+msgstr "# shutdown -r now\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:406
@@ -903,11 +935,12 @@ msgstr "取决于是否有任何程序库版本编号冲突，也可能只有两
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:420
+#, fuzzy
 msgid ""
 "The upgrade is now complete.  If this was a major version upgrade, reinstall "
 "all ports and packages as described in crossref:cutting-edge[freebsdupdate-"
 "portsrebuild, Upgrading Packages After a Major Version Upgrade]."
-msgstr ""
+msgstr "升级现已完成。如果这是一次主要版本升级，请按照 crossref:cutting-edge[freebsdupdate-portsrebuild,主要版本升级后升级软件包] 中的说明重新安装所有 ports 和软件包。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:422
@@ -917,13 +950,14 @@ msgstr "在FreeBSD 9.X及之后版本自定义核心"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:427
+#, fuzzy
 msgid ""
 "Before using `freebsd-update`, ensure that a copy of the [."
 "filename]#GENERIC# kernel exists in [.filename]#/boot/GENERIC#.  If a custom "
 "kernel has only been built once, the kernel in [.filename]#/boot/kernel.old# "
 "is the `GENERIC` kernel.  Simply rename this directory to [.filename]#/boot/"
 "GENERIC#."
-msgstr ""
+msgstr "使用 `freebsd-update` 之前，请确保 [.filename]#/boot/GENERIC# 中存在 [.filename]#GENERIC# 内核副本。如果自定义内核只构建过一次，那么 [.filename]#/boot/kernel.old# 中的内核就是 `GENERIC` 内核。只需将此目录重命名为 [.filename]#/boot/GENERIC#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:431
@@ -941,42 +975,45 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:437
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount /media\n"
 "# cd /media/usr/freebsd-dist\n"
 "# tar -C/ -xvf kernel.txz boot/kernel/kernel\n"
-msgstr ""
+msgstr "# mount /media\n# cd /media/usr/freebsd-dist\n# tar -C/ -xvf kernel.txz boot/kernel/kernel\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:440
+#, fuzzy
 msgid ""
 "Alternately, the `GENERIC` kernel may be rebuilt and installed from source:"
-msgstr ""
+msgstr "也可以从源代码重新构建并安装 `GENERIC` 内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# make kernel __MAKE_CONF=/dev/null SRCCONF=/dev/null\n"
-msgstr ""
+msgstr "# cd /usr/src\n# make kernel __MAKE_CONF=/dev/null SRCCONF=/dev/null\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:450
+#, fuzzy
 msgid ""
 "For this kernel to be identified as the `GENERIC` kernel by `freebsd-"
 "update`, the [.filename]#GENERIC# configuration file must not have been "
 "modified in any way.  It is also suggested that the kernel is built without "
 "any other special options."
-msgstr ""
+msgstr "要让 `freebsd-update` 将此内核识别为 `GENERIC` 内核，必须确保 [.filename]#GENERIC# 配置文件未经过任何修改。此外，建议构建内核时不要使用其他特殊选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:452
+#, fuzzy
 msgid ""
 "Rebooting into the [.filename]#GENERIC# kernel is not required as `freebsd-"
 "update` only needs [.filename]#/boot/GENERIC# to exist."
-msgstr ""
+msgstr "无需重新启动进入 [.filename]#GENERIC# 内核，因为 `freebsd-update` 只要求 [.filename]#/boot/GENERIC# 存在。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:454
@@ -986,6 +1023,7 @@ msgstr "主要版号升级后的套件升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:461
+#, fuzzy
 msgid ""
 "Generally, installed applications will continue to work without problems "
 "after minor version upgrades.  Major versions use different Application "
@@ -993,7 +1031,7 @@ msgid ""
 "After a major version upgrade, all installed packages and ports need to be "
 "upgraded.  Packages can be upgraded using `pkg upgrade`.  To upgrade "
 "installed ports, use a utility such as package:ports-mgmt/portmaster[]."
-msgstr ""
+msgstr "通常，已安装的应用程序在次要版本升级后仍可正常运行。主要版本使用不同的应用程序二进制接口（ABI），这会导致大多数第三方应用程序无法运行。主要版本升级后，必须升级所有已安装的软件包和 ports。可以使用 `pkg upgrade` 升级软件包。要升级已安装的 ports，可使用 package:ports-mgmt/portmaster[] 等工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:465
@@ -1011,9 +1049,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg-static upgrade -f\n"
-msgstr ""
+msgstr "# pkg-static upgrade -f\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:472
@@ -1028,9 +1066,9 @@ msgstr "重新编译所有已安装的应用程序可以执行以下指令来完
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:476
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# portmaster -af\n"
-msgstr ""
+msgstr "# portmaster -af\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:480
@@ -1058,11 +1096,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:491
+#, fuzzy
 msgid ""
 "If the [.filename]#GENERIC# kernel was temporarily used, this is the time to "
 "build and install a new custom kernel using the instructions in crossref:"
 "kernelconfig[kernelconfig,Configuring the FreeBSD Kernel]."
-msgstr ""
+msgstr "如果之前临时使用了 [.filename]#GENERIC# 内核，现在就应按照 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明构建并安装新的自定义内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:494
@@ -1094,6 +1133,7 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:508
+#, fuzzy
 msgid ""
 "This command is not a replacement for a real IDS such as package:security/"
 "snort[].  As `freebsd-update` stores data on disk, the possibility of "
@@ -1104,7 +1144,7 @@ msgid ""
 "device.  An alternative method for providing IDS functionality using a built-"
 "in utility is described in crossref:security[security-ids,\"Binary "
 "Verification\"]"
-msgstr ""
+msgstr "此命令不能替代 package:security/snort[] 等真正的 IDS。由于 `freebsd-update` 会在磁盘上存储数据，因此存在数据遭篡改的可能。使用 `kern.securelevel` 并在不使用时将 `freebsd-update` 数据存储在只读文件系统上，可以降低这种风险；更好的解决方案是将系统与安全磁盘（例如 DVD 或妥善保管的外置 USB 磁盘设备）进行比较。关于使用内置工具实现 IDS 功能的替代方法，请参阅 crossref:security[security-ids,\"二进制验证\"]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:511
@@ -1114,9 +1154,9 @@ msgstr "要开始比对，需指定输出的文件来储存结果："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:515
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# freebsd-update IDS >> outfile.ids\n"
-msgstr ""
+msgstr "# freebsd-update IDS >> outfile.ids\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:518
@@ -1142,14 +1182,14 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cat outfile.ids | awk '{ print $1 }' | more\n"
 "/etc/master.passwd\n"
 "/etc/motd\n"
 "/etc/passwd\n"
 "/etc/pf.conf\n"
-msgstr ""
+msgstr "# cat outfile.ids | awk '{ print $1 }' | more\n/etc/master.passwd\n/etc/motd\n/etc/passwd\n/etc/pf.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:536
@@ -1177,11 +1217,12 @@ msgstr "更新源码"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:541
+#, fuzzy
 msgid ""
 "The following manuals describe the upgrade process of bootcode and boot "
 "loaders: man:gpart[8], man:gptboot[8], man:gptzfsboot[8], and man:loader."
 "efi[8]."
-msgstr ""
+msgstr "以下手册介绍了引导代码和引导加载程序的升级过程：man:gpart[8]、man:gptboot[8]、man:gptzfsboot[8] 和 man:loader.efi[8]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:543
@@ -1191,13 +1232,14 @@ msgstr "更新文件集"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:547
+#, fuzzy
 msgid ""
 "Documentation is an integral part of the FreeBSD operating system.  While an "
 "up-to-date version of the FreeBSD documentation is always available on the "
 "FreeBSD web site (link:https://docs.FreeBSD.org[Documentation Portal]), it "
 "can be handy to have an up-to-date, local copy of the FreeBSD website, "
 "handbooks, FAQ, and articles."
-msgstr ""
+msgstr "文档是 FreeBSD 操作系统不可或缺的一部分。虽然 FreeBSD 网站上始终提供最新版本的 FreeBSD 文档（link:https://docs.FreeBSD.org[文档门户]），但拥有一份本地最新副本也很方便，其中包括 FreeBSD 网站、手册、常见问题解答和文章。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:549
@@ -1209,12 +1251,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:552
+#, fuzzy
 msgid ""
 "For information on editing and submitting corrections to the documentation, "
 "refer to the FreeBSD Documentation Project Primer for New Contributors "
 "(extref:{fdp-primer}[FreeBSD Documentation Project Primer for New "
 "Contributors])."
-msgstr ""
+msgstr "有关如何编辑文档以及提交更正的信息，请参阅《FreeBSD 文档项目新贡献者入门指南》（extref:{fdp-primer}[FreeBSD 文档项目新贡献者入门指南]）。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:554
@@ -1224,24 +1267,26 @@ msgstr "自源码更新说明文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:558
+#, fuzzy
 msgid ""
 "Rebuilding the FreeBSD documentation from source requires a collection of "
 "tools which are not part of the FreeBSD base system.  The required tools can "
 "be installed following extref:{fdp-primer}overview[these steps, overview-"
 "quick-start] from the FreeBSD Documentation Project Primer."
-msgstr ""
+msgstr "从源代码重新构建 FreeBSD 文档需要一组不属于 FreeBSD 基本系统的工具。可以按照《FreeBSD 文档项目新贡献者入门指南》中的 extref:{fdp-primer}overview[这些步骤，快速入门概述] 安装所需工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:560
+#, fuzzy
 msgid ""
 "Once installed, use `git` to fetch a clean copy of the documentation source:"
-msgstr ""
+msgstr "安装完成后，使用 `git` 获取一份干净的文档源代码副本："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:564
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git clone https://git.FreeBSD.org/doc.git /usr/doc\n"
-msgstr ""
+msgstr "# git clone https://git.FreeBSD.org/doc.git /usr/doc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:568
@@ -1258,9 +1303,9 @@ msgstr "往后更新文件源码可执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:574
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git pull\n"
-msgstr ""
+msgstr "# git pull\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:578
@@ -1275,16 +1320,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:580
+#, fuzzy
 msgid "A full update may be performed by typing:"
-msgstr ""
+msgstr "可以通过输入以下命令执行完整更新："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:585
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/doc\n"
 "# make\n"
-msgstr ""
+msgstr "# cd /usr/doc\n# make\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:588
@@ -1375,13 +1421,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:613
+#, fuzzy
 msgid ""
 "FreeBSD-CURRENT should _not_ be considered a fast-track to getting new "
 "features before the next release as pre-release features are not yet fully "
 "tested and most likely contain bugs.  It is not a quick way of getting bug "
 "fixes as any given commit is just as likely to introduce new bugs as to fix "
 "existing ones.  FreeBSD-CURRENT is not in any way \"officially supported\"."
-msgstr ""
+msgstr "FreeBSD-CURRENT __不应__被视为在下一个版本发布前获取新功能的捷径，因为预发布功能尚未经过充分测试，而且很可能包含错误。它也不是快速获取错误修复的方式，因为任何给定的提交都同样可能引入新错误或修复现有错误。FreeBSD-CURRENT 并非任何意义上的“官方支持”版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:615
@@ -1390,36 +1437,40 @@ msgstr "若要追踪FreeBSD-CURRENT："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:617
+#, fuzzy
 msgid ""
 "Join the {freebsd-current} and the {dev-commits-src-main} lists. This is "
 "_essential_ in order to see the comments that people are making about the "
 "current state of the system and to receive important bulletins about the "
 "current state of FreeBSD-CURRENT."
-msgstr ""
+msgstr "加入 {freebsd-current} 和 {dev-commits-src-main} 邮件列表。要了解人们对系统当前状态的评论，并接收有关 FreeBSD-CURRENT 当前状态的重要公告，这__至关重要__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:619
+#, fuzzy
 msgid ""
 "The {dev-commits-src-main} list records the commit log entry for each change "
 "as it is made, along with any pertinent information on possible side effects."
-msgstr ""
+msgstr "{dev-commits-src-main} 邮件列表会记录每项更改的提交日志条目，以及有关潜在副作用的任何相关信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:622
+#, fuzzy
 msgid ""
 "To join these lists, go to {mailing-lists}, click on the list to subscribe "
 "to, and follow the instructions.  In order to track changes to the whole "
 "source tree, not just the changes to FreeBSD-CURRENT, subscribe to the {dev-"
 "commits-src-all}."
-msgstr ""
+msgstr "要加入这些邮件列表，请访问 {mailing-lists}，点击要订阅的列表，然后按照说明操作。要跟踪整个源代码树的更改，而不仅仅是 FreeBSD-CURRENT 的更改，请订阅 {dev-commits-src-all}。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:623
+#, fuzzy
 msgid ""
 "Synchronize with the FreeBSD-CURRENT sources. Typically, `git` is used to "
 "check out the -CURRENT code from the `main` branch of the FreeBSD Git "
 "repository (see crossref:mirrors[git,“Using Git”] for details)."
-msgstr ""
+msgstr "与 FreeBSD-CURRENT 源代码同步。通常使用 `git` 从 FreeBSD Git 仓库的 `main` 分支检出 -CURRENT 代码（详情请参见 crossref:mirrors[git,“使用 Git”]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:624
@@ -1436,13 +1487,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:628
+#, fuzzy
 msgid ""
 "Before compiling FreeBSD-CURRENT, read [.filename]#/usr/src/Makefile# very "
 "carefully and follow the instructions in crossref:cutting-edge[makeworld, "
 "Updating FreeBSD from Source].  Read the {freebsd-current} and [.filename]#/"
 "usr/src/UPDATING# to stay up-to-date on other bootstrapping procedures that "
 "sometimes become necessary on the road to the next release."
-msgstr ""
+msgstr "在编译 FreeBSD-CURRENT 之前，请仔细阅读 [.filename]#/usr/src/Makefile#，并遵循 crossref:cutting-edge[makeworld, 从源代码更新 FreeBSD] 中的说明。请阅读 {freebsd-current} 和 [.filename]#/usr/src/UPDATING#，以了解在迈向下一个版本的过程中有时需要执行的其他引导程序步骤的最新信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:629
@@ -1516,6 +1568,7 @@ msgstr "若要追踪FreeBSD-CURRENT："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:649
+#, fuzzy
 msgid ""
 "Join the {freebsd-stable} in order to stay informed of build dependencies "
 "that may appear in FreeBSD-STABLE or any other issues requiring special "
@@ -1523,158 +1576,173 @@ msgid ""
 "they are contemplating some controversial fix or update, giving the users a "
 "chance to respond if they have any issues to raise concerning the proposed "
 "change."
-msgstr ""
+msgstr "加入 {freebsd-stable}，以了解 FreeBSD-STABLE 中可能出现的构建依赖项或任何其他需要特别注意的问题。开发人员在考虑有争议的修复或更新时，也会在此邮件列表中发布公告，让用户有机会对拟议的更改提出意见。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:653
+#, fuzzy
 msgid ""
 "Join the relevant git list for the branch being tracked.  For example, users "
 "tracking the {betarel-current-major}-STABLE branch should join the {dev-"
 "commits-src-branches}.  This list records the commit log entry for each "
 "change as it is made, along with any pertinent information on possible side "
 "effects."
-msgstr ""
+msgstr "加入与所跟踪分支相关的 Git 邮件列表。例如，跟踪 {betarel-current-major}-STABLE 分支的用户应加入 {dev-commits-src-branches}。此列表会记录每项更改的提交日志条目，以及有关潜在副作用的任何相关信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:656
+#, fuzzy
 msgid ""
 "To join these lists, go to {mailing-lists}, click on the list to subscribe "
 "to, and follow the instructions.  In order to track changes for the whole "
 "source tree, subscribe to {dev-commits-src-all}."
-msgstr ""
+msgstr "要加入这些邮件列表，请访问 {mailing-lists}，点击要订阅的列表，然后按照说明操作。要跟踪整个源代码树的更改，请订阅 {dev-commits-src-all}。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:657
+#, fuzzy
 msgid ""
 "To install a new FreeBSD-STABLE system, install the most recent FreeBSD-"
 "STABLE release from the crossref:mirrors[mirrors,FreeBSD mirror sites] or "
 "use a monthly snapshot built from FreeBSD-STABLE. Refer to link:https://www."
 "FreeBSD.org/snapshots/[www.freebsd.org/snapshots] for more information about "
 "snapshots."
-msgstr ""
+msgstr "要安装新的 FreeBSD-STABLE 系统，请从 crossref:mirrors[mirrors,FreeBSD 镜像站点] 安装最新的 FreeBSD-STABLE 版本，或使用基于 FreeBSD-STABLE 构建的每月快照。有关快照的更多信息，请参阅 link:https://www.FreeBSD.org/snapshots/[www.freebsd.org/snapshots]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:660
+#, fuzzy
 msgid ""
 "To compile or upgrade an existing FreeBSD system to FreeBSD-STABLE, use "
 "`git` to check out the source for the desired branch.  Branch names, such as "
 "`stable/13`, are listed at link:https://www.FreeBSD.org/releng/[www.freebsd."
 "org/releng]."
-msgstr ""
+msgstr "要将现有 FreeBSD 系统编译或升级到 FreeBSD-STABLE，请使用 `git` 检出所需分支的源代码。分支名称（例如 `stable/13`）列于 link:https://www.FreeBSD.org/releng/[www.freebsd.org/releng]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:663
+#, fuzzy
 msgid ""
 "Before compiling or upgrading to FreeBSD-STABLE , read [.filename]#/usr/src/"
 "Makefile# carefully and follow the instructions in crossref:cutting-"
 "edge[makeworld, Updating FreeBSD from Source]. Read the {freebsd-stable} and "
 "[.filename]#/usr/src/UPDATING# to keep up-to-date on other bootstrapping "
 "procedures that sometimes become necessary on the road to the next release."
-msgstr ""
+msgstr "在编译或升级到 FreeBSD-STABLE 之前，请仔细阅读 [.filename]#/usr/src/Makefile#，并遵循 crossref:cutting-edge[makeworld, 从源代码更新 FreeBSD] 中的说明。请阅读 {freebsd-stable} 和 [.filename]#/usr/src/UPDATING#，以了解在迈向下一个版本的过程中有时需要执行的其他引导程序步骤的最新信息。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:665
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The N-number"
-msgstr ""
+msgstr "N 编号"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:669
+#, fuzzy
 msgid ""
 "When tracking down bugs it is important to know which versions of the source "
 "code have been used to create the system exhibiting an issue.  FreeBSD "
 "provides version information compiled into the kernel.  man:uname[1] "
 "retrieves this information, for example:"
-msgstr ""
+msgstr "排查错误时，了解用于构建出现问题的系统的源代码版本非常重要。FreeBSD 会将版本信息编译进内核。可以使用 man:uname[1] 获取这些信息，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:673
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% uname -v\n"
 "FreeBSD 14.0-CURRENT #112 main-n247514-031260d64c18: Tue Jun 22 20:43:19 MDT 2021     fred@machine:/usr/home/fred/obj/usr/home/fred/git/head/amd64.amd64/sys/FRED\n"
-msgstr ""
+msgstr "% uname -v\nFreeBSD 14.0-CURRENT #112 main-n247514-031260d64c18: Tue Jun 22 20:43:19 MDT 2021     fred@machine:/usr/home/fred/obj/usr/home/fred/git/head/amd64.amd64/sys/FRED\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:676
+#, fuzzy
 msgid ""
 "The final field gives information regarding the kernel name, the person that "
 "built it, and the location that it was compiled in.  Looking at the 4th "
 "field, it is made up of several parts:"
-msgstr ""
+msgstr "最后一个字段提供内核名称、构建者以及编译位置的信息。第 4 个字段由几个部分组成："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:679
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "main-n247514-031260d64c18\n"
-msgstr ""
+msgstr "main-n247514-031260d64c18\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:684
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "main\t\t<.>\n"
 "n247514\t\t<.>\n"
 "031260d64c18\t<.>\n"
 "\t\t<.>\n"
-msgstr ""
+msgstr "main\t\t<.>\nn247514\t\t<.>\n031260d64c18\t<.>\n\t\t<.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:688
+#, fuzzy
 msgid ""
 "Git branch name.  Note: comparisons of n-numbers are only valid on branches "
 "published by the project (`main`, `stable/XX` and `releng/XX`).  Local "
 "branches will have n-numbers that will overlap commits of their parent "
 "branch."
-msgstr ""
+msgstr "Git 分支名称。注意：只有在项目发布的分支（`main`、`stable/XX` 和 `releng/XX`）上，N 编号之间的比较才有效。本地分支的 N 编号可能与其父分支中的提交编号重叠。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:689
+#, fuzzy
 msgid ""
 "The n-number is a linear count of commits back to the start of the Git "
 "repository starting with the Git hash included in the line."
-msgstr ""
+msgstr "N 编号是从 Git 仓库起始处到当前提交的线性提交计数，起始点为该行中包含的 Git 哈希值。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:690
+#, fuzzy
 msgid "Git hash of the checked out tree"
-msgstr ""
+msgstr "已检出树的 Git 哈希值"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:692
+#, fuzzy
 msgid ""
 "Sometimes a suffix of `-dirty` is present when the kernel was built in a "
 "tree with uncommitted changes.  It is absent in this example because the "
 "FRED kernel was built from a pristine checkout."
-msgstr ""
+msgstr "如果内核是在包含未提交更改的代码树中构建的，有时会带有 `-dirty` 后缀。本例中没有该后缀，因为 FRED 内核是在干净检出的代码树中构建的。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:695
+#, fuzzy
 msgid ""
 "The `git rev-list` command is used to find the n-number corresponding to a "
 "Git hash.  For example:"
-msgstr ""
+msgstr "使用 `git rev-list` 命令查找与 Git 哈希值对应的 N 编号。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:699
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git rev-list --first-parent --count 031260d64c18 <.>\n"
 "247514 <.>\n"
-msgstr ""
+msgstr "% git rev-list --first-parent --count 031260d64c18 <.>\n247514 <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:701
+#, fuzzy
 msgid "git hash to translate (the hash from the above example is reused)"
-msgstr ""
+msgstr "要转换的 Git 哈希值（重用上例中的哈希值）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:702
+#, fuzzy
 msgid "The n-number."
-msgstr ""
+msgstr "N 编号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:708
+#, fuzzy
 msgid ""
 "Usually this number is not all that important.  However, when bug fixes are "
 "committed, this number makes it easy to quickly determine whether the fix is "
@@ -1686,7 +1754,7 @@ msgid ""
 "shallow Git clones are used, n-numbers cannot be compared reliably, as the "
 "git rev-list command counts all revisions in the repository, which a shallow "
 "clone omits."
-msgstr ""
+msgstr "通常，这个编号并不那么重要。但是，提交错误修复后，可以通过这个编号快速确定当前运行的系统是否包含该修复。开发人员通常会提及提交的哈希值（或提供包含该哈希值的 URL），而不是 N 编号，因为哈希值是更容易查看的更改标识符，而 N 编号则不是。安全公告和勘误通知也会注明 N 编号，可直接与系统中的编号进行比较。使用浅克隆 Git 仓库时，无法可靠地比较 N 编号，因为 git rev-list 命令会统计仓库中的所有修订版本，而浅克隆省略了其中一部分。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:710
@@ -1733,37 +1801,40 @@ msgstr ""
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:727
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1035
+#, fuzzy
 msgid ""
 "When switching from man:mergemaster[8] to man:etcupdate[8], the first run "
 "might merge changes incorrectly generating spurious conflicts.  To prevent "
 "this, perform the following steps *before* updating sources and building the "
 "new world:"
-msgstr ""
+msgstr "从 man:mergemaster[8] 切换到 man:etcupdate[8] 时，首次运行可能会错误地合并更改，从而产生不必要的冲突。为避免这种情况，请在更新源代码并构建新系统之前执行以下步骤："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:732
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1040
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# etcupdate extract <.>\n"
 "# etcupdate diff <.>\n"
-msgstr ""
+msgstr "# etcupdate extract <.>\n# etcupdate diff <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:735
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1043
+#, fuzzy
 msgid ""
 "Bootstrap the database of stock [.filename]#/etc# files; for more "
 "information see man:etcupdate[8]."
-msgstr ""
+msgstr "初始化标准 [.filename]#/etc# 文件的数据库；更多信息请参阅 man:etcupdate[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:737
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1045
+#, fuzzy
 msgid ""
 "Check the diff after bootstrapping. Trim any local changes that are no "
 "longer needed to reduce the chance of conflicts in future updates."
-msgstr ""
+msgstr "初始化后检查差异。删除不再需要的本地更改，以降低未来更新时发生冲突的可能性。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:742
@@ -1772,7 +1843,7 @@ msgstr "更新并编译"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:756
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# git -C /usr/src pull <.>\n"
 "check /usr/src/UPDATING  <.>\n"
@@ -1785,15 +1856,16 @@ msgid ""
 "# make installworld    <.>\n"
 "# etcupdate -B         <.>\n"
 "# shutdown -r now      <.>\n"
-msgstr ""
+msgstr "# git -C /usr/src pull <.>\ncheck /usr/src/UPDATING  <.>\n# cd /usr/src          <.>\n# make -j4 buildworld  <.>\n# make -j4 kernel      <.>\n# shutdown -r now      <.>\n# etcupdate -p         <.>\n# cd /usr/src          <.>\n# make installworld    <.>\n# etcupdate -B         <.>\n# shutdown -r now      <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:760
+#, fuzzy
 msgid ""
 "Get the latest version of the source. See crossref:cutting-edge[updating-src-"
 "obtaining-src, Updating the Source] for more information on obtaining and "
 "updating source."
-msgstr ""
+msgstr "获取最新版本的源代码。有关获取和更新源代码的更多信息，请参阅 crossref:cutting-edge[updating-src-obtaining-src, 更新源代码]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:762
@@ -1820,10 +1892,11 @@ msgstr "编译世界（World），即除了核心（Kernel）外的所有东西�
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:768
+#, fuzzy
 msgid ""
 "Compile and install the kernel. This is equivalent to `make buildkernel "
 "installkernel`."
-msgstr ""
+msgstr "编译并安装内核。这相当于执行 `make buildkernel installkernel`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:770
@@ -1833,10 +1906,11 @@ msgstr "重新启动系统以使用新的核心。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:772
+#, fuzzy
 msgid ""
 "Update and merge configuration files in [.filename]#/etc/# required before "
 "installworld."
-msgstr ""
+msgstr "更新并合并 installworld 之前所需的 [.filename]#/etc/# 配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:776
@@ -1846,8 +1920,9 @@ msgstr "安装世界。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:778
+#, fuzzy
 msgid "Update and merge configuration files in [.filename]#/etc/#."
-msgstr ""
+msgstr "更新并合并 [.filename]#/etc/# 配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:780
@@ -1879,34 +1954,36 @@ msgstr "更新源码"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:793
+#, fuzzy
 msgid ""
 "FreeBSD source code is located in [.filename]#/usr/src/#.  The preferred "
 "method of updating this source is through the Git version control system.  "
 "Verify that the source code is under version control:"
-msgstr ""
+msgstr "FreeBSD 源代码位于 [.filename]#/usr/src/#。更新此源代码的首选方法是使用 Git 版本控制系统。请确认源代码受版本控制："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:800
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# git remote --v\n"
 "origin  https://git.freebsd.org/src.git (fetch)\n"
 "origin  https://git.freebsd.org/src.git (push)\n"
-msgstr ""
+msgstr "# cd /usr/src\n# git remote --v\norigin  https://git.freebsd.org/src.git (fetch)\norigin  https://git.freebsd.org/src.git (push)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:803
+#, fuzzy
 msgid ""
 "This indicates that [.filename]#/usr/src/# is under version control and can "
 "be updated with man:git[1]:"
-msgstr ""
+msgstr "这表示 [.filename]#/usr/src/# 受版本控制，可以使用 man:git[1] 更新："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:808
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git -C /usr/src pull\n"
-msgstr ""
+msgstr "# git -C /usr/src pull\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:812
@@ -1928,122 +2005,125 @@ msgstr "更新源码"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:819
+#, fuzzy
 msgid ""
 "If the output says `fatal: not a git repository`, the files there are "
 "missing or were installed with a different method.  A new checkout of the "
 "source is required."
-msgstr ""
+msgstr "如果输出显示 `fatal: not a git repository`，则该目录中的文件缺失，或是通过其他方式安装的。需要重新检出源代码。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:822
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Versions and Repository Branches"
-msgstr ""
+msgstr "FreeBSD 版本与仓库分支"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:826
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "uname&#160;&#8209;r Output"
-msgstr ""
+msgstr "uname&#160;&#8209;r 输出"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:827
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Repository Path"
-msgstr ""
+msgstr "仓库路径"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:829
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:830
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`_X.Y_-RELEASE`"
-msgstr ""
+msgstr "`_X.Y_-RELEASE`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:831
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`releng/_X.Y_`"
-msgstr ""
+msgstr "`releng/_X.Y_`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:833
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Release version plus only critical security and bug fix patches. This branch is recommended for most users."
-msgstr ""
+msgstr "发行版本，仅包含关键安全补丁和错误修复。此分支适合大多数用户。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`_X.Y_-STABLE`"
-msgstr ""
+msgstr "`_X.Y_-STABLE`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:835
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`stable/_X_`"
-msgstr ""
+msgstr "`stable/_X_`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:841
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "The Release version plus all additional development on that branch. _STABLE_ refers to the Applications Binary Interface (ABI) not changing, so software compiled for earlier versions still runs. For example, software compiled to run on FreeBSD {rel-legacy} will still run on FreeBSD {rel-legacy-major}-STABLE compiled later.\n"
 "\n"
 "STABLE branches occasionally have bugs or incompatibilities which might affect users, although these are typically fixed quickly."
-msgstr ""
+msgstr "发行版本加上该分支中的所有后续开发内容。_STABLE_ 表示应用程序二进制接口（ABI）不会发生变化，因此为早期版本编译的软件仍可运行。例如，为 FreeBSD {rel-legacy} 编译的软件，在之后编译的 FreeBSD {rel-legacy-major}-STABLE 上仍可运行。\n\nSTABLE 分支偶尔会出现可能影响用户的错误或不兼容问题，但通常会很快修复。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:842
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`_X_-CURRENT`"
-msgstr ""
+msgstr "`_X_-CURRENT`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:843
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`main`"
-msgstr ""
+msgstr "`main`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:844
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The latest unreleased development version of FreeBSD. The CURRENT branch can have major bugs or incompatibilities and is recommended only for advanced users."
-msgstr ""
+msgstr "FreeBSD 最新的未发布开发版本。CURRENT 分支可能存在严重错误或不兼容问题，因此仅建议高级用户使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:847
+#, fuzzy
 msgid "Determine which version of FreeBSD is being used with man:uname[1]:"
-msgstr ""
+msgstr "使用 man:uname[1] 确定正在使用的 FreeBSD 版本："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:852
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# uname -r\n"
 "13.2-RELEASE\n"
-msgstr ""
+msgstr "# uname -r\n13.2-RELEASE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:856
+#, fuzzy
 msgid ""
 "Based on crossref:cutting-edge[updating-src-obtaining-src-repopath,FreeBSD "
 "Versions and Repository Branches], the source used to update `13.2-RELEASE` "
 "has a repository path of `releng/13.2`.  That path is used when checking out "
 "the source:"
-msgstr ""
+msgstr "根据 crossref:cutting-edge[updating-src-obtaining-src-repopath,FreeBSD 版本与仓库分支]，用于更新 `13.2-RELEASE` 的源代码对应的仓库路径为 `releng/13.2`。检出源代码时会使用该路径："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:861
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mv /usr/src /usr/src.bak <.>\n"
 "# git clone --branch releng/13.2 https://git.FreeBSD.org/src.git /usr/src <.>\n"
-msgstr ""
+msgstr "# mv /usr/src /usr/src.bak <.>\n# git clone --branch releng/13.2 https://git.FreeBSD.org/src.git /usr/src <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:864
@@ -2057,12 +2137,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:866
+#, fuzzy
 msgid ""
 "The path from crossref:cutting-edge[updating-src-obtaining-src-repopath,"
 "FreeBSD Versions and Repository Branches] is added to the repository URL. "
 "The third parameter is the destination directory for the source code on the "
 "local system."
-msgstr ""
+msgstr "将 crossref:cutting-edge[updating-src-obtaining-src-repopath,FreeBSD 版本与仓库分支] 中的路径添加到仓库 URL。第三个参数是本地系统上源代码的目标目录。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:868
@@ -2072,25 +2153,27 @@ msgstr "从源码编译"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:873
+#, fuzzy
 msgid ""
 "The _world_, or all of the operating system except the kernel, is compiled.  "
 "This is done first to provide up-to-date tools to build the kernel.  Then "
 "the kernel itself is built:"
-msgstr ""
+msgstr "编译 _world_，即除内核之外的整个操作系统。首先编译它，以提供构建内核所需的最新工具。然后构建内核本身："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:879
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# make buildworld\n"
 "# make buildkernel\n"
-msgstr ""
+msgstr "# cd /usr/src\n# make buildworld\n# make buildkernel\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:882
+#, fuzzy
 msgid "The compiled code is written to [.filename]#/usr/obj#."
-msgstr ""
+msgstr "编译后的代码写入 [.filename]#/usr/obj#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:885
@@ -2111,18 +2194,19 @@ msgstr "执行清除编译"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:892
+#, fuzzy
 msgid ""
 "Some versions of the FreeBSD build system leave previously-compiled code in "
 "the temporary object directory, [.filename]#/usr/obj#.  This can speed up "
 "later builds by avoiding recompiling code that has not changed.  To force a "
 "clean rebuild of everything, use `cleanworld` before starting a build:"
-msgstr ""
+msgstr "某些版本的 FreeBSD 构建系统会将先前编译的代码保留在临时对象目录 [.filename]#/usr/obj# 中。这样可以避免重新编译未更改的代码，从而加快后续构建。要强制从头干净地重新构建所有内容，请在开始构建前使用 `cleanworld`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:896
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make cleanworld\n"
-msgstr ""
+msgstr "# make cleanworld\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:899
@@ -2160,9 +2244,9 @@ msgstr "使用四个工作来编译世界与核心："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:916
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make -j4 buildworld buildkernel\n"
-msgstr ""
+msgstr "# make -j4 buildworld buildkernel\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:921
@@ -2172,19 +2256,20 @@ msgstr "只编译内核"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:926
+#, fuzzy
 msgid ""
 "A `buildworld` must be completed if the source code has changed.  After "
 "that, a `buildkernel` to build a kernel can be run at any time.  To build "
 "just the kernel:"
-msgstr ""
+msgstr "如果源代码有更改，则必须完成一次 `buildworld`。之后，随时都可以运行 `buildkernel` 来构建内核。仅构建内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:931
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# make buildkernel\n"
-msgstr ""
+msgstr "# cd /usr/src\n# make buildkernel\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:934
@@ -2220,12 +2305,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:944
+#, fuzzy
 msgid ""
 "Kernel config files are located in [.filename]#/usr/src/sys/arch/conf/#, "
 "where _arch_ is the output from `uname -m`.  On most computers, that is "
 "`amd64`, giving a config file directory of [.filename]#/usr/src/sys/amd64/"
 "conf/#."
-msgstr ""
+msgstr "内核配置文件位于 [.filename]#/usr/src/sys/arch/conf/#，其中 _arch_ 是 `uname -m` 的输出。在大多数计算机上，该值为 `amd64`，因此配置文件目录为 [.filename]#/usr/src/sys/amd64/conf/#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:950
@@ -2256,32 +2342,34 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:960
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cp /usr/src/sys/amd64/conf/GENERIC /root/STORAGESERVER\n"
 "# cd /usr/src/sys/amd64/conf\n"
 "# ln -s /root/STORAGESERVER .\n"
-msgstr ""
+msgstr "# cp /usr/src/sys/amd64/conf/GENERIC /root/STORAGESERVER\n# cd /usr/src/sys/amd64/conf\n# ln -s /root/STORAGESERVER .\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:963
+#, fuzzy
 msgid ""
 "[.filename]#/root/STORAGESERVER# is then edited, adding or removing devices "
 "or options as shown in man:config[5]."
-msgstr ""
+msgstr "然后编辑 [.filename]#/root/STORAGESERVER#，按照 man:config[5] 中的说明添加或删除设备和选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:965
+#, fuzzy
 msgid ""
 "The custom kernel is built by setting `KERNCONF` to the kernel config file "
 "on the command line:"
-msgstr ""
+msgstr "通过在命令行将 `KERNCONF` 设置为内核配置文件来构建自定义内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:969
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make buildkernel KERNCONF=STORAGESERVER\n"
-msgstr ""
+msgstr "# make buildkernel KERNCONF=STORAGESERVER\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:972
@@ -2291,14 +2379,15 @@ msgstr "安装编译好的程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:975
+#, fuzzy
 msgid ""
 "After the `buildworld` and `buildkernel` steps have been completed, the new "
 "kernel and world are installed:"
-msgstr ""
+msgstr "完成 `buildworld` 和 `buildkernel` 步骤后，安装新的内核和 world："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:984
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# make installkernel\n"
@@ -2306,18 +2395,19 @@ msgid ""
 "# cd /usr/src\n"
 "# make installworld\n"
 "# shutdown -r now\n"
-msgstr ""
+msgstr "# cd /usr/src\n# make installkernel\n# shutdown -r now\n# cd /usr/src\n# make installworld\n# shutdown -r now\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:987
+#, fuzzy
 msgid ""
 "If a custom kernel was built, `KERNCONF` must also be set to use the new "
 "custom kernel:"
-msgstr ""
+msgstr "如果构建了自定义内核，还必须设置 `KERNCONF` 以使用新的自定义内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:996
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# make installkernel KERNCONF=STORAGESERVER\n"
@@ -2325,7 +2415,7 @@ msgid ""
 "# cd /usr/src\n"
 "# make installworld\n"
 "# shutdown -r now\n"
-msgstr ""
+msgstr "# cd /usr/src\n# make installkernel KERNCONF=STORAGESERVER\n# shutdown -r now\n# cd /usr/src\n# make installworld\n# shutdown -r now\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:999
@@ -2346,51 +2436,55 @@ msgstr ""
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1005
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Merging Configuration Files with man:etcupdate[8]"
-msgstr ""
+msgstr "使用 man:etcupdate[8] 合并配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1010
+#, fuzzy
 msgid ""
 "man:etcupdate[8] is a tool for managing updates to files that are not "
 "updated as part of an installworld such as files located in [.filename]#/etc/"
 "#.  It manages updates by doing a three-way merge of changes made to these "
 "files against the local versions.  man:etcupdate[8] is designed to minimize "
 "the amount of user intervention."
-msgstr ""
+msgstr "man:etcupdate[8] 是用于管理在 installworld 过程中不会更新的文件（例如 [.filename]#/etc/# 中的文件）的工具。它通过将这些文件的更改与本地版本进行三方合并来管理更新。man:etcupdate[8] 的设计目标是尽量减少用户干预。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1015
+#, fuzzy
 msgid ""
 "In general, man:etcupdate[8] does not need any specific arguments for its "
 "job.  There is however a handy in between command for sanity checking what "
 "will be done the first time man:etcupdate[8] is used:"
-msgstr ""
+msgstr "通常，man:etcupdate[8] 执行任务不需要任何特定参数。不过，首次使用 man:etcupdate[8] 时，有一个便于检查将执行哪些操作的中间命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1019
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# etcupdate diff\n"
-msgstr ""
+msgstr "# etcupdate diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1022
+#, fuzzy
 msgid "This command allows the user to audit configuration changes."
-msgstr ""
+msgstr "此命令允许用户审查配置更改。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1025
+#, fuzzy
 msgid ""
 "If man:etcupdate[8] is not able to merge a file automatically, the merge "
 "conflicts can be resolved with manual interaction by issuing:"
-msgstr ""
+msgstr "如果 man:etcupdate[8] 无法自动合并某个文件，可以运行以下命令，通过手动操作解决合并冲突："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1029
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# etcupdate resolve\n"
-msgstr ""
+msgstr "# etcupdate resolve\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1048
@@ -2408,9 +2502,9 @@ msgstr "部份废弃的文件或目录可以在更新之后保留，可使用以
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1056
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make check-old\n"
-msgstr ""
+msgstr "# make check-old\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1059
@@ -2419,9 +2513,9 @@ msgstr "并用以下指令删除："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1063
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make delete-old\n"
-msgstr ""
+msgstr "# make delete-old\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1067
@@ -2431,9 +2525,9 @@ msgstr "部份废弃的程序库也可以保留下来，可使用以下指令来
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1071
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make check-old-libs\n"
-msgstr ""
+msgstr "# make check-old-libs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1074
@@ -2442,9 +2536,9 @@ msgstr "并使用以下指令删除"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1078
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make delete-old-libs\n"
-msgstr ""
+msgstr "# make delete-old-libs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1082
@@ -2459,17 +2553,18 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1088
+#, fuzzy
 msgid ""
 "When all the old files or directories are known to be safe to delete, "
 "pressing kbd:[y] and kbd:[Enter] to delete each file can be avoided by "
 "setting `BATCH_DELETE_OLD_FILES` in the command.  For example:"
-msgstr ""
+msgstr "确认所有旧文件或目录都可以安全删除后，可通过在命令中设置 `BATCH_DELETE_OLD_FILES`，避免按 kbd:[y] 和 kbd:[Enter] 来逐个删除文件。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1092
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make BATCH_DELETE_OLD_FILES=yes delete-old-libs\n"
-msgstr ""
+msgstr "# make BATCH_DELETE_OLD_FILES=yes delete-old-libs\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1097
@@ -2493,192 +2588,218 @@ msgstr "从源码更新FreeBSD"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1113
+#, fuzzy
 msgid ""
 "Starting from 14.0-RELEASE, the FreeBSD project has published a set of "
 "packages of the base system, using man:pkg[8].  The convenience of pkg is no "
 "longer limited to the FreeBSD ports collection.  man:pkg[8] can be used for "
 "FreeBSD itself.  Base packages, and usage thereof, were traditionally "
 "referred to as _pkgbase_."
-msgstr ""
+msgstr "从 14.0-RELEASE 开始，FreeBSD 项目使用 man:pkg[8] 发布了一组基本系统软件包。pkg 的便利性不再局限于 FreeBSD Ports 集合。man:pkg[8] 也可用于 FreeBSD 本身。基本系统软件包及其用法过去通常称为 __pkgbase__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1116
+#, fuzzy
 msgid ""
 "Publication of official packages began in link:https://lists.freebsd.org/"
 "archives/freebsd-pkgbase/2023-October/000221.html[October 2023].  Their use "
 "with FreeBSD 14 is currently experimental."
-msgstr ""
+msgstr "官方软件包于 link:https://lists.freebsd.org/archives/freebsd-pkgbase/2023-October/000221.html[2023 年 10 月] 开始发布。目前，在 FreeBSD 14 上使用这些软件包仍属实验性质。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1118
+#, fuzzy
 msgid ""
 "Starting from 15.0-RELEASE, man:freebsd-base[7] will be supported as a tech "
 "preview for:"
-msgstr ""
+msgstr "从 15.0-RELEASE 开始，man:freebsd-base[7] 将作为技术预览支持以下用途："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1120
+#, fuzzy
 msgid "installation"
-msgstr ""
+msgstr "安装"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1121
+#, fuzzy
 msgid "minor upgrades"
-msgstr ""
+msgstr "次要升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1122
+#, fuzzy
 msgid "major upgrades"
-msgstr ""
+msgstr "主要升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1124
+#, fuzzy
 msgid "freebsd-base will eventually replace:"
-msgstr ""
+msgstr "freebsd-base 最终将取代："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1126
+#, fuzzy
 msgid ""
 "tarball distribution sets, such as `base.txz` or `kernel.txz`, which are "
 "historically used for installation of the OS with man:bsdinstall[8]"
-msgstr ""
+msgstr "tarball 格式的发行集，例如 `base.txz` 或 `kernel.txz`。这些发行集过去通常与 man:bsdinstall[8] 一起用于安装操作系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1127
+#, fuzzy
 msgid "man:freebsd-update[8] for updates to the OS."
-msgstr ""
+msgstr "用于更新操作系统的 man:freebsd-update[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1129
+#, fuzzy
 msgid "The current plan is for freebsd-update to work with pkg."
-msgstr ""
+msgstr "目前的计划是让 freebsd-update 与 pkg 配合使用。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1133
+#, fuzzy
 msgid ""
 "The replacement of distribution sets will take some time, until freebsd-base "
 "is fully stable!"
-msgstr ""
+msgstr "替代发行集需要一些时间，freebsd-base 才能完全稳定！"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1137
+#, fuzzy
 msgid ""
 "Base System packages complement crossref:cutting-edge[makeworld,\"building "
 "and installing from source\"], which is still available for those who wish "
 "to build their own custom kernels or userland.  It is also possible to build "
 "custom base system packages from local sources, as well as just relying on "
 "officially provided packages."
-msgstr ""
+msgstr "基本系统软件包是 crossref:cutting-edge[makeworld,\"从源代码构建和安装\"] 的补充；对于希望构建自定义内核或用户空间的用户，仍可使用后者。除了使用官方提供的软件包，也可以根据本地源代码构建自定义基本系统软件包。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Converting a Host to use freebsd-base"
-msgstr ""
+msgstr "将主机转换为使用 freebsd-base"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1142
+#, fuzzy
 msgid ""
 "FreeBSD 14.0-RELEASE or later can be converted to use base packages.  "
 "Earlier versions must be upgraded with freebsd-update before conversion."
-msgstr ""
+msgstr "FreeBSD 14.0-RELEASE 或更高版本可以转换为使用基本系统软件包。较早的版本必须先使用 freebsd-update 升级，然后才能转换。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1145
+#, fuzzy
 msgid ""
 "For conversion, the FreeBSD Foundation-sponsored link:https://github.com/"
 "FreeBSDFoundation/pkgbasify[pkgbasify] tool is recommended.  Follow the "
 "instructions given there."
-msgstr ""
+msgstr "建议使用 FreeBSD 基金会赞助的 link:https://github.com/FreeBSDFoundation/pkgbasify[pkgbasify] 工具进行转换。请按照该处提供的说明操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1147
+#, fuzzy
 msgid "man:freebsd-update[8] will be enhanced to use pkg and pkgbasify."
-msgstr ""
+msgstr "man:freebsd-update[8] 将增强为使用 pkg 和 pkgbasify。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1152
+#, fuzzy
 msgid ""
 "Note that this migration requires up to 5GiB additional free space, to "
 "download, unpack, and relocate any conflicting files.  The pkgbasify tool "
 "does not check for this and it is the responsibility of the user to ensure "
 "that enough space is available before running the migration."
-msgstr ""
+msgstr "请注意，此迁移最多需要额外 5GiB 可用空间，用于下载、解包和迁移任何冲突文件。pkgbasify 工具不会检查可用空间；运行迁移前，用户有责任确保空间充足。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1155
+#, fuzzy
 msgid ""
 "man:pkgbasify[8] (or whatever outcome link:https://reviews.freebsd.org/"
 "D51594[D51594] or link:https://wiki.freebsd.org/WantedPorts#O-P[port "
 "request] will have) performs 6 main tasks:"
-msgstr ""
+msgstr "man:pkgbasify[8]（或 link:https://reviews.freebsd.org/D51594[D51594] 或 link:https://wiki.freebsd.org/WantedPorts#O-P[port 请求] 最终产生的任何结果）会执行 6 项主要任务："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1157
+#, fuzzy
 msgid "Creates a backup boot environment (ZFS only) with man:bectl[8]"
-msgstr ""
+msgstr "使用 man:bectl[8] 创建备份引导环境（仅限 ZFS）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1158
+#, fuzzy
 msgid "Creates the new package repository config files"
-msgstr ""
+msgstr "创建新的软件包仓库配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1159
+#, fuzzy
 msgid "Upgrades existing system components such as base, kernel, lib32, debug"
-msgstr ""
+msgstr "升级现有系统组件，例如 base、kernel、lib32、debug"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1160
+#, fuzzy
 msgid "Merges existing and new config files"
-msgstr ""
+msgstr "合并现有配置文件和新配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1161
+#, fuzzy
 msgid "Updates passwd and capabilities databases"
-msgstr ""
+msgstr "更新 passwd 和 capabilities 数据库"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1162
+#, fuzzy
 msgid "Restarts sshd immediately"
-msgstr ""
+msgstr "立即重启 sshd"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Upgrading a Host using freebsd-base"
-msgstr ""
+msgstr "使用 freebsd-base 升级主机"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1168
+#, fuzzy
 msgid ""
 "This is still in development, so please be careful especially when "
 "converting an existing system to use freebsd-base."
-msgstr ""
+msgstr "此功能仍在开发中，因此请谨慎操作，尤其是在将现有系统转换为使用 freebsd-base 时。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1171
+#, fuzzy
 msgid ""
 "Create a folder for custom pkg repository config files, if there is none "
 "present already."
-msgstr ""
+msgstr "如果尚无用于自定义 pkg 仓库配置文件的目录，请创建一个。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkdir -p /usr/local/etc/pkg/repos/\n"
-msgstr ""
+msgstr "# mkdir -p /usr/local/etc/pkg/repos/\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1178
+#, fuzzy
 msgid ""
 "For using the freebsd-base repository, create a pkg repository configuration "
 "file called `FreeBSD-base.conf`:"
-msgstr ""
+msgstr "要使用 freebsd-base 仓库，请创建名为 `FreeBSD-base.conf` 的 pkg 仓库配置文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "FreeBSD-base {\n"
 "    url = \"pkg+https://pkg.freebsd.org/${ABI}/base_release_${VERSION_MINOR}\";\n"
@@ -2687,189 +2808,197 @@ msgid ""
 "    fingerprints = \"/usr/share/keys/pkg\";\n"
 "    enabled = yes;\n"
 "}\n"
-msgstr ""
+msgstr "FreeBSD-base {\n    url = \"pkg+https://pkg.freebsd.org/${ABI}/base_release_${VERSION_MINOR}\";\n    mirror_type = \"srv\";\n    signature_type = \"fingerprints\";\n    fingerprints = \"/usr/share/keys/pkg\";\n    enabled = yes;\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1192
+#, fuzzy
 msgid ""
 "for more information on specific configuration options see man:pkg.conf[5]."
-msgstr ""
+msgstr "有关特定配置选项的更多信息，请参见 man:pkg.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1194
+#, fuzzy
 msgid ""
 "There are different branches to choose from (by changing the url "
 "accordingly):"
-msgstr ""
+msgstr "可供选择的分支有多个（相应地更改 url 即可）："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Base system package Branches"
-msgstr ""
+msgstr "基本系统软件包分支"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Branch"
-msgstr ""
+msgstr "分支"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Frequency"
-msgstr ""
+msgstr "频率"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1204
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "main"
-msgstr ""
+msgstr "main"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "twice daily - 12:00 and 00:00 UTC"
-msgstr ""
+msgstr "每天两次：12:00 和 00:00 UTC"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1207
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1215
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg+https://pkg.freebsd.org/${ABI}/base_latest`"
-msgstr ""
+msgstr "`pkg+https://pkg.freebsd.org/${ABI}/base_latest`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1209
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1217
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weekly – Sunday at 12:00 UTC"
-msgstr ""
+msgstr "每周：周日 12:00 UTC"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1211
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1219
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg+https://pkg.freebsd.org/${ABI}/base_weekly`"
-msgstr ""
+msgstr "`pkg+https://pkg.freebsd.org/${ABI}/base_weekly`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1212
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "stable/14"
-msgstr ""
+msgstr "stable/14"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1213
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1221
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1225
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "twice daily – 12:00 and 00:00 UTC"
-msgstr ""
+msgstr "每天两次：12:00 和 00:00 UTC"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "releng/14.3"
-msgstr ""
+msgstr "releng/14.3"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg+https://pkg.freebsd.org/${ABI}/base_release_3`"
-msgstr ""
+msgstr "`pkg+https://pkg.freebsd.org/${ABI}/base_release_3`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "releng/15.0"
-msgstr ""
+msgstr "releng/15.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg+https://pkg.freebsd.org/${ABI}/base_release_0`"
-msgstr ""
+msgstr "`pkg+https://pkg.freebsd.org/${ABI}/base_release_0`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1228
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "stable/15"
-msgstr ""
+msgstr "stable/15"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1237
+#, fuzzy
 msgid ""
 "To upgrade the system, change the configuration file according to the "
 "desired release, and run:"
-msgstr ""
+msgstr "要升级系统，请根据目标发行版修改配置文件，然后运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pkg update -r FreeBSD-base\n"
 "# pkg upgrade -r FreeBSD-base\n"
-msgstr ""
+msgstr "# pkg update -r FreeBSD-base\n# pkg upgrade -r FreeBSD-base\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1245
+#, fuzzy
 msgid "check, if these packages are correct and accept the changes."
-msgstr ""
+msgstr "检查并确认这些软件包无误，然后接受更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1247
+#, fuzzy
 msgid "Reboot the OS executing the following command:"
-msgstr ""
+msgstr "运行以下命令重启操作系统："
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Major Upgrades"
-msgstr ""
+msgstr "主要升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1257
+#, fuzzy
 msgid ""
 "With ZFS, boot environments allow an upgrade to be performed without "
 "interrupting running software.  If the system does not use root-on-ZFS: "
 "backup before upgrading."
-msgstr ""
+msgstr "使用 ZFS 时，引导环境允许在不中断正在运行的软件的情况下执行升级。如果系统未使用 root-on-ZFS，请在升级前备份。"
 
 #. type: Title =====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preparations"
-msgstr ""
+msgstr "准备工作"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1260
+#, fuzzy
 msgid ""
 "Change `/usr/local/etc/pkg/repos/FreeBSD-base.conf` to target the correct "
 "major release like `base_release_0` for 15.0-RELEASE, to look like this:"
-msgstr ""
+msgstr "将 `/usr/local/etc/pkg/repos/FreeBSD-base.conf` 修改为指向正确的主要版本，例如 15.0-RELEASE 对应 `base_release_0`，修改后如下："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1264
+#, fuzzy
 msgid "This file might change to be included in RELEASE with a different path."
-msgstr ""
+msgstr "此文件的路径可能会改变，并以其他路径纳入 RELEASE。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "FreeBSD-base {\n"
 "    url = \"pkg+https://pkg.freebsd.org/${ABI}/base_release_0\";\n"
@@ -2878,361 +3007,392 @@ msgid ""
 "    fingerprints = \"/usr/share/keys/pkg\";\n"
 "    enabled = yes;\n"
 "}\n"
-msgstr ""
+msgstr "FreeBSD-base {\n    url = \"pkg+https://pkg.freebsd.org/${ABI}/base_release_0\";\n    mirror_type = \"srv\";\n    signature_type = \"fingerprints\";\n    fingerprints = \"/usr/share/keys/pkg\";\n    enabled = yes;\n}\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1283
+#, fuzzy
 msgid ""
 "As pkgbase with FreeBSD 14 is experimental, so is a pkgbase major upgrade to "
 "15.  At the time of this writing in some edge-cases the major upgrade "
 "removes pkg and therefore segfaults.  This is considered a (link:https://"
 "github.com/freebsd/pkg/issues/2475[known issue]) for 15.0-RELEASE.  To work "
 "around this issue, lock pkg before upgrading."
-msgstr ""
+msgstr "FreeBSD 14 上的 pkgbase 属于实验性质，使用 pkgbase 升级到 15 也同样如此。撰写本文时，在某些边缘情况下，主要版本升级会移除 pkg，从而导致段错误。这是 15.0-RELEASE 的一项 link:https://github.com/freebsd/pkg/issues/2475[已知问题]。要规避此问题，请在升级前锁定 pkg。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg -c /mnt/upgrade lock pkg\n"
-msgstr ""
+msgstr "# pkg -c /mnt/upgrade lock pkg\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1290
+#, fuzzy
 msgid ""
 "An experimental major upgrade from FreeBSD 14, to 15 (or 16.0-CURRENT), "
 "should be followed by installation of meta package `FreeBSD-set-minimal`."
-msgstr ""
+msgstr "从 FreeBSD 14 实验性升级到 15（或 16.0-CURRENT）后，应安装元软件包 `FreeBSD-set-minimal`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1294
+#, fuzzy
 msgid "Save a list of the non-base packages in case they are needed later:"
-msgstr ""
+msgstr "保存非基本系统软件包列表，以备之后需要："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pkg prime-origins | sort -u > /var/tmp/pkg-prime-origins.txt\n"
-msgstr ""
+msgstr "pkg prime-origins | sort -u > /var/tmp/pkg-prime-origins.txt\n"
 
 #. type: Title =====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Major Upgrade With ZFS"
-msgstr ""
+msgstr "使用 ZFS 进行主要版本升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1303
+#, fuzzy
 msgid ""
 "Create a boot environment using man:bectl[8] and name it according to the "
 "version upgrading to"
-msgstr ""
+msgstr "使用 man:bectl[8] 创建一个引导环境，并根据要升级到的版本为其命名"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# bectl create 15.0-RELEASE\n"
-msgstr ""
+msgstr "# bectl create 15.0-RELEASE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1309
+#, fuzzy
 msgid ""
 "Create a directory then mount the new boot environment there to enable "
 "working with pkg man:chroot[8] and rootdir."
-msgstr ""
+msgstr "创建一个目录，然后将新的引导环境挂载到该目录，以便使用 pkg、man:chroot[8] 和 rootdir。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir /mnt/upgrade\n"
 "# bectl mount 15.0-RELEASE /mnt/upgrade\n"
-msgstr ""
+msgstr "# mkdir /mnt/upgrade\n# bectl mount 15.0-RELEASE /mnt/upgrade\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1317
+#, fuzzy
 msgid ""
 "The next step will upgrade the boot environment to the specified version."
-msgstr ""
+msgstr "下一步将把引导环境升级到指定版本。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1321
+#, fuzzy
 msgid ""
 "This step might remove non-base packages, which could include the running "
 "desktop environment."
-msgstr ""
+msgstr "此步骤可能会移除非基本系统软件包，其中可能包括正在运行的桌面环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1325
+#, fuzzy
 msgid ""
 "Set the environment variable ABI to upgrade the major version (replace amd64 "
 "with the architecture and 15 with the targeted version).  Set the pkg-static "
 "chroot directory to the boot environment mountpoint."
-msgstr ""
+msgstr "设置环境变量 ABI 以升级主要版本（将 amd64 替换为相应的体系结构，将 15 替换为目标版本）。将 pkg-static 的 chroot 目录设置为引导环境的挂载点。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# env ABI=FreeBSD:15:amd64 pkg-static -c /mnt/upgrade upgrade -r FreeBSD-base\n"
-msgstr ""
+msgstr "# env ABI=FreeBSD:15:amd64 pkg-static -c /mnt/upgrade upgrade -r FreeBSD-base\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1332
+#, fuzzy
 msgid ""
 "There will be a prompt asking about ignoring the version mismatch looking "
 "like this:"
-msgstr ""
+msgstr "系统会提示是否忽略版本不匹配，提示内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1340
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1388
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Newer FreeBSD version for package FreeBSD-zoneinfo:\n"
 "To ignore this error set IGNORE_OSVERSION=yes\n"
 "- package: 1500058\n"
 "- running userland: 1500000\n"
 "Ignore the mismatch and continue? [y/N]:\n"
-msgstr ""
+msgstr "Newer FreeBSD version for package FreeBSD-zoneinfo:\nTo ignore this error set IGNORE_OSVERSION=yes\n- package: 1500058\n- running userland: 1500000\nIgnore the mismatch and continue? [y/N]:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1343
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1391
+#, fuzzy
 msgid "Check and confirm that."
-msgstr ""
+msgstr "检查并确认这一点。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1345
+#, fuzzy
 msgid ""
 "To check if that was successful, chroot into the mountpoint of the boot "
 "environment and run `freebsd-version -ku`."
-msgstr ""
+msgstr "要检查是否成功，请 chroot 到引导环境的挂载点，并运行 `freebsd-version -ku`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# chroot /mnt/upgrade\n"
 "# freebsd-version -ku\n"
 "# exit\n"
-msgstr ""
+msgstr "# chroot /mnt/upgrade\n# freebsd-version -ku\n# exit\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1354
+#, fuzzy
 msgid "Activate the boot environment temporarily and reboot."
-msgstr ""
+msgstr "临时激活引导环境并重启。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1358
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# bectl activate -t 15.0-RELEASE\n"
 "# shutdown -r now\n"
-msgstr ""
+msgstr "# bectl activate -t 15.0-RELEASE\n# shutdown -r now\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1362
+#, fuzzy
 msgid ""
 "If the system does not work as expected: restart the OS to cease using the "
 "temporarily active boot environment.  The next boot will reuse the pre-"
 "upgrade environment."
-msgstr ""
+msgstr "如果系统未按预期运行：重启操作系统，以停止使用临时激活的引导环境。下次启动时将重新使用升级前的环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1364
+#, fuzzy
 msgid ""
 "If the system runs stable after reboot, don't forget to permanently activate "
 "this boot environment to prevent accidentally booting the old system."
-msgstr ""
+msgstr "如果系统在重启后稳定运行，请记得永久激活此引导环境，以防意外启动旧系统。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bectl activate 15.0-RELEASE\n"
-msgstr ""
+msgstr "bectl activate 15.0-RELEASE\n"
 
 #. type: Title =====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Major Upgrade Without ZFS"
-msgstr ""
+msgstr "不使用 ZFS 进行重大版本升级"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1373
+#, fuzzy
 msgid ""
 "Set the environment variable ABI to upgrade the major version (replace amd64 "
 "with the architecture and 15 with the targeted version)."
-msgstr ""
+msgstr "设置环境变量 ABI 以升级到重大版本（将 amd64 替换为相应的体系结构，将 15 替换为目标版本）。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# env ABI=FreeBSD:15:amd64 pkg-static upgrade -r FreeBSD-base\n"
-msgstr ""
+msgstr "# env ABI=FreeBSD:15:amd64 pkg-static upgrade -r FreeBSD-base\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1380
+#, fuzzy
 msgid ""
 "There will be a prompt to ask about ignoring the version mismatch looking "
 "like this:"
-msgstr ""
+msgstr "系统会提示是否忽略版本不匹配，提示内容如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1393
+#, fuzzy
 msgid "To check if the upgrade was successful, run `freebsd-version -ku`."
-msgstr ""
+msgstr "运行 `freebsd-version -ku`，检查升级是否成功。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1395
+#, fuzzy
 msgid "Then reboot."
-msgstr ""
+msgstr "然后重新启动。"
 
 #. type: Title =====
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Post-upgrade tasks"
-msgstr ""
+msgstr "升级后的任务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1398
+#, fuzzy
 msgid ""
 "If pkg was locked during the update as a workaround remove the lock like "
 "this:"
-msgstr ""
+msgstr "如果更新期间为 pkg 加了锁作为变通方法，请按如下方式解除锁定："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg unlock pkg\n"
-msgstr ""
+msgstr "# pkg unlock pkg\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1404
+#, fuzzy
 msgid ""
 "After upgrading to a new major version, updates and upgrades of installed "
 "packages to match the ABI version may be necessary."
-msgstr ""
+msgstr "升级到新的重大版本后，可能需要更新和升级已安装的软件包，使其与 ABI 版本匹配。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg upgrade\n"
-msgstr ""
+msgstr "# pkg upgrade\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1411
+#, fuzzy
 msgid ""
 "Consider getting help from link:https://www.freebsd.org/support/[FreeBSD "
 "Support] when experiencing issues."
-msgstr ""
+msgstr "遇到问题时，可考虑从 link:https://www.freebsd.org/support/[FreeBSD 支持]获取帮助。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1413
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Manually building pkgbase and publishing it to the local network"
-msgstr ""
+msgstr "手动构建 pkgbase 并将其发布到本地网络"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1416
+#, fuzzy
 msgid "When building custom pkgbase packages clone the FreeBSD source tree:"
-msgstr ""
+msgstr "构建自定义 pkgbase 软件包时，克隆 FreeBSD 源代码树："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# git clone https://github.com/freebsd/freebsd-src.git /usr/src\n"
-msgstr ""
+msgstr "# cd /usr/src\n# git clone https://github.com/freebsd/freebsd-src.git /usr/src\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1424
+#, fuzzy
 msgid "Check out the branch for the release to build packages for:"
-msgstr ""
+msgstr "检出要构建软件包的发行版分支："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git checkout releng/14.3\n"
-msgstr ""
+msgstr "# git checkout releng/14.3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1432
+#, fuzzy
 msgid ""
 "Start the building process, depending on the resources available this could "
 "take some while.  Set the parallel processes according to the CPU core count."
-msgstr ""
+msgstr "开始构建。根据可用资源情况，构建可能需要一些时间。根据 CPU 核心数设置并行进程数。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1434
+#, fuzzy
 msgid "This example is written for an 8 core CPU:"
-msgstr ""
+msgstr "以下示例适用于 8 核 CPU："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1438
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make -j8 buildworld && make -j8 buildkernel && make -j8 packages\n"
-msgstr ""
+msgstr "# make -j8 buildworld && make -j8 buildkernel && make -j8 packages\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1441
+#, fuzzy
 msgid ""
 "When building frequently, consider using package:devel/ccache[] to speed up "
 "subsequent builds from the cache."
-msgstr ""
+msgstr "如果经常构建，可考虑使用 package:devel/ccache[]，以便利用缓存加快后续构建。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1443
+#, fuzzy
 msgid ""
 "After building, the packages will get saved into `/usr/obj/usr/src/repo/"
 "FreeBSD:14:amd64/14.3p2` or something like that, depending on the version "
 "build."
-msgstr ""
+msgstr "构建完成后，软件包将保存到 `/usr/obj/usr/src/repo/FreeBSD:14:amd64/14.3p2` 或类似目录，具体取决于所构建的版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1445
+#, fuzzy
 msgid ""
 "To publish these packages to the network set up a nginx service and use this "
 "location in the http server configuration:"
-msgstr ""
+msgstr "要将这些软件包发布到网络，请设置 nginx 服务，并在 HTTP 服务器配置中使用以下位置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1452
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " location /FreeBSD:14:amd64 {\n"
 "   alias /usr/obj/usr/src/repo/FreeBSD:14:amd64/;\n"
 "   autoindex on;\n"
 " }\n"
-msgstr ""
+msgstr " location /FreeBSD:14:amd64 {\n   alias /usr/obj/usr/src/repo/FreeBSD:14:amd64/;\n   autoindex on;\n }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1455
+#, fuzzy
 msgid "And reload the nginx service."
-msgstr ""
+msgstr "然后重新加载 nginx 服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1457
+#, fuzzy
 msgid ""
 "When not using https, use a small configuration file on the clients to "
 "target the pkgbase version just built by editing `/usr/local/etc/pkg/repos/"
 "upgrade.conf`:"
-msgstr ""
+msgstr "不使用 https 时，请在客户端使用一个小型配置文件，将目标设为刚构建的 pkgbase 版本，编辑 `/usr/local/etc/pkg/repos/upgrade.conf`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "upgrade: {\n"
 "\turl         = http://ip.of.the.server/FreeBSD:14:amd64/14.3p2\n"
 "\tenabled     = yes\n"
 "}\n"
-msgstr ""
+msgstr "upgrade: {\n\turl         = http://ip.of.the.server/FreeBSD:14:amd64/14.3p2\n\tenabled     = yes\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1467
+#, fuzzy
 msgid ""
 "and use it as written above (but use -r upgrade instead of FreeBSD-base)."
-msgstr ""
+msgstr "并按上文所述使用该配置（但使用 -r upgrade，而不是 FreeBSD-base）。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1469
@@ -3242,6 +3402,7 @@ msgstr "多部机器追踪"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1475
+#, fuzzy
 msgid ""
 "When multiple machines need to track the same source tree, it is a waste of "
 "disk space, network bandwidth, and CPU cycles to have each system download "
@@ -3250,10 +3411,11 @@ msgid ""
 "This section outlines a method of doing so.  For more information about "
 "using NFS, refer to crossref:network-servers[network-nfs,\"Network File "
 "System (NFS)\"]."
-msgstr ""
+msgstr "多台计算机需要跟踪同一源代码树时，让每台系统都下载源代码并重新构建所有内容，会浪费磁盘空间、网络带宽和 CPU 周期。解决方法是让一台计算机完成大部分工作，其余计算机通过 NFS 挂载这些构建成果。本节介绍一种实现方法。有关使用 NFS 的更多信息，请参阅 crossref:network-servers[network-nfs,\"网络文件系统（NFS）\"]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1480
+#, fuzzy
 msgid ""
 "First, identify a set of machines which will run the same set of binaries, "
 "known as a _build set_.  Each machine can have a custom kernel, but will run "
@@ -3261,28 +3423,31 @@ msgid ""
 "_build machine_ that the world and kernel are built on.  Ideally, this is a "
 "fast machine that has sufficient spare CPU to run `make buildworld` and "
 "`make buildkernel`."
-msgstr ""
+msgstr "首先，确定一组运行相同二进制文件的计算机，称为__构建组__。组内每台计算机都可以使用自定义内核，但运行相同的用户空间二进制文件。从中选择一台计算机作为__构建机__，用于构建 world 和内核。理想情况下，它应是一台速度较快且有足够闲置 CPU 资源的计算机，能够运行 `make buildworld` 和 `make buildkernel`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1484
+#, fuzzy
 msgid ""
 "Select a machine to be the _test machine_, which will test software updates "
 "before they are put into production.  This _must_ be a machine that can "
 "afford to be down for an extended period of time.  It can be the build "
 "machine, but need not be."
-msgstr ""
+msgstr "选择一台计算机作为__测试机__，用于在软件更新投入生产环境之前进行测试。这台计算机__必须__能够承受较长时间停机。它可以是构建机，但不一定要是。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1487
+#, fuzzy
 msgid ""
 "All the machines in this build set need to mount [.filename]#/usr/obj# and [."
 "filename]#/usr/src# from the build machine via NFS.  For multiple build "
 "sets, [.filename]#/usr/src# should be on one build machine, and NFS mounted "
 "on the rest."
-msgstr ""
+msgstr "构建组中的所有计算机都需要通过 NFS 挂载构建机上的 [.filename]#/usr/obj# 和 [.filename]#/usr/src#。如果有多个构建组，[.filename]#/usr/src# 应位于一台构建机上，并通过 NFS 挂载到其余计算机上。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1493
+#, fuzzy
 msgid ""
 "Ensure that [.filename]#/etc/make.conf# and [.filename]#/etc/src.conf# on "
 "all the machines in the build set agree with the build machine.  That means "
@@ -3292,10 +3457,11 @@ msgid ""
 "conf#, and the build machine should list them all in its `KERNCONF`, listing "
 "its own kernel first.  The build machine must have the kernel configuration "
 "files for each machine in its [.filename]#/usr/src/sys/arch/conf#."
-msgstr ""
+msgstr "确保构建组中所有计算机的 [.filename]#/etc/make.conf# 和 [.filename]#/etc/src.conf# 与构建机一致。这意味着构建机必须构建构建组中任何计算机将要安装的所有基本系统组件。此外，每台构建机都应在 [.filename]#/etc/make.conf# 中通过 `KERNCONF` 设置其内核名称；构建机的 `KERNCONF` 则应列出所有内核，并将自身的内核列在首位。构建机的 [.filename]#/usr/src/sys/arch/conf# 中必须包含每台计算机的内核配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1501
+#, fuzzy
 msgid ""
 "On the build machine, build the kernel and world as described in crossref:"
 "cutting-edge[makeworld, Updating FreeBSD from Source], but do not install "
@@ -3304,7 +3470,7 @@ msgid ""
 "filename]#/usr/obj# via NFS.  Then, run `shutdown now` to go to single-user "
 "mode in order to install the new kernel and world and run `etcupdate` as "
 "usual.  When done, reboot to return to normal multi-user operations."
-msgstr ""
+msgstr "在构建机上，按照 crossref:cutting-edge[makeworld, 从源代码更新 FreeBSD]中的说明构建内核和 world，但不要在构建机上安装任何内容。应将构建好的内核安装到测试机上。在测试机上，通过 NFS 挂载 [.filename]#/usr/src# 和 [.filename]#/usr/obj#。然后运行 `shutdown now` 进入单用户模式，以安装新的内核和 world，并照常运行 `etcupdate`。完成后，重新启动以恢复正常的多用户操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1504
@@ -3318,6 +3484,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1512
+#, fuzzy
 msgid ""
 "The same methodology can be used for the ports tree.  The first step is to "
 "share [.filename]#/usr/ports# via NFS to all the machines in the build set.  "
@@ -3328,23 +3495,25 @@ msgid ""
 "the build system is to build and distribute packages to the machines in the "
 "build set, set `PACKAGES` on the build system to a directory similar to "
 "`DISTDIR`."
-msgstr ""
+msgstr "同样的方法也可用于 ports 树。首先，通过 NFS 将 [.filename]#/usr/ports# 共享给构建组中的所有计算机。要配置 [.filename]#/etc/make.conf# 以共享 distfiles，请将 `DISTDIR` 设置为一个共享目录；NFS 挂载将 `root` 映射到的用户必须对此目录具有写入权限。如果要在本地构建 ports，每台计算机都应将 `WRKDIRPREFIX` 设置为本地构建目录。或者，如果由构建系统构建软件包并分发给构建组中的计算机，请在构建系统上将 `PACKAGES` 设置为类似 `DISTDIR` 的目录。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1514
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building on non-FreeBSD Hosts"
-msgstr ""
+msgstr "在非 FreeBSD 主机上构建"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1518
+#, fuzzy
 msgid ""
 "Historically, building required a FreeBSD host.  Nowadays, FreeBSD can be "
 "built on Linux and macOS."
-msgstr ""
+msgstr "过去，构建需要使用 FreeBSD 主机。如今，可以在 Linux 和 macOS 上构建 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1524
+#, fuzzy
 msgid ""
 "To build on a non-FreeBSD host, the `tools/build/make.py` script is "
 "recommended.  This script acts as a wrapper around `bmake`, which is the "
@@ -3354,78 +3523,86 @@ msgid ""
 "external toolchain variables, such as `XCC`, `XLD`, and others.  "
 "Additionally, the script can pass any additional command arguments, such as "
 "`-j 4` for parallel builds or specific make targets, to `bmake`."
-msgstr ""
+msgstr "要在非 FreeBSD 主机上构建，建议使用 `tools/build/make.py` 脚本。该脚本是 FreeBSD 所用 make 实现 `bmake` 的封装。它会确保引导所需的工具，包括实际的 FreeBSD man:make[1]，并正确配置构建环境。具体来说，它会设置 `XCC`、`XLD` 等外部工具链变量。此外，该脚本还可以向 `bmake` 传递其他命令参数，例如用于并行构建的 `-j 4` 或特定的 make 目标。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1529
+#, fuzzy
 msgid ""
 "A recent version of `bmake` can be used instead of the `tools/build/make.py` "
 "script as well.  In that case, however, required environment variables need "
 "to be set manually (the easiest way to obtain a list of them is by running "
 "`tools/build/make.py --debug`)."
-msgstr ""
+msgstr "也可以使用较新版本的 `bmake`，而不使用 `tools/build/make.py` 脚本。不过，这种情况下需要手动设置所需的环境变量（获取变量列表最简单的方法是运行 `tools/build/make.py --debug`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1533
+#, fuzzy
 msgid ""
 "Otherwise, the list of prerequisites for building FreeBSD is rather short.  "
 "In fact, it boils down to installing a couple of dependencies."
-msgstr ""
+msgstr "除此之外，构建 FreeBSD 所需的先决条件很少，实际上只需安装几个依赖项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1536
+#, fuzzy
 msgid ""
 "On macOS, the only dependency is LLVM.  The necessary dependencies can be "
 "installed with package manager (e.g., link:https://brew.sh/[Homebrew]):"
-msgstr ""
+msgstr "在 macOS 上，唯一的依赖项是 LLVM。可以使用软件包管理器（例如 link:https://brew.sh/[Homebrew]）安装所需依赖项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1540
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "brew install llvm\n"
-msgstr ""
+msgstr "brew install llvm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1543
+#, fuzzy
 msgid ""
 "On a Linux distributions, install link:https://clang.llvm.org/[Clang] "
 "version 10.0 or newer and the headers for libarchive and libbz2 (often "
 "packaged as libarchive-dev and libbz2-dev)."
-msgstr ""
+msgstr "在 Linux 发行版上，安装 link:https://clang.llvm.org/[Clang] 10.0 或更高版本，以及 libarchive 和 libbz2 的头文件（通常打包为 libarchive-dev 和 libbz2-dev）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1545
+#, fuzzy
 msgid ""
 "Once the dependencies are installed, the host should be able to build "
 "FreeBSD."
-msgstr ""
+msgstr "安装依赖项后，主机应能够构建 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1547
+#, fuzzy
 msgid ""
 "For example, the following `tools/build/make.py` invocation builds the world:"
-msgstr ""
+msgstr "例如，以下 `tools/build/make.py` 调用会构建 world："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1551
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MAKEOBJDIRPREFIX=/tmp/obj tools/build/make.py -j 8 TARGET=arm64 TARGET_ARCH=aarch64 buildworld\n"
-msgstr ""
+msgstr "MAKEOBJDIRPREFIX=/tmp/obj tools/build/make.py -j 8 TARGET=arm64 TARGET_ARCH=aarch64 buildworld\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1556
+#, fuzzy
 msgid ""
 "It builds the world for target `aarch64:arm64` on 8 CPUs and uses [."
 "filename]#/tmp/obj# for object files.  Note that the variables "
 "`MAKEOBJDIRPREFIX`, `TARGET`, and `TARGET_ARCH` are mandatory when building "
 "on non-FreeBSD hosts.  Also, make sure to create the object directory "
 "pointed to by the `MAKEOBJDIRPREFIX` environment variable."
-msgstr ""
+msgstr "该命令在 8 个 CPU 上为目标 `aarch64:arm64` 构建 world，并使用 [.filename]#/tmp/obj# 存放目标文件。请注意，在非 FreeBSD 主机上构建时，变量 `MAKEOBJDIRPREFIX`、`TARGET` 和 `TARGET_ARCH` 是必需的。此外，请确保创建 `MAKEOBJDIRPREFIX` 环境变量所指向的对象目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/cutting-edge/_index.adoc:1557
+#, fuzzy
 msgid "Refer to man:arch[7] and man:build[7] for more details."
-msgstr ""
+msgstr "更多详情请参阅 man:arch[7] 和 man:build[7]。"
 
 #, fuzzy, no-wrap
 #~| msgid "Performing Major and Minor Version Upgrades"

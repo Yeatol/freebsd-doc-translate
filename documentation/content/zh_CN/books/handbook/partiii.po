@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/partiii.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/partiii.adoc:12

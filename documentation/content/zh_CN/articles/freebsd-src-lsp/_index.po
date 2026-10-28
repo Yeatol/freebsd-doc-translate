@@ -17,212 +17,233 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use Language Servers for development in the FreeBSD src tree to get precise go-to-definition and completion results."
-msgstr ""
+msgstr "在 FreeBSD src 树中使用语言服务器进行开发，以获得精确的转到定义和代码补全结果。"
 
 #. type: Title =
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:1
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use Language Servers for Development in the FreeBSD Src Tree"
-msgstr ""
+msgstr "在 FreeBSD Src 树中使用语言服务器进行开发"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:46
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:49
+#, fuzzy
 msgid ""
 "This guide is about setting up a FreeBSD src tree with language servers "
 "performing source code indexing. The guide describes the steps for Vim/"
 "NeoVim and VSCode. If you use a different text editor you can use this guide "
 "as a reference and search the equivalent commands for your preferred editor."
-msgstr ""
+msgstr "本指南介绍如何为 FreeBSD src 树配置语言服务器，以便对源代码建立索引。指南说明了 Vim/NeoVim 和 VSCode 的配置步骤。如果您使用其他文本编辑器，可以将本指南作为参考，并查找适用于您所用编辑器的等效命令。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Requirements"
-msgstr ""
+msgstr "要求"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:54
+#, fuzzy
 msgid ""
 "In order to follow this guide we need to install certain requirements. We "
 "need a Language server, `ccls` or `clangd`, and optionally a compilation "
 "database."
-msgstr ""
+msgstr "按照本指南操作前，需要安装一些必备软件。我们需要安装语言服务器 `ccls` 或 `clangd`，还可以选择安装编译数据库。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:56
+#, fuzzy
 msgid ""
 "The installation of the Language server can be performed via `pkg` or via "
 "ports. If we chose `clangd` we need to install `llvm`."
-msgstr ""
+msgstr "可以通过 `pkg` 或 ports 安装语言服务器。如果选择 `clangd`，则需要安装 `llvm`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:58
+#, fuzzy
 msgid "Using `pkg` to install `ccls`:"
-msgstr ""
+msgstr "使用 `pkg` 安装 `ccls`："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install ccls\n"
-msgstr ""
+msgstr "# pkg install ccls\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:65
+#, fuzzy
 msgid ""
 "If we want to use `clangd` we need to install `llvm` (The example command "
 "uses `llvm15` but choose the version you desire):"
-msgstr ""
+msgstr "如果要使用 `clangd`，则需要安装 `llvm`（示例命令使用 `llvm15`，但您可以选择所需的版本）："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install llvm15\n"
-msgstr ""
+msgstr "# pkg install llvm15\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:72
+#, fuzzy
 msgid ""
 "To install via ports choose a favorite combination of tools from each "
 "category below:"
-msgstr ""
+msgstr "通过 ports 安装时，请从以下各类别中选择您偏好的工具组合："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:74
+#, fuzzy
 msgid "Language server implementations"
-msgstr ""
+msgstr "语言服务器实现"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:75
+#, fuzzy
 msgid "package:devel/ccls[]"
-msgstr ""
+msgstr "package:devel/ccls[]"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:76
+#, fuzzy
 msgid ""
 "package:devel/llvm12[] (Other versions are okay, but newer is better. "
 "Replace `clangd12` with clangdN in case other versions are used.)"
-msgstr ""
+msgstr "package:devel/llvm12[]（其他版本也可以，但较新的版本更好。如果使用其他版本，请将 `clangd12` 替换为 clangdN。）"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:77
+#, fuzzy
 msgid "Editors"
-msgstr ""
+msgstr "编辑器"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:78
+#, fuzzy
 msgid "package:editors/vim[]"
-msgstr ""
+msgstr "package:editors/vim[]"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:79
+#, fuzzy
 msgid "package:editors/neovim[]"
-msgstr ""
+msgstr "package:editors/neovim[]"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:80
+#, fuzzy
 msgid "package:editors/vscode[]"
-msgstr ""
+msgstr "package:editors/vscode[]"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:81
+#, fuzzy
 msgid "Compilation database generator"
-msgstr ""
+msgstr "编译数据库生成器"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:82
+#, fuzzy
 msgid "package:devel/python[] (For llvm's scan-build-py implementation)"
-msgstr ""
+msgstr "package:devel/python[]（用于 llvm 的 scan-build-py 实现）"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:83
+#, fuzzy
 msgid "package:devel/py-pip[] (For rizsotto's scan-build implementation)"
-msgstr ""
+msgstr "package:devel/py-pip[]（用于 rizsotto 的 scan-build 实现）"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:84
+#, fuzzy
 msgid "package:devel/bear[]"
-msgstr ""
+msgstr "package:devel/bear[]"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Editor settings"
-msgstr ""
+msgstr "编辑器设置"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vim/Neovim"
-msgstr ""
+msgstr "Vim/Neovim"
 
 #. type: Title ====
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:91
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LSP client plugins"
-msgstr ""
+msgstr "LSP 客户端插件"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:95
+#, fuzzy
 msgid ""
 "The built-in plugin manager is used for both editors in this example.  The "
 "LSP client plugin used is link:https://github.com/prabirshrestha/vim-"
 "lsp[prabirshrestha/vim-lsp]."
-msgstr ""
+msgstr "本例中，两个编辑器都使用内置的插件管理器。所用的 LSP 客户端插件是 link:https://github.com/prabirshrestha/vim-lsp[prabirshrestha/vim-lsp]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:97
+#, fuzzy
 msgid "To set up the LSP client plugin for Neovim:"
-msgstr ""
+msgstr "在 Neovim 中设置 LSP 客户端插件："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir -p ~/.config/nvim/pack/lsp/start\n"
 "# git clone https://github.com/prabirshrestha/vim-lsp ~/.config/nvim/pack/lsp/start/vim-lsp\n"
-msgstr ""
+msgstr "# mkdir -p ~/.config/nvim/pack/lsp/start\n# git clone https://github.com/prabirshrestha/vim-lsp ~/.config/nvim/pack/lsp/start/vim-lsp\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:105
+#, fuzzy
 msgid "and for Vim:"
-msgstr ""
+msgstr "在 Vim 中设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir -p ~/.vim/pack/lsp/start\n"
 "# git clone https://github.com/prabirshrestha/vim-lsp ~/.vim/pack/lsp/start/vim-lsp\n"
-msgstr ""
+msgstr "# mkdir -p ~/.vim/pack/lsp/start\n# git clone https://github.com/prabirshrestha/vim-lsp ~/.vim/pack/lsp/start/vim-lsp\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:113
+#, fuzzy
 msgid ""
 "To enable the LSP client plugin in the editor, add the following snippet "
 "into [.filepath]#~/.config/nvim/init.vim# when using Neovim, or [."
 "filepath]#~/.vim/vimrc# when using Vim:"
-msgstr ""
+msgstr "要在编辑器中启用 LSP 客户端插件，请使用 Neovim 时将以下片段添加到 [.filepath]#~/.config/nvim/init.vim#，或使用 Vim 时添加到 [.filepath]#~/.vim/vimrc#："
 
 #. type: Block title
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:114
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "For ccls"
-msgstr ""
+msgstr "用于 ccls"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "au User lsp_setup call lsp#register_server({\n"
 "    \\ 'name': 'ccls',\n"
@@ -233,18 +254,18 @@ msgid ""
 "    \\         'hierarchicalPath': v:true\n"
 "    \\     }\n"
 "    \\ }})\n"
-msgstr ""
+msgstr "au User lsp_setup call lsp#register_server({\n    \\ 'name': 'ccls',\n    \\ 'cmd': {server_info->['ccls']},\n    \\ 'allowlist': ['c', 'cpp', 'objc'],\n    \\ 'initialization_options': {\n    \\     'cache': {\n    \\         'hierarchicalPath': v:true\n    \\     }\n    \\ }})\n"
 
 #. type: Block title
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:128
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "For clangd"
-msgstr ""
+msgstr "用于 clangd"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "au User lsp_setup call lsp#register_server({\n"
 "    \\ 'name': 'clangd',\n"
@@ -252,46 +273,49 @@ msgid ""
 "    \\ 'allowlist': ['c', 'cpp', 'objc'],\n"
 "    \\ 'initialization_options': {},\n"
 "    \\ })\n"
-msgstr ""
+msgstr "au User lsp_setup call lsp#register_server({\n    \\ 'name': 'clangd',\n    \\ 'cmd': {server_info->['clangd15', '--background-index', '--header-insertion=never']},\n    \\ 'allowlist': ['c', 'cpp', 'objc'],\n    \\ 'initialization_options': {},\n    \\ })\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:140
+#, fuzzy
 msgid ""
 "Depending on the version that you installed for `clangd` you might need to "
 "update the `server-info` to point to the correct binary."
-msgstr ""
+msgstr "根据您安装的 `clangd` 版本，可能需要更新 `server-info`，使其指向正确的二进制文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:143
+#, fuzzy
 msgid ""
 "Please refer to link:https://github.com/prabirshrestha/vim-lsp/blob/master/"
 "README.md#registering-servers[] to learn about setting up key bindings and "
 "code completion.  The official site of clangd is link:https://clangd.llvm."
 "org[], and the repository link of ccls is link:https://github.com/MaskRay/"
 "ccls/[]."
-msgstr ""
+msgstr "请参阅 link:https://github.com/prabirshrestha/vim-lsp/blob/master/README.md#registering-servers[]，了解如何设置按键绑定和代码补全。clangd 的官方网站是 link:https://clangd.llvm.org[]，ccls 的代码仓库链接是 link:https://github.com/MaskRay/ccls/[]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:146
+#, fuzzy
 msgid ""
 "Below are the reference settings of keybindings and code completions.  Put "
 "the following snippet into [.filepath]#~/.config/nvim/init.vim#, or [."
 "filepath]#~/.vim/vimrc# for Vim users to use it:"
-msgstr ""
+msgstr "以下是按键绑定和代码补全的参考设置。将以下片段添加到 [.filepath]#~/.config/nvim/init.vim#，Vim 用户则添加到 [.filepath]#~/.vim/vimrc#，即可使用这些设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function! s:on_lsp_buffer_enabled() abort\n"
 "    setlocal omnifunc=lsp#complete\n"
 "    setlocal completeopt-=preview\n"
 "    setlocal keywordprg=:LspHover\n"
-msgstr ""
+msgstr "function! s:on_lsp_buffer_enabled() abort\n    setlocal omnifunc=lsp#complete\n    setlocal completeopt-=preview\n    setlocal keywordprg=:LspHover\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    nmap <buffer> <C-]> <plug>(lsp-definition)\n"
 "    nmap <buffer> <C-W>] <plug>(lsp-peek-definition)\n"
@@ -306,46 +330,48 @@ msgid ""
 "    nmap <buffer> gR <plug>(lsp-rename)\n"
 "    nmap <buffer> gm <plug>(lsp-signature-help)\n"
 "endfunction\n"
-msgstr ""
+msgstr "    nmap <buffer> <C-]> <plug>(lsp-definition)\n    nmap <buffer> <C-W>] <plug>(lsp-peek-definition)\n    nmap <buffer> <C-W><C-]> <plug>(lsp-peek-definition)\n    nmap <buffer> gr <plug>(lsp-references)\n    nmap <buffer> <C-n> <plug>(lsp-next-reference)\n    nmap <buffer> <C-p> <plug>(lsp-previous-reference)\n    nmap <buffer> gI <plug>(lsp-implementation)\n    nmap <buffer> go <plug>(lsp-document-symbol)\n    nmap <buffer> gS <plug>(lsp-workspace-symbol)\n    nmap <buffer> ga <plug>(lsp-code-action)\n    nmap <buffer> gR <plug>(lsp-rename)\n    nmap <buffer> gm <plug>(lsp-signature-help)\nendfunction\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "augroup lsp_install\n"
 "    au!\n"
 "    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()\n"
 "augroup END\n"
-msgstr ""
+msgstr "augroup lsp_install\n    au!\n    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()\naugroup END\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "VSCode"
-msgstr ""
+msgstr "VSCode"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:182
+#, fuzzy
 msgid ""
 "LSP client plugins are required to launch the language server daemon.  Press "
 "`Ctrl+Shift+X` to show the extension online search panel.  Enter `llvm-vs-"
 "code-extensions.vscode-clangd` when running clangd, or `ccls-project.ccls` "
 "when running ccls."
-msgstr ""
+msgstr "需要安装 LSP 客户端插件才能启动语言服务器守护进程。按 `Ctrl+Shift+X` 打开扩展在线搜索面板。使用 clangd 时输入 `llvm-vs-code-extensions.vscode-clangd`，使用 ccls 时输入 `ccls-project.ccls`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:186
+#, fuzzy
 msgid ""
 "Then, press `Ctrl+Shift+P` to show the editor commands palette.  Enter "
 "`Preferences: Open Settings (JSON)` into the palette and hit `Enter` to open "
 "[.filepath]#settings.json#.  Depending on the language server "
 "implementations, put one of the following JSON key/value pairs in [."
 "filepath]#settings.json#:"
-msgstr ""
+msgstr "然后，按 `Ctrl+Shift+P` 打开编辑器命令面板。在面板中输入 `Preferences: Open Settings (JSON)`，再按 `Enter` 打开 [.filepath]#settings.json#。根据语言服务器实现，在 [.filepath]#settings.json# 中加入以下 JSON 键值对之一："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[\n"
 "    /* Begin of your existing configurations */\n"
@@ -357,11 +383,11 @@ msgid ""
 "    ],\n"
 "    \"clangd.path\": \"clangd12\"\n"
 "]\n"
-msgstr ""
+msgstr "[\n    /* Begin of your existing configurations */\n    ...\n    /* End of your existing configurations */\n    \"clangd.arguments\": [\n        \"--background-index\",\n        \"--header-insertion=never\"\n    ],\n    \"clangd.path\": \"clangd12\"\n]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[\n"
 "    /* Begin of your existing configurations */\n"
@@ -369,158 +395,169 @@ msgid ""
 "    /* End of your existing configurations */\n"
 "    \"ccls.cache.hierarchicalPath\": true\n"
 "]\n"
-msgstr ""
+msgstr "[\n    /* Begin of your existing configurations */\n    ...\n    /* End of your existing configurations */\n    \"ccls.cache.hierarchicalPath\": true\n]\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compilation database"
-msgstr ""
+msgstr "编译数据库"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:220
+#, fuzzy
 msgid ""
 "A Compilation database contains an array of compile command objects.  Each "
 "object specifies a way of compiling a source file.  The compilation database "
 "file is usually [.filename]#compile_commands.json#.  The database is used by "
 "language server implementations for indexing purpose."
-msgstr ""
+msgstr "编译数据库包含一个编译命令对象数组。每个对象都指定了一种编译源文件的方式。编译数据库文件通常名为 [.filename]#compile_commands.json#。语言服务器实现会使用该数据库为源代码建立索引。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:222
+#, fuzzy
 msgid ""
 "Please refer to link:https://clang.llvm.org/docs/JSONCompilationDatabase."
 "html#format[] for details on the format of the compilation database file."
-msgstr ""
+msgstr "有关编译数据库文件格式的详情，请参阅 link:https://clang.llvm.org/docs/JSONCompilationDatabase.html#format[]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Generators"
-msgstr ""
+msgstr "生成器"
 
 #. type: Title ====
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using scan-build-py"
-msgstr ""
+msgstr "使用 scan-build-py"
 
 #. type: Title =====
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:233
+#, fuzzy
 msgid ""
 "`intercept-build` tool from scan-build-py is used to generate compilation "
 "database."
-msgstr ""
+msgstr "scan-build-py 中的 `intercept-build` 工具用于生成编译数据库。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:236
+#, fuzzy
 msgid ""
 "Install package:devel/python[] to get python interpreter first. To get "
 "`intercept-build` from LLVM:"
-msgstr ""
+msgstr "首先安装 package:devel/python[]，以获取 Python 解释器。要从 LLVM 获取 `intercept-build`："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git clone https://github.com/llvm/llvm-project /path/to/llvm-project\n"
-msgstr ""
+msgstr "# git clone https://github.com/llvm/llvm-project /path/to/llvm-project\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:243
+#, fuzzy
 msgid ""
 "where [.filename]#/path/to/llvm-project/# is your desired path for the "
 "repository. Make an alias in the shell configuration file for convenience:"
-msgstr ""
+msgstr "其中 [.filename]#/path/to/llvm-project/# 是您希望存放该代码仓库的路径。为方便使用，请在 shell 配置文件中创建别名："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alias intercept-build='/path/to/llvm-project/clang/tools/scan-build-py/bin/intercept-build'\n"
-msgstr ""
+msgstr "alias intercept-build='/path/to/llvm-project/clang/tools/scan-build-py/bin/intercept-build'\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:253
+#, fuzzy
 msgid ""
 "link:https://github.com/rizsotto/scan-build[rizsotto/scan-build] can be used "
 "instead of LLVM's scan-build-py.  The LLVM's scan-build-py was rizsotto/scan-"
 "build merged into the LLVM tree.  This implementation can be installed by "
 "`pip install --user scan-build`.  The `intercept-build` script is in [."
 "filename]#~/.local/bin# by default."
-msgstr ""
+msgstr "可以使用 link:https://github.com/rizsotto/scan-build[rizsotto/scan-build] 代替 LLVM 的 scan-build-py。LLVM 的 scan-build-py 是将 rizsotto/scan-build 合并到 LLVM 源码树后的版本。此实现可以通过 `pip install --user scan-build` 安装。默认情况下，`intercept-build` 脚本位于 [.filename]#~/.local/bin#。"
 
 #. type: Title =====
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:254
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:270
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Usage"
-msgstr ""
+msgstr "用法"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:257
+#, fuzzy
 msgid ""
 "In the top-level directory of the FreeBSD src tree, generate the compilation "
 "database with `intercept-build`:"
-msgstr ""
+msgstr "在 FreeBSD src 树的顶层目录中，使用 `intercept-build` 生成编译数据库："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# intercept-build --append make buildworld buildkernel -j`sysctl -n hw.ncpu`\n"
-msgstr ""
+msgstr "# intercept-build --append make buildworld buildkernel -j`sysctl -n hw.ncpu`\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:266
+#, fuzzy
 msgid ""
 "The `--append` flag tells the `intercept-build` to read an existing "
 "compilation database (if a compilation database exists) and append the "
 "results to the database.  Entries with duplicated command keys are merged.  "
 "The generated compilation database by default is saved in the current "
 "working directory as [.filename]#compile_commands.json#."
-msgstr ""
+msgstr "`--append` 标志会让 `intercept-build` 读取现有编译数据库（如果存在），并将结果追加到数据库中。命令键重复的条目会被合并。默认情况下，生成的编译数据库会保存在当前工作目录下，文件名为 [.filename]#compile_commands.json#。"
 
 #. type: Title ====
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using devel/bear"
-msgstr ""
+msgstr "使用 devel/bear"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:273
+#, fuzzy
 msgid ""
 "In the top-level directory of the FreeBSD src tree, to generate compilation "
 "database with `bear`:"
-msgstr ""
+msgstr "在 FreeBSD src 树的顶层目录中，使用 `bear` 生成编译数据库："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# bear --append -- make buildworld buildkernel -j`sysctl -n hw.ncpu`\n"
-msgstr ""
+msgstr "# bear --append -- make buildworld buildkernel -j`sysctl -n hw.ncpu`\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:282
+#, fuzzy
 msgid ""
 "The `--append` flag tells `bear` to read an existing compilation database if "
 "it is present, and append the results to the database.  Entries with "
 "duplicated command keys are merged.  The generated compilation database by "
 "default is saved in the current working directory as [."
 "filename]#compile_commands.json#."
-msgstr ""
+msgstr "如果存在现有编译数据库，`--append` 标志会让 `bear` 读取该数据库，并将结果追加其中。命令键重复的条目会被合并。默认情况下，生成的编译数据库会保存在当前工作目录下，文件名为 [.filename]#compile_commands.json#。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Final"
-msgstr ""
+msgstr "结语"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-src-lsp/_index.adoc:288
+#, fuzzy
 msgid ""
 "Once the compilation database is generated, open any source files in the "
 "FreeBSD src tree and LSP server daemon will be launched as well in "
@@ -531,4 +568,4 @@ msgid ""
 "however does not index the source files not appearing in the compilation "
 "database, thus no complete results are shown on source files not being "
 "compiled during the `make`."
-msgstr ""
+msgstr "生成编译数据库后，打开 FreeBSD src 树中的任意源文件，LSP 服务器守护进程也会在后台启动。首次打开 src 树中的源文件时，等待 LSP 服务器提供完整结果的时间会明显更长，因为 LSP 服务器会在后台进行初始索引，并编译编译数据库中列出的所有条目。不过，语言服务器守护进程不会为编译数据库中未列出的源文件建立索引，因此，对于 `make` 期间未编译的源文件，不会显示完整结果。"

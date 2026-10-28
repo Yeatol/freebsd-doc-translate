@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/contributors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A list of organizations and individuals who have contributed to FreeBSD"
-msgstr ""
+msgstr "为 FreeBSD 做出贡献的组织和个人列表"
 
 #. type: Title =
 #: documentation/content/en/articles/contributors/_index.adoc:1
 #: documentation/content/en/articles/contributors/_index.adoc:8
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributors to FreeBSD"
-msgstr ""
+msgstr "FreeBSD 贡献者"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:61
@@ -37,12 +37,13 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:65
+#, fuzzy
 msgid ""
 "This article lists individuals and organizations who have made a "
 "contribution to FreeBSD.  To see the current list of FreeBSD Committers you "
 "can take a look at the following crossref:contributors[staff-committers, "
 "list]."
-msgstr ""
+msgstr "本文列出了为 FreeBSD 做出贡献的个人和组织。要查看当前的 FreeBSD 提交者列表，请参阅以下 crossref:contributors[staff-committers, list]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:67
@@ -51,371 +52,417 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Developers"
-msgstr ""
+msgstr "FreeBSD 开发人员"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:75
+#, fuzzy
 msgid ""
 "This list, which includes all members of the Core Team, names everyone who "
 "has commit privileges for one or more of the three source trees (doc, ports "
 "and src).  To see the current Core Team members you can take a look at the "
 "link:https://www.freebsd.org/administration/#t-core[administration page]."
-msgstr ""
+msgstr "此列表包括所有核心团队成员，列出了拥有一个或多个源代码树（doc、ports 和 src）提交权限的所有人员。要查看当前核心团队成员，请参阅 link:https://www.freebsd.org/administration/#t-core[管理页面]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:77
+#, fuzzy
 msgid "(in alphabetical order by last name):"
-msgstr ""
+msgstr "（按姓氏字母顺序排列）："
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Core Team Alumni"
-msgstr ""
+msgstr "核心团队历任成员"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:85
+#, fuzzy
 msgid ""
 "The following people were members of the FreeBSD core team during the "
 "periods indicated.  We thank them for their past efforts in the service of "
 "the FreeBSD project."
-msgstr ""
+msgstr "以下人员曾在所列期间担任 FreeBSD 核心团队成员。感谢他们过去为 FreeBSD 项目所付出的努力。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:87
 #: documentation/content/en/articles/contributors/_index.adoc:97
 #: documentation/content/en/articles/contributors/_index.adoc:107
+#, fuzzy
 msgid "_In rough reverse chronological order:_"
-msgstr ""
+msgstr "__大致按时间倒序排列：__"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Development Team Alumni"
-msgstr ""
+msgstr "开发团队历任成员"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:95
+#, fuzzy
 msgid ""
 "The following people were members of the FreeBSD development team during the "
 "periods indicated.  We thank them for their past efforts in the service of "
 "the FreeBSD project."
-msgstr ""
+msgstr "以下人员曾在所列期间担任 FreeBSD 开发团队成员。感谢他们过去为 FreeBSD 项目所付出的努力。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports Management Team Alumni"
-msgstr ""
+msgstr "Ports 管理团队历任成员"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:105
+#, fuzzy
 msgid ""
 "The following people were members of the FreeBSD portmgr team during the "
 "periods indicated.  We thank them for their past efforts in the service of "
 "the FreeBSD project."
-msgstr ""
+msgstr "以下人员曾在所列期间担任 FreeBSD portmgr 团队成员。感谢他们过去为 FreeBSD 项目所付出的努力。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Development Team: In Memoriam"
-msgstr ""
+msgstr "开发团队：纪念逝者"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:115
+#, fuzzy
 msgid ""
 "During the many years that the FreeBSD Project has been in existence, sadly, "
 "some of our developers have passed away.  Here are some remembrances."
-msgstr ""
+msgstr "FreeBSD 项目存在的多年间，令人遗憾的是，我们的一些开发人员已经离世。谨以此文追忆他们。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:117
+#, fuzzy
 msgid "_In rough reverse chronological order of their passing:_"
-msgstr ""
+msgstr "__大致按离世时间倒序排列：__"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Derived Software Contributors"
-msgstr ""
+msgstr "衍生软件贡献者"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:125
+#, fuzzy
 msgid ""
 "This software was originally derived from William F. Jolitz's 386BSD release "
 "0.1, though almost none of the original 386BSD specific code remains.  This "
 "software has been essentially re-implemented from the 4.4BSD-Lite release "
 "provided by the Computer Science Research Group (CSRG) at the University of "
 "California, Berkeley and associated academic contributors."
-msgstr ""
+msgstr "本软件最初衍生自 William F. Jolitz 发布的 386BSD 0.1 版，不过原始 386BSD 专属代码几乎已全部不复存在。本软件基本上是基于加州大学伯克利分校计算机科学研究小组（CSRG）及相关学术贡献者提供的 4.4BSD-Lite 版本重新实现的。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:127
+#, fuzzy
 msgid ""
 "There are also portions of NetBSD and OpenBSD that have been integrated into "
 "FreeBSD as well, and we would therefore like to thank all the contributors "
 "to NetBSD and OpenBSD for their work."
-msgstr ""
+msgstr "FreeBSD 还整合了 NetBSD 和 OpenBSD 的部分代码，因此我们也要感谢 NetBSD 和 OpenBSD 的所有贡献者所做的工作。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Additional FreeBSD Contributors"
-msgstr ""
+msgstr "其他 FreeBSD 贡献者"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:132
 #: documentation/content/en/articles/contributors/_index.adoc:139
+#, fuzzy
 msgid "(in alphabetical order by first name):"
-msgstr ""
+msgstr "（按名字字母顺序排列）："
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "386BSD Patch Kit Patch Contributors"
-msgstr ""
+msgstr "386BSD 补丁包贡献者"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributors/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Donors Gallery"
-msgstr ""
+msgstr "捐赠者名录"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:146
+#, fuzzy
 msgid ""
 "The FreeBSD Foundation thanks https://freebsdfoundation.org/our-donors/"
 "donors/[financial and in-kind donors]."
-msgstr ""
+msgstr "FreeBSD 基金会感谢所有提供 link:https://freebsdfoundation.org/our-donors/donors/[资金和实物捐赠]的捐赠者。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:148
+#, fuzzy
 msgid ""
 "The https://www.freebsd.org/donations/[FreeBSD Donations Liaison] area "
 "includes a https://www.freebsd.org/donations/donors/[list of donated "
 "hardware]."
-msgstr ""
+msgstr "link:https://www.freebsd.org/donations/[FreeBSD 捐赠联络]页面包含一份 link:https://www.freebsd.org/donations/donors/[捐赠硬件列表]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributors/_index.adoc:150
+#, fuzzy
 msgid "The FreeBSD Project thanks all donors!"
-msgstr ""
+msgstr "FreeBSD 项目感谢所有捐赠者！"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributors/_index.adoc:154
+#, fuzzy
 msgid "As of 2010, the section below was several years out-of-date."
-msgstr ""
+msgstr "截至 2010 年，以下部分的内容已过时数年。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributors/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributors to the central server project"
-msgstr ""
+msgstr "中央服务器项目贡献者"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:159
+#, fuzzy
 msgid ""
 "The following individuals and businesses made it possible for the FreeBSD "
 "Project to build a new central server machine, which has replaced `freefall."
 "FreeBSD.org` at one point, by donating the following items:"
-msgstr ""
+msgstr "以下个人和企业捐赠了下列物品，使 FreeBSD 项目得以组建一台新的中央服务器，该服务器曾一度取代 `freefall.FreeBSD.org`："
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:161
+#, fuzzy
 msgid ""
 "{mbarkah} and his employer, http://www.hemi.com/[Hemisphere Online], donated "
 "a _Pentium Pro (P6) 200MHz CPU_."
-msgstr ""
+msgstr "{mbarkah} 及其雇主 link:http://www.hemi.com/[Hemisphere Online] 捐赠了一颗 __Pentium Pro (P6) 200MHz CPU__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:162
+#, fuzzy
 msgid ""
 "http://www.asacomputers.com/[ASA Computers] donated a _Tyan 1662 "
 "motherboard_."
-msgstr ""
+msgstr "link:http://www.asacomputers.com/[ASA Computers] 捐赠了一块 __Tyan 1662 主板__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:163
+#, fuzzy
 msgid ""
 "Joe McGuckin <mailto:joe@via.net[joe@via.net]> of http://www.via.net/[ViaNet "
 "Communications] donated a _Kingston ethernet controller_."
-msgstr ""
+msgstr "ViaNet Communications 的 Joe McGuckin <mailto:joe@via.net[joe@via.net]>（link:http://www.via.net/[]）捐赠了一块 __Kingston 以太网控制器__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:164
+#, fuzzy
 msgid ""
 "Jack O'Neill <mailto:jack@diamond.xtalwind.net[jack@diamond.xtalwind.net]> "
 "donated an _NCR 53C875 SCSI controller card_."
-msgstr ""
+msgstr "Jack O'Neill <mailto:jack@diamond.xtalwind.net[jack@diamond.xtalwind.net]> 捐赠了一块 __NCR 53C875 SCSI 控制器卡__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:165
+#, fuzzy
 msgid ""
 "Ulf Zimmermann <mailto:ulf@Alameda.net[ulf@Alameda.net]> of http://www."
 "Alameda.net/[Alameda Networks] donated _128MB of memory_, a _4 Gb disk drive "
 "and the case_."
-msgstr ""
+msgstr "Alameda Networks 的 Ulf Zimmermann <mailto:ulf@Alameda.net[ulf@Alameda.net]>（link:http://www.Alameda.net/[]）捐赠了__128MB 内存__、__一块 4 Gb 硬盘和机箱__。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributors/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Direct funding"
-msgstr ""
+msgstr "直接资助"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:169
+#, fuzzy
 msgid ""
 "The following individuals and businesses have generously contributed direct "
 "funding to the project:"
-msgstr ""
+msgstr "以下个人和企业慷慨地直接资助了该项目："
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:171
+#, fuzzy
 msgid ""
 "Annelise Anderson <mailto:andrsn@hoover.stanford.edu[andrsn@hoover.stanford."
 "edu]>."
-msgstr ""
+msgstr "Annelise Anderson <mailto:andrsn@hoover.stanford.edu[andrsn@hoover.stanford.edu]>。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:172
+#, fuzzy
 msgid "{dillon}."
-msgstr ""
+msgstr "{dillon}。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:173
+#, fuzzy
 msgid "http://www.bluemountain.com/[Blue Mountain Arts]."
-msgstr ""
+msgstr "link:http://www.bluemountain.com/[Blue Mountain Arts]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:174
+#, fuzzy
 msgid "http://www.epilogue.com/[Epilogue Technology Corporation]."
-msgstr ""
+msgstr "link:http://www.epilogue.com/[Epilogue Technology Corporation]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:175
+#, fuzzy
 msgid "{sef}."
-msgstr ""
+msgstr "{sef}。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:176
+#, fuzzy
 msgid "http://www.gta.com/[Global Technology Associates, Inc]."
-msgstr ""
+msgstr "link:http://www.gta.com/[Global Technology Associates, Inc]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:177
+#, fuzzy
 msgid "Don Scott Wilde."
-msgstr ""
+msgstr "Don Scott Wilde。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:178
+#, fuzzy
 msgid ""
 "Gianmarco Giovannelli <mailto:gmarco@masternet.it[gmarco@masternet.it]>."
-msgstr ""
+msgstr "Gianmarco Giovannelli <mailto:gmarco@masternet.it[gmarco@masternet.it]>。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:179
+#, fuzzy
 msgid "Josef C. Grosch <mailto:joeg@truenorth.org[joeg@truenorth.org]>."
-msgstr ""
+msgstr "Josef C. Grosch <mailto:joeg@truenorth.org[joeg@truenorth.org]>。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:180
+#, fuzzy
 msgid "Robert T. Morris."
-msgstr ""
+msgstr "Robert T. Morris。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:181
+#, fuzzy
 msgid "{chuckr}."
-msgstr ""
+msgstr "{chuckr}。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:182
+#, fuzzy
 msgid ""
 "Kenneth P. Stox <mailto:ken@stox.sa.enteract.com[ken@stox.sa.enteract.com]> "
 "of http://www.imagescape.com/[Imaginary Landscape, LLC.]."
-msgstr ""
+msgstr "Imaginary Landscape, LLC. 的 Kenneth P. Stox <mailto:ken@stox.sa.enteract.com[ken@stox.sa.enteract.com]>（link:http://www.imagescape.com/[]）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:183
+#, fuzzy
 msgid "Dmitry S. Kohmanyuk <mailto:dk@dog.farm.org[dk@dog.farm.org]>."
-msgstr ""
+msgstr "Dmitry S. Kohmanyuk <mailto:dk@dog.farm.org[dk@dog.farm.org]>。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:184
+#, fuzzy
 msgid ""
 "http://www.cdrom.co.jp/[Laser5] of Japan (a portion of the profits from "
 "sales of their various FreeBSD CDROMs)."
-msgstr ""
+msgstr "日本的 link:http://www.cdrom.co.jp/[Laser5]（捐赠其各类 FreeBSD CDROM 销售利润的一部分）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:185
+#, fuzzy
 msgid ""
 "http://www.mmjp.or.jp/fuki/[Fuki Shuppan Publishing Co.] donated a portion "
 "of their profits from _Hajimete no FreeBSD_ (FreeBSD, Getting started) to "
 "the FreeBSD and XFree86 projects."
-msgstr ""
+msgstr "link:http://www.mmjp.or.jp/fuki/[Fuki Shuppan Publishing Co.] 将其 __Hajimete no FreeBSD__（《FreeBSD 入门》）一书部分利润捐赠给 FreeBSD 和 XFree86 项目。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:186
+#, fuzzy
 msgid ""
 "http://www.ascii.co.jp/[ASCII Corp.] donated a portion of their profits from "
 "several FreeBSD-related books to the FreeBSD project."
-msgstr ""
+msgstr "link:http://www.ascii.co.jp/[ASCII Corp.] 将几本 FreeBSD 相关书籍的部分利润捐赠给 FreeBSD 项目。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:187
+#, fuzzy
 msgid ""
 "http://www.yokogawa.co.jp/[Yokogawa Electric Corp] has generously donated "
 "significant funding to the FreeBSD project."
-msgstr ""
+msgstr "link:http://www.yokogawa.co.jp/[Yokogawa Electric Corp] 慷慨地向 FreeBSD 项目捐赠了大笔资金。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:188
+#, fuzzy
 msgid "http://www.buffnet.net/[BuffNET]."
-msgstr ""
+msgstr "link:http://www.buffnet.net/[BuffNET]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:189
+#, fuzzy
 msgid "http://www.pacificsolutions.com/[Pacific Solutions]."
-msgstr ""
+msgstr "link:http://www.pacificsolutions.com/[Pacific Solutions]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:190
+#, fuzzy
 msgid ""
 "http://www.siemens.de/[Siemens AG] via Andre Albsmeier <mailto:andre."
 "albsmeier@mchp.siemens.de[andre.albsmeier@mchp.siemens.de]>."
-msgstr ""
+msgstr "link:http://www.siemens.de/[Siemens AG] 通过 Andre Albsmeier <mailto:andre.albsmeier@mchp.siemens.de[andre.albsmeier@mchp.siemens.de]> 捐赠。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:191
+#, fuzzy
 msgid "Chris Silva <mailto:ras@interaccess.com[ras@interaccess.com]>."
-msgstr ""
+msgstr "Chris Silva <mailto:ras@interaccess.com[ras@interaccess.com]>。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributors/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hardware contributors"
-msgstr ""
+msgstr "硬件贡献者"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:195
+#, fuzzy
 msgid ""
 "The following individuals and businesses have generously contributed "
 "hardware for testing and device driver development/support:"
-msgstr ""
+msgstr "以下个人和企业慷慨地捐赠硬件，用于测试以及设备驱动程序的开发和支持："
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:197
+#, fuzzy
 msgid ""
 "BSDi for providing the Pentium P5-90 and 486/DX2-66 EISA/VL systems that are "
 "being used for our development work, to say nothing of the network access "
 "and other donations of hardware resources."
-msgstr ""
+msgstr "BSDi 提供了用于开发工作的 Pentium P5-90 和 486/DX2-66 EISA/VL 系统，更不用说网络访问以及其他硬件资源捐赠了。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:198
+#, fuzzy
 msgid ""
 "http://www.compaq.com[Compaq] has donated a variety of Alpha systems to the "
 "FreeBSD Project. Among the many generous donations are 4 AlphaStation DS10s, "
@@ -423,47 +470,53 @@ msgid ""
 "Personal Workstations, 4 433Mhz Personal Workstations, and more! These "
 "machines are used for release engineering, package building, SMP "
 "development, and general development on the Alpha architecture."
-msgstr ""
+msgstr "link:http://www.compaq.com[Compaq] 向 FreeBSD 项目捐赠了各种 Alpha 系统。在众多慷慨捐赠中，包括 4 台 AlphaStation DS10、1 台 AlphaServer DS20、若干台 AlphaServer 2100、1 台 AlphaServer 4100、8 台 500Mhz Personal Workstations、4 台 433Mhz Personal Workstations，以及其他设备！这些机器用于发行工程、软件包构建、SMP 开发，以及 Alpha 架构上的一般开发工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:199
+#, fuzzy
 msgid ""
 "TRW Financial Systems, Inc. provided 130 PCs, three 68 GB file servers, "
 "twelve Ethernets, two routers and an ATM switch for debugging the diskless "
 "code"
-msgstr ""
+msgstr "TRW Financial Systems, Inc. 提供了 130 台 PC、3 台 68 GB 文件服务器、12 个以太网设备、2 台路由器和 1 台 ATM 交换机，用于调试无盘代码"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:200
+#, fuzzy
 msgid ""
 "Dermot McDonnell donated the Toshiba XM3401B CDROM drive currently used in "
 "_freefall_."
-msgstr ""
+msgstr "Dermot McDonnell 捐赠了目前在 __freefall__ 上使用的 Toshiba XM3401B CDROM 驱动器。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:201
+#, fuzzy
 msgid ""
 "Chuck Robey <mailto:chuckr@glue.umd.edu[chuckr@glue.umd.edu]> contributed "
 "his floppy tape streamer for experimental work."
-msgstr ""
+msgstr "Chuck Robey <mailto:chuckr@glue.umd.edu[chuckr@glue.umd.edu]> 提供了他的软盘磁带流式传输设备，用于实验工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:202
+#, fuzzy
 msgid ""
 "Larry Altneu <mailto:larry@alr.com[larry@alr.com],> and {wilko}, provided "
 "Wangtek and Archive QIC-02 tape drives to improve the [.filename]#wt# driver."
-msgstr ""
+msgstr "Larry Altneu <mailto:larry@alr.com[larry@alr.com]> 和 {wilko} 提供了 Wangtek 和 Archive QIC-02 磁带驱动器，以改进 [.filename]#wt# 驱动程序。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:203
+#, fuzzy
 msgid ""
 "Ernst Winter (http://berklix.org/ewinter/[Deceased]) contributed a 2.88 MB "
 "floppy drive to the project. This will hopefully increase the pressure for "
 "rewriting the floppy disk driver."
-msgstr ""
+msgstr "Ernst Winter（link:http://berklix.org/ewinter/[已故]）向项目捐赠了一台 2.88 MB 软盘驱动器。希望这能推动重写软盘驱动程序。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:204
+#, fuzzy
 msgid ""
 "http://www.tekram.com/[Tekram Technologies] sent one each of their DC-390, "
 "DC-390U and DC-390F FAST and ULTRA SCSI host adapter cards for regression "
@@ -471,41 +524,45 @@ msgid ""
 "applauded for making driver sources for free operating systems available "
 "from their FTP server link:ftp://ftp.tekram.com/scsi/FreeBSD/[ftp://ftp."
 "tekram.com/scsi/FreeBSD/]."
-msgstr ""
+msgstr "link:http://www.tekram.com/[Tekram Technologies] 各捐赠了一块 DC-390、DC-390U 和 DC-390F FAST 与 ULTRA SCSI 主机适配器卡，用于对 NCR 和 AMD 驱动程序进行回归测试。他们还将驱动程序源代码放在 FTP 服务器上，供自由操作系统使用，值得称赞：link:ftp://ftp.tekram.com/scsi/FreeBSD/[ftp://ftp.tekram.com/scsi/FreeBSD/]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:205
+#, fuzzy
 msgid ""
 "Larry M. Augustin contributed not only a Symbios Sym8751S SCSI card, but "
 "also a set of data books, including one about the forthcoming Sym53c895 chip "
 "with Ultra-2 and LVD support, and the latest programming manual with "
 "information on how to safely use the advanced features of the latest Symbios "
 "SCSI chips. Thanks a lot!"
-msgstr ""
+msgstr "Larry M. Augustin 不仅捐赠了一块 Symbios Sym8751S SCSI 卡，还捐赠了一套资料手册，其中包括一本介绍即将推出的支持 Ultra-2 和 LVD 的 Sym53c895 芯片的手册，以及一份最新编程手册，介绍如何安全使用最新 Symbios SCSI 芯片的高级功能。非常感谢！"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:206
+#, fuzzy
 msgid ""
 "{kuku} donated an FX120 12 speed Mitsumi CDROM drive for IDE CDROM driver "
 "development."
-msgstr ""
+msgstr "{kuku} 捐赠了一台 FX120 12 倍速 Mitsumi CDROM 驱动器，用于 IDE CDROM 驱动程序开发。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:207
+#, fuzzy
 msgid ""
 "Mike Tancsa <mailto:mike@sentex.ca[mike@sentex.ca]> donated four various ATM "
 "PCI cards to help increase support of these cards as well as help support "
 "the development effort of the netatm ATM stack."
-msgstr ""
+msgstr "Mike Tancsa <mailto:mike@sentex.ca[mike@sentex.ca]> 捐赠了四块不同的 ATM PCI 卡，以帮助增强对这些卡的支持，并支持 netatm ATM 协议栈的开发工作。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributors/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Special contributors"
-msgstr ""
+msgstr "特别贡献者"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:211
+#, fuzzy
 msgid ""
 "http://www.osd.bsdi.com/[BSDi] (formerly Walnut Creek CDROM) has donated "
 "almost more than we can say (see the 'About the FreeBSD Project' section of "
@@ -515,22 +572,24 @@ msgid ""
 "testing and build box. We are also indebted to them for funding various "
 "contributors over the years and providing us with unrestricted use of their "
 "T1 connection to the Internet."
-msgstr ""
+msgstr "link:http://www.osd.bsdi.com/[BSDi]（前身为 Walnut Creek CDROM）提供了难以尽述的支持（详情请参阅 extref:{handbook}[FreeBSD 手册]中的“关于 FreeBSD 项目”部分）。特别感谢他们提供最初用于 `freefall.FreeBSD.org`（我们的主要开发机器）和 `thud.FreeBSD.org`（测试与构建机器）的硬件。多年来，他们还资助了多位贡献者，并允许我们不受限制地使用其 T1 互联网连接，我们对此深表感谢。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:212
+#, fuzzy
 msgid ""
 "The http://www.interface-business.de/[interface business GmbH, Dresden] has "
 "been patiently supporting {joerg} who has often preferred FreeBSD work over "
 "paid work, and used to fall back to their (quite expensive) EUnet Internet "
 "connection whenever his private connection became too slow or flaky to work "
 "with it."
-msgstr ""
+msgstr "link:http://www.interface-business.de/[interface business GmbH, Dresden] 一直耐心地支持 {joerg}。他经常宁愿从事 FreeBSD 工作，也不愿做有偿工作；当他的私人网络连接速度过慢或不稳定、不适合工作时，他过去常改用该公司的 EUnet 互联网连接（费用相当高）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:212
+#, fuzzy
 msgid ""
 "http://www.bsdi.com/[Berkeley Software Design, Inc.] has contributed their "
 "DOS emulator code to the remaining BSD world, which is used in the `doscmd` "
 "command."
-msgstr ""
+msgstr "link:http://www.bsdi.com/[Berkeley Software Design, Inc.] 将其 DOS 模拟器代码贡献给了 BSD 世界的其他成员，该代码用于 `doscmd` 命令。"

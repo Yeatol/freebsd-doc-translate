@@ -17,146 +17,159 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/colors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Features to set up colors"
-msgstr ""
+msgstr "用于设置颜色的功能"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/accessibility/colors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Vision"
-msgstr ""
+msgstr "第二部分：视觉"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/colors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 3. Colors"
-msgstr ""
+msgstr "第 3 章：颜色"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/colors/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "High Contrast"
-msgstr ""
+msgstr "高对比度"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:55
+#, fuzzy
 msgid ""
 "This chapter explains how to configure colors for on-screen elements, "
 "including:"
-msgstr ""
+msgstr "本章介绍如何配置屏幕元素的颜色，包括："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:57
+#, fuzzy
 msgid "Setting high-contrast color schemes in graphical environments."
-msgstr ""
+msgstr "在图形环境中设置高对比度配色方案。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:58
+#, fuzzy
 msgid ""
 "Adapting screen color temperature for optimal viewing in daylight and "
 "nighttime conditions."
-msgstr ""
+msgstr "调整屏幕色温，以便在白天和夜间获得最佳观看体验。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:59
+#, fuzzy
 msgid "Selecting colors for configuration ports menus."
-msgstr ""
+msgstr "为配置端口菜单选择颜色。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "High Contrast Theme"
-msgstr ""
+msgstr "高对比度主题"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:65
+#, fuzzy
 msgid ""
 "Graphical Environments allow you to easily install and set up graphical "
 "themes.  This paragraph describes how to configure high contrast themes for "
 "windows."
-msgstr ""
+msgstr "图形环境允许你轻松安装和设置图形主题。本段介绍如何为窗口配置高对比度主题。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:67
 #: documentation/content/en/books/accessibility/colors/_index.adoc:126
 #: documentation/content/en/books/accessibility/colors/_index.adoc:304
 #: documentation/content/en/books/accessibility/colors/_index.adoc:665
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "KDE Plasma"
-msgstr ""
+msgstr "KDE Plasma"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:70
+#, fuzzy
 msgid "Launch the `Global Theme` module:"
-msgstr ""
+msgstr "启动 `Global Theme` 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:74
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_lookandfeel\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_lookandfeel\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:81
+#, fuzzy
 msgid ""
 "The window shows the current installed themes.  Click on the \"Get New...\" "
 "icon in the top right corner.  A new window will show additional themes "
 "available for installation.  In the search field at the top right, you can "
 "look for new themes to install.  You can search for \"high contrast\" or "
 "\"Acrilic Dark\"."
-msgstr ""
+msgstr "窗口会显示当前已安装的主题。点击右上角的“Get New...”图标。新窗口会显示可供安装的其他主题。在右上角的搜索框中，你可以查找要安装的新主题。可以搜索“high contrast”或“Acrilic Dark”。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:83
 #: documentation/content/en/books/accessibility/colors/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "XFCE"
-msgstr ""
+msgstr "XFCE"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:86
+#, fuzzy
 msgid ""
 "Download from https://www.xfce-look.org/p/2289345[High Contrast Windows 11 "
 "Themes]:"
-msgstr ""
+msgstr "从 link:https://www.xfce-look.org/p/2289345[High Contrast Windows 11 Themes] 下载："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:88
+#, fuzzy
 msgid "_Adwaita-Dusk.tar.bz2_"
-msgstr ""
+msgstr "_Adwaita-Dusk.tar.bz2_"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:89
+#, fuzzy
 msgid "_Adwaita-Desert.tar.bz2_"
-msgstr ""
+msgstr "_Adwaita-Desert.tar.bz2_"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:90
+#, fuzzy
 msgid "_Adwaita-Aquatic.tar.bz2_"
-msgstr ""
+msgstr "_Adwaita-Aquatic.tar.bz2_"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:91
+#, fuzzy
 msgid "_Adwaita-NightSky.tar.bz2_"
-msgstr ""
+msgstr "_Adwaita-NightSky.tar.bz2_"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:93
+#, fuzzy
 msgid ""
 "The example is for _NightSky_, but of course you can choose whichever theme "
 "you prefer."
-msgstr ""
+msgstr "以下示例使用了 __NightSky__，当然你也可以选择自己喜欢的主题。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% tar xzvf Adwaita-NightSky.tar.bz2 <1>\n"
 "% mkdir ~/.themes <2>\n"
@@ -164,80 +177,90 @@ msgid ""
 "% rm Adwaita-NightSky.tar.bz2 <4>\n"
 "% xfconf-query -c xfwm4 -p /general/theme -s 'Adwaita-NightSky' <5>\n"
 "% xfconf-query -c xsettings -p /Net/ThemeName -s 'Adwaita-NightSky' <6>\n"
-msgstr ""
+msgstr "% tar xzvf Adwaita-NightSky.tar.bz2 <1>\n% mkdir ~/.themes <2>\n% cp -a Adwaita-NightSky ~/.themes/ <3>\n% rm Adwaita-NightSky.tar.bz2 <4>\n% xfconf-query -c xfwm4 -p /general/theme -s 'Adwaita-NightSky' <5>\n% xfconf-query -c xsettings -p /Net/ThemeName -s 'Adwaita-NightSky' <6>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:105
+#, fuzzy
 msgid "Extract the downloaded theme archive."
-msgstr ""
+msgstr "解压下载的主题归档文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:106
+#, fuzzy
 msgid ""
 "Create the [.filename]#~/.themes# directory if it does not already exist."
-msgstr ""
+msgstr "如果 [.filename]#~/.themes# 目录不存在，请创建该目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:107
+#, fuzzy
 msgid "Copy the extracted themes into [.filename]#~/.themes#."
-msgstr ""
+msgstr "将解压后的主题复制到 [.filename]#~/.themes#。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:108
+#, fuzzy
 msgid "Optionally, delete the original compressed file to save space."
-msgstr ""
+msgstr "可以选择删除原始压缩文件以节省空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:109
+#, fuzzy
 msgid "Apply the Adwaita-NightSky theme for the XFCE desktop environment."
-msgstr ""
+msgstr "为 XFCE 桌面环境应用 Adwaita-NightSky 主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:110
+#, fuzzy
 msgid "Apply the Adwaita-NightSky theme for GTK applications."
-msgstr ""
+msgstr "为 GTK 应用程序应用 Adwaita-NightSky 主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:112
+#, fuzzy
 msgid ""
 "The theme selection steps (5 and 6) can also be performed using the "
 "graphical configuration dialogs in XFCE:"
-msgstr ""
+msgstr "也可以使用 XFCE 的图形配置对话框执行主题选择步骤（5 和 6）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% xfwm4-settings\n"
 "% xfce4-appearance-settings\n"
-msgstr ""
+msgstr "% xfwm4-settings\n% xfce4-appearance-settings\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "High Contrast Icons"
-msgstr ""
+msgstr "高对比度图标"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:124
+#, fuzzy
 msgid ""
 "Graphical Environments allow you to easily install and set up icon themes.  "
 "This paragraph describes how to configure high contrast icons."
-msgstr ""
+msgstr "图形环境允许你轻松安装和设置图标主题。本段介绍如何配置高对比度图标。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:129
+#, fuzzy
 msgid "Open the `_Icons_` module:"
-msgstr ""
+msgstr "打开 `_Icons_` 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_icons\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_icons\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:140
+#, fuzzy
 msgid ""
 "The window displays the currently installed icon themes.  To install a new "
 "theme, click the `_Get New..._` icon in the top right corner.  A new window "
@@ -245,25 +268,27 @@ msgid ""
 "a suggestion, you can search for `Treepata` using the search bar at the top "
 "right.  Although originally designed for XFCE and later adapted for KDE "
 "Plasma, Treepata was created as a high-contrast accessibility theme."
-msgstr ""
+msgstr "窗口会显示当前已安装的图标主题。要安装新主题，请点击右上角的 `_Get New..._` 图标。新窗口将会出现，你可以在其中浏览并安装其他图标主题。建议使用右上角的搜索栏搜索 `Treepata`。Treepata 最初为 XFCE 设计，后来适配了 KDE Plasma，是一款为无障碍访问设计的高对比度主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:145
+#, fuzzy
 msgid ""
 "Run the following commands to use the _Treepata - High Contrast_ icons theme "
 "with XFCE."
-msgstr ""
+msgstr "运行以下命令，在 XFCE 中使用 _Treepata - High Contrast_ 图标主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:148
+#, fuzzy
 msgid ""
 "Download _Treepata.zip_ from https://www.xfce-look.org/p/1015854[Treepata - "
 "High contrast].  Then execute:"
-msgstr ""
+msgstr "从 link:https://www.xfce-look.org/p/1015854[Treepata - High contrast] 下载 _Treepata.zip_。然后执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pkg search zip <1>\n"
 "% unzip Treepata.zip <2>\n"
@@ -271,85 +296,95 @@ msgid ""
 "% cp -a Treepata ~/.icons/ <4>\n"
 "% rm Treepata.zip <5>\n"
 "% xfconf-query -c xsettings -p /Net/IconThemeName -s Treepata <6>\n"
-msgstr ""
+msgstr "# pkg search zip <1>\n% unzip Treepata.zip <2>\n% mkdir ~/.icons <3>\n% cp -a Treepata ~/.icons/ <4>\n% rm Treepata.zip <5>\n% xfconf-query -c xsettings -p /Net/IconThemeName -s Treepata <6>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:160
+#, fuzzy
 msgid "Install the package package:archivers/zip[]:"
-msgstr ""
+msgstr "安装 package:archivers/zip[] 软件包："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:161
+#, fuzzy
 msgid "Extract the downloaded archive file."
-msgstr ""
+msgstr "解压下载的归档文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:162
+#, fuzzy
 msgid ""
 "Create the [.filename]#~/.icons# directory if it does not already exist."
-msgstr ""
+msgstr "如果 [.filename]#~/.icons# 目录不存在，请创建该目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:163
+#, fuzzy
 msgid "Copy the extracted theme into [.filename]#~/.icons#."
-msgstr ""
+msgstr "将解压后的主题复制到 [.filename]#~/.icons#。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:164
+#, fuzzy
 msgid "Optionally, delete the downloaded archive file to free up space."
-msgstr ""
+msgstr "可以选择删除下载的归档文件以释放空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:165
+#, fuzzy
 msgid "Set the _Treepata_ icon theme."
-msgstr ""
+msgstr "设置 _Treepata_ 图标主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:168
+#, fuzzy
 msgid ""
 "The icon theme (step 6 above) can also be set graphically via the "
 "`_Appearance_` dialog under the `_Icons_` tab.  To do so, open the dialog "
 "and select your preferred icon theme:"
-msgstr ""
+msgstr "也可以通过 `_Appearance_` 对话框中的 `_Icons_` 标签页图形化设置图标主题（上面的步骤 6）。为此，请打开该对话框并选择你偏好的图标主题："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfce4-appearance-settings\n"
-msgstr ""
+msgstr "% xfce4-appearance-settings\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:177
+#, fuzzy
 msgid ""
 "If you have icon theme problems, install package:misc/hicolor-icon-theme[] "
 "and package:graphics/gtk-update-icon-cache[]:"
-msgstr ""
+msgstr "如果图标主题出现问题，请安装 package:misc/hicolor-icon-theme[] 和 package:graphics/gtk-update-icon-cache[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install hicolor-icon-theme gtk-update-icon-cache\n"
-msgstr ""
+msgstr "# pkg install hicolor-icon-theme gtk-update-icon-cache\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:184
+#, fuzzy
 msgid "Run man:gtk-update-icon-cache[1] to create or update the icon cache:"
-msgstr ""
+msgstr "运行 man:gtk-update-icon-cache[1] 以创建或更新图标缓存："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% gtk-update-icon-cache -f -t ~/.icons/treepata\n"
-msgstr ""
+msgstr "% gtk-update-icon-cache -f -t ~/.icons/treepata\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Color temperature"
-msgstr ""
+msgstr "色温"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:198
+#, fuzzy
 msgid ""
 "This paragraph explains various utilities that adjust screen colors based on "
 "temperature, day/night cycles, and gamma settings.  These utilities enable "
@@ -357,44 +392,44 @@ msgid ""
 "time and geographical location.  Some utilities are compatible with the "
 "extref:{handbook}x11[X Window System], others support extref:{handbook}"
 "wayland[Wayland], and some work on both display servers."
-msgstr ""
+msgstr "本段介绍了多种实用程序，它们可根据色温、昼夜周期和伽马设置调整屏幕颜色。这些实用程序既支持交互式调色，也支持根据当地时间和地理位置自动调整。部分实用程序兼容 extref:{handbook}x11[X Window System]，另一些支持 extref:{handbook}wayland[Wayland]，还有一些同时支持这两种显示服务器。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/colors/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Color Temperature Utilities"
-msgstr ""
+msgstr "色温实用程序"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Auto Update"
-msgstr ""
+msgstr "自动更新"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Environment"
-msgstr ""
+msgstr "环境"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Package"
-msgstr ""
+msgstr "软件包"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:205
 #: documentation/content/en/books/accessibility/colors/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "darkman"
-msgstr ""
+msgstr "darkman"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:206
@@ -403,165 +438,169 @@ msgstr ""
 #: documentation/content/en/books/accessibility/colors/_index.adoc:221
 #: documentation/content/en/books/accessibility/colors/_index.adoc:231
 #: documentation/content/en/books/accessibility/colors/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:207
 #: documentation/content/en/books/accessibility/colors/_index.adoc:212
 #: documentation/content/en/books/accessibility/colors/_index.adoc:227
 #: documentation/content/en/books/accessibility/colors/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "X11"
-msgstr ""
+msgstr "X11"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/darkman[]"
-msgstr ""
+msgstr "package:accessibility/darkman[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:210
 #: documentation/content/en/books/accessibility/colors/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "gammastep"
-msgstr ""
+msgstr "gammastep"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/gammastep[]"
-msgstr ""
+msgstr "package:accessibility/gammastep[]"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Night Light"
-msgstr ""
+msgstr "夜间模式"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "extref:{handbook}desktop/#kde-environment[KDE Plasma]"
-msgstr ""
+msgstr "extref:{handbook}desktop/#kde-environment[KDE Plasma]"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/kde[]"
-msgstr ""
+msgstr "package:x11/kde[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:220
 #: documentation/content/en/books/accessibility/colors/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "redshift"
-msgstr ""
+msgstr "redshift"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "X11, Wayland"
-msgstr ""
+msgstr "X11，Wayland"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/redshift[]"
-msgstr ""
+msgstr "package:accessibility/redshift[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:225
 #: documentation/content/en/books/accessibility/colors/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sct"
-msgstr ""
+msgstr "sct"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/sct[]"
-msgstr ""
+msgstr "package:accessibility/sct[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:230
 #: documentation/content/en/books/accessibility/colors/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sctd"
-msgstr ""
+msgstr "sctd"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/sctd[]"
-msgstr ""
+msgstr "package:accessibility/sctd[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:235
 #: documentation/content/en/books/accessibility/colors/_index.adoc:437
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wlsunset"
-msgstr ""
+msgstr "wlsunset"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wayland"
-msgstr ""
+msgstr "Wayland"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/colors/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/wlsunset[]"
-msgstr ""
+msgstr "package:accessibility/wlsunset[]"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:242
+#, fuzzy
 msgid ""
 "The rest of this section details the steps to install, configure, and launch "
 "the utilities."
-msgstr ""
+msgstr "本节其余部分将详细介绍如何安装、配置和启动这些实用程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:249
+#, fuzzy
 msgid ""
 "man:darkman[1] is a daemon that automatically manages transitions between "
 "dark mode and light mode.  It operates primarily in the background, "
 "switching the screen's color scheme based on the local time of the current "
 "location.  To install, run:"
-msgstr ""
+msgstr "man:darkman[1] 是一个守护进程，可自动管理深色模式和浅色模式之间的切换。它主要在后台运行，根据当前位置的当地时间切换屏幕配色方案。运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install darkman\n"
-msgstr ""
+msgstr "# pkg install darkman\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:257
+#, fuzzy
 msgid ""
 "Create the file [.filename]#~/.config/darkman/config.yaml# and write your "
 "latitude and longitude.  Example:"
-msgstr ""
+msgstr "创建文件 [.filename]#~/.config/darkman/config.yaml#，并写入纬度和经度。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "lat: 37.52\n"
 "lng: 122.16\n"
-msgstr ""
+msgstr "lat: 37.52\nlng: 122.16\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:268
+#, fuzzy
 msgid ""
 "The utility does not directly change the screen colors; instead, it calls "
 "external utilities to perform the color transitions.  Add scripts to be "
@@ -570,560 +609,618 @@ msgid ""
 "filename]#XDG_DATA_DIRS/light-mode.d/#.  Several https://gitlab.com/"
 "WhyNotHugo/darkman/-/tree/main/examples[example scripts] are available in "
 "the project repository."
-msgstr ""
+msgstr "该实用程序不会直接更改屏幕颜色，而是调用外部实用程序来执行颜色切换。将日落时执行的脚本放入 [.filename]#$XDG_DATA_DIRS/dark-mode.d/#，将日出时执行的脚本放入 [.filename]#XDG_DATA_DIRS/light-mode.d/#。项目仓库中提供了多个 link:https://gitlab.com/WhyNotHugo/darkman/-/tree/main/examples[示例脚本]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:270
+#, fuzzy
 msgid "To start darkman manually, run:"
-msgstr ""
+msgstr "要手动启动 darkman，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% darkman run &\n"
-msgstr ""
+msgstr "% darkman run &\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:277
+#, fuzzy
 msgid ""
 "The utility also offers some interactive options; for more details refer to "
 "the man:darkman[1] manual page."
-msgstr ""
+msgstr "该实用程序还提供一些交互选项；详情请参阅 man:darkman[1] 手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:283
+#, fuzzy
 msgid ""
 "The man:gammastep[1] utility adjusts your screen’s color temperature "
 "automatically based on your location.  To install, run:"
-msgstr ""
+msgstr "man:gammastep[1] 实用程序会根据你的位置自动调整屏幕色温。运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install gammastep\n"
-msgstr ""
+msgstr "# pkg install gammastep\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:291
+#, fuzzy
 msgid ""
 "The utility works out of the box without any configuration.  Simply start it "
 "by running:"
-msgstr ""
+msgstr "该实用程序无需任何配置即可使用。只需运行以下命令启动它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% gammastep &\n"
-msgstr ""
+msgstr "% gammastep &\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:301
+#, fuzzy
 msgid ""
 "If you encounter any issues, customize the configuration by adapting the "
 "link:https://gitlab.com/chinstrap/gammastep/-/blob/master/gammastep.conf."
 "sample[gammastep.conf.sample] file and save it as [.filename]#~/.config/"
 "gammastep/conf.ini#.  Refer to the link:https://gitlab.com/chinstrap/"
 "gammastep/-/blob/master/README.md[README] for troubleshooting."
-msgstr ""
+msgstr "如果遇到问题，请修改 link:https://gitlab.com/chinstrap/gammastep/-/blob/master/gammastep.conf.sample[gammastep.conf.sample] 文件中的配置，并将其保存为 [.filename]#~/.config/gammastep/conf.ini#。有关故障排除，请参阅 link:https://gitlab.com/chinstrap/gammastep/-/blob/master/README.md[README]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:308
+#, fuzzy
 msgid ""
 "KDE allows you to adjust the screen color temperature based on geographic "
 "location and local time.  Launch the `_Night Light_` module:"
-msgstr ""
+msgstr "KDE 允许你根据地理位置和当地时间调整屏幕色温。启动 `_Night Light_` 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_nightlight\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_nightlight\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:315
+#, fuzzy
 msgid ""
 "Enable automatic color adjustment by selecting the desired option from the "
 "`_Switching times_` drop-down menu."
-msgstr ""
+msgstr "从 `_Switching times_` 下拉菜单中选择所需选项，以启用自动颜色调整。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:321
+#, fuzzy
 msgid ""
 "The man:redshift[1] utility find your position and sets the color "
 "temperature accordingly.  To install, execute:"
-msgstr ""
+msgstr "man:redshift[1] 实用程序会查找你的位置并据此设置色温。运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install redshift\n"
-msgstr ""
+msgstr "# pkg install redshift\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:329
+#, fuzzy
 msgid ""
 "The redshift utility runs without any configuration.  To start it, simply "
 "execute:"
-msgstr ""
+msgstr "redshift 实用程序无需配置即可运行。只需执行以下命令启动它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% redshift &\n"
-msgstr ""
+msgstr "% redshift &\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:338
+#, fuzzy
 msgid ""
 "The utility might hang while trying to determine the location or the correct "
 "method to set the color.  In this case, specify them explicitly using `-l "
 "_latitude:longitude_` and `-m _method_`.  The available methods can be "
 "listed by running: `% redshift -m list`."
-msgstr ""
+msgstr "该实用程序在尝试确定位置或设置颜色的正确方法时可能会挂起。这种情况下，请使用 `-l _latitude:longitude_` 和 `-m _method_` 明确指定。运行 `% redshift -m list` 可列出可用方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:340
+#, fuzzy
 msgid "Example of running redshift with an explicit location and method:"
-msgstr ""
+msgstr "使用明确的位置和方法运行 redshift 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% redshift -l 37.86:-122.27 -m randr &\n"
-msgstr ""
+msgstr "% redshift -l 37.86:-122.27 -m randr &\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:347
+#, fuzzy
 msgid ""
 "To make this setting permanent, add the following lines to [.filename]#~/."
 "config/redshift/redshift.conf# file:"
-msgstr ""
+msgstr "要使此设置永久生效，请将以下几行添加到 [.filename]#~/.config/redshift/redshift.conf# 文件中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[redshift]\n"
 "adjustment-method=randr\n"
 "location-provider=manual\n"
-msgstr ""
+msgstr "[redshift]\nadjustment-method=randr\nlocation-provider=manual\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[manual]\n"
 "lat=37.86\n"
 "lon=-122.27\n"
-msgstr ""
+msgstr "[manual]\nlat=37.86\nlon=-122.27\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:363
+#, fuzzy
 msgid ""
 "The project provides a default https://github.com/jonls/redshift/blob/master/"
 "redshift.conf.sample[redshift.conf.sample] configuration file.  For "
 "troubleshooting and additional information, please refer to the https://"
 "github.com/jonls/redshift/blob/master/README.md[README]."
-msgstr ""
+msgstr "项目提供了默认的 link:https://github.com/jonls/redshift/blob/master/redshift.conf.sample[redshift.conf.sample] 配置文件。有关故障排除和更多信息，请参阅 link:https://github.com/jonls/redshift/blob/master/README.md[README]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:371
+#, fuzzy
 msgid ""
 "The man:sct[1] utility is a simple command-line tool for controlling screen "
 "color temperature.  It does not update automatically and must be run "
 "repeatedly to adjust the temperature over time.  To install, execute:"
-msgstr ""
+msgstr "man:sct[1] 实用程序是一个用于控制屏幕色温的简单命令行工具。它不会自动更新，必须反复运行才能随时间调整色温。要安装它，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install sct\n"
-msgstr ""
+msgstr "# pkg install sct\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:379
+#, fuzzy
 msgid ""
 "The utility takes temperature values between 1000 and 10000, 6500 is the "
 "default.  To run sct, type: `sct _value_`:"
-msgstr ""
+msgstr "该实用程序接受 1000 到 10000 之间的温度值，默认值为 6500。要运行 sct，请输入：`sct _value_`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:383
 #: documentation/content/en/books/accessibility/colors/_index.adoc:408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sct 8000\n"
-msgstr ""
+msgstr "% sct 8000\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:388
+#, fuzzy
 msgid "The utility suggests 3 styles:"
-msgstr ""
+msgstr "该实用程序提供 3 种风格："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:390
+#, fuzzy
 msgid "Campfire style"
-msgstr ""
+msgstr "篝火风格"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sct 4500\n"
-msgstr ""
+msgstr "% sct 4500\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:397
+#, fuzzy
 msgid "Dust storm on Mars style"
-msgstr ""
+msgstr "火星沙尘暴风格"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sct 2000\n"
-msgstr ""
+msgstr "% sct 2000\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:404
+#, fuzzy
 msgid "Coffee free all nighter style"
-msgstr ""
+msgstr "不喝咖啡通宵风格"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:416
+#, fuzzy
 msgid ""
 "The sctd utility calculates sunrise and sunset times based on latitude and "
 "longitude, and adjusts the screen's color temperature accordingly.  To "
 "install, run:"
-msgstr ""
+msgstr "sctd 实用程序根据纬度和经度计算日出和日落时间，并据此调整屏幕色温。要安装它，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:420
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install sctd\n"
-msgstr ""
+msgstr "# pkg install sctd\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:423
+#, fuzzy
 msgid ""
 "To run sctd, specify your location using the `--latitude` and `--longitude` "
 "options:"
-msgstr ""
+msgstr "要运行 sctd，请使用 `--latitude` 和 `--longitude` 选项指定位置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sctd --latitude 40.55 --longitude 14.34 &\n"
-msgstr ""
+msgstr "% sctd --latitude 40.55 --longitude 14.34 &\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:430
+#, fuzzy
 msgid "To reset the screen color to default, run:"
-msgstr ""
+msgstr "要将屏幕颜色重置为默认值，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sctd --reset\n"
-msgstr ""
+msgstr "% sctd --reset\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:440
+#, fuzzy
 msgid ""
 "The man:wlsunset[1] utility is a Day/Night gamma adjustments for Wayland "
 "compositors."
-msgstr ""
+msgstr "man:wlsunset[1] 实用程序用于调整 Wayland 合成器的日夜伽马值。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:442
+#, fuzzy
 msgid "To install, execute:"
-msgstr ""
+msgstr "要安装它，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wlsunset\n"
-msgstr ""
+msgstr "# pkg install wlsunset\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:450
+#, fuzzy
 msgid ""
 "To start the utility type `wlsunset -l _latitude_ -L _longitude_`.  Example:"
-msgstr ""
+msgstr "要启动该实用程序，请输入 `wlsunset -l _latitude_ -L _longitude_`。示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wlsunset -l 14.34 -L 40.55 &\n"
-msgstr ""
+msgstr "% wlsunset -l 14.34 -L 40.55 &\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:457
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports Collection"
-msgstr ""
+msgstr "Ports Collection"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:463
+#, fuzzy
 msgid ""
 "FreeBSD provides the extref:{handbook}ports[Ports Collection], which offers "
 "a simple way to install applications.  Some ports allow you to configure "
 "options before building and installation.  By default, configuration is "
 "handled through a TUI menu built by the package:ports-mgmt/portconfig[].  "
 "The colors can be customized in several ways:"
-msgstr ""
+msgstr "FreeBSD 提供 extref:{handbook}ports[Ports Collection]，让安装应用程序变得简单。一些 port 允许您在构建和安装之前配置选项。默认情况下，配置通过 package:ports-mgmt/portconfig[] 构建的 TUI 菜单进行处理。可以通过以下几种方式自定义颜色："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:465
+#, fuzzy
 msgid "Terminal color capabilities."
-msgstr ""
+msgstr "终端颜色功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:466
+#, fuzzy
 msgid "The $NO_COLOR environment variable."
-msgstr ""
+msgstr "$NO_COLOR 环境变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:467
+#, fuzzy
 msgid "The $PORTCONFIG_THEMEFILE environment variable."
-msgstr ""
+msgstr "$PORTCONFIG_THEMEFILE 环境变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:468
+#, fuzzy
 msgid "The global [.filename]#/usr/local/etc/portconfig/theme.conf# file."
-msgstr ""
+msgstr "全局 [.filename]#/usr/local/etc/portconfig/theme.conf# 文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:472
+#, fuzzy
 msgid ""
 "These methods are listed in order of decreasing priority and are mutually "
 "exclusive, meaning only one can be active at a time."
-msgstr ""
+msgstr "这些方法按优先级从高到低排列，且互斥，也就是说同一时间只能启用一种方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:475
+#, fuzzy
 msgid "*1. Terminal Colors*"
-msgstr ""
+msgstr "*1. 终端颜色*"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:478
+#, fuzzy
 msgid ""
 "man:portconfig[1] automatically detects whether the terminal supports "
 "colors.  If not, it defaults to a black-and-white theme."
-msgstr ""
+msgstr "man:portconfig[1] 会自动检测终端是否支持颜色。如果不支持，则默认使用黑白主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:480
+#, fuzzy
 msgid "*2. NO_COLOR*"
-msgstr ""
+msgstr "*2. NO_COLOR*"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:482
+#, fuzzy
 msgid ""
 "If the `$NO_COLOR` environment variable is set and not empty, portconfig "
 "forces the black-and-white theme"
-msgstr ""
+msgstr "如果设置了 `$NO_COLOR` 环境变量且其值不为空，portconfig 将强制使用黑白主题"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/colors/_index.adoc:483
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example persistent setting `$NO_COLOR`"
-msgstr ""
+msgstr "示例：持久设置 `$NO_COLOR`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:487
 #: documentation/content/en/books/accessibility/colors/_index.adoc:503
+#, fuzzy
 msgid "[.filename]#/etc/make.conf#"
-msgstr ""
+msgstr "[.filename]#/etc/make.conf#"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "export NO_COLOR=YES\n"
-msgstr ""
+msgstr "export NO_COLOR=YES\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:495
+#, fuzzy
 msgid "*3. PORTCONFIG_THEMEFILE*"
-msgstr ""
+msgstr "*3. PORTCONFIG_THEMEFILE*"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:498
+#, fuzzy
 msgid ""
 "If the `$PORTCONFIG_THEMEFILE` environment variable is set and points to a "
 "valid theme file, it will be used.  Otherwise, the default theme is applied."
-msgstr ""
+msgstr "如果设置了 `$PORTCONFIG_THEMEFILE` 环境变量且其指向有效的主题文件，则会使用该文件。否则，将应用默认主题。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:500
+#, fuzzy
 msgid "..Example persistent setting `$PORTCONFIG_THEMEFILE`"
-msgstr ""
+msgstr "..示例：持久设置 `$PORTCONFIG_THEMEFILE`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:507
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "export PORTCONFIG_THEMEFILE=/home/foo/mytheme.conf\n"
-msgstr ""
+msgstr "export PORTCONFIG_THEMEFILE=/home/foo/mytheme.conf\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:513
+#, fuzzy
 msgid "To create a new theme file, run:"
-msgstr ""
+msgstr "要创建新的主题文件，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:517
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% /usr/local/bin/bsddialog --save-theme mytheme.conf --infobox \"Saving theme...\" 0 0\n"
-msgstr ""
+msgstr "% /usr/local/bin/bsddialog --save-theme mytheme.conf --infobox \"Saving theme...\" 0 0\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:521
+#, fuzzy
 msgid "*4. Global theme.conf*"
-msgstr ""
+msgstr "*4. 全局 theme.conf*"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:524
+#, fuzzy
 msgid ""
 "If the file [.filename]#/usr/local/etc/portconfig/theme.conf# exists and is "
 "valid, it will be used.  If not, the default theme is applied."
-msgstr ""
+msgstr "如果 [.filename]#/usr/local/etc/portconfig/theme.conf# 文件存在且有效，则会使用该文件。否则，将应用默认主题。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:528
+#, fuzzy
 msgid "Sample themes are included in [.filename]#/usr/local/etc/portconfig/#:"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/portconfig/# 中包含以下示例主题："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:530
+#, fuzzy
 msgid "blackwhite.conf"
-msgstr ""
+msgstr "blackwhite.conf"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:531
+#, fuzzy
 msgid "default.conf"
-msgstr ""
+msgstr "default.conf"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:532
+#, fuzzy
 msgid "red-green.conf"
-msgstr ""
+msgstr "red-green.conf"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:533
+#, fuzzy
 msgid "yellow-blue.conf"
-msgstr ""
+msgstr "yellow-blue.conf"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:535
+#, fuzzy
 msgid "To use the yellow-blue.conf theme:"
-msgstr ""
+msgstr "要使用 yellow-blue.conf 主题："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:538
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ln -s /usr/local/etc/portconfig/yellow-blue.conf /usr/local/etc/portconfig/theme.conf\n"
-msgstr ""
+msgstr "# ln -s /usr/local/etc/portconfig/yellow-blue.conf /usr/local/etc/portconfig/theme.conf\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:542
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Brightness"
-msgstr ""
+msgstr "亮度"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:546
+#, fuzzy
 msgid ""
 "Screen brightness can be adjusted in various ways.  The available methods "
 "depend heavily on the hardware, so it's recommended to try the features "
 "described in the following sections."
-msgstr ""
+msgstr "可以通过多种方式调整屏幕亮度。可用的方法很大程度上取决于硬件，因此建议尝试以下各节介绍的功能。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:548
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "backlight"
-msgstr ""
+msgstr "backlight"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:552
+#, fuzzy
 msgid ""
 "The man:backlight[8] utility is included with the operating system.  It is "
 "used to set the brightness of devices located under [.filename]#/dev/"
 "backlight/#."
-msgstr ""
+msgstr "操作系统自带 man:backlight[8] 实用程序。它用于设置 [.filename]#/dev/backlight/# 下设备的亮度。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:555
+#, fuzzy
 msgid ""
 "The command `backlight -f _device_ _value_` sets the brightness of _device_ "
 "to _value_, where _value_ is an integer between 0 (dim) and 100 (bright).  "
 "If no device is specified, the default device [.filename]#/dev/backlight/"
 "backlight0# is considered."
-msgstr ""
+msgstr "命令 `backlight -f _device_ _value_` 将 __device__ 的亮度设置为 __value__，其中 __value__ 是介于 0（暗）和 100（亮）之间的整数。如果未指定设备，则使用默认设备 [.filename]#/dev/backlight/backlight0#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:557
+#, fuzzy
 msgid "Example for setting the brightness of the default device to 50%:"
-msgstr ""
+msgstr "将默认设备的亮度设置为 50% 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:561
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% backlight 50\n"
-msgstr ""
+msgstr "% backlight 50\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:566
+#, fuzzy
 msgid ""
 "Unless the user belongs to the \"video\" group, the command needs to run as "
 "root."
-msgstr ""
+msgstr "除非用户属于 \"video\" 组，否则该命令必须以 root 身份运行。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:569
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "acpi_video"
-msgstr ""
+msgstr "acpi_video"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:573
+#, fuzzy
 msgid ""
 "The man:acpi_video[4] driver, included with the operating system, uses the "
 "ACPI Video Extensions to control display switching and backlight "
 "brightness.  To load the kernel module, run:"
-msgstr ""
+msgstr "操作系统自带的 man:acpi_video[4] 驱动程序使用 ACPI Video Extensions 控制显示切换和背光亮度。要加载内核模块，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:577
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload acpi_video\n"
-msgstr ""
+msgstr "# kldload acpi_video\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:581
+#, fuzzy
 msgid ""
 "Brightness settings can be configured using extref:{handbook}config/"
 "#configtuning-sysctl[sysctl(8)].  The following parameters are available:"
-msgstr ""
+msgstr "可以使用 extref:{handbook}config/#configtuning-sysctl[sysctl(8)] 配置亮度设置。可用参数如下："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:583
+#, fuzzy
 msgid "hw.acpi.video._device_.levels: List of supported brightness levels."
-msgstr ""
+msgstr "hw.acpi.video._device_.levels：支持的亮度等级列表。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:584
+#, fuzzy
 msgid ""
 "hw.acpi.video._device_.brightness: Current brightness level of the device."
-msgstr ""
+msgstr "hw.acpi.video._device_.brightness：设备的当前亮度等级。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:587
+#, fuzzy
 msgid ""
 "_device_ is a possible display device.  Example to set the brightness to 50% "
 "for the lcd0 device:"
-msgstr ""
+msgstr "__device__ 表示可能的显示设备。将 lcd0 设备的亮度设置为 50% 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% sysctl hw.acpi.video.lcd0.brightness <1>\n"
 "hw.acpi.video.lcd0.brightness: 90\n"
@@ -1134,143 +1231,155 @@ msgid ""
 "90 92 94 96 98 100\n"
 "# sysctl hw.acpi.video.lcd0.brightness=50 <3>\n"
 "hw.acpi.video.lcd0.brightness: 90 -> 50\n"
-msgstr ""
+msgstr "% sysctl hw.acpi.video.lcd0.brightness <1>\nhw.acpi.video.lcd0.brightness: 90\n% sysctl hw.acpi.video.lcd0.levels <2>\nhw.acpi.video.lcd0.levels: 90 60 2 4 6 8 10 12 14 16\n18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52\n54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88\n90 92 94 96 98 100\n# sysctl hw.acpi.video.lcd0.brightness=50 <3>\nhw.acpi.video.lcd0.brightness: 90 -> 50\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:602
+#, fuzzy
 msgid ""
 "`sysctl hw.acpi.video._device_.brightness` to view the current brightness "
 "level."
-msgstr ""
+msgstr "`sysctl hw.acpi.video._device_.brightness`：查看当前亮度等级。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:603
+#, fuzzy
 msgid "`sysctl hw.acpi.video._device_.levels` to view the available levels."
-msgstr ""
+msgstr "`sysctl hw.acpi.video._device_.levels`：查看可用的亮度等级。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:604
+#, fuzzy
 msgid ""
 "`sysctl hw.acpi.video._device_.brightness=50` to set the brightness to 50."
-msgstr ""
+msgstr "`sysctl hw.acpi.video._device_.brightness=50`：将亮度设置为 50。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:608
+#, fuzzy
 msgid ""
 "man:acpi_video[4] should be loaded after any of the extref:{handbook}x11/#x-"
 "graphic-card-drivers[DRM] kernel modules."
-msgstr ""
+msgstr "man:acpi_video[4] 应在任何 extref:{handbook}x11/#x-graphic-card-drivers[DRM] 内核模块之后加载。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:611
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xbrightness"
-msgstr ""
+msgstr "xbrightness"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:614
+#, fuzzy
 msgid ""
 "The package:x11/xbrightness[] utility can change the brightness via the "
 "extref:{handbook}x11[X Window System]."
-msgstr ""
+msgstr "package:x11/xbrightness[] 实用程序可以通过 extref:{handbook}x11[X Window System] 更改亮度。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xbrightness\n"
-msgstr ""
+msgstr "# pkg install xbrightness\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:622
+#, fuzzy
 msgid ""
 "The man:xbrightness[1] utility allows to set a value between 0 (darkness) "
 "and 65535 (full brightness).  Example for setting brightness to 50%:"
-msgstr ""
+msgstr "man:xbrightness[1] 实用程序允许设置介于 0（黑暗）和 65535（全亮）之间的值。将亮度设置为 50% 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:626
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xbrightness 32767\n"
-msgstr ""
+msgstr "% xbrightness 32767\n"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/colors/_index.adoc:629
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xrandr"
-msgstr ""
+msgstr "xrandr"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:634
+#, fuzzy
 msgid ""
 "The package:x11/xrandr[] package is an extension of the X11 server that "
 "provides the man:xrandr[1] utility.  It allows you to configure various "
 "display properties, including brightness.  To install execute:"
-msgstr ""
+msgstr "package:x11/xrandr[] 包是 X11 服务器的扩展，提供 man:xrandr[1] 实用程序。它允许您配置各种显示属性，包括亮度。要安装它，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xrandr\n"
-msgstr ""
+msgstr "# pkg install xrandr\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:642
+#, fuzzy
 msgid ""
 "The command `xrandr --output _monitor_ --brightness _brightness_` allows you "
 "to set the brightness for monitor to a value between 0 and 1.0.  To list the "
 "available monitors, run:"
-msgstr ""
+msgstr "命令 `xrandr --output _monitor_ --brightness _brightness_` 可将显示器亮度设置为 0 到 1.0 之间的值。要列出可用的显示器，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:649
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% xrandr --listmonitors\n"
 "Monitors: 2\n"
 " 0: +HDMI-1 1920/598x1080/337+0+0  HDMI-1\n"
 " 1: +eDP-1 1920/344x1080/194+1920+0  eDP-1\n"
-msgstr ""
+msgstr "% xrandr --listmonitors\nMonitors: 2\n 0: +HDMI-1 1920/598x1080/337+0+0  HDMI-1\n 1: +eDP-1 1920/344x1080/194+1920+0  eDP-1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:653
+#, fuzzy
 msgid "Example for setting brightness to 50% for HDMI-1:"
-msgstr ""
+msgstr "将 HDMI-1 的亮度设置为 50% 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:657
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xrandr --output HDMI-1 --brightness 0.5\n"
-msgstr ""
+msgstr "% xrandr --output HDMI-1 --brightness 0.5\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/colors/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Color Blindness"
-msgstr ""
+msgstr "色盲"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:663
+#, fuzzy
 msgid ""
 "This section describes how to use utilities designed for color blindness."
-msgstr ""
+msgstr "本节介绍如何使用为色盲设计的实用程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:669
+#, fuzzy
 msgid ""
 "KDE allows you to filter colors for graphical elements.  Launch the "
 "`_Accessibility_` module:"
-msgstr ""
+msgstr "KDE 允许您为图形元素应用颜色滤镜。启动 `_Accessibility_` 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/colors/_index.adoc:673
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_access\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_access\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/colors/_index.adoc:676
+#, fuzzy
 msgid ""
 "In the navigation pane, select `_Color Blindness Correction_`.  Enable the "
 "`_Color blindness correction_` option, then choose the appropriate color "
 "transformation mode from the `_Mode_` drop-down menu."
-msgstr ""
+msgstr "在导航窗格中，选择 `_Color Blindness Correction_`。启用 `_Color blindness correction_` 选项，然后从 `_Mode_` 下拉菜单中选择适当的颜色转换模式。"

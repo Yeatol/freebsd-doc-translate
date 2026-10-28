@@ -17,432 +17,454 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Describes the FreeBSD Documentation Build Process"
-msgstr ""
+msgstr "介绍 FreeBSD 文档构建流程"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 5. The FreeBSD Documentation Build Process"
-msgstr ""
+msgstr "第 5 章：FreeBSD 文档构建流程"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Documentation Build Process"
-msgstr ""
+msgstr "FreeBSD 文档构建流程"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:51
+#, fuzzy
 msgid ""
 "This chapter covers organization of the documentation build process and how "
 "man:make[1] is used to control it."
-msgstr ""
+msgstr "本章介绍文档构建流程的组织方式，以及如何使用 man:make[1] 对其进行控制。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Rendering AsciiDoc into Output"
-msgstr ""
+msgstr "将 AsciiDoc 渲染为输出"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:56
+#, fuzzy
 msgid ""
 "Different types of output can be produced from a single AsciiDoc source file."
-msgstr ""
+msgstr "可以根据单个 AsciiDoc 源文件生成不同类型的输出。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Formats"
-msgstr ""
+msgstr "格式"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File Type"
-msgstr ""
+msgstr "文件类型"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`html`"
-msgstr ""
+msgstr "`html`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:65
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An `article` or `book` chapter."
-msgstr ""
+msgstr "`article` 或 `book` 章节。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pdf`"
-msgstr ""
+msgstr "`pdf`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Portable Document Format."
-msgstr ""
+msgstr "便携式文档格式。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`epub`"
-msgstr ""
+msgstr "`epub`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "EPUB"
-msgstr ""
+msgstr "EPUB"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Electronic Publication.\n"
 "ePub file format."
-msgstr ""
+msgstr "电子出版物。\nePub 文件格式。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Rendering to html"
-msgstr ""
+msgstr "渲染为 html"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:81
+#, fuzzy
 msgid ""
 "To render the documentation and the website to `html` use one of the "
 "following examples."
-msgstr ""
+msgstr "使用以下示例之一，将文档和网站渲染为 `html`。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build the documentation"
-msgstr ""
+msgstr "构建文档"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build the website"
-msgstr ""
+msgstr "构建网站"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/website\n"
 "% make\n"
-msgstr ""
+msgstr "% cd ~/doc/website\n% make\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build the entire documentation project"
-msgstr ""
+msgstr "构建整个文档项目"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% make -j2\n"
-msgstr ""
+msgstr "% cd ~/doc\n% make -j2\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:116
+#, fuzzy
 msgid "Advanced build examples are given below:"
-msgstr ""
+msgstr "下面给出一些高级构建示例："
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build English and Spanish documentation with verbose and debug messages"
-msgstr ""
+msgstr "以详细和调试模式构建英文和西班牙文文档"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make DOC_LANG=\"en es\" HUGO_ARGS=\"--verbose --debug\"\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make DOC_LANG=\"en es\" HUGO_ARGS=\"--verbose --debug\"\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build and serve the content with Hugo’s internal webserver"
-msgstr ""
+msgstr "使用 Hugo 内置 Web 服务器构建并提供内容"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make run\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make run\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:138
+#, fuzzy
 msgid "This webserver runs on `localhost`, port `1313` by default."
-msgstr ""
+msgstr "默认情况下，此 Web 服务器在 `localhost` 的 `1313` 端口上运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:140
+#, fuzzy
 msgid ""
 "To serve the content with Hugo’s internal webserver binding a specific IP "
 "address and port:"
-msgstr ""
+msgstr "若要使用 Hugo 内置 Web 服务器提供内容，并绑定到指定的 IP 地址和端口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make run BIND=192.168.15.10 HUGO_ARGS=\"-p 8080\"\n"
-msgstr ""
+msgstr "% make run BIND=192.168.15.10 HUGO_ARGS=\"-p 8080\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:147
+#, fuzzy
 msgid "A `hostname` can also be set as base url to Hugo’s internal webserver:"
-msgstr ""
+msgstr "也可以将 `hostname` 设置为 Hugo 内置 Web 服务器的基础 URL："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make run BIND=192.168.15.10 HOSTNAME=example.com\n"
-msgstr ""
+msgstr "% make run BIND=192.168.15.10 HOSTNAME=example.com\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build documentation in html for offline usage"
-msgstr ""
+msgstr "构建 html 格式文档以供离线使用"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make html\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make html\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:165
+#, fuzzy
 msgid "To compress the html output, add `DOC_HTML_ARCHIVE=1`:"
-msgstr ""
+msgstr "若要压缩 html 输出，请添加 `DOC_HTML_ARCHIVE=1`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% DOC_HTML_ARCHIVE=1 make html\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% DOC_HTML_ARCHIVE=1 make html\n"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Rendering to pdf"
-msgstr ""
+msgstr "渲染为 pdf"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:177
+#, fuzzy
 msgid ""
 "To render the documentation to `pdf`, use one of the following examples."
-msgstr ""
+msgstr "使用以下示例之一，将文档渲染为 `pdf`。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build all documents in pdf"
-msgstr ""
+msgstr "以 pdf 格式构建所有文档"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make pdf\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make pdf\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build all articles in pdf"
-msgstr ""
+msgstr "以 pdf 格式构建所有文章"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make pdf-articles\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make pdf-articles\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build all books in pdf"
-msgstr ""
+msgstr "以 pdf 格式构建所有书籍"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make pdf-books\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make pdf-books\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Build documents in pdf for specific languages"
-msgstr ""
+msgstr "为指定语言构建 pdf 格式文档"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make DOC_LANG=\"en\" pdf\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make DOC_LANG=\"en\" pdf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:221
+#, fuzzy
 msgid "This will build all English documents in pdf."
-msgstr ""
+msgstr "这将以 pdf 格式构建所有英文文档。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make DOC_LANG=\"en fr\" pdf-books\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make DOC_LANG=\"en fr\" pdf-books\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:228
+#, fuzzy
 msgid "This will build all English and French books in pdf."
-msgstr ""
+msgstr "这将以 pdf 格式构建所有英文和法文书籍。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Documentation Build Toolset"
-msgstr ""
+msgstr "FreeBSD 文档构建工具集"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:234
+#, fuzzy
 msgid "These are the tools used to build and install the FDP documentation."
-msgstr ""
+msgstr "以下工具用于构建和安装 FDP 文档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:236
+#, fuzzy
 msgid "The primary build tool is man:make[1], specifically Berkeley Make."
-msgstr ""
+msgstr "主要的构建工具是 man:make[1]，具体来说是 Berkeley Make。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:237
+#, fuzzy
 msgid "Hugo"
-msgstr ""
+msgstr "Hugo"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:238
+#, fuzzy
 msgid "AsciiDoctor"
-msgstr ""
+msgstr "AsciiDoctor"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:239
+#, fuzzy
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Understanding the Makefile in the Documentation Tree"
-msgstr ""
+msgstr "了解文档树中的 Makefile"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:244
+#, fuzzy
 msgid ""
 "There are three [.filename]#Makefile# files for building some or all of the "
 "documentation project."
-msgstr ""
+msgstr "文档项目的部分或全部内容由三个 [.filename]#Makefile# 文件构建。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:246
+#, fuzzy
 msgid ""
 "The [.filename]#Makefile# in the [.filename]#documentation# directory will "
 "build only the documentation."
-msgstr ""
+msgstr "[.filename]#documentation# 目录中的 [.filename]#Makefile# 只构建文档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:247
+#, fuzzy
 msgid ""
 "The [.filename]#Makefile# in the [.filename]#website# directory will build "
 "only the website."
-msgstr ""
+msgstr "[.filename]#website# 目录中的 [.filename]#Makefile# 只构建网站。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:248
+#, fuzzy
 msgid ""
 "The [.filename]#Makefile# at the top of the tree will build both the "
 "documentation and the website."
-msgstr ""
+msgstr "树顶层的 [.filename]#Makefile# 会同时构建文档和网站。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:251
+#, fuzzy
 msgid ""
 "The [.filename]#Makefile# appearing in subdirectories also support `make "
 "run` to serve built content with Hugo's internal webserver.  This webserver "
 "runs on port 1313 by default."
-msgstr ""
+msgstr "子目录中的 [.filename]#Makefile# 也支持使用 `make run`，通过 Hugo 内置 Web 服务器提供已构建的内容。此 Web 服务器默认在 1313 端口上运行。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation Makefile"
-msgstr ""
+msgstr "文档 Makefile"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:256
+#, fuzzy
 msgid "This [.filename]#Makefile# takes the following form:"
-msgstr ""
+msgstr "此 [.filename]#Makefile# 的形式如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Generate the FreeBSD documentation\n"
 "#\n"
@@ -466,43 +488,43 @@ msgid ""
 "# available for local browsing.  The documentation should have been built prior\n"
 "# to attempting to use the `run` target.  By default, hugo will start its\n"
 "# webserver on port 1313.\n"
-msgstr ""
+msgstr "# Generate the FreeBSD documentation\n#\n# Copyright (c) 2020-2026, The FreeBSD Documentation Project\n# Copyright (c) 2020-2026, Sergio Carlavilla <carlavilla@FreeBSD.org>\n#\n# Targets intended for use on the command line\n#\n# all (default)\t-\tgenerate the books TOC and compile all the documentation\n# clean\t\t- \tremoves generated files\n# run\t\t-\tserves the built documentation site for local browsing\n# pdf\t\t-\tbuild PDF versions of the articles and books.\n# html\t\t-\tbuild HTML versions of the articles and books for\n#\t\t\toffline use.\n#\t\t\tIf variable DOC_HTML_ARCHIVE is set, all documents will be\n#\t\t\tarchived/compressed, and only these files will be kept in the public\n#\t\t\tdirectory.\n# epub\t\t-\tbuild EPUB versions of the articles and books (Experimental).\n#\n# The run target uses hugo's built-in webserver to make the documentation site\n# available for local browsing.  The documentation should have been built prior\n# to attempting to use the `run` target.  By default, hugo will start its\n# webserver on port 1313.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:283
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MAINTAINER=carlavilla@FreeBSD.org <.>\n"
-msgstr ""
+msgstr "MAINTAINER=carlavilla@FreeBSD.org <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# List of languages without book translations\n"
 "ARTICLEONLY_LANGS=\tbn-bd da ko tr\n"
 "# List of languages without article translations\n"
 "BOOKONLY_LANGS=\t\tmn\n"
-msgstr ""
+msgstr "# List of languages without book translations\nARTICLEONLY_LANGS=\tbn-bd da ko tr\n# List of languages without article translations\nBOOKONLY_LANGS=\t\tmn\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# List of all languages we have content for\n"
 "ALL_LANGUAGES=\tbn-bd da de el en es fr hu it ja ko mn nl pl pt-br ru tr zh-cn zh-tw <.>\n"
-msgstr ""
+msgstr "# List of all languages we have content for\nALL_LANGUAGES=\tbn-bd da de el en es fr hu it ja ko mn nl pl pt-br ru tr zh-cn zh-tw <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:293
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:570
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LOCALBASE?=\t/usr/local\n"
-msgstr ""
+msgstr "LOCALBASE?=\t/usr/local\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "RUBY_CMD =\t${LOCALBASE}/bin/ruby <.>\n"
 "HUGO_CMD =\t${LOCALBASE}/bin/hugo <.>\n"
@@ -510,11 +532,11 @@ msgid ""
 "HUGO_OFFLINE_ARGS?= \t--environment offline --verbose --minify\n"
 "ASCIIDOCTOR_CMD=\t${LOCALBASE}/bin/asciidoctor\n"
 "ASCIIDOCTORPDF_CMD=\t${LOCALBASE}/bin/asciidoctor-pdf\n"
-msgstr ""
+msgstr "RUBY_CMD =\t${LOCALBASE}/bin/ruby <.>\nHUGO_CMD =\t${LOCALBASE}/bin/hugo <.>\nHUGO_ARGS?=\t--verbose --minify\nHUGO_OFFLINE_ARGS?= \t--environment offline --verbose --minify\nASCIIDOCTOR_CMD=\t${LOCALBASE}/bin/asciidoctor\nASCIIDOCTORPDF_CMD=\t${LOCALBASE}/bin/asciidoctor-pdf\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:310
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".if defined(DOC_LANG) && !empty(DOC_LANG)\n"
 "LANGUAGES=\t${DOC_LANG:S/,/ /g}\n"
@@ -525,29 +547,29 @@ msgid ""
 ".else\n"
 "LANGUAGES=\t${ALL_LANGUAGES}\n"
 ".endif\n"
-msgstr ""
+msgstr ".if defined(DOC_LANG) && !empty(DOC_LANG)\nLANGUAGES=\t${DOC_LANG:S/,/ /g}\n.if  ${LANGUAGES:Men} == \"\" && ${.TARGETS:Mpdf*} == \"\" && ${.TARGETS:Mhtml*} == \"\"\n.warning \"Warning: cannot skip 'en'; adding it back\"\nLANGUAGES+=\ten\n.endif\n.else\nLANGUAGES=\t${ALL_LANGUAGES}\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "RUBYLIB =\t../shared/lib\n"
 ".export\tRUBYLIB\n"
-msgstr ""
+msgstr "RUBYLIB =\t../shared/lib\n.export\tRUBYLIB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "RUN_DEPENDS=\t${HUGO_CMD} \\\n"
 "\t\t${LOCALBASE}/bin/asciidoctor \\\n"
 "\t\t${LOCALBASE}/bin/rougify\n"
-msgstr ""
+msgstr "RUN_DEPENDS=\t${HUGO_CMD} \\\n\t\t${LOCALBASE}/bin/asciidoctor \\\n\t\t${LOCALBASE}/bin/rougify\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:327
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:586
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".ifndef HOSTNAME\n"
 ".  ifdef BIND\n"
@@ -558,11 +580,11 @@ msgid ""
 ".else\n"
 ".HOST=$(HOSTNAME)\n"
 ".endif\n"
-msgstr ""
+msgstr ".ifndef HOSTNAME\n.  ifdef BIND\n.HOST=$(BIND)\n.  else\n.HOST=localhost\n.  endif\n.else\n.HOST=$(HOSTNAME)\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Strip the languages with only articles from the list of languages we\n"
 "#  will use to build books.\n"
@@ -570,11 +592,11 @@ msgid ""
 ".for a in ${ARTICLEONLY_LANGS}\n"
 "BOOK_LANGS:=\t${BOOK_LANGS:N${a}}\n"
 ".endfor\n"
-msgstr ""
+msgstr "# Strip the languages with only articles from the list of languages we\n#  will use to build books.\nBOOK_LANGS= ${LANGUAGES}\n.for a in ${ARTICLEONLY_LANGS}\nBOOK_LANGS:=\t${BOOK_LANGS:N${a}}\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Strip the languages with only books from the list of languages we\n"
 "#  will use to build articles.\n"
@@ -582,11 +604,11 @@ msgid ""
 ".for a in ${BOOKONLY_LANGS}\n"
 "ARTICLE_LANGS:=\t${ARTICLE_LANGS:N${a}}\n"
 ".endfor\n"
-msgstr ""
+msgstr "# Strip the languages with only books from the list of languages we\n#  will use to build articles.\nARTICLE_LANGS= ${LANGUAGES}\n.for a in ${BOOKONLY_LANGS}\nARTICLE_LANGS:=\t${ARTICLE_LANGS:N${a}}\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Take the list of all languages, and take out the ones we have been\n"
 "#   asked for.  We'll feed this to hugo.\n"
@@ -596,44 +618,44 @@ msgid ""
 "SKIP_LANGS+=    ${a}\n"
 ".endif\n"
 ".endfor\n"
-msgstr ""
+msgstr "# Take the list of all languages, and take out the ones we have been\n#   asked for.  We'll feed this to hugo.\nSKIP_LANGS=\n.for a in ${ALL_LANGUAGES}\n.if  ${LANGUAGES:M${a}} == \"\"\nSKIP_LANGS+=    ${a}\n.endif\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:352
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:607
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".ORDER: all run <.>\n"
-msgstr ""
+msgstr ".ORDER: all run <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".ORDER: requirements <.>\n"
 ".ORDER: starting-message\n"
 ".ORDER: starting-message build\n"
 ".ORDER: build\n"
-msgstr ""
+msgstr ".ORDER: requirements <.>\n.ORDER: starting-message\n.ORDER: starting-message build\n.ORDER: build\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "all: requirements starting-message generate-pgpkeys-txt build\n"
 "run: requirements starting-message generate-pgpkeys-txt run-local\n"
-msgstr ""
+msgstr "all: requirements starting-message generate-pgpkeys-txt build\nrun: requirements starting-message generate-pgpkeys-txt run-local\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# clean does not call pdf-clean as that is a subset of hugo-clean\n"
 "clean: hugo-clean pgp-clean\n"
-msgstr ""
+msgstr "# clean does not call pdf-clean as that is a subset of hugo-clean\nclean: hugo-clean pgp-clean\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "requirements:\n"
 ".for dep in ${RUN_DEPENDS}\n"
@@ -641,31 +663,31 @@ msgid ""
 "\t@(echo ${dep} not found, please run 'pkg install docproj'; exit 1)\n"
 ".endif\n"
 ".endfor\n"
-msgstr ""
+msgstr "requirements:\n.for dep in ${RUN_DEPENDS}\n.if !exists(${dep})\n\t@(echo ${dep} not found, please run 'pkg install docproj'; exit 1)\n.endif\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "requirements-pdf:\n"
 ".if !exists(${LOCALBASE}/bin/asciidoctor-pdf)\n"
 "\t@(echo ${LOCALBASE}/bin/asciidoctor-pdf not found, please run 'pkg install rubygem-asciidoctor-pdf'; exit 1)\n"
 ".endif\n"
-msgstr ""
+msgstr "requirements-pdf:\n.if !exists(${LOCALBASE}/bin/asciidoctor-pdf)\n\t@(echo ${LOCALBASE}/bin/asciidoctor-pdf not found, please run 'pkg install rubygem-asciidoctor-pdf'; exit 1)\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "requirements-epub:\n"
 ".if !exists(${LOCALBASE}/bin/asciidoctor-epub3)\n"
 "\t@(echo ${LOCALBASE}/bin/asciidoctor-epub3 not found, please run 'pkg install rubygem-asciidoctor-epub3'; exit 1)\n"
 ".endif\n"
-msgstr ""
+msgstr "requirements-epub:\n.if !exists(${LOCALBASE}/bin/asciidoctor-epub3)\n\t@(echo ${LOCALBASE}/bin/asciidoctor-epub3 not found, please run 'pkg install rubygem-asciidoctor-epub3'; exit 1)\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "starting-message: .PHONY <.>\n"
 "\t@echo ---------------------------------------------------------------\n"
@@ -673,104 +695,104 @@ msgid ""
 "\t@echo  included languages: ${LANGUAGES}\n"
 "\t@echo  excluded languages: ${SKIP_LANGS}\n"
 "\t@echo ---------------------------------------------------------------\n"
-msgstr ""
+msgstr "starting-message: .PHONY <.>\n\t@echo ---------------------------------------------------------------\n\t@echo                   Building the documentation\n\t@echo  included languages: ${LANGUAGES}\n\t@echo  excluded languages: ${SKIP_LANGS}\n\t@echo ---------------------------------------------------------------\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "generate-pgpkeys-txt: static/pgpkeys/pgpkeys.txt\n"
-msgstr ""
+msgstr "generate-pgpkeys-txt: static/pgpkeys/pgpkeys.txt\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:392
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static/pgpkeys/pgpkeys.txt: static/pgpkeys/*key\n"
 "\t${RUBY_CMD} ./tools/global-pgpkeys-creator.rb\n"
-msgstr ""
+msgstr "static/pgpkeys/pgpkeys.txt: static/pgpkeys/*key\n\t${RUBY_CMD} ./tools/global-pgpkeys-creator.rb\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "run-local: .PHONY <.>\n"
 "\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} server \\\n"
 "\t\t${HUGO_ARGS} -D $(BIND:D--bind=$(BIND)) --baseURL=\"http://$(.HOST):1313\"\n"
-msgstr ""
+msgstr "run-local: .PHONY\n\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} server \\\n\t\t${HUGO_ARGS} -D $(BIND:D--bind=$(BIND)) --baseURL=\"http://$(.HOST):1313\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:399
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:641
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "build: .PHONY <.>\n"
 "\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} ${HUGO_ARGS}\n"
-msgstr ""
+msgstr "build: .PHONY <.>\n\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} ${HUGO_ARGS}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:402
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "build-offline: .PHONY\n"
 "\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} ${HUGO_OFFLINE_ARGS}\n"
-msgstr ""
+msgstr "build-offline: .PHONY\n\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} ${HUGO_OFFLINE_ARGS}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:405
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pgp-clean: .PHONY\n"
 "\trm -f static/pgpkeys/pgpkeys.txt\n"
-msgstr ""
+msgstr "pgp-clean: .PHONY\n\trm -f static/pgpkeys/pgpkeys.txt\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hugo-clean: .PHONY\n"
 "\trm -rf resources public\n"
-msgstr ""
+msgstr "hugo-clean: .PHONY\n\trm -rf resources public\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#\n"
 "# PDF targets\n"
 "# Use DOC_LANG to choose the language, e.g., make DOC_LANG=\"en fr\" pdf-books\n"
 "#\n"
 "pdf: pdf-articles pdf-books\n"
-msgstr ""
+msgstr "#\n# PDF targets\n# Use DOC_LANG to choose the language, e.g., make DOC_LANG=\"en fr\" pdf-books\n#\npdf: pdf-articles pdf-books\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pdf-books: requirements-pdf\n"
 ".for _lang in ${BOOK_LANGS}\n"
 "\t./tools/asciidoctor.sh books ${_lang} pdf\n"
 ".endfor\n"
-msgstr ""
+msgstr "pdf-books: requirements-pdf\n.for _lang in ${BOOK_LANGS}\n\t./tools/asciidoctor.sh books ${_lang} pdf\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pdf-articles: requirements-pdf\n"
 ".for _lang in ${ARTICLE_LANGS}\n"
 "\t./tools/asciidoctor.sh articles ${_lang} pdf\n"
 ".endfor\n"
-msgstr ""
+msgstr "pdf-articles: requirements-pdf\n.for _lang in ${ARTICLE_LANGS}\n\t./tools/asciidoctor.sh articles ${_lang} pdf\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:426
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pdf-clean: pdf-articles-clean pdf-books-clean\n"
-msgstr ""
+msgstr "pdf-clean: pdf-articles-clean pdf-books-clean\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pdf-books-clean:\n"
 ".for _lang in ${BOOK_LANGS}\n"
@@ -778,11 +800,11 @@ msgid ""
 "\t-rmdir ${.CURDIR}/public/${_lang}\n"
 ".endfor\n"
 "\t-rmdir ${.CURDIR}/public/\n"
-msgstr ""
+msgstr "pdf-books-clean:\n.for _lang in ${BOOK_LANGS}\n\trm -fr ${.CURDIR}/public/${_lang}/books\n\t-rmdir ${.CURDIR}/public/${_lang}\n.endfor\n\t-rmdir ${.CURDIR}/public/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:442
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pdf-articles-clean:\n"
 ".for _lang in ${ARTICLE_LANGS}\n"
@@ -792,57 +814,57 @@ msgid ""
 ".endif\n"
 ".endfor\n"
 "\t-rmdir ${.CURDIR}/public\n"
-msgstr ""
+msgstr "pdf-articles-clean:\n.for _lang in ${ARTICLE_LANGS}\n\trm -fr ${.CURDIR}/public/${_lang}/articles\n.if !exists(${.CURDIR}/public/${_lang}/books)\n\trm -fr ${.CURDIR}/public/${_lang}\n.endif\n.endfor\n\t-rmdir ${.CURDIR}/public\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:447
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#\n"
 "# HTML targets\n"
 "#\n"
 "html: build-offline html-clean-global html-clean-articles html-clean-books html-archive html-archive-clean-files\n"
-msgstr ""
+msgstr "#\n# HTML targets\n#\nhtml: build-offline html-clean-global html-clean-articles html-clean-books html-archive html-archive-clean-files\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "html-clean: hugo-clean\n"
-msgstr ""
+msgstr "html-clean: hugo-clean\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "html-clean-global:\n"
 "\trm -fr ${.CURDIR}/public/index.html\n"
 "\trm -rf pgpkeys js\n"
-msgstr ""
+msgstr "html-clean-global:\n\trm -fr ${.CURDIR}/public/index.html\n\trm -rf pgpkeys js\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "html-clean-articles:\n"
 ".for _lang in ${ARTICLE_LANGS}\n"
 "\trm -fr ${.CURDIR}/public/${_lang}/index.html\n"
 "\trm -fr ${.CURDIR}/public/${_lang}/articles/index.html\n"
 ".endfor\n"
-msgstr ""
+msgstr "html-clean-articles:\n.for _lang in ${ARTICLE_LANGS}\n\trm -fr ${.CURDIR}/public/${_lang}/index.html\n\trm -fr ${.CURDIR}/public/${_lang}/articles/index.html\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "html-clean-books:\n"
 ".for _lang in ${BOOK_LANGS}\n"
 "\trm -fr ${.CURDIR}/public/${_lang}/books/index.html\n"
 ".endfor\n"
-msgstr ""
+msgstr "html-clean-books:\n.for _lang in ${BOOK_LANGS}\n\trm -fr ${.CURDIR}/public/${_lang}/books/index.html\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:474
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "html-archive:\n"
 ".if defined(DOC_HTML_ARCHIVE)\n"
@@ -853,33 +875,33 @@ msgid ""
 "\t./tools/asciidoctor.sh books ${_lang} archive\n"
 ".endfor\n"
 ".endif\n"
-msgstr ""
+msgstr "html-archive:\n.if defined(DOC_HTML_ARCHIVE)\n.for _lang in ${ARTICLE_LANGS}\n\t./tools/asciidoctor.sh articles ${_lang} archive\n.endfor\n.for _lang in ${BOOK_LANGS}\n\t./tools/asciidoctor.sh books ${_lang} archive\n.endfor\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "html-archive-clean-files:\n"
 ".if defined(DOC_HTML_ARCHIVE)\n"
 "\tfind ${.CURDIR}/public/ ! -name '*.pdf' ! -name '*.tar.gz' -type f -delete\n"
 "\tfind ${.CURDIR}/public/ -type d -empty -delete\n"
 ".endif\n"
-msgstr ""
+msgstr "html-archive-clean-files:\n.if defined(DOC_HTML_ARCHIVE)\n\tfind ${.CURDIR}/public/ ! -name '*.pdf' ! -name '*.tar.gz' -type f -delete\n\tfind ${.CURDIR}/public/ -type d -empty -delete\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:486
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#\n"
 "# EPUB targets\n"
 "# Use DOC_LANG to choose the language, e.g., make DOC_LANG=\"en fr\" epub-books\n"
 "#\n"
 "epub: epub-articles epub-books\n"
-msgstr ""
+msgstr "#\n# EPUB targets\n# Use DOC_LANG to choose the language, e.g., make DOC_LANG=\"en fr\" epub-books\n#\nepub: epub-articles epub-books\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "epub-books: requirements-epub\n"
 "\t@echo ---------------------------------------------------------------\n"
@@ -893,11 +915,11 @@ msgid ""
 ".for _lang in ${BOOK_LANGS}\n"
 "\t./tools/asciidoctor.sh books ${_lang} epub\n"
 ".endfor\n"
-msgstr ""
+msgstr "epub-books: requirements-epub\n\t@echo ---------------------------------------------------------------\n\t@echo !!! EPUB output is experimental !!!\n\t@echo\n\t@echo Asciidoctor EPUB3 is currently alpha software. Use accordingly. Although the\n\t@echo bulk of AsciiDoc content is converted, there’s still work needed to fill in\n\t@echo gaps where conversion is incomplete or unstyled.\n\t@echo https://docs.asciidoctor.org/epub3-converter/latest/#project-status\n\t@echo ---------------------------------------------------------------\n.for _lang in ${BOOK_LANGS}\n\t./tools/asciidoctor.sh books ${_lang} epub\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:512
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "epub-articles: requirements-epub\n"
 "\t@echo ---------------------------------------------------------------\n"
@@ -911,17 +933,17 @@ msgid ""
 ".for _lang in ${ARTICLE_LANGS}\n"
 "\t./tools/asciidoctor.sh articles ${_lang} epub\n"
 ".endfor\n"
-msgstr ""
+msgstr "epub-articles: requirements-epub\n\t@echo ---------------------------------------------------------------\n\t@echo !!! EPUB output is experimental !!!\n\t@echo\n\t@echo Asciidoctor EPUB3 is currently alpha software. Use accordingly. Although the\n\t@echo bulk of AsciiDoc content is converted, there’s still work needed to fill in\n\t@echo gaps where conversion is incomplete or unstyled.\n\t@echo https://docs.asciidoctor.org/epub3-converter/latest/#project-status\n\t@echo ---------------------------------------------------------------\n.for _lang in ${ARTICLE_LANGS}\n\t./tools/asciidoctor.sh articles ${_lang} epub\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:514
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "epub-clean: epub-articles-clean epub-books-clean\n"
-msgstr ""
+msgstr "epub-clean: epub-articles-clean epub-books-clean\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:521
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "epub-books-clean:\n"
 ".for _lang in ${BOOK_LANGS}\n"
@@ -929,11 +951,11 @@ msgid ""
 "\t-rmdir ${.CURDIR}/public/${_lang}\n"
 ".endfor\n"
 "\t-rmdir ${.CURDIR}/public/\n"
-msgstr ""
+msgstr "epub-books-clean:\n.for _lang in ${BOOK_LANGS}\n\trm -fr ${.CURDIR}/public/${_lang}/books\n\t-rmdir ${.CURDIR}/public/${_lang}\n.endfor\n\t-rmdir ${.CURDIR}/public/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:530
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "epub-articles-clean:\n"
 ".for _lang in ${ARTICLE_LANGS}\n"
@@ -943,85 +965,95 @@ msgid ""
 ".endif\n"
 ".endfor\n"
 "\t-rmdir ${.CURDIR}/public\n"
-msgstr ""
+msgstr "epub-articles-clean:\n.for _lang in ${ARTICLE_LANGS}\n\trm -fr ${.CURDIR}/public/${_lang}/articles\n.if !exists(${.CURDIR}/public/${_lang}/books)\n\trm -fr ${.CURDIR}/public/${_lang}\n.endif\n.endfor\n\t-rmdir ${.CURDIR}/public\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:533
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:655
+#, fuzzy
 msgid "The `MAINTAINER` flag specifies who is the maintainer of this Makefile."
-msgstr ""
+msgstr "`MAINTAINER` 标志指定此 Makefile 的维护者。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:534
+#, fuzzy
 msgid ""
 "`ALL_LANGUAGES` flag specifies in which languages the table of contents has "
 "to be generated."
-msgstr ""
+msgstr "`ALL_LANGUAGES` 标志指定需要生成目录的语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:535
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:656
+#, fuzzy
 msgid "`RUBY_CMD` flag specifies the location of the Ruby binary."
-msgstr ""
+msgstr "`RUBY_CMD` 标志指定 Ruby 二进制文件的位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:536
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:657
+#, fuzzy
 msgid "`HUGO_CMD` flag specifies the location of the Hugo binary."
-msgstr ""
+msgstr "`HUGO_CMD` 标志指定 Hugo 二进制文件的位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:537
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:658
+#, fuzzy
 msgid ""
 "`.ORDER` directives are used to ensure multiple make jobs may run without "
 "problem."
-msgstr ""
+msgstr "使用 `.ORDER` 指令确保多个 make 作业能够正常运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:538
+#, fuzzy
 msgid ""
 "`all` target builds the documentation and puts the result in *~/doc/"
 "documentation/public*."
-msgstr ""
+msgstr "`all` 目标构建文档，并将结果放入 *~/doc/documentation/public*。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:539
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:660
+#, fuzzy
 msgid ""
 "`starting-message` shows a message in the CLI to show the user that the "
 "process is running."
-msgstr ""
+msgstr "`starting-message` 会在 CLI 中显示一条消息，告知用户进程正在运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:540
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:663
+#, fuzzy
 msgid ""
 "`run-local` runs hugo webserver on port 1313, or a random free port if that "
 "is already in use."
-msgstr ""
+msgstr "`run-local` 会在端口 1313 上运行 hugo Web 服务器；如果该端口已被占用，则使用一个随机空闲端口。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:541
+#, fuzzy
 msgid ""
 "`build` builds the documentation and puts the result in the *~/doc/"
 "documentation/public*."
-msgstr ""
+msgstr "`build` 会构建文档，并将结果放入 *~/doc/documentation/public*。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:543
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website Makefile"
-msgstr ""
+msgstr "网站 Makefile"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:546
+#, fuzzy
 msgid "This [.filename]#Makefile# takes the form of:"
-msgstr ""
+msgstr "此 [.filename]#Makefile# 的形式如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Generate the FreeBSD website\n"
 "#\n"
@@ -1037,30 +1069,30 @@ msgid ""
 "# available for local browsing.  The website should have been built prior\n"
 "# to attempting to use the `run` target.  By default, hugo will start its\n"
 "# webserver on port 1313.\n"
-msgstr ""
+msgstr "# Generate the FreeBSD website\n#\n# Copyright (c) 2020-2026, The FreeBSD Documentation Project\n# Copyright (c) 2020-2026, Sergio Carlavilla <carlavilla@FreeBSD.org>\n#\n# Targets intended for use on the command line\n#\n# all (default)\t-\tgenerate the releases.toml and compile all the website\n# run\t-\t\t\tserves the built website for local browsing\n#\n# The run target uses hugo's built-in webserver to make the built website\n# available for local browsing.  The website should have been built prior\n# to attempting to use the `run` target.  By default, hugo will start its\n# webserver on port 1313.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# List of all languages we have content for\n"
 "ALL_LANGUAGES=\tde el en es fr hu it ja nl ru tr zh-cn zh-tw\n"
-msgstr ""
+msgstr "# List of all languages we have content for\nALL_LANGUAGES=\tde el en es fr hu it ja nl ru tr zh-cn zh-tw\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:576
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "RUBY_CMD =\t${LOCALBASE}/bin/ruby <.>\n"
 "HUGO_CMD =\t${LOCALBASE}/bin/hugo <.>\n"
 "HUGO_ARGS?=\t--verbose\n"
 "RUBYLIB =\t../shared/lib\n"
 ".export\tRUBYLIB\n"
-msgstr ""
+msgstr "RUBY_CMD =\t${LOCALBASE}/bin/ruby <.>\nHUGO_CMD =\t${LOCALBASE}/bin/hugo <.>\nHUGO_ARGS?=\t--verbose\nRUBYLIB =\t../shared/lib\n.export\tRUBYLIB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:596
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".if defined(DOC_LANG) && !empty(DOC_LANG)\n"
 "LANGUAGES=      ${DOC_LANG:S/,/ /g}\n"
@@ -1071,11 +1103,11 @@ msgid ""
 ".else\n"
 "LANGUAGES=\t${ALL_LANGUAGES}\n"
 ".endif\n"
-msgstr ""
+msgstr ".if defined(DOC_LANG) && !empty(DOC_LANG)\nLANGUAGES=      ${DOC_LANG:S/,/ /g}\n.if  ${LANGUAGES:Men} == \"\"\n.warning \"Warning: cannot skip 'en'; adding it back\"\nLANGUAGES+=\ten\n.endif\n.else\nLANGUAGES=\t${ALL_LANGUAGES}\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:605
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Take the list of all languages, and take out the ones we have been\n"
 "#   asked for via DOC_LANG.  We'll feed this to hugo.\n"
@@ -1085,31 +1117,31 @@ msgid ""
 "SKIP_LANGS+=\t${a}\n"
 ".endif\n"
 ".endfor\n"
-msgstr ""
+msgstr "# Take the list of all languages, and take out the ones we have been\n#   asked for via DOC_LANG.  We'll feed this to hugo.\nSKIP_LANGS=\n.for a in ${ALL_LANGUAGES}\n.if ${LANGUAGES:M${a}} == \"\"\nSKIP_LANGS+=\t${a}\n.endif\n.endfor\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:613
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".ORDER: starting-message generate-releases\n"
 ".ORDER: starting-message build\n"
 ".ORDER: generate-releases build\n"
 ".ORDER: build post-build\n"
 ".ORDER: post-build end-message\n"
-msgstr ""
+msgstr ".ORDER: starting-message generate-releases\n.ORDER: starting-message build\n.ORDER: generate-releases build\n.ORDER: build post-build\n.ORDER: post-build end-message\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:617
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "all: starting-message generate-releases build post-build end-message <.>\n"
 "run: starting-message generate-releases run-local\n"
 "clean: hugo-clean releases-clean\n"
-msgstr ""
+msgstr "all: starting-message generate-releases build post-build end-message <.>\nrun: starting-message generate-releases run-local\nclean: hugo-clean releases-clean\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:624
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "starting-message: .PHONY <.>\n"
 "\t@echo \"---------------------------------------------------------------\"\n"
@@ -1117,88 +1149,91 @@ msgid ""
 "\t@echo \" included languages: ${LANGUAGES}\"\n"
 "\t@echo \" excluded languages: ${SKIP_LANGS}\"\n"
 "\t@echo \"---------------------------------------------------------------\"\n"
-msgstr ""
+msgstr "starting-message: .PHONY <.>\n\t@echo \"---------------------------------------------------------------\"\n\t@echo \"Building the website started on $$(date)\"\n\t@echo \" included languages: ${LANGUAGES}\"\n\t@echo \" excluded languages: ${SKIP_LANGS}\"\n\t@echo \"---------------------------------------------------------------\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:629
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "end-message: .PHONY\n"
 "\t@echo \"---------------------------------------------------------------\"\n"
 "\t@echo \"Building the website completed on $$(date)\"\n"
 "\t@echo \"---------------------------------------------------------------\"\n"
-msgstr ""
+msgstr "end-message: .PHONY\n\t@echo \"---------------------------------------------------------------\"\n\t@echo \"Building the website completed on $$(date)\"\n\t@echo \"---------------------------------------------------------------\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:631
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "generate-releases: data/releases.toml <.>\n"
-msgstr ""
+msgstr "generate-releases: data/releases.toml <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:634
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "data/releases.toml:\n"
 "\t${RUBY_CMD} ./tools/releases-toml.rb\n"
-msgstr ""
+msgstr "data/releases.toml:\n\t${RUBY_CMD} ./tools/releases-toml.rb\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "run-local: .PHONY <.>\n"
 "\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} server \\\n"
 "\t    ${HUGO_ARGS} -D $(BIND:D--bind=$(BIND)) --baseURL=\"http://$(.HOST):1313\"\n"
-msgstr ""
+msgstr "run-local: .PHONY <.>\n\tHUGO_DISABLELANGUAGES=\"${SKIP_LANGS}\" ${HUGO_CMD} server \\\n\t    ${HUGO_ARGS} -D $(BIND:D--bind=$(BIND)) --baseURL=\"http://$(.HOST):1313\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:643
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "post-build: cgi-permissions\n"
-msgstr ""
+msgstr "post-build: cgi-permissions\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:646
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "cgi-permissions:\n"
 "\t@chmod 555 ./public/cgi/*.cgi\n"
-msgstr ""
+msgstr "cgi-permissions:\n\t@chmod 555 ./public/cgi/*.cgi\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:649
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hugo-clean:\n"
 "\trm -fr public resources\n"
-msgstr ""
+msgstr "hugo-clean:\n\trm -fr public resources\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:652
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "releases-clean:\n"
 "\trm -f data/releases.toml\n"
-msgstr ""
+msgstr "releases-clean:\n\trm -f data/releases.toml\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:659
+#, fuzzy
 msgid ""
 "`all` target builds the website and puts the result in *~/doc/website/"
 "public*."
-msgstr ""
+msgstr "`all` 目标构建网站，并将结果放入 *~/doc/website/public*。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:662
+#, fuzzy
 msgid ""
 "`generate-releases` calls the script used to convert from AsciiDoc variables "
 "to TOML variables.  With this conversion, the releases variables can be used "
 "in AsciiDoc and in the Hugo custom templates."
-msgstr ""
+msgstr "`generate-releases` 会调用用于将 AsciiDoc 变量转换为 TOML 变量的脚本。通过此转换，发布版本变量可以在 AsciiDoc 和 Hugo 自定义模板中使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/doc-build/_index.adoc:663
+#, fuzzy
 msgid ""
 "`build` builds the website and puts the result in the *~/doc/website/public*."
-msgstr ""
+msgstr "`build` 会构建网站，并将结果放入 *~/doc/website/public*。"

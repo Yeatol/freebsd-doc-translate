@@ -59,19 +59,21 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:58
+#, fuzzy
 msgid ""
 "Welcome to the world of FreeBSD! In this section, we provide a comprehensive "
 "overview of what FreeBSD is, its origins, goals, use cases, and the "
 "community behind it."
-msgstr ""
+msgstr "欢迎来到 FreeBSD 的世界！本节将全面介绍 FreeBSD，包括它是什么、它的起源、目标、用途，以及背后的社区。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:60
+#, fuzzy
 msgid ""
 "Discover the reasons behind its name, learn how to contribute to this "
 "project, and explore the rich ecosystem of FreeBSD within the context of "
 "open-source operating systems."
-msgstr ""
+msgstr "了解 FreeBSD 名称的由来，学习如何为这个项目作出贡献，并在开源操作系统的背景下探索 FreeBSD 丰富的生态系统。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:62
@@ -81,22 +83,24 @@ msgstr "什么是 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:66
+#, fuzzy
 msgid ""
 "FreeBSD is a versatile and open-source UNIX(R)-like operating system known "
 "for its exceptional stability, security, and performance.  Developed by a "
 "dedicated community of volunteers, it's based on the Berkeley Software "
 "Distribution (BSD) UNIX operating system."
-msgstr ""
+msgstr "FreeBSD 是一种用途广泛的开源类 UNIX(R) 操作系统，以出色的稳定性、安全性和性能著称。它由一群热心的志愿者组成的社区开发，基于伯克利软件发行版（BSD）UNIX 操作系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:69
+#, fuzzy
 msgid ""
 "FreeBSD offers a powerful and customizable environment suitable for a wide "
 "range of applications, from servers and embedded systems to desktops and "
 "networking equipment.  Its commitment to open source principles ensures a "
 "transparent and collaborative development process, making FreeBSD a trusted "
 "choice for those seeking a reliable and highly adaptable operating system."
-msgstr ""
+msgstr "FreeBSD 提供强大且可定制的环境，适用于各种应用场景，从服务器和嵌入式系统到桌面和网络设备。FreeBSD 坚持开源原则，确保开发过程透明且协作顺畅，因此成为寻求可靠且高度灵活操作系统的用户值得信赖的选择。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:71
@@ -106,13 +110,14 @@ msgstr "为什么这个系统叫 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:75
+#, fuzzy
 msgid ""
 "The name \"FreeBSD\" stems from its roots in the Berkeley Software "
 "Distribution (BSD) UNIX operating system, renowned for its contributions to "
 "the world of open-source software.  The \"Free\" in FreeBSD signifies its "
 "commitment to the principles of free and open-source software, which grant "
 "users the freedom to study, modify, and distribute the code."
-msgstr ""
+msgstr "“FreeBSD”这一名称源自伯克利软件发行版（BSD）UNIX 操作系统；BSD 以其对开源软件领域的贡献而闻名。FreeBSD 中的“Free”体现了它对自由和开源软件原则的坚持，这些原则赋予用户学习、修改和分发代码的自由。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:77
@@ -141,14 +146,16 @@ msgstr "FreeBSD 项目的目标是什么？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:82
+#, fuzzy
 msgid ""
 "The FreeBSD Project has a clear and unwavering goal: to provide a high-"
 "quality, open-source UNIX-like operating system that excels in terms of "
 "performance, security, and stability."
-msgstr ""
+msgstr "FreeBSD 项目有着明确且坚定不移的目标：提供高质量的开源类 UNIX 操作系统，在性能、安全性和稳定性方面表现出色。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:86
+#, fuzzy
 msgid ""
 "It aims to offer a versatile platform suitable for a wide range of computing "
 "needs, from servers and workstations to embedded systems and beyond.  "
@@ -157,7 +164,7 @@ msgid ""
 "community of developers help shape and refine the operating system.  This "
 "dedication to quality, freedom, and reliability is what sets FreeBSD apart "
 "and drives its ongoing success as an open-source project."
-msgstr ""
+msgstr "FreeBSD 致力于提供一个用途广泛的平台，以满足各种计算需求，从服务器和工作站到嵌入式系统及其他用途。FreeBSD 的开发坚定遵循开源原则，营造协作环境，让全球开发者社区的贡献共同塑造和改进操作系统。对质量、自由和可靠性的坚持，使 FreeBSD 脱颖而出，并推动它作为开源项目持续取得成功。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:88
@@ -168,6 +175,7 @@ msgstr "什么是 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:95
+#, fuzzy
 msgid ""
 "FreeBSD is a versatile operating system that excels in various use cases.  "
 "It is particularly well-suited for server environments, where its stability "
@@ -178,57 +186,62 @@ msgid ""
 "environments, including embedded systems and game console devices.  Its "
 "adaptability, reliability, and open-source nature make FreeBSD a compelling "
 "choice for a wide range of computing needs."
-msgstr ""
+msgstr "FreeBSD 是一种用途广泛的操作系统，在各种使用场景中都表现出色。它尤其适用于服务器环境，其稳定性和性能使其成为 Web 托管、数据库和网络应用的热门选择。FreeBSD 强大的安全功能也使其成为部署防火墙和安全设备的理想选择。除了服务器，FreeBSD 还可以针对专门环境进行定制，包括嵌入式系统和游戏主机设备。它的适应性、可靠性和开源特性，使 FreeBSD 成为满足各种计算需求的理想选择。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Who is responsible for FreeBSD?"
-msgstr ""
+msgstr "谁负责 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:101
+#, fuzzy
 msgid ""
 "FreeBSD is a community-driven open-source project with a decentralized "
 "structure.  Its development and maintenance are carried out by a global "
 "community of dedicated volunteers, developers, and organizations who "
 "collaborate to enhance and expand the operating system."
-msgstr ""
+msgstr "FreeBSD 是一个由社区推动的开源项目，采用去中心化结构。它的开发和维护由全球各地的热心志愿者、开发者和组织共同完成，他们协作改进并扩展这一操作系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:103
+#, fuzzy
 msgid ""
 "The key decisions concerning the FreeBSD project, such as the overall "
 "direction of the project or who is allowed to add code to the source tree, "
 "are made by an elected Core Team of nine people."
-msgstr ""
+msgstr "FreeBSD 项目的关键决策，例如项目的总体方向，或谁有权向源代码树添加代码，均由一个由九人组成的民选核心团队作出。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:105
+#, fuzzy
 msgid ""
 "This collaborative and community-driven approach has been fundamental to "
 "FreeBSD's success and longevity as a reliable and robust UNIX-like operating "
 "system."
-msgstr ""
+msgstr "这种协作式、由社区推动的方式，是 FreeBSD 作为可靠且强大的类 UNIX 操作系统取得成功并长期发展的重要基础。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I contribute to FreeBSD? What can I do to help?"
-msgstr ""
+msgstr "我该如何为 FreeBSD 作出贡献？我能做些什么来帮忙？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:111
+#, fuzzy
 msgid ""
 "We accept all types of contributions: documentation, code, and even art.  "
 "See the article on extref:{contributing}[Contributing to FreeBSD] for "
 "specific advice on how to do this."
-msgstr ""
+msgstr "我们接受各种形式的贡献：文档、代码，甚至艺术作品。关于如何参与，请参阅 extref:{contributing}[为 FreeBSD 作出贡献]一文中的具体建议。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:113
+#, fuzzy
 msgid "And thanks for the thought!"
-msgstr ""
+msgstr "也感谢你有这份心意！"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:115
@@ -238,15 +251,17 @@ msgstr "FreeBSD 的许可证有什么限制吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:118
+#, fuzzy
 msgid ""
 "FreeBSD is distributed under the https://www.FreeBSD.org/copyright/freebsd-"
 "license/[BSD License], which is known for its permissive nature."
-msgstr ""
+msgstr "FreeBSD 根据 link:https://www.FreeBSD.org/copyright/freebsd-license/[BSD 许可证]发布，该许可证以宽松著称。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:120
+#, fuzzy
 msgid "This license places very few restrictions on how you can use FreeBSD:"
-msgstr ""
+msgstr "该许可证对 FreeBSD 的使用方式几乎没有限制："
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:122
@@ -265,6 +280,7 @@ msgstr "不要删除或修改许可证。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:128
+#, fuzzy
 msgid ""
 "The license means you are free to modify, distribute, and even sell FreeBSD "
 "without *being required to release your modifications as open source*.  "
@@ -272,7 +288,7 @@ msgid ""
 "copyright notice and disclaimers when distributing FreeBSD.  Overall, the "
 "BSD License provides a high degree of freedom and flexibility, making "
 "FreeBSD an attractive choice for a wide range of applications and projects."
-msgstr ""
+msgstr "这意味着你可以自由修改、分发，甚至出售 FreeBSD，*而无需将修改内容以开源形式发布*。不过，仍有一些最低限度的条件，例如分发 FreeBSD 时必须保留原始版权声明和免责声明。总体而言，BSD 许可证提供了高度的自由和灵活性，使 FreeBSD 成为适用于各种应用和项目的理想选择。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:130
@@ -318,36 +334,40 @@ msgstr "对于大多数人来说，可以。但要干脆利落地回答这个问
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:139
+#, fuzzy
 msgid ""
 "FreeBSD is a powerful and versatile operating system that can replace or "
 "coexist with many other operating systems, depending on users and "
 "administrators specific needs.  However, whether FreeBSD can replace your "
 "current operating system depends on factors such as your hardware, software "
 "requirements, and familiarity with FreeBSD."
-msgstr ""
+msgstr "FreeBSD 是一种强大且用途广泛的操作系统，可以替代许多其他操作系统，也可以与它们共存，具体取决于用户和管理员的特定需求。不过，FreeBSD 能否替代你当前的操作系统，取决于硬件、软件需求以及你对 FreeBSD 的熟悉程度等因素。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:141
+#, fuzzy
 msgid ""
 "While it offers a robust and feature-rich alternative, it's essential to "
 "evaluate your specific use case and compatibility requirements before making "
 "the switch."
-msgstr ""
+msgstr "尽管 FreeBSD 是一个强大且功能丰富的替代方案，但在切换之前，务必评估你的具体使用场景和兼容性需求。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:143
+#, fuzzy
 msgid ""
 "If an application is only available on one operating system, that operating "
 "system cannot just be replaced."
-msgstr ""
+msgstr "如果某个应用程序只适用于一种操作系统，那么该操作系统就不能随意替换。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:146
+#, fuzzy
 msgid ""
 "Users migrating to FreeBSD from another UNIX-like environment will find "
 "FreeBSD to be similar.  Non-UNIX users, like Windows(R) users, should expect "
 "to invest some additional time learning the UNIX way of doing things."
-msgstr ""
+msgstr "从其他类 UNIX 环境迁移到 FreeBSD 的用户会发现，FreeBSD 与原来的环境相似。非 UNIX 用户，例如 Windows(R) 用户，则应做好准备，投入一些额外时间来学习 UNIX 的操作方式。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:148
@@ -358,6 +378,7 @@ msgstr "FreeBSD 可以替代我目前的操作系统吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:154
+#, fuzzy
 msgid ""
 "Yes, FreeBSD is well-suited for running popular open source software.  Its "
 "compatibility with a wide range of applications and libraries makes it a "
@@ -368,16 +389,17 @@ msgid ""
 "simplifies the installation and management of such software, ensuring that "
 "users can easily access and run their favorite open source tools and "
 "applications on FreeBSD with minimal hassle."
-msgstr ""
+msgstr "是的，FreeBSD 非常适合运行常用的开源软件。它与各种应用程序和库兼容，因此对于希望部署和使用开源软件包的用户来说是一个不错的选择。FreeBSD 提供强大且稳定的环境，支持开源社区常用的各种编程语言、数据库、Web 服务器及其他软件。它的 ports 和软件包系统简化了此类软件的安装和管理，让用户可以轻松地在 FreeBSD 系统上获取并运行自己喜爱的开源工具和应用程序。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I install software in FreeBSD?"
-msgstr ""
+msgstr "如何在 FreeBSD 中安装软件？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:161
+#, fuzzy
 msgid ""
 "FreeBSD offers multiple methods for software installation.  One of the most "
 "common methods involves using the built-in man:pkg[8] package manager, which "
@@ -385,15 +407,16 @@ msgid ""
 "packages.  Another approach is to compile and install software from source "
 "code using the man:ports[7] collection, providing a flexible and "
 "customizable way to install software."
-msgstr ""
+msgstr "FreeBSD 提供多种软件安装方式。最常见的方式之一是使用内置的 man:pkg[8] 软件包管理器，它通过获取并安装预构建的二进制软件包简化安装过程。另一种方式是使用 man:ports[7] 集合从源代码编译并安装软件，这种方式灵活且可定制。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:163
+#, fuzzy
 msgid ""
 "FreeBSD's documentation offer detailed guidance on both methods, ensuring "
 "that users can easily expand their system's capabilities with the software "
 "they need."
-msgstr ""
+msgstr "FreeBSD 文档详细介绍了这两种方式，帮助用户轻松扩展系统功能，安装所需的软件。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:165
@@ -404,6 +427,7 @@ msgstr "FreeBSD 和 NetBSD、OpenBSD 等其他开源 BSD 操作系统有什么�
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:169
+#, fuzzy
 msgid ""
 "FreeBSD, NetBSD, OpenBSD and DragonFly BSD are all part of the open source "
 "BSD family, sharing common UNIX-like foundations, but each has its own "
@@ -411,65 +435,71 @@ msgid ""
 "of each project, and while they share similarities, their specific strengths "
 "and emphases cater to different use cases and preferences within the BSD "
 "ecosystem."
-msgstr ""
+msgstr "FreeBSD、NetBSD、OpenBSD 和 DragonFly BSD 都属于开源 BSD 家族，共享类 UNIX 的基础，但各自有不同的侧重点和优先事项。这些差异体现了每个项目的独特目标。虽然它们有许多相似之处，但各自的优势和侧重点能够满足 BSD 生态系统中不同的使用场景和偏好。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Is FreeBSD a Linux(R) distribution?"
-msgstr ""
+msgstr "FreeBSD 是 Linux(R) 发行版吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:174
+#, fuzzy
 msgid "No, FreeBSD is *not* a Linux distribution."
-msgstr ""
+msgstr "不是，FreeBSD *不是* Linux 发行版。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:177
+#, fuzzy
 msgid ""
 "While both FreeBSD and Linux are UNIX-like operating systems and share many "
 "similarities, they have distinct kernels.  Linux uses the Linux kernel, "
 "whereas FreeBSD uses the FreeBSD kernel, which is based on the Berkeley "
 "Software Distribution (BSD) UNIX operating system."
-msgstr ""
+msgstr "FreeBSD 和 Linux 都是类 UNIX 操作系统，也有许多相似之处，但它们使用不同的内核。Linux 使用 Linux 内核，而 FreeBSD 使用 FreeBSD 内核；后者基于伯克利软件发行版（BSD）UNIX 操作系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:179
+#, fuzzy
 msgid ""
 "FreeBSD and Linux each have their own unique development communities, "
 "release cycles, and system architectures, making them separate and "
 "independent operating systems."
-msgstr ""
+msgstr "FreeBSD 和 Linux 各自拥有独立的开发社区、发布周期和系统架构，因此是彼此独立的操作系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:181
+#, fuzzy
 msgid ""
 "FreeBSD provides its own set of advantages, including a different licensing "
 "model, system design, and userland utilities compared to Linux distributions."
-msgstr ""
+msgstr "与 Linux 发行版相比，FreeBSD 具有自身的一系列优势，包括不同的许可证模式、系统设计和用户空间工具。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Is it possible to run Linux programs on FreeBSD?"
-msgstr ""
+msgstr "可以在 FreeBSD 上运行 Linux 程序吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:187
+#, fuzzy
 msgid ""
 "Yes, FreeBSD provides a compatibility layer known as _linuxulator_ (man:"
 "linux[4]), allowing many Linux programs to function on FreeBSD.  This "
 "feature facilitates the execution of a broad spectrum of Linux binaries "
 "without the necessity of a dedicated Linux environment."
-msgstr ""
+msgstr "可以。FreeBSD 提供了名为 __linuxulator__（man:linux[4]）的兼容层，可让许多 Linux 程序在 FreeBSD 上运行。借助此功能，无需专用的 Linux 环境即可运行种类广泛的 Linux 二进制文件。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:189
+#, fuzzy
 msgid ""
 "Nevertheless, it's important to note that numerous widely used open-source "
 "software *have native FreeBSD versions available* through the ports and "
 "packages system."
-msgstr ""
+msgstr "不过，需要注意的是，许多广泛使用的开源软件*都有可通过 ports 和软件包系统获取的 FreeBSD 原生版本*。"
 
 #. type: Title ==
 #: documentation/content/en/books/faq/_index.adoc:191
@@ -480,6 +510,7 @@ msgstr "为什么这个系统叫 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:196
+#, fuzzy
 msgid ""
 "The process of installing FreeBSD is the initial step toward harnessing the "
 "power of this robust open-source operating system.  This section provides "
@@ -488,43 +519,46 @@ msgid ""
 "STABLE.  It also delves into the release and snapshot schedules, post-"
 "installation configuration tools, package search methods, and addresses "
 "common questions regarding package updates."
-msgstr ""
+msgstr "安装 FreeBSD 是开始使用这一强大开源操作系统的第一步。本节介绍从何处获取 FreeBSD、详细的安装说明，以及 FreeBSD-CURRENT 和 FreeBSD-STABLE 等概念。还将介绍发布和快照计划、安装后的配置工具、软件包搜索方法，并解答有关软件包更新的常见问题。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where can I get FreeBSD?"
-msgstr ""
+msgstr "从哪里获取 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:201
+#, fuzzy
 msgid ""
 "FreeBSD is freely available for download from the link:https://www.FreeBSD."
 "org/where/[official FreeBSD website]."
-msgstr ""
+msgstr "FreeBSD 可从 link:https://www.FreeBSD.org/where/[FreeBSD 官方网站]免费下载。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:204
+#, fuzzy
 msgid ""
 "Additionally, FreeBSD may also be available through various mirror sites, "
 "ensuring accessibility to users worldwide.  The link:https://www.FreeBSD.org/"
 "where/[official website] is the primary and most reliable source for "
 "obtaining the latest FreeBSD releases and updates, making it the ideal "
 "starting point for a FreeBSD journey."
-msgstr ""
+msgstr "此外，用户也可以通过各种镜像站点获取 FreeBSD，方便世界各地的用户下载。link:https://www.FreeBSD.org/where/[官方网站]是获取最新 FreeBSD 发行版和更新的首选，也是最可靠的来源，是开启 FreeBSD 之旅的理想起点。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where are the instructions for installing FreeBSD?"
-msgstr ""
+msgstr "在哪里可以找到 FreeBSD 的安装说明？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:209
+#, fuzzy
 msgid ""
 "Installation instructions can be found at the extref:{handbook}bsdinstall/"
 "[Installing FreeBSD Chapter of the Handbook]."
-msgstr ""
+msgstr "安装说明请参阅手册中的 extref:{handbook}bsdinstall/[安装 FreeBSD 章节]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:211
@@ -535,28 +569,31 @@ msgstr "FreeBSD-STABLE 的概念是怎样的？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:215
+#, fuzzy
 msgid ""
 "FreeBSD-CURRENT represents the development branch of the FreeBSD operating "
 "system.  It is the most cutting-edge version of FreeBSD, where active "
 "development takes place."
-msgstr ""
+msgstr "FreeBSD-CURRENT 是 FreeBSD 操作系统的开发分支。它是 FreeBSD 最前沿的版本，也是活跃开发进行的地方。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:217
+#, fuzzy
 msgid ""
 "While it incorporates the latest features, improvements, and experimental "
 "changes, it may not always be as stable as the FreeBSD-STABLE or release "
 "versions."
-msgstr ""
+msgstr "它包含最新的功能、改进和实验性变更，但稳定性可能不及 FreeBSD-STABLE 或发行版。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:219
+#, fuzzy
 msgid ""
 "FreeBSD-CURRENT serves as a platform for developers and enthusiasts who want "
 "to contribute to the future of FreeBSD and stay on the leading edge of its "
 "development, even though it may occasionally undergo significant changes and "
 "*is not recommended for production systems*."
-msgstr ""
+msgstr "FreeBSD-CURRENT 为希望推动 FreeBSD 未来发展并紧跟开发前沿的开发者和爱好者提供了一个平台，但它有时会经历重大变更，*不建议用于生产系统*。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:221
@@ -566,22 +603,24 @@ msgstr "FreeBSD-STABLE 的概念是怎样的？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:226
+#, fuzzy
 msgid ""
 "The FreeBSD-STABLE branch is a more stable development branch compared to "
 "CURRENT.  It contains code that is undergoing further testing and refinement "
 "before being merged into the RELEASE branch.  STABLE is a good choice for "
 "those who want to track FreeBSD's development but prefer a more stable "
 "environment than CURRENT."
-msgstr ""
+msgstr "FreeBSD-STABLE 分支比 CURRENT 更稳定。它包含正在进一步测试和改进、准备合并到 RELEASE 分支的代码。对于希望跟踪 FreeBSD 开发进度，但偏好比 CURRENT 更稳定环境的用户来说，STABLE 是不错的选择。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "When are FreeBSD releases made?"
-msgstr ""
+msgstr "FreeBSD 何时发布新版本？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:233
+#, fuzzy
 msgid ""
 "The {re} releases a new major version of FreeBSD about every 18 months and a "
 "new minor version about every 8 months, on average.  Release dates are "
@@ -589,16 +628,17 @@ msgid ""
 "when their projects need to be finished and tested.  A testing period "
 "precedes each release, to ensure that the addition of new features does not "
 "compromise the stability of the release."
-msgstr ""
+msgstr "{re} 平均每约 18 个月发布一个新的 FreeBSD 主版本，每约 8 个月发布一个新的次版本。发行日期会提前很久公布，让参与系统开发的人员了解何时需要完成并测试各自的项目。每次发布前都会进行一段测试期，以确保新增功能不会损害发行版的稳定性。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "When are FreeBSD snapshots made?"
-msgstr ""
+msgstr "FreeBSD 快照何时生成？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:241
+#, fuzzy
 msgid ""
 "FreeBSD snapshots are typically generated at regular intervals for all "
 "actively developed branches.  These snapshots capture a moment in time of "
@@ -607,43 +647,46 @@ msgid ""
 "These snapshots provide users with an opportunity to access the latest "
 "developments and changes in FreeBSD, helping them stay up-to-date with the "
 "project's progress."
-msgstr ""
+msgstr "FreeBSD 通常会定期为所有正在积极开发的分支生成快照。这些快照记录了 FreeBSD 源代码及相关二进制软件包在某一时刻的状态。快照生成频率可能有所不同，但通常每周或每两周一次。用户可以通过快照获取 FreeBSD 的最新进展和变更，及时了解项目的开发情况。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Is there a tool to perform post-installation configuration tasks?"
-msgstr ""
+msgstr "有没有用于执行安装后配置任务的工具？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:246
+#, fuzzy
 msgid ""
 "Yes. man:bsdconfig[8] provides a nice interface to configure FreeBSD post-"
 "installation."
-msgstr ""
+msgstr "有。man:bsdconfig[8] 提供了一个便捷的界面，用于在安装后配置 FreeBSD。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I search for software to install in FreeBSD?"
-msgstr ""
+msgstr "如何搜索要在 FreeBSD 中安装的软件？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:251
+#, fuzzy
 msgid ""
 "Searching for software to install in FreeBSD is made easy through the man:"
 "pkg[8] package manager and the `pkg search` command."
-msgstr ""
+msgstr "使用 man:pkg[8] 软件包管理器和 `pkg search` 命令，可以轻松搜索要在 FreeBSD 中安装的软件。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:254
+#, fuzzy
 msgid ""
 "Users can utilize this command to search for available packages using "
 "keywords, package names, or descriptions.  This feature helps users quickly "
 "locate the software they need within the extensive FreeBSD ports and "
 "packages collection, simplifying the process of adding new applications and "
 "tools to their FreeBSD systems."
-msgstr ""
+msgstr "用户可以使用此命令通过关键字、软件包名称或描述搜索可用的软件包。借助此功能，用户可以在 FreeBSD 丰富的 ports 和软件包集合中快速找到所需软件，从而简化向 FreeBSD 系统添加新应用程序和工具的过程。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:256
@@ -654,30 +697,33 @@ msgstr "FreeBSD 的最新版本是什么？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:259
+#, fuzzy
 msgid ""
 "The availability of the latest packages in FreeBSD can be influenced by "
 "various factors, including the package repository's update frequency and the "
 "specific version of FreeBSD being used."
-msgstr ""
+msgstr "FreeBSD 中最新软件包的可用性可能受多种因素影响，包括软件包仓库的更新频率以及所使用的 FreeBSD 版本。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:264
+#, fuzzy
 msgid ""
 "It should also be added that there are two branches for the FreeBSD ports.  "
 "The most updated is called `latest` and the most stable is called "
 "`quarterly`.  To use the latest packages it will be necessary to configure "
 "the `latest` branch.  Information on how to configure branches can be found "
 "in the link:{handbook}ports/[Ports chapter of the Handbook]."
-msgstr ""
+msgstr "还需要说明的是，FreeBSD ports 有两个分支。更新最快的分支称为 `latest`，最稳定的分支称为 `quarterly`。要使用最新的软件包，需要配置 `latest` 分支。有关如何配置分支的信息，请参阅 link:{handbook}ports/[手册中的 Ports 章节]。"
 
 #. type: Title ==
 #: documentation/content/en/books/faq/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hardware"
-msgstr ""
+msgstr "硬件"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:271
+#, fuzzy
 msgid ""
 "The Hardware section explores FreeBSD's compatibility with various hardware "
 "configurations.  It covers a range of topics, including supported "
@@ -687,296 +733,327 @@ msgid ""
 "workstations, or specialized hardware, this section provides insights into "
 "FreeBSD's capabilities and limitations, offering information about hardware "
 "choices and configurations."
-msgstr ""
+msgstr "硬件一节探讨 FreeBSD 与各种硬件配置的兼容性，涵盖多种主题，包括支持的架构、最大内存容量、处理器扩展能力、显卡兼容性、Wi-Fi 网卡支持，以及对 10 千兆以太网网卡的支持。无论你计划在服务器、工作站还是专用硬件上部署 FreeBSD，本节都将介绍 FreeBSD 的能力与限制，并提供硬件选择和配置方面的信息。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What architectures does FreeBSD support?"
-msgstr ""
+msgstr "FreeBSD 支持哪些架构？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:277
+#, fuzzy
 msgid ""
 "FreeBSD boasts a versatile range of supported architectures, making it a "
 "flexible choice for a variety of hardware environments.  Its compatibility "
 "extends to architectures such as `amd64`, `arm64`, `riscv` and more."
-msgstr ""
+msgstr "FreeBSD 支持多种架构，因此能够灵活适用于各种硬件环境。它兼容 `amd64`、`arm64`、`riscv` 等架构。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:279
+#, fuzzy
 msgid ""
 "A complete list of supported architectures can be found on the link:https://"
 "www.FreeBSD.org/platforms/[platforms page]."
-msgstr ""
+msgstr "支持架构的完整列表请参见 link:https://www.FreeBSD.org/platforms/[平台页面]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How much RAM does FreeBSD support?"
-msgstr ""
+msgstr "FreeBSD 支持多少 RAM？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:285
+#, fuzzy
 msgid ""
 "FreeBSD as an operating system generally supports as much physical memory "
 "(RAM) as the platform it is running on does.  Keep in mind that different "
 "platforms have different limits for memory."
-msgstr ""
+msgstr "作为操作系统，FreeBSD 通常支持的平台物理内存（RAM）上限与其运行的平台相同。请注意，不同平台的内存上限各不相同。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:287
+#, fuzzy
 msgid "For example, `amd64` platforms support up to 4TB of physical memory."
-msgstr ""
+msgstr "例如，`amd64` 平台最多支持 4TB 物理内存。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How many processors does FreeBSD support?"
-msgstr ""
+msgstr "FreeBSD 支持多少个处理器？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:294
+#, fuzzy
 msgid ""
 "FreeBSD's processor support varies across different architectures.  On amd64 "
 "and arm64 systems, FreeBSD can efficiently harness the power of up to 1024 "
 "processors.  For powerpc-based systems, FreeBSD supports up to 256 "
 "processors, while on risc-v systems, it can effectively utilize up to 16 "
 "processors."
-msgstr ""
+msgstr "FreeBSD 对处理器的支持因架构而异。在 amd64 和 arm64 系统上，FreeBSD 可以高效利用多达 1024 个处理器。在基于 powerpc 的系统上，FreeBSD 最多支持 256 个处理器；在 risc-v 系统上，则最多可有效利用 16 个处理器。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What graphics cards does FreeBSD support?"
-msgstr ""
+msgstr "FreeBSD 支持哪些显卡？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:299
+#, fuzzy
 msgid ""
 "Popular graphics vendors like Intel(R), AMD(R) or NVIDIA(R) are well-"
 "supported."
-msgstr ""
+msgstr "Intel(R)、AMD(R) 和 NVIDIA(R) 等主流显卡厂商的产品都获得了良好支持。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:301
+#, fuzzy
 msgid ""
 "A list of supported graphics cards from link:https://wiki.freebsd.org/"
 "Graphics/Intel-GPU-Matrix[Intel] and link:https://wiki.freebsd.org/Graphics/"
 "AMD-GPU-Matrix[AMD] can be found in the FreeBSD Wiki."
-msgstr ""
+msgstr "FreeBSD Wiki 中列出了 link:https://wiki.freebsd.org/Graphics/Intel-GPU-Matrix[Intel] 和 link:https://wiki.freebsd.org/Graphics/AMD-GPU-Matrix[AMD] 支持的显卡。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What Wi-Fi cards does FreeBSD support?"
-msgstr ""
+msgstr "FreeBSD 支持哪些 Wi-Fi 网卡？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:306
+#, fuzzy
 msgid ""
 "This is a rapidly changing area as of 2025, so it's worth checking the "
 "Hardware Compatibility List for your chosen link:https://www.freebsd.org/"
 "releases/[release]."
-msgstr ""
+msgstr "截至 2025 年，这是一个变化很快的领域，因此值得查看所选 link:https://www.freebsd.org/releases/[发行版]的硬件兼容性列表。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:308
+#, fuzzy
 msgid "The list of PCIe Wi-Fi devices that are known to work well on FreeBSD:"
-msgstr ""
+msgstr "以下是已知在 FreeBSD 上运行良好的 PCIe Wi-Fi 设备列表："
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:310
+#, fuzzy
 msgid ""
 "Intel chipset devices covered by man:iwlwifi[4] (high-speed as of FreeBSD "
 "14.3)"
-msgstr ""
+msgstr "由 man:iwlwifi[4] 支持的 Intel 芯片组设备（截至 FreeBSD 14.3，速度较快）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:311
+#, fuzzy
 msgid "Realtek RTL8188CE Mini PCIe"
-msgstr ""
+msgstr "Realtek RTL8188CE Mini PCIe"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:313
+#, fuzzy
 msgid "The list of USB Wi-Fi devices that are known to work well on FreeBSD:"
-msgstr ""
+msgstr "以下是已知在 FreeBSD 上运行良好的 USB Wi-Fi 设备列表："
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:315
+#, fuzzy
 msgid "RT5370 USB dongles (supports hostap mode)"
-msgstr ""
+msgstr "RT5370 USB 无线网卡（支持 hostap 模式）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:316
+#, fuzzy
 msgid "TP-Link TL-WDN3200 (RT5592, man:if_run[4])"
-msgstr ""
+msgstr "TP-Link TL-WDN3200（RT5592，man:if_run[4]）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:317
+#, fuzzy
 msgid "TP-Link TL-WN725N v2 (RTL8188EU, man:rtwn[4])"
-msgstr ""
+msgstr "TP-Link TL-WN725N v2（RTL8188EU，man:rtwn[4]）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:318
+#, fuzzy
 msgid "TP-Link Archer T4U (RTL8812AU, man:rtwn[4])"
-msgstr ""
+msgstr "TP-Link Archer T4U（RTL8812AU，man:rtwn[4]）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:319
+#, fuzzy
 msgid "D-Link DWA-131 (RTL8192CU, man:rtwn[4])"
-msgstr ""
+msgstr "D-Link DWA-131（RTL8192CU，man:rtwn[4]）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:320
+#, fuzzy
 msgid "D-Link DWA-171 rev A1 (RTL8821AU, man:rtwn[4])"
-msgstr ""
+msgstr "D-Link DWA-171 rev A1（RTL8821AU，man:rtwn[4]）"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:321
+#, fuzzy
 msgid "ASUS USB-N10 NANO (RTL8188CUS, man:rtwn[4])"
-msgstr ""
+msgstr "ASUS USB-N10 NANO（RTL8188CUS，man:rtwn[4]）"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:324
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Does FreeBSD support 10 Gigabit Ethernet network cards?"
-msgstr ""
+msgstr "FreeBSD 支持 10 Gigabit Ethernet 网卡吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:328
+#, fuzzy
 msgid ""
 "FreeBSD provides robust support for 10 Gigabit Ethernet network cards, "
 "making it a viable choice for high-speed networking environments.  The "
 "FreeBSD kernel includes drivers for a wide range of 10 Gigabit Ethernet "
 "adapters from various manufacturers, ensuring seamless integration and "
 "optimal network performance."
-msgstr ""
+msgstr "FreeBSD 为 10 Gigabit Ethernet 网卡提供了强大的支持，因此适用于高速网络环境。FreeBSD 内核包含多家制造商生产的各种 10 Gigabit Ethernet 适配器驱动程序，可确保无缝集成和出色的网络性能。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:330
+#, fuzzy
 msgid ""
 "More information can be obtained at the link:https://wiki.freebsd.org/"
 "Networking/10GbE[FreeBSD Wiki]."
-msgstr ""
+msgstr "更多信息请参阅 link:https://wiki.freebsd.org/Networking/10GbE[FreeBSD Wiki]。"
 
 #. type: Title ==
 #: documentation/content/en/books/faq/_index.adoc:332
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation and Support"
-msgstr ""
+msgstr "文档与支持"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:336
+#, fuzzy
 msgid ""
 "This section provides valuable resources for those seeking to deepen their "
 "knowledge of FreeBSD.  It covers a range of topics, including recommended "
 "books for learning FreeBSD, avenues for commercial training and support, "
 "insights into understanding FreeBSD's internals, and where to find "
 "assistance within the FreeBSD community."
-msgstr ""
+msgstr "本节为希望深入了解 FreeBSD 的读者提供了丰富的资源，内容包括推荐的 FreeBSD 学习书籍、商业培训与支持渠道、了解 FreeBSD 内部机制的资料，以及如何在 FreeBSD 社区中寻求帮助。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What good books are there about FreeBSD?"
-msgstr ""
+msgstr "有哪些关于 FreeBSD 的好书？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:342
+#, fuzzy
 msgid ""
 "FreeBSD enthusiasts and learners can explore a variety of informative books "
 "dedicated to the operating system.  These books cover topics ranging from "
 "FreeBSD basics to advanced system administration and development."
-msgstr ""
+msgstr "FreeBSD 爱好者和学习者可以阅读多种关于这一操作系统的书籍。这些书籍涵盖从 FreeBSD 基础知识到高级系统管理和开发等主题。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:345
+#, fuzzy
 msgid ""
 "Some notable titles include \"Absolute FreeBSD: The Complete Guide To FreeBSD"
 "\" by Michael W. Lucas, and the \"FreeBSD Mastery series\" also by Michael "
 "W. Lucas, among others.  These resources offer valuable insights and "
 "knowledge to help users of all levels master FreeBSD and maximize its "
 "potential."
-msgstr ""
+msgstr "值得一提的书籍包括 Michael W. Lucas 所著的《Absolute FreeBSD: The Complete Guide To FreeBSD》，以及同样由 Michael W. Lucas 撰写的《FreeBSD Mastery》系列等。这些资源能帮助各个水平的用户深入了解 FreeBSD 并充分发挥其潜力。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:347
+#, fuzzy
 msgid ""
 "Apart from the books, The FreeBSD Project produces a wide range of "
 "documentation, available online in the link:https://docs.FreeBSD.org/"
 "[Documentation Portal]."
-msgstr ""
+msgstr "除了书籍，FreeBSD 项目还编写了大量文档，可在 link:https://docs.FreeBSD.org/[文档门户]在线查阅。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where can I get commercial FreeBSD training and support?"
-msgstr ""
+msgstr "在哪里可以获得 FreeBSD 商业培训和支持？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:353
+#, fuzzy
 msgid ""
 "For those seeking professional training and support for FreeBSD, several "
 "commercial providers offer tailored services.  The FreeBSD project maintains "
 "a link:https://www.freebsd.org/commercial/[list of companies] from which "
 "support can be requested."
-msgstr ""
+msgstr "如果您需要 FreeBSD 专业培训和支持，多家商业服务提供商可以提供定制服务。FreeBSD 项目维护了一份 link:https://www.freebsd.org/commercial/[公司列表]，您可以向这些公司申请支持。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I learn more about FreeBSD's internals?"
-msgstr ""
+msgstr "如何进一步了解 FreeBSD 的内部机制？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:359
+#, fuzzy
 msgid ""
 "To delve deeper into the inner workings of FreeBSD, interested individuals "
 "can explore resources like \"The Design And Implementation Of The FreeBSD "
 "Operating System\".  The extref:{arch-handbook}[FreeBSD Architecture "
 "Handbook] is another valuable resource that provides detailed information "
 "about FreeBSD's architecture, system organization, and design principles"
-msgstr ""
+msgstr "若想深入了解 FreeBSD 的内部工作原理，可以阅读《The Design And Implementation Of The FreeBSD Operating System》等资料。extref:{arch-handbook}[FreeBSD 架构手册]也是一项宝贵资源，详细介绍了 FreeBSD 的架构、系统组织和设计原则。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:361
+#, fuzzy
 msgid ""
 "Additionally, reviewing the FreeBSD source code, available through the "
 "FreeBSD source repository, provides valuable insights into the operating "
 "system's core components."
-msgstr ""
+msgstr "此外，阅读 FreeBSD 源代码也有助于深入了解操作系统的核心组件；源代码可通过 FreeBSD 源代码仓库获取。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I get help in a FreeBSD system?"
-msgstr ""
+msgstr "如何在 FreeBSD 系统中获得帮助？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:368
+#, fuzzy
 msgid ""
 "Getting assistance within a FreeBSD system is straightforward.  FreeBSD "
 "offers a wealth of built-in documentation, accessible through the man:man[1] "
 "command, which provides comprehensive information about various commands and "
 "system components."
-msgstr ""
+msgstr "在 FreeBSD 系统中获取帮助很简单。FreeBSD 提供了大量内置文档，可通过 man:man[1] 命令查阅，其中详细介绍了各种命令和系统组件。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:370
+#, fuzzy
 msgid ""
 "Additionally, the extref:{handbook}[FreeBSD Handbook], available both online "
 "and locally on the system, serves as a valuable resource for in-depth "
 "guidance."
-msgstr ""
+msgstr "此外，extref:{handbook}[FreeBSD 手册]可在线查阅，也可在本地系统中访问，是获取深入指导的宝贵资源。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:372
+#, fuzzy
 msgid ""
 "If specific issues arise, seeking help from the FreeBSD community via "
 "mailing lists, forums, or IRC can provide timely solutions and insights from "
 "experienced FreeBSD users and developers."
-msgstr ""
+msgstr "如果遇到具体问题，可以通过邮件列表、论坛或 IRC 向 FreeBSD 社区求助，从有经验的 FreeBSD 用户和开发者那里获得及时的解决方案和见解。"
 
 #. type: Title ==
 #: documentation/content/en/books/faq/_index.adoc:374
@@ -987,88 +1064,96 @@ msgstr "序列通信"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:377
+#, fuzzy
 msgid ""
 "Explore this section to discover ways to engage with the FreeBSD community."
-msgstr ""
+msgstr "浏览本节，了解参与 FreeBSD 社区的方式。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:380
+#, fuzzy
 msgid ""
 "Learn about FreeBSD IRC channels for real-time discussions, web-based forums "
 "for sharing insights, and access to FreeBSD mailing lists and news groups "
 "for in-depth discussions and news updates."
-msgstr ""
+msgstr "了解 FreeBSD IRC 频道（可进行实时讨论）、用于交流见解的网络论坛，以及可获取深入讨论和新闻更新的 FreeBSD 邮件列表和新闻组。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Are there FreeBSD IRC (Internet Relay Chat) channels?"
-msgstr ""
+msgstr "有 FreeBSD IRC（互联网中继聊天）频道吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:385
+#, fuzzy
 msgid ""
 "Yes, most major IRC networks host a FreeBSD chat channel and the FreeBSD "
 "wiki holds an up to date link:https://wiki.freebsd.org/IRC/Channels[list of "
 "IRC channels]."
-msgstr ""
+msgstr "有，大多数主要 IRC 网络都设有 FreeBSD 聊天频道，FreeBSD Wiki 上也维护着一份最新的 link:https://wiki.freebsd.org/IRC/Channels[IRC 频道列表]。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:388
+#, fuzzy
 msgid ""
 "Each of these channels are distinct and are not connected to each other.  "
 "Since their chat styles differ, try each to find one suited to your chat "
 "style."
-msgstr ""
+msgstr "这些频道彼此独立，互不相连。由于各频道的聊天风格不同，不妨逐一尝试，找到适合自己的频道。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:390
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Are there any web based forums to discuss FreeBSD?"
-msgstr ""
+msgstr "有可以讨论 FreeBSD 的网络论坛吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:393
+#, fuzzy
 msgid ""
 "The official FreeBSD forums are located at the link:https://forums.FreeBSD."
 "org/[FreeBSD Forums homepage]."
-msgstr ""
+msgstr "FreeBSD 官方论坛位于 link:https://forums.FreeBSD.org/[FreeBSD 论坛主页]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where do I find info on the FreeBSD mailing lists?"
-msgstr ""
+msgstr "在哪里可以找到 FreeBSD 邮件列表的信息？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:398
+#, fuzzy
 msgid ""
 "The public mailing lists can be found at the link:https://lists.freebsd.org/"
 "[FreeBSD mailing lists]."
-msgstr ""
+msgstr "公共邮件列表可在 link:https://lists.freebsd.org/[FreeBSD 邮件列表]页面找到。"
 
 #. type: Title ==
 #: documentation/content/en/books/faq/_index.adoc:400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Miscellaneous Questions"
-msgstr ""
+msgstr "其他问题"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:403
+#, fuzzy
 msgid ""
 "Explore a variety of intriguing and practical queries about FreeBSD, "
 "covering topics from shell choices to system quirks and even the FreeBSD "
 "pet's name."
-msgstr ""
+msgstr "这里汇集了各种有趣且实用的 FreeBSD 问题，内容涉及 shell 的选择、系统特性，甚至 FreeBSD 吉祥物的名字。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:405
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why is /bin/sh so minimal? Why does FreeBSD not use bash or another shell?"
-msgstr ""
+msgstr "为什么 /bin/sh 如此精简？为什么 FreeBSD 不使用 bash 或其他 shell？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:411
+#, fuzzy
 msgid ""
 "Many people need to write shell scripts which will be portable across many "
 "systems.  That is why POSIX(R) specifies the shell and utility commands in "
@@ -1077,59 +1162,64 @@ msgid ""
 "shell to interpret commands.  As the POSIX shell is so often and widely "
 "used, it is important for it to be quick to start, be deterministic in its "
 "behavior, and have a small memory footprint."
-msgstr ""
+msgstr "许多人需要编写能在多种系统上通用的 shell 脚本。因此，POSIX(R) 对 shell 和实用程序命令作了非常详细的规定。大多数脚本使用 POSIX shell（man:sh[1]）编写，而且若干重要的编程接口规定使用 POSIX shell 来解释命令。POSIX shell 被广泛使用，因此它必须启动迅速、行为确定且内存占用少。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:414
+#, fuzzy
 msgid ""
 "The existing implementation is our best effort at meeting as many of these "
 "requirements simultaneously as we can.  To keep `/bin/sh` small, we have not "
 "provided many of the convenience features that other shells have."
-msgstr ""
+msgstr "现有实现是我们尽可能同时满足这些要求的最佳努力结果。为了让 `/bin/sh` 保持精简，我们没有提供其他 shell 中的许多便捷功能。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:416
+#, fuzzy
 msgid ""
 "That is why other more featureful shells like `bash`, `scsh`, man:tcsh[1], "
 "and `zsh` are available."
-msgstr ""
+msgstr "因此，系统也提供了功能更丰富的其他 shell，例如 `bash`、`scsh`、man:tcsh[1] 和 `zsh`。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How do I use my delete key in sh and csh?"
-msgstr ""
+msgstr "如何在 sh 和 csh 中使用 Delete 键？"
 
 #. type: .abstract-title
 #: documentation/content/en/books/faq/_index.adoc:421
+#, fuzzy
 msgid "For man:sh[1], add the following lines to [.filename]#~/.shrc#:"
-msgstr ""
+msgstr "对于 man:sh[1]，将以下行添加到 [.filename]#~/.shrc#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/faq/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bind ^[[3~ ed-delete-next-char # for xterm\n"
-msgstr ""
+msgstr "bind ^[[3~ ed-delete-next-char # for xterm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:428
+#, fuzzy
 msgid "For the man:csh[1], add the following lines to [.filename]#~/.cshrc#:"
-msgstr ""
+msgstr "对于 man:csh[1]，将以下行添加到 [.filename]#~/.cshrc#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/faq/_index.adoc:432
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bindkey ^[[3~ delete-char # for xterm\n"
-msgstr ""
+msgstr "bindkey ^[[3~ delete-char # for xterm\n"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I have forgotten the root password! What do I do?"
-msgstr ""
+msgstr "我忘记了 root 密码！该怎么办？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:444
+#, fuzzy
 msgid ""
 "Do not panic! Restart the system and select `Boot Single User` from the boot "
 "loader menu, or press `Escape` at the menu and type `boot -s` at the loader "
@@ -1141,10 +1231,11 @@ msgid ""
 "`mount -a` for UFS filesystems and `zfs mount -a` when using ZFS.  Run "
 "`passwd root` to change the `root` password then run `exit` to continue "
 "booting."
-msgstr ""
+msgstr "不要慌！重新启动系统，并在引导加载器菜单中选择 `Boot Single User`，或者在菜单中按 `Escape`，然后在加载器提示符下输入 `boot -s`，进入单用户模式。在选择要使用的 shell 时，按 kbd:[Enter]，此时会显示 # 提示符。如果需要更改键盘布局，请运行 `kbdmap`，选择所需布局，然后按 kbd:[Enter] 确认。输入 `mount -urw /`，以读写方式重新挂载根文件系统。要挂载其余文件系统，UFS 文件系统请运行 `mount -a`，使用 ZFS 时请运行 `zfs mount -a`。运行 `passwd root` 更改 `root` 密码，然后运行 `exit` 继续启动。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/faq/_index.adoc:451
+#, fuzzy
 msgid ""
 "If you are still prompted to give the `root` password when entering the "
 "single-user mode, it means that the console has been marked as `insecure` in "
@@ -1154,26 +1245,28 @@ msgid ""
 "commands mentioned above.  Mount the specific partition in this case and "
 "then chroot to it.  For example, replace `mount -urw /` with `mount /dev/"
 "ada0p1 /mnt; chroot /mnt` for a system on _ada0p1_."
-msgstr ""
+msgstr "如果进入单用户模式时仍然被要求输入 `root` 密码，这表示 [.filename]#/etc/ttys# 中将控制台标记为 `insecure`。这种情况下，需要从 FreeBSD 安装盘启动，在安装过程开始时选择 [.guimenuitem]#Live CD# 或 [.guimenuitem]#Shell#，然后执行上述命令。此时需要挂载相应分区，再对其执行 chroot。例如，如果系统位于 __ada0p1__，则将 `mount -urw /` 替换为 `mount /dev/ada0p1 /mnt; chroot /mnt`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/faq/_index.adoc:457
+#, fuzzy
 msgid ""
 "If the root partition cannot be mounted from single-user mode, it is "
 "possible that the partitions are encrypted and it is impossible to mount "
 "them without the access keys.  For more information see the section about "
 "encrypted disks in the FreeBSD extref:{handbook}disks/[Handbook, disks-"
 "encrypting]."
-msgstr ""
+msgstr "如果无法在单用户模式下挂载根分区，分区可能已加密，没有访问密钥就无法挂载。更多信息请参阅 FreeBSD extref:{handbook}disks/[手册中有关加密磁盘的章节，disks-encrypting]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I made a mistake in rc.conf, or another startup file, and now I cannot edit it because the file system is read-only. What should I do?"
-msgstr ""
+msgstr "我在 rc.conf 或其他启动文件中写错了内容，现在文件系统是只读的，无法编辑。该怎么办？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:466
+#, fuzzy
 msgid ""
 "Restart the system and select `Boot Single User` from the boot loader menu, "
 "or press `Escape` at the menu and type `boot -s` at the loader prompt, to "
@@ -1184,33 +1277,36 @@ msgid ""
 "network file system, either configure the network manually before mounting "
 "the network file systems, or use an editor which resides on a local file "
 "system, such as man:ed[1]."
-msgstr ""
+msgstr "重新启动系统，并在引导加载器菜单中选择 `Boot Single User`，或者在菜单中按 `Escape`，然后在加载器提示符下输入 `boot -s`，进入单用户模式。当系统提示输入 shell 路径时，按 kbd:[Enter]，然后运行 `mount -urw /`，以读写模式重新挂载根文件系统。您可能还需要运行 `mount -a -t ufs`，以挂载存放您常用编辑器的文件系统。如果编辑器位于网络文件系统上，则需在挂载网络文件系统前手动配置网络，或者使用位于本地文件系统上的编辑器，例如 man:ed[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:468
+#, fuzzy
 msgid ""
 "In order to use a full screen editor such as man:vi[1] or man:emacs[1], run "
 "`export TERM=xterm` so that these editors can load the correct data from the "
 "man:termcap[5] database."
-msgstr ""
+msgstr "要使用 man:vi[1] 或 man:emacs[1] 等全屏编辑器，请运行 `export TERM=xterm`，这样这些编辑器就能从 man:termcap[5] 数据库加载正确的数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:471
+#, fuzzy
 msgid ""
 "After performing these steps, edit [.filename]#/etc/rc.conf# to fix the "
 "syntax error.  The error message displayed immediately after the kernel boot "
 "messages should indicate the number of the line in the file which is at "
 "fault."
-msgstr ""
+msgstr "完成这些步骤后，编辑 [.filename]#/etc/rc.conf#，修复其中的语法错误。内核启动消息之后立即显示的错误消息应会指出出错行的行号。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:473
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How much free memory is available?"
-msgstr ""
+msgstr "有多少可用内存？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:481
+#, fuzzy
 msgid ""
 "There are a couple of kinds of \"free memory\".  The most common is the "
 "amount of memory immediately available without reclaiming memory already in "
@@ -1222,54 +1318,59 @@ msgid ""
 "\"free memory\" descriptions are also possible, but it is relatively useless "
 "to define these, but rather it is important to make sure that the paging "
 "rate is kept low, and to avoid running out of swap space."
-msgstr ""
+msgstr "“空闲内存”有几种含义。最常见的是无需回收已使用内存即可立即使用的内存量，也就是空闲页队列的大小加上一些其他保留页。该数值由 `vm.stats.vm.v_free_count` 这个 man:sysctl[8] 变量提供，例如 man:top[1] 会显示它。另一种“空闲内存”是用户空间进程可用的虚拟内存总量，它取决于交换空间和可用内存之和。对“空闲内存”也可以有其他定义，但这些定义用处不大；重要的是确保分页速率保持较低，并避免交换空间耗尽。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:483
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "My time is wrong, how can I change the timezone?"
-msgstr ""
+msgstr "时间不对，如何更改时区？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:486
+#, fuzzy
 msgid "Use man:tzsetup[8]."
-msgstr ""
+msgstr "使用 man:tzsetup[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:488
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD uses a lot of swap space even when the computer has free memory left. Why?"
-msgstr ""
+msgstr "即使计算机仍有空闲内存，FreeBSD 为什么还会使用大量交换空间？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:492
+#, fuzzy
 msgid ""
 "FreeBSD will proactively move entirely idle, unused pages of main memory "
 "into swap in order to make more main memory available for active use.  This "
 "heavy use of swap is balanced by using the extra free memory for caching."
-msgstr ""
+msgstr "FreeBSD 会主动将主内存中完全空闲、未使用的页面移入交换空间，以便为活跃用途腾出更多主内存。增加的空闲内存则用于缓存，从而平衡交换空间的大量使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:495
+#, fuzzy
 msgid ""
 "Note that while FreeBSD is proactive in this regard, it does not arbitrarily "
 "decide to swap pages when the system is truly idle.  Thus, the system will "
 "not be all paged out after leaving it idle overnight."
-msgstr ""
+msgstr "请注意，尽管 FreeBSD 在这方面采取主动策略，但系统真正空闲时，它不会随意将页面换出。因此，系统即使闲置一整夜，也不会把所有页面都换出。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:497
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why does top show very little free memory even when I have very few programs running?"
-msgstr ""
+msgstr "为什么我运行的程序很少，top 却显示空闲内存很少？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:500
+#, fuzzy
 msgid "The simple answer is that free memory is wasted memory."
-msgstr ""
+msgstr "简单来说，空闲内存就是被浪费的内存。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:505
+#, fuzzy
 msgid ""
 "Any memory that programs do not actively allocate is used within the FreeBSD "
 "kernel as disk cache.  The values shown by man:top[1] labeled as `Inact` and "
@@ -1278,60 +1379,65 @@ msgid ""
 "accessed recently, thus increasing overall performance.  In general, a low "
 "value shown for `Free` memory in man:top[1] is good, provided it is not "
 "_very_ low."
-msgstr ""
+msgstr "程序没有主动分配的内存会被 FreeBSD 内核用作磁盘缓存。man:top[1] 中标记为 `Inact` 和 `Laundry` 的数值表示处于不同老化阶段的缓存数据。这些缓存使系统无需再次访问速度较慢的磁盘来读取近期访问过的数据，从而提升整体性能。通常，man:top[1] 显示的 `Free` 内存较少是好事，只要它不是__非常__少。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:507
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is the cute little red guy's name?"
-msgstr ""
+msgstr "那个可爱的小红人叫什么名字？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:512
+#, fuzzy
 msgid ""
 "He does not have one, and is just called \"the BSD daemon\".  If you insist "
 "upon using a name, call him \"beastie\".  Note that \"beastie\" is "
 "pronounced \"BSD\"."
-msgstr ""
+msgstr "它没有名字，通常就叫“BSD 守护进程”。如果您坚持要给它起个名字，就叫它“beastie”吧。请注意，“beastie”的发音是“BSD”。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:514
+#, fuzzy
 msgid ""
 "More about the BSD daemon is available on his http://www.mckusick.com/"
 "beastie/index.html[home page]."
-msgstr ""
+msgstr "关于 BSD 守护进程的更多信息，请参阅它的 link:http://www.mckusick.com/beastie/index.html[主页]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can I use the BSD daemon image?"
-msgstr ""
+msgstr "我可以使用 BSD 守护进程图像吗？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:521
+#, fuzzy
 msgid ""
 "Perhaps.  The BSD daemon is copyrighted by Marshall Kirk McKusick.  Check "
 "his http://www.mckusick.com/beastie/mainpage/copyright.html[Statement on the "
 "Use of the BSD Daemon Figure] for detailed usage terms."
-msgstr ""
+msgstr "也许可以。BSD 守护进程图像的版权归 Marshall Kirk McKusick 所有。有关详细使用条款，请查看他的 link:http://www.mckusick.com/beastie/mainpage/copyright.html[关于使用 BSD 守护进程图像的声明]。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:525
+#, fuzzy
 msgid ""
 "In summary, the image can be used in a tasteful manner, for personal use, so "
 "long as appropriate credit is given.  Before using the logo commercially, "
 "contact {mckusick} for permission.  More details are available on the http://"
 "www.mckusick.com/beastie/index.html[BSD Daemon's home page]."
-msgstr ""
+msgstr "总之，只要适当注明出处，就可以以得体的方式将该图像用于个人用途。商业使用该标志前，请联系 {mckusick} 获得许可。更多详情请参阅 link:http://www.mckusick.com/beastie/index.html[BSD 守护进程主页]。"
 
 #. type: Title ===
 #: documentation/content/en/books/faq/_index.adoc:527
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why should I care what color the bikeshed is?"
-msgstr ""
+msgstr "为什么我应该在意自行车棚是什么颜色？"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:533
+#, fuzzy
 msgid ""
 "The really, really short answer is that you should not.  The somewhat longer "
 "answer is that just because you are capable of building a bikeshed does not "
@@ -1340,16 +1446,17 @@ msgid ""
 "need not argue about every little feature just because you know enough to do "
 "so.  Some people have commented that the amount of noise generated by a "
 "change is inversely proportional to the complexity of the change."
-msgstr ""
+msgstr "最简短的回答是：你不应该在意。稍长一点的回答是：即使你有能力搭建自行车棚，也不代表你应该仅仅因为不喜欢别人打算涂的颜色，就阻止他们搭建。这是一个比喻，意思是你不必因为自己懂得足够多，就对每个细枝末节都争论不休。有人指出，变更引发的争论声量与变更的复杂程度成反比。"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:535
+#, fuzzy
 msgid ""
 "The longer and complete answer is that after a very long argument about "
 "whether man:sleep[1] should take fractional second arguments, {phk} posted a "
 "long message entitled link:http://www.bikeshed.com[A bike shed (any color "
 "will do) on greener grass...]."
-msgstr ""
+msgstr "更长、更完整的答案是：在一场关于 man:sleep[1] 是否应接受小数秒参数的漫长争论之后，{phk} 发布了一篇长文，标题为 link:http://www.bikeshed.com[A bike shed (any color will do) on greener grass...]。"
 
 #. type: Title ==
 #: documentation/content/en/books/faq/_index.adoc:537
@@ -1359,10 +1466,11 @@ msgstr "鸣谢"
 
 #. type: Plain text
 #: documentation/content/en/books/faq/_index.adoc:539
+#, fuzzy
 msgid ""
 "This FAQ has undergone countless revisions and improvements by a diverse "
 "group of contributors over the past decades."
-msgstr ""
+msgstr "在过去几十年里，这份常见问题解答经过了众多贡献者无数次修订和改进。"
 
 #, no-wrap
 #~ msgid "Frequently Asked Questions, and answers, covering all aspects of FreeBSD"

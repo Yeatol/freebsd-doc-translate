@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/book.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Everything you need to know in order to start contributing to the FreeBSD Documentation Project"
-msgstr ""
+msgstr "开始为 FreeBSD 文档项目做贡献所需了解的一切"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/book.adoc:1
 #: documentation/content/en/books/fdp-primer/book.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Documentation Project Primer for New Contributors"
-msgstr ""
+msgstr "FreeBSD 文档项目新贡献者入门指南"
 
 #. type: .abstract-title
 #: documentation/content/en/books/fdp-primer/book.adoc:49
@@ -37,24 +37,27 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/books/fdp-primer/book.adoc:51
+#, fuzzy
 msgid ""
 "Thank you for becoming a part of the FreeBSD Documentation Project. Your "
 "contribution is extremely valuable, and we appreciate it."
-msgstr ""
+msgstr "感谢您加入 FreeBSD 文档项目。您的贡献极其宝贵，我们对此深表感谢。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/fdp-primer/book.adoc:53
+#, fuzzy
 msgid ""
 "This primer covers details needed to start contributing to the FreeBSD "
 "Documentation Project, or FDP, including tools, software, and the philosophy "
 "behind the Documentation Project."
-msgstr ""
+msgstr "本入门指南介绍了开始为 FreeBSD 文档项目（FDP）做贡献所需的内容，包括工具、软件以及文档项目背后的理念。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/fdp-primer/book.adoc:55
+#, fuzzy
 msgid ""
 "This is a work in progress. Corrections and additions are always welcome."
-msgstr ""
+msgstr "本指南仍在编写中。欢迎随时提出更正和补充。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/fdp-primer/book.adoc:57

@@ -17,36 +17,39 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/articles/license-guide/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Licensing Policy"
-msgstr ""
+msgstr "FreeBSD 许可政策"
 
 #. type: Title =
 #: documentation/content/en/articles/license-guide/_index.adoc:9
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD License Policies"
-msgstr ""
+msgstr "FreeBSD 许可政策"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:39
+#, fuzzy
 msgid "'''"
-msgstr ""
+msgstr "'''"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:46
+#, fuzzy
 msgid ""
 "This policy applies to the FreeBSD source repository (src).  The ports and "
 "documentation repositories have their own licensing guidelines."
-msgstr ""
+msgstr "本政策适用于 FreeBSD 源代码仓库（src）。Ports 和文档仓库有各自的许可指南。"
 
 #. type: Title ==
 #: documentation/content/en/articles/license-guide/_index.adoc:48
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preferred License for New Files"
-msgstr ""
+msgstr "新文件的首选许可证"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:55
+#, fuzzy
 msgid ""
 "The rest of this section is intended to help you get started.  As a rule, "
 "when in doubt, ask.  It is much easier to receive advice than to fix the "
@@ -55,27 +58,29 @@ msgid ""
 "detached licenses (where a tag in the file specifies the license, as "
 "described in this document).  SPDX-only license marking (without reproducing "
 "the full license text) is preferred."
-msgstr ""
+msgstr "本节其余内容旨在帮助你入门。一般来说，如有疑问，请提出。征求意见要比修复源代码仓库容易得多。FreeBSD 项目同时使用明确许可证（在每个文件中重现许可证的原文）和独立许可证（在文件中使用标签指定许可证，如本文所述）。首选仅使用 SPDX 标记许可证（不重现完整许可证文本）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:57
+#, fuzzy
 msgid "The FreeBSD Project uses this text as the preferred license:"
-msgstr ""
+msgstr "FreeBSD 项目将以下文本作为首选许可证："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:65
 #: documentation/content/en/articles/license-guide/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Copyright (c) [year] [your name]\n"
 " *\n"
 " * SPDX-License-Identifier: BSD-2-Clause\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * Copyright (c) [year] [your name]\n *\n * SPDX-License-Identifier: BSD-2-Clause\n */\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:70
+#, fuzzy
 msgid ""
 "The preferred order is the copyright notice first, followed by the SPDX-"
 "License-Identifier, but either order is acceptable.  When both SPDX-License-"
@@ -83,10 +88,11 @@ msgid ""
 "priority and the SPDX-License-Identifier is informational only.  When both "
 "are present, the SPDX-License-Identifier will often precede the copyright "
 "and license text."
-msgstr ""
+msgstr "首选顺序是先写版权声明，再写 SPDX-License-Identifier，但任一顺序均可接受。如果同时提供 SPDX-License-Identifier 和完整许可证文本，则以完整文本为准，SPDX-License-Identifier 仅供参考。两者同时存在时，SPDX-License-Identifier 通常会出现在版权和许可证文本之前。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:75
+#, fuzzy
 msgid ""
 "The FreeBSD project does not allow using the \"advertising clause\" in new "
 "code.  Due to the large number of contributors to the FreeBSD project, "
@@ -94,10 +100,11 @@ msgid ""
 "difficult.  If you have code in the tree with the advertising clause, please "
 "consider switching to a license without it.  New contributions to FreeBSD "
 "should use the BSD-2-Clause license."
-msgstr ""
+msgstr "FreeBSD 项目不允许在新代码中使用“广告条款”。由于 FreeBSD 项目的贡献者众多，许多商业供应商难以遵守这一条款。如果源代码树中有包含广告条款的代码，请考虑改用不含该条款的许可证。对 FreeBSD 的新贡献应使用 BSD-2-Clause 许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:81
+#, fuzzy
 msgid ""
 "The FreeBSD project discourages completely new licenses and variations on "
 "the standard licenses.  New licenses require the approval of {core-email} to "
@@ -106,10 +113,11 @@ msgid ""
 "licenses often causes more unintended consequences, so they are unlikely to "
 "be approved by {core-email}.  The FreeBSD project is standardizing on the "
 "BSD-2-Clause license, as published by SPDX."
-msgstr ""
+msgstr "FreeBSD 项目不鼓励使用全新的许可证或对标准许可证进行变体修改。新许可证须经 {core-email} 批准，才能放入主仓库。以往，非标准许可证引发的问题比标准许可证更多。非标准许可证的起草不完善往往会导致更多意料之外的后果，因此不太可能获得 {core-email} 的批准。FreeBSD 项目正在统一采用 SPDX 发布的 BSD-2-Clause 许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:87
+#, fuzzy
 msgid ""
 "In addition, project policy requires that code licensed under some non-BSD "
 "licenses must be placed in specific sections of the repository.  For some "
@@ -118,25 +126,27 @@ msgid ""
 "under the BSD or substantially similar licenses.  GPL, APSL, CDDL, etc, "
 "licensed software must not be compiled into the static GENERIC kernel.  Code "
 "with these licenses may be used in pre-compiled modules, however."
-msgstr ""
+msgstr "此外，项目政策要求，采用某些非 BSD 许可证的代码必须放在仓库的特定部分。对于某些许可证，编译必须设置为有条件进行或默认禁用。例如，GENERIC 内核的静态部分中的代码必须采用 BSD 许可证或实质上类似的许可证。不得将采用 GPL、APSL、CDDL 等许可证的软件编译进静态 GENERIC 内核。不过，采用这些许可证的代码可以用于预编译模块。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:91
+#, fuzzy
 msgid ""
 "Developers are reminded that, in open source, getting \"open\" correct is "
 "just as important as getting \"source\" correct.  Improper handling of "
 "intellectual property has serious consequences.  Any questions or concerns "
 "should immediately be brought to the attention of {core-email}."
-msgstr ""
+msgstr "开发者应注意，在开源领域，正确处理“开放”与正确处理“源代码”同样重要。不当处理知识产权会造成严重后果。如有任何疑问或顾虑，应立即告知 {core-email}。"
 
 #. type: Title ==
 #: documentation/content/en/articles/license-guide/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Software License Policy"
-msgstr ""
+msgstr "软件许可政策"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:99
+#, fuzzy
 msgid ""
 "The following sections outline the project's Software License Policies in "
 "detail.  For the most part we expect developers to read, understand and "
@@ -145,16 +155,17 @@ msgid ""
 "background to the policies as well as the policies in great detail.  As "
 "always, if the text below is confusing or you need help with applying these "
 "policies, please reach out to {core-email}."
-msgstr ""
+msgstr "以下各节详细说明项目的软件许可政策。我们主要希望开发者阅读、理解并运用本节之前的内容，为其贡献内容采用适当的许可证。本文其余部分将详细介绍这些政策的理念背景及具体内容。一如既往，如果下文令人困惑，或你需要帮助应用这些政策，请联系 {core-email}。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Guiding Principles"
-msgstr ""
+msgstr "指导原则"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:105
+#, fuzzy
 msgid ""
 "The FreeBSD Project aims to produce a complete, BSD-licensed operating "
 "system allowing consumers of the system to produce derivative products "
@@ -164,246 +175,284 @@ msgid ""
 "source projects.  Use of the BSD license is key to encouraging the adoption "
 "of advanced operating system technology, and on many notable occasions has "
 "been pivotal to widespread use of new technology."
-msgstr ""
+msgstr "FreeBSD 项目致力于打造完整且采用 BSD 许可证的操作系统，使系统的使用者能够不受限制、也无需承担额外的许可义务来制作衍生产品。我们欢迎并非常感谢以两条款 BSD 许可证提交的变更和新增内容，并鼓励其他开源项目采用该许可证。使用 BSD 许可证是鼓励先进操作系统技术得到采用的关键，在许多重要场合也对新技术的广泛应用发挥了决定性作用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:107
+#, fuzzy
 msgid ""
 "We accept however that compelling reasons exist to allow differently-"
 "licensed software to be included in the FreeBSD source tree."
-msgstr ""
+msgstr "不过，我们承认，确有充分理由允许将采用其他许可证的软件纳入 FreeBSD 源代码树。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:110
+#, fuzzy
 msgid ""
 "We require software licensed under some non-BSD licenses to be carefully "
 "isolated in the source tree so that it cannot contaminate BSD-only "
 "components.  Such cautious management encourages licensing clarity and "
 "facilitates the production of BSD-only derivative products."
-msgstr ""
+msgstr "我们要求将采用某些非 BSD 许可证的软件谨慎隔离在源代码树中，使其不会影响仅采用 BSD 许可证的组件。这种谨慎管理有助于明确许可证，并便于制作仅采用 BSD 许可证的衍生产品。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:114
+#, fuzzy
 msgid ""
 "Unless a special exception is made, no existing BSD-licensed components may "
 "be replaced with more restrictively licensed software.  We encourage FreeBSD "
 "and third party developers to seek the relicensing, dual-licensing, or "
 "reimplementing of critical components under the BSD license instead.  Such "
 "would ease their more integral adoption into the FreeBSD operating system."
-msgstr ""
+msgstr "除非获得特别豁免，否则不得用限制性更强的许可软件替换现有的 BSD 许可组件。我们鼓励 FreeBSD 和第三方开发者寻求将关键组件重新许可、采用双重许可，或依据 BSD 许可证重新实现。这样更便于将这些组件更深入地纳入 FreeBSD 操作系统。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Policy"
-msgstr ""
+msgstr "政策"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:118
+#, fuzzy
 msgid ""
 "The following are the SPDX-License-Identifiers that are considered BSD "
 "licenses for this policy"
-msgstr ""
+msgstr "本政策视为 BSD 许可证的 SPDX-License-Identifier 如下："
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:119
+#, fuzzy
 msgid "BSD-1-Clause"
-msgstr ""
+msgstr "BSD-1-Clause"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:120
+#, fuzzy
 msgid "BSD-2-Clause"
-msgstr ""
+msgstr "BSD-2-Clause"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:121
+#, fuzzy
 msgid "BSD-2-Clause-first-lines"
-msgstr ""
+msgstr "BSD-2-Clause-first-lines"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:122
+#, fuzzy
 msgid "BSD-3-Clause"
-msgstr ""
+msgstr "BSD-3-Clause"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:123
+#, fuzzy
 msgid "BSD-3-Clause-acpica"
-msgstr ""
+msgstr "BSD-3-Clause-acpica"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:124
+#, fuzzy
 msgid "BSD-3-Clause-flex"
-msgstr ""
+msgstr "BSD-3-Clause-flex"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:125
+#, fuzzy
 msgid "BSD-3-Clause-LBNL"
-msgstr ""
+msgstr "BSD-3-Clause-LBNL"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:126
+#, fuzzy
 msgid "BSD-3-Clause-Open-MPI"
-msgstr ""
+msgstr "BSD-3-Clause-Open-MPI"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:127
+#, fuzzy
 msgid "BSD-3-Clause-Sun"
-msgstr ""
+msgstr "BSD-3-Clause-Sun"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:128
+#, fuzzy
 msgid "BSD-4.3RENO"
-msgstr ""
+msgstr "BSD-4.3RENO"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:129
+#, fuzzy
 msgid "BSD-4.3TAHOE"
-msgstr ""
+msgstr "BSD-4.3TAHOE"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:130
+#, fuzzy
 msgid "BSD-Source-beginning-file"
-msgstr ""
+msgstr "BSD-Source-beginning-file"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:131
+#, fuzzy
 msgid "CMU-Mach"
-msgstr ""
+msgstr "CMU-Mach"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:132
+#, fuzzy
 msgid "ISC"
-msgstr ""
+msgstr "ISC"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:133
+#, fuzzy
 msgid "MIT"
-msgstr ""
+msgstr "MIT"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:134
+#, fuzzy
 msgid "MIT-CMU"
-msgstr ""
+msgstr "MIT-CMU"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:135
+#, fuzzy
 msgid "SSH-OpenSSH"
-msgstr ""
+msgstr "SSH-OpenSSH"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:136
+#, fuzzy
 msgid "Vixie-Cron"
-msgstr ""
+msgstr "Vixie-Cron"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:137
+#, fuzzy
 msgid "Zlib"
-msgstr ""
+msgstr "Zlib"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:140
+#, fuzzy
 msgid ""
 "The import of new software licensed under any licenses other than the BSD "
 "license and BSD-Like Licenses (as defined below) requires the prior approval "
 "of the FreeBSD Core Team.  Requests for import must include:"
-msgstr ""
+msgstr "导入采用 BSD 许可证和 BSD 类许可证（定义见下文）以外任何许可证的新软件，必须事先获得 FreeBSD 核心团队批准。导入申请必须包含："
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:142
+#, fuzzy
 msgid ""
 "A list of features or bug fixes that the new version or patches contain, "
 "along with evidence that our users need those features.  PRs or references "
 "to mailing list discussions are ideal forms of evidence."
-msgstr ""
+msgstr "新版本或补丁包含的功能或错误修复清单，以及证明用户需要这些功能的材料。PR 或邮件列表讨论的引用是理想的证明形式。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:144
+#, fuzzy
 msgid ""
 "This process should be used for all software imports, not just those that "
 "require Core Team review.  The mere existence of a new version does not "
 "justify an import of software to source."
-msgstr ""
+msgstr "所有软件导入都应遵循此流程，而不仅仅是需要核心团队审核的软件。仅仅有新版本，并不足以构成将软件导入源代码树的理由。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:146
+#, fuzzy
 msgid ""
 "A list of FreeBSD branches that may be affected.  Expansions of scope "
 "require a new request to and approval from the FreeBSD Core Team."
-msgstr ""
+msgstr "可能受影响的 FreeBSD 分支清单。扩大范围需要向 FreeBSD 核心团队重新提交申请并获得批准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:149
+#, fuzzy
 msgid ""
 "The Apache License 2.0 (Apache-2.0) is acceptable for use in some cases.  "
 "The Core Team must approve the import of new Apache License licensed "
 "components or the change of license of existing components to the Apache "
 "License."
-msgstr ""
+msgstr "在某些情况下，可以接受使用 Apache License 2.0（Apache-2.0）。导入采用 Apache License 的新组件，或将现有组件的许可证更改为 Apache License，都必须获得核心团队批准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:150
 #: documentation/content/en/articles/license-guide/_index.adoc:155
 #: documentation/content/en/articles/license-guide/_index.adoc:160
+#, fuzzy
 msgid "This license is approved for the following components:"
-msgstr ""
+msgstr "此许可证获准用于以下组件："
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:151
+#, fuzzy
 msgid "LLVM toolchain and (with LLVM Exceptions) runtime components."
-msgstr ""
+msgstr "LLVM 工具链和（采用 LLVM Exceptions 的）运行时组件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:154
+#, fuzzy
 msgid ""
 "The BSD+Patent License (BSD-2-Clause-Patent) is acceptable for use in some "
 "cases.  The Core Team must approve the import of new BSD+Patent License "
 "licensed components or the change of license of existing components to the "
 "BSD+Patent License."
-msgstr ""
+msgstr "在某些情况下，可以接受使用 BSD+Patent License（BSD-2-Clause-Patent）。导入采用 BSD+Patent License 的新组件，或将现有组件的许可证更改为 BSD+Patent License，都必须获得核心团队批准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:156
+#, fuzzy
 msgid "EDK2 derived code related to UEFI functionality"
-msgstr ""
+msgstr "与 UEFI 功能相关的 EDK2 派生代码"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:159
+#, fuzzy
 msgid ""
 "The Common Development and Distribution License (CDDL-1.1) is acceptable for "
 "use in some cases.  The Core Team must approve the import of new CDDL "
 "licensed components or the change of license of existing components to the "
 "CDDL."
-msgstr ""
+msgstr "在某些情况下，可以接受使用 Common Development and Distribution License（CDDL-1.1）。导入采用 CDDL 的新组件，或将现有组件的许可证更改为 CDDL，都必须获得核心团队批准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:161
+#, fuzzy
 msgid "DTrace"
-msgstr ""
+msgstr "DTrace"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:162
+#, fuzzy
 msgid "ZFS filesystem, including kernel support and userland utilities"
-msgstr ""
+msgstr "ZFS 文件系统，包括内核支持和用户空间实用工具"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:166
+#, fuzzy
 msgid ""
 "Initially, many items in the FreeBSD tree were marked with BSD-2-Clause-"
 "FreeBSD.  However, SPDX has obsoleted the license as a variant; and most "
 "files tagged with it should have been BSD-2-Clause since SPDX's license text "
 "was for something else.  Adding new files with this identifier is expressly "
 "prohibited."
-msgstr ""
+msgstr "最初，FreeBSD 源代码树中的许多条目都标记为 BSD-2-Clause-FreeBSD。不过，SPDX 已将此许可证变体标记为过时；大多数标记为该许可证的文件本应使用 BSD-2-Clause，因为 SPDX 中该许可证的文本另有所指。明确禁止新增使用此标识符的文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:168
+#, fuzzy
 msgid ""
 "The FreeBSD project discourages completely new licenses and variations on "
 "the standard licenses."
-msgstr ""
+msgstr "FreeBSD 项目不鼓励使用全新的许可证或对标准许可证进行变体修改。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:174
+#, fuzzy
 msgid ""
 "Historically, the phrase 'All Rights Reserved.' was included in all "
 "copyright notices.  All the BSD releases had it, to comply with the https://"
@@ -414,99 +463,106 @@ msgid ""
 "project recommends that new code omit the phrase and encourages existing "
 "copyright holders to remove it.  In 2018, the project updated its templates "
 "to remove it."
-msgstr ""
+msgstr "过去，所有版权声明中都会包含“All Rights Reserved.”（保留所有权利）这一短语。美洲的所有 BSD 发行版都包含该短语，以遵守 link:https://en.wikipedia.org/wiki/Buenos_Aires_Convention[Buenos Aires Convention of 1910]。尼加拉瓜于 2000 年批准 link:https://en.wikipedia.org/wiki/Berne_Convention[Berne Convention] 后，《布宜诺斯艾利斯公约》及该短语便不再适用。因此，FreeBSD 项目建议新代码省略该短语，并鼓励现有版权持有人将其删除。2018 年，项目更新了模板，将其移除。"
 
 #. type: Title ====
 #: documentation/content/en/articles/license-guide/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Acceptable licenses"
-msgstr ""
+msgstr "可接受的许可证"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:179
+#, fuzzy
 msgid ""
 "The following licenses are considered to be acceptable BSD-Like Licenses for "
 "the purpose of this Policy.  Deviations or the use of any other license must "
 "be approved by the FreeBSD Core Team:"
-msgstr ""
+msgstr "就本政策而言，以下许可证被视为可接受的 BSD 类许可证。任何偏离或使用其他许可证的情况都必须获得 FreeBSD 核心团队批准："
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:181
+#, fuzzy
 msgid "The 2 clause version of the BSD license"
-msgstr ""
+msgstr "BSD 许可证的两条款版本"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:191
+#, fuzzy
 msgid "The 3 clause version of the BSD license"
-msgstr ""
+msgstr "BSD 许可证的三条款版本"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Copyright (c) [year] [your name]\n"
 " *\n"
 " * SPDX-License-Identifier: BSD-3-Clause\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * Copyright (c) [year] [your name]\n *\n * SPDX-License-Identifier: BSD-3-Clause\n */\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:201
+#, fuzzy
 msgid "The ISC License"
-msgstr ""
+msgstr "ISC 许可证"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Copyright (c) [year] [copyright holder]\n"
 " *\n"
 " * SPDX-License-Identifier: ISC\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * Copyright (c) [year] [copyright holder]\n *\n * SPDX-License-Identifier: ISC\n */\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:211
+#, fuzzy
 msgid "The MIT License"
-msgstr ""
+msgstr "MIT 许可证"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Copyright (c) [year] [copyright holders]\n"
 " *\n"
 " * SPDX-License-Identifier: MIT\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * Copyright (c) [year] [copyright holders]\n *\n * SPDX-License-Identifier: MIT\n */\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/license-guide/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Software Collection License"
-msgstr ""
+msgstr "软件集合许可证"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:225
+#, fuzzy
 msgid ""
 "The FreeBSD Project licenses its compilation of software as described in [."
 "filename]#COPYRIGHT# under the BSD-2-Clause license.  This license does not "
 "supersede the license of individual files, which is described below.  Files "
 "that do not have an explicit license are licensed under the BSD-2-Clause "
 "license."
-msgstr ""
+msgstr "FreeBSD 项目依据 BSD-2-Clause 许可证，对其在 [.filename]#COPYRIGHT# 中所述的软件汇编进行许可。该许可证不会取代各个文件自身的许可证，后者将在下文说明。没有明确许可证的文件均采用 BSD-2-Clause 许可证。"
 
 #. type: Title ==
 #: documentation/content/en/articles/license-guide/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "License File Location"
-msgstr ""
+msgstr "许可证文件位置"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:238
+#, fuzzy
 msgid ""
 "To comply with the https://reuse.software/[REUSE Software] standard as much "
 "as possible, all license files will be stored in the [.filename]#LICENSES/# "
@@ -526,48 +582,53 @@ msgid ""
 "filename]#LICENSES/other/# and have a filename that starts with LicenseRef- "
 "followed by a unique idstring.  No such files have currently been "
 "identified, but if they are, a full list will appear here."
-msgstr ""
+msgstr "为尽可能符合 link:https://reuse.software/[REUSE Software] 标准，所有许可证文件都将存放在仓库的 [.filename]#LICENSES/# 目录中。该顶层目录下有三个子目录。[.filename]#LICENSES/text/# 子目录以独立文件形式存放 FreeBSD 软件集合中允许使用的所有许可证文本。这些文件以 SPDX-License-Identifier 名称命名，并以 .txt 结尾。[.filename]#LICENSES/exceptions/# 子目录以独立文件形式存放 FreeBSD 软件集合中允许使用的所有例外文本。这些文件以例外标识符名称命名，并以 .txt 结尾。[.filename]#LICENSES/other/# 目录以独立文件形式存放 SPDX-License-Identifier 表达式中引用、但不允许作为独立许可证使用的许可证文件。每个此类文件都必须至少在 FreeBSD 软件集合中出现一次，并应在引用它的最后一个文件被移除时一并删除。没有合适 SPDX 对应许可证的许可证必须放在 [.filename]#LICENSES/other/# 中，文件名以 LicenseRef- 开头，后接唯一的 idstring。目前尚未发现此类文件；如果发现，完整列表将在此处列出。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:242
+#, fuzzy
 msgid ""
 "The FreeBSD Project currently does not make use of the `DEP5` files "
 "described in the `REUSE Software` standard.  The FreeBSD Project has not "
 "marked all the files in the tree yet in accordance with this standard, as "
 "described later in this document.  The FreeBSD Project has not yet included "
 "these files in its repositories since this policy is still evolving."
-msgstr ""
+msgstr "FreeBSD 项目目前未使用 `REUSE Software` 标准中所述的 `DEP5` 文件。FreeBSD 项目尚未按照该标准标记源代码树中的所有文件，具体说明见本文后文。由于这项政策仍在演进，FreeBSD 项目尚未将这些文件纳入其仓库。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:244
+#, fuzzy
 msgid "This section is a work in progress."
-msgstr ""
+msgstr "本节仍在编写中。"
 
 #. type: Title ==
 #: documentation/content/en/articles/license-guide/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Individual Files License"
-msgstr ""
+msgstr "单个文件的许可证"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:250
+#, fuzzy
 msgid ""
 "Each individual file in the FreeBSD software collection has its own "
 "copyright and license.  How they are marked varies and is described in this "
 "section."
-msgstr ""
+msgstr "FreeBSD 软件集合中的每个文件都有自己的版权和许可证。标记方式各不相同，本节将对此进行说明。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:254
+#, fuzzy
 msgid ""
 "A copyright notice identifies who claims the legal copyright to a file.  "
 "These are provided on a best effort basis by the project.  Because "
 "copyrights may be legally transferred, the current copyright holder may "
 "differ from what is listed in the file."
-msgstr ""
+msgstr "版权声明标明谁主张对文件享有法律上的版权。项目会尽力提供这些信息。由于版权可以依法转让，当前版权持有人可能与文件中列出的人不同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:263
+#, fuzzy
 msgid ""
 "A license is a legal document between the contributor and the users of the "
 "software granting permission to use the copyrighted portions of the "
@@ -583,69 +644,77 @@ msgid ""
 "on by partners throughout the industry, tool vendors, and legal teams.  For "
 "further information see https://spdx.org/ and the following sections for how "
 "the FreeBSD Project uses them."
-msgstr ""
+msgstr "许可证是贡献者与软件使用者之间的法律文件，授权使用软件中受版权保护的部分，但须遵守许可证规定的特定条款和条件。FreeBSD 软件集合中的许可证可以通过两种方式表达。许可证可以在文件中明确列出。如果文件中明确授予许可证，则可以按照该许可证使用、复制和修改该文件。许可证也可以通过间接方式表达，即许可证文本位于其他位置。项目为此使用 Software Package Data Exchange（SPDX）许可证标识符，具体说明见以下小节。SPDX 许可证标识符由 Linux Foundation 下属的 SPDX 工作组管理，并已得到行业合作伙伴、工具供应商和法律团队的认可。更多信息请参阅 link:https://spdx.org/[]，以及以下关于 FreeBSD 项目如何使用这些标识符的章节。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:266
+#, fuzzy
 msgid ""
 "Entities that contribute fixes and enhancements to the software collection "
 "without an explicit license agree to license those changes under the terms "
 "that apply to the modified file(s).  Project policy, in line with industry "
 "practice, only includes a copyright notice from significant contributors to "
 "the files in the collection."
-msgstr ""
+msgstr "为软件集合贡献修复和增强内容的实体，如未明确指定许可证，即表示同意按照被修改文件适用的条款为这些更改授权。项目政策遵循行业惯例，仅在集合中文件的版权声明中列出有重大贡献的贡献者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:268
+#, fuzzy
 msgid "There are four types of files in the FreeBSD software collection:"
-msgstr ""
+msgstr "FreeBSD 软件集合中的文件分为四类："
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:270
+#, fuzzy
 msgid "Files that have only an explicit copyright notice and license."
-msgstr ""
+msgstr "仅包含明确版权声明和许可证的文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:271
+#, fuzzy
 msgid ""
 "Files that have both an explicit copyright notice and license, and a SPDX-"
 "License-Identifier tag."
-msgstr ""
+msgstr "同时包含明确版权声明、许可证和 SPDX-License-Identifier 标签的文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:272
+#, fuzzy
 msgid ""
 "Files that have only a copyright notice and an SPDX-License-Identifier tag, "
 "but no explicit license."
-msgstr ""
+msgstr "仅包含版权声明和 SPDX-License-Identifier 标签，但没有明确许可证的文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:273
+#, fuzzy
 msgid "Files that lack any copyright or license at all."
-msgstr ""
+msgstr "完全没有版权或许可证标记的文件。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Only Copyright and License"
-msgstr ""
+msgstr "仅有版权和许可证"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:278
+#, fuzzy
 msgid ""
 "Many files in the FreeBSD software collection have both a copyright notice "
 "and an explicit license contained in the file.  In these cases, the license "
 "contained in the file governs."
-msgstr ""
+msgstr "FreeBSD 软件集合中的许多文件同时包含版权声明和文件内明确列出的许可证。在这种情况下，以文件内的许可证为准。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Copyright and License with SPDX-License-Identifier expression"
-msgstr ""
+msgstr "版权、许可证和 SPDX-License-Identifier 表达式"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:285
+#, fuzzy
 msgid ""
 "Some files in the FreeBSD software collection contain a copyright statement, "
 "an SPDX-License-Identifier tag and an explicit license.  The explicit "
@@ -654,16 +723,17 @@ msgid ""
 "the license, but is only informative for automated tools.  See crossref:"
 "license-guide[expressions,SPDX-License-Identifier Expressions] for how to "
 "interpret the expression."
-msgstr ""
+msgstr "FreeBSD 软件集合中的一些文件包含版权声明、SPDX-License-Identifier 标签和明确的许可证。明确的许可证优先于 SPDX-License-Identifier 标签。SPDX-License-Identifier 标签是项目尽力对许可证进行的描述，仅供自动化工具参考。如何解读该表达式，请参见 crossref:license-guide[expressions,SPDX-License-Identifier 表达式]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Only Copyright and SPDX-License-Identifier expression."
-msgstr ""
+msgstr "仅有版权和 SPDX-License-Identifier 表达式"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:292
+#, fuzzy
 msgid ""
 "Some files in the tree contain detached licenses.  These files contain only "
 "a copyright notice and an SPDX-License-Identifier expression, but no "
@@ -671,59 +741,66 @@ msgid ""
 "Identifier Expressions] for how to interpret the expression.  Note: the "
 "expressions allowed for detached licenses by the project are a subset of the "
 "expressions used informationally or that are defined by the standard."
-msgstr ""
+msgstr "树中的一些文件包含独立许可证。这些文件仅包含版权声明和 SPDX-License-Identifier 表达式，没有明确的许可证。如何解读该表达式，请参见 crossref:license-guide[expressions,SPDX-License-Identifier 表达式]。注意：项目允许独立许可证使用的表达式，是仅供参考使用或由标准定义的表达式的子集。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:294
+#, fuzzy
 msgid ""
 "The license for files containing only the SPDX-License-Identifier should be "
 "construed to be"
-msgstr ""
+msgstr "仅包含 SPDX-License-Identifier 的文件，其许可证应解释为"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:297
+#, fuzzy
 msgid ""
 "Start the license with the copyright notice from the file.  Include all the "
 "copyright holders."
-msgstr ""
+msgstr "许可证应以文件中的版权声明开头，并包含所有版权持有者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:300
+#, fuzzy
 msgid ""
 "For each sub-expression, copy the license text from [.filename]#LICENSE/text/"
 "`id`.txt#.  When exceptions are present, append them from [.filename]#src/"
 "share/license/exceptions/`id`.txt#.  SPDX-License-Identifier expressions "
 "should be construed as described in the SPDX standard."
-msgstr ""
+msgstr "对于每个子表达式，请从 [.filename]#LICENSE/text/`id`.txt# 复制许可证文本。如有例外，请从 [.filename]#src/share/license/exceptions/`id`.txt# 追加相应内容。SPDX-License-Identifier 表达式应按照 SPDX 标准所述进行解释。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:303
+#, fuzzy
 msgid ""
 "Where `id` is the SPDX short license identifier from the `Identifier` column "
 "of https://spdx.org/licenses/[SPDX Identifiers] or https://spdx.org/licenses/"
 "exceptions-index.html[license exception].  If there is no file in [."
 "filename]#LICENSE/#, then that license or exception cannot be specified as a "
 "detached license under this section."
-msgstr ""
+msgstr "其中，`id` 是 SPDX 短许可证标识符，取自 link:https://spdx.org/licenses/[SPDX 标识符]或 link:https://spdx.org/licenses/exceptions-index.html[许可证例外]中的 `Identifier` 列。如果 [.filename]#LICENSE/# 中没有对应文件，则该许可证或例外不能依据本节指定为独立许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:305
+#, fuzzy
 msgid ""
 "When reading the license text that is detached from a file, a number of "
 "considerations must be taken to make the detached license make sense."
-msgstr ""
+msgstr "阅读从文件中分离出来的许可证文本时，必须考虑若干事项，才能正确理解该许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:308
+#, fuzzy
 msgid ""
 "Any reference to a copyright notice shall refer to the copyright notice "
 "constructed from the licensed file, not from any copyright notice in the "
 "license text file itself.  Many SPDX files have sample copyright notices "
 "that are understood to be examples only."
-msgstr ""
+msgstr "任何对版权声明的引用，均应指根据获许可文件构成的版权声明，而非许可证文本文件自身包含的版权声明。许多 SPDX 文件中有示例版权声明，这些声明仅供示例之用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:311
+#, fuzzy
 msgid ""
 "When names of entities are referred to in the license text, they shall be "
 "construed to apply to the list of all copyright holders listed in the "
@@ -731,77 +808,84 @@ msgid ""
 "license contains the phrase \"This product includes software developed by "
 "the organization\".  The phrase 'the organization' should be replaced by the "
 "copyright holders."
-msgstr ""
+msgstr "许可证文本中提及实体名称时，应将其解释为适用于获许可文件版权声明中列出的所有版权持有者。例如，BSD-4-clause 许可证包含短语 \"This product includes software developed by the organization\"。短语 'the organization' 应替换为版权持有者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:313
+#, fuzzy
 msgid ""
 "When the SPDX offers variations of the license, it is understood the license "
 "in the [.filename]#LICENSE/# file represents the exact version of the "
 "license selected.  The SPDX standard exists to match families of licenses "
 "and these variations help match similar licenses that the SPDX organization "
 "believes to be legally identical."
-msgstr ""
+msgstr "当 SPDX 提供了许可证的不同变体时，应将 [.filename]#LICENSE/# 文件中的许可证视为所选定的确切版本。SPDX 标准旨在匹配一系列许可证；这些变体有助于匹配 SPDX 组织认为在法律上相同的类似许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:317
+#, fuzzy
 msgid ""
 "For licenses that have slight variations in text, the SPDX has guidelines to "
 "match them.  These guidelines are not relevant here.  Contributors wishing "
 "to license under a variant of a SPDX license not contained verbatim in [."
 "filename]#LICENSE/# cannot use the detached option and must specify the "
 "license explicitly."
-msgstr ""
+msgstr "对于文本略有差异的许可证，SPDX 提供了匹配指南。本处无需使用这些指南。希望采用 SPDX 许可证变体授权，但该变体未在 [.filename]#LICENSE/# 中逐字收录的贡献者，不能使用独立许可证选项，必须明确指定许可证。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Files without Copyright or any License Marking"
-msgstr ""
+msgstr "没有版权或许可证标记的文件"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:323
+#, fuzzy
 msgid ""
 "Some files cannot have suitable comments added to them.  In such cases, a "
 "license may be found in [.filename]#file.ext.license#.  For example, a file "
 "named [.filename]#foo.jpg# may have a license in [.filename]#foo.jpg."
 "license#, following the REUSE Software conventions."
-msgstr ""
+msgstr "有些文件无法添加合适的注释。在这种情况下，许可证可能位于 [.filename]#file.ext.license# 中。例如，名为 [.filename]#foo.jpg# 的文件，其许可证可能位于 [.filename]#foo.jpg.license# 中，遵循 REUSE Software 约定。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:326
+#, fuzzy
 msgid ""
 "Files created by the project that lack a copyright notice are understood to "
 "fall under the blanket copyright and licensing in [.filename]#COPYRIGHT#.  "
 "Either the file is a mere recitation of facts, not protectable by Copyright "
 "Law, or the content is so trivial as to not warrant the overhead of an "
 "explicit license."
-msgstr ""
+msgstr "由项目创建且没有版权声明的文件，视为适用 [.filename]#COPYRIGHT# 中的通用版权和许可条款。这类文件要么只是对事实的陈述，不受版权法保护，要么内容过于简单，不值得承担明确指定许可证的额外负担。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:329
+#, fuzzy
 msgid ""
 "Files that lack marking and have more than a trivial amount of copyrightable "
 "material, or whose author believes them to be improperly marked, should be "
 "brought to the attention of the FreeBSD core team.  It is the strong policy "
 "of the FreeBSD Project to comply with all appropriate licenses."
-msgstr ""
+msgstr "缺少标记且包含大量可受版权保护材料，或作者认为标记不当的文件，应提交给 FreeBSD 核心团队处理。FreeBSD 项目的坚定政策是遵守所有适用的许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:331
+#, fuzzy
 msgid ""
 "In the future, all such files will be marked explicitly, or follow the REUSE "
 "Software [.filename]#.license# convention."
-msgstr ""
+msgstr "未来，所有此类文件都将明确标记，或遵循 REUSE Software 的 [.filename]#.license# 约定。"
 
 #. type: Title ===
 #: documentation/content/en/articles/license-guide/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SPDX-License-Identifier Expressions"
-msgstr ""
+msgstr "SPDX-License-Identifier 表达式"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:340
+#, fuzzy
 msgid ""
 "An 'SPDX License expression' is used in two contexts in the FreeBSD software "
 "collection.  First, its full form is used for files that have explicit "
@@ -810,10 +894,11 @@ msgid ""
 "expressions may be used.  Second, in a restricted form described above, it "
 "is used to denote the actual license for a given file.  In the second "
 "context, only a subset of this expression is allowed by the project."
-msgstr ""
+msgstr "在 FreeBSD 软件集合中，'SPDX 许可证表达式'用于两种场景。第一种是完整形式：用于文件内含明确许可证声明、并附有概述性 SPDX-License-Identifier 表达式的情况。在此场景中，可以使用这些表达式的全部功能。第二种是以上所述的受限形式，用于表示特定文件的实际许可证。在第二种场景中，项目仅允许使用该表达式的一个子集。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:344
+#, fuzzy
 msgid ""
 "An `SPDX License sub-expression` is either an SPDX short form license "
 "identifier from the https://spdx.org/licenses/[SPDX License List], or the "
@@ -824,10 +909,11 @@ msgid ""
 "The https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/"
 "[full specification of expressions] spells out all the details and takes "
 "precedence when it conflicts with the simplified treatment of this section."
-msgstr ""
+msgstr "`SPDX 许可证子表达式`可以是 link:https://spdx.org/licenses/[SPDX 许可证列表]中的 SPDX 短格式许可证标识符；如果适用 link:https://spdx.org/licenses/exceptions-index.html[许可证例外]，也可以是由 \"WITH\" 分隔的两个 SPDX 短格式许可证标识符的组合。适用多个许可证时，表达式由关键字 \"AND\"、\"OR\" 分隔子表达式，并以 \"(\" 和 \")\" 括起。 link:https://spdx.github.io/spdx-spec/appendix-IV-SPDX-license-expressions/[表达式完整规范]详述了所有细节；如与本节的简化说明冲突，应以完整规范为准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:352
+#, fuzzy
 msgid ""
 "Some license identifiers, like [L]GPL, have the option to use only that "
 "version, or any later version.  SPDX defines the suffix `-or-later` to mean "
@@ -838,61 +924,65 @@ msgid ""
 "mean `-or-later`.  New files in FreeBSD should not use these two "
 "conventions.  Old files that use this convention should be converted as "
 "appropriate."
-msgstr ""
+msgstr "某些许可证标识符（如 [L]GPL）允许仅使用特定版本，或使用该版本及任何后续版本。SPDX 将后缀 `-or-later` 定义为该许可证版本或后续版本，将 `-only` 定义为仅限该文件的特定版本。过去有一种约定是不添加后缀（含义与新的 '-only' 后缀相同，但常被误认为是 `-or-later`）。此外，添加 `+` 后缀原本表示 `-or-later`。FreeBSD 中的新文件不应采用这两种约定。应视情况转换仍使用这些约定的旧文件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      // SPDX-License-Identifier: GPL-2.0-only\n"
 "      // SPDX-License-Identifier: LGPL-2.1-or-later\n"
-msgstr ""
+msgstr "      // SPDX-License-Identifier: GPL-2.0-only\n      // SPDX-License-Identifier: LGPL-2.1-or-later\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:361
+#, fuzzy
 msgid ""
 "`WITH` should be used when a license modifier is needed.  In the FreeBSD "
 "project, a number of files from LLVM have an exception to the Apache 2.0 "
 "license:"
-msgstr ""
+msgstr "需要许可证修饰符时，应使用 `WITH`。在 FreeBSD 项目中，许多来自 LLVM 的文件适用 Apache 2.0 许可证的例外："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "      // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception\n"
-msgstr ""
+msgstr "      // SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:369
+#, fuzzy
 msgid ""
 "https://spdx.org/licenses/exceptions-index.html[Exception tags] are managed "
 "by SPDX.  License exceptions can only be applied to certain licenses, as "
 "specified in the exception."
-msgstr ""
+msgstr "link:https://spdx.org/licenses/exceptions-index.html[例外标签]由 SPDX 管理。许可证例外只能用于该例外指定的某些许可证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:372
+#, fuzzy
 msgid ""
 "`OR` should be used if the file has a choice of license and one license is "
 "selected.  For example, some dtsi files are available under dual licenses:"
-msgstr ""
+msgstr "如果文件可选择许可证且已选定其中一个许可证，应使用 `OR`。例如，一些 dtsi 文件采用双重许可："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "      // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause\n"
-msgstr ""
+msgstr "      // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/license-guide/_index.adoc:380
+#, fuzzy
 msgid ""
 "`AND` should be used if the file has multiple licenses whose terms all apply "
 "to use the file.  For example, if code has been incorporated by several "
 "projects, each with their own license:"
-msgstr ""
+msgstr "如果文件适用多个许可证，且使用该文件时必须遵守所有许可证的条款，应使用 `AND`。例如，代码由多个项目合并而来，且每个项目都有自己的许可证："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/license-guide/_index.adoc:384
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "      // SPDX-License-Identifier: BSD-2-Clause AND MIT\n"
-msgstr ""
+msgstr "      // SPDX-License-Identifier: BSD-2-Clause AND MIT\n"

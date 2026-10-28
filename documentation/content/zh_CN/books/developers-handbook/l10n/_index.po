@@ -17,30 +17,31 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Localization and Internationalization - L10N and I18N in FreeBSD"
-msgstr ""
+msgstr "本地化与国际化——FreeBSD 中的 L10N 和 I18N"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 4. Localization and Internationalization - L10N and I18N"
-msgstr ""
+msgstr "第 4 章　本地化与国际化——L10N 和 I18N"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Localization and Internationalization - L10N and I18N"
-msgstr ""
+msgstr "本地化与国际化——L10N 和 I18N"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Programming I18N Compliant Applications"
-msgstr ""
+msgstr "编写符合 I18N 要求的应用程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:59
+#, fuzzy
 msgid ""
 "To make your application more useful for speakers of other languages, we "
 "hope that you will program I18N compliant.  The GNU gcc compiler and GUI "
@@ -48,71 +49,77 @@ msgid ""
 "Making a program I18N compliant is very easy.  It allows contributors to "
 "port your application to other languages quickly.  Refer to the library "
 "specific I18N documentation for more details."
-msgstr ""
+msgstr "为了让您的应用程序更好地服务于使用其他语言的人群，我们希望您在编程时遵循 I18N 规范。GNU gcc 编译器以及 QT、GTK 等 GUI 库通过对字符串进行特殊处理来支持 I18N。让程序符合 I18N 规范非常简单，也能让贡献者快速将您的应用程序移植到其他语言。有关详情，请参阅特定库的 I18N 文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:63
+#, fuzzy
 msgid ""
 "In contrast with common perception, I18N compliant code is easy to write.  "
 "Usually, it only involves wrapping your strings with library specific "
 "functions.  In addition, please be sure to allow for wide or multibyte "
 "character support."
-msgstr ""
+msgstr "与普遍看法相反，编写符合 I18N 规范的代码并不难。通常只需使用特定库的函数包装字符串即可。此外，请确保支持宽字符或多字节字符。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Call to Unify the I18N Effort"
-msgstr ""
+msgstr "携手推进 I18N 工作"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:69
+#, fuzzy
 msgid ""
 "It has come to our attention that the individual I18N/L10N efforts for each "
 "country has been repeating each others' efforts.  Many of us have been "
 "reinventing the wheel repeatedly and inefficiently.  We hope that the "
 "various major groups in I18N could congregate into a group effort similar to "
 "the Core Team's responsibility."
-msgstr ""
+msgstr "我们注意到，各国分别开展的 I18N/L10N 工作不断重复彼此的成果。我们中的许多人一再低效地重复造轮子。我们希望 I18N 领域的各个主要团体能够携手合作，组成一个类似 Core Team、共同承担责任的团队。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:72
+#, fuzzy
 msgid ""
 "Currently, we hope that, when you write or port I18N programs, you would "
 "send it out to each country's related FreeBSD mailing list for testing.  In "
 "the future, we hope to create applications that work in all the languages "
 "out-of-the-box without dirty hacks."
-msgstr ""
+msgstr "目前，我们希望您在编写或移植 I18N 程序时，将程序发送到各国相关的 FreeBSD 邮件列表进行测试。将来，我们希望创建开箱即用、支持所有语言的应用程序，而无需使用不规范的变通方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:75
+#, fuzzy
 msgid ""
 "The {freebsd-i18n} has been established.  If you are an I18N/L10N developer, "
 "please send your comments, ideas, questions, and anything you deem related "
 "to it."
-msgstr ""
+msgstr "{freebsd-i18n} 邮件列表已经成立。如果您是 I18N/L10N 开发者，请将您认为与此相关的意见、想法、问题及其他内容发送到该列表。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Perl and Python"
-msgstr ""
+msgstr "Perl 和 Python"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:80
+#, fuzzy
 msgid ""
 "Perl and Python have I18N and wide character handling libraries.  Please use "
 "them for I18N compliance."
-msgstr ""
+msgstr "Perl 和 Python 都提供 I18N 和宽字符处理库。请使用这些库来确保符合 I18N 规范。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Localized Messages with POSIX.1 Native Language Support (NLS)"
-msgstr ""
+msgstr "使用 POSIX.1 原生语言支持（NLS）本地化消息"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:86
+#, fuzzy
 msgid ""
 "Beyond the basic I18N functions, like supporting various input encodings or "
 "supporting national conventions, such as the different decimal separators, "
@@ -120,16 +127,17 @@ msgid ""
 "to the output by the various programs.  A common way of doing this is using "
 "the POSIX.1 NLS functions, which are provided as a part of the FreeBSD base "
 "system."
-msgstr ""
+msgstr "除了支持各种输入编码或国家惯例（例如不同的小数分隔符）等基本 I18N 功能外，在更高层次上，还可以将各个程序输出的消息本地化。一种常见做法是使用 POSIX.1 NLS 函数，这些函数由 FreeBSD 基本系统提供。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Organizing Localized Messages into Catalog Files"
-msgstr ""
+msgstr "将本地化消息组织到目录文件中"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:94
+#, fuzzy
 msgid ""
 "POSIX.1 NLS is based on catalog files, which contain the localized messages "
 "in the desired encoding.  The messages are organized into sets and each "
@@ -138,39 +146,42 @@ msgid ""
 "localized messages for, followed by the `.msg` extension.  For instance, the "
 "Hungarian messages for ISO8859-2 encoding should be stored in a file called "
 "[.filename]#hu_HU.ISO8859-2#."
-msgstr ""
+msgstr "POSIX.1 NLS 基于目录文件，这些文件包含采用所需编码的本地化消息。消息按集合组织，每条消息由其所属集合中的一个整数编号标识。目录文件通常以其所含本地化消息对应的区域设置命名，并使用 `.msg` 扩展名。例如，采用 ISO8859-2 编码的匈牙利语消息应存储在名为 [.filename]#hu_HU.ISO8859-2# 的文件中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:99
+#, fuzzy
 msgid ""
 "These catalog files are common text files that contain the numbered "
 "messages.  It is possible to write comments by starting the line with a `$` "
 "sign.  Set boundaries are also separated by special comments, where the "
 "keyword `set` must directly follow the `$` sign.  The `set` keyword is then "
 "followed by the set number. For example:"
-msgstr ""
+msgstr "这些目录文件是包含编号消息的普通文本文件。行首加上 `$` 符号即可添加注释。集合边界也由特殊注释分隔，其中关键字 `set` 必须紧跟在 `$` 符号之后。随后是集合编号。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$set 1\n"
-msgstr ""
+msgstr "$set 1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:107
+#, fuzzy
 msgid ""
 "The actual message entries start with the message number and followed by the "
 "localized message.  The well-known modifiers from man:printf[3] are accepted:"
-msgstr ""
+msgstr "实际的消息条目以消息编号开头，后面跟着本地化消息。支持 man:printf[3] 中广为人知的格式说明符："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "15 \"File not found: %s\\n\"\n"
-msgstr ""
+msgstr "15 \"File not found: %s\\n\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:117
+#, fuzzy
 msgid ""
 "The language catalog files have to be compiled into a binary form before "
 "they can be opened from the program.  This conversion is done with the man:"
@@ -178,16 +189,17 @@ msgid ""
 "catalog and its further arguments are the input catalogs.  The localized "
 "messages can also be organized into more catalog files and then all of them "
 "can be processed with man:gencat[1]."
-msgstr ""
+msgstr "语言目录文件必须先编译为二进制格式，程序才能打开它们。此转换由 man:gencat[1] 工具完成。它的第一个参数是编译后的目录文件名，其余参数是输入目录文件。本地化消息也可以组织到多个目录文件中，再由 man:gencat[1] 一并处理。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using the Catalog Files from the Source Code"
-msgstr ""
+msgstr "在源代码中使用目录文件"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:130
+#, fuzzy
 msgid ""
 "Using the catalog files is simple.  To use the related functions, [."
 "filename]#nl_types.h# must be included.  Before using a catalog, it has to "
@@ -199,110 +211,118 @@ msgid ""
 "usr/local/share/nls/locale/catname#, where `locale` is the locale set and "
 "`catname` is the catalog name being discussed.  The second parameter is a "
 "constant, which can have two values:"
-msgstr ""
+msgstr "使用目录文件很简单。要使用相关函数，必须包含 [.filename]#nl_types.h#。使用目录前，必须先通过 man:catopen[3] 打开它。该函数接受两个参数。第一个参数是已安装并编译的目录名称。通常使用程序名，例如 grep。查找编译后的目录文件时会使用这个名称。man:catopen[3] 会在 [.filename]#/usr/share/nls/locale/catname# 和 [.filename]#/usr/local/share/nls/locale/catname# 中查找该文件，其中 `locale` 是区域设置，`catname` 是此处所述的目录名称。第二个参数是一个常量，可以取以下两个值："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:132
+#, fuzzy
 msgid ""
 "`NL_CAT_LOCALE`, which means that the used catalog file will be based on "
 "`LC_MESSAGES`."
-msgstr ""
+msgstr "`NL_CAT_LOCALE`，表示所使用的目录文件将根据 `LC_MESSAGES` 选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:133
+#, fuzzy
 msgid "`0`, which means that `LANG` has to be used to open the proper catalog."
-msgstr ""
+msgstr "`0`，表示必须使用 `LANG` 打开相应的目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:136
+#, fuzzy
 msgid ""
 "The man:catopen[3] call returns a catalog identifier of type `nl_catd`.  "
 "Please refer to the manual page for a list of possible returned error codes."
-msgstr ""
+msgstr "man:catopen[3] 调用会返回一个 `nl_catd` 类型的目录标识符。可能的错误代码列表请参阅手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:139
+#, fuzzy
 msgid ""
 "After opening a catalog man:catgets[3] can be used to retrieve a message.  "
 "The first parameter is the catalog identifier returned by man:catopen[3], "
 "the second one is the number of the set, the third one is the number of the "
 "messages, and the fourth one is a fallback message, which will be returned "
 "if the requested message cannot be retrieved from the catalog file."
-msgstr ""
+msgstr "打开目录后，可以使用 man:catgets[3] 获取消息。第一个参数是 man:catopen[3] 返回的目录标识符，第二个参数是集合编号，第三个参数是消息编号，第四个参数是备用消息；如果无法从目录文件中获取所请求的消息，就会返回该备用消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:141
+#, fuzzy
 msgid ""
 "After using the catalog file, it must be closed by calling man:catclose[3], "
 "which has one argument, the catalog id."
-msgstr ""
+msgstr "使用完目录文件后，必须调用 man:catclose[3] 将其关闭。该函数接受一个参数，即目录标识符。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Practical Example"
-msgstr ""
+msgstr "实践示例"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:146
+#, fuzzy
 msgid ""
 "The following example will demonstrate an easy solution on how to use NLS "
 "catalogs in a flexible way."
-msgstr ""
+msgstr "以下示例将展示一种灵活使用 NLS 目录的简单方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:148
+#, fuzzy
 msgid ""
 "The below lines need to be put into a common header file of the program, "
 "which is included into all source files where localized messages are "
 "necessary:"
-msgstr ""
+msgstr "将以下几行放入程序的公共头文件中，并在需要本地化消息的所有源文件中包含该文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#ifdef WITHOUT_NLS\n"
 "#define getstr(n)\t nlsstr[n]\n"
 "#else\n"
 "#include <nl_types.h>\n"
-msgstr ""
+msgstr "#ifdef WITHOUT_NLS\n#define getstr(n)\t nlsstr[n]\n#else\n#include <nl_types.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "extern nl_catd\t\t catalog;\n"
 "#define getstr(n)\t catgets(catalog, 1, n, nlsstr[n])\n"
 "#endif\n"
-msgstr ""
+msgstr "extern nl_catd\t\t catalog;\n#define getstr(n)\t catgets(catalog, 1, n, nlsstr[n])\n#endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "extern char\t\t*nlsstr[];\n"
-msgstr ""
+msgstr "extern char\t\t*nlsstr[];\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:164
+#, fuzzy
 msgid ""
 "Next, put these lines into the global declaration part of the main source "
 "file:"
-msgstr ""
+msgstr "接下来，将以下几行放入主源文件的全局声明部分："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#ifndef WITHOUT_NLS\n"
 "#include <nl_types.h>\n"
 "nl_catd\t catalog;\n"
 "#endif\n"
-msgstr ""
+msgstr "#ifndef WITHOUT_NLS\n#include <nl_types.h>\nnl_catd\t catalog;\n#endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Default messages to use when NLS is disabled or no catalog\n"
@@ -313,85 +333,89 @@ msgid ""
 "/* 1*/  \"some random message\",\n"
 "/* 2*/  \"some other message\"\n"
 "};\n"
-msgstr ""
+msgstr "/*\n * Default messages to use when NLS is disabled or no catalog\n * is found.\n */\nchar    *nlsstr[] = {\n        \"\",\n/* 1*/  \"some random message\",\n/* 2*/  \"some other message\"\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:184
+#, fuzzy
 msgid ""
 "Next come the real code snippets, which open, read, and close the catalog:"
-msgstr ""
+msgstr "接下来是打开、读取和关闭目录的实际代码片段："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#ifndef WITHOUT_NLS\n"
 "\tcatalog = catopen(\"myapp\", NL_CAT_LOCALE);\n"
 "#endif\n"
-msgstr ""
+msgstr "#ifndef WITHOUT_NLS\n\tcatalog = catopen(\"myapp\", NL_CAT_LOCALE);\n#endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:192
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "...\n"
-msgstr ""
+msgstr "...\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "printf(getstr(1));\n"
-msgstr ""
+msgstr "printf(getstr(1));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#ifndef WITHOUT_NLS\n"
 "\tcatclose(catalog);\n"
 "#endif\n"
-msgstr ""
+msgstr "#ifndef WITHOUT_NLS\n\tcatclose(catalog);\n#endif\n"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reducing Strings to Localize"
-msgstr ""
+msgstr "减少需要本地化的字符串"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:206
+#, fuzzy
 msgid ""
 "There is a good way of reducing the strings that need to be localized by "
 "using libc error messages.  This is also useful to just avoid duplication "
 "and provide consistent error messages for the common errors that can be "
 "encountered by a great many of programs."
-msgstr ""
+msgstr "使用 libc 错误消息可以减少需要本地化的字符串。这也有助于避免重复，并为许多程序可能遇到的常见错误提供一致的错误消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:208
+#, fuzzy
 msgid "First, here is an example that does not use libc error messages:"
-msgstr ""
+msgstr "首先，来看一个不使用 libc 错误消息的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <err.h>\n"
 "...\n"
 "if (!S_ISDIR(st.st_mode))\n"
 "\terrx(1, \"argument is not a directory\");\n"
-msgstr ""
+msgstr "#include <err.h>\n...\nif (!S_ISDIR(st.st_mode))\n\terrx(1, \"argument is not a directory\");\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:218
+#, fuzzy
 msgid ""
 "This can be transformed to print an error message by reading `errno` and "
 "printing an error message accordingly:"
-msgstr ""
+msgstr "可以改为读取 `errno`，并据此打印错误消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <err.h>\n"
 "#include <errno.h>\n"
@@ -400,43 +424,46 @@ msgid ""
 "\terrno = ENOTDIR;\n"
 "\terr(1, NULL);\n"
 "}\n"
-msgstr ""
+msgstr "#include <err.h>\n#include <errno.h>\n...\nif (!S_ISDIR(st.st_mode)) {\n\terrno = ENOTDIR;\n\terr(1, NULL);\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:233
+#, fuzzy
 msgid ""
 "In this example, the custom string is eliminated, thus translators will have "
 "less work when localizing the program and users will see the usual \"Not a "
 "directory\" error message when they encounter this error.  This message will "
 "probably seem more familiar to them.  Please note that it was necessary to "
 "include [.filename]#errno.h# in order to directly access `errno`."
-msgstr ""
+msgstr "在此示例中，自定义字符串被省去了，因此程序本地化时译者的工作量更少，用户遇到此错误时也会看到常见的“Not a directory”（不是目录）错误消息。这条消息对他们来说可能也更熟悉。请注意，要直接访问 `errno`，必须包含 [.filename]#errno.h#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:235
+#, fuzzy
 msgid ""
 "It is worth to note that there are cases when `errno` is set automatically "
 "by a preceding call, so it is not necessary to set it explicitly:"
-msgstr ""
+msgstr "值得注意的是，有时前一个调用会自动设置 `errno`，因此无需显式设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <err.h>\n"
 "...\n"
 "if ((p = malloc(size)) == NULL)\n"
 "\terr(1, NULL);\n"
-msgstr ""
+msgstr "#include <err.h>\n...\nif ((p = malloc(size)) == NULL)\n\terr(1, NULL);\n"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Making use of [.filename]#bsd.nls.mk#"
-msgstr ""
+msgstr "使用 [.filename]#bsd.nls.mk#"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:250
+#, fuzzy
 msgid ""
 "Using the catalog files requires few repeatable steps, such as compiling the "
 "catalogs and installing them to the proper location.  In order to simplify "
@@ -444,10 +471,11 @@ msgid ""
 "is not necessary to include [.filename]#bsd.nls.mk# explicitly, it is pulled "
 "in from the common Makefiles, such as [.filename]#bsd.prog.mk# or [."
 "filename]#bsd.lib.mk#."
-msgstr ""
+msgstr "使用目录文件需要完成一些重复性步骤，例如编译目录并将其安装到正确的位置。为了进一步简化这一过程，[.filename]#bsd.nls.mk# 提供了一些宏。无需显式包含 [.filename]#bsd.nls.mk#，它会由 [.filename]#bsd.prog.mk# 或 [.filename]#bsd.lib.mk# 等通用 Makefile 引入。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:254
+#, fuzzy
 msgid ""
 "Usually it is enough to define `NLSNAME`, which should have the catalog name "
 "mentioned as the first argument of man:catopen[3] and list the catalog files "
@@ -455,11 +483,11 @@ msgid ""
 "possible to disable NLS when used with the code examples before.  The "
 "`WITHOUT_NLS` man:make[1] variable has to be defined in order to build the "
 "program without NLS support."
-msgstr ""
+msgstr "通常只需定义 `NLSNAME`，其值应为 man:catopen[3] 第一个参数中提到的目录名称；然后在 `NLS` 中列出目录文件，但不包含 `.msg` 扩展名。以下示例展示了如何结合前面的代码示例禁用 NLS。要在不支持 NLS 的情况下构建程序，必须定义 `WITHOUT_NLS` man:make[1] 变量。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".if !defined(WITHOUT_NLS)\n"
 "NLS=\tes_ES.ISO8859-1\n"
@@ -468,10 +496,11 @@ msgid ""
 ".else\n"
 "CFLAGS+=\t-DWITHOUT_NLS\n"
 ".endif\n"
-msgstr ""
+msgstr ".if !defined(WITHOUT_NLS)\nNLS=\tes_ES.ISO8859-1\nNLS+=\thu_HU.ISO8859-2\nNLS+=\tpt_BR.ISO8859-1\n.else\nCFLAGS+=\t-DWITHOUT_NLS\n.endif\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/l10n/_index.adoc:271
+#, fuzzy
 msgid ""
 "Conventionally, the catalog files are placed under the [.filename]#nls# "
 "subdirectory and this is the default behavior of [.filename]#bsd.nls.mk#.  "
@@ -483,4 +512,4 @@ msgid ""
 "thus they are not described here.  For further information on [."
 "filename]#bsd.nls.mk#, please refer to the file itself, it is short and easy "
 "to understand."
-msgstr ""
+msgstr "按照惯例，目录文件放在 [.filename]#nls# 子目录下，这也是 [.filename]#bsd.nls.mk# 的默认行为。不过，可以通过 `NLSSRCDIR` man:make[1] 变量覆盖目录文件的位置。预编译目录文件的默认名称也遵循前面提到的命名约定。可以通过设置 `NLSNAME` 变量覆盖该名称。还有其他选项可以微调目录文件的处理方式，但通常不需要使用，因此此处不作介绍。有关 [.filename]#bsd.nls.mk# 的更多信息，请参阅该文件本身；它简短易懂。"

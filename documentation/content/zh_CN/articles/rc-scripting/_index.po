@@ -19,9 +19,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A guide to writing new rc.d scripts and understanding those already written"
-msgstr ""
+msgstr "编写新的 rc.d 脚本并理解现有脚本的指南"
 
 #. type: Title =
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1
@@ -37,6 +37,7 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:48
+#, fuzzy
 msgid ""
 "Beginners may find it difficult to relate the facts from the formal "
 "documentation on the BSD [.filename]#rc.d# framework with the practical "
@@ -45,7 +46,7 @@ msgid ""
 "suited for each case, and discuss how they work.  Such an examination should "
 "provide reference points for further study of the design and efficient "
 "application of [.filename]#rc.d#."
-msgstr ""
+msgstr "初学者可能难以将正式文档中关于 BSD [.filename]#rc.d# 框架的内容与 [.filename]#rc.d# 脚本编写的实际任务联系起来。本文将介绍几个复杂程度逐步增加的典型案例，展示适用于各个案例的 [.filename]#rc.d# 功能，并讨论这些功能的工作方式。通过这样的考察，读者可以找到进一步研究 [.filename]#rc.d# 设计及其高效应用的切入点。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:50
@@ -60,6 +61,7 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:60
+#, fuzzy
 msgid ""
 "The historical BSD had a monolithic startup script, [.filename]#/etc/rc#.  "
 "It was invoked by man:init[8] at system boot time and performed all userland "
@@ -68,10 +70,11 @@ msgid ""
 "tasks was not the same in every system; admins needed to customize it.  With "
 "few exceptions, [.filename]#/etc/rc# had to be modified, and true hackers "
 "liked it."
-msgstr ""
+msgstr "历史上的 BSD 使用一个单体启动脚本 [.filename]#/etc/rc#。系统启动时，man:init[8] 会调用该脚本，执行多用户运行所需的所有用户空间任务：检查并挂载文件系统、配置网络、启动守护进程等。不同系统中的具体任务列表并不相同，管理员需要对其进行定制。除少数例外情况外，都必须修改 [.filename]#/etc/rc#，而真正的黑客对此乐此不疲。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:66
+#, fuzzy
 msgid ""
 "The real problem with the monolithic approach was that it provided no "
 "control over the individual components started from [.filename]#/etc/rc#.  "
@@ -83,10 +86,11 @@ msgid ""
 "restart consisted of more than one daemon or demanded additional actions.  "
 "In a few words, the single script failed to fulfil what scripts are for: to "
 "make the system admin's life easier."
-msgstr ""
+msgstr "单体方式的真正问题在于，它无法控制从 [.filename]#/etc/rc# 启动的各个组件。例如，无法通过 [.filename]#/etc/rc# 重启单个守护进程。系统管理员必须手动找到守护进程，终止它，等待它真正退出，然后在 [.filename]#/etc/rc# 中查找启动参数，最后输入完整的命令行来重新启动守护进程。如果要重启的服务由多个守护进程组成，或者需要执行其他操作，任务就会变得更加困难，也更容易出错。简而言之，这个单一脚本没有实现脚本的用途：让系统管理员的工作更轻松。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:73
+#, fuzzy
 msgid ""
 "Later there was an attempt to split out some parts of [.filename]#/etc/rc# "
 "for the sake of starting the most important subsystems separately.  The "
@@ -100,10 +104,11 @@ msgid ""
 "different stages of system startup.  However, as the startup tasks grew "
 "diverse and sophisticated, the \"quasi-modular\" approach became even more "
 "of a drag than the monolithic [.filename]#/etc/rc# had been."
-msgstr ""
+msgstr "后来，为了分别启动最重要的子系统，人们尝试将 [.filename]#/etc/rc# 的一部分拆分出来。一个著名的例子是用于启动网络的 [.filename]#/etc/netstart#。它确实允许系统在单用户模式下访问网络，但无法很好地融入自动启动流程，因为其中部分代码必须与本质上无关的网络操作交错执行。因此，[.filename]#/etc/netstart# 后来演变为 [.filename]#/etc/rc.network#。后者已不再是普通脚本，而是由大量错综复杂的 man:sh[1] 函数组成，在系统启动的不同阶段由 [.filename]#/etc/rc# 调用。然而，随着启动任务日益多样和复杂，这种“准模块化”方式比单体的 [.filename]#/etc/rc# 更加笨重。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:81
+#, fuzzy
 msgid ""
 "Without a clean and well-designed framework, the startup scripts had to bend "
 "over backwards to satisfy the needs of rapidly developing BSD-based "
@@ -114,10 +119,11 @@ msgid ""
 "refers to the location of system scripts for individual services, which is "
 "in [.filename]#/etc/rc.d#.  Soon we will learn about more components of the "
 "[.filename]#rc.d# system and see how the individual scripts are invoked."
-msgstr ""
+msgstr "由于缺少整洁且设计良好的框架，启动脚本不得不费尽周折，才能满足基于 BSD 的操作系统快速发展所带来的需求。人们终于意识到，要实现细粒度且可扩展的 [.filename]#rc# 系统，还需要采取更多措施。于是，BSD [.filename]#rc.d# 诞生了。公认的创始者是 Luke Mewburn 和 NetBSD 社区。后来，它被引入 FreeBSD。它的名称指的是各项服务对应的系统脚本所在的位置，即 [.filename]#/etc/rc.d#。接下来，我们将了解 [.filename]#rc.d# 系统的更多组件，并看看各个脚本是如何被调用的。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:92
+#, fuzzy
 msgid ""
 "The basic ideas behind BSD [.filename]#rc.d# are _fine modularity_ and "
 "__code reuse__.  _Fine modularity_ means that each basic \"service\" such as "
@@ -137,10 +143,11 @@ msgid ""
 "etc/rc# to run the small scripts orderly with respect to dependencies "
 "between them.  It can help [.filename]#/etc/rc.shutdown#, too, because the "
 "proper order for the shutdown sequence is opposite to that of startup."
-msgstr ""
+msgstr "BSD [.filename]#rc.d# 背后的基本理念是__细粒度模块化__和__代码复用__。__细粒度模块化__是指，每项基本“服务”（例如系统守护进程或基础启动任务）都有自己的 man:sh[1] 脚本，能够启动、停止、重新加载该服务并检查其状态。脚本的命令行参数决定要执行的具体操作。[.filename]#/etc/rc# 脚本仍负责驱动系统启动，但现在它只需依次调用各个小脚本，并传入 `start` 参数。通过对同一组脚本使用 `stop` 参数，也可以轻松执行关机任务；[.filename]#/etc/rc.shutdown# 就是这样做的。请注意，这与 Unix 的方式十分相似：使用一组小型、专用的工具，尽可能出色地完成各自的任务。__代码复用__是指，将常见操作实现为 man:sh[1] 函数，并集中放在 [.filename]#/etc/rc.subr# 中。这样，典型脚本只需几行 man:sh[1] 代码。最后，man:rcorder[8] 是 [.filename]#rc.d# 框架的重要组成部分，它帮助 [.filename]#/etc/rc# 根据脚本之间的依赖关系，按序运行这些小脚本。它也能帮助 [.filename]#/etc/rc.shutdown#，因为正确的关机顺序与启动顺序相反。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:100
+#, fuzzy
 msgid ""
 "The BSD [.filename]#rc.d# design is described in crossref:rc-"
 "scripting[lukem, the original article by Luke Mewburn], and the [."
@@ -155,138 +162,149 @@ msgid ""
 "into the [.filename]#rc.d# realm.  Neither is this article a replacement for "
 "the relevant manual pages.  Do not hesitate to refer to them for more formal "
 "and complete documentation while reading this article."
-msgstr ""
+msgstr "BSD [.filename]#rc.d# 的设计见 crossref:rc-scripting[lukem, Luke Mewburn 撰写的原始文章]，而 [.filename]#rc.d# 的各个组件则在 crossref:rc-scripting[manpages, 相应的手册页]中有详细说明。不过，对于刚接触 [.filename]#rc.d# 的人来说，如何将众多零散的部分组合起来，为特定任务编写风格良好的脚本，可能并不显而易见。因此，本文将尝试以不同的方式介绍 [.filename]#rc.d#，说明在若干典型案例中应使用哪些功能，以及使用这些功能的原因。请注意，本文不是操作指南，因为我们的目的不是提供现成的方案，而是为读者进入 [.filename]#rc.d# 领域提供几个简单的切入点。本文也不能替代相关手册页。阅读本文时，请随时查阅手册页，以获取更正式、更完整的文档。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:104
+#, fuzzy
 msgid ""
 "There are prerequisites to understanding this article.  First of all, you "
 "should be familiar with the man:sh[1] scripting language to master [."
 "filename]#rc.d#.  In addition, you should know how the system performs "
 "userland startup and shutdown tasks, which is described in man:rc[8]."
-msgstr ""
+msgstr "理解本文需要具备一些基础知识。首先，要掌握 [.filename]#rc.d#，你应熟悉 man:sh[1] 脚本语言。此外，你还应了解系统如何执行用户空间的启动和关机任务，相关内容见 man:rc[8]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:107
+#, fuzzy
 msgid ""
 "This article focuses on the FreeBSD branch of [.filename]#rc.d#.  "
 "Nevertheless, it may be useful to NetBSD developers, too, because the two "
 "branches of BSD [.filename]#rc.d# not only share the same design but also "
 "stay similar in their aspects visible to script authors."
-msgstr ""
+msgstr "本文重点介绍 FreeBSD 分支的 [.filename]#rc.d#。不过，本文对 NetBSD 开发者也可能有用，因为 BSD [.filename]#rc.d# 的两个分支不仅采用相同的设计，在脚本作者可见的方面也保持相似。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Outlining the task"
-msgstr ""
+msgstr "明确任务"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:113
+#, fuzzy
 msgid ""
 "A little consideration before starting `$EDITOR` will not hurt.  To write a "
 "well-tempered [.filename]#rc.d# script for a system service, we should be "
 "able to answer the following questions first:"
-msgstr ""
+msgstr "启动 `$EDITOR` 之前稍作考虑并无坏处。要为系统服务编写风格良好的 [.filename]#rc.d# 脚本，我们应先回答以下问题："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:115
+#, fuzzy
 msgid "Is the service mandatory or optional?"
-msgstr ""
+msgstr "该服务是必需的还是可选的？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:116
+#, fuzzy
 msgid ""
 "Will the script serve a single program, e.g., a daemon, or perform more "
 "complex actions?"
-msgstr ""
+msgstr "该脚本是用于单个程序（例如守护进程），还是要执行更复杂的操作？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:117
+#, fuzzy
 msgid "Which other services will our service depend on, and vice versa?"
-msgstr ""
+msgstr "我们的服务依赖于哪些其他服务，反过来又有哪些服务依赖于它？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:119
+#, fuzzy
 msgid ""
 "From the examples that follow we will see why it is important to know the "
 "answers to these questions."
-msgstr ""
+msgstr "从接下来的示例中，我们会看到为什么了解这些问题的答案很重要。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A dummy script"
-msgstr ""
+msgstr "一个虚设脚本"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/rc-scripting/_index.adoc:124
+#, fuzzy
 msgid ""
 "The following script just emits a message each time the system boots up:"
-msgstr ""
+msgstr "下面的脚本只会在系统每次启动时输出一条消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#!/bin/sh <.>\n"
-msgstr ""
+msgstr "#!/bin/sh <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ". /etc/rc.subr <.>\n"
-msgstr ""
+msgstr ". /etc/rc.subr <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=\"dummy\" <.>\n"
 "start_cmd=\"${name}_start\" <.>\n"
 "stop_cmd=\":\" <.>\n"
-msgstr ""
+msgstr "name=\"dummy\" <.>\nstart_cmd=\"${name}_start\" <.>\nstop_cmd=\":\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dummy_start() <.>\n"
 "{\n"
 "\techo \"Nothing started.\"\n"
 "}\n"
-msgstr ""
+msgstr "dummy_start() <.>\n{\n\techo \"Nothing started.\"\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "load_rc_config $name <.>\n"
 "run_rc_command \"$1\" <.>\n"
-msgstr ""
+msgstr "load_rc_config $name <.>\nrun_rc_command \"$1\" <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:145
+#, fuzzy
 msgid "Things to note are:"
-msgstr ""
+msgstr "需要注意以下几点："
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:151
+#, fuzzy
 msgid ""
 "&#10122; An interpreted script should begin with the magic \"shebang\" "
 "line.  That line specifies the interpreter program for the script.  Due to "
 "the shebang line, the script can be invoked exactly like a binary program "
 "provided that it has the execute bit set.  (See man:chmod[1].)  For example, "
 "a system admin can run our script manually, from the command line:"
-msgstr ""
+msgstr "&#10122; 解释型脚本应以特殊的“shebang”行开头。该行指定脚本使用的解释器程序。由于有 shebang 行，只要脚本设置了可执行位，就可以像二进制程序一样直接调用。（参见 man:chmod[1]。）例如，系统管理员可以在命令行中手动运行我们的脚本："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /etc/rc.d/dummy start\n"
-msgstr ""
+msgstr "# /etc/rc.d/dummy start\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:161
+#, fuzzy
 msgid ""
 "To be properly managed by the [.filename]#rc.d# framework, its scripts need "
 "to be written in the man:sh[1] language.  If you have a service or port that "
@@ -294,19 +312,21 @@ msgid ""
 "language, install that element in [.filename]#/usr/sbin# (for the system) or "
 "[.filename]#/usr/local/sbin# (for ports) and call it from a man:sh[1] script "
 "in the appropriate [.filename]#rc.d# directory."
-msgstr ""
+msgstr "要由 [.filename]#rc.d# 框架正确管理，脚本必须使用 man:sh[1] 语言编写。如果某个服务或 port 使用二进制控制工具，或使用其他语言编写的启动例程，应将该组件安装到 [.filename]#/usr/sbin#（系统组件）或 [.filename]#/usr/local/sbin#（port），并从相应 [.filename]#rc.d# 目录中的 man:sh[1] 脚本调用它。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:166
+#, fuzzy
 msgid ""
 "If you would like to learn the details of why [.filename]#rc.d# scripts must "
 "be written in the man:sh[1] language, see how [.filename]#/etc/rc# invokes "
 "them by means of `run_rc_script`, then study the implementation of "
 "`run_rc_script` in [.filename]#/etc/rc.subr#."
-msgstr ""
+msgstr "如果想了解 [.filename]#rc.d# 脚本必须使用 man:sh[1] 语言编写的原因，请先查看 [.filename]#/etc/rc# 如何通过 `run_rc_script` 调用这些脚本，再研究 [.filename]#/etc/rc.subr# 中 `run_rc_script` 的实现。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:172
+#, fuzzy
 msgid ""
 "&#10123; In [.filename]#/etc/rc.subr#, a number of man:sh[1] functions are "
 "defined for an [.filename]#rc.d# script to use.  The functions are "
@@ -315,34 +335,38 @@ msgid ""
 "prove extremely handy and make the job an order of magnitude easier. So it "
 "is no surprise that everybody resorts to man:rc.subr[8] in [.filename]#rc.d# "
 "scripts.  We are not going to be an exception."
-msgstr ""
+msgstr "&#10123; [.filename]#/etc/rc.subr# 定义了许多供 [.filename]#rc.d# 脚本使用的 man:sh[1] 函数。这些函数记录在 man:rc.subr[8] 中。虽然理论上可以编写完全不使用 man:rc.subr[8] 的 [.filename]#rc.d# 脚本，但这些函数极为实用，能让工作轻松许多。因此，大家在编写 [.filename]#rc.d# 脚本时都会使用 man:rc.subr[8]，这并不奇怪。我们也不例外。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:175
+#, fuzzy
 msgid ""
 "An [.filename]#rc.d# script must \"source\"[.filename]#/etc/rc.subr# "
 "(include it using \"`.`\") _before_ it calls man:rc.subr[8] functions so "
 "that man:sh[1] has an opportunity to learn the functions.  The preferred "
 "style is to source [.filename]#/etc/rc.subr# first of all."
-msgstr ""
+msgstr "[.filename]#rc.d# 脚本必须先“source”[.filename]#/etc/rc.subr#（使用“`.`”将其包含进来），然后才能调用 man:rc.subr[8] 函数，这样 man:sh[1] 才有机会识别这些函数。首选的风格是首先 source [.filename]#/etc/rc.subr#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:179
+#, fuzzy
 msgid ""
 "Some useful functions related to networking are provided by another include "
 "file, [.filename]#/etc/network.subr#."
-msgstr ""
+msgstr "另一个包含文件 [.filename]#/etc/network.subr# 提供了一些与网络相关的实用函数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:184
+#, fuzzy
 msgid ""
 "&#10124; [[name-var]]The mandatory variable `name` specifies the name of our "
 "script.  It is required by man:rc.subr[8].  That is, each [.filename]#rc.d# "
 "script _must_ set `name` before it calls man:rc.subr[8] functions."
-msgstr ""
+msgstr "&#10124; [[name-var]]必需变量 `name` 指定了脚本的名称。man:rc.subr[8] 要求设置该变量。也就是说，每个 [.filename]#rc.d# 脚本都__必须__在调用 man:rc.subr[8] 函数之前设置 `name`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:190
+#, fuzzy
 msgid ""
 "Now it is the right time to choose a unique name for our script once and for "
 "all.  We will use it in a number of places while developing the script.  The "
@@ -351,10 +375,11 @@ msgid ""
 "the cpuset feature of the rc framework) depend upon this.  As such the "
 "filename shall also not contain characters which may be troublesome in "
 "scripting (e.g., do not use a hyphen \"-\" and others)."
-msgstr ""
+msgstr "现在正是为脚本选定唯一名称的时候，此后就不要再更改了。开发脚本时，我们会在多个地方使用这个名称。`name` 变量的内容必须与脚本名称一致，FreeBSD 的某些部分（例如 crossref:rc-scripting[rcng-service-jails, 服务 jail] 和 rc 框架的 cpuset 功能）依赖这一点。因此，文件名也不能包含在脚本中可能造成问题的字符（例如，不要使用连字符“-”等）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:197
+#, fuzzy
 msgid ""
 "The current style of [.filename]#rc.d# scripting is to enclose values "
 "assigned to variables in double quotes.  Keep in mind that it is just a "
@@ -363,10 +388,11 @@ msgid ""
 "certain cases you will need single quotes to prevent any interpretation of "
 "the value by man:sh[1].  A programmer should be able to tell the language "
 "syntax from style conventions and use both of them wisely."
-msgstr ""
+msgstr "当前 [.filename]#rc.d# 脚本的编写风格是将赋给变量的值用双引号括起来。请记住，这只是风格要求，并非始终适用。对于不含 man:sh[1] 元字符的简单单词，可以安全地省略引号；在某些情况下，则需要使用单引号，以避免 man:sh[1] 对变量值进行解释。程序员应能区分语言语法和风格惯例，并灵活运用两者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:203
+#, fuzzy
 msgid ""
 "&#10125; The main idea behind man:rc.subr[8] is that an [.filename]#rc.d# "
 "script provides handlers, or methods, for man:rc.subr[8] to invoke.  In "
@@ -375,64 +401,71 @@ msgid ""
 "variable named `argument_cmd`, where _argument_ corresponds to what can be "
 "specified on the script's command line.  We will see later how man:rc."
 "subr[8] provides default methods for the standard arguments."
-msgstr ""
+msgstr "&#10125; man:rc.subr[8] 的核心理念是：[.filename]#rc.d# 脚本提供处理程序（或称方法），供 man:rc.subr[8] 调用。具体来说，传递给 [.filename]#rc.d# 脚本的 `start`、`stop` 等参数都通过这种方式处理。方法是存储在名为 `argument_cmd` 的变量中的 man:sh[1] 表达式，其中的__argument__对应可以在脚本命令行中指定的内容。稍后我们会看到，man:rc.subr[8] 如何为标准参数提供默认方法。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:208
+#, fuzzy
 msgid ""
 "To make the code in [.filename]#rc.d# more uniform, it is common to use `"
 "${name}` wherever appropriate.  Thus a number of lines can be just copied "
 "from one script to another."
-msgstr ""
+msgstr "为了让 [.filename]#rc.d# 中的代码更加统一，通常会在适当位置使用 `${name}`。这样，许多代码行就可以直接从一个脚本复制到另一个脚本。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:212
+#, fuzzy
 msgid ""
 "&#10126; We should keep in mind that man:rc.subr[8] provides default methods "
 "for the standard arguments.  Consequently, we must override a standard "
 "method with a no-op man:sh[1] expression if we want it to do nothing."
-msgstr ""
+msgstr "&#10126; 请记住，man:rc.subr[8] 会为标准参数提供默认方法。因此，如果希望标准方法不执行任何操作，就必须用一个空操作的 man:sh[1] 表达式覆盖它。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:215
+#, fuzzy
 msgid ""
 "&#10127; The body of a sophisticated method can be implemented as a "
 "function.  It is a good idea to make the function name meaningful."
-msgstr ""
+msgstr "&#10127; 复杂方法的主体可以实现为一个函数。最好为函数起一个有意义的名称。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:219
+#, fuzzy
 msgid ""
 "It is strongly recommended to add the prefix `${name}` to the names of all "
 "functions defined in our script so they never clash with the functions from "
 "man:rc.subr[8] or another common include file."
-msgstr ""
+msgstr "强烈建议在脚本中定义的所有函数名称前加上 `${name}` 前缀，以免与 man:rc.subr[8] 或其他通用包含文件中的函数冲突。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:223
+#, fuzzy
 msgid ""
 "&#10128; This call to man:rc.subr[8] loads man:rc.conf[5] variables.  Our "
 "script makes no use of them yet, but it still is recommended to load man:rc."
 "conf[5] because there can be man:rc.conf[5] variables controlling man:rc."
 "subr[8] itself."
-msgstr ""
+msgstr "&#10128; 这次调用会加载 man:rc.conf[5] 变量。我们的脚本目前尚未使用这些变量，但仍建议加载 man:rc.conf[5]，因为其中可能包含控制 man:rc.subr[8] 本身的变量。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:226
+#, fuzzy
 msgid ""
 "&#10129; Usually this is the last command in an [.filename]#rc.d# script.  "
 "It invokes the man:rc.subr[8] machinery to perform the requested action "
 "using the variables and methods our script has provided."
-msgstr ""
+msgstr "&#10129; 这通常是 [.filename]#rc.d# 脚本中的最后一条命令。它会调用 man:rc.subr[8] 的机制，使用脚本提供的变量和方法执行请求的操作。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A configurable dummy script"
-msgstr ""
+msgstr "可配置的虚设脚本"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:238
+#, fuzzy
 msgid ""
 "Now let us add some controls to our dummy script.  As you may know, [."
 "filename]#rc.d# scripts are controlled with man:rc.conf[5].  Fortunately, "
@@ -443,7 +476,7 @@ msgid ""
 "just support enabling and disabling its service.  On the other hand, a "
 "mandatory [.filename]#rc.d# script can have configuration variables.  We "
 "will do both things in the same script though:"
-msgstr ""
+msgstr "现在，让我们为虚设脚本添加一些控制选项。你可能知道，[.filename]#rc.d# 脚本由 man:rc.conf[5] 控制。幸运的是，man:rc.subr[8] 替我们处理了所有复杂细节。下面的脚本通过 man:rc.subr[8] 使用 man:rc.conf[5]，先检查脚本是否已启用，再获取一条要在系统启动时显示的消息。实际上，这两项任务彼此独立。一方面，[.filename]#rc.d# 脚本可以只支持启用或禁用服务；另一方面，必需的 [.filename]#rc.d# 脚本也可以有配置变量。不过，我们会在同一个脚本中实现这两项功能："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:242
@@ -454,9 +487,9 @@ msgstr ""
 #: documentation/content/en/articles/rc-scripting/_index.adoc:859
 #: documentation/content/en/articles/rc-scripting/_index.adoc:892
 #: documentation/content/en/articles/rc-scripting/_index.adoc:926
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#!/bin/sh\n"
-msgstr ""
+msgstr "#!/bin/sh\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:244
@@ -467,72 +500,76 @@ msgstr ""
 #: documentation/content/en/articles/rc-scripting/_index.adoc:861
 #: documentation/content/en/articles/rc-scripting/_index.adoc:894
 #: documentation/content/en/articles/rc-scripting/_index.adoc:942
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ". /etc/rc.subr\n"
-msgstr ""
+msgstr ". /etc/rc.subr\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=dummy\n"
 "rcvar=dummy_enable <.>\n"
-msgstr ""
+msgstr "name=dummy\nrcvar=dummy_enable <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "start_cmd=\"${name}_start\"\n"
 "stop_cmd=\":\"\n"
-msgstr ""
+msgstr "start_cmd=\"${name}_start\"\nstop_cmd=\":\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "load_rc_config $name <.>\n"
 ": ${dummy_enable:=no} <.>\n"
 ": ${dummy_msg=\"Nothing started.\"} <.>\n"
-msgstr ""
+msgstr "load_rc_config $name\n: ${dummy_enable:=no} <.>\n: ${dummy_msg=\"Nothing started.\"} <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dummy_start()\n"
 "{\n"
 "\techo \"$dummy_msg\" <.>\n"
 "}\n"
-msgstr ""
+msgstr "dummy_start()\n{\n\techo \"$dummy_msg\" <.>\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:261
 #: documentation/content/en/articles/rc-scripting/_index.adoc:971
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "run_rc_command \"$1\"\n"
-msgstr ""
+msgstr "run_rc_command \"$1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:264
+#, fuzzy
 msgid "What changed in this example?"
-msgstr ""
+msgstr "这个示例有哪些变化？"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:266
+#, fuzzy
 msgid ""
 "&#10122; The variable `rcvar` specifies the name of the ON/OFF knob variable."
-msgstr ""
+msgstr "&#10122; 变量 `rcvar` 指定了用于启用或禁用服务的开关变量名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:268
+#, fuzzy
 msgid ""
 "&#10123; Now `load_rc_config` is invoked earlier in the script, before any "
 "man:rc.conf[5] variables are accessed."
-msgstr ""
+msgstr "&#10123; 现在，脚本会在访问任何 man:rc.conf[5] 变量之前调用 `load_rc_config`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:274
+#, fuzzy
 msgid ""
 "While examining [.filename]#rc.d# scripts, keep in mind that man:sh[1] "
 "defers the evaluation of expressions in a function until the latter is "
@@ -541,10 +578,11 @@ msgid ""
 "the method functions exported to `run_rc_command`.  This is because the "
 "method functions are to be called by `run_rc_command`, which is invoked "
 "_after_ `load_rc_config`."
-msgstr ""
+msgstr "查看 [.filename]#rc.d# 脚本时，请记住，man:sh[1] 会延迟对函数中表达式的求值，直到调用该函数时才执行。因此，在 `run_rc_command` 之前才调用 `load_rc_config` 并非错误；导出给 `run_rc_command` 的方法函数仍然可以访问 man:rc.conf[5] 变量。这是因为 `run_rc_command` 会在 `load_rc_config` 之后调用这些方法函数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:280
+#, fuzzy
 msgid ""
 "&#10124; A warning will be emitted by `run_rc_command` if `rcvar` itself is "
 "set, but the indicated knob variable is unset.  If your [.filename]#rc.d# "
@@ -552,10 +590,11 @@ msgid ""
 "to [.filename]#/etc/defaults/rc.conf# and document it in man:rc.conf[5].  "
 "Otherwise it is your script that should provide a default setting for the "
 "knob.  The canonical approach to the latter case is shown in the example."
-msgstr ""
+msgstr "&#10124; 如果设置了 `rcvar`，但它所指示的开关变量未设置，`run_rc_command` 就会发出警告。如果你的 [.filename]#rc.d# 脚本用于基本系统，应在 [.filename]#/etc/defaults/rc.conf# 中为开关变量添加默认设置，并在 man:rc.conf[5] 中记录该设置。否则，就应由脚本为开关变量提供默认设置。后一种情况的标准做法见示例。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:287
+#, fuzzy
 msgid ""
 "You can make man:rc.subr[8] act as though the knob is set to `ON`, "
 "irrespective of its current setting, by prefixing the argument to the script "
@@ -564,125 +603,134 @@ msgid ""
 "`one` just overrides the ON/OFF knob.  E.g., assume that `dummy_enable` is "
 "`OFF`.  The following command will run the `start` method in spite of the "
 "setting:"
-msgstr ""
+msgstr "通过在脚本参数前加上 `one` 或 `force`，例如 `onestart` 或 `forcestop`，可以让 man:rc.subr[8] 将开关视为已设为 `ON`，而不管它当前的设置是什么。不过请记住，`force` 还有其他危险影响，我们将在下文讨论；而 `one` 只会覆盖 ON/OFF 开关。例如，假设 `dummy_enable` 为 `OFF`。以下命令仍会运行 `start` 方法："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /etc/rc.d/dummy onestart\n"
-msgstr ""
+msgstr "# /etc/rc.d/dummy onestart\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:298
+#, fuzzy
 msgid ""
 "&#10125; Now the message to be shown at boot time is no longer hard-coded in "
 "the script.  It is specified by an man:rc.conf[5] variable named "
 "`dummy_msg`.  This is a trivial example of how man:rc.conf[5] variables can "
 "control an [.filename]#rc.d# script."
-msgstr ""
+msgstr "&#10125; 现在，启动时显示的消息不再硬编码在脚本中，而是由名为 `dummy_msg` 的 man:rc.conf[5] 变量指定。这是 man:rc.conf[5] 变量如何控制 [.filename]#rc.d# 脚本的一个简单示例。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:303
+#, fuzzy
 msgid ""
 "The names of all man:rc.conf[5] variables used exclusively by our script "
 "_must_ have the same prefix: `${name}_`.  For example: `dummy_mode`, "
 "`dummy_state_file`, and so on."
-msgstr ""
+msgstr "脚本专用的所有 man:rc.conf[5] 变量名称__必须__使用相同的前缀：`${name}_`。例如：`dummy_mode`、`dummy_state_file` 等。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:308
+#, fuzzy
 msgid ""
 "While it is possible to use a shorter name internally, e.g., just `msg`, "
 "adding the unique prefix `${name}_` to all global names introduced by our "
 "script will save us from possible collisions with the man:rc.subr[8] "
 "namespace."
-msgstr ""
+msgstr "虽然可以在内部使用更短的名称，例如只用 `msg`，但给脚本引入的所有全局名称加上唯一前缀 `${name}_`，可以避免与 man:rc.subr[8] 命名空间发生冲突。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:311
+#, fuzzy
 msgid ""
 "As a rule, [.filename]#rc.d# scripts of the base system need not provide "
 "defaults for their man:rc.conf[5] variables because the defaults should be "
 "set in [.filename]#/etc/defaults/rc.conf# instead.  On the other hand, [."
 "filename]#rc.d# scripts for ports should provide the defaults as shown in "
 "the example."
-msgstr ""
+msgstr "通常，基础系统的 [.filename]#rc.d# 脚本不必为其 man:rc.conf[5] 变量提供默认值，因为默认值应在 [.filename]#/etc/defaults/rc.conf# 中设置。另一方面，Ports 的 [.filename]#rc.d# 脚本应像示例中那样提供默认值。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:315
+#, fuzzy
 msgid ""
 "&#10126; Here we use `dummy_msg` to actually control our script, i.e., to "
 "emit a variable message.  Use of a shell function is overkill here, since it "
 "only runs a single command; an equally valid alternative is:"
-msgstr ""
+msgstr "&#10126; 这里我们用 `dummy_msg` 来控制脚本，也就是输出可变的消息。这里使用 shell 函数有些大材小用，因为它只运行一个命令；同样有效的替代方式是："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "start_cmd=\"echo \\\"$dummy_msg\\\"\"\n"
-msgstr ""
+msgstr "start_cmd=\"echo \\\"$dummy_msg\\\"\"\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Startup and shutdown of a simple daemon"
-msgstr ""
+msgstr "简单守护进程的启动与关闭"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:329
+#, fuzzy
 msgid ""
 "We said earlier that man:rc.subr[8] could provide default methods.  "
 "Obviously, such defaults cannot be too general.  They are suited for the "
 "common case of starting and shutting down a simple daemon program.  Let us "
 "assume now that we need to write an [.filename]#rc.d# script for such a "
 "daemon called `mumbled`.  Here it is:"
-msgstr ""
+msgstr "前面提到过，man:rc.subr[8] 可以提供默认方法。显然，这些默认方法不可能适用于所有情况；它们适用于启动和关闭简单守护进程这一常见场景。现在假设我们需要为一个名为 `mumbled` 的守护进程编写 [.filename]#rc.d# 脚本。如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:338
 #: documentation/content/en/articles/rc-scripting/_index.adoc:396
 #: documentation/content/en/articles/rc-scripting/_index.adoc:633
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=mumbled\n"
 "rcvar=mumbled_enable\n"
-msgstr ""
+msgstr "name=mumbled\nrcvar=mumbled_enable\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "command=\"/usr/sbin/${name}\" <.>\n"
-msgstr ""
+msgstr "command=\"/usr/sbin/${name}\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:343
 #: documentation/content/en/articles/rc-scripting/_index.adoc:442
 #: documentation/content/en/articles/rc-scripting/_index.adoc:648
 #: documentation/content/en/articles/rc-scripting/_index.adoc:875
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "load_rc_config $name\n"
 "run_rc_command \"$1\"\n"
-msgstr ""
+msgstr "load_rc_config $name\nrun_rc_command \"$1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:347
+#, fuzzy
 msgid ""
 "Pleasingly simple, isn't it? Let us examine our little script.  The only new "
 "thing to note is as follows:"
-msgstr ""
+msgstr "很简单，对吧？让我们看看这个小脚本。唯一需要注意的新内容如下："
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:351
+#, fuzzy
 msgid ""
 "&#10122; The `command` variable is meaningful to man:rc.subr[8].  If it is "
 "set, man:rc.subr[8] will act according to the scenario of serving a "
 "conventional daemon.  In particular, the default methods will be provided "
 "for such arguments: `start`, `stop`, `restart`, `poll`, and `status`."
-msgstr ""
+msgstr "&#10122; `command` 变量对 man:rc.subr[8] 有特殊含义。如果设置了该变量，man:rc.subr[8] 就会按照常规守护进程的处理方式执行。具体来说，它会为以下参数提供默认方法：`start`、`stop`、`restart`、`poll` 和 `status`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:360
+#, fuzzy
 msgid ""
 "The daemon will be started by running `$command` with command-line flags "
 "specified by `$mumbled_flags`.  Thus all the input data for the default "
@@ -695,10 +743,11 @@ msgid ""
 "defaults to that of `command`.  In other words, when we set `command`, "
 "`procname` is effectively set to the same value.  This enables our script to "
 "kill the daemon and to check if it is running in the first place."
-msgstr ""
+msgstr "启动守护进程时，会运行 `$command`，并附带由 `$mumbled_flags` 指定的命令行标志。因此，默认 `start` 方法所需的所有输入数据，都可以通过脚本设置的变量获得。与 `start` 不同，其他方法可能需要关于已启动进程的额外信息。例如，`stop` 必须知道进程的 PID 才能将其终止。在当前情况下，man:rc.subr[8] 会扫描所有进程，查找名称等于 `procname` 的进程。`procname` 是另一个对 man:rc.subr[8] 有特殊含义的变量，其默认值为 `command` 的值。换言之，设置 `command` 后，`procname` 实际上也会被设为相同的值。这样，脚本就能够终止守护进程，并检查它是否正在运行。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:367
+#, fuzzy
 msgid ""
 "Some programs are in fact executable scripts.  The system runs such a script "
 "by starting its interpreter and passing the name of the script to it as a "
@@ -706,10 +755,11 @@ msgid ""
 "can confuse man:rc.subr[8].  You should additionally set "
 "`command_interpreter` to let man:rc.subr[8] know the actual name of the "
 "process if `$command` is a script."
-msgstr ""
+msgstr "有些程序实际上是可执行脚本。系统运行这类脚本时，会启动其解释器，并将脚本名称作为命令行参数传给解释器。进程列表中显示的也是这种情况，这可能会使 man:rc.subr[8] 混淆。如果 `$command` 是脚本，还应设置 `command_interpreter`，以便让 man:rc.subr[8] 知道进程的实际名称。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:373
+#, fuzzy
 msgid ""
 "For each [.filename]#rc.d# script, there is an optional man:rc.conf[5] "
 "variable that takes precedence over `command`.  Its name is constructed as "
@@ -717,10 +767,11 @@ msgid ""
 "discussed crossref:rc-scripting[name-var, earlier].  E.g., in this case it "
 "will be `mumbled_program`.  It is man:rc.subr[8] that arranges `${name}"
 "_program` to override `command`."
-msgstr ""
+msgstr "每个 [.filename]#rc.d# 脚本都可以使用一个可选的 man:rc.conf[5] 变量，其优先级高于 `command`。该变量的名称按以下方式构成：`${name}_program`，其中 `name` 是我们在 crossref:rc-scripting[name-var, 前文]讨论过的必需变量。例如，在此处该变量名为 `mumbled_program`。由 man:rc.subr[8] 负责让 `${name}_program` 覆盖 `command`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:377
+#, fuzzy
 msgid ""
 "Of course, man:sh[1] will permit you to set `${name}_program` from man:rc."
 "conf[5] or the script itself even if `command` is unset.  In that case, the "
@@ -728,80 +779,82 @@ msgid ""
 "variable your script can use for its own purposes.  However, the sole use of "
 "`${name}_program` is discouraged because using it together with `command` "
 "became an idiom of [.filename]#rc.d# scripting."
-msgstr ""
+msgstr "当然，即使未设置 `command`，man:sh[1] 也允许你在 man:rc.conf[5] 或脚本中设置 `${name}_program`。在这种情况下，`${name}_program` 的特殊属性会失效，它将成为脚本可自行使用的普通变量。不过，不建议单独使用 `${name}_program`，因为在 [.filename]#rc.d# 脚本中将它与 `command` 配合使用已经成为惯例。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:380
+#, fuzzy
 msgid ""
 "For more detailed information on default methods, refer to man:rc.subr[8]."
-msgstr ""
+msgstr "有关默认方法的更多详细信息，请参阅 man:rc.subr[8]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Startup and shutdown of an advanced daemon"
-msgstr ""
+msgstr "高级守护进程的启动与关闭"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:387
+#, fuzzy
 msgid ""
 "Let us add some meat onto the bones of the previous script and make it more "
 "complex and featureful.  The default methods can do a good job for us, but "
 "we may need some of their aspects tweaked.  Now we will learn how to tune "
 "the default methods to our needs."
-msgstr ""
+msgstr "让我们在前一个脚本的基础上进一步扩展，使其更复杂、功能更丰富。默认方法通常能很好地满足需求，但有时我们需要调整其中某些部分。现在我们来学习如何根据需要调整默认方法。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:399
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "command=\"/usr/sbin/${name}\"\n"
 "command_args=\"mock arguments > /dev/null 2>&1\" <.>\n"
-msgstr ""
+msgstr "command=\"/usr/sbin/${name}\"\ncommand_args=\"mock arguments > /dev/null 2>&1\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pidfile=\"/var/run/${name}.pid\" <.>\n"
-msgstr ""
+msgstr "pidfile=\"/var/run/${name}.pid\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "required_files=\"/etc/${name}.conf /usr/share/misc/${name}.rules\" <.>\n"
-msgstr ""
+msgstr "required_files=\"/etc/${name}.conf /usr/share/misc/${name}.rules\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:405
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sig_reload=\"USR1\" <.>\n"
-msgstr ""
+msgstr "sig_reload=\"USR1\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "start_precmd=\"${name}_prestart\" <.>\n"
 "stop_postcmd=\"echo Bye-bye\" <.>\n"
-msgstr ""
+msgstr "start_precmd=\"${name}_prestart\" <.>\nstop_postcmd=\"echo Bye-bye\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "extra_commands=\"reload plugh xyzzy\" <.>\n"
-msgstr ""
+msgstr "extra_commands=\"reload plugh xyzzy\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:413
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "plugh_cmd=\"mumbled_plugh\" <.>\n"
 "xyzzy_cmd=\"echo 'Nothing happens.'\"\n"
-msgstr ""
+msgstr "plugh_cmd=\"mumbled_plugh\" <.>\nxyzzy_cmd=\"echo 'Nothing happens.'\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "mumbled_prestart()\n"
 "{\n"
@@ -823,30 +876,32 @@ msgid ""
 "\trun_rc_command xyzzy <.>\n"
 "\treturn 0\n"
 "}\n"
-msgstr ""
+msgstr "mumbled_prestart()\n{\n\tif checkyesno mumbled_smart; then <.>\n\t\trc_flags=\"-o smart ${rc_flags}\" <.>\n\tfi\n\tcase \"$mumbled_mode\" in\n\tfoo)\n\t\trc_flags=\"-frotz ${rc_flags}\"\n\t\t;;\n\tbar)\n\t\trc_flags=\"-baz ${rc_flags}\"\n\t\t;;\n\t*)\n\t\twarn \"Invalid value for mumbled_mode\" <.>\n\t\treturn 1 <.>\n\t\t;;\n\tesac\n\trun_rc_command xyzzy <.>\n\treturn 0\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:439
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "mumbled_plugh() <.>\n"
 "{\n"
 "\techo 'A hollow voice says \"plugh\".'\n"
 "}\n"
-msgstr ""
+msgstr "mumbled_plugh() <.>\n{\n\techo 'A hollow voice says \"plugh\".'\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:447
+#, fuzzy
 msgid ""
 "&#10122; Additional arguments to `$command` can be passed in "
 "`command_args`.  They will be added to the command line after `"
 "$mumbled_flags`.  Since the final command line is passed to `eval` for its "
 "actual execution, input and output redirections can be specified in "
 "`command_args`."
-msgstr ""
+msgstr "&#10122; 可以通过 `command_args` 向 `$command` 传递其他参数。这些参数会添加到 `$mumbled_flags` 之后。由于最终的命令行会传给 `eval` 执行，因此可以在 `command_args` 中指定输入和输出重定向。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:454
+#, fuzzy
 msgid ""
 "_Never_ include dashed options, like `-X` or `--foo`, in `command_args`.  "
 "The contents of `command_args` will appear at the end of the final command "
@@ -855,72 +910,80 @@ msgid ""
 "arguments.  A better way of passing additional options to `$command` is to "
 "add them to the beginning of `${name}_flags`.  Another way is to modify "
 "`rc_flags` crossref:rc-scripting[rc-flags, as shown later]."
-msgstr ""
+msgstr "__绝不要__在 `command_args` 中包含带连字符的选项，例如 `-X` 或 `--foo`。`command_args` 的内容会出现在最终命令行的末尾，因此很可能排在 `${name}_flags` 中现有参数之后；但大多数命令无法识别普通参数之后的带连字符选项。更好的做法是将附加选项添加到 `${name}_flags` 的开头。另一种方法是修改 `rc_flags`，crossref:rc-scripting[rc-flags, 如下文所示]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:458
+#, fuzzy
 msgid ""
 "&#10123; A good-mannered daemon should create a _pidfile_ so that its "
 "process can be found more easily and reliably.  The variable `pidfile`, if "
 "set, tells man:rc.subr[8] where it can find the pidfile for its default "
 "methods to use."
-msgstr ""
+msgstr "&#10123; 规范的守护进程应创建一个 __pidfile__，以便更轻松、更可靠地找到其进程。如果设置了 `pidfile` 变量，man:rc.subr[8] 就会据此找到 pidfile，供其默认方法使用。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:463
+#, fuzzy
 msgid ""
 "In fact, man:rc.subr[8] will also use the pidfile to see if the daemon is "
 "already running before starting it.  This check can be skipped by using the "
 "`faststart` argument."
-msgstr ""
+msgstr "事实上，man:rc.subr[8] 也会使用 pidfile，在启动守护进程前检查它是否已经运行。使用 `faststart` 参数可以跳过此项检查。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:468
+#, fuzzy
 msgid ""
 "&#10124; If the daemon cannot run unless certain files exist, just list them "
 "in `required_files`, and man:rc.subr[8] will check that those files do exist "
 "before starting the daemon.  There also are `required_dirs` and "
 "`required_vars` for directories and environment variables, respectively.  "
 "They all are described in detail in man:rc.subr[8]."
-msgstr ""
+msgstr "&#10124; 如果守护进程必须在某些文件存在时才能运行，只需将这些文件列在 `required_files` 中，man:rc.subr[8] 就会在启动守护进程前检查这些文件是否存在。目录和环境变量分别有 `required_dirs` 和 `required_vars`。man:rc.subr[8] 中详细介绍了这些变量。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:472
+#, fuzzy
 msgid ""
 "The default method from man:rc.subr[8] can be forced to skip the "
 "prerequisite checks by using `forcestart` as the argument to the script."
-msgstr ""
+msgstr "使用 `forcestart` 作为脚本参数，可以强制 man:rc.subr[8] 的默认方法跳过先决条件检查。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:478
+#, fuzzy
 msgid ""
 "&#10125; We can customize signals to send to the daemon in case they differ "
 "from the well-known ones.  In particular, `sig_reload` specifies the signal "
 "that makes the daemon reload its configuration; it is SIGHUP by default.  "
 "Another signal is sent to stop the daemon process; the default is SIGTERM, "
 "but this can be changed by setting `sig_stop` appropriately."
-msgstr ""
+msgstr "&#10125; 如果要发送给守护进程的信号与常见信号不同，我们可以自定义这些信号。具体来说，`sig_reload` 指定让守护进程重新加载配置的信号；默认值为 SIGHUP。停止守护进程进程时会发送另一个信号；默认值为 SIGTERM，但可以通过适当设置 `sig_stop` 来更改。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:483
+#, fuzzy
 msgid ""
 "The signal names should be specified to man:rc.subr[8] without the `SIG` "
 "prefix, as it is shown in the example.  The FreeBSD version of man:kill[1] "
 "can recognize the `SIG` prefix, but the versions from other OS types may not."
-msgstr ""
+msgstr "向 man:rc.subr[8] 指定信号名称时，应省略 `SIG` 前缀，如示例所示。FreeBSD 版本的 man:kill[1] 能识别 `SIG` 前缀，但其他操作系统版本可能无法识别。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:488
+#, fuzzy
 msgid ""
 "&#10126;&#10127; Performing additional tasks before or after the default "
 "methods is easy.  For each command-argument supported by our script, we can "
 "define `argument_precmd` and `argument_postcmd`.  These man:sh[1] commands "
 "are invoked before and after the respective method, as it is evident from "
 "their names."
-msgstr ""
+msgstr "&#10126;&#10127; 在默认方法之前或之后执行额外任务很容易。对于脚本支持的每个命令参数，我们都可以定义 `argument_precmd` 和 `argument_postcmd`。顾名思义，这些 man:sh[1] 命令会分别在相应方法之前和之后调用。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:494
+#, fuzzy
 msgid ""
 "Overriding a default method with a custom `argument_cmd` still does not "
 "prevent us from making use of `argument_precmd` or `argument_postcmd` if we "
@@ -928,80 +991,88 @@ msgid ""
 "sophisticated conditions that should be met before performing the command "
 "itself.  Using `argument_precmd` along with `argument_cmd` lets us logically "
 "separate the checks from the action."
-msgstr ""
+msgstr "即使使用自定义的 `argument_cmd` 覆盖默认方法，在需要时仍然可以使用 `argument_precmd` 或 `argument_postcmd`。特别是，前者适合检查执行命令前必须满足的复杂自定义条件。将 `argument_precmd` 与 `argument_cmd` 配合使用，可以在逻辑上分离检查与操作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:497
+#, fuzzy
 msgid ""
 "Do not forget that you can cram any valid man:sh[1] expressions into the "
 "methods, pre-, and post-commands you define.  Just invoking a function that "
 "makes the real job is a good style in most cases, but never let style limit "
 "your understanding of what is going on behind the curtain."
-msgstr ""
+msgstr "别忘了，可以在定义的方法、前置命令和后置命令中加入任何有效的 man:sh[1] 表达式。在大多数情况下，调用一个实际执行工作的函数是很好的风格，但不要让风格妨碍你理解幕后发生的事情。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:500
+#, fuzzy
 msgid ""
 "&#10128; If we would like to implement custom arguments, which can also be "
 "thought of as _commands_ to our script, we need to list them in "
 "`extra_commands` and provide methods to handle them."
-msgstr ""
+msgstr "&#10128; 如果要实现自定义参数，也可以把它们看作脚本的__命令__，就需要将其列在 `extra_commands` 中，并提供相应的处理方法。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:508
+#, fuzzy
 msgid ""
 "The `reload` command is special. On the one hand, it has a preset method in "
 "man:rc.subr[8].  On the other hand, `reload` is not offered by default.  The "
 "reason is that not all daemons use the same reload mechanism and some have "
 "nothing to reload at all.  So we need to ask explicitly that the builtin "
 "functionality be provided.  We can do so via `extra_commands`."
-msgstr ""
+msgstr "`reload` 命令比较特殊。一方面，man:rc.subr[8] 为它预设了一个方法；另一方面，默认情况下并不提供 `reload`。这是因为并非所有守护进程都使用相同的重新加载机制，而且有些守护进程根本没有需要重新加载的内容。因此，我们需要明确请求提供内置功能。可以通过 `extra_commands` 实现这一点。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:512
+#, fuzzy
 msgid ""
 "What do we get from the default method for `reload`? Quite often daemons "
 "reload their configuration upon reception of a signal - typically, SIGHUP.  "
 "Therefore man:rc.subr[8] attempts to reload the daemon by sending a signal "
 "to it.  The signal is preset to SIGHUP but can be customized via "
 "`sig_reload` if necessary."
-msgstr ""
+msgstr "`reload` 的默认方法会做什么？守护进程通常会在收到信号后重新加载配置，通常是 SIGHUP。因此，man:rc.subr[8] 会尝试通过向守护进程发送信号来重新加载它。默认信号是 SIGHUP；如有需要，可以通过 `sig_reload` 自定义。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:517
+#, fuzzy
 msgid ""
 "&#10129;&#9454; Our script supports two non-standard commands, `plugh` and "
 "`xyzzy`.  We saw them listed in `extra_commands`, and now it is time to "
 "provide methods for them.  The method for `xyzzy` is just inlined while that "
 "for `plugh` is implemented as the `mumbled_plugh` function."
-msgstr ""
+msgstr "&#10129;&#9454; 我们的脚本支持两个非标准命令：`plugh` 和 `xyzzy`。前面已经看到它们列在 `extra_commands` 中，现在该为它们提供方法了。`xyzzy` 的方法直接内联定义，而 `plugh` 的方法则通过 `mumbled_plugh` 函数实现。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:521
+#, fuzzy
 msgid ""
 "Non-standard commands are not invoked during startup or shutdown.  Usually "
 "they are for the system admin's convenience.  They can also be used from "
 "other subsystems, e.g., man:devd[8] if specified in man:devd.conf[5]."
-msgstr ""
+msgstr "非标准命令不会在启动或关闭期间调用。它们通常是为了方便系统管理员而设，也可以由其他子系统使用，例如在 man:devd.conf[5] 中指定后由 man:devd[8] 使用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:524
+#, fuzzy
 msgid ""
 "The full list of available commands can be found in the usage line printed "
 "by man:rc.subr[8] when the script is invoked without arguments.  For "
 "example, here is the usage line from the script under study:"
-msgstr ""
+msgstr "可用命令的完整列表可在脚本不带参数运行时由 man:rc.subr[8] 打印的用法提示中找到。下面是当前讨论脚本的用法提示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /etc/rc.d/mumbled\n"
 "Usage: /etc/rc.d/mumbled [fast|force|one](start|stop|restart|rcvar|reload|plugh|xyzzy|status|poll)\n"
-msgstr ""
+msgstr "# /etc/rc.d/mumbled\nUsage: /etc/rc.d/mumbled [fast|force|one](start|stop|restart|rcvar|reload|plugh|xyzzy|status|poll)\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:536
+#, fuzzy
 msgid ""
 "&#9453; A script can invoke its own standard or non-standard commands if "
 "needed.  This may look similar to calling functions, but we know that "
@@ -1010,10 +1081,11 @@ msgid ""
 "pre-command and post-command, which should be invoked orderly.  So the "
 "proper way for a script to run its own command is by means of man:rc."
 "subr[8], as shown in the example."
-msgstr ""
+msgstr "&#9453; 如果需要，脚本可以调用自己的标准或非标准命令。这看起来可能类似于调用函数，但我们知道命令和 shell 函数并不总是相同的。例如，这里的 `xyzzy` 并未实现为函数。此外，还可能存在前置命令和后置命令，它们应按顺序调用。因此，脚本运行自身命令的正确方式是通过 man:rc.subr[8]，如示例所示。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:542
+#, fuzzy
 msgid ""
 "&#10130; A handy function named `checkyesno` is provided by man:rc.subr[8].  "
 "It takes a variable name as its argument and returns a zero exit code if and "
@@ -1022,93 +1094,102 @@ msgid ""
 "case, the function tests the variable for being set to `NO`, `FALSE`, `OFF`, "
 "or `0`, case insensitive; it prints a warning message if the variable "
 "contains anything else, i.e., junk."
-msgstr ""
+msgstr "&#10130; man:rc.subr[8] 提供了一个名为 `checkyesno` 的实用函数。它接受一个变量名作为参数；当且仅当该变量被设为 `YES`、`TRUE`、`ON` 或 `1`（不区分大小写）时，函数返回零退出码；否则返回非零退出码。在后一种情况下，函数会检查变量是否被设为 `NO`、`FALSE`、`OFF` 或 `0`（不区分大小写）；如果变量包含其他内容，也就是无效值，则会打印警告消息。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:544
+#, fuzzy
 msgid ""
 "Keep in mind that for man:sh[1] a zero exit code means true and a non-zero "
 "exit code means false."
-msgstr ""
+msgstr "请记住，对于 man:sh[1]，零退出码表示真，非零退出码表示假。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:549
+#, fuzzy
 msgid ""
 "The `checkyesno` function takes a __variable name__.  Do not pass the "
 "expanded _value_ of a variable to it; it will not work as expected."
-msgstr ""
+msgstr "`checkyesno` 函数接受一个__变量名__。不要将变量展开后的__值__传给它；这样不会得到预期结果。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:551
+#, fuzzy
 msgid "The following is the correct usage of `checkyesno`:"
-msgstr ""
+msgstr "以下是 `checkyesno` 的正确用法："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:557
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if checkyesno mumbled_enable; then\n"
 "        foo\n"
 "fi\n"
-msgstr ""
+msgstr "if checkyesno mumbled_enable; then\n        foo\nfi\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:560
+#, fuzzy
 msgid ""
 "On the contrary, calling `checkyesno` as shown below will not work - at "
 "least not as expected:"
-msgstr ""
+msgstr "相反，像下面这样调用 `checkyesno` 将不起作用——至少不会得到预期结果："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:566
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if checkyesno \"${mumbled_enable}\"; then\n"
 "        foo\n"
 "fi\n"
-msgstr ""
+msgstr "if checkyesno \"${mumbled_enable}\"; then\n        foo\nfi\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:571
+#, fuzzy
 msgid ""
 "&#10131; [[rc-flags]]We can affect the flags to be passed to `$command` by "
 "modifying `rc_flags` in `$start_precmd`."
-msgstr ""
+msgstr "&#10131; 在 `$start_precmd` 中修改 `rc_flags`，即可改变传递给 `$command` 的标志。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:575
+#, fuzzy
 msgid ""
 "&#9451; In certain cases we may need to emit an important message that "
 "should go to `syslog` as well.  This can be done easily with the following "
 "man:rc.subr[8] functions: `debug`, `info`, `warn`, and `err`.  The latter "
 "function then exits the script with the code specified."
-msgstr ""
+msgstr "&#9451; 在某些情况下，我们可能需要输出一条重要消息，并同时将其写入 `syslog`。使用 man:rc.subr[8] 提供的以下函数即可轻松实现：`debug`、`info`、`warn` 和 `err`。最后一个函数会以指定的代码退出脚本。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:579
+#, fuzzy
 msgid ""
 "&#9452; The exit codes from methods and their pre-commands are not just "
 "ignored by default.  If `argument_precmd` returns a non-zero exit code, the "
 "main method will not be performed.  In turn, `argument_postcmd` will not be "
 "invoked unless the main method returns a zero exit code."
-msgstr ""
+msgstr "&#9452; 默认情况下，方法及其前置命令的退出码并不会被忽略。如果 `argument_precmd` 返回非零退出码，就不会执行主方法。反过来，只有主方法返回零退出码时，才会调用 `argument_postcmd`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:583
+#, fuzzy
 msgid ""
 "However, man:rc.subr[8] can be instructed from the command line to ignore "
 "those exit codes and invoke all commands anyway by prefixing an argument "
 "with `force`, as in `forcestart`."
-msgstr ""
+msgstr "不过，可以在命令行中通过在参数前加上 `force`（例如 `forcestart`），指示 man:rc.subr[8] 忽略这些退出码并照常调用所有命令。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:586
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Connecting a script to the rc.d framework"
-msgstr ""
+msgstr "将脚本连接到 rc.d 框架"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:593
+#, fuzzy
 msgid ""
 "After a script has been written, it needs to be integrated into [."
 "filename]#rc.d#.  The crucial step is to install the script in [.filename]#/"
@@ -1119,10 +1200,11 @@ msgid ""
 "filename]#src/libexec/rc/rc.d# through the [.filename]#Makefile# found "
 "there.  Port scripts can be installed using `USE_RC_SUBR` as described "
 "extref:{porters-handbook}special[in the Porter's Handbook, rc-scripts]."
-msgstr ""
+msgstr "编写完脚本后，需要将其集成到 [.filename]#rc.d# 中。关键步骤是将脚本安装到 [.filename]#/etc/rc.d#（用于基本系统）或 [.filename]#/usr/local/etc/rc.d#（用于 ports）。[.filename]#bsd.prog.mk# 和 [.filename]#bsd.port.mk# 都提供了便捷的钩子，通常无需担心所有权和权限模式是否正确。系统脚本应通过 [.filename]#src/libexec/rc/rc.d# 中的 [.filename]#Makefile# 安装。port 脚本可以使用 `USE_RC_SUBR` 安装，详情请参见 extref:{porters-handbook}special[Porter's Handbook 中的 rc-scripts]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:598
+#, fuzzy
 msgid ""
 "However, we should consider beforehand the place of our script in the system "
 "startup sequence.  The service handled by our script is likely to depend on "
@@ -1130,10 +1212,11 @@ msgid ""
 "network interfaces and routing up and running.  Even if a service seems to "
 "demand nothing, it can hardly start before the basic filesystems have been "
 "checked and mounted."
-msgstr ""
+msgstr "不过，我们应预先考虑脚本在系统启动序列中的位置。脚本所管理的服务很可能依赖其他服务。例如，网络守护进程必须等到网络接口和路由启动并运行后才能工作。即使某项服务看起来没有任何依赖，在基本文件系统经过检查并挂载之前，它也很难启动。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:604
+#, fuzzy
 msgid ""
 "We mentioned man:rcorder[8] already.  Now it is time to have a close look at "
 "it.  In a nutshell, man:rcorder[8] takes a set of files, examines their "
@@ -1141,79 +1224,86 @@ msgid ""
 "`stdout`.  The point is to keep dependency information _inside_ the files so "
 "that each file can speak for itself only.  A file can specify the following "
 "information:"
-msgstr ""
+msgstr "前面已经提到过 man:rcorder[8]。现在该仔细看看它了。简而言之，man:rcorder[8] 接收一组文件，检查其内容，并将这些文件按依赖顺序排列后输出到 `stdout`。这样做的目的是将依赖信息保留在文件__内部__，使每个文件只需自行说明依赖关系。文件可以指定以下信息："
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:606
+#, fuzzy
 msgid ""
 "the names of the \"conditions\" (which means services to us) it __provides__;"
-msgstr ""
+msgstr "它所__提供__的“条件”（对我们而言即服务）的名称；"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:607
+#, fuzzy
 msgid "the names of the \"conditions\" it __requires__;"
-msgstr ""
+msgstr "它所__需要__的“条件”的名称；"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:608
+#, fuzzy
 msgid "the names of the \"conditions\" this file should run __before__;"
-msgstr ""
+msgstr "此文件应在其__之前__运行的“条件”的名称；"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:609
+#, fuzzy
 msgid ""
 "additional _keywords_ that can be used to select a subset from the whole set "
 "of files (man:rcorder[8] can be instructed via options to include or omit "
 "the files having particular keywords listed.)"
-msgstr ""
+msgstr "可用于从全部文件中选取子集的其他__关键字__（可以通过选项指示 man:rcorder[8] 纳入或排除列有特定关键字的文件）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:614
+#, fuzzy
 msgid ""
 "It is no surprise that man:rcorder[8] can handle only text files with a "
 "syntax close to that of man:sh[1].  That is, special lines understood by man:"
 "rcorder[8] look like man:sh[1] comments.  The syntax of such special lines "
 "is rather rigid to simplify their processing.  See man:rcorder[8] for "
 "details."
-msgstr ""
+msgstr "man:rcorder[8] 只能处理语法接近 man:sh[1] 的文本文件，这一点并不意外。也就是说，man:rcorder[8] 能识别的特殊行看起来像 man:sh[1] 注释。为简化处理，这些特殊行的语法相当严格。详情请参见 man:rcorder[8]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:617
+#, fuzzy
 msgid ""
 "Besides using man:rcorder[8] special lines, a script can insist on its "
 "dependency upon another service by just starting it forcibly.  This can be "
 "needed when the other service is optional and will not start by itself "
 "because the system admin has disabled it mistakenly in man:rc.conf[5]."
-msgstr ""
+msgstr "除了使用 man:rcorder[8] 特殊行之外，脚本还可以通过强制启动另一项服务，来声明对它的依赖。如果另一项服务是可选的，并且系统管理员误在 man:rc.conf[5] 中禁用了它，导致它不会自行启动，那么这种做法可能是必要的。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:619
+#, fuzzy
 msgid ""
 "With this general knowledge in mind, let us consider the simple daemon "
 "script enhanced with dependency stuff:"
-msgstr ""
+msgstr "了解了这些基本知识后，我们来看看这个添加了依赖信息的简单守护进程脚本："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:628
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# PROVIDE: mumbled oldmumble <.>\n"
 "# REQUIRE: DAEMON cleanvar frotz <.>\n"
 "# BEFORE:  LOGIN <.>\n"
 "# KEYWORD: nojail shutdown <.>\n"
-msgstr ""
+msgstr "# PROVIDE: mumbled oldmumble <.>\n# REQUIRE: DAEMON cleanvar frotz <.>\n# BEFORE:  LOGIN <.>\n# KEYWORD: nojail shutdown <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:636
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "command=\"/usr/sbin/${name}\"\n"
 "start_precmd=\"${name}_prestart\"\n"
-msgstr ""
+msgstr "command=\"/usr/sbin/${name}\"\nstart_precmd=\"${name}_prestart\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "mumbled_prestart()\n"
 "{\n"
@@ -1223,47 +1313,53 @@ msgid ""
 "\tfi\n"
 "\treturn 0\n"
 "}\n"
-msgstr ""
+msgstr "mumbled_prestart()\n{\n\tif ! checkyesno frotz_enable && \\\n\t    ! /etc/rc.d/frotz forcestatus 1>/dev/null 2>&1; then\n\t\tforce_depend frotz || return 1 <.>\n\tfi\n\treturn 0\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:651
+#, fuzzy
 msgid "As before, detailed analysis follows:"
-msgstr ""
+msgstr "与之前一样，下面将进行详细分析："
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:654
+#, fuzzy
 msgid ""
 "&#10122; That line declares the names of \"conditions\" our script "
 "provides.  Now other scripts can record a dependency on our script by those "
 "names."
-msgstr ""
+msgstr "&#10122; 这一行声明了脚本所提供的“条件”名称。其他脚本现在可以用这些名称记录对本脚本的依赖关系。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:659
+#, fuzzy
 msgid ""
 "Usually a script specifies a single condition provided.  However, nothing "
 "prevents us from listing several conditions there, e.g., for compatibility "
 "reasons."
-msgstr ""
+msgstr "通常，脚本只指定一个所提供的条件。不过，我们也可以在此列出多个条件，例如出于兼容性考虑。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:661
+#, fuzzy
 msgid ""
 "In any case, the name of the main, or the only, `PROVIDE:` condition should "
 "be the same as `${name}`."
-msgstr ""
+msgstr "无论如何，主条件（或唯一条件）`PROVIDE:` 的名称应与 `${name}` 相同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:665
+#, fuzzy
 msgid ""
 "&#10123;&#10124; So our script indicates which \"conditions\" provided by "
 "other scripts it depends on.  According to the lines, our script asks man:"
 "rcorder[8] to put it after the script(s) providing [.filename]#DAEMON# and [."
 "filename]#cleanvar#, but before that providing [.filename]#LOGIN#."
-msgstr ""
+msgstr "&#10123;&#10124; 因此，我们的脚本指出了它所依赖的、由其他脚本提供的“条件”。根据这些行，脚本要求 man:rcorder[8] 将它排在提供 [.filename]#DAEMON# 和 [.filename]#cleanvar# 的脚本之后，并排在提供 [.filename]#LOGIN# 的脚本之前。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:671
+#, fuzzy
 msgid ""
 "The `BEFORE:` line should not be abused to work around an incomplete "
 "dependency list in the other script.  The appropriate case for using `BEFORE:"
@@ -1272,20 +1368,22 @@ msgid ""
 "the network interfaces vs. the firewall: While the interfaces do not depend "
 "on the firewall in doing their job, the system security will benefit from "
 "the firewall being ready before there is any network traffic."
-msgstr ""
+msgstr "不应滥用 `BEFORE:` 行来弥补其他脚本依赖列表的不完整。适合使用 `BEFORE:` 的情况是：另一脚本不依赖本脚本，但若本脚本先于另一脚本运行，就能更好地完成任务。一个典型的实际例子是网络接口与防火墙：接口在工作时不依赖防火墙，但在任何网络流量出现之前就启动防火墙，有利于系统安全。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:675
+#, fuzzy
 msgid ""
 "Besides conditions corresponding to a single service each, there are meta-"
 "conditions and their \"placeholder\" scripts used to ensure that certain "
 "groups of operations are performed before others.  These are denoted by [."
 "filename]#UPPERCASE# names.  Their list and purposes can be found in man:"
 "rc[8]."
-msgstr ""
+msgstr "除了分别对应单项服务的条件之外，还有一些元条件及其“占位”脚本，用于确保某些操作组先于其他操作执行。这些条件以 [.filename]#大写名称# 表示。其列表和用途可参见 man:rc[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:681
+#, fuzzy
 msgid ""
 "Keep in mind that putting a service name in the `REQUIRE:` line does not "
 "guarantee that the service will actually be running by the time our script "
@@ -1295,10 +1393,11 @@ msgid ""
 "script should be able to cope with any required services being unavailable.  "
 "In certain cases, we can help it as discussed crossref:rc-"
 "scripting[forcedep, below]"
-msgstr ""
+msgstr "请记住，在 `REQUIRE:` 行中列出服务名称，并不能保证该服务会在脚本启动时实际运行。所需服务可能启动失败，也可能在 man:rc.conf[5] 中被禁用。显然，man:rcorder[8] 无法跟踪这些情况，man:rc[8] 也不会这样做。因此，由脚本启动的应用程序应能应对任何所需服务不可用的情况。在某些情况下，我们可以按照 crossref:rc-scripting[forcedep,下文]所述提供帮助。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:686
+#, fuzzy
 msgid ""
 "[[keywords]]&#10125; As we remember from the above text, man:rcorder[8] "
 "keywords can be used to select or leave out some scripts.  Namely any man:"
@@ -1307,43 +1406,46 @@ msgid ""
 "files to be dependency sorted, man:rcorder[8] will pick only those having a "
 "keyword from the keep list (unless empty) and not having a keyword from the "
 "skip list."
-msgstr ""
+msgstr "[[keywords]]&#10125; 正如前文所述，可以使用 man:rcorder[8] 的关键字来选取或排除某些脚本。具体来说，任何使用 man:rcorder[8] 的程序都可以通过 `-k` 和 `-s` 选项，分别指定“保留列表”和“跳过列表”中的关键字。在所有待按依赖关系排序的文件中，man:rcorder[8] 只会选取包含保留列表中关键字（如果列表非空），且不包含跳过列表中关键字的文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:689
+#, fuzzy
 msgid ""
 "In FreeBSD, man:rcorder[8] is used by [.filename]#/etc/rc# and [.filename]#/"
 "etc/rc.shutdown#.  These two scripts define the standard list of FreeBSD [."
 "filename]#rc.d# keywords and their meanings as follows:"
-msgstr ""
+msgstr "在 FreeBSD 中，[.filename]#/etc/rc# 和 [.filename]#/etc/rc.shutdown# 会使用 man:rcorder[8]。这两个脚本定义了 FreeBSD [.filename]#rc.d# 关键字的标准列表及其含义，如下所示："
 
 #. type: Labeled list
 #: documentation/content/en/articles/rc-scripting/_index.adoc:690
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "nojail"
-msgstr ""
+msgstr "nojail"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:692
+#, fuzzy
 msgid ""
 "The service is not for man:jail[8] environment.  The automatic startup and "
 "shutdown procedures will ignore the script if inside a jail."
-msgstr ""
+msgstr "该服务不适用于 man:jail[8] 环境。如果脚本在 jail 内，自动启动和关闭流程会忽略它。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/rc-scripting/_index.adoc:693
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "nostart"
-msgstr ""
+msgstr "nostart"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:696
+#, fuzzy
 msgid ""
 "The service is to be started manually or not started at all.  The automatic "
 "startup procedure will ignore the script.  In conjunction with the [."
 "filename]#shutdown# keyword, this can be used to write scripts that do "
 "something only at system shutdown."
-msgstr ""
+msgstr "该服务需要手动启动，或者完全不应启动。自动启动流程会忽略此脚本。与 [.filename]#shutdown# 关键字配合使用时，可以编写仅在系统关闭时执行操作的脚本。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/rc-scripting/_index.adoc:697
@@ -1353,13 +1455,15 @@ msgstr "关闭"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:698
+#, fuzzy
 msgid ""
 "This keyword is to be listed __explicitly__ if the service needs to be "
 "stopped before system shutdown."
-msgstr ""
+msgstr "如果服务需要在系统关闭之前停止，则必须__显式__列出此关键字。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:711
+#, fuzzy
 msgid ""
 "When the system is going to shut down, [.filename]#/etc/rc.shutdown# runs.  "
 "It assumes that most [.filename]#rc.d# scripts have nothing to do at that "
@@ -1379,18 +1483,20 @@ msgid ""
 "service should be stopped explicitly if it needs considerable time or "
 "special actions to shut down cleanly.  A typical example of such a service "
 "is a database engine."
-msgstr ""
+msgstr "系统即将关闭时，会运行 [.filename]#/etc/rc.shutdown#。它假定大多数 [.filename]#rc.d# 脚本在此时无需执行任何操作。因此，[.filename]#/etc/rc.shutdown# 会选择性地调用带有 [.filename]#shutdown# 关键字的 [.filename]#rc.d# 脚本，实际上忽略其余脚本。为加快关闭速度，[.filename]#/etc/rc.shutdown# 会向所运行的脚本传递 [.filename]#faststop# 命令，使它们跳过初步检查，例如 pidfile 检查。由于依赖服务应先于其前置条件停止，[.filename]#/etc/rc.shutdown# 会按依赖顺序的逆序运行脚本。如果要编写真正的 [.filename]#rc.d# 脚本，应考虑它是否与系统关闭有关。例如，如果脚本只响应 [.filename]#start# 命令执行工作，就不需要包含此关键字。不过，如果脚本管理某项服务，那么在系统进入 man:halt[8] 所述关闭序列的最后阶段之前停止该服务，通常是个好主意。特别是，如果服务需要较长时间或需要特殊操作才能干净地关闭，就应显式停止它。数据库引擎就是这类服务的典型例子。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:715
+#, fuzzy
 msgid ""
 "[[forcedep]]&#10126; To begin with, `force_depend` should be used with much "
 "care.  It is generally better to revise the hierarchy of configuration "
 "variables for your [.filename]#rc.d# scripts if they are interdependent."
-msgstr ""
+msgstr "[[forcedep]]&#10126; 首先，使用 `force_depend` 时应格外谨慎。如果 [.filename]#rc.d# 脚本之间存在依赖关系，通常最好调整其配置变量的层级结构。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:724
+#, fuzzy
 msgid ""
 "If you still cannot do without `force_depend`, the example offers an idiom "
 "of how to invoke it conditionally.  In the example, our `mumbled` daemon "
@@ -1402,16 +1508,17 @@ msgid ""
 "`frotz`.  Finally, we enforce our dependency on `frotz` if it is found to be "
 "not running.  A warning message will be emitted by `force_depend` because it "
 "should be invoked only if a misconfiguration has been detected."
-msgstr ""
+msgstr "如果确实离不开 `force_depend`，示例展示了一种有条件调用它的惯用写法。在示例中，我们的 `mumbled` 守护进程要求另一个守护进程 `frotz` 预先启动。不过，`frotz` 也是可选的；man:rcorder[8] 并不了解这些细节。幸运的是，我们的脚本可以访问所有 man:rc.conf[5] 变量。如果 `frotz_enable` 为真，我们就寄希望于 [.filename]#rc.d# 已经启动了 `frotz`。否则，我们会强制检查 `frotz` 的状态。最后，如果发现它未运行，就强制建立对 `frotz` 的依赖。`force_depend` 会发出警告，因为只有检测到配置错误时才应调用它。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:726
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Giving more flexibility to an rc.d script"
-msgstr ""
+msgstr "让 rc.d 脚本更加灵活"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:735
+#, fuzzy
 msgid ""
 "When invoked during startup or shutdown, an [.filename]#rc.d# script is "
 "supposed to act on the entire subsystem it is responsible for.  E.g., [."
@@ -1426,18 +1533,20 @@ msgid ""
 "shut down a single network interface.  In the spirit of the command line, "
 "the respective [.filename]#rc.d# script calls for an extra argument, the "
 "interface name."
-msgstr ""
+msgstr "在启动或关闭期间调用时，[.filename]#rc.d# 脚本应对其负责的整个子系统执行操作。例如，[.filename]#/etc/rc.d/netif# 应启动或停止 man:rc.conf[5] 中描述的所有网络接口。只需一个命令参数（例如 `start` 或 `stop`）即可明确指定要执行的任务。在启动和关闭之间，[.filename]#rc.d# 脚本可帮助管理员控制正在运行的系统，此时便需要更高的灵活性和精确度。例如，管理员可能希望将新网络接口的设置添加到 man:rc.conf[5]，然后启动该接口，而不影响现有接口的运行。之后，管理员可能需要关闭某个单独的网络接口。按照命令行的惯例，相应的 [.filename]#rc.d# 脚本需要额外接收一个参数，即接口名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:738
+#, fuzzy
 msgid ""
 "Fortunately, man:rc.subr[8] allows for passing any number of arguments to "
 "script's methods (within the system limits).  Due to that, the changes in "
 "the script itself can be minimal."
-msgstr ""
+msgstr "幸运的是，man:rc.subr[8] 允许向脚本方法传递任意数量的参数（受系统限制）。因此，对脚本本身的修改可以很少。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:743
+#, fuzzy
 msgid ""
 "How can man:rc.subr[8] gain access to the extra command-line arguments.  "
 "Should it just grab them directly? Not by any means.  Firstly, an man:sh[1] "
@@ -1445,10 +1554,11 @@ msgid ""
 "rc.subr[8] is just a sack of such functions.  Secondly, the good manner of [."
 "filename]#rc.d# dictates that it is for the main script to decide which "
 "arguments are to be passed to its methods."
-msgstr ""
+msgstr "man:rc.subr[8] 如何获取额外的命令行参数？它应该直接获取这些参数吗？绝对不应该。首先，man:sh[1] 函数无法访问其调用者的位置参数，而 man:rc.subr[8] 只不过是一组这样的函数。其次，[.filename]#rc.d# 的良好实践要求由主脚本决定向其方法传递哪些参数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:747
+#, fuzzy
 msgid ""
 "So the approach adopted by man:rc.subr[8] is as follows: `run_rc_command` "
 "passes on all its arguments but the first one to the respective method "
@@ -1456,29 +1566,30 @@ msgid ""
 "`start`, `stop`, etc.  It will be shifted out by `run_rc_command`, so what "
 "is `$2` in the original command line will be presented as `$1` to the "
 "method, and so on."
-msgstr ""
+msgstr "因此，man:rc.subr[8] 采用了以下做法：`run_rc_command` 会将除第一个参数外的所有参数原样传递给相应的方法。被省略的第一个参数是方法本身的名称：`start`、`stop` 等。`run_rc_command` 会将它移出，因此，原始命令行中的 `$2` 会作为 `$1` 传给方法，其余参数依此类推。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:750
+#, fuzzy
 msgid ""
 "To illustrate this opportunity, let us modify the primitive dummy script so "
 "that its messages depend on the additional arguments supplied.  Here we go:"
-msgstr ""
+msgstr "为了说明这种用法，我们来修改这个简单的虚设脚本，使它的消息取决于传入的额外参数。如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:762
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=\"dummy\"\n"
 "start_cmd=\"${name}_start\"\n"
 "stop_cmd=\":\"\n"
 "kiss_cmd=\"${name}_kiss\"\n"
 "extra_commands=\"kiss\"\n"
-msgstr ""
+msgstr "name=\"dummy\"\nstart_cmd=\"${name}_start\"\nstop_cmd=\":\"\nkiss_cmd=\"${name}_kiss\"\nextra_commands=\"kiss\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:771
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dummy_start()\n"
 "{\n"
@@ -1488,11 +1599,11 @@ msgid ""
 "                echo \"Nothing started.\"\n"
 "        fi\n"
 "}\n"
-msgstr ""
+msgstr "dummy_start()\n{\n        if [ $# -gt 0 ]; then <.>\n                echo \"Greeting message: $*\"\n        else\n                echo \"Nothing started.\"\n        fi\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:787
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dummy_kiss()\n"
 "{\n"
@@ -1509,202 +1620,219 @@ msgid ""
 "                ;;\n"
 "        esac\n"
 "}\n"
-msgstr ""
+msgstr "dummy_kiss()\n{\n        echo -n \"A ghost gives you a kiss\"\n        if [ $# -gt 0 ]; then <.>\n                echo -n \" and whispers: $*\"\n        fi\n        case \"$*\" in\n        *[.!?])\n                echo\n                ;;\n        *)\n                echo .\n                ;;\n        esac\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:790
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "load_rc_config $name\n"
 "run_rc_command \"$@\" <.>\n"
-msgstr ""
+msgstr "load_rc_config $name\nrun_rc_command \"$@\" <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:793
+#, fuzzy
 msgid "What essential changes can we notice in the script?"
-msgstr ""
+msgstr "我们能从脚本中注意到哪些重要变化？"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:798
+#, fuzzy
 msgid ""
 "&#10122; All arguments you type after `start` can end up as positional "
 "parameters to the respective method.  We can use them in any way according "
 "to our task, skills, and fancy.  In the current example, we just pass all of "
 "them to man:echo[1] as one string in the next line - note `$*` within the "
 "double quotes.  Here is how the script can be invoked now:"
-msgstr ""
+msgstr "&#10122; 在 `start` 后输入的所有参数最终都可以成为相应方法的位置参数。我们可以根据任务、技能和喜好以任意方式使用它们。在当前示例中，我们只是在下一行将它们全部作为一个字符串传给 man:echo[1]——注意双引号中的 `$*`。现在可以这样调用脚本："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:803
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /etc/rc.d/dummy start\n"
 "Nothing started.\n"
-msgstr ""
+msgstr "# /etc/rc.d/dummy start\nNothing started.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:806
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /etc/rc.d/dummy start Hello world!\n"
 "Greeting message: Hello world!\n"
-msgstr ""
+msgstr "# /etc/rc.d/dummy start Hello world!\nGreeting message: Hello world!\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:810
+#, fuzzy
 msgid ""
 "&#10123; The same applies to any method our script provides, not only to a "
 "standard one.  We have added a custom method named `kiss`, and it can take "
 "advantage of the extra arguments not less than `start` does. E.g.:"
-msgstr ""
+msgstr "&#10123; 这同样适用于脚本提供的任何方法，而不仅仅是标准方法。我们添加了一个名为 `kiss` 的自定义方法，它也能像 `start` 一样利用额外参数。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:815
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /etc/rc.d/dummy kiss\n"
 "A ghost gives you a kiss.\n"
-msgstr ""
+msgstr "# /etc/rc.d/dummy kiss\nA ghost gives you a kiss.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:818
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /etc/rc.d/dummy kiss Once I was Etaoin Shrdlu...\n"
 "A ghost gives you a kiss and whispers: Once I was Etaoin Shrdlu...\n"
-msgstr ""
+msgstr "# /etc/rc.d/dummy kiss Once I was Etaoin Shrdlu...\nA ghost gives you a kiss and whispers: Once I was Etaoin Shrdlu...\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:821
+#, fuzzy
 msgid ""
 "&#10124; If we want just to pass all extra arguments to any method, we can "
 "merely substitute `\"$@\"` for `\"$1\"` in the last line of our script, "
 "where we invoke `run_rc_command`."
-msgstr ""
+msgstr "&#10124; 如果只想将所有额外参数传给任意方法，只需在脚本最后一行调用 `run_rc_command` 时，将 `\"$1\"` 替换为 `\"$@\"`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:827
+#, fuzzy
 msgid ""
 "An man:sh[1] programmer ought to understand the subtle difference between `"
 "$*` and `$@` as the ways to designate all positional parameters.  For its in-"
 "depth discussion, refer to a good handbook on man:sh[1] scripting.  _Do not_ "
 "use the expressions until you fully understand them because their misuse "
 "will result in buggy and insecure scripts."
-msgstr ""
+msgstr "man:sh[1] 程序员应理解 `$*` 和 `$@` 作为所有位置参数表示方式之间的细微差别。深入讨论请参阅优秀的 man:sh[1] 脚本编写手册。未完全理解之前__不要__使用这些表达式，因为误用会导致脚本存在错误和安全隐患。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:834
+#, fuzzy
 msgid ""
 "Currently `run_rc_command` may have a bug that prevents it from keeping the "
 "original boundaries between arguments.  That is, arguments with embedded "
 "whitespace may not be processed correctly.  The bug stems from `$*` misuse."
-msgstr ""
+msgstr "目前，`run_rc_command` 可能存在一个 bug，导致它无法保留参数原有的边界。也就是说，包含空白字符的参数可能无法正确处理。该 bug 源于对 `$*` 的误用。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Making a script ready for Service Jails"
-msgstr ""
+msgstr "让脚本支持服务 jail"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:840
+#, fuzzy
 msgid ""
 "Scripts which start a long running service are suitable for service jails, "
 "and should come with a suitable service jail configuration."
-msgstr ""
+msgstr "用于启动长时间运行服务的脚本适合在服务 jail 中运行，并且应附带合适的服务 jail 配置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:842
+#, fuzzy
 msgid ""
 "Some examples of scripts which are not suitable to run in a service jail:"
-msgstr ""
+msgstr "以下是一些不适合在服务 jail 中运行的脚本示例："
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:844
+#, fuzzy
 msgid ""
 "any script which in the start command only changes a runtime setting for "
 "programs or the kernel,"
-msgstr ""
+msgstr "在 `start` 命令中只更改程序或内核运行时设置的任何脚本，"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:845
+#, fuzzy
 msgid "or tries to mount something,"
-msgstr ""
+msgstr "或尝试挂载任何内容的脚本，"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:846
+#, fuzzy
 msgid "or finds and deletes files"
-msgstr ""
+msgstr "或查找并删除文件的脚本"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:848
+#, fuzzy
 msgid ""
 "Scripts not suitable to run in a service jail need to prevent the use within "
 "service jails."
-msgstr ""
+msgstr "不适合在服务 jail 中运行的脚本必须阻止在服务 jail 中使用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:850
+#, fuzzy
 msgid ""
 "A script with a long running service which needs to do something listed "
 "above before the start or after the stop, can either be split-up into two "
 "scripts with dependencies, or use the precommand and postcommand parts of "
 "the script to perform this action."
-msgstr ""
+msgstr "如果用于运行长时间服务的脚本需要在启动前或停止后执行上述操作，可以将其拆分成两个有依赖关系的脚本，也可以使用脚本的 precommand 和 postcommand 部分来执行该操作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:853
+#, fuzzy
 msgid ""
 "By default, only the start and stop parts of a script are run within a "
 "service jail, the rest is run outside the jail.  As such any setting used in "
 "the start/stop parts of the script can not be set from e.g. a precommand."
-msgstr ""
+msgstr "默认情况下，脚本中只有 `start` 和 `stop` 部分会在服务 jail 内运行，其余部分在 jail 外运行。因此，不能通过例如 precommand 来设置 `start`/`stop` 部分所用的任何设置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:855
+#, fuzzy
 msgid ""
 "To make a script ready for use with extref:{handbook}jails[Service Jails, "
 "service-jails], only one more config line needs to be inserted:"
-msgstr ""
+msgstr "要让脚本支持 extref:{handbook}jails[服务 jail，service-jails]，只需再插入一行配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:865
 #: documentation/content/en/articles/rc-scripting/_index.adoc:898
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=\"dummy\"\n"
 "start_cmd=\"${name}_start\"\n"
 "stop_cmd=\":\"\n"
-msgstr ""
+msgstr "name=\"dummy\"\nstart_cmd=\"${name}_start\"\nstop_cmd=\":\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:867
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ": ${dummy_svcj_options:=\"\"} <.>\n"
-msgstr ""
+msgstr ": ${dummy_svcj_options:=\"\"} <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:872
 #: documentation/content/en/articles/rc-scripting/_index.adoc:903
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dummy_start()\n"
 "{\n"
 "        echo \"Nothing started.\"\n"
 "}\n"
-msgstr ""
+msgstr "dummy_start()\n{\n        echo \"Nothing started.\"\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:879
+#, fuzzy
 msgid ""
 "&#10122; If it makes sense that the script runs in a jail, it must have an "
 "overridable service jails configuration.  If it does not need network access "
 "or access to any other resource which is restricted in jails, an empty "
 "config like displayed is enough."
-msgstr ""
+msgstr "&#10122; 如果脚本适合在 jail 中运行，则必须提供可覆盖的 service jails 配置。如果脚本不需要网络访问，也不需要访问 jail 中受限的其他资源，那么像示例中这样使用空配置即可。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:884
+#, fuzzy
 msgid ""
 "Strictly speaking an empty config is not needed, but it explicitly describes "
 "that the script is service jails ready, and that it does not need additional "
@@ -1712,63 +1840,68 @@ msgid ""
 "config in such a case.  The most common option to use is \"net_basic\", "
 "which enables the use of the hosts IPv4 and IPv6 addresses.  All possible "
 "options are explained in man:rc.conf[5]."
-msgstr ""
+msgstr "严格来说，空配置并非必需，但它明确说明该脚本已准备好支持 service jails，且不需要额外的 jail 权限。因此，在这种情况下，强烈建议添加这样的空配置。最常用的选项是 \"net_basic\"，它允许使用主机的 IPv4 和 IPv6 地址。所有可用选项均在 man:rc.conf[5] 中说明。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:886
+#, fuzzy
 msgid ""
 "If a setting for the start/stop depends on variables from the rc-framework "
 "(e.g., set inside man:rc.conf[5]), this needs to be handled by "
 "``load_rc_config`` and ``run_rc_command`` instead of inside a precommand."
-msgstr ""
+msgstr "如果启动／停止设置依赖 rc 框架中的变量（例如，在 man:rc.conf[5] 中设置的变量），则必须通过 ``load_rc_config`` 和 ``run_rc_command`` 处理，而不是在 precommand 中处理。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:888
+#, fuzzy
 msgid ""
 "If for some reason a script can not be run within a service jail, e.g., "
 "because it is not possible to run or it does not make sense to run it in a "
 "jail, use the following:"
-msgstr ""
+msgstr "如果由于某种原因脚本无法在 service jail 中运行，例如无法在 jail 中运行，或在 jail 中运行没有意义，请使用以下配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:907
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "load_rc_config $name\n"
 "dummy_svcj=\"NO\"\t\t# does not make sense to run in a svcj <.>\n"
 "run_rc_command \"$1\"\n"
-msgstr ""
+msgstr "load_rc_config $name\ndummy_svcj=\"NO\"\t\t# does not make sense to run in a svcj <.>\nrun_rc_command \"$1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:910
+#, fuzzy
 msgid ""
 "&#10122; The disabling needs to happen after the ``load_rc_config`` call, "
 "else a man:rc.conf[5] setting may override it."
-msgstr ""
+msgstr "&#10122; 必须在调用 ``load_rc_config`` 之后禁用，否则 man:rc.conf[5] 中的设置可能会覆盖它。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:912
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Advanced rc-scripting: Instancing"
-msgstr ""
+msgstr "高级 rc 脚本编写：实例化"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:920
+#, fuzzy
 msgid ""
 "Sometimes it is useful to run several instances of a service.  Typically you "
 "want to be able to start/stop such instances independently, and you want to "
 "have a separate config file for each instance.  Each instance should be "
 "started at boot, survive updates, and benefit from updates."
-msgstr ""
+msgstr "有时需要运行某项服务的多个实例。通常，希望能够独立启动／停止这些实例，并为每个实例使用单独的配置文件。每个实例都应在启动时运行、在更新后继续存在，并从更新中受益。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:922
+#, fuzzy
 msgid "Here is an example of a rc script which supports this:"
-msgstr ""
+msgstr "下面是一个支持此功能的 rc 脚本示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:940
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#\n"
 "# PROVIDE: dummy\n"
@@ -1783,11 +1916,11 @@ msgid ""
 "# dummy_user (string):\tUser account to run with.\n"
 "#\t\t\tDefault: www\n"
 "#\n"
-msgstr ""
+msgstr "#\n# PROVIDE: dummy\n# REQUIRE: NETWORKING SERVERS\n# KEYWORD: shutdown\n#\n# Add these following line to /etc/rc.conf.local or /etc/rc.conf\n# to enable this service:\n#\n# dummy_enable (bool):\tSet it to YES to enable dummy on startup.\n#\t\t\tDefault: NO\n# dummy_user (string):\tUser account to run with.\n#\t\t\tDefault: www\n#\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:953
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "case $0 in <.>\n"
 "/etc/rc*)\n"
@@ -1799,119 +1932,128 @@ msgid ""
 "\tname=$0\n"
 "\t;;\n"
 "esac\n"
-msgstr ""
+msgstr "case $0 in <.>\n/etc/rc*)\n\t# during boot (shutdown) $0 is /etc/rc (/etc/rc.shutdown),\n\t# so get the name of the script from $_file\n\tname=$_file\n\t;;\n*)\n\tname=$0\n\t;;\nesac\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:958
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=${name##*/} <.>\n"
 "rcvar=\"${name}_enable\" <.>\n"
 "desc=\"Short description of this service\"\n"
 "command=\"/usr/local/sbin/dummy\"\n"
-msgstr ""
+msgstr "name=${name##*/} <.>\nrcvar=\"${name}_enable\" <.>\ndesc=\"Short description of this service\"\ncommand=\"/usr/local/sbin/dummy\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:960
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "load_rc_config \"$name\"\n"
-msgstr ""
+msgstr "load_rc_config \"$name\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:964
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "eval \"${rcvar}=\\${${rcvar}:-'NO'}\" <.>\n"
 "eval \"${name}_svcj_options=\\${${name}_svcj_options:-'net_basic'}\" <.>\n"
 "eval \"_dummy_user=\\${${name}_user:-'www'}\" <.>\n"
-msgstr ""
+msgstr "eval \"${rcvar}=\\${${rcvar}:-'NO'}\" <.>\neval \"${name}_svcj_options=\\${${name}_svcj_options:-'net_basic'}\" <.>\neval \"_dummy_user=\\${${name}_user:-'www'}\" <.>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:969
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "_dummy_configname=/usr/local/etc/${name}.cfg <.>\n"
 "pidfile=/var/run/dummy/${name}.pid\n"
 "required_files ${_dummy_configname}\n"
 "command_args=\"-u ${_dummy_user} -c ${_dummy_configfile} -p ${pidfile}\"\n"
-msgstr ""
+msgstr "_dummy_configname=/usr/local/etc/${name}.cfg <.>\npidfile=/var/run/dummy/${name}.pid\nrequired_files ${_dummy_configname}\ncommand_args=\"-u ${_dummy_user} -c ${_dummy_configfile} -p ${pidfile}\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:977
+#, fuzzy
 msgid ""
 "&#10122; and &#10123; make sure to set the name variable to the man:"
 "basename[1] of the script name.  If the filename is [.filename]#/usr/local/"
 "etc/rc.d/dummy#, name is set to [.filename]#dummy#.  This way changing the "
 "filename of the rc script changes automatically the content of the name "
 "variable."
-msgstr ""
+msgstr "&#10122; 和 &#10123; 确保将 name 变量设置为脚本名称的 man:basename[1]。如果文件名为 [.filename]#/usr/local/etc/rc.d/dummy#，则 name 会被设为 [.filename]#dummy#。这样，更改 rc 脚本的文件名时，name 变量的内容也会自动更改。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:980
+#, fuzzy
 msgid ""
 "&#10124; specifies the variable name which is used in [.filename]#rc.conf# "
 "to enable this service based upon the filename of this script.  In this "
 "example this resolves to dummy_enable."
-msgstr ""
+msgstr "&#10124; 根据此脚本的文件名，指定用于在 [.filename]#rc.conf# 中启用此服务的变量名。在此示例中，该变量名为 dummy_enable。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:982
+#, fuzzy
 msgid "&#10125; makes sure the default for the _enable variable is NO."
-msgstr ""
+msgstr "&#10125; 确保 _enable 变量的默认值为 NO。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:985
+#, fuzzy
 msgid ""
 "&#10126; is an example of having some defaults for service specific "
 "framework variables, in this case the service jails options."
-msgstr ""
+msgstr "&#10126; 展示如何为特定于服务的框架变量设置默认值，此处设置的是 service jails 选项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:987
+#, fuzzy
 msgid ""
 "&#10127; and &#10128; set variables internal to the script (pay attention to "
 "the underscore in front of _dummy_user to make it different from dummy_user "
 "which can be set in [.filename]#rc.conf#)."
-msgstr ""
+msgstr "&#10127; 和 &#10128; 设置脚本内部使用的变量（注意，_dummy_user 前面的下划线使其区别于可在 [.filename]#rc.conf# 中设置的 dummy_user）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:990
+#, fuzzy
 msgid ""
 "The part in &#10126; is for variables which are not used inside the script "
 "itself but in the rc framework.  All the variables which are used as "
 "parameters somewhere in the script are assigned to a generic variable like "
 "in &#10128; to make it more easy to reference them (no need to eval them at "
 "each place of use)."
-msgstr ""
+msgstr "&#10126; 中的部分用于设置脚本本身不使用、而由 rc 框架使用的变量。脚本中用作参数的所有变量都像 &#10128; 中那样赋给通用变量，以便更方便地引用它们（无需在每个使用位置都调用 eval）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:993
+#, fuzzy
 msgid ""
 "This script will now behave differently if the start script has a different "
 "name.  This allows to create symlinks to it:"
-msgstr ""
+msgstr "如果启动脚本的名称不同，此脚本现在的行为也会不同。这样便可以创建指向它的符号链接："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/rc-scripting/_index.adoc:999
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ln -s dummy /usr/local/etc/rc.d/dummy_foo\n"
 "# sysrc dummy_foo_enable=YES\n"
 "# service dummy_foo start\n"
-msgstr ""
+msgstr "# ln -s dummy /usr/local/etc/rc.d/dummy_foo\n# sysrc dummy_foo_enable=YES\n# service dummy_foo start\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1004
+#, fuzzy
 msgid ""
 "The above creates an instance of the dummy service with the name dummy_foo.  "
 "It does not use the config file [.filename]#/usr/local/etc/dummy.cfg# but "
 "the config file [.filename]#/usr/local/etc/dummy_foo.cfg# (&#10128;), and it "
 "uses the PID file [.filename]#/var/run/dummy/dummy_foo.pid# instead of [."
 "filename]#/var/run/dummy/dummy.pid#."
-msgstr ""
+msgstr "以上操作会创建一个名为 dummy_foo 的 dummy 服务实例。它使用的配置文件不是 [.filename]#/usr/local/etc/dummy.cfg#，而是 [.filename]#/usr/local/etc/dummy_foo.cfg#（&#10128;）；它使用的 PID 文件也不是 [.filename]#/var/run/dummy/dummy.pid#，而是 [.filename]#/var/run/dummy/dummy_foo.pid#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1011
+#, fuzzy
 msgid ""
 "The services dummy and dummy_foo can be managed independently of each other, "
 "while having the start script update itself on package update (due to the "
@@ -1920,38 +2062,41 @@ msgid ""
 "in the startup order a copy needs to be made instead of using a symlink.  "
 "This prevents the automatic pick-up of changes to the start script when an "
 "update is installed."
-msgstr ""
+msgstr "dummy 和 dummy_foo 服务可以独立管理，同时启动脚本也会在软件包更新时自行更新（因为使用了符号链接）。这不会更新 REQUIRE 行，因此无法轻松依赖特定实例。若要在启动顺序中依赖某个特定实例，必须复制脚本，而不能使用符号链接。这样会导致安装更新时无法自动获取启动脚本的更改。"
 
 #. type: Title ==
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1013
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further reading"
-msgstr ""
+msgstr "延伸阅读"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1017
+#, fuzzy
 msgid ""
 "[[lukem]]http://www.mewburn.net/luke/papers/rc.d.pdf[The original article by "
 "Luke Mewburn] offers a general overview of [.filename]#rc.d# and detailed "
 "rationale for its design decisions.  It provides insight on the whole [."
 "filename]#rc.d# framework and its place in a modern BSD operating system."
-msgstr ""
+msgstr "[[lukem]]link:http://www.mewburn.net/luke/papers/rc.d.pdf[Luke Mewburn 的原始文章]概述了 [.filename]#rc.d#，并详细说明了其设计决策的原因。文章深入介绍了整个 [.filename]#rc.d# 框架及其在现代 BSD 操作系统中的作用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1020
+#, fuzzy
 msgid ""
 "[[manpages]]The manual pages man:rc[8], man:rc.subr[8], and man:rcorder[8] "
 "document the [.filename]#rc.d# components in great detail.  You cannot fully "
 "use the [.filename]#rc.d# power without studying the manual pages and "
 "referring to them while writing your own scripts."
-msgstr ""
+msgstr "[[manpages]]手册页 man:rc[8]、man:rc.subr[8] 和 man:rcorder[8] 详细介绍了 [.filename]#rc.d# 的各个组件。若不研读这些手册页，并在编写自己的脚本时参考它们，就无法充分发挥 [.filename]#rc.d# 的功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/rc-scripting/_index.adoc:1024
+#, fuzzy
 msgid ""
 "The major source of working, real-life examples is [.filename]#/etc/rc.d# in "
 "a live system.  Its contents are easy and pleasant to read because most "
 "rough corners are hidden deep in man:rc.subr[8].  Keep in mind though that "
 "the [.filename]#/etc/rc.d# scripts were not written by angels, so they might "
 "suffer from bugs and suboptimal design decisions.  Now you can improve them!"
-msgstr ""
+msgstr "实际可用示例的主要来源是运行中的系统里的 [.filename]#/etc/rc.d#。其中的内容易于阅读，因为大多数棘手之处都隐藏在 man:rc.subr[8] 深处。不过请记住，编写 [.filename]#/etc/rc.d# 脚本的并非天使，因此其中可能存在错误和欠佳的设计决策。现在你可以改进它们了！"

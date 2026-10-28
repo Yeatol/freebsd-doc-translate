@@ -17,36 +17,37 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/help/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where to get help"
-msgstr ""
+msgstr "如何获取帮助"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/accessibility/help/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part I. General"
-msgstr ""
+msgstr "第一部分：常规内容"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/help/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 1. Help"
-msgstr ""
+msgstr "第 1 章：帮助"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/help/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/help/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mailing Lists"
-msgstr ""
+msgstr "邮件列表"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/help/_index.adoc:57
+#, fuzzy
 msgid ""
 "Mailing lists are the primary communication channel for the FreeBSD "
 "community, covering a wide range of topics related to the project.  Messages "
@@ -54,72 +55,77 @@ msgid ""
 "well-suited for use with screen readers (both Braille displays and speech "
 "synthesizers).  A complete list of available mailing lists can be found at: "
 "https://lists.freebsd.org/."
-msgstr ""
+msgstr "邮件列表是 FreeBSD 社区的主要交流渠道，涵盖与项目相关的各种主题。消息通常以纯文本形式编写，不含图形元素，因此非常适合使用屏幕阅读器（盲文显示器和语音合成器）阅读。完整的邮件列表清单请参阅 link:https://lists.freebsd.org/[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/help/_index.adoc:60
+#, fuzzy
 msgid ""
 "For accessibility issues, the main point of contact is the FreeBSD "
 "Accessibility Mailing List.  To subscribe, browse the archive, send "
 "messages, or manage your subscription, visit: https://lists.freebsd.org/"
 "subscription/freebsd-accessibility"
-msgstr ""
+msgstr "对于无障碍访问问题，主要联系渠道是 FreeBSD 无障碍访问邮件列表。要订阅、浏览存档、发送消息或管理订阅，请访问 link:https://lists.freebsd.org/subscription/freebsd-accessibility[]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/help/_index.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chat"
-msgstr ""
+msgstr "聊天"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/help/_index.adoc:67
+#, fuzzy
 msgid ""
 "FreeBSD users and developers are also active on IRC (Internet Relay Chat), "
 "where real-time communication takes place.  A complete list of servers and "
 "channels is available at: https://wiki.freebsd.org/IRC/Channels Messages are "
 "typically exchanged in plain text, making IRC well-suited for screen readers "
 "(both Braille displays and speech synthesizers)."
-msgstr ""
+msgstr "FreeBSD 用户和开发者也活跃于 IRC（互联网中继聊天），在这里可以进行实时交流。完整的服务器和频道列表请参阅 link:https://wiki.freebsd.org/IRC/Channels[]。消息通常以纯文本形式交流，因此 IRC 非常适合使用屏幕阅读器（盲文显示器和语音合成器）的用户。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/help/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports and Packages"
-msgstr ""
+msgstr "Ports 和软件包"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/help/_index.adoc:72
+#, fuzzy
 msgid ""
 "If the issue pertains to an external tool installed through a extref:"
 "{handbook}ports[port or package], consider including the port maintainer in "
 "the discussion to ensure proper attention and resolution."
-msgstr ""
+msgstr "如果问题涉及通过 extref:{handbook}ports[port 或软件包] 安装的外部工具，可以考虑在讨论中联系该 port 的维护者，以确保问题得到妥善关注和解决。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/help/_index.adoc:75
+#, fuzzy
 msgid ""
 "To find out who maintains a specific port, navigate to the port's directory "
 "and run the command `make maintainer`.  For example, to find the maintainer "
 "of the package:www/edbrowse[] port, run:"
-msgstr ""
+msgstr "要查找特定 port 的维护者，请进入该 port 的目录并运行命令 `make maintainer`。例如，要查找 package:www/edbrowse[] port 的维护者，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/help/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd /usr/ports/www/edbrowse\n"
 "% make maintainer\n"
-msgstr ""
+msgstr "% cd /usr/ports/www/edbrowse\n% make maintainer\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/help/_index.adoc:84
+#, fuzzy
 msgid ""
 "To find the maintainer of an installed package, use the `pkg info -f "
 "_package_`.  For example:"
-msgstr ""
+msgstr "要查找已安装软件包的维护者，请使用 `pkg info -f _package_`。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/help/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pkg info -f edbrowse | grep Maintainer | awk '{print $3}'\n"
-msgstr ""
+msgstr "% pkg info -f edbrowse | grep Maintainer | awk '{print $3}'\n"

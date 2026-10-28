@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/leap-seconds/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A short description of how leap seconds are handled on FreeBSD"
-msgstr ""
+msgstr "FreeBSD 如何处理闰秒的简要说明"
 
 #. type: Title =
 #: documentation/content/en/articles/leap-seconds/_index.adoc:1
@@ -66,18 +66,20 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:51
+#, fuzzy
 msgid ""
 "Leap seconds are announced by https://www.iers.org/IERS/EN/Home/home_node."
 "html[IERS] on https://datacenter.iers.org/data/latestVersion/16_BULLETIN_C16."
 "txt[Bulletin C]."
-msgstr ""
+msgstr "国际地球自转和参考系统服务（ link:https://www.iers.org/IERS/EN/Home/home_node.html[IERS]）会通过 link:https://datacenter.iers.org/data/latestVersion/16_BULLETIN_C16.txt[Bulletin C] 宣布闰秒。"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:54
+#, fuzzy
 msgid ""
 "Standard leap second behavior is described in https://datatracker.ietf.org/"
 "doc/html/rfc7164#section-3[RFC 7164].  Also see man:time2posix[3]."
-msgstr ""
+msgstr "标准的闰秒行为在 link:https://datatracker.ietf.org/doc/html/rfc7164#section-3[RFC 7164] 中有说明。 另请参见 man:time2posix[3]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/leap-seconds/_index.adoc:56
@@ -87,6 +89,7 @@ msgstr "FreeBSD 对闰秒的默认处理方式"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:61
+#, fuzzy
 msgid ""
 "The easiest way to handle leap seconds is with the POSIX time rules FreeBSD "
 "uses by default, combined with extref:{handbook}network-servers[NTP, network-"
@@ -94,22 +97,24 @@ msgid ""
 "upstream NTP servers that handle leap seconds correctly, the leap second "
 "will cause the system time to automatically repeat the last second of the "
 "day.  No other adjustments are necessary."
-msgstr ""
+msgstr "处理闰秒最简单的方法是使用 FreeBSD 默认采用的 POSIX 时间规则，并配合 extref:{handbook}network-servers[NTP，network-ntp]。 运行 man:ntpd[8] 且时间与能够正确处理闰秒的上游 NTP 服务器同步时，闰秒会使系统时间自动重复当天的最后一秒。 无需进行其他调整。"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:63
+#, fuzzy
 msgid ""
 "If the upstream NTP servers do not handle leap seconds correctly, man:"
 "ntpd[8] will step the time by one second after the errant upstream server "
 "has noticed and stepped itself."
-msgstr ""
+msgstr "如果上游 NTP 服务器不能正确处理闰秒，man:ntpd[8] 会在出错的上游服务器发现问题并自行调整时间后，将时间向前调整一秒。"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:65
+#, fuzzy
 msgid ""
 "If NTP is not being used, manual adjustment of the system clock will be "
 "required after the leap second has passed."
-msgstr ""
+msgstr "如果不使用 NTP，则必须在闰秒过后手动调整系统时钟。"
 
 #. type: Title ==
 #: documentation/content/en/articles/leap-seconds/_index.adoc:67
@@ -119,19 +124,21 @@ msgstr "注意"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:71
+#, fuzzy
 msgid ""
 "Leap seconds are inserted at the same instant all over the world: UTC "
 "midnight.  In Japan that is mid-morning, in the Pacific mid-day, in the "
 "Americas late afternoon, and in Europe at night."
-msgstr ""
+msgstr "闰秒在全球同一时刻插入：UTC 午夜。 在日本是上午中段，在太平洋地区是中午，在美洲是傍晚，在欧洲则是夜间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:73
+#, fuzzy
 msgid ""
 "We believe and expect that FreeBSD, if provided correct and stable NTP "
 "service, will work as designed during this leap second, as it did during the "
 "previous ones."
-msgstr ""
+msgstr "我们相信并预期，只要 FreeBSD 获得正确且稳定的 NTP 服务，就会在这个闰秒期间按设计正常运行，就像此前的闰秒一样。"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:76
@@ -148,11 +155,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:78
+#, fuzzy
 msgid ""
 "Other operating systems and other computers may or may not handle the leap-"
 "second the same way as FreeBSD, and systems without correct and stable NTP "
 "service will not know anything about leap seconds at all."
-msgstr ""
+msgstr "其他操作系统和计算机处理闰秒的方式可能与 FreeBSD 相同，也可能不同；没有正确且稳定的 NTP 服务的系统则完全不会知道闰秒的存在。"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:80
@@ -192,9 +200,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/leap-seconds/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ntpq -c 'rv 0 leap'\n"
-msgstr ""
+msgstr "% ntpq -c 'rv 0 leap'\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/leap-seconds/_index.adoc:98

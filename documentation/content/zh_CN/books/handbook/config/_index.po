@@ -26,9 +26,9 @@ msgstr "在FreeBSD使用过程中，相当重要的环节之一就是如何正�
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/config/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/config/_index.adoc:1
@@ -39,9 +39,9 @@ msgstr "设定与调校"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/config/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration, Services, Logging and Power Management"
-msgstr ""
+msgstr "配置、服务、日志记录和电源管理"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/config/_index.adoc:52
@@ -74,10 +74,11 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:60
+#, fuzzy
 msgid ""
 "Understand UNIX(R) and FreeBSD basics (crossref:basics[basics,FreeBSD "
 "Basics])."
-msgstr ""
+msgstr "了解 UNIX(R) 和 FreeBSD 基础知识（crossref:basics[basics,FreeBSD 基础知识]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:62
@@ -88,20 +89,23 @@ msgstr "读完本章节，你将会知道："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:64
+#, fuzzy
 msgid "How to use the various configuration files in [.filename]#/etc#."
-msgstr ""
+msgstr "如何使用 [.filename]#/etc# 中的各种配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:65
+#, fuzzy
 msgid ""
 "The basics of [.filename]#rc.conf# configuration and [.filename]#/usr/local/"
 "etc/rc.d# startup scripts."
-msgstr ""
+msgstr "[.filename]#rc.conf# 配置和 [.filename]#/usr/local/etc/rc.d# 启动脚本的基础知识。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:66
+#, fuzzy
 msgid "How to tune FreeBSD using man:sysctl[8] variables."
-msgstr ""
+msgstr "如何使用 man:sysctl[8] 变量调整 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:67
@@ -118,225 +122,233 @@ msgstr "配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:72
+#, fuzzy
 msgid ""
 "FreeBSD maintains a clear separation between the base system and third party "
 "applications and therefore this affects where the configuration files of "
 "these applications are located."
-msgstr ""
+msgstr "FreeBSD 将基本系统与第三方应用程序明确分开，因此这些应用程序的配置文件也存放在不同的位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:75
+#, fuzzy
 msgid ""
 "FreeBSD base system configuration is located at the [.filename]#/etc# "
 "directory, and the [.filename]#/usr/local/etc# directory contains all the "
 "configuration files of the applications installed on the system through the "
 "ports collection and packages."
-msgstr ""
+msgstr "FreeBSD 基本系统的配置文件位于 [.filename]#/etc# 目录，而 [.filename]#/usr/local/etc# 目录包含通过 Ports Collection 和软件包安装到系统中的应用程序的所有配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:78
+#, fuzzy
 msgid ""
 "The kernel state configuration is located in [.filename]#/etc/sysctl.conf#.  "
 "In the section crossref:config[configtuning-sysctl, The sysctl utility], the "
 "operation of man:sysctl[8] will be explained in more detail."
-msgstr ""
+msgstr "内核状态配置位于 [.filename]#/etc/sysctl.conf# 中。crossref:config[configtuning-sysctl, sysctl 实用程序]一节将更详细地说明 man:sysctl[8] 的工作方式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:80
+#, fuzzy
 msgid ""
 "For more information about the FreeBSD file system structure refer to man:"
 "hier[7]."
-msgstr ""
+msgstr "有关 FreeBSD 文件系统结构的更多信息，请参阅 man:hier[7]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:83
+#, fuzzy
 msgid ""
 "As a general rule, configuration files do not use a standard on what syntax "
 "they must follow.  Although it is true that the `#` character is normally "
 "used to comment a line and that each line has a configuration variable."
-msgstr ""
+msgstr "通常，配置文件没有必须遵循的标准语法。虽然通常使用 `#` 字符注释一行，而且每行都包含一个配置变量，但情况并非总是如此。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:87
+#, fuzzy
 msgid ""
 "Some applications like man:pkg[8] are starting to use the link:https://"
 "github.com/vstakhov/libucl[Universal Configuration Language (UCL)]."
-msgstr ""
+msgstr "一些应用程序（例如 man:pkg[8]）开始使用 link:https://github.com/vstakhov/libucl[通用配置语言（UCL）]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#/etc# directory"
-msgstr ""
+msgstr "[.filename]#/etc# 目录"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:92
+#, fuzzy
 msgid ""
 "The [.filename]#/etc# directory contains all of the FreeBSD base system "
 "configuration files that are responsible for configuring FreeBSD."
-msgstr ""
+msgstr "[.filename]#/etc# 目录包含所有负责配置 FreeBSD 的基本系统配置文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:96
+#, fuzzy
 msgid ""
 "*Extreme* caution must be taken when modifying files in the [.filename]#/"
 "etc# directory; misconfiguration could make FreeBSD unbootable or "
 "malfunction."
-msgstr ""
+msgstr "修改 [.filename]#/etc# 目录中的文件时必须格外谨慎；配置错误可能导致 FreeBSD 无法启动或运行异常。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc#"
-msgstr ""
+msgstr "[.filename]#/etc#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System configuration files and scripts."
-msgstr ""
+msgstr "系统配置文件和脚本。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/defaults#"
-msgstr ""
+msgstr "[.filename]#/etc/defaults#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default system configuration files, see man:rc[8] for more information."
-msgstr ""
+msgstr "系统默认配置文件，更多信息请参阅 man:rc[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/fstab#"
-msgstr ""
+msgstr "[.filename]#/etc/fstab#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:fstab[5] contains descriptive information about the various file systems."
-msgstr ""
+msgstr "man:fstab[5] 包含有关各种文件系统的描述性信息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mail#"
-msgstr ""
+msgstr "[.filename]#/etc/mail#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Extra man:sendmail[8] configuration and other MTA configuration files."
-msgstr ""
+msgstr "额外的 man:sendmail[8] 配置文件和其他 MTA 配置文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mtree#"
-msgstr ""
+msgstr "[.filename]#/etc/mtree#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mtree configuration files, see man:mtree[8] for more information."
-msgstr ""
+msgstr "mtree 配置文件，更多信息请参阅 man:mtree[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/pam.d#"
-msgstr ""
+msgstr "[.filename]#/etc/pam.d#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration files for the Pluggable Authentication Modules (PAM) library."
-msgstr ""
+msgstr "可插拔认证模块（PAM）库的配置文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/periodic#"
-msgstr ""
+msgstr "[.filename]#/etc/periodic#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scripts that are run daily, weekly, and monthly, via man:cron[8], see man:periodic[8] for more information."
-msgstr ""
+msgstr "通过 man:cron[8] 每日、每周和每月运行的脚本，更多信息请参阅 man:periodic[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/rc.d#"
-msgstr ""
+msgstr "[.filename]#/etc/rc.d#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System and daemon startup/control scripts, see man:rc[8] for more information."
-msgstr ""
+msgstr "系统和守护进程的启动/控制脚本，更多信息请参阅 man:rc[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/rc.conf#"
-msgstr ""
+msgstr "[.filename]#/etc/rc.conf#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contains descriptive information about the local host name, configuration\n"
 "details for any potential network interfaces and which services should be\n"
 "started up at system initial boot time. More information in\n"
 "crossref:bsdinstall[configtuning-core-configuration, Managing System-Specific Configuration]"
-msgstr ""
+msgstr "包含本地主机名的描述性信息、任何潜在网络接口的配置\n详情，以及系统初次启动时应启动哪些服务。更多信息请参阅\ncrossref:bsdinstall[configtuning-core-configuration, 管理特定于系统的配置]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/security#"
-msgstr ""
+msgstr "[.filename]#/etc/security#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OpenBSM audit configuration files, see man:audit[8] for more information."
-msgstr ""
+msgstr "OpenBSM 审计配置文件，更多信息请参阅 man:audit[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/ppp#"
-msgstr ""
+msgstr "[.filename]#/etc/ppp#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ppp configuration files, see man:ppp[8] for more information."
-msgstr ""
+msgstr "ppp 配置文件，更多信息请参阅 man:ppp[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/ssh#"
-msgstr ""
+msgstr "[.filename]#/etc/ssh#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OpenSSH configuration files, see man:ssh[1] for more information."
-msgstr ""
+msgstr "OpenSSH 配置文件，更多信息请参阅 man:ssh[1]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/ssl#"
-msgstr ""
+msgstr "[.filename]#/etc/ssl#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:144
@@ -347,39 +359,41 @@ msgstr "配置文件"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/sysctl.conf#"
-msgstr ""
+msgstr "[.filename]#/etc/sysctl.conf#"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contains settings for the kernel. More information in\n"
 "crossref:bsdinstall[configtuning-sysctl, The sysctl utility]"
-msgstr ""
+msgstr "包含内核设置。更多信息请参阅\ncrossref:bsdinstall[configtuning-sysctl, sysctl 实用程序]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The sysctl utility"
-msgstr ""
+msgstr "sysctl 实用程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:154
+#, fuzzy
 msgid ""
 "The man:sysctl[8] utility is used to make changes to a running FreeBSD "
 "system."
-msgstr ""
+msgstr "man:sysctl[8] 实用程序用于更改正在运行的 FreeBSD 系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:157
+#, fuzzy
 msgid ""
 "The man:sysctl[8] utility retrieves kernel state and allows processes with "
 "appropriate privilege to set kernel state.  The state to be retrieved or set "
 "is described using a \"Management Information Base\" (\"MIB\") style name, "
 "described as a dotted set of components."
-msgstr ""
+msgstr "man:sysctl[8] 实用程序用于获取内核状态，并允许具有适当权限的进程设置内核状态。要获取或设置的状态使用“管理信息库”（“MIB”）风格的名称描述，该名称由一组以点分隔的组件构成。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/config/_index.adoc:158
@@ -390,34 +404,34 @@ msgstr "日志管理与翻转"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sysctl"
-msgstr ""
+msgstr "sysctl"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\"Magic\" numbers"
-msgstr ""
+msgstr "“魔数”"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:167
 #: documentation/content/en/books/handbook/config/_index.adoc:802
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern"
-msgstr ""
+msgstr "kern"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel functions and features"
-msgstr ""
+msgstr "内核函数和特性"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vm"
-msgstr ""
+msgstr "vm"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:172
@@ -428,21 +442,21 @@ msgstr "虚拟內存"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vfs"
-msgstr ""
+msgstr "vfs"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Filesystem"
-msgstr ""
+msgstr "文件系统"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "net"
-msgstr ""
+msgstr "net"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:178
@@ -454,9 +468,9 @@ msgstr "网络限制"
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:179
 #: documentation/content/en/books/handbook/config/_index.adoc:868
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "debug"
-msgstr ""
+msgstr "debug"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:181
@@ -467,59 +481,60 @@ msgstr "调试日志服务器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hw"
-msgstr ""
+msgstr "hw"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hardware"
-msgstr ""
+msgstr "硬件"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "machdep"
-msgstr ""
+msgstr "machdep"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Machine dependent"
-msgstr ""
+msgstr "机器相关"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:188
 #: documentation/content/en/books/handbook/config/_index.adoc:826
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "user"
-msgstr ""
+msgstr "user"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Userland"
-msgstr ""
+msgstr "用户空间"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "p1003_1b"
-msgstr ""
+msgstr "p1003_1b"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "POSIX 1003.1B"
-msgstr ""
+msgstr "POSIX 1003.1B"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:196
+#, fuzzy
 msgid ""
 "At its core, man:sysctl[8] serves two functions: to read and to modify "
 "system settings."
-msgstr ""
+msgstr "man:sysctl[8] 的核心功能有两个：读取和修改系统设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:198
@@ -528,9 +543,9 @@ msgstr "检视所有可读取的变数："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sysctl -a\n"
-msgstr ""
+msgstr "% sysctl -a\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:205
@@ -548,12 +563,13 @@ msgstr ""
 #: documentation/content/en/books/handbook/config/_index.adoc:1381
 #: documentation/content/en/books/handbook/config/_index.adoc:1398
 #: documentation/content/en/books/handbook/config/_index.adoc:1478
+#, fuzzy
 msgid "The output should be similar to the following:"
-msgstr ""
+msgstr "输出应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "kern.ostype: FreeBSD\n"
 "...\n"
@@ -566,7 +582,7 @@ msgid ""
 "vfs.zfs.sync_pass_rewrite: 2\n"
 "vfs.zfs.sync_pass_dont_compress: 8\n"
 "vfs.zfs.sync_pass_deferred_free: 2\n"
-msgstr ""
+msgstr "kern.ostype: FreeBSD\n...\nvm.swap_enabled: 1\nvm.overcommit: 0\nvm.domain.0.pidctrl.kdd: 8\nvm.domain.0.pidctrl.kid: 4\nvm.domain.0.pidctrl.kpd: 3\n...\nvfs.zfs.sync_pass_rewrite: 2\nvfs.zfs.sync_pass_dont_compress: 8\nvfs.zfs.sync_pass_deferred_free: 2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:222
@@ -575,32 +591,33 @@ msgstr "要读取特定变数只要指定其名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sysctl kern.maxproc\n"
-msgstr ""
+msgstr "% sysctl kern.maxproc\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern.maxproc: 1044\n"
-msgstr ""
+msgstr "kern.maxproc: 1044\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:236
+#, fuzzy
 msgid ""
 "The Management Information Base (MIB) is hierarchical and hence, specifying "
 "a prefix prints all the nodes hanging from it:"
-msgstr ""
+msgstr "管理信息库（MIB）采用分层结构，因此指定前缀会显示其下的所有节点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sysctl net\n"
-msgstr ""
+msgstr "% sysctl net\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "net.local.stream.recvspace: 8192\n"
 "net.local.stream.sendspace: 8192\n"
@@ -616,56 +633,61 @@ msgid ""
 "net.inet.ip.portrange.randomtime: 1\n"
 "net.inet.ip.portrange.randomcps: 9999\n"
 "[...]\n"
-msgstr ""
+msgstr "net.local.stream.recvspace: 8192\nnet.local.stream.sendspace: 8192\nnet.local.dgram.recvspace: 16384\nnet.local.dgram.maxdgram: 2048\nnet.local.seqpacket.recvspace: 8192\nnet.local.seqpacket.maxseqpacket: 8192\nnet.local.sockcount: 60\nnet.local.taskcount: 25\nnet.local.recycled: 0\nnet.local.deferred: 0\nnet.local.inflight: 0\nnet.inet.ip.portrange.randomtime: 1\nnet.inet.ip.portrange.randomcps: 9999\n[...]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:263
+#, fuzzy
 msgid "To set a particular variable, use the _variable_=_value_ syntax:"
-msgstr ""
+msgstr "要设置特定变量，请使用 __variable__=__value__ 语法："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:267
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl kern.maxfiles=5000\n"
-msgstr ""
+msgstr "# sysctl kern.maxfiles=5000\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern.maxfiles: 2088 -> 5000\n"
-msgstr ""
+msgstr "kern.maxfiles: 2088 -> 5000\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:279
+#, fuzzy
 msgid ""
 "To keep the configuration after a reboot it is necessary to add these "
 "variables to the [.filename]#/etc/sysctl.conf# file as explained below."
-msgstr ""
+msgstr "要使配置在重启后仍然生效，需要将这些变量添加到 [.filename]#/etc/sysctl.conf# 文件中，如下所述。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#/etc/sysctl.conf# file"
-msgstr ""
+msgstr "[.filename]#/etc/sysctl.conf# 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:285
+#, fuzzy
 msgid ""
 "The configuration file for man:sysctl[8], [.filename]#/etc/sysctl.conf#, "
 "looks much like [.filename]#/etc/rc.conf#."
-msgstr ""
+msgstr "man:sysctl[8] 的配置文件 [.filename]#/etc/sysctl.conf# 与 [.filename]#/etc/rc.conf# 十分类似。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:287
+#, fuzzy
 msgid "Values are set using a `variable=value` syntax."
-msgstr ""
+msgstr "使用 `variable=value` 语法设置值。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:292
+#, fuzzy
 msgid ""
 "The specified values are set after the system goes into multi-user mode.  "
 "Not all variables are settable in this mode."
-msgstr ""
+msgstr "指定的值会在系统进入多用户模式后设置。并非所有变量都能在此模式下设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:295
@@ -680,39 +702,40 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Do not log fatal signal exits (e.g., sig 11)\n"
 "kern.logsigexit=0\n"
-msgstr ""
+msgstr "# Do not log fatal signal exits (e.g., sig 11)\nkern.logsigexit=0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Prevent users from seeing information about processes that\n"
 "# are being run under another UID.\n"
 "security.bsd.see_other_uids=0\n"
-msgstr ""
+msgstr "# Prevent users from seeing information about processes that\n# are being run under another UID.\nsecurity.bsd.see_other_uids=0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:307
+#, fuzzy
 msgid ""
 "To obtain more information about what function a particular sysctl has, the "
 "following command can be executed:"
-msgstr ""
+msgstr "要获取特定 sysctl 功能的更多信息，可以执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sysctl -d kern.dfldsiz\n"
-msgstr ""
+msgstr "% sysctl -d kern.dfldsiz\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern.dfldsiz: Initial data size limit\n"
-msgstr ""
+msgstr "kern.dfldsiz: 初始数据大小限制\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:321
@@ -742,10 +765,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:329
+#, fuzzy
 msgid ""
 "The entries in [.filename]#/etc/rc.conf# override the default settings in [."
 "filename]#/etc/defaults/rc.conf#."
-msgstr ""
+msgstr "[.filename]#/etc/rc.conf# 中的条目会覆盖 [.filename]#/etc/defaults/rc.conf# 中的默认设置。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:334
@@ -774,10 +798,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:339
+#, fuzzy
 msgid ""
 "The recommended approach is to place system-specific configuration into [."
 "filename]#/etc/rc.conf.local#."
-msgstr ""
+msgstr "建议将特定于系统的配置放在 [.filename]#/etc/rc.conf.local# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:341
@@ -818,11 +843,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:358
+#, fuzzy
 msgid ""
 "Distribute [.filename]#/etc/rc.conf# to every system using an application "
 "such as rsync or puppet, while [.filename]#/etc/rc.conf.local# remains "
 "unique."
-msgstr ""
+msgstr "使用 rsync 或 puppet 等应用程序将 [.filename]#/etc/rc.conf# 分发到每个系统，同时让 [.filename]#/etc/rc.conf.local# 保持各自独立。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:360
@@ -836,12 +862,13 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:366
+#, fuzzy
 msgid ""
 "Both [.filename]#/etc/rc.conf# and [.filename]#/etc/rc.conf.local# are "
 "parsed by man:sh[1].  This allows system operators to create complex "
 "configuration scenarios.  Refer to man:rc.conf[5] for further information on "
 "this topic."
-msgstr ""
+msgstr "man:sh[1] 会解析 [.filename]#/etc/rc.conf# 和 [.filename]#/etc/rc.conf.local#。这使系统管理员能够创建复杂的配置场景。有关此主题的更多信息，请参阅 man:rc.conf[5]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/config/_index.adoc:369
@@ -851,64 +878,67 @@ msgstr "管理FreeBSD中的服务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:372
+#, fuzzy
 msgid ""
 "FreeBSD uses the man:rc[8] system of startup scripts during system "
 "initialization and for managing services."
-msgstr ""
+msgstr "FreeBSD 在系统初始化期间使用 man:rc[8] 启动脚本系统，并用它管理服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:374
+#, fuzzy
 msgid ""
 "The scripts listed in [.filename]#/etc/rc.d# provide basic services which "
 "can be controlled with the `start`, `stop`, and `restart` options to man:"
 "service[8]."
-msgstr ""
+msgstr "[.filename]#/etc/rc.d# 中列出的脚本提供基本服务，可通过 man:service[8] 的 `start`、`stop` 和 `restart` 选项控制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:376
+#, fuzzy
 msgid "A basic script may look similar to the following:"
-msgstr ""
+msgstr "基本脚本可能类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:384
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#!/bin/sh\n"
 "#\n"
 "# PROVIDE: utility\n"
 "# REQUIRE: DAEMON\n"
 "# KEYWORD: shutdown\n"
-msgstr ""
+msgstr "#!/bin/sh\n#\n# PROVIDE: utility\n# REQUIRE: DAEMON\n# KEYWORD: shutdown\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ". /etc/rc.subr\n"
-msgstr ""
+msgstr ". /etc/rc.subr\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "name=utility\n"
 "rcvar=utility_enable\n"
-msgstr ""
+msgstr "name=utility\nrcvar=utility_enable\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "command=\"/usr/local/sbin/utility\"\n"
-msgstr ""
+msgstr "command=\"/usr/local/sbin/utility\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "load_rc_config $name\n"
-msgstr ""
+msgstr "load_rc_config $name\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#\n"
 "# DO NOT CHANGE THESE DEFAULT VALUES HERE\n"
@@ -916,20 +946,21 @@ msgid ""
 "#\n"
 "utility_enable=${utility_enable-\"NO\"}\n"
 "pidfile=${utility_pidfile-\"/var/run/utility.pid\"}\n"
-msgstr ""
+msgstr "#\n# DO NOT CHANGE THESE DEFAULT VALUES HERE\n# SET THEM IN THE /etc/rc.conf FILE\n#\nutility_enable=${utility_enable-\"NO\"}\npidfile=${utility_pidfile-\"/var/run/utility.pid\"}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:402
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "run_rc_command \"$1\"\n"
-msgstr ""
+msgstr "run_rc_command \"$1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:405
+#, fuzzy
 msgid ""
 "Refer to extref:{rc-scripting}[this article] for instructions on how to "
 "create custom man:rc[8] scripts."
-msgstr ""
+msgstr "有关如何创建自定义 man:rc[8] 脚本的说明，请参阅 extref:{rc-scripting}[这篇文章]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:407
@@ -939,10 +970,11 @@ msgstr "启动服务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:410
+#, fuzzy
 msgid ""
 "Many users install third party software on FreeBSD from the Ports Collection "
 "and require the installed services to be started upon system initialization."
-msgstr ""
+msgstr "许多用户会从 Ports Collection 在 FreeBSD 上安装第三方软件，并希望在系统初始化时启动已安装的服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:413
@@ -960,19 +992,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:415
+#, fuzzy
 msgid ""
 "Since the man:rc[8] system is primarily intended to start and stop services "
 "at system startup and shutdown time, the `start`, `stop` and `restart` "
 "options will only perform their action if the appropriate [.filename]#/etc/"
 "rc.conf# variable is set."
-msgstr ""
+msgstr "由于 man:rc[8] 系统主要用于在系统启动和关闭时启动和停止服务，因此只有在 [.filename]#/etc/rc.conf# 中设置了相应变量时，`start`、`stop` 和 `restart` 选项才会执行相应操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:417
+#, fuzzy
 msgid ""
 "So the first step to start a service, like for example package:www/nginx[] "
 "is to add it to [.filename]#/etc/rc.conf# by executing the following command:"
-msgstr ""
+msgstr "因此，启动服务（例如 package:www/nginx[]）的第一步是执行以下命令，将其添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:421
@@ -982,36 +1016,39 @@ msgstr "natd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:424
+#, fuzzy
 msgid "Then nginx can be started executing the following command:"
-msgstr ""
+msgstr "然后可以执行以下命令启动 nginx："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service nginx start\n"
-msgstr ""
+msgstr "# service nginx start\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:434
+#, fuzzy
 msgid ""
 "To `start`, `stop` or `restart` a service regardless of the settings in [."
 "filename]#/etc/rc.conf#, these commands should be prefixed with \"one\".  "
 "For instance, to start package:www/nginx[] regardless of the current [."
 "filename]#/etc/rc.conf# setting, execute the following command:"
-msgstr ""
+msgstr "无论 [.filename]#/etc/rc.conf# 中的设置如何，要 `start`、`stop` 或 `restart` 服务，都应在这些命令前加上“one”。例如，要无视当前 [.filename]#/etc/rc.conf# 设置启动 package:www/nginx[]，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:438
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service nginx onestart\n"
-msgstr ""
+msgstr "# service nginx onestart\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:442
+#, fuzzy
 msgid ""
 "It is also possible to put a service automatically into a jail, see the "
 "corresponding crossref:jails[service-jails,Service Jails] explanation."
-msgstr ""
+msgstr "也可以自动将服务放入 jail 中，详见 crossref:jails[service-jails,Service Jails] 中的相关说明。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:444
@@ -1022,57 +1059,63 @@ msgstr "启动服务"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:447
+#, fuzzy
 msgid "To determine if a service is running, use the `status` subcommand."
-msgstr ""
+msgstr "要确定服务是否正在运行，请使用 `status` 子命令。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:449
+#, fuzzy
 msgid "For example, to verify that package:www/nginx[] is running:"
-msgstr ""
+msgstr "例如，要验证 package:www/nginx[] 是否正在运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service nginx status\n"
-msgstr ""
+msgstr "# service nginx status\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "nginx is running as pid 27871.\n"
-msgstr ""
+msgstr "nginx is running as pid 27871.\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reload a Service"
-msgstr ""
+msgstr "重新加载服务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:467
+#, fuzzy
 msgid ""
 "In some cases, it is also possible to `reload` a service.  This attempts to "
 "send a signal to an individual service, forcing the service to reload its "
 "configuration files."
-msgstr ""
+msgstr "在某些情况下，也可以 `reload` 服务。此操作会尝试向单个服务发送信号，强制该服务重新加载其配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:469
+#, fuzzy
 msgid "In most cases, this means sending the service a `SIGHUP` signal."
-msgstr ""
+msgstr "在大多数情况下，这意味着向服务发送 `SIGHUP` 信号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:471
+#, fuzzy
 msgid "*Not all services support this feature.*"
-msgstr ""
+msgstr "*并非所有服务都支持此功能。*"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:474
+#, fuzzy
 msgid ""
 "The man:rc[8] system is used for network services and it also contributes to "
 "most of the system initialization.  For instance, when the [.filename]#/etc/"
 "rc.d/bgfsck# script is executed, it prints out the following message:"
-msgstr ""
+msgstr "man:rc[8] 系统用于管理网络服务，也参与了大部分系统初始化工作。例如，执行 [.filename]#/etc/rc.d/bgfsck# 脚本时，会显示以下消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:478
@@ -1089,16 +1132,18 @@ msgstr "这个Script用来在背景做文件系统检查，只有在系统初始
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:484
+#, fuzzy
 msgid ""
 "Many system services depend on other services to function properly.  For "
 "example, man:yp[8] and other RPC-based services may fail to start until "
 "after the man:rpcbind[8] service has started."
-msgstr ""
+msgstr "许多系统服务依赖其他服务才能正常运行。例如，man:yp[8] 和其他基于 RPC 的服务可能要等到 man:rpcbind[8] 服务启动后才能启动。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:486
+#, fuzzy
 msgid "Additional information can be found in man:rc[8] and man:rc.subr[8]."
-msgstr ""
+msgstr "更多信息请参阅 man:rc[8] 和 man:rc.subr[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:487
@@ -1108,78 +1153,87 @@ msgstr "使用服务来启动其他服务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:491
+#, fuzzy
 msgid ""
 "Other services can be started using man:inetd[8].  Working with man:inetd[8] "
 "and its configuration is described in depth in crossref:network-"
 "servers[network-inetd,“The inetd Super-Server”]."
-msgstr ""
+msgstr "其他服务可以使用 man:inetd[8] 启动。有关 man:inetd[8] 及其配置的详细说明，请参阅 crossref:network-servers[network-inetd,“The inetd Super-Server”]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:495
+#, fuzzy
 msgid ""
 "In some cases, it may make more sense to use man:cron[8] to start system "
 "services.  This approach has a number of advantages as man:cron[8] runs "
 "these processes as the owner of the man:crontab[5].  This allows regular "
 "users to start and maintain their own applications."
-msgstr ""
+msgstr "在某些情况下，使用 man:cron[8] 启动系统服务可能更合适。这种方式有多项优点，因为 man:cron[8] 会以 man:crontab[5] 所有者的身份运行这些进程。这使普通用户可以启动和维护自己的应用程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:498
+#, fuzzy
 msgid ""
 "The `@reboot` feature of man:cron[8], may be used in place of the time "
 "specification.  This causes the job to run when man:cron[8] is started, "
 "normally during system initialization."
-msgstr ""
+msgstr "man:cron[8] 的 `@reboot` 功能可以代替时间说明。这样，作业会在 man:cron[8] 启动时运行，通常是在系统初始化期间。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/config/_index.adoc:500
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cron and Periodic"
-msgstr ""
+msgstr "Cron 和 Periodic"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:504
+#, fuzzy
 msgid ""
 "Scheduling tasks to run at a certain day or time is a very common task on "
 "FreeBSD.  The tool in charge of performing this task is man:cron[8]."
-msgstr ""
+msgstr "在指定日期或时间运行计划任务是 FreeBSD 上非常常见的需求。负责执行这项工作的工具是 man:cron[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:506
+#, fuzzy
 msgid ""
 "In addition to tasks that can be scheduled by the user via man:cron[8], "
 "FreeBSD performs routine background tasks managed by man:periodic[8]."
-msgstr ""
+msgstr "除了用户通过 man:cron[8] 安排的任务外，FreeBSD 还会执行由 man:periodic[8] 管理的例行后台任务。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:508
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cron"
-msgstr ""
+msgstr "Cron"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:511
+#, fuzzy
 msgid ""
 "The man:cron[8] utility runs in the background and regularly checks [."
 "filename]#/etc/crontab# for tasks to execute and searches [.filename]#/var/"
 "cron/tabs# for custom crontab files."
-msgstr ""
+msgstr "man:cron[8] 工具在后台运行，会定期检查 [.filename]#/etc/crontab# 中要执行的任务，并在 [.filename]#/var/cron/tabs# 中查找自定义 crontab 文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:513
+#, fuzzy
 msgid ""
 "These files are used to schedule tasks which cron runs at the specified "
 "times."
-msgstr ""
+msgstr "这些文件用于安排 cron 在指定时间运行的任务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:515
+#, fuzzy
 msgid ""
 "Each entry in a crontab defines a task to run and is known as a _cron job_."
-msgstr ""
+msgstr "crontab 中的每个条目都定义了一个要运行的任务，称为 __cron 作业__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:521
+#, fuzzy
 msgid ""
 "Two different types of configuration files are used: the system crontab, "
 "which should not be modified, and user crontabs, which can be created and "
@@ -1188,15 +1242,16 @@ msgid ""
 "includes a `who` column which does not exist in user crontabs.  In the "
 "system crontab, cron runs the command as the user specified in this column.  "
 "In a user crontab, all commands run as the user who created the crontab."
-msgstr ""
+msgstr "系统使用两种不同类型的配置文件：不应修改的系统 crontab，以及可按需创建和编辑的用户 crontab。这些文件所用的格式记录在 man:crontab[5] 中。系统 crontab [.filename]#/etc/crontab# 的格式包含用户 crontab 中没有的 `who` 列。在系统 crontab 中，cron 会以该列指定的用户身份运行命令。在用户 crontab 中，所有命令都以创建该 crontab 的用户身份运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:524
+#, fuzzy
 msgid ""
 "User crontabs allow individual users to schedule their own tasks.  The "
 "`root` user can also have a user [.filename]#crontab# which can be used to "
 "schedule tasks that do not exist in the system [.filename]#crontab#."
-msgstr ""
+msgstr "用户 crontab 允许各个用户安排自己的任务。`root` 用户也可以拥有自己的用户 [.filename]#crontab#，用于安排系统 [.filename]#crontab# 中没有的任务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:526
@@ -1207,7 +1262,7 @@ msgstr "以下为系统crontab <filename>/etc/crontab</filename>的示例项目�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:552
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /etc/crontab - root's crontab for FreeBSD\n"
 "#\n"
@@ -1232,7 +1287,7 @@ msgid ""
 "# Adjust the time zone if the CMOS clock keeps local time, as opposed to\n"
 "# UTC time.  See adjkerntz(8) for details.\n"
 "1,31    0-5     *       *       *       root    adjkerntz -a\n"
-msgstr ""
+msgstr "# /etc/crontab - root's crontab for FreeBSD\n#\n# <.>\n#\nSHELL=/bin/sh\nPATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin <.>\n#\n#minute hour    mday    month   wday    who     command <.>\n#\n# Save some entropy so that /dev/random can re-seed on boot.\n*/11    *       *       *       *       operator /usr/libexec/save-entropy <.>\n#\n# Rotate log files every hour, if necessary.\n0       *       *       *       *       root    newsyslog\n#\n# Perform daily/weekly/monthly maintenance.\n1       3       *       *       *       root    periodic daily\n15      4       *       *       6       root    periodic weekly\n30      5       1       *       *       root    periodic monthly\n#\n# Adjust the time zone if the CMOS clock keeps local time, as opposed to\n# UTC time.  See adjkerntz(8) for details.\n1,31    0-5     *       *       *       root    adjkerntz -a\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:556
@@ -1250,15 +1305,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:558
+#, fuzzy
 msgid ""
 "The equals (`=`) character is used to define any environment settings. In "
 "this example, it is used to define the `SHELL` and `PATH`. If the `SHELL` is "
 "omitted, cron will use the default POSIX(R) shell. If the `PATH` is omitted, "
 "the full path must be given to the command or script to run."
-msgstr ""
+msgstr "等号（`=`）用于定义环境设置。在此示例中，它用于定义 `SHELL` 和 `PATH`。如果省略 `SHELL`，cron 将使用默认的 POSIX(R) shell。如果省略 `PATH`，则必须提供要运行的命令或脚本的完整路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:560
+#, fuzzy
 msgid ""
 "This line defines the seven fields used in a system crontab: `minute`, "
 "`hour`, `mday`, `month`, `wday`, `who`, and `command`. The `minute` field is "
@@ -1269,10 +1326,11 @@ msgid ""
 "`*`, representing all values for that field. The `who` field only exists in "
 "the system crontab and specifies which user the command should be run as. "
 "The last field is the command to be executed."
-msgstr ""
+msgstr "此行定义了系统 crontab 使用的七个字段：`minute`、`hour`、`mday`、`month`、`wday`、`who` 和 `command`。`minute` 字段指定运行命令的分钟，`hour` 指定运行命令的小时，`mday` 表示一个月中的日期，`month` 表示月份，`wday` 表示一周中的星期。这些字段必须是表示 24 小时制的数值，或表示该字段所有取值的 `*`。`who` 字段仅存在于系统 crontab 中，用于指定运行命令时使用的用户。最后一个字段是要执行的命令。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:562
+#, fuzzy
 msgid ""
 "This entry defines the values for this cron job. The `\\*/11`, followed by "
 "several more `*` characters, specifies that `/usr/libexec/save-entropy` is "
@@ -1280,7 +1338,7 @@ msgid ""
 "day of the week, of every month. Commands can include any number of "
 "switches. However, commands which extend to multiple lines need to be broken "
 "with the backslash \"\\\" continuation character."
-msgstr ""
+msgstr "此条目定义了该 cron 作业的取值。`\\*/11` 后跟几个 `*` 字符，表示 `operator` 每隔十一分钟运行一次 `/usr/libexec/save-entropy`，适用于每小时、每天和每个月的所有时间，以及一周中的每一天。命令可以包含任意数量的开关。不过，跨多行的命令必须使用反斜杠“\\”续行符拆分。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:564
@@ -1290,14 +1348,15 @@ msgstr "建立使用者的Crontab"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:567
+#, fuzzy
 msgid "To create a user crontab, invoke `crontab` in editor mode:"
-msgstr ""
+msgstr "要创建用户 crontab，请以编辑模式调用 `crontab`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:571
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% crontab -e\n"
-msgstr ""
+msgstr "% crontab -e\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:576
@@ -1375,31 +1434,33 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:604
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "env -i SHELL=/bin/sh PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin HOME=/home/user LOGNAME=user /home/user/bin/mycustomscript.sh\n"
-msgstr ""
+msgstr "env -i SHELL=/bin/sh PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin HOME=/home/user LOGNAME=user /home/user/bin/mycustomscript.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:608
+#, fuzzy
 msgid ""
 "The environment set by cron is discussed in man:crontab[5].  Checking that "
 "scripts operate correctly in a cron environment is especially important if "
 "they include any commands that delete files using wildcards."
-msgstr ""
+msgstr "man:crontab[5] 介绍了 cron 设置的环境。如果脚本中包含使用通配符删除文件的命令，尤其要检查脚本在 cron 环境中能否正常运行。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:613
+#, fuzzy
 msgid ""
 "When finished editing the crontab, save the file.  It will automatically be "
 "installed, and cron will read the crontab and run its cron jobs at their "
 "specified times.  To list the cron jobs in a crontab, use this command:"
-msgstr ""
+msgstr "完成 crontab 编辑后，请保存文件。文件会自动安装，随后 cron 将读取 crontab，并在指定时间运行其中的 cron 作业。要列出 crontab 中的 cron 作业，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:617
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% crontab -l\n"
-msgstr ""
+msgstr "% crontab -l\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:627
@@ -1408,24 +1469,25 @@ msgstr "要移除使用在使用者crontab中的cron job可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:631
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% crontab -r\n"
-msgstr ""
+msgstr "% crontab -r\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "remove crontab for user? y\n"
-msgstr ""
+msgstr "remove crontab for user? y\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:641
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Periodic"
-msgstr ""
+msgstr "Periodic"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:647
+#, fuzzy
 msgid ""
 "FreeBSD provides a set of system management scripts to check status of "
 "various subsystems, perform security-related checks, rotate log files, etc.  "
@@ -1433,52 +1495,57 @@ msgid ""
 "management of these tasks is performed by man:periodic[8] and its "
 "configuration resides in man:periodic.conf[5].  The periodic tasks are "
 "initiated by entries in the system crontab, shown above."
-msgstr ""
+msgstr "FreeBSD 提供了一组系统管理脚本，用于检查各个子系统的状态、执行安全检查、轮转日志文件等。这些脚本会定期运行：每天、每周或每月。man:periodic[8] 负责管理这些任务，其配置位于 man:periodic.conf[5]。这些 periodic 任务由上文所示的系统 crontab 条目启动。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:649
+#, fuzzy
 msgid ""
 "Scripts executed by man:periodic[8] are located in [.filename]#/etc/periodic/"
 "# for base utilities and in [.filename]#/usr/local/etc/periodic/# for third-"
 "party software."
-msgstr ""
+msgstr "man:periodic[8] 执行的脚本位于 [.filename]#/etc/periodic/#（基本工具）和 [.filename]#/usr/local/etc/periodic/#（第三方软件）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:651
+#, fuzzy
 msgid ""
 "They are organized in 4 subdirectories, daily, weekly, monthly and security."
-msgstr ""
+msgstr "这些脚本分为 4 个子目录：daily、weekly、monthly 和 security。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:653
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enable or Disable Periodic Tasks"
-msgstr ""
+msgstr "启用或禁用 Periodic 任务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:656
+#, fuzzy
 msgid "FreeBSD has some scripts enabled by default to run periodically."
-msgstr ""
+msgstr "FreeBSD 默认启用了一些定期运行的脚本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:658
+#, fuzzy
 msgid ""
 "To enable or disable a task, the first step is to edit [.filename]#/etc/"
 "periodic.conf# executing the following command:"
-msgstr ""
+msgstr "要启用或禁用任务，首先执行以下命令编辑 [.filename]#/etc/periodic.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:662
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ee /etc/periodic.conf\n"
-msgstr ""
+msgstr "# ee /etc/periodic.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:665
+#, fuzzy
 msgid ""
 "And then to enable, for example, `daily_status_zfs_enable` put the following "
 "content in the file:"
-msgstr ""
+msgstr "然后，例如，要启用 `daily_status_zfs_enable`，请在文件中加入以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:669
@@ -1488,10 +1555,11 @@ msgstr "utility_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:672
+#, fuzzy
 msgid ""
 "To disable a task that is active by default, all that needs to be done is to "
 "change `YES` to `NO`."
-msgstr ""
+msgstr "要禁用默认处于启用状态的任务，只需将 `YES` 改为 `NO`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:674
@@ -1502,52 +1570,56 @@ msgstr "设定网络卡"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:677
+#, fuzzy
 msgid ""
 "In [.filename]#/etc/periodic.conf# the variables `daily_output`, "
 "`weekly_output` and `monthly_output` specifies where to send the results of "
 "the script execution."
-msgstr ""
+msgstr "在 [.filename]#/etc/periodic.conf# 中，变量 `daily_output`、`weekly_output` 和 `monthly_output` 指定脚本执行结果的发送位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:679
+#, fuzzy
 msgid ""
 "By default the output of the periodic scripts are emailed to root, and "
 "therefore it is best to read root's mail or alias root to a mailbox that is "
 "monitored."
-msgstr ""
+msgstr "默认情况下，periodic 脚本的输出会通过电子邮件发送给 root，因此最好阅读 root 的邮件，或将 root 别名设为一个有人查看的邮箱。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:681
+#, fuzzy
 msgid ""
 "To send the results to another email or to other emails, add the email "
 "addresses separated by spaces to [.filename]#/etc/periodic.conf#:"
-msgstr ""
+msgstr "要将结果发送到其他邮箱，请在 [.filename]#/etc/periodic.conf# 中添加以空格分隔的电子邮件地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:687
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "daily_output=\"email1@example.com email2@example.com\"\n"
 "weekly_output=\"email1@example.com email2@example.com\"\n"
 "monthly_output=\"email1@example.com email2@example.com\"\n"
-msgstr ""
+msgstr "daily_output=\"email1@example.com email2@example.com\"\nweekly_output=\"email1@example.com email2@example.com\"\nmonthly_output=\"email1@example.com email2@example.com\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:690
+#, fuzzy
 msgid ""
 "To log periodic output instead of receiving it as email, add the following "
 "lines to [.filename]#/etc/periodic.conf#. man:newsyslog[8] will rotate these "
 "files at the appropriate times:"
-msgstr ""
+msgstr "要将 periodic 的输出记录到日志，而不是通过电子邮件接收，请在 [.filename]#/etc/periodic.conf# 中添加以下几行。man:newsyslog[8] 会在适当的时候轮转这些文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:696
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "daily_output=/var/log/daily.log\n"
 "weekly_output=/var/log/weekly.log\n"
 "monthly_output=/var/log/monthly.log\n"
-msgstr ""
+msgstr "daily_output=/var/log/daily.log\nweekly_output=/var/log/weekly.log\nmonthly_output=/var/log/monthly.log\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/config/_index.adoc:699
@@ -1580,10 +1652,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:708
+#, fuzzy
 msgid ""
 "FreeBSD provides a system logger, man:syslogd[8], to manage logging.  By "
 "default, syslogd is enabled and started when the system boots."
-msgstr ""
+msgstr "FreeBSD 提供系统日志记录器 man:syslogd[8] 来管理日志。默认情况下，syslogd 已启用，并会在系统启动时运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:710
@@ -1647,10 +1720,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:727
+#, fuzzy
 msgid ""
 "As an example, here is the default [.filename]#/etc/syslog.conf# from "
 "FreeBSD:"
-msgstr ""
+msgstr "以下是 FreeBSD 默认的 [.filename]#/etc/syslog.conf# 示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:763
@@ -1728,25 +1802,28 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:766
+#, fuzzy
 msgid ""
 "Matches all messages with a level of `err` or higher, as well as `kern."
 "warning`, `auth.notice` and `mail.crit`, and sends these log messages to the "
 "console ([.filename]#/dev/console#)."
-msgstr ""
+msgstr "匹配所有级别为 `err` 或更高的消息，以及 `kern.warning`、`auth.notice` 和 `mail.crit`，并将这些日志消息发送到控制台（[.filename]#/dev/console#）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:767
+#, fuzzy
 msgid ""
 "Matches all messages from the `mail` facility at level `info` or above and "
 "logs the messages to [.filename]#/var/log/maillog#."
-msgstr ""
+msgstr "匹配 `mail` 设施中级别为 `info` 或更高的所有消息，并将其记录到 [.filename]#/var/log/maillog#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:768
+#, fuzzy
 msgid ""
 "Uses a comparison flag (`=`) to only match messages at level `debug` and "
 "logs them to [.filename]#/var/log/debug.log#."
-msgstr ""
+msgstr "使用比较标志（`=`）仅匹配级别为 `debug` 的消息，并将其记录到 [.filename]#/var/log/debug.log#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:769
@@ -1763,236 +1840,238 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:771
+#, fuzzy
 msgid ""
 "For more information about [.filename]#/etc/syslog.conf#, its syntax, and "
 "more advanced usage examples, see man:syslog.conf[5]."
-msgstr ""
+msgstr "有关 [.filename]#/etc/syslog.conf#、其语法以及更多高级用法示例的信息，请参阅 man:syslog.conf[5]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:773
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Logging Facilities"
-msgstr ""
+msgstr "日志设施"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:777
+#, fuzzy
 msgid ""
 "A facility describes the part of the system generating the message.  "
 "Facilities are a way of separating the different messages so that it is "
 "easier for the user to consult the logs."
-msgstr ""
+msgstr "设施描述生成消息的系统部分。设施用于区分不同的消息，方便用户查看日志。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/config/_index.adoc:778
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "syslog facilities"
-msgstr ""
+msgstr "syslog 设施"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:781
 #: documentation/content/en/books/handbook/config/_index.adoc:844
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:783
 #: documentation/content/en/books/handbook/config/_index.adoc:846
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:784
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "auth"
-msgstr ""
+msgstr "auth"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The authorization system: man:login[1], man:su[1], man:getty[8], etc."
-msgstr ""
+msgstr "授权系统：man:login[1]、man:su[1]、man:getty[8] 等。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:787
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "authpriv"
-msgstr ""
+msgstr "authpriv"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:789
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The same as auth, but logged to a file readable only by root."
-msgstr ""
+msgstr "与 auth 相同，但记录到只有 root 才能读取的文件中。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:790
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "console"
-msgstr ""
+msgstr "console"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:792
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Messages written to [.filename]#/dev/console# by the kernel console output driver."
-msgstr ""
+msgstr "由内核控制台输出驱动程序写入 [.filename]#/dev/console# 的消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:793
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "cron"
-msgstr ""
+msgstr "cron"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:795
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Messages written by the man:cron[8] daemon."
-msgstr ""
+msgstr "由 man:cron[8] 守护进程写入的消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:796
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "daemon"
-msgstr ""
+msgstr "daemon"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:798
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System daemons, such as man:routed[8], that are not provided for explicitly by other facilities."
-msgstr ""
+msgstr "未由其他设施明确涵盖的系统守护进程（例如 man:routed[8]）的消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:799
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ftp"
-msgstr ""
+msgstr "ftp"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:801
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The file transfer protocol daemons: man:ftpd[8], man:tftpd[8]."
-msgstr ""
+msgstr "文件传输协议守护进程：man:ftpd[8]、man:tftpd[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:804
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Messages generated by the kernel. These cannot be generated by any user processes."
-msgstr ""
+msgstr "由内核生成的消息。任何用户进程都无法生成此类消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:805
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lpr"
-msgstr ""
+msgstr "lpr"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:807
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The line printer spooling system: man:lpr[1], man:lpc[8], man:lpd[8], etc."
-msgstr ""
+msgstr "行式打印机假脱机系统：man:lpr[1]、man:lpc[8]、man:lpd[8] 等。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:808
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mail"
-msgstr ""
+msgstr "mail"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:810
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The mail system."
-msgstr ""
+msgstr "邮件系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:811
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mark"
-msgstr ""
+msgstr "mark"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:813
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This facility adds a record every 20 minutes."
-msgstr ""
+msgstr "此设施每 20 分钟添加一条记录。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:814
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "news"
-msgstr ""
+msgstr "news"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:816
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The network news system."
-msgstr ""
+msgstr "网络新闻系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:817
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ntp"
-msgstr ""
+msgstr "ntp"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:819
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The network time protocol system."
-msgstr ""
+msgstr "网络时间协议系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "security"
-msgstr ""
+msgstr "security"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:822
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Security subsystems, such as man:ipfw[4]."
-msgstr ""
+msgstr "安全子系统，例如 man:ipfw[4]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:823
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "syslog"
-msgstr ""
+msgstr "syslog"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:825
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Messages generated internally by syslogd(8)."
-msgstr ""
+msgstr "由 syslogd(8) 内部生成的消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:828
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Messages generated by random user processes. *This is the default facility identifier if none is specified*."
-msgstr ""
+msgstr "由随机用户进程生成的消息。*如果未指定，则默认使用此设施标识符*。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:829
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "uucp"
-msgstr ""
+msgstr "uucp"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:831
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Unix-to-Unix Copy system. An ancient protocol. Really weird to see messages from this facility."
-msgstr ""
+msgstr "Unix-to-Unix Copy 系统。这是一种古老的协议。若能看到此设施的消息，那可真是相当奇怪。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:832
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "local0 through local7"
-msgstr ""
+msgstr "local0 through local7"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reserved for local use."
-msgstr ""
+msgstr "保留供本地使用。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:837
@@ -2003,166 +2082,171 @@ msgstr "调试日志服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:840
+#, fuzzy
 msgid ""
 "The level describes the severity of the message, and is a keyword from the "
 "following ordered list (higher to lower):"
-msgstr ""
+msgstr "级别描述消息的严重程度，是以下按严重程度从高到低排列的关键字之一："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/config/_index.adoc:841
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "syslog levels"
-msgstr ""
+msgstr "syslog 级别"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:847
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "emerg"
-msgstr ""
+msgstr "emerg"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:849
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A panic condition. This is normally broadcast to all users."
-msgstr ""
+msgstr "紧急情况。通常会向所有用户广播此消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:850
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alert"
-msgstr ""
+msgstr "alert"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:852
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A condition that should be corrected immediately, such as a corrupted system database."
-msgstr ""
+msgstr "应立即纠正的情况，例如系统数据库损坏。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:853
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crit"
-msgstr ""
+msgstr "crit"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:855
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Critical conditions, e.g., hard device errors."
-msgstr ""
+msgstr "严重情况，例如硬件设备错误。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:856
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "err"
-msgstr ""
+msgstr "err"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:858
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Errors."
-msgstr ""
+msgstr "错误。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:859
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "warning"
-msgstr ""
+msgstr "warning"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:861
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Warning messages."
-msgstr ""
+msgstr "警告消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:862
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "notice"
-msgstr ""
+msgstr "notice"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:864
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conditions that are not error conditions, but should possibly be handled specially."
-msgstr ""
+msgstr "并非错误、但可能需要特殊处理的情况。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:865
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "info"
-msgstr ""
+msgstr "info"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:867
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Informational messages."
-msgstr ""
+msgstr "信息性消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:870
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Messages that contain information normally of use only when debugging a program."
-msgstr ""
+msgstr "包含通常仅在调试程序时有用的信息的消息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:871
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "none"
-msgstr ""
+msgstr "none"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:873
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This special level disables a particular facility."
-msgstr ""
+msgstr "此特殊级别会禁用特定设施。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:876
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read Log Messages"
-msgstr ""
+msgstr "读取日志消息"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:880
+#, fuzzy
 msgid ""
 "By default FreeBSD log files use the format link:https://datatracker.ietf."
 "org/doc/html/rfc3164[rfc3164], also known as The BSD syslog Protocol.  Learn "
 "more about other formats and how to use them at man:syslog[8]."
-msgstr ""
+msgstr "FreeBSD 的日志文件默认采用 link:https://datatracker.ietf.org/doc/html/rfc3164[rfc3164] 格式，也称为 BSD syslog 协议。有关其他格式及其用法的更多信息，请参阅 man:syslog[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:882
+#, fuzzy
 msgid "Typically the logs have the following syntax:"
-msgstr ""
+msgstr "日志通常采用以下语法："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:886
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "date time hostname program[pid]: the message\n"
-msgstr ""
+msgstr "date time hostname program[pid]: the message\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:889
+#, fuzzy
 msgid ""
 "The output of the [.filename]#/var/log/cron# file will be used as an example:"
-msgstr ""
+msgstr "以下以 [.filename]#/var/log/cron# 文件的输出为例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:896
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[...]\n"
 "Jul 16 12:40:00 FreeBSD /usr/sbin/cron[81519]: (root) CMD (/usr/libexec/atrun)\n"
 "Jul 16 12:44:00 FreeBSD /usr/sbin/cron[83072]: (operator) CMD (/usr/libexec/save-entropy)\n"
 "[...]\n"
-msgstr ""
+msgstr "[...]\nJul 16 12:40:00 FreeBSD /usr/sbin/cron[81519]: (root) CMD (/usr/libexec/atrun)\nJul 16 12:44:00 FreeBSD /usr/sbin/cron[83072]: (operator) CMD (/usr/libexec/save-entropy)\n[...]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:899
+#, fuzzy
 msgid ""
 "Verbose logging, so the facility and the level on each message will be "
 "added, can be enabled in man:syslog[8] by running the following command:"
-msgstr ""
+msgstr "运行以下命令，可在 man:syslog[8] 中启用详细日志记录，从而在每条消息中添加设施和级别："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:903
@@ -2174,20 +2258,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:906
+#, fuzzy
 msgid ""
 "Once the function is activated, the facility and the level will be displayed "
 "in the log as shown in the following example:"
-msgstr ""
+msgstr "启用此功能后，日志中将显示设施和级别，如以下示例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:913
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[...]\n"
 "Jul 16 17:40:00 <cron.info> FreeBSD /usr/sbin/cron[1016]: (root) CMD (/usr/libexec/atrun)\n"
 "Jul 16 17:44:00 <cron.info> FreeBSD /usr/sbin/cron[1030]: (operator) CMD (/usr/libexec/save-entropy)\n"
 "[...]\n"
-msgstr ""
+msgstr "[...]\nJul 16 17:40:00 <cron.info> FreeBSD /usr/sbin/cron[1016]: (root) CMD (/usr/libexec/atrun)\nJul 16 17:44:00 <cron.info> FreeBSD /usr/sbin/cron[1030]: (operator) CMD (/usr/libexec/save-entropy)\n[...]\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:915
@@ -2197,40 +2282,45 @@ msgstr "日志管理与翻转"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:918
+#, fuzzy
 msgid ""
 "Log files can grow quickly, taking up disk space and making it more "
 "difficult to locate useful information."
-msgstr ""
+msgstr "日志文件可能会迅速增长，占用磁盘空间，也会使查找有用信息更加困难。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:920
+#, fuzzy
 msgid ""
 "In FreeBSD, man:newsyslog[8] is used to manage log files and attempt to "
 "mitigate this."
-msgstr ""
+msgstr "在 FreeBSD 中，使用 man:newsyslog[8] 管理日志文件并尽量缓解这一问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:922
+#, fuzzy
 msgid ""
 "This built-in program periodically rotates and compresses log files, and "
 "optionally creates missing log files and signals programs when log files are "
 "moved."
-msgstr ""
+msgstr "此内置程序会定期轮转并压缩日志文件，还可以选择创建缺失的日志文件，并在日志文件移动时向程序发送信号。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:927
+#, fuzzy
 msgid ""
 "Since newsyslog is run from man:cron[8], it cannot rotate files more often "
 "than it is scheduled to run from man:cron[8].  In the default configuration, "
 "it runs every hour."
-msgstr ""
+msgstr "由于 newsyslog 由 man:cron[8] 运行，因此其轮转文件的频率不能高于 man:cron[8] 的计划运行频率。在默认配置中，它每小时运行一次。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:930
+#, fuzzy
 msgid ""
 "Here is the default configuration in FreeBSD, more information in man:"
 "newsyslog.conf[5]:"
-msgstr ""
+msgstr "以下是 FreeBSD 中的默认配置。更多信息请参阅 man:newsyslog.conf[5]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:965
@@ -2311,80 +2401,90 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:968
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<include> /etc/newsyslog.conf.d/[!.]*.conf\n"
 "<include> /usr/local/etc/newsyslog.conf.d/[!.]*.conf\n"
-msgstr ""
+msgstr "<include> /etc/newsyslog.conf.d/[!.]*.conf\n<include> /usr/local/etc/newsyslog.conf.d/[!.]*.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:971
+#, fuzzy
 msgid "`logfilename` - Name of the system log file to be archived."
-msgstr ""
+msgstr "`logfilename` - 要归档的系统日志文件名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:972
+#, fuzzy
 msgid ""
 "`[owner:group]` - This optional field specifies the owner and group for the "
 "archive file."
-msgstr ""
+msgstr "`[owner:group]` - 此可选字段指定归档文件的所有者和组。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:973
+#, fuzzy
 msgid ""
 "`mode` - Specify the file mode of the log file and archives. Valid mode bits "
 "are 0666.  (That is, read and write permissions for the rotated log may be "
 "specified for the owner, group, and others.)"
-msgstr ""
+msgstr "`mode` - 指定日志文件和归档文件的文件模式。有效的模式位为 0666。（也就是说，可以为轮转后的日志指定所有者、组和其他用户的读写权限。）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:974
+#, fuzzy
 msgid "`count` - Specify the maximum number of archive files which may exist."
-msgstr ""
+msgstr "`count` - 指定可存在的归档文件最大数量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:975
+#, fuzzy
 msgid ""
 "`size` - When the size of the log file reaches size in kilobytes, the log "
 "file will be trimmed as described above. If this field contains an asterisk "
 "('*'), the log file will not be trimmed based on size."
-msgstr ""
+msgstr "`size` - 当日志文件大小达到指定的千字节数时，将按上述说明截断日志文件。如果此字段包含星号（'*'），则不会根据大小截断日志文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:976
+#, fuzzy
 msgid ""
 "`when` - Consist of an interval, a specific time, or both. Supported options "
 "in man:newsyslog.conf[5]."
-msgstr ""
+msgstr "`when` - 由时间间隔、特定时间或两者组成。支持的选项请参阅 man:newsyslog.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:977
+#, fuzzy
 msgid ""
 "`flags` - Indicates the flags that newsyslog accepts, supported options in "
 "man:newsyslog.conf[5]."
-msgstr ""
+msgstr "`flags` - 指定 newsyslog 接受的标志。支持的选项请参阅 man:newsyslog.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:978
+#, fuzzy
 msgid ""
 "`[/pid_file]` - This optional field specifies the file name containing a "
 "daemon's process ID or to find a group process ID."
-msgstr ""
+msgstr "`[/pid_file]` - 此可选字段指定包含守护进程进程 ID 的文件名，或用于查找进程组 ID 的文件名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:979
+#, fuzzy
 msgid ""
 "`[sig_num]` - This optional field specifies the signal that will be sent to "
 "the daemon process."
-msgstr ""
+msgstr "`[sig_num]` - 此可选字段指定要发送给守护进程的信号。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:983
+#, fuzzy
 msgid ""
 "The last two fields are optional and specify the name of the Process ID "
 "(PID) file of a process and a signal number to send to that process when the "
 "file is rotated."
-msgstr ""
+msgstr "最后两个字段为可选项，分别指定进程的进程 ID（PID）文件名，以及轮转文件时要发送给该进程的信号编号。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:986
@@ -2410,25 +2510,28 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:992
+#, fuzzy
 msgid ""
 "In FreeBSD, centralized log file aggregation, merging, and rotation can be "
 "configured using syslogd and newsyslog."
-msgstr ""
+msgstr "在 FreeBSD 中，可以使用 syslogd 和 newsyslog 配置集中式日志文件的汇总、合并和轮转。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:994
+#, fuzzy
 msgid ""
 "This section demonstrates an example configuration, where host `A`, named "
 "`logserv.example.com`, will collect logging information for the local "
 "network."
-msgstr ""
+msgstr "本节演示一种示例配置：主机 `A` 的名称为 `logserv.example.com`，将收集本地网络的日志信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:996
+#, fuzzy
 msgid ""
 "Host `B`, named `logclient.example.com`, will be configured to pass logging "
 "information to the logging server."
-msgstr ""
+msgstr "主机 `B` 的名称为 `logclient.example.com`，将配置为向日志服务器传送日志信息。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/config/_index.adoc:997
@@ -2452,16 +2555,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1002
+#, fuzzy
 msgid "Before configuring a log server, check the following:"
-msgstr ""
+msgstr "配置日志服务器前，请检查以下事项："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1004
+#, fuzzy
 msgid ""
 "If there is a firewall between the logging server and any logging clients, "
 "ensure that the firewall ruleset allows UDP port 514 for both the clients "
 "and the server."
-msgstr ""
+msgstr "如果日志服务器与任何日志客户端之间有防火墙，请确保防火墙规则集允许客户端和服务器使用 UDP 端口 514。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1005
@@ -2510,16 +2615,18 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1023
+#, fuzzy
 msgid ""
 "When adding multiple log clients, add a similar two-line entry for each "
 "client.  More information about the available facilities may be found in man:"
 "syslog.conf[5]."
-msgstr ""
+msgstr "添加多个日志客户端时，请为每个客户端添加类似的两行条目。有关可用设施的更多信息，请参阅 man:syslog.conf[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1025
+#, fuzzy
 msgid "Next, execute the following commands:"
-msgstr ""
+msgstr "接下来，执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1030
@@ -2533,20 +2640,22 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1036
+#, fuzzy
 msgid ""
 "The first entry starts syslogd at system boot.  The second entry allows log "
 "entries from the specified client.  The `-v -v` increases the verbosity of "
 "logged messages.  This is useful for tweaking facilities as administrators "
 "are able to see what type of messages are being logged under each facility."
-msgstr ""
+msgstr "第一项会在系统启动时启动 syslogd。第二项允许来自指定客户端的日志条目。`-v -v` 会提高日志消息的详细程度。这有助于调整设施，因为管理员可以查看每个设施记录的消息类型。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1040
+#, fuzzy
 msgid ""
 "Multiple `-a` options may be specified to allow logging from multiple "
 "clients.  IP addresses and whole netblocks may also be specified.  Refer to "
 "man:syslogd[8] for a full list of possible options."
-msgstr ""
+msgstr "可以指定多个 `-a` 选项，以允许多个客户端记录日志。也可以指定 IP 地址和整个网段。所有可用选项的完整列表，请参阅 man:syslogd[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1042
@@ -2555,30 +2664,32 @@ msgstr "最后，创建日志文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1046
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# touch /var/log/logclient.log\n"
-msgstr ""
+msgstr "# touch /var/log/logclient.log\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1049
+#, fuzzy
 msgid "At this point, syslogd should be restarted and verified:"
-msgstr ""
+msgstr "此时应重新启动 syslogd 并确认其状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1054
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service syslogd restart\n"
 "# pgrep syslog\n"
-msgstr ""
+msgstr "# service syslogd restart\n# pgrep syslog\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1058
+#, fuzzy
 msgid ""
 "If a PID is returned, the server restarted successfully, and client "
 "configuration can begin.  If the server did not restart, consult [."
 "filename]#/var/log/messages# for the error."
-msgstr ""
+msgstr "如果返回了 PID，说明服务器已成功重新启动，可以开始配置客户端。如果服务器未能重新启动，请查看 [.filename]#/var/log/messages# 中的错误信息。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/config/_index.adoc:1059
@@ -2619,11 +2730,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1074
+#, fuzzy
 msgid ""
 "The first entry enables syslogd on boot up.  The second entry prevents logs "
 "from being accepted by this client from other hosts (`-s`) and increases the "
 "verbosity of logged messages."
-msgstr ""
+msgstr "第一项会在启动时启用 syslogd。第二项会阻止此客户端接受来自其他主机的日志（`-s`），并提高日志消息的详细程度。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1077
@@ -2645,29 +2757,31 @@ msgstr "*.*\t\t@logserv.example.com\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1084
+#, fuzzy
 msgid "After saving the edit, restart syslogd for the changes to take effect:"
-msgstr ""
+msgstr "保存修改后，重新启动 syslogd 以使更改生效："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1088
 #: documentation/content/en/books/handbook/config/_index.adoc:1119
 #: documentation/content/en/books/handbook/config/_index.adoc:1142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service syslogd restart\n"
-msgstr ""
+msgstr "# service syslogd restart\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1091
+#, fuzzy
 msgid ""
 "To test that log messages are being sent across the network, use man:"
 "logger[1] on the client to send a message to syslogd:"
-msgstr ""
+msgstr "要测试日志消息是否正在通过网络发送，请在客户端使用 man:logger[1] 向 syslogd 发送消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1095
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# logger \"Test message from logclient\"\n"
-msgstr ""
+msgstr "# logger \"Test message from logclient\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1098
@@ -2722,10 +2836,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1110
+#, fuzzy
 msgid ""
 "To increase debugging output, edit the `syslogd_flags` entry on the logging "
 "server and issue a restart:"
-msgstr ""
+msgstr "要增加调试输出，请编辑日志服务器上的 `syslogd_flags` 条目，然后重启服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1114
@@ -2834,6 +2949,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1178
+#, fuzzy
 msgid ""
 "Local security is also an issue.  Log files are not encrypted during use or "
 "after log rotation.  Local users may access log files to gain additional "
@@ -2842,7 +2958,7 @@ msgid ""
 "permissions on newly created and rotated log files.  Setting log files to "
 "mode `600` should prevent unwanted access by local users.  Refer to man:"
 "newsyslog.conf[5] for additional information."
-msgstr ""
+msgstr "本地安全同样需要关注。日志文件在使用期间和轮转后都不会加密。本地用户可能会访问日志文件，从而进一步了解系统配置。正确设置日志文件权限至关重要。内置的日志轮转工具 newsyslog 支持为新建和轮转后的日志文件设置权限。将日志文件的模式设为 `600`，应可防止本地用户未经授权访问。更多信息请参阅 man:newsyslog.conf[5]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/config/_index.adoc:1180
@@ -2852,11 +2968,12 @@ msgstr "电源与资源管理"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1184
+#, fuzzy
 msgid ""
 "It is important to utilize hardware resources in an efficient manner.  Power "
 "and resource management allows the operating system to monitor system limits "
 "and to possibly run some actions triggered by events related to those limits."
-msgstr ""
+msgstr "高效利用硬件资源非常重要。电源和资源管理使操作系统能够监控系统限制，并可能在发生与这些限制相关的事件时运行相应操作。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1186
@@ -2867,45 +2984,50 @@ msgstr "配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1189
+#, fuzzy
 msgid ""
 "On FreeBSD the management of these resources is managed by the man:acpi[4] "
 "kernel device."
-msgstr ""
+msgstr "在 FreeBSD 中，这些资源由 man:acpi[4] 内核设备管理。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1193
+#, fuzzy
 msgid "In FreeBSD the man:acpi[4] driver is loaded by default at system boot."
-msgstr ""
+msgstr "在 FreeBSD 中，man:acpi[4] 驱动程序默认在系统启动时加载。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1195
+#, fuzzy
 msgid ""
 "This driver *cannot be unloaded after boot* because the system bus uses it "
 "for various hardware interactions."
-msgstr ""
+msgstr "系统总线会使用此驱动程序进行各种硬件交互，因此它*在启动后无法卸载*。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1199
+#, fuzzy
 msgid ""
 "In addition to man:acpi[4], FreeBSD has several dedicated kernel modules for "
 "various ACPI vendor subsystems.  These modules will add some extra "
 "functionality like fan speed, keyboard backlit or screen brightness."
-msgstr ""
+msgstr "除了 man:acpi[4]，FreeBSD 还提供多个专用内核模块，用于支持各种 ACPI 厂商子系统。这些模块可提供风扇转速、键盘背光或屏幕亮度等额外功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1201
+#, fuzzy
 msgid "The list can be obtained by running the following command:"
-msgstr ""
+msgstr "运行以下命令即可获取列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ls /boot/kernel | grep acpi\n"
-msgstr ""
+msgstr "% ls /boot/kernel | grep acpi\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "acpi_asus.ko\n"
 "acpi_asus_wmi.ko\n"
@@ -2920,48 +3042,51 @@ msgid ""
 "acpi_wmi.ko\n"
 "sdhci_acpi.ko\n"
 "uacpi.ko\n"
-msgstr ""
+msgstr "acpi_asus.ko\nacpi_asus_wmi.ko\nacpi_dock.ko\nacpi_fujitsu.ko\nacpi_hp.ko\nacpi_ibm.ko\nacpi_panasonic.ko\nacpi_sony.ko\nacpi_toshiba.ko\nacpi_video.ko\nacpi_wmi.ko\nsdhci_acpi.ko\nuacpi.ko\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1227
+#, fuzzy
 msgid ""
 "In the event that, for example, an IBM/Lenovo laptop is used, it will be "
 "necessary to load the module man:acpi_ibm[4] by executing the following "
 "command:"
-msgstr ""
+msgstr "例如，使用 IBM/Lenovo 笔记本电脑时，需要执行以下命令加载 man:acpi_ibm[4] 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload acpi_ibm\n"
-msgstr ""
+msgstr "# kldload acpi_ibm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1234
+#, fuzzy
 msgid "And add this line to [.filename]#/boot/loader.conf# to load it at boot:"
-msgstr ""
+msgstr "并将此行添加到 [.filename]#/boot/loader.conf#，以便在启动时加载该模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "acpi_ibm_load=\"YES\"\n"
-msgstr ""
+msgstr "acpi_ibm_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1246
+#, fuzzy
 msgid ""
 "An alternative to the man:acpi_video[4] module is the man:backlight[9] "
 "driver.  It provides a generic way for handling a panel backlight.  The "
 "default GENERIC kernel includes this driver.  The man:backlight[8] utility "
 "can be used to query and adjust the brightness of the panel backlight.  In "
 "this example the brightness is decreased by 10%:"
-msgstr ""
+msgstr "man:backlight[9] 驱动程序可作为 man:acpi_video[4] 模块的替代方案。它提供了通用的面板背光处理方式。默认的 GENERIC 内核包含此驱动程序。可以使用 man:backlight[8] 实用程序查询和调整面板背光亮度。以下示例将亮度降低 10%："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% backlight decr 10\n"
-msgstr ""
+msgstr "% backlight decr 10\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1253
@@ -2972,41 +3097,45 @@ msgstr "电源与资源管理"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1257
+#, fuzzy
 msgid ""
 "CPU is the most consuming part of the system.  Knowing how to improve CPU "
 "efficiency is a fundamental part of our system in order to save energy."
-msgstr ""
+msgstr "CPU 是系统中最耗能的部分。了解如何提高 CPU 效率，是节约能源的关键。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1259
+#, fuzzy
 msgid ""
 "In order to make proper use of the machine's resources in a correct way, "
 "FreeBSD supports technologies such as Intel Turbo Boost, AMD Turbo Core, "
 "Intel Speed Shift among others through the use of man:powerd[8] and man:"
 "cpufreq[4]."
-msgstr ""
+msgstr "为了正确、高效地利用机器资源，FreeBSD 支持 Intel Turbo Boost、AMD Turbo Core、Intel Speed Shift 等技术，并借助 man:powerd[8] 和 man:cpufreq[4] 实现这些功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1261
+#, fuzzy
 msgid ""
 "The first step will be to obtain the CPU information by executing the "
 "following command:"
-msgstr ""
+msgstr "首先，执行以下命令获取 CPU 信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sysctl dev.cpu.0 <.>\n"
-msgstr ""
+msgstr "% sysctl dev.cpu.0 <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1268
+#, fuzzy
 msgid "In this case the `0` digit represents the first core of the CPU."
-msgstr ""
+msgstr "在此示例中，数字 `0` 表示 CPU 的第一个核心。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dev.cpu.0.cx_method: C1/mwait/hwc C2/mwait/hwc C3/mwait/hwc/bma\n"
 "dev.cpu.0.cx_usage_counters: 3507294 0 0\n"
@@ -3025,46 +3154,53 @@ msgid ""
 "dev.cpu.0.%location: handle=\\_PR_.CPU0\n"
 "dev.cpu.0.%driver: cpu\n"
 "dev.cpu.0.%desc: ACPI CPU\n"
-msgstr ""
+msgstr "dev.cpu.0.cx_method: C1/mwait/hwc C2/mwait/hwc C3/mwait/hwc/bma\ndev.cpu.0.cx_usage_counters: 3507294 0 0\ndev.cpu.0.cx_usage: 100.00% 0.00% 0.00% last 3804us\ndev.cpu.0.cx_lowest: C3 <1>\ndev.cpu.0.cx_supported: C1/1/1 C2/2/1 C3/3/57 <2>\ndev.cpu.0.freq_levels: 2267/35000 2266/35000 1600/15000 800/12000 <3>\ndev.cpu.0.freq: 1600 <4>\ndev.cpu.0.temperature: 40.0C <5>\ndev.cpu.0.coretemp.throttle_log: 0\ndev.cpu.0.coretemp.tjmax: 105.0C\ndev.cpu.0.coretemp.resolution: 1\ndev.cpu.0.coretemp.delta: 65\ndev.cpu.0.%parent: acpi0\ndev.cpu.0.%pnpinfo: _HID=none _UID=0 _CID=none\ndev.cpu.0.%location: handle=\\_PR_.CPU0\ndev.cpu.0.%driver: cpu\ndev.cpu.0.%desc: ACPI CPU\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1293
+#, fuzzy
 msgid "Lowest Cx state to use for idling the CPU."
-msgstr ""
+msgstr "CPU 空闲时使用的最低 Cx 状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1294
+#, fuzzy
 msgid "CPU supported Cx states."
-msgstr ""
+msgstr "CPU 支持的 Cx 状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1295
+#, fuzzy
 msgid "Currently available levels for the CPU (frequency/power usage)."
-msgstr ""
+msgstr "CPU 当前可用的级别（频率／功耗）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1296
+#, fuzzy
 msgid "Current active CPU frequency in MHz."
-msgstr ""
+msgstr "当前 CPU 的工作频率，单位为 MHz。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1297
+#, fuzzy
 msgid "Current temperature of the CPU."
-msgstr ""
+msgstr "CPU 当前温度。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1302
+#, fuzzy
 msgid ""
 "If the temperature information is not displayed, load the man:coretemp[4] "
 "module.  In case of using an AMD CPU, load the man:amdtemp[4] module."
-msgstr ""
+msgstr "如果未显示温度信息，请加载 man:coretemp[4] 模块。如果使用 AMD CPU，请加载 man:amdtemp[4] 模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1305
+#, fuzzy
 msgid ""
 "Once the CPU information is available the easiest way to configure power "
 "saving is to let man:powerd[8] take over."
-msgstr ""
+msgstr "CPU 信息可用后，配置节能最简单的方法是交由 man:powerd[8] 管理。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1307
@@ -3076,74 +3212,82 @@ msgstr "而只套用到此系统的设定放在<filename>/etc/rc.conf.local</fil
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc powerd_enable=YES\n"
-msgstr ""
+msgstr "# sysrc powerd_enable=YES\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1314
+#, fuzzy
 msgid ""
 "It will also be necessary to indicate certain parameters to man:powerd[8] to "
 "tell it how to manage the state of the CPU executing the following command:"
-msgstr ""
+msgstr "还需要为 man:powerd[8] 指定一些参数，以告知其如何管理 CPU 状态。执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc powerd_flags=\"-a hiadaptive -i 25 -r 85 -N\"\n"
-msgstr ""
+msgstr "# sysrc powerd_flags=\"-a hiadaptive -i 25 -r 85 -N\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1321
+#, fuzzy
 msgid "`-a`: Selects the mode to use while on AC power."
-msgstr ""
+msgstr "`-a`：选择使用交流电源时的模式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1322
+#, fuzzy
 msgid "`hiadaptive`: Operation mode. More info at man:powerd[8]."
-msgstr ""
+msgstr "`hiadaptive`：运行模式。详情请参阅 man:powerd[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1323
+#, fuzzy
 msgid ""
 "`-i`: Specifies the CPU load percent level when adaptive mode should begin "
 "to degrade performance to save power."
-msgstr ""
+msgstr "`-i`：指定自适应模式开始降低性能以节省电力时的 CPU 负载百分比。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1324
+#, fuzzy
 msgid ""
 "`-r`: Specifies the CPU load percent level where adaptive mode should "
 "consider the CPU running and increase performance."
-msgstr ""
+msgstr "`-r`：指定自适应模式认为 CPU 正在运行并提高性能时的 CPU 负载百分比。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1325
+#, fuzzy
 msgid ""
 "`-N`: Treat \"nice\" time as idle for the purpose of load calculation; i.e., "
 "do not increase the CPU frequency if the CPU is only busy with \"nice\" "
 "processes."
-msgstr ""
+msgstr "`-N`：在计算负载时将 \"nice\" 时间视为空闲；也就是说，如果 CPU 仅忙于运行 \"nice\" 进程，则不提高 CPU 频率。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1327
+#, fuzzy
 msgid "And then enable the service executing the following command:"
-msgstr ""
+msgstr "然后执行以下命令启用该服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service powerd start\n"
-msgstr ""
+msgstr "# service powerd start\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CPU Frequency Control"
-msgstr ""
+msgstr "CPU 频率控制"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1339
+#, fuzzy
 msgid ""
 "FreeBSD includes a generic man:cpufreq[4] driver to allow the administrator, "
 "or software such as man:powerd[8] and package:sysutils/powerdxx[], to manage "
@@ -3151,16 +3295,17 @@ msgid ""
 "and economy.  A lower setting will save power while reducing the heat "
 "generated by the CPU.  A higher setting will increase performance at the "
 "cost of using additional power and generating more heat."
-msgstr ""
+msgstr "FreeBSD 包含通用的 man:cpufreq[4] 驱动程序，管理员或 man:powerd[8] 和 package:sysutils/powerdxx[] 等软件可以使用它来管理 CPU 频率，从而实现所需的性能与节能平衡。较低的设置可以节省电力，同时减少 CPU 产生的热量。较高的设置则可以提升性能，但会消耗更多电力并产生更多热量。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Intel(R) Enhanced Speed Step(TM)"
-msgstr ""
+msgstr "Intel(R) Enhanced Speed Step(TM)"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1346
+#, fuzzy
 msgid ""
 "The Intel(R) Enhanced Speed Step(TM) driver, man:est[4], replaces the "
 "generic man:cpufreq[4] driver for CPUs that provide this feature.  The CPU "
@@ -3168,45 +3313,48 @@ msgid ""
 "rc.d/power_profile` startup script.  Additional software, such as man:"
 "powerd[8] or package:sysutils/powerdxx[], can be used to automatically "
 "adjust the CPU frequency based on processor utilization."
-msgstr ""
+msgstr "对于支持此功能的 CPU，Intel(R) Enhanced Speed Step(TM) 驱动程序 man:est[4] 会取代通用的 man:cpufreq[4] 驱动程序。可以使用 man:sysctl[8] 或 `/etc/rc.d/power_profile` 启动脚本静态调整 CPU 频率。还可以使用 man:powerd[8] 或 package:sysutils/powerdxx[] 等软件，根据处理器利用率自动调整 CPU 频率。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1348
+#, fuzzy
 msgid ""
 "Each supported frequency, along with its expected power consumption, can be "
 "listed by examining the man:sysctl[3] tree:"
-msgstr ""
+msgstr "检查 man:sysctl[3] 树，可以查看每种受支持的频率及其预期功耗："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl dev.cpufreq.0.freq_driver dev.cpu.0.freq_levels dev.cpu.0.freq\n"
-msgstr ""
+msgstr "# sysctl dev.cpufreq.0.freq_driver dev.cpu.0.freq_levels dev.cpu.0.freq\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dev.cpufreq.0.freq_driver: est0\n"
 "dev.cpu.0.freq_levels: 3001/53000 3000/53000 2900/50301 2700/46082 2600/43525 2400/39557 2300/37137 2100/33398 2000/31112 1800/27610 1700/25455 1500/22171 1400/20144 1200/17084 1100/15181 900/12329 800/10550\n"
 "dev.cpu.0.freq: 800\n"
-msgstr ""
+msgstr "dev.cpufreq.0.freq_driver: est0\ndev.cpu.0.freq_levels: 3001/53000 3000/53000 2900/50301 2700/46082 2600/43525 2400/39557 2300/37137 2100/33398 2000/31112 1800/27610 1700/25455 1500/22171 1400/20144 1200/17084 1100/15181 900/12329 800/10550\ndev.cpu.0.freq: 800\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1364
+#, fuzzy
 msgid ""
 "A frequency 1 MHz higher than the maximum frequency of the CPU indicates the "
 "Intel(R) Turbo Boost(TM) feature."
-msgstr ""
+msgstr "如果某个频率比 CPU 的最高频率高 1 MHz，则表示支持 Intel(R) Turbo Boost(TM) 功能。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Intel Speed Shift(TM)"
-msgstr ""
+msgstr "Intel Speed Shift(TM)"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1372
+#, fuzzy
 msgid ""
 "Users running newer Intel(R) CPUs may find some differences in dynamic "
 "frequency control when upgrading to FreeBSD 13.  A new driver for the "
@@ -3216,71 +3364,76 @@ msgid ""
 "to automatically enable Speed Shift(TM) control on equipped CPUs, replacing "
 "the older Enhanced Speed Step(TM) man:est[4] driver.  The man:sysctl[8] `dev."
 "cpufreq.%d.freq_driver` will indicate if the system is using Speed Shift."
-msgstr ""
+msgstr "升级到 FreeBSD 13 时，使用较新 Intel(R) CPU 的用户可能会发现动态频率控制存在一些差异。某些 SKU 支持新的 Intel(R) Speed Shift(TM) 功能集驱动程序，该驱动程序允许硬件动态调整核心频率，包括逐核心调整。FreeBSD 13 附带 man:hwpstate_intel[4] 驱动程序，可在配备相应硬件的 CPU 上自动启用 Speed Shift(TM) 控制，并取代较旧的 Enhanced Speed Step(TM) man:est[4] 驱动程序。man:sysctl[8] 的 `dev.cpufreq.%d.freq_driver` 将显示系统是否正在使用 Speed Shift。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1374
+#, fuzzy
 msgid ""
 "To determine which frequency control driver is being used, examining the "
 "`dev.cpufreq.0.freq_driver` oid."
-msgstr ""
+msgstr "要确定正在使用哪个频率控制驱动程序，请检查 `dev.cpufreq.0.freq_driver` oid。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl dev.cpufreq.0.freq_driver\n"
-msgstr ""
+msgstr "# sysctl dev.cpufreq.0.freq_driver\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "dev.cpufreq.0.freq_driver: hwpstate_intel0\n"
-msgstr ""
+msgstr "dev.cpufreq.0.freq_driver: hwpstate_intel0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1389
+#, fuzzy
 msgid ""
 "This indicates that the new man:hwpstate_intel[4] driver is in use.  On such "
 "systems, the oid `dev.cpu.%d.freq_levels` will show only the maximum CPU "
 "frequency, and will indicate a power consumption level of `-1`."
-msgstr ""
+msgstr "这表示正在使用新的 man:hwpstate_intel[4] 驱动程序。在这类系统上，oid `dev.cpu.%d.freq_levels` 只会显示 CPU 的最高频率，并将功耗级别标记为 `-1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1391
+#, fuzzy
 msgid ""
 "The current CPU frequency can be determined by examining the `dev.cpu.%d."
 "freq` oid."
-msgstr ""
+msgstr "检查 `dev.cpu.%d.freq` oid 可以确定当前 CPU 频率。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl dev.cpu.0.freq_levels dev.cpu.0.freq\n"
-msgstr ""
+msgstr "# sysctl dev.cpu.0.freq_levels dev.cpu.0.freq\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dev.cpu.0.freq_levels: 3696/-1\n"
 "dev.cpu.0.freq: 898\n"
-msgstr ""
+msgstr "dev.cpu.0.freq_levels: 3696/-1\ndev.cpu.0.freq: 898\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1406
+#, fuzzy
 msgid ""
 "For more information, including on how to balance performance and energy "
 "use, and on how to disable this driver, refer to the man page man:"
 "hwpstate_intel[4]."
-msgstr ""
+msgstr "有关性能与能耗平衡以及如何禁用此驱动程序等更多信息，请参阅手册页 man:hwpstate_intel[4]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1410
+#, fuzzy
 msgid ""
 "Users accustomed to using man:powerd[8] or package:sysutils/powerdxx[] will "
 "find these utilities have been superseded by the man:hwpstate_intel[4] "
 "driver and no longer work as expected."
-msgstr ""
+msgstr "习惯使用 man:powerd[8] 或 package:sysutils/powerdxx[] 的用户会发现，这些实用程序已被 man:hwpstate_intel[4] 驱动程序取代，且不再按预期工作。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1413
@@ -3291,42 +3444,47 @@ msgstr "电源与资源管理"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1418
+#, fuzzy
 msgid ""
 "Graphics cards have become a fundamental part of computing in recent years.  "
 "Some graphics cards may have excessive power consumption.  FreeBSD allows "
 "certain configurations to improve power consumption."
-msgstr ""
+msgstr "近年来，显卡已成为计算设备的重要组成部分。某些显卡的功耗可能过高。FreeBSD 支持通过特定配置降低功耗。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1420
+#, fuzzy
 msgid ""
 "In case of using an Intel(R) graphics card with the package:graphics/drm-"
 "kmod[] driver these options can be added to [.filename]#/boot/loader.conf#:"
-msgstr ""
+msgstr "如果使用搭配 package:graphics/drm-kmod[] 驱动程序的 Intel(R) 显卡，可以将以下选项添加到 [.filename]#/boot/loader.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1426
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "compat.linuxkpi.fastboot=1 <.>\n"
 "compat.linuxkpi.enable_dc=2 <.>\n"
 "compat.linuxkpi.enable_fbc=1 <.>\n"
-msgstr ""
+msgstr "compat.linuxkpi.fastboot=1 <.>\ncompat.linuxkpi.enable_dc=2 <.>\ncompat.linuxkpi.enable_fbc=1 <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1429
+#, fuzzy
 msgid "Try to skip unnecessary mode sets at boot time."
-msgstr ""
+msgstr "尝试跳过启动时不必要的模式设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1430
+#, fuzzy
 msgid "Enable power-saving display C-states."
-msgstr ""
+msgstr "启用节能显示 C 状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1431
+#, fuzzy
 msgid "Enable frame buffer compression for power savings"
-msgstr ""
+msgstr "启用帧缓冲压缩以节省电力"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1432
@@ -3336,97 +3494,101 @@ msgstr "待机/唤醒"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1435
+#, fuzzy
 msgid ""
 "The suspend/resume function allows the machine to be kept in a state in "
 "which there is no a big energy consumption and allows the system to be "
 "resumed without having to lose the state of the running programs."
-msgstr ""
+msgstr "挂起／恢复功能可使机器进入低功耗状态，并允许系统恢复运行，而不丢失正在运行的程序状态。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1440
+#, fuzzy
 msgid ""
 "In order for the suspend/resume functionality to work correctly the graphics "
 "drivers must be loaded on the system.  In non-KMS-supported graphics cards "
 "man:sc[4] must be used not to break the suspend/resume functionality."
-msgstr ""
+msgstr "要使挂起／恢复功能正常工作，系统必须加载图形驱动程序。对于不支持 KMS 的显卡，必须使用 man:sc[4]，以免破坏挂起／恢复功能。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1442
+#, fuzzy
 msgid ""
 "More information about which driver to use and how to configure it can be "
 "found at the crossref:x11[x11, The X Window System chapter]."
-msgstr ""
+msgstr "有关应使用哪个驱动程序以及如何配置它的更多信息，请参阅 crossref:x11[x11, The X Window System chapter]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1445
+#, fuzzy
 msgid "man:acpi[4] supports the next list of sleep states:"
-msgstr ""
+msgstr "man:acpi[4] 支持以下睡眠状态："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/config/_index.adoc:1446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported Sleep States"
-msgstr ""
+msgstr "支持的睡眠状态"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1451
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "S1"
-msgstr ""
+msgstr "S1"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Quick suspend to RAM. The CPU enters a lower power state, but most peripherals are left running."
-msgstr ""
+msgstr "快速挂起到 RAM。CPU 进入低功耗状态，但大多数外围设备仍保持运行。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "S2"
-msgstr ""
+msgstr "S2"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1456
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lower power state than S1, but with the same basic characteristics. Not supported by many systems."
-msgstr ""
+msgstr "功耗低于 S1，但基本特性相同。许多系统不支持此状态。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1457
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "S3 (Sleep mode)"
-msgstr ""
+msgstr "S3（睡眠模式）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Suspend to RAM. Most devices are powered off, and the system stops running except for memory refresh."
-msgstr ""
+msgstr "挂起到 RAM。大多数设备会断电，系统停止运行，仅刷新内存。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "S4 (Hibernation)"
-msgstr ""
+msgstr "S4（休眠）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1462
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Suspend to disk. All devices are powered off, and the system stops running. When resuming, the system starts as if from a cold power on. *Not yet supported by FreeBSD*."
-msgstr ""
+msgstr "挂起到磁盘。所有设备都会断电，系统停止运行。恢复时，系统会像冷启动一样启动。*FreeBSD 尚不支持此状态*。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "S5"
-msgstr ""
+msgstr "S5"
 
 #. type: Table
 #: documentation/content/en/books/handbook/config/_index.adoc:1465
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System shuts down cleanly and powers off."
-msgstr ""
+msgstr "系统正常关闭并断电。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/config/_index.adoc:1468
@@ -3437,10 +3599,11 @@ msgstr "待机/唤醒"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1471
+#, fuzzy
 msgid ""
 "The first step will be to know which type of sleep states supports the "
 "hardware we are using executing the following command:"
-msgstr ""
+msgstr "第一步是执行以下命令，确认所用硬件支持哪些类型的睡眠状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1475
@@ -3460,42 +3623,46 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1487
+#, fuzzy
 msgid "As stated above FreeBSD does *not* yet support the `S4` state."
-msgstr ""
+msgstr "如上所述，FreeBSD *尚不支持* `S4` 状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1490
+#, fuzzy
 msgid ""
 "man:acpiconf[8] can be used to check if the `S3` state works correctly by "
 "running the following command, if it succeeds, the screen should go black "
 "and the machine will turn off:"
-msgstr ""
+msgstr "可以使用 man:acpiconf[8] 检查 `S3` 状态是否正常工作。执行以下命令；如果成功，屏幕应变黑，机器也会关闭："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1494
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# acpiconf -s 3\n"
-msgstr ""
+msgstr "# acpiconf -s 3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1497
+#, fuzzy
 msgid ""
 "In the vast majority of cases the Suspend/Resume functionality wants to be "
 "used on a laptop."
-msgstr ""
+msgstr "绝大多数情况下，挂起／恢复功能用于笔记本电脑。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1499
+#, fuzzy
 msgid ""
 "FreeBSD can be configured to enter the `S3` state when closing the lid by "
 "adding the following line to the [.filename]#/etc/sysctl.conf# file."
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/etc/sysctl.conf# 文件，可以配置 FreeBSD 在合上笔记本电脑盖时进入 `S3` 状态。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hw.acpi.lid_switch_state=S3\n"
-msgstr ""
+msgstr "hw.acpi.lid_switch_state=S3\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/config/_index.adoc:1506
@@ -3506,31 +3673,35 @@ msgstr "故障排除"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1510
+#, fuzzy
 msgid ""
 "A lot of effort has been made to make the Suspend and Resume functions work "
 "properly and in the best way on FreeBSD.  But currently the Suspend and "
 "Resume functions only work properly on some specific laptops."
-msgstr ""
+msgstr "FreeBSD 为确保挂起和恢复功能正常工作并尽可能优化其表现投入了大量工作。不过，目前这些功能只能在某些特定笔记本电脑上正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1512
+#, fuzzy
 msgid "Some checks can be done in case it doesn't work properly."
-msgstr ""
+msgstr "如果功能无法正常工作，可以进行一些检查。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1515
+#, fuzzy
 msgid ""
 "In some cases it is enough to turn off the bluetooth.  In others it is "
 "enough loading the correct driver for the graphics card, etc."
-msgstr ""
+msgstr "有时只需关闭蓝牙即可解决问题；其他情况下，加载正确的显卡驱动程序等操作就足够了。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1517
+#, fuzzy
 msgid ""
 "In case it doesn't work correctly, some tips can be found on the FreeBSD "
 "Wiki in the section link:https://wiki.freebsd.org/SuspendResume[Suspend/"
 "Resume]."
-msgstr ""
+msgstr "如果功能无法正常工作，可以在 FreeBSD Wiki 的 link:https://wiki.freebsd.org/SuspendResume[Suspend/Resume] 部分查找一些建议。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/config/_index.adoc:1519
@@ -3556,11 +3727,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1525
+#, fuzzy
 msgid ""
 "For information on how to encrypt swap space, which options exist, and why "
 "it should be done, refer to crossref:disks[swap-encrypting,“Encrypting "
 "Swap”]."
-msgstr ""
+msgstr "有关如何加密交换空间、可用选项以及加密原因的信息，请参阅 crossref:disks[swap-encrypting,“加密交换空间”]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1527
@@ -3570,13 +3742,14 @@ msgstr "使用新硬盘或既有分割区增加交换空间"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1531
+#, fuzzy
 msgid ""
 "Adding a new drive for swap gives better performance than using a partition "
 "on an existing drive.  Setting up partitions and drives is explained in "
 "crossref:disks[disks-adding,\"Adding Disks\"] while crossref:"
 "bsdinstall[configtuning-initial,\"Designing the Partition Layout\"] "
 "discusses partition layouts and swap partition size considerations."
-msgstr ""
+msgstr "使用新硬盘作为交换空间比在现有硬盘上使用分区性能更好。有关分区和硬盘的设置，请参阅 crossref:disks[disks-adding,\"添加磁盘\"]；crossref:bsdinstall[configtuning-initial,\"设计分区布局\"]则介绍分区布局和交换分区大小方面的注意事项。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1537
@@ -3593,16 +3766,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1540
+#, fuzzy
 msgid ""
 "man:swapon[8] can be used to add a swap partition to the system executing "
 "the following command:"
-msgstr ""
+msgstr "可以使用 man:swapon[8] 将交换分区添加到系统中，执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1544
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# swapon /dev/ada1p2\n"
-msgstr ""
+msgstr "# swapon /dev/ada1p2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1547
@@ -3616,16 +3790,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1551
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/ada1p2 none swap sw 0 0\n"
-msgstr ""
+msgstr "/dev/ada1p2 none swap sw 0 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1554
+#, fuzzy
 msgid ""
 "See man:fstab[5] for an explanation of the entries in [.filename]#/etc/"
 "fstab#."
-msgstr ""
+msgstr "有关 [.filename]#/etc/fstab# 中各项的说明，请参阅 man:fstab[5]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/config/_index.adoc:1556
@@ -3643,10 +3818,11 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1564
+#, fuzzy
 msgid ""
 "Swap files on ZFS file systems are strongly discouraged, as swapping can "
 "lead to system hangs."
-msgstr ""
+msgstr "强烈不建议在 ZFS 文件系统上使用交换文件，因为交换操作可能导致系统挂起。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1567
@@ -3657,9 +3833,9 @@ msgstr "建立交换档："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1571
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dd if=/dev/zero of=/usr/swap0 bs=1m count=512\n"
-msgstr ""
+msgstr "# dd if=/dev/zero of=/usr/swap0 bs=1m count=512\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1574
@@ -3670,9 +3846,9 @@ msgstr "在新文件设定适当的权限："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1578
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 0600 /usr/swap0\n"
-msgstr ""
+msgstr "# chmod 0600 /usr/swap0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1581
@@ -3690,16 +3866,17 @@ msgstr "md99\tnone\tswap\tsw,file=/usr/swap0,late\t0\t0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/config/_index.adoc:1588
+#, fuzzy
 msgid ""
 "Swap space will be added on system startup. To add swap space immediately, "
 "use man:swapon[8]:"
-msgstr ""
+msgstr "系统启动时将添加交换空间。要立即添加交换空间，请使用 man:swapon[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/config/_index.adoc:1592
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# swapon -aL\n"
-msgstr ""
+msgstr "# swapon -aL\n"
 
 #, no-wrap
 #~ msgid "Configuration and Tuning"

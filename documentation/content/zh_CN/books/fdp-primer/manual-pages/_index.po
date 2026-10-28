@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to work with the FreeBSD Manual Pages"
-msgstr ""
+msgstr "如何使用 FreeBSD 手册页"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:1
@@ -45,170 +45,175 @@ msgstr "介绍"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:55
+#, fuzzy
 msgid ""
 "_Manual pages_, commonly shortened to _man pages_, were conceived as readily-"
 "available reminders for command syntax, device driver details, or "
 "configuration file formats.  They have become an extremely valuable quick-"
 "reference from the command line for users, system administrators, and "
 "programmers."
-msgstr ""
+msgstr "__手册页__（通常简称为 __man 页__）最初是为了方便用户随时查阅命令语法、设备驱动程序细节或配置文件格式而设计的。如今，它们已成为用户、系统管理员和程序员在命令行中极具价值的快速参考资料。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:57
+#, fuzzy
 msgid ""
 "Although intended as reference material rather than tutorials, the EXAMPLES "
 "sections of manual pages often provide detailed use case."
-msgstr ""
+msgstr "手册页旨在作为参考资料，而非教程；不过，其中的 EXAMPLES 部分通常会提供详细的使用案例。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:61
+#, fuzzy
 msgid ""
 "Manual pages are generally shown interactively by the man:man[1] command.  "
 "When the user types `man ls`, a search is performed for a manual page "
 "matching `ls`.  The first matching result is displayed."
-msgstr ""
+msgstr "通常使用 man:man[1] 命令交互式地查看手册页。当用户输入 `man ls` 时，系统会搜索与 `ls` 匹配的手册页，并显示第一个匹配结果。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sections"
-msgstr ""
+msgstr "章节"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:67
+#, fuzzy
 msgid ""
 "Manual pages are grouped into _sections_.  Each section contains manual "
 "pages for a specific category of documentation:"
-msgstr ""
+msgstr "手册页分为若干__章节__。每个章节包含特定类别文档的手册页："
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Section Number"
-msgstr ""
+msgstr "章节编号"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Commands"
-msgstr ""
+msgstr "常用命令"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System Calls"
-msgstr ""
+msgstr "系统调用"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Library Functions"
-msgstr ""
+msgstr "库函数"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Interfaces"
-msgstr ""
+msgstr "内核接口"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File Formats"
-msgstr ""
+msgstr "文件格式"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Games"
-msgstr ""
+msgstr "游戏"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Miscellaneous"
-msgstr ""
+msgstr "杂项"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System Manager"
-msgstr ""
+msgstr "系统管理"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Developer"
-msgstr ""
+msgstr "内核开发"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Markup"
-msgstr ""
+msgstr "标记语言"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:112
+#, fuzzy
 msgid ""
 "Various markup forms and rendering programs have been used for manual "
 "pages.  FreeBSD has used man:groff[7] and the newer man:mandoc[1].  Most "
@@ -217,201 +222,205 @@ msgid ""
 "It is mostly semantic: parts of text are marked up for what they are, rather "
 "than for how they should appear when rendered.  There is some appearance-"
 "based markup which is usually best avoided."
-msgstr ""
+msgstr "手册页曾使用多种标记格式和渲染程序。FreeBSD 曾使用 man:groff[7]，后来又使用了较新的 man:mandoc[1]。大多数现有 FreeBSD 手册页以及所有新手册页都采用 man:mdoc[7] 标记格式。这是一种基于行的简单标记语言，表达能力也相当不错。它主要采用语义标记：标记文本各部分所代表的含义，而不是它们渲染后的外观。它也包含一些基于外观的标记，通常最好避免使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:115
+#, fuzzy
 msgid ""
 "Manual page source is usually interpreted and displayed to the screen "
 "interactively.  The source files can be ordinary text files or compressed "
 "with man:gzip[1] to save space."
-msgstr ""
+msgstr "手册页源文件通常会被解释并以交互方式显示在屏幕上。源文件可以是普通文本文件，也可以使用 man:gzip[1] 压缩以节省空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:118
+#, fuzzy
 msgid ""
 "Manual pages can also be rendered to other formats, including PostScript for "
 "printing or PDF generation.  See man:man[1]."
-msgstr ""
+msgstr "手册页也可以渲染为其他格式，包括用于打印或生成 PDF 的 PostScript。参见 man:man[1]。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Manual Page Sections"
-msgstr ""
+msgstr "手册页各部分"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:125
+#, fuzzy
 msgid ""
 "Manual pages are composed of several standard sections.  Each section has a "
 "title in upper case, and the sections for a particular type of manual page "
 "appear in a specific order.  For a category 1 General Command manual page, "
 "the sections are:"
-msgstr ""
+msgstr "手册页由若干标准部分组成。每部分都有一个全大写标题，且特定类型手册页中的各部分按特定顺序排列。类别 1（常用命令）手册页包含以下部分："
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Section Name"
-msgstr ""
+msgstr "部分名称"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "NAME"
-msgstr ""
+msgstr "NAME"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name of the command"
-msgstr ""
+msgstr "命令名称"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SYNOPSIS"
-msgstr ""
+msgstr "SYNOPSIS"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Format of options and arguments"
-msgstr ""
+msgstr "选项和参数的格式"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "DESCRIPTION"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description of purpose and usage"
-msgstr ""
+msgstr "用途和用法说明"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ENVIRONMENT"
-msgstr ""
+msgstr "ENVIRONMENT"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Environment settings that affect operation"
-msgstr ""
+msgstr "影响运行的环境设置"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "EXIT STATUS"
-msgstr ""
+msgstr "EXIT STATUS"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Error codes returned on exit"
-msgstr ""
+msgstr "退出时返回的错误代码"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "EXAMPLES"
-msgstr ""
+msgstr "EXAMPLES"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Examples of usage"
-msgstr ""
+msgstr "用法示例"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "COMPATIBILITY"
-msgstr ""
+msgstr "COMPATIBILITY"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compatibility with other implementations"
-msgstr ""
+msgstr "与其他实现的兼容性"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SEE ALSO"
-msgstr ""
+msgstr "SEE ALSO"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cross-reference to related manual pages"
-msgstr ""
+msgstr "相关手册页的交叉引用"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "STANDARDS"
-msgstr ""
+msgstr "STANDARDS"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compatibility with standards like POSIX"
-msgstr ""
+msgstr "与 POSIX 等标准的兼容性"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "HISTORY"
-msgstr ""
+msgstr "HISTORY"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "History of implementation"
-msgstr ""
+msgstr "实现历史"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BUGS"
-msgstr ""
+msgstr "BUGS"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Known bugs"
-msgstr ""
+msgstr "已知错误"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "AUTHORS"
-msgstr ""
+msgstr "AUTHORS"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "People who created the command or wrote the manual page."
-msgstr ""
+msgstr "创建命令或编写手册页的人员。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:172
+#, fuzzy
 msgid ""
 "Some sections are optional, and the combination of sections for a specific "
 "type of manual page vary.  Examples of the most common types are shown later "
 "in this chapter."
-msgstr ""
+msgstr "有些部分是可选的，特定类型手册页所包含的部分也各不相同。本章后文将介绍最常见类型的示例。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:174
@@ -421,15 +430,16 @@ msgstr "宏"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:179
+#, fuzzy
 msgid ""
 "man:mdoc[7] markup is based on _macros_.  Lines that begin with a dot "
 "contain macro commands, each two or three letters long.  For example, "
 "consider this portion of the man:ls[1] manual page:"
-msgstr ""
+msgstr "man:mdoc[7] 标记语言基于__宏__。以点号开头的行包含宏命令，每个宏命令由两个或三个字母组成。例如，来看一下 man:ls[1] 手册页中的这段内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".Dd December 1, 2015  <.>\n"
 ".Dt LS 1\n"
@@ -457,100 +467,110 @@ msgid ""
 "displays the names of files contained\n"
 "within that directory, as well as any requested, associated\n"
 "information.\n"
-msgstr ""
+msgstr ".Dd December 1, 2015  <.>\n.Dt LS 1\n.Sh NAME  <.>\n.Nm ls\n.Nd list directory contents\n.Sh SYNOPSIS  <.>\n.Nm  <.>\n.Op Fl -libxo  <.>\n.Op Fl ABCFGHILPRSTUWZabcdfghiklmnopqrstuwxy1,  <.>\n.Op Fl D Ar format  <.>\n.Op Ar  <.>\n.Sh DESCRIPTION  <.>\nFor each operand that names a\n.Ar file\nof a type other than\ndirectory,\n.Nm\ndisplays its name as well as any requested,\nassociated information.\nFor each operand that names a\n.Ar file\nof type directory,\n.Nm\ndisplays the names of files contained\nwithin that directory, as well as any requested, associated\ninformation.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:211
+#, fuzzy
 msgid "A _Document date_ and _Document title_ are defined."
-msgstr ""
+msgstr "定义了__文档日期__和__文档标题__。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:213
+#, fuzzy
 msgid ""
 "A _Section header_ for the NAME section is defined.  Then the _Name_ of the "
 "command and a one-line _Name description_ are defined."
-msgstr ""
+msgstr "定义了 NAME 部分的__部分标题__。随后定义命令的__名称__和一行__名称说明__。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:215
+#, fuzzy
 msgid ""
 "The SYNOPSIS section begins.  This section describes the command-line "
 "options and arguments accepted."
-msgstr ""
+msgstr "SYNOPSIS 部分开始。此部分说明命令接受的命令行选项和参数。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:216
+#, fuzzy
 msgid ""
 "_Name_ (`.Nm`) has already been defined, and repeating it here just displays "
 "the defined value in the text."
-msgstr ""
+msgstr "__名称__（`.Nm`）已经定义，在此处重复它只会在文本中显示已定义的值。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:218
+#, fuzzy
 msgid ""
 "An _Optional_ _Flag_ called `-libxo` is shown.  The `Fl` macro adds a dash "
 "to the beginning of flags, so this appears in the manual page as `--libxo`."
-msgstr ""
+msgstr "此处显示名为 `-libxo` 的__可选__ __标志__。`Fl` 宏会在标志前添加一个连字符，因此它在手册页中显示为 `--libxo`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:219
+#, fuzzy
 msgid "A long list of optional single-character flags are shown."
-msgstr ""
+msgstr "此处显示了一长串可选的单字符标志。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:223
+#, fuzzy
 msgid ""
 "An optional `-D` flag is defined.  If the `-D` flag is given, it must be "
 "followed by an _Argument_.  The argument is a _format_, a string that tells "
 "man:ls[1] what to display and how to display it.  Details on the format "
 "string are given later in the manual page."
-msgstr ""
+msgstr "此处定义了可选的 `-D` 标志。如果指定了 `-D` 标志，后面必须跟一个__参数__。该参数是一个__格式__，即用于告知 man:ls[1] 要显示什么以及如何显示的字符串。手册页后文将介绍此格式字符串的详细信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:225
+#, fuzzy
 msgid ""
 "A final optional argument is defined.  Since no name is specified for the "
 "argument, the default of `file ...` is used."
-msgstr ""
+msgstr "此处定义了最后一个可选参数。由于未指定参数名称，因此使用默认值 `file ...`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:226
+#, fuzzy
 msgid "The _Section header_ for the DESCRIPTION section is defined."
-msgstr ""
+msgstr "此处定义了 DESCRIPTION 部分的__部分标题__。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:228
+#, fuzzy
 msgid ""
 "When rendered with the command `man ls`, the result displayed on the screen "
 "looks like this:"
-msgstr ""
+msgstr "使用命令 `man ls` 渲染后，屏幕上会显示如下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LS(1)                   FreeBSD General Commands Manual                  LS(1)\n"
-msgstr ""
+msgstr "LS(1)                   FreeBSD General Commands Manual                  LS(1)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "NAME\n"
 "     ls - list directory contents\n"
-msgstr ""
+msgstr "NAME\n     ls - list directory contents\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SYNOPSIS\n"
 "     ls [--libxo] [-ABCFGHILPRSTUWZabcdfghiklmnopqrstuwxy1,] [-D format]\n"
 "        [file ...]\n"
-msgstr ""
+msgstr "SYNOPSIS\n     ls [--libxo] [-ABCFGHILPRSTUWZabcdfghiklmnopqrstuwxy1,] [-D format]\n        [file ...]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "DESCRIPTION\n"
 "     For each operand that names a file of a type other than directory, ls\n"
@@ -558,326 +578,340 @@ msgid ""
 "     each operand that names a file of type directory, ls displays the names\n"
 "     of files contained within that directory, as well as any requested,\n"
 "     associated information.\n"
-msgstr ""
+msgstr "DESCRIPTION\n     For each operand that names a file of a type other than directory, ls\n     displays its name as well as any requested, associated information.  For\n     each operand that names a file of type directory, ls displays the names\n     of files contained within that directory, as well as any requested,\n     associated information.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:249
+#, fuzzy
 msgid "Optional values are shown inside square brackets."
-msgstr ""
+msgstr "可选值显示在方括号内。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Markup Guidelines"
-msgstr ""
+msgstr "标记指南"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:255
+#, fuzzy
 msgid ""
 "The man:mdoc[7] markup language is not very strict.  For clarity and "
 "consistency, the FreeBSD Documentation project adds some additional style "
 "guidelines:"
-msgstr ""
+msgstr "man:mdoc[7] 标记语言并不十分严格。为保证清晰和一致，FreeBSD 文档项目制定了一些额外的风格指南："
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Only the first letter of macros is upper case"
-msgstr ""
+msgstr "宏名称仅首字母大写"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:258
+#, fuzzy
 msgid ""
 "Always use upper case for the first letter of a macro and lower case for the "
 "remaining letters."
-msgstr ""
+msgstr "宏名称的首字母始终大写，其余字母小写。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Begin new sentences on new lines"
-msgstr ""
+msgstr "新句另起一行"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:261
+#, fuzzy
 msgid ""
 "Start a new sentence on a new line, do not begin it on the same line as an "
 "existing sentence."
-msgstr ""
+msgstr "新句应另起一行，不要与已有句子写在同一行。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `.Dd` when making non-trivial changes to a manual page"
-msgstr ""
+msgstr "对手册页进行实质性修改时更新 `.Dd`"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:266
+#, fuzzy
 msgid ""
 "The _Document date_ informs the reader about the last time the manual page "
 "was updated.  It is important to update whenever non-trivial changes are "
 "made to the manual pages.  Trivial changes like spelling or punctuation "
 "fixes that do not affect usage can be made without updating `.Dd`."
-msgstr ""
+msgstr "__文档日期__告知读者手册页最近一次更新的时间。对手册页进行实质性修改时，务必更新该日期。拼写或标点修正等不会影响用法的微小改动，无需更新 `.Dd`。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:267
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Give examples"
-msgstr ""
+msgstr "提供示例"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:272
+#, fuzzy
 msgid ""
 "Show the reader examples when possible.  Even trivial examples are valuable, "
 "because what is trivial to the writer is not necessarily trivial to the "
 "reader.  Three examples are a good goal.  A trivial example shows the "
 "minimal requirements, a serious example shows actual use, and an in-depth "
 "example demonstrates unusual or non-obvious functionality."
-msgstr ""
+msgstr "尽可能向读者展示示例。即使是简单的示例也很有价值，因为对作者来说简单的内容，对读者而言未必如此。以三个示例为宜。简单示例展示最低要求，实用示例展示实际用法，深入示例则演示不常见或不明显的功能。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Include the BSD license"
-msgstr ""
+msgstr "包含 BSD 许可证"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:276
+#, fuzzy
 msgid ""
 "Include the BSD license on new manual pages.  The preferred license is "
 "available from the extref:{committers-guide}[Committer's Guide]."
-msgstr ""
+msgstr "新手册页应包含 BSD 许可证。推荐使用的许可证可在 extref:{committers-guide}[提交者指南]中找到。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Markup Tricks"
-msgstr ""
+msgstr "标记技巧"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:281
+#, fuzzy
 msgid "Add a space before punctuation on a line with macros. Example:"
-msgstr ""
+msgstr "在包含宏的行中，标点前添加空格。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".Sh SEE ALSO\n"
 ".Xr geom 4 ,\n"
 ".Xr boot0cfg 8 ,\n"
 ".Xr geom 8 ,\n"
 ".Xr gptboot 8\n"
-msgstr ""
+msgstr ".Sh SEE ALSO\n.Xr geom 4 ,\n.Xr boot0cfg 8 ,\n.Xr geom 8 ,\n.Xr gptboot 8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:295
+#, fuzzy
 msgid ""
 "Note how the commas at the end of the `.Xr` lines have been placed after a "
 "space.  The `.Xr` macro expects two parameters to follow it, the name of an "
 "external manual page, and a section number.  The space separates the "
 "punctuation from the section number.  Without the space, the external links "
 "would incorrectly point to section `4,` or `8,`."
-msgstr ""
+msgstr "注意，`.Xr` 行末尾的逗号前有一个空格。`.Xr` 宏要求后接两个参数：外部手册页的名称和章节编号。空格将标点与章节编号分开。如果没有这个空格，外部链接会错误地指向章节 `4,` 或 `8,`。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Important Macros"
-msgstr ""
+msgstr "重要宏"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:302
+#, fuzzy
 msgid ""
 "Some very common macros will be shown here.  For more usage examples, see "
 "man:mdoc[7], man:groff_mdoc[7], or search for actual use in [.filename]#/usr/"
 "share/man/man*# directories.  For example, to search for examples of the `."
 "Bd` _Begin display_ macro:"
-msgstr ""
+msgstr "这里将介绍一些非常常用的宏。如需查看更多用法示例，请参阅 man:mdoc[7]、man:groff_mdoc[7]，或在 [.filename]#/usr/share/man/man*# 目录中搜索实际用例。例如，要搜索 `.Bd` __开始显示__宏的用例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% find /usr/share/man/man* | xargs zgrep '.Bd'\n"
-msgstr ""
+msgstr "% find /usr/share/man/man* | xargs zgrep '.Bd'\n"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Organizational Macros"
-msgstr ""
+msgstr "组织结构宏"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:312
+#, fuzzy
 msgid "Some macros are used to define logical blocks of a manual page."
-msgstr ""
+msgstr "有些宏用于定义手册页中的逻辑块。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Organizational Macro"
-msgstr ""
+msgstr "组织结构宏"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:320
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use"
-msgstr ""
+msgstr "用途"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Sh`"
-msgstr ""
+msgstr "`.Sh`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Section header.\n"
 "Followed by the name of the section, traditionally all upper case.\n"
 "Think of these as chapter titles."
-msgstr ""
+msgstr "章节标题。\n后接章节名称，传统上全部使用大写字母。\n可将其视为章标题。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Ss`"
-msgstr ""
+msgstr "`.Ss`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Subsection header.\n"
 "Followed by the name of the subsection.\n"
 "Used to divide a `.Sh` section into subsections."
-msgstr ""
+msgstr "小节标题。\n后接小节名称。\n用于将 `.Sh` 章节划分为若干小节。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Bl`"
-msgstr ""
+msgstr "`.Bl`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Begin list. Start a list of items."
-msgstr ""
+msgstr "开始列表。开始一个项目列表。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.El`"
-msgstr ""
+msgstr "`.El`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "End a list."
-msgstr ""
+msgstr "结束列表。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Bd`"
-msgstr ""
+msgstr "`.Bd`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Begin display.\n"
 "Begin a special area of text, like an indented area."
-msgstr ""
+msgstr "开始显示区块。\n开始一个特殊文本区域，例如缩进区域。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Ed`"
-msgstr ""
+msgstr "`.Ed`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "End display."
-msgstr ""
+msgstr "结束显示区块。"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Inline Macros"
-msgstr ""
+msgstr "行内宏"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:348
+#, fuzzy
 msgid "Many macros are used to mark up inline text."
-msgstr ""
+msgstr "许多宏用于标记行内文本。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Inline Macro"
-msgstr ""
+msgstr "行内宏"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Nm`"
-msgstr ""
+msgstr "`.Nm`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Name.\n"
 "Called with a name as a parameter on the first use, then used later without the parameter to display the name that has already been defined."
-msgstr ""
+msgstr "名称。\n首次使用时以名称作为参数调用，之后不带参数使用，以显示已定义的名称。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`.Pa`"
-msgstr ""
+msgstr "`.Pa`"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Path to a file.\n"
 "Used to mark up filenames and directory paths."
-msgstr ""
+msgstr "文件路径。\n用于标记文件名和目录路径。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sample Manual Page Structures"
-msgstr ""
+msgstr "手册页结构示例"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:369
+#, fuzzy
 msgid ""
 "This section shows minimal desired man page contents for several common "
 "categories of manual pages."
-msgstr ""
+msgstr "本节展示了若干常见类别手册页所需的最简内容。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Section 1 or 8 Command"
-msgstr ""
+msgstr "第 1 或第 8 节命令"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:374
+#, fuzzy
 msgid "The preferred basic structure for a section 1 or 8 command:"
-msgstr ""
+msgstr "第 1 或第 8 节命令的推荐基本结构："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".Dd August 25, 2017\n"
 ".Dt EXAMPLECMD 8\n"
@@ -897,22 +931,23 @@ msgid ""
 ".Xr exampleconf 5\n"
 ".Sh AUTHORS\n"
 ".An Firstname Lastname Aq Mt flastname@example.com\n"
-msgstr ""
+msgstr ".Dd August 25, 2017\n.Dt EXAMPLECMD 8\n.Os\n.Sh NAME\n.Nm examplecmd\n.Nd \"用于演示第 1 节和第 8 节手册页的命令\"\n.Sh SYNOPSIS\n.Nm\n.Op Fl v\n.Sh DESCRIPTION\n.Nm\n实用程序除了演示第 1 或第 8 节命令手册页的简单但完整示例外，不执行任何操作。\n.Sh SEE ALSO\n.Xr exampleconf 5\n.Sh AUTHORS\n.An Firstname Lastname Aq Mt flastname@example.com\n"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Section 4 Device Driver"
-msgstr ""
+msgstr "第 4 节设备驱动程序"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:401
+#, fuzzy
 msgid "The preferred basic structure for a section 4 device driver:"
-msgstr ""
+msgstr "第 4 节设备驱动程序的推荐基本结构："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:457
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".Dd August 25, 2017\n"
 ".Dt EXAMPLEDRIVER 4\n"
@@ -967,22 +1002,23 @@ msgid ""
 ".Fx 49.2 .\n"
 ".Sh AUTHORS\n"
 ".An Firstname Lastname Aq Mt flastname@example.com\n"
-msgstr ""
+msgstr ".Dd August 25, 2017\n.Dt EXAMPLEDRIVER 4\n.Os\n.Sh NAME\n.Nm exampledriver\n.Nd \"用于演示第 4 节手册页的驱动程序\"\n.Sh SYNOPSIS\n要将此驱动程序编译进内核，请将以下行添加到内核配置文件中：\n.Bd -ragged -offset indent\n.Cd \"device exampledriver\"\n.Ed\n.Pp\n要在启动时将驱动程序作为模块加载，请将以下行添加到\n.Xr loader.conf 5 ：\n.Bd -literal -offset indent\nexampledriver_load=\"YES\"\n.Ed\n.Sh DESCRIPTION\n.Nm\n驱动程序提供了一个第 4 节手册页的框架或模板文件示例。\n.Sh HARDWARE\n.Nm\n驱动程序支持来自 aptly-named Nonexistent Technologies 的以下卡：\n.Pp\n.Bl -bullet -compact\n.It\nNT X149.2（单端口和双端口）\n.It\nNT X149.8（单端口）\n.El\n.Sh DIAGNOSTICS\n.Bl -diag\n.It \"闪烁的绿灯\"\n发生了严重问题。\n.It \"闪烁的红灯\"\n发生了非常严重的问题。\n.It \"常亮的黑灯\"\n电源线未插入。\n.El\n.Sh SEE ALSO\n.Xr example 8\n.Sh HISTORY\n该\n.Nm\n设备驱动程序首次出现于\n.Fx 49.2 。\n.Sh AUTHORS\n.An Firstname Lastname Aq Mt flastname@example.com\n"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Section 5 Configuration File"
-msgstr ""
+msgstr "第 5 节配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:463
+#, fuzzy
 msgid "The preferred basic structure for a section 5 configuration file:"
-msgstr ""
+msgstr "第 5 节配置文件的推荐基本结构："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:479
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".Dd August 25, 2017\n"
 ".Dt EXAMPLECONF 5\n"
@@ -997,7 +1033,7 @@ msgid ""
 ".Xr example 8\n"
 ".Sh AUTHORS\n"
 ".An Firstname Lastname Aq Mt flastname@example.com\n"
-msgstr ""
+msgstr ".Dd August 25, 2017\n.Dt EXAMPLECONF 5\n.Os\n.Sh NAME\n.Nm example.conf\n.Nd \"用于演示第 5 节手册页的配置文件\"\n.Sh DESCRIPTION\n.Nm\n是一个示例配置文件。\n.Sh SEE ALSO\n.Xr example 8\n.Sh AUTHORS\n.An Firstname Lastname Aq Mt flastname@example.com\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:482
@@ -1007,106 +1043,115 @@ msgstr "测试"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:489
+#, fuzzy
 msgid ""
 "Testing a new manual page can be challenging.  Fortunately there are some "
 "tools that can assist in the task.  Some of them, like man:man[1], do not "
 "look in the current directory.  It is a good idea to prefix the filename "
 "with `./` if the new manual page is in the current directory.  An absolute "
 "path can also be used."
-msgstr ""
+msgstr "测试新手册页可能颇具挑战。幸运的是，有一些工具可以协助完成此任务。有些工具（例如 man:man[1]）不会在当前目录中查找。如果新手册页位于当前目录中，建议在文件名前加上 `./`。也可以使用绝对路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:491
+#, fuzzy
 msgid "Use man:mandoc[1]'s linter to check for parsing errors:"
-msgstr ""
+msgstr "使用 man:mandoc[1] 的检查器来检查解析错误："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:495
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mandoc -T lint ./mynewmanpage.8\n"
-msgstr ""
+msgstr "% mandoc -T lint ./mynewmanpage.8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:498
+#, fuzzy
 msgid "Use package:textproc/igor[] to proofread the manual page:"
-msgstr ""
+msgstr "使用 package:textproc/igor[] 校对手册页："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:502
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% igor ./mynewmanpage.8\n"
-msgstr ""
+msgstr "% igor ./mynewmanpage.8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:507
+#, fuzzy
 msgid ""
 "Another useful tool is package:textproc/vale[].  It does not support the man:"
 "mdoc[7] syntax but the rendered manual page can be read from standard input:"
-msgstr ""
+msgstr "另一个实用工具是 package:textproc/vale[]。它不支持 man:mdoc[7] 语法，但可以从标准输入读取渲染后的手册页："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:511
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man ls | vale\n"
-msgstr ""
+msgstr "% man ls | vale\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:515
+#, fuzzy
 msgid ""
 "package:textproc/vale[] is highly configurable.  It is advised to read its "
 "documentation."
-msgstr ""
+msgstr "package:textproc/vale[] 的可配置性很强。建议阅读其文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:517
+#, fuzzy
 msgid "Use man:man[1] to check the final result of your changes:"
-msgstr ""
+msgstr "使用 man:man[1] 检查更改后的最终结果："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:521
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man ./mynewmanpage.8\n"
-msgstr ""
+msgstr "% man ./mynewmanpage.8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:524
+#, fuzzy
 msgid ""
 "You can use man:col[1] to filter the output of man:man[1] and get rid of the "
 "backspace characters before loading the result in your favorite editor for "
 "spell checking:"
-msgstr ""
+msgstr "可以使用 man:col[1] 过滤 man:man[1] 的输出，去除退格字符，然后将结果载入你喜欢的编辑器进行拼写检查："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:528
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man ./mynewmanpage.8 | col -b | vim -R -\n"
-msgstr ""
+msgstr "% man ./mynewmanpage.8 | col -b | vim -R -\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:533
+#, fuzzy
 msgid ""
 "Spell-checking with fully-featured dictionaries is encouraged, and can be "
 "accomplished by using package:textproc/hunspell[] or package:textproc/"
 "aspell[] combined with package:textproc/en-hunspell[] or package:textproc/en-"
 "aspell[], respectively.  For instance:"
-msgstr ""
+msgstr "建议使用功能齐全的词典进行拼写检查。可以将 package:textproc/hunspell[] 或 package:textproc/aspell[] 分别与 package:textproc/en-hunspell[] 或 package:textproc/en-aspell[] 搭配使用来完成检查。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:537
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% aspell check --lang=en --mode=nroff ./mynewmanpage.8\n"
-msgstr ""
+msgstr "% aspell check --lang=en --mode=nroff ./mynewmanpage.8\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:540
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example Manual Pages to Use as Templates"
-msgstr ""
+msgstr "可用作模板的手册页示例"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:543
+#, fuzzy
 msgid "Some manual pages are suitable as in-depth examples."
-msgstr ""
+msgstr "有些手册页适合作为深入参考示例。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:548
@@ -1117,57 +1162,57 @@ msgstr "手册页"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:551
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Path to Source Location"
-msgstr ""
+msgstr "源文件位置路径"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:552
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:cp[1]"
-msgstr ""
+msgstr "man:cp[1]"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/usr/src/bin/cp/cp.1#"
-msgstr ""
+msgstr "[.filename]#/usr/src/bin/cp/cp.1#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:555
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:vt[4]"
-msgstr ""
+msgstr "man:vt[4]"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:557
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/usr/src/share/man/man4/vt.4#"
-msgstr ""
+msgstr "[.filename]#/usr/src/share/man/man4/vt.4#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:558
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:crontab[5]"
-msgstr ""
+msgstr "man:crontab[5]"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:560
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/usr/src/usr.sbin/cron/crontab/crontab.5#"
-msgstr ""
+msgstr "[.filename]#/usr/src/usr.sbin/cron/crontab/crontab.5#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:561
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:gpart[8]"
-msgstr ""
+msgstr "man:gpart[8]"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:562
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/usr/src/sbin/geom/class/part/gpart.8#"
-msgstr ""
+msgstr "[.filename]#/usr/src/sbin/geom/class/part/gpart.8#"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:565
@@ -1177,35 +1222,42 @@ msgstr "资源"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:568
+#, fuzzy
 msgid "Resources for manual page writers:"
-msgstr ""
+msgstr "手册页编写者参考资源："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:570
+#, fuzzy
 msgid "man:man[1]"
-msgstr ""
+msgstr "man:man[1]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:571
+#, fuzzy
 msgid "man:mandoc[1]"
-msgstr ""
+msgstr "man:mandoc[1]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:572
+#, fuzzy
 msgid "man:style.mdoc[5]"
-msgstr ""
+msgstr "man:style.mdoc[5]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:573
+#, fuzzy
 msgid "man:groff_mdoc[7]"
-msgstr ""
+msgstr "man:groff_mdoc[7]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:574
+#, fuzzy
 msgid "http://manpages.bsd.lv/mdoc.html[Practical UNIX Manuals: mdoc]"
-msgstr ""
+msgstr "link:http://manpages.bsd.lv/mdoc.html[实用 UNIX 手册：mdoc]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/manual-pages/_index.adoc:574
+#, fuzzy
 msgid "http://manpages.bsd.lv/history.html[History of UNIX Manpages]"
-msgstr ""
+msgstr "link:http://manpages.bsd.lv/history.html[UNIX 手册页历史]"

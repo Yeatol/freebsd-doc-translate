@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter covers some of the ways serial communications can be used on FreeBSD"
-msgstr ""
+msgstr "本章介绍了在 FreeBSD 上使用串行通信的一些方式"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part IV. Network Communication"
-msgstr ""
+msgstr "第四部分：网络通信"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1
@@ -50,13 +50,14 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:57
+#, fuzzy
 msgid ""
 "UNIX(R) has always had support for serial communications as the very first "
 "UNIX(R) machines relied on serial lines for user input and output.  Things "
 "have changed a lot from the days when the average terminal consisted of a 10-"
 "character-per-second serial printer and a keyboard.  This chapter covers "
 "some of the ways serial communications can be used on FreeBSD."
-msgstr ""
+msgstr "UNIX(R) 一直支持串行通信，因为最早的 UNIX(R) 机器依靠串行线路进行用户输入和输出。从平均终端还是每秒打印 10 个字符的串行打印机和键盘的时代起，情况已经发生了很大变化。本章介绍了在 FreeBSD 上使用串行通信的一些方式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:59
@@ -94,15 +95,17 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:68
+#, fuzzy
 msgid ""
 "Know how to crossref:kernelconfig[kernelconfig, configure and install a "
 "custom kernel]."
-msgstr ""
+msgstr "了解如何 crossref:kernelconfig[kernelconfig，配置并安装自定义内核]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:69
+#, fuzzy
 msgid "Understand crossref:basics[basics, FreeBSD permissions and processes]."
-msgstr ""
+msgstr "了解 crossref:basics[basics，FreeBSD 权限和进程]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:70
@@ -124,61 +127,66 @@ msgstr "以下术语通常用于串行通信："
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bps"
-msgstr ""
+msgstr "bps"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:78
+#, fuzzy
 msgid "Bits per Second (bps) is the rate at which data is transmitted."
-msgstr ""
+msgstr "每秒比特数（bps）是数据传输速率的单位。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DTE"
-msgstr ""
+msgstr "DTE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:82
+#, fuzzy
 msgid ""
 "Data Terminal Equipment (DTE) is one of two endpoints in a serial "
 "communication.  An example would be a computer."
-msgstr ""
+msgstr "数据终端设备（DTE）是串行通信的两个端点之一。例如，计算机就是一种数据终端设备。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DCE"
-msgstr ""
+msgstr "DCE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:86
+#, fuzzy
 msgid ""
 "Data Communications Equipment (DCE) is the other endpoint in a serial "
 "communication.  Typically, it is a modem or serial terminal."
-msgstr ""
+msgstr "数据通信设备（DCE）是串行通信的另一个端点。通常，它是调制解调器或串行终端。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RS-232"
-msgstr ""
+msgstr "RS-232"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:90
+#, fuzzy
 msgid ""
 "The original standard which defined hardware serial communications.  It has "
 "since been renamed to TIA-232."
-msgstr ""
+msgstr "定义硬件串行通信的原始标准。该标准后来更名为 TIA-232。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:93
+#, fuzzy
 msgid ""
 "When referring to communication data rates, this section does not use the "
 "term _baud_.  Baud refers to the number of electrical state transitions made "
 "in a period of time, while bps is the correct term to use."
-msgstr ""
+msgstr "本节在提及通信数据速率时不使用术语 __baud__。Baud 指单位时间内电气状态转换的次数，而 bps 才是正确的术语。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:96
@@ -216,6 +224,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:110
+#, fuzzy
 msgid ""
 "These two types of cables differ in how the wires are connected to the "
 "connector.  Each wire represents a signal, with the defined signals "
@@ -225,18 +234,20 @@ msgid ""
 "goes to the \"Transmitted Data\" pin on the other end.  This is the type of "
 "cable used to connect a modem to the FreeBSD system, and is also appropriate "
 "for some terminals."
-msgstr ""
+msgstr "这两种电缆的区别在于导线与连接器的连接方式。每根导线代表一个信号，其定义见 crossref:serialcomms[serialcomms-signal-names，RS-232C 信号名称]。标准串行电缆会将所有 RS-232C 信号直接连接。比如，电缆一端的“发送数据”引脚连接到另一端的“发送数据”引脚。这种电缆用于将调制解调器连接到 FreeBSD 系统，也适用于某些终端。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:113
+#, fuzzy
 msgid ""
 "A null-modem cable switches the \"Transmitted Data\" pin of the connector on "
 "one end with the \"Received Data\" pin on the other end.  The connector can "
 "be either a DB-25 or a DB-9."
-msgstr ""
+msgstr "零调制解调器电缆会将一端连接器的“发送数据”引脚与另一端的“接收数据”引脚互换。连接器可以是 DB-25 或 DB-9。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:120
+#, fuzzy
 msgid ""
 "A null-modem cable can be constructed using the pin connections summarized "
 "in crossref:serialcomms[nullmodem-db25, DB-25 to DB-25 Null-Modem Cable], "
@@ -247,25 +258,25 @@ msgid ""
 "Some terminals work using only pins 2, 3, and 7, while others require "
 "different configurations.  When in doubt, refer to the documentation for the "
 "hardware."
-msgstr ""
+msgstr "可以按照 crossref:serialcomms[nullmodem-db25，DB-25 到 DB-25 零调制解调器电缆]、crossref:serialcomms[nullmodem-db9，DB-9 到 DB-9 零调制解调器电缆] 和 crossref:serialcomms[nullmodem-db9-25，“DB-9 到 DB-25 零调制解调器电缆，DB-9 到 DB-25 零调制解调器电缆”] 中汇总的引脚连接方式制作零调制解调器电缆。虽然标准要求引脚 1 到引脚 1 直通连接“保护接地”线路，但通常会省略该线路。有些终端只使用引脚 2、3 和 7 即可工作，另一些则需要不同的配置。如有疑问，请参阅硬件文档。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RS-232C Signal Names"
-msgstr ""
+msgstr "RS-232C 信号名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Acronyms"
-msgstr ""
+msgstr "缩写"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Names"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:129
@@ -275,15 +286,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:240
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:294
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RD"
-msgstr ""
+msgstr "RD"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Received Data"
-msgstr ""
+msgstr "接收数据"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:132
@@ -293,15 +304,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:235
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:299
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "TD"
-msgstr ""
+msgstr "TD"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Transmitted Data"
-msgstr ""
+msgstr "发送数据"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:135
@@ -317,9 +328,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:312
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:329
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DTR"
-msgstr ""
+msgstr "DTR"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:137
@@ -336,15 +347,15 @@ msgstr "X 终端（X Terminal）"
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:259
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:311
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:324
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DSR"
-msgstr ""
+msgstr "DSR"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Data Set Ready"
-msgstr ""
+msgstr "数据设备就绪"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:141
@@ -354,15 +365,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:265
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:317
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DCD"
-msgstr ""
+msgstr "DCD"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Data Carrier Detect"
-msgstr ""
+msgstr "数据载波检测"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:144
@@ -372,15 +383,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:258
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:318
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SG"
-msgstr ""
+msgstr "SG"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Signal Ground"
-msgstr ""
+msgstr "信号地"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:147
@@ -390,15 +401,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:281
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:336
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RTS"
-msgstr ""
+msgstr "RTS"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Request to Send"
-msgstr ""
+msgstr "请求发送"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:150
@@ -408,15 +419,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:277
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:341
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CTS"
-msgstr ""
+msgstr "CTS"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Clear to Send"
-msgstr ""
+msgstr "清除以发送"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:154
@@ -431,9 +442,9 @@ msgstr "DB-25对DB-25 Null-Modem线"
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:228
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:288
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Signal"
-msgstr ""
+msgstr "信号"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:159
@@ -442,9 +453,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:226
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:289
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Pin #"
-msgstr ""
+msgstr "引脚号"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:165
@@ -453,9 +464,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:280
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:321
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:166
@@ -485,9 +496,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:332
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:338
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "connects to"
-msgstr ""
+msgstr "连接到"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:171
@@ -496,9 +507,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:238
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:295
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:173
@@ -507,9 +518,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:236
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:301
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:183
@@ -521,9 +532,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:307
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:313
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:185
@@ -532,9 +543,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:256
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:319
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:195
@@ -543,9 +554,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:215
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:327
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:197
@@ -554,9 +565,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:260
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:309
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:203
@@ -565,9 +576,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:278
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:315
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:219
@@ -579,9 +590,9 @@ msgstr "DB-9 对 DB-9 Null-Modem 线"
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:250
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:266
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:284
@@ -618,12 +629,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:361
+#, fuzzy
 msgid ""
 "Most terminals have DB-25 ports.  Personal computers may have DB-25 or DB-9 "
 "ports.  A multiport serial card may have RJ-12 or RJ-45/ ports.  See the "
 "documentation that accompanied the hardware for specifications on the kind "
 "of port or visually verify the type of port."
-msgstr ""
+msgstr "大多数终端有 DB-25 端口。个人计算机可能有 DB-25 或 DB-9 端口。多端口串行卡可能有 RJ-12 或 RJ-45/ 端口。有关端口类型的规格，请参阅随硬件附带的文档，或目视确认端口类型。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:364
@@ -637,6 +649,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:366
+#, fuzzy
 msgid ""
 "Call-in ports are named [.filename]#/dev/ttyuN# where _N_ is the port "
 "number, starting from zero. If a terminal is connected to the first serial "
@@ -645,20 +658,22 @@ msgid ""
 "use [.filename]#/dev/ttyu1#, and so forth. Generally, the call-in port is "
 "used for terminals. Call-in ports require that the serial line assert the "
 "\"Data Carrier Detect\" signal to work correctly."
-msgstr ""
+msgstr "拨入端口的名称为 [.filename]#/dev/ttyuN#，其中 _N_ 是端口号，从零开始。如果终端连接到第一个串行端口（[.filename]#COM1#），请使用 [.filename]#/dev/ttyu0# 指代该终端。如果终端连接到第二个串行端口（[.filename]#COM2#），请使用 [.filename]#/dev/ttyu1#，依此类推。通常，终端使用拨入端口。拨入端口需要串行线路发送“数据载波检测”信号才能正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:367
+#, fuzzy
 msgid ""
 "Call-out ports are named [.filename]#/dev/cuauN# on FreeBSD versions 8.X and "
 "higher and [.filename]#/dev/cuadN# on FreeBSD versions 7.X and lower. Call-"
 "out ports are usually not used for terminals, but are used for modems. The "
 "call-out port can be used if the serial cable or the terminal does not "
 "support the \"Data Carrier Detect\" signal."
-msgstr ""
+msgstr "在 FreeBSD 8.X 及更高版本中，拨出端口的名称为 [.filename]#/dev/cuauN#；在 FreeBSD 7.X 及更低版本中，名称为 [.filename]#/dev/cuadN#。拨出端口通常不用于终端，而是用于调制解调器。如果串行电缆或终端不支持“数据载波检测”信号，则可以使用拨出端口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:372
+#, fuzzy
 msgid ""
 "FreeBSD also provides initialization devices ([.filename]#/dev/ttyuN.init# "
 "and [.filename]#/dev/cuauN.init# or [.filename]#/dev/cuadN.init#) and "
@@ -670,7 +685,7 @@ msgid ""
 "users or programs changing certain parameters.  Refer to man:termios[4], man:"
 "uart[4], and man:stty[1] for information on terminal settings, locking and "
 "initializing devices, and setting terminal options, respectively."
-msgstr ""
+msgstr "FreeBSD 还提供初始化设备（[.filename]#/dev/ttyuN.init# 和 [.filename]#/dev/cuauN.init# 或 [.filename]#/dev/cuadN.init#）以及锁定设备（[.filename]#/dev/ttyuN.lock# 和 [.filename]#/dev/cuauN.lock# 或 [.filename]#/dev/cuadN.lock#）。每次打开端口时，初始化设备都会用于初始化通信端口参数，例如，为使用 `RTS/CTS` 信号进行流量控制的调制解调器设置 `crtscts`。锁定设备用于锁定端口标志，以防止用户或程序更改某些参数。有关终端设置、设备锁定和初始化以及设置终端选项的信息，请分别参阅 man:termios[4]、man:uart[4] 和 man:stty[1]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:374
@@ -697,19 +712,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:381
+#, fuzzy
 msgid ""
 "To see if the system recognizes the serial ports, look for system boot "
 "messages that start with `uart`:"
-msgstr ""
+msgstr "要查看系统是否识别串行端口，请查找以 `uart` 开头的系统启动消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# grep uart /var/run/dmesg.boot\n"
-msgstr ""
+msgstr "# grep uart /var/run/dmesg.boot\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:391
+#, fuzzy
 msgid ""
 "If the system does not recognize all of the needed serial ports, additional "
 "entries can be added to [.filename]#/boot/device.hints#.  This file already "
@@ -717,21 +734,22 @@ msgid ""
 "entries for [.filename]#COM2#.  When adding a port entry for [."
 "filename]#COM3# use `0x3E8`, and for [.filename]#COM4# use `0x2E8`.  Common "
 "IRQ addresses are `5` for [.filename]#COM3# and `9` for [.filename]#COM4#."
-msgstr ""
+msgstr "如果系统未识别所有需要的串行端口，可以在 [.filename]#/boot/device.hints# 中添加条目。该文件已包含用于 [.filename]#COM1# 的 `hint.uart.0.\\*` 条目，以及用于 [.filename]#COM2# 的 `hint.uart.1.*` 条目。为 [.filename]#COM3# 添加端口条目时，请使用 `0x3E8`；为 [.filename]#COM4# 添加端口条目时，请使用 `0x2E8`。常见的 IRQ 地址是 [.filename]#COM3# 对应 `5`，以及 [.filename]#COM4# 对应 `9`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:394
+#, fuzzy
 msgid ""
 "To determine the default set of terminal I/O settings used by the port, "
 "specify its device name.  This example determines the settings for the call-"
 "in port on [.filename]#COM2#:"
-msgstr ""
+msgstr "要确定该端口使用的默认终端 I/O 设置，请指定其设备名称。以下示例用于确定 [.filename]#COM2# 拨入端口的设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# stty -a -f /dev/ttyu1\n"
-msgstr ""
+msgstr "# stty -a -f /dev/ttyu1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:406
@@ -755,9 +773,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# stty -f /dev/ttyu5.init clocal cs8 ixon ixoff\n"
-msgstr ""
+msgstr "# stty -f /dev/ttyu5.init clocal cs8 ixon ixoff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:414
@@ -772,9 +790,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# stty -f /dev/ttyu5.lock 57600\n"
-msgstr ""
+msgstr "# stty -f /dev/ttyu5.lock 57600\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:421
@@ -810,21 +828,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:430
+#, fuzzy
 msgid ""
 "The original UNIX(R) systems did not have consoles.  Instead, users logged "
 "in and ran programs through terminals that were connected to the computer's "
 "serial ports."
-msgstr ""
+msgstr "早期的 UNIX(R) 系统没有控制台。用户通过连接到计算机串行端口的终端登录并运行程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:433
+#, fuzzy
 msgid ""
 "The ability to establish a login session on a serial port still exists in "
 "nearly every UNIX(R)-like operating system today, including FreeBSD.  By "
 "using a terminal attached to an unused serial port, a user can log in and "
 "run any text program that can normally be run on the console or in an "
 "`xterm` window."
-msgstr ""
+msgstr "如今，几乎所有类 UNIX(R) 操作系统（包括 FreeBSD）仍支持通过串行端口建立登录会话。用户可以将终端连接到未使用的串行端口，然后登录并运行通常可以在控制台或 `xterm` 窗口中运行的任何文本程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:437
@@ -900,11 +920,12 @@ msgstr "充当终端的计算机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:453
+#, fuzzy
 msgid ""
 "Since a dumb terminal has just enough ability to display, send, and receive "
 "text, any spare computer can be a dumb terminal.  All that is needed is the "
 "proper cable and some _terminal emulation_ software to run on the computer."
-msgstr ""
+msgstr "哑终端只有显示、发送和接收文本的基本功能，因此任何备用计算机都可以用作哑终端。所需的只是合适的电缆，以及在计算机上运行的__终端仿真__软件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:456
@@ -926,10 +947,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:458
+#, fuzzy
 msgid ""
 "There are at least two utilities in the base-system of FreeBSD that can be "
 "used to work through a serial connection: man:cu[1] and man:tip[1]."
-msgstr ""
+msgstr "FreeBSD 基本系统中至少有两个实用程序可用于通过串行连接进行操作：man:cu[1] 和 man:tip[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:460
@@ -940,16 +962,17 @@ msgstr "例如，客户端（使用 FreeBSD 操作系统）使用串口连接到
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cu -l /dev/cuauN\n"
-msgstr ""
+msgstr "# cu -l /dev/cuauN\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:468
+#, fuzzy
 msgid ""
 "Ports are numbered starting from zero.  This means that [.filename]#COM1# is "
 "[.filename]#/dev/cuau0#."
-msgstr ""
+msgstr "端口从零开始编号。这意味着 [.filename]#COM1# 对应 [.filename]#/dev/cuau0#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:470
@@ -1009,6 +1032,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:491
+#, fuzzy
 msgid ""
 "In FreeBSD, `init` reads [.filename]#/etc/ttys# and starts a `getty` process "
 "on the available terminals.  The `getty` process is responsible for reading "
@@ -1019,14 +1043,15 @@ msgid ""
 "the other virtual consoles, serial ports, and pseudo-ttys.  For a hardwired "
 "terminal, the serial port's [.filename]#/dev# entry is listed without the `/"
 "dev` part.  For example, [.filename]#/dev/ttyv0# is listed as `ttyv0`."
-msgstr ""
+msgstr "在 FreeBSD 中，`init` 会读取 [.filename]#/etc/ttys#，并在可用终端上启动 `getty` 进程。`getty` 进程负责读取登录名并启动 `login` 程序。FreeBSD 系统中允许登录的端口列在 [.filename]#/etc/ttys# 中。例如，第一个虚拟控制台 [.filename]#ttyv0# 在此文件中有一个条目，允许用户通过控制台登录。该文件还包含其他虚拟控制台、串行端口和伪终端的条目。对于硬连线终端，串行端口在 [.filename]#/dev# 中的条目不带 `/dev` 部分。例如，[.filename]#/dev/ttyv0# 在文件中列为 `ttyv0`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:493
+#, fuzzy
 msgid ""
 "The default [.filename]#/etc/ttys# configures support for the first four "
 "serial ports, [.filename]#ttyu0# through [.filename]#ttyu3#:"
-msgstr ""
+msgstr "默认的 [.filename]#/etc/ttys# 配置支持前四个串行端口，即 [.filename]#ttyu0# 到 [.filename]#ttyu3#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:500
@@ -1058,13 +1083,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:509
+#, fuzzy
 msgid ""
 "crossref:serialcomms[ex-etc-ttys,Configuring Terminal Entries] configures "
 "two terminals in [.filename]#/etc/ttys#.  The first entry configures a "
 "Wyse-50 connected to [.filename]#COM2#.  The second entry configures an old "
 "computer running Procomm terminal software emulating a VT-100 terminal.  The "
 "computer is connected to the sixth serial port on a multi-port serial card."
-msgstr ""
+msgstr "crossref:serialcomms[ex-etc-ttys,Configuring Terminal Entries] 在 [.filename]#/etc/ttys# 中配置了两个终端。第一个条目配置连接到 [.filename]#COM2# 的 Wyse-50。第二个条目配置一台运行 Procomm 终端软件、仿真 VT-100 终端的旧计算机。该计算机连接到多端口串行卡的第六个串行端口。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:512
@@ -1074,11 +1100,11 @@ msgstr "设定终端机项目"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:519
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ttyu1  \"/usr/libexec/getty std.38400\"  wy50   on insecure\n"
 "ttyu5   \"/usr/libexec/getty std.19200\"  vt100  on insecure\n"
-msgstr ""
+msgstr "ttyu1  \"/usr/libexec/getty std.38400\"  wy50   on insecure\nttyu5   \"/usr/libexec/getty std.19200\"  vt100  on insecure\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:522
@@ -1087,6 +1113,7 @@ msgstr "第一个参数制定了串行终端的设备名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:532
+#, fuzzy
 msgid ""
 "The second field tells `getty` to initialize and open the line, set the line "
 "speed, prompt for a user name, and then execute the `login` program.  The "
@@ -1099,10 +1126,11 @@ msgid ""
 "match the communications settings used by the terminal.  For this example, "
 "the Wyse-50 uses no parity and connects at 38400 bps.  The computer uses no "
 "parity and connects at 19200 bps."
-msgstr ""
+msgstr "第二个字段告诉 `getty` 初始化并打开线路、设置线路速度、提示输入用户名，然后执行 `login` 程序。可选的__getty 类型__用于配置终端线路的特性，例如 bps 速率和奇偶校验。可用的 getty 类型列在 [.filename]#/etc/gettytab# 中。对于硬连线终端，几乎所有以 `std` 开头的 getty 类型都适用，因为这些条目会忽略奇偶校验。从 110 到 115200 bps 的每种速率都有一个 `std` 条目。更多信息请参阅 man:gettytab[5]。设置 getty 类型时，请确保与终端使用的通信设置一致。在此示例中，Wyse-50 不使用奇偶校验，连接速度为 38400 bps；计算机不使用奇偶校验，连接速度为 19200 bps。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:537
+#, fuzzy
 msgid ""
 "The third field is the type of terminal.  For dial-up ports, `unknown` or "
 "`dialup` is typically used since users may dial up with practically any type "
@@ -1110,17 +1138,19 @@ msgid ""
 "hardwired terminals, a real terminal type from [.filename]#/etc/termcap# can "
 "be specified.  For this example, the Wyse-50 uses the real terminal type "
 "while the computer running Procomm is set to emulate a VT-100."
-msgstr ""
+msgstr "第三个字段是终端类型。对于拨号端口，通常使用 `unknown` 或 `dialup`，因为用户可能使用几乎任何类型的终端或软件拨入。硬连线终端的类型不会变化，因此可以指定 [.filename]#/etc/termcap# 中的实际终端类型。在此示例中，Wyse-50 使用其实际终端类型，而运行 Procomm 的计算机则设置为仿真 VT-100。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:540
+#, fuzzy
 msgid ""
 "The fourth field specifies if the port should be enabled.  To enable logins "
 "on this port, this field must be set to `on`."
-msgstr ""
+msgstr "第四个字段指定是否启用该端口。要允许通过此端口登录，该字段必须设为 `on`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:546
+#, fuzzy
 msgid ""
 "The final field is used to specify whether the port is secure.  Marking a "
 "port as `secure` means that it is trusted enough to allow `root` to login "
@@ -1129,7 +1159,7 @@ msgid ""
 "similar mechanism to gain superuser privileges, as described in crossref:"
 "basics[users-superuser,“The Superuser Account”].  For security reasons, it "
 "is recommended to change this setting to `insecure`."
-msgstr ""
+msgstr "最后一个字段用于指定端口是否安全。将端口标记为 `secure`，表示该端口可信任到允许 `root` 从该端口登录。不安全的端口不允许 `root` 登录。在不安全端口上，用户必须先使用非特权账户登录，然后使用 `su` 或类似机制获取超级用户权限，如 crossref:basics[users-superuser,“The Superuser Account”] 中所述。出于安全考虑，建议将此设置更改为 `insecure`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:549
@@ -1144,16 +1174,17 @@ msgstr ""
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:553
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:728
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kill -HUP 1\n"
-msgstr ""
+msgstr "# kill -HUP 1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:556
+#, fuzzy
 msgid ""
 "Since `init` is always the first process run on a system, it always has a "
 "process ID of `1`."
-msgstr ""
+msgstr "由于 `init` 始终是系统启动的第一个进程，因此其进程 ID 始终为 `1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:558
@@ -1231,31 +1262,34 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:577
+#, fuzzy
 msgid ""
 "Use `ps` to make sure that a `getty` process is running and serving the "
 "terminal.  For example, the following listing shows that a `getty` is "
 "running on the second serial port, [.filename]#ttyu1#, and is using the "
 "`std.38400` entry in [.filename]#/etc/gettytab#:"
-msgstr ""
+msgstr "使用 `ps` 确认 `getty` 进程正在运行并为终端提供服务。例如，以下列表显示 `getty` 正在第二个串行端口 [.filename]#ttyu1# 上运行，并使用 [.filename]#/etc/gettytab# 中的 `std.38400` 条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:582
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ps -axww|grep ttyu\n"
 "22189  d1  Is+    0:00.03 /usr/libexec/getty std.38400 ttyu1\n"
-msgstr ""
+msgstr "# ps -axww|grep ttyu\n22189  d1  Is+    0:00.03 /usr/libexec/getty std.38400 ttyu1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:586
+#, fuzzy
 msgid ""
 "If no `getty` process is running, make sure the port is enabled in [."
 "filename]#/etc/ttys#.  Remember to run `kill -HUP 1` after modifying [."
 "filename]#/etc/ttys#."
-msgstr ""
+msgstr "如果没有 `getty` 进程在运行，请确认已在 [.filename]#/etc/ttys# 中启用该端口。修改 [.filename]#/etc/ttys# 后，记得运行 `kill -HUP 1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:591
+#, fuzzy
 msgid ""
 "If the `getty` process is running but the terminal still does not display a "
 "login prompt, or if it displays a prompt but will not accept typed input, "
@@ -1265,24 +1299,26 @@ msgid ""
 "is similar to `std`, but ignores hardware handshaking.  The bps may also "
 "need to be reduced or software flow control enabled when using `3wire` to "
 "prevent buffer overflows."
-msgstr ""
+msgstr "如果 `getty` 进程正在运行，但终端仍未显示登录提示，或者虽然显示了提示却不接受键盘输入，则终端或电缆可能不支持硬件握手。尝试将 [.filename]#/etc/ttys# 中的条目从 `std.38400` 改为 `3wire.38400`，然后在修改 [.filename]#/etc/ttys# 后运行 `kill -HUP 1`。`3wire` 条目与 `std` 类似，但会忽略硬件握手。使用 `3wire` 时，也可能需要降低 bps 速率或启用软件流量控制，以防止缓冲区溢出。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:595
+#, fuzzy
 msgid ""
 "If garbage appears instead of a login prompt, make sure the terminal and "
 "FreeBSD agree on the bps rate and parity settings.  Check the `getty` "
 "processes to make sure the correct _getty_ type is in use.  If not, edit [."
 "filename]#/etc/ttys# and run `kill -HUP 1`."
-msgstr ""
+msgstr "如果出现乱码而不是登录提示，请确认终端与 FreeBSD 的 bps 速率和奇偶校验设置一致。检查 `getty` 进程，确认正在使用正确的__getty__类型。如果不是，请编辑 [.filename]#/etc/ttys# 并运行 `kill -HUP 1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:597
+#, fuzzy
 msgid ""
 "If characters appear doubled and the password appears when typed, switch the "
 "terminal, or the terminal emulation software, from \"half duplex\" or "
 "\"local echo\" to \"full duplex.\""
-msgstr ""
+msgstr "如果字符重复显示，且输入密码时密码也会显示，请将终端或终端仿真软件从“半双工”或“本地回显”切换到“全双工”。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:599
@@ -1333,13 +1369,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:611
+#, fuzzy
 msgid ""
 "When using an external modem, a proper cable is needed.  A standard RS-232C "
 "serial cable should suffice."
-msgstr ""
+msgstr "使用外置调制解调器时，需要合适的电缆。标准 RS-232C 串行电缆应该足够。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:615
+#, fuzzy
 msgid ""
 "FreeBSD needs the RTS and CTS signals for flow control at speeds above 2400 "
 "bps, the CD signal to detect when a call has been answered or the line has "
@@ -1348,16 +1386,17 @@ msgid ""
 "login session does not go away when the line hangs up, there may be a "
 "problem with the cable.  Refer to crossref:serialcomms[term-cables-null, "
 "Serial Cables and Ports] for more information about these signals."
-msgstr ""
+msgstr "FreeBSD 在速度高于 2400 bps 时需要 RTS 和 CTS 信号进行流量控制，需要 CD 信号检测呼叫是否已接通或线路是否已挂断，还需要 DTR 信号在会话结束后重置调制解调器。有些电缆未连接所有必需的信号，因此，如果线路挂断后登录会话仍未结束，电缆可能有问题。有关这些信号的更多信息，请参阅 crossref:serialcomms[term-cables-null, Serial Cables and Ports]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:618
+#, fuzzy
 msgid ""
 "Like other UNIX(R)-like operating systems, FreeBSD uses the hardware signals "
 "to find out when a call has been answered or a line has been hung up and to "
 "hangup and reset the modem after a call.  FreeBSD avoids sending commands to "
 "the modem or watching for status reports from the modem."
-msgstr ""
+msgstr "与其他类 UNIX(R) 操作系统一样，FreeBSD 使用硬件信号来检测呼叫是否已接通或线路是否已挂断，并在呼叫结束后挂断并重置调制解调器。FreeBSD 不会向调制解调器发送命令，也不会监视调制解调器的状态报告。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:625
@@ -1453,6 +1492,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:648
+#, fuzzy
 msgid ""
 "The second method is to configure the RS-232 interface to vary its speed "
 "based on the remote user's connection speed.  As `getty` does not understand "
@@ -1465,7 +1505,7 @@ msgid ""
 "before the user sees a good prompt.  This login sequence does not look as "
 "clean as the locked-speed method, but a user on a low-speed connection "
 "should receive better interactive response from full-screen programs."
-msgstr ""
+msgstr "第二种方法是配置 RS-232 接口，使其速度随远程用户的连接速度而变化。由于 `getty` 无法理解特定调制解调器报告的连接速度，它会先以初始速度显示 `login:` 消息，然后监视收到的响应字符。如果用户看到乱码，应按 kbd:[Enter]，直到出现可辨认的提示。如果数据速率不匹配，`getty` 会将用户输入的内容视为乱码，尝试下一个速度，然后再次显示 `login:` 提示。通常只需按一两次键，用户就能看到正常的提示。与锁定速度的方法相比，这种登录过程不够简洁，但低速连接的用户在运行全屏程序时通常能获得更好的交互响应。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:655
@@ -1569,19 +1609,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:694
+#, fuzzy
 msgid ""
 "For a slow CPU or a heavily loaded system without 16550A-based serial ports, "
 "this configuration may produce `uart` \"silo\" errors at 57.6 Kbps."
-msgstr ""
+msgstr "对于 CPU 较慢或负载较重且没有基于 16550A 的串行端口的系统，此配置可能会在 57.6 Kbps 下导致 `uart`“silo”错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:698
+#, fuzzy
 msgid ""
 "The configuration of [.filename]#/etc/ttys# is similar to crossref:"
 "serialcomms[ex-etc-ttys,Configuring Terminal Entries], but a different "
 "argument is passed to `getty` and `dialup` is used for the terminal type.  "
 "Replace _xxx_ with the process `init` will run on the device:"
-msgstr ""
+msgstr "[.filename]#/etc/ttys# 的配置与 crossref:serialcomms[ex-etc-ttys,Configuring Terminal Entries] 类似，但传递给 `getty` 的参数不同，并且终端类型使用 `dialup`。将 _xxx_ 替换为 `init` 将在设备上运行的进程："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:702
@@ -1591,11 +1633,12 @@ msgstr "ttyu0   \"/usr/libexec/getty V19200\"   dialup on\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:706
+#, fuzzy
 msgid ""
 "The `dialup` terminal type can be changed.  For example, setting `vt102` as "
 "the default terminal type allows users to use VT102 emulation on their "
 "remote systems."
-msgstr ""
+msgstr "可以更改 `dialup` 终端类型。例如，将 `vt102` 设为默认终端类型后，用户便可以在远程系统上使用 VT102 仿真。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:709
@@ -1635,27 +1678,29 @@ msgstr "ttyu0   \"/usr/libexec/getty V19200\"   dialup on\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:724
+#, fuzzy
 msgid ""
 "After editing [.filename]#/etc/ttys#, wait until the modem is properly "
 "configured and connected before signaling `init`:"
-msgstr ""
+msgstr "编辑 [.filename]#/etc/ttys# 后，请等待调制解调器正确配置并连接，再向 `init` 发送信号："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:733
+#, fuzzy
 msgid ""
 "High-speed modems, like V.32, V.32bis, and V.34 modems, use hardware (`RTS/"
 "CTS`) flow control.  Use `stty` to set the hardware flow control flag for "
 "the modem port.  This example sets the `crtscts` flag on [.filename]#COM2#'s "
 "dial-in and dial-out initialization devices:"
-msgstr ""
+msgstr "V.32、V.32bis 和 V.34 等高速调制解调器使用硬件（`RTS/CTS`）流量控制。使用 `stty` 为调制解调器端口设置硬件流量控制标志。以下示例为 [.filename]#COM2# 的拨入和拨出初始化设备设置 `crtscts` 标志："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:738
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# stty -f /dev/ttyu1.init crtscts\n"
 "# stty -f /dev/cuau1.init crtscts\n"
-msgstr ""
+msgstr "# stty -f /dev/ttyu1.init crtscts\n# stty -f /dev/cuau1.init crtscts\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:740
@@ -1690,17 +1735,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:749
+#, fuzzy
 msgid ""
 "If the DTR indicator does not light, login to the FreeBSD system through the "
 "console and type `ps ax` to see if FreeBSD is running a `getty` process on "
 "the correct port:"
-msgstr ""
+msgstr "如果 DTR 指示灯未亮起，请通过控制台登录 FreeBSD 系统，并输入 `ps ax`，检查 FreeBSD 是否在正确的端口上运行 `getty` 进程："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:753
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  114 ??  I      0:00.10 /usr/libexec/getty V19200 ttyu0\n"
-msgstr ""
+msgstr "  114 ??  I      0:00.10 /usr/libexec/getty V19200 ttyu0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:757
@@ -1720,15 +1766,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:760
+#, fuzzy
 msgid ""
 "If no `getty` processes are waiting to open the port, double-check that the "
 "entry for the port is correct in [.filename]#/etc/ttys#.  Also, check [."
 "filename]#/var/log/messages# to see if there are any log messages from "
 "`init` or `getty`."
-msgstr ""
+msgstr "如果没有 `getty` 进程等待打开该端口，请再次检查 [.filename]#/etc/ttys# 中的端口条目是否正确。此外，请检查 [.filename]#/var/log/messages#，查看是否有来自 `init` 或 `getty` 的日志消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:766
+#, fuzzy
 msgid ""
 "Next, try dialing into the system.  Be sure to use 8 bits, no parity, and 1 "
 "stop bit on the remote system.  If a prompt does not appear right away, or "
@@ -1736,14 +1784,15 @@ msgid ""
 "If there is still no `login:` prompt, try sending a `BREAK`.  When using a "
 "high-speed modem, try dialing again after locking the dialing modem's "
 "interface speed."
-msgstr ""
+msgstr "接下来，尝试拨入系统。确保远程系统使用 8 个数据位、无奇偶校验和 1 个停止位。如果提示没有立即出现，或提示显示为乱码，请尝试每秒按一次 kbd:[Enter]。如果仍没有 `login:` 提示，请尝试发送 `BREAK`。使用高速调制解调器时，先锁定拨号调制解调器的接口速度，然后再次尝试拨入。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:768
+#, fuzzy
 msgid ""
 "If there is still no `login:` prompt, check [.filename]#/etc/gettytab# again "
 "and double-check that:"
-msgstr ""
+msgstr "如果仍没有 `login:` 提示，请再次检查 [.filename]#/etc/gettytab#，并确认："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:770
@@ -1757,13 +1806,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:771
+#, fuzzy
 msgid "Each `nx=` entry matches another [.filename]#gettytab# capability name."
-msgstr ""
+msgstr "每个 `nx=` 条目都与另一个 [.filename]#gettytab# 能力名称相匹配。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:772
+#, fuzzy
 msgid "Each `tc=` entry matches another [.filename]#gettytab# capability name."
-msgstr ""
+msgstr "每个 `tc=` 条目都与另一个 [.filename]#gettytab# 能力名称相匹配。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:775
@@ -1780,10 +1831,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:777
+#, fuzzy
 msgid ""
 "If it still does not work, try sending an email to the {freebsd-questions} "
 "describing the modem and the problem."
-msgstr ""
+msgstr "如果仍无法正常工作，请向 {freebsd-questions} 发送电子邮件，说明调制解调器和遇到的问题。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:779
@@ -1832,40 +1884,44 @@ msgstr "使用Stock Hayes调制解调器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:793
+#, fuzzy
 msgid ""
 "A generic Hayes dialer is built into `tip`.  Use `at=hayes` in [.filename]#/"
 "etc/remote#."
-msgstr ""
+msgstr "`tip` 内置了通用 Hayes 拨号器。在 [.filename]#/etc/remote# 中使用 `at=hayes`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:796
+#, fuzzy
 msgid ""
 "The Hayes driver is not smart enough to recognize some of the advanced "
 "features of newer modems messages like `BUSY`, `NO DIALTONE`, or `CONNECT "
 "115200`.  Turn those messages off when using `tip` with `ATX0&W`."
-msgstr ""
+msgstr "Hayes 驱动程序不够智能，无法识别某些新型调制解调器的高级功能消息，例如 `BUSY`、`NO DIALTONE` 或 `CONNECT 115200`。使用 `tip` 时，请通过 `ATX0&W` 关闭这些消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:800
+#, fuzzy
 msgid ""
 "The dial timeout for `tip` is 60 seconds.  The modem should use something "
 "less, or else `tip` will think there is a communication problem.  Try "
 "`ATS7=45&W`."
-msgstr ""
+msgstr "`tip` 的拨号超时时间为 60 秒。调制解调器的超时时间应更短，否则 `tip` 会认为发生了通信问题。尝试使用 `ATS7=45&W`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:802
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `AT` Commands"
-msgstr ""
+msgstr "使用 `AT` 命令"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:806
+#, fuzzy
 msgid ""
 "Create a \"direct\" entry in [.filename]#/etc/remote#.  For example, if the "
 "modem is hooked up to the first serial port, [.filename]#/dev/cuau0#, use "
 "the following line:"
-msgstr ""
+msgstr "在 [.filename]#/etc/remote# 中创建一个“direct”条目。例如，如果调制解调器连接到第一个串行端口 [.filename]#/dev/cuau0#，请使用以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:810
@@ -1875,44 +1931,48 @@ msgstr "cuau0:dv=/dev/cuau0:br#19200:pa=none\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:814
+#, fuzzy
 msgid ""
 "Use the highest bps rate the modem supports in the `br` capability.  Then, "
 "type `tip cuau0` to connect to the modem."
-msgstr ""
+msgstr "在 `br` 能力中使用调制解调器支持的最高 bps 速率。然后输入 `tip cuau0` 连接到调制解调器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:816
+#, fuzzy
 msgid "Or, use `cu` as `root` with the following command:"
-msgstr ""
+msgstr "或者，使用以下命令以 `root` 身份运行 `cu`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cu -lline -sspeed\n"
-msgstr ""
+msgstr "# cu -lline -sspeed\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:824
+#, fuzzy
 msgid ""
 "_line_ is the serial port, such as [.filename]#/dev/cuau0#, and _speed_ is "
 "the speed, such as `57600`.  When finished entering the AT commands, type `~."
 "` to exit."
-msgstr ""
+msgstr "_line_ 是串行端口，例如 [.filename]#/dev/cuau0#；_speed_ 是速度，例如 `57600`。输入完 AT 命令后，输入 `~.` 退出。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:826
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The `@` Sign Does Not Work"
-msgstr ""
+msgstr "`@` 符号无法使用"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:830
+#, fuzzy
 msgid ""
 "The `@` sign in the phone number capability tells `tip` to look in [."
 "filename]#/etc/phones# for a phone number.  But, the `@` sign is also a "
 "special character in capability files like [.filename]#/etc/remote#, so it "
 "needs to be escaped with a backslash:"
-msgstr ""
+msgstr "电话号码能力中的 `@` 符号会告诉 `tip` 到 [.filename]#/etc/phones# 中查找电话号码。但是，`@` 符号也是 [.filename]#/etc/remote# 等能力文件中的特殊字符，因此需要用反斜杠转义："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:834
@@ -1928,8 +1988,9 @@ msgstr "从指令列拨号"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:840
+#, fuzzy
 msgid "Put a \"generic\" entry in [.filename]#/etc/remote#. For example:"
-msgstr ""
+msgstr "在 [.filename]#/etc/remote# 中添加一个“generic”条目。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:847
@@ -1952,14 +2013,15 @@ msgstr "现在此命令应该能正常使用了："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:854
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tip -115200 5551234\n"
-msgstr ""
+msgstr "# tip -115200 5551234\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:857
+#, fuzzy
 msgid "Users who prefer `cu` over `tip`, can use a generic `cu` entry:"
-msgstr ""
+msgstr "偏好使用 `cu` 而不是 `tip` 的用户可以使用通用 `cu` 条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:862
@@ -1978,24 +2040,25 @@ msgstr "并输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:869
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cu 5551234 -s 115200\n"
-msgstr ""
+msgstr "# cu 5551234 -s 115200\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:872
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting the bps Rate"
-msgstr ""
+msgstr "设置 bps 速率"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:877
+#, fuzzy
 msgid ""
 "Put in an entry for `tip1200` or `cu1200`, but go ahead and use whatever bps "
 "rate is appropriate with the `br` capability.  `tip` thinks a good default "
 "is 1200 bps which is why it looks for a `tip1200` entry.  1200 bps does not "
 "have to be used, though."
-msgstr ""
+msgstr "添加 `tip1200` 或 `cu1200` 条目，但可以在 `br` 能力中使用合适的任意 bps 速率。`tip` 认为 1200 bps 是合适的默认速率，因此会查找 `tip1200` 条目。不过，并非必须使用 1200 bps。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:879
@@ -2005,12 +2068,13 @@ msgstr "透过终端服务器存取多个主机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:883
+#, fuzzy
 msgid ""
 "Rather than waiting until connected and typing `CONNECT _host_` each time, "
 "use ``tip``'s `cm` capability.  For example, these entries in [.filename]#/"
 "etc/remote# allow typing `tip pain` or `tip muffin` to connect to the hosts "
 "`pain` or `muffin`, and `tip deep13` to connect to the terminal server."
-msgstr ""
+msgstr "与其每次连接后都等待并输入 `CONNECT _host_`，不如使用 ``tip`` 的 `cm` 能力。例如，在 [.filename]#/etc/remote# 中添加以下条目后，可以输入 `tip pain` 或 `tip muffin` 连接到主机 `pain` 或 `muffin`，也可以输入 `tip deep13` 连接到终端服务器。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:892
@@ -2032,9 +2096,9 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:895
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using More Than One Line with `tip`"
-msgstr ""
+msgstr "在 `tip` 中使用多条线路"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:898
@@ -2047,10 +2111,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:900
+#, fuzzy
 msgid ""
 "Make an entry in [.filename]#/etc/remote# and use `@` for the `pn` "
 "capability:"
-msgstr ""
+msgstr "在 [.filename]#/etc/remote# 中添加一个条目，并在 `pn` 能力中使用 `@`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:907
@@ -2068,8 +2133,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:910
+#, fuzzy
 msgid "Then, list the phone numbers in [.filename]#/etc/phones#:"
-msgstr ""
+msgstr "然后，在 [.filename]#/etc/phones# 中列出电话号码："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:917
@@ -2087,10 +2153,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:921
+#, fuzzy
 msgid ""
 "`tip` will try each number in the listed order, then give up.  To keep "
 "retrying, run `tip` in a `while` loop."
-msgstr ""
+msgstr "`tip` 会按列出的顺序尝试每个号码，然后放弃。若要持续重试，请在 `while` 循环中运行 `tip`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:923
@@ -2100,21 +2167,23 @@ msgstr "使用强制字符"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:927
+#, fuzzy
 msgid ""
 "kbd:[Ctrl+P] is the default \"force\" character, used to tell `tip` that the "
 "next character is literal data.  The force character can be set to any other "
 "character with the `~s` escape, which means \"set a variable.\""
-msgstr ""
+msgstr "kbd:[Ctrl+P] 是默认的“强制”字符，用于告诉 `tip` 下一个字符是原始数据。可以使用 `~s` 转义序列将强制字符设为其他字符；它表示“设置变量”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:932
+#, fuzzy
 msgid ""
 "Type `~sforce=_single-char_` followed by a newline.  _single-char_ is any "
 "single character.  If _single-char_ is left out, then the force character is "
 "the null character, which is accessed by typing kbd:[Ctrl+2] or kbd:[Ctrl"
 "+Space].  A pretty good value for _single-char_ is kbd:[Shift+Ctrl+6], which "
 "is only used on some terminal servers."
-msgstr ""
+msgstr "输入 `~sforce=_single-char_`，然后按回车。_single-char_ 是任意单个字符。如果省略 _single-char_，强制字符将设为空字符，可通过按 kbd:[Ctrl+2] 或 kbd:[Ctrl+Space] 输入。kbd:[Shift+Ctrl+6] 是一个不错的 _single-char_ 值，但只有部分终端服务器会用到它。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:934
@@ -2126,9 +2195,9 @@ msgstr "要更改强制字符，请在<filename>~/.tiprc</filename>中指定以�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:938
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "force=single-char\n"
-msgstr ""
+msgstr "force=single-char\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:941
@@ -2138,19 +2207,21 @@ msgstr "大写字符"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:946
+#, fuzzy
 msgid ""
 "This happens when kbd:[Ctrl+A] is pressed, which is ``tip``'s \"raise "
 "character\", specially designed for people with broken caps-lock keys.  Use "
 "`~s` to set `raisechar` to something reasonable.  It can be set to be the "
 "same as the force character, if neither feature is used."
-msgstr ""
+msgstr "按下 kbd:[Ctrl+A] 时会发生这种情况，这是 ``tip`` 的“提升字符”，专为大写锁定键损坏的用户设计。使用 `~s` 将 `raisechar` 设置为合适的字符。如果未使用这两项功能中的任何一项，也可以将它设置为与强制字符相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:948
+#, fuzzy
 msgid ""
 "Here is a sample [.filename]#~/.tiprc# for Emacs users who need to type kbd:"
 "[Ctrl+2] and kbd:[Ctrl+A]:"
-msgstr ""
+msgstr "下面是供需要输入 kbd:[Ctrl+2] 和 kbd:[Ctrl+A] 的 Emacs 用户使用的 [.filename]#~/.tiprc# 示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:953
@@ -2164,23 +2235,25 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:956
+#, fuzzy
 msgid "The `^^` is kbd:[Shift+Ctrl+6]."
-msgstr ""
+msgstr "`^^` 对应 kbd:[Shift+Ctrl+6]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:958
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File Transfers with `tip`"
-msgstr ""
+msgstr "使用 `tip` 传输文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:964
+#, fuzzy
 msgid ""
 "When talking to another UNIX(R)-like operating system, files can be sent and "
 "received using `~p` (put) and `~t` (take).  These commands run `cat` and "
 "`echo` on the remote system to accept and send files. The syntax is: `~p` "
 "local-file [ remote-file ] `~t` remote-file [ local-file ]"
-msgstr ""
+msgstr "与其他类 UNIX(R) 操作系统通信时，可以使用 `~p`（发送）和 `~t`（接收）来发送和接收文件。这些命令会在远程系统上运行 `cat` 和 `echo` 来接收和发送文件。语法如下：`~p` local-file [ remote-file ] `~t` remote-file [ local-file ]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:966
@@ -2191,23 +2264,25 @@ msgstr "没有错误检查，因此应该使用另一个协议，如 zmodem。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:968
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using zmodem with `tip`?"
-msgstr ""
+msgstr "在 `tip` 中使用 zmodem？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:972
+#, fuzzy
 msgid ""
 "To receive files, start the sending program on the remote end.  Then, type "
 "`~C rz` to begin receiving them locally."
-msgstr ""
+msgstr "要接收文件，请在远程端启动发送程序。然后输入 `~C rz`，开始在本地接收文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:975
+#, fuzzy
 msgid ""
 "To send files, start the receiving program on the remote end.  Then, type "
 "`~C sz _files_` to send them to the remote system."
-msgstr ""
+msgstr "要发送文件，请在远程端启动接收程序。然后输入 `~C sz _files_`，将文件发送到远程系统。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:977
@@ -2235,13 +2310,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:985
+#, fuzzy
 msgid ""
 "As described in crossref:boot[boot,The FreeBSD Booting Process], FreeBSD "
 "employs a three stage bootstrap.  The first two stages are in the boot block "
 "code which is stored at the beginning of the FreeBSD slice on the boot "
 "disk.  The boot block then loads and runs the boot loader as the third stage "
 "code."
-msgstr ""
+msgstr "如 crossref:boot[boot,The FreeBSD Booting Process] 所述，FreeBSD 采用三级引导过程。前两个阶段位于引导块代码中，该代码存储在引导磁盘上 FreeBSD 分区片的起始位置。随后，引导块会加载并运行作为第三级代码的引导加载器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:987
@@ -2269,9 +2345,9 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:995
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Configuring a Serial Console on [.filename]#COM1#"
-msgstr ""
+msgstr "步骤：在 [.filename]#COM1# 上配置串行控制台"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:997
@@ -2289,17 +2365,18 @@ msgstr "要配置引导信息显示在串行控制台上，请以超级用户的
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1002
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# echo 'console=\"comconsole\"' >> /boot/loader.conf\n"
-msgstr ""
+msgstr "# echo 'console=\"comconsole\"' >> /boot/loader.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1005
+#, fuzzy
 msgid ""
 "Edit [.filename]#/etc/ttys# and change `off` to `on` and `dialup` to `vt100` "
 "for the [.filename]#ttyu0# entry. Otherwise, a password will not be required "
 "to connect via the serial console, resulting in a potential security hole."
-msgstr ""
+msgstr "编辑 [.filename]#/etc/ttys#，将 [.filename]#ttyu0# 条目的 `off` 改为 `on`，并将 `dialup` 改为 `vt100`。否则，通过串行控制台连接时将不需要密码，可能造成安全漏洞。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1006
@@ -2328,9 +2405,9 @@ msgstr "本节更详细地介绍了在 FreeBSD 中设置串行控制台所需的
 
 #. type: Block title
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1015
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Configuring a Serial Console"
-msgstr ""
+msgstr "步骤：配置串行控制台"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1017
@@ -2339,11 +2416,12 @@ msgstr "准备串行电缆。"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1020
+#, fuzzy
 msgid ""
 "Use either a null-modem cable or a standard serial cable and a null-modem "
 "adapter.  See crossref:serialcomms[term-cables-null, Serial Cables and "
 "Ports] for a discussion on serial cables."
-msgstr ""
+msgstr "使用零调制解调器电缆，或使用标准串行电缆和零调制解调器适配器。有关串行电缆的说明，请参阅 crossref:serialcomms[term-cables-null, Serial Cables and Ports]。"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1021
@@ -2370,29 +2448,32 @@ msgstr "如果计算机报错，但还是启动了，就不需要进一步配置
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1029
+#, fuzzy
 msgid ""
 "If the computer refuses to boot without a keyboard attached, configure the "
 "BIOS so that it ignores this error.  Consult the motherboard's manual for "
 "details on how to do this."
-msgstr ""
+msgstr "如果计算机在未连接键盘时拒绝启动，请配置 BIOS，使其忽略此错误。有关具体操作，请参阅主板手册。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1036
+#, fuzzy
 msgid ""
 "Try setting the keyboard to \"Not installed\" in the BIOS.  This setting "
 "tells the BIOS not to probe for a keyboard at power-on so it should not "
 "complain if the keyboard is absent.  If that option is not present in the "
 "BIOS, look for an \"Halt on Error\" option instead.  Setting this to \"All "
 "but Keyboard\" or to \"No Errors\" will have the same effect."
-msgstr ""
+msgstr "尝试在 BIOS 中将键盘设置为“未安装”。此设置会让 BIOS 在开机时不检测键盘，因此键盘缺失时应该不会报错。如果 BIOS 中没有此选项，请查找“遇到错误时停止”选项。将其设置为“除键盘外全部错误”或“无错误”会有相同效果。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1040
+#, fuzzy
 msgid ""
 "If the system has a PS/2(R) mouse, unplug it as well.  PS/2(R) mice share "
 "some hardware with the keyboard and leaving the mouse plugged in can fool "
 "the keyboard probe into thinking the keyboard is still there."
-msgstr ""
+msgstr "如果系统使用 PS/2(R) 鼠标，也请拔下它。PS/2(R) 鼠标与键盘共用部分硬件；如果鼠标仍连接，可能会误导键盘检测程序，使其认为键盘仍然连接。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1048
@@ -2415,26 +2496,29 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1051
+#, fuzzy
 msgid ""
 "Plug a dumb terminal, an old computer with a modem program, or the serial "
 "port on another UNIX(R) box into the serial port."
-msgstr ""
+msgstr "将哑终端、运行调制解调器程序的旧计算机，或另一台 UNIX(R) 计算机的串行端口连接到该串行端口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1052
+#, fuzzy
 msgid ""
 "Add the appropriate `hint.uart.*` entries to [.filename]#/boot/device.hints# "
 "for the serial port. Some multi-port cards also require kernel configuration "
 "options. Refer to man:uart[4] for the required options and device hints for "
 "each supported serial port."
-msgstr ""
+msgstr "在 [.filename]#/boot/device.hints# 中为该串行端口添加适当的 `hint.uart.*` 条目。某些多端口卡还需要内核配置选项。有关每个受支持串行端口所需的选项和设备提示，请参阅 man:uart[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1053
+#, fuzzy
 msgid ""
 "Create [.filename]#boot.config# in the root directory of the `a` partition "
 "on the boot drive."
-msgstr ""
+msgstr "在引导驱动器上 `a` 分区的根目录中创建 [.filename]#boot.config#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1057
@@ -2450,9 +2534,9 @@ msgstr ""
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1058
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-h`"
-msgstr ""
+msgstr "`-h`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1063
@@ -2473,9 +2557,9 @@ msgstr ""
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1064
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-D`"
-msgstr ""
+msgstr "`-D`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1070
@@ -2498,16 +2582,17 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1071
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-P`"
-msgstr ""
+msgstr "`-P`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1073
+#, fuzzy
 msgid ""
 "Makes the boot block probe the keyboard. If no keyboard is found, the `-D` "
 "and `-h` options are automatically set."
-msgstr ""
+msgstr "使引导块检测键盘。如果未检测到键盘，则会自动设置 `-D` 和 `-h` 选项。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1080
@@ -2525,11 +2610,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1084
+#, fuzzy
 msgid ""
 "Use either `-P` to select the console automatically or `-h` to activate the "
 "serial console.  Refer to man:boot[8] and man:boot.config[5] for more "
 "details."
-msgstr ""
+msgstr "使用 `-P` 自动选择控制台，或使用 `-h` 启用串行控制台。有关更多详情，请参阅 man:boot[8] 和 man:boot.config[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1088
@@ -2586,21 +2672,21 @@ msgstr ""
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Options"
-msgstr ""
+msgstr "选项"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Message goes to"
-msgstr ""
+msgstr "消息发送到"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "none"
-msgstr ""
+msgstr "无"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1110
@@ -2613,34 +2699,34 @@ msgstr "设置串行控制台"
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1113
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "serial console"
-msgstr ""
+msgstr "串行控制台"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1116
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "serial and internal consoles"
-msgstr ""
+msgstr "串行控制台和内部控制台"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-Dh`"
-msgstr ""
+msgstr "`-Dh`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-P`, keyboard present"
-msgstr ""
+msgstr "`-P`，检测到键盘"
 
 #. type: Table
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-P`, keyboard absent"
-msgstr ""
+msgstr "`-P`，未检测到键盘"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1128
@@ -2658,45 +2744,49 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1131
+#, fuzzy
 msgid ""
 "Press any key, other than kbd:[Enter], at the console to interrupt the boot "
 "process.  The boot blocks will then prompt for further action:"
-msgstr ""
+msgstr "在控制台上按任意键（kbd:[Enter] 除外）以中断引导过程。随后，引导块会提示进一步操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ">> FreeBSD/i386 BOOT\n"
 "Default: 0:ad(0,a)/boot/loader\n"
 "boot:\n"
-msgstr ""
+msgstr ">> FreeBSD/i386 BOOT\nDefault: 0:ad(0,a)/boot/loader\nboot:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1141
+#, fuzzy
 msgid ""
 "Verify that the above message appears on either the serial or internal "
 "console, or both, according to the options in [.filename]#/boot.config#.  If "
 "the message appears in the correct console, press kbd:[Enter] to continue "
 "the boot process."
-msgstr ""
+msgstr "根据 [.filename]#/boot.config# 中的选项，确认上述消息出现在串行控制台、内部控制台或两者上。如果消息出现在正确的控制台上，请按 kbd:[Enter] 继续引导过程。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1145
+#, fuzzy
 msgid ""
 "If there is no prompt on the serial terminal, something is wrong with the "
 "settings.  Enter `-h` then kbd:[Enter] or kbd:[Return] to tell the boot "
 "block (and then the boot loader and the kernel) to choose the serial port "
 "for the console.  Once the system is up, go back and check what went wrong."
-msgstr ""
+msgstr "如果串行终端上没有提示符，说明设置有误。输入 `-h`，然后按 kbd:[Enter] 或 kbd:[Return]，告知引导块（以及之后的引导加载器和内核）选择串行端口作为控制台。系统启动后，请返回检查问题所在。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1148
+#, fuzzy
 msgid ""
 "During the third stage of the boot process, one can still switch between the "
 "internal console and the serial console by setting appropriate environment "
 "variables in the boot loader.  See man:loader[8] for more information."
-msgstr ""
+msgstr "在引导过程的第三阶段，仍可以通过在引导加载器中设置适当的环境变量，在内部控制台和串行控制台之间切换。更多信息请参阅 man:loader[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1152
@@ -2729,11 +2819,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1162
+#, fuzzy
 msgid ""
 "If that line does not exist, or if it is set to `console=\"vidconsole\"`, "
 "the boot loader and the kernel will use whichever console is indicated by `-"
 "h` in the boot block.  See man:loader.conf[5] for more information."
-msgstr ""
+msgstr "如果不存在该行，或者其设置为 `console=\"vidconsole\"`，引导加载器和内核将使用引导块中 `-h` 指定的控制台。更多信息请参阅 man:loader.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1164
@@ -2748,13 +2839,14 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1172
+#, fuzzy
 msgid ""
 "While it is not required, it is possible to provide a `login` prompt over "
 "the serial line.  To configure this, edit the entry for the serial port in [."
 "filename]#/etc/ttys# using the instructions in crossref:serialcomms[term-"
 "config, Terminal Configuration].  If the speed of the serial port has been "
 "changed, change `std.115200` to match the new setting."
-msgstr ""
+msgstr "虽然不是必需的，但可以通过串行线路提供 `login` 提示符。要进行配置，请按照 crossref:serialcomms[term-config, Terminal Configuration] 中的说明，编辑 [.filename]#/etc/ttys# 中串行端口对应的条目。如果更改了串行端口速度，请将 `std.115200` 改为与新设置相符的值。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1174
@@ -2779,21 +2871,22 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1181
+#, fuzzy
 msgid ""
 "Edit [.filename]#/etc/make.conf# and set `BOOT_COMCONSOLE_SPEED` to the new "
 "console speed.  Then, recompile and install the boot blocks and the boot "
 "loader:"
-msgstr ""
+msgstr "编辑 [.filename]#/etc/make.conf#，将 `BOOT_COMCONSOLE_SPEED` 设置为新的控制台速度。然后，重新编译并安装引导块和引导加载器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /sys/boot\n"
 "# make clean\n"
 "# make\n"
 "# make install\n"
-msgstr ""
+msgstr "# cd /sys/boot\n# make clean\n# make\n# make install\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1191
@@ -2810,33 +2903,35 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options CONSPEED=19200\n"
-msgstr ""
+msgstr "options CONSPEED=19200\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1198
+#, fuzzy
 msgid ""
 "Add the `-S__19200__` boot option to [.filename]#/boot.config#, replacing "
 "`_19200_` with the speed to use."
-msgstr ""
+msgstr "将引导选项 `-S__19200__` 添加到 [.filename]#/boot.config#，并将 `_19200_` 替换为要使用的速度。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1199
+#, fuzzy
 msgid ""
 "Add the following options to [.filename]#/boot/loader.conf#. Replace "
 "`_115200_` with the speed to use."
-msgstr ""
+msgstr "将以下选项添加到 [.filename]#/boot/loader.conf#。将 `_115200_` 替换为要使用的速度。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "boot_multicons=\"YES\"\n"
 "boot_serial=\"YES\"\n"
 "comconsole_speed=\"115200\"\n"
 "console=\"comconsole,vidconsole\"\n"
-msgstr ""
+msgstr "boot_multicons=\"YES\"\nboot_serial=\"YES\"\ncomconsole_speed=\"115200\"\nconsole=\"comconsole,vidconsole\"\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1209
@@ -2846,6 +2941,7 @@ msgstr "从序列线路（Serial Line）进入DDB除错程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1214
+#, fuzzy
 msgid ""
 "To configure the ability to drop into the kernel debugger from the serial "
 "console, add the following options to a custom kernel configuration file and "
@@ -2854,7 +2950,7 @@ msgid ""
 "this is useful for remote diagnostics, it is also dangerous if a spurious "
 "BREAK is generated on the serial port.  Refer to man:ddb[4] and man:ddb[8] "
 "for more information about the kernel debugger."
-msgstr ""
+msgstr "要配置从串行控制台进入内核调试器的功能，请将以下选项添加到自定义内核配置文件中，并按照 crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel] 中的说明编译内核。请注意，虽然此功能便于远程诊断，但如果串行端口意外产生 BREAK 信号，也会带来危险。有关内核调试器的更多信息，请参阅 man:ddb[4] 和 man:ddb[8]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/serialcomms/_index.adoc:1219

@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/basics/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Basic commands and functionality of the FreeBSD operating system"
-msgstr ""
+msgstr "FreeBSD 操作系统的基本命令和功能"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/basics/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part I. Getting Started"
-msgstr ""
+msgstr "第一部分：入门"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/basics/_index.adoc:1
@@ -50,12 +50,13 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:57
+#, fuzzy
 msgid ""
 "This chapter covers the basic commands and functionality of the FreeBSD "
 "operating system.  Much of this material is relevant for any UNIX(R)-like "
 "operating system.  New FreeBSD users are encouraged to read through this "
 "chapter carefully."
-msgstr ""
+msgstr "本章介绍 FreeBSD 操作系统的基本命令和功能。 其中许多内容也适用于任何类 UNIX(R) 操作系统。 鼓励 FreeBSD 新用户仔细阅读本章。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:59
@@ -76,8 +77,9 @@ msgstr "如何在 FreeBSD 上管理和创建用户组。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:63
+#, fuzzy
 msgid "How UNIX(R) file permissions and FreeBSD file flags work."
-msgstr ""
+msgstr "UNIX(R) 文件权限和 FreeBSD 文件标志的工作方式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:64
@@ -137,24 +139,25 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
-msgstr ""
+msgstr "FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "login:\n"
-msgstr ""
+msgstr "login:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:88
+#, fuzzy
 msgid ""
 "The first line contains some information about the system.  The `amd64` "
 "indicates that FreeBSD is running on a 64-bit x86 system.  The hostname is "
 "`pc3.example.org`, and `ttyv0` indicates that this is the \"system console"
 "\".  The second line is the login prompt."
-msgstr ""
+msgstr "第一行包含有关系统的一些信息。 `amd64` 表示 FreeBSD 正在 64 位 x86 系统上运行。主机名是 `pc3.example.org`，而 `ttyv0` 表示这是“系统控制台”。第二行是登录提示符。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:92
@@ -171,23 +174,25 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:96
+#, fuzzy
 msgid ""
 "To log into the system console, type the username that was configured during "
 "system installation, as described in crossref:bsdinstall[bsdinstall-addusers,"
 "Add Users], and press kbd:[Enter].  Then enter the password associated with "
 "the username and press kbd:[Enter].  The password is _not echoed_ for "
 "security reasons."
-msgstr ""
+msgstr "要登录系统控制台，请输入系统安装期间配置的用户名（如 crossref:bsdinstall[bsdinstall-addusers,Add Users] 所述），然后按 kbd:[Enter]。接着输入与该用户名关联的密码，再按 kbd:[Enter]。出于安全考虑，密码__不会回显__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:100
+#, fuzzy
 msgid ""
 "Once the correct password is input, the message of the day (MOTD) will be "
 "displayed followed by a command prompt.  Depending upon the shell that was "
 "selected when the user was created, this prompt will be a `+#+`, `$`, or `%` "
 "character.  The prompt indicates that the user is now logged into the "
 "FreeBSD system console and ready to try the available commands."
-msgstr ""
+msgstr "输入正确的密码后，系统会显示每日消息（MOTD），随后显示命令提示符。根据创建用户时选择的 shell，提示符可能是 `+#+`、`$` 或 `%`。提示符表示用户已登录 FreeBSD 系统控制台，可以开始尝试可用的命令。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:102
@@ -239,6 +244,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:115
+#, fuzzy
 msgid ""
 "The key combinations kbd:[Alt+F1] through kbd:[Alt+F8] have been reserved by "
 "FreeBSD for switching between virtual consoles.  Use kbd:[Alt+F1] to switch "
@@ -247,7 +253,7 @@ msgid ""
 "(`ttyv2`), and so on.  When using Xorg as a graphical console, the "
 "combination becomes kbd:[Ctrl+Alt+F1] to return to a text-based virtual "
 "console."
-msgstr ""
+msgstr "FreeBSD 保留了 kbd:[Alt+F1] 到 kbd:[Alt+F8] 组合键，用于在虚拟控制台之间切换。使用 kbd:[Alt+F1] 切换到系统控制台（`ttyv0`），使用 kbd:[Alt+F2] 访问第一个虚拟控制台（`ttyv1`），使用 kbd:[Alt+F3] 访问第二个虚拟控制台（`ttyv2`），依此类推。使用 Xorg 作为图形控制台时，组合键变为 kbd:[Ctrl+Alt+F1]，用于返回基于文本的虚拟控制台。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:119
@@ -272,11 +278,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:121
+#, fuzzy
 msgid ""
 "Refer to man:kbdcontrol[1], man:vidcontrol[1], man:atkbd[4], man:syscons[4], "
 "and man:vt[4] for a more technical description of the FreeBSD console and "
 "its keyboard drivers."
-msgstr ""
+msgstr "有关 FreeBSD 控制台及其键盘驱动程序的更多技术说明，请参阅 man:kbdcontrol[1]、man:vidcontrol[1]、man:atkbd[4]、man:syscons[4] 和 man:vt[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:123
@@ -320,6 +327,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:144
+#, fuzzy
 msgid ""
 "To disable a virtual console, put a comment symbol (`+#+`) at the beginning "
 "of the line representing that virtual console.  For example, to reduce the "
@@ -329,14 +337,15 @@ msgid ""
 "Note that the last virtual console (`ttyv8`) is used to access the graphical "
 "environment if Xorg has been installed and configured as described in "
 "crossref:x11[x11,The X Window System]."
-msgstr ""
+msgstr "要禁用虚拟控制台，请在代表该虚拟控制台的行首添加注释符号（`+#+`）。例如，要将可用虚拟控制台的数量从八个减少到四个，请在代表虚拟控制台 `ttyv5` 至 `ttyv8` 的最后四行前添加 `+#+`。__不要__注释掉系统控制台 `ttyv0` 所在的行。请注意，如果已按 crossref:x11[x11,The X Window System] 所述安装并配置 Xorg，则最后一个虚拟控制台（`ttyv8`）用于访问图形环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:146
+#, fuzzy
 msgid ""
 "For a detailed description of every column in this file and the available "
 "options for the virtual consoles, refer to man:ttys[5]."
-msgstr ""
+msgstr "有关此文件中每一列的详细说明，以及虚拟控制台的可用选项，请参阅 man:ttys[5]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:148
@@ -346,6 +355,7 @@ msgstr "单用户模式"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:156
+#, fuzzy
 msgid ""
 "The FreeBSD boot menu provides an option labelled as \"Boot Single User\".  "
 "If this option is selected, the system will boot into a special mode known "
@@ -357,7 +367,7 @@ msgid ""
 "access to the keyboard is needed to boot into this mode and determining who "
 "has physical access to the keyboard is something to consider when securing a "
 "FreeBSD system."
-msgstr ""
+msgstr "FreeBSD 启动菜单提供了一个名为“Boot Single User”的选项。选择此选项后，系统将进入一种称为“单用户模式”的特殊模式。此模式通常用于修复无法启动的系统，或在不知道 `root` 密码时重置该密码。在单用户模式下，网络和其他虚拟控制台不可用。不过，用户可以完全访问系统的 `root` 权限，且默认情况下无需输入 `root` 密码。因此，必须能够实际接触键盘才能启动到此模式；规划 FreeBSD 系统安全时，应考虑哪些人能够实际接触键盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:158
@@ -385,6 +395,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:172
+#, fuzzy
 msgid ""
 "By default, the status is set to `secure`.  This assumes that who has "
 "physical access to the keyboard is either not important or it is controlled "
@@ -393,16 +404,17 @@ msgid ""
 "access the keyboard.  When this line is changed to `insecure`, FreeBSD will "
 "prompt for the `root` password when a user selects to boot into single user "
 "mode."
-msgstr ""
+msgstr "默认情况下，状态设置为 `secure`。这表示实际接触键盘的人是谁并不重要，或者该访问受到物理安全策略的控制。如果将此设置更改为 `insecure`，则表示环境本身不安全，因为任何人都可以接触键盘。将此行更改为 `insecure` 后，用户选择以单用户模式启动时，FreeBSD 会提示输入 `root` 密码。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:176
+#, fuzzy
 msgid ""
 "_Be careful when changing this setting to `insecure`!_ If the `root` "
 "password is forgotten, booting into single user mode is still possible, but "
 "may be difficult for someone who is not familiar with the FreeBSD booting "
 "process."
-msgstr ""
+msgstr "__将此设置更改为 `insecure` 时请务必小心！__如果忘记了 `root` 密码，仍然可以启动到单用户模式，但不熟悉 FreeBSD 启动过程的人可能难以操作。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:179
@@ -424,36 +436,38 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload vesa\n"
-msgstr ""
+msgstr "# kldload vesa\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:191
+#, fuzzy
 msgid ""
 "To determine which video modes are supported by the hardware, use man:"
 "vidcontrol[1].  To get a list of supported video modes issue the following:"
-msgstr ""
+msgstr "要确定硬件支持哪些视频模式，请使用 man:vidcontrol[1]。要列出支持的视频模式，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# vidcontrol -i mode\n"
-msgstr ""
+msgstr "# vidcontrol -i mode\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:199
+#, fuzzy
 msgid ""
 "The output of this command lists the video modes that are supported by the "
 "hardware.  To select a new video mode, specify the mode using man:"
 "vidcontrol[1] as the `root` user:"
-msgstr ""
+msgstr "此命令的输出会列出硬件支持的视频模式。要选择新的视频模式，请以 `root` 用户身份使用 man:vidcontrol[1] 指定该模式："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# vidcontrol MODE_279\n"
-msgstr ""
+msgstr "# vidcontrol MODE_279\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:206
@@ -567,18 +581,20 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:240
+#, fuzzy
 msgid ""
 "Examples of system accounts are `daemon`, `operator`, `bind`, `news`, and "
 "`www`."
-msgstr ""
+msgstr "系统账户的示例包括 `daemon`、`operator`、`bind`、`news` 和 `www`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:243
+#, fuzzy
 msgid ""
 "`nobody` is the generic unprivileged system account.  However, the more "
 "services that use `nobody`, the more files and processes that user will "
 "become associated with, and hence the more privileged that user becomes."
-msgstr ""
+msgstr "`nobody` 是通用的非特权系统账户。不过，使用 `nobody` 的服务越多，该用户关联的文件和进程就越多，因此该用户获得的权限也会越大。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/basics/_index.adoc:245
@@ -626,13 +642,14 @@ msgstr "用户名"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:260
+#, fuzzy
 msgid ""
 "The user name is typed at the `login:` prompt.  Each user must have a unique "
 "user name.  There are a number of rules for creating valid user names which "
 "are documented in man:passwd[5].  It is recommended to use user names that "
 "consist of eight or fewer, all lower case characters in order to maintain "
 "backwards compatibility with applications."
-msgstr ""
+msgstr "用户在 `login:` 提示符处输入用户名。每个用户都必须使用唯一的用户名。创建有效用户名有若干规则，详见 man:passwd[5]。建议使用不超过八个字符且全部为小写字母的用户名，以保持与应用程序的向后兼容性。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:261
@@ -647,9 +664,9 @@ msgstr "每个账户有个相关联的密码。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "User ID (UID)"
-msgstr ""
+msgstr "用户 ID（UID）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:268
@@ -666,9 +683,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Group ID (GID)"
-msgstr ""
+msgstr "组 ID（GID）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:274
@@ -694,12 +711,13 @@ msgstr "登入类"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:278
+#, fuzzy
 msgid ""
 "Login classes are an extension to the group mechanism that provide "
 "additional flexibility when tailoring the system to different users.  Login "
 "classes are discussed further in crossref:security[users-limiting,"
 "Configuring Login Classes]."
-msgstr ""
+msgstr "登录类别是对组机制的扩展，可在针对不同用户定制系统时提供额外的灵活性。有关登录类别的更多讨论，请参阅 crossref:security[users-limiting,Configuring Login Classes]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:279
@@ -730,13 +748,14 @@ msgstr "账户过期时间"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:287
+#, fuzzy
 msgid ""
 "By default, FreeBSD does not expire accounts.  When creating accounts that "
 "need a limited lifespan, such as student accounts in a school, specify the "
 "account expiry date using man:pw[8].  After the expiry time has elapsed, the "
 "account cannot be used to log in to the system, although the account's "
 "directories and files will remain."
-msgstr ""
+msgstr "默认情况下，FreeBSD 不会使账户过期。创建需要限制有效期的账户时（例如学校的学生账户），请使用 man:pw[8] 指定账户过期日期。过期时间到达后，该账户将无法用于登录系统，但其目录和文件仍会保留。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:288
@@ -769,13 +788,14 @@ msgstr "Home 目录"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:297
+#, fuzzy
 msgid ""
 "The home directory is the full path to a directory on the system.  This is "
 "the user's starting directory when the user logs in.  A common convention is "
 "to put all user home directories under `/home/username` or `/usr/home/"
 "username`.  Each user stores their personal files and subdirectories in "
 "their own home directory."
-msgstr ""
+msgstr "主目录是系统上某个目录的完整路径。用户登录时会从此目录开始操作。通常，所有用户的主目录都放在 `/home/username` 或 `/usr/home/username` 下。每个用户都在自己的主目录中保存个人文件和子目录。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:298
@@ -807,12 +827,13 @@ msgstr "超级账户"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:307
+#, fuzzy
 msgid ""
 "The superuser account, usually called `root`, is used to manage the system "
 "with no limitations on privileges.  For this reason, it should not be used "
 "for day-to-day tasks like sending and receiving mail, general exploration of "
 "the system, or programming."
-msgstr ""
+msgstr "超级用户账户通常称为 `root`，用于不受权限限制地管理系统。因此，不应将其用于收发邮件、一般性地探索系统或编程等日常任务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:310
@@ -845,20 +866,22 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:315
+#, fuzzy
 msgid ""
 "There are several ways to gain superuser privilege.  While one can log in as "
 "`root`, this is highly discouraged."
-msgstr ""
+msgstr "获得超级用户权限有几种方式。虽然可以使用 `root` 登录，但强烈不建议这样做。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:320
+#, fuzzy
 msgid ""
 "Instead, use man:su[1] to become the superuser.  If `-` is specified when "
 "running this command, the user will also inherit the root user's "
 "environment.  The user running this command must be in the `wheel` group or "
 "else the command will fail.  The user must also know the password for the "
 "`root` user account."
-msgstr ""
+msgstr "应改用 man:su[1] 切换为超级用户。运行此命令时，如果指定 `-`，用户还会继承 root 用户的环境。运行此命令的用户必须属于 `wheel` 组，否则命令会失败。此外，该用户还必须知道 `root` 用户账户的密码。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:323
@@ -881,7 +904,7 @@ msgstr "使用超级账户安装程序"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% configure\n"
 "% make\n"
@@ -890,17 +913,18 @@ msgid ""
 "# make install\n"
 "# exit\n"
 "%\n"
-msgstr ""
+msgstr "% configure\n% make\n% su -\nPassword:\n# make install\n# exit\n%\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:342
+#, fuzzy
 msgid ""
 "The built-in man:su[1] framework works well for single systems or small "
 "networks with just one system administrator.  An alternative is to install "
 "the package:security/sudo[] package or port.  This software provides "
 "activity logging and allows the administrator to configure which users can "
 "run which commands as the superuser."
-msgstr ""
+msgstr "内置的 man:su[1] 框架适用于单系统或只有一名系统管理员的小型网络。另一种选择是安装 package:security/sudo[] 软件包或移植软件。该软件提供活动日志记录，并允许管理员配置哪些用户可以以超级用户身份运行哪些命令。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:344
@@ -910,13 +934,14 @@ msgstr "管理用户"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:350
+#, fuzzy
 msgid ""
 "FreeBSD provides a variety of different commands to manage user accounts.  "
 "The most common commands are summarized in crossref:basics[users-modifying-"
 "utilities,Utilities for Managing User Accounts], followed by some examples "
 "of their usage.  See the manual page for each utility for more details and "
 "usage examples."
-msgstr ""
+msgstr "FreeBSD 提供了多种管理用户账户的命令。crossref:basics[users-modifying-utilities,Utilities for Managing User Accounts] 汇总了最常用的命令，后面还附有一些用法示例。更多详情和用法示例，请参阅各工具的手册页。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:352
@@ -926,87 +951,87 @@ msgstr "管理用户账户的程序"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Command"
-msgstr ""
+msgstr "命令"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:358
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Summary"
-msgstr ""
+msgstr "摘要"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:adduser[8]"
-msgstr ""
+msgstr "man:adduser[8]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The recommended command-line application for adding new users."
-msgstr ""
+msgstr "推荐用于添加新用户的命令行应用程序。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:362
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:rmuser[8]"
-msgstr ""
+msgstr "man:rmuser[8]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The recommended command-line application for removing users."
-msgstr ""
+msgstr "推荐用于移除用户的命令行应用程序。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:chpass[1]"
-msgstr ""
+msgstr "man:chpass[1]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:367
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A flexible tool for changing user database information."
-msgstr ""
+msgstr "用于更改用户数据库信息的灵活工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:passwd[1]"
-msgstr ""
+msgstr "man:passwd[1]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The command-line tool to change user passwords."
-msgstr ""
+msgstr "用于更改用户密码的命令行工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pw[8]"
-msgstr ""
+msgstr "man:pw[8]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A powerful and flexible tool for modifying all aspects of user accounts."
-msgstr ""
+msgstr "用于修改用户账户各方面信息的强大而灵活的工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:bsdconfig[8]"
-msgstr ""
+msgstr "man:bsdconfig[8]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A system configuration utility with account management support."
-msgstr ""
+msgstr "支持账户管理的系统配置工具。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/basics/_index.adoc:378
@@ -1017,16 +1042,18 @@ msgstr "在 FreeBSD 上添加用户"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:384
+#, fuzzy
 msgid ""
 "The recommended program for adding new users is man:adduser[8].  When a new "
 "user is added, this program automatically updates `/etc/passwd` and `/etc/"
 "group`.  It also creates a home directory for the new user, copies in the "
 "default configuration files from `/usr/share/skel`, and can optionally mail "
 "the new user a welcome message.  This utility must be run as the superuser."
-msgstr ""
+msgstr "推荐用于添加新用户的程序是 man:adduser[8]。添加新用户时，该程序会自动更新 `/etc/passwd` 和 `/etc/group`。它还会为新用户创建主目录，从 `/usr/share/skel` 复制默认配置文件，并可选择向新用户发送欢迎邮件。此工具必须以超级用户身份运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:389
+#, fuzzy
 msgid ""
 "The man:adduser[8] utility is interactive and walks through the steps for "
 "creating a new user account.  As seen in crossref:basics[users-modifying-"
@@ -1035,7 +1062,7 @@ msgid ""
 "this example, the user has been invited into the `wheel` group, allowing "
 "them to become the superuser with man:su[1].  When finished, the utility "
 "will prompt to either create another user or to exit."
-msgstr ""
+msgstr "man:adduser[8] 工具采用交互式方式，引导用户完成新账户的创建步骤。如 crossref:basics[users-modifying-adduser, Adding a User on FreeBSD] 所示，输入所需信息，或按 kbd:[Return] 接受方括号中显示的默认值。在此示例中，用户被加入 `wheel` 组，因此可以使用 man:su[1] 成为超级用户。完成后，该工具会提示创建另一个用户或退出。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:391
@@ -1045,9 +1072,9 @@ msgstr "在 FreeBSD 上添加用户"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:397
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# adduser\n"
-msgstr ""
+msgstr "# adduser\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:400
@@ -1062,8 +1089,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/basics/_index.adoc:789
 #: documentation/content/en/books/handbook/basics/_index.adoc:1559
 #: documentation/content/en/books/handbook/basics/_index.adoc:1587
+#, fuzzy
 msgid "The output should be similar to the following:"
-msgstr ""
+msgstr "输出应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:431
@@ -1145,20 +1173,23 @@ msgstr "符号权限"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:444
+#, fuzzy
 msgid ""
 "To completely remove a user from the system, run man:rmuser[8] as the "
 "superuser.  This command performs the following steps:"
-msgstr ""
+msgstr "要从系统中彻底移除用户，请以超级用户身份运行 man:rmuser[8]。此命令会执行以下步骤："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:448
+#, fuzzy
 msgid "Removes the user's man:crontab[1] entry, if one exists."
-msgstr ""
+msgstr "如果存在，则移除该用户的 man:crontab[1] 条目。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:449
+#, fuzzy
 msgid "Removes any man:at[1] jobs belonging to the user."
-msgstr ""
+msgstr "移除属于该用户的所有 man:at[1] 作业。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:450
@@ -1174,10 +1205,11 @@ msgstr "从系统的本地密码文件中删除用户。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:452
+#, fuzzy
 msgid ""
 "Removes the user's home directory (if it is owned by the user), including "
 "handling of symbolic links in the path to the actual home directory."
-msgstr ""
+msgstr "移除该用户的主目录（如果该目录归该用户所有），并处理指向实际主目录路径中的符号链接。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:453
@@ -1196,26 +1228,29 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:455
+#, fuzzy
 msgid ""
 "Removes the username from all groups to which it belongs in `/etc/group`. "
 "(If a group becomes empty and the group name is the same as the username, "
 "the group is removed; this complements man:adduser[8]'s per-user unique "
 "groups.)"
-msgstr ""
+msgstr "从 `/etc/group` 中该用户名所属的所有组里移除该用户名。（如果某个组变为空组，且组名与用户名相同，则会移除该组；这与 man:adduser[8] 为每个用户创建专属组的做法相配合。）"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:456
+#, fuzzy
 msgid ""
 "Removes all message queues, shared memory segments and semaphores owned by "
 "the user."
-msgstr ""
+msgstr "移除该用户拥有的所有消息队列、共享内存段和信号量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:459
+#, fuzzy
 msgid ""
 "man:rmuser[8] cannot be used to remove superuser accounts since that is "
 "almost always an indication of massive destruction."
-msgstr ""
+msgstr "不能使用 man:rmuser[8] 移除超级用户账户，因为这几乎总是意味着系统将遭到严重破坏。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:461
@@ -1225,26 +1260,26 @@ msgstr "默认情况下使用交互模式，就像下面这样。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:462
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`rmuser` Interactive Account Removal"
-msgstr ""
+msgstr "`rmuser` 交互式账户移除"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:468
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# rmuser jru\n"
-msgstr ""
+msgstr "# rmuser jru\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Matching password entry:\n"
 "jru:*:1001:1001::0:0:J. Random User:/home/jru:/usr/local/bin/zsh\n"
 "Is this the entry you wish to remove? y\n"
 "Remove user's home directory (/home/jru)? y\n"
 "Removing user (jru): mailspool home passwd.\n"
-msgstr ""
+msgstr "匹配的密码条目：\njru:*:1001:1001::0:0:J. Random User:/home/jru:/usr/local/bin/zsh\n要移除此条目吗？ y\n移除用户的主目录（/home/jru）？ y\n正在移除用户（jru）：mailspool home passwd。\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/basics/_index.adoc:484
@@ -1255,19 +1290,21 @@ msgstr "各种资讯。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:488
+#, fuzzy
 msgid ""
 "Any user can use man:chpass[1] to change their default shell and personal "
 "information associated with their user account.  The superuser can use this "
 "utility to change additional account information for any user."
-msgstr ""
+msgstr "任何用户都可以使用 man:chpass[1] 更改其默认 shell 以及与用户账户关联的个人信息。超级用户可以使用此工具更改任何用户的其他账户信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:491
+#, fuzzy
 msgid ""
 "When passed no options, aside from an optional username, man:chpass[1] "
 "displays an editor containing user information.  When the user exits from "
 "the editor, the user database is updated with the new information."
-msgstr ""
+msgstr "如果不指定选项（用户名可选），man:chpass[1] 会显示包含用户信息的编辑器。用户退出编辑器后，用户数据库会更新为新信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:495
@@ -1279,25 +1316,26 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:500
+#, fuzzy
 msgid ""
 "In crossref:basics[users-modifying-chpass-su,Using `chpass` as Superuser], "
 "the superuser has typed `chpass jru` and is now viewing the fields that can "
 "be changed for this user.  If `jru` runs this command instead, only the last "
 "six fields will be displayed and available for editing.  This is shown in "
 "crossref:basics[users-modifying-chpass-ru,Using `chpass` as Regular User]."
-msgstr ""
+msgstr "在 crossref:basics[users-modifying-chpass-su,Using `chpass` as Superuser] 中，超级用户输入了 `chpass jru`，现在正在查看可以为该用户更改的字段。如果由 `jru` 运行此命令，则只会显示最后六个字段，并且只能编辑这些字段。参见 crossref:basics[users-modifying-chpass-ru,Using `chpass` as Regular User]。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:502
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `chpass` as Superuser"
-msgstr ""
+msgstr "以超级用户身份使用 `chpass`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:508
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chpass jru\n"
-msgstr ""
+msgstr "# chpass jru\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:529
@@ -1337,9 +1375,9 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `chpass` as Regular User"
-msgstr ""
+msgstr "以普通用户身份使用 `chpass`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:545
@@ -1363,13 +1401,14 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:553
+#, fuzzy
 msgid ""
 "The commands man:chfn[1] and man:chsh[1] are links to man:chpass[1], as are "
 "man:ypchpass[1], man:ypchfn[1], and man:ypchsh[1].  Since NIS support is "
 "automatic, specifying the `yp` before the command is not necessary.  How to "
 "configure NIS is covered in crossref:network-servers[network-servers,Network "
 "Servers]."
-msgstr ""
+msgstr "命令 man:chfn[1] 和 man:chsh[1] 是 man:chpass[1] 的链接，man:ypchpass[1]、man:ypchfn[1] 和 man:ypchsh[1] 也一样。由于 NIS 支持是自动启用的，无需在命令前加上 `yp`。有关如何配置 NIS 的说明，请参阅 crossref:network-servers[network-servers,Network Servers]。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/basics/_index.adoc:556
@@ -1380,11 +1419,12 @@ msgstr "改变您的密码"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:560
+#, fuzzy
 msgid ""
 "Any user can easily change their password using man:passwd[1].  To prevent "
 "accidental or unauthorized changes, this command will prompt for the user's "
 "original password before a new password can be set:"
-msgstr ""
+msgstr "任何用户都可以使用 man:passwd[1] 轻松更改密码。为防止意外或未经授权的更改，设置新密码前，此命令会提示用户输入原密码："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:561
@@ -1395,13 +1435,13 @@ msgstr "改变您的密码"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:567
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% passwd\n"
-msgstr ""
+msgstr "% passwd\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:579
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Changing local password for jru.\n"
 "Old password:\n"
@@ -1409,16 +1449,17 @@ msgid ""
 "Retype new password:\n"
 "passwd: updating the database...\n"
 "passwd: done\n"
-msgstr ""
+msgstr "正在更改 jru 的本地密码。\n旧密码：\n新密码：\n再次输入新密码：\npasswd：正在更新数据库……\npasswd：完成\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:585
+#, fuzzy
 msgid ""
 "The superuser can change any user's password by specifying the username when "
 "running man:passwd[1].  When this utility is run as the superuser, it will "
 "not prompt for the user's current password.  This allows the password to be "
 "changed when a user cannot remember the original password."
-msgstr ""
+msgstr "超级用户可以在运行 man:passwd[1] 时指定用户名，从而更改任何用户的密码。以超级用户身份运行此工具时，不会提示输入用户当前的密码。因此，即使用户忘记了原密码，也可以更改密码。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:586
@@ -1428,43 +1469,45 @@ msgstr "作为超级用户修改另一个用户的密码"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:592
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# passwd jru\n"
-msgstr ""
+msgstr "# passwd jru\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:603
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Changing local password for jru.\n"
 "New password:\n"
 "Retype new password:\n"
 "passwd: updating the database...\n"
 "passwd: done\n"
-msgstr ""
+msgstr "Changing local password for jru.\nNew password:\nRetype new password:\npasswd: updating the database...\npasswd: done\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:609
+#, fuzzy
 msgid ""
 "As with man:chpass[1], man:yppasswd[1] is a link to man:passwd[1], so NIS "
 "works with either command."
-msgstr ""
+msgstr "与 man:chpass[1] 一样，man:yppasswd[1] 是指向 man:passwd[1] 的链接，因此 NIS 可与这两个命令中的任意一个配合使用。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/basics/_index.adoc:612
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Create, remove, modify and display system users and groups"
-msgstr ""
+msgstr "创建、删除、修改和显示系统用户及组"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:617
+#, fuzzy
 msgid ""
 "The man:pw[8] utility can create, remove, modify, and display users and "
 "groups.  It functions as a front end to the system user and group files.  "
 "man:pw[8] has a very powerful set of command line options that make it "
 "suitable for use in shell scripts, but new users may find it more "
 "complicated than the other commands presented in this section."
-msgstr ""
+msgstr "man:pw[8] 实用程序可创建、删除、修改和显示用户及组。它是系统用户和组文件的前端。man:pw[8] 提供了功能强大的命令行选项，适合在 shell 脚本中使用，但新用户可能会觉得它比本节介绍的其他命令更复杂。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:619
@@ -1489,23 +1532,25 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:629
+#, fuzzy
 msgid ""
 "The group name to GID mapping is listed in `/etc/group`.  This is a plain "
 "text file with four colon-delimited fields.  The first field is the group "
 "name, the second is the encrypted password, the third the GID, and the "
 "fourth the comma-delimited list of members.  For a complete description of "
 "the syntax, refer to man:group[5]."
-msgstr ""
+msgstr "组名到 GID 的映射列在 `/etc/group` 中。这是一个纯文本文件，包含四个以冒号分隔的字段。第一个字段是组名，第二个是加密后的密码，第三个是 GID，第四个是以逗号分隔的成员列表。有关语法的完整说明，请参阅 man:group[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:633
+#, fuzzy
 msgid ""
 "The superuser can modify `/etc/group` using a text editor, although editing "
 "the group file using man:vigr[8] is preferred because it can catch some "
 "common mistakes.  Alternatively, man:pw[8] can be used to add and edit "
 "groups.  For example, to add a group called `teamtwo` and then confirm that "
 "it exists:"
-msgstr ""
+msgstr "超级用户可以使用文本编辑器修改 `/etc/group`，但更推荐使用 man:vigr[8] 编辑组文件，因为它可以捕获一些常见错误。也可以使用 man:pw[8] 添加和编辑组。例如，添加名为 `teamtwo` 的组，然后确认该组存在："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:637
@@ -1520,53 +1565,55 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:639
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Adding a Group Using man:pw[8]"
-msgstr ""
+msgstr "使用 man:pw[8] 添加组"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:646
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pw groupadd teamtwo\n"
 "# pw groupshow teamtwo\n"
-msgstr ""
+msgstr "# pw groupadd teamtwo\n# pw groupshow teamtwo\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:653
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "teamtwo:*:1100:\n"
-msgstr ""
+msgstr "teamtwo:*:1100:\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:659
+#, fuzzy
 msgid ""
 "In this example, `1100` is the GID of `teamtwo`.  Right now, `teamtwo` has "
 "no members.  This command will add `jru` as a member of `teamtwo`."
-msgstr ""
+msgstr "在此示例中，`1100` 是 `teamtwo` 的 GID。目前，`teamtwo` 没有成员。此命令会将 `jru` 添加为 `teamtwo` 的成员。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Adding User Accounts to a New Group Using man:pw[8]"
-msgstr ""
+msgstr "使用 man:pw[8] 将用户帐户添加到新组"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:667
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pw groupmod teamtwo -M jru\n"
 "# pw groupshow teamtwo\n"
-msgstr ""
+msgstr "# pw groupmod teamtwo -M jru\n# pw groupshow teamtwo\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:674
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "teamtwo:*:1100:jru\n"
-msgstr ""
+msgstr "teamtwo:*:1100:jru\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:681
+#, fuzzy
 msgid ""
 "The argument to `-M` is a comma-delimited list of users to be added to a new "
 "(empty) group or to replace the members of an existing group.  To the user, "
@@ -1576,27 +1623,27 @@ msgid ""
 "up when the information is queried via man:id[1] or a similar tool.  When "
 "man:pw[8] is used to add a user to a group, it only manipulates `/etc/group` "
 "and does not attempt to read additional data from `/etc/passwd`."
-msgstr ""
+msgstr "`-M` 的参数是以逗号分隔的用户列表，用于添加到新的（空）组，或替换现有组的成员。对用户而言，这种组成员身份不同于（且额外于）密码文件中列出的用户主组。这意味着，使用 man:pw[8] 的 `groupshow` 时不会将该用户显示为成员，但通过 man:id[1] 或类似工具查询信息时则会显示。使用 man:pw[8] 将用户添加到组时，它只会操作 `/etc/group`，不会尝试从 `/etc/passwd` 读取其他数据。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:682
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Adding a New Member to a Group Using man:pw[8]"
-msgstr ""
+msgstr "使用 man:pw[8] 向组添加新成员"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:689
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pw groupmod teamtwo -m db\n"
 "# pw groupshow teamtwo\n"
-msgstr ""
+msgstr "# pw groupmod teamtwo -m db\n# pw groupshow teamtwo\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:696
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "teamtwo:*:1100:jru,db\n"
-msgstr ""
+msgstr "teamtwo:*:1100:jru,db\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:701
@@ -1612,33 +1659,35 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:702
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using man:id[1] to Determine Group Membership"
-msgstr ""
+msgstr "使用 man:id[1] 确定组成员身份"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:708
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% id jru\n"
-msgstr ""
+msgstr "% id jru\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:715
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)\n"
-msgstr ""
+msgstr "uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:719
+#, fuzzy
 msgid "In this example, `jru` is a member of the groups `jru` and `teamtwo`."
-msgstr ""
+msgstr "在此示例中，`jru` 是 `jru` 和 `teamtwo` 组的成员。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:721
+#, fuzzy
 msgid ""
 "For more information about this command and the format of `/etc/group`, "
 "refer to man:pw[8] and man:group[5]."
-msgstr ""
+msgstr "有关此命令和 `/etc/group` 格式的更多信息，请参阅 man:pw[8] 和 man:group[5]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:723
@@ -1670,14 +1719,16 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:730
+#, fuzzy
 msgid ""
 "This section discusses the traditional UNIX(R) permissions used in FreeBSD.  "
 "For finer-grained file system access control, refer to crossref:security[fs-"
 "acl,Access Control Lists]."
-msgstr ""
+msgstr "本节讨论 FreeBSD 中使用的传统 UNIX(R) 权限。有关更精细的文件系统访问控制，请参阅 crossref:security[fs-acl,访问控制列表]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:736
+#, fuzzy
 msgid ""
 "In UNIX(R), basic permissions are assigned using three types of access: "
 "read, write, and execute.  These access types are used to determine file "
@@ -1687,27 +1738,28 @@ msgid ""
 "is either on or off (`0`).  When represented as a number, the order is "
 "always read as `rwx`, where `r` has an on value of `4`, `w` has an on value "
 "of `2` and `x` has an on value of `1`."
-msgstr ""
+msgstr "在 UNIX(R) 中，基本权限通过三种访问类型分配：读取、写入和执行。这些访问类型用于确定文件所有者、所属组和其他用户（所有其他人）对文件的访问权限。读取、写入和执行权限可分别用字母 `r`、`w` 和 `x` 表示。它们也可用二进制数字表示，因为每种权限只有开启或关闭（`0`）两种状态。用数字表示时，顺序始终为 `rwx`，其中 `r` 开启时的值为 `4`，`w` 开启时的值为 `2`，`x` 开启时的值为 `1`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:739
+#, fuzzy
 msgid ""
 "Table 4.1 summarizes the possible numeric and alphabetic possibilities.  "
 "When reading the \"Directory Listing\" column, a `-` is used to represent a "
 "permission that is set to off."
-msgstr ""
+msgstr "表 4.1 汇总了所有可能的数字和字母表示形式。阅读“目录列表”列时，`-` 表示关闭的权限。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:740
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UNIX(R) Permissions"
-msgstr ""
+msgstr "UNIX(R) 权限"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:744
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:745
@@ -1725,172 +1777,173 @@ msgstr "目录结构"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:748
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:749
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No read, no write, no execute"
-msgstr ""
+msgstr "不可读取、不可写入、不可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:751
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`---`"
-msgstr ""
+msgstr "`---`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:752
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:753
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No read, no write, execute"
-msgstr ""
+msgstr "不可读取、不可写入、可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:755
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`--x`"
-msgstr ""
+msgstr "`--x`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:756
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No read, write, no execute"
-msgstr ""
+msgstr "不可读取、可写入、不可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:759
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-w-`"
-msgstr ""
+msgstr "`-w-`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:760
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:761
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No read, write, execute"
-msgstr ""
+msgstr "不可读取、可写入、可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:763
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-wx`"
-msgstr ""
+msgstr "`-wx`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:764
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:765
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read, no write, no execute"
-msgstr ""
+msgstr "可读取、不可写入、不可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:767
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`r--`"
-msgstr ""
+msgstr "`r--`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:768
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:769
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read, no write, execute"
-msgstr ""
+msgstr "可读取、不可写入、可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:771
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`r-x`"
-msgstr ""
+msgstr "`r-x`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:773
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read, write, no execute"
-msgstr ""
+msgstr "可读取、可写入、不可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`rw-`"
-msgstr ""
+msgstr "`rw-`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:776
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:777
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read, write, execute"
-msgstr ""
+msgstr "可读取、可写入、可执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:778
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`rwx`"
-msgstr ""
+msgstr "`rwx`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:782
+#, fuzzy
 msgid ""
 "Use the `-l` argument with man:ls[1] to view a long directory listing that "
 "includes a column of information about a file's permissions for the owner, "
 "group, and everyone else.  For example, `ls -l` in an arbitrary directory "
 "may show:"
-msgstr ""
+msgstr "使用 man:ls[1] 的 `-l` 参数可查看长格式目录列表，其中包含一列信息，显示文件所有者、所属组和其他所有用户的权限。例如，在任意目录中运行 `ls -l` 可能会显示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ls -l\n"
-msgstr ""
+msgstr "% ls -l\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:796
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "total 530\n"
 "-rw-r--r--  1 root  wheel     512 Sep  5 12:31 myfile\n"
 "-rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile\n"
 "-rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt\n"
-msgstr ""
+msgstr "total 530\n-rw-r--r--  1 root  wheel     512 Sep  5 12:31 myfile\n-rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile\n-rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:806
@@ -1933,6 +1986,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:815
+#, fuzzy
 msgid ""
 "Directories are also treated as files.  They have read, write, and execute "
 "permissions.  The executable bit for a directory has a slightly different "
@@ -1940,7 +1994,7 @@ msgid ""
 "it is possible to change into that directory using man:cd[1].  This also "
 "means that it is possible to access the files within that directory, subject "
 "to the permissions on the files themselves."
-msgstr ""
+msgstr "目录也被视为文件。目录具有读取、写入和执行权限。目录的可执行位与文件的可执行位含义略有不同。目录被标记为可执行，表示可以使用 man:cd[1] 切换到该目录。这也意味着可以访问该目录中的文件，但仍受这些文件自身权限的限制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:818
@@ -1956,11 +2010,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:821
+#, fuzzy
 msgid ""
 "There are more permission bits, but they are primarily used in special "
 "circumstances such as setuid binaries and sticky directories.  For more "
 "information on file permissions and how to set them, refer to man:chmod[1]."
-msgstr ""
+msgstr "还有其他权限位，但它们主要用于特殊情况，例如 setuid 二进制文件和粘滞目录。有关文件权限及其设置方法的更多信息，请参阅 man:chmod[1]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:822
@@ -1992,30 +2047,30 @@ msgstr "挂载选项"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:832
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Letter"
-msgstr ""
+msgstr "字母"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Represents"
-msgstr ""
+msgstr "表示"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:835
 #: documentation/content/en/books/handbook/basics/_index.adoc:839
 #: documentation/content/en/books/handbook/basics/_index.adoc:843
 #: documentation/content/en/books/handbook/basics/_index.adoc:847
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(who)"
-msgstr ""
+msgstr "（对象）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:836
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "u"
-msgstr ""
+msgstr "u"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:838
@@ -2026,15 +2081,15 @@ msgstr "用户名"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:840
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "g"
-msgstr ""
+msgstr "g"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:842
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Group owner"
-msgstr ""
+msgstr "所属组"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:844
@@ -2045,35 +2100,35 @@ msgstr "或"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:846
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Other"
-msgstr ""
+msgstr "其他用户"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:848
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "a"
-msgstr ""
+msgstr "a"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:850
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "All (\"world\")"
-msgstr ""
+msgstr "所有用户（“全体用户”）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:851
 #: documentation/content/en/books/handbook/basics/_index.adoc:855
 #: documentation/content/en/books/handbook/basics/_index.adoc:859
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(action)"
-msgstr ""
+msgstr "（操作）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:852
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:854
@@ -2084,9 +2139,9 @@ msgstr "权限"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:856
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:858
@@ -2097,9 +2152,9 @@ msgstr "符号权限"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:860
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "="
-msgstr ""
+msgstr "="
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:862
@@ -2128,86 +2183,88 @@ msgstr "或"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:866
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read"
-msgstr ""
+msgstr "读取"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:868
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "w"
-msgstr ""
+msgstr "w"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:870
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Write"
-msgstr ""
+msgstr "写入"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:872
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:874
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Execute"
-msgstr ""
+msgstr "执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:876
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "t"
-msgstr ""
+msgstr "t"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:878
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sticky bit"
-msgstr ""
+msgstr "粘滞位"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:880
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "s"
-msgstr ""
+msgstr "s"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:881
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Set UID or GID"
-msgstr ""
+msgstr "设置 UID 或 GID"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:885
+#, fuzzy
 msgid ""
 "These values are used with man:chmod[1], but with letters instead of "
 "numbers.  For example, the following command would block both members of the "
 "group associated with _FILE_ and all other users from accessing _FILE_:"
-msgstr ""
+msgstr "这些值与 man:chmod[1] 配合使用，但使用字母而非数字。例如，以下命令会阻止与 __FILE__ 关联的组成员以及所有其他用户访问 __FILE__："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:889
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% chmod go= FILE\n"
-msgstr ""
+msgstr "% chmod go= FILE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:893
+#, fuzzy
 msgid ""
 "A comma separated list can be provided when more than one set of changes to "
 "a file must be made.  For example, the following command removes the group "
 "and \"world\" write permission on _FILE_, and adds the execute permissions "
 "for everyone:"
-msgstr ""
+msgstr "如果需要对文件进行多项更改，可以提供以逗号分隔的列表。例如，以下命令会移除 __FILE__ 的组和“全体用户”写入权限，并为所有人添加执行权限："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:897
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% chmod go-w,a+x FILE\n"
-msgstr ""
+msgstr "% chmod go-w,a+x FILE\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:899
@@ -2217,49 +2274,53 @@ msgstr "FreeBSD 文件标志"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:904
+#, fuzzy
 msgid ""
 "In addition to file permissions, FreeBSD supports the use of \"file flags"
 "\".  These flags add an additional level of security and control over files, "
 "but not directories.  With file flags, even `root` can be prevented from "
 "removing or altering files."
-msgstr ""
+msgstr "除了文件权限，FreeBSD 还支持使用“文件标志”。这些标志为文件（而非目录）增加了一层安全性和控制能力。使用文件标志后，甚至可以阻止 `root` 删除或更改文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:907
+#, fuzzy
 msgid ""
 "File flags are modified using man:chflags[1].  For example, to enable the "
 "system undeletable flag on the file `file1`, issue the following command:"
-msgstr ""
+msgstr "使用 man:chflags[1] 修改文件标志。例如，要为文件 `file1` 启用系统不可删除标志，请运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:911
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chflags sunlink file1\n"
-msgstr ""
+msgstr "# chflags sunlink file1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:914
+#, fuzzy
 msgid ""
 "To disable the system undeletable flag, put a \"no\" in front of the "
 "`sunlink`:"
-msgstr ""
+msgstr "要禁用系统不可删除标志，请在 `sunlink` 前加上 `no`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:918
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chflags nosunlink file1\n"
-msgstr ""
+msgstr "# chflags nosunlink file1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:921
+#, fuzzy
 msgid "To view the flags of a file, use `-lo` with man:ls[1]:"
-msgstr ""
+msgstr "要查看文件的标志，请对 man:ls[1] 使用 `-lo`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:925
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ls -lo file1\n"
-msgstr ""
+msgstr "# ls -lo file1\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:930
@@ -2269,36 +2330,40 @@ msgstr "-rw-r--r--  1 trhodes  trhodes  sunlnk 0 Mar  1 05:54 file1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:935
+#, fuzzy
 msgid ""
 "Several file flags may only be added or removed by the `root` user.  In "
 "other cases, the file owner may set its file flags.  Refer to man:chflags[1] "
 "and man:chflags[2] for more information."
-msgstr ""
+msgstr "某些文件标志只能由 `root` 用户添加或移除。其他情况下，文件所有者可以设置文件标志。更多信息请参阅 man:chflags[1] 和 man:chflags[2]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:936
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The setuid, setgid, and sticky Permissions"
-msgstr ""
+msgstr "setuid、setgid 和粘滞权限"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:940
+#, fuzzy
 msgid ""
 "Other than the permissions already discussed, there are three other specific "
 "settings that all administrators should know about.  They are the `setuid`, "
 "`setgid`, and `sticky` permissions."
-msgstr ""
+msgstr "除了前面讨论的权限之外，还有另外三种特定设置是所有管理员都应该了解的。它们是 `setuid`、`setgid` 和 `sticky` 权限。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:943
+#, fuzzy
 msgid ""
 "These settings are important for some UNIX(R) operations as they provide "
 "functionality not normally granted to normal users.  To understand them, the "
 "difference between the real user ID and effective user ID must be noted."
-msgstr ""
+msgstr "这些设置对某些 UNIX(R) 操作很重要，因为它们提供了通常不会授予普通用户的功能。要理解这些设置，必须注意实际用户 ID 与有效用户 ID 之间的区别。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:949
+#, fuzzy
 msgid ""
 "The real user ID is the UID who owns or starts the process.  The effective "
 "UID is the user ID the process runs as.  As an example, man:passwd[1] runs "
@@ -2306,7 +2371,7 @@ msgid ""
 "to update the password database, the command runs as the effective ID of the "
 "`root` user.  This allows users to change their passwords without seeing a "
 "`Permission Denied` error."
-msgstr ""
+msgstr "实际用户 ID 是拥有或启动进程的用户的 UID。有效 UID 是进程运行时使用的用户 ID。例如，用户更改密码时，man:passwd[1] 以实际用户 ID 运行。但为了更新密码数据库，该命令以 `root` 用户的有效 ID 运行。这样，用户就可以更改密码，而不会遇到 `Permission Denied` 错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:951
@@ -2321,9 +2386,9 @@ msgstr "Setuid 权限可以透过在权限集前加上数字（4）来设定，�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:955
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod u+s suidexample.sh\n"
-msgstr ""
+msgstr "# chmod u+s suidexample.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:958
@@ -2338,14 +2403,15 @@ msgstr "Setuid 权限可以透过在权限集前加上数字（4）来设定，�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:962
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 4755 suidexample.sh\n"
-msgstr ""
+msgstr "# chmod 4755 suidexample.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:965
+#, fuzzy
 msgid "The permissions on `suidexample.sh` now look like the following:"
-msgstr ""
+msgstr "现在，`suidexample.sh` 的权限如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:969
@@ -2355,27 +2421,30 @@ msgstr "-rwsr-xr-x   1 trhodes  trhodes    63 Aug 29 06:36 suidexample.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:973
+#, fuzzy
 msgid ""
 "Note that a `s` is now part of the permission set designated for the file "
 "owner, replacing the executable bit.  This allows utilities which need "
 "elevated permissions, such as man:passwd[1]."
-msgstr ""
+msgstr "请注意，权限集中现在出现了 `s`，它位于文件所有者对应的位置，取代了可执行位。这使 man:passwd[1] 等需要提升权限的实用程序能够正常工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:978
+#, fuzzy
 msgid ""
 "The `nosuid` man:mount[8] option will cause such binaries to silently fail "
 "without alerting the user.  That option is not completely reliable as a "
 "`nosuid` wrapper may be able to circumvent it."
-msgstr ""
+msgstr "`nosuid` man:mount[8] 选项会导致此类二进制文件静默失败，而不会通知用户。该选项并非完全可靠，因为 `nosuid` 包装器可能能够绕过它。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:983
+#, fuzzy
 msgid ""
 "To view this in real time, open two terminals.  On one, type `passwd` as a "
 "normal user.  While it waits for a new password, check the process table and "
 "look at the user information for man:passwd[1]:"
-msgstr ""
+msgstr "要实时查看此过程，请打开两个终端。在一个终端中，以普通用户身份输入 `passwd`。在它等待输入新密码时，检查进程表，并查看 man:passwd[1] 的用户信息："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:985
@@ -2399,9 +2468,9 @@ msgstr "在终端 B 中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:997
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ps aux | grep passwd\n"
-msgstr ""
+msgstr "# ps aux | grep passwd\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1003
@@ -2415,10 +2484,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1006
+#, fuzzy
 msgid ""
 "Although man:passwd[1] is run as a normal user, it is using the effective "
 "UID of `root`."
-msgstr ""
+msgstr "虽然 man:passwd[1] 是以普通用户身份运行的，但它使用的是 `root` 的有效 UID。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1009
@@ -2435,34 +2505,37 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1011
+#, fuzzy
 msgid ""
 "To set the `setgid` permission on a file symbolically, add the `s` "
 "permission for the group with man:chmod[1]:"
-msgstr ""
+msgstr "要以符号方式为文件设置 `setgid` 权限，请使用 man:chmod[1] 为组添加 `s` 权限："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1015
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod g+s sgidexample.sh\n"
-msgstr ""
+msgstr "# chmod g+s sgidexample.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1018
+#, fuzzy
 msgid "Alternatively, provide man:chmod[1] with a leading two (2):"
-msgstr ""
+msgstr "也可以在 man:chmod[1] 的权限前加上数字二（2）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1022
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 2755 sgidexample.sh\n"
-msgstr ""
+msgstr "# chmod 2755 sgidexample.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1025
+#, fuzzy
 msgid ""
 "In the following listing, notice that the `s` is now in the field designated "
 "for the group permission settings:"
-msgstr ""
+msgstr "在下面的列表中，请注意 `s` 现在位于表示组权限设置的字段中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1029
@@ -2472,19 +2545,21 @@ msgstr "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1035
+#, fuzzy
 msgid ""
 "In these examples, even though the shell script in question is an executable "
 "file, it will not run with a different EUID or effective user ID.  This is "
 "because shell scripts may not access the man:setuid[2] system calls."
-msgstr ""
+msgstr "在这些示例中，尽管相关的 shell 脚本是可执行文件，但它不会以不同的 EUID（有效用户 ID）运行。这是因为 shell 脚本无法访问 man:setuid[2] 系统调用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1039
+#, fuzzy
 msgid ""
 "The `setuid` and `setgid` permission bits may lower system security, by "
 "allowing for elevated permissions.  The third special permission, the "
 "`sticky bit`, can strengthen the security of a system."
-msgstr ""
+msgstr "`setuid` 和 `setgid` 权限位允许提升权限，可能会降低系统安全性。第三种特殊权限 `sticky bit` 则可以增强系统安全性。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1043
@@ -2501,33 +2576,35 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1047
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod +t /tmp\n"
-msgstr ""
+msgstr "# chmod +t /tmp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1050
+#, fuzzy
 msgid "Alternatively, prefix the permission set with a one (1):"
-msgstr ""
+msgstr "也可以在权限前加上数字一（1）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1054
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 1777 /tmp\n"
-msgstr ""
+msgstr "# chmod 1777 /tmp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1057
+#, fuzzy
 msgid ""
 "The `sticky bit` permission will display as a `t` at the very end of the "
 "permission set:"
-msgstr ""
+msgstr "`sticky bit` 权限会显示为权限集末尾的 `t`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1061
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ls -al / | grep tmp\n"
-msgstr ""
+msgstr "# ls -al / | grep tmp\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1066
@@ -2558,6 +2635,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1083
+#, fuzzy
 msgid ""
 "A mount point is a directory where additional file systems can be grafted "
 "onto a parent file system (usually the root file system).  This is further "
@@ -2569,15 +2647,16 @@ msgid ""
 "automatically at boot time from the script man:rc[8] unless their entry "
 "includes `noauto`.  Details can be found in crossref:basics[disks-fstab, The "
 "fstab File]."
-msgstr ""
+msgstr "挂载点是一个目录，可以将其他文件系统挂接到父文件系统（通常是根文件系统）上。crossref:basics[disk-organization, Disk Organization] 中对此有进一步说明。常见的挂载点包括 `/usr/`、`/var/`、`/tmp/`、`/mnt/` 和 `/media/`。这些目录通常对应于 `/etc/fstab` 中的条目。该文件是一个包含各种文件系统和挂载点的表，由系统读取。除非条目中包含 `noauto`，否则 `/etc/fstab` 中的大多数文件系统会在启动时由脚本 man:rc[8] 自动挂载。详情请参阅 crossref:basics[disks-fstab, The fstab File]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1086
+#, fuzzy
 msgid ""
 "A complete description of the file system hierarchy is available in man:"
 "hier[7].  The following table provides a brief overview of the most common "
 "directories."
-msgstr ""
+msgstr "man:hier[7] 中提供了完整的文件系统层次结构说明。下表简要介绍了最常见的目录。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1090
@@ -2589,15 +2668,15 @@ msgstr "Home 目录"
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1092
 #: documentation/content/en/books/handbook/basics/_index.adoc:1697
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1093
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/`"
-msgstr ""
+msgstr "`/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1095
@@ -2608,261 +2687,261 @@ msgstr "目录 (目录必须存在)，用在那个挂接上的文件系统上。
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1096
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/bin/`"
-msgstr ""
+msgstr "`/bin/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1098
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "User utilities fundamental to both single-user and multi-user environments."
-msgstr ""
+msgstr "适用于单用户和多用户环境的基本用户工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1099
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/boot/`"
-msgstr ""
+msgstr "`/boot/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Programs and configuration files used during operating system bootstrap."
-msgstr ""
+msgstr "操作系统引导过程中使用的程序和配置文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/boot/defaults/`"
-msgstr ""
+msgstr "`/boot/defaults/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default boot configuration files. Refer to man:loader.conf[5] for details."
-msgstr ""
+msgstr "默认引导配置文件。详情请参阅 man:loader.conf[5]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/dev/`"
-msgstr ""
+msgstr "`/dev/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Device special files managed by man:devfs[5]"
-msgstr ""
+msgstr "由 man:devfs[5] 管理的设备特殊文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/etc/`"
-msgstr ""
+msgstr "`/etc/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System configuration files and scripts."
-msgstr ""
+msgstr "系统配置文件和脚本。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/etc/defaults/`"
-msgstr ""
+msgstr "`/etc/defaults/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default system configuration files. Refer to man:rc[8] for details."
-msgstr ""
+msgstr "默认系统配置文件。详情请参阅 man:rc[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/etc/periodic/`"
-msgstr ""
+msgstr "`/etc/periodic/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scripts that run daily, weekly, and monthly, via man:cron[8]. Refer to man:periodic[8] for details."
-msgstr ""
+msgstr "由 man:cron[8] 每天、每周和每月运行的脚本。详情请参阅 man:periodic[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/lib/`"
-msgstr ""
+msgstr "`/lib/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Critical system libraries needed for binaries in `/bin` and `/sbin`"
-msgstr ""
+msgstr "`/bin` 和 `/sbin` 中的二进制文件所需的关键系统库。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/libexec/`"
-msgstr ""
+msgstr "`/libexec/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Critical system files"
-msgstr ""
+msgstr "关键系统文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/media/`"
-msgstr ""
+msgstr "`/media/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contains subdirectories to be used as mount points for removable media such as CDs, USB drives, and floppy disks"
-msgstr ""
+msgstr "包含用于可移动介质（如 CD、USB 驱动器和软盘）挂载点的子目录。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/mnt/`"
-msgstr ""
+msgstr "`/mnt/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Empty directory commonly used by system administrators as a temporary mount point."
-msgstr ""
+msgstr "通常由系统管理员用作临时挂载点的空目录。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/net/`"
-msgstr ""
+msgstr "`/net/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automounted NFS shares; see man:auto_master[5]"
-msgstr ""
+msgstr "自动挂载的 NFS 共享；参见 man:auto_master[5]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/proc/`"
-msgstr ""
+msgstr "`/proc/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Process file system. Refer to man:procfs[5] for details."
-msgstr ""
+msgstr "进程文件系统。详情请参阅 man:procfs[5]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/rescue/`"
-msgstr ""
+msgstr "`/rescue/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Statically linked programs for emergency recovery as described in man:rescue[8]."
-msgstr ""
+msgstr "用于紧急恢复的静态链接程序，详见 man:rescue[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/root/`"
-msgstr ""
+msgstr "`/root/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Home directory for the `root` account."
-msgstr ""
+msgstr "`root` 帐户的主目录。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/sbin/`"
-msgstr ""
+msgstr "`/sbin/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System programs and administration utilities fundamental to both single-user and multi-user environments."
-msgstr ""
+msgstr "适用于单用户和多用户环境的基本系统程序和管理工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/tmp/`"
-msgstr ""
+msgstr "`/tmp/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Temporary files which are usually _not_ preserved across a system reboot. A memory-based file system is often mounted at `/tmp`. This can be automated using the tmpmfs-related variables of man:rc.conf[5] or with an entry in `/etc/fstab`; refer to man:mdmfs[8] for details."
-msgstr ""
+msgstr "通常在系统重启后__不__保留的临时文件。`/tmp` 通常挂载基于内存的文件系统。可以通过 man:rc.conf[5] 中与 tmpmfs 相关的变量，或在 `/etc/fstab` 中添加条目来实现自动挂载；详情请参阅 man:mdmfs[8]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/`"
-msgstr ""
+msgstr "`/usr/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The majority of user utilities and applications."
-msgstr ""
+msgstr "大多数用户工具和应用程序所在的位置。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/bin/`"
-msgstr ""
+msgstr "`/usr/bin/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common utilities, programming tools, and applications."
-msgstr ""
+msgstr "常用工具、编程工具和应用程序。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/include/`"
-msgstr ""
+msgstr "`/usr/include/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Standard C include files."
-msgstr ""
+msgstr "标准 C 头文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/lib/`"
-msgstr ""
+msgstr "`/usr/lib/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Archive libraries."
-msgstr ""
+msgstr "归档库。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/libdata/`"
-msgstr ""
+msgstr "`/usr/libdata/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1161
@@ -2873,33 +2952,33 @@ msgstr "各种资讯。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/libexec/`"
-msgstr ""
+msgstr "`/usr/libexec/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System daemons and system utilities executed by other programs."
-msgstr ""
+msgstr "由其他程序执行的系统守护进程和系统工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/local/`"
-msgstr ""
+msgstr "`/usr/local/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Local executables and libraries. Also used as the default destination for the FreeBSD ports framework. Within `/usr/local`, the general layout sketched out by man:hier[7] for `/usr` should be used. Exceptions are the man directory, which is directly under `/usr/local` rather than under `/usr/local/share`, and the ports documentation is in `share/doc/port`."
-msgstr ""
+msgstr "本地可执行文件和库，也是 FreeBSD ports 框架的默认安装目标。在 `/usr/local` 中，应采用 man:hier[7] 为 `/usr` 概述的一般布局。例外情况包括 man 目录，它直接位于 `/usr/local` 下，而不是 `/usr/local/share` 下；ports 文档则位于 `share/doc/port`。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/ports/`"
-msgstr ""
+msgstr "`/usr/ports/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1170
@@ -2910,75 +2989,75 @@ msgstr "FreeBSD 磁盘管理。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/sbin/`"
-msgstr ""
+msgstr "`/usr/sbin/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System daemons and system utilities executed by users."
-msgstr ""
+msgstr "供用户执行的系统守护进程和系统工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/share/`"
-msgstr ""
+msgstr "`/usr/share/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Architecture-independent files."
-msgstr ""
+msgstr "与体系结构无关的文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/usr/src/`"
-msgstr ""
+msgstr "`/usr/src/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BSD and/or local source files."
-msgstr ""
+msgstr "BSD 和／或本地源文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/var/`"
-msgstr ""
+msgstr "`/var/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Multi-purpose log, temporary, transient, and spool files."
-msgstr ""
+msgstr "用于多种用途的日志、临时、易失和队列文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/var/log/`"
-msgstr ""
+msgstr "`/var/log/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Miscellaneous system log files."
-msgstr ""
+msgstr "各种系统日志文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`/var/tmp/`"
-msgstr ""
+msgstr "`/var/tmp/`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Temporary files which are usually preserved across a system reboot."
-msgstr ""
+msgstr "通常在系统重启后仍会保留的临时文件。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:1191
@@ -3021,6 +3100,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1206
+#, fuzzy
 msgid ""
 "Files and directories are referenced by giving the file or directory name, "
 "followed by a forward slash, `/`, followed by any other directory names that "
@@ -3030,16 +3110,17 @@ msgid ""
 "which uses `\\` to separate file and directory names.  FreeBSD does not use "
 "drive letters, or other drive names in the path.  For example, one would not "
 "type `c:\\foo\\bar\\readme.txt` on FreeBSD."
-msgstr ""
+msgstr "引用文件和目录时，先给出文件或目录名称，再加上正斜杠 `/`，然后是所需的其他目录名称。例如，如果目录 `foo` 中包含目录 `bar`，而目录 `bar` 中包含文件 `readme.txt`，那么该文件的完整名称（或__路径__）就是 `foo/bar/readme.txt`。请注意，这与 Windows(R) 不同，Windows 使用 `\\` 分隔文件名和目录名。FreeBSD 的路径中不使用驱动器盘符或其他驱动器名称。例如，在 FreeBSD 上不会输入 `c:\\foo\\bar\\readme.txt`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File systems"
-msgstr ""
+msgstr "文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1216
+#, fuzzy
 msgid ""
 "Directories and files are stored in a file system.  Each file system "
 "contains exactly one directory at the very top level, called the _root "
@@ -3048,109 +3129,117 @@ msgid ""
 "Every other file system is _mounted_ under the root file system.  No matter "
 "how many disks are on the FreeBSD system, every directory appears to be part "
 "of the same disk."
-msgstr ""
+msgstr "目录和文件存储在文件系统中。每个文件系统的最顶层恰好有一个目录，称为该文件系统的__根目录__。此根目录可以包含其他目录。其中一个文件系统被指定为__根文件系统__，即 `/`。所有其他文件系统都挂载在根文件系统下。无论 FreeBSD 系统中有多少磁盘，每个目录看起来都属于同一块磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1219
+#, fuzzy
 msgid ""
 "Consider three file systems, called `A`, `B`, and `C`.  Each file system has "
 "one root directory, which contains two other directories, called `A1`, `A2` "
 "(and likewise `B1`, `B2` and `C1`, `C2`)."
-msgstr ""
+msgstr "假设有三个文件系统，分别称为 `A`、`B` 和 `C`。每个文件系统都有一个根目录，其中包含另外两个目录，分别称为 `A1`、`A2`（`B` 和 `C` 中的目录也分别称为 `B1`、`B2` 和 `C1`、`C2`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1223
+#, fuzzy
 msgid ""
 "Call `A` the root file system.  If man:ls[1] is used to view the contents of "
 "this directory, it will show two subdirectories, `A1` and `A2`.  The "
 "directory tree looks like this:"
-msgstr ""
+msgstr "将 `A` 设为根文件系统。使用 man:ls[1] 查看此目录的内容时，会显示两个子目录 `A1` 和 `A2`。目录树如下所示："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/basics/_index.adoc:1224
 #: documentation/content/en/books/handbook/basics/_index.adoc:1229
 #: documentation/content/en/books/handbook/basics/_index.adoc:1237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Directory tree with the root directory and two subdirectories"
-msgstr ""
+msgstr "包含根目录和两个子目录的目录树"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/basics/_index.adoc:1224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example-dir1.png"
-msgstr ""
+msgstr "example-dir1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1228
+#, fuzzy
 msgid ""
 "A file system must be mounted on to a directory in another file system.  "
 "When mounting file system `B` on to the directory `A1`, the root directory "
 "of `B` replaces `A1`, and the directories in `B` appear accordingly:"
-msgstr ""
+msgstr "文件系统必须挂载到另一个文件系统中的某个目录上。将文件系统 `B` 挂载到目录 `A1` 时，`B` 的根目录会取代 `A1`，而 `B` 中的目录会相应地显示出来："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/basics/_index.adoc:1229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example-dir2.png"
-msgstr ""
+msgstr "example-dir2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1234
+#, fuzzy
 msgid ""
 "Any files that are in the `B1` or `B2` directories can be reached with the "
 "path `/A1/B1` or `/A1/B2` as necessary.  Any files that were in `/A1` have "
 "been temporarily hidden.  They will reappear if `B` is _unmounted_ from `A`."
-msgstr ""
+msgstr "可以根据需要通过路径 `/A1/B1` 或 `/A1/B2` 访问目录 `B1` 或 `B2` 中的文件。原先位于 `/A1` 中的任何文件都会暂时隐藏。从 `A` 上卸载 `B` 后，这些文件会重新显示。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1236
+#, fuzzy
 msgid "If `B` had been mounted on `A2` then the diagram would look like this:"
-msgstr ""
+msgstr "如果将 `B` 挂载到 `A2` 上，示意图将如下所示："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/basics/_index.adoc:1237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example-dir3.png"
-msgstr ""
+msgstr "example-dir3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1240
+#, fuzzy
 msgid "and the paths would be `/A2/B1` and `/A2/B2` respectively."
-msgstr ""
+msgstr "相应的路径将是 `/A2/B1` 和 `/A2/B2`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1243
+#, fuzzy
 msgid ""
 "File systems can be mounted on top of one another.  Continuing the last "
 "example, the `C` file system could be mounted on top of the `B1` directory "
 "in the `B` file system, leading to this arrangement:"
-msgstr ""
+msgstr "文件系统可以彼此叠加挂载。继续前面的示例，可以将文件系统 `C` 挂载到文件系统 `B` 中的目录 `B1` 上，形成如下结构："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/basics/_index.adoc:1244
 #: documentation/content/en/books/handbook/basics/_index.adoc:1248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A complex directory tree. With different subdirectories hanging from root."
-msgstr ""
+msgstr "复杂的目录树，根目录下包含不同的子目录。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/basics/_index.adoc:1244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example-dir4.png"
-msgstr ""
+msgstr "example-dir4.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1247
+#, fuzzy
 msgid ""
 "Or `C` could be mounted directly on to the `A` file system, under the `A1` "
 "directory:"
-msgstr ""
+msgstr "也可以将 `C` 直接挂载到文件系统 `A` 的目录 `A1` 下："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/basics/_index.adoc:1248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example-dir5.png"
-msgstr ""
+msgstr "example-dir5.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1252
@@ -3244,6 +3333,7 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1267
+#, fuzzy
 msgid ""
 "FreeBSD features the man:growfs[8] command, which makes it possible to "
 "increase the size of file system on the fly, removing this limitation.  A "
@@ -3251,7 +3341,7 @@ msgid ""
 "it resides.  If there is space after the partition, the partition can be "
 "expanded with man:gpart[8].  If the partition is the last one on a virtual "
 "disk, and the disk is expanded, the partition can then be expanded."
-msgstr ""
+msgstr "FreeBSD 提供了 man:growfs[8] 命令，可以在运行时增大文件系统，从而消除这一限制。文件系统只能扩展到其所在分区的空闲空间中。如果分区后面还有空间，可以使用 man:gpart[8] 扩展分区。如果该分区是虚拟磁盘上的最后一个分区，且磁盘已扩容，则可以进一步扩展该分区。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1270
@@ -3262,6 +3352,7 @@ msgstr "磁盘组织"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1283
+#, fuzzy
 msgid ""
 "File systems are contained in _partitions_.  Disks are divided into "
 "partitions using one of several partitioning schemes; see crossref:"
@@ -3275,10 +3366,11 @@ msgid ""
 "known in FreeBSD as `slices`.  Slices may be used for different operating "
 "systems.  FreeBSD slices are subdivided into partitions using BSD labels "
 "(see man:bsdlabel[8])."
-msgstr ""
+msgstr "文件系统位于__分区__中。磁盘可使用多种分区方案之一划分为多个分区；参见 crossref:bsdinstall[bsdinstall-part-manual, Manual Partitioning]。较新的方案是 GPT；较旧的基于 BIOS 的计算机使用 MBR。GPT 支持将磁盘划分为具有指定大小、偏移量和类型的分区。它支持大量分区和分区类型，只要条件允许就建议使用。GPT 分区使用磁盘名称加后缀表示：第一个分区的后缀为 `p1`，第二个为 `p2`，依此类推。相比之下，MBR 仅支持少量分区。在 FreeBSD 中，MBR 分区称为 `slices`。切片可供不同操作系统使用。FreeBSD 切片会使用 BSD 标签进一步划分为分区（参见 man:bsdlabel[8]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1289
+#, fuzzy
 msgid ""
 "Slice numbers follow the device name, prefixed with an `s`, starting at 1.  "
 "So \"da0__s1__\" is the first slice on the first SCSI drive.  There can only "
@@ -3287,15 +3379,16 @@ msgid ""
 "starting at 5, so \"ada0__s5__\" is the first extended slice on the first "
 "SATA disk.  These devices are used by file systems that expect to occupy a "
 "slice."
-msgstr ""
+msgstr "切片编号跟在设备名称之后，以 `s` 为前缀，从 1 开始。因此，\"da0__s1__\" 是第一个 SCSI 驱动器上的第一个切片。磁盘上最多只能有四个物理切片，但物理切片内可以包含适当类型的逻辑切片。这些扩展切片的编号从 5 开始，因此 \"ada0__s5__\" 是第一个 SATA 磁盘上的第一个扩展切片。这些设备供预期占用一个切片的文件系统使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1291
+#, fuzzy
 msgid ""
 "Each GPT or BSD partition can contain only one file system, which means that "
 "file systems are often described by either their typical mount point in the "
 "file system hierarchy, or the name of the partition they are contained in."
-msgstr ""
+msgstr "每个 GPT 或 BSD 分区只能包含一个文件系统，因此，文件系统通常用其在文件系统层次结构中的典型挂载点，或其所在分区的名称来描述。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1296
@@ -3321,21 +3414,21 @@ msgstr "某些 partitions 的用途是确定的。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Partition"
-msgstr ""
+msgstr "分区"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Convention"
-msgstr ""
+msgstr "约定"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`a`"
-msgstr ""
+msgstr "`a`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1307
@@ -3346,74 +3439,78 @@ msgstr "在文件系统上修改挂接选项。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1308
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`b`"
-msgstr ""
+msgstr "`b`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1310
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Normally contains swap space."
-msgstr ""
+msgstr "通常包含交换空间。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`c`"
-msgstr ""
+msgstr "`c`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Normally the same size as the enclosing slice. This allows utilities that need to work on the entire slice, such as a bad block scanner, to work on the `c` partition. A file system would not normally be created on this partition."
-msgstr ""
+msgstr "通常与其所属切片的大小相同。这样，需要对整个切片进行操作的工具（例如坏块扫描程序）就可以在 `c` 分区上运行。通常不会在此分区上创建文件系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`d`"
-msgstr ""
+msgstr "`d`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1315
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Partition `d` used to have a special meaning associated with it, although that is now gone and `d` may work as any normal partition."
-msgstr ""
+msgstr "分区 `d` 过去有特殊含义，但现在已不再如此，`d` 可以像任何普通分区一样使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1320
+#, fuzzy
 msgid ""
 "Slices and \"dangerously dedicated\" physical drives contain BSD partitions, "
 "which are represented as letters from `a` to `h`.  This letter is appended "
 "to the device name, so \"da0__a__\" is the `a` partition on the first `da` "
 "drive, which is \"dangerously dedicated\".  \"ada1s3__e__\" is the fifth "
 "partition in the third slice of the second SATA disk drive."
-msgstr ""
+msgstr "切片和“危险专用”物理驱动器包含 BSD 分区，以 `a` 到 `h` 的字母表示。该字母附加在设备名称后，因此“da0__a__”是第一个 `da` 驱动器上的 `a` 分区，该驱动器采用“危险专用”模式。“ada1s3__e__”是第二个 SATA 磁盘驱动器的第三个切片中的第五个分区。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1325
+#, fuzzy
 msgid ""
 "Finally, each disk on the system is identified.  A disk name starts with a "
 "code that indicates the type of disk, and then a number, indicating which "
 "disk it is.  Unlike partitions and slices, disk numbering starts at 0.  "
 "Common codes are listed in crossref:basics[disks-naming,Disk Device Names]."
-msgstr ""
+msgstr "最后，系统中的每个磁盘都会被标识。磁盘名称以表示磁盘类型的代码开头，后接表示磁盘编号的数字。与分区和切片不同，磁盘编号从 0 开始。常见代码列于 crossref:basics[disks-naming,Disk Device Names]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1329
+#, fuzzy
 msgid ""
 "When referring to a partition in a slice, include the disk name, `s`, the "
 "slice number, and then the partition letter.  Examples are shown in crossref:"
 "basics[basics-disk-slice-part,\"Sample Disk, Slice, and Partition Names\"].  "
 "GPT partitions include the disk name, `p`, and then the partition number."
-msgstr ""
+msgstr "引用切片中的分区时，需要包含磁盘名称、`s`、切片编号以及分区字母。示例见 crossref:basics[basics-disk-slice-part,\"Sample Disk, Slice, and Partition Names\"]。GPT 分区则包含磁盘名称、`p` 以及分区编号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1331
+#, fuzzy
 msgid ""
 "crossref:basics[basics-concept-disk-model,Conceptual Model of a Disk] shows "
 "a conceptual model of a disk layout using MBR slices."
-msgstr ""
+msgstr "crossref:basics[basics-concept-disk-model,Conceptual Model of a Disk] 展示了使用 MBR 切片的磁盘布局概念模型。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1336
@@ -3442,9 +3539,9 @@ msgstr "磁盘设备名字"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Drive Type"
-msgstr ""
+msgstr "驱动器类型"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1344
@@ -3455,52 +3552,52 @@ msgstr "磁盘设备名字"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SATA and IDE hard drives"
-msgstr ""
+msgstr "SATA 和 IDE 硬盘"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ada`"
-msgstr ""
+msgstr "`ada`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SCSI hard drives and USB storage devices"
-msgstr ""
+msgstr "SCSI 硬盘和 USB 存储设备"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`da`"
-msgstr ""
+msgstr "`da`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "NVMe storage"
-msgstr ""
+msgstr "NVMe 存储设备"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`nvd` or `nda`"
-msgstr ""
+msgstr "`nvd` 或 `nda`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SATA and IDE CD-ROM drives"
-msgstr ""
+msgstr "SATA 和 IDE CD-ROM 驱动器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1356
 #: documentation/content/en/books/handbook/basics/_index.adoc:1359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`cd`"
-msgstr ""
+msgstr "`cd`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1357
@@ -3511,27 +3608,27 @@ msgstr "设备驱动。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Floppy drives"
-msgstr ""
+msgstr "软盘驱动器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1362
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`fd`"
-msgstr ""
+msgstr "`fd`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SCSI tape drives"
-msgstr ""
+msgstr "SCSI 磁带驱动器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`sa`"
-msgstr ""
+msgstr "`sa`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1366
@@ -3542,9 +3639,9 @@ msgstr "设备驱动。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1367
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Examples include `aacd` for Adaptec(R) AdvancedRAID, `mlxd` and `mlyd` for Mylex(R), `amrd` for AMI MegaRAID(R), `idad` for Compaq Smart RAID, `twed` for 3ware(R) RAID."
-msgstr ""
+msgstr "例如，Adaptec(R) AdvancedRAID 使用 `aacd`，Mylex(R) 使用 `mlxd` 和 `mlyd`，AMI MegaRAID(R) 使用 `amrd`，Compaq Smart RAID 使用 `idad`，3ware(R) RAID 使用 `twed`。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:1372
@@ -3554,39 +3651,39 @@ msgstr "示例磁盘、Slice 和分区名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1379
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Meaning"
-msgstr ""
+msgstr "含义"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ada0s1a`"
-msgstr ""
+msgstr "`ada0s1a`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The first partition (`a`) on the first slice (`s1`) on the first SATA disk (`ada0`)."
-msgstr ""
+msgstr "第一个 SATA 磁盘（`ada0`）的第一个切片（`s1`）上的第一个分区（`a`）。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`da1s2e`"
-msgstr ""
+msgstr "`da1s2e`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1384
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The fifth partition (`e`) on the second slice (`s2`) on the second SCSI disk (`da1`)."
-msgstr ""
+msgstr "第二个 SCSI 磁盘（`da1`）的第二个切片（`s2`）上的第五个分区（`e`）。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:1388
@@ -3596,6 +3693,7 @@ msgstr "磁盘的概念模型"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1395
+#, fuzzy
 msgid ""
 "This diagram shows FreeBSD's view of the first SATA disk attached to the "
 "system.  Assume that the disk is 250 GB in size, and contains an 80 GB slice "
@@ -3603,28 +3701,29 @@ msgid ""
 "Windows(R) NTFS file system, `C:`, and the second slice contains a FreeBSD "
 "installation.  This example FreeBSD installation has four data partitions "
 "and a swap partition."
-msgstr ""
+msgstr "此图展示了 FreeBSD 对连接到系统的第一个 SATA 磁盘的视图。假设该磁盘容量为 250 GB，包含一个 80 GB 的切片和一个 170 GB 的切片（MS-DOS(R) 分区）。第一个切片包含 Windows(R) NTFS 文件系统 `C:`，第二个切片包含 FreeBSD 安装。此 FreeBSD 安装示例有四个数据分区和一个交换分区。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1399
+#, fuzzy
 msgid ""
 "The four partitions each hold a file system.  Partition `a` is used for the "
 "root file system, `d` for `/var/`, `e` for `/tmp/`, and `f` for `/usr/`.  "
 "Partition letter `c` refers to the entire slice, and so is not used for "
 "ordinary partitions."
-msgstr ""
+msgstr "四个分区各自包含一个文件系统。分区 `a` 用于根文件系统，`d` 用于 `/var/`，`e` 用于 `/tmp/`，`f` 用于 `/usr/`。分区字母 `c` 表示整个切片，因此不会用于普通分区。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/basics/_index.adoc:1400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Layout of a shared drive between Windows and FreeBSD"
-msgstr ""
+msgstr "Windows 和 FreeBSD 共用驱动器的布局"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/basics/_index.adoc:1400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "disk-layout.png"
-msgstr ""
+msgstr "disk-layout.png"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:1404
@@ -3661,53 +3760,56 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1413
+#, fuzzy
 msgid ""
 "Another common reason to contain certain directory trees on other file "
 "systems is if they are to be housed on separate physical disks, or are "
 "separate virtual disks, such as Network File System mounts, described in "
 "crossref:network-servers[network-nfs,“Network File System (NFS)”], or CDROM "
 "drives."
-msgstr ""
+msgstr "将某些目录树放在其他文件系统中的另一个常见原因，是要将它们存放在独立的物理磁盘或独立的虚拟磁盘上，例如 crossref:network-servers[network-nfs,“Network File System (NFS)”] 中所述的网络文件系统挂载，或 CDROM 驱动器。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The fstab File"
-msgstr ""
+msgstr "fstab 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1419
+#, fuzzy
 msgid ""
 "During the boot process (crossref:boot[boot,The FreeBSD Booting Process]), "
 "file systems listed in `/etc/fstab` are automatically mounted except for the "
 "entries containing `noauto`.  This file contains entries in the following "
 "format:"
-msgstr ""
+msgstr "在引导过程中（crossref:boot[boot,The FreeBSD Booting Process]），`/etc/fstab` 中列出的文件系统会自动挂载，但包含 `noauto` 的条目除外。该文件中的条目采用以下格式："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "device       /mount-point fstype     options      dumpfreq     passno\n"
-msgstr ""
+msgstr "device       /mount-point fstype     options      dumpfreq     passno\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`device`"
-msgstr ""
+msgstr "`device`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1427
+#, fuzzy
 msgid ""
 "An existing device name as explained in crossref:basics[disks-naming,Disk "
 "Device Names]."
-msgstr ""
+msgstr "现有设备名称，详见 crossref:basics[disks-naming,Disk Device Names]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`mount-point`"
-msgstr ""
+msgstr "`mount-point`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1430
@@ -3716,53 +3818,57 @@ msgstr "目录 (目录必须存在)，用在那个挂接上的文件系统上。
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1431
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`fstype`"
-msgstr ""
+msgstr "`fstype`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1434
+#, fuzzy
 msgid ""
 "The file system type to pass to man:mount[8].  The default FreeBSD file "
 "system is `ufs`."
-msgstr ""
+msgstr "传递给 man:mount[8] 的文件系统类型。FreeBSD 的默认文件系统是 `ufs`。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`options`"
-msgstr ""
+msgstr "`options`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1439
+#, fuzzy
 msgid ""
 "Either `rw` for read-write file systems, or `ro` for read-only file systems, "
 "followed by any other options that may be needed.  A common option is "
 "`noauto` for file systems not normally mounted during the boot sequence.  "
 "Other options are listed in man:mount[8]."
-msgstr ""
+msgstr "对于可读写的文件系统，使用 `rw`；对于只读文件系统，使用 `ro`，之后可跟随其他所需选项。常见选项是 `noauto`，用于在引导过程中通常不挂载的文件系统。其他选项列于 man:mount[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`dumpfreq`"
-msgstr ""
+msgstr "`dumpfreq`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1443
+#, fuzzy
 msgid ""
 "Used by man:dump[8] to determine which file systems require dumping.  If the "
 "field is missing, a value of zero is assumed."
-msgstr ""
+msgstr "供 man:dump[8] 用来确定哪些文件系统需要转储。如果缺少此字段，则假定其值为零。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1444
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`passno`"
-msgstr ""
+msgstr "`passno`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1450
+#, fuzzy
 msgid ""
 "Determines the order in which UFS file systems should be checked by man:"
 "fsck[8] after a reboot.  File systems that should be skipped should have "
@@ -3771,47 +3877,51 @@ msgid ""
 "systems should be set to values greater than one.  If more than one file "
 "system has the same `passno`, man:fsck[8] will attempt to check file systems "
 "in parallel if possible."
-msgstr ""
+msgstr "确定重启后 man:fsck[8] 检查 UFS 文件系统的顺序。应跳过检查的文件系统，其 `passno` 应设为零。根文件系统需要最先检查，其 `passno` 应设为一。其他文件系统应设为大于一的值。如果多个文件系统的 `passno` 相同，man:fsck[8] 会在可能的情况下尝试并行检查这些文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1452
+#, fuzzy
 msgid ""
 "Refer to man:fstab[5] for more information on the format of `/etc/fstab` and "
 "its options."
-msgstr ""
+msgstr "有关 `/etc/fstab` 的格式及其选项的更多信息，请参阅 man:fstab[5]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using man:mount[8]"
-msgstr ""
+msgstr "使用 man:mount[8]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1458
+#, fuzzy
 msgid ""
 "File systems are mounted using man:mount[8].  The most basic syntax is as "
 "follows:"
-msgstr ""
+msgstr "使用 man:mount[8] 挂载文件系统。最基本的语法如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount device mountpoint\n"
-msgstr ""
+msgstr "# mount device mountpoint\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1468
+#, fuzzy
 msgid ""
 "A file system listed in `/etc/fstab` can also be mounted by providing just "
 "the mountpoint."
-msgstr ""
+msgstr "也可以只提供挂载点，以挂载 `/etc/fstab` 中列出的文件系统。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1471
+#, fuzzy
 msgid ""
 "This command provides many options which are described in man:mount[8].  The "
 "most commonly used options include:"
-msgstr ""
+msgstr "此命令提供许多选项，详见 man:mount[8]。最常用的选项包括："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:1472
@@ -3821,36 +3931,38 @@ msgstr "挂载选项"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1473
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-a`"
-msgstr ""
+msgstr "`-a`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1475
+#, fuzzy
 msgid ""
 "Mount all the file systems listed in `/etc/fstab`, except those marked as "
 "\"noauto\", excluded by the `-t` flag, or those that are already mounted."
-msgstr ""
+msgstr "挂载 `/etc/fstab` 中列出的所有文件系统，但标记为“noauto”的文件系统、被 `-t` 标志排除的文件系统以及已经挂载的文件系统除外。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1476
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-d`"
-msgstr ""
+msgstr "`-d`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1479
+#, fuzzy
 msgid ""
 "Do everything except for the actual mount system call.  This option is "
 "useful in conjunction with the `-v` flag to determine what man:mount[8] is "
 "actually trying to do."
-msgstr ""
+msgstr "执行除实际挂载系统调用之外的所有操作。此选项与 `-v` 标志结合使用时很有用，可以确定 man:mount[8] 实际尝试执行的操作。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-f`"
-msgstr ""
+msgstr "`-f`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1482
@@ -3864,33 +3976,35 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1483
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-r`"
-msgstr ""
+msgstr "`-r`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1486
+#, fuzzy
 msgid "Mount the file system read-only.  This is identical to using `-o ro`."
-msgstr ""
+msgstr "以只读方式挂载文件系统。这与使用 `-o ro` 相同。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "``-t _fstype_``"
-msgstr ""
+msgstr "``-t _fstype_``"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1490
+#, fuzzy
 msgid ""
 "Mount the specified file system type or mount only file systems of the given "
 "type, if `-a` is included.  \"ufs\" is the default file system type."
-msgstr ""
+msgstr "挂载指定类型的文件系统；如果同时指定 `-a`，则只挂载给定类型的文件系统。默认文件系统类型为“ufs”。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-u`"
-msgstr ""
+msgstr "`-u`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1493
@@ -3899,9 +4013,9 @@ msgstr "在文件系统上修改挂接选项。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1494
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-v`"
-msgstr ""
+msgstr "`-v`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1496
@@ -3910,9 +4024,9 @@ msgstr "输出详细信息。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/basics/_index.adoc:1497
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-w`"
-msgstr ""
+msgstr "`-w`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1499
@@ -3944,32 +4058,35 @@ msgstr "不允许文件系统上的二进制程序执行。这也是一个有用
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1507
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using man:umount[8]"
-msgstr ""
+msgstr "使用 man:umount[8]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1511
+#, fuzzy
 msgid ""
 "To unmount a file system use man:umount[8].  This command takes one "
 "parameter which can be a mountpoint, device name, `-a` or `-A`."
-msgstr ""
+msgstr "要卸载文件系统，请使用 man:umount[8]。此命令接受一个参数，可以是挂载点、设备名称、`-a` 或 `-A`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1514
+#, fuzzy
 msgid ""
 "All forms take `-f` to force unmounting, and `-v` for verbosity.  Be warned "
 "that `-f` is not generally a good idea as it might crash the computer or "
 "damage data on the file system."
-msgstr ""
+msgstr "所有形式都支持 `-f` 强制卸载，以及 `-v` 显示详细信息。请注意，通常不建议使用 `-f`，因为它可能导致计算机崩溃或损坏文件系统中的数据。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1517
+#, fuzzy
 msgid ""
 "To unmount all mounted file systems, or just the file system types listed "
 "after `-t`, use `-a` or `-A`.  Note that `-A` does not attempt to unmount "
 "the root file system."
-msgstr ""
+msgstr "要卸载所有已挂载的文件系统，或只卸载 `-t` 后列出的文件系统类型，请使用 `-a` 或 `-A`。请注意，`-A` 不会尝试卸载根文件系统。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:1519
@@ -3979,15 +4096,17 @@ msgstr "进程和守护进程"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1524
+#, fuzzy
 msgid ""
 "FreeBSD is a multi-tasking operating system.  Each program running at any "
 "one time is called a _process_.  Every running command starts at least one "
 "new process and there are a number of system processes that are run by "
 "FreeBSD."
-msgstr ""
+msgstr "FreeBSD 是一个多任务操作系统。任何时刻运行的每个程序都称为一个__进程__。每个正在运行的命令至少会启动一个新进程，FreeBSD 还会运行若干系统进程。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1530
+#, fuzzy
 msgid ""
 "Each process is uniquely identified by a number called a _process ID_ "
 "(PID).  Similar to files, each process has one owner and group, and the "
@@ -3997,7 +4116,7 @@ msgid ""
 "in the shell is a process which has the shell as its parent process.  The "
 "exception is a special process called man:init[8] which is always the first "
 "process to start at boot time and which always has a PID of `1`."
-msgstr ""
+msgstr "每个进程都有一个称为__进程 ID__（PID）的编号，用于唯一标识该进程。与文件类似，每个进程都有一个所有者和一个组，所有者和组权限用于确定进程可以打开哪些文件和设备。大多数进程还有一个启动它们的父进程。例如，shell 是一个进程，而在 shell 中启动的任何命令都是一个以该 shell 为父进程的进程。例外情况是一个名为 man:init[8] 的特殊进程，它始终是引导时启动的第一个进程，其 PID 始终为 `1`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1537
@@ -4020,6 +4139,7 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1543
+#, fuzzy
 msgid ""
 "There is a convention to name programs that normally run as daemons with a "
 "trailing \"d\".  For example, BIND is the Berkeley Internet Name Domain, but "
@@ -4027,7 +4147,7 @@ msgid ""
 "is `httpd` and the line printer spooling daemon is `lpd`.  This is only a "
 "naming convention.  For example, the main mail daemon for the Sendmail "
 "application is `sendmail`, and not `maild`."
-msgstr ""
+msgstr "通常作为守护进程运行的程序，其名称按惯例以“d”结尾。例如，BIND 是 Berkeley Internet Name Domain，但实际执行的程序名为 `named`。Apache Web 服务器程序名为 `httpd`，行式打印机假脱机守护进程名为 `lpd`。这只是一种命名惯例。例如，Sendmail 应用程序的主邮件守护进程名为 `sendmail`，而不是 `maild`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1544
@@ -4037,6 +4157,7 @@ msgstr "查看进程"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1549
+#, fuzzy
 msgid ""
 "To see the processes running on the system, use man:ps[1] or man:top[1].  To "
 "display a static list of the currently running processes, their PIDs, how "
@@ -4044,32 +4165,34 @@ msgid ""
 "ps[1].  To display all the running processes and update the display every "
 "few seconds in order to interactively see what the computer is doing, use "
 "man:top[1]."
-msgstr ""
+msgstr "要查看系统上正在运行的进程，请使用 man:ps[1] 或 man:top[1]。要显示当前正在运行的进程的静态列表、它们的 PID、内存用量以及启动它们时使用的命令，请使用 man:ps[1]。要显示所有正在运行的进程，并每隔几秒更新一次显示，以便交互式查看计算机正在执行的操作，请使用 man:top[1]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1552
+#, fuzzy
 msgid ""
 "By default, man:ps[1] only shows the commands that are running and owned by "
 "the user.  For example:"
-msgstr ""
+msgstr "默认情况下，man:ps[1] 只显示当前用户拥有的正在运行的命令。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ps\n"
-msgstr ""
+msgstr "% ps\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " PID TT  STAT    TIME COMMAND\n"
 "8203  0  Ss   0:00.59 /bin/csh\n"
 "8895  0  R+   0:00.00 ps\n"
-msgstr ""
+msgstr " PID TT  STAT    TIME COMMAND\n8203  0  Ss   0:00.59 /bin/csh\n8895  0  R+   0:00.00 ps\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1575
+#, fuzzy
 msgid ""
 "The output from man:ps[1] is organized into a number of columns.  The `PID` "
 "column displays the process ID.  PIDs are assigned starting at 1, go up to "
@@ -4080,10 +4203,11 @@ msgid ""
 "the elapsed time since the program was started, as most programs spend a lot "
 "of time waiting for things to happen before they need to spend time on the "
 "CPU.  Finally, `COMMAND` is the command that was used to start the program."
-msgstr ""
+msgstr "man:ps[1] 的输出按多个列组织。`PID` 列显示进程 ID。PID 从 1 开始分配，递增到 99999 后再从头循环。但如果某个 PID 已在使用中，就不会重新分配该 PID。`TT` 列显示程序运行所在的 tty，`STAT` 列显示程序的状态。`TIME` 列显示程序在 CPU 上运行的时间。它通常不是程序启动以来经过的时间，因为大多数程序会花很多时间等待事件发生，只有在需要时才占用 CPU。最后，`COMMAND` 列显示用于启动程序的命令。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1578
+#, fuzzy
 msgid ""
 "A number of different options are available to change the information that "
 "is displayed.  One of the most useful sets is `auxww`, where `a` displays "
@@ -4092,22 +4216,23 @@ msgid ""
 "about daemon processes, and `ww` causes man:ps[1] to display the full "
 "command line for each process, rather than truncating it once it gets too "
 "long to fit on the screen."
-msgstr ""
+msgstr "可以使用多种选项来更改显示的信息。最有用的选项组合之一是 `auxww`：`a` 显示所有用户的所有运行中进程的信息，`u` 显示进程所有者的用户名和内存用量，`x` 显示守护进程的信息，`ww` 则使 man:ps[1] 显示每个进程的完整命令行，而不是在命令行过长、无法完整显示在屏幕上时将其截断。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1580
+#, fuzzy
 msgid "The output from man:top[1] is similar:"
-msgstr ""
+msgstr "man:top[1] 的输出类似："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1584
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% top\n"
-msgstr ""
+msgstr "% top\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1596
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "last pid:  9609;  load averages:  0.56,  0.45,  0.36              up 0+00:20:03  10:21:46\n"
 "107 processes: 2 running, 104 sleeping, 1 zombie\n"
@@ -4115,11 +4240,11 @@ msgid ""
 "Mem: 541M Active, 450M Inact, 1333M Wired, 4064K Cache, 1498M Free\n"
 "ARC: 992M Total, 377M MFU, 589M MRU, 250K Anon, 5280K Header, 21M Other\n"
 "Swap: 2048M Total, 2048M Free\n"
-msgstr ""
+msgstr "last pid:  9609;  load averages:  0.56,  0.45,  0.36              up 0+00:20:03  10:21:46\n107 processes: 2 running, 104 sleeping, 1 zombie\nCPU:  6.2% user,  0.1% nice,  8.2% system,  0.4% interrupt, 85.1% idle\nMem: 541M Active, 450M Inact, 1333M Wired, 4064K Cache, 1498M Free\nARC: 992M Total, 377M MFU, 589M MRU, 250K Anon, 5280K Header, 21M Other\nSwap: 2048M Total, 2048M Free\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1609
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  PID USERNAME    THR PRI NICE   SIZE    RES STATE   C   TIME   WCPU COMMAND\n"
 "  557 root          1 -21  r31   136M 42296K select  0   2:20  9.96% Xorg\n"
@@ -4133,7 +4258,7 @@ msgid ""
 " 2623 root          1  30   10 12088K  1636K select  3   0:09  0.00% powerd\n"
 " 2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin\n"
 " 1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% kdeinit4\n"
-msgstr ""
+msgstr "  PID USERNAME    THR PRI NICE   SIZE    RES STATE   C   TIME   WCPU COMMAND\n  557 root          1 -21  r31   136M 42296K select  0   2:20  9.96% Xorg\n 8198 dru           2  52    0   449M 82736K select  3   0:08  5.96% kdeinit4\n 8311 dru          27  30    0  1150M   187M uwait   1   1:37  0.98% firefox\n  431 root          1  20    0 14268K  1728K select  0   0:06  0.98% moused\n 9551 dru           1  21    0 16600K  2660K CPU3    3   0:01  0.98% top\n 2357 dru           4  37    0   718M   141M select  0   0:21  0.00% kdeinit4\n 8705 dru           4  35    0   480M    98M select  2   0:20  0.00% kdeinit4\n 8076 dru           6  20    0   552M   113M uwait   0   0:12  0.00% soffice.bin\n 2623 root          1  30   10 12088K  1636K select  3   0:09  0.00% powerd\n 2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin\n 1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% kdeinit4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1615
@@ -4157,6 +4282,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1620
+#, fuzzy
 msgid ""
 "Below the header is a series of columns containing similar information to "
 "the output from man:ps[1], such as the PID, username, amount of CPU time, "
@@ -4165,14 +4291,15 @@ msgid ""
 "into two columns: one for total size and one for resident size.  Total size "
 "is how much memory the application has needed and the resident size is how "
 "much it is actually using now."
-msgstr ""
+msgstr "标题下方是一系列列，其内容与 man:ps[1] 的输出类似，例如 PID、用户名、CPU 时间以及启动进程的命令。默认情况下，man:top[1] 还会显示进程占用的内存空间，并分为两列：总大小和驻留大小。总大小表示应用程序需要的内存量，驻留大小则表示它当前实际使用的内存量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1623
+#, fuzzy
 msgid ""
 "man:top[1] automatically updates the display every two seconds.  A different "
 "interval can be specified with `-s`."
-msgstr ""
+msgstr "man:top[1] 每两秒自动更新一次显示。可以使用 `-s` 指定其他间隔。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1625
@@ -4182,6 +4309,7 @@ msgstr "关闭进程"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1631
+#, fuzzy
 msgid ""
 "One way to communicate with any running process or daemon is to send a "
 "_signal_ using man:kill[1].  There are a number of different signals; some "
@@ -4190,10 +4318,11 @@ msgid ""
 "sending a signal to someone else's process will result in a permission "
 "denied error.  The exception is the `root` user, who can send signals to "
 "anyone's processes."
-msgstr ""
+msgstr "与正在运行的进程或守护进程通信的一种方式是使用 man:kill[1] 发送__信号__。信号有多种，其中一些有特定含义，另一些则在应用程序文档中说明。用户只能向自己拥有的进程发送信号；若向他人的进程发送信号，将收到权限被拒绝的错误。例外是 `root` 用户，它可以向任何人的进程发送信号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1635
+#, fuzzy
 msgid ""
 "The operating system can also send a signal to a process.  If an application "
 "is badly written and tries to access memory that it is not supposed to, "
@@ -4201,7 +4330,7 @@ msgid ""
 "(`SIGSEGV`).  If an application has been written to use the man:alarm[3] "
 "system call to be alerted after a period of time has elapsed, it will be "
 "sent the \"Alarm\" signal (`SIGALRM`)."
-msgstr ""
+msgstr "操作系统也可以向进程发送信号。如果应用程序编写不当，试图访问不应访问的内存，FreeBSD 会向该进程发送“Segmentation Violation”（段错误）信号（`SIGSEGV`）。如果应用程序使用 man:alarm[3] 系统调用，以便在一段时间过去后收到通知，则会向它发送“Alarm”（定时器）信号（`SIGALRM`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1639
@@ -4221,6 +4350,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1642
+#, fuzzy
 msgid ""
 "`SIGKILL` cannot be ignored by a process.  Sending a `SIGKILL` to a process "
 "will usually stop that process there and then. footnote:[There are a few "
@@ -4229,15 +4359,16 @@ msgid ""
 "computer is unavailable, the process is said to be uninterruptible. "
 "Eventually the process will time out, typically after two minutes. As soon "
 "as this time out occurs the process will be killed.]."
-msgstr ""
+msgstr "进程无法忽略 `SIGKILL`。向进程发送 `SIGKILL` 通常会立即终止该进程。footnote:[有少数任务无法中断。例如，如果进程正尝试从网络上另一台计算机中的文件读取数据，而那台计算机不可用，则该进程被称为不可中断。最终进程会超时，通常在两分钟后发生。超时一旦发生，进程就会被终止。]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1645
+#, fuzzy
 msgid ""
 "Other commonly used signals are `SIGHUP`, `SIGUSR1`, and `SIGUSR2`.  Since "
 "these are general purpose signals, different applications will respond "
 "differently."
-msgstr ""
+msgstr "其他常用信号包括 `SIGHUP`、`SIGUSR1` 和 `SIGUSR2`。由于这些信号用途广泛，不同的应用程序会有不同的响应。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1650
@@ -4260,12 +4391,13 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1657
+#, fuzzy
 msgid ""
 "Killing a random process on the system is a bad idea.  In particular, man:"
 "init[8], PID 1, is special.  Running `/bin/kill -s KILL 1` is a quick, and "
 "unrecommended, way to shutdown the system.  _Always_ double check the "
 "arguments to man:kill[1] _before_ pressing kbd:[Return]."
-msgstr ""
+msgstr "随意终止系统中的进程并不是好主意。特别要注意，man:init[8]（PID 1）是特殊的。运行 `/bin/kill -s KILL 1` 是一种快速但不推荐的关闭系统方式。在按下 kbd:[Return] __之前__，务必仔细检查 man:kill[1] 的参数。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:1660
@@ -4275,6 +4407,7 @@ msgstr "Shell"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1667
+#, fuzzy
 msgid ""
 "A _shell_ provides a command line interface for interacting with the "
 "operating system.  A shell receives commands from the input channel and "
@@ -4284,30 +4417,33 @@ msgid ""
 "including an extended POSIX(R) shell (man:sh[1]) and the extended C shell "
 "(man:tcsh[1]).  Other shells are available from the FreeBSD Ports "
 "Collection, such as `zsh` and `bash`."
-msgstr ""
+msgstr "__Shell__ 为用户提供了与操作系统交互的命令行界面。Shell 从输入通道接收命令并执行。许多 shell 提供内置功能，帮助完成文件管理、文件通配、命令行编辑、命令宏和环境变量等日常任务。FreeBSD 附带了多种 shell，包括扩展的 POSIX(R) shell（man:sh[1]）和扩展的 C shell（man:tcsh[1]）。FreeBSD Ports Collection 中还提供其他 shell，例如 `zsh` 和 `bash`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1672
+#, fuzzy
 msgid ""
 "The shell that is used is really a matter of taste.  A C programmer might "
 "feel more comfortable with a C-like shell such as man:tcsh[1].  A Linux(R) "
 "user might prefer `bash`.  Each shell has unique properties that may or may "
 "not work with a user's preferred working environment, which is why there is "
 "a choice of which shell to use."
-msgstr ""
+msgstr "使用哪种 shell 主要取决于个人喜好。C 程序员可能会觉得类似 C 语言的 shell（如 man:tcsh[1]）更顺手。Linux(R) 用户可能更喜欢 `bash`。每种 shell 都有独特的特性，这些特性可能适合也可能不适合用户偏好的工作环境，因此用户可以自行选择使用哪种 shell。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1677
+#, fuzzy
 msgid ""
 "One common shell feature is filename completion.  After a user types the "
 "first few letters of a command or filename and presses kbd:[Tab], the shell "
 "completes the rest of the command or filename.  Consider two files called "
 "`foobar` and `football`.  To delete `foobar`, the user might type `rm foo` "
 "and press kbd:[Tab] to complete the filename."
-msgstr ""
+msgstr "文件名补全是 shell 的一项常见功能。用户输入命令或文件名的前几个字母并按下 kbd:[Tab] 后，shell 会补全命令或文件名的其余部分。假设有两个文件 `foobar` 和 `football`。要删除 `foobar`，用户可以输入 `rm foo`，然后按下 kbd:[Tab] 来补全文件名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1683
+#, fuzzy
 msgid ""
 "But the shell only shows `rm foo`.  It was unable to complete the filename "
 "because both `foobar` and `football` start with `foo`.  Some shells sound a "
@@ -4315,10 +4451,11 @@ msgid ""
 "then type more characters to identify the desired filename.  Typing a `t` "
 "and pressing kbd:[Tab] again is enough to let the shell determine which "
 "filename is desired and fill in the rest."
-msgstr ""
+msgstr "但 shell 只显示 `rm foo`。由于 `foobar` 和 `football` 都以 `foo` 开头，因此无法补全文件名。有些 shell 会发出蜂鸣声，或在匹配到多个名称时显示所有选项。此时用户必须输入更多字符，以确定所需的文件名。输入 `t` 后再次按下 kbd:[Tab]，shell 就能确定所需的文件名并补全其余部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1689
+#, fuzzy
 msgid ""
 "Another feature of the shell is the use of environment variables.  "
 "Environment variables are a variable/key pair stored in the shell's "
@@ -4327,7 +4464,7 @@ msgid ""
 "basics[shell-env-vars,Common Environment Variables] provides a list of "
 "common environment variables and their meanings.  Note that the names of "
 "environment variables are always in uppercase."
-msgstr ""
+msgstr "shell 的另一项功能是使用环境变量。环境变量是存储在 shell 环境中的变量/键值对。shell 启动的任何程序都可以读取此环境，因此其中包含许多程序配置。crossref:basics[shell-env-vars,Common Environment Variables] 列出了常见环境变量及其含义。请注意，环境变量的名称始终使用大写字母。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/basics/_index.adoc:1691
@@ -4337,179 +4474,183 @@ msgstr "常见环境变量"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1695
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Variable"
-msgstr ""
+msgstr "变量"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1698
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USER`"
-msgstr ""
+msgstr "`USER`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1700
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Current logged in user's name."
-msgstr ""
+msgstr "当前登录用户的名称。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1701
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PATH`"
-msgstr ""
+msgstr "`PATH`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1703
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Colon-separated list of directories to search for binaries."
-msgstr ""
+msgstr "以冒号分隔的目录列表，用于搜索可执行文件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1704
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`DISPLAY`"
-msgstr ""
+msgstr "`DISPLAY`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1706
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Network name of the Xorg display to connect to, if available."
-msgstr ""
+msgstr "要连接的 Xorg 显示器的网络名称（如果可用）。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1707
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`SHELL`"
-msgstr ""
+msgstr "`SHELL`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1709
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The current shell."
-msgstr ""
+msgstr "当前 shell。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1710
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`TERM`"
-msgstr ""
+msgstr "`TERM`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1712
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The name of the user's type of terminal. Used to determine the capabilities of the terminal."
-msgstr ""
+msgstr "用户所用终端的类型名称。用于确定终端的功能。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1713
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`TERMCAP`"
-msgstr ""
+msgstr "`TERMCAP`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1715
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Database entry of the terminal escape codes to perform various terminal functions."
-msgstr ""
+msgstr "终端转义码数据库条目，用于执行各种终端功能。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1716
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`OSTYPE`"
-msgstr ""
+msgstr "`OSTYPE`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1718
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Type of operating system."
-msgstr ""
+msgstr "操作系统类型。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1719
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`MACHTYPE`"
-msgstr ""
+msgstr "`MACHTYPE`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1721
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The system's CPU architecture."
-msgstr ""
+msgstr "系统的 CPU 架构。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1722
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`EDITOR`"
-msgstr ""
+msgstr "`EDITOR`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1724
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The user's preferred text editor."
-msgstr ""
+msgstr "用户首选的文本编辑器。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1725
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PAGER`"
-msgstr ""
+msgstr "`PAGER`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1727
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The user's preferred utility for viewing text one page at a time."
-msgstr ""
+msgstr "用户首选的逐页查看文本的工具。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1728
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`MANPATH`"
-msgstr ""
+msgstr "`MANPATH`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/basics/_index.adoc:1729
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Colon-separated list of directories to search for manual pages."
-msgstr ""
+msgstr "以冒号分隔的目录列表，用于搜索手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1735
+#, fuzzy
 msgid ""
 "How to set an environment variable differs between shells.  In man:tcsh[1] "
 "and man:csh[1], use `setenv` to set environment variables.  In man:sh[1] and "
 "`bash`, use `export` to set the current environment variables.  This example "
 "sets the default `EDITOR` to `/usr/local/bin/emacs` for the man:tcsh[1] "
 "shell:"
-msgstr ""
+msgstr "不同 shell 设置环境变量的方式不同。在 man:tcsh[1] 和 man:csh[1] 中，使用 `setenv` 设置环境变量。在 man:sh[1] 和 `bash` 中，使用 `export` 设置当前环境变量。以下示例为 man:tcsh[1] shell 将默认的 `EDITOR` 设置为 `/usr/local/bin/emacs`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1739
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% setenv EDITOR /usr/local/bin/emacs\n"
-msgstr ""
+msgstr "% setenv EDITOR /usr/local/bin/emacs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1742
+#, fuzzy
 msgid "The equivalent command for `bash` would be:"
-msgstr ""
+msgstr "`bash` 中的等效命令如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1746
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% export EDITOR=\"/usr/local/bin/emacs\"\n"
-msgstr ""
+msgstr "% export EDITOR=\"/usr/local/bin/emacs\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1750
+#, fuzzy
 msgid ""
 "To expand an environment variable in order to see its current setting, type "
 "a `$` character in front of its name on the command line.  For example, "
 "`echo $TERM` displays the current `$TERM` setting."
-msgstr ""
+msgstr "要展开环境变量并查看其当前设置，请在命令行中的变量名称前输入 `$` 字符。例如，`echo $TERM` 会显示当前的 `$TERM` 设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1755
+#, fuzzy
 msgid ""
 "Shells treat special characters, known as meta-characters, as special "
 "representations of data.  The most common meta-character is `\\*`, which "
@@ -4517,16 +4658,17 @@ msgid ""
 "used to perform filename globbing.  For example, `echo *` is equivalent to "
 "`ls` because the shell takes all the files that match `*` and `echo` lists "
 "them on the command line."
-msgstr ""
+msgstr "Shell 会将称为元字符的特殊字符视为数据的特殊表示。最常见的元字符是 `\\*`，它表示文件名中的任意数量字符。元字符可用于文件名通配。例如，`echo *` 等效于 `ls`，因为 shell 会将所有匹配 `*` 的文件传给 `echo`，由它在命令行中列出这些文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1758
+#, fuzzy
 msgid ""
 "To prevent the shell from interpreting a special character, escape it from "
 "the shell by starting it with a backslash (`\\`).  For example, `echo $TERM` "
 "prints the terminal setting whereas `echo \\$TERM` literally prints the "
 "string `$TERM`."
-msgstr ""
+msgstr "要阻止 shell 解释特殊字符，请在其前面加上反斜杠（`\\`）对其进行转义。例如，`echo $TERM` 会打印终端设置，而 `echo \\$TERM` 会原样打印字符串 `$TERM`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1760
@@ -4536,53 +4678,58 @@ msgstr "切换 Shell"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1765
+#, fuzzy
 msgid ""
 "The easiest way to permanently change the default shell is to use `chsh`.  "
 "Running this command will open the editor that is configured in the `EDITOR` "
 "environment variable, which by default is set to man:vi[1].  Change the "
 "`Shell:` line to the full path of the new shell."
-msgstr ""
+msgstr "永久更改默认 shell 最简单的方法是使用 `chsh`。运行此命令会打开由 `EDITOR` 环境变量指定的编辑器，该变量默认设置为 man:vi[1]。将 `Shell:` 行更改为新 shell 的完整路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1768
+#, fuzzy
 msgid ""
 "Alternately, use `chsh -s` which will set the specified shell without "
 "opening an editor.  For example, to change the shell to `bash`:"
-msgstr ""
+msgstr "也可以使用 `chsh -s` 设置指定的 shell，而不打开编辑器。例如，要将 shell 更改为 `bash`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% chsh -s /usr/local/bin/bash\n"
-msgstr ""
+msgstr "% chsh -s /usr/local/bin/bash\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1776
+#, fuzzy
 msgid ""
 "Enter the password at the prompt and press kbd:[Return] to change the "
 "shell.  Log off and log in again to start using the new shell."
-msgstr ""
+msgstr "在提示时输入密码，然后按 kbd:[Return] 更改 shell。注销后重新登录即可开始使用新的 shell。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1782
+#, fuzzy
 msgid ""
 "The new shell _must_ be present in `/etc/shells`.  If the shell was "
 "installed from the FreeBSD Ports Collection as described in crossref:"
 "ports[ports,Installing Applications: Packages and Ports], it should be "
 "automatically added to this file.  If it is missing, add it using this "
 "command, replacing the path with the path of the shell:"
-msgstr ""
+msgstr "新 shell __必须__存在于 `/etc/shells` 中。如果 shell 是按照 crossref:ports[ports,Installing Applications: Packages and Ports] 中的说明从 FreeBSD Ports Collection 安装的，它应该会自动添加到此文件中。如果缺少该条目，请使用以下命令添加，并将路径替换为 shell 的路径："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# echo /usr/local/bin/bash >> /etc/shells\n"
-msgstr ""
+msgstr "# echo /usr/local/bin/bash >> /etc/shells\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1789
+#, fuzzy
 msgid "Then, rerun man:chsh[1]."
-msgstr ""
+msgstr "然后重新运行 man:chsh[1]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1791
@@ -4592,58 +4739,63 @@ msgstr "高级 Shell 使用技巧"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1795
+#, fuzzy
 msgid ""
 "The UNIX(R) shell is not just a command interpreter, it acts as a powerful "
 "tool which allows users to execute commands, redirect their output, redirect "
 "their input and chain commands together to improve the final command "
 "output.  When this functionality is mixed with built in commands, the user "
 "is provided with an environment that can maximize efficiency."
-msgstr ""
+msgstr "UNIX(R) shell 不只是命令解释器，它还是一种强大的工具，允许用户执行命令、重定向命令的输出和输入，以及将命令串联起来以改进最终输出。结合内置命令使用这些功能，可以为用户提供一个能够最大限度提高效率的环境。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1798
+#, fuzzy
 msgid ""
 "Shell redirection is the action of sending the output or the input of a "
 "command into another command or into a file.  To capture the output of the "
 "man:ls[1] command, for example, into a file, redirect the output:"
-msgstr ""
+msgstr "Shell 重定向是将命令的输入或输出发送到另一个命令或文件的操作。例如，要将 man:ls[1] 命令的输出保存到文件中，可以重定向其输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1802
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ls > directory_listing.txt\n"
-msgstr ""
+msgstr "% ls > directory_listing.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1807
+#, fuzzy
 msgid ""
 "The directory contents will now be listed in `directory_listing.txt`.  Some "
 "commands can be used to read input, such as man:sort[1].  To sort this "
 "listing, redirect the input:"
-msgstr ""
+msgstr "现在，目录内容会列在 `directory_listing.txt` 中。有些命令可以读取输入，例如 man:sort[1]。要对该列表排序，请重定向输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1811
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sort < directory_listing.txt\n"
-msgstr ""
+msgstr "% sort < directory_listing.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1815
+#, fuzzy
 msgid ""
 "The input will be sorted and placed on the screen.  To redirect that input "
 "into another file, one could redirect the output of man:sort[1] by mixing "
 "the direction:"
-msgstr ""
+msgstr "输入会被排序并显示在屏幕上。要将该输入重定向到另一个文件，可以同时重定向 man:sort[1] 的输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1819
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sort < directory_listing.txt > sorted.txt\n"
-msgstr ""
+msgstr "% sort < directory_listing.txt > sorted.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1827
+#, fuzzy
 msgid ""
 "In all of the previous examples, the commands are performing redirection "
 "using file descriptors.  Every UNIX(R) system has file descriptors, which "
@@ -4653,7 +4805,7 @@ msgid ""
 "a printer.  And error would be anything that is used for diagnostic or error "
 "messages.  All three are considered I/O based file descriptors and sometimes "
 "considered streams."
-msgstr ""
+msgstr "在前面的所有示例中，命令都通过文件描述符执行重定向。每个 UNIX(R) 系统都有文件描述符，包括标准输入（stdin）、标准输出（stdout）和标准错误（stderr）。每种文件描述符都有其用途：输入可以来自键盘或鼠标等输入设备；输出可以显示在屏幕上，也可以打印在纸上；错误则用于诊断或错误消息。这三者都属于基于 I/O 的文件描述符，有时也称为数据流。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1830
@@ -4672,26 +4824,28 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1833
+#, fuzzy
 msgid ""
 "The UNIX(R) pipe operator, \"|\" allows the output of one command to be "
 "directly passed or directed to another program.  Basically, a pipe allows "
 "the standard output of a command to be passed as standard input to another "
 "command, for example:"
-msgstr ""
+msgstr "UNIX(R) 管道运算符“|”允许将一个命令的输出直接传递或导向另一个程序。简单来说，管道允许将一个命令的标准输出作为另一个命令的标准输入，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cat directory_listing.txt | sort | less\n"
-msgstr ""
+msgstr "% cat directory_listing.txt | sort | less\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1841
+#, fuzzy
 msgid ""
 "In that example, the contents of `directory_listing.txt` will be sorted and "
 "the output passed to man:less[1].  This allows the user to scroll through "
 "the output at their own pace and prevent it from scrolling off the screen."
-msgstr ""
+msgstr "在此示例中，`directory_listing.txt` 的内容会经过排序，然后将输出传递给 man:less[1]。这样用户就可以按自己的节奏滚动查看输出，避免内容滚动出屏幕。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:1843
@@ -4713,6 +4867,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1854
+#, fuzzy
 msgid ""
 "A simple editor to learn is man:ee[1], which stands for easy editor.  To "
 "start this editor, type `ee _filename_` where _filename_ is the name of the "
@@ -4722,10 +4877,11 @@ msgid ""
 "leave man:ee[1], press kbd:[Esc], then choose the \"leave editor\" option "
 "from the main menu.  The editor will prompt to save any changes if the file "
 "has been modified."
-msgstr ""
+msgstr "适合入门学习的简单编辑器是 man:ee[1]，它是 easy editor（简易编辑器）的缩写。要启动此编辑器，请输入 `ee _filename_`，其中 __filename__ 是要编辑的文件名。进入编辑器后，屏幕顶部会列出用于操作编辑器功能的所有命令。插入符号（`^`）表示 kbd:[Ctrl]，因此 `^e` 等同于 kbd:[Ctrl+e]。要退出 man:ee[1]，请按 kbd:[Esc]，然后从主菜单中选择“leave editor”（退出编辑器）。如果文件已修改，编辑器会提示保存更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1859
+#, fuzzy
 msgid ""
 "FreeBSD also comes with more powerful text editors, such as man:vi[1], as "
 "part of the base system.  Other editors, like package:editors/emacs[] and "
@@ -4733,16 +4889,17 @@ msgid ""
 "editors offer more functionality at the expense of being more complicated to "
 "learn.  Learning a more powerful editor such as vim or Emacs can save more "
 "time in the long run."
-msgstr ""
+msgstr "FreeBSD 的基本系统还附带了功能更强大的文本编辑器，例如 man:vi[1]。其他编辑器，如 package:editors/emacs[] 和 package:editors/vim[]，则属于 FreeBSD Ports Collection。这些编辑器功能更多，但学习起来也更复杂。从长远来看，学习使用 vim 或 Emacs 这样的强大编辑器可以节省更多时间。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1863
+#, fuzzy
 msgid ""
 "Many applications which modify files or require typed input will "
 "automatically open a text editor.  To change the default editor, set the "
 "`EDITOR` environment variable as described in crossref:basics[shells, "
 "Shells]."
-msgstr ""
+msgstr "许多会修改文件或需要输入文本的应用程序都会自动打开文本编辑器。要更改默认编辑器，请按照 crossref:basics[shells, Shells] 中的说明设置 `EDITOR` 环境变量。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/basics/_index.adoc:1865
@@ -4805,22 +4962,23 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1886
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man command\n"
-msgstr ""
+msgstr "% man command\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1890
+#, fuzzy
 msgid ""
 "where _command_ is the name of the command to learn about.  For example, to "
 "learn more about man:ls[1], type:"
-msgstr ""
+msgstr "其中 _command_ 是要了解的命令名称。例如，要进一步了解 man:ls[1]，请输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1894
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man ls\n"
-msgstr ""
+msgstr "% man ls\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1898
@@ -4880,47 +5038,51 @@ msgstr "系统内核接口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1912
+#, fuzzy
 msgid ""
 "In some cases, the same topic may appear in more than one section of the "
 "online manual.  For example, there is a `chmod` user command and a `chmod()` "
 "system call.  To tell man:man[1] which section to display, specify the "
 "section number:"
-msgstr ""
+msgstr "在某些情况下，同一主题可能会出现在联机手册的多个章节中。例如，有一个名为 `chmod` 的用户命令，也有一个 `chmod()` 系统调用。要指定 man:man[1] 应显示的章节，请提供章节编号："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1916
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man 1 chmod\n"
-msgstr ""
+msgstr "% man 1 chmod\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1920
+#, fuzzy
 msgid ""
 "This will display the manual page for the user command man:chmod[1].  "
 "References to a particular section of the online manual are traditionally "
 "placed in parenthesis in written documentation, so man:chmod[1] refers to "
 "the user command and man:chmod[2] refers to the system call."
-msgstr ""
+msgstr "这会显示用户命令 man:chmod[1] 的手册页。在书面文档中，通常用括号标注联机手册的特定章节，因此 man:chmod[1] 指用户命令，而 man:chmod[2] 指系统调用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1922
+#, fuzzy
 msgid ""
 "If the name of the manual page is unknown, use `man -k` to search for "
 "keywords in the manual page descriptions:"
-msgstr ""
+msgstr "如果不知道手册页名称，可以使用 `man -k` 按关键词搜索手册页说明："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1926
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% man -k mail\n"
-msgstr ""
+msgstr "% man -k mail\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1930
+#, fuzzy
 msgid ""
 "This command displays a list of commands that have the keyword \"mail\" in "
 "their descriptions.  This is equivalent to using man:apropos[1]."
-msgstr ""
+msgstr "此命令会显示说明中包含关键词“mail”的命令列表。这等效于使用 man:apropos[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1932
@@ -4932,11 +5094,11 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1937
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd /usr/sbin\n"
 "% man -f * | more\n"
-msgstr ""
+msgstr "% cd /usr/sbin\n% man -f * | more\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1940
@@ -4945,11 +5107,11 @@ msgstr "或"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1945
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd /usr/sbin\n"
 "% whatis * |more\n"
-msgstr ""
+msgstr "% cd /usr/sbin\n% whatis * |more\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/basics/_index.adoc:1948
@@ -4959,30 +5121,33 @@ msgstr "GNU Info 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1953
+#, fuzzy
 msgid ""
 "FreeBSD includes several applications and utilities produced by the Free "
 "Software Foundation (FSF).  In addition to manual pages, these programs may "
 "include hypertext documents called `info` files.  These can be viewed using "
 "man:info[1] or, if package:editors/emacs[] is installed, the info mode of "
 "emacs."
-msgstr ""
+msgstr "FreeBSD 包含自由软件基金会（FSF）开发的多个应用程序和实用程序。除了手册页外，这些程序还可能包含称为 `info` 文件的超文本文档。可以使用 man:info[1] 查看这些文档；如果已安装 package:editors/emacs[]，也可以使用 emacs 的 info 模式查看。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1955
+#, fuzzy
 msgid "To use man:info[1], type:"
-msgstr ""
+msgstr "要使用 man:info[1]，请输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/basics/_index.adoc:1959
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% info\n"
-msgstr ""
+msgstr "% info\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/basics/_index.adoc:1962
+#, fuzzy
 msgid ""
 "For a brief introduction, type `h`.  For a quick command reference, type `?`."
-msgstr ""
+msgstr "要查看简要介绍，请输入 `h`。要快速查阅命令，请输入 `?`。"
 
 #~ msgid ""
 #~ "Optionally removes the user's home directory, if it is owned by the user."

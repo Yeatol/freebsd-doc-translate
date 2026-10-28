@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Security instructions when making a FreeBSD Port"
-msgstr ""
+msgstr "制作 FreeBSD Port 时的安全说明"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 12. Security"
-msgstr ""
+msgstr "第 12 章：安全"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:14
@@ -38,22 +38,24 @@ msgstr "安全性"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why Security is So Important"
-msgstr ""
+msgstr "安全为何如此重要"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:57
+#, fuzzy
 msgid ""
 "Bugs are occasionally introduced to the software.  Arguably, the most "
 "dangerous of them are those opening security vulnerabilities.  From the "
 "technical viewpoint, such vulnerabilities are to be closed by exterminating "
 "the bugs that caused them.  However, the policies for handling mere bugs and "
 "security vulnerabilities are very different."
-msgstr ""
+msgstr "软件中偶尔会引入错误。可以说，其中最危险的是会造成安全漏洞的错误。从技术角度来看，修复这些漏洞就要消除导致漏洞的错误。然而，处理一般错误与安全漏洞的策略大不相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:63
+#, fuzzy
 msgid ""
 "A typical small bug affects only those users who have enabled some "
 "combination of options triggering the bug.  The developer will eventually "
@@ -64,10 +66,11 @@ msgid ""
 "of possible accidents, besides software bugs, are likely to lead to data "
 "loss, and so they make backups of important data; in addition, a critical "
 "bug will be discovered really soon."
-msgstr ""
+msgstr "典型的小错误只会影响启用了某些选项组合、从而触发该错误的用户。开发者最终会发布补丁，随后推出修复该错误的新版本，但大多数用户不会费心立即升级，因为这个错误从未给他们带来困扰。可能导致数据丢失的严重错误则是更严峻的问题。尽管如此，谨慎的用户知道，除了软件错误之外，还有许多可能导致数据丢失的意外，因此会备份重要数据；此外，严重错误通常很快就会被发现。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:71
+#, fuzzy
 msgid ""
 "A security vulnerability is all different.  First, it may remain unnoticed "
 "for years because often it does not cause software malfunction.  Second, a "
@@ -79,16 +82,17 @@ msgid ""
 "enough: notify the audience of it in the most clear and comprehensive "
 "manner, which will allow them to evaluate the danger and take appropriate "
 "action."
-msgstr ""
+msgstr "安全漏洞则完全不同。首先，它可能多年不被察觉，因为它往往不会导致软件故障。其次，恶意方可以利用漏洞，未经授权访问易受攻击的系统、销毁或篡改敏感数据；最糟糕的是，用户甚至不会察觉所受的损害。第三，暴露易受攻击的系统往往会帮助攻击者入侵其他原本无法攻破的系统。因此，仅仅关闭漏洞还不够：还要以最清晰、全面的方式通知相关用户，使他们能够评估风险并采取适当行动。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fixing Security Vulnerabilities"
-msgstr ""
+msgstr "修复安全漏洞"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:81
+#, fuzzy
 msgid ""
 "While on the subject of ports and packages, a security vulnerability may "
 "initially appear in the original distribution or in the port files.  In the "
@@ -100,17 +104,19 @@ msgid ""
 "as soon as possible.  In either case, follow crossref:port-upgrading[port-"
 "upgrading,the standard procedure for submitting changes] unless having "
 "rights to commit it directly to the ports tree."
-msgstr ""
+msgstr "谈到 Port 和软件包时，安全漏洞最初可能出现在上游发行版或 Port 文件中。前一种情况下，原始软件的开发者很可能会立即发布补丁或新版本。请及时根据作者提供的修复更新 Port。如果由于某种原因延迟修复，请 crossref:porting-dads[dads-noinstall,将 Port 标记为 `FORBIDDEN`]，或为 Port 添加补丁文件。如果是易受攻击的 Port，请尽快修复。无论哪种情况，除非有权直接提交到 Ports 树，否则都应遵循 crossref:port-upgrading[port-upgrading,提交更改的标准流程]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:86
+#, fuzzy
 msgid ""
 "Being a ports committer is not enough to commit to an arbitrary port.  "
 "Remember that ports usually have maintainers, who must be respected."
-msgstr ""
+msgstr "成为 Ports 提交者，并不意味着就可以提交任意 Port。请记住，Port 通常都有维护者，必须尊重他们。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:94
+#, fuzzy
 msgid ""
 "Please make sure that the port's revision is bumped as soon as the "
 "vulnerability has been closed.  That is how the users who upgrade installed "
@@ -122,22 +128,23 @@ msgid ""
 "updating the port to the latest software version and thus already touched "
 "`DISTVERSION`.  Please refer to the crossref:makefiles[makefile-naming-"
 "revepoch,corresponding section] for more information."
-msgstr ""
+msgstr "请确保在漏洞关闭后立即提升 Port 的修订版本。这样，定期升级已安装软件包的用户就会知道需要运行更新。此外，新的软件包将被构建并分发到 FTP 和 WWW 镜像站点，替换存在漏洞的软件包。除非修复漏洞时 `DISTVERSION` 已更改，否则请提升 `PORTREVISION`。也就是说，如果为 Port 添加补丁文件，就提升 `PORTREVISION`；但如果将 Port 更新到最新软件版本，并因此已经更改了 `DISTVERSION`，则不要提升它。更多信息请参阅 crossref:makefiles[makefile-naming-revepoch,对应章节]。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Keeping the Community Informed"
-msgstr ""
+msgstr "让社区及时了解情况"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The VuXML Database"
-msgstr ""
+msgstr "VuXML 数据库"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:107
+#, fuzzy
 msgid ""
 "A very important and urgent step to take as early as possible after a "
 "security vulnerability is discovered is to notify the community of port "
@@ -148,10 +155,11 @@ msgid ""
 "lot of users tend to upgrade installed packages only occasionally.  They "
 "will know from the notification that they _must_ update the package without "
 "delay as soon as a corrected version is available."
-msgstr ""
+msgstr "发现安全漏洞后，应尽早采取一项极其重要且紧急的措施：通知 Port 用户社区相关风险。此类通知有两个目的。首先，如果风险确实严重，明智的做法是立即采取临时措施。例如，停止受影响的网络服务，甚至完全卸载该 Port，直到漏洞关闭。其次，许多用户只是偶尔升级已安装的软件包。通知会让他们知道，一旦有修复后的版本可用，就__必须__立即更新软件包。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:110
+#, fuzzy
 msgid ""
 "Given the huge number of ports in the tree, a security advisory cannot be "
 "issued on each incident without creating a flood and losing the attention of "
@@ -159,10 +167,11 @@ msgid ""
 "vulnerabilities found in ports are recorded in https://vuxml.freebsd.org/"
 "[the FreeBSD VuXML database], which both Ports Security Team members and "
 "Security Team members also monitor for issues requiring their intervention."
-msgstr ""
+msgstr "Ports 树中的 Port 数量庞大，如果每起事件都发布安全公告，就会造成信息泛滥，并使用户在真正严重的问题出现时不再关注。因此，Port 中发现的安全漏洞会记录在 link:https://vuxml.freebsd.org/[FreeBSD VuXML 数据库]中。Ports 安全团队成员和安全团队成员也会监视该数据库，以查找需要他们介入的问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:115
+#, fuzzy
 msgid ""
 "Committers can update the VuXML database themselves, assisting the Security "
 "Team and delivering crucial information to the community more quickly.  Port "
@@ -174,10 +183,11 @@ msgid ""
 "link:https://www.freebsd.org/administration.html#t-secteam[FreeBSD Security "
 "Team] as described on the link:https://www.freebsd.org/security/"
 "#reporting[FreeBSD Security Information] page."
-msgstr ""
+msgstr "提交者可以自行更新 VuXML 数据库，协助安全团队更快地向社区提供关键信息。Port 维护者可以为存在漏洞的 Port 创建 VuXML 条目，并提交问题报告，请求更新 security/vuxml。非提交者，或发现了特别严重漏洞的人，应立即联系 link:https://www.freebsd.org/administration.html#t-ports-secteam[FreeBSD Ports 安全团队]。如有需要，也请按照 link:https://www.freebsd.org/security/#reporting[FreeBSD 安全信息]页面中的说明联系 link:https://www.freebsd.org/administration.html#t-secteam[FreeBSD 安全团队]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:121
+#, fuzzy
 msgid ""
 "The VuXML database is an XML document.  Its source file [.filename]#vuln."
 "xml# is kept right inside the port package:security/vuxml[].  Therefore the "
@@ -186,16 +196,17 @@ msgid ""
 "entry for it to that file.  Until familiar with VuXML, the best thing to do "
 "is to find an existing entry fitting the case at hand, then copy it and use "
 "it as a template."
-msgstr ""
+msgstr "VuXML 数据库是一个 XML 文档。其源文件 [.filename]#vuln.xml# 就保存在 Port package:security/vuxml[] 中。因此，该文件的完整路径名为 [.filename]#PORTSDIR/security/vuxml/vuln.xml#。每当发现某个 Port 存在安全漏洞时，请在该文件中为其添加条目。在熟悉 VuXML 之前，最好先找到一个适用于当前情况的现有条目，将其复制并用作模板。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Short Introduction to VuXML"
-msgstr ""
+msgstr "VuXML 简介"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:135
+#, fuzzy
 msgid ""
 "The full-blown XML format is complex, and far beyond the scope of this "
 "book.  However, to gain basic insight on the structure of a VuXML entry only "
@@ -207,16 +218,17 @@ msgid ""
 "e__X__tensible, that is, based on defining custom tags.  Due to its "
 "intrinsic structure XML puts otherwise amorphous data into shape.  VuXML is "
 "particularly tailored to mark up descriptions of security vulnerabilities."
-msgstr ""
+msgstr "完整的 XML 格式很复杂，远超本书的讨论范围。不过，要初步了解 VuXML 条目的结构，只需了解标签的概念。XML 标签名用尖括号括起来。每个开始标签 `<tag>` 都必须有对应的结束标签 `</tag>`。标签可以嵌套。嵌套时，必须先关闭内层标签，再关闭外层标签。标签存在层级结构，也就是说，嵌套规则可能更复杂。这与 HTML 类似。主要区别在于，XML 是 e__X__tensible（可扩展）的，也就是说，它基于自定义标签。凭借其内在结构，XML 能将原本杂乱无形的数据整理成形。VuXML 专门用于标记安全漏洞描述。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:137
+#, fuzzy
 msgid "Now consider a realistic VuXML entry:"
-msgstr ""
+msgstr "现在来看一个实际的 VuXML 条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<vuln vid=\"f4bc80f4-da62-11d8-90ea-0004ac98a7b9\"> <.>\n"
 "  <topic>Several vulnerabilities found in Foo</topic> <.>\n"
@@ -262,288 +274,320 @@ msgid ""
 "    <modified>2010-09-17</modified> <.>\n"
 "  </dates>\n"
 "</vuln>\n"
-msgstr ""
+msgstr "<vuln vid=\"f4bc80f4-da62-11d8-90ea-0004ac98a7b9\"> <.>\n  <topic>Several vulnerabilities found in Foo</topic> <.>\n  <affects>\n    <package>\n      <name>foo</name> <.>\n      <name>foo-devel</name>\n      <name>ja-foo</name>\n      <range><ge>1.6</ge><lt>1.9</lt></range> <.>\n      <range><ge>2.*</ge><lt>2.4_1</lt></range>\n      <range><eq>3.0b1</eq></range>\n    </package>\n    <package>\n      <name>openfoo</name> <.>\n      <range><lt>1.10_7</lt></range> <.>\n      <range><ge>1.2,1</ge><lt>1.3_1,1</lt></range>\n    </package>\n  </affects>\n  <description>\n    <body xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>J. Random Hacker reports:</p> <.>\n      <blockquote\n        cite=\"http://j.r.hacker.com/advisories/1\">\n        <p>Several issues in the Foo software may be exploited\n          via carefully crafted QUUX requests.  These requests will\n          permit the injection of Bar code, mumble theft, and the\n          readability of the Foo administrator account.</p>\n      </blockquote>\n    </body>\n  </description>\n  <references> <.>\n    <freebsdsa>SA-10:75.foo</freebsdsa> <.>\n    <freebsdpr>ports/987654</freebsdpr> <.>\n    <cvename>CVE-2023-48795</cvename> <.>\n    <certvu>740169</certvu> <.>\n    <uscertta>SA10-99A</uscertta> <.>\n    <mlist msgid=\"201075606@hacker.com\">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=203886607825605</mlist> <.>\n    <url>http://j.r.hacker.com/advisories/1</url> <.>\n  </references>\n  <dates>\n    <discovery>2010-05-25</discovery> <.>\n    <entry>2010-07-13</entry> <.>\n    <modified>2010-09-17</modified> <.>\n  </dates>\n</vuln>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:187
+#, fuzzy
 msgid ""
 "The tag names are supposed to be self-explanatory so we shall take a closer "
 "look only at fields which needs to be filled in:"
-msgstr ""
+msgstr "标签名应该都能顾名思义，因此我们只详细介绍需要填写的字段："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:190
+#, fuzzy
 msgid ""
 "This is the top-level tag of a VuXML entry. It has a mandatory attribute, "
 "`vid`, specifying a universally unique identifier (UUID) for this entry (in "
 "quotes). Generate a UUID for each new VuXML entry (and do not forget to "
 "substitute it for the template UUID unless writing the entry from scratch).  "
 "Use man:uuidgen[1] to generate a VuXML UUID."
-msgstr ""
+msgstr "这是 VuXML 条目的顶层标签。它有一个必需属性 `vid`，用于指定该条目的通用唯一标识符（UUID，需用引号括起来）。每个新 VuXML 条目都要生成一个 UUID（如果不是从头编写条目，别忘了将模板中的 UUID 替换掉）。使用 man:uuidgen[1] 生成 VuXML UUID。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:192
+#, fuzzy
 msgid "This is a one-line description of the issue found."
-msgstr ""
+msgstr "这是对所发现问题的单行描述。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:194
+#, fuzzy
 msgid ""
 "The names of packages affected are listed there. Multiple names can be given "
 "since several packages may be based on a single master port or software "
 "product. This may include stable and development branches, localized "
 "versions, and slave ports featuring different choices of important build-"
 "time configuration options."
-msgstr ""
+msgstr "此处列出受影响的软件包名称。由于多个软件包可能基于同一个主 Port 或软件产品，因此可以列出多个名称。这些名称可能包括稳定版和开发版分支、本地化版本，以及采用不同重要构建时配置选项的从属 Port。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Affected versions of the package(s) are specified there as one or more ranges using a combination of `<lt>`, `<le>`, `<eq>`, `<ge>`, and `<gt>` elements. Check that the version ranges given do not overlap.\n"
 "In a range specification, `\\*` (asterisk) denotes the smallest version number. In particular, `2.*` is less than `2.a`. Therefore an asterisk may be used for a range to match all possible `alpha`, `beta`, and `RC` versions. For instance, `<ge>2.*</ge><lt>3.*</lt>` will selectively match every `2.x` version while `<ge>2.0</ge><lt>3.0</lt>` will not since the latter misses `2.r3` and matches `3.b`.\n"
 "The above example specifies that affected are versions `1.6` and up to but not including `1.9`, versions `2.x` before `2.4_1`, and version `3.0b1`."
-msgstr ""
+msgstr "此处使用 `<lt>`、`<le>`、`<eq>`、`<ge>` 和 `<gt>` 元素的组合，指定一个或多个受影响的软件包版本范围。请确保所列版本范围没有重叠。\n在范围说明中，`\\*`（星号）表示最小的版本号。具体来说，`2.*` 小于 `2.a`。因此，可以用星号表示一个范围，以匹配所有可能的 `alpha`、`beta` 和 `RC` 版本。例如，`<ge>2.*</ge><lt>3.*</lt>` 会精确匹配每个 `2.x` 版本，而 `<ge>2.0</ge><lt>3.0</lt>` 则不会，因为后者会漏掉 `2.r3`，却会匹配 `3.b`。\n上面的示例指定受影响的版本为 `1.6` 及以上、但低于 `1.9` 的版本，低于 `2.4_1` 的 `2.x` 版本，以及 `3.0b1` 版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:200
+#, fuzzy
 msgid ""
 "Several related package groups (essentially, ports) can be listed in the "
 "`<affected>` section. This can be used if several software products (say "
 "FooBar, FreeBar and OpenBar) grow from the same code base and still share "
 "its bugs and vulnerabilities. Note the difference from listing multiple "
 "names within a single <package> section."
-msgstr ""
+msgstr "可以在 `<affected>` 部分列出多个相关的软件包组（本质上是多个 Port）。如果多个软件产品（例如 FooBar、FreeBar 和 OpenBar）源自同一代码库，且仍共享其错误和漏洞，就可以使用此方式。请注意，这与在同一个 `<package>` 部分中列出多个名称不同。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:202
+#, fuzzy
 msgid ""
 "The version ranges have to allow for `PORTEPOCH` and `PORTREVISION` if "
 "applicable. Please remember that according to the collation rules, a version "
 "with a non-zero `PORTEPOCH` is greater than any version without `PORTEPOCH`, "
 "for example, `3.0,1` is greater than `3.1` or even than `8.9`."
-msgstr ""
+msgstr "如果适用，版本范围必须考虑 `PORTEPOCH` 和 `PORTREVISION`。请记住，根据版本排序规则，带有非零 `PORTEPOCH` 的版本高于任何不带 `PORTEPOCH` 的版本，例如，`3.0,1` 高于 `3.1`，甚至高于 `8.9`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:204
+#, fuzzy
 msgid ""
 "This is a summary of the issue. XHTML is used in this field. At least "
 "enclosing `<p>` and `</p>` has to appear. More complex mark-up may be used, "
 "but only for the sake of accuracy and clarity: No eye candy please."
-msgstr ""
+msgstr "这是对问题的摘要。此字段使用 XHTML。必须至少包含 `<p>` 和 `</p>` 标签。可以使用更复杂的标记，但只能为了准确和清晰：请勿添加华而不实的内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:206
+#, fuzzy
 msgid ""
 "This section contains references to relevant documents. As many references "
 "as apply are encouraged."
-msgstr ""
+msgstr "此部分包含相关文档的引用。建议尽可能列出所有适用的引用。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:208
+#, fuzzy
 msgid ""
 "This is a https://www.freebsd.org/security/#adv[FreeBSD security advisory]."
-msgstr ""
+msgstr "这是一个 link:https://www.freebsd.org/security/#adv[FreeBSD 安全公告]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:210
+#, fuzzy
 msgid "This is a https://www.freebsd.org/support/[FreeBSD problem report]."
-msgstr ""
+msgstr "这是一个 link:https://www.freebsd.org/support/[FreeBSD 问题报告]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:212
+#, fuzzy
 msgid "This is a https://cve.mitre.org/[MITRE CVE] identifier."
-msgstr ""
+msgstr "这是一个 link:https://cve.mitre.org/[MITRE CVE] 标识符。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:214
+#, fuzzy
 msgid "This is a https://www.kb.cert.org/vuls/[US-CERT] vulnerability note."
-msgstr ""
+msgstr "这是一个 link:https://www.kb.cert.org/vuls/[US-CERT] 漏洞说明。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:216
+#, fuzzy
 msgid ""
 "This is a https://www.cisa.gov/news-events/cybersecurity-advisories[US-CERT] "
 "Technical Cyber Security Alert."
-msgstr ""
+msgstr "这是一个 link:https://www.cisa.gov/news-events/cybersecurity-advisories[US-CERT] 技术网络安全警报。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:218
+#, fuzzy
 msgid ""
 "This is a URL to an archived posting in a mailing list. The attribute "
 "`msgid` is optional and may specify the message ID of the posting."
-msgstr ""
+msgstr "这是指向邮件列表存档帖子的 URL。`msgid` 属性是可选的，可以指定该帖子的消息 ID。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:220
+#, fuzzy
 msgid ""
 "This is a generic URL. Only it if none of the other reference categories "
 "apply."
-msgstr ""
+msgstr "这是一个通用 URL。仅当其他引用类别都不适用时才使用它。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:222
+#, fuzzy
 msgid "This is the date when the issue was disclosed (_YYYY-MM-DD_)."
-msgstr ""
+msgstr "这是问题披露的日期（_YYYY-MM-DD_）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:224
+#, fuzzy
 msgid "This is the date when the entry was added (_YYYY-MM-DD_)."
-msgstr ""
+msgstr "这是条目添加的日期（_YYYY-MM-DD_）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:226
+#, fuzzy
 msgid ""
 "This is the date when any information in the entry was last modified (_YYYY-"
 "MM-DD_). New entries must not include this field. Add it when editing an "
 "existing entry."
-msgstr ""
+msgstr "这是条目中任何信息最后一次修改的日期（_YYYY-MM-DD_）。新条目不得包含此字段。编辑现有条目时再添加。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing Changes to the VuXML Database"
-msgstr ""
+msgstr "测试 VuXML 数据库更改"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:231
+#, fuzzy
 msgid ""
 "This example describes a new entry for a vulnerability in the package "
 "`dropbear` that has been fixed in version `dropbear-2013.59`."
-msgstr ""
+msgstr "本示例介绍如何为软件包 `dropbear` 中的漏洞添加新条目，该漏洞已在 `dropbear-2013.59` 版本中修复。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:233
+#, fuzzy
 msgid ""
 "As a prerequisite, install a fresh version of package:security/vuxml[] port."
-msgstr ""
+msgstr "首先，安装最新版本的 package:security/vuxml[] Port。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:236
+#, fuzzy
 msgid ""
 "First, check whether there already is an entry for this vulnerability.  If "
 "there were such an entry, it would match the previous version of the "
 "package, `2013.58`:"
-msgstr ""
+msgstr "首先，检查该漏洞是否已有条目。如果存在这样的条目，它应该会匹配软件包的先前版本 `2013.58`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pkg audit dropbear-2013.58\n"
-msgstr ""
+msgstr "% pkg audit dropbear-2013.58\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:243
+#, fuzzy
 msgid "If there is none found, add a new entry for this vulnerability."
-msgstr ""
+msgstr "如果没有找到条目，请为该漏洞添加新条目。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ${PORTSDIR}/security/vuxml\n"
 "% make newentry\n"
-msgstr ""
+msgstr "% cd ${PORTSDIR}/security/vuxml\n% make newentry\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:252
+#, fuzzy
 msgid ""
 "If the vulnerability has a https://cve.mitre.org/[MITRE CVE] identifier, the "
 "following command can be used instead:"
-msgstr ""
+msgstr "如果该漏洞有 link:https://cve.mitre.org/[MITRE CVE] 标识符，可以改用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ${PORTSDIR}/security/vuxml\n"
 "% make newentry CVE_ID=CVE-YYYY-XXXXX\n"
-msgstr ""
+msgstr "% cd ${PORTSDIR}/security/vuxml\n% make newentry CVE_ID=CVE-YYYY-XXXXX\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:260
+#, fuzzy
 msgid "where `CVE-YYYYY-XXXX` is a valid CVE identifier."
-msgstr ""
+msgstr "其中，`CVE-YYYYY-XXXX` 是有效的 CVE 标识符。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:263
+#, fuzzy
 msgid ""
 "If the vulnerability is a FreeBSD Security Advisory, the following command "
 "can be used instead:"
-msgstr ""
+msgstr "如果该漏洞属于 FreeBSD 安全公告，可以改用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ${PORTSDIR}/security/vuxml\n"
 "% make newentry SA_ID=FreeBSD-SA-YY-XXXXXX.asc\n"
-msgstr ""
+msgstr "% cd ${PORTSDIR}/security/vuxml\n% make newentry SA_ID=FreeBSD-SA-YY-XXXXXX.asc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:271
+#, fuzzy
 msgid ""
 "where `FreeBSD-SA-YY-XXXXXX.asc` is a published https://www.freebsd.org/"
 "security/advisories/[FreeBSD Security Advisory]."
-msgstr ""
+msgstr "其中，`FreeBSD-SA-YY-XXXXXX.asc` 是已发布的 link:https://www.freebsd.org/security/advisories/[FreeBSD 安全公告]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:273
+#, fuzzy
 msgid "Verify its syntax and formatting:"
-msgstr ""
+msgstr "验证语法和格式："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make validate\n"
-msgstr ""
+msgstr "% make validate\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:282
+#, fuzzy
 msgid ""
 "The previous command generates the [.filename]#vuln-flat.xml# file.  It can "
 "also be generated with:"
-msgstr ""
+msgstr "上一条命令会生成 [.filename]#vuln-flat.xml# 文件。也可以使用以下命令生成该文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make vuln-flat.xml\n"
-msgstr ""
+msgstr "% make vuln-flat.xml\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:291
+#, fuzzy
 msgid ""
 "At least one of these packages needs to be installed: package:textproc/"
 "libxml2[], package:textproc/jade[]."
-msgstr ""
+msgstr "必须至少安装以下软件包之一：package:textproc/libxml2[]、package:textproc/jade[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:294
+#, fuzzy
 msgid ""
 "Verify that the `<affected>` section of the entry will match the correct "
 "packages:"
-msgstr ""
+msgstr "验证条目的 `<affected>` 部分是否能匹配正确的软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pkg audit -f ${PORTSDIR}/security/vuxml/vuln-flat.xml dropbear-2013.58\n"
-msgstr ""
+msgstr "% pkg audit -f ${PORTSDIR}/security/vuxml/vuln-flat.xml dropbear-2013.58\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:301
+#, fuzzy
 msgid "Make sure that the entry produces no spurious matches in the output."
-msgstr ""
+msgstr "确保输出中没有产生多余的匹配项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:303
+#, fuzzy
 msgid "Now check whether the right package versions are matched by the entry:"
-msgstr ""
+msgstr "现在检查条目是否匹配正确的软件包版本："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% pkg audit -f ${PORTSDIR}/security/vuxml/vuln-flat.xml dropbear-2013.58 dropbear-2013.59\n"
 "dropbear-2012.58 is vulnerable:\n"
@@ -551,64 +595,70 @@ msgid ""
 "CVE: CVE-2013-4434\n"
 "CVE: CVE-2013-4421\n"
 "WWW: https://portaudit.FreeBSD.org/8c9b48d1-3715-11e3-a624-00262d8b701d.html\n"
-msgstr ""
+msgstr "% pkg audit -f ${PORTSDIR}/security/vuxml/vuln-flat.xml dropbear-2013.58 dropbear-2013.59\ndropbear-2012.58 is vulnerable:\ndropbear -- exposure of sensitive information, DoS\nCVE: CVE-2013-4434\nCVE: CVE-2013-4421\nWWW: https://portaudit.FreeBSD.org/8c9b48d1-3715-11e3-a624-00262d8b701d.html\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1 problem(s) in the installed packages found.\n"
-msgstr ""
+msgstr "1 problem(s) in the installed packages found.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:317
+#, fuzzy
 msgid "The former version matches while the latter one does not."
-msgstr ""
+msgstr "前一个版本匹配，而后一个版本不匹配。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "VuXML new entry checklist"
-msgstr ""
+msgstr "VuXML 新条目检查清单"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:323
+#, fuzzy
 msgid ""
 "Check the name of the port.  Sometimes the upstream project name is not "
 "exactly the same as the port name."
-msgstr ""
+msgstr "检查 port 的名称。有时，上游项目的名称与 port 的名称并不完全相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:327
+#, fuzzy
 msgid ""
 "Add all flavors.  When a port has flavors all the package names need to be "
 "added as a `<package>` in the entry.  Use the following script to generate "
 "all flavored package names:"
-msgstr ""
+msgstr "添加所有 flavor。如果一个 port 有多个 flavor，则需要将所有软件包名称都作为 `<package>` 添加到条目中。使用以下脚本生成所有带 flavor 的软件包名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% for flavor in $(make -V FLAVORS); do FLAVOR=\"${flavor}\" make -VPKGNAME;done\n"
-msgstr ""
+msgstr "% for flavor in $(make -V FLAVORS); do FLAVOR=\"${flavor}\" make -VPKGNAME;done\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:336
+#, fuzzy
 msgid ""
 "Check if the port has `PORTEPOCH`.  The above script snippet helps with "
 "that.  If the port uses `PORTEPOCH` it is mandatory to add it to the "
 "`<range>` tag."
-msgstr ""
+msgstr "检查 port 是否设置了 `PORTEPOCH`。上面的脚本片段可以帮助检查。如果 port 使用了 `PORTEPOCH`，则必须将其添加到 `<range>` 标签中。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:340
+#, fuzzy
 msgid ""
 "Double check ranges.  In the case of ranges limited on both sides, make sure "
 "that the `<ge>` and `<lt>` elements are inside the same `<range>` tag.  "
 "Otherwise the entry might end up defining an overlapping range."
-msgstr ""
+msgstr "仔细检查版本范围。如果范围的上下限都有限定，请确保 `<ge>` 和 `<lt>` 元素位于同一个 `<range>` 标签内。否则，该条目可能会定义出重叠的范围。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:349
+#, fuzzy
 msgid ""
 "Cross-check derivatives.  Check whether derivatives or forks of the project "
 "included in the ports tree are also affected.  For example, if a "
@@ -619,9 +669,10 @@ msgid ""
 "informed.  Also check if there are Linux versions of the same port in the "
 "tree.  For instance, package:databases/sqlite3[] vulnerabilities most likely "
 "affect packages like package:databases/linux-c7-sqlite3[] too."
-msgstr ""
+msgstr "交叉检查衍生项目。检查 ports 树中是否包含该项目的衍生版本或分支，以及它们是否也受到影响。例如，如果在 package:www/firefox[] 中发现漏洞，请评估 package:www/librewolf[]、package:www/waterfox[] 等衍生项目是否存在相同漏洞。将所有受影响的衍生项目都纳入 VuXML 条目，确保这些 port 的用户收到通知。还要检查树中是否有同一 port 的 Linux 版本。例如，package:databases/sqlite3[] 中的漏洞很可能也会影响 package:databases/linux-c7-sqlite3[] 等软件包。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/security/_index.adoc:349
+#, fuzzy
 msgid "Do not commit an entry without running `make validate` first."
-msgstr ""
+msgstr "提交条目前，务必先运行 `make validate`。"

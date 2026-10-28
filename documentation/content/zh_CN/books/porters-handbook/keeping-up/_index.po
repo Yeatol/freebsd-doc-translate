@@ -17,37 +17,39 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to keep up the FreeBSD Ports Collection"
-msgstr ""
+msgstr "如何跟上 FreeBSD Ports Collection 的变化"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 16. Keeping Up"
-msgstr ""
+msgstr "第 16 章：保持更新"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Keeping Up"
-msgstr ""
+msgstr "保持更新"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:52
+#, fuzzy
 msgid ""
 "The FreeBSD Ports Collection is constantly changing.  Here is some "
 "information on how to keep up."
-msgstr ""
+msgstr "FreeBSD Ports Collection 一直在变化。以下是一些帮助您跟上这些变化的信息。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:54
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreshPorts"
-msgstr ""
+msgstr "FreshPorts"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:62
+#, fuzzy
 msgid ""
 "One of the easiest ways to learn about updates that have already been "
 "committed is by subscribing to https://www.FreshPorts.org/[FreshPorts].  "
@@ -59,35 +61,38 @@ msgid ""
 "from those committing such changes, sometimes this is overlooked or "
 "impractical.  Also, in some cases, the changes are very minor in nature.  We "
 "expect everyone to use their best judgement in these cases.)"
-msgstr ""
+msgstr "了解已提交更新最简单的方法之一，是订阅 link:https://www.FreshPorts.org/[FreshPorts]。您可以监控多个 port。强烈建议维护者订阅，因为他们不仅会收到自己所做更改的通知，也会收到其他 FreeBSD 提交者所做更改的通知。（这些更改通常是为了跟上底层 ports 框架的变化所必需的——不过，提交此类更改的人若能提前告知，会更为妥当；但有时这一步会被忽略，或因实际情况而难以做到。此外，有些更改本身非常小。我们期望大家在这些情况下作出妥善判断。）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:66
+#, fuzzy
 msgid ""
 "To use FreshPorts, an account is required.  Those with registered email "
 "addresses at `@FreeBSD.org` will see the opt-in link on the right-hand side "
 "of the web pages.  Those who already have a FreshPorts account but are not "
 "using a `@FreeBSD.org` email address can change the email to `@FreeBSD.org`, "
 "subscribe, then change it back again."
-msgstr ""
+msgstr "使用 FreshPorts 需要一个账户。使用已注册邮箱地址 `@FreeBSD.org` 的用户会在网页右侧看到选择加入的链接。已有 FreshPorts 账户、但未使用 `@FreeBSD.org` 邮箱地址的用户，可以先将邮箱地址改为 `@FreeBSD.org` 并订阅，然后再改回原地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:69
+#, fuzzy
 msgid ""
 "FreshPorts also has a sanity test feature which automatically tests each "
 "commit to the FreeBSD ports tree.  If subscribed to this service, a "
 "committer will receive notifications of any errors which FreshPorts detects "
 "during sanity testing of their commits."
-msgstr ""
+msgstr "FreshPorts 还提供健全性测试功能，会自动测试提交到 FreeBSD ports 树的每次提交。订阅此服务后，提交者会收到 FreshPorts 在对其提交进行健全性测试时检测到的任何错误通知。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Web Interface to the Source Repository"
-msgstr ""
+msgstr "源代码仓库的 Web 界面"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:77
+#, fuzzy
 msgid ""
 "It is possible to browse the files in the source repository by using a web "
 "interface.  Changes that affect the entire port system are now documented in "
@@ -96,60 +101,65 @@ msgid ""
 "ports/tree/UPDATING[UPDATING] file.  However, the definitive answer to any "
 "question is undoubtedly to read the source code of https://cgit.FreeBSD.org/"
 "ports/tree/Mk/bsd.port.mk[bsd.port.mk], and associated files."
-msgstr ""
+msgstr "可以通过 Web 界面浏览源代码仓库中的文件。影响整个 port 系统的更改现在记录在 link:https://cgit.FreeBSD.org/ports/tree/CHANGES[CHANGES] 文件中。影响单个 port 的更改现在记录在 link:https://cgit.FreeBSD.org/ports/tree/UPDATING[UPDATING] 文件中。不过，要获得任何问题的确定答案，最好的办法无疑是阅读 link:https://cgit.FreeBSD.org/ports/tree/Mk/bsd.port.mk[bsd.port.mk] 及相关文件的源代码。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Ports Mailing List"
-msgstr ""
+msgstr "FreeBSD Ports 邮件列表"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:83
+#, fuzzy
 msgid ""
 "As a ports maintainer, consider subscribing to {freebsd-ports}.  Important "
 "changes to the way ports work will be announced there, and then committed to "
 "[.filename]#CHANGES#."
-msgstr ""
+msgstr "作为 ports 维护者，请考虑订阅 {freebsd-ports}。有关 ports 工作方式的重要更改会在该邮件列表中公布，随后提交到 [.filename]#CHANGES#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:85
+#, fuzzy
 msgid ""
 "If the volume of messages on this mailing list is too high, consider "
 "following {freebsd-ports-announce} which contains only announcements."
-msgstr ""
+msgstr "如果此邮件列表的消息量太大，请考虑关注只发布公告的 {freebsd-ports-announce}。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Port Building Cluster"
-msgstr ""
+msgstr "FreeBSD Port 构建集群"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:90
+#, fuzzy
 msgid ""
 "One of the least-publicized strengths of FreeBSD is that an entire cluster "
 "of machines is dedicated to continually building the Ports Collection, for "
 "each of the major OS releases and for each Tier-1 architecture."
-msgstr ""
+msgstr "FreeBSD 最鲜为人知的优势之一，是有一整套专用机器组成的集群，持续为每个主要操作系统发行版和每种 Tier-1 架构构建 Ports Collection。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:94
+#, fuzzy
 msgid ""
 "Individual ports are built unless they are specifically marked with "
 "`IGNORE`.  Ports that are marked with `BROKEN` will still be attempted, to "
 "see if the underlying problem has been resolved.  (This is done by passing "
 "`TRYBROKEN` to the port's [.filename]#Makefile#.)"
-msgstr ""
+msgstr "除非 port 被明确标记为 `IGNORE`，否则都会单独构建。标记为 `BROKEN` 的 port 仍会尝试构建，以检查底层问题是否已解决。（这是通过向 port 的 [.filename]#Makefile# 传递 `TRYBROKEN` 来实现的。）"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Portscout: the FreeBSD Ports Distfile Scanner"
-msgstr ""
+msgstr "Portscout：FreeBSD Ports distfile 扫描器"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:103
+#, fuzzy
 msgid ""
 "The build cluster is dedicated to building the latest release of each port "
 "with distfiles that have already been fetched.  However, as the Internet "
@@ -160,38 +170,42 @@ msgid ""
 "newly available ports to those who request them.  Unless not otherwise "
 "subscribed, maintainers are asked to check periodically for changes, either "
 "by hand or using the RSS feed."
-msgstr ""
+msgstr "构建集群专门使用已获取的 distfile 构建每个 port 的最新版本。不过，互联网一直在变化，distfile 可能很快就会失效。FreeBSD Ports distfile 扫描器 link:https://portscout.FreeBSD.org/[Portscout] 会尝试查询每个 port 的每个下载站点，以检查相应的 distfile 是否仍然可用。Portscout 可以生成 HTML 报告，并向有此需求的用户发送有关新版本 port 的电子邮件。除非已通过其他方式订阅，维护者应定期手动检查更改，或使用 RSS 源进行检查。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:106
+#, fuzzy
 msgid ""
 "Portscout's first page gives the email address of the port maintainer, the "
 "number of ports the maintainer is responsible for, the number of those ports "
 "with new distfiles, and the percentage of those ports that are out-of-date.  "
 "The search function allows for searching by email address for a specific "
 "maintainer, and for selecting whether only out-of-date ports are shown."
-msgstr ""
+msgstr "Portscout 首页会显示 port 维护者的电子邮件地址、该维护者负责的 port 数量、其中有新 distfile 的 port 数量，以及这些 port 中已过时的百分比。搜索功能支持按电子邮件地址查找特定维护者，也可以选择只显示已过时的 port。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:109
+#, fuzzy
 msgid ""
 "Upon clicking on a maintainer's email address, a list of all of their ports "
 "is displayed, along with port category, current version number, whether or "
 "not there is a new version, when the port was last updated, and finally when "
 "it was last checked.  A search function on this page allows the user to "
 "search for a specific port."
-msgstr ""
+msgstr "点击维护者的电子邮件地址后，会显示其所有 port 的列表，以及 port 类别、当前版本号、是否有新版本、port 上次更新的时间和上次检查的时间。此页面上的搜索功能允许用户查找特定 port。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:111
+#, fuzzy
 msgid ""
 "Clicking on a port name in the list displays the https://freshports.org/"
 "[FreshPorts] port information."
-msgstr ""
+msgstr "点击列表中的 port 名称，会显示该 port 在 link:https://freshports.org/[FreshPorts] 上的信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/keeping-up/_index.adoc:112
+#, fuzzy
 msgid ""
 "Additional documentation is available in the https://github.com/freebsd/"
 "portscout/[Portscout repository]."
-msgstr ""
+msgstr "更多文档见 link:https://github.com/freebsd/portscout/[Portscout 仓库]。"

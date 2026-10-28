@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/printing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter covers the printing system in FreeBSD"
-msgstr ""
+msgstr "本章介绍 FreeBSD 中的打印系统"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/printing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Common Tasks"
-msgstr ""
+msgstr "第二部分：常见任务"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/printing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 11. Printing"
-msgstr ""
+msgstr "第 11 章：打印"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/printing/_index.adoc:15
@@ -67,11 +67,12 @@ msgstr "快速开始"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:61
+#, fuzzy
 msgid ""
 "Basic printing can be set up quickly.  The printer must be capable of "
 "printing plain `ASCII` text.  For printing to other types of files, see "
 "crossref:printing[printing-lpd-filters, Filters]."
-msgstr ""
+msgstr "基本打印可以快速设置。打印机必须能够打印纯 `ASCII` 文本。有关打印其他类型文件的信息，请参阅 crossref:printing[printing-lpd-filters, 过滤器]。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:65
@@ -81,17 +82,18 @@ msgstr "建立一个目录来储存要被打印的文件："
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:71
 #: documentation/content/en/books/handbook/printing/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir -p /var/spool/lpd/lp\n"
 "# chown daemon:daemon /var/spool/lpd/lp\n"
 "# chmod 770 /var/spool/lpd/lp\n"
-msgstr ""
+msgstr "# mkdir -p /var/spool/lpd/lp\n# chown daemon:daemon /var/spool/lpd/lp\n# chmod 770 /var/spool/lpd/lp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:74
+#, fuzzy
 msgid "As `root`, create [.filename]#/etc/printcap# with these contents:"
-msgstr ""
+msgstr "以 `root` 身份创建 [.filename]#/etc/printcap#，内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:83
@@ -107,13 +109,15 @@ msgstr "lp:lp=/dev/unlpt0:sh:mx#0:sd=/var/spool/lpd/lp:if=/usr/local/libexec/lf2
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:86
+#, fuzzy
 msgid "This line is for a printer connected to a `USB` port."
-msgstr ""
+msgstr "此行适用于连接到 `USB` 端口的打印机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:88
+#, fuzzy
 msgid "For a printer connected to a parallel or \"printer\" port, use:"
-msgstr ""
+msgstr "对于连接到并行端口或“打印机”端口的打印机，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:92
@@ -128,21 +132,23 @@ msgstr "直接连接到网络的打印机要使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ":lp=:rm=network-printer-name:rp=raw:\\\n"
-msgstr ""
+msgstr ":lp=:rm=network-printer-name:rp=raw:\\\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:102
+#, fuzzy
 msgid ""
 "Replace _network-printer-name_ with the `DNS` host name of the network "
 "printer."
-msgstr ""
+msgstr "将 __network-printer-name__ 替换为网络打印机的 `DNS` 主机名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:104
+#, fuzzy
 msgid "Enable LPD by editing [.filename]#/etc/rc.conf#, adding this line:"
-msgstr ""
+msgstr "编辑 [.filename]#/etc/rc.conf#，添加以下行，以启用 LPD："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:108
@@ -159,11 +165,11 @@ msgstr "启动服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service lpd start\n"
 "Starting lpd.\n"
-msgstr ""
+msgstr "# service lpd start\nStarting lpd.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:119
@@ -172,32 +178,34 @@ msgstr "测试打印："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# printf \"1. This printer can print.\\n2. This is the second line.\\n\" | lpr\n"
-msgstr ""
+msgstr "# printf \"1. This printer can print.\\n2. This is the second line.\\n\" | lpr\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:129
+#, fuzzy
 msgid ""
 "If both lines do not start at the left border, but \"stairstep\" instead, "
 "see crossref:printing[printing-lpd-filters-stairstep, Preventing "
 "Stairstepping on Plain Text Printers]."
-msgstr ""
+msgstr "如果两行都没有从左边距开始，而是呈现“阶梯状”，请参阅 crossref:printing[printing-lpd-filters-stairstep, 防止纯文本打印机打印出阶梯状文本]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:133
+#, fuzzy
 msgid ""
 "Text files can now be printed with `lpr`.  Give the filename on the command "
 "line, or pipe output directly into `lpr`."
-msgstr ""
+msgstr "现在可以使用 `lpr` 打印文本文件。可以在命令行中指定文件名，也可以将输出直接管道传给 `lpr`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lpr textfile.txt\n"
 "% ls -lh | lpr\n"
-msgstr ""
+msgstr "% lpr textfile.txt\n% ls -lh | lpr\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/printing/_index.adoc:142
@@ -207,13 +215,14 @@ msgstr "打印机联机"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:149
+#, fuzzy
 msgid ""
 "Printers are connected to computer systems in a variety of ways.  Small "
 "desktop printers are usually connected directly to a computer's `USB` port.  "
 "Older printers are connected to a parallel or \"printer\" port.  Some "
 "printers are directly connected to a network, making it easy for multiple "
 "computers to share them.  A few printers use a rare serial port connection."
-msgstr ""
+msgstr "打印机与计算机系统的连接方式多种多样。小型桌面打印机通常直接连接到计算机的 `USB` 端口。较旧的打印机连接到并行端口或“打印机”端口。有些打印机直接连接到网络，便于多台计算机共享。还有少数打印机使用罕见的串行端口连接。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:151
@@ -222,18 +231,20 @@ msgstr "FreeBSD可以与这些类型的打印机沟通。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USB`"
-msgstr ""
+msgstr "`USB`"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:155
+#, fuzzy
 msgid ""
 "`USB` printers can be connected to any available `USB` port on the computer."
-msgstr ""
+msgstr "`USB` 打印机可以连接到计算机上任何可用的 `USB` 端口。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:161
+#, fuzzy
 msgid ""
 "When FreeBSD detects a `USB` printer, two device entries are created: [."
 "filename]#/dev/ulpt0# and [.filename]#/dev/unlpt0#.  Data sent to either "
@@ -241,13 +252,13 @@ msgid ""
 "filename]#ulpt0# resets the `USB` port.  Resetting the port can cause "
 "problems with some printers, so the [.filename]#unlpt0# device is usually "
 "used instead.  [.filename]#unlpt0# does not reset the USB port at all."
-msgstr ""
+msgstr "FreeBSD 检测到 `USB` 打印机时，会创建两个设备条目：[.filename]#/dev/ulpt0# 和 [.filename]#/dev/unlpt0#。发送到任一设备的数据都会转发给打印机。每个打印作业完成后，[.filename]#ulpt0# 会重置 `USB` 端口。重置端口可能会导致某些打印机出现问题，因此通常使用 [.filename]#unlpt0# 设备。设备 [.filename]#unlpt0# 完全不会重置 USB 端口。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Parallel (`IEEE`-1284)"
-msgstr ""
+msgstr "并行（`IEEE`-1284）"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:166
@@ -261,13 +272,14 @@ msgstr ""
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:171
+#, fuzzy
 msgid ""
 "Vendors have largely moved away from these \"legacy\" ports, and many "
 "computers no longer have them.  Adapters can be used to connect a parallel "
 "printer to a `USB` port.  With such an adapter, the printer can be treated "
 "as if it were actually a `USB` printer.  Devices called _print servers_ can "
 "also be used to connect parallel printers directly to a network."
-msgstr ""
+msgstr "厂商已基本弃用这些“旧式”端口，许多计算机也不再配备此类端口。可以使用适配器将并行打印机连接到 `USB` 端口。使用此类适配器后，打印机可像 `USB` 打印机一样使用。也可以使用称为__打印服务器__的设备，将并行打印机直接连接到网络。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:173
@@ -292,20 +304,22 @@ msgstr ""
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:179
+#, fuzzy
 msgid ""
 "For serial ports built into a motherboard, the serial device name is [."
 "filename]#/dev/cuau0# or [.filename]#/dev/cuau1#.  Serial `USB` adapters can "
 "also be used, and these will appear as [.filename]#/dev/cuaU0#."
-msgstr ""
+msgstr "对于主板内置的串行端口，串行设备名称为 [.filename]#/dev/cuau0# 或 [.filename]#/dev/cuau1#。也可以使用串行 `USB` 适配器，它们会显示为 [.filename]#/dev/cuaU0#。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:183
+#, fuzzy
 msgid ""
 "Several communication parameters must be known to communicate with a serial "
 "printer.  The most important are _baud rate_ or `BPS` (Bits Per Second) and "
 "_parity_.  Values vary, but typical serial printers use a baud rate of 9600 "
 "and no parity."
-msgstr ""
+msgstr "要与串行打印机通信，必须了解若干通信参数。最重要的是__波特率__或 `BPS`（每秒位数）以及__奇偶校验__。参数值因设备而异，但典型的串行打印机使用 9600 波特且不进行奇偶校验。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:185
@@ -320,22 +334,24 @@ msgstr "网络打印机可直接连接到区域网路。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:191
+#, fuzzy
 msgid ""
 "The `DNS` hostname of the printer must be known.  If the printer is assigned "
 "a dynamic address by `DHCP`, `DNS` should be dynamically updated so that the "
 "host name always has the correct `IP` address.  Network printers are often "
 "given static `IP` addresses to avoid this problem."
-msgstr ""
+msgstr "必须知道打印机的 `DNS` 主机名。如果通过 `DHCP` 为打印机分配动态地址，则应动态更新 `DNS`，以确保主机名始终对应正确的 `IP` 地址。网络打印机通常会分配静态 `IP` 地址，以避免此问题。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:196
+#, fuzzy
 msgid ""
 "Most network printers understand print jobs sent with the LPD protocol.  A "
 "print queue name can also be specified.  Some printers process data "
 "differently depending on which queue is used.  For example, a `raw` queue "
 "prints the data unchanged, while the `text` queue adds carriage returns to "
 "plain text."
-msgstr ""
+msgstr "大多数网络打印机都能理解通过 LPD 协议发送的打印作业。也可以指定打印队列名称。有些打印机使用不同队列时会以不同方式处理数据。例如，`raw` 队列会原样打印数据，而 `text` 队列会为纯文本添加回车符。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:198
@@ -374,16 +390,17 @@ msgstr "常见的页面描述语言"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:214
+#, fuzzy
 msgid ""
 "Data sent to a printer must be in a language that the printer can "
 "understand.  These languages are called Page Description Languages, or PDLs."
-msgstr ""
+msgstr "发送到打印机的数据必须使用打印机能够理解的语言。这些语言称为页面描述语言（PDL）。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ASCII`"
-msgstr ""
+msgstr "`ASCII`"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:223
@@ -405,19 +422,21 @@ msgstr ""
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:226
+#, fuzzy
 msgid ""
 "Some inexpensive printers cannot print plain `ASCII` text.  This makes them "
 "more difficult to set up, but it is usually still possible."
-msgstr ""
+msgstr "一些廉价打印机无法打印纯 `ASCII` 文本。这使得设置更加困难，但通常仍然可以使用。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PostScript(R)"
-msgstr ""
+msgstr "PostScript(R)"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:235
+#, fuzzy
 msgid ""
 "PostScript(R) is almost the opposite of `ASCII`.  Rather than simple text, a "
 "PostScript(R) program is a set of instructions that draw the final "
@@ -425,29 +444,31 @@ msgid ""
 "comes at a price.  The program that draws the page must be written.  Usually "
 "this program is generated by application software, so the process is "
 "invisible to the user."
-msgstr ""
+msgstr "PostScript(R) 几乎与 `ASCII` 截然相反。PostScript(R) 程序不是简单的文本，而是一组用于绘制最终文档的指令。它可以使用不同的字体和图形。不过，这种能力也有代价：必须编写绘制页面的程序。通常由应用软件生成此程序，因此用户不会察觉这一过程。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:237
+#, fuzzy
 msgid ""
 "Inexpensive printers sometimes leave out PostScript(R) compatibility as a "
 "cost-saving measure."
-msgstr ""
+msgstr "有时，廉价打印机会省略 PostScript(R) 兼容性以降低成本。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PCL` (Printer Command Language)"
-msgstr ""
+msgstr "`PCL`（打印机命令语言）"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:244
+#, fuzzy
 msgid ""
 "`PCL` is an extension of `ASCII`, adding escape sequences for formatting, "
 "font selection, and printing graphics.  Many printers provide `PCL5` "
 "support.  Some support the newer `PCL6` or `PCLXL`.  These later versions "
 "are supersets of `PCL5` and can provide faster printing."
-msgstr ""
+msgstr "`PCL` 是 `ASCII` 的扩展，增加了用于格式设置、字体选择和打印图形的转义序列。许多打印机支持 `PCL5`。有些打印机支持较新的 `PCL6` 或 `PCLXL`。这些较新的版本是 `PCL5` 的超集，可以实现更快的打印。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/printing/_index.adoc:246
@@ -481,100 +502,102 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Converting PostScript(R) to Other PDLs"
-msgstr ""
+msgstr "将 PostScript(R) 转换为其他 PDL"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:259
+#, fuzzy
 msgid ""
 "Many applications from the Ports Collection and FreeBSD utilities produce "
 "PostScript(R) output.  This table shows the utilities available to convert "
 "that into other common PDLs:"
-msgstr ""
+msgstr "Ports Collection 中的许多应用程序和 FreeBSD 实用程序都会生成 PostScript(R) 输出。此表列出了可用于将其转换为其他常见 PDL 的实用程序："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/printing/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Output PDLs"
-msgstr ""
+msgstr "输出 PDL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Output PDL"
-msgstr ""
+msgstr "输出 PDL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Generated By"
-msgstr ""
+msgstr "生成工具"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "备注"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PCL` or `PCL5`"
-msgstr ""
+msgstr "`PCL` 或 `PCL5`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:270
 #: documentation/content/en/books/handbook/printing/_index.adoc:274
 #: documentation/content/en/books/handbook/printing/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:print/ghostscript9-base[]"
-msgstr ""
+msgstr "package:print/ghostscript9-base[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-sDEVICE=ljet4` for monochrome, `-sDEVICE=cljet5` for color"
-msgstr ""
+msgstr "单色使用 `-sDEVICE=ljet4`，彩色使用 `-sDEVICE=cljet5`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PCLXL` or `PCL6`"
-msgstr ""
+msgstr "`PCLXL` 或 `PCL6`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-sDEVICE=pxlmono` for monochrome, `-sDEVICE=pxlcolor` for color"
-msgstr ""
+msgstr "单色使用 `-sDEVICE=pxlmono`，彩色使用 `-sDEVICE=pxlcolor`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ESC/P2`"
-msgstr ""
+msgstr "`ESC/P2`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-sDEVICE=uniprint`"
-msgstr ""
+msgstr "`-sDEVICE=uniprint`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`XQX`"
-msgstr ""
+msgstr "`XQX`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/printing/_index.adoc:282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:print/foo2zjs[]"
-msgstr ""
+msgstr "package:print/foo2zjs[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:292
+#, fuzzy
 msgid ""
 "For the easiest printing, choose a printer that supports PostScript(R).  "
 "Printers that support `PCL` are the next preferred.  With package:print/"
@@ -582,10 +605,11 @@ msgid ""
 "PostScript(R) natively.  Printers that support PostScript(R) or `PCL` "
 "directly almost always support direct printing of plain `ASCII` text files "
 "also."
-msgstr ""
+msgstr "为获得最简单的打印体验，请选择支持 PostScript(R) 的打印机。其次推荐支持 `PCL` 的打印机。安装 package:print/ghostscript9-base[] 后，这些打印机可以像原生支持 PostScript(R) 一样使用。直接支持 PostScript(R) 或 `PCL` 的打印机几乎总是也支持直接打印纯 `ASCII` 文本文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:297
+#, fuzzy
 msgid ""
 "Line-based printers like typical inkjets usually do not support "
 "PostScript(R) or `PCL`.  They often can print plain `ASCII` text files.  "
@@ -593,16 +617,17 @@ msgid ""
 "printers.  However, printing an entire graphic-based page on these printers "
 "is often very slow due to the large amount of data to be transferred and "
 "printed."
-msgstr ""
+msgstr "典型喷墨打印机等逐行打印机通常不支持 PostScript(R) 或 `PCL`。它们通常可以打印纯 `ASCII` 文本文件。package:print/ghostscript9-base[] 支持部分此类打印机使用的 PDL。不过，在这些打印机上打印整页图形通常非常缓慢，因为需要传输和打印的数据量很大。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:302
+#, fuzzy
 msgid ""
 "Host-based printers are often more difficult to set up.  Some cannot be used "
 "at all because of proprietary PDLs.  Avoid these printers when possible.  "
 "The particular `PDL` used by various models of printers can be found at "
 "http://www.openprinting.org/printers[]."
-msgstr ""
+msgstr "基于主机的打印机通常更难设置。有些打印机使用专有 PDL，因而完全无法使用。请尽可能避免使用这类打印机。各种型号打印机所用的特定 `PDL` 可在 link:http://www.openprinting.org/printers[] 查找。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/printing/_index.adoc:304
@@ -612,53 +637,57 @@ msgstr "直接打印"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:308
+#, fuzzy
 msgid ""
 "For occasional printing, files can be sent directly to a printer device "
 "without any setup.  For example, a file called [.filename]#sample.txt# can "
 "be sent to a `USB` printer:"
-msgstr ""
+msgstr "偶尔打印时，无需进行任何设置即可将文件直接发送到打印机设备。例如，可以将名为 [.filename]#sample.txt# 的文件发送到 `USB` 打印机："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cp sample.txt /dev/unlpt0\n"
-msgstr ""
+msgstr "# cp sample.txt /dev/unlpt0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:315
+#, fuzzy
 msgid ""
 "Direct printing to network printers depends on the abilities of the printer, "
 "but most accept print jobs on port 9100, and man:nc[1] can be used with "
 "them. To print the same file to a printer with the `DNS` hostname of "
 "_netlaser_:"
-msgstr ""
+msgstr "直接向网络打印机打印取决于打印机的功能，但大多数打印机都接受通过端口 9100 发送的打印作业，并且可以使用 man:nc[1]。要将同一文件打印到 `DNS` 主机名为 __netlaser__ 的打印机："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# nc netlaser 9100 < sample.txt\n"
-msgstr ""
+msgstr "# nc netlaser 9100 < sample.txt\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/printing/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LPD (Line Printer Daemon)"
-msgstr ""
+msgstr "LPD（行式打印机守护进程）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:326
+#, fuzzy
 msgid ""
 "Printing a file in the background is called _spooling_.  A spooler allows "
 "the user to continue with other programs on the computer without waiting for "
 "the printer to slowly complete the print job."
-msgstr ""
+msgstr "在后台打印文件称为__假脱机打印__。假脱机程序让用户无需等待打印机慢慢完成打印作业，就可以继续使用计算机上的其他程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:329
+#, fuzzy
 msgid ""
 "FreeBSD includes a spooler called man:lpd[8].  Print jobs are submitted with "
 "man:lpr[1]."
-msgstr ""
+msgstr "FreeBSD 包含一个名为 man:lpd[8] 的假脱机程序。使用 man:lpr[1] 提交打印作业。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:331
@@ -691,7 +720,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "lp:\\\t\t\t\t<.>\n"
 "\t:lp=/dev/unlpt0:\\\t<.>\n"
@@ -699,15 +728,16 @@ msgid ""
 "\t:mx#0:\\\t\t\t<.>\n"
 "\t:sd=/var/spool/lpd/lp:\\\t<.>\n"
 "\t:lf=/var/log/lpd-errs:\t<.>\n"
-msgstr ""
+msgstr "lp:\\\t\t\t\t<.>\n\t:lp=/dev/unlpt0:\\\t<.>\n\t:sh:\\\t\t\t<.>\n\t:mx#0:\\\t\t\t<.>\n\t:sd=/var/spool/lpd/lp:\\\t<.>\n\t:lf=/var/log/lpd-errs:\t<.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:357
+#, fuzzy
 msgid ""
 "The name of this printer. man:lpr[1] sends print jobs to the `lp` printer "
 "unless another printer is specified with `-P`, so the default printer should "
 "be named `lp`."
-msgstr ""
+msgstr "此打印机的名称。除非使用 `-P` 指定其他打印机，否则 man:lpr[1] 会将打印作业发送到 `lp` 打印机，因此默认打印机应命名为 `lp`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:359
@@ -747,16 +777,17 @@ msgstr "回报此打印机的错误的日志档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:369
+#, fuzzy
 msgid ""
 "After creating [.filename]#/etc/printcap#, use man:chkprintcap[8] to test it "
 "for errors:"
-msgstr ""
+msgstr "创建 [.filename]#/etc/printcap# 后，使用 man:chkprintcap[8] 检查其中是否有错误："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chkprintcap\n"
-msgstr ""
+msgstr "# chkprintcap\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:376
@@ -765,20 +796,21 @@ msgstr "在继续之前修正任何回报的问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:378
+#, fuzzy
 msgid "Enable man:lpd[8] in [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "在 [.filename]#/etc/rc.conf# 中启用 man:lpd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service lpd start\n"
-msgstr ""
+msgstr "# service lpd start\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:392
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Printing with man:lpr[1]"
-msgstr ""
+msgstr "使用 man:lpr[1] 打印"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:397
@@ -795,23 +827,24 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:402
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lpr doc.txt\n"
 "% cat doc.txt | lpr\n"
-msgstr ""
+msgstr "% lpr doc.txt\n% cat doc.txt | lpr\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:406
+#, fuzzy
 msgid ""
 "Printers can be selected with `-P`.  To print to a printer called _laser_:"
-msgstr ""
+msgstr "可以使用 `-P` 选择打印机。要打印到名为 __laser__ 的打印机："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lpr -Plaser doc.txt\n"
-msgstr ""
+msgstr "% lpr -Plaser doc.txt\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:413
@@ -843,33 +876,36 @@ msgstr "有些打印机无法打印纯文本，输入文件甚至可能不是纯
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:423
+#, fuzzy
 msgid ""
 "_Filters_ allow files to be translated or processed.  The typical use is to "
 "translate one type of input, like plain text, into a form that the printer "
 "can understand, like PostScript(R) or `PCL`.  Filters can also be used to "
 "provide additional features, like adding page numbers or highlighting source "
 "code to make it easier to read."
-msgstr ""
+msgstr "__过滤器__可以转换或处理文件。典型用途是将一种输入格式（如纯文本）转换为打印机能够理解的格式（如 PostScript(R) 或 `PCL`）。过滤器还可用于提供其他功能，例如添加页码或突出显示源代码，使其更易于阅读。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:427
+#, fuzzy
 msgid ""
 "The filters discussed here are _input filters_ or _text filters_.  These "
 "filters convert the incoming file into different forms.  Use man:su[1] to "
 "become `root` before creating the files."
-msgstr ""
+msgstr "此处讨论的过滤器是__输入过滤器__或__文本过滤器__。这些过滤器会将输入文件转换为其他格式。创建这些文件前，请使用 man:su[1] 切换到 `root` 身份。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:430
+#, fuzzy
 msgid ""
 "Filters are specified in [.filename]#/etc/printcap# with the `if=` "
 "identifier.  To use [.filename]#/usr/local/libexec/lf2crlf# as a filter, "
 "modify [.filename]#/etc/printcap# like this:"
-msgstr ""
+msgstr "在 [.filename]#/etc/printcap# 中使用 `if=` 标识符指定过滤器。要使用 [.filename]#/usr/local/libexec/lf2crlf# 作为过滤器，请按如下方式修改 [.filename]#/etc/printcap#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "lp:\\\n"
 "\t:lp=/dev/unlpt0:\\\n"
@@ -878,12 +914,13 @@ msgid ""
 "\t:sd=/var/spool/lpd/lp:\\\n"
 "\t:if=/usr/local/libexec/lf2crlf:\\   <.>\n"
 "\t:lf=/var/log/lpd-errs:\n"
-msgstr ""
+msgstr "lp:\\\n\t:lp=/dev/unlpt0:\\\n\t:sh:\\\n\t:mx#0:\\\n\t:sd=/var/spool/lpd/lp:\\\n\t:if=/usr/local/libexec/lf2crlf:\\   <.>\n\t:lf=/var/log/lpd-errs:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:443
+#, fuzzy
 msgid "`if=` identifies the _input filter_ that will be used on incoming text."
-msgstr ""
+msgstr "`if=` 用于指定将应用于输入文本的__输入过滤器__。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:448
@@ -911,10 +948,11 @@ msgstr "避免在纯文字打印机阶梯状打印"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:461
+#, fuzzy
 msgid ""
 "Typical FreeBSD text files contain only a single line feed character at the "
 "end of each line.  These lines will \"stairstep\" on a standard printer:"
-msgstr ""
+msgstr "典型的 FreeBSD 文本文件只在每行末尾包含一个换行符。在标准打印机上，这些行会呈现“阶梯状”："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:467
@@ -962,15 +1000,16 @@ msgstr "设置可执行权限权限:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:485
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 555 /usr/local/libexec/lf2crlf\n"
-msgstr ""
+msgstr "# chmod 555 /usr/local/libexec/lf2crlf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:488
 #: documentation/content/en/books/handbook/printing/_index.adoc:520
+#, fuzzy
 msgid "Modify [.filename]#/etc/printcap# to use the new filter:"
-msgstr ""
+msgstr "修改 [.filename]#/etc/printcap# 以使用新过滤器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:492
@@ -991,12 +1030,13 @@ msgstr "通过打印相同的纯文本文件来测试筛选器。回车将使每
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/printing/_index.adoc:498
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fancy Plain Text on PostScript(R) Printers with package:print/enscript[]"
-msgstr ""
+msgstr "使用 package:print/enscript[] 在 PostScript(R) 打印机上打印美观的纯文本"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:503
+#, fuzzy
 msgid ""
 "GNUEnscript converts plain text files into nicely-formatted PostScript(R) "
 "for printing on PostScript(R) printers.  It adds page numbers, wraps long "
@@ -1004,7 +1044,7 @@ msgid ""
 "easier to read.  Depending on the local paper size, install either package:"
 "print/enscript-letter[] or package:print/enscript-a4[] from the Ports "
 "Collection."
-msgstr ""
+msgstr "GNUEnscript 可将纯文本文件转换为格式美观的 PostScript(R)，以便在 PostScript(R) 打印机上打印。它会添加页码、换行处理长行，并提供许多其他功能，让打印出的文本文件更易于阅读。根据本地纸张尺寸，从 Ports Collection 安装 package:print/enscript-letter[] 或 package:print/enscript-a4[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:505
@@ -1024,9 +1064,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:517
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 555 /usr/local/libexec/enscript\n"
-msgstr ""
+msgstr "# chmod 555 /usr/local/libexec/enscript\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:524
@@ -1041,29 +1081,32 @@ msgstr "通过打印纯文本文件来测试过滤器。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/printing/_index.adoc:529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Printing PostScript(R) to `PCL` Printers"
-msgstr ""
+msgstr "将 PostScript(R) 打印到 `PCL` 打印机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:534
+#, fuzzy
 msgid ""
 "Many programs produce PostScript(R) documents.  However, inexpensive "
 "printers often only understand plain text or `PCL`.  This filter converts "
 "PostScript(R) files to `PCL` before sending them to the printer."
-msgstr ""
+msgstr "许多程序会生成 PostScript(R) 文档。不过，廉价打印机通常只能理解纯文本或 `PCL`。此过滤器会将 PostScript(R) 文件转换为 `PCL`，然后再发送到打印机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:536
+#, fuzzy
 msgid ""
 "Install the Ghostscript PostScript(R) interpreter, package:print/"
 "ghostscript9-base[], from the Ports Collection."
-msgstr ""
+msgstr "从 Ports Collection 安装 Ghostscript PostScript(R) 解释器 package:print/ghostscript9-base[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:538
+#, fuzzy
 msgid "Create [.filename]#/usr/local/libexec/ps2pcl# with these contents:"
-msgstr ""
+msgstr "使用以下内容创建 [.filename]#/usr/local/libexec/ps2pcl#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:543
@@ -1077,22 +1120,24 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:550
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 555 /usr/local/libexec/ps2pcl\n"
-msgstr ""
+msgstr "# chmod 555 /usr/local/libexec/ps2pcl\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:553
+#, fuzzy
 msgid ""
 "PostScript(R) input sent to this script will be rendered and converted to "
 "`PCL` before being sent on to the printer."
-msgstr ""
+msgstr "发送到此脚本的 PostScript(R) 输入会被渲染并转换为 `PCL`，然后发送到打印机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:555
 #: documentation/content/en/books/handbook/printing/_index.adoc:610
+#, fuzzy
 msgid "Modify [.filename]#/etc/printcap# to use this new input filter:"
-msgstr ""
+msgstr "修改 [.filename]#/etc/printcap# 以使用此新输入过滤器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:559
@@ -1102,16 +1147,17 @@ msgstr ":if=/usr/local/libexec/ps2pcl:\\\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:562
+#, fuzzy
 msgid "Test the filter by sending a small PostScript(R) program to it:"
-msgstr ""
+msgstr "向过滤器发送一个简短的 PostScript(R) 程序，以测试过滤器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:567
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% printf \"%%\\!PS \\n /Helvetica findfont 18 scalefont setfont \\\n"
 "72 432 moveto (PostScript printing successful.) show showpage \\004\" | lpr\n"
-msgstr ""
+msgstr "% printf \"%%\\!PS \\n /Helvetica findfont 18 scalefont setfont \\\n72 432 moveto (PostScript printing successful.) show showpage \\004\" | lpr\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/printing/_index.adoc:570
@@ -1121,6 +1167,7 @@ msgstr "智能过滤器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:578
+#, fuzzy
 msgid ""
 "A filter that detects the type of input and automatically converts it to the "
 "correct format for the printer can be very convenient.  The first two "
@@ -1129,11 +1176,11 @@ msgid ""
 "printer unchanged.  Text files can be converted to PostScript(R) with "
 "Enscript as shown earlier.  Create [.filename]#/usr/local/libexec/psif# with "
 "these contents:"
-msgstr ""
+msgstr "能够检测输入类型并自动将其转换为打印机正确格式的过滤器非常方便。PostScript(R) 文件的前两个字符通常是 `%!`。过滤器可以检测这两个字符。PostScript(R) 文件可以不经更改直接发送到 PostScript(R) 打印机。文本文件可以像前文所示，使用 Enscript 转换为 PostScript(R)。创建 [.filename]#/usr/local/libexec/psif#，内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:587
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#!/bin/sh\n"
 "#\n"
@@ -1141,11 +1188,11 @@ msgid ""
 "#\n"
 "IFS=\"\" read -r first_line\n"
 "first_two_chars=`expr \"$first_line\" : '\\(..\\)'`\n"
-msgstr ""
+msgstr "#!/bin/sh\n#\n#  psif - Print PostScript or plain text on a PostScript printer\n#\nIFS=\"\" read -r first_line\nfirst_two_chars=`expr \"$first_line\" : '\\(..\\)'`\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:600
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "case \"$first_two_chars\" in\n"
 "%!)\n"
@@ -1159,13 +1206,13 @@ msgid ""
 "    exit 2\n"
 "    ;;\n"
 "esac\n"
-msgstr ""
+msgstr "case \"$first_two_chars\" in\n%!)\n    # %! : PostScript job, print it.\n    echo \"$first_line\" && cat && exit 0\n    exit 2\n    ;;\n*)\n    # otherwise, format with enscript\n    ( echo \"$first_line\"; cat ) | /usr/local/bin/enscript -o - && exit 0\n    exit 2\n    ;;\nesac\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:607
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chmod 555 /usr/local/libexec/psif\n"
-msgstr ""
+msgstr "# chmod 555 /usr/local/libexec/psif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:614
@@ -1175,8 +1222,9 @@ msgstr ":if=/usr/local/libexec/psif:\\\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:617
+#, fuzzy
 msgid "Test the filter by printing PostScript(R) and plain text files."
-msgstr ""
+msgstr "通过打印 PostScript(R) 文件和纯文本文件来测试过滤器。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:619
@@ -1199,16 +1247,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:628
+#, fuzzy
 msgid ""
 "As an example, consider a networked PostScript(R) laser printer in an "
 "office.  Most users want to print plain text, but a few advanced users want "
 "to be able to print PostScript(R) files directly.  Two entries can be "
 "created for the same printer in [.filename]#/etc/printcap#:"
-msgstr ""
+msgstr "例如，设想办公室里有一台联网的 PostScript(R) 激光打印机。大多数用户需要打印纯文本，但少数高级用户希望能够直接打印 PostScript(R) 文件。可以在 [.filename]#/etc/printcap# 中为同一台打印机创建两个条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "textprinter:\\\n"
 "\t:lp=9100@officelaser:\\\n"
@@ -1217,11 +1266,11 @@ msgid ""
 "\t:sd=/var/spool/lpd/textprinter:\\\n"
 "\t:if=/usr/local/libexec/enscript:\\\n"
 "\t:lf=/var/log/lpd-errs:\n"
-msgstr ""
+msgstr "textprinter:\\\n\t:lp=9100@officelaser:\\\n\t:sh:\\\n\t:mx#0:\\\n\t:sd=/var/spool/lpd/textprinter:\\\n\t:if=/usr/local/libexec/enscript:\\\n\t:lf=/var/log/lpd-errs:\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "psprinter:\\\n"
 "\t:lp=9100@officelaser:\\\n"
@@ -1229,15 +1278,16 @@ msgid ""
 "\t:mx#0:\\\n"
 "\t:sd=/var/spool/lpd/psprinter:\\\n"
 "\t:lf=/var/log/lpd-errs:\n"
-msgstr ""
+msgstr "psprinter:\\\n\t:lp=9100@officelaser:\\\n\t:sh:\\\n\t:mx#0:\\\n\t:sd=/var/spool/lpd/psprinter:\\\n\t:lf=/var/log/lpd-errs:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:649
+#, fuzzy
 msgid ""
 "Documents sent to `textprinter` will be formatted by the [.filename]#/usr/"
 "local/libexec/enscript# filter shown in an earlier example.  Advanced users "
 "can print PostScript(R) files on `psprinter`, where no filtering is done."
-msgstr ""
+msgstr "发送到 `textprinter` 的文档将由前文示例中的 [.filename]#/usr/local/libexec/enscript# 过滤器进行格式化。高级用户可以通过 `psprinter` 打印 PostScript(R) 文件，该打印机不执行过滤。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:652
@@ -1274,16 +1324,17 @@ msgstr "有几个程序可用于监视打印作业以及检查和控制打印机
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/printing/_index.adoc:659
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:lpq[1]"
-msgstr ""
+msgstr "man:lpq[1]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:663
+#, fuzzy
 msgid ""
 "man:lpq[1] shows the status of a user's print jobs.  Print jobs from other "
 "users are not shown."
-msgstr ""
+msgstr "man:lpq[1] 显示用户打印作业的状态。不会显示其他用户的打印作业。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:665
@@ -1292,12 +1343,12 @@ msgstr "在单个打印机上显示当前用户的待处理作业："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:671
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lpq -Plp\n"
 "Rank   Owner      Job  Files                                 Total Size\n"
 "1st    jsmith     0    (standard input)                      12792 bytes\n"
-msgstr ""
+msgstr "% lpq -Plp\nRank   Owner      Job  Files                                 Total Size\n1st    jsmith     0    (standard input)                      12792 bytes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:674
@@ -1306,35 +1357,36 @@ msgstr "在所有打印机上显示当前用户的待处理作业："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:681
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lpq -a\n"
 "lp:\n"
 "Rank   Owner      Job  Files                                 Total Size\n"
 "1st    jsmith     1    (standard input)                      27320 bytes\n"
-msgstr ""
+msgstr "% lpq -a\nlp:\nRank   Owner      Job  Files                                 Total Size\n1st    jsmith     1    (standard input)                      27320 bytes\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:685
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "laser:\n"
 "Rank   Owner      Job  Files                                 Total Size\n"
 "1st    jsmith     287  (standard input)                      22443 bytes\n"
-msgstr ""
+msgstr "laser:\nRank   Owner      Job  Files                                 Total Size\n1st    jsmith     287  (standard input)                      22443 bytes\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/printing/_index.adoc:688
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:lprm[1]"
-msgstr ""
+msgstr "man:lprm[1]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:693
+#, fuzzy
 msgid ""
 "man:lprm[1] is used to remove print jobs.  Normal users are only allowed to "
 "remove their own jobs.  `root` can remove any or all jobs."
-msgstr ""
+msgstr "man:lprm[1] 用于删除打印作业。普通用户只能删除自己的作业。`root` 可以删除任意或所有作业。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:695
@@ -1343,7 +1395,7 @@ msgstr "从打印机中删除所有未解决的作业："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:705
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# lprm -Plp -\n"
 "dfA002smithy dequeued\n"
@@ -1352,48 +1404,50 @@ msgid ""
 "cfA003smithy dequeued\n"
 "dfA004smithy dequeued\n"
 "cfA004smithy dequeued\n"
-msgstr ""
+msgstr "# lprm -Plp -\ndfA002smithy dequeued\ncfA002smithy dequeued\ndfA003smithy dequeued\ncfA003smithy dequeued\ndfA004smithy dequeued\ncfA004smithy dequeued\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:709
+#, fuzzy
 msgid ""
 "Remove a single job from a printer.  man:lpq[1] is used to find the job "
 "number."
-msgstr ""
+msgstr "从打印机中删除单个作业。使用 man:lpq[1] 查找作业编号。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:715
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lpq\n"
 "Rank   Owner      Job  Files                                 Total Size\n"
 "1st    jsmith     5    (standard input)                      12188 bytes\n"
-msgstr ""
+msgstr "% lpq\nRank   Owner      Job  Files                                 Total Size\n1st    jsmith     5    (standard input)                      12188 bytes\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:719
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lprm -Plp 5\n"
 "dfA005smithy dequeued\n"
 "cfA005smithy dequeued\n"
-msgstr ""
+msgstr "% lprm -Plp 5\ndfA005smithy dequeued\ncfA005smithy dequeued\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/printing/_index.adoc:722
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:lpc[8]"
-msgstr ""
+msgstr "man:lpc[8]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:729
+#, fuzzy
 msgid ""
 "man:lpc[8] is used to check and modify printer status.  `lpc` is followed by "
 "a command and an optional printer name.  `all` can be used instead of a "
 "specific printer name, and the command will be applied to all printers.  "
 "Normal users can view status with man:lpc[8].  Only `root` can use commands "
 "which modify printer status."
-msgstr ""
+msgstr "man:lpc[8] 用于检查和修改打印机状态。`lpc` 后跟一个命令和可选的打印机名称。可以用 `all` 代替特定的打印机名称，这样命令就会应用于所有打印机。普通用户可以使用 man:lpc[8] 查看状态。只有 `root` 可以使用修改打印机状态的命令。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:731
@@ -1402,7 +1456,7 @@ msgstr "显示所有打印机的状态:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:745
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lpc status all\n"
 "lp:\n"
@@ -1415,7 +1469,7 @@ msgid ""
 "\tprinting is enabled\n"
 "\t1 entry in spool area\n"
 "\twaiting for laser to come up\n"
-msgstr ""
+msgstr "% lpc status all\nlp:\n\tqueuing is enabled\n\tprinting is enabled\n\t1 entry in spool area\n\tprinter idle\nlaser:\n\tqueuing is enabled\n\tprinting is enabled\n\t1 entry in spool area\n\twaiting for laser to come up\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:748
@@ -1426,7 +1480,7 @@ msgstr "防止打印机接受新作业, 然后再次开始接受新作业:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# lpc disable lp\n"
 "lp:\n"
@@ -1434,7 +1488,7 @@ msgid ""
 "# lpc enable lp\n"
 "lp:\n"
 "\tqueuing enabled\n"
-msgstr ""
+msgstr "# lpc disable lp\nlp:\n\tqueuing disabled\n# lpc enable lp\nlp:\n\tqueuing enabled\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:761
@@ -1447,7 +1501,7 @@ msgstr "停止打印, 但继续接受新作业。然后重新开始打印:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:771
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# lpc stop lp\n"
 "lp:\n"
@@ -1456,7 +1510,7 @@ msgid ""
 "lp:\n"
 "\tprinting enabled\n"
 "\tdaemon started\n"
-msgstr ""
+msgstr "# lpc stop lp\nlp:\n\tprinting disabled\n# lpc start lp\nlp:\n\tprinting enabled\n\tdaemon started\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:774
@@ -1465,14 +1519,14 @@ msgstr "在出现某些错误情况后重新启动打印机:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# lpc restart lp\n"
 "lp:\n"
 "\tno daemon to abort\n"
 "\tprinting enabled\n"
 "\tdaemon restarted\n"
-msgstr ""
+msgstr "# lpc restart lp\nlp:\n\tno daemon to abort\n\tprinting enabled\n\tdaemon restarted\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:785
@@ -1483,13 +1537,13 @@ msgstr "关闭打印队列并禁用打印，并向用户返回错误信息:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:792
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# lpc down lp Repair parts will arrive on Monday\n"
 "lp:\n"
 "\tprinter and queuing disabled\n"
 "\tstatus message is now: Repair parts will arrive on Monday\n"
-msgstr ""
+msgstr "# lpc down lp Repair parts will arrive on Monday\nlp:\n\tprinter and queuing disabled\n\tstatus message is now: Repair parts will arrive on Monday\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:795
@@ -1498,18 +1552,19 @@ msgstr "重新启用已关闭的打印机:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:802
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# lpc up lp\n"
 "lp:\n"
 "\tprinting enabled\n"
 "\tdaemon started\n"
-msgstr ""
+msgstr "# lpc up lp\nlp:\n\tprinting enabled\n\tdaemon started\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:805
+#, fuzzy
 msgid "See man:lpc[8] for more commands and options."
-msgstr ""
+msgstr "更多命令和选项，请参阅 man:lpc[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:807
@@ -1536,17 +1591,18 @@ msgstr "别名"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:818
+#, fuzzy
 msgid ""
 "The printer name is set in the first line of the entry in [.filename]#/etc/"
 "printcap#.  Additional names, or _aliases_, can be added after that name.  "
 "Aliases are separated from the name and each other by vertical bars:"
-msgstr ""
+msgstr "打印机名称设置在 [.filename]#/etc/printcap# 条目的第一行中。可以在该名称后添加其他名称，即__别名__。别名与打印机名称以及彼此之间均以竖线分隔："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:822
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lp|repairsprinter|salesprinter:\\\n"
-msgstr ""
+msgstr "lp|repairsprinter|salesprinter:\\\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:826
@@ -1561,20 +1617,21 @@ msgstr "可以使用别名代替打印机名称。例如，销售部门的用户
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:830
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lpr -Psalesprinter sales-report.txt\n"
-msgstr ""
+msgstr "% lpr -Psalesprinter sales-report.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:833
+#, fuzzy
 msgid "Users in the Repairs department print to _their_ printer with"
-msgstr ""
+msgstr "维修部门的用户使用自己的打印机进行打印："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/printing/_index.adoc:837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lpr -Prepairsprinter repairs-report.txt\n"
-msgstr ""
+msgstr "% lpr -Prepairsprinter repairs-report.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:842
@@ -1619,14 +1676,16 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:852
+#, fuzzy
 msgid ""
 "Enabling header pages differs depending on whether the printer is connected "
 "directly to the computer with a `USB`, parallel, or serial cable, or is "
 "connected remotely over a network."
-msgstr ""
+msgstr "启用标题页的方式取决于打印机是通过 `USB`、并行或串行线缆直接连接到计算机，还是通过网络远程连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:857
+#, fuzzy
 msgid ""
 "Header pages on directly-connected printers are enabled by removing the `:sh:"
 "\\` (Suppress Header) line from the entry in [.filename]#/etc/printcap#.  "
@@ -1634,7 +1693,7 @@ msgid ""
 "printers will need the [.filename]#/usr/share/examples/printing/hpif# filter "
 "to prevent stairstepped text.  The filter configures `PCL` printers to print "
 "both carriage returns and line feeds when a line feed is received."
-msgstr ""
+msgstr "对于直接连接的打印机，从 [.filename]#/etc/printcap# 条目中删除 `:sh:\\`（Suppress Header，抑制标题）行即可启用标题页。这些标题页仅使用换行符表示新行。有些打印机需要使用 [.filename]#/usr/share/examples/printing/hpif# 过滤器，以避免文本出现阶梯状错位。收到换行符时，该过滤器会配置 `PCL` 打印机同时打印回车符和换行符。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:861
@@ -1657,22 +1716,25 @@ msgstr "参考文献"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:866
+#, fuzzy
 msgid "Example files: [.filename]#/usr/share/examples/printing/#."
-msgstr ""
+msgstr "示例文件：[.filename]#/usr/share/examples/printing/#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:868
+#, fuzzy
 msgid ""
 "The _4.3BSD Line Printer Spooler Manual_, [.filename]#/usr/share/doc/smm/07."
 "lpd/paper.ascii.gz#."
-msgstr ""
+msgstr "《_4.3BSD 行式打印机假脱机程序手册_》，[.filename]#/usr/share/doc/smm/07.lpd/paper.ascii.gz#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:870
+#, fuzzy
 msgid ""
 "Manual pages: man:printcap[5], man:lpd[8], man:lpr[1], man:lpc[8], man:"
 "lprm[1], man:lpq[1]."
-msgstr ""
+msgstr "手册页：man:printcap[5]、man:lpd[8]、man:lpr[1]、man:lpc[8]、man:lprm[1]、man:lpq[1]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/printing/_index.adoc:872
@@ -1682,25 +1744,27 @@ msgstr "其他打印系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:876
+#, fuzzy
 msgid ""
 "Several other printing systems are available in addition to the built-in man:"
 "lpd[8].  These systems offer support for other protocols or additional "
 "features."
-msgstr ""
+msgstr "除了内置的 man:lpd[8]，还有其他几种打印系统可供使用。这些系统支持其他协议或提供额外功能。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:878
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CUPS (Common UNIX(R) Printing System)"
-msgstr ""
+msgstr "CUPS（通用 UNIX(R) 打印系统）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:882
+#, fuzzy
 msgid ""
 "CUPS is a popular printing system available on many operating systems.  "
 "Using CUPS on FreeBSD is documented in a separate article: extref:{cups}"
 "[CUPS]"
-msgstr ""
+msgstr "CUPS 是一种广泛应用于多种操作系统的打印系统。FreeBSD 上使用 CUPS 的相关说明见另一篇文章：extref:{cups}[CUPS]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:884
@@ -1710,6 +1774,7 @@ msgstr "HPLIP"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:891
+#, fuzzy
 msgid ""
 "Hewlett Packard provides a printing system that supports many of their "
 "inkjet and laser printers.  The port is package:print/hplip[].  The main web "
@@ -1717,7 +1782,7 @@ msgid ""
 "port handles all the installation details on FreeBSD.  Configuration "
 "information is shown at https://developers.hp.com/hp-linux-imaging-and-"
 "printing/install[]."
-msgstr ""
+msgstr "Hewlett Packard 提供了一种打印系统，支持其许多喷墨打印机和激光打印机。其移植软件包为 package:print/hplip[]。主页位于 link:https://developers.hp.com/hp-linux-imaging-and-printing[]。该移植软件包会处理 FreeBSD 上的所有安装细节。配置说明见 link:https://developers.hp.com/hp-linux-imaging-and-printing/install[]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/printing/_index.adoc:893
@@ -1727,11 +1792,12 @@ msgstr "LPRng"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/printing/_index.adoc:897
+#, fuzzy
 msgid ""
 "LPRng was developed as an enhanced alternative to man:lpd[8].  The port is "
 "package:sysutils/LPRng[].  For details and documentation, see https://lprng."
 "sourceforge.net/[]."
-msgstr ""
+msgstr "LPRng 是作为 man:lpd[8] 的增强型替代方案开发的。其移植软件包为 package:sysutils/LPRng[]。详情和文档见 link:https://lprng.sourceforge.net/[]。"
 
 #, no-wrap
 #~ msgid "Other Smart Filters"

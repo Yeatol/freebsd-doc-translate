@@ -17,12 +17,12 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/partii.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Interprocess Communication"
-msgstr ""
+msgstr "第二部分：进程间通信"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/partii.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Interprocess Communication"
-msgstr ""
+msgstr "进程间通信"

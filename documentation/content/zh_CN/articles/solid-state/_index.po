@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/solid-state/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The use of solid state disk devices in FreeBSD"
-msgstr ""
+msgstr "在 FreeBSD 中使用固态磁盘设备"
 
 #. type: Title =
 #: documentation/content/en/articles/solid-state/_index.adoc:1
 #: documentation/content/en/articles/solid-state/_index.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD and Solid State Devices"
-msgstr ""
+msgstr "FreeBSD 与固态设备"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:44
@@ -37,22 +37,25 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:46
+#, fuzzy
 msgid ""
 "This article covers the use of solid state disk devices in FreeBSD to create "
 "embedded systems."
-msgstr ""
+msgstr "本文介绍如何在 FreeBSD 中使用固态磁盘设备来创建嵌入式系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:49
+#, fuzzy
 msgid ""
 "Embedded systems have the advantage of increased stability due to the lack "
 "of integral moving parts (hard drives).  Account must be taken, however, for "
 "the generally low disk space available in the system and the durability of "
 "the storage medium."
-msgstr ""
+msgstr "嵌入式系统没有硬盘等内置活动部件，因此稳定性更高。不过，必须考虑系统通常可用磁盘空间较少，以及存储介质的耐用性。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:52
+#, fuzzy
 msgid ""
 "Specific topics to be covered include the types and attributes of solid "
 "state media suitable for disk use in FreeBSD, kernel options that are of "
@@ -61,7 +64,7 @@ msgid ""
 "filesystems, and building filesystems from scratch.  The article will "
 "conclude with some general strategies for small and read-only FreeBSD "
 "environments."
-msgstr ""
+msgstr "本文将介绍适合在 FreeBSD 中用作磁盘的固态介质类型及其特性、在此类环境中值得关注的内核选项、用于自动初始化此类系统的 [.filename]#rc.initdiskless# 机制、只读文件系统的必要性，以及如何从头构建文件系统。最后，本文将介绍一些适用于小型和只读 FreeBSD 环境的通用策略。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:54
@@ -70,12 +73,13 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/solid-state/_index.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Solid State Disk Devices"
-msgstr ""
+msgstr "固态磁盘设备"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:68
+#, fuzzy
 msgid ""
 "The scope of this article will be limited to solid state disk devices made "
 "from flash memory.  Flash memory is a solid state memory (no moving parts) "
@@ -94,10 +98,11 @@ msgid ""
 "Competitive units have between 1,000,000 and 10,000,000 writes per sector in "
 "their specification.  This figure varies due to the temperature of the "
 "environment."
-msgstr ""
+msgstr "本文仅讨论由闪存制成的固态磁盘设备。闪存是一种固态存储器（没有活动部件），具有非易失性（即使断开所有电源，存储器仍会保留数据）。闪存能够承受巨大的物理冲击，速度也相当快（本文介绍的闪存解决方案在写入操作上稍慢于 EIDE 硬盘，而读取操作则快得多）。闪存的一个重要特性将在本文后续部分讨论：每个扇区的可重写次数有限。在扇区永久无法使用之前，只能对闪存扇区写入、擦除，再写入有限次数。尽管许多闪存产品会自动映射坏块，有些甚至会将写入操作均匀分布到整个设备上，但设备可承受的写入量仍然有限。具有竞争力的产品规格标明每个扇区可写入 1,000,000 到 10,000,000 次。此数值会随环境温度而变化。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:73
+#, fuzzy
 msgid ""
 "Specifically, we will be discussing ATA compatible compact-flash units, "
 "which are quite popular as storage media for digital cameras.  Of particular "
@@ -106,30 +111,33 @@ msgid ""
 "cost adaptor, these devices can be attached directly to an IDE bus in a "
 "computer.  Once implemented in this manner, operating systems such as "
 "FreeBSD see the device as a normal hard disk (albeit small)."
-msgstr ""
+msgstr "具体而言，本文将讨论 ATA 兼容的 CompactFlash 设备，它们是数码相机常用的存储介质。尤其值得注意的是，这类设备的引脚可直接连接到 IDE 总线，并且兼容 ATA 命令集。因此，只需一个非常简单且低成本的适配器，就能将这些设备直接连接到计算机的 IDE 总线。以这种方式接入后，FreeBSD 等操作系统会将其识别为普通硬盘（尽管容量较小）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:75
+#, fuzzy
 msgid ""
 "Other solid state disk solutions do exist, but their expense, obscurity, and "
 "relative unease of use places them beyond the scope of this article."
-msgstr ""
+msgstr "还有其他固态磁盘解决方案，但其价格高昂、鲜为人知且相对难以使用，因此不在本文讨论范围内。"
 
 #. type: Title ==
 #: documentation/content/en/articles/solid-state/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Options"
-msgstr ""
+msgstr "内核选项"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:80
+#, fuzzy
 msgid ""
 "A few kernel options are of specific interest to those creating an embedded "
 "FreeBSD system."
-msgstr ""
+msgstr "对于创建嵌入式 FreeBSD 系统的人来说，有几个内核选项特别值得关注。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:85
+#, fuzzy
 msgid ""
 "All embedded FreeBSD systems that use flash memory as system disk will be "
 "interested in memory disks and memory filesystems.  As a result of the "
@@ -139,36 +147,39 @@ msgid ""
 "mounted as memory filesystems to allow the system to create logs and update "
 "counters and temporary files.  Memory filesystems are a critical component "
 "to a successful solid state FreeBSD implementation."
-msgstr ""
+msgstr "所有使用闪存作为系统磁盘的嵌入式 FreeBSD 系统都需要关注内存磁盘和内存文件系统。由于闪存可执行的写入次数有限，磁盘及其上的文件系统很可能会以只读方式挂载。在这种环境下，[.filename]#/tmp# 和 [.filename]#/var# 等文件系统会作为内存文件系统挂载，以便系统创建日志、更新计数器和临时文件。内存文件系统是成功部署固态 FreeBSD 系统的关键组成部分。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/solid-state/_index.adoc:87
+#, fuzzy
 msgid ""
 "You should make sure the following lines exist in your kernel configuration "
 "file:"
-msgstr ""
+msgstr "请确认内核配置文件中包含以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options         MD_ROOT         # md device usable as a potential root device\n"
-msgstr ""
+msgstr "options         MD_ROOT         # md device usable as a potential root device\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/solid-state/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The `rc` Subsystem and Read-Only Filesystems"
-msgstr ""
+msgstr "`rc` 子系统与只读文件系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:97
+#, fuzzy
 msgid ""
 "The post-boot initialization of an embedded FreeBSD system is controlled by "
 "[.filename]#/etc/rc.initdiskless#."
-msgstr ""
+msgstr "嵌入式 FreeBSD 系统的启动后初始化由 [.filename]#/etc/rc.initdiskless# 控制。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:101
+#, fuzzy
 msgid ""
 "[.filename]#/etc/rc.d/var# mounts [.filename]#/var# as a memory filesystem, "
 "makes a configurable list of directories in [.filename]#/var# with the man:"
@@ -177,21 +188,23 @@ msgid ""
 "variable comes into play - `varsize`.  A [.filename]#/var# partition is "
 "created by [.filename]#/etc/rc.d/var# based on the value of this variable in "
 "[.filename]#rc.conf#:"
-msgstr ""
+msgstr "[.filename]#/etc/rc.d/var# 会将 [.filename]#/var# 挂载为内存文件系统，使用 man:mkdir[1] 命令在 [.filename]#/var# 中创建可配置的目录列表，并更改其中一些目录的权限。在执行 [.filename]#/etc/rc.d/var# 时，还会用到另一个 [.filename]#rc.conf# 变量：`varsize`。[.filename]#/etc/rc.d/var# 会根据 [.filename]#rc.conf# 中该变量的值创建 [.filename]#/var# 分区："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "varsize=8192\n"
-msgstr ""
+msgstr "varsize=8192\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:108
+#, fuzzy
 msgid "Remember that this value is in sectors by default."
-msgstr ""
+msgstr "请记住，默认情况下，此值的单位是扇区。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:115
+#, fuzzy
 msgid ""
 "The fact that [.filename]#/var# is a read-write filesystem is an important "
 "distinction, as the [.filename]#/# partition (and any other partitions you "
@@ -205,18 +218,19 @@ msgid ""
 "same.  Therefore, in addition to removing the `swap` entry from your [."
 "filename]#/etc/fstab#, you should also change the Options field for each "
 "filesystem to `ro` as follows:"
-msgstr ""
+msgstr "[.filename]#/var# 是读写文件系统，这一点很重要，因为 [.filename]#/# 分区（以及闪存介质上的任何其他分区）都应以只读方式挂载。请记住，在 crossref:solid-state[intro, Solid State Disk Devices] 中，我们详细介绍了闪存的局限性，尤其是写入能力有限。切勿将闪存介质上的文件系统以读写方式挂载，也切勿使用交换文件，这两点的重要性怎么强调都不为过。繁忙系统上的交换文件可能不到一年就会耗尽一块闪存介质的寿命。大量写入日志或频繁创建和删除临时文件也会造成同样的结果。因此，除了从 [.filename]#/etc/fstab# 中删除 `swap` 条目之外，还应将每个文件系统的 Options 字段改为 `ro`，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
 "/dev/ad0s1a             /               ufs     ro              1       1\n"
-msgstr ""
+msgstr "# Device                Mountpoint      FStype  Options         Dump    Pass#\n/dev/ad0s1a             /               ufs     ro              1       1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:127
+#, fuzzy
 msgid ""
 "A few applications in the average system will immediately begin to fail as a "
 "result of this change.  For instance, cron will not run properly as a result "
@@ -227,49 +241,53 @@ msgid ""
 "though, and are addressed, along with solutions to the execution of other "
 "common software packages in crossref:solid-state[strategies, System "
 "Strategies for Small and Read Only Environments]."
-msgstr ""
+msgstr "此更改会导致普通系统中的一些应用程序立即开始出错。例如，由于 [.filename]#/etc/rc.d/var# 创建的 [.filename]#/var# 中缺少 cron 表，cron 将无法正常运行；syslog 和 dhcp 也会因文件系统只读，以及 [.filename]#/etc/rc.d/var# 创建的 [.filename]#/var# 中缺少项目而遇到问题。不过，这些都只是暂时性问题，关于如何解决这些问题以及如何运行其他常见软件包，将在 crossref:solid-state[strategies, System Strategies for Small and Read Only Environments] 中介绍。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:129
+#, fuzzy
 msgid ""
 "An important thing to remember is that a filesystem that was mounted read-"
 "only with [.filename]#/etc/fstab# can be made read-write at any time by "
 "issuing the command:"
-msgstr ""
+msgstr "请记住，通过 [.filename]#/etc/fstab# 以只读方式挂载的文件系统，可以随时使用以下命令改为读写："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /sbin/mount -uw partition\n"
-msgstr ""
+msgstr "# /sbin/mount -uw partition\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:136
+#, fuzzy
 msgid "and can be toggled back to read-only with the command:"
-msgstr ""
+msgstr "使用以下命令可以切换回只读："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /sbin/mount -ur partition\n"
-msgstr ""
+msgstr "# /sbin/mount -ur partition\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/solid-state/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building a File System from Scratch"
-msgstr ""
+msgstr "从头构建文件系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:145
+#, fuzzy
 msgid ""
 "Since ATA compatible compact-flash cards are seen by FreeBSD as normal IDE "
 "hard drives, you could theoretically install FreeBSD from the network using "
 "the kern and mfsroot floppies or from a CD."
-msgstr ""
+msgstr "由于 FreeBSD 会将 ATA 兼容的 CompactFlash 卡识别为普通 IDE 硬盘，理论上可以使用 kern 和 mfsroot 软盘，或从 CD 通过网络安装 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:148
+#, fuzzy
 msgid ""
 "However, even a small installation of FreeBSD using normal installation "
 "procedures can produce a system in size of greater than 200 megabytes.  Most "
@@ -277,10 +295,11 @@ msgid ""
 "considered fairly large - 32 or even 16 megabytes is common), so an "
 "installation using normal mechanisms is not possible-there is simply not "
 "enough disk space for even the smallest of conventional installations."
-msgstr ""
+msgstr "然而，即使使用常规安装流程进行小型 FreeBSD 安装，系统也可能超过 200 兆字节。大多数人使用的闪存设备容量更小（128 兆字节已算相当大，32 甚至 16 兆字节则很常见），因此无法使用常规方式安装：磁盘空间实在不足以容纳最小规模的常规安装。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:154
+#, fuzzy
 msgid ""
 "The easiest way to overcome this space limitation is to install FreeBSD "
 "using conventional means to a normal hard disk.  After the installation is "
@@ -291,15 +310,17 @@ msgid ""
 "operations such as partitioning, labeling, file-system creation, etc. need "
 "to be performed by hand.  In addition to the kern and mfsroot floppy disks, "
 "you will also need to use the fixit floppy."
-msgstr ""
+msgstr "克服空间限制最简单的方法，是先用常规方式将 FreeBSD 安装到普通硬盘上。安装完成后，将操作系统精简到能够放入闪存介质的大小，然后将整个文件系统打包为 tar 文件。以下步骤将指导你为这个 tar 文件中的文件系统准备闪存介质。请记住，由于这不是常规安装，分区、设置标签、创建文件系统等操作都需要手动完成。除 kern 和 mfsroot 软盘外，还需要使用 fixit 软盘。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:158
+#, fuzzy
 msgid "Partitioning Your Flash Media Device"
-msgstr ""
+msgstr "为闪存介质设备分区"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:168
+#, fuzzy
 msgid ""
 "After booting with the kern and mfsroot floppies, choose `custom` from the "
 "installation menu.  In the custom installation menu, choose `partition`.  In "
@@ -312,92 +333,100 @@ msgid ""
 "card, you should choose the FreeBSD Boot Manager.  Now press kbd:[q] to quit "
 "the partition menu.  You will be shown the boot manager menu once more - "
 "repeat the choice you made earlier."
-msgstr ""
+msgstr "使用 kern 和 mfsroot 软盘启动后，在安装菜单中选择 `custom`。在自定义安装菜单中选择 `partition`。在分区菜单中，按 kbd:[d] 删除所有现有分区。删除所有现有分区后，按 kbd:[c] 创建一个分区，并接受默认分区大小。系统询问分区类型时，请确保值为 `165`。现在按 kbd:[w] 将此分区表写入磁盘（这是此屏幕上的隐藏选项）。如果使用 ATA 兼容的 CompactFlash 卡，请选择 FreeBSD Boot Manager。然后按 kbd:[q] 退出分区菜单。接下来会再次显示引导管理器菜单，请重复之前的选择。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:169
+#, fuzzy
 msgid "Creating Filesystems on Your Flash Memory Device"
-msgstr ""
+msgstr "在闪存设备上创建文件系统"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:172
+#, fuzzy
 msgid ""
 "Exit the custom installation menu, and from the main installation menu "
 "choose the `fixit` option.  After entering the fixit environment, enter the "
 "following command:"
-msgstr ""
+msgstr "退出自定义安装菜单，然后在主安装菜单中选择 `fixit`。进入 fixit 环境后，输入以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# disklabel -e /dev/ad0c\n"
-msgstr ""
+msgstr "# disklabel -e /dev/ad0c\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:180
+#, fuzzy
 msgid ""
 "At this point you will have entered the vi editor under the auspices of the "
 "disklabel command.  Next, you need to add an `a:` line at the end of the "
 "file. This `a:` line should look like:"
-msgstr ""
+msgstr "此时，disklabel 命令会启动 vi 编辑器。接下来，需要在文件末尾添加一行 `a:`。此行应如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "a:      123456  0       4.2BSD  0       0\n"
-msgstr ""
+msgstr "a:      123456  0       4.2BSD  0       0\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:189
+#, fuzzy
 msgid ""
 "Where _123456_ is a number that is exactly the same as the number in the "
 "existing `c:` entry for size.  Basically you are duplicating the existing `c:"
 "` line as an `a:` line, making sure that fstype is `4.2BSD`.  Save the file "
 "and exit."
-msgstr ""
+msgstr "其中，_123456_ 是一个数字，必须与现有 `c:` 条目中的 size 数值完全相同。基本上，就是将现有的 `c:` 行复制为 `a:` 行，并确保 fstype 为 `4.2BSD`。保存文件并退出。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# disklabel -B -r /dev/ad0c\n"
 "# newfs /dev/ad0a\n"
-msgstr ""
+msgstr "# disklabel -B -r /dev/ad0c\n# newfs /dev/ad0a\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:197
+#, fuzzy
 msgid "Placing Your Filesystem on the Flash Media"
-msgstr ""
+msgstr "将文件系统写入闪存介质"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:199
+#, fuzzy
 msgid "Mount the newly prepared flash media:"
-msgstr ""
+msgstr "挂载刚准备好的闪存介质："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /dev/ad0a /flash\n"
-msgstr ""
+msgstr "# mount /dev/ad0a /flash\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:207
+#, fuzzy
 msgid ""
 "Bring this machine up on the network so we may transfer our tar file and "
 "explode it onto our flash media filesystem.  One example of how to do this "
 "is:"
-msgstr ""
+msgstr "让这台机器接入网络，以便传输 tar 文件并将其解压到闪存介质的文件系统中。以下是一个示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig xl0 192.168.0.10 netmask 255.255.255.0\n"
 "# route add default 192.168.0.1\n"
-msgstr ""
+msgstr "# ifconfig xl0 192.168.0.10 netmask 255.255.255.0\n# route add default 192.168.0.1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:218
+#, fuzzy
 msgid ""
 "Now that the machine is on the network, transfer your tar file.  You may be "
 "faced with a bit of a dilemma at this point - if your flash memory part is "
@@ -407,58 +436,62 @@ msgid ""
 "you are using FTP, is to untar the file while it is transferred over FTP.  "
 "If you perform your transfer in this manner, you will never have the tar "
 "file and the tar contents on your disk at the same time:"
-msgstr ""
+msgstr "现在机器已接入网络，可以传输 tar 文件了。此时可能会遇到一个难题：例如，如果闪存容量为 128 兆字节，而 tar 文件大于 64 兆字节，就无法在解压文件的同时将 tar 文件也存放在闪存介质上，因为空间会不够。如果使用 FTP，一种解决办法是在传输过程中解包。这样操作，就不会同时在磁盘上存放 tar 文件及其解包后的内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ftp> get tarfile.tar \"| tar xvf -\"\n"
-msgstr ""
+msgstr "ftp> get tarfile.tar \"| tar xvf -\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:225
+#, fuzzy
 msgid "If your tarfile is gzipped, you can accomplish this as well:"
-msgstr ""
+msgstr "如果 tar 文件经过 gzip 压缩，也可以这样处理："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ftp> get tarfile.tar \"| zcat | tar xvf -\"\n"
-msgstr ""
+msgstr "ftp> get tarfile.tar \"| zcat | tar xvf -\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:232
+#, fuzzy
 msgid ""
 "After the contents of your tarred filesystem are on your flash memory "
 "filesystem, you can unmount the flash memory and reboot:"
-msgstr ""
+msgstr "tar 文件系统的内容写入闪存文件系统后，可以卸载闪存并重新启动："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /\n"
 "# umount /flash\n"
 "# exit\n"
-msgstr ""
+msgstr "# cd /\n# umount /flash\n# exit\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:241
+#, fuzzy
 msgid ""
 "Assuming that you configured your filesystem correctly when it was built on "
 "the normal hard disk (with your filesystems mounted read-only, and with the "
 "necessary options compiled into the kernel) you should now be successfully "
 "booting your FreeBSD embedded system."
-msgstr ""
+msgstr "如果在普通硬盘上构建文件系统时配置正确（文件系统以只读方式挂载，并且内核已编译所需选项），现在应该就能成功启动嵌入式 FreeBSD 系统。"
 
 #. type: Title ==
 #: documentation/content/en/articles/solid-state/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System Strategies for Small and Read Only Environments"
-msgstr ""
+msgstr "小型和只读环境的系统策略"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:248
+#, fuzzy
 msgid ""
 "In crossref:solid-state[ro-fs, The `rc` Subsystem and Read-Only "
 "Filesystems], it was pointed out that the [.filename]#/var# filesystem "
@@ -466,25 +499,27 @@ msgid ""
 "root filesystem causes problems with many common software packages used with "
 "FreeBSD.  In this article, suggestions for successfully running cron, "
 "syslog, ports installations, and the Apache web server will be provided."
-msgstr ""
+msgstr "在 crossref:solid-state[ro-fs, The `rc` Subsystem and Read-Only Filesystems] 中曾指出，由 [.filename]#/etc/rc.d/var# 构建的 [.filename]#/var# 文件系统以及只读根文件系统，会导致 FreeBSD 中许多常见软件包出现问题。本文将提供成功运行 cron、syslog、安装 ports 和 Apache Web 服务器的建议。"
 
 #. type: Title ===
 #: documentation/content/en/articles/solid-state/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cron"
-msgstr ""
+msgstr "Cron"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:252
+#, fuzzy
 msgid ""
 "Upon boot, [.filename]#/var# gets populated by [.filename]#/etc/rc.d/var# "
 "using the list from [.filename]#/etc/mtree/BSD.var.dist#, so the [."
 "filename]#cron#, [.filename]#cron/tabs#, [.filename]#at#, and a few other "
 "standard directories get created."
-msgstr ""
+msgstr "启动时，[.filename]#/etc/rc.d/var# 会根据 [.filename]#/etc/mtree/BSD.var.dist# 中的列表填充 [.filename]#/var#，从而创建 [.filename]#cron#、[.filename]#cron/tabs#、[.filename]#at# 以及其他几个标准目录。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:257
+#, fuzzy
 msgid ""
 "However, this does not solve the problem of maintaining cron tabs across "
 "reboots.  When the system reboots, the [.filename]#/var# filesystem that is "
@@ -497,40 +532,42 @@ msgid ""
 "created during system initialization.  You may also need to add a line that "
 "changes modes and permissions on the directories you create and the files "
 "you copy with [.filename]#/etc/rc.initdiskless#."
-msgstr ""
+msgstr "不过，这并不能解决重启后保留 cron 表的问题。系统重启时，存放在内存中的 [.filename]#/var# 文件系统会消失，其中可能存在的 cron 表也会随之丢失。因此，一种解决办法是为需要使用 cron 的用户创建 cron 表，以读写方式挂载 [.filename]#/# 文件系统，并将这些 cron 表复制到 [.filename]#/etc/tabs# 等安全位置；然后在 [.filename]#/etc/rc.initdiskless# 末尾添加一行命令，在系统初始化过程中创建好该目录后，将这些 cron 表复制到 [.filename]#/var/cron/tabs#。你可能还需要添加一行命令，用于更改通过 [.filename]#/etc/rc.initdiskless# 创建的目录和复制的文件的模式及权限。"
 
 #. type: Title ===
 #: documentation/content/en/articles/solid-state/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Syslog"
-msgstr ""
+msgstr "Syslog"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:263
+#, fuzzy
 msgid ""
 "[.filename]#syslog.conf# specifies the locations of certain log files that "
 "exist in [.filename]#/var/log#.  These files are not created by [.filename]#/"
 "etc/rc.d/var# upon system initialization.  Therefore, somewhere in [."
 "filename]#/etc/rc.d/var#, after the section that creates the directories in "
 "[.filename]#/var#, you will need to add something like this:"
-msgstr ""
+msgstr "[.filename]#syslog.conf# 指定了 [.filename]#/var/log# 中某些日志文件的位置。系统初始化时，[.filename]#/etc/rc.d/var# 不会创建这些文件。因此，需要在 [.filename]#/etc/rc.d/var# 中创建完 [.filename]#/var# 下的目录之后，添加类似以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# touch /var/log/security /var/log/maillog /var/log/cron /var/log/messages\n"
 "# chmod 0644 /var/log/*\n"
-msgstr ""
+msgstr "# touch /var/log/security /var/log/maillog /var/log/cron /var/log/messages\n# chmod 0644 /var/log/*\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/solid-state/_index.adoc:270
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports Installation"
-msgstr ""
+msgstr "安装 Ports"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:276
+#, fuzzy
 msgid ""
 "Before discussing the changes necessary to successfully use the ports tree, "
 "a reminder is necessary regarding the read-only nature of your filesystems "
@@ -540,10 +577,11 @@ msgid ""
 "always remount those filesystems read-only when you are done with any "
 "maintenance - unnecessary writes to the flash media could considerably "
 "shorten its lifespan."
-msgstr ""
+msgstr "在讨论成功使用 ports 树所需的更改之前，需要提醒一点：闪存介质上的文件系统是只读的。由于它们是只读的，你需要使用 crossref:solid-state[ro-fs, The `rc` Subsystem and Read-Only Filesystems] 中所示的 mount 语法，临时将其挂载为读写。完成维护后，务必将这些文件系统重新挂载为只读；不必要的闪存写入会大幅缩短其使用寿命。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:279
+#, fuzzy
 msgid ""
 "To make it possible to enter a ports directory and successfully run `make "
 "install`, we must create a packages directory on a non-memory filesystem "
@@ -551,62 +589,67 @@ msgid ""
 "mount your filesystems as read-write for the installation of a package "
 "anyway, it is sensible to assume that an area on the flash media can also be "
 "used for package information to be written to."
-msgstr ""
+msgstr "为了能够进入 ports 目录并成功运行 `make install`，必须在非内存文件系统上创建一个 packages 目录，以便在重启后保留软件包信息。无论如何，安装软件包时都需要以读写方式挂载文件系统，因此合理的做法是也在闪存介质上划出一块区域来存放软件包信息。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:282
+#, fuzzy
 msgid ""
 "First, create a package database directory.  This is normally in [."
 "filename]#/var/db/pkg#, but we cannot place it there as it will disappear "
 "every time the system is booted."
-msgstr ""
+msgstr "首先，创建一个软件包数据库目录。该目录通常位于 [.filename]#/var/db/pkg#，但不能放在那里，因为每次系统启动时它都会消失。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkdir /etc/pkg\n"
-msgstr ""
+msgstr "# mkdir /etc/pkg\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:289
+#, fuzzy
 msgid ""
 "Now, add a line to [.filename]#/etc/rc.d/var# that links the [.filename]#/"
 "etc/pkg# directory to [.filename]#/var/db/pkg#. An example:"
-msgstr ""
+msgstr "现在，在 [.filename]#/etc/rc.d/var# 中添加一行，将 [.filename]#/etc/pkg# 目录链接到 [.filename]#/var/db/pkg#。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ln -s /etc/pkg /var/db/pkg\n"
-msgstr ""
+msgstr "# ln -s /etc/pkg /var/db/pkg\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:296
+#, fuzzy
 msgid ""
 "Now, any time that you mount your filesystems as read-write and install a "
 "package, the `make install` will work, and package information will be "
 "written successfully to [.filename]#/etc/pkg# (because the filesystem will, "
 "at that time, be mounted read-write) which will always be available to the "
 "operating system as [.filename]#/var/db/pkg#."
-msgstr ""
+msgstr "现在，每当你以读写方式挂载文件系统并安装软件包时，`make install` 都会正常运行，软件包信息也会成功写入 [.filename]#/etc/pkg#（此时该文件系统将以读写方式挂载），而操作系统始终可以通过 [.filename]#/var/db/pkg# 访问这些信息。"
 
 #. type: Title ===
 #: documentation/content/en/articles/solid-state/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Apache Web Server"
-msgstr ""
+msgstr "Apache Web 服务器"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/solid-state/_index.adoc:303
+#, fuzzy
 msgid ""
 "The steps in this section are only necessary if Apache is set up to write "
 "its pid or log information outside of [.filename]#/var#.  By default, Apache "
 "keeps its pid file in [.filename]#/var/run/httpd.pid# and its log files in [."
 "filename]#/var/log#."
-msgstr ""
+msgstr "只有在 Apache 被配置为将其 PID 或日志信息写入 [.filename]#/var# 以外的位置时，才需要执行本节中的步骤。默认情况下，Apache 将 PID 文件保存在 [.filename]#/var/run/httpd.pid# 中，并将日志文件保存在 [.filename]#/var/log# 中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:309
+#, fuzzy
 msgid ""
 "It is now assumed that Apache keeps its log files in a directory [."
 "filename]#apache_log_dir# outside of [.filename]#/var#.  When this directory "
@@ -616,41 +659,44 @@ msgid ""
 "in [.filename]#/var#, and to link [.filename]#apache_log_dir# to [."
 "filename]#/var/log/apache#.  It is also necessary to set permissions and "
 "ownership on this new directory."
-msgstr ""
+msgstr "这里假设 Apache 将日志文件保存在 [.filename]#/var# 以外的目录 [.filename]#apache_log_dir# 中。如果该目录位于只读文件系统上，Apache 将无法保存日志文件，运行也可能出现问题。如果是这样，就需要将一个新目录添加到 [.filename]#/etc/rc.d/var# 中的目录列表，以便在 [.filename]#/var# 中创建该目录，并将 [.filename]#apache_log_dir# 链接到 [.filename]#/var/log/apache#。还需要为这个新目录设置权限和所有者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:311
+#, fuzzy
 msgid ""
 "First, add the directory `log/apache` to the list of directories to be "
 "created in [.filename]#/etc/rc.d/var#."
-msgstr ""
+msgstr "首先，将目录 `log/apache` 添加到 [.filename]#/etc/rc.d/var# 中要创建的目录列表。"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:313
+#, fuzzy
 msgid ""
 "Second, add these commands to [.filename]#/etc/rc.d/var# after the directory "
 "creation section:"
-msgstr ""
+msgstr "其次，在目录创建部分之后，将以下命令添加到 [.filename]#/etc/rc.d/var# 中："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# chmod 0774 /var/log/apache\n"
 "# chown nobody:nobody /var/log/apache\n"
-msgstr ""
+msgstr "# chmod 0774 /var/log/apache\n# chown nobody:nobody /var/log/apache\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/solid-state/_index.adoc:321
+#, fuzzy
 msgid ""
 "Finally, remove the existing [.filename]#apache_log_dir# directory, and "
 "replace it with a link:"
-msgstr ""
+msgstr "最后，删除现有的 [.filename]#apache_log_dir# 目录，并将其替换为链接："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/solid-state/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# rm -rf apache_log_dir\n"
 "# ln -s /var/log/apache apache_log_dir\n"
-msgstr ""
+msgstr "# rm -rf apache_log_dir\n# ln -s /var/log/apache apache_log_dir\n"

@@ -20,15 +20,15 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Programming Tools"
-msgstr ""
+msgstr "编程工具"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 2. Programming Tools"
-msgstr ""
+msgstr "第 2 章. 编程工具"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:56
@@ -38,6 +38,7 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:63
+#, fuzzy
 msgid ""
 "This chapter is an introduction to using some of the programming tools "
 "supplied with FreeBSD, although much of it will be applicable to many other "
@@ -45,7 +46,7 @@ msgid ""
 "detail.  Most of the chapter assumes little or no previous programming "
 "knowledge, although it is hoped that most programmers will find something of "
 "value in it."
-msgstr ""
+msgstr "本章介绍如何使用 FreeBSD 提供的一些编程工具，其中许多内容也适用于其他版本的 UNIX(R)。本章__不会__详细介绍编程。大多数内容假设读者几乎没有或完全没有编程经验，不过希望大多数程序员也能从中有所收获。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:65
@@ -55,6 +56,7 @@ msgstr "介绍"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:72
+#, fuzzy
 msgid ""
 "FreeBSD offers an excellent development environment.  Compilers for C and C+"
 "+ and an assembler come with the basic system, not to mention classic "
@@ -65,34 +67,37 @@ msgid ""
 "standards such as POSIX(R) and ANSI C, as well with its own BSD heritage, so "
 "it is possible to write applications that will compile and run with little "
 "or no modification on a wide range of platforms."
-msgstr ""
+msgstr "FreeBSD 提供了出色的开发环境。基本系统自带 C 和 C++ 编译器以及汇编器，还有 `sed` 和 `awk` 等经典 UNIX(R) 工具。如果这些还不够，Ports Collection 中还有许多其他编译器和解释器。以下 crossref:tools[tools-programming,编程简介]一节列出了一些可用选项。FreeBSD 与 POSIX(R)、ANSI C 等标准以及自身的 BSD 传统高度兼容，因此可以编写只需很少甚至无需修改，就能在多种平台上编译和运行的应用程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:76
+#, fuzzy
 msgid ""
 "However, all this power can be rather overwhelming at first if you have "
 "never written programs on a UNIX(R) platform before.  This document aims to "
 "help you get up and running, without getting too deeply into more advanced "
 "topics.  The intention is that this document should give you enough of the "
 "basics to be able to make some sense of the documentation."
-msgstr ""
+msgstr "不过，如果你以前从未在 UNIX(R) 平台上编写过程序，刚开始时可能会觉得这些功能令人不知所措。本文档旨在帮助你快速入门，而不会过多深入高级主题。本文档希望提供足够的基础知识，帮助你理解相关文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:78
+#, fuzzy
 msgid ""
 "Most of the document requires little or no knowledge of programming, "
 "although it does assume a basic competence with using UNIX(R) and a "
 "willingness to learn!"
-msgstr ""
+msgstr "本文档的大部分内容几乎不要求编程知识，但假设你具备使用 UNIX(R) 的基本能力，并且愿意学习！"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction to Programming"
-msgstr ""
+msgstr "编程简介"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:86
+#, fuzzy
 msgid ""
 "A program is a set of instructions that tell the computer to do various "
 "things; sometimes the instruction it has to perform depends on what happened "
@@ -102,16 +107,17 @@ msgid ""
 "_compiler_.  As human languages are too difficult for a computer to "
 "understand in an unambiguous way, commands are usually written in one or "
 "other languages specially designed for the purpose."
-msgstr ""
+msgstr "程序是一组指令，用来告诉计算机执行各种操作；有时，计算机需要执行的指令取决于它执行上一条指令时发生了什么。本节概述了向计算机发出这些指令（通常称为“命令”）的两种主要方式。一种使用__解释器__，另一种使用__编译器__。由于人类语言对计算机来说过于复杂，无法做到含义明确，因此命令通常使用专门为此设计的一种语言编写。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Interpreters"
-msgstr ""
+msgstr "解释器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:92
+#, fuzzy
 msgid ""
 "With an interpreter, the language comes as an environment, where you type in "
 "commands at a prompt and the environment executes them for you.  For more "
@@ -119,10 +125,11 @@ msgid ""
 "interpreter to load the file and execute the commands in it.  If anything "
 "goes wrong, many interpreters will drop you into a debugger to help you "
 "track down the problem."
-msgstr ""
+msgstr "使用解释器时，语言以一个环境的形式提供，你可以在提示符下输入命令，由该环境为你执行。对于更复杂的程序，你可以将命令写入文件，然后让解释器加载文件并执行其中的命令。如果出现问题，许多解释器会进入调试器，帮助你查明问题所在。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:97
+#, fuzzy
 msgid ""
 "The advantage of this is that you can see the results of your commands "
 "immediately, and mistakes can be corrected readily.  The biggest "
@@ -132,10 +139,11 @@ msgid ""
 "appreciate being thrown into a debugger if they press the wrong key! From a "
 "performance point of view, interpreters can use up a lot of memory, and "
 "generally do not generate code as efficiently as compilers."
-msgstr ""
+msgstr "这种方式的优点是可以立即看到命令的结果，而且很容易纠正错误。最大的缺点在于与他人分享程序时：对方必须拥有相同的解释器，或者你必须设法提供解释器，而且对方还需要知道如何使用它。此外，如果用户按错了键，他们可能不喜欢被直接带入调试器！从性能角度来看，解释器可能会占用大量内存，而且通常无法像编译器那样高效地生成代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:102
+#, fuzzy
 msgid ""
 "In my opinion, interpreted languages are the best way to start if you have "
 "not done any programming before.  This kind of environment is typically "
@@ -145,153 +153,166 @@ msgid ""
 "\"housekeeping\" tasks on their machine.  Indeed, part of the original "
 "UNIX(R) philosophy was to provide lots of small utility programs that could "
 "be linked together in shell scripts to perform useful tasks."
-msgstr ""
+msgstr "我认为，如果你以前没有编过程序，解释型语言是最好的入门方式。Lisp、Smalltalk、Perl 和 Basic 等语言通常提供这种环境。也可以认为 UNIX(R) shell（`sh`、`csh`）本身就是一种解释器；事实上，许多人确实会编写 shell“脚本”，来帮助完成机器上的各种“日常维护”任务。事实上，UNIX(R) 最初的理念之一，就是提供大量小型实用程序，以便通过 shell 脚本将它们组合起来完成有用的任务。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Interpreters Available with FreeBSD"
-msgstr ""
+msgstr "FreeBSD 提供的解释器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:106
+#, fuzzy
 msgid ""
 "Here is a list of interpreters that are available from the FreeBSD Ports "
 "Collection, with a brief discussion of some of the more popular interpreted "
 "languages."
-msgstr ""
+msgstr "以下列出了 FreeBSD Ports Collection 中提供的解释器，并简要介绍了一些较受欢迎的解释型语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:108
+#, fuzzy
 msgid ""
 "Instructions on how to get and install applications from the Ports "
 "Collection can be found in the extref:{handbook}ports[Ports section, ports-"
 "using] of the handbook."
-msgstr ""
+msgstr "有关如何从 Ports Collection 获取和安装应用程序的说明，请参阅手册中的 extref:{handbook}ports[Ports 一节，ports-using]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BASIC"
-msgstr ""
+msgstr "BASIC"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:113
+#, fuzzy
 msgid ""
 "Short for Beginner's All-purpose Symbolic Instruction Code.  Developed in "
 "the 1950s for teaching University students to program and provided with "
 "every self-respecting personal computer in the 1980s, BASIC has been the "
 "first programming language for many programmers.  It is also the foundation "
 "for Visual Basic."
-msgstr ""
+msgstr "BASIC 是 Beginner's All-purpose Symbolic Instruction Code（初学者通用符号指令代码）的缩写。BASIC 于 20 世纪 50 年代开发，用于教授大学生编程；到了 20 世纪 80 年代，几乎每台像样的个人计算机都配备了它。对许多程序员来说，BASIC 是他们学习的第一门编程语言。Visual Basic 也以它为基础。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:115
+#, fuzzy
 msgid ""
 "The Bywater Basic Interpreter can be found in the Ports Collection as "
 "package:lang/bwbasic[] and the Phil Cockroft's Basic Interpreter (formerly "
 "Rabbit Basic) is available as package:lang/pbasic[]."
-msgstr ""
+msgstr "Bywater Basic 解释器可在 Ports Collection 中通过 package:lang/bwbasic[] 获取；Phil Cockroft 的 Basic 解释器（原名 Rabbit Basic）可通过 package:lang/pbasic[] 获取。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lisp"
-msgstr ""
+msgstr "Lisp"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:120
+#, fuzzy
 msgid ""
 "A language that was developed in the late 1950s as an alternative to the "
 "\"number-crunching\" languages that were popular at the time.  Instead of "
 "being based on numbers, Lisp is based on lists; in fact, the name is short "
 "for \"List Processing\".  It is very popular in AI (Artificial Intelligence) "
 "circles."
-msgstr ""
+msgstr "Lisp 于 20 世纪 50 年代末开发，旨在作为当时流行的“数值计算”语言的替代方案。Lisp 不以数字为基础，而是以列表为基础；事实上，其名称是“List Processing”（列表处理）的缩写。它在 AI（人工智能）领域非常流行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:122
+#, fuzzy
 msgid ""
 "Lisp is an extremely powerful and sophisticated language, but can be rather "
 "large and unwieldy."
-msgstr ""
+msgstr "Lisp 是一种功能极其强大且复杂的语言，但可能相当庞大而难以驾驭。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:126
+#, fuzzy
 msgid ""
 "Various implementations of Lisp that can run on UNIX(R) systems are "
 "available in the Ports Collection for FreeBSD.  CLISP by Bruno Haible and "
 "Michael Stoll is available as package:lang/clisp[].  SLisp, a simpler Lisp "
 "implementations, is available as package:lang/slisp[]."
-msgstr ""
+msgstr "FreeBSD 的 Ports Collection 中提供了多种可在 UNIX(R) 系统上运行的 Lisp 实现。Bruno Haible 和 Michael Stoll 开发的 CLISP 可通过 package:lang/clisp[] 获取。较为简单的 Lisp 实现 SLisp 可通过 package:lang/slisp[] 获取。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:129
+#, fuzzy
 msgid ""
 "Very popular with system administrators for writing scripts; also often used "
 "on World Wide Web servers for writing CGI scripts."
-msgstr ""
+msgstr "系统管理员非常喜欢用它编写脚本；它也常用于 Web 服务器上编写 CGI 脚本。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:131
+#, fuzzy
 msgid ""
 "Perl is available in the Ports Collection as package:lang/perl5.36[] for all "
 "FreeBSD releases."
-msgstr ""
+msgstr "所有 FreeBSD 发行版都可通过 Ports Collection 中的 package:lang/perl5.36[] 获取 Perl。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scheme"
-msgstr ""
+msgstr "Scheme"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:136
+#, fuzzy
 msgid ""
 "A dialect of Lisp that is rather more compact and cleaner than Common Lisp.  "
 "Popular in Universities as it is simple enough to teach to undergraduates as "
 "a first language, while it has a high enough level of abstraction to be used "
 "in research work."
-msgstr ""
+msgstr "Scheme 是 Lisp 的一种方言，比 Common Lisp 更精简、简洁。它在大学中很受欢迎，因为它简单到足以作为本科生的第一门语言来教授，同时又具有足够高的抽象层次，可用于研究工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:139
+#, fuzzy
 msgid ""
 "Scheme is available from the Ports Collection as package:lang/elk[] for the "
 "Elk Scheme Interpreter.  The MIT Scheme Interpreter can be found in package:"
 "lang/mit-scheme[] and the SCM Scheme Interpreter in package:lang/scm[]."
-msgstr ""
+msgstr "Elk Scheme 解释器可通过 Ports Collection 中的 package:lang/elk[] 获取。MIT Scheme 解释器可通过 package:lang/mit-scheme[] 获取，SCM Scheme 解释器可通过 package:lang/scm[] 获取。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:146
+#, fuzzy
 msgid ""
 "Lua is a lightweight embeddable scripting language.  It is widely portable "
 "and relatively simple.  Lua is available in the Ports Collection in package:"
 "lang/lua54[].  It is also included in the base system as [.filename]#/usr/"
 "libexec/flua# for use by base system components.  Third party software "
 "should not depend on [.filename]#flua#."
-msgstr ""
+msgstr "Lua 是一种轻量级、可嵌入的脚本语言。它具有广泛的可移植性，而且相对简单。Lua 可通过 Ports Collection 中的 package:lang/lua54[] 获取。基本系统也包含它，路径为 [.filename]#/usr/libexec/flua#，供基本系统组件使用。第三方软件不应依赖 [.filename]#flua#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:150
+#, fuzzy
 msgid ""
 "Python is an Object-Oriented, interpreted language.  Its advocates argue "
 "that it is one of the best languages to start programming with, since it is "
@@ -299,65 +320,71 @@ msgid ""
 "popular interpreted languages that are used for the development of large, "
 "complex applications (Perl and Tcl are two other languages that are popular "
 "for such tasks)."
-msgstr ""
+msgstr "Python 是一种面向对象的解释型语言。支持者认为它是最适合入门的编程语言之一，因为它容易上手，同时与其他用于开发大型复杂应用程序的流行解释型语言相比，并不会因此受到限制（Perl 和 Tcl 也是常用于此类任务的语言）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:152
+#, fuzzy
 msgid ""
 "The latest version of Python is available from the Ports Collection in "
 "package:lang/python[]."
-msgstr ""
+msgstr "最新版本的 Python 可通过 Ports Collection 中的 package:lang/python[] 获取。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:156
+#, fuzzy
 msgid ""
 "Ruby is an interpreter, pure object-oriented programming language.  It has "
 "become widely popular because of its easy to understand syntax, flexibility "
 "when writing code, and the ability to easily develop and maintain large, "
 "complex programs."
-msgstr ""
+msgstr "Ruby 是一种纯面向对象的解释型编程语言。它因语法易于理解、编写代码时灵活，以及能够轻松开发和维护大型复杂程序而广受欢迎。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:158
+#, fuzzy
 msgid "Ruby is available from the Ports Collection as package:lang/ruby32[]."
-msgstr ""
+msgstr "Ruby 可通过 Ports Collection 中的 package:lang/ruby32[] 获取。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tcl and Tk"
-msgstr ""
+msgstr "Tcl 和 Tk"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:162
+#, fuzzy
 msgid ""
 "Tcl is an embeddable, interpreted language, that has become widely used and "
 "became popular mostly because of its portability to many platforms.  It can "
 "be used both for quickly writing small, prototype applications, or (when "
 "combined with Tk, a GUI toolkit) fully-fledged, featureful programs."
-msgstr ""
+msgstr "Tcl 是一种可嵌入的解释型语言，因可移植到许多平台而广泛使用并广受欢迎。它既可用于快速编写小型原型应用程序，也可与 GUI 工具包 Tk 结合，开发功能齐全、特性丰富的程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:165
+#, fuzzy
 msgid ""
 "Various versions of Tcl are available as ports for FreeBSD.  The latest "
 "version, Tcl 8.7, can be found in package:lang/tcl87[]."
-msgstr ""
+msgstr "FreeBSD 有多个版本的 Tcl 移植软件包。最新版本 Tcl 8.7 可通过 package:lang/tcl87[] 获取。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compilers"
-msgstr ""
+msgstr "编译器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:173
+#, fuzzy
 msgid ""
 "Compilers are rather different.  First of all, you write your code in a file "
 "(or files) using an editor.  You then run the compiler and see if it accepts "
@@ -365,10 +392,11 @@ msgid ""
 "editor; if it did compile and gave you a program, you can run it either at a "
 "shell command prompt or in a debugger to see if it works properly.footnote:"
 "[If you run it in the shell, you may get a core dump.]"
-msgstr ""
+msgstr "编译器的工作方式则大不相同。首先，你需要使用编辑器将代码写入一个或多个文件。然后运行编译器，检查它是否接受你的程序。如果编译失败，就咬紧牙关回到编辑器；如果编译成功并生成了程序，就可以在 shell 命令提示符下或调试器中运行它，检查它是否正常工作。footnote:[如果在 shell 中运行它，可能会得到一个 core dump。]"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:180
+#, fuzzy
 msgid ""
 "Obviously, this is not quite as direct as using an interpreter.  However it "
 "allows you to do a lot of things which are very difficult or even impossible "
@@ -380,10 +408,11 @@ msgid ""
 "usually more straightforward than one written for an interpreter-you can "
 "just give them a copy of the executable, assuming they have the same "
 "operating system as you."
-msgstr ""
+msgstr "显然，这不如使用解释器直接。不过，它能让你完成许多使用解释器很难甚至不可能完成的事情，例如编写与操作系统紧密交互的代码，甚至编写自己的操作系统！如果你需要编写效率很高的代码，编译器也很有用，因为它可以花时间优化代码；这在解释器中是不可接受的。此外，分发用编译器编写的程序通常比用解释器编写的程序简单：只要对方使用相同的操作系统，你就可以直接给对方一份可执行文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:184
+#, fuzzy
 msgid ""
 "As the edit-compile-run-debug cycle is rather tedious when using separate "
 "programs, many commercial compiler makers have produced Integrated "
@@ -391,16 +420,17 @@ msgid ""
 "in the base system, but package:devel/kdevelop[] is available in the Ports "
 "Collection and many use Emacs for this purpose.  Using Emacs as an IDE is "
 "discussed in crossref:tools[emacs, Using Emacs as a Development Environment]."
-msgstr ""
+msgstr "使用不同程序完成编辑、编译、运行和调试的循环相当繁琐，因此许多商业编译器厂商都开发了集成开发环境（简称 IDE）。FreeBSD 的基本系统不包含 IDE，但 Ports Collection 中提供了 package:devel/kdevelop[]，许多人也会使用 Emacs 来完成这项工作。有关将 Emacs 用作 IDE 的讨论，请参阅 crossref:tools[emacs,将 Emacs 用作开发环境]。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compiling with `cc`"
-msgstr ""
+msgstr "使用 `cc` 编译"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:191
+#, fuzzy
 msgid ""
 "This section deals with the clang compiler for C and C++, as it's installed "
 "with the FreeBSD base system.  Clang is installed as `cc`; the GNU compiler "
@@ -408,181 +438,199 @@ msgid ""
 "producing a program with an interpreter vary considerably between "
 "interpreters, and are usually well covered in the documentation and on-line "
 "help for the interpreter."
-msgstr ""
+msgstr "本节介绍随 FreeBSD 基本系统安装的 C 和 C++ 编译器 clang。Clang 安装为 `cc`；GNU 编译器 package:lang/gcc[gcc] 可在 Ports Collection 中获取。不同解释器生成程序的具体方式差异很大，通常可以在相应解释器的文档和在线帮助中找到详细说明。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:194
+#, fuzzy
 msgid ""
 "Once you have written your masterpiece, the next step is to convert it into "
 "something that will (hopefully!) run on FreeBSD.  This usually involves "
 "several steps, each of which is done by a separate program."
-msgstr ""
+msgstr "完成你的杰作后，下一步是将其转换成（希望能）在 FreeBSD 上运行的程序。这通常涉及多个步骤，每一步都由单独的程序完成。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:197
+#, fuzzy
 msgid ""
 "Pre-process your source code to remove comments and do other tricks like "
 "expanding macros in C."
-msgstr ""
+msgstr "预处理源代码，移除注释并执行其他操作，例如展开 C 语言中的宏。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:198
+#, fuzzy
 msgid ""
 "Check the syntax of your code to see if you have obeyed the rules of the "
 "language. If you have not, it will complain!"
-msgstr ""
+msgstr "检查代码语法，确认是否遵守了语言规则。如果没有，编译器就会报错！"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:199
+#, fuzzy
 msgid ""
 "Convert the source code into assembly language-this is very close to machine "
 "code, but still understandable by humans. Allegedly."
-msgstr ""
+msgstr "将源代码转换为汇编语言——它与机器码非常接近，但人类仍然能够理解。至少据说如此。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:200
+#, fuzzy
 msgid ""
 "Convert the assembly language into machine code-yep, we are talking bits and "
 "bytes, ones and zeros here."
-msgstr ""
+msgstr "将汇编语言转换为机器码——没错，说的就是位和字节，也就是 1 和 0。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:201
+#, fuzzy
 msgid ""
 "Check that you have used things like functions and global variables in a "
 "consistent way. For example, if you have called a non-existent function, it "
 "will complain."
-msgstr ""
+msgstr "检查函数和全局变量等的使用是否一致。例如，如果你调用了一个不存在的函数，编译器就会报错。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:202
+#, fuzzy
 msgid ""
 "If you are trying to produce an executable from several source code files, "
 "work out how to fit them all together."
-msgstr ""
+msgstr "如果要从多个源代码文件生成可执行文件，就要确定如何将它们组合起来。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:203
+#, fuzzy
 msgid ""
 "Work out how to produce something that the system's run-time loader will be "
 "able to load into memory and run."
-msgstr ""
+msgstr "确定如何生成系统运行时加载器能够加载到内存并运行的文件。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:204
+#, fuzzy
 msgid "Finally, write the executable on the filesystem."
-msgstr ""
+msgstr "最后，将可执行文件写入文件系统。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:207
+#, fuzzy
 msgid ""
 "The word _compiling_ is often used to refer to just steps 1 to 4-the others "
 "are referred to as _linking_.  Sometimes step 1 is referred to as _pre-"
 "processing_ and steps 3-4 as _assembling_."
-msgstr ""
+msgstr "__编译__一词通常仅指步骤 1 到 4；其余步骤称为__链接__。有时，步骤 1 称为__预处理__，步骤 3 到 4 称为__汇编__。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:209
+#, fuzzy
 msgid ""
 "Fortunately, almost all this detail is hidden from you, as `cc` is a front "
 "end that manages calling all these programs with the right arguments for "
 "you; simply typing"
-msgstr ""
+msgstr "幸运的是，`cc` 是一个前端程序，会负责使用正确的参数调用所有这些程序，因此你几乎不必了解这些细节；只需输入"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc foobar.c\n"
-msgstr ""
+msgstr "% cc foobar.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:217
+#, fuzzy
 msgid ""
 "will cause [.filename]#foobar.c# to be compiled by all the steps above.  If "
 "you have more than one file to compile, just do something like"
-msgstr ""
+msgstr "就会按照上述所有步骤编译 [.filename]#foobar.c#。如果要编译多个文件，只需像这样操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:221
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc foo.c bar.c\n"
-msgstr ""
+msgstr "% cc foo.c bar.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:226
+#, fuzzy
 msgid ""
 "Note that the syntax checking is just that - checking the syntax.  It will "
 "not check for any logical mistakes you may have made, like putting the "
 "program into an infinite loop, or using a bubble sort when you meant to use "
 "a binary sort.footnote:[In case you did not know, a binary sort is an "
 "efficient way of sorting things into order and a bubble sort is not.]"
-msgstr ""
+msgstr "请注意，语法检查只是检查语法，不会检查你可能犯下的逻辑错误，例如让程序进入无限循环，或在本想使用二分排序时却使用了冒泡排序。footnote:[如果你还不知道，二分排序是一种高效的排序方法，而冒泡排序则不是。]"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:229
+#, fuzzy
 msgid ""
 "There are lots and lots of options for `cc`, which are all in the manual "
 "page.  Here are a few of the most important ones, with examples of how to "
 "use them."
-msgstr ""
+msgstr "`cc` 有很多选项，详见手册页。下面列出几个最重要的选项，并举例说明其用法。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-o _filename_`"
-msgstr ""
+msgstr "`-o _文件名_`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:232
+#, fuzzy
 msgid ""
 "The output name of the file. If you do not use this option, `cc` will "
 "produce an executable called [.filename]#a.out#.footnote:[The reasons for "
 "this are buried in the mists of history.]"
-msgstr ""
+msgstr "输出文件的名称。如果不使用此选项，`cc` 会生成名为 [.filename]#a.out# 的可执行文件。footnote:[其中的缘由已湮没在历史长河中。]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cc foobar.c               executable is a.out\n"
 "% cc -o foobar foobar.c     executable is foobar\n"
-msgstr ""
+msgstr "% cc foobar.c               可执行文件为 a.out\n% cc -o foobar foobar.c     可执行文件为 foobar\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-c`"
-msgstr ""
+msgstr "`-c`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:242
+#, fuzzy
 msgid ""
 "Just compile the file, do not link it.  Useful for toy programs where you "
 "just want to check the syntax, or if you are using a [.filename]#Makefile#."
-msgstr ""
+msgstr "只编译文件，不进行链接。适用于只想检查语法的玩具程序，或使用 [.filename]#Makefile# 的情况。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc -c foobar.c\n"
-msgstr ""
+msgstr "% cc -c foobar.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:250
+#, fuzzy
 msgid ""
 "This will produce an _object file_ (not an executable) called [."
 "filename]#foobar.o#.  This can be linked together with other object files "
 "into an executable."
-msgstr ""
+msgstr "这会生成名为 [.filename]#foobar.o# 的__目标文件__（不是可执行文件）。它可以与其他目标文件链接，生成可执行文件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-g`"
-msgstr ""
+msgstr "`-g`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:257
+#, fuzzy
 msgid ""
 "Create a debug version of the executable.  This makes the compiler put "
 "information into the executable about which line of which source file "
@@ -592,382 +640,413 @@ msgid ""
 "program much bigger.  Normally, you compile with `-g` while you are "
 "developing a program and then compile a \"release version\" without `-g` "
 "when you are satisfied it works properly."
-msgstr ""
+msgstr "创建可执行文件的调试版本。这样，编译器会在可执行文件中加入信息，说明源文件的哪一行对应哪个函数调用。调试器可以利用这些信息，在你逐步执行程序时显示源代码，这__非常有用__；缺点是这些额外信息会使程序变得大很多。通常，你会在开发程序时使用 `-g` 编译，等确认程序正常运行后，再不带 `-g` 编译“发布版本”。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc -g foobar.c\n"
-msgstr ""
+msgstr "% cc -g foobar.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:265
+#, fuzzy
 msgid ""
 "This will produce a debug version of the program. footnote:[Note, we did not "
 "use the -o flag to specify the executable name, so we will get an executable "
 "called a.out. Producing a debug version called foobar is left as an exercise "
 "for the reader!]"
-msgstr ""
+msgstr "这会生成程序的调试版本。footnote:[注意，我们没有使用 -o 标志指定可执行文件的名称，因此生成的可执行文件名为 a.out。如何生成名为 foobar 的调试版本，就留给读者作为练习了！]"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-O`"
-msgstr ""
+msgstr "`-O`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:270
+#, fuzzy
 msgid ""
 "Create an optimized version of the executable.  The compiler performs "
 "various clever tricks to try to produce an executable that runs faster than "
 "normal.  You can add a number after the `-O` to specify a higher level of "
 "optimization, but this often exposes bugs in the compiler's optimizer."
-msgstr ""
+msgstr "创建可执行文件的优化版本。编译器会执行各种巧妙的优化，尝试生成运行速度比常规版本更快的可执行文件。你可以在 `-O` 后添加数字来指定更高的优化级别，但这往往会暴露编译器优化器中的错误。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc -O -o foobar foobar.c\n"
-msgstr ""
+msgstr "% cc -O -o foobar foobar.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:277
+#, fuzzy
 msgid "This will produce an optimized version of [.filename]#foobar#."
-msgstr ""
+msgstr "这会生成 [.filename]#foobar# 的优化版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:280
+#, fuzzy
 msgid ""
 "The following three flags will force `cc` to check that your code complies "
 "to the relevant international standard, often referred to as the ANSI "
 "standard, though strictly speaking it is an ISO standard."
-msgstr ""
+msgstr "以下三个标志会强制 `cc` 检查你的代码是否符合相关的国际标准。该标准通常称为 ANSI 标准，不过严格来说，它是 ISO 标准。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-Wall`"
-msgstr ""
+msgstr "`-Wall`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:284
+#, fuzzy
 msgid ""
 "Enable all the warnings which the authors of `cc` believe are worthwhile.  "
 "Despite the name, it will not enable all the warnings `cc` is capable of."
-msgstr ""
+msgstr "启用 `cc` 的作者认为值得报告的所有警告。尽管名称如此，它并不会启用 `cc` 能够报告的所有警告。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-ansi`"
-msgstr ""
+msgstr "`-ansi`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:288
+#, fuzzy
 msgid ""
 "Turn off most, but not all, of the non-ANSI C features provided by `cc`.  "
 "Despite the name, it does not guarantee strictly that your code will comply "
 "to the standard."
-msgstr ""
+msgstr "关闭 `cc` 提供的大多数（但不是全部）非 ANSI C 特性。尽管名称如此，它并不能严格保证你的代码符合该标准。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-pedantic`"
-msgstr ""
+msgstr "`-pedantic`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:291
+#, fuzzy
 msgid "Turn off _all_ ``cc``'s non-ANSI C features."
-msgstr ""
+msgstr "关闭 ``cc`` 的__所有__非 ANSI C 特性。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:296
+#, fuzzy
 msgid ""
 "Without these flags, `cc` will allow you to use some of its non-standard "
 "extensions to the standard.  Some of these are very useful, but will not "
 "work with other compilers - in fact, one of the main aims of the standard is "
 "to allow people to write code that will work with any compiler on any "
 "system.  This is known as _portable code_."
-msgstr ""
+msgstr "不使用这些标志时，`cc` 允许你使用它对标准的某些非标准扩展。其中一些扩展非常有用，但无法在其他编译器上使用。事实上，该标准的主要目标之一，就是让人们能够编写可在任何系统上的任何编译器中运行的代码。这称为__可移植代码__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:299
+#, fuzzy
 msgid ""
 "Generally, you should try to make your code as portable as possible, as "
 "otherwise you may have to completely rewrite the program later to get it to "
 "work somewhere else - and who knows what you may be using in a few years "
 "time?"
-msgstr ""
+msgstr "一般来说，你应该尽可能让代码具有可移植性，否则，日后你可能不得不彻底重写程序才能让它在其他地方运行——谁知道几年后你会用什么呢？"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc -Wall -ansi -pedantic -o foobar foobar.c\n"
-msgstr ""
+msgstr "% cc -Wall -ansi -pedantic -o foobar foobar.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:306
+#, fuzzy
 msgid ""
 "This will produce an executable [.filename]#foobar# after checking [."
 "filename]#foobar.c# for standard compliance."
-msgstr ""
+msgstr "这会在检查 [.filename]#foobar.c# 是否符合标准后，生成可执行文件 [.filename]#foobar#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-l__library__`"
-msgstr ""
+msgstr "`-l__library__`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:309
+#, fuzzy
 msgid "Specify a function library to be used at link time."
-msgstr ""
+msgstr "指定在链接时要使用的函数库。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:312
+#, fuzzy
 msgid ""
 "The most common example of this is when compiling a program that uses some "
 "of the mathematical functions in C.  Unlike most other platforms, these are "
 "in a separate library from the standard C one and you have to tell the "
 "compiler to add it."
-msgstr ""
+msgstr "最常见的例子是编译使用 C 语言数学函数的程序。与大多数其他平台不同，这些函数位于标准 C 库之外的单独库中，因此你必须告诉编译器将其添加进来。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:316
+#, fuzzy
 msgid ""
 "The rule is that if the library is called [.filename]#libsomething.a#, you "
 "give `cc` the argument `-l__something__`.  For example, the math library is "
 "[.filename]#libm.a#, so you give `cc` the argument `-lm`.  A common \"gotcha"
 "\" with the math library is that it has to be the last library on the "
 "command line."
-msgstr ""
+msgstr "规则是：如果库名为 [.filename]#libsomething.a#，就向 `cc` 提供参数 `-l__something__`。例如，数学库是 [.filename]#libm.a#，因此要向 `cc` 提供参数 `-lm`。使用数学库时常见的一个“陷阱”是，它必须是命令行中的最后一个库。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc -o foobar foobar.c -lm\n"
-msgstr ""
+msgstr "% cc -o foobar foobar.c -lm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:323
+#, fuzzy
 msgid "This will link the math library functions into [.filename]#foobar#."
-msgstr ""
+msgstr "这会将数学库函数链接到 [.filename]#foobar# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:326
+#, fuzzy
 msgid ""
 "If you are compiling C++ code, use {c-plus-plus-command}.  {c-plus-plus-"
 "command} can also be invoked as {clang-plus-plus-command} on FreeBSD."
-msgstr ""
+msgstr "如果要编译 C++ 代码，请使用 {c-plus-plus-command}。在 FreeBSD 上，{c-plus-plus-command} 也可以写作 {clang-plus-plus-command}。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% c++ -o foobar foobar.cc\n"
-msgstr ""
+msgstr "% c++ -o foobar foobar.cc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:333
+#, fuzzy
 msgid ""
 "This will both produce an executable [.filename]#foobar# from the C++ source "
 "file [.filename]#foobar.cc#."
-msgstr ""
+msgstr "这会根据 C++ 源文件 [.filename]#foobar.cc# 生成可执行文件 [.filename]#foobar#。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common `cc` Queries and Problems"
-msgstr ""
+msgstr "常见的 `cc` 问题与疑问"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I compiled a file called foobar.c and I cannot find an executable called foobar. Where has it gone?"
-msgstr ""
+msgstr "我编译了一个名为 foobar.c 的文件，却找不到名为 foobar 的可执行文件。它去哪儿了？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:340
+#, fuzzy
 msgid ""
 "Remember, `cc` will call the executable [.filename]#a.out# unless you tell "
 "it differently.  Use the `-o _filename_` option:"
-msgstr ""
+msgstr "请记住，除非另有指定，否则 `cc` 会将可执行文件命名为 [.filename]#a.out#。使用 `-o _filename_` 选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc -o foobar foobar.c\n"
-msgstr ""
+msgstr "% cc -o foobar foobar.c\n"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OK, I have an executable called foobar, I can see it when I run ls, but when I type in foobar at the command prompt it tells me there is no such file. Why can it not find it?"
-msgstr ""
+msgstr "好了，我有一个名为 foobar 的可执行文件，用 ls 可以看到它，但在命令提示符下输入 foobar 时，却提示没有这个文件。为什么找不到它？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:350
+#, fuzzy
 msgid ""
 "Unlike MS-DOS(R), UNIX(R) does not look in the current directory when it is "
 "trying to find out which executable you want it to run, unless you tell it "
 "to.  Type `./foobar`, which means \"run the file called [.filename]#foobar# "
 "in the current directory.\""
-msgstr ""
+msgstr "与 MS-DOS(R) 不同，UNIX(R) 在查找要运行的可执行文件时，不会查看当前目录，除非你明确要求它这样做。输入 `./foobar`，意思是“运行当前目录中名为 [.filename]#foobar# 的文件”。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I called my executable test, but nothing happens when I run it. What is going on?"
-msgstr ""
+msgstr "我把可执行文件命名为 test，但运行时什么也没发生。这是怎么回事？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:355
+#, fuzzy
 msgid ""
 "Most UNIX(R) systems have a program called `test` in [.filename]#/usr/bin# "
 "and the shell is picking that one up before it gets to checking the current "
 "directory.  Either type:"
-msgstr ""
+msgstr "大多数 UNIX(R) 系统在 [.filename]#/usr/bin# 中都有一个名为 `test` 的程序，shell 会先找到并运行它，而不是检查当前目录。你可以输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ./test\n"
-msgstr ""
+msgstr "% ./test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:362
+#, fuzzy
 msgid "or choose a better name for your program!"
-msgstr ""
+msgstr "或者给你的程序换个更合适的名字！"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I compiled my program and it seemed to run all right at first, then there was an error and it said something about core dumped. What does that mean?"
-msgstr ""
+msgstr "我编译了程序，刚开始运行似乎正常，后来却出错了，并提示发生了 core dump。这是什么意思？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:367
+#, fuzzy
 msgid ""
 "The name _core dump_ dates back to the very early days of UNIX(R), when the "
 "machines used core memory for storing data.  Basically, if the program "
 "failed under certain conditions, the system would write the contents of core "
 "memory to disk in a file called [.filename]#core#, which the programmer "
 "could then pore over to find out what went wrong."
-msgstr ""
+msgstr "__core dump__（核心转储）这个名称可以追溯到 UNIX(R) 的早期，那时计算机使用磁芯存储器来存储数据。简单来说，如果程序在某些条件下运行失败，系统会将磁芯存储器的内容写入磁盘上的 [.filename]#core# 文件，程序员随后可以仔细检查该文件，找出问题所在。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fascinating stuff, but what I am supposed to do now?"
-msgstr ""
+msgstr "听起来很有意思，但我现在该怎么办？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:371
+#, fuzzy
 msgid ""
 "Use a debugger to analyze the core (see crossref:tools[debugging, "
 "Debugging])."
-msgstr ""
+msgstr "使用调试器分析核心转储（参见 crossref:tools[debugging, 调试]）。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:372
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "When my program dumped core, it said something about a segmentation fault. What is that?"
-msgstr ""
+msgstr "我的程序发生核心转储时，提示了 segmentation fault（段错误）。这是什么？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:376
+#, fuzzy
 msgid ""
 "This basically means that your program tried to perform some sort of illegal "
 "operation on memory; UNIX(R) is designed to protect the operating system and "
 "other programs from rogue programs."
-msgstr ""
+msgstr "简单来说，这意味着你的程序尝试对内存执行某种非法操作；UNIX(R) 的设计旨在保护操作系统和其他程序免受失控程序的影响。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:378
+#, fuzzy
 msgid "Common causes for this are:"
-msgstr ""
+msgstr "常见原因包括："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:380
+#, fuzzy
 msgid "Trying to write to a NULL pointer, eg"
-msgstr ""
+msgstr "尝试写入 NULL 指针，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "char *foo = NULL;\n"
 "strcpy(foo, \"bang!\");\n"
-msgstr ""
+msgstr "char *foo = NULL;\nstrcpy(foo, \"bang!\");\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:388
+#, fuzzy
 msgid "Using a pointer that has not been initialized, eg"
-msgstr ""
+msgstr "使用尚未初始化的指针，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "char *foo;\n"
 "strcpy(foo, \"bang!\");\n"
-msgstr ""
+msgstr "char *foo;\nstrcpy(foo, \"bang!\");\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:397
+#, fuzzy
 msgid ""
 "The pointer will have some random value that, with luck, will point into an "
 "area of memory that is not available to your program and the kernel will "
 "kill your program before it can do any damage.  If you are unlucky, it will "
 "point somewhere inside your own program and corrupt one of your data "
 "structures, causing the program to fail mysteriously."
-msgstr ""
+msgstr "该指针会包含某个随机值。幸运的话，它会指向程序无法访问的内存区域，内核会在它造成任何损害之前终止程序。不幸的话，它会指向程序内部的某个位置并破坏数据结构，导致程序莫名其妙地失败。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:398
+#, fuzzy
 msgid "Trying to access past the end of an array, eg"
-msgstr ""
+msgstr "尝试访问数组末尾之后的位置，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int bar[20];\n"
 "bar[27] = 6;\n"
-msgstr ""
+msgstr "int bar[20];\nbar[27] = 6;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:406
+#, fuzzy
 msgid "Trying to store something in read-only memory, eg"
-msgstr ""
+msgstr "尝试在只读内存中存储内容，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "char *foo = \"My string\";\n"
 "strcpy(foo, \"bang!\");\n"
-msgstr ""
+msgstr "char *foo = \"My string\";\nstrcpy(foo, \"bang!\");\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:414
+#, fuzzy
 msgid ""
 "UNIX(R) compilers often put string literals like `\"My string\"` into read-"
 "only areas of memory."
-msgstr ""
+msgstr "UNIX(R) 编译器通常会将像 `\"My string\"` 这样的字符串字面量放入只读内存区域。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:415
+#, fuzzy
 msgid "Doing naughty things with `malloc()` and `free()`, eg"
-msgstr ""
+msgstr "错误使用 `malloc()` 和 `free()`，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:420
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "char bar[80];\n"
 "free(bar);\n"
-msgstr ""
+msgstr "char bar[80];\nfree(bar);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:423
@@ -976,172 +1055,188 @@ msgstr "或"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:429
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "char *foo = malloc(27);\n"
 "free(foo);\n"
 "free(foo);\n"
-msgstr ""
+msgstr "char *foo = malloc(27);\nfree(foo);\nfree(foo);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:434
+#, fuzzy
 msgid ""
 "Making one of these mistakes will not always lead to an error, but they are "
 "always bad practice.  Some systems and compilers are more tolerant than "
 "others, which is why programs that run well on one system can crash when you "
 "try them on another."
-msgstr ""
+msgstr "犯这些错误并不总会导致程序出错，但它们始终是不良做法。有些系统和编译器比其他系统和编译器更宽容，因此程序在一个系统上运行良好，换到另一个系统上却可能崩溃。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sometimes when I get a core dump it says bus error. It says in my UNIX(R) book that this means a hardware problem, but the computer still seems to be working. Is this true?"
-msgstr ""
+msgstr "有时发生核心转储时会提示 bus error（总线错误）。我的 UNIX(R) 书上说这意味着硬件有问题，但计算机看起来仍然正常。这是真的吗？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:439
+#, fuzzy
 msgid ""
 "No, fortunately not (unless of course you really do have a hardware "
 "problem...).  This is usually another way of saying that you accessed memory "
 "in a way you should not have."
-msgstr ""
+msgstr "不，幸好不是（当然，除非你的硬件确实有问题……）。这通常是另一种说法，表示你以不该有的方式访问了内存。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This dumping core business sounds as though it could be quite useful, if I can make it happen when I want to. Can I do this, or do I have to wait until there is an error?"
-msgstr ""
+msgstr "听起来核心转储可能很有用，如果我能在需要时让它发生的话。我可以主动生成核心转储吗，还是必须等到出错？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:443
+#, fuzzy
 msgid "Yes, just go to another console or xterm, do"
-msgstr ""
+msgstr "可以，只需切换到另一个控制台或 xterm，然后执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:447
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ps\n"
-msgstr ""
+msgstr "% ps\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:450
+#, fuzzy
 msgid "to find out the process ID of your program, and do"
-msgstr ""
+msgstr "找出程序的进程 ID，然后执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kill -ABRT pid\n"
-msgstr ""
+msgstr "% kill -ABRT pid\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:457
+#, fuzzy
 msgid "where `_pid_` is the process ID you looked up."
-msgstr ""
+msgstr "其中 `_pid_` 是你查到的进程 ID。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:460
+#, fuzzy
 msgid ""
 "This is useful if your program has got stuck in an infinite loop, for "
 "instance.  If your program happens to trap SIGABRT, there are several other "
 "signals which have a similar effect."
-msgstr ""
+msgstr "例如，如果程序陷入了无限循环，这种方法就很有用。如果程序捕获了 SIGABRT，还有其他几个信号也有类似效果。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:463
+#, fuzzy
 msgid ""
 "Alternatively, you can create a core dump from inside your program, by "
 "calling the `abort()` function.  See the manual page of man:abort[3] to "
 "learn more."
-msgstr ""
+msgstr "或者，你也可以在程序内部调用 `abort()` 函数来生成核心转储。更多信息请参阅 man:abort[3] 手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:466
+#, fuzzy
 msgid ""
 "If you want to create a core dump from outside your program, but do not want "
 "the process to terminate, you can use the `gcore` program.  See the manual "
 "page of man:gcore[1] for more information."
-msgstr ""
+msgstr "如果你想从程序外部生成核心转储，但不希望进程终止，可以使用 `gcore` 程序。更多信息请参阅 man:gcore[1] 手册页。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:468
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Make"
-msgstr ""
+msgstr "Make"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is `make`?"
-msgstr ""
+msgstr "什么是 `make`？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:473
+#, fuzzy
 msgid ""
 "When you are working on a simple program with only one or two source files, "
 "typing in"
-msgstr ""
+msgstr "当你在编写只有一两个源文件的简单程序时，输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:477
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc file1.c file2.c\n"
-msgstr ""
+msgstr "% cc file1.c file2.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:480
+#, fuzzy
 msgid ""
 "is not too bad, but it quickly becomes very tedious when there are several "
 "files-and it can take a while to compile, too."
-msgstr ""
+msgstr "还不算太麻烦，但文件一多就会很快变得十分繁琐，而且编译也可能需要一段时间。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:483
+#, fuzzy
 msgid ""
 "One way to get around this is to use object files and only recompile the "
 "source file if the source code has changed.  So we could have something like:"
-msgstr ""
+msgstr "一种解决办法是使用目标文件，并且只在源代码发生变化时重新编译对应的源文件。因此，我们可以这样做："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cc file1.o file2.o … file37.c …\n"
-msgstr ""
+msgstr "% cc file1.o file2.o … file37.c …\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:491
+#, fuzzy
 msgid ""
 "if we had changed [.filename]#file37.c#, but not any of the others, since "
 "the last time we compiled.  This may speed up the compilation quite a bit, "
 "but does not solve the typing problem."
-msgstr ""
+msgstr "如果自上次编译以来，我们只修改了 [.filename]#file37.c#，而没有修改其他文件，就可以这样做。这或许能显著加快编译速度，但无法解决输入命令繁琐的问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:493
+#, fuzzy
 msgid ""
 "Or we could write a shell script to solve the typing problem, but it would "
 "have to re-compile everything, making it very inefficient on a large project."
-msgstr ""
+msgstr "我们也可以编写一个 shell 脚本来解决输入命令繁琐的问题，但它必须重新编译所有文件，这在大型项目中效率很低。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:495
+#, fuzzy
 msgid ""
 "What happens if we have hundreds of source files lying about? What if we are "
 "working in a team with other people who forget to tell us when they have "
 "changed one of their source files that we use?"
-msgstr ""
+msgstr "如果有数百个源文件呢？如果我们和其他人一起工作，而他们忘了告知我们某个所用的源文件已经修改了，又该怎么办？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:498
+#, fuzzy
 msgid ""
 "Perhaps we could put the two solutions together and write something like a "
 "shell script that would contain some kind of magic rule saying when a source "
 "file needs compiling.  Now all we need now is a program that can understand "
 "these rules, as it is a bit too complicated for the shell."
-msgstr ""
+msgstr "也许我们可以把这两种解决办法结合起来，编写一个 shell 脚本，并在其中加入某种神奇规则，用来判断何时需要编译源文件。现在我们只需要一个能够理解这些规则的程序，因为对 shell 来说，这件事有些复杂。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:503
+#, fuzzy
 msgid ""
 "This program is called `make`.  It reads in a file, called a _makefile_, "
 "that tells it how different files depend on each other, and works out which "
@@ -1151,10 +1246,11 @@ msgid ""
 "filename]#fromboz.c#, so it needs to be re-compiled.\" The makefile also has "
 "rules telling make _how_ to re-compile the source file, making it a much "
 "more powerful tool."
-msgstr ""
+msgstr "这个程序叫作 `make`。它会读取一个名为 _makefile_ 的文件，该文件说明了不同文件之间的依赖关系；`make` 会据此判断哪些文件需要重新编译，哪些不需要。例如，一条规则可以这样描述：“如果 [.filename]#fromboz.o# 的修改时间早于 [.filename]#fromboz.c#，就说明有人修改了 [.filename]#fromboz.c#，因此需要重新编译。”makefile 还会告诉 make __如何__重新编译源文件，这使它成为一种更强大的工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:506
+#, fuzzy
 msgid ""
 "Makefiles are typically kept in the same directory as the source they apply "
 "to, and can be called [.filename]#makefile#, [.filename]#Makefile# or [."
@@ -1162,35 +1258,38 @@ msgid ""
 "as this puts it near the top of a directory listing, where it can easily be "
 "seen.footnote:[They do not use the MAKEFILE form as block capitals are often "
 "used for documentation files like README.]"
-msgstr ""
+msgstr "Makefile 通常与其对应的源文件放在同一目录中，文件名可以是 [.filename]#makefile#、[.filename]#Makefile# 或 [.filename]#MAKEFILE#。大多数程序员使用 [.filename]#Makefile# 这个名称，因为它会出现在目录列表靠前的位置，便于查找。footnote:[他们不会使用 MAKEFILE 这种形式，因为全大写形式通常用于 README 这类文档文件。]"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:507
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of Using `make`"
-msgstr ""
+msgstr "`make` 的使用示例"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:510
+#, fuzzy
 msgid "Here is a very simple make file:"
-msgstr ""
+msgstr "下面是一个非常简单的 makefile："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:515
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:541
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "foo: foo.c\n"
 "\tcc -o foo foo.c\n"
-msgstr ""
+msgstr "foo: foo.c\n\tcc -o foo foo.c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:518
+#, fuzzy
 msgid "It consists of two lines, a dependency line and a creation line."
-msgstr ""
+msgstr "它由两行组成：依赖行和创建行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:525
+#, fuzzy
 msgid ""
 "The dependency line here consists of the name of the program (known as the "
 "_target_), followed by a colon, then whitespace, then the name of the source "
@@ -1200,20 +1299,22 @@ msgid ""
 "filename]#foo# does not exist, or is older than [.filename]#foo.c#, it then "
 "looks at the creation line to find out what to do.  In other words, this is "
 "the rule for working out when [.filename]#foo.c# needs to be re-compiled."
-msgstr ""
+msgstr "这里的依赖行由程序名（称为 _target_）开头，后面是冒号、空白，然后是源文件名。`make` 读取这一行时，会检查 [.filename]#foo# 是否存在；如果存在，它会比较 [.filename]#foo# 上次修改的时间和 [.filename]#foo.c# 上次修改的时间。如果 [.filename]#foo# 不存在，或者它比 [.filename]#foo.c# 旧，`make` 就会查看创建行，了解要执行什么操作。换句话说，这条规则用于确定何时需要重新编译 [.filename]#foo.c#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:529
+#, fuzzy
 msgid ""
 "The creation line starts with a tab (press kbd:[tab]) and then the command "
 "you would type to create [.filename]#foo# if you were doing it at a command "
 "prompt.  If [.filename]#foo# is out of date, or does not exist, `make` then "
 "executes this command to create it.  In other words, this is the rule which "
 "tells make how to re-compile [.filename]#foo.c#."
-msgstr ""
+msgstr "创建行以一个制表符开头（按 kbd:[tab]），后面跟着你在命令提示符下会输入的、用于创建 [.filename]#foo# 的命令。如果 [.filename]#foo# 已过期或不存在，`make` 就会执行该命令来创建它。换句话说，这条规则告诉 make 如何重新编译 [.filename]#foo.c#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:533
+#, fuzzy
 msgid ""
 "So, when you type `make`, it will make sure that [.filename]#foo# is up to "
 "date with respect to your latest changes to [.filename]#foo.c#.  This "
@@ -1221,53 +1322,58 @@ msgid ""
 "targets-in fact, on FreeBSD, it is possible to compile the entire operating "
 "system just by typing `make buildworld buildkernel` at the top level "
 "directory in the src tree."
-msgstr ""
+msgstr "因此，输入 `make` 时，它会确保 [.filename]#foo# 相对于你对 [.filename]#foo.c# 所做的最新更改保持最新。这个原理可以扩展到包含数百个目标的 [.filename]#Makefile#；事实上，在 FreeBSD 中，只需在 src 树的顶层目录输入 `make buildworld buildkernel`，就可以编译整个操作系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:536
+#, fuzzy
 msgid ""
 "Another useful property of makefiles is that the targets do not have to be "
 "programs.  For instance, we could have a make file that looks like this:"
-msgstr ""
+msgstr "makefile 的另一个实用特性是，目标不必是程序。例如，我们可以编写一个如下所示的 make 文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:544
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "install:\n"
 "\tcp foo /home/me\n"
-msgstr ""
+msgstr "install:\n\tcp foo /home/me\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:547
+#, fuzzy
 msgid "We can tell make which target we want to make by typing:"
-msgstr ""
+msgstr "我们可以通过输入以下内容告诉 make 要生成哪个目标："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:551
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make target\n"
-msgstr ""
+msgstr "% make target\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:555
+#, fuzzy
 msgid ""
 "`make` will then only look at that target and ignore any others.  For "
 "example, if we type `make foo` with the makefile above, make will ignore the "
 "`install` target."
-msgstr ""
+msgstr "`make` 随后只会检查该目标，并忽略其他目标。例如，如果我们使用上面的 makefile 输入 `make foo`，make 会忽略 `install` 目标。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:558
+#, fuzzy
 msgid ""
 "If we just type `make` on its own, make will always look at the first target "
 "and then stop without looking at any others.  So if we typed `make` here, it "
 "will just go to the `foo` target, re-compile [.filename]#foo# if necessary, "
 "and then stop without going on to the `install` target."
-msgstr ""
+msgstr "如果只输入 `make`，make 总是会检查第一个目标，然后停止，不再检查其他目标。因此，如果我们在这里输入 `make`，它只会处理 `foo` 目标，必要时重新编译 [.filename]#foo#，然后停止，不会继续处理 `install` 目标。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:562
+#, fuzzy
 msgid ""
 "Notice that the `install` target does not actually depend on anything! This "
 "means that the command on the following line is always executed when we try "
@@ -1275,10 +1381,11 @@ msgid ""
 "filename]#foo# into the user's home directory.  This is often used by "
 "application makefiles, so that the application can be installed in the "
 "correct directory when it has been correctly compiled."
-msgstr ""
+msgstr "请注意，`install` 目标实际上没有依赖任何内容！这意味着，当我们输入 `make install` 来生成该目标时，下一行的命令总会执行。在此例中，它会将 [.filename]#foo# 复制到用户的主目录中。应用程序的 makefile 经常使用这种方式，以便应用程序正确编译后可以安装到正确的目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:567
+#, fuzzy
 msgid ""
 "This is a slightly confusing subject to try to explain.  If you do not quite "
 "understand how `make` works, the best thing to do is to write a simple "
@@ -1286,51 +1393,54 @@ msgid ""
 "experiment.  Then progress to using more than one source file, or having the "
 "source file include a header file.  `touch` is very useful here-it changes "
 "the date on a file without you having to edit it."
-msgstr ""
+msgstr "这个主题有点难以解释。如果你还不太理解 `make` 的工作方式，最好编写一个简单的 \"hello world\" 程序和一个像上面那样的 make 文件，然后进行试验。接着可以尝试使用多个源文件，或者让源文件包含一个头文件。这里 `touch` 非常实用——它可以更改文件的日期，而无需编辑文件。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Make and include-files"
-msgstr ""
+msgstr "Make 与 include 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:572
+#, fuzzy
 msgid ""
 "C code often starts with a list of files to include, for example stdio.h.  "
 "Some of these files are system-include files, some of them are from the "
 "project you are now working on:"
-msgstr ""
+msgstr "C 代码通常以一组要包含的文件开头，例如 stdio.h。其中一些是系统包含文件，另一些则来自你当前正在开发的项目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:577
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <stdio.h>\n"
 "#include \"foo.h\"\n"
-msgstr ""
+msgstr "#include <stdio.h>\n#include \"foo.h\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:579
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int main(....\n"
-msgstr ""
+msgstr "int main(....\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:582
+#, fuzzy
 msgid ""
 "To make sure that this file is recompiled the moment [.filename]#foo.h# is "
 "changed, you have to add it in your [.filename]#Makefile#:"
-msgstr ""
+msgstr "为了确保 [.filename]#foo.h# 更改后能立即重新编译此文件，你必须将它添加到 [.filename]#Makefile# 中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:586
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "foo: foo.c foo.h\n"
-msgstr ""
+msgstr "foo: foo.c foo.h\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:593
+#, fuzzy
 msgid ""
 "The moment your project is getting bigger and you have more and more own "
 "include-files to maintain, it will be a pain to keep track of all include "
@@ -1338,132 +1448,145 @@ msgid ""
 "file but forget to recompile all the files which are depending on it, the "
 "results will be devastating.  `clang` has an option to analyze your files "
 "and to produce a list of include-files and their dependencies: `-MM`."
-msgstr ""
+msgstr "随着项目不断扩大，需要维护的自有包含文件越来越多，跟踪所有包含文件及依赖它们的文件会变得很麻烦。如果你更改了包含文件，却忘了重新编译依赖它的所有文件，后果将不堪设想。`clang` 有一个选项可以分析文件并生成包含文件及其依赖项的列表：`-MM`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:595
+#, fuzzy
 msgid "If you add this to your Makefile:"
-msgstr ""
+msgstr "如果将以下内容添加到 Makefile 中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:600
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "depend:\n"
 "\tcc -E -MM *.c > .depend\n"
-msgstr ""
+msgstr "depend:\n\tcc -E -MM *.c > .depend\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:603
+#, fuzzy
 msgid ""
 "and run `make depend`, the file [.filename]#.depend# will appear with a list "
 "of object-files, C-files and the include-files:"
-msgstr ""
+msgstr "然后运行 `make depend`，就会生成 [.filename]#.depend# 文件，其中列出目标文件、C 文件和包含文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:607
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "foo.o: foo.c foo.h\n"
-msgstr ""
+msgstr "foo.o: foo.c foo.h\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:610
+#, fuzzy
 msgid ""
 "If you change [.filename]#foo.h#, next time you run `make` all files "
 "depending on [.filename]#foo.h# will be recompiled."
-msgstr ""
+msgstr "如果你更改了 [.filename]#foo.h#，下次运行 `make` 时，所有依赖 [.filename]#foo.h# 的文件都会重新编译。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:612
+#, fuzzy
 msgid ""
 "Do not forget to run `make depend` each time you add an include-file to one "
 "of your files."
-msgstr ""
+msgstr "每次向某个文件添加包含文件时，别忘了运行 `make depend`。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:613
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Makefiles"
-msgstr ""
+msgstr "FreeBSD Makefile"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:619
+#, fuzzy
 msgid ""
 "Makefiles can be rather complicated to write.  Fortunately, BSD-based "
 "systems like FreeBSD come with some very powerful ones as part of the "
 "system.  One very good example of this is the FreeBSD ports system.  Here is "
 "the essential part of a typical ports [.filename]#Makefile#:"
-msgstr ""
+msgstr "编写 Makefile 可能相当复杂。幸运的是，像 FreeBSD 这样的 BSD 系统自带了一些功能强大的 Makefile。FreeBSD ports 系统就是一个很好的例子。下面是典型 ports [.filename]#Makefile# 的核心部分："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:624
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "MASTER_SITES=   ftp://freefall.cdrom.com/pub/FreeBSD/LOCAL_PORTS/\n"
 "DISTFILES=      scheme-microcode+dist-7.3-freebsd.tgz\n"
-msgstr ""
+msgstr "MASTER_SITES=   ftp://freefall.cdrom.com/pub/FreeBSD/LOCAL_PORTS/\nDISTFILES=      scheme-microcode+dist-7.3-freebsd.tgz\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:626
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.port.mk>\n"
-msgstr ""
+msgstr ".include <bsd.port.mk>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:629
+#, fuzzy
 msgid ""
 "Now, if we go to the directory for this port and type `make`, the following "
 "happens:"
-msgstr ""
+msgstr "现在，如果我们进入这个 port 的目录并输入 `make`，将会发生以下情况："
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:632
+#, fuzzy
 msgid ""
 "A check is made to see if the source code for this port is already on the "
 "system."
-msgstr ""
+msgstr "检查系统上是否已有此 port 的源代码。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:633
+#, fuzzy
 msgid ""
 "If it is not, an FTP connection to the URL in MASTER_SITES is set up to "
 "download the source."
-msgstr ""
+msgstr "如果没有，则建立到 MASTER_SITES 中 URL 的 FTP 连接，以下载源代码。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:634
+#, fuzzy
 msgid ""
 "The checksum for the source is calculated and compared it with one for a "
 "known, good, copy of the source. This is to make sure that the source was "
 "not corrupted while in transit."
-msgstr ""
+msgstr "计算源代码的校验和，并将其与已知的正确副本的校验和进行比较。这是为了确保源代码在传输过程中没有损坏。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:635
+#, fuzzy
 msgid ""
 "Any changes required to make the source work on FreeBSD are applied-this is "
 "known as _patching_."
-msgstr ""
+msgstr "应用使源代码能够在 FreeBSD 上运行所需的更改——这称为 _patching_。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:636
+#, fuzzy
 msgid ""
 "Any special configuration needed for the source is done. (Many UNIX(R) "
 "program distributions try to work out which version of UNIX(R) they are "
 "being compiled on and which optional UNIX(R) features are present-this is "
 "where they are given the information in the FreeBSD ports scenario)."
-msgstr ""
+msgstr "执行源代码所需的任何特殊配置。（许多 UNIX(R) 程序发行版会尝试判断它们正在何种版本的 UNIX(R) 上编译，以及有哪些可选的 UNIX(R) 功能可用；在 FreeBSD ports 环境中，会在此处提供这些信息。）"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:637
+#, fuzzy
 msgid ""
 "The source code for the program is compiled. In effect, we change to the "
 "directory where the source was unpacked and do `make`-the program's own make "
 "file has the necessary information to build the program."
-msgstr ""
+msgstr "编译程序的源代码。实际上，我们会切换到解压源代码的目录并执行 `make`——程序自身的 make 文件包含构建程序所需的信息。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:638
+#, fuzzy
 msgid ""
 "We now have a compiled version of the program. If we wish, we can test it "
 "now; when we feel confident about the program, we can type `make install`. "
@@ -1471,16 +1594,18 @@ msgid ""
 "into the correct location; an entry is also made into a `package database`, "
 "so that the port can easily be uninstalled later if we change our mind about "
 "it."
-msgstr ""
+msgstr "现在我们已经有了编译好的程序。如果愿意，可以立即测试；确认程序没有问题后，可以输入 `make install`。这会将程序及其所需的支持文件复制到正确的位置；同时还会在 `package database` 中添加一条记录，以便日后改变主意时轻松卸载该 port。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:640
+#, fuzzy
 msgid ""
 "Now I think you will agree that is rather impressive for a four line script!"
-msgstr ""
+msgstr "现在你应该会认同，仅用四行脚本就能做到这些，确实相当了不起！"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:644
+#, fuzzy
 msgid ""
 "The secret lies in the last line, which tells `make` to look in the system "
 "makefile called [.filename]#bsd.port.mk#.  It is easy to overlook this line, "
@@ -1489,25 +1614,27 @@ msgid ""
 "other things I did not mention, including handling any errors that may "
 "occur) and anyone can get access to that just by putting a single line in "
 "their own make file!"
-msgstr ""
+msgstr "奥秘就在最后一行，它告诉 `make` 去查找名为 [.filename]#bsd.port.mk# 的系统 makefile。这一行很容易被忽略，但所有巧妙之处都来自这里——有人编写了一个 makefile，告诉 `make` 执行上述所有操作（以及我没有提到的其他几项操作，包括处理可能发生的错误）；任何人只需在自己的 make 文件中添加一行，就能使用它！"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:648
+#, fuzzy
 msgid ""
 "If you want to have a look at these system makefiles, they are in [."
 "filename]#/usr/share/mk#, but it is probably best to wait until you have had "
 "a bit of practice with makefiles, as they are very complicated (and if you "
 "do look at them, make sure you have a flask of strong coffee handy!)"
-msgstr ""
+msgstr "如果你想查看这些系统 makefile，它们位于 [.filename]#/usr/share/mk#，但最好等你熟悉 makefile 后再看，因为它们非常复杂（如果你确实要看，记得准备一壶浓咖啡！）。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:649
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "More Advanced Uses of `make`"
-msgstr ""
+msgstr "`make` 的更多高级用法"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:655
+#, fuzzy
 msgid ""
 "`Make` is a very powerful tool, and can do much more than the simple example "
 "above shows.  Unfortunately, there are several different versions of `make`, "
@@ -1516,37 +1643,40 @@ msgid ""
 "given you a base from which you can do this.  The man:make[1] manual page "
 "offers a comprehensive discussion of variables, arguments, and how to use "
 "make."
-msgstr ""
+msgstr "`Make` 是一个功能强大的工具，能做的远不止上面的简单示例所展示的内容。遗憾的是，`make` 有多个不同版本，而且彼此差异很大。学习它们功能的最佳方式可能是阅读文档——希望本介绍能为你打下基础。man:make[1] 手册页全面介绍了变量、参数以及 make 的用法。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:659
+#, fuzzy
 msgid ""
 "Many applications in the ports use GNU make, which has a very good set of "
 "\"info\" pages.  If you have installed any of these ports, GNU make will "
 "automatically have been installed as `gmake`.  It is also available as a "
 "port and package in its own right."
-msgstr ""
+msgstr "ports 中的许多应用程序使用 GNU make，它提供了非常完善的 \"info\" 页面。如果你安装了其中任何一个 port，GNU make 也会自动以 `gmake` 的名称安装。它也可以作为独立的 port 和软件包使用。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:662
+#, fuzzy
 msgid ""
 "To view the info pages for GNU make, you will have to edit [.filename]#dir# "
 "in the [.filename]#/usr/local/info# directory to add an entry for it.  This "
 "involves adding a line like"
-msgstr ""
+msgstr "要查看 GNU make 的 info 页面，你需要编辑 [.filename]#/usr/local/info# 目录中的 [.filename]#dir# 文件，为它添加一条记录。具体做法是添加类似下面这样的一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:666
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " * Make: (make).                 The GNU Make utility.\n"
-msgstr ""
+msgstr " * Make: (make).                 The GNU Make utility.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:669
+#, fuzzy
 msgid ""
 "to the file. Once you have done this, you can type `info` and then select [."
 "guimenuitem]#make# from the menu (or in Emacs, do `C-h i`)."
-msgstr ""
+msgstr "将其添加到该文件中。完成后，你可以输入 `info`，然后从菜单中选择 [.guimenuitem]#make#（在 Emacs 中则执行 `C-h i`）。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:671
@@ -1556,12 +1686,13 @@ msgstr "调试"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:673
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction to Available Debuggers"
-msgstr ""
+msgstr "可用调试器简介"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:678
+#, fuzzy
 msgid ""
 "Using a debugger allows running the program under more controlled "
 "circumstances.  Typically, it is possible to step through the program a line "
@@ -1569,112 +1700,122 @@ msgid ""
 "run up to a certain point and then stop, and so on.  It is also possible to "
 "attach to a program that is already running, or load a core file to "
 "investigate why the program crashed."
-msgstr ""
+msgstr "使用调试器可以在更受控的环境下运行程序。通常，你可以逐行执行程序、检查变量的值并更改它们、让调试器运行到某个位置后停止，等等。你也可以附加到正在运行的程序，或者加载 core 文件，以调查程序崩溃的原因。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:681
+#, fuzzy
 msgid ""
 "This section is intended to be a quick introduction to using debuggers and "
 "does not cover specialized topics such as debugging the kernel.  For more "
 "information about that, refer to crossref:kerneldebug[kerneldebug,Kernel "
 "Debugging]."
-msgstr ""
+msgstr "本节旨在快速介绍调试器的用法，不涉及内核调试等专门主题。有关这方面的更多信息，请参阅 crossref:kerneldebug[kerneldebug,内核调试]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:685
+#, fuzzy
 msgid ""
 "The standard debugger supplied with FreeBSD is called `lldb` (LLVM "
 "debugger).  As it is part of the standard installation for that release, "
 "there is no need to do anything special to use it.  It has good command "
 "help, accessible via the `help` command, as well as https://lldb.llvm.org/[a "
 "web tutorial and documentation]."
-msgstr ""
+msgstr "FreeBSD 提供的标准调试器称为 `lldb`（LLVM 调试器）。由于它是相应发行版标准安装的一部分，因此无需进行特殊设置即可使用。它提供了良好的命令帮助，可通过 `help` 命令访问；还可参阅 link:https://lldb.llvm.org/[在线教程和文档]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:689
+#, fuzzy
 msgid ""
 "The `lldb` command is also available extref:{handbook}ports/[from ports or "
 "packages, ports-using] as package:devel/llvm[]."
-msgstr ""
+msgstr "`lldb` 命令也可通过 ports 或软件包 extref:{handbook}ports/[安装，ports-using]，对应的软件包为 package:devel/llvm[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:695
+#, fuzzy
 msgid ""
 "The other debugger available with FreeBSD is called `gdb` (GNU debugger).  "
 "Unlike lldb, it is not installed by default on FreeBSD; to use it, extref:"
 "{handbook}#ports-using/[install] package:devel/gdb[] from ports or "
 "packages.  It has excellent on-line help, as well as a set of info pages."
-msgstr ""
+msgstr "FreeBSD 还提供另一种调试器，称为 `gdb`（GNU 调试器）。与 lldb 不同，它不会在 FreeBSD 上默认安装；要使用它，请通过 ports 或软件包 extref:{handbook}#ports-using/[安装] package:devel/gdb[]。它提供了出色的在线帮助以及一组 info 页面。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:700
+#, fuzzy
 msgid ""
 "The two debuggers have a similar feature set, so which one to use is largely "
 "a matter of taste.  If familiar with one only, use that one.  People "
 "familiar with neither or both but wanting to use one from inside Emacs will "
 "need to use `gdb` as `lldb` is unsupported by Emacs.  Otherwise, try both "
 "and see which one you prefer."
-msgstr ""
+msgstr "这两种调试器的功能相似，因此选择哪一种主要取决于个人喜好。如果你只熟悉其中一种，就使用那一种。如果两种都不熟悉，或者虽然两种都熟悉但想在 Emacs 中使用调试器，则需要使用 `gdb`，因为 Emacs 不支持 `lldb`。否则，可以都试试，看看更喜欢哪一种。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:701
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using lldb"
-msgstr ""
+msgstr "使用 lldb"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:703
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Starting lldb"
-msgstr ""
+msgstr "启动 lldb"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:706
+#, fuzzy
 msgid "Start up lldb by typing"
-msgstr ""
+msgstr "输入以下内容启动 lldb："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:710
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lldb -- progname\n"
-msgstr ""
+msgstr "% lldb -- progname\n"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:712
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running a Program with lldb"
-msgstr ""
+msgstr "使用 lldb 运行程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:717
+#, fuzzy
 msgid ""
 "Compile the program with `-g` to get the most out of using `lldb`.  It will "
 "work without, but will only display the name of the function currently "
 "running, instead of the source code.  If it displays a line like:"
-msgstr ""
+msgstr "使用 `-g` 编译程序，以便充分利用 `lldb`。不使用该选项也能运行，但只会显示当前运行的函数名，而不会显示源代码。如果设置断点时显示类似下面这样的一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:721
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Breakpoint 1: where = temp`main, address = …\n"
-msgstr ""
+msgstr "Breakpoint 1: where = temp`main, address = …\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:724
+#, fuzzy
 msgid ""
 "(without an indication of source code filename and line number) when setting "
 "a breakpoint, this means that the program was not compiled with `-g`."
-msgstr ""
+msgstr "（没有显示源代码文件名和行号），这表示程序编译时没有使用 `-g`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:729
+#, fuzzy
 msgid ""
 "Most `lldb` commands have shorter forms that can be used instead.  The "
 "longer forms are used here for clarity."
-msgstr ""
+msgstr "大多数 `lldb` 命令都有可用的缩写。为便于理解，这里使用较长的命令形式。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:734
+#, fuzzy
 msgid ""
 "At the `lldb` prompt, type `breakpoint set -n main`.  This will tell the "
 "debugger not to display the preliminary set-up code in the program being run "
@@ -1682,101 +1823,106 @@ msgid ""
 "`process launch` to actually start the program- it will start at the "
 "beginning of the set-up code and then get stopped by the debugger when it "
 "calls `main()`."
-msgstr ""
+msgstr "在 `lldb` 提示符下输入 `breakpoint set -n main`。这会告诉调试器不要显示正在运行的程序中的初始化代码，并在程序代码开始处停止执行。现在输入 `process launch`，实际启动程序——程序会从初始化代码开始运行，然后在调用 `main()` 时被调试器暂停。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:738
+#, fuzzy
 msgid ""
 "To step through the program a line at a time, type `thread step-over`.  When "
 "the program gets to a function call, step into it by typing `thread step-"
 "in`.  Once in a function call, return from it by typing `thread step-out` or "
 "use `up` and `down` to take a quick look at the caller."
-msgstr ""
+msgstr "要逐行执行程序，请输入 `thread step-over`。程序运行到函数调用时，输入 `thread step-in` 进入该函数。进入函数后，输入 `thread step-out` 从中返回，或者使用 `up` 和 `down` 快速查看调用者。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:741
+#, fuzzy
 msgid ""
 "Here is a simple example of how to spot a mistake in a program with `lldb`.  "
 "This is our program (with a deliberate mistake):"
-msgstr ""
+msgstr "下面是一个使用 `lldb` 查找程序错误的简单示例。以下是我们的程序（其中故意包含一个错误）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:745
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1019
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#include <stdio.h>\n"
-msgstr ""
+msgstr "#include <stdio.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:747
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1021
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int bazz(int anint);\n"
-msgstr ""
+msgstr "int bazz(int anint);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:750
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1024
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "main() {\n"
 "\tint i;\n"
-msgstr ""
+msgstr "main() {\n\tint i;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:755
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1029
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tprintf(\"This is my program\\n\");\n"
 "\tbazz(i);\n"
 "\treturn 0;\n"
 "}\n"
-msgstr ""
+msgstr "\tprintf(\"This is my program\\n\");\n\tbazz(i);\n\treturn 0;\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:760
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1034
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int bazz(int anint) {\n"
 "\tprintf(\"You gave me %d\\n\", anint);\n"
 "\treturn anint;\n"
 "}\n"
-msgstr ""
+msgstr "int bazz(int anint) {\n\tprintf(\"You gave me %d\\n\", anint);\n\treturn anint;\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:763
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1037
+#, fuzzy
 msgid ""
 "This program sets i to be `5` and passes it to a function `bazz()` which "
 "prints out the number we gave it."
-msgstr ""
+msgstr "此程序将 i 设为 `5`，并将它传递给函数 `bazz()`，该函数会打印出我们传入的数字。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:765
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1039
+#, fuzzy
 msgid "Compiling and running the program displays"
-msgstr ""
+msgstr "编译并运行该程序会显示"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cc -g -o temp temp.c\n"
 "% ./temp\n"
 "This is my program\n"
 "anint = -5360\n"
-msgstr ""
+msgstr "% cc -g -o temp temp.c\n% ./temp\nThis is my program\nanint = -5360\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:775
+#, fuzzy
 msgid "That is not what was expected! Time to see what is going on!"
-msgstr ""
+msgstr "这可不是预期的结果！该看看究竟发生了什么了！"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lldb -- temp\n"
 "(lldb) target create \"temp\"\n"
@@ -1786,11 +1932,11 @@ msgid ""
 "(lldb) process launch\t\t\t\t\tRun as far as main()\n"
 "Process 9992 launching\n"
 "Process 9992 launched: '/home/pauamma/tmp/temp' (x86_64)\tProgram starts running\n"
-msgstr ""
+msgstr "% lldb -- temp\n(lldb) target create \"temp\"\nCurrent executable set to 'temp' (x86_64).\n(lldb) breakpoint set -n main\t\t\t\t跳过初始化代码\nBreakpoint 1: where = temp`main + 15 at temp.c:8:2, address = 0x00000000002012ef\tlldb 在 main() 处设置断点\n(lldb) process launch\t\t\t\t\t运行到 main()\nProcess 9992 launching\nProcess 9992 launched: '/home/pauamma/tmp/temp' (x86_64)\t程序开始运行\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Process 9992 stopped\n"
 "* thread #1, name = 'temp', stop reason = breakpoint 1.1\tlldb stops at main()\n"
@@ -1825,18 +1971,19 @@ msgid ""
 "   15\t\treturn anint;\n"
 "   16\t}\n"
 "(lldb)\n"
-msgstr ""
+msgstr "Process 9992 stopped\n* thread #1, name = 'temp', stop reason = breakpoint 1.1\tlldb 在 main() 处停止\n    frame #0: 0x00000000002012ef temp`main at temp.c:8:2\n   5\tmain() {\n   6\t\tint i;\n   7\n-> 8\t\tprintf(\"This is my program\\n\");\t\t\t显示停止的位置\n   9\t\tbazz(i);\n   10\t\treturn 0;\n   11\t}\n(lldb) thread step-over\t\t\t转到下一行\nThis is my program\t\t\t\t\t\t程序输出\nProcess 9992 stopped\n* thread #1, name = 'temp', stop reason = step over\n    frame #0: 0x0000000000201300 temp`main at temp.c:9:7\n   6\t\tint i;\n   7\n   8\t\tprintf(\"This is my program\\n\");\n-> 9\t\tbazz(i);\n   10\t\treturn 0;\n   11\t}\n   12\n(lldb) thread step-in\t\t\t进入 bazz()\nProcess 9992 stopped\n* thread #1, name = 'temp', stop reason = step in\n    frame #0: 0x000000000020132b temp`bazz(anint=-5360) at temp.c:14:29\tlldb 显示栈帧\n   11\t}\n   12\n   13\tint bazz(int anint) {\n-> 14\t\tprintf(\"You gave me %d\\n\", anint);\n   15\t\treturn anint;\n   16\t}\n(lldb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:823
+#, fuzzy
 msgid ""
 "Hang on a minute! How did anint get to be `-5360`? Was it not set to `5` in "
 "`main()`? Let us move up to `main()` and have a look."
-msgstr ""
+msgstr "等一下！anint 怎么会变成 `-5360`？它不是在 `main()` 中被设为 `5` 了吗？让我们回到 `main()` 看看。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(lldb) up\t\tMove up call stack\n"
 "frame #1: 0x000000000020130b temp`main at temp.c:9:2\t\tlldb displays stack frame\n"
@@ -1849,45 +1996,48 @@ msgid ""
 "   12\n"
 "(lldb) frame variable i\t\t\tShow us the value of i\n"
 "(int) i = -5360\t\t\t\t\t\t\tlldb displays -5360\n"
-msgstr ""
+msgstr "(lldb) up\t\t向上移动调用栈\nframe #1: 0x000000000020130b temp`main at temp.c:9:2\t\tlldb 显示栈帧\n   6\t\tint i;\n   7\n   8\t\tprintf(\"This is my program\\n\");\n-> 9\t\tbazz(i);\n   10\t\treturn 0;\n   11\t}\n   12\n(lldb) frame variable i\t\t\t显示 i 的值\n(int) i = -5360\t\t\t\t\t\t\tlldb 显示 -5360\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:841
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1082
+#, fuzzy
 msgid ""
 "Oh dear! Looking at the code, we forgot to initialize i.  We meant to put"
-msgstr ""
+msgstr "糟糕！查看代码后发现，我们忘了初始化 i。我们本来想写成"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:847
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1088
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "main() {\n"
 "\tint i;\n"
-msgstr ""
+msgstr "...\nmain() {\n\tint i;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:851
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1092
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\ti = 5;\n"
 "\tprintf(\"This is my program\\n\");\n"
 "...\n"
-msgstr ""
+msgstr "\ti = 5;\n\tprintf(\"This is my program\\n\");\n...\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:856
+#, fuzzy
 msgid ""
 "but we left the `i=5;` line out.  As we did not initialize i, it had "
 "whatever number happened to be in that area of memory when the program ran, "
 "which in this case happened to be `-5360`."
-msgstr ""
+msgstr "但我们漏掉了 `i=5;` 这一行。由于没有初始化 i，它的值就是程序运行时内存中该位置碰巧存放的数值；在这个例子中，恰好是 `-5360`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:862
+#, fuzzy
 msgid ""
 "The `lldb` command displays the stack frame every time we go into or out of "
 "a function, even if we are using `up` and `down` to move around the call "
@@ -1895,17 +2045,18 @@ msgid ""
 "which helps us keep track of where we are and what is going on.  (The stack "
 "is a storage area where the program stores information about the arguments "
 "passed to functions and where to go when it returns from a function call.)"
-msgstr ""
+msgstr "每次进入或退出函数时，`lldb` 命令都会显示栈帧，即使我们使用 `up` 和 `down` 在调用栈中移动也是如此。它会显示函数名称及其参数值，帮助我们了解当前所在位置以及正在发生的事情。（栈是一个存储区域，程序在其中保存传递给函数的参数，以及函数调用返回时要跳转到的位置。）"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:864
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Examining a Core File with lldb"
-msgstr ""
+msgstr "使用 lldb 检查核心转储文件"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:869
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1110
+#, fuzzy
 msgid ""
 "A core file is basically a file which contains the complete state of the "
 "process when it crashed.  In \"the good old days\", programmers had to print "
@@ -1913,43 +2064,46 @@ msgid ""
 "life is a bit easier.  Incidentally, under FreeBSD and other 4.4BSD systems, "
 "a core file is called [.filename]#progname.core# instead of just [."
 "filename]#core#, to make it clearer which program a core file belongs to."
-msgstr ""
+msgstr "核心转储文件基本上是一个记录进程崩溃时完整状态的文件。在“过去的好时光”里，程序员必须打印核心转储文件的十六进制内容，并对照机器码手册费力排查；如今事情容易多了。顺便一提，在 FreeBSD 和其他 4.4BSD 系统中，核心转储文件名为 [.filename]#progname.core#，而不只是 [.filename]#core#，这样更容易看出它属于哪个程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:872
+#, fuzzy
 msgid ""
 "To examine a core file, specify the name of the core file in addition to the "
 "program itself.  Instead of starting up `lldb` in the usual way, type `lldb -"
 "c _progname_.core \\-- _progname_`."
-msgstr ""
+msgstr "要检查核心转储文件，除了程序本身，还要指定核心转储文件的名称。不要像平常那样启动 `lldb`，而是输入 `lldb -c _progname_.core \\-- _progname_`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:874
+#, fuzzy
 msgid "The debugger will display something like this:"
-msgstr ""
+msgstr "调试器会显示类似以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:881
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% lldb -c [.filename]#progname.core# -- [.filename]#progname#\n"
 "(lldb) target create \"[.filename]#progname#\" --core \"[.filename]#progname#.core\"\n"
 "Core file '/home/pauamma/tmp/[.filename]#progname.core#' (x86_64) was loaded.\n"
 "(lldb)\n"
-msgstr ""
+msgstr "% lldb -c [.filename]#progname.core# -- [.filename]#progname#\n(lldb) target create \"[.filename]#progname#\" --core \"[.filename]#progname#.core\"\nCore file '/home/pauamma/tmp/[.filename]#progname.core#' (x86_64) was loaded.\n(lldb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:887
+#, fuzzy
 msgid ""
 "In this case, the program was called [.filename]#progname#, so the core file "
 "is called [.filename]#progname.core#.  The debugger does not display why the "
 "program crashed or where.  For this, use `thread backtrace all`.  This will "
 "also show how the function where the program dumped core was called."
-msgstr ""
+msgstr "在此例中，程序名为 [.filename]#progname#，因此核心转储文件名为 [.filename]#progname.core#。调试器不会显示程序崩溃的原因或位置。要查看这些信息，请使用 `thread backtrace all`。它还会显示导致程序生成核心转储的函数是如何被调用的。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:896
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(lldb) thread backtrace all\n"
 "* thread #1, name = 'progname', stop reason = signal SIGSEGV\n"
@@ -1957,269 +2111,290 @@ msgid ""
 "    frame #1: 0x0000000000201312 progname`main at temp2.c:10:2\n"
 "    frame #2: 0x000000000020110f progname`_start(ap=<unavailable>, cleanup=<unavailable>) at crt1.c:76:7\n"
 "(lldb)\n"
-msgstr ""
+msgstr "(lldb) thread backtrace all\n* thread #1, name = 'progname', stop reason = signal SIGSEGV\n  * frame #0: 0x0000000000201347 progname`bazz(anint=5) at temp2.c:17:10\n    frame #1: 0x0000000000201312 progname`main at temp2.c:10:2\n    frame #2: 0x000000000020110f progname`_start(ap=<unavailable>, cleanup=<unavailable>) at crt1.c:76:7\n(lldb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:901
+#, fuzzy
 msgid ""
 "`SIGSEGV` indicates that the program tried to access memory (run code or "
 "read/write data usually) at a location that does not belong to it, but does "
 "not give any specifics.  For that, look at the source code at line 10 of "
 "file temp2.c, in `bazz()`.  The backtrace also says that in this case, "
 "`bazz()` was called from `main()`."
-msgstr ""
+msgstr "`SIGSEGV` 表示程序尝试在不属于自己的内存位置访问内存（通常是执行代码或读写数据），但不会提供具体细节。要查明原因，请查看 temp2.c 文件第 10 行的源代码，在 `bazz()` 中。回溯还显示，在此例中 `bazz()` 是由 `main()` 调用的。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:902
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Attaching to a Running Program with lldb"
-msgstr ""
+msgstr "使用 lldb 附加到正在运行的程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:907
+#, fuzzy
 msgid ""
 "One of the neatest features about `lldb` is that it can attach to a program "
 "that is already running.  Of course, that requires sufficient permissions to "
 "do so.  A common problem is stepping through a program that forks and "
 "wanting to trace the child, but the debugger will only trace the parent."
-msgstr ""
+msgstr "`lldb` 最实用的功能之一，是能够附加到已经运行的程序。当然，这需要足够的权限。一个常见问题是：单步调试一个会调用 fork 的程序时，希望跟踪子进程，但调试器却只跟踪父进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:909
+#, fuzzy
 msgid ""
 "To do that, start up another `lldb`, use `ps` to find the process ID for the "
 "child, and do"
-msgstr ""
+msgstr "要解决这个问题，启动另一个 `lldb`，使用 `ps` 查找子进程的进程 ID，然后执行"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:913
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(lldb) process attach -p pid\n"
-msgstr ""
+msgstr "(lldb) process attach -p pid\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:916
+#, fuzzy
 msgid "in `lldb`, and then debug as usual."
-msgstr ""
+msgstr "在 `lldb` 中执行该命令，然后像往常一样进行调试。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:918
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1173
+#, fuzzy
 msgid ""
 "For that to work well, the code that calls `fork` to create the child needs "
 "to do something like the following (courtesy of the `gdb` info pages):"
-msgstr ""
+msgstr "要让这种方法顺利工作，调用 `fork` 创建子进程的代码需要执行类似以下的操作（摘自 `gdb` 信息页）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:926
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "if ((pid = fork()) < 0)\t\t/* _Always_ check this */\n"
 "\terror();\n"
 "else if (pid == 0) {\t\t/* child */\n"
 "\tint PauseMode = 1;\n"
-msgstr ""
+msgstr "...\nif ((pid = fork()) < 0)\t\t/* 始终检查这一点 */\n\terror();\nelse if (pid == 0) {\t\t/* 子进程 */\n\tint PauseMode = 1;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:932
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\twhile (PauseMode)\n"
 "\t\tsleep(10);\t/* Wait until someone attaches to us */\n"
 "\t...\n"
 "} else {\t\t\t/* parent */\n"
 "\t...\n"
-msgstr ""
+msgstr "\twhile (PauseMode)\n\t\tsleep(10);\t/* 等待有人附加到我们 */\n\t...\n} else {\t\t\t/* 父进程 */\n\t...\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:935
+#, fuzzy
 msgid ""
 "Now all that is needed is to attach to the child, set PauseMode to `0` with "
 "`expr PauseMode = 0` and wait for the `sleep()` call to return."
-msgstr ""
+msgstr "现在只需附加到子进程，用 `expr PauseMode = 0` 将 PauseMode 设为 `0`，然后等待 `sleep()` 调用返回即可。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:936
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remote Debugging Using LLDB"
-msgstr ""
+msgstr "使用 LLDB 进行远程调试"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:942
+#, fuzzy
 msgid ""
 "The described functionality is available starting with LLDB version 12.0.0.  "
 "Users of FreeBSD releases containing an earlier LLDB version may wish to use "
 "the snapshot available in extref:{handbook}ports[ports or packages, ports-"
 "using], as package:devel/llvm-devel[]."
-msgstr ""
+msgstr "从 LLDB 12.0.0 版本开始支持此处介绍的功能。使用较早版本 LLDB 的 FreeBSD 用户，可以通过 extref:{handbook}ports[移植软件或软件包， ports-using] 使用快照版本，软件包为 package:devel/llvm-devel[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:946
+#, fuzzy
 msgid ""
 "Starting with LLDB 12.0.0, remote debugging is supported on FreeBSD.  This "
 "means that `lldb-server` can be started to debug a program on one host, "
 "while the interactive `lldb` client connects to it from another one."
-msgstr ""
+msgstr "从 LLDB 12.0.0 开始，FreeBSD 支持远程调试。这意味着可以在一台主机上启动 `lldb-server` 来调试程序，同时从另一台主机连接交互式 `lldb` 客户端。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:948
+#, fuzzy
 msgid ""
 "To launch a new process to be debugged remotely, run `lldb-server` on the "
 "remote server by typing"
-msgstr ""
+msgstr "要启动一个新的远程调试进程，请在远程服务器上输入以下命令运行 `lldb-server`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:952
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lldb-server g host:port -- progname\n"
-msgstr ""
+msgstr "% lldb-server g host:port -- progname\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:955
+#, fuzzy
 msgid ""
 "The process will be stopped immediately after launching, and `lldb-server` "
 "will wait for the client to connect."
-msgstr ""
+msgstr "进程启动后会立即停止，`lldb-server` 将等待客户端连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:957
+#, fuzzy
 msgid ""
 "Start `lldb` locally and type the following command to connect to the remote "
 "server:"
-msgstr ""
+msgstr "在本地启动 `lldb`，并输入以下命令连接到远程服务器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:961
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(lldb) gdb-remote host:port\n"
-msgstr ""
+msgstr "(lldb) gdb-remote host:port\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:965
+#, fuzzy
 msgid ""
 "`lldb-server` can also attach to a running process.  To do that, type the "
 "following on the remote server:"
-msgstr ""
+msgstr "`lldb-server` 也可以附加到正在运行的进程。要执行此操作，请在远程服务器上输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:969
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lldb-server g host:port --attach pid-or-name\n"
-msgstr ""
+msgstr "% lldb-server g host:port --attach pid-or-name\n"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:971
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using gdb"
-msgstr ""
+msgstr "使用 gdb"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:973
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Starting gdb"
-msgstr ""
+msgstr "启动 gdb"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:976
+#, fuzzy
 msgid "Start up gdb by typing"
-msgstr ""
+msgstr "输入以下命令启动 gdb："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:980
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% gdb progname\n"
-msgstr ""
+msgstr "% gdb progname\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:984
+#, fuzzy
 msgid "although many people prefer to run it inside Emacs.  To do this, type:"
-msgstr ""
+msgstr "不过，许多人更喜欢在 Emacs 中运行它。要这样做，请输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:988
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " M-x gdb RET progname RET\n"
-msgstr ""
+msgstr " M-x gdb RET progname RET\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:991
+#, fuzzy
 msgid ""
 "Finally, for those finding its text-based command-prompt style off-putting, "
 "there is a graphical front-end for it (package:devel/xxgdb[]) in the Ports "
 "Collection."
-msgstr ""
+msgstr "最后，如果你不喜欢基于文本的命令提示符界面，Ports Collection 中还提供了图形前端 package:devel/xxgdb[]。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:992
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running a Program with gdb"
-msgstr ""
+msgstr "使用 gdb 运行程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:997
+#, fuzzy
 msgid ""
 "Compile the program with `-g` to get the most out of using `gdb`.  It will "
 "work without, but will only display the name of the function currently "
 "running, instead of the source code.  A line like:"
-msgstr ""
+msgstr "使用 `gdb` 时，编译程序要加上 `-g`，才能充分利用其功能。不加也能运行，但只会显示当前正在运行的函数名称，而不会显示源代码。例如出现以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1001
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "... (no debugging symbols found) ...\n"
-msgstr ""
+msgstr "... (no debugging symbols found) ...\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1004
+#, fuzzy
 msgid "when `gdb` starts up means that the program was not compiled with `-g`."
-msgstr ""
+msgstr "当 `gdb` 启动时出现这条信息，表示程序编译时没有使用 `-g`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1008
+#, fuzzy
 msgid ""
 "At the `gdb` prompt, type `break main`.  This will tell the debugger to skip "
 "the preliminary set-up code in the program being run and to stop execution "
 "at the beginning of the program's code.  Now type `run` to start the "
 "program- it will start at the beginning of the set-up code and then get "
 "stopped by the debugger when it calls `main()`."
-msgstr ""
+msgstr "在 `gdb` 提示符下输入 `break main`。这会让调试器跳过正在运行的程序中的初始化代码，并在程序代码开始处停止执行。然后输入 `run` 启动程序——程序会从初始化代码开始运行，接着在调用 `main()` 时被调试器停止。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1012
+#, fuzzy
 msgid ""
 "To step through the program a line at a time, press `n`.  When at a function "
 "call, step into it by pressing `s`.  Once in a function call, return from it "
 "by pressing `f`, or use `up` and `down` to take a quick look at the caller."
-msgstr ""
+msgstr "要逐行执行程序，请按 `n`。遇到函数调用时，按 `s` 进入该函数。进入函数后，按 `f` 从函数返回，或使用 `up` 和 `down` 快速查看调用者。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1015
+#, fuzzy
 msgid ""
 "Here is a simple example of how to spot a mistake in a program with `gdb`.  "
 "This is our program (with a deliberate mistake):"
-msgstr ""
+msgstr "下面是一个使用 `gdb` 查找程序错误的简单示例。以下是我们的程序（其中故意包含一个错误）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1046
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cc -g -o temp temp.c\n"
 "% ./temp\n"
 "This is my program\n"
 "anint = 4231\n"
-msgstr ""
+msgstr "% cc -g -o temp temp.c\n% ./temp\nThis is my program\nanint = 4231\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1049
+#, fuzzy
 msgid "That was not what we expected! Time to see what is going on!"
-msgstr ""
+msgstr "结果和预期的不一样！该看看究竟发生了什么了！"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1061
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% gdb temp\n"
 "GDB is free software and you are welcome to distribute copies of it\n"
@@ -2230,11 +2405,11 @@ msgid ""
 "Breakpoint 1 at 0x160f: file temp.c, line 9.\tgdb puts breakpoint at main()\n"
 "(gdb) run\t\t\t\t\tRun as far as main()\n"
 "Starting program: /home/james/tmp/temp\t\tProgram starts running\n"
-msgstr ""
+msgstr "% gdb temp\nGDB is free software and you are welcome to distribute copies of it\n under certain conditions; type \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB; type \"show warranty\" for details.\nGDB 4.13 (i386-unknown-freebsd), Copyright 1994 Free Software Foundation, Inc.\n(gdb) break main\t\t\t\t跳过初始化代码\nBreakpoint 1 at 0x160f: file temp.c, line 9.\tgdb 在 main() 处设置断点\n(gdb) run\t\t\t\t\t运行到 main()\nStarting program: /home/james/tmp/temp\t\t程序开始运行\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1068
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Breakpoint 1, main () at temp.c:9\t\tgdb stops at main()\n"
 "(gdb) n\t\t\t\t\t\tGo to next line\n"
@@ -2242,35 +2417,38 @@ msgid ""
 "(gdb) s\t\t\t\t\t\tstep into bazz()\n"
 "bazz (anint=4231) at temp.c:17\t\t\tgdb displays stack frame\n"
 "(gdb)\n"
-msgstr ""
+msgstr "Breakpoint 1, main () at temp.c:9\t\tgdb 在 main() 处停止\n(gdb) n\t\t\t\t\t\t转到下一行\nThis is my program\t\t\t\t程序输出\n(gdb) s\t\t\t\t\t\t进入 bazz()\nbazz (anint=4231) at temp.c:17\t\tgdb 显示栈帧\n(gdb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1071
+#, fuzzy
 msgid ""
 "Hang on a minute! How did anint get to be `4231`? Was it not set to `5` in "
 "`main()`? Let us move up to `main()` and have a look."
-msgstr ""
+msgstr "等一下！anint 怎么会变成 `4231`？它不是在 `main()` 中被设为 `5` 了吗？让我们回到 `main()` 看看。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1078
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(gdb) up\t\t\t\t\tMove up call stack\n"
 "#1  0x1625 in main () at temp.c:11\t\tgdb displays stack frame\n"
 "(gdb) p i\t\t\t\t\tShow us the value of i\n"
 "$1 = 4231\t\t\t\t\tgdb displays 4231\n"
-msgstr ""
+msgstr "(gdb) up\t\t\t\t\t向上移动调用栈\n#1  0x1625 in main () at temp.c:11\t\tgdb 显示栈帧\n(gdb) p i\t\t\t\t\t显示 i 的值\n$1 = 4231\t\t\t\t\tgdb 显示 4231\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1097
+#, fuzzy
 msgid ""
 "but we left the `i=5;` line out.  As we did not initialize i, it had "
 "whatever number happened to be in that area of memory when the program ran, "
 "which in this case happened to be `4231`."
-msgstr ""
+msgstr "但我们漏掉了 `i=5;` 这一行。由于没有初始化 i，它的值就是程序运行时内存中该位置碰巧存放的数值；在这个例子中，恰好是 `4231`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1103
+#, fuzzy
 msgid ""
 "The `gdb` command displays the stack frame every time we go into or out of a "
 "function, even if we are using `up` and `down` to move around the call "
@@ -2278,42 +2456,45 @@ msgid ""
 "which helps us keep track of where we are and what is going on.  (The stack "
 "is a storage area where the program stores information about the arguments "
 "passed to functions and where to go when it returns from a function call.)"
-msgstr ""
+msgstr "每次进入或退出函数时，`gdb` 命令都会显示栈帧，即使我们使用 `up` 和 `down` 在调用栈中移动也是如此。它会显示函数名称及其参数值，帮助我们了解当前所在位置以及正在发生的事情。（栈是一个存储区域，程序在其中保存传递给函数的参数，以及函数调用返回时要跳转到的位置。）"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Examining a Core File with gdb"
-msgstr ""
+msgstr "使用 gdb 检查核心转储文件"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1113
+#, fuzzy
 msgid ""
 "To examine a core file, start up `gdb` in the usual way.  Instead of typing "
 "`break` or `run`, type"
-msgstr ""
+msgstr "要检查核心转储文件，请像平常一样启动 `gdb`。不要输入 `break` 或 `run`，而是输入"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(gdb) core progname.core\n"
-msgstr ""
+msgstr "(gdb) core progname.core\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1120
+#, fuzzy
 msgid ""
 "If the core file is not in the current directory, type `dir /path/to/core/"
 "file` first."
-msgstr ""
+msgstr "如果核心转储文件不在当前目录，请先输入 `dir /path/to/core/file`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1122
+#, fuzzy
 msgid "The debugger should display something like this:"
-msgstr ""
+msgstr "调试器应该会显示类似以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% gdb [.filename]#progname#\n"
 "GDB is free software and you are welcome to distribute copies of it\n"
@@ -2326,181 +2507,202 @@ msgid ""
 "Cannot access memory at address 0x7020796d.\n"
 "#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
 "(gdb)\n"
-msgstr ""
+msgstr "% gdb [.filename]#progname#\nGDB is free software and you are welcome to distribute copies of it\n under certain conditions; type \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB; type \"show warranty\" for details.\nGDB 4.13 (i386-unknown-freebsd), Copyright 1994 Free Software Foundation, Inc.\n(gdb) core [.filename]#progname.core#\nCore was generated by `[.filename]#progname#'.\nProgram terminated with signal 11, Segmentation fault.\nCannot access memory at address 0x7020796d.\n#0  0x164a in bazz (anint=0x5) at temp.c:17\n(gdb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1140
+#, fuzzy
 msgid ""
 "In this case, the program was called [.filename]#progname#, so the core file "
 "is called [.filename]#progname.core#.  We can see that the program crashed "
 "due to trying to access an area in memory that was not available to it in a "
 "function called `bazz`."
-msgstr ""
+msgstr "在此例中，程序名为 [.filename]#progname#，因此核心转储文件名为 [.filename]#progname.core#。我们可以看到，程序因尝试访问不可用的内存区域而崩溃；出错的函数名为 `bazz`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1144
+#, fuzzy
 msgid ""
 "Sometimes it is useful to be able to see how a function was called, as the "
 "problem could have occurred a long way up the call stack in a complex "
 "program.  `bt` causes `gdb` to print out a back-trace of the call stack:"
-msgstr ""
+msgstr "有时，查看函数是如何被调用的很有帮助，因为在复杂程序中，问题可能出在调用栈很靠前的位置。`bt` 会让 `gdb` 打印调用栈的回溯信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(gdb) bt\n"
 "#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
 "#1  0xefbfd888 in end ()\n"
 "#2  0x162c in main () at temp.c:11\n"
 "(gdb)\n"
-msgstr ""
+msgstr "(gdb) bt\n#0  0x164a in bazz (anint=0x5) at temp.c:17\n#1  0xefbfd888 in end ()\n#2  0x162c in main () at temp.c:11\n(gdb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1156
+#, fuzzy
 msgid ""
 "The `end()` function is called when a program crashes; in this case, the "
 "`bazz()` function was called from `main()`."
-msgstr ""
+msgstr "程序崩溃时会调用 `end()` 函数；在此例中，`bazz()` 函数是由 `main()` 调用的。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Attaching to a Running Program with gdb"
-msgstr ""
+msgstr "使用 gdb 附加到正在运行的程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1162
+#, fuzzy
 msgid ""
 "One of the neatest features about `gdb` is that it can attach to a program "
 "that is already running.  Of course, that requires sufficient permissions to "
 "do so.  A common problem is stepping through a program that forks and "
 "wanting to trace the child, but the debugger will only trace the parent."
-msgstr ""
+msgstr "`gdb` 最实用的功能之一，是可以附加到已经在运行的程序。当然，这需要足够的权限。一个常见的问题是，单步调试一个会派生子进程的程序时，想跟踪子进程，但调试器只会跟踪父进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1164
+#, fuzzy
 msgid ""
 "To do that, start up another `gdb`, use `ps` to find the process ID for the "
 "child, and do"
-msgstr ""
+msgstr "要实现这一点，请启动另一个 `gdb`，使用 `ps` 查找子进程的进程 ID，然后执行"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(gdb) attach pid\n"
-msgstr ""
+msgstr "(gdb) attach pid\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1171
+#, fuzzy
 msgid "in `gdb`, and then debug as usual."
-msgstr ""
+msgstr "在 `gdb` 中执行，然后像平常一样进行调试。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1190
+#, fuzzy
 msgid ""
 "Now all that is needed is to attach to the child, set PauseMode to `0`, and "
 "wait for the `sleep()` call to return!"
-msgstr ""
+msgstr "现在只需附加到子进程，将 PauseMode 设为 `0`，然后等待 `sleep()` 调用返回！"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Emacs as a Development Environment"
-msgstr ""
+msgstr "将 Emacs 用作开发环境"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1198
+#, fuzzy
 msgid ""
 "Emacs is a highly customizable editor-indeed, it has been customized to the "
 "point where it is more like an operating system than an editor! Many "
 "developers and sysadmins do in fact spend practically all their time working "
 "inside Emacs, leaving it only to log out."
-msgstr ""
+msgstr "Emacs 是一款高度可定制的编辑器——它的定制程度甚至让它更像一个操作系统，而不是编辑器！许多开发者和系统管理员实际上几乎所有时间都在 Emacs 中工作，只有注销时才会离开它。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1200
+#, fuzzy
 msgid ""
 "It is impossible even to summarize everything Emacs can do here, but here "
 "are some of the features of interest to developers:"
-msgstr ""
+msgstr "这里不可能概述 Emacs 的所有功能，但以下是一些开发者可能感兴趣的功能："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1202
+#, fuzzy
 msgid ""
 "Very powerful editor, allowing search-and-replace on both strings and "
 "regular expressions (patterns), jumping to start/end of block expression, "
 "etc, etc."
-msgstr ""
+msgstr "功能强大的编辑器，支持对字符串和正则表达式（模式）进行查找和替换、跳转到块表达式的开头或结尾等。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1203
+#, fuzzy
 msgid "Pull-down menus and online help."
-msgstr ""
+msgstr "下拉菜单和在线帮助。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1204
+#, fuzzy
 msgid "Language-dependent syntax highlighting and indentation."
-msgstr ""
+msgstr "根据语言提供语法高亮和缩进。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1205
+#, fuzzy
 msgid "Completely customizable."
-msgstr ""
+msgstr "完全可定制。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1206
+#, fuzzy
 msgid "You can compile and debug programs within Emacs."
-msgstr ""
+msgstr "可以在 Emacs 中编译和调试程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1207
+#, fuzzy
 msgid ""
 "On a compilation error, you can jump to the offending line of source code."
-msgstr ""
+msgstr "发生编译错误时，可以跳转到源代码中出错的那一行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1208
+#, fuzzy
 msgid ""
 "Friendly-ish front-end to the `info` program used for reading GNU hypertext "
 "documentation, including the documentation on Emacs itself."
-msgstr ""
+msgstr "用于阅读 GNU 超文本文档（包括 Emacs 本身的文档）的 `info` 程序的友好界面。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1209
+#, fuzzy
 msgid ""
 "Friendly front-end to `gdb`, allowing you to look at the source code as you "
 "step through your program."
-msgstr ""
+msgstr "`gdb` 的友好界面，可在单步执行程序时查看源代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1211
+#, fuzzy
 msgid "And doubtless many more that have been overlooked."
-msgstr ""
+msgstr "当然还有许多其他功能，这里就不一一列举了。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1213
+#, fuzzy
 msgid ""
 "Emacs can be installed on FreeBSD using the package:editors/emacs[] port."
-msgstr ""
+msgstr "可以通过 package:editors/emacs[] 移植在 FreeBSD 上安装 Emacs。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1216
+#, fuzzy
 msgid ""
 "Once it is installed, start it up and do `C-h t` to read an Emacs tutorial-"
 "that means hold down kbd:[control], press kbd:[h], let go of kbd:[control], "
 "and then press kbd:[t].  (Alternatively, you can use the mouse to select [."
 "guimenuitem]#Emacs Tutorial# from the menu:Help[] menu.)"
-msgstr ""
+msgstr "安装后，启动 Emacs 并执行 `C-h t` 阅读 Emacs 教程——也就是按住 kbd:[control]，按下 kbd:[h]，松开 kbd:[control]，然后按下 kbd:[t]。（或者，也可以用鼠标从 menu:Help[] 菜单中选择 [.guimenuitem]#Emacs Tutorial#。）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1221
+#, fuzzy
 msgid ""
 "Although Emacs does have menus, it is well worth learning the key bindings, "
 "as it is much quicker when you are editing something to press a couple of "
@@ -2509,30 +2711,33 @@ msgid ""
 "casually throw around expressions like \"`M-x replace-s RET foo RET bar RET`"
 "\" so it is useful to know what they mean.  And in any case, Emacs has far "
 "too many useful functions for them to all fit on the menu bars."
-msgstr ""
+msgstr "虽然 Emacs 确实有菜单，但学习快捷键非常值得，因为编辑内容时按几个键要比找到鼠标再点击正确位置快得多。而且，与经验丰富的 Emacs 用户交谈时，你会发现他们常常随口说出类似 \"`M-x replace-s RET foo RET bar RET`\" 这样的表达式，所以了解它们的含义很有用。无论如何，Emacs 有太多实用功能，菜单栏根本容纳不下。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1225
+#, fuzzy
 msgid ""
 "Fortunately, it is quite easy to pick up the key-bindings, as they are "
 "displayed next to the menu item.  My advice is to use the menu item for, "
 "say, opening a file until you understand how it works and feel confident "
 "with it, then try doing C-x C-f.  When you are happy with that, move on to "
 "another menu command."
-msgstr ""
+msgstr "幸运的是，快捷键很容易上手，因为它们显示在菜单项旁边。我的建议是，比如打开文件时，先使用菜单项，直到你了解其工作方式并熟练掌握，然后试着执行 C-x C-f。熟悉之后，再尝试其他菜单命令。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1228
+#, fuzzy
 msgid ""
 "If you cannot remember what a particular combination of keys does, select [."
 "guimenuitem]#Describe Key# from the menu:Help[] menu and type it in-Emacs "
 "will tell you what it does.  You can also use the [.guimenuitem]#Command "
 "Apropos# menu item to find out all the commands which contain a particular "
 "word in them, with the key binding next to it."
-msgstr ""
+msgstr "如果你记不住某个按键组合的作用，可以从 menu:Help[] 菜单中选择 [.guimenuitem]#Describe Key#，然后输入该组合——Emacs 会告诉你它的作用。你也可以使用 [.guimenuitem]#Command Apropos# 菜单项，查找名称中包含特定单词的所有命令，旁边还会显示对应的快捷键。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1231
+#, fuzzy
 msgid ""
 "By the way, the expression above means hold down the kbd:[Meta] key, press "
 "kbd:[x], release the kbd:[Meta] key, type `replace-s` (short for `replace-"
@@ -2541,18 +2746,20 @@ msgid ""
 "kbd:[return] key, type bar (the string you want to replace `foo` with) and "
 "press kbd:[return] again.  Emacs will then do the search-and-replace "
 "operation you have just requested."
-msgstr ""
+msgstr "顺便说一下，上面的表达式表示按住 kbd:[Meta] 键，按下 kbd:[x]，松开 kbd:[Meta] 键，输入 `replace-s`（是 `replace-string` 的缩写——Emacs 的另一个功能是允许缩写命令），按下 kbd:[return] 键，输入 `foo`（要替换的字符串），按下 kbd:[return] 键，输入 bar（要用来替换 `foo` 的字符串），再按一次 kbd:[return]。随后，Emacs 就会执行你刚才指定的查找和替换操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1234
+#, fuzzy
 msgid ""
 "If you are wondering what on earth kbd:[Meta] is, it is a special key that "
 "many UNIX(R) workstations have.  Unfortunately, PC's do not have one, so it "
 "is usually kbd:[alt] (or if you are unlucky, the kbd:[escape] key)."
-msgstr ""
+msgstr "如果你想知道 kbd:[Meta] 到底是什么，它是许多 UNIX(R) 工作站上的一个特殊按键。遗憾的是，PC 没有这个按键，因此通常使用 kbd:[alt]（如果不走运，则使用 kbd:[escape] 键）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1238
+#, fuzzy
 msgid ""
 "Oh, and to get out of Emacs, do `C-x C-c` (that means hold down the kbd:"
 "[control] key, press kbd:[x], press kbd:[c] and release the kbd:[control] "
@@ -2561,94 +2768,104 @@ msgid ""
 "usual way to leave Emacs-that leaves Emacs hanging around in the background, "
 "and is only really useful if you are on a system which does not have virtual "
 "terminals)."
-msgstr ""
+msgstr "哦，要退出 Emacs，请执行 `C-x C-c`（也就是按住 kbd:[control] 键，按下 kbd:[x]，再按下 kbd:[c]，然后松开 kbd:[control] 键）。如果有未保存的文件处于打开状态，Emacs 会询问是否要保存它们。（请忽略文档中称 `C-z` 是退出 Emacs 的常用方式的部分——这会让 Emacs 留在后台运行，只有在没有虚拟终端的系统上才真正有用。）"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Emacs"
-msgstr ""
+msgstr "配置 Emacs"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1242
+#, fuzzy
 msgid ""
 "Emacs does many wonderful things; some of them are built in, some of them "
 "need to be configured."
-msgstr ""
+msgstr "Emacs 可以完成许多出色的工作，其中一些功能是内置的，另一些则需要配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1246
+#, fuzzy
 msgid ""
 "Instead of using a proprietary macro language for configuration, Emacs uses "
 "a version of Lisp specially adapted for editors, known as Emacs Lisp.  "
 "Working with Emacs Lisp can be quite helpful if you want to go on and learn "
 "something like Common Lisp.  Emacs Lisp has many features of Common Lisp, "
 "although it is considerably smaller (and thus easier to master)."
-msgstr ""
+msgstr "Emacs 没有使用专有的宏语言进行配置，而是采用了一种专为编辑器调整过的 Lisp，称为 Emacs Lisp。学习 Emacs Lisp 对以后学习 Common Lisp 之类的语言也很有帮助。Emacs Lisp 具有 Common Lisp 的许多特性，但规模小得多（因此更容易掌握）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1248
+#, fuzzy
 msgid ""
 "The best way to learn Emacs Lisp is to read the online link:https://www.gnu."
 "org/software/emacs/manual/elisp.html[Emacs Reference] manual."
-msgstr ""
+msgstr "学习 Emacs Lisp 的最佳方式是阅读在线 link:https://www.gnu.org/software/emacs/manual/elisp.html[Emacs 参考手册]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1253
+#, fuzzy
 msgid ""
 "However, there is no need to actually know any Lisp to get started with "
 "configuring Emacs, as I have included a sample [.filename]#.emacs#, which "
 "should be enough to get you started.  Just copy it into your home directory "
 "and restart Emacs if it is already running; it will read the commands from "
 "the file and (hopefully) give you a useful basic setup."
-msgstr ""
+msgstr "不过，要开始配置 Emacs，并不需要真正了解 Lisp，因为这里提供了一个示例 [.filename]#.emacs#，足以帮助你入门。只需将它复制到主目录中；如果 Emacs 已经在运行，则重新启动 Emacs。它会从该文件读取命令，并（希望如此）提供一个实用的基本配置。"
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1254
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Sample [.filename]#.emacs#"
-msgstr ""
+msgstr "一个 [.filename]#.emacs# 示例"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1257
+#, fuzzy
 msgid ""
 "Unfortunately, there is far too much here to explain it in detail; however "
 "there are one or two points worth mentioning."
-msgstr ""
+msgstr "遗憾的是，这里的内容太多，无法逐一详细解释；不过有一两点值得一提。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1259
+#, fuzzy
 msgid "Everything beginning with a `;` is a comment and is ignored by Emacs."
-msgstr ""
+msgstr "所有以 `;` 开头的内容都是注释，Emacs 会忽略它们。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1260
+#, fuzzy
 msgid ""
 "In the first line, the `-*- Emacs-Lisp -*-` is so that we can edit [."
 "filename]#.emacs# itself within Emacs and get all the fancy features for "
 "editing Emacs Lisp. Emacs usually tries to guess this based on the filename, "
 "and may not get it right for [.filename]#.emacs#."
-msgstr ""
+msgstr "第一行中的 `-*- Emacs-Lisp -*-` 表示我们可以在 Emacs 中编辑 [.filename]#.emacs# 文件本身，并使用编辑 Emacs Lisp 的各种高级功能。Emacs 通常会根据文件名猜测文件类型，但对于 [.filename]#.emacs#，它可能会判断错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1261
+#, fuzzy
 msgid ""
 "The kbd:[tab] key is bound to an indentation function in some modes, so when "
 "you press the tab key, it will indent the current line of code. If you want "
 "to put a tab character in whatever you are writing, hold the kbd:[control] "
 "key down while you are pressing the kbd:[tab] key."
-msgstr ""
+msgstr "在某些模式下，kbd:[tab] 键绑定到缩进函数，因此按下 tab 键时，当前代码行会缩进。如果要在正在编写的内容中插入制表符，请在按 kbd:[tab] 键时按住 kbd:[control] 键。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1262
+#, fuzzy
 msgid ""
 "This file supports syntax highlighting for C, C++, Perl, Lisp and Scheme, by "
 "guessing the language from the filename."
-msgstr ""
+msgstr "此文件会根据文件名猜测语言，并为 C、C++、Perl、Lisp 和 Scheme 启用语法高亮。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1263
+#, fuzzy
 msgid ""
 "Emacs already has a pre-defined function called `next-error`. In a "
 "compilation output window, this allows you to move from one compilation "
@@ -2656,48 +2873,50 @@ msgid ""
 "`previous-error`, that allows you to go to a previous error by doing `M-p`. "
 "The nicest feature of all is that `C-c C-c` will open up the source file in "
 "which the error occurred and jump to the appropriate line."
-msgstr ""
+msgstr "Emacs 已经定义了一个名为 `next-error` 的函数。在编译输出窗口中，执行 `M-n` 可从一个编译错误跳转到下一个；我们定义了配套的 `previous-error` 函数，执行 `M-p` 可跳转到上一个错误。最实用的功能是，执行 `C-c C-c` 会打开发生错误的源文件，并跳转到相应行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1264
+#, fuzzy
 msgid ""
 "We enable Emacs's ability to act as a server, so that if you are doing "
 "something outside Emacs and you want to edit a file, you can just type in"
-msgstr ""
+msgstr "我们启用 Emacs 的服务器功能，这样如果你在 Emacs 外执行某项操作时想编辑文件，只需输入"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% emacsclient filename\n"
-msgstr ""
+msgstr "% emacsclient filename\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1271
+#, fuzzy
 msgid ""
 "and then you can edit the file in your Emacs!footnote:[Many Emacs users set "
 "their EDITOR environment to emacsclient so this happens every time they need "
 "to edit a file.]"
-msgstr ""
+msgstr "然后就可以在 Emacs 中编辑该文件了！footnote:[许多 Emacs 用户会将 EDITOR 环境变量设为 emacsclient，这样每当他们需要编辑文件时，就会自动使用它。]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ";; -*-Emacs-Lisp-*-\n"
-msgstr ""
+msgstr ";; -*-Emacs-Lisp-*-\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; This file is designed to be re-evaled; use the variable first-time\n"
 ";; to avoid any problems with this.\n"
 "(defvar first-time t\n"
 "  \"Flag signifying this is the first time that .emacs has been evaled\")\n"
-msgstr ""
+msgstr ";; This file is designed to be re-evaled; use the variable first-time\n;; to avoid any problems with this.\n(defvar first-time t\n  \"Flag signifying this is the first time that .emacs has been evaled\")\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Meta\n"
 "(global-set-key \"\\M- \" 'set-mark-command)\n"
@@ -2706,11 +2925,11 @@ msgid ""
 "(global-set-key \"\\M-r\" 'replace-string)\n"
 "(global-set-key \"\\M-g\" 'goto-line)\n"
 "(global-set-key \"\\M-h\" 'help-command)\n"
-msgstr ""
+msgstr ";; Meta\n(global-set-key \"\\M- \" 'set-mark-command)\n(global-set-key \"\\M-\\C-h\" 'backward-kill-word)\n(global-set-key \"\\M-\\C-r\" 'query-replace)\n(global-set-key \"\\M-r\" 'replace-string)\n(global-set-key \"\\M-g\" 'goto-line)\n(global-set-key \"\\M-h\" 'help-command)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Function keys\n"
 "(global-set-key [f1] 'manual-entry)\n"
@@ -2732,11 +2951,11 @@ msgid ""
 "(global-set-key [C-f5] 'display-faces)\n"
 "(global-set-key [C-f8] 'dired)\n"
 "(global-set-key [C-f10] 'kill-compilation)\n"
-msgstr ""
+msgstr ";; Function keys\n(global-set-key [f1] 'manual-entry)\n(global-set-key [f2] 'info)\n(global-set-key [f3] 'repeat-complex-command)\n(global-set-key [f4] 'advertised-undo)\n(global-set-key [f5] 'eval-current-buffer)\n(global-set-key [f6] 'buffer-menu)\n(global-set-key [f7] 'other-window)\n(global-set-key [f8] 'find-file)\n(global-set-key [f9] 'save-buffer)\n(global-set-key [f10] 'next-error)\n(global-set-key [f11] 'compile)\n(global-set-key [f12] 'grep)\n(global-set-key [C-f1] 'compile)\n(global-set-key [C-f2] 'grep)\n(global-set-key [C-f3] 'next-error)\n(global-set-key [C-f4] 'previous-error)\n(global-set-key [C-f5] 'display-faces)\n(global-set-key [C-f8] 'dired)\n(global-set-key [C-f10] 'kill-compilation)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Keypad bindings\n"
 "(global-set-key [up] \"\\C-p\")\n"
@@ -2755,58 +2974,58 @@ msgid ""
 "(global-set-key [C-end] \"\\M->\")\n"
 "(global-set-key [C-prior] \"\\M-<\")\n"
 "(global-set-key [C-next] \"\\M->\")\n"
-msgstr ""
+msgstr ";; Keypad bindings\n(global-set-key [up] \"\\C-p\")\n(global-set-key [down] \"\\C-n\")\n(global-set-key [left] \"\\C-b\")\n(global-set-key [right] \"\\C-f\")\n(global-set-key [home] \"\\C-a\")\n(global-set-key [end] \"\\C-e\")\n(global-set-key [prior] \"\\M-v\")\n(global-set-key [next] \"\\C-v\")\n(global-set-key [C-up] \"\\M-\\C-b\")\n(global-set-key [C-down] \"\\M-\\C-f\")\n(global-set-key [C-left] \"\\M-b\")\n(global-set-key [C-right] \"\\M-f\")\n(global-set-key [C-home] \"\\M-<\")\n(global-set-key [C-end] \"\\M->\")\n(global-set-key [C-prior] \"\\M-<\")\n(global-set-key [C-next] \"\\M->\")\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1332
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Mouse\n"
 "(global-set-key [mouse-3] 'imenu)\n"
-msgstr ""
+msgstr ";; Mouse\n(global-set-key [mouse-3] 'imenu)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Misc\n"
 "(global-set-key [C-tab] \"\\C-q\\t\")\t; Control tab quotes a tab.\n"
 "(setq backup-by-copying-when-mismatch t)\n"
-msgstr ""
+msgstr ";; Misc\n(global-set-key [C-tab] \"\\C-q\\t\")\t; Control tab quotes a tab.\n(setq backup-by-copying-when-mismatch t)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Treat 'y' or <CR> as yes, 'n' as no.\n"
 "(fset 'yes-or-no-p 'y-or-n-p)\n"
 "(define-key query-replace-map [return] 'act)\n"
 "(define-key query-replace-map [?\\C-m] 'act)\n"
-msgstr ""
+msgstr ";; Treat 'y' or <CR> as yes, 'n' as no.\n(fset 'yes-or-no-p 'y-or-n-p)\n(define-key query-replace-map [return] 'act)\n(define-key query-replace-map [?\\C-m] 'act)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Load packages\n"
 "(require 'desktop)\n"
 "(require 'tar-mode)\n"
-msgstr ""
+msgstr ";; Load packages\n(require 'desktop)\n(require 'tar-mode)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Pretty diff mode\n"
 "(autoload 'ediff-buffers \"ediff\" \"Intelligent Emacs interface to diff\" t)\n"
 "(autoload 'ediff-files \"ediff\" \"Intelligent Emacs interface to diff\" t)\n"
 "(autoload 'ediff-files-remote \"ediff\"\n"
 "  \"Intelligent Emacs interface to diff\")\n"
-msgstr ""
+msgstr ";; Pretty diff mode\n(autoload 'ediff-buffers \"ediff\" \"Intelligent Emacs interface to diff\" t)\n(autoload 'ediff-files \"ediff\" \"Intelligent Emacs interface to diff\" t)\n(autoload 'ediff-files-remote \"ediff\"\n  \"Intelligent Emacs interface to diff\")\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(if first-time\n"
 "    (setq auto-mode-alist\n"
@@ -2816,31 +3035,31 @@ msgid ""
 "\t\t    (\"\\\\.scm$\" . scheme-mode)\n"
 "\t\t    (\"\\\\.pl$\" . perl-mode)\n"
 "\t\t    ) auto-mode-alist)))\n"
-msgstr ""
+msgstr "(if first-time\n    (setq auto-mode-alist\n\t  (append '((\"\\\\.cpp$\" . c++-mode)\n\t\t    (\"\\\\.hpp$\" . c++-mode)\n\t\t    (\"\\\\.lsp$\" . lisp-mode)\n\t\t    (\"\\\\.scm$\" . scheme-mode)\n\t\t    (\"\\\\.pl$\" . perl-mode)\n\t\t    ) auto-mode-alist)))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Auto font lock mode\n"
 "(defvar font-lock-auto-mode-list\n"
 "  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'lisp-mode 'perl-mode 'scheme-mode)\n"
 "  \"List of modes to always start in font-lock-mode\")\n"
-msgstr ""
+msgstr ";; Auto font lock mode\n(defvar font-lock-auto-mode-list\n  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'lisp-mode 'perl-mode 'scheme-mode)\n  \"List of modes to always start in font-lock-mode\")\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(defvar font-lock-mode-keyword-alist\n"
 "  '((c++-c-mode . c-font-lock-keywords)\n"
 "    (perl-mode . perl-font-lock-keywords))\n"
 "  \"Associations between modes and keywords\")\n"
-msgstr ""
+msgstr "(defvar font-lock-mode-keyword-alist\n  '((c++-c-mode . c-font-lock-keywords)\n    (perl-mode . perl-font-lock-keywords))\n  \"Associations between modes and keywords\")\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(defun font-lock-auto-mode-select ()\n"
 "  \"Automatically select font-lock-mode if the current major mode is in font-lock-auto-mode-list\"\n"
@@ -2849,17 +3068,17 @@ msgid ""
 "\t(font-lock-mode t))\n"
 "    )\n"
 "  )\n"
-msgstr ""
+msgstr "(defun font-lock-auto-mode-select ()\n  \"Automatically select font-lock-mode if the current major mode is in font-lock-auto-mode-list\"\n  (if (memq major-mode font-lock-auto-mode-list)\n      (progn\n\t(font-lock-mode t))\n    )\n  )\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(global-set-key [M-f1] 'font-lock-fontify-buffer)\n"
-msgstr ""
+msgstr "(global-set-key [M-f1] 'font-lock-fontify-buffer)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1397
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; New dabbrev stuff\n"
 ";(require 'new-dabbrev)\n"
@@ -2877,11 +3096,11 @@ msgid ""
 "\t  '(lambda ()\n"
 "\t     (set (make-local-variable 'dabbrev-case-fold-search) t)\n"
 "\t     (set (make-local-variable 'dabbrev-case-replace) t)))\n"
-msgstr ""
+msgstr ";; New dabbrev stuff\n;(require 'new-dabbrev)\n(setq dabbrev-always-check-other-buffers t)\n(setq dabbrev-abbrev-char-regexp \"\\\\sw\\\\|\\\\s_\")\n(add-hook 'emacs-lisp-mode-hook\n\t  '(lambda ()\n\t     (set (make-local-variable 'dabbrev-case-fold-search) nil)\n\t     (set (make-local-variable 'dabbrev-case-replace) nil)))\n(add-hook 'c-mode-hook\n\t  '(lambda ()\n\t     (set (make-local-variable 'dabbrev-case-fold-search) nil)\n\t     (set (make-local-variable 'dabbrev-case-replace) nil)))\n(add-hook 'text-mode-hook\n\t  '(lambda ()\n\t     (set (make-local-variable 'dabbrev-case-fold-search) t)\n\t     (set (make-local-variable 'dabbrev-case-replace) t)))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1409
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; C++ and C mode...\n"
 "(defun my-c++-mode-hook ()\n"
@@ -2894,11 +3113,11 @@ msgid ""
 "  (setq c-indent-level 4)\n"
 "  (setq c-continued-statement-offset 4)\n"
 "  (setq c++-empty-arglist-indent 4))\n"
-msgstr ""
+msgstr ";; C++ and C mode...\n(defun my-c++-mode-hook ()\n  (setq tab-width 4)\n  (define-key c++-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n  (define-key c++-mode-map \"\\C-ce\" 'c-comment-edit)\n  (setq c++-auto-hungry-initial-state 'none)\n  (setq c++-delete-function 'backward-delete-char)\n  (setq c++-tab-always-indent t)\n  (setq c-indent-level 4)\n  (setq c-continued-statement-offset 4)\n  (setq c++-empty-arglist-indent 4))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(defun my-c-mode-hook ()\n"
 "  (setq tab-width 4)\n"
@@ -2913,11 +3132,11 @@ msgid ""
 "  (setq c-brace-offset -4)\n"
 "  (setq c-argdecl-indent 0)\n"
 "  (setq c-label-offset -4))\n"
-msgstr ""
+msgstr "(defun my-c-mode-hook ()\n  (setq tab-width 4)\n  (define-key c-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n  (define-key c-mode-map \"\\C-ce\" 'c-comment-edit)\n  (setq c-auto-hungry-initial-state 'none)\n  (setq c-delete-function 'backward-delete-char)\n  (setq c-tab-always-indent t)\n;; BSD-ish indentation style\n  (setq c-indent-level 4)\n  (setq c-continued-statement-offset 4)\n  (setq c-brace-offset -4)\n  (setq c-argdecl-indent 0)\n  (setq c-label-offset -4))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Perl mode\n"
 "(defun my-perl-mode-hook ()\n"
@@ -2925,31 +3144,31 @@ msgid ""
 "  (define-key c++-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n"
 "  (setq perl-indent-level 4)\n"
 "  (setq perl-continued-statement-offset 4))\n"
-msgstr ""
+msgstr ";; Perl mode\n(defun my-perl-mode-hook ()\n  (setq tab-width 4)\n  (define-key c++-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n  (setq perl-indent-level 4)\n  (setq perl-continued-statement-offset 4))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Scheme mode...\n"
 "(defun my-scheme-mode-hook ()\n"
 "  (define-key scheme-mode-map \"\\C-m\" 'reindent-then-newline-and-indent))\n"
-msgstr ""
+msgstr ";; Scheme mode...\n(defun my-scheme-mode-hook ()\n  (define-key scheme-mode-map \"\\C-m\" 'reindent-then-newline-and-indent))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Emacs-Lisp mode...\n"
 "(defun my-lisp-mode-hook ()\n"
 "  (define-key lisp-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n"
 "  (define-key lisp-mode-map \"\\C-i\" 'lisp-indent-line)\n"
 "  (define-key lisp-mode-map \"\\C-j\" 'eval-print-last-sexp))\n"
-msgstr ""
+msgstr ";; Emacs-Lisp mode...\n(defun my-lisp-mode-hook ()\n  (define-key lisp-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n  (define-key lisp-mode-map \"\\C-i\" 'lisp-indent-line)\n  (define-key lisp-mode-map \"\\C-j\" 'eval-print-last-sexp))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1448
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Add all of the hooks...\n"
 "(add-hook 'c++-mode-hook 'my-c++-mode-hook)\n"
@@ -2958,22 +3177,22 @@ msgid ""
 "(add-hook 'emacs-lisp-mode-hook 'my-lisp-mode-hook)\n"
 "(add-hook 'lisp-mode-hook 'my-lisp-mode-hook)\n"
 "(add-hook 'perl-mode-hook 'my-perl-mode-hook)\n"
-msgstr ""
+msgstr ";; Add all of the hooks...\n(add-hook 'c++-mode-hook 'my-c++-mode-hook)\n(add-hook 'c-mode-hook 'my-c-mode-hook)\n(add-hook 'scheme-mode-hook 'my-scheme-mode-hook)\n(add-hook 'emacs-lisp-mode-hook 'my-lisp-mode-hook)\n(add-hook 'lisp-mode-hook 'my-lisp-mode-hook)\n(add-hook 'perl-mode-hook 'my-perl-mode-hook)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Complement to next-error\n"
 "(defun previous-error (n)\n"
 "  \"Visit previous compilation error message and corresponding source code.\"\n"
 "  (interactive \"p\")\n"
 "  (next-error (- n)))\n"
-msgstr ""
+msgstr ";; Complement to next-error\n(defun previous-error (n)\n  \"Visit previous compilation error message and corresponding source code.\"\n  (interactive \"p\")\n  (next-error (- n)))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1467
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Misc...\n"
 "(transient-mark-mode 1)\n"
@@ -2987,22 +3206,22 @@ msgid ""
 "(put 'set-goal-column 'disabled nil)\n"
 "(if (>= emacs-major-version 21)\n"
 "\t(setq show-trailing-whitespace t))\n"
-msgstr ""
+msgstr ";; Misc...\n(transient-mark-mode 1)\n(setq mark-even-if-inactive t)\n(setq visible-bell nil)\n(setq next-line-add-newlines nil)\n(setq compile-command \"make\")\n(setq suggest-key-bindings nil)\n(put 'eval-expression 'disabled nil)\n(put 'narrow-to-region 'disabled nil)\n(put 'set-goal-column 'disabled nil)\n(if (>= emacs-major-version 21)\n\t(setq show-trailing-whitespace t))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1473
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Elisp archive searching\n"
 "(autoload 'format-lisp-code-directory \"lispdir\" nil t)\n"
 "(autoload 'lisp-dir-apropos \"lispdir\" nil t)\n"
 "(autoload 'lisp-dir-retrieve \"lispdir\" nil t)\n"
 "(autoload 'lisp-dir-verify \"lispdir\" nil t)\n"
-msgstr ""
+msgstr ";; Elisp archive searching\n(autoload 'format-lisp-code-directory \"lispdir\" nil t)\n(autoload 'lisp-dir-apropos \"lispdir\" nil t)\n(autoload 'lisp-dir-retrieve \"lispdir\" nil t)\n(autoload 'lisp-dir-verify \"lispdir\" nil t)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1482
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Font lock mode\n"
 "(defun my-make-face (face color &optional bold)\n"
@@ -3012,11 +3231,11 @@ msgid ""
 "  (set-face-foreground face color)\n"
 "  (if bold (make-face-bold face))\n"
 "  )\n"
-msgstr ""
+msgstr ";; Font lock mode\n(defun my-make-face (face color &optional bold)\n  \"Create a face from a color and optionally make it bold\"\n  (make-face face)\n  (copy-face 'default face)\n  (set-face-foreground face color)\n  (if bold (make-face-bold face))\n  )\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1495
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(if (eq window-system 'x)\n"
 "    (progn\n"
@@ -3030,11 +3249,11 @@ msgid ""
 "      (setq font-lock-function-name-face 'red)\n"
 "      (setq font-lock-doc-string-face 'green)\n"
 "      (add-hook 'find-file-hooks 'font-lock-auto-mode-select)\n"
-msgstr ""
+msgstr "(if (eq window-system 'x)\n    (progn\n      (my-make-face 'blue \"blue\")\n      (my-make-face 'red \"red\")\n      (my-make-face 'green \"dark green\")\n      (setq font-lock-comment-face 'blue)\n      (setq font-lock-string-face 'bold)\n      (setq font-lock-type-face 'bold)\n      (setq font-lock-keyword-face 'bold)\n      (setq font-lock-function-name-face 'red)\n      (setq font-lock-doc-string-face 'green)\n      (add-hook 'find-file-hooks 'font-lock-auto-mode-select)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      (setq baud-rate 1000000)\n"
 "      (global-set-key \"\\C-cmm\" 'menu-bar-mode)\n"
@@ -3043,11 +3262,11 @@ msgid ""
 "\t\t\t\t\t;      (global-set-key [delete] 'delete-char)\n"
 "      (standard-display-european t)\n"
 "      (load-library \"iso-transl\")))\n"
-msgstr ""
+msgstr "      (setq baud-rate 1000000)\n      (global-set-key \"\\C-cmm\" 'menu-bar-mode)\n      (global-set-key \"\\C-cms\" 'scroll-bar-mode)\n      (global-set-key [backspace] 'backward-delete-char)\n\t\t\t\t\t;      (global-set-key [delete] 'delete-char)\n      (standard-display-european t)\n      (load-library \"iso-transl\")))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1520
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; X11 or PC using direct screen writes\n"
 "(if window-system\n"
@@ -3065,11 +3284,11 @@ msgid ""
 "      (require 'paren))\n"
 "  (setq baud-rate 2400)\t\t\t; For slow serial connections\n"
 "  )\n"
-msgstr ""
+msgstr ";; X11 or PC using direct screen writes\n(if window-system\n    (progn\n      ;;      (global-set-key [M-f1] 'hilit-repaint-command)\n      ;;      (global-set-key [M-f2] [?\\C-u M-f1])\n      (setq hilit-mode-enable-list\n\t    '(not text-mode c-mode c++-mode emacs-lisp-mode lisp-mode\n\t\t  scheme-mode)\n\t    hilit-auto-highlight nil\n\t    hilit-auto-rehighlight 'visible\n\t    hilit-inhibit-hooks nil\n\t    hilit-inhibit-rebinding t)\n      (require 'hilit19)\n      (require 'paren))\n  (setq baud-rate 2400)\t\t\t; For slow serial connections\n  )\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; TTY type terminal\n"
 "(if (and (not window-system)\n"
@@ -3079,22 +3298,22 @@ msgid ""
 "\t  (progn\n"
 "\t    (keyboard-translate ?\\C-h ?\\C-?)\n"
 "\t    (keyboard-translate ?\\C-? ?\\C-h)))))\n"
-msgstr ""
+msgstr ";; TTY type terminal\n(if (and (not window-system)\n\t (not (equal system-type 'ms-dos)))\n    (progn\n      (if first-time\n\t  (progn\n\t    (keyboard-translate ?\\C-h ?\\C-?)\n\t    (keyboard-translate ?\\C-? ?\\C-h)))))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1535
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Under UNIX\n"
 "(if (not (equal system-type 'ms-dos))\n"
 "    (progn\n"
 "      (if first-time\n"
 "\t  (server-start))))\n"
-msgstr ""
+msgstr ";; Under UNIX\n(if (not (equal system-type 'ms-dos))\n    (progn\n      (if first-time\n\t  (server-start))))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1543
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Add any face changes here\n"
 "(add-hook 'term-setup-hook 'my-term-setup-hook)\n"
@@ -3103,235 +3322,255 @@ msgid ""
 "      (progn\n"
 ";;\t(set-face-background 'default \"red\")\n"
 "\t)))\n"
-msgstr ""
+msgstr ";; Add any face changes here\n(add-hook 'term-setup-hook 'my-term-setup-hook)\n(defun my-term-setup-hook ()\n  (if (eq window-system 'pc)\n      (progn\n;;\t(set-face-background 'default \"red\")\n\t)))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1549
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Restore the \"desktop\" - do this as late as possible\n"
 "(if first-time\n"
 "    (progn\n"
 "      (desktop-load-default)\n"
 "      (desktop-read)))\n"
-msgstr ""
+msgstr ";; Restore the \"desktop\" - do this as late as possible\n(if first-time\n    (progn\n      (desktop-load-default)\n      (desktop-read)))\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1552
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Indicate that this file has been read at least once\n"
 "(setq first-time nil)\n"
-msgstr ""
+msgstr ";; Indicate that this file has been read at least once\n(setq first-time nil)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ";; No need to debug anything now\n"
-msgstr ""
+msgstr ";; No need to debug anything now\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(setq debug-on-error nil)\n"
-msgstr ""
+msgstr "(setq debug-on-error nil)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1559
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; All done\n"
 "(message \"All done, %s%s\" (user-login-name) \".\")\n"
-msgstr ""
+msgstr ";; All done\n(message \"All done, %s%s\" (user-login-name) \".\")\n"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1562
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Extending the Range of Languages Emacs Understands"
-msgstr ""
+msgstr "扩展 Emacs 能够理解的语言范围"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1565
+#, fuzzy
 msgid ""
 "Now, this is all very well if you only want to program in the languages "
 "already catered for in [.filename]#.emacs# (C, C++, Perl, Lisp and Scheme), "
 "but what happens if a new language called \"whizbang\" comes out, full of "
 "exciting features?"
-msgstr ""
+msgstr "如果你只想使用 [.filename]#.emacs# 中已配置的语言（C、C++、Perl、Lisp 和 Scheme）编程，这些设置已经足够了；但如果出现一种名为 \"whizbang\"、拥有许多令人兴奋的新功能的语言，又该怎么办？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1569
+#, fuzzy
 msgid ""
 "The first thing to do is find out if whizbang comes with any files that tell "
 "Emacs about the language.  These usually end in [.filename]#.el#, short for "
 "\"Emacs Lisp\".  For example, if whizbang is a FreeBSD port, we can locate "
 "these files by doing"
-msgstr ""
+msgstr "首先，查明 whizbang 是否附带了用于向 Emacs 介绍该语言的文件。这些文件通常以 [.filename]#.el# 结尾，这是 \"Emacs Lisp\" 的缩写。例如，如果 whizbang 是一个 FreeBSD 移植软件包，可以运行以下命令查找这些文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1573
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% find /usr/ports/lang/whizbang -name \"*.el\" -print\n"
-msgstr ""
+msgstr "% find /usr/ports/lang/whizbang -name \"*.el\" -print\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1577
+#, fuzzy
 msgid ""
 "and install them by copying them into the Emacs site Lisp directory.  On "
 "FreeBSD, this is [.filename]#/usr/local/share/emacs/site-lisp#."
-msgstr ""
+msgstr "然后将它们复制到 Emacs 的站点 Lisp 目录中即可安装。在 FreeBSD 上，该目录是 [.filename]#/usr/local/share/emacs/site-lisp#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1579
+#, fuzzy
 msgid "So for example, if the output from the find command was"
-msgstr ""
+msgstr "例如，如果 find 命令的输出是："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1583
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/usr/ports/lang/whizbang/work/misc/whizbang.el\n"
-msgstr ""
+msgstr "/usr/ports/lang/whizbang/work/misc/whizbang.el\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1586
+#, fuzzy
 msgid "we would do"
-msgstr ""
+msgstr "我们就可以运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1590
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cp /usr/ports/lang/whizbang/work/misc/whizbang.el /usr/local/share/emacs/site-lisp\n"
-msgstr ""
+msgstr "# cp /usr/ports/lang/whizbang/work/misc/whizbang.el /usr/local/share/emacs/site-lisp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1595
+#, fuzzy
 msgid ""
 "Next, we need to decide what extension whizbang source files have.  Let us "
 "say for the sake of argument that they all end in [.filename]#.wiz#.  We "
 "need to add an entry to our [.filename]#.emacs# to make sure Emacs will be "
 "able to use the information in [.filename]#whizbang.el#."
-msgstr ""
+msgstr "接下来，需要确定 whizbang 源文件使用什么扩展名。假设它们都以 [.filename]#.wiz# 结尾。我们需要在 [.filename]#.emacs# 中添加一项，以确保 Emacs 能够使用 [.filename]#whizbang.el# 中的信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1597
+#, fuzzy
 msgid ""
 "Find the auto-mode-alist entry in [.filename]#.emacs# and add a line for "
 "whizbang, such as:"
-msgstr ""
+msgstr "在 [.filename]#.emacs# 中找到 auto-mode-alist 项，并添加一行来匹配 whizbang，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1605
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "(\"\\\\.lsp$\" . lisp-mode)\n"
 "(\"\\\\.wiz$\" . whizbang-mode)\n"
 "(\"\\\\.scm$\" . scheme-mode)\n"
 "...\n"
-msgstr ""
+msgstr "...\n(\"\\\\.lsp$\" . lisp-mode)\n(\"\\\\.wiz$\" . whizbang-mode)\n(\"\\\\.scm$\" . scheme-mode)\n...\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1608
+#, fuzzy
 msgid ""
 "This means that Emacs will automatically go into `whizbang-mode` when you "
 "edit a file ending in [.filename]#.wiz#."
-msgstr ""
+msgstr "这表示编辑以 [.filename]#.wiz# 结尾的文件时，Emacs 会自动进入 `whizbang-mode`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1611
+#, fuzzy
 msgid ""
 "Just below this, you will find the font-lock-auto-mode-list entry.  Add "
 "`whizbang-mode` to it like so:"
-msgstr ""
+msgstr "就在下面，你会找到 font-lock-auto-mode-list 项。像这样将 `whizbang-mode` 添加到其中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";; Auto font lock mode\n"
 "(defvar font-lock-auto-mode-list\n"
 "  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'whizbang-mode 'lisp-mode 'perl-mode 'scheme-mode)\n"
 "  \"List of modes to always start in font-lock-mode\")\n"
-msgstr ""
+msgstr ";; Auto font lock mode\n(defvar font-lock-auto-mode-list\n  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'whizbang-mode 'lisp-mode 'perl-mode 'scheme-mode)\n  \"List of modes to always start in font-lock-mode\")\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1621
+#, fuzzy
 msgid ""
 "This means that Emacs will always enable `font-lock-mode` (ie syntax "
 "highlighting) when editing a [.filename]#.wiz# file."
-msgstr ""
+msgstr "这表示编辑 [.filename]#.wiz# 文件时，Emacs 总会启用 `font-lock-mode`（即语法高亮）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1624
+#, fuzzy
 msgid ""
 "And that is all that is needed. If there is anything else you want done "
 "automatically when you open up [.filename]#.wiz#, you can add a `whizbang-"
 "mode hook` (see `my-scheme-mode-hook` for a simple example that adds `auto-"
 "indent`)."
-msgstr ""
+msgstr "这样就完成了。如果你希望打开 [.filename]#.wiz# 时自动执行其他操作，可以添加 `whizbang-mode hook`（参见 `my-scheme-mode-hook`，其中有一个添加 `auto-indent` 的简单示例）。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1626
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸阅读"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1629
+#, fuzzy
 msgid ""
 "For information about setting up a development environment for contributing "
 "fixes to FreeBSD itself, please see man:development[7]."
-msgstr ""
+msgstr "有关如何设置开发环境以便为 FreeBSD 本身贡献修复的说明，请参阅 man:development[7]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1631
+#, fuzzy
 msgid ""
 "Brian Harvey and Matthew Wright _Simply Scheme_ MIT 1994. ISBN 0-262-08226-8"
-msgstr ""
+msgstr "Brian Harvey 和 Matthew Wright __Simply Scheme__，MIT，1994。ISBN 0-262-08226-8"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1632
+#, fuzzy
 msgid "Randall Schwartz _Learning Perl_ O'Reilly 1993 ISBN 1-56592-042-2"
-msgstr ""
+msgstr "Randall Schwartz，__Learning Perl__，O'Reilly，1993。ISBN 1-56592-042-2"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1633
+#, fuzzy
 msgid ""
 "Patrick Henry Winston and Berthold Klaus Paul Horn _Lisp (3rd Edition)_ "
 "Addison-Wesley 1989 ISBN 0-201-08319-1"
-msgstr ""
+msgstr "Patrick Henry Winston 和 Berthold Klaus Paul Horn，__Lisp (3rd Edition)__，Addison-Wesley，1989。ISBN 0-201-08319-1"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1634
+#, fuzzy
 msgid ""
 "Brian W. Kernighan and Rob Pike _The Unix Programming Environment_ Prentice-"
 "Hall 1984 ISBN 0-13-937681-X"
-msgstr ""
+msgstr "Brian W. Kernighan 和 Rob Pike，__The Unix Programming Environment__，Prentice-Hall，1984。ISBN 0-13-937681-X"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1635
+#, fuzzy
 msgid ""
 "Brian W. Kernighan and Dennis M. Ritchie _The C Programming Language (2nd "
 "Edition)_ Prentice-Hall 1988 ISBN 0-13-110362-8"
-msgstr ""
+msgstr "Brian W. Kernighan 和 Dennis M. Ritchie，__The C Programming Language (2nd Edition)__，Prentice-Hall，1988。ISBN 0-13-110362-8"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1636
+#, fuzzy
 msgid ""
 "Bjarne Stroustrup _The C++ Programming Language_ Addison-Wesley 1991 ISBN "
 "0-201-53992-6"
-msgstr ""
+msgstr "Bjarne Stroustrup，__The C++ Programming Language__，Addison-Wesley，1991。ISBN 0-201-53992-6"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1637
+#, fuzzy
 msgid ""
 "W. Richard Stevens _Advanced Programming in the Unix Environment_ Addison-"
 "Wesley 1992 ISBN 0-201-56317-7"
-msgstr ""
+msgstr "W. Richard Stevens，__Advanced Programming in the Unix Environment__，Addison-Wesley，1992。ISBN 0-201-56317-7"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/tools/_index.adoc:1637
+#, fuzzy
 msgid ""
 "W. Richard Stevens _Unix Network Programming_ Prentice-Hall 1990 ISBN "
 "0-13-949876-1"
-msgstr ""
+msgstr "W. Richard Stevens，__Unix Network Programming__，Prentice-Hall，1990。ISBN 0-13-949876-1"

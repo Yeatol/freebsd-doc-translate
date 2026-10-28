@@ -27,9 +27,9 @@ msgstr "虚拟内存系统"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 7. Virtual Memory System"
-msgstr ""
+msgstr "第 7 章．虚拟内存系统"
 
 #. type: Title =
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:14
@@ -39,9 +39,9 @@ msgstr "虚拟内存系统"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Management of Physical Memory `vm_page_t`"
-msgstr ""
+msgstr "物理内存管理 `vm_page_t`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:54
@@ -164,19 +164,20 @@ msgstr ""
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Unified Buffer Cache `vm_object_t`"
-msgstr ""
+msgstr "统一缓冲区缓存 `vm_object_t`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:71
+#, fuzzy
 msgid ""
 "FreeBSD implements the idea of a generic \"VM object\". VM objects can be "
 "associated with backing store of various typesunbacked, swap-backed, "
 "physical device-backed, or file-backed storage. Since the filesystem uses "
 "the same VM objects to manage in-core data relating to files, the result is "
 "a unified buffer cache."
-msgstr ""
+msgstr "FreeBSD 实现了通用“VM 对象”的概念。VM 对象可以关联各种类型的后备存储：无后备存储、交换区后备存储、物理设备后备存储或文件后备存储。由于文件系统使用相同的 VM 对象来管理与文件相关的内存驻留数据，因此形成了统一缓冲区缓存。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:73
@@ -195,17 +196,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:75
+#, fuzzy
 msgid ""
 "It should be noted that a `vm_page_t` can only be associated with one VM "
 "object at a time. The VM object shadowing implements the perceived sharing "
 "of the same page across multiple instances."
-msgstr ""
+msgstr "需要注意的是，`vm_page_t` 一次只能关联一个 VM 对象。VM 对象的影子机制实现了同一页面在多个实例间共享的表象。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Filesystem I/O `struct buf`"
-msgstr ""
+msgstr "文件系统 I/O `struct buf`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:80
@@ -267,9 +269,9 @@ msgstr ""
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mapping Page Tables `vm_map_t, vm_entry_t`"
-msgstr ""
+msgstr "映射页表 `vm_map_t, vm_entry_t`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:89
@@ -285,6 +287,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:91
+#, fuzzy
 msgid ""
 "FreeBSD associates portions of vm_objects with address ranges in virtual "
 "memory through `vm_map_t` and `vm_entry_t` structures. Page tables are "
@@ -296,7 +299,7 @@ msgid ""
 "However, the hierarchical association holds, so all references to the same "
 "page in the same object reference the same `vm_page_t` and thus give us "
 "buffer cache unification across the board."
-msgstr ""
+msgstr "FreeBSD 通过 `vm_map_t` 和 `vm_entry_t` 结构，将 `vm_object` 的部分区域关联到虚拟内存中的地址范围。页表直接根据 `vm_map_t`/`vm_entry_t`/ `vm_object_t` 层次结构合成。还记得我提到过，物理页面只与 `vm_object` 直接关联；这并不完全准确。``vm_page_t`` 也会链接到它们当前关联的页表中。一个 `vm_page_t` 可以链接到多个称为 __pmaps__ 的页表中。不过，层次关联关系仍然成立，因此同一对象中对同一页面的所有引用都指向同一个 `vm_page_t`，从而全面实现缓冲区缓存统一。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:93
@@ -306,11 +309,12 @@ msgstr "KVM存储映射"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:96
+#, fuzzy
 msgid ""
 "FreeBSD uses KVM to hold various kernel structures. The single largest "
 "entity held in KVM is the filesystem buffer cache. That is, mappings "
 "relating to `struct buf` entities."
-msgstr ""
+msgstr "FreeBSD 使用 KVM 保存各种内核结构。KVM 中占用空间最大的单个实体是文件系统缓冲区缓存，也就是与 `struct buf` 实体相关的映射。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:98
@@ -331,13 +335,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:100
+#, fuzzy
 msgid ""
 "KVM is managed through several mechanisms. The main mechanism used to manage "
 "KVM is the _zone allocator_. The zone allocator takes a chunk of KVM and "
 "splits it up into constant-sized blocks of memory in order to allocate a "
 "specific type of structure. You can use `vmstat -m` to get an overview of "
 "current KVM utilization broken down by zone."
-msgstr ""
+msgstr "KVM 通过多种机制进行管理。管理 KVM 的主要机制是 __区域分配器__。区域分配器从 KVM 中取出一块内存，并将其划分为大小固定的内存块，以便分配特定类型的结构。你可以使用 `vmstat -m` 查看当前 KVM 使用情况的概览，并按区域分类。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:102
@@ -380,10 +385,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:109
+#, fuzzy
 msgid ""
 "If your system is going to use the network heavily, you may want to increase "
 "`NMBCLUSTERS`. Typical values range from 1024 to 4096."
-msgstr ""
+msgstr "如果你的系统将大量使用网络，你可能需要增大 `NMBCLUSTERS`。典型值范围为 1024 到 4096。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/vm/_index.adoc:111

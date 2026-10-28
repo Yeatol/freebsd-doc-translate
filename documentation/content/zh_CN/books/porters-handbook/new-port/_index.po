@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to make a new FreeBSD Port"
-msgstr ""
+msgstr "如何创建新的 FreeBSD Port"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 2. Making a New Port"
-msgstr ""
+msgstr "第 2 章：创建新的 Port"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:14
@@ -43,24 +43,27 @@ msgstr "那么，您有兴趣创建自己的 port 或升级现有的 port？太�
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:54
+#, fuzzy
 msgid ""
 "What follows are some guidelines for creating a new port for FreeBSD.  To "
 "upgrade an existing port, read this, then read crossref:upgrading[port-"
 "upgrading,Upgrading a Port]."
-msgstr ""
+msgstr "以下是为 FreeBSD 创建新 Port 的一些指南。要升级现有 Port，请阅读本文，然后阅读 crossref:upgrading[port-upgrading,升级 Port]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:58
+#, fuzzy
 msgid ""
 "When this document is not sufficiently detailed, refer to [.filename]#/usr/"
 "ports/Mk/bsd.port.mk#, which is included by all port [."
 "filename]#Makefiles#.  Even those not hacking [.filename]##Makefile##s daily "
 "can gain much knowledge from it.  Additionally, specific questions can be "
 "sent to the {freebsd-ports}."
-msgstr ""
+msgstr "如果本文档的详细程度不足，请参阅 [.filename]#/usr/ports/Mk/bsd.port.mk#，所有 Port 的 [.filename]#Makefiles# 都会包含此文件。即使不是每天都编写 [.filename]##Makefile## 的人，也能从中学到很多知识。此外，也可以将具体问题发送到 {freebsd-ports}。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:65
+#, fuzzy
 msgid ""
 "Only a fraction of the variables (`_VAR_`) that can be overridden are "
 "mentioned in this document.  Most (if not all) are documented at the start "
@@ -69,12 +72,13 @@ msgid ""
 "recognize the setting on loading the file.  Both man:vi[1] and man:ex[1] can "
 "be set to use the correct value by typing `:set tabstop=4` once the file has "
 "been loaded."
-msgstr ""
+msgstr "本文档仅提及可被覆盖的变量（`_VAR_`）中的一小部分。大多数（如果不是全部）变量都记录在 [.filename]#/usr/ports/Mk/bsd.port.mk# 的开头；其他变量也应该记录在其中。请注意，此文件使用了非标准的制表符设置：Emacs 和 Vim 在加载文件时会识别此设置。加载文件后，输入 `:set tabstop=4`，即可将 man:vi[1] 和 man:ex[1] 设置为使用正确的值。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/new-port/_index.adoc:67
+#, fuzzy
 msgid ""
 "Looking for something easy to start with? Take a look at the https://wiki."
 "freebsd.org/WantedPorts[list of requested ports] and see if you can work on "
 "one (or more)."
-msgstr ""
+msgstr "想找些容易上手的工作吗？请查看 link:https://wiki.freebsd.org/WantedPorts[list of requested ports]，看看能否参与其中一个或多个 Port 的开发。"

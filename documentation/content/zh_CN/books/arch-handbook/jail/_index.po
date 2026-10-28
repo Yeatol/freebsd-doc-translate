@@ -27,12 +27,13 @@ msgstr "Jail子系统"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 4. The Jail Subsystem"
-msgstr ""
+msgstr "第 4 章：Jail 子系统"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:51
+#, fuzzy
 msgid ""
 "On most UNIX(R) systems, `root` has omnipotent power. This promotes "
 "insecurity. If an attacker gained `root` on a system, he would have every "
@@ -44,10 +45,11 @@ msgid ""
 "restrictions on processes which are forked within the jail. For example, a "
 "jailed process cannot affect processes outside the jail, utilize certain "
 "system calls, or inflict any damage on the host environment."
-msgstr ""
+msgstr "在大多数 UNIX(R) 系统上，`root` 拥有至高无上的权力，这会降低系统的安全性。如果攻击者在系统上获得了 `root` 权限，就能为所欲为。在 FreeBSD 中，有一些 sysctl 可以削弱 `root` 的权力，以尽量减少攻击者造成的损害。其中一个功能称为 `secure levels`。类似地，另一个从 FreeBSD 4.0 开始提供的功能是 man:jail[8] 工具。Jail 会对环境进行 chroot，并限制在 jail 中派生的进程。例如，受 jail 限制的进程无法影响 jail 之外的进程、使用某些系统调用，也无法对宿主环境造成损害。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:53
+#, fuzzy
 msgid ""
 "Jail is becoming the new security model. People are running potentially "
 "vulnerable servers such as Apache, BIND, and sendmail within jails, so that "
@@ -55,7 +57,7 @@ msgid ""
 "not a devastation. This article mainly focuses on the internals (source "
 "code) of jail. For information on how to set up a jail see the extref:"
 "{handbook}jails[handbook entry on jails, jails]."
-msgstr ""
+msgstr "Jail 正在成为新的安全模型。人们将 Apache、BIND 和 sendmail 等可能存在漏洞的服务器运行在 jail 中，这样即使攻击者在 jail 中获得了 `root` 权限，也只会造成一些麻烦，而不会酿成灾难。本文主要介绍 jail 的内部实现（源代码）。有关如何设置 jail 的信息，请参阅 extref:{handbook}jails[手册中的 jail 条目，jails]。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:55
@@ -65,12 +67,13 @@ msgstr "Jail的系统结构"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:58
+#, fuzzy
 msgid ""
 "Jail consists of two realms: the userland program, man:jail[8], and the code "
 "implemented within the kernel: the man:jail[2] system call and associated "
 "restrictions. I will be discussing the userland program and then how jail is "
 "implemented within the kernel."
-msgstr ""
+msgstr "Jail 包含两个部分：用户空间程序 man:jail[8]，以及在内核中实现的代码：man:jail[2] 系统调用及相关限制。我将先介绍用户空间程序，再介绍 jail 在内核中的实现。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:59
@@ -80,12 +83,13 @@ msgstr "用户级代码"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:62
+#, fuzzy
 msgid ""
 "The source for the userland jail is located in [.filename]#/usr/src/usr.sbin/"
 "jail#, consisting of one file, [.filename]#jail.c#. The program takes these "
 "arguments: the path of the jail, hostname, IP address, and the command to be "
 "executed."
-msgstr ""
+msgstr "用户空间 jail 的源代码位于 [.filename]#/usr/src/usr.sbin/jail#，由一个文件 [.filename]#jail.c# 组成。该程序接受以下参数：jail 的路径、主机名、IP 地址以及要执行的命令。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:63
@@ -95,26 +99,28 @@ msgstr "数据结构"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:66
+#, fuzzy
 msgid ""
 "In [.filename]#jail.c#, the first thing I would note is the declaration of "
 "an important structure `struct jail j;` which was included from [.filename]#/"
 "usr/include/sys/jail.h#."
-msgstr ""
+msgstr "在 [.filename]#jail.c# 中，首先值得注意的是重要结构 `struct jail j;` 的声明，该结构包含在 [.filename]#/usr/include/sys/jail.h# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:68
+#, fuzzy
 msgid "The definition of the `jail` structure is:"
-msgstr ""
+msgstr "`jail` 结构的定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/usr/include/sys/jail.h:\n"
-msgstr ""
+msgstr "/usr/include/sys/jail.h:\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct jail {\n"
 "        u_int32_t       version;\n"
@@ -122,18 +128,19 @@ msgid ""
 "        char            *hostname;\n"
 "        u_int32_t       ip_number;\n"
 "};\n"
-msgstr ""
+msgstr "struct jail {\n        u_int32_t       version;\n        char            *path;\n        char            *hostname;\n        u_int32_t       ip_number;\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:82
+#, fuzzy
 msgid ""
 "As you can see, there is an entry for each of the arguments passed to the "
 "man:jail[8] program, and indeed, they are set during its execution."
-msgstr ""
+msgstr "如你所见，传递给 man:jail[8] 程序的每个参数都对应一个成员，而且这些成员确实会在程序执行期间设置。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/usr.sbin/jail/jail.c\n"
 "char path[PATH_MAX];\n"
@@ -146,7 +153,7 @@ msgid ""
 "j.version = 0;\n"
 "j.path = path;\n"
 "j.hostname = argv[1];\n"
-msgstr ""
+msgstr "/usr/src/usr.sbin/jail/jail.c\nchar path[PATH_MAX];\n...\nif (realpath(argv[0], path) == NULL)\n    err(1, \"realpath: %s\", argv[0]);\nif (chdir(path) != 0)\n    err(1, \"chdir: %s\", path);\nmemset(&j, 0, sizeof(j));\nj.version = 0;\nj.path = path;\nj.hostname = argv[1];\n"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:98
@@ -156,16 +163,17 @@ msgstr "网络设置"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:101
+#, fuzzy
 msgid ""
 "One of the arguments passed to the man:jail[8] program is an IP address with "
 "which the jail can be accessed over the network. man:jail[8] translates the "
 "IP address given into host byte order and then stores it in `j` (the `jail` "
 "structure)."
-msgstr ""
+msgstr "传递给 man:jail[8] 程序的参数之一是 IP 地址，jail 可通过该地址从网络访问。man:jail[8] 会将给定的 IP 地址转换为主机字节序，然后将其存储在 `j`（`jail` 结构）中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/usr.sbin/jail/jail.c:\n"
 "struct in_addr in;\n"
@@ -173,17 +181,18 @@ msgid ""
 "if (inet_aton(argv[2], &in) == 0)\n"
 "    errx(1, \"Could not make sense of ip-number: %s\", argv[2]);\n"
 "j.ip_number = ntohl(in.s_addr);\n"
-msgstr ""
+msgstr "/usr/src/usr.sbin/jail/jail.c:\nstruct in_addr in;\n...\nif (inet_aton(argv[2], &in) == 0)\n    errx(1, \"Could not make sense of ip-number: %s\", argv[2]);\nj.ip_number = ntohl(in.s_addr);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:113
+#, fuzzy
 msgid ""
 "The man:inet_aton[3] function \"interprets the specified character string as "
 "an Internet address, placing the address into the structure provided.\" The "
 "`ip_number` member in the `jail` structure is set only when the IP address "
 "placed onto the `in` structure by man:inet_aton[3] is translated into host "
 "byte order by man:ntohl[3]."
-msgstr ""
+msgstr "man:inet_aton[3] 函数“将指定的字符串解释为 Internet 地址，并将该地址存入所提供的结构中”。只有在 man:inet_aton[3] 将 IP 地址存入 `in` 结构后，再由 man:ntohl[3] 将其转换为主机字节序，`jail` 结构中的 `ip_number` 成员才会被设置。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:114
@@ -193,31 +202,33 @@ msgstr "囚禁进程"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:117
+#, fuzzy
 msgid ""
 "Finally, the userland program jails the process. Jail now becomes an "
 "imprisoned process itself and then executes the command given using man:"
 "execv[3]."
-msgstr ""
+msgstr "最后，用户空间程序将进程置于 jail 中。此时 jail 程序本身也成为受 jail 限制的进程，然后使用 man:execv[3] 执行给定的命令。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/usr.sbin/jail/jail.c\n"
 "i = jail(&j);\n"
 "...\n"
 "if (execv(argv[3], argv + 3) != 0)\n"
 "    err(1, \"execv: %s\", argv[3]);\n"
-msgstr ""
+msgstr "/usr/src/usr.sbin/jail/jail.c\ni = jail(&j);\n...\nif (execv(argv[3], argv + 3) != 0)\n    err(1, \"execv: %s\", argv[3]);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:128
+#, fuzzy
 msgid ""
 "As you can see, the `jail()` function is called, and its argument is the "
 "`jail` structure which has been filled with the arguments given to the "
 "program. Finally, the program you specify is executed. I will now discuss "
 "how jail is implemented within the kernel."
-msgstr ""
+msgstr "如你所见，程序调用了 `jail()` 函数，并将填入程序所提供参数的 `jail` 结构作为参数。最后，程序会执行你指定的命令。接下来我将介绍 jail 在内核中的实现。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:129
@@ -227,11 +238,12 @@ msgstr "内核空间"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:132
+#, fuzzy
 msgid ""
 "We will now be looking at the file [.filename]#/usr/src/sys/kern/kern_jail."
 "c#. This is the file where the man:jail[2] system call, appropriate sysctls, "
 "and networking functions are defined."
-msgstr ""
+msgstr "现在我们来看看文件 [.filename]#/usr/src/sys/kern/kern_jail.c#。man:jail[2] 系统调用、相应的 sysctl 以及网络功能都在此文件中定义。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:133
@@ -241,97 +253,100 @@ msgstr "Sysctls选项"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:136
+#, fuzzy
 msgid "In [.filename]#kern_jail.c#, the following sysctls are defined:"
-msgstr ""
+msgstr "在 [.filename]#kern_jail.c# 中定义了以下 sysctl："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c:\n"
 "int     jail_set_hostname_allowed = 1;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, set_hostname_allowed, CTLFLAG_RW,\n"
 "    &jail_set_hostname_allowed, 0,\n"
 "    \"Processes in jail can set their hostnames\");\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c:\nint     jail_set_hostname_allowed = 1;\nSYSCTL_INT(_security_jail, OID_AUTO, set_hostname_allowed, CTLFLAG_RW,\n    &jail_set_hostname_allowed, 0,\n    \"Processes in jail can set their hostnames\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int     jail_socket_unixiproute_only = 1;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, socket_unixiproute_only, CTLFLAG_RW,\n"
 "    &jail_socket_unixiproute_only, 0,\n"
 "    \"Processes in jail are limited to creating UNIX/IPv4/route sockets only\");\n"
-msgstr ""
+msgstr "int     jail_socket_unixiproute_only = 1;\nSYSCTL_INT(_security_jail, OID_AUTO, socket_unixiproute_only, CTLFLAG_RW,\n    &jail_socket_unixiproute_only, 0,\n    \"Processes in jail are limited to creating UNIX/IPv4/route sockets only\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int     jail_sysvipc_allowed = 0;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, sysvipc_allowed, CTLFLAG_RW,\n"
 "    &jail_sysvipc_allowed, 0,\n"
 "    \"Processes in jail can use System V IPC primitives\");\n"
-msgstr ""
+msgstr "int     jail_sysvipc_allowed = 0;\nSYSCTL_INT(_security_jail, OID_AUTO, sysvipc_allowed, CTLFLAG_RW,\n    &jail_sysvipc_allowed, 0,\n    \"Processes in jail can use System V IPC primitives\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int jail_enforce_statfs = 2;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, enforce_statfs, CTLFLAG_RW,\n"
 "    &jail_enforce_statfs, 0,\n"
 "    \"Processes in jail cannot see all mounted file systems\");\n"
-msgstr ""
+msgstr "static int jail_enforce_statfs = 2;\nSYSCTL_INT(_security_jail, OID_AUTO, enforce_statfs, CTLFLAG_RW,\n    &jail_enforce_statfs, 0,\n    \"Processes in jail cannot see all mounted file systems\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int    jail_allow_raw_sockets = 0;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, allow_raw_sockets, CTLFLAG_RW,\n"
 "    &jail_allow_raw_sockets, 0,\n"
 "    \"Prison root can create raw sockets\");\n"
-msgstr ""
+msgstr "int    jail_allow_raw_sockets = 0;\nSYSCTL_INT(_security_jail, OID_AUTO, allow_raw_sockets, CTLFLAG_RW,\n    &jail_allow_raw_sockets, 0,\n    \"Prison root can create raw sockets\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int    jail_chflags_allowed = 0;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, chflags_allowed, CTLFLAG_RW,\n"
 "    &jail_chflags_allowed, 0,\n"
 "    \"Processes in jail can alter system file flags\");\n"
-msgstr ""
+msgstr "int    jail_chflags_allowed = 0;\nSYSCTL_INT(_security_jail, OID_AUTO, chflags_allowed, CTLFLAG_RW,\n    &jail_chflags_allowed, 0,\n    \"Processes in jail can alter system file flags\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int     jail_mount_allowed = 0;\n"
 "SYSCTL_INT(_security_jail, OID_AUTO, mount_allowed, CTLFLAG_RW,\n"
 "    &jail_mount_allowed, 0,\n"
 "    \"Processes in jail can mount/unmount jail-friendly file systems\");\n"
-msgstr ""
+msgstr "int     jail_mount_allowed = 0;\nSYSCTL_INT(_security_jail, OID_AUTO, mount_allowed, CTLFLAG_RW,\n    &jail_mount_allowed, 0,\n    \"Processes in jail can mount/unmount jail-friendly file systems\");\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:177
+#, fuzzy
 msgid ""
 "Each of these sysctls can be accessed by the user through the man:sysctl[8] "
 "program. Throughout the kernel, these specific sysctls are recognized by "
 "their name. For example, the name of the first sysctl is `security.jail."
 "set_hostname_allowed`."
-msgstr ""
+msgstr "用户可以通过 man:sysctl[8] 程序访问这些 sysctl。内核会根据名称识别这些特定的 sysctl。例如，第一个 sysctl 的名称是 `security.jail.set_hostname_allowed`。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:jail[2] System Call"
-msgstr ""
+msgstr "man:jail[2] 系统调用"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:181
+#, fuzzy
 msgid ""
 "Like all system calls, the man:jail[2] system call takes two arguments, "
 "`struct thread *td` and `struct jail_args *uap`. `td` is a pointer to the "
@@ -340,11 +355,11 @@ msgid ""
 "structure passed by the userland [.filename]#jail.c# is contained. When I "
 "described the userland program before, you saw that the man:jail[2] system "
 "call was given a `jail` structure as its own argument."
-msgstr ""
+msgstr "与所有系统调用一样，man:jail[2] 系统调用接受两个参数：`struct thread *td` 和 `struct jail_args *uap`。`td` 是指向 `thread` 结构的指针，该结构描述了调用此系统调用的线程。在此上下文中，`uap` 是指向某个结构的指针，该结构中包含一个指向用户空间 [.filename]#jail.c# 传入的 `jail` 结构的指针。前面介绍用户空间程序时，你已经看到 man:jail[2] 系统调用以一个 `jail` 结构作为参数。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c:\n"
 "/*\n"
@@ -354,10 +369,11 @@ msgid ""
 " */\n"
 "int\n"
 "jail(struct thread *td, struct jail_args *uap)\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c:\n/*\n * struct jail_args {\n *  struct jail *jail;\n * };\n */\nint\njail(struct thread *td, struct jail_args *uap)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:195
+#, fuzzy
 msgid ""
 "Therefore, `uap->jail` can be used to access the `jail` structure which was "
 "passed to the system call. Next, the system call copies the `jail` structure "
@@ -366,23 +382,24 @@ msgid ""
 "space, `uap->jail`, where to store it, `j` and the size of the storage. The "
 "`jail` structure pointed by `uap->jail` is copied into kernel space and is "
 "stored in another `jail` structure, `j`."
-msgstr ""
+msgstr "因此，可以通过 `uap->jail` 访问传递给系统调用的 `jail` 结构。接下来，系统调用使用 man:copyin[9] 函数将 `jail` 结构复制到内核空间。man:copyin[9] 接受三个参数：要复制到内核空间的数据地址 `uap->jail`、存储数据的位置 `j`，以及存储空间的大小。`uap->jail` 指向的 `jail` 结构会被复制到内核空间，并存储在另一个 `jail` 结构 `j` 中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c:\n"
 "error = copyin(uap->jail, &j, sizeof(j));\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c:\nerror = copyin(uap->jail, &j, sizeof(j));\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:203
+#, fuzzy
 msgid ""
 "There is another important structure defined in [.filename]#jail.h#. It is "
 "the `prison` structure. The `prison` structure is used exclusively within "
 "kernel space. Here is the definition of the `prison` structure."
-msgstr ""
+msgstr "[.filename]#jail.h# 中还定义了另一个重要结构：`prison` 结构。`prison` 结构专用于内核空间。下面是 `prison` 结构的定义。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:221
@@ -422,14 +439,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:224
+#, fuzzy
 msgid ""
 "The man:jail[2] system call then allocates memory for a `prison` structure "
 "and copies data between the `jail` and `prison` structure."
-msgstr ""
+msgstr "然后，man:jail[2] 系统调用会为 `prison` 结构分配内存，并在 `jail` 和 `prison` 结构之间复制数据。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c:\n"
 "MALLOC(pr, struct prison *, sizeof(*pr), M_PRISON, M_WAITOK | M_ZERO);\n"
@@ -442,18 +460,19 @@ msgid ""
 "if (error)\n"
 "     goto e_dropvnref;\n"
 "pr->pr_ip = j.ip_number;\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c:\nMALLOC(pr, struct prison *, sizeof(*pr), M_PRISON, M_WAITOK | M_ZERO);\n...\nerror = copyinstr(j.path, &pr->pr_path, sizeof(pr->pr_path), 0);\nif (error)\n    goto e_killmtx;\n...\nerror = copyinstr(j.hostname, &pr->pr_host, sizeof(pr->pr_host), 0);\nif (error)\n     goto e_dropvnref;\npr->pr_ip = j.ip_number;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:241
+#, fuzzy
 msgid ""
 "Next, we will discuss another important system call man:jail_attach[2], "
 "which implements the function to put a process into the jail."
-msgstr ""
+msgstr "接下来，我们将讨论另一个重要的系统调用 man:jail_attach[2]，它实现了将进程放入 jail 的功能。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:252
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c:\n"
 "/*\n"
@@ -463,18 +482,20 @@ msgid ""
 " */\n"
 "int\n"
 "jail_attach(struct thread *td, struct jail_attach_args *uap)\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c:\n/*\n * struct jail_attach_args {\n *      int jid;\n * };\n */\nint\njail_attach(struct thread *td, struct jail_attach_args *uap)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:255
+#, fuzzy
 msgid ""
 "This system call makes the changes that can distinguish a jailed process "
 "from those unjailed ones. To understand what man:jail_attach[2] does for us, "
 "certain background information is needed."
-msgstr ""
+msgstr "此系统调用会进行一些更改，从而使受 jail 限制的进程区别于未受限制的进程。要理解 man:jail_attach[2] 的作用，需要先了解一些背景知识。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:257
+#, fuzzy
 msgid ""
 "On FreeBSD, each kernel visible thread is identified by its `thread` "
 "structure, while the processes are described by their `proc` structures. You "
@@ -488,11 +509,11 @@ msgid ""
 "process resource limits(`p_limit`), and so on. In the `ucred` structure "
 "pointed by `p_ucred` member in the `proc` structure, there is a pointer to "
 "the `prison` structure(`cr_prison`)."
-msgstr ""
+msgstr "在 FreeBSD 中，每个内核可见线程都由其 `thread` 结构标识，而进程则由 `proc` 结构描述。你可以在 [.filename]#/usr/include/sys/proc.h# 中找到 `thread` 和 `proc` 结构的定义。如前所述，任何系统调用中的 `td` 参数实际上都是指向调用线程的 `thread` 结构的指针。`td` 指向的 `thread` 结构中的 `td_proc` 成员，是指向 `proc` 结构的指针；该 `proc` 结构表示包含 `td` 所代表线程的进程。`proc` 结构包含用于描述所有者身份（`p_ucred`）、进程资源限制（`p_limit`）等信息的成员。在 `proc` 结构的 `p_ucred` 成员所指向的 `ucred` 结构中，有一个指向 `prison` 结构（`cr_prison`）的指针。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/include/sys/proc.h:\n"
 "struct thread {\n"
@@ -511,10 +532,11 @@ msgid ""
 "    struct prison *cr_prison;\n"
 "    ...\n"
 "};\n"
-msgstr ""
+msgstr "/usr/include/sys/proc.h:\nstruct thread {\n    ...\n    struct proc *td_proc;\n    ...\n};\nstruct proc {\n    ...\n    struct ucred *p_ucred;\n    ...\n};\n/usr/include/sys/ucred.h\nstruct ucred {\n    ...\n    struct prison *cr_prison;\n    ...\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:280
+#, fuzzy
 msgid ""
 "In [.filename]#kern_jail.c#, the function `jail()` then calls function "
 "`jail_attach()` with a given `jid`. And `jail_attach()` calls function "
@@ -530,11 +552,11 @@ msgid ""
 "When a program is executed through man:execve[2], it inherits the jailed "
 "property of its parent's `ucred` structure, therefore it has a jailed "
 "`ucred` structure."
-msgstr ""
+msgstr "在 [.filename]#kern_jail.c# 中，`jail()` 函数随后会使用给定的 `jid` 调用 `jail_attach()` 函数。`jail_attach()` 会调用 `change_root()` 来更改调用进程的根目录。随后，`jail_attach()` 会创建一个新的 `ucred` 结构，并在成功将 `prison` 结构附加到该 `ucred` 结构后，将新创建的 `ucred` 结构关联到调用进程。从此以后，调用进程就被识别为受 jail 限制的进程。当内核例程 `jailed()` 在内核中以新创建的 `ucred` 结构作为参数调用时，会返回 1，表示该凭证关联了一个 jail。在 jail 中派生的所有进程，其最初的祖先进程就是运行 man:jail[8] 的进程，因为该程序会调用 man:jail[2] 系统调用。通过 man:execve[2] 执行程序时，该程序会继承其父进程 `ucred` 结构的 jail 属性，因此也会拥有受 jail 限制的 `ucred` 结构。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c\n"
 "int\n"
@@ -548,11 +570,11 @@ msgid ""
 "        goto e_dropprref;\n"
 "...\n"
 "}\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c\nint\njail(struct thread *td, struct jail_args *uap)\n{\n...\n    struct jail_attach_args jaa;\n...\n    error = jail_attach(td, &jaa);\n    if (error)\n        goto e_dropprref;\n...\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int\n"
 "jail_attach(struct thread *td, struct jail_attach_args *uap)\n"
@@ -571,26 +593,27 @@ msgid ""
 "    p->p_ucred = newcred;\n"
 "...\n"
 "}\n"
-msgstr ""
+msgstr "int\njail_attach(struct thread *td, struct jail_attach_args *uap)\n{\n    struct proc *p;\n    struct ucred *newcred, *oldcred;\n    struct prison *pr;\n...\n    p = td->td_proc;\n...\n    pr = prison_find(uap->jid);\n...\n    change_root(pr->pr_root, td);\n...\n    newcred->cr_prison = pr;\n    p->p_ucred = newcred;\n...\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:316
+#, fuzzy
 msgid ""
 "When a process is forked from its parent process, the man:fork[2] system "
 "call uses `crhold()` to maintain the credential for the newly forked "
 "process. It inherently keep the newly forked child's credential consistent "
 "with its parent, so the child process is also jailed."
-msgstr ""
+msgstr "当进程从其父进程派生时，man:fork[2] 系统调用会使用 `crhold()` 为新派生进程保留凭证。这样会使新派生子进程的凭证与其父进程保持一致，因此子进程也会受到 jail 限制。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_fork.c:\n"
 "p2->p_ucred = crhold(td->td_ucred);\n"
 "...\n"
 "td2->td_ucred = crhold(p2->p_ucred);\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_fork.c:\np2->p_ucred = crhold(td->td_ucred);\n...\ntd2->td_ucred = crhold(p2->p_ucred);\n"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:326
@@ -610,11 +633,11 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if (jailed(td->td_ucred))\n"
 "    return (EPERM);\n"
-msgstr ""
+msgstr "if (jailed(td->td_ucred))\n    return (EPERM);\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:336
@@ -624,6 +647,7 @@ msgstr "SysV进程间通信(IPC)"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:339
+#, fuzzy
 msgid ""
 "System V IPC is based on messages. Processes can send each other these "
 "messages which tell them how to act. The functions which deal with messages "
@@ -635,39 +659,44 @@ msgid ""
 "from the jail would be able to affect processes outside the jailed "
 "environment. The difference between a message and a signal is that the "
 "message only consists of the signal number."
-msgstr ""
+msgstr "System V IPC 基于消息。进程可以互相发送消息，以告知对方应如何操作。用于处理消息的函数包括：man:msgctl[3]、man:msgget[3]、man:msgsnd[3] 和 man:msgrcv[3]。前面提到过，可以通过启用或禁用某些 sysctl 来改变 jail 的行为。其中一个 sysctl 是 `security.jail.sysvipc_allowed`。默认情况下，此 sysctl 的值为 0。如果将其设为 1，就会完全违背设置 jail 的目的；来自 jail 的特权用户将能够影响 jail 环境之外的进程。消息与信号的区别在于，消息只包含信号编号。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:341
+#, fuzzy
 msgid "[.filename]#/usr/src/sys/kern/sysv_msg.c#:"
-msgstr ""
+msgstr "[.filename]#/usr/src/sys/kern/sysv_msg.c#:"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:343
+#, fuzzy
 msgid ""
 "`msgget(key, msgflg)`: `msgget` returns (and possibly creates) a message "
 "descriptor that designates a message queue for use in other functions."
-msgstr ""
+msgstr "`msgget(key, msgflg)`：`msgget` 返回（并可能创建）一个消息描述符，该描述符用于标识供其他函数使用的消息队列。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:344
+#, fuzzy
 msgid ""
 "`msgctl(msgid, cmd, buf)`: Using this function, a process can query the "
 "status of a message descriptor."
-msgstr ""
+msgstr "`msgctl(msgid, cmd, buf)`：进程可以使用此函数查询消息描述符的状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:345
+#, fuzzy
 msgid ""
 "`msgsnd(msgid, msgp, msgsz, msgflg)`: `msgsnd` sends a message to a process."
-msgstr ""
+msgstr "`msgsnd(msgid, msgp, msgsz, msgflg)`：`msgsnd` 向进程发送消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:346
+#, fuzzy
 msgid ""
 "`msgrcv(msgid, msgp, msgsz, msgtyp, msgflg)`: a process receives messages "
 "using this function"
-msgstr ""
+msgstr "`msgrcv(msgid, msgp, msgsz, msgtyp, msgflg)`：进程使用此函数接收消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:348
@@ -678,15 +707,16 @@ msgstr "在这些函数对应的系统调用的代码中，都有这样一个条
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/sysv_msg.c:\n"
 "if (!jail_sysvipc_allowed && jailed(td->td_ucred))\n"
 "    return (ENOSYS);\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/sysv_msg.c:\nif (!jail_sysvipc_allowed && jailed(td->td_ucred))\n    return (ENOSYS);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:357
+#, fuzzy
 msgid ""
 "Semaphore system calls allow processes to synchronize execution by doing a "
 "set of operations atomically on a set of semaphores. Basically semaphores "
@@ -694,81 +724,92 @@ msgid ""
 "on a semaphore, that is being used, will sleep until the resources are "
 "relinquished. The following semaphore system calls are blocked inside a "
 "jail: man:semget[2], man:semctl[2] and man:semop[2]."
-msgstr ""
+msgstr "信号量系统调用允许进程通过对一组信号量原子地执行一组操作来同步执行。简而言之，信号量为进程提供了另一种锁定资源的方式。不过，如果进程等待正在使用的信号量，就会休眠，直到资源被释放。在 jail 中会阻止以下信号量系统调用：man:semget[2]、man:semctl[2] 和 man:semop[2]。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:359
+#, fuzzy
 msgid "[.filename]#/usr/src/sys/kern/sysv_sem.c#:"
-msgstr ""
+msgstr "[.filename]#/usr/src/sys/kern/sysv_sem.c#:"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:361
+#, fuzzy
 msgid ""
 "`semctl(semid, semnum, cmd, ...)`: `semctl` does the specified `cmd` on the "
 "semaphore queue indicated by `semid`."
-msgstr ""
+msgstr "`semctl(semid, semnum, cmd, ...)`：`semctl` 会对 `semid` 指定的信号量队列执行指定的 `cmd`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:362
+#, fuzzy
 msgid ""
 "`semget(key, nsems, flag)`: `semget` creates an array of semaphores, "
 "corresponding to `key`."
-msgstr ""
+msgstr "`semget(key, nsems, flag)`：`semget` 会创建一个与 `key` 对应的信号量数组。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:364
+#, fuzzy
 msgid "`key and flag take on the same meaning as they do in msgget.`"
-msgstr ""
+msgstr "`key and flag take on the same meaning as they do in msgget.`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:365
+#, fuzzy
 msgid ""
 "`semop(semid, array, nops)`: `semop` performs a group of operations "
 "indicated by `array`, to the set of semaphores identified by `semid`."
-msgstr ""
+msgstr "`semop(semid, array, nops)`：`semop` 会对 `semid` 标识的信号量集合执行 `array` 指定的一组操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:367
+#, fuzzy
 msgid ""
 "System V IPC allows for processes to share memory. Processes can communicate "
 "directly with each other by sharing parts of their virtual address space and "
 "then reading and writing data stored in the shared memory. These system "
 "calls are blocked within a jailed environment: man:shmdt[2], man:shmat[2], "
 "man:shmctl[2] and man:shmget[2]."
-msgstr ""
+msgstr "System V IPC 允许进程共享内存。进程可以通过共享其虚拟地址空间的一部分，直接相互通信，然后读取和写入共享内存中的数据。在受 jail 限制的环境中会阻止以下系统调用：man:shmdt[2]、man:shmat[2]、man:shmctl[2] 和 man:shmget[2]。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:369
+#, fuzzy
 msgid "[.filename]#/usr/src/sys/kern/sysv_shm.c#:"
-msgstr ""
+msgstr "[.filename]#/usr/src/sys/kern/sysv_shm.c#:"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:371
+#, fuzzy
 msgid ""
 "`shmctl(shmid, cmd, buf)`: `shmctl` does various control operations on the "
 "shared memory region identified by `shmid`."
-msgstr ""
+msgstr "`shmctl(shmid, cmd, buf)`：`shmctl` 会对 `shmid` 标识的共享内存区域执行各种控制操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:372
+#, fuzzy
 msgid ""
 "`shmget(key, size, flag)`: `shmget` accesses or creates a shared memory "
 "region of `size` bytes."
-msgstr ""
+msgstr "`shmget(key, size, flag)`：`shmget` 会访问或创建一个大小为 `size` 字节的共享内存区域。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:373
+#, fuzzy
 msgid ""
 "`shmat(shmid, addr, flag)`: `shmat` attaches a shared memory region "
 "identified by `shmid` to the address space of a process."
-msgstr ""
+msgstr "`shmat(shmid, addr, flag)`：`shmat` 将由 `shmid` 标识的共享内存区域附加到进程的地址空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:374
+#, fuzzy
 msgid ""
 "`shmdt(addr)`: `shmdt` detaches the shared memory region previously attached "
 "at `addr`."
-msgstr ""
+msgstr "`shmdt(addr)`：`shmdt` 分离先前在 `addr` 处附加的共享内存区域。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:375
@@ -778,6 +819,7 @@ msgstr "套接字"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:378
+#, fuzzy
 msgid ""
 "Jail treats the man:socket[2] system call and related lower-level socket "
 "functions in a special manner. In order to determine whether a certain "
@@ -785,11 +827,11 @@ msgid ""
 "`security.jail.socket_unixiproute_only` is set. If set, sockets are only "
 "allowed to be created if the family specified is either `PF_LOCAL`, "
 "`PF_INET` or `PF_ROUTE`. Otherwise, it returns an error."
-msgstr ""
+msgstr "Jail 以特殊方式处理 man:socket[2] 系统调用及相关的底层套接字函数。为了确定是否允许创建某个套接字，它会先检查 sysctl `security.jail.socket_unixiproute_only` 是否已设置。如果已设置，则只有指定的协议族为 `PF_LOCAL`、`PF_INET` 或 `PF_ROUTE` 时才允许创建套接字。否则，它会返回错误。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/uipc_socket.c:\n"
 "int\n"
@@ -806,7 +848,7 @@ msgid ""
 "    }\n"
 "...\n"
 "}\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/uipc_socket.c:\nint\nsocreate(int dom, struct socket **aso, int type, int proto,\n    struct ucred *cred, struct thread *td)\n{\n    struct protosw *prp;\n...\n    if (jailed(cred) && jail_socket_unixiproute_only &&\n        prp->pr_domain->dom_family != PF_LOCAL &&\n        prp->pr_domain->dom_family != PF_INET &&\n        prp->pr_domain->dom_family != PF_ROUTE) {\n        return (EPROTONOSUPPORT);\n    }\n...\n}\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:398
@@ -816,11 +858,12 @@ msgstr "Berkeley包过滤器"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:401
+#, fuzzy
 msgid ""
 "The Berkeley Packet Filter provides a raw interface to data link layers in a "
 "protocol independent fashion. BPF is now controlled by the man:devfs[8] "
 "whether it can be used in a jailed environment."
-msgstr ""
+msgstr "Berkeley Packet Filter（BPF）以独立于协议的方式提供对数据链路层的原始接口。现在由 man:devfs[8] 控制 BPF 是否可在 jail 环境中使用。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:402
@@ -857,7 +900,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:442
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/netinet/in_pcb.c:\n"
 "int\n"
@@ -893,10 +936,11 @@ msgid ""
 "        return (EINVAL);\n"
 "...\n"
 "}\n"
-msgstr ""
+msgstr "/usr/src/sys/netinet/in_pcb.c:\nint\nin_pcbbind_setup(struct inpcb *inp, struct sockaddr *nam, in_addr_t *laddrp,\n    u_short *lportp, struct ucred *cred)\n{\n    ...\n    struct sockaddr_in *sin;\n    ...\n    if (nam) {\n        sin = (struct sockaddr_in *)nam;\n        ...\n        if (sin->sin_addr.s_addr != INADDR_ANY)\n            if (prison_ip(cred, 0, &sin->sin_addr.s_addr))\n                return(EINVAL);\n        ...\n        if (lport) {\n            ...\n            if (prison && prison_ip(cred, 0, &sin->sin_addr.s_addr))\n                return (EADDRNOTAVAIL);\n            ...\n        }\n    }\n    if (lport == 0) {\n        ...\n        if (laddr.s_addr != INADDR_ANY)\n            if (prison_ip(cred, 0, &laddr.s_addr))\n                return (EINVAL);\n        ...\n    }\n...\n    if (prison_ip(cred, 0, &laddr.s_addr))\n        return (EINVAL);\n...\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:445
+#, fuzzy
 msgid ""
 "You might be wondering what function `prison_ip()` does. `prison_ip()` is "
 "given three arguments, a pointer to the credential(represented by `cred`), "
@@ -904,22 +948,22 @@ msgid ""
 "to the jail or 0 otherwise. As you can see from the code, if it is indeed an "
 "IP address not belonging to the jail, the protocol is not allowed to bind to "
 "that address."
-msgstr ""
+msgstr "你可能想知道 `prison_ip()` 函数的作用。`prison_ip()` 接受三个参数：指向凭据（由 `cred` 表示）的指针、任意标志以及一个 IP 地址。如果该 IP 地址不属于 jail，它返回 1；否则返回 0。从代码中可以看出，如果该 IP 地址确实不属于 jail，就不允许协议绑定到该地址。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/kern/kern_jail.c:\n"
 "int\n"
 "prison_ip(struct ucred *cred, int flag, u_int32_t *ip)\n"
 "{\n"
 "    u_int32_t tmp;\n"
-msgstr ""
+msgstr "/usr/src/sys/kern/kern_jail.c:\nint\nprison_ip(struct ucred *cred, int flag, u_int32_t *ip)\n{\n    u_int32_t tmp;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:478
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    if (!jailed(cred))\n"
 "        return (0);\n"
@@ -945,7 +989,7 @@ msgid ""
 "        return (1);\n"
 "    return (0);\n"
 "}\n"
-msgstr ""
+msgstr "    if (!jailed(cred))\n        return (0);\n    if (flag)\n        tmp = *ip;\n    else\n        tmp = ntohl(*ip);\n    if (tmp == INADDR_ANY) {\n        if (flag)\n            *ip = cred->cr_prison->pr_ip;\n        else\n            *ip = htonl(cred->cr_prison->pr_ip);\n        return (0);\n    }\n    if (tmp == INADDR_LOOPBACK) {\n        if (flag)\n            *ip = cred->cr_prison->pr_ip;\n        else\n            *ip = htonl(cred->cr_prison->pr_ip);\n        return (0);\n    }\n    if (cred->cr_prison->pr_ip != tmp)\n        return (1);\n    return (0);\n}\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:480
@@ -955,15 +999,16 @@ msgstr "文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:483
+#, fuzzy
 msgid ""
 "Even `root` users within the jail are not allowed to unset or modify any "
 "file flags, such as immutable, append-only, and undeleteable flags, if the "
 "securelevel is greater than 0."
-msgstr ""
+msgstr "即使是 jail 内的 `root` 用户，在 securelevel 大于 0 时，也不允许取消或修改任何文件标志，例如不可变、仅追加和不可删除标志。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/jail/_index.adoc:528
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/ufs/ufs/ufs_vnops.c:\n"
 "static int\n"
@@ -1007,4 +1052,4 @@ msgid ""
 "    }\n"
 "    ...\n"
 "}\n"
-msgstr ""
+msgstr "/usr/src/sys/ufs/ufs/ufs_vnops.c:\nstatic int\nufs_setattr(ap)\n    ...\n{\n    ...\n        if (!priv_check_cred(cred, PRIV_VFS_SYSFLAGS, 0)) {\n            if (ip->i_flags\n                & (SF_NOUNLINK | SF_IMMUTABLE | SF_APPEND)) {\n                    error = securelevel_gt(cred, 0);\n                    if (error)\n                        return (error);\n            }\n            ...\n        }\n}\n/usr/src/sys/kern/kern_priv.c\nint\npriv_check_cred(struct ucred *cred, int priv, int flags)\n{\n    ...\n    error = prison_priv_check(cred, priv);\n    if (error)\n        return (error);\n    ...\n}\n/usr/src/sys/kern/kern_jail.c\nint\nprison_priv_check(struct ucred *cred, int priv)\n{\n    ...\n    switch (priv) {\n    ...\n    case PRIV_VFS_SYSFLAGS:\n        if (jail_chflags_allowed)\n            return (0);\n        else\n            return (EPERM);\n    ...\n    }\n    ...\n}\n"

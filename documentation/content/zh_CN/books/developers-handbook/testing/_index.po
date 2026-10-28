@@ -18,98 +18,110 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:1
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Regression and Performance Testing"
-msgstr ""
+msgstr "回归测试与性能测试"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 6. Regression and Performance Testing"
-msgstr ""
+msgstr "第 6 章：回归测试与性能测试"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:52
+#, fuzzy
 msgid ""
 "Regression tests are used to exercise a particular bit of the system to "
 "check that it works as expected, and to make sure that old bugs are not "
 "reintroduced."
-msgstr ""
+msgstr "回归测试用于测试系统的特定部分，以检查其是否按预期工作，并确保旧错误不会再次出现。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:54
+#, fuzzy
 msgid ""
 "The FreeBSD regression testing tools can be found in the FreeBSD source tree "
 "in the directory [.filename]#src/tools/regression#."
-msgstr ""
+msgstr "FreeBSD 回归测试工具位于 FreeBSD 源代码树的 [.filename]#src/tools/regression# 目录中。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Micro Benchmark Checklist"
-msgstr ""
+msgstr "微基准测试清单"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:59
+#, fuzzy
 msgid ""
 "This section contains hints for doing proper micro-benchmarking on FreeBSD "
 "or of FreeBSD itself."
-msgstr ""
+msgstr "本节介绍在 FreeBSD 上或针对 FreeBSD 进行适当微基准测试的一些提示。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:61
+#, fuzzy
 msgid ""
 "It is not possible to use all of the suggestions below every single time, "
 "but the more used, the better the benchmark's ability to test small "
 "differences will be."
-msgstr ""
+msgstr "每次都采用下面所有建议是不现实的，但采用得越多，基准测试检测细微差异的能力就越强。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:63
+#, fuzzy
 msgid "Disable APM and any other kind of clock fiddling (ACPI ?)."
-msgstr ""
+msgstr "禁用 APM 以及其他任何会影响时钟的功能（例如 ACPI？）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:64
+#, fuzzy
 msgid ""
 "Run in single user mode. E.g., man:cron[8], and other daemons only add "
 "noise. The man:sshd[8] daemon can also cause problems. If ssh access is "
 "required during testing either disable the SSHv1 key regeneration, or kill "
 "the parent `sshd` daemon during the tests."
-msgstr ""
+msgstr "以单用户模式运行。例如，man:cron[8] 等守护进程只会增加干扰。man:sshd[8] 守护进程也可能造成问题。如果测试期间需要通过 SSH 访问，请禁用 SSHv1 密钥重新生成，或者在测试期间终止父 `sshd` 守护进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:65
+#, fuzzy
 msgid "Do not run man:ntpd[8]."
-msgstr ""
+msgstr "不要运行 man:ntpd[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:66
+#, fuzzy
 msgid ""
 "If man:syslog[3] events are generated, run man:syslogd[8] with an empty [."
 "filename]#/etc/syslogd.conf#, otherwise, do not run it."
-msgstr ""
+msgstr "如果会生成 man:syslog[3] 事件，请使用空的 [.filename]#/etc/syslogd.conf# 运行 man:syslogd[8]；否则不要运行它。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:67
+#, fuzzy
 msgid "Minimize disk-I/O, avoid it entirely if possible."
-msgstr ""
+msgstr "尽量减少磁盘 I/O；如果可能，应完全避免。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:68
+#, fuzzy
 msgid "Do not mount file systems that are not needed."
-msgstr ""
+msgstr "不要挂载不需要的文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:69
+#, fuzzy
 msgid ""
 "Mount [.filename]#/#, [.filename]#/usr#, and any other file system as read-"
 "only if possible. This removes atime updates to disk (etc.) from the I/O "
 "picture."
-msgstr ""
+msgstr "如果可能，将 [.filename]#/#、[.filename]#/usr# 及其他文件系统以只读方式挂载。这样可以从 I/O 统计中去除 atime 更新等磁盘操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:70
+#, fuzzy
 msgid ""
 "Reinitialize the read/write test file system with man:newfs[8] and populate "
 "it from a man:tar[1] or man:dump[8] file before every run. Unmount and mount "
@@ -118,123 +130,138 @@ msgid ""
 "(just reinitialize with `newfs` and mount). To get 100% reproducibility, "
 "populate the file system from a man:dd[1] file (i.e.: `dd if=myimage of=/dev/"
 "ad0s1h bs=1m`)"
-msgstr ""
+msgstr "使用 man:newfs[8] 重新初始化读写测试文件系统，并在每次运行前从 man:tar[1] 或 man:dump[8] 文件填充该文件系统。开始测试前先卸载并重新挂载它。这样可以确保文件系统布局一致。对于 worldstone 测试，应对 [.filename]#/usr/obj# 执行此操作（只需用 `newfs` 重新初始化并挂载）。若要实现 100% 的可重复性，请从 man:dd[1] 文件填充文件系统（即：`dd if=myimage of=/dev/ad0s1h bs=1m`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:71
+#, fuzzy
 msgid "Use malloc backed or preloaded man:md[4] partitions."
-msgstr ""
+msgstr "使用 malloc 支持的分区或预加载的 man:md[4] 分区。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:72
+#, fuzzy
 msgid ""
 "Reboot between individual iterations of the test, this gives a more "
 "consistent state."
-msgstr ""
+msgstr "在每次单独的测试迭代之间重新启动，这样能获得更一致的状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:73
+#, fuzzy
 msgid ""
 "Remove all non-essential device drivers from the kernel. For instance if USB "
 "is not needed for the test, do not put USB in the kernel. Drivers which "
 "attach often have timeouts ticking away."
-msgstr ""
+msgstr "从内核中移除所有非必要的设备驱动程序。例如，如果测试不需要 USB，就不要在内核中加入 USB。已挂接的驱动程序通常会持续运行超时计时器。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:74
+#, fuzzy
 msgid ""
 "Unconfigure hardware that are not in use. Detach disks with man:"
 "atacontrol[8] and man:camcontrol[8] if the disks are not used for the test."
-msgstr ""
+msgstr "取消配置未使用的硬件。如果测试不使用磁盘，请使用 man:atacontrol[8] 和 man:camcontrol[8] 分离磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:75
+#, fuzzy
 msgid ""
 "Do not configure the network unless it is being tested, or wait until after "
 "the test has been performed to ship the results off to another computer."
-msgstr ""
+msgstr "除非要测试网络，否则不要配置网络；也可以等测试完成后再将结果发送到另一台计算机。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:77
+#, fuzzy
 msgid ""
 "Disable \"Turbo-modes\" because they make the clock frequency explicitly "
 "depend on the environment. This means that benchmark runs on 100% identical "
 "code, may depend on time of day, coffee vs. soda or even how many other "
 "people are in the office."
-msgstr ""
+msgstr "禁用“Turbo 模式”，因为它们会使时钟频率明确地依赖于环境。这意味着，即使基准测试运行的代码完全相同，结果也可能取决于一天中的时刻、喝的是咖啡还是汽水，甚至办公室里还有多少人。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:79
+#, fuzzy
 msgid ""
 "If the system must be connected to a public network, watch out for spikes of "
 "broadcast traffic. Even though it is hardly noticeable, it will take up CPU "
 "cycles. Multicast has similar caveats."
-msgstr ""
+msgstr "如果系统必须连接到公共网络，请留意广播流量的突发。尽管不太明显，它仍会占用 CPU 周期。多播也有类似的问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:80
+#, fuzzy
 msgid ""
 "Put each file system on its own disk. This minimizes jitter from head-seek "
 "optimizations."
-msgstr ""
+msgstr "将每个文件系统放在单独的磁盘上，以尽量减少磁头寻道优化造成的抖动。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:81
+#, fuzzy
 msgid ""
 "Minimize output to serial or VGA consoles. Running output into files gives "
 "less jitter. (Serial consoles easily become a bottleneck.) Do not touch "
 "keyboard while the test is running, even kbd:[space] or kbd:[back-space] "
 "shows up in the numbers."
-msgstr ""
+msgstr "尽量减少向串行或 VGA 控制台输出内容。将输出写入文件可以减少抖动。（串行控制台很容易成为瓶颈。）测试运行期间不要触碰键盘，甚至按下 kbd:[space] 或 kbd:[back-space] 都会反映在测量数据中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:82
+#, fuzzy
 msgid ""
 "Make sure the test is long enough, but not too long. If the test is too "
 "short, timestamping is a problem. If it is too long temperature changes and "
 "drift will affect the frequency of the quartz crystals in the computer. Rule "
 "of thumb: more than a minute, less than an hour."
-msgstr ""
+msgstr "确保测试时间足够长，但不要过长。测试太短，时间戳测量会成为问题；测试太长，温度变化和漂移会影响计算机中石英晶体的频率。经验法则：超过一分钟，少于一小时。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:83
+#, fuzzy
 msgid ""
 "Try to keep the temperature as stable as possible around the machine. This "
 "affects both quartz crystals and disk drive algorithms. To get real stable "
 "clock, consider stabilized clock injection. E.g., get an OCXO + PLL, inject "
 "output into clock circuits instead of motherboard xtal. Contact {phk} for "
 "more information about this."
-msgstr ""
+msgstr "尽量保持机器周围的温度稳定。这会影响石英晶体和磁盘驱动器算法。若要获得真正稳定的时钟，可考虑注入稳定时钟。例如，使用 OCXO + PLL，将输出注入时钟电路，而不是主板晶振。有关详情，请联系 {phk}。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:84
+#, fuzzy
 msgid ""
 "Run the test at least 3 times but it is better to run more than 20 times "
 "both for \"before\" and \"after\" code. Try to interleave if possible (i.e.: "
 "do not run 20 times before then 20 times after), this makes it possible to "
 "spot environmental effects. Do not interleave 1:1, but 3:3, this makes it "
 "possible to spot interaction effects."
-msgstr ""
+msgstr "测试至少运行 3 次；最好在代码“之前”和“之后”各运行 20 次以上。如果可能，尽量交错运行（即不要先运行 20 次之前版本，再运行 20 次之后版本），这样便于发现环境影响。不要按 1:1 交错，而应按 3:3 交错，这样便于发现交互影响。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:87
+#, fuzzy
 msgid ""
 "A good pattern is: `bababa{bbbaaa}*`.  This gives hint after the first 1+1 "
 "runs (so it is possible to stop the test if it goes entirely the wrong way), "
 "a standard deviation after the first 3+3 (gives a good indication if it is "
 "going to be worth a long run) and trending and interaction numbers later on."
-msgstr ""
+msgstr "一种良好的模式是：`bababa{bbbaaa}*`。这样在最初的 1+1 次运行后就能得到提示（如果结果完全朝错误方向发展，就可以停止测试）；在最初的 3+3 次运行后能得到标准差（可据此判断是否值得进行长时间测试）；之后还能观察趋势和交互数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:88
+#, fuzzy
 msgid ""
 "Use man:ministat[1] to see if the numbers are significant. Consider buying "
 "\"Cartoon guide to statistics\" ISBN: 0062731025, highly recommended, if you "
 "have forgotten or never learned about standard deviation and Student's T."
-msgstr ""
+msgstr "使用 man:ministat[1] 判断这些数据是否具有统计显著性。如果你忘了或从未学过标准差和 Student's T，强烈推荐购买《Cartoon guide to statistics》，ISBN：0062731025。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:89
+#, fuzzy
 msgid ""
 "Do not use background man:fsck[8] unless the test is a benchmark of "
 "background `fsck`. Also, disable `background_fsck` in [.filename]#/etc/rc."
@@ -243,106 +270,118 @@ msgid ""
 "run on any file systems when background `fsck` is enabled. Likewise, make "
 "sure there are no snapshots lying around unless the benchmark is a test with "
 "snapshots."
-msgstr ""
+msgstr "除非测试内容是后台 `fsck` 基准测试，否则不要使用后台 man:fsck[8]。此外，除非基准测试在启动后至少 60+“``fsck`` 运行时间”秒才开始，否则请在 [.filename]#/etc/rc.conf# 中禁用 `background_fsck`；因为启用后台 `fsck` 时，man:rc[8] 会唤醒并检查是否需要在任何文件系统上运行 `fsck`。同样，除非基准测试内容是快照测试，否则请确保没有遗留快照。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:90
+#, fuzzy
 msgid ""
 "If the benchmark show unexpected bad performance, check for things like high "
 "interrupt volume from an unexpected source. Some versions of ACPI have been "
 "reported to \"misbehave\" and generate excess interrupts. To help diagnose "
 "odd test results, take a few snapshots of `vmstat -i` and look for anything "
 "unusual."
-msgstr ""
+msgstr "如果基准测试的性能低于预期，请检查是否存在意外来源产生的大量中断等情况。据报告，某些版本的 ACPI 会“行为异常”，产生过多中断。为帮助诊断异常的测试结果，可多次截取 `vmstat -i` 的输出，并查找异常之处。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:91
+#, fuzzy
 msgid ""
 "Make sure to be careful about optimization parameters for kernel and "
 "userspace, likewise debugging. It is easy to let something slip through and "
 "realize later the test was not comparing the same thing."
-msgstr ""
+msgstr "务必谨慎设置内核和用户空间的优化参数，调试参数也同样如此。很容易遗漏某些设置，之后才发现测试比较的对象并不相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:92
+#, fuzzy
 msgid ""
 "Do not ever benchmark with the `WITNESS` and `INVARIANTS` kernel options "
 "enabled unless the test is interested to benchmarking those features. "
 "`WITNESS` can cause 400%+ drops in performance. Likewise, userspace man:"
 "malloc[3] parameters default differently in -CURRENT from the way they ship "
 "in production releases."
-msgstr ""
+msgstr "除非测试目标就是评估这些功能，否则绝不要在启用了 `WITNESS` 和 `INVARIANTS` 内核选项的情况下进行基准测试。`WITNESS` 可能导致性能下降 400% 以上。同样，用户空间 man:malloc[3] 参数在 -CURRENT 中的默认值与正式发布版本中的默认值不同。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Source Tinderbox"
-msgstr ""
+msgstr "FreeBSD 源代码 Tinderbox"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:97
+#, fuzzy
 msgid "The source Tinderbox consists of:"
-msgstr ""
+msgstr "源代码 Tinderbox 由以下部分组成："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:99
+#, fuzzy
 msgid ""
 "A build script, [.filename]#tinderbox#, that automates checking out a "
 "specific version of the FreeBSD source tree and building it."
-msgstr ""
+msgstr "一个名为 [.filename]#tinderbox# 的构建脚本，用于自动检出 FreeBSD 源代码树的指定版本并进行构建。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:100
+#, fuzzy
 msgid ""
 "A supervisor script, [.filename]#tbmaster#, that monitors individual "
 "Tinderbox instances, logs their output, and emails failure notices."
-msgstr ""
+msgstr "一个名为 [.filename]#tbmaster# 的监控脚本，用于监控各个 Tinderbox 实例、记录其输出，并通过电子邮件发送失败通知。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:101
+#, fuzzy
 msgid ""
 "A CGI script named [.filename]#index.cgi# that reads a set of tbmaster logs "
 "and presents an easy-to-read HTML summary of them."
-msgstr ""
+msgstr "一个名为 [.filename]#index.cgi# 的 CGI 脚本，用于读取一组 tbmaster 日志，并以易读的 HTML 摘要形式呈现。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:102
+#, fuzzy
 msgid ""
 "A set of build servers that continually test the tip of the most important "
 "FreeBSD code branches."
-msgstr ""
+msgstr "一组构建服务器，持续测试 FreeBSD 最重要代码分支的最新版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:103
+#, fuzzy
 msgid ""
 "A webserver that keeps a complete set of Tinderbox logs and displays an up-"
 "to-date summary."
-msgstr ""
+msgstr "一台 Web 服务器，保存完整的 Tinderbox 日志，并显示最新摘要。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:106
+#, fuzzy
 msgid ""
 "The scripts are maintained and were developed by {des}, and are now written "
 "in Perl, a move on from their original incarnation as shell scripts.  All "
 "scripts and configuration files are kept in https://www.freebsd.org/cgi/"
 "cvsweb.cgi/projects/tinderbox/[/projects/tinderbox/]."
-msgstr ""
+msgstr "这些脚本由 {des} 开发并维护，目前使用 Perl 编写；此前的版本是 shell 脚本。所有脚本和配置文件都保存在 link:https://www.freebsd.org/cgi/cvsweb.cgi/projects/tinderbox/[/projects/tinderbox/]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:108
+#, fuzzy
 msgid ""
 "For more information about the tinderbox and tbmaster scripts at this stage, "
 "see their respective man pages: tinderbox(1) and tbmaster(1)."
-msgstr ""
+msgstr "有关此阶段 tinderbox 和 tbmaster 脚本的更多信息，请参阅相应的手册页：tinderbox(1) 和 tbmaster(1)。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The index.cgi Script"
-msgstr ""
+msgstr "index.cgi 脚本"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:116
+#, fuzzy
 msgid ""
 "The [.filename]#index.cgi# script generates the HTML summary of tinderbox "
 "and tbmaster logs.  Although originally intended to be used as a CGI script, "
@@ -351,272 +390,312 @@ msgid ""
 "directory where the script is located.  It will automatically detect "
 "context, generating HTTP headers when it is run as a CGI script.  It "
 "conforms to XHTML standards and is styled using CSS."
-msgstr ""
+msgstr "[.filename]#index.cgi# 脚本会生成 tinderbox 和 tbmaster 日志的 HTML 摘要。尽管它最初是作为 CGI 脚本使用的（正如其名称所示），也可以从命令行或 man:cron[8] 作业运行；在这种情况下，它会在脚本所在目录中查找日志。它会自动检测运行环境，在作为 CGI 脚本运行时生成 HTTP 标头。它符合 XHTML 标准，并使用 CSS 设置样式。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:119
+#, fuzzy
 msgid ""
 "The script starts in the `main()` block by attempting to verify that it is "
 "running on the official Tinderbox website.  If it is not, a page indicating "
 "it is not an official website is produced, and a URL to the official site is "
 "provided."
-msgstr ""
+msgstr "脚本从 `main()` 代码块开始，尝试确认自己是否运行在官方 Tinderbox 网站上。如果不是，则会生成一个页面，说明该网站不是官方网站，并提供官方网站的 URL。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:122
+#, fuzzy
 msgid ""
 "Next, it scans the log directory to get an inventory of configurations, "
 "branches and architectures for which log files exist, to avoid hard-coding a "
 "list into the script and potentially ending up with blank rows or columns.  "
 "This information is derived from the names of the log files matching the "
 "following pattern:"
-msgstr ""
+msgstr "接下来，脚本扫描日志目录，获取存在日志文件的配置、分支和架构清单，以避免在脚本中硬编码列表并导致出现空行或空列。这些信息取自符合以下模式的日志文件名："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "tinderbox-$config-$branch-$arch-$machine.{brief,full}\n"
-msgstr ""
+msgstr "tinderbox-$config-$branch-$arch-$machine.{brief,full}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:130
+#, fuzzy
 msgid ""
 "The configurations used on the official Tinderbox build servers are named "
 "for the branches they build.  For example, the `releng_8` configuration is "
 "used to build `RELENG_8` as well as all still-supported release branches."
-msgstr ""
+msgstr "官方 Tinderbox 构建服务器使用其所构建的分支名称来命名配置。例如，`releng_8` 配置用于构建 `RELENG_8` 以及所有仍受支持的发布分支。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:132
+#, fuzzy
 msgid ""
 "Once all of this startup procedure has been successfully completed, "
 "`do_config()` is called for each configuration."
-msgstr ""
+msgstr "完成所有启动流程后，脚本会针对每个配置调用 `do_config()`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:134
+#, fuzzy
 msgid ""
 "The `do_config()` function generates HTML for a single Tinderbox "
 "configuration."
-msgstr ""
+msgstr "`do_config()` 函数为单个 Tinderbox 配置生成 HTML。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:137
+#, fuzzy
 msgid ""
 "It works by first generating a header row, then iterating over each branch "
 "build with the specified configuration, producing a single row of results "
 "for each in the following manner:"
-msgstr ""
+msgstr "它首先生成标题行，然后遍历指定配置下每个分支的构建，并按以下方式为每个分支生成一行结果："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:139
+#, fuzzy
 msgid "For each item:"
-msgstr ""
+msgstr "对于每个项目："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:141
+#, fuzzy
 msgid "For each machine within that architecture:"
-msgstr ""
+msgstr "对于该架构中的每台机器："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:143
+#, fuzzy
 msgid "If a brief log file exists, then:"
-msgstr ""
+msgstr "如果存在简要日志文件，则："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:145
+#, fuzzy
 msgid "Call `success()` to determine the outcome of the build."
-msgstr ""
+msgstr "调用 `success()` 确定构建结果。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:146
+#, fuzzy
 msgid "Output the modification size."
-msgstr ""
+msgstr "输出修改大小。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:147
+#, fuzzy
 msgid ""
 "Output the size of the brief log file with a link to the log file itself."
-msgstr ""
+msgstr "输出简要日志文件的大小，并提供指向该日志文件的链接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:148
+#, fuzzy
 msgid "If a full log file also exists, then:"
-msgstr ""
+msgstr "如果还存在完整日志文件，则："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:150
+#, fuzzy
 msgid ""
 "Output the size of the full log file with a link to the log file itself."
-msgstr ""
+msgstr "输出完整日志文件的大小，并提供指向该日志文件的链接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:152
+#, fuzzy
 msgid "Otherwise:"
-msgstr ""
+msgstr "否则："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:154
+#, fuzzy
 msgid "No output."
-msgstr ""
+msgstr "不输出内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:156
+#, fuzzy
 msgid ""
 "The `success()` function mentioned above scans a brief log file for the "
 "string \"tinderbox run completed\" in order to determine whether the build "
 "was successful."
-msgstr ""
+msgstr "上文提到的 `success()` 函数会扫描简要日志文件，查找字符串 \"tinderbox run completed\"，以判断构建是否成功。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:159
+#, fuzzy
 msgid ""
 "Configurations and branches are sorted according to their branch rank.  This "
 "is computed as follows:"
-msgstr ""
+msgstr "配置和分支按照其分支级别排序。级别按以下方式计算："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:161
+#, fuzzy
 msgid "`HEAD` and `CURRENT` have rank 9999."
-msgstr ""
+msgstr "`HEAD` 和 `CURRENT` 的级别为 9999。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:162
+#, fuzzy
 msgid "`RELENG_x` has rank __``xx``__99."
-msgstr ""
+msgstr "`RELENG_x` 的级别为 __``xx``__99。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:163
+#, fuzzy
 msgid "`RELENG_x_y` has rank _xxyy_."
-msgstr ""
+msgstr "`RELENG_x_y` 的级别为 __xxyy__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:166
+#, fuzzy
 msgid ""
 "This means that `HEAD` always ranks highest, and `RELENG` branches are "
 "ranked in numerical order, with each `STABLE` branch ranking higher than the "
 "release branches forked off of it.  For instance, for FreeBSD 8, the order "
 "from highest to lowest would be:"
-msgstr ""
+msgstr "这意味着 `HEAD` 的级别始终最高，而 `RELENG` 分支按数字顺序排列；每个 `STABLE` 分支的级别都高于从其分出的发布分支。例如，对于 FreeBSD 8，从高到低的顺序为："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:168
+#, fuzzy
 msgid "`RELENG_8` (branch rank 899)."
-msgstr ""
+msgstr "`RELENG_8`（分支级别 899）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:169
+#, fuzzy
 msgid "`RELENG_8_3` (branch rank 803)."
-msgstr ""
+msgstr "`RELENG_8_3`（分支级别 803）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:170
+#, fuzzy
 msgid "`RELENG_8_2` (branch rank 802)."
-msgstr ""
+msgstr "`RELENG_8_2`（分支级别 802）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:171
+#, fuzzy
 msgid "`RELENG_8_1` (branch rank 801)."
-msgstr ""
+msgstr "`RELENG_8_1`（分支级别 801）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:172
+#, fuzzy
 msgid "`RELENG_8_0` (branch rank 800)."
-msgstr ""
+msgstr "`RELENG_8_0`（分支级别 800）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:176
+#, fuzzy
 msgid ""
 "The colors that Tinderbox uses for each cell in the table are defined by "
 "CSS.  Successful builds are displayed with green text; unsuccessful builds "
 "are displayed with red text.  The color fades as time passes since the "
 "corresponding build, with every half an hour bringing the color closer to "
 "grey."
-msgstr ""
+msgstr "Tinderbox 表格中各单元格的颜色由 CSS 定义。成功的构建以绿色文字显示；失败的构建以红色文字显示。随着构建完成时间的推移，颜色会逐渐变淡；每过半小时，颜色就会更接近灰色。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Official Build Servers"
-msgstr ""
+msgstr "官方构建服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:180
+#, fuzzy
 msgid ""
 "The official Tinderbox build servers are hosted by http://www.sentex."
 "ca[Sentex Data Communications], who also host the FreeBSD Netperf Cluster."
-msgstr ""
+msgstr "官方 Tinderbox 构建服务器由 link:http://www.sentex.ca[Sentex Data Communications] 托管；该公司也托管 FreeBSD Netperf 集群。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:182
+#, fuzzy
 msgid "Three build servers currently exist:"
-msgstr ""
+msgstr "目前有三台构建服务器："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:184
+#, fuzzy
 msgid "_freebsd-current.sentex.ca_ builds:"
-msgstr ""
+msgstr "__freebsd-current.sentex.ca__ 构建："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:186
+#, fuzzy
 msgid ""
 "`HEAD` for amd64, arm, i386, i386/pc98, ia64, mips, powerpc, powerpc64, and "
 "sparc64."
-msgstr ""
+msgstr "适用于 amd64、arm、i386、i386/pc98、ia64、mips、powerpc、powerpc64 和 sparc64 的 `HEAD`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:187
+#, fuzzy
 msgid ""
 "`RELENG_9` and supported 9._X_ branches for amd64, arm, i386, i386/pc98, "
 "ia64, mips, powerpc, powerpc64, and sparc64."
-msgstr ""
+msgstr "适用于 amd64、arm、i386、i386/pc98、ia64、mips、powerpc、powerpc64 和 sparc64 的 `RELENG_9` 及受支持的 9._X_ 分支。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:189
+#, fuzzy
 msgid "_freebsd-stable.sentex.ca_ builds:"
-msgstr ""
+msgstr "__freebsd-stable.sentex.ca__ 构建："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:191
+#, fuzzy
 msgid ""
 "`RELENG_8` and supported 8._X_ branches for amd64, i386, i386/pc98, ia64, "
 "mips, powerpc and sparc64."
-msgstr ""
+msgstr "适用于 amd64、i386、i386/pc98、ia64、mips、powerpc 和 sparc64 的 `RELENG_8` 及受支持的 8._X_ 分支。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:193
+#, fuzzy
 msgid "_freebsd-legacy.sentex.ca_ builds:"
-msgstr ""
+msgstr "_freebsd-legacy.sentex.ca_ 构建："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:195
+#, fuzzy
 msgid ""
 "`RELENG_7` and supported 7._X_ branches for amd64, i386, i386/pc98, ia64, "
 "powerpc, and sparc64."
-msgstr ""
+msgstr "`RELENG_7` 和受支持的 7._X_ 分支，适用于 amd64、i386、i386/pc98、ia64、powerpc 和 sparc64。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Official Summary Site"
-msgstr ""
+msgstr "官方摘要站点"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:199
+#, fuzzy
 msgid ""
 "Summaries and logs from the official build servers are available online at "
 "http://tinderbox.FreeBSD.org[http://tinderbox.FreeBSD.org], hosted by {des} "
 "and set up as follows:"
-msgstr ""
+msgstr "官方构建服务器的摘要和日志可在线查看，网址为 link:http://tinderbox.FreeBSD.org[http://tinderbox.FreeBSD.org]。该站点由 {des} 托管，设置如下："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:201
+#, fuzzy
 msgid ""
 "A man:cron[8] job checks the build servers at regular intervals and "
 "downloads any new log files using man:rsync[1]."
-msgstr ""
+msgstr "man:cron[8] 作业会定期检查构建服务器，并使用 man:rsync[1] 下载任何新的日志文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/testing/_index.adoc:201
+#, fuzzy
 msgid "Apache is set up to use [.filename]#index.cgi# as `DirectoryIndex`."
-msgstr ""
+msgstr "Apache 已设置为使用 [.filename]#index.cgi# 作为 `DirectoryIndex`。"

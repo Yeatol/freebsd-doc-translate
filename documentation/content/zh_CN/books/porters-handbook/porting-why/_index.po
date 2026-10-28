@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/porting-why/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why port a program to the FreeBSD Ports Collection"
-msgstr ""
+msgstr "为什么要将程序移植到 FreeBSD Ports Collection"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/porting-why/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 1. Introduction"
-msgstr ""
+msgstr "第 1 章：简介"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/porting-why/_index.adoc:14

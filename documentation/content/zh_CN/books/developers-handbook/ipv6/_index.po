@@ -21,29 +21,30 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:1
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv6 Internals"
-msgstr ""
+msgstr "IPv6 内部机制"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 8. IPv6 Internals"
-msgstr ""
+msgstr "第 8 章：IPv6 内部机制"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv6/IPsec Implementation"
-msgstr ""
+msgstr "IPv6/IPsec 实现"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:57
+#, fuzzy
 msgid ""
 "This section should explain IPv6 and IPsec related implementation "
 "internals.  These functionalities are derived from http://www.kame.net/[KAME "
 "project]"
-msgstr ""
+msgstr "本节介绍 IPv6 和 IPsec 相关的实现内部机制。这些功能源自 link:http://www.kame.net/[KAME 项目]。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:59
@@ -53,347 +54,403 @@ msgstr "IPv6"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conformance"
-msgstr ""
+msgstr "一致性"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:65
+#, fuzzy
 msgid ""
 "The IPv6 related functions conforms, or tries to conform to the latest set "
 "of IPv6 specifications.  For future reference we list some of the relevant "
 "documents below (_NOTE_: this is not a complete list - this is too hard to "
 "maintain...)."
-msgstr ""
+msgstr "IPv6 相关功能符合或力求符合最新的一组 IPv6 规范。为便于日后查阅，下面列出了一些相关文档（__注意：这不是完整列表，维护完整列表实在太困难……__）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:67
+#, fuzzy
 msgid ""
 "For details please refer to specific chapter in the document, RFCs, manual "
 "pages, or comments in the source code."
-msgstr ""
+msgstr "详情请参阅本文档中的相关章节、RFC、手册页或源代码注释。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:71
+#, fuzzy
 msgid ""
 "Conformance tests have been performed on the KAME STABLE kit at TAHI "
 "project.  Results can be viewed at http://www.tahi.org/report/KAME/[http://"
 "www.tahi.org/report/KAME/].  We also attended University of New Hampshire "
 "IOL tests (http://www.iol.unh.edu/[http://www.iol.unh.edu/]) in the past, "
 "with our past snapshots."
-msgstr ""
+msgstr "已在 TAHI 项目的 KAME STABLE 工具包上进行一致性测试。测试结果可在 link:http://www.tahi.org/report/KAME/[http://www.tahi.org/report/KAME/] 查看。过去，我们也使用过往的快照参加了新罕布什尔大学 IOL 测试（ link:http://www.iol.unh.edu/[http://www.iol.unh.edu/]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:73
+#, fuzzy
 msgid "RFC1639: FTP Operation Over Big Address Records (FOOBAR)"
-msgstr ""
+msgstr "RFC1639：大地址记录上的 FTP 操作（FOOBAR）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:75
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:112
+#, fuzzy
 msgid ""
 "RFC2428 is preferred over RFC1639. FTP clients will first try RFC2428, then "
 "RFC1639 if failed."
-msgstr ""
+msgstr "优先使用 RFC2428，而不是 RFC1639。FTP 客户端会先尝试 RFC2428，失败后再尝试 RFC1639。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:77
+#, fuzzy
 msgid "RFC1886: DNS Extensions to support IPv6"
-msgstr ""
+msgstr "RFC1886：支持 IPv6 的 DNS 扩展"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:78
+#, fuzzy
 msgid "RFC1933: Transition Mechanisms for IPv6 Hosts and Routers"
-msgstr ""
+msgstr "RFC1933：IPv6 主机和路由器的过渡机制"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:80
+#, fuzzy
 msgid "IPv4 compatible address is not supported."
-msgstr ""
+msgstr "不支持 IPv4 兼容地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:81
+#, fuzzy
 msgid "automatic tunneling (described in 4.3 of this RFC) is not supported."
-msgstr ""
+msgstr "不支持自动隧道（RFC 第 4.3 节中对此有描述）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:83
+#, fuzzy
 msgid ""
 "man:gif[4] interface implements IPv[46]-over-IPv[46] tunnel in a generic "
 "way, and it covers \"configured tunnel\" described in the spec. See crossref:"
 "ipv6[gif,Generic Tunnel Interface] in this document for details."
-msgstr ""
+msgstr "man:gif[4] 接口以通用方式实现 IPv[46]-over-IPv[46] 隧道，涵盖了规范中所述的“配置隧道”。详情请参阅本文档中的 crossref:ipv6[gif,通用隧道接口]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:85
+#, fuzzy
 msgid "RFC1981: Path MTU Discovery for IPv6"
-msgstr ""
+msgstr "RFC1981：IPv6 路径 MTU 发现"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:86
+#, fuzzy
 msgid "RFC2080: RIPng for IPv6"
-msgstr ""
+msgstr "RFC2080：IPv6 的 RIPng"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:88
+#, fuzzy
 msgid "usr.sbin/route6d support this."
-msgstr ""
+msgstr "usr.sbin/route6d 支持此功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:90
+#, fuzzy
 msgid "RFC2292: Advanced Sockets API for IPv6"
-msgstr ""
+msgstr "RFC2292：IPv6 高级套接字 API"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:92
+#, fuzzy
 msgid ""
 "For supported library functions/kernel APIs, see [.filename]#sys/netinet6/"
 "ADVAPI#."
-msgstr ""
+msgstr "支持的库函数和内核 API，请参阅 [.filename]#sys/netinet6/ADVAPI#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:94
+#, fuzzy
 msgid "RFC2362: Protocol Independent Multicast-Sparse Mode (PIM-SM)"
-msgstr ""
+msgstr "RFC2362：协议无关组播稀疏模式（PIM-SM）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:96
+#, fuzzy
 msgid ""
 "RFC2362 defines packet formats for PIM-SM. [.filename]#draft-ietf-pim-"
 "ipv6-01.txt# is written based on this."
-msgstr ""
+msgstr "RFC2362 定义了 PIM-SM 的数据包格式。[.filename]#draft-ietf-pim-ipv6-01.txt# 是基于该 RFC 编写的。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:98
+#, fuzzy
 msgid "RFC2373: IPv6 Addressing Architecture"
-msgstr ""
+msgstr "RFC2373：IPv6 寻址体系结构"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:100
+#, fuzzy
 msgid ""
 "supports node required addresses, and conforms to the scope requirement."
-msgstr ""
+msgstr "支持节点必需地址，并符合作用域要求。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:102
+#, fuzzy
 msgid "RFC2374: An IPv6 Aggregatable Global Unicast Address Format"
-msgstr ""
+msgstr "RFC2374：IPv6 可聚合全局单播地址格式"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:104
+#, fuzzy
 msgid "supports 64-bit length of Interface ID."
-msgstr ""
+msgstr "支持 64 位长度的接口 ID。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:106
+#, fuzzy
 msgid "RFC2375: IPv6 Multicast Address Assignments"
-msgstr ""
+msgstr "RFC2375：IPv6 组播地址分配"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:108
+#, fuzzy
 msgid "Userland applications use the well-known addresses assigned in the RFC."
-msgstr ""
+msgstr "用户空间应用程序使用 RFC 中分配的众所周知地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:110
+#, fuzzy
 msgid "RFC2428: FTP Extensions for IPv6 and NATs"
-msgstr ""
+msgstr "RFC2428：面向 IPv6 和 NAT 的 FTP 扩展"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:114
+#, fuzzy
 msgid "RFC2460: IPv6 specification"
-msgstr ""
+msgstr "RFC2460：IPv6 规范"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:115
+#, fuzzy
 msgid "RFC2461: Neighbor discovery for IPv6"
-msgstr ""
+msgstr "RFC2461：IPv6 邻居发现"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:117
+#, fuzzy
 msgid ""
 "See crossref:ipv6[neighbor-discovery,Neighbor Discovery] in this document "
 "for details."
-msgstr ""
+msgstr "详情请参阅本文档中的 crossref:ipv6[neighbor-discovery,邻居发现]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:119
+#, fuzzy
 msgid "RFC2462: IPv6 Stateless Address Autoconfiguration"
-msgstr ""
+msgstr "RFC2462：IPv6 无状态地址自动配置"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:121
+#, fuzzy
 msgid "See crossref:ipv6[ipv6-pnp,Plug and Play] in this document for details."
-msgstr ""
+msgstr "详情请参阅本文档中的 crossref:ipv6[ipv6-pnp,即插即用]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:123
+#, fuzzy
 msgid "RFC2463: ICMPv6 for IPv6 specification"
-msgstr ""
+msgstr "RFC2463：IPv6 规范中的 ICMPv6"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:125
+#, fuzzy
 msgid "See crossref:ipv6[icmpv6,ICMPv6] in this document for details."
-msgstr ""
+msgstr "详情请参阅本文档中的 crossref:ipv6[icmpv6,ICMPv6]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:127
+#, fuzzy
 msgid "RFC2464: Transmission of IPv6 Packets over Ethernet Networks"
-msgstr ""
+msgstr "RFC2464：在以太网网络上传输 IPv6 数据包"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:128
+#, fuzzy
 msgid "RFC2465: MIB for IPv6: Textual Conventions and General Group"
-msgstr ""
+msgstr "RFC2465：IPv6 的 MIB：文本约定和通用组"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:130
+#, fuzzy
 msgid ""
 "Necessary statistics are gathered by the kernel. Actual IPv6 MIB support is "
 "provided as a patchkit for ucd-snmp."
-msgstr ""
+msgstr "内核会收集必要的统计数据。实际的 IPv6 MIB 支持通过 ucd-snmp 的补丁包提供。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:132
+#, fuzzy
 msgid "RFC2466: MIB for IPv6: ICMPv6 group"
-msgstr ""
+msgstr "RFC2466：IPv6 的 MIB：ICMPv6 组"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:134
+#, fuzzy
 msgid ""
 "Necessary statistics are gathered by the kernel. Actual IPv6 MIB support is "
 "provided as patchkit for ucd-snmp."
-msgstr ""
+msgstr "内核会收集必要的统计数据。实际的 IPv6 MIB 支持通过 ucd-snmp 的补丁包提供。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:136
+#, fuzzy
 msgid "RFC2467: Transmission of IPv6 Packets over FDDI Networks"
-msgstr ""
+msgstr "RFC2467：在 FDDI 网络上传输 IPv6 数据包"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:137
+#, fuzzy
 msgid "RFC2497: Transmission of IPv6 packet over ARCnet Networks"
-msgstr ""
+msgstr "RFC2497：在 ARCnet 网络上传输 IPv6 数据包"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:138
+#, fuzzy
 msgid "RFC2553: Basic Socket Interface Extensions for IPv6"
-msgstr ""
+msgstr "RFC2553：IPv6 基本套接字接口扩展"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:141
+#, fuzzy
 msgid ""
 "IPv4 mapped address (3.7) and special behavior of IPv6 wildcard bind socket "
 "(3.8) are supported. See crossref:ipv6[ipv6-wildcard-socket,IPv4 Mapped "
 "Address and IPv6 Wildcard Socket] in this document for details."
-msgstr ""
+msgstr "支持 IPv4 映射地址（3.7）和 IPv6 通配符绑定套接字的特殊行为（3.8）。详情请参阅本文档中的 crossref:ipv6[ipv6-wildcard-socket,IPv4 映射地址和 IPv6 通配符套接字]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:143
+#, fuzzy
 msgid "RFC2675: IPv6 Jumbograms"
-msgstr ""
+msgstr "RFC2675：IPv6 超大数据报"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:145
+#, fuzzy
 msgid ""
 "See crossref:ipv6[ipv6-jumbo,Jumbo Payload] in this document for details."
-msgstr ""
+msgstr "详情请参阅本文档中的 crossref:ipv6[ipv6-jumbo,超大负载]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:147
+#, fuzzy
 msgid "RFC2710: Multicast Listener Discovery for IPv6"
-msgstr ""
+msgstr "RFC2710：IPv6 组播侦听者发现"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:148
+#, fuzzy
 msgid "RFC2711: IPv6 router alert option"
-msgstr ""
+msgstr "RFC2711：IPv6 路由器警告选项"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:149
+#, fuzzy
 msgid ""
 "[.filename]#draft-ietf-ipngwg-router-renum-08#: Router renumbering for IPv6"
-msgstr ""
+msgstr "[.filename]#draft-ietf-ipngwg-router-renum-08#：IPv6 路由器重新编号"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:150
+#, fuzzy
 msgid ""
 "[.filename]#draft-ietf-ipngwg-icmp-namelookups-02#: IPv6 Name Lookups "
 "Through ICMP"
-msgstr ""
+msgstr "[.filename]#draft-ietf-ipngwg-icmp-namelookups-02#：通过 ICMP 查找 IPv6 名称"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:151
+#, fuzzy
 msgid ""
 "[.filename]#draft-ietf-ipngwg-icmp-name-lookups-03#: IPv6 Name Lookups "
 "Through ICMP"
-msgstr ""
+msgstr "[.filename]#draft-ietf-ipngwg-icmp-name-lookups-03#：通过 ICMP 查找 IPv6 名称"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:152
+#, fuzzy
 msgid "[.filename]#draft-ietf-pim-ipv6-01.txt#: PIM for IPv6"
-msgstr ""
+msgstr "[.filename]#draft-ietf-pim-ipv6-01.txt#：IPv6 的 PIM"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:154
+#, fuzzy
 msgid ""
 "man:pim6dd[8] implements dense mode. man:pim6sd[8] implements sparse mode."
-msgstr ""
+msgstr "man:pim6dd[8] 实现密集模式。man:pim6sd[8] 实现稀疏模式。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:156
+#, fuzzy
 msgid ""
 "[.filename]#draft-itojun-ipv6-tcp-to-anycast-00#: Disconnecting TCP "
 "connection toward IPv6 anycast address"
-msgstr ""
+msgstr "[.filename]#draft-itojun-ipv6-tcp-to-anycast-00#：断开通往 IPv6 任播地址的 TCP 连接"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:157
+#, fuzzy
 msgid "[.filename]#draft-yamamoto-wideipv6-comm-model-00#"
-msgstr ""
+msgstr "[.filename]#draft-yamamoto-wideipv6-comm-model-00#"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:159
+#, fuzzy
 msgid ""
 "See crossref:ipv6[ipv6-sas,Source Address Selection] in this document for "
 "details."
-msgstr ""
+msgstr "详情请参阅本文档中的 crossref:ipv6[ipv6-sas,源地址选择]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:161
+#, fuzzy
 msgid ""
 "[.filename]#draft-ietf-ipngwg-scopedaddr-format-00.txt#: An Extension of "
 "Format for IPv6 Scoped Addresses"
-msgstr ""
+msgstr "[.filename]#draft-ietf-ipngwg-scopedaddr-format-00.txt#：IPv6 作用域地址格式扩展"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Neighbor Discovery"
-msgstr ""
+msgstr "邻居发现"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:168
+#, fuzzy
 msgid ""
 "Neighbor Discovery is fairly stable.  Currently Address Resolution, "
 "Duplicated Address Detection, and Neighbor Unreachability Detection are "
 "supported.  In the near future we will be adding Proxy Neighbor "
 "Advertisement support in the kernel and Unsolicited Neighbor Advertisement "
 "transmission command as admin tool."
-msgstr ""
+msgstr "邻居发现功能相当稳定。目前支持地址解析、重复地址检测和邻居不可达检测。不久后，我们将在内核中添加代理邻居通告支持，并在管理工具中添加发送非请求邻居通告的命令。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:173
+#, fuzzy
 msgid ""
 "If DAD fails, the address will be marked \"duplicated\" and message will be "
 "generated to syslog (and usually to console).  The \"duplicated\" mark can "
 "be checked with man:ifconfig[8].  It is administrators' responsibility to "
 "check for and recover from DAD failures.  The behavior should be improved in "
 "the near future."
-msgstr ""
+msgstr "如果 DAD 失败，该地址将被标记为“duplicated”，并向 syslog（通常也向控制台）发送消息。可使用 man:ifconfig[8] 检查“duplicated”标记。管理员有责任检查并处理 DAD 故障。此行为预计会在不久后得到改进。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:177
+#, fuzzy
 msgid ""
 "Some of the network driver loops multicast packets back to itself, even if "
 "instructed not to do so (especially in promiscuous mode).  In such cases DAD "
@@ -402,49 +459,55 @@ msgid ""
 "#if condition marked \"heuristics\" in sys/netinet6/nd6_nbr.c:"
 "nd6_dad_timer() as workaround (note that the code fragment in \"heuristics\" "
 "section is not spec conformant)."
-msgstr ""
+msgstr "某些网络驱动程序会将组播数据包回送给自身，即使已指示其不要这样做（尤其是在混杂模式下）。在这种情况下，DAD 可能会失败，因为 DAD 引擎会看到入站 NS 数据包（实际上来自节点自身），并将其视为地址重复的迹象。可将 sys/netinet6/nd6_nbr.c:nd6_dad_timer() 中标记为 \"heuristics\" 的 #if 条件作为变通方案（请注意，“heuristics”部分中的代码片段不符合规范）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:179
+#, fuzzy
 msgid ""
 "Neighbor Discovery specification (RFC2461) does not talk about neighbor "
 "cache handling in the following cases:"
-msgstr ""
+msgstr "邻居发现规范（RFC2461）没有说明以下情况下如何处理邻居缓存："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:181
+#, fuzzy
 msgid ""
 "when there was no neighbor cache entry, node received unsolicited RS/NS/NA/"
 "redirect packet without link-layer address"
-msgstr ""
+msgstr "邻居缓存中没有条目时，节点收到不含链路层地址的非请求 RS/NS/NA/redirect 数据包"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:182
+#, fuzzy
 msgid ""
 "neighbor cache handling on medium without link-layer address (we need a "
 "neighbor cache entry for IsRouter bit)"
-msgstr ""
+msgstr "在没有链路层地址的介质上处理邻居缓存（我们需要一个邻居缓存条目来记录 IsRouter 位）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:185
+#, fuzzy
 msgid ""
 "For first case, we implemented workaround based on discussions on IETF "
 "ipngwg mailing list.  For more details, see the comments in the source code "
 "and email thread started from (IPng 7155), dated Feb 6 1999."
-msgstr ""
+msgstr "对于第一种情况，我们根据 IETF ipngwg 邮件列表中的讨论实现了变通方案。详情请参阅源代码注释，以及始于 1999 年 2 月 6 日、主题为 (IPng 7155) 的邮件讨论串。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:188
+#, fuzzy
 msgid ""
 "IPv6 on-link determination rule (RFC2461) is quite different from "
 "assumptions in BSD network code.  At this moment, no on-link determination "
 "rule is supported where default router list is empty (RFC2461, section 5.2, "
 "last sentence in 2nd paragraph - note that the spec misuse the word \"host\" "
 "and \"node\" in several places in the section)."
-msgstr ""
+msgstr "IPv6 的链路上判定规则（RFC2461）与 BSD 网络代码中的假设大不相同。目前，当默认路由器列表为空时，不支持链路上判定规则（RFC2461 第 5.2 节第 2 段最后一句——请注意，该规范在本节的多个位置误用了“host”和“node”这两个词）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:193
+#, fuzzy
 msgid ""
 "To avoid possible DoS attacks and infinite loops, only 10 options on ND "
 "packet is accepted now.  Therefore, if you have 20 prefix options attached "
@@ -452,60 +515,65 @@ msgid ""
 "please ask it on FREEBSD-CURRENT mailing list and/or modify nd6_maxndopt in "
 "[.filename]#sys/netinet6/nd6.c#.  If there are high demands we may provide "
 "sysctl knob for the variable."
-msgstr ""
+msgstr "为避免可能的 DoS 攻击和无限循环，目前每个 ND 数据包最多接受 10 个选项。因此，如果 RA 中附带 20 个前缀选项，则只会识别前 10 个前缀。如果这给您带来困扰，请在 FREEBSD-CURRENT 邮件列表中提出，和/或修改 [.filename]#sys/netinet6/nd6.c# 中的 nd6_maxndopt。如果需求量很大，我们可能会为该变量提供 sysctl 开关。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scope Index"
-msgstr ""
+msgstr "作用域索引"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:200
+#, fuzzy
 msgid ""
 "IPv6 uses scoped addresses.  Therefore, it is very important to specify "
 "scope index (interface index for link-local address, or site index for site-"
 "local address) with an IPv6 address.  Without scope index, scoped IPv6 "
 "address is ambiguous to the kernel, and kernel will not be able to determine "
 "the outbound interface for a packet."
-msgstr ""
+msgstr "IPv6 使用带作用域的地址。因此，指定 IPv6 地址时提供作用域索引（链路本地地址的接口索引，或站点本地地址的站点索引）非常重要。没有作用域索引时，内核无法确定带作用域的 IPv6 地址所指的对象，也就无法确定数据包的出站接口。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:205
+#, fuzzy
 msgid ""
 "Ordinary userland applications should use advanced API (RFC2292) to specify "
 "scope index, or interface index.  For similar purpose, sin6_scope_id member "
 "in sockaddr_in6 structure is defined in RFC2553.  However, the semantics for "
 "sin6_scope_id is rather vague.  If you care about portability of your "
 "application, we suggest you to use advanced API rather than sin6_scope_id."
-msgstr ""
+msgstr "普通用户空间应用程序应使用高级 API（RFC2292）指定作用域索引或接口索引。出于类似目的，RFC2553 在 sockaddr_in6 结构中定义了 sin6_scope_id 成员。不过，sin6_scope_id 的语义相当模糊。如果您关心应用程序的可移植性，我们建议使用高级 API，而不是 sin6_scope_id。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:208
+#, fuzzy
 msgid ""
 "In the kernel, an interface index for link-local scoped address is embedded "
 "into 2nd 16bit-word (3rd and 4th byte) in IPv6 address.  For example, you "
 "may see something like:"
-msgstr ""
+msgstr "在内核中，链路本地作用域地址的接口索引嵌入 IPv6 地址的第 2 个 16 位字（第 3 和第 4 个字节）。例如，您可能会看到如下地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\tfe80:1::200:f8ff:fe01:6317\n"
-msgstr ""
+msgstr "\tfe80:1::200:f8ff:fe01:6317\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:217
+#, fuzzy
 msgid ""
 "in the routing table and interface address structure (struct in6_ifaddr).  "
 "The address above is a link-local unicast address which belongs to a network "
 "interface whose interface identifier is 1.  The embedded index enables us to "
 "identify IPv6 link local addresses over multiple interfaces effectively and "
 "with only a little code change."
-msgstr ""
+msgstr "在路由表和接口地址结构（struct in6_ifaddr）中。上面的地址是一个链路本地单播地址，属于接口标识符为 1 的网络接口。嵌入的索引使我们能够有效识别多个接口上的 IPv6 链路本地地址，且只需少量代码改动。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:222
+#, fuzzy
 msgid ""
 "Routing daemons and configuration programs, like man:route6d[8] and man:"
 "ifconfig[8], will need to manipulate the \"embedded\" scope index.  These "
@@ -513,10 +581,11 @@ msgid ""
 "kernel API will return IPv6 addresses with 2nd 16bit-word filled in.  The "
 "APIs are for manipulating kernel internal structure.  Programs that use "
 "these APIs have to be prepared about differences in kernels anyway."
-msgstr ""
+msgstr "路由守护进程和配置程序（如 man:route6d[8] 和 man:ifconfig[8]）需要处理“嵌入式”作用域索引。这些程序使用路由套接字和 ioctl（如 SIOCGIFADDR_IN6），内核 API 会返回填入第 2 个 16 位字的 IPv6 地址。这些 API 用于操作内核内部结构。无论如何，使用这些 API 的程序都必须能够应对不同内核之间的差异。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:229
+#, fuzzy
 msgid ""
 "When you specify scoped address to the command line, NEVER write the "
 "embedded form (such as ff02:1::1 or fe80:2::fedc).  This is not supposed to "
@@ -526,75 +595,81 @@ msgid ""
 "interface, that command is not ready to accept scoped address.  This may "
 "seem to be opposite from IPv6's premise to support \"dentist office\" "
 "situation.  We believe that specifications need some improvements for this."
-msgstr ""
+msgstr "在命令行中指定带作用域的地址时，切勿使用嵌入式形式（例如 ff02:1::1 或 fe80:2::fedc）。这不应当起作用。始终使用标准形式（如 ff02::1 或 fe80::fedc），并通过命令行选项指定接口（如 `ping -6 -I ne0 ff02::1`）。一般来说，如果某个命令没有用于指定出站接口的命令行选项，就尚不能接受带作用域的地址。这看起来似乎与 IPv6 支持“牙医诊所”场景的初衷相悖。我们认为规范还需要进一步改进。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:233
+#, fuzzy
 msgid ""
 "Some of the userland tools support extended numeric IPv6 syntax, as "
 "documented in [.filename]#draft-ietf-ipngwg-scopedaddr-format-00.txt#.  You "
 "can specify outgoing link, by using name of the outgoing interface like "
 "\"fe80::1%ne0\".  This way you will be able to specify link-local scoped "
 "address without much trouble."
-msgstr ""
+msgstr "一些用户空间工具支持扩展的 IPv6 数字表示法，详见 [.filename]#draft-ietf-ipngwg-scopedaddr-format-00.txt#。您可以使用出站接口的名称来指定出站链路，例如 \"fe80::1%ne0\"。这样便可轻松指定链路本地作用域地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:236
+#, fuzzy
 msgid ""
 "To use this extension in your program, you will need to use man:"
 "getaddrinfo[3], and man:getnameinfo[3] with NI_WITHSCOPEID.  The "
 "implementation currently assumes 1-to-1 relationship between a link and an "
 "interface, which is stronger than what specs say."
-msgstr ""
+msgstr "要在程序中使用此扩展，需要将 man:getaddrinfo[3] 和 man:getnameinfo[3] 与 NI_WITHSCOPEID 配合使用。目前的实现假定链路与接口一一对应，这比规范中的要求更严格。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Plug and Play"
-msgstr ""
+msgstr "即插即用"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:244
+#, fuzzy
 msgid ""
 "Most of the IPv6 stateless address autoconfiguration is implemented in the "
 "kernel.  Neighbor Discovery functions are implemented in the kernel as a "
 "whole.  Router Advertisement (RA) input for hosts is implemented in the "
 "kernel.  Router Solicitation (RS) output for endhosts, RS input for routers, "
 "and RA output for routers are implemented in the userland."
-msgstr ""
+msgstr "IPv6 无状态地址自动配置的大部分功能都在内核中实现。邻居发现功能整体上在内核中实现。面向主机的路由器通告（RA）输入在内核中实现。面向终端主机的路由器请求（RS）输出、面向路由器的 RS 输入，以及面向路由器的 RA 输出则在用户空间中实现。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Assignment of link-local, and special addresses"
-msgstr ""
+msgstr "链路本地地址和特殊地址的分配"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:250
+#, fuzzy
 msgid ""
 "IPv6 link-local address is generated from IEEE802 address (Ethernet MAC "
 "address).  Each of interface is assigned an IPv6 link-local address "
 "automatically, when the interface becomes up (IFF_UP).  Also, direct route "
 "for the link-local address is added to routing table."
-msgstr ""
+msgstr "IPv6 链路本地地址根据 IEEE802 地址（以太网 MAC 地址）生成。接口启用（IFF_UP）时，会自动分配一个 IPv6 链路本地地址。此外，路由表中还会添加该链路本地地址的直连路由。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:252
+#, fuzzy
 msgid "Here is an output of netstat command:"
-msgstr ""
+msgstr "以下是 netstat 命令的输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Internet6:\n"
 "Destination                   Gateway                   Flags      Netif Expire\n"
 "fe80:1::%ed0/64               link#1                    UC          ed0\n"
 "fe80:2::%ep0/64               link#2                    UC          ep0\n"
-msgstr ""
+msgstr "Internet6:\nDestination                   Gateway                   Flags      Netif Expire\nfe80:1::%ed0/64               link#1                    UC          ed0\nfe80:2::%ep0/64               link#2                    UC          ep0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:264
+#, fuzzy
 msgid ""
 "Interfaces that has no IEEE802 address (pseudo interfaces like tunnel "
 "interfaces, or ppp interfaces) will borrow IEEE802 address from other "
@@ -602,18 +677,20 @@ msgid ""
 "IEEE802 hardware attached, a last resort pseudo-random value, MD5(hostname), "
 "will be used as source of link-local address.  If it is not suitable for "
 "your usage, you will need to configure the link-local address manually."
-msgstr ""
+msgstr "没有 IEEE802 地址的接口（如隧道接口或 ppp 接口等伪接口）会尽可能借用其他接口（如以太网接口）的 IEEE802 地址。如果没有连接 IEEE802 硬件，最后会使用伪随机值 MD5(hostname) 作为链路本地地址的来源。如果这不适合你的用途，则需要手动配置链路本地地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:267
+#, fuzzy
 msgid ""
 "If an interface is not capable of handling IPv6 (such as lack of multicast "
 "support), link-local address will not be assigned to that interface.  See "
 "section 2 for details."
-msgstr ""
+msgstr "如果某个接口无法处理 IPv6（例如不支持多播），则不会为该接口分配链路本地地址。详情请参见第 2 节。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:271
+#, fuzzy
 msgid ""
 "Each interface joins the solicited multicast address and the link-local all-"
 "nodes multicast addresses (e.g., fe80::1:ff01:6317 and ff02::1, "
@@ -621,25 +698,27 @@ msgid ""
 "local address, the loopback address (::1) will be assigned to the loopback "
 "interface.  Also, ::1/128 and ff01::/32 are automatically added to routing "
 "table, and loopback interface joins node-local multicast group ff01::1."
-msgstr ""
+msgstr "每个接口都会加入请求节点多播地址和链路本地所有节点多播地址（例如，在接口所连接的链路上分别为 fe80::1:ff01:6317 和 ff02::1）。除了链路本地地址外，还会为环回接口分配环回地址（::1）。此外，::1/128 和 ff01::/32 会自动添加到路由表中，环回接口也会加入节点本地多播组 ff01::1。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Stateless address autoconfiguration on Hosts"
-msgstr ""
+msgstr "主机上的无状态地址自动配置"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:276
+#, fuzzy
 msgid ""
 "In IPv6 specification, nodes are separated into two categories: _routers_ "
 "and _hosts_.  Routers forward packets addressed to others, hosts does not "
 "forward the packets. net.inet6.ip6.forwarding defines whether this node is "
 "router or host (router if it is 1, host if it is 0)."
-msgstr ""
+msgstr "在 IPv6 规范中，节点分为两类：__路由器__和__主机__。路由器会转发发往其他节点的数据包，而主机不会转发数据包。net.inet6.ip6.forwarding 定义此节点是路由器还是主机（值为 1 时是路由器，值为 0 时是主机）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:285
+#, fuzzy
 msgid ""
 "When a host hears Router Advertisement from the router, a host may "
 "autoconfigure itself by stateless address autoconfiguration.  This behavior "
@@ -653,48 +732,54 @@ msgid ""
 "generates Router Solicitation whenever necessary, and it works great for "
 "nomadic usage (notebooks/laptops).  If one wishes to ignore Router "
 "Advertisements, use sysctl to set net.inet6.ip6.accept_rtadv to 0."
-msgstr ""
+msgstr "主机收到路由器发送的路由器通告后，可以通过无状态地址自动配置来自动配置自身。net.inet6.ip6.accept_rtadv 可控制此行为（设为 1 时，主机会自动配置自身）。自动配置会为接收通告的接口添加网络地址前缀（通常是全局地址前缀），并配置默认路由。路由器会定期生成路由器通告数据包。主机可以发送路由器请求，要求相邻路由器生成路由器通告数据包。要随时生成路由器请求数据包，请使用 __rtsol__ 命令。也可以使用 man:rtsold[8] 守护进程。man:rtsold[8] 会在需要时生成路由器请求，非常适合移动场景（笔记本电脑）。如果要忽略路由器通告，请使用 sysctl 将 net.inet6.ip6.accept_rtadv 设为 0。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:287
+#, fuzzy
 msgid ""
 "To generate Router Advertisement from a router, use the man:rtadvd[8] daemon."
-msgstr ""
+msgstr "要让路由器生成路由器通告，请使用 man:rtadvd[8] 守护进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:289
+#, fuzzy
 msgid ""
 "Note that, IPv6 specification assumes the following items, and nonconforming "
 "cases are left unspecified:"
-msgstr ""
+msgstr "请注意，IPv6 规范假定以下事项成立，对于不符合这些假定的情况则未作规定："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:291
+#, fuzzy
 msgid "Only hosts will listen to router advertisements"
-msgstr ""
+msgstr "只有主机会监听路由器通告"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:292
+#, fuzzy
 msgid "Hosts have single network interface (except loopback)"
-msgstr ""
+msgstr "主机只有一个网络接口（环回接口除外）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:295
+#, fuzzy
 msgid ""
 "Therefore, this is unwise to enable net.inet6.ip6.accept_rtadv on routers, "
 "or multi-interface host.  A misconfigured node can behave strange "
 "(nonconforming configuration allowed for those who would like to do some "
 "experiments)."
-msgstr ""
+msgstr "因此，不宜在路由器或多接口主机上启用 net.inet6.ip6.accept_rtadv。配置错误的节点可能会出现异常行为（规范允许不符合要求的配置，以供有意进行实验的用户使用）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:297
+#, fuzzy
 msgid "To summarize the sysctl knob:"
-msgstr ""
+msgstr "sysctl 参数的汇总如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\taccept_rtadv\tforwarding\trole of the node\n"
 "\t---\t\t---\t\t---\n"
@@ -707,143 +792,161 @@ msgid ""
 "\t\t\t\t\tout-of-scope)\n"
 "\t1\t\t1\t\tinvalid, or experimental\n"
 "\t\t\t\t\t(out-of-scope of spec)\n"
-msgstr ""
+msgstr "\taccept_rtadv\tforwarding\t节点角色\n\t---\t\t---\t\t---\n\t0\t\t0\t\t主机（需手动配置）\n\t0\t\t1\t\t路由器\n\t1\t\t0\t\t自动配置的主机\n\t\t\t\t\t（规范假定主机只有一个接口；\n\t\t\t\t\t具有多个接口的自动配置主机\n\t\t\t\t\t不在规范范围内）\n\t1\t\t1\t\t无效或实验性配置\n\t\t\t\t\t（不在规范范围内）\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:316
+#, fuzzy
 msgid ""
 "RFC2462 has validation rule against incoming RA prefix information option, "
 "in 5.5.3 (e).  This is to protect hosts from malicious (or misconfigured) "
 "routers that advertise very short prefix lifetime.  There was an update from "
 "Jim Bound to ipngwg mailing list (look for \"(ipng 6712)\" in the archive) "
 "and it is implemented Jim's update."
-msgstr ""
+msgstr "RFC2462 第 5.5.3 (e) 节规定了针对收到的路由器通告前缀信息选项的验证规则，以保护主机免受通告极短前缀生存期的恶意（或配置错误）路由器影响。Jim Bound 曾向 ipngwg 邮件列表发送更新（可在存档中搜索“(ipng 6712)”），本实现采用了 Jim 的更新。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:318
+#, fuzzy
 msgid ""
 "See crossref:ipv6[neighbor-discovery,Neighbor Discovery] in the document for "
 "relationship between DAD and autoconfiguration."
-msgstr ""
+msgstr "关于 DAD 与自动配置之间的关系，请参见文档中的 crossref:ipv6[neighbor-discovery,邻居发现]。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Generic Tunnel Interface"
-msgstr ""
+msgstr "通用隧道接口"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:324
+#, fuzzy
 msgid ""
 "GIF (Generic InterFace) is a pseudo interface for configured tunnel.  "
 "Details are described in man:gif[4]. Currently"
-msgstr ""
+msgstr "GIF（通用接口）是用于配置隧道的伪接口。详情请参见 man:gif[4]。目前"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:326
+#, fuzzy
 msgid "v6 in v6"
-msgstr ""
+msgstr "IPv6 内封装 IPv6"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:327
+#, fuzzy
 msgid "v6 in v4"
-msgstr ""
+msgstr "IPv4 内封装 IPv6"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:328
+#, fuzzy
 msgid "v4 in v6"
-msgstr ""
+msgstr "IPv6 内封装 IPv4"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:329
+#, fuzzy
 msgid "v4 in v4"
-msgstr ""
+msgstr "IPv4 内封装 IPv4"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:334
+#, fuzzy
 msgid ""
 "are available. Use man:gifconfig[8] to assign physical (outer) source and "
 "destination address to gif interfaces.  Configuration that uses same address "
 "family for inner and outer IP header (v4 in v4, or v6 in v6) is dangerous.  "
 "It is very easy to configure interfaces and routing tables to perform "
 "infinite level of tunneling.  _Please be warned_."
-msgstr ""
+msgstr "均可使用。使用 man:gifconfig[8] 为 gif 接口指定物理（外层）源地址和目标地址。内层和外层 IP 标头使用相同地址族的配置（IPv4 内封装 IPv4，或 IPv6 内封装 IPv6）很危险。接口和路由表很容易被配置成无限层隧道。__请注意这一点__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:337
+#, fuzzy
 msgid ""
 "gif can be configured to be ECN-friendly.  See crossref:ipv6[ipsec-ecn,ECN "
 "Consideration on IPsec Tunnels] for ECN-friendliness of tunnels, and man:"
 "gif[4] for how to configure."
-msgstr ""
+msgstr "gif 可以配置为支持 ECN。有关隧道对 ECN 的支持，请参见 crossref:ipv6[ipsec-ecn,IPsec 隧道中的 ECN 注意事项]；有关配置方法，请参见 man:gif[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:340
+#, fuzzy
 msgid ""
 "If you would like to configure an IPv4-in-IPv6 tunnel with gif interface, "
 "read man:gif[4] carefully.  You will need to remove IPv6 link-local address "
 "automatically assigned to the gif interface."
-msgstr ""
+msgstr "如果要使用 gif 接口配置 IPv6 内封装 IPv4 隧道，请仔细阅读 man:gif[4]。你需要移除自动分配给 gif 接口的 IPv6 链路本地地址。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Source Address Selection"
-msgstr ""
+msgstr "源地址选择"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:346
+#, fuzzy
 msgid ""
 "Current source selection rule is scope oriented (there are some exceptions - "
 "see below).  For a given destination, a source IPv6 address is selected by "
 "the following rule:"
-msgstr ""
+msgstr "当前的源地址选择规则以作用域为依据（有一些例外情况，见下文）。对于给定的目标地址，源 IPv6 地址按以下规则选择："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:348
+#, fuzzy
 msgid ""
 "If the source address is explicitly specified by the user (e.g., via the "
 "advanced API), the specified address is used."
-msgstr ""
+msgstr "如果用户明确指定了源地址（例如通过高级 API），则使用指定的地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:349
+#, fuzzy
 msgid ""
 "If there is an address assigned to the outgoing interface (which is usually "
 "determined by looking up the routing table) that has the same scope as the "
 "destination address, the address is used."
-msgstr ""
+msgstr "如果出接口上有一个与目标地址作用域相同的地址（通常通过查询路由表确定出接口），则使用该地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:351
+#, fuzzy
 msgid "This is the most typical case."
-msgstr ""
+msgstr "这是最常见的情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:352
+#, fuzzy
 msgid ""
 "If there is no address that satisfies the above condition, choose a global "
 "address assigned to one of the interfaces on the sending node."
-msgstr ""
+msgstr "如果没有地址满足上述条件，则选择发送节点某个接口上的全局地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:353
+#, fuzzy
 msgid ""
 "If there is no address that satisfies the above condition, and destination "
 "address is site local scope, choose a site local address assigned to one of "
 "the interfaces on the sending node."
-msgstr ""
+msgstr "如果没有地址满足上述条件，且目标地址属于站点本地作用域，则选择发送节点某个接口上的站点本地地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:354
+#, fuzzy
 msgid ""
 "If there is no address that satisfies the above condition, choose the "
 "address associated with the routing table entry for the destination. This is "
 "the last resort, which may cause scope violation."
-msgstr ""
+msgstr "如果没有地址满足上述条件，则选择与目标地址对应路由表项关联的地址。这是最后的手段，可能导致作用域违规。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:360
+#, fuzzy
 msgid ""
 "For instance, ::1 is selected for ff01::1, fe80:1::200:f8ff:fe01:6317 for "
 "fe80:1::2a0:24ff:feab:839b (note that embedded interface index - described "
@@ -854,10 +957,11 @@ msgid ""
 "and 2001:0DB8:9:124:200:f8ff:fe01:6317 are given to the outgoing interface. "
 "2001:0DB8:808:1:200:f8ff:fe01:6317 is chosen as the source for the "
 "destination 2001:0DB8:800::1."
-msgstr ""
+msgstr "例如，目标为 ff01::1 时选择 ：:1；目标为 fe80:1::2a0:24ff:feab:839b 时选择 fe80:1::200:f8ff:fe01:6317（请注意，crossref:ipv6[ipv6-scope-index,作用域索引] 中所述的嵌入式接口索引有助于选择正确的源地址。这些嵌入式索引不会出现在网络传输的数据中）。如果出接口上有多个同一作用域的地址，则按最长匹配原则选择源地址（规则 3）。假设出接口配置了 2001:0DB8:808:1:200:f8ff:fe01:6317 和 2001:0DB8:9:124:200:f8ff:fe01:6317，那么目标地址为 2001:0DB8:800::1 时，会选择 2001:0DB8:808:1:200:f8ff:fe01:6317 作为源地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:367
+#, fuzzy
 msgid ""
 "Note that the above rule is not documented in the IPv6 spec. It is "
 "considered \"up to implementation\" item.  There are some cases where we do "
@@ -866,10 +970,11 @@ msgid ""
 "for Neighbor Advertisement.  Under the spec (RFC2461 7.2.2) NA's source "
 "should be the target address of the corresponding NS's target.  In this case "
 "we follow the spec rather than the above longest-match rule."
-msgstr ""
+msgstr "请注意，上述规则未在 IPv6 规范中说明，被视为“由实现决定”的事项。在某些情况下不会使用上述规则。例如，对于已建立的 TCP 会话，会使用 tcb 中保存的地址作为源地址。另一个例子是邻居通告的源地址。根据规范（RFC2461 7.2.2），邻居通告的源地址应为对应邻居请求的目标地址。在这种情况下，我们遵循规范，而不采用上述最长匹配规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:373
+#, fuzzy
 msgid ""
 "For new connections (when rule 1 does not apply), deprecated addresses "
 "(addresses with preferred lifetime = 0) will not be chosen as source address "
@@ -881,68 +986,75 @@ msgid ""
 "to 0.  The issue related to deprecated address is described in RFC2462 5.5.4 "
 "(NOTE: there is some debate underway in IETF ipngwg on how to use "
 "\"deprecated\" address)."
-msgstr ""
+msgstr "对于新连接（不适用规则 1 时），如果还有其他选择，则不会选择已弃用地址（首选生存期为 0 的地址）作为源地址。如果没有其他选择，则会将已弃用地址作为最后手段。如果有多个已弃用地址可选，则使用上述作用域规则从中选择。如果出于某些原因要禁止使用已弃用地址，请将 net.inet6.ip6.use_deprecated 配置为 0。RFC2462 5.5.4 节介绍了已弃用地址相关问题（注意：IETF ipngwg 正在讨论如何使用“已弃用”地址）。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Jumbo Payload"
-msgstr ""
+msgstr "超大载荷"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:379
+#, fuzzy
 msgid ""
 "The Jumbo Payload hop-by-hop option is implemented and can be used to send "
 "IPv6 packets with payloads longer than 65,535 octets.  But currently no "
 "physical interface whose MTU is more than 65,535 is supported, so such "
 "payloads can be seen only on the loopback interface (i.e., lo0)."
-msgstr ""
+msgstr "已实现逐跳超大载荷选项，可用于发送载荷超过 65,535 字节的 IPv6 数据包。但目前不支持 MTU 大于 65,535 的物理接口，因此只能在环回接口（即 lo0）上看到此类载荷。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:381
+#, fuzzy
 msgid ""
 "If you want to try jumbo payloads, you first have to reconfigure the kernel "
 "so that the MTU of the loopback interface is more than 65,535 bytes; add the "
 "following to the kernel configuration file:"
-msgstr ""
+msgstr "如果要尝试超大载荷，首先必须重新配置内核，使环回接口的 MTU 大于 65,535 字节；将以下内容添加到内核配置文件中："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:383
+#, fuzzy
 msgid "`options \"LARGE_LOMTU\" #To test jumbo payload`"
-msgstr ""
+msgstr "`options \"LARGE_LOMTU\" #To test jumbo payload`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:385
+#, fuzzy
 msgid "and recompile the new kernel."
-msgstr ""
+msgstr "然后重新编译内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:389
+#, fuzzy
 msgid ""
 "Then you can test jumbo payloads by the man:ping[8] command with -6, -b and -"
 "s options.  The -b option must be specified to enlarge the size of the "
 "socket buffer and the -s option specifies the length of the packet, which "
 "should be more than 65,535.  For example, type as follows:"
-msgstr ""
+msgstr "之后可以使用 man:ping[8] 命令及 -6、-b 和 -s 选项测试超大载荷。必须指定 -b 选项以增大套接字缓冲区，-s 选项用于指定数据包长度，该长度应大于 65,535。例如，输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ping -6 -b 70000 -s 68000 ::1\n"
-msgstr ""
+msgstr "% ping -6 -b 70000 -s 68000 ::1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:398
+#, fuzzy
 msgid ""
 "The IPv6 specification requires that the Jumbo Payload option must not be "
 "used in a packet that carries a fragment header.  If this condition is "
 "broken, an ICMPv6 Parameter Problem message must be sent to the sender.  "
 "specification is followed, but you cannot usually see an ICMPv6 error caused "
 "by this requirement."
-msgstr ""
+msgstr "IPv6 规范要求，携带分片标头的数据包不得使用超大载荷选项。如果违反此要求，必须向发送方发送 ICMPv6 参数问题消息。实现遵循了该规范，但通常无法看到由此要求触发的 ICMPv6 错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:402
+#, fuzzy
 msgid ""
 "When an IPv6 packet is received, the frame length is checked and compared to "
 "the length specified in the payload length field of the IPv6 header or in "
@@ -950,91 +1062,100 @@ msgid ""
 "than the latter, the packet is discarded and statistics are incremented.  "
 "You can see the statistics as output of man:netstat[8] command with `-s -p "
 "ip6' option:"
-msgstr ""
+msgstr "收到 IPv6 数据包时，会检查帧长度，并将其与 IPv6 标头的载荷长度字段指定的长度进行比较；如果存在超大载荷选项，也会与该选项中的值进行比较。如果前者小于后者，则丢弃该数据包并增加统计计数。可以使用 man:netstat[8] 命令的 `-s -p ip6' 选项查看统计信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:409
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% netstat -s -p ip6\n"
 "\t  ip6:\n"
 "\t\t(snip)\n"
 "\t\t1 with data size < data length\n"
-msgstr ""
+msgstr "% netstat -s -p ip6\n\t  ip6:\n\t\t（略）\n\t\t1 with data size < data length\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:413
+#, fuzzy
 msgid ""
 "So, kernel does not send an ICMPv6 error unless the erroneous packet is an "
 "actual Jumbo Payload, that is, its packet size is more than 65,535 bytes.  "
 "As described above, currently no physical interface with such a huge MTU is "
 "supported, so it rarely returns an ICMPv6 error."
-msgstr ""
+msgstr "因此，除非错误数据包确实是超大载荷数据包（即其大小超过 65,535 字节），否则内核不会发送 ICMPv6 错误。如上所述，目前不支持 MTU 如此之大的物理接口，因此很少会返回 ICMPv6 错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:416
+#, fuzzy
 msgid ""
 "TCP/UDP over jumbogram is not supported at this moment.  This is because we "
 "have no medium (other than loopback) to test this. Contact us if you need "
 "this."
-msgstr ""
+msgstr "目前不支持在超大数据报上运行 TCP/UDP。这是因为除了环回接口外，我们没有可用于测试的介质。如果你有此需求，请联系我们。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:419
+#, fuzzy
 msgid ""
 "IPsec does not work on jumbograms.  This is due to some specification twists "
 "in supporting AH with jumbograms (AH header size influences payload length, "
 "and this makes it real hard to authenticate inbound packet with jumbo "
 "payload option as well as AH)."
-msgstr ""
+msgstr "IPsec 无法用于超大数据报。这是因为使用 AH 支持超大数据报时存在一些规范上的复杂问题（AH 标头大小会影响载荷长度，因此很难对带有超大载荷选项和 AH 的入站数据包进行身份验证）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:423
+#, fuzzy
 msgid ""
 "There are fundamental issues in *BSD support for jumbograms.  We would like "
 "to address those, but we need more time to finalize these.  To name a few:"
-msgstr ""
+msgstr "*BSD 对超大数据报的支持存在一些根本性问题。我们希望解决这些问题，但还需要更多时间才能完成。举几个例子："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:427
+#, fuzzy
 msgid ""
 "mbuf pkthdr.len field is typed as \"int\" in 4.4BSD, so it will not hold "
 "jumbogram with len > 2G on 32bit architecture CPUs.  If we would like to "
 "support jumbogram properly, the field must be expanded to hold 4G + IPv6 "
 "header + link-layer header.  Therefore, it must be expanded to at least "
 "int64_t (u_int32_t is NOT enough)."
-msgstr ""
+msgstr "在 4.4BSD 中，mbuf pkthdr.len 字段的类型为 \"int\"，因此在 32 位架构 CPU 上无法存储长度大于 2G 的超大数据报。若要妥善支持超大数据报，该字段必须扩展，以容纳 4G + IPv6 标头 + 链路层标头。因此，该字段至少必须扩展为 int64_t（u_int32_t 不够）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:429
+#, fuzzy
 msgid ""
 "We mistakenly use \"int\" to hold packet length in many places. We need to "
 "convert them into larger integral type. It needs a great care, as we may "
 "experience overflow during packet length computation."
-msgstr ""
+msgstr "我们在许多地方错误地使用 \"int\" 保存数据包长度，需要将其转换为更大的整数类型。这需要格外谨慎，因为计算数据包长度时可能发生溢出。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:430
+#, fuzzy
 msgid ""
 "We mistakenly check for ip6_plen field of IPv6 header for packet payload "
 "length in various places. We should be checking mbuf pkthdr.len instead. "
 "ip6_input() will perform sanity check on jumbo payload option on input, and "
 "we can safely use mbuf pkthdr.len afterwards."
-msgstr ""
+msgstr "我们在多个地方错误地使用 IPv6 标头的 ip6_plen 字段检查数据包载荷长度。应该检查 mbuf pkthdr.len。ip6_input() 会在输入时检查超大载荷选项，因此之后可以安全地使用 mbuf pkthdr.len。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:431
+#, fuzzy
 msgid "TCP code needs a careful update in bunch of places, of course."
-msgstr ""
+msgstr "当然，TCP 代码的多个部分也需要谨慎更新。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:432
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Loop Prevention in Header Processing"
-msgstr ""
+msgstr "标头处理中的循环预防"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:443
+#, fuzzy
 msgid ""
 "IPv6 specification allows arbitrary number of extension headers to be placed "
 "onto packets.  If we implement IPv6 packet processing code in the way BSD "
@@ -1049,21 +1170,22 @@ msgid ""
 "okay.  (Of-course, for those all IPsec headers to be processed, each such "
 "IPsec header must pass each IPsec check.  So an anonymous attacker will not "
 "be able to do such an attack.)"
-msgstr ""
+msgstr "IPv6 规范允许在数据包中放置任意数量的扩展标头。如果按照 BSD IPv4 代码的实现方式编写 IPv6 数据包处理代码，内核栈可能会因函数调用链过长而溢出。sys/netinet6 代码经过精心设计，可避免内核栈溢出，因此定义了自己的协议分派结构，即 \"struct ip6protosw\"（参见 [.filename]#netinet6/ip6protosw.h#）。为保持兼容性，IPv4 部分（sys/netinet）没有进行相应更新，但其 pr_input() 原型略有改动。因此也定义了 \"struct ipprotosw\"。结果是，如果收到带有大量 IPsec 标头的 IPv4 上 IPsec 数据包，内核栈可能会溢出。IPv6 上的 IPsec 不会有此问题。（当然，要处理这些 IPsec 标头，每个标头都必须通过相应的 IPsec 检查。因此，匿名攻击者无法实施此类攻击。）"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ICMPv6"
-msgstr ""
+msgstr "ICMPv6"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:449
+#, fuzzy
 msgid ""
 "After RFC2463 was published, IETF ipngwg has decided to disallow ICMPv6 "
 "error packet against ICMPv6 redirect, to prevent ICMPv6 storm on a network "
 "medium.  This is already implemented into the kernel."
-msgstr ""
+msgstr "RFC2463 发布后，IETF ipngwg 决定禁止针对 ICMPv6 重定向发送 ICMPv6 错误数据包，以防止网络介质上出现 ICMPv6 风暴。内核中已经实现了这一限制。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:450
@@ -1073,74 +1195,81 @@ msgstr "应用程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:453
+#, fuzzy
 msgid ""
 "For userland programming, we support IPv6 socket API as specified in "
 "RFC2553, RFC2292 and upcoming Internet drafts."
-msgstr ""
+msgstr "对于用户空间编程，我们支持 RFC2553、RFC2292 及即将发布的 Internet 草案中规定的 IPv6 套接字 API。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:458
+#, fuzzy
 msgid ""
 "TCP/UDP over IPv6 is available and quite stable.  You can enjoy man:"
 "telnet[1], man:ftp[1], man:rlogin[1], man:rsh[1], man:ssh[1], etc.  These "
 "applications are protocol independent.  That is, they automatically chooses "
 "IPv4 or IPv6 according to DNS."
-msgstr ""
+msgstr "IPv6 上的 TCP/UDP 已可用且相当稳定。你可以使用 man:telnet[1]、man:ftp[1]、man:rlogin[1]、man:rsh[1]、man:ssh[1] 等。这些应用程序与协议无关，也就是说，它们会根据 DNS 自动选择 IPv4 或 IPv6。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Internals"
-msgstr ""
+msgstr "内核内部机制"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:462
+#, fuzzy
 msgid ""
 "While ip_forward() calls ip_output(), ip6_forward() directly calls "
 "if_output() since routers must not divide IPv6 packets into fragments."
-msgstr ""
+msgstr "ip_forward() 会调用 ip_output()，而 ip6_forward() 会直接调用 if_output()，因为路由器不得将 IPv6 数据包拆分为片段。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:466
+#, fuzzy
 msgid ""
 "ICMPv6 should contain the original packet as long as possible up to 1280.  "
 "UDP6/IP6 port unreach, for instance, should contain all extension headers "
 "and the *unchanged* UDP6 and IP6 headers.  So, all IP6 functions except TCP "
 "never convert network byte order into host byte order, to save the original "
 "packet."
-msgstr ""
+msgstr "ICMPv6 消息应尽可能包含原始数据包，最多包含 1280 字节。例如，UDP6/IP6 端口不可达消息应包含所有扩展标头以及*未经更改*的 UDP6 和 IP6 标头。因此，除 TCP 外，所有 IP6 函数都不会将网络字节序转换为主机字节序，以便保留原始数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:470
+#, fuzzy
 msgid ""
 "tcp_input(), udp6_input() and icmp6_input() can not assume that IP6 header "
 "is preceding the transport headers due to extension headers.  So, "
 "in6_cksum() was implemented to handle packets whose IP6 header and transport "
 "header is not continuous.  TCP/IP6 nor UDP6/IP6 header structures do not "
 "exist for checksum calculation."
-msgstr ""
+msgstr "由于存在扩展标头，tcp_input()、udp6_input() 和 icmp6_input() 不能假定 IP6 标头紧邻传输层标头。因此，实现了 in6_cksum() 来处理 IP6 标头与传输层标头不连续的数据包。不存在用于校验和计算的 TCP/IP6 或 UDP6/IP6 标头结构。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:473
+#, fuzzy
 msgid ""
 "To process IP6 header, extension headers and transport headers easily, "
 "network drivers are now required to store packets in one internal mbuf or "
 "one or more external mbufs.  A typical old driver prepares two internal "
 "mbufs for 96 - 204 bytes data, however, now such packet data is stored in "
 "one external mbuf."
-msgstr ""
+msgstr "为了便于处理 IP6 标头、扩展标头和传输层标头，现在要求网络驱动程序将数据包存储在一个内部 mbuf 或一个或多个外部 mbuf 中。典型的旧式驱动程序会为 96 - 204 字节的数据准备两个内部 mbuf，而现在此类数据包数据存储在一个外部 mbuf 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:477
+#, fuzzy
 msgid ""
 "`netstat -s -p ip6` tells you whether or not your driver conforms such "
 "requirement.  In the following example, \"cce0\" violates the requirement.  "
 "(For more information, refer to Section 2.)"
-msgstr ""
+msgstr "`netstat -s -p ip6` 可以告诉你驱动程序是否符合此要求。以下示例中，\"cce0\" 不符合要求。（更多信息请参阅第 2 节。）"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Mbuf statistics:\n"
 "                317 one mbuf\n"
@@ -1149,71 +1278,79 @@ msgid ""
 "\t\t\tcce0 = 10\n"
 "                3282 one ext mbuf\n"
 "                0 two or more ext mbuf\n"
-msgstr ""
+msgstr "Mbuf 统计信息：\n                317 个单 mbuf\n                两个或更多 mbuf：\n                        lo0 = 8\n\t\t\tcce0 = 10\n                3282 个单 ext mbuf\n                0 个两个或更多 ext mbuf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:492
+#, fuzzy
 msgid ""
 "Each input function calls IP6_EXTHDR_CHECK in the beginning to check if the "
 "region between IP6 and its header is continuous.  IP6_EXTHDR_CHECK calls "
 "m_pullup() only if the mbuf has M_LOOP flag, that is, the packet comes from "
 "the loopback interface.  m_pullup() is never called for packets coming from "
 "physical network interfaces."
-msgstr ""
+msgstr "每个输入函数都会在开头调用 IP6_EXTHDR_CHECK，以检查 IP6 与其标头之间的区域是否连续。只有当 mbuf 带有 M_LOOP 标志，也就是数据包来自环回接口时，IP6_EXTHDR_CHECK 才会调用 m_pullup()。对于来自物理网络接口的数据包，绝不会调用 m_pullup()。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:494
+#, fuzzy
 msgid "Both IP and IP6 reassemble functions never call m_pullup()."
-msgstr ""
+msgstr "IP 和 IP6 的重组函数都不会调用 m_pullup()。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:496
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv4 Mapped Address and IPv6 Wildcard Socket"
-msgstr ""
+msgstr "IPv4 映射地址和 IPv6 通配套接字"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:500
+#, fuzzy
 msgid ""
 "RFC2553 describes IPv4 mapped address (3.7) and special behavior of IPv6 "
 "wildcard bind socket (3.8).  The spec allows you to:"
-msgstr ""
+msgstr "RFC2553 描述了 IPv4 映射地址（3.7）和 IPv6 通配绑定套接字的特殊行为（3.8）。该规范允许你："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:502
+#, fuzzy
 msgid "Accept IPv4 connections by AF_INET6 wildcard bind socket."
-msgstr ""
+msgstr "通过 AF_INET6 通配绑定套接字接受 IPv4 连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:503
+#, fuzzy
 msgid ""
 "Transmit IPv4 packet over AF_INET6 socket by using special form of the "
 "address like ::ffff:10.1.1.1."
-msgstr ""
+msgstr "通过使用类似 ：:ffff:10.1.1.1 这样的特殊地址形式，在 AF_INET6 套接字上发送 IPv4 数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:506
+#, fuzzy
 msgid ""
 "but the spec itself is very complicated and does not specify how the socket "
 "layer should behave.  Here we call the former one \"listening side\" and the "
 "latter one \"initiating side\", for reference purposes."
-msgstr ""
+msgstr "但规范本身非常复杂，并未规定套接字层应如何行为。为便于说明，本文将前者称为“监听端”，将后者称为“发起端”。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:508
+#, fuzzy
 msgid ""
 "You can perform wildcard bind on both of the address families, on the same "
 "port."
-msgstr ""
+msgstr "你可以在同一个端口上，为这两种地址族都执行通配绑定。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:510
+#, fuzzy
 msgid "The following table show the behavior of FreeBSD 4.x."
-msgstr ""
+msgstr "下表展示了 FreeBSD 4.x 的行为。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:519
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "listening side          initiating side\n"
 "                (AF_INET6 wildcard      (connection to ::ffff:10.1.1.1)\n"
@@ -1221,22 +1358,25 @@ msgid ""
 "                ---                     ---\n"
 "FreeBSD 4.x     configurable            supported\n"
 "                default: enabled\n"
-msgstr ""
+msgstr "监听端                 发起端\n                （AF_INET6 通配绑定       （连接到 ::ffff:10.1.1.1）\n                套接字接收 IPv4 连接）\n                ---                     ---\nFreeBSD 4.x     可配置                  支持\n                默认：启用\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:522
+#, fuzzy
 msgid ""
 "The following sections will give you more details, and how you can configure "
 "the behavior."
-msgstr ""
+msgstr "以下各节将进一步说明相关行为，以及如何配置这些行为。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:524
+#, fuzzy
 msgid "Comments on listening side:"
-msgstr ""
+msgstr "关于监听端的说明："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:531
+#, fuzzy
 msgid ""
 "It looks that RFC2553 talks too little on wildcard bind issue, especially on "
 "the port space issue, failure mode and relationship between AF_INET/INET6 "
@@ -1247,17 +1387,19 @@ msgid ""
 "bind issues were discussed in detail on ipv6imp mailing list, in mid March "
 "1999 and it looks that there is no concrete consensus (means, up to "
 "implementers).  You may want to check the mailing list archives."
-msgstr ""
+msgstr "RFC2553 对通配绑定问题着墨甚少，尤其没有充分说明端口空间问题、失败模式以及 AF_INET/INET6 通配绑定之间的关系。对于该 RFC，可能存在多种不同的解读；这些解读都符合 RFC，但行为各不相同。因此，要编写可移植的应用程序，就不应对内核的行为作任何假设。使用 man:getaddrinfo[3] 是最稳妥的做法。端口号空间和通配绑定问题曾于 1999 年 3 月中旬在 ipv6imp 邮件列表上进行过详细讨论，但似乎没有达成明确共识（也就是说，由实现者自行决定）。你可以查阅邮件列表存档。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:533
+#, fuzzy
 msgid ""
 "If a server application would like to accept IPv4 and IPv6 connections, "
 "there will be two alternatives."
-msgstr ""
+msgstr "如果服务器应用程序需要接受 IPv4 和 IPv6 连接，有两种选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:538
+#, fuzzy
 msgid ""
 "One is using AF_INET and AF_INET6 socket (you will need two sockets).  Use "
 "man:getaddrinfo[3] with AI_PASSIVE into ai_flags, and man:socket[2] and man:"
@@ -1265,100 +1407,111 @@ msgid ""
 "accept connections onto the socket with proper address family.  IPv4 "
 "connections will be accepted by AF_INET socket, and IPv6 connections will be "
 "accepted by AF_INET6 socket."
-msgstr ""
+msgstr "一种方法是使用 AF_INET 和 AF_INET6 套接字（需要两个套接字）。在 ai_flags 中设置 AI_PASSIVE，调用 man:getaddrinfo[3]，然后对返回的所有地址调用 man:socket[2] 和 man:bind[2]。通过打开多个套接字，你可以使用地址族合适的套接字接受连接。IPv4 连接将由 AF_INET 套接字接受，IPv6 连接将由 AF_INET6 套接字接受。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:544
+#, fuzzy
 msgid ""
 "Another way is using one AF_INET6 wildcard bind socket.  Use man:"
 "getaddrinfo[3] with AI_PASSIVE into ai_flags and with AF_INET6 into "
 "ai_family, and set the 1st argument hostname to NULL.  And man:socket[2] and "
 "man:bind[2] to the address returned.  (should be IPv6 unspecified addr).  "
 "You can accept either of IPv4 and IPv6 packet via this one socket."
-msgstr ""
+msgstr "另一种方法是使用一个 AF_INET6 通配绑定套接字。在 ai_flags 中设置 AI_PASSIVE，在 ai_family 中设置 AF_INET6，并将第一个参数 hostname 设为 NULL，调用 man:getaddrinfo[3]。然后对返回的地址（应为 IPv6 未指定地址）调用 man:socket[2] 和 man:bind[2]。通过这个套接字，你可以接受 IPv4 或 IPv6 数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:548
+#, fuzzy
 msgid ""
 "To support only IPv6 traffic on AF_INET6 wildcard binded socket portably, "
 "always check the peer address when a connection is made toward AF_INET6 "
 "listening socket.  If the address is IPv4 mapped address, you may want to "
 "reject the connection.  You can check the condition by using "
 "IN6_IS_ADDR_V4MAPPED() macro."
-msgstr ""
+msgstr "若要以可移植的方式，仅在 AF_INET6 通配绑定套接字端口上支持 IPv6 流量，每当连接到 AF_INET6 监听套接字时，都应检查对端地址。如果该地址是 IPv4 映射地址，你可以拒绝该连接。可以使用 IN6_IS_ADDR_V4MAPPED() 宏检查这一情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:550
+#, fuzzy
 msgid ""
 "To resolve this issue more easily, there is system dependent man:"
 "setsockopt[2] option, IPV6_BINDV6ONLY, used like below."
-msgstr ""
+msgstr "要更轻松地解决此问题，可以使用依赖于系统的 man:setsockopt[2] 选项 IPV6_BINDV6ONLY，如下所示。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:554
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:601
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\tint on;\n"
-msgstr ""
+msgstr "\tint on;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:557
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:604
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tsetsockopt(s, IPPROTO_IPV6, IPV6_BINDV6ONLY,\n"
 "\t\t   (char *)&on, sizeof (on)) < 0));\n"
-msgstr ""
+msgstr "\tsetsockopt(s, IPPROTO_IPV6, IPV6_BINDV6ONLY,\n\t\t   (char *)&on, sizeof (on)) < 0));\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:560
+#, fuzzy
 msgid "When this call succeed, then this socket only receive IPv6 packets."
-msgstr ""
+msgstr "此调用成功后，该套接字将只接收 IPv6 数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:562
+#, fuzzy
 msgid "Comments on initiating side:"
-msgstr ""
+msgstr "关于发起端的说明："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:564
+#, fuzzy
 msgid ""
 "Advise to application implementers: to implement a portable IPv6 application "
 "(which works on multiple IPv6 kernels), we believe that the following is the "
 "key to the success:"
-msgstr ""
+msgstr "给应用程序实现者的建议：要实现可移植的 IPv6 应用程序（可在多个 IPv6 内核上运行），我们认为以下几点是成功的关键："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:566
+#, fuzzy
 msgid "NEVER hardcode AF_INET nor AF_INET6."
-msgstr ""
+msgstr "绝不要将 AF_INET 或 AF_INET6 硬编码。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:567
+#, fuzzy
 msgid ""
 "Use man:getaddrinfo[3] and man:getnameinfo[3] throughout the system. Never "
 "use gethostby*(), getaddrby*(), inet_*() or getipnodeby*(). (To update "
 "existing applications to be IPv6 aware easily, sometime getipnodeby*() will "
 "be useful. But if possible, try to rewrite the code to use man:"
 "getaddrinfo[3] and man:getnameinfo[3].)"
-msgstr ""
+msgstr "在整个系统中使用 man:getaddrinfo[3] 和 man:getnameinfo[3]。绝不要使用 gethostby*()、getaddrby*()、inet_*() 或 getipnodeby*()。（为了轻松地将现有应用程序更新为支持 IPv6，有时 getipnodeby*() 会很有用。但如果可能，请尽量重写代码，改用 man:getaddrinfo[3] 和 man:getnameinfo[3]。）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:568
+#, fuzzy
 msgid ""
 "If you would like to connect to destination, use man:getaddrinfo[3] and try "
 "all the destination returned, like man:telnet[1] does."
-msgstr ""
+msgstr "如果要连接到目标地址，请使用 man:getaddrinfo[3]，并尝试连接其返回的所有目标地址，就像 man:telnet[1] 所做的那样。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:569
+#, fuzzy
 msgid ""
 "Some of the IPv6 stack is shipped with buggy man:getaddrinfo[3]. Ship a "
 "minimal working version with your application and use that as last resort."
-msgstr ""
+msgstr "有些 IPv6 协议栈自带有缺陷的 man:getaddrinfo[3]。请在应用程序中附带一个可正常工作的最小实现，并将其作为最后的手段。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:575
+#, fuzzy
 msgid ""
 "If you would like to use AF_INET6 socket for both IPv4 and IPv6 outgoing "
 "connection, you will need to use man:getipnodebyname[3].  When you would "
@@ -1368,200 +1521,223 @@ msgid ""
 "as it does not handle scoped IPv6 addresses at all.  For IPv6 name "
 "resolution, man:getaddrinfo[3] is the preferred API.  So you should rewrite "
 "your application to use man:getaddrinfo[3], when you get the time to do it."
-msgstr ""
+msgstr "如果要使用 AF_INET6 套接字同时建立 IPv4 和 IPv6 出站连接，就需要使用 man:getipnodebyname[3]。如果想以最小的工作量更新现有应用程序以支持 IPv6，可以选择这种方法。但请注意，这只是临时解决方案，因为不建议使用 man:getipnodebyname[3] 本身：它完全无法处理带作用域的 IPv6 地址。对于 IPv6 名称解析，首选 API 是 man:getaddrinfo[3]。因此，有时间时应将应用程序改写为使用 man:getaddrinfo[3]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:579
+#, fuzzy
 msgid ""
 "When writing applications that make outgoing connections, story goes much "
 "simpler if you treat AF_INET and AF_INET6 as totally separate address "
 "family.  {set,get}sockopt issue goes simpler, DNS issue will be made "
 "simpler.  We do not recommend you to rely upon IPv4 mapped address."
-msgstr ""
+msgstr "编写发起出站连接的应用程序时，如果将 AF_INET 和 AF_INET6 视为完全独立的地址族，事情会简单得多。{set,get}sockopt 问题会更简单，DNS 问题也会更简单。我们不建议依赖 IPv4 映射地址。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:580
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "unified tcp and inpcb code"
-msgstr ""
+msgstr "统一的 tcp 和 inpcb 代码"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:584
+#, fuzzy
 msgid ""
 "FreeBSD 4.x uses shared tcp code between IPv4 and IPv6 (from sys/netinet/"
 "tcp*) and separate udp4/6 code.  It uses unified inpcb structure."
-msgstr ""
+msgstr "FreeBSD 4.x 在 IPv4 和 IPv6 之间共用 TCP 代码（来自 sys/netinet/tcp*），并使用单独的 udp4/6 代码。它采用统一的 inpcb 结构。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:587
+#, fuzzy
 msgid ""
 "The platform can be configured to support IPv4 mapped address.  Kernel "
 "configuration is summarized as follows:"
-msgstr ""
+msgstr "可以将该平台配置为支持 IPv4 映射地址。内核配置概述如下："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:589
+#, fuzzy
 msgid ""
 "By default, AF_INET6 socket will grab IPv4 connections in certain condition, "
 "and can initiate connection to IPv4 destination embedded in IPv4 mapped IPv6 "
 "address."
-msgstr ""
+msgstr "默认情况下，在某些条件下，AF_INET6 套接字会接收 IPv4 连接，并且可以连接到嵌入在 IPv4 映射 IPv6 地址中的 IPv4 目标地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:590
+#, fuzzy
 msgid "You can disable it on entire system with sysctl like below."
-msgstr ""
+msgstr "你可以使用如下 sysctl 命令在整个系统范围内禁用此功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:592
+#, fuzzy
 msgid "`sysctl net.inet6.ip6.mapped_addr=0`"
-msgstr ""
+msgstr "`sysctl net.inet6.ip6.mapped_addr=0`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:594
+#, fuzzy
 msgid "====== Listening Side"
-msgstr ""
+msgstr "====== 监听端"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:597
+#, fuzzy
 msgid ""
 "Each socket can be configured to support special AF_INET6 wildcard bind "
 "(enabled by default).  You can disable it on each socket basis with man:"
 "setsockopt[2] like below."
-msgstr ""
+msgstr "可以将每个套接字配置为支持特殊的 AF_INET6 通配绑定（默认启用）。你可以使用如下 man:setsockopt[2] 调用，逐个套接字禁用此功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:607
+#, fuzzy
 msgid ""
 "Wildcard AF_INET6 socket grabs IPv4 connection if and only if the following "
 "conditions are satisfied:"
-msgstr ""
+msgstr "只有满足以下条件时，AF_INET6 通配套接字才会接收 IPv4 连接："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:609
+#, fuzzy
 msgid "there is no AF_INET socket that matches the IPv4 connection"
-msgstr ""
+msgstr "不存在与该 IPv4 连接匹配的 AF_INET 套接字"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:610
+#, fuzzy
 msgid ""
 "the AF_INET6 socket is configured to accept IPv4 traffic, i.e., "
 "getsockopt(IPV6_BINDV6ONLY) returns 0."
-msgstr ""
+msgstr "AF_INET6 套接字已配置为接受 IPv4 流量，也就是说，getsockopt(IPV6_BINDV6ONLY) 返回 0。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:612
+#, fuzzy
 msgid "There is no problem with open/close ordering."
-msgstr ""
+msgstr "打开和关闭的顺序不会造成问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:614
+#, fuzzy
 msgid "====== Initiating Side"
-msgstr ""
+msgstr "====== 发起端"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:616
+#, fuzzy
 msgid ""
 "FreeBSD 4.x supports outgoing connection to IPv4 mapped address (::"
 "ffff:10.1.1.1), if the node is configured to support IPv4 mapped address."
-msgstr ""
+msgstr "如果节点配置为支持 IPv4 映射地址，FreeBSD 4.x 支持连接到 IPv4 映射地址（::ffff:10.1.1.1）。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:617
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sockaddr_storage"
-msgstr ""
+msgstr "sockaddr_storage"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:623
+#, fuzzy
 msgid ""
 "When RFC2553 was about to be finalized, there was discussion on how struct "
 "sockaddr_storage members are named.  One proposal is to prepend \"__\" to "
 "the members (like \"__ss_len\") as they should not be touched.  The other "
 "proposal was not to prepend it (like \"ss_len\") as we need to touch those "
 "members directly.  There was no clear consensus on it."
-msgstr ""
+msgstr "RFC2553 即将定稿时，曾有人讨论 struct sockaddr_storage 成员的命名方式。一种提议是在成员名前加上“__”（例如“__ss_len”），因为不应直接访问这些成员。另一种提议是不加前缀（例如“ss_len”），因为我们需要直接访问这些成员。对此并未达成明确共识。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:625
+#, fuzzy
 msgid "As a result, RFC2553 defines struct sockaddr_storage as follows:"
-msgstr ""
+msgstr "因此，RFC2553 将 struct sockaddr_storage 定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:633
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tstruct sockaddr_storage {\n"
 "\t\tu_char\t__ss_len;\t/* address length */\n"
 "\t\tu_char\t__ss_family;\t/* address family */\n"
 "\t\t/* and bunch of padding */\n"
 "\t};\n"
-msgstr ""
+msgstr "\tstruct sockaddr_storage {\n\t\tu_char\t__ss_len;\t/* address length */\n\t\tu_char\t__ss_family;\t/* address family */\n\t\t/* and bunch of padding */\n\t};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:636
+#, fuzzy
 msgid "On the contrary, XNET draft defines as follows:"
-msgstr ""
+msgstr "相反，XNET 草案将其定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:644
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tstruct sockaddr_storage {\n"
 "\t\tu_char\tss_len;\t\t/* address length */\n"
 "\t\tu_char\tss_family;\t/* address family */\n"
 "\t\t/* and bunch of padding */\n"
 "\t};\n"
-msgstr ""
+msgstr "\tstruct sockaddr_storage {\n\t\tu_char\tss_len;\t\t/* address length */\n\t\tu_char\tss_family;\t/* address family */\n\t\t/* and bunch of padding */\n\t};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:647
+#, fuzzy
 msgid ""
 "In December 1999, it was agreed that RFC2553bis should pick the latter "
 "(XNET) definition."
-msgstr ""
+msgstr "1999 年 12 月，各方同意 RFC2553bis 应采用后一种（XNET）定义。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:649
+#, fuzzy
 msgid ""
 "Current implementation conforms to XNET definition, based on RFC2553bis "
 "discussion."
-msgstr ""
+msgstr "根据 RFC2553bis 的讨论，当前实现符合 XNET 定义。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:652
+#, fuzzy
 msgid ""
 "If you look at multiple IPv6 implementations, you will be able to see both "
 "definitions.  As an userland programmer, the most portable way of dealing "
 "with it is to:"
-msgstr ""
+msgstr "查看多个 IPv6 实现时，你会发现这两种定义都存在。作为用户空间程序员，处理此问题时最具可移植性的做法是："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:654
+#, fuzzy
 msgid ""
 "ensure ss_family and/or ss_len are available on the platform, by using GNU "
 "autoconf,"
-msgstr ""
+msgstr "使用 GNU autoconf，确保平台提供 ss_family 和/或 ss_len；"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:655
+#, fuzzy
 msgid ""
 "have -Dss_family=__ss_family to unify all occurrences (including header "
 "file) into __ss_family, or"
-msgstr ""
+msgstr "使用 -Dss_family=__ss_family 将所有出现的 ss_family（包括头文件中的）统一为 __ss_family；或者"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:656
+#, fuzzy
 msgid "never touch __ss_family. cast to sockaddr * and use sa_family like:"
-msgstr ""
+msgstr "绝不直接访问 __ss_family。将其转换为 sockaddr *，并像下面这样使用 sa_family："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:661
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tstruct sockaddr_storage ss;\n"
 "\tfamily = ((struct sockaddr *)&ss)->sa_family\n"
-msgstr ""
+msgstr "\tstruct sockaddr_storage ss;\n\tfamily = ((struct sockaddr *)&ss)->sa_family\n"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:663
@@ -1571,155 +1747,172 @@ msgstr "网络设备驱动程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:666
+#, fuzzy
 msgid ""
 "Now following two items are required to be supported by standard drivers:"
-msgstr ""
+msgstr "现在，标准驱动程序必须支持以下两项："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:668
+#, fuzzy
 msgid ""
 "mbuf clustering requirement. In this stable release, we changed MINCLSIZE "
 "into MHLEN+1 for all the operating systems in order to make all the drivers "
 "behave as we expect."
-msgstr ""
+msgstr "mbuf 集群要求。在此稳定版本中，我们将所有操作系统中的 MINCLSIZE 更改为 MHLEN+1，以便所有驱动程序都能按预期运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:669
+#, fuzzy
 msgid ""
 "multicast. If man:ifmcstat[8] yields no multicast group for an interface, "
 "that interface has to be patched."
-msgstr ""
+msgstr "多播。如果 man:ifmcstat[8] 未显示某个接口的多播组，则必须为该接口打补丁。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:672
+#, fuzzy
 msgid ""
 "If any of the drivers do not support the requirements, then the drivers "
 "cannot be used for IPv6 and/or IPsec communication.  If you find any problem "
 "with your card using IPv6/IPsec, then, please report it to the {freebsd-"
 "bugs}."
-msgstr ""
+msgstr "如果任何驱动程序不支持这些要求，就不能用于 IPv6 和/或 IPsec 通信。如果你的网卡在使用 IPv6/IPsec 时遇到问题，请向 {freebsd-bugs} 报告。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:675
+#, fuzzy
 msgid ""
 "(NOTE: In the past we required all PCMCIA drivers to have a call to "
 "in6_ifattach().  We have no such requirement any more)"
-msgstr ""
+msgstr "（注意：过去我们要求所有 PCMCIA 驱动程序都调用 in6_ifattach()。现在已不再有此要求。）"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:676
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translator"
-msgstr ""
+msgstr "转换器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:679
+#, fuzzy
 msgid "We categorize IPv4/IPv6 translator into 4 types:"
-msgstr ""
+msgstr "我们将 IPv4/IPv6 转换器分为 4 种类型："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:681
+#, fuzzy
 msgid ""
 "_Translator A_ --- It is used in the early stage of transition to make it "
 "possible to establish a connection from an IPv6 host in an IPv6 island to an "
 "IPv4 host in the IPv4 ocean."
-msgstr ""
+msgstr "__Translator A__ --- 用于过渡的早期阶段，使 IPv6 孤岛中的 IPv6 主机能够与 IPv4 海洋中的 IPv4 主机建立连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:682
+#, fuzzy
 msgid ""
 "_Translator B_ --- It is used in the early stage of transition to make it "
 "possible to establish a connection from an IPv4 host in the IPv4 ocean to an "
 "IPv6 host in an IPv6 island."
-msgstr ""
+msgstr "__Translator B__ --- 用于过渡的早期阶段，使 IPv4 海洋中的 IPv4 主机能够与 IPv6 孤岛中的 IPv6 主机建立连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:683
+#, fuzzy
 msgid ""
 "_Translator C_ --- It is used in the late stage of transition to make it "
 "possible to establish a connection from an IPv4 host in an IPv4 island to an "
 "IPv6 host in the IPv6 ocean."
-msgstr ""
+msgstr "__Translator C__ --- 用于过渡的后期阶段，使 IPv4 孤岛中的 IPv4 主机能够与 IPv6 海洋中的 IPv6 主机建立连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:684
+#, fuzzy
 msgid ""
 "_Translator D_ --- It is used in the late stage of transition to make it "
 "possible to establish a connection from an IPv6 host in the IPv6 ocean to an "
 "IPv4 host in an IPv4 island."
-msgstr ""
+msgstr "__Translator D__ --- 用于过渡的后期阶段，使 IPv6 海洋中的 IPv6 主机能够与 IPv4 孤岛中的 IPv4 主机建立连接。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:686
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPsec"
-msgstr ""
+msgstr "IPsec"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:689
+#, fuzzy
 msgid "IPsec is mainly organized by three components."
-msgstr ""
+msgstr "IPsec 主要由三个组件组成。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:691
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:694
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Policy Management"
-msgstr ""
+msgstr "策略管理"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:692
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:704
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Key Management"
-msgstr ""
+msgstr "密钥管理"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:693
+#, fuzzy
 msgid "AH and ESP handling"
-msgstr ""
+msgstr "AH 和 ESP 处理"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:701
+#, fuzzy
 msgid ""
 "The kernel implements experimental policy management code.  There are two "
 "way to manage security policy.  One is to configure per-socket policy using "
 "man:setsockopt[2].  In this cases, policy configuration is described in man:"
 "ipsec_set_policy[3].  The other is to configure kernel packet filter-based "
 "policy using PF_KEY interface, via man:setkey[8]."
-msgstr ""
+msgstr "内核实现了实验性的策略管理代码。管理安全策略有两种方法。一种是使用 man:setsockopt[2] 配置每个套接字的策略。在这种情况下，策略配置见 man:ipsec_set_policy[3]。另一种是通过 man:setkey[8] 使用 PF_KEY 接口，配置基于内核数据包过滤器的策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:703
+#, fuzzy
 msgid ""
 "The policy entry is not re-ordered with its indexes, so the order of entry "
 "when you add is very significant."
-msgstr ""
+msgstr "策略条目不会根据索引重新排序，因此添加条目的顺序非常重要。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:708
+#, fuzzy
 msgid ""
 "The key management code implemented in this kit (sys/netkey) is a home-brew "
 "PFKEY v2 implementation.  This conforms to RFC2367."
-msgstr ""
+msgstr "此套件（sys/netkey）中的密钥管理代码是自行编写的 PFKEY v2 实现，符合 RFC2367。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:712
+#, fuzzy
 msgid ""
 "The home-brew IKE daemon, \"racoon\" is included in the kit (kame/kame/"
 "racoon).  Basically you will need to run racoon as daemon, then set up a "
 "policy to require keys (like `ping -P 'out ipsec esp/transport//use'`).  The "
 "kernel will contact racoon daemon as necessary to exchange keys."
-msgstr ""
+msgstr "该套件（kame/kame/racoon）包含自行编写的 IKE 守护进程“racoon”。通常，你需要将 racoon 作为守护进程运行，然后设置要求使用密钥的策略（例如 `ping -P 'out ipsec esp/transport//use'`）。内核会根据需要联系 racoon 守护进程来交换密钥。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:713
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "AH and ESP Handling"
-msgstr ""
+msgstr "AH 和 ESP 处理"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:721
+#, fuzzy
 msgid ""
 "IPsec module is implemented as \"hooks\" to the standard IPv4/IPv6 "
 "processing.  When sending a packet, ip{,6}_output() checks if ESP/AH "
@@ -1731,74 +1924,83 @@ msgid ""
 "the packet, and strips off daisy-chained header and padding for ESP/AH.  It "
 "is safe to strip off the ESP/AH header on packet reception, since we will "
 "never use the received packet in \"as is\" form."
-msgstr ""
+msgstr "IPsec 模块通过“钩子”集成到标准 IPv4/IPv6 处理流程中。发送数据包时，ip{,6}_output() 会检查是否找到匹配的 SPD（安全策略数据库），以确定是否需要进行 ESP/AH 处理。如果需要 ESP/AH，将调用 {esp,ah}{4,6}_output()，并相应更新 mbuf。接收数据包时，会根据协议号调用 {esp,ah}4_input()，也就是 (*inetsw[proto])()。{esp,ah}4_input() 会解密数据包并检查其真实性，然后移除 ESP/AH 的串联报头和填充。接收数据包时移除 ESP/AH 报头是安全的，因为我们绝不会以“原样”使用收到的数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:724
+#, fuzzy
 msgid ""
 "By using ESP/AH, TCP4/6 effective data segment size will be affected by "
 "extra daisy-chained headers inserted by ESP/AH.  Our code takes care of the "
 "case."
-msgstr ""
+msgstr "使用 ESP/AH 时，ESP/AH 插入的额外串联报头会影响 TCP4/6 的有效数据段大小。我们的代码会处理这种情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:728
+#, fuzzy
 msgid ""
 "Basic crypto functions can be found in directory \"sys/crypto\".  ESP/AH "
 "transform are listed in {esp,ah}_core.c with wrapper functions.  If you wish "
 "to add some algorithm, add wrapper function in {esp,ah}_core.c, and add your "
 "crypto algorithm code into sys/crypto."
-msgstr ""
+msgstr "基本加密函数位于 “sys/crypto” 目录中。ESP/AH 转换及其包装函数列在 {esp,ah}_core.c 中。如果要添加算法，请在 {esp,ah}_core.c 中添加包装函数，并将加密算法代码加入 sys/crypto。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:730
+#, fuzzy
 msgid ""
 "Tunnel mode is partially supported in this release, with the following "
 "restrictions:"
-msgstr ""
+msgstr "此版本部分支持隧道模式，但有以下限制："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:732
+#, fuzzy
 msgid ""
 "IPsec tunnel is not combined with GIF generic tunneling interface. It needs "
 "a great care because we may create an infinite loop between ip_output() and "
 "tunnelifp->if_output(). Opinion varies if it is better to unify them, or not."
-msgstr ""
+msgstr "IPsec 隧道不会与 GIF 通用隧道接口结合使用。需要格外小心，因为 ip_output() 和 tunnelifp->if_output() 之间可能形成无限循环。对于是否应该将它们统一起来，意见不一。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:733
+#, fuzzy
 msgid ""
 "MTU and Don't Fragment bit (IPv4) considerations need more checking, but "
 "basically works fine."
-msgstr ""
+msgstr "MTU 和“不分片”位（IPv4）相关事项还需要进一步检查，但基本上运行良好。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:734
+#, fuzzy
 msgid ""
 "Authentication model for AH tunnel must be revisited. We will need to "
 "improve the policy management engine, eventually."
-msgstr ""
+msgstr "必须重新审视 AH 隧道的身份验证模型。最终，我们需要改进策略管理引擎。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:735
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conformance to RFCs and IDs"
-msgstr ""
+msgstr "符合 RFC 和 Internet 草案"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:738
+#, fuzzy
 msgid ""
 "The IPsec code in the kernel conforms (or, tries to conform) to the "
 "following standards:"
-msgstr ""
+msgstr "内核中的 IPsec 代码符合（或尝试符合）以下标准："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:740
+#, fuzzy
 msgid "\"old IPsec\" specification documented in [.filename]#rfc182[5-9].txt#"
-msgstr ""
+msgstr "“旧版 IPsec”规范，见 [.filename]#rfc182[5-9].txt#"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:743
+#, fuzzy
 msgid ""
 "\"new IPsec\" specification documented in [.filename]#rfc240[1-6].txt#, [."
 "filename]#rfc241[01].txt#, [.filename]#rfc2451.txt# and [.filename]#draft-"
@@ -1806,336 +2008,385 @@ msgid ""
 "ftp://ftp.kame.net/pub/internet-drafts/[ ftp://ftp.kame.net/pub/internet-"
 "drafts/]).  (NOTE: IKE specifications, [.filename]#rfc241[7-9].txt# are "
 "implemented in userland, as \"racoon\" IKE daemon)"
-msgstr ""
+msgstr "“新版 IPsec”规范，见 [.filename]#rfc240[1-6].txt#、[.filename]#rfc241[01].txt#、[.filename]#rfc2451.txt# 和 [.filename]#draft-mcdonald-simple-ipsec-api-01.txt#（草案已过期，但可从 link:ftp://ftp.kame.net/pub/internet-drafts/[ ftp://ftp.kame.net/pub/internet-drafts/] 获取）。（注意：IKE 规范 [.filename]#rfc241[7-9].txt# 在用户态中通过 “racoon” IKE 守护进程实现）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:745
+#, fuzzy
 msgid "Currently supported algorithms are:"
-msgstr ""
+msgstr "目前支持的算法如下："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:747
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:784
+#, fuzzy
 msgid "old IPsec AH"
-msgstr ""
+msgstr "旧版 IPsec AH"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:749
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:762
+#, fuzzy
 msgid "null crypto checksum (no document, just for debugging)"
-msgstr ""
+msgstr "空加密校验和（无文档，仅用于调试）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:750
+#, fuzzy
 msgid "keyed MD5 with 128bit crypto checksum ([.filename]#rfc1828.txt#)"
-msgstr ""
+msgstr "带密钥的 MD5，使用 128bit 加密校验和（[.filename]#rfc1828.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:751
+#, fuzzy
 msgid "keyed SHA1 with 128bit crypto checksum (no document)"
-msgstr ""
+msgstr "带密钥的 SHA1，使用 128bit 加密校验和（无文档）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:752
+#, fuzzy
 msgid "HMAC MD5 with 128bit crypto checksum ([.filename]#rfc2085.txt#)"
-msgstr ""
+msgstr "HMAC MD5，使用 128bit 加密校验和（[.filename]#rfc2085.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:753
+#, fuzzy
 msgid "HMAC SHA1 with 128bit crypto checksum (no document)"
-msgstr ""
+msgstr "HMAC SHA1，使用 128bit 加密校验和（无文档）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:755
+#, fuzzy
 msgid "old IPsec ESP"
-msgstr ""
+msgstr "旧版 IPsec ESP"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:757
+#, fuzzy
 msgid "null encryption (no document, similar to [.filename]#rfc2410.txt#)"
-msgstr ""
+msgstr "空加密（无文档，类似于 [.filename]#rfc2410.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:758
+#, fuzzy
 msgid "DES-CBC mode ([.filename]#rfc1829.txt#)"
-msgstr ""
+msgstr "DES-CBC 模式（[.filename]#rfc1829.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:760
+#, fuzzy
 msgid "new IPsec AH"
-msgstr ""
+msgstr "新版 IPsec AH"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:763
+#, fuzzy
 msgid "keyed MD5 with 96bit crypto checksum (no document)"
-msgstr ""
+msgstr "带密钥的 MD5，使用 96bit 加密校验和（无文档）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:764
+#, fuzzy
 msgid "keyed SHA1 with 96bit crypto checksum (no document)"
-msgstr ""
+msgstr "带密钥的 SHA1，使用 96bit 加密校验和（无文档）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:765
+#, fuzzy
 msgid "HMAC MD5 with 96bit crypto checksum ([.filename]#rfc2403.txt#)"
-msgstr ""
+msgstr "HMAC MD5，使用 96bit 加密校验和（[.filename]#rfc2403.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:766
+#, fuzzy
 msgid "HMAC SHA1 with 96bit crypto checksum ([.filename]#rfc2404.txt#)"
-msgstr ""
+msgstr "HMAC SHA1，使用 96bit 加密校验和（[.filename]#rfc2404.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:768
+#, fuzzy
 msgid "new IPsec ESP"
-msgstr ""
+msgstr "新版 IPsec ESP"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:770
+#, fuzzy
 msgid "null encryption ([.filename]#rfc2410.txt#)"
-msgstr ""
+msgstr "空加密（[.filename]#rfc2410.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:771
+#, fuzzy
 msgid ""
 "DES-CBC with derived IV ([.filename]#draft-ietf-ipsec-ciph-des-derived-01."
 "txt#, draft expired)"
-msgstr ""
+msgstr "DES-CBC，使用派生 IV（[.filename]#draft-ietf-ipsec-ciph-des-derived-01.txt#，草案已过期）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:772
+#, fuzzy
 msgid "DES-CBC with explicit IV ([.filename]#rfc2405.txt#)"
-msgstr ""
+msgstr "DES-CBC，使用显式 IV（[.filename]#rfc2405.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:773
+#, fuzzy
 msgid "3DES-CBC with explicit IV ([.filename]#rfc2451.txt#)"
-msgstr ""
+msgstr "3DES-CBC，使用显式 IV（[.filename]#rfc2451.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:774
+#, fuzzy
 msgid "BLOWFISH CBC ([.filename]#rfc2451.txt#)"
-msgstr ""
+msgstr "BLOWFISH CBC（[.filename]#rfc2451.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:775
+#, fuzzy
 msgid "CAST128 CBC ([.filename]#rfc2451.txt#)"
-msgstr ""
+msgstr "CAST128 CBC（[.filename]#rfc2451.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:776
+#, fuzzy
 msgid "RC5 CBC ([.filename]#rfc2451.txt#)"
-msgstr ""
+msgstr "RC5 CBC（[.filename]#rfc2451.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:777
+#, fuzzy
 msgid "each of the above can be combined with:"
-msgstr ""
+msgstr "上述每种算法都可以与以下算法组合："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:779
+#, fuzzy
 msgid "ESP authentication with HMAC-MD5(96bit)"
-msgstr ""
+msgstr "使用 HMAC-MD5(96bit) 进行 ESP 身份验证"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:780
+#, fuzzy
 msgid "ESP authentication with HMAC-SHA1(96bit)"
-msgstr ""
+msgstr "使用 HMAC-SHA1(96bit) 进行 ESP 身份验证"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:782
+#, fuzzy
 msgid "The following algorithms are NOT supported:"
-msgstr ""
+msgstr "以下算法不受支持："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:786
+#, fuzzy
 msgid ""
 "HMAC MD5 with 128bit crypto checksum + 64bit replay prevention ([."
 "filename]#rfc2085.txt#)"
-msgstr ""
+msgstr "HMAC MD5，使用 128bit 加密校验和 + 64bit 重放保护（[.filename]#rfc2085.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:787
+#, fuzzy
 msgid ""
 "keyed SHA1 with 160bit crypto checksum + 32bit padding ([.filename]#rfc1852."
 "txt#)"
-msgstr ""
+msgstr "带密钥的 SHA1，使用 160bit 加密校验和 + 32bit 填充（[.filename]#rfc1852.txt#）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:790
+#, fuzzy
 msgid ""
 "IPsec (in kernel) and IKE (in userland as \"racoon\") has been tested at "
 "several interoperability test events, and it is known to interoperate with "
 "many other implementations well.  Also, current IPsec implementation as "
 "quite wide coverage for IPsec crypto algorithms documented in RFC (we cover "
 "algorithms without intellectual property issues only)."
-msgstr ""
+msgstr "内核中的 IPsec 和用户态中作为 “racoon” 运行的 IKE 已在多次互操作性测试活动中接受测试，已知它们能与许多其他实现良好互操作。此外，当前的 IPsec 实现对 RFC 中记载的 IPsec 加密算法覆盖面相当广（我们只支持不存在知识产权问题的算法）。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:792
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ECN Consideration on IPsec Tunnels"
-msgstr ""
+msgstr "IPsec 隧道中的 ECN 注意事项"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:795
+#, fuzzy
 msgid ""
 "ECN-friendly IPsec tunnel is supported as described in [.filename]#draft-"
 "ipsec-ecn-00.txt#."
-msgstr ""
+msgstr "支持符合 ECN 的 IPsec 隧道，具体描述见 [.filename]#draft-ipsec-ecn-00.txt#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:800
+#, fuzzy
 msgid ""
 "Normal IPsec tunnel is described in RFC2401.  On encapsulation, IPv4 TOS "
 "field (or, IPv6 traffic class field) will be copied from inner IP header to "
 "outer IP header.  On decapsulation outer IP header will be simply dropped.  "
 "The decapsulation rule is not compatible with ECN, since ECN bit on the "
 "outer IP TOS/traffic class field will be lost."
-msgstr ""
+msgstr "RFC2401 描述了常规 IPsec 隧道。封装时，IPv4 TOS 字段（或 IPv6 流量类别字段）会从内层 IP 报头复制到外层 IP 报头。解封装时，外层 IP 报头会被直接丢弃。解封装规则与 ECN 不兼容，因为外层 IP TOS/流量类别字段中的 ECN 位会丢失。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:803
+#, fuzzy
 msgid ""
 "To make IPsec tunnel ECN-friendly, we should modify encapsulation and "
 "decapsulation procedure.  This is described in http://www.aciri.org/floyd/"
 "papers/draft-ipsec-ecn-00.txt[ http://www.aciri.org/floyd/papers/draft-ipsec-"
 "ecn-00.txt], chapter 3."
-msgstr ""
+msgstr "要使 IPsec 隧道符合 ECN，需要修改封装和解封装过程。相关说明见 link:http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt[ http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt] 的第 3 章。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:805
+#, fuzzy
 msgid ""
 "IPsec tunnel implementation can give you three behaviors, by setting net."
 "inet.ipsec.ecn (or net.inet6.ipsec6.ecn) to some value:"
-msgstr ""
+msgstr "通过将 net.inet.ipsec.ecn（或 net.inet6.ipsec6.ecn）设为某个值，IPsec 隧道实现可以采用以下三种行为："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:807
+#, fuzzy
 msgid "RFC2401: no consideration for ECN (sysctl value -1)"
-msgstr ""
+msgstr "RFC2401：不考虑 ECN（sysctl 值 -1）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:808
+#, fuzzy
 msgid "ECN forbidden (sysctl value 0)"
-msgstr ""
+msgstr "禁止 ECN（sysctl 值 0）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:809
+#, fuzzy
 msgid "ECN allowed (sysctl value 1)"
-msgstr ""
+msgstr "允许 ECN（sysctl 值 1）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:811
+#, fuzzy
 msgid ""
 "Note that the behavior is configurable in per-node manner, not per-SA manner "
 "(draft-ipsec-ecn-00 wants per-SA configuration, but it looks too much for "
 "me)."
-msgstr ""
+msgstr "请注意，此行为按节点配置，而不是按 SA 配置（draft-ipsec-ecn-00 要求按 SA 配置，但我认为这要求过高）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:813
+#, fuzzy
 msgid ""
 "The behavior is summarized as follows (see source code for more detail):"
-msgstr ""
+msgstr "行为总结如下（更多详情请参见源代码）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "encapsulate                     decapsulate\n"
 "                ---                             ---\n"
 "RFC2401         copy all TOS bits               drop TOS bits on outer\n"
 "                from inner to outer.            (use inner TOS bits as is)\n"
-msgstr ""
+msgstr "封装                            解封装\n                ---                             ---\nRFC2401         将所有 TOS 位从内层复制到外层。 丢弃外层 TOS 位\n                                                （原样使用内层 TOS 位）\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:824
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ECN forbidden   copy TOS bits except for ECN    drop TOS bits on outer\n"
 "                (masked with 0xfc) from inner   (use inner TOS bits as is)\n"
 "                to outer.  set ECN bits to 0.\n"
-msgstr ""
+msgstr "禁止 ECN        复制除 ECN 外的 TOS 位          丢弃外层 TOS 位\n                （与 0xfc 进行掩码运算），      （原样使用内层 TOS 位）\n                从内层复制到外层。将 ECN 位设为 0。\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:829
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ECN allowed     copy TOS bits except for ECN    use inner TOS bits with some\n"
 "                CE (masked with 0xfe) from      change.  if outer ECN CE bit\n"
 "                inner to outer.                 is 1, enable ECN CE bit on\n"
 "                set ECN CE bit to 0.            the inner.\n"
-msgstr ""
+msgstr "允许 ECN        复制除 ECN CE 外的 TOS 位       对内层 TOS 位进行一些\n                （与 0xfe 进行掩码运算），      修改。如果外层 ECN CE 位\n                从内层复制到外层。              为 1，则启用内层 ECN CE 位。\n                将 ECN CE 位设为 0。\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:832
+#, fuzzy
 msgid "General strategy for configuration is as follows:"
-msgstr ""
+msgstr "一般配置策略如下："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:834
+#, fuzzy
 msgid ""
 "if both IPsec tunnel endpoint are capable of ECN-friendly behavior, you "
 "should better configure both end to \"ECN allowed\" (sysctl value 1)."
-msgstr ""
+msgstr "如果 IPsec 隧道两端都支持符合 ECN 的行为，最好将两端都配置为“允许 ECN”（sysctl 值 1）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:835
+#, fuzzy
 msgid ""
 "if the other end is very strict about TOS bit, use \"RFC2401\" (sysctl value "
 "-1)."
-msgstr ""
+msgstr "如果对端对 TOS 位的要求非常严格，请使用 “RFC2401”（sysctl 值 -1）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:836
+#, fuzzy
 msgid "in other cases, use \"ECN forbidden\" (sysctl value 0)."
-msgstr ""
+msgstr "其他情况下，请使用“禁止 ECN”（sysctl 值 0）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:838
+#, fuzzy
 msgid "The default behavior is \"ECN forbidden\" (sysctl value 0)."
-msgstr ""
+msgstr "默认行为是“禁止 ECN”（sysctl 值 0）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:840
+#, fuzzy
 msgid "For more information, please refer to:"
-msgstr ""
+msgstr "更多信息请参见："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:842
+#, fuzzy
 msgid ""
 "http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt[ http://www.aciri."
 "org/floyd/papers/draft-ipsec-ecn-00.txt], RFC2481 (Explicit Congestion "
 "Notification), src/sys/netinet6/{ah,esp}_input.c"
-msgstr ""
+msgstr "link:http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt[ http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt]、RFC2481（显式拥塞通知）、src/sys/netinet6/{ah,esp}_input.c"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:844
+#, fuzzy
 msgid ""
 "(Thanks goes to Kenjiro Cho mailto:kjc@csl.sony.co.jp[kjc@csl.sony.co.jp] "
 "for detailed analysis)"
-msgstr ""
+msgstr "（感谢 Kenjiro Cho mailto:kjc@csl.sony.co.jp[kjc@csl.sony.co.jp] 提供详细分析）"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:845
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Interoperability"
-msgstr ""
+msgstr "互操作性"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:849
+#, fuzzy
 msgid ""
 "Here are (some of) platforms that KAME code have tested IPsec/IKE "
 "interoperability in the past.  Note that both ends may have modified their "
 "implementation, so use the following list just for reference purposes."
-msgstr ""
+msgstr "以下是 KAME 代码过去测试过 IPsec/IKE 互操作性的部分平台。请注意，双方的实现都可能已修改，因此此列表仅供参考。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/ipv6/_index.adoc:850
+#, fuzzy
 msgid ""
 "Altiga, Ashley-laurent (vpcom.com), Data Fellows (F-Secure), Ericsson ACC, "
 "FreeS/WAN, HITACHI, IBM AIX(R), IIJ, Intel, Microsoft(R) Windows NT(R), NIST "
 "(linux IPsec + plutoplus), Netscreen, OpenBSD, RedCreek, Routerware, SSH, "
 "Secure Computing, Soliton, Toshiba, VPNet, Yamaha RT100i"
-msgstr ""
+msgstr "Altiga、Ashley-laurent (vpcom.com)、Data Fellows (F-Secure)、Ericsson ACC、FreeS/WAN、HITACHI、IBM AIX(R)、IIJ、Intel、Microsoft(R) Windows NT(R)、NIST (linux IPsec + plutoplus)、Netscreen、OpenBSD、RedCreek、Routerware、SSH、Secure Computing、Soliton、Toshiba、VPNet、Yamaha RT100i"

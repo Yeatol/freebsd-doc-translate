@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to get FreeBSD: Distribution services, mirrors, code repositories, and SSH keys"
-msgstr ""
+msgstr "如何获取 FreeBSD：发行服务、镜像站、代码仓库和 SSH 密钥"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part V. Appendices"
-msgstr ""
+msgstr "第五部分：附录"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appendix A. Obtaining FreeBSD"
-msgstr ""
+msgstr "附录 A：获取 FreeBSD"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:15
@@ -44,12 +44,13 @@ msgstr "获取 FreeBSD"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mirrors"
-msgstr ""
+msgstr "镜像站"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:56
+#, fuzzy
 msgid ""
 "The official mirrors of the FreeBSD project are made up of many machines "
 "operated by the project cluster administrators and behind GeoDNS to direct "
@@ -57,25 +58,26 @@ msgid ""
 "Brazil, France, Japan (two sites), Malaysia, South Africa, Sweden, Taiwan, "
 "United States of America (California - two sites, Illinois - two sites, New "
 "Jersey, and Washington)."
-msgstr ""
+msgstr "FreeBSD 项目的官方镜像站由许多机器组成，这些机器由项目集群管理员运营，并通过 GeoDNS 将用户引导至最近的可用镜像站。当前位置包括澳大利亚、巴西、法国、日本（两个站点）、马来西亚、南非、瑞典、中国台湾，以及美国（加利福尼亚州两个站点、伊利诺伊州两个站点、新泽西州和华盛顿州）。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:58
+#, fuzzy
 msgid "Official mirrors service:"
-msgstr ""
+msgstr "官方镜像服务："
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Service Name"
-msgstr ""
+msgstr "服务名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:61
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Protocols"
-msgstr ""
+msgstr "协议"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:63
@@ -99,9 +101,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Web interface for the FreeBSD Git repositories."
-msgstr ""
+msgstr "FreeBSD Git 仓库的 Web 界面。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:68
@@ -118,9 +120,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Documentation Portal."
-msgstr ""
+msgstr "FreeBSD 文档门户。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:72
@@ -130,15 +132,15 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://download.FreeBSD.org/[https] link:ftp://download.FreeBSD.org/pub/FreeBSD/[ftp]"
-msgstr ""
+msgstr "link:https://download.FreeBSD.org/[https] link:ftp://download.FreeBSD.org/pub/FreeBSD/[ftp]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Same content as `ftp.FreeBSD.org`, `ftp` is a legacy name; `download.FreeBSD.org` is recommended."
-msgstr ""
+msgstr "内容与 `ftp.FreeBSD.org` 相同；`ftp` 是旧名称，推荐使用 `download.FreeBSD.org`。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:76
@@ -148,15 +150,15 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "git over `https` and `ssh`"
-msgstr ""
+msgstr "通过 `https` 和 `ssh` 使用 git"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "More details on link:https://docs.freebsd.org/en/books/handbook/mirrors/#git[using git] section."
-msgstr ""
+msgstr "更多详情请参阅 link:https://docs.freebsd.org/en/books/handbook/mirrors/#git[使用 git] 一节。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:80
@@ -166,33 +168,33 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pkg[8] over `http` and `https`"
-msgstr ""
+msgstr "通过 `http` 和 `https` 使用 man:pkg[8]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Official FreeBSD package repositories used by the man:pkg[8] program."
-msgstr ""
+msgstr "man:pkg[8] 程序使用的 FreeBSD 官方软件包仓库。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "**vuxml.FreeBSD.org** / **www.VuXML.org**"
-msgstr ""
+msgstr "**vuxml.FreeBSD.org** / **www.VuXML.org**"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://www.vuxml.org/[https]"
-msgstr ""
+msgstr "link:https://www.vuxml.org/[https]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Project VuXML web page. `pkg audit` fetches the list of vulnerabilities from this service."
-msgstr ""
+msgstr "FreeBSD 项目的 VuXML 网页。`pkg audit` 会从此服务获取漏洞列表。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:88
@@ -209,59 +211,64 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Website."
-msgstr ""
+msgstr "FreeBSD 网站。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:93
+#, fuzzy
 msgid "All official mirrors support IPv4 and IPv6."
-msgstr ""
+msgstr "所有官方镜像站均支持 IPv4 和 IPv6。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:95
+#, fuzzy
 msgid ""
 "http://ftp-archive.FreeBSD.org is not in the GeoDNS Infrastructure, hosted "
 "in only one location (US)."
-msgstr ""
+msgstr "link:http://ftp-archive.FreeBSD.org[] 不在 GeoDNS 基础设施中，仅托管于一个位置（美国）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:97
+#, fuzzy
 msgid ""
 "The project is looking for new locations; those willing to sponsor, please "
 "reach out to the Cluster Administrators team for more information."
-msgstr ""
+msgstr "项目正在寻找新的托管地点；有意提供赞助者请联系集群管理员团队，了解更多信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:99
+#, fuzzy
 msgid ""
 "link:https://www.fastly.com[Fastly] CDN is used to serve **download.FreeBSD."
 "org** and **pkg.FreeBSD.org**, providing acceleration, caching, and global "
 "bandwidth distribution for FreeBSD images and packages."
-msgstr ""
+msgstr "FreeBSD 使用 link:https://www.fastly.com[Fastly] CDN 提供 **download.FreeBSD.org** 和 **pkg.FreeBSD.org** 服务，为 FreeBSD 镜像和软件包提供加速、缓存及全球带宽分发。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:101
+#, fuzzy
 msgid "Mirror list maintained by the community and other companies:"
-msgstr ""
+msgstr "由社区和其他公司维护的镜像站列表："
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Country"
-msgstr ""
+msgstr "国家/地区"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hostname"
-msgstr ""
+msgstr "主机名"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Australia icon:envelope[link=mailto:{mirrors-australia-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "澳大利亚 icon:envelope[link=mailto:{mirrors-australia-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:108
@@ -272,9 +279,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.au.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.au.FreeBSD.org/pub/FreeBSD[http_v6] link:rsync://ftp.au.FreeBSD.org[rsync] link:rsync://ftp.au.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.au.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.au.FreeBSD.org/pub/FreeBSD[http_v6] link:rsync://ftp.au.FreeBSD.org[rsync] link:rsync://ftp.au.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:112
@@ -285,15 +292,15 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp3.au.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp3.au.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp3.au.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp3.au.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp3.au.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp3.au.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Brazil icon:envelope[link=mailto:{mirrors-brazil-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "巴西 icon:envelope[link=mailto:{mirrors-brazil-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:116
@@ -304,9 +311,9 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp2.br.FreeBSD.org/FreeBSD[http] link:rsync://ftp2.br.FreeBSD.org[rsync] link:rsync://ftp2.br.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp2.br.FreeBSD.org/FreeBSD[http] link:rsync://ftp2.br.FreeBSD.org[rsync] link:rsync://ftp2.br.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:120
@@ -317,15 +324,15 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp3.br.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp3.br.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp3.br.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp3.br.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp3.br.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp3.br.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bulgaria icon:envelope[link=mailto:{mirrors-bulgaria-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "保加利亚 icon:envelope[link=mailto:{mirrors-bulgaria-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:124
@@ -336,15 +343,15 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:ftp://ftp.bg.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.bg.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.bg.FreeBSD.org[rsync] link:rsync://ftp.bg.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:ftp://ftp.bg.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.bg.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.bg.FreeBSD.org[rsync] link:rsync://ftp.bg.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Czech Republic icon:envelope[link=mailto:{mirrors-czech-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "捷克 icon:envelope[link=mailto:{mirrors-czech-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:128
@@ -355,15 +362,15 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.cz.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.cz.FreeBSD.org/pub/FreeBSD[http_v6] link:rsync://ftp.cz.FreeBSD.org[rsync] link:rsync://ftp.cz.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.cz.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.cz.FreeBSD.org/pub/FreeBSD[http_v6] link:rsync://ftp.cz.FreeBSD.org[rsync] link:rsync://ftp.cz.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Denmark icon:envelope[link=mailto:{mirrors-denmark-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "丹麦 icon:envelope[link=mailto:{mirrors-denmark-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:132
@@ -374,15 +381,15 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.dk.FreeBSD.org/FreeBSD/[http] link:http://ftp.dk.FreeBSD.org/FreeBSD/[http_v6] link:ftp://ftp.dk.FreeBSD.org/FreeBSD/[ftp] link:ftp://ftp.dk.FreeBSD.org/FreeBSD/[ftp_v6] link:rsync://ftp.dk.FreeBSD.org/FreeBSD/[rsync] link:rsync://ftp.dk.FreeBSD.org/FreeBSD/[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.dk.FreeBSD.org/FreeBSD/[http] link:http://ftp.dk.FreeBSD.org/FreeBSD/[http_v6] link:ftp://ftp.dk.FreeBSD.org/FreeBSD/[ftp] link:ftp://ftp.dk.FreeBSD.org/FreeBSD/[ftp_v6] link:rsync://ftp.dk.FreeBSD.org/FreeBSD/[rsync] link:rsync://ftp.dk.FreeBSD.org/FreeBSD/[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Finland icon:envelope[link=mailto:{mirrors-finland-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "芬兰 icon:envelope[link=mailto:{mirrors-finland-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:136
@@ -400,9 +407,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "France icon:envelope[link=mailto:{mirrors-france-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "法国 icon:envelope[link=mailto:{mirrors-france-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:140
@@ -413,9 +420,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.fr.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.fr.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.fr.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.fr.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.fr.FreeBSD.org[rsync] link:rsync://ftp.fr.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.fr.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.fr.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.fr.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.fr.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.fr.FreeBSD.org[rsync] link:rsync://ftp.fr.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:144
@@ -440,15 +447,15 @@ msgstr "rsync://ftp6.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp6.fr.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp6.fr.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp6.fr.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp6.fr.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp6.fr.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp6.fr.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Germany icon:envelope[link=mailto:{mirrors-germany-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "德国 icon:envelope[link=mailto:{mirrors-germany-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:152
@@ -459,9 +466,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.de.FreeBSD.org/FreeBSD[http] link:http://ftp.de.FreeBSD.org/FreeBSD[http_v6] link:https://ftp.de.FreeBSD.org/FreeBSD[https] link:https://ftp.de.FreeBSD.org/FreeBSD[https_v6] link:ftp://ftp.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.de.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.de.FreeBSD.org/FreeBSD[rsync] link:rsync://ftp.de.FreeBSD.org/FreeBSD[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.de.FreeBSD.org/FreeBSD[http] link:http://ftp.de.FreeBSD.org/FreeBSD[http_v6] link:https://ftp.de.FreeBSD.org/FreeBSD[https] link:https://ftp.de.FreeBSD.org/FreeBSD[https_v6] link:ftp://ftp.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.de.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.de.FreeBSD.org/FreeBSD[rsync] link:rsync://ftp.de.FreeBSD.org/FreeBSD[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:156
@@ -472,9 +479,9 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp1.de.FreeBSD.org/pub/FreeBSD[http] link:http://ftp1.de.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp1.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp1.de.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp1.de.FreeBSD.org[rsync] link:rsync://ftp1.de.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp1.de.FreeBSD.org/pub/FreeBSD[http] link:http://ftp1.de.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp1.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp1.de.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp1.de.FreeBSD.org[rsync] link:rsync://ftp1.de.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:160
@@ -485,9 +492,9 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp2.de.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.de.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp2.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp2.de.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp2.de.FreeBSD.org[rsync] link:rsync://ftp2.de.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp2.de.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.de.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp2.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp2.de.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp2.de.FreeBSD.org[rsync] link:rsync://ftp2.de.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:164
@@ -498,9 +505,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:ftp://ftp5.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp5.de.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:ftp://ftp5.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp5.de.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:168
@@ -511,15 +518,15 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp7.de.FreeBSD.org/pub/FreeBSD[http] link:http://ftp7.de.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp7.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp7.de.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:http://ftp7.de.FreeBSD.org/pub/FreeBSD[http] link:http://ftp7.de.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp7.de.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp7.de.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Greece icon:envelope[link=mailto:{mirrors-greece-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "希腊 icon:envelope[link=mailto:{mirrors-greece-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:172
@@ -530,9 +537,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.gr.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.gr.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.gr.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.gr.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:http://ftp.gr.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.gr.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.gr.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.gr.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:176
@@ -543,15 +550,15 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp2.gr.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.gr.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp2.gr.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp2.gr.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp2.gr.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp2.gr.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.gr.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp2.gr.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp2.gr.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp2.gr.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Japan icon:envelope[link=mailto:{mirrors-japan-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "日本 icon:envelope[link=mailto:{mirrors-japan-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:180
@@ -562,9 +569,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.jp.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.jp.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.jp.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.jp.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.jp.FreeBSD.org[rsync] link:rsync://ftp.jp.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.jp.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.jp.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.jp.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.jp.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.jp.FreeBSD.org[rsync] link:rsync://ftp.jp.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:184
@@ -575,9 +582,9 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:ftp://ftp2.jp.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp2.jp.FreeBSD.org[rsync] link:rsync://ftp2.jp.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:ftp://ftp2.jp.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp2.jp.FreeBSD.org[rsync] link:rsync://ftp2.jp.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:188
@@ -588,9 +595,9 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp3.jp.FreeBSD.org/pub/FreeBSD[http] link:rsync://ftp3.jp.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp3.jp.FreeBSD.org/pub/FreeBSD[http] link:rsync://ftp3.jp.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:192
@@ -615,21 +622,21 @@ msgstr "rsync://ftp6.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp6.jp.FreeBSD.org/pub/FreeBSD[http] link:http://ftp6.jp.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp6.jp.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp6.jp.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp6.jp.FreeBSD.org[rsync] link:rsync://ftp6.jp.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp6.jp.FreeBSD.org/pub/FreeBSD[http] link:http://ftp6.jp.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp6.jp.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp6.jp.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp6.jp.FreeBSD.org[rsync] link:rsync://ftp6.jp.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kazakhstan icon:envelope[link=mailto:support@ps.kz, title=\"mirror contact\"]"
-msgstr ""
+msgstr "哈萨克斯坦 icon:envelope[link=mailto:support@ps.kz, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mirror.ps.kz"
-msgstr ""
+msgstr "mirror.ps.kz"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:202
@@ -640,9 +647,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mirror.neolabs.kz"
-msgstr ""
+msgstr "mirror.neolabs.kz"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:206
@@ -653,9 +660,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Korea icon:envelope[link=mailto:{mirrors-korea-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "韩国 icon:envelope[link=mailto:{mirrors-korea-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:208
@@ -666,9 +673,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.kr.FreeBSD.org/pub/FreeBSD[http] link:https://ftp.kr.FreeBSD.org/pub/FreeBSD[https] link:ftp://ftp.kr.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp.kr.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp.kr.FreeBSD.org/pub/FreeBSD[http] link:https://ftp.kr.FreeBSD.org/pub/FreeBSD[https] link:ftp://ftp.kr.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp.kr.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:212
@@ -686,9 +693,9 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Latvia icon:envelope[link=mailto:{mirrors-latvia-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "拉脱维亚 icon:envelope[link=mailto:{mirrors-latvia-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:216
@@ -705,9 +712,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Netherlands icon:envelope[link=mailto:{mirrors-netherlands-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "荷兰 icon:envelope[link=mailto:{mirrors-netherlands-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:220
@@ -718,9 +725,9 @@ msgstr "rsync://ftp.nl.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.nl.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.nl.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.nl.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.nl.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.nl.FreeBSD.org[rsync] link:rsync://ftp.nl.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.nl.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.nl.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.nl.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.nl.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.nl.FreeBSD.org[rsync] link:rsync://ftp.nl.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:224
@@ -731,15 +738,15 @@ msgstr "rsync://ftp.nl.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp2.nl.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp2.nl.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp2.nl.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp2.nl.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp2.nl.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp2.nl.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mirror.nl.altushost.com"
-msgstr ""
+msgstr "mirror.nl.altushost.com"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:230
@@ -750,9 +757,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New Zealand icon:envelope[link=mailto:{mirrors-new-zealand-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "新西兰 icon:envelope[link=mailto:{mirrors-new-zealand-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:232
@@ -762,15 +769,15 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.nz.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp.nz.FreeBSD.org/pub/FreeBSD[ftp]"
-msgstr ""
+msgstr "link:http://ftp.nz.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp.nz.FreeBSD.org/pub/FreeBSD[ftp]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Norway icon:envelope[link=mailto:{mirrors-norway-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "挪威 icon:envelope[link=mailto:{mirrors-norway-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:236
@@ -780,15 +787,15 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:ftp://ftp.no.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.no.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.no.FreeBSD.org[rsync] link:rsync://ftp.no.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:ftp://ftp.no.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.no.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.no.FreeBSD.org[rsync] link:rsync://ftp.no.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Poland icon:envelope[link=mailto:{mirrors-poland-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "波兰 icon:envelope[link=mailto:{mirrors-poland-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:240
@@ -799,15 +806,15 @@ msgstr "rsync://ftp.nl.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.pl.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.pl.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.pl.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp.pl.FreeBSD.org[rsync] link:rsync://ftp.pl.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.pl.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.pl.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.pl.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp.pl.FreeBSD.org[rsync] link:rsync://ftp.pl.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Russia icon:envelope[link=mailto:{mirrors-russia-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "俄罗斯 icon:envelope[link=mailto:{mirrors-russia-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:244
@@ -818,9 +825,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.ru.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.ru.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.ru.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.ru.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.ru.FreeBSD.org[rsync] link:rsync://ftp.ru.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.ru.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.ru.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.ru.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.ru.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.ru.FreeBSD.org[rsync] link:rsync://ftp.ru.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:248
@@ -831,15 +838,15 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://ftp2.ru.FreeBSD.org/pub/FreeBSD[https] link:ftp://ftp2.ru.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp2.ru.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:https://ftp2.ru.FreeBSD.org/pub/FreeBSD[https] link:ftp://ftp2.ru.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp2.ru.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Slovenia icon:envelope[link=mailto:{mirrors-slovenia-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "斯洛文尼亚 icon:envelope[link=mailto:{mirrors-slovenia-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:252
@@ -849,15 +856,15 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.si.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.si.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.si.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.si.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:http://ftp.si.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.si.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.si.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.si.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "South Africa icon:envelope[link=mailto:{mirrors-south-africa-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "南非 icon:envelope[link=mailto:{mirrors-south-africa-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:256
@@ -868,9 +875,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp2.za.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.za.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp2.za.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:http://ftp2.za.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.za.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp2.za.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:260
@@ -881,15 +888,15 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp4.za.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp4.za.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp4.za.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:http://ftp4.za.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp4.za.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp4.za.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sweden icon:envelope[link=mailto:{mirrors-sweden-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "瑞典 icon:envelope[link=mailto:{mirrors-sweden-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:264
@@ -899,15 +906,15 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.se.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.se.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.se.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.se.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.se.FreeBSD.org[rsync] link:rsync://ftp.se.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.se.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.se.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.se.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.se.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.se.FreeBSD.org[rsync] link:rsync://ftp.se.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mirror.se.altushost.com"
-msgstr ""
+msgstr "mirror.se.altushost.com"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:270
@@ -918,9 +925,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Taiwan icon:envelope[link=mailto:{mirrors-taiwan-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "中国台湾 icon:envelope[link=mailto:{mirrors-taiwan-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:272
@@ -931,9 +938,9 @@ msgstr "rsync://ftp.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://ftp4.tw.FreeBSD.org/pub/FreeBSD[https] link:ftp://ftp4.tw.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp4.tw.FreeBSD.org[rsync]"
-msgstr ""
+msgstr "link:https://ftp4.tw.FreeBSD.org/pub/FreeBSD[https] link:ftp://ftp4.tw.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp4.tw.FreeBSD.org[rsync]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:276
@@ -944,15 +951,15 @@ msgstr "rsync://ftp.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp5.tw.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp5.tw.FreeBSD.org/pub/FreeBSD[ftp]"
-msgstr ""
+msgstr "link:http://ftp5.tw.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp5.tw.FreeBSD.org/pub/FreeBSD[ftp]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ukraine icon:envelope[link=mailto:{mirrors-ukraine-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "乌克兰 icon:envelope[link=mailto:{mirrors-ukraine-email}, title=\"镜像站联系\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:280
@@ -963,15 +970,15 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.ua.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp.ua.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.ua.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.ua.FreeBSD.org[rsync] link:rsync://ftp.ua.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.ua.FreeBSD.org/pub/FreeBSD[http] link:ftp://ftp.ua.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.ua.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.ua.FreeBSD.org[rsync] link:rsync://ftp.ua.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "United Kingdom icon:envelope[link=mailto:{mirrors-uk-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "英国 icon:envelope[link=mailto:{mirrors-uk-email}, title=\"镜像站联系人\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:284
@@ -982,9 +989,9 @@ msgstr "rsync://ftp.cz.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp.uk.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.uk.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.uk.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.uk.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.uk.FreeBSD.org[rsync] link:rsync://ftp.uk.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp.uk.FreeBSD.org/pub/FreeBSD[http] link:http://ftp.uk.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp.uk.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp.uk.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp.uk.FreeBSD.org[rsync] link:rsync://ftp.uk.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:288
@@ -995,15 +1002,15 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp2.uk.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.uk.FreeBSD.org/pub/FreeBSD[http_v6] link:https://ftp2.uk.FreeBSD.org/pub/FreeBSD[https] link:https://ftp2.uk.FreeBSD.org/pub/FreeBSD[https_v6] link:ftp://ftp2.uk.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp2.uk.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:http://ftp2.uk.FreeBSD.org/pub/FreeBSD[http] link:http://ftp2.uk.FreeBSD.org/pub/FreeBSD[http_v6] link:https://ftp2.uk.FreeBSD.org/pub/FreeBSD[https] link:https://ftp2.uk.FreeBSD.org/pub/FreeBSD[https_v6] link:ftp://ftp2.uk.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp2.uk.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "United States of America icon:envelope[link=mailto:{mirrors-us-email}, title=\"mirror contact\"]"
-msgstr ""
+msgstr "美利坚合众国 icon:envelope[link=mailto:{mirrors-us-email}, title=\"镜像站联系人\"]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:292
@@ -1014,9 +1021,9 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp11.FreeBSD.org/pub/FreeBSD[http] link:http://ftp11.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp11.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp11.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp11.FreeBSD.org[rsync] link:rsync://ftp11.FreeBSD.org[rsync_v6]"
-msgstr ""
+msgstr "link:http://ftp11.FreeBSD.org/pub/FreeBSD[http] link:http://ftp11.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp11.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp11.FreeBSD.org/pub/FreeBSD[ftp_v6] link:rsync://ftp11.FreeBSD.org[rsync] link:rsync://ftp11.FreeBSD.org[rsync_v6]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:296
@@ -1027,9 +1034,9 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:ftp://ftp14.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp14.FreeBSD.org[rsync] (Former official tier 1)"
-msgstr ""
+msgstr "link:ftp://ftp14.FreeBSD.org/pub/FreeBSD[ftp] link:rsync://ftp14.FreeBSD.org[rsync]（曾为官方 Tier 1 镜像站）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:300
@@ -1039,22 +1046,23 @@ msgstr "svn.FreeBSD.org\n"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:http://ftp5.FreeBSD.org/pub/FreeBSD[http] link:http://ftp5.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp5.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp5.FreeBSD.org/pub/FreeBSD[ftp_v6]"
-msgstr ""
+msgstr "link:http://ftp5.FreeBSD.org/pub/FreeBSD[http] link:http://ftp5.FreeBSD.org/pub/FreeBSD[http_v6] link:ftp://ftp5.FreeBSD.org/pub/FreeBSD[ftp] link:ftp://ftp5.FreeBSD.org/pub/FreeBSD[ftp_v6]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:304
+#, fuzzy
 msgid ""
 "The current list of protocols supported by the community mirrors was last "
 "updated on 2022-01-31, and it's not guaranteed."
-msgstr ""
+msgstr "社区镜像站支持的协议列表最近一次更新于 2022-01-31，但不保证信息准确。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Git"
-msgstr ""
+msgstr "使用 Git"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:309
@@ -1064,27 +1072,30 @@ msgstr "介绍"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:313
+#, fuzzy
 msgid ""
 "As of December 2020, FreeBSD uses git as the primary version control system "
 "for storing all of FreeBSD's base source code and documentation.  As of "
 "April 2021, FreeBSD uses git as the only version control system for storing "
 "all of FreeBSD's Ports Collection."
-msgstr ""
+msgstr "截至 2020 年 12 月，FreeBSD 使用 git 作为存储所有 FreeBSD 基本系统源代码和文档的主要版本控制系统。截至 2021 年 4 月，FreeBSD 使用 git 作为存储所有 FreeBSD Ports Collection 内容的唯一版本控制系统。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:318
+#, fuzzy
 msgid ""
 "Git is generally a developer tool.  Users may prefer to use `freebsd-update` "
 "(crossref:cutting-edge[updating-upgrading-freebsdupdate,“FreeBSD Update”]) "
 "to update the FreeBSD base system."
-msgstr ""
+msgstr "Git 通常是开发者使用的工具。用户可能更愿意使用 `freebsd-update`（crossref:cutting-edge[updating-upgrading-freebsdupdate，“FreeBSD 更新”]）来更新 FreeBSD 基本系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:321
+#, fuzzy
 msgid ""
 "This section demonstrates how to install Git on a FreeBSD system and use it "
 "to create a local copy of a FreeBSD source code repository."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上安装 Git，并使用它创建 FreeBSD 源代码仓库的本地副本。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:323
@@ -1094,30 +1105,33 @@ msgstr "安装"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:326
+#, fuzzy
 msgid "Git can be installed from the Ports Collection, or as a package:"
-msgstr ""
+msgstr "可以从 Ports Collection 安装 Git，也可以将其作为软件包安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install git\n"
-msgstr ""
+msgstr "# pkg install git\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running Git"
-msgstr ""
+msgstr "运行 Git"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:337
+#, fuzzy
 msgid ""
 "To fetch a clean copy of the sources into a local directory, use `git "
 "clone`.  This directory of files is called the _working tree_."
-msgstr ""
+msgstr "要将一份干净的源代码副本获取到本地目录中，请使用 `git clone`。这个文件目录称为 __工作树__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:342
+#, fuzzy
 msgid ""
 "Git uses URLs to designate a repository.  There are three different "
 "repositories, `src` for the FreeBSD system source code, `doc` for "
@@ -1125,31 +1139,31 @@ msgid ""
 "reachable over two different protocols: HTTPS and SSH.  For example, the URL "
 "`https://git.FreeBSD.org/src.git` specifies the main branch of the `src` "
 "repository, using the `https` protocol."
-msgstr ""
+msgstr "Git 使用 URL 指定仓库。共有三个不同的仓库：`src` 用于 FreeBSD 系统源代码，`doc` 用于文档，`ports` 用于 FreeBSD Ports Collection。三个仓库都可通过两种不同的协议访问：HTTPS 和 SSH。例如，URL `https://git.FreeBSD.org/src.git` 指定了使用 `https` 协议的 `src` 仓库主分支。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Git Repository URL Table"
-msgstr ""
+msgstr "FreeBSD Git 仓库 URL 表"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Item"
-msgstr ""
+msgstr "项目"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Git URL"
-msgstr ""
+msgstr "Git URL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read-only src repo via HTTPS"
-msgstr ""
+msgstr "通过 HTTPS 只读访问 src 仓库"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:349
@@ -1160,21 +1174,21 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read-only src repo via anon-ssh"
-msgstr ""
+msgstr "通过 anon-ssh 只读访问 src 仓库"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ssh://anongit@git.FreeBSD.org/src.git`"
-msgstr ""
+msgstr "`ssh://anongit@git.FreeBSD.org/src.git`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read-only doc repo via HTTPS"
-msgstr ""
+msgstr "通过 HTTPS 只读访问 doc 仓库"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:351
@@ -1185,21 +1199,21 @@ msgstr "rsync://ftp13.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read-only doc repo via anon-ssh"
-msgstr ""
+msgstr "通过 anon-ssh 只读访问 doc 仓库"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ssh://anongit@git.FreeBSD.org/doc.git`"
-msgstr ""
+msgstr "`ssh://anongit@git.FreeBSD.org/doc.git`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read-only ports repo via HTTPS"
-msgstr ""
+msgstr "通过 HTTPS 只读访问 ports 仓库"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:353
@@ -1210,33 +1224,35 @@ msgstr "rsync://ftp2.tw.FreeBSD.org/"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Read-only ports repo via anon-ssh"
-msgstr ""
+msgstr "通过 anon-ssh 只读访问 ports 仓库"
 
 #. type: Table
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ssh://anongit@git.FreeBSD.org/ports.git`"
-msgstr ""
+msgstr "`ssh://anongit@git.FreeBSD.org/ports.git`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:358
+#, fuzzy
 msgid ""
 "External mirrors maintained by project members are also available; please "
 "refer to the crossref:mirrors[external-mirrors, External mirrors] section."
-msgstr ""
+msgstr "项目成员还维护着外部镜像站；请参阅 crossref:mirrors[external-mirrors,外部镜像站] 一节。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:360
+#, fuzzy
 msgid "To clone a copy of the FreeBSD system source code repository:"
-msgstr ""
+msgstr "要克隆 FreeBSD 系统源代码仓库："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git clone -o freebsd https://git.FreeBSD.org/src.git /usr/src\n"
-msgstr ""
+msgstr "# git clone -o freebsd https://git.FreeBSD.org/src.git /usr/src\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:369
@@ -1252,18 +1268,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:372
+#, fuzzy
 msgid ""
 "Initially, the working tree contains source code for the `main` branch, "
 "which corresponds to CURRENT.  To switch to 13-STABLE instead:"
-msgstr ""
+msgstr "最初，工作树包含 `main` 分支的源代码，该分支对应 CURRENT。要切换到 13-STABLE："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# git checkout stable/13\n"
-msgstr ""
+msgstr "# cd /usr/src\n# git checkout stable/13\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:380
@@ -1275,11 +1292,11 @@ msgstr "要更新上述示例所建立的<filename>/usr/ports</filename>可执�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src\n"
 "# git pull --rebase\n"
-msgstr ""
+msgstr "# cd /usr/src\n# git pull --rebase\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:388
@@ -1290,108 +1307,120 @@ msgstr "因为只会传输有更新过的文件，更新的动作会比取出还
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Web-based repository browser"
-msgstr ""
+msgstr "基于 Web 的仓库浏览器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:392
+#, fuzzy
 msgid ""
 "The FreeBSD project uses cgit as the web-based repository browser: link:"
 "https://cgit.FreeBSD.org/[https://cgit.FreeBSD.org/]."
-msgstr ""
+msgstr "FreeBSD 项目使用 cgit 作为基于 Web 的仓库浏览器：link:https://cgit.FreeBSD.org/[https://cgit.FreeBSD.org/]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "For Developers"
-msgstr ""
+msgstr "开发者须知"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:396
+#, fuzzy
 msgid ""
 "For information about write access to repositories see the extref:"
 "{committers-guide}[Committer's Guide, git-mini-primer]."
-msgstr ""
+msgstr "有关仓库写入权限的信息，请参阅 extref:{committers-guide}[提交者指南，git-mini-primer]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "External mirrors"
-msgstr ""
+msgstr "外部镜像站"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:403
+#, fuzzy
 msgid ""
 "Those mirrors are not hosted in FreeBSD.org but still maintained by the "
 "project members.  Users and developers are welcome to pull or browse "
 "repositories on those mirrors.  Pull requests for the `doc` and `src` GitHub "
 "repositories are being accepted; otherwise, the project workflow with those "
 "mirrors is still under discussion."
-msgstr ""
+msgstr "这些镜像站并非托管在 FreeBSD.org 上，但仍由项目成员维护。欢迎用户和开发者从这些镜像站拉取或浏览仓库。目前接受针对 GitHub 上 `doc` 和 `src` 仓库的拉取请求；除此之外，项目使用这些镜像站的工作流程仍在讨论中。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:404
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Codeberg"
-msgstr ""
+msgstr "Codeberg"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:406
+#, fuzzy
 msgid "doc: https://codeberg.org/FreeBSD/freebsd-doc"
-msgstr ""
+msgstr "doc：link:https://codeberg.org/FreeBSD/freebsd-doc[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:407
+#, fuzzy
 msgid "ports: https://codeberg.org/FreeBSD/freebsd-ports"
-msgstr ""
+msgstr "ports：link:https://codeberg.org/FreeBSD/freebsd-ports[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:408
+#, fuzzy
 msgid "src: https://codeberg.org/FreeBSD/freebsd-src"
-msgstr ""
+msgstr "src：link:https://codeberg.org/FreeBSD/freebsd-src[]"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:409
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:411
+#, fuzzy
 msgid "doc: https://github.com/freebsd/freebsd-doc"
-msgstr ""
+msgstr "doc：link:https://github.com/freebsd/freebsd-doc[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:412
+#, fuzzy
 msgid "ports: https://github.com/freebsd/freebsd-ports"
-msgstr ""
+msgstr "ports：link:https://github.com/freebsd/freebsd-ports[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:413
+#, fuzzy
 msgid "src: https://github.com/freebsd/freebsd-src"
-msgstr ""
+msgstr "src：link:https://github.com/freebsd/freebsd-src[]"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GitLab"
-msgstr ""
+msgstr "GitLab"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:416
+#, fuzzy
 msgid "doc: https://gitlab.com/FreeBSD/freebsd-doc"
-msgstr ""
+msgstr "doc：link:https://gitlab.com/FreeBSD/freebsd-doc[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:417
+#, fuzzy
 msgid "ports: https://gitlab.com/FreeBSD/freebsd-ports"
-msgstr ""
+msgstr "ports：link:https://gitlab.com/FreeBSD/freebsd-ports[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:418
+#, fuzzy
 msgid "src: https://gitlab.com/FreeBSD/freebsd-src"
-msgstr ""
+msgstr "src：link:https://gitlab.com/FreeBSD/freebsd-src[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:419
@@ -1401,71 +1430,81 @@ msgstr "邮件列表"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:423
+#, fuzzy
 msgid ""
 "The main mailing list for general usage and questions about git in the "
 "FreeBSD project is https://lists.freebsd.org/subscription/freebsd-"
 "git[freebsd-git].  For more details, including commit messages lists, see "
 "the crossref:handbook/eresources[eresources-mail, Mailing Lists] chapter."
-msgstr ""
+msgstr "FreeBSD 项目中用于讨论 git 一般使用问题的主要邮件列表是 link:https://lists.freebsd.org/subscription/freebsd-git[freebsd-git]。有关更多详情，包括提交消息邮件列表，请参阅 crossref:handbook/eresources[eresources-mail，邮件列表] 一章。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SSH host keys"
-msgstr ""
+msgstr "SSH 主机密钥"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:427
+#, fuzzy
 msgid "gitrepo.FreeBSD.org host key fingerprints:"
-msgstr ""
+msgstr "gitrepo.FreeBSD.org 主机密钥指纹："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:428
+#, fuzzy
 msgid ""
 "ECDSA key fingerprint is `SHA256:seWO5D27ySURcx4bknTNKlC1mgai0whP443PAKEvvZA`"
-msgstr ""
+msgstr "ECDSA 密钥指纹为 `SHA256:seWO5D27ySURcx4bknTNKlC1mgai0whP443PAKEvvZA`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:429
+#, fuzzy
 msgid ""
 "ED25519 key fingerprint is `SHA256:"
 "lNR6i4BEOaaUhmDHBA1WJsO7H3KtvjE2r5q4sOxtIWo`"
-msgstr ""
+msgstr "ED25519 密钥指纹为 `SHA256:lNR6i4BEOaaUhmDHBA1WJsO7H3KtvjE2r5q4sOxtIWo`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:430
+#, fuzzy
 msgid ""
 "RSA key fingerprint is `SHA256:f453CUEFXEJAXlKeEHV+ajJfeEfx9MdKQUD7lIscnQI`"
-msgstr ""
+msgstr "RSA 密钥指纹为 `SHA256:f453CUEFXEJAXlKeEHV+ajJfeEfx9MdKQUD7lIscnQI`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:432
+#, fuzzy
 msgid "git.FreeBSD.org host key fingerprints:"
-msgstr ""
+msgstr "git.FreeBSD.org 主机密钥指纹："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:433
+#, fuzzy
 msgid ""
 "ECDSA key fingerprint is `SHA256:/UlirUAsGiitupxmtsn7f9b7zCWd0vCs4Yo/tpVWP9w`"
-msgstr ""
+msgstr "ECDSA 密钥指纹为 `SHA256:/UlirUAsGiitupxmtsn7f9b7zCWd0vCs4Yo/tpVWP9w`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:434
+#, fuzzy
 msgid ""
 "ED25519 key fingerprint is `SHA256:"
 "y1ljKrKMD3lDObRUG3xJ9gXwEIuqnh306tSyFd1tuZE`"
-msgstr ""
+msgstr "ED25519 密钥指纹为 `SHA256:y1ljKrKMD3lDObRUG3xJ9gXwEIuqnh306tSyFd1tuZE`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:435
+#, fuzzy
 msgid ""
 "RSA key fingerprint is `SHA256:jBe6FQGoH4HjvrIVM23dcnLZk9kmpdezR/CvQzm7rJM`"
-msgstr ""
+msgstr "RSA 密钥指纹为 `SHA256:jBe6FQGoH4HjvrIVM23dcnLZk9kmpdezR/CvQzm7rJM`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mirrors/_index.adoc:436
+#, fuzzy
 msgid "These are also published as SSHFP records in DNS."
-msgstr ""
+msgstr "这些指纹也以 SSHFP 记录的形式发布在 DNS 中。"
 
 #, fuzzy, no-wrap
 #~| msgid "rsync://ftp.tw.FreeBSD.org/"

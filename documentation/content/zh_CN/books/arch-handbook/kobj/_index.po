@@ -27,9 +27,9 @@ msgstr "内核对象"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 3. Kernel Objects"
-msgstr ""
+msgstr "第 3 章：内核对象"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:53
@@ -145,9 +145,9 @@ msgstr "这些过程可被表示如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "object->cache<->class\n"
-msgstr ""
+msgstr "object->cache<->class\n"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:93
@@ -219,11 +219,11 @@ msgstr "头文件"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<sys/param.h>\n"
 "<sys/kobj.h>\n"
-msgstr ""
+msgstr "<sys/param.h>\n<sys/kobj.h>\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:132
@@ -246,18 +246,20 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:138
+#, fuzzy
 msgid ""
 "Within this template the following keywords are used: `#include`, "
 "`INTERFACE`, `CODE`, `EPILOG`, `HEADER`, `METHOD`, `PROLOG`, `STATICMETHOD`, "
 "and `DEFAULT`."
-msgstr ""
+msgstr "此模板中使用以下关键字：`#include`、`INTERFACE`、`CODE`、`EPILOG`、`HEADER`、`METHOD`、`PROLOG`、`STATICMETHOD` 和 `DEFAULT`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:140
+#, fuzzy
 msgid ""
 "The `#include` statement and what follows it is copied verbatim to the head "
 "of the generated code file."
-msgstr ""
+msgstr "`#include` 语句及其后面的内容会原样复制到生成的代码文件开头。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:142
@@ -272,17 +274,18 @@ msgstr "例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#include <sys/foo.h>\n"
-msgstr ""
+msgstr "#include <sys/foo.h>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:151
+#, fuzzy
 msgid ""
 "The `INTERFACE` keyword is used to define the interface name.  This name is "
 "concatenated with each method name as [interface name]_[method name].  Its "
 "syntax is INTERFACE [interface name];."
-msgstr ""
+msgstr "`INTERFACE` 关键字用于定义接口名称。此名称会与每个方法名称拼接，格式为 [interface name]_[method name]。其语法为 INTERFACE [interface name];。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:157
@@ -292,10 +295,11 @@ msgstr "INTERFACE foo;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:161
+#, fuzzy
 msgid ""
 "The `CODE` keyword copies its arguments verbatim into the code file.  Its "
 "syntax is `CODE { [whatever] };`"
-msgstr ""
+msgstr "`CODE` 关键字会将其参数原样复制到代码文件中。其语法为 `CODE { [whatever] };`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:172
@@ -317,27 +321,29 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:176
+#, fuzzy
 msgid ""
 "The `HEADER` keyword copies its arguments verbatim into the header file.  "
 "Its syntax is `HEADER { [whatever] };`"
-msgstr ""
+msgstr "`HEADER` 关键字会将其参数原样复制到头文件中。其语法为 `HEADER { [whatever] };`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "HEADER {\n"
 "        struct mumble;\n"
 "        struct grumble;\n"
 "};\n"
-msgstr ""
+msgstr "HEADER {\n        struct mumble;\n        struct grumble;\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:189
+#, fuzzy
 msgid ""
 "The `METHOD` keyword describes a method.  Its syntax is `METHOD [return "
 "type] [method name] { [object [, arguments]] };`"
-msgstr ""
+msgstr "`METHOD` 关键字用于描述一个方法。其语法为 `METHOD [return type] [method name] { [object [, arguments]] };`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:199
@@ -357,12 +363,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:204
+#, fuzzy
 msgid ""
 "The `DEFAULT` keyword may follow the `METHOD` keyword.  It extends the "
 "`METHOD` key word to include the default function for method.  The extended "
 "syntax is `METHOD [return type] [method name] { [object; [other arguments]] }"
 "DEFAULT [default function];`"
-msgstr ""
+msgstr "`DEFAULT` 关键字可以跟在 `METHOD` 关键字之后。它扩展了 `METHOD` 关键字，使其包含该方法的默认函数。扩展后的语法为 `METHOD [return type] [method name] { [object; [other arguments]] }DEFAULT [default function];`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:214
@@ -400,12 +407,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:222
+#, fuzzy
 msgid ""
 "The `PROLOG` and `EPILOG` keywords sets inserts code immediately before or "
 "directly after the `METHOD` they are attached to.  This feature is used "
 "primarily for profiling situations where it's difficult to obtain the "
 "information in another way."
-msgstr ""
+msgstr "`PROLOG` 和 `EPILOG` 关键字集会在其所关联的 `METHOD` 之前或之后立即插入代码。此功能主要用于难以通过其他方式获取信息的性能分析场景。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:224
@@ -447,30 +455,31 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DEFINE_CLASS(fooclass, foomethods, sizeof(struct foodata));\n"
-msgstr ""
+msgstr "DEFINE_CLASS(fooclass, foomethods, sizeof(struct foodata));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "kobj_method_t foomethods[] = {\n"
 "\tKOBJMETHOD(bar_doo, foo_doo),\n"
 "\tKOBJMETHOD(bar_foo, foo_foo),\n"
 "\t{ NULL, NULL}\n"
 "};\n"
-msgstr ""
+msgstr "kobj_method_t foomethods[] = {\n\tKOBJMETHOD(bar_doo, foo_doo),\n\tKOBJMETHOD(bar_foo, foo_foo),\n\t{ NULL, NULL}\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:255
+#, fuzzy
 msgid ""
 "The class must be \"compiled\".  Depending on the state of the system at the "
 "time that the class is to be initialized a statically allocated cache, \"ops "
 "table\" have to be used.  This can be accomplished by declaring a `struct "
 "kobj_ops` and using `kobj_class_compile_static();` otherwise, "
 "`kobj_class_compile()` should be used."
-msgstr ""
+msgstr "必须对类进行“编译”。根据类初始化时系统的状态，可能需要使用静态分配的缓存“操作表”。为此，可以声明一个 `struct kobj_ops` 并使用 `kobj_class_compile_static();`；否则应使用 `kobj_class_compile()`。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:256
@@ -562,8 +571,9 @@ msgstr "善后处理"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/kobj/_index.adoc:291
+#, fuzzy
 msgid ""
 "When an object allocated through `kobj_create()` is no longer needed "
 "`kobj_delete()` may be called on it, and when a class is no longer being "
 "used `kobj_class_free()` may be called on it."
-msgstr ""
+msgstr "通过 `kobj_create()` 分配的对象不再需要时，可以对其调用 `kobj_delete()`；不再使用某个类时，可以对其调用 `kobj_class_free()`。"

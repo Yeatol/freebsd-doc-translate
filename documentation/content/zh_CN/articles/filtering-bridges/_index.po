@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring firewalls and filtering on FreeBSD hosts acting as bridges rather than routers"
-msgstr ""
+msgstr "为充当网桥而非路由器的 FreeBSD 主机配置防火墙和过滤功能"
 
 #. type: Title =
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:1
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Filtering Bridges"
-msgstr ""
+msgstr "网桥过滤"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:43
@@ -37,23 +37,25 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:47
+#, fuzzy
 msgid ""
 "Often it is useful to divide one physical network (like an Ethernet) into "
 "two separate segments without having to create subnets, and use a router to "
 "link them together.  The device that connects the two networks in this way "
 "is called a bridge.  A FreeBSD system with two network interfaces is enough "
 "to act as a bridge."
-msgstr ""
+msgstr "通常，我们需要将一个物理网络（例如以太网）划分为两个独立网段，而不创建子网，也不使用路由器连接它们。以这种方式连接两个网络的设备称为网桥。只需一台配有两个网络接口的 FreeBSD 系统，就足以充当网桥。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:50
+#, fuzzy
 msgid ""
 "A bridge works by scanning the addresses of MAC level (Ethernet addresses) "
 "of the devices connected to each of its network interfaces and then "
 "forwarding the traffic between the two networks only if the source and the "
 "destination are on different segments.  Under many points of view a bridge "
 "is similar to an Ethernet switch with only two ports."
-msgstr ""
+msgstr "网桥通过扫描连接到各个网络接口的设备的 MAC 层地址（以太网地址），仅当源和目标位于不同网段时，才在两个网络之间转发流量。从很多角度来看，网桥类似于只有两个端口的以太网交换机。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:52
@@ -62,12 +64,13 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why use a filtering bridge?"
-msgstr ""
+msgstr "为什么要使用过滤网桥？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:61
+#, fuzzy
 msgid ""
 "More and more frequently, thanks to the lowering costs of broad band "
 "Internet connections (xDSL) and also because of the reduction of available "
@@ -79,39 +82,43 @@ msgid ""
 "issues, the router is owned by the connectivity supplier (ISP), or because "
 "it does not support such functionalities.  In these scenarios the use of a "
 "filtering bridge is highly advised."
-msgstr ""
+msgstr "随着宽带 Internet 连接（xDSL）成本不断降低，以及可用 IPv4 地址日益减少，越来越多的公司全天候连接到 Internet，却只有少量 IP 地址（有时甚至不足 2 的幂次）。在这种情况下，通常需要防火墙过滤进出 Internet 的流量，但基于路由器的包过滤方案可能并不适用：原因可能是子网划分问题、路由器归连接服务提供商（ISP）所有，或者路由器不支持此类功能。在这些情况下，强烈建议使用过滤网桥。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:63
+#, fuzzy
 msgid ""
 "A bridge-based firewall can be configured and inserted between the xDSL "
 "router and your Ethernet hub/switch without any IP numbering issues."
-msgstr ""
+msgstr "基于网桥的防火墙可以配置并部署在 xDSL 路由器与以太网集线器／交换机之间，无需处理 IP 编号问题。"
 
 #. type: Title ==
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:65
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to Install"
-msgstr ""
+msgstr "如何安装"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:70
+#, fuzzy
 msgid ""
 "Adding bridge functionalities to a FreeBSD system is not difficult.  Since "
 "4.5 release it is possible to load such functionalities as modules instead "
 "of having to rebuild the kernel, simplifying the procedure a great deal.  In "
 "the following subsections I will explain both installation ways."
-msgstr ""
+msgstr "为 FreeBSD 系统添加网桥功能并不困难。从 4.5 版开始，可以将这些功能作为模块加载，无需重新构建内核，大大简化了操作过程。下面的小节将介绍这两种安装方式。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:75
+#, fuzzy
 msgid ""
 "_Do not_ follow both instructions: a procedure _excludes_ the other one.  "
 "Select the best choice according to your needs and abilities."
-msgstr ""
+msgstr "__不要__同时遵循两种说明：一种操作步骤__排斥__另一种。请根据自己的需求和能力选择最合适的方式。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:81
+#, fuzzy
 msgid ""
 "Before going on, be sure to have at least two Ethernet cards that support "
 "the promiscuous mode for both reception and transmission, since they must be "
@@ -122,7 +129,7 @@ msgid ""
 "be useful to have two cards of different manufacturers (using different "
 "drivers) to distinguish clearly which interface is connected to the router "
 "and which to the inner network."
-msgstr ""
+msgstr "继续之前，请确保至少有两块以太网卡，并且它们支持接收和发送混杂模式，因为这些网卡必须能够发送任意地址的以太网数据包，而不仅限于自己的地址。此外，为了获得良好的吞吐量，网卡应支持 PCI 总线主控。最佳选择仍是 Intel EtherExpress(TM) Pro，其次是 3Com(R) 3c9xx 系列。为了简化防火墙配置，使用不同厂商（采用不同驱动程序）的两块网卡可能会很有帮助，这样可以清楚地区分连接到路由器的接口和连接到内部网络的接口。"
 
 #. type: Title ===
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:83
@@ -132,73 +139,79 @@ msgstr "内核配置"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:87
+#, fuzzy
 msgid ""
 "So you have decided to use the older but well tested installation method.  "
 "To begin, you have to add the following rows to your kernel configuration "
 "file:"
-msgstr ""
+msgstr "现在你已决定采用较旧但经过充分验证的安装方法。首先，需要在内核配置文件中添加以下几行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "options BRIDGE\n"
 "options IPFIREWALL\n"
 "options IPFIREWALL_VERBOSE\n"
-msgstr ""
+msgstr "options BRIDGE\noptions IPFIREWALL\noptions IPFIREWALL_VERBOSE\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:96
+#, fuzzy
 msgid ""
 "The first line is to compile the bridge support, the second one is the "
 "firewall and the third one is the logging functions of the firewall."
-msgstr ""
+msgstr "第一行用于编译网桥支持，第二行用于编译防火墙，第三行用于编译防火墙日志功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:99
+#, fuzzy
 msgid ""
 "Now it is necessary to build and install the new kernel.  You may find "
 "detailed instructions in the extref:{handbook}kernelconfig[Building and "
 "Installing a Custom Kernel, kernelconfig-building] section of the FreeBSD "
 "Handbook."
-msgstr ""
+msgstr "现在需要构建并安装新内核。有关详细说明，请参阅 FreeBSD 手册中的 extref:{handbook}kernelconfig[构建并安装自定义内核，kernelconfig-building] 一节。"
 
 #. type: Title ===
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Modules Loading"
-msgstr ""
+msgstr "加载模块"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:104
+#, fuzzy
 msgid ""
 "If you have chosen to use the new and simpler installation method, the only "
 "thing to do now is add the following row to [.filename]#/boot/loader.conf#:"
-msgstr ""
+msgstr "如果你选择了较新且更简单的安装方式，现在只需在 [.filename]#/boot/loader.conf# 中添加以下一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bridge_load=\"YES\"\n"
-msgstr ""
+msgstr "bridge_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:112
+#, fuzzy
 msgid ""
 "In this way, during the system startup, the [.filename]#bridge.ko# module "
 "will be loaded together with the kernel.  It is not required to add a "
 "similar row for the [.filename]#ipfw.ko# module, since it will be loaded "
 "automatically after the execution of the steps in the following section."
-msgstr ""
+msgstr "这样，系统启动时就会将 [.filename]#bridge.ko# 模块与内核一同加载。无需为 [.filename]#ipfw.ko# 模块添加类似的一行，因为执行下一节中的步骤后，它会自动加载。"
 
 #. type: Title ==
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Final Preparation"
-msgstr ""
+msgstr "最后的准备工作"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:120
+#, fuzzy
 msgid ""
 "Before rebooting to load the new kernel or the required modules (according "
 "to the previously chosen installation method), you have to make some changes "
@@ -208,30 +221,32 @@ msgid ""
 "filtering (in case you are going to execute this procedure remotely, such "
 "configuration will avoid you to remain isolated from the network).  Put "
 "these lines in [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "重启以加载新内核或所需模块（取决于之前选择的安装方式）之前，需要修改 [.filename]#/etc/rc.conf# 配置文件。防火墙的默认规则是拒绝所有 IP 数据包。首先，我们将设置一个 `open` 防火墙，以便在不受包过滤问题干扰的情况下验证其运行情况（如果你要远程执行此操作，这种配置可以避免与网络隔离）。在 [.filename]#/etc/rc.conf# 中添加以下几行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "firewall_enable=\"YES\"\n"
 "firewall_type=\"open\"\n"
 "firewall_quiet=\"YES\"\n"
 "firewall_logging=\"YES\"\n"
-msgstr ""
+msgstr "firewall_enable=\"YES\"\nfirewall_type=\"open\"\nfirewall_quiet=\"YES\"\nfirewall_logging=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:130
+#, fuzzy
 msgid ""
 "The first row will enable the firewall (and will load the module [."
 "filename]#ipfw.ko# if it is not compiled in the kernel), the second one to "
 "set up it in `open` mode (as explained in [.filename]#/etc/rc.firewall#), "
 "the third one to not show rules loading and the fourth one to enable logging "
 "support."
-msgstr ""
+msgstr "第一行启用防火墙（如果内核未编译该模块，则会加载 [.filename]#ipfw.ko#）；第二行将防火墙设为 `open` 模式（如 [.filename]#/etc/rc.firewall# 中所述）；第三行禁止显示规则加载信息；第四行启用日志记录支持。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:136
+#, fuzzy
 msgid ""
 "About the configuration of the network interfaces, the most used way is to "
 "assign an IP to only one of the network cards, but the bridge will work "
@@ -248,10 +263,11 @@ msgid ""
 "filename]#xl0# is not.  Assigning an IP to both the network cards does not "
 "make much sense, unless, during the start procedure, applications should "
 "access to services on both Ethernet segments."
-msgstr ""
+msgstr "关于网络接口的配置，最常见的做法是只为一块网卡分配 IP 地址，但即使两个接口都配置了 IP 地址，或者都没有配置 IP 地址，网桥也能正常工作。最后一种情况（无 IP 地址）下，网桥主机会更加隐蔽，无法从网络访问：要配置它，必须通过控制台登录，或者使用与网桥分离的第三个网络接口。有时系统启动期间某些程序需要访问网络，例如进行域名解析；此时需要为外部接口（连接到 Internet、DNS 服务器所在的接口）分配 IP 地址，因为网桥会在启动过程结束时才激活。这意味着在本例中，必须在 [.filename]#/etc/rc.conf# 文件的 ifconfig 部分配置 [.filename]#fxp0# 接口，而不配置 [.filename]#xl0#。除非启动过程中运行的应用程序需要访问两个以太网网段上的服务，否则为两块网卡都分配 IP 地址没有太大意义。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:143
+#, fuzzy
 msgid ""
 "There is another important thing to know.  When running IP over Ethernet, "
 "there are actually two Ethernet protocols in use: one is IP, the other is "
@@ -262,22 +278,24 @@ msgid ""
 "over Ethernet.  The FreeBSD firewall filters exclusively on the IP layer and "
 "therefore all non-IP packets (ARP included) will be forwarded without being "
 "filtered, even if the firewall is configured to not permit anything."
-msgstr ""
+msgstr "还有一点很重要。通过以太网传输 IP 时，实际上使用了两种以太网协议：一种是 IP，另一种是 ARP。ARP 将主机的 IP 地址转换为其以太网地址（MAC 层地址）。要允许被网桥隔开的两台主机通信，网桥必须转发 ARP 数据包。ARP 不属于 IP 层，因为它只用于通过以太网传输 IP。FreeBSD 防火墙只过滤 IP 层，因此所有非 IP 数据包（包括 ARP）都会不经滤过滤地转发，即使防火墙配置为禁止所有流量也是如此。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:145
+#, fuzzy
 msgid ""
 "Now it is time to reboot the system and use it as before: there will be some "
 "new messages about the bridge and the firewall, but the bridge will not be "
 "activated and the firewall, being in `open` mode, will not avoid any "
 "operations."
-msgstr ""
+msgstr "现在可以重启系统并像以前一样使用它了：你会看到一些关于网桥和防火墙的新消息，但网桥不会被激活，而处于 `open` 模式的防火墙也不会阻止任何操作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:147
+#, fuzzy
 msgid ""
 "If there are any problems, you should sort them out now before proceeding."
-msgstr ""
+msgstr "如果出现任何问题，应先解决这些问题再继续。"
 
 #. type: Title ==
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:149
@@ -287,47 +305,51 @@ msgstr "开启桥接"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:152
+#, fuzzy
 msgid ""
 "At this point, to enable the bridge, you have to execute the following "
 "commands (having the shrewdness to replace the names of the two network "
 "interfaces [.filename]#fxp0# and [.filename]#xl0# with your own ones):"
-msgstr ""
+msgstr "此时，要启用网桥，需要执行以下命令（记得将网络接口名称 [.filename]#fxp0# 和 [.filename]#xl0# 替换为你自己的接口名称）："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysctl net.link.ether.bridge.config=fxp0:0,xl0:0\n"
 "# sysctl net.link.ether.bridge.ipfw=1\n"
 "# sysctl net.link.ether.bridge.enable=1\n"
-msgstr ""
+msgstr "# sysctl net.link.ether.bridge.config=fxp0:0,xl0:0\n# sysctl net.link.ether.bridge.ipfw=1\n# sysctl net.link.ether.bridge.enable=1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:161
+#, fuzzy
 msgid ""
 "The first row specifies which interfaces should be activated by the bridge, "
 "the second one will enable the firewall on the bridge and finally the third "
 "one will enable the bridge."
-msgstr ""
+msgstr "第一行指定网桥应启用哪些接口，第二行在网桥上启用防火墙，最后一行则启用网桥。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:164
+#, fuzzy
 msgid ""
 "At this point you should be able to insert the machine between two sets of "
 "hosts without compromising any communication abilities between them.  If so, "
 "the next step is to add the `net.link.ether.bridge._[blah]_=_[blah]_` "
 "portions of these rows to the [.filename]#/etc/sysctl.conf# file, to have "
 "them execute at startup."
-msgstr ""
+msgstr "此时，你应该可以将这台机器接入两组主机之间，而不影响它们之间的通信。如果可以，下一步是将这些行中的 `net.link.ether.bridge._[blah]_=_[blah]_` 部分添加到 [.filename]#/etc/sysctl.conf# 文件中，使其在系统启动时执行。"
 
 #. type: Title ==
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring The Firewall"
-msgstr ""
+msgstr "配置防火墙"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:176
+#, fuzzy
 msgid ""
 "Now it is time to create your own file with custom firewall rules, to secure "
 "the inside network.  There will be some complication in doing this because "
@@ -343,10 +365,11 @@ msgid ""
 "like `divert`, `forward` or `reject` are not available.  Such options can "
 "still be used, but only on traffic to or from the bridge machine itself (if "
 "it has an IP address)."
-msgstr ""
+msgstr "现在可以创建自己的防火墙规则文件，以保护内部网络。配置时会有些复杂，因为并非所有防火墙功能都适用于经网桥转发的数据包。此外，正在转发的数据包与本机接收的数据包有所不同。通常，传入的数据包只经过防火墙一次，而不像一般情况下那样经过两次；实际上，它们只在接收时被过滤，因此使用 `out` 或 `xmit` 的规则永远不会匹配。我个人使用较旧的 `in via` 语法，因为读起来很直观。另一个限制是，对于经网桥过滤的数据包，只能使用 `pass` 或 `drop` 命令。`divert`、`forward` 或 `reject` 等高级功能不可用。这些选项仍可使用，但只能用于发往网桥主机或来自网桥主机的流量（前提是该主机配置了 IP 地址）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:184
+#, fuzzy
 msgid ""
 "New in FreeBSD 4.0, is the concept of stateful filtering.  This is a big "
 "improvement for UDP traffic, which typically is a request going out, "
@@ -359,10 +382,11 @@ msgid ""
 "to do it.  It is possible to do the same thing with TCP packets.  This "
 "allows you to avoid some denial of service attacks and other nasty tricks, "
 "but it also typically makes your state table grow quickly in size."
-msgstr ""
+msgstr "FreeBSD 4.0 引入了有状态过滤的概念。这对 UDP 流量是一项重大改进，因为 UDP 通常先发送请求，随后很快收到使用相同 IP 地址和端口号、但源和目标互换的响应。对于不保存状态的防火墙，几乎无法将此类流量作为单个会话处理。但如果防火墙能够“记住”发出的 UDP 数据包，并在接下来的几分钟内允许响应，处理 UDP 服务就很简单了。以下示例展示了如何实现。TCP 数据包也可以采用相同的方式处理。这有助于防范某些拒绝服务攻击和其他恶意手段，但通常也会使状态表迅速增大。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:188
+#, fuzzy
 msgid ""
 "Let's look at an example setup.  Note first that at the top of [.filename]#/"
 "etc/rc.firewall# there are already standard rules for the loopback interface "
@@ -370,72 +394,74 @@ msgid ""
 "rules should be put in a separate file (say [.filename]#/etc/rc.firewall."
 "local#) and loaded at system startup, by modifying the row of [.filename]#/"
 "etc/rc.conf# where we defined the `open` firewall:"
-msgstr ""
+msgstr "下面来看一个配置示例。首先请注意，[.filename]#/etc/rc.firewall# 的开头已有针对回环接口 [.filename]#lo0# 的标准规则，因此我们无需再处理它们。自定义规则应放在单独的文件中（例如 [.filename]#/etc/rc.firewall.local#），并在系统启动时加载；为此，需要修改 [.filename]#/etc/rc.conf# 中将防火墙设为 `open` 的那一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "firewall_type=\"/etc/rc.firewall.local\"\n"
-msgstr ""
+msgstr "firewall_type=\"/etc/rc.firewall.local\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:197
+#, fuzzy
 msgid ""
 "You have to specify the _full_ path, otherwise it will not be loaded with "
 "the risk to remain isolated from the network."
-msgstr ""
+msgstr "必须指定__完整__路径，否则不会加载该文件，可能导致你与网络隔离。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:200
+#, fuzzy
 msgid ""
 "For our example imagine to have the [.filename]#fxp0# interface connected "
 "towards the outside (Internet) and the [.filename]#xl0# towards the inside "
 "(LAN). The bridge machine has the IP `1.2.3.4` (it is not possible that your "
 "ISP can give you an address quite like this, but for our example it is good)."
-msgstr ""
+msgstr "在本例中，假设 [.filename]#fxp0# 接口连接外部（Internet），而 [.filename]#xl0# 接口连接内部（LAN）。网桥主机的 IP 地址为 `1.2.3.4`（ISP 不太可能提供这样的地址，但用于本例没有问题）。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Things that we have kept state on before get to go through in a hurry\n"
 "add check-state\n"
-msgstr ""
+msgstr "# Things that we have kept state on before get to go through in a hurry\nadd check-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Throw away RFC 1918 networks\n"
 "add drop all from 10.0.0.0/8 to any in via fxp0\n"
 "add drop all from 172.16.0.0/12 to any in via fxp0\n"
 "add drop all from 192.168.0.0/16 to any in via fxp0\n"
-msgstr ""
+msgstr "# Throw away RFC 1918 networks\nadd drop all from 10.0.0.0/8 to any in via fxp0\nadd drop all from 172.16.0.0/12 to any in via fxp0\nadd drop all from 192.168.0.0/16 to any in via fxp0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow the bridge machine to say anything it wants\n"
 "# (if the machine is IP-less do not include these rows)\n"
 "add pass tcp from 1.2.3.4 to any setup keep-state\n"
 "add pass udp from 1.2.3.4 to any keep-state\n"
 "add pass ip from 1.2.3.4 to any\n"
-msgstr ""
+msgstr "# Allow the bridge machine to say anything it wants\n# (if the machine is IP-less do not include these rows)\nadd pass tcp from 1.2.3.4 to any setup keep-state\nadd pass udp from 1.2.3.4 to any keep-state\nadd pass ip from 1.2.3.4 to any\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:221
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow the inside hosts to say anything they want\n"
 "add pass tcp from any to any in via xl0 setup keep-state\n"
 "add pass udp from any to any in via xl0 keep-state\n"
 "add pass ip from any to any in via xl0\n"
-msgstr ""
+msgstr "# Allow the inside hosts to say anything they want\nadd pass tcp from any to any in via xl0 setup keep-state\nadd pass udp from any to any in via xl0 keep-state\nadd pass ip from any to any in via xl0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# TCP section\n"
 "# Allow SSH\n"
@@ -448,22 +474,22 @@ msgid ""
 "add pass tcp from any to any 113 in via fxp0 setup keep-state\n"
 "# Pass the \"quarantine\" range\n"
 "add pass tcp from any to any 49152-65535 in via fxp0 setup keep-state\n"
-msgstr ""
+msgstr "# TCP section\n# Allow SSH\nadd pass tcp from any to any 22 in via fxp0 setup keep-state\n# Allow SMTP only towards the mail server\nadd pass tcp from any to relay 25 in via fxp0 setup keep-state\n# Allow zone transfers only by the secondary name server [dns2.nic.it]\nadd pass tcp from 193.205.245.8 to ns 53 in via fxp0 setup keep-state\n# Pass ident probes.  It is better than waiting for them to timeout\nadd pass tcp from any to any 113 in via fxp0 setup keep-state\n# Pass the \"quarantine\" range\nadd pass tcp from any to any 49152-65535 in via fxp0 setup keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# UDP section\n"
 "# Allow DNS only towards the name server\n"
 "add pass udp from any to ns 53 in via fxp0 keep-state\n"
 "# Pass the \"quarantine\" range\n"
 "add pass udp from any to any 49152-65535 in via fxp0 keep-state\n"
-msgstr ""
+msgstr "# UDP section\n# Allow DNS only towards the name server\nadd pass udp from any to ns 53 in via fxp0 keep-state\n# Pass the \"quarantine\" range\nadd pass udp from any to any 49152-65535 in via fxp0 keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ICMP section\n"
 "# Pass 'ping'\n"
@@ -471,32 +497,34 @@ msgid ""
 "# Pass error messages generated by 'traceroute'\n"
 "add pass icmp from any to any icmptypes 3\n"
 "add pass icmp from any to any icmptypes 11\n"
-msgstr ""
+msgstr "# ICMP section\n# Pass 'ping'\nadd pass icmp from any to any icmptypes 8 keep-state\n# Pass error messages generated by 'traceroute'\nadd pass icmp from any to any icmptypes 3\nadd pass icmp from any to any icmptypes 11\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Everything else is suspect\n"
 "add drop log all from any to any\n"
-msgstr ""
+msgstr "# Everything else is suspect\nadd drop log all from any to any\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:253
+#, fuzzy
 msgid ""
 "Those of you who have set up firewalls before may notice some things "
 "missing.  In particular, there are no anti-spoofing rules, in fact we did "
 "_not_ add:"
-msgstr ""
+msgstr "以前配置过防火墙的人可能会注意到有些内容缺失。特别是没有反欺骗规则；实际上，我们__没有__添加："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "add deny all from 1.2.3.4/8 to any in via fxp0\n"
-msgstr ""
+msgstr "add deny all from 1.2.3.4/8 to any in via fxp0\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:263
+#, fuzzy
 msgid ""
 "That is, drop packets that are coming in from the outside claiming to be "
 "from our network.  This is something that you would commonly do to be sure "
@@ -505,18 +533,20 @@ msgid ""
 "that is that there is _at least_ one host on the outside interface that you "
 "do not want to ignore: the router.  But usually, the ISP anti-spoofs at "
 "their router, so we do not need to bother that much."
-msgstr ""
+msgstr "也就是说，丢弃那些从外部传入、却声称来自我们网络的数据包。通常会这样做，以防有人通过生成看似来自内部的恶意数据包来绕过包过滤器。问题在于，外部接口上__至少__有一台主机不能被忽略：路由器。不过，ISP 通常会在其路由器上进行反欺骗处理，因此我们无需过多担心。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:266
+#, fuzzy
 msgid ""
 "The last rule seems to be an exact duplicate of the default rule, that is, "
 "do not let anything pass that is not specifically allowed.  But there is a "
 "difference: all suspected traffic will be logged."
-msgstr ""
+msgstr "最后一条规则似乎与默认规则完全重复，也就是不允许任何未明确许可的流量通过。但两者有所不同：所有可疑流量都会被记录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:272
+#, fuzzy
 msgid ""
 "There are two rules for passing SMTP and DNS traffic towards the mail server "
 "and the name server, if you have them.  Obviously the whole rule set should "
@@ -526,10 +556,11 @@ msgid ""
 "enabled.  This is an example of making sure that you set the IP on the "
 "correct network card.  Alternatively it is possible to specify the IP "
 "address instead of the host name (required if the machine is IP-less)."
-msgstr ""
+msgstr "如果你配置了邮件服务器和域名服务器，就会看到两条分别允许向它们发送 SMTP 和 DNS 流量的规则。显然，整套规则都应根据个人需要调整；这只是一个具体示例（规则格式详见 man:ipfw[8] 手册页）。请注意，要使 `relay` 和 `ns` 生效，必须在启用网桥__之前__完成名称服务查询。这说明了为何要确保在正确的网卡上配置 IP 地址。也可以改用 IP 地址而非主机名（如果主机没有 IP 地址，则必须这样做）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:277
+#, fuzzy
 msgid ""
 "People that are used to setting up firewalls are probably also used to "
 "either having a `reset` or a `forward` rule for ident packets (TCP port "
@@ -538,10 +569,11 @@ msgid ""
 "destination machine is not running an ident daemon, this is relatively "
 "harmless.  The alternative is dropping connections on port 113, which "
 "creates some problems with services like IRC (the ident probe must timeout)."
-msgstr ""
+msgstr "习惯配置防火墙的人可能也习惯为 ident 数据包（TCP 端口 113）设置 `reset` 或 `forward` 规则。遗憾的是，网桥不支持这类选项，因此最好的办法是直接将它们传递到目标地址。只要目标机器没有运行 ident 守护进程，这样做基本无害。另一种做法是丢弃端口 113 上的连接，但这会给 IRC 等服务带来问题（ident 探测必须等到超时）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:284
+#, fuzzy
 msgid ""
 "The only other thing that is a little weird that you may have noticed is "
 "that there is a rule to let the bridge machine speak, and another for "
@@ -553,33 +585,36 @@ msgid ""
 "`in via` rules throughout the filter, you will need to make an exception for "
 "locally generated packets, because they did not come in via any of our "
 "interfaces."
-msgstr ""
+msgstr "你可能还注意到另一个有点奇怪的地方：有一条规则允许网桥主机发送流量，另一条则针对内部主机。请记住，这是因为这两组流量经过内核并进入包过滤器的路径不同。内部网络的流量会经过网桥，而本机则通过常规 IP 协议栈发送流量。因此需要两条规则分别处理这两种情况。`in via fxp0` 规则适用于这两条路径。一般来说，如果整个过滤器都使用 `in via` 规则，就需要为本机生成的数据包添加例外，因为它们并非通过我们的任何接口进入。"
 
 #. type: Title ==
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributors"
-msgstr ""
+msgstr "贡献者"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:290
+#, fuzzy
 msgid ""
 "Many parts of this article have been taken, updated and adapted from an old "
 "text about bridging, edited by Nick Sayer.  A pair of inspirations are due "
 "to an introduction on bridging by Steve Peterson."
-msgstr ""
+msgstr "本文的许多内容取自一篇关于网桥的旧文，并经过编辑、更新和改编；该文由 Nick Sayer 编辑。本文还有两处灵感来自 Steve Peterson 关于网桥的介绍。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:292
+#, fuzzy
 msgid ""
 "A big thanks to Luigi Rizzo for the implementation of the bridge code in "
 "FreeBSD and for the time he has dedicated to me answering all of my related "
 "questions."
-msgstr ""
+msgstr "衷心感谢 Luigi Rizzo 在 FreeBSD 中实现网桥代码，并抽出时间回答我所有相关问题。"
 
 #. type: Plain text
 #: documentation/content/en/articles/filtering-bridges/_index.adoc:293
+#, fuzzy
 msgid ""
 "A thanks goes out also to Tom Rhodes who looked over my job of translation "
 "from Italian (the original language of this article) into English."
-msgstr ""
+msgstr "还要感谢 Tom Rhodes 审阅我从意大利语（本文的原始语言）翻译成英语的译文。"

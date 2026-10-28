@@ -19,27 +19,27 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/network/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter delves into the topic of network configuration and performance, showcasing the robust networking capabilities of the FreeBSD operating system."
-msgstr ""
+msgstr "本章深入介绍网络配置和性能，展示 FreeBSD 操作系统强大的网络功能。"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/network/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part I. Getting Started"
-msgstr ""
+msgstr "第一部分：入门"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/network/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 7. Network"
-msgstr ""
+msgstr "第 7 章：网络"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/network/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Network"
-msgstr ""
+msgstr "网络"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:52
@@ -49,136 +49,153 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:56
+#, fuzzy
 msgid ""
 "This chapter delves into the topic of network configuration and performance, "
 "showcasing the robust networking capabilities of the FreeBSD operating "
 "system.  Whether working with wired or wireless networks, this chapter "
 "provides a comprehensive guide to configuring and optimizing network "
 "connectivity in FreeBSD."
-msgstr ""
+msgstr "本章深入介绍网络配置和性能，展示 FreeBSD 操作系统强大的网络功能。无论使用有线网络还是无线网络，本章都将全面介绍如何在 FreeBSD 中配置和优化网络连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:58
+#, fuzzy
 msgid ""
 "Before diving into the details, it is beneficial for readers to have a basic "
 "understanding of networking concepts such as protocols, network interfaces, "
 "and addressing."
-msgstr ""
+msgstr "在深入了解详细内容之前，读者最好先基本了解网络概念，例如协议、网络接口和寻址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:60
+#, fuzzy
 msgid "This chapter covers:"
-msgstr ""
+msgstr "本章涵盖以下内容："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:62
+#, fuzzy
 msgid ""
 "The ability to configure wired networks in FreeBSD, including network "
 "interface setup, addressing, and customization options."
-msgstr ""
+msgstr "在 FreeBSD 中配置有线网络的能力，包括网络接口设置、寻址和自定义选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:63
+#, fuzzy
 msgid ""
 "The skills to configure wireless networks in FreeBSD, encompassing wireless "
 "network interface setup, security protocols, and troubleshooting techniques."
-msgstr ""
+msgstr "在 FreeBSD 中配置无线网络所需的技能，包括无线网络接口设置、安全协议和故障排除方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:64
+#, fuzzy
 msgid ""
 "FreeBSD's networking capabilities and its reputation for excellent network "
 "performance."
-msgstr ""
+msgstr "FreeBSD 的网络功能及其出色网络性能的声誉。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:65
+#, fuzzy
 msgid ""
 "An understanding of various network services and protocols supported by "
 "FreeBSD, with configuration instructions for DNS, DHCP and more."
-msgstr ""
+msgstr "了解 FreeBSD 支持的各种网络服务和协议，以及 DNS、DHCP 等服务的配置说明。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:67
+#, fuzzy
 msgid ""
 "More information about how to make advanced network configurations in "
 "crossref:advanced-networking[advanced-networking,Advanced Networking]."
-msgstr ""
+msgstr "有关如何进行高级网络配置的更多信息，请参阅 crossref:advanced-networking[advanced-networking,高级网络]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting up the Network"
-msgstr ""
+msgstr "设置网络"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:73
+#, fuzzy
 msgid ""
 "Setting up a wired or wireless connection is a common task for a FreeBSD "
 "user.  This section will show how to identify the wired and wireless network "
 "adapters and how to configure them."
-msgstr ""
+msgstr "设置有线或无线连接是 FreeBSD 用户常见的任务。本节将介绍如何识别有线和无线网络适配器，以及如何配置它们。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:75
+#, fuzzy
 msgid ""
 "Before starting with the configuration it is necessary to know the following "
 "network data:"
-msgstr ""
+msgstr "开始配置之前，需要了解以下网络信息："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:77
+#, fuzzy
 msgid "If the network has DHCP"
-msgstr ""
+msgstr "网络是否使用 DHCP"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:78
+#, fuzzy
 msgid "If the network does not have DHCP, the static IP to be used"
-msgstr ""
+msgstr "如果网络不使用 DHCP，则需要使用的静态 IP 地址"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:79
+#, fuzzy
 msgid "The netmask"
-msgstr ""
+msgstr "子网掩码"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:80
+#, fuzzy
 msgid "The IP address of the default gateway"
-msgstr ""
+msgstr "默认网关的 IP 地址"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:84
+#, fuzzy
 msgid ""
 "The network connection may have been configured at installation time by man:"
 "bsdinstall[8]."
-msgstr ""
+msgstr "网络连接可能已在安装时由 man:bsdinstall[8] 配置。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Identify Network Adapters"
-msgstr ""
+msgstr "识别网络适配器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:91
+#, fuzzy
 msgid ""
 "FreeBSD supports a wide variety of network adapters for both wired and "
 "wireless networks.  Check the Hardware Compatibility List for the used link:"
 "https://www.freebsd.org/releases/[FreeBSD release] to see if the network "
 "adapter is supported."
-msgstr ""
+msgstr "FreeBSD 支持多种有线和无线网络适配器。请查看所用 link:https://www.freebsd.org/releases/[FreeBSD 发行版]的硬件兼容性列表，确认该网络适配器是否受支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:93
+#, fuzzy
 msgid ""
 "To get the network adapters used by our system execute the following command:"
-msgstr ""
+msgstr "要查看系统使用的网络适配器，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pciconf -lv | grep -A1 -B3 network\n"
-msgstr ""
+msgstr "% pciconf -lv | grep -A1 -B3 network\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:100
@@ -190,12 +207,13 @@ msgstr ""
 #: documentation/content/en/books/handbook/network/_index.adoc:617
 #: documentation/content/en/books/handbook/network/_index.adoc:690
 #: documentation/content/en/books/handbook/network/_index.adoc:817
+#, fuzzy
 msgid "The output should be similar to the following:"
-msgstr ""
+msgstr "输出应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "em0@pci0:0:25:0:        class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x10f5 subvendor=0x17aa subdevice=0x20ee\n"
 "    vendor     = 'Intel Corporation' <1>\n"
@@ -203,104 +221,113 @@ msgid ""
 "    class      = network\n"
 "    subclass   = ethernet\n"
 "--\n"
-msgstr ""
+msgstr "em0@pci0:0:25:0:        class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x10f5 subvendor=0x17aa subdevice=0x20ee\n    vendor     = 'Intel Corporation' <1>\n    device     = '82567LM Gigabit Network Connection' <2>\n    class      = network\n    subclass   = ethernet\n--\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "iwm0@pci0:3:0:0:        class=0x028000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x4237 subvendor=0x8086 subdevice=0x1211\n"
 "    vendor     = 'Intel Corporation' <1>\n"
 "    device     = 'PRO/Wireless 5100 AGN [Shiloh] Network Connection' <2>\n"
 "    class      = network\n"
-msgstr ""
+msgstr "iwm0@pci0:3:0:0:        class=0x028000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x4237 subvendor=0x8086 subdevice=0x1211\n    vendor     = 'Intel Corporation' <1>\n    device     = 'PRO/Wireless 5100 AGN [Shiloh] Network Connection' <2>\n    class      = network\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:117
+#, fuzzy
 msgid ""
 "The text before the '@' symbol is the name of the driver controlling the "
 "device.  In this case these are man:em[4] and man:iwn[4]."
-msgstr ""
+msgstr "`@` 符号前面的文本是控制该设备的驱动程序名称。本例中，它们分别是 man:em[4] 和 man:iwn[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:119
+#, fuzzy
 msgid "Shows the name of the vendor"
-msgstr ""
+msgstr "显示厂商名称"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:120
+#, fuzzy
 msgid "Shows the name of the device"
-msgstr ""
+msgstr "显示设备名称"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:124
+#, fuzzy
 msgid ""
 "It is only necessary to load the network interface card module if FreeBSD "
 "has not detected it correctly."
-msgstr ""
+msgstr "只有在 FreeBSD 未能正确检测到网卡时，才需要加载网卡模块。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:126
+#, fuzzy
 msgid ""
 "For example, to load the man:alc[4] module, execute the following command:"
-msgstr ""
+msgstr "例如，要加载 man:alc[4] 模块，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload if_alc\n"
-msgstr ""
+msgstr "# kldload if_alc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:133
+#, fuzzy
 msgid ""
 "Alternatively, to load the driver as a module at boot time, place the "
 "following line in [.filename]#/boot/loader.conf#:"
-msgstr ""
+msgstr "或者，要在启动时将驱动程序作为模块加载，请将以下行添加到 [.filename]#/boot/loader.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "if_alc_load=\"YES\"\n"
-msgstr ""
+msgstr "if_alc_load=\"YES\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wired Networks"
-msgstr ""
+msgstr "有线网络"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:146
+#, fuzzy
 msgid ""
 "Once the right driver is loaded the network adapter needs to be configured.  "
 "FreeBSD uses the driver name followed by a unit number to name the network "
 "interface adapter.  The unit number represents the order in which the "
 "adapter is detected at boot time, or is later discovered."
-msgstr ""
+msgstr "加载正确的驱动程序后，需要配置网络适配器。FreeBSD 使用驱动程序名称加设备编号来命名网络接口适配器。设备编号表示系统在启动时检测到该适配器或之后发现该适配器的顺序。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:148
+#, fuzzy
 msgid ""
 "For example, `em0` is the first network interface card (NIC) on the system "
 "using the man:em[4] driver."
-msgstr ""
+msgstr "例如，`em0` 是系统中使用 man:em[4] 驱动程序的第一块网卡（NIC）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:150
+#, fuzzy
 msgid ""
 "To display the network interface configuration, enter the following command:"
-msgstr ""
+msgstr "要显示网络接口配置，请输入以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ifconfig\n"
-msgstr ""
+msgstr "% ifconfig\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "em0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
 "        options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>\n"
@@ -317,95 +344,109 @@ msgid ""
 "        inet 127.0.0.1 netmask 0xff000000\n"
 "        groups: lo\n"
 "        nd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>\n"
-msgstr ""
+msgstr "em0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>\n        ether 00:1f:16:0f:27:5a\n        inet6 fe80::21f:16ff:fe0f:275a%em0 prefixlen 64 scopeid 0x1\n        inet 192.168.1.19 netmask 0xffffff00 broadcast 192.168.1.255\n        media: Ethernet autoselect (1000baseT <full-duplex>)\n        status: active\n        nd6 options=23<PERFORMNUD,ACCEPT_RTADV,AUTO_LINKLOCAL>\nlo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> metric 0 mtu 16384\n        options=680003<RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6>\n        inet6 ::1 prefixlen 128\n        inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2\n        inet 127.0.0.1 netmask 0xff000000\n        groups: lo\n        nd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:178
+#, fuzzy
 msgid "In this example, the following devices were displayed:"
-msgstr ""
+msgstr "本例显示了以下设备："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:180
+#, fuzzy
 msgid "`em0`: The Ethernet interface."
-msgstr ""
+msgstr "`em0`：以太网接口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:181
+#, fuzzy
 msgid ""
 "`lo0`: The loop interface is a software loopback mechanism which may be used "
 "for performance analysis, software testing, and/or local communication. More "
 "information in man:lo[4]."
-msgstr ""
+msgstr "`lo0`：环回接口是一种软件环回机制，可用于性能分析、软件测试和/或本地通信。更多信息请参阅 man:lo[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:183
+#, fuzzy
 msgid "The example shows that `em0` is up and running."
-msgstr ""
+msgstr "示例显示 `em0` 已启动并正在运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:185
+#, fuzzy
 msgid "The key indicators are:"
-msgstr ""
+msgstr "关键指标如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:187
+#, fuzzy
 msgid "`UP` means that the interface is configured and ready."
-msgstr ""
+msgstr "`UP` 表示接口已配置并准备就绪。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:188
+#, fuzzy
 msgid "The interface has an IPv4 Internet (`inet`) address, `192.168.1.19`."
-msgstr ""
+msgstr "该接口具有 IPv4 Internet（`inet`）地址 `192.168.1.19`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:189
+#, fuzzy
 msgid ""
 "The interface has an IPv6 Internet (`inet6`) address, `fe80::21f:16ff:"
 "fe0f:275a%em0`."
-msgstr ""
+msgstr "该接口具有 IPv6 Internet（`inet6`）地址 `fe80::21f:16ff:fe0f:275a%em0`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:190
+#, fuzzy
 msgid ""
 "It has a valid subnet mask (`netmask`), where `0xffffff00` is the same as "
 "`255.255.255.0`."
-msgstr ""
+msgstr "该接口具有有效的子网掩码（`netmask`），其中 `0xffffff00` 等同于 `255.255.255.0`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:191
+#, fuzzy
 msgid "It has a valid broadcast address, `192.168.1.255`."
-msgstr ""
+msgstr "该接口具有有效的广播地址 `192.168.1.255`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:192
+#, fuzzy
 msgid "The MAC address of the interface (`ether`) is `00:1f:16:0f:27:5a`."
-msgstr ""
+msgstr "接口的 MAC 地址（`ether`）为 `00:1f:16:0f:27:5a`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:193
+#, fuzzy
 msgid ""
 "The physical media selection is on autoselection mode (`media: Ethernet "
 "autoselect (1000baseT <full-duplex>)`)."
-msgstr ""
+msgstr "物理介质选择处于自动选择模式（`media: Ethernet autoselect (1000baseT <full-duplex>)`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:194
+#, fuzzy
 msgid ""
 "The status of the link (`status`) is `active`, indicating that the carrier "
 "signal is detected. For `em0`, the `status: no carrier` status is normal "
 "when an Ethernet cable is not plugged into the interface."
-msgstr ""
+msgstr "链路状态（`status`）为 `active`，表示检测到了载波信号。对于 `em0`，当以太网线未插入接口时，`status: no carrier` 状态是正常的。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:196
+#, fuzzy
 msgid ""
 "If the man:ifconfig[8] output had shown something similar to the next output "
 "it would indicate the interface has not been configured:"
-msgstr ""
+msgstr "如果 man:ifconfig[8] 的输出类似于下面的内容，则表示接口尚未配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "em0: flags=8822<BROADCAST,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
 "        options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>\n"
@@ -413,381 +454,417 @@ msgid ""
 "        media: Ethernet autoselect\n"
 "        status: no carrier\n"
 "        nd6 options=29<PERFORMNUD,IFDISABLED,AUTO_LINKLOCAL>\n"
-msgstr ""
+msgstr "em0: flags=8822<BROADCAST,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>\n        ether 00:1f:16:0f:27:5a\n        media: Ethernet autoselect\n        status: no carrier\n        nd6 options=29<PERFORMNUD,IFDISABLED,AUTO_LINKLOCAL>\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Static IPv4 Address"
-msgstr ""
+msgstr "配置静态 IPv4 地址"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:211
+#, fuzzy
 msgid ""
 "This section provides a guide to configuring a static IPv4 address on a "
 "FreeBSD system."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上配置静态 IPv4 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:213
+#, fuzzy
 msgid ""
 "The network interface card configuration can be performed from the command "
 "line with man:ifconfig[8] but will not persist after a reboot unless the "
 "configuration is also added to [.filename]#/etc/rc.conf#."
-msgstr ""
+msgstr "可以在命令行中使用 man:ifconfig[8] 配置网卡，但除非同时将配置添加到 [.filename]#/etc/rc.conf#，否则重启后这些设置不会保留。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:218
+#, fuzzy
 msgid ""
 "If the network was configured during installation by man:bsdinstall[8], some "
 "entries for the network interface card (NICs) may be already present.  "
 "Double check [.filename]#/etc/rc.conf# before executing man:sysrc[8]."
-msgstr ""
+msgstr "如果网络是在安装过程中通过 man:bsdinstall[8] 配置的，网卡（NIC）的相关条目可能已经存在。运行 man:sysrc[8] 之前，请仔细检查 [.filename]#/etc/rc.conf#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:221
+#, fuzzy
 msgid "The IP address can be set executing the following command:"
-msgstr ""
+msgstr "执行以下命令即可设置 IP 地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig em0 inet 192.168.1.150/24\n"
-msgstr ""
+msgstr "# ifconfig em0 inet 192.168.1.150/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:228
 #: documentation/content/en/books/handbook/network/_index.adoc:651
+#, fuzzy
 msgid ""
 "To make the change persist across reboots execute the following command:"
-msgstr ""
+msgstr "要使更改在重启后仍然生效，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_em0=\"inet 192.168.1.150 netmask 255.255.255.0\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_em0=\"inet 192.168.1.150 netmask 255.255.255.0\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:235
+#, fuzzy
 msgid "Add the default router executing the following command:"
-msgstr ""
+msgstr "执行以下命令添加默认路由器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc defaultrouter=\"192.168.1.1\"\n"
-msgstr ""
+msgstr "# sysrc defaultrouter=\"192.168.1.1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:242
+#, fuzzy
 msgid "Add the DNS records to [.filename]#/etc/resolv.conf#:"
-msgstr ""
+msgstr "将 DNS 记录添加到 [.filename]#/etc/resolv.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "nameserver 8.8.8.8\n"
 "nameserver 8.8.4.4\n"
-msgstr ""
+msgstr "nameserver 8.8.8.8\nnameserver 8.8.4.4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:250
+#, fuzzy
 msgid "Then restart `netif` and `routing` executing the following command:"
-msgstr ""
+msgstr "然后执行以下命令重启 `netif` 和 `routing`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service netif restart && service routing restart\n"
-msgstr ""
+msgstr "# service netif restart && service routing restart\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:257
 #: documentation/content/en/books/handbook/network/_index.adoc:330
+#, fuzzy
 msgid "The connection can be tested using man:ping[8]:"
-msgstr ""
+msgstr "可以使用 man:ping[8] 测试连接："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:261
 #: documentation/content/en/books/handbook/network/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ping -c2 www.FreeBSD.org\n"
-msgstr ""
+msgstr "% ping -c2 www.FreeBSD.org\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:270
 #: documentation/content/en/books/handbook/network/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PING web.geo.FreeBSD.org (147.28.184.45): 56 data bytes\n"
 "64 bytes from 147.28.184.45: icmp_seq=0 ttl=51 time=55.173 ms\n"
 "64 bytes from 147.28.184.45: icmp_seq=1 ttl=51 time=53.093 ms\n"
-msgstr ""
+msgstr "PING web.geo.FreeBSD.org (147.28.184.45): 56 data bytes\n64 bytes from 147.28.184.45: icmp_seq=0 ttl=51 time=55.173 ms\n64 bytes from 147.28.184.45: icmp_seq=1 ttl=51 time=53.093 ms\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:274
 #: documentation/content/en/books/handbook/network/_index.adoc:347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "--- web.geo.FreeBSD.org ping statistics ---\n"
 "2 packets transmitted, 2 packets received, 0.0% packet loss\n"
 "round-trip min/avg/max/stddev = 53.093/54.133/55.173/1.040 ms\n"
-msgstr ""
+msgstr "--- web.geo.FreeBSD.org ping statistics ---\n2 packets transmitted, 2 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 53.093/54.133/55.173/1.040 ms\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Dynamic IPv4 Address"
-msgstr ""
+msgstr "配置动态 IPv4 地址"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:282
+#, fuzzy
 msgid ""
 "If the network has a DHCP server, it is very easy to configure the network "
 "interface to use DHCP.  FreeBSD uses man:dhclient[8] as the DHCP client.  "
 "man:dhclient[8] will automatically provide the IP, the netmask and the "
 "default router."
-msgstr ""
+msgstr "如果网络中有 DHCP 服务器，配置网络接口使用 DHCP 就很简单。FreeBSD 使用 man:dhclient[8] 作为 DHCP 客户端。man:dhclient[8] 会自动提供 IP 地址、子网掩码和默认路由器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:284
+#, fuzzy
 msgid "To make the interface work with DHCP execute the following command:"
-msgstr ""
+msgstr "执行以下命令即可使接口使用 DHCP："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_em0=\"DHCP\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_em0=\"DHCP\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:291
+#, fuzzy
 msgid "man:dhclient[8] can be used manually by running the following command:"
-msgstr ""
+msgstr "可以通过运行以下命令手动使用 man:dhclient[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dhclient em0\n"
-msgstr ""
+msgstr "# dhclient em0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "DHCPREQUEST on em0 to 255.255.255.255 port 67\n"
 "DHCPACK from 192.168.1.1\n"
 "unknown dhcp option value 0x7d\n"
 "bound to 192.168.1.19 -- renewal in 43200 seconds.\n"
-msgstr ""
+msgstr "DHCPREQUEST on em0 to 255.255.255.255 port 67\nDHCPACK from 192.168.1.1\nunknown dhcp option value 0x7d\nbound to 192.168.1.19 -- renewal in 43200 seconds.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:308
+#, fuzzy
 msgid ""
 "In this way it can be verified that the address assignment using DHCP works "
 "correctly."
-msgstr ""
+msgstr "这样便可以确认通过 DHCP 分配地址的功能正常。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:313
+#, fuzzy
 msgid ""
 "man:dhclient[8] client can be started in background.  This can cause trouble "
 "with applications depending on a working network, but it will provide a "
 "faster startup in many cases."
-msgstr ""
+msgstr "man:dhclient[8] 客户端可以在后台启动。这可能会给依赖网络正常工作的应用程序带来问题，但在许多情况下可以加快启动速度。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:315
+#, fuzzy
 msgid "To execute man:dhclient[8] in background execute the following command:"
-msgstr ""
+msgstr "要在后台运行 man:dhclient[8]，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc background_dhclient=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc background_dhclient=\"YES\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:323
+#, fuzzy
 msgid "Then restart `netif` executing the following command:"
-msgstr ""
+msgstr "然后执行以下命令重启 `netif`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:327
 #: documentation/content/en/books/handbook/network/_index.adoc:636
 #: documentation/content/en/books/handbook/network/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service netif restart\n"
-msgstr ""
+msgstr "# service netif restart\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:353
+#, fuzzy
 msgid ""
 "IPv6 is the new version of the well-known IP protocol, also known as IPv4."
-msgstr ""
+msgstr "IPv6 是广为人知的 IP 协议的新版本，该协议也称为 IPv4。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:355
+#, fuzzy
 msgid ""
 "IPv6 provides several advantages over IPv4 as well as many new features:"
-msgstr ""
+msgstr "IPv6 相较于 IPv4 具有多项优势，并提供了许多新功能："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:357
+#, fuzzy
 msgid ""
 "Its 128-bit address space allows for "
 "340,282,366,920,938,463,463,374,607,431,768,211,456 addresses. This "
 "addresses the IPv4 address shortage and eventual IPv4 address exhaustion."
-msgstr ""
+msgstr "其 128 位地址空间可容纳 340,282,366,920,938,463,463,374,607,431,768,211,456 个地址。这解决了 IPv4 地址短缺以及最终耗尽的问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:358
+#, fuzzy
 msgid ""
 "Routers only store network aggregation addresses in their routing tables, "
 "thus reducing the average space of a routing table to 8192 entries. This "
 "addresses the scalability issues associated with IPv4, which required every "
 "allocated block of IPv4 addresses to be exchanged between Internet routers, "
 "causing their routing tables to become too large to allow efficient routing."
-msgstr ""
+msgstr "路由器只在路由表中存储聚合后的网络地址，因此路由表的平均条目数减少到 8192。这样解决了 IPv4 的可扩展性问题：IPv4 要求在 Internet 路由器之间交换每个已分配的 IPv4 地址块，导致路由表过大，无法高效路由。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:359
+#, fuzzy
 msgid ""
 "Address autoconfiguration (http://www.ietf.org/rfc/rfc4862.txt[RFC4862])."
-msgstr ""
+msgstr "地址自动配置（ link:http://www.ietf.org/rfc/rfc4862.txt[RFC4862]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:360
+#, fuzzy
 msgid "Mandatory multicast addresses."
-msgstr ""
+msgstr "强制使用的多播地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:361
+#, fuzzy
 msgid "Built-in IPsec (IP security)."
-msgstr ""
+msgstr "内置 IPsec（IP 安全）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:362
+#, fuzzy
 msgid "Simplified header structure."
-msgstr ""
+msgstr "简化的报头结构。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:363
+#, fuzzy
 msgid "Support for mobile IP."
-msgstr ""
+msgstr "支持移动 IP。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:364
+#, fuzzy
 msgid "IPv6-to-IPv4 transition mechanisms."
-msgstr ""
+msgstr "IPv6 到 IPv4 的过渡机制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:366
+#, fuzzy
 msgid ""
 "FreeBSD includes the http://www.kame.net/[KAME project] IPv6 reference "
 "implementation and comes with everything needed to use IPv6."
-msgstr ""
+msgstr "FreeBSD 包含 link:http://www.kame.net/[KAME 项目]的 IPv6 参考实现，并提供使用 IPv6 所需的一切。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:368
+#, fuzzy
 msgid "This section focuses on getting IPv6 configured and running."
-msgstr ""
+msgstr "本节重点介绍如何配置并运行 IPv6。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:370
+#, fuzzy
 msgid "There are three different types of IPv6 addresses:"
-msgstr ""
+msgstr "IPv6 地址分为三种类型："
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/network/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Unicast"
-msgstr ""
+msgstr "单播"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:373
+#, fuzzy
 msgid ""
 "A packet sent to a unicast address arrives at the interface belonging to the "
 "address."
-msgstr ""
+msgstr "发送到单播地址的数据包会到达属于该地址的接口。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/network/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Anycast"
-msgstr ""
+msgstr "任播"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:377
+#, fuzzy
 msgid ""
 "These addresses are syntactically indistinguishable from unicast addresses "
 "but they address a group of interfaces.  The packet destined for an anycast "
 "address will arrive at the nearest interface."
-msgstr ""
+msgstr "从语法上看，这些地址与单播地址无法区分，但它们指向一组接口。发往任播地址的数据包会到达最近的接口。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/network/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Multicast"
-msgstr ""
+msgstr "多播"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:382
+#, fuzzy
 msgid ""
 "These addresses identify a group of interfaces.  A packet destined for a "
 "multicast address will arrive at all interfaces belonging to the multicast "
 "group.  The IPv4 broadcast address, usually `xxx.xxx.xxx.255`, is expressed "
 "by multicast addresses in IPv6."
-msgstr ""
+msgstr "这些地址标识一组接口。发往多播地址的数据包会到达属于该多播组的所有接口。IPv4 广播地址通常写作 `xxx.xxx.xxx.255`，在 IPv6 中则由多播地址表示。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:385
+#, fuzzy
 msgid ""
 "When reading an IPv6 address, the canonical form is represented as `x:x:x:x:"
 "x:x:x:x`, where each `x` represents a 16 bit hex value.  An example is `FEBC:"
 "A574:382B:23C1:AA49:4592:4EFE:9982`."
-msgstr ""
+msgstr "读取 IPv6 地址时，其规范形式为 `x:x:x:x:x:x:x:x`，其中每个 `x` 表示一个 16 位十六进制值。例如：`FEBC:A574:382B:23C1:AA49:4592:4EFE:9982`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:390
+#, fuzzy
 msgid ""
 "Often, an address will have long substrings of all zeros.  A `::` (double "
 "colon) can be used to replace one substring per address.  Also, up to three "
 "leading ``0``s per hex value can be omitted.  For example, `fe80::1` "
 "corresponds to the canonical form `fe80:0000:0000:0000:0000:0000:0000:0001`."
-msgstr ""
+msgstr "地址中通常会有很长的全零子串。每个地址中可以用 `::`（双冒号）替换一个子串。此外，每个十六进制值前面的 ``0`` 最多可省略三个。例如，`fe80::1` 对应的规范形式为 `fe80:0000:0000:0000:0000:0000:0000:0001`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:393
+#, fuzzy
 msgid ""
 "A third form is to write the last 32 bits using the well known IPv4 "
 "notation.  For example, `2002::10.0.0.1` corresponds to the hexadecimal "
 "canonical representation `2002:0000:0000:0000:0000:0000:0a00:0001`, which in "
 "turn is equivalent to `2002::a00:1`."
-msgstr ""
+msgstr "第三种形式是使用常见的 IPv4 表示法书写最后 32 位。例如，`2002::10.0.0.1` 对应的十六进制规范表示为 `2002:0000:0000:0000:0000:0000:0a00:0001`，也等同于 `2002::a00:1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:395
+#, fuzzy
 msgid "To view a FreeBSD system's IPv6 address execute the following command:"
-msgstr ""
+msgstr "要查看 FreeBSD 系统的 IPv6 地址，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:399
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig\n"
-msgstr ""
+msgstr "# ifconfig\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:413
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "em0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
 "        options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>\n"
@@ -797,647 +874,691 @@ msgid ""
 "        media: Ethernet autoselect (1000baseT <full-duplex>)\n"
 "        status: active\n"
 "        nd6 options=23<PERFORMNUD,ACCEPT_RTADV,AUTO_LINKLOCAL>\n"
-msgstr ""
+msgstr "em0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>\n        ether 00:1f:16:0f:27:5a\n        inet 192.168.1.150 netmask 0xffffff00 broadcast 192.168.1.255\n        inet6 fe80::21f:16ff:fe0f:275a%em0 prefixlen 64 scopeid 0x1\n        media: Ethernet autoselect (1000baseT <full-duplex>)\n        status: active\n        nd6 options=23<PERFORMNUD,ACCEPT_RTADV,AUTO_LINKLOCAL>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:416
+#, fuzzy
 msgid ""
 "In this example, the `em0` interface is using `fe80::21f:16ff:fe0f:275a"
 "%em0`, an auto-configured link-local address which was automatically "
 "generated from the MAC address."
-msgstr ""
+msgstr "在此示例中，`em0` 接口使用 `fe80::21f:16ff:fe0f:275a%em0`，这是一个自动配置的链路本地地址，由 MAC 地址自动生成。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:419
+#, fuzzy
 msgid ""
 "Some IPv6 addresses are reserved.  A list of reserved addresses can be "
 "checked in the following table:"
-msgstr ""
+msgstr "有些 IPv6 地址是保留地址。可在下表中查看保留地址列表："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/network/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example IPv6 Reserved Addresses"
-msgstr ""
+msgstr "IPv6 保留地址示例"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv6 address"
-msgstr ""
+msgstr "IPv6 地址"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:426
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "备注"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:429
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`::/128`"
-msgstr ""
+msgstr "`::/128`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "unspecified"
-msgstr ""
+msgstr "未指定地址"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:432
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Equivalent to `0.0.0.0` in IPv4."
-msgstr ""
+msgstr "相当于 IPv4 中的 `0.0.0.0`。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`::1/128`"
-msgstr ""
+msgstr "`::1/128`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "loopback address"
-msgstr ""
+msgstr "环回地址"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:436
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Equivalent to `127.0.0.1` in IPv4."
-msgstr ""
+msgstr "相当于 IPv4 中的 `127.0.0.1`。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:437
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`::ffff:0.0.0.0/96`"
-msgstr ""
+msgstr "`::ffff:0.0.0.0/96`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:438
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv4 mapped IPv6 address"
-msgstr ""
+msgstr "IPv4 映射的 IPv6 地址"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The lower 32 bits are the IPv4 address for compatibility with IPv4 hosts and routers."
-msgstr ""
+msgstr "低 32 位是 IPv4 地址，用于兼容 IPv4 主机和路由器。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:441
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`fe80::/10`"
-msgstr ""
+msgstr "`fe80::/10`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:442
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link-local unicast"
-msgstr ""
+msgstr "链路本地单播"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:444
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Equivalent to 169.254.0.0/16 in IPv4."
-msgstr ""
+msgstr "相当于 IPv4 中的 169.254.0.0/16。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`fc00::/7`"
-msgstr ""
+msgstr "`fc00::/7`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "unique-local"
-msgstr ""
+msgstr "唯一本地地址"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:448
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Unique local addresses are intended for local communication and are only routable within a set of cooperating sites."
-msgstr ""
+msgstr "唯一本地地址用于本地通信，只能在一组相互协作的站点内路由。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ff00::/8`"
-msgstr ""
+msgstr "`ff00::/8`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:450
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "multicast"
-msgstr ""
+msgstr "多播"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`2000::/3`"
-msgstr ""
+msgstr "`2000::/3`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "global unicast"
-msgstr ""
+msgstr "全局单播"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:456
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "All global unicast addresses are assigned from this pool. The first 3 bits are `001`."
-msgstr ""
+msgstr "所有全局单播地址均从此地址池分配。前 3 位为 `001`。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:457
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "``2001:db8::/32, 3fff::/20``"
-msgstr ""
+msgstr "``2001:db8::/32, 3fff::/20``"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "documentation"
-msgstr ""
+msgstr "文档用途"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv6 address prefix for use in documentation."
-msgstr ""
+msgstr "供文档使用的 IPv6 地址前缀。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:462
+#, fuzzy
 msgid ""
 "For further information on the structure of IPv6 addresses, refer to http://"
 "www.ietf.org/rfc/rfc4291.txt[RFC4291]."
-msgstr ""
+msgstr "有关 IPv6 地址结构的更多信息，请参阅 link:http://www.ietf.org/rfc/rfc4291.txt[RFC4291]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Static IPv6 Address"
-msgstr ""
+msgstr "配置静态 IPv6 地址"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:467
+#, fuzzy
 msgid ""
 "To configure a FreeBSD system as an IPv6 client with a static IPv6 address "
 "it is necessary to set the IPv6 address."
-msgstr ""
+msgstr "要将 FreeBSD 系统配置为使用静态 IPv6 地址的 IPv6 客户端，需要设置 IPv6 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:469
+#, fuzzy
 msgid "Execute the following commands to meet the requirements:"
-msgstr ""
+msgstr "执行以下命令以满足这些要求："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:473
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_em0_ipv6=\"inet6 2001:db8:4672:6565:2026:5043:2d42:5344 prefixlen 64\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_em0_ipv6=\"inet6 2001:db8:4672:6565:2026:5043:2d42:5344 prefixlen 64\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:476
+#, fuzzy
 msgid ""
 "To assign a default router, specify its address executing the following "
 "command:"
-msgstr ""
+msgstr "要指定默认路由器，请执行以下命令并指定其地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ipv6_defaultrouter=\"2001:db8:4672:6565::1\"\n"
-msgstr ""
+msgstr "# sysrc ipv6_defaultrouter=\"2001:db8:4672:6565::1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:483
+#, fuzzy
 msgid ""
 "To configure an additional IPv6 anycast address, specify the anycast address "
 "as an `_aliasN`, as specified in man:rc.conf[5], followed by the `anycast` "
 "option:"
-msgstr ""
+msgstr "要配置额外的 IPv6 任播地址，请按照 man:rc.conf[5] 中的说明，将任播地址指定为 `_aliasN`，然后添加 `anycast` 选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:486
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_em0_alias0=\"inet6 2001:db8:4672:6565::a anycast\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_em0_alias0=\"inet6 2001:db8:4672:6565::a anycast\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:489
+#, fuzzy
 msgid ""
 "Keep in mind that the applications can't bind to anycast addresses; in that "
 "case you need to use an alias address instead."
-msgstr ""
+msgstr "请注意，应用程序无法绑定到任播地址；这种情况下需要改用别名地址。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Dynamic IPv6 Address"
-msgstr ""
+msgstr "配置动态 IPv6 地址"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:494
+#, fuzzy
 msgid ""
 "To dynamically configure the IPv6 address of the interface using crossref:"
 "glossary[slaac-glossary,SLAAC], execute the following commands:"
-msgstr ""
+msgstr "要使用 crossref:glossary[slaac-glossary,SLAAC] 动态配置接口的 IPv6 地址，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysrc ifconfig_em0_ipv6=\"inet6 accept_rtadv\"\n"
 "# sysrc rtsold_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_em0_ipv6=\"inet6 accept_rtadv\"\n# sysrc rtsold_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:502
+#, fuzzy
 msgid ""
 "Note that when IPv6 packet forwarding is enabled (i.e., "
 "`ipv6_gateway_enable=YES`), the system will not configure a SLAAC address "
 "unless the `net.inet6.ip6.rfc6204w3` man:sysctl[8] variable is set to 1."
-msgstr ""
+msgstr "请注意，启用 IPv6 数据包转发时（即 `ipv6_gateway_enable=YES`），除非将 man:sysctl[8] 变量 `net.inet6.ip6.rfc6204w3` 设置为 1，否则系统不会配置 SLAAC 地址。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Router Advertisement and Host Auto Configuration"
-msgstr ""
+msgstr "路由器通告和主机自动配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:506
+#, fuzzy
 msgid ""
 "This section demonstrates how to setup man:rtadvd[8] on an IPv6 router to "
 "advertise the IPv6 network prefix and default route."
-msgstr ""
+msgstr "本节演示如何在 IPv6 路由器上设置 man:rtadvd[8]，以通告 IPv6 网络前缀和默认路由。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:508
+#, fuzzy
 msgid "To enable man:rtadvd[8], execute the following command:"
-msgstr ""
+msgstr "要启用 man:rtadvd[8]，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:512
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc rtadvd_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc rtadvd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:516
+#, fuzzy
 msgid ""
 "It is important to specify the interface on which to do IPv6 router "
 "advertisement.  For example, to tell man:rtadvd[8] to use `em0`:"
-msgstr ""
+msgstr "务必指定用于发送 IPv6 路由器通告的接口。例如，要让 man:rtadvd[8] 使用 `em0`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:520
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc rtadvd_interfaces=\"em0\"\n"
-msgstr ""
+msgstr "# sysrc rtadvd_interfaces=\"em0\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:523
+#, fuzzy
 msgid ""
 "Next, create the configuration file, [.filename]#/etc/rtadvd.conf# as seen "
 "in this example:"
-msgstr ""
+msgstr "接下来，创建配置文件 [.filename]#/etc/rtadvd.conf#，如下例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:528
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "em0:\\\n"
 "\t:addrs#1:addr=\"2001:db8:1f11:246::\":prefixlen#64:tc=ether:\n"
-msgstr ""
+msgstr "em0:\\\n\t:addrs#1:addr=\"2001:db8:1f11:246::\":prefixlen#64:tc=ether:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:531
+#, fuzzy
 msgid ""
 "Replace `em0` with the interface to be used and `2001:db8:1f11:246::` with "
 "the prefix of the allocation."
-msgstr ""
+msgstr "将 `em0` 替换为要使用的接口，并将 `2001:db8:1f11:246::` 替换为分配到的前缀。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:534
+#, fuzzy
 msgid ""
 "For a dedicated `/64` subnet, nothing else needs to be changed.  Otherwise, "
 "change the `prefixlen#` to the correct value."
-msgstr ""
+msgstr "对于专用的 `/64` 子网，无需更改其他内容。否则，请将 `prefixlen#` 改为正确的值。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:535
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPv6 and IPv4 Address mapping"
-msgstr ""
+msgstr "IPv6 和 IPv4 地址映射"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:540
+#, fuzzy
 msgid ""
 "When IPv6 is enabled on a server, there may be a need to enable IPv4 mapped "
 "IPv6 address communication.  This compatibility option allows for IPv4 "
 "addresses to be represented as IPv6 addresses.  Permitting IPv6 applications "
 "to communicate with IPv4 and vice versa may be a security issue."
-msgstr ""
+msgstr "在服务器上启用 IPv6 后，可能需要启用 IPv4 映射的 IPv6 地址通信。此兼容性选项允许将 IPv4 地址表示为 IPv6 地址。允许 IPv6 应用程序与 IPv4 通信，反之亦然，可能会带来安全问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:544
+#, fuzzy
 msgid ""
 "This option may not be required in most cases and is available only for "
 "compatibility.  This option will allow IPv6-only applications to work with "
 "IPv4 in a dual stack environment.  This is most useful for third party "
 "applications which may not support an IPv6-only environment."
-msgstr ""
+msgstr "大多数情况下可能不需要此选项，它仅用于兼容性。此选项可让仅支持 IPv6 的应用程序在双栈环境中使用 IPv4。它对可能不支持纯 IPv6 环境的第三方应用程序最有用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:546
+#, fuzzy
 msgid "To enable this feature execute the following command:"
-msgstr ""
+msgstr "要启用此功能，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:550
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ipv6_ipv4mapping=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc ipv6_ipv4mapping=\"YES\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:553
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wireless Networks"
-msgstr ""
+msgstr "无线网络"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:556
+#, fuzzy
 msgid ""
 "Most wireless networks are based on the link:https://en.wikipedia.org/wiki/"
 "IEEE_802.11[IEEE(R) 802.11 standards]."
-msgstr ""
+msgstr "大多数无线网络都基于 link:https://en.wikipedia.org/wiki/IEEE_802.11[IEEE(R) 802.11 标准]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:558
+#, fuzzy
 msgid ""
 "FreeBSD supports networks that operate using link:https://en.wikipedia.org/"
 "wiki/IEEE_802.11a-1999[802.11a], link:https://en.wikipedia.org/wiki/"
 "IEEE_802.11b-1999[802.11b], link:https://en.wikipedia.org/wiki/"
 "IEEE_802.11g-2003[802.11g] and link:https://en.wikipedia.org/wiki/"
 "IEEE_802.11n-2009[802.11n]."
-msgstr ""
+msgstr "FreeBSD 支持使用 link:https://en.wikipedia.org/wiki/IEEE_802.11a-1999[802.11a]、link:https://en.wikipedia.org/wiki/IEEE_802.11b-1999[802.11b]、link:https://en.wikipedia.org/wiki/IEEE_802.11g-2003[802.11g] 和 link:https://en.wikipedia.org/wiki/IEEE_802.11n-2009[802.11n] 运行的网络。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:562
+#, fuzzy
 msgid ""
 "link:https://en.wikipedia.org/wiki/IEEE_802.11ac-2013[802.11ac] support on "
 "FreeBSD is currently under development."
-msgstr ""
+msgstr "FreeBSD 对 link:https://en.wikipedia.org/wiki/IEEE_802.11ac-2013[802.11ac] 的支持目前仍在开发中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:565
+#, fuzzy
 msgid ""
 "A basic wireless network consists of multiple stations communicating with "
 "radios that broadcast in either the 2.4GHz or 5GHz band, though this varies "
 "according to the locale and is also changing to enable communication in the "
 "2.3GHz and 4.9GHz ranges."
-msgstr ""
+msgstr "基本的无线网络由多个站点组成，这些站点通过无线电通信，信号通常在 2.4GHz 或 5GHz 频段广播；具体频段因地区而异，并且也在变化，以支持在 2.3GHz 和 4.9GHz 范围内通信。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:567
+#, fuzzy
 msgid "There are three basic steps to configure a wireless network:"
-msgstr ""
+msgstr "配置无线网络主要分为三个步骤："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:569
+#, fuzzy
 msgid "Scan and select an access point"
-msgstr ""
+msgstr "扫描并选择接入点"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:570
+#, fuzzy
 msgid "Authenticate the station"
-msgstr ""
+msgstr "对站点进行身份验证"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:571
+#, fuzzy
 msgid "Configure an IP address or use DHCP."
-msgstr ""
+msgstr "配置 IP 地址或使用 DHCP。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:573
+#, fuzzy
 msgid "The following sections discuss each step."
-msgstr ""
+msgstr "以下各节将分别讨论这些步骤。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:575
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Quick Start to Connect to a Wireless Network"
-msgstr ""
+msgstr "连接到无线网络的快速入门"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:578
+#, fuzzy
 msgid ""
 "Connecting FreeBSD to an existing wireless network is a very common "
 "situation."
-msgstr ""
+msgstr "将 FreeBSD 连接到现有无线网络是很常见的情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:581
+#, fuzzy
 msgid ""
 "This Quick Start procedure shows the steps required to connect to a network "
 "using basic authentication.  A more detailed procedure is given in the next "
 "section."
-msgstr ""
+msgstr "本快速入门过程介绍了使用基本身份验证连接到网络所需的步骤。下一节将介绍更详细的过程。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:583
+#, fuzzy
 msgid ""
 "The first step is to obtain the Service Set Identifier (SSID) and Pre-Shared "
 "Key (PSK) for the wireless network from the network administrator."
-msgstr ""
+msgstr "第一步是向网络管理员获取无线网络的服务集标识符（SSID）和预共享密钥（PSK）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:585
+#, fuzzy
 msgid ""
 "The second step is to add an entry for this network to [.filename]#/etc/"
 "wpa_supplicant.conf#."
-msgstr ""
+msgstr "第二步是将此网络的条目添加到 [.filename]#/etc/wpa_supplicant.conf#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:588
+#, fuzzy
 msgid ""
 "If the file does not exist, create it.  Consult man:wpa_supplicant.conf[5] "
 "for details on formatting entries in this file."
-msgstr ""
+msgstr "如果该文件不存在，请创建它。有关此文件中条目的格式，请参阅 man:wpa_supplicant.conf[5]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:595
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ctrl_interface=/var/run/wpa_supplicant\n"
 "eapol_version=1\n"
 "ap_scan=1\n"
 "fast_reauth=1\n"
-msgstr ""
+msgstr "ctrl_interface=/var/run/wpa_supplicant\neapol_version=1\nap_scan=1\nfast_reauth=1\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:600
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "network={\n"
 " ssid=\"myssid\" <.>\n"
 " psk=\"mypsk\" <.>\n"
 "}\n"
-msgstr ""
+msgstr "network={\n ssid=\"myssid\" <.>\n psk=\"mypsk\" <.>\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:604
+#, fuzzy
 msgid ""
 "Is the SSID of the wireless network.  Replace it with the name of the "
 "wireless network."
-msgstr ""
+msgstr "这是无线网络的 SSID。请将其替换为无线网络的名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:606
+#, fuzzy
 msgid ""
 "Is the PSK of the wireless network.  Replace it with the password of the "
 "wireless network."
-msgstr ""
+msgstr "这是无线网络的 PSK。请将其替换为无线网络的密码。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:610
+#, fuzzy
 msgid ""
 "The third step is to add the network interface entry to configure the "
 "network on startup.  Obtain the network device interface by using the sysctl "
 "`net.wlan.devices`.  In the listing below, the output of this sysctl shows "
 "the network device interface is \"iwm0\"."
-msgstr ""
+msgstr "第三步是添加网络接口条目，以便在启动时配置网络。使用 sysctl `net.wlan.devices` 获取网络设备接口。以下输出显示，该 sysctl 返回的网络设备接口为 \"iwm0\"。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:614
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl net.wlan.devices\n"
-msgstr ""
+msgstr "# sysctl net.wlan.devices\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:621
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "net.wlan.devices: iwm0\n"
-msgstr ""
+msgstr "net.wlan.devices: iwm0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:624
+#, fuzzy
 msgid ""
 "In the sysrc line that follows, replace \"iwm0\" with the output of the "
 "sysctl command if needed."
-msgstr ""
+msgstr "在接下来的 sysrc 命令中，如有需要，请将 \"iwm0\" 替换为 sysctl 命令的输出。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:629
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysrc wlans_iwm0=\"wlan0\"\n"
 "# sysrc ifconfig_wlan0=\"WPA DHCP\"\n"
-msgstr ""
+msgstr "# sysrc wlans_iwm0=\"wlan0\"\n# sysrc ifconfig_wlan0=\"WPA DHCP\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:632
+#, fuzzy
 msgid ""
 "And the last step is to restart the `netif` service executing the following "
 "command:"
-msgstr ""
+msgstr "最后一步是执行以下命令重启 `netif` 服务："
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:639
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Basic Wireless Configuration"
-msgstr ""
+msgstr "无线网络基本配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:644
+#, fuzzy
 msgid ""
 "This section provides a more detailed example of configuring a wireless "
 "network card.  To find out what wireless network cards are in the system "
 "check the section crossref:network[config-identify-network-adapter, Identify "
 "Network Adapters]."
-msgstr ""
+msgstr "本节提供了配置无线网卡的更详细示例。要了解系统中有哪些无线网卡，请参阅 crossref:network[config-identify-network-adapter, Identify Network Adapters] 一节。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:648
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig wlan0 create wlandev iwm0\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev iwm0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:655
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc wlans_iwm0=\"wlan0\"\n"
-msgstr ""
+msgstr "# sysrc wlans_iwm0=\"wlan0\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:660
+#, fuzzy
 msgid ""
 "Since the regulatory situation is different in various parts of the world, "
 "it is necessary to correctly set the domains that apply to your location to "
 "have the correct information about what channels can be used."
-msgstr ""
+msgstr "由于世界各地的无线电监管规定各不相同，必须正确设置适用于所在位置的区域，以便获取可用信道的正确信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:663
+#, fuzzy
 msgid ""
 "The available region definitions can be found in [.filename]#/etc/regdomain."
 "xml#.  To set the data at runtime, use `ifconfig`:"
-msgstr ""
+msgstr "可用的区域定义见 [.filename]#/etc/regdomain.xml#。要在运行时设置相关信息，请使用 `ifconfig`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:667
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig wlan0 regdomain etsi2 country AT\n"
-msgstr ""
+msgstr "# ifconfig wlan0 regdomain etsi2 country AT\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:670
+#, fuzzy
 msgid "To persist the settings, add it to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "要使这些设置持久生效，请将其添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:674
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc create_args_wlan0=\"country AT regdomain etsi2\"\n"
-msgstr ""
+msgstr "# sysrc create_args_wlan0=\"country AT regdomain etsi2\"\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:678
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scan Wireless Networks"
-msgstr ""
+msgstr "扫描无线网络"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:681
+#, fuzzy
 msgid "Available wireless networks can be scanned using man:ifconfig[8]."
-msgstr ""
+msgstr "可以使用 man:ifconfig[8] 扫描可用的无线网络。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:683
+#, fuzzy
 msgid "To list the wireless networks execute the following command:"
-msgstr ""
+msgstr "执行以下命令可列出无线网络："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:687
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig wlan0 up list scan\n"
-msgstr ""
+msgstr "# ifconfig wlan0 up list scan\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:700
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SSID/MESH ID                      BSSID              CHAN RATE    S:N     INT CAPS\n"
 "FreeBSD                           e8:d1:1b:1b:58:ae    1   54M  -47:-96   100 EP   RSN BSSLOAD HTCAP WPS WME\n"
@@ -1446,34 +1567,38 @@ msgid ""
 "GNU-Linux                         dc:f8:b9:a0:a8:e0   44   54M  -95:-96   100 EP   WPA RSN WPS HTCAP VHTCAP VHTOPMODE WME VHTPWRENV\n"
 "Windows                           44:48:b9:b3:c3:ff   44   54M  -84:-96   100 EP   BSSLOAD VHTPWRENV HTCAP WME RSN VHTCAP VHTOPMODE WPS\n"
 "MacOS                             46:48:b9:b3:c3:ff   44   54M  -84:-96   100 EP   BSSLOAD VHTPWRENV HTCAP WME RSN VHTCAP VHTOPMODE WPS\n"
-msgstr ""
+msgstr "SSID/MESH ID                      BSSID              CHAN RATE    S:N     INT CAPS\nFreeBSD                           e8:d1:1b:1b:58:ae    1   54M  -47:-96   100 EP   RSN BSSLOAD HTCAP WPS WME\nNetBSD                            d4:b9:2f:35:fe:08    1   54M  -80:-96   100 EP   RSN BSSLOAD HTCAP WPS WME\nOpenBSD                           fc:40:09:c6:31:bd   36   54M  -94:-96   100 EPS  VHTPWRENV APCHANREP RSN WPS BSSLOAD HTCAP VHTCAP VHTOPMODE WME\nGNU-Linux                         dc:f8:b9:a0:a8:e0   44   54M  -95:-96   100 EP   WPA RSN WPS HTCAP VHTCAP VHTOPMODE WME VHTPWRENV\nWindows                           44:48:b9:b3:c3:ff   44   54M  -84:-96   100 EP   BSSLOAD VHTPWRENV HTCAP WME RSN VHTCAP VHTOPMODE WPS\nMacOS                             46:48:b9:b3:c3:ff   44   54M  -84:-96   100 EP   BSSLOAD VHTPWRENV HTCAP WME RSN VHTCAP VHTOPMODE WPS\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:703
+#, fuzzy
 msgid "SSID/MESH ID identifies the name of the network."
-msgstr ""
+msgstr "SSID/MESH ID 标识网络名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:704
+#, fuzzy
 msgid "BSSID identifies the MAC address of the access point."
-msgstr ""
+msgstr "BSSID 标识接入点的 MAC 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:705
+#, fuzzy
 msgid ""
 "CAPS field identifies the type of each network and the capabilities of the "
 "stations operating there (see the definition of `list scan` in man:"
 "ifconfig[8] for more details)."
-msgstr ""
+msgstr "CAPS 字段标识每个网络的类型，以及其中运行的站点所具备的功能（详情请参阅 man:ifconfig[8] 中 `list scan` 的定义）。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:707
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Connection and Authentication to a Wireless Network"
-msgstr ""
+msgstr "连接并验证无线网络"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:712
+#, fuzzy
 msgid ""
 "Once a wireless network has been selected from the list of scanned networks, "
 "it is necessary to perform the connection and the authentication.  In the "
@@ -1482,313 +1607,341 @@ msgid ""
 "be completed before data traffic can flow, either using pre-shared keys or "
 "secrets, or more complex schemes that involve backend services such as "
 "RADIUS."
-msgstr ""
+msgstr "从扫描到的网络列表中选择无线网络后，需要进行连接和身份验证。绝大多数无线网络使用路由器中配置的密码进行身份验证。其他方案则要求在传输数据之前完成加密握手，可以使用预共享密钥或机密信息，也可以采用涉及 RADIUS 等后端服务的更复杂方案。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/network/_index.adoc:714
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Authenticate with WPA2/WPA/Personal"
-msgstr ""
+msgstr "使用 WPA2/WPA/Personal 进行身份验证"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:717
+#, fuzzy
 msgid ""
 "The authentication process in a wireless network is managed by man:"
 "wpa_supplicant[8]."
-msgstr ""
+msgstr "无线网络的身份验证过程由 man:wpa_supplicant[8] 管理。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:720
+#, fuzzy
 msgid ""
 "The man:wpa_supplicant[8] configuration will be made in the [.filename]#/etc/"
 "wpa_supplicant.conf# file.  For more information, see man:wpa_supplicant."
 "conf[5]."
-msgstr ""
+msgstr "man:wpa_supplicant[8] 的配置写入 [.filename]#/etc/wpa_supplicant.conf# 文件。详情请参阅 man:wpa_supplicant.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:722
+#, fuzzy
 msgid ""
 "Once the scanning of the wireless networks has been carried out, a network "
 "has been chosen and have the password (PSK), that information will be added "
 "to the file [.filename]#/etc/wpa_supplicant.conf# as in the following "
 "example:"
-msgstr ""
+msgstr "完成无线网络扫描、选定网络并获得密码（PSK）后，将这些信息添加到 [.filename]#/etc/wpa_supplicant.conf# 文件中，如下例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:730
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "network={\n"
 "        scan_ssid=1 <.>\n"
 "        ssid=\"FreeBSD\" <.>\n"
 "        psk=\"12345678\" <.>\n"
 "}\n"
-msgstr ""
+msgstr "network={\n        scan_ssid=1 <.>\n        ssid=\"FreeBSD\" <.>\n        psk=\"12345678\" <.>\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:733
+#, fuzzy
 msgid ""
 "SSID scan technique. Only need to use this option if the network is hidden."
-msgstr ""
+msgstr "SSID 扫描方式。仅当网络为隐藏网络时才需要使用此选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:734
+#, fuzzy
 msgid "Network name."
-msgstr ""
+msgstr "网络名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:735
+#, fuzzy
 msgid "Password of the wireless network."
-msgstr ""
+msgstr "无线网络的密码。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:737
+#, fuzzy
 msgid ""
 "The next step will be to configure the wireless connection in the file [."
 "filename]#/etc/rc.conf#."
-msgstr ""
+msgstr "下一步是在 [.filename]#/etc/rc.conf# 文件中配置无线连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:739
+#, fuzzy
 msgid ""
 "To use a static address it will be necessary to execute the following "
 "command:"
-msgstr ""
+msgstr "要使用静态地址，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:743
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_wlan0=\"inet 192.168.1.20 netmask 255.255.255.0\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_wlan0=\"inet 192.168.1.20 netmask 255.255.255.0\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:746
+#, fuzzy
 msgid ""
 "To use a dynamic address it will be necessary to execute the following "
 "command:"
-msgstr ""
+msgstr "要使用动态地址，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:750
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_wlan0=\"WPA DHCP\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_wlan0=\"WPA DHCP\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:753
+#, fuzzy
 msgid "Then restart the network executing the following command:"
-msgstr ""
+msgstr "然后执行以下命令重启网络："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:762
+#, fuzzy
 msgid ""
 "More information on how to perform more advanced methods of authentication "
 "can be obtained at crossref:advanced-networking[network-advanced-wireless,"
 "\"Wireless Advanced Authentication\"]."
-msgstr ""
+msgstr "有关如何使用更高级身份验证方法的更多信息，请参阅 crossref:advanced-networking[network-advanced-wireless,\"Wireless Advanced Authentication\"]。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/network/_index.adoc:765
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Authenticate with Open Networks"
-msgstr ""
+msgstr "对开放网络进行身份验证"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:770
+#, fuzzy
 msgid ""
 "It is important that the user is *very* careful when connecting to open "
 "networks without any kind of authentication."
-msgstr ""
+msgstr "连接到没有任何身份验证机制的开放网络时，用户务必格外小心。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:773
+#, fuzzy
 msgid ""
 "Once the wireless network scan is done and the SSID of the wireless network "
 "is selected, execute the following command:"
-msgstr ""
+msgstr "完成无线网络扫描并选定无线网络的 SSID 后，执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:777
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig wlan0 ssid SSID\n"
-msgstr ""
+msgstr "# ifconfig wlan0 ssid SSID\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:780
+#, fuzzy
 msgid "And then execute man:dhclient[8] to get the address configured:"
-msgstr ""
+msgstr "然后执行 man:dhclient[8] 获取配置好的地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:784
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dhclient wlan0\n"
-msgstr ""
+msgstr "# dhclient wlan0\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Both Wired and Wireless Connections"
-msgstr ""
+msgstr "同时使用有线和无线连接"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:790
+#, fuzzy
 msgid ""
 "A wired connection provides better performance and reliability, while a "
 "wireless connection provides flexibility and mobility.  Laptop users "
 "typically want to roam seamlessly between the two types of connections."
-msgstr ""
+msgstr "有线连接的性能和可靠性更好，而无线连接则更加灵活、便于移动。笔记本电脑用户通常希望在这两种连接之间无缝切换。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:793
+#, fuzzy
 msgid ""
 "On FreeBSD, it is possible to combine two or even more network interfaces "
 "together in a \"failover\" fashion.  This type of configuration uses the "
 "most preferred and available connection from a group of network interfaces, "
 "and the operating system switches automatically when the link state changes."
-msgstr ""
+msgstr "在 FreeBSD 上，可以将两个或更多网络接口组合为“故障转移”模式。这种配置会从一组网络接口中使用优先级最高且可用的连接，并在链路状态发生变化时由操作系统自动切换。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:795
+#, fuzzy
 msgid ""
 "Link aggregation and failover is covered in crossref:advanced-"
 "networking[network-aggregation,\"Link Aggregation and Failover\"] and an "
 "example for using both wired and wireless connections is provided at "
 "crossref:advanced-networking[networking-lagg-wired-and-wireless,\"Failover "
 "Mode Between Ethernet and Wireless Interfaces\"]."
-msgstr ""
+msgstr "链路聚合和故障转移的相关内容见 crossref:advanced-networking[network-aggregation,\"Link Aggregation and Failover\"]；有关同时使用有线和无线连接的示例，请参阅 crossref:advanced-networking[networking-lagg-wired-and-wireless,\"Failover Mode Between Ethernet and Wireless Interfaces\"]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:797
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hostname"
-msgstr ""
+msgstr "主机名"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:800
+#, fuzzy
 msgid ""
 "The hostname represents the fully qualified domain name (FQDN) of the host "
 "on the network."
-msgstr ""
+msgstr "主机名表示主机在网络中的完全限定域名（FQDN）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:804
+#, fuzzy
 msgid ""
 "If no hostname is set for the host, FreeBSD will call itself `Amnesiac`."
-msgstr ""
+msgstr "如果未为主机设置主机名，FreeBSD 会将其称为 `Amnesiac`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:807
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Check The Current Hostname"
-msgstr ""
+msgstr "检查当前主机名"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:810
+#, fuzzy
 msgid "man:hostname[1] can be used to check the current hostname:"
-msgstr ""
+msgstr "可以使用 man:hostname[1] 检查当前主机名："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:814
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ hostname\n"
-msgstr ""
+msgstr "$ hostname\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:821
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsdhostname.example.com\n"
-msgstr ""
+msgstr "freebsdhostname.example.com\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:824
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Change Hostname"
-msgstr ""
+msgstr "更改主机名"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:827
+#, fuzzy
 msgid ""
 "To change the hostname of the host and persist it across reboots execute the "
 "following command:"
-msgstr ""
+msgstr "要更改主机名并使其在重启后保持不变，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:831
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc hostname=\"freebsdhostname.example.com\"\n"
-msgstr ""
+msgstr "# sysrc hostname=\"freebsdhostname.example.com\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DNS"
-msgstr ""
+msgstr "DNS"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:837
+#, fuzzy
 msgid ""
 "The DNS could be understood as a link:https://en.wikipedia.org/wiki/"
 "Telephone_directory[telephone directory] in which an IP is identified to a "
 "hostname and vice versa."
-msgstr ""
+msgstr "DNS 可以理解为 link:https://en.wikipedia.org/wiki/Telephone_directory[电话簿]，用于将 IP 地址映射到主机名，反之亦然。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:840
+#, fuzzy
 msgid ""
 "There are three files that handle how a FreeBSD system interact with the "
 "DNS.  These three files are man:hosts[5], man:resolv.conf[5] and man:"
 "nsswitch.conf[5]"
-msgstr ""
+msgstr "有三个文件负责处理 FreeBSD 系统与 DNS 的交互，分别是 man:hosts[5]、man:resolv.conf[5] 和 man:nsswitch.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:842
+#, fuzzy
 msgid ""
 "Unless otherwise stated in the [.filename]#/etc/nsswitch.conf# file, FreeBSD "
 "will look at the addresses in the [.filename]#/etc/hosts# file and then the "
 "DNS information in the [.filename]#/etc/resolv.conf# file."
-msgstr ""
+msgstr "除非 [.filename]#/etc/nsswitch.conf# 文件中另有说明，否则 FreeBSD 会先查找 [.filename]#/etc/hosts# 文件中的地址，然后查找 [.filename]#/etc/resolv.conf# 文件中的 DNS 信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:846
+#, fuzzy
 msgid ""
 "The man:nsswitch.conf[5] file specifies how the nsdispatch (name-service "
 "switch dispatcher) should operate."
-msgstr ""
+msgstr "man:nsswitch.conf[5] 文件指定 nsdispatch（名称服务切换分派器）的运行方式。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:848
+#, fuzzy
 msgid ""
 "By default, the hosts section of the [.filename]#/etc/nsswitch.conf# file "
 "will be as follows:"
-msgstr ""
+msgstr "默认情况下，[.filename]#/etc/nsswitch.conf# 文件中的 hosts 部分如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:852
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hosts: files dns\n"
-msgstr ""
+msgstr "hosts: files dns\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:856
+#, fuzzy
 msgid ""
 "For example, in case of using the man:nscd[8] service.  The order of "
 "preference could be changed by leaving the line as follows:"
-msgstr ""
+msgstr "例如，使用 man:nscd[8] 服务时，可以按如下方式更改优先顺序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:860
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hosts: files cache dns\n"
-msgstr ""
+msgstr "hosts: files cache dns\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:864
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Local addresses"
-msgstr ""
+msgstr "本地地址"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:869
+#, fuzzy
 msgid ""
 "The [.filename]#/etc/hosts# file is a simple text database who provide host "
 "name to IP address mappings.  Entries for local computers connected via a "
@@ -1796,236 +1949,258 @@ msgid ""
 "setting up a DNS server.  Additionally, [.filename]#/etc/hosts# can be used "
 "to provide a local record of Internet names, reducing the need to query "
 "external DNS servers for commonly accessed names."
-msgstr ""
+msgstr "[.filename]#/etc/hosts# 文件是一个简单的文本数据库，用于将主机名映射到 IP 地址。可以将通过 LAN 连接的本地计算机条目添加到此文件，以便简单地命名，而无需设置 DNS 服务器。此外，[.filename]#/etc/hosts# 还可用于记录本地的 Internet 名称，从而减少对常用名称查询外部 DNS 服务器的需求。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:871
+#, fuzzy
 msgid ""
 "For example, in the case of having a local instance of package:www/gitlab-"
 "ce[] in a local environment, it could be added as follows to the file [."
 "filename]#/etc/hosts#:"
-msgstr ""
+msgstr "例如，在本地环境中运行 package:www/gitlab-ce[] 实例时，可以将以下内容添加到 [.filename]#/etc/hosts# 文件中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:875
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "192.168.1.150 git.example.com git\n"
-msgstr ""
+msgstr "192.168.1.150 git.example.com git\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:878
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring the Nameserver"
-msgstr ""
+msgstr "配置名称服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:881
+#, fuzzy
 msgid ""
 "How a FreeBSD system accesses the Internet Domain Name System (DNS) is "
 "controlled by man:resolv.conf[5]."
-msgstr ""
+msgstr "FreeBSD 系统访问 Internet 域名系统（DNS）的方式由 man:resolv.conf[5] 控制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:883
+#, fuzzy
 msgid "The most common entries to [.filename]#/etc/resolv.conf# are:"
-msgstr ""
+msgstr "[.filename]#/etc/resolv.conf# 中最常见的条目如下："
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:889
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`nameserver`"
-msgstr ""
+msgstr "`nameserver`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:891
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The IP address of a name server the resolver should query. The servers are queried in the order listed with a maximum of three."
-msgstr ""
+msgstr "解析器应查询的名称服务器 IP 地址。服务器按列出的顺序进行查询，最多可列出三个。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:892
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`search`"
-msgstr ""
+msgstr "`search`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:894
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Search list for hostname lookup. This is normally determined by the domain of the local hostname."
-msgstr ""
+msgstr "用于查找主机名的搜索列表。通常由本地主机名的域名决定。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:895
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`domain`"
-msgstr ""
+msgstr "`domain`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/network/_index.adoc:896
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The local domain name."
-msgstr ""
+msgstr "本地域名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:899
+#, fuzzy
 msgid "A typical [.filename]#/etc/resolv.conf# looks like this:"
-msgstr ""
+msgstr "典型的 [.filename]#/etc/resolv.conf# 文件如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:905
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "search example.com\n"
 "nameserver 147.11.1.11\n"
 "nameserver 147.11.100.30\n"
-msgstr ""
+msgstr "search example.com\nnameserver 147.11.1.11\nnameserver 147.11.100.30\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:910
+#, fuzzy
 msgid "Only one of the `search` and `domain` options should be used."
-msgstr ""
+msgstr "`search` 和 `domain` 选项只能使用其中一个。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:913
+#, fuzzy
 msgid ""
 "When using DHCP, man:dhclient[8] usually rewrites [.filename]#/etc/resolv."
 "conf# with information received from the DHCP server."
-msgstr ""
+msgstr "使用 DHCP 时，man:dhclient[8] 通常会根据从 DHCP 服务器接收到的信息重写 [.filename]#/etc/resolv.conf#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:917
+#, fuzzy
 msgid ""
 "If the machine in which the configuration is being made is *not* a DNS "
 "server, man:local-unbound[8] can be used to improve DNS lookup performance."
-msgstr ""
+msgstr "如果配置的计算机*不是* DNS 服务器，可以使用 man:local-unbound[8] 提高 DNS 查询性能。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:919
+#, fuzzy
 msgid "To enable it at boot time execute the following command:"
-msgstr ""
+msgstr "要在启动时启用它，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:923
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc local_unbound_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc local_unbound_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:926
+#, fuzzy
 msgid ""
 "To start the man:local-unbound[8] service execute the following command:"
-msgstr ""
+msgstr "要启动 man:local-unbound[8] 服务，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/network/_index.adoc:930
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service local_unbound start\n"
-msgstr ""
+msgstr "# service local_unbound start\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/network/_index.adoc:934
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Troubleshooting"
-msgstr ""
+msgstr "故障排除"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:937
+#, fuzzy
 msgid ""
 "When troubleshooting hardware and software configurations, check the simple "
 "things first."
-msgstr ""
+msgstr "排查硬件和软件配置问题时，请先检查最简单的事项。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:939
+#, fuzzy
 msgid "Is the network cable plugged in?"
-msgstr ""
+msgstr "网络电缆是否已插好？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:940
+#, fuzzy
 msgid "Are the network services properly configured?"
-msgstr ""
+msgstr "网络服务是否已正确配置？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:941
+#, fuzzy
 msgid "Is the firewall configured correctly?"
-msgstr ""
+msgstr "防火墙是否配置正确？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:942
+#, fuzzy
 msgid "Is the NIC supported by FreeBSD?"
-msgstr ""
+msgstr "FreeBSD 是否支持该网卡？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:943
+#, fuzzy
 msgid "Is the router working correctly?"
-msgstr ""
+msgstr "路由器是否正常工作？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/network/_index.adoc:947
+#, fuzzy
 msgid ""
 "Before sending a bug report, always check the Hardware Notes in the link:"
 "https://www.freebsd.org/releases/[FreeBSD release page], update the version "
 "of FreeBSD to the latest STABLE version, check the mailing list archives, "
 "and search the Internet."
-msgstr ""
+msgstr "提交错误报告前，务必查看 link:https://www.freebsd.org/releases/[FreeBSD 发布页面]中的硬件说明，将 FreeBSD 更新到最新的 STABLE 版本，查阅邮件列表存档，并搜索互联网。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:950
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Troubleshooting in Wired Networks"
-msgstr ""
+msgstr "有线网络故障排除"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:954
+#, fuzzy
 msgid ""
 "If the card works, yet performance is poor, read through man:tuning[7].  "
 "Also, check the network configuration as incorrect network settings can "
 "cause slow connections."
-msgstr ""
+msgstr "如果网卡可以正常工作，但性能不佳，请阅读 man:tuning[7]。此外，还要检查网络配置，因为不正确的网络设置可能导致连接速度变慢。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:959
+#, fuzzy
 msgid ""
 "`No route to host` messages occur if the system is unable to route a packet "
 "to the destination host.  This can happen if no default route is specified "
 "or if a cable is unplugged.  Check the output of `netstat -rn` and make sure "
 "there is a valid route to the host.  If there is not, read crossref:advanced-"
 "networking[network-routing,\"Gateways and Routes\"]."
-msgstr ""
+msgstr "如果系统无法将数据包路由到目标主机，就会出现 `No route to host` 消息。这可能是因为未指定默认路由，或者网线未插好。检查 `netstat -rn` 的输出，并确认存在一条到该主机的有效路由。如果没有，请阅读 crossref:advanced-networking[network-routing,\"网关和路由\"]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:963
+#, fuzzy
 msgid ""
 "`ping: sendto: Permission denied` error messages are often caused by a "
 "misconfigured firewall.  If a firewall is enabled on FreeBSD but no rules "
 "have been defined, the default policy is to deny all traffic, even man:"
 "ping[8].  Refer to crossref:firewalls[firewalls,Firewalls] for more "
 "information."
-msgstr ""
+msgstr "`ping: sendto: Permission denied` 错误消息通常是由防火墙配置错误造成的。如果 FreeBSD 上启用了防火墙，但没有定义任何规则，默认策略会拒绝所有流量，甚至包括 man:ping[8]。有关详细信息，请参阅 crossref:firewalls[firewalls,防火墙]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/network/_index.adoc:965
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Troubleshooting in Wireless Networks"
-msgstr ""
+msgstr "无线网络故障排除"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:968
+#, fuzzy
 msgid ""
 "This section describes a number of steps to help troubleshoot common "
 "wireless networking problems."
-msgstr ""
+msgstr "本节介绍了若干步骤，可用于排查常见的无线网络问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:970
+#, fuzzy
 msgid ""
 "If the access point is not listed when scanning, check that the "
 "configuration has not limited the wireless device to a limited set of "
 "channels."
-msgstr ""
+msgstr "如果扫描时未列出接入点，请检查配置是否将无线设备限制在有限的信道集合内。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:972
+#, fuzzy
 msgid ""
 "If the device cannot associate with an access point, verify that the "
 "configuration matches the settings on the access point. This includes the "
@@ -2033,18 +2208,20 @@ msgid ""
 "as much as possible. If using a security protocol such as WPA2 or WPA, "
 "configure the access point for open authentication and no security to see if "
 "traffic will pass."
-msgstr ""
+msgstr "如果设备无法与接入点关联，请确认配置与接入点上的设置一致。这包括认证方案和任何安全协议。尽可能简化配置。如果使用 WPA2 或 WPA 等安全协议，请将接入点配置为开放式认证且不启用安全措施，以检查流量是否能够通过。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:974
+#, fuzzy
 msgid ""
 "Once the system can associate with the access point, diagnose the network "
 "configuration using tools like man:ping[8]."
-msgstr ""
+msgstr "系统能够与接入点关联后，请使用 man:ping[8] 等工具诊断网络配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/network/_index.adoc:975
+#, fuzzy
 msgid ""
 "There are many lower-level debugging tools. Debugging messages can be "
 "enabled in the 802.11 protocol support layer using man:wlandebug[8]."
-msgstr ""
+msgstr "还有许多较低层级的调试工具。可以使用 man:wlandebug[8] 在 802.11 协议支持层启用调试消息。"

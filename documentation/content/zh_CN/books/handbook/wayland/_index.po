@@ -19,27 +19,27 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/wayland/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter describes how to install and configure Wayland and compositors on FreeBSD, which provides a graphical user environment"
-msgstr ""
+msgstr "本章介绍如何在 FreeBSD 上安装和配置 Wayland 及合成器，以提供图形用户环境"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/wayland/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part I. Getting Started"
-msgstr ""
+msgstr "第一部分：入门"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/wayland/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 6. Wayland"
-msgstr ""
+msgstr "第 6 章：Wayland"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/wayland/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wayland on FreeBSD"
-msgstr ""
+msgstr "FreeBSD 上的 Wayland"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:52
@@ -49,64 +49,74 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:56
+#, fuzzy
 msgid ""
 "An installation of FreeBSD using bsdinstall does not automatically install a "
 "graphical user interface.  This chapter describes how to select, install, "
 "and configure a Wayland compositor, which provides a graphical environment."
-msgstr ""
+msgstr "使用 bsdinstall 安装 FreeBSD 时，不会自动安装图形用户界面。  本章介绍如何选择、安装和配置 Wayland 合成器，以提供图形环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:58
+#, fuzzy
 msgid "Before reading this chapter:"
-msgstr ""
+msgstr "阅读本章之前："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:60
+#, fuzzy
 msgid ""
 "Know how to install crossref:ports[ports,additional third-party software]."
-msgstr ""
+msgstr "了解如何安装 crossref:ports[ports,additional third-party software]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:62
+#, fuzzy
 msgid ""
 "Know how to identify and configure crossref:x11[x-graphic-card-drivers,"
 "drivers for the graphics hardware]."
-msgstr ""
+msgstr "了解如何识别和配置 crossref:x11[x-graphic-card-drivers,drivers for the graphics hardware]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:64
+#, fuzzy
 msgid "Read this chapter to learn:"
-msgstr ""
+msgstr "阅读本章以了解："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:66
+#, fuzzy
 msgid "How to configure FreeBSD to host a Wayland graphical environment."
-msgstr ""
+msgstr "如何配置 FreeBSD，以提供 Wayland 图形环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:68
+#, fuzzy
 msgid "How to install and configure a Wayland compositor."
-msgstr ""
+msgstr "如何安装和配置 Wayland 合成器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:70
+#, fuzzy
 msgid "How to run programs designed for the older X Window System."
-msgstr ""
+msgstr "如何运行面向旧版 X Window System 设计的程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:72
+#, fuzzy
 msgid ""
 "How to configure remote desktop access to a Wayland graphical environment."
-msgstr ""
+msgstr "如何配置对 Wayland 图形环境的远程桌面访问。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:74
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wayland Overview"
-msgstr ""
+msgstr "Wayland 概述"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:80
+#, fuzzy
 msgid ""
 "Wayland is a communication protocol that can replace a display server such "
 "as Xorg.  It differs from Xorg in several important ways.  First, Wayland is "
@@ -115,20 +125,22 @@ msgid ""
 "the X11 protocol, used to run remote displays, and the X server, used to "
 "accept connections and display windows.  Under Wayland, the compositor or "
 "window manager provides the display server instead of a traditional X server."
-msgstr ""
+msgstr "Wayland 是一种通信协议，可替代 Xorg 之类的显示服务器。  它与 Xorg 有几个重要区别。  首先，Wayland 只是一种协议，它作为使用某种机制的客户端之间的中介，从而消除了对 X 服务器的依赖。  Xorg 同时包含用于运行远程显示的 X11 协议，以及用于接受连接并显示窗口的 X 服务器。  在 Wayland 下，显示服务器由合成器或窗口管理器提供，而不是传统的 X 服务器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:83
+#, fuzzy
 msgid ""
 "Since Wayland is not an X server, traditional X screen connections will need "
 "to utilize other methods such as VNC or RDP for remote desktop management.  "
 "Second, Wayland can manage composite communications between clients and a "
 "compositor as a separate entity which does not need to support the X "
 "protocols."
-msgstr ""
+msgstr "由于 Wayland 不是 X 服务器，传统的 X 屏幕连接需要使用 VNC 或 RDP 等其他方法来管理远程桌面。  其次，Wayland 可以将客户端与合成器之间的复合通信作为独立实体进行管理，无需支持 X 协议。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:87
+#, fuzzy
 msgid ""
 "Wayland is relatively new, and not all software has been updated to run "
 "natively without `Xwayland` support.  Because Wayland does not provide the X "
@@ -136,36 +148,40 @@ msgid ""
 "that do not yet support Wayland will require that `Xwayland` is not started "
 "with the `-rootless` parameter.  The `-rootless` parameter, when removed, "
 "will restore X11 window manager support."
-msgstr ""
+msgstr "Wayland 相对较新，并非所有软件都已更新为可在不依赖 `Xwayland` 的情况下原生运行。  由于 Wayland 不提供 X 服务器，而是要求合成器提供此支持，尚不支持 Wayland 的 X11 窗口管理器需要 `Xwayland` 不使用 `-rootless` 参数启动。  移除 `-rootless` 参数后，即可恢复对 X11 窗口管理器的支持。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:92
+#, fuzzy
 msgid ""
 "The current NVIDIA(R) driver should work with most wlroots compositors, but "
 "it may be a little unstable and not support all features at this time.  "
 "Volunteers to help work on the NVIDIA(R) DRM are requested."
-msgstr ""
+msgstr "当前的 NVIDIA(R) 驱动程序应该可以与大多数 wlroots 合成器配合使用，但目前可能略不稳定，且不支持所有功能。  欢迎志愿者协助开发 NVIDIA(R) DRM。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:96
+#, fuzzy
 msgid ""
 "Currently, a lot of software will function with minimal issues on Wayland, "
 "including Firefox.  And a few desktops are also available, such as the "
 "Compiz Fusion replacement, known as Wayfire, and the i3 window manager "
 "replacement, Sway."
-msgstr ""
+msgstr "目前，许多软件都能在 Wayland 下正常运行，问题很少，包括 Firefox。  此外，也有一些桌面环境可供选择，例如 Compiz Fusion 的替代品 Wayfire，以及 i3 窗口管理器的替代品 Sway。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:103
+#, fuzzy
 msgid ""
 "As of May, 2021, plasma5-kwin does support Wayland on FreeBSD.  To use "
 "Plasma under Wayland, use the `startplasma-wayland` parameter to `ck-launch-"
 "session` and tie in dbus with: `dbus-launch --exit-with-x11 ck-launch-"
 "session startplasma-wayland` to get it working."
-msgstr ""
+msgstr "截至 2021 年 5 月，plasma5-kwin 已支持在 FreeBSD 上使用 Wayland。  要在 Wayland 下使用 Plasma，请将 `startplasma-wayland` 参数传递给 `ck-launch-session`，并通过以下命令接入 dbus：`dbus-launch --exit-with-x11 ck-launch-session startplasma-wayland`，即可使其正常运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:109
+#, fuzzy
 msgid ""
 "For compositors, a kernel supporting the man:evdev[4] driver must exist to "
 "utilize the keybinding functionality.  This is built into the [."
@@ -173,41 +189,44 @@ msgid ""
 "man:evdev[4] support was stripped out, the man:evdev[4] module will need to "
 "be loaded.  In addition, users of `Wayland` will need to be members of the "
 "`video` group.  To quickly make this change, use the `pw` command:"
-msgstr ""
+msgstr "对于合成器，必须使用支持 man:evdev[4] 驱动程序的内核，才能使用按键绑定功能。  默认情况下，此驱动程序已内置于 [.filename]#GENERIC# 内核中；但如果内核经过定制并移除了 man:evdev[4] 支持，则需要加载 man:evdev[4] 模块。  此外，`Wayland` 用户必须属于 `video` 组。  要快速进行此更改，请使用 `pw` 命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pw groupmod video -m user\n"
-msgstr ""
+msgstr "pw groupmod video -m user\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:118
+#, fuzzy
 msgid ""
 "Installing Wayland is simple; there is not a great deal of configuration for "
 "the protocol itself.  Most of the composition will depend on the chosen "
 "compositor.  By installing `seatd` now, a step is skipped as part of the "
 "compositor installation and configuration as `seatd` is needed to provide "
 "non-root access to certain devices."
-msgstr ""
+msgstr "安装 Wayland 很简单；该协议本身不需要太多配置。  大部分合成工作取决于所选的合成器。  现在安装 `seatd`，可省去合成器安装和配置过程中的一个步骤，因为 `seatd` 用于提供对某些设备的非 root 访问权限。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:121
+#, fuzzy
 msgid ""
 "All of the compositors described here should work with package:graphics/drm-"
 "kmod[] open source drivers; however, the NVIDIA(R) graphics cards may have "
 "issues when using the proprietary drivers.  Begin by installing the "
 "following packages:"
-msgstr ""
+msgstr "此处介绍的所有合成器都应能与 package:graphics/drm-kmod[] 开源驱动程序配合使用；但使用专有驱动程序时，NVIDIA(R) 显卡可能会遇到问题。  首先安装以下软件包："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wayland seatd\n"
-msgstr ""
+msgstr "# pkg install wayland seatd\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:132
+#, fuzzy
 msgid ""
 "Once the protocol and supporting packages have been installed, a compositor "
 "must create the user interface.  Several compositors will be covered in the "
@@ -215,16 +234,17 @@ msgid ""
 "directory defined in the environment.  Since FreeBSD 14.1, this is created "
 "and defined automatically.  For previous versions, this is achieved with the "
 "following command in the bourne shell:"
-msgstr ""
+msgstr "安装协议及其支持软件包后，必须安装合成器来创建用户界面。  以下各节将介绍几种合成器。  所有使用 Wayland 的合成器都需要在环境中定义运行时目录。  从 FreeBSD 14.1 开始，系统会自动创建并定义该目录。  对于更早的版本，可在 Bourne shell 中运行以下命令来设置："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% export XDG_RUNTIME_DIR=/var/run/user/`id -u`\n"
-msgstr ""
+msgstr "% export XDG_RUNTIME_DIR=/var/run/user/`id -u`\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:141
+#, fuzzy
 msgid ""
 "It is important to note that most compositors will search the "
 "XDG_RUNTIME_DIR directory for the configuration files.  In the examples "
@@ -232,10 +252,11 @@ msgid ""
 "filename]#~/.config# to keep temporary files and configuration files "
 "separate.  It is recommended that an alias be configured for each compositor "
 "to load the designated configuration file."
-msgstr ""
+msgstr "请注意，大多数合成器会在 XDG_RUNTIME_DIR 目录中查找配置文件。  此处的示例会使用参数指定 [.filename]#~/.config# 中的配置文件，以便将临时文件与配置文件分开存放。  建议为每个合成器配置一个别名，用于加载指定的配置文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:149
+#, fuzzy
 msgid ""
 "It has been reported that ZFS users may experience issues with some Wayland "
 "clients because they need access to `posix_fallocate()` in the runtime "
@@ -248,10 +269,11 @@ msgid ""
 "XDG_RUNTIME_DIR environment variable could be configured to use [.filename]#/"
 "var/run/user/$UID# and avoid potential pitfalls with ZFS.  Consider that "
 "scenario when reviewing the configuration examples in the following sections."
-msgstr ""
+msgstr "有报告称，ZFS 用户可能会遇到某些 Wayland 客户端的问题，因为这些客户端需要访问运行时目录中的 `posix_fallocate()`。  尽管作者无法在自己的 ZFS 系统上复现此问题，建议的解决方法是不要将 ZFS 用于运行时目录，而改用 `tmpfs` 挂载 [.filename]#/var/run# 目录。  在这种情况下，可通过命令 `mount -t tmpfs tmpfs /var/run` 使用 `tmpfs` 文件系统挂载 [.filename]#/var/run#，然后在 [.filename]#/etc/fstab# 中添加相应配置，使该更改在重启后仍然生效。  可以将 XDG_RUNTIME_DIR 环境变量配置为使用 [.filename]#/var/run/user/$UID#，以避免 ZFS 可能带来的问题。  查看以下各节中的配置示例时，请考虑这种情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:154
+#, fuzzy
 msgid ""
 "The seatd daemon helps manage access to shared system devices for non-root "
 "users in compositors; this includes graphics cards.  For traditional X11 "
@@ -259,49 +281,52 @@ msgid ""
 "Wayland compositors discussed here, it will need enabled on the system and "
 "be running before starting a compositor environment.  To enable and start "
 "the `seatd` daemon now, and on system initialization:"
-msgstr ""
+msgstr "seatd 守护进程可帮助合成器管理非 root 用户对共享系统设备（包括显卡）的访问。  对于传统的 X11 管理器，例如 Plasma 和 GNOME，则不需要 `seatd`；但对于此处讨论的 Wayland 合成器，必须在系统中启用并运行 `seatd`，然后才能启动合成器环境。  要立即启用并启动 `seatd` 守护进程，并使其在系统初始化时自动启动："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysrc seatd_enable=\"YES\"\n"
 "# service seatd start\n"
-msgstr ""
+msgstr "# sysrc seatd_enable=\"YES\"\n# service seatd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:163
+#, fuzzy
 msgid ""
 "Afterward, a compositor, which is similar to an X11 desktop, will need to be "
 "installed for the GUI environment.  Three are discussed here, including "
 "basic configuration options, setting up a screen lock, and recommendations "
 "for more information."
-msgstr ""
+msgstr "之后，需要安装一个类似于 X11 桌面的合成器，作为 GUI 环境。  本章将介绍三种合成器，包括基本配置选项、屏幕锁定设置以及获取更多信息的建议。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Wayfire Compositor"
-msgstr ""
+msgstr "Wayfire 合成器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:170
+#, fuzzy
 msgid ""
 "Wayfire is a compositor that aims to be lightweight and customizable.  "
 "Several features are available, and it brings back several elements from the "
 "previously released Compiz Fusion desktop.  All of the parts look beautiful "
 "on modern hardware. To get Wayfire up and running, begin by installing the "
 "required packages:"
-msgstr ""
+msgstr "Wayfire 是一款旨在轻量且可定制的合成器。  它提供多种功能，并重新引入了早期 Compiz Fusion 桌面中的若干元素。  在现代硬件上，其各个部分都十分美观。要启动并运行 Wayfire，首先安装所需软件包："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wayfire wf-shell alacritty swaylock-effects swayidle wlogout kanshi mako wlsunset\n"
-msgstr ""
+msgstr "# pkg install wayfire wf-shell alacritty swaylock-effects swayidle wlogout kanshi mako wlsunset\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:180
+#, fuzzy
 msgid ""
 "The `alacritty` package provides a terminal emulator.  Still, it is not "
 "completely required as other terminal emulators such as `kitty`, and XFCE-4 "
@@ -310,37 +335,39 @@ msgid ""
 "should be reviewed for any customizations.  To begin, copy the example file "
 "over to the runtime environment configuration directory and then edit the "
 "file:"
-msgstr ""
+msgstr "`alacritty` 软件包提供终端模拟器。  不过，它并非必需；其他终端模拟器，例如 `kitty` 和 XFCE-4 `Terminal`，也已在 Wayfire 合成器下经过测试并确认可用。  Wayfire 的配置相对简单；其配置文件应先检查，再进行任何自定义设置。  首先，将示例文件复制到运行时环境配置目录，然后编辑该文件："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% mkdir ~/.config/wayfire\n"
 "% cp /usr/local/share/examples/wayfire/wayfire.ini ~/.config/wayfire\n"
-msgstr ""
+msgstr "% mkdir ~/.config/wayfire\n% cp /usr/local/share/examples/wayfire/wayfire.ini ~/.config/wayfire\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:190
+#, fuzzy
 msgid ""
 "The defaults for most users should be fine.  Within the configuration file, "
 "items like the famous `cube` are pre-configured, and there are instructions "
 "to help with the available settings.  A few primary settings of note include:"
-msgstr ""
+msgstr "大多数用户使用默认设置即可。  配置文件中已预先配置了诸如著名的 `cube` 等项目，并附有可用设置的说明。  以下是一些值得注意的主要设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[output]\n"
 "mode = 1920x1080@60000\n"
 "position = 0,0\n"
 "transform = normal\n"
 "scale = 1.000000\n"
-msgstr ""
+msgstr "[output]\nmode = 1920x1080@60000\nposition = 0,0\ntransform = normal\nscale = 1.000000\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:206
+#, fuzzy
 msgid ""
 "In this example, from the configuration file, the screen's output should be "
 "the listed mode at the listed hertz.  For example, the mode should be set to "
@@ -349,55 +376,60 @@ msgid ""
 "Finally, transform sets a background transform, and scale will scale the "
 "output to the specified scale factor.  The defaults for these options are "
 "generally acceptable; for more information, see the documentation."
-msgstr ""
+msgstr "在此配置文件示例中，屏幕输出应使用列出的模式和刷新率。  例如，模式应设为 `widthxheight@refresh_rate`。  position 用于指定输出的位置，以像素为单位。  大多数用户使用默认值即可。  最后，transform 用于设置背景变换，scale 则按指定比例缩放输出。  这些选项通常使用默认值即可；更多信息请参阅相关文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:210
+#, fuzzy
 msgid ""
 "As mentioned, Wayland is new, and not all applications work with the "
 "protocol yet.  At this time, `sddm` does not appear to support starting and "
 "managing compositors in Wayland.  The `swaylock` utility has been used "
 "instead in these examples. The configuration file contains options to run "
 "`swayidle` and `swaylock` for idle and locking of the screen."
-msgstr ""
+msgstr "如前所述，Wayland 尚新，并非所有应用程序都已支持该协议。  目前，`sddm` 似乎不支持在 Wayland 下启动和管理合成器。  此处的示例改用 `swaylock` 实用程序。配置文件中包含用于运行 `swayidle` 和 `swaylock` 的选项，分别用于屏幕空闲处理和锁屏。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:212
+#, fuzzy
 msgid ""
 "This option to define the action to take when the system is idle is listed "
 "as:"
-msgstr ""
+msgstr "用于定义系统空闲时要执行的操作的选项如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "idle = swaylock\n"
-msgstr ""
+msgstr "idle = swaylock\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:219
+#, fuzzy
 msgid "And the lock timeout is configured using the following lines:"
-msgstr ""
+msgstr "锁屏超时可通过以下几行配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[idle]\n"
 "toggle = <super> KEY_Z\n"
 "screensaver_timeout = 300\n"
 "dpms_timeout = 600\n"
-msgstr ""
+msgstr "[idle]\ntoggle = <super> KEY_Z\nscreensaver_timeout = 300\ndpms_timeout = 600\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:229
+#, fuzzy
 msgid ""
 "The first option will lock the screen after 300 seconds, and after another "
 "300, the screen will shut off through the `dpms_timeout` option."
-msgstr ""
+msgstr "第一个选项会在 300 秒后锁定屏幕，再过 300 秒后，屏幕将通过 `dpms_timeout` 选项关闭。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:237
+#, fuzzy
 msgid ""
 "One final thing to note is the <super> key.  Most of the configuration "
 "mentions this key, and it is the traditional `Windows` key on the keyboard.  "
@@ -410,16 +442,17 @@ msgid ""
 "documented.  In addition, since the swaylock-effects is the version that was "
 "installed, there are several options available such as the blur effect, "
 "which can be seen using the following command:"
-msgstr ""
+msgstr "最后还要注意 <super> 键。  大多数配置说明中都会提到此键，它就是键盘上常见的 `Windows` 键。  大多数键盘都有此 super 键；如果没有，则应在此配置文件中重新映射该按键。  例如，要锁定屏幕，请按住 super 键和 kbd:[shift] 键，然后按 kbd:[escape] 键。  如果按键映射未更改，这将运行 swaylock 应用程序。  swaylock 的默认配置会显示灰色屏幕；不过，该应用程序高度可定制，且文档完善。  此外，由于安装的是 swaylock-effects 版本，还提供了多种选项，例如模糊效果，可通过以下命令查看："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% swaylock --effect-blur 7x5\n"
-msgstr ""
+msgstr "% swaylock --effect-blur 7x5\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:247
+#, fuzzy
 msgid ""
 "There is also the `--clock` parameter which will display a clock with the "
 "date and time on the lock screen.  When package:x11/swaylock-effects[] was "
@@ -427,23 +460,25 @@ msgid ""
 "provides the default options that should be fine for most users.  More "
 "advanced options are available; see the PAM documentation for more "
 "information."
-msgstr ""
+msgstr "此外，`--clock` 参数会在锁屏上显示日期和时间。  安装 package:x11/swaylock-effects[] 时，会一并安装默认的 [.filename]#pam.d# 配置。  其中提供的默认选项通常适用于大多数用户。  还有更高级的选项；更多信息请参阅 PAM 文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:250
+#, fuzzy
 msgid ""
 "At this point, it is time to test Wayfire and see if it can start up on the "
 "system.  Just type the following command:"
-msgstr ""
+msgstr "现在可以测试 Wayfire，看看它能否在系统上启动。  只需输入以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wayfire -c ~/.config/wayfire/wayfire.ini\n"
-msgstr ""
+msgstr "% wayfire -c ~/.config/wayfire/wayfire.ini\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:261
+#, fuzzy
 msgid ""
 "The compositor should now start and display a background image along with a "
 "menu bar at the top of the screen.  Wayfire will attempt to list installed "
@@ -455,57 +490,61 @@ msgid ""
 "also has a configuration tool named Wayfire Config Manager.  It is located "
 "in the drop-down menu bar but may also be started through a terminal by "
 "issuing the following command:"
-msgstr ""
+msgstr "合成器现在应会启动，并在屏幕顶部显示背景图像和菜单栏。  Wayfire 会尝试列出已安装且兼容的桌面应用程序，并在此下拉菜单中显示；例如，如果安装了 XFCE-4 文件管理器，它就会出现在菜单中。  如果某个应用程序兼容且适合使用键盘快捷键启动，可通过 [.filename]#wayfire.ini# 配置文件将其绑定到按键组合。  Wayfire 还提供名为 Wayfire Config Manager 的配置工具。  它位于下拉菜单栏中，也可以在终端中运行以下命令启动："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wcm\n"
-msgstr ""
+msgstr "% wcm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:269
+#, fuzzy
 msgid ""
 "Various Wayfire configuration options, including the composite special "
 "effects, maybe enabled, disabled, or configured through this application.  "
 "In addition, for a more user-friendly experience, a background manager, "
 "panel, and docking application may be enabled in the configuration file:"
-msgstr ""
+msgstr "可以通过此应用程序启用、禁用或配置各种 Wayfire 选项，包括合成特效。  此外，为了获得更友好的使用体验，还可以在配置文件中启用背景管理器、面板和停靠栏应用程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "panel = wf-panel\n"
 "dock = wf-dock\n"
 "background = wf-background\n"
-msgstr ""
+msgstr "panel = wf-panel\ndock = wf-dock\nbackground = wf-background\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:281
+#, fuzzy
 msgid ""
 "Changes made through `wcm` will overwrite custom changes in the [."
 "filename]#wayfire.ini# configuration file.  The [.filename]#wayfire.ini# "
 "file is highly recommended to be backed up so any essential changes may be "
 "restored."
-msgstr ""
+msgstr "通过 `wcm` 所做的更改会覆盖 [.filename]#wayfire.ini# 配置文件中的自定义设置。  强烈建议备份 [.filename]#wayfire.ini# 文件，以便恢复任何重要更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:284
+#, fuzzy
 msgid ""
 "Finally, the default launcher listed in the [.filename]#wayfire.ini# is "
 "package:x11/wf-shell[] which may be replaced with other panels if desired by "
 "the user."
-msgstr ""
+msgstr "最后， [.filename]#wayfire.ini# 中列出的默认启动器是 package:x11/wf-shell[]；用户可根据需要将其替换为其他面板。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Hikari Compositor"
-msgstr ""
+msgstr "Hikari 合成器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:296
+#, fuzzy
 msgid ""
 "The Hikari compositor uses several concepts centered around productivity, "
 "such as sheets, workspaces, and more.  In that way, it resembles a tiling "
@@ -521,24 +560,26 @@ msgid ""
 "consider a single workspace utilizing a single sheet.  Hikari installation "
 "will comprise of a single package, package:x11-wm/hikari[], and a terminal "
 "emulator `alacritty`:"
-msgstr ""
+msgstr "Hikari 合成器采用了多种以提高效率为核心的概念，例如工作表、工作区等。  因此，它类似于平铺式窗口管理器。  简而言之，合成器启动时只有一个工作区，类似于虚拟桌面。  Hikari 使用单个工作区或虚拟桌面供用户交互。工作区由多个视图组成，也就是合成器中的工作窗口；这些窗口按工作表或组进行归类。  工作表和组都由一组视图组成，也就是归类在一起的窗口。  在工作表或组之间切换时，当前活动的工作表或组统称为工作区。  手册页会进一步说明各项功能；在本文档中，只需将其理解为使用单个工作表的单个工作区即可。  安装 Hikari 只需一个软件包 package:x11-wm/hikari[]，以及一个终端模拟器 `alacritty`："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install hikari alacritty\n"
-msgstr ""
+msgstr "# pkg install hikari alacritty\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:305
+#, fuzzy
 msgid ""
 "Other shells, such as `kitty` or the Plasma `Terminal`, will function under "
 "Wayland. Users should experiment with their favorite terminal editor to "
 "validate compatibility."
-msgstr ""
+msgstr "其他 shell，例如 `kitty` 或 Plasma 的 `Terminal`，也能在 Wayland 下运行。用户可以尝试使用自己喜欢的终端编辑器，以验证兼容性。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:310
+#, fuzzy
 msgid ""
 "Hikari uses a configuration file, [.filename]#hikari.conf#, which could "
 "either be placed in the XDG_RUNTIME_DIR or specified on startup using the `-"
@@ -546,34 +587,36 @@ msgid ""
 "the migration to this compositor a little easier.  Beginning the "
 "configuration is to create the Hikari configuration directory and copy over "
 "the configuration file for editing:"
-msgstr ""
+msgstr "Hikari 使用配置文件 [.filename]#hikari.conf#，该文件可以放在 XDG_RUNTIME_DIR 中，也可以在启动时通过 `-c` 参数指定。不要求使用自动启动配置文件，但它可能会让迁移到此合成器更加容易。首先创建 Hikari 配置目录，并复制配置文件以供编辑："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:315
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% mkdir ~/.config/hikari\n"
 "% cp /usr/local/etc/hikari/hikari.conf ~/.config/hikari\n"
-msgstr ""
+msgstr "% mkdir ~/.config/hikari\n% cp /usr/local/etc/hikari/hikari.conf ~/.config/hikari\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:321
+#, fuzzy
 msgid ""
 "The configuration is broken out into various stanzas such as ui, outputs, "
 "layouts, and more.  For most users, the defaults will function fine; "
 "however, some important changes should be made.  For example, the $TERMINAL "
 "variable is normally not set within the user's environment.  Changing this "
 "variable or altering the [.filename]#hikari.conf# file to read:"
-msgstr ""
+msgstr "配置文件分为多个段落，例如 ui、outputs、layouts 等。  大多数用户使用默认设置即可；不过，仍应进行一些重要更改。例如，用户环境中通常没有设置 $TERMINAL 变量。可以更改此变量，或修改 [.filename]#hikari.conf# 文件，使其内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "terminal = \"/usr/local/bin/alacritty\"\n"
-msgstr ""
+msgstr "terminal = \"/usr/local/bin/alacritty\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:333
+#, fuzzy
 msgid ""
 "Will launch the `alacritty` terminal using the bound key press.  While going "
 "through the configuration file, it should be noted that the capital letters "
@@ -584,28 +627,29 @@ msgid ""
 "the default configuration.  Mapping other keys to applications require an "
 "action definition to be created.  For this, the action item should be listed "
 "in the actions stanza, for example:"
-msgstr ""
+msgstr "按下绑定的按键即可启动 `alacritty` 终端。在查看配置文件时，应注意其中使用大写字母为用户映射按键。例如，用于启动终端的 kbd:[L] 键和 kbd:[L+Return] 实际上是前面提到的 Super 键，也就是 Windows 徽标键。因此，按住 kbd:[L/super/Windows] 键并按下 kbd:[Enter]，即可使用默认配置打开指定的终端模拟器。要将其他按键映射到应用程序，需要创建一个操作定义。为此，应在 actions 段中列出相应的操作项，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "actions {\n"
 "  terminal = \"/usr/local/bin/alacritty\"\n"
 "  browser = \"/usr/local/bin/firefox\"\n"
 "}\n"
-msgstr ""
+msgstr "actions {\n  terminal = \"/usr/local/bin/alacritty\"\n  browser = \"/usr/local/bin/firefox\"\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:343
+#, fuzzy
 msgid ""
 "Then an action may be mapped under the keyboard stanza, which is defined "
 "within the bindings stanza:"
-msgstr ""
+msgstr "然后，可以在 bindings 段中定义的 keyboard 段下映射操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bindings {\n"
 "  keyboard {\n"
@@ -613,10 +657,11 @@ msgid ""
 "    \"L+Return\" = action-terminal\n"
 "    \"L+b\" = action-browser\n"
 "SNIP\n"
-msgstr ""
+msgstr "bindings {\n  keyboard {\nSNIP\n    \"L+Return\" = action-terminal\n    \"L+b\" = action-browser\nSNIP\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:358
+#, fuzzy
 msgid ""
 "After Hikari is restarted, holding the Windows logo button and pressing the "
 "kbd:[b] key on the keyboard will start the web browser.  The compositor does "
@@ -626,10 +671,11 @@ msgid ""
 "Another positive aspect about Hikari is that, while migrating to the "
 "compositor, Hikari can be started in the Plasma and GNOME desktop "
 "environments, allowing for a test-drive before completely migrating."
-msgstr ""
+msgstr "重启 Hikari 后，按住 Windows 徽标键并按下键盘上的 kbd:[b] 键即可启动 Web 浏览器。该合成器没有菜单栏，因此建议用户在迁移前至少设置一个终端模拟器。手册页包含大量文档，进行完整迁移前应先阅读。Hikari 的另一个优点是，在迁移到该合成器期间，可以在 Plasma 和 GNOME 桌面环境中启动 Hikari，从而先进行试用，再完全迁移。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:365
+#, fuzzy
 msgid ""
 "Locking the screen in Hikari is easy because a default [.filename]#pam.d# "
 "configuration file and unlock utility are bundled with the package.  The key "
@@ -639,76 +685,81 @@ msgid ""
 "sensitive information being visible.  For some users, it may be easier to "
 "migrate to a different screen locking utility such as swaylock-effects, "
 "discussed in this section.  To start Hikari, use the following command:"
-msgstr ""
+msgstr "在 Hikari 中锁定屏幕很简单，因为软件包附带了默认的 [.filename]#pam.d# 配置文件和解锁工具。锁定屏幕的按键绑定为 kbd:[L]（Windows 徽标键）+ kbd:[Shift] + kbd:[Backspace]。请注意，所有未标记为 public 的视图都会隐藏。锁定时，这些视图不会接受任何输入，但请注意屏幕上可能显示敏感信息。对某些用户而言，迁移到其他屏幕锁定工具可能更容易，例如本节讨论的 swaylock-effects。要启动 Hikari，请使用以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:369
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% hikari -c ~/.config/hikari/hikari.conf\n"
-msgstr ""
+msgstr "% hikari -c ~/.config/hikari/hikari.conf\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:372
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Sway Compositor"
-msgstr ""
+msgstr "Sway 合成器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:376
+#, fuzzy
 msgid ""
 "The Sway compositor is a tiling compositor that attempts to replace the i3 "
 "windows manager.  It should work with the user's current i3 configuration; "
 "however, new features may require some additional setup."
-msgstr ""
+msgstr "Sway 合成器是一种平铺式合成器，旨在取代 i3 窗口管理器。它应该能够使用用户当前的 i3 配置，但新功能可能需要进行一些额外设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:380
+#, fuzzy
 msgid ""
 "Before starting the Sway installation, ensure that a graphics card (GPU) is "
 "installed and configured correctly.  Refer to the section crossref:x11[x-"
 "graphic-card-drivers,drivers for the graphics hardware] for guidance.  This "
 "step is essential for the Sway compositor to function properly."
-msgstr ""
+msgstr "开始安装 Sway 之前，请确保已安装并正确配置显卡（GPU）。请参阅 crossref:x11[x-graphic-card-drivers,显卡驱动程序]一节以获取指导。此步骤对于 Sway 合成器正常运行至关重要。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:383
+#, fuzzy
 msgid ""
 "In the forthcoming examples, a fresh installation without migrating any i3 "
 "configuration will be assumed.  To install Sway and valuable components, "
 "issue the following command as the root user:"
-msgstr ""
+msgstr "以下示例假定进行全新安装，不迁移任何 i3 配置。要安装 Sway 和有用的组件，请以 root 用户身份执行以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install sway swayidle swaylock-effects alacritty dmenu-wayland dmenu\n"
-msgstr ""
+msgstr "# pkg install sway swayidle swaylock-effects alacritty dmenu-wayland dmenu\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:390
+#, fuzzy
 msgid ""
 "For a basic configuration file, issue the following commands and then edit "
 "the configuration file after it is copied:"
-msgstr ""
+msgstr "要创建基本配置文件，请执行以下命令，然后在复制完成后编辑该配置文件："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% mkdir ~/.config/sway\n"
 "% cp /usr/local/etc/sway/config ~/.config/sway\n"
-msgstr ""
+msgstr "% mkdir ~/.config/sway\n% cp /usr/local/etc/sway/config ~/.config/sway\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:399
+#, fuzzy
 msgid ""
 "The base configuration file has many defaults, which will be fine for most "
 "users.  Several important changes should be made like the following:"
-msgstr ""
+msgstr "基本配置文件包含许多默认设置，对大多数用户而言已经足够。建议进行以下几项重要更改："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Logo key. Use Mod1 for Alt.\n"
 "input * xkb_rules evdev\n"
@@ -723,10 +774,11 @@ msgid ""
 "          timeout 300 'swaylock -f -c 000000' \\\n"
 "          timeout 600 'swaymsg \"output * dpms off\"' resume 'swaymsg \"output * dpms on\"' \\\n"
 "          before-sleep 'swaylock -f -c 000000'\n"
-msgstr ""
+msgstr "# Logo key. Use Mod1 for Alt.\ninput * xkb_rules evdev\nset $mod Mod4\n# The preferred terminal emulator\nset $term alacritty\nset $lock swaylock -f -c 000000\noutput \"My Workstation\" mode 1366x768@60Hz position 1366 0\noutput * bg ~/wallpapers/mywallpaper.png stretch\n### Idle configuration\nexec swayidle -w \\\n          timeout 300 'swaylock -f -c 000000' \\\n          timeout 600 'swaymsg \"output * dpms off\"' resume 'swaymsg \"output * dpms on\"' \\\n          before-sleep 'swaylock -f -c 000000'\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:425
+#, fuzzy
 msgid ""
 "In the previous example, the `xkb` rules for man:evdev[4] events are loaded, "
 "and the $mod key is set to the Windows logo key for the key bindings.  Next, "
@@ -741,10 +793,11 @@ msgid ""
 "page for more options.  The man:sway-output[5] manual page should also be "
 "reviewed; it includes a great deal of information on customing the output "
 "options available."
-msgstr ""
+msgstr "在上一个示例中，加载了 man:evdev[4] 事件的 `xkb` 规则，并将 $mod 键设为 Windows 徽标键，用于按键绑定。接下来，将终端模拟器设为 `alacritty`，并定义了屏幕锁定命令；稍后会进一步介绍。还设置了输出、模式、位置和背景壁纸，并指示 Sway 拉伸壁纸以铺满屏幕。最后，将 `swayidle` 设为以守护进程方式运行，并在超时 300 秒后锁定屏幕，600 秒后使屏幕或显示器进入睡眠模式。此处还定义了锁定屏幕的背景色 000000，即黑色。使用 swaylock-effects 时，也可以通过 `--clock` 参数显示时钟。有关更多选项，请参阅手册页。还应阅读 man:sway-output[5] 手册页，其中包含大量有关自定义可用输出选项的信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:433
+#, fuzzy
 msgid ""
 "While in Sway, to bring up a menu of applications, hold the Windows logo key "
 "(mod) and press the kbd:[d] key.  The menu may be navigated using the arrow "
@@ -755,18 +808,19 @@ msgid ""
 "example.  By default, the configuration does not include locking the screen "
 "outside of the example above, enabling a lockout timer.  Creating a lock key "
 "binding requires the following line to the `Key bindings` section:"
-msgstr ""
+msgstr "在 Sway 中，要调出应用程序菜单，请按住 Windows 徽标键（mod）并按下 kbd:[d] 键。可以使用键盘上的方向键浏览菜单。还可以调整状态栏布局并添加托盘；更多信息请参阅 man:sway-bar[5] 手册页。默认配置会在右上角显示日期和时间。配置文件中的 `Bar` 段提供了一个示例。默认情况下，配置不包含屏幕锁定设置（上面的示例除外），因此不会启用锁定计时器。要创建锁屏按键绑定，需在 `Key bindings` 部分添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:438
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Lock the screen manually\n"
 "bindsym $mod+Shift+Return exec $lock\n"
-msgstr ""
+msgstr "# Lock the screen manually\nbindsym $mod+Shift+Return exec $lock\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:444
+#, fuzzy
 msgid ""
 "Now the screen may be locked using the combination of holding the Windows "
 "logo key, pressing and holding shift, and finally pressing return.  When "
@@ -774,10 +828,11 @@ msgid ""
 "default file for [.filename]#pam.d# was installed.  The default "
 "configuration should be acceptable for most users, but more advanced options "
 "are available.  Read through the PAM documentation for more information."
-msgstr ""
+msgstr "现在可以按住 Windows 徽标键和 Shift 键，再按下 Return 键来锁定屏幕。通过软件包或 FreeBSD Ports Collection 安装 Sway 时，都会安装默认的 [.filename]#pam.d# 文件。默认配置应该适用于大多数用户，但也提供了更高级的选项。有关更多信息，请阅读 PAM 文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:450
+#, fuzzy
 msgid ""
 "Finally, to exit Sway and return to the shell, hold the Windows logo key, "
 "the shift key, and press the kbd:[e] key.  A prompt will be displayed with "
@@ -785,105 +840,112 @@ msgid ""
 "terminal emulator on an X11 desktop such as Plasma.  This makes testing "
 "different changes and key bindings a little easier prior to fully migrating "
 "to this compositor.  To start Sway, issue the following command:"
-msgstr ""
+msgstr "最后，要退出 Sway 并返回 shell，请按住 Windows 徽标键和 Shift 键，然后按下 kbd:[e] 键。屏幕上会显示一个提示，其中提供退出 Sway 的选项。迁移期间，可以通过 Plasma 等 X11 桌面环境中的终端模拟器启动 Sway。这样，在完全迁移到该合成器之前，更容易测试不同的更改和按键绑定。要启动 Sway，请执行以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sway -c ~/.config/sway/config\n"
-msgstr ""
+msgstr "% sway -c ~/.config/sway/config\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:457
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Xwayland"
-msgstr ""
+msgstr "使用 Xwayland"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:461
+#, fuzzy
 msgid ""
 "When installing Wayland, the `Xwayland` binary should have been installed "
 "unless Wayland was built without X11 support.  If the [.filename]#/usr/local/"
 "bin/Xwayland# file does not exist, install it using the following command:"
-msgstr ""
+msgstr "安装 Wayland 时，应该也会安装 `Xwayland` 二进制文件，除非构建 Wayland 时未启用 X11 支持。如果 [.filename]#/usr/local/bin/Xwayland# 文件不存在，请使用以下命令安装："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:465
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xwayland\n"
-msgstr ""
+msgstr "# pkg install xwayland\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:471
+#, fuzzy
 msgid ""
 "The development version of Xwayland is recommended and was most likely "
 "installed with the Wayland package.  Each compositor has a method of "
 "enabling or disabling this feature."
-msgstr ""
+msgstr "建议使用 Xwayland 的开发版本，该版本很可能已随 Wayland 软件包一同安装。每种合成器都有启用或禁用此功能的方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:475
+#, fuzzy
 msgid ""
 "Once `Xwayland` has been installed, configure it within the chosen "
 "compositor.  For Wayfire, the following line is required in the [."
 "filename]#wayfire.ini# file:"
-msgstr ""
+msgstr "安装 `Xwayland` 后，请在所选合成器中进行配置。对于 Wayfire，需要在 [.filename]#wayfire.ini# 文件中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:479
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xwayland = true\n"
-msgstr ""
+msgstr "xwayland = true\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:483
+#, fuzzy
 msgid ""
 "For the Sway compositor, `Xwayland` should be enabled by default.  Even so, "
 "it is recommended to manually add a configuration line in the [.filename]#~/."
 "config/sway/config# like the following:"
-msgstr ""
+msgstr "对于 Sway 合成器，默认情况下应已启用 `Xwayland`。即便如此，仍建议在 [.filename]#~/.config/sway/config# 中手动添加如下配置行："
 
 #. type: delimited block . 5
 #: documentation/content/en/books/handbook/wayland/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xwayland enable\n"
-msgstr ""
+msgstr "xwayland enable\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:492
+#, fuzzy
 msgid ""
 "Finally, for Hikari, no changes are needed.  Support for `Xwayland` is built "
 "in by default.  To disable that support, rebuild the package from the ports "
 "collection and disable Xwayland support at that time."
-msgstr ""
+msgstr "最后，对于 Hikari，无需进行任何更改。默认情况下已内置 `Xwayland` 支持。要禁用该支持，请从 Ports Collection 重新构建软件包，并在构建时禁用 Xwayland 支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:496
+#, fuzzy
 msgid ""
 "After these changes are made, start the compositor at the command line and "
 "execute a terminal from the key bindings.  Within this terminal, issue the "
 "`env` command and search for the `DISPLAY` variables.  If the compositor was "
 "able to properly start the Xwayland X server, these environment variables "
 "should look similar to the following:"
-msgstr ""
+msgstr "完成这些更改后，从命令行启动合成器，并通过按键绑定启动一个终端。在该终端中执行 `env` 命令，并查找 `DISPLAY` 变量。如果合成器能够正常启动 Xwayland X 服务器，这些环境变量应类似于以下内容："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:500
 #: documentation/content/en/books/handbook/wayland/_index.adoc:530
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% env | grep DISPLAY\n"
-msgstr ""
+msgstr "% env | grep DISPLAY\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "WAYLAND_DISPLAY=wayland-1\n"
 "DISPLAY=:0\n"
-msgstr ""
+msgstr "WAYLAND_DISPLAY=wayland-1\nDISPLAY=:0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:512
+#, fuzzy
 msgid ""
 "In this output, there is a default Wayland display and a display set for the "
 "Xwayland server.  Another method to verify that `Xwayland` is functioning "
@@ -892,93 +954,99 @@ msgid ""
 "pointer, Xwayland is functioning properly.  If an error such as the "
 "following is displayed, something happened during the `Xwayland` "
 "initialization and it may need reinstalled:"
-msgstr ""
+msgstr "此输出中包含默认的 Wayland 显示，以及为 Xwayland 服务器设置的显示。还可以通过安装并测试小型软件包：[x11/eyes] 来验证 `Xwayland` 是否正常工作，并检查输出。如果 `xeyes` 应用程序启动后眼睛会跟随鼠标指针移动，则表示 Xwayland 工作正常。如果显示如下错误，则说明 `Xwayland` 初始化期间发生了问题，可能需要重新安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Error: Cannot open display wayland-0\n"
-msgstr ""
+msgstr "Error: Cannot open display wayland-0\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:522
+#, fuzzy
 msgid ""
 "A security feature of Wayland is that, without running an X server, there is "
 "not another network listener.  Once `Xwayland` is enabled, this security "
 "feature is no longer applicable to the system."
-msgstr ""
+msgstr "Wayland 的一项安全功能是，在未运行 X 服务器时，系统不会有其他网络侦听器。启用 `Xwayland` 后，这项安全功能便不再适用于该系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:526
+#, fuzzy
 msgid ""
 "For some compositors, such as Wayfire, `Xwayland` may not start properly.  "
 "As such, `env` will show the following information for the `DISPLAY` "
 "environment variables:"
-msgstr ""
+msgstr "对于某些合成器（例如 Wayfire），`Xwayland` 可能无法正常启动。因此，`env` 显示的 `DISPLAY` 环境变量可能如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:536
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "DISPLAY=wayland-1\n"
 "WAYLAND_DISPLAY=wayland-1\n"
-msgstr ""
+msgstr "DISPLAY=wayland-1\nWAYLAND_DISPLAY=wayland-1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:541
+#, fuzzy
 msgid ""
 "Even though `Xwayfire` was installed and configured, X11 applications will "
 "not start giving a display issue.  To work around this, verify that there is "
 "already an instance of `Xwayland` using a UNIX socket through these two "
 "methods.  First, check the output from `sockstat` and search for X11-unix:"
-msgstr ""
+msgstr "即使已安装并配置 `Xwayfire`，X11 应用程序仍会因显示问题而无法启动。要解决此问题，请通过以下两种方法确认是否已有 `Xwayland` 实例通过 UNIX 套接字运行。首先，检查 `sockstat` 的输出并查找 X11-unix："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:545
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sockstat | grep x11\n"
-msgstr ""
+msgstr "% sockstat | grep x11\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:548
+#, fuzzy
 msgid "There should be something similar to the following information:"
-msgstr ""
+msgstr "输出中应该会有类似以下的信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "trhodes  Xwayland   2734  8  stream /tmp/.X11-unix/X0\n"
 "trhodes  Xwayland   2734  9  stream /tmp/.X11-unix/X0\n"
 "trhodes  Xwayland   2734  10 stream /tmp/.X11-unix/X0\n"
 "trhodes  Xwayland   2734  27 stream /tmp/.X11-unix/X0_\n"
 "trhodes  Xwayland   2734  28 stream /tmp/.X11-unix/X0\n"
-msgstr ""
+msgstr "trhodes  Xwayland   2734  8  stream /tmp/.X11-unix/X0\ntrhodes  Xwayland   2734  9  stream /tmp/.X11-unix/X0\ntrhodes  Xwayland   2734  10 stream /tmp/.X11-unix/X0\ntrhodes  Xwayland   2734  27 stream /tmp/.X11-unix/X0_\ntrhodes  Xwayland   2734  28 stream /tmp/.X11-unix/X0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:560
+#, fuzzy
 msgid ""
 "This suggests the existence of an X11 socket.  This can be further verified "
 "by attempting to execute `Xwayland` manually within a terminal emulator "
 "running under the compositor:"
-msgstr ""
+msgstr "这表明存在一个 X11 套接字。还可以尝试在合成器下运行的终端模拟器中手动执行 `Xwayland`，进一步确认这一点："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:564
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% Xwayland\n"
-msgstr ""
+msgstr "% Xwayland\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:567
+#, fuzzy
 msgid ""
 "If an X11 socket is already available, the following error should be "
 "presented to the user:"
-msgstr ""
+msgstr "如果 X11 套接字已存在，用户应会看到以下错误："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:576
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(EE)\n"
 "Fatal server error:\n"
@@ -986,39 +1054,42 @@ msgid ""
 "\tIf this server is no longer running, remove /tmp/.X0-lock\n"
 "\tand start again.\n"
 "(EE)\n"
-msgstr ""
+msgstr "(EE)\nFatal server error:\n(EE) Server is already active for display 0\n\tIf this server is no longer running, remove /tmp/.X0-lock\n\tand start again.\n(EE)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:580
+#, fuzzy
 msgid ""
 "Since there is an active X display available using display zero, the "
 "environment variable was just set improperly, to fix this, change the "
 "`DISPLAY` environment variable to `:0` and attempt to execute the "
 "application again.  The following example uses package:mail/claws-mail[] as "
 "the application which needs the `Xwayland` service:"
-msgstr ""
+msgstr "由于显示器 0 上已有活动的 X 显示，问题只是环境变量设置不正确。要解决此问题，请将 `DISPLAY` 环境变量更改为 `:0`，然后再次尝试执行应用程序。以下示例使用需要 `Xwayland` 服务的 package:mail/claws-mail[] 应用程序："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:584
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "export DISPLAY=:0\n"
-msgstr ""
+msgstr "export DISPLAY=:0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:587
+#, fuzzy
 msgid ""
 "After this change, the package:mail/claws-mail[] application should now "
 "start using `Xwayland` and function as expected."
-msgstr ""
+msgstr "完成此更改后，package:mail/claws-mail[] 应用程序应能通过 `Xwayland` 启动并正常运行。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:589
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remote Desktop Using VNC"
-msgstr ""
+msgstr "使用 VNC 进行远程桌面连接"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:595
+#, fuzzy
 msgid ""
 "Earlier in this document it was noted that Wayland does not provide the same "
 "X server style access as Xorg provides.  Instead, users are free to pick and "
@@ -1026,25 +1097,26 @@ msgid ""
 "collection includes the `wayvnc`, which will support wlroots based "
 "compositors such as the ones discussed here.  This application may be "
 "installed using:"
-msgstr ""
+msgstr "本文前面提到过，Wayland 不提供与 Xorg 相同的 X 服务器式访问方式。用户可以自由选择 RDP 或 VNC 等远程桌面协议。FreeBSD Ports Collection 中包含 `wayvnc`，它支持基于 wlroots 的合成器，例如本文讨论的合成器。可以使用以下命令安装此应用程序："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wayvnc\n"
-msgstr ""
+msgstr "# pkg install wayvnc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:603
+#, fuzzy
 msgid ""
 "Unlike some other packages, `wayvnc` does not come with a configuration "
 "file.  Thankfully, the manual page documents the important options and they "
 "may be extrapolated into a simple configuration file:"
-msgstr ""
+msgstr "与某些其他软件包不同，`wayvnc` 不附带配置文件。所幸，手册页介绍了重要选项，可据此编写一个简单的配置文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:612
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "address=0.0.0.0\n"
 "enable_auth=true\n"
@@ -1052,10 +1124,11 @@ msgid ""
 "password=password\n"
 "private_key_file=/path/to/key.pem\n"
 "certificate_file=/path/to/cert.pem\n"
-msgstr ""
+msgstr "address=0.0.0.0\nenable_auth=true\nusername=username\npassword=password\nprivate_key_file=/path/to/key.pem\ncertificate_file=/path/to/cert.pem\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:618
+#, fuzzy
 msgid ""
 "The key files will need to be generated, and it is highly recommended they "
 "be used for increased security of the connection.  When invoked, wayvnc will "
@@ -1063,105 +1136,113 @@ msgid ""
 "This could be overwritten using the `-C configuration_file` option when "
 "starting the server.  Thus, to start the `wayvnc` server, issue the "
 "following command:"
-msgstr ""
+msgstr "需要生成密钥文件，并强烈建议使用这些文件来提高连接安全性。启动时，wayvnc 会在 [.filename]#~/.config/wayvnc/config# 中查找配置文件。启动服务器时，可以通过 `-C configuration_file` 选项指定其他配置文件。因此，要启动 `wayvnc` 服务器，请执行以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:622
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wayvnc -C ~/.config/wayvnc/config\n"
-msgstr ""
+msgstr "% wayvnc -C ~/.config/wayvnc/config\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:629
+#, fuzzy
 msgid ""
 "At the time of this writing, there is no rc.d script to start `wayvnc` on "
 "system initialization.  If that functionality is desired, a local startup "
 "file will need to be created.  This is probably a feature request for the "
 "port maintainer."
-msgstr ""
+msgstr "截至本文撰写时，还没有用于在系统初始化时启动 `wayvnc` 的 rc.d 脚本。如果需要此功能，则需创建本地启动文件。这可能是向该 port 的维护者提出的功能请求。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:632
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wayland Login Manager"
-msgstr ""
+msgstr "Wayland 登录管理器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:636
+#, fuzzy
 msgid ""
 "While several login managers exist and are slowly migrating to Wayland, one "
 "option is the package:x11/ly[] text user interface (TUI) manager.  Needing "
 "minimal configuration, `ly` will start Sway, Wayfire, and others by "
 "presenting a login window on system initialization.  To install `ly`, issue "
 "the following command:"
-msgstr ""
+msgstr "目前有多个登录管理器，并且它们正逐步迁移到 Wayland。其中一个选择是 package:x11/ly[] 文本用户界面（TUI）管理器。`ly` 只需极少配置，便可在系统初始化时显示登录窗口并启动 Sway、Wayfire 等。要安装 `ly`，请执行以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:640
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install ly\n"
-msgstr ""
+msgstr "# pkg install ly\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:643
+#, fuzzy
 msgid ""
 "There will be some configuration hints presented, the import steps are to "
 "add the following lines to [.filename]#/etc/gettytab#:"
-msgstr ""
+msgstr "系统会显示一些配置提示。导入步骤是将以下几行添加到 [.filename]#/etc/gettytab#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:649
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Ly:\\\n"
 "  :lo=/usr/local/bin/ly:\\\n"
 "  :al=root:\n"
-msgstr ""
+msgstr "Ly:\\\n  :lo=/usr/local/bin/ly:\\\n  :al=root:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:652
+#, fuzzy
 msgid ""
 "And then modify the ttyv1 line in [.filename]#/etc/ttys# to match the "
 "following line:"
-msgstr ""
+msgstr "然后修改 [.filename]#/etc/ttys# 中的 ttyv1 行，使其与以下内容一致："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:656
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ttyv1 \"/usr/libexec/getty Ly\" xterm onifexists secure\n"
-msgstr ""
+msgstr "ttyv1 \"/usr/libexec/getty Ly\" xterm onifexists secure\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:661
+#, fuzzy
 msgid ""
 "After a system reboot, a login should appear.  To configure specific "
 "settings, such as language and edit [.filename]#/usr/local/etc/ly/config."
 "ini#.  At minimal, this file should have the designated tty that was "
 "previously specified in [.filename]#/etc/ttys#."
-msgstr ""
+msgstr "系统重启后应会显示登录界面。要配置语言等特定设置，请编辑 [.filename]#/usr/local/etc/ly/config.ini#。此文件至少应指定先前在 [.filename]#/etc/ttys# 中配置的 tty。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:665
+#, fuzzy
 msgid ""
 "If setting ttyv0 up as the login terminal, it may be required to press the "
 "kbd:[alt] and kbd:[F1] keys to properly see the login window."
-msgstr ""
+msgstr "如果将 ttyv0 设置为登录终端，可能需要按 kbd:[alt] 和 kbd:[F1] 键才能正确显示登录窗口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:668
+#, fuzzy
 msgid ""
 "When the login window appears, using the left and right arrows will swap "
 "through different, supported, window managers."
-msgstr ""
+msgstr "登录窗口出现后，使用左、右方向键即可在不同的受支持窗口管理器之间切换。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wayland/_index.adoc:670
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Useful Utilities"
-msgstr ""
+msgstr "实用工具"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:676
+#, fuzzy
 msgid ""
 "One useful Wayland utility which all compositors can make use of is the "
 "waybar.  While Wayfire does come with a launch menu, an easy-to-use and fast "
@@ -1169,89 +1250,92 @@ msgid ""
 "Wayland compatible taskbar that is fast and easy to configure is waybar.  To "
 "install the package and a supporting audio control utility, issue the "
 "following command:"
-msgstr ""
+msgstr "所有合成器都能使用的一款实用 Wayland 工具是 waybar。虽然 Wayfire 自带启动菜单，但易用、快速的任务栏也是任何合成器或桌面管理器的好搭档。waybar 是一款兼容 Wayland、速度快且易于配置的任务栏。要安装该软件包和一个音频控制辅助工具，请执行以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:680
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install pavucontrol waybar\n"
-msgstr ""
+msgstr "# pkg install pavucontrol waybar\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:683
+#, fuzzy
 msgid ""
 "To create the configuration directory and copy over a default configuration "
 "file, execute the following commands:"
-msgstr ""
+msgstr "要创建配置目录并复制默认配置文件，请执行以下命令："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:688
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% mkdir ~/.config/waybar\n"
 "% cp /usr/local/etc/xdg/waybar/config ~/.config/waybar\n"
-msgstr ""
+msgstr "% mkdir ~/.config/waybar\n% cp /usr/local/etc/xdg/waybar/config ~/.config/waybar\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:692
+#, fuzzy
 msgid ""
 "The `lavalauncher` utility provides a launch bar for various applications.  "
 "There is no example configuration file provided with the package, so the "
 "following actions must be taken:"
-msgstr ""
+msgstr "`lavalauncher` 工具为各种应用程序提供启动栏。该软件包没有提供示例配置文件，因此需要执行以下操作："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:696
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mkdir ~/.config/lavalauncher\n"
-msgstr ""
+msgstr "mkdir ~/.config/lavalauncher\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wayland/_index.adoc:699
+#, fuzzy
 msgid ""
 "An example configuration file that only includes Firefox, and is placed on "
 "the right, is below:"
-msgstr ""
+msgstr "下面是一个仅包含 Firefox、并将其放置在右侧的示例配置文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:705
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "global-settings {\n"
 "\twatch-config-file = true;\n"
 "}\n"
-msgstr ""
+msgstr "global-settings {\n\twatch-config-file = true;\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:710
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bar {\n"
 "\toutput            = eDP-1;\n"
 "\tposition          = bottom;\n"
 "\tbackground-colour = \"#202020\";\n"
-msgstr ""
+msgstr "bar {\n\toutput            = eDP-1;\n\tposition          = bottom;\n\tbackground-colour = \"#202020\";\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:713
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t# Condition for the default configuration set.\n"
 "\tcondition-resolution = wider-than-high;\n"
-msgstr ""
+msgstr "\t# Condition for the default configuration set.\n\tcondition-resolution = wider-than-high;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:717
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tconfig {\n"
 "\t\tposition = right;\n"
 "\t}\n"
-msgstr ""
+msgstr "\tconfig {\n\t\tposition = right;\n\t}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wayland/_index.adoc:726
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tbutton {\n"
 "\t\timage-path          =     /usr/local/lib/firefox/browser/chrome/icons/default/default48.png;\n"
@@ -1261,4 +1345,4 @@ msgid ""
 "\t  image-path           =   /usr/local/share/pixmaps/thunderbird.png;\n"
 "\t  command[mouse-left]  =   /usr/local/bin/thunderbird;\n"
 "}\n"
-msgstr ""
+msgstr "\tbutton {\n\t\timage-path          =     /usr/local/lib/firefox/browser/chrome/icons/default/default48.png;\n\t\tcommand[mouse-left] =     /usr/local/bin/firefox;\n\t}\n\tbutton {\n\t  image-path           =   /usr/local/share/pixmaps/thunderbird.png;\n\t  command[mouse-left]  =   /usr/local/bin/thunderbird;\n}\n"

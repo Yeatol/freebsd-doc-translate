@@ -38,12 +38,13 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/remote-install/_index.adoc:47
+#, fuzzy
 msgid ""
 "This article documents the remote installation of the FreeBSD operating "
 "system when the console of the remote system is unavailable.  The main idea "
 "behind this article is the result of a collaboration with `{mm}` with "
 "valuable input provided by `{pjd}`."
-msgstr ""
+msgstr "本文介绍在无法访问远程系统控制台时，如何远程安装 FreeBSD 操作系统。本文的主要思路源自与 `{mm}` 的合作，并得到了 `{pjd}` 的宝贵意见。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/remote-install/_index.adoc:49
@@ -52,35 +53,38 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/remote-install/_index.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/remote-install/_index.adoc:57
+#, fuzzy
 msgid ""
 "There are many server hosting providers in the world, but very few of them "
 "are officially supporting FreeBSD.  They usually provide support for a "
 "Linux(R) distribution to be installed on the servers they offer."
-msgstr ""
+msgstr "世界上有许多服务器托管服务提供商，但正式支持 FreeBSD 的寥寥无几。他们通常只支持在所提供的服务器上安装 Linux(R) 发行版。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/remote-install/_index.adoc:61
+#, fuzzy
 msgid ""
 "In some cases, these companies will install your preferred Linux(R) "
 "distribution if you request it.  Using this option, we will attempt to "
 "install FreeBSD. In other cases, they may offer a rescue system which would "
 "be used in an emergency.  It is possible to use this for our purposes as "
 "well."
-msgstr ""
+msgstr "在某些情况下，如果你提出请求，这些公司会安装你偏好的 Linux(R) 发行版。借助此选项，我们将尝试安装 FreeBSD。在其他情况下，他们可能会提供一个应急时使用的救援系统。我们也可以将其用于本文的目的。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/remote-install/_index.adoc:63
+#, fuzzy
 msgid ""
 "This article covers the basic installation and configuration steps required "
 "to bootstrap a remote installation of FreeBSD with RAID-1 and ZFS "
 "capabilities."
-msgstr ""
+msgstr "本文介绍如何通过基本的安装和配置步骤，在远程系统上引导安装具备 RAID-1 和 ZFS 功能的 FreeBSD。"
 
 #. type: Title ==
 #: documentation/content/en/articles/remote-install/_index.adoc:65
@@ -90,15 +94,17 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/remote-install/_index.adoc:69
+#, fuzzy
 msgid ""
 "This section will summarize the purpose of this article and better explain "
 "what is covered herein.  The instructions included in this article will "
 "benefit those using services provided by colocation facilities not "
 "supporting FreeBSD."
-msgstr ""
+msgstr "本节将概述本文的目的，并进一步说明本文涵盖的内容。本文中的说明适用于使用不支持 FreeBSD 的主机托管服务设施服务的用户。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/remote-install/_index.adoc:73
+#, fuzzy
 msgid ""
 "As we have mentioned in the crossref:remote-install[background, Background] "
 "section, many of the reputable server hosting companies provide some kind of "
@@ -106,74 +112,83 @@ msgid ""
 "usually provide this support to help their customers fix broken operating "
 "systems. As this article will explain, it is possible to install FreeBSD "
 "with the help of these rescue systems."
-msgstr ""
+msgstr "如 crossref:remote-install[background, Background] 一节所述，许多信誉良好的服务器托管公司都会提供某种救援系统，该系统从其局域网启动，并可通过 SSH 访问。他们通常提供此类支持，以帮助客户修复损坏的操作系统。本文将说明如何借助这些救援系统安装 FreeBSD。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/remote-install/_index.adoc:75
+#, fuzzy
 msgid ""
 "The next section of this article will describe how to configure, and build "
 "minimalistic FreeBSD on the local machine. That version will eventually be "
 "running on the remote machine from a ramdisk, which will allow us to install "
 "a complete FreeBSD operating system from an FTP mirror using the sysinstall "
 "utility."
-msgstr ""
+msgstr "本文下一节将介绍如何在本地计算机上配置并构建精简版 FreeBSD。之后，该版本将在远程计算机上从内存盘运行，使我们能够使用 sysinstall 工具从 FTP 镜像站安装完整的 FreeBSD 操作系统。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/remote-install/_index.adoc:76
+#, fuzzy
 msgid ""
 "The rest of this article will describe the installation procedure itself, as "
 "well as the configuration of the ZFS file system."
-msgstr ""
+msgstr "本文其余部分将介绍安装过程本身，以及 ZFS 文件系统的配置。"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Requirements"
-msgstr ""
+msgstr "要求"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:82
+#, fuzzy
 msgid "To continue successfully, you must:"
-msgstr ""
+msgstr "要顺利继续操作，你必须："
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:84
+#, fuzzy
 msgid "Have a network accessible operating system with SSH access"
-msgstr ""
+msgstr "拥有可通过网络访问且可使用 SSH 登录的操作系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:85
+#, fuzzy
 msgid "Understand the FreeBSD installation process"
-msgstr ""
+msgstr "了解 FreeBSD 的安装过程"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:86
+#, fuzzy
 msgid "Be familiar with the man:sysinstall[8] utility"
-msgstr ""
+msgstr "熟悉 man:sysinstall[8] 工具"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:87
+#, fuzzy
 msgid "Have the FreeBSD installation SO image or CD handy"
-msgstr ""
+msgstr "准备好 FreeBSD 安装 ISO 映像或 CD"
 
 #. type: Title ==
 #: documentation/content/en/articles/remote-install/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preparation - mfsBSD"
-msgstr ""
+msgstr "准备工作 - mfsBSD"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:93
+#, fuzzy
 msgid ""
 "Before FreeBSD may be installed on the target system, it is necessary to "
 "build the minimal FreeBSD operating system image which will boot from the "
 "hard drive.  This way the new system can be accessed from the network, and "
 "the rest of the installation can be done without remote access to the system "
 "console."
-msgstr ""
+msgstr "在目标系统上安装 FreeBSD 之前，需要先构建一个能够从硬盘启动的精简 FreeBSD 操作系统映像。这样，新系统便可通过网络访问，之后无需远程访问系统控制台即可完成剩余的安装。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:98
+#, fuzzy
 msgid ""
 "The mfsBSD tool-set can be used to build a tiny FreeBSD image.  As the name "
 "of mfsBSD suggests (\"mfs\" means \"memory file system\"), the resulting "
@@ -182,40 +197,43 @@ msgid ""
 "possible to install a complete FreeBSD operating system.  The mfsBSD http://"
 "mfsbsd.vx.sk/[home page] includes pointers to the latest release of the "
 "toolset."
-msgstr ""
+msgstr "可以使用 mfsBSD 工具集构建一个精简的 FreeBSD 映像。正如 mfsBSD 这个名称所示（“mfs”意为“内存文件系统”），生成的映像完全在内存盘中运行。得益于此特性，硬盘操作不会受到限制，因此可以安装完整的 FreeBSD 操作系统。mfsBSD link:http://mfsbsd.vx.sk/[主页]提供了获取该工具集最新版本的链接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:101
+#, fuzzy
 msgid ""
 "Please note that the internals of mfsBSD and how it all fits together is "
 "beyond the scope of this article.  The interested reader should consult the "
 "original documentation of mfsBSD for more details."
-msgstr ""
+msgstr "请注意，mfsBSD 的内部实现及其各部分如何协同工作超出了本文的讨论范围。感兴趣的读者应查阅 mfsBSD 的原始文档以了解更多详情。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:103
+#, fuzzy
 msgid ""
 "Download and extract the latest mfsBSD release and change your working "
 "directory to the directory where the mfsBSD scripts will reside:"
-msgstr ""
+msgstr "下载并解压最新的 mfsBSD 版本，然后将工作目录切换到存放 mfsBSD 脚本的目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# fetch http://mfsbsd.vx.sk/release/mfsbsd-2.1.tar.gz\n"
 "# tar xvzf mfsbsd-2.1.tar.gz\n"
 "# cd mfsbsd-2.1/\n"
-msgstr ""
+msgstr "# fetch http://mfsbsd.vx.sk/release/mfsbsd-2.1.tar.gz\n# tar xvzf mfsbsd-2.1.tar.gz\n# cd mfsbsd-2.1/\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration of mfsBSD"
-msgstr ""
+msgstr "配置 mfsBSD"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:118
+#, fuzzy
 msgid ""
 "Before booting mfsBSD, a few important configuration options have to be "
 "set.  The most important that we have to get right is, naturally, the "
@@ -223,234 +241,251 @@ msgid ""
 "depends on whether we know beforehand the type of the network interface we "
 "will use, and the network interface driver to be loaded for our hardware.  "
 "We will see how mfsBSD can be configured in either case."
-msgstr ""
+msgstr "启动 mfsBSD 之前，必须设置几个重要的配置选项。其中最重要的自然是正确配置网络。最合适的网络配置方法取决于我们是否预先知道要使用的网络接口类型，以及硬件所需加载的网络接口驱动程序。下面将介绍如何在这两种情况下配置 mfsBSD。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:122
+#, fuzzy
 msgid ""
 "Another important thing to set is the `root` password.  This can be done by "
 "editing [.filename]#conf/loader.conf#.  Please see the included comments."
-msgstr ""
+msgstr "另一个需要设置的重要项目是 `root` 密码。可以通过编辑 [.filename]#conf/loader.conf# 来设置。请参阅其中的注释。"
 
 #. type: Title ====
 #: documentation/content/en/articles/remote-install/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#conf/interfaces.conf# method"
-msgstr ""
+msgstr "[.filename]#conf/interfaces.conf# 方法"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:127
+#, fuzzy
 msgid ""
 "When the installed network interface card is unknown, it is possible to use "
 "the auto-detection features of mfsBSD.  The startup scripts of mfsBSD can "
 "detect the correct driver to use, based on the MAC address of the interface, "
 "if we set the following options in [.filename]#conf/interfaces.conf#:"
-msgstr ""
+msgstr "如果不知道已安装的网卡型号，可以使用 mfsBSD 的自动检测功能。只要在 [.filename]#conf/interfaces.conf# 中设置以下选项，mfsBSD 的启动脚本便可根据接口的 MAC 地址检测并使用正确的驱动程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "mac_interfaces=\"ext1\"\n"
 "ifconfig_ext1_mac=\"00:00:00:00:00:00\"\n"
 "ifconfig_ext1=\"inet 192.168.0.2/24\"\n"
-msgstr ""
+msgstr "mac_interfaces=\"ext1\"\nifconfig_ext1_mac=\"00:00:00:00:00:00\"\nifconfig_ext1=\"inet 192.168.0.2/24\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:136
+#, fuzzy
 msgid ""
 "Do not forget to add the `defaultrouter` information to [.filename]#conf/rc."
 "conf#:"
-msgstr ""
+msgstr "别忘了在 [.filename]#conf/rc.conf# 中添加 `defaultrouter` 信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "defaultrouter=\"192.168.0.1\"\n"
-msgstr ""
+msgstr "defaultrouter=\"192.168.0.1\"\n"
 
 #. type: Title ====
 #: documentation/content/en/articles/remote-install/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#conf/rc.conf# Method"
-msgstr ""
+msgstr "[.filename]#conf/rc.conf# 方法"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:146
+#, fuzzy
 msgid ""
 "When the network interface driver is known, it is more convenient to use [."
 "filename]#conf/rc.conf# for networking options.  The syntax of this file is "
 "the same as the one used in the standard man:rc.conf[5] file of FreeBSD."
-msgstr ""
+msgstr "如果已知网络接口驱动程序，使用 [.filename]#conf/rc.conf# 设置网络选项会更方便。该文件的语法与 FreeBSD 标准 man:rc.conf[5] 文件相同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:148
+#, fuzzy
 msgid ""
 "For example, if you know that a man:re[4] network interface is going to be "
 "available, you can set the following options in [.filename]#conf/rc.conf#:"
-msgstr ""
+msgstr "例如，如果你知道系统将提供 man:re[4] 网络接口，可以在 [.filename]#conf/rc.conf# 中设置以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "defaultrouter=\"192.168.0.1\"\n"
 "ifconfig_re0=\"inet 192.168.0.2/24\"\n"
-msgstr ""
+msgstr "defaultrouter=\"192.168.0.1\"\nifconfig_re0=\"inet 192.168.0.2/24\"\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building an mfsBSD Image"
-msgstr ""
+msgstr "构建 mfsBSD 映像"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:159
+#, fuzzy
 msgid "The process of building an mfsBSD image is pretty straightforward."
-msgstr ""
+msgstr "构建 mfsBSD 映像的过程相当简单。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:163
+#, fuzzy
 msgid ""
 "The first step is to mount the FreeBSD installation CD, or the installation "
 "ISO image to [.filename]#/cdrom#.  For the sake of example, in this article "
 "we will assume that you have downloaded the FreeBSD 10.1-RELEASE ISO.  "
 "Mounting this ISO image to the [.filename]#/cdrom# directory is easy with "
 "the man:mdconfig[8] utility:"
-msgstr ""
+msgstr "第一步是将 FreeBSD 安装 CD 或安装 ISO 映像挂载到 [.filename]#/cdrom#。例如，本文假设你已下载 FreeBSD 10.1-RELEASE ISO 映像。使用 man:mdconfig[8] 工具即可轻松将该 ISO 映像挂载到 [.filename]#/cdrom# 目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mdconfig -a -t vnode -u 10 -f FreeBSD-10.1-RELEASE-amd64-disc1.iso\n"
 "# mount_cd9660 /dev/md10 /cdrom\n"
-msgstr ""
+msgstr "# mdconfig -a -t vnode -u 10 -f FreeBSD-10.1-RELEASE-amd64-disc1.iso\n# mount_cd9660 /dev/md10 /cdrom\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:171
+#, fuzzy
 msgid ""
 "Since the recent FreeBSD releases do not contain regular distribution sets, "
 "it is required to extract the FreeBSD distribution files from the "
 "distribution archives located on the ISO image:"
-msgstr ""
+msgstr "由于近期的 FreeBSD 版本不包含常规发行版组件集，因此需要从 ISO 映像中的发行版归档文件提取 FreeBSD 发行文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir DIST\n"
 "# tar -xvf /cdrom/usr/freebsd-dist/base.txz -C DIST\n"
 "# tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C DIST\n"
-msgstr ""
+msgstr "# mkdir DIST\n# tar -xvf /cdrom/usr/freebsd-dist/base.txz -C DIST\n# tar -xvf /cdrom/usr/freebsd-dist/kernel.txz -C DIST\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:180
+#, fuzzy
 msgid "Next, build the bootable mfsBSD image:"
-msgstr ""
+msgstr "接下来，构建可启动的 mfsBSD 映像："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make BASE=DIST\n"
-msgstr ""
+msgstr "# make BASE=DIST\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/remote-install/_index.adoc:189
+#, fuzzy
 msgid ""
 "The above `make` has to be run from the top level of the mfsBSD directory "
 "tree, for example [.filename]#~/mfsbsd-2.1/#."
-msgstr ""
+msgstr "上述 `make` 命令必须在 mfsBSD 目录树的顶层运行，例如 [.filename]#~/mfsbsd-2.1/#。"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Booting mfsBSD"
-msgstr ""
+msgstr "启动 mfsBSD"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:195
+#, fuzzy
 msgid ""
 "Now that the mfsBSD image is ready, it must be uploaded to the remote system "
 "running a live rescue system or pre-installed Linux(R) distribution.  The "
 "most suitable tool for this task is scp:"
-msgstr ""
+msgstr "现在 mfsBSD 映像已准备就绪，必须将其上传到运行实时救援系统或预装 Linux(R) 发行版的远程系统。最适合此任务的工具是 scp："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# scp disk.img root@192.168.0.2:.\n"
-msgstr ""
+msgstr "# scp disk.img root@192.168.0.2:.\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:203
+#, fuzzy
 msgid ""
 "To boot mfsBSD image properly, it must be placed on the first (bootable) "
 "device of the given machine.  This may be accomplished using this example "
 "providing that [.filename]#sda# is the first bootable disk device:"
-msgstr ""
+msgstr "要正确启动 mfsBSD 映像，必须将其放置在指定计算机的第一个（可启动）设备上。如果 [.filename]#sda# 是第一个可启动磁盘设备，可以使用以下示例完成此操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dd if=/root/disk.img of=/dev/sda bs=1m\n"
-msgstr ""
+msgstr "# dd if=/root/disk.img of=/dev/sda bs=1m\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:212
+#, fuzzy
 msgid ""
 "If all went well, the image should now be in the MBR of the first device and "
 "the machine can be rebooted.  Watch for the machine to boot up properly with "
 "the man:ping[8] tool.  Once it has came back on-line, it should be possible "
 "to access it over man:ssh[1] as user `root` with the configured password."
-msgstr ""
+msgstr "如果一切顺利，映像现在应位于第一个设备的 MBR 中，此时可以重启计算机。使用 man:ping[8] 工具观察计算机是否正常启动。计算机重新上线后，应能以用户 `root` 身份使用配置的密码通过 man:ssh[1] 访问它。"
 
 #. type: Title ==
 #: documentation/content/en/articles/remote-install/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installation of the FreeBSD Operating System"
-msgstr ""
+msgstr "安装 FreeBSD 操作系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:218
+#, fuzzy
 msgid ""
 "The mfsBSD has been successfully booted and it should be possible to log in "
 "through man:ssh[1].  This section will describe how to create and label "
 "slices, set up `gmirror` for RAID-1, and how to use `sysinstall` to install "
 "a minimal distribution of the FreeBSD operating system."
-msgstr ""
+msgstr "mfsBSD 已成功启动，现在应该可以通过 man:ssh[1] 登录。本节将介绍如何创建并标记分区、配置用于 RAID-1 的 `gmirror`，以及如何使用 `sysinstall` 安装精简版 FreeBSD 操作系统发行版。"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preparation of Hard Drives"
-msgstr ""
+msgstr "准备硬盘"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:224
+#, fuzzy
 msgid ""
 "The first task is to allocate disk space for FreeBSD, i.e.: to create slices "
 "and partitions.  Obviously, the currently running system is fully loaded in "
 "system memory and therefore there will be no problems with manipulating hard "
 "drives.  To complete this task, it is possible to use either `sysinstall` or "
 "man:fdisk[8] in conjunction to man:bsdlabel[8]."
-msgstr ""
+msgstr "首先要为 FreeBSD 分配磁盘空间，也就是创建切片和分区。显然，当前运行的系统已完全载入内存，因此操作硬盘不会有问题。可以使用 `sysinstall`，也可以结合使用 man:fdisk[8] 和 man:bsdlabel[8] 来完成此任务。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:227
+#, fuzzy
 msgid ""
 "At the start, mark all system disks as empty.  Repeat the following command "
 "for each hard drive:"
-msgstr ""
+msgstr "首先，将所有系统磁盘标记为空。对每块硬盘重复执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dd if=/dev/zero of=/dev/ad0 count=2\n"
-msgstr ""
+msgstr "# dd if=/dev/zero of=/dev/ad0 count=2\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:239
+#, fuzzy
 msgid ""
 "Next, create slices and label them with your preferred tool.  While it is "
 "considered easier to use `sysinstall`, a powerful and also probably less "
@@ -465,19 +500,20 @@ msgid ""
 "allocated for a man:zpool[8] mirrored ZFS file system.  Please note, that "
 "the ZFS file system will be configured after the FreeBSD operating system is "
 "successfully installed and booted."
-msgstr ""
+msgstr "接下来，使用你偏好的工具创建切片并为其添加标签。虽然使用 `sysinstall` 被认为更简单，但使用标准的基于文本的 UNIX(R) 工具（如 man:fdisk[8] 和 man:bsdlabel[8]）功能强大，而且可能更少出错，本节也将介绍这种方法。前一种方法在 FreeBSD 手册的 extref:{handbook}install[Installing FreeBSD, install-steps] 章节中有详细说明。正如引言中所述，本文将介绍如何设置具备 RAID-1 和 ZFS 功能的系统。我们的配置将包含一个较小的 man:gmirror[8] 镜像 [.filename]#/#（根）、[.filename]#/usr# 和 [.filename]#/var# 数据集，其余磁盘空间则分配给 man:zpool[8] 镜像 ZFS 文件系统。请注意，只有在 FreeBSD 操作系统成功安装并启动后，才会配置 ZFS 文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:241
+#, fuzzy
 msgid ""
 "The following example will describe how to create slices and labels, "
 "initialize man:gmirror[8] on each partition and how to create a UFS2 file "
 "system in each mirrored partition:"
-msgstr ""
+msgstr "以下示例将介绍如何创建切片和标签、在每个分区上初始化 man:gmirror[8]，以及如何在每个镜像分区中创建 UFS2 文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# fdisk -BI /dev/ad0 <.>\n"
 "# fdisk -BI /dev/ad1\n"
@@ -492,83 +528,92 @@ msgid ""
 "# newfs /dev/mirror/root <.>\n"
 "# newfs /dev/mirror/var\n"
 "# newfs /dev/mirror/usr\n"
-msgstr ""
+msgstr "# fdisk -BI /dev/ad0 <.>\n# fdisk -BI /dev/ad1\n# bsdlabel -wB /dev/ad0s1 <.>\n# bsdlabel -wB /dev/ad1s1\n# bsdlabel -e /dev/ad0s1 <.>\n# bsdlabel /dev/ad0s1 > /tmp/bsdlabel.txt && bsdlabel -R /dev/ad1s1 /tmp/bsdlabel.txt <.>\n# gmirror label root /dev/ad[01]s1a <.>\n# gmirror label var /dev/ad[01]s1d\n# gmirror label usr /dev/ad[01]s1e\n# gmirror label -F swap /dev/ad[01]s1b <.>\n# newfs /dev/mirror/root <.>\n# newfs /dev/mirror/var\n# newfs /dev/mirror/usr\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:260
+#, fuzzy
 msgid ""
 "Create a slice covering the entire disk and initialize the boot code "
 "contained in sector 0 of the given disk. Repeat this command for all hard "
 "drives in the system."
-msgstr ""
+msgstr "创建一个覆盖整个磁盘的切片，并初始化指定磁盘第 0 扇区中的引导代码。对系统中的所有硬盘重复执行此命令。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:262
+#, fuzzy
 msgid "Write a standard label for each disk including the bootstrap code."
-msgstr ""
+msgstr "为每块磁盘写入标准标签，其中包括引导代码。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:264
+#, fuzzy
 msgid ""
 "Now, manually edit the label of the given disk. Refer to the man:bsdlabel[8] "
 "manual page to find out how to create partitions. Create partitions `a` for "
 "[.filename]#/# (root) file system, `b` for swap, `d` for [.filename]#/var#, "
 "`e` for [.filename]#/usr# and finally `f` which will later be used for ZFS."
-msgstr ""
+msgstr "现在，手动编辑指定磁盘的标签。请参阅 man:bsdlabel[8] 手册页，了解如何创建分区。创建分区 `a` 作为 [.filename]#/#（根）文件系统，分区 `b` 用作交换空间，分区 `d` 用于 [.filename]#/var#，分区 `e` 用于 [.filename]#/usr#，最后创建分区 `f`，供之后用于 ZFS。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:266
+#, fuzzy
 msgid ""
 "Import the recently created label for the second hard drive, so both hard "
 "drives will be labeled in the same way."
-msgstr ""
+msgstr "将刚创建的标签导入第二块硬盘，以便两块硬盘使用相同的标签。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:268
+#, fuzzy
 msgid "Initialize man:gmirror[8] on each partition."
-msgstr ""
+msgstr "在每个分区上初始化 man:gmirror[8]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:270
+#, fuzzy
 msgid ""
 "Note that `-F` is used for the swap partition. This instructs man:gmirror[8] "
 "to assume that the device is in the consistent state after the power/system "
 "failure."
-msgstr ""
+msgstr "请注意，交换分区使用了 `-F`。这会指示 man:gmirror[8] 假定设备在断电或系统故障后仍处于一致状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:272
+#, fuzzy
 msgid "Create a UFS2 file system on each mirrored partition."
-msgstr ""
+msgstr "在每个镜像分区上创建 UFS2 文件系统。"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System Installation"
-msgstr ""
+msgstr "安装系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:278
+#, fuzzy
 msgid ""
 "This is the most important part.  This section will describe how to actually "
 "install the minimal distribution of FreeBSD on the hard drives that we have "
 "prepared in the previous section.  To accomplish this goal, all file systems "
 "need to be mounted so `sysinstall` may write the contents of FreeBSD to the "
 "hard drives:"
-msgstr ""
+msgstr "这是最重要的部分。本节将介绍如何在上一节准备好的硬盘上实际安装精简版 FreeBSD 发行版。为此，需要挂载所有文件系统，以便 `sysinstall` 将 FreeBSD 的内容写入硬盘："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount /dev/mirror/root /mnt\n"
 "# mkdir /mnt/var /mnt/usr\n"
 "# mount /dev/mirror/var /mnt/var\n"
 "# mount /dev/mirror/usr /mnt/usr\n"
-msgstr ""
+msgstr "# mount /dev/mirror/root /mnt\n# mkdir /mnt/var /mnt/usr\n# mount /dev/mirror/var /mnt/var\n# mount /dev/mirror/usr /mnt/usr\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:292
+#, fuzzy
 msgid ""
 "When you are done, start man:sysinstall[8].  Select the [."
 "guimenuitem]#Custom# installation from the main menu.  Select [."
@@ -576,102 +621,112 @@ msgid ""
 "move the cursor on the `Install Root` item, press kbd:[Space] and change it "
 "to [.filename]#/mnt#.  Press kbd:[Enter] to submit your changes and exit the "
 "[.guimenuitem]#Options# menu by pressing kbd:[q]."
-msgstr ""
+msgstr "完成后，启动 man:sysinstall[8]。在主菜单中选择 [.guimenuitem]#Custom# 安装。选择 [.guimenuitem]#Options# 并按 kbd:[Enter]。使用方向键将光标移到 `Install Root` 项，按 kbd:[Space] 并将其更改为 [.filename]#/mnt#。按 kbd:[Enter] 提交更改，然后按 kbd:[q] 退出 [.guimenuitem]#Options# 菜单。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/remote-install/_index.adoc:296
+#, fuzzy
 msgid ""
 "Note that this step is very important and if skipped, `sysinstall` will be "
 "unable to install FreeBSD."
-msgstr ""
+msgstr "请注意，这一步非常重要，如果跳过，`sysinstall` 将无法安装 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:301
+#, fuzzy
 msgid ""
 "Go to the [.guimenuitem]#Distributions# menu, move the cursor with the arrow "
 "keys to `Minimal`, and check it by pressing kbd:[Space].  This article uses "
 "the Minimal distribution to save network traffic, because the system itself "
 "will be installed over ftp.  Exit this menu by choosing `Exit`."
-msgstr ""
+msgstr "转到 [.guimenuitem]#Distributions# 菜单，使用方向键将光标移到 `Minimal`，然后按 kbd:[Space] 选中。本文使用 Minimal 发行版以减少网络流量，因为系统将通过 FTP 安装。选择 `Exit` 退出此菜单。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/remote-install/_index.adoc:305
+#, fuzzy
 msgid ""
 "The [.guimenuitem]#Partition# and [.guimenuitem]#Label# menus will be "
 "skipped, as these are useless now."
-msgstr ""
+msgstr "现在无需使用 [.guimenuitem]#Partition# 和 [.guimenuitem]#Label# 菜单，因此跳过这两个菜单。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:310
+#, fuzzy
 msgid ""
 "In the [.guimenuitem]#Media# menu, select `FTP`.  Select the nearest mirror "
 "and let `sysinstall` assume that the network is already configured.  You "
 "will be returned back to the [.guimenuitem]#Custom# menu."
-msgstr ""
+msgstr "在 [.guimenuitem]#Media# 菜单中选择 `FTP`。选择距离最近的镜像站，并让 `sysinstall` 假定网络已经配置完成。随后会返回 [.guimenuitem]#Custom# 菜单。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:313
+#, fuzzy
 msgid ""
 "Finally, perform the system installation by selecting the last option, [."
 "guimenuitem]#Commit#.  Exit `sysinstall` when it finishes the installation."
-msgstr ""
+msgstr "最后，选择最后一个选项 [.guimenuitem]#Commit# 以执行系统安装。安装完成后退出 `sysinstall`。"
 
 #. type: Title ===
 #: documentation/content/en/articles/remote-install/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Post Installation Steps"
-msgstr ""
+msgstr "安装后的步骤"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:318
+#, fuzzy
 msgid ""
 "The FreeBSD operating system should be installed now; however, the process "
 "is not finished yet.  It is necessary to perform some post installation "
 "steps to allow FreeBSD to boot in the future and to be able to log in to the "
 "system."
-msgstr ""
+msgstr "现在应该已经安装好 FreeBSD 操作系统，但整个过程尚未结束。还需要执行一些安装后步骤，才能确保 FreeBSD 日后可以启动，并且能够登录系统。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:321
+#, fuzzy
 msgid ""
 "You must now man:chroot[8] into the freshly installed system to finish the "
 "installation.  Use the following command:"
-msgstr ""
+msgstr "现在必须使用 man:chroot[8] 进入刚安装的系统以完成安装。使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# chroot /mnt\n"
-msgstr ""
+msgstr "# chroot /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:328
+#, fuzzy
 msgid "To complete our goal, perform these steps:"
-msgstr ""
+msgstr "要完成我们的目标，请执行以下步骤："
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:330
+#, fuzzy
 msgid "Copy the `GENERIC` kernel to the [.filename]#/boot/kernel# directory:"
-msgstr ""
+msgstr "将 `GENERIC` 内核复制到 [.filename]#/boot/kernel# 目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cp -Rp /boot/GENERIC/* /boot/kernel\n"
-msgstr ""
+msgstr "# cp -Rp /boot/GENERIC/* /boot/kernel\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:337
+#, fuzzy
 msgid ""
 "Create the [.filename]#/etc/rc.conf#, [.filename]#/etc/resolv.conf# and [."
 "filename]#/etc/fstab# files. Do not forget to properly set the network "
 "information and to enable sshd in [.filename]#/etc/rc.conf#. The contents of "
 "[.filename]#/etc/fstab# will be similar to the following:"
-msgstr ""
+msgstr "创建 [.filename]#/etc/rc.conf#、[.filename]#/etc/resolv.conf# 和 [.filename]#/etc/fstab# 文件。请记得正确设置网络信息，并在 [.filename]#/etc/rc.conf# 中启用 sshd。[.filename]#/etc/fstab# 的内容应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
 "/dev/mirror/swap        none            swap    sw              0       0\n"
@@ -679,90 +734,98 @@ msgid ""
 "/dev/mirror/usr         /usr            ufs     rw              2       2\n"
 "/dev/mirror/var         /var            ufs     rw              2       2\n"
 "/dev/cd0                /cdrom          cd9660  ro,noauto       0       0\n"
-msgstr ""
+msgstr "# Device                Mountpoint      FStype  Options         Dump    Pass#\n/dev/mirror/swap        none            swap    sw              0       0\n/dev/mirror/root        /               ufs     rw              1       1\n/dev/mirror/usr         /usr            ufs     rw              2       2\n/dev/mirror/var         /var            ufs     rw              2       2\n/dev/cd0                /cdrom          cd9660  ro,noauto       0       0\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:348
+#, fuzzy
 msgid "Create [.filename]#/boot/loader.conf# with the following contents:"
-msgstr ""
+msgstr "创建 [.filename]#/boot/loader.conf#，并写入以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "geom_mirror_load=\"YES\"\n"
 "zfs_load=\"YES\"\n"
-msgstr ""
+msgstr "geom_mirror_load=\"YES\"\nzfs_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:355
+#, fuzzy
 msgid ""
 "Perform the following command, which will make ZFS available on the next "
 "boot:"
-msgstr ""
+msgstr "执行以下命令，使 ZFS 在下次启动时可用："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc zfs_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc zfs_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:362
+#, fuzzy
 msgid ""
 "Add additional users to the system using the man:adduser[8] tool. Do not "
 "forget to add a user to the `wheel` group so you may obtain root access "
 "after the reboot."
-msgstr ""
+msgstr "使用 man:adduser[8] 工具向系统添加其他用户。请记得将一个用户添加到 `wheel` 组，以便重启后获得 root 访问权限。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:363
+#, fuzzy
 msgid "Double-check all your settings."
-msgstr ""
+msgstr "仔细检查所有设置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:366
+#, fuzzy
 msgid ""
 "The system should now be ready for the next boot.  Use the man:reboot[8] "
 "command to reboot your system."
-msgstr ""
+msgstr "现在系统应该已准备好进行下一次启动。使用 man:reboot[8] 命令重启系统。"
 
 #. type: Title ==
 #: documentation/content/en/articles/remote-install/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ZFS"
-msgstr ""
+msgstr "ZFS"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:372
+#, fuzzy
 msgid ""
 "If your system survived the reboot, it should now be possible to log in.  "
 "Welcome to the fresh FreeBSD installation, performed remotely without the "
 "use of a remote console!"
-msgstr ""
+msgstr "如果系统成功经受住了重启，现在应该可以登录了。欢迎使用全新安装的 FreeBSD！此次安装是远程完成的，无需使用远程控制台！"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:375
+#, fuzzy
 msgid ""
 "The only remaining step is to configure man:zpool[8] and create some man:"
 "zfs[8] file systems.  Creating and administering ZFS is very "
 "straightforward. First, create a mirrored pool:"
-msgstr ""
+msgstr "剩下的唯一一步是配置 man:zpool[8] 并创建一些 man:zfs[8] 文件系统。创建和管理 ZFS 非常简单。首先，创建一个镜像池："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:379
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# zpool create tank mirror /dev/ad[01]s1f\n"
-msgstr ""
+msgstr "# zpool create tank mirror /dev/ad[01]s1f\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:382
+#, fuzzy
 msgid "Next, create some file systems:"
-msgstr ""
+msgstr "接下来，创建一些文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/remote-install/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# zfs create tank/ports\n"
 "# zfs create tank/src\n"
@@ -770,12 +833,13 @@ msgid ""
 "# zfs set compression=on tank/src\n"
 "# zfs set mountpoint=/usr/ports tank/ports\n"
 "# zfs set mountpoint=/usr/src tank/src\n"
-msgstr ""
+msgstr "# zfs create tank/ports\n# zfs create tank/src\n# zfs set compression=gzip tank/ports\n# zfs set compression=on tank/src\n# zfs set mountpoint=/usr/ports tank/ports\n# zfs set mountpoint=/usr/src tank/src\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/remote-install/_index.adoc:394
+#, fuzzy
 msgid ""
 "That is all.  If you are interested in more details about ZFS on FreeBSD, "
 "please refer to the https://wiki.freebsd.org/ZFS[ZFS] section of the FreeBSD "
 "Wiki."
-msgstr ""
+msgstr "全部完成。如果您想进一步了解 FreeBSD 上的 ZFS，请参阅 FreeBSD Wiki 的 link:https://wiki.freebsd.org/ZFS[ZFS] 部分。"

@@ -17,51 +17,55 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Upgrading a FreeBSD Port"
-msgstr ""
+msgstr "升级 FreeBSD Port"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 11. Upgrading a Port"
-msgstr ""
+msgstr "第 11 章．升级 Port"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Upgrading a Port"
-msgstr ""
+msgstr "升级 Port"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:52
+#, fuzzy
 msgid ""
 "When a port is not the most recent version available from the authors, "
 "update the local working copy of [.filename]#/usr/ports#.  The port might "
 "have already been updated to the new version."
-msgstr ""
+msgstr "如果 Port 不是作者提供的最新版本，请更新 [.filename]#/usr/ports# 的本地工作副本。该 Port 可能已经更新到新版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:56
+#, fuzzy
 msgid ""
 "When working with more than a few ports, it will probably be easier to use "
 "Git to keep the whole ports collection up-to-date, as described in extref:"
 "{handbook}ports[Using the Ports Collection, ports-using].  This will have "
 "the added benefit of tracking all the port's dependencies."
-msgstr ""
+msgstr "如果要处理的 Port 不止几个，使用 Git 保持整个 ports 集合为最新状态可能更方便，如 extref:{handbook}ports[使用 Ports 集合，ports-using] 中所述。这样还有助于跟踪 Port 的所有依赖项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:61
+#, fuzzy
 msgid ""
 "The next step is to see if there is an update already pending.  To do this, "
 "there are two options.  There is a searchable interface to the https://bugs."
 "freebsd.org/search/[FreeBSD Problem Report (PR) or bug database].  Select "
 "`Ports & Packages` in the `Product` multiple select menu, and enter the name "
 "of the port in the `Summary` field."
-msgstr ""
+msgstr "下一步是检查是否已有待处理的更新。为此有两种方法。可以通过 link:https://bugs.freebsd.org/search/[FreeBSD 问题报告（PR）或缺陷数据库]的可搜索界面进行查询。在 `Product` 多选菜单中选择 `Ports & Packages`，并在 `Summary` 字段中输入 Port 的名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:65
+#, fuzzy
 msgid ""
 "If there is no pending PR, the next step is to send an email to the port's "
 "maintainer, as shown by `make maintainer`.  That person may already be "
@@ -70,32 +74,35 @@ msgid ""
 "is no need to duplicate their work.  Note that unmaintained ports are listed "
 "with a maintainer of `ports@FreeBSD.org`, which is just the general ports "
 "mailing list, so sending mail there probably will not help in this case."
-msgstr ""
+msgstr "如果没有待处理的 PR，下一步是给 Port 的维护者发送电子邮件，维护者可通过 `make maintainer` 查询。对方可能已经在处理升级，也可能有理由暂时不升级该 Port（例如新版本存在稳定性问题），因此没有必要重复其工作。请注意，未维护的 Port 会将 `ports@FreeBSD.org` 列为维护者；这只是通用的 ports 邮件列表，因此在这种情况下给它发邮件可能没有帮助。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:67
+#, fuzzy
 msgid ""
 "If the maintainer requests to do the upgrade or there is no maintainer, then "
 "help out FreeBSD by preparing the update! Please do this by using the man:"
 "diff[1] command in the base system."
-msgstr ""
+msgstr "如果维护者请求你进行升级，或者该 Port 没有维护者，请为 FreeBSD 尽一份力，准备更新！请使用基本系统中的 man:diff[1] 命令完成此项工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:69
+#, fuzzy
 msgid ""
 "To create a suitable `diff` for a single patch, copy the file that needs "
 "patching to [.filename]#something.orig#, save the changes to [."
 "filename]#something# and then create the patch:"
-msgstr ""
+msgstr "要为单个补丁创建合适的 `diff`，请将需要打补丁的文件复制为 [.filename]#something.orig#，将更改保存到 [.filename]#something#，然后创建补丁："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% diff -u something.orig something > something.diff\n"
-msgstr ""
+msgstr "% diff -u something.orig something > something.diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:80
+#, fuzzy
 msgid ""
 "Otherwise, either use the `git diff` method (crossref:upgrading[git-diff, "
 "Using Git to Make Patches]) or copy the contents of the port to an entire "
@@ -110,27 +117,30 @@ msgid ""
 "please examine the output to make sure all the changes make sense.  (In "
 "particular, make sure to first clean out the work directories with `make "
 "clean`)."
-msgstr ""
+msgstr "否则，可以使用 `git diff` 方法（crossref:upgrading[git-diff, 使用 Git 创建补丁]），或者将 Port 的内容复制到另一个完整目录中，然后对新旧 Port 目录运行递归 man:diff[1]，并使用其输出（例如，如果修改后的 Port 目录名为 [.filename]#superedit#，而原始目录在我们的树中名为 [.filename]#superedit.bak#，则保存 `diff -ruN superedit.bak superedit` 的结果）。统一差异或上下文差异都可以，但 Port 提交者通常更喜欢统一差异。请注意 `-N` 选项的用法：这是确保 diff 正确处理新增文件或删除旧文件情况的公认方法。在发送 diff 前，请检查输出，确保所有更改都合理。（尤其要先运行 `make clean` 清理工作目录。）"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:84
+#, fuzzy
 msgid ""
 "If some files have been added, copied, moved, or removed, add this "
 "information to the problem report so that the committer picking up the patch "
 "will know what man:git[1] commands to run."
-msgstr ""
+msgstr "如果有文件被添加、复制、移动或删除，请将这些信息添加到问题报告中，以便接手补丁的提交者知道要运行哪些 man:git[1] 命令。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:89
+#, fuzzy
 msgid ""
 "To simplify common operations with patch files, use `make makepatch` as "
 "described in crossref:slow-porting[slow-patch,Patching].  Other tools "
 "exists, like [.filename]#/usr/ports/Tools/scripts/patchtool.py#.  Before "
 "using it, please read [.filename]#/usr/ports/Tools/scripts/README.patchtool#."
-msgstr ""
+msgstr "如 crossref:slow-porting[slow-patch,打补丁] 中所述，使用 `make makepatch` 简化补丁文件的常见操作。还有其他工具，例如 [.filename]#/usr/ports/Tools/scripts/patchtool.py#。使用前，请阅读 [.filename]#/usr/ports/Tools/scripts/README.patchtool#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:93
+#, fuzzy
 msgid ""
 "If the port is unmaintained, and it is actively being used, please consider "
 "volunteering to become its maintainer.  FreeBSD has over 4000 ports without "
@@ -138,10 +148,11 @@ msgid ""
 "(For a detailed description of the responsibilities of maintainers, refer to "
 "the section in the extref:{developers-handbook}policies[Developer's "
 "Handbook, policies-maintainer].)"
-msgstr ""
+msgstr "如果该 Port 无人维护且仍在积极使用，请考虑自愿成为其维护者。FreeBSD 有 4000 多个 Port 没有维护者，而这方面始终需要更多志愿者。（维护者职责的详细说明，请参阅 extref:{developers-handbook}policies[《开发者手册》中的相关章节，policies-maintainer]。）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:99
+#, fuzzy
 msgid ""
 "To submit the diff, use the https://bugs.freebsd.org/submit/[bug submit "
 "form] (product `Ports & Packages`, component `Individual Port(s)`).  Always "
@@ -150,50 +161,55 @@ msgid ""
 "option_`; `_category/portname_: _Update to X.Y_`.  Please mention any added "
 "or deleted files in the message, as they have to be explicitly specified to "
 "man:git[1] when doing a commit.  Do not compress or encode the diff."
-msgstr ""
+msgstr "请使用 link:https://bugs.freebsd.org/submit/[缺陷提交表单]提交 diff（产品 `Ports & Packages`，组件 `Individual Port(s)`）。请始终填写 Port 的类别和名称，后接冒号及简短的问题描述。例如：__category/portname__：__add FOO option__；__category/portname__：__Update to X.Y__。请在消息中注明新增或删除的文件，因为提交时必须将它们明确指定给 man:git[1]。不要压缩或编码 diff。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:102
+#, fuzzy
 msgid ""
 "Before submitting the bug, review the extref:{problem-reports}[Writing the "
 "problem report, pr-writing] section in the Problem Reports article.  It "
 "contains far more information about how to write useful problem reports."
-msgstr ""
+msgstr "提交缺陷前，请阅读《问题报告》文章中的 extref:{problem-reports}[撰写问题报告，pr-writing]章节。该章节包含了更多有关如何撰写有用问题报告的信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:108
+#, fuzzy
 msgid ""
 "If the upgrade is motivated by security concerns or a serious fault in the "
 "currently committed port, please notify the {portmgr} to request immediate "
 "rebuilding and redistribution of the port's package.  Unsuspecting users of "
 "`pkg` will otherwise continue to install the old version via `pkg install` "
 "for several weeks."
-msgstr ""
+msgstr "如果升级是出于安全考虑，或是为了修复当前已提交 Port 中的严重故障，请通知 {portmgr}，请求立即重新构建并重新分发该 Port 的软件包。否则，毫不知情的 `pkg` 用户还会通过 `pkg install` 安装旧版本，持续数周。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:115
+#, fuzzy
 msgid ""
 "Please use man:diff[1] or `git diff` to create updates to existing ports.  "
 "Other formats include the whole file and make it impossible to see just what "
 "has changed.  When diffs are not included, the entire update might be "
 "ignored."
-msgstr ""
+msgstr "请使用 man:diff[1] 或 `git diff` 为现有 Port 创建更新。其他格式会包含整个文件，让人无法只看出具体更改内容。如果不附上 diff，整个更新可能会被忽略。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:118
+#, fuzzy
 msgid ""
 "Now that all of that is done, read about how to keep up-to-date in crossref:"
 "keeping-up[keeping-up,Keeping Up]."
-msgstr ""
+msgstr "完成所有这些步骤后，请阅读 crossref:keeping-up[keeping-up,保持更新]，了解如何跟上最新状态。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Git to Make Patches"
-msgstr ""
+msgstr "使用 Git 创建补丁"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:129
+#, fuzzy
 msgid ""
 "When possible, please submit a man:git[1] patch or diff.  They are easier to "
 "handle than diffs between \"new and old\" directories.  It is easier to see "
@@ -205,309 +221,335 @@ msgid ""
 "generated by man:git-format-patch[1] includes the author information and "
 "commit messages.  These will be recorded in the log of the repository and "
 "this is the recommended way to submit the changes."
-msgstr ""
+msgstr "请尽可能提交 man:git[1] 补丁或 diff。与“新旧”目录之间的 diff 相比，这类补丁更容易处理。它更容易看出更改内容；如果在开始工作后 Ports 集合中相关内容有所变化，或者提交者要求修正某些内容，也更容易更新 diff。此外，使用 man:git-format-patch[1] 或 man:git-diff[1] 生成的补丁，可以轻松通过 man:git-am[1] 或 man:git-apply[1] 应用，从而为提交者节省一些时间。最后，man:git-format-patch[1] 生成的 Git 补丁包含作者信息和提交消息，这些信息会记录在仓库日志中，因此推荐使用此方法提交更改。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git clone https://git.FreeBSD.org/ports.git ~/my_wrkdir <.> <.>\n"
 "% cd ~/my_wrkdir\n"
-msgstr ""
+msgstr "% git clone https://git.FreeBSD.org/ports.git ~/my_wrkdir <.> <.>\n% cd ~/my_wrkdir\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:137
+#, fuzzy
 msgid ""
 "This can be anywhere, of course. Building ports is not limited to within [."
 "filename]#/usr/ports/#."
-msgstr ""
+msgstr "当然，工作目录可以位于任何位置。构建 Port 并不局限于 [.filename]#/usr/ports/#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:139
+#, fuzzy
 msgid ""
 "https://git.FreeBSD.org/[git.FreeBSD.org] is the FreeBSD public Git server. "
 "See extref:{handbook}mirrors[FreeBSD Git Repository URL Table, git-url-"
 "table] for more information."
-msgstr ""
+msgstr "link:https://git.FreeBSD.org/[git.FreeBSD.org] 是 FreeBSD 的公共 Git 服务器。更多信息请参阅 extref:{handbook}mirrors[FreeBSD Git 仓库 URL 表，git-url-table]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:142
+#, fuzzy
 msgid ""
 "While in the port directory, make any changes that are needed.  If adding, "
 "moving, or removing a file, use `git` to track these changes:"
-msgstr ""
+msgstr "在 Port 目录中，根据需要进行更改。如果要添加、移动或删除文件，请使用 `git` 跟踪这些更改："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git add new_file\n"
 "% git mv old_name new_name\n"
 "% git rm deleted_file\n"
-msgstr ""
+msgstr "% git add new_file\n% git mv old_name new_name\n% git rm deleted_file\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:151
+#, fuzzy
 msgid ""
 "Make sure to check the port using the checklist in crossref:quick-"
 "porting[porting-testing,Testing the Port] and crossref:quick-porting[porting-"
 "portlint,Checking the Port with `portlint`]."
-msgstr ""
+msgstr "请使用 crossref:quick-porting[porting-testing,测试 Port] 和 crossref:quick-porting[porting-portlint,使用 `portlint` 检查 Port] 中的检查清单检查 Port。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:153
+#, fuzzy
 msgid "Also, update the checksum reference in distinfo with `make makesum`."
-msgstr ""
+msgstr "此外，使用 `make makesum` 更新 distinfo 中的校验和引用。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:157
+#, fuzzy
 msgid ""
 "Before making the patch, fetch the latest repository and rebase the changes "
 "on top of it.  Watch and follow the output carefully.  If any of the files "
 "failed to rebase, it means that the upstream files changed while local "
 "changes happened in the same file, and the conflicts need to be resolved "
 "manually."
-msgstr ""
+msgstr "创建补丁前，请获取仓库的最新内容，并将更改变基到其之上。仔细观察并遵循命令输出。如果有文件变基失败，说明本地更改期间上游文件也发生了更改，因此需要手动解决冲突。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git fetch origin main\n"
 "% git rebase origin/main\n"
-msgstr ""
+msgstr "% git fetch origin main\n% git rebase origin/main\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:165
+#, fuzzy
 msgid "Check the changes staged for the patch:"
-msgstr ""
+msgstr "检查已暂存、将包含在补丁中的更改："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git status\n"
 "% git diff --staged\n"
-msgstr ""
+msgstr "% git status\n% git diff --staged\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:173
+#, fuzzy
 msgid "The last step is to make an unified diff or patch of the changes:"
-msgstr ""
+msgstr "最后一步是为这些更改创建统一差异或补丁："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:175
+#, fuzzy
 msgid "To generate a patch with man:git-format-patch[1]:"
-msgstr ""
+msgstr "使用 man:git-format-patch[1] 生成补丁："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git checkout -b my_branch\n"
 "% git commit\n"
 "% git format-patch main\n"
-msgstr ""
+msgstr "% git checkout -b my_branch\n% git commit\n% git format-patch main\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:186
+#, fuzzy
 msgid ""
 "This will generate a patch named like `0001-foo.patch`.  This is the "
 "preferred way as it would include author identity, and it is also easier "
 "when making a series of changes that are not meant to be squashed together."
-msgstr ""
+msgstr "这会生成一个类似 `0001-foo.patch` 的补丁文件。推荐使用此方法，因为它会包含作者身份；此外，对于一系列不打算合并为单个提交的更改，此方法也更方便。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:188
+#, fuzzy
 msgid "Alternatively, to generate an unified diff with man:git-diff[1]:"
-msgstr ""
+msgstr "或者，使用 man:git-diff[1] 生成统一差异："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git diff --staged > ../`make -VPKGNAME`.diff\n"
-msgstr ""
+msgstr "% git diff --staged > ../`make -VPKGNAME`.diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:194
+#, fuzzy
 msgid ""
 "This will generate a diff named like `foo-1.2.3.diff`.  Where `foo` is "
 "replaced with the first line of the commit message, i.e., the subject of the "
 "commit message."
-msgstr ""
+msgstr "这会生成一个类似 `foo-1.2.3.diff` 的 diff 文件。其中 `foo` 会替换为提交消息的第一行，也就是提交消息的主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:196
+#, fuzzy
 msgid ""
 "After patch has been created, switch to the main branch for starting other "
 "developments."
-msgstr ""
+msgstr "创建补丁后，切换到 main 分支以开始其他开发工作。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git checkout main\n"
-msgstr ""
+msgstr "% git checkout main\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:202
+#, fuzzy
 msgid ""
 "Once the patch is accepted and merged, delete the local development branch "
 "if desired:"
-msgstr ""
+msgstr "补丁被接受并合并后，如有需要，可以删除本地开发分支："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git branch -D my_branch\n"
-msgstr ""
+msgstr "% git branch -D my_branch\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:212
+#, fuzzy
 msgid ""
 "If files have been added, moved, or removed, include the man:git[1] `add`, "
 "`mv`, and `rm` commands that were used.  `git mv` must be run before the "
 "patch can be applied.  `git add` or `git rm` must be run after the patch is "
 "applied."
-msgstr ""
+msgstr "如果有文件被添加、移动或删除，请附上所用的 man:git[1] `add`、`mv` 和 `rm` 命令。应用补丁前必须运行 `git mv`。应用补丁后必须运行 `git add` 或 `git rm`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:215
+#, fuzzy
 msgid ""
 "Send the patch following the extref:{problem-reports}[problem report "
 "submission guidelines, pr-writing]."
-msgstr ""
+msgstr "请按照 extref:{problem-reports}[问题报告提交指南，pr-writing]发送补丁。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UPDATING and MOVED"
-msgstr ""
+msgstr "UPDATING 和 MOVED"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/usr/ports/UPDATING"
-msgstr ""
+msgstr "/usr/ports/UPDATING"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:224
+#, fuzzy
 msgid ""
 "If upgrading the port requires special steps like changing configuration "
 "files or running a specific program, it must be documented in this file.  "
 "The format of an entry in this file is:"
-msgstr ""
+msgstr "如果升级 Port 需要特殊步骤，例如更改配置文件或运行特定程序，就必须在此文件中记录。该文件条目的格式如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "YYYYMMDD:\n"
 "  AFFECTS: users of portcategory/portname\n"
 "  AUTHOR: the name <the email address>\n"
-msgstr ""
+msgstr "YYYYMMDD:\n  AFFECTS: users of portcategory/portname\n  AUTHOR: the name <the email address>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  Special instructions\n"
-msgstr ""
+msgstr "  Special instructions\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:239
+#, fuzzy
 msgid ""
 "When including exact portmaster, portupgrade, and/or pkg instructions, "
 "please make sure to get the shell escaping right.  For example, do _not_ use:"
-msgstr ""
+msgstr "如果要提供 portmaster、portupgrade 和／或 pkg 的精确命令，请确保正确处理 shell 转义。例如，__不要__使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg delete -g -f docbook-xml* docbook-sk* docbook[2345]??-* docbook-4*\n"
-msgstr ""
+msgstr "# pkg delete -g -f docbook-xml* docbook-sk* docbook[2345]??-* docbook-4*\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:247
+#, fuzzy
 msgid ""
 "As shown, the command will only work with bourne shells.  Instead, use the "
 "form shown below, which will work with both bourne shell and c-shell:"
-msgstr ""
+msgstr "如示例所示，该命令只适用于 Bourne shell。请改用下面的形式，它同时适用于 Bourne shell 和 C shell："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg delete -g -f docbook-xml\\* docbook-sk\\* docbook\\[2345\\]\\?\\?-\\* docbook-4\\*\n"
-msgstr ""
+msgstr "# pkg delete -g -f docbook-xml\\* docbook-sk\\* docbook\\[2345\\]\\?\\?-\\* docbook-4\\*\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:259
+#, fuzzy
 msgid ""
 "It is recommended that the AFFECTS line contains a glob matching all the "
 "ports affected by the entry so that automated tools can parse it as easily "
 "as possible.  If an update concerns all the existing BIND 9 versions the "
 "`AFFECTS` content must be `users of dns/bind9*`, it must _not_ be `users of "
 "BIND 9`"
-msgstr ""
+msgstr "建议 AFFECTS 行包含一个 glob，匹配该条目影响的所有 Port，以便自动化工具尽可能轻松地解析。如果更新涉及所有现有的 BIND 9 版本，`AFFECTS` 内容必须为 `users of dns/bind9*`，__不能__写成 `users of BIND 9`"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/usr/ports/MOVED"
-msgstr ""
+msgstr "/usr/ports/MOVED"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:268
+#, fuzzy
 msgid ""
 "This file is used to list moved or removed ports.  Each line in the file is "
 "made up of the name of the port, where the port was moved, when, and why.  "
 "If the port was removed, the section detailing where it was moved can be "
 "left blank.  Each section must be separated by the `|` (pipe) character, "
 "like so:"
-msgstr ""
+msgstr "此文件用于列出已移动或删除的 Port。文件中的每一行包含 Port 名称、移动到的位置、移动时间和原因。如果 Port 已被删除，可以将移动位置部分留空。各部分必须使用 `|`（竖线）字符分隔，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "old name|new name (blank for deleted)|date of move|reason\n"
-msgstr ""
+msgstr "old name|new name (blank for deleted)|date of move|reason\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:276
+#, fuzzy
 msgid ""
 "The date must be entered in the form `YYYY-MM-DD`.  New entries are added to "
 "the end of the list to keep it in chronological order, with the oldest entry "
 "at the top of the list."
-msgstr ""
+msgstr "日期必须采用 `YYYY-MM-DD` 格式。为保持时间顺序，新条目应添加到列表末尾，最旧的条目位于列表顶部。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:278
+#, fuzzy
 msgid ""
 "If a port was removed but has since been restored, delete the line in this "
 "file that states that it was removed."
-msgstr ""
+msgstr "如果某个 Port 已删除但后来恢复，请删除此文件中说明其已删除的那一行。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:280
+#, fuzzy
 msgid ""
 "If a port was renamed and then renamed back to its original name, add a new "
 "one with the intermediate name to the old name, and remove the old entry as "
 "to not create a loop."
-msgstr ""
+msgstr "如果某个 Port 重命名后又改回原名，请添加一条新记录，将中间名称指向原名称，并删除旧记录，以免形成循环。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:284
+#, fuzzy
 msgid "Any changes must be validated with `Tools/scripts/MOVEDlint.awk`."
-msgstr ""
+msgstr "所有更改都必须使用 `Tools/scripts/MOVEDlint.awk` 验证。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:286
+#, fuzzy
 msgid "If using a ports directory other than [.filename]#/usr/ports#, use:"
-msgstr ""
+msgstr "如果使用的 ports 目录不是 [.filename]#/usr/ports#，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/upgrading/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd /home/user/ports\n"
 "% env PORTSDIR=$PWD Tools/scripts/MOVEDlint.awk\n"
-msgstr ""
+msgstr "% cd /home/user/ports\n% env PORTSDIR=$PWD Tools/scripts/MOVEDlint.awk\n"

@@ -17,346 +17,398 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Order of Variables in FreeBSD Port Makefiles"
-msgstr ""
+msgstr "FreeBSD Port Makefile 中变量的顺序"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 15. Order of Variables in Port Makefiles"
-msgstr ""
+msgstr "第 15 章：Port Makefile 中变量的顺序"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Order of Variables in Port Makefiles"
-msgstr ""
+msgstr "Port Makefile 中变量的顺序"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:52
+#, fuzzy
 msgid ""
 "The first sections of the [.filename]#Makefile# must always come in the same "
 "order.  This standard makes it so everyone can easily read any port without "
 "having to search for variables in a random order."
-msgstr ""
+msgstr "[.filename]#Makefile# 的前几个部分必须始终按相同顺序排列。这样，每个人都能轻松阅读任意 Port，而不必按随机顺序查找变量。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:57
+#, fuzzy
 msgid ""
 "The sections and variables described here are mandatory in a ordinary port.  "
 "In a slave port, many sections and variables can be skipped."
-msgstr ""
+msgstr "此处介绍的部分和变量在普通 Port 中是必需的。在从属 Port 中，可以省略许多部分和变量。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:62
+#, fuzzy
 msgid ""
 "Each following block must be separated from the previous block by a single "
 "blank line."
-msgstr ""
+msgstr "每个后续代码块与前一个代码块之间必须用一个空行隔开。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:65
+#, fuzzy
 msgid ""
 "In the following blocks, only set the variables that are required by the "
 "port.  Define these variables in the order they are shown here."
-msgstr ""
+msgstr "在以下代码块中，只设置 Port 所需的变量。按此处所示的顺序定义这些变量。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PORTNAME` Block"
-msgstr ""
+msgstr "`PORTNAME` 代码块"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:72
+#, fuzzy
 msgid ""
 "This block is the most important. It defines the port name, version, "
 "distribution file location, and category.  The variables must be in this "
 "order:"
-msgstr ""
+msgstr "这是最重要的代码块。它定义 Port 名称、版本、发行文件位置和类别。变量必须按以下顺序排列："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:76
+#, fuzzy
 msgid ""
 "crossref:makefiles[makefile-portname,`PORTNAME`] * crossref:"
 "makefiles[makefile-versions,`PORTVERSION`][crossref:order[portversion-"
 "footnote, 1]]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-portname,`PORTNAME`] * crossref:makefiles[makefile-versions,`PORTVERSION`][crossref:order[portversion-footnote, 1]]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:79
+#, fuzzy
 msgid ""
 "crossref:makefiles[makefile-versions,`DISTVERSIONPREFIX`] * crossref:"
 "makefiles[makefile-versions,`DISTVERSION`][crossref:order[portversion-"
 "footnote, 1]]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-versions,`DISTVERSIONPREFIX`] * crossref:makefiles[makefile-versions,`DISTVERSION`][crossref:order[portversion-footnote, 1]]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:80
+#, fuzzy
 msgid "crossref:makefiles[makefile-versions,`DISTVERSIONSUFFIX`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-versions,`DISTVERSIONSUFFIX`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:81
+#, fuzzy
 msgid "crossref:makefiles[makefile-portrevision,`PORTREVISION`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-portrevision,`PORTREVISION`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:82
+#, fuzzy
 msgid "crossref:makefiles[makefile-portepoch,`PORTEPOCH`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-portepoch,`PORTEPOCH`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:83
+#, fuzzy
 msgid "crossref:makefiles[makefile-categories,`CATEGORIES`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-categories,`CATEGORIES`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:84
+#, fuzzy
 msgid "crossref:makefiles[makefile-master_sites,`MASTER_SITES`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-master_sites,`MASTER_SITES`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:85
+#, fuzzy
 msgid ""
 "crossref:makefiles[makefile-master_sites-shorthand,`MASTER_SITE_SUBDIR`] "
 "(deprecated)"
-msgstr ""
+msgstr "crossref:makefiles[makefile-master_sites-shorthand,`MASTER_SITE_SUBDIR`]（已弃用）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:86
+#, fuzzy
 msgid "crossref:makefiles[porting-pkgnameprefix-suffix,`PKGNAMEPREFIX`]"
-msgstr ""
+msgstr "crossref:makefiles[porting-pkgnameprefix-suffix,`PKGNAMEPREFIX`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:87
+#, fuzzy
 msgid "crossref:makefiles[porting-pkgnameprefix-suffix,`PKGNAMESUFFIX`]"
-msgstr ""
+msgstr "crossref:makefiles[porting-pkgnameprefix-suffix,`PKGNAMESUFFIX`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:88
+#, fuzzy
 msgid "crossref:makefiles[makefile-distname,`DISTNAME`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-distname,`DISTNAME`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:89
+#, fuzzy
 msgid "crossref:makefiles[makefile-extract_sufx,`EXTRACT_SUFX`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-extract_sufx,`EXTRACT_SUFX`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:90
+#, fuzzy
 msgid "crossref:makefiles[makefile-distfiles-definition,`DISTFILES`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-distfiles-definition,`DISTFILES`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:91
+#, fuzzy
 msgid "crossref:makefiles[makefile-dist_subdir,`DIST_SUBDIR`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-dist_subdir,`DIST_SUBDIR`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:92
+#, fuzzy
 msgid "crossref:makefiles[makefile-extract_only,`EXTRACT_ONLY`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-extract_only,`EXTRACT_ONLY`]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:97
+#, fuzzy
 msgid "Only one of PORTVERSION and DISTVERSION can be used."
-msgstr ""
+msgstr "`PORTVERSION` 和 `DISTVERSION` 只能使用其中一个。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PATCHFILES` Block"
-msgstr ""
+msgstr "`PATCHFILES` 代码块"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:104
+#, fuzzy
 msgid "This block is optional.  The variables are:"
-msgstr ""
+msgstr "此代码块是可选的。变量如下："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:106
+#, fuzzy
 msgid "crossref:makefiles[porting-patchfiles,`PATCH_SITES`]"
-msgstr ""
+msgstr "crossref:makefiles[porting-patchfiles,`PATCH_SITES`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:107
+#, fuzzy
 msgid "crossref:makefiles[porting-patchfiles,`PATCHFILES`]"
-msgstr ""
+msgstr "crossref:makefiles[porting-patchfiles,`PATCHFILES`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:108
+#, fuzzy
 msgid "crossref:makefiles[porting-patchfiles,`PATCH_DIST_STRIP`]"
-msgstr ""
+msgstr "crossref:makefiles[porting-patchfiles,`PATCH_DIST_STRIP`]"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`MAINTAINER` Block"
-msgstr ""
+msgstr "`MAINTAINER` 代码块"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:114
+#, fuzzy
 msgid "This block is mandatory.  The variables are:"
-msgstr ""
+msgstr "此代码块是必需的。变量如下："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:116
+#, fuzzy
 msgid "crossref:makefiles[makefile-maintainer,`MAINTAINER`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-maintainer,`MAINTAINER`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:117
+#, fuzzy
 msgid "crossref:makefiles[makefile-comment,`COMMENT`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-comment,`COMMENT`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:118
+#, fuzzy
 msgid "crossref:makefiles[makefile-www,`WWW`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-www,`WWW`]"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`LICENSE` Block"
-msgstr ""
+msgstr "`LICENSE` 代码块"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:124
+#, fuzzy
 msgid ""
 "This block is optional, although it is highly recommended.  The variables "
 "are:"
-msgstr ""
+msgstr "此代码块是可选的，但强烈建议使用。变量如下："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:126
+#, fuzzy
 msgid "crossref:makefiles[licenses-license,`LICENSE`]"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license,`LICENSE`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:127
+#, fuzzy
 msgid "crossref:makefiles[licenses-license_comb,`LICENSE_COMB`]"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_comb,`LICENSE_COMB`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:128
+#, fuzzy
 msgid ""
 "crossref:makefiles[licenses-license_groups,`LICENSE_GROUPS`] or "
 "`LICENSE_GROUPS_NAME`"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_groups,`LICENSE_GROUPS`] 或 `LICENSE_GROUPS_NAME`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:129
+#, fuzzy
 msgid ""
 "crossref:makefiles[licenses-license_name,`LICENSE_NAME`] or "
 "`LICENSE_NAME_NAME`"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_name,`LICENSE_NAME`] 或 `LICENSE_NAME_NAME`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:130
+#, fuzzy
 msgid ""
 "crossref:makefiles[licenses-license_text,`LICENSE_TEXT`] or "
 "`LICENSE_TEXT_NAME`"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_text,`LICENSE_TEXT`] 或 `LICENSE_TEXT_NAME`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:131
+#, fuzzy
 msgid ""
 "crossref:makefiles[licenses-license_file,`LICENSE_FILE`] or "
 "`LICENSE_FILE_NAME`"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_file,`LICENSE_FILE`] 或 `LICENSE_FILE_NAME`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:132
+#, fuzzy
 msgid ""
 "crossref:makefiles[licenses-license_perms,`LICENSE_PERMS`] or "
 "`LICENSE_PERMS_NAME_`"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_perms,`LICENSE_PERMS`] 或 `LICENSE_PERMS_NAME_`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:133
+#, fuzzy
 msgid ""
 "crossref:makefiles[licenses-license_distfiles,`LICENSE_DISTFILES`] or "
 "`LICENSE_DISTFILES_NAME`"
-msgstr ""
+msgstr "crossref:makefiles[licenses-license_distfiles,`LICENSE_DISTFILES`] 或 `LICENSE_DISTFILES_NAME`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:135
+#, fuzzy
 msgid ""
 "If there are multiple licenses, sort the different LICENSE_VAR_NAME "
 "variables by license name."
-msgstr ""
+msgstr "如果有多个许可证，请按许可证名称对不同的 LICENSE_VAR_NAME 变量排序。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Generic `BROKEN`/`IGNORE`/`DEPRECATED` Messages"
-msgstr ""
+msgstr "通用 `BROKEN`/`IGNORE`/`DEPRECATED` 消息"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:140
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:170
+#, fuzzy
 msgid "This block is optional. The variables are:"
-msgstr ""
+msgstr "此代码块是可选的。变量如下："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:142
+#, fuzzy
 msgid "crossref:porting-dads[dads-deprecated,`DEPRECATED`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-deprecated,`DEPRECATED`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:143
+#, fuzzy
 msgid "crossref:porting-dads[dads-deprecated,`EXPIRATION_DATE`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-deprecated,`EXPIRATION_DATE`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:144
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`FORBIDDEN`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`FORBIDDEN`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:145
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`BROKEN`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`BROKEN`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:146
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`BROKEN_*`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`BROKEN_*`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:147
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`IGNORE`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`IGNORE`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:148
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`IGNORE_*`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`IGNORE_*`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:149
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`ONLY_FOR_ARCHS`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`ONLY_FOR_ARCHS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:150
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`ONLY_FOR_ARCHS_REASON*`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`ONLY_FOR_ARCHS_REASON*`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:151
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`NOT_FOR_ARCHS`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`NOT_FOR_ARCHS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:152
+#, fuzzy
 msgid "crossref:porting-dads[dads-noinstall,`NOT_FOR_ARCHS_REASON*`]"
-msgstr ""
+msgstr "crossref:porting-dads[dads-noinstall,`NOT_FOR_ARCHS_REASON*`]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:159
+#, fuzzy
 msgid ""
 "`BROKEN_*` and `IGNORE_*` can be any generic variables, for example, "
 "`IGNORE_amd64`, `BROKEN_FreeBSD_10`, etc.  With the exception of variables "
@@ -364,148 +416,165 @@ msgid ""
 "order[porting-order-uses, `USES` and `USE_x`].  For instance, "
 "`IGNORE_WITH_PHP` only works if crossref:uses[uses-php,`php`] is set, and "
 "`BROKEN_SSL` only if crossref:uses[uses-ssl,`ssl`] is set."
-msgstr ""
+msgstr "`BROKEN_*` 和 `IGNORE_*` 可以是任何通用变量，例如 `IGNORE_amd64`、`BROKEN_FreeBSD_10` 等。依赖 crossref:uses[uses,`USES`] 的变量除外，这些变量应放在 crossref:order[porting-order-uses, `USES` and `USE_x`] 中。例如，只有设置了 crossref:uses[uses-php,`php`]，`IGNORE_WITH_PHP` 才会生效；只有设置了 crossref:uses[uses-ssl,`ssl`]，`BROKEN_SSL` 才会生效。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:164
+#, fuzzy
 msgid ""
 "If the port is marked BROKEN when some conditions are met, and such "
 "conditions can only be tested after including [.filename]#bsd.port.options."
 "mk# or [.filename]#bsd.port.pre.mk#, then those variables should be set "
 "later, in crossref:order[porting-order-rest, The Rest of the Variables]."
-msgstr ""
+msgstr "如果 Port 在满足某些条件时标记为 BROKEN，而这些条件只有在包含 [.filename]#bsd.port.options.mk# 或 [.filename]#bsd.port.pre.mk# 后才能检测，那么应在稍后的 crossref:order[porting-order-rest, The Rest of the Variables] 中设置这些变量。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Dependencies Block"
-msgstr ""
+msgstr "依赖项代码块"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:172
+#, fuzzy
 msgid "crossref:makefiles[makefile-fetch_depends,`FETCH_DEPENDS`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-fetch_depends,`FETCH_DEPENDS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:173
+#, fuzzy
 msgid "crossref:makefiles[makefile-extract_depends,`EXTRACT_DEPENDS`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-extract_depends,`EXTRACT_DEPENDS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:174
+#, fuzzy
 msgid "crossref:makefiles[makefile-patch_depends,`PATCH_DEPENDS`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-patch_depends,`PATCH_DEPENDS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:175
+#, fuzzy
 msgid "crossref:makefiles[makefile-build_depends,`BUILD_DEPENDS`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-build_depends,`BUILD_DEPENDS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:176
+#, fuzzy
 msgid "crossref:makefiles[makefile-lib_depends,`LIB_DEPENDS`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-lib_depends,`LIB_DEPENDS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:177
+#, fuzzy
 msgid "crossref:makefiles[makefile-run_depends,`RUN_DEPENDS`]"
-msgstr ""
+msgstr "crossref:makefiles[makefile-run_depends,`RUN_DEPENDS`]"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:178
+#, fuzzy
 msgid "`TEST_DEPENDS`"
-msgstr ""
+msgstr "`TEST_DEPENDS`"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flavors"
-msgstr ""
+msgstr "Flavors"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:183
+#, fuzzy
 msgid "This block is optional."
-msgstr ""
+msgstr "此代码块是可选的。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:187
+#, fuzzy
 msgid ""
 "Start this section with defining `FLAVORS`.  Continue with the possible "
 "Flavors helpers.  See crossref:flavors[flavors-using,Using FLAVORS] for more "
 "Information."
-msgstr ""
+msgstr "首先在本节定义 `FLAVORS`，然后定义可能使用的 Flavors 辅助变量。更多信息请参见 crossref:flavors[flavors-using,Using FLAVORS]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:189
+#, fuzzy
 msgid ""
 "Constructs setting variables not available as helpers using `.if ${FLAVOR:U} "
 "== foo` should go in their respective sections below."
-msgstr ""
+msgstr "使用 `.if ${FLAVOR:U} == foo` 设置无法通过辅助变量设置的变量的结构，应放在下文相应的部分中。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USES` and `USE_x`"
-msgstr ""
+msgstr "`USES` 和 `USE_x`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:194
+#, fuzzy
 msgid "Start this section with defining `USES`, and then possible `USE_x`."
-msgstr ""
+msgstr "首先在本节定义 `USES`，然后定义可能使用的 `USE_x`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:197
+#, fuzzy
 msgid ""
 "Keep related variables close together.  For example, if using crossref:"
 "makefiles[makefile-master_sites-github,`USE_GITHUB`], always put the `GH_*` "
 "variables right after it."
-msgstr ""
+msgstr "将相关变量放在一起。例如，如果使用 crossref:makefiles[makefile-master_sites-github,`USE_GITHUB`]，请始终将 `GH_*` 变量紧跟在它后面。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Standard bsd.port.mk Variables"
-msgstr ""
+msgstr "标准 bsd.port.mk 变量"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:202
+#, fuzzy
 msgid ""
 "This section block is for variables that can be defined in [.filename]#bsd."
 "port.mk# that do not belong in any of the previous section blocks."
-msgstr ""
+msgstr "此部分用于定义可在 [.filename]#bsd.port.mk# 中设置、但不属于前面任何代码块的变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:207
+#, fuzzy
 msgid ""
 "Order is not important, however try to keep similar variables together.  For "
 "example uid and gid variables `USERS` and `GROUPS`.  Configuration variables "
 "`CONFIGURE_*` and `*_CONFIGURE`.  List of files, and directories `PORTDOCS` "
 "and `PORTEXAMPLES`."
-msgstr ""
+msgstr "顺序并不重要，但应尽量将相似的变量放在一起。例如，将用户和组变量 `USERS` 与 `GROUPS` 放在一起；将配置变量 `CONFIGURE_*` 与 `*_CONFIGURE` 放在一起；将文件和目录列表变量 `PORTDOCS` 与 `PORTEXAMPLES` 放在一起。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Options and Helpers"
-msgstr ""
+msgstr "选项和辅助变量"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:214
+#, fuzzy
 msgid ""
 "If the port uses the crossref:makefiles[makefile-options,options framework], "
 "define `OPTIONS_DEFINE` and `OPTIONS_DEFAULT` first, then the other "
 "`OPTIONS_*` variables first, then the `*_DESC` descriptions, then the "
 "options helpers.  Try and sort all of those alphabetically."
-msgstr ""
+msgstr "如果 Port 使用 crossref:makefiles[makefile-options,options framework]，请先定义 `OPTIONS_DEFINE` 和 `OPTIONS_DEFAULT`，再定义其他 `OPTIONS_*` 变量，然后定义 `*_DESC` 描述，最后定义选项辅助变量。尽量按字母顺序排列这些变量。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Options Variables Order Example"
-msgstr ""
+msgstr "选项变量顺序示例"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:223
+#, fuzzy
 msgid ""
 "The `FOO` and `BAR` options do not have a standard description, so one need "
 "to be written.  The other options already have one in [.filename]#Mk/bsd."
@@ -513,153 +582,163 @@ msgid ""
 "use target helpers to install their files, they are shown here for "
 "completeness, though they belong in crossref:order[porting-order-targets, "
 "The Targets], so other variables and targets could be inserted before them."
-msgstr ""
+msgstr "`FOO` 和 `BAR` 选项没有标准描述，因此需要自行编写。其他选项在 [.filename]#Mk/bsd.options.desc.mk# 中已有描述，无需另行编写。`DOCS` 和 `EXAMPLES` 使用目标辅助变量来安装文件；此处列出它们是为了完整起见，但它们应放在 crossref:order[porting-order-targets, The Targets] 中，因此可以在它们之前插入其他变量和目标。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "OPTIONS_DEFINE=\tDOCS EXAMPLES FOO BAR\n"
 "OPTIONS_DEFAULT=\tFOO\n"
 "OPTIONS_RADIO=\tSSL\n"
 "OPTIONS_RADIO_SSL=    OPENSSL GNUTLS\n"
 "OPTIONS_SUB=\tyes\n"
-msgstr ""
+msgstr "OPTIONS_DEFINE=\tDOCS EXAMPLES FOO BAR\nOPTIONS_DEFAULT=\tFOO\nOPTIONS_RADIO=\tSSL\nOPTIONS_RADIO_SSL=    OPENSSL GNUTLS\nOPTIONS_SUB=\tyes\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "BAR_DESC=\t\tEnable bar support\n"
 "FOO_DESC=\t\tEnable foo support\n"
-msgstr ""
+msgstr "BAR_DESC=\t\tEnable bar support\nFOO_DESC=\t\tEnable foo support\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "BAR_CONFIGURE_WITH=\tbar=${LOCALBASE}\n"
 "FOO_CONFIGURE_ENABLE=\tfoo\n"
 "GNUTLS_CONFIGURE_ON=\t--with-ssl=gnutls\n"
 "OPENSSL_CONFIGURE_ON=\t--with-ssl=openssl\n"
-msgstr ""
+msgstr "BAR_CONFIGURE_WITH=\tbar=${LOCALBASE}\nFOO_CONFIGURE_ENABLE=\tfoo\nGNUTLS_CONFIGURE_ON=\t--with-ssl=gnutls\nOPENSSL_CONFIGURE_ON=\t--with-ssl=openssl\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install-DOCS-on:\n"
 "      ${MKDIR} ${STAGEDIR}${DOCSDIR}\n"
 "      cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}\n"
-msgstr ""
+msgstr "post-install-DOCS-on:\n      ${MKDIR} ${STAGEDIR}${DOCSDIR}\n      cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install-EXAMPLES-on:\n"
 "      ${MKDIR} ${STAGEDIR}${EXAMPLESDIR}\n"
 "      cd ${WRKSRC}/ex && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}\n"
-msgstr ""
+msgstr "post-install-EXAMPLES-on:\n      ${MKDIR} ${STAGEDIR}${EXAMPLESDIR}\n      cd ${WRKSRC}/ex && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:252
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Rest of the Variables"
-msgstr ""
+msgstr "其余变量"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:255
+#, fuzzy
 msgid ""
 "And then, the rest of the variables that are not mentioned in the previous "
 "blocks."
-msgstr ""
+msgstr "然后列出前面代码块中未提及的其余变量。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Targets"
-msgstr ""
+msgstr "目标"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:261
+#, fuzzy
 msgid ""
 "After all the variables are defined, the optional man:make[1] targets can be "
 "defined.  Keep `pre-*` before `post-*` and in the same order as the "
 "different stages run:"
-msgstr ""
+msgstr "定义完所有变量后，可以定义可选的 man:make[1] 目标。按不同阶段的执行顺序排列，并将 `pre-*` 放在对应的 `post-*` 之前："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:263
+#, fuzzy
 msgid "`fetch`"
-msgstr ""
+msgstr "`fetch`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:264
+#, fuzzy
 msgid "`extract`"
-msgstr ""
+msgstr "`extract`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:265
+#, fuzzy
 msgid "`patch`"
-msgstr ""
+msgstr "`patch`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:266
+#, fuzzy
 msgid "`configure`"
-msgstr ""
+msgstr "`configure`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:267
+#, fuzzy
 msgid "`build`"
-msgstr ""
+msgstr "`build`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:268
+#, fuzzy
 msgid "`install`"
-msgstr ""
+msgstr "`install`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:269
+#, fuzzy
 msgid "`test`"
-msgstr ""
+msgstr "`test`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:274
+#, fuzzy
 msgid ""
 "When using options helpers target keep them alphabetically sorted, but keep "
 "the `*-on` before the `*-off`.  When also using the main target, keep the "
 "main target before the optional ones:"
-msgstr ""
+msgstr "使用选项辅助目标时，请按字母顺序排列，但要将 `*-on` 放在 `*-off` 之前。如果还使用主目标，请将主目标放在可选目标之前："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install:\n"
 "\t# install generic bits\n"
-msgstr ""
+msgstr "post-install:\n\t# 安装通用组件\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install-DOCS-on:\n"
 "\t# Install documentation\n"
-msgstr ""
+msgstr "post-install-DOCS-on:\n\t# 安装文档\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install-X11-on:\n"
 "\t# Install X11 related bits\n"
-msgstr ""
+msgstr "post-install-X11-on:\n\t# 安装与 X11 相关的组件\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/order/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install-X11-off:\n"
 "\t# Install bits that should be there if X11 is disabled\n"
-msgstr ""
+msgstr "post-install-X11-off:\n\t# 安装禁用 X11 时应存在的组件\n"

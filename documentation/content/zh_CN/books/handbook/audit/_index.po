@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/audit/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD security event auditing supports reliable, fine-grained, and configurable logging of a variety of security-relevant system events, including logins, configuration changes, and file and network access"
-msgstr ""
+msgstr "FreeBSD 安全事件审计支持可靠、细粒度且可配置的日志记录，涵盖各种与安全相关的系统事件，包括登录、配置更改以及文件和网络访问"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/audit/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/audit/_index.adoc:1
@@ -50,6 +50,7 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:58
+#, fuzzy
 msgid ""
 "The FreeBSD operating system includes support for security event auditing.  "
 "Event auditing supports reliable, fine-grained, and configurable logging of "
@@ -59,7 +60,7 @@ msgid ""
 "postmortem analysis.  FreeBSD implements Sun(TM)'s published Basic Security "
 "Module (BSM) Application Programming Interface (API) and file format, and is "
 "interoperable with the Solaris(TM) and Mac OS(R) X audit implementations."
-msgstr ""
+msgstr "FreeBSD 操作系统支持安全事件审计。事件审计支持可靠、细粒度且可配置的日志记录，涵盖各种与安全相关的系统事件，包括登录、配置更改以及文件和网络访问。这些日志记录对于实时系统监控、入侵检测和事后分析都极具价值。FreeBSD 实现了 Sun(TM) 发布的基本安全模块（BSM）应用程序编程接口（API）和文件格式，并与 Solaris(TM) 和 Mac OS(R) X 的审计实现兼容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:61
@@ -108,24 +109,27 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:71
+#, fuzzy
 msgid ""
 "Understand UNIX(R) and FreeBSD basics (crossref:basics[basics,FreeBSD "
 "Basics])."
-msgstr ""
+msgstr "了解 UNIX(R) 和 FreeBSD 的基础知识（crossref:basics[basics,FreeBSD 基础知识]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:72
+#, fuzzy
 msgid ""
 "Be familiar with the basics of kernel configuration/compilation (crossref:"
 "kernelconfig[kernelconfig,Configuring the FreeBSD Kernel])."
-msgstr ""
+msgstr "熟悉内核配置和编译的基础知识（crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:73
+#, fuzzy
 msgid ""
 "Have some familiarity with security and how it pertains to FreeBSD (crossref:"
 "security[security,Security])."
-msgstr ""
+msgstr "对安全及其与 FreeBSD 的关系有所了解（crossref:security[security,安全]）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:78
@@ -172,6 +176,7 @@ msgstr "本章中的一些关键术语："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:91
+#, fuzzy
 msgid ""
 "_event_: an auditable event is any event that can be logged using the audit "
 "subsystem. Examples of security-relevant events include the creation of a "
@@ -180,24 +185,26 @@ msgid ""
 "user, or \"non-attributable\". Examples of non-attributable events are any "
 "events that occur before authentication in the login process, such as bad "
 "password attempts."
-msgstr ""
+msgstr "__事件__：可审计事件是指任何可以使用审计子系统记录的事件。与安全相关的事件示例包括创建文件、建立网络连接或用户登录。事件分为“可归因”和“不可归因”两类；可归因事件可以追溯到经过身份验证的用户。不可归因事件的示例包括登录过程中身份验证前发生的事件，例如密码错误的尝试。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:92
+#, fuzzy
 msgid ""
 "_class_: a named set of related events which are used in selection "
 "expressions. Commonly used classes of events include \"file creation\" (fc), "
 "\"exec\" (ex), and \"login_logout\" (lo)."
-msgstr ""
+msgstr "__类别__：一组相关事件的命名集合，用于选择表达式。常见的事件类别包括“文件创建”（fc）、“执行”（ex）和“登录_注销”（lo）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:93
+#, fuzzy
 msgid ""
 "_record_: an audit log entry describing a security event. Records contain a "
 "record event type, information on the subject (user) performing the action, "
 "date and time information, information on any objects or arguments, and a "
 "success or failure condition."
-msgstr ""
+msgstr "__记录__：描述安全事件的审计日志条目。记录包含事件类型、执行操作的主体（用户）信息、日期和时间信息、对象或参数信息，以及成功或失败状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:94
@@ -214,10 +221,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:95
+#, fuzzy
 msgid ""
 "_selection expression_: a string containing a list of prefixes and audit "
 "event class names used to match events."
-msgstr ""
+msgstr "__选择表达式__：包含前缀和审计事件类别名称列表的字符串，用于匹配事件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:96
@@ -260,12 +268,13 @@ msgstr "对审计进行配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:103
+#, fuzzy
 msgid ""
 "User space support for event auditing is installed as part of the base "
 "FreeBSD operating system.  Kernel support is available in the [."
 "filename]#GENERIC# kernel by default, and man:auditd[8] can be enabled by "
 "adding the following line to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "事件审计的用户空间支持已作为 FreeBSD 基本操作系统的一部分安装。默认情况下，[.filename]#GENERIC# 内核提供内核支持；在 [.filename]#/etc/rc.conf# 中添加以下行即可启用 man:auditd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:107
@@ -280,9 +289,9 @@ msgstr "在后台启动审计程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service auditd start\n"
-msgstr ""
+msgstr "# service auditd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:117
@@ -328,10 +337,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:130
+#, fuzzy
 msgid ""
 "crossref:audit[event-selection,Default Audit Event Classes] summarizes the "
 "default audit event classes:"
-msgstr ""
+msgstr "crossref:audit[event-selection,默认审计事件类别]汇总了默认审计事件类别："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/audit/_index.adoc:132
@@ -341,371 +351,371 @@ msgstr "默认审计类别"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Class Name"
-msgstr ""
+msgstr "类别名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:139
 #: documentation/content/en/books/handbook/audit/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Action"
-msgstr ""
+msgstr "操作"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:140
 #: documentation/content/en/books/handbook/audit/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "all"
-msgstr ""
+msgstr "all"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Match all event classes."
-msgstr ""
+msgstr "匹配所有事件类别。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "aa"
-msgstr ""
+msgstr "aa"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "authentication and authorization"
-msgstr ""
+msgstr "身份验证和授权"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ad"
-msgstr ""
+msgstr "ad"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "administrative"
-msgstr ""
+msgstr "管理"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Administrative actions performed on the system as a whole."
-msgstr ""
+msgstr "对整个系统执行的管理操作。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ap"
-msgstr ""
+msgstr "ap"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "application"
-msgstr ""
+msgstr "应用程序"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Application defined action."
-msgstr ""
+msgstr "应用程序定义的操作。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "cl"
-msgstr ""
+msgstr "cl"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file close"
-msgstr ""
+msgstr "文件关闭"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit calls to the `close` system call."
-msgstr ""
+msgstr "审计对 `close` 系统调用的调用。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ex"
-msgstr ""
+msgstr "ex"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "exec"
-msgstr ""
+msgstr "执行"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit program execution. Auditing of command line arguments and environmental variables is controlled via man:audit_control[5] using the `argv` and `envv` parameters to the `policy` setting."
-msgstr ""
+msgstr "审计程序执行。命令行参数和环境变量的审计由 man:audit_control[5] 控制，方法是在 `policy` 设置中使用 `argv` 和 `envv` 参数。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fa"
-msgstr ""
+msgstr "fa"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file attribute access"
-msgstr ""
+msgstr "文件属性访问"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit the access of object attributes such as man:stat[1] and man:pathconf[2]."
-msgstr ""
+msgstr "审计对对象属性的访问，例如 man:stat[1] 和 man:pathconf[2]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fc"
-msgstr ""
+msgstr "fc"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file create"
-msgstr ""
+msgstr "文件创建"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit events where a file is created as a result."
-msgstr ""
+msgstr "审计会导致创建文件的事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fd"
-msgstr ""
+msgstr "fd"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file delete"
-msgstr ""
+msgstr "文件删除"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit events where file deletion occurs."
-msgstr ""
+msgstr "审计发生文件删除的事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fm"
-msgstr ""
+msgstr "fm"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file attribute modify"
-msgstr ""
+msgstr "文件属性修改"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit events where file attribute modification occurs, such as by man:chown[8], man:chflags[1], and man:flock[2]."
-msgstr ""
+msgstr "审计发生文件属性修改的事件，例如通过 man:chown[8]、man:chflags[1] 和 man:flock[2] 进行的修改。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fr"
-msgstr ""
+msgstr "fr"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file read"
-msgstr ""
+msgstr "文件读取"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit events in which data is read or files are opened for reading."
-msgstr ""
+msgstr "审计读取数据或以读取方式打开文件的事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fw"
-msgstr ""
+msgstr "fw"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file write"
-msgstr ""
+msgstr "文件写入"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit events in which data is written or files are written or modified."
-msgstr ""
+msgstr "审计写入数据或写入、修改文件的事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "io"
-msgstr ""
+msgstr "io"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ioctl"
-msgstr ""
+msgstr "ioctl"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit use of the `ioctl` system call."
-msgstr ""
+msgstr "审计对 `ioctl` 系统调用的使用。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ip"
-msgstr ""
+msgstr "ip"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ipc"
-msgstr ""
+msgstr "进程间通信"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit various forms of Inter-Process Communication, including POSIX pipes and System V IPC operations."
-msgstr ""
+msgstr "审计各种形式的进程间通信，包括 POSIX 管道和 System V IPC 操作。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lo"
-msgstr ""
+msgstr "lo"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "login_logout"
-msgstr ""
+msgstr "登录_注销"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit man:login[1] and man:logout[1] events."
-msgstr ""
+msgstr "审计 man:login[1] 和 man:logout[1] 事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "na"
-msgstr ""
+msgstr "na"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "non attributable"
-msgstr ""
+msgstr "不可归因"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit non-attributable events."
-msgstr ""
+msgstr "审计不可归因事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "no"
-msgstr ""
+msgstr "no"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "invalid class"
-msgstr ""
+msgstr "无效类别"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Match no audit events."
-msgstr ""
+msgstr "不匹配任何审计事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "nt"
-msgstr ""
+msgstr "nt"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "network"
-msgstr ""
+msgstr "网络"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit events related to network actions such as man:connect[2] and man:accept[2]."
-msgstr ""
+msgstr "审计与网络操作相关的事件，例如 man:connect[2] 和 man:accept[2]。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ot"
-msgstr ""
+msgstr "ot"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "other"
-msgstr ""
+msgstr "其他"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit miscellaneous events."
-msgstr ""
+msgstr "审计杂项事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pc"
-msgstr ""
+msgstr "pc"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "process"
-msgstr ""
+msgstr "进程"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit process operations such as man:exec[3] and man:exit[3]."
-msgstr ""
+msgstr "审计进程操作，例如 man:exec[3] 和 man:exit[3]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:221
@@ -719,12 +729,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:224
+#, fuzzy
 msgid ""
 "Each audit event class may be combined with a prefix indicating whether "
 "successful/failed operations are matched, and whether the entry is adding or "
 "removing matching for the class and type.  crossref:audit[event-prefixes,"
 "Prefixes for Audit Event Classes] summarizes the available prefixes:"
-msgstr ""
+msgstr "每个审计事件类别都可以与一个前缀组合，以指示匹配成功或失败的操作，以及对该类别和类型添加还是移除匹配规则。crossref:audit[event-prefixes,审计事件类别的前缀]汇总了可用前缀："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/audit/_index.adoc:226
@@ -734,69 +745,69 @@ msgstr "审计类的前缀"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Prefix"
-msgstr ""
+msgstr "前缀"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit successful events in this class."
-msgstr ""
+msgstr "审计此类别中的成功事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit failed events in this class."
-msgstr ""
+msgstr "审计此类别中的失败事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "^"
-msgstr ""
+msgstr "^"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audit neither successful nor failed events in this class."
-msgstr ""
+msgstr "不审计此类别中的成功或失败事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "^+"
-msgstr ""
+msgstr "^+"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Do not audit successful events in this class."
-msgstr ""
+msgstr "不审计此类别中的成功事件。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "^-"
-msgstr ""
+msgstr "^-"
 
 #. type: Table
 #: documentation/content/en/books/handbook/audit/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Do not audit failed events in this class."
-msgstr ""
+msgstr "不审计此类别中的失败事件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:249
@@ -875,12 +886,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:266
+#, fuzzy
 msgid ""
 "[.filename]#audit_warn#: a customizable shell script used by man:auditd[8] "
 "to generate warning messages in exceptional situations, such as when space "
 "for audit records is running low or when the audit trail file has been "
 "rotated."
-msgstr ""
+msgstr "[.filename]#audit_warn#：可自定义的 shell 脚本，man:auditd[8] 用它在特殊情况下生成警告消息，例如审计记录的存储空间不足或审计跟踪文件已轮换时。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:270
@@ -906,9 +918,9 @@ msgstr ""
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/audit/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#audit_control# File"
-msgstr ""
+msgstr "[.filename]#audit_control# 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:279
@@ -959,10 +971,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:297
+#, fuzzy
 msgid ""
 "If the `dist` field is set to `on` or `yes`, hard links will be created to "
 "all trail files in [.filename]#/var/audit/dist#."
-msgstr ""
+msgstr "如果 `dist` 字段设置为 `on` 或 `yes`，将在 [.filename]#/var/audit/dist# 中为所有跟踪文件创建硬链接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:300
@@ -978,10 +991,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:302
+#, fuzzy
 msgid ""
 "The `minfree` entry defines the minimum percentage of free space for the "
 "file system where the audit trail is stored."
-msgstr ""
+msgstr "`minfree` 条目定义存储审计跟踪的文件系统所需的最低可用空间百分比。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:304
@@ -996,13 +1010,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:308
+#, fuzzy
 msgid ""
 "The `policy` entry specifies a comma-separated list of policy flags "
 "controlling various aspects of audit behavior.  The `cnt` indicates that the "
 "system should continue running despite an auditing failure (this flag is "
 "highly recommended).  The other flag, `argv`, causes command line arguments "
 "to the man:execve[2] system call to be audited as part of command execution."
-msgstr ""
+msgstr "`policy` 条目指定以逗号分隔的策略标志列表，用于控制审计行为的各个方面。`cnt` 表示即使审计失败，系统也应继续运行（强烈建议启用此标志）。另一个标志 `argv` 会使 man:execve[2] 系统调用的命令行参数作为命令执行的一部分接受审计。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:312
@@ -1019,16 +1034,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:314
+#, fuzzy
 msgid ""
 "The `expire-after` field specifies when audit log files will expire and be "
 "removed."
-msgstr ""
+msgstr "`expire-after` 字段指定审计日志文件何时过期并被删除。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/audit/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#audit_user# File"
-msgstr ""
+msgstr "[.filename]#audit_user# 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:320
@@ -1047,13 +1063,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:323
+#, fuzzy
 msgid ""
 "The following example entries audit login/logout events and successful "
 "command execution for `root` and file creation and successful command "
 "execution for `www`.  If used with the default [.filename]#audit_control#, "
 "the `lo` entry for `root` is redundant, and login/logout events will also be "
 "audited for `www`."
-msgstr ""
+msgstr "以下示例条目会审计 `root` 的登录和注销事件及成功的命令执行，以及 `www` 的文件创建和成功的命令执行。如果与默认的 [.filename]#audit_control# 配合使用，`root` 的 `lo` 条目是多余的，并且 `www` 的登录和注销事件也会被审计。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:328
@@ -1102,23 +1119,25 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# praudit /var/audit/AUDITFILE\n"
-msgstr ""
+msgstr "# praudit /var/audit/AUDITFILE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:346
+#, fuzzy
 msgid "Where _AUDITFILE_ is the audit log to dump."
-msgstr ""
+msgstr "其中，_AUDITFILE_ 是要转储的审计日志。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:350
+#, fuzzy
 msgid ""
 "Audit trails consist of a series of audit records made up of tokens, which "
 "`praudit` prints sequentially, one per line.  Each token is of a specific "
 "type, such as `header` (an audit record header) or `path` (a file path from "
 "a name lookup).  The following is an example of an `execve` event:"
-msgstr ""
+msgstr "审计跟踪由一系列审计记录组成，每条记录由多个令牌构成。`praudit` 会按顺序逐行打印这些令牌。每个令牌都有特定类型，例如 `header`（审计记录头）或 `path`（名称查找得到的文件路径）。以下是 `execve` 事件的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:360
@@ -1142,6 +1161,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:369
+#, fuzzy
 msgid ""
 "This audit represents a successful `execve` call, in which the command "
 "`finger doug` has been run.  The `exec arg` token contains the processed "
@@ -1154,30 +1174,33 @@ msgid ""
 "the `root` account before running this command, but it is audited using the "
 "original authenticated user.  The `return` token indicates the successful "
 "execution and the `trailer` concludes the record."
-msgstr ""
+msgstr "此审计记录表示一次成功的 `execve` 调用，其中运行了命令 `finger doug`。`exec arg` 令牌包含 shell 传递给内核的处理后命令行。`path` 令牌包含内核查找到的可执行文件路径。`attribute` 令牌描述二进制文件并包含文件模式。`subject` 令牌存储审计用户 ID、有效用户 ID 和组 ID、真实用户 ID 和组 ID、进程 ID、会话 ID、端口 ID 以及登录地址。请注意，审计用户 ID 与真实用户 ID 不同，因为用户 `robert` 在运行此命令前切换到了 `root` 帐户，但审计记录仍使用最初经过身份验证的用户。`return` 令牌表示执行成功，`trailer` 令牌则结束该记录。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:371
+#, fuzzy
 msgid ""
 "XML output format is also supported and can be selected by including `-x`."
-msgstr ""
+msgstr "也支持 XML 输出格式，可通过指定 `-x` 选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:374
+#, fuzzy
 msgid ""
 "Since audit logs may be very large, a subset of records can be selected "
 "using `auditreduce`.  This example selects all audit records produced for "
 "the user `trhodes` stored in [.filename]#AUDITFILE#:"
-msgstr ""
+msgstr "由于审计日志可能非常庞大，可以使用 `auditreduce` 选择其中一部分记录。此示例选择存储在 [.filename]#AUDITFILE# 中、由用户 `trhodes` 生成的所有审计记录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# auditreduce -u trhodes /var/audit/AUDITFILE | praudit\n"
-msgstr ""
+msgstr "# auditreduce -u trhodes /var/audit/AUDITFILE | praudit\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:384
+#, fuzzy
 msgid ""
 "Members of the `audit` group have permission to read audit trails in [."
 "filename]#/var/audit#.  By default, this group is empty, so only the `root` "
@@ -1186,7 +1209,7 @@ msgid ""
 "contents provides significant insight into the behavior of users and "
 "processes, it is recommended that the delegation of audit review rights be "
 "performed with caution."
-msgstr ""
+msgstr "`audit` 组的成员有权读取 [.filename]#/var/audit# 中的审计跟踪。默认情况下，该组为空，因此只有 `root` 用户可以读取审计跟踪。可以将用户添加到 `audit` 组，以委派审计审查权限。由于跟踪审计日志内容能够深入了解用户和进程的行为，因此建议谨慎委派审计审查权限。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/audit/_index.adoc:385
@@ -1222,17 +1245,18 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# praudit /dev/auditpipe\n"
-msgstr ""
+msgstr "# praudit /dev/auditpipe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:399
+#, fuzzy
 msgid ""
 "By default, audit pipe device nodes are accessible only to the `root` user.  "
 "To make them accessible to the members of the `audit` group, add a `devfs` "
 "rule to [.filename]#/etc/devfs.rules#:"
-msgstr ""
+msgstr "默认情况下，只有 `root` 用户可以访问审计管道设备节点。要允许 `audit` 组成员访问这些节点，请在 [.filename]#/etc/devfs.rules# 中添加一条 `devfs` 规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:403
@@ -1242,10 +1266,11 @@ msgstr "add path 'auditpipe*' mode 0440 group audit\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:406
+#, fuzzy
 msgid ""
 "See man:devfs.rules[5] for more information on configuring the devfs file "
 "system."
-msgstr ""
+msgstr "有关配置 devfs 文件系统的更多信息，请参见 man:devfs.rules[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:412
@@ -1275,6 +1300,7 @@ msgstr "审计记帐文件的轮转"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:421
+#, fuzzy
 msgid ""
 "Audit trails are written to by the kernel and managed by the audit daemon, "
 "man:auditd[8].  Administrators should not attempt to use man:newsyslog."
@@ -1284,20 +1310,21 @@ msgid ""
 "create a new audit log and signal the kernel to switch to using the new "
 "log.  The old log will be terminated and renamed, at which point it may then "
 "be manipulated by the administrator:"
-msgstr ""
+msgstr "审计跟踪由内核写入，并由审计守护进程 man:auditd[8] 管理。管理员不应尝试使用 man:newsyslog.conf[5] 或其他工具直接轮转审计日志。相反，应使用 `audit` 关闭审计、重新配置审计系统并轮转日志。以下命令会使审计守护进程创建新的审计日志，并通知内核切换到该日志。旧日志将被终止并重命名，之后管理员即可对其进行操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/audit/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# audit -n\n"
-msgstr ""
+msgstr "# audit -n\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:428
+#, fuzzy
 msgid ""
 "If man:auditd[8] is not currently running, this command will fail and an "
 "error message will be produced."
-msgstr ""
+msgstr "如果 man:auditd[8] 当前未运行，此命令将失败并显示错误消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:430
@@ -1324,11 +1351,12 @@ msgstr "这些修改会在您保存 <filename>/etc/crontab</filename> 后生效�
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:441
+#, fuzzy
 msgid ""
 "Automatic rotation of the audit trail file based on file size is possible "
 "using `filesz` in [.filename]#audit_control# as described in crossref:"
 "audit[audit-auditcontrol, The audit_control File]."
-msgstr ""
+msgstr "如 crossref:audit[audit-auditcontrol, The audit_control File] 所述，可以使用 [.filename]#audit_control# 中的 `filesz`，根据文件大小自动轮转审计跟踪文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/audit/_index.adoc:445

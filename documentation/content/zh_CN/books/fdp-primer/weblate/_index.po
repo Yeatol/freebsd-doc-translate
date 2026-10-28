@@ -17,140 +17,153 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to join the FreeBSD translators team and translate online on Weblate"
-msgstr ""
+msgstr "如何加入 FreeBSD 翻译团队，并在 Weblate 上进行在线翻译"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 10. Weblate Translations"
-msgstr ""
+msgstr "第 10 章：Weblate 翻译"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Translations"
-msgstr ""
+msgstr "Weblate 翻译"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:55
+#, fuzzy
 msgid ""
 "This chapter describes some basic steps for joining the FreeBSD translators "
 "team, translating online on Weblate or offline, and some simple suggestions "
 "on translating, proofreading, and testing.  It's focused on the translation "
 "part."
-msgstr ""
+msgstr "本章介绍加入 FreeBSD 翻译团队、在 Weblate 上进行在线或离线翻译的基本步骤，并提供一些关于翻译、校对和测试的简单建议。本章重点介绍翻译部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:57
+#, fuzzy
 msgid ""
 "The original documents (articles and books) are in the {main-site}"
 "[documentation portal]."
-msgstr ""
+msgstr "原始文档（文章和书籍）位于 {main-site}[文档门户]。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:59
+#, fuzzy
 msgid ""
 "https://weblate.org/en/[Weblate] is web-based open-source software focused "
 "on localization; the FreeBSD project runs a local instance."
-msgstr ""
+msgstr "link:https://weblate.org/en/[Weblate] 是一款专注于本地化的 Web 开源软件；FreeBSD 项目运行着一个本地实例。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to Become a FreeBSD Translator"
-msgstr ""
+msgstr "如何成为 FreeBSD 译者"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:64
+#, fuzzy
 msgid ""
 "Following are simple steps to start translating articles and books of the "
 "FreeBSD Documentation Project."
-msgstr ""
+msgstr "以下是开始翻译 FreeBSD 文档项目文章和书籍的简单步骤。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:66
+#, fuzzy
 msgid ""
 "Create an account on the https://translate-dev.freebsd.org/[FreeBSD Weblate "
 "instance] with an email address or your GitHub account."
-msgstr ""
+msgstr "使用电子邮件地址或 GitHub 帐户在 link:https://translate-dev.freebsd.org/[FreeBSD Weblate 实例]上创建帐户。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:67
+#, fuzzy
 msgid "Subscribe to the {freebsd-translators}."
-msgstr ""
+msgstr "订阅 {freebsd-translators}。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:71
+#, fuzzy
 msgid ""
 "Introduce yourself and ask to join a language team.  If the language team "
 "does not exist, ask to create it.  The self-introduction is essential.  It "
 "raises your chances of being approved for write access."
-msgstr ""
+msgstr "介绍一下自己，并申请加入某个语言团队。如果该语言团队尚不存在，请申请创建该团队。自我介绍至关重要，有助于提高获得写入权限的机会。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:72
+#, fuzzy
 msgid ""
 "Login to https://translate-dev.freebsd.org/[Weblate] with the new account."
-msgstr ""
+msgstr "使用新帐户登录 link:https://translate-dev.freebsd.org/[Weblate]。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:73
+#, fuzzy
 msgid "Find the language team and choose an initial document to translate."
-msgstr ""
+msgstr "找到相应的语言团队，并选择一份文档开始翻译。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:75
+#, fuzzy
 msgid ""
 "Create a Bugzilla account to submit the translations after finishing a "
 "document.  The Documentation project is also accepting GitHub Pull Requests "
 "with translation submissions."
-msgstr ""
+msgstr "创建 Bugzilla 帐户，以便在完成文档后提交译文。文档项目也接受通过 GitHub Pull Request 提交的译文。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:79
+#, fuzzy
 msgid ""
 "All translation files and documents must follow https://www.freebsd.org/"
 "copyright/freebsd-doc-license/[The FreeBSD Documentation License]; if this "
 "is unacceptable, please do not sign up or send any patches or translations."
-msgstr ""
+msgstr "所有翻译文件和文档都必须遵守 link:https://www.freebsd.org/copyright/freebsd-doc-license/[FreeBSD 文档许可证]；如果您无法接受该许可证，请不要注册或提交任何补丁或译文。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduce Yourself"
-msgstr ""
+msgstr "自我介绍"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:86
+#, fuzzy
 msgid ""
 "Please provide a brief self-introduction on the {freebsd-translators} to "
 "initiate the process of granting access.  This will enable a language "
 "coordinator or administrator to provide the necessary permissions for the "
 "new user of Weblate to start translating."
-msgstr ""
+msgstr "请在 {freebsd-translators} 上简要介绍自己，以便启动权限授予流程。这样，语言协调员或管理员便可为 Weblate 新用户授予必要权限，使其开始翻译。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:88
+#, fuzzy
 msgid "Following is an example of how such an email could look."
-msgstr ""
+msgstr "以下是此类邮件的示例。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Subject: Self-Introduction: Name and language\n"
-msgstr ""
+msgstr "主题：自我介绍：姓名和语言\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Name:      Name (use preferred name)\n"
 "Location:  City, country (optional)\n"
@@ -163,45 +176,49 @@ msgid ""
 "  etc.)\n"
 "You and the FreeBSD Project: (free format: other FreeBSD projects of\n"
 "  interest, comments, etc.)\n"
-msgstr ""
+msgstr "姓名：     姓名（请使用您偏好的称呼）\n所在地：   城市、国家（可选）\n登录名：   用户名或电子邮件地址（必填）\n语言：     要翻译的语言（必填）\n职业或学生身份：（可选）\n关于您：（自由填写——分享您认为合适的信息，例如公司、学校、其他关联组织、学历资历、参与过的其他项目、计算机技能水平和类型、其他相关技能等）\n您与 FreeBSD 项目：（自由填写：感兴趣的其他 FreeBSD 项目、意见等）\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Login to Weblate"
-msgstr ""
+msgstr "登录 Weblate"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:110
+#, fuzzy
 msgid "Open https://translate-dev.freebsd.org/[] and `Sign in`."
-msgstr ""
+msgstr "打开 link:https://translate-dev.freebsd.org/[] 并选择 `Sign in`。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Login"
-msgstr ""
+msgstr "Weblate 登录"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-login.png"
-msgstr ""
+msgstr "weblate-login.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:114
+#, fuzzy
 msgid "Use a username, email address, or GitHub account to log in."
-msgstr ""
+msgstr "使用用户名、电子邮件地址或 GitHub 帐户登录。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:117
+#, fuzzy
 msgid ""
 "The user profile contains your preferences, name, and email address.  The "
 "name and address will be used in commits; keep this information accurate."
-msgstr ""
+msgstr "用户个人资料包含您的偏好设置、姓名和电子邮件地址。提交记录中会使用姓名和地址，请确保这些信息准确无误。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:121
+#, fuzzy
 msgid ""
 "On the FreeBSD Weblate instance, all translations will be committed to "
 "https://github.com/freebsd/freebsd-doc-translate[freebsd-doc-translate] (an "
@@ -211,104 +228,111 @@ msgid ""
 "freebsd.org/bugzilla/[Bugzilla] or https://github.com/freebsd/freebsd-doc/"
 "pulls[GitHub] to get the translated document published or updated in the "
 "documentation portal.  See more in the following sections."
-msgstr ""
+msgstr "在 FreeBSD Weblate 实例中，所有译文都会提交到 link:https://github.com/freebsd/freebsd-doc-translate[freebsd-doc-translate]（GitHub 上的中间仓库），而不是直接提交到 link:https://github.com/freebsd/freebsd-doc[freebsd-doc]。译者必须处理 PO gettext 文件（`.po`），将其转换为 `.adoc`，然后通过 link:https://bugs.freebsd.org/bugzilla/[Bugzilla] 或 link:https://github.com/freebsd/freebsd-doc/pulls[GitHub] 提交，以便在文档门户发布或更新译文。更多信息请参阅以下各节。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:123
+#, fuzzy
 msgid ""
 "Weblate will commit daily, at least to `freebsd-doc-translate`, if any new "
 "strings are translated."
-msgstr ""
+msgstr "如果有新字符串完成翻译，Weblate 每天至少会将提交推送到 `freebsd-doc-translate`。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Find a Language Team to Join In"
-msgstr ""
+msgstr "查找并加入语言团队"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:128
+#, fuzzy
 msgid ""
 "Click `Projects`, choose `Documentation`, then click `Languages`, and see "
 "all the available languages."
-msgstr ""
+msgstr "点击 `Projects`，选择 `Documentation`，然后点击 `Languages`，即可查看所有可用语言。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Languages"
-msgstr ""
+msgstr "Weblate 语言"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-languages.png"
-msgstr ""
+msgstr "weblate-languages.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:132
+#, fuzzy
 msgid ""
 "Note that some languages and translated documents already exist in the "
 "documentation portal and repositories."
-msgstr ""
+msgstr "请注意，文档门户和仓库中已经有一些语言和已翻译文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:135
+#, fuzzy
 msgid ""
 "If the desired language for translation is not available in Weblate, please "
 "contact the https://www.freebsd.org/docproj/translations/[language "
 "coordinators] before asking to create a new language.  If there is no "
 "answer, then write to the {doceng}."
-msgstr ""
+msgstr "如果 Weblate 中没有您希望翻译的语言，请先联系 link:https://www.freebsd.org/docproj/translations/[语言协调员]，然后再申请创建新语言。如果没有收到回复，请联系 {doceng}。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translating Online on Weblate"
-msgstr ""
+msgstr "在 Weblate 上进行在线翻译"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:140
+#, fuzzy
 msgid ""
 "Translating documents online proves to be the easiest method for document "
 "translation on FreeBSD, as it allows users to collaborate on the same file, "
 "distributing the workload."
-msgstr ""
+msgstr "在线翻译文档是 FreeBSD 文档翻译最简单的方法，因为它允许用户协作处理同一文件，分担工作量。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:142
+#, fuzzy
 msgid ""
 "Once a coordinator or administrator grants access to a specific language for "
 "a username, the save button will be enabled, so that this user can start "
 "translating."
-msgstr ""
+msgstr "协调员或管理员为用户名授予特定语言的访问权限后，保存按钮便会启用，该用户即可开始翻译。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Documents"
-msgstr ""
+msgstr "Weblate 文档"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-documents.png"
-msgstr ""
+msgstr "weblate-documents.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Translate"
-msgstr ""
+msgstr "Weblate 翻译"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-translate.png"
-msgstr ""
+msgstr "weblate-translate.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:150
+#, fuzzy
 msgid ""
 "Weblate has a set of links that lead to actual translation.  The translation "
 "is further divided into individual checks, like `Untranslated` or `Needing "
@@ -316,748 +340,807 @@ msgid ""
 "translations` link is still available in case a review is necessary.  "
 "Alternatively, the search field can be used to find a specific string or "
 "term."
-msgstr ""
+msgstr "Weblate 提供了一组链接，可跳转到实际翻译内容。翻译任务还分为各项检查，例如 `Untranslated` 或 `Needing review`。即使整份文档已翻译完成且没有错误，`All translations` 链接仍然可用，以便在需要时进行审校。也可以使用搜索栏查找特定字符串或术语。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:152
+#, fuzzy
 msgid ""
 "In the https://docs.weblate.org/en/latest/user/translating.html#translation-"
 "projects[Weblate documentation], there is more info about translations, like "
 "keyboard shortcuts and other tips about the translation tool."
-msgstr ""
+msgstr "link:https://docs.weblate.org/en/latest/user/translating.html#translation-projects[Weblate 文档]中提供了更多翻译相关信息，例如键盘快捷键以及其他翻译工具使用技巧。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translating Offline"
-msgstr ""
+msgstr "离线翻译"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:158
+#, fuzzy
 msgid ""
 "Weblate on FreeBSD uses PO gettext files for translations.  Users familiar "
 "with PO gettext files that want to translate offline can download and upload "
 "the translations through the document page on Weblate by clicking in the "
 "`Files` section."
-msgstr ""
+msgstr "FreeBSD 上的 Weblate 使用 PO gettext 文件进行翻译。熟悉 PO gettext 文件并希望离线翻译的用户，可以在 Weblate 的文档页面中点击 `Files` 部分，下载和上传译文。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Offline"
-msgstr ""
+msgstr "Weblate 离线翻译"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-offline.png"
-msgstr ""
+msgstr "weblate-offline.png"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translation based on Automatic Suggestions"
-msgstr ""
+msgstr "根据自动建议进行翻译"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:165
+#, fuzzy
 msgid ""
 "Languages using Weblate before the migration to Hugo/Asciidoctor can use "
 "this feature from Weblate to save time."
-msgstr ""
+msgstr "在迁移到 Hugo/Asciidoctor 之前使用 Weblate 的语言，可以使用 Weblate 的此功能节省时间。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:168
+#, fuzzy
 msgid ""
 "This feature from Weblate uses the Translation Memory generated by the other "
 "components and projects on the same server.  The former Weblate translations "
 "are hosted on the same server as read-only for that."
-msgstr ""
+msgstr "Weblate 的此功能使用同一服务器上其他组件和项目生成的翻译记忆库。此前的 Weblate 译文也托管在同一服务器上，仅供只读使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:171
+#, fuzzy
 msgid ""
 "Strings that match `100/100` in similarity can be copied and saved "
 "directly.  Other strings will need at least minor adjustment."
-msgstr ""
+msgstr "相似度为 `100/100` 的字符串可以直接复制并保存。其他字符串则至少需要稍作调整。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:173
+#, fuzzy
 msgid "Some examples:"
-msgstr ""
+msgstr "示例："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Automatic Suggestions 01"
-msgstr ""
+msgstr "Weblate 自动建议 01"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate_automatic_suggestion_01.png"
-msgstr ""
+msgstr "weblate_automatic_suggestion_01.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:179
+#, fuzzy
 msgid ""
 "With the migration to Hugo/Asciidoctor, documents use UTF-8.  Some HTML "
 "entities should be replaced.  Some strings, such as links, require changes "
 "to markup."
-msgstr ""
+msgstr "迁移到 Hugo/Asciidoctor 后，文档使用 UTF-8 编码。某些 HTML 实体需要替换，有些字符串（例如链接）则需要修改标记。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Automatic Suggestions 02"
-msgstr ""
+msgstr "Weblate 自动建议 02"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate_automatic_suggestion_02.png"
-msgstr ""
+msgstr "weblate_automatic_suggestion_02.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:183
+#, fuzzy
 msgid "Links:"
-msgstr ""
+msgstr "链接："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Automatic Suggestions 03"
-msgstr ""
+msgstr "Weblate 自动建议 03"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate_automatic_suggestion_03.png"
-msgstr ""
+msgstr "weblate_automatic_suggestion_03.png"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Proofreading and Weblate Quality Checks"
-msgstr ""
+msgstr "校对与 Weblate 质量检查"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:191
+#, fuzzy
 msgid ""
 "The document dashboard `Project/Language/Document` shows the translation "
 "status and string status for that document.  This page is handy for "
 "proofreading and quality checks."
-msgstr ""
+msgstr "文档仪表板 `Project/Language/Document` 会显示该文档的翻译进度和字符串状态。此页面便于进行校对和质量检查。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Revision 01"
-msgstr ""
+msgstr "Weblate 修订 01"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-revision1.png"
-msgstr ""
+msgstr "weblate-revision1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:195
+#, fuzzy
 msgid ""
 "In this example, two strings are missing the full stop; following that link "
 "will show only those strings to be revised/translated."
-msgstr ""
+msgstr "在此示例中，有两个字符串缺少句号；点击该链接后，只会显示这两个需要修订或翻译的字符串。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weblate Revision 02"
-msgstr ""
+msgstr "Weblate 修订 02"
 
 #. type: Target for macro image
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "weblate-revision2.png"
-msgstr ""
+msgstr "weblate-revision2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:199
+#, fuzzy
 msgid ""
 "Translators and reviewers often value observing translated strings in "
 "context."
-msgstr ""
+msgstr "译者和审校者通常都希望能在上下文中查看已翻译的字符串。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building the Translated Document"
-msgstr ""
+msgstr "构建翻译后的文档"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:205
+#, fuzzy
 msgid ""
 "The project does not use continuous integration and continuous delivery to "
 "build translations.  There are studies to make it available."
-msgstr ""
+msgstr "该项目没有使用持续集成和持续交付来构建译文。目前正在研究如何提供这项功能。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:210
+#, fuzzy
 msgid ""
 "The following example uses GitHub, as Weblate is also on GitHub.  Note that "
 "this repository is a read-only mirror, but Pull Requests are accepted."
-msgstr ""
+msgstr "以下示例使用 GitHub，因为 Weblate 也托管在 GitHub 上。请注意，此仓库是只读镜像，但接受 Pull Request。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:213
+#, fuzzy
 msgid "To build the translation locally, follow these steps:"
-msgstr ""
+msgstr "要在本地构建译文，请按以下步骤操作："
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Clone the necessary repositories"
-msgstr ""
+msgstr "步骤：克隆所需仓库"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:220
+#, fuzzy
 msgid "Clone the `freebsd-doc` repository:"
-msgstr ""
+msgstr "克隆 `freebsd-doc` 仓库："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git clone https://github.com/freebsd/freebsd-doc.git ~/freebsd-doc\n"
-msgstr ""
+msgstr "% git clone https://github.com/freebsd/freebsd-doc.git ~/freebsd-doc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:227
+#, fuzzy
 msgid "Clone the `freebsd-doc-translate` repository:"
-msgstr ""
+msgstr "克隆 `freebsd-doc-translate` 仓库："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git clone https://github.com/freebsd/freebsd-doc-translate.git ~/freebsd-doc-translate\n"
-msgstr ""
+msgstr "% git clone https://github.com/freebsd/freebsd-doc-translate.git ~/freebsd-doc-translate\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Copy a translation file to `freebsd-doc`"
-msgstr ""
+msgstr "步骤：将翻译文件复制到 `freebsd-doc`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:242
+#, fuzzy
 msgid ""
 "With both repositories in place, copy the translation from `freebsd-doc-"
 "translate` to `freebsd-doc`.  Example of the Committer's Guide article "
 "translation in Spanish."
-msgstr ""
+msgstr "两个仓库都准备就绪后，将译文从 `freebsd-doc-translate` 复制到 `freebsd-doc`。以下示例展示了《Committer 指南》文章的西班牙语译文。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cp ~/freebsd-doc-translate/documentation/content/es/articles/committers-guide/_index.po \\\n"
 "~/freebsd-doc/documentation/content/es/articles/committers-guide/\n"
-msgstr ""
+msgstr "% cp ~/freebsd-doc-translate/documentation/content/es/articles/committers-guide/_index.po \\\n~/freebsd-doc/documentation/content/es/articles/committers-guide/\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Convert a translation file (`.po`) to `.adoc`"
-msgstr ""
+msgstr "步骤：将翻译文件（`.po`）转换为 `.adoc`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:257
+#, fuzzy
 msgid "Go to the root of `freebsd-doc`."
-msgstr ""
+msgstr "进入 `freebsd-doc` 的根目录。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cd ~/freebsd-doc\n"
-msgstr ""
+msgstr "% cd ~/freebsd-doc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:264
+#, fuzzy
 msgid "Translate (convert) the `.po` file to `.adoc`"
-msgstr ""
+msgstr "翻译（转换）`.po` 文件为 `.adoc`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ./tools/translate.sh documentation es articles/committers-guide\n"
-msgstr ""
+msgstr "% ./tools/translate.sh documentation es articles/committers-guide\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:271
+#, fuzzy
 msgid ""
 "By default: only files with more than eighty percent of strings translated "
 "will be converted to `.adoc`."
-msgstr ""
+msgstr "默认情况下，只有翻译字符串超过百分之八十的文件才会转换为 `.adoc`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:273
+#, fuzzy
 msgid "To ignore that limit:"
-msgstr ""
+msgstr "要忽略此限制："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% KEEP_ENV=0 ./tools/translate.sh documentation es articles/committers-guide\n"
-msgstr ""
+msgstr "% KEEP_ENV=0 ./tools/translate.sh documentation es articles/committers-guide\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:284
+#, fuzzy
 msgid ""
 "Some documents, like books, have many PO gettext files.  Always copy all of "
 "them when translating and building.  Files that weren't translated will be "
 "converted with the source (English) strings."
-msgstr ""
+msgstr "有些文档（例如书籍）包含许多 PO gettext 文件。翻译和构建时务必复制所有文件。未翻译的文件会使用源文档（英语）中的字符串进行转换。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:289
+#, fuzzy
 msgid ""
 "The directory structure is fundamental.  Always follow the English document "
 "directory structure."
-msgstr ""
+msgstr "目录结构至关重要。务必遵循英文文档的目录结构。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Build the translated document"
-msgstr ""
+msgstr "步骤：构建翻译后的文档"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:298
+#, fuzzy
 msgid "Last, the building part."
-msgstr ""
+msgstr "最后是构建部分。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:300
+#, fuzzy
 msgid ""
 "Enter the documentation directory because there is no need to build the "
 "FreeBSD website."
-msgstr ""
+msgstr "进入文档目录，因为无需构建 FreeBSD 网站。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cd documentation\n"
-msgstr ""
+msgstr "% cd documentation\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:308
+#, fuzzy
 msgid ""
 "And build the documentation.  Note that `en` is always added by default when "
 "building any other language."
-msgstr ""
+msgstr "然后构建文档。请注意，构建任何其他语言的文档时，默认都会添加 `en`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% DOC_LANG=es make\n"
-msgstr ""
+msgstr "% DOC_LANG=es make\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:317
+#, fuzzy
 msgid ""
 "This command will build only the English and Spanish documents of the "
 "FreeBSD documentation portal.  The output will be in the [.filename]#public# "
 "directory; open that in a browser.  Note that some index files can redirect "
 "the browser to the online page."
-msgstr ""
+msgstr "此命令只会构建 FreeBSD 文档门户的英文和西班牙文文档。输出位于 [.filename]#public# 目录中；请在浏览器中打开该目录。请注意，某些索引文件可能会将浏览器重定向到在线页面。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:319
+#, fuzzy
 msgid ""
 "Another good option is to build and serve the content with Hugo's internal "
 "webserver:"
-msgstr ""
+msgstr "另一个不错的选择是使用 Hugo 内置的 Web 服务器构建并提供内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% DOC_LANG=es make run\n"
-msgstr ""
+msgstr "% DOC_LANG=es make run\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:326
+#, fuzzy
 msgid ""
 "By default, the webserver listens on `localhost`; To override this behavior, "
 "specify the desired IP address in the `BIND` parameter value."
-msgstr ""
+msgstr "默认情况下，Web 服务器监听 `localhost`；要覆盖此行为，请在 `BIND` 参数值中指定所需的 IP 地址。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% DOC_LANG=es make run BIND=192.168.15.10\n"
-msgstr ""
+msgstr "% DOC_LANG=es make run BIND=192.168.15.10\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:333
+#, fuzzy
 msgid ""
 "This builds and serves the content with Hugo's internal webserver and lets "
 "it open, and if any file changes, it rebuilds them automatically."
-msgstr ""
+msgstr "此命令使用 Hugo 内置的 Web 服务器构建并提供内容，同时打开页面；如果有文件发生更改，还会自动重新构建这些文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:336
+#, fuzzy
 msgid ""
 "To make any necessary adjustments in the translation, follow the steps below "
 "to re-sync all components:"
-msgstr ""
+msgstr "如需对翻译进行必要的调整，请按照以下步骤重新同步所有组件："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:338
+#, fuzzy
 msgid ""
 "Fix the translation string on https://translate-dev.freebsd.org/[Weblate]."
-msgstr ""
+msgstr "在 link:https://translate-dev.freebsd.org/[Weblate] 上修正翻译字符串。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:339
+#, fuzzy
 msgid ""
 "Force Weblate to commit the changes on `Document/Manage/Commit` section."
-msgstr ""
+msgstr "在 `Document/Manage/Commit` 部分强制 Weblate 提交更改。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:340
+#, fuzzy
 msgid ""
 "Sync the local Weblate repository `freebsd-doc-translate` with a `git pull "
 "origin main` command."
-msgstr ""
+msgstr "使用 `git pull origin main` 命令同步本地 Weblate 仓库 `freebsd-doc-translate`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:341
+#, fuzzy
 msgid "Copy the translation again to `freebsd-doc`."
-msgstr ""
+msgstr "再次将翻译复制到 `freebsd-doc`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:342
+#, fuzzy
 msgid ""
 "Convert the translation to .adoc with the `./tools/translate.sh` script."
-msgstr ""
+msgstr "使用 `./tools/translate.sh` 脚本将翻译转换为 .adoc。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:343
+#, fuzzy
 msgid ""
 "Hugo will rebuild the file and not build the entire set if `make run` was "
 "used; or re-execute `make`."
-msgstr ""
+msgstr "如果使用了 `make run`，Hugo 将重新构建该文件，而不是构建整个文档集；否则，请重新执行 `make`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:347
+#, fuzzy
 msgid ""
 "Follow the previous steps as many times as is necessary until the document "
 "is ready to be published."
-msgstr ""
+msgstr "根据需要多次重复前面的步骤，直到文档准备好发布。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:350
+#, fuzzy
 msgid ""
 "The crossref:doc-build[doc-build-rendering,Documentation Build Process] "
 "chapter includes information about rendering to HTML and PDF."
-msgstr ""
+msgstr "crossref:doc-build[doc-build-rendering,文档构建过程] 章节介绍了如何渲染为 HTML 和 PDF。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Submitting Translations"
-msgstr ""
+msgstr "提交翻译"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:355
+#, fuzzy
 msgid ""
 "Example of submitting an update to the Brazilian Portuguese article "
 "Committer's Guide."
-msgstr ""
+msgstr "提交巴西葡萄牙语《Committer 指南》文章更新的示例。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Check the repository"
-msgstr ""
+msgstr "检查仓库"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:365
+#, fuzzy
 msgid ""
 "After following the steps in crossref:weblate[weblate-building,Building the "
 "Translated Document], go to the root of `freebsd-doc` and preview what's to "
 "be committed.  For an overview of files to be changed, and differences in "
 "file content:"
-msgstr ""
+msgstr "按照 crossref:weblate[weblate-building,构建翻译后的文档] 中的步骤操作后，进入 `freebsd-doc` 的根目录，预览要提交的内容。要概览将更改的文件及文件内容的差异，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git status\n"
 "% git diff\n"
-msgstr ""
+msgstr "% git status\n% git diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:373
+#, fuzzy
 msgid ""
 "Review the output, and if any files unrelated to the Committer's Guide "
 "translation update were changed or added, take the appropriate action of "
 "reverting or removing them, respectively, before proceeding further."
-msgstr ""
+msgstr "检查输出；如果有与《Committer 指南》翻译更新无关的文件被更改或添加，请分别在继续之前采取适当措施还原或删除这些文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:375
+#, fuzzy
 msgid ""
 "Always include the PO gettext file (`.po`) and the translated document in "
 "Hugo/Asciidoctor (`.adoc`)."
-msgstr ""
+msgstr "务必同时包含 PO gettext 文件（`.po`）和 Hugo/Asciidoctor 翻译文档（`.adoc`）。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:381
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Create a new branch and commit"
-msgstr ""
+msgstr "创建新分支并提交"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:384
+#, fuzzy
 msgid ""
 "Create another branch to separate the work, which will help with future "
 "updates in the local repository."
-msgstr ""
+msgstr "创建另一个分支以单独管理这项工作，这有助于以后在本地仓库中进行更新。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:388
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git checkout -b committers-guide_pt-br\n"
-msgstr ""
+msgstr "% git checkout -b committers-guide_pt-br\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:391
+#, fuzzy
 msgid "Register the local commit."
-msgstr ""
+msgstr "创建本地提交。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git add .\n"
 "% git commit\n"
-msgstr ""
+msgstr "% git add .\n% git commit\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:399
+#, fuzzy
 msgid "Example of commit messages for translations:"
-msgstr ""
+msgstr "翻译提交消息示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pt-br/committers-guide: Sync with en XXXXXXX\n"
-msgstr ""
+msgstr "pt-br/committers-guide: Sync with en XXXXXXX\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:406
+#, fuzzy
 msgid ""
 "Where `XXXXXXX` is the man:git[1] revision stored in the Weblate repository "
 "[.filename]#~/freebsd-doc-translate/revision.txt#."
-msgstr ""
+msgstr "其中 `XXXXXXX` 是 Weblate 仓库 [.filename]#~/freebsd-doc-translate/revision.txt# 中保存的 man:git[1] 修订版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:408
+#, fuzzy
 msgid "If it is the first translation of an article:"
-msgstr ""
+msgstr "如果这是首次翻译某篇文章："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Add Korean translation of Leap Seconds article\n"
-msgstr ""
+msgstr "添加《闰秒》文章的韩语翻译\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:417
+#, fuzzy
 msgid ""
 "A message will be displayed after the commit if man:git[1] has not been "
 "configured previously.  Please follow the instructions and provide the name "
 "and email address used on Weblate.  This step is crucial to proper crediting "
 "of contributors."
-msgstr ""
+msgstr "如果之前尚未配置 man:git[1]，提交后会显示一条消息。请按照说明提供在 Weblate 上使用的姓名和电子邮件地址。此步骤对于正确致谢贡献者至关重要。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:419
+#, fuzzy
 msgid ""
 "Then check the entire commit, review changes, and author name and email."
-msgstr ""
+msgstr "然后检查整个提交，审阅更改，并核对作者姓名和电子邮件地址。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git show\n"
-msgstr ""
+msgstr "% git show\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Generate a patch"
-msgstr ""
+msgstr "生成补丁"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:433
+#, fuzzy
 msgid "Next, generate a man:git-format-patch[1] file."
-msgstr ""
+msgstr "接下来，生成一个 man:git-format-patch[1] 文件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:438
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git format-patch main\n"
 "0001-pt-br-committers-guide-Sync-with-en-XXXXXXX.patch\n"
-msgstr ""
+msgstr "% git format-patch main\n0001-pt-br-committers-guide-Sync-with-en-XXXXXXX.patch\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:442
+#, fuzzy
 msgid ""
 "Attach the patch [.filename]#0001-pt-br-committers-guide-Sync-with-en-"
 "XXXXXXX.patch# to a problem report in https://bugs.freebsd.org/bugzilla/"
 "[FreeBSD Bugzilla]."
-msgstr ""
+msgstr "将补丁 [.filename]#0001-pt-br-committers-guide-Sync-with-en-XXXXXXX.patch# 附加到 link:https://bugs.freebsd.org/bugzilla/[FreeBSD Bugzilla] 中的问题报告。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:444
+#, fuzzy
 msgid "Include the following information in the report:"
-msgstr ""
+msgstr "在报告中包含以下信息："
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bugzilla Fields"
-msgstr ""
+msgstr "Bugzilla 字段"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:450
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Field"
-msgstr ""
+msgstr "字段"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:452
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*product*"
-msgstr ""
+msgstr "*产品*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:455
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:456
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Component*"
-msgstr ""
+msgstr "*组件*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Books & Articles"
-msgstr ""
+msgstr "书籍和文章"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Summary*"
-msgstr ""
+msgstr "*摘要*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:461
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Same as the local commit"
-msgstr ""
+msgstr "与本地提交相同"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:462
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Description*"
-msgstr ""
+msgstr "*描述*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "State that instructions in this guide were followed, including proofreading and other necessary steps.\n"
 "Include things that may help with triage and progression of the report."
-msgstr ""
+msgstr "说明已遵循本指南中的说明，包括校对和其他必要步骤。\n请提供有助于问题报告分流和处理进度的信息。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:467
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*CC* (Optional)"
-msgstr ""
+msgstr "*抄送*（可选）"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:468
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "If the language has coordinators, include their email addresses in the CC field."
-msgstr ""
+msgstr "如果该语言设有协调员，请在抄送字段中填写他们的电子邮件地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:471
+#, fuzzy
 msgid ""
 "For people familiar with man:git[1] and GitHub: instead of submitting the "
 "patch through https://bugs.freebsd.org/bugzilla/[Bugzilla], a https://github."
 "com/freebsd/freebsd-doc/pulls[GitHub pull request] can be used (use the name "
 "and address that you use with Weblate)."
-msgstr ""
+msgstr "对于熟悉 man:git[1] 和 GitHub 的人：除了通过 link:https://bugs.freebsd.org/bugzilla/[Bugzilla] 提交补丁外，也可以创建 link:https://github.com/freebsd/freebsd-doc/pulls[GitHub 拉取请求]（请使用在 Weblate 上使用的姓名和地址）。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:474
+#, fuzzy
 msgid ""
 "https://github.com/freebsd/freebsd-doc/ is a secondary mirror.  Changes to "
 "the `doc` tree can be made only by people who have a `doc` commit bit."
-msgstr ""
+msgstr "link:https://github.com/freebsd/freebsd-doc/[https://github.com/freebsd/freebsd-doc/] 是一个次要镜像。只有拥有 `doc` 提交权限的人才能更改 `doc` 树。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:476
+#, fuzzy
 msgid ""
 "When translators keep sending good-quality patches, they can be nominated by "
 "other committers to receive write-access (a extref:{committers-guide}[doc "
 "commit bit, committer.types] for translations), a FreeBSD account, and "
 "associated perks."
-msgstr ""
+msgstr "如果译者持续提交高质量补丁，其他提交者可以提名他们获得写入权限（用于翻译的 extref:{committers-guide}[doc 提交权限，committer.types]）、FreeBSD 账户及相关福利。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:478
+#, fuzzy
 msgid ""
 "The list of extref:{contributors}[Additional FreeBSD Contributors, contrib-"
 "additional] includes non-committers whose contributions are committed to the "
 "`doc` tree."
-msgstr ""
+msgstr "extref:{contributors}[FreeBSD 其他贡献者，contrib-additional] 列出了其贡献已提交到 `doc` 树、但没有提交权限的人员。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:480
+#, fuzzy
 msgid "If in doubt about any procedure, write to the {freebsd-translators}."
-msgstr ""
+msgstr "如果对任何流程有疑问，请联系 {freebsd-translators}。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:482
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FAQ (Frequently Asked Questions)"
-msgstr ""
+msgstr "常见问题（FAQ）"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:485
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Is it necessary to translate all the Copyright messages?"
-msgstr ""
+msgstr "是否需要翻译所有版权声明？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/weblate/_index.adoc:487
+#, fuzzy
 msgid ""
 "Every language team decides this for their language; in `pt-br` (Brazilian "
 "Portuguese) team, it was decided not to translate those messages."
-msgstr ""
+msgstr "各语言团队自行决定是否翻译；`pt-br`（巴西葡萄牙语）团队决定不翻译这些声明。"

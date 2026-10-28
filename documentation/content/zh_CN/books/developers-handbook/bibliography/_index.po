@@ -20,61 +20,67 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Developers Handbook Bibliography"
-msgstr ""
+msgstr "FreeBSD 开发者手册参考书目"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:1
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bibliography"
-msgstr ""
+msgstr "参考书目"
 
 #. type: appendix
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:51
+#, fuzzy
 msgid ""
 "[[COD,1]] [1] Dave A Patterson and John L Hennessy. Copyright(R) 1998 Morgan "
 "Kaufmann Publishers, Inc. 1-55860-428-6. Morgan Kaufmann Publishers, Inc. "
 "Computer Organization and Design. The Hardware / Software Interface. 1-2."
-msgstr ""
+msgstr "[[COD,1]] [1] Dave A Patterson 和 John L Hennessy。Copyright(R) 1998 Morgan Kaufmann Publishers, Inc. 1-55860-428-6。Morgan Kaufmann Publishers, Inc.《计算机组织与设计：硬件/软件接口》。1-2。"
 
 #. type: appendix
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:53
+#, fuzzy
 msgid ""
 "[[APUE, 2]] [2] W. Richard Stevens. Copyright(R) 1993 Addison Wesley "
 "Longman, Inc. 0-201-56317-7. Addison Wesley Longman, Inc. Advanced "
 "Programming in the Unix Environment. 1-2."
-msgstr ""
+msgstr "[[APUE, 2]] [2] W. Richard Stevens。Copyright(R) 1993 Addison Wesley Longman, Inc. 0-201-56317-7。Addison Wesley Longman, Inc.《Unix 环境高级编程》。1-2。"
 
 #. type: appendix
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:55
+#, fuzzy
 msgid ""
 "[[DIFOS, 3]] [3] Marshall Kirk McKusick and George Neville-Neil. "
 "Copyright(R) 2004 Addison-Wesley. 0-201-70245-2. Addison-Wesley. The Design "
 "and Implementation of the FreeBSD Operating System. 1-2."
-msgstr ""
+msgstr "[[DIFOS, 3]] [3] Marshall Kirk McKusick 和 George Neville-Neil。Copyright(R) 2004 Addison-Wesley。0-201-70245-2。Addison-Wesley。《FreeBSD 操作系统的设计与实现》。1-2。"
 
 #. type: appendix
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:57
+#, fuzzy
 msgid ""
 "[[Phrack, 4]] [4] Aleph One. Phrack 49; \"Smashing the Stack for Fun and "
 "Profit\"."
-msgstr ""
+msgstr "[[Phrack, 4]] [4] Aleph One。《Phrack》第 49 期；“乐趣与获利：栈溢出攻击”。"
 
 #. type: appendix
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:59
+#, fuzzy
 msgid ""
 "[[StackGuard, 5]] [5] Chrispin Cowan, Calton Pu, and Dave Maier. StackGuard; "
 "Automatic Adaptive Detection and Prevention of Buffer-Overflow Attacks."
-msgstr ""
+msgstr "[[StackGuard, 5]] [5] Chrispin Cowan、Calton Pu 和 Dave Maier。StackGuard；自动自适应缓冲区溢出攻击检测与防御。"
 
 #. type: appendix
 #: documentation/content/en/books/developers-handbook/bibliography/_index.adoc:61
+#, fuzzy
 msgid ""
 "[[OpenBSD, 6]] [6] Todd Miller and Theo de Raadt. strlcpy and strlcat -- "
 "consistent, safe string copy and concatenation."
-msgstr ""
+msgstr "[[OpenBSD, 6]] [6] Todd Miller 和 Theo de Raadt。strlcpy 和 strlcat——一致且安全的字符串复制与拼接。"
 
 #, no-wrap
 #~ msgid "Appendices"

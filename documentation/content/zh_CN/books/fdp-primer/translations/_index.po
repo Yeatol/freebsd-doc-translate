@@ -17,315 +17,345 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FAQ about the translation process in the FreeBSD Documentation Project"
-msgstr ""
+msgstr "FreeBSD 文档项目翻译流程常见问题解答"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 8. Translations"
-msgstr ""
+msgstr "第 8 章：翻译"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translations"
-msgstr ""
+msgstr "翻译"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:51
+#, fuzzy
 msgid ""
 "This is the FAQ for people translating the FreeBSD documentation (FAQ, "
 "Handbook, tutorials, manual pages, and others) to different languages."
-msgstr ""
+msgstr "本常见问题解答面向将 FreeBSD 文档（常见问题解答、手册、教程、手册页等）翻译成其他语言的人员。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:55
+#, fuzzy
 msgid ""
 "It is _very_ heavily based on the translation FAQ from the FreeBSD German "
 "Documentation Project, originally written by Frank Gründer mailto:"
 "elwood@mc5sys.in-berlin.de[elwood@mc5sys.in-berlin.de] and translated back "
 "to English by Bernd Warken mailto:bwarken@mayn.de[bwarken@mayn.de]."
-msgstr ""
+msgstr "本文__很大程度上__基于 FreeBSD 德语文档项目的翻译常见问题解答，原文由 Frank Gründer mailto:elwood@mc5sys.in-berlin.de[elwood@mc5sys.in-berlin.de] 编写，后由 Bernd Warken mailto:bwarken@mayn.de[bwarken@mayn.de] 翻译回英语。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What do i18n and l10n mean?"
-msgstr ""
+msgstr "i18n 和 l10n 是什么意思？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:60
+#, fuzzy
 msgid ""
 "i18n means internationalization and l10n means localization.  They are just "
 "a convenient shorthand."
-msgstr ""
+msgstr "i18n 是国际化（internationalization）的缩写，l10n 是本地化（localization）的缩写。它们只是便于使用的简称。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:63
+#, fuzzy
 msgid ""
 "i18n can be read as \"i\" followed by 18 letters, followed by \"n\".  "
 "Similarly, l10n is \"l\" followed by 10 letters, followed by \"n\"."
-msgstr ""
+msgstr "i18n 可以理解为字母“i”后接 18 个字母，再接字母“n”。同样，l10n 是字母“l”后接 10 个字母，再接字母“n”。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Is there a mailing list for translators?"
-msgstr ""
+msgstr "有供译者使用的邮件列表吗？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:69
+#, fuzzy
 msgid ""
 "Yes. Different translation groups have their own mailing lists.  The https://"
 "www.freebsd.org/docproj/translations[list of translation projects] has more "
 "information about the mailing lists and web sites run by each translation "
 "project.  In addition there is mailto:freebsd-translators@freebsd."
 "org[freebsd-translators@freebsd.org] for general translation discussion."
-msgstr ""
+msgstr "有。不同的翻译团队有各自的邮件列表。link:https://www.freebsd.org/docproj/translations[翻译项目列表]提供了各翻译项目运营的邮件列表和网站的更多信息。此外，通用翻译讨论还可以使用 mailto:freebsd-translators@freebsd.org[freebsd-translators@freebsd.org]。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Are more translators needed?"
-msgstr ""
+msgstr "还需要更多译者吗？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:73
+#, fuzzy
 msgid ""
 "Yes. The more people that work on translation the faster it gets done, and "
 "the faster changes to the English documentation are mirrored in the "
 "translated documents."
-msgstr ""
+msgstr "需要。参与翻译的人越多，完成翻译的速度就越快，英语文档的更改也能越快反映到译文中。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:75
+#, fuzzy
 msgid "You do not have to be a professional translator to be able to help."
-msgstr ""
+msgstr "你不必是专业译者也可以提供帮助。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What languages do I need to know?"
-msgstr ""
+msgstr "我需要掌握哪些语言？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:79
+#, fuzzy
 msgid ""
 "Ideally, you will have a good knowledge of written English, and obviously "
 "you will need to be fluent in the language you are translating to."
-msgstr ""
+msgstr "理想情况下，你应具备良好的英语书面能力，并且显然需要熟练掌握目标语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:82
+#, fuzzy
 msgid ""
 "English is not strictly necessary.  For example, you could do a Hungarian "
 "translation of the FAQ from the Spanish translation."
-msgstr ""
+msgstr "严格来说，不一定需要懂英语。例如，你可以根据西班牙语译文将常见问题解答翻译成匈牙利语。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What software do I need to know?"
-msgstr ""
+msgstr "我需要了解哪些软件？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:87
+#, fuzzy
 msgid ""
 "It is strongly recommended that you maintain a local copy of the FreeBSD Git "
 "repository (at least the documentation part).  This can be done by running:"
-msgstr ""
+msgstr "强烈建议你在本地维护一份 FreeBSD Git 仓库副本（至少包含文档部分）。可以运行以下命令来完成："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
-msgstr ""
+msgstr "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:94
+#, fuzzy
 msgid "https://git.FreeBSD.org/[git.FreeBSD.org] is a public `git` server."
-msgstr ""
+msgstr "link:https://git.FreeBSD.org/[git.FreeBSD.org] 是一个公共 `git` 服务器。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:98
+#, fuzzy
 msgid "This will require the package:git-lite[] package to be installed."
-msgstr ""
+msgstr "这需要安装 package:git-lite[] 软件包。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:102
+#, fuzzy
 msgid ""
 "You should be comfortable using git.  This will allow you to see what has "
 "changed between different versions of the files that make up the "
 "documentation."
-msgstr ""
+msgstr "你应该熟悉 git 的使用方法。这样便可以查看构成文档的文件在不同版本之间有哪些变化。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:104
+#, fuzzy
 msgid ""
 "For example, to view the differences between revisions `abff932fe8` and "
 "`2191c44469` of [.filename]#documentation/content/en/articles/committers-"
 "guide/_index.adoc#, run:"
-msgstr ""
+msgstr "例如，要查看 [.filename]#documentation/content/en/articles/committers-guide/_index.adoc# 文件在修订版本 `abff932fe8` 和 `2191c44469` 之间的差异，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git diff abff932fe8 2191c44469 documentation/content/en/articles/committers-guide/_index.adoc\n"
-msgstr ""
+msgstr "% git diff abff932fe8 2191c44469 documentation/content/en/articles/committers-guide/_index.adoc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:111
+#, fuzzy
 msgid ""
 "Please see the complete explanation of using Git in FreeBSD in the extref:"
 "{handbook}mirrors[FreeBSD Handbook, git]."
-msgstr ""
+msgstr "关于在 FreeBSD 中使用 Git 的完整说明，请参阅 extref:{handbook}mirrors[FreeBSD 手册，git]。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How do I find out who else might be translating to the same language?"
-msgstr ""
+msgstr "如何知道是否有人正在将文档翻译成同一种语言？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:117
+#, fuzzy
 msgid ""
 "The https://www.FreeBSD.org/docproj/translations/[Documentation Project "
 "translations page] lists the translation efforts that are currently known "
 "about.  If others are already working on translating documentation to your "
 "language, please do not duplicate their efforts.  Instead, contact them to "
 "see how you can help."
-msgstr ""
+msgstr "link:https://www.FreeBSD.org/docproj/translations/[文档项目翻译页面]列出了目前已知的翻译工作。如果已经有人在将文档翻译成你的语言，请不要重复他们的工作，而应联系他们，了解如何提供帮助。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:119
+#, fuzzy
 msgid ""
 "If no one is listed on that page as translating for your language, then send "
 "a message to the {freebsd-doc} in case someone else is thinking of doing a "
 "translation, but has not announced it yet."
-msgstr ""
+msgstr "如果该页面没有列出任何正在翻译你所用语言的人员，请向 {freebsd-doc} 发送消息，以便了解是否有人正在考虑翻译但尚未公布。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No one else is translating to my language. What do I do?"
-msgstr ""
+msgstr "没有其他人在翻译成我的语言。我该怎么办？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:124
+#, fuzzy
 msgid ""
 "Congratulations, you have just started the \"FreeBSD _your-language-here_ "
 "Documentation Translation Project\".  Welcome aboard."
-msgstr ""
+msgstr "恭喜，你刚刚发起了“FreeBSD __your-language-here__ 文档翻译项目”。欢迎加入。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:127
+#, fuzzy
 msgid ""
 "First, decide whether or not you have got the time to spare.  Since you are "
 "the only person working on your language at the moment it is going to be "
 "your responsibility to publicize your work and coordinate any volunteers "
 "that might want to help you."
-msgstr ""
+msgstr "首先，考虑一下自己是否有足够的空闲时间。目前你是唯一参与该语言翻译的人，因此你需要负责宣传自己的工作，并协调可能希望提供帮助的志愿者。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:129
+#, fuzzy
 msgid ""
 "Write an email to the Documentation Project mailing list, announcing that "
 "you are going to translate the documentation, so the Documentation Project "
 "translations page can be maintained."
-msgstr ""
+msgstr "请给文档项目邮件列表发送一封电子邮件，宣布你将开始翻译文档，以便维护文档项目翻译页面。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:131
+#, fuzzy
 msgid ""
 "If there is already someone in your country providing FreeBSD mirroring "
 "services you should contact them and ask if you can have some webspace for "
 "your project, and possibly an email address or mailing list services."
-msgstr ""
+msgstr "如果你所在的国家或地区已经有人提供 FreeBSD 镜像服务，应联系他们，询问能否为你的项目提供一些网页空间，以及是否可能提供电子邮件地址或邮件列表服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:134
+#, fuzzy
 msgid ""
 "Then pick a document and start translating.  It is best to start with "
 "something fairly small - either the FAQ, or one of the tutorials."
-msgstr ""
+msgstr "然后选一份文档开始翻译。最好从较短的内容开始，例如常见问题解答或某个教程。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I have translated some documentation, where do I send it?"
-msgstr ""
+msgstr "我已经翻译了一些文档，应该提交到哪里？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:139
+#, fuzzy
 msgid ""
 "That depends.  If you are already working with a translation team (such as "
 "the Japanese team, or the German team) then they will have their own "
 "procedures for handling submitted documentation, and these will be outlined "
 "on their web pages."
-msgstr ""
+msgstr "这要视情况而定。如果你已经在某个翻译团队中工作（例如日语团队或德语团队），他们会有自己的文档提交处理流程，并会在其网站上说明。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:141
+#, fuzzy
 msgid ""
 "If you are the only person working on a particular language (or you are "
 "responsible for a translation project and want to submit your changes back "
 "to the FreeBSD project) then you should send your translation to the FreeBSD "
 "project (see the next question)."
-msgstr ""
+msgstr "如果你是某种语言的唯一译者（或者你负责某个翻译项目并希望将更改提交回 FreeBSD 项目），则应将译文提交给 FreeBSD 项目（见下一个问题）。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I am the only person working on translating to this language, how do I submit my translation?"
-msgstr ""
+msgstr "我是唯一一个将文档翻译成这种语言的人，该如何提交译文？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:146
+#, fuzzy
 msgid ""
 "First, make sure your translation is organized properly.  This means that it "
 "should drop into the existing documentation tree and build straight away."
-msgstr ""
+msgstr "首先，确保译文的组织结构正确。这意味着译文应能直接放入现有文档树并立即构建。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:151
+#, fuzzy
 msgid ""
 "Hugo needs the language codes in lowercase.  For example, instead of `pt_BR` "
 "Hugo uses `pt-br`."
-msgstr ""
+msgstr "Hugo 要求语言代码使用小写字母。例如，Hugo 使用 `pt-br`，而不是 `pt_BR`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:155
+#, fuzzy
 msgid ""
 "Currently, the FreeBSD documentation is stored in a top level directory "
 "called [.filename]#documentation/#.  Directories below this are named "
 "according to the language code they are written in, as defined in ISO639 ([."
 "filename]#/usr/share/misc/iso639# on a version of FreeBSD newer than 20th "
 "January 1999)."
-msgstr ""
+msgstr "目前，FreeBSD 文档存放在名为 [.filename]#documentation/# 的顶级目录中。其下的目录根据文档所用语言的代码命名，语言代码由 ISO639 定义（在 1999 年 1 月 20 日之后发布的 FreeBSD 版本中，位于 [.filename]#/usr/share/misc/iso639#）。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:157
+#, fuzzy
 msgid ""
 "If your language can be encoded in different ways (for example, Chinese) "
 "then there should be directories below this, one for each encoding format "
 "you have provided."
-msgstr ""
+msgstr "如果你的语言可以使用不同编码（例如中文），则应在该目录下为你提供的每种编码格式分别创建目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:159
+#, fuzzy
 msgid "Finally, you should have directories for each document."
-msgstr ""
+msgstr "最后，应为每份文档分别创建目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:161
+#, fuzzy
 msgid "For example, a hypothetical Swedish translation might look like:"
-msgstr ""
+msgstr "例如，假设瑞典语译文的目录结构如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "documentation/\n"
 "  content/\n"
@@ -333,203 +363,223 @@ msgid ""
 "      books/\n"
 "        faq/\n"
 "          _index.adoc\n"
-msgstr ""
+msgstr "documentation/\n  content/\n    sv/\n      books/\n        faq/\n          _index.adoc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:174
+#, fuzzy
 msgid ""
 "`sv` is the name of the translation, in [.filename]#lang# form.  Note the "
 "two Makefiles, which will be used to build the documentation."
-msgstr ""
+msgstr "`sv` 是译文的名称，采用 [.filename]#lang# 格式。请注意，其中有两个 Makefile，它们用于构建文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:176
+#, fuzzy
 msgid ""
 "Use git diff command to generate a diff and send it to the link:https://"
 "reviews.freebsd.org/[reviews system]."
-msgstr ""
+msgstr "使用 git diff 命令生成差异文件，并将其发送到 link:https://reviews.freebsd.org/[评审系统]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git diff > sv-faq.diff\n"
-msgstr ""
+msgstr "% git diff > sv-faq.diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:184
+#, fuzzy
 msgid ""
 "You should use Bugzilla to link:https://bugs.freebsd.org/bugzilla/enter_bug."
 "cgi[submit a report] indicating that you have submitted the documentation.  "
 "It would be very helpful if you could get other people to look over your "
 "translation and double check it first, since it is unlikely that the person "
 "committing it will be fluent in the language."
-msgstr ""
+msgstr "你应使用 Bugzilla link:https://bugs.freebsd.org/bugzilla/enter_bug.cgi[提交报告]，说明你已提交文档。如果能请其他人先审阅并仔细检查译文，将会很有帮助，因为负责提交译文的人很可能不熟悉该语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:187
+#, fuzzy
 msgid ""
 "Someone (probably the Documentation Project Manager, currently {doceng}) "
 "will then take your translation and confirm that it builds.  In particular, "
 "the following things will be looked at:"
-msgstr ""
+msgstr "随后，有人（可能是文档项目经理，目前为 {doceng}）会接收你的译文并确认其可以构建。具体会检查以下事项："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:189
+#, fuzzy
 msgid "Does `make` in the [.filename]#root# directory work correctly?"
-msgstr ""
+msgstr "在 [.filename]#root# 目录中运行 `make` 是否能正常工作？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:191
+#, fuzzy
 msgid ""
 "If there are any problems then whoever is looking at the submission will get "
 "back to you to work them out."
-msgstr ""
+msgstr "如果存在问题，审阅提交的人会联系你，一起解决这些问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:193
+#, fuzzy
 msgid ""
 "If there are no problems your translation will be committed as soon as "
 "possible."
-msgstr ""
+msgstr "如果没有问题，你的译文会尽快提交。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can I include language or country specific text in my translation?"
-msgstr ""
+msgstr "我可以在译文中加入特定于语言或国家的文本吗？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:197
+#, fuzzy
 msgid "We would prefer that you did not."
-msgstr ""
+msgstr "我们希望你不要这样做。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:199
+#, fuzzy
 msgid ""
 "For example, suppose that you are translating the Handbook to Korean, and "
 "want to include a section about retailers in Korea in your Handbook."
-msgstr ""
+msgstr "例如，假设你正在将手册翻译成韩语，并希望在手册中加入一节介绍韩国的零售商。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:203
+#, fuzzy
 msgid ""
 "There is no real reason why that information should not be in the English "
 "(or German, or Spanish, or Japanese, or ...) versions as well.  It is "
 "feasible that an English speaker in Korea might try to pick up a copy of "
 "FreeBSD whilst over there.  It also helps increase FreeBSD's perceived "
 "presence around the globe, which is not a bad thing."
-msgstr ""
+msgstr "没有理由不把这些信息也加入英语、德语、西班牙语、日语等版本中。身在韩国的英语使用者也可能会尝试在那里购买一份 FreeBSD。这还有助于提升 FreeBSD 在全球的知名度，这并非坏事。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:205
+#, fuzzy
 msgid ""
 "If you have country specific information, please submit it as a change to "
 "the English Handbook (using Bugzilla) and then translate the change back to "
 "your language in the translated Handbook."
-msgstr ""
+msgstr "如果你有特定于某个国家的信息，请使用 Bugzilla 将其作为更改提交到英语版手册，然后再将这项更改翻译到手册译文中。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:207
+#, fuzzy
 msgid "Thanks."
-msgstr ""
+msgstr "谢谢。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Addressing the reader"
-msgstr ""
+msgstr "称呼读者"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:211
+#, fuzzy
 msgid ""
 "In the English documents, the reader is addressed as \"you\", there is no "
 "formal/informal distinction as there is in some languages."
-msgstr ""
+msgstr "在英语文档中，读者被称为“you”，不像某些语言那样区分正式和非正式称呼。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:214
+#, fuzzy
 msgid ""
 "If you are translating to a language which does distinguish, use whichever "
 "form is typically used in other technical documentation in your language.  "
 "If in doubt, use a mildly polite form."
-msgstr ""
+msgstr "如果目标语言确实有这种区分，请采用该语言其他技术文档通常使用的称呼方式。如有疑问，请使用较为礼貌的形式。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Do I need to include any additional information in my translations?"
-msgstr ""
+msgstr "译文中需要包含其他信息吗？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:218
+#, fuzzy
 msgid "Yes."
-msgstr ""
+msgstr "需要。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:220
+#, fuzzy
 msgid ""
 "The header of the English version of each document will look something like "
 "this:"
-msgstr ""
+msgstr "每份英语文档的标题部分大致如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " ---\n"
 " title: Why you should use a BSD style license for your Open Source Project\n"
 " releaseinfo: \"$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 53942 2020-03-01 12:23:40Z carlavilla $\"\n"
 " trademarks: [\"freebsd\", \"intel\", \"general\"]\n"
 " ---\n"
-msgstr ""
+msgstr " ---\n title: Why you should use a BSD style license for your Open Source Project\n releaseinfo: \"$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 53942 2020-03-01 12:23:40Z carlavilla $\"\n trademarks: [\"freebsd\", \"intel\", \"general\"]\n ---\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " = Why you should use a BSD style license for your Open Source Project\n"
-msgstr ""
+msgstr " = Why you should use a BSD style license for your Open Source Project\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:234
+#, fuzzy
 msgid ""
 "The exact boilerplate may change, but it will always include a $FreeBSD$ "
 "line and the phrase `The FreeBSD Documentation Project`.  Note that the "
 "$FreeBSD$ part is expanded automatically by Git, so it should be empty (just "
 "`$FreeBSD$`) for new files."
-msgstr ""
+msgstr "具体的样板文本可能会变化，但始终会包含一行 $FreeBSD$ 和短语 `The FreeBSD Documentation Project`。请注意，Git 会自动展开 $FreeBSD$ 部分，因此新文件中的该部分应为空（仅为 `$FreeBSD$`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:236
+#, fuzzy
 msgid ""
 "Your translated documents should include their own FreeBSD line, and change "
 "the `FreeBSD Documentation Project` line to `The FreeBSD _language_ "
 "Documentation Project`."
-msgstr ""
+msgstr "译文应包含自己的 FreeBSD 行，并将 `FreeBSD Documentation Project` 一行改为 `The FreeBSD __language__ Documentation Project`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:238
+#, fuzzy
 msgid ""
 "In addition, you should add a third line which indicates which revision of "
 "the English text this is based on."
-msgstr ""
+msgstr "此外，还应添加第三行，注明译文所依据的英语文本修订版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:240
+#, fuzzy
 msgid "So, the Spanish version of this file might start:"
-msgstr ""
+msgstr "因此，本文件的西班牙语版本可能会以如下内容开头："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " ---\n"
 " title: Soporte para segundos intercalares en FreeBSD\n"
 " releaseinfo: \"$FreeBSD: head/es_ES.ISO8859-1/articles/leap-seconds/article.xml 53090 2019-06-01 17:52:59Z carlavilla $\"\n"
 " ---\n"
-msgstr ""
+msgstr " ---\n title: Soporte para segundos intercalares en FreeBSD\n releaseinfo: \"$FreeBSD: head/es_ES.ISO8859-1/articles/leap-seconds/article.xml 53090 2019-06-01 17:52:59Z carlavilla $\"\n ---\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/translations/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " = Soporte para segundos intercalares en FreeBSD\n"
-msgstr ""
+msgstr " = Soporte para segundos intercalares en FreeBSD\n"

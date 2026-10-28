@@ -27,9 +27,9 @@ msgstr "PC Card"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 16. PC Card"
-msgstr ""
+msgstr "第 16 章 PC 卡"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:51
@@ -102,6 +102,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:65
+#, fuzzy
 msgid ""
 "Due to this practice, FreeBSD drivers usually rely on numeric IDs for device "
 "identification. Using numeric IDs and a centralized database complicates "
@@ -112,7 +113,7 @@ msgid ""
 "manufacturers of LAN hardware that often sell the same design. These same "
 "designs can be sold in Japan under names such as Buffalo and Corega. Often, "
 "these devices will all have the same manufacturer and product IDs."
-msgstr ""
+msgstr "由于这种做法，FreeBSD 驱动程序通常依靠数字 ID 来识别设备。使用数字 ID 和集中式数据库会增加向系统添加 ID 和卡支持的复杂性。必须仔细核实卡的实际制造商，尤其是在该卡的制造商似乎已经在中央数据库中列有不同制造商 ID 的情况下。Linksys、D-Link 和 NetGear 是一些美国 LAN 硬件制造商，它们经常销售相同的设计。这些相同的设计也可能以 Buffalo 和 Corega 等名称在日本销售。这些设备通常都具有相同的制造商和产品 ID。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:67
@@ -148,9 +149,9 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Format of [.filename]#pccarddevs#"
-msgstr ""
+msgstr "[.filename]#pccarddevs# 的格式"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:74
@@ -236,19 +237,19 @@ msgstr "文件的第二节包含产品. 如你在下面例子中看到的:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* Allied Telesis K.K. */\n"
 "product ALLIEDTELESIS LA_PCM\t0x0002 Allied Telesis LA-PCM\n"
-msgstr ""
+msgstr "/* Allied Telesis K.K. */\nproduct ALLIEDTELESIS LA_PCM\t0x0002 Allied Telesis LA-PCM\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* Archos */\n"
 "product\tARCHOS ARC_ATAPI\t0x0043 MiniCD\n"
-msgstr ""
+msgstr "/* Archos */\nproduct\tARCHOS ARC_ATAPI\t0x0043 MiniCD\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:99
@@ -277,13 +278,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:101
+#, fuzzy
 msgid ""
 "The third section is like the previous vendor section, but with all of the "
 "manufacturer numeric IDs set to `-1`, meaning \"match anything found\" in "
 "the FreeBSD pccard bus code. Since these are C identifiers, their names must "
 "be unique. Otherwise the format is identical to the first section of the "
 "file."
-msgstr ""
+msgstr "第三部分与前面的厂商部分类似，但所有制造商数字 ID 都设为 `-1`，表示在 FreeBSD pccard 总线代码中“匹配找到的任何内容”。由于这些是 C 标识符，其名称必须唯一。除此之外，格式与文件的第一部分相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:103
@@ -380,18 +382,18 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "wi_pccard_probe(dev)\n"
 "\tdevice_t\tdev;\n"
 "{\n"
 "\tconst struct pccard_product *pp;\n"
-msgstr ""
+msgstr "static int\nwi_pccard_probe(dev)\n\tdevice_t\tdev;\n{\n\tconst struct pccard_product *pp;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tif ((pp = pccard_product_lookup(dev, wi_pccard_products,\n"
 "\t    sizeof(wi_pccard_products[0]), NULL)) != NULL) {\n"
@@ -401,7 +403,7 @@ msgid ""
 "\t}\n"
 "\treturn (ENXIO);\n"
 "}\n"
-msgstr ""
+msgstr "\tif ((pp = pccard_product_lookup(dev, wi_pccard_products,\n\t    sizeof(wi_pccard_products[0]), NULL)) != NULL) {\n\t\tif (pp->pp_name != NULL)\n\t\t\tdevice_set_desc(dev, pp->pp_name);\n\t\treturn (0);\n\t}\n\treturn (ENXIO);\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:144
@@ -426,6 +428,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:146
+#, fuzzy
 msgid ""
 "Looking at the table `wi_pccard_products`, one notices that all the entries "
 "are of the form `PCMCIA_CARD(_foo_, _bar_, _baz_)`. The _foo_ part is the "
@@ -437,7 +440,7 @@ msgid ""
 "and `PCMCIA_CARD2_D` which are used when you need to match both CIS strings "
 "and manufacturer numbers, in the \"use the default description\" and \"take "
 "the description from pccarddevs\" flavors."
-msgstr ""
+msgstr "查看表 `wi_pccard_products`，可以发现所有条目都采用 `PCMCIA_CARD(__foo__, __bar__, __baz__)` 的形式。__foo__ 部分是 [.filename]#pccarddevs# 中的制造商 ID。__bar__ 部分是产品 ID。__baz__ 是此卡预期的功能编号。许多 pccard 卡可以有多个功能，因此需要某种方式来区分功能 1 和功能 0。你可能会看到 `PCMCIA_CARD_D`，它包含 [.filename]#pccarddevs# 中的设备描述。你也可能会看到 `PCMCIA_CARD2` 和 `PCMCIA_CARD2_D`，它们用于在需要同时匹配 CIS 字符串和制造商编号时，分别采用“使用默认描述”和“从 pccarddevs 获取描述”这两种方式。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:148
@@ -473,11 +476,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:161
+#, fuzzy
 msgid ""
 "`manufacturer` and `product` are the numeric IDs for this product, while "
 "`cisvendor` and `cisproduct` are the product description strings from the "
 "CIS."
-msgstr ""
+msgstr "`manufacturer` 和 `product` 是此产品的数字 ID，而 `cisvendor` 和 `cisproduct` 是 CIS 中的产品描述字符串。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pccard/_index.adoc:163

@@ -17,41 +17,43 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A sample Makefile that can be used to create a new FreeBSD Port"
-msgstr ""
+msgstr "可用于创建新的 FreeBSD 移植包的示例 Makefile"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 14. A Sample Makefile"
-msgstr ""
+msgstr "第 14 章 示例 Makefile"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Sample Makefile"
-msgstr ""
+msgstr "示例 Makefile"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:51
+#, fuzzy
 msgid ""
 "Here is a sample [.filename]#Makefile# that can be used to create a new port."
-msgstr ""
+msgstr "下面是一个可用于创建新移植包的示例 [.filename]#Makefile#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:55
+#, fuzzy
 msgid ""
 "The format shown is the recommended one for crossref:order[, ordering] "
 "variables, empty lines between sections, and so on.  This format is designed "
 "so that the most important information is easy to locate.  Refer to crossref:"
 "testing[, the chapter about testing] to learn more about tools for linting, "
 "formatting, and checking the [.filename]#Makefile#."
-msgstr ""
+msgstr "所示格式是推荐格式，适用于 crossref:order[, 排序]变量、各部分之间的空行等。此格式旨在让最重要的信息易于查找。有关 lint、格式化和检查 [.filename]#Makefile# 的工具，请参阅 crossref:testing[, 测试章节]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:66
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PORTNAME=\txdvi <1>\n"
 "DISTVERSION=\t18.2\n"
@@ -61,115 +63,116 @@ msgid ""
 "PKGNAMEPREFIX=\tja-\n"
 "DISTNAME=\txdvi-pl18\n"
 "EXTRACT_SUFX=\t.tar.Z <3>\n"
-msgstr ""
+msgstr "PORTNAME=\txdvi <1>\nDISTVERSION=\t18.2\nCATEGORIES=\tprint\nMASTER_SITES=\t${MASTER_SITE_XCONTRIB} <2>\nMASTER_SITE_SUBDIR=\tapplications\nPKGNAMEPREFIX=\tja-\nDISTNAME=\txdvi-pl18\nEXTRACT_SUFX=\t.tar.Z <3>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PATCH_SITES=\tftp://ftp.sra.co.jp/pub/X11/japanese/ <4>\n"
 "PATCHFILES=\txdvi-18.patch1.gz xdvi-18.patch2.gz\n"
 "PATCH_DIST_STRIP=\t-p1 <5>\n"
-msgstr ""
+msgstr "PATCH_SITES=\tftp://ftp.sra.co.jp/pub/X11/japanese/ <4>\nPATCHFILES=\txdvi-18.patch1.gz xdvi-18.patch2.gz\nPATCH_DIST_STRIP=\t-p1 <5>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:74
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "MAINTAINER=\tasami@FreeBSD.org <6>\n"
 "COMMENT=\tDVI Previewer for the X Window System\n"
 "WWW=\t\thttp://xdvi.sourceforge.net/\n"
-msgstr ""
+msgstr "MAINTAINER=\tasami@FreeBSD.org <6>\nCOMMENT=\tDVI Previewer for the X Window System\nWWW=\t\thttp://xdvi.sourceforge.net/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "LICENSE=\tBSD2CLAUSE <7>\n"
 "LICENSE_FILE=\t${WRKSRC}/LICENSE\n"
-msgstr ""
+msgstr "LICENSE=\tBSD2CLAUSE <7>\nLICENSE_FILE=\t${WRKSRC}/LICENSE\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RUN_DEPENDS=\tgs:print/ghostscript <8>\n"
-msgstr ""
+msgstr "RUN_DEPENDS=\tgs:print/ghostscript <8>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "USES=\t\tgmake <9>\n"
-msgstr ""
+msgstr "USES=\t\tgmake <9>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<10>\n"
 "IS_INTERACTIVE=\tyes <11>\n"
 "WRKSRC=\t\t${WRKDIR}/xdvi-new <12>\n"
 "GNU_CONFIGURE=\tyes <13>\n"
-msgstr ""
+msgstr "<10>\nIS_INTERACTIVE=\tyes <11>\nWRKSRC=\t\t${WRKDIR}/xdvi-new <12>\nGNU_CONFIGURE=\tyes <13>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<14>\n"
 "OPTIONS_DEFINE=\tDOCS EXAMPLES FOO\n"
 "OPTIONS_DEFAULT=FOO\n"
 "OPTIONS_SUB=\tyes <15>\n"
-msgstr ""
+msgstr "<14>\nOPTIONS_DEFINE=\tDOCS EXAMPLES FOO\nOPTIONS_DEFAULT=FOO\nOPTIONS_SUB=\tyes <15>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "FOO_DESC=\t\tEnable foo support\n"
 "FOO_CONFIGURE_ENABLE=\tfoo\n"
-msgstr ""
+msgstr "FOO_DESC=\t\tEnable foo support\nFOO_CONFIGURE_ENABLE=\tfoo\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<16>\n"
 "MY_FAVORITE_RESPONSE=\t\"yeah, right\"\n"
-msgstr ""
+msgstr "<16>\nMY_FAVORITE_RESPONSE=\t\"yeah, right\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<17>\n"
 "pre-fetch:\n"
 "\ti go fetch something, yeah\n"
-msgstr ""
+msgstr "<17>\npre-fetch:\n\ti go fetch something, yeah\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-patch:\n"
 "\ti need to do something after patch, great\n"
-msgstr ""
+msgstr "post-patch:\n\ti need to do something after patch, great\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pre-install:\n"
 "\tand then some more stuff before installing, wow\n"
-msgstr ""
+msgstr "pre-install:\n\tand then some more stuff before installing, wow\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.port.mk> <18>\n"
-msgstr ""
+msgstr ".include <bsd.port.mk> <18>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:114
+#, fuzzy
 msgid ""
 "Section to describe the port itself and the master site -- `PORTNAME` and "
 "`PORTVERSION` or the `DISTVERSION*` variables are always first, followed by "
@@ -177,106 +180,123 @@ msgid ""
 "`MASTER_SITE_SUBDIR`.  `PKGNAMEPREFIX` and `PKGNAMESUFFIX`, if needed, will "
 "be after that.  Then comes `DISTNAME`, `EXTRACT_SUFX` and/or `DISTFILES`, "
 "and then `EXTRACT_ONLY`, as necessary."
-msgstr ""
+msgstr "用于描述移植包本身和主站点的部分——`PORTNAME` 和 `PORTVERSION` 或 `DISTVERSION*` 变量始终放在最前面，后面是 `CATEGORIES`，然后是 `MASTER_SITES`，其后可以接 `MASTER_SITE_SUBDIR`。如有需要，接下来是 `PKGNAMEPREFIX` 和 `PKGNAMESUFFIX`。然后是 `DISTNAME`、`EXTRACT_SUFX` 和／或 `DISTFILES`，最后在必要时添加 `EXTRACT_ONLY`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:115
+#, fuzzy
 msgid ""
 "Do not forget the trailing slash (`/`) if not using `MASTER_SITE_*` macros."
-msgstr ""
+msgstr "如果不使用 `MASTER_SITE_*` 宏，别忘了末尾的斜杠（`/`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:116
+#, fuzzy
 msgid "Set this if the source is not in the standard \".tar.gz\" form."
-msgstr ""
+msgstr "如果源文件不是标准的 \".tar.gz\" 格式，请设置此项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:117
+#, fuzzy
 msgid "Section for distributed patches -- can be empty."
-msgstr ""
+msgstr "用于分发补丁的部分——可以留空。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:118
+#, fuzzy
 msgid ""
 "If the distributed patches were not made relative to `WRKSRC`, this may need "
 "to be tweaked."
-msgstr ""
+msgstr "如果分发的补丁不是相对于 `WRKSRC` 创建的，可能需要调整此项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:121
+#, fuzzy
 msgid ""
 "Maintainer; *mandatory*! This is the person who is volunteering to handle "
 "port updates, build breakages, and to whom a users can direct questions and "
 "bug reports.  To keep the quality of the Ports Collection as high as "
 "possible, we do not accept new ports that are assigned to \"ports@FreeBSD.org"
 "\"."
-msgstr ""
+msgstr "维护者；*必须填写*！此人自愿负责处理移植包更新和构建故障，用户也可以向其提出问题和提交错误报告。为尽可能保证 Ports Collection 的质量，我们不接受维护者指定为 \"ports@FreeBSD.org\" 的新移植包。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:122
+#, fuzzy
 msgid "License -- should not be empty."
-msgstr ""
+msgstr "许可证——不得留空。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:123
+#, fuzzy
 msgid "Dependencies -- can be empty."
-msgstr ""
+msgstr "依赖项——可以留空。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:125
+#, fuzzy
 msgid ""
 "If the port requires GNU make instead of the default FreeBSD `make` (man:"
 "make[1]) to build.  For example, some X applications require `xmkmf -a` to "
 "run, in which case the port would need `USES=imake`."
-msgstr ""
+msgstr "如果构建时需要使用 GNU make，而不是 FreeBSD 默认的 `make`（man:make[1]）。例如，某些 X 应用程序需要运行 `xmkmf -a`，此时移植包需要设置 `USES=imake`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:126
+#, fuzzy
 msgid ""
 "This section is for other standard [.filename]#bsd.port.mk# variables that "
 "do not belong to any of the above."
-msgstr ""
+msgstr "此部分用于设置不属于上述任何类别的其他标准 [.filename]#bsd.port.mk# 变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:127
+#, fuzzy
 msgid ""
 "If the ports asks interactive questions during configure, build, install."
-msgstr ""
+msgstr "如果移植包在配置、构建或安装期间会提出交互式问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:128
+#, fuzzy
 msgid "If it extracts to a directory other than `DISTNAME`."
-msgstr ""
+msgstr "如果解压后的目录不是 `DISTNAME`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:129
+#, fuzzy
 msgid ""
 "If it requires a `configure` script generated by GNU autoconf to be run."
-msgstr ""
+msgstr "如果需要运行由 GNU autoconf 生成的 `configure` 脚本。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:130
+#, fuzzy
 msgid "This section is for handling ports options."
-msgstr ""
+msgstr "此部分用于处理移植包选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:131
+#, fuzzy
 msgid ""
 "Set `OPTIONS_SUB` if options will change the list of files in the crossref:"
 "plist[plist-sub, plist]."
-msgstr ""
+msgstr "如果选项会更改 crossref:plist[plist-sub, plist] 中的文件列表，请设置 `OPTIONS_SUB`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:132
+#, fuzzy
 msgid "Non-standard variables to be used in the rules below."
-msgstr ""
+msgstr "供以下规则使用的非标准变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:133
+#, fuzzy
 msgid "Special rules, in the order they are called by the ports framework."
-msgstr ""
+msgstr "特殊规则，按移植包框架调用的顺序排列。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-samplem/_index.adoc:133
+#, fuzzy
 msgid "Finally, the epilogue."
-msgstr ""
+msgstr "最后是收尾部分。"

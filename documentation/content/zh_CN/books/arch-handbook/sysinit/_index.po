@@ -27,9 +27,9 @@ msgstr ">SYSINIT框架"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 5. The SYSINIT Framework"
-msgstr ""
+msgstr "第 5 章 SYSINIT 框架"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:51
@@ -160,9 +160,9 @@ msgstr "头文件"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "<sys/kernel.h>\n"
-msgstr ""
+msgstr "<sys/kernel.h>\n"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:79
@@ -205,40 +205,40 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of a `SYSINIT()`"
-msgstr ""
+msgstr "`SYSINIT()` 示例"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:97
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#include <sys/kernel.h>\n"
-msgstr ""
+msgstr "#include <sys/kernel.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "void foo_null(void *unused)\n"
 "{\n"
 "        foo_doo();\n"
 "}\n"
 "SYSINIT(foo, SI_SUB_FOO, SI_ORDER_FOO, foo_null, NULL);\n"
-msgstr ""
+msgstr "void foo_null(void *unused)\n{\n        foo_doo();\n}\nSYSINIT(foo, SI_SUB_FOO, SI_ORDER_FOO, foo_null, NULL);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct foo foo_voodoo = {\n"
 "        FOO_VOODOO;\n"
 "}\n"
-msgstr ""
+msgstr "struct foo foo_voodoo = {\n        FOO_VOODOO;\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "void foo_arg(void *vdata)\n"
 "{\n"
@@ -246,7 +246,7 @@ msgid ""
 "        foo_data(foo);\n"
 "}\n"
 "SYSINIT(bar, SI_SUB_FOO, SI_ORDER_FOO, foo_arg, &foo_voodoo);\n"
-msgstr ""
+msgstr "void foo_arg(void *vdata)\n{\n        struct foo *foo = (struct foo *)vdata;\n        foo_data(foo);\n}\nSYSINIT(bar, SI_SUB_FOO, SI_ORDER_FOO, foo_arg, &foo_voodoo);\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:118
@@ -266,34 +266,34 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of Adjusting `SYSINIT()` Order"
-msgstr ""
+msgstr "调整 `SYSINIT()` 顺序的示例"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static void\n"
 "mptable_register(void *dummy __unused)\n"
 "{\n"
-msgstr ""
+msgstr "static void\nmptable_register(void *dummy __unused)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tapic_register_enumerator(&mptable_enumerator);\n"
 "}\n"
-msgstr ""
+msgstr "\tapic_register_enumerator(&mptable_enumerator);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SYSINIT(mptable_register, SI_SUB_TUNABLES - 1, SI_ORDER_FIRST,\n"
 "    mptable_register, NULL);\n"
-msgstr ""
+msgstr "SYSINIT(mptable_register, SI_SUB_TUNABLES - 1, SI_ORDER_FIRST,\n    mptable_register, NULL);\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:137
@@ -303,43 +303,44 @@ msgstr "关闭"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:140
+#, fuzzy
 msgid ""
 "The `SYSUNINIT()` macro behaves similarly to the `SYSINIT()` macro except "
 "that it adds the SYSINIT data to SYSINIT's shutdown data set."
-msgstr ""
+msgstr "`SYSUNINIT()` 宏的行为与 `SYSINIT()` 宏类似，但它会将 SYSINIT 数据添加到 SYSINIT 的关闭数据集中。"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of a `SYSUNINIT()`"
-msgstr ""
+msgstr "`SYSUNINIT()` 的示例"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "void foo_cleanup(void *unused)\n"
 "{\n"
 "        foo_kill();\n"
 "}\n"
 "SYSUNINIT(foobar, SI_SUB_FOO, SI_ORDER_FOO, foo_cleanup, NULL);\n"
-msgstr ""
+msgstr "void foo_cleanup(void *unused)\n{\n        foo_kill();\n}\nSYSUNINIT(foobar, SI_SUB_FOO, SI_ORDER_FOO, foo_cleanup, NULL);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct foo_stack foo_stack = {\n"
 "        FOO_STACK_VOODOO;\n"
 "}\n"
-msgstr ""
+msgstr "struct foo_stack foo_stack = {\n        FOO_STACK_VOODOO;\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sysinit/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "void foo_flush(void *vdata)\n"
 "{\n"
 "}\n"
 "SYSUNINIT(barfoo, SI_SUB_FOO, SI_ORDER_FOO, foo_flush, &foo_stack);\n"
-msgstr ""
+msgstr "void foo_flush(void *vdata)\n{\n}\nSYSUNINIT(barfoo, SI_SUB_FOO, SI_ORDER_FOO, foo_flush, &foo_stack);\n"

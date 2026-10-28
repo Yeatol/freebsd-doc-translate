@@ -17,40 +17,44 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/partii.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Vision"
-msgstr ""
+msgstr "第二部分：视觉"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/partii.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vision"
-msgstr ""
+msgstr "视觉"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/partii.adoc:15
+#, fuzzy
 msgid "Section for Assistive technologies for vision accessibility."
-msgstr ""
+msgstr "视觉无障碍辅助技术部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/partii.adoc:17
+#, fuzzy
 msgid ""
 "The operating system provides two main interfaces for user interaction: "
 "Virtual Terminal and several Desktop Environments."
-msgstr ""
+msgstr "操作系统提供两种主要的用户交互界面：虚拟终端和多个桌面环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/partii.adoc:21
+#, fuzzy
 msgid ""
 "Virtual Terminal, commonly referenced and documented as man:vt[4] is the "
 "system's built-in extref:{handbook}ports[virtual console].  It is installed "
 "by default, provides a command-line interface, and starts automatically at "
 "boot.  Its features relevant to vision accessibility are detailed in the "
 "crossref:virtual-terminal[virtual-terminal,Virtual Terminal] chapter."
-msgstr ""
+msgstr "虚拟终端通常以 man:vt[4] 引用和记录，是系统内置的 extref:{handbook}ports[虚拟控制台]。它默认安装，提供命令行界面，并在启动时自动运行。有关其视觉无障碍功能的详细信息，请参阅 crossref:virtual-terminal[virtual-terminal,虚拟终端] 章节。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/partii.adoc:25
+#, fuzzy
 msgid ""
 "Desktop environments provide graphical elements, such as windows, menus, "
 "buttons, and so on.  They can be installed using extref:{handbook}"
@@ -60,4 +64,4 @@ msgid ""
 "explains how to install, configure, and use color schemes, themes, and "
 "visual accessibility features designed to support users with low vision or "
 "blindness in graphical environments."
-msgstr ""
+msgstr "桌面环境提供图形界面元素，例如窗口、菜单、按钮等。可以使用 extref:{handbook}ports[Ports 和软件包] 安装桌面环境；请参阅《FreeBSD 手册》中的 extref:{handbook}x11[X Window 系统]、extref:{handbook}wayland[Wayland] 和 extref:{handbook}desktop[桌面环境] 章节。本节介绍如何安装、配置和使用配色方案、主题以及视觉无障碍功能，以帮助在图形环境中使用计算机的低视力或失明用户。"

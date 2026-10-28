@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/fonts/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A description of the various font technologies in FreeBSD, and how to use them with different programs"
-msgstr ""
+msgstr "介绍 FreeBSD 中的各种字体技术，以及如何在不同程序中使用它们"
 
 #. type: Title =
 #: documentation/content/en/articles/fonts/_index.adoc:1
 #: documentation/content/en/articles/fonts/_index.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fonts and FreeBSD"
-msgstr ""
+msgstr "字体与 FreeBSD"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:44
@@ -37,12 +37,13 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:47
+#, fuzzy
 msgid ""
 "This document contains a description of the various font files that may be "
 "used with FreeBSD and the syscons driver, X11, Ghostscript and Groff.  "
 "Cookbook examples are provided for switching the syscons display to 80x60 "
 "mode, and for using type 1 fonts with the above application programs."
-msgstr ""
+msgstr "本文介绍了可与 FreeBSD 及 syscons 驱动程序、X11、Ghostscript 和 Groff 配合使用的各种字体文件，并提供了将 syscons 显示切换到 80x60 模式，以及在上述应用程序中使用 Type 1 字体的示例。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:49
@@ -57,148 +58,160 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:58
+#, fuzzy
 msgid ""
 "There are many sources of fonts available, and one might ask how they might "
 "be used with FreeBSD.  The answer can be found by carefully searching the "
 "documentation for the component that one would like to use.  This is very "
 "time consuming, so this tutorial is an attempt to provide a shortcut for "
 "others who might be interested."
-msgstr ""
+msgstr "字体有许多来源，人们可能会想知道如何在 FreeBSD 中使用它们。答案可以通过仔细查阅想要使用的组件的文档找到。这个过程非常耗时，因此本教程试图为其他感兴趣的人提供一条捷径。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Basic Terminology"
-msgstr ""
+msgstr "基本术语"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:64
+#, fuzzy
 msgid ""
 "There are many different font formats and associated font file suffixes.  A "
 "few that will be addressed here are:"
-msgstr ""
+msgstr "字体格式和相关的字体文件后缀有很多种。本文将介绍其中几种："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:65
 #: documentation/content/en/articles/fonts/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#.pfa#, [.filename]#.pfb#"
-msgstr ""
+msgstr "[.filename]#.pfa#、[.filename]#.pfb#"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:67
+#, fuzzy
 msgid ""
 "PostScript(R) type 1 fonts. The [.filename]#.pfa# is the __A__scii form and "
 "[.filename]#.pfb# the __B__inary form."
-msgstr ""
+msgstr "PostScript(R) Type 1 字体。[.filename]#.pfa# 是 __A__scii 格式，[.filename]#.pfb# 是 __B__inary 格式。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#.afm#"
-msgstr ""
+msgstr "[.filename]#.afm#"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:70
+#, fuzzy
 msgid "The font metrics associated with a type 1 font."
-msgstr ""
+msgstr "与 Type 1 字体关联的字体度量信息。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#.pfm#"
-msgstr ""
+msgstr "[.filename]#.pfm#"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:73
+#, fuzzy
 msgid "The printer font metrics associated with a type 1 font."
-msgstr ""
+msgstr "与 Type 1 字体关联的打印机字体度量信息。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:74
 #: documentation/content/en/articles/fonts/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#.ttf#"
-msgstr ""
+msgstr "[.filename]#.ttf#"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:76
+#, fuzzy
 msgid "A TrueType(R) font"
-msgstr ""
+msgstr "TrueType(R) 字体"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#.fot#"
-msgstr ""
+msgstr "[.filename]#.fot#"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:79
+#, fuzzy
 msgid "An indirect reference to a TrueType font (not an actual font)"
-msgstr ""
+msgstr "对 TrueType 字体的间接引用（并非实际字体）"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#.fon#, [.filename]#.fnt#"
-msgstr ""
+msgstr "[.filename]#.fon#、[.filename]#.fnt#"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:82
+#, fuzzy
 msgid "Bitmapped screen fonts"
-msgstr ""
+msgstr "位图屏幕字体"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:85
+#, fuzzy
 msgid ""
 "The [.filename]#.fot# is used by Windows(R) as sort of a symbolic link to "
 "the actual TrueType(R) font ([.filename]#.ttf#) file. The [.filename]#.fon# "
 "font files are also used by Windows.  I know of no way to use this font "
 "format with FreeBSD."
-msgstr ""
+msgstr "Windows(R) 使用 [.filename]#.fot# 作为实际 TrueType(R) 字体（[.filename]#.ttf#）文件的一种符号链接。[.filename]#.fon# 字体文件也由 Windows 使用。据我所知，FreeBSD 没有办法使用这种字体格式。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What Font Formats Can I Use?"
-msgstr ""
+msgstr "可以使用哪些字体格式？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:93
+#, fuzzy
 msgid ""
 "Which font file format is useful depends on the application being used.  "
 "FreeBSD by itself uses no fonts.  Application programs and/or drivers may "
 "make use of the font files.  Here is a small cross reference of application/"
 "driver to the font type suffixes:"
-msgstr ""
+msgstr "哪种字体文件格式有用，取决于所使用的应用程序。FreeBSD 本身不使用字体。应用程序和／或驱动程序可能会使用字体文件。下面简要列出应用程序／驱动程序与字体文件后缀的对应关系："
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Driver"
-msgstr ""
+msgstr "驱动程序"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vt"
-msgstr ""
+msgstr "vt"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:98
+#, fuzzy
 msgid "[.filename]#.hex#"
-msgstr ""
+msgstr "[.filename]#.hex#"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "syscons"
-msgstr ""
+msgstr "syscons"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:101
+#, fuzzy
 msgid "[.filename]#.fnt#"
-msgstr ""
+msgstr "[.filename]#.fnt#"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:102
@@ -208,40 +221,43 @@ msgstr "application（应用）"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ghostscript"
-msgstr ""
+msgstr "Ghostscript"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:106
+#, fuzzy
 msgid "[.filename]#.pfa#, [.filename]#.pfb#, [.filename]#.ttf#"
-msgstr ""
+msgstr "[.filename]#.pfa#、[.filename]#.pfb#、[.filename]#.ttf#"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "X11"
-msgstr ""
+msgstr "X11"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Groff"
-msgstr ""
+msgstr "Groff"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:112
+#, fuzzy
 msgid "[.filename]#.pfa#, [.filename]#.afm#"
-msgstr ""
+msgstr "[.filename]#.pfa#、[.filename]#.afm#"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Povray"
-msgstr ""
+msgstr "Povray"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:120
+#, fuzzy
 msgid ""
 "The [.filename]#.fnt# suffix is used quite frequently.  I suspect that "
 "whenever someone wanted to create a specialized font file for their "
@@ -251,84 +267,91 @@ msgid ""
 "not be the same format as a [.filename]#.fnt# one encounters in the MS-"
 "DOS(R)/Windows(R) environment.  I have not made any attempt at using other [."
 "filename]#.fnt# files other than those provided with FreeBSD."
-msgstr ""
+msgstr "[.filename]#.fnt# 后缀使用得相当频繁。我猜想，每当有人想为其应用程序创建专用字体文件时，往往会选择这个后缀。因此，带有此后缀的文件很可能并非都采用相同格式；具体来说，FreeBSD 下 syscons 使用的 [.filename]#.fnt# 文件，可能与 MS-DOS(R)/Windows(R) 环境中遇到的 [.filename]#.fnt# 文件格式不同。除了 FreeBSD 随附的文件外，我没有尝试使用其他 [.filename]#.fnt# 文件。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting a Virtual Console to 80x60 Line Mode"
-msgstr ""
+msgstr "将虚拟控制台设置为 80x60 行模式"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/fonts/_index.adoc:126
+#, fuzzy
 msgid ""
 "First, an 8x8 font must be loaded.  To do this, [.filename]#/etc/rc.conf# "
 "should contain the line (change the font name to an appropriate one for your "
 "locale):"
-msgstr ""
+msgstr "首先，必须加载 8x8 字体。为此，[.filename]#/etc/rc.conf# 中应包含以下一行（请将字体名称改为适合您语言环境的名称）："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "font8x8=\"iso-8x8\"\t\t# font 8x8 from /usr/share/syscons/fonts/* (or NO).\n"
-msgstr ""
+msgstr "font8x8=\"iso-8x8\"\t\t# font 8x8 from /usr/share/syscons/fonts/* (or NO)\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:133
+#, fuzzy
 msgid "The command to actually switch the mode is man:vidcontrol[1]:"
-msgstr ""
+msgstr "实际切换模式的命令是 man:vidcontrol[1]："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidcontrol VGA_80x60\n"
-msgstr ""
+msgstr "% vidcontrol VGA_80x60\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:141
+#, fuzzy
 msgid ""
 "Various screen-oriented programs, such as man:vi[1], must be able to "
 "determine the current screen dimensions.  As this is achieved this through "
 "`ioctl` calls to the console driver (such as man:syscons[4]) they will "
 "correctly determine the new screen dimensions."
-msgstr ""
+msgstr "各种面向屏幕的程序，例如 man:vi[1]，必须能够确定当前屏幕尺寸。它们通过向控制台驱动程序（例如 man:syscons[4]）发出 `ioctl` 调用来实现这一点，因此能够正确检测新的屏幕尺寸。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:144
+#, fuzzy
 msgid ""
 "To make this more seamless, one can embed these commands in the startup "
 "scripts so it takes place when the system boots.  To do this is add this "
 "line to [.filename]#/etc/rc.conf#."
-msgstr ""
+msgstr "为了让这一过程更加顺畅，可以将这些命令加入启动脚本，使其在系统启动时执行。为此，请将以下一行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "allscreens_flags=\"VGA_80x60\"\t# Set this vidcontrol mode for all virtual screens\n"
-msgstr ""
+msgstr "allscreens_flags=\"VGA_80x60\"\t# Set this vidcontrol mode for all virtual screens\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:151
+#, fuzzy
 msgid "References: man:rc.conf[5], man:vidcontrol[1]."
-msgstr ""
+msgstr "参考：man:rc.conf[5]、man:vidcontrol[1]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Type 1 Fonts with X11"
-msgstr ""
+msgstr "在 X11 中使用 Type 1 字体"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:158
+#, fuzzy
 msgid ""
 "X11 can use either the [.filename]#.pfa# or the [.filename]#.pfb# format "
 "fonts.  The X11 fonts are located in various subdirectories under [."
 "filename]#/usr/X11R6/lib/X11/fonts#.  Each font file is cross referenced to "
 "its X11 name by the contents of [.filename]#fonts.dir# in each directory."
-msgstr ""
+msgstr "X11 可以使用 [.filename]#.pfa# 或 [.filename]#.pfb# 格式的字体。X11 字体位于 [.filename]#/usr/X11R6/lib/X11/fonts# 下的多个子目录中。每个字体文件都通过各目录中的 [.filename]#fonts.dir# 文件映射到对应的 X11 名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:164
+#, fuzzy
 msgid ""
 "There is already a directory named [.filename]#Type1#.  The most straight "
 "forward way to add a new font is to put it into this directory.  A better "
@@ -336,56 +359,57 @@ msgid ""
 "to the additional font.  This allows one to more easily keep track of ones "
 "fonts without confusing them with the fonts that were originally provided.  "
 "For example:"
-msgstr ""
+msgstr "系统中已有一个名为 [.filename]#Type1# 的目录。添加新字体最直接的方法是将其放入该目录。更好的方法是将所有新字体保存在单独的目录中，并通过符号链接添加字体。这样可以更轻松地管理自己的字体，避免与系统原有字体混淆。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Create a directory to contain the font files\n"
 "% mkdir -p /usr/local/share/fonts/type1\n"
 "% cd /usr/local/share/fonts/type1\n"
-msgstr ""
+msgstr "创建一个用于存放字体文件的目录\n% mkdir -p /usr/local/share/fonts/type1\n% cd /usr/local/share/fonts/type1\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Place the .pfa, .pfb and .afm files here\n"
-msgstr ""
+msgstr "将 .pfa、.pfb 和 .afm 文件放在这里\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "One might want to keep readme files, and other documentation\n"
-msgstr ""
+msgstr "也可以在这里存放自述文件及其他文档\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "for the fonts here also\n"
 "% cp /cdrom/fonts/atm/showboat/showboat.pfb .\n"
 "% cp /cdrom/fonts/atm/showboat/showboat.afm .\n"
-msgstr ""
+msgstr "\n% cp /cdrom/fonts/atm/showboat/showboat.pfb .\n% cp /cdrom/fonts/atm/showboat/showboat.afm .\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Maintain an index to cross reference the fonts\n"
 "% echo showboat - InfoMagic CICA, Dec 1994, /fonts/atm/showboat >>INDEX\n"
-msgstr ""
+msgstr "维护索引以便查找字体\n% echo showboat - InfoMagic CICA, Dec 1994, /fonts/atm/showboat >>INDEX\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:185
+#, fuzzy
 msgid ""
 "Now, to use a new font with X11, one must make the font file available and "
 "update the font name files.  The X11 font names look like:"
-msgstr ""
+msgstr "现在，要在 X11 中使用新字体，必须让 X11 能够访问字体文件，并更新字体名称文件。X11 字体名称的格式如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "-bitstream-charter-medium-r-normal-xxx-0-0-0-0-p-0-iso8859-1\n"
 "     |        |      |    |   |     |  | | | | | |    \\    \\\n"
@@ -398,20 +422,21 @@ msgid ""
 "     |        |      |       \\     \\\t  \\  +- pixels\n"
 "     |        |      |        \\     \\\t   \\\n"
 "  foundry  family  weight   slant  width  additional style\n"
-msgstr ""
+msgstr "-bitstream-charter-medium-r-normal-xxx-0-0-0-0-p-0-iso8859-1\n     |        |      |    |   |     |  | | | | | |    \\    \\\n     |        |      |    |   |     \\  \\ \\ \\ \\ \\ \\     +----+- character set\n     |        |      |    |   \\      \\  \\ \\ \\ \\ \\ +- average width\n     |        |      |    |    \\      \\  \\ \\ \\ \\ +- spacing\n     |        |      |    \\      \\  \\ \\ \\ +- vertical res.\n     |        |      |     \\      \\  \\ \\ +- horizontal res.\n     |        |      |      \\      \\  \\ +- points\n     |        |      |       \\     \\  \\ +- pixels\n     |        |      |        \\     \\   \\\n  foundry  family  weight   slant  width  additional style\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:205
+#, fuzzy
 msgid ""
 "A new name needs to be created for each new font.  If you have some "
 "information from the documentation that accompanied the font, then it could "
 "serve as the basis for creating the name.  If there is no information, then "
 "you can get some idea by using man:strings[1] on the font file.  For example:"
-msgstr ""
+msgstr "每种新字体都需要创建一个新名称。如果字体附带的文档中包含相关信息，可以据此创建名称。如果没有相关信息，可以使用 man:strings[1] 检查字体文件，获取一些线索。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% strings showboat.pfb | more\n"
 "%!FontType1-1.0: Showboat 001.001\n"
@@ -438,150 +463,162 @@ msgid ""
 "end readonly def\n"
 "/FontName /Showboat def\n"
 "--stdin--\n"
-msgstr ""
+msgstr "% strings showboat.pfb | more\n%!FontType1-1.0: Showboat 001.001\n%%CreationDate: 1/15/91 5:16:03 PM\n%%VMusage: 1024 45747\n% Generated by Fontographer 3.1\n% Showboat\n 1991 by David Rakowski.  Alle Rechte Vorbehalten.\nFontDirectory/Showboat known{/Showboat findfont dup/UniqueID known{dup\n/UniqueID get 4962377 eq exch/FontType get 1 eq and}{pop false}ifelse\n{save true}{false}ifelse}{false}ifelse\n12 dict begin\n/FontInfo 9 dict dup begin\n /version (001.001) readonly def\n /FullName (Showboat) readonly def\n /FamilyName (Showboat) readonly def\n /Weight (Medium) readonly def\n /ItalicAngle 0 def\n /isFixedPitch false def\n /UnderlinePosition -106 def\n /UnderlineThickness 16 def\n /Notice (Showboat\n 1991 by David Rakowski.  Alle Rechte Vorbehalten.) readonly def\nend readonly def\n/FontName /Showboat def\n--stdin--\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:236
+#, fuzzy
 msgid "Using this information, a possible name might be:"
-msgstr ""
+msgstr "根据这些信息，可以考虑使用以下名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "-type1-Showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1\n"
-msgstr ""
+msgstr "-type1-Showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:243
+#, fuzzy
 msgid "The components of our name are:"
-msgstr ""
+msgstr "这个名称由以下部分组成："
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Foundry"
-msgstr ""
+msgstr "字体铸造厂"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:246
+#, fuzzy
 msgid "Lets just name all the new fonts `type1`."
-msgstr ""
+msgstr "我们就把所有新字体的字体铸造厂名称都设为 `type1`。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Family"
-msgstr ""
+msgstr "字体系列"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:249
+#, fuzzy
 msgid "The name of the font."
-msgstr ""
+msgstr "字体的名称。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Weight"
-msgstr ""
+msgstr "字重"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:253
+#, fuzzy
 msgid ""
 "Normal, bold, medium, semibold, etc.  From the man:strings[1] output above, "
 "it appears that this font has a weight of __medium__."
-msgstr ""
+msgstr "常规、粗体、中等、半粗体等。根据上面的 man:strings[1] 输出，这种字体的字重似乎是 __medium__。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Slant"
-msgstr ""
+msgstr "倾斜"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:257
+#, fuzzy
 msgid ""
 "__r__oman, __i__talic, __o__blique, etc.  Since the _ItalicAngle_ is zero, "
 "_roman_ will be used."
-msgstr ""
+msgstr "__r__oman、__i__talic、__o__blique 等。由于 __ItalicAngle__ 为零，因此将使用 __roman__。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Width"
-msgstr ""
+msgstr "宽度"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:261
+#, fuzzy
 msgid ""
 "Normal, wide, condensed, extended, etc.  Until it can be examined, the "
 "assumption will be __normal__."
-msgstr ""
+msgstr "常规、加宽、压缩、扩展等。在检查字体之前，先假定其宽度为 __normal__。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Additional style"
-msgstr ""
+msgstr "其他样式"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:264
+#, fuzzy
 msgid ""
 "Usually omitted, but this will indicate that the font contains decorative "
 "capital letters."
-msgstr ""
+msgstr "通常省略，但此项可表示字体包含装饰性大写字母。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spacing"
-msgstr ""
+msgstr "间距"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:268
+#, fuzzy
 msgid ""
 "proportional or monospaced.  _Proportional_ is used since _isFixedPitch_ is "
 "false."
-msgstr ""
+msgstr "比例间距或等宽。由于 __isFixedPitch__ 为 false，因此使用 __Proportional__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:272
+#, fuzzy
 msgid ""
 "All of these names are arbitrary, but one should strive to be compatible "
 "with the existing conventions.  A font is referenced by name with possible "
 "wild cards by an X11 program, so the name chosen should make some sense.  "
 "One might begin by simply using"
-msgstr ""
+msgstr "这些名称都是任意的，但应尽量遵循现有约定。X11 程序通过名称引用字体，并且可以使用通配符，因此所选名称应当合理。可以先简单地使用"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "...-normal-r-normal-...-p-...\n"
-msgstr ""
+msgstr "...-normal-r-normal-...-p-...\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:279
+#, fuzzy
 msgid ""
 "as the name, and then use man:xfontsel[1] to examine it and adjust the name "
 "based on the appearance of the font."
-msgstr ""
+msgstr "作为名称，然后使用 man:xfontsel[1] 检查字体，并根据其外观调整名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:281
+#, fuzzy
 msgid "So, to complete our example:"
-msgstr ""
+msgstr "现在，完成这个示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Make the font accessible to X11\n"
 "% cd /usr/X11R6/lib/X11/fonts/Type1\n"
 "% ln -s /usr/local/share/fonts/type1/showboat.pfb .\n"
-msgstr ""
+msgstr "让 X11 能够访问该字体\n% cd /usr/X11R6/lib/X11/fonts/Type1\n% ln -s /usr/local/share/fonts/type1/showboat.pfb .\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Edit fonts.dir and fonts.scale, adding the line describing the font\n"
 "and incrementing the number of fonts which is found on the first line.\n"
@@ -595,67 +632,69 @@ msgid ""
 "showboat.pfb -type1-showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1\n"
 ".\n"
 ":wq\n"
-msgstr ""
+msgstr "编辑 fonts.dir 和 fonts.scale，添加描述该字体的行，并将字体数量加一。字体数量位于文件首行。\n% ex fonts.dir\n:1p\n25\n:1c\n26\n.\n:$a\nshowboat.pfb -type1-showboat-medium-r-normal-decorative-0-0-0-0-p-0-iso8859-1\n.\n:wq\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "fonts.scale seems to be identical to fonts.dir...\n"
 "% cp fonts.dir fonts.scale\n"
-msgstr ""
+msgstr "fonts.scale 似乎与 fonts.dir 完全相同……\n% cp fonts.dir fonts.scale\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Tell X11 that things have changed\n"
 "% xset fp rehash\n"
-msgstr ""
+msgstr "通知 X11 已有更改\n% xset fp rehash\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Examine the new font\n"
 "% xfontsel -pattern -type1-*\n"
-msgstr ""
+msgstr "检查新字体\n% xfontsel -pattern -type1-*\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:312
+#, fuzzy
 msgid ""
 "References: man:xfontsel[1], man:xset[1], The X Windows System in a "
 "Nutshell, http://www.ora.com/[O'Reilly & Associates]."
-msgstr ""
+msgstr "参考：man:xfontsel[1]、man:xset[1]、The X Windows System in a Nutshell、 link:http://www.ora.com/[O'Reilly & Associates]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Type 1 Fonts with Ghostscript"
-msgstr ""
+msgstr "在 Ghostscript 中使用 Type 1 字体"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:320
+#, fuzzy
 msgid ""
 "Ghostscript references a font via its [.filename]#Fontmap#.  This must be "
 "modified in a similar way to the X11 [.filename]#fonts.dir#.  Ghostscript "
 "can use either the [.filename]#.pfa# or the [.filename]#.pfb# format fonts.  "
 "Using the font from the previous example, here is how to use it with "
 "Ghostscript:"
-msgstr ""
+msgstr "Ghostscript 通过 [.filename]#Fontmap# 引用字体。必须以类似 X11 [.filename]#fonts.dir# 的方式修改此文件。Ghostscript 可以使用 [.filename]#.pfa# 或 [.filename]#.pfb# 格式的字体。使用上一个示例中的字体，下面介绍如何在 Ghostscript 中使用它："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Put the font in Ghostscript's font directory\n"
 "% cd /usr/local/share/ghostscript/fonts\n"
 "% ln -s /usr/local/share/fonts/type1/showboat.pfb .\n"
-msgstr ""
+msgstr "将字体放入 Ghostscript 的字体目录\n% cd /usr/local/share/ghostscript/fonts\n% ln -s /usr/local/share/fonts/type1/showboat.pfb .\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Edit Fontmap so Ghostscript knows about the font\n"
 "% cd /usr/local/share/ghostscript/4.01\n"
@@ -664,11 +703,11 @@ msgid ""
 "/Showboat        (showboat.pfb) ; % From CICA /fonts/atm/showboat\n"
 ".\n"
 ":wq\n"
-msgstr ""
+msgstr "编辑 Fontmap，让 Ghostscript 识别该字体\n% cd /usr/local/share/ghostscript/4.01\n% ex Fontmap\n:$a\n/Showboat        (showboat.pfb) ; % From CICA /fonts/atm/showboat\n.\n:wq\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Use Ghostscript to examine the font\n"
 "% gs prfont.ps\n"
@@ -685,21 +724,23 @@ msgid ""
 ">>showpage, press <return> to continue<<\n"
 ">>showpage, press <return> to continue<<\n"
 "GS>quit\n"
-msgstr ""
+msgstr "使用 Ghostscript 检查字体\n% gs prfont.ps\nAladdin Ghostscript 4.01 (1996-7-10)\nCopyright (C) 1996 Aladdin Enterprises, Menlo Park, CA.  All rights\nreserved.\nThis software comes with NO WARRANTY: see the file PUBLIC for details.\nLoading Times-Roman font from /usr/local/share/ghostscript/fonts/tir_____.pfb...\n /1899520 581354 1300084 13826 0 done.\nGS>Showboat DoFont\nLoading Showboat font from /usr/local/share/ghostscript/fonts/showboat.pfb...\n 1939688 565415 1300084 16901 0 done.\n>>showpage, press <return> to continue<<\n>>showpage, press <return> to continue<<\n>>showpage, press <return> to continue<<\nGS>quit\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:353
+#, fuzzy
 msgid "References: [.filename]#fonts.txt# in the Ghostscript 4.01 distribution"
-msgstr ""
+msgstr "参考：Ghostscript 4.01 发行版中的 [.filename]#fonts.txt#"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Type 1 Fonts with Groff"
-msgstr ""
+msgstr "在 Groff 中使用 Type 1 字体"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:362
+#, fuzzy
 msgid ""
 "Now that the new font can be used by both X11 and Ghostscript, how can one "
 "use the new font with groff? First of all, since we are dealing with type 1 "
@@ -708,19 +749,20 @@ msgid ""
 "groff font name is just a file in [.filename]#/usr/share/groff_font/devps#.  "
 "With our example, the font file could be [.filename]#/usr/share/groff_font/"
 "devps/SHOWBOAT#.  The file must be created using tools provided by groff."
-msgstr ""
+msgstr "现在，新字体已可供 X11 和 Ghostscript 使用，那么如何在 groff 中使用它呢？首先，由于这里使用的是 Type 1 PostScript(R) 字体，因此适用的 groff 设备是 __ps__。必须为 groff 可使用的每种字体创建一个字体文件。groff 字体名称实际上是 [.filename]#/usr/share/groff_font/devps# 中的一个文件。对于本例，字体文件可以是 [.filename]#/usr/share/groff_font/devps/SHOWBOAT#。必须使用 groff 提供的工具创建该文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:366
+#, fuzzy
 msgid ""
 "The first tool is `afmtodit`.  This is not normally installed, so it must be "
 "retrieved from the source distribution.  I found I had to change the first "
 "line of the file, so I did:"
-msgstr ""
+msgstr "第一个工具是 `afmtodit`。它通常不会随系统安装，因此必须从源代码发行版中获取。我发现需要修改该文件的首行，于是执行了以下操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cp /usr/src/gnu/usr.bin/groff/afmtodit/afmtodit.pl /tmp\n"
 "% ex /tmp/afmtodit.pl\n"
@@ -728,42 +770,45 @@ msgid ""
 "#!/usr/bin/perl -P-\n"
 ".\n"
 ":wq\n"
-msgstr ""
+msgstr "% cp /usr/src/gnu/usr.bin/groff/afmtodit/afmtodit.pl /tmp\n% ex /tmp/afmtodit.pl\n:1c\n#!/usr/bin/perl -P-\n.\n:wq\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:379
+#, fuzzy
 msgid ""
 "This tool will create the groff font file from the metrics file ([."
 "filename]#.afm# suffix.)  Continuing with our example:"
-msgstr ""
+msgstr "此工具会根据度量文件（后缀为 [.filename]#.afm#）创建 groff 字体文件。继续使用我们的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Many .afm files are in Mac format... ^M delimited lines\n"
 "We need to convert them to UNIX(R) style ^J delimited lines\n"
 "% cd /tmp\n"
 "% cat /usr/local/share/fonts/type1/showboat.afm |\n"
 "\ttr '\\015' '\\012' >showboat.afm\n"
-msgstr ""
+msgstr "Many .afm files are in Mac format... ^M delimited lines\nWe need to convert them to UNIX(R) style ^J delimited lines\n% cd /tmp\n% cat /usr/local/share/fonts/type1/showboat.afm |\n\ttr '\\015' '\\012' >showboat.afm\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Now create the groff font file\n"
 "% cd /usr/share/groff_font/devps\n"
 "% /tmp/afmtodit.pl -d DESC -e text.enc /tmp/showboat.afm generate/textmap SHOWBOAT\n"
-msgstr ""
+msgstr "Now create the groff font file\n% cd /usr/share/groff_font/devps\n% /tmp/afmtodit.pl -d DESC -e text.enc /tmp/showboat.afm generate/textmap SHOWBOAT\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:394
+#, fuzzy
 msgid "The font can now be referenced with the name SHOWBOAT."
-msgstr ""
+msgstr "现在可以使用名称 SHOWBOAT 引用该字体。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:401
+#, fuzzy
 msgid ""
 "If Ghostscript is used to drive the printers on the system, then nothing "
 "more needs to be done.  However, if true PostScript(R) printers are used, "
@@ -774,26 +819,27 @@ msgid ""
 "font, and [.filename]#download# is modified to reference the new font.  The "
 "[.filename]#download# must reference the internal name of the font.  This "
 "can easily be determined from the groff font file as illustrated:"
-msgstr ""
+msgstr "如果系统使用 Ghostscript 驱动打印机，则无需再做其他操作。不过，如果使用真正的 PostScript(R) 打印机，则必须将字体下载到打印机，才能使用该字体（除非打印机内置了 showboat 字体，或者字体位于可访问的字体磁盘上）。最后一步是创建可下载的字体。使用 `pfbtops` 工具创建字体的 [.filename]#.pfa# 格式，并修改 [.filename]#download# 以引用新字体。文件 [.filename]#download# 必须引用字体的内部名称。如下所示，可以轻松地从 groff 字体文件中确定该名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:406
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Create the .pfa font file\n"
 "% pfbtops /usr/local/share/fonts/type1/showboat.pfb >showboat.pfa\n"
-msgstr ""
+msgstr "Create the .pfa font file\n% pfbtops /usr/local/share/fonts/type1/showboat.pfb >showboat.pfa\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:409
+#, fuzzy
 msgid ""
 "Of course, if [.filename]#.pfa# is already available, just use a symbolic "
 "link to reference it."
-msgstr ""
+msgstr "当然，如果已有 [.filename]#.pfa# 文件，只需创建一个符号链接来引用它即可。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Get the internal font name\n"
 "% fgrep internalname SHOWBOAT\n"
@@ -804,16 +850,17 @@ msgid ""
 "Showboat      showboat.pfa\n"
 ".\n"
 ":wq\n"
-msgstr ""
+msgstr "Get the internal font name\n% fgrep internalname SHOWBOAT\ninternalname Showboat\nTell groff that the font must be downloaded\n% ex download\n:$a\nShowboat      showboat.pfa\n.\n:wq\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:424
+#, fuzzy
 msgid "To test the font:"
-msgstr ""
+msgstr "测试字体："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:455
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd /tmp\n"
 "% cat >example.t <<EOF\n"
@@ -843,89 +890,98 @@ msgid ""
 "letter.\n"
 "EOF\n"
 "% groff -Tps example.t >example.ps\n"
-msgstr ""
+msgstr "% cd /tmp\n% cat >example.t <<EOF\n.sp 5\n.ps 16\nThis is an example of the Showboat font:\n.br\n.ps 48\n.vs (\\n(.s+2)p\n.sp\n.ft SHOWBOAT\nABCDEFGHI\n.br\nJKLMNOPQR\n.br\nSTUVWXYZ\n.sp\n.ps 16\n.vs (\\n(.s+2)p\n.fp 5 SHOWBOAT\n.ft R\nTo use it for the first letter of a paragraph, it will look like:\n.sp 50p\n\\s(48\\f5H\\s0\\fRere is the first sentence of a paragraph that uses the\nshowboat font as its first letter.\nAdditional vertical space must be used to allow room for the larger\nletter.\nEOF\n% groff -Tps example.t >example.ps\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "To use ghostscript/ghostview\n"
 "% ghostview example.ps\n"
-msgstr ""
+msgstr "使用 ghostscript/ghostview\n% ghostview example.ps\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:461
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "To print it\n"
 "% lpr -Ppostscript example.ps\n"
-msgstr ""
+msgstr "打印\n% lpr -Ppostscript example.ps\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:464
+#, fuzzy
 msgid ""
 "References: [.filename]#/usr/src/gnu/usr.bin/groff/afmtodit/afmtodit.man#, "
 "man:groff_font[5], man:groff_char[7], man:pfbtops[1]."
-msgstr ""
+msgstr "参考资料： [.filename]#/usr/src/gnu/usr.bin/groff/afmtodit/afmtodit.man#、man:groff_font[5]、man:groff_char[7]、man:pfbtops[1]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Converting TrueType Fonts to a groff/PostScript Format For groff"
-msgstr ""
+msgstr "将 TrueType 字体转换为 groff/PostScript 格式以供 groff 使用"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:470
+#, fuzzy
 msgid ""
 "This potentially requires a bit of work, simply because it depends on some "
 "utilities that are not installed as part of the base system.  They are:"
-msgstr ""
+msgstr "这可能需要一些工作，因为它依赖于一些并非基本系统组成部分的实用程序。这些工具包括："
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:471
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ttf2pf`"
-msgstr ""
+msgstr "`ttf2pf`"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:474
+#, fuzzy
 msgid ""
 "TrueType to PostScript conversion utilities.  This allows conversion of a "
 "TrueType font to an ascii font metric ([.filename]#.afm#) file."
-msgstr ""
+msgstr "TrueType 到 PostScript 的转换工具。它可以将 TrueType 字体转换为 ASCII 字体度量（[.filename]#.afm#）文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:478
+#, fuzzy
 msgid ""
 "Currently available at http://sunsite.icm.edu.pl/pub/GUST/contrib/BachoTeX98/"
 "ttf2pf/[http://sunsite.icm.edu.pl/pub/GUST/contrib/BachoTeX98/ttf2pf/].  "
 "Note: These files are PostScript programs and must be downloaded to disk by "
 "holding down kbd:[Shift] when clicking on the link.  Otherwise, your browser "
 "may try to launch ghostview to view them."
-msgstr ""
+msgstr "目前可从 link:http://sunsite.icm.edu.pl/pub/GUST/contrib/BachoTeX98/ttf2pf/[http://sunsite.icm.edu.pl/pub/GUST/contrib/BachoTeX98/ttf2pf/] 获取。注意：这些文件是 PostScript 程序，下载时必须在单击链接的同时按住 kbd:[Shift] 键。否则，浏览器可能会尝试启动 ghostview 来查看这些文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:480
+#, fuzzy
 msgid "The files of interest are:"
-msgstr ""
+msgstr "需要关注的文件有："
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:482
+#, fuzzy
 msgid "[.filename]#GS_TTF.PS#"
-msgstr ""
+msgstr "[.filename]#GS_TTF.PS#"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:483
+#, fuzzy
 msgid "[.filename]#PF2AFM.PS#"
-msgstr ""
+msgstr "[.filename]#PF2AFM.PS#"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:484
+#, fuzzy
 msgid "[.filename]#ttf2pf.ps#"
-msgstr ""
+msgstr "[.filename]#ttf2pf.ps#"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:490
+#, fuzzy
 msgid ""
 "The funny upper/lower case is due to their being intended also for DOS "
 "shells.  [.filename]#ttf2pf.ps# makes use of the others as upper case, so "
@@ -934,188 +990,205 @@ msgid ""
 "distribution, but it is just as easy to use these as an isolated utility.  "
 "FreeBSD does not seem to include the latter.)  You also may want to have "
 "these installed to [.filename]#/usr/local/share/groff_font/devps#(?)."
-msgstr ""
+msgstr "大小写不一致是因为这些文件也要用于 DOS shell。[.filename]#ttf2pf.ps# 会以大写形式引用其他文件，因此重命名时必须保持一致。（实际上，[.filename]#GS_TTF.PS# 和 [.filename]#PFS2AFM.PS# 据称属于 Ghostscript 发行版，但将它们作为独立工具使用也很方便。FreeBSD 似乎不包含后者。）你也可以考虑将这些文件安装到 [.filename]#/usr/local/share/groff_font/devps#（？）。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/fonts/_index.adoc:491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`afmtodit`"
-msgstr ""
+msgstr "`afmtodit`"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:494
+#, fuzzy
 msgid ""
 "Creates font files for use with groff from ascii font metrics file.  This "
 "usually resides in the directory, [.filename]#/usr/src/contrib/groff/"
 "afmtodit#, and requires some work to get going."
-msgstr ""
+msgstr "根据 ASCII 字体度量文件创建供 groff 使用的字体文件。该工具通常位于目录 [.filename]#/usr/src/contrib/groff/afmtodit# 中，并且需要做一些准备工作才能运行。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/fonts/_index.adoc:498
+#, fuzzy
 msgid ""
 "If you are paranoid about working in the [.filename]#/usr/src# tree, simply "
 "copy the contents of the above directory to a work location."
-msgstr ""
+msgstr "如果你不愿意在 [.filename]#/usr/src# 树中操作，只需将上述目录的内容复制到一个工作目录即可。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:502
+#, fuzzy
 msgid "In the work area, you will need to make the utility.  Just type:"
-msgstr ""
+msgstr "在工作目录中，需要编译该工具。只需输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make -f Makefile.sub afmtodit\n"
-msgstr ""
+msgstr "# make -f Makefile.sub afmtodit\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:509
+#, fuzzy
 msgid ""
 "You may also need to copy [.filename]#/usr/contrib/groff/devps/generate/"
 "textmap# to [.filename]#/usr/share/groff_font/devps/generate# if it does not "
 "already exist."
-msgstr ""
+msgstr "如果 [.filename]#/usr/share/groff_font/devps/generate# 中尚不存在 [.filename]#textmap#，你可能还需要将 [.filename]#/usr/contrib/groff/devps/generate/textmap# 复制到该目录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:511
+#, fuzzy
 msgid "Once all these utilities are in place, you are ready to commence:"
-msgstr ""
+msgstr "准备好所有这些工具后，就可以开始了："
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:513
+#, fuzzy
 msgid "Create [.filename]#.afm# by typing:"
-msgstr ""
+msgstr "输入以下命令创建 [.filename]#.afm#："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:517
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% gs -dNODISPLAY -q -- ttf2pf.ps TTF_name PS_font_name AFM_name\n"
-msgstr ""
+msgstr "% gs -dNODISPLAY -q -- ttf2pf.ps TTF_name PS_font_name AFM_name\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:520
+#, fuzzy
 msgid ""
 "Where, _TTF_name_ is your TrueType font file, _PS_font_name_ is the file "
 "name for [.filename]#.pfa#, _AFM_name_ is the name you wish for [.filename]#."
 "afm#. If you do not specify output file names for the [.filename]#.pfa# or [."
 "filename]#.afm# files, then default names will be generated from the "
 "TrueType font file name."
-msgstr ""
+msgstr "其中，_TTF_name_ 是 TrueType 字体文件，_PS_font_name_ 是 [.filename]#.pfa# 文件的文件名，_AFM_name_ 是你希望用于 [.filename]#.afm# 的名称。如果未指定 [.filename]#.pfa# 或 [.filename]#.afm# 文件的输出文件名，则会根据 TrueType 字体文件名生成默认名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:523
+#, fuzzy
 msgid ""
 "This also produces a [.filename]#.pfa#, the ascii PostScript font metrics "
 "file ([.filename]#.pfb# is for the binary form).  This will not be needed, "
 "but could (I think) be useful for a fontserver."
-msgstr ""
+msgstr "此操作还会生成一个 [.filename]#.pfa# 文件，即 ASCII PostScript 字体度量文件（[.filename]#.pfb# 是其二进制格式）。虽然不需要此文件，但它可能（我认为）对字体服务器有用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:525
+#, fuzzy
 msgid ""
 "For example, to convert the 30f9 Barcode font using the default file names, "
 "use the following command:"
-msgstr ""
+msgstr "例如，要使用默认文件名转换 30f9 Barcode 字体，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% gs -dNODISPLAY -- ttf2pf.ps 3of9.ttf\n"
 "Aladdin Ghostscript 5.10 (1997-11-23)\n"
 "Copyright (C) 1997 Aladdin Enterprises, Menlo Park, CA.  All rights reserved.\n"
 "This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
 "Converting 3of9.ttf to 3of9.pfa and 3of9.afm.\n"
-msgstr ""
+msgstr "% gs -dNODISPLAY -- ttf2pf.ps 3of9.ttf\nAladdin Ghostscript 5.10 (1997-11-23)\nCopyright (C) 1997 Aladdin Enterprises, Menlo Park, CA.  All rights reserved.\nThis software comes with NO WARRANTY: see the file PUBLIC for details.\nConverting 3of9.ttf to 3of9.pfa and 3of9.afm.\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:536
+#, fuzzy
 msgid ""
 "If you want the converted fonts to be stored in [.filename]#A.pfa# and [."
 "filename]#B.afm#, then use this command:"
-msgstr ""
+msgstr "如果要将转换后的字体分别保存为 [.filename]#A.pfa# 和 [.filename]#B.afm#，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:544
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% gs -dNODISPLAY -- ttf2pf.ps 3of9.ttf A B\n"
 "Aladdin Ghostscript 5.10 (1997-11-23)\n"
 "Copyright (C) 1997 Aladdin Enterprises, Menlo Park, CA.  All rights reserved.\n"
 "This software comes with NO WARRANTY: see the file PUBLIC for details.\n"
 "Converting 3of9.ttf to A.pfa and B.afm.\n"
-msgstr ""
+msgstr "% gs -dNODISPLAY -- ttf2pf.ps 3of9.ttf A B\nAladdin Ghostscript 5.10 (1997-11-23)\nCopyright (C) 1997 Aladdin Enterprises, Menlo Park, CA.  All rights reserved.\nThis software comes with NO WARRANTY: see the file PUBLIC for details.\nConverting 3of9.ttf to A.pfa and B.afm.\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:547
+#, fuzzy
 msgid "Create the groff PostScript file:"
-msgstr ""
+msgstr "创建 groff PostScript 文件："
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:551
+#, fuzzy
 msgid ""
 "Change directories to [.filename]#/usr/share/groff_font/devps# so as to make "
 "the following command easier to execute.  You will probably need root "
 "privileges for this.  (Or, if you are paranoid about working there, make "
 "sure you reference the files [.filename]#DESC#, [.filename]#text.enc# and [."
 "filename]#generate/textmap# as being in this directory.)"
-msgstr ""
+msgstr "切换到 [.filename]#/usr/share/groff_font/devps# 目录，以便更方便地执行以下命令。你可能需要 root 权限。（或者，如果你不愿意在该目录中操作，请确保将文件 [.filename]#DESC#、[.filename]#text.enc# 和 [.filename]#generate/textmap# 指定为此目录中的文件。）"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:555
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% afmtodit -d DESC -e text.enc file.afm generate/textmap PS_font_name\n"
-msgstr ""
+msgstr "% afmtodit -d DESC -e text.enc file.afm generate/textmap PS_font_name\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:559
+#, fuzzy
 msgid ""
 "Where, [.filename]#file.afm# is the _AFM_name_ created by `ttf2pf.ps` above, "
 "and _PS_font_name_ is the font name used from that command, as well as the "
 "name that man:groff[1] will use for references to this font.  For example, "
 "assuming you used the first `tiff2pf.ps` above, then the 3of9 Barcode font "
 "can be created using the command:"
-msgstr ""
+msgstr "其中，[.filename]#file.afm# 是上文通过 `ttf2pf.ps` 创建的 _AFM_name_，而 _PS_font_name_ 是该命令中使用的字体名称，也是 man:groff[1] 引用该字体时使用的名称。例如，假设你使用了上文第一个 `tiff2pf.ps` 命令，则可以使用以下命令创建 3of9 Barcode 字体："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/fonts/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% afmtodit -d DESC -e text.enc 3of9.afm generate/textmap 3of9\n"
-msgstr ""
+msgstr "% afmtodit -d DESC -e text.enc 3of9.afm generate/textmap 3of9\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:566
+#, fuzzy
 msgid ""
 "Ensure that the resulting _PS_font_name_ file (e.g., [.filename]#3of9# in "
 "the example above) is located in the directory [.filename]#/usr/share/"
 "groff_font/devps# by copying or moving it there."
-msgstr ""
+msgstr "请将生成的 _PS_font_name_ 文件（例如上例中的 [.filename]#3of9#）复制或移动到目录 [.filename]#/usr/share/groff_font/devps# 中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:569
+#, fuzzy
 msgid ""
 "Note that if [.filename]#ttf2pf.ps# assigns a font name using the one it "
 "finds in the TrueType font file and you want to use a different name, you "
 "must edit the [.filename]#.afm# prior to running `afmtodit`.  This name must "
 "also match the one used in the Fontmap file if you wish to pipe man:groff[1] "
 "into man:gs[1]."
-msgstr ""
+msgstr "请注意，如果 [.filename]#ttf2pf.ps# 使用从 TrueType 字体文件中找到的字体名称，而你希望使用其他名称，则必须在运行 `afmtodit` 之前编辑 [.filename]#.afm# 文件。如果希望将 man:groff[1] 的输出通过管道传给 man:gs[1]，此名称还必须与 Fontmap 文件中使用的名称相匹配。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:571
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can TrueType Fonts be Used with Other Programs?"
-msgstr ""
+msgstr "TrueType 字体能否用于其他程序？"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:575
+#, fuzzy
 msgid ""
 "The TrueType font format is used by Windows, Windows 95, and Mac's.  It is "
 "quite popular and there are a great number of fonts available in this format."
-msgstr ""
+msgstr "Windows、Windows 95 和 Mac 都使用 TrueType 字体格式。该格式相当流行，有大量可用字体。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:579
+#, fuzzy
 msgid ""
 "Unfortunately, there are few applications that I am aware of that can use "
 "this format: Ghostscript and Povray come to mind.  Ghostscript's support, "
@@ -1123,17 +1196,19 @@ msgid ""
 "be inferior to type 1 fonts.  Povray version 3 also has the ability to use "
 "TrueType fonts, but I rather doubt many people will be creating documents as "
 "a series of raytraced pages :-)."
-msgstr ""
+msgstr "遗憾的是，据我所知，能够使用这种格式的应用程序不多：Ghostscript 和 Povray 是其中的两个。根据文档，Ghostscript 对该格式的支持还很基础，效果可能不如 type 1 字体。Povray 3 也可以使用 TrueType 字体，不过我很怀疑有多少人会把文档制作成一系列光线追踪页面 ：-)。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:582
+#, fuzzy
 msgid ""
 "This rather dismal situation may soon change.  The http://www.freetype.org/"
 "[FreeType Project] is currently developing a useful set of FreeType tools:"
-msgstr ""
+msgstr "这种不太理想的状况可能很快会有所改变。 link:http://www.freetype.org/[FreeType Project] 目前正在开发一套实用的 FreeType 工具："
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:584
+#, fuzzy
 msgid ""
 "The `xfsft` font server for X11 can serve TrueType fonts in addition to "
 "regular fonts. Though currently in beta, it is said to be quite usable. See "
@@ -1141,76 +1216,85 @@ msgid ""
 "for further information. Porting instructions for FreeBSD can be found at "
 "http://math.missouri.edu/~stephen/software/[Stephen Montgomery's software "
 "page]."
-msgstr ""
+msgstr "用于 X11 的 `xfsft` 字体服务器除了普通字体外，也能提供 TrueType 字体。它目前仍处于测试阶段，但据说已经相当实用。更多信息请参阅 link:http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/[Juliusz Chroboczek 的页面]。FreeBSD 的移植说明可参阅 link:http://math.missouri.edu/~stephen/software/[Stephen Montgomery 的软件页面]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:585
+#, fuzzy
 msgid ""
 "xfstt is another font server for X11, available under link:ftp://sunsite.unc."
 "edu/pub/Linux/X11/fonts/[ftp://sunsite.unc.edu/pub/Linux/X11/fonts/]."
-msgstr ""
+msgstr "`xfstt` 是另一个适用于 X11 的字体服务器，可从 link:ftp://sunsite.unc.edu/pub/Linux/X11/fonts/[ftp://sunsite.unc.edu/pub/Linux/X11/fonts/] 获取。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:586
+#, fuzzy
 msgid ""
 "A program called `ttf2bdf` can produce BDF files suitable for use in an X "
 "environment from TrueType files. Linux binaries are said to be available "
 "from link:ftp://crl.nmsu.edu/CLR/multiling/General/[ftp://crl.nmsu.edu/CLR/"
 "multiling/General/]."
-msgstr ""
+msgstr "名为 `ttf2bdf` 的程序可以将 TrueType 文件转换为适用于 X 环境的 BDF 文件。据称，可从 link:ftp://crl.nmsu.edu/CLR/multiling/General/[ftp://crl.nmsu.edu/CLR/multiling/General/] 获取 Linux 二进制文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:587
+#, fuzzy
 msgid "and others ..."
-msgstr ""
+msgstr "等等……"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:589
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where Can Additional Fonts be Obtained?"
-msgstr ""
+msgstr "还可以从哪里获取其他字体？"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:594
+#, fuzzy
 msgid ""
 "Many fonts are available on the Internet.  They are either entirely free, or "
 "are share-ware.  In addition many fonts are available in the [.filename]#x11-"
 "fonts/# category in the ports collection"
-msgstr ""
+msgstr "互联网上有许多字体。它们要么完全免费，要么以共享软件形式提供。此外，ports collection 的 [.filename]#x11-fonts/# 分类中也有许多字体。"
 
 #. type: Title ==
 #: documentation/content/en/articles/fonts/_index.adoc:596
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Additional Questions"
-msgstr ""
+msgstr "其他问题"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:599
+#, fuzzy
 msgid "What use are the [.filename]#.pfm# files?"
-msgstr ""
+msgstr "[.filename]#.pfm# 文件有什么用途？"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:600
+#, fuzzy
 msgid ""
 "Can one generate the [.filename]#.afm# from a [.filename]#.pfa# or [."
 "filename]#.pfb#?"
-msgstr ""
+msgstr "能否从 [.filename]#.pfa# 或 [.filename]#.pfb# 文件生成 [.filename]#.afm#？"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:601
+#, fuzzy
 msgid ""
 "How to generate the groff character mapping files for PostScript fonts with "
 "non-standard character names?"
-msgstr ""
+msgstr "如何为字符名称非标准的 PostScript 字体生成 groff 字符映射文件？"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:602
+#, fuzzy
 msgid "Can xditview and devX?? devices be set up to access all the new fonts?"
-msgstr ""
+msgstr "能否设置 xditview 和 devX?？ 设备以访问所有新字体？"
 
 #. type: Plain text
 #: documentation/content/en/articles/fonts/_index.adoc:602
+#, fuzzy
 msgid ""
 "It would be good to have examples of using TrueType fonts with Povray and "
 "Ghostscript."
-msgstr ""
+msgstr "如果能提供在 Povray 和 Ghostscript 中使用 TrueType 字体的示例就好了。"

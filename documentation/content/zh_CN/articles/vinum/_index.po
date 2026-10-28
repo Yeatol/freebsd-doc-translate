@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/vinum/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The vinum Volume Manager in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中的 vinum 卷管理器"
 
 #. The Vinum Volume Manager
 #. By Greg Lehey (grog at lemis dot com)
@@ -32,9 +32,9 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/articles/vinum/_index.adoc:1
 #: documentation/content/en/articles/vinum/_index.adoc:19
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The vinum Volume Manager"
-msgstr ""
+msgstr "vinum 卷管理器"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:50
@@ -49,6 +49,7 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:61
+#, fuzzy
 msgid ""
 "No matter the type of disks, there are always potential problems.  The disks "
 "can be too small, too slow, or too unreliable to meet the system's "
@@ -56,10 +57,11 @@ msgid ""
 "requirements.  Often a file system is needed that is bigger than a disk's "
 "capacity.  Various solutions to these problems have been proposed and "
 "implemented."
-msgstr ""
+msgstr "无论磁盘类型如何，始终都存在潜在问题。磁盘可能太小、太慢或不够可靠，无法满足系统的需求。磁盘容量不断增大，数据存储需求也在增长。通常需要使用容量超过单个磁盘的文件系统。针对这些问题，人们提出并实施了各种解决方案。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:65
+#, fuzzy
 msgid ""
 "One method is through the use of multiple, and sometimes redundant, disks.  "
 "In addition to supporting various cards and controllers for hardware "
@@ -69,25 +71,28 @@ msgid ""
 "filename]#vinum# provides more flexibility, performance, and reliability "
 "than traditional disk storage and implements `RAID`-0, `RAID`-1, and "
 "`RAID`-5 models, both individually and in combination."
-msgstr ""
+msgstr "一种方法是使用多个磁盘，有时还会使用冗余磁盘。除了支持硬件独立磁盘冗余阵列（RAID）系统的各种卡和控制器外，FreeBSD 基本系统还包含 [.filename]#vinum# 卷管理器。它是一种块设备驱动程序，可实现虚拟磁盘驱动器并解决上述三个问题。[.filename]#vinum# 比传统磁盘存储更灵活、性能更好且可靠性更高，并实现了 `RAID`-0、`RAID`-1 和 `RAID`-5 模型，既可以单独使用，也可以组合使用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:67
+#, fuzzy
 msgid ""
 "This chapter provides an overview of potential problems with traditional "
 "disk storage, and an introduction to the [.filename]#vinum# volume manager."
-msgstr ""
+msgstr "本章概述传统磁盘存储可能遇到的问题，并介绍 [.filename]#vinum# 卷管理器。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/vinum/_index.adoc:72
+#, fuzzy
 msgid ""
 "vinum is deprecated and is not present in FreeBSD 15.0 and later.  Users are "
 "advised to migrate to man:gconcat[8], man:gmirror[8], man:gstripe[8], man:"
 "graid[8], or man:zfs[8]."
-msgstr ""
+msgstr "vinum 已弃用，FreeBSD 15.0 及更高版本中不再提供。建议用户迁移到 man:gconcat[8]、man:gmirror[8]、man:gstripe[8]、man:graid[8] 或 man:zfs[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/vinum/_index.adoc:81
+#, fuzzy
 msgid ""
 "Starting with FreeBSD 5, [.filename]#vinum# has been rewritten to fit into "
 "the extref:{handbook}geom[GEOM architecture, geom], while retaining the "
@@ -99,25 +104,27 @@ msgid ""
 "reside under [.filename]#/dev/gvinum# instead of [.filename]#/dev/vinum#.  "
 "As of FreeBSD 6, the original [.filename]#vinum# implementation is no longer "
 "available in the code base."
-msgstr ""
+msgstr "从 FreeBSD 5 开始，[.filename]#vinum# 已经重写，以适配 extref:{handbook}geom[GEOM 架构，geom]，同时保留了原有的理念、术语和磁盘元数据。这个重写版本称为 _gvinum_（即 _GEOM vinum_）。本章仍使用术语 [.filename]#vinum#，但执行任何命令时都应使用 `gvinum`。内核模块的名称也从原来的 [.filename]#vinum.ko# 改为 [.filename]#geom_vinum.ko#，所有设备节点都位于 [.filename]#/dev/gvinum# 下，而不是 [.filename]#/dev/vinum# 下。从 FreeBSD 6 开始，代码库中不再提供原始的 [.filename]#vinum# 实现。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Access Bottlenecks"
-msgstr ""
+msgstr "访问瓶颈"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:88
+#, fuzzy
 msgid ""
 "Modern systems frequently need to access data in a highly concurrent "
 "manner.  For example, large FTP or HTTP servers can maintain thousands of "
 "concurrent sessions and have multiple 100 Mbit/s connections to the outside "
 "world, well beyond the sustained transfer rate of most disks."
-msgstr ""
+msgstr "现代系统通常需要以高度并发的方式访问数据。例如，大型 FTP 或 HTTP 服务器可以维持数千个并发会话，并通过多条 100 Mbit/s 连接接入外部网络，这远远超出了大多数磁盘的持续传输速率。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:92
+#, fuzzy
 msgid ""
 "Current disk drives can transfer data sequentially at up to 70 MB/s, but "
 "this value is of little importance in an environment where many independent "
@@ -126,19 +133,21 @@ msgid ""
 "from the viewpoint of the disk subsystem.  The important parameter is the "
 "load that a transfer places on the subsystem, or the time for which a "
 "transfer occupies the drives involved in the transfer."
-msgstr ""
+msgstr "目前的磁盘驱动器顺序传输数据的速度最高可达 70 MB/s，但在许多独立进程访问同一驱动器、且实际传输速率可能只有该数值一小部分的环境中，这个数值意义不大。在这种情况下，从磁盘子系统的角度看问题更有意义。重要参数是一次传输给子系统带来的负载，或者说这次传输占用相关驱动器的时间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:95
+#, fuzzy
 msgid ""
 "In any disk transfer, the drive must first position the heads, wait for the "
 "first sector to pass under the read head, and then perform the transfer.  "
 "These actions can be considered to be atomic as it does not make any sense "
 "to interrupt them."
-msgstr ""
+msgstr "进行任何磁盘传输时，驱动器都必须先定位磁头，等待第一个扇区经过读磁头，然后执行传输。这些操作可以视为原子操作，因为中断它们毫无意义。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:100
+#, fuzzy
 msgid ""
 "[[vinum-latency]] Consider a typical transfer of about 10 kB: the current "
 "generation of high-performance disks can position the heads in an average of "
@@ -147,29 +156,32 @@ msgid ""
 "about 150 μs, almost nothing compared to the positioning time.  In such a "
 "case, the effective transfer rate drops to a little over 1 MB/s and is "
 "clearly highly dependent on the transfer size."
-msgstr ""
+msgstr "[[vinum-latency]] 以一次约 10 kB 的典型传输为例：当前一代高性能磁盘的磁头平均定位时间为 3.5 ms。最快的驱动器转速为 15,000 rpm，因此平均旋转延迟（半圈）为 2 ms。以 70 MB/s 的速度传输数据本身只需约 150 μs，与定位时间相比几乎可以忽略。在这种情况下，有效传输速率降至略高于 1 MB/s，并且显然高度依赖于传输大小。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:103
+#, fuzzy
 msgid ""
 "The traditional and obvious solution to this bottleneck is \"more spindles"
 "\": rather than using one large disk, use several smaller disks with the "
 "same aggregate storage space.  Each disk is capable of positioning and "
 "transferring independently, so the effective throughput increases by a "
 "factor close to the number of disks used."
-msgstr ""
+msgstr "解决这一瓶颈的传统且显而易见的方法是“增加主轴数”：与其使用一个大磁盘，不如使用几个总存储空间相同的小磁盘。每个磁盘都能够独立定位和传输数据，因此有效吞吐量会随着所用磁盘数量近似成比例地增加。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:107
+#, fuzzy
 msgid ""
 "The actual throughput improvement is smaller than the number of disks "
 "involved.  Although each drive is capable of transferring in parallel, there "
 "is no way to ensure that the requests are evenly distributed across the "
 "drives.  Inevitably the load on one drive will be higher than on another."
-msgstr ""
+msgstr "实际吞吐量的提升低于所用磁盘的数量。虽然每个驱动器都能够并行传输数据，但无法确保请求均匀分布到各个驱动器上。不可避免地，一个驱动器的负载会高于另一个。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:115
+#, fuzzy
 msgid ""
 "The evenness of the load on the disks is strongly dependent on the way the "
 "data is shared across the drives.  In the following discussion, it is "
@@ -185,22 +197,23 @@ msgid ""
 "improvement is less marked.  crossref:vinum[vinum-concat, Concatenated "
 "Organization] illustrates the sequence in which storage units are allocated "
 "in a concatenated organization."
-msgstr ""
+msgstr "磁盘负载的均匀程度很大程度上取决于数据在各个驱动器之间的分布方式。在下面的讨论中，可以将磁盘存储看作大量按编号寻址的数据扇区，就像书页一样。最直观的方法是将虚拟磁盘划分为若干连续扇区组，每组大小与单个物理磁盘相同，并按这种方式存储数据，就像把一本大书撕成较小的部分。这种方法称为 __串接__，其优点是磁盘之间不需要满足特定的大小关系。当对虚拟磁盘的访问均匀分布在整个地址空间时，这种方法效果良好。如果访问集中在较小区域，性能提升就不那么明显。crossref:vinum[vinum-concat, 串接组织]展示了串接组织中存储单元的分配顺序。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Concatenated Organization"
-msgstr ""
+msgstr "串接组织"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-concat.png"
-msgstr ""
+msgstr "vinum-concat.png"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:124
+#, fuzzy
 msgid ""
 "An alternative mapping is to divide the address space into smaller, equal-"
 "sized components and store them sequentially on different devices.  For "
@@ -208,10 +221,11 @@ msgid ""
 "sectors on the next disk and so on.  After filling the last disk, the "
 "process repeats until the disks are full.  This mapping is called _striping_ "
 "or RAID-0."
-msgstr ""
+msgstr "另一种映射方式是将地址空间划分为较小且大小相同的部分，并依次存储到不同设备上。例如，前 256 个扇区可以存储在第一个磁盘上，接下来的 256 个扇区存储在下一个磁盘上，依此类推。填满最后一个磁盘后，重复此过程，直到所有磁盘都已写满。这种映射方式称为 __条带化__或 RAID-0。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:128
+#, fuzzy
 msgid ""
 "`RAID` offers various forms of fault tolerance, though RAID-0 is somewhat "
 "misleading as it provides no redundancy.  Striping requires somewhat more "
@@ -220,65 +234,71 @@ msgid ""
 "constant load across the disks.  crossref:vinum[vinum-striped, Striped "
 "Organization] illustrates the sequence in which storage units are allocated "
 "in a striped organization."
-msgstr ""
+msgstr "`RAID` 提供多种容错方式，但 RAID-0 这个名称有些误导，因为它不提供冗余。条带化需要花费更多精力来定位数据，并且当一次传输分布在多个磁盘上时会增加 I/O 负载，但它也能使各磁盘的负载更加均匀。crossref:vinum[vinum-striped, 条带化组织]展示了条带化组织中存储单元的分配顺序。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Striped Organization"
-msgstr ""
+msgstr "条带化组织"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-striped.png"
-msgstr ""
+msgstr "vinum-striped.png"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Data Integrity"
-msgstr ""
+msgstr "数据完整性"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:139
+#, fuzzy
 msgid ""
 "The final problem with disks is that they are unreliable.  Although "
 "reliability has increased tremendously over the last few years, disk drives "
 "are still the most likely core component of a server to fail.  When they do, "
 "the results can be catastrophic and replacing a failed disk drive and "
 "restoring data can result in server downtime."
-msgstr ""
+msgstr "磁盘的最后一个问题是它们并不可靠。尽管过去几年磁盘可靠性有了巨大提升，磁盘驱动器仍然是服务器中最容易发生故障的核心组件。故障可能造成灾难性后果，而更换故障磁盘驱动器并恢复数据可能导致服务器停机。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:142
+#, fuzzy
 msgid ""
 "One approach to this problem is _mirroring_, or `RAID-1`, which keeps two "
 "copies of the data on different physical hardware.  Any write to the volume "
 "writes to both disks; a read can be satisfied from either, so if one drive "
 "fails, the data is still available on the other drive."
-msgstr ""
+msgstr "解决这一问题的一种方法是 __镜像__，即 `RAID-1`，它会在不同的物理硬件上保存两份数据副本。对卷的任何写入都会同时写入两块磁盘；读取可以从任意一块磁盘完成，因此如果一个驱动器发生故障，另一块驱动器上的数据仍然可用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:144
+#, fuzzy
 msgid "Mirroring has two problems:"
-msgstr ""
+msgstr "镜像有两个问题："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:146
+#, fuzzy
 msgid "It requires twice as much disk storage as a non-redundant solution."
-msgstr ""
+msgstr "它所需的磁盘存储空间是非冗余方案的两倍。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:147
+#, fuzzy
 msgid ""
 "Writes must be performed to both drives, so they take up twice the bandwidth "
 "of a non-mirrored volume. Reads do not suffer from a performance penalty and "
 "can even be faster."
-msgstr ""
+msgstr "写入必须同时写入两个驱动器，因此会占用非镜像卷两倍的带宽。读取不会受到性能影响，甚至可能更快。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:154
+#, fuzzy
 msgid ""
 "An alternative solution is _parity_, implemented in `RAID` levels 2, 3, 4 "
 "and 5.  Of these, `RAID-5` is the most interesting.  As implemented in [."
@@ -289,22 +309,23 @@ msgid ""
 "required by `RAID-5`, the location of this parity block changes from one "
 "stripe to the next.  The numbers in the data blocks indicate the relative "
 "block numbers."
-msgstr ""
+msgstr "另一种解决方案是 __奇偶校验__，由 `RAID` 级别 2、3、4 和 5 实现。其中，`RAID-5` 最值得关注。在 [.filename]#vinum# 中，它是条带化组织的一种变体，每个条带中有一个块专门用于存储其他块的奇偶校验信息。在 [.filename]#vinum# 中，`RAID-5` plex 类似于条带化 plex，但它通过在每个条带中加入一个奇偶校验块来实现 `RAID-5`。按照 `RAID-5` 的要求，奇偶校验块的位置会在不同条带之间变化。数据块中的数字表示相对块编号。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`RAID`-5 Organization"
-msgstr ""
+msgstr "`RAID`-5 组织"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-raid5-org.png"
-msgstr ""
+msgstr "vinum-raid5-org.png"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:162
+#, fuzzy
 msgid ""
 "Compared to mirroring, `RAID-5` has the advantage of requiring significantly "
 "less storage space.  Read access is similar to that of striped "
@@ -313,40 +334,44 @@ msgid ""
 "operate in degraded mode where a read from one of the remaining accessible "
 "drives continues normally, but a read from the failed drive is recalculated "
 "from the corresponding block from all the remaining drives."
-msgstr ""
+msgstr "与镜像相比，`RAID-5` 的优点是所需存储空间显著减少。读取访问与条带化组织类似，但写入访问速度显著更慢，约为读取性能的 25%。如果一个驱动器发生故障，阵列可以在降级模式下继续运行：仍可正常读取其他可访问驱动器上的数据，而故障驱动器上的数据则通过其余所有驱动器上的对应数据块重新计算。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#vinum# Objects"
-msgstr ""
+msgstr "[.filename]#vinum# 对象"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:167
+#, fuzzy
 msgid ""
 "To address these problems, [.filename]#vinum# implements a four-level "
 "hierarchy of objects:"
-msgstr ""
+msgstr "为解决这些问题，[.filename]#vinum# 实现了由四层对象组成的层次结构："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:169
+#, fuzzy
 msgid ""
 "The most visible object is the virtual disk, called a _volume_. Volumes have "
 "essentially the same properties as a UNIX(R) disk drive, though there are "
 "some minor differences. For one, they have no size limitations."
-msgstr ""
+msgstr "最直观的对象是虚拟磁盘，称为 __卷__。卷基本上具有与 UNIX(R) 磁盘驱动器相同的属性，但也有一些细微差异。首先，卷没有大小限制。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:170
+#, fuzzy
 msgid ""
 "Volumes are composed of _plexes_, each of which represent the total address "
 "space of a volume. This level in the hierarchy provides redundancy. Think of "
 "plexes as individual disks in a mirrored array, each containing the same "
 "data."
-msgstr ""
+msgstr "卷由 __plex__ 组成，每个 plex 都代表卷的完整地址空间。这一层次提供冗余。可以将 plex 看作镜像阵列中的独立磁盘，每个磁盘都包含相同的数据。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:171
+#, fuzzy
 msgid ""
 "Since [.filename]#vinum# exists within the UNIX(R) disk storage framework, "
 "it would be possible to use UNIX(R) partitions as the building block for "
@@ -355,78 +380,85 @@ msgid ""
 "filename]#vinum# subdivides a single UNIX(R) partition, the _drive_, into "
 "contiguous areas called _subdisks_, which are used as building blocks for "
 "plexes."
-msgstr ""
+msgstr "由于 [.filename]#vinum# 位于 UNIX(R) 磁盘存储框架内，因此可以使用 UNIX(R) 分区作为多磁盘 plex 的构建单元。实际上，这种方式过于不灵活，因为 UNIX(R) 磁盘只能包含数量有限的分区。因此，[.filename]#vinum# 会将单个 UNIX(R) 分区（即 __drive__）细分为称为 __subdisk__ 的连续区域，并将它们用作 plex 的构建单元。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:172
+#, fuzzy
 msgid ""
 "Subdisks reside on [.filename]#vinum#_drives_, currently UNIX(R) partitions. "
 "[.filename]#vinum# drives can contain any number of subdisks. With the "
 "exception of a small area at the beginning of the drive, which is used for "
 "storing configuration and state information, the entire drive is available "
 "for data storage."
-msgstr ""
+msgstr "子磁盘位于 [.filename]#vinum# __drive__ 上，目前对应 UNIX(R) 分区。[.filename]#vinum# drive 可以包含任意数量的子磁盘。除驱动器开头用于存储配置和状态信息的一小块区域外，整个驱动器都可用于存储数据。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:174
+#, fuzzy
 msgid ""
 "The following sections describe the way these objects provide the "
 "functionality required of [.filename]#vinum#."
-msgstr ""
+msgstr "以下各节将介绍这些对象如何提供 [.filename]#vinum# 所需的功能。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Volume Size Considerations"
-msgstr ""
+msgstr "卷大小注意事项"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:179
+#, fuzzy
 msgid ""
 "Plexes can include multiple subdisks spread over all drives in the [."
 "filename]#vinum# configuration.  As a result, the size of an individual "
 "drive does not limit the size of a plex or a volume."
-msgstr ""
+msgstr "plex 可以包含分布在 [.filename]#vinum# 配置中所有驱动器上的多个子磁盘。因此，单个驱动器的大小不会限制 plex 或卷的大小。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Redundant Data Storage"
-msgstr ""
+msgstr "冗余数据存储"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:185
+#, fuzzy
 msgid ""
 "[.filename]#vinum# implements mirroring by attaching multiple plexes to a "
 "volume.  Each plex is a representation of the data in a volume.  A volume "
 "may contain between one and eight plexes."
-msgstr ""
+msgstr "[.filename]#vinum# 通过将多个 plex 连接到一个卷来实现镜像。每个 plex 都表示卷中的数据。一个卷可以包含一个到八个 plex。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:188
+#, fuzzy
 msgid ""
 "Although a plex represents the complete data of a volume, it is possible for "
 "parts of the representation to be physically missing, either by design (by "
 "not defining a subdisk for parts of the plex) or by accident (as a result of "
 "the failure of a drive).  As long as at least one plex can provide the data "
 "for the complete address range of the volume, the volume is fully functional."
-msgstr ""
+msgstr "虽然一个 plex 表示卷的完整数据，但其部分内容在物理上可能缺失，既可能是有意为之（未为 plex 的某些部分定义子磁盘），也可能是意外造成（驱动器故障所致）。只要至少有一个 plex 能够提供卷完整地址范围内的数据，该卷就能完全正常运行。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Which Plex Organization?"
-msgstr ""
+msgstr "应选择哪种 plex 组织方式？"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:192
+#, fuzzy
 msgid ""
 "[.filename]#vinum# implements both concatenation and striping at the plex "
 "level:"
-msgstr ""
+msgstr "[.filename]#vinum# 在 plex 层级实现了串接和条带化两种方式："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:194
+#, fuzzy
 msgid ""
 "A _concatenated plex_ uses the address space of each subdisk in turn. "
 "Concatenated plexes are the most flexible as they can contain any number of "
@@ -435,10 +467,11 @@ msgid ""
 "striped plexes, though the difference in CPU overhead is not measurable. On "
 "the other hand, they are most susceptible to hot spots, where one disk is "
 "very active and others are idle."
-msgstr ""
+msgstr "__串接 plex__ 依次使用每个子磁盘的地址空间。串接 plex 最灵活，因为它可以包含任意数量的子磁盘，而且子磁盘长度可以不同。通过添加更多子磁盘，可以扩展 plex。与条带化 plex 相比，串接 plex 所需的 CPU 时间更少，不过 CPU 开销的差异无法测量。另一方面，串接 plex 最容易出现热点，即一个磁盘非常繁忙而其他磁盘处于空闲状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:195
+#, fuzzy
 msgid ""
 "A _striped plex_ stripes the data across each subdisk. The subdisks must all "
 "be the same size and there must be at least two subdisks to distinguish it "
@@ -447,109 +480,111 @@ msgid ""
 "the load can be evened out on the component drives. Extending a plex by "
 "adding new subdisks is so complicated that [.filename]#vinum# does not "
 "implement it."
-msgstr ""
+msgstr "__条带化 plex__ 将数据条带化分布到各个子磁盘上。所有子磁盘的大小必须相同，且至少需要两个子磁盘，才能与串接 plex 区分开来。条带化 plex 的最大优点是能够减少热点。选择约 256 kB 的最佳条带大小，可以使各组成驱动器上的负载更加均匀。通过添加新子磁盘来扩展 plex 非常复杂，因此 [.filename]#vinum# 未实现此功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:197
+#, fuzzy
 msgid ""
 "crossref:vinum[vinum-comparison, [.filename]#vinum# Plex Organizations] "
 "summarizes the advantages and disadvantages of each plex organization."
-msgstr ""
+msgstr "crossref:vinum[vinum-comparison, [.filename]#vinum# plex 组织方式]总结了每种 plex 组织方式的优缺点。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#vinum# Plex Organizations"
-msgstr ""
+msgstr "[.filename]#vinum# plex 组织方式"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Plex type"
-msgstr ""
+msgstr "Plex 类型"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Minimum subdisks"
-msgstr ""
+msgstr "最少子磁盘数"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can add subdisks"
-msgstr ""
+msgstr "可添加子磁盘"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Must be equal size"
-msgstr ""
+msgstr "大小必须相同"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Application"
-msgstr ""
+msgstr "应用场景"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "concatenated"
-msgstr ""
+msgstr "串接"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:211
 #: documentation/content/en/articles/vinum/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "yes"
-msgstr ""
+msgstr "是"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:212
 #: documentation/content/en/articles/vinum/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "no"
-msgstr ""
+msgstr "否"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Large data storage with maximum placement flexibility and moderate performance"
-msgstr ""
+msgstr "适用于大容量数据存储，具有最大的布局灵活性和中等性能"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "striped"
-msgstr ""
+msgstr "条带化"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Table
 #: documentation/content/en/articles/vinum/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "High performance in combination with highly concurrent access"
-msgstr ""
+msgstr "适用于高并发访问场景，性能出色"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Some Examples"
-msgstr ""
+msgstr "一些示例"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:228
+#, fuzzy
 msgid ""
 "[.filename]#vinum# maintains a _configuration database_ which describes the "
 "objects known to an individual system.  Initially, the user creates the "
@@ -558,7 +593,7 @@ msgid ""
 "on each disk _device_ under its control.  This database is updated on each "
 "state change, so that a restart accurately restores the state of each [."
 "filename]#vinum# object."
-msgstr ""
+msgstr "[.filename]#vinum# 维护一个 __配置数据库__，用于描述单个系统已知的对象。最初，用户使用 man:gvinum[8] 根据一个或多个配置文件创建配置数据库。[.filename]#vinum# 会在其管理的每个磁盘 __device__ 上存储一份配置数据库副本。每次状态发生变化时，都会更新此数据库，从而确保重启后能够准确恢复每个 [.filename]#vinum# 对象的状态。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:229
@@ -568,71 +603,78 @@ msgstr "配置文件"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:233
+#, fuzzy
 msgid ""
 "The configuration file describes individual [.filename]#vinum# objects.  The "
 "definition of a simple volume might be:"
-msgstr ""
+msgstr "配置文件描述各个 [.filename]#vinum# 对象。简单卷的定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    drive a device /dev/da3h\n"
 "    volume myvol\n"
 "      plex org concat\n"
 "        sd length 512m drive a\n"
-msgstr ""
+msgstr "    drive a device /dev/da3h\n    volume myvol\n      plex org concat\n        sd length 512m drive a\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:243
+#, fuzzy
 msgid "This file describes four [.filename]#vinum# objects:"
-msgstr ""
+msgstr "此文件描述了四个 [.filename]#vinum# 对象："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:245
+#, fuzzy
 msgid ""
 "The _drive_ line describes a disk partition (_drive_) and its location "
 "relative to the underlying hardware. It is given the symbolic name _a_. This "
 "separation of symbolic names from device names allows disks to be moved from "
 "one location to another without confusion."
-msgstr ""
+msgstr "_drive_ 行描述一个磁盘分区（__drive__）及其相对于底层硬件的位置。该分区被赋予符号名称 _a_。将符号名称与设备名称分开，可以在不造成混淆的情况下将磁盘从一个位置移到另一个位置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:246
+#, fuzzy
 msgid ""
 "The _volume_ line describes a volume. The only required attribute is the "
 "name, in this case _myvol_."
-msgstr ""
+msgstr "_volume_ 行描述一个卷。唯一必需的属性是名称，在此例中为 _myvol_。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:247
+#, fuzzy
 msgid ""
 "The _plex_ line defines a plex. The only required parameter is the "
 "organization, in this case _concat_. No name is necessary as the system "
 "automatically generates a name from the volume name by adding the suffix _."
 "px_, where _x_ is the number of the plex in the volume. Thus this plex will "
 "be called _myvol.p0_."
-msgstr ""
+msgstr "_plex_ 行定义一个 plex。唯一必需的参数是组织方式，在此例中为 _concat_。无需指定名称，因为系统会自动在卷名称后添加后缀 _.px_ 来生成名称，其中 _x_ 是该 plex 在卷中的编号。因此，这个 plex 将命名为 _myvol.p0_。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:248
+#, fuzzy
 msgid ""
 "The _sd_ line describes a subdisk. The minimum specifications are the name "
 "of a drive on which to store it, and the length of the subdisk. No name is "
 "necessary as the system automatically assigns names derived from the plex "
 "name by adding the suffix _.sx_, where _x_ is the number of the subdisk in "
 "the plex. Thus [.filename]#vinum# gives this subdisk the name _myvol.p0.s0_."
-msgstr ""
+msgstr "_sd_ 行描述一个子磁盘。最低限度的规格包括用于存储它的驱动器名称，以及子磁盘的长度。无需指定名称，因为系统会自动根据 plex 名称生成名称，并添加后缀 _.sx_，其中 _x_ 是该 plex 中子磁盘的编号。因此，[.filename]#vinum# 会将此子磁盘命名为 _myvol.p0.s0_。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:250
+#, fuzzy
 msgid ""
 "After processing this file, man:gvinum[8] produces the following output:"
-msgstr ""
+msgstr "处理此文件后，man:gvinum[8] 会生成以下输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#  gvinum -> create config1\n"
 "Configuration summary\n"
@@ -640,88 +682,92 @@ msgid ""
 "Volumes:        1 (4 configured)\n"
 "Plexes:         1 (8 configured)\n"
 "Subdisks:       1 (16 configured)\n"
-msgstr ""
+msgstr "#  gvinum -> create config1\nConfiguration summary\nDrives:         1 (4 configured)\nVolumes:        1 (4 configured)\nPlexes:         1 (8 configured)\nSubdisks:       1 (16 configured)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  D a                     State: up       Device /dev/da3h      Avail: 2061/2573 MB (80%)\n"
-msgstr ""
+msgstr "  D a                     State: up       Device /dev/da3h      Avail: 2061/2573 MB (80%)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  V myvol                 State: up       Plexes:       1 Size:      512 MB\n"
-msgstr ""
+msgstr "  V myvol                 State: up       Plexes:       1 Size:      512 MB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  P myvol.p0            C State: up       Subdisks:     1 Size:      512 MB\n"
-msgstr ""
+msgstr "  P myvol.p0            C State: up       Subdisks:     1 Size:      512 MB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  S myvol.p0.s0           State: up       PO:        0  B Size:      512 MB\n"
-msgstr ""
+msgstr "  S myvol.p0.s0           State: up       PO:        0  B Size:      512 MB\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:272
+#, fuzzy
 msgid ""
 "This output shows the brief listing format of man:gvinum[8].  It is "
 "represented graphically in crossref:vinum[vinum-simple-vol, A Simple [."
 "filename]#vinum# Volume]."
-msgstr ""
+msgstr "此输出展示了 man:gvinum[8] 的简略列表格式。它在 crossref:vinum[vinum-simple-vol, A Simple [.filename]#vinum# Volume] 中以图形形式呈现。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Simple [.filename]#vinum# Volume"
-msgstr ""
+msgstr "一个简单的 [.filename]#vinum# 卷"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-simple-vol.png"
-msgstr ""
+msgstr "vinum-simple-vol.png"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:279
+#, fuzzy
 msgid ""
 "This figure, and the ones which follow, represent a volume, which contains "
 "the plexes, which in turn contains the subdisks.  In this example, the "
 "volume contains one plex, and the plex contains one subdisk."
-msgstr ""
+msgstr "此图以及后续图示都表示一个卷，其中包含 plex，而 plex 又包含子磁盘。在此示例中，卷包含一个 plex，而该 plex 包含一个子磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:284
+#, fuzzy
 msgid ""
 "This particular volume has no specific advantage over a conventional disk "
 "partition.  It contains a single plex, so it is not redundant.  The plex "
 "contains a single subdisk, so there is no difference in storage allocation "
 "from a conventional disk partition.  The following sections illustrate "
 "various more interesting configuration methods."
-msgstr ""
+msgstr "此卷相比传统磁盘分区没有特别优势。它只包含一个 plex，因此没有冗余。该 plex 只包含一个子磁盘，因此其存储分配方式与传统磁盘分区没有区别。以下各节将介绍一些更有意思的配置方法。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Increased Resilience: Mirroring"
-msgstr ""
+msgstr "提高容错能力：镜像"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:290
+#, fuzzy
 msgid ""
 "The resilience of a volume can be increased by mirroring.  When laying out a "
 "mirrored volume, it is important to ensure that the subdisks of each plex "
 "are on different drives, so that a drive failure will not take down both "
 "plexes.  The following configuration mirrors a volume:"
-msgstr ""
+msgstr "通过镜像可以提高卷的容错能力。设计镜像卷时，务必确保每个 plex 的子磁盘位于不同的驱动器上，这样驱动器发生故障时就不会同时导致两个 plex 不可用。以下配置将一个卷镜像："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tdrive b device /dev/da4h\n"
 "\tvolume mirror\n"
@@ -729,95 +775,99 @@ msgid ""
 "        sd length 512m drive a\n"
 "\t  plex org concat\n"
 "\t    sd length 512m drive b\n"
-msgstr ""
+msgstr "\tdrive b device /dev/da4h\n\tvolume mirror\n      plex org concat\n        sd length 512m drive a\n\t  plex org concat\n\t    sd length 512m drive b\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:303
+#, fuzzy
 msgid ""
 "In this example, it was not necessary to specify a definition of drive _a_ "
 "again, since [.filename]#vinum# keeps track of all objects in its "
 "configuration database.  After processing this definition, the configuration "
 "looks like:"
-msgstr ""
+msgstr "在此示例中，无需再次定义驱动器 _a_，因为 [.filename]#vinum# 会跟踪其配置数据库中的所有对象。处理此定义后，配置如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tDrives:         2 (4 configured)\n"
 "\tVolumes:        2 (4 configured)\n"
 "\tPlexes:         3 (8 configured)\n"
 "\tSubdisks:       3 (16 configured)\n"
-msgstr ""
+msgstr "\tDrives:         2 (4 configured)\n\tVolumes:        2 (4 configured)\n\tPlexes:         3 (8 configured)\n\tSubdisks:       3 (16 configured)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tD a                     State: up       Device /dev/da3h       Avail: 1549/2573 MB (60%)\n"
 "\tD b                     State: up       Device /dev/da4h       Avail: 2061/2573 MB (80%)\n"
-msgstr ""
+msgstr "\tD a                     State: up       Device /dev/da3h       Avail: 1549/2573 MB (60%)\n\tD b                     State: up       Device /dev/da4h       Avail: 2061/2573 MB (80%)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    V myvol                 State: up       Plexes:       1 Size:        512 MB\n"
 "    V mirror                State: up       Plexes:       2 Size:        512 MB\n"
-msgstr ""
+msgstr "    V myvol                 State: up       Plexes:       1 Size:        512 MB\n    V mirror                State: up       Plexes:       2 Size:        512 MB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    P myvol.p0            C State: up       Subdisks:     1 Size:        512 MB\n"
 "    P mirror.p0           C State: up       Subdisks:     1 Size:        512 MB\n"
 "    P mirror.p1           C State: initializing     Subdisks:     1 Size:        512 MB\n"
-msgstr ""
+msgstr "    P myvol.p0            C State: up       Subdisks:     1 Size:        512 MB\n    P mirror.p0           C State: up       Subdisks:     1 Size:        512 MB\n    P mirror.p1           C State: initializing     Subdisks:     1 Size:        512 MB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    S myvol.p0.s0           State: up       PO:        0  B Size:        512 MB\n"
 "\tS mirror.p0.s0          State: up       PO:        0  B Size:        512 MB\n"
 "\tS mirror.p1.s0          State: empty    PO:        0  B Size:        512 MB\n"
-msgstr ""
+msgstr "    S myvol.p0.s0           State: up       PO:        0  B Size:        512 MB\n\tS mirror.p0.s0          State: up       PO:        0  B Size:        512 MB\n\tS mirror.p1.s0          State: empty    PO:        0  B Size:        512 MB\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:328
+#, fuzzy
 msgid ""
 "crossref:vinum[vinum-mirrored-vol, A Mirrored [.filename]#vinum# Volume] "
 "shows the structure graphically."
-msgstr ""
+msgstr "crossref:vinum[vinum-mirrored-vol, A Mirrored [.filename]#vinum# Volume] 以图形形式展示了该结构。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Mirrored [.filename]#vinum# Volume"
-msgstr ""
+msgstr "镜像 [.filename]#vinum# 卷"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-mirrored-vol.png"
-msgstr ""
+msgstr "vinum-mirrored-vol.png"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:335
+#, fuzzy
 msgid ""
 "In this example, each plex contains the full 512 MB of address space.  As in "
 "the previous example, each plex contains only a single subdisk."
-msgstr ""
+msgstr "在此示例中，每个 plex 都包含完整的 512 MB 地址空间。与前一个示例一样，每个 plex 只包含一个子磁盘。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Optimizing Performance"
-msgstr ""
+msgstr "优化性能"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:341
+#, fuzzy
 msgid ""
 "The mirrored volume in the previous example is more resistant to failure "
 "than an unmirrored volume, but its performance is less as each write to the "
@@ -826,11 +876,11 @@ msgid ""
 "approach: instead of mirroring, the data is striped across as many disk "
 "drives as possible.  The following configuration shows a volume with a plex "
 "striped across four disk drives:"
-msgstr ""
+msgstr "与非镜像卷相比，前一个示例中的镜像卷更能抵御故障，但性能较低，因为每次向卷写入数据都需要同时写入两个驱动器，占用更大比例的总磁盘带宽。性能方面的考虑要求采用不同的方法：不使用镜像，而是将数据条带化分布到尽可能多的磁盘驱动器上。以下配置展示了一个 plex 跨四个磁盘驱动器进行条带化的卷："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        drive c device /dev/da5h\n"
 "\tdrive d device /dev/da6h\n"
@@ -840,58 +890,59 @@ msgid ""
 "\t  sd length 128m drive b\n"
 "\t  sd length 128m drive c\n"
 "\t  sd length 128m drive d\n"
-msgstr ""
+msgstr "        drive c device /dev/da5h\n\tdrive d device /dev/da6h\n\tvolume stripe\n\tplex org striped 512k\n\t  sd length 128m drive a\n\t  sd length 128m drive b\n\t  sd length 128m drive c\n\t  sd length 128m drive d\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:356
+#, fuzzy
 msgid ""
 "As before, it is not necessary to define the drives which are already known "
 "to [.filename]#vinum#.  After processing this definition, the configuration "
 "looks like:"
-msgstr ""
+msgstr "与之前一样，无需定义 [.filename]#vinum# 已知的驱动器。处理此定义后，配置如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tDrives:         4 (4 configured)\n"
 "\tVolumes:        3 (4 configured)\n"
 "\tPlexes:         4 (8 configured)\n"
 "\tSubdisks:       7 (16 configured)\n"
-msgstr ""
+msgstr "\tDrives:         4 (4 configured)\n\tVolumes:        3 (4 configured)\n\tPlexes:         4 (8 configured)\n\tSubdisks:       7 (16 configured)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:369
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    D a                     State: up       Device /dev/da3h        Avail: 1421/2573 MB (55%)\n"
 "    D b                     State: up       Device /dev/da4h        Avail: 1933/2573 MB (75%)\n"
 "    D c                     State: up       Device /dev/da5h        Avail: 2445/2573 MB (95%)\n"
 "    D d                     State: up       Device /dev/da6h        Avail: 2445/2573 MB (95%)\n"
-msgstr ""
+msgstr "    D a                     State: up       Device /dev/da3h        Avail: 1421/2573 MB (55%)\n    D b                     State: up       Device /dev/da4h        Avail: 1933/2573 MB (75%)\n    D c                     State: up       Device /dev/da5h        Avail: 2445/2573 MB (95%)\n    D d                     State: up       Device /dev/da6h        Avail: 2445/2573 MB (95%)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    V myvol                 State: up       Plexes:       1 Size:        512 MB\n"
 "    V mirror                State: up       Plexes:       2 Size:        512 MB\n"
 "    V striped               State: up       Plexes:       1 Size:        512 MB\n"
-msgstr ""
+msgstr "    V myvol                 State: up       Plexes:       1 Size:        512 MB\n    V mirror                State: up       Plexes:       2 Size:        512 MB\n    V striped               State: up       Plexes:       1 Size:        512 MB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    P myvol.p0            C State: up       Subdisks:     1 Size:        512 MB\n"
 "    P mirror.p0           C State: up       Subdisks:     1 Size:        512 MB\n"
 "    P mirror.p1           C State: initializing     Subdisks:     1 Size:        512 MB\n"
 "    P striped.p1            State: up       Subdisks:     1 Size:        512 MB\n"
-msgstr ""
+msgstr "    P myvol.p0            C State: up       Subdisks:     1 Size:        512 MB\n    P mirror.p0           C State: up       Subdisks:     1 Size:        512 MB\n    P mirror.p1           C State: initializing     Subdisks:     1 Size:        512 MB\n    P striped.p1            State: up       Subdisks:     1 Size:        512 MB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    S myvol.p0.s0           State: up       PO:        0  B Size:        512 MB\n"
 "    S mirror.p0.s0          State: up       PO:        0  B Size:        512 MB\n"
@@ -900,47 +951,49 @@ msgid ""
 "    S striped.p0.s1         State: up       PO:      512 kB Size:        128 MB\n"
 "    S striped.p0.s2         State: up       PO:     1024 kB Size:        128 MB\n"
 "    S striped.p0.s3         State: up       PO:     1536 kB Size:        128 MB\n"
-msgstr ""
+msgstr "    S myvol.p0.s0           State: up       PO:        0  B Size:        512 MB\n    S mirror.p0.s0          State: up       PO:        0  B Size:        512 MB\n    S mirror.p1.s0          State: empty    PO:        0  B Size:        512 MB\n    S striped.p0.s0         State: up       PO:        0  B Size:        128 MB\n    S striped.p0.s1         State: up       PO:      512 kB Size:        128 MB\n    S striped.p0.s2         State: up       PO:     1024 kB Size:        128 MB\n    S striped.p0.s3         State: up       PO:     1536 kB Size:        128 MB\n"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Striped [.filename]#vinum# Volume"
-msgstr ""
+msgstr "条带化 [.filename]#vinum# 卷"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:390
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-striped-vol.png"
-msgstr ""
+msgstr "vinum-striped-vol.png"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:394
+#, fuzzy
 msgid ""
 "This volume is represented in crossref:vinum[vinum-striped-vol, A Striped [."
 "filename]#vinum# Volume].  The darkness of the stripes indicates the "
 "position within the plex address space, where the lightest stripes come "
 "first and the darkest last."
-msgstr ""
+msgstr "此卷在 crossref:vinum[vinum-striped-vol, A Striped [.filename]#vinum# Volume] 中呈现。条带的深浅表示它们在 plex 地址空间中的位置，最浅的条带位于最前，最深的位于最后。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resilience and Performance"
-msgstr ""
+msgstr "容错能力与性能"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:399
+#, fuzzy
 msgid ""
 "[[vinum-resilience]]With sufficient hardware, it is possible to build "
 "volumes which show both increased resilience and increased performance "
 "compared to standard UNIX(R) partitions.  A typical configuration file might "
 "be:"
-msgstr ""
+msgstr "[[vinum-resilience]]硬件充足时，可以构建比标准 UNIX(R) 分区具有更高容错能力和更佳性能的卷。典型的配置文件可能如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tvolume raid10\n"
 "      plex org striped 512k\n"
@@ -955,97 +1008,106 @@ msgid ""
 "        sd length 102480k drive e\n"
 "        sd length 102480k drive a\n"
 "        sd length 102480k drive b\n"
-msgstr ""
+msgstr "\tvolume raid10\n      plex org striped 512k\n        sd length 102480k drive a\n        sd length 102480k drive b\n        sd length 102480k drive c\n        sd length 102480k drive d\n        sd length 102480k drive e\n      plex org striped 512k\n        sd length 102480k drive c\n        sd length 102480k drive d\n        sd length 102480k drive e\n        sd length 102480k drive a\n        sd length 102480k drive b\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:419
+#, fuzzy
 msgid ""
 "The subdisks of the second plex are offset by two drives from those of the "
 "first plex.  This helps to ensure that writes do not go to the same subdisks "
 "even if a transfer goes over two drives."
-msgstr ""
+msgstr "第二个 plex 的子磁盘相对于第一个 plex 的子磁盘偏移了两个驱动器。这有助于确保即使一次传输跨越两个驱动器，写入也不会落到相同的子磁盘上。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:421
+#, fuzzy
 msgid ""
 "crossref:vinum[vinum-raid10-vol,\"A Mirrored, Striped [.filename]#vinum# "
 "Volume\"] represents the structure of this volume."
-msgstr ""
+msgstr "crossref:vinum[vinum-raid10-vol,\"A Mirrored, Striped [.filename]#vinum# Volume\"] 展示了此卷的结构。"
 
 #. type: Block title
 #: documentation/content/en/articles/vinum/_index.adoc:423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A Mirrored, Striped [.filename]#vinum# Volume"
-msgstr ""
+msgstr "镜像条带化 [.filename]#vinum# 卷"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vinum/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vinum-raid10-vol.png"
-msgstr ""
+msgstr "vinum-raid10-vol.png"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Object Naming"
-msgstr ""
+msgstr "对象命名"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:431
+#, fuzzy
 msgid ""
 "[.filename]#vinum# assigns default names to plexes and subdisks, although "
 "they may be overridden.  Overriding the default names is not recommended as "
 "it does not bring a significant advantage and it can cause confusion."
-msgstr ""
+msgstr "[.filename]#vinum# 会为 plex 和子磁盘分配默认名称，但也可以覆盖这些名称。不建议覆盖默认名称，因为这样没有明显优势，而且可能造成混淆。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:434
+#, fuzzy
 msgid ""
 "Names may contain any non-blank character, but it is recommended to restrict "
 "them to letters, digits and the underscore characters.  The names of "
 "volumes, plexes, and subdisks may be up to 64 characters long, and the names "
 "of drives may be up to 32 characters long."
-msgstr ""
+msgstr "名称可以包含任何非空白字符，但建议仅使用字母、数字和下划线。卷、plex 和子磁盘的名称最长可为 64 个字符，驱动器名称最长可为 32 个字符。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:437
+#, fuzzy
 msgid ""
 "[.filename]#vinum# objects are assigned device nodes in the hierarchy [."
 "filename]#/dev/gvinum#.  The configuration shown above would cause [."
 "filename]#vinum# to create the following device nodes:"
-msgstr ""
+msgstr "[.filename]#vinum# 对象会在 [.filename]#/dev/gvinum# 层次结构中分配设备节点。上面所示的配置会使 [.filename]#vinum# 创建以下设备节点："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:439
+#, fuzzy
 msgid ""
 "Device entries for each volume. These are the main devices used by [."
 "filename]#vinum#. The configuration above would include the devices [."
 "filename]#/dev/gvinum/myvol#, [.filename]#/dev/gvinum/mirror#, [.filename]#/"
 "dev/gvinum/striped#, [.filename]#/dev/gvinum/raid5# and [.filename]#/dev/"
 "gvinum/raid10#."
-msgstr ""
+msgstr "每个卷对应的设备条目。这些是 [.filename]#vinum# 使用的主要设备。上述配置包含以下设备：[.filename]#/dev/gvinum/myvol#、[.filename]#/dev/gvinum/mirror#、[.filename]#/dev/gvinum/striped#、[.filename]#/dev/gvinum/raid5# 和 [.filename]#/dev/gvinum/raid10#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:440
+#, fuzzy
 msgid "All volumes get direct entries under [.filename]#/dev/gvinum/#."
-msgstr ""
+msgstr "所有卷都会在 [.filename]#/dev/gvinum/# 下直接建立条目。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:441
+#, fuzzy
 msgid ""
 "The directories [.filename]#/dev/gvinum/plex#, and [.filename]#/dev/gvinum/"
 "sd#, which contain device nodes for each plex and for each subdisk, "
 "respectively."
-msgstr ""
+msgstr "目录 [.filename]#/dev/gvinum/plex# 和 [.filename]#/dev/gvinum/sd# 分别包含每个 plex 和每个子磁盘对应的设备节点。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:443
+#, fuzzy
 msgid "For example, consider the following configuration file:"
-msgstr ""
+msgstr "例如，考虑以下配置文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:456
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tdrive drive1 device /dev/sd1h\n"
 "\tdrive drive2 device /dev/sd2h\n"
@@ -1057,37 +1119,38 @@ msgid ""
 "        sd length 100m drive drive2\n"
 "        sd length 100m drive drive3\n"
 "        sd length 100m drive drive4\n"
-msgstr ""
+msgstr "\tdrive drive1 device /dev/sd1h\n\tdrive drive2 device /dev/sd2h\n\tdrive drive3 device /dev/sd3h\n\tdrive drive4 device /dev/sd4h\n    volume s64 setupstate\n      plex org striped 64k\n        sd length 100m drive drive1\n        sd length 100m drive drive2\n        sd length 100m drive drive3\n        sd length 100m drive drive4\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:459
+#, fuzzy
 msgid ""
 "After processing this file, man:gvinum[8] creates the following structure in "
 "[.filename]#/dev/gvinum#:"
-msgstr ""
+msgstr "处理此文件后，man:gvinum[8] 会在 [.filename]#/dev/gvinum# 中创建以下结构："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tdrwxr-xr-x  2 root  wheel       512 Apr 13\n"
 "16:46 plex\n"
 "\tcrwxr-xr--  1 root  wheel   91,   2 Apr 13 16:46 s64\n"
 "\tdrwxr-xr-x  2 root  wheel       512 Apr 13 16:46 sd\n"
-msgstr ""
+msgstr "\tdrwxr-xr-x  2 root  wheel       512 Apr 13\n16:46 plex\n\tcrwxr-xr--  1 root  wheel   91,   2 Apr 13 16:46 s64\n\tdrwxr-xr-x  2 root  wheel       512 Apr 13 16:46 sd\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    /dev/vinum/plex:\n"
 "    total 0\n"
 "    crwxr-xr--  1 root  wheel   25, 0x10000002 Apr 13 16:46 s64.p0\n"
-msgstr ""
+msgstr "    /dev/vinum/plex:\n    total 0\n    crwxr-xr--  1 root  wheel   25, 0x10000002 Apr 13 16:46 s64.p0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:477
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    /dev/vinum/sd:\n"
 "    total 0\n"
@@ -1095,25 +1158,27 @@ msgid ""
 "    crwxr-xr--  1 root  wheel   91, 0x20100002 Apr 13 16:46 s64.p0.s1\n"
 "    crwxr-xr--  1 root  wheel   91, 0x20200002 Apr 13 16:46 s64.p0.s2\n"
 "    crwxr-xr--  1 root  wheel   91, 0x20300002 Apr 13 16:46 s64.p0.s3\n"
-msgstr ""
+msgstr "    /dev/vinum/sd:\n    total 0\n    crwxr-xr--  1 root  wheel   91, 0x20000002 Apr 13 16:46 s64.p0.s0\n    crwxr-xr--  1 root  wheel   91, 0x20100002 Apr 13 16:46 s64.p0.s1\n    crwxr-xr--  1 root  wheel   91, 0x20200002 Apr 13 16:46 s64.p0.s2\n    crwxr-xr--  1 root  wheel   91, 0x20300002 Apr 13 16:46 s64.p0.s3\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:482
+#, fuzzy
 msgid ""
 "Although it is recommended that plexes and subdisks should not be allocated "
 "specific names, [.filename]#vinum# drives must be named.  This makes it "
 "possible to move a drive to a different location and still recognize it "
 "automatically.  Drive names may be up to 32 characters long."
-msgstr ""
+msgstr "虽然建议不要为 plex 和子磁盘指定专用名称，但 [.filename]#vinum# 驱动器必须命名。这样可以将驱动器移到其他位置后仍能自动识别。驱动器名称最长可为 32 个字符。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:483
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating File Systems"
-msgstr ""
+msgstr "创建文件系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:491
+#, fuzzy
 msgid ""
 "Volumes appear to the system to be identical to disks, with one exception.  "
 "Unlike UNIX(R) drives, [.filename]#vinum# does not partition volumes, which "
@@ -1127,27 +1192,29 @@ msgid ""
 "respectively.  By contrast, a [.filename]#vinum# volume might be called [."
 "filename]#/dev/gvinum/concat#, which has no relationship with a partition "
 "name."
-msgstr ""
+msgstr "卷在系统看来与磁盘相同，但有一个例外。与 UNIX(R) 驱动器不同，[.filename]#vinum# 不会对卷进行分区，因此卷不包含分区表。这就需要修改一些磁盘工具，特别是 man:newfs[8]，使其不会尝试将 [.filename]#vinum# 卷名称的最后一个字母解释为分区标识符。例如，磁盘驱动器的名称可能是 [.filename]#/dev/ad0a# 或 [.filename]#/dev/da2h#。这些名称分别表示第一个（0）IDE 磁盘（[.filename]#ad#）上的第一个分区（[.filename]#a#），以及第三个（2）SCSI 磁盘（[.filename]#da#）上的第八个分区（[.filename]#h#）。相比之下，[.filename]#vinum# 卷的名称可能是 [.filename]#/dev/gvinum/concat#，它与分区名称无关。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:493
+#, fuzzy
 msgid "To create a file system on this volume, use man:newfs[8]:"
-msgstr ""
+msgstr "要在此卷上创建文件系统，请使用 man:newfs[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:497
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# newfs /dev/gvinum/concat\n"
-msgstr ""
+msgstr "# newfs /dev/gvinum/concat\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:500
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring [.filename]#vinum#"
-msgstr ""
+msgstr "配置 [.filename]#vinum#"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:506
+#, fuzzy
 msgid ""
 "The [.filename]#GENERIC# kernel does not contain [.filename]#vinum#.  It is "
 "possible to build a custom kernel which includes [.filename]#vinum#, but "
@@ -1155,7 +1222,7 @@ msgid ""
 "a kernel module.  man:kldload[8] is not needed because when man:gvinum[8] "
 "starts, it checks whether the module has been loaded, and if it is not, it "
 "loads it automatically."
-msgstr ""
+msgstr "[.filename]#GENERIC# 内核不包含 [.filename]#vinum#。虽然可以构建包含 [.filename]#vinum# 的自定义内核，但不建议这样做。通常通过内核模块启动 [.filename]#vinum#。无需使用 man:kldload[8]，因为 man:gvinum[8] 启动时会检查模块是否已加载；如果尚未加载，则会自动加载。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:507
@@ -1165,17 +1232,18 @@ msgstr "启动"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:512
+#, fuzzy
 msgid ""
 "[.filename]#vinum# stores configuration information on the disk slices in "
 "essentially the same form as in the configuration files.  When reading from "
 "the configuration database, [.filename]#vinum# recognizes a number of "
 "keywords which are not allowed in the configuration files.  For example, a "
 "disk configuration might contain the following text:"
-msgstr ""
+msgstr "[.filename]#vinum# 会以基本上与配置文件相同的形式，在磁盘切片上存储配置信息。读取配置数据库时，[.filename]#vinum# 可以识别配置文件中不允许使用的若干关键字。例如，磁盘配置可能包含以下文本："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:534
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "volume myvol state up\n"
 "volume bigraid state down\n"
@@ -1196,10 +1264,11 @@ msgid ""
 "sd name bigraid.p0.s2 drive c plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 8388608b\n"
 "sd name bigraid.p0.s3 drive d plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 12582912b\n"
 "sd name bigraid.p0.s4 drive e plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 16777216b\n"
-msgstr ""
+msgstr "volume myvol state up\nvolume bigraid state down\nplex name myvol.p0 state up org concat vol myvol\nplex name myvol.p1 state up org concat vol myvol\nplex name myvol.p2 state init org striped 512b vol myvol\nplex name bigraid.p0 state initializing org raid5 512b vol bigraid\nsd name myvol.p0.s0 drive a plex myvol.p0 state up len 1048576b driveoffset 265b plexoffset 0b\nsd name myvol.p0.s1 drive b plex myvol.p0 state up len 1048576b driveoffset 265b plexoffset 1048576b\nsd name myvol.p1.s0 drive c plex myvol.p1 state up len 1048576b driveoffset 265b plexoffset 0b\nsd name myvol.p1.s1 drive d plex myvol.p1 state up len 1048576b driveoffset 265b plexoffset 1048576b\nsd name myvol.p2.s0 drive a plex myvol.p2 state init len 524288b driveoffset 1048841b plexoffset 0b\nsd name myvol.p2.s1 drive b plex myvol.p2 state init len 524288b driveoffset 1048841b plexoffset 524288b\nsd name myvol.p2.s2 drive c plex myvol.p2 state init len 524288b driveoffset 1048841b plexoffset 1048576b\nsd name myvol.p2.s3 drive d plex myvol.p2 state init len 524288b driveoffset 1048841b plexoffset 1572864b\nsd name bigraid.p0.s0 drive a plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 0b\nsd name bigraid.p0.s1 drive b plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 4194304b\nsd name bigraid.p0.s2 drive c plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 8388608b\nsd name bigraid.p0.s3 drive d plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 12582912b\nsd name bigraid.p0.s4 drive e plex bigraid.p0 state initializing len 4194304b driveoff set 1573129b plexoffset 16777216b\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:540
+#, fuzzy
 msgid ""
 "The obvious differences here are the presence of explicit location "
 "information and naming, both of which are allowed but discouraged, and the "
@@ -1208,24 +1277,26 @@ msgid ""
 "scanning the configured disk drives for partitions with a [.filename]#vinum# "
 "label.  This enables [.filename]#vinum# to identify drives correctly even if "
 "they have been assigned different UNIX(R) drive IDs."
-msgstr ""
+msgstr "这里明显的差异是包含了显式的位置信息和名称（这两者都允许使用，但不建议这样做），以及状态信息。[.filename]#vinum# 不会在配置信息中保存有关驱动器的信息。它会扫描已配置的磁盘驱动器，查找带有 [.filename]#vinum# 标签的分区，从而找到这些驱动器。这样，即使驱动器被分配了不同的 UNIX(R) 驱动器 ID， [.filename]#vinum# 也能正确识别它们。"
 
 #. type: Title ====
 #: documentation/content/en/articles/vinum/_index.adoc:542
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automatic Startup"
-msgstr ""
+msgstr "自动启动"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:546
+#, fuzzy
 msgid ""
 "_Gvinum_ always features an automatic startup once the kernel module is "
 "loaded, via man:loader.conf[5].  To load the _Gvinum_ module at boot time, "
 "add `geom_vinum_load=\"YES\"` to [.filename]#/boot/loader.conf#."
-msgstr ""
+msgstr "_Gvinum_ 在通过 man:loader.conf[5] 加载内核模块后，始终会自动启动。要在启动时加载 _Gvinum_ 模块，请将 `geom_vinum_load=\"YES\"` 添加到 [.filename]#/boot/loader.conf#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:551
+#, fuzzy
 msgid ""
 "When [.filename]#vinum# is started with `gvinum start`, [.filename]#vinum# "
 "reads the configuration database from one of the [.filename]#vinum# drives.  "
@@ -1234,76 +1305,82 @@ msgid ""
 "crash, however, [.filename]#vinum# must determine which drive was updated "
 "most recently and read the configuration from this drive.  It then updates "
 "the configuration, if necessary, from progressively older drives."
-msgstr ""
+msgstr "使用 `gvinum start` 启动 [.filename]#vinum# 时，它会从其中一个 [.filename]#vinum# 驱动器读取配置数据库。通常，每个驱动器都包含相同的配置数据库副本，因此读取哪个驱动器并不重要。不过，发生崩溃后， [.filename]#vinum# 必须确定哪个驱动器最近更新过，并从该驱动器读取配置。随后，如果有必要，它会从较旧的驱动器逐个更新配置。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vinum/_index.adoc:553
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using [.filename]#vinum# for the Root File System"
-msgstr ""
+msgstr "使用 [.filename]#vinum# 作为根文件系统"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:557
+#, fuzzy
 msgid ""
 "For a machine that has fully-mirrored file systems using [.filename]#vinum#, "
 "it is desirable to also mirror the root file system.  Setting up such a "
 "configuration is less trivial than mirroring an arbitrary file system "
 "because:"
-msgstr ""
+msgstr "对于使用 [.filename]#vinum# 完全镜像文件系统的机器，最好也镜像根文件系统。设置这种配置并不像镜像任意文件系统那么简单，因为："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:559
+#, fuzzy
 msgid ""
 "The root file system must be available very early during the boot process, "
 "so the [.filename]#vinum# infrastructure must already be available at this "
 "time."
-msgstr ""
+msgstr "根文件系统必须在启动过程的很早阶段就可用，因此此时 [.filename]#vinum# 基础设施必须已经就绪。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:560
+#, fuzzy
 msgid ""
 "The volume containing the root file system also contains the system "
 "bootstrap and the kernel. These must be read using the host system's native "
 "utilities, such as the BIOS, which often cannot be taught about the details "
 "of [.filename]#vinum#."
-msgstr ""
+msgstr "包含根文件系统的卷也包含系统引导程序和内核。读取这些内容时必须使用主机系统的原生工具，例如 BIOS，而这些工具通常无法获知 [.filename]#vinum# 的具体细节。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:562
+#, fuzzy
 msgid ""
 "In the following sections, the term \"root volume\" is generally used to "
 "describe the [.filename]#vinum# volume that contains the root file system."
-msgstr ""
+msgstr "在以下各节中，“根卷”通常指包含根文件系统的 [.filename]#vinum# 卷。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Starting up [.filename]#vinum# Early Enough for the Root File System"
-msgstr ""
+msgstr "让 [.filename]#vinum# 足够早地启动，以供根文件系统使用"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:567
+#, fuzzy
 msgid ""
 "[.filename]#vinum# must be available early in the system boot as man:"
 "loader[8] must be able to load the vinum kernel module before starting the "
 "kernel.  This can be accomplished by putting this line in [.filename]#/boot/"
 "loader.conf#:"
-msgstr ""
+msgstr "系统启动早期就必须有 [.filename]#vinum# 可用，因为 man:loader[8] 必须能够在启动内核之前加载 vinum 内核模块。可以将以下行添加到 [.filename]#/boot/loader.conf# 来实现："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:571
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "geom_vinum_load=\"YES\"\n"
-msgstr ""
+msgstr "geom_vinum_load=\"YES\"\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:573
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Making a [.filename]#vinum#-based Root Volume Accessible to the Bootstrap"
-msgstr ""
+msgstr "使基于 [.filename]#vinum# 的根卷可供引导程序访问"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:578
+#, fuzzy
 msgid ""
 "The current FreeBSD bootstrap is only 7.5 KB of code and does not understand "
 "the internal [.filename]#vinum# structures.  This means that it cannot parse "
@@ -1311,28 +1388,32 @@ msgid ""
 "boot volume.  Thus, some workarounds are necessary to provide the bootstrap "
 "code with the illusion of a standard `a` partition that contains the root "
 "file system."
-msgstr ""
+msgstr "当前的 FreeBSD 引导程序只有 7.5 KB 代码，并不了解 [.filename]#vinum# 的内部结构。这意味着它无法解析 [.filename]#vinum# 配置数据，也无法确定引导卷的组成部分。因此，需要采用一些变通方法，让引导程序代码误以为存在一个包含根文件系统的标准 `a` 分区。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:580
+#, fuzzy
 msgid ""
 "For this to be possible, the following requirements must be met for the root "
 "volume:"
-msgstr ""
+msgstr "要实现这一点，根卷必须满足以下要求："
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:582
+#, fuzzy
 msgid "The root volume must not be a stripe or `RAID`-5."
-msgstr ""
+msgstr "根卷不能是条带卷或 `RAID`-5 卷。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:583
+#, fuzzy
 msgid ""
 "The root volume must not contain more than one concatenated subdisk per plex."
-msgstr ""
+msgstr "每个 plex 中，根卷最多只能包含一个串接子磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:589
+#, fuzzy
 msgid ""
 "Note that it is desirable and possible to use multiple plexes, each "
 "containing one replica of the root file system.  The bootstrap process will "
@@ -1344,57 +1425,63 @@ msgid ""
 "containing plexes of the root volume.  However, it is probably a good idea "
 "to create the [.filename]#vinum# volumes that way so the resulting mirrored "
 "devices are symmetric, to avoid confusion."
-msgstr ""
+msgstr "请注意，可以且最好使用多个 plex，每个 plex 都包含一份根文件系统副本。在内核挂载根文件系统之前，引导过程只会使用其中一份副本来查找引导程序和所有启动文件。每个 plex 中的单个子磁盘都需要有自己的 `a` 分区假象，以便相应设备可启动。严格来说，这些虚拟 `a` 分区在各自设备中的偏移量不必相同。不过，最好以这种方式创建 [.filename]#vinum# 卷，使最终的镜像设备保持对称，避免混淆。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:591
+#, fuzzy
 msgid ""
 "To set up these `a` partitions for each device containing part of the root "
 "volume, the following is required:"
-msgstr ""
+msgstr "要为包含根卷部分内容的每个设备设置这些 `a` 分区，需要执行以下操作："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/vinum/_index.adoc:595
+#, fuzzy
 msgid ""
 "The location, offset from the beginning of the device, and size of this "
 "device's subdisk that is part of the root volume needs to be examined, using "
 "the command:"
-msgstr ""
+msgstr "需要检查属于根卷的该设备子磁盘的位置（相对于设备起始位置的偏移量）和大小，使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gvinum l -rv root\n"
-msgstr ""
+msgstr "# gvinum l -rv root\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:603
+#, fuzzy
 msgid ""
 "[.filename]#vinum# offsets and sizes are measured in bytes.  They must be "
 "divided by 512 to obtain the block numbers that are to be used by `bsdlabel`."
-msgstr ""
+msgstr "[.filename]#vinum# 的偏移量和大小以字节为单位。要得到 `bsdlabel` 使用的块编号，必须将它们除以 512。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:604
+#, fuzzy
 msgid "Run this command for each device that participates in the root volume:"
-msgstr ""
+msgstr "对参与根卷的每个设备运行此命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:608
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# bsdlabel -e devname\n"
-msgstr ""
+msgstr "# bsdlabel -e devname\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:611
+#, fuzzy
 msgid ""
 "_devname_ must be either the name of the disk, like [.filename]#da0# for "
 "disks without a slice table, or the name of the slice, like [."
 "filename]#ad0s1#."
-msgstr ""
+msgstr "_devname_ 必须是磁盘名称（例如无切片表磁盘的 [.filename]#da0#），或切片名称（例如 [.filename]#ad0s1#）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:614
+#, fuzzy
 msgid ""
 "If there is already an `a` partition on the device from a pre-[."
 "filename]#vinum# root file system, it should be renamed to something else so "
@@ -1403,10 +1490,11 @@ msgid ""
 "cannot be renamed, so this must be executed either when being booted from a "
 "\"Fixit\" media, or in a two-step process where, in a mirror, the disk that "
 "is not been currently booted is manipulated first."
-msgstr ""
+msgstr "如果设备上已有来自 [.filename]#vinum# 之前根文件系统的 `a` 分区，应将其重命名为其他名称，以便仍可访问（以防万一），但不再默认用于引导系统。当前已挂载的根文件系统不能重命名，因此必须从“Fixit”介质启动后执行此操作，或者分两步执行：在镜像中，先操作当前未用于启动的磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:620
+#, fuzzy
 msgid ""
 "The offset of the [.filename]#vinum# partition on this device (if any) must "
 "be added to the offset of the respective root volume subdisk on this "
@@ -1415,73 +1503,78 @@ msgid ""
 "the calculation above.  The `fstype` should be `4.2BSD`.  The `fsize`, "
 "`bsize`, and `cpg` values should be chosen to match the actual file system, "
 "though they are fairly unimportant within this context."
-msgstr ""
+msgstr "如果该设备上有 [.filename]#vinum# 分区，则必须将其偏移量加到该设备上相应根卷子磁盘的偏移量上。所得值将作为新 `a` 分区的 `offset` 值。此分区的 `size` 值可直接使用上述计算结果。`fstype` 应为 `4.2BSD`。`fsize`、`bsize` 和 `cpg` 值应与实际文件系统相符，不过在此情境下它们并不太重要。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:623
+#, fuzzy
 msgid ""
 "That way, a new `a` partition will be established that overlaps the [."
 "filename]#vinum# partition on this device.  `bsdlabel` will only allow for "
 "this overlap if the [.filename]#vinum# partition has properly been marked "
 "using the `vinum` fstype."
-msgstr ""
+msgstr "这样就会建立一个新的 `a` 分区，与此设备上的 [.filename]#vinum# 分区重叠。只有在 [.filename]#vinum# 分区已正确标记为 `vinum` fstype 时，`bsdlabel` 才允许这种重叠。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:624
+#, fuzzy
 msgid ""
 "A faked `a` partition now exists on each device that has one replica of the "
 "root volume. It is highly recommendable to verify the result using a command "
 "like:"
-msgstr ""
+msgstr "现在，每个包含一份根卷副本的设备上都存在一个虚拟 `a` 分区。强烈建议使用类似以下命令验证结果："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:628
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# fsck -n /dev/devnamea\n"
-msgstr ""
+msgstr "# fsck -n /dev/devnamea\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/vinum/_index.adoc:633
+#, fuzzy
 msgid ""
 "It should be remembered that all files containing control information must "
 "be relative to the root file system in the [.filename]#vinum# volume which, "
 "when setting up a new [.filename]#vinum# root volume, might not match the "
 "root file system that is currently active.  So in particular, [.filename]#/"
 "etc/fstab# and [.filename]#/boot/loader.conf# need to be taken care of."
-msgstr ""
+msgstr "请记住，所有包含控制信息的文件都必须相对于 [.filename]#vinum# 卷中的根文件系统；设置新的 [.filename]#vinum# 根卷时，该根文件系统可能与当前正在使用的根文件系统不同。因此，尤其需要处理好 [.filename]#/etc/fstab# 和 [.filename]#/boot/loader.conf#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/vinum/_index.adoc:636
+#, fuzzy
 msgid ""
 "At next reboot, the bootstrap should figure out the appropriate control "
 "information from the new [.filename]#vinum#-based root file system, and act "
 "accordingly.  At the end of the kernel initialization process, after all "
 "devices have been announced, the prominent notice that shows the success of "
 "this setup is a message like:"
-msgstr ""
+msgstr "下次重新启动时，引导程序应能从新的基于 [.filename]#vinum# 的根文件系统中获取适当的控制信息，并据此运行。在内核初始化过程结束时，所有设备都已通告之后，表明此设置成功的醒目提示会类似于："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:640
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mounting root from ufs:/dev/gvinum/root\n"
-msgstr ""
+msgstr "Mounting root from ufs:/dev/gvinum/root\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:642
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of a [.filename]#vinum#-based Root Setup"
-msgstr ""
+msgstr "基于 [.filename]#vinum# 的根卷设置示例"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:645
+#, fuzzy
 msgid ""
 "After the [.filename]#vinum# root volume has been set up, the output of "
 "`gvinum l -rv root` could look like:"
-msgstr ""
+msgstr "设置好 [.filename]#vinum# 根卷后，运行 `gvinum l -rv root` 可能会得到如下输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:654
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "Subdisk root.p0.s0:\n"
@@ -1489,37 +1582,39 @@ msgid ""
 "\t\tState: up\n"
 "\t\tPlex root.p0 at offset 0 (0  B)\n"
 "\t\tDrive disk0 (/dev/da0h) at offset 135680 (132 kB)\n"
-msgstr ""
+msgstr "...\nSubdisk root.p0.s0:\n\t\tSize:        125829120 bytes (120 MB)\n\t\tState: up\n\t\tPlex root.p0 at offset 0 (0  B)\n\t\tDrive disk0 (/dev/da0h) at offset 135680 (132 kB)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Subdisk root.p1.s0:\n"
 "\t\tSize:        125829120 bytes (120 MB)\n"
 "\t\tState: up\n"
 "\t\tPlex root.p1 at offset 0 (0  B)\n"
 "\t\tDrive disk1 (/dev/da1h) at offset 135680 (132 kB)\n"
-msgstr ""
+msgstr "Subdisk root.p1.s0:\n\t\tSize:        125829120 bytes (120 MB)\n\t\tState: up\n\t\tPlex root.p1 at offset 0 (0  B)\n\t\tDrive disk1 (/dev/da1h) at offset 135680 (132 kB)\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:666
+#, fuzzy
 msgid ""
 "The values to note are `135680` for the offset, relative to partition [."
 "filename]#/dev/da0h#.  This translates to 265 512-byte disk blocks in "
 "`bsdlabel`'s terms.  Likewise, the size of this root volume is 245760 512-"
 "byte blocks.  [.filename]#/dev/da1h#, containing the second replica of this "
 "root volume, has a symmetric setup."
-msgstr ""
+msgstr "需要注意的值是 `135680`，它是相对于分区 [.filename]#/dev/da0h# 的偏移量。按照 `bsdlabel` 的单位，这相当于 265 个 512 字节磁盘块。同样，此根卷的大小为 245760 个 512 字节块。包含此根卷第二份副本的 [.filename]#/dev/da1h# 采用了对称设置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:668
+#, fuzzy
 msgid "The bsdlabel for these devices might look like:"
-msgstr ""
+msgstr "这些设备的 bsdlabel 可能如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vinum/_index.adoc:677
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "8 partitions:\n"
@@ -1527,10 +1622,11 @@ msgid ""
 "  a:   245760      281    4.2BSD     2048 16384     0  # (Cyl.    0*- 15*)\n"
 "  c: 71771688        0    unused        0     0        # (Cyl.    0 - 4467*)\n"
 "  h: 71771672       16     vinum                       # (Cyl.    0*- 4467*)\n"
-msgstr ""
+msgstr "...\n8 partitions:\n#        size   offset    fstype   [fsize bsize bps/cpg]\n  a:   245760      281    4.2BSD     2048 16384     0  # (Cyl.    0*- 15*)\n  c: 71771688        0    unused        0     0        # (Cyl.    0 - 4467*)\n  h: 71771672       16     vinum                       # (Cyl.    0*- 4467*)\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:683
+#, fuzzy
 msgid ""
 "It can be observed that the `size` parameter for the faked `a` partition "
 "matches the value outlined above, while the `offset` parameter is the sum of "
@@ -1540,14 +1636,15 @@ msgid ""
 "\"Nothing Boots, the Bootstrap Panics\"].  The entire `a` partition is "
 "completely within the `h` partition containing all the [.filename]#vinum# "
 "data for this device."
-msgstr ""
+msgstr "可以看到，虚拟 `a` 分区的 `size` 参数与上文所述的值相符，而 `offset` 参数则是 [.filename]#vinum# 分区 `h` 内的偏移量与此分区在设备或切片内的偏移量之和。这是一种典型设置，可避免 crossref:vinum[vinum-root-panic,\"引导失败，引导程序发生紧急故障\"] 中描述的问题。整个 `a` 分区完全位于 `h` 分区内，而该分区包含此设备上的所有 [.filename]#vinum# 数据。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:685
+#, fuzzy
 msgid ""
 "In the above example, the entire device is dedicated to [.filename]#vinum# "
 "and there is no leftover pre-[.filename]#vinum# root partition."
-msgstr ""
+msgstr "在上述示例中，整个设备都专用于 [.filename]#vinum#，没有遗留 [.filename]#vinum# 之前的根分区。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vinum/_index.adoc:686
@@ -1557,33 +1654,37 @@ msgstr "故障排除"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:689
+#, fuzzy
 msgid "The following list contains a few known pitfalls and solutions."
-msgstr ""
+msgstr "以下列表列出了一些已知问题及其解决方法。"
 
 #. type: Title ====
 #: documentation/content/en/articles/vinum/_index.adoc:690
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System Bootstrap Loads, but System Does Not Boot"
-msgstr ""
+msgstr "系统引导程序已加载，但系统无法启动"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:694
+#, fuzzy
 msgid ""
 "If for any reason the system does not continue to boot, the bootstrap can be "
 "interrupted by pressing kbd:[space] at the 10-seconds warning.  The loader "
 "variable `vinum.autostart` can be examined by typing `show` and manipulated "
 "using `set` or `unset`."
-msgstr ""
+msgstr "如果系统因任何原因无法继续启动，可以在 10 秒警告期间按 kbd:[space] 中断引导程序。输入 `show` 可以查看引导程序变量 `vinum.autostart`，并可使用 `set` 或 `unset` 修改它。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:696
+#, fuzzy
 msgid ""
 "If the [.filename]#vinum# kernel module was not yet in the list of modules "
 "to load automatically, type `load geom_vinum`."
-msgstr ""
+msgstr "如果 [.filename]#vinum# 内核模块尚未列入自动加载的模块列表，请输入 `load geom_vinum`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:699
+#, fuzzy
 msgid ""
 "When ready, the boot process can be continued by typing `boot -as` which `-"
 "as` requests the kernel to ask for the root file system to mount (`-a`) and "
@@ -1591,10 +1692,11 @@ msgid ""
 "system is mounted read-only.  That way, even if only one plex of a multi-"
 "plex volume has been mounted, no data inconsistency between plexes is being "
 "risked."
-msgstr ""
+msgstr "准备就绪后，可以输入 `boot -as` 继续启动过程，其中 `-as` 会要求内核询问要挂载的根文件系统（`-a`），并让启动过程停在单用户模式（`-s`），此时根文件系统以只读方式挂载。这样，即使多 plex 卷中只有一个 plex 被挂载，也不会冒着 plex 之间数据不一致的风险。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:705
+#, fuzzy
 msgid ""
 "At the prompt asking for a root file system to mount, any device that "
 "contains a valid root file system can be entered.  If [.filename]#/etc/"
@@ -1608,16 +1710,17 @@ msgid ""
 "be mounted read-write later on, it is necessary to remove the other plex(es) "
 "of the [.filename]#vinum# root volume since these plexes would otherwise "
 "carry inconsistent data."
-msgstr ""
+msgstr "在询问要挂载哪个根文件系统的提示符处，可以输入任何包含有效根文件系统的设备。如果 [.filename]#/etc/fstab# 设置正确，默认值应类似于 `ufs:/dev/gvinum/root`。一个典型的备用选项可能是 `ufs:da0d`，它可以是假设存在的、包含 [.filename]#vinum# 之前根文件系统的分区。如果在此处输入某个别名 `a` 分区，请务必确认它实际指向 [.filename]#vinum# 根设备的子磁盘，因为在镜像设置中，这样只会挂载镜像根设备的一部分。如果之后要以读写方式挂载此文件系统，则必须移除 [.filename]#vinum# 根卷的其他 plex，否则这些 plex 中的数据会不一致。"
 
 #. type: Title ====
 #: documentation/content/en/articles/vinum/_index.adoc:706
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Only Primary Bootstrap Loads"
-msgstr ""
+msgstr "仅主引导程序已加载"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:711
+#, fuzzy
 msgid ""
 "If [.filename]#/boot/loader# fails to load, but the primary bootstrap still "
 "loads (visible by a single dash in the left column of the screen right after "
@@ -1626,16 +1729,17 @@ msgid ""
 "extref:{handbook}boot[stage two, boot-boot1].  An attempt can be made here "
 "to boot off an alternate partition, like the partition containing the "
 "previous root file system that has been moved away from `a`."
-msgstr ""
+msgstr "如果 [.filename]#/boot/loader# 无法加载，但主引导程序仍能加载（启动过程开始后，屏幕左栏会显示一个短横线），可以尝试按 kbd:[space] 中断主引导程序。这样会让引导程序停在 extref:{handbook}boot[第二阶段，boot-boot1]。此时可以尝试从备用分区启动，例如已从 `a` 分区移走的旧根文件系统所在分区。"
 
 #. type: Title ====
 #: documentation/content/en/articles/vinum/_index.adoc:713
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Nothing Boots, the Bootstrap Panics"
-msgstr ""
+msgstr "无法启动，引导程序发生紧急故障"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:719
+#, fuzzy
 msgid ""
 "This situation will happen if the bootstrap had been destroyed by the [."
 "filename]#vinum# installation.  Unfortunately, [.filename]#vinum# "
@@ -1645,10 +1749,11 @@ msgid ""
 "filename]#vinum# partition was started at offset 0 within a slice or disk "
 "that was meant to be bootable, the [.filename]#vinum# setup will trash the "
 "bootstrap."
-msgstr ""
+msgstr "如果 [.filename]#vinum# 安装破坏了引导程序，就会出现这种情况。不幸的是， [.filename]#vinum# 在开始写入其头部信息之前，会意外地只在分区开头留下 4 KB 空间。然而，第一和第二阶段引导程序以及 bsdlabel 总共需要 8 KB。因此，如果 [.filename]#vinum# 分区从可启动切片或磁盘内的偏移量 0 开始， [.filename]#vinum# 设置就会破坏引导程序。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vinum/_index.adoc:722
+#, fuzzy
 msgid ""
 "Similarly, if the above situation has been recovered, by booting from a "
 "\"Fixit\" media, and the bootstrap has been re-installed using `bsdlabel -B` "
@@ -1661,4 +1766,4 @@ msgid ""
 "is necessary to move the entire [.filename]#vinum# partition by at least 4 "
 "KB, to have the [.filename]#vinum# header and the system bootstrap no longer "
 "collide."
-msgstr ""
+msgstr "类似地，如果通过从“Fixit”介质启动恢复了上述情况，并按照 extref:{handbook}boot[第二阶段，boot-boot1] 中的说明使用 `bsdlabel -B` 重新安装了引导程序，那么引导程序就会破坏 [.filename]#vinum# 头部，导致 [.filename]#vinum# 再也找不到其磁盘。虽然实际的 [.filename]#vinum# 配置数据或 [.filename]#vinum# 卷中的数据不会被破坏，并且可以通过重新输入完全相同的 [.filename]#vinum# 配置数据来恢复所有数据，但这种情况很难修复。必须将整个 [.filename]#vinum# 分区至少移动 4 KB，避免 [.filename]#vinum# 头部与系统引导程序发生冲突。"

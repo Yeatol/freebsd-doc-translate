@@ -20,30 +20,31 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing a FreeBSD Port"
-msgstr ""
+msgstr "FreeBSD 移植软件包测试"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 10. Testing the Port"
-msgstr ""
+msgstr "第 10 章：测试移植软件包"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing the Port"
-msgstr ""
+msgstr "测试移植软件包"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running `make describe`"
-msgstr ""
+msgstr "运行 `make describe`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:56
+#, fuzzy
 msgid ""
 "Several of the FreeBSD port maintenance tools, such as man:portupgrade[1], "
 "rely on a database called [.filename]#/usr/ports/INDEX# which keeps track of "
@@ -52,185 +53,205 @@ msgid ""
 "port subdirectory and executes `make describe` there.  Thus, if `make "
 "describe` fails in any port, no one can generate [.filename]#INDEX#, and "
 "many people will quickly become unhappy."
-msgstr ""
+msgstr "若干 FreeBSD 移植软件包维护工具（如 man:portupgrade[1]）依赖一个名为 [.filename]#/usr/ports/INDEX# 的数据库，该数据库记录了移植软件包依赖项等信息。顶层的 [.filename]#ports/Makefile# 通过 `make index` 创建 [.filename]#INDEX#，此命令会遍历每个移植软件包子目录，并在其中执行 `make describe`。因此，如果任何移植软件包中的 `make describe` 执行失败，就没有人能够生成 [.filename]#INDEX#，许多人很快就会因此感到不满。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:61
+#, fuzzy
 msgid ""
 "It is important to be able to generate this file no matter what options are "
 "present in [.filename]#make.conf#, so please avoid doing things such as "
 "using `.error` statements when (for instance) a dependency is not "
 "satisfied.  (See crossref:porting-dads[dads-dot-error,Avoid Use of the `."
 "error` Construct].)"
-msgstr ""
+msgstr "无论 [.filename]#make.conf# 中设置了哪些选项，都必须能够生成此文件，因此请避免在依赖项未满足等情况下使用 `.error` 语句。（参见 crossref:porting-dads[dads-dot-error,避免使用 `.error` 构造]。）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:65
+#, fuzzy
 msgid ""
 "If `make describe` produces a string rather than an error message, "
 "everything is probably safe.  See [.filename]#bsd.port.mk# for the meaning "
 "of the string produced."
-msgstr ""
+msgstr "如果 `make describe` 输出的是字符串而不是错误消息，那么一切很可能正常。有关该字符串的含义，请参阅 [.filename]#bsd.port.mk#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:67
+#, fuzzy
 msgid ""
 "Also note that running a recent version of `portlint` (as specified in the "
 "next section) will cause `make describe` to be run automatically."
-msgstr ""
+msgstr "另请注意，运行较新版本的 `portlint`（如下一节所述）时，会自动执行 `make describe`。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Running `make test`"
-msgstr ""
+msgstr "运行 `make test`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:75
+#, fuzzy
 msgid ""
 "Even if the port builds fine, it is a good idea to ensure that the software "
 "correctly does what it is supposed to do.  If the original upstream project "
 "provides tests along with the software, it is a good idea to run them and "
 "check everything works as expected."
-msgstr ""
+msgstr "即使移植软件包能够顺利构建，也最好确认软件能正确完成预期工作。如果上游项目随软件提供了测试，最好运行这些测试，并确认一切按预期运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:80
+#, fuzzy
 msgid ""
 "A port can enable tests automatically by using the `TEST_TARGET` variable.  "
 "When set, this variable contains the name of the testing target of the "
 "port.  This is usually just `test` but other names include `tests`, `check` "
 "or for specific cases things like `run_tests.py`."
-msgstr ""
+msgstr "移植软件包可以使用 `TEST_TARGET` 变量自动启用测试。设置此变量时，其值为该移植软件包的测试目标名称。通常为 `test`，但也可能是 `tests`、`check`，或针对特定情况使用 `run_tests.py` 等名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:83
+#, fuzzy
 msgid ""
 "In addition to the `TEST_TARGET` variable the framework provides the "
 "following variables to control the tests execution:"
-msgstr ""
+msgstr "除了 `TEST_TARGET` 变量，框架还提供以下变量来控制测试执行："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:85
+#, fuzzy
 msgid "`TEST_WRKSRC` is the directory to do the tests in."
-msgstr ""
+msgstr "`TEST_WRKSRC` 是执行测试的目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:86
+#, fuzzy
 msgid ""
 "`TEST_ENV` contains additional variables to be passed to the test stage."
-msgstr ""
+msgstr "`TEST_ENV` 包含要传递给测试阶段的附加变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:87
+#, fuzzy
 msgid "`TEST_ARGS` contains any extra arguments passed to the test stage."
-msgstr ""
+msgstr "`TEST_ARGS` 包含传递给测试阶段的任何额外参数。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:90
+#, fuzzy
 msgid ""
 "Examples of use of these variables can be found in package:cad/xyce[], "
 "package:www/libjwt[] and others."
-msgstr ""
+msgstr "这些变量的用法示例可见于 package:cad/xyce[]、package:www/libjwt[] 等移植软件包。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:94
+#, fuzzy
 msgid "Please make sure that tests do not break when updating a port."
-msgstr ""
+msgstr "请确保更新移植软件包时不会导致测试失败。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Portclippy / Portfmt"
-msgstr ""
+msgstr "Portclippy / Portfmt"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:101
+#, fuzzy
 msgid "Those tools come from package:ports-mgmt/portfmt[]."
-msgstr ""
+msgstr "这些工具来自 package:ports-mgmt/portfmt[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:103
+#, fuzzy
 msgid ""
 "Portclippy is a linter that checks if variables in the [.filename]#Makefile# "
 "are in the correct order according to crossref:order[porting-order,Order of "
 "Variables in Port Makefiles]."
-msgstr ""
+msgstr "Portclippy 是一个代码检查工具，用于检查 [.filename]#Makefile# 中的变量是否按照 crossref:order[porting-order,移植软件包 Makefile 中的变量顺序] 正确排列。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:105
+#, fuzzy
 msgid "Portfmt is a tool for automatically formatting [.filename]#Makefile#."
-msgstr ""
+msgstr "Portfmt 是一个用于自动格式化 [.filename]#Makefile# 的工具。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Portlint"
-msgstr ""
+msgstr "Portlint"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:112
+#, fuzzy
 msgid ""
 "Do check the port with crossref:quick-porting[porting-portlint,`portlint`] "
 "before submitting or committing it.  `portlint` warns about many common "
 "errors, both functional and stylistic.  For a new port, `portlint -A` is the "
 "most thorough; for an existing port, `portlint -C` is sufficient."
-msgstr ""
+msgstr "提交或提交到版本库之前，请使用 crossref:quick-porting[porting-portlint,`portlint`] 检查移植软件包。`portlint` 会针对许多常见的功能和风格错误发出警告。对于新移植的软件包，`portlint -A` 检查最全面；对于现有软件包，`portlint -C` 就足够了。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:116
+#, fuzzy
 msgid ""
 "Since `portlint` uses heuristics to try to figure out errors, it can produce "
 "false positive warnings.  In addition, occasionally something that is "
 "flagged as a problem really cannot be done in any other way due to "
 "limitations in the ports framework.  When in doubt, the best thing to do is "
 "ask on {freebsd-ports}."
-msgstr ""
+msgstr "由于 `portlint` 使用启发式方法尝试查找错误，因此可能会产生误报。此外，有时被标记为问题的情况，实际上由于 ports 框架的限制，确实无法用其他方式处理。如有疑问，最好在 {freebsd-ports} 上提问。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Port Tools"
-msgstr ""
+msgstr "Port 工具"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:121
+#, fuzzy
 msgid ""
 "The package:ports-mgmt/porttools[] program is part of the Ports Collection."
-msgstr ""
+msgstr "package:ports-mgmt/porttools[] 程序是 Ports Collection 的一部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:127
+#, fuzzy
 msgid ""
 "`port` is the front-end script, which can help simplify the testing job.  "
 "Whenever a new port or an update to an existing one needs testing, use `port "
 "test` to test the port, including the crossref:testing[testing-portlint,"
 "`portlint`] checking.  This command also detects and lists any files that "
 "are not listed in [.filename]#pkg-plist#.  For example:"
-msgstr ""
+msgstr "`port` 是一个前端脚本，可以帮助简化测试工作。每当需要测试新的移植软件包或现有软件包的更新时，请使用 `port test` 测试该软件包，其中也包括 crossref:testing[testing-portlint,`portlint`] 检查。此命令还会检测并列出未列入 [.filename]#pkg-plist# 的文件。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# port test /usr/ports/net/csup\n"
-msgstr ""
+msgstr "# port test /usr/ports/net/csup\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PREFIX` and `DESTDIR`"
-msgstr ""
+msgstr "`PREFIX` 和 `DESTDIR`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:139
+#, fuzzy
 msgid ""
 "`PREFIX` determines where the port will be installed.  It defaults to [."
 "filename]#/usr/local#, but can be set by the user to a custom path like [."
 "filename]#/opt#.  The port must respect the value of this variable."
-msgstr ""
+msgstr "`PREFIX` 决定移植软件包的安装位置。默认值为 [.filename]#/usr/local#，但用户可以将其设置为自定义路径，例如 [.filename]#/opt#。移植软件包必须遵循此变量的值。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:144
+#, fuzzy
 msgid ""
 "`DESTDIR`, if set by the user, determines the complete alternative "
 "environment, usually a jail or an installed system mounted somewhere other "
@@ -239,18 +260,20 @@ msgid ""
 "db/pkg#.  `DESTDIR` is handled automatically by the ports infrastructure "
 "with man:chroot[8].  There is no need for modifications or any extra care to "
 "write `DESTDIR`-compliant ports."
-msgstr ""
+msgstr "如果用户设置了 `DESTDIR`，它将决定完整的替代环境，通常是一个 jail，或挂载在 [.filename]#/# 以外位置的已安装系统。移植软件包实际上会安装到 [.filename]#DESTDIR/PREFIX#，并在 [.filename]#DESTDIR/var/db/pkg# 中注册到软件包数据库。ports 基础设施会通过 man:chroot[8] 自动处理 `DESTDIR`。编写兼容 `DESTDIR` 的移植软件包无需修改或额外注意事项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:147
+#, fuzzy
 msgid ""
 "The value of `PREFIX` will be set to `LOCALBASE` (defaulting to [.filename]#/"
 "usr/local#).  If `USE_LINUX_PREFIX` is set, `PREFIX` will be `LINUXBASE` "
 "(defaulting to [.filename]#/compat/linux#)."
-msgstr ""
+msgstr "`PREFIX` 的值将设为 `LOCALBASE`（默认为 [.filename]#/usr/local#）。如果设置了 `USE_LINUX_PREFIX`，则 `PREFIX` 将设为 `LINUXBASE`（默认为 [.filename]#/compat/linux#）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:151
+#, fuzzy
 msgid ""
 "Avoiding hard-coded [.filename]#/usr/local# paths in the source makes the "
 "port much more flexible and able to cater to the needs of other sites.  "
@@ -258,216 +281,240 @@ msgid ""
 "local# in the port's various [.filename]##Makefile##s with `${PREFIX}`.  "
 "This variable is automatically passed down to every stage of the build and "
 "install processes."
-msgstr ""
+msgstr "避免在源代码中硬编码 [.filename]#/usr/local# 路径，可使移植软件包更灵活，并能满足其他站点的需求。通常，可以将移植软件包中各个 [.filename]##Makefile## 里的 [.filename]#/usr/local# 替换为 `${PREFIX}` 来实现。此变量会自动传递到构建和安装过程的每个阶段。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:154
+#, fuzzy
 msgid ""
 "Make sure the application is not installing things in [.filename]#/usr/"
 "local# instead of `PREFIX`.  A quick test for such hard-coded paths is:"
-msgstr ""
+msgstr "请确保应用程序安装到 `PREFIX`，而不是 [.filename]#/usr/local#。可以通过以下快速测试检查是否存在此类硬编码路径："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make clean; make package PREFIX=/var/tmp/`make -V PORTNAME`\n"
-msgstr ""
+msgstr "% make clean; make package PREFIX=/var/tmp/`make -V PORTNAME`\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:161
+#, fuzzy
 msgid ""
 "If anything is installed outside of `PREFIX`, the package creation process "
 "will complain that it cannot find the files."
-msgstr ""
+msgstr "如果有任何文件安装在 `PREFIX` 之外，软件包创建过程会报告找不到这些文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:163
+#, fuzzy
 msgid ""
 "In addition, it is worth checking the same with the stage directory support "
 "(see crossref:special[staging,Staging]):"
-msgstr ""
+msgstr "此外，还值得使用暂存目录支持进行同样的检查（参见 crossref:special[staging,暂存]）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make stage && make check-plist && make stage-qa && make package\n"
-msgstr ""
+msgstr "% make stage && make check-plist && make stage-qa && make package\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:170
+#, fuzzy
 msgid ""
 "`check-plist` checks for files missing from the plist, and files in the "
 "plist that are not installed by the port."
-msgstr ""
+msgstr "`check-plist` 会检查 plist 中缺少的文件，以及列在 plist 中但未由移植软件包安装的文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:171
+#, fuzzy
 msgid ""
 "`stage-qa` checks for common problems like bad shebang, symlinks pointing "
 "outside the stage directory, setuid files, and non-stripped libraries..."
-msgstr ""
+msgstr "`stage-qa` 会检查常见问题，例如错误的 shebang、指向暂存目录之外的符号链接、setuid 文件以及未剥离符号的库……"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:174
+#, fuzzy
 msgid ""
 "These tests will not find hard-coded paths inside the port's files, nor will "
 "it verify that `LOCALBASE` is being used to correctly refer to files from "
 "other ports.  The temporarily installed port in [.filename]#/var/tmp/`make -"
 "V PORTNAME`# must be tested for proper operation to make sure there are no "
 "problems with paths."
-msgstr ""
+msgstr "这些测试无法发现移植软件包文件中的硬编码路径，也不会验证是否正确使用 `LOCALBASE` 来引用其他移植软件包中的文件。必须测试临时安装在 [.filename]#/var/tmp/`make -V PORTNAME`# 中的移植软件包是否正常运行，以确保路径没有问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:177
+#, fuzzy
 msgid ""
 "`PREFIX` must not be set explicitly in a port's [.filename]#Makefile#.  "
 "Users installing the port may have set `PREFIX` to a custom location, and "
 "the port must respect that setting."
-msgstr ""
+msgstr "不得在移植软件包的 [.filename]#Makefile# 中显式设置 `PREFIX`。安装该软件包的用户可能已将 `PREFIX` 设置为自定义位置，而移植软件包必须遵循此设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:181
+#, fuzzy
 msgid ""
 "Refer to programs and files from other ports with the variables mentioned "
 "above, not explicit pathnames.  For instance, if the port requires a macro "
 "`PAGER` to have the full pathname of `less`, do not use a literal path of [."
 "filename]#/usr/local/bin/less#.  Instead, use `${LOCALBASE}`:"
-msgstr ""
+msgstr "引用其他移植软件包中的程序和文件时，请使用上述变量，而不要使用显式路径名。例如，如果移植软件包需要宏 `PAGER` 保存 `less` 的完整路径名，请勿使用字面路径 [.filename]#/usr/local/bin/less#。应改用 `${LOCALBASE}`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "-DPAGER=\\\"${LOCALBASE}/bin/less\\\"\n"
-msgstr ""
+msgstr "-DPAGER=\\\"${LOCALBASE}/bin/less\\\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:188
+#, fuzzy
 msgid ""
 "The path with `LOCALBASE` is more likely to still work if the system "
 "administrator has moved the whole [.filename]#/usr/local# tree somewhere "
 "else."
-msgstr ""
+msgstr "如果系统管理员将整个 [.filename]#/usr/local# 目录树移到了其他位置，使用 `LOCALBASE` 的路径仍更有可能正常工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:194
+#, fuzzy
 msgid ""
 "All these tests are done automatically when running `poudriere testport` or "
 "`poudriere bulk -t`.  It is highly recommended that every ports contributor "
 "install and test their ports with it.  See crossref:testing[testing-"
 "poudriere, poudriere] for more information."
-msgstr ""
+msgstr "运行 `poudriere testport` 或 `poudriere bulk -t` 时，会自动执行所有这些测试。强烈建议每位 ports 贡献者都使用它安装并测试自己的移植软件包。更多信息请参见 crossref:testing[testing-poudriere, poudriere]。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "poudriere"
-msgstr ""
+msgstr "poudriere"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:201
+#, fuzzy
 msgid ""
 "For a ports contributor, poudriere is one of the most important and helpful "
 "testing and build tools.  Its main features include:"
-msgstr ""
+msgstr "对于 ports 贡献者来说，poudriere 是最重要且最实用的测试和构建工具之一。其主要功能包括："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:203
+#, fuzzy
 msgid ""
 "Bulk building of the entire ports tree, specific subsets of the ports tree, "
 "or a single port including its dependencies"
-msgstr ""
+msgstr "批量构建整个 ports 树、其中的特定子集，或包含其依赖项的单个移植软件包"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:204
+#, fuzzy
 msgid "Automatic packaging of build results"
-msgstr ""
+msgstr "自动打包构建结果"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:205
+#, fuzzy
 msgid "Generation of build log files per port"
-msgstr ""
+msgstr "为每个移植软件包生成构建日志文件"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:206
+#, fuzzy
 msgid "Providing a signed man:pkg[8] repository"
-msgstr ""
+msgstr "提供带签名的 man:pkg[8] 软件包仓库"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:207
+#, fuzzy
 msgid ""
 "Testing of port builds before submitting a patch to the FreeBSD bug tracker "
 "or committing to the ports tree"
-msgstr ""
+msgstr "在向 FreeBSD 缺陷跟踪系统提交补丁或将其提交到 ports 树之前，测试移植软件包"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:208
+#, fuzzy
 msgid "Testing for successful ports builds using different options"
-msgstr ""
+msgstr "使用不同选项测试移植软件包能否成功构建"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:211
+#, fuzzy
 msgid ""
 "Because poudriere performs its building in a clean man:jail[8] environment "
 "and uses man:zfs[8] features, it has several advantages over traditional "
 "testing on the host system:"
-msgstr ""
+msgstr "由于 poudriere 在干净的 man:jail[8] 环境中构建，并使用 man:zfs[8] 的功能，因此相比在主机系统上进行传统测试具有以下优势："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:213
+#, fuzzy
 msgid ""
 "No pollution of the host environment: No leftover files, no accidental "
 "removals, no changes of existing configuration files."
-msgstr ""
+msgstr "不会污染主机环境：不会留下文件、意外删除文件，也不会更改现有配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:214
+#, fuzzy
 msgid "Verify [.filename]#pkg-plist# for missing or superfluous entries"
-msgstr ""
+msgstr "检查 [.filename]#pkg-plist# 中是否有缺失或多余的条目"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:215
+#, fuzzy
 msgid ""
 "Ports committers sometimes ask for a poudriere log alongside a patch "
 "submission to assess whether the patch is ready for integration into the "
 "ports tree"
-msgstr ""
+msgstr "ports 提交者有时会要求随补丁一并提供 poudriere 日志，以评估补丁是否已准备好合并到 ports 树中"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:218
+#, fuzzy
 msgid ""
 "It is also quite straightforward to set up and use, has no dependencies, and "
 "will run on any supported FreeBSD release.  This section shows how to "
 "install, configure, and run poudriere as part of the normal workflow of a "
 "ports contributor."
-msgstr ""
+msgstr "它的安装和使用也相当简单，没有依赖项，并且可在任何受支持的 FreeBSD 版本上运行。本节介绍如何安装、配置和运行 poudriere，将其纳入 ports 贡献者的日常工作流程。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:223
+#, fuzzy
 msgid ""
 "The examples in this section show a default file layout, as standard in "
 "FreeBSD.  Substitute any local changes accordingly.  The ports tree, "
 "represented by `${PORTSDIR}`, is located in [.filename]#/usr/ports#.  Both `"
 "${LOCALBASE}` and `${PREFIX}` are [.filename]#/usr/local# by default."
-msgstr ""
+msgstr "本节中的示例采用 FreeBSD 的标准默认文件布局。请根据本地更改进行相应调整。由 `${PORTSDIR}` 表示的 ports 树位于 [.filename]#/usr/ports#。`${LOCALBASE}` 和 `${PREFIX}` 的默认值均为 [.filename]#/usr/local#。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installing poudriere"
-msgstr ""
+msgstr "安装 poudriere"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:229
+#, fuzzy
 msgid ""
 "poudriere is available in the ports tree in package:ports-mgmt/poudriere[].  "
 "It can be installed using man:pkg[8] or from ports:"
-msgstr ""
+msgstr "ports 树中的 package:ports-mgmt/poudriere[] 提供 poudriere。可以使用 man:pkg[8] 安装，也可以从 ports 安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install poudriere\n"
-msgstr ""
+msgstr "# pkg install poudriere\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:236
@@ -476,12 +523,13 @@ msgstr "或"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make -C /usr/ports/ports-mgmt/poudriere install clean\n"
-msgstr ""
+msgstr "# make -C /usr/ports/ports-mgmt/poudriere install clean\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:251
+#, fuzzy
 msgid ""
 "There is also a work-in-progress version of poudriere which will eventually "
 "become the next release.  It is available in package:ports-mgmt/poudriere-"
@@ -496,127 +544,136 @@ msgid ""
 "hours to 17 hours when using a high end 32 CPU server with 128GB of RAM.  "
 "Those optimizations will not matter a lot when building ports on a desktop "
 "machine."
-msgstr ""
+msgstr "目前还有一个正在开发中的 poudriere 版本，最终将成为下一个正式版本。它可从 package:ports-mgmt/poudriere-devel[] 获取。此开发版本用于 FreeBSD 官方软件包构建，因此经过了充分测试。它通常还包含一些较新的实用功能。ports 提交者会希望使用开发版本，因为生产环境也在使用它，而且其中包含了确保一切准确无误的所有新功能。贡献者则未必需要这些功能，因为最重要的修复都会向后移植到已发布版本。使用开发版本构建官方软件包的主要原因是它速度更快：在配备 128GB 内存的高端 32 CPU 服务器上，它可以将完整构建时间从 18 小时缩短到 17 小时。在台式机上构建移植软件包时，这些优化并不会带来太大影响。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting Up poudriere"
-msgstr ""
+msgstr "设置 poudriere"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:257
+#, fuzzy
 msgid ""
 "The port installs a default configuration file, [.filename]#/usr/local/etc/"
 "poudriere.conf#.  Each parameter is documented in the configuration file."
-msgstr ""
+msgstr "该 port 会安装默认配置文件 [.filename]#/usr/local/etc/poudriere.conf#。配置文件中记录了每个参数的说明。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:259
+#, fuzzy
 msgid "Here is a minimal example config file:"
-msgstr ""
+msgstr "以下是一个最简配置文件示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ZPOOL=zroot\n"
 "BASEFS=/usr/local/poudriere\n"
 "DISTFILES_CACHE=/usr/ports/distfiles\n"
 "RESOLV_CONF=/etc/resolv.conf\n"
-msgstr ""
+msgstr "ZPOOL=zroot\nBASEFS=/usr/local/poudriere\nDISTFILES_CACHE=/usr/ports/distfiles\nRESOLV_CONF=/etc/resolv.conf\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ZPOOL`"
-msgstr ""
+msgstr "`ZPOOL`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:271
+#, fuzzy
 msgid ""
 "The name of the ZFS storage pool which poudriere shall use.  Must be listed "
 "in the output of `zpool status`."
-msgstr ""
+msgstr "poudriere 要使用的 ZFS 存储池名称。必须列在 `zpool status` 的输出中。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`BASEFS`"
-msgstr ""
+msgstr "`BASEFS`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:275
+#, fuzzy
 msgid ""
 "The root mount point for poudriere file systems.  This entry will cause "
 "poudriere to mount `tank/poudriere` to `/poudriere`."
-msgstr ""
+msgstr "poudriere 文件系统的根挂载点。此项会使 poudriere 将 `tank/poudriere` 挂载到 `/poudriere`。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`DISTFILES_CACHE`"
-msgstr ""
+msgstr "`DISTFILES_CACHE`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:281
+#, fuzzy
 msgid ""
 "Defines where distfiles are stored.  In this example, poudriere and the host "
 "share the distfiles storage directory.  This avoids downloading tarballs "
 "which are already present on the system.  Please create this directory if it "
 "does not already exist so that poudriere can find it."
-msgstr ""
+msgstr "指定 distfiles 的存储位置。在此示例中，poudriere 与主机共享 distfiles 存储目录。这样可以避免重新下载系统中已有的 tarball。如果此目录尚不存在，请创建它，以便 poudriere 能够找到。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`RESOLV_CONF`"
-msgstr ""
+msgstr "`RESOLV_CONF`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:287
+#, fuzzy
 msgid ""
 "Use the host [.filename]#/etc/resolv.conf# inside jails for DNS.  This is "
 "needed so jails can resolve the URLs of distfiles when downloading.  It is "
 "not needed when using a proxy.  Refer to the default configuration file for "
 "proxy configuration."
-msgstr ""
+msgstr "在 jail 中使用主机的 [.filename]#/etc/resolv.conf# 进行 DNS 查询。下载 distfiles 时，jail 需要通过它解析 URL。使用代理时不需要此设置。代理配置请参阅默认配置文件。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating poudriere Jails"
-msgstr ""
+msgstr "创建 poudriere Jail"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:292
+#, fuzzy
 msgid "Create the base jails which poudriere will use for building:"
-msgstr ""
+msgstr "创建 poudriere 用于构建的基础 jail："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere jail -c -j 143Ramd64 -v 14.3-RELEASE -a amd64\n"
-msgstr ""
+msgstr "# poudriere jail -c -j 143Ramd64 -v 14.3-RELEASE -a amd64\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:301
+#, fuzzy
 msgid ""
 "Fetch a `14.3-RELEASE` for `amd64` from the HTTPS server given by "
 "`FREEBSD_HOST` in [.filename]#poudriere.conf#, create the zfs file system "
 "`tank/poudriere/jails/143Ramd64`, mount it on [.filename]#/poudriere/"
 "jails/143Ramd64# and extract the `14.3-RELEASE` tarballs into this file "
 "system."
-msgstr ""
+msgstr "从 `FREEBSD_HOST` 指定的 HTTPS 服务器获取适用于 `amd64` 的 `14.3-RELEASE`，创建 ZFS 文件系统 `tank/poudriere/jails/143Ramd64`，将其挂载到 [.filename]#/poudriere/jails/143Ramd64#，并将 `14.3-RELEASE` tar 包解压到此文件系统中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere jail -c -j 13i386 -v stable/13 -a i386 -m git+https\n"
-msgstr ""
+msgstr "# poudriere jail -c -j 13i386 -v stable/13 -a i386 -m git+https\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:310
+#, fuzzy
 msgid ""
 "Create `tank/poudriere/jails/13i386`, mount it on [.filename]#/poudriere/"
 "jails/13i386#, then check out the tip of the Git branch of `FreeBSD-13-"
@@ -624,272 +681,294 @@ msgid ""
 "freebsd.org` into [.filename]#/poudriere/jails/13i386/usr/src#, then "
 "complete a `buildworld` and install it into [.filename]#/poudriere/"
 "jails/13i386#."
-msgstr ""
+msgstr "创建 `tank/poudriere/jails/13i386`，将其挂载到 [.filename]#/poudriere/jails/13i386#，然后从 `GIT_HOST`（见 [.filename]#poudriere.conf#）或默认服务器 `git.freebsd.org` 检出 `FreeBSD-13-STABLE` Git 分支的最新提交，放入 [.filename]#/poudriere/jails/13i386/usr/src#，接着完成 `buildworld` 并将其安装到 [.filename]#/poudriere/jails/13i386#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:316
+#, fuzzy
 msgid ""
 "While it is possible to build a newer version of FreeBSD on an older "
 "version, most of the time it will not run.  For example, if a `stable/14` "
 "jail is needed, the host will have to run `stable/14` too.  Running `14.3-"
 "RELEASE` is not enough."
-msgstr ""
+msgstr "虽然可以在较旧版本的 FreeBSD 上构建较新版本，但大多数情况下无法运行。例如，如果需要 `stable/14` jail，主机也必须运行 `stable/14`。运行 `14.3-RELEASE` 并不足够。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:321
+#, fuzzy
 msgid "To create a poudriere jail for `16.0-CURRENT`:"
-msgstr ""
+msgstr "要为 `16.0-CURRENT` 创建 poudriere jail："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere jail -c -j 16amd64 -v main -a amd64 -m git+https\n"
-msgstr ""
+msgstr "# poudriere jail -c -j 16amd64 -v main -a amd64 -m git+https\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:330
+#, fuzzy
 msgid ""
 "In order to run a `16.0-CURRENT` poudriere jail the host must be running "
 "`16.0-CURRENT`.  In general, newer kernels can build and run older jails.  "
 "For instance, a `16.0-CURRENT` kernel can build and run a `14.3-STABLE` if "
 "the `COMPAT_FREEBSD14` kernel option was compiled in (on by default in `16.0-"
 "CURRENT`[.filename]#GENERIC# kernel config)."
-msgstr ""
+msgstr "要运行 `16.0-CURRENT` poudriere jail，主机必须运行 `16.0-CURRENT`。通常，较新的内核可以构建并运行较旧的 jail。例如，如果编译时启用了 `COMPAT_FREEBSD14` 内核选项（在 `16.0-CURRENT` [.filename]#GENERIC# 内核配置中默认启用），则 `16.0-CURRENT` 内核可以构建并运行 `14.3-STABLE`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:333
+#, fuzzy
 msgid ""
 "A list of jails currently known to poudriere can be shown with `poudriere "
 "jail -l`:"
-msgstr ""
+msgstr "使用 `poudriere jail -l` 可以显示 poudriere 当前已知的 jail 列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# poudriere jail -l\n"
 "JAILNAME             VERSION              ARCH    METHOD\n"
 "143Ramd64            14.3-RELEASE         amd64   http\n"
 "13i386               13.5-STABLE          i386    git+https\n"
-msgstr ""
+msgstr "# poudriere jail -l\nJAILNAME             VERSION              ARCH    METHOD\n143Ramd64            14.3-RELEASE         amd64   http\n13i386               13.5-STABLE          i386    git+https\n"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Keeping poudriere Jails Updated"
-msgstr ""
+msgstr "更新 poudriere Jail"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:347
+#, fuzzy
 msgid "Managing updates is very straightforward.  The command:"
-msgstr ""
+msgstr "管理更新非常简单。运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere jail -u -j JAILNAME\n"
-msgstr ""
+msgstr "# poudriere jail -u -j JAILNAME\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:356
+#, fuzzy
 msgid ""
 "updates the specified jail to the latest version available.  For FreeBSD "
 "releases, update to the latest patchlevel with man:freebsd-update[8].  For "
 "FreeBSD versions built from source, update to the latest git revision in the "
 "branch."
-msgstr ""
+msgstr "将指定的 jail 更新到可用的最新版本。对于 FreeBSD 发布版本，使用 man:freebsd-update[8] 更新到最新的补丁级别。对于从源代码构建的 FreeBSD 版本，则更新到该分支的最新 Git 修订版。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:361
+#, fuzzy
 msgid ""
 "For jails employing a `git+*` method, it is helpful to add `-J "
 "_NumberOfParallelBuildJobs_` to speed up the build by increasing the number "
 "of parallel compile jobs used.  For example, if the building machine has 6 "
 "CPUs, use:"
-msgstr ""
+msgstr "对于使用 `git+*` 方法的 jail，可以添加 `-J _NumberOfParallelBuildJobs_`，通过增加并行编译任务数来加快构建。例如，如果构建机器有 6 个 CPU，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere jail -u -J 6 -j JAILNAME\n"
-msgstr ""
+msgstr "# poudriere jail -u -J 6 -j JAILNAME\n"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting Up Ports Trees for Use with poudriere"
-msgstr ""
+msgstr "设置供 poudriere 使用的 Ports 树"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:374
+#, fuzzy
 msgid ""
 "There are multiple ways to use ports trees in poudriere.  The most "
 "straightforward way is to have poudriere create a default ports tree for "
 "itself, using link:{handbook}mirrors/#git[Git]:"
-msgstr ""
+msgstr "在 poudriere 中使用 Ports 树有多种方式。最简单的方式是让 poudriere 使用 link:{handbook}mirrors/#git[Git] 为自己创建默认 Ports 树："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere ports -c -m git+https -B main\n"
-msgstr ""
+msgstr "# poudriere ports -c -m git+https -B main\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:382
+#, fuzzy
 msgid ""
 "These commands create `tank/poudriere/ports/default`, mount it on [."
 "filename]#/poudriere/ports/default#, and populate it using Git.  Afterward "
 "it is included in the list of known ports trees:"
-msgstr ""
+msgstr "这些命令会创建 `tank/poudriere/ports/default`，将其挂载到 [.filename]#/poudriere/ports/default#，并使用 Git 填充该目录。之后，它会出现在已知 Ports 树列表中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:388
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# poudriere ports -l\n"
 "PORTSTREE METHOD    TIMESTAMP           PATH\n"
 "default   git+https 2025-07-20 04:23:56 /poudriere/ports/default\n"
-msgstr ""
+msgstr "# poudriere ports -l\nPORTSTREE METHOD    TIMESTAMP           PATH\ndefault   git+https 2025-07-20 04:23:56 /poudriere/ports/default\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:395
+#, fuzzy
 msgid ""
 "Note that the \"default\" ports tree is special.  Each of the build commands "
 "explained later will implicitly use this ports tree unless specifically "
 "specified otherwise.  To use another tree, add `-p _treename_` to the "
 "commands."
-msgstr ""
+msgstr "请注意，`default` Ports 树有其特殊性。除非明确指定其他树，后文介绍的每个构建命令都会默认使用此 Ports 树。要使用其他树，请在命令中添加 `-p _treename_`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:400
+#, fuzzy
 msgid ""
 "The best way to deal with local modifications for a ports contributor is to "
 "use link:{handbook}mirrors/#git[Git].  As with the creation of jails, it is "
 "possible to use a different method for creating the ports tree.  To add an "
 "additional ports tree for testing local modifications and ports development, "
 "checking out the tree via git (as described above) is preferable."
-msgstr ""
+msgstr "对于 Ports 贡献者，使用 link:{handbook}mirrors/#git[Git] 是处理本地修改的最佳方式。与创建 jail 一样，也可以使用其他方法创建 Ports 树。要添加额外的 Ports 树，以便测试本地修改和进行 Ports 开发，最好通过 Git 检出该树（如上所述）。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:402
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Manually Managed Ports Trees with poudriere"
-msgstr ""
+msgstr "在 poudriere 中使用手动管理的 Ports 树"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:406
+#, fuzzy
 msgid ""
 "Depending on the workflow, it can be extremely helpful to use ports trees "
 "which are maintained manually.  For instance, if there is a local copy of "
 "the ports tree in [.filename]#/work/ports#, point poudriere to the location:"
-msgstr ""
+msgstr "根据工作流程，使用手动维护的 Ports 树可能非常有用。例如，如果本地 Ports 树副本位于 [.filename]#/work/ports#，可以将该路径指定给 poudriere："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere ports -c -m null -M /work/ports -p development\n"
-msgstr ""
+msgstr "# poudriere ports -c -m null -M /work/ports -p development\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:413
+#, fuzzy
 msgid "This will be listed in the table of known trees:"
-msgstr ""
+msgstr "此树会列在已知树的列表中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# poudriere ports -l\n"
 "PORTSTREE   METHOD    TIMESTAMP           PATH\n"
 "development null      2025-07-20 05:06:33 /work/ports\n"
-msgstr ""
+msgstr "# poudriere ports -l\nPORTSTREE   METHOD    TIMESTAMP           PATH\ndevelopment null      2025-07-20 05:06:33 /work/ports\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:425
+#, fuzzy
 msgid ""
 "The dash or `null` in the `METHOD` column means that poudriere will not "
 "update or change this ports tree, ever.  It is completely up to the user to "
 "maintain this tree, including all local modifications that may be used for "
 "testing new ports and submitting patches."
-msgstr ""
+msgstr "`METHOD` 列中的短横线或 `null` 表示 poudriere 永远不会更新或更改此 Ports 树。维护此树完全由用户负责，包括用于测试新 Port 和提交补丁的所有本地修改。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Keeping poudriere Ports Trees Updated"
-msgstr ""
+msgstr "更新 poudriere Ports 树"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:431
+#, fuzzy
 msgid "As straightforward as with jails described earlier:"
-msgstr ""
+msgstr "与前文所述的 jail 一样，操作非常简单："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere ports -u -p PORTSTREE\n"
-msgstr ""
+msgstr "# poudriere ports -u -p PORTSTREE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:438
+#, fuzzy
 msgid ""
 "Will update the given _PORTSTREE_, one tree given by the output of "
 "`poudriere -l`, to the latest revision available on the official servers."
-msgstr ""
+msgstr "此命令会将指定的 _PORTSTREE_（即 `poudriere -l` 输出中的一个树）更新到官方服务器上可用的最新修订版。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:443
+#, fuzzy
 msgid ""
 "Ports trees without a method, see crossref:testing[testing-poudriere-ports-"
 "tree-manual, Using Manually Managed Ports Trees with poudriere], cannot be "
 "updated like this and must be updated manually by the porter."
-msgstr ""
+msgstr "没有指定方法的 Ports 树（参见 crossref:testing[testing-poudriere-ports-tree-manual, 在 poudriere 中使用手动管理的 Ports 树]）无法通过这种方式更新，必须由 Port 维护者手动更新。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing Ports"
-msgstr ""
+msgstr "测试 Ports"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:449
+#, fuzzy
 msgid ""
 "After jails and ports trees have been set up, the result of a contributor's "
 "modifications to the ports tree can be tested."
-msgstr ""
+msgstr "设置好 jail 和 Ports 树后，就可以测试贡献者对 Ports 树所做的修改。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:451
+#, fuzzy
 msgid ""
 "For example, local modifications to the package:www/firefox[] port located "
 "in [.filename]#/work/ports/www/firefox# can be tested in the previously "
 "created 14.3-RELEASE jail:"
-msgstr ""
+msgstr "例如，可以在先前创建的 14.3-RELEASE jail 中测试位于 [.filename]#/work/ports/www/firefox# 的 package:www/firefox[] Port 的本地修改："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:455
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere testport -j 143Ramd64 -p development -o www/firefox\n"
-msgstr ""
+msgstr "# poudriere testport -j 143Ramd64 -p development -o www/firefox\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:461
+#, fuzzy
 msgid ""
 "This will build all dependencies of Firefox.  If a dependency has been built "
 "previously and is still up-to-date, the pre-built package is installed.  If "
 "a dependency has no up-to-date package, one will be built with default "
 "options in a jail.  Then Firefox itself is built."
-msgstr ""
+msgstr "此命令会构建 Firefox 的所有依赖项。如果某个依赖项之前已构建且仍是最新版本，则会安装预构建的软件包。如果某个依赖项没有最新的软件包，则会在 jail 中使用默认选项进行构建。然后构建 Firefox 本身。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:463
+#, fuzzy
 msgid ""
 "The complete build of every port is logged to [.filename]#/poudriere/data/"
 "logs/bulk/143Ri386-development/build-time/logs#."
-msgstr ""
+msgstr "每个 Port 的完整构建过程都会记录在 [.filename]#/poudriere/data/logs/bulk/143Ri386-development/build-time/logs# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:468
+#, fuzzy
 msgid ""
 "The directory name `143Ri386-development` is derived from the arguments to `-"
 "j` and `-p`, respectively.  For convenience, a symbolic link [.filename]#/"
@@ -897,35 +976,37 @@ msgid ""
 "The link points to the latest _build-time_ directory.  Also in this "
 "directory is an [.filename]#index.html# for observing the build process with "
 "a web browser."
-msgstr ""
+msgstr "目录名 `143Ri386-development` 分别由 `-j` 和 `-p` 参数生成。为方便起见，还会维护符号链接 [.filename]#/poudriere/data/logs/bulk/143Ri386-development/latest#。该链接指向最新的 _build-time_ 目录。此目录中还包含一个 [.filename]#index.html#，可用于通过 Web 浏览器查看构建过程。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:471
+#, fuzzy
 msgid ""
 "By default, poudriere cleans up the jails and leaves log files in the "
 "directories mentioned above.  To ease investigation, jails can be kept "
 "running after the build by adding `-i` to `testport`:"
-msgstr ""
+msgstr "默认情况下，poudriere 会清理 jail，并将日志文件保留在上述目录中。为了便于排查问题，可以在 `testport` 命令中添加 `-i`，使 jail 在构建后继续运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:475
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere testport -j 143Ramd64 -p development -i -o www/firefox\n"
-msgstr ""
+msgstr "# poudriere testport -j 143Ramd64 -p development -i -o www/firefox\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:482
+#, fuzzy
 msgid ""
 "After the build completes, and regardless of whether it was successful, a "
 "shell is provided within the jail.  The shell is used to investigate "
 "further.  poudriere can be told to leave the jail running after the build "
 "finishes with `-I`.  poudriere will show the command to run when the jail is "
 "no longer needed.  It is then possible to man:jexec[8] into it:"
-msgstr ""
+msgstr "构建完成后，无论构建是否成功，都会在 jail 中提供一个 shell，以便进一步排查问题。添加 `-I` 可让 poudriere 在构建完成后保留运行中的 jail。jail 不再需要时，poudriere 会显示停止它的命令。之后可以使用 man:jexec[8] 进入该 jail："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:496
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# poudriere testport -j 143Ramd64 -p development -I -o www/firefox\n"
 "[...]\n"
@@ -938,57 +1019,62 @@ msgid ""
 "# exit\n"
 "# poudriere jail -k -j 143Ramd64 -p development\n"
 "====>> Umounting file systems\n"
-msgstr ""
+msgstr "# poudriere testport -j 143Ramd64 -p development -I -o www/firefox\n[...]\n====>> Installing local Pkg repository to /usr/local/etc/pkg/repos\n====>> Leaving jail 143Ramd64-development-n running, mounted at /poudriere/data/.m/143Ramd64-development/ref for interactive run testing\n====>> To enter jail: jexec 143Ramd64-development-n env -i TERM=$TERM /usr/bin/login -fp root\n====>> To stop jail: poudriere jail -k -j 143Ramd64 -p development\n# jexec 143Ramd64-development-n env -i TERM=$TERM /usr/bin/login -fp root\n# [do some stuff in the jail]\n# exit\n# poudriere jail -k -j 143Ramd64 -p development\n====>> Umounting file systems\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:501
+#, fuzzy
 msgid ""
 "An integral part of the FreeBSD ports build infrastructure is the ability to "
 "tweak ports to personal preferences with options.  These can be tested with "
 "poudriere as well.  Adding the `-c`:"
-msgstr ""
+msgstr "FreeBSD Ports 构建基础设施的一个重要功能是可以通过选项按个人偏好调整 Port。也可以使用 poudriere 测试这些选项。添加 `-c`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:505
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere testport -j 143Ramd64 -c -o www/firefox\n"
-msgstr ""
+msgstr "# poudriere testport -j 143Ramd64 -c -o www/firefox\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:511
+#, fuzzy
 msgid ""
 "Presents the port configuration dialog before the port is built.  The ports "
 "given after `-o` in the format `_category_/_portname_` will use the "
 "specified options, all dependencies will use the default options.  Testing "
 "dependent ports with non-default options can be accomplished using sets, see "
 "crossref:testing[testing-poudriere-sets, Using Sets]."
-msgstr ""
+msgstr "在构建 Port 之前，会显示 Port 配置对话框。`-o` 后以 `_category_/_portname_` 格式指定的 Port 将使用指定选项，所有依赖项则使用默认选项。要使用非默认选项测试依赖 Port，可以使用 set，参见 crossref:testing[testing-poudriere-sets, 使用 Set]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:516
+#, fuzzy
 msgid ""
 "When testing ports where [.filename]#pkg-plist# is altered during build "
 "depending on the selected options, it is recommended to perform a test run "
 "with all options selected _and_ one with all options deselected."
-msgstr ""
+msgstr "测试那些会根据所选选项在构建期间修改 [.filename]#pkg-plist# 的 Port 时，建议分别使用全选和全不选选项进行测试。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:519
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Sets"
-msgstr ""
+msgstr "使用 Set"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:524
+#, fuzzy
 msgid ""
 "For all actions involving builds, a so-called _set_ can be specified using `-"
 "z _setname_`.  A set refers to a fully independent build.  This allows, for "
 "instance, usage of `testport` with non-standard options for the dependent "
 "ports."
-msgstr ""
+msgstr "对于涉及构建的所有操作，都可以使用 `-z _setname_` 指定一个所谓的 _set_。Set 表示一个完全独立的构建环境。例如，这样就可以使用 `testport`，并为依赖 Port 指定非标准选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:530
+#, fuzzy
 msgid ""
 "To use sets, poudriere expects an existing directory structure similar to "
 "`PORT_DBDIR`, defaults to [.filename]#/var/db/ports# in its configuration "
@@ -999,153 +1085,175 @@ msgid ""
 "setname-options#.  This is described in detail in man:poudriere[8].  For "
 "instance, testing package:www/firefox[] in a specific set named `devset`, "
 "add the `-z devset` parameter to the `testport` command:"
-msgstr ""
+msgstr "要使用 set，poudriere 需要一个类似于 `PORT_DBDIR` 的现有目录结构；在其配置目录中，该目录默认为 [.filename]#/var/db/ports#。随后，此目录会通过 man:nullfs[5] 挂载到构建 Port 及其依赖项的 jail 中。通常，可以将现有的 `PORT_DBDIR` 递归复制到 [.filename]#/usr/local/etc/poudriere.d/jailname-portname-setname-options#，以此作为合适的起点。详情请参见 man:poudriere[8]。例如，要在名为 `devset` 的特定 set 中测试 package:www/firefox[]，请在 `testport` 命令中添加 `-z devset` 参数："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:534
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:578
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere testport -j 143Ramd64 -p development -z devset -o www/firefox\n"
-msgstr ""
+msgstr "# poudriere testport -j 143Ramd64 -p development -z devset -o www/firefox\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:537
+#, fuzzy
 msgid "This will look for the existence of these directories in this order:"
-msgstr ""
+msgstr "此命令会按以下顺序查找这些目录："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:539
+#, fuzzy
 msgid ""
 "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-devset-options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-devset-options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:540
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-devset-options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-devset-options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:541
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:542
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/devset-options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/devset-options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:543
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/development-options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/development-options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:544
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:545
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/options#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/options#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:548
+#, fuzzy
 msgid ""
 "From this list, poudriere man:nullfs[5]-mounts the _first existing_ "
 "directory tree into the [.filename]#/var/db/ports# directory of the build "
 "jails.  Hence, all custom options are used for all the ports during this run "
 "of `testport`."
-msgstr ""
+msgstr "在此列表中，poudriere 会将第一个存在的目录树通过 man:nullfs[5] 挂载到构建 jail 的 [.filename]#/var/db/ports# 目录中。因此，在本次 `testport` 运行期间，所有 Port 都会使用这些自定义选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:551
+#, fuzzy
 msgid ""
 "After the directory structure for a set is provided, the options for a "
 "particular port can be altered.  For example:"
-msgstr ""
+msgstr "为 set 提供目录结构后，就可以更改特定 Port 的选项。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:555
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere options -c www/firefox -z devset\n"
-msgstr ""
+msgstr "# poudriere options -c www/firefox -z devset\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:559
+#, fuzzy
 msgid ""
 "The configuration dialog for package:www/firefox[] is shown, and options can "
 "be edited.  The selected options are saved to the `devset` set."
-msgstr ""
+msgstr "随后会显示 package:www/firefox[] 的配置对话框，可以在其中编辑选项。所选选项会保存到 `devset` set 中。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:565
+#, fuzzy
 msgid ""
 "poudriere is very flexible in the option configuration.  poudriere can be "
 "set for particular jails, ports trees, and for multiple ports by one "
 "command.  Refer to man:poudriere[8] for details."
-msgstr ""
+msgstr "poudriere 的选项配置非常灵活。可以通过 poudriere 为特定 jail、Ports 树以及多个 Port 设置选项。详情请参见 man:poudriere[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Providing a Custom [.filename]#make.conf# File"
-msgstr ""
+msgstr "提供自定义 [.filename]#make.conf# 文件"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:574
+#, fuzzy
 msgid ""
 "Similar to using sets, poudriere will also use a custom [.filename]#make."
 "conf# if it is provided.  No special command line argument is necessary.  "
 "Instead, poudriere looks for existing files matching a name scheme derived "
 "from the command line.  For instance:"
-msgstr ""
+msgstr "与使用 set 类似，提供自定义 [.filename]#make.conf# 后，poudriere 也会使用该文件。无需特殊的命令行参数，poudriere 会根据命令行参数生成命名规则，并查找匹配的现有文件。例如："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:581
+#, fuzzy
 msgid ""
 "causes poudriere to check for the existence of these files in this order:"
-msgstr ""
+msgstr "此命令会使 poudriere 按以下顺序检查这些文件是否存在："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:583
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/make.conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:584
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/devset-make.conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/devset-make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:585
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/development-make.conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/development-make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:586
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-make.conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:587
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-make.conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:588
+#, fuzzy
 msgid "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-devset-make.conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-devset-make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:589
+#, fuzzy
 msgid ""
 "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-devset-make."
 "conf#"
-msgstr ""
+msgstr "[.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-devset-make.conf#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:593
+#, fuzzy
 msgid ""
 "Unlike with sets, all of the found files will be appended, _in that order_, "
 "into one [.filename]#make.conf# inside the build jails.  It is hence "
@@ -1154,136 +1262,148 @@ msgid ""
 "intended to affect only certain jails or sets can be set in specialised [."
 "filename]#make.conf# files, such as [.filename]#/usr/local/etc/poudriere."
 "d/143Ramd64-development-devset-make.conf#."
-msgstr ""
+msgstr "与 set 不同，所有找到的文件都会按此顺序追加到构建 jail 中的一个 [.filename]#make.conf# 文件。因此，可以在 [.filename]#/usr/local/etc/poudriere.d/make.conf# 中设置适用于所有构建的通用 make 变量。对于仅适用于特定 jail 或 set 的特殊变量，可以在专用的 [.filename]#make.conf# 文件中设置，例如 [.filename]#/usr/local/etc/poudriere.d/143Ramd64-development-devset-make.conf#。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:595
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using [.filename]#make.conf# to Change Default Perl"
-msgstr ""
+msgstr "使用 [.filename]#make.conf# 更改默认 Perl 版本"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:600
+#, fuzzy
 msgid ""
 "To build a set with a non default Perl version, for example, `5.20`, using a "
 "set named `perl5-20`, create a [.filename]#perl5-20-make.conf# with this "
 "line:"
-msgstr ""
+msgstr "要使用非默认 Perl 版本（例如 `5.20`）构建一个集合，请使用名为 `perl5-20` 的集合，并创建包含以下行的 [.filename]#perl5-20-make.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:604
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DEFAULT_VERSIONS+= perl=5.20\n"
-msgstr ""
+msgstr "DEFAULT_VERSIONS+= perl=5.20\n"
 
 #. type: delimited block = 5
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:608
+#, fuzzy
 msgid ""
 "Note the use of `+=` so that if the variable is already set in the default [."
 "filename]#make.conf# its content will not be overwritten."
-msgstr ""
+msgstr "请注意使用 `+=`，这样如果默认 [.filename]#make.conf# 中已设置该变量，其内容就不会被覆盖。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:613
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Pruning no Longer Needed Distfiles"
-msgstr ""
+msgstr "清理不再需要的 distfile"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:617
+#, fuzzy
 msgid ""
 "poudriere comes with a built-in mechanism to remove outdated distfiles that "
 "are no longer used by any port of a given tree.  The command"
-msgstr ""
+msgstr "poudriere 内置了一个机制，可以删除给定 ports 树中任何 port 都不再使用的过期 distfile。运行以下命令"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:621
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere distclean -p portstree\n"
-msgstr ""
+msgstr "# poudriere distclean -p portstree\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:626
+#, fuzzy
 msgid ""
 "will scan the distfiles folder, `DISTFILES_CACHE` in [.filename]#poudriere."
 "conf#, versus the ports tree given by the `-p _portstree_` argument and "
 "prompt for removal of those distfiles.  To skip the prompt and remove all "
 "unused files unconditionally, the `-y` argument can be added:"
-msgstr ""
+msgstr "该命令会扫描 distfile 文件夹（即 [.filename]#poudriere.conf# 中的 `DISTFILES_CACHE`），并将其与 `-p _portstree_` 参数指定的 ports 树进行比较，然后提示是否删除这些 distfile。要跳过提示并无条件删除所有未使用的文件，可以添加 `-y` 参数："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:630
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# poudriere distclean -p portstree -y\n"
-msgstr ""
+msgstr "# poudriere distclean -p portstree -y\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:633
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Debugging ports"
-msgstr ""
+msgstr "调试 ports"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:640
+#, fuzzy
 msgid ""
 "Sometimes things go wrong and the port fails at run time.  The framework "
 "provides some facilities to help in debugging ports.  These helpers are "
 "limited since the way of debugging a port heavily depends on the technology "
 "used.  The following variables help with debugging ports:"
-msgstr ""
+msgstr "有时会出现问题，导致 port 在运行时失败。框架提供了一些帮助调试 ports 的功能。由于 port 的调试方式很大程度上取决于所用技术，这些辅助功能有所限制。以下变量可用于调试 ports："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:642
+#, fuzzy
 msgid "`WITH_DEBUG`. If set, ports are built with debugging symbols."
-msgstr ""
+msgstr "`WITH_DEBUG`。设置后，构建 ports 时会包含调试符号。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:643
+#, fuzzy
 msgid ""
 "`WITH_DEBUG_PORTS`. Specifies a list of ports to be built with `WITH_DEBUG` "
 "set."
-msgstr ""
+msgstr "`WITH_DEBUG_PORTS`。指定要设置 `WITH_DEBUG` 进行构建的 ports 列表。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:644
+#, fuzzy
 msgid ""
 "`DEBUG_FLAGS`. Used to specify additional flags to `CFLAGS`. Defaults to `-"
 "g`."
-msgstr ""
+msgstr "`DEBUG_FLAGS`。用于指定要添加到 `CFLAGS` 的额外标志。默认值为 `-g`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:647
+#, fuzzy
 msgid ""
 "When `WITH_DEBUG` is set, either globally or for a list of ports, the "
 "resulting binaries are not stripped."
-msgstr ""
+msgstr "设置 `WITH_DEBUG`（无论是全局设置还是针对 ports 列表设置）后，生成的二进制文件不会被剥离符号。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:650
+#, fuzzy
 msgid ""
 "These variables can be specified in [.filename]#make.conf# or in the command "
 "line:"
-msgstr ""
+msgstr "可以在 [.filename]#make.conf# 中或命令行上指定这些变量："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:654
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cd category/port && make -DWITH_DEBUG DEBUG_FLAGSS=\"-g -O0\"\n"
-msgstr ""
+msgstr "# cd category/port && make -DWITH_DEBUG DEBUG_FLAGSS=\"-g -O0\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:662
+#, fuzzy
 msgid ""
 "If the port is built using package:ports-mgmt/poudriere[] the debugging "
 "variables must be specified in poudriere's [.filename]#make.conf# and not in "
 "[.filename]#/etc/make.conf#.  Refer to package:ports-mgmt/poudriere[] "
 "documentation for details."
-msgstr ""
+msgstr "如果使用 package:ports-mgmt/poudriere[] 构建 port，则必须在 poudriere 的 [.filename]#make.conf# 中指定调试变量，而不是在 [.filename]#/etc/make.conf# 中指定。有关详情，请参阅 package:ports-mgmt/poudriere[] 文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/testing/_index.adoc:666
+#, fuzzy
 msgid ""
 "Please refer to the debugging information in the extref:{developers-handbook}"
 "tools[Developer's Handbook, debugging] for more details about the debugging "
 "tools available."
-msgstr ""
+msgstr "有关可用调试工具的更多详情，请参阅 extref:{developers-handbook}tools[开发者手册，调试] 中的调试信息。"

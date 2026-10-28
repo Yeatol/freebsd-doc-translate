@@ -17,117 +17,124 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/development/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resources for developers"
-msgstr ""
+msgstr "面向开发者的资源"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/accessibility/development/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Vision"
-msgstr ""
+msgstr "第二部分：视觉"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/development/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 6. Development"
-msgstr ""
+msgstr "第 6 章：开发"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/development/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Development"
-msgstr ""
+msgstr "开发"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/development/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:54
+#, fuzzy
 msgid ""
 "This chapter provides resources for developers seeking to make their "
 "programs accessible, test accessibility, and improve the accessibility of "
 "their software."
-msgstr ""
+msgstr "本章为开发者提供相关资源，帮助他们提升程序的可访问性、测试可访问性，并改进软件的可访问性。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/development/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Colors"
-msgstr ""
+msgstr "颜色"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:60
+#, fuzzy
 msgid ""
 "Do not assume that users can distinguish all (or even any of) the colors "
 "used in your program.  While official statistics on the prevalence of color "
 "blindness are lacking, it is estimated that approximately 5% of the "
 "population is affected by some form of it, whether partial or total."
-msgstr ""
+msgstr "不要假设用户能够分辨程序中使用的所有颜色（甚至任何颜色）。虽然缺乏关于色盲患病率的官方统计数据，但据估计，约有 5% 的人口受到某种形式色盲的影响，包括部分色盲和全色盲。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/development/_index.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Colors Guidelines"
-msgstr ""
+msgstr "颜色指南"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:67
+#, fuzzy
 msgid ""
 "Avoid using color as the sole means of conveying information.  If color must "
 "be used, provide a straightforward and well-documented method for "
 "configuring color settings.  Where possible, ensure support for the `"
 "$NO_COLOR` environment variable to accommodate user preferences."
-msgstr ""
+msgstr "避免仅用颜色传达信息。如果必须使用颜色，请提供简单明了且文档完善的颜色设置方法。在可能的情况下，确保支持 `$NO_COLOR` 环境变量，以适应用户偏好。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/development/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Colors Checker"
-msgstr ""
+msgstr "颜色检查工具"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:73
+#, fuzzy
 msgid ""
 "The package:graphics/kontrast[] package provides the Kontrast GUI utility to "
 "check if the color combinations are distinct enough to be readable and "
 "accessible.  To install:"
-msgstr ""
+msgstr "package:graphics/kontrast[] 软件包提供 Kontrast 图形界面工具，用于检查颜色组合是否具有足够的区分度，从而确保内容易于阅读且具有可访问性。安装方法："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install kontrast\n"
-msgstr ""
+msgstr "# pkg install kontrast\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/development/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Command Line Interface"
-msgstr ""
+msgstr "命令行界面"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:84
+#, fuzzy
 msgid ""
 "The CLI is generally considered accessible by a screen reader.  However, it "
 "is important to understand some concepts, follow best practices, and avoid "
 "certain mistakes to ensure an accessible UI."
-msgstr ""
+msgstr "通常认为屏幕阅读器可以访问 CLI。不过，要确保用户界面具有可访问性，了解一些概念、遵循最佳实践并避免某些错误仍然很重要。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:88
+#, fuzzy
 msgid ""
 "Dahlke, Karl. _Command Line Programs for the Blind_.  Available at: http://"
 "www.eklhad.net/philosophy.html.  This article discusses the concept of "
 "presenting information in one dimension and addresses the accessibility "
 "challenges inherent in programs designed exclusively for sighted users."
-msgstr ""
+msgstr "Dahlke，Karl。__盲人适用的命令行程序__。可在 link:http://www.eklhad.net/philosophy.html[] 获取。本文讨论以一维方式呈现信息的概念，并探讨专为视力正常的用户设计的程序固有的可访问性挑战。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:95
+#, fuzzy
 msgid ""
 "Sampath, H., Merrick, A., & Macvean, A. (2021).  Accessibility of Command "
 "Line Interfaces.  In Proceedings of the CHI Conference on Human Factors in "
@@ -135,37 +142,39 @@ msgid ""
 "fullHtml/10.1145/3411764.3445544.  This paper presents guidelines and common "
 "pitfalls to avoid when designing command-line interfaces that are accessible "
 "to screen reader users."
-msgstr ""
+msgstr "Sampath，H.、Merrick，A. 和 Macvean，A.（2021）。命令行界面的可访问性。载于《人机交互系统中的人为因素》会议论文集（CHI '21）。ACM。可在 link:https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445544[] 获取。本文介绍了设计适用于屏幕阅读器用户的命令行界面时应遵循的指南，以及需要避免的常见问题。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/development/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Libraries"
-msgstr ""
+msgstr "库"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/development/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Gnome"
-msgstr ""
+msgstr "Gnome"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:104
+#, fuzzy
 msgid ""
 "AT-SPI (Assistive Technology Service Provider Interface), package:"
 "accessibility/at-spi2-core[], is a framework that establishes a "
 "communication channel between applications and assistive technologies.  To "
 "install, execute:"
-msgstr ""
+msgstr "AT-SPI（辅助技术服务提供者接口），即 package:accessibility/at-spi2-core[]，是一个用于在应用程序与辅助技术之间建立通信通道的框架。安装时执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install at-spi2-core\n"
-msgstr ""
+msgstr "# pkg install at-spi2-core\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:115
+#, fuzzy
 msgid ""
 "AT-SPI offers a wide range of features. For more information, refer to the "
 "following resources: https://gitlab.gnome.org/GNOME/at-spi2-core/-/blob/main/"
@@ -173,24 +182,26 @@ msgid ""
 "[Atk wiki], https://gnome.pages.gitlab.gnome.org/at-spi2-core/libatspi/[AT "
 "SPI Wiki], and https://wiki.gnome.org/Accessibility[GNOME Accessibility Team "
 "Wiki]."
-msgstr ""
+msgstr "AT-SPI 提供了丰富的功能。如需了解更多信息，请参阅以下资源： link:https://gitlab.gnome.org/GNOME/at-spi2-core/-/blob/main/README.md[README]、 link:https://gnome.pages.gitlab.gnome.org/at-spi2-core/atk/[Atk wiki]、 link:https://gnome.pages.gitlab.gnome.org/at-spi2-core/libatspi/[AT SPI Wiki] 和 link:https://wiki.gnome.org/Accessibility[GNOME Accessibility Team Wiki]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:119
+#, fuzzy
 msgid ""
 "Some wrappers are available: package:accessibility/rubygem-atk[] (Ruby), "
 "package:accessibility/py-atspi[] (Python), and package:accessibility/atkmm[] "
 "(C++)."
-msgstr ""
+msgstr "可用的封装包括：package:accessibility/rubygem-atk[]（Ruby）、package:accessibility/py-atspi[]（Python）和 package:accessibility/atkmm[]（C++）。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/development/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "QT"
-msgstr ""
+msgstr "Qt"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:128
+#, fuzzy
 msgid ""
 "package:accessibility/libqaccessibilityclient[] establishes a communication "
 "channel between applications and assistive technologies.  In particular, it "
@@ -199,123 +210,132 @@ msgid ""
 "documentation, refer to the https://api.kde.org/libqaccessibilityclient/html/"
 "index.html[API Reference] and the https://github.com/KDE/"
 "libqaccessibilityclient[official repository].  To install:"
-msgstr ""
+msgstr "package:accessibility/libqaccessibilityclient[] 用于在应用程序与辅助技术之间建立通信通道。具体而言，它为使用 Qt 构建的应用程序与 AT-SPI 框架之间提供桥接，后者已在 crossref:development[devel-at-spi,前文]介绍。完整文档请参阅 link:https://api.kde.org/libqaccessibilityclient/html/index.html[API 参考]和 link:https://github.com/KDE/libqaccessibilityclient[官方代码仓库]。安装方法："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install libqaccessibilityclient\n"
-msgstr ""
+msgstr "# pkg install libqaccessibilityclient\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:137
+#, fuzzy
 msgid ""
 "Libraries package:accessibility/qt5-speech[] and package:accessibility/qt6-"
 "speech[] provide access to a Text-To-Speech functionality (specifically to "
 "package:accessibility/speech-dispatcher[]).  Documentation is available at "
 "https://doc.qt.io/archives/qt-5.15/qtspeech-index.html and https://doc.qt.io/"
 "qt-6/qttexttospeech-index.html.  To install, run:"
-msgstr ""
+msgstr "库 package:accessibility/qt5-speech[] 和 package:accessibility/qt6-speech[] 提供文本转语音功能（具体通过 package:accessibility/speech-dispatcher[] 实现）。文档可见 link:https://doc.qt.io/archives/qt-5.15/qtspeech-index.html[] 和 link:https://doc.qt.io/qt-6/qttexttospeech-index.html[]。安装时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pkg install qt5-speech\n"
 "# pkg install qt6-speech\n"
-msgstr ""
+msgstr "# pkg install qt5-speech\n# pkg install qt6-speech\n"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/development/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Speech Synthesis"
-msgstr ""
+msgstr "语音合成"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:148
+#, fuzzy
 msgid ""
 "package:accessibility/speech-dispatcher[] provides a simple, high level, and "
 "device independent layer for access to Speech Synthesizers.  To install, run:"
-msgstr ""
+msgstr "package:accessibility/speech-dispatcher[] 提供一个简单、高级且与设备无关的语音合成器访问层。安装时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install speech-dispatcher\n"
-msgstr ""
+msgstr "# pkg install speech-dispatcher\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:155
+#, fuzzy
 msgid ""
 "For detailed documentation, refer to the official Speech Dispatcher website: "
 "https://freebsoft.org/speechd."
-msgstr ""
+msgstr "详细文档请参阅 Speech Dispatcher 官方网站：link:https://freebsoft.org/speechd[]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:159
+#, fuzzy
 msgid ""
 "A Python wrapper for the library is provided by the package:accessibility/py-"
 "speech-dispatcher[]."
-msgstr ""
+msgstr "该库提供 Python 封装：package:accessibility/py-speech-dispatcher[]。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/development/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Liblouis"
-msgstr ""
+msgstr "Liblouis"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:166
+#, fuzzy
 msgid ""
 "package:devel/liblouis[] provides an API for translating many languages to "
 "and from Braille.  To install, execute:"
-msgstr ""
+msgstr "package:devel/liblouis[] 提供一个 API，可将多种语言转换为盲文，也可将盲文转换为多种语言。安装时执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install liblouis\n"
-msgstr ""
+msgstr "# pkg install liblouis\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:173
+#, fuzzy
 msgid ""
 "The library provides many features, https://liblouis.io/documentation/"
 "[documented on the liblouis project website]."
-msgstr ""
+msgstr "该库提供多种功能，详见 liblouis 项目网站上的 link:https://liblouis.io/documentation/[文档]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:177
+#, fuzzy
 msgid ""
 "Liblouis provides also a Python API, https://liblouis.io/documentation/"
 "liblouis.html#Python-bindings[Python bindings]."
-msgstr ""
+msgstr "Liblouis 还提供 Python API： link:https://liblouis.io/documentation/liblouis.html#Python-bindings[Python 绑定]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/development/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tools"
-msgstr ""
+msgstr "工具"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:184
+#, fuzzy
 msgid ""
 "package:accessibility/accerciser[] provides an accessibility inspection tool "
 "for applications developed for the extref:{handbook}desktop/#gnome-"
 "environment[GNOME] desktop environment.  To install it, run:"
-msgstr ""
+msgstr "package:accessibility/accerciser[] 为基于 extref:{handbook}desktop/#gnome-environment[GNOME] 桌面环境开发的应用程序提供可访问性检查工具。安装时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/development/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install accerciser\n"
-msgstr ""
+msgstr "# pkg install accerciser\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/development/_index.adoc:192
+#, fuzzy
 msgid ""
 "For detailed usage and features, refer to man:accerciser[1].  Additional "
 "documentation is available in the https://gitlab.gnome.org/GNOME/"
 "accerciser/-/blob/master/README.md[README.md] and the https://help.gnome.org/"
 "users/accerciser/stable/index.html.en[Accerciser User Guide]."
-msgstr ""
+msgstr "详细的用法和功能说明请参阅 man:accerciser[1]。其他文档可见 link:https://gitlab.gnome.org/GNOME/accerciser/-/blob/master/README.md[README.md] 和 link:https://help.gnome.org/users/accerciser/stable/index.html.en[Accerciser 用户指南]。"

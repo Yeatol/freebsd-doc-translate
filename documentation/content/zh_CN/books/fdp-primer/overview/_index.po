@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Overview about the FreeBSD Documentation Process"
-msgstr ""
+msgstr "FreeBSD 文档流程概述"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 1. Overview"
-msgstr ""
+msgstr "第 1 章：概述"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:14
@@ -38,174 +38,204 @@ msgstr "总览"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:52
+#, fuzzy
 msgid ""
 "Welcome to the FreeBSD Documentation Project (FDP).  Quality documentation "
 "is crucial to the success of FreeBSD, and we value your contributions very "
 "highly."
-msgstr ""
+msgstr "欢迎加入 FreeBSD 文档项目（FDP）。高质量的文档对 FreeBSD 的成功至关重要，我们非常重视您的贡献。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:54
+#, fuzzy
 msgid ""
 "This document describes how the FDP is organized, how to write and submit "
 "documentation, and how to effectively use the available tools."
-msgstr ""
+msgstr "本文档介绍 FDP 的组织方式、如何编写和提交文档，以及如何有效使用现有工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:57
+#, fuzzy
 msgid ""
 "Everyone is welcome to contribute to the FDP.  Willingness to contribute is "
 "the only membership requirement."
-msgstr ""
+msgstr "欢迎所有人参与 FDP。愿意贡献是加入项目的唯一条件。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:59
+#, fuzzy
 msgid "This primer shows how to:"
-msgstr ""
+msgstr "本入门指南将介绍如何："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:61
+#, fuzzy
 msgid "Understand the role of documentation and its place in the ecosystem."
-msgstr ""
+msgstr "了解文档的作用及其在生态系统中的位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:62
+#, fuzzy
 msgid "Identify which parts of FreeBSD are maintained by the FDP."
-msgstr ""
+msgstr "识别 FreeBSD 中由 FDP 维护的部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:63
+#, fuzzy
 msgid "Install the required documentation tools and files."
-msgstr ""
+msgstr "安装所需的文档工具和文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:64
+#, fuzzy
 msgid "Make changes to the documentation."
-msgstr ""
+msgstr "修改文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:65
+#, fuzzy
 msgid ""
 "Submit changes back for review and inclusion in the FreeBSD documentation."
-msgstr ""
+msgstr "提交修改，以供审查并纳入 FreeBSD 文档。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation in the FreeBSD Ecosystem"
-msgstr ""
+msgstr "FreeBSD 生态系统中的文档"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:71
+#, fuzzy
 msgid ""
 "All documents are for the benefit of their readers, not their writers or "
 "caretakers.  They should adapt to the reader and not expect the reader to "
 "adapt to them."
-msgstr ""
+msgstr "所有文档都是为读者而写，而非为作者或维护者而写。文档应适应读者，而不应要求读者去适应文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:73
+#, fuzzy
 msgid "Never blame the reader for:"
-msgstr ""
+msgstr "绝不要责怪读者："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:75
+#, fuzzy
 msgid "being unable to make use of a document easily or at all"
-msgstr ""
+msgstr "无法轻松使用文档，甚至完全无法使用"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:76
+#, fuzzy
 msgid "finding a document confusing"
-msgstr ""
+msgstr "觉得文档令人困惑"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:77
+#, fuzzy
 msgid "not understanding a document or how to apply it"
-msgstr ""
+msgstr "不理解文档或不知道如何应用文档"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:78
+#, fuzzy
 msgid ""
 "not finding an explicit answer or successfully bridging gaps (or connecting "
 "dots) to reason their way to one"
-msgstr ""
+msgstr "找不到明确的答案，或无法成功弥补信息缺漏（或理清其中联系）以推导出答案"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:80
+#, fuzzy
 msgid "Instead, acknowledge that the document is:"
-msgstr ""
+msgstr "相反，应承认文档存在以下问题："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:82
+#, fuzzy
 msgid "inaccessible"
-msgstr ""
+msgstr "难以访问"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:83
+#, fuzzy
 msgid "confusing"
-msgstr ""
+msgstr "令人困惑"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:84
+#, fuzzy
 msgid "hard to understand or apply"
-msgstr ""
+msgstr "难以理解或应用"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:85
+#, fuzzy
 msgid "incomplete"
-msgstr ""
+msgstr "内容不完整"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:87
+#, fuzzy
 msgid "Then, make the document:"
-msgstr ""
+msgstr "然后，让文档变得："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:89
+#, fuzzy
 msgid "more accessible"
-msgstr ""
+msgstr "更易于访问"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:90
+#, fuzzy
 msgid "less confusing"
-msgstr ""
+msgstr "更清晰易懂"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:91
+#, fuzzy
 msgid "clearer"
-msgstr ""
+msgstr "更清楚"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:92
+#, fuzzy
 msgid "more complete"
-msgstr ""
+msgstr "更完整"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:94
+#, fuzzy
 msgid "Use the following methods:"
-msgstr ""
+msgstr "采用以下方法："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:96
+#, fuzzy
 msgid ""
 "apply link:https://webaim.org/intro/#principles[accessibility best "
 "practices] to correct the problem reported and any similar ones you find"
-msgstr ""
+msgstr "应用 link:https://webaim.org/intro/#principles[无障碍最佳实践]，修正报告中指出的问题以及发现的其他类似问题"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:97
+#, fuzzy
 msgid "rework or clarify the confusing structure or language"
-msgstr ""
+msgstr "重构或阐明令人困惑的结构或措辞"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:98
+#, fuzzy
 msgid "add relevant examples to the part that is hard to understand or apply"
-msgstr ""
+msgstr "在难以理解或应用的部分添加相关示例"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:99
+#, fuzzy
 msgid "fill in the gaps or add the missing stepping stones"
-msgstr ""
+msgstr "补充缺失的信息或添加必要的引导步骤"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:101
@@ -215,184 +245,200 @@ msgstr "快速开始"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:107
+#, fuzzy
 msgid ""
 "Some preparatory steps must be taken before editing the FreeBSD "
 "documentation.  First, subscribe to the {freebsd-doc}.  Some team members "
 "also interact on the `#bsddocs` IRC channel on http://www.efnet.org/"
 "[EFnet].  These people can help with questions or problems involving the "
 "documentation."
-msgstr ""
+msgstr "编辑 FreeBSD 文档前，需要先完成一些准备工作。首先，订阅 {freebsd-doc}。一些团队成员也会在 link:http://www.efnet.org/[EFnet] 上的 `#bsddocs` IRC 频道交流。这些人可以帮助解答文档相关的问题或处理相关困难。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD installation process"
-msgstr ""
+msgstr "FreeBSD 安装流程"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:114
+#, fuzzy
 msgid ""
 "Install these packages. The `docproj` _meta-port_ installs all the "
 "applications required to do useful work with the FreeBSD documentation."
-msgstr ""
+msgstr "安装以下软件包。`docproj` __元端口__ 会安装使用 FreeBSD 文档进行有效工作的所有必需应用程序。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install docproj\n"
-msgstr ""
+msgstr "# pkg install docproj\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:121
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:202
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:286
+#, fuzzy
 msgid ""
 "Install a local working copy of the documentation from the FreeBSD "
 "repository in [.filename]#~/doc# (see crossref:working-copy[working-copy,The "
 "Working Copy])."
-msgstr ""
+msgstr "将 FreeBSD 仓库中的文档安装为本地工作副本，存放在 [.filename]#~/doc# 中（参见 crossref:working-copy[working-copy,工作副本]）。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:125
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
-msgstr ""
+msgstr "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:128
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:209
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:293
+#, fuzzy
 msgid ""
 "Edit the documentation files that require changes. If a file needs major "
 "changes, consult the mailing list for input."
-msgstr ""
+msgstr "编辑需要修改的文档文件。如果文件需要大幅修改，请先向邮件列表征求意见。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:131
+#, fuzzy
 msgid ""
 "Review the output and edit the file to fix any problems shown, then rerun "
 "the command to find any remaining problems.  Repeat until all of the errors "
 "are resolved."
-msgstr ""
+msgstr "检查输出并编辑文件以修复其中显示的问题，然后重新运行命令以查找其他问题。重复此过程，直到解决所有错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:133
+#, fuzzy
 msgid ""
 "*_Always_* build and review the changes before submitting them. Running "
 "`make` in the `documentation` or `website` subdirectories will generate the "
 "documentation in HTML format."
-msgstr ""
+msgstr "*_务必_* 在提交前构建并检查修改。在 `documentation` 或 `website` 子目录中运行 `make` 会生成 HTML 格式的文档。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make\n"
-msgstr ""
+msgstr "% make\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:140
+#, fuzzy
 msgid "To reduce compile time, only one language can be compiled:"
-msgstr ""
+msgstr "为缩短编译时间，可以只编译一种语言："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% make DOC_LANG=en\n"
-msgstr ""
+msgstr "% make DOC_LANG=en\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:147
+#, fuzzy
 msgid ""
 "The build output is stored in [.filename]#~/doc/documentation/public/en/"
 "articles/# and [.filename]#~/doc/documentation/public/en/books/#."
-msgstr ""
+msgstr "构建输出存放在 [.filename]#~/doc/documentation/public/en/articles/# 和 [.filename]#~/doc/documentation/public/en/books/# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:149
+#, fuzzy
 msgid ""
 "Review the build output and ensure the edits are free from typos, layout "
 "problems, or errors. If any errors are found during the build process, edit "
 "the problematic files to fix any issues that show up, then run the build "
 "command again until all errors are resolved."
-msgstr ""
+msgstr "检查构建输出，确保修改没有拼写错误、布局问题或其他错误。如果构建过程中发现错误，请编辑有问题的文件并修复，然后重新运行构建命令，直到解决所有错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:151
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:221
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:304
+#, fuzzy
 msgid ""
 "Add all the files with `git add .`, then review the diff with `git diff`. "
 "For example:"
-msgstr ""
+msgstr "使用 `git add .` 添加所有文件，然后用 `git diff` 检查差异。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:156
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:226
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git add .\n"
 "% git diff --staged\n"
-msgstr ""
+msgstr "% git add .\n% git diff --staged\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:159
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:229
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:312
+#, fuzzy
 msgid ""
 "Make sure that all required files are included, then commit the change to "
 "your local branch and generate a patch with `git format-patch`"
-msgstr ""
+msgstr "确保包含所有必需文件，然后将修改提交到本地分支，并使用 `git format-patch` 生成补丁"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:164
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:234
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git commit\n"
 "% git format-patch -U999999 origin/main\n"
-msgstr ""
+msgstr "% git commit\n% git format-patch -U999999 origin/main\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:167
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:237
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:320
+#, fuzzy
 msgid ""
 "The `-U999999` parameter adds as much context to the patch as possible which "
 "makes reviewing easier."
-msgstr ""
+msgstr "`-U999999` 参数会尽可能多地将上下文添加到补丁中，从而便于审查。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:170
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:240
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:323
+#, fuzzy
 msgid ""
 "A patch file is generated as a result of `git format-patch` in the local "
 "directory which will include author identity and email addresses, making it "
 "easier for developers to apply (with `git am`) and give proper credit."
-msgstr ""
+msgstr "`git format-patch` 会在本地目录中生成补丁文件，其中包含作者身份和电子邮件地址，方便开发者应用补丁（使用 `git am`）并正确署名。"
 
 #. type: delimited block = 6
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:175
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:245
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:328
+#, fuzzy
 msgid ""
 "To make it easier for committers to apply the patch on their working copy of "
 "the documentation tree, please generate the [.filename]#.diff# from the base "
 "of your documentation tree."
-msgstr ""
+msgstr "为便于提交者将补丁应用到文档树的工作副本中，请从文档树的根目录生成 [.filename]#.diff# 文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:178
+#, fuzzy
 msgid ""
 "In the example above, changes have been made to the *bsdinstall* portion of "
 "the Handbook."
-msgstr ""
+msgstr "在上面的示例中，修改涉及《手册》的 *bsdinstall* 部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:185
+#, fuzzy
 msgid ""
 "Submit the patch or diff file using the web-based https://bugs.FreeBSD.org/"
 "bugzilla/enter_bug.cgi?product=Documentation[Problem Report] system.  In the "
@@ -402,55 +448,59 @@ msgid ""
 "important details about them.  Use the btn:[Add an attachment] button to "
 "attach the patch or diff file.  Finally, use the btn:[Submit Bug] button to "
 "submit the diff to the Problem Report system."
-msgstr ""
+msgstr "使用基于 Web 的 link:https://bugs.FreeBSD.org/bugzilla/enter_bug.cgi?product=Documentation[问题报告]系统提交补丁或差异文件。在 `Component` 字段中，选择修改所属的文档部分。在 `Summary` 字段中填写问题的__简短描述__。在 `Description` 字段中简要说明修改内容及其重要细节。使用 btn:[Add an attachment] 按钮附加补丁或差异文件。最后，使用 btn:[Submit Bug] 按钮将差异文件提交到问题报告系统。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GNU/Linux installation process"
-msgstr ""
+msgstr "GNU/Linux 安装流程"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:195
+#, fuzzy
 msgid ""
 "Install these packages in apt-based systems like Debian or Ubuntu.  On other "
 "GNU/Linux distributions the package names may change.  Consult your "
 "distribution's package manager if in doubt."
-msgstr ""
+msgstr "在 Debian 或 Ubuntu 等基于 apt 的系统上安装以下软件包。在其他 GNU/Linux 发行版上，软件包名称可能不同。如有疑问，请查阅发行版的软件包管理器。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# apt install asciidoctor hugo ruby-asciidoctor-pdf ruby-rouge git bmake\n"
-msgstr ""
+msgstr "# apt install asciidoctor hugo ruby-asciidoctor-pdf ruby-rouge git bmake\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:212
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:296
+#, fuzzy
 msgid ""
 "Review the output and edit the files to fix any problems shown, then rerun "
 "the command to find any remaining problems.  Repeat until all of the errors "
 "are resolved."
-msgstr ""
+msgstr "检查输出并编辑文件以修复其中显示的问题，然后重新运行命令以查找其他问题。重复此过程，直到解决所有错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:214
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:298
+#, fuzzy
 msgid ""
 "Always build and test the changes before submitting them. Running `bmake` in "
 "the `documentation` or `website` subdirectories will generate the "
 "documentation in HTML format."
-msgstr ""
+msgstr "提交前务必构建并测试修改。在 `documentation` 或 `website` 子目录中运行 `bmake` 会生成 HTML 格式的文档。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% bmake run LOCALBASE=/usr\n"
-msgstr ""
+msgstr "% bmake run LOCALBASE=/usr\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:253
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:336
+#, fuzzy
 msgid ""
 "Submit the patch or diff file using the web-based https://bugs.FreeBSD.org/"
 "bugzilla/enter_bug.cgi?product=Documentation[Problem Report] system.  If "
@@ -460,149 +510,163 @@ msgid ""
 "the _Keywords_ field.  Use the btn:[Add an attachment] button to attach the "
 "patch or diff file.  Finally, use the btn:[Submit Bug] button to submit your "
 "diff to the problem report system."
-msgstr ""
+msgstr "使用基于 Web 的 link:https://bugs.FreeBSD.org/bugzilla/enter_bug.cgi?product=Documentation[问题报告]系统提交补丁或差异文件。如果使用 Web 表单，请在 Summary 字段中填写问题的__简短描述__。将 Component 设为 `Documentation`。在 Description 字段中简要说明问题，并在 _Summary_ 字段中填写说明；在 _Keywords_ 字段中添加 _patch_。使用 btn:[Add an attachment] 按钮附加补丁或差异文件。最后，使用 btn:[Submit Bug] 按钮将差异文件提交到问题报告系统。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "macOS(R) installation process"
-msgstr ""
+msgstr "macOS(R) 安装流程"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:262
+#, fuzzy
 msgid ""
 "Install these packages using link:https://brew.sh/[Homebrew] and link:"
 "https://rubygems.org/[RubyGem]."
-msgstr ""
+msgstr "使用 link:https://brew.sh/[Homebrew] 和 link:https://rubygems.org/[RubyGem] 安装以下软件包。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ brew install hugo ruby git bmake\n"
-msgstr ""
+msgstr "$ brew install hugo ruby git bmake\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:269
+#, fuzzy
 msgid "Add Ruby to the Path."
-msgstr ""
+msgstr "将 Ruby 添加到 Path 中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "$ echo 'export PATH=\"$(brew --prefix ruby)/bin:$PATH\"' >> ~/.zshrc\n"
 "$ echo 'export PATH=\"$(brew --prefix hugo)/bin:$PATH\"' >> ~/.zshrc\n"
 "$ echo 'export GEM_PATH=\"$(gem environment gemdir)\"' >> ~/.zshrc\n"
 "$ echo 'export PATH=\"${GEM_PATH}/bin:$PATH\"' >> ~/.zshrc\n"
 "$ source ~/.zshrc\n"
-msgstr ""
+msgstr "$ echo 'export PATH=\"$(brew --prefix ruby)/bin:$PATH\"' >> ~/.zshrc\n$ echo 'export PATH=\"$(brew --prefix hugo)/bin:$PATH\"' >> ~/.zshrc\n$ echo 'export GEM_PATH=\"$(gem environment gemdir)\"' >> ~/.zshrc\n$ echo 'export PATH=\"${GEM_PATH}/bin:$PATH\"' >> ~/.zshrc\n$ source ~/.zshrc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:279
+#, fuzzy
 msgid "Install the rouge package using RubyGem."
-msgstr ""
+msgstr "使用 RubyGem 安装 rouge 软件包。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ sudo gem install rouge asciidoctor asciidoctor-pdf asciidoctor-epub3\n"
-msgstr ""
+msgstr "$ sudo gem install rouge asciidoctor asciidoctor-pdf asciidoctor-epub3\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ git clone https://git.FreeBSD.org/doc.git ~/doc\n"
-msgstr ""
+msgstr "$ git clone https://git.FreeBSD.org/doc.git ~/doc\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ bmake run USE_RUBYGEMS=YES RUBY_CMD=\"$(brew --prefix ruby)/bin/ruby\" HUGO_CMD=\"$(brew --prefix hugo)/bin/hugo\"\n"
-msgstr ""
+msgstr "$ bmake run USE_RUBYGEMS=YES RUBY_CMD=\"$(brew --prefix ruby)/bin/ruby\" HUGO_CMD=\"$(brew --prefix hugo)/bin/hugo\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Documentation Set"
-msgstr ""
+msgstr "FreeBSD 文档集"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:342
+#, fuzzy
 msgid "The FDP is responsible for four categories of FreeBSD documentation."
-msgstr ""
+msgstr "FDP 负责四类 FreeBSD 文档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:344
+#, fuzzy
 msgid ""
 "_Handbook_: The Handbook is the comprehensive online resource and reference "
 "for FreeBSD users."
-msgstr ""
+msgstr "__《手册》__：《手册》是 FreeBSD 用户的综合性在线资源和参考资料。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:345
+#, fuzzy
 msgid ""
 "_FAQ_: The FAQ uses a short question and answer format to address questions "
 "that are frequently asked on the various mailing lists and forums devoted to "
 "FreeBSD. This format does not permit long and comprehensive answers."
-msgstr ""
+msgstr "__常见问题解答（FAQ）__：FAQ 采用简短的问答形式，解答 FreeBSD 各个邮件列表和论坛上经常提出的问题。这种形式不适合提供冗长而全面的答案。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:346
+#, fuzzy
 msgid ""
 "_Manual pages_: The English language system manual pages are usually not "
 "written by the FDP, as they are part of the base system. However, the FDP "
 "can reword parts of existing manual pages to make them clearer or to correct "
 "inaccuracies."
-msgstr ""
+msgstr "__手册页__：英文系统手册页通常并非由 FDP 编写，因为它们属于基本系统的一部分。不过，FDP 可以改写现有手册页的部分内容，使其更清晰或纠正不准确之处。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:347
+#, fuzzy
 msgid ""
 "_Web site_: This is the main FreeBSD presence on the web, visible at https://"
 "www.freebsd.org/[https://www.FreeBSD.org/] and many mirrors around the "
 "world. The web site is typically a new user's first exposure to FreeBSD."
-msgstr ""
+msgstr "__网站__：这是 FreeBSD 在网络上的主要展示平台，可通过 link:https://www.freebsd.org/[https://www.FreeBSD.org/] 及全球众多镜像站点访问。新用户通常首先通过该网站了解 FreeBSD。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:350
+#, fuzzy
 msgid ""
 "Translation teams are responsible for translating the Handbook and web site "
 "into different languages.  Manual pages are not translated at present."
-msgstr ""
+msgstr "翻译团队负责将《手册》和网站翻译成不同语言。目前尚未翻译手册页。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:352
+#, fuzzy
 msgid ""
 "Documentation source for the FreeBSD web site, Handbook, and FAQ is "
 "available in the documentation repository at `https://cgit.freebsd.org/doc/`."
-msgstr ""
+msgstr "FreeBSD 网站、《手册》和 FAQ 的文档源文件可在文档仓库中获取：`https://cgit.freebsd.org/doc/`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:354
+#, fuzzy
 msgid ""
 "Source for manual pages is available in a separate source repository located "
 "at `https://cgit.freebsd.org/src/`."
-msgstr ""
+msgstr "手册页的源文件位于单独的源代码仓库中：`https://cgit.freebsd.org/src/`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:357
+#, fuzzy
 msgid ""
 "Documentation commit messages are visible with `git log`.  Commit messages "
 "are also archived at link:{dev-commits-doc-all}."
-msgstr ""
+msgstr "可以通过 `git log` 查看文档提交消息。提交消息也归档在 link:{dev-commits-doc-all} 中。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:359
+#, fuzzy
 msgid ""
 "Web frontends to both of these repositories are available at https://cgit."
 "freebsd.org/doc/[] and https://cgit.freebsd.org/src/[]."
-msgstr ""
+msgstr "这两个仓库都提供 Web 前端： link:https://cgit.freebsd.org/doc/[] 和 link:https://cgit.freebsd.org/src/[]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/overview/_index.adoc:363
+#, fuzzy
 msgid ""
 "Many people have written tutorials or how-to articles about FreeBSD.  Some "
 "are stored as part of the FDP files.  In other cases, the author has decided "
 "to keep the documentation separate.  The FDP endeavors to provide links to "
 "as much of this external documentation as possible."
-msgstr ""
+msgstr "许多人编写了有关 FreeBSD 的教程或操作指南。有些文件存放在 FDP 文件中；另一些作者则选择单独维护文档。FDP 努力尽可能提供指向这些外部文档的链接。"

@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Advanced networking in FreeBSD:  basics of gateways and routes, CARP, how to configure multiple VLANs on FreeBSD, etc"
-msgstr ""
+msgstr "FreeBSD 中的高级网络：网关和路由基础、CARP、如何在 FreeBSD 上配置多个 VLAN 等"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IV. Network Communication"
-msgstr ""
+msgstr "IV. 网络通信"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1
@@ -72,8 +72,9 @@ msgstr "如何设置 USB 共享。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:61
+#, fuzzy
 msgid "How to set up IEEE(R) 802.11 and Bluetooth(R) devices."
-msgstr ""
+msgstr "如何设置 IEEE(R) 802.11 和 Bluetooth(R) 设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:62
@@ -82,20 +83,23 @@ msgstr "如何用 FreeBSD 做网桥。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:63
+#, fuzzy
 msgid "How to set up network PXE booting."
-msgstr ""
+msgstr "如何设置网络 PXE 启动。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:64
+#, fuzzy
 msgid ""
 "How to enable and utilize the features of the Common Address Redundancy "
 "Protocol (CARP) in FreeBSD."
-msgstr ""
+msgstr "如何在 FreeBSD 中启用和使用通用地址冗余协议（CARP）的功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:65
+#, fuzzy
 msgid "How to configure multiple VLANs on FreeBSD."
-msgstr ""
+msgstr "如何在 FreeBSD 上配置多个 VLAN。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:66
@@ -113,8 +117,9 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:70
+#, fuzzy
 msgid "Understand the basics of the [.filename]#/etc/rc# scripts."
-msgstr ""
+msgstr "了解 [.filename]#/etc/rc# 脚本的基础知识。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:71
@@ -123,24 +128,27 @@ msgstr "熟悉基本网络术语。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:72
+#, fuzzy
 msgid ""
 "Understand basic network configuration on FreeBSD (crossref:network[network,"
 "FreeBSD network])."
-msgstr ""
+msgstr "了解 FreeBSD 上的基本网络配置（crossref:network[network,FreeBSD 网络]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:73
+#, fuzzy
 msgid ""
 "Know how to configure and install a new FreeBSD kernel (crossref:"
 "kernelconfig[kernelconfig,Configuring the FreeBSD Kernel])."
-msgstr ""
+msgstr "了解如何配置和安装新的 FreeBSD 内核（crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:74
+#, fuzzy
 msgid ""
 "Know how to install additional third-party software (crossref:ports[ports,"
 "Installing Applications: Packages and Ports])."
-msgstr ""
+msgstr "了解如何安装额外的第三方软件（crossref:ports[ports,安装应用程序：软件包和 Ports]）。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:76
@@ -150,6 +158,7 @@ msgstr "网关和路由"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:85
+#, fuzzy
 msgid ""
 "_Routing_ is the mechanism that allows a system to find the network path to "
 "another system.  A _route_ is a defined pair of addresses which represent "
@@ -160,7 +169,7 @@ msgid ""
 "There are also three types of gateways: individual hosts, interfaces, also "
 "called links, and Ethernet hardware (MAC) addresses.  Known routes are "
 "stored in a routing table."
-msgstr ""
+msgstr "__路由__是一种机制，使系统能够找到通往另一系统的网络路径。__路由__是由一对地址定义的，这两个地址分别表示“目的地”和“网关”。路由指出，当尝试到达指定目的地时，应通过指定的网关发送数据包。目的地有三种类型：单个主机、子网和“默认”。如果没有其他路由适用，则使用“默认路由”。网关也有三种类型：单个主机、接口（也称为链路）和以太网硬件（MAC）地址。已知路由存储在路由表中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:88
@@ -185,20 +194,21 @@ msgstr "路由基础概念"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:93
+#, fuzzy
 msgid "To view the routing table of a FreeBSD system, use man:netstat[1]:"
-msgstr ""
+msgstr "要查看 FreeBSD 系统的路由表，请使用 man:netstat[1]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% netstat -r\n"
 "Routing tables\n"
-msgstr ""
+msgstr "% netstat -r\nRouting tables\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Internet:\n"
 "Destination      Gateway            Flags     Refs     Use     Netif Expire\n"
@@ -211,7 +221,7 @@ msgid ""
 "host2            0:e0:a8:37:8:1e    UHLW        0        5       lo0 =>\n"
 "host2.example.com link#1            UC          0        0\n"
 "224              link#1             UC          0        0\n"
-msgstr ""
+msgstr "Internet:\nDestination      Gateway            Flags     Refs     Use     Netif Expire\ndefault          outside-gw         UGS        37      418       em0\nlocalhost        localhost          UH          0      181       lo0\ntest0            0:e0:b5:36:cf:4f   UHLW        5    63288       re0     77\n10.20.30.255     link#1             UHLW        1     2421\nexample.com      link#1             UC          0        0\nhost1            0:e0:a8:37:8:1e    UHLW        3     4601       lo0\nhost2            0:e0:a8:37:8:1e    UHLW        0        5       lo0 =>\nhost2.example.com link#1            UC          0        0\n224              link#1             UC          0        0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:113
@@ -256,11 +266,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:124
+#, fuzzy
 msgid ""
 "The default route for a machine which itself is functioning as the gateway "
 "to the outside world will be the gateway machine at the Internet Service "
 "Provider (ISP)."
-msgstr ""
+msgstr "对于本身充当通往外部世界的网关的计算机，其默认路由将指向互联网服务提供商（ISP）的网关计算机。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:125
@@ -270,12 +281,13 @@ msgstr "localhost"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:129
+#, fuzzy
 msgid ""
 "The second route is the `localhost` route.  The interface specified in the "
 "`Netif` column for `localhost` is [.filename]#lo0#, also known as the "
 "loopback device.  This indicates that all traffic for this destination "
 "should be internal, rather than sending it out over the network."
-msgstr ""
+msgstr "第二条路由是 `localhost` 路由。`localhost` 对应的 `Netif` 列中指定的接口是 [.filename]#lo0#，也称为回环设备。这表示发往此目的地的所有流量都应在本机内部传输，而不是通过网络发送出去。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:130
@@ -285,6 +297,7 @@ msgstr "MAC address"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:136
+#, fuzzy
 msgid ""
 "The addresses beginning with `0:e0:` are MAC addresses.  FreeBSD will "
 "automatically identify any hosts, `test0` in the example, on the local "
@@ -295,7 +308,7 @@ msgid ""
 "deleted.  These hosts are identified using the Routing Information Protocol "
 "(RIP), which calculates routes to local hosts based upon a shortest path "
 "determination."
-msgstr ""
+msgstr "以 `0:e0:` 开头的地址是 MAC 地址。FreeBSD 会自动识别本地以太网上的主机（此例中的 `test0`），并通过以太网接口 [.filename]#re0# 添加到该主机的路由。这类路由有超时时间，显示在 `Expire` 列中；如果主机在指定时间内没有响应，则会使用该超时时间。发生这种情况时，通往该主机的路由会自动删除。这些主机通过路由信息协议（RIP）识别；该协议根据最短路径计算到本地主机的路由。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:137
@@ -305,20 +318,22 @@ msgstr "subnet"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:141
+#, fuzzy
 msgid ""
 "FreeBSD will automatically add subnet routes for the local subnet.  In this "
 "example, `10.20.30.255` is the broadcast address for the subnet `10.20.30` "
 "and `example.com` is the domain name associated with that subnet.  The "
 "designation `link#1` refers to the first Ethernet card in the machine."
-msgstr ""
+msgstr "FreeBSD 会自动为本地子网添加子网路由。在此例中，`10.20.30.255` 是子网 `10.20.30` 的广播地址，而 `example.com` 是与该子网关联的域名。`link#1` 表示计算机上的第一块以太网卡。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:144
+#, fuzzy
 msgid ""
 "Local network hosts and local subnets have their routes automatically "
 "configured by a daemon called man:routed[8].  If it is not running, only "
 "routes which are statically defined by the administrator will exist."
-msgstr ""
+msgstr "本地网络主机和本地子网的路由由名为 man:routed[8] 的守护进程自动配置。如果该进程未运行，则只会有管理员静态定义的路由。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:145
@@ -340,13 +355,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:152
+#, fuzzy
 msgid ""
 "The two `host2` lines represent aliases which were created using man:"
 "ifconfig[8].  The `=>` symbol after the [.filename]#lo0# interface says that "
 "an alias has been set in addition to the loopback address.  Such routes only "
 "show up on the host that supports the alias and all other hosts on the local "
 "network will have a `link#1` line for such routes."
-msgstr ""
+msgstr "两条 `host2` 记录表示使用 man:ifconfig[8] 创建的别名。[.filename]#lo0# 接口后面的 `=>` 符号表示除回环地址之外还设置了一个别名。这类路由只会显示在支持该别名的主机上；本地网络上的其他主机则会为这类路由显示 `link#1` 记录。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:153
@@ -356,16 +372,18 @@ msgstr "224"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:155
+#, fuzzy
 msgid "The final line (destination subnet `224`) deals with multicasting."
-msgstr ""
+msgstr "最后一行（目的子网 `224`）与多播有关。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:158
+#, fuzzy
 msgid ""
 "Various attributes of each route can be seen in the `Flags` column.  "
 "crossref:advanced-networking[routeflags,Commonly Seen Routing Table Flags] "
 "summarizes some of these flags and their meanings:"
-msgstr ""
+msgstr "每条路由的各种属性可在 `Flags` 列中查看。crossref:advanced-networking[routeflags,常见路由表标志]总结了其中一些标志及其含义："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:160
@@ -375,106 +393,107 @@ msgstr "常见路由表标记"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flag"
-msgstr ""
+msgstr "标志"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Purpose"
-msgstr ""
+msgstr "用途"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "U"
-msgstr ""
+msgstr "U"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The route is active (up)."
-msgstr ""
+msgstr "路由处于活动状态（已启用）。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "H"
-msgstr ""
+msgstr "H"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The route destination is a single host."
-msgstr ""
+msgstr "路由目的地是单个主机。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "G"
-msgstr ""
+msgstr "G"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Send anything for this destination on to this gateway, which will figure out from there where to send it."
-msgstr ""
+msgstr "将发往此目的地的所有数据发送到此网关，由它决定下一步的转发位置。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This route was statically configured."
-msgstr ""
+msgstr "此路由是静态配置的。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Clones a new route based upon this route for machines to connect to. This type of route is normally used for local networks."
-msgstr ""
+msgstr "基于此路由克隆出一条新路由，供计算机连接使用。这类路由通常用于本地网络。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The route was auto-configured based upon a local area network (clone) route."
-msgstr ""
+msgstr "此路由是基于本地网络（克隆）路由自动配置的。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "L"
-msgstr ""
+msgstr "L"
 
 #. type: Table
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Route involves references to Ethernet (link) hardware."
-msgstr ""
+msgstr "路由涉及以太网（链路）硬件的引用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:189
+#, fuzzy
 msgid ""
 "On a FreeBSD system, the default route can be defined in [.filename]#/etc/rc."
 "conf# by specifying the IP address of the default gateway:"
-msgstr ""
+msgstr "在 FreeBSD 系统上，可以在 [.filename]#/etc/rc.conf# 中指定默认网关的 IP 地址来定义默认路由："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:193
@@ -484,22 +503,24 @@ msgstr "defaultrouter=\"10.20.30.1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:196
+#, fuzzy
 msgid "It is also possible to manually add the route using `route`:"
-msgstr ""
+msgstr "也可以使用 `route` 手动添加路由："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# route add default 10.20.30.1\n"
-msgstr ""
+msgstr "# route add default 10.20.30.1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:204
+#, fuzzy
 msgid ""
 "Note that manually added routes will not survive a reboot.  For more "
 "information on manual manipulation of network routing tables, refer to man:"
 "route[8]."
-msgstr ""
+msgstr "请注意，手动添加的路由在重新启动后不会保留。有关手动操作网络路由表的更多信息，请参阅 man:route[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:206
@@ -547,10 +568,11 @@ msgstr "gateway_enable=\"YES\"          # Set to YES if this host will be a gate
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:222
+#, fuzzy
 msgid ""
 "To enable routing now, set the man:sysctl[8] variable `net.inet.ip."
 "forwarding` to `1`.  To stop routing, reset this variable to `0`."
-msgstr ""
+msgstr "要立即启用路由，请将 man:sysctl[8] 变量 `net.inet.ip.forwarding` 设为 `1`。要停止路由，请将此变量重置为 `0`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:226
@@ -574,13 +596,14 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:232
+#, fuzzy
 msgid ""
 "For large networks, static routes quickly become unscalable.  FreeBSD comes "
 "with the standard BSD routing daemon man:routed[8], which provides the "
 "routing protocols RIP, versions 1 and 2, and IRDP.  Support for the BGP and "
 "OSPF routing protocols can be installed using the package:net/quagga[] "
 "package or port."
-msgstr ""
+msgstr "对于大型网络，静态路由很快就会变得难以扩展。FreeBSD 自带标准的 BSD 路由守护进程 man:routed[8]，它提供 RIP（版本 1 和 2）及 IRDP 路由协议。可以通过 package:net/quagga[] 软件包或 Ports 安装对 BGP 和 OSPF 路由协议的支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:235
@@ -589,37 +612,39 @@ msgstr "请考虑以下网络："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "static-routes.png"
-msgstr ""
+msgstr "static-routes.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:241
+#, fuzzy
 msgid ""
 "In this scenario, `RouterA` is a FreeBSD machine that is acting as a router "
 "to the rest of the Internet.  It has a default route set to `10.0.0.1` which "
 "allows it to connect with the outside world.  `RouterB` is already "
 "configured to use `192.168.1.1` as its default gateway."
-msgstr ""
+msgstr "在此情景中，`RouterA` 是一台充当通往互联网其余部分的路由器的 FreeBSD 计算机。它设置了指向 `10.0.0.1` 的默认路由，因此可以连接到外部网络。`RouterB` 已配置为使用 `192.168.1.1` 作为其默认网关。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:243
+#, fuzzy
 msgid ""
 "Before adding any static routes, the routing table on `RouterA` looks like "
 "this:"
-msgstr ""
+msgstr "添加任何静态路由之前，`RouterA` 上的路由表如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% netstat -nr\n"
 "Routing tables\n"
-msgstr ""
+msgstr "% netstat -nr\nRouting tables\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Internet:\n"
 "Destination        Gateway            Flags    Refs      Use  Netif  Expire\n"
@@ -627,29 +652,31 @@ msgid ""
 "127.0.0.1          127.0.0.1          UH          0        6    lo0\n"
 "10.0.0.0/24        link#1             UC          0        0    xl0\n"
 "192.168.1.0/24     link#2             UC          0        0    xl1\n"
-msgstr ""
+msgstr "Internet:\nDestination        Gateway            Flags    Refs      Use  Netif  Expire\ndefault            10.0.0.1           UGS         0    49378    xl0\n127.0.0.1          127.0.0.1          UH          0        6    lo0\n10.0.0.0/24        link#1             UC          0        0    xl0\n192.168.1.0/24     link#2             UC          0        0    xl1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:259
+#, fuzzy
 msgid ""
 "With the current routing table, `RouterA` does not have a route to the "
 "`192.168.2.0/24` network.  The following command adds the `Internal Net 2` "
 "network to ``RouterA``'s routing table using `192.168.1.2` as the next hop:"
-msgstr ""
+msgstr "根据当前路由表，`RouterA` 没有到达 `192.168.2.0/24` 网络的路由。以下命令使用 `192.168.1.2` 作为下一跳，将 `Internal Net 2` 网络添加到 ``RouterA`` 的路由表中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# route add -net 192.168.2.0/24 192.168.1.2\n"
-msgstr ""
+msgstr "# route add -net 192.168.2.0/24 192.168.1.2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:268
+#, fuzzy
 msgid ""
 "Now, `RouterA` can reach any host on the `192.168.2.0/24` network.  However, "
 "the routing information will not persist if the FreeBSD system reboots.  If "
 "a static route needs to be persistent, add it to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "现在，`RouterA` 可以到达 `192.168.2.0/24` 网络上的任何主机。但是，如果 FreeBSD 系统重新启动，路由信息将不会保留。如果需要持久化静态路由，请将其添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:274
@@ -665,19 +692,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:278
+#, fuzzy
 msgid ""
 "The `static_routes` configuration variable is a list of strings separated by "
 "a space, where each string references a route name.  The variable "
 "`route_internalnet2` contains the static route for that route name."
-msgstr ""
+msgstr "配置变量 `static_routes` 是一个以空格分隔的字符串列表，每个字符串对应一个路由名称。变量 `route_internalnet2` 包含该路由名称对应的静态路由。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:281
+#, fuzzy
 msgid ""
 "Using more than one string in `static_routes` creates multiple static "
 "routes.  The following shows an example of adding static routes for the "
 "`192.168.0.0/24` and `192.168.1.0/24` networks:"
-msgstr ""
+msgstr "在 `static_routes` 中使用多个字符串即可创建多条静态路由。以下示例展示了如何为 `192.168.0.0/24` 和 `192.168.1.0/24` 网络添加静态路由："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:287
@@ -769,12 +798,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:308
+#, fuzzy
 msgid ""
 "When using `traceroute`, include the address of the remote host to connect "
 "to.  The output will show the gateway hosts along the path of the attempt, "
 "eventually either reaching the target host, or terminating because of a lack "
 "of connection.  For more information, refer to man:traceroute[8]."
-msgstr ""
+msgstr "使用 `traceroute` 时，请指定要连接的远程主机地址。输出会显示尝试连接时经过的网关主机，直到到达目标主机，或因连接失败而终止。更多信息请参阅 man:traceroute[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:310
@@ -807,6 +837,7 @@ msgstr "options MROUTING\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:325
+#, fuzzy
 msgid ""
 "The multicast routing daemon, mrouted can be installed using the package:net/"
 "mrouted[] package or port.  This daemon implements the DVMRP multicast "
@@ -814,62 +845,68 @@ msgid ""
 "mrouted.conf# in order to set up the tunnels and DVMRP.  The installation of "
 "mrouted also installs map-mbone and mrinfo, as well as their associated man "
 "pages.  Refer to these for configuration examples."
-msgstr ""
+msgstr "可以通过 package:net/mrouted[] 软件包或 Ports 安装多播路由守护进程 mrouted。此守护进程实现 DVMRP 多播路由协议；要设置隧道和 DVMRP，请编辑 [.filename]#/usr/local/etc/mrouted.conf#。安装 mrouted 时还会安装 map-mbone 和 mrinfo，以及它们对应的手册页。请参阅这些手册页中的配置示例。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:330
+#, fuzzy
 msgid ""
 "DVMRP has largely been replaced by the PIM protocol in many multicast "
 "installations.  Refer to man:pim[4] for more information."
-msgstr ""
+msgstr "在许多多播部署中，DVMRP 已基本被 PIM 协议取代。更多信息请参阅 man:pim[4]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Virtual Hosts"
-msgstr ""
+msgstr "虚拟主机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:337
+#, fuzzy
 msgid ""
 "A common use of FreeBSD is virtual site hosting, where one server appears to "
 "the network as many servers.  This is achieved by assigning multiple network "
 "addresses to a single interface."
-msgstr ""
+msgstr "FreeBSD 的一种常见用途是虚拟站点托管，即让一台服务器在网络上表现为多台服务器。这可以通过为单个接口分配多个网络地址来实现。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:340
+#, fuzzy
 msgid ""
 "A given network interface has one \"real\" address, and may have any number "
 "of \"alias\" addresses.  These aliases are normally added by placing alias "
 "entries in [.filename]#/etc/rc.conf#, as seen in this example:"
-msgstr ""
+msgstr "给定的网络接口有一个“真实”地址，并且可以有任意数量的“别名”地址。通常，只需在 [.filename]#/etc/rc.conf# 中添加别名条目即可设置这些别名，如以下示例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_fxp0_alias0=\"inet xxx.xxx.xxx.xxx netmask xxx.xxx.xxx.xxx\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_fxp0_alias0=\"inet xxx.xxx.xxx.xxx netmask xxx.xxx.xxx.xxx\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:348
+#, fuzzy
 msgid ""
 "Alias entries must start with `alias__0__` using a sequential number such as "
 "`alias0`, `alias1`, and so on.  The configuration process will stop at the "
 "first missing number."
-msgstr ""
+msgstr "别名条目必须以 `alias__0__` 开头，并使用连续编号，例如 `alias0`、`alias1` 等。配置过程会在遇到第一个缺失的编号时停止。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:352
+#, fuzzy
 msgid ""
 "The calculation of alias netmasks is important.  For a given interface, "
 "there must be one address which correctly represents the network's netmask.  "
 "Any other addresses which fall within this network must have a netmask of "
 "all ``1``s, expressed as either `255.255.255.255` or `0xffffffff`."
-msgstr ""
+msgstr "正确计算别名的子网掩码很重要。对于给定接口，必须有一个地址使用能够正确表示网络子网掩码的掩码。此网络中的其他地址都必须使用全为 ``1`` 的子网掩码，可表示为 `255.255.255.255` 或 `0xffffffff`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:357
+#, fuzzy
 msgid ""
 "For example, consider the case where the `fxp0` interface is connected to "
 "two networks: `10.1.1.0` with a netmask of `255.255.255.0` and `202.0.75.16` "
@@ -879,7 +916,7 @@ msgid ""
 "a real netmask.  All the rest (`10.1.1.2` through `10.1.1.5` and "
 "`202.0.75.18` through `202.0.75.20`) must be configured with a netmask of "
 "`255.255.255.255`."
-msgstr ""
+msgstr "例如，假设接口 `fxp0` 连接到两个网络：`10.1.1.0`，子网掩码为 `255.255.255.0`；以及 `202.0.75.16`，子网掩码为 `255.255.255.240`。系统需要配置为使用 `10.1.1.1` 到 `10.1.1.5` 以及 `202.0.75.17` 到 `202.0.75.20` 这些地址。每个网络范围中的第一个地址才应使用真实子网掩码。其余地址（`10.1.1.2` 到 `10.1.1.5` 以及 `202.0.75.18` 到 `202.0.75.20`）都必须配置为使用子网掩码 `255.255.255.255`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:359
@@ -893,7 +930,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysrc ifconfig_fxp0=\"inet 10.1.1.1 netmask 255.255.255.0\"\n"
 "# sysrc ifconfig_fxp0_alias0=\"inet 10.1.1.2 netmask 255.255.255.255\"\n"
@@ -904,70 +941,76 @@ msgid ""
 "# sysrc ifconfig_fxp0_alias5=\"inet 202.0.75.18 netmask 255.255.255.255\"\n"
 "# sysrc ifconfig_fxp0_alias6=\"inet 202.0.75.19 netmask 255.255.255.255\"\n"
 "# sysrc ifconfig_fxp0_alias7=\"inet 202.0.75.20 netmask 255.255.255.255\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_fxp0=\"inet 10.1.1.1 netmask 255.255.255.0\"\n# sysrc ifconfig_fxp0_alias0=\"inet 10.1.1.2 netmask 255.255.255.255\"\n# sysrc ifconfig_fxp0_alias1=\"inet 10.1.1.3 netmask 255.255.255.255\"\n# sysrc ifconfig_fxp0_alias2=\"inet 10.1.1.4 netmask 255.255.255.255\"\n# sysrc ifconfig_fxp0_alias3=\"inet 10.1.1.5 netmask 255.255.255.255\"\n# sysrc ifconfig_fxp0_alias4=\"inet 202.0.75.17 netmask 255.255.255.240\"\n# sysrc ifconfig_fxp0_alias5=\"inet 202.0.75.18 netmask 255.255.255.255\"\n# sysrc ifconfig_fxp0_alias6=\"inet 202.0.75.19 netmask 255.255.255.255\"\n# sysrc ifconfig_fxp0_alias7=\"inet 202.0.75.20 netmask 255.255.255.255\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:375
+#, fuzzy
 msgid ""
 "A simpler way to express this is with a space-separated list of IP address "
 "ranges.  The first address will be given the indicated subnet mask and the "
 "additional addresses will have a subnet mask of `255.255.255.255`."
-msgstr ""
+msgstr "更简洁的表达方式是使用以空格分隔的 IP 地址范围列表。第一个地址将使用指定的子网掩码，其他地址的子网掩码则为 `255.255.255.255`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:379
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc ifconfig_fxp0_aliases=\"inet 10.1.1.1-5/24 inet 202.0.75.17-20/28\"\n"
-msgstr ""
+msgstr "# sysrc ifconfig_fxp0_aliases=\"inet 10.1.1.1-5/24 inet 202.0.75.17-20/28\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wireless Advanced Authentication"
-msgstr ""
+msgstr "无线网络高级身份验证"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:386
+#, fuzzy
 msgid ""
 "FreeBSD supports different ways of connecting to a wireless network.  This "
 "section describes how to perform advanced authentication to a Wireless "
 "Network."
-msgstr ""
+msgstr "FreeBSD 支持多种连接无线网络的方式。本节介绍如何对无线网络执行高级身份验证。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:388
+#, fuzzy
 msgid ""
 "To make a connection and basic authentication to a wireless network the "
 "section crossref:network[wireless-authentication,Connection and "
 "Authentication to a Wireless Network] in the Network Chapter describes how "
 "to do it."
-msgstr ""
+msgstr "要连接无线网络并进行基本身份验证，请参阅网络章节中的 crossref:network[wireless-authentication,连接并验证无线网络身份]，其中介绍了具体方法。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:390
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "WPA with EAP-TLS"
-msgstr ""
+msgstr "使用 EAP-TLS 的 WPA"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:395
+#, fuzzy
 msgid ""
 "The second way to use WPA is with an 802.1X backend authentication server.  "
 "In this case, WPA is called WPA Enterprise to differentiate it from the less "
 "secure WPA Personal.  Authentication in WPA Enterprise is based on the "
 "Extensible Authentication Protocol (EAP)."
-msgstr ""
+msgstr "使用 WPA 的第二种方式是配合 802.1X 后端身份验证服务器。在这种情况下，WPA 称为 WPA Enterprise，以区别于安全性较低的 WPA Personal。WPA Enterprise 的身份验证基于可扩展身份验证协议（EAP）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:399
+#, fuzzy
 msgid ""
 "EAP does not come with an encryption method.  Instead, EAP is embedded "
 "inside an encrypted tunnel.  There are many EAP authentication methods, but "
 "EAP-TLS, EAP-TTLS, and EAP-PEAP are the most common."
-msgstr ""
+msgstr "EAP 本身不提供加密方法，而是嵌入加密隧道中。EAP 有多种身份验证方法，其中最常见的是 EAP-TLS、EAP-TTLS 和 EAP-PEAP。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:403
+#, fuzzy
 msgid ""
 "EAP with Transport Layer Security (EAP-TLS) is a well-supported wireless "
 "authentication protocol since it was the first EAP method to be certified by "
@@ -978,7 +1021,7 @@ msgid ""
 "method, both the authentication server and wireless client authenticate each "
 "other by presenting their respective certificates, and then verify that "
 "these certificates were signed by the organization's CA."
-msgstr ""
+msgstr "自传输层安全性（EAP-TLS）是一种得到广泛支持的无线身份验证协议，因为它是首个获得 link:http://www.wi-fi.org/[Wi-Fi Alliance] 认证的 EAP 方法。EAP-TLS 需要三个证书才能运行：安装在所有机器上的证书颁发机构（CA）证书、身份验证服务器的服务器证书，以及每个无线客户端各自的客户端证书。在此 EAP 方法中，身份验证服务器和无线客户端都通过出示各自的证书来相互验证，然后验证这些证书是否由组织的 CA 签发。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:405
@@ -992,7 +1035,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "network={\n"
 "  ssid=\"freebsdap\" <.>\n"
@@ -1005,68 +1048,78 @@ msgid ""
 "  private_key=\"/etc/certs/clientkey.pem\" <.>\n"
 "  private_key_passwd=\"freebsdmallclient\" <.>\n"
 "}\n"
-msgstr ""
+msgstr "network={\n  ssid=\"freebsdap\" <.>\n  proto=RSN  <.>\n  key_mgmt=WPA-EAP <.>\n  eap=TLS <.>\n  identity=\"loader\" <.>\n  ca_cert=\"/etc/certs/cacert.pem\" <.>\n  client_cert=\"/etc/certs/clientcert.pem\" <.>\n  private_key=\"/etc/certs/clientkey.pem\" <.>\n  private_key_passwd=\"freebsdmallclient\" <.>\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:422
+#, fuzzy
 msgid "This field indicates the network name (SSID)."
-msgstr ""
+msgstr "此字段表示网络名称（SSID）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:423
+#, fuzzy
 msgid "This example uses the RSN IEEE(R) 802.11i protocol, also known as WPA2."
-msgstr ""
+msgstr "此示例使用 RSN IEEE(R) 802.11i 协议，也称为 WPA2。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:424
+#, fuzzy
 msgid ""
 "The `key_mgmt` line refers to the key management protocol to use. In this "
 "example, it is WPA using EAP authentication."
-msgstr ""
+msgstr "`key_mgmt` 行指定要使用的密钥管理协议。在此示例中，使用 WPA 和 EAP 身份验证。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:425
+#, fuzzy
 msgid "This field indicates the EAP method for the connection."
-msgstr ""
+msgstr "此字段表示连接所使用的 EAP 方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:426
+#, fuzzy
 msgid "The `identity` field contains the identity string for EAP."
-msgstr ""
+msgstr "`identity` 字段包含 EAP 的身份字符串。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:427
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:491
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:561
+#, fuzzy
 msgid ""
 "The `ca_cert` field indicates the pathname of the CA certificate file. This "
 "file is needed to verify the server certificate."
-msgstr ""
+msgstr "`ca_cert` 字段表示 CA 证书文件的路径。验证服务器证书时需要此文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:428
+#, fuzzy
 msgid ""
 "The `client_cert` line gives the pathname to the client certificate file. "
 "This certificate is unique to each wireless client of the network."
-msgstr ""
+msgstr "`client_cert` 行给出客户端证书文件的路径。此证书对于网络中的每个无线客户端都是唯一的。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:429
+#, fuzzy
 msgid ""
 "The `private_key` field is the pathname to the client certificate private "
 "key file."
-msgstr ""
+msgstr "`private_key` 字段是客户端证书私钥文件的路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:430
+#, fuzzy
 msgid ""
 "The `private_key_passwd` field contains the passphrase for the private key."
-msgstr ""
+msgstr "`private_key_passwd` 字段包含私钥的口令。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:432
+#, fuzzy
 msgid "Then, add the following lines to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "然后，将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:437
@@ -1126,26 +1179,28 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:462
+#, fuzzy
 msgid ""
 "It is also possible to bring up the interface manually using man:"
 "wpa_supplicant[8] and man:ifconfig[8]."
-msgstr ""
+msgstr "也可以使用 man:wpa_supplicant[8] 和 man:ifconfig[8] 手动启用该接口。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "WPA with EAP-TTLS"
-msgstr ""
+msgstr "使用 EAP-TTLS 的 WPA"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:470
+#, fuzzy
 msgid ""
 "With EAP-TLS, both the authentication server and the client need a "
 "certificate.  With EAP-TTLS, a client certificate is optional.  This method "
 "is similar to a web server which creates a secure SSL tunnel even if "
 "visitors do not have client-side certificates.  EAP-TTLS uses an encrypted "
 "TLS tunnel for safe transport of the authentication data."
-msgstr ""
+msgstr "使用 EAP-TLS 时，身份验证服务器和客户端都需要证书。使用 EAP-TTLS 时，客户端证书是可选的。这种方法类似于 Web 服务器：即使访问者没有客户端证书，也会建立安全的 SSL 隧道。EAP-TTLS 使用加密的 TLS 隧道安全地传输身份验证数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:472
@@ -1159,7 +1214,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:485
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "network={\n"
 "  ssid=\"freebsdap\"\n"
@@ -1171,41 +1226,46 @@ msgid ""
 "  ca_cert=\"/etc/certs/cacert.pem\" <.>\n"
 "  phase2=\"auth=MD5\" <.>\n"
 "}\n"
-msgstr ""
+msgstr "network={\n  ssid=\"freebsdap\"\n  proto=RSN\n  key_mgmt=WPA-EAP\n  eap=TTLS <.>\n  identity=\"test\" <.>\n  password=\"test\" <.>\n  ca_cert=\"/etc/certs/cacert.pem\" <.>\n  phase2=\"auth=MD5\" <.>\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:488
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:558
+#, fuzzy
 msgid "This field specifies the EAP method for the connection."
-msgstr ""
+msgstr "此字段指定连接所使用的 EAP 方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:489
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:559
+#, fuzzy
 msgid ""
 "The `identity` field contains the identity string for EAP authentication "
 "inside the encrypted TLS tunnel."
-msgstr ""
+msgstr "`identity` 字段包含在加密 TLS 隧道内进行 EAP 身份验证时使用的身份字符串。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:490
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:560
+#, fuzzy
 msgid ""
 "The `password` field contains the passphrase for the EAP authentication."
-msgstr ""
+msgstr "`password` 字段包含 EAP 身份验证所用的口令。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:492
+#, fuzzy
 msgid ""
 "This field specifies the authentication method used in the encrypted TLS "
 "tunnel. In this example, EAP with MD5-Challenge is used. The \"inner "
 "authentication\" phase is often called \"phase2\"."
-msgstr ""
+msgstr "此字段指定在加密 TLS 隧道中使用的身份验证方法。在此示例中，使用带 MD5 挑战的 EAP。“内部身份验证”阶段通常称为“phase2”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:494
+#, fuzzy
 msgid "Next, add the following lines to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "接下来，将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:522
@@ -1250,27 +1310,30 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:525
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "WPA with EAP-PEAP"
-msgstr ""
+msgstr "使用 EAP-PEAP 的 WPA"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:531
+#, fuzzy
 msgid ""
 "PEAPv0/EAP-MSCHAPv2 is the most common PEAP method.  In this chapter, the "
 "term PEAP is used to refer to that method."
-msgstr ""
+msgstr "PEAPv0/EAP-MSCHAPv2 是最常见的 PEAP 方法。本章中，术语 PEAP 指的就是此方法。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:535
+#, fuzzy
 msgid ""
 "Protected EAP (PEAP) is designed as an alternative to EAP-TTLS and is the "
 "most used EAP standard after EAP-TLS.  In a network with mixed operating "
 "systems, PEAP should be the most supported standard after EAP-TLS."
-msgstr ""
+msgstr "受保护的 EAP（PEAP）旨在作为 EAP-TTLS 的替代方案，是仅次于 EAP-TLS 的最常用 EAP 标准。在操作系统混用的网络中，PEAP 应是仅次于 EAP-TLS、支持最广泛的标准。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:539
+#, fuzzy
 msgid ""
 "PEAP is similar to EAP-TTLS as it uses a server-side certificate to "
 "authenticate clients by creating an encrypted TLS tunnel between the client "
@@ -1279,18 +1342,19 @@ msgid ""
 "broadcasts the username in the clear and only the password is sent in the "
 "encrypted TLS tunnel.  EAP-TTLS will use the TLS tunnel for both the "
 "username and password."
-msgstr ""
+msgstr "PEAP 与 EAP-TTLS 类似，它使用服务器端证书对客户端进行身份验证，并在客户端与身份验证服务器之间建立加密的 TLS 隧道，以保护后续的身份验证信息交换。PEAP 身份验证与 EAP-TTLS 不同：它会以明文广播用户名，只有密码在加密的 TLS 隧道中传输。EAP-TTLS 则会通过 TLS 隧道传输用户名和密码。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:541
+#, fuzzy
 msgid ""
 "Add the following lines to [.filename]#/etc/wpa_supplicant.conf# to "
 "configure the EAP-PEAP related settings:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/etc/wpa_supplicant.conf#，以配置与 EAP-PEAP 相关的设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:555
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "network={\n"
 "  ssid=\"freebsdap\"\n"
@@ -1303,29 +1367,32 @@ msgid ""
 "  phase1=\"peaplabel=0\" <.>\n"
 "  phase2=\"auth=MSCHAPV2\" <.>\n"
 "}\n"
-msgstr ""
+msgstr "network={\n  ssid=\"freebsdap\"\n  proto=RSN\n  key_mgmt=WPA-EAP\n  eap=PEAP <.>\n  identity=\"test\" <.>\n  password=\"test\" <.>\n  ca_cert=\"/etc/certs/cacert.pem\" <.>\n  phase1=\"peaplabel=0\" <.>\n  phase2=\"auth=MSCHAPV2\" <.>\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:562
+#, fuzzy
 msgid ""
 "This field contains the parameters for the first phase of authentication, "
 "the TLS tunnel. According to the authentication server used, specify a "
 "specific label for authentication. Most of the time, the label will be "
 "\"client EAP encryption\" which is set by using `peaplabel=0`. More "
 "information can be found in man:wpa_supplicant.conf[5]."
-msgstr ""
+msgstr "此字段包含身份验证第一阶段（TLS 隧道）的参数。根据所用的身份验证服务器，指定特定的身份验证标签。大多数情况下，标签为“client EAP encryption”，可通过设置 `peaplabel=0` 来指定。更多信息请参阅 man:wpa_supplicant.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:563
+#, fuzzy
 msgid ""
 "This field specifies the authentication protocol used in the encrypted TLS "
 "tunnel. In the case of PEAP, it is `auth=MSCHAPV2`."
-msgstr ""
+msgstr "此字段指定加密 TLS 隧道中使用的身份验证协议。对于 PEAP，该值为 `auth=MSCHAPV2`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:565
+#, fuzzy
 msgid "Add the following to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "将以下内容添加到 [.filename]#/etc/rc.conf#："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:573
@@ -1341,20 +1408,22 @@ msgstr "Ad-hoc 模式"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:600
+#, fuzzy
 msgid ""
 "IBSS mode, also called ad-hoc mode, is designed for point to point "
 "connections.  For example, to establish an ad-hoc network between the "
 "machines `A` and `B`, choose two IP addresses and a SSID."
-msgstr ""
+msgstr "IBSS 模式也称为自组模式，专为点对点连接而设计。例如，要在机器 `A` 和 `B` 之间建立自组网络，请选择两个 IP 地址和一个 SSID。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:602
+#, fuzzy
 msgid "On `A`:"
-msgstr ""
+msgstr "在 `A` 上："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:616
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 create wlandev ath0 wlanmode adhoc\n"
 "# ifconfig wlan0 inet 192.168.0.1 netmask 255.255.255.0 ssid freebsdap\n"
@@ -1367,39 +1436,42 @@ msgid ""
 "\t  ssid freebsdap channel 2 (2417 Mhz 11g) bssid 02:11:95:c3:0d:ac\n"
 "\t  country US ecm authmode OPEN privacy OFF txpower 21.5 scanvalid 60\n"
 "\t  protmode CTS wme burst\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev ath0 wlanmode adhoc\n# ifconfig wlan0 inet 192.168.0.1 netmask 255.255.255.0 ssid freebsdap\n# ifconfig wlan0\n  wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n\t  ether 00:11:95:c3:0d:ac\n\t  inet 192.168.0.1 netmask 0xffffff00 broadcast 192.168.0.255\n\t  media: IEEE 802.11 Wireless Ethernet autoselect mode 11g <adhoc>\n\t  status: running\n\t  ssid freebsdap channel 2 (2417 Mhz 11g) bssid 02:11:95:c3:0d:ac\n\t  country US ecm authmode OPEN privacy OFF txpower 21.5 scanvalid 60\n\t  protmode CTS wme burst\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:619
+#, fuzzy
 msgid ""
 "The `adhoc` parameter indicates that the interface is running in IBSS mode."
-msgstr ""
+msgstr "`adhoc` 参数表示该接口正运行于 IBSS 模式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:621
+#, fuzzy
 msgid "`B` should now be able to detect `A`:"
-msgstr ""
+msgstr "现在，`B` 应该能够检测到 `A`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:628
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 create wlandev ath0 wlanmode adhoc\n"
 "# ifconfig wlan0 up scan\n"
 "  SSID/MESH ID    BSSID              CHAN RATE   S:N     INT CAPS\n"
 "  freebsdap       02:11:95:c3:0d:ac    2   54M -64:-96  100 IS   WME\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev ath0 wlanmode adhoc\n# ifconfig wlan0 up scan\n  SSID/MESH ID    BSSID              CHAN RATE   S:N     INT CAPS\n  freebsdap       02:11:95:c3:0d:ac    2   54M -64:-96  100 IS   WME\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:632
+#, fuzzy
 msgid ""
 "The `I` in the output confirms that `A` is in ad-hoc mode.  Now, configure "
 "`B` with a different IP address:"
-msgstr ""
+msgstr "输出中的 `I` 确认 `A` 处于自组模式。现在，为 `B` 配置不同的 IP 地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 inet 192.168.0.2 netmask 255.255.255.0 ssid freebsdap\n"
 "# ifconfig wlan0\n"
@@ -1411,12 +1483,13 @@ msgid ""
 "\t  ssid freebsdap channel 2 (2417 Mhz 11g) bssid 02:11:95:c3:0d:ac\n"
 "\t  country US ecm authmode OPEN privacy OFF txpower 21.5 scanvalid 60\n"
 "\t  protmode CTS wme burst\n"
-msgstr ""
+msgstr "# ifconfig wlan0 inet 192.168.0.2 netmask 255.255.255.0 ssid freebsdap\n# ifconfig wlan0\n  wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n\t  ether 00:11:95:d5:43:62\n\t  inet 192.168.0.2 netmask 0xffffff00 broadcast 192.168.0.255\n\t  media: IEEE 802.11 Wireless Ethernet autoselect mode 11g <adhoc>\n\t  status: running\n\t  ssid freebsdap channel 2 (2417 Mhz 11g) bssid 02:11:95:c3:0d:ac\n\t  country US ecm authmode OPEN privacy OFF txpower 21.5 scanvalid 60\n\t  protmode CTS wme burst\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:648
+#, fuzzy
 msgid "Both `A` and `B` are now ready to exchange information."
-msgstr ""
+msgstr "现在，`A` 和 `B` 都已准备好交换信息。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:650
@@ -1445,19 +1518,21 @@ msgstr "基本设置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:660
+#, fuzzy
 msgid ""
 "Before configuring a FreeBSD machine as an AP, the kernel must be configured "
 "with the appropriate networking support for the wireless card as well as the "
 "security protocols being used.  For more details, see crossref:advanced-"
 "networking[network-wireless-ap-basic, Basic Settings]."
-msgstr ""
+msgstr "将 FreeBSD 机器配置为 AP 之前，必须为无线网卡以及所使用的安全协议配置适当的内核网络支持。更多详情请参阅 crossref:advanced-networking[network-wireless-ap-basic, 基本设置]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:665
+#, fuzzy
 msgid ""
 "The NDIS driver wrapper for Windows(R) drivers does not currently support AP "
 "operation.  Only native FreeBSD wireless drivers support AP mode."
-msgstr ""
+msgstr "用于 Windows(R) 驱动程序的 NDIS 驱动程序包装器目前不支持 AP 操作。只有 FreeBSD 原生无线驱动程序支持 AP 模式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:668
@@ -1470,22 +1545,23 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:675
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 create wlandev ath0\n"
 "# ifconfig wlan0 list caps\n"
 "drivercaps=6f85edc1<STA,FF,TURBOP,IBSS,HOSTAP,AHDEMO,TXPMGT,SHSLOT,SHPREAMBLE,MONITOR,MBSS,WPA1,WPA2,BURST,WME,WDS,BGSCAN,TXFRAG>\n"
 "cryptocaps=1f<WEP,TKIP,AES,AES_CCM,TKIPMIC>\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev ath0\n# ifconfig wlan0 list caps\ndrivercaps=6f85edc1<STA,FF,TURBOP,IBSS,HOSTAP,AHDEMO,TXPMGT,SHSLOT,SHPREAMBLE,MONITOR,MBSS,WPA1,WPA2,BURST,WME,WDS,BGSCAN,TXFRAG>\ncryptocaps=1f<WEP,TKIP,AES,AES_CCM,TKIPMIC>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:681
+#, fuzzy
 msgid ""
 "This output displays the card's capabilities.  The `HOSTAP` word confirms "
 "that this wireless card can act as an AP.  Various supported ciphers are "
 "also listed: WEP, TKIP, and AES.  This information indicates which security "
 "protocols can be used on the AP."
-msgstr ""
+msgstr "此输出显示网卡的功能。`HOSTAP` 一词确认此无线网卡可以充当 AP。输出还列出了支持的各种密码算法：WEP、TKIP 和 AES。这些信息表明 AP 可以使用哪些安全协议。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:683
@@ -1499,9 +1575,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:687
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig wlan0 destroy\n"
-msgstr ""
+msgstr "# ifconfig wlan0 destroy\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:690
@@ -1511,22 +1587,23 @@ msgstr "接着， 在配置其它参数前， 以正确的选项重新生成设�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:695
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 create wlandev ath0 wlanmode hostap\n"
 "# ifconfig wlan0 inet 192.168.0.1 netmask 255.255.255.0 ssid freebsdap mode 11g channel 1\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev ath0 wlanmode hostap\n# ifconfig wlan0 inet 192.168.0.1 netmask 255.255.255.0 ssid freebsdap mode 11g channel 1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:698
+#, fuzzy
 msgid ""
 "Use man:ifconfig[8] again to see the status of the [.filename]#wlan0# "
 "interface:"
-msgstr ""
+msgstr "再次使用 man:ifconfig[8] 查看 [.filename]#wlan0# 接口的状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:710
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0\n"
 "  wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
@@ -1537,14 +1614,15 @@ msgid ""
 "\t  ssid freebsdap channel 1 (2412 Mhz 11g) bssid 00:11:95:c3:0d:ac\n"
 "\t  country US ecm authmode OPEN privacy OFF txpower 21.5 scanvalid 60\n"
 "\t  protmode CTS wme burst dtimperiod 1 -dfs\n"
-msgstr ""
+msgstr "# ifconfig wlan0\n  wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n\t  ether 00:11:95:c3:0d:ac\n\t  inet 192.168.0.1 netmask 0xffffff00 broadcast 192.168.0.255\n\t  media: IEEE 802.11 Wireless Ethernet autoselect mode 11g <hostap>\n\t  status: running\n\t  ssid freebsdap channel 1 (2412 Mhz 11g) bssid 00:11:95:c3:0d:ac\n\t  country US ecm authmode OPEN privacy OFF txpower 21.5 scanvalid 60\n\t  protmode CTS wme burst dtimperiod 1 -dfs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:713
+#, fuzzy
 msgid ""
 "The `hostap` parameter indicates the interface is running in the host-based "
 "access point mode."
-msgstr ""
+msgstr "`hostap` 参数表示该接口正运行于基于主机的接入点模式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:715
@@ -1558,12 +1636,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:721
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "wlans_ath0=\"wlan0\"\n"
 "create_args_wlan0=\"wlanmode hostap\"\n"
 "ifconfig_wlan0=\"inet 192.168.0.1 netmask 255.255.255.0 ssid freebsdap mode 11g channel 1\"\n"
-msgstr ""
+msgstr "wlans_ath0=\"wlan0\"\ncreate_args_wlan0=\"wlanmode hostap\"\nifconfig_wlan0=\"inet 192.168.0.1 netmask 255.255.255.0 ssid freebsdap mode 11g channel 1\"\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:723
@@ -1584,29 +1662,31 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:729
+#, fuzzy
 msgid ""
 "Once the AP is configured, initiate a scan from another wireless machine to "
 "find the AP:"
-msgstr ""
+msgstr "配置好 AP 后，从另一台无线机器发起扫描以查找 AP："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:736
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 create wlandev ath0\n"
 "# ifconfig wlan0 up scan\n"
 "SSID/MESH ID    BSSID              CHAN RATE   S:N     INT CAPS\n"
 "freebsdap       00:11:95:c3:0d:ac    1   54M -66:-96  100 ES   WME\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev ath0\n# ifconfig wlan0 up scan\nSSID/MESH ID    BSSID              CHAN RATE   S:N     INT CAPS\nfreebsdap       00:11:95:c3:0d:ac    1   54M -66:-96  100 ES   WME\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:739
+#, fuzzy
 msgid "The client machine found the AP and can be associated with it:"
-msgstr ""
+msgstr "客户端机器已找到 AP，现在可以与其关联："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:753
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0 inet 192.168.0.2 netmask 255.255.255.0 ssid freebsdap\n"
 "# ifconfig wlan0\n"
@@ -1619,37 +1699,40 @@ msgid ""
 "\t  country US ecm authmode OPEN privacy OFF txpower 21.5 bmiss 7\n"
 "\t  scanvalid 60 bgscan bgscanintvl 300 bgscanidle 250 roam:rssi 7\n"
 "\t  roam:rate 5 protmode CTS wme burst\n"
-msgstr ""
+msgstr "# ifconfig wlan0 inet 192.168.0.2 netmask 255.255.255.0 ssid freebsdap\n# ifconfig wlan0\n  wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n\t  ether 00:11:95:d5:43:62\n\t  inet 192.168.0.2 netmask 0xffffff00 broadcast 192.168.0.255\n\t  media: IEEE 802.11 Wireless Ethernet OFDM/54Mbps mode 11g\n\t  status: associated\n\t  ssid freebsdap channel 1 (2412 Mhz 11g) bssid 00:11:95:c3:0d:ac\n\t  country US ecm authmode OPEN privacy OFF txpower 21.5 bmiss 7\n\t  scanvalid 60 bgscan bgscanintvl 300 bgscanidle 250 roam:rssi 7\n\t  roam:rate 5 protmode CTS wme burst\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:756
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "WPA2 Host-based Access Point"
-msgstr ""
+msgstr "基于主机的 WPA2 接入点"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:761
+#, fuzzy
 msgid ""
 "This section focuses on setting up a FreeBSD access point using the WPA2 "
 "security protocol.  More details regarding WPA and the configuration of WPA-"
 "based wireless clients can be found in crossref:advanced-networking[network-"
 "wireless-wpa-eap-tls, WPA with EAP-TLS]."
-msgstr ""
+msgstr "本节介绍如何使用 WPA2 安全协议设置 FreeBSD 接入点。有关 WPA 以及基于 WPA 的无线客户端配置的更多详情，请参阅 crossref:advanced-networking[network-wireless-wpa-eap-tls, 使用 EAP-TLS 的 WPA]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:763
+#, fuzzy
 msgid ""
 "The man:hostapd[8] daemon is used to deal with client authentication and key "
 "management on the WPA2-enabled AP."
-msgstr ""
+msgstr "man:hostapd[8] 守护进程用于处理启用了 WPA2 的 AP 上的客户端身份验证和密钥管理。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:766
+#, fuzzy
 msgid ""
 "The following configuration operations are performed on the FreeBSD machine "
 "acting as the AP.  Once the AP is correctly working, man:hostapd[8] can be "
 "automatically started at boot with this line in [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "以下配置操作在充当 AP 的 FreeBSD 机器上执行。AP 正常工作后，可在 [.filename]#/etc/rc.conf# 中添加以下行，以便在启动时自动启动 man:hostapd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:770
@@ -1659,33 +1742,36 @@ msgstr "hostapd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:774
+#, fuzzy
 msgid ""
 "Before trying to configure man:hostapd[8], first configure the basic "
 "settings introduced in crossref:advanced-networking[network-wireless-ap-"
 "basic, Basic Settings]."
-msgstr ""
+msgstr "尝试配置 man:hostapd[8] 之前，请先配置 crossref:advanced-networking[network-wireless-ap-basic, 基本设置] 中介绍的基本设置。"
 
 #. type: Title =====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "WPA2-PSK"
-msgstr ""
+msgstr "WPA2-PSK"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:778
+#, fuzzy
 msgid ""
 "WPA2-PSK is intended for small networks where the use of a backend "
 "authentication server is not possible or desired."
-msgstr ""
+msgstr "WPA2-PSK 适用于无法或不希望使用后端身份验证服务器的小型网络。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:780
+#, fuzzy
 msgid "The configuration is done in [.filename]#/etc/hostapd.conf#:"
-msgstr ""
+msgstr "在 [.filename]#/etc/hostapd.conf# 中进行配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:792
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "interface=wlan0                  <.>\n"
 "debug=1                          <.>\n"
@@ -1696,7 +1782,7 @@ msgid ""
 "wpa_passphrase=freebsdmall       <.>\n"
 "wpa_key_mgmt=WPA-PSK             <.>\n"
 "wpa_pairwise=CCMP                <.>\n"
-msgstr ""
+msgstr "interface=wlan0                  <.>\ndebug=1                          <.>\nctrl_interface=/var/run/hostapd  <.>\nctrl_interface_group=wheel       <.>\nssid=freebsdap                   <.>\nwpa=2                            <.>\nwpa_passphrase=freebsdmall       <.>\nwpa_key_mgmt=WPA-PSK             <.>\nwpa_pairwise=CCMP                <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:795
@@ -1708,70 +1794,79 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:796
+#, fuzzy
 msgid ""
 "Level of verbosity used during the execution of man:hostapd[8]. A value of "
 "`1` represents the minimal level."
-msgstr ""
+msgstr "执行 man:hostapd[8] 时使用的详细程度。值为 `1` 表示最低级别。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:797
+#, fuzzy
 msgid ""
 "Pathname of the directory used by man:hostapd[8] to store domain socket "
 "files for communication with external programs such as man:hostapd_cli[8]. "
 "The default value is used in this example."
-msgstr ""
+msgstr "man:hostapd[8] 用于存储与 man:hostapd_cli[8] 等外部程序通信的域套接字文件的目录路径。此示例使用默认值。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:798
+#, fuzzy
 msgid "The group allowed to access the control interface files."
-msgstr ""
+msgstr "允许访问控制接口文件的组。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:799
+#, fuzzy
 msgid "The wireless network name, or SSID, that will appear in wireless scans."
-msgstr ""
+msgstr "将在无线扫描中显示的无线网络名称，即 SSID。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:800
+#, fuzzy
 msgid ""
 "Enable WPA and specify which WPA authentication protocol will be required. A "
 "value of `2` configures the AP for WPA2 and is recommended. Set to `1` only "
 "if the obsolete WPA is required."
-msgstr ""
+msgstr "启用 WPA 并指定所需的 WPA 身份验证协议。值为 `2` 时将 AP 配置为 WPA2，建议使用此值。仅在需要使用已过时的 WPA 时才设置为 `1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:801
+#, fuzzy
 msgid "ASCII passphrase for WPA authentication."
-msgstr ""
+msgstr "用于 WPA 身份验证的 ASCII 口令。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:802
+#, fuzzy
 msgid "The key management protocol to use. This example sets WPA-PSK."
-msgstr ""
+msgstr "要使用的密钥管理协议。此示例设置为 WPA-PSK。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:803
+#, fuzzy
 msgid ""
 "Encryption algorithms accepted by the access point. In this example, only "
 "the CCMP (AES) cipher is accepted. CCMP is an alternative to TKIP and is "
 "strongly preferred when possible. TKIP should be allowed only when there are "
 "stations incapable of using CCMP."
-msgstr ""
+msgstr "接入点接受的加密算法。此示例仅接受 CCMP（AES）密码算法。CCMP 是 TKIP 的替代方案，在可能时强烈建议优先使用。只有在存在无法使用 CCMP 的站点时，才应允许 TKIP。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:805
+#, fuzzy
 msgid "The next step is to start man:hostapd[8]:"
-msgstr ""
+msgstr "下一步是启动 man:hostapd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:809
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service hostapd forcestart\n"
-msgstr ""
+msgstr "# service hostapd forcestart\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:826
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0\n"
 "wlan0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
@@ -1786,16 +1881,17 @@ msgid ""
 "\tscanvalid 60 ampdulimit 64k ampdudensity 8 shortgi wme burst\n"
 "\tdtimperiod 1 -dfs\n"
 "\tgroups: wlan\n"
-msgstr ""
+msgstr "# ifconfig wlan0\nwlan0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> metric 0 mtu 1500\n\tether 04:f0:21:16:8e:10\n\tinet6 fe80::6f0:21ff:fe16:8e10%wlan0 prefixlen 64 scopeid 0x9\n\tnd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>\n\tmedia: IEEE 802.11 Wireless Ethernet autoselect mode 11na <hostap>\n\tstatus: running\n\tssid No5ignal channel 36 (5180 MHz 11a ht/40+) bssid 04:f0:21:16:8e:10\n\tcountry US ecm authmode WPA2/802.11i privacy MIXED deftxkey 2\n\tAES-CCM 2:128-bit AES-CCM 3:128-bit txpower 17 mcastrate 6 mgmtrate 6\n\tscanvalid 60 ampdulimit 64k ampdudensity 8 shortgi wme burst\n\tdtimperiod 1 -dfs\ngroups: wlan\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:831
+#, fuzzy
 msgid ""
 "Once the AP is running, the clients can associate with it.  See crossref:"
 "advanced-networking[network-wireless-ap-basic, Basic Settings] for more "
 "details.  It is possible to see the stations associated with the AP using "
 "`ifconfig _wlan0_ list sta`."
-msgstr ""
+msgstr "AP 运行后，客户端即可与其关联。更多详情请参见 crossref:advanced-networking[network-wireless-ap-basic, 基本设置]。可以使用 `ifconfig _wlan0_ list sta` 查看与 AP 关联的站点。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:833
@@ -1805,26 +1901,30 @@ msgstr "USB网络共享"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:837
+#, fuzzy
 msgid ""
 "Many cellphones provide the option to share their data connection over USB "
 "(often called \"tethering\").  This feature uses one of RNDIS, CDC, or a "
 "custom Apple(R) iPhone(R)/iPad(R) protocol."
-msgstr ""
+msgstr "许多手机都可以通过 USB 共享数据连接（通常称为“网络共享”）。此功能使用 RNDIS、CDC 或 Apple(R) iPhone(R)/iPad(R) 专用协议之一。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:839
+#, fuzzy
 msgid "Android(TM) devices generally use the man:urndis[4] driver."
-msgstr ""
+msgstr "Android(TM) 设备通常使用 man:urndis[4] 驱动程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:840
+#, fuzzy
 msgid "Apple(R) devices use the man:ipheth[4] driver."
-msgstr ""
+msgstr "Apple(R) 设备使用 man:ipheth[4] 驱动程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:841
+#, fuzzy
 msgid "Older devices will often use the man:cdce[4] driver."
-msgstr ""
+msgstr "较旧的设备通常使用 man:cdce[4] 驱动程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:843
@@ -1833,20 +1933,21 @@ msgstr "在连接设备之前，将适当的驱动程序加载到内核中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:849
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# kldload if_urndis\n"
 "# kldload if_cdce\n"
 "# kldload if_ipheth\n"
-msgstr ""
+msgstr "# kldload if_urndis\n# kldload if_cdce\n# kldload if_ipheth\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:853
+#, fuzzy
 msgid ""
 "Once the device is attached ``ue``_0_ will be available for use like a "
 "normal network device.  Be sure that the \"USB tethering\" option is enabled "
 "on the device."
-msgstr ""
+msgstr "设备连接后，``ue``_0_ 即可像普通网络设备一样使用。请确保设备上已启用“USB 网络共享”选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:855
@@ -1861,12 +1962,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:861
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if_urndis_load=\"YES\"\n"
 "if_cdce_load=\"YES\"\n"
 "if_ipheth_load=\"YES\"\n"
-msgstr ""
+msgstr "if_urndis_load=\"YES\"\nif_cdce_load=\"YES\"\nif_ipheth_load=\"YES\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:864
@@ -1893,10 +1994,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:872
+#, fuzzy
 msgid ""
 "This section describes the use of a USB Bluetooth dongle on a FreeBSD "
 "system.  It then describes the various Bluetooth protocols and utilities."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上使用 USB 蓝牙适配器，并介绍各种蓝牙协议和实用工具。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:873
@@ -1906,6 +2008,7 @@ msgstr "加载蓝牙支持"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:880
+#, fuzzy
 msgid ""
 "The Bluetooth stack in FreeBSD is implemented using the man:netgraph[4] "
 "framework.  A broad variety of Bluetooth USB dongles is supported by man:"
@@ -1913,21 +2016,22 @@ msgid ""
 "man:ubtbcmfw[4] and man:ng_ubt[4] drivers.  The 3Com Bluetooth PC Card "
 "3CRWB60-A is supported by the man:ng_bt3c[4] driver.  Serial and UART based "
 "Bluetooth devices are supported by man:ng_h4[4] and man:hcseriald[8]."
-msgstr ""
+msgstr "FreeBSD 中的蓝牙协议栈基于 man:netgraph[4] 框架实现。man:ng_ubt[4] 支持多种 USB 蓝牙适配器。基于 Broadcom BCM2033 的蓝牙设备由 man:ubtbcmfw[4] 和 man:ng_ubt[4] 驱动程序支持。3Com Bluetooth PC Card 3CRWB60-A 由 man:ng_bt3c[4] 驱动程序支持。基于串行接口和 UART 的蓝牙设备由 man:ng_h4[4] 和 man:hcseriald[8] 支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:883
+#, fuzzy
 msgid ""
 "Before attaching a device, determine which of the above drivers it uses, "
 "then load the driver.  For example, if the device uses the man:ng_ubt[4] "
 "driver:"
-msgstr ""
+msgstr "连接设备前，请确定它使用上述哪种驱动程序，然后加载该驱动程序。例如，如果设备使用 man:ng_ubt[4] 驱动程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:887
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload ng_ubt\n"
-msgstr ""
+msgstr "# kldload ng_ubt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:890
@@ -1948,11 +2052,12 @@ msgstr "ng_ubt_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:898
+#, fuzzy
 msgid ""
 "Once the driver is loaded, plug in the USB dongle.  If the driver load was "
 "successful, output similar to the following should appear on the console and "
 "in [.filename]#/var/log/messages#:"
-msgstr ""
+msgstr "加载驱动程序后，插入 USB 适配器。如果驱动程序成功加载，控制台和 [.filename]#/var/log/messages# 中应出现类似以下内容的输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:905
@@ -1970,16 +2075,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:910
+#, fuzzy
 msgid ""
 "To start and stop the Bluetooth stack, use its startup script. It is a good "
 "idea to stop the stack before unplugging the device.  Starting the bluetooth "
 "stack might require man:hcsecd[8] to be started.  When starting the stack, "
 "the output should be similar to the following:"
-msgstr ""
+msgstr "使用蓝牙启动脚本启动和停止蓝牙协议栈。拔下设备前最好先停止协议栈。启动蓝牙协议栈可能需要先启动 man:hcsecd[8]。启动协议栈时，输出应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:925
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service bluetooth start ubt0\n"
 "BD_ADDR: 00:02:72:00:d4:1a\n"
@@ -1993,7 +2099,7 @@ msgid ""
 "Number of ACL packets: 8\n"
 "Max. SCO packet size: 64 bytes\n"
 "Number of SCO packets: 8\n"
-msgstr ""
+msgstr "# service bluetooth start ubt0\nBD_ADDR: 00:02:72:00:d4:1a\nFeatures: 0xff 0xff 0xf 00 00 00 00 00\n<3-Slot> <5-Slot> <Encryption> <Slot offset>\n<Timing accuracy> <Switch> <Hold mode> <Sniff mode>\n<Park mode> <RSSI> <Channel quality> <SCO link>\n<HV2 packets> <HV3 packets> <u-law log> <A-law log> <CVSD>\n<Paging scheme> <Power control> <Transparent SCO data>\nMax. ACL packet size: 192 bytes\nNumber of ACL packets: 8\nMax. SCO packet size: 64 bytes\nNumber of SCO packets: 8\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:927
@@ -2003,14 +2109,16 @@ msgstr "寻找其他蓝牙设备"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:932
+#, fuzzy
 msgid ""
 "The Host Controller Interface (HCI) provides a uniform method for accessing "
 "Bluetooth baseband capabilities.  In FreeBSD, a netgraph HCI node is created "
 "for each Bluetooth device.  For more details, refer to man:ng_hci[4]."
-msgstr ""
+msgstr "主机控制器接口（HCI）提供统一的方法来访问蓝牙基带功能。在 FreeBSD 中，每个蓝牙设备都会创建一个 netgraph HCI 节点。更多详情请参见 man:ng_hci[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:939
+#, fuzzy
 msgid ""
 "One of the most common tasks is discovery of Bluetooth devices within RF "
 "proximity.  This operation is called _inquiry_.  Inquiry and other HCI "
@@ -2018,11 +2126,11 @@ msgid ""
 "how to find out which Bluetooth devices are in range.  The list of devices "
 "should be displayed in a few seconds.  Note that a remote device will only "
 "answer the inquiry if it is set to _discoverable_ mode."
-msgstr ""
+msgstr "最常见的任务之一是发现射频范围内的蓝牙设备。此操作称为__查询__。查询及其他 HCI 相关操作通过 man:hccontrol[8] 完成。下面的示例展示了如何查找范围内的蓝牙设备。几秒钟后应显示设备列表。请注意，远程设备只有在设为__可发现__模式时才会响应查询。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:952
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% hccontrol -n ubt0hci inquiry\n"
 "Inquiry result, num_responses=1\n"
@@ -2034,10 +2142,11 @@ msgid ""
 "       Class: 52:02:04\n"
 "       Clock offset: 0x78ef\n"
 "Inquiry complete. Status: No error [00]\n"
-msgstr ""
+msgstr "% hccontrol -n ubt0hci inquiry\nInquiry result, num_responses=1\nInquiry result #0\n       BD_ADDR: 00:80:37:29:19:a4\n       Page Scan Rep. Mode: 0x1\n       Page Scan Period Mode: 00\n       Page Scan Mode: 00\n       Class: 52:02:04\n       Clock offset: 0x78ef\nInquiry complete. Status: No error [00]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:958
+#, fuzzy
 msgid ""
 "The `BD_ADDR` is the unique address of a Bluetooth device, similar to the "
 "MAC address of a network card.  This address is needed for further "
@@ -2045,16 +2154,16 @@ msgid ""
 "name to a `BD_ADDR`.  Information regarding the known Bluetooth hosts is "
 "contained in [.filename]#/etc/bluetooth/hosts#.  The following example shows "
 "how to obtain the human readable name that was assigned to the remote device:"
-msgstr ""
+msgstr "`BD_ADDR` 是蓝牙设备的唯一地址，类似于网卡的 MAC 地址。与设备进一步通信时需要此地址，并且可以为 `BD_ADDR` 指定便于人类阅读的名称。有关已知蓝牙主机的信息保存在 [.filename]#/etc/bluetooth/hosts# 中。以下示例展示了如何获取分配给远程设备的易读名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:964
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% hccontrol -n ubt0hci remote_name_request 00:80:37:29:19:a4\n"
 "BD_ADDR: 00:80:37:29:19:a4\n"
 "Name: Pav's T39\n"
-msgstr ""
+msgstr "% hccontrol -n ubt0hci remote_name_request 00:80:37:29:19:a4\nBD_ADDR: 00:80:37:29:19:a4\nName: Pav's T39\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:968
@@ -2069,11 +2178,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:971
+#, fuzzy
 msgid ""
 "Remote devices can be assigned aliases in [.filename]#/etc/bluetooth/"
 "hosts#.  More information about [.filename]#/etc/bluetooth/hosts# file might "
 "be found in man:bluetooth.hosts[5]."
-msgstr ""
+msgstr "可以在 [.filename]#/etc/bluetooth/hosts# 中为远程设备指定别名。有关 [.filename]#/etc/bluetooth/hosts# 文件的更多信息，请参见 man:bluetooth.hosts[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:974
@@ -2094,16 +2204,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:978
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% hccontrol -n ubt0hci create_connection BT_ADDR\n"
-msgstr ""
+msgstr "% hccontrol -n ubt0hci create_connection BT_ADDR\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:981
+#, fuzzy
 msgid ""
 "`create_connection` accepts `BT_ADDR` as well as host aliases in [."
 "filename]#/etc/bluetooth/hosts#."
-msgstr ""
+msgstr "`create_connection` 接受 `BT_ADDR`，也接受 [.filename]#/etc/bluetooth/hosts# 中的主机别名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:983
@@ -2114,36 +2225,38 @@ msgstr "下面的示例演示如何获取本地设备的活动基带连接列表
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:989
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% hccontrol -n ubt0hci read_connection_list\n"
 "Remote BD_ADDR    Handle Type Mode Role Encrypt Pending Queue State\n"
 "00:80:37:29:19:a4     41  ACL    0 MAST    NONE       0     0 OPEN\n"
-msgstr ""
+msgstr "% hccontrol -n ubt0hci read_connection_list\nRemote BD_ADDR    Handle Type Mode Role Encrypt Pending Queue State\n00:80:37:29:19:a4     41  ACL    0 MAST    NONE       0     0 OPEN\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:993
+#, fuzzy
 msgid ""
 "A _connection handle_ is useful when termination of the baseband connection "
 "is required, though it is normally not required to do this by hand.  The "
 "stack will automatically terminate inactive baseband connections."
-msgstr ""
+msgstr "需要终止基带连接时，__连接句柄__会很有用，不过通常不需要手动执行此操作。协议栈会自动终止不活动的基带连接。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:999
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# hccontrol -n ubt0hci disconnect 41\n"
 "Connection handle: 41\n"
 "Reason: Connection terminated by local host [0x16]\n"
-msgstr ""
+msgstr "# hccontrol -n ubt0hci disconnect 41\nConnection handle: 41\nReason: Connection terminated by local host [0x16]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1003
+#, fuzzy
 msgid ""
 "Type `hccontrol help` for a complete listing of available HCI commands.  "
 "Most of the HCI commands do not require superuser privileges."
-msgstr ""
+msgstr "输入 `hccontrol help` 可查看可用 HCI 命令的完整列表。大多数 HCI 命令不需要超级用户权限。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1004
@@ -2177,12 +2290,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1019
+#, fuzzy
 msgid ""
 "The man:hcsecd[8] daemon is responsible for handling Bluetooth "
 "authentication requests.  The default configuration file is [.filename]#/etc/"
 "bluetooth/hcsecd.conf#.  An example section for a cellular phone with the "
 "PIN code set to `1234` is shown below:"
-msgstr ""
+msgstr "man:hcsecd[8] 守护进程负责处理蓝牙身份验证请求。默认配置文件为 [.filename]#/etc/bluetooth/hcsecd.conf#。下面展示了一个 PIN 码设为 `1234` 的手机配置示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1028
@@ -2204,6 +2318,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1038
+#, fuzzy
 msgid ""
 "The only limitation on PIN codes is length.  Some devices, such as Bluetooth "
 "headsets, may have a fixed PIN code built in.  The `-d` switch forces man:"
@@ -2214,14 +2329,15 @@ msgid ""
 "PIN code listed in [.filename]#hcsecd.conf#.  Now the computer and the "
 "remote device are paired.  Alternatively, pairing can be initiated on the "
 "remote device."
-msgstr ""
+msgstr "PIN 码唯一的限制是长度。某些设备（例如蓝牙耳机）可能内置固定 PIN 码。`-d` 开关会强制 man:hcsecd[8] 在前台运行，便于查看运行情况。将远程设备设为接收配对请求，然后发起与该设备的蓝牙连接。远程设备应提示配对已接受，并要求输入 PIN 码。输入 [.filename]#hcsecd.conf# 中列出的相同 PIN 码。现在计算机与远程设备已完成配对。也可以在远程设备上发起配对。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1040
+#, fuzzy
 msgid ""
 "The following line can be added to [.filename]#/etc/rc.conf# to configure "
 "man:hcsecd[8] to start automatically on system start:"
-msgstr ""
+msgstr "可以将以下行添加到 [.filename]#/etc/rc.conf#，以配置 man:hcsecd[8] 在系统启动时自动运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1044
@@ -2231,8 +2347,9 @@ msgstr "hcsecd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1047
+#, fuzzy
 msgid "The following is a sample of the man:hcsecd[8] daemon output:"
-msgstr ""
+msgstr "以下是 man:hcsecd[8] 守护进程输出示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1056
@@ -2254,9 +2371,9 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1058
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Network Access with PPP Profiles"
-msgstr ""
+msgstr "使用 PPP 配置文件进行网络访问"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1062
@@ -2273,45 +2390,50 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1065
+#, fuzzy
 msgid ""
 "Network access with a PPP profile can be used to provide LAN access for a "
 "single Bluetooth device or multiple Bluetooth devices.  It can also provide "
 "PC to PC connection using PPP networking over serial cable emulation."
-msgstr ""
+msgstr "使用 PPP 配置文件进行网络访问，可为一个或多个蓝牙设备提供 LAN 访问。它还可以通过串行电缆仿真上的 PPP 网络实现 PC 到 PC 的连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1069
+#, fuzzy
 msgid ""
 "In FreeBSD, these profiles are implemented with man:ppp[8] and the man:"
 "rfcomm_pppd[8] wrapper which converts a Bluetooth connection into something "
 "PPP can use.  Before a profile can be used, a new PPP label must be created "
 "in [.filename]#/etc/ppp/ppp.conf#.  Consult man:rfcomm_pppd[8] for examples."
-msgstr ""
+msgstr "在 FreeBSD 中，这些配置文件由 man:ppp[8] 和 man:rfcomm_pppd[8] 包装程序实现，后者会将蓝牙连接转换为 PPP 可用的形式。使用配置文件前，必须在 [.filename]#/etc/ppp/ppp.conf# 中创建新的 PPP 标签。示例请参见 man:rfcomm_pppd[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1071
+#, fuzzy
 msgid ""
 "In this example, man:rfcomm_pppd[8] is used to open a connection to a remote "
 "device with a `BD_ADDR` of `00:80:37:29:19:a4` on a DUNRFCOMM channel:"
-msgstr ""
+msgstr "在此示例中，使用 man:rfcomm_pppd[8] 通过 DUNRFCOMM 通道连接到 `BD_ADDR` 为 `00:80:37:29:19:a4` 的远程设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1075
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# rfcomm_pppd -a 00:80:37:29:19:a4 -c -C dun -l rfcomm-dialup\n"
-msgstr ""
+msgstr "# rfcomm_pppd -a 00:80:37:29:19:a4 -c -C dun -l rfcomm-dialup\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1080
+#, fuzzy
 msgid ""
 "The actual channel number will be obtained from the remote device using the "
 "SDP protocol.  It is possible to specify the RFCOMM channel by hand, and in "
 "this case man:rfcomm_pppd[8] will not perform the SDP query.  Use man:"
 "sdpcontrol[8] to find out the RFCOMM channel on the remote device."
-msgstr ""
+msgstr "实际通道号将通过 SDP 协议从远程设备获取。也可以手动指定 RFCOMM 通道；在这种情况下，man:rfcomm_pppd[8] 不会执行 SDP 查询。使用 man:sdpcontrol[8] 查找远程设备上的 RFCOMM 通道。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1086
+#, fuzzy
 msgid ""
 "In order to provide network access with the PPPLAN service, man:sdpd[8] must "
 "be running and a new entry for LAN clients must be created in [.filename]#/"
@@ -2319,13 +2441,13 @@ msgid ""
 "the RFCOMMPPP server on a valid RFCOMM channel number.  The RFCOMMPPP server "
 "will automatically register the Bluetooth LAN service with the local SDP "
 "daemon.  The example below shows how to start the RFCOMMPPP server."
-msgstr ""
+msgstr "要通过 PPPLAN 服务提供网络访问，必须运行 man:sdpd[8]，并在 [.filename]#/etc/ppp/ppp.conf# 中为 LAN 客户端创建新条目。示例请参见 man:rfcomm_pppd[8]。最后，在有效的 RFCOMM 通道号上启动 RFCOMMPPP 服务器。RFCOMMPPP 服务器会自动向本地 SDP 守护进程注册蓝牙 LAN 服务。以下示例展示了如何启动 RFCOMMPPP 服务器。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1090
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# rfcomm_pppd -s -C 7 -l rfcomm-server\n"
-msgstr ""
+msgstr "# rfcomm_pppd -s -C 7 -l rfcomm-server\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1092
@@ -2342,9 +2464,9 @@ msgstr "本节概述了各种蓝牙协议、功能和相关程序。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1096
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Logical Link Control and Adaptation Protocol (L2CAP)"
-msgstr ""
+msgstr "逻辑链路控制与适配协议（L2CAP）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1100
@@ -2361,6 +2483,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1106
+#, fuzzy
 msgid ""
 "L2CAP is based around the concept of _channels_.  A channel is a logical "
 "connection on top of a baseband connection, where each channel is bound to a "
@@ -2369,35 +2492,37 @@ msgid ""
 "Each L2CAP packet received on a channel is directed to the appropriate "
 "higher level protocol.  Multiple channels can share the same baseband "
 "connection."
-msgstr ""
+msgstr "L2CAP 基于__通道__的概念。通道是基带连接之上的逻辑连接，每个通道以多对一的方式绑定到单个协议。多个通道可以绑定到同一协议，但一个通道不能绑定到多个协议。通道上收到的每个 L2CAP 数据包都会被定向到相应的更高层协议。多个通道可以共享同一个基带连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1111
+#, fuzzy
 msgid ""
 "In FreeBSD, a netgraph L2CAP node is created for each Bluetooth device.  "
 "This node is normally connected to the downstream Bluetooth HCI node and "
 "upstream Bluetooth socket nodes.  The default name for the L2CAP node is "
 "\"devicel2cap\".  For more details refer to man:ng_l2cap[4]."
-msgstr ""
+msgstr "在 FreeBSD 中，每个蓝牙设备都会创建一个 netgraph L2CAP 节点。此节点通常连接到下游的蓝牙 HCI 节点和上游的蓝牙套接字节点。L2CAP 节点的默认名称为 \"devicel2cap\"。更多详情请参见 man:ng_l2cap[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1114
+#, fuzzy
 msgid ""
 "A useful command is man:l2ping[8], which can be used to ping other devices.  "
 "Some Bluetooth implementations might not return all of the data sent to "
 "them, so `0 bytes` in the following example is normal."
-msgstr ""
+msgstr "一个实用的命令是 man:l2ping[8]，可用于 ping 其他设备。某些蓝牙实现可能不会返回发送给它们的所有数据，因此下面示例中的 `0 bytes` 属于正常情况。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# l2ping -a 00:80:37:29:19:a4\n"
 "0 bytes from 0:80:37:29:19:a4 seq_no=0 time=48.633 ms result=0\n"
 "0 bytes from 0:80:37:29:19:a4 seq_no=1 time=37.551 ms result=0\n"
 "0 bytes from 0:80:37:29:19:a4 seq_no=2 time=28.324 ms result=0\n"
 "0 bytes from 0:80:37:29:19:a4 seq_no=3 time=46.150 ms result=0\n"
-msgstr ""
+msgstr "# l2ping -a 00:80:37:29:19:a4\n0 bytes from 0:80:37:29:19:a4 seq_no=0 time=48.633 ms result=0\n0 bytes from 0:80:37:29:19:a4 seq_no=1 time=37.551 ms result=0\n0 bytes from 0:80:37:29:19:a4 seq_no=2 time=28.324 ms result=0\n0 bytes from 0:80:37:29:19:a4 seq_no=3 time=46.150 ms result=0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1126
@@ -2413,7 +2538,7 @@ msgstr "下面的示例演示如何获取本地设备的活动基带连接列表
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% l2control -a 00:02:72:00:d4:1a read_channel_list\n"
 "L2CAP channels:\n"
@@ -2423,19 +2548,20 @@ msgid ""
 "L2CAP connections:\n"
 "Remote BD_ADDR    Handle Flags Pending State\n"
 "00:07:e0:00:0b:ca     41 O           0 OPEN\n"
-msgstr ""
+msgstr "% l2control -a 00:02:72:00:d4:1a read_channel_list\nL2CAP channels:\nRemote BD_ADDR     SCID/ DCID   PSM  IMTU/ OMTU State\n00:07:e0:00:0b:ca    66/   64     3   132/  672 OPEN\n% l2control -a 00:02:72:00:d4:1a read_connection_list\nL2CAP connections:\nRemote BD_ADDR    Handle Flags Pending State\n00:07:e0:00:0b:ca     41 O           0 OPEN\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1142
+#, fuzzy
 msgid ""
 "Another diagnostic tool is man:btsockstat[1].  It is similar to man:"
 "netstat[1], but for Bluetooth network-related data structures.  The example "
 "below shows the same logical connection as man:l2control[8] above."
-msgstr ""
+msgstr "另一个诊断工具是 man:btsockstat[1]。它类似于 man:netstat[1]，但用于查看蓝牙相关的网络数据结构。下面的示例展示了与上文 man:l2control[8] 相同的逻辑连接。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% btsockstat\n"
 "Active L2CAP sockets\n"
@@ -2447,13 +2573,13 @@ msgid ""
 "Active RFCOMM sockets\n"
 "PCB      Recv-Q Send-Q Local address     Foreign address   Chan DLCI State\n"
 "c2e8bc80      0    250 00:02:72:00:d4:1a 00:07:e0:00:0b:ca 3    6    OPEN\n"
-msgstr ""
+msgstr "% btsockstat\nActive L2CAP sockets\nPCB      Recv-Q Send-Q Local address/PSM       Foreign address   CID   State\nc2afe900      0      0 00:02:72:00:d4:1a/3     00:07:e0:00:0b:ca 66    OPEN\nActive RFCOMM sessions\nL2PCB    PCB      Flag MTU   Out-Q DLCs State\nc2afe900 c2b53380 1    127   0     Yes  OPEN\nActive RFCOMM sockets\nPCB      Recv-Q Send-Q Local address     Foreign address   Chan DLCI State\nc2e8bc80      0    250 00:02:72:00:d4:1a 00:07:e0:00:0b:ca 3    6    OPEN\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Radio Frequency Communication (RFCOMM)"
-msgstr ""
+msgstr "射频通信（RFCOMM）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1162
@@ -2502,14 +2628,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1171
+#, fuzzy
 msgid "In FreeBSD, RFCOMM is implemented at the Bluetooth sockets layer."
-msgstr ""
+msgstr "在 FreeBSD 中，RFCOMM 在蓝牙套接字层实现。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Service Discovery Protocol (SDP)"
-msgstr ""
+msgstr "服务发现协议（SDP）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1176
@@ -2550,25 +2677,27 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1187
+#, fuzzy
 msgid ""
 "Normally, a SDP client searches for services based on some desired "
 "characteristics of the services.  However, there are times when it is "
 "desirable to discover which types of services are described by an SDP "
 "server's service records without any prior information about the services.  "
 "This process of looking for any offered services is called _browsing_."
-msgstr ""
+msgstr "通常，SDP 客户端会根据服务的某些特征来搜索服务。但有时需要在没有任何预先服务信息的情况下，发现 SDP 服务器服务记录中描述的服务类型。查找所有可提供服务的过程称为__浏览__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1190
+#, fuzzy
 msgid ""
 "The Bluetooth SDP server, man:sdpd[8], and command line client, man:"
 "sdpcontrol[8], are included in the standard FreeBSD installation.  The "
 "following example shows how to perform a SDP browse query."
-msgstr ""
+msgstr "标准 FreeBSD 安装中包含蓝牙 SDP 服务器 man:sdpd[8] 和命令行客户端 man:sdpcontrol[8]。以下示例展示了如何执行 SDP 浏览查询。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% sdpcontrol -a 00:01:03:fc:6e:ec browse\n"
 "Record Handle: 00000000\n"
@@ -2578,20 +2707,20 @@ msgid ""
 "        L2CAP (0x0100)\n"
 "                Protocol specific parameter #1: u/int/uuid16 1\n"
 "                Protocol specific parameter #2: u/int/uuid16 1\n"
-msgstr ""
+msgstr "% sdpcontrol -a 00:01:03:fc:6e:ec browse\nRecord Handle: 00000000\nService Class ID List:\n        Service Discovery Server (0x1000)\nProtocol Descriptor List:\n        L2CAP (0x0100)\n                Protocol specific parameter #1: u/int/uuid16 1\n                Protocol specific parameter #2: u/int/uuid16 1\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Record Handle: 0x00000001\n"
 "Service Class ID List:\n"
 "        Browse Group Descriptor (0x1001)\n"
-msgstr ""
+msgstr "Record Handle: 0x00000001\nService Class ID List:\n        Browse Group Descriptor (0x1001)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Record Handle: 0x00000002\n"
 "Service Class ID List:\n"
@@ -2602,7 +2731,7 @@ msgid ""
 "                Protocol specific parameter #1: u/int8/bool 1\n"
 "Bluetooth Profile Descriptor List:\n"
 "        LAN Access Using PPP (0x1102) ver. 1.0\n"
-msgstr ""
+msgstr "Record Handle: 0x00000002\nService Class ID List:\n        LAN Access Using PPP (0x1102)\nProtocol Descriptor List:\n        L2CAP (0x0100)\n        RFCOMM (0x0003)\n                Protocol specific parameter #1: u/int8/bool 1\nBluetooth Profile Descriptor List:\n        LAN Access Using PPP (0x1102) ver. 1.0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1222
@@ -2622,17 +2751,18 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sdpcontrol -a 00:01:03:fc:6e:ec search OPUSH\n"
-msgstr ""
+msgstr "% sdpcontrol -a 00:01:03:fc:6e:ec search OPUSH\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1230
+#, fuzzy
 msgid ""
 "Offering services on FreeBSD to Bluetooth clients is done with the man:"
 "sdpd[8] server.  The following line can be added to [.filename]#/etc/rc."
 "conf#:"
-msgstr ""
+msgstr "在 FreeBSD 上向蓝牙客户端提供服务，需要使用 man:sdpd[8] 服务器。可以将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1234
@@ -2642,42 +2772,45 @@ msgstr "sdpd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1237
+#, fuzzy
 msgid "Then the man:sdpd[8] daemon can be started with:"
-msgstr ""
+msgstr "然后可以使用以下命令启动 man:sdpd[8] 守护进程："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service sdpd start\n"
-msgstr ""
+msgstr "# service sdpd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1246
+#, fuzzy
 msgid ""
 "The local server application that wants to provide a Bluetooth service to "
 "remote clients will register the service with the local SDP daemon.  An "
 "example of such an application is man:rfcomm_pppd[8].  Once started, it will "
 "register the Bluetooth LAN service with the local SDP daemon."
-msgstr ""
+msgstr "需要向远程客户端提供蓝牙服务的本地服务器应用程序，会向本地 SDP 守护进程注册该服务。man:rfcomm_pppd[8] 就是此类应用程序的一个示例。启动后，它会向本地 SDP 守护进程注册蓝牙 LAN 服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1248
+#, fuzzy
 msgid ""
 "The list of services registered with the local SDP server can be obtained by "
 "issuing a SDP browse query via the local control channel:"
-msgstr ""
+msgstr "可以通过本地控制通道执行 SDP 浏览查询，以获取已在本地 SDP 服务器注册的服务列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1252
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sdpcontrol -l browse\n"
-msgstr ""
+msgstr "# sdpcontrol -l browse\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OBEX Object Push (OPUSH)"
-msgstr ""
+msgstr "OBEX 对象推送（OPUSH）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1258
@@ -2696,13 +2829,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1260
+#, fuzzy
 msgid ""
 "The OBEX server and client are implemented by obexapp, which can be "
 "installed using the package:comms/obexapp[] package or port."
-msgstr ""
+msgstr "OBEX 服务器和客户端由 obexapp 实现，可通过 package:comms/obexapp[] 软件包或移植安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1268
+#, fuzzy
 msgid ""
 "The OBEX client is used to push and/or pull objects from the OBEX server.  "
 "An example object is a business card or an appointment.  The OBEX client can "
@@ -2713,11 +2848,11 @@ msgid ""
 "example of an OBEX session where the device information object is pulled "
 "from the cellular phone, and a new object, the business card, is pushed into "
 "the phone's directory."
-msgstr ""
+msgstr "OBEX 客户端用于从 OBEX 服务器推送和／或拉取对象。对象的示例包括名片或约会。OBEX 客户端可以通过 SDP 从远程设备获取 RFCOMM 通道号。为此，可以指定服务名称，而不是 RFCOMM 通道号。支持的服务名称包括：`IrMC`、`FTRN` 和 `OPUSH`。也可以将 RFCOMM 通道指定为数字。下面是一个 OBEX 会话示例：从手机拉取设备信息对象，并将新对象（名片）推送到手机的目录中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% obexapp -a 00:80:37:29:19:a4 -C IrMC\n"
 "obex> get telecom/devinfo.txt devinfo-t39.txt\n"
@@ -2726,10 +2861,11 @@ msgid ""
 "Success, response: OK, Success (0x20)\n"
 "obex> di\n"
 "Success, response: OK, Success (0x20)\n"
-msgstr ""
+msgstr "% obexapp -a 00:80:37:29:19:a4 -C IrMC\nobex> get telecom/devinfo.txt devinfo-t39.txt\nSuccess, response: OK, Success (0x20)\nobex> put new.vcf\nSuccess, response: OK, Success (0x20)\nobex> di\nSuccess, response: OK, Success (0x20)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1285
+#, fuzzy
 msgid ""
 "In order to provide the OPUSH service, man:sdpd[8] must be running and a "
 "root folder, where all incoming objects will be stored, must be created.  "
@@ -2737,19 +2873,19 @@ msgid ""
 "Finally, start the OBEX server on a valid RFCOMM channel number.  The OBEX "
 "server will automatically register the OPUSH service with the local SDP "
 "daemon.  The example below shows how to start the OBEX server."
-msgstr ""
+msgstr "要提供 OPUSH 服务，必须运行 man:sdpd[8]，并创建一个用于存储所有传入对象的根文件夹。根文件夹的默认路径为 [.filename]#/var/spool/obex#。最后，在有效的 RFCOMM 通道号上启动 OBEX 服务器。OBEX 服务器会自动向本地 SDP 守护进程注册 OPUSH 服务。下面的示例展示了如何启动 OBEX 服务器。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# obexapp -s -C 10\n"
-msgstr ""
+msgstr "# obexapp -s -C 10\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Serial Port Profile (SPP)"
-msgstr ""
+msgstr "串行端口配置文件（SPP）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1295
@@ -2764,22 +2900,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1300
+#, fuzzy
 msgid ""
 "In FreeBSD, man:rfcomm_sppd[1] implements SPP and a pseudo tty is used as a "
 "virtual serial port abstraction.  The example below shows how to connect to "
 "a remote device's serial port service.  A RFCOMM channel does not have to be "
 "specified as man:rfcomm_sppd[1] can obtain it from the remote device via "
 "SDP.  To override this, specify a RFCOMM channel on the command line."
-msgstr ""
+msgstr "在 FreeBSD 中，man:rfcomm_sppd[1] 实现了 SPP，并使用伪 tty 作为虚拟串行端口抽象。下面的示例展示了如何连接到远程设备的串行端口服务。无需指定 RFCOMM 通道，因为 man:rfcomm_sppd[1] 可以通过 SDP 从远程设备获取通道。要覆盖此设置，可在命令行中指定 RFCOMM 通道。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# rfcomm_sppd -a 00:07:E0:00:0B:CA -t\n"
 "rfcomm_sppd[94692]: Starting on /dev/pts/6...\n"
 "/dev/pts/6\n"
-msgstr ""
+msgstr "# rfcomm_sppd -a 00:07:E0:00:0B:CA -t\nrfcomm_sppd[94692]: Starting on /dev/pts/6...\n/dev/pts/6\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1309
@@ -2788,9 +2925,9 @@ msgstr "连接后，可以像使用串口一样使用虚拟终端（pseudo tty�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cu -l /dev/pts/6\n"
-msgstr ""
+msgstr "# cu -l /dev/pts/6\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1316
@@ -2825,19 +2962,20 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# hccontrol -n ubt0hci write_node_role_switch 0\n"
-msgstr ""
+msgstr "# hccontrol -n ubt0hci write_node_role_switch 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1337
+#, fuzzy
 msgid ""
 "To display Bluetooth packets, use the third-party package hcidump, which can "
 "be installed using the package:comms/hcidump[] package or port.  This "
 "utility is similar to man:tcpdump[1] and can be used to display the contents "
 "of Bluetooth packets on the terminal and to dump the Bluetooth packets to a "
 "file."
-msgstr ""
+msgstr "要显示蓝牙数据包，可使用第三方软件包 hcidump，它可以通过 package:comms/hcidump[] 软件包或移植安装。此工具类似于 man:tcpdump[1]，可用于在终端上显示蓝牙数据包的内容，也可将蓝牙数据包转储到文件中。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1339
@@ -2847,12 +2985,13 @@ msgstr "桥接"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1343
+#, fuzzy
 msgid ""
 "It is sometimes useful to divide a network, such as an Ethernet segment, "
 "into network segments without having to create IP subnets and use a router "
 "to connect the segments together.  A device that connects two networks "
 "together in this fashion is called a \"bridge\"."
-msgstr ""
+msgstr "有时需要将网络（例如以太网网段）划分为多个网段，而无需创建 IP 子网并使用路由器连接这些网段。以这种方式连接两个网络的设备称为“网桥”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1348
@@ -2910,20 +3049,22 @@ msgstr "过滤/数据整形防火墙"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1358
+#, fuzzy
 msgid ""
 "A bridge can be used when firewall functionality is needed without routing "
 "or Network Address Translation (NAT)."
-msgstr ""
+msgstr "当需要防火墙功能，但不需要路由或网络地址转换（NAT）时，可以使用网桥。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1363
+#, fuzzy
 msgid ""
 "An example is a small company that is connected via DSL or ISDN to an ISP.  "
 "There are thirteen public IP addresses from the ISP and ten computers on the "
 "network.  In this situation, using a router-based firewall is difficult "
 "because of subnetting issues.  A bridge-based firewall can be configured "
 "without any IP addressing issues."
-msgstr ""
+msgstr "例如，一家小型公司通过 DSL 或 ISDN 连接到 ISP。ISP 分配了 13 个公共 IP 地址，网络中有 10 台计算机。在这种情况下，由于子网划分问题，使用基于路由器的防火墙很困难。基于网桥的防火墙则无需处理 IP 地址配置问题。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1364
@@ -2933,25 +3074,27 @@ msgstr "Network Tap (网络分流器)"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1366
+#, fuzzy
 msgid ""
 "A bridge can join two network segments in order to inspect all Ethernet "
 "frames that pass between them using man:bpf[4] and man:tcpdump[1] on the "
 "bridge interface, or by sending a copy of all frames out on an additional "
 "interface known as a span port."
-msgstr ""
+msgstr "网桥可以连接两个网络网段，以便使用网桥接口上的 man:bpf[4] 和 man:tcpdump[1] 检查两者之间传输的所有以太网帧；也可以将所有帧的副本发送到另一个称为 SPAN 端口的接口。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1367
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Layer 2 VPN"
-msgstr ""
+msgstr "第 2 层 VPN"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1369
+#, fuzzy
 msgid ""
 "Two Ethernet networks can be joined across an IP link by bridging the "
 "networks to an EtherIP tunnel or a man:tap[4] based solution such as OpenVPN."
-msgstr ""
+msgstr "通过将两个以太网网络桥接到 EtherIP 隧道，或桥接到基于 man:tap[4] 的解决方案（例如 OpenVPN），可以通过 IP 链路连接这两个网络。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1370
@@ -2961,26 +3104,29 @@ msgstr "二层冗余（Layer 2 Redundancy）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1372
+#, fuzzy
 msgid ""
 "A network can be connected together with multiple links and use the Spanning "
 "Tree Protocol (STP) to block redundant paths."
-msgstr ""
+msgstr "可以通过多条链路连接一个网络，并使用生成树协议（STP）阻断冗余路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1375
+#, fuzzy
 msgid ""
 "This section describes how to configure a FreeBSD system as a bridge using "
 "man:if_bridge[4].  A netgraph bridging driver is also available, and is "
 "described in man:ng_bridge[4]."
-msgstr ""
+msgstr "本节介绍如何使用 man:if_bridge[4] 将 FreeBSD 系统配置为网桥。另有一种 netgraph 网桥驱动程序，详见 man:ng_bridge[4]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1380
+#, fuzzy
 msgid ""
 "Packet filtering can be used with any firewall package that hooks into the "
 "man:pfil[9] framework.  The bridge can be used as a traffic shaper with man:"
 "altq[4] or man:dummynet[4]."
-msgstr ""
+msgstr "数据包过滤可与任何接入 man:pfil[9] 框架的防火墙软件包配合使用。网桥可配合 man:altq[4] 或 man:dummynet[4] 用作流量整形器。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1382
@@ -2990,12 +3136,13 @@ msgstr "开启桥接"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1386
+#, fuzzy
 msgid ""
 "In FreeBSD, man:if_bridge[4] is a kernel module which is automatically "
 "loaded by man:ifconfig[8] when creating a bridge interface.  It is also "
 "possible to compile bridge support into a custom kernel by adding `device "
 "if_bridge` to the custom kernel configuration file."
-msgstr ""
+msgstr "在 FreeBSD 中，man:if_bridge[4] 是一个内核模块，创建网桥接口时会由 man:ifconfig[8] 自动加载。也可以通过在自定义内核配置文件中添加 `device if_bridge`，将网桥支持编译进自定义内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1389
@@ -3010,7 +3157,7 @@ msgstr "网桥使用端口克隆创建。使用以下命令创建网桥："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig bridge create\n"
 "bridge0\n"
@@ -3020,17 +3167,18 @@ msgid ""
 "        id 00:00:00:00:00:00 priority 32768 hellotime 2 fwddelay 15\n"
 "        maxage 20 holdcnt 6 proto rstp maxaddr 100 timeout 1200\n"
 "        root id 00:00:00:00:00:00 priority 0 ifcost 0 port 0\n"
-msgstr ""
+msgstr "# ifconfig bridge create\nbridge0\n# ifconfig bridge0\nbridge0: flags=8802<BROADCAST,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        ether 96:3d:4b:f1:79:7a\n        id 00:00:00:00:00:00 priority 32768 hellotime 2 fwddelay 15\n        maxage 20 holdcnt 6 proto rstp maxaddr 100 timeout 1200\n        root id 00:00:00:00:00:00 priority 0 ifcost 0 port 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1405
+#, fuzzy
 msgid ""
 "When a bridge interface is created, it is automatically assigned a randomly "
 "generated Ethernet address.  The `maxaddr` and `timeout` parameters control "
 "how many MAC addresses the bridge will keep in its forwarding table and how "
 "many seconds before each entry is removed after it is last seen.  The other "
 "parameters control how STP operates."
-msgstr ""
+msgstr "创建网桥接口时，系统会自动为其分配一个随机生成的以太网地址。`maxaddr` 和 `timeout` 参数分别控制网桥在转发表中保留的 MAC 地址数量，以及每个条目在最后一次被发现后多少秒删除。其他参数用于控制 STP 的运行方式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1408
@@ -3049,20 +3197,21 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig bridge0 addm fxp0 addm fxp1 up\n"
 "# ifconfig fxp0 up\n"
 "# ifconfig fxp1 up\n"
-msgstr ""
+msgstr "# ifconfig bridge0 addm fxp0 addm fxp1 up\n# ifconfig fxp0 up\n# ifconfig fxp1 up\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1418
+#, fuzzy
 msgid ""
 "The bridge can now forward Ethernet frames between [.filename]#fxp0# and [."
 "filename]#fxp1#.  Add the following lines to [.filename]#/etc/rc.conf# so "
 "the bridge is created at startup:"
-msgstr ""
+msgstr "现在，网桥可以在 [.filename]#fxp0# 和 [.filename]#fxp1# 之间转发以太网帧。将以下行添加到 [.filename]#/etc/rc.conf#，以便在启动时创建网桥："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1425
@@ -3080,22 +3229,24 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1430
+#, fuzzy
 msgid ""
 "If the bridge host needs an IP address, set it on the bridge interface, not "
 "on the member interfaces.  The address can be set statically or via DHCP.  "
 "This example sets a static IP address:"
-msgstr ""
+msgstr "如果网桥主机需要 IP 地址，应将地址设置在网桥接口上，而不是成员接口上。可以静态设置地址，也可以通过 DHCP 获取。下面的示例设置静态 IP 地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig bridge0 inet 192.168.0.1/24\n"
-msgstr ""
+msgstr "# ifconfig bridge0 inet 192.168.0.1/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1437
+#, fuzzy
 msgid "It is also possible to assign an IPv6 address to a bridge interface."
-msgstr ""
+msgstr "也可以为网桥接口分配 IPv6 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1439
@@ -3108,14 +3259,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1441
+#, fuzzy
 msgid "This example uses a dynamic IPv6 address:"
-msgstr ""
+msgstr "下面的示例使用动态 IPv6 地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ifconfig_bridge0_ipv6=\"inet6 auto_linklocal accept_rtadv\"\n"
-msgstr ""
+msgstr "ifconfig_bridge0_ipv6=\"inet6 auto_linklocal accept_rtadv\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1452
@@ -3139,11 +3291,12 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1455
+#, fuzzy
 msgid ""
 "The bridge has several configurable settings for passing non-IP and IP "
 "packets, and layer2 firewalling with man:ipfw[8].  See man:if_bridge[4] for "
 "more information."
-msgstr ""
+msgstr "网桥有若干可配置选项，用于转发非 IP 和 IP 数据包，以及使用 man:ipfw[8] 进行第 2 层防火墙过滤。更多信息请参见 man:if_bridge[4]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1457
@@ -3168,21 +3321,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1466
+#, fuzzy
 msgid ""
 "The Rapid Spanning Tree Protocol (RSTP or 802.1w) provides backwards "
 "compatibility with legacy STP.  RSTP provides faster convergence and "
 "exchanges information with neighboring switches to quickly transition to "
 "forwarding mode without creating loops.  FreeBSD supports RSTP and STP as "
 "operating modes, with RSTP being the default mode."
-msgstr ""
+msgstr "快速生成树协议（RSTP 或 802.1w）向后兼容旧版 STP。RSTP 可更快地收敛，并与相邻交换机交换信息，从而快速切换到转发模式而不形成环路。FreeBSD 支持将 RSTP 和 STP 用作运行模式，默认模式为 RSTP。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1469
+#, fuzzy
 msgid ""
 "STP can be enabled on member interfaces using man:ifconfig[8].  For a bridge "
 "with [.filename]#fxp0# and [.filename]#fxp1# as the current interfaces, "
 "enable STP with:"
-msgstr ""
+msgstr "可以使用 man:ifconfig[8] 在成员接口上启用 STP。对于当前接口为 [.filename]#fxp0# 和 [.filename]#fxp1# 的网桥，可通过以下命令启用 STP："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1484
@@ -3215,16 +3370,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1488
+#, fuzzy
 msgid ""
 "This bridge has a spanning tree ID of `00:01:02:4b:d4:50` and a priority of "
 "`32768`.  As the `root id` is the same, it indicates that this is the root "
 "bridge for the tree."
-msgstr ""
+msgstr "此网桥的生成树 ID 为 `00:01:02:4b:d4:50`，优先级为 `32768`。由于 `root id` 相同，这表明此网桥是该生成树的根网桥。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1490
+#, fuzzy
 msgid "Another bridge on the network also has STP enabled:"
-msgstr ""
+msgstr "网络中的另一个网桥也启用了 STP："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1504
@@ -3256,12 +3413,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1508
+#, fuzzy
 msgid ""
 "The line `root id 00:01:02:4b:d4:50 priority 32768 ifcost 400000 port 4` "
 "shows that the root bridge is `00:01:02:4b:d4:50` and has a path cost of "
 "`400000` from this bridge.  The path to the root bridge is via `port 4` "
 "which is [.filename]#fxp0#."
-msgstr ""
+msgstr "`root id 00:01:02:4b:d4:50 priority 32768 ifcost 400000 port 4` 这一行表明，根网桥是 `00:01:02:4b:d4:50`，从此网桥到根网桥的路径开销为 `400000`。通往根网桥的路径经过 `port 4`，即 [.filename]#fxp0#。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1509
@@ -3271,11 +3429,12 @@ msgstr "桥接界面参数"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1514
+#, fuzzy
 msgid ""
 "Several `ifconfig` parameters are unique to bridge interfaces.  This section "
 "summarizes some common uses for these parameters.  The complete list of "
 "available parameters is described in man:ifconfig[8]."
-msgstr ""
+msgstr "有几个 `ifconfig` 参数是网桥接口特有的。本节概述这些参数的一些常见用途。可用参数的完整列表见 man:ifconfig[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1515
@@ -3322,9 +3481,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig bridge0 span fxp4\n"
-msgstr ""
+msgstr "# ifconfig bridge0 span fxp4\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1531
@@ -3359,48 +3518,52 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1539
+#, fuzzy
 msgid ""
 "An example of using sticky addresses is to combine the bridge with VLANs in "
 "order to isolate customer networks without wasting IP address space.  "
 "Consider that `CustomerA` is on `vlan100`, `CustomerB` is on `vlan101`, and "
 "the bridge has the address `192.168.0.1`:"
-msgstr ""
+msgstr "粘性地址的一种用法是将网桥与 VLAN 结合，以隔离客户网络，同时避免浪费 IP 地址空间。假设 `CustomerA` 位于 `vlan100`，`CustomerB` 位于 `vlan101`，网桥地址为 `192.168.0.1`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1544
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig bridge0 addm vlan100 sticky vlan100 addm vlan101 sticky vlan101\n"
 "# ifconfig bridge0 inet 192.168.0.1/24\n"
-msgstr ""
+msgstr "# ifconfig bridge0 addm vlan100 sticky vlan100 addm vlan101 sticky vlan101\n# ifconfig bridge0 inet 192.168.0.1/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1548
+#, fuzzy
 msgid ""
 "In this example, both clients see `192.168.0.1` as their default gateway.  "
 "Since the bridge cache is sticky, one host cannot spoof the MAC address of "
 "the other customer in order to intercept their traffic."
-msgstr ""
+msgstr "在此示例中，两个客户端都将 `192.168.0.1` 视为默认网关。由于网桥缓存具有粘性，一台主机无法伪造另一位客户的 MAC 地址来拦截其流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1550
+#, fuzzy
 msgid ""
 "Any communication between the VLANs can be blocked using a firewall or, as "
 "seen in this example, private interfaces:"
-msgstr ""
+msgstr "可以使用防火墙阻止 VLAN 之间的通信，也可以像本例一样使用私有接口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig bridge0 private vlan100 private vlan101\n"
-msgstr ""
+msgstr "# ifconfig bridge0 private vlan100 private vlan101\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1557
+#, fuzzy
 msgid ""
 "The customers are completely isolated from each other and the full `/24` "
 "address range can be allocated without subnetting."
-msgstr ""
+msgstr "客户之间完全隔离，并且无需划分子网即可分配整个 `/24` 地址范围。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1560
@@ -3415,19 +3578,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1562
+#, fuzzy
 msgid ""
 "The following example sets the maximum number of Ethernet devices for "
 "`CustomerA` on `vlan100` to 10:"
-msgstr ""
+msgstr "下面的示例将 `vlan100` 上 `CustomerA` 可使用的以太网设备数量上限设为 10："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1566
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig bridge0 ifmaxaddr vlan100 10\n"
-msgstr ""
+msgstr "# ifconfig bridge0 ifmaxaddr vlan100 10\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1572
+#, fuzzy
 msgid ""
 "Bridge interfaces also support monitor mode, where the packets are discarded "
 "after man:bpf[4] processing and are not processed or forwarded further.  "
@@ -3436,37 +3601,39 @@ msgid ""
 "network taps that transmit the RX/TX signals out through two separate "
 "interfaces.  For example, to read the input from four network interfaces as "
 "one stream:"
-msgstr ""
+msgstr "网桥接口也支持监控模式。在此模式下，数据包经过 man:bpf[4] 处理后会被丢弃，不再进一步处理或转发。此模式可将两个或多个接口的输入复用到单个 man:bpf[4] 流中。对于通过两个独立接口输出 RX/TX 信号的网络分路器，此模式可用于重建流量。例如，要将四个网络接口的输入作为一个流读取："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1577
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig bridge0 addm fxp0 addm fxp1 addm fxp2 addm fxp3 monitor up\n"
 "# tcpdump -i bridge0\n"
-msgstr ""
+msgstr "# ifconfig bridge0 addm fxp0 addm fxp1 addm fxp2 addm fxp3 monitor up\n# tcpdump -i bridge0\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1579
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SNMP Monitoring"
-msgstr ""
+msgstr "SNMP 监控"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1583
+#, fuzzy
 msgid ""
 "The bridge interface and STP parameters can be monitored via man:bsnmpd[1] "
 "which is included in the FreeBSD base system.  The exported bridge MIBs "
 "conform to IETF standards so any SNMP client or monitoring package can be "
 "used to retrieve the data."
-msgstr ""
+msgstr "可以通过 FreeBSD 基本系统自带的 man:bsnmpd[1] 监控网桥接口和 STP 参数。导出的网桥 MIB 符合 IETF 标准，因此可以使用任何 SNMP 客户端或监控软件包检索数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1585
+#, fuzzy
 msgid ""
 "To enable monitoring on the bridge, uncomment this line in [.filename]#/etc/"
 "snmpd.config# by removing the beginning `+#+` symbol:"
-msgstr ""
+msgstr "要启用网桥监控，请在 [.filename]#/etc/snmpd.config# 中删除行首的 `+#+` 符号，取消注释以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1589
@@ -3476,12 +3643,13 @@ msgstr "begemotSnmpdModulePath.\"bridge\" = \"/usr/lib/snmp_bridge.so\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1594
+#, fuzzy
 msgid ""
 "Other configuration settings, such as community names and access lists, may "
 "need to be modified in this file.  See man:bsnmpd[1] and man:snmp_bridge[3] "
 "for more information.  Once these edits are saved, add this line to [."
 "filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "可能还需要修改此文件中的其他配置设置，例如团体名称和访问列表。更多信息请参见 man:bsnmpd[1] 和 man:snmp_bridge[3]。保存这些修改后，将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1598
@@ -3491,24 +3659,26 @@ msgstr "bsnmpd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1601
+#, fuzzy
 msgid "Then, start man:bsnmpd[1]:"
-msgstr ""
+msgstr "然后启动 man:bsnmpd[1]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1605
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service bsnmpd start\n"
-msgstr ""
+msgstr "# service bsnmpd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1610
+#, fuzzy
 msgid ""
 "The following examples use the Net-SNMP software (package:net-mgmt/net-"
 "snmp[]) to query a bridge from a client system.  The package:net-mgmt/"
 "bsnmptools[] port can also be used.  From the SNMP client which is running "
 "Net-SNMP, add the following lines to [.filename]#$HOME/.snmp/snmp.conf# in "
 "order to import the bridge MIB definitions:"
-msgstr ""
+msgstr "以下示例使用 Net-SNMP 软件（package:net-mgmt/net-snmp[]）从客户端系统查询网桥。也可以使用 package:net-mgmt/bsnmptools[] 移植。在运行 Net-SNMP 的 SNMP 客户端上，将以下行添加到 [.filename]#$HOME/.snmp/snmp.conf#，以导入网桥 MIB 定义："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1615
@@ -3565,12 +3735,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1642
+#, fuzzy
 msgid ""
 "The `dot1dStpTopChanges.0` value is two, indicating that the STP bridge "
 "topology has changed twice.  A topology change means that one or more links "
 "in the network have changed or failed and a new tree has been calculated.  "
 "The `dot1dStpTimeSinceTopologyChange.0` value will show when this happened."
-msgstr ""
+msgstr "`dot1dStpTopChanges.0` 的值为 2，表示 STP 网桥拓扑已变更两次。拓扑变更意味着网络中的一条或多条链路发生变化或故障，并已重新计算生成树。`dot1dStpTimeSinceTopologyChange.0` 的值会显示变更发生的时间。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1644
@@ -3581,7 +3752,7 @@ msgstr "要监视多个网桥接口，可以使用专用 BEGEMOT-BRIDGE-MIB："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1662
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% snmpwalk -v 2c -c public bridge1.example.com\n"
 "enterprises.fokus.begemot.begemotBridge\n"
@@ -3598,22 +3769,23 @@ msgid ""
 "BEGEMOT-BRIDGE-MIB::begemotBridgeStpTopChanges.\"bridge2\" = Counter32: 1\n"
 "BEGEMOT-BRIDGE-MIB::begemotBridgeStpDesignatedRoot.\"bridge0\" = Hex-STRING: 80 00 00 40 95 30 5E 31\n"
 "BEGEMOT-BRIDGE-MIB::begemotBridgeStpDesignatedRoot.\"bridge2\" = Hex-STRING: 80 00 00 50 8B B8 C6 A9\n"
-msgstr ""
+msgstr "% snmpwalk -v 2c -c public bridge1.example.com\nenterprises.fokus.begemot.begemotBridge\nBEGEMOT-BRIDGE-MIB::begemotBridgeBaseName.\"bridge0\" = STRING: bridge0\nBEGEMOT-BRIDGE-MIB::begemotBridgeBaseName.\"bridge2\" = STRING: bridge2\nBEGEMOT-BRIDGE-MIB::begemotBridgeBaseAddress.\"bridge0\" = STRING: e:ce:3b:5a:9e:13\nBEGEMOT-BRIDGE-MIB::begemotBridgeBaseAddress.\"bridge2\" = STRING: 12:5e:4d:74:d:fc\nBEGEMOT-BRIDGE-MIB::begemotBridgeBaseNumPorts.\"bridge0\" = INTEGER: 1\nBEGEMOT-BRIDGE-MIB::begemotBridgeBaseNumPorts.\"bridge2\" = INTEGER: 1\n...\nBEGEMOT-BRIDGE-MIB::begemotBridgeStpTimeSinceTopologyChange.\"bridge0\" = Timeticks: (116927) 0:19:29.27 centi-seconds\nBEGEMOT-BRIDGE-MIB::begemotBridgeStpTimeSinceTopologyChange.\"bridge2\" = Timeticks: (82773) 0:13:47.73 centi-seconds\nBEGEMOT-BRIDGE-MIB::begemotBridgeStpTopChanges.\"bridge0\" = Counter32: 1\nBEGEMOT-BRIDGE-MIB::begemotBridgeStpTopChanges.\"bridge2\" = Counter32: 1\nBEGEMOT-BRIDGE-MIB::begemotBridgeStpDesignatedRoot.\"bridge0\" = Hex-STRING: 80 00 00 40 95 30 5E 31\nBEGEMOT-BRIDGE-MIB::begemotBridgeStpDesignatedRoot.\"bridge2\" = Hex-STRING: 80 00 00 50 8B B8 C6 A9\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1665
+#, fuzzy
 msgid ""
 "To change the bridge interface being monitored via the `mib-2.dot1dBridge` "
 "subtree:"
-msgstr ""
+msgstr "要更改通过 `mib-2.dot1dBridge` 子树监控的网桥接口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1670
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% snmpset -v 2c -c private bridge1.example.com\n"
 "BEGEMOT-BRIDGE-MIB::begemotBridgeDefaultBridgeIf.0 s bridge2\n"
-msgstr ""
+msgstr "% snmpset -v 2c -c private bridge1.example.com\nBEGEMOT-BRIDGE-MIB::begemotBridgeDefaultBridgeIf.0 s bridge2\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1673
@@ -3623,6 +3795,7 @@ msgstr "链路聚合与故障转移"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1678
+#, fuzzy
 msgid ""
 "FreeBSD provides the man:lagg[4] interface which can be used to aggregate "
 "multiple network interfaces into one virtual interface in order to provide "
@@ -3631,16 +3804,17 @@ msgid ""
 "link.  Link aggregation works best on switches which support LACP, as this "
 "protocol distributes traffic bi-directionally while responding to the "
 "failure of individual links."
-msgstr ""
+msgstr "FreeBSD 提供了 man:lagg[4] 接口，可将多个网络接口聚合为一个虚拟接口，以实现故障切换和链路聚合。只要至少一个已聚合的网络接口保持链路连接，故障切换就能让流量继续传输。链路聚合在支持 LACP 的交换机上效果最佳，因为该协议会双向分配流量，并能应对单条链路故障。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1681
+#, fuzzy
 msgid ""
 "The aggregation protocols supported by the lagg interface determine which "
 "ports are used for outgoing traffic and whether or not a specific port "
 "accepts incoming traffic.  The following protocols are supported by man:"
 "lagg[4]:"
-msgstr ""
+msgstr "lagg 接口支持的聚合协议决定了哪些端口用于发送流量，以及特定端口是否接受传入流量。man:lagg[4] 支持以下协议："
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1682
@@ -3680,20 +3854,22 @@ msgstr "fec / loadbalance（负载均衡）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1691
+#, fuzzy
 msgid ""
 "This provides a static setup and does not negotiate aggregation with the "
 "peer or exchange frames to monitor the link.  If the switch supports LACP, "
 "that should be used instead."
-msgstr ""
+msgstr "此配置是静态的，不会与对端协商聚合，也不会交换用于监控链路的帧。如果交换机支持 LACP，应改用 LACP。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1692
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lacp"
-msgstr ""
+msgstr "lacp"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1697
+#, fuzzy
 msgid ""
 "The IEEE(R) 802.3ad Link Aggregation Control Protocol (LACP) negotiates a "
 "set of aggregable links with the peer into one or more Link Aggregated "
@@ -3702,16 +3878,17 @@ msgid ""
 "the greatest total speed.  Typically, there is only one LAG which contains "
 "all the ports.  In the event of changes in physical connectivity, LACP will "
 "quickly converge to a new configuration."
-msgstr ""
+msgstr "IEEE(R) 802.3ad 链路聚合控制协议（LACP）会与对端协商一组可聚合链路，组成一个或多个链路聚合组（LAG）。每个 LAG 由速度相同且设置为全双工模式的端口组成，流量会在总速度最高的 LAG 的各端口之间进行负载均衡。通常只有一个 LAG，包含所有端口。物理连接发生变化时，LACP 会迅速收敛到新的配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1700
+#, fuzzy
 msgid ""
 "LACP balances outgoing traffic across the active ports based on hashed "
 "protocol header information and accepts incoming traffic from any active "
 "port.  The hash includes the Ethernet source and destination address and, if "
 "available, the VLAN tag, and the IPv4 or IPv6 source and destination address."
-msgstr ""
+msgstr "LACP 根据协议头信息的哈希值，在活动端口之间分配传出流量，并接受来自任一活动端口的传入流量。哈希值包含以太网源地址和目标地址；如果可用，还包含 VLAN 标签，以及 IPv4 或 IPv6 源地址和目标地址。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1701
@@ -3737,16 +3914,17 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1705
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "broadcast"
-msgstr ""
+msgstr "广播"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1707
+#, fuzzy
 msgid ""
 "This mode sends outgoing traffic to all ports configured on the lagg "
 "interface, and receives frames on any port."
-msgstr ""
+msgstr "此模式会将发出的流量发送到 lagg 接口上配置的所有端口，并从任意端口接收帧。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1708
@@ -3756,21 +3934,23 @@ msgstr "设定示例"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1712
+#, fuzzy
 msgid ""
 "This section demonstrates how to configure a Cisco(R) switch and a FreeBSD "
 "system for LACP load balancing.  It then shows how to configure two Ethernet "
 "interfaces in failover mode as well as how to configure failover mode "
 "between an Ethernet and a wireless interface."
-msgstr ""
+msgstr "本节演示如何配置 Cisco(R) 交换机和 FreeBSD 系统以实现 LACP 负载均衡。随后还将介绍如何将两个以太网接口配置为故障转移模式，以及如何在以太网接口与无线接口之间配置故障转移模式。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1714
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LACP Aggregation with a Cisco(R) Switch"
-msgstr ""
+msgstr "使用 Cisco(R) 交换机进行 LACP 聚合"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1720
+#, fuzzy
 msgid ""
 "This example connects two man:fxp[4] Ethernet interfaces on a FreeBSD "
 "machine to the first two Ethernet ports on a Cisco(R) switch as a single "
@@ -3778,7 +3958,7 @@ msgid ""
 "increase throughput and fault tolerance.  Replace the names of the Cisco(R) "
 "ports, Ethernet devices, channel group number, and IP address shown in the "
 "example to match the local configuration."
-msgstr ""
+msgstr "此示例将 FreeBSD 计算机上的两个 man:fxp[4] 以太网接口连接到 Cisco(R) 交换机上的前两个以太网端口，组成一条具备负载均衡和容错能力的链路。可以添加更多接口以提高吞吐量和容错能力。请根据本地配置替换示例中的 Cisco(R) 端口名称、以太网设备名称、通道组编号和 IP 地址。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1723
@@ -3802,14 +3982,15 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1725
+#, fuzzy
 msgid ""
 "On the Cisco(R) switch, add the _FastEthernet0/1_ and _FastEthernet0/2_ "
 "interfaces to channel group _1_:"
-msgstr ""
+msgstr "在 Cisco(R) 交换机上，将 _FastEthernet0/1_ 和 _FastEthernet0/2_ 接口添加到通道组 _1_："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1735
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "interface FastEthernet0/1\n"
 " channel-group 1 mode active\n"
@@ -3818,25 +3999,26 @@ msgid ""
 "interface FastEthernet0/2\n"
 " channel-group 1 mode active\n"
 " channel-protocol lacp\n"
-msgstr ""
+msgstr "interface FastEthernet0/1\n channel-group 1 mode active\n channel-protocol lacp\n!\ninterface FastEthernet0/2\n channel-group 1 mode active\n channel-protocol lacp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1738
+#, fuzzy
 msgid ""
 "On the FreeBSD system, create the man:lagg[4] interface using the physical "
 "interfaces _fxp0_ and _fxp1_ and bring the interfaces up with an IP address "
 "of _10.0.0.3/24_:"
-msgstr ""
+msgstr "在 FreeBSD 系统上，使用物理接口 _fxp0_ 和 _fxp1_ 创建 man:lagg[4] 接口，并为其配置 IP 地址 _10.0.0.3/24_ 后启用接口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1745
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig fxp0 up\n"
 "# ifconfig fxp1 up\n"
 "# ifconfig lagg0 create\n"
 "# ifconfig lagg0 up laggproto lacp laggport fxp0 laggport fxp1 10.0.0.3/24\n"
-msgstr ""
+msgstr "# ifconfig fxp0 up\n# ifconfig fxp1 up\n# ifconfig lagg0 create\n# ifconfig lagg0 up laggproto lacp laggport fxp0 laggport fxp1 10.0.0.3/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1748
@@ -3845,7 +4027,7 @@ msgstr "接下来，检查虚拟接口的运行状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1761
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig lagg0\n"
 "lagg0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
@@ -3857,57 +4039,60 @@ msgid ""
 "        laggproto lacp\n"
 "        laggport: fxp1 flags=1c<ACTIVE,COLLECTING,DISTRIBUTING>\n"
 "        laggport: fxp0 flags=1c<ACTIVE,COLLECTING,DISTRIBUTING>\n"
-msgstr ""
+msgstr "# ifconfig lagg0\nlagg0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        options=8<VLAN_MTU>\n        ether 00:05:5d:71:8d:b8\n        inet 10.0.0.3 netmask 0xffffff00 broadcast 10.0.0.255\n        media: Ethernet autoselect\n        status: active\n        laggproto lacp\n        laggport: fxp1 flags=1c<ACTIVE,COLLECTING,DISTRIBUTING>\n        laggport: fxp0 flags=1c<ACTIVE,COLLECTING,DISTRIBUTING>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1766
+#, fuzzy
 msgid ""
 "Ports marked as `ACTIVE` are part of the LAG that has been negotiated with "
 "the remote switch.  Traffic will be transmitted and received through these "
 "active ports.  Add `-v` to the above command to view the LAG identifiers."
-msgstr ""
+msgstr "标记为 `ACTIVE` 的端口属于已与远程交换机协商完成的 LAG。流量将通过这些活动端口发送和接收。在上述命令中添加 `-v` 可查看 LAG 标识符。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1768
+#, fuzzy
 msgid "To see the port status on the Cisco(R) switch:"
-msgstr ""
+msgstr "要查看 Cisco(R) 交换机上的端口状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "switch# show lacp neighbor\n"
 "Flags:  S - Device is requesting Slow LACPDUs\n"
 "        F - Device is requesting Fast LACPDUs\n"
 "        A - Device is in Active mode       P - Device is in Passive mode\n"
-msgstr ""
+msgstr "switch# show lacp neighbor\nFlags:  S - Device is requesting Slow LACPDUs\n        F - Device is requesting Fast LACPDUs\n        A - Device is in Active mode       P - Device is in Passive mode\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1777
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Channel group 1 neighbors\n"
-msgstr ""
+msgstr "Channel group 1 neighbors\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1779
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Partner's information:\n"
-msgstr ""
+msgstr "Partner's information:\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1784
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "                  LACP port                        Oper    Port     Port\n"
 "Port      Flags   Priority  Dev ID         Age     Key     Number   State\n"
 "Fa0/1     SA      32768     0005.5d71.8db8  29s    0x146   0x3      0x3D\n"
 "Fa0/2     SA      32768     0005.5d71.8db8  29s    0x146   0x4      0x3D\n"
-msgstr ""
+msgstr "                  LACP port                        Oper    Port     Port\nPort      Flags   Priority  Dev ID         Age     Key     Number   State\nFa0/1     SA      32768     0005.5d71.8db8  29s    0x146   0x3      0x3D\nFa0/2     SA      32768     0005.5d71.8db8  29s    0x146   0x4      0x3D\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1787
+#, fuzzy
 msgid "For more detail, type `show lacp neighbor detail`."
-msgstr ""
+msgstr "要查看更详细的信息，请输入 `show lacp neighbor detail`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1789
@@ -3921,13 +4106,13 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1796
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ifconfig_fxp0=\"up\"\n"
 "ifconfig_fxp1=\"up\"\n"
 "cloned_interfaces=\"lagg0\"\n"
 "ifconfig_lagg0=\"laggproto lacp laggport fxp0 laggport fxp1 10.0.0.3/24\"\n"
-msgstr ""
+msgstr "ifconfig_fxp0=\"up\"\nifconfig_fxp1=\"up\"\ncloned_interfaces=\"lagg0\"\nifconfig_lagg0=\"laggproto lacp laggport fxp0 laggport fxp1 10.0.0.3/24\"\n"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1801
@@ -3937,6 +4122,7 @@ msgstr "故障转移模式"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1808
+#, fuzzy
 msgid ""
 "Failover mode can be used to switch over to a secondary interface if the "
 "link is lost on the master interface.  To configure failover, make sure that "
@@ -3944,17 +4130,17 @@ msgid ""
 "interface.  In this example, _fxp0_ is the master interface, _fxp1_ is the "
 "secondary interface, and the virtual interface is assigned an IP address of "
 "_10.0.0.15/24_:"
-msgstr ""
+msgstr "如果主接口的链路丢失，可使用故障转移模式切换到备用接口。要配置故障转移，请确保底层物理接口已启用，然后创建 man:lagg[4] 接口。在此示例中，_fxp0_ 是主接口，_fxp1_ 是备用接口，虚拟接口的 IP 地址为 _10.0.0.15/24_："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1815
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig fxp0 up\n"
 "# ifconfig fxp1 up\n"
 "# ifconfig lagg0 create\n"
 "# ifconfig lagg0 up laggproto failover laggport fxp0 laggport fxp1 10.0.0.15/24\n"
-msgstr ""
+msgstr "# ifconfig fxp0 up\n# ifconfig fxp1 up\n# ifconfig lagg0 create\n# ifconfig lagg0 up laggproto failover laggport fxp0 laggport fxp1 10.0.0.15/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1818
@@ -3964,7 +4150,7 @@ msgstr "虚拟端口信息如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1831
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig lagg0\n"
 "lagg0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
@@ -3976,15 +4162,16 @@ msgid ""
 "        laggproto failover\n"
 "        laggport: fxp1 flags=0<>\n"
 "        laggport: fxp0 flags=5<MASTER,ACTIVE>\n"
-msgstr ""
+msgstr "# ifconfig lagg0\nlagg0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        options=8<VLAN_MTU>\n        ether 00:05:5d:71:8d:b8\n        inet 10.0.0.15 netmask 0xffffff00 broadcast 10.0.0.255\n        media: Ethernet autoselect\n        status: active\n        laggproto failover\n        laggport: fxp1 flags=0<>\n        laggport: fxp0 flags=5<MASTER,ACTIVE>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1836
+#, fuzzy
 msgid ""
 "Traffic will be transmitted and received on _fxp0_.  If the link is lost on "
 "_fxp0_, _fxp1_ will become the active link.  If the link is restored on the "
 "master interface, it will once again become the active link."
-msgstr ""
+msgstr "流量将通过 _fxp0_ 发送和接收。如果 _fxp0_ 的链路丢失，_fxp1_ 将成为活动链路。如果主接口上的链路恢复，它将再次成为活动链路。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1838
@@ -3997,13 +4184,13 @@ msgstr "若需将配置持久化，请将以下行写入 <filename>/etc/rc.conf<
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1845
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ifconfig_fxp0=\"up\"\n"
 "ifconfig_fxp1=\"up\"\n"
 "cloned_interfaces=\"lagg0\"\n"
 "ifconfig_lagg0=\"laggproto failover laggport fxp0 laggport fxp1 10.0.0.15/24\"\n"
-msgstr ""
+msgstr "ifconfig_fxp0=\"up\"\nifconfig_fxp1=\"up\"\ncloned_interfaces=\"lagg0\"\nifconfig_lagg0=\"laggproto failover laggport fxp0 laggport fxp1 10.0.0.15/24\"\n"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1850
@@ -4013,20 +4200,22 @@ msgstr "以太网络与无线界面间的容错移转模式"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1856
+#, fuzzy
 msgid ""
 "For laptop users, it is usually desirable to configure the wireless device "
 "as a secondary which is only used when the Ethernet connection is not "
 "available.  With man:lagg[4], it is possible to configure a failover which "
 "prefers the Ethernet connection for both performance and security reasons, "
 "while maintaining the ability to transfer data over the wireless connection."
-msgstr ""
+msgstr "对于笔记本电脑用户，通常希望将无线设备配置为备用接口，仅在以太网连接不可用时使用。使用 man:lagg[4]，可以配置故障转移，出于性能和安全方面的考虑优先使用以太网连接，同时仍可通过无线连接传输数据。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1858
+#, fuzzy
 msgid ""
 "This is achieved by overriding the Ethernet interface's MAC address with "
 "that of the wireless interface."
-msgstr ""
+msgstr "实现方法是将以太网接口的 MAC 地址改为无线接口的 MAC 地址。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1864
@@ -4048,6 +4237,7 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1871
+#, fuzzy
 msgid ""
 "If the driver for the wireless interface is not loaded in the `GENERIC` or "
 "custom kernel, and the computer is running FreeBSD {rel121-current}, load "
@@ -4057,10 +4247,11 @@ msgid ""
 "`kld_list` (see man:rc.conf[5] for details) in that file and rebooting.  "
 "This is needed because otherwise the driver is not loaded yet at the time "
 "the man:lagg[4] interface is set up."
-msgstr ""
+msgstr "如果无线接口的驱动程序未加载到 `GENERIC` 或自定义内核中，并且计算机运行的是 FreeBSD {rel121-current}，请将相应的 [.filename]#.ko# 添加到 [.filename]#/boot/loader.conf# 中：在该文件中添加 `*driver_load=\"YES\"*`，然后重新启动。另一种更好的方法是在 [.filename]#/etc/rc.conf# 中将驱动程序添加到 `kld_list`（详情请参见 man:rc.conf[5]），然后重新启动。之所以需要这样做，是因为否则在设置 man:lagg[4] 接口时，驱动程序尚未加载。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1877
+#, fuzzy
 msgid ""
 "In this example, the Ethernet interface, _re0_, is the master and the "
 "wireless interface, _wlan0_, is the failover.  The _wlan0_ interface was "
@@ -4069,13 +4260,13 @@ msgid ""
 "interface.  First, bring the wireless interface up (replacing _FR_ with the "
 "local 2-letter country code), but do not set an IP address.  Replace _wlan0_ "
 "to match the system's wireless interface name:"
-msgstr ""
+msgstr "在此示例中，以太网接口 _re0_ 是主接口，无线接口 _wlan0_ 是故障转移接口。_wlan0_ 接口由物理无线接口 _ath0_ 创建，以太网接口将配置为使用无线接口的 MAC 地址。首先启用无线接口（将 _FR_ 替换为本地的两字母国家代码），但不要设置 IP 地址。请根据系统的无线接口名称替换 _wlan0_："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1881
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig wlan0 create wlandev ath0 country FR ssid my_router up\n"
-msgstr ""
+msgstr "# ifconfig wlan0 create wlandev ath0 country FR ssid my_router up\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1884
@@ -4086,7 +4277,7 @@ msgstr "接下来，检查虚拟接口的运行状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1899
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig wlan0\n"
 "wlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
@@ -4100,40 +4291,42 @@ msgid ""
 "\tmedia: IEEE 802.11 Wireless Ethernet MCS mode 11ng\n"
 "\tstatus: associated\n"
 "\tnd6 options=29<PERFORMNUD,IFDISABLED,AUTO_LINKLOCAL>\n"
-msgstr ""
+msgstr "# ifconfig wlan0\nwlan0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n\tether b8:ee:65:5b:32:59\n\tgroups: wlan\n\tssid Bbox-A3BD2403 channel 6 (2437 MHz 11g ht/20) bssid 00:37:b7:56:4b:60\n\tregdomain ETSI country FR indoor ecm authmode WPA2/802.11i privacy ON\n\tdeftxkey UNDEF AES-CCM 2:128-bit txpower 30 bmiss 7 scanvalid 60\n\tprotmode CTS ampdulimit 64k ampdudensity 8 shortgi -stbctx stbcrx\n\t-ldpc wme burst roaming MANUAL\n\tmedia: IEEE 802.11 Wireless Ethernet MCS mode 11ng\n\tstatus: associated\n\tnd6 options=29<PERFORMNUD,IFDISABLED,AUTO_LINKLOCAL>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1903
+#, fuzzy
 msgid ""
 "The `ether` line will contain the MAC address of the specified interface.  "
 "Now, change the MAC address of the Ethernet interface to match:"
-msgstr ""
+msgstr "`ether` 行将显示指定接口的 MAC 地址。现在，将以太网接口的 MAC 地址更改为与之相同："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1907
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig re0 ether b8:ee:65:5b:32:59\n"
-msgstr ""
+msgstr "# ifconfig re0 ether b8:ee:65:5b:32:59\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1910
+#, fuzzy
 msgid ""
 "Make sure the _re0_ interface is up, then create the man:lagg[4] interface "
 "with _re0_ as master with failover to _wlan0_:"
-msgstr ""
+msgstr "确保 _re0_ 接口已启用，然后创建 man:lagg[4] 接口，将 _re0_ 设为主接口，并在其失效时切换到 _wlan0_："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1916
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig re0 up\n"
 "# ifconfig lagg0 create\n"
 "# ifconfig lagg0 up laggproto failover laggport re0 laggport wlan0\n"
-msgstr ""
+msgstr "# ifconfig re0 up\n# ifconfig lagg0 create\n# ifconfig lagg0 up laggproto failover laggport re0 laggport wlan0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1932
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ifconfig lagg0\n"
 "lagg0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n"
@@ -4145,22 +4338,23 @@ msgid ""
 "        groups: lagg\n"
 "        media: Ethernet autoselect\n"
 "        status: active\n"
-msgstr ""
+msgstr "# ifconfig lagg0\nlagg0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500\n        options=8<VLAN_MTU>\n        ether b8:ee:65:5b:32:59\n        laggproto failover lagghash l2,l3,l4\n        laggport: re0 flags=5<MASTER,ACTIVE>\n        laggport: wlan0 flags=0<>\n        groups: lagg\n        media: Ethernet autoselect\n        status: active\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1935
+#, fuzzy
 msgid "Then, start the DHCP client to obtain an IP address:"
-msgstr ""
+msgstr "然后启动 DHCP 客户端以获取 IP 地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1939
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dhclient lagg0\n"
-msgstr ""
+msgstr "# dhclient lagg0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1951
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ifconfig_re0=\"ether b8:ee:65:5b:32:59\"\n"
 "wlans_ath0=\"wlan0\"\n"
@@ -4168,16 +4362,17 @@ msgid ""
 "create_args_wlan0=\"country FR\"\n"
 "cloned_interfaces=\"lagg0\"\n"
 "ifconfig_lagg0=\"up laggproto failover laggport re0 laggport wlan0 DHCP\"\n"
-msgstr ""
+msgstr "ifconfig_re0=\"ether b8:ee:65:5b:32:59\"\nwlans_ath0=\"wlan0\"\nifconfig_wlan0=\"WPA\"\ncreate_args_wlan0=\"country FR\"\ncloned_interfaces=\"lagg0\"\nifconfig_lagg0=\"up laggproto failover laggport re0 laggport wlan0 DHCP\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1956
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Diskless Operation with PXE"
-msgstr ""
+msgstr "使用 PXE 进行无盘操作"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1962
+#, fuzzy
 msgid ""
 "The Intel(R) Preboot eXecution Environment (PXE) allows an operating system "
 "to boot over the network.  For example, a FreeBSD system can boot over the "
@@ -4185,35 +4380,40 @@ msgid ""
 "NFS server.  PXE support is usually available in the BIOS.  To use PXE when "
 "the machine starts, select the `Boot from network` option in the BIOS setup "
 "or type a function key during system initialization."
-msgstr ""
+msgstr "Intel(R) 预启动执行环境（Preboot eXecution Environment，PXE）允许通过网络启动操作系统。例如，FreeBSD 系统可以通过网络启动，并使用从 NFS 服务器挂载的文件系统运行，而无需本地磁盘。BIOS 通常支持 PXE。要在计算机启动时使用 PXE，请在 BIOS 设置中选择 `Boot from network` 选项，或在系统初始化期间按下某个功能键。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1964
+#, fuzzy
 msgid ""
 "In order to provide the files needed for an operating system to boot over "
 "the network, a PXE setup also requires properly configured DHCP, TFTP, and "
 "NFS servers, where:"
-msgstr ""
+msgstr "要提供操作系统通过网络启动所需的文件，PXE 环境还需要正确配置 DHCP、TFTP 和 NFS 服务器："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1966
+#, fuzzy
 msgid ""
 "Initial parameters, such as an IP address, executable boot filename and "
 "location, server name, and root path are obtained from the DHCP server."
-msgstr ""
+msgstr "初始参数（例如 IP 地址、可执行启动文件名及其位置、服务器名称和根路径）由 DHCP 服务器提供。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1967
+#, fuzzy
 msgid "The operating system loader file is booted using TFTP."
-msgstr ""
+msgstr "操作系统加载器文件通过 TFTP 启动。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1968
+#, fuzzy
 msgid "The file systems are loaded using NFS."
-msgstr ""
+msgstr "文件系统通过 NFS 加载。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1973
+#, fuzzy
 msgid ""
 "When a computer PXE boots, it receives information over DHCP about where to "
 "obtain the initial boot loader file.  After the host computer receives this "
@@ -4222,24 +4422,26 @@ msgid ""
 "pxeboot#.  After [.filename]#/boot/pxeboot# executes, the FreeBSD kernel is "
 "loaded and the rest of the FreeBSD bootup sequence proceeds, as described in "
 "crossref:boot[boot,The FreeBSD Booting Process]."
-msgstr ""
+msgstr "计算机通过 PXE 启动时，会通过 DHCP 获取初始引导加载器文件的位置。主机收到这些信息后，会通过 TFTP 下载引导加载器，然后执行它。在 FreeBSD 中，引导加载器文件是 [.filename]#/boot/pxeboot#。执行 [.filename]#/boot/pxeboot# 后，FreeBSD 内核将被加载，随后继续 FreeBSD 的其余启动过程，详见 crossref:boot[boot,FreeBSD 启动过程]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1978
+#, fuzzy
 msgid ""
 "For UEFI PXE based boot, the actual boot loader file to use is [.filename]#/"
 "boot/loader.efi#.  See the below section crossref:advanced-"
 "networking[_debugging_pxe_problems,Debugging PXE Problems] on how to use [."
 "filename]#/boot/loader.efi#."
-msgstr ""
+msgstr "对于基于 UEFI 的 PXE 启动，实际使用的引导加载器文件是 [.filename]#/boot/loader.efi#。有关如何使用 [.filename]#/boot/loader.efi#，请参见下文的 crossref:advanced-networking[_debugging_pxe_problems,PXE 问题调试]一节。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1982
+#, fuzzy
 msgid ""
 "This section describes how to configure these services on a FreeBSD system "
 "so that other systems can PXE boot into FreeBSD.  Refer to man:diskless[8] "
 "for more information."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上配置这些服务，以便其他系统通过 PXE 启动进入 FreeBSD。更多信息请参见 man:diskless[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1987
@@ -4256,12 +4458,13 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1990
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting Up the PXE Environment"
-msgstr ""
+msgstr "设置 PXE 环境"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:1996
+#, fuzzy
 msgid ""
 "The steps shown in this section configure the built-in NFS and TFTP "
 "servers.  The next section demonstrates how to install and configure the "
@@ -4270,35 +4473,38 @@ msgid ""
 "important that this directory exists and that the same directory name is set "
 "in both [.filename]#/etc/inetd.conf# and [.filename]#/usr/local/etc/dhcpd."
 "conf#."
-msgstr ""
+msgstr "本节中的步骤用于配置内置的 NFS 和 TFTP 服务器。下一节将演示如何安装和配置 DHCP 服务器。在此示例中，用于存放 PXE 用户所需文件的目录为 [.filename]#/b/tftpboot/FreeBSD/install#。必须确保此目录存在，并且在 [.filename]#/etc/inetd.conf# 和 [.filename]#/usr/local/etc/dhcpd.conf# 中设置相同的目录名称。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2001
+#, fuzzy
 msgid ""
 "The command examples below assume use of the man:sh[1] shell.  man:csh[1] "
 "and man:tcsh[1] users will need to start a man:sh[1] shell or adapt the "
 "commands to man:csh[1] syntax."
-msgstr ""
+msgstr "以下命令示例假定使用 man:sh[1] shell。man:csh[1] 和 man:tcsh[1] 用户需要启动 man:sh[1] shell，或将命令调整为 man:csh[1] 语法。"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2005
+#, fuzzy
 msgid ""
 "Create the root directory which will contain a FreeBSD installation to be "
 "NFS mounted:"
-msgstr ""
+msgstr "创建用于存放通过 NFS 挂载的 FreeBSD 安装内容的根目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2010
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# export NFSROOTDIR=/b/tftpboot/FreeBSD/install\n"
 "# mkdir -p ${NFSROOTDIR}\n"
-msgstr ""
+msgstr "# export NFSROOTDIR=/b/tftpboot/FreeBSD/install\n# mkdir -p ${NFSROOTDIR}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2013
+#, fuzzy
 msgid "Enable the NFS server by adding this line to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/etc/rc.conf# 以启用 NFS 服务器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2017
@@ -4308,10 +4514,11 @@ msgstr "nfs_server_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2020
+#, fuzzy
 msgid ""
 "Export the diskless root directory via NFS by adding the following to [."
 "filename]#/etc/exports#:"
-msgstr ""
+msgstr "将以下内容添加到 [.filename]#/etc/exports#，通过 NFS 导出无盘根目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2024
@@ -4321,21 +4528,23 @@ msgstr "/b -ro -alldirs -maproot=root\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2027
+#, fuzzy
 msgid "Start the NFS server:"
-msgstr ""
+msgstr "启动 NFS 服务器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2031
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service nfsd start\n"
-msgstr ""
+msgstr "# service nfsd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2034
+#, fuzzy
 msgid ""
 "Enable man:inetd[8] by adding the following line to [.filename]#/etc/rc."
 "conf#:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/etc/rc.conf# 以启用 man:inetd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2038
@@ -4345,10 +4554,11 @@ msgstr "inetd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2041
+#, fuzzy
 msgid ""
 "Uncomment the following line in [.filename]#/etc/inetd.conf# by making sure "
 "it does not start with a `+#+` symbol:"
-msgstr ""
+msgstr "取消 [.filename]#/etc/inetd.conf# 中以下行的注释，确保该行开头没有 `+#+` 符号："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2045
@@ -4358,25 +4568,28 @@ msgstr "tftp dgram udp wait root /usr/libexec/tftpd tftpd -l -s /b/tftpboot\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2052
+#, fuzzy
 msgid ""
 "The specified tftp blocksize, e.g. 1468 bytes, replaces the default size 512 "
 "bytes.  Some PXE versions require the TCP version of TFTP.  In this case, "
 "uncomment the second `tftp` line which contains `stream tcp`."
-msgstr ""
+msgstr "指定的 TFTP 块大小（例如 1468 字节）会替代默认的 512 字节块大小。某些 PXE 版本要求使用 TFTP 的 TCP 版本。此时，请取消包含 `stream tcp` 的第二个 `tftp` 行的注释。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2055
+#, fuzzy
 msgid "Start man:inetd[8]:"
-msgstr ""
+msgstr "启动 man:inetd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2059
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service inetd start\n"
-msgstr ""
+msgstr "# service inetd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2062
+#, fuzzy
 msgid ""
 "Install the base system into [.filename]#${NFSROOTDIR}#, either by "
 "decompressing the official archives or by rebuilding the FreeBSD kernel and "
@@ -4384,97 +4597,104 @@ msgid ""
 "Source”] for more detailed instructions, but do not forget to add `DESTDIR=_"
 "${NFSROOTDIR}_` when running the `make installkernel` and `make "
 "installworld` commands."
-msgstr ""
+msgstr "将基本系统安装到 [.filename]#${NFSROOTDIR}# 中，可以解压官方归档文件，也可以重新构建 FreeBSD 内核和用户空间（更详细的说明请参见 crossref:cutting-edge[makeworld,“从源代码更新 FreeBSD”]，但运行 `make installkernel` 和 `make installworld` 命令时，别忘了添加 `DESTDIR=_${NFSROOTDIR}_`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2063
+#, fuzzy
 msgid ""
 "Test that the TFTP server works and can download the boot loader which will "
 "be obtained via PXE:"
-msgstr ""
+msgstr "测试 TFTP 服务器是否正常工作，以及是否能够下载通过 PXE 获取的引导加载器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2069
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tftp localhost\n"
 "tftp> get FreeBSD/install/boot/pxeboot\n"
 "Received 264951 bytes in 0.1 seconds\n"
-msgstr ""
+msgstr "# tftp localhost\ntftp> get FreeBSD/install/boot/pxeboot\nReceived 264951 bytes in 0.1 seconds\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2072
+#, fuzzy
 msgid ""
 "Edit [.filename]#${NFSROOTDIR}/etc/fstab# and create an entry to mount the "
 "root file system over NFS:"
-msgstr ""
+msgstr "编辑 [.filename]#${NFSROOTDIR}/etc/fstab#，添加一项以通过 NFS 挂载根文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2077
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Device                                         Mountpoint    FSType   Options  Dump Pass\n"
 "myhost.example.com:/b/tftpboot/FreeBSD/install       /         nfs      ro        0    0\n"
-msgstr ""
+msgstr "# Device                                         Mountpoint    FSType   Options  Dump Pass\nmyhost.example.com:/b/tftpboot/FreeBSD/install       /         nfs      ro        0    0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2081
+#, fuzzy
 msgid ""
 "Replace _myhost.example.com_ with the hostname or IP address of the NFS "
 "server.  In this example, the root file system is mounted read-only in order "
 "to prevent NFS clients from potentially deleting the contents of the root "
 "file system."
-msgstr ""
+msgstr "将 _myhost.example.com_ 替换为 NFS 服务器的主机名或 IP 地址。在此示例中，根文件系统以只读方式挂载，以防止 NFS 客户端意外删除根文件系统的内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2082
+#, fuzzy
 msgid ""
 "Set the root password in the PXE environment for client machines which are "
 "PXE booting :"
-msgstr ""
+msgstr "为通过 PXE 启动的客户端设置 PXE 环境中的 root 密码："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2087
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# chroot ${NFSROOTDIR}\n"
 "# passwd\n"
-msgstr ""
+msgstr "# chroot ${NFSROOTDIR}\n# passwd\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2090
+#, fuzzy
 msgid ""
 "If needed, enable man:ssh[1] root logins for client machines which are PXE "
 "booting by editing [.filename]#${NFSROOTDIR}/etc/ssh/sshd_config# and "
 "enabling `PermitRootLogin`. This option is documented in man:sshd_config[5]."
-msgstr ""
+msgstr "如有需要，可通过编辑 [.filename]#${NFSROOTDIR}/etc/ssh/sshd_config# 并启用 `PermitRootLogin`，允许通过 PXE 启动的客户端使用 man:ssh[1] 以 root 身份登录。此选项的说明见 man:sshd_config[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2091
+#, fuzzy
 msgid ""
 "Perform any other needed customizations of the PXE environment in [."
 "filename]#${NFSROOTDIR}#. These customizations could include things like "
 "installing packages or editing the password file with man:vipw[8]."
-msgstr ""
+msgstr "在 [.filename]#${NFSROOTDIR}# 中执行其他所需的 PXE 环境自定义设置。这些设置可能包括安装软件包，或使用 man:vipw[8] 编辑密码文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2094
+#, fuzzy
 msgid ""
 "When booting from an NFS root volume, [.filename]#/etc/rc# detects the NFS "
 "boot and runs [.filename]#/etc/rc.initdiskless#.  In this case, [.filename]#/"
 "etc# and [.filename]#/var# need to be memory backed file systems so that "
 "these directories are writable but the NFS root directory is read-only:"
-msgstr ""
+msgstr "从 NFS 根卷启动时，[.filename]#/etc/rc# 会检测到 NFS 启动并运行 [.filename]#/etc/rc.initdiskless#。在这种情况下，[.filename]#/etc# 和 [.filename]#/var# 需要使用以内存为后备的文件系统，以便这些目录可写，而 NFS 根目录保持只读："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# chroot ${NFSROOTDIR}\n"
 "# mkdir -p conf/base\n"
 "# tar -c -v -f conf/base/etc.cpio.gz --format cpio --gzip etc\n"
 "# tar -c -v -f conf/base/var.cpio.gz --format cpio --gzip var\n"
-msgstr ""
+msgstr "# chroot ${NFSROOTDIR}\n# mkdir -p conf/base\n# tar -c -v -f conf/base/etc.cpio.gz --format cpio --gzip etc\n# tar -c -v -f conf/base/var.cpio.gz --format cpio --gzip var\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2106
@@ -4501,23 +4721,25 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring the DHCP Server"
-msgstr ""
+msgstr "配置 DHCP 服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2111
+#, fuzzy
 msgid ""
 "The DHCP server does not need to be the same machine as the TFTP and NFS "
 "server, but it needs to be accessible in the network."
-msgstr ""
+msgstr "DHCP 服务器不必与 TFTP 和 NFS 服务器位于同一台机器上，但必须能够通过网络访问。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2113
+#, fuzzy
 msgid ""
 "DHCP is not part of the FreeBSD base system but can be installed using the "
 "package:net/isc-dhcp44-server[] port or package."
-msgstr ""
+msgstr "DHCP 不属于 FreeBSD 基本系统，但可以通过 package:net/isc-dhcp44-server[] 移植版或软件包安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2116
@@ -4531,7 +4753,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "subnet 192.168.0.0 netmask 255.255.255.0 {\n"
 "   range 192.168.0.2 192.168.0.3 ;\n"
@@ -4540,64 +4762,68 @@ msgid ""
 "   option broadcast-address 192.168.0.255 ;\n"
 "   option domain-name-servers 192.168.35.35, 192.168.35.36 ;\n"
 "   option domain-name \"example.com\";\n"
-msgstr ""
+msgstr "subnet 192.168.0.0 netmask 255.255.255.0 {\n   range 192.168.0.2 192.168.0.3 ;\n   option subnet-mask 255.255.255.0 ;\n   option routers 192.168.0.1 ;\n   option broadcast-address 192.168.0.255 ;\n   option domain-name-servers 192.168.35.35, 192.168.35.36 ;\n   option domain-name \"example.com\";\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "   # IP address of TFTP server\n"
 "   next-server 192.168.0.1 ;\n"
-msgstr ""
+msgstr "   # IP address of TFTP server\n   next-server 192.168.0.1 ;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "   # path of boot loader obtained via tftp\n"
 "   filename \"FreeBSD/install/boot/pxeboot\" ;\n"
-msgstr ""
+msgstr "   # path of boot loader obtained via tftp\n   filename \"FreeBSD/install/boot/pxeboot\" ;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "   # pxeboot boot loader will try to NFS mount this directory for root FS\n"
 "   option root-path \"192.168.0.1:/b/tftpboot/FreeBSD/install/\" ;\n"
-msgstr ""
+msgstr "   # pxeboot boot loader will try to NFS mount this directory for root FS\n   option root-path \"192.168.0.1:/b/tftpboot/FreeBSD/install/\" ;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "}\n"
-msgstr ""
+msgstr "}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2140
+#, fuzzy
 msgid ""
 "The `next-server` directive is used to specify the IP address of the TFTP "
 "server."
-msgstr ""
+msgstr "`next-server` 指令用于指定 TFTP 服务器的 IP 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2143
+#, fuzzy
 msgid ""
 "The `filename` directive defines the path to [.filename]#/boot/pxeboot#.  A "
 "relative filename is used, meaning that [.filename]#/b/tftpboot# is not "
 "included in the path."
-msgstr ""
+msgstr "`filename` 指令定义 [.filename]#/boot/pxeboot# 的路径。这里使用相对文件名，也就是说，路径中不包含 [.filename]#/b/tftpboot#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2145
+#, fuzzy
 msgid "The `root-path` option defines the path to the NFS root file system."
-msgstr ""
+msgstr "`root-path` 选项定义 NFS 根文件系统的路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2147
+#, fuzzy
 msgid ""
 "Once the edits are saved, enable DHCP at boot time by adding the following "
 "line to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "保存编辑内容后，将以下行添加到 [.filename]#/etc/rc.conf#，以便在启动时启用 DHCP："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2151
@@ -4607,20 +4833,21 @@ msgstr "dhcpd_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2154
+#, fuzzy
 msgid "Then start the DHCP service:"
-msgstr ""
+msgstr "然后启动 DHCP 服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service isc-dhcpd start\n"
-msgstr ""
+msgstr "# service isc-dhcpd start\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Debugging PXE Problems"
-msgstr ""
+msgstr "调试 PXE 问题"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2164
@@ -4637,139 +4864,152 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2166
+#, fuzzy
 msgid ""
 "This section describes some troubleshooting tips for isolating the source of "
 "the configuration problem should no clients be able to PXE boot."
-msgstr ""
+msgstr "本节介绍一些故障排除技巧，用于在没有客户端能够通过 PXE 启动时定位配置问题的根源。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2170
+#, fuzzy
 msgid ""
 "Use the package:net/wireshark[] package or port to debug the network traffic "
 "involved during the PXE booting process, which is illustrated in the diagram "
 "below."
-msgstr ""
+msgstr "使用 package:net/wireshark[] 软件包或移植版调试 PXE 启动过程中涉及的网络流量，相关过程如下面的示意图所示。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PXE Booting Process with NFS Root Mount"
-msgstr ""
+msgstr "使用 NFS 根挂载的 PXE 启动过程"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pxe-nfs.png"
-msgstr ""
+msgstr "pxe-nfs.png"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2175
+#, fuzzy
 msgid "Client broadcasts a DHCPDISCOVER message."
-msgstr ""
+msgstr "客户端广播 DHCPDISCOVER 消息。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2177
+#, fuzzy
 msgid ""
 "The DHCP server responds with the IP address, next-server, filename, and "
 "root-path values."
-msgstr ""
+msgstr "DHCP 服务器响应并提供 IP 地址、next-server、filename 和 root-path 的值。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2179
+#, fuzzy
 msgid ""
 "The client sends a TFTP request to next-server, asking to retrieve filename."
-msgstr ""
+msgstr "客户端向 next-server 发送 TFTP 请求，请求获取 filename。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2181
+#, fuzzy
 msgid "The TFTP server responds and sends filename to client."
-msgstr ""
+msgstr "TFTP 服务器响应并向客户端发送 filename。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2183
+#, fuzzy
 msgid ""
 "The client executes filename, which is pxeboot(8), which then loads the "
 "kernel. When the kernel executes, the root file system specified by root-"
 "path is mounted over NFS."
-msgstr ""
+msgstr "客户端执行 filename，即 pxeboot(8)，随后加载内核。内核执行后，会通过 NFS 挂载由 root-path 指定的根文件系统。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2185
+#, fuzzy
 msgid ""
 "On the TFTP server, read [.filename]#/var/log/xferlog# to ensure that [."
 "filename]#pxeboot# is being retrieved from the correct location. To test "
 "this example configuration:"
-msgstr ""
+msgstr "在 TFTP 服务器上，查看 [.filename]#/var/log/xferlog#，确认 [.filename]#pxeboot# 是从正确的位置获取的。要测试此示例配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tftp 192.168.0.1\n"
 "tftp> get FreeBSD/install/boot/pxeboot\n"
 "Received 264951 bytes in 0.1 seconds\n"
-msgstr ""
+msgstr "# tftp 192.168.0.1\ntftp> get FreeBSD/install/boot/pxeboot\nReceived 264951 bytes in 0.1 seconds\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2194
+#, fuzzy
 msgid ""
 "The `BUGS` sections in man:tftpd[8] and man:tftp[1] document some "
 "limitations with TFTP."
-msgstr ""
+msgstr "man:tftpd[8] 和 man:tftp[1] 手册页的 `BUGS` 部分记录了 TFTP 的一些限制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2195
+#, fuzzy
 msgid ""
 "Make sure that the root file system can be mounted via NFS. To test this "
 "example configuration:"
-msgstr ""
+msgstr "确保根文件系统可以通过 NFS 挂载。要测试此示例配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount -t nfs 192.168.0.1:/b/tftpboot/FreeBSD/install /mnt\n"
-msgstr ""
+msgstr "# mount -t nfs 192.168.0.1:/b/tftpboot/FreeBSD/install /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2202
+#, fuzzy
 msgid ""
 "For UEFI PXE based booting, replace the [.filename]#boot/pxeboot# file with "
 "the [.filename]#boot/loader.efi# file:"
-msgstr ""
+msgstr "对于基于 UEFI 的 PXE 启动，请将 [.filename]#boot/pxeboot# 文件替换为 [.filename]#boot/loader.efi# 文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# chroot ${NFSROOTDIR}\n"
 "# mv boot/pxeboot boot/pxeboot.original\n"
 "# cp boot/loader.efi boot/pxeboot\n"
-msgstr ""
+msgstr "# chroot ${NFSROOTDIR}\n# mv boot/pxeboot boot/pxeboot.original\n# cp boot/loader.efi boot/pxeboot\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common Address Redundancy Protocol (CARP)"
-msgstr ""
+msgstr "通用地址冗余协议（CARP）"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2215
+#, fuzzy
 msgid ""
 "The Common Address Redundancy Protocol (CARP) allows multiple hosts to share "
 "the same IP address and Virtual Host ID (VHID) in order to provide _high "
 "availability_ for one or more services.  This means that one or more hosts "
 "can fail, and the other hosts will transparently take over so that users do "
 "not see a service failure."
-msgstr ""
+msgstr "通用地址冗余协议（CARP）允许多台主机共享同一个 IP 地址和虚拟主机 ID（VHID），以便为一个或多个服务提供 __高可用性__。这意味着一台或多台主机发生故障时，其他主机可以透明地接管服务，用户不会察觉服务中断。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2219
+#, fuzzy
 msgid ""
 "In addition to the shared IP address, each host has its own IP address for "
 "management and configuration.  All of the machines that share an IP address "
 "have the same VHID.  The VHID for each virtual IP address must be unique "
 "across the broadcast domain of the network interface."
-msgstr ""
+msgstr "除共享 IP 地址外，每台主机还拥有自己的 IP 地址，用于管理和配置。所有共享同一 IP 地址的机器都具有相同的 VHID。每个虚拟 IP 地址的 VHID 在网络接口的广播域中必须唯一。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2222
@@ -4785,12 +5025,13 @@ msgstr ""
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2225
+#, fuzzy
 msgid ""
 "This example configures failover support with three hosts, all with unique "
 "IP addresses, but providing the same web content.  It has two different "
 "masters named `hosta.example.org` and `hostb.example.org`, with a shared "
 "backup named `hostc.example.org`."
-msgstr ""
+msgstr "此示例配置了由三台主机组成的故障切换环境，各主机拥有唯一的 IP 地址，但提供相同的 Web 内容。其中有两个不同的主服务器，分别名为 `hosta.example.org` 和 `hostb.example.org`，以及一台由它们共用的备用服务器 `hostc.example.org`。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2232
@@ -4816,16 +5057,17 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using CARP"
-msgstr ""
+msgstr "使用 CARP"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2237
+#, fuzzy
 msgid ""
 "Enable boot-time support for CARP by adding an entry for the [."
 "filename]#carp.ko# kernel module in [.filename]#/boot/loader.conf#:"
-msgstr ""
+msgstr "要在启动时启用 CARP 支持，请在 [.filename]#/boot/loader.conf# 中添加 [.filename]#carp.ko# 内核模块条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2241
@@ -4840,17 +5082,18 @@ msgstr "要立即加载模块而不重新启动："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload carp\n"
-msgstr ""
+msgstr "# kldload carp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2251
+#, fuzzy
 msgid ""
 "For users who prefer to use a custom kernel, include the following line in "
 "the custom kernel configuration file and compile the kernel as described in "
 "crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel]:"
-msgstr ""
+msgstr "对于偏好使用自定义内核的用户，请在自定义内核配置文件中加入以下行，并按照 crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel] 中的说明编译内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2255
@@ -4860,41 +5103,44 @@ msgstr "device\tcarp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2258
+#, fuzzy
 msgid ""
 "The hostname, management IP address and subnet mask, shared IP address, and "
 "VHID are all set by adding entries to [.filename]#/etc/rc.conf#. This "
 "example is for `hosta.example.org`:"
-msgstr ""
+msgstr "主机名、管理 IP 地址和子网掩码、共享 IP 地址以及 VHID 都通过在 [.filename]#/etc/rc.conf# 中添加条目来设置。以下示例适用于 `hosta.example.org`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hostname=\"hosta.example.org\"\n"
 "ifconfig_em0=\"inet 192.168.1.3 netmask 255.255.255.0\"\n"
 "ifconfig_em0_alias0=\"inet vhid 1 pass testpass alias 192.168.1.50/32\"\n"
-msgstr ""
+msgstr "hostname=\"hosta.example.org\"\nifconfig_em0=\"inet 192.168.1.3 netmask 255.255.255.0\"\nifconfig_em0_alias0=\"inet vhid 1 pass testpass alias 192.168.1.50/32\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2269
+#, fuzzy
 msgid ""
 "The next set of entries are for `hostb.example.org`.  Since it represents a "
 "second master, it uses a different shared IP address and VHID.  However, the "
 "passwords specified with `pass` must be identical as CARP will only listen "
 "to and accept advertisements from machines with the correct password."
-msgstr ""
+msgstr "接下来这组条目适用于 `hostb.example.org`。由于它是第二台主服务器，因此使用不同的共享 IP 地址和 VHID。不过，`pass` 指定的密码必须相同，因为 CARP 只会监听并接受来自密码正确的机器的通告。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hostname=\"hostb.example.org\"\n"
 "ifconfig_em0=\"inet 192.168.1.4 netmask 255.255.255.0\"\n"
 "ifconfig_em0_alias0=\"inet vhid 2 pass testpass alias 192.168.1.51/32\"\n"
-msgstr ""
+msgstr "hostname=\"hostb.example.org\"\nifconfig_em0=\"inet 192.168.1.4 netmask 255.255.255.0\"\nifconfig_em0_alias0=\"inet vhid 2 pass testpass alias 192.168.1.51/32\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2280
+#, fuzzy
 msgid ""
 "The third machine, `hostc.example.org`, is configured to handle failover "
 "from either master.  This machine is configured with two CARPVHIDs, one to "
@@ -4902,29 +5148,31 @@ msgid ""
 "advertising skew, `advskew`, is set to ensure that the backup host "
 "advertises later than the master, since `advskew` controls the order of "
 "precedence when there are multiple backup servers."
-msgstr ""
+msgstr "第三台机器 `hostc.example.org` 配置为在任一主服务器发生故障时进行接管。此机器配置了两个 CARPVHID，分别处理每台主服务器对应的虚拟 IP 地址。CARP 通告偏移量 `advskew` 设置为确保备用主机比主服务器更晚发送通告，因为在有多台备用服务器时，`advskew` 用于控制优先级顺序。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hostname=\"hostc.example.org\"\n"
 "ifconfig_em0=\"inet 192.168.1.5 netmask 255.255.255.0\"\n"
 "ifconfig_em0_alias0=\"inet vhid 1 advskew 100 pass testpass alias 192.168.1.50/32\"\n"
 "ifconfig_em0_alias1=\"inet vhid 2 advskew 100 pass testpass alias 192.168.1.51/32\"\n"
-msgstr ""
+msgstr "hostname=\"hostc.example.org\"\nifconfig_em0=\"inet 192.168.1.5 netmask 255.255.255.0\"\nifconfig_em0_alias0=\"inet vhid 1 advskew 100 pass testpass alias 192.168.1.50/32\"\nifconfig_em0_alias1=\"inet vhid 2 advskew 100 pass testpass alias 192.168.1.51/32\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2291
+#, fuzzy
 msgid ""
 "Having two CARPVHIDs configured means that `hostc.example.org` will notice "
 "if either of the master servers becomes unavailable.  If a master fails to "
 "advertise before the backup server, the backup server will pick up the "
 "shared IP address until the master becomes available again."
-msgstr ""
+msgstr "配置两个 CARPVHID 后，`hostc.example.org` 就能检测到任一主服务器是否不可用。如果主服务器未能在备用服务器之前发送通告，备用服务器就会接管共享 IP 地址，直到主服务器恢复可用。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2298
+#, fuzzy
 msgid ""
 "If the original master server becomes available again, `hostc.example.org` "
 "will not release the virtual IP address back to it automatically.  For this "
@@ -4932,13 +5180,13 @@ msgid ""
 "default, it is controlled via the man:sysctl[8] variable `net.inet.carp."
 "preempt`.  The administrator can force the backup server to return the IP "
 "address to the master:"
-msgstr ""
+msgstr "如果原主服务器重新恢复可用，`hostc.example.org` 不会自动将虚拟 IP 地址交还给它。要实现这一点，必须启用抢占功能。该功能默认禁用，由 man:sysctl[8] 变量 `net.inet.carp.preempt` 控制。管理员可以强制备用服务器将 IP 地址交还给主服务器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig em0 vhid 1 state backup\n"
-msgstr ""
+msgstr "# ifconfig em0 vhid 1 state backup\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2308
@@ -4953,11 +5201,12 @@ msgstr "配置完成后，重启网络或操作系统。这样就启动了高可
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2311
+#, fuzzy
 msgid ""
 "CARP functionality can be controlled via several man:sysctl[8] variables "
 "documented in the man:carp[4] manual pages.  Other actions can be triggered "
 "from CARP events by using man:devd[8]."
-msgstr ""
+msgstr "CARP 功能可以通过 man:carp[4] 手册页中记载的多个 man:sysctl[8] 变量进行控制。也可以使用 man:devd[8] 根据 CARP 事件触发其他操作。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2313
@@ -4978,92 +5227,101 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2320
+#, fuzzy
 msgid ""
 "On FreeBSD, VLANs must be supported by the network card driver.  To see "
 "which drivers support vlans, refer to the man:vlan[4] manual page."
-msgstr ""
+msgstr "在 FreeBSD 上，VLAN 必须由网卡驱动程序支持。要查看哪些驱动程序支持 VLAN，请参阅 man:vlan[4] 手册页。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2323
+#, fuzzy
 msgid ""
 "When configuring a VLAN, a couple pieces of information must be known.  "
 "First, which network interface? Second, what is the VLAN tag?"
-msgstr ""
+msgstr "配置 VLAN 时，需要了解几项信息。首先，使用哪个网络接口？其次，VLAN 标签是什么？"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2325
+#, fuzzy
 msgid ""
 "To configure VLANs at run time, with a NIC of `em0` and a VLAN tag of `5` "
 "the command would look like this:"
-msgstr ""
+msgstr "要在运行时配置 VLAN，假设网卡为 `em0` 且 VLAN 标签为 `5`，命令如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig em0.5 create vlan 5 vlandev em0 inet 192.168.20.20/24\n"
-msgstr ""
+msgstr "# ifconfig em0.5 create vlan 5 vlandev em0 inet 192.168.20.20/24\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2334
+#, fuzzy
 msgid ""
 "See how the interface name includes the NIC driver name and the VLAN tag, "
 "separated by a period? This is a best practice to make maintaining the VLAN "
 "configuration easy when many VLANs are present on a machine."
-msgstr ""
+msgstr "注意到接口名称包含网卡驱动程序名称和 VLAN 标签，两者以句点分隔了吗？当机器上有多个 VLAN 时，这是一种便于维护 VLAN 配置的最佳实践。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2340
+#, fuzzy
 msgid ""
 "When defining VLANs, ensure that the parent network interface is also "
 "configured and enabled.  The minimum configuration for the above example "
 "would be:"
-msgstr ""
+msgstr "定义 VLAN 时，请确保父网络接口也已配置并启用。上述示例的最小配置如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig em0 up\n"
-msgstr ""
+msgstr "# ifconfig em0 up\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2349
+#, fuzzy
 msgid ""
 "To configure VLANs at boot time, [.filename]#/etc/rc.conf# must be updated.  "
 "To duplicate the configuration above, the following will need to be added:"
-msgstr ""
+msgstr "要在启动时配置 VLAN，必须更新 [.filename]#/etc/rc.conf#。要复现上述配置，需要添加以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "vlans_em0=\"5\"\n"
 "ifconfig_em0_5=\"inet 192.168.20.20/24\"\n"
-msgstr ""
+msgstr "vlans_em0=\"5\"\nifconfig_em0_5=\"inet 192.168.20.20/24\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2357
+#, fuzzy
 msgid ""
 "Additional VLANs may be added, by simply adding the tag to the `vlans_em0` "
 "field and adding an additional line configuring the network on that VLAN "
 "tag's interface."
-msgstr ""
+msgstr "只需将标签添加到 `vlans_em0` 字段，并添加一行用于配置该 VLAN 标签对应接口的网络设置，即可添加其他 VLAN。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2362
+#, fuzzy
 msgid ""
 "When defining VLANs in [.filename]#/etc/rc.conf#, make sure that the parent "
 "network interface is configured and enabled as well.  The minimum "
 "configuration for the above example would be:"
-msgstr ""
+msgstr "在 [.filename]#/etc/rc.conf# 中定义 VLAN 时，请确保父网络接口也已配置并启用。上述示例的最小配置如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ifconfig_em0=\"up\"\n"
-msgstr ""
+msgstr "ifconfig_em0=\"up\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2372
+#, fuzzy
 msgid ""
 "It is useful to assign a symbolic name to an interface so that when the "
 "associated hardware is changed, only a few configuration variables need to "
@@ -5071,32 +5329,34 @@ msgid ""
 "`em0`.  Later, if the `em0` card is replaced with a card that uses the man:"
 "ixgb[4] driver, all references to `em0.1` will not have to change to "
 "`ixgb0.1`."
-msgstr ""
+msgstr "为接口指定一个符号名称很有用，这样更换相关硬件时，只需更新少数几个配置变量。例如，安全摄像头需要通过 `em0` 上的 VLAN 1 运行。之后，如果将 `em0` 网卡更换为使用 man:ixgb[4] 驱动程序的网卡，就不必将所有 `em0.1` 引用改为 `ixgb0.1`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2374
+#, fuzzy
 msgid ""
 "To configure VLAN `5`, on the NIC `em0`, assign the interface name "
 "`cameras`, and assign the interface an IP address of `_192.168.20.20_` with "
 "a `24`-bit prefix, use this command:"
-msgstr ""
+msgstr "要在网卡 `em0` 上配置 VLAN `5`，将接口命名为 `cameras`，并为接口分配带有 `24` 位前缀的 IP 地址 __192.168.20.20__，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig em0.5 create vlan 5 vlandev em0 name cameras inet 192.168.20.20/24\n"
-msgstr ""
+msgstr "# ifconfig em0.5 create vlan 5 vlandev em0 name cameras inet 192.168.20.20/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2381
+#, fuzzy
 msgid "For an interface named `video`, use the following:"
-msgstr ""
+msgstr "对于名为 `video` 的接口，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig video.5 create vlan 5 vlandev video name cameras inet 192.168.20.20/24\n"
-msgstr ""
+msgstr "# ifconfig video.5 create vlan 5 vlandev video name cameras inet 192.168.20.20/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2388
@@ -5109,12 +5369,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/advanced-networking/_index.adoc:2394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "vlans_video=\"cameras\"\n"
 "create_args_cameras=\"vlan 5\"\n"
 "ifconfig_cameras=\"inet 192.168.20.20/24\"\n"
-msgstr ""
+msgstr "vlans_video=\"cameras\"\ncreate_args_cameras=\"vlan 5\"\nifconfig_cameras=\"inet 192.168.20.20/24\"\n"
 
 #, fuzzy, no-wrap
 #~ msgid "if_carp_load=\"YES\"\n"

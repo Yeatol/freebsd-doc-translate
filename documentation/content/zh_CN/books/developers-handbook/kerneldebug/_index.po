@@ -20,30 +20,31 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Kernel Debugging"
-msgstr ""
+msgstr "FreeBSD 内核调试"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 10. Kernel Debugging"
-msgstr ""
+msgstr "第 10 章：内核调试"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:18
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Debugging"
-msgstr ""
+msgstr "内核调试"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:55
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Obtaining a Kernel Crash Dump"
-msgstr ""
+msgstr "获取内核崩溃转储"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:60
+#, fuzzy
 msgid ""
 "When running a development kernel (e.g., FreeBSD-CURRENT), such as a kernel "
 "under extreme conditions (e.g., very high load averages, tens of thousands "
@@ -51,10 +52,11 @@ msgid ""
 "jail[8]s, etc.), or using a new feature or device driver on FreeBSD-STABLE "
 "(e.g., PAE), sometimes a kernel will panic.  In the event that it does, this "
 "chapter will demonstrate how to extract useful information out of a crash."
-msgstr ""
+msgstr "运行开发版内核（例如 FreeBSD-CURRENT），在极端条件下运行内核（例如负载平均值极高、连接数达数万、并发用户数极多、数百个 man:jail[8] 等），或在 FreeBSD-STABLE 上使用新功能或设备驱动程序（例如 PAE）时，内核有时会发生 panic。本章将演示在发生这种情况时如何从崩溃转储中提取有用信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:65
+#, fuzzy
 msgid ""
 "A system reboot is inevitable once a kernel panics.  Once a system is "
 "rebooted, the contents of a system's physical memory (RAM) is lost, as well "
@@ -63,71 +65,78 @@ msgid ""
 "temporary place to store the bits that are in RAM across a reboot after a "
 "crash.  In doing this, when FreeBSD boots after a crash, a kernel image can "
 "now be extracted and debugging can take place."
-msgstr ""
+msgstr "内核发生 panic 后，系统不可避免地需要重新启动。系统重新启动后，物理内存（RAM）的内容会丢失，panic 发生前交换设备上的数据也会丢失。为保留物理内存中的数据，内核会使用交换设备作为临时存储位置，在崩溃后重启期间保存 RAM 中的数据。这样，FreeBSD 在崩溃后启动时，就可以提取内核映像并进行调试。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:71
+#, fuzzy
 msgid ""
 "A swap device that has been configured as a dump device still acts as a swap "
 "device.  Dumps to non-swap devices (such as tapes or CDRWs, for example) are "
 "not supported at this time.  A \"swap device\" is synonymous with a \"swap "
 "partition.\""
-msgstr ""
+msgstr "配置为转储设备的交换设备仍可用作交换设备。目前不支持将转储写入非交换设备（例如磁带或 CDRW）。 “交换设备”与“交换分区”同义。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:74
+#, fuzzy
 msgid "Several types of kernel crash dumps are available:"
-msgstr ""
+msgstr "有几种类型的内核崩溃转储可用："
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Full memory dumps"
-msgstr ""
+msgstr "完整内存转储"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:77
+#, fuzzy
 msgid "Hold the complete contents of physical memory."
-msgstr ""
+msgstr "保存物理内存的全部内容。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Minidumps"
-msgstr ""
+msgstr "迷你转储"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:80
+#, fuzzy
 msgid "Hold only memory pages in use by the kernel."
-msgstr ""
+msgstr "仅保存内核正在使用的内存页。"
 
 #. type: Labeled list
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Textdumps"
-msgstr ""
+msgstr "文本转储"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:83
+#, fuzzy
 msgid "Hold captured, scripted, or interactive debugger output."
-msgstr ""
+msgstr "保存捕获的、脚本生成的或交互式调试器输出。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:85
+#, fuzzy
 msgid ""
 "Minidumps are the default dump type, and in most cases will capture all "
 "necessary information present in a full memory dump, as most problems can be "
 "isolated only using kernel state."
-msgstr ""
+msgstr "迷你转储是默认的转储类型，而且在大多数情况下，它会捕获完整内存转储中的所有必要信息，因为大多数问题仅凭内核状态就能定位。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring the Dump Device"
-msgstr ""
+msgstr "配置转储设备"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:95
+#, fuzzy
 msgid ""
 "Before the kernel will dump the contents of its physical memory to a dump "
 "device, a dump device must be configured.  A dump device is specified by "
@@ -141,44 +150,48 @@ msgid ""
 "left set to `AUTO`).  On FreeBSD 9.0-RELEASE and later versions, bsdinstall "
 "will ask whether crash dumps should be enabled on the target system during "
 "the install process."
-msgstr ""
+msgstr "在内核将物理内存内容转储到转储设备之前，必须先配置转储设备。使用 man:dumpon[8] 命令指定转储设备，告知内核将内核崩溃转储保存到何处。必须在使用 man:swapon[8] 配置交换分区后调用 man:dumpon[8] 程序。通常可通过在 man:rc.conf[5] 中设置 `dumpdev` 变量来完成此操作：将其设为交换设备的路径（这是提取内核转储的推荐方式），或设为 `AUTO` 以使用第一个已配置的交换设备。在 HEAD 中，`dumpdev` 的默认值为 `AUTO`；在 RELENG_* 分支中则改为 `NO`（RELENG_7 除外，其默认值仍为 `AUTO`）。从 FreeBSD 9.0-RELEASE 开始，bsdinstall 会在安装过程中询问是否要在目标系统上启用崩溃转储。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:99
+#, fuzzy
 msgid ""
 "Check [.filename]#/etc/fstab# or man:swapinfo[8] for a list of swap devices."
-msgstr ""
+msgstr "查看 [.filename]#/etc/fstab# 或 man:swapinfo[8]，了解交换设备列表。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:104
+#, fuzzy
 msgid ""
 "Make sure the `dumpdir` specified in man:rc.conf[5] exists before a kernel "
 "crash!"
-msgstr ""
+msgstr "确保在内核崩溃发生之前，man:rc.conf[5] 中指定的 `dumpdir` 已存在！"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir /var/crash\n"
 "# chmod 700 /var/crash\n"
-msgstr ""
+msgstr "# mkdir /var/crash\n# chmod 700 /var/crash\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:112
+#, fuzzy
 msgid ""
 "Also, remember that the contents of [.filename]#/var/crash# is sensitive and "
 "very likely contains confidential information such as passwords."
-msgstr ""
+msgstr "另请记住，[.filename]#/var/crash# 中的内容属于敏感信息，很可能包含密码等机密信息。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Extracting a Kernel Dump"
-msgstr ""
+msgstr "提取内核转储"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:121
+#, fuzzy
 msgid ""
 "Once a dump has been written to a dump device, the dump must be extracted "
 "before the swap device is mounted.  To extract a dump from a dump device, "
@@ -188,10 +201,11 @@ msgid ""
 "location of the extracted core is placed in the man:rc.conf[5] value "
 "`dumpdir`, by default [.filename]#/var/crash# and will be named [."
 "filename]#vmcore.0#."
-msgstr ""
+msgstr "将转储写入转储设备后，必须在挂载交换设备之前提取转储。要从转储设备提取转储，请使用 man:savecore[8] 程序。如果已在 man:rc.conf[5] 中设置 `dumpdev`，系统会在崩溃后的首次多用户启动期间、挂载交换设备之前自动调用 man:savecore[8]。提取出的核心转储将保存到 man:rc.conf[5] 中 `dumpdir` 指定的位置，默认路径为 [.filename]#/var/crash#，文件名为 [.filename]#vmcore.0#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:125
+#, fuzzy
 msgid ""
 "In the event that there is already a file called [.filename]#vmcore.0# in [."
 "filename]#/var/crash# (or whatever `dumpdir` is set to), the kernel will "
@@ -200,64 +214,68 @@ msgid ""
 "will always create a symbolic link to named [.filename]#vmcore.last# in [."
 "filename]#/var/crash# after a dump is saved.  This symbolic link can be used "
 "to locate the name of the most recent dump."
-msgstr ""
+msgstr "如果 [.filename]#/var/crash#（或 `dumpdir` 指定的目录）中已存在名为 [.filename]#vmcore.0# 的文件，内核会在每次崩溃时递增文件名末尾的数字，以避免覆盖现有的 [.filename]#vmcore# 文件（例如 [.filename]#vmcore.1#）。保存转储后，man:savecore[8] 总会在 [.filename]#/var/crash# 中创建指向该文件的符号链接 [.filename]#vmcore.last#。可通过此符号链接查找最新转储的文件名。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:129
+#, fuzzy
 msgid ""
 "The man:crashinfo[8] utility generates a text file containing a summary of "
 "information from a full memory dump or minidump.  If `dumpdev` has been set "
 "in man:rc.conf[5], man:crashinfo[8] will be invoked automatically after man:"
 "savecore[8].  The output is saved to a file in `dumpdir` named [."
 "filename]#core.txt.N#."
-msgstr ""
+msgstr "man:crashinfo[8] 工具会生成一个文本文件，其中包含完整内存转储或迷你转储的信息摘要。如果已在 man:rc.conf[5] 中设置 `dumpdev`，man:savecore[8] 运行后会自动调用 man:crashinfo[8]。输出会保存到 `dumpdir` 中名为 [.filename]#core.txt.N# 的文件里。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:134
+#, fuzzy
 msgid ""
 "If you are testing a new kernel but need to boot a different one in order to "
 "get your system up and running again, boot it only into single user mode "
 "using the `-s` flag at the boot prompt, and then perform the following steps:"
-msgstr ""
+msgstr "如果你正在测试新内核，但需要启动另一个内核才能让系统恢复运行，请使用启动提示符处的 `-s` 标志，仅进入单用户模式，然后执行以下步骤："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# fsck -p\n"
 "# mount -a -t ufs       # make sure /var/crash is writable\n"
 "# savecore /var/crash /dev/ad0s1b\n"
 "# exit                  # exit to multi-user\n"
-msgstr ""
+msgstr "# fsck -p\n# mount -a -t ufs       # 确保 /var/crash 可写\n# savecore /var/crash /dev/ad0s1b\n# exit                  # 退出到多用户模式\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:146
+#, fuzzy
 msgid ""
 "This instructs man:savecore[8] to extract a kernel dump from [.filename]#/"
 "dev/ad0s1b# and place the contents in [.filename]#/var/crash#.  Do not "
 "forget to make sure the destination directory [.filename]#/var/crash# has "
 "enough space for the dump.  Also, do not forget to specify the correct path "
 "to your swap device as it is likely different than [.filename]#/dev/ad0s1b#!"
-msgstr ""
+msgstr "这会指示 man:savecore[8] 从 [.filename]#/dev/ad0s1b# 提取内核转储，并将其内容放入 [.filename]#/var/crash#。请确保目标目录 [.filename]#/var/crash# 有足够空间来存放转储。另外，别忘了指定交换设备的正确路径，因为它很可能不是 [.filename]#/dev/ad0s1b#！"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing Kernel Dump Configuration"
-msgstr ""
+msgstr "测试内核转储配置"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:153
+#, fuzzy
 msgid ""
 "The kernel includes a man:sysctl[8] node that requests a kernel panic.  This "
 "can be used to verify that your system is properly configured to save kernel "
 "crash dumps.  You may wish to remount existing file systems as read-only in "
 "single user mode before triggering the crash to avoid data loss."
-msgstr ""
+msgstr "内核提供了一个可触发内核 panic 的 man:sysctl[8] 节点。可用它验证系统是否已正确配置为保存内核崩溃转储。触发崩溃前，你可能需要在单用户模式下将现有文件系统重新挂载为只读，以避免数据丢失。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# shutdown now\n"
 "...\n"
@@ -266,77 +284,84 @@ msgid ""
 "# sysctl debug.kdb.panic=1\n"
 "debug.kdb.panic:panic: kdb_sysctl_panic\n"
 "...\n"
-msgstr ""
+msgstr "# shutdown now\n...\nEnter full pathname of shell or RETURN for /bin/sh:\n# mount -a -u -r\n# sysctl debug.kdb.panic=1\ndebug.kdb.panic:panic: kdb_sysctl_panic\n...\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:166
+#, fuzzy
 msgid ""
 "After rebooting, your system should save a dump in [.filename]#/var/crash# "
 "along with a matching summary from man:crashinfo[8]."
-msgstr ""
+msgstr "重新启动后，系统应会在 [.filename]#/var/crash# 中保存转储，并生成对应的 man:crashinfo[8] 摘要。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Debugging a Kernel Crash Dump with `kgdb`"
-msgstr ""
+msgstr "使用 `kgdb` 调试内核崩溃转储"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:174
+#, fuzzy
 msgid ""
 "This section covers man:kgdb[1].  The latest version is included in the "
 "package:devel/gdb[]."
-msgstr ""
+msgstr "本节介绍 man:kgdb[1]。最新版本包含在 package:devel/gdb[] 软件包中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:177
+#, fuzzy
 msgid ""
 "To enter into the debugger and begin getting information from the dump, "
 "start kgdb:"
-msgstr ""
+msgstr "要进入调试器并开始从转储中获取信息，请启动 kgdb："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kgdb -n N\n"
-msgstr ""
+msgstr "# kgdb -n N\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:185
+#, fuzzy
 msgid ""
 "Where _N_ is the suffix of the [.filename]#vmcore.N# to examine.  To open "
 "the most recent dump use:"
-msgstr ""
+msgstr "其中，__N__ 是要检查的 [.filename]#vmcore.N# 的后缀。要打开最新的转储，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kgdb -n last\n"
-msgstr ""
+msgstr "# kgdb -n last\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:193
+#, fuzzy
 msgid ""
 "Normally, man:kgdb[1] should be able to locate the kernel running at the "
 "time the dump was generated.  If it is not able to locate the correct "
 "kernel, pass the pathname of the kernel and dump as two arguments to kgdb:"
-msgstr ""
+msgstr "通常，man:kgdb[1] 应能找到生成转储时正在运行的内核。如果它无法找到正确的内核，请将内核和转储的路径名作为两个参数传给 kgdb："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kgdb /boot/kernel/kernel /var/crash/vmcore.0\n"
-msgstr ""
+msgstr "# kgdb /boot/kernel/kernel /var/crash/vmcore.0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:200
+#, fuzzy
 msgid ""
 "You can debug the crash dump using the kernel sources just like you can for "
 "any other program."
-msgstr ""
+msgstr "你可以像调试其他程序一样，使用内核源代码调试崩溃转储。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:207
+#, fuzzy
 msgid ""
 "This dump is from a 5.2-BETA kernel and the crash comes from deep within the "
 "kernel.  The output below has been modified to include line numbers on the "
@@ -347,11 +372,11 @@ msgid ""
 "debug the problem yourself.  If, however, you do solve the problem, make "
 "sure that your patch winds its way into the source tree via a problem "
 "report, mailing lists, or by being able to commit it!"
-msgstr ""
+msgstr "此转储来自 5.2-BETA 内核，崩溃发生在内核深处。下面的输出经过修改，在左侧添加了行号。第一段跟踪检查指令指针并获取回溯信息。第 41 行 `list` 命令使用的地址就是指令指针，可在第 17 行找到。如果你无法自行调试问题，大多数开发人员会要求你至少提供这些信息。不过，如果你确实解决了问题，请确保通过问题报告、邮件列表，或直接提交补丁的方式，将补丁纳入源代码树！"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " 1:# cd /usr/obj/usr/src/sys/KERNCONF\n"
 " 2:# kgdb kernel.debug /var/crash/vmcore.0\n"
@@ -443,32 +468,35 @@ msgid ""
 "88:#20 0xc070ca4d in Xint0x80_syscall () at {standard input}:136\n"
 "89:---Can't read userspace from dump, or kernel process---\n"
 "90:(kgdb) quit\n"
-msgstr ""
+msgstr " 1:# cd /usr/obj/usr/src/sys/KERNCONF\n 2:# kgdb kernel.debug /var/crash/vmcore.0\n 3:GNU gdb 5.2.1 (FreeBSD)\n 4:Copyright 2002 Free Software Foundation, Inc.\n 5:GDB is free software, covered by the GNU General Public License, and you are\n 6:welcome to change it and/or distribute copies of it under certain conditions.\n 7:Type \"show copying\" to see the conditions.\n 8:There is absolutely no warranty for GDB.  Type \"show warranty\" for details.\n 9:This GDB was configured as \"i386-undermydesk-freebsd\"...\n10:panic: page fault\n11:panic messages:\n12:---\n13:Fatal trap 12: page fault while in kernel mode\n14:cpuid = 0; apic id = 00\n15:fault virtual address   = 0x300\n16:fault code:             = supervisor read, page not present\n17:instruction pointer     = 0x8:0xc0713860\n18:stack pointer           = 0x10:0xdc1d0b70\n19:frame pointer           = 0x10:0xdc1d0b7c\n20:code segment            = base 0x0, limit 0xfffff, type 0x1b\n21:                        = DPL 0, pres 1, def32 1, gran 1\n22:processor eflags        = resume, IOPL = 0\n23:current process         = 14394 (uname)\n24:trap number             = 12\n25:panic: page fault\n26      cpuid = 0;\n27:Stack backtrace:\n28\n29:syncing disks, buffers remaining... 2199 2199 panic: mi_switch: switch in a critical section\n30:cpuid = 0;\n31:Uptime: 2h43m19s\n32:Dumping 255 MB\n33: 16 32 48 64 80 96 112 128 144 160 176 192 208 224 240\n34:---\n35:Reading symbols from /boot/kernel/snd_maestro3.ko...done.\n36:Loaded symbols for /boot/kernel/snd_maestro3.ko\n37:Reading symbols from /boot/kernel/snd_pcm.ko...done.\n38:Loaded symbols for /boot/kernel/snd_pcm.ko\n39:#0  doadump () at /usr/src/sys/kern/kern_shutdown.c:240\n40:240             dumping++;\n41:(kgdb) list *0xc0713860\n42:0xc0713860 is in lapic_ipi_wait (/usr/src/sys/i386/i386/local_apic.c:663).\n43:658                     incr = 0;\n44:659                     delay = 1;\n45:660             } else\n46:661                     incr = 1;\n47:662             for (x = 0; x < delay; x += incr) {\n48:663                     if ((lapic->icr_lo & APIC_DELSTAT_MASK) == APIC_DELSTAT_IDLE)\n49:664                             return (1);\n50:665                     ia32_pause();\n51:666             }\n52:667             return (0);\n53:(kgdb) backtrace\n54:#0  doadump () at /usr/src/sys/kern/kern_shutdown.c:240\n55:#1  0xc055fd9b in boot (howto=260) at /usr/src/sys/kern/kern_shutdown.c:372\n56:#2  0xc056019d in panic () at /usr/src/sys/kern/kern_shutdown.c:550\n57:#3  0xc0567ef5 in mi_switch () at /usr/src/sys/kern/kern_synch.c:470\n58:#4  0xc055fa87 in boot (howto=256) at /usr/src/sys/kern/kern_shutdown.c:312\n59:#5  0xc056019d in panic () at /usr/src/sys/kern/kern_shutdown.c:550\n60:#6  0xc0720c66 in trap_fatal (frame=0xdc1d0b30, eva=0)\n61:    at /usr/src/sys/i386/i386/trap.c:821\n62:#7  0xc07202b3 in trap (frame=\n63:      {tf_fs = -1065484264, tf_es = -1065484272, tf_ds = -1065484272, tf_edi = 1, tf_esi = 0, tf_ebp = -602076292, tf_isp = -602076324, tf_ebx = 0, tf_edx = 0, tf_ecx = 1000000, tf_eax = 243, tf_trapno = 12, tf_err = 0, tf_eip = -1066321824, tf_cs = 8, tf_eflags = 65671, tf_esp = 243, tf_ss = 0})\n64:    at /usr/src/sys/i386/i386/trap.c:250\n65:#8  0xc070c9f8 in calltrap () at {standard input}:94\n66:#9  0xc07139f3 in lapic_ipi_vectored (vector=0, dest=0)\n67:    at /usr/src/sys/i386/i386/local_apic.c:733\n68:#10 0xc0718b23 in ipi_selected (cpus=1, ipi=1)\n69:    at /usr/src/sys/i386/i386/mp_machdep.c:1115\n70:#11 0xc057473e in kseq_notify (ke=0xcc05e360, cpu=0)\n71:    at /usr/src/sys/kern/sched_ule.c:520\n72:#12 0xc0575cad in sched_add (td=0xcbcf5c80)\n73:    at /usr/src/sys/kern/sched_ule.c:1366\n74:#13 0xc05666c6 in setrunqueue (td=0xcc05e360)\n75:    at /usr/src/sys/kern/kern_switch.c:422\n76:#14 0xc05752f4 in sched_wakeup (td=0xcbcf5c80)\n77:    at /usr/src/sys/kern/sched_ule.c:999\n78:#15 0xc056816c in setrunnable (td=0xcbcf5c80)\n79:    at /usr/src/sys/kern/kern_synch.c:570\n80:#16 0xc0567d53 in wakeup (ident=0xcbcf5c80)\n81:    at /usr/src/sys/kern/kern_synch.c:411\n82:#17 0xc05490a8 in exit1 (td=0xcbcf5b40, rv=0)\n83:    at /usr/src/sys/kern/kern_exit.c:509\n84:#18 0xc0548011 in sys_exit () at /usr/src/sys/kern/kern_exit.c:102\n85:#19 0xc0720fd0 in syscall (frame=\n86:      {tf_fs = 47, tf_es = 47, tf_ds = 47, tf_edi = 0, tf_esi = -1, tf_ebp = -1077940712, tf_isp = -602075788, tf_ebx = 672411944, tf_edx = 10, tf_ecx = 672411600, tf_eax = 1, tf_trapno = 12, tf_err = 2, tf_eip = 671899563, tf_cs = 31, tf_eflags = 642, tf_esp = -1077940740, tf_ss = 47})\n87:    at /usr/src/sys/i386/i386/trap.c:1010\n88:#20 0xc070ca4d in Xint0x80_syscall () at {standard input}:136\n89:---Can't read userspace from dump, or kernel process---\n90:(kgdb) quit\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:306
+#, fuzzy
 msgid ""
 "If your system is crashing regularly and you are running out of disk space, "
 "deleting old [.filename]#vmcore# files in [.filename]#/var/crash# could save "
 "a considerable amount of disk space!"
-msgstr ""
+msgstr "如果系统经常崩溃且磁盘空间不足，删除 [.filename]#/var/crash# 中旧的 [.filename]#vmcore# 文件可以释放大量磁盘空间！"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "On-Line Kernel Debugging Using DDB"
-msgstr ""
+msgstr "使用 DDB 进行在线内核调试"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:313
+#, fuzzy
 msgid ""
 "While `kgdb` as an off-line debugger provides a very high level of user "
 "interface, there are some things it cannot do.  The most important ones "
 "being breakpointing and single-stepping kernel code."
-msgstr ""
+msgstr "`kgdb` 作为离线调试器提供了非常完善的用户界面，但有些事情它无法完成。其中最重要的是设置断点和对内核代码进行单步执行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:317
+#, fuzzy
 msgid ""
 "If you need to do low-level debugging on your kernel, there is an on-line "
 "debugger available called DDB.  It allows setting of breakpoints, single-"
@@ -476,58 +504,63 @@ msgid ""
 "However, it cannot access kernel source files, and only has access to the "
 "global and static symbols, not to the full debug information like `kgdb` "
 "does."
-msgstr ""
+msgstr "如果需要对内核进行底层调试，可以使用名为 DDB 的在线调试器。它允许设置断点、单步执行内核函数、检查和修改内核变量等。不过，它无法访问内核源文件，并且只能访问全局符号和静态符号，无法像 `kgdb` 那样访问完整的调试信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:319
+#, fuzzy
 msgid "To configure your kernel to include DDB, add the options"
-msgstr ""
+msgstr "要配置内核以包含 DDB，请添加以下选项"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options KDB\n"
-msgstr ""
+msgstr "options KDB\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options DDB\n"
-msgstr ""
+msgstr "options DDB\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:331
+#, fuzzy
 msgid ""
 "to your config file, and rebuild.  (See extref:{handbook}[The FreeBSD "
 "Handbook] for details on configuring the FreeBSD kernel)."
-msgstr ""
+msgstr "到配置文件中，然后重新构建内核。（有关配置 FreeBSD 内核的详细信息，请参见 extref:{handbook}[FreeBSD 手册]。）"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:337
+#, fuzzy
 msgid ""
 "Once your DDB kernel is running, there are several ways to enter DDB.  The "
 "first, and earliest way is to use the boot flag `-d`.  The kernel will start "
 "up in debug mode and enter DDB prior to any device probing.  Hence you can "
 "even debug the device probe/attach functions.  To use this, exit the "
 "loader's boot menu and enter `boot -d` at the loader prompt."
-msgstr ""
+msgstr "运行启用了 DDB 的内核后，有几种方式可以进入 DDB。最早的一种方式是使用启动标志 `-d`。内核将以调试模式启动，并在探测任何设备之前进入 DDB。因此，你甚至可以调试设备探测/附加函数。要使用此方式，请退出加载器的启动菜单，并在加载器提示符处输入 `boot -d`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:341
+#, fuzzy
 msgid ""
 "The second scenario is to drop to the debugger once the system has booted.  "
 "There are two simple ways to accomplish this.  If you would like to break to "
 "the debugger from the command prompt, simply type the command:"
-msgstr ""
+msgstr "第二种情况是在系统启动后进入调试器。有两种简单的方法可以做到这一点。如果你想从命令提示符进入调试器，只需输入以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl debug.kdb.enter=1\n"
-msgstr ""
+msgstr "# sysctl debug.kdb.enter=1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:352
+#, fuzzy
 msgid ""
 "Alternatively, if you are at the system console, you may use a hot-key on "
 "the keyboard.  The default break-to-debugger sequence is kbd:[Ctrl+Alt"
@@ -538,109 +571,119 @@ msgid ""
 "(`options BREAK_TO_DEBUGGER` in the kernel config file).  It is not the "
 "default since there are a lot of serial adapters around that gratuitously "
 "generate a BREAK condition, for example when pulling the cable."
-msgstr ""
+msgstr "或者，如果你在系统控制台前，可以使用键盘快捷键。默认的进入调试器组合键是 kbd:[Ctrl+Alt+ESC]。对于 syscons，此组合键可以重新映射，而且一些随系统分发的映射表会这样做，因此请确认你知道应使用哪个组合键。串行控制台有一个可用选项，允许通过控制台线路上的串行 BREAK 信号进入 DDB（在内核配置文件中设置 `options BREAK_TO_DEBUGGER`）。默认情况下未启用此选项，因为许多串行适配器会无故产生 BREAK 信号，例如拔掉电缆时。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:355
+#, fuzzy
 msgid ""
 "The third way is that any panic condition will branch to DDB if the kernel "
 "is configured to use it.  For this reason, it is not wise to configure a "
 "kernel with DDB for a machine running unattended."
-msgstr ""
+msgstr "第三种方式是：如果内核配置为使用 DDB，任何 panic 情况都会转入 DDB。因此，对于无人值守运行的机器，不建议配置启用了 DDB 的内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:357
+#, fuzzy
 msgid "To obtain the unattended functionality, add:"
-msgstr ""
+msgstr "要获得无人值守功能，请添加："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options\tKDB_UNATTENDED\n"
-msgstr ""
+msgstr "options\tKDB_UNATTENDED\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:364
+#, fuzzy
 msgid "to the kernel configuration file and rebuild/reinstall."
-msgstr ""
+msgstr "将其添加到内核配置文件中，然后重新构建并安装内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:367
+#, fuzzy
 msgid ""
 "The DDB commands roughly resemble some `gdb` commands.  The first thing you "
 "probably need to do is to set a breakpoint:"
-msgstr ""
+msgstr "DDB 命令与某些 `gdb` 命令大致相似。你可能首先需要设置一个断点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " break function-name address\n"
-msgstr ""
+msgstr " break function-name address\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:376
+#, fuzzy
 msgid ""
 "Numbers are taken hexadecimal by default, but to make them distinct from "
 "symbol names; hexadecimal numbers starting with the letters `a-f` need to be "
 "preceded with `0x` (this is optional for other numbers).  Simple expressions "
 "are allowed, for example: `function-name + 0x103`."
-msgstr ""
+msgstr "数字默认按十六进制处理，但为避免与符号名称混淆，以字母 `a-f` 开头的十六进制数需要加上 `0x` 前缀（其他数字可加可不加）。允许使用简单表达式，例如：`function-name + 0x103`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:378
+#, fuzzy
 msgid "To exit the debugger and continue execution, type:"
-msgstr ""
+msgstr "要退出调试器并继续执行，请输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " continue\n"
-msgstr ""
+msgstr " continue\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:385
+#, fuzzy
 msgid "To get a stack trace of the current thread, use:"
-msgstr ""
+msgstr "要获取当前线程的堆栈跟踪，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " trace\n"
-msgstr ""
+msgstr " trace\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:392
+#, fuzzy
 msgid ""
 "To get a stack trace of an arbitrary thread, specify a process ID or thread "
 "ID as a second argument to `trace`."
-msgstr ""
+msgstr "要获取任意线程的堆栈跟踪，请将进程 ID 或线程 ID 作为第二个参数传给 `trace`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:394
+#, fuzzy
 msgid "If you want to remove a breakpoint, use"
-msgstr ""
+msgstr "要移除断点，请使用"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:399
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " del\n"
 " del address-expression\n"
-msgstr ""
+msgstr " del\n del address-expression\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:403
+#, fuzzy
 msgid ""
 "The first form will be accepted immediately after a breakpoint hit, and "
 "deletes the current breakpoint.  The second form can remove any breakpoint, "
 "but you need to specify the exact address; this can be obtained from:"
-msgstr ""
+msgstr "断点命中后，可以立即使用第一种形式删除当前断点。第二种形式可以移除任意断点，但需要指定确切地址；可通过以下命令获取该地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:407
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " show b\n"
-msgstr ""
+msgstr " show b\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:410
@@ -649,253 +692,276 @@ msgstr "或者:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " show break\n"
-msgstr ""
+msgstr " show break\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:417
+#, fuzzy
 msgid "To single-step the kernel, try:"
-msgstr ""
+msgstr "要对内核进行单步执行，请尝试："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " s\n"
-msgstr ""
+msgstr " s\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:424
+#, fuzzy
 msgid ""
 "This will step into functions, but you can make DDB trace them until the "
 "matching return statement is reached by:"
-msgstr ""
+msgstr "这会进入函数内部；也可以让 DDB 跟踪函数，直到到达对应的返回语句："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " n\n"
-msgstr ""
+msgstr " n\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:434
+#, fuzzy
 msgid ""
 "This is different from ``gdb``'s `next` statement; it is like ``gdb``'s "
 "`finish`.  Pressing kbd:[n] more than once will cause a continue."
-msgstr ""
+msgstr "这与 ``gdb`` 的 `next` 语句不同；它类似于 ``gdb`` 的 `finish`。多次按下 kbd:[n] 会导致继续执行。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:437
+#, fuzzy
 msgid "To examine data from memory, use (for example):"
-msgstr ""
+msgstr "要检查内存中的数据，请使用（例如）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:444
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " x/wx 0xf0133fe0,40\n"
 " x/hd db_symtab_space\n"
 " x/bc termbuf,10\n"
 " x/s stringbuf\n"
-msgstr ""
+msgstr " x/wx 0xf0133fe0,40\n x/hd db_symtab_space\n x/bc termbuf,10\n x/s stringbuf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:449
+#, fuzzy
 msgid ""
 "for word/halfword/byte access, and hexadecimal/decimal/character/ string "
 "display.  The number after the comma is the object count.  To display the "
 "next 0x10 items, simply use:"
-msgstr ""
+msgstr "这些命令分别用于按字/半字/字节访问，并以十六进制/十进制/字符/字符串形式显示。逗号后的数字是对象数量。要显示接下来的 0x10 个项目，只需使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " x ,10\n"
-msgstr ""
+msgstr " x ,10\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:456
+#, fuzzy
 msgid "Similarly, use"
-msgstr ""
+msgstr "类似地，使用"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " x/ia foofunc,10\n"
-msgstr ""
+msgstr " x/ia foofunc,10\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:463
+#, fuzzy
 msgid ""
 "to disassemble the first 0x10 instructions of `foofunc`, and display them "
 "along with their offset from the beginning of `foofunc`."
-msgstr ""
+msgstr "反汇编 `foofunc` 的前 0x10 条指令，并显示它们相对于 `foofunc` 起始位置的偏移量。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:465
+#, fuzzy
 msgid "To modify memory, use the write command:"
-msgstr ""
+msgstr "要修改内存，请使用写入命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " w/b termbuf 0xa 0xb 0\n"
 " w/w 0xf0010030 0 0\n"
-msgstr ""
+msgstr " w/b termbuf 0xa 0xb 0\n w/w 0xf0010030 0 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:474
+#, fuzzy
 msgid ""
 "The command modifier (`b`/`h`/`w`) specifies the size of the data to be "
 "written, the first following expression is the address to write to and the "
 "remainder is interpreted as data to write to successive memory locations."
-msgstr ""
+msgstr "命令修饰符（`b`/`h`/`w`）指定要写入的数据大小；其后的第一个表达式是写入地址，其余部分将被解释为要写入后续内存位置的数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:476
+#, fuzzy
 msgid "If you need to know the current registers, use:"
-msgstr ""
+msgstr "如果需要查看当前寄存器，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " show reg\n"
-msgstr ""
+msgstr " show reg\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:483
+#, fuzzy
 msgid "Alternatively, you can display a single register value by e.g."
-msgstr ""
+msgstr "或者，可以显示单个寄存器的值，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " p $eax\n"
-msgstr ""
+msgstr " p $eax\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:490
+#, fuzzy
 msgid "and modify it by:"
-msgstr ""
+msgstr "并通过以下命令修改它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:494
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " set $eax new-value\n"
-msgstr ""
+msgstr " set $eax new-value\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:497
+#, fuzzy
 msgid "Should you need to call some kernel functions from DDB, simply say:"
-msgstr ""
+msgstr "如果需要从 DDB 调用内核函数，只需输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:501
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " call func(arg1, arg2, ...)\n"
-msgstr ""
+msgstr " call func(arg1, arg2, ...)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:504
+#, fuzzy
 msgid "The return value will be printed."
-msgstr ""
+msgstr "返回值将会显示出来。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:506
+#, fuzzy
 msgid "For a man:ps[1] style summary of all running processes, use:"
-msgstr ""
+msgstr "要以 man:ps[1] 风格汇总所有正在运行的进程，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:510
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " ps\n"
-msgstr ""
+msgstr " ps\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:515
+#, fuzzy
 msgid ""
 "Now you have examined why your kernel failed, and you wish to reboot.  "
 "Remember that, depending on the severity of previous malfunctioning, not all "
 "parts of the kernel might still be working as expected.  Perform one of the "
 "following actions to shut down and reboot your system:"
-msgstr ""
+msgstr "现在你已经检查了内核出错的原因，并准备重新启动。请记住，根据先前故障的严重程度，内核的某些部分可能已无法正常工作。请执行以下操作之一来关闭并重新启动系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:519
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " panic\n"
-msgstr ""
+msgstr " panic\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:522
+#, fuzzy
 msgid ""
 "This will cause your kernel to dump core and reboot, so you can later "
 "analyze the core on a higher level with man:kgdb[1]."
-msgstr ""
+msgstr "这会使内核转储核心文件并重新启动，以便之后使用 man:kgdb[1] 从更高层次分析核心文件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:526
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " call boot(0)\n"
-msgstr ""
+msgstr " call boot(0)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:530
+#, fuzzy
 msgid ""
 "Might be a good way to cleanly shut down the running system, `sync()` all "
 "disks, and finally, in some cases, reboot.  As long as the disk and "
 "filesystem interfaces of the kernel are not damaged, this could be a good "
 "way for an almost clean shutdown."
-msgstr ""
+msgstr "这或许是正常关闭运行中系统的好方法：它会对所有磁盘执行 `sync()`，并且在某些情况下最终重新启动。只要内核的磁盘和文件系统接口未受损，这种方式就可以实现近乎正常的关机。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:534
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " reset\n"
-msgstr ""
+msgstr " reset\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:537
+#, fuzzy
 msgid ""
 "This is the final way out of disaster and almost the same as hitting the Big "
 "Red Button."
-msgstr ""
+msgstr "这是灾难发生时的最后手段，几乎等同于按下那个巨大的红色按钮。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:539
+#, fuzzy
 msgid "If you need a short command summary, simply type:"
-msgstr ""
+msgstr "如果需要简短的命令摘要，只需输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:543
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " help\n"
-msgstr ""
+msgstr " help\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:547
+#, fuzzy
 msgid ""
 "It is highly recommended to have a printed copy of the man:ddb[4] manual "
 "page ready for a debugging session.  Remember that it is hard to read the on-"
 "line manual while single-stepping the kernel."
-msgstr ""
+msgstr "强烈建议在调试会话开始前准备好 man:ddb[4] 手册页的打印副本。请记住，在对内核进行单步执行时，很难阅读在线手册。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:549
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "On-Line Kernel Debugging Using Remote GDB"
-msgstr ""
+msgstr "使用远程 GDB 进行内核在线调试"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:552
+#, fuzzy
 msgid ""
 "The FreeBSD kernel provides a second KDB backend for on-line debugging: man:"
 "gdb[4]."
-msgstr ""
+msgstr "FreeBSD 内核提供了第二种用于在线调试的 KDB 后端：man:gdb[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:558
+#, fuzzy
 msgid ""
 "GDB has supported _remote debugging_ for a long time.  This is done using a "
 "very simple protocol along a serial line.  Unlike the other debugging "
@@ -904,89 +970,96 @@ msgid ""
 "a copy of the kernel binary with all the symbols in it.  The other is the "
 "target machine that runs a copy of the very same kernel (optionally stripped "
 "of the debugging information)."
-msgstr ""
+msgstr "GDB 长期以来一直支持__远程调试__。它通过串行线路使用一种非常简单的协议实现。与上文介绍的其他调试方法不同，这需要两台机器。一台是提供调试环境的主机，其中包括所有源代码以及一份包含全部符号的内核二进制文件。另一台是目标机，运行同一内核的副本（可以去除调试信息）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:560
+#, fuzzy
 msgid ""
 "In order to use remote GDB, ensure that the following options are present in "
 "your kernel configuration:"
-msgstr ""
+msgstr "要使用远程 GDB，请确保内核配置中包含以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "makeoptions     DEBUG=-g\n"
 "options         KDB\n"
 "options         GDB\n"
-msgstr ""
+msgstr "makeoptions     DEBUG=-g\noptions         KDB\noptions         GDB\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:568
+#, fuzzy
 msgid ""
 "Note that the `GDB` option is turned off by default in `GENERIC` kernels on -"
 "STABLE and -RELEASE branches, but enabled on -CURRENT."
-msgstr ""
+msgstr "请注意，在 -STABLE 和 -RELEASE 分支的 `GENERIC` 内核中，`GDB` 选项默认关闭；而在 -CURRENT 中则默认启用。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:572
+#, fuzzy
 msgid ""
 "Once built, copy the kernel to the target machine, and boot it.  Connect the "
 "serial line of the target machine that has \"flags 080\" set on its uart "
 "device to any serial line of the debugging host.  See man:uart[4] for "
 "information on how to set the flags on a uart device."
-msgstr ""
+msgstr "构建完成后，将内核复制到目标机并启动。将目标机上设置了 \"flags 080\" 的 uart 设备所连接的串行线路接到调试主机的任意串行线路。有关如何设置 uart 设备标志的信息，请参阅 man:uart[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:575
+#, fuzzy
 msgid ""
 "The target machine must be made to enter the GDB backend, either due to a "
 "panic or by taking a purposeful trap into the debugger.  Before doing this, "
 "select the GDB debugger backend:"
-msgstr ""
+msgstr "目标机必须进入 GDB 后端，这可以由内核 panic 触发，也可以通过有意触发陷阱进入调试器。在此之前，请选择 GDB 调试器后端："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:579
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysctl debug.kdb.current=gdb\n"
 "debug.kdb.current: ddb -> gdb\n"
-msgstr ""
+msgstr "# sysctl debug.kdb.current=gdb\ndebug.kdb.current: ddb -> gdb\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:586
+#, fuzzy
 msgid ""
 "The supported backends can be listed by the `debug.kdb.available` sysctl.  "
 "If the kernel configuration includes `options DDB`, then man:ddb[4] will be "
 "selected by default.  If `gdb` does not appear in the list of available "
 "backends, then the debug serial port may not have been configured correctly."
-msgstr ""
+msgstr "可用的后端可以通过 `debug.kdb.available` sysctl 列出。如果内核配置包含 `options DDB`，则默认会选择 man:ddb[4]。如果可用后端列表中没有 `gdb`，则调试串行端口可能未正确配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:589
+#, fuzzy
 msgid "Then, force entry to the debugger:"
-msgstr ""
+msgstr "然后，强制进入调试器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:593
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysctl debug.kdb.enter=1\n"
 "debug.kdb.enter: 0KDB: enter: sysctl debug.kdb.enter\n"
-msgstr ""
+msgstr "# sysctl debug.kdb.enter=1\ndebug.kdb.enter: 0KDB: enter: sysctl debug.kdb.enter\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:597
+#, fuzzy
 msgid ""
 "The target machine now awaits connection from a remote GDB client.  On the "
 "debugging machine, go to the compile directory of the target kernel, and "
 "start `gdb`:"
-msgstr ""
+msgstr "此时目标机正在等待远程 GDB 客户端连接。在调试机上，进入目标内核的编译目录并启动 `gdb`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:608
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/obj/usr/src/amd64.amd64/sys/GENERIC/\n"
 "# kgdb kernel\n"
@@ -996,38 +1069,41 @@ msgid ""
 "Reading symbols from kernel...\n"
 "Reading symbols from /usr/obj/usr/src/amd64.amd64/sys/GENERIC/kernel.debug...\n"
 "(kgdb)\n"
-msgstr ""
+msgstr "# cd /usr/obj/usr/src/amd64.amd64/sys/GENERIC/\n# kgdb kernel\nGNU gdb (GDB) 10.2 [GDB v10.2 for FreeBSD]\nCopyright (C) 2021 Free Software Foundation, Inc.\n...\nReading symbols from kernel...\nReading symbols from /usr/obj/usr/src/amd64.amd64/sys/GENERIC/kernel.debug...\n(kgdb)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:611
+#, fuzzy
 msgid ""
 "Initialize the remote debugging session (assuming the first serial port is "
 "being used) by:"
-msgstr ""
+msgstr "假设使用的是第一个串行端口，通过以下命令初始化远程调试会话："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:615
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(kgdb) target remote /dev/cuau0\n"
-msgstr ""
+msgstr "(kgdb) target remote /dev/cuau0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:618
+#, fuzzy
 msgid "Your hosting GDB will now gain control over the target kernel:"
-msgstr ""
+msgstr "现在，主机上的 GDB 将取得对目标内核的控制权："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:625
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Remote debugging using /dev/cuau0\n"
 "kdb_enter (why=<optimized out>, msg=<optimized out>) at /usr/src/sys/kern/subr_kdb.c:506\n"
 "506                     kdb_why = KDB_WHY_UNSET;\n"
 "(kgdb)\n"
-msgstr ""
+msgstr "Remote debugging using /dev/cuau0\nkdb_enter (why=<optimized out>, msg=<optimized out>) at /usr/src/sys/kern/subr_kdb.c:506\n506                     kdb_why = KDB_WHY_UNSET;\n(kgdb)\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:633
+#, fuzzy
 msgid ""
 "Depending on the compiler used, some local variables may appear as "
 "`<optimized out>`, preventing them from being inspected directly by `gdb`.  "
@@ -1036,24 +1112,26 @@ msgid ""
 "variables.  This can be done by passing `COPTFLAGS=-O1` to man:make[1].  "
 "However, certain classes of kernel bugs may manifest differently (or not at "
 "all) when the optimization level is changed."
-msgstr ""
+msgstr "根据所用的编译器，某些局部变量可能会显示为 `<optimized out>`，导致无法通过 `gdb` 直接检查。如果这给调试带来问题，可以降低内核的优化级别进行构建，这可能会提高某些变量的可见性。可以将 `COPTFLAGS=-O1` 传给 man:make[1] 来实现。不过，某些类型的内核错误在优化级别改变后可能会以不同方式出现，甚至不再出现。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:637
+#, fuzzy
 msgid ""
 "You can use this session almost as any other GDB session, including full "
 "access to the source, running it in gud-mode inside an Emacs window (which "
 "gives you an automatic source code display in another Emacs window), etc."
-msgstr ""
+msgstr "你几乎可以像使用其他任何 GDB 会话一样使用此会话，包括完全访问源代码、在 Emacs 窗口中以 gud-mode 运行（这样会在另一个 Emacs 窗口中自动显示源代码）等。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:639
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Debugging a Console Driver"
-msgstr ""
+msgstr "调试控制台驱动程序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:645
+#, fuzzy
 msgid ""
 "Since you need a console driver to run DDB on, things are more complicated "
 "if the console driver itself is failing.  You might remember the use of a "
@@ -1061,34 +1139,36 @@ msgid ""
 "the `Boot:` prompt), and hook up a standard terminal onto your first serial "
 "port.  DDB works on any configured console driver, including a serial "
 "console."
-msgstr ""
+msgstr "由于运行 DDB 需要控制台驱动程序，如果控制台驱动程序本身发生故障，情况就会更复杂。你可能还记得使用串行控制台的方法（通过修改引导块，或在 `Boot:` 提示符处指定 `-h`），并将标准终端连接到第一个串行端口。DDB 可用于任何已配置的控制台驱动程序，包括串行控制台。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:647
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Debugging Deadlocks"
-msgstr ""
+msgstr "调试死锁"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:652
+#, fuzzy
 msgid ""
 "You may experience so called deadlocks, a situation where a system stops "
 "doing useful work.  To provide a helpful bug report in this situation, use "
 "man:ddb[4] as described in the previous section.  Include the output of `ps` "
 "and `trace` for suspected processes in the report."
-msgstr ""
+msgstr "你可能会遇到所谓的死锁，即系统停止执行有用工作的情况。要在这种情况下提供有帮助的错误报告，请按照上一节所述使用 man:ddb[4]。在报告中附上 `ps` 的输出，以及疑似相关进程的 `trace` 输出。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:656
+#, fuzzy
 msgid ""
 "If possible, consider doing further investigation.  The recipe below is "
 "especially useful if you suspect that a deadlock occurs in the VFS layer.  "
 "Add these options to the kernel configuration file."
-msgstr ""
+msgstr "如果可能，请考虑进一步调查。如果怀疑死锁发生在 VFS 层，下面的方法尤其有用。将这些选项添加到内核配置文件中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:667
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "makeoptions \tDEBUG=-g\n"
 "options \tINVARIANTS\n"
@@ -1098,31 +1178,34 @@ msgid ""
 "options \tDEBUG_LOCKS\n"
 "options \tDEBUG_VFS_LOCKS\n"
 "options \tDIAGNOSTIC\n"
-msgstr ""
+msgstr "makeoptions \tDEBUG=-g\noptions \tINVARIANTS\noptions \tINVARIANT_SUPPORT\noptions \tWITNESS\noptions \tWITNESS_SKIPSPIN\noptions \tDEBUG_LOCKS\noptions \tDEBUG_VFS_LOCKS\noptions \tDIAGNOSTIC\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:670
+#, fuzzy
 msgid ""
 "When a deadlock occurs, in addition to the output of the `ps` command, "
 "provide information from the `show pcpu`, `show allpcpu`, `show locks`, "
 "`show alllocks`, `show lockedvnods` and `alltrace`."
-msgstr ""
+msgstr "发生死锁时，除了 `ps` 命令的输出外，还请提供 `show pcpu`、`show allpcpu`、`show locks`、`show alllocks`、`show lockedvnods` 和 `alltrace` 的信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:672
+#, fuzzy
 msgid ""
 "To obtain meaningful backtraces for threaded processes, use `thread thread-"
 "id` to switch to the thread stack, and do a backtrace with `where`."
-msgstr ""
+msgstr "要获取线程化进程有意义的回溯，请使用 `thread thread-id` 切换到该线程的堆栈，然后用 `where` 进行回溯。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:674
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel debugging with Dcons"
-msgstr ""
+msgstr "使用 Dcons 调试内核"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:680
+#, fuzzy
 msgid ""
 "man:dcons[4] is a very simple console driver that is not directly connected "
 "with any physical devices.  It just reads and writes characters from and to "
@@ -1130,16 +1213,17 @@ msgid ""
 "for kernel debugging, especially with a FireWire(R) device.  Currently, "
 "FreeBSD provides two ways to interact with the buffer from outside of the "
 "kernel using man:dconschat[8]."
-msgstr ""
+msgstr "man:dcons[4] 是一种非常简单的控制台驱动程序，不直接连接任何物理设备。它只是在内核或加载器中的缓冲区读写字符。由于结构简单，它非常适合用于内核调试，尤其是配合 FireWire(R) 设备使用。目前，FreeBSD 提供两种方式，可通过 man:dconschat[8] 从内核外部与该缓冲区交互。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:681
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dcons over FireWire(R)"
-msgstr ""
+msgstr "通过 FireWire(R) 使用 Dcons"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:689
+#, fuzzy
 msgid ""
 "Most FireWire(R) (IEEE1394) host controllers are based on the OHCI "
 "specification that supports physical access to the host memory.  This means "
@@ -1149,104 +1233,116 @@ msgid ""
 "as a serial console.  It emulates two serial ports, one for the console and "
 "DDB, the other for GDB.  Since remote memory access is fully handled by the "
 "hardware, the man:dcons[4] buffer is accessible even when the system crashes."
-msgstr ""
+msgstr "大多数 FireWire(R)（IEEE1394）主机控制器基于 OHCI 规范，支持对主机内存进行物理访问。这意味着主机控制器初始化后，无需软件（内核）协助即可访问主机内存。我们可以利用这一功能与 man:dcons[4] 交互。man:dcons[4] 提供与串行控制台类似的功能。它模拟两个串行端口：一个用于控制台和 DDB，另一个用于 GDB。由于远程内存访问完全由硬件处理，即使系统崩溃，man:dcons[4] 缓冲区仍可访问。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:692
+#, fuzzy
 msgid ""
 "FireWire(R) devices are not limited to those integrated into motherboards.  "
 "PCI cards exist for desktops, and a cardbus interface can be purchased for "
 "laptops."
-msgstr ""
+msgstr "FireWire(R) 设备并不限于主板集成设备。台式机可使用 PCI 卡，笔记本电脑则可购买 CardBus 接口卡。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:693
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling FireWire(R) and Dcons support on the target machine"
-msgstr ""
+msgstr "在目标机器上启用 FireWire(R) 和 Dcons 支持"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:696
+#, fuzzy
 msgid ""
 "To enable FireWire(R) and Dcons support in the kernel of the _target "
 "machine_:"
-msgstr ""
+msgstr "要在__目标机器__的内核中启用 FireWire(R) 和 Dcons 支持："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:698
+#, fuzzy
 msgid ""
 "Make sure your kernel supports `dcons`, `dcons_crom` and `firewire`. `Dcons` "
 "should be statically linked with the kernel. For `dcons_crom` and "
 "`firewire`, modules should be OK."
-msgstr ""
+msgstr "确保内核支持 `dcons`、`dcons_crom` 和 `firewire`。`Dcons` 应静态链接到内核中。`dcons_crom` 和 `firewire` 使用模块即可。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:699
+#, fuzzy
 msgid ""
 "Make sure physical DMA is enabled. You may need to add `hw.firewire."
 "phydma_enable=1` to [.filename]#/boot/loader.conf#."
-msgstr ""
+msgstr "确保已启用物理 DMA。可能需要将 `hw.firewire.phydma_enable=1` 添加到 [.filename]#/boot/loader.conf#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:700
+#, fuzzy
 msgid "Add options for debugging."
-msgstr ""
+msgstr "添加调试选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:701
+#, fuzzy
 msgid ""
 "Add `dcons_gdb=1` in [.filename]#/boot/loader.conf# if you use GDB over "
 "FireWire(R)."
-msgstr ""
+msgstr "如果要通过 FireWire(R) 使用 GDB，请在 [.filename]#/boot/loader.conf# 中添加 `dcons_gdb=1`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:702
+#, fuzzy
 msgid "Enable `dcons` in [.filename]#/etc/ttys#."
-msgstr ""
+msgstr "在 [.filename]#/etc/ttys# 中启用 `dcons`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:703
+#, fuzzy
 msgid ""
 "Optionally, to force `dcons` to be the high-level console, add `hw.firewire."
 "dcons_crom.force_console=1` to [.filename]#loader.conf#."
-msgstr ""
+msgstr "还可以将 `hw.firewire.dcons_crom.force_console=1` 添加到 [.filename]#loader.conf#，强制将 `dcons` 设为高级控制台。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:705
+#, fuzzy
 msgid ""
 "To enable FireWire(R) and Dcons support in man:loader[8] on i386 or amd64:"
-msgstr ""
+msgstr "要在 i386 或 amd64 上的 man:loader[8] 中启用 FireWire(R) 和 Dcons 支持："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:707
+#, fuzzy
 msgid ""
 "Add `LOADER_FIREWIRE_SUPPORT=YES` in [.filename]#/etc/make.conf# and rebuild "
 "man:loader[8]:"
-msgstr ""
+msgstr "在 [.filename]#/etc/make.conf# 中添加 `LOADER_FIREWIRE_SUPPORT=YES`，然后重新构建 man:loader[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:711
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cd /sys/boot/i386 && make clean && make && make install\n"
-msgstr ""
+msgstr "# cd /sys/boot/i386 && make clean && make && make install\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:714
+#, fuzzy
 msgid ""
 "To enable man:dcons[4] as an active low-level console, add `boot_multicons="
 "\"YES\"` to [.filename]#/boot/loader.conf#."
-msgstr ""
+msgstr "要将 man:dcons[4] 启用为活动的底层控制台，请将 `boot_multicons=\"YES\"` 添加到 [.filename]#/boot/loader.conf#。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:717
+#, fuzzy
 msgid ""
 "Here are a few configuration examples.  A sample kernel configuration file "
 "would contain:"
-msgstr ""
+msgstr "以下是一些配置示例。内核配置文件示例内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:726
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "device dcons\n"
 "device dcons_crom\n"
@@ -1254,244 +1350,261 @@ msgid ""
 "options DDB\n"
 "options GDB\n"
 "options ALT_BREAK_TO_DEBUGGER\n"
-msgstr ""
+msgstr "device dcons\ndevice dcons_crom\noptions KDB\noptions DDB\noptions GDB\noptions ALT_BREAK_TO_DEBUGGER\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:729
+#, fuzzy
 msgid "And a sample [.filename]#/boot/loader.conf# would contain:"
-msgstr ""
+msgstr "[.filename]#/boot/loader.conf# 示例内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:737
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dcons_crom_load=\"YES\"\n"
 "dcons_gdb=1\n"
 "boot_multicons=\"YES\"\n"
 "hw.firewire.phydma_enable=1\n"
 "hw.firewire.dcons_crom.force_console=1\n"
-msgstr ""
+msgstr "dcons_crom_load=\"YES\"\ndcons_gdb=1\nboot_multicons=\"YES\"\nhw.firewire.phydma_enable=1\nhw.firewire.dcons_crom.force_console=1\n"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:739
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling FireWire(R) and Dcons support on the host machine"
-msgstr ""
+msgstr "在主机上启用 FireWire(R) 和 Dcons 支持"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:742
+#, fuzzy
 msgid "To enable FireWire(R) support in the kernel on the _host machine_:"
-msgstr ""
+msgstr "要在__主机__的内核中启用 FireWire(R) 支持："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:746
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload firewire\n"
-msgstr ""
+msgstr "# kldload firewire\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:749
+#, fuzzy
 msgid ""
 "Find out the EUI64 (the unique 64 bit identifier) of the FireWire(R) host "
 "controller, and use man:fwcontrol[8] or `dmesg` to find the EUI64 of the "
 "target machine."
-msgstr ""
+msgstr "查找 FireWire(R) 主机控制器的 EUI64（唯一的 64 位标识符），并使用 man:fwcontrol[8] 或 `dmesg` 查找目标机器的 EUI64。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:751
+#, fuzzy
 msgid "Run man:dconschat[8], with:"
-msgstr ""
+msgstr "使用以下参数运行 man:dconschat[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:755
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dconschat -e \\# -br -G 12345 -t 00-11-22-33-44-55-66-77\n"
-msgstr ""
+msgstr "# dconschat -e \\# -br -G 12345 -t 00-11-22-33-44-55-66-77\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:758
+#, fuzzy
 msgid ""
 "The following key combinations can be used once man:dconschat[8] is running:"
-msgstr ""
+msgstr "man:dconschat[8] 运行后，可以使用以下按键组合："
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:764
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kbd:[~+.]"
-msgstr ""
+msgstr "kbd:[~+.]"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:766
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disconnect"
-msgstr ""
+msgstr "断开连接"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:767
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:770
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:773
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kbd:[~]"
-msgstr ""
+msgstr "kbd:[~]"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:769
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ALT BREAK"
-msgstr ""
+msgstr "ALT BREAK"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RESET target"
-msgstr ""
+msgstr "重置目标机"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:774
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Suspend dconschat"
-msgstr ""
+msgstr "暂停 dconschat"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:777
+#, fuzzy
 msgid ""
 "Attach remote GDB by starting man:kgdb[1] with a remote debugging session:"
-msgstr ""
+msgstr "通过以远程调试会话启动 man:kgdb[1]，连接远程 GDB："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:781
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " kgdb -r :12345 kernel\n"
-msgstr ""
+msgstr " kgdb -r :12345 kernel\n"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:783
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Some general tips"
-msgstr ""
+msgstr "一些一般性提示"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:786
+#, fuzzy
 msgid "Here are some general tips:"
-msgstr ""
+msgstr "以下是一些一般性提示："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:788
+#, fuzzy
 msgid ""
 "To take full advantage of the speed of FireWire(R), disable other slow "
 "console drivers:"
-msgstr ""
+msgstr "要充分发挥 FireWire(R) 的速度优势，请禁用其他速度较慢的控制台驱动程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:793
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# conscontrol delete ttyd0\t     # serial console\n"
 "# conscontrol delete consolectl\t# video/keyboard\n"
-msgstr ""
+msgstr "# conscontrol delete ttyd0\t     # serial console\n# conscontrol delete consolectl\t# video/keyboard\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:796
+#, fuzzy
 msgid ""
 "There exists a GDB mode for man:emacs[1]; this is what you will need to add "
 "to your [.filename]#.emacs#:"
-msgstr ""
+msgstr "man:emacs[1] 提供 GDB 模式；需要将以下内容添加到 [.filename]#.emacs#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:803
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(setq gud-gdba-command-name \"kgdb -a -a -a -r :12345\")\n"
 "(setq gdb-many-windows t)\n"
 "(xterm-mouse-mode 1)\n"
 "M-x gdba\n"
-msgstr ""
+msgstr "(setq gud-gdba-command-name \"kgdb -a -a -a -r :12345\")\n(setq gdb-many-windows t)\n(xterm-mouse-mode 1)\nM-x gdba\n"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:805
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dcons with KVM"
-msgstr ""
+msgstr "使用 KVM 操作 Dcons"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:809
+#, fuzzy
 msgid ""
 "We can directly read the man:dcons[4] buffer via [.filename]#/dev/mem# for "
 "live systems, and in the core dump for crashed systems.  These give you "
 "similar output to `dmesg -a`, but the man:dcons[4] buffer includes more "
 "information."
-msgstr ""
+msgstr "对于运行中的系统，可以直接通过 [.filename]#/dev/mem# 读取 man:dcons[4] 缓冲区；对于崩溃的系统，则可以从内核转储中读取。读取结果类似于 `dmesg -a` 的输出，但 man:dcons[4] 缓冲区包含更多信息。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:810
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Dcons with KVM"
-msgstr ""
+msgstr "通过 KVM 使用 Dcons"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:813
+#, fuzzy
 msgid "To use man:dcons[4] with KVM:"
-msgstr ""
+msgstr "要通过 KVM 使用 man:dcons[4]："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:815
+#, fuzzy
 msgid "Dump a man:dcons[4] buffer of a live system:"
-msgstr ""
+msgstr "转储运行中系统的 man:dcons[4] 缓冲区："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:819
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dconschat -1\n"
-msgstr ""
+msgstr "# dconschat -1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:822
+#, fuzzy
 msgid "Dump a man:dcons[4] buffer of a crash dump:"
-msgstr ""
+msgstr "转储崩溃转储中的 man:dcons[4] 缓冲区："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:826
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dconschat -1 -M vmcore.XX\n"
-msgstr ""
+msgstr "# dconschat -1 -M vmcore.XX\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:829
+#, fuzzy
 msgid "Live core debugging can be done via:"
-msgstr ""
+msgstr "可以通过以下方式进行实时内核调试："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# fwcontrol -m target_eui64\n"
 "# kgdb kernel /dev/fwmem0.2\n"
-msgstr ""
+msgstr "# fwcontrol -m target_eui64\n# kgdb kernel /dev/fwmem0.2\n"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Glossary of Kernel Options for Debugging"
-msgstr ""
+msgstr "用于调试的内核选项词汇表"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:840
+#, fuzzy
 msgid ""
 "This section provides a brief glossary of compile-time kernel options used "
 "for debugging:"
-msgstr ""
+msgstr "本节简要介绍用于调试的编译时内核选项："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:842
+#, fuzzy
 msgid ""
 "`options KDB`: compiles in the kernel debugger framework. Required for "
 "`options DDB` and `options GDB`. Little or no performance overhead. By "
 "default, the debugger will be entered on panic instead of an automatic "
 "reboot."
-msgstr ""
+msgstr "`options KDB`：将内核调试器框架编译进内核。`options DDB` 和 `options GDB` 均需要此选项。几乎不会造成性能开销。默认情况下，发生 panic 时会进入调试器，而不是自动重启。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:843
+#, fuzzy
 msgid ""
 "`options KDB_UNATTENDED`: change the default value of the `debug."
 "debugger_on_panic` sysctl to 0, which controls whether the debugger is "
@@ -1501,20 +1614,22 @@ msgid ""
 "KDB_UNATTENDED` is compiled in. If you want to leave the kernel debugger "
 "compiled into the kernel but want the system to come back up unless you're "
 "on-hand to use the debugger for diagnostics, use this option."
-msgstr ""
+msgstr "`options KDB_UNATTENDED`：将 `debug.debugger_on_panic` sysctl 的默认值设为 0；该值控制发生 panic 时是否进入调试器。未将 `options KDB` 编译进内核时，发生 panic 会自动重启；将其编译进内核时，默认行为是进入调试器，除非同时编译了 `options KDB_UNATTENDED`。如果希望内核中保留内核调试器，但又希望在无人值守、无法使用调试器诊断时系统仍能重新启动，请使用此选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:844
+#, fuzzy
 msgid ""
 "`options KDB_TRACE`: change the default value of the `debug.trace_on_panic` "
 "sysctl to 1, which controls whether the debugger automatically prints a "
 "stack trace on panic. Especially if running with `options KDB_UNATTENDED`, "
 "this can be helpful to gather basic debugging information on the serial or "
 "firewire console while still rebooting to recover."
-msgstr ""
+msgstr "`options KDB_TRACE`：将 `debug.trace_on_panic` sysctl 的默认值设为 1；该值控制发生 panic 时调试器是否自动打印堆栈跟踪。尤其是在启用 `options KDB_UNATTENDED` 时，此选项有助于通过串行或 FireWire 控制台收集基本调试信息，同时仍然重启以恢复系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:845
+#, fuzzy
 msgid ""
 "`options DDB`: compile in support for the console debugger, DDB. This "
 "interactive debugger runs on whatever the active low-level console of the "
@@ -1526,10 +1641,11 @@ msgid ""
 "debugging kernel symbols, and provides detailed diagnostics of the kernel at "
 "run-time. Many bugs can be fully diagnosed using only DDB output. This "
 "option depends on `options KDB`."
-msgstr ""
+msgstr "`options DDB`：将控制台调试器 DDB 支持编译进内核。此交互式调试器运行于系统当前活动的底层控制台，包括视频控制台、串行控制台或 FireWire 控制台。它提供基本的集成调试功能，例如堆栈跟踪、进程和线程列表、锁状态转储、VM 状态、文件系统状态以及内核内存管理信息。DDB 不需要第二台机器上运行软件，也不要求能够生成内核转储或完整的调试内核符号，并能在运行时对内核进行详细诊断。许多错误仅凭 DDB 输出即可彻底诊断。此选项依赖于 `options KDB`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:846
+#, fuzzy
 msgid ""
 "`options GDB`: compile in support for the remote debugger, GDB, which can "
 "operate over serial cable or firewire. When the debugger is entered, GDB may "
@@ -1542,10 +1658,11 @@ msgid ""
 "and is aware of full data structure definitions, local variables, and is "
 "scriptable. This option is not required to run GDB on a kernel core dump. "
 "This option depends on `options KDB`."
-msgstr ""
+msgstr "`options GDB`：将远程调试器 GDB 的支持编译进内核；GDB 可通过串行电缆或 FireWire 工作。进入调试器后，可以连接 GDB 检查结构内容、生成堆栈跟踪等。与 DDB 相比，某些内核状态更难访问；DDB 能自动生成有用的内核状态摘要，例如自动遍历锁调试或内核内存管理结构，并且使用 GDB 需要第二台运行调试器的机器。另一方面，GDB 能结合内核源代码和完整调试符号，并识别完整的数据结构定义和局部变量，还支持脚本化。运行 GDB 分析内核转储不需要此选项。此选项依赖于 `options KDB`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:847
+#, fuzzy
 msgid ""
 "`options BREAK_TO_DEBUGGER`, `options ALT_BREAK_TO_DEBUGGER`: allow a break "
 "signal or alternative signal on the console to enter the debugger. If the "
@@ -1553,10 +1670,11 @@ msgid ""
 "Due to the current kernel locking, a break signal generated on a serial "
 "console is significantly more reliable at getting into the debugger, and is "
 "generally recommended. This option has little or no performance impact."
-msgstr ""
+msgstr "`options BREAK_TO_DEBUGGER`、`options ALT_BREAK_TO_DEBUGGER`：允许通过控制台上的 break 信号或替代信号进入调试器。如果系统挂起但未发生 panic，这是进入调试器的有效方法。由于当前内核锁定机制，通过串行控制台生成的 break 信号进入调试器的可靠性明显更高，通常建议使用。此选项几乎不会造成性能影响。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:848
+#, fuzzy
 msgid ""
 "`options INVARIANTS`: compile into the kernel a large number of run-time "
 "assertion checks and tests, which constantly test the integrity of kernel "
@@ -1567,18 +1685,20 @@ msgid ""
 "Tests include memory scrubbing and use-after-free testing, which is one of "
 "the more significant sources of overhead. This option depends on `options "
 "INVARIANT_SUPPORT`."
-msgstr ""
+msgstr "`options INVARIANTS`：在内核中编译大量运行时断言检查和测试，持续检查内核数据结构的完整性以及内核算法的不变量。这些测试开销较大，因此默认不编译，但有助于提供有用的“故障即停止”行为：某些不良行为会在内核数据损坏之前使系统进入调试器，从而更易于调试。测试包括内存清理和释放后使用检查，这些是较显著的开销来源。此选项依赖于 `options INVARIANT_SUPPORT`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:849
+#, fuzzy
 msgid ""
 "`options INVARIANT_SUPPORT`: many of the tests present in `options "
 "INVARIANTS` require modified data structures or additional kernel symbols to "
 "be defined."
-msgstr ""
+msgstr "`options INVARIANT_SUPPORT`：`options INVARIANTS` 中的许多测试需要定义经过修改的数据结构或额外的内核符号。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:850
+#, fuzzy
 msgid ""
 "`options WITNESS`: this option enables run-time lock order tracking and "
 "verification, and is an invaluable tool for deadlock diagnosis. WITNESS "
@@ -1590,75 +1710,83 @@ msgid ""
 "debug option has significant performance overhead, which may be somewhat "
 "mitigated through the use of `options WITNESS_SKIPSPIN`. Detailed "
 "documentation may be found in man:witness[4]."
-msgstr ""
+msgstr "`options WITNESS`：此选项启用运行时锁顺序跟踪和验证，是诊断死锁的重要工具。WITNESS 按锁类型维护已获取锁顺序的图，并在每次获取锁时检查图中是否存在环（隐式或显式）。如果检测到环，会在控制台生成警告和堆栈跟踪，指出可能发生了死锁。要使用 DDB 命令 `show locks`、`show witness` 和 `show alllocks`，必须启用 WITNESS。此调试选项会造成显著的性能开销，但使用 `options WITNESS_SKIPSPIN` 可以在一定程度上减轻影响。详细文档参见 man:witness[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:851
+#, fuzzy
 msgid ""
 "`options WITNESS_SKIPSPIN`: disable run-time checking of spinlock lock order "
 "with WITNESS. As spin locks are acquired most frequently in the scheduler, "
 "and scheduler events occur often, this option can significantly speed up "
 "systems running with WITNESS. This option depends on `options WITNESS`."
-msgstr ""
+msgstr "`options WITNESS_SKIPSPIN`：禁用 WITNESS 对自旋锁锁顺序的运行时检查。由于调度器中获取自旋锁的频率最高，且调度器事件经常发生，此选项可以显著提升启用 WITNESS 的系统的运行速度。此选项依赖于 `options WITNESS`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:852
+#, fuzzy
 msgid ""
 "`options WITNESS_KDB`: change the default value of the `debug.witness.kdb` "
 "sysctl to 1, which causes WITNESS to enter the debugger when a lock order "
 "violation is detected, rather than simply printing a warning. This option "
 "depends on `options WITNESS`."
-msgstr ""
+msgstr "`options WITNESS_KDB`：将 `debug.witness.kdb` sysctl 的默认值设为 1；检测到锁顺序违规时，WITNESS 将进入调试器，而不是仅打印警告。此选项依赖于 `options WITNESS`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:853
+#, fuzzy
 msgid ""
 "`options SOCKBUF_DEBUG`: perform extensive run-time consistency checking on "
 "socket buffers, which can be useful for debugging both socket bugs and race "
 "conditions in protocols and device drivers that interact with sockets. This "
 "option significantly impacts network performance, and may change the timing "
 "in device driver races."
-msgstr ""
+msgstr "`options SOCKBUF_DEBUG`：对套接字缓冲区进行全面的运行时一致性检查，有助于调试套接字错误，以及与套接字交互的协议和设备驱动程序中的竞态条件。此选项会显著影响网络性能，并可能改变设备驱动程序竞态的时序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:854
+#, fuzzy
 msgid ""
 "`options DEBUG_VFS_LOCKS`: track lock acquisition points for lockmgr/vnode "
 "locks, expanding the amount of information displayed by `show lockedvnods` "
 "in DDB. This option has a measurable performance impact."
-msgstr ""
+msgstr "`options DEBUG_VFS_LOCKS`：跟踪 lockmgr/vnode 锁的获取位置，扩展 DDB 中 `show lockedvnods` 显示的信息量。此选项会对性能产生可测量的影响。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:855
+#, fuzzy
 msgid ""
 "`options DEBUG_MEMGUARD`: a replacement for the man:malloc[9] kernel memory "
 "allocator that uses the VM system to detect reads or writes from allocated "
 "memory after free. Details may be found in man:memguard[9]. This option has "
 "a significant performance impact, but can be very helpful in debugging "
 "kernel memory corruption bugs."
-msgstr ""
+msgstr "`options DEBUG_MEMGUARD`：替代 man:malloc[9] 内核内存分配器，使用 VM 系统检测对已释放分配内存的读取或写入。详情参见 man:memguard[9]。此选项会显著影响性能，但对调试内核内存损坏错误非常有帮助。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:856
+#, fuzzy
 msgid ""
 "`options DIAGNOSTIC`: enable additional, more expensive diagnostic tests "
 "along the lines of `options INVARIANTS`."
-msgstr ""
+msgstr "`options DIAGNOSTIC`：启用额外且开销更大的诊断测试，类似于 `options INVARIANTS`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:857
+#, fuzzy
 msgid ""
 "`options KASAN`: enable the Kernel Address Sanitizer. This enables compiler "
 "instrumentation which can be used to detect invalid memory accesses in the "
 "kernel, such as use-after-frees and buffer overflows. This largely "
 "supersedes `options DEBUG_MEMGUARD`. See man:kasan[9] for details, and for "
 "the currently supported platforms."
-msgstr ""
+msgstr "`options KASAN`：启用内核地址消毒器。此选项启用编译器插桩，可检测内核中的无效内存访问，例如释放后使用和缓冲区溢出。它在很大程度上取代了 `options DEBUG_MEMGUARD`。详情及当前支持的平台请参见 man:kasan[9]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kerneldebug/_index.adoc:857
+#, fuzzy
 msgid ""
 "`options KMSAN`: enable the Kernel Memory Sanitizer. This enables compiler "
 "instrumentation which can be used to detect uses of uninitialized memory. "
 "See man:kmsan[9] for details, and for the currently supported platforms."
-msgstr ""
+msgstr "`options KMSAN`：启用内核内存消毒器。此选项启用编译器插桩，可检测未初始化内存的使用。详情及当前支持的平台请参见 man:kmsan[9]。"

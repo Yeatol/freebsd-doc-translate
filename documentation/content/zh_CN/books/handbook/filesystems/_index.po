@@ -26,9 +26,9 @@ msgstr "FreeBSD 支持哪些文件系统。"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:1
@@ -51,30 +51,33 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:57
+#, fuzzy
 msgid ""
 "File systems are a fundamental component of any operating system.  They "
 "enable users to store, manage, and access data, making storage devices like "
 "hard drives, flash drives, and USB storage devices practical for everyday "
 "use.  Different operating systems use different file systems natively."
-msgstr ""
+msgstr "文件系统是任何操作系统的基础组件。它们使用户能够存储、管理和访问数据，让硬盘、闪存盘和 USB 存储设备等存储设备适用于日常使用。不同的操作系统原生支持不同的文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:61
+#, fuzzy
 msgid ""
 "FreeBSD has traditionally used the Unix File System (UFS), with the "
 "modernized UFS2 as its primary native file system.  FreeBSD also uses the Z "
 "File System (ZFS), known for its advanced features, robustness, and "
 "reliability.  See crossref:zfs[zfs,The Z File System (ZFS)] for more details."
-msgstr ""
+msgstr "FreeBSD 传统上使用 Unix 文件系统（UFS），其现代化版本 UFS2 是主要的原生文件系统。FreeBSD 还使用 Z 文件系统（ZFS），它以高级功能、稳健性和可靠性著称。详情请参见 crossref:zfs[zfs,Z 文件系统（ZFS）]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:64
+#, fuzzy
 msgid ""
 "In addition to its native file systems, FreeBSD supports a broad range of "
 "file systems from other operating systems.  Support for these file systems "
 "varies, some require loading kernel modules, while others need additional "
 "userland tools."
-msgstr ""
+msgstr "除了原生文件系统外，FreeBSD 还支持其他操作系统的多种文件系统。对这些文件系统的支持各不相同：有些需要加载内核模块，另一些则需要额外的用户空间工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:66
@@ -85,21 +88,24 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:68
+#, fuzzy
 msgid ""
 "Be familiar with UNIX(R) concepts and crossref:basics[basics,FreeBSD basics]."
-msgstr ""
+msgstr "熟悉 UNIX(R) 概念以及 crossref:basics[basics,FreeBSD 基础知识]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:69
+#, fuzzy
 msgid "Feel comfortable crossref:ports[ports,installing software] in FreeBSD."
-msgstr ""
+msgstr "熟悉在 FreeBSD 中 crossref:ports[ports,安装软件]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:70
+#, fuzzy
 msgid ""
 "Have some understanding of crossref:disks[disks,disks], storage devices, and "
 "FreeBSD's naming conventions for devices."
-msgstr ""
+msgstr "对 crossref:disks[disks,磁盘]、存储设备以及 FreeBSD 的设备命名约定有一定了解。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:72
@@ -136,17 +142,18 @@ msgstr "如何起用，配置，访问和使用非原生的文件系统。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) File Systems"
-msgstr ""
+msgstr "Linux(R) 文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:82
+#, fuzzy
 msgid ""
 "FreeBSD provides built-in support for several Linux(R) file systems.  This "
 "section demonstrates how to load support for and how to mount the supported "
 "Linux(R) file systems."
-msgstr ""
+msgstr "FreeBSD 内置支持多种 Linux(R) 文件系统。本节介绍如何加载对受支持的 Linux(R) 文件系统的支持，以及如何挂载这些文件系统。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:84
@@ -157,16 +164,18 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:88
+#, fuzzy
 msgid ""
 "Kernel support for Extended File System (EXT) file systems has been "
 "available since FreeBSD 2.2.  The man:ext2fs[4] driver allows the FreeBSD "
 "kernel to both read and write to ext2, ext3, and ext4 file systems."
-msgstr ""
+msgstr "FreeBSD 2.2 起便提供对扩展文件系统（EXT）的内核支持。man:ext2fs[4] 驱动程序允许 FreeBSD 内核读写 ext2、ext3 和 ext4 文件系统。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:92
+#, fuzzy
 msgid "Journalling and encryption are not supported yet."
-msgstr ""
+msgstr "目前尚不支持日志记录和加密。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:96
@@ -181,9 +190,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount -t ext2fs /dev/ada1s1 /mnt\n"
-msgstr ""
+msgstr "# mount -t ext2fs /dev/ada1s1 /mnt\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:103
@@ -194,10 +203,11 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:106
+#, fuzzy
 msgid ""
 "FreeBSD supports FAT, exFAT, and NTFS file systems, enabling access to "
 "Windows-formatted storage."
-msgstr ""
+msgstr "FreeBSD 支持 FAT、exFAT 和 NTFS 文件系统，因此可以访问经 Windows 格式化的存储设备。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:108
@@ -208,12 +218,13 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:112
+#, fuzzy
 msgid ""
 "The FAT file system is a simple and robust file system.  Although it lacks "
 "the performance, reliability, and scalability of modern alternatives, its "
 "availability on many different operating systems makes it a common choice "
 "for data exchange between devices."
-msgstr ""
+msgstr "FAT 文件系统简单而稳健。尽管它在性能、可靠性和可扩展性方面不及现代替代方案，但由于许多不同的操作系统都支持它，因此常用于在设备之间交换数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:115
@@ -228,9 +239,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount -t msdosfs /dev/ada0s1 /mnt\n"
-msgstr ""
+msgstr "# mount -t msdosfs /dev/ada0s1 /mnt\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:122
@@ -241,30 +252,33 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:126
+#, fuzzy
 msgid ""
 "exFAT (Extended File Allocation Table) is a lightweight file system "
 "optimized for flash storage devices, such as USB drives and SD cards.  It "
 "supports large file sizes and is widely used across various platforms, "
 "making it ideal for external storage."
-msgstr ""
+msgstr "exFAT（扩展文件分配表）是一种轻量级文件系统，针对闪存存储设备进行了优化，例如 USB 驱动器和 SD 卡。它支持大文件，并广泛用于各种平台，因此非常适合外部存储。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:128
+#, fuzzy
 msgid ""
 "To use exFAT on FreeBSD, install the package:filesystems/exfat[] package, "
 "load the FUSE kernel module, and mount the file system as shown below:"
-msgstr ""
+msgstr "要在 FreeBSD 上使用 exFAT，请安装 package:filesystems/exfat[] 软件包，加载 FUSE 内核模块，并按如下所示挂载文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:130
+#, fuzzy
 msgid "Install the exFAT package:"
-msgstr ""
+msgstr "安装 exFAT 软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install fusefs-exfat\n"
-msgstr ""
+msgstr "# pkg install fusefs-exfat\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:137
@@ -279,24 +293,25 @@ msgstr "要访问 ext 文件系统，首先加载内核模块："
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:141
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:178
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload fusefs\n"
-msgstr ""
+msgstr "# kldload fusefs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:144
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:181
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:223
+#, fuzzy
 msgid "Use man:sysrc[8] to load the module at startup:"
-msgstr ""
+msgstr "使用 man:sysrc[8] 在启动时加载该模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:148
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:185
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc kld_list+=fusefs\n"
-msgstr ""
+msgstr "# sysrc kld_list+=fusefs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:152
@@ -311,9 +326,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount.exfat /dev/ada0s1 /mnt\n"
-msgstr ""
+msgstr "# mount.exfat /dev/ada0s1 /mnt\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:159
@@ -324,30 +339,33 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:163
+#, fuzzy
 msgid ""
 "NTFS is a robust file system developed by Microsoft(R) and commonly used in "
 "Windows operating systems.  FreeBSD provides full read and write support for "
 "NTFS through the package:filesystems/ntfs[] package, making it easy to "
 "access and modify NTFS-formatted storage devices."
-msgstr ""
+msgstr "NTFS 是 Microsoft(R) 开发的一种稳健文件系统，常用于 Windows 操作系统。FreeBSD 通过 package:filesystems/ntfs[] 软件包提供完整的 NTFS 读写支持，便于访问和修改采用 NTFS 格式的存储设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:165
+#, fuzzy
 msgid ""
 "To use NTFS on FreeBSD, install the package:filesystems/ntfs[] package, load "
 "the FUSE kernel module, and mount the file system as shown below:"
-msgstr ""
+msgstr "要在 FreeBSD 上使用 NTFS，请安装 package:filesystems/ntfs[] 软件包，加载 FUSE 内核模块，并按如下所示挂载文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:167
+#, fuzzy
 msgid "Install the NTFS package:"
-msgstr ""
+msgstr "安装 NTFS 软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install fusefs-ntfs\n"
-msgstr ""
+msgstr "# pkg install fusefs-ntfs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:189
@@ -362,9 +380,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ntfs-3g /dev/ada0s1 /mnt\n"
-msgstr ""
+msgstr "# ntfs-3g /dev/ada0s1 /mnt\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:196
@@ -375,10 +393,11 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:199
+#, fuzzy
 msgid ""
 "FreeBSD provides support for MacOS(R) file systems, including HFS/HFS+, "
 "allowing access to storage devices formatted for Apple(R) systems."
-msgstr ""
+msgstr "FreeBSD 支持 MacOS(R) 文件系统，包括 HFS/HFS+，因此可以访问为 Apple(R) 系统格式化的存储设备。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:201
@@ -389,30 +408,33 @@ msgstr "其他文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:205
+#, fuzzy
 msgid ""
 "HFS/HFS+ was the primary file system for MacOS prior to APFS, commonly used "
 "on older Mac devices and external drives.  FreeBSD provides read-only "
 "support for HFS/HFS+ through the package:filesystems/hfsfuse[] package."
-msgstr ""
+msgstr "在 APFS 出现之前，HFS/HFS+ 是 MacOS 的主要文件系统，常用于较旧的 Mac 设备和外部驱动器。FreeBSD 通过 package:filesystems/hfsfuse[] 软件包提供 HFS/HFS+ 的只读支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:207
+#, fuzzy
 msgid ""
 "To use HFS/HFS+ on FreeBSD, install the package:filesystems/hfsfuse[] "
 "package, load the FUSE kernel module, and mount the file system as shown "
 "below:"
-msgstr ""
+msgstr "要在 FreeBSD 上使用 HFS/HFS+，请安装 package:filesystems/hfsfuse[] 软件包，加载 FUSE 内核模块，并按如下所示挂载文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:209
+#, fuzzy
 msgid "Install the HFS/HFS+ package:"
-msgstr ""
+msgstr "安装 HFS/HFS+ 软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install fusefs-hfsfuse\n"
-msgstr ""
+msgstr "# pkg install fusefs-hfsfuse\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:231
@@ -427,9 +449,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/filesystems/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# hfsfuse /dev/ada0s1 /mnt\n"
-msgstr ""
+msgstr "# hfsfuse /dev/ada0s1 /mnt\n"
 
 #, fuzzy
 #~| msgid ""

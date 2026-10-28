@@ -27,9 +27,9 @@ msgstr "声音子系统"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 15. Sound Subsystem"
-msgstr ""
+msgstr "第 15 章. 声音子系统"
 
 #. type: Title =
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:14
@@ -55,10 +55,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:56
+#, fuzzy
 msgid ""
 "The man:pcm[4] framework is the central piece of the sound subsystem. It "
 "mainly implements the following elements:"
-msgstr ""
+msgstr "man:pcm[4] 框架是声音子系统的核心。它主要实现以下元素："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:58
@@ -130,11 +131,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:69
+#, fuzzy
 msgid ""
 "As an alternative, or in addition to starting from a working example, you "
 "can find a commented driver template at https://people.FreeBSD.org/~cg/"
 "template.c[ https://people.FreeBSD.org/~cg/template.c]"
-msgstr ""
+msgstr "除了从可运行的示例入手之外，或者在此基础上，你还可以在 link:https://people.FreeBSD.org/~cg/template.c[https://people.FreeBSD.org/~cg/template.c] 找到带注释的驱动程序模板。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:71
@@ -156,12 +158,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:76
+#, fuzzy
 msgid ""
 "Under [.filename]#/usr/src/sys/dev/sound/#, the [.filename]#pcm/# directory "
 "holds the central code, while the [.filename]#pci/#, [.filename]#isa/# and [."
 "filename]#usb/# directories have the drivers for PCI and ISA boards, and for "
 "USB audio devices."
-msgstr ""
+msgstr "在 [.filename]#/usr/src/sys/dev/sound/# 下，[.filename]#pcm/# 目录存放核心代码，而 [.filename]#pci/#、[.filename]#isa/# 和 [.filename]#usb/# 目录存放 PCI 和 ISA 板卡以及 USB 音频设备的驱动程序。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:78
@@ -171,11 +174,12 @@ msgstr "探测，连接等"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:81
+#, fuzzy
 msgid ""
 "Sound drivers probe and attach in almost the same way as any hardware driver "
 "module. You might want to look at the crossref:isa-driver[isa-driver,ISA] or "
 "crossref:pci[pci,PCI] specific sections of the handbook for more information."
-msgstr ""
+msgstr "声音驱动程序的探测和附加方式与其他硬件驱动程序模块几乎相同。你可以参阅手册中 crossref:isa-driver[isa-driver,ISA] 或 crossref:pci[pci,PCI] 专门章节，了解更多信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:83
@@ -184,73 +188,79 @@ msgstr "然而，声音驱动程序在某些方面又有些不同："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:85
+#, fuzzy
 msgid ""
 "They declare themselves as [.filename]#pcm# class devices, with a `struct "
 "snddev_info` device private structure:"
-msgstr ""
+msgstr "它们将自身声明为 [.filename]#pcm# 类设备，并使用 `struct snddev_info` 作为设备私有结构："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static driver_t xxx_driver = {\n"
 "              \"pcm\",\n"
 "              xxx_methods,\n"
 "              sizeof(struct snddev_info)\n"
 "          };\n"
-msgstr ""
+msgstr "          static driver_t xxx_driver = {\n              \"pcm\",\n              xxx_methods,\n              sizeof(struct snddev_info)\n          };\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          DRIVER_MODULE(snd_xxxpci, pci, xxx_driver, pcm_devclass, 0, 0);\n"
 "          MODULE_DEPEND(snd_xxxpci, snd_pcm, PCM_MINVER, PCM_PREFVER,PCM_MAXVER);\n"
-msgstr ""
+msgstr "          DRIVER_MODULE(snd_xxxpci, pci, xxx_driver, pcm_devclass, 0, 0);\n          MODULE_DEPEND(snd_xxxpci, snd_pcm, PCM_MINVER, PCM_PREFVER,PCM_MAXVER);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:99
+#, fuzzy
 msgid ""
 "Most sound drivers need to store additional private information about their "
 "device. A private data structure is usually allocated in the attach routine. "
 "Its address is passed to [.filename]#pcm# by the calls to `pcm_register()` "
 "and `mixer_init()`. [.filename]#pcm# later passes back this address as a "
 "parameter in calls to the sound driver interfaces."
-msgstr ""
+msgstr "大多数声音驱动程序都需要存储设备的其他私有信息。通常会在附加例程中分配一个私有数据结构，并通过调用 `pcm_register()` 和 `mixer_init()` 将其地址传递给 [.filename]#pcm#。之后，[.filename]#pcm# 会在调用声音驱动程序接口时将此地址作为参数传回。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:102
+#, fuzzy
 msgid ""
 "The sound driver attach routine should declare its MIXER or AC97 interface "
 "to [.filename]#pcm# by calling `mixer_init()`. For a MIXER interface, this "
 "causes in turn a call to crossref:sound[xxxmixer-init,`xxxmixer_init()`]."
-msgstr ""
+msgstr "声音驱动程序的附加例程应调用 `mixer_init()`，向 [.filename]#pcm# 声明其 MIXER 或 AC97 接口。对于 MIXER 接口，此调用还会触发对 crossref:sound[xxxmixer-init,`xxxmixer_init()`] 的调用。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:103
+#, fuzzy
 msgid ""
 "The sound driver attach routine declares its general CHANNEL configuration "
 "to [.filename]#pcm# by calling `pcm_register(dev, sc, nplay, nrec)`, where "
 "`sc` is the address for the device data structure, used in further calls "
 "from [.filename]#pcm#, and `nplay` and `nrec` are the number of play and "
 "record channels."
-msgstr ""
+msgstr "声音驱动程序的附加例程应通过调用 `pcm_register(dev, sc, nplay, nrec)`，向 [.filename]#pcm# 声明其常规 CHANNEL 配置。其中，`sc` 是设备数据结构的地址，供 [.filename]#pcm# 在后续调用中使用；`nplay` 和 `nrec` 分别是播放和录制通道的数量。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:106
+#, fuzzy
 msgid ""
 "The sound driver attach routine declares each of its channel objects by "
 "calls to `pcm_addchan()`. This sets up the channel glue in [.filename]#pcm# "
 "and causes in turn a call to crossref:sound[xxxchannel-init,"
 "`xxxchannel_init()`]."
-msgstr ""
+msgstr "声音驱动程序的附加例程应通过调用 `pcm_addchan()` 声明各个通道对象。此调用会在 [.filename]#pcm# 中设置通道连接，并触发对 crossref:sound[xxxchannel-init,`xxxchannel_init()`] 的调用。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:107
+#, fuzzy
 msgid ""
 "The sound driver detach routine should call `pcm_unregister()` before "
 "releasing its resources."
-msgstr ""
+msgstr "声音驱动程序的分离例程应在释放资源前调用 `pcm_unregister()`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:109
@@ -283,11 +293,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:114
+#, fuzzy
 msgid ""
 "[.filename]#pcm# drivers should implement `device_suspend`, `device_resume` "
 "and `device_shutdown` routines, so that power management and module "
 "unloading function correctly."
-msgstr ""
+msgstr "[.filename]#pcm# 驱动程序应实现 `device_suspend`、`device_resume` 和 `device_shutdown` 例程，以确保电源管理和模块卸载正常工作。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:116
@@ -297,26 +308,29 @@ msgstr "网络接口"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:120
+#, fuzzy
 msgid ""
 "The interface between the [.filename]#pcm# core and the sound drivers is "
 "defined in terms of crossref:kobj[kernel-objects,kernel objects]."
-msgstr ""
+msgstr "[.filename]#pcm# 核心与声音驱动程序之间的接口以 crossref:kobj[kernel-objects,内核对象] 的形式定义。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:122
+#, fuzzy
 msgid ""
 "There are two main interfaces that a sound driver will usually provide: "
 "_CHANNEL_ and either _MIXER_ or _AC97_."
-msgstr ""
+msgstr "声音驱动程序通常会提供两个主要接口：__CHANNEL__，以及 __MIXER__ 或 __AC97__。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:124
+#, fuzzy
 msgid ""
 "The _AC97_ interface is a very small hardware access (register read/write) "
 "interface, implemented by drivers for hardware with an AC97 codec. In this "
 "case, the actual MIXER interface is provided by the shared AC97 code in [."
 "filename]#pcm#."
-msgstr ""
+msgstr "__AC97__ 接口是一个精简的硬件访问接口，用于读写寄存器，由带有 AC97 编解码器的硬件驱动程序实现。在这种情况下，实际的 MIXER 接口由 [.filename]#pcm# 中共享的 AC97 代码提供。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:125
@@ -349,12 +363,13 @@ msgstr "对于所有的CHANNEL接口函数，第一个参数是一个不透明�
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:134
+#, fuzzy
 msgid ""
 "The second parameter is a pointer to the private channel data structure, "
 "except for `channel_init()` which has a pointer to the private device "
 "structure (and returns the channel pointer for further use by [."
 "filename]#pcm#)."
-msgstr ""
+msgstr "第二个参数是指向通道私有数据结构的指针，`channel_init()` 除外：它接收指向设备私有结构的指针，并返回通道指针供 [.filename]#pcm# 后续使用。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:135
@@ -364,24 +379,27 @@ msgstr "数据传输操作概览"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:138
+#, fuzzy
 msgid ""
 "For sound data transfers, the [.filename]#pcm# core and the sound drivers "
 "communicate through a shared memory area, described by a `struct snd_dbuf`."
-msgstr ""
+msgstr "在声音数据传输过程中，[.filename]#pcm# 核心与声音驱动程序通过共享内存区域进行通信，该区域由 `struct snd_dbuf` 描述。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:140
+#, fuzzy
 msgid ""
 "`struct snd_dbuf` is private to [.filename]#pcm#, and sound drivers obtain "
 "values of interest by calls to accessor functions (`sndbuf_getxxx()`)."
-msgstr ""
+msgstr "`struct snd_dbuf` 是 [.filename]#pcm# 的私有结构，声音驱动程序通过调用访问器函数（`sndbuf_getxxx()`）获取所需的值。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:142
+#, fuzzy
 msgid ""
 "The shared memory area has a size of `sndbuf_getsize()` and is divided into "
 "fixed size blocks of `sndbuf_getblksz()` bytes."
-msgstr ""
+msgstr "共享内存区域的大小为 `sndbuf_getsize()`，并划分为固定大小的块，每块为 `sndbuf_getblksz()` 字节。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:144
@@ -392,29 +410,32 @@ msgstr "当播放时，常规的传输机制如下（将意思反过来就是录
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:147
+#, fuzzy
 msgid ""
 "[.filename]#pcm# initially fills up the buffer, then calls the sound "
 "driver's crossref:sound[channel-trigger,`xxxchannel_trigger()`] function "
 "with a parameter of PCMTRIG_START."
-msgstr ""
+msgstr "[.filename]#pcm# 最初会填充缓冲区，然后调用声音驱动程序的 crossref:sound[channel-trigger,`xxxchannel_trigger()`] 函数，并将 PCMTRIG_START 作为参数传入。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:148
+#, fuzzy
 msgid ""
 "The sound driver then arranges to repeatedly transfer the whole memory area "
 "(`sndbuf_getbuf()`, `sndbuf_getsize()`) to the device, in blocks of "
 "`sndbuf_getblksz()` bytes. It calls back the `chn_intr()`[.filename]#pcm# "
 "function for each transferred block (this will typically happen at interrupt "
 "time)."
-msgstr ""
+msgstr "随后，声音驱动程序会安排将整个内存区域（`sndbuf_getbuf()`、`sndbuf_getsize()`）以每块 `sndbuf_getblksz()` 字节的大小反复传输到设备。每传输完一块，它都会回调 `chn_intr()`[.filename]#pcm# 函数（通常在中断时发生）。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:149
+#, fuzzy
 msgid ""
 "`chn_intr()` arranges to copy new data to the area that was transferred to "
 "the device (now free), and make appropriate updates to the `snd_dbuf` "
 "structure."
-msgstr ""
+msgstr "`chn_intr()` 会将新数据复制到已传输到设备、现已空闲的区域，并适当地更新 `snd_dbuf` 结构。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:151
@@ -424,15 +445,16 @@ msgstr "channel_init"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:155
+#, fuzzy
 msgid ""
 "`xxxchannel_init()` is called to initialize each of the play or record "
 "channels.  The calls are initiated from the sound driver attach routine. "
 "(See the crossref:sound[pcm-probe-and-attach,probe and attach section])."
-msgstr ""
+msgstr "调用 `xxxchannel_init()` 来初始化每个播放或录制通道。声音驱动程序的附加例程会发起这些调用。（参见 crossref:sound[pcm-probe-and-attach,探测和附加章节]。）"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static void *\n"
 "          xxxchannel_init(kobj_t obj, void *data,\n"
@@ -443,10 +465,11 @@ msgid ""
 "               ...\n"
 "              return ch; <.>\n"
 "           }\n"
-msgstr ""
+msgstr "          static void *\n          xxxchannel_init(kobj_t obj, void *data,\n             struct snd_dbuf *b, struct pcm_channel *c, int dir) <.>\n          {\n              struct xxx_info *sc = data;\n              struct xxx_chinfo *ch;\n               ...\n              return ch; <.>\n           }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:170
+#, fuzzy
 msgid ""
 "`b` is the address for the channel `struct snd_dbuf`. It should be "
 "initialized in the function by calling `sndbuf_alloc()`. The buffer size to "
@@ -455,7 +478,7 @@ msgid ""
 "This is an opaque object. The function should store it in the local channel "
 "structure, to be used in later calls to [.filename]#pcm# (ie: `chn_intr(c)`)."
 "`dir` indicates the channel direction (`PCMDIR_PLAY` or `PCMDIR_REC`)."
-msgstr ""
+msgstr "`b` 是通道 `struct snd_dbuf` 的地址。应在此函数中调用 `sndbuf_alloc()` 对其进行初始化。所用缓冲区大小通常是设备“典型”单位传输大小的较小倍数。`c` 是 [.filename]#pcm# 通道控制结构指针，这是一个不透明对象。函数应将其存储在本地通道结构中，以供之后调用 [.filename]#pcm# 时使用（例如：`chn_intr(c)`）。`dir` 表示通道方向（`PCMDIR_PLAY` 或 `PCMDIR_REC`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:172
@@ -476,14 +499,15 @@ msgstr "channel_setformat"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:176
+#, fuzzy
 msgid ""
 "`xxxchannel_setformat()` should set up the hardware for the specified "
 "channel for the specified sound format."
-msgstr ""
+msgstr "`xxxchannel_setformat()` 应为指定通道设置硬件，以使用指定的声音格式。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static int\n"
 "          xxxchannel_setformat(kobj_t obj, void *data, u_int32_t format) <.>\n"
@@ -492,13 +516,14 @@ msgid ""
 "               ...\n"
 "              return 0;\n"
 "           }\n"
-msgstr ""
+msgstr "          static int\n          xxxchannel_setformat(kobj_t obj, void *data, u_int32_t format) <.>\n          {\n              struct xxx_chinfo *ch = data;\n               ...\n              return 0;\n           }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:189
+#, fuzzy
 msgid ""
 "`format` is specified as an `AFMT_XXX value` ([.filename]#soundcard.h#)."
-msgstr ""
+msgstr "`format` 指定为 `AFMT_XXX value`（[.filename]#soundcard.h#）。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:190
@@ -508,10 +533,11 @@ msgstr "channel_setspeed"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:193
+#, fuzzy
 msgid ""
 "`xxxchannel_setspeed()` sets up the channel hardware for the specified "
 "sampling speed, and returns the possibly adjusted speed."
-msgstr ""
+msgstr "`xxxchannel_setspeed()` 为指定的采样速度设置通道硬件，并返回可能经过调整的速度。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:203
@@ -565,7 +591,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static int\n"
 "          xxxchannel_setblocksize(kobj_t obj, void *data, u_int32_t blocksize)\n"
@@ -574,7 +600,7 @@ msgid ""
 "                ...\n"
 "              return blocksize; <.>\n"
 "           }\n"
-msgstr ""
+msgstr "          static int\n          xxxchannel_setblocksize(kobj_t obj, void *data, u_int32_t blocksize)\n          {\n              struct xxx_chinfo *ch = data;\n                ...\n              return blocksize; <.>\n           }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:223
@@ -595,14 +621,15 @@ msgstr "channel_trigger"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:228
+#, fuzzy
 msgid ""
 "`xxxchannel_trigger()` is called by [.filename]#pcm# to control data "
 "transfer operations in the driver."
-msgstr ""
+msgstr "[.filename]#pcm# 调用 `xxxchannel_trigger()`，以控制驱动程序中的数据传输操作。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static int\n"
 "          xxxchannel_trigger(kobj_t obj, void *data, int go) <.>\n"
@@ -611,12 +638,13 @@ msgid ""
 "               ...\n"
 "              return 0;\n"
 "           }\n"
-msgstr ""
+msgstr "          static int\n          xxxchannel_trigger(kobj_t obj, void *data, int go) <.>\n          {\n              struct xxx_chinfo *ch = data;\n               ...\n              return 0;\n           }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:241
+#, fuzzy
 msgid "`go` defines the action for the current call. The possible values are:"
-msgstr ""
+msgstr "`go` 定义当前调用要执行的操作。可能的值如下："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:245
@@ -637,11 +665,12 @@ msgstr "channel_getptr"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:250
+#, fuzzy
 msgid ""
 "`xxxchannel_getptr()` returns the current offset in the transfer buffer. "
 "This will typically be called by `chn_intr()`, and this is how [."
 "filename]#pcm# knows where it can transfer new data."
-msgstr ""
+msgstr "`xxxchannel_getptr()` 返回传输缓冲区中的当前偏移量。通常由 `chn_intr()` 调用；[.filename]#pcm# 据此了解可以在哪里传输新数据。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:251
@@ -670,23 +699,24 @@ msgstr "channel_getcaps"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          struct pcmchan_caps *\n"
 "          xxxchannel_getcaps(kobj_t obj, void *data)\n"
 "          {\n"
 "              return &xxx_caps; <.>\n"
 "           }\n"
-msgstr ""
+msgstr "          struct pcmchan_caps *\n          xxxchannel_getcaps(kobj_t obj, void *data)\n          {\n              return &xxx_caps; <.>\n           }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:267
+#, fuzzy
 msgid ""
 "The routine returns a pointer to a (usually statically-defined) "
 "`pcmchan_caps` structure (defined in [.filename]#sound/pcm/channel.h#. The "
 "structure holds the minimum and maximum sampling frequencies, and the "
 "accepted sound formats. Look at any sound driver for an example."
-msgstr ""
+msgstr "该例程返回一个指向 `pcmchan_caps` 结构的指针（通常为静态定义；结构定义于 [.filename]#sound/pcm/channel.h#）。此结构包含最小和最大采样频率以及支持的声音格式。可查阅任意声音驱动程序作为示例。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:268
@@ -696,16 +726,18 @@ msgstr "更多函数"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:271
+#, fuzzy
 msgid ""
 "`channel_reset()`, `channel_resetdone()`, and `channel_notify()` are for "
 "special purposes and should not be implemented in a driver without "
 "discussing it on the {freebsd-multimedia}."
-msgstr ""
+msgstr "`channel_reset()`、`channel_resetdone()` 和 `channel_notify()` 用于特殊用途；未经讨论，不应在驱动程序中实现这些函数。讨论请前往 {freebsd-multimedia}。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:273
+#, fuzzy
 msgid "`channel_setdir()` is deprecated."
-msgstr ""
+msgstr "`channel_setdir()` 已弃用。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:274
@@ -721,74 +753,78 @@ msgstr "mixer_init"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:280
+#, fuzzy
 msgid ""
 "`xxxmixer_init()` initializes the hardware and tells [.filename]#pcm# what "
 "mixer devices are available for playing and recording"
-msgstr ""
+msgstr "`xxxmixer_init()` 初始化硬件，并告知 [.filename]#pcm# 可用于播放和录制的混音器设备"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static int\n"
 "          xxxmixer_init(struct snd_mixer *m)\n"
 "          {\n"
 "              struct xxx_info   *sc = mix_getdevinfo(m);\n"
 "              u_int32_t v;\n"
-msgstr ""
+msgstr "          static int\n          xxxmixer_init(struct snd_mixer *m)\n          {\n              struct xxx_info   *sc = mix_getdevinfo(m);\n              u_int32_t v;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "              [Initialize hardware]\n"
-msgstr ""
+msgstr "              [Initialize hardware]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "              [Set appropriate bits in v for play mixers] <.>\n"
 "              mix_setdevs(m, v);\n"
 "              [Set appropriate bits in v for record mixers]\n"
 "              mix_setrecdevs(m, v)\n"
-msgstr ""
+msgstr "              [Set appropriate bits in v for play mixers] <.>\n              mix_setdevs(m, v);\n              [Set appropriate bits in v for record mixers]\n              mix_setrecdevs(m, v)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "              return 0;\n"
 "          }\n"
-msgstr ""
+msgstr "              return 0;\n          }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:301
+#, fuzzy
 msgid ""
 "Set bits in an integer value and call `mix_setdevs()` and `mix_setrecdevs()` "
 "to tell [.filename]#pcm# what devices exist."
-msgstr ""
+msgstr "设置整数值中的位，并调用 `mix_setdevs()` 和 `mix_setrecdevs()`，告知 [.filename]#pcm# 存在哪些设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:303
+#, fuzzy
 msgid ""
 "Mixer bits definitions can be found in [.filename]#soundcard.h# "
 "(`SOUND_MASK_XXX` values and `SOUND_MIXER_XXX` bit shifts)."
-msgstr ""
+msgstr "混音器位定义可在 [.filename]#soundcard.h# 中找到（`SOUND_MASK_XXX` 值和 `SOUND_MIXER_XXX` 位移）。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mixer_set"
-msgstr ""
+msgstr "mixer_set"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:307
+#, fuzzy
 msgid "`xxxmixer_set()` sets the volume level for one mixer device."
-msgstr ""
+msgstr "`xxxmixer_set()` 设置一个混音器设备的音量。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static int\n"
 "          xxxmixer_set(struct snd_mixer *m, unsigned dev,\n"
@@ -798,22 +834,24 @@ msgid ""
 "              [set volume level]\n"
 "              return left | (right << 8); <.>\n"
 "          }\n"
-msgstr ""
+msgstr "          static int\n          xxxmixer_set(struct snd_mixer *m, unsigned dev,\n                           unsigned left, unsigned right) <.>\n          {\n              struct sc_info *sc = mix_getdevinfo(m);\n              [set volume level]\n              return left | (right << 8); <.>\n          }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:321
+#, fuzzy
 msgid ""
 "The device is specified as a `SOUND_MIXER_XXX` value. The volume values are "
 "specified in range [0-100]. A value of zero should mute the device."
-msgstr ""
+msgstr "设备以 `SOUND_MIXER_XXX` 值指定。音量值的范围为 [0-100]。值为零时应将设备静音。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:322
+#, fuzzy
 msgid ""
 "As the hardware levels probably will not match the input scale, and some "
 "rounding will occur, the routine returns the actual level values (in range "
 "0-100) as shown."
-msgstr ""
+msgstr "由于硬件音量级别可能与输入刻度不匹配，并且会发生舍入，该例程会按所示返回实际音量值（范围为 0-100）。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:323
@@ -823,45 +861,48 @@ msgstr "mixer_setrecsrc"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:326
+#, fuzzy
 msgid "`xxxmixer_setrecsrc()` sets the recording source device."
-msgstr ""
+msgstr "`xxxmixer_setrecsrc()` 设置录音源设备。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          static int\n"
 "          xxxmixer_setrecsrc(struct snd_mixer *m, u_int32_t src) <.>\n"
 "          {\n"
 "              struct xxx_info *sc = mix_getdevinfo(m);\n"
-msgstr ""
+msgstr "          static int\n          xxxmixer_setrecsrc(struct snd_mixer *m, u_int32_t src) <.>\n          {\n              struct xxx_info *sc = mix_getdevinfo(m);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "              [look for non zero bit(s) in src, set up hardware]\n"
-msgstr ""
+msgstr "              [look for non zero bit(s) in src, set up hardware]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "              [update src to reflect actual action]\n"
 "              return src; <.>\n"
 "           }\n"
-msgstr ""
+msgstr "              [update src to reflect actual action]\n              return src; <.>\n           }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:342
+#, fuzzy
 msgid "The desired recording devices are specified as a bit field"
-msgstr ""
+msgstr "所需的录音设备以位字段指定。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:343
+#, fuzzy
 msgid ""
 "The actual devices set for recording are returned. Some drivers can only set "
 "one device for recording. The function should return -1 if an error occurs."
-msgstr ""
+msgstr "返回实际设置用于录音的设备。有些驱动程序只能设置一个录音设备。如果发生错误，该函数应返回 -1。"
 
 #. type: Title ====
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:344
@@ -871,18 +912,20 @@ msgstr "mixer_uninit, mixer_reinit"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:347
+#, fuzzy
 msgid ""
 "`xxxmixer_uninit()` should ensure that all sound is muted and if possible "
 "mixer hardware should be powered down."
-msgstr ""
+msgstr "`xxxmixer_uninit()` 应确保所有声音均已静音；如果可能，还应关闭混音器硬件电源。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:349
+#, fuzzy
 msgid ""
 "`xxxmixer_reinit()` should ensure that the mixer hardware is powered up and "
 "any settings not controlled by `mixer_set()` or `mixer_setrecsrc()` are "
 "restored."
-msgstr ""
+msgstr "`xxxmixer_reinit()` 应确保混音器硬件已通电，并恢复未由 `mixer_set()` 或 `mixer_setrecsrc()` 控制的任何设置。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:350
@@ -892,25 +935,29 @@ msgstr "AC97接口"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:353
+#, fuzzy
 msgid ""
 "The _AC97_ interface is implemented by drivers with an AC97 codec. It only "
 "has three methods:"
-msgstr ""
+msgstr "带有 AC97 编解码器的驱动程序实现 __AC97__ 接口。该接口只有三个方法："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:355
+#, fuzzy
 msgid "`xxxac97_init()` returns the number of ac97 codecs found."
-msgstr ""
+msgstr "`xxxac97_init()` 返回找到的 AC97 编解码器数量。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:356
+#, fuzzy
 msgid "`ac97_read()` and `ac97_write()` read or write a specified register."
-msgstr ""
+msgstr "`ac97_read()` 和 `ac97_write()` 读取或写入指定寄存器。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/sound/_index.adoc:357
+#, fuzzy
 msgid ""
 "The _AC97_ interface is used by the AC97 code in [.filename]#pcm# to perform "
 "higher level operations. Look at [.filename]#sound/pci/maestro3.c# or many "
 "others under [.filename]#sound/pci/# for an example."
-msgstr ""
+msgstr "[.filename]#pcm# 中的 AC97 代码使用 __AC97__ 接口执行更高级别的操作。可查阅 [.filename]#sound/pci/maestro3.c# 或 [.filename]#sound/pci/# 下的其他许多文件作为示例。"

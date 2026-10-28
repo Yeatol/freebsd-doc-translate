@@ -21,24 +21,25 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:1
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Advanced pkg-plist Practices"
-msgstr ""
+msgstr "pkg-plist 高级实践"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 8. Advanced pkg-plist Practices"
-msgstr ""
+msgstr "第 8 章：pkg-plist 高级实践"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Changing pkg-plist Based on Make Variables"
-msgstr ""
+msgstr "根据 Make 变量更改 pkg-plist"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:58
+#, fuzzy
 msgid ""
 "Some ports, particularly the `p5-` ports, need to change their [."
 "filename]#pkg-plist# depending on what options they are configured with (or "
@@ -50,44 +51,48 @@ msgid ""
 "(for example, `5.8.9`).  Several other `%%_VARS_%%` related to port's "
 "documentation files are described in crossref:makefiles[install-"
 "documentation,the relevant section]."
-msgstr ""
+msgstr "某些 ports，尤其是 `p5-` ports，需要根据配置的选项（对于 `p5-` ports，则根据 `perl` 版本）更改 [.filename]#pkg-plist#。为简化此操作，[.filename]#pkg-plist# 中的 `%%OSREL%%`、`%%PERL_VER%%` 和 `%%PERL_VERSION%%` 都会被相应替换。`%%OSREL%%` 的值是操作系统的数字版本（例如，`4.9`）。`%%PERL_VERSION%%` 和 `%%PERL_VER%%` 是 `perl` 的完整版本号（例如，`5.8.9`）。与 port 文档文件相关的其他几个 `%%_VARS_%%` 变量在 crossref:makefiles[install-documentation,相关章节]中介绍。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:60
+#, fuzzy
 msgid ""
 "To make other substitutions, set `PLIST_SUB` with a list of `_VAR=VALUE_` "
 "pairs and instances of `%%_VAR_%%` will be substituted with _VALUE_ in [."
 "filename]#pkg-plist#."
-msgstr ""
+msgstr "要执行其他替换，请将一组 `_VAR=VALUE_` 对设置到 `PLIST_SUB` 中；[.filename]#pkg-plist# 中的 `%%_VAR_%%` 将被替换为 `_VALUE_`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:63
+#, fuzzy
 msgid ""
 "For instance, if a port installs many files in a version-specific "
 "subdirectory, use a placeholder for the version so that [.filename]#pkg-"
 "plist# does not have to be regenerated every time the port is updated.  For "
 "example, set:"
-msgstr ""
+msgstr "例如，如果某个 port 在特定版本的子目录中安装了许多文件，可以使用版本占位符，这样每次更新 port 时就不必重新生成 [.filename]#pkg-plist#。例如，设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "OCTAVE_VERSION=\t${PORTREVISION}\n"
 "PLIST_SUB=\tOCTAVE_VERSION=${OCTAVE_VERSION}\n"
-msgstr ""
+msgstr "OCTAVE_VERSION=\t${PORTREVISION}\nPLIST_SUB=\tOCTAVE_VERSION=${OCTAVE_VERSION}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:72
+#, fuzzy
 msgid ""
 "in the [.filename]#Makefile# and use `%%OCTAVE_VERSION%%` wherever the "
 "version shows up in [.filename]#pkg-plist#.  When the port is upgraded, it "
 "will not be necessary to edit dozens (or in some cases, hundreds) of lines "
 "in [.filename]#pkg-plist#."
-msgstr ""
+msgstr "在 [.filename]#Makefile# 中设置该变量，并在 [.filename]#pkg-plist# 中版本号出现的位置使用 `%%OCTAVE_VERSION%%`。升级 port 时，就不必编辑 [.filename]#pkg-plist# 中几十行（有时甚至数百行）内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:75
+#, fuzzy
 msgid ""
 "If files are installed conditionally on the options set in the port, the "
 "usual way of handling it is prefixing [.filename]#pkg-plist# lines with a `%"
@@ -95,38 +100,41 @@ msgid ""
 "the option is disabled, and adding `OPTIONS_SUB=yes` to the [."
 "filename]#Makefile#.  See crossref:makefiles[options_sub,`OPTIONS_SUB`] for "
 "more information."
-msgstr ""
+msgstr "如果某些文件仅在 port 设置了特定选项时安装，通常的处理方式是在 [.filename]#pkg-plist# 中需要在选项启用时使用的行前加上 `%%OPT%%`，在选项禁用时使用的行前加上 `%%NO_OPT%%`，并在 [.filename]#Makefile# 中添加 `OPTIONS_SUB=yes`。更多信息请参见 crossref:makefiles[options_sub,`OPTIONS_SUB`]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:77
+#, fuzzy
 msgid ""
 "For instance, if there are files that are only installed when the `X11` "
 "option is enabled, and [.filename]#Makefile# has:"
-msgstr ""
+msgstr "例如，如果只有启用 `X11` 选项时才会安装某些文件，并且 [.filename]#Makefile# 中包含："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "OPTIONS_DEFINE=\tX11\n"
 "OPTIONS_SUB=\tyes\n"
-msgstr ""
+msgstr "OPTIONS_DEFINE=\tX11\nOPTIONS_SUB=\tyes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:85
+#, fuzzy
 msgid ""
 "In [.filename]#pkg-plist#, put `%%X11%%` in front of the lines only being "
 "installed when the option is enabled, like this :"
-msgstr ""
+msgstr "在 [.filename]#pkg-plist# 中，仅在启用该选项时安装的行前加上 `%%X11%%`，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "%%X11%%bin/foo-gui\n"
-msgstr ""
+msgstr "%%X11%%bin/foo-gui\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:94
+#, fuzzy
 msgid ""
 "This substitution will be done between the `pre-install` and `do-install` "
 "targets, by reading from [.filename]#PLIST# and writing to [."
@@ -134,10 +142,11 @@ msgid ""
 "port builds [.filename]#PLIST# on the fly, do so in or before `pre-"
 "install`.  Also, if the port needs to edit the resulting file, do so in "
 "`post-install` to a file named [.filename]#TMPPLIST#."
-msgstr ""
+msgstr "此替换将在 `pre-install` 和 `do-install` 目标之间完成：读取 [.filename]#PLIST# 并写入 [.filename]#TMPPLIST#（默认值为 [.filename]#WRKDIR/.PLIST.mktmp#）。因此，如果 port 在运行时生成 [.filename]#PLIST#，应在 `pre-install` 阶段或之前完成。此外，如果 port 需要编辑生成的文件，应在 `post-install` 阶段对名为 [.filename]#TMPPLIST# 的文件进行编辑。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:100
+#, fuzzy
 msgid ""
 "Another way of modifying a port's packing list is based on setting the "
 "variables `PLIST_FILES` and `PLIST_DIRS`.  The value of each variable is "
@@ -149,49 +158,51 @@ msgid ""
 "will be prepended to names from `PLIST_DIRS`.  To take effect, `PLIST_FILES` "
 "and `PLIST_DIRS` must be set before [.filename]#TMPPLIST# is written, that "
 "is, in `pre-install` or earlier."
-msgstr ""
+msgstr "修改 port 打包清单的另一种方式是设置 `PLIST_FILES` 和 `PLIST_DIRS` 变量。每个变量的值都被视为路径名列表，这些路径名会与 [.filename]#PLIST# 的内容一起写入 [.filename]#TMPPLIST#。虽然 `PLIST_FILES` 和 `PLIST_DIRS` 中列出的名称也会进行上述 `%%_VAR_%%` 替换，但最好直接使用 `${_VAR_}`。除此之外，`PLIST_FILES` 中的名称会原样出现在最终打包清单中，而 `PLIST_DIRS` 中的名称前会加上 `@dir`。要使设置生效，必须在写入 [.filename]#TMPPLIST# 之前设置 `PLIST_FILES` 和 `PLIST_DIRS`，也就是在 `pre-install` 阶段或更早。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:104
+#, fuzzy
 msgid ""
 "From time to time, using `OPTIONS_SUB` is not enough.  In those cases, "
 "adding a specific `_TAG_` to `PLIST_SUB` inside the [.filename]#Makefile# "
 "with a special value of `@comment`, makes package tools to ignore the line.  "
 "For instance, if some files are only installed when the `X11` option is on "
 "and the architecture is `i386`:"
-msgstr ""
+msgstr "有时，仅使用 `OPTIONS_SUB` 并不足够。在这种情况下，可以在 [.filename]#Makefile# 中将特定的 `_TAG_` 添加到 `PLIST_SUB`，并将其值设为 `@comment`，使打包工具忽略该行。例如，某些文件只有在启用 `X11` 选项且架构为 `i386` 时才会安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.port.pre.mk>\n"
-msgstr ""
+msgstr ".include <bsd.port.pre.mk>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".if ${PORT_OPTIONS:MX11} && ${ARCH} == \"i386\"\n"
 "PLIST_SUB+=\tX11I386=\"\"\n"
 ".else\n"
 "PLIST_SUB+=\tX11I386=\"@comment \"\n"
 ".endif\n"
-msgstr ""
+msgstr ".if ${PORT_OPTIONS:MX11} && ${ARCH} == \"i386\"\nPLIST_SUB+=\tX11I386=\"\"\n.else\nPLIST_SUB+=\tX11I386=\"@comment \"\n.endif\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Empty Directories"
-msgstr ""
+msgstr "空目录"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cleaning Up Empty Directories"
-msgstr ""
+msgstr "清理空目录"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:126
+#, fuzzy
 msgid ""
 "When being de-installed, a port has to remove empty directories it created.  "
 "Most of these directories are removed automatically by man:pkg[8], but for "
@@ -199,50 +210,52 @@ msgid ""
 "some more work needs to be done.  This is usually accomplished by adding "
 "`@dir` lines for those directories.  Subdirectories must be deleted before "
 "deleting parent directories."
-msgstr ""
+msgstr "卸载 port 时，必须删除它创建的空目录。man:pkg[8] 会自动删除其中大多数目录，但对于在 [.filename]#${PREFIX}# 之外创建的目录或空目录，还需要进行一些额外处理。通常可以为这些目录添加 `@dir` 行。删除父目录之前，必须先删除子目录。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[...]\n"
 "@dir /var/games/oneko/saved-games\n"
 "@dir /var/games/oneko\n"
-msgstr ""
+msgstr "[...]\n@dir /var/games/oneko/saved-games\n@dir /var/games/oneko\n"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating Empty Directories"
-msgstr ""
+msgstr "创建空目录"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:140
+#, fuzzy
 msgid ""
 "Empty directories created during port installation need special attention.  "
 "They must be present when the package is created.  If they are not created "
 "by the port code, create them in the [.filename]#Makefile#:"
-msgstr ""
+msgstr "安装 port 时创建的空目录需要特别注意。创建软件包时，这些目录必须存在。如果 port 的代码没有创建它们，则应在 [.filename]#Makefile# 中创建："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-install:\n"
 "\t${MKDIR} ${STAGEDIR}${PREFIX}/some/directory\n"
-msgstr ""
+msgstr "post-install:\n\t${MKDIR} ${STAGEDIR}${PREFIX}/some/directory\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:149
+#, fuzzy
 msgid ""
 "Add the directory to [.filename]#pkg-plist# like any other.  For example:"
-msgstr ""
+msgstr "像其他目录一样，将该目录添加到 [.filename]#pkg-plist# 中。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@dir some/directory\n"
-msgstr ""
+msgstr "@dir some/directory\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:156
@@ -252,62 +265,67 @@ msgstr "配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:160
+#, fuzzy
 msgid ""
 "If the port installs configuration files to [.filename]#PREFIX/etc# (or "
 "elsewhere) do _not_ list them in [.filename]#pkg-plist#.  That will cause "
 "`pkg delete` to remove files that have been carefully edited by the user, "
 "and a re-installation will wipe them out."
-msgstr ""
+msgstr "如果 port 将配置文件安装到 [.filename]#PREFIX/etc#（或其他位置），请__勿__将它们列入 [.filename]#pkg-plist#。否则，`pkg delete` 会删除用户精心编辑过的文件，重新安装时也会覆盖这些文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:164
+#, fuzzy
 msgid ""
 "Instead, install sample files with a [.filename]#filename.sample# "
 "extension.  The `@sample` macro automates this, see crossref:plist[plist-"
 "keywords-sample, Expanding Package List with Keywords] for what it does "
 "exactly.  For each sample file, add a line to [.filename]#pkg-plist#:"
-msgstr ""
+msgstr "应改为安装带有 [.filename]#filename.sample# 扩展名的示例文件。`@sample` 宏会自动完成此操作，具体说明请参见 crossref:plist[plist-keywords-sample,使用关键字扩展软件包清单]。对于每个示例文件，都要在 [.filename]#pkg-plist# 中添加一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@sample etc/orbit.conf.sample\n"
-msgstr ""
+msgstr "@sample etc/orbit.conf.sample\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:172
+#, fuzzy
 msgid ""
 "If there is a very good reason not to install a working configuration file "
 "by default, only list the sample filename in [.filename]#pkg-plist#, without "
 "the `@sample` followed by a space part, and add a crossref:pkg-files[porting-"
 "message,message] pointing out that the user must copy and edit the file "
 "before the software will work."
-msgstr ""
+msgstr "如果有充分理由不默认安装可用的配置文件，则只需在 [.filename]#pkg-plist# 中列出示例文件名，不要加上 `@sample` 和其后的空格，并添加一条 crossref:pkg-files[porting-message,消息]，指出用户必须先复制并编辑该文件，软件才能正常工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:177
+#, fuzzy
 msgid ""
 "When a port installs its configuration in a subdirectory of [.filename]#"
 "${PREFIX}/etc#, use `ETCDIR`, which defaults to `${PREFIX}/etc/${PORTNAME}`, "
 "it can be overridden in the ports [.filename]#Makefile# if there is a "
 "convention for the port to use some other directory.  The `%%ETCDIR%%` macro "
 "will be used in its stead in [.filename]#pkg-plist#."
-msgstr ""
+msgstr "如果 port 将配置文件安装到 [.filename]#${PREFIX}/etc# 的子目录中，请使用 `ETCDIR`。它默认为 `${PREFIX}/etc/${PORTNAME}`；如果该 port 按惯例应使用其他目录，也可以在 ports [.filename]#Makefile# 中覆盖此值。在 [.filename]#pkg-plist# 中会使用 `%%ETCDIR%%` 宏代替该路径。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:183
+#, fuzzy
 msgid ""
 "The sample configuration files should always have the [.filename]#.sample# "
 "suffix.  If for some historical reason using the standard suffix is not "
 "possible, or if the sample files come from some other directory, use this "
 "construct:"
-msgstr ""
+msgstr "示例配置文件应始终使用 [.filename]#.sample# 后缀。如果因历史原因无法使用标准后缀，或者示例文件来自其他目录，请使用以下格式："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@sample etc/orbit.conf-dist etc/orbit.conf\n"
-msgstr ""
+msgstr "@sample etc/orbit.conf-dist etc/orbit.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:190
@@ -316,23 +334,25 @@ msgstr "或"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@sample %%EXAMPLESDIR%%/orbit.conf etc/orbit.conf\n"
-msgstr ""
+msgstr "@sample %%EXAMPLESDIR%%/orbit.conf etc/orbit.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:197
+#, fuzzy
 msgid "The format is `@sample _sample-file actual-config-file_`."
-msgstr ""
+msgstr "格式为 `@sample _sample-file actual-config-file_`。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dynamic Versus Static Package List"
-msgstr ""
+msgstr "动态与静态软件包清单"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:204
+#, fuzzy
 msgid ""
 "A _static package list_ is a package list which is available in the Ports "
 "Collection either as [.filename]#pkg-plist# (with or without variable "
@@ -342,20 +362,22 @@ msgid ""
 "committer (for example, using `make makeplist`), this is still considered a "
 "static list, since it is possible to examine it without having to download "
 "or compile the distfile."
-msgstr ""
+msgstr "__静态软件包清单__是指在 Ports Collection 中以 [.filename]#pkg-plist#（可带或不带变量替换）形式提供，或通过 `PLIST_FILES` 和 `PLIST_DIRS` 嵌入 [.filename]#Makefile# 的软件包清单。即使其内容是在提交者将其纳入 Ports Collection__之前__由工具或 Makefile 中的目标自动生成（例如，使用 `make makeplist`），它仍被视为静态清单，因为无需下载或编译 distfile 就可以检查其内容。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:207
+#, fuzzy
 msgid ""
 "A _dynamic package list_ is a package list which is generated at the time "
 "the port is compiled based upon the files and directories which are "
 "installed.  It is not possible to examine it before the source code of the "
 "ported application is downloaded and compiled, or after running a `make "
 "clean`."
-msgstr ""
+msgstr "__动态软件包清单__是指在编译 port 时，根据已安装的文件和目录生成的软件包清单。在下载并编译 port 应用程序的源代码之前，或运行 `make clean` 之后，都无法检查它。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:211
+#, fuzzy
 msgid ""
 "While the use of dynamic package lists is not forbidden, maintainers should "
 "use static package lists wherever possible, as it enables users to man:"
@@ -366,26 +388,28 @@ msgid ""
 "infeasible), or ports which change the package list based upon the version "
 "of dependent software used.  For example, ports which generate docs with "
 "Javadoc."
-msgstr ""
+msgstr "虽然并未禁止使用动态软件包清单，但只要条件允许，维护者就应使用静态软件包清单，因为这样用户可以通过 man:grep[1] 搜索可用的 ports，查找例如由哪个 port 安装了某个文件。动态清单主要适用于复杂的 ports：其软件包清单会随可选功能大幅变化（因此无法实际维护静态清单），或者其清单会随所用依赖软件的版本而变化。例如，使用 Javadoc 生成文档的 ports。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automated Package List Creation"
-msgstr ""
+msgstr "自动创建软件包清单"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:218
+#, fuzzy
 msgid ""
 "First, make sure the port is almost complete, with only [.filename]#pkg-"
 "plist# missing.  Running `make makeplist` will show an example for [."
 "filename]#pkg-plist#.  The output of `makeplist` must be double checked for "
 "correctness as it tries to automatically guess a few things, and can get it "
 "wrong."
-msgstr ""
+msgstr "首先，确保 port 已基本完成，只缺少 [.filename]#pkg-plist#。运行 `make makeplist` 会显示 [.filename]#pkg-plist# 示例。必须仔细检查 `makeplist` 的输出是否正确，因为它会尝试自动推测一些内容，也可能出错。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:223
+#, fuzzy
 msgid ""
 "User configuration files should be installed as [.filename]#filename."
 "sample#, as it is described in crossref:plist[plist-config, Configuration "
@@ -394,585 +418,628 @@ msgid ""
 "makefiles[makefile-info,info files] section.  Any libraries installed by the "
 "port must be listed as specified in the crossref:special[porting-shlibs,"
 "shared libraries] section."
-msgstr ""
+msgstr "用户配置文件应安装为 [.filename]#filename.sample#，如 crossref:plist[plist-config,配置文件]中所述。不得列出 [.filename]#info/dir#，并且必须按照 crossref:makefiles[makefile-info,info 文件]一节中的说明添加适当的 `install-info` 行。port 安装的任何库都必须按照 crossref:special[porting-shlibs,共享库]一节中的规定列出。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Expanding `PLIST_SUB` with Regular Expressions"
-msgstr ""
+msgstr "使用正则表达式扩展 `PLIST_SUB`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:229
+#, fuzzy
 msgid ""
 "Strings to be replaced sometimes need to be very specific to avoid undesired "
 "replacements.  This is a common problem with shorter values."
-msgstr ""
+msgstr "有时需要非常精确地指定要替换的字符串，以避免不必要的替换。短值尤其容易遇到这个问题。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:231
+#, fuzzy
 msgid ""
 "To address this problem, for each `_PLACEHOLDER_=_value_`, a "
 "`PLACEHOLDER_regex=regex` can be set, with the `_regex_` part matching "
 "_value_ more precisely."
-msgstr ""
+msgstr "要解决此问题，对于每个 `_PLACEHOLDER_=_value_`，都可以设置 `PLACEHOLDER_regex=regex`，其中 `_regex_` 部分应能更精确地匹配 _value_。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using PLIST_SUB with Regular Expressions"
-msgstr ""
+msgstr "使用正则表达式设置 PLIST_SUB"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:241
+#, fuzzy
 msgid ""
 "Perl ports can install architecture dependent files in a specific tree.  On "
 "FreeBSD to ease porting, this tree is called `mach`.  For example, a port "
 "that installs a file whose path contains `mach` could have that part of the "
 "path string replaced with the wrong values.  Consider this [."
 "filename]#Makefile#:"
-msgstr ""
+msgstr "Perl ports 可以将依赖架构的文件安装到特定目录树中。在 FreeBSD 上，为了便于移植，这个目录树称为 `mach`。例如，某个 port 安装的文件路径中包含 `mach`，这部分路径字符串就可能被错误的值替换。请看下面的 [.filename]#Makefile#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PORTNAME=\tMachine-Build\n"
 "DISTVERSION=\t1\n"
 "CATEGORIES=\tdevel perl5\n"
 "MASTER_SITES=\tCPAN\n"
 "PKGNAMEPREFIX=\tp5-\n"
-msgstr ""
+msgstr "PORTNAME=\tMachine-Build\nDISTVERSION=\t1\nCATEGORIES=\tdevel perl5\nMASTER_SITES=\tCPAN\nPKGNAMEPREFIX=\tp5-\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "MAINTAINER=\tperl@FreeBSD.org\n"
 "COMMENT=\tBuilding machine\n"
 "WWW=\t\thttps://search.cpan.org/dist/Machine-Build\n"
-msgstr ""
+msgstr "MAINTAINER=\tperl@FreeBSD.org\nCOMMENT=\tBuilding machine\nWWW=\t\thttps://search.cpan.org/dist/Machine-Build\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\t\tperl5\n"
 "USE_PERL5=\tconfigure\n"
-msgstr ""
+msgstr "USES=\t\tperl5\nUSE_PERL5=\tconfigure\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PLIST_SUB=\tPERL_ARCH=mach\n"
-msgstr ""
+msgstr "PLIST_SUB=\tPERL_ARCH=mach\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:261
+#, fuzzy
 msgid "The files installed by the port are:"
-msgstr ""
+msgstr "该 port 安装的文件如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/local/bin/machine-build\n"
 "/usr/local/lib/perl5/site_perl/man/man1/machine-build.1.gz\n"
 "/usr/local/lib/perl5/site_perl/man/man3/Machine::Build.3.gz\n"
 "/usr/local/lib/perl5/site_perl/Machine/Build.pm\n"
 "/usr/local/lib/perl5/site_perl/mach/5.20/Machine/Build/Build.so\n"
-msgstr ""
+msgstr "/usr/local/bin/machine-build\n/usr/local/lib/perl5/site_perl/man/man1/machine-build.1.gz\n/usr/local/lib/perl5/site_perl/man/man3/Machine::Build.3.gz\n/usr/local/lib/perl5/site_perl/Machine/Build.pm\n/usr/local/lib/perl5/site_perl/mach/5.20/Machine/Build/Build.so\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:272
+#, fuzzy
 msgid "Running `make makeplist` wrongly generates:"
-msgstr ""
+msgstr "运行 `make makeplist` 会错误地生成："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bin/%%PERL_ARCH%%ine-build\n"
 "%%PERL5_MAN1%%/%%PERL_ARCH%%ine-build.1.gz\n"
 "%%PERL5_MAN3%%/Machine::Build.3.gz\n"
 "%%SITE_PERL%%/Machine/Build.pm\n"
 "%%SITE_PERL%%/%%PERL_ARCH%%/%%PERL_VER%%/Machine/Build/Build.so\n"
-msgstr ""
+msgstr "bin/%%PERL_ARCH%%ine-build\n%%PERL5_MAN1%%/%%PERL_ARCH%%ine-build.1.gz\n%%PERL5_MAN3%%/Machine::Build.3.gz\n%%SITE_PERL%%/Machine/Build.pm\n%%SITE_PERL%%/%%PERL_ARCH%%/%%PERL_VER%%/Machine/Build/Build.so\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:283
+#, fuzzy
 msgid "Change the `PLIST_SUB` line from the [.filename]#Makefile# to:"
-msgstr ""
+msgstr "将 [.filename]#Makefile# 中的 `PLIST_SUB` 行改为："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PLIST_SUB=\tPERL_ARCH=mach \\\n"
 "\t\tPERL_ARCH_regex=\\bmach\\b\n"
-msgstr ""
+msgstr "PLIST_SUB=\tPERL_ARCH=mach \\\n\t\tPERL_ARCH_regex=\\bmach\\b\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:291
+#, fuzzy
 msgid "Now `make makeplist` correctly generates:"
-msgstr ""
+msgstr "现在，`make makeplist` 会正确生成："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bin/machine-build\n"
 "%%PERL5_MAN1%%/machine-build.1.gz\n"
 "%%PERL5_MAN3%%/Machine::Build.3.gz\n"
 "%%SITE_PERL%%/Machine/Build.pm\n"
 "%%SITE_PERL%%/%%PERL_ARCH%%/%%PERL_VER%%/Machine/Build/Build.so\n"
-msgstr ""
+msgstr "bin/machine-build\n%%PERL5_MAN1%%/machine-build.1.gz\n%%PERL5_MAN3%%/Machine::Build.3.gz\n%%SITE_PERL%%/Machine/Build.pm\n%%SITE_PERL%%/%%PERL_ARCH%%/%%PERL_VER%%/Machine/Build/Build.so\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Expanding Package List with Keywords"
-msgstr ""
+msgstr "使用关键字扩展软件包清单"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:310
+#, fuzzy
 msgid ""
 "All keywords can also take optional arguments in parentheses.  The arguments "
 "are owner, group, and mode.  This argument is used on the file or directory "
 "referenced.  To change the owner, group, and mode of a configuration file, "
 "use:"
-msgstr ""
+msgstr "所有关键字都可以带括号中的可选参数。这些参数依次为所有者、组和模式，并应用于所引用的文件或目录。要更改配置文件的所有者、组和模式，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@sample(games,games,640) etc/config.sample\n"
-msgstr ""
+msgstr "@sample(games,games,640) etc/config.sample\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:318
+#, fuzzy
 msgid ""
 "The arguments are optional.  If only the group and mode need to be changed, "
 "use:"
-msgstr ""
+msgstr "这些参数是可选的。如果只需更改组和模式，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@sample(,games,660) etc/config.sample\n"
-msgstr ""
+msgstr "@sample(,games,660) etc/config.sample\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:328
+#, fuzzy
 msgid ""
 "If a keyword is used on an crossref:makefiles[makefile-options,optional] "
 "entry, it must to be added after the helper:"
-msgstr ""
+msgstr "如果在 crossref:makefiles[makefile-options,可选]条目上使用关键字，必须将其放在辅助标记之后："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:332
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "%%FOO%%@sample etc/orbit.conf.sample\n"
-msgstr ""
+msgstr "%%FOO%%@sample etc/orbit.conf.sample\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:336
+#, fuzzy
 msgid ""
 "This is because the options plist helpers are used to comment out the line, "
 "so they need to be put first.  See crossref:makefiles[options_sub,"
 "`OPTIONS_SUB`] for more information."
-msgstr ""
+msgstr "这是因为选项 plist 辅助项会将该行注释掉，因此必须放在前面。更多信息请参见 crossref:makefiles[options_sub,`OPTIONS_SUB`]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@desktop-file-utils`"
-msgstr ""
+msgstr "`@desktop-file-utils`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:343
+#, fuzzy
 msgid ""
 "Will run `update-desktop-database -q` after installation and "
 "deinstallation.  _Never_ use directly, add crossref:uses[uses-desktop-file-"
 "utils,`USES=desktop-file-utils`] to the [.filename]#Makefile#."
-msgstr ""
+msgstr "安装和卸载后运行 `update-desktop-database -q`。__切勿__直接使用此宏；应在 [.filename]#Makefile# 中添加 crossref:uses[uses-desktop-file-utils,`USES=desktop-file-utils`]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@fc` _directory_"
-msgstr ""
+msgstr "`@fc` _目录_"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:348
+#, fuzzy
 msgid ""
 "Add a `@dir` entry for the directory passed as an argument, and run `fc-"
 "cache -fs` on that directory after installation and deinstallation."
-msgstr ""
+msgstr "为作为参数传入的目录添加一个 `@dir` 条目，并在安装和卸载后对该目录运行 `fc-cache -fs`。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@fontsdir` _directory_"
-msgstr ""
+msgstr "`@fontsdir` _目录_"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:354
+#, fuzzy
 msgid ""
 "Add a `@dir` entry for the directory passed as an argument, and run "
 "`mkfontscale` and `mkfontdir` on that directory after installation and "
 "deinstallation.  Additionally, on deinstallation, it removes the [."
 "filename]#fonts.scale# and [.filename]#fonts.dir# cache files if they are "
 "empty."
-msgstr ""
+msgstr "为作为参数传入的目录添加 `@dir` 条目，并在安装和卸载后对该目录运行 `mkfontscale` 和 `mkfontdir`。此外，卸载时，如果 [.filename]#fonts.scale# 和 [.filename]#fonts.dir# 缓存文件为空，则将其删除。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@info` _file_"
-msgstr ""
+msgstr "`@info` __文件__"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:362
+#, fuzzy
 msgid ""
 "Add the file passed as argument to the plist, and updates the info document "
 "index on installation and deinstallation.  Additionally, it removes the "
 "index if empty on deinstallation.  This should never be used manually, but "
 "always through `INFO`.  See crossref:makefiles[makefile-info,Info Files] for "
 "more information."
-msgstr ""
+msgstr "将作为参数传入的文件添加到 plist，并在安装和卸载时更新 info 文档索引。此外，卸载时，如果索引为空，则将其删除。切勿手动使用此功能，而应始终通过 `INFO` 使用。更多信息请参见 crossref:makefiles[makefile-info,Info Files]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@kld` _directory_"
-msgstr ""
+msgstr "`@kld` __目录__"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:368
+#, fuzzy
 msgid ""
 "Runs `kldxref` on the directory on installation and deinstallation.  "
 "Additionally, on deinstallation, it will remove the directory if empty."
-msgstr ""
+msgstr "安装和卸载时，在该目录上运行 `kldxref`。此外，卸载时，如果该目录为空，则将其删除。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@rmtry` _file_"
-msgstr ""
+msgstr "`@rmtry` __文件__"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:373
+#, fuzzy
 msgid ""
 "Will remove the file on deinstallation, and not give an error if the file is "
 "not there."
-msgstr ""
+msgstr "卸载时删除该文件；如果文件不存在，则不报错。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@sample` _file_ [_file_]"
-msgstr ""
+msgstr "`@sample` __文件__ [__文件__]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:379
+#, fuzzy
 msgid ""
 "This is used to handle installation of configuration files, through example "
 "files bundled with the package.  The \"actual\", non-sample, file is either "
 "the second filename, if present, or the first filename without the [."
 "filename]#.sample# extension."
-msgstr ""
+msgstr "此功能用于通过软件包中附带的示例文件来处理配置文件的安装。“实际”文件（非示例文件）是第二个文件名（如果有），否则是去掉 [.filename]#.sample# 扩展名后的第一个文件名。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:384
+#, fuzzy
 msgid ""
 "This does three things. First, add the first file passed as argument, the "
 "sample file, to the plist.  Then, on installation, if the actual file is not "
 "found, copy the sample file to the actual file.  And finally, on "
 "deinstallation, remove the actual file if it has not been modified.  See "
 "crossref:plist[plist-config, Configuration Files] for more information."
-msgstr ""
+msgstr "此功能会执行三项操作。首先，将作为参数传入的第一个文件（示例文件）添加到 plist。然后，安装时，如果找不到实际文件，则将示例文件复制为实际文件。最后，卸载时，如果实际文件未被修改，则将其删除。更多信息请参见 crossref:plist[plist-config, Configuration Files]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@shared-mime-info` _directory_"
-msgstr ""
+msgstr "`@shared-mime-info` __目录__"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:389
+#, fuzzy
 msgid ""
 "Runs `update-mime-database` on the directory on installation and "
 "deinstallation."
-msgstr ""
+msgstr "安装和卸载时，在该目录上运行 `update-mime-database`。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@shell` _file_"
-msgstr ""
+msgstr "`@shell` __文件__"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:394
+#, fuzzy
 msgid "Add the file passed as argument to the plist."
-msgstr ""
+msgstr "将作为参数传入的文件添加到 plist。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:397
+#, fuzzy
 msgid ""
 "On installation, add the full path to _file_ to [.filename]#/etc/shells#, "
 "while making sure it is not added twice.  On deinstallation, remove it from "
 "[.filename]#/etc/shells#."
-msgstr ""
+msgstr "安装时，将 __文件__ 的完整路径添加到 [.filename]#/etc/shells#，并确保不会重复添加。卸载时，将其从 [.filename]#/etc/shells# 中移除。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:399
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@terminfo`"
-msgstr ""
+msgstr "`@terminfo`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:403
+#, fuzzy
 msgid ""
 "Do not use by itself.  If the port installs [.filename]#*.terminfo# files, "
 "add crossref:uses[uses-terminfo,`USES=terminfo`] to its [."
 "filename]#Makefile#."
-msgstr ""
+msgstr "请勿单独使用。如果 port 安装 [.filename]#*.terminfo# 文件，请在其 [.filename]#Makefile# 中添加 crossref:uses[uses-terminfo,`USES=terminfo`]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:405
+#, fuzzy
 msgid ""
 "On installation and deinstallation, if `tic` is present, refresh [.filename]#"
 "${PREFIX}/shared/misc/terminfo.db# from the [.filename]#*.terminfo# files in "
 "[.filename]#${PREFIX}/shared/misc#."
-msgstr ""
+msgstr "安装和卸载时，如果存在 `tic`，则根据 [.filename]#${PREFIX}/shared/misc# 中的 [.filename]#*.terminfo# 文件刷新 [.filename]#${PREFIX}/shared/misc/terminfo.db#。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:407
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Base Keywords"
-msgstr ""
+msgstr "基础关键字"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:410
+#, fuzzy
 msgid ""
 "There are a few keywords that are hardcoded, and documented in man:pkg-"
 "create[8]. For the sake of completeness, they are also documented here."
-msgstr ""
+msgstr "有少数关键字是硬编码的，并在 man:pkg-create[8] 中有说明。为求完整起见，此处也一并说明。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@` [_file_]"
-msgstr ""
+msgstr "`@` [__文件__]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:416
+#, fuzzy
 msgid ""
 "The empty keyword is a placeholder to use when the file's owner, group, or "
 "mode need to be changed.  For example, to set the group of the file to "
 "`games` and add the setgid bit, add:"
-msgstr ""
+msgstr "空关键字是一个占位符，用于需要更改文件所有者、组或模式的情况。例如，要将文件的组设置为 `games` 并添加 setgid 位，请添加："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:420
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@(,games,2755) sbin/daemon\n"
-msgstr ""
+msgstr "@(,games,2755) sbin/daemon\n"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@preexec` _command_, `@postexec` _command_, `@preunexec` _command_, `@postunexec` _command_"
-msgstr ""
+msgstr "`@preexec` __命令__，`@postexec` __命令__，`@preunexec` __命令__，`@postunexec` __命令__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:426
+#, fuzzy
 msgid ""
 "Execute _command_ as part of the package installation or deinstallation "
 "process."
-msgstr ""
+msgstr "在软件包安装或卸载过程中执行 __命令__。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@preexec` _command_"
-msgstr ""
+msgstr "`@preexec` __命令__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:429
+#, fuzzy
 msgid "Execute _command_ as part of the [.filename]#pre-install# scripts."
-msgstr ""
+msgstr "作为 [.filename]#pre-install# 脚本的一部分执行 __命令__。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@postexec` _command_"
-msgstr ""
+msgstr "`@postexec` __命令__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:432
+#, fuzzy
 msgid "Execute _command_ as part of the [.filename]#post-install# scripts."
-msgstr ""
+msgstr "作为 [.filename]#post-install# 脚本的一部分执行 __命令__。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@preunexec` _command_"
-msgstr ""
+msgstr "`@preunexec` __命令__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:435
+#, fuzzy
 msgid "Execute _command_ as part of the [.filename]#pre-deinstall# scripts."
-msgstr ""
+msgstr "作为 [.filename]#pre-deinstall# 脚本的一部分执行 __命令__。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:436
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@postunexec` _command_"
-msgstr ""
+msgstr "`@postunexec` __命令__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:438
+#, fuzzy
 msgid "Execute _command_ as part of the [.filename]#post-deinstall# scripts."
-msgstr ""
+msgstr "作为 [.filename]#post-deinstall# 脚本的一部分执行 __命令__。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:441
+#, fuzzy
 msgid ""
 "If _command_ contains any of these sequences somewhere in it, they are "
 "expanded inline.  For these examples, assume that `@cwd` is set to [."
 "filename]#/usr/local# and the last extracted file was [.filename]#bin/emacs#."
-msgstr ""
+msgstr "如果 __命令__ 中包含以下任一序列，则会在其中进行内联展开。以下示例假设 `@cwd` 设置为 [.filename]#/usr/local#，且最后解压的文件是 [.filename]#bin/emacs#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:442
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`%F`"
-msgstr ""
+msgstr "`%F`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:445
+#, fuzzy
 msgid ""
 "Expand to the last filename extracted (as specified).  In the example case [."
 "filename]#bin/emacs#."
-msgstr ""
+msgstr "展开为最后解压的文件名（如指定）。在此示例中为 [.filename]#bin/emacs#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`%D`"
-msgstr ""
+msgstr "`%D`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:449
+#, fuzzy
 msgid ""
 "Expand to the current directory prefix, as set with `@cwd`.  In the example "
 "case [.filename]#/usr/local#."
-msgstr ""
+msgstr "展开为当前目录前缀，即通过 `@cwd` 设置的值。在此示例中为 [.filename]#/usr/local#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:450
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`%B`"
-msgstr ""
+msgstr "`%B`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:453
+#, fuzzy
 msgid ""
 "Expand to the basename of the fully qualified filename, that is, the current "
 "directory prefix plus the last filespec, minus the trailing filename.  In "
 "the example case, that would be [.filename]#/usr/local/bin#."
-msgstr ""
+msgstr "展开为完整路径文件名的基目录，也就是当前目录前缀加上最后一个文件规格，再去掉末尾的文件名。在此示例中为 [.filename]#/usr/local/bin#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`%f`"
-msgstr ""
+msgstr "`%f`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:457
+#, fuzzy
 msgid ""
 "Expand to the filename part of the fully qualified name, or the converse of `"
 "%B`.  In the example case, [.filename]#emacs#."
-msgstr ""
+msgstr "展开为完整路径名中的文件名部分，即 `%B` 的相反部分。在此示例中为 [.filename]#emacs#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:462
+#, fuzzy
 msgid ""
 "These keywords are here to help you set up the package so that it is as "
 "ready to use as possible.  They _must not_ be abused to start services, stop "
 "services, or run any other commands that will modify the currently running "
 "system."
-msgstr ""
+msgstr "这些关键字旨在帮助你设置软件包，使其尽可能开箱即用。不得滥用这些关键字来启动或停止服务，或运行任何其他会修改当前运行系统的命令。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:465
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@mode` _mode_"
-msgstr ""
+msgstr "`@mode` __模式__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:470
+#, fuzzy
 msgid ""
 "Set default permission for all subsequently extracted files to _mode_.  "
 "Format is the same as that used by man:chmod[1].  Use without an arg to set "
 "back to default permissions (mode of the file while being packed)."
-msgstr ""
+msgstr "将之后所有解压文件的默认权限设置为 __模式__。格式与 man:chmod[1] 使用的格式相同。不带参数使用时，将恢复默认权限（即打包时文件的模式）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:475
+#, fuzzy
 msgid ""
 "This must be a numeric mode, like `644`, `4755`, or `600`.  It cannot be a "
 "relative mode like `u+s`."
-msgstr ""
+msgstr "此处必须使用数字模式，例如 `644`、`4755` 或 `600`。不能使用 `u+s` 这样的相对模式。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:478
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@owner` _user_"
-msgstr ""
+msgstr "`@owner` __用户__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:482
+#, fuzzy
 msgid ""
 "Set default ownership for all subsequent files to _user_.  Use without an "
 "argument to set back to default ownership (`root`)."
-msgstr ""
+msgstr "将之后所有文件的默认所有者设置为 __用户__。不带参数使用时，将恢复默认所有者（`root`）。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:484
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@group` _group_"
-msgstr ""
+msgstr "`@group` __组__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:488
+#, fuzzy
 msgid ""
 "Set default group ownership for all subsequent files to _group_.  Use "
 "without an arg to set back to default group ownership (`wheel`)."
-msgstr ""
+msgstr "将之后所有文件的默认所属组设置为 __组__。不带参数使用时，将恢复默认所属组（`wheel`）。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:490
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@comment` _string_"
-msgstr ""
+msgstr "`@comment` __字符串__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:493
+#, fuzzy
 msgid "This line is ignored when packing."
-msgstr ""
+msgstr "打包时会忽略此行。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:495
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@dir` _directory_"
-msgstr ""
+msgstr "`@dir` __目录__"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:501
+#, fuzzy
 msgid ""
 "Declare directory name. By default, directories created under `PREFIX` by a "
 "package installation are automatically removed.  Use this when an empty "
@@ -981,295 +1048,321 @@ msgid ""
 "need to be registered.  For example, [.filename]#/var/db/${PORTNAME}# needs "
 "to have a `@dir` entry whereas [.filename]#${PREFIX}/shared/${PORTNAME}# "
 "does not if it contains files or uses the default owner, group, and mode."
-msgstr ""
+msgstr "声明目录名。默认情况下，软件包安装在 `PREFIX` 下创建的目录会自动删除。需要在 `PREFIX` 下创建空目录，或目录需要设置非默认所有者、组或模式时，请使用此项。`PREFIX` 之外的目录需要注册。例如，[.filename]#/var/db/${PORTNAME}# 需要有一个 `@dir` 条目；而 [.filename]#${PREFIX}/shared/${PORTNAME}# 如果包含文件，或使用默认所有者、组和模式，则不需要该条目。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@exec` _command_, `@unexec` _command_ (Deprecated)"
-msgstr ""
+msgstr "`@exec` __命令__，`@unexec` __命令__（已弃用）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:507
+#, fuzzy
 msgid ""
 "Execute _command_ as part of the installation or deinstallation process.  "
 "Please use crossref:plist[plist-keywords-base-exec,\"`@preexec` _command_, "
 "`@postexec` _command_, `@preunexec` _command_, `@postunexec` _command_\"] "
 "instead."
-msgstr ""
+msgstr "在安装或卸载过程中执行 __命令__。请改用 crossref:plist[plist-keywords-base-exec,\"`@preexec` _command_, `@postexec` _command_, `@preunexec` _command_, `@postunexec` _command_\"]。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:509
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@dirrm` _directory_ (Deprecated)"
-msgstr ""
+msgstr "`@dirrm` __目录__（已弃用）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:513
+#, fuzzy
 msgid ""
 "Declare directory name to be deleted at deinstall time.  By default, "
 "directories created under `PREFIX` by a package installation are deleted "
 "when the package is deinstalled."
-msgstr ""
+msgstr "声明要在卸载时删除的目录名。默认情况下，软件包安装在 `PREFIX` 下创建的目录会在卸载软件包时删除。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:515
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`@dirrmtry` _directory_ (Deprecated)"
-msgstr ""
+msgstr "`@dirrmtry` __目录__（已弃用）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:518
+#, fuzzy
 msgid ""
 "Declare directory name to be removed, as for `@dirrm`, but does not issue a "
 "warning if the directory cannot be removed."
-msgstr ""
+msgstr "声明要删除的目录名，作用与 `@dirrm` 相同，但如果无法删除目录，则不会发出警告。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:520
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating New Keywords"
-msgstr ""
+msgstr "创建新关键字"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:525
+#, fuzzy
 msgid ""
 "Package list files can be extended by keywords that are defined in the [."
 "filename]#${PORTSDIR}/Keywords# directory.  The settings for each keyword "
 "are stored in a UCL file named [.filename]#keyword.ucl#.  The file must "
 "contain at least one of these sections:"
-msgstr ""
+msgstr "可以通过 [.filename]#${PORTSDIR}/Keywords# 目录中定义的关键字扩展软件包列表文件。每个关键字的设置存储在名为 [.filename]#keyword.ucl# 的 UCL 文件中。该文件必须至少包含以下一个部分："
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:527
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:536
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`attributes`"
-msgstr ""
+msgstr "`attributes`"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:528
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:549
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`action`"
-msgstr ""
+msgstr "`action`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:529
+#, fuzzy
 msgid "`pre-install`"
-msgstr ""
+msgstr "`pre-install`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:530
+#, fuzzy
 msgid "`post-install`"
-msgstr ""
+msgstr "`post-install`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:531
+#, fuzzy
 msgid "`pre-deinstall`"
-msgstr ""
+msgstr "`pre-deinstall`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:532
+#, fuzzy
 msgid "`post-deinstall`"
-msgstr ""
+msgstr "`post-deinstall`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:533
+#, fuzzy
 msgid "`pre-upgrade`"
-msgstr ""
+msgstr "`pre-upgrade`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:534
+#, fuzzy
 msgid "`post-upgrade`"
-msgstr ""
+msgstr "`post-upgrade`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:542
+#, fuzzy
 msgid ""
 "Changes the owner, group, or mode used by the keyword.  Contains an "
 "associative array where the possible keys are `owner`, `group`, and `mode`.  "
 "The values are, respectively, a user name, a group name, and a file mode.  "
 "For example:"
-msgstr ""
+msgstr "更改该关键字使用的所有者、组或模式。此项包含一个关联数组，可用键为 `owner`、`group` 和 `mode`。对应的值分别为用户名、组名和文件模式。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:546
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "attributes: { owner: \"games\", group: \"games\", mode: 0555 }\n"
-msgstr ""
+msgstr "attributes: { owner: \"games\", group: \"games\", mode: 0555 }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:552
+#, fuzzy
 msgid ""
 "Defines what happens to the keyword's parameter. Contains an array where the "
 "possible values are:"
-msgstr ""
+msgstr "定义如何处理关键字的参数。此项包含一个数组，可用值如下："
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:553
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`setprefix`"
-msgstr ""
+msgstr "`setprefix`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:555
+#, fuzzy
 msgid "Set the prefix for the next plist entries."
-msgstr ""
+msgstr "设置后续 plist 条目的前缀。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`dir`"
-msgstr ""
+msgstr "`dir`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:558
+#, fuzzy
 msgid "Register a directory to be created on install and removed on deinstall."
-msgstr ""
+msgstr "注册一个目录，以便在安装时创建并在卸载时删除。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:559
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`dirrm`"
-msgstr ""
+msgstr "`dirrm`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:562
+#, fuzzy
 msgid "Register a directory to be deleted on deinstall.  Deprecated."
-msgstr ""
+msgstr "注册一个目录，以便在卸载时删除。已弃用。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`dirrmtry`"
-msgstr ""
+msgstr "`dirrmtry`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:566
+#, fuzzy
 msgid "Register a directory to try and deleted on deinstall.  Deprecated."
-msgstr ""
+msgstr "注册一个目录，以便在卸载时尝试删除。已弃用。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:567
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`file`"
-msgstr ""
+msgstr "`file`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:569
+#, fuzzy
 msgid "Register a file."
-msgstr ""
+msgstr "注册一个文件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:570
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`setmode`"
-msgstr ""
+msgstr "`setmode`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:572
+#, fuzzy
 msgid "Set the mode for the next plist entries."
-msgstr ""
+msgstr "设置后续 plist 条目的模式。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:573
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`setowner`"
-msgstr ""
+msgstr "`setowner`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:575
+#, fuzzy
 msgid "Set the owner for the next plist entries."
-msgstr ""
+msgstr "设置后续 plist 条目的所有者。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:576
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`setgroup`"
-msgstr ""
+msgstr "`setgroup`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:578
+#, fuzzy
 msgid "Set the group for the next plist entries."
-msgstr ""
+msgstr "设置后续 plist 条目的组。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:579
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`comment`"
-msgstr ""
+msgstr "`comment`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:581
+#, fuzzy
 msgid "Does not do anything, equivalent to not entering an `action` section."
-msgstr ""
+msgstr "不执行任何操作，等同于不填写 `action` 部分。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:582
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ignore_next`"
-msgstr ""
+msgstr "`ignore_next`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:584
+#, fuzzy
 msgid "Ignore the next entry in the plist."
-msgstr ""
+msgstr "忽略 plist 中的下一个条目。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:586
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`arguments`"
-msgstr ""
+msgstr "`arguments`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:590
+#, fuzzy
 msgid ""
 "If set to `true`, adds argument handling, splitting the whole line, `%@`, "
 "into numbered arguments, `%1`, `%2`, and so on.  For example, for this line:"
-msgstr ""
+msgstr "如果设为 `true`，则启用参数处理：将整行 `%@` 拆分为编号参数 `%1`、`%2` 等。例如，对于以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:594
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "@foo some.content other.content\n"
-msgstr ""
+msgstr "@foo some.content other.content\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:597
+#, fuzzy
 msgid "`%1` and `%2` will contain:"
-msgstr ""
+msgstr "`%1` 和 `%2` 将分别包含："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:602
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "some.content\n"
 "other.content\n"
-msgstr ""
+msgstr "some.content\nother.content\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:607
+#, fuzzy
 msgid ""
 "It also affects how the crossref:plist[plist-keywords-action,`action`] entry "
 "works.  When there is more than one argument, the argument number must be "
 "specified.  For example:"
-msgstr ""
+msgstr "这也会影响 crossref:plist[plist-keywords-action,`action`] 条目的工作方式。如果参数不止一个，则必须指定参数编号。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:611
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "actions: [file(1)]\n"
-msgstr ""
+msgstr "actions: [file(1)]\n"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:614
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pre-install`, `post-install`, `pre-deinstall`, `post-deinstall`, `pre-upgrade`, `post-upgrade`"
-msgstr ""
+msgstr "`pre-install`、`post-install`、`pre-deinstall`、`post-deinstall`、`pre-upgrade`、`post-upgrade`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:619
+#, fuzzy
 msgid ""
 "These keywords contains a man:sh[1] script to be executed before or after "
 "installation, deinstallation, or upgrade of the package.  In addition to the "
@@ -1277,57 +1370,59 @@ msgid ""
 "base-exec,\"`@preexec` _command_, `@postexec` _command_, `@preunexec` "
 "_command_, `@postunexec` _command_\"], there is a new one, `%@`, which "
 "represents the argument of the keyword."
-msgstr ""
+msgstr "这些关键字包含一个 man:sh[1] 脚本，用于在安装、卸载或升级软件包之前或之后执行。除了 crossref:plist[plist-keywords-base-exec,\"`@preexec` _command_、`@postexec` _command_、`@preunexec` _command_、`@postunexec` _command_\"] 中所述的常见 `@exec %_foo_` 占位符外，还有一个新的占位符 `%@`，它表示关键字的参数。"
 
 #. type: Title ====
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:621
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Custom Keyword Examples"
-msgstr ""
+msgstr "自定义关键字示例"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:624
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of a `@dirrmtryecho` Keyword"
-msgstr ""
+msgstr "`@dirrmtryecho` 关键字示例"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:629
+#, fuzzy
 msgid ""
 "This keyword does two things, it adds a `@dirrmtry _directory_` line to the "
 "packing list, and echoes the fact that the directory is removed when "
 "deinstalling the package."
-msgstr ""
+msgstr "此关键字执行两项操作：将一行 `@dirrmtry __directory__` 添加到打包清单，并在卸载软件包时输出目录已移除的消息。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:636
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "actions: [dirrmtry]\n"
 "post-deinstall: <<EOD\n"
 "  echo \"Directory %D/%@ removed.\"\n"
 "EOD\n"
-msgstr ""
+msgstr "actions: [dirrmtry]\npost-deinstall: <<EOD\n  echo \"Directory %D/%@ removed.\"\nEOD\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:641
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Real Life Example, How `@sample` is Implemented"
-msgstr ""
+msgstr "实际示例：`@sample` 的实现方式"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:647
+#, fuzzy
 msgid ""
 "This keyword does three things.  It adds the first _filename_ passed as an "
 "argument to `@sample` to the packing list, it adds to the `post-install` "
 "script instructions to copy the sample to the actual configuration file if "
 "it does not already exist, and it adds to the `post-deinstall` instructions "
 "to remove the configuration file if it has not been modified."
-msgstr ""
+msgstr "此关键字执行三项操作：将传递给 `@sample` 的第一个 __filename__ 添加到打包清单；在 `post-install` 脚本中添加指令，以便在实际配置文件尚不存在时将示例文件复制为实际配置文件；并在 `post-deinstall` 指令中添加操作，在配置文件未被修改时将其删除。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/plist/_index.adoc:692
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "actions: [file(1)]\n"
 "arguments: true\n"
@@ -1371,4 +1466,4 @@ msgid ""
 "    echo \"You may need to manually remove ${target_file} if it is no longer needed.\"\n"
 "  fi\n"
 "EOD\n"
-msgstr ""
+msgstr "actions: [file(1)]\narguments: true\npost-install: <<EOD\n  case \"%1\" in\n  /*) sample_file=\"%1\" ;;\n  *) sample_file=\"%D/%1\" ;;\n  esac\n  target_file=\"${sample_file%.sample}\"\n  set -- %@\n  if [ $# -eq 2 ]; then\n      target_file=${2}\n  fi\n  case \"${target_file}\" in\n  /*) target_file=\"${target_file}\" ;;\n  *) target_file=\"%D/${target_file}\" ;;\n  esac\n  if ! [ -f \"${target_file}\" ]; then\n    /bin/cp -p \"${sample_file}\" \"${target_file}\" && \\\n      /bin/chmod u+w \"${target_file}\"\n  fi\nEOD\npre-deinstall: <<EOD\n  case \"%1\" in\n  /*) sample_file=\"%1\" ;;\n  *) sample_file=\"%D/%1\" ;;\n  esac\n  target_file=\"${sample_file%.sample}\"\n  set -- %@\n  if [ $# -eq 2 ]; then\n      set -- %@\n      target_file=${2}\n  fi\n  case \"${target_file}\" in\n  /*) target_file=\"${target_file}\" ;;\n  *) target_file=\"%D/${target_file}\" ;;\n  esac\n  if cmp -s \"${target_file}\" \"${sample_file}\"; then\n    rm -f \"${target_file}\"\n  else\n    echo \"You may need to manually remove ${target_file} if it is no longer needed.\"\n  fi\nEOD\n"

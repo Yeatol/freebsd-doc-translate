@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter covers how to configure the FreeBSD Kernel. When to build a custom kernel, how to take a hardware inventory, how to customize a kernel configuration file, etc"
-msgstr ""
+msgstr "本章介绍如何配置 FreeBSD 内核，包括何时构建自定义内核、如何盘点硬件、如何自定义内核配置文件等。"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Common Tasks"
-msgstr ""
+msgstr "第二部分：常见任务"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
@@ -107,10 +107,11 @@ msgstr "发生错误时如何排除问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:68
+#, fuzzy
 msgid ""
 "All of the commands listed in the examples in this chapter should be "
 "executed as `root`."
-msgstr ""
+msgstr "本章示例中列出的所有命令都应以 `root` 身份执行。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:70
@@ -227,6 +228,7 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:97
+#, fuzzy
 msgid ""
 "When building a custom kernel, it is important to note that non-default "
 "configurations are less thoroughly tested than the GENERIC configuration.  "
@@ -235,7 +237,7 @@ msgid ""
 "configurations are recommended only for advanced users who have a specific "
 "reason for making changes and are willing to engage in the debugging process "
 "if necessary."
-msgstr ""
+msgstr "构建自定义内核时，需要注意，非默认配置得到的测试不如 GENERIC 配置充分。虽然自定义内核可以带来特定优势，但也会增加遇到构建或运行时问题的风险。建议只有在有特定理由进行更改，并愿意在必要时参与调试的高级用户才使用自定义内核配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:101
@@ -253,33 +255,35 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:105
+#, fuzzy
 msgid ""
 "Kernel modules exist in [.filename]#/boot/kernel# and may be dynamically "
 "loaded into the running kernel using man:kldload[8].  Most kernel drivers "
 "have a loadable module and manual page.  For example, the man:ath[4] "
 "wireless network driver has the following information in its manual page:"
-msgstr ""
+msgstr "内核模块位于 [.filename]#/boot/kernel# 中，可以使用 man:kldload[8] 动态加载到正在运行的内核中。大多数内核驱动程序都有可加载模块和手册页。例如，man:ath[4] 无线网络驱动程序的手册页包含以下信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Alternatively, to load the driver as a module at boot time, place the\n"
 "following line in man:loader.conf[5]:\n"
-msgstr ""
+msgstr "或者，要在启动时将驱动程序作为模块加载，请将以下行添加到 man:loader.conf[5] 中：\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "    if_ath_load=\"YES\"\n"
-msgstr ""
+msgstr "    if_ath_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:115
+#, fuzzy
 msgid ""
 "Adding `if_ath_load=\"YES\"` to [.filename]#/boot/loader.conf# will load "
 "this module dynamically at boot time."
-msgstr ""
+msgstr "将 `if_ath_load=\"YES\"` 添加到 [.filename]#/boot/loader.conf# 后，此模块将在启动时动态加载。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:118
@@ -299,39 +303,42 @@ msgstr "侦测系统硬件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:125
+#, fuzzy
 msgid ""
 "Before editing the kernel configuration file, it is recommended to perform "
 "an inventory of the machine's hardware.  On a dual-boot system, the "
 "inventory can be created from the other operating system.  For example, "
 "Microsoft(R)'s Device Manager contains information about installed devices."
-msgstr ""
+msgstr "编辑内核配置文件之前，建议先盘点机器的硬件。在双启动系统上，可以从另一个操作系统中创建硬件清单。例如，Microsoft(R) 的设备管理器包含已安装设备的信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:129
+#, fuzzy
 msgid ""
 "Some versions of Microsoft(R) Windows(R) have a System icon which can be "
 "used to access Device Manager."
-msgstr ""
+msgstr "某些版本的 Microsoft(R) Windows(R) 提供“系统”图标，可用于访问设备管理器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:134
+#, fuzzy
 msgid ""
 "If FreeBSD is the only installed operating system, use man:dmesg[8] to "
 "determine the hardware that was found and listed during the boot probe.  "
 "Most device drivers on FreeBSD have a manual page which lists the hardware "
 "supported by that driver.  For example, the following lines indicate that "
 "the man:psm[4] driver found a mouse:"
-msgstr ""
+msgstr "如果 FreeBSD 是唯一安装的操作系统，请使用 man:dmesg[8] 确定启动探测期间发现并列出的硬件。FreeBSD 上的大多数设备驱动程序都有手册页，其中列出了该驱动程序支持的硬件。例如，以下几行表明 man:psm[4] 驱动程序发现了一个鼠标："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "psm0: <PS/2 Mouse> irq 12 on atkbdc0\n"
 "psm0: [GIANT-LOCKED]\n"
 "psm0: [ITHREAD]\n"
 "psm0: model Generic PS/2 mouse, device ID 0\n"
-msgstr ""
+msgstr "psm0: <PS/2 Mouse> irq 12 on atkbdc0\npsm0: [GIANT-LOCKED]\npsm0: [ITHREAD]\npsm0: model Generic PS/2 mouse, device ID 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:144
@@ -342,21 +349,23 @@ msgstr "因为该硬件存在，此驱动程序便不应该从自定义核心配
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:146
+#, fuzzy
 msgid ""
 "If the output of `dmesg` does not display the results of the boot probe "
 "output, instead read the contents of [.filename]#/var/run/dmesg.boot#."
-msgstr ""
+msgstr "如果 `dmesg` 的输出中没有显示启动探测结果，请改为读取 [.filename]#/var/run/dmesg.boot# 的内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:149
+#, fuzzy
 msgid ""
 "Another tool for finding hardware is man:pciconf[8], which provides more "
 "verbose output.  For example:"
-msgstr ""
+msgstr "另一个用于查找硬件的工具是 man:pciconf[8]，它提供更详细的输出。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% pciconf -lv\n"
 "ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 hdr=0x00\n"
@@ -364,7 +373,7 @@ msgid ""
 "    device     = 'AR5212 Atheros AR5212 802.11abg wireless'\n"
 "    class      = network\n"
 "    subclass   = ethernet\n"
-msgstr ""
+msgstr "% pciconf -lv\nath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 hdr=0x00\n    vendor     = 'Atheros Communications Inc.'\n    device     = 'AR5212 Atheros AR5212 802.11abg wireless'\n    class      = network\n    subclass   = ethernet\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:161
@@ -378,20 +387,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:164
+#, fuzzy
 msgid ""
 "The `-k` flag of man:man[1] can be used to provide useful information.  For "
 "example, it can be used to display a list of manual pages which contain a "
 "particular device brand or name:"
-msgstr ""
+msgstr "man:man[1] 的 `-k` 标志可以用来获取有用信息。例如，它可以显示包含特定设备品牌或名称的手册页列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# man -k Atheros\n"
 "ath(4)                   - Atheros IEEE 802.11 wireless network driver\n"
 "ath_hal(4)               - Atheros Hardware Access Layer (HAL)\n"
-msgstr ""
+msgstr "# man -k Atheros\nath(4)                   - Atheros IEEE 802.11 wireless network driver\nath_hal(4)               - Atheros Hardware Access Layer (HAL)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:173
@@ -419,11 +429,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:181
+#, fuzzy
 msgid ""
 "If [.filename]#/usr/src/# does not exist or it is empty, source has not been "
 "installed.  Source can be installed with Git using the instructions in "
 "crossref:mirrors[git,“Using Git”]."
-msgstr ""
+msgstr "如果 [.filename]#/usr/src/# 不存在或为空，则表示尚未安装源代码。可以按照 crossref:mirrors[git,“使用 Git”] 中的说明，通过 Git 安装源代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:186
@@ -466,19 +477,20 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src/sys/amd64/conf\n"
 "# cp GENERIC MYKERNEL\n"
-msgstr ""
+msgstr "# cd /usr/src/sys/amd64/conf\n# cp GENERIC MYKERNEL\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:201
+#, fuzzy
 msgid ""
 "[.filename]#MYKERNEL# can now be customized with any `ASCII` text editor.  "
 "The default editor is vi, though an easier editor for beginners, called ee, "
 "is also installed with FreeBSD."
-msgstr ""
+msgstr "现在可以使用任何 `ASCII` 文本编辑器自定义 [.filename]#MYKERNEL#。默认编辑器是 vi；FreeBSD 还安装了一个更适合初学者的编辑器 ee。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:207
@@ -499,12 +511,13 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:213
+#, fuzzy
 msgid ""
 "It is easy to remove support for a device or option and end up with a broken "
 "kernel.  For example, if the man:ata[4] driver is removed from the kernel "
 "configuration file, a system using `ATA` disk drivers may not boot.  When in "
 "doubt, just leave support in the kernel."
-msgstr ""
+msgstr "移除设备或选项的支持很容易导致内核损坏。例如，如果从内核配置文件中移除 man:ata[4] 驱动程序，使用 `ATA` 磁盘驱动程序的系统可能无法启动。如有疑问，请保留内核中的支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:217
@@ -541,13 +554,13 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src/sys/amd64/conf\n"
 "# mkdir /root/kernels\n"
 "# cp GENERIC /root/kernels/MYKERNEL\n"
 "# ln -s /root/kernels/MYKERNEL\n"
-msgstr ""
+msgstr "# cd /usr/src/sys/amd64/conf\n# mkdir /root/kernels\n# cp GENERIC /root/kernels/MYKERNEL\n# ln -s /root/kernels/MYKERNEL\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:237
@@ -567,24 +580,25 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "include GENERIC\n"
 "ident MYKERNEL\n"
-msgstr ""
+msgstr "include GENERIC\nident MYKERNEL\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "options         IPFIREWALL\n"
 "options         DUMMYNET\n"
 "options         IPFIREWALL_DEFAULT_TO_ACCEPT\n"
 "options         IPDIVERT\n"
-msgstr ""
+msgstr "options         IPFIREWALL\noptions         DUMMYNET\noptions         IPFIREWALL_DEFAULT_TO_ACCEPT\noptions         IPDIVERT\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:252
+#, fuzzy
 msgid ""
 "Using this method, the local configuration file expresses local differences "
 "from a [.filename]#GENERIC# kernel.  As upgrades are performed, new features "
@@ -592,20 +606,21 @@ msgid ""
 "they are specifically prevented using `nooptions` or `nodevice`.  A "
 "comprehensive list of configuration directives and their descriptions may be "
 "found in man:config[5]."
-msgstr ""
+msgstr "使用这种方法，本地配置文件只需声明与 [.filename]#GENERIC# 内核的差异。执行升级时，添加到 [.filename]#GENERIC# 的新功能也会添加到本地内核中，除非使用 `nooptions` 或 `nodevice` 明确禁用。配置指令及其说明的完整列表可在 man:config[5] 中找到。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:256
+#, fuzzy
 msgid ""
 "To build a file which contains all available options, run the following "
 "command as `root`:"
-msgstr ""
+msgstr "要生成包含所有可用选项的文件，请以 `root` 身份运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cd /usr/src/sys/arch/conf && make LINT\n"
-msgstr ""
+msgstr "# cd /usr/src/sys/arch/conf && make LINT\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:265
@@ -622,8 +637,9 @@ msgstr "完成自定义配置文件的编辑并储存之后，便可依据以下
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:272
+#, fuzzy
 msgid "*Procedure: Building a Kernel*"
-msgstr ""
+msgstr "*操作步骤：构建内核*"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:274
@@ -633,9 +649,9 @@ msgstr "切换至此目录：\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cd /usr/src\n"
-msgstr ""
+msgstr "# cd /usr/src\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:281
@@ -646,9 +662,9 @@ msgstr "指定自定义核心配置文件的名称来编译新的核心："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make buildkernel KERNCONF=MYKERNEL\n"
-msgstr ""
+msgstr "# make buildkernel KERNCONF=MYKERNEL\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:288
@@ -664,17 +680,18 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:292
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make installkernel KERNCONF=MYKERNEL\n"
-msgstr ""
+msgstr "# make installkernel KERNCONF=MYKERNEL\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:295
+#, fuzzy
 msgid ""
 "Shutdown the system and reboot into the new kernel. If something goes wrong, "
 "refer to crossref:kernelconfig[kernelconfig-noboot, The kernel does not "
 "boot]."
-msgstr ""
+msgstr "关闭系统并重新启动，进入新内核。如果出现问题，请参阅 crossref:kernelconfig[kernelconfig-noboot, 内核无法启动]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:299
@@ -715,19 +732,21 @@ msgstr "WITHOUT_MODULES = linux acpi sound\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:315
+#, fuzzy
 msgid ""
 "This variable instructs the build to skip kernel modules and compile only "
 "the kernel itself:"
-msgstr ""
+msgstr "此变量指示构建过程跳过内核模块，仅编译内核本身："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "NO_MODULES = yes\n"
-msgstr ""
+msgstr "NO_MODULES = yes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:326
+#, fuzzy
 msgid ""
 "The Ports Framework includes drivers and other modules that depend on kernel "
 "interfaces, such as package:graphics/drm-kmod[] or package:emulators/"
@@ -737,19 +756,20 @@ msgid ""
 "kernel itself.  The kernel and ports trees should be updated together for "
 "maximum compatibility.  `PORTS_MODULES` can be added to [.filename]#/etc/"
 "make.conf# to ensure all kernels you build also rebuild these modules."
-msgstr ""
+msgstr "Ports 框架包含依赖内核接口的驱动程序和其他模块，例如 package:graphics/drm-kmod[] 或 package:emulators/virtualbox-ose-kmod[]。使用 `PORTS_MODULES` 变量时，每次构建内核，包含内核模块的 ports 都会基于更新后的源代码重新构建。这可确保内核模块与内核本身保持同步。为实现最佳兼容性，应同时更新内核树和 ports 树。可以将 `PORTS_MODULES` 添加到 [.filename]#/etc/make.conf#，以确保构建的所有内核都会同时重新构建这些模块。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PORTS_MODULES = drm-kmod virtualbox-ose-kmod\n"
-msgstr ""
+msgstr "PORTS_MODULES = drm-kmod virtualbox-ose-kmod\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:334
+#, fuzzy
 msgid ""
 "Additional variables are available.  Refer to man:make.conf[5] for details."
-msgstr ""
+msgstr "还有其他可用变量。详情请参阅 man:make.conf[5]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:336
@@ -766,9 +786,9 @@ msgstr "当编译自定义核心时可能发生以下四种类型的问题："
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`config` fails"
-msgstr ""
+msgstr "`config` 失败"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:343
@@ -790,18 +810,19 @@ msgstr "config: line 17: syntax error\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`make` fails"
-msgstr ""
+msgstr "`make` 失败"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:352
+#, fuzzy
 msgid ""
 "If `make` fails, it is usually due to an error in the kernel configuration "
 "file which is not severe enough for `config` to catch.  Review the "
 "configuration, and if the problem is not apparent, send an email to the "
 "{freebsd-questions} which contains the kernel configuration file."
-msgstr ""
+msgstr "如果 `make` 失败，通常是内核配置文件中存在错误，但该错误还不足以被 `config` 检出。请检查配置；如果无法发现问题，请向 {freebsd-questions} 发送电子邮件，并附上内核配置文件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:354
@@ -811,6 +832,7 @@ msgstr "无法使用核心开机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:359
+#, fuzzy
 msgid ""
 "If the new kernel does not boot or fails to recognize devices, do not panic! "
 "Fortunately, FreeBSD has an excellent mechanism for recovering from "
@@ -819,16 +841,17 @@ msgid ""
 "selecting the \"Escape to a loader prompt\" option.  At the prompt, type "
 "`boot _kernel.old_`, or the name of any other kernel that is known to boot "
 "properly."
-msgstr ""
+msgstr "如果新内核无法启动或无法识别设备，不要惊慌！幸运的是，FreeBSD 提供了出色的机制来从不兼容的内核中恢复。只需在 FreeBSD 引导加载器中选择要启动的内核即可。系统启动菜单出现时，选择“Escape to a loader prompt”即可进入引导加载器提示符。在提示符处，输入 `boot _kernel.old_`，或输入任何已知能够正常启动的其他内核名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:363
+#, fuzzy
 msgid ""
 "After booting with a good kernel, check over the configuration file and try "
 "to build it again.  One helpful resource is [.filename]#/var/log/messages# "
 "which records the kernel messages from every successful boot.  Also, man:"
 "dmesg[8] will print the kernel messages from the current boot."
-msgstr ""
+msgstr "使用正常的内核启动后，检查配置文件并尝试重新构建。一个有用的资源是 [.filename]#/var/log/messages#，其中记录了每次成功启动时的内核消息。此外，man:dmesg[8] 会打印本次启动的内核消息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:369
@@ -849,20 +872,21 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mv /boot/kernel /boot/kernel.bad\n"
 "# mv /boot/kernel.good /boot/kernel\n"
-msgstr ""
+msgstr "# mv /boot/kernel /boot/kernel.bad\n# mv /boot/kernel.good /boot/kernel\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The kernel works, but man:ps[1] does not"
-msgstr ""
+msgstr "内核可以运行，但 man:ps[1] 无法运行"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:381
+#, fuzzy
 msgid ""
 "If the kernel version differs from the one that the system utilities have "
 "been built with, for example, a kernel built from -CURRENT sources is "
@@ -871,4 +895,4 @@ msgid ""
 "edge[makeworld,recompile and install a world] built with the same version of "
 "the source tree as the kernel.  It is never a good idea to use a different "
 "version of the kernel than the rest of the operating system."
-msgstr ""
+msgstr "如果内核版本与系统工具的构建版本不同，例如，在 -RELEASE 系统上安装了基于 -CURRENT 源代码构建的内核，那么 man:ps[1] 和 man:vmstat[8] 等许多系统状态命令将无法运行。要解决此问题，请使用与内核相同版本的源代码树 crossref:cutting-edge[makeworld,重新编译并安装整个系统]。内核版本与操作系统其余部分的版本不同绝不是好主意。"

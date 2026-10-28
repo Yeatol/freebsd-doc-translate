@@ -53,8 +53,9 @@ msgstr "ACL"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:56
+#, fuzzy
 msgid "See crossref:glossary[acl-glossary,Access Control List]."
-msgstr ""
+msgstr "参见 crossref:glossary[acl-glossary,访问控制列表]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:57
@@ -79,8 +80,9 @@ msgstr "AMD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:62
+#, fuzzy
 msgid "See crossref:glossary[amd-glossary,Automatic Mount Daemon]."
-msgstr ""
+msgstr "参见 crossref:glossary[amd-glossary,自动挂载守护进程]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:63
@@ -90,8 +92,9 @@ msgstr "AML"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:65
+#, fuzzy
 msgid "See crossref:glossary[aml-glossary,ACPI Machine Language]."
-msgstr ""
+msgstr "参见 crossref:glossary[aml-glossary,ACPI 机器语言]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:66
@@ -129,8 +132,9 @@ msgstr "APM"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:74
+#, fuzzy
 msgid "See crossref:glossary[apm-glossary,Advanced Power Management]."
-msgstr ""
+msgstr "参见 crossref:glossary[apm-glossary,高级电源管理]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:75
@@ -154,8 +158,9 @@ msgstr "ASL"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:80
+#, fuzzy
 msgid "See crossref:glossary[asl-glossary,ACPI Source Language]."
-msgstr ""
+msgstr "参见 crossref:glossary[asl-glossary,ACPI 源语言]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:81
@@ -178,14 +183,15 @@ msgstr "ATM"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:86
+#, fuzzy
 msgid "See crossref:glossary[atm-glossary,Asynchronous Transfer Mode]."
-msgstr ""
+msgstr "参见 crossref:glossary[atm-glossary,异步传输模式]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ACPI Machine Language"
-msgstr ""
+msgstr "ACPI 机器语言"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:90
@@ -200,14 +206,15 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ACPI Source Language"
-msgstr ""
+msgstr "ACPI 源语言"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:94
+#, fuzzy
 msgid "The programming language AML is written in."
-msgstr ""
+msgstr "AML 所使用的编程语言。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:96
@@ -269,11 +276,12 @@ msgstr "Advanced Power Management (高级电源管理)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:113
+#, fuzzy
 msgid ""
 "An API enabling the operating system to work in conjunction with the BIOS in "
 "order to achieve power management.  APM has been superseded by the much more "
 "generic and powerful ACPI specification for most applications."
-msgstr ""
+msgstr "一种使操作系统能够与 BIOS 协同工作以实现电源管理的 API。对于大多数应用而言，APM 已被通用性和功能更强的 ACPI 规范取代。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:115
@@ -335,8 +343,9 @@ msgstr "Advanced Programmable Interrupt Controller (高级可编程中断控制�
 #: documentation/content/en/books/handbook/glossary.adoc:992
 #: documentation/content/en/books/handbook/glossary.adoc:1018
 #: documentation/content/en/books/handbook/glossary.adoc:1041
+#, fuzzy
 msgid "{empty}"
-msgstr ""
+msgstr "{empty}"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:119
@@ -383,8 +392,9 @@ msgstr "BAR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:139
+#, fuzzy
 msgid "See crossref:glossary[bar-glossary,Base Address Register]."
-msgstr ""
+msgstr "参见 crossref:glossary[bar-glossary,基址寄存器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:140
@@ -407,8 +417,9 @@ msgstr "BIOS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:145
+#, fuzzy
 msgid "See crossref:glossary[bios-glossary,Basic Input/Output System]."
-msgstr ""
+msgstr "参见 crossref:glossary[bios-glossary,基本输入/输出系统]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:146
@@ -431,10 +442,11 @@ msgstr "Base Address Register (基地址寄存器)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:152
+#, fuzzy
 msgid ""
 "The registers that determine which address range a PCI device will respond "
 "to."
-msgstr ""
+msgstr "用于确定 PCI 设备会响应哪个地址范围的寄存器。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:154
@@ -467,8 +479,9 @@ msgstr "Berkeley Internet Name Domain (伯克利 Internet 域名服务)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:164
+#, fuzzy
 msgid "An implementation of the DNS protocols."
-msgstr ""
+msgstr "DNS 协议的一种实现。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:166
@@ -478,12 +491,13 @@ msgstr "Berkeley Software Distribution (伯克利软件发行)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:169
+#, fuzzy
 msgid ""
 "This is the name that the Computer Systems Research Group (CSRG) at link:"
 "http://www.berkeley.edu[The University of California at Berkeley] gave to "
 "their improvements and modifications to AT&T's 32V UNIX(R).  FreeBSD is a "
 "descendant of the CSRG work."
-msgstr ""
+msgstr "加州大学伯克利分校的计算机系统研究小组（CSRG）将其对 AT&T 的 32V UNIX(R) 所做的改进和修改命名为 BSD。FreeBSD 是 CSRG 工作成果的衍生版本。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:171
@@ -493,11 +507,12 @@ msgstr "Bikeshed Building (打口水仗)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:174
+#, fuzzy
 msgid ""
 "A phenomenon whereby many people will give an opinion on an uncomplicated "
 "topic, whilst a complex topic receives little or no discussion.  See the "
 "extref:{faq}[FAQ, bikeshed-painting] for the origin of the term."
-msgstr ""
+msgstr "一种现象：许多人会对简单的话题发表意见，而复杂的话题却很少有人讨论，甚至无人讨论。有关该术语的由来，请参见 extref:{faq}[常见问题解答，bikeshed-painting]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:176
@@ -513,8 +528,9 @@ msgstr "CD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:180
+#, fuzzy
 msgid "See crossref:glossary[cd-glossary,Carrier Detect]."
-msgstr ""
+msgstr "参见 crossref:glossary[cd-glossary,载波检测]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:181
@@ -539,8 +555,9 @@ msgstr "CLIP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:186
+#, fuzzy
 msgid "See crossref:glossary[clip-glossary,Classical IP over ATM]."
-msgstr ""
+msgstr "参见 crossref:glossary[clip-glossary,ATM 上的经典 IP]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:187
@@ -550,8 +567,9 @@ msgstr "COFF"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:189
+#, fuzzy
 msgid "See crossref:glossary[coff-glossary,Common Object File Format]."
-msgstr ""
+msgstr "参见 crossref:glossary[coff-glossary,通用目标文件格式]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:190
@@ -561,8 +579,9 @@ msgstr "CPU"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:192
+#, fuzzy
 msgid "See crossref:glossary[cpu-glossary,Central Processing Unit]."
-msgstr ""
+msgstr "参见 crossref:glossary[cpu-glossary,中央处理器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:193
@@ -572,8 +591,9 @@ msgstr "CTS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:195
+#, fuzzy
 msgid "See crossref:glossary[cts-glossary,Clear To Send]."
-msgstr ""
+msgstr "参见 crossref:glossary[cts-glossary,清除发送]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:197
@@ -583,8 +603,9 @@ msgstr "Carrier Detect（载波侦测）"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:199
+#, fuzzy
 msgid "An RS232C signal indicating that a carrier has been detected."
-msgstr ""
+msgstr "一种 RS232C 信号，表示已检测到载波。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:201
@@ -621,9 +642,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Classical IP over ATM"
-msgstr ""
+msgstr "ATM 上的经典 IP"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:216
@@ -633,13 +654,15 @@ msgstr "Clear To Send (允许发送)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:218
+#, fuzzy
 msgid "An RS232C signal giving the remote system permission to send data."
-msgstr ""
+msgstr "一种 RS232C 信号，允许远程系统发送数据。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:220
+#, fuzzy
 msgid "See crossref:glossary[rts-glossary,Also Request To Send]."
-msgstr ""
+msgstr "另请参见 crossref:glossary[rts-glossary,请求发送]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:222
@@ -674,8 +697,9 @@ msgstr "DDB"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:233
+#, fuzzy
 msgid "See crossref:glossary[ddb-glossary,Debugger]."
-msgstr ""
+msgstr "参见 crossref:glossary[ddb-glossary,调试器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:234
@@ -685,8 +709,9 @@ msgstr "DES"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:236
+#, fuzzy
 msgid "See crossref:glossary[des-glossary,Data Encryption Standard]."
-msgstr ""
+msgstr "参见 crossref:glossary[des-glossary,数据加密标准]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:237
@@ -710,8 +735,9 @@ msgstr "DNS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:242
+#, fuzzy
 msgid "See crossref:glossary[dns-glossary,Domain Name System]."
-msgstr ""
+msgstr "参见 crossref:glossary[dns-glossary,域名系统]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:243
@@ -749,8 +775,9 @@ msgstr "DSR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:251
+#, fuzzy
 msgid "See crossref:glossary[dsr-glossary,Data Set Ready]."
-msgstr ""
+msgstr "参见 crossref:glossary[dsr-glossary,数据集就绪]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:252
@@ -760,8 +787,9 @@ msgstr "DTR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:254
+#, fuzzy
 msgid "See crossref:glossary[dtr-glossary,Data Terminal Ready]."
-msgstr ""
+msgstr "参见 crossref:glossary[dtr-glossary,数据终端就绪]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:255
@@ -792,10 +820,11 @@ msgstr "Data Encryption Standard (数据加密标准)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:265
+#, fuzzy
 msgid ""
 "A method of encrypting information, traditionally used as the method of "
 "encryption for UNIX(R) passwords and the man:crypt[3] function."
-msgstr ""
+msgstr "一种加密信息的方法，传统上用于 UNIX(R) 密码和 man:crypt[3] 函数。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:267
@@ -805,15 +834,17 @@ msgstr "数据集就绪"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:269
+#, fuzzy
 msgid ""
 "An RS232C signal sent from the modem to the computer or terminal indicating "
 "a readiness to send and receive data."
-msgstr ""
+msgstr "一种由调制解调器发送到计算机或终端的 RS232C 信号，表示已准备好发送和接收数据。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:271
+#, fuzzy
 msgid "See crossref:glossary[dtr-glossary,Also Data Terminal Ready]."
-msgstr ""
+msgstr "另请参见 crossref:glossary[dtr-glossary,数据终端就绪]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:273
@@ -823,10 +854,11 @@ msgstr "数据终端准备就绪"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:275
+#, fuzzy
 msgid ""
 "An RS232C signal sent from the computer or terminal to the modem indicating "
 "a readiness to send and receive data."
-msgstr ""
+msgstr "一种由计算机或终端发送到调制解调器的 RS232C 信号，表示已准备好发送和接收数据。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:277
@@ -851,10 +883,11 @@ msgstr "Differentiated System Description Table (系统差异描述表)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:283
+#, fuzzy
 msgid ""
 "An ACPI table, supplying basic configuration information about the base "
 "system."
-msgstr ""
+msgstr "一个 ACPI 表，提供有关基本系统的基本配置信息。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:285
@@ -879,16 +912,17 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Direct Rendering Manager"
-msgstr ""
+msgstr "直接渲染管理器"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:295
+#, fuzzy
 msgid ""
 "The man:drm[7] kernel module allows client applications direct access to the "
 "graphical hardware via the Direct Rendering Infrastructure."
-msgstr ""
+msgstr "man:drm[7] 内核模块允许客户端应用程序通过直接渲染基础设施直接访问图形硬件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:297
@@ -898,10 +932,11 @@ msgstr "Dynamic Host Configuration Protocol (动态主机配置协议)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:300
+#, fuzzy
 msgid ""
 "A protocol that dynamically assigns IP addresses to a computer (host) when "
 "it requests one from the server.  The address assignment is called a “lease”."
-msgstr ""
+msgstr "一种协议，在计算机（主机）请求 IP 地址时，由服务器动态分配 IP 地址。该地址分配称为“租约”。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:302
@@ -917,8 +952,9 @@ msgstr "ECOFF"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:306
+#, fuzzy
 msgid "See crossref:glossary[ecoff-glossary,Extended COFF]."
-msgstr ""
+msgstr "参见 crossref:glossary[ecoff-glossary,扩展 COFF]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:307
@@ -960,9 +996,9 @@ msgstr "Executable and Linking Format (可执行与连接格式)"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Extended COFF"
-msgstr ""
+msgstr "扩展 COFF"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:326
@@ -978,8 +1014,9 @@ msgstr "FADT"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:330
+#, fuzzy
 msgid "See crossref:glossary[fadt-glossary,Fixed ACPI Description Table]."
-msgstr ""
+msgstr "参见 crossref:glossary[fadt-glossary,固定 ACPI 描述表]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:331
@@ -989,8 +1026,9 @@ msgstr "FAT"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:333
+#, fuzzy
 msgid "See crossref:glossary[fat-glossary,File Allocation Table]."
-msgstr ""
+msgstr "参见 crossref:glossary[fat-glossary,文件分配表]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:334
@@ -1013,8 +1051,9 @@ msgstr "FTP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:339
+#, fuzzy
 msgid "See crossref:glossary[ftp-glossary,File Transfer Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[ftp-glossary,文件传输协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:341
@@ -1036,16 +1075,17 @@ msgstr "File Transfer Protocol (文件传输协议)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:351
+#, fuzzy
 msgid ""
 "A member of the family of high-level protocols implemented on top of TCP "
 "which can be used to transfer files over a TCP/IP network."
-msgstr ""
+msgstr "一种基于 TCP 实现的高级协议，可用于通过 TCP/IP 网络传输文件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fixed ACPI Description Table"
-msgstr ""
+msgstr "固定 ACPI 描述表"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:357
@@ -1061,8 +1101,9 @@ msgstr "GUI"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:361
+#, fuzzy
 msgid "See crossref:glossary[gui-glossary,Graphical User Interface]."
-msgstr ""
+msgstr "参见 crossref:glossary[gui-glossary,图形用户界面]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:363
@@ -1114,8 +1155,9 @@ msgstr "HTML"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:377
+#, fuzzy
 msgid "See crossref:glossary[html-glossary,HyperText Markup Language]."
-msgstr ""
+msgstr "参见 crossref:glossary[html-glossary,超文本标记语言]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:378
@@ -1125,8 +1167,9 @@ msgstr "HUP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:380
+#, fuzzy
 msgid "See crossref:glossary[hup-glossary,HangUp]."
-msgstr ""
+msgstr "参见 crossref:glossary[hup-glossary,挂断]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:382
@@ -1159,8 +1202,9 @@ msgstr "I/O"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:394
+#, fuzzy
 msgid "See crossref:glossary[io-glossary,Input/Output]."
-msgstr ""
+msgstr "参见 crossref:glossary[io-glossary,输入/输出]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:395
@@ -1170,8 +1214,9 @@ msgstr "IASL"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:397
+#, fuzzy
 msgid "See crossref:glossary[iasl-glossary,Intel’s ASL compiler]."
-msgstr ""
+msgstr "参见 crossref:glossary[iasl-glossary,Intel 的 ASL 编译器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:398
@@ -1194,8 +1239,9 @@ msgstr "IP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:403
+#, fuzzy
 msgid "See crossref:glossary[ip-glossary,Internet Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[ip-glossary,互联网协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:404
@@ -1205,8 +1251,9 @@ msgstr "IPFW"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:406
+#, fuzzy
 msgid "See crossref:glossary[ipfw-glossary,IP Firewall]."
-msgstr ""
+msgstr "参见 crossref:glossary[ipfw-glossary,IP 防火墙]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:407
@@ -1216,8 +1263,9 @@ msgstr "IPP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:409
+#, fuzzy
 msgid "See crossref:glossary[ipp-glossary,Internet Printing Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[ipp-glossary,互联网打印协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:410
@@ -1227,8 +1275,9 @@ msgstr "IPv4"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:412
+#, fuzzy
 msgid "See crossref:glossary[ipv4-glossary,IP Version 4]."
-msgstr ""
+msgstr "参见 crossref:glossary[ipv4-glossary,IP 版本 4]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:413
@@ -1238,8 +1287,9 @@ msgstr "IPv6"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:415
+#, fuzzy
 msgid "See crossref:glossary[ipv6-glossary,IP Version 6]."
-msgstr ""
+msgstr "参见 crossref:glossary[ipv6-glossary,IP 版本 6]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:416
@@ -1249,45 +1299,49 @@ msgstr "ISP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:418
+#, fuzzy
 msgid "See crossref:glossary[isp-glossary,Internet Service Provider]."
-msgstr ""
+msgstr "参见 crossref:glossary[isp-glossary,互联网服务提供商]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:420
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IP Firewall"
-msgstr ""
+msgstr "IP 防火墙"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IP Version 4"
-msgstr ""
+msgstr "IP 版本 4"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:427
+#, fuzzy
 msgid ""
 "The IP protocol version 4, which uses 32 bits for addressing.  This version "
 "is still the most widely used, but it is slowly being replaced with IPv6."
-msgstr ""
+msgstr "IP 协议的第 4 版，使用 32 位地址。该版本仍是使用最广泛的版本，但正逐渐被 IPv6 取代。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:429
+#, fuzzy
 msgid "See crossref:glossary[ipv6-glossary,Also IP Version 6]."
-msgstr ""
+msgstr "另请参见 crossref:glossary[ipv6-glossary,IP 版本 6]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:431
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IP Version 6"
-msgstr ""
+msgstr "IP 版本 6"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:435
+#, fuzzy
 msgid ""
 "The new IP protocol.  Invented because the address space in IPv4 is running "
 "out.  Uses 128 bits for addressing."
-msgstr ""
+msgstr "新一代 IP 协议。由于 IPv4 地址空间即将耗尽而设计，使用 128 位地址。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:437
@@ -1297,14 +1351,15 @@ msgstr "Input/Output (输入/输出)"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:441
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Intel’s ASL compiler"
-msgstr ""
+msgstr "Intel 的 ASL 编译器"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:443
+#, fuzzy
 msgid "Intel’s compiler for converting ASL into AML."
-msgstr ""
+msgstr "Intel 用于将 ASL 转换为 AML 的编译器。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:445
@@ -1325,8 +1380,9 @@ msgstr ""
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:449
 #: documentation/content/en/books/handbook/glossary.adoc:787
+#, fuzzy
 msgid "See Also Post Office Protocol Version 3."
-msgstr ""
+msgstr "另请参见邮局协议第 3 版。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:451
@@ -1342,13 +1398,14 @@ msgstr "Internet Protocol (互联网协议)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:460
+#, fuzzy
 msgid ""
 "The packet transmitting protocol that is the basic protocol on the "
 "Internet.  Originally developed at the U.S. Department of Defense and an "
 "extremely important part of the TCP/IP stack.  Without the Internet "
 "Protocol, the Internet would not have become what it is today.  For more "
 "information, see link:ftp://ftp.rfc-editor.org/in-notes/rfc791.txt[RFC 791]."
-msgstr ""
+msgstr "一种传输数据包的协议，是互联网的基础协议。该协议最初由美国国防部开发，是 TCP/IP 协议栈中极其重要的组成部分。没有互联网协议，互联网就不会发展成今天的样子。更多信息请参见 link:ftp://ftp.rfc-editor.org/in-notes/rfc791.txt[RFC 791]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:462
@@ -1375,11 +1432,12 @@ msgstr "KAME"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:471
+#, fuzzy
 msgid ""
 "Japanese for “turtle”, the term KAME is used in computing circles to refer "
 "to the link:http://www.kame.net/[KAME Project], who work on an "
 "implementation of IPv6."
-msgstr ""
+msgstr "KAME 在日语中意为“乌龟”。在计算机领域，该词指 link:http://www.kame.net/[KAME 项目]，该项目致力于实现 IPv6。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:472
@@ -1389,8 +1447,9 @@ msgstr "KDC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:474
+#, fuzzy
 msgid "See crossref:glossary[kdc-glossary,Key Distribution Center]."
-msgstr ""
+msgstr "参见 crossref:glossary[kdc-glossary,密钥分发中心]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:475
@@ -1400,8 +1459,9 @@ msgstr "KLD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:477
+#, fuzzy
 msgid "See crossref:glossary[kld-glossary,Kernel ld(1)]."
-msgstr ""
+msgstr "参见 crossref:glossary[kld-glossary,内核 ld(1)]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:478
@@ -1425,8 +1485,9 @@ msgstr "KSE"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:483
+#, fuzzy
 msgid "See crossref:glossary[kse-glossary,Kernel Scheduler Entities]."
-msgstr ""
+msgstr "参见 crossref:glossary[kse-glossary,内核调度实体]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:484
@@ -1436,8 +1497,9 @@ msgstr "KVA"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:486
+#, fuzzy
 msgid "See crossref:glossary[kva-glossary,Kernel Virtual Address]."
-msgstr ""
+msgstr "参见 crossref:glossary[kva-glossary,内核虚拟地址]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:487
@@ -1447,19 +1509,21 @@ msgstr "Kbps"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:489
+#, fuzzy
 msgid "See crossref:glossary[kbps-glossary,Kilo Bits Per Second]."
-msgstr ""
+msgstr "参见 crossref:glossary[kbps-glossary,千比特每秒]。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:492
+#, fuzzy
 msgid "Setting the display mode in kernel space."
-msgstr ""
+msgstr "在内核空间设置显示模式。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:494
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel man:ld[1]"
-msgstr ""
+msgstr "内核 man:ld[1]"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:496
@@ -1476,10 +1540,11 @@ msgstr "内核调度器实体"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:501
+#, fuzzy
 msgid ""
 "A kernel-supported threading system.  See the link:https://people.freebsd."
 "org/~kuriyama/www/kse[KSE Project home page] for further details."
-msgstr ""
+msgstr "一种由内核支持的线程系统。更多详情请参见 link:https://people.freebsd.org/~kuriyama/www/kse[KSE 项目主页]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:503
@@ -1524,8 +1589,9 @@ msgstr "LAN"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:520
+#, fuzzy
 msgid "See crossref:glossary[lan-glossary,Local Area Network]."
-msgstr ""
+msgstr "参见 crossref:glossary[lan-glossary,局域网]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:521
@@ -1535,8 +1601,9 @@ msgstr "LOR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:523
+#, fuzzy
 msgid "See crossref:glossary[lor-glossary,Lock Order Reversal]."
-msgstr ""
+msgstr "参见 crossref:glossary[lor-glossary,锁顺序反转]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:524
@@ -1546,8 +1613,9 @@ msgstr "LPD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:526
+#, fuzzy
 msgid "See crossref:glossary[lpd-glossary,Line Printer Daemon]."
-msgstr ""
+msgstr "参见 crossref:glossary[lpd-glossary,行式打印机守护进程]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:528
@@ -1574,6 +1642,7 @@ msgstr "Lock Order Reversal (锁逆序)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:541
+#, fuzzy
 msgid ""
 "The FreeBSD kernel uses a number of resource locks to arbitrate contention "
 "for those resources.  A run-time lock diagnostic system found in FreeBSD-"
@@ -1582,7 +1651,7 @@ msgid ""
 "actually slightly conservative, so it is possible to get false positives.)  "
 "A true positive report indicates that “if you were unlucky, a deadlock would "
 "have happened here”."
-msgstr ""
+msgstr "FreeBSD 内核使用多种资源锁来仲裁对这些资源的争用。FreeBSD-CURRENT 内核中有一种运行时锁诊断系统（发行版中已移除），名为 man:witness[4]，它可以检测因锁错误导致死锁的可能性。（man:witness[4] 的判断略显保守，因此可能产生误报。）真正的阳性报告表示：“如果运气不好，这里就会发生死锁。”"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:543
@@ -1610,8 +1679,9 @@ msgstr "MAC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:549
+#, fuzzy
 msgid "See crossref:glossary[mac-glossary,Mandatory Access Control]."
-msgstr ""
+msgstr "参见 crossref:glossary[mac-glossary,强制访问控制]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:550
@@ -1621,8 +1691,9 @@ msgstr "MADT"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:552
+#, fuzzy
 msgid "See crossref:glossary[madt-glossary,Multiple APIC Description Table]."
-msgstr ""
+msgstr "参见 crossref:glossary[madt-glossary,多个 APIC 描述表]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:553
@@ -1632,8 +1703,9 @@ msgstr "MFC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:555
+#, fuzzy
 msgid "See crossref:glossary[mfc-glossary,Merge From Current]."
-msgstr ""
+msgstr "参见 crossref:glossary[mfc-glossary,从 Current 分支合并]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:556
@@ -1643,8 +1715,9 @@ msgstr "MFH"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:558
+#, fuzzy
 msgid "See crossref:glossary[mfh-glossary,Merge From Head]."
-msgstr ""
+msgstr "参见 crossref:glossary[mfh-glossary,从 Head 分支合并]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:559
@@ -1654,8 +1727,9 @@ msgstr "MFS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:561
+#, fuzzy
 msgid "See crossref:glossary[mfs-glossary,Merge From Stable]."
-msgstr ""
+msgstr "参见 crossref:glossary[mfs-glossary,从 Stable 分支合并]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:562
@@ -1665,8 +1739,9 @@ msgstr "MFV"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:564
+#, fuzzy
 msgid "See crossref:glossary[mfv-glossary,Merge From Vendor]."
-msgstr ""
+msgstr "参见 crossref:glossary[mfv-glossary,从 Vendor 分支合并]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:565
@@ -1690,8 +1765,9 @@ msgstr "MLS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:570
+#, fuzzy
 msgid "See crossref:glossary[mls-glossary,Multi-Level Security]."
-msgstr ""
+msgstr "参见 crossref:glossary[mls-glossary,多级安全]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:571
@@ -1701,8 +1777,9 @@ msgstr "MOTD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:573
+#, fuzzy
 msgid "See crossref:glossary[motd-glossary,Message Of The Day]."
-msgstr ""
+msgstr "参见 crossref:glossary[motd-glossary,每日消息]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:574
@@ -1712,8 +1789,9 @@ msgstr "MTA"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:576
+#, fuzzy
 msgid "See crossref:glossary[mta-glossary,Mail Transfer Agent]."
-msgstr ""
+msgstr "参见 crossref:glossary[mta-glossary,邮件传输代理]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:577
@@ -1723,8 +1801,9 @@ msgstr "MUA"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:579
+#, fuzzy
 msgid "See crossref:glossary[mua-glossary,Mail User Agent]."
-msgstr ""
+msgstr "参见 crossref:glossary[mua-glossary,邮件用户代理]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:581
@@ -1734,11 +1813,12 @@ msgstr "Mail Transfer Agent (邮件传送工具)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:585
+#, fuzzy
 msgid ""
 "An application used to transfer email.  An MTA has traditionally been part "
 "of the BSD base system.  Today Sendmail is included in the base system, but "
 "there are many other MTAs, such as postfix, qmail and Exim."
-msgstr ""
+msgstr "一种用于传输电子邮件的应用程序。MTA 传统上是 BSD 基础系统的一部分。如今基础系统中包含 Sendmail，但还有许多其他 MTA，例如 postfix、qmail 和 Exim。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:587
@@ -1822,8 +1902,9 @@ msgstr "这一术语在从 -STABLE 向安全分支合并补丁时也适用。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:614
+#, fuzzy
 msgid "See crossref:glossary[mfc-glossary,Also Merge From Current]."
-msgstr ""
+msgstr "另请参见 crossref:glossary[mfc-glossary,从 Current 分支合并]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:616
@@ -1852,9 +1933,9 @@ msgstr "Multi-Level Security (多级别安全)"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:628
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Multiple APIC Description Table"
-msgstr ""
+msgstr "多个 APIC 描述表"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:632
@@ -1870,8 +1951,9 @@ msgstr "NAT"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:636
+#, fuzzy
 msgid "See crossref:glossary[nat-glossary,Network Address Translation]."
-msgstr ""
+msgstr "参见 crossref:glossary[nat-glossary,网络地址转换]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:637
@@ -1881,8 +1963,9 @@ msgstr "NDISulator"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:639
+#, fuzzy
 msgid "See crossref:glossary[projectevil-glossary,Project Evil]."
-msgstr ""
+msgstr "参见 crossref:glossary[projectevil-glossary,邪恶计划]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:640
@@ -1892,8 +1975,9 @@ msgstr "NFS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:642
+#, fuzzy
 msgid "See crossref:glossary[nfs-glossary,Network File System]."
-msgstr ""
+msgstr "参见 crossref:glossary[nfs-glossary,网络文件系统]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:643
@@ -1903,8 +1987,9 @@ msgstr "NTFS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:645
+#, fuzzy
 msgid "See crossref:glossary[ntfs-glossary,New Technology File System]."
-msgstr ""
+msgstr "参见 crossref:glossary[ntfs-glossary,新技术文件系统]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:646
@@ -1914,8 +1999,9 @@ msgstr "NTP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:648
+#, fuzzy
 msgid "See crossref:glossary[ntp-glossary,Network Time Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[ntp-glossary,网络时间协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:650
@@ -1925,11 +2011,12 @@ msgstr "Network Address Translation (网络地址翻译)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:652
+#, fuzzy
 msgid ""
 "A technique where IP packets are rewritten on the way through a gateway, "
 "enabling many machines behind the gateway to effectively share a single IP "
 "address."
-msgstr ""
+msgstr "一种在 IP 数据包经过网关时对其进行重写的技术，使网关后的多台计算机能够有效地共享一个 IP 地址。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:654
@@ -1945,10 +2032,11 @@ msgstr "New Technology File System (新技术文件系统)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:660
+#, fuzzy
 msgid ""
 "A filesystem developed by Microsoft and available in its “New Technology” "
 "operating systems, such as Windows(R) 2000, Windows NT(R) and Windows(R) XP."
-msgstr ""
+msgstr "由 Microsoft 开发的文件系统，可用于其“新技术”操作系统，例如 Windows(R) 2000、Windows NT(R) 和 Windows(R) XP。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:662
@@ -1975,8 +2063,9 @@ msgstr "OBE"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:670
+#, fuzzy
 msgid "See crossref:glossary[obe-glossary,Overtaken By Events]."
-msgstr ""
+msgstr "参见 crossref:glossary[obe-glossary,事件已取代]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:671
@@ -1986,8 +2075,9 @@ msgstr "ODMR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:673
+#, fuzzy
 msgid "See crossref:glossary[odmr-glossary,On-Demand Mail Relay]."
-msgstr ""
+msgstr "参见 crossref:glossary[odmr-glossary,按需邮件中继]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:674
@@ -1997,8 +2087,9 @@ msgstr "OS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:676
+#, fuzzy
 msgid "See crossref:glossary[os-glossary,Operating System]."
-msgstr ""
+msgstr "参见 crossref:glossary[os-glossary,操作系统]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:678
@@ -2058,8 +2149,9 @@ msgstr "PAE"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:695
+#, fuzzy
 msgid "See crossref:glossary[pae-glossary,Physical Address Extensions]."
-msgstr ""
+msgstr "参见 crossref:glossary[pae-glossary,物理地址扩展]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:696
@@ -2095,8 +2187,9 @@ msgstr "PC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:704
+#, fuzzy
 msgid "See crossref:glossary[pc-glossary,Personal Computer]."
-msgstr ""
+msgstr "参见 crossref:glossary[pc-glossary,个人计算机]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:705
@@ -2122,8 +2215,9 @@ msgstr "PDF"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:711
+#, fuzzy
 msgid "See crossref:glossary[pdf-glossary,Portable Document Format]."
-msgstr ""
+msgstr "参见 crossref:glossary[pdf-glossary,便携式文档格式]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:712
@@ -2133,8 +2227,9 @@ msgstr "PID"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:714
+#, fuzzy
 msgid "See crossref:glossary[pid-glossary,Process ID]."
-msgstr ""
+msgstr "参见 crossref:glossary[pid-glossary,进程 ID]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:715
@@ -2157,8 +2252,9 @@ msgstr "POP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:720
+#, fuzzy
 msgid "See crossref:glossary[pop-glossary,Post Office Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[pop-glossary,邮局协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:721
@@ -2194,8 +2290,9 @@ msgstr "PPP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:729
+#, fuzzy
 msgid "See crossref:glossary[ppp-glossary,Point-to-Point Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[ppp-glossary,点对点协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:730
@@ -2205,8 +2302,9 @@ msgstr "PPPoA"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:732
+#, fuzzy
 msgid "See crossref:glossary[pppoa-glossary,PPP over ATM]."
-msgstr ""
+msgstr "参见 crossref:glossary[pppoa-glossary,ATM 上的 PPP]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:733
@@ -2216,20 +2314,21 @@ msgstr "PPPoE"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:735
+#, fuzzy
 msgid "See crossref:glossary[pppoe-glossary,PPP over Ethernet]."
-msgstr ""
+msgstr "参见 crossref:glossary[pppoe-glossary,以太网上的 PPP]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:737
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PPP over ATM"
-msgstr ""
+msgstr "ATM 上的 PPP"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:741
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PPP over Ethernet"
-msgstr ""
+msgstr "以太网上的 PPP"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:744
@@ -2239,8 +2338,9 @@ msgstr "PR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:746
+#, fuzzy
 msgid "See crossref:glossary[pr-glossary,Problem Report]."
-msgstr ""
+msgstr "参见 crossref:glossary[pr-glossary,问题报告]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:747
@@ -2352,9 +2452,10 @@ msgstr ""
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:793
+#, fuzzy
 msgid ""
 "See crossref:glossary[imap-glossary,Also Internet Message Access Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[imap-glossary,另见互联网消息访问协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:795
@@ -2390,16 +2491,17 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:809
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PRIME"
-msgstr ""
+msgstr "PRIME"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:812
+#, fuzzy
 msgid ""
 "A method of multiple physical graphics coprocessors coexisting by sharing "
 "their direct memory access buffers."
-msgstr ""
+msgstr "一种让多个物理图形协处理器共存的方法，它们通过共享直接内存访问缓冲区来实现。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:814
@@ -2409,11 +2511,12 @@ msgstr "Problem Report (问题报告)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:817
+#, fuzzy
 msgid ""
 "A description of some kind of problem that has been found in either the "
 "FreeBSD source or documentation.  See extref:{problem-reports}[Writing "
 "FreeBSD Problem Reports]."
-msgstr ""
+msgstr "对 FreeBSD 源代码或文档中发现的问题所作的描述。参见 extref:{problem-reports}[编写 FreeBSD 问题报告]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:819
@@ -2469,8 +2572,9 @@ msgstr "RA"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:834
+#, fuzzy
 msgid "See crossref:glossary[ra-glossary,Router Advertisement]."
-msgstr ""
+msgstr "参见 crossref:glossary[ra-glossary,路由器通告]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:835
@@ -2494,8 +2598,9 @@ msgstr "RAM"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:840
+#, fuzzy
 msgid "See crossref:glossary[ram-glossary,Random Access Memory]."
-msgstr ""
+msgstr "参见 crossref:glossary[ram-glossary,随机存取存储器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:841
@@ -2505,8 +2610,9 @@ msgstr "RD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:843
+#, fuzzy
 msgid "See crossref:glossary[rd-glossary,Received Data]."
-msgstr ""
+msgstr "参见 crossref:glossary[rd-glossary,接收数据]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:844
@@ -2516,8 +2622,9 @@ msgstr "RFC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:846
+#, fuzzy
 msgid "See crossref:glossary[rfc-glossary,Request For Comments]."
-msgstr ""
+msgstr "参见 crossref:glossary[rfc-glossary,征求意见稿]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:847
@@ -2542,8 +2649,9 @@ msgstr "RPC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:852
+#, fuzzy
 msgid "See crossref:glossary[rpc-glossary,Remote Procedure Call]."
-msgstr ""
+msgstr "参见 crossref:glossary[rpc-glossary,远程过程调用]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:853
@@ -2553,8 +2661,9 @@ msgstr "RS232C"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:855
+#, fuzzy
 msgid "See crossref:glossary[rs232c-glossary,Recommended Standard 232C]."
-msgstr ""
+msgstr "参见 crossref:glossary[rs232c-glossary,推荐标准 232C]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:856
@@ -2564,8 +2673,9 @@ msgstr "RTS"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:858
+#, fuzzy
 msgid "See crossref:glossary[rts-glossary,Request To Send]."
-msgstr ""
+msgstr "参见 crossref:glossary[rts-glossary,请求发送]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:860
@@ -2581,6 +2691,7 @@ msgstr "修订控制系统"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:869
+#, fuzzy
 msgid ""
 "The _Revision Control System (RCS)_ is one of the oldest software suites "
 "that implement “revision control” for plain files.  It allows the storage, "
@@ -2589,12 +2700,13 @@ msgid ""
 "together.  It lacks some of the features found in more modern revision "
 "control systems, like Git, but it is very simple to install, configure, and "
 "start using for a small set of files."
-msgstr ""
+msgstr "__修订控制系统（RCS）__ 是最早实现普通文件“修订控制”的软件套件之一。它支持对每个文件的多个修订版本进行存储、检索、归档、记录日志、标识和合并。RCS 由许多协同工作的微型工具组成。它缺少 Git 等较新修订控制系统的一些功能，但对于少量文件而言，安装、配置和开始使用都非常简单。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:871
+#, fuzzy
 msgid "See crossref:glossary[svn-glossary,Also Subversion]."
-msgstr ""
+msgstr "参见 crossref:glossary[svn-glossary,另见 Subversion]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:873
@@ -2604,13 +2716,15 @@ msgstr "接收到的数据"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:875
+#, fuzzy
 msgid "An RS232C pin or wire that data is received on."
-msgstr ""
+msgstr "RS232C 上用于接收数据的引脚或导线。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:877
+#, fuzzy
 msgid "See crossref:glossary[td-glossary,Also Transmitted Data]."
-msgstr ""
+msgstr "参见 crossref:glossary[td-glossary,另见发送数据]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:879
@@ -2631,13 +2745,14 @@ msgstr "Reduced Instruction Set Computer (精减指令系统计算机； 又译�
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:887
+#, fuzzy
 msgid ""
 "An approach to processor design where the operations the hardware can "
 "perform are simplified but made as general purpose as possible.  This can "
 "lead to lower power consumption, fewer transistors and in some cases, better "
 "performance and increased code density.  Examples of RISC processors include "
 "the Alpha, SPARC(R), ARM(R) and PowerPC(R)."
-msgstr ""
+msgstr "一种处理器设计方法，简化硬件可执行的操作，同时使其尽可能通用。这可以降低功耗、减少晶体管数量，并且在某些情况下提高性能和代码密度。RISC 处理器包括 Alpha、SPARC(R)、ARM(R) 和 PowerPC(R) 等。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:889
@@ -2659,10 +2774,11 @@ msgstr "Request For Comments (征求意见稿)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:900
+#, fuzzy
 msgid ""
 "A set of documents defining Internet standards, protocols, and so forth.  "
 "See www.rfc-editor.org."
-msgstr ""
+msgstr "一组定义互联网标准、协议等内容的文档。参见 link:www.rfc-editor.org[]。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:902
@@ -2679,15 +2795,17 @@ msgstr "请求发送"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:906
+#, fuzzy
 msgid ""
 "An RS232C signal requesting that the remote system commences transmission of "
 "data."
-msgstr ""
+msgstr "一种 RS232C 信号，用于请求远程系统开始传输数据。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:908
+#, fuzzy
 msgid "See crossref:glossary[cts-glossary,Also Clear To Send]."
-msgstr ""
+msgstr "参见 crossref:glossary[cts-glossary,另见允许发送]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:910
@@ -2709,8 +2827,9 @@ msgstr "SCI"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:918
+#, fuzzy
 msgid "See crossref:glossary[sci-glossary,System Control Interrupt]."
-msgstr ""
+msgstr "参见 crossref:glossary[sci-glossary,系统控制中断]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:919
@@ -2733,14 +2852,15 @@ msgstr "SG"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:924
+#, fuzzy
 msgid "See crossref:glossary[sg-glossary,Signal Ground]."
-msgstr ""
+msgstr "参见 crossref:glossary[sg-glossary,信号接地]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:925
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SLAAC"
-msgstr ""
+msgstr "SLAAC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:927
@@ -2758,8 +2878,9 @@ msgstr "SMB"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:930
+#, fuzzy
 msgid "See crossref:glossary[smb-glossary,Server Message Block]."
-msgstr ""
+msgstr "参见 crossref:glossary[smb-glossary,服务器消息块]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:931
@@ -2769,8 +2890,9 @@ msgstr "SMP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:933
+#, fuzzy
 msgid "See crossref:glossary[smp-glossary,Symmetric MultiProcessor]."
-msgstr ""
+msgstr "参见 crossref:glossary[smp-glossary,对称多处理器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:934
@@ -2793,8 +2915,9 @@ msgstr "SMTP AUTH"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:939
+#, fuzzy
 msgid "See crossref:glossary[smtpauth-glossary,SMTP Authentication]."
-msgstr ""
+msgstr "参见 crossref:glossary[smtpauth-glossary,SMTP 身份验证]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:940
@@ -2804,8 +2927,9 @@ msgstr "SSH"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:942
+#, fuzzy
 msgid "See crossref:glossary[ssh-glossary,Secure Shell]."
-msgstr ""
+msgstr "参见 crossref:glossary[ssh-glossary,安全 Shell]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:943
@@ -2815,8 +2939,9 @@ msgstr "STR"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:945
+#, fuzzy
 msgid "See crossref:glossary[str-glossary,Suspend To RAM]."
-msgstr ""
+msgstr "参见 crossref:glossary[str-glossary,挂起到 RAM]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:946
@@ -2826,14 +2951,15 @@ msgstr "SVN"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:948
+#, fuzzy
 msgid "See crossref:glossary[svn-glossary,Subversion]."
-msgstr ""
+msgstr "参见 crossref:glossary[svn-glossary,Subversion]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:950
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "StateLess Address AutoConfiguration"
-msgstr ""
+msgstr "无状态地址自动配置"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:954
@@ -2855,8 +2981,9 @@ msgstr "信号接地"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:964
+#, fuzzy
 msgid "An RS232 pin or wire that is the ground reference for the signal."
-msgstr ""
+msgstr "RS232 上作为信号接地参考的引脚或导线。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:966
@@ -2890,9 +3017,9 @@ msgstr "Subversion 是 FreeBSD 当前使用的版本控制工具。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:982
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Suspend To RAM"
-msgstr ""
+msgstr "挂起到 RAM"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:986
@@ -2949,8 +3076,9 @@ msgstr "TD"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1005
+#, fuzzy
 msgid "See crossref:glossary[td-glossary,Transmitted Data]."
-msgstr ""
+msgstr "参见 crossref:glossary[td-glossary,发送数据]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1006
@@ -2960,8 +3088,9 @@ msgstr "TFTP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1008
+#, fuzzy
 msgid "See crossref:glossary[tftp-glossary,Trivial FTP]."
-msgstr ""
+msgstr "参见 crossref:glossary[tftp-glossary,简单文件传输协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1009
@@ -2971,8 +3100,9 @@ msgstr "TGT"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1011
+#, fuzzy
 msgid "See crossref:glossary[tgt-glossary,Ticket-Granting Ticket]."
-msgstr ""
+msgstr "参见 crossref:glossary[tgt-glossary,票据授予票据]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1012
@@ -2982,8 +3112,9 @@ msgstr "TSC"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1014
+#, fuzzy
 msgid "See crossref:glossary[tsc-glossary,Time Stamp Counter]."
-msgstr ""
+msgstr "参见 crossref:glossary[tsc-glossary,时间戳计数器]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1016
@@ -2999,10 +3130,11 @@ msgstr "时间戳计数器（TSC）"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1022
+#, fuzzy
 msgid ""
 "A profiling counter internal to modern Pentium(R) processors that counts "
 "core frequency clock ticks."
-msgstr ""
+msgstr "现代 Pentium(R) 处理器内部的一种性能分析计数器，用于统计核心频率的时钟周期。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1024
@@ -3012,10 +3144,11 @@ msgstr "传输层控制协议（TCP）"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1026
+#, fuzzy
 msgid ""
 "A protocol that sits on top of (e.g.) the IP protocol and guarantees that "
 "packets are delivered in a reliable, ordered, fashion."
-msgstr ""
+msgstr "一种运行于（例如）IP 协议之上的协议，可确保数据包按序可靠地送达。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1028
@@ -3025,10 +3158,11 @@ msgstr "Transmission Control Protocol/Internet Protocol (传输控制协议/互�
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1031
+#, fuzzy
 msgid ""
 "The term for the combination of the TCP protocol running over the IP "
 "protocol.  Much of the Internet runs over TCP/IP."
-msgstr ""
+msgstr "TCP 协议运行于 IP 协议之上的组合称为 TCP/IP。互联网的大部分内容都运行在 TCP/IP 之上。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1033
@@ -3038,19 +3172,21 @@ msgstr "已传输的数据"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1035
+#, fuzzy
 msgid "An RS232C pin or wire that data is transmitted on."
-msgstr ""
+msgstr "RS232C 上用于传输数据的引脚或导线。"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1037
+#, fuzzy
 msgid "See crossref:glossary[rd-glossary,Also Received Data]."
-msgstr ""
+msgstr "参见 crossref:glossary[rd-glossary,另见接收数据]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1039
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Trivial FTP"
-msgstr ""
+msgstr "简单文件传输协议"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:1043
@@ -3066,8 +3202,9 @@ msgstr "UDP"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1047
+#, fuzzy
 msgid "See crossref:glossary[udp-glossary,User Datagram Protocol]."
-msgstr ""
+msgstr "参见 crossref:glossary[udp-glossary,用户数据报协议]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1048
@@ -3077,8 +3214,9 @@ msgstr "UFS1"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1050
+#, fuzzy
 msgid "See crossref:glossary[ufs1-glossary,Unix File System Version 1]."
-msgstr ""
+msgstr "参见 crossref:glossary[ufs1-glossary,Unix 文件系统第 1 版]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1051
@@ -3088,8 +3226,9 @@ msgstr "UFS2"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1053
+#, fuzzy
 msgid "See crossref:glossary[ufs2-glossary,Unix File System Version 2]."
-msgstr ""
+msgstr "参见 crossref:glossary[ufs2-glossary,Unix 文件系统第 2 版]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1054
@@ -3099,8 +3238,9 @@ msgstr "UID"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1056
+#, fuzzy
 msgid "See crossref:glossary[uid-glossary,User ID]."
-msgstr ""
+msgstr "参见 crossref:glossary[uid-glossary,用户 ID]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1057
@@ -3110,8 +3250,9 @@ msgstr "URL"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1059
+#, fuzzy
 msgid "See crossref:glossary[url-glossary,Uniform Resource Locator]."
-msgstr ""
+msgstr "参见 crossref:glossary[url-glossary,统一资源定位符]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1060
@@ -3121,8 +3262,9 @@ msgstr "USB"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1062
+#, fuzzy
 msgid "See crossref:glossary[usb-glossary,Universal Serial Bus]."
-msgstr ""
+msgstr "参见 crossref:glossary[usb-glossary,通用串行总线]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1064
@@ -3145,10 +3287,11 @@ msgstr "Unix File System Version 1 (Unix文件系统第1版)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1070
+#, fuzzy
 msgid ""
 "The original UNIX(R) file system, sometimes called the Berkeley Fast File "
 "System."
-msgstr ""
+msgstr "最初的 UNIX(R) 文件系统，有时也称为 Berkeley 快速文件系统。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1072
@@ -3204,11 +3347,12 @@ msgstr "User Datagram Protocol (用户数据报文协议)"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1088
+#, fuzzy
 msgid ""
 "A simple, unreliable datagram protocol which is used for exchanging data on "
 "a TCP/IP network.  UDP does not provide error checking and correction like "
 "TCP."
-msgstr ""
+msgstr "一种简单且不可靠的数据报协议，用于在 TCP/IP 网络上交换数据。UDP 不像 TCP 那样提供错误检查和纠正功能。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/glossary.adoc:1090
@@ -3224,8 +3368,9 @@ msgstr "VPN"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1094
+#, fuzzy
 msgid "See crossref:glossary[vpn-glossary,Virtual Private Network]."
-msgstr ""
+msgstr "参见 crossref:glossary[vpn-glossary,虚拟专用网络]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/glossary.adoc:1096
@@ -3235,7 +3380,8 @@ msgstr "虚拟专用网络"
 
 #. type: discrete
 #: documentation/content/en/books/handbook/glossary.adoc:1097
+#, fuzzy
 msgid ""
 "A method of using a public telecommunication such as the Internet, to "
 "provide remote access to a localized network, such as a corporate LAN."
-msgstr ""
+msgstr "一种利用互联网等公共电信网络，为远程用户提供对局域网络（如企业 LAN）访问的方法。"

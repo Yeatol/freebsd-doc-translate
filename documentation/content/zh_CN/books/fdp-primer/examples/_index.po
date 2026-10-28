@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of an article and a book used in the FreeBSD Documentation Project"
-msgstr ""
+msgstr "FreeBSD 文档项目中使用的文章和书籍示例"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appendix A. Examples"
-msgstr ""
+msgstr "附录 A：示例"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:14
@@ -37,6 +37,7 @@ msgstr "示例"
 
 #. type: appendix
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:52
+#, fuzzy
 msgid ""
 "These examples are not exhaustive - they do not contain all the elements "
 "that might be desirable to use, particularly in a document's front matter.  "
@@ -44,25 +45,25 @@ msgid ""
 "other documents available in the Git *doc* repository, or available online "
 "starting at link:https://cgit.freebsd.org/doc/[https://cgit.freebsd.org/"
 "doc/]."
-msgstr ""
+msgstr "这些示例并不全面——它们未包含所有可能需要使用的元素，尤其是文档的前置元数据。有关 AsciiDoctor 的更多示例，请查看 Git __doc__ 仓库中本文档及其他文档的 AsciiDoc 源文件，或访问在线文档，起始页面为 link:https://cgit.freebsd.org/doc/[https://cgit.freebsd.org/doc/]。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:54
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "AsciiDoctor *book*"
-msgstr ""
+msgstr "AsciiDoctor *书籍*"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:61
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "title: An Example Book\n"
 "authors:\n"
@@ -71,49 +72,55 @@ msgid ""
 "releaseinfo: \"\" \n"
 "trademarks: [\"general\"] \n"
 "---\n"
-msgstr ""
+msgstr "title: An Example Book\nauthors:\n  - author: The FreeBSD Documentation Project\ncopyright: 1995-2021 The FreeBSD Documentation Project\nreleaseinfo: \"\" \ntrademarks: [\"general\"] \n---\n"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An Example Book"
-msgstr ""
+msgstr "示例书籍"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:87
+#, fuzzy
 msgid ""
 ":doctype: book :toc: macro :toclevels: 2 :icons: font :xrefstyle: basic :"
 "relfileprefix: ../ :outfilesuffix: :sectnums: :partnums: :chapter-signifier: "
 "Chapter :part-signifier: Part :source-highlighter: rouge :experimental: :"
 "skip-front-matter: :book: true :pdf: false"
-msgstr ""
+msgstr ":doctype: book :toc: macro :toclevels: 2 :icons: font :xrefstyle: basic :relfileprefix: ../ :outfilesuffix: :sectnums: :partnums: :chapter-signifier: Chapter :part-signifier: Part :source-highlighter: rouge :experimental: :skip-front-matter: :book: true :pdf: false"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:91
+#, fuzzy
 msgid ""
 "ifeval::[\"{backend}\" == \"html5\"] :chapters-path: content/en/books/"
 "bookname/ endif::[]"
-msgstr ""
+msgstr "ifeval::[\"{backend}\" == \"html5\"] :chapters-path: content/en/books/bookname/ endif::[]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:95
+#, fuzzy
 msgid "ifeval::[\"{backend}\" == \"pdf\"] :chapters-path: endif::[]"
-msgstr ""
+msgstr "ifeval::[\"{backend}\" == \"pdf\"] :chapters-path: endif::[]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:99
+#, fuzzy
 msgid "ifeval::[\"{backend}\" == \"epub3\"] :chapters-path: endif::[]"
-msgstr ""
+msgstr "ifeval::[\"{backend}\" == \"epub3\"] :chapters-path: endif::[]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:102
+#, fuzzy
 msgid "[abstract] Abstract"
-msgstr ""
+msgstr "[abstract] 摘要"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:104
+#, fuzzy
 msgid "Abstract section"
-msgstr ""
+msgstr "摘要部分"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:106
@@ -124,44 +131,50 @@ msgstr "'''"
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:108
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:150
+#, fuzzy
 msgid "toc::[]"
-msgstr ""
+msgstr "toc::[]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:110
+#, fuzzy
 msgid ":sectnums!:"
-msgstr ""
+msgstr ":sectnums!:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:112
+#, fuzzy
 msgid "\\include::{chapters-path}preface/_index.adoc[leveloffset=+1]"
-msgstr ""
+msgstr "\\include::{chapters-path}preface/_index.adoc[leveloffset=+1]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:114
+#, fuzzy
 msgid ":sectnums:"
-msgstr ""
+msgstr ":sectnums:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:116
+#, fuzzy
 msgid "\\include::{chapters-path}parti.adoc[lines=7..18]"
-msgstr ""
+msgstr "\\include::{chapters-path}parti.adoc[lines=7..18]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:118
+#, fuzzy
 msgid "\\include::{chapters-path}chapter-name/_index.adoc[leveloffset=+1]"
-msgstr ""
+msgstr "\\include::{chapters-path}chapter-name/_index.adoc[leveloffset=+1]"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:123
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "AsciiDoctor *article*"
-msgstr ""
+msgstr "AsciiDoctor *文章*"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "title: An Example Article\n"
 "authors:\n"
@@ -169,39 +182,42 @@ msgid ""
 "    email: foo@example.com\n"
 "trademarks: [\"general\"]\n"
 "---\n"
-msgstr ""
+msgstr "title: An Example Article\nauthors:\n  - author: Your name and surname\n    email: foo@example.com\ntrademarks: [\"general\"]\n---\n"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An Example Article"
-msgstr ""
+msgstr "示例文章"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:146
+#, fuzzy
 msgid ""
 ":doctype: article :toc: macro :toclevels: 1 :icons: font :sectnums: :source-"
 "highlighter: rouge :experimental:"
-msgstr ""
+msgstr ":doctype: article :toc: macro :toclevels: 1 :icons: font :sectnums: :source-highlighter: rouge :experimental:"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "My First Section"
-msgstr ""
+msgstr "我的第一个章节"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:154
+#, fuzzy
 msgid "This is the first section in my article."
-msgstr ""
+msgstr "这是我文章中的第一个章节。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "My First Sub-Section"
-msgstr ""
+msgstr "我的第一个小节"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/examples/_index.adoc:158
+#, fuzzy
 msgid "This is the first sub-section in my article."
-msgstr ""
+msgstr "这是我文章中的第一个小节。"

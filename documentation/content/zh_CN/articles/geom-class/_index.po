@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/geom-class/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A guide to GEOM internals, and writing your own GEOM class"
-msgstr ""
+msgstr "GEOM 内部机制指南，以及如何编写自己的 GEOM 类"
 
 #. type: Title =
 #: documentation/content/en/articles/geom-class/_index.adoc:1
 #: documentation/content/en/articles/geom-class/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing a GEOM Class"
-msgstr ""
+msgstr "编写 GEOM 类"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:43
@@ -37,11 +37,12 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:46
+#, fuzzy
 msgid ""
 "This text documents some starting points in developing GEOM classes, and "
 "kernel modules in general.  It is assumed that the reader is familiar with C "
 "userland programming."
-msgstr ""
+msgstr "本文介绍开发 GEOM 类以及一般内核模块的一些入门知识。假定读者熟悉 C 用户空间编程。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:48
@@ -56,81 +57,90 @@ msgstr "介绍"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:55
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:59
+#, fuzzy
 msgid ""
 "Documentation on kernel programming is scarce - it is one of few areas where "
 "there is nearly nothing in the way of friendly tutorials, and the phrase "
 "\"use the source!\" really holds true.  However, there are some bits and "
 "pieces (some of them seriously outdated) floating around that should be "
 "studied before beginning to code:"
-msgstr ""
+msgstr "关于内核编程的文档十分稀少——这是少数几乎没有友好教程的领域之一，而“使用源代码！”这句话确实名副其实。不过，仍有一些零散资料（其中一些已经严重过时）值得在开始编码前阅读："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:61
+#, fuzzy
 msgid ""
 "The extref:{developers-handbook}[FreeBSD Developer's Handbook] - part of the "
 "documentation project, it does not contain anything specific to kernel "
 "programming, but rather some general useful information."
-msgstr ""
+msgstr "extref:{developers-handbook}[FreeBSD 开发者手册]——它是文档项目的一部分，不包含内核编程的专门内容，但提供了一些有用的通用信息。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:62
+#, fuzzy
 msgid ""
 "The extref:{arch-handbook}[FreeBSD Architecture Handbook] - also from the "
 "documentation project, contains descriptions of several low-level facilities "
 "and procedures. The most important chapter is 13, extref:{arch-handbook}"
 "[Writing FreeBSD device drivers, driverbasics]."
-msgstr ""
+msgstr "extref:{arch-handbook}[FreeBSD 架构手册]——同样来自文档项目，介绍了若干底层设施和过程。最重要的是第 13 章：extref:{arch-handbook}[编写 FreeBSD 设备驱动程序，driverbasics]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:63
+#, fuzzy
 msgid ""
 "The Blueprints section of http://www.freebsddiary.org[FreeBSD Diary] web "
 "site - contains several interesting articles on kernel facilities."
-msgstr ""
+msgstr "link:http://www.freebsddiary.org[FreeBSD Diary] 网站的 Blueprints 部分——其中包含一些关于内核设施的有趣文章。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:64
+#, fuzzy
 msgid ""
 "The man pages in section 9 - for important documentation on kernel functions."
-msgstr ""
+msgstr "第 9 节中的手册页——提供重要的内核函数文档。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:65
+#, fuzzy
 msgid ""
 "The man:geom[4] man page and http://phk.freebsd.dk/pubs/[PHK's GEOM slides] "
 "- for general introduction of the GEOM subsystem."
-msgstr ""
+msgstr "man:geom[4] 手册页和 link:http://phk.freebsd.dk/pubs/[PHK 的 GEOM 幻灯片]——提供 GEOM 子系统的一般介绍。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:66
+#, fuzzy
 msgid ""
 "Man pages man:g_bio[9], man:g_event[9], man:g_data[9], man:g_geom[9], man:"
 "g_provider[9], man:g_consumer[9], man:g_access[9] & others linked from "
 "those, for documentation on specific functionalities."
-msgstr ""
+msgstr "man:g_bio[9]、man:g_event[9]、man:g_data[9]、man:g_geom[9]、man:g_provider[9]、man:g_consumer[9]、man:g_access[9] 等手册页，以及这些页面链接到的其他页面——提供特定功能的文档。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:67
+#, fuzzy
 msgid ""
 "The man:style[9] man page - for documentation on the coding-style "
 "conventions which must be followed for any code which is to be committed to "
 "the FreeBSD tree."
-msgstr ""
+msgstr "man:style[9] 手册页——介绍提交到 FreeBSD 源代码树的代码必须遵循的编码风格约定。"
 
 #. type: Title ==
 #: documentation/content/en/articles/geom-class/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preliminaries"
-msgstr ""
+msgstr "准备工作"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:76
+#, fuzzy
 msgid ""
 "The best way to do kernel development is to have (at least) two separate "
 "computers.  One of these would contain the development environment and "
@@ -140,105 +150,113 @@ msgid ""
 "up the sources (and other \"live\" data).  The second system does not even "
 "require a proper display.  Instead, it could be connected with a serial "
 "cable or KVM to the first one."
-msgstr ""
+msgstr "进行内核开发的最佳方式是至少准备两台独立的计算机。一台用于开发环境和源代码，另一台通过网络启动并从第一台计算机挂载文件系统，以测试新编写的代码。这样，如果新代码包含错误并导致机器崩溃，也不会破坏源代码（及其他“正在使用”的数据）。第二台系统甚至不需要配备显示器，可以通过串口线或 KVM 连接到第一台系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:79
+#, fuzzy
 msgid ""
 "But, since not everybody has two or more computers handy, there are a few "
 "things that can be done to prepare an otherwise \"live\" system for "
 "developing kernel code.  This setup is also applicable for developing in a "
 "http://www.vmware.com/[VMWare] or http://www.qemu.org/[QEmu] virtual machine "
 "(the next best thing after a dedicated development machine)."
-msgstr ""
+msgstr "不过，并非每个人都随手有两台或更多计算机，因此可以采取一些措施，为其他“正在使用”的系统做好内核代码开发准备。此配置也适用于在 link:http://www.vmware.com/[VMWare] 或 link:http://www.qemu.org/[QEmu] 虚拟机中开发（仅次于专用开发计算机的最佳选择）。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Modifying a System for Development"
-msgstr ""
+msgstr "为开发修改系统"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/geom-class/_index.adoc:84
+#, fuzzy
 msgid ""
 "For any kernel programming a kernel with `INVARIANTS` enabled is a must-"
 "have. So enter these in your kernel configuration file:"
-msgstr ""
+msgstr "进行任何内核编程都必须启用 `INVARIANTS` 的内核。因此，请将以下选项加入内核配置文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "options INVARIANT_SUPPORT\n"
 "options INVARIANTS\n"
-msgstr ""
+msgstr "options INVARIANT_SUPPORT\noptions INVARIANTS\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:92
+#, fuzzy
 msgid ""
 "For more debugging you should also include WITNESS support, which will alert "
 "you of mistakes in locking:"
-msgstr ""
+msgstr "如需更多调试功能，还应启用 WITNESS 支持，它会提示锁使用方面的错误："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "options WITNESS_SUPPORT\n"
 "options WITNESS\n"
-msgstr ""
+msgstr "options WITNESS_SUPPORT\noptions WITNESS\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:100
+#, fuzzy
 msgid "For debugging crash dumps, a kernel with debug symbols is needed:"
-msgstr ""
+msgstr "要调试崩溃转储，需要使用带有调试符号的内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  makeoptions    DEBUG=-g\n"
-msgstr ""
+msgstr "  makeoptions    DEBUG=-g\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:109
+#, fuzzy
 msgid ""
 "With the usual way of installing the kernel (`make installkernel`) the debug "
 "kernel will not be automatically installed.  It is called [.filename]#kernel."
 "debug# and located in [.filename]#/usr/obj/usr/src/sys/KERNELNAME/#.  For "
 "convenience it should be copied to [.filename]#/boot/kernel/#."
-msgstr ""
+msgstr "使用常规方式安装内核（`make installkernel`）时，不会自动安装调试内核。它名为 [.filename]#kernel.debug#，位于 [.filename]#/usr/obj/usr/src/sys/KERNELNAME/#。为方便使用，应将其复制到 [.filename]#/boot/kernel/#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:112
+#, fuzzy
 msgid ""
 "Another convenience is enabling the kernel debugger so you can examine a "
 "kernel panic when it happens.  For this, enter the following lines in your "
 "kernel configuration file:"
-msgstr ""
+msgstr "另一个便利之处是启用内核调试器，以便在发生内核崩溃时检查内核。为此，请在内核配置文件中加入以下几行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "options KDB\n"
 "options DDB\n"
 "options KDB_TRACE\n"
-msgstr ""
+msgstr "options KDB\noptions DDB\noptions KDB_TRACE\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:121
+#, fuzzy
 msgid ""
 "For this to work you might need to set a sysctl (if it is not on by default):"
-msgstr ""
+msgstr "要使其正常工作，可能需要设置一个 sysctl（如果默认未启用）："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  debug.debugger_on_panic=1\n"
-msgstr ""
+msgstr "  debug.debugger_on_panic=1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:133
+#, fuzzy
 msgid ""
 "Kernel panics will happen, so care should be taken with the filesystem "
 "cache.  In particular, having softupdates might mean the latest file version "
@@ -248,24 +266,26 @@ msgid ""
 "needed for that.  For a compromise, the softupdates cache delays can be "
 "shortened.  There are three sysctl's that are useful for this (best to be "
 "set in [.filename]#/etc/sysctl.conf#):"
-msgstr ""
+msgstr "内核崩溃时有发生，因此应注意文件系统缓存。特别是，启用 softupdates 时，如果崩溃发生在最新文件版本提交到存储设备之前，该版本可能会丢失。禁用 softupdates 会严重影响性能，而且仍无法保证数据一致性。要保证一致性，需要使用 \"sync\" 选项挂载文件系统。折中方案是缩短 softupdates 缓存延迟。以下三个 sysctl 对此很有用（最好将其设置在 [.filename]#/etc/sysctl.conf# 中）："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "kern.filedelay=5\n"
 "kern.dirdelay=4\n"
 "kern.metadelay=3\n"
-msgstr ""
+msgstr "kern.filedelay=5\nkern.dirdelay=4\nkern.metadelay=3\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:142
+#, fuzzy
 msgid "The numbers represent seconds."
-msgstr ""
+msgstr "这些数值的单位是秒。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:150
+#, fuzzy
 msgid ""
 "For debugging kernel panics, kernel core dumps are required.  Since a kernel "
 "panic might make filesystems unusable, this crash dump is first written to a "
@@ -274,177 +294,190 @@ msgid ""
 "dump is copied to a regular file.  This happens after filesystems are "
 "checked and mounted, and before swap is enabled.  This is controlled with "
 "two [.filename]#/etc/rc.conf# variables:"
-msgstr ""
+msgstr "调试内核崩溃需要内核核心转储。由于内核崩溃可能导致文件系统无法使用，崩溃转储会先写入原始分区，通常是交换分区。该分区必须至少与机器的物理内存一样大。下次启动时，转储会被复制到普通文件中。此操作会在检查并挂载文件系统之后、启用交换空间之前进行。此行为由 [.filename]#/etc/rc.conf# 中的两个变量控制："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "dumpdev=\"/dev/ad0s4b\"\n"
 "dumpdir=\"/usr/core\"\n"
-msgstr ""
+msgstr "dumpdev=\"/dev/ad0s4b\"\ndumpdir=\"/usr/core\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:158
+#, fuzzy
 msgid ""
 "The `dumpdev` variable specifies the swap partition and `dumpdir` tells the "
 "system where in the filesystem to relocate the core dump on reboot."
-msgstr ""
+msgstr "`dumpdev` 变量指定交换分区，`dumpdir` 则告知系统在重新启动时将核心转储移到文件系统中的哪个位置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:161
+#, fuzzy
 msgid ""
 "Writing kernel core dumps is slow and takes a long time so if you have lots "
 "of memory (>256M) and lots of panics it could be frustrating to sit and wait "
 "while it is done (twice - first to write it to swap, then to relocate it to "
 "filesystem).  It is convenient then to limit the amount of RAM the system "
 "will use via a [.filename]#/boot/loader.conf# tunable:"
-msgstr ""
+msgstr "写入内核核心转储速度很慢，需要很长时间。因此，如果内存较大（>256M）且内核经常崩溃，等待转储完成可能会让人十分沮丧（转储要写入两次：先写入交换分区，再移到文件系统中）。此时，可以通过 [.filename]#/boot/loader.conf# 中的可调参数限制系统使用的内存量："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  hw.physmem=\"256M\"\n"
-msgstr ""
+msgstr "  hw.physmem=\"256M\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:168
+#, fuzzy
 msgid ""
 "If the panics are frequent and filesystems large (or you simply do not trust "
 "softupdates+background fsck) it is advisable to turn background fsck off via "
 "[.filename]#/etc/rc.conf# variable:"
-msgstr ""
+msgstr "如果崩溃频繁且文件系统很大（或者你就是不信任 softupdates 和后台 fsck），建议通过 [.filename]#/etc/rc.conf# 中的变量关闭后台 fsck："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  background_fsck=\"NO\"\n"
-msgstr ""
+msgstr "  background_fsck=\"NO\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:177
+#, fuzzy
 msgid ""
 "This way, the filesystems will always get checked when needed.  Note that "
 "with background fsck, a new panic could happen while it is checking the "
 "disks.  Again, the safest way is not to have many local filesystems by using "
 "another computer as an NFS server."
-msgstr ""
+msgstr "这样，文件系统就会在需要时始终得到检查。请注意，启用后台 fsck 时，检查磁盘期间可能再次发生崩溃。同样，最安全的做法是将另一台计算机用作 NFS 服务器，从而减少本地文件系统的数量。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Starting the Project"
-msgstr ""
+msgstr "启动项目"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:183
+#, fuzzy
 msgid ""
 "For the purpose of creating a new GEOM class, an empty subdirectory has to "
 "be created under an arbitrary user-accessible directory.  You do not have to "
 "create the module directory under [.filename]#/usr/src#."
-msgstr ""
+msgstr "要创建新的 GEOM 类，必须在任意一个用户可访问的目录下创建一个空子目录。模块目录不必建在 [.filename]#/usr/src# 下。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Makefile"
-msgstr ""
+msgstr "Makefile"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:188
+#, fuzzy
 msgid ""
 "It is good practice to create [.filename]#Makefiles# for every nontrivial "
 "coding project, which of course includes kernel modules."
-msgstr ""
+msgstr "为每个非简单的编码项目创建 [.filename]#Makefiles# 是一种良好实践，内核模块当然也不例外。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:191
+#, fuzzy
 msgid ""
 "Creating the [.filename]#Makefile# is simple thanks to an extensive set of "
 "helper routines provided by the system.  In short, here is how a minimal [."
 "filename]#Makefile# looks for a kernel module:"
-msgstr ""
+msgstr "借助系统提供的大量辅助例程，创建 [.filename]#Makefile# 很简单。下面是内核模块的最简 [.filename]#Makefile# 示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SRCS=g_journal.c\n"
 "KMOD=geom_journal\n"
-msgstr ""
+msgstr "SRCS=g_journal.c\nKMOD=geom_journal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.kmod.mk>\n"
-msgstr ""
+msgstr ".include <bsd.kmod.mk>\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:202
+#, fuzzy
 msgid ""
 "This [.filename]#Makefile# (with changed filenames) will do for any kernel "
 "module, and a GEOM class can reside in just one kernel module.  If more than "
 "one file is required, list it in the `SRCS` variable, separated with "
 "whitespace from other filenames."
-msgstr ""
+msgstr "这个 [.filename]#Makefile#（替换文件名后）适用于任何内核模块，而一个 GEOM 类可以只包含在一个内核模块中。如果需要多个文件，请将它们列入 `SRCS` 变量，并用空格与其他文件名分隔。"
 
 #. type: Title ==
 #: documentation/content/en/articles/geom-class/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "On FreeBSD Kernel Programming"
-msgstr ""
+msgstr "FreeBSD 内核编程"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Memory Allocation"
-msgstr ""
+msgstr "内存分配"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:212
+#, fuzzy
 msgid ""
 "See man:malloc[9].  Basic memory allocation is only slightly different than "
 "its userland equivalent.  Most notably, `malloc`() and `free`() accept "
 "additional parameters as is described in the man page."
-msgstr ""
+msgstr "请参见 man:malloc[9]。基本内存分配与用户空间中的对应方式只有少许不同。最明显的是，`malloc`() 和 `free`() 接受额外参数，具体说明见手册页。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:214
+#, fuzzy
 msgid ""
 "A \"malloc type\" must be declared in the declaration section of a source "
 "file, like this:"
-msgstr ""
+msgstr "必须在源文件的声明部分声明一种“malloc 类型”，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  static MALLOC_DEFINE(M_GJOURNAL, \"gjournal data\", \"GEOM_JOURNAL Data\");\n"
-msgstr ""
+msgstr "  static MALLOC_DEFINE(M_GJOURNAL, \"gjournal data\", \"GEOM_JOURNAL Data\");\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:221
+#, fuzzy
 msgid ""
 "To use this macro, [.filename]#sys/param.h#, [.filename]#sys/kernel.h# and [."
 "filename]#sys/malloc.h# headers must be included."
-msgstr ""
+msgstr "要使用此宏，必须包含 [.filename]#sys/param.h#、[.filename]#sys/kernel.h# 和 [.filename]#sys/malloc.h# 头文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:224
+#, fuzzy
 msgid ""
 "There is another mechanism for allocating memory, the UMA (Universal Memory "
 "Allocator).  See man:uma[9] for details, but it is a special type of "
 "allocator mainly used for speedy allocation of lists comprised of same-sized "
 "items (for example, dynamic arrays of structs)."
-msgstr ""
+msgstr "还有另一种内存分配机制：UMA（通用内存分配器）。详情请参见 man:uma[9]。这是一种特殊类型的分配器，主要用于快速分配由相同大小元素组成的列表（例如结构体的动态数组）。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lists and Queues"
-msgstr ""
+msgstr "列表和队列"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:233
+#, fuzzy
 msgid ""
 "See man:queue[3].  There are a LOT of cases when a list of things needs to "
 "be maintained.  Fortunately, this data structure is implemented (in several "
@@ -453,43 +486,47 @@ msgid ""
 "requirements (its elements are doubly-linked) and also the slowest (although "
 "the speed variation is on the order of several CPU instructions more, so it "
 "should not be taken seriously)."
-msgstr ""
+msgstr "请参见 man:queue[3]。很多情况下都需要维护事物列表。幸运的是，系统通过 C 宏实现了这种数据结构（有多种形式）。最常用的列表类型是 TAILQ，因为它最灵活。它的内存需求也最大（元素采用双向链表），速度也最慢（不过速度差异仅相当于多执行几条 CPU 指令，因此不必太在意）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:235
+#, fuzzy
 msgid ""
 "If data retrieval speed is very important, see man:tree[3] and man:"
 "hashinit[9]."
-msgstr ""
+msgstr "如果数据检索速度非常重要，请参见 man:tree[3] 和 man:hashinit[9]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BIOs"
-msgstr ""
+msgstr "BIO"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:241
+#, fuzzy
 msgid ""
 "Structure `bio` is used for any and all Input/Output operations concerning "
 "GEOM.  It basically contains information about what device ('provider') "
 "should satisfy the request, request type, offset, length, pointer to a "
 "buffer, and a bunch of \"user-specific\" flags and fields that can help "
 "implement various hacks."
-msgstr ""
+msgstr "`bio` 结构用于 GEOM 涉及的所有输入/输出操作。它基本上包含要满足请求的设备（“provider”）、请求类型、偏移量、长度、缓冲区指针，以及一系列有助于实现各种变通方案的“用户专用”标志和字段。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:245
+#, fuzzy
 msgid ""
 "The important thing here is that ``bio``s are handled asynchronously.  That "
 "means that, in most parts of the code, there is no analogue to userland's "
 "man:read[2] and man:write[2] calls that do not return until a request is "
 "done.  Rather, a developer-supplied function is called as a notification "
 "when the request gets completed (or results in error)."
-msgstr ""
+msgstr "这里重要的一点是，``bio`` 操作以异步方式处理。这意味着，在大多数代码中，没有类似于用户空间 man:read[2] 和 man:write[2] 的调用，能够一直等待到请求完成。相反，请求完成（或出错）时会调用开发者提供的函数作为通知。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:249
+#, fuzzy
 msgid ""
 "The asynchronous programming model (also called \"event-driven\") is "
 "somewhat harder than the much more used imperative one used in userland (at "
@@ -498,503 +535,570 @@ msgid ""
 "always__.  In particular, they cannot be used when a mutex is held; for "
 "example, the GEOM topology mutex or the internal mutex held during the `."
 "start`() and `.stop`() functions."
-msgstr ""
+msgstr "异步编程模型（也称为“事件驱动”）比用户空间中更常用的命令式编程模型要难一些（至少需要一段时间来适应）。某些情况下可以使用辅助例程 `g_write_data`() 和 `g_read_data`()，但__并非总是如此__。尤其是在持有互斥锁时不能使用它们，例如 GEOM 拓扑互斥锁，或在 `.start`() 和 `.stop`() 函数期间持有的内部互斥锁。"
 
 #. type: Title ==
 #: documentation/content/en/articles/geom-class/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "On GEOM Programming"
-msgstr ""
+msgstr "GEOM 编程"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ggate"
-msgstr ""
+msgstr "Ggate"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:258
+#, fuzzy
 msgid ""
 "If maximum performance is not needed, a much simpler way of making a data "
 "transformation is to implement it in userland via the ggate (GEOM gate) "
 "facility.  Unfortunately, there is no easy way to convert between, or even "
 "share code between the two approaches."
-msgstr ""
+msgstr "如果不需要最高性能，更简单的数据转换方式是在用户空间中通过 ggate（GEOM gate）设施实现。遗憾的是，这两种方法之间既难以转换，也难以共享代码。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM Class"
-msgstr ""
+msgstr "GEOM 类"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:265
+#, fuzzy
 msgid ""
 "GEOM classes are transformations on the data.  These transformations can be "
 "combined in a tree-like fashion.  Instances of GEOM classes are called "
 "__geoms__."
-msgstr ""
+msgstr "GEOM 类用于转换数据。这些转换可以树状方式组合。GEOM 类的实例称为 __geoms__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:267
+#, fuzzy
 msgid ""
 "Each GEOM class has several \"class methods\" that get called when there is "
 "no geom instance available (or they are simply not bound to a single "
 "instance):"
-msgstr ""
+msgstr "每个 GEOM 类都有若干“类方法”，当没有可用的 geom 实例时（或这些方法并未绑定到单个实例时）会调用它们："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:269
+#, fuzzy
 msgid ""
 "`.init` is called when GEOM becomes aware of a GEOM class (when the kernel "
 "module gets loaded.)"
-msgstr ""
+msgstr "当 GEOM 感知到某个 GEOM 类时（即内核模块加载时），会调用 `.init`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:270
+#, fuzzy
 msgid ""
 "`.fini` gets called when GEOM abandons the class (when the module gets "
 "unloaded)"
-msgstr ""
+msgstr "当 GEOM 放弃某个类时（即模块卸载时），会调用 `.fini`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:271
+#, fuzzy
 msgid ""
 "`.taste` is called next, once for each provider the system has available. If "
 "applicable, this function will usually create and start a geom instance."
-msgstr ""
+msgstr "接下来，对系统中可用的每个 provider 调用一次 `.taste`。如果适用，此函数通常会创建并启动一个 geom 实例。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:272
+#, fuzzy
 msgid "`.destroy_geom` is called when the geom should be disbanded"
-msgstr ""
+msgstr "需要解散 geom 时会调用 `.destroy_geom`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:273
+#, fuzzy
 msgid ""
 "`.ctlconf` is called when user requests reconfiguration of existing geom"
-msgstr ""
+msgstr "用户请求重新配置现有 geom 时会调用 `.ctlconf`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:275
+#, fuzzy
 msgid ""
 "Also defined are the GEOM event functions, which will get copied to the geom "
 "instance."
-msgstr ""
+msgstr "此外还定义了 GEOM 事件函数，这些函数会被复制到 geom 实例中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:277
+#, fuzzy
 msgid ""
 "Field `.geom` in the `g_class` structure is a LIST of geoms instantiated "
 "from the class."
-msgstr ""
+msgstr "`g_class` 结构中的 `.geom` 字段是从该类实例化的 geom 列表。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:279
+#, fuzzy
 msgid "These functions are called from the g_event kernel thread."
-msgstr ""
+msgstr "这些函数由 g_event 内核线程调用。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Softc"
-msgstr ""
+msgstr "Softc"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:287
+#, fuzzy
 msgid ""
 "The name \"softc\" is a legacy term for \"driver private data\".  The name "
 "most probably comes from the archaic term \"software control block\".  In "
 "GEOM, it is a structure (more precise: pointer to a structure) that can be "
 "attached to a geom instance to hold whatever data is private to the geom "
 "instance.  Most GEOM classes have the following members:"
-msgstr ""
+msgstr "“softc”是“驱动程序私有数据”的旧称。这个名称很可能源自过时的术语“软件控制块”。在 GEOM 中，它是一种结构（更准确地说，是指向结构的指针），可附加到 geom 实例，用来存放该实例的任意私有数据。大多数 GEOM 类都包含以下成员："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:289
+#, fuzzy
 msgid "`struct g_provider *provider` : The \"provider\" this geom instantiates"
-msgstr ""
+msgstr "`struct g_provider *provider`：此 geom 实例化的“provider”"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:290
+#, fuzzy
 msgid "`uint16_t n_disks` : Number of consumer this geom consumes"
-msgstr ""
+msgstr "`uint16_t n_disks`：此 geom 使用的 consumer 数量"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:291
+#, fuzzy
 msgid ""
 "`struct g_consumer \\**disks` : Array of `struct g_consumer*`. (It is not "
 "possible to use just single indirection because struct g_consumer* are "
 "created on our behalf by GEOM)."
-msgstr ""
+msgstr "`struct g_consumer \\**disks`：`struct g_consumer*` 数组。（不能只使用一级间接寻址，因为 `struct g_consumer*` 是由 GEOM 代为创建的。）"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:294
+#, fuzzy
 msgid ""
 "The `softc` structure contains all the state of geom instance.  Every geom "
 "instance has its own softc."
-msgstr ""
+msgstr "`softc` 结构包含 geom 实例的全部状态。每个 geom 实例都有自己的 softc。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Metadata"
-msgstr ""
+msgstr "元数据"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:299
+#, fuzzy
 msgid ""
 "Format of metadata is more-or-less class-dependent, but MUST start with:"
-msgstr ""
+msgstr "元数据的格式或多或少取决于类，但必须以以下内容开头："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:301
+#, fuzzy
 msgid "16 byte buffer for null-terminated signature (usually the class name)"
-msgstr ""
+msgstr "用于空字符结尾签名的 16 字节缓冲区（通常是类名）"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:302
+#, fuzzy
 msgid "uint32 version ID"
-msgstr ""
+msgstr "uint32 版本 ID"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:304
+#, fuzzy
 msgid ""
 "It is assumed that geom classes know how to handle metadata with version "
 "ID's lower than theirs."
-msgstr ""
+msgstr "假定 geom 类知道如何处理版本 ID 低于自身版本的元数据。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:306
+#, fuzzy
 msgid ""
 "Metadata is located in the last sector of the provider (and thus must fit in "
 "it)."
-msgstr ""
+msgstr "元数据位于提供者的最后一个扇区中（因此必须能放入该扇区）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:308
+#, fuzzy
 msgid ""
 "(All this is implementation-dependent but all existing code works like that, "
 "and it is supported by libraries.)"
-msgstr ""
+msgstr "（这一切都取决于具体实现，但所有现有代码都采用这种方式，并且库也支持这种方式。）"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:310
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Labeling/creating a GEOM"
-msgstr ""
+msgstr "标记／创建 GEOM"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:313
+#, fuzzy
 msgid "The sequence of events is:"
-msgstr ""
+msgstr "事件顺序如下："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:315
+#, fuzzy
 msgid "user calls man:geom[8] utility (or one of its hardlinked friends)"
-msgstr ""
+msgstr "用户调用 man:geom[8] 实用程序（或其某个硬链接版本）"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:316
+#, fuzzy
 msgid ""
 "the utility figures out which geom class it is supposed to handle and "
 "searches for [.filename]#geom_CLASSNAME.so# library (usually in [.filename]#/"
 "lib/geom#)."
-msgstr ""
+msgstr "该实用程序确定要处理的 geom 类，并搜索 [.filename]#geom_CLASSNAME.so# 库（通常位于 [.filename]#/lib/geom#）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:317
+#, fuzzy
 msgid ""
 "it man:dlopen[3]-s the library, extracts the definitions of command-line "
 "parameters and helper functions."
-msgstr ""
+msgstr "它使用 man:dlopen[3] 打开该库，并提取命令行参数和辅助函数的定义。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:319
+#, fuzzy
 msgid "In the case of creating/labeling a new geom, this is what happens:"
-msgstr ""
+msgstr "创建／标记新 geom 时，过程如下："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:321
+#, fuzzy
 msgid ""
 "man:geom[8] looks in the command-line argument for the command (usually "
 "`label`), and calls a helper function."
-msgstr ""
+msgstr "man:geom[8] 在命令行参数中查找命令（通常是 `label`），然后调用辅助函数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:322
+#, fuzzy
 msgid ""
 "The helper function checks parameters and gathers metadata, which it "
 "proceeds to write to all concerned providers."
-msgstr ""
+msgstr "辅助函数检查参数并收集元数据，随后将其写入所有相关提供者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:323
+#, fuzzy
 msgid ""
 "This \"spoils\" existing geoms (if any) and initializes a new round of "
 "\"tasting\" of the providers. The intended geom class recognizes the "
 "metadata and brings the geom up."
-msgstr ""
+msgstr "这会使现有 geom（如果有）“失效”，并启动新一轮提供者“试探”。目标 geom 类会识别元数据并启动 geom。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:325
+#, fuzzy
 msgid ""
 "(The above sequence of events is implementation-dependent but all existing "
 "code works like that, and it is supported by libraries.)"
-msgstr ""
+msgstr "（上述事件顺序取决于具体实现，但所有现有代码都采用这种方式，并且库也支持这种方式。）"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM Command Structure"
-msgstr ""
+msgstr "GEOM 命令结构"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:331
+#, fuzzy
 msgid ""
 "The helper [.filename]#geom_CLASSNAME.so# library exports `class_commands` "
 "structure, which is an array of `struct g_command` elements.  Commands are "
 "of uniform format and look like:"
-msgstr ""
+msgstr "辅助库 [.filename]#geom_CLASSNAME.so# 导出 `class_commands` 结构，它是由 `struct g_command` 元素组成的数组。命令格式统一，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/geom-class/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  verb [-options] geomname [other]\n"
-msgstr ""
+msgstr "  verb [-options] geomname [other]\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:338
+#, fuzzy
 msgid "Common verbs are:"
-msgstr ""
+msgstr "常见动词包括："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:340
+#, fuzzy
 msgid ""
 "label - to write metadata to devices so they can be recognized at tasting "
 "and brought up in geoms"
-msgstr ""
+msgstr "label - 将元数据写入设备，以便在试探时识别这些设备并启动相应的 geom"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:341
+#, fuzzy
 msgid "destroy - to destroy metadata, so the geoms get destroyed"
-msgstr ""
+msgstr "destroy - 销毁元数据，从而销毁相应的 geom"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:343
+#, fuzzy
 msgid "Common options are:"
-msgstr ""
+msgstr "常见选项包括："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:345
+#, fuzzy
 msgid "`-v` : be verbose"
-msgstr ""
+msgstr "`-v` ：显示详细信息"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:346
+#, fuzzy
 msgid "`-f` : force"
-msgstr ""
+msgstr "`-f` ：强制执行"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:350
+#, fuzzy
 msgid ""
 "Many actions, such as labeling and destroying metadata can be performed in "
 "userland.  For this, `struct g_command` provides field `gc_func` that can be "
 "set to a function (in the same [.filename]#.so#) that will be called to "
 "process a verb.  If `gc_func` is NULL, the command will be passed to kernel "
 "module, to `.ctlreq` function of the geom class."
-msgstr ""
+msgstr "许多操作（例如标记和销毁元数据）都可以在用户空间中执行。为此，`struct g_command` 提供了 `gc_func` 字段，可将其设置为函数（位于同一个 [.filename]#.so# 中），以处理相应动词。如果 `gc_func` 为 NULL，则命令会传递给内核模块，由 geom 类的 `.ctlreq` 函数处理。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Geoms"
-msgstr ""
+msgstr "Geom"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:356
+#, fuzzy
 msgid ""
 "Geoms are instances of GEOM classes.  They have internal data (a softc "
 "structure) and some functions with which they respond to external events."
-msgstr ""
+msgstr "Geom 是 GEOM 类的实例。它们包含内部数据（softc 结构）和一些用于响应外部事件的函数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:358
+#, fuzzy
 msgid "The event functions are:"
-msgstr ""
+msgstr "事件函数包括："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:360
+#, fuzzy
 msgid "`.access` : calculates permissions (read/write/exclusive)"
-msgstr ""
+msgstr "`.access` ：计算权限（读／写／独占）"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:361
+#, fuzzy
 msgid "`.dumpconf` : returns XML-formatted information about the geom"
-msgstr ""
+msgstr "`.dumpconf` ：返回 XML 格式的 geom 信息"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:362
+#, fuzzy
 msgid "`.orphan` : called when some underlying provider gets disconnected"
-msgstr ""
+msgstr "`.orphan` ：当某个底层提供者断开连接时调用"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:363
+#, fuzzy
 msgid "`.spoiled` : called when some underlying provider gets written to"
-msgstr ""
+msgstr "`.spoiled` ：当某个底层提供者被写入时调用"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:364
+#, fuzzy
 msgid "`.start` : handles I/O"
-msgstr ""
+msgstr "`.start` ：处理 I/O"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:366
+#, fuzzy
 msgid ""
 "These functions are called from the `g_down` kernel thread and there can be "
 "no sleeping in this context, (see definition of sleeping elsewhere) which "
 "limits what can be done quite a bit, but forces the handling to be fast."
-msgstr ""
+msgstr "这些函数由 `g_down` 内核线程调用，在此上下文中不能休眠（休眠的定义见其他章节）。这极大地限制了可执行的操作，但也要求处理过程必须快速。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:368
+#, fuzzy
 msgid ""
 "Of these, the most important function for doing actual useful work is the `."
 "start`() function, which is called when a BIO request arrives for a provider "
 "managed by an instance of geom class."
-msgstr ""
+msgstr "其中，实际执行有用工作的最重要函数是 `.start`() 函数；当有针对由某个 geom 类实例管理的提供者的 BIO 请求到达时，就会调用该函数。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM Threads"
-msgstr ""
+msgstr "GEOM 线程"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:373
+#, fuzzy
 msgid "There are three kernel threads created and run by the GEOM framework:"
-msgstr ""
+msgstr "GEOM 框架会创建并运行三个内核线程："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:375
+#, fuzzy
 msgid ""
 "`g_down` : Handles requests coming from high-level entities (such as a "
 "userland request) on the way to physical devices"
-msgstr ""
+msgstr "`g_down` ：处理来自高级实体（例如用户空间请求）的请求，并将其发送到物理设备"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:376
+#, fuzzy
 msgid ""
 "`g_up` : Handles responses from device drivers to requests made by higher-"
 "level entities"
-msgstr ""
+msgstr "`g_up` ：处理设备驱动程序对高级实体请求的响应"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:377
+#, fuzzy
 msgid ""
 "`g_event` : Handles all other cases: creation of geom instances, access "
 "counting, \"spoil\" events, etc."
-msgstr ""
+msgstr "`g_event` ：处理其他所有情况：创建 geom 实例、访问计数、“失效”事件等"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:379
+#, fuzzy
 msgid ""
 "When a user process issues \"read data X at offset Y of a file\" request, "
 "this is what happens:"
-msgstr ""
+msgstr "当用户进程发出“读取文件偏移量 Y 处的数据 X”请求时，会发生以下情况："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:381
+#, fuzzy
 msgid ""
 "The filesystem converts the request into a struct bio instance and passes it "
 "to the GEOM subsystem. It knows what geom instance should handle it because "
 "filesystems are hosted directly on a geom instance."
-msgstr ""
+msgstr "文件系统将请求转换为一个 struct bio 实例，并将其传递给 GEOM 子系统。文件系统知道应该由哪个 geom 实例处理该请求，因为文件系统直接托管在某个 geom 实例上。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:382
+#, fuzzy
 msgid ""
 "The request ends up as a call to the `.start`() function made on the g_down "
 "thread and reaches the top-level geom instance."
-msgstr ""
+msgstr "请求最终会在 `g_down` 线程上调用顶层 geom 实例的 `.start`() 函数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:383
+#, fuzzy
 msgid ""
 "This top-level geom instance (for example the partition slicer) determines "
 "that the request should be routed to a lower-level instance (for example the "
 "disk driver). It makes a copy of the bio request (bio requests _ALWAYS_ need "
 "to be copied between instances, with `g_clone_bio`()!), modifies the data "
 "offset and target provider fields and executes the copy with `g_io_request`()"
-msgstr ""
+msgstr "这个顶层 geom 实例（例如分区切片器）会确定应将请求路由到较低层的实例（例如磁盘驱动程序）。它会复制 bio 请求（bio 请求在实例之间传递时 __始终__ 需要使用 `g_clone_bio`() 复制！），修改数据偏移量和目标提供者字段，然后使用 `g_io_request`() 执行副本。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:384
+#, fuzzy
 msgid ""
 "The disk driver gets the bio request also as a call to `.start`() on the "
 "`g_down` thread. It talks to hardware, gets the data back, and calls "
 "`g_io_deliver`() on the bio."
-msgstr ""
+msgstr "磁盘驱动程序也会在 `g_down` 线程上通过调用 `.start`() 接收 bio 请求。它与硬件通信、取回数据，然后对 bio 调用 `g_io_deliver`()。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:385
+#, fuzzy
 msgid ""
 "Now, the notification of bio completion \"bubbles up\" in the `g_up` thread. "
 "First the partition slicer gets `.done`() called in the `g_up` thread, it "
 "uses information stored in the bio to free the cloned `bio` structure (with "
 "`g_destroy_bio`()) and calls `g_io_deliver`() on the original request."
-msgstr ""
+msgstr "此时，bio 完成通知会在 `g_up` 线程中“逐层向上传递”。首先，分区切片器会在 `g_up` 线程中调用 `.done`()；它使用 bio 中存储的信息释放克隆的 `bio` 结构（使用 `g_destroy_bio`()），然后对原始请求调用 `g_io_deliver`()。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:386
+#, fuzzy
 msgid "The filesystem gets the data and transfers it to userland."
-msgstr ""
+msgstr "文件系统接收数据并将其传递到用户空间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:388
+#, fuzzy
 msgid ""
 "See man:g_bio[9] man page for information how the data is passed back and "
 "forth in the `bio` structure (note in particular the `bio_parent` and "
 "`bio_children` fields and how they are handled)."
-msgstr ""
+msgstr "有关数据如何通过 `bio` 结构来回传递的信息，请参阅 man:g_bio[9] 手册页（特别注意 `bio_parent` 和 `bio_children` 字段及其处理方式）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:391
+#, fuzzy
 msgid ""
 "One important feature is: __THERE CAN BE NO SLEEPING IN G_UP AND G_DOWN "
 "THREADS__.  This means that none of the following things can be done in "
 "those threads (the list is of course not complete, but only informative):"
-msgstr ""
+msgstr "一个重要特性是：__G_UP 和 G_DOWN 线程中绝不能休眠__。这意味着这些线程不能执行以下操作（当然，此列表并不完整，仅供参考）："
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:393
+#, fuzzy
 msgid "Calls to `msleep`() and `tsleep`(), obviously."
-msgstr ""
+msgstr "调用 `msleep`() 和 `tsleep`()，这显而易见。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:394
+#, fuzzy
 msgid ""
 "Calls to `g_write_data`() and `g_read_data`(), because these sleep between "
 "passing the data to consumers and returning."
-msgstr ""
+msgstr "调用 `g_write_data`() 和 `g_read_data`()，因为它们在将数据传递给使用者后、返回前会休眠。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:395
+#, fuzzy
 msgid "Waiting for I/O."
-msgstr ""
+msgstr "等待 I/O。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:396
+#, fuzzy
 msgid "Calls to man:malloc[9] and `uma_zalloc`() with `M_WAITOK` flag set"
-msgstr ""
+msgstr "调用 man:malloc[9] 和 `uma_zalloc`()，并设置 `M_WAITOK` 标志"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:397
+#, fuzzy
 msgid "sx and other sleepable locks"
-msgstr ""
+msgstr "sx 锁和其他可休眠锁"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:401
+#, fuzzy
 msgid ""
 "This restriction is here to stop GEOM code clogging the I/O request path, "
 "since sleeping is usually not time-bound and there can be no guarantees on "
@@ -1002,24 +1106,26 @@ msgid ""
 "It also means that there is not much that can be done in those threads; for "
 "example, almost any complex thing requires memory allocation.  Fortunately, "
 "there is a way out: creating additional kernel threads."
-msgstr ""
+msgstr "此限制旨在防止 GEOM 代码阻塞 I/O 请求路径，因为休眠通常不受时间限制，无法保证需要多长时间（此外还有其他更技术性的原因）。这也意味着这些线程能执行的操作不多；例如，几乎所有复杂操作都需要分配内存。幸运的是，可以通过创建额外的内核线程来解决。"
 
 #. type: Title ===
 #: documentation/content/en/articles/geom-class/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Threads for Use in GEOM Code"
-msgstr ""
+msgstr "供 GEOM 代码使用的内核线程"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:406
+#, fuzzy
 msgid ""
 "Kernel threads are created with man:kthread_create[9] function, and they are "
 "sort of similar to userland threads in behavior, only they cannot return to "
 "caller to signify termination, but must call man:kthread_exit[9]."
-msgstr ""
+msgstr "使用 man:kthread_create[9] 函数创建内核线程。它们的行为与用户空间线程有些相似，只是无法通过返回调用者来表示终止，而必须调用 man:kthread_exit[9]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:409
+#, fuzzy
 msgid ""
 "In GEOM code, the usual use of threads is to offload processing of requests "
 "from `g_down` thread (the `.start`() function).  These threads look like "
@@ -1027,10 +1133,11 @@ msgid ""
 "(on which events can be posted by various functions in various threads so it "
 "must be protected by a mutex), take the events from the list one by one and "
 "process them in a big `switch`() statement."
-msgstr ""
+msgstr "在 GEOM 代码中，线程通常用于将请求处理工作从 `g_down` 线程（`.start`() 函数）卸载出去。这些线程类似于“事件处理程序”：它们关联一个事件链表（各种线程中的各种函数都可能向其中发布事件，因此必须用互斥锁保护），逐个取出事件，并在一个大型 `switch`() 语句中进行处理。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:414
+#, fuzzy
 msgid ""
 "The main benefit of using a thread to handle I/O requests is that it can "
 "sleep when needed.  Now, this sounds good, but should be carefully thought "
@@ -1038,23 +1145,25 @@ msgid ""
 "performance of the geom transformation.  Extremely performance-sensitive "
 "classes probably should do all the work in `.start`() function call, taking "
 "great care to handle out-of-memory and similar errors."
-msgstr ""
+msgstr "使用线程处理 I/O 请求的主要好处是，必要时可以休眠。这听起来不错，但需要仔细权衡。休眠十分方便，但可能会严重损害 geom 转换的性能。对性能极其敏感的类可能应在 `.start`() 函数调用中完成所有工作，并特别注意处理内存不足等错误。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:418
+#, fuzzy
 msgid ""
 "The other benefit of having an event-handler thread like that is to "
 "serialize all the requests and responses coming from different geom threads "
 "into one thread.  This is also very convenient but can be slow.  In most "
 "cases, handling of `.done`() requests can be left to the `g_up` thread."
-msgstr ""
+msgstr "使用这种事件处理程序线程的另一个好处是，可以将来自不同 geom 线程的所有请求和响应串行化到一个线程中。这也非常方便，但可能会降低速度。在大多数情况下，可以让 `g_up` 线程处理 `.done`() 请求。"
 
 #. type: Plain text
 #: documentation/content/en/articles/geom-class/_index.adoc:421
+#, fuzzy
 msgid ""
 "Mutexes in FreeBSD kernel (see man:mutex[9]) have one distinction from their "
 "more common userland cousins - the code cannot sleep while holding a "
 "mutex).  If the code needs to sleep a lot, man:sx[9] locks may be more "
 "appropriate.  On the other hand, if you do almost everything in a single "
 "thread, you may get away with no mutexes at all."
-msgstr ""
+msgstr "FreeBSD 内核中的互斥锁（参见 man:mutex[9]）与更常见的用户空间同类锁有一个区别：持有互斥锁时，代码不能休眠。若代码需要频繁休眠，man:sx[9] 锁可能更合适。另一方面，如果几乎所有操作都在单个线程中完成，或许完全不需要互斥锁。"

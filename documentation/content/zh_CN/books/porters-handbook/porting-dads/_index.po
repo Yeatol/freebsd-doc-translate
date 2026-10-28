@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A list of common dos and don'ts that are encountered during the FreeBSD porting process"
-msgstr ""
+msgstr "FreeBSD 移植过程中常见的注意事项"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 13. Dos and Don'ts"
-msgstr ""
+msgstr "第 13 章：注意事项"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dos and Don'ts"
-msgstr ""
+msgstr "注意事项"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:53
@@ -44,6 +44,7 @@ msgstr "介绍"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:59
+#, fuzzy
 msgid ""
 "Here is a list of common dos and don'ts that are encountered during the "
 "porting process.  Check the port against this list, but also check ports in "
@@ -52,16 +53,17 @@ msgid ""
 "{contributing}[Bug Reports and General Commentary, CONTRIB-GENERAL].  "
 "Checking ports in the PR database will both make it faster for us to commit "
 "them, and prove that you know what you are doing."
-msgstr ""
+msgstr "以下列出了移植过程中常见的注意事项。请根据此列表检查 port，也请检查其他人提交到 link:https://bugs.FreeBSD.org/search/[PR 数据库] 中的 port。请按照 extref:{contributing}[错误报告和一般意见，CONTRIB-GENERAL] 中的说明，提交有关 port 的意见。检查 PR 数据库中的 port，既能加快我们提交它们的速度，也能证明你了解自己正在做什么。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`WRKDIR`"
-msgstr ""
+msgstr "`WRKDIR`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:65
+#, fuzzy
 msgid ""
 "Do not write anything to files outside `WRKDIR`. `WRKDIR` is the only place "
 "that is guaranteed to be writable during the port build (see extref:"
@@ -69,266 +71,281 @@ msgid ""
 "building ports from a read-only tree).  The [.filename]##pkg-*## files can "
 "be modified by crossref:pkg-files[pkg-names,redefining a variable] rather "
 "than overwriting the file."
-msgstr ""
+msgstr "不要向 `WRKDIR` 以外的文件写入任何内容。`WRKDIR` 是在构建 port 期间唯一保证可写的位置（从只读树构建 port 的示例，请参阅 extref:{handbook}[从 CDROM 安装 ports，PORTS-CD]）。可以通过 crossref:pkg-files[pkg-names,重新定义变量] 修改 [.filename]##pkg-*## 文件，而不是覆盖该文件。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`WRKDIRPREFIX`"
-msgstr ""
+msgstr "`WRKDIRPREFIX`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:72
+#, fuzzy
 msgid ""
 "Make sure the port honors `WRKDIRPREFIX`.  Most ports do not have to worry "
 "about this.  In particular, when referring to a `WRKDIR` of another port, "
 "note that the correct location is [.filename]#${WRKDIRPREFIX}${PORTSDIR}/"
 "subdir/name/work# not [.filename]#${PORTSDIR}/subdir/name/work# or [."
 "filename]#${.CURDIR}/../../subdir/name/work# or some such."
-msgstr ""
+msgstr "请确保 port 遵循 `WRKDIRPREFIX`。大多数 port 无需为此操心。特别是，引用另一个 port 的 `WRKDIR` 时，请注意正确的位置是 [.filename]#${WRKDIRPREFIX}${PORTSDIR}/subdir/name/work#，而不是 [.filename]#${PORTSDIR}/subdir/name/work#、[.filename]#${.CURDIR}/../../subdir/name/work# 或类似位置。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:74
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Differentiating Operating Systems and OS Versions"
-msgstr ""
+msgstr "区分操作系统及其版本"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:78
+#, fuzzy
 msgid ""
 "Some code needs modifications or conditional compilation based upon what "
 "version of FreeBSD Unix it is running under.  The preferred way to tell "
 "FreeBSD versions apart are the `{freebsd-version}` and `{freebsd}` macros "
 "defined in https://cgit.freebsd.org/src/tree/sys/sys/param.h[sys/param.h]. "
 "If this file is not included add the code,"
-msgstr ""
+msgstr "某些代码需要根据其运行所在的 FreeBSD Unix 版本进行修改或条件编译。区分 FreeBSD 版本的首选方法是使用 link:https://cgit.freebsd.org/src/tree/sys/sys/param.h[sys/param.h] 中定义的 `{freebsd-version}` 和 `{freebsd}` 宏。如果未包含此文件，请将以下代码"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#include <sys/param.h>\n"
-msgstr ""
+msgstr "#include <sys/param.h>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:85
+#, fuzzy
 msgid "to the proper place in the [.filename]#.c# file."
-msgstr ""
+msgstr "添加到 [.filename]#.c# 文件中的适当位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:88
+#, fuzzy
 msgid ""
 "`{freebsd}` is defined in all versions of FreeBSD as their major version "
 "number.  For example, in FreeBSD 9.x, `{freebsd}` is defined to be `9`."
-msgstr ""
+msgstr "在所有版本的 FreeBSD 中，`{freebsd}` 都定义为其主版本号。例如，在 FreeBSD 9.x 中，`{freebsd}` 定义为 `9`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#if __FreeBSD__ >= 9\n"
 "#  if __FreeBSD_version >= 901000\n"
 "\t /* 9.1+ release specific code here */\n"
 "#  endif\n"
 "#endif\n"
-msgstr ""
+msgstr "#if __FreeBSD__ >= 9\n#  if __FreeBSD_version >= 901000\n\t /* 9.1+ release specific code here */\n#  endif\n#endif\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:99
+#, fuzzy
 msgid ""
 "A complete list of `{freebsd-version}` values is available in crossref:"
 "versions[versions,__FreeBSD_version Values]."
-msgstr ""
+msgstr "完整的 `{freebsd-version}` 值列表请参阅 crossref:versions[versions,__FreeBSD_version 值]。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing Something After bsd.port.mk"
-msgstr ""
+msgstr "在 bsd.port.mk 之后编写内容"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:105
+#, fuzzy
 msgid ""
 "Do not write anything after the `.include <bsd.port.mk>` line.  It usually "
 "can be avoided by including [.filename]#bsd.port.pre.mk# somewhere in the "
 "middle of the [.filename]#Makefile# and [.filename]#bsd.port.post.mk# at the "
 "end."
-msgstr ""
+msgstr "不要在 `.include <bsd.port.mk>` 行之后编写任何内容。通常可以通过在 [.filename]#Makefile# 中间某处包含 [.filename]#bsd.port.pre.mk#，并在末尾包含 [.filename]#bsd.port.post.mk# 来避免这种情况。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:109
+#, fuzzy
 msgid ""
 "Include either the [.filename]#bsd.port.pre.mk#/[.filename]#bsd.port.post."
 "mk# pair or [.filename]#bsd.port.mk# only; do not mix these two usages."
-msgstr ""
+msgstr "只能包含 [.filename]#bsd.port.pre.mk#/[.filename]#bsd.port.post.mk# 这一对文件，或只包含 [.filename]#bsd.port.mk#；不要混用这两种方式。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:112
+#, fuzzy
 msgid ""
 "[.filename]#bsd.port.pre.mk# only defines a few variables, which can be used "
 "in tests in the [.filename]#Makefile#, [.filename]#bsd.port.post.mk# defines "
 "the rest."
-msgstr ""
+msgstr "[.filename]#bsd.port.pre.mk# 只定义少数几个变量，可在 [.filename]#Makefile# 的测试中使用；[.filename]#bsd.port.post.mk# 则定义其余变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:114
+#, fuzzy
 msgid ""
 "Here are some important variables defined in [.filename]#bsd.port.pre.mk# "
 "(this is not the complete list, please read [.filename]#bsd.port.mk# for the "
 "complete list)."
-msgstr ""
+msgstr "以下是 [.filename]#bsd.port.pre.mk# 中定义的一些重要变量（此处并未列出全部变量，完整列表请阅读 [.filename]#bsd.port.mk#）。"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Variable"
-msgstr ""
+msgstr "变量"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`ARCH`"
-msgstr ""
+msgstr "`ARCH`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The architecture as returned by `uname -p` (for example, `i386`)"
-msgstr ""
+msgstr "由 `uname -p` 返回的体系结构（例如 `i386`）"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`OPSYS`"
-msgstr ""
+msgstr "`OPSYS`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The operating system type, as returned by `uname -s` (for example, `FreeBSD`)"
-msgstr ""
+msgstr "由 `uname -s` 返回的操作系统类型（例如 `FreeBSD`）"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`OSREL`"
-msgstr ""
+msgstr "`OSREL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The release version of the operating system (for example, `2.1.5` or `2.2.7`)"
-msgstr ""
+msgstr "操作系统的发行版本（例如 `2.1.5` 或 `2.2.7`）"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`OSVERSION`"
-msgstr ""
+msgstr "`OSVERSION`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The numeric version of the operating system; the same as crossref:versions[versions,`{freebsd-version}`]."
-msgstr ""
+msgstr "操作系统的数字版本；与 crossref:versions[versions,`{freebsd-version}`] 相同。"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`LOCALBASE`"
-msgstr ""
+msgstr "`LOCALBASE`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The base of the \"local\" tree (for example, `/usr/local`)"
-msgstr ""
+msgstr "“本地”目录树的根目录（例如 `/usr/local`）"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PREFIX`"
-msgstr ""
+msgstr "`PREFIX`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Where the port installs itself (see crossref:testing[porting-prefix,more on `PREFIX`])."
-msgstr ""
+msgstr "port 的安装位置（有关 `PREFIX` 的更多信息，请参阅 crossref:testing[porting-prefix,更多关于 `PREFIX` 的内容]）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:143
+#, fuzzy
 msgid ""
 "When `MASTERDIR` is needed, always define it before including [."
 "filename]#bsd.port.pre.mk#."
-msgstr ""
+msgstr "需要 `MASTERDIR` 时，务必在包含 [.filename]#bsd.port.pre.mk# 之前定义它。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:146
+#, fuzzy
 msgid ""
 "Here are some examples of things that can be added after [.filename]#bsd."
 "port.pre.mk#:"
-msgstr ""
+msgstr "以下是可以添加到 [.filename]#bsd.port.pre.mk# 之后的一些示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# no need to compile lang/perl5 if perl5 is already in system\n"
 ".if ${OSVERSION} > 300003\n"
 "BROKEN=\tperl is in system\n"
 ".endif\n"
-msgstr ""
+msgstr "# no need to compile lang/perl5 if perl5 is already in system\n.if ${OSVERSION} > 300003\nBROKEN=\tperl is in system\n.endif\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:156
+#, fuzzy
 msgid "Always use tab instead of spaces after `BROKEN=`."
-msgstr ""
+msgstr "`BROKEN=` 后务必使用制表符，而不是空格。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use the `exec` Statement in Wrapper Scripts"
-msgstr ""
+msgstr "在包装脚本中使用 `exec` 语句"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:163
+#, fuzzy
 msgid ""
 "If the port installs a shell script whose purpose is to launch another "
 "program, and if launching that program is the last action performed by the "
 "script, make sure to launch the program using the `exec` statement, for "
 "instance:"
-msgstr ""
+msgstr "如果 port 安装了一个用于启动其他程序的 shell 脚本，并且启动该程序是脚本执行的最后一个操作，请确保使用 `exec` 语句启动该程序，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#!/bin/sh\n"
 "exec %%LOCALBASE%%/bin/java -jar %%DATADIR%%/foo.jar \"$@\"\n"
-msgstr ""
+msgstr "#!/bin/sh\nexec %%LOCALBASE%%/bin/java -jar %%DATADIR%%/foo.jar \"$@\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:173
+#, fuzzy
 msgid ""
 "The `exec` statement replaces the shell process with the specified program.  "
 "If `exec` is omitted, the shell process remains in memory while the program "
 "is executing, and needlessly consumes system resources."
-msgstr ""
+msgstr "`exec` 语句会用指定的程序替换 shell 进程。如果省略 `exec`，程序运行期间 shell 进程会继续占用内存，白白消耗系统资源。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Do Things Rationally"
-msgstr ""
+msgstr "合理处理事务"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:180
+#, fuzzy
 msgid ""
 "The [.filename]#Makefile# should do things in a simple and reasonable "
 "manner.  Making it a couple of lines shorter or more readable is always "
@@ -336,258 +353,279 @@ msgid ""
 "`if` construct, not redefining `do-extract` if redefining `EXTRACT*` is "
 "enough, and using `GNU_CONFIGURE` instead of `CONFIGURE_ARGS += --prefix="
 "${PREFIX}`."
-msgstr ""
+msgstr "[.filename]#Makefile# 应以简单、合理的方式完成工作。让它短几行或更易读总是更好。示例包括：使用 make 的 `.if` 结构而不是 shell 的 `if` 结构；如果修改 `EXTRACT*` 就足够了，就不要重新定义 `do-extract`；以及使用 `GNU_CONFIGURE`，而不是 `CONFIGURE_ARGS += --prefix=${PREFIX}`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:183
+#, fuzzy
 msgid ""
 "If a lot of new code is needed to do something, there may already be an "
 "implementation of it in [.filename]#bsd.port.mk#.  While hard to read, there "
 "are a great many seemingly-hard problems for which [.filename]#bsd.port.mk# "
 "already provides a shorthand solution."
-msgstr ""
+msgstr "如果需要编写大量新代码才能完成某项工作，可能 [.filename]#bsd.port.mk# 中已经有相应实现。尽管 [.filename]#bsd.port.mk# 不易阅读，但其中已经为许多看似棘手的问题提供了简便的解决方法。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Respect Both `CC` and `CXX`"
-msgstr ""
+msgstr "同时遵循 `CC` 和 `CXX`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:191
+#, fuzzy
 msgid ""
 "The port must respect both `CC` and `CXX`.  What we mean by this is that the "
 "port must not set the values of these variables absolutely, overriding "
 "existing values; instead, it may append whatever values it needs to the "
 "existing values.  This is so that build options that affect all ports can be "
 "set globally."
-msgstr ""
+msgstr "port 必须同时遵循 `CC` 和 `CXX`。这意味着 port 不得直接设定这些变量的值并覆盖现有值；相反，它可以将所需的值追加到现有值中。这样就可以全局设置影响所有 port 的构建选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:193
+#, fuzzy
 msgid ""
 "If the port does not respect these variables, please add `NO_PACKAGE=ignores "
 "either cc or cxx` to the [.filename]#Makefile#."
-msgstr ""
+msgstr "如果 port 不遵循这些变量，请在 [.filename]#Makefile# 中添加 `NO_PACKAGE=ignores either cc or cxx`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:196
+#, fuzzy
 msgid ""
 "Here is an example of a [.filename]#Makefile# respecting both `CC` and "
 "`CXX`.  Note the `?=`:"
-msgstr ""
+msgstr "以下是一个同时遵循 `CC` 和 `CXX` 的 [.filename]#Makefile# 示例。请注意其中的 `?=`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CC?= gcc\n"
-msgstr ""
+msgstr "CC?= gcc\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CXX?= g++\n"
-msgstr ""
+msgstr "CXX?= g++\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:208
+#, fuzzy
 msgid "Here is an example which respects neither `CC` nor `CXX`:"
-msgstr ""
+msgstr "以下是一个既不遵循 `CC` 也不遵循 `CXX` 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CC= gcc\n"
-msgstr ""
+msgstr "CC= gcc\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CXX= g++\n"
-msgstr ""
+msgstr "CXX= g++\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:222
+#, fuzzy
 msgid ""
 "Both `CC` and `CXX` can be defined on FreeBSD systems in [.filename]#/etc/"
 "make.conf#.  The first example defines a value if it was not previously set "
 "in [.filename]#/etc/make.conf#, preserving any system-wide definitions.  The "
 "second example clobbers anything previously defined."
-msgstr ""
+msgstr "在 FreeBSD 系统中，可以在 [.filename]#/etc/make.conf# 中定义 `CC` 和 `CXX`。第一个示例在变量尚未于 [.filename]#/etc/make.conf# 中设置时才定义其值，从而保留任何系统级定义。第二个示例则会覆盖之前定义的所有值。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Respect `CFLAGS`"
-msgstr ""
+msgstr "遵循 `CFLAGS`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:230
+#, fuzzy
 msgid ""
 "The port must respect `CFLAGS`.  What we mean by this is that the port must "
 "not set the value of this variable absolutely, overriding the existing "
 "value.  Instead, it may append whatever values it needs to the existing "
 "value.  This is so that build options that affect all ports can be set "
 "globally."
-msgstr ""
+msgstr "port 必须遵循 `CFLAGS`。这意味着 port 不得直接设定该变量的值并覆盖现有值；相反，它可以将所需的值追加到现有值中。这样就可以全局设置影响所有 port 的构建选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:232
+#, fuzzy
 msgid ""
 "If it does not, please add `NO_PACKAGE=ignores cflags` to the [."
 "filename]#Makefile#."
-msgstr ""
+msgstr "如果 port 不遵循此变量，请在 [.filename]#Makefile# 中添加 `NO_PACKAGE=ignores cflags`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:234
+#, fuzzy
 msgid ""
 "Here is an example of a [.filename]#Makefile# respecting `CFLAGS`. Note the `"
 "+=`:"
-msgstr ""
+msgstr "以下是一个遵循 `CFLAGS` 的 [.filename]#Makefile# 示例。请注意其中的 `+=`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CFLAGS+= -Wall -Werror\n"
-msgstr ""
+msgstr "CFLAGS+= -Wall -Werror\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:241
+#, fuzzy
 msgid "Here is an example which does not respect `CFLAGS`:"
-msgstr ""
+msgstr "以下是一个不遵循 `CFLAGS` 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CFLAGS= -Wall -Werror\n"
-msgstr ""
+msgstr "CFLAGS= -Wall -Werror\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:250
+#, fuzzy
 msgid ""
 "`CFLAGS` is defined on FreeBSD systems in [.filename]#/etc/make.conf#.  The "
 "first example appends additional flags to `CFLAGS`, preserving any system-"
 "wide definitions.  The second example clobbers anything previously defined."
-msgstr ""
+msgstr "在 FreeBSD 系统中，`CFLAGS` 定义于 [.filename]#/etc/make.conf#。第一个示例会追加标志，从而保留任何系统级定义。第二个示例则会覆盖之前定义的所有值。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:254
+#, fuzzy
 msgid ""
 "Remove optimization flags from the third party [.filename]##Makefile##s.  "
 "The system `CFLAGS` contains system-wide optimization flags.  An example "
 "from an unmodified [.filename]#Makefile#:"
-msgstr ""
+msgstr "从第三方 [.filename]##Makefile## 中移除优化标志。系统的 `CFLAGS` 包含系统级优化标志。以下是未经修改的 [.filename]#Makefile# 示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CFLAGS= -O3 -funroll-loops -DHAVE_SOUND\n"
-msgstr ""
+msgstr "CFLAGS= -O3 -funroll-loops -DHAVE_SOUND\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:261
+#, fuzzy
 msgid ""
 "Using system optimization flags, the [.filename]#Makefile# would look "
 "similar to this example:"
-msgstr ""
+msgstr "使用系统优化标志时，[.filename]#Makefile# 应类似于以下示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CFLAGS+= -DHAVE_SOUND\n"
-msgstr ""
+msgstr "CFLAGS+= -DHAVE_SOUND\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Verbose Build Logs"
-msgstr ""
+msgstr "详细的构建日志"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:272
+#, fuzzy
 msgid ""
 "Make the port build system display all commands executed during the build "
 "stage.  Complete build logs are crucial to debugging port problems."
-msgstr ""
+msgstr "确保 port 的构建系统显示构建阶段执行的所有命令。完整的构建日志对于调试 port 问题至关重要。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:274
+#, fuzzy
 msgid "Non-informative build log example (bad):"
-msgstr ""
+msgstr "信息不足的构建日志示例（错误）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  CC     source1.o\n"
 "  CC     source2.o\n"
 "  CCLD   someprogram\n"
-msgstr ""
+msgstr "  CC     source1.o\n  CC     source2.o\n  CCLD   someprogram\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:283
+#, fuzzy
 msgid "Verbose build log example (good):"
-msgstr ""
+msgstr "详细的构建日志示例（正确）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "cc -O2 -pipe -I/usr/local/include -c -o source1.o source1.c\n"
 "cc -O2 -pipe -I/usr/local/include -c -o source2.o source2.c\n"
 "cc -o someprogram source1.o source2.o -L/usr/local/lib -lsomelib\n"
-msgstr ""
+msgstr "cc -O2 -pipe -I/usr/local/include -c -o source1.o source1.c\ncc -O2 -pipe -I/usr/local/include -c -o source2.o source2.c\ncc -o someprogram source1.o source2.o -L/usr/local/lib -lsomelib\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:293
+#, fuzzy
 msgid ""
 "Some build systems such as CMake, ninja, and GNU configure are set up for "
 "verbose logging by the ports framework.  In other cases, ports might need "
 "individual tweaks."
-msgstr ""
+msgstr "CMake、ninja 和 GNU configure 等某些构建系统已由 ports 框架配置为生成详细日志。其他情况下，可能需要针对具体 port 单独调整。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Feedback"
-msgstr ""
+msgstr "反馈"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:299
+#, fuzzy
 msgid ""
 "Do send applicable changes and patches to the upstream maintainer for "
 "inclusion in the next release of the code.  This makes updating to the next "
 "release that much easier."
-msgstr ""
+msgstr "请将适用的更改和补丁发送给上游维护者，以便纳入下一版代码中。这样会让升级到下一版本容易得多。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "README.html"
-msgstr ""
+msgstr "README.html"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:305
+#, fuzzy
 msgid ""
 "[.filename]#README.html# is not part of the port, but generated by `make "
 "readme`.  Do not include this file in patches or commits."
-msgstr ""
+msgstr "[.filename]#README.html# 并非 port 的组成部分，而是由 `make readme` 生成的。请勿将此文件包含在补丁或提交中。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:309
+#, fuzzy
 msgid ""
 "If `make readme` fails, make sure that the default value of `ECHO_MSG` has "
 "not been modified by the port."
-msgstr ""
+msgstr "如果 `make readme` 失败，请确认 port 未修改 `ECHO_MSG` 的默认值。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marking a Port Not Installable with `BROKEN`, `FORBIDDEN`, or `IGNORE`"
-msgstr ""
+msgstr "使用 `BROKEN`、`FORBIDDEN` 或 `IGNORE` 标记不可安装的 port"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:319
+#, fuzzy
 msgid ""
 "In certain cases, users must be prevented from installing a port.  There are "
 "several variables that can be used in a port's [.filename]#Makefile# to tell "
@@ -598,64 +636,73 @@ msgid ""
 "that depend on [.filename]##Makefile##s, such as crossref:keeping-up[build-"
 "cluster,the ports build cluster], and crossref:keeping-up[freshports,"
 "FreshPorts]."
-msgstr ""
+msgstr "在某些情况下，必须阻止用户安装某个 port。可以在 port 的 [.filename]#Makefile# 中使用若干变量，告知用户该 port 无法安装。这些 make 变量的值将作为原因显示给用户，说明该 port 为何拒绝安装。请使用正确的 make 变量。每个变量传达的含义截然不同，既影响用户，也影响依赖 [.filename]##Makefile## 的自动化系统，例如 crossref:keeping-up[build-cluster,ports 构建集群] 和 crossref:keeping-up[freshports,FreshPorts]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Variables"
-msgstr ""
+msgstr "变量"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:324
+#, fuzzy
 msgid ""
 "`BROKEN` is reserved for ports that currently do not compile, install, "
 "deinstall, or run correctly. Use it for ports where the problem is believed "
 "to be temporary."
-msgstr ""
+msgstr "`BROKEN` 专用于当前无法正确编译、安装、卸载或运行的 port。对于被认为问题是暂时性的 port，应使用此变量。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:327
+#, fuzzy
 msgid ""
 "If instructed, the build cluster will still attempt to try to build them to "
 "see if the underlying problem has been resolved.  (However, in general, the "
 "cluster is run without this.)"
-msgstr ""
+msgstr "如果收到指示，构建集群仍会尝试构建这些 port，以查看根本问题是否已解决。（不过，通常集群运行时不会启用此功能。）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:329
+#, fuzzy
 msgid "For instance, use `BROKEN` when a port:"
-msgstr ""
+msgstr "例如，以下情况应使用 `BROKEN`："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:331
+#, fuzzy
 msgid "does not compile"
-msgstr ""
+msgstr "无法编译"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:332
+#, fuzzy
 msgid "fails its configuration or installation process"
-msgstr ""
+msgstr "配置或安装过程失败"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:333
+#, fuzzy
 msgid "installs files outside of [.filename]#${PREFIX}#"
-msgstr ""
+msgstr "在 [.filename]#${PREFIX}# 之外安装文件"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:334
+#, fuzzy
 msgid ""
 "does not remove all its files cleanly upon deinstall (however, it may be "
 "acceptable, and desirable, for the port to leave user-modified files behind)"
-msgstr ""
+msgstr "卸载时无法干净地移除其所有文件（不过，保留用户修改过的文件可能是可以接受且可取的）"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:335
+#, fuzzy
 msgid "has runtime issues on systems where it is supposed to run fine."
-msgstr ""
+msgstr "在本应正常运行的系统上存在运行时问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:337
+#, fuzzy
 msgid ""
 "`FORBIDDEN` is used for ports that contain a security vulnerability or "
 "induce grave concern regarding the security of a FreeBSD system with a given "
@@ -668,44 +715,49 @@ msgid ""
 "noticeable time gap between disclosure of a vulnerability and an updated "
 "release of the vulnerable software. Do not mark a port `FORBIDDEN` for any "
 "reason other than security."
-msgstr ""
+msgstr "`FORBIDDEN` 用于包含安全漏洞，或在安装某个 port 后会对 FreeBSD 系统安全造成严重隐患的 port（例如，信誉不佳的不安全程序，或提供易受攻击服务的程序）。发现某个软件存在漏洞且尚无已发布的升级版本时，应立即将相应 port 标记为 `FORBIDDEN`。理想情况下，发现安全漏洞后应尽快升级 port，以减少存在漏洞的 FreeBSD 主机数量（我们希望 FreeBSD 以安全著称）；但有时从漏洞披露到易受攻击软件发布更新版本之间会有明显的时间间隔。除安全原因外，不要因其他原因将 port 标记为 `FORBIDDEN`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:338
+#, fuzzy
 msgid ""
 "`IGNORE` is reserved for ports that must not be built for some other reason. "
 "Use it for ports where the problem is believed to be structural. The build "
 "cluster will not, under any circumstances, build ports marked as `IGNORE`. "
 "For instance, use `IGNORE` when a port:"
-msgstr ""
+msgstr "`IGNORE` 保留用于因其他原因不得构建的 port。对于被认为存在结构性问题的 port，请使用它。无论何种情况，构建集群都不会构建标记为 `IGNORE` 的 port。例如，在以下情况下使用 `IGNORE`："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:340
+#, fuzzy
 msgid "does not work on the installed version of FreeBSD"
-msgstr ""
+msgstr "无法在已安装的 FreeBSD 版本上运行"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:341
+#, fuzzy
 msgid ""
 "has a distfile which may not be automatically fetched due to licensing "
 "restrictions"
-msgstr ""
+msgstr "由于许可限制，distfile 可能无法自动获取"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:342
+#, fuzzy
 msgid ""
 "does not work with some other currently installed port (for instance, the "
 "port depends on package:www/drupal7[] but package:www/drupal8[] is installed)"
-msgstr ""
+msgstr "无法与其他已安装的 port 一起运行（例如，该 port 依赖 package:www/drupal7[]，但已安装的是 package:www/drupal8[]）"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:347
+#, fuzzy
 msgid ""
 "If a port would conflict with a currently installed port (for example, if "
 "they install a file in the same place that performs a different function), "
 "crossref:makefiles[conflicts,use `CONFLICTS` instead].  `CONFLICTS` will set "
 "`IGNORE` by itself."
-msgstr ""
+msgstr "如果某个 port 会与当前已安装的 port 冲突（例如，它们在同一位置安装了功能不同的文件），请改用 crossref:makefiles[conflicts,use `CONFLICTS` instead]。`CONFLICTS` 会自行设置 `IGNORE`。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:350
@@ -715,103 +767,111 @@ msgstr "实现说明"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:354
+#, fuzzy
 msgid ""
 "Do not quote the values of `BROKEN`, `IGNORE`, and related variables.  Due "
 "to the way the information is shown to the user, the wording of messages for "
 "each variable differ:"
-msgstr ""
+msgstr "不要为 `BROKEN`、`IGNORE` 及相关变量的值加引号。由于这些信息向用户显示的方式，各变量对应消息的措辞会有所不同："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:358
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BROKEN=\tfails to link with base -lcrypto\n"
-msgstr ""
+msgstr "BROKEN=\tfails to link with base -lcrypto\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IGNORE=\tunsupported on recent versions\n"
-msgstr ""
+msgstr "IGNORE=\tunsupported on recent versions\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:366
+#, fuzzy
 msgid "resulting in this output from `make describe`:"
-msgstr ""
+msgstr "因此，`make describe` 会输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "===>  foobar-0.1 is marked as broken: fails to link with base -lcrypto.\n"
-msgstr ""
+msgstr "===>  foobar-0.1 is marked as broken: fails to link with base -lcrypto.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "===>  foobar-0.1 is unsupported on recent versions.\n"
-msgstr ""
+msgstr "===>  foobar-0.1 is unsupported on recent versions.\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Architectural Considerations"
-msgstr ""
+msgstr "架构方面的注意事项"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:381
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Notes on Architectures"
-msgstr ""
+msgstr "架构概述"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:385
+#, fuzzy
 msgid ""
 "FreeBSD runs on many more processor architectures than just the well-known "
 "x86-based ones.  Some ports have constraints which are particular to one or "
 "more of these architectures."
-msgstr ""
+msgstr "FreeBSD 支持的处理器架构远不止广为人知的 x86 系列。某些 port 对一种或多种此类架构有特定限制。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:387
+#, fuzzy
 msgid "For the list of supported architectures, run:"
-msgstr ""
+msgstr "要查看支持的架构列表，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "cd ${SRCDIR}; make targets\n"
-msgstr ""
+msgstr "cd ${SRCDIR}; make targets\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:396
+#, fuzzy
 msgid ""
 "The values are shown in the form `TARGET`/`TARGET_ARCH`.  The ports read-"
 "only makevar `ARCH` is set based on the value of `TARGET_ARCH`.  Port [."
 "filename]##Makefile##s should test the value of this Makevar."
-msgstr ""
+msgstr "这些值以 `TARGET`/`TARGET_ARCH` 的形式显示。ports 只读 makevar `ARCH` 根据 `TARGET_ARCH` 的值设置。port 的 [.filename]##Makefile## 应检查此 makevar 的值。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marking a Port as Architecture Neutral"
-msgstr ""
+msgstr "将 Port 标记为架构无关"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:401
+#, fuzzy
 msgid ""
 "Ports that do not have any architecture-dependent files or requirements are "
 "identified by setting `NO_ARCH=yes`."
-msgstr ""
+msgstr "没有任何依赖特定架构的文件或要求的 port，可通过设置 `NO_ARCH=yes` 来标识。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:403
+#, fuzzy
 msgid ""
 "Packages built from such ports have their architecture string ending in `:*` "
 "(wildcard architecture) as opposed to, for example, `freebsd:13:x86:64` "
 "(amd64 architecture)."
-msgstr ""
+msgstr "由此类 port 构建的软件包，其架构字符串以 `:*`（通配架构）结尾，而不是例如 `freebsd:13:x86:64`（amd64 架构）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:409
+#, fuzzy
 msgid ""
 "`NO_ARCH` is meant to indicate that there is no need to build a package for "
 "each of the supported architectures.  The goal is to reduce the amount of "
@@ -819,140 +879,152 @@ msgid ""
 "bandwidth and disk space on mirrors and on distribution media.  Currently, "
 "however, our package infrastructure (e.g., package managers, mirrors, and "
 "package builders) is not set up to fully benefit from `NO_ARCH`."
-msgstr ""
+msgstr "`NO_ARCH` 表示无需为每种受支持的架构分别构建软件包。其目标是减少构建和分发软件包所耗费的资源，例如网络带宽，以及镜像站和分发介质上的磁盘空间。不过，目前我们的软件包基础设施（例如软件包管理器、镜像站和软件包构建器）尚未做好充分利用 `NO_ARCH` 的准备。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marking a Port as Ignored Only On Certain Architectures"
-msgstr ""
+msgstr "仅在特定架构上将 Port 标记为忽略"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:415
+#, fuzzy
 msgid ""
 "To mark a port as ``IGNORE``d only on certain architectures, there are two "
 "other convenience variables that will automatically set `IGNORE`: "
 "`ONLY_FOR_ARCHS` and `NOT_FOR_ARCHS`. Examples:"
-msgstr ""
+msgstr "若要仅在特定架构上将 port 标记为 ``IGNORE``，还可以使用另外两个便捷变量，它们会自动设置 `IGNORE`：`ONLY_FOR_ARCHS` 和 `NOT_FOR_ARCHS`。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ONLY_FOR_ARCHS=\ti386 amd64\n"
-msgstr ""
+msgstr "ONLY_FOR_ARCHS=\ti386 amd64\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "NOT_FOR_ARCHS=\tia64 sparc64\n"
-msgstr ""
+msgstr "NOT_FOR_ARCHS=\tia64 sparc64\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:428
+#, fuzzy
 msgid ""
 "A custom `IGNORE` message can be set using `ONLY_FOR_ARCHS_REASON` and "
 "`NOT_FOR_ARCHS_REASON`.  Per architecture entries are possible with "
 "`ONLY_FOR_ARCHS_REASON_ARCH` and `NOT_FOR_ARCHS_REASON_ARCH`."
-msgstr ""
+msgstr "可以使用 `ONLY_FOR_ARCHS_REASON` 和 `NOT_FOR_ARCHS_REASON` 设置自定义的 `IGNORE` 消息。也可以通过 `ONLY_FOR_ARCHS_REASON_ARCH` 和 `NOT_FOR_ARCHS_REASON_ARCH` 分别为每种架构设置消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:431
+#, fuzzy
 msgid ""
 "If a port fetches i386 binaries and installs them, set `IA32_BINARY_PORT`. "
 "If this variable is set, [.filename]#/usr/lib32# must be present for IA32 "
 "versions of libraries and the kernel must support IA32 compatibility. If one "
 "of these two dependencies is not satisfied, `IGNORE` will be set "
 "automatically."
-msgstr ""
+msgstr "如果某个 port 获取并安装 i386 二进制文件，请设置 `IA32_BINARY_PORT`。设置此变量后，必须存在 [.filename]#/usr/lib32# 以提供 IA32 版本的库，并且内核必须支持 IA32 兼容模式。如果这两项依赖中有任何一项不满足，就会自动设置 `IGNORE`。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cluster-Specific Considerations"
-msgstr ""
+msgstr "构建集群方面的注意事项"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:436
+#, fuzzy
 msgid ""
 "Some ports attempt to tune themselves to the exact machine they are being "
 "built on by specifying `-march=native` to the compiler. This should be "
 "avoided: either list it under an off-by-default option, or delete it "
 "entirely."
-msgstr ""
+msgstr "有些 port 会通过向编译器指定 `-march=native`，尝试针对构建它们的确切机器进行调优。应避免这种做法：要么将其列为默认关闭的选项，要么完全删除。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:438
+#, fuzzy
 msgid ""
 "Otherwise, the default package produced by the build cluster might not run "
 "on every single machine of that `ARCH`."
-msgstr ""
+msgstr "否则，构建集群生成的默认软件包可能无法在该 `ARCH` 的每台机器上运行。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Marking a Port for Removal with `DEPRECATED` or `EXPIRATION_DATE`"
-msgstr ""
+msgstr "使用 `DEPRECATED` 或 `EXPIRATION_DATE` 标记 Port 将被移除"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:444
+#, fuzzy
 msgid ""
 "Do remember that `BROKEN` and `FORBIDDEN` are to be used as a temporary "
 "resort if a port is not working.  Permanently broken ports will be removed "
 "from the tree entirely."
-msgstr ""
+msgstr "请记住，如果 port 无法正常运行，`BROKEN` 和 `FORBIDDEN` 应作为临时手段使用。永久损坏的 port 将从 ports 树中彻底移除。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:448
+#, fuzzy
 msgid ""
 "When it makes sense to do so, users can be warned about a pending port "
 "removal with `DEPRECATED` and `EXPIRATION_DATE`.  The former is a string "
 "stating why the port is scheduled for removal; the latter is a string in ISO "
 "8601 format (YYYY-MM-DD).  Both will be shown to the user."
-msgstr ""
+msgstr "适当情况下，可以使用 `DEPRECATED` 和 `EXPIRATION_DATE` 提醒用户 port 即将被移除。前者是说明计划移除该 port 原因的字符串；后者是采用 ISO 8601 格式（YYYY-MM-DD）的字符串。两者都会显示给用户。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:450
+#, fuzzy
 msgid ""
 "It is possible to set `DEPRECATED` without an `EXPIRATION_DATE` (for "
 "instance, recommending a newer version of the port), but the converse does "
 "not make any sense."
-msgstr ""
+msgstr "可以只设置 `DEPRECATED` 而不设置 `EXPIRATION_DATE`（例如，建议改用较新版本的 port），但反过来则毫无意义。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:456
+#, fuzzy
 msgid ""
 "When marking a port as `DEPRECATED`, if there are any alternative ports that "
 "can be used as a replacement for the one being deprecated, it is convenient "
 "to mention them in the commit message."
-msgstr ""
+msgstr "将 port 标记为 `DEPRECATED` 时，如果有可替代它的其他 port，最好在提交消息中提及。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:461
+#, fuzzy
 msgid ""
 "There is no set policy on how much notice to give.  Current practice seems "
 "to be one month for security-related issues and two months for build "
 "issues.  This also gives any interested committers a little time to fix the "
 "problems."
-msgstr ""
+msgstr "对于应提前多久通知，目前没有明确的规定。当前的做法似乎是：安全相关问题提前一个月，构建问题提前两个月。这也给有意愿的提交者留出一些时间来修复问题。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Avoid Use of the `.error` Construct"
-msgstr ""
+msgstr "避免使用 `.error` 结构"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:467
+#, fuzzy
 msgid ""
 "The correct way for a [.filename]#Makefile# to signal that the port cannot "
 "be installed due to some external factor (for instance, the user has "
 "specified an illegal combination of build options) is to set a non-blank "
 "value to `IGNORE`.  This value will be formatted and shown to the user by "
 "`make install`."
-msgstr ""
+msgstr "当某些外部因素导致无法安装 port 时（例如，用户指定了不合法的构建选项组合），正确的做法是在 [.filename]#Makefile# 中为 `IGNORE` 设置非空值。`make install` 会对该值进行格式化并显示给用户。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:473
+#, fuzzy
 msgid ""
 "It is a common mistake to use `.error` for this purpose.  The problem with "
 "this is that many automated tools that work with the ports tree will fail in "
@@ -960,200 +1032,220 @@ msgid ""
 "build [.filename]#/usr/ports/INDEX# (see crossref:testing[make-describe,"
 "Running `make describe`]).  However, even more trivial commands such as "
 "`make maintainer` also fail in this scenario.  This is not acceptable."
-msgstr ""
+msgstr "常见的错误做法是为此目的使用 `.error`。问题在于，许多用于处理 ports 树的自动化工具在这种情况下会失败。最常见的情况是在尝试构建 [.filename]#/usr/ports/INDEX# 时（参见 crossref:testing[make-describe,Running `make describe`]）。不过，即使是 `make maintainer` 这样更简单的命令也会因此失败。这是不可接受的。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:475
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to Avoid Using `.error`"
-msgstr ""
+msgstr "如何避免使用 `.error`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:480
+#, fuzzy
 msgid ""
 "The first of the next two [.filename]#Makefile# snippets will cause `make "
 "index` to fail, while the second one will not:"
-msgstr ""
+msgstr "下面两个 [.filename]#Makefile# 片段中，第一个会导致 `make index` 失败，而第二个不会："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:484
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".error \"option is not supported\"\n"
-msgstr ""
+msgstr ".error \"option is not supported\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:489
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IGNORE=option is not supported\n"
-msgstr ""
+msgstr "IGNORE=option is not supported\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:494
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Usage of sysctl"
-msgstr ""
+msgstr "使用 sysctl"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:499
+#, fuzzy
 msgid ""
 "The usage of [.filename]#sysctl# is discouraged except in targets.  This is "
 "because the evaluation of any ``makevar``s, such as used during `make "
 "index`, then has to run the command, further slowing down that process."
-msgstr ""
+msgstr "除在目标中使用外，不建议使用 [.filename]#sysctl#。这是因为在 `make index` 等操作中，对任何 ``makevar`` 求值时都必须运行相应命令，从而进一步拖慢该过程。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:501
+#, fuzzy
 msgid ""
 "Only use man:sysctl[8] through `SYSCTL`, as it contains the fully qualified "
 "path and can be overridden, if one has such a special need."
-msgstr ""
+msgstr "只能通过 `SYSCTL` 使用 man:sysctl[8]，因为它包含完整路径，并且在有特殊需求时可以覆盖。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Rerolling Distfiles"
-msgstr ""
+msgstr "重新打包 Distfile"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:508
+#, fuzzy
 msgid ""
 "Sometimes the authors of software change the content of released distfiles "
 "without changing the file's name.  Verify that the changes are official and "
 "have been performed by the author.  It has happened in the past that the "
 "distfile was silently altered on the download servers with the intent to "
 "cause harm or compromise end user security."
-msgstr ""
+msgstr "有时，软件作者会更改已发布 distfile 的内容，却不更改文件名。请确认这些更改是正式的，且由作者完成。过去曾发生过 distfile 在下载服务器上被悄悄篡改，意图造成损害或危及最终用户安全的情况。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:511
+#, fuzzy
 msgid ""
 "Put the old distfile aside, download the new one, unpack them and compare "
 "the content with man:diff[1].  If there is nothing suspicious, update [."
 "filename]#distinfo#."
-msgstr ""
+msgstr "将旧的 distfile 放到一边，下载新文件，解包后使用 man:diff[1] 比较内容。如果没有可疑之处，请更新 [.filename]#distinfo#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:515
+#, fuzzy
 msgid ""
 "Be sure to summarize the differences in the PR and commit log, so that other "
 "people know that nothing bad has happened."
-msgstr ""
+msgstr "请务必在 PR 和提交日志中概述差异，让其他人知道没有发生任何不良情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:518
+#, fuzzy
 msgid "Contact the authors of the software and confirm the changes with them."
-msgstr ""
+msgstr "联系软件作者并向其确认这些更改。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:520
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use POSIX Standards"
-msgstr ""
+msgstr "遵循 POSIX 标准"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:524
+#, fuzzy
 msgid ""
 "FreeBSD ports generally expect POSIX compliance.  Some software and build "
 "systems make assumptions based on a particular operating system or "
 "environment that can cause problems when used in a port."
-msgstr ""
+msgstr "FreeBSD ports 通常要求符合 POSIX 标准。有些软件和构建系统会基于特定操作系统或环境作出假设，在 port 中使用时可能导致问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:527
+#, fuzzy
 msgid ""
 "Do not use [.filename]#/proc# if there are any other ways of getting the "
 "information.  For example, `setprogname(argv[0])` in `main()` and then man:"
 "getprogname[3] to know the executable name."
-msgstr ""
+msgstr "如果有其他方式可以获取所需信息，就不要使用 [.filename]#/proc#。例如，在 `main()` 中调用 `setprogname(argv[0])`，然后使用 man:getprogname[3] 获取可执行文件名。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:529
+#, fuzzy
 msgid "Do not rely on behavior that is undocumented by POSIX."
-msgstr ""
+msgstr "不要依赖 POSIX 未记录的行为。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:533
+#, fuzzy
 msgid ""
 "Do not record timestamps in the critical path of the application if it also "
 "works without.  Getting timestamps may be slow, depending on the accuracy of "
 "timestamps in the OS.  If timestamps are really needed, determine how "
 "precise they have to be and use an API which is documented to just deliver "
 "the needed precision."
-msgstr ""
+msgstr "如果应用程序不依赖时间戳也能正常工作，就不要在其关键路径中记录时间戳。获取时间戳可能很慢，具体取决于操作系统中时间戳的精度。如果确实需要时间戳，请确定所需精度，并使用文档明确说明只提供所需精度的 API。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:537
+#, fuzzy
 msgid ""
 "A number of simple syscalls (for example man:gettimeofday[2], man:getpid[2]) "
 "are much faster on Linux(R) than on any other operating system due to "
 "caching and the vsyscall performance optimizations.  Do not rely on them "
 "being cheap in performance-critical applications.  In general, try hard to "
 "avoid syscalls if possible."
-msgstr ""
+msgstr "由于缓存和 vsyscall 性能优化，许多简单的系统调用（例如 man:gettimeofday[2]、man:getpid[2]）在 Linux(R) 上比在其他任何操作系统上都快得多。不要在性能关键型应用程序中假定这些调用开销很低。一般来说，应尽可能避免系统调用。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:540
+#, fuzzy
 msgid ""
 "Do not rely on Linux(R)-specific socket behavior.  In particular, default "
 "socket buffer sizes are different (call man:setsockopt[2] with `SO_SNDBUF` "
 "and `SO_RCVBUF`, and while Linux(R)'s man:send[2] blocks when the socket "
 "buffer is full, FreeBSD's will fail and set `ENOBUFS` in errno."
-msgstr ""
+msgstr "不要依赖 Linux(R) 特有的套接字行为。特别是，默认套接字缓冲区大小有所不同（使用 `SO_SNDBUF` 和 `SO_RCVBUF` 调用 man:setsockopt[2]）；并且 Linux(R) 的 man:send[2] 会在套接字缓冲区已满时阻塞，而 FreeBSD 会失败，并在 errno 中设置 `ENOBUFS`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:542
+#, fuzzy
 msgid ""
 "If relying on non-standard behavior is required, encapsulate it properly "
 "into a generic API, do a check for the behavior in the configure stage, and "
 "stop if it is missing."
-msgstr ""
+msgstr "如果必须依赖非标准行为，请将其妥善封装到通用 API 中，在 configure 阶段检查该行为，并在缺少该行为时停止。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:544
+#, fuzzy
 msgid ""
 "Check the https://man.freebsd.org/cgi/man.cgi[man pages] to see if the "
 "function used is a POSIX interface (in the \"STANDARDS\" section of the man "
 "page)."
-msgstr ""
+msgstr "请查阅 link:https://man.freebsd.org/cgi/man.cgi[手册页]，确认所用函数是否属于 POSIX 接口（查看手册页的 \"STANDARDS\" 部分）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:547
+#, fuzzy
 msgid ""
 "Do not assume that [.filename]#/bin/sh# is bash.  Ensure that a command line "
 "passed to man:system[3] will work with a POSIX compliant shell."
-msgstr ""
+msgstr "不要假设 [.filename]#/bin/sh# 就是 bash。请确保传递给 man:system[3] 的命令行能在符合 POSIX 标准的 shell 中运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:549
+#, fuzzy
 msgid ""
 "A list of common bashisms is available https://wiki.ubuntu.com/"
 "DashAsBinSh[here]."
-msgstr ""
+msgstr "常见 bashism 列表可在 link:https://wiki.ubuntu.com/DashAsBinSh[此处]查看。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:552
+#, fuzzy
 msgid ""
 "Check that headers are included in the POSIX or man page recommended way.  "
 "For example, [.filename]#sys/types.h# is often forgotten, which is not as "
 "much of a problem for Linux(R) as it is for FreeBSD."
-msgstr ""
+msgstr "请按照 POSIX 或手册页推荐的方式包含头文件。例如，人们常常忘记 [.filename]#sys/types.h#；与 Linux(R) 相比，这在 FreeBSD 上会造成更大的问题。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Miscellanea"
-msgstr ""
+msgstr "其他事项"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:558
+#, fuzzy
 msgid ""
 "Always double-check [.filename]#pkg-descr# and [.filename]#pkg-plist#.  If "
 "reviewing a port and a better wording can be achieved, do so."
-msgstr ""
+msgstr "务必仔细检查 [.filename]#pkg-descr# 和 [.filename]#pkg-plist#。如果在审查 port 时能够改进措辞，请进行修改。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/porting-dads/_index.adoc:559
+#, fuzzy
 msgid ""
 "Please be careful to note any legal issues! Do not let us illegally "
 "distribute software!"
-msgstr ""
+msgstr "请务必留意任何法律问题！不要让我们非法分发软件！"

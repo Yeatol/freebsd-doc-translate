@@ -27,9 +27,9 @@ msgstr "PCI 设备"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 11. PCI Devices"
-msgstr ""
+msgstr "第 11 章：PCI 设备"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:51
@@ -55,24 +55,24 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:57
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sample Driver Source ([.filename]#mypci.c#)"
-msgstr ""
+msgstr "示例驱动程序源代码（[.filename]#mypci.c#）"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:66
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Simple KLD to play with the PCI functions.\n"
 " *\n"
 " * Murray Stokely\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * 用于试用 PCI 函数的简单 KLD。\n *\n * Murray Stokely\n */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <sys/param.h>\t\t/* defines used in kernel.h */\n"
 "#include <sys/module.h>\n"
@@ -83,56 +83,56 @@ msgid ""
 "#include <sys/uio.h>\t\t/* uio struct */\n"
 "#include <sys/malloc.h>\n"
 "#include <sys/bus.h>\t\t/* structs, prototypes for pci bus stuff and DEVMETHOD macros! */\n"
-msgstr ""
+msgstr "#include <sys/param.h>\t\t/* 定义 kernel.h 中使用的内容 */\n#include <sys/module.h>\n#include <sys/systm.h>\n#include <sys/errno.h>\n#include <sys/kernel.h>\t\t/* 模块初始化中使用的类型 */\n#include <sys/conf.h>\t\t/* cdevsw 结构体 */\n#include <sys/uio.h>\t\t/* uio 结构体 */\n#include <sys/malloc.h>\n#include <sys/bus.h>\t\t/* PCI 总线相关的结构体、原型和 DEVMETHOD 宏！ */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <machine/bus.h>\n"
 "#include <sys/rman.h>\n"
 "#include <machine/resource.h>\n"
-msgstr ""
+msgstr "#include <machine/bus.h>\n#include <sys/rman.h>\n#include <machine/resource.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <dev/pci/pcivar.h>\t/* For pci_get macros! */\n"
 "#include <dev/pci/pcireg.h>\n"
-msgstr ""
+msgstr "#include <dev/pci/pcivar.h>\t/* 用于 pci_get 宏！ */\n#include <dev/pci/pcireg.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* The softc holds our per-instance data. */\n"
 "struct mypci_softc {\n"
 "\tdevice_t\tmy_dev;\n"
 "\tstruct cdev\t*my_cdev;\n"
 "};\n"
-msgstr ""
+msgstr "/* softc 保存每个实例的数据。 */\nstruct mypci_softc {\n\tdevice_t\tmy_dev;\n\tstruct cdev\t*my_cdev;\n};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* Function prototypes */\n"
 "static d_open_t\t\tmypci_open;\n"
 "static d_close_t\tmypci_close;\n"
 "static d_read_t\t\tmypci_read;\n"
 "static d_write_t\tmypci_write;\n"
-msgstr ""
+msgstr "/* 函数原型 */\nstatic d_open_t\t\tmypci_open;\nstatic d_close_t\tmypci_close;\nstatic d_read_t\t\tmypci_read;\nstatic d_write_t\tmypci_write;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* Character device entry points */\n"
-msgstr ""
+msgstr "/* 字符设备入口点 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static struct cdevsw mypci_cdevsw = {\n"
 "\t.d_version =\tD_VERSION,\n"
@@ -142,112 +142,112 @@ msgid ""
 "\t.d_write =\tmypci_write,\n"
 "\t.d_name =\t\"mypci\",\n"
 "};\n"
-msgstr ""
+msgstr "static struct cdevsw mypci_cdevsw = {\n\t.d_version =\tD_VERSION,\n\t.d_open =\tmypci_open,\n\t.d_close =\tmypci_close,\n\t.d_read =\tmypci_read,\n\t.d_write =\tmypci_write,\n\t.d_name =\t\"mypci\",\n};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * In the cdevsw routines, we find our softc by using the si_drv1 member\n"
 " * of struct cdev.  We set this variable to point to our softc in our\n"
 " * attach routine when we create the /dev entry.\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * 在 cdevsw 例程中，我们通过 struct cdev 的 si_drv1 成员查找 softc。\n * 创建 /dev 条目时，我们会在 attach 例程中将此变量设为指向 softc。\n */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int\n"
 "mypci_open(struct cdev *dev, int oflags, int devtype, struct thread *td)\n"
 "{\n"
 "\tstruct mypci_softc *sc;\n"
-msgstr ""
+msgstr "int\nmypci_open(struct cdev *dev, int oflags, int devtype, struct thread *td)\n{\n\tstruct mypci_softc *sc;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Look up our softc. */\n"
 "\tsc = dev->si_drv1;\n"
 "\tdevice_printf(sc->my_dev, \"Opened successfully.\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\t/* 查找 softc。 */\n\tsc = dev->si_drv1;\n\tdevice_printf(sc->my_dev, \"Opened successfully.\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int\n"
 "mypci_close(struct cdev *dev, int fflag, int devtype, struct thread *td)\n"
 "{\n"
 "\tstruct mypci_softc *sc;\n"
-msgstr ""
+msgstr "int\nmypci_close(struct cdev *dev, int fflag, int devtype, struct thread *td)\n{\n\tstruct mypci_softc *sc;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Look up our softc. */\n"
 "\tsc = dev->si_drv1;\n"
 "\tdevice_printf(sc->my_dev, \"Closed.\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\t/* 查找 softc。 */\n\tsc = dev->si_drv1;\n\tdevice_printf(sc->my_dev, \"Closed.\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int\n"
 "mypci_read(struct cdev *dev, struct uio *uio, int ioflag)\n"
 "{\n"
 "\tstruct mypci_softc *sc;\n"
-msgstr ""
+msgstr "int\nmypci_read(struct cdev *dev, struct uio *uio, int ioflag)\n{\n\tstruct mypci_softc *sc;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Look up our softc. */\n"
 "\tsc = dev->si_drv1;\n"
 "\tdevice_printf(sc->my_dev, \"Asked to read %zd bytes.\\n\", uio->uio_resid);\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\t/* 查找 softc。 */\n\tsc = dev->si_drv1;\n\tdevice_printf(sc->my_dev, \"Asked to read %zd bytes.\\n\", uio->uio_resid);\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int\n"
 "mypci_write(struct cdev *dev, struct uio *uio, int ioflag)\n"
 "{\n"
 "\tstruct mypci_softc *sc;\n"
-msgstr ""
+msgstr "int\nmypci_write(struct cdev *dev, struct uio *uio, int ioflag)\n{\n\tstruct mypci_softc *sc;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Look up our softc. */\n"
 "\tsc = dev->si_drv1;\n"
 "\tdevice_printf(sc->my_dev, \"Asked to write %zd bytes.\\n\", uio->uio_resid);\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\t/* 查找 softc。 */\n\tsc = dev->si_drv1;\n\tdevice_printf(sc->my_dev, \"Asked to write %zd bytes.\\n\", uio->uio_resid);\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* PCI Support Functions */\n"
-msgstr ""
+msgstr "/* PCI 支持函数 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Compare the device ID of this device against the IDs that this driver\n"
@@ -256,19 +256,19 @@ msgid ""
 "static int\n"
 "mypci_probe(device_t dev)\n"
 "{\n"
-msgstr ""
+msgstr "/*\n * 将此设备的设备 ID 与此驱动程序支持的 ID 进行比较。\n * 如果匹配，则设置描述并返回成功。\n */\nstatic int\nmypci_probe(device_t dev)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tdevice_printf(dev, \"MyPCI Probe\\nVendor ID : 0x%x\\nDevice ID : 0x%x\\n\",\n"
 "\t    pci_get_vendor(dev), pci_get_device(dev));\n"
-msgstr ""
+msgstr "\tdevice_printf(dev, \"MyPCI Probe\\nVendor ID : 0x%x\\nDevice ID : 0x%x\\n\",\n\t    pci_get_vendor(dev), pci_get_device(dev));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tif (pci_get_vendor(dev) == 0x11c1) {\n"
 "\t\tprintf(\"We've got the Winmodem, probe successful!\\n\");\n"
@@ -277,42 +277,42 @@ msgid ""
 "\t}\n"
 "\treturn (ENXIO);\n"
 "}\n"
-msgstr ""
+msgstr "\tif (pci_get_vendor(dev) == 0x11c1) {\n\t\tprintf(\"We've got the Winmodem, probe successful!\\n\");\n\t\tdevice_set_desc(dev, \"WinModem\");\n\t\treturn (BUS_PROBE_DEFAULT);\n\t}\n\treturn (ENXIO);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* Attach function is only called if the probe is successful. */\n"
-msgstr ""
+msgstr "/* 只有探测成功后才会调用 attach 函数。 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "mypci_attach(device_t dev)\n"
 "{\n"
 "\tstruct mypci_softc *sc;\n"
-msgstr ""
+msgstr "static int\nmypci_attach(device_t dev)\n{\n\tstruct mypci_softc *sc;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\tprintf(\"MyPCI Attach for : deviceID : 0x%x\\n\", pci_get_devid(dev));\n"
-msgstr ""
+msgstr "\tprintf(\"MyPCI Attach for : deviceID : 0x%x\\n\", pci_get_devid(dev));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Look up our softc and initialize its fields. */\n"
 "\tsc = device_get_softc(dev);\n"
 "\tsc->my_dev = dev;\n"
-msgstr ""
+msgstr "\t/* 查找 softc 并初始化其字段。 */\n\tsc = device_get_softc(dev);\n\tsc->my_dev = dev;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/*\n"
 "\t * Create a /dev entry for this device.  The kernel will assign us\n"
@@ -326,27 +326,27 @@ msgid ""
 "\tprintf(\"Mypci device loaded.\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\t/*\n\t * 为此设备创建 /dev 条目。内核会自动为我们分配主设备号。\n\t * 我们使用此设备的单元号作为次设备号，并将字符设备命名为\n\t * \"mypci<unit>\"。\n\t */\n\tsc->my_cdev = make_dev(&mypci_cdevsw, device_get_unit(dev),\n\t    UID_ROOT, GID_WHEEL, 0600, \"mypci%u\", device_get_unit(dev));\n\tsc->my_cdev->si_drv1 = sc;\n\tprintf(\"Mypci device loaded.\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* Detach device. */\n"
-msgstr ""
+msgstr "/* 分离设备。 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "mypci_detach(device_t dev)\n"
 "{\n"
 "\tstruct mypci_softc *sc;\n"
-msgstr ""
+msgstr "static int\nmypci_detach(device_t dev)\n{\n\tstruct mypci_softc *sc;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Teardown the state in our softc created in our attach routine. */\n"
 "\tsc = device_get_softc(dev);\n"
@@ -354,35 +354,35 @@ msgid ""
 "\tprintf(\"Mypci detach!\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\t/* 清理 attach 例程中在 softc 内创建的状态。 */\n\tsc = device_get_softc(dev);\n\tdestroy_dev(sc->my_cdev);\n\tprintf(\"Mypci detach!\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* Called during system shutdown after sync. */\n"
-msgstr ""
+msgstr "/* 系统同步后关机期间调用。 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "mypci_shutdown(device_t dev)\n"
 "{\n"
-msgstr ""
+msgstr "static int\nmypci_shutdown(device_t dev)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tprintf(\"Mypci shutdown!\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\tprintf(\"Mypci shutdown!\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Device suspend routine.\n"
@@ -390,20 +390,20 @@ msgid ""
 "static int\n"
 "mypci_suspend(device_t dev)\n"
 "{\n"
-msgstr ""
+msgstr "/*\n * 设备挂起例程。\n */\nstatic int\nmypci_suspend(device_t dev)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tprintf(\"Mypci suspend!\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\tprintf(\"Mypci suspend!\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Device resume routine.\n"
@@ -411,20 +411,20 @@ msgid ""
 "static int\n"
 "mypci_resume(device_t dev)\n"
 "{\n"
-msgstr ""
+msgstr "/*\n * 设备恢复例程。\n */\nstatic int\nmypci_resume(device_t dev)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tprintf(\"Mypci resume!\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\tprintf(\"Mypci resume!\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static device_method_t mypci_methods[] = {\n"
 "\t/* Device interface */\n"
@@ -434,65 +434,66 @@ msgid ""
 "\tDEVMETHOD(device_shutdown,\tmypci_shutdown),\n"
 "\tDEVMETHOD(device_suspend,\tmypci_suspend),\n"
 "\tDEVMETHOD(device_resume,\tmypci_resume),\n"
-msgstr ""
+msgstr "static device_method_t mypci_methods[] = {\n\t/* 设备接口 */\n\tDEVMETHOD(device_probe,\t\tmypci_probe),\n\tDEVMETHOD(device_attach,\tmypci_attach),\n\tDEVMETHOD(device_detach,\tmypci_detach),\n\tDEVMETHOD(device_shutdown,\tmypci_shutdown),\n\tDEVMETHOD(device_suspend,\tmypci_suspend),\n\tDEVMETHOD(device_resume,\tmypci_resume),\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tDEVMETHOD_END\n"
 "};\n"
-msgstr ""
+msgstr "\tDEVMETHOD_END\n};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "static devclass_t mypci_devclass;\n"
-msgstr ""
+msgstr "static devclass_t mypci_devclass;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "DEFINE_CLASS_0(mypci, mypci_driver, mypci_methods, sizeof(struct mypci_softc));\n"
 "DRIVER_MODULE(mypci, pci, mypci_driver, mypci_devclass, 0, 0);\n"
-msgstr ""
+msgstr "DEFINE_CLASS_0(mypci, mypci_driver, mypci_methods, sizeof(struct mypci_softc));\nDRIVER_MODULE(mypci, pci, mypci_driver, mypci_devclass, 0, 0);\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#Makefile# for Sample Driver"
-msgstr ""
+msgstr "示例驱动程序的 [.filename]#Makefile#"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# Makefile for mypci driver\n"
-msgstr ""
+msgstr "# mypci 驱动程序的 Makefile\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "KMOD=\tmypci\n"
 "SRCS=\tmypci.c\n"
 "SRCS+=\tdevice_if.h bus_if.h pci_if.h\n"
-msgstr ""
+msgstr "KMOD=\tmypci\nSRCS=\tmypci.c\nSRCS+=\tdevice_if.h bus_if.h pci_if.h\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.kmod.mk>\n"
-msgstr ""
+msgstr ".include <bsd.kmod.mk>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:282
+#, fuzzy
 msgid ""
 "If you place the above source file and [.filename]#Makefile# into a "
 "directory, you may run `make` to compile the sample driver. Additionally, "
 "you may run `make load` to load the driver into the currently running kernel "
 "and `make unload` to unload the driver after it is loaded."
-msgstr ""
+msgstr "将上述源文件和 [.filename]#Makefile# 放入一个目录后，可以运行 `make` 来编译示例驱动程序。此外，还可以运行 `make load` 将驱动程序加载到当前运行的内核中，并在加载后运行 `make unload` 卸载驱动程序。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:283
@@ -502,8 +503,9 @@ msgstr "更多资源"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:286
+#, fuzzy
 msgid "http://www.pcisig.org/[PCI Special Interest Group]"
-msgstr ""
+msgstr "link:http://www.pcisig.org/[PCI 特别兴趣组]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:287
@@ -536,12 +538,13 @@ msgstr "基地址寄存器"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:296
+#, fuzzy
 msgid ""
 "To do anything particularly useful with a PCI device you will need to obtain "
 "the _Base Address Registers_ (BARs) from the PCI Configuration space. The "
 "PCI-specific details of obtaining the BAR are abstracted in the "
 "`bus_alloc_resource()` function."
-msgstr ""
+msgstr "要让 PCI 设备执行任何特别有用的操作，需要从 PCI 配置空间获取__基址寄存器__（BAR）。获取 BAR 时涉及的 PCI 专属细节已由 `bus_alloc_resource()` 函数封装。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:298
@@ -555,7 +558,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    sc->bar0id = PCIR_BAR(0);\n"
 "    sc->bar0res = bus_alloc_resource(dev, SYS_RES_MEMORY, &sc->bar0id,\n"
@@ -565,11 +568,11 @@ msgid ""
 "        error = ENXIO;\n"
 "        goto fail1;\n"
 "    }\n"
-msgstr ""
+msgstr "    sc->bar0id = PCIR_BAR(0);\n    sc->bar0res = bus_alloc_resource(dev, SYS_RES_MEMORY, &sc->bar0id,\n\t\t\t\t  0, ~0, 1, RF_ACTIVE);\n    if (sc->bar0res == NULL) {\n        printf(\"Memory allocation of PCI base register 0 failed!\\n\");\n        error = ENXIO;\n        goto fail1;\n    }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    sc->bar1id = PCIR_BAR(1);\n"
 "    sc->bar1res = bus_alloc_resource(dev, SYS_RES_MEMORY, &sc->bar1id,\n"
@@ -583,14 +586,15 @@ msgid ""
 "    sc->bar0_bh = rman_get_bushandle(sc->bar0res);\n"
 "    sc->bar1_bt = rman_get_bustag(sc->bar1res);\n"
 "    sc->bar1_bh = rman_get_bushandle(sc->bar1res);\n"
-msgstr ""
+msgstr "    sc->bar1id = PCIR_BAR(1);\n    sc->bar1res = bus_alloc_resource(dev, SYS_RES_MEMORY, &sc->bar1id,\n\t\t\t\t  0, ~0, 1, RF_ACTIVE);\n    if (sc->bar1res == NULL) {\n        printf(\"Memory allocation of PCI base register 1 failed!\\n\");\n        error =  ENXIO;\n        goto fail2;\n    }\n    sc->bar0_bt = rman_get_bustag(sc->bar0res);\n    sc->bar0_bh = rman_get_bushandle(sc->bar0res);\n    sc->bar1_bt = rman_get_bustag(sc->bar1res);\n    sc->bar1_bh = rman_get_bushandle(sc->bar1res);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:325
+#, fuzzy
 msgid ""
 "Handles for each base address register are kept in the `softc` structure so "
 "that they can be used to write to the device later."
-msgstr ""
+msgstr "每个基址寄存器的句柄都保存在 `softc` 结构体中，以便稍后用于向设备写入数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:327
@@ -605,14 +609,14 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "uint16_t\n"
 "board_read(struct ni_softc *sc, uint16_t address)\n"
 "{\n"
 "    return bus_space_read_2(sc->bar1_bt, sc->bar1_bh, address);\n"
 "}\n"
-msgstr ""
+msgstr "uint16_t\nboard_read(struct ni_softc *sc, uint16_t address)\n{\n    return bus_space_read_2(sc->bar1_bt, sc->bar1_bh, address);\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:338
@@ -621,14 +625,14 @@ msgstr "类似的，可以用下面的函数写寄存器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "void\n"
 "board_write(struct ni_softc *sc, uint16_t address, uint16_t value)\n"
 "{\n"
 "    bus_space_write_2(sc->bar1_bt, sc->bar1_bh, address, value);\n"
 "}\n"
-msgstr ""
+msgstr "void\nboard_write(struct ni_softc *sc, uint16_t address, uint16_t value)\n{\n    bus_space_write_2(sc->bar1_bt, sc->bar1_bh, address, value);\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:349
@@ -642,23 +646,24 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:353
+#, fuzzy
 msgid ""
 "In FreeBSD 7.0 and later, you can use the `bus_*` functions instead of "
 "`bus_space_*`. The `bus_*` functions take a struct resource * pointer "
 "instead of a bus tag and handle. Thus, you could drop the bus tag and bus "
 "handle members from the `softc` and rewrite the `board_read()` function as:"
-msgstr ""
+msgstr "在 FreeBSD 7.0 及更高版本中，可以使用 `bus_*` 函数代替 `bus_space_*`。`bus_*` 函数接受 `struct resource *` 指针，而不是总线标签和句柄。因此，可以从 `softc` 中移除总线标签和总线句柄成员，并将 `board_read()` 函数改写为："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "uint16_t\n"
 "board_read(struct ni_softc *sc, uint16_t address)\n"
 "{\n"
 "\treturn (bus_read(sc->bar1res, address));\n"
 "}\n"
-msgstr ""
+msgstr "uint16_t\nboard_read(struct ni_softc *sc, uint16_t address)\n{\n\treturn (bus_read(sc->bar1res, address));\n}\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:365
@@ -679,18 +684,19 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:370
+#, fuzzy
 msgid "Again, a sample from a device `attach()` function says more than words."
-msgstr ""
+msgstr "再看一个设备 `attach()` 函数中的示例，会比千言万语更有帮助。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* Get the IRQ resource */\n"
-msgstr ""
+msgstr "/* 获取 IRQ 资源 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    sc->irqid = 0x0;\n"
 "    sc->irqres = bus_alloc_resource(dev, SYS_RES_IRQ, &(sc->irqid),\n"
@@ -700,17 +706,17 @@ msgid ""
 "\terror = ENXIO;\n"
 "\tgoto fail3;\n"
 "    }\n"
-msgstr ""
+msgstr "    sc->irqid = 0x0;\n    sc->irqres = bus_alloc_resource(dev, SYS_RES_IRQ, &(sc->irqid),\n\t\t\t\t  0, ~0, 1, RF_SHAREABLE | RF_ACTIVE);\n    if (sc->irqres == NULL) {\n\tprintf(\"IRQ allocation failed!\\n\");\n\terror = ENXIO;\n\tgoto fail3;\n    }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "    /* Now we should set up the interrupt handler */\n"
-msgstr ""
+msgstr "    /* 现在应设置中断处理程序 */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:392
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    error = bus_setup_intr(dev, sc->irqres, INTR_TYPE_MISC,\n"
 "\t\t\t   my_handler, sc, &(sc->handler));\n"
@@ -718,7 +724,7 @@ msgid ""
 "\tprintf(\"Couldn't set up irq\\n\");\n"
 "\tgoto fail4;\n"
 "    }\n"
-msgstr ""
+msgstr "    error = bus_setup_intr(dev, sc->irqres, INTR_TYPE_MISC,\n\t\t\t   my_handler, sc, &(sc->handler));\n    if (error) {\n\tprintf(\"Couldn't set up irq\\n\");\n\tgoto fail4;\n    }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:395
@@ -744,6 +750,7 @@ msgstr "DMA"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:399
+#, fuzzy
 msgid ""
 "This section is obsolete, and present only for historical reasons. The "
 "proper methods for dealing with these issues is to use the "
@@ -751,48 +758,50 @@ msgid ""
 "this section is updated to reflect that usage. However, at the moment, the "
 "API is in a bit of flux, so once that settles down, it would be good to "
 "update this section to reflect that."
-msgstr ""
+msgstr "本节已过时，仅因历史原因而保留。处理这些问题的正确方法是使用 `bus_space_dma*()` 函数。本段可在本节更新为反映这种用法时删除。不过，目前该 API 仍在变化；待其稳定后，最好更新本节以反映这种用法。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:401
+#, fuzzy
 msgid ""
 "On the PC, peripherals that want to do bus-mastering DMA must deal with "
 "physical addresses. This is a problem since FreeBSD uses virtual memory and "
 "deals almost exclusively with virtual addresses. Fortunately, there is a "
 "function, `vtophys()` to help."
-msgstr ""
+msgstr "在 PC 上，需要进行总线主控 DMA 的外围设备必须处理物理地址。这会带来问题，因为 FreeBSD 使用虚拟内存，几乎只处理虚拟地址。幸运的是，有一个名为 `vtophys()` 的函数可以提供帮助。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:406
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <vm/vm.h>\n"
 "#include <vm/pmap.h>\n"
-msgstr ""
+msgstr "#include <vm/vm.h>\n#include <vm/pmap.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#define vtophys(virtual_address) (...)\n"
-msgstr ""
+msgstr "#define vtophys(virtual_address) (...)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:411
+#, fuzzy
 msgid ""
 "The solution is a bit different on the alpha however, and what we really "
 "want is a function called `vtobus()`."
-msgstr ""
+msgstr "不过，在 alpha 上解决这个问题的方法有所不同；我们真正需要的是一个名为 `vtobus()` 的函数。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#if defined(__alpha__)\n"
 "#define vtobus(va)      alpha_XXX_dmamap((vm_offset_t)va)\n"
 "#else\n"
 "#define vtobus(va)      vtophys(va)\n"
 "#endif\n"
-msgstr ""
+msgstr "#if defined(__alpha__)\n#define vtobus(va)      alpha_XXX_dmamap((vm_offset_t)va)\n#else\n#define vtobus(va)      vtophys(va)\n#endif\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/pci/_index.adoc:421

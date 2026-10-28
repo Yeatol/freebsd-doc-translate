@@ -26,9 +26,9 @@ msgstr "套接字"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 7. Sockets"
-msgstr ""
+msgstr "第 7 章．套接字"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:16
@@ -44,14 +44,16 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:58
+#, fuzzy
 msgid ""
 "BSD sockets take interprocess communications to a new level.  It is no "
 "longer necessary for the communicating processes to run on the same "
 "machine.  They still _can_, but they do not have to."
-msgstr ""
+msgstr "BSD 套接字将进程间通信提升到了一个新层次。通信进程不再需要运行在同一台计算机上。它们仍然__可以__运行在同一台计算机上，但并非必须如此。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:61
+#, fuzzy
 msgid ""
 "Not only do these processes not have to run on the same machine, they do not "
 "have to run under the same operating system.  Thanks to BSD sockets, your "
@@ -59,58 +61,64 @@ msgid ""
 "Macintosh(R), another one running on a Sun(TM) workstation, yet another one "
 "running under Windows(R) 2000, all connected with an Ethernet-based local "
 "area network."
-msgstr ""
+msgstr "这些进程不仅不必运行在同一台计算机上，也不必运行在同一种操作系统下。多亏了 BSD 套接字，你的 FreeBSD 软件可以与运行在 Macintosh(R) 上的程序、运行在 Sun(TM) 工作站上的另一个程序，以及运行在 Windows(R) 2000 下的又一个程序顺畅协作，它们都通过基于以太网的局域网连接在一起。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:63
+#, fuzzy
 msgid ""
 "But your software can equally well cooperate with processes running in "
 "another building, or on another continent, inside a submarine, or a space "
 "shuttle."
-msgstr ""
+msgstr "你的软件同样可以与运行在另一栋建筑、另一片大陆、潜艇内或航天飞机上的进程协作。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:66
+#, fuzzy
 msgid ""
 "It can also cooperate with processes that are not part of a computer (at "
 "least not in the strict sense of the word), but of such devices as printers, "
 "digital cameras, medical equipment.  Just about anything capable of digital "
 "communications."
-msgstr ""
+msgstr "它还可以与不属于计算机（至少不是严格意义上的计算机）的进程协作，而是与打印机、数码相机、医疗设备等装置协作。几乎任何能够进行数字通信的设备都可以。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Networking and Diversity"
-msgstr ""
+msgstr "网络与多样性"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:74
+#, fuzzy
 msgid ""
 "We have already hinted on the _diversity_ of networking.  Many different "
 "systems have to talk to each other.  And they have to speak the same "
 "language.  They also have to _understand_ the same language the same way."
-msgstr ""
+msgstr "我们已经暗示过网络的__多样性__。许多不同的系统需要彼此通信，而且它们必须使用相同的语言。它们还必须以相同的方式__理解__这种语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:79
+#, fuzzy
 msgid ""
 "People often think that _body language_ is universal.  But it is not.  Back "
 "in my early teens, my father took me to Bulgaria.  We were sitting at a "
 "table in a park in Sofia, when a vendor approached us trying to sell us some "
 "roasted almonds."
-msgstr ""
+msgstr "人们常认为__肢体语言__是通用的，但事实并非如此。十几岁时，父亲带我去了保加利亚。我们坐在索非亚一座公园的桌旁，一位摊贩走过来，想卖给我们一些烤杏仁。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:82
+#, fuzzy
 msgid ""
 "I had not learned much Bulgarian by then, so, instead of saying no, I shook "
 "my head from side to side, the \"universal\" body language for _no_.  The "
 "vendor quickly started serving us some almonds."
-msgstr ""
+msgstr "那时我还没学会多少保加利亚语，因此我没有说“不”，而是左右摇头，这是表示__不__的“通用”肢体语言。摊贩很快就开始给我们端上杏仁。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:90
+#, fuzzy
 msgid ""
 "I then remembered I had been told that in Bulgaria shaking your head "
 "sideways meant _yes_.  Quickly, I started nodding my head up and down.  The "
@@ -120,16 +128,17 @@ msgid ""
 "language.  At first, the vendor and I interpreted the same language as "
 "having completely different meaning.  I had to adjust my own interpretation "
 "of that language so the vendor would understand."
-msgstr ""
+msgstr "这时我想起有人告诉过我，在保加利亚，左右摇头表示__是__。我赶紧开始上下点头。摊贩注意到了，拿起他的杏仁，转身离开了。不了解情况的旁观者会觉得，我的肢体语言并没有改变：我仍然在摇头和点头。改变的是肢体语言的__含义__。起初，摊贩和我对同一种语言的理解截然不同。我必须调整自己对这种语言的理解，摊贩才能明白我的意思。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:94
+#, fuzzy
 msgid ""
 "It is the same with computers: The same symbols may have different, even "
 "outright opposite meaning.  Therefore, for two computers to understand each "
 "other, they must not only agree on the same _language_, but on the same "
 "_interpretation_ of the language."
-msgstr ""
+msgstr "计算机也是如此：相同的符号可能有不同的含义，甚至完全相反。因此，两台计算机要想彼此理解，不仅必须约定使用相同的__语言__，还必须对这种语言有相同的__解释__。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:96
@@ -139,6 +148,7 @@ msgstr "网络协议"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:103
+#, fuzzy
 msgid ""
 "While various programming languages tend to have complex syntax and use a "
 "number of multi-letter reserved words (which makes them easy for the human "
@@ -147,139 +157,155 @@ msgid ""
 "There is a very convincing reason for it: While data travels _inside_ your "
 "computer at speeds approaching the speed of light, it often travels "
 "considerably slower between two computers."
-msgstr ""
+msgstr "各种编程语言往往语法复杂，并使用许多由多个字母组成的保留字（这使人类程序员更容易理解）；而数据通信语言则往往非常简洁。它们通常使用单个__位__，而不是多字节的词语。原因很充分：数据在你的计算机__内部__以接近光速的速度传输，而在两台计算机之间传输时，速度往往要慢得多。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:105
+#, fuzzy
 msgid ""
 "As the languages used in data communications are so terse, we usually refer "
 "to them as _protocols_ rather than languages."
-msgstr ""
+msgstr "由于数据通信中使用的语言如此简洁，我们通常称它们为__协议__，而不是语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:110
+#, fuzzy
 msgid ""
 "As data travels from one computer to another, it always uses more than one "
 "protocol.  These protocols are _layered_.  The data can be compared to the "
 "inside of an onion: You have to peel off several layers of \"skin\" to get "
 "to the data.  This is best illustrated with a picture:"
-msgstr ""
+msgstr "数据从一台计算机传到另一台计算机时，总会用到不止一种协议。这些协议是__分层__的。数据就像洋葱内部：要获取数据，必须剥开几层“皮”。下面的图片最能说明这一点："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Protocol Layers"
-msgstr ""
+msgstr "协议层"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "layers.png"
-msgstr ""
+msgstr "layers.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:115
+#, fuzzy
 msgid ""
 "In this example, we are trying to get an image from a web page we are "
 "connected to via an Ethernet."
-msgstr ""
+msgstr "在这个例子中，我们要获取一个网页中的图像，而我们是通过以太网连接到该网页的。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:118
+#, fuzzy
 msgid ""
 "The image consists of raw data, which is simply a sequence of RGB values "
 "that our software can process, i.e., convert into an image and display on "
 "our monitor."
-msgstr ""
+msgstr "图像由原始数据组成，这些数据只是一连串 RGB 值，我们的软件可以处理它们，也就是将其转换为图像并显示在显示器上。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:123
+#, fuzzy
 msgid ""
 "Alas, our software has no way of knowing how the raw data is organized: Is "
 "it a sequence of RGB values, or a sequence of grayscale intensities, or "
 "perhaps of CMYK encoded colors? Is the data represented by 8-bit quanta, or "
 "are they 16 bits in size, or perhaps 4 bits? How many rows and columns does "
 "the image consist of? Should certain pixels be transparent?"
-msgstr ""
+msgstr "遗憾的是，我们的软件无法知道原始数据是如何组织的：它是一连串 RGB 值、灰度强度值，还是 CMYK 编码的颜色？数据是以 8 位为单位表示，还是每个单位为 16 位，或者 4 位？图像由多少行和多少列组成？某些像素是否应该透明？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:125
+#, fuzzy
 msgid "I think you get the picture..."
-msgstr ""
+msgstr "我想你明白我的意思了……"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:128
+#, fuzzy
 msgid ""
 "To inform our software how to handle the raw data, it is encoded as a PNG "
 "file.  It could be a GIF, or a JPEG, but it is a PNG."
-msgstr ""
+msgstr "为了告知软件如何处理原始数据，我们将其编码为 PNG 文件。也可以是 GIF 或 JPEG，但这里是 PNG。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:130
+#, fuzzy
 msgid "And PNG is a protocol."
-msgstr ""
+msgstr "而 PNG 是一种协议。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:132
+#, fuzzy
 msgid ""
 "At this point, I can hear some of you yelling, _\"No, it is not! It is a "
 "file format!\"_"
-msgstr ""
+msgstr "这时，我能听到有人在喊，__“不，它不是！它是一种文件格式！”__"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:137
+#, fuzzy
 msgid ""
 "Well, of course it is a file format.  But from the perspective of data "
 "communications, a file format is a protocol: The file structure is a "
 "_language_, a terse one at that, communicating to our _process_ how the data "
 "is organized.  Ergo, it is a _protocol_."
-msgstr ""
+msgstr "当然，它是一种文件格式。但从数据通信的角度来看，文件格式就是一种协议：文件结构是一种__语言__，而且是一种非常简洁的语言，它向我们的__进程__说明数据是如何组织的。因此，它就是一种__协议__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:140
+#, fuzzy
 msgid ""
 "Alas, if all we received was the PNG file, our software would be facing a "
 "serious problem: How is it supposed to know the data is representing an "
 "image, as opposed to some text, or perhaps a sound, or what not? Secondly, "
 "how is it supposed to know the image is in the PNG format as opposed to GIF, "
 "or JPEG, or some other image format?"
-msgstr ""
+msgstr "遗憾的是，如果我们收到的只有 PNG 文件，软件就会面临一个严重问题：它怎么知道这些数据表示的是图像，而不是文本、声音或其他内容？其次，它怎么知道图像使用的是 PNG 格式，而不是 GIF、JPEG 或其他图像格式？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:144
+#, fuzzy
 msgid ""
 "To obtain that information, we are using another protocol: HTTP.  This "
 "protocol can tell us exactly that the data represents an image, and that it "
 "uses the PNG protocol.  It can also tell us some other things, but let us "
 "stay focused on protocol layers here."
-msgstr ""
+msgstr "为了获得这些信息，我们还要使用另一种协议：HTTP。这个协议可以准确告知我们，数据表示的是图像，并且使用了 PNG 协议。它还可以告知我们其他信息，不过这里先聚焦于协议分层。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:147
+#, fuzzy
 msgid ""
 "So, now we have some data wrapped in the PNG protocol, wrapped in the HTTP "
 "protocol.  How did we get it from the server?"
-msgstr ""
+msgstr "现在，我们有了一些数据，它被封装在 PNG 协议中，而 PNG 协议又被封装在 HTTP 协议中。我们是如何从服务器获取这些数据的？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:151
+#, fuzzy
 msgid ""
 "By using TCP/IP over Ethernet, that is how.  Indeed, that is three more "
 "protocols.  Instead of continuing inside out, I am now going to talk about "
 "Ethernet, simply because it is easier to explain the rest that way."
-msgstr ""
+msgstr "通过以太网上的 TCP/IP 获取。没错，这又涉及另外三种协议。接下来我不再从内向外讲，而是先介绍以太网，因为这样更容易解释其余内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:155
+#, fuzzy
 msgid ""
 "Ethernet is an interesting system of connecting computers in a _local area "
 "network_ (LAN).  Each computer has a _network interface card_ (NIC), which "
 "has a unique 48-bit ID called its _address_.  No two Ethernet NICs in the "
 "world have the same address."
-msgstr ""
+msgstr "以太网是一种有趣的系统，用于将计算机连接成__局域网__（LAN）。每台计算机都有一块__网络接口卡__（NIC），其拥有一个唯一的 48 位 ID，称为它的__地址__。全世界没有两块以太网 NIC 的地址相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:161
+#, fuzzy
 msgid ""
 "These NICs are all connected with each other.  Whenever one computer wants "
 "to communicate with another in the same Ethernet LAN, it sends a message "
@@ -287,298 +313,326 @@ msgid ""
 "_protocol_, the data contains the address of the destination NIC (among "
 "other things).  So, only one of all the network interface cards will pay "
 "attention to it, the rest will ignore it."
-msgstr ""
+msgstr "这些 NIC 彼此相连。每当一台计算机想要与同一以太网 LAN 中的另一台计算机通信时，它就会通过网络发送一条消息。每块 NIC 都能看到这条消息。但根据以太网__协议__，数据中包含目标 NIC 的地址（以及其他内容）。因此，所有网络接口卡中只有一块会处理这条消息，其余都会忽略它。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:165
+#, fuzzy
 msgid ""
 "But not all computers are connected to the same network.  Just because we "
 "have received the data over our Ethernet does not mean it originated in our "
 "own local area network.  It could have come to us from some other network "
 "(which may not even be Ethernet based) connected with our own network via "
 "the Internet."
-msgstr ""
+msgstr "但并非所有计算机都连接到同一个网络。我们通过以太网收到数据，并不意味着数据来自本地局域网。数据可能来自另一个网络（它甚至可能并非基于以太网），并通过互联网与我们的网络相连。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:169
+#, fuzzy
 msgid ""
 "All data is transferred over the Internet using IP, which stands for "
 "_Internet Protocol_.  Its basic role is to let us know where in the world "
 "the data has arrived from, and where it is supposed to go to.  It does not "
 "_guarantee_ we will receive the data, only that we will know where it came "
 "from _if_ we do receive it."
-msgstr ""
+msgstr "互联网上的所有数据都通过 IP 传输，IP 是__互联网协议__（Internet Protocol）的缩写。它的基本作用是告知我们数据从世界上的哪个地方传来，以及它应该去往何处。它并不__保证__我们一定会收到数据，只保证__如果__我们收到数据，就能知道它来自哪里。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:172
+#, fuzzy
 msgid ""
 "Even if we do receive the data, IP does not guarantee we will receive "
 "various chunks of data in the same order the other computer has sent it to "
 "us.  So, we can receive the center of our image before we receive the upper "
 "left corner and after the lower right, for example."
-msgstr ""
+msgstr "即使我们收到了数据，IP 也不保证我们会按照另一台计算机发送数据块的顺序收到它们。例如，我们可能先收到图像中间的部分，然后收到左上角，最后才收到右下角。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:174
+#, fuzzy
 msgid ""
 "It is TCP (_Transmission Control Protocol_) that asks the sender to resend "
 "any lost data and that places it all into the proper order."
-msgstr ""
+msgstr "TCP（__传输控制协议__，Transmission Control Protocol）会要求发送方重新发送丢失的数据，并将所有数据按正确顺序排列。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:177
+#, fuzzy
 msgid ""
 "All in all, it took _five_ different protocols for one computer to "
 "communicate to another what an image looks like.  We received the data "
 "wrapped into the PNG protocol, which was wrapped into the HTTP protocol, "
 "which was wrapped into the TCP protocol, which was wrapped into the IP "
 "protocol, which was wrapped into the Ethernet protocol."
-msgstr ""
+msgstr "总而言之，一台计算机要向另一台计算机传达图像的样子，需要使用__五__种不同的协议。我们收到的数据封装在 PNG 协议中，PNG 协议又封装在 HTTP 协议中，HTTP 协议封装在 TCP 协议中，TCP 协议封装在 IP 协议中，而 IP 协议封装在以太网协议中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:181
+#, fuzzy
 msgid ""
 "Oh, and by the way, there probably were several other protocols involved "
 "somewhere on the way.  For example, if our LAN was connected to the Internet "
 "through a dial-up call, it used the PPP protocol over the modem which used "
 "one (or several) of the various modem protocols, et cetera, et cetera, et "
 "cetera..."
-msgstr ""
+msgstr "顺便一提，传输过程中可能还涉及其他几种协议。例如，如果我们的 LAN 通过拨号连接接入互联网，就会使用调制解调器上的 PPP 协议，而调制解调器还会使用一种（或几种）不同的调制解调器协议，诸如此类……"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:183
+#, fuzzy
 msgid ""
 "As a developer you should be asking by now, _\"How am I supposed to handle "
 "it all?\"_"
-msgstr ""
+msgstr "作为开发者，你现在应该会问：__“我该如何处理这一切？”__"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:188
+#, fuzzy
 msgid ""
 "Luckily for you, you are _not_ supposed to handle it all.  You _are_ "
 "supposed to handle some of it, but not all of it.  Specifically, you need "
 "not worry about the physical connection (in our case Ethernet and possibly "
 "PPP, etc).  Nor do you need to handle the Internet Protocol, or the "
 "Transmission Control Protocol."
-msgstr ""
+msgstr "幸运的是，你__不__需要处理这一切。你__确实__需要处理其中一部分，但不是全部。具体来说，你不必操心物理连接（在我们的例子中是以太网，也可能是 PPP 等）。你也不必处理互联网协议或传输控制协议。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:191
+#, fuzzy
 msgid ""
 "In other words, you do not have to do anything to receive the data from the "
 "other computer.  Well, you do have to _ask_ for it, but that is almost as "
 "simple as opening a file."
-msgstr ""
+msgstr "换句话说，你不必做任何事情就能从另一台计算机接收数据。当然，你得先__请求__数据，不过这几乎和打开文件一样简单。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:194
+#, fuzzy
 msgid ""
 "Once you have received the data, it is up to you to figure out what to do "
 "with it.  In our case, you would need to understand the HTTP protocol and "
 "the PNG file structure."
-msgstr ""
+msgstr "收到数据后，该如何处理就由你决定了。在我们的例子中，你需要理解 HTTP 协议和 PNG 文件结构。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:198
+#, fuzzy
 msgid ""
 "To use an analogy, all the internetworking protocols become a gray area: Not "
 "so much because we do not understand how it works, but because we are no "
 "longer concerned about it.  The sockets interface takes care of this gray "
 "area for us:"
-msgstr ""
+msgstr "打个比方，所有互联网络协议都成了一个灰色地带：这并非因为我们不理解它们如何工作，而是因为我们不再需要关注它们。套接字接口会为我们处理这个灰色地带："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sockets Covered Protocol Layers"
-msgstr ""
+msgstr "套接字所覆盖的协议层"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "slayers.png"
-msgstr ""
+msgstr "slayers.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:203
+#, fuzzy
 msgid ""
 "We only need to understand any protocols that tell us how to _interpret the "
 "data_, not how to _receive_ it from another process, nor how to _send_ it to "
 "another process."
-msgstr ""
+msgstr "我们只需要理解那些告诉我们如何__解释数据__的协议，而不必理解如何从另一个进程__接收__数据，也不必理解如何向另一个进程__发送__数据。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Sockets Model"
-msgstr ""
+msgstr "套接字模型"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:210
+#, fuzzy
 msgid ""
 "BSD sockets are built on the basic UNIX(R) model: _Everything is a file._ In "
 "our example, then, sockets would let us receive an _HTTP file_, so to "
 "speak.  It would then be up to us to extract the _PNG file_ from it."
-msgstr ""
+msgstr "BSD 套接字基于 UNIX(R) 的基本模型：__一切皆文件__。因此，在我们的例子中，套接字可以让我们接收一个所谓的__HTTP 文件__，然后由我们从中提取出__PNG 文件__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:213
+#, fuzzy
 msgid ""
 "Due to the complexity of internetworking, we cannot just use the `open` "
 "system call, or the `open()` C function.  Instead, we need to take several "
 "steps to \"opening\" a socket."
-msgstr ""
+msgstr "由于互联网络的复杂性，我们不能直接使用 `open` 系统调用或 `open()` C 函数。相反，我们需要采取几个步骤来“打开”套接字。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:216
+#, fuzzy
 msgid ""
 "Once we do, however, we can start treating the _socket_ the same way we "
 "treat any _file descriptor_: We can `read` from it, `write` to it, `pipe` "
 "it, and, eventually, `close` it."
-msgstr ""
+msgstr "不过，一旦完成这些步骤，我们就可以像对待任何__文件描述符__一样对待__套接字__：可以从中 `read`、向其 `write`、将其 `pipe`，最后还可以 `close` 它。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Essential Socket Functions"
-msgstr ""
+msgstr "基本套接字函数"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:222
+#, fuzzy
 msgid ""
 "While FreeBSD offers different functions to work with sockets, we only "
 "_need_ four to \"open\" a socket.  And in some cases we only need two."
-msgstr ""
+msgstr "FreeBSD 提供了不同的套接字操作函数，但要“打开”套接字，我们只__需要__四个。有些情况下只需要两个。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Client-Server Difference"
-msgstr ""
+msgstr "客户端与服务器的区别"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:227
+#, fuzzy
 msgid ""
 "Typically, one of the ends of a socket-based data communication is a "
 "_server_, the other is a _client_."
-msgstr ""
+msgstr "通常，基于套接字的数据通信一端是__服务器__，另一端是__客户端__。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Common Elements"
-msgstr ""
+msgstr "共同要素"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`socket`"
-msgstr ""
+msgstr "`socket`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:236
+#, fuzzy
 msgid ""
 "The one function used by both, clients and servers, is man:socket[2].  It is "
 "declared this way:"
-msgstr ""
+msgstr "客户端和服务器都会使用的函数是 man:socket[2]。它的声明如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int socket(int domain, int type, int protocol);\n"
-msgstr ""
+msgstr "int socket(int domain, int type, int protocol);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:245
+#, fuzzy
 msgid ""
 "The return value is of the same type as that of `open`, an integer.  FreeBSD "
 "allocates its value from the same pool as that of file handles.  That is "
 "what allows sockets to be treated the same way as files."
-msgstr ""
+msgstr "返回值与 `open` 的返回值类型相同，是一个整数。FreeBSD 从文件句柄使用的同一个池中分配该值。这使得套接字可以像文件一样使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:249
+#, fuzzy
 msgid ""
 "The `domain` argument tells the system what _protocol family_ you want it to "
 "use.  Many of them exist, some are vendor specific, others are very common.  "
 "They are declared in [.filename]#sys/socket.h#."
-msgstr ""
+msgstr "`domain` 参数告知系统你希望使用哪种__协议族__。协议族有很多种，有些是供应商特有的，有些则非常常见。它们声明在 [.filename]#sys/socket.h# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:251
+#, fuzzy
 msgid "Use `PF_INET` for UDP, TCP and other Internet protocols (IPv4)."
-msgstr ""
+msgstr "对于 UDP、TCP 和其他互联网协议（IPv4），请使用 `PF_INET`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:255
+#, fuzzy
 msgid ""
 "Five values are defined for the `type` argument, again, in [.filename]#sys/"
 "socket.h#.  All of them start with \"`SOCK_`\".  The most common one is "
 "`SOCK_STREAM`, which tells the system you are asking for a _reliable stream "
 "delivery service_ (which is TCP when used with `PF_INET`)."
-msgstr ""
+msgstr "`type` 参数有五个已定义的值，同样声明在 [.filename]#sys/socket.h# 中。它们都以“`SOCK_`”开头。最常见的是 `SOCK_STREAM`，它告知系统你请求的是__可靠的流式传输服务__（与 `PF_INET` 配合使用时即为 TCP）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:257
+#, fuzzy
 msgid ""
 "If you asked for `SOCK_DGRAM`, you would be requesting a _connectionless "
 "datagram delivery service_ (in our case, UDP)."
-msgstr ""
+msgstr "如果请求 `SOCK_DGRAM`，则表示你需要__无连接的数据报传输服务__（在我们的例子中即为 UDP）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:259
+#, fuzzy
 msgid ""
 "If you wanted to be in charge of the low-level protocols (such as IP), or "
 "even network interfaces (e.g., the Ethernet), you would need to specify "
 "`SOCK_RAW`."
-msgstr ""
+msgstr "如果你想控制低层协议（例如 IP），甚至网络接口（例如以太网），就需要指定 `SOCK_RAW`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:262
+#, fuzzy
 msgid ""
 "Finally, the `protocol` argument depends on the previous two arguments, and "
 "is not always meaningful.  In that case, use `0` for its value."
-msgstr ""
+msgstr "最后，`protocol` 参数取决于前两个参数，并非总有意义。在这种情况下，将其设为 `0`。"
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Unconnected Socket"
-msgstr ""
+msgstr "未连接的套接字"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:268
+#, fuzzy
 msgid ""
 "Nowhere, in the `socket` function have we specified to what other system we "
 "should be connected.  Our newly created socket remains _unconnected_."
-msgstr ""
+msgstr "在 `socket` 函数中，我们没有指定要连接到哪个系统。因此，新创建的套接字仍处于__未连接__状态。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:271
+#, fuzzy
 msgid ""
 "This is on purpose: To use a telephone analogy, we have just attached a "
 "modem to the phone line.  We have neither told the modem to make a call, nor "
 "to answer if the phone rings."
-msgstr ""
+msgstr "这是有意为之：打个电话的比方，我们刚把调制解调器接到电话线上，但既没有让它拨号，也没有让它在电话铃响时接听。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`sockaddr`"
-msgstr ""
+msgstr "`sockaddr`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:279
+#, fuzzy
 msgid ""
 "Various functions of the sockets family expect the address of (or pointer "
 "to, to use C terminology) a small area of the memory.  The various C "
 "declarations in the [.filename]#sys/socket.h# refer to it as `struct "
 "sockaddr`.  This structure is declared in the same file:"
-msgstr ""
+msgstr "套接字族中的各种函数都需要某个小块内存的地址（或者说指针，用 C 语言的术语来说）。[.filename]#sys/socket.h# 中的各种 C 声明将其称为 `struct sockaddr`。该结构体也声明在同一个文件中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:292
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Structure used by kernel to store most\n"
@@ -590,37 +644,40 @@ msgid ""
 "\tchar\t\tsa_data[14];\t/* actually longer; address value */\n"
 "};\n"
 "#define\tSOCK_MAXADDRLEN\t255\t\t/* longest possible addresses */\n"
-msgstr ""
+msgstr "/*\n * Structure used by kernel to store most\n * addresses.\n */\nstruct sockaddr {\n\tunsigned char\tsa_len;\t\t/* total length */\n\tsa_family_t\tsa_family;\t/* address family */\n\tchar\t\tsa_data[14];\t/* actually longer; address value */\n};\n#define\tSOCK_MAXADDRLEN\t255\t\t/* longest possible addresses */\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:296
+#, fuzzy
 msgid ""
 "Please note the _vagueness_ with which the `sa_data` field is declared, just "
 "as an array of `14` bytes, with the comment hinting there can be more than "
 "`14` of them."
-msgstr ""
+msgstr "请注意，`sa_data` 字段的声明十分__含糊__：它只是一个包含 `14` 个字节的数组，而注释则暗示它可能包含超过 `14` 个字节。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:299
+#, fuzzy
 msgid ""
 "This vagueness is quite deliberate. Sockets is a very powerful interface.  "
 "While most people perhaps think of it as nothing more than the Internet "
 "interface-and most applications probably use it for that nowadays-sockets "
 "can be used for just about _any_ kind of interprocess communications, of "
 "which the Internet (or, more precisely, IP) is only one."
-msgstr ""
+msgstr "这种模糊性是有意为之。套接字是一种功能非常强大的接口。虽然大多数人可能认为它不过是 Internet 接口——如今大多数应用程序也可能确实如此使用——但套接字几乎可以用于 __任何__ 类型的进程间通信，而 Internet（更准确地说，是 IP）只是其中一种。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:302
+#, fuzzy
 msgid ""
 "The [.filename]#sys/socket.h# refers to the various types of protocols "
 "sockets will handle as _address families_, and lists them right before the "
 "definition of `sockaddr`:"
-msgstr ""
+msgstr "[.filename]#sys/socket.h# 将套接字要处理的各种协议类型称为__地址族__，并在 `sockaddr` 的定义之前列出它们："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Address families.\n"
@@ -668,31 +725,34 @@ msgid ""
 "#define\tAF_ARP\t\t35\n"
 "#define\tAF_BLUETOOTH\t36\t\t/* Bluetooth sockets */\n"
 "#define\tAF_MAX\t\t37\n"
-msgstr ""
+msgstr "/*\n * Address families.\n */\n#define\tAF_UNSPEC\t0\t\t/* unspecified */\n#define\tAF_LOCAL\t1\t\t/* local to host (pipes, portals) */\n#define\tAF_UNIX\t\tAF_LOCAL\t/* backward compatibility */\n#define\tAF_INET\t\t2\t\t/* internetwork: UDP, TCP, etc. */\n#define\tAF_IMPLINK\t3\t\t/* arpanet imp addresses */\n#define\tAF_PUP\t\t4\t\t/* pup protocols: e.g. BSP */\n#define\tAF_CHAOS\t5\t\t/* mit CHAOS protocols */\n#define\tAF_NS\t\t6\t\t/* XEROX NS protocols */\n#define\tAF_ISO\t\t7\t\t/* ISO protocols */\n#define\tAF_OSI\t\tAF_ISO\n#define\tAF_ECMA\t\t8\t\t/* European computer manufacturers */\n#define\tAF_DATAKIT\t9\t\t/* datakit protocols */\n#define\tAF_CCITT\t10\t\t/* CCITT protocols, X.25 etc */\n#define\tAF_SNA\t\t11\t\t/* IBM SNA */\n#define AF_DECnet\t12\t\t/* DECnet */\n#define AF_DLI\t\t13\t\t/* DEC Direct data link interface */\n#define AF_LAT\t\t14\t\t/* LAT */\n#define\tAF_HYLINK\t15\t\t/* NSC Hyperchannel */\n#define\tAF_APPLETALK\t16\t\t/* Apple Talk */\n#define\tAF_ROUTE\t17\t\t/* Internal Routing Protocol */\n#define\tAF_LINK\t\t18\t\t/* Link layer interface */\n#define\tpseudo_AF_XTP\t19\t\t/* eXpress Transfer Protocol (no AF) */\n#define\tAF_COIP\t\t20\t\t/* connection-oriented IP, aka ST II */\n#define\tAF_CNT\t\t21\t\t/* Computer Network Technology */\n#define pseudo_AF_RTIP\t22\t\t/* Help Identify RTIP packets */\n#define\tAF_IPX\t\t23\t\t/* Novell Internet Protocol */\n#define\tAF_SIP\t\t24\t\t/* Simple Internet Protocol */\n#define\tpseudo_AF_PIP\t25\t\t/* Help Identify PIP packets */\n#define\tAF_ISDN\t\t26\t\t/* Integrated Services Digital Network*/\n#define\tAF_E164\t\tAF_ISDN\t\t/* CCITT E.164 recommendation */\n#define\tpseudo_AF_KEY\t27\t\t/* Internal key-management function */\n#define\tAF_INET6\t28\t\t/* IPv6 */\n#define\tAF_NATM\t\t29\t\t/* native ATM access */\n#define\tAF_ATM\t\t30\t\t/* ATM */\n#define pseudo_AF_HDRCMPLT 31\t\t/* Used by BPF to not rewrite headers\n\t\t\t\t\t * in interface output routine\n\t\t\t\t\t */\n#define\tAF_NETGRAPH\t32\t\t/* Netgraph sockets */\n#define\tAF_SLOW\t\t33\t\t/* 802.3ad slow protocol */\n#define\tAF_SCLUSTER\t34\t\t/* Sitara cluster protocol */\n#define\tAF_ARP\t\t35\n#define\tAF_BLUETOOTH\t36\t\t/* Bluetooth sockets */\n#define\tAF_MAX\t\t37\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:355
+#, fuzzy
 msgid "The one used for IP is AF_INET.  It is a symbol for the constant `2`."
-msgstr ""
+msgstr "用于 IP 的地址族是 AF_INET。它是常量 `2` 的符号名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:357
+#, fuzzy
 msgid ""
 "It is the _address family_ listed in the `sa_family` field of `sockaddr` "
 "that decides how exactly the vaguely named bytes of `sa_data` will be used."
-msgstr ""
+msgstr "`sockaddr` 的 `sa_family` 字段中列出的__地址族__，决定了 `sa_data` 中这些名称含义模糊的字节具体如何使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:359
+#, fuzzy
 msgid ""
 "Specifically, whenever the _address family_ is AF_INET, we can use `struct "
 "sockaddr_in` found in [.filename]#netinet/in.h#, wherever `sockaddr` is "
 "expected:"
-msgstr ""
+msgstr "具体来说，只要__地址族__是 AF_INET，就可以在需要 `sockaddr` 的地方使用 [.filename]#netinet/in.h# 中定义的 `struct sockaddr_in`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:372
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Socket address, internet style.\n"
@@ -704,36 +764,39 @@ msgid ""
 "\tstruct\tin_addr sin_addr;\n"
 "\tchar\tsin_zero[8];\n"
 "};\n"
-msgstr ""
+msgstr "/*\n * Socket address, internet style.\n */\nstruct sockaddr_in {\n\tuint8_t\t\tsin_len;\n\tsa_family_t\tsin_family;\n\tin_port_t\tsin_port;\n\tstruct\tin_addr sin_addr;\n\tchar\tsin_zero[8];\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:375
+#, fuzzy
 msgid "We can visualize its organization this way:"
-msgstr ""
+msgstr "可以这样直观地表示它的组织结构："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sockaddr_in structure"
-msgstr ""
+msgstr "sockaddr_in 结构"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sain.png"
-msgstr ""
+msgstr "sain.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:380
+#, fuzzy
 msgid ""
 "The three important fields are `sin_family`, which is byte 1 of the "
 "structure, `sin_port`, a 16-bit value found in bytes 2 and 3, and "
 "`sin_addr`, a 32-bit integer representation of the IP address, stored in "
 "bytes 4-7."
-msgstr ""
+msgstr "三个重要字段分别是 `sin_family`（结构的第 1 个字节）、`sin_port`（位于第 2 和第 3 个字节的 16 位值），以及 `sin_addr`（IP 地址的 32 位整数表示，存储在第 4 到第 7 个字节中）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:386
+#, fuzzy
 msgid ""
 "Now, let us try to fill it out.  Let us assume we are trying to write a "
 "client for the _daytime_ protocol, which simply states that its server will "
@@ -742,30 +805,31 @@ msgid ""
 "field.  `AF_INET` is defined as `2`.  Let us use the IP address of "
 "`132.163.96.1`, which is the time server of US federal government (`time."
 "nist.gov`)."
-msgstr ""
+msgstr "现在，让我们试着填写它。假设我们要为 __daytime__ 协议编写一个客户端，该协议规定服务器会将表示当前日期和时间的文本字符串写入 13 端口。我们要使用 TCP/IP，因此需要在地址族字段中指定 `AF_INET`。`AF_INET` 定义为 `2`。我们使用 IP 地址 `132.163.96.1`，它是美国联邦政府的时间服务器（`time.nist.gov`）的地址。"
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Specific example of sockaddr_in"
-msgstr ""
+msgstr "sockaddr_in 的具体示例"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:388
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sainfill.png"
-msgstr ""
+msgstr "sainfill.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:391
+#, fuzzy
 msgid ""
 "By the way the `sin_addr` field is declared as being of the `struct in_addr` "
 "type, which is defined in [.filename]#netinet/in.h#:"
-msgstr ""
+msgstr "顺便说一下，`sin_addr` 字段声明为 `struct in_addr` 类型，该类型定义在 [.filename]#netinet/in.h# 中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Internet address (a structure for historical reasons)\n"
@@ -773,127 +837,141 @@ msgid ""
 "struct in_addr {\n"
 "\tin_addr_t s_addr;\n"
 "};\n"
-msgstr ""
+msgstr "/*\n * Internet address (a structure for historical reasons)\n */\nstruct in_addr {\n\tin_addr_t s_addr;\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:403
+#, fuzzy
 msgid "In addition, `in_addr_t` is a 32-bit integer."
-msgstr ""
+msgstr "此外，`in_addr_t` 是一个 32 位整数。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:405
+#, fuzzy
 msgid ""
 "The `132.163.96.1` is just a convenient notation of expressing a 32-bit "
 "integer by listing all of its 8-bit bytes, starting with the _most "
 "significant_ one."
-msgstr ""
+msgstr "`132.163.96.1` 只是表示 32 位整数的一种便捷记法：从__最高有效__字节开始，依次列出每个 8 位字节。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:409
+#, fuzzy
 msgid ""
 "So far, we have viewed `sockaddr` as an abstraction.  Our computer does not "
 "store `short` integers as a single 16-bit entity, but as a sequence of 2 "
 "bytes.  Similarly, it stores 32-bit integers as a sequence of 4 bytes."
-msgstr ""
+msgstr "到目前为止，我们一直把 `sockaddr` 看作一种抽象。计算机不会将 `short` 整数存储为单个 16 位实体，而是存储为 2 个字节的序列。同样，它会将 32 位整数存储为 4 个字节的序列。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:411
+#, fuzzy
 msgid "Suppose we coded something like this:"
-msgstr ""
+msgstr "假设我们编写了如下代码："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:417
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sa.sin_family      = AF_INET;\n"
 "sa.sin_port        = 13;\n"
 "sa.sin_addr.s_addr = (((((132 << 8) | 163) << 8) | 96) << 8) | 1;\n"
-msgstr ""
+msgstr "sa.sin_family      = AF_INET;\nsa.sin_port        = 13;\nsa.sin_addr.s_addr = (((((132 << 8) | 163) << 8) | 96) << 8) | 1;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:420
+#, fuzzy
 msgid "What would the result look like?"
-msgstr ""
+msgstr "结果会是什么样子？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:423
+#, fuzzy
 msgid ""
 "Well, that depends, of course.  On a Pentium(R), or other x86, based "
 "computer, it would look like this:"
-msgstr ""
+msgstr "当然，这取决于具体情况。在 Pentium(R) 或其他基于 x86 的计算机上，结果会是这样："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sockaddr_in on an Intel system"
-msgstr ""
+msgstr "Intel 系统上的 sockaddr_in"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:425
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:471
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sainlsb.png"
-msgstr ""
+msgstr "sainlsb.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:428
+#, fuzzy
 msgid "On a different system, it might look like this:"
-msgstr ""
+msgstr "在另一种系统上，结果可能是这样："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:429
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sockaddr_in on an MSB system"
-msgstr ""
+msgstr "MSB 系统上的 sockaddr_in"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:430
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:476
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sainmsb.png"
-msgstr ""
+msgstr "sainmsb.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:434
+#, fuzzy
 msgid ""
 "And on a PDP it might look different yet.  But the above two are the most "
 "common ways in use today."
-msgstr ""
+msgstr "在 PDP 上，结果可能又有所不同。不过，上述两种是目前最常见的方式。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:438
+#, fuzzy
 msgid ""
 "Ordinarily, wanting to write portable code, programmers pretend that these "
 "differences do not exist.  And they get away with it (except when they code "
 "in assembly language).  Alas, you cannot get away with it that easily when "
 "coding for sockets."
-msgstr ""
+msgstr "通常，为了编写可移植的代码，程序员会假装这些差异并不存在。而且他们确实能做到（除非用汇编语言编程）。遗憾的是，编写套接字代码时就没那么容易了。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:440
+#, fuzzy
 msgid "Why?"
-msgstr ""
+msgstr "为什么？"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:442
+#, fuzzy
 msgid ""
 "Because when communicating with another computer, you usually do not know "
 "whether it stores data _most significant byte_ (MSB) or _least significant "
 "byte_ (LSB) first."
-msgstr ""
+msgstr "因为与另一台计算机通信时，通常不知道它是以__最高有效字节__（MSB）还是__最低有效字节__（LSB）在前的顺序存储数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:444
+#, fuzzy
 msgid "You might be wondering, _\"So, will sockets not handle it for me?\"_"
-msgstr ""
+msgstr "你可能会想：__“那么，套接字不会替我处理这个问题吗？”__"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:446
+#, fuzzy
 msgid "It will not."
-msgstr ""
+msgstr "不会。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:449
+#, fuzzy
 msgid ""
 "While that answer may surprise you at first, remember that the general "
 "sockets interface only understands the `sa_len` and `sa_family` fields of "
@@ -901,130 +979,144 @@ msgid ""
 "there (of course, on FreeBSD `sa_family` is only 1 byte anyway, but many "
 "other UNIX(R) systems do not have `sa_len` and use 2 bytes for `sa_family`, "
 "and expect the data in whatever order is native to the computer)."
-msgstr ""
+msgstr "这个回答乍听之下可能让你惊讶，但请记住，通用套接字接口只理解 `sockaddr` 结构中的 `sa_len` 和 `sa_family` 字段。你不必担心这两个字段的字节序（当然，在 FreeBSD 上，`sa_family` 只有 1 个字节；但许多其他 UNIX(R) 系统没有 `sa_len`，并使用 2 个字节表示 `sa_family`，且要求数据采用计算机本机的字节序）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:452
+#, fuzzy
 msgid ""
 "But the rest of the data is just `sa_data[14]` as far as sockets goes.  "
 "Depending on the _address family_, sockets just forwards that data to its "
 "destination."
-msgstr ""
+msgstr "但对套接字而言，其余数据只是 `sa_data[14]`。套接字会根据__地址族__，将这些数据直接转发到目的地。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:457
+#, fuzzy
 msgid ""
 "Indeed, when we enter a port number, it is because we want the other "
 "computer to know what service we are asking for.  And, when we are the "
 "server, we read the port number so we know what service the other computer "
 "is expecting from us.  Either way, sockets only has to forward the port "
 "number as data.  It does not interpret it in any way."
-msgstr ""
+msgstr "实际上，我们填写端口号，是为了让另一台计算机知道我们请求的是哪项服务。而作为服务器时，我们读取端口号，以便知道另一台计算机期望我们提供哪项服务。无论哪种情况，套接字只需将端口号作为数据转发，不会以任何方式解释它。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:460
+#, fuzzy
 msgid ""
 "Similarly, we enter the IP address to tell everyone on the way where to send "
 "our data to.  Sockets, again, only forwards it as data."
-msgstr ""
+msgstr "同样，我们填写 IP 地址，是为了告诉沿途的所有设备应该将数据发送到哪里。套接字也只会将它作为数据转发。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:462
+#, fuzzy
 msgid ""
 "That is why, we (the _programmers_, not the _sockets_) have to distinguish "
 "between the byte order used by our computer and a conventional byte order to "
 "send the data in to the other computer."
-msgstr ""
+msgstr "因此，我们（__程序员__，而不是__套接字__）必须区分计算机使用的字节序，以及发送给另一台计算机时采用的标准字节序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:464
+#, fuzzy
 msgid ""
 "We will call the byte order our computer uses the _host byte order_, or just "
 "the _host order_."
-msgstr ""
+msgstr "我们将计算机使用的字节序称为__主机字节序__，或简称__主机序__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:467
+#, fuzzy
 msgid ""
 "There is a convention of sending the multi-byte data over IP _MSB first_.  "
 "This, we will refer to as the _network byte order_, or simply the _network "
 "order_."
-msgstr ""
+msgstr "通过 IP 发送多字节数据时，约定使用 MSB 在前的顺序。我们将其称为__网络字节序__，或简称__网络序__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:469
+#, fuzzy
 msgid ""
 "Now, if we compiled the above code for an Intel based computer, our _host "
 "byte order_ would produce:"
-msgstr ""
+msgstr "现在，如果我们为基于 Intel 的计算机编译上述代码，得到的__主机字节序__会是："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Host byte order on an Intel system"
-msgstr ""
+msgstr "Intel 系统上的主机字节序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:474
+#, fuzzy
 msgid "But the _network byte order_ requires that we store the data MSB first:"
-msgstr ""
+msgstr "但__网络字节序__要求数据以 MSB 在前的顺序存储："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:475
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Network byte order"
-msgstr ""
+msgstr "网络字节序"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:479
+#, fuzzy
 msgid ""
 "Unfortunately, our _host order_ is the exact opposite of the _network order_."
-msgstr ""
+msgstr "遗憾的是，我们的__主机序__与__网络序__恰好相反。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:482
+#, fuzzy
 msgid ""
 "We have several ways of dealing with it.  One would be to _reverse_ the "
 "values in our code:"
-msgstr ""
+msgstr "有几种处理方法。一种方法是在代码中将值__反转__："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:488
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sa.sin_family      = AF_INET;\n"
 "sa.sin_port        = 13 << 8;\n"
 "sa.sin_addr.s_addr = (((((1 << 8) | 96) << 8) | 163) << 8) | 132;\n"
-msgstr ""
+msgstr "sa.sin_family      = AF_INET;\nsa.sin_port        = 13 << 8;\nsa.sin_addr.s_addr = (((((1 << 8) | 96) << 8) | 163) << 8) | 132;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:493
+#, fuzzy
 msgid ""
 "This will _trick_ our compiler into storing the data in the _network byte "
 "order_.  In some cases, this is exactly the way to do it (e.g., when "
 "programming in assembly language).  In most cases, however, it can cause a "
 "problem."
-msgstr ""
+msgstr "这样会__诱使__编译器以__网络字节序__存储数据。在某些情况下，这正是正确的做法（例如，使用汇编语言编程时）。不过，在大多数情况下，这会导致问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:497
+#, fuzzy
 msgid ""
 "Suppose, you wrote a sockets-based program in C.  You know it is going to "
 "run on a Pentium(R), so you enter all your constants in reverse and force "
 "them to the _network byte order_.  It works well."
-msgstr ""
+msgstr "假设你用 C 编写了一个基于套接字的程序。你知道它会运行在 Pentium(R) 上，于是将所有常量都反向填写，强制它们采用__网络字节序__。程序运行良好。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:502
+#, fuzzy
 msgid ""
 "Then, some day, your trusted old Pentium(R) becomes a rusty old Pentium(R).  "
 "You replace it with a system whose _host order_ is the same as the _network "
 "order_.  You need to recompile all your software.  All of your software "
 "continues to perform well, except the one program you wrote."
-msgstr ""
+msgstr "后来有一天，你那台可靠的旧 Pentium(R) 变成了锈迹斑斑的老机器。你换上一台__主机序__与__网络序__相同的系统。你需要重新编译所有软件。所有软件仍然运行良好，唯独你编写的那个程序出问题了。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:506
+#, fuzzy
 msgid ""
 "You have since forgotten that you had forced all of your constants to the "
 "opposite of the _host order_.  You spend some quality time tearing out your "
@@ -1032,115 +1124,125 @@ msgid ""
 "up), hitting your monitor with a nerf bat, and performing all the other "
 "traditional ceremonies of trying to figure out why something that has worked "
 "so well is suddenly not working at all."
-msgstr ""
+msgstr "你早已忘记自己曾将所有常量强制设为与__主机序__相反的顺序。你花了不少时间揪头发，骂遍了听说过的所有神明（还有一些自己编出来的），用软泡沫球棒敲打显示器，并举行其他种种传统仪式，试图弄清楚为什么原本运行良好的程序突然彻底失灵。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:508
+#, fuzzy
 msgid ""
 "Eventually, you figure it out, say a couple of swear words, and start "
 "rewriting your code."
-msgstr ""
+msgstr "最后，你终于找到了原因，骂了几句，然后开始重写代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:511
+#, fuzzy
 msgid ""
 "Luckily, you are not the first one to face the problem.  Someone else has "
 "created the man:htons[3] and man:htonl[3] C functions to convert a `short` "
 "and `long` respectively from the _host byte order_ to the _network byte "
 "order_, and the man:ntohs[3] and man:ntohl[3] C functions to go the other "
 "way."
-msgstr ""
+msgstr "幸运的是，你并不是第一个遇到这个问题的人。有人编写了 man:htons[3] 和 man:htonl[3] 这两个 C 函数，分别将 `short` 和 `long` 从__主机字节序__转换为__网络字节序__；还编写了 man:ntohs[3] 和 man:ntohl[3]，用于反向转换。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:514
+#, fuzzy
 msgid ""
 "On _MSB-first_ systems these functions do nothing.  On _LSB-first_ systems "
 "they convert values to the proper order."
-msgstr ""
+msgstr "在__MSB 在前__的系统上，这些函数不做任何处理。在__LSB 在前__的系统上，它们会将值转换为正确的顺序。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:516
+#, fuzzy
 msgid ""
 "So, regardless of what system your software is compiled on, your data will "
 "end up in the correct order if you use these functions."
-msgstr ""
+msgstr "因此，无论软件在哪种系统上编译，只要使用这些函数，数据最终都会采用正确的顺序。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:518
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Client Functions"
-msgstr ""
+msgstr "客户端函数"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:523
+#, fuzzy
 msgid ""
 "Typically, the client initiates the connection to the server.  The client "
 "knows which server it is about to call: It knows its IP address, and it "
 "knows the _port_ the server resides at.  It is akin to you picking up the "
 "phone and dialing the number (the _address_), then, after someone answers, "
 "asking for the person in charge of wingdings (the _port_)."
-msgstr ""
+msgstr "通常由客户端发起与服务器的连接。客户端知道即将联系哪台服务器：它知道服务器的 IP 地址，也知道服务器所在的__端口__。这就像你拿起电话拨打号码（__地址__），有人接听后，再询问负责 wingdings 的人（__端口__）。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:525
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`connect`"
-msgstr ""
+msgstr "`connect`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:528
+#, fuzzy
 msgid ""
 "Once a client has created a socket, it needs to connect it to a specific "
 "port on a remote system. It uses man:connect[2]:"
-msgstr ""
+msgstr "客户端创建套接字后，需要将其连接到远程系统上的特定端口。它使用 man:connect[2]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:532
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int connect(int s, const struct sockaddr *name, socklen_t namelen);\n"
-msgstr ""
+msgstr "int connect(int s, const struct sockaddr *name, socklen_t namelen);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:537
+#, fuzzy
 msgid ""
 "The `s` argument is the socket, i.e., the value returned by the `socket` "
 "function.  The `name` is a pointer to `sockaddr`, the structure we have "
 "talked about extensively.  Finally, `namelen` informs the system how many "
 "bytes are in our `sockaddr` structure."
-msgstr ""
+msgstr "参数 `s` 是套接字，即 `socket` 函数返回的值。`name` 是指向 `sockaddr` 的指针，也就是我们已经详细讨论过的那个结构。最后，`namelen` 告诉系统我们的 `sockaddr` 结构包含多少字节。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:540
+#, fuzzy
 msgid ""
 "If `connect` is successful, it returns `0`.  Otherwise it returns `-1` and "
 "stores the error code in `errno`."
-msgstr ""
+msgstr "如果 `connect` 成功，它会返回 `0`。否则会返回 `-1`，并将错误代码存入 `errno`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:544
+#, fuzzy
 msgid ""
 "There are many reasons why `connect` may fail.  For example, with an attempt "
 "to an Internet connection, the IP address may not exist, or it may be down, "
 "or just too busy, or it may not have a server listening at the specified "
 "port.  Or it may outright _refuse_ any request for specific code."
-msgstr ""
+msgstr "`connect` 失败的原因有很多。例如，尝试建立 Internet 连接时，IP 地址可能不存在、连接可能已断开或过于繁忙，也可能指定端口上没有服务器在侦听。或者，服务器可能会直接__拒绝__特定代码的请求。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:546
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Our First Client"
-msgstr ""
+msgstr "我们的第一个客户端"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:549
+#, fuzzy
 msgid ""
 "We now know enough to write a very simple client, one that will get current "
 "time from `132.163.96.1` and print it to [.filename]#stdout#."
-msgstr ""
+msgstr "现在，我们已经掌握了足够的知识，可以编写一个非常简单的客户端：从 `132.163.96.1` 获取当前时间，并将其打印到 [.filename]#stdout#。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * daytime.c\n"
@@ -1153,39 +1255,39 @@ msgid ""
 "#include <sys/socket.h>\n"
 "#include <netinet/in.h>\n"
 "#include <unistd.h>\n"
-msgstr ""
+msgstr "/*\n * daytime.c\n *\n * Programmed by G. Adam Stanislav\n */\n#include <stdio.h>\n#include <string.h>\n#include <sys/types.h>\n#include <sys/socket.h>\n#include <netinet/in.h>\n#include <unistd.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int main() {\n"
 "  int s, bytes;\n"
 "  struct sockaddr_in sa;\n"
 "  char buffer[BUFSIZ+1];\n"
-msgstr ""
+msgstr "int main() {\n  int s, bytes;\n  struct sockaddr_in sa;\n  char buffer[BUFSIZ+1];\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:573
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:992
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  if ((s = socket(PF_INET, SOCK_STREAM, 0)) < 0) {\n"
 "    perror(\"socket\");\n"
 "    return 1;\n"
 "  }\n"
-msgstr ""
+msgstr "  if ((s = socket(PF_INET, SOCK_STREAM, 0)) < 0) {\n    perror(\"socket\");\n    return 1;\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:575
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:994
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  memset(&sa, '\\0', sizeof(sa));\n"
-msgstr ""
+msgstr "  memset(&sa, '\\0', sizeof(sa));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:584
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  sa.sin_family = AF_INET;\n"
 "  sa.sin_port = htons(13);\n"
@@ -1195,263 +1297,283 @@ msgid ""
 "    close(s);\n"
 "    return 2;\n"
 "  }\n"
-msgstr ""
+msgstr "  sa.sin_family = AF_INET;\n  sa.sin_port = htons(13);\n  sa.sin_addr.s_addr = htonl((((((132 << 8) | 163) << 8) | 96) << 8) | 1);\n  if (connect(s, (struct sockaddr *)&sa, sizeof sa) < 0) {\n    perror(\"connect\");\n    close(s);\n    return 2;\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:587
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  while ((bytes = read(s, buffer, BUFSIZ)) > 0)\n"
 "    write(1, buffer, bytes);\n"
-msgstr ""
+msgstr "  while ((bytes = read(s, buffer, BUFSIZ)) > 0)\n    write(1, buffer, bytes);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:591
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1018
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  close(s);\n"
 "  return 0;\n"
 "}\n"
-msgstr ""
+msgstr "  close(s);\n  return 0;\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:594
+#, fuzzy
 msgid ""
 "Go ahead, enter it in your editor, save it as [.filename]#daytime.c#, then "
 "compile and run it:"
-msgstr ""
+msgstr "现在，请在编辑器中输入这段代码，将其保存为 [.filename]#daytime.c#，然后编译并运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cc -O3 -o daytime daytime.c\n"
 "% ./daytime\n"
-msgstr ""
+msgstr "% cc -O3 -o daytime daytime.c\n% ./daytime\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:602
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "52079 01-06-19 02:29:25 50 0 1 543.9 UTC(NIST) *\n"
 "%\n"
-msgstr ""
+msgstr "52079 01-06-19 02:29:25 50 0 1 543.9 UTC(NIST) *\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:606
+#, fuzzy
 msgid ""
 "In this case, the date was June 19, 2001, the time was 02:29:25 UTC.  "
 "Naturally, your results will vary."
-msgstr ""
+msgstr "在这个例子中，日期是 2001 年 6 月 19 日，时间是 UTC 02:29:25。当然，您的结果可能有所不同。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:608
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Server Functions"
-msgstr ""
+msgstr "服务器函数"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:614
+#, fuzzy
 msgid ""
 "The typical server does not initiate the connection.  Instead, it waits for "
 "a client to call it and request services.  It does not know when the client "
 "will call, nor how many clients will call.  It may be just sitting there, "
 "waiting patiently, one moment, The next moment, it can find itself swamped "
 "with requests from a number of clients, all calling in at the same time."
-msgstr ""
+msgstr "典型的服务器不会主动发起连接，而是等待客户端调用它并请求服务。服务器不知道客户端何时会调用，也不知道会有多少客户端调用。它可能某一刻还安静地坐在那里耐心等待，下一刻却发现自己被许多同时发来请求的客户端淹没。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:616
+#, fuzzy
 msgid "The sockets interface offers three basic functions to handle this."
-msgstr ""
+msgstr "套接字接口提供了三个基本函数来处理这种情况。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`bind`"
-msgstr ""
+msgstr "`bind`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:621
+#, fuzzy
 msgid ""
 "Ports are like extensions to a phone line: After you dial a number, you dial "
 "the extension to get to a specific person or department."
-msgstr ""
+msgstr "端口就像电话线路的分机：拨通号码后，还要拨分机号才能联系到特定的人或部门。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:625
+#, fuzzy
 msgid ""
 "There are 65535 IP ports, but a server usually processes requests that come "
 "in on only one of them.  It is like telling the phone room operator that we "
 "are now at work and available to answer the phone at a specific extension.  "
 "We use man:bind[2] to tell sockets which port we want to serve."
-msgstr ""
+msgstr "IP 端口共有 65535 个，但服务器通常只处理其中一个端口收到的请求。这就像告诉电话总机操作员，我们现在已经开始工作，可以通过某个特定分机接听电话。我们使用 man:bind[2] 告诉套接字要服务哪个端口。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:629
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int bind(int s, const struct sockaddr *addr, socklen_t addrlen);\n"
-msgstr ""
+msgstr "int bind(int s, const struct sockaddr *addr, socklen_t addrlen);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:634
+#, fuzzy
 msgid ""
 "Beside specifying the port in `addr`, the server may include its IP "
 "address.  However, it can just use the symbolic constant INADDR_ANY to "
 "indicate it will serve all requests to the specified port regardless of what "
 "its IP address is.  This symbol, along with several similar ones, is "
 "declared in [.filename]#netinet/in.h#"
-msgstr ""
+msgstr "除了在 `addr` 中指定端口外，服务器还可以指定自己的 IP 地址。不过，它也可以使用符号常量 INADDR_ANY，表示无论自己的 IP 地址是什么，都会处理发往指定端口的所有请求。这个符号以及其他几个类似符号都在 [.filename]#netinet/in.h# 中声明。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#define\tINADDR_ANY\t\t(u_int32_t)0x00000000\n"
-msgstr ""
+msgstr "#define\tINADDR_ANY\t\t(u_int32_t)0x00000000\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:643
+#, fuzzy
 msgid ""
 "Suppose we were writing a server for the _daytime_ protocol over TCP/IP.  "
 "Recall that it uses port 13.  Our `sockaddr_in` structure would look like "
 "this:"
-msgstr ""
+msgstr "假设我们要编写一个通过 TCP/IP 提供 __daytime__ 协议服务的服务器。请记住，它使用端口 13。我们的 `sockaddr_in` 结构如下："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:644
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example Server sockaddr_in"
-msgstr ""
+msgstr "示例服务器 sockaddr_in"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sainserv.png"
-msgstr ""
+msgstr "sainserv.png"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:648
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`listen`"
-msgstr ""
+msgstr "`listen`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:652
+#, fuzzy
 msgid ""
 "To continue our office phone analogy, after you have told the phone central "
 "operator what extension you will be at, you now walk into your office, and "
 "make sure your own phone is plugged in and the ringer is turned on.  Plus, "
 "you make sure your call waiting is activated, so you can hear the phone ring "
 "even while you are talking to someone."
-msgstr ""
+msgstr "继续使用办公室电话的类比：告诉电话总机操作员您所在的分机后，您就走进办公室，确保自己的电话已接通并打开铃声。此外，还要确保已启用呼叫等待功能，这样即使正在与人通话，也能听到电话铃声。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:654
+#, fuzzy
 msgid "The server ensures all of that with the man:listen[2] function."
-msgstr ""
+msgstr "服务器通过 man:listen[2] 函数完成这些操作。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:658
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int listen(int s, int backlog);\n"
-msgstr ""
+msgstr "int listen(int s, int backlog);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:662
+#, fuzzy
 msgid ""
 "In here, the `backlog` variable tells sockets how many incoming requests to "
 "accept while you are busy processing the last request.  In other words, it "
 "determines the maximum size of the queue of pending connections."
-msgstr ""
+msgstr "这里的 `backlog` 变量告诉套接字：您忙于处理上一个请求时，要接受多少个传入请求。换句话说，它决定了待处理连接队列的最大长度。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:664
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`accept`"
-msgstr ""
+msgstr "`accept`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:669
+#, fuzzy
 msgid ""
 "After you hear the phone ringing, you accept the call by answering the "
 "call.  You have now established a connection with your client.  This "
 "connection remains active until either you or your client hang up."
-msgstr ""
+msgstr "听到电话铃响后，您接起电话接受来电。此时，您已经与客户端建立了连接。该连接会一直保持活动状态，直到您或客户端挂断。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:671
+#, fuzzy
 msgid "The server accepts the connection by using the man:accept[2] function."
-msgstr ""
+msgstr "服务器使用 man:accept[2] 函数接受连接。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:675
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int accept(int s, struct sockaddr *addr, socklen_t *addrlen);\n"
-msgstr ""
+msgstr "int accept(int s, struct sockaddr *addr, socklen_t *addrlen);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:679
+#, fuzzy
 msgid ""
 "Note that this time `addrlen` is a pointer.  This is necessary because in "
 "this case it is the socket that fills out `addr`, the `sockaddr_in` "
 "structure."
-msgstr ""
+msgstr "请注意，这次 `addrlen` 是一个指针。这是必要的，因为此处由套接字填写 `addr`，也就是 `sockaddr_in` 结构。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:683
+#, fuzzy
 msgid ""
 "The return value is an integer.  Indeed, the `accept` returns a _new "
 "socket_.  You will use this new socket to communicate with the client."
-msgstr ""
+msgstr "返回值是一个整数。实际上，`accept` 会返回一个__新套接字__。您将使用这个新套接字与客户端通信。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:685
+#, fuzzy
 msgid ""
 "What happens to the old socket? It continues to listen for more requests "
 "(remember the `backlog` variable we passed to `listen`?) until we `close` it."
-msgstr ""
+msgstr "旧套接字会怎样？它会继续监听更多请求（还记得我们传给 `listen` 的 `backlog` 变量吗？），直到我们对它调用 `close`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:689
+#, fuzzy
 msgid ""
 "Now, the new socket is meant only for communications.  It is fully "
 "connected.  We cannot pass it to `listen` again, trying to accept additional "
 "connections."
-msgstr ""
+msgstr "此时，新套接字仅用于通信。它已经完全连接，不能再将它传给 `listen`，以尝试接受其他连接。"
 
 #. type: Title =====
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:691
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Our First Server"
-msgstr ""
+msgstr "我们的第一个服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:695
+#, fuzzy
 msgid ""
 "Our first server will be somewhat more complex than our first client was: "
 "Not only do we have more sockets functions to use, but we need to write it "
 "as a daemon."
-msgstr ""
+msgstr "我们的第一个服务器比第一个客户端复杂一些：不仅要使用更多套接字函数，还需要将它编写为守护进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:698
+#, fuzzy
 msgid ""
 "This is best achieved by creating a _child process_ after binding the port.  "
 "The main process then exits and returns control to the shell (or whatever "
 "program invoked it)."
-msgstr ""
+msgstr "最好的做法是在绑定端口后创建一个__子进程__。随后，主进程退出并将控制权交还给 shell（或调用它的其他程序）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:700
+#, fuzzy
 msgid ""
 "The child calls `listen`, then starts an endless loop, which accepts a "
 "connection, serves it, and eventually closes its socket."
-msgstr ""
+msgstr "子进程调用 `listen`，然后进入无限循环：接受连接、为客户端提供服务，最后关闭套接字。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:716
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * daytimed - a port 13 server\n"
@@ -1466,17 +1588,17 @@ msgid ""
 "#include <sys/types.h>\n"
 "#include <sys/socket.h>\n"
 "#include <netinet/in.h>\n"
-msgstr ""
+msgstr "/*\n * daytimed - a port 13 server\n *\n * Programmed by G. Adam Stanislav\n * June 19, 2001\n */\n#include <stdio.h>\n#include <string.h>\n#include <time.h>\n#include <unistd.h>\n#include <sys/types.h>\n#include <sys/socket.h>\n#include <netinet/in.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:718
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#define BACKLOG 4\n"
-msgstr ""
+msgstr "#define BACKLOG 4\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:726
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int main() {\n"
 "    int s, c;\n"
@@ -1485,53 +1607,53 @@ msgid ""
 "    time_t t;\n"
 "    struct tm *tm;\n"
 "    FILE *client;\n"
-msgstr ""
+msgstr "int main() {\n    int s, c;\n    socklen_t b;\n    struct sockaddr_in sa;\n    time_t t;\n    struct tm *tm;\n    FILE *client;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:731
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    if ((s = socket(PF_INET, SOCK_STREAM, 0)) < 0) {\n"
 "        perror(\"socket\");\n"
 "        return 1;\n"
 "    }\n"
-msgstr ""
+msgstr "    if ((s = socket(PF_INET, SOCK_STREAM, 0)) < 0) {\n        perror(\"socket\");\n        return 1;\n    }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:733
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "    memset(&sa, '\\0', sizeof(sa));\n"
-msgstr ""
+msgstr "    memset(&sa, '\\0', sizeof(sa));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:736
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    sa.sin_family = AF_INET;\n"
 "    sa.sin_port   = htons(13);\n"
-msgstr ""
+msgstr "    sa.sin_family = AF_INET;\n    sa.sin_port   = htons(13);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:739
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    if (INADDR_ANY)\n"
 "        sa.sin_addr.s_addr = htonl(INADDR_ANY);\n"
-msgstr ""
+msgstr "    if (INADDR_ANY)\n        sa.sin_addr.s_addr = htonl(INADDR_ANY);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:744
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    if (bind(s, (struct sockaddr *)&sa, sizeof sa) < 0) {\n"
 "        perror(\"bind\");\n"
 "        return 2;\n"
 "    }\n"
-msgstr ""
+msgstr "    if (bind(s, (struct sockaddr *)&sa, sizeof sa) < 0) {\n        perror(\"bind\");\n        return 2;\n    }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:755
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    switch (fork()) {\n"
 "        case -1:\n"
@@ -1543,55 +1665,55 @@ msgid ""
 "        case 0:\n"
 "            break;\n"
 "    }\n"
-msgstr ""
+msgstr "    switch (fork()) {\n        case -1:\n            perror(\"fork\");\n            return 3;\n        default:\n            close(s);\n            return 0;\n        case 0:\n            break;\n    }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "    listen(s, BACKLOG);\n"
-msgstr ""
+msgstr "    listen(s, BACKLOG);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:760
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    for (;;) {\n"
 "        b = sizeof sa;\n"
-msgstr ""
+msgstr "    for (;;) {\n        b = sizeof sa;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:765
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        if ((c = accept(s, (struct sockaddr *)&sa, &b)) < 0) {\n"
 "            perror(\"daytimed accept\");\n"
 "            return 4;\n"
 "        }\n"
-msgstr ""
+msgstr "        if ((c = accept(s, (struct sockaddr *)&sa, &b)) < 0) {\n            perror(\"daytimed accept\");\n            return 4;\n        }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:770
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        if ((client = fdopen(c, \"w\")) == NULL) {\n"
 "            perror(\"daytimed fdopen\");\n"
 "            return 5;\n"
 "        }\n"
-msgstr ""
+msgstr "        if ((client = fdopen(c, \"w\")) == NULL) {\n            perror(\"daytimed fdopen\");\n            return 5;\n        }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        if ((t = time(NULL)) < 0) {\n"
 "            perror(\"daytimed time\");\n"
 "            return 6;\n"
 "        }\n"
-msgstr ""
+msgstr "        if ((t = time(NULL)) < 0) {\n            perror(\"daytimed time\");\n            return 6;\n        }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:784
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        tm = gmtime(&t);\n"
 "        fprintf(client, \"%.4i-%.2i-%.2iT%.2i:%.2i:%.2iZ\\n\",\n"
@@ -1601,34 +1723,36 @@ msgid ""
 "            tm->tm_hour,\n"
 "            tm->tm_min,\n"
 "            tm->tm_sec);\n"
-msgstr ""
+msgstr "        tm = gmtime(&t);\n        fprintf(client, \"%.4i-%.2i-%.2iT%.2i:%.2i:%.2iZ\\n\",\n            tm->tm_year + 1900,\n            tm->tm_mon + 1,\n            tm->tm_mday,\n            tm->tm_hour,\n            tm->tm_min,\n            tm->tm_sec);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:788
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        fclose(client);\n"
 "    }\n"
 "}\n"
-msgstr ""
+msgstr "        fclose(client);\n    }\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:793
+#, fuzzy
 msgid ""
 "We start by creating a socket.  Then we fill out the `sockaddr_in` structure "
 "in `sa`.  Note the conditional use of INADDR_ANY:"
-msgstr ""
+msgstr "我们先创建一个套接字，然后将 `sockaddr_in` 结构填写到 `sa` 中。请注意 INADDR_ANY 的条件用法："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:798
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if (INADDR_ANY)\n"
 "        sa.sin_addr.s_addr = htonl(INADDR_ANY);\n"
-msgstr ""
+msgstr "if (INADDR_ANY)\n        sa.sin_addr.s_addr = htonl(INADDR_ANY);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:805
+#, fuzzy
 msgid ""
 "Its value is `0`.  Since we have just used `memset` to set zeroes on the "
 "entire structure, it would be redundant to set it to `0` again.  But if we "
@@ -1636,77 +1760,85 @@ msgid ""
 "we need to assign it to `sa.sin_addr.s_addr`.  Most modern C compilers are "
 "clever enough to notice that INADDR_ANY is a constant.  As long as it is a "
 "zero, they will optimize the entire conditional statement out of the code."
-msgstr ""
+msgstr "它的值是 `0`。由于我们刚用 `memset` 将整个结构都设为了零，再次将它设为 `0` 就是多余的。但如果将代码移植到其他系统，而 INADDR_ANY 的值可能不是零，我们就需要将它赋给 `sa.sin_addr.s_addr`。大多数现代 C 编译器都足够智能，可以识别出 INADDR_ANY 是一个常量。只要它的值为零，编译器就会将整个条件语句优化掉。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:809
+#, fuzzy
 msgid ""
 "After we have called `bind` successfully, we are ready to become a _daemon_: "
 "We use `fork` to create a child process.  In both, the parent and the child, "
 "the `s` variable is our socket.  The parent process will not need it, so it "
 "calls `close`, then it returns `0` to inform its own parent it had "
 "terminated successfully."
-msgstr ""
+msgstr "成功调用 `bind` 后，我们就可以将程序变成一个__守护进程__：使用 `fork` 创建一个子进程。父进程和子进程中的 `s` 变量都表示我们的套接字。父进程不再需要它，因此调用 `close`，然后返回 `0`，告知自己的父进程已成功终止。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:814
+#, fuzzy
 msgid ""
 "Meanwhile, the child process continues working in the background.  It calls "
 "`listen` and sets its backlog to `4`.  It does not need a large value here "
 "because _daytime_ is not a protocol many clients request all the time, and "
 "because it can process each request instantly anyway."
-msgstr ""
+msgstr "与此同时，子进程在后台继续运行。它调用 `listen`，并将待处理队列长度设为 `4`。这里不需要很大的值，因为 __daytime__ 并不是客户端频繁请求的协议，而且每个请求都可以立即处理。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:816
+#, fuzzy
 msgid ""
 "Finally, the daemon starts an endless loop, which performs the following "
 "steps:"
-msgstr ""
+msgstr "最后，守护进程进入无限循环，执行以下步骤："
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:819
+#, fuzzy
 msgid ""
 "Call `accept`. It waits here until a client contacts it. At that point, it "
 "receives a new socket, `c`, which it can use to communicate with this "
 "particular client."
-msgstr ""
+msgstr "调用 `accept`。它会在这里等待，直到客户端联系它。此时，它会接收一个新套接字 `c`，并使用它与这个特定客户端通信。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:820
+#, fuzzy
 msgid ""
 "It uses the C function `fdopen` to turn the socket from a low-level _file "
 "descriptor_ to a C-style `FILE` pointer. This will allow the use of "
 "`fprintf` later on."
-msgstr ""
+msgstr "它使用 C 函数 `fdopen` 将底层的__文件描述符__套接字转换为 C 风格的 `FILE` 指针。这样之后就可以使用 `fprintf`。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:821
+#, fuzzy
 msgid ""
 "It checks the time, and prints it in the _ISO 8601_ format to the `client` "
 "\"file\". It then uses `fclose` to close the file. That will automatically "
 "close the socket as well."
-msgstr ""
+msgstr "它读取时间，并以 __ISO 8601__ 格式将其打印到 `client`“文件”中。然后调用 `fclose` 关闭文件，这也会自动关闭套接字。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:823
+#, fuzzy
 msgid "We can _generalize_ this, and use it as a model for many other servers:"
-msgstr ""
+msgstr "我们可以将其__概括__出来，并用作许多其他服务器的模型："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:824
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sequential Server"
-msgstr ""
+msgstr "顺序服务器"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:825
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "serv.png"
-msgstr ""
+msgstr "serv.png"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:831
+#, fuzzy
 msgid ""
 "This flowchart is good for _sequential servers_, i.e., servers that can "
 "serve one client at a time, just as we were able to with our _daytime_ "
@@ -1714,35 +1846,39 @@ msgid ""
 "going on between the client and the server: As soon as the server detects a "
 "connection to the client, it sends out some data and closes the connection.  "
 "The entire operation may take nanoseconds, and it is finished."
-msgstr ""
+msgstr "这个流程图适用于__顺序服务器__，即一次只能为一个客户端提供服务的服务器，就像我们的 __daytime__ 服务器那样。只有在客户端与服务器之间没有真正的“对话”时，这种方式才可行：服务器一检测到与客户端建立了连接，就发送一些数据并关闭连接。整个操作可能只需几纳秒就能完成。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:834
+#, fuzzy
 msgid ""
 "The advantage of this flowchart is that, except for the brief moment after "
 "the parent ``fork``s and before it exits, there is always only one _process_ "
 "active: Our server does not take up much memory and other system resources."
-msgstr ""
+msgstr "这个流程图的优点是，除了父进程 ``fork`` 后、退出前的短暂时刻，始终只有一个__进程__处于活动状态：我们的服务器不会占用太多内存和其他系统资源。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:838
+#, fuzzy
 msgid ""
 "Note that we have added _initialize daemon_ in our flowchart.  We did not "
 "need to initialize our own daemon, but this is a good place in the flow of "
 "the program to set up any `signal` handlers, open any files we may need, etc."
-msgstr ""
+msgstr "请注意，我们在流程图中加入了“初始化守护进程”这一步。我们不需要初始化自己的守护进程，但在程序流程的这个位置可以设置任何 `signal` 处理程序、打开所需文件等。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:842
+#, fuzzy
 msgid ""
 "Just about everything in the flow chart can be used literally on many "
 "different servers.  The _serve_ entry is the exception.  We think of it as a "
 "_\"black box\"_, i.e., something you design specifically for your own "
 "server, and just \"plug it into the rest.\""
-msgstr ""
+msgstr "流程图中几乎所有内容都可以直接用于许多不同的服务器。例外的是“服务”这一步。我们把它看作一个__“黑盒”__，也就是专门为自己的服务器设计的部分，然后将它“接入其余流程”。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:848
+#, fuzzy
 msgid ""
 "Not all protocols are that simple.  Many receive a request from the client, "
 "reply to it, then receive another request from the same client.  As a "
@@ -1750,91 +1886,97 @@ msgid ""
 "client.  Such servers usually start a new process for each client.  While "
 "the new process is serving its client, the daemon can continue listening for "
 "more connections."
-msgstr ""
+msgstr "并非所有协议都这么简单。许多协议会接收客户端的请求并作出响应，然后再接收来自同一客户端的另一个请求。因此，服务器无法预先知道要为客户端服务多久。这类服务器通常会为每个客户端启动一个新进程。新进程为客户端提供服务时，守护进程可以继续监听更多连接。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:851
+#, fuzzy
 msgid ""
 "Now, go ahead, save the above source code as [.filename]#daytimed.c# (it is "
 "customary to end the names of daemons with the letter `d`).  After you have "
 "compiled it, try running it:"
-msgstr ""
+msgstr "现在，请将上面的源代码保存为 [.filename]#daytimed.c#（守护进程的名称通常以字母 `d` 结尾）。编译后，试着运行它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:857
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% ./daytimed\n"
 "bind: Permission denied\n"
 "%\n"
-msgstr ""
+msgstr "% ./daytimed\nbind: Permission denied\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:861
+#, fuzzy
 msgid ""
 "What happened here? As you will recall, the _daytime_ protocol uses port "
 "13.  But all ports below 1024 are reserved to the superuser (otherwise, "
 "anyone could start a daemon pretending to serve a commonly used port, while "
 "causing a security breach)."
-msgstr ""
+msgstr "发生了什么？请回想一下，__daytime__ 协议使用端口 13。但所有低于 1024 的端口都保留给超级用户使用（否则，任何人都可以启动一个守护进程，冒充常用端口提供服务，从而造成安全漏洞）。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:863
+#, fuzzy
 msgid "Try again, this time as the superuser:"
-msgstr ""
+msgstr "再试一次，这次以超级用户身份运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:868
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ./daytimed\n"
 "#\n"
-msgstr ""
+msgstr "# ./daytimed\n#\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:871
+#, fuzzy
 msgid "What... Nothing? Let us try again:"
-msgstr ""
+msgstr "怎么……什么也没有？再试一次："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:875
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ./daytimed\n"
-msgstr ""
+msgstr "# ./daytimed\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:878
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bind: Address already in use\n"
 "#\n"
-msgstr ""
+msgstr "bind: Address already in use\n#\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:883
+#, fuzzy
 msgid ""
 "Every port can only be bound by one program at a time.  Our first attempt "
 "was indeed successful: It started the child daemon and returned quietly.  It "
 "is still running and will continue to run until you either kill it, or any "
 "of its system calls fail, or you reboot the system."
-msgstr ""
+msgstr "每个端口同一时间只能由一个程序绑定。我们的第一次尝试确实成功了：它启动了子守护进程，然后安静地返回。该进程仍在运行，并会一直运行，直到您将它终止、它的某个系统调用失败，或者系统重启。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:886
+#, fuzzy
 msgid ""
 "Fine, we know it is running in the background.  But is it working? How do we "
 "know it is a proper _daytime_ server? Simple:"
-msgstr ""
+msgstr "好，我们知道它正在后台运行。但它工作正常吗？怎么知道它是一个合格的 __daytime__ 服务器？很简单："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:890
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% telnet localhost 13\n"
-msgstr ""
+msgstr "% telnet localhost 13\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:899
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Trying ::1...\n"
 "telnet: connect to address ::1: Connection refused\n"
@@ -1844,41 +1986,43 @@ msgid ""
 "2001-06-19T21:04:42Z\n"
 "Connection closed by foreign host.\n"
 "%\n"
-msgstr ""
+msgstr "Trying ::1...\ntelnet: connect to address ::1: Connection refused\nTrying 127.0.0.1...\nConnected to localhost.\nEscape character is '^]'.\n2001-06-19T21:04:42Z\nConnection closed by foreign host.\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:904
+#, fuzzy
 msgid ""
 "telnet tried the new IPv6, and failed.  It retried with IPv4 and succeeded.  "
 "The daemon works."
-msgstr ""
+msgstr "telnet 尝试了新的 IPv6，但失败了。随后它改用 IPv4 重试并成功连接。守护进程运行正常。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:907
+#, fuzzy
 msgid ""
 "If you have access to another UNIX(R) system via telnet, you can use it to "
 "test accessing the server remotely.  My computer does not have a static IP "
 "address, so this is what I did:"
-msgstr ""
+msgstr "如果你可以通过 telnet 访问另一台 UNIX(R) 系统，就可以用它测试远程访问服务器。我这台计算机没有静态 IP 地址，因此我这样做："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:911
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% who\n"
-msgstr ""
+msgstr "% who\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:915
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "whizkid          ttyp0   Jun 19 16:59   (216.127.220.143)\n"
 "xxx              ttyp1   Jun 19 16:06   (xx.xx.xx.xx)\n"
 "% telnet 216.127.220.143 13\n"
-msgstr ""
+msgstr "whizkid          ttyp0   Jun 19 16:59   (216.127.220.143)\nxxx              ttyp1   Jun 19 16:06   (xx.xx.xx.xx)\n% telnet 216.127.220.143 13\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:922
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Trying 216.127.220.143...\n"
 "Connected to r47.bfm.org.\n"
@@ -1886,22 +2030,23 @@ msgid ""
 "2001-06-19T21:31:11Z\n"
 "Connection closed by foreign host.\n"
 "%\n"
-msgstr ""
+msgstr "Trying 216.127.220.143...\nConnected to r47.bfm.org.\nEscape character is '^]'.\n2001-06-19T21:31:11Z\nConnection closed by foreign host.\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:925
+#, fuzzy
 msgid "Again, it worked. Will it work using the domain name?"
-msgstr ""
+msgstr "又一次，连接成功了。使用域名能行吗？"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:929
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% telnet r47.bfm.org 13\n"
-msgstr ""
+msgstr "% telnet r47.bfm.org 13\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:936
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Trying 216.127.220.143...\n"
 "Connected to r47.bfm.org.\n"
@@ -1909,73 +2054,78 @@ msgid ""
 "2001-06-19T21:31:40Z\n"
 "Connection closed by foreign host.\n"
 "%\n"
-msgstr ""
+msgstr "Trying 216.127.220.143...\nConnected to r47.bfm.org.\nEscape character is '^]'.\n2001-06-19T21:31:40Z\nConnection closed by foreign host.\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:940
+#, fuzzy
 msgid ""
 "By the way, telnet prints the _Connection closed by foreign host_ message "
 "after our daemon has closed the socket.  This shows us that, indeed, using "
 "`fclose(client);` in our code works as advertised."
-msgstr ""
+msgstr "顺便说一下，在我们的守护进程关闭套接字后，telnet 会打印 __Connection closed by foreign host__ 消息。这说明，在我们的代码中使用 `fclose(client);` 确实如预期那样有效。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:942
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Helper Functions"
-msgstr ""
+msgstr "辅助函数"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:948
+#, fuzzy
 msgid ""
 "FreeBSD C library contains many helper functions for sockets programming.  "
 "For example, in our sample client we hard coded the `time.nist.gov` IP "
 "address.  But we do not always know the IP address.  Even if we do, our "
 "software is more flexible if it allows the user to enter the IP address, or "
 "even the domain name."
-msgstr ""
+msgstr "FreeBSD C 库为套接字编程提供了许多辅助函数。例如，在示例客户端中，我们硬编码了 `time.nist.gov` 的 IP 地址。但我们并不总是知道 IP 地址。即使知道，如果软件允许用户输入 IP 地址，甚至域名，也会更加灵活。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:950
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`gethostbyname`"
-msgstr ""
+msgstr "`gethostbyname`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:953
+#, fuzzy
 msgid ""
 "While there is no way to pass the domain name directly to any of the sockets "
 "functions, the FreeBSD C library comes with the man:gethostbyname[3] and man:"
 "gethostbyname2[3] functions, declared in [.filename]#netdb.h#."
-msgstr ""
+msgstr "虽然无法将域名直接传递给任何套接字函数，但 FreeBSD C 库提供了 man:gethostbyname[3] 和 man:gethostbyname2[3] 函数，它们声明在 [.filename]#netdb.h# 中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:958
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct hostent * gethostbyname(const char *name);\n"
 "struct hostent * gethostbyname2(const char *name, int af);\n"
-msgstr ""
+msgstr "struct hostent * gethostbyname(const char *name);\nstruct hostent * gethostbyname2(const char *name, int af);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:962
+#, fuzzy
 msgid ""
 "Both return a pointer to the `hostent` structure, with much information "
 "about the domain.  For our purposes, the `h_addr_list[0]` field of the "
 "structure points at `h_length` bytes of the correct address, already stored "
 "in the _network byte order_."
-msgstr ""
+msgstr "两者都会返回一个指向 `hostent` 结构的指针，其中包含有关域名的大量信息。就我们的用途而言，该结构的 `h_addr_list[0]` 字段指向 `h_length` 个字节的正确地址，该地址已按__网络字节序__存储。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:964
+#, fuzzy
 msgid ""
 "This allows us to create a much more flexible-and much more useful-version "
 "of our daytime program:"
-msgstr ""
+msgstr "这样，我们就能创建一个灵活得多、也实用得多的 daytime 程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:980
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * daytime.c\n"
@@ -1990,11 +2140,11 @@ msgid ""
 "#include <sys/socket.h>\n"
 "#include <netinet/in.h>\n"
 "#include <netdb.h>\n"
-msgstr ""
+msgstr "/*\n * daytime.c\n *\n * Programmed by G. Adam Stanislav\n * 19 June 2001\n */\n#include <stdio.h>\n#include <string.h>\n#include <unistd.h>\n#include <sys/types.h>\n#include <sys/socket.h>\n#include <netinet/in.h>\n#include <netdb.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:987
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int main(int argc, char *argv[]) {\n"
 "  int s, bytes;\n"
@@ -2002,58 +2152,59 @@ msgid ""
 "  struct hostent *he;\n"
 "  char buf[BUFSIZ+1];\n"
 "  char *host;\n"
-msgstr ""
+msgstr "int main(int argc, char *argv[]) {\n  int s, bytes;\n  struct sockaddr_in sa;\n  struct hostent *he;\n  char buf[BUFSIZ+1];\n  char *host;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:997
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  sa.sin_family = AF_INET;\n"
 "  sa.sin_port = htons(13);\n"
-msgstr ""
+msgstr "  sa.sin_family = AF_INET;\n  sa.sin_port = htons(13);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:999
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  host = (argc > 1) ? argv[1] : \"time.nist.gov\";\n"
-msgstr ""
+msgstr "  host = (argc > 1) ? argv[1] : \"time.nist.gov\";\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1004
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  if ((he = gethostbyname(host)) == NULL) {\n"
 "    herror(host);\n"
 "    return 2;\n"
 "  }\n"
-msgstr ""
+msgstr "  if ((he = gethostbyname(host)) == NULL) {\n    herror(host);\n    return 2;\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1006
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  memcpy(&sa.sin_addr, he->h_addr_list[0], he->h_length);\n"
-msgstr ""
+msgstr "  memcpy(&sa.sin_addr, he->h_addr_list[0], he->h_length);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1011
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  if (connect(s, (struct sockaddr *)&sa, sizeof sa) < 0) {\n"
 "    perror(\"connect\");\n"
 "    return 3;\n"
 "  }\n"
-msgstr ""
+msgstr "  if (connect(s, (struct sockaddr *)&sa, sizeof sa) < 0) {\n    perror(\"connect\");\n    return 3;\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1014
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  while ((bytes = read(s, buf, BUFSIZ)) > 0)\n"
 "    write(1, buf, bytes);\n"
-msgstr ""
+msgstr "  while ((bytes = read(s, buf, BUFSIZ)) > 0)\n    write(1, buf, bytes);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1024
+#, fuzzy
 msgid ""
 "We now can type a domain name (or an IP address, it works both ways) on the "
 "command line, and the program will try to connect to its _daytime_ server.  "
@@ -2061,74 +2212,79 @@ msgid ""
 "case we will use `gethostbyname` rather than hard coding `132.163.96.1`.  "
 "That way, even if its IP address changes in the future, we will still find "
 "it."
-msgstr ""
+msgstr "现在，我们可以在命令行中输入域名（或 IP 地址，两者都可以），程序会尝试连接到它的__daytime__服务器。否则，程序仍会默认使用 `time.nist.gov`。不过，即使在这种情况下，我们也会使用 `gethostbyname`，而不是硬编码 `132.163.96.1`。这样，即使它的 IP 地址将来发生变化，我们仍然能够找到它。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1028
+#, fuzzy
 msgid ""
 "Since it takes virtually no time to get the time from your local server, you "
 "could run daytime twice in a row: First to get the time from `time.nist."
 "gov`, the second time from your own system.  You can then compare the "
 "results and see how exact your system clock is:"
-msgstr ""
+msgstr "从本地服务器获取时间几乎不花时间，因此你可以连续运行两次 daytime：第一次从 `time.nist.gov` 获取时间，第二次从自己的系统获取。然后比较结果，就能查看系统时钟的精确程度："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1032
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% daytime ; daytime localhost\n"
-msgstr ""
+msgstr "% daytime ; daytime localhost\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1036
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "52080 01-06-20 04:02:33 50 0 0 390.2 UTC(NIST) *\n"
 "2001-06-20T04:02:35Z\n"
 "%\n"
-msgstr ""
+msgstr "52080 01-06-20 04:02:33 50 0 0 390.2 UTC(NIST) *\n2001-06-20T04:02:35Z\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1039
+#, fuzzy
 msgid "As you can see, my system was two seconds ahead of the NIST time."
-msgstr ""
+msgstr "如你所见，我的系统时间比 NIST 时间快了两秒。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1041
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`getservbyname`"
-msgstr ""
+msgstr "`getservbyname`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1045
+#, fuzzy
 msgid ""
 "Sometimes you may not be sure what port a certain service uses.  The man:"
 "getservbyname[3] function, also declared in [.filename]#netdb.h# comes in "
 "very handy in those cases:"
-msgstr ""
+msgstr "有时你可能不确定某项服务使用哪个端口。这时，在 [.filename]#netdb.h# 中声明的 man:getservbyname[3] 函数就很有用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1049
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "struct servent * getservbyname(const char *name, const char *proto);\n"
-msgstr ""
+msgstr "struct servent * getservbyname(const char *name, const char *proto);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1052
+#, fuzzy
 msgid ""
 "The `servent` structure contains the `s_port`, which contains the proper "
 "port, already in _network byte order_."
-msgstr ""
+msgstr "`servent` 结构包含 `s_port` 字段，其中存储了正确的端口号，且已经按__网络字节序__排列。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1054
+#, fuzzy
 msgid ""
 "Had we not known the correct port for the _daytime_ service, we could have "
 "found it this way:"
-msgstr ""
+msgstr "如果我们不知道__daytime__服务使用的正确端口号，就可以这样查找："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1064
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct servent *se;\n"
 "  ...\n"
@@ -2137,10 +2293,11 @@ msgid ""
 "    return 7;\n"
 "  }\n"
 "  sa.sin_port = se->s_port;\n"
-msgstr ""
+msgstr "struct servent *se;\n  ...\n  if ((se = getservbyname(\"daytime\", \"tcp\")) == NULL {\n    fprintf(stderr, \"Cannot determine which port to use.\\n\");\n    return 7;\n  }\n  sa.sin_port = se->s_port;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1071
+#, fuzzy
 msgid ""
 "You usually do know the port.  But if you are developing a new protocol, you "
 "may be testing it on an unofficial port.  Some day, you will register the "
@@ -2149,68 +2306,74 @@ msgid ""
 "error in the above code, you just use the temporary port number.  Once you "
 "have listed the protocol in [.filename]#/etc/services#, your software will "
 "find its port without you having to rewrite the code."
-msgstr ""
+msgstr "通常你会知道端口号。但如果你正在开发新协议，可能会在非官方端口上测试它。将来，你会注册该协议及其端口（如果没有其他地方，至少会将其添加到 [.filename]#/etc/services# 中，`getservbyname` 会在这里查找）。此时，不必像上面的代码那样返回错误，只需使用临时端口号即可。将协议列入 [.filename]#/etc/services# 后，软件就能找到它的端口，无需你重新编写代码。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1073
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Concurrent Servers"
-msgstr ""
+msgstr "并发服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1077
+#, fuzzy
 msgid ""
 "Unlike a sequential server, a _concurrent server_ has to be able to serve "
 "more than one client at a time.  For example, a _chat server_ may be serving "
 "a specific client for hours-it cannot wait till it stops serving a client "
 "before it serves the next one."
-msgstr ""
+msgstr "与顺序服务器不同，__并发服务器__必须能够同时为多个客户端提供服务。例如，__聊天服务器__可能需要为某个客户端服务数小时——它不能等到服务完一个客户端后才为下一个客户端服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1079
+#, fuzzy
 msgid "This requires a significant change in our flowchart:"
-msgstr ""
+msgstr "这需要对我们的流程图进行重大修改："
 
 #. type: Block title
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1080
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Concurrent Server"
-msgstr ""
+msgstr "并发服务器"
 
 #. type: Target for macro image
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1081
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "serv2.png"
-msgstr ""
+msgstr "serv2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1085
+#, fuzzy
 msgid ""
 "We moved the _serve_ from the _daemon process_ to its own _server process_.  "
 "However, because each child process inherits all open files (and a socket is "
 "treated just like a file), the new process inherits not only the _\"accepted "
 "handle,\"_ i.e., the socket returned by the `accept` call, but also the _top "
 "socket_, i.e., the one opened by the top process right at the beginning."
-msgstr ""
+msgstr "我们将__服务__操作从__守护进程__移到了它自己的__服务器进程__中。不过，由于每个子进程都会继承所有打开的文件（而套接字也被视为文件），新进程不仅会继承__“已接受的句柄”__，也就是 `accept` 调用返回的套接字，还会继承__顶层套接字__，也就是顶层进程一开始打开的那个套接字。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1088
+#, fuzzy
 msgid ""
 "However, the _server process_ does not need this socket and should `close` "
 "it immediately.  Similarly, the _daemon process_ no longer needs the "
 "_accepted socket_, and not only should, but _must_ `close` it-otherwise, it "
 "will run out of available _file descriptors_ sooner or later."
-msgstr ""
+msgstr "不过，__服务器进程__不需要这个套接字，应立即对其调用 `close`。同样，__守护进程__不再需要__已接受的套接字__，不仅应该，而且__必须__对其调用 `close`——否则迟早会耗尽可用的__文件描述符__。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1091
+#, fuzzy
 msgid ""
 "After the _server process_ is done serving, it should close the _accepted "
 "socket_.  Instead of returning to `accept`, it now exits."
-msgstr ""
+msgstr "__服务器进程__完成服务后，应关闭__已接受的套接字__。它现在会直接退出，而不是返回 `accept`。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1098
+#, fuzzy
 msgid ""
 "Under UNIX(R), a process does not really _exit_.  Instead, it _returns_ to "
 "its parent.  Typically, a parent process ``wait``s for its child process, "
@@ -2218,23 +2381,25 @@ msgid ""
 "stop and wait.  That would defeat the whole purpose of creating additional "
 "processes.  But if it never does `wait`, its children will become _zombies_-"
 "no longer functional but still roaming around."
-msgstr ""
+msgstr "在 UNIX(R) 下，进程并不会真正__退出__，而是__返回__到父进程。通常，父进程会对其子进程执行 ``wait``，并获取返回值。不过，我们的__守护进程__不能简单地停下来等待，那样就违背了创建额外进程的初衷。但如果它从不执行 `wait`，其子进程就会变成__僵尸进程__——不再运行，却仍然留在系统中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1101
+#, fuzzy
 msgid ""
 "For that reason, the _daemon process_ needs to set _signal handlers_ in its "
 "_initialize daemon_ phase.  At least a SIGCHLD signal has to be processed, "
 "so the daemon can remove the zombie return values from the system and "
 "release the system resources they are taking up."
-msgstr ""
+msgstr "因此，__守护进程__需要在其__初始化守护进程__阶段设置信号处理程序。至少必须处理 SIGCHLD 信号，这样守护进程才能从系统中清除僵尸进程的返回值，并释放它们占用的系统资源。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/sockets/_index.adoc:1104
+#, fuzzy
 msgid ""
 "That is why our flowchart now contains a _process signals_ box, which is not "
 "connected to any other box.  By the way, many servers also process SIGHUP, "
 "and typically interpret as the signal from the superuser that they should "
 "reread their configuration files.  This allows us to change settings without "
 "having to kill and restart these servers."
-msgstr ""
+msgstr "这就是为什么我们的流程图现在包含一个__处理信号__框，它没有连接到任何其他框。顺便说一下，许多服务器也会处理 SIGHUP，通常将其解释为超级用户发出的信号，表示服务器应重新读取配置文件。这样，我们就可以更改设置，而无需终止并重新启动这些服务器。"

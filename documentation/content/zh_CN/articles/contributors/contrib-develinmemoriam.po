@@ -17,11 +17,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:2
+#, fuzzy
 msgid "Mike Karels (2016 - 2024; RIP 2024)"
-msgstr ""
+msgstr "Mike Karels（2016 - 2024；2024 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:6
+#, fuzzy
 msgid ""
 "Mike Karels, originally a microbiology Ph.D. degree candidate at University "
 "of California Berkeley (UCB), expressed interest in computers in a nearby "
@@ -31,10 +33,11 @@ msgid ""
 "and improvement of the BSD Unix TCP/UDP/IP implementation, including the "
 "socket interface API, one of the most widely used application programming "
 "interfaces in the history of the Internet."
-msgstr ""
+msgstr "Mike Karels 最初是加州大学伯克利分校（UCB）的微生物学博士候选人，他对附近实验室里的计算机产生了兴趣，因此改变了整个职业方向。  他最终于 20 世纪 80 年代初加入 UCB 的计算机系统研究组（CSRG）。在此期间，他为 BSD Unix 的 TCP/UDP/IP 实现（包括套接字接口 API）的开发和改进作出了重要贡献。该 API 是互联网历史上使用最广泛的应用程序编程接口之一。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:9
+#, fuzzy
 msgid ""
 "Over the next several years, he continued to help prepare the Berkeley "
 "Software Distribution releases for 4.3BSD, 4.3BSD-Tahoe, 4.3BSD-Reno, "
@@ -42,29 +45,32 @@ msgid ""
 "one of the authors of \"The Design and Implementation of the 4.3BSD Unix "
 "Operating System\", an important book in the field of computers and "
 "operating systems, published in 1989."
-msgstr ""
+msgstr "在接下来的几年里，他继续协助准备 Berkeley Software Distribution 的多个版本：4.3BSD、4.3BSD-Tahoe、4.3BSD-Reno、Networking Release 1 和 Networking Release 2。  期间，他还是《The Design and Implementation of the 4.3BSD Unix Operating System》的作者之一。这本于 1989 年出版的著作是计算机和操作系统领域的重要书籍。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:12
+#, fuzzy
 msgid ""
 "After leaving the CSRG, he was a founding member of BSD Incorporated (BSDi), "
 "one of the earliest purveyors of BSD Unix software in source and binary "
 "forms.  Mike held steady through multiple organizational changes across "
 "Walnut Creek CDROM, Wind River Systems, Secure Computing, McAfee, Intel "
 "Security, and Forcepoint."
-msgstr ""
+msgstr "离开 CSRG 后，他成为 BSD Incorporated（BSDi）的创始成员之一。BSDi 是最早以源代码和二进制形式提供 BSD Unix 软件的公司之一。Mike 在 Walnut Creek CDROM、Wind River Systems、Secure Computing、McAfee、Intel Security 和 Forcepoint 经历多次组织变更期间始终坚守岗位。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:16
+#, fuzzy
 msgid ""
 "In 1994, on the occasion of the 25th anniversary of Unix, the USENIX "
 "Association honored Mike with inclusion in the Unix Deck of Cards, a set of "
 "playing cards with the faces of pioneers in the early Unix community.  He is "
 "the Seven of Spades."
-msgstr ""
+msgstr "1994 年，在 Unix 问世 25 周年之际，USENIX 协会将 Mike 列入 Unix 扑克牌，以此向他致敬。这副扑克牌上印有早期 Unix 社区先驱的肖像。Mike 是黑桃七。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:20
+#, fuzzy
 msgid ""
 "He also became involved with the FreeBSD Project and contributed greatly to "
 "it over the years including additions to the sysctl subsystem, and the "
@@ -75,25 +81,28 @@ msgid ""
 "Conference.  Just the previous year, he gave a delightful retrospective talk "
 "on his work with BSD at BSDCan 2023 that can be viewed on YouTube: https://"
 "www.youtube.com/watch?v=XSziyKlG1ws."
-msgstr ""
+msgstr "他还参与了 FreeBSD 项目，多年来作出了许多贡献，包括扩展 sysctl 子系统和强制访问控制（MAC）框架，最终获得了 src 提交权限。退休后，他主动协助 FreeBSD 的发行工程工作，并当选核心团队成员。不久之后，他在参加完 BSDCan 2024 大会回家途中意外离世。就在前一年，他在 BSDCan 2023 上作了一场精彩的回顾演讲，讲述自己参与 BSD 项目的经历，可在 YouTube 上观看：link:https://www.youtube.com/watch?v=XSziyKlG1ws[]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:24
+#, fuzzy
 msgid ""
 "Mike is remembered as a brilliant software engineer, patient, humble and "
 "approachable to those needing help.  He enjoyed music, photography, and "
 "nature as well as spending time with his family.  A remembrance page for "
 "Mike can be found at https://www.gearty-delmore.com/obituaries/michael-mike-"
 "karels."
-msgstr ""
+msgstr "Mike 被人们铭记为一位杰出的软件工程师；对于需要帮助的人，他耐心、谦逊且平易近人。  他热爱音乐、摄影和大自然，也喜欢与家人共度时光。Mike 的纪念页面见 link:https://www.gearty-delmore.com/obituaries/michael-mike-karels[]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:25
+#, fuzzy
 msgid "Hans Petter Selasky (2010 - 2023; RIP 2023)"
-msgstr ""
+msgstr "Hans Petter Selasky（2010 - 2023；2023 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:31
+#, fuzzy
 msgid ""
 "The FreeBSD community remembers Hans Petter Selasky who passed away in "
 "Lillesand, Norway on June 23, 2023 at the age of 41.  Hans was an incredibly "
@@ -104,210 +113,240 @@ msgid ""
 "series of high speed NICs on FreeBSD.  Hans’s work included major "
 "contributions to the kernel TLS framework, as well as support for NIC kTLS "
 "send and receive offload in the mce(4) driver."
-msgstr ""
+msgstr "FreeBSD 社区怀念 Hans Petter Selasky。他于 2023 年 6 月 23 日在挪威利勒桑德逝世，享年 41 岁。Hans 才华横溢、为人友善，为 FreeBSD 作出了许多宝贵贡献。他最为人熟知的工作是重写并维护 USB 堆栈，以及维护 webcamd 软件包，该软件包使 FreeBSD 能够支持现代远程会议。最近，他任职于 Mellanox（现为 Nvidia），负责在 FreeBSD 上支持其 ConnectX 系列高速网卡。Hans 的工作包括为内核 TLS 框架作出重要贡献，以及在 mce(4) 驱动程序中支持网卡 kTLS 发送和接收卸载。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:34
+#, fuzzy
 msgid ""
 "One example improvement was his idea to sort incoming TCP packets using the "
 "NIC provided RSS flow identifiers in order to present LRO with all packets "
 "from the same TCP connection back to back.  This idea was crucial to "
 "Netflix's ability to serve 100Gb/s of video traffic from a single machine."
-msgstr ""
+msgstr "他提出的一项改进是，使用网卡提供的 RSS 流标识符对传入的 TCP 数据包进行排序，从而让 LRO 收到的同一 TCP 连接的所有数据包彼此相邻。  这一想法对于 Netflix 能够通过单台机器提供 100Gb/s 视频流量至关重要。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:39
+#, fuzzy
 msgid ""
 "Outside of FreeBSD, Hans’s hobbies included music and mathematics.  He was "
 "active in his church, and contributed to its sound team.  He was a loving "
 "and dedicated uncle to his nieces and nephews.  He loved animals, especially "
 "his cat Pumba."
-msgstr ""
+msgstr "除 FreeBSD 外，Hans 的爱好还包括音乐和数学。  他积极参与教会活动，并为教会的音响团队贡献力量。他是侄女和侄子的好叔叔，关爱他们、尽心尽力。他热爱动物，尤其是他的猫 Pumba。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:41
+#, fuzzy
 msgid ""
 "A longer edition of this remembrance can be found on link:https://forums."
 "freebsd.org/threads/in-memoriam-hans-petter-william-sirevag-selasky.89697/"
 "[this FreeBSD Forum page]."
-msgstr ""
+msgstr "这篇纪念文章的完整版见 link:https://forums.freebsd.org/threads/in-memoriam-hans-petter-william-sirevag-selasky.89697/[这个 FreeBSD 论坛页面]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:42
+#, fuzzy
 msgid "Bruce D. Evans (1991 - 2019; RIP 2019)"
-msgstr ""
+msgstr "Bruce D. Evans（1991 - 2019；2019 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:44
+#, fuzzy
 msgid "Bruce was a programming giant who made FreeBSD his home."
-msgstr ""
+msgstr "Bruce 是一位编程领域的巨匠，并将 FreeBSD 视为自己的家园。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:46
+#, fuzzy
 msgid ""
 "Back before FreeBSD and Linux there was Minix, a toy \"unix\" written by "
 "Andy Tannenbaum, released in 1987, sold with complete sources on three "
 "floppy disks, for $99."
-msgstr ""
+msgstr "在 FreeBSD 和 Linux 出现之前，有一个名为 Minix 的玩具“Unix”系统，由 Andy Tannenbaum 编写，于 1987 年发布。它附带完整源代码，存储在三张软盘上，售价 99 美元。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:48
+#, fuzzy
 msgid "Bruce ported Minix to the i386 around 1989."
-msgstr ""
+msgstr "Bruce 于 1989 年左右将 Minix 移植到了 i386。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:50
+#, fuzzy
 msgid ""
 "Linus Torvalds used Minix/386 to develop his own kernel, and Bruce was the "
 "first person he thanked in the release-announcement."
-msgstr ""
+msgstr "Linus Torvalds 使用 Minix/386 开发自己的内核，而 Bruce 是他在发布公告中感谢的第一人。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:52
+#, fuzzy
 msgid ""
 "When Bill Jolitz released 386BSD 0.1 in 1992, Bruce was listed as a "
 "contributor."
-msgstr ""
+msgstr "Bill Jolitz 于 1992 年发布 386BSD 0.1 时，Bruce 被列为贡献者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:54
+#, fuzzy
 msgid ""
 "Bruce co-founded the FreeBSD project, and served on core.0, but he was never "
 "partisan, and over the years many other projects have benefitted from his "
 "patches, advice and wisdom."
-msgstr ""
+msgstr "Bruce 是 FreeBSD 项目的联合创始人之一，并曾在 core.0 任职，但他从不偏袒任何一方。多年来，许多其他项目都受益于他的补丁、建议和智慧。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:56
+#, fuzzy
 msgid ""
 "Code reviews from Bruce came in three flavours, \"mild\", \"brucified\" and "
 "\"brucifiction\", but they were never personal: It was always only about the "
 "code, the mistakes, the sloppy thinking, the missing historical context, the "
 "ambiguous standards - and the style(9) transgressions."
-msgstr ""
+msgstr "Bruce 的代码审查有三种风格：“温和”、“Bruce 式严厉”和“Bruce 式毁灭性批评”，但从不针对个人：他始终只关注代码、错误、粗疏的思考、缺失的历史背景、含糊不清的标准，以及违反 style(9) 的行为。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:58
+#, fuzzy
 msgid ""
 "As Bruce gave more code reviews than anybody else in the history of the "
 "FreeBSD project, the commit logs hide the true scale of his impact until you "
 "pay attention to \"Submitted by\", \"Reviewed by\" and \"Pointed out by\"."
-msgstr ""
+msgstr "Bruce 的代码审查数量超过 FreeBSD 项目历史上的任何人，因此提交日志并不能体现他影响的真实规模，除非你留意“Submitted by”、“Reviewed by”和“Pointed out by”这些字段。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:60
+#, fuzzy
 msgid "Being hard of hearing, Bruce did not attend conferences."
-msgstr ""
+msgstr "Bruce 听力不佳，因此不参加会议。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:62
+#, fuzzy
 msgid ""
 "The notable exception was the 1999 BSDcon in California, where his core team "
 "colleagues greeted him with \"We're not worthy!\" in Wayne's World fashion."
-msgstr ""
+msgstr "唯一值得一提的例外是 1999 年在加利福尼亚举行的 BSDcon。当时，他的核心团队同事模仿《Wayne's World》的桥段，向他致意：“我们配不上你！”"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:64
+#, fuzzy
 msgid "Twenty years later we're still not."
-msgstr ""
+msgstr "二十年后，我们依然配不上。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:65
+#, fuzzy
 msgid "Kurt Lidl (2015 - 2019; RIP 2019)"
-msgstr ""
+msgstr "Kurt Lidl（2015 - 2019；2019 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:67
+#, fuzzy
 msgid ""
 "Kurt first got involved with BSD while it was still a project at the "
 "University of California at Berkeley. Shortly after personalized license "
 "plates became available in Maryland, he got \"BSDWZRD\"."
-msgstr ""
+msgstr "Kurt 早在 BSD 仍是加州大学伯克利分校的一个项目时，就开始参与其中。马里兰州刚推出个性化车牌不久，他便申请了“BSDWZRD”车牌。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:69
+#, fuzzy
 msgid ""
 "He began contributing to FreeBSD shortly after the conception of the "
 "project. He became a FreeBSD source committer in October 2015."
-msgstr ""
+msgstr "FreeBSD 项目成立后不久，他便开始为其作出贡献。2015 年 10 月，他成为 FreeBSD 源代码提交者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:71
+#, fuzzy
 msgid ""
 "Kurt's most well known FreeBSD project was man:blacklistd[8] which blocks "
 "and releases ports on demand to avoid DoS abuse. He has also made many other "
 "bug fixes and enhancements to DTrace, boot loaders, and other bits and "
 "pieces of the FreeBSD infrastructure."
-msgstr ""
+msgstr "Kurt 最广为人知的 FreeBSD 项目是 man:blacklistd[8]，它可按需阻止和释放端口，以避免遭受 DoS 滥用。他还为 DTrace、引导加载程序以及 FreeBSD 基础设施的其他部分修复了许多错误并作出改进。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:73
+#, fuzzy
 msgid ""
 "Earlier work included the game XTank, an author on RFC 2516 https://tools."
 "ietf.org/html/rfc2516[\"A Method for Transmitting PPP Over Ethernet "
 "(PPPoE)\"], and the USENIX paper https://www.usenix.org/conference/usenix-"
 "winter-1994-technical-conference/drinking-firehose-multicast-usenet-"
 "news[\"Drinking from the Firehose: Multicast USENET News\"]."
-msgstr ""
+msgstr "他早期的工作包括游戏 XTank、作为 RFC 2516《通过以太网传输 PPP（PPPoE）的方法》的作者之一，以及 USENIX 论文《从消防水管中饮水：多播 USENET 新闻》。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:74
+#, fuzzy
 msgid "Frank Durda IV (1995 - 2003; RIP 2018)"
-msgstr ""
+msgstr "Frank Durda IV（1995 - 2003；2018 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:76
+#, fuzzy
 msgid ""
 "Frank had been around the project since the very early days, contributing "
 "code to the 1.x line before becoming a committer."
-msgstr ""
+msgstr "Frank 从项目非常早期就已参与其中，在成为提交者之前便为 1.x 系列贡献了代码。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:77
+#, fuzzy
 msgid "Andrey A. Chernov (1993 - 2017; RIP 2017)"
-msgstr ""
+msgstr "Andrey A. Chernov（1993 - 2017；2017 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:79
+#, fuzzy
 msgid ""
 "Andrey contributions to FreeBSD can not be overstated. Having been involved "
 "for a long there is hardly an area which he did not touch."
-msgstr ""
+msgstr "Andrey 对 FreeBSD 的贡献无论怎样评价都不为过。他长期参与项目，几乎涉足了所有领域。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:80
+#, fuzzy
 msgid "Jürgen Lock (2006 - 2015; RIP 2015)"
-msgstr ""
+msgstr "Jürgen Lock（2006 - 2015；2015 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:82
+#, fuzzy
 msgid ""
 "Jürgen made a number of contributions to FreeBSD, including work on libvirt, "
 "the graphics stack, and QEMU. Jürgen's contributions and helpfulness were "
 "appreciated by people around the world. That work continues to improve the "
 "lives of thousands every day."
-msgstr ""
+msgstr "Jürgen 为 FreeBSD 作出了多项贡献，包括参与 libvirt、图形栈和 QEMU 的工作。世界各地的人们都感激 Jürgen 的贡献和乐于助人的精神。他的工作至今仍在改善成千上万人的生活。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:83
+#, fuzzy
 msgid "{alexbl} (2006 - 2011; RIP 2012)"
-msgstr ""
+msgstr "{alexbl}（2006 - 2011；2012 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:85
+#, fuzzy
 msgid ""
 "http://www.legacy.com/obituaries/sfgate/obituary.aspx?"
 "pid=159801494[Alexander] was best known as a major contributor to FreeBSD's "
 "Python ports and a founding member of {python} as well as his work on XMMS2."
-msgstr ""
+msgstr "link:http://www.legacy.com/obituaries/sfgate/obituary.aspx?pid=159801494[Alexander] 最为人熟知的是，他为 FreeBSD 的 Python 移植作出了重要贡献，是 {python} 的创始成员之一，并参与了 XMMS2 的开发。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:86
+#, fuzzy
 msgid "{jb} (1997 - 2009; RIP 2009)"
-msgstr ""
+msgstr "{jb}（1997 - 2009；2009 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:88
+#, fuzzy
 msgid ""
 "http://hub.opensolaris.org/bin/view/Community+Group+ogb/In+Memoriam[John] "
 "made major contributions to FreeBSD, the best known of which is the import "
@@ -316,15 +355,17 @@ msgid ""
 "he had moved to a rural area and was attempting to live with as minimal "
 "impact to the planet as possible, while at the same time still working in "
 "the high-tech area."
-msgstr ""
+msgstr "link:http://hub.opensolaris.org/bin/view/Community+Group+ogb/In+Memoriam[John] 为 FreeBSD 作出了重要贡献，其中最广为人知的是引入 man:dtrace[1] 代码。John 独特的幽默感和直率的作风，有时会惹人不快，有时也能让他迅速结交朋友。生命末期，他搬到了乡村地区，努力以尽可能减少对地球影响的方式生活，同时继续从事高科技领域的工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:89
+#, fuzzy
 msgid "{jmz} (1994 - 2009; RIP 2009)"
-msgstr ""
+msgstr "{jmz}（1994 - 2009；2009 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:91
+#, fuzzy
 msgid ""
 "http://www.obs-besancon.fr/article.php3?id_article=323[Jean-Marc] was an "
 "astrophysicist who made important contributions to the modeling of the "
@@ -333,15 +374,17 @@ msgid ""
 "participated in the conception and construction of the Vega tricanal "
 "spectrometer that studied Halley's Comet. He had also been a long-time "
 "contributor to FreeBSD."
-msgstr ""
+msgstr "link:http://www.obs-besancon.fr/article.php3?id_article=323[Jean-Marc] 是一位天体物理学家，曾在法国贝桑松的 link:http://www.obs-besancon.fr/[贝桑松天文台]为行星和彗星大气层建模作出重要贡献。在那里，他参与设计并建造了研究哈雷彗星的 Vega 三通道光谱仪。他也是 FreeBSD 的长期贡献者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:92
+#, fuzzy
 msgid "{itojun} (1997 - 2001; RIP 2008)"
-msgstr ""
+msgstr "{itojun}（1997 - 2001；2008 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:94
+#, fuzzy
 msgid ""
 "Known to everyone as http://astralblue.livejournal.com/350702.html[itojun], "
 "Jun-ichiro Hagino was a core researcher at the http://www.kame.net/[KAME "
@@ -349,34 +392,38 @@ msgid ""
 "redistributable form. Much of this code was incorporated into FreeBSD. "
 "Without his efforts, the state of IPv6 on the Internet would be much "
 "different."
-msgstr ""
+msgstr "Jun-ichiro Hagino 以 link:http://astralblue.livejournal.com/350702.html[itojun] 之名为大家所熟知。他是 link:http://www.kame.net/[KAME 项目]的核心研究人员。该项目旨在以可自由再分发的形式提供 IPv6 和 IPsec 技术。他编写的许多代码都被纳入 FreeBSD。若没有他的努力，互联网的 IPv6 现状将大不相同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:95
+#, fuzzy
 msgid "{cg} (1999 - 2005; RIP 2005)"
-msgstr ""
+msgstr "{cg}（1999 - 2005；2005 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:97
+#, fuzzy
 msgid ""
 "http://www.dbsi.org/cam/[Cameron] was a unique individual who contributed to "
 "the project despite serious physical disabilities. He was responsible for a "
 "complete rewrite of our sound system during the late 1990s. Many of those "
 "who corresponded with him had no idea of his limited mobility, due to his "
 "cheerful spirit and willingness to help others."
-msgstr ""
+msgstr "link:http://www.dbsi.org/cam/[Cameron] 是一位与众不同的人，尽管身有严重的身体残疾，仍为项目作出贡献。20 世纪 90 年代末，他负责彻底重写了我们的音频系统。许多与他通信的人都不知道他的行动能力有限，因为他总是乐观开朗、乐于助人。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:98
+#, fuzzy
 msgid "{alane} (2002 - 2003; RIP 2003)"
-msgstr ""
+msgstr "{alane}（2002 - 2003；2003 年逝世）"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/contrib-develinmemoriam.adoc:99
+#, fuzzy
 msgid ""
 "http://freebsd.kde.org/memoriam/alane.php[Alan] was a major contributor to "
 "the KDE on FreeBSD group. In addition, he maintained many other difficult "
 "and time-consuming ports such as autoconf, CUPS, and python. Alan's path was "
 "not an easy one but his passion for FreeBSD, and dedication to programming "
 "excellence, won him many friends."
-msgstr ""
+msgstr "link:http://freebsd.kde.org/memoriam/alane.php[Alan] 是 FreeBSD KDE 小组的重要贡献者。此外，他还维护了 autoconf、CUPS 和 python 等许多复杂且耗时的移植软件包。Alan 的人生道路并不平坦，但他对 FreeBSD 的热爱和对卓越编程的执着为他赢得了许多朋友。"

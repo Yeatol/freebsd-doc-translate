@@ -17,47 +17,52 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/book.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Assistive technologies available in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中提供的辅助技术"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/book.adoc:1
 #: documentation/content/en/books/accessibility/book.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Accessibility Handbook"
-msgstr ""
+msgstr "FreeBSD 无障碍指南"
 
 #. type: .abstract-title
 #: documentation/content/en/books/accessibility/book.adoc:50
+#, fuzzy
 msgid "Abstract"
-msgstr ""
+msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/books/accessibility/book.adoc:53
+#, fuzzy
 msgid ""
 "Welcome to the Accessibility Handbook.  This book covers the assistive "
 "technologies available in FreeBSD."
-msgstr ""
+msgstr "欢迎阅读《无障碍指南》。本书介绍 FreeBSD 中提供的辅助技术。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/accessibility/book.adoc:58
+#, fuzzy
 msgid ""
 "Accessibility is an ongoing effort, not a fixed destination.  As such, this "
 "handbook is a living document and continually evolving.  Contributions, "
 "suggestions, and feedback are highly encouraged.  If you are interested in "
 "contributing, please reach out to us via the https://lists.freebsd.org/"
 "subscription/freebsd-accessibility[FreeBSD accessibility mailing list]."
-msgstr ""
+msgstr "无障碍是一项持续进行的工作，而非一个固定的终点。因此，本指南是一份不断更新、持续演进的文档。我们非常欢迎大家贡献内容、提出建议并提供反馈。如果您有兴趣参与贡献，请通过 link:https://lists.freebsd.org/subscription/freebsd-accessibility[FreeBSD 无障碍邮件列表]联系我们。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/accessibility/book.adoc:60
+#, fuzzy
 msgid ""
 "You can download this book in various formats and compression options from "
 "the FreeBSD download server or one of its many mirror sites."
-msgstr ""
+msgstr "您可以从 FreeBSD 下载服务器或众多镜像站点之一下载本书，并选择不同的格式和压缩选项。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/accessibility/book.adoc:62
+#, fuzzy
 msgid "'''"
-msgstr ""
+msgstr "'''"

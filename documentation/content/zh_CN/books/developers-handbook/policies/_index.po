@@ -18,45 +18,48 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:1
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:17
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Source Tree Guidelines and Policies"
-msgstr ""
+msgstr "源代码树指南与政策"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 5. Source Tree Guidelines and Policies"
-msgstr ""
+msgstr "第 5 章：源代码树指南与政策"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:54
+#, fuzzy
 msgid ""
 "This chapter documents various guidelines and policies in force for the "
 "FreeBSD source tree."
-msgstr ""
+msgstr "本章介绍 FreeBSD 源代码树中现行的各项指南与政策。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Style Guidelines"
-msgstr ""
+msgstr "风格指南"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:60
+#, fuzzy
 msgid ""
 "Consistent coding style is extremely important, particularly with large "
 "projects like FreeBSD.  Code should follow the FreeBSD coding styles "
 "described in man:style[9] and man:style.Makefile[5]."
-msgstr ""
+msgstr "保持一致的编码风格极为重要，尤其是对于 FreeBSD 这样的大型项目。代码应遵循 man:style[9] 和 man:style.Makefile[5] 中介绍的 FreeBSD 编码风格。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`MAINTAINER` on Makefiles"
-msgstr ""
+msgstr "Makefile 中的 `MAINTAINER`"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:66
+#, fuzzy
 msgid ""
 "If a particular portion of the FreeBSD [.filename]#src/# distribution is "
 "being maintained by a person or group of persons, this is communicated "
@@ -64,16 +67,17 @@ msgid ""
 "within the Ports Collection express their maintainership to the world by "
 "adding a `MAINTAINER` line to the [.filename]#Makefile# of the port in "
 "question:"
-msgstr ""
+msgstr "如果 FreeBSD [.filename]#src/# 发行版的某一部分由个人或一组人员维护，则会在 [.filename]#src/MAINTAINERS# 中添加条目来说明。Ports Collection 中各 port 的维护者会在相应 port 的 [.filename]#Makefile# 中添加 `MAINTAINER` 行，以此向外界表明其维护责任："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MAINTAINER= email-addresses\n"
-msgstr ""
+msgstr "MAINTAINER= email-addresses\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:77
+#, fuzzy
 msgid ""
 "For other parts of the repository, or for sections not listed as having a "
 "maintainer, or when you are unsure who the active maintainer is, try looking "
@@ -83,24 +87,27 @@ msgid ""
 "last couple of years are interested in reviewing changes.  Even if this is "
 "not specifically mentioned in the documentation or the source itself, asking "
 "for a review as a form of courtesy is a very reasonable thing to do."
-msgstr ""
+msgstr "对于仓库的其他部分、未列出维护者的部分，或者不确定当前活跃维护者是谁时，可以查看源代码树相关部分近期的提交历史。维护者往往没有被明确列出，但过去几年一直积极参与某一部分工作的人员通常愿意审查相关更改。即使文档或源代码中没有特别说明，出于礼貌请求审查也是非常合理的做法。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:80
+#, fuzzy
 msgid "The role of the maintainer is as follows:"
-msgstr ""
+msgstr "维护者的职责如下："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:82
+#, fuzzy
 msgid ""
 "The maintainer owns and is responsible for that code. This means that he or "
 "she is responsible for fixing bugs and answering problem reports pertaining "
 "to that piece of the code, and in the case of contributed software, for "
 "tracking new versions, as appropriate."
-msgstr ""
+msgstr "维护者拥有并负责相应代码。这意味着维护者负责修复错误、答复有关该代码部分的问题报告；对于引入的第三方软件，还应酌情跟踪其新版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:83
+#, fuzzy
 msgid ""
 "Changes to directories which have a maintainer defined shall be sent to the "
 "maintainer for review before being committed. Only if the maintainer does "
@@ -108,33 +115,36 @@ msgid ""
 "be acceptable to commit changes without review by the maintainer. However, "
 "it is suggested that you try to have the changes reviewed by someone else if "
 "at all possible."
-msgstr ""
+msgstr "对已指定维护者的目录所做的更改，应在提交前发送给维护者审查。只有在多次发送电子邮件后，维护者仍在不可接受的时间内未作答复，才可以在未经维护者审查的情况下提交更改。不过，只要可能，仍建议请其他人审查这些更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:84
+#, fuzzy
 msgid ""
 "It is of course not acceptable to add a person or group as maintainer unless "
 "they agree to assume this duty. On the other hand it does not have to be a "
 "committer and it can easily be a group of people."
-msgstr ""
+msgstr "当然，未经本人或相关人员同意，不得指定其为维护者。另一方面，维护者不一定要是提交者，也可以由一组人员共同担任。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributed Software"
-msgstr ""
+msgstr "引入的第三方软件"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:91
+#, fuzzy
 msgid ""
 "Some parts of the FreeBSD distribution consist of software that is actively "
 "being maintained outside the FreeBSD project.  For historical reasons, we "
 "call this _contributed_ software.  Some examples are LLVM, man:zlib[3], and "
 "man:awk[1]."
-msgstr ""
+msgstr "FreeBSD 发行版的某些部分由 FreeBSD 项目之外的人员积极维护。出于历史原因，我们称这类软件为__引入的软件__。例如 LLVM、man:zlib[3] 和 man:awk[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:95
+#, fuzzy
 msgid ""
 "The accepted procedure for managing contributed software involves creating a "
 "_vendor branch_, where the software can be imported cleanly (without "
@@ -142,10 +152,11 @@ msgid ""
 "content of the vendor branch is applied to the source tree, possibly with "
 "local modifications.  FreeBSD-specific build glue is maintained in the "
 "source tree, not in the vendor branch."
-msgstr ""
+msgstr "管理引入软件的公认做法是创建__供应商分支__，以便干净地导入软件（不作修改），并以版本化的方式跟踪更新。随后将供应商分支的内容应用到源代码树中，并可在此过程中进行本地修改。FreeBSD 特有的构建辅助代码应维护在源代码树中，而不是供应商分支中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:99
+#, fuzzy
 msgid ""
 "Depending on their needs and complexity, individual software projects may "
 "deviate from this procedure, at the discretion of the maintainer.  The exact "
@@ -153,46 +164,50 @@ msgid ""
 "be recorded in a file named `FREEBSD-upgrade`; for example, link:https://"
 "cgit.freebsd.org/src/tree/contrib/libarchive/FREEBSD-upgrade[libarchive's "
 "FREEBSD-upgrade file]."
-msgstr ""
+msgstr "根据各个软件项目的需求和复杂程度，维护者可酌情决定是否偏离这一流程。更新某项引入软件所需的具体步骤应记录在名为 `FREEBSD-upgrade` 的文件中，例如 link:https://cgit.freebsd.org/src/tree/contrib/libarchive/FREEBSD-upgrade[libarchive 的 FREEBSD-upgrade 文件]。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:102
+#, fuzzy
 msgid ""
 "Contributed software is usually placed in the [.filepath]#contrib/# "
 "subdirectory of the source tree, with some exceptions.  Contributed software "
 "used only by the kernel lives under [.filepath]#sys/contrib/#."
-msgstr ""
+msgstr "引入的软件通常位于源代码树的 [.filepath]#contrib/# 子目录中，但也有一些例外。仅供内核使用的引入软件位于 [.filepath]#sys/contrib/# 下。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:106
+#, fuzzy
 msgid ""
 "Because it makes it harder to import future versions minor, trivial and/or "
 "cosmetic changes are _strongly discouraged_ on files that are still tracking "
 "the vendor branch."
-msgstr ""
+msgstr "由于这会增加导入未来版本的难度，因此强烈不建议对仍跟踪供应商分支的文件进行细微、琐碎和／或外观上的更改。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vendor Imports"
-msgstr ""
+msgstr "供应商导入"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:112
+#, fuzzy
 msgid ""
 "The standard process for managing contributed software and vendor branches "
 "is described in detail by the extref:{committers-guide}#vendor-import-"
 "git[Committer's Guide]."
-msgstr ""
+msgstr "管理引入软件和供应商分支的标准流程在 extref:{committers-guide}#vendor-import-git[提交者指南]中有详细说明。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Encumbered Files"
-msgstr ""
+msgstr "受限制的文件"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:120
+#, fuzzy
 msgid ""
 "It might occasionally be necessary to include an encumbered file in the "
 "FreeBSD source tree.  For example, if a device requires a small piece of "
@@ -200,187 +215,214 @@ msgid ""
 "have the source to that code, then the binary file is said to be "
 "encumbered.  The following policies apply to including encumbered files in "
 "the FreeBSD source tree."
-msgstr ""
+msgstr "有时可能需要在 FreeBSD 源代码树中包含受限制的文件。例如，某个设备运行前需要加载一小段二进制代码，而我们没有该代码的源文件，那么这个二进制文件就称为受限制文件。将受限制文件纳入 FreeBSD 源代码树时，适用以下政策。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:122
+#, fuzzy
 msgid ""
 "Any file which is interpreted or executed by the system CPU(s) and not in "
 "source format is encumbered."
-msgstr ""
+msgstr "任何由系统 CPU 执行或解释、且不是源代码格式的文件，都是受限制文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:123
+#, fuzzy
 msgid "Any file with a license more restrictive than BSD or GNU is encumbered."
-msgstr ""
+msgstr "任何许可证限制比 BSD 或 GNU 许可证更严格的文件，都是受限制文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:124
+#, fuzzy
 msgid ""
 "A file which contains downloadable binary data for use by the hardware is "
 "not encumbered, unless (1) or (2) apply to it."
-msgstr ""
+msgstr "包含供硬件使用的可下载二进制数据的文件不属于受限制文件，除非符合（1）或（2）的条件。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:125
+#, fuzzy
 msgid ""
 "Any encumbered file requires specific approval from the link:https://www."
 "FreeBSD.org/administration/#t-core[Core Team] before it is added to the "
 "repository."
-msgstr ""
+msgstr "将任何受限制文件添加到仓库前，必须获得 link:https://www.FreeBSD.org/administration/#t-core[核心团队]的特别批准。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:126
+#, fuzzy
 msgid ""
 "Encumbered files go in [.filename]#src/contrib# or [.filename]#src/sys/"
 "contrib#."
-msgstr ""
+msgstr "受限制文件应放在 [.filename]#src/contrib# 或 [.filename]#src/sys/contrib# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:127
+#, fuzzy
 msgid ""
 "The entire module should be kept together. There is no point in splitting "
 "it, unless there is code-sharing with non-encumbered code."
-msgstr ""
+msgstr "整个模块应放在一起。除非与非受限制代码共享代码，否则没有必要将其拆分。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:129
+#, fuzzy
 msgid ""
 "In the past binary files were typically uuencoded, and named [."
 "filename]#arch/filename.o.uu#.  This is no longer necessary, and binary "
 "files may be added to the repository unchanged."
-msgstr ""
+msgstr "过去，二进制文件通常会进行 uuencode 编码，并命名为 [.filename]#arch/filename.o.uu#。现在已无此必要，二进制文件可以原样添加到仓库中。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:130
+#, fuzzy
 msgid "Kernel files:"
-msgstr ""
+msgstr "内核文件："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:131
+#, fuzzy
 msgid ""
 "Should always be referenced in [.filename]#conf/files.*# (for build "
 "simplicity)."
-msgstr ""
+msgstr "为简化构建，应始终在 [.filename]#conf/files.*# 中引用。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:132
+#, fuzzy
 msgid ""
 "Should always be in [.filename]#LINT#, but the link:https://www.FreeBSD.org/"
 "administration/#t-core[Core Team] decides per case if it should be commented "
 "out or not. The link:https://www.FreeBSD.org/administration/#t-core[Core "
 "Team] can, of course, change their minds later on."
-msgstr ""
+msgstr "应始终列入 [.filename]#LINT#，但由 link:https://www.FreeBSD.org/administration/#t-core[核心团队]逐案决定是否将其注释掉。当然，link:https://www.FreeBSD.org/administration/#t-core[核心团队]之后也可以改变主意。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:133
+#, fuzzy
 msgid "The _Release Engineer_ decides whether or not it goes into the release."
-msgstr ""
+msgstr "由__发行工程师__决定是否将其纳入发行版。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:135
+#, fuzzy
 msgid "User-land files:"
-msgstr ""
+msgstr "用户空间文件："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:136
+#, fuzzy
 msgid ""
 "The link:https://www.FreeBSD.org/administration/#t-core[Core team] decides "
 "if the code should be part of the installed base system."
-msgstr ""
+msgstr "由 link:https://www.FreeBSD.org/administration/#t-core[核心团队]决定是否将该代码纳入已安装的基本系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:137
+#, fuzzy
 msgid ""
 "The link:https://www.FreeBSD.org/administration/#t-re[Release Engineering] "
 "decides if it goes into the release."
-msgstr ""
+msgstr "由 link:https://www.FreeBSD.org/administration/#t-re[发行工程团队]决定是否将其纳入发行版。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Shared Libraries"
-msgstr ""
+msgstr "共享库"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:143
+#, fuzzy
 msgid ""
 "If you are adding shared library support to a port or other piece of "
 "software that does not have one, the version numbers should follow these "
 "rules.  Generally, the resulting numbers will have nothing to do with the "
 "release version of the software."
-msgstr ""
+msgstr "如果要为尚不支持共享库的 port 或其他软件添加共享库支持，版本号应遵循以下规则。通常，最终使用的版本号与该软件的发行版本号无关。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:145
+#, fuzzy
 msgid "For ports:"
-msgstr ""
+msgstr "对于 port："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:147
+#, fuzzy
 msgid "Prefer using the number already selected by upstream"
-msgstr ""
+msgstr "优先使用上游已选定的版本号"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:148
+#, fuzzy
 msgid "If upstream provides symbol versioning, ensure that we use their script"
-msgstr ""
+msgstr "如果上游提供符号版本控制，应确保使用其脚本"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:150
+#, fuzzy
 msgid "For the base system:"
-msgstr ""
+msgstr "对于基本系统："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:152
+#, fuzzy
 msgid "Start library version from 1"
-msgstr ""
+msgstr "库版本号从 1 开始"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:153
+#, fuzzy
 msgid "It is strongly recommended to add symbol versioning to the new library"
-msgstr ""
+msgstr "强烈建议为新库添加符号版本控制"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:154
+#, fuzzy
 msgid ""
 "If there is an incompatible change, handle it with symbol versioning, "
 "maintaining backward ABI compatibility"
-msgstr ""
+msgstr "如果存在不兼容的更改，应通过符号版本控制处理，并保持向后的 ABI 兼容性"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:155
+#, fuzzy
 msgid ""
 "If this is impossible, or the library does not use symbol versioning, bump "
 "the library version"
-msgstr ""
+msgstr "如果无法做到这一点，或者该库未使用符号版本控制，则应提高库版本号"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:156
+#, fuzzy
 msgid ""
 "Before even considering bumping library version for symbol-versioned "
 "library, consult with Release Engineering team, providing reasons why the "
 "change is so important that it should be allowed despite breaking the ABI"
-msgstr ""
+msgstr "对于使用符号版本控制的库，在考虑提高库版本号之前，应先咨询发行工程团队，并说明为何此更改如此重要，以至于值得在破坏 ABI 的情况下仍予以允许"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:158
+#, fuzzy
 msgid ""
 "For instance, added functions and bugfixes not changing the interfaces are "
 "fine, while deleted functions, changed function call syntax, etc. should "
 "either provide backward-compat symbols, or will force the major version "
 "number to change."
-msgstr ""
+msgstr "例如，新增函数以及不改变接口的错误修复都没有问题；而删除函数、改变函数调用语法等更改，则应提供向后兼容的符号，否则就必须提高主版本号。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:160
+#, fuzzy
 msgid ""
 "It is the duty of the committer making the change to handle library "
 "versioning."
-msgstr ""
+msgstr "进行更改的提交者有责任处理库的版本控制。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/policies/_index.adoc:165
+#, fuzzy
 msgid ""
 "The ELF dynamic linker matches library names literally.  There is a popular "
 "convention where library version is written in the form `libexample.so.x.y`, "
@@ -392,4 +434,4 @@ msgid ""
 "option is specified, objects linked with libexample get a dependency on the "
 "right library.  Almost all popular build systems use this scheme "
 "automatically."
-msgstr ""
+msgstr "ELF 动态链接器会按字面值匹配库名。常见约定是将库版本写成 `libexample.so.x.y` 的形式，其中 x 是主版本号，y 是次版本号。通常会将库的 soname（`DT_SONAME` ELF 标签）设为 `libexample.so.x`，并在安装库时为最新的次版本号 y 创建符号链接 `libexample.so.x->libexample.so.x.y` 和 `libexample.so->libexample.so.x`。这样，由于指定命令行选项 `-lexample` 时，静态链接器会搜索 `libexample.so`，与 libexample 链接的目标文件就会依赖正确的库。几乎所有流行的构建系统都会自动采用这种方案。"

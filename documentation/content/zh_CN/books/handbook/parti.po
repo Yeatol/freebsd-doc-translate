@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/parti.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part I. Getting Started"
-msgstr ""
+msgstr "第一部分：入门"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/parti.adoc:12
@@ -53,8 +53,9 @@ msgstr "教读者如何安装 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/parti.adoc:20
+#, fuzzy
 msgid "Teach UNIX(R) basics and fundamentals."
-msgstr ""
+msgstr "讲解 UNIX(R) 基础知识和基本原理。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/parti.adoc:21
@@ -65,15 +66,17 @@ msgstr "演示如何在 FreeBSD 上安装第三方应用程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/parti.adoc:22
+#, fuzzy
 msgid ""
 "Introduce X, the UNIX(R) windowing system, and detail how to configure a "
 "desktop environment that makes users more productive."
-msgstr ""
+msgstr "介绍 X（UNIX(R) 窗口系统），并详细说明如何配置桌面环境，以提高用户的工作效率。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/parti.adoc:23
+#, fuzzy
 msgid "Introduce Wayland, a new display server for UNIX(R)."
-msgstr ""
+msgstr "介绍 Wayland，这是一种面向 UNIX(R) 的新型显示服务器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/parti.adoc:24

@@ -20,9 +20,9 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/articles/ipsec-must/_index.adoc:1
 #: documentation/content/en/articles/ipsec-must/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Independent Verification of IPsec Functionality in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中 IPsec 功能的独立验证"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:43
@@ -31,10 +31,11 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:46
+#, fuzzy
 msgid ""
 "You installed IPsec and it seems to be working.  How do you know? I describe "
 "a method for experimentally verifying that IPsec is working."
-msgstr ""
+msgstr "您已安装 IPsec，而且它似乎可以正常工作。如何确认？本文介绍一种通过实验验证 IPsec 是否正常工作的方法。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:48
@@ -43,62 +44,68 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Problem"
-msgstr ""
+msgstr "问题"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:57
+#, fuzzy
 msgid ""
 "First, lets assume you have crossref:ipsec-must[ipsec-install, Installing "
 "IPsec].  How do you know it is crossref:ipsec-must[caveat, Caveat]? Sure, "
 "your connection will not work if it is misconfigured, and it will work when "
 "you finally get it right.  man:netstat[1] will list it. But can you "
 "independently confirm it?"
-msgstr ""
+msgstr "首先，假设您已经完成 crossref:ipsec-must[ipsec-install, 安装 IPsec]。如何确认它没有 crossref:ipsec-must[caveat, 隐患]？当然，如果配置错误，连接就无法工作；等您终于配置正确后，它就能工作了。man:netstat[1] 会列出它。但您能否独立确认这一点？"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Solution"
-msgstr ""
+msgstr "解决方案"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:62
+#, fuzzy
 msgid "First, some crypto-relevant info theory:"
-msgstr ""
+msgstr "首先，介绍一些与密码学相关的信息论知识："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:64
+#, fuzzy
 msgid ""
 "Encrypted data is uniformly distributed, i.e., has maximal entropy per "
 "symbol;"
-msgstr ""
+msgstr "加密数据服从均匀分布，即每个符号具有最大熵；"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:65
+#, fuzzy
 msgid ""
 "Raw, uncompressed data is typically redundant, i.e., has sub-maximal entropy."
-msgstr ""
+msgstr "原始的未压缩数据通常存在冗余，即熵低于最大值。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:69
+#, fuzzy
 msgid ""
 "Suppose you could measure the entropy of the data to- and from- your network "
 "interface.  Then you could see the difference between unencrypted data and "
 "encrypted data.  This would be true even if some of the data in \"encrypted "
 "mode\" was not encrypted---as the outermost IP header must be if the packet "
 "is to be routable."
-msgstr ""
+msgstr "假设您能够测量网络接口收发数据的熵，那么就能看出未加密数据和加密数据之间的差异。即使“加密模式”下的部分数据没有加密，这一点仍然成立——为了让数据包可路由，最外层的 IP 标头必须保持未加密。"
 
 #. type: Title ===
 #: documentation/content/en/articles/ipsec-must/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MUST"
-msgstr ""
+msgstr "MUST"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:76
+#, fuzzy
 msgid ""
 "Ueli Maurer's \"Universal Statistical Test for Random Bit Generators"
 "\"(https://web.archive.org/web/20011115002319/http://www.geocities.com/"
@@ -106,83 +113,91 @@ msgid ""
 "a sample.  It uses a compression-like algorithm.  crossref:ipsec-must[code, "
 "Maurer's Universal Statistical Test (for block size8 bits)] for a variant "
 "which measures successive (~quarter megabyte) chunks of a file."
-msgstr ""
+msgstr "Ueli Maurer 的“随机位生成器通用统计检验”（link:https://web.archive.org/web/20011115002319/http://www.geocities.com/SiliconValley/Code/4704/universal.pdf[MUST]）可以快速测量样本的熵。它使用一种类似压缩的算法。请参阅 crossref:ipsec-must[code, Maurer 通用统计检验（块大小为 8 位）]，其中的变体可以测量文件中连续的（约四分之一兆字节）数据块。"
 
 #. type: Title ===
 #: documentation/content/en/articles/ipsec-must/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tcpdump"
-msgstr ""
+msgstr "Tcpdump"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:83
+#, fuzzy
 msgid ""
 "We also need a way to capture the raw network data.  A program called man:"
 "tcpdump[1] lets you do this, if you have enabled the _Berkeley Packet "
 "Filter_ interface in your crossref:ipsec-must[kernel,src/sys/i386/conf/"
 "KERNELNAME]."
-msgstr ""
+msgstr "我们还需要一种捕获原始网络数据的方法。名为 man:tcpdump[1] 的程序可以完成这项工作，但您需要先在 crossref:ipsec-must[kernel,src/sys/i386/conf/KERNELNAME] 中启用 __Berkeley Packet Filter__ 接口。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/ipsec-must/_index.adoc:85
+#, fuzzy
 msgid "The command:"
-msgstr ""
+msgstr "命令如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " tcpdump -c 4000 -s 10000 -w dumpfile.bin\n"
-msgstr ""
+msgstr " tcpdump -c 4000 -s 10000 -w dumpfile.bin\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/ipsec-must/_index.adoc:93
+#, fuzzy
 msgid ""
 "will capture 4000 raw packets to _dumpfile.bin_.  Up to 10,000 bytes per "
 "packet will be captured in this example."
-msgstr ""
+msgstr "此命令会将 4000 个原始数据包捕获到 __dumpfile.bin__ 中。本例中，每个数据包最多捕获 10,000 字节。"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Experiment"
-msgstr ""
+msgstr "实验"
 
 #. type: Plain text
 #: documentation/content/en/articles/ipsec-must/_index.adoc:98
+#, fuzzy
 msgid "Here is the experiment:"
-msgstr ""
+msgstr "实验步骤如下："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:102
+#, fuzzy
 msgid "Open a window to an IPsec host and another window to an insecure host."
-msgstr ""
+msgstr "打开一个窗口连接到使用 IPsec 的主机，再打开另一个窗口连接到不安全的主机。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:103
+#, fuzzy
 msgid "Now start crossref:ipsec-must[tcpdump, Tcpdump]."
-msgstr ""
+msgstr "现在启动 crossref:ipsec-must[tcpdump, Tcpdump]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:104
+#, fuzzy
 msgid ""
 "In the \"secure\" window, run the UNIX(R) command man:yes[1], which will "
 "stream the `y` character. After a while, stop this. Switch to the insecure "
 "window, and repeat. After a while, stop."
-msgstr ""
+msgstr "在“安全”窗口中，运行 UNIX(R) 命令 man:yes[1]，它会持续输出字符 `y`。过一会儿将其停止。切换到不安全的窗口，重复此操作。过一会儿将其停止。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:105
+#, fuzzy
 msgid ""
 "Now run crossref:ipsec-must[code, Maurer's Universal Statistical Test (for "
 "block size8 bits)] on the captured packets. You should see something like "
 "the following. The important thing to note is that the secure connection has "
 "93% (6.7) of the expected value (7.18), and the \"normal\" connection has "
 "29% (2.1) of the expected value."
-msgstr ""
+msgstr "现在对捕获的数据包运行 crossref:ipsec-must[code, Maurer 通用统计检验（块大小为 8 位）]。您应该会看到类似以下的结果。请注意，安全连接的结果达到预期值（7.18）的 93%（6.7），而“普通”连接的结果仅为预期值的 29%（2.1）。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% tcpdump -c 4000 -s 10000 -w ipsecdemo.bin\n"
 "% uliscan ipsecdemo.bin\n"
@@ -197,16 +212,17 @@ msgid ""
 "2.1101 -----------------\n"
 "2.0838 -----------------\n"
 "2.0983 -----------------\n"
-msgstr ""
+msgstr "% tcpdump -c 4000 -s 10000 -w ipsecdemo.bin\n% uliscan ipsecdemo.bin\nUliscan 21 Dec 98\nL=8 256 258560\nMeasuring file ipsecdemo.bin\nInit done\nExpected value for L=8 is 7.1836656\n6.9396 --------------------------------------------------------\n6.6177 -----------------------------------------------------\n6.4100 ---------------------------------------------------\n2.1101 -----------------\n2.0838 -----------------\n2.0983 -----------------\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Caveat"
-msgstr ""
+msgstr "注意事项"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:131
+#, fuzzy
 msgid ""
 "This experiment shows that IPsec _does_ seem to be distributing the payload "
 "data __uniformly__, as encryption should.  However, the experiment described "
@@ -214,172 +230,177 @@ msgid ""
 "have any evidence for).  These include poor key generation or exchange, data "
 "or keys being visible to others, use of weak algorithms, kernel subversion, "
 "etc.  Study the source; know the code."
-msgstr ""
+msgstr "该实验表明，IPsec 似乎确实按照加密应有的方式，使有效载荷数据呈 __uniformly__ 分布。不过，本文所述实验无法检测系统中许多可能存在的缺陷（我没有证据表明存在这些缺陷）。其中包括密钥生成或交换不可靠、数据或密钥可能被他人看到、使用弱算法、内核被篡改等。请研究源代码，了解代码。"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPsec---Definition"
-msgstr ""
+msgstr "IPsec——定义"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:139
+#, fuzzy
 msgid ""
 "Internet Protocol security extensions to IPv4; required for IPv6.  A "
 "protocol for negotiating encryption and authentication at the IP (host-to-"
 "host) level.  SSL secures only one application socket; SSH secures only a "
 "login; PGP secures only a specified file or message.  IPsec encrypts "
 "everything between two hosts."
-msgstr ""
+msgstr "IPv4 的互联网协议安全扩展；IPv6 必需。用于在 IP（主机到主机）层协商加密和身份验证的协议。SSL 只保护一个应用程序套接字；SSH 只保护一次登录；PGP 只保护指定的文件或消息。IPsec 会加密两台主机之间的所有内容。"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installing IPsec"
-msgstr ""
+msgstr "安装 IPsec"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:145
+#, fuzzy
 msgid ""
 "Most of the modern versions of FreeBSD have IPsec support in their base "
 "source.  So you will need to include the `IPSEC` option in your kernel "
 "config and, after kernel rebuild and reinstall, configure IPsec connections "
 "using man:setkey[8] command."
-msgstr ""
+msgstr "大多数现代版本的 FreeBSD 都在其基础源代码中支持 IPsec。因此，您需要在内核配置中加入 `IPSEC` 选项；重建并重新安装内核后，使用 man:setkey[8] 命令配置 IPsec 连接。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:147
+#, fuzzy
 msgid ""
 "A comprehensive guide on running IPsec on FreeBSD is provided in extref:{vpn-"
 "ipsec}[VPN over IPsec]."
-msgstr ""
+msgstr "extref:{vpn-ipsec}[通过 IPsec 使用 VPN] 提供了在 FreeBSD 上运行 IPsec 的完整指南。"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "src/sys/i386/conf/KERNELNAME"
-msgstr ""
+msgstr "src/sys/i386/conf/KERNELNAME"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:153
+#, fuzzy
 msgid ""
 "This needs to be present in the kernel config file to capture network data "
 "with man:tcpdump[1].  Be sure to run man:config[8] after adding this, and "
 "rebuild and reinstall."
-msgstr ""
+msgstr "要使用 man:tcpdump[1] 捕获网络数据，内核配置文件中必须包含此项。添加后请务必运行 man:config[8]，然后重建并重新安装内核。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "device\tbpf\n"
-msgstr ""
+msgstr "device\tbpf\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/ipsec-must/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Maurer's Universal Statistical Test (for block size=8 bits)"
-msgstr ""
+msgstr "Maurer 通用统计检验（块大小 = 8 位）"
 
 #. type: Plain text
 #: documentation/content/en/articles/ipsec-must/_index.adoc:163
+#, fuzzy
 msgid ""
 "You can find the same code at https://web.archive.org/web/20031204230654/"
 "http://www.geocities.com:80/SiliconValley/Code/4704/uliscanc.txt[this link]."
-msgstr ""
+msgstr "您可以在此链接找到相同的代码：link:https://web.archive.org/web/20031204230654/http://www.geocities.com:80/SiliconValley/Code/4704/uliscanc.txt[此链接]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 "  ULISCAN.c   ---blocksize of 8\n"
-msgstr ""
+msgstr "/*\n  ULISCAN.c   ---blocksize of 8\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  1 Oct 98\n"
 "  1 Dec 98\n"
 "  21 Dec 98       uliscan.c derived from ueli8.c\n"
-msgstr ""
+msgstr "  1 Oct 98\n  1 Dec 98\n  21 Dec 98       uliscan.c derived from ueli8.c\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  This version has // comments removed for Sun cc\n"
-msgstr ""
+msgstr "  This version has // comments removed for Sun cc\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  This implements Ueli M Maurer's \"Universal Statistical Test for Random\n"
 "  Bit Generators\" using L=8\n"
-msgstr ""
+msgstr "  This implements Ueli M Maurer's \"Universal Statistical Test for Random\n  Bit Generators\" using L=8\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  Accepts a filename on the command line; writes its results, with other\n"
 "  info, to stdout.\n"
-msgstr ""
+msgstr "  Accepts a filename on the command line; writes its results, with other\n  info, to stdout.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  Handles input file exhaustion gracefully.\n"
-msgstr ""
+msgstr "  Handles input file exhaustion gracefully.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  Ref: J. Cryptology v 5 no 2, 1992 pp 89-105\n"
 "  also on the web somewhere, which is where I found it.\n"
-msgstr ""
+msgstr "  Ref: J. Cryptology v 5 no 2, 1992 pp 89-105\n  also on the web somewhere, which is where I found it.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  -David Honig\n"
 "  honig@sprynet.com\n"
-msgstr ""
+msgstr "  -David Honig\n  honig@sprynet.com\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  Usage:\n"
 "  ULISCAN filename\n"
 "  outputs to stdout\n"
 "*/\n"
-msgstr ""
+msgstr "  Usage:\n  ULISCAN filename\n  outputs to stdout\n*/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#define L 8\n"
 "#define V (1<<L)\n"
 "#define Q (10*V)\n"
 "#define K (100   *Q)\n"
 "#define MAXSAMP (Q + K)\n"
-msgstr ""
+msgstr "#define L 8\n#define V (1<<L)\n#define Q (10*V)\n#define K (100   *Q)\n#define MAXSAMP (Q + K)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <stdio.h>\n"
 "#include <math.h>\n"
-msgstr ""
+msgstr "#include <stdio.h>\n#include <math.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int main(argc, argv)\n"
 "int argc;\n"
@@ -392,23 +413,23 @@ msgid ""
 "  double sum = 0.0;\n"
 "  int iproduct = 1;\n"
 "  int run;\n"
-msgstr ""
+msgstr "int main(argc, argv)\nint argc;\nchar **argv;\n{\n  FILE *fptr;\n  int i,j;\n  int b, c;\n  int table[V];\n  double sum = 0.0;\n  int iproduct = 1;\n  int run;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  extern double   log(/* double x */);\n"
-msgstr ""
+msgstr "  extern double   log(/* double x */);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  printf(\"Uliscan 21 Dec 98 \\nL=%d %d %d \\n\", L, V, MAXSAMP);\n"
-msgstr ""
+msgstr "  printf(\"Uliscan 21 Dec 98 \\nL=%d %d %d \\n\", L, V, MAXSAMP);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  if (argc < 2) {\n"
 "    printf(\"Usage: Uliscan filename\\n\");\n"
@@ -416,145 +437,145 @@ msgid ""
 "  } else {\n"
 "    printf(\"Measuring file %s\\n\", argv[1]);\n"
 "  }\n"
-msgstr ""
+msgstr "  if (argc < 2) {\n    printf(\"Usage: Uliscan filename\\n\");\n    exit(-1);\n  } else {\n    printf(\"Measuring file %s\\n\", argv[1]);\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  fptr = fopen(argv[1],\"rb\");\n"
-msgstr ""
+msgstr "  fptr = fopen(argv[1],\"rb\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  if (fptr == NULL) {\n"
 "    printf(\"Can't find %s\\n\", argv[1]);\n"
 "    exit(-1);\n"
 "  }\n"
-msgstr ""
+msgstr "  if (fptr == NULL) {\n    printf(\"Can't find %s\\n\", argv[1]);\n    exit(-1);\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  for (i = 0; i < V; i++) {\n"
 "    table[i] = 0;\n"
 "  }\n"
-msgstr ""
+msgstr "  for (i = 0; i < V; i++) {\n    table[i] = 0;\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  for (i = 0; i < Q; i++) {\n"
 "    b = fgetc(fptr);\n"
 "    table[b] = i;\n"
 "  }\n"
-msgstr ""
+msgstr "  for (i = 0; i < Q; i++) {\n    b = fgetc(fptr);\n    table[b] = i;\n  }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  printf(\"Init done\\n\");\n"
-msgstr ""
+msgstr "  printf(\"Init done\\n\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  printf(\"Expected value for L=8 is 7.1836656\\n\");\n"
-msgstr ""
+msgstr "  printf(\"Expected value for L=8 is 7.1836656\\n\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  run = 1;\n"
-msgstr ""
+msgstr "  run = 1;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  while (run) {\n"
 "    sum = 0.0;\n"
 "    iproduct = 1;\n"
-msgstr ""
+msgstr "  while (run) {\n    sum = 0.0;\n    iproduct = 1;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    if (run)\n"
 "      for (i = Q; run && i < Q + K; i++) {\n"
 "        j = i;\n"
 "        b = fgetc(fptr);\n"
-msgstr ""
+msgstr "    if (run)\n      for (i = Q; run && i < Q + K; i++) {\n        j = i;\n        b = fgetc(fptr);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        if (b < 0)\n"
 "          run = 0;\n"
-msgstr ""
+msgstr "        if (b < 0)\n          run = 0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "        if (run) {\n"
 "          if (table[b] > j)\n"
 "            j += K;\n"
-msgstr ""
+msgstr "        if (run) {\n          if (table[b] > j)\n            j += K;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "          sum += log((double)(j-table[b]));\n"
-msgstr ""
+msgstr "          sum += log((double)(j-table[b]));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "          table[b] = i;\n"
 "        }\n"
 "      }\n"
-msgstr ""
+msgstr "          table[b] = i;\n        }\n      }\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    if (!run)\n"
 "      printf(\"Premature end of file; read %d blocks.\\n\", i - Q);\n"
-msgstr ""
+msgstr "    if (!run)\n      printf(\"Premature end of file; read %d blocks.\\n\", i - Q);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    sum = (sum/((double)(i - Q))) /  log(2.0);\n"
 "    printf(\"%4.4f \", sum);\n"
-msgstr ""
+msgstr "    sum = (sum/((double)(i - Q))) /  log(2.0);\n    printf(\"%4.4f \", sum);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    for (i = 0; i < (int)(sum*8.0 + 0.50); i++)\n"
 "      printf(\"-\");\n"
-msgstr ""
+msgstr "    for (i = 0; i < (int)(sum*8.0 + 0.50); i++)\n      printf(\"-\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "    printf(\"\\n\");\n"
-msgstr ""
+msgstr "    printf(\"\\n\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/ipsec-must/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    /* refill initial table */\n"
 "    if (0) {\n"
@@ -569,4 +590,4 @@ msgid ""
 "    }\n"
 "  }\n"
 "}\n"
-msgstr ""
+msgstr "    /* refill initial table */\n    if (0) {\n      for (i = 0; i < Q; i++) {\n        b = fgetc(fptr);\n        if (b < 0) {\n          run = 0;\n        } else {\n          table[b] = i;\n        }\n      }\n    }\n  }\n}\n"

@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/cups/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to install and use CUPS on FreeBSD"
-msgstr ""
+msgstr "如何在 FreeBSD 上安装和使用 CUPS"
 
 #. type: Title =
 #: documentation/content/en/articles/cups/_index.adoc:1
 #: documentation/content/en/articles/cups/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CUPS on FreeBSD"
-msgstr ""
+msgstr "FreeBSD 上的 CUPS"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:43
@@ -37,8 +37,9 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:45
+#, fuzzy
 msgid "An article about configuring CUPS on FreeBSD."
-msgstr ""
+msgstr "介绍如何在 FreeBSD 上配置 CUPS 的文章。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:47
@@ -47,21 +48,23 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/cups/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An Introduction to the Common Unix Printing System (CUPS)"
-msgstr ""
+msgstr "Common Unix Printing System（CUPS）简介"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:55
+#, fuzzy
 msgid ""
 "CUPS, the Common UNIX Printing System, provides a portable printing layer "
 "for UNIX(R)-based operating systems.  It has been developed by Easy Software "
 "Products to promote a standard printing solution for all UNIX(R) vendors and "
 "users."
-msgstr ""
+msgstr "CUPS（Common UNIX Printing System，通用 UNIX 打印系统）为基于 UNIX(R) 的操作系统提供了可移植的打印层。它由 Easy Software Products 开发，旨在为所有 UNIX(R) 供应商和用户提供标准的打印解决方案。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:60
+#, fuzzy
 msgid ""
 "CUPS uses the Internet Printing Protocol (IPP) as the basis for managing "
 "print jobs and queues.  The Line Printer Daemon (LPD), Server Message Block "
@@ -71,105 +74,113 @@ msgid ""
 "printing under UNIX(R).  As a result, CUPS is ideally-suited for sharing and "
 "accessing printers in mixed environments of FreeBSD, Linux(R), Mac OS(R) X, "
 "or Windows(R)."
-msgstr ""
+msgstr "CUPS 使用 Internet Printing Protocol（IPP）作为管理打印作业和队列的基础。它还支持 Line Printer Daemon（LPD）、Server Message Block（SMB）和 AppSocket（又称 JetDirect）协议，但功能有所缩减。CUPS 添加了网络打印机浏览功能和基于 PostScript Printer Description（PPD）的打印选项，以支持 UNIX(R) 环境中的实际打印需求。因此，CUPS 非常适合在 FreeBSD、Linux(R)、Mac OS(R) X 或 Windows(R) 混合环境中共享和访问打印机。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:62
+#, fuzzy
 msgid "The main site for CUPS is http://www.cups.org/[http://www.cups.org/]."
-msgstr ""
+msgstr "CUPS 的主站点是 link:http://www.cups.org/[http://www.cups.org/]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/cups/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installing the CUPS Print Server"
-msgstr ""
+msgstr "安装 CUPS 打印服务器"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/cups/_index.adoc:67
+#, fuzzy
 msgid ""
 "To install CUPS using a precompiled binary, issue the following command from "
 "a root terminal:"
-msgstr ""
+msgstr "要使用预编译的二进制包安装 CUPS，请在 root 终端中执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install cups\n"
-msgstr ""
+msgstr "# pkg install cups\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:75
+#, fuzzy
 msgid ""
 "Other optional, but recommended, packages are package:print/gutenprint[] and "
 "package:print/hplip[], both of which add drivers and utilities for a variety "
 "of printers.  Once installed, the CUPS configuration files can be found in "
 "the directory [.filename]#/usr/local/etc/cups#."
-msgstr ""
+msgstr "其他可选但推荐安装的软件包包括 package:print/gutenprint[] 和 package:print/hplip[]，二者都为多种打印机添加了驱动程序和实用工具。安装后，可以在 [.filename]#/usr/local/etc/cups# 目录中找到 CUPS 配置文件。"
 
 #. type: Title ==
 #: documentation/content/en/articles/cups/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring the CUPS Print Server"
-msgstr ""
+msgstr "配置 CUPS 打印服务器"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:81
+#, fuzzy
 msgid ""
 "After installation, a few files must be edited to configure the CUPS "
 "server.  First, create or modify, as the case may be, the file [.filename]#/"
 "etc/devfs.rules# and add the following information to set the proper "
 "permissions on all potential printer devices and to associate printers with "
 "the `cups` user group:"
-msgstr ""
+msgstr "安装完成后，需要编辑一些文件来配置 CUPS 服务器。首先，根据需要创建或修改 [.filename]#/etc/devfs.rules# 文件，并添加以下信息，以便为所有可能的打印机设备设置适当的权限，并将打印机关联到 `cups` 用户组："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[system=10]\n"
 "add path 'unlpt*' mode 0660 group cups\n"
 "add path 'ulpt*' mode 0660 group cups\n"
 "add path 'lpt*' mode 0660 group cups\n"
 "add path 'usb/X.Y.Z' mode 0660 group cups\n"
-msgstr ""
+msgstr "[system=10]\nadd path 'unlpt*' mode 0660 group cups\nadd path 'ulpt*' mode 0660 group cups\nadd path 'lpt*' mode 0660 group cups\nadd path 'usb/X.Y.Z' mode 0660 group cups\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/cups/_index.adoc:95
+#, fuzzy
 msgid ""
 "Note that _X_, _Y_, and _Z_ should be replaced with the target USB device "
 "listed in the [.filename]#/dev/usb# directory that corresponds to the "
 "printer.  To find the correct device, examine the output of man:dmesg[8], "
 "where [.filename]#ugenX.Y# lists the printer device, which is a symbolic "
 "link to a USB device in [.filename]#/dev/usb#."
-msgstr ""
+msgstr "请注意，__X__、__Y__ 和 __Z__ 应替换为 [.filename]#/dev/usb# 目录中与打印机对应的目标 USB 设备。要找到正确的设备，请查看 man:dmesg[8] 的输出，其中 [.filename]#ugenX.Y# 列出了打印机设备；该设备是指向 [.filename]#/dev/usb# 中某个 USB 设备的符号链接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:98
+#, fuzzy
 msgid "Next, add two lines to [.filename]#/etc/rc.conf# as follows:"
-msgstr ""
+msgstr "接下来，按如下所示在 [.filename]#/etc/rc.conf# 中添加两行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "cupsd_enable=\"YES\"\n"
 "devfs_system_ruleset=\"system\"\n"
-msgstr ""
+msgstr "cupsd_enable=\"YES\"\ndevfs_system_ruleset=\"system\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:106
+#, fuzzy
 msgid ""
 "These two entries will start the CUPS print server on boot and invoke the "
 "local devfs rule created above, respectively."
-msgstr ""
+msgstr "这两项分别会在启动时启动 CUPS 打印服务器，并启用上文创建的本地 devfs 规则。"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:108
+#, fuzzy
 msgid ""
 "To enable CUPS printing under certain Microsoft(R) Windows(R) clients, the "
 "line below should be uncommented in [.filename]#/usr/local/etc/cups/mime."
 "types# and [.filename]#/usr/local/etc/cups/mime.convs#:"
-msgstr ""
+msgstr "若要在某些 Microsoft(R) Windows(R) 客户端上启用 CUPS 打印，应取消 [.filename]#/usr/local/etc/cups/mime.types# 和 [.filename]#/usr/local/etc/cups/mime.convs# 中以下行的注释："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:112
@@ -179,38 +190,41 @@ msgstr "application/octet-stream\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:115
+#, fuzzy
 msgid ""
 "Once these changes have been made, the man:devfs[8] and CUPS systems must "
 "both be restarted, either by rebooting the computer or issuing the following "
 "two commands in a root terminal:"
-msgstr ""
+msgstr "完成这些更改后，必须重启 man:devfs[8] 和 CUPS 系统。可以重启计算机，也可以在 root 终端中执行以下两条命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service devfs restart\n"
 "# service cupsd restart\n"
-msgstr ""
+msgstr "# service devfs restart\n# service cupsd restart\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/cups/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring Printers on the CUPS Print Server"
-msgstr ""
+msgstr "在 CUPS 打印服务器上配置打印机"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:127
+#, fuzzy
 msgid ""
 "After the CUPS system has been installed and configured, the administrator "
 "can begin configuring the local printers attached to the CUPS print server.  "
 "This part of the process is very similar, if not identical, to configuring "
 "CUPS printers on other UNIX(R)-based operating systems, such as a Linux(R) "
 "distribution."
-msgstr ""
+msgstr "安装并配置 CUPS 系统后，管理员就可以开始配置连接到 CUPS 打印服务器的本地打印机。此过程与在其他基于 UNIX(R) 的操作系统（例如 Linux(R) 发行版）上配置 CUPS 打印机非常相似，甚至完全相同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:132
+#, fuzzy
 msgid ""
 "The primary means for managing and administering the CUPS server is through "
 "the web-based interface, which can be found by launching a web browser and "
@@ -224,10 +238,11 @@ msgid ""
 "printers connected to the system, whether to allow remote administration of "
 "the CUPS server, and whether to allow users additional access and privileges "
 "to the printers and print jobs."
-msgstr ""
+msgstr "管理和维护 CUPS 服务器的主要方式是使用基于 Web 的界面。启动 Web 浏览器，并在地址栏中输入 link:http://localhost:631[http://localhost:631] 即可访问该界面。如果 CUPS 服务器位于网络上的另一台计算机，请将 `localhost` 替换为服务器的本地 IP 地址。CUPS Web 界面相当直观，其中包含用于管理打印机和打印作业、授权用户等功能的区域。此外，管理界面右侧有多个复选框，可方便地更改常用设置，例如是否共享连接到系统的已发布打印机、是否允许远程管理 CUPS 服务器，以及是否允许用户获得更多打印机和打印作业访问权限。"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:136
+#, fuzzy
 msgid ""
 "Adding a printer is generally as easy as clicking \"Add Printer\" at the "
 "Administration screen of the CUPS web interface, or clicking one of the "
@@ -238,32 +253,34 @@ msgid ""
 "packages as referenced above, then additional print drivers will be "
 "available in the subsequent screens that might provide more stability or "
 "features."
-msgstr ""
+msgstr "添加打印机通常很简单：在 CUPS Web 界面的管理页面中点击“添加打印机”，或者点击同一页面上的“发现新打印机”按钮之一。当出现“设备”下拉框时，只需选择所需的本地连接打印机，然后继续操作即可。如果已安装上文提到的 package:print/gutenprint-cups[] 或 package:print/hplip[] 移植软件或软件包，后续页面中还会提供其他打印驱动程序，可能具有更高的稳定性或更多功能。"
 
 #. type: Title ==
 #: documentation/content/en/articles/cups/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring CUPS Clients"
-msgstr ""
+msgstr "配置 CUPS 客户端"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:142
+#, fuzzy
 msgid ""
 "Once the CUPS server has been configured and printers have been added and "
 "published to the network, the next step is to configure the clients, or the "
 "machines that are going to access the CUPS server.  If one has a single "
 "desktop machine that is acting as both server and client, then much of this "
 "information may not be needed."
-msgstr ""
+msgstr "配置好 CUPS 服务器并将打印机添加到网络并发布后，下一步是配置客户端，即将访问 CUPS 服务器的计算机。如果只有一台桌面计算机同时充当服务器和客户端，则可能无需使用本节的大部分信息。"
 
 #. type: Title ===
 #: documentation/content/en/articles/cups/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UNIX(R) Clients"
-msgstr ""
+msgstr "UNIX(R) 客户端"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:150
+#, fuzzy
 msgid ""
 "CUPS will also need to be installed on your UNIX(R) clients.  Once CUPS is "
 "installed on the clients, then CUPS printers that are shared across the "
@@ -275,50 +292,53 @@ msgid ""
 "simply select the networked CUPS printer, if it was automatically "
 "discovered, or select `ipp` or `http` and enter the IPP or HTTP URI of the "
 "networked CUPS printer, usually in one of the two following syntaxes:"
-msgstr ""
+msgstr "还需要在 UNIX(R) 客户端上安装 CUPS。安装完成后，GNOME 或 KDE 等桌面环境的打印机管理器通常会自动发现网络上共享的 CUPS 打印机。也可以在客户端计算机上访问本地 CUPS 界面 link:http://localhost:631[http://localhost:631]，然后在“管理”区域中点击“添加打印机”。当出现“设备”下拉框时，如果已自动发现网络上的 CUPS 打印机，只需选择该打印机；否则，选择 `ipp` 或 `http`，并输入网络 CUPS 打印机的 IPP 或 HTTP URI，通常采用以下两种格式之一："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ipp://server-name-or-ip/printers/printername\n"
-msgstr ""
+msgstr "ipp://server-name-or-ip/printers/printername\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:159
 #: documentation/content/en/articles/cups/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "http://server-name-or-ip:631/printers/printername\n"
-msgstr ""
+msgstr "http://server-name-or-ip:631/printers/printername\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:162
+#, fuzzy
 msgid ""
 "If the CUPS clients have difficulty finding other CUPS printers shared "
 "across the network, sometimes it is helpful to add or create a file [."
 "filename]#/usr/local/etc/cups/client.conf# with a single entry as follows:"
-msgstr ""
+msgstr "如果 CUPS 客户端难以发现网络上共享的其他 CUPS 打印机，可以尝试创建或添加 [.filename]#/usr/local/etc/cups/client.conf# 文件，并在其中加入以下一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ServerName server-ip\n"
-msgstr ""
+msgstr "ServerName server-ip\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:169
+#, fuzzy
 msgid ""
 "In this case, _server-ip_ would be replaced by the local IP address of the "
 "CUPS server on the network."
-msgstr ""
+msgstr "此处应将 _server-ip_ 替换为网络上 CUPS 服务器的本地 IP 地址。"
 
 #. type: Title ===
 #: documentation/content/en/articles/cups/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Windows(R) Clients"
-msgstr ""
+msgstr "Windows(R) 客户端"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:177
+#, fuzzy
 msgid ""
 "Versions of Windows(R) prior to XP did not have the capability to natively "
 "network with IPP-based printers.  However, Windows(R) XP and later versions "
@@ -326,25 +346,27 @@ msgid ""
 "of Windows(R) is quite easy.  Generally, the Windows(R) administrator will "
 "run the Windows(R) `Add Printer` wizard, select `Network Printer` and then "
 "enter the URI in the following syntax:"
-msgstr ""
+msgstr "XP 之前的 Windows(R) 版本不具备通过原生方式连接基于 IPP 的打印机的能力。不过，Windows(R) XP 及更高版本支持此功能。因此，在这些版本中添加 CUPS 打印机相当简单。通常，Windows(R) 管理员可以运行 Windows(R)“添加打印机”向导，选择“网络打印机”，然后按以下格式输入 URI："
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:184
+#, fuzzy
 msgid ""
 "If one has an older version of Windows(R) without native IPP printing "
 "support, then the general means of connecting to a CUPS printer is to use "
 "package:net/samba416[] and CUPS together, which is a topic outside the scope "
 "of this chapter."
-msgstr ""
+msgstr "如果使用的 Windows(R) 版本较旧，不支持原生 IPP 打印，通常可以将 package:net/samba416[] 与 CUPS 配合使用来连接 CUPS 打印机；该主题不在本章的讨论范围内。"
 
 #. type: Title ==
 #: documentation/content/en/articles/cups/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CUPS Troubleshooting"
-msgstr ""
+msgstr "CUPS 故障排除"
 
 #. type: Plain text
 #: documentation/content/en/articles/cups/_index.adoc:195
+#, fuzzy
 msgid ""
 "Difficulties with CUPS often lies in permissions.  First, double check the "
 "man:devfs[8] permissions as outlined above.  Next, check the actual "
@@ -360,38 +382,38 @@ msgid ""
 "administrator successfully connects to the CUPS server and configures the "
 "clients, it is advisable to revisit this configuration file and begin "
 "locking down access."
-msgstr ""
+msgstr "CUPS 故障通常与权限有关。首先，再次检查上文所述的 man:devfs[8] 权限。然后检查文件系统中已创建设备的实际权限。还应确认用户属于 `cups` 组。如果 CUPS Web 界面“管理”区域中的权限复选框似乎不起作用，可以手动备份位于 [.filename]#/usr/local/etc/cups/cupsd.conf# 的 CUPS 主配置文件，编辑各种配置选项并尝试不同的组合。下面列出了一个可用于测试的 [.filename]#/usr/local/etc/cups/cupsd.conf# 示例。请注意，此示例配置牺牲了安全性，以换取更简单的配置；管理员成功连接到 CUPS 服务器并配置客户端后，建议重新检查此配置文件并开始限制访问。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Log general information in error_log - change \"info\" to \"debug\" for\n"
 "# troubleshooting...\n"
 "LogLevel info\n"
-msgstr ""
+msgstr "# Log general information in error_log - change \"info\" to \"debug\" for\n# troubleshooting...\nLogLevel info\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Administrator user group...\n"
 "SystemGroup wheel\n"
-msgstr ""
+msgstr "# Administrator user group...\nSystemGroup wheel\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Listen for connections on Port 631.\n"
 "Port 631\n"
 "#Listen localhost:631\n"
 "Listen /var/run/cups.sock\n"
-msgstr ""
+msgstr "# Listen for connections on Port 631.\nPort 631\n#Listen localhost:631\nListen /var/run/cups.sock\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Show shared printers on the local network.\n"
 "Browsing On\n"
@@ -399,20 +421,20 @@ msgid ""
 "#BrowseAllow @LOCAL\n"
 "BrowseAllow 192.168.1.* # change to local LAN settings\n"
 "BrowseAddress 192.168.1.* # change to local LAN settings\n"
-msgstr ""
+msgstr "# Show shared printers on the local network.\nBrowsing On\nBrowseOrder allow,deny\n#BrowseAllow @LOCAL\nBrowseAllow 192.168.1.* # change to local LAN settings\nBrowseAddress 192.168.1.* # change to local LAN settings\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Default authentication type, when authentication is required...\n"
 "DefaultAuthType Basic\n"
 "DefaultEncryption Never # comment this line to allow encryption\n"
-msgstr ""
+msgstr "# Default authentication type, when authentication is required...\nDefaultAuthType Basic\nDefaultEncryption Never # comment this line to allow encryption\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow access to the server from any machine on the LAN\n"
 "<Location />\n"
@@ -420,11 +442,11 @@ msgid ""
 "  #Allow localhost\n"
 "  Allow 192.168.1.* # change to local LAN settings\n"
 "</Location>\n"
-msgstr ""
+msgstr "# Allow access to the server from any machine on the LAN\n<Location />\n  Order allow,deny\n  #Allow localhost\n  Allow 192.168.1.* # change to local LAN settings\n</Location>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow access to the admin pages from any machine on the LAN\n"
 "<Location /admin>\n"
@@ -433,11 +455,11 @@ msgid ""
 "  #Allow localhost\n"
 "  Allow 192.168.1.* # change to local LAN settings\n"
 "</Location>\n"
-msgstr ""
+msgstr "# Allow access to the admin pages from any machine on the LAN\n<Location /admin>\n  #Encryption Required\n  Order allow,deny\n  #Allow localhost\n  Allow 192.168.1.* # change to local LAN settings\n</Location>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow access to configuration files from any machine on the LAN\n"
 "<Location /admin/conf>\n"
@@ -447,11 +469,11 @@ msgid ""
 "  #Allow localhost\n"
 "  Allow 192.168.1.* # change to local LAN settings\n"
 "</Location>\n"
-msgstr ""
+msgstr "# Allow access to configuration files from any machine on the LAN\n<Location /admin/conf>\n  AuthType Basic\n  Require user @SYSTEM\n  Order allow,deny\n  #Allow localhost\n  Allow 192.168.1.* # change to local LAN settings\n</Location>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Set the default printer/job policies...\n"
 "<Policy default>\n"
@@ -463,11 +485,11 @@ msgid ""
 "    Require user @OWNER @SYSTEM\n"
 "    Order deny,allow\n"
 "  </Limit>\n"
-msgstr ""
+msgstr "# Set the default printer/job policies...\n<Policy default>\n  # Job-related operations must be done by the owner or an administrator...\n  <Limit Send-Document Send-URI Hold-Job Release-Job Restart-Job Purge-Jobs \\\nSet-Job-Attributes Create-Job-Subscription Renew-Subscription Cancel-Subscription \\\nGet-Notifications Reprocess-Job Cancel-Current-Job Suspend-Current-Job Resume-Job \\\nCUPS-Move-Job>\n    Require user @OWNER @SYSTEM\n    Order deny,allow\n  </Limit>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  # All administration operations require an administrator to authenticate...\n"
 "  <Limit Pause-Printer Resume-Printer Set-Printer-Attributes Enable-Printer \\\n"
@@ -479,25 +501,25 @@ msgid ""
 "    Require user @SYSTEM\n"
 "    Order deny,allow\n"
 "  </Limit>\n"
-msgstr ""
+msgstr "  # All administration operations require an administrator to authenticate...\n  <Limit Pause-Printer Resume-Printer Set-Printer-Attributes Enable-Printer \\\nDisable-Printer Pause-Printer-After-Current-Job Hold-New-Jobs Release-Held-New-Jobs \\\nDeactivate-Printer Activate-Printer Restart-Printer Shutdown-Printer Startup-Printer \\\nPromote-Job Schedule-Job-After CUPS-Add-Printer CUPS-Delete-Printer CUPS-Add-Class \\\nCUPS-Delete-Class CUPS-Accept-Jobs CUPS-Reject-Jobs CUPS-Set-Default>\n    AuthType Basic\n    Require user @SYSTEM\n    Order deny,allow\n  </Limit>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  # Only the owner or an administrator can cancel or authenticate a job...\n"
 "  <Limit Cancel-Job CUPS-Authenticate-Job>\n"
 "    Require user @OWNER @SYSTEM\n"
 "    Order deny,allow\n"
 "  </Limit>\n"
-msgstr ""
+msgstr "  # Only the owner or an administrator can cancel or authenticate a job...\n  <Limit Cancel-Job CUPS-Authenticate-Job>\n    Require user @OWNER @SYSTEM\n    Order deny,allow\n  </Limit>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/cups/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  <Limit All>\n"
 "    Order deny,allow\n"
 "  </Limit>\n"
 "</Policy>\n"
-msgstr ""
+msgstr "  <Limit All>\n    Order deny,allow\n  </Limit>\n</Policy>\n"

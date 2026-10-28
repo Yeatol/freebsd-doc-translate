@@ -19,24 +19,25 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/vm-design/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An easy to follow description of the design of the FreeBSD virtual memory system"
-msgstr ""
+msgstr "一篇易于理解的 FreeBSD 虚拟内存系统设计说明"
 
 #. type: Title =
 #: documentation/content/en/articles/vm-design/_index.adoc:1
 #: documentation/content/en/articles/vm-design/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Design elements of the FreeBSD VM system"
-msgstr ""
+msgstr "FreeBSD VM 系统的设计要素"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/vm-design/_index.adoc:45
+#, fuzzy
 msgid ""
 "This document is outdated and some sections do not accurately describe the "
 "current state of the VM system.  It is retained for historical purposes and "
 "may be updated over time."
-msgstr ""
+msgstr "本文档已过时，部分章节未能准确描述 VM 系统的当前状态。本文档因历史原因而保留，并可能随时间推移而更新。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:49
@@ -45,11 +46,13 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:51
+#, fuzzy
 msgid "Matthew Dillon <dillon@apollo.backplane.com>"
-msgstr ""
+msgstr "Matthew Dillon <dillon@apollo.backplane.com>"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:58
+#, fuzzy
 msgid ""
 "The title is really just a fancy way of saying that I am going to attempt to "
 "describe the whole VM enchilada, hopefully in a way that everyone can "
@@ -64,7 +67,7 @@ msgid ""
 "few years belongs to John Dyson and David Greenman.  Not being a historian "
 "like Kirk I will not attempt to tag all the various features with peoples "
 "names, since I will invariably get it wrong."
-msgstr ""
+msgstr "这个标题其实只是用一种比较花哨的方式表达：我打算尝试描述整个 VM 系统，希望每个人都能看懂。过去一年里，我专注于 FreeBSD 的多个主要内核子系统，其中 VM 和 Swap 子系统最有意思，而 NFS 则是“不得不做的苦差事”。我只重写了少量代码。在 VM 领域，我唯一进行过的重大重写是 swap 子系统。我的大部分工作都是清理和维护，只对代码进行了适度重写，没有对 VM 子系统中的算法进行重大调整。VM 子系统的理论基础大体保持不变，过去几年现代化工作的很大一部分功劳应归于 John Dyson 和 David Greenman。我不像 Kirk 那样是历史学家，因此不会尝试把各种功能都冠以某个人的名字，因为我肯定会弄错。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:60
@@ -79,6 +82,7 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:80
+#, fuzzy
 msgid ""
 "Before moving along to the actual design let's spend a little time on the "
 "necessity of maintaining and modernizing any long-living codebase.  In the "
@@ -106,10 +110,11 @@ msgid ""
 "have a severe case of \"not designed here\" and \"we are always right "
 "because our marketing department says so\".  I have little tolerance for "
 "anyone who cannot learn from history."
-msgstr ""
+msgstr "在继续讨论实际设计之前，我们先花一点时间谈谈维护和现代化任何长期存在的代码库的必要性。在编程领域，算法往往比代码更重要；正是由于 BSD 的学术渊源，从一开始人们就非常重视算法设计。越重视设计，通常就越能形成整洁灵活的代码库，随着时间推移也更容易修改、扩展或替换。虽然有些人认为 BSD 是一种“老旧”的操作系统，但我们这些参与其中的人更愿意把它看作一个“成熟”的代码库，其中的各个组件不断由现代代码修改、扩展或替换。它一直在演进，无论部分代码有多老，FreeBSD 始终处于前沿。这一点至关重要，但遗憾的是，很多人没有认识到。程序员可能犯的最大错误就是不从历史中吸取教训，而许多其他现代操作系统恰恰犯了这个错误。Windows NT(R) 就是最好的例子，其后果十分严重。Linux 在某种程度上也犯了这个错误，程度之深，足以让我们这些 BSD 人偶尔开几句玩笑。Linux 的问题只是缺乏可供比较的经验和历史，而 Linux 社区正像 BSD 社区曾经做的那样，通过持续开发代码，轻松而迅速地解决这个问题。另一方面，Windows NT(R) 的人反复犯下数十年前就已由 UNIX(R) 解决的错误，然后花上数年时间修复，一次又一次。他们严重患有“不是我们设计的”以及“营销部门说我们总是对的”这两种毛病。对于无法从历史中吸取教训的人，我几乎没有耐心。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:85
+#, fuzzy
 msgid ""
 "Much of the apparent complexity of the FreeBSD design, especially in the VM/"
 "Swap subsystem, is a direct result of having to solve serious performance "
@@ -118,29 +123,32 @@ msgid ""
 "direct comparison between platforms, these issues become most apparent when "
 "system resources begin to get stressed.  As I describe FreeBSD's VM/Swap "
 "subsystem the reader should always keep two points in mind:"
-msgstr ""
+msgstr "FreeBSD 设计表面上的许多复杂性，尤其是 VM/Swap 子系统中的复杂性，直接源于必须解决各种条件下出现的严重性能问题。这些问题并非算法设计不佳所致，而是由环境因素引起的。在不同平台之间进行直接比较时，当系统资源开始紧张，这些问题就会变得最为明显。在我介绍 FreeBSD 的 VM/Swap 子系统时，读者应始终牢记以下两点："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:87
+#, fuzzy
 msgid ""
 "The most important aspect of performance design is what is known as "
 "\"Optimizing the Critical Path\". It is often the case that performance "
 "optimizations add a little bloat to the code to make the critical path "
 "perform better."
-msgstr ""
+msgstr "性能设计中最重要的一点是所谓的“优化关键路径”。性能优化常常会让代码稍微变得臃肿一些，以改善关键路径的性能。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:88
+#, fuzzy
 msgid ""
 "A solid, generalized design outperforms a heavily-optimized design over the "
 "long run. While a generalized design may end up being slower than an heavily-"
 "optimized design when they are first implemented, the generalized design "
 "tends to be easier to adapt to changing conditions and the heavily-optimized "
 "design winds up having to be thrown away."
-msgstr ""
+msgstr "从长远来看，稳健、通用的设计胜过高度优化的设计。通用设计刚实现时，可能比高度优化的设计慢，但通常更容易适应不断变化的条件；而高度优化的设计最终往往不得不被抛弃。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:92
+#, fuzzy
 msgid ""
 "Any codebase that will survive and be maintainable for years must therefore "
 "be designed properly from the beginning even if it costs some performance.  "
@@ -148,16 +156,17 @@ msgid ""
 "better than programming in a high-level language because it produced code "
 "that was ten times as fast.  Today, the fallibility of that argument is "
 "obvious - as are the parallels to algorithmic design and code generalization."
-msgstr ""
+msgstr "因此，任何希望长期存续并保持可维护性的代码库，都必须从一开始就妥善设计，即使这会牺牲一些性能。二十年前，人们还在争论用汇编语言编程是否优于用高级语言编程，因为前者生成的代码速度快十倍。如今，这种论点的谬误显而易见，它与算法设计和代码通用化之间的相似之处也同样显而易见。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "VM Objects"
-msgstr ""
+msgstr "VM 对象"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:104
+#, fuzzy
 msgid ""
 "The best way to begin describing the FreeBSD VM system is to look at it from "
 "the perspective of a user-level process.  Each user process sees a single, "
@@ -171,10 +180,11 @@ msgid ""
 "works.  Such mappings can require modifications to remain private to the "
 "process making them.  The fork system call adds an entirely new dimension to "
 "the VM management problem on top of the complexity already given."
-msgstr ""
+msgstr "介绍 FreeBSD VM 系统的最佳方式，是从用户级进程的角度来看它。每个用户进程都拥有一个独立、私有、连续的 VM 地址空间，其中包含多种类型的内存对象。这些对象具有不同的特征。程序代码和程序数据实际上是同一个内存映射文件（正在运行的二进制文件），但程序代码为只读，而程序数据采用写时复制。程序 BSS 则只是按需分配并填零的内存，这称为按需零页填充。任意文件也可以映射到地址空间中，共享库机制就是这样工作的。此类映射可能需要进行修改，以确保其对创建映射的进程保持私有。系统调用 `fork` 又在已有的复杂性之上，为 VM 管理问题增添了全新的维度。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:110
+#, fuzzy
 msgid ""
 "A program binary data page (which is a basic copy-on-write page) illustrates "
 "the complexity.  A program binary contains a preinitialized data section "
@@ -186,10 +196,11 @@ msgid ""
 "page for that process.  Since the private copy has been modified, the VM "
 "system may no longer free it, because there is no longer any way to restore "
 "it later on."
-msgstr ""
+msgstr "程序二进制文件中的一个数据页（这是一个基本的写时复制页）便能说明其中的复杂性。程序二进制文件包含一个预初始化的数据段，该数据段最初直接映射自程序文件。程序加载到进程的 VM 空间时，该区域最初以内存映射的方式由程序二进制文件提供后备支持，因此 VM 系统可以释放或重用该页，并在之后从二进制文件重新加载它。然而，一旦进程修改了这些数据，VM 系统就必须为该进程创建该页的私有副本。由于这个私有副本已经被修改，VM 系统就不能再释放它，因为之后已无法以其他方式恢复它。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:117
+#, fuzzy
 msgid ""
 "You will notice immediately that what was originally a simple file mapping "
 "has become much more complex.  Data may be modified on a page-by-page basis "
@@ -204,10 +215,11 @@ msgid ""
 "is made copy-on-write again, since each process (parent and child) expects "
 "their own personal post-fork modifications to remain private to themselves "
 "and not affect the other."
-msgstr ""
+msgstr "你会立刻注意到，原本简单的文件映射已经变得复杂得多。数据可以按页逐一修改，而文件映射一次涵盖许多页。进程执行 fork 时，复杂性还会进一步增加。进程执行 fork 后会产生两个进程，它们各自拥有私有地址空间，其中包括原进程在调用 `fork()` 之前所做的任何修改。如果 VM 系统在 `fork()` 时完整复制数据，那就太不明智了，因为两个进程中至少有一个很可能从此只需读取该页，这样原始页就可以继续使用。原本的私有页再次变为写时复制页，因为每个进程（父进程和子进程）都希望 fork 后各自所做的修改只对自己私有，不影响另一个进程。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:126
+#, fuzzy
 msgid ""
 "FreeBSD manages all of this with a layered VM Object model.  The original "
 "binary program file winds up being the lowest VM Object layer.  A copy-on-"
@@ -219,53 +231,56 @@ msgid ""
 "basic example.  A `fork()` is a common operation for any *BSD system, so "
 "this example will consider a program that starts up, and forks.  When the "
 "process starts, the VM system creates an object layer, let's call this A:"
-msgstr ""
+msgstr "FreeBSD 通过分层 VM 对象模型来管理所有这些情况。原始二进制程序文件最终成为最低层的 VM 对象。在其上方会叠加一个写时复制层，用于保存必须从原始文件复制的页。如果程序修改了属于原始文件的数据页，VM 系统就会触发缺页异常，并在更高层复制该页。进程执行 fork 时，还会叠加额外的 VM 对象层。下面用一个相当基础的示例来帮助理解。`fork()` 是任何 *BSD 系统中的常见操作，因此本例将介绍一个启动后执行 fork 的程序。进程启动时，VM 系统会创建一个对象层，我们称它为 A："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/vm-design/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A picture"
-msgstr ""
+msgstr "一张图片"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vm-design/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fig1.png"
-msgstr ""
+msgstr "fig1.png"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:132
+#, fuzzy
 msgid ""
 "A represents the file-pages may be paged in and out of the file's physical "
 "media as necessary.  Paging in from the disk is reasonable for a program, "
 "but we really do not want to page back out and overwrite the executable.  "
 "The VM system therefore creates a second layer, B, that will be physically "
 "backed by swap space:"
-msgstr ""
+msgstr "A 代表文件——这些页可以根据需要从文件所在的物理介质调入或调出。对于程序而言，从磁盘调入是合理的，但我们绝不希望将其调出并覆盖可执行文件。因此，VM 系统会创建第二层 B，由 swap 空间为其提供物理后备支持："
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vm-design/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fig2.png"
-msgstr ""
+msgstr "fig2.png"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:138
+#, fuzzy
 msgid ""
 "On the first write to a page after this, a new page is created in B, and its "
 "contents are initialized from A.  All pages in B can be paged in or out to a "
 "swap device.  When the program forks, the VM system creates two new object "
 "layers-C1 for the parent, and C2 for the child-that rest on top of B:"
-msgstr ""
+msgstr "此后首次写入某个页时，会在 B 中创建一个新页，并用 A 中的内容初始化它。B 中的所有页都可以调入或调出到 swap 设备。程序执行 fork 时，VM 系统会创建两个新的对象层——父进程对应 C1，子进程对应 C2——它们都位于 B 之上："
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vm-design/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fig3.png"
-msgstr ""
+msgstr "fig3.png"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:150
+#, fuzzy
 msgid ""
 "In this case, let's say a page in B is modified by the original parent "
 "process.  The process will take a copy-on-write fault and duplicate the page "
@@ -279,16 +294,17 @@ msgid ""
 "the child process does an `exec()`.  Its current address space is usually "
 "replaced by a new address space representing a new file.  In this case, the "
 "C2 layer is destroyed:"
-msgstr ""
+msgstr "在本例中，假设原始父进程修改了 B 中的某个页。进程会触发写时复制缺页异常，并在 C1 中复制该页，使 B 中的原始页保持不变。现在再假设子进程修改了 B 中的同一页。进程会触发写时复制缺页异常，并在 C2 中复制该页。此时，B 中的原始页已完全被隐藏，因为 C1 和 C2 都有自己的副本。如果 B 不代表一个“真实”文件，理论上就可以销毁它；然而，这种优化粒度很细，实现起来并不简单。FreeBSD 不会进行这种优化。现在，假设（通常确实如此）子进程执行了 `exec()`。其当前地址空间通常会被代表新文件的新地址空间取代。在这种情况下，C2 层会被销毁："
 
 #. type: Target for macro image
 #: documentation/content/en/articles/vm-design/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fig4.png"
-msgstr ""
+msgstr "fig4.png"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:157
+#, fuzzy
 msgid ""
 "In this case, the number of children of B drops to one, and all accesses to "
 "B now go through C1.  This means that B and C1 can be collapsed together.  "
@@ -296,10 +312,11 @@ msgid ""
 "collapse.  Thus, even though the optimization in the previous step could not "
 "be made, we can recover the dead pages when either of the processes exit or "
 "`exec()`."
-msgstr ""
+msgstr "在这种情况下，B 的子层数量降为一，所有对 B 的访问现在都经由 C1。这意味着 B 和 C1 可以合并。在合并过程中，B 中任何同时存在于 C1 中的页都会从 B 中删除。因此，尽管前一步中的优化无法实现，当任一进程退出或执行 `exec()` 时，我们仍能回收无用页。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:164
+#, fuzzy
 msgid ""
 "This model creates a number of potential problems.  The first is that you "
 "can wind up with a relatively deep stack of layered VM Objects which can "
@@ -310,10 +327,11 @@ msgid ""
 "processes modify the same page, they both get their own private copies of "
 "the page and the original page in B is no longer accessible by anyone.  That "
 "page in B can be freed."
-msgstr ""
+msgstr "这种模型会带来一些潜在问题。首先，最终可能形成相当深的分层 VM 对象栈，在发生缺页异常时增加扫描时间和内存开销。进程执行 fork 后又再次执行 fork（无论是父进程还是子进程）时，就可能形成深层结构。第二个问题是，VM 对象栈深处可能存在无用且无法访问的页。在上一个示例中，如果父进程和子进程都修改同一页，它们就各自获得该页的私有副本，而 B 中的原始页将不再被任何进程访问。B 中的该页可以被释放。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:175
+#, fuzzy
 msgid ""
 "FreeBSD solves the deep layering problem with a special optimization called "
 "the \"All Shadowed Case\".  This case occurs if either C1 or C2 take "
@@ -331,20 +349,22 @@ msgid ""
 "forked machine VM Object stacks tend to not get much deeper then 4.  This is "
 "true of both the parent and the children and true whether the parent is "
 "doing the forking or whether the children cascade forks."
-msgstr ""
+msgstr "FreeBSD 通过一种称为“完全被遮蔽情况”的特殊优化来解决深层问题。如果 C1 或 C2 触发了足够多的 COW 缺页异常，使 B 中的所有页都被完全遮蔽，就会出现这种情况。假设 C1 达到了这一状态。C1 现在可以完全绕过 B，因此原本的 C1->B->A 和 C2->B->A 会变成 C1->A 和 C2->B->A。不过，注意接下来发生了什么——现在 B 只有一个引用（C2），因此我们可以将 B 和 C2 合并。最终，B 会被完全删除，结构变为 C1->A 和 C2->A。通常 B 中会包含大量页，C1 和 C2 都无法完全遮蔽它。不过，如果再次执行 fork 并创建一组 D 层，那么某个 D 层最终完全遮蔽 C1 或 C2 所代表的小得多的数据集的可能性就会大得多。这种优化可以应用于图中的任何位置，最终结果是，即使在频繁执行 fork 的机器上，VM 对象栈通常也不会超过 4 层。父进程和子进程都是如此，无论是父进程执行 fork，还是子进程连续执行 fork。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:179
+#, fuzzy
 msgid ""
 "The dead page problem still exists in the case where C1 or C2 do not "
 "completely overshadow B.  Due to our other optimizations this case does not "
 "represent much of a problem and we simply allow the pages to be dead.  If "
 "the system runs low on memory it will swap them out, eating a little swap, "
 "but that is it."
-msgstr ""
+msgstr "如果 C1 或 C2 没有完全遮蔽 B，无用页问题仍然存在。由于我们还有其他优化，这种情况并不会造成太大问题，我们只需让这些页保持无用状态即可。如果系统内存不足，就会将它们换出，占用少量 swap 空间，仅此而已。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:183
+#, fuzzy
 msgid ""
 "The advantage to the VM Object model is that `fork()` is extremely fast, "
 "since no real data copying need take place.  The disadvantage is that you "
@@ -352,16 +372,17 @@ msgid ""
 "handling down a little, and you spend memory managing the VM Object "
 "structures.  The optimizations FreeBSD makes proves to reduce the problems "
 "enough that they can be ignored, leaving no real disadvantage."
-msgstr ""
+msgstr "VM 对象模型的优点是，`fork()` 非常快，因为无需真正复制数据。缺点是，VM 对象可能形成相当复杂的分层结构，使缺页异常处理稍微变慢，而且还需要占用内存来管理 VM 对象结构。FreeBSD 所做的优化足以减轻这些问题，使其可以忽略不计，因此实际上没有缺点。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SWAP Layers"
-msgstr ""
+msgstr "SWAP 层"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:193
+#, fuzzy
 msgid ""
 "Private data pages are initially either copy-on-write or zero-fill pages.  "
 "When a change, and therefore a copy, is made, the original backing object "
@@ -371,111 +392,124 @@ msgid ""
 "otherwise have it.  FreeBSD allocates the swap management structure for a VM "
 "Object only when it is actually needed.  However, the swap management "
 "structure has had problems historically:"
-msgstr ""
+msgstr "私有数据页最初要么是写时复制页，要么是零填充页。一旦发生更改，也就意味着产生了副本，原始后备对象（通常是文件）就不能再用于保存该页副本，以便 VM 系统在需要将该页用于其他用途时释放它。这时就需要 SWAP。SWAP 用于为原本没有后备存储的内存分配后备存储。FreeBSD 仅在确有需要时，才为 VM 对象分配 swap 管理结构。不过，swap 管理结构过去一直存在一些问题："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:195
+#, fuzzy
 msgid ""
 "Under FreeBSD 3.X the swap management structure preallocates an array that "
 "encompasses the entire object requiring swap backing store-even if only a "
 "few pages of that object are swap-backed. This creates a kernel memory "
 "fragmentation problem when large objects are mapped, or processes with large "
 "runsizes (RSS) fork."
-msgstr ""
+msgstr "在 FreeBSD 3.X 中，swap 管理结构会预先分配一个数组，覆盖需要 swap 后备存储的整个对象，即使该对象只有少数几个页由 swap 提供后备支持。映射大型对象或具有较大常驻集（RSS）的进程执行 fork 时，这会导致内核内存碎片问题。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:196
+#, fuzzy
 msgid ""
 "Also, to keep track of swap space, a \"list of holes\" is kept in kernel "
 "memory, and this tends to get severely fragmented as well. Since the \"list "
 "of holes\" is a linear list, the swap allocation and freeing performance is "
 "a non-optimal O(n)-per-page."
-msgstr ""
+msgstr "此外，为了跟踪 swap 空间，内核内存中会维护一个“空洞列表”，而它也容易严重碎片化。由于“空洞列表”是线性列表，swap 的分配和释放性能并不理想，每页操作的复杂度为 O(n)。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:197
+#, fuzzy
 msgid ""
 "It requires kernel memory allocations to take place during the swap freeing "
 "process, and that creates low memory deadlock problems."
-msgstr ""
+msgstr "swap 释放过程中需要分配内核内存，这会导致低内存死锁问题。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:198
+#, fuzzy
 msgid ""
 "The problem is further exacerbated by holes created due to the interleaving "
 "algorithm."
-msgstr ""
+msgstr "交错算法产生的空洞会进一步加剧这个问题。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:199
+#, fuzzy
 msgid ""
 "Also, the swap block map can become fragmented fairly easily resulting in "
 "non-contiguous allocations."
-msgstr ""
+msgstr "此外，swap 块映射也很容易碎片化，导致分配的块不连续。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:200
+#, fuzzy
 msgid ""
 "Kernel memory must also be allocated on the fly for additional swap "
 "management structures when a swapout occurs."
-msgstr ""
+msgstr "发生换出时，还必须动态分配内存来创建额外的 swap 管理结构。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:203
+#, fuzzy
 msgid ""
 "It is evident from that list that there was plenty of room for improvement.  "
 "For FreeBSD 4.X, I completely rewrote the swap subsystem:"
-msgstr ""
+msgstr "从这份问题清单可以看出，改进空间很大。在 FreeBSD 4.X 中，我彻底重写了 swap 子系统："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:205
+#, fuzzy
 msgid ""
 "Swap management structures are allocated through a hash table rather than a "
 "linear array giving them a fixed allocation size and much finer granularity."
-msgstr ""
+msgstr "swap 管理结构通过哈希表而不是线性数组进行分配，因此其分配大小固定，粒度也细得多。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:206
+#, fuzzy
 msgid ""
 "Rather then using a linearly linked list to keep track of swap space "
 "reservations, it now uses a bitmap of swap blocks arranged in a radix tree "
 "structure with free-space hinting in the radix node structures. This "
 "effectively makes swap allocation and freeing an O(1) operation."
-msgstr ""
+msgstr "现在不再使用线性链表跟踪 swap 空间预留，而是使用按基数树结构组织的 swap 块位图，并在基数树节点结构中提供空闲空间提示。这实际上使 swap 的分配和释放操作复杂度达到 O(1)。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:207
+#, fuzzy
 msgid ""
 "The entire radix tree bitmap is also preallocated to avoid having to "
 "allocate kernel memory during critical low memory swapping operations. After "
 "all, the system tends to swap when it is low on memory so we should avoid "
 "allocating kernel memory at such times to avoid potential deadlocks."
-msgstr ""
+msgstr "整个基数树位图也会预先分配，以避免在内存紧张时进行关键的换出操作期间分配内核内存。毕竟，系统往往会在内存不足时进行换出，因此我们应避免此时分配内核内存，以防发生潜在的死锁。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:208
+#, fuzzy
 msgid ""
 "To reduce fragmentation the radix tree is capable of allocating large "
 "contiguous chunks at once, skipping over smaller fragmented chunks."
-msgstr ""
+msgstr "为了减少碎片，基数树能够一次分配较大的连续块，并跳过较小的碎片块。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:210
+#, fuzzy
 msgid ""
 "I did not take the final step of having an \"allocating hint pointer\" that "
 "would trundle through a portion of swap as allocations were made to further "
 "guarantee contiguous allocations or at least locality of reference, but I "
 "ensured that such an addition could be made."
-msgstr ""
+msgstr "我没有采取最后一步，添加一个“分配提示指针”，使其随着分配的进行遍历部分 swap 空间，从而进一步保证分配连续，或至少保证引用局部性；不过，我确保之后可以加入这一功能。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "When to free a page"
-msgstr ""
+msgstr "何时释放页面"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:217
+#, fuzzy
 msgid ""
 "Since the VM system uses all available memory for disk caching, there are "
 "usually very few truly-free pages.  The VM system depends on being able to "
@@ -484,10 +518,11 @@ msgid ""
 "function any VM system can perform because if it makes a poor selection, the "
 "VM system may be forced to unnecessarily retrieve pages from disk, seriously "
 "degrading system performance."
-msgstr ""
+msgstr "由于 VM 系统会利用所有可用内存进行磁盘缓存，真正完全空闲的页通常很少。VM 系统依赖于正确选择未在使用的页，以便将其用于新的分配。选择最适合释放的页，可能是任何 VM 系统最重要的功能，因为如果选择不当，VM 系统可能不得不从磁盘中不必要地重新读取页，从而严重降低系统性能。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:220
+#, fuzzy
 msgid ""
 "How much overhead are we willing to suffer in the critical path to avoid "
 "freeing the wrong page? Each wrong choice we make will cost us hundreds of "
@@ -495,18 +530,20 @@ msgid ""
 "we are willing to endure a significant amount of overhead to be sure that "
 "the right page is chosen.  This is why FreeBSD tends to outperform other "
 "systems when memory resources become stressed."
-msgstr ""
+msgstr "为了避免释放错误的页，我们愿意在关键路径中承受多少开销？每次选错都会耗费数十万 CPU 周期，并导致受影响的进程明显停顿，因此我们愿意承受相当大的开销，以确保选对页面。这就是为什么内存资源紧张时，FreeBSD 往往比其他系统表现更好。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:223
+#, fuzzy
 msgid ""
 "The free page determination algorithm is built upon a history of the use of "
 "memory pages.  To acquire this history, the system takes advantage of a page-"
 "used bit feature that most hardware page tables have."
-msgstr ""
+msgstr "空闲页判定算法以对内存页使用情况的历史记录为基础。为了获取这些历史信息，系统会利用大多数硬件页表都具备的页面使用位功能。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:229
+#, fuzzy
 msgid ""
 "In any case, the page-used bit is cleared and at some later point the VM "
 "system comes across the page again and sees that the page-used bit has been "
@@ -516,10 +553,11 @@ msgid ""
 "counter) for the physical page is developed.  When the VM system later needs "
 "to free up some pages, checking this history becomes the cornerstone of "
 "determining the best candidate page to reuse."
-msgstr ""
+msgstr "无论如何，页面使用位都会被清除；之后的某个时刻，VM 系统再次检查该页面时，会发现页面使用位已被置位。这表示该页面仍在被主动使用。如果该位仍为清除状态，则表示该页面当前未被主动使用。通过定期检查此位，系统可以为物理页面建立使用历史（以计数器的形式表示）。VM 系统之后需要释放一些页面时，检查这段历史就成为确定最适合重新使用的候选页面的关键。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:234
+#, fuzzy
 msgid ""
 "For those platforms that do not have this feature, the system actually "
 "emulates a page-used bit.  It unmaps or protects a page, forcing a page "
@@ -529,10 +567,11 @@ msgid ""
 "page is being used appears to be an expensive proposition, it is much less "
 "expensive than reusing the page for some other purpose only to find that a "
 "process needs it back and then have to go to disk."
-msgstr ""
+msgstr "对于不具备此功能的平台，系统实际上会模拟页面使用位。它会取消映射或保护页面，以便在页面再次被访问时强制触发缺页错误。发生缺页错误时，系统只需将页面标记为已使用，然后解除页面保护，使其可以继续使用。为了判断页面是否正在被使用而触发此类缺页错误，看起来代价很高；但与将页面用于其他用途后才发现某个进程需要取回该页面、进而不得不访问磁盘相比，这样做的代价要低得多。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:244
+#, fuzzy
 msgid ""
 "FreeBSD makes use of several page queues to further refine the selection of "
 "pages to reuse as well as to determine when dirty pages must be flushed to "
@@ -552,10 +591,11 @@ msgid ""
 "cache queue are considered to be \"immediately freeable\" and will be reused "
 "in an LRU (least-recently used) fashion when the system needs to allocate "
 "new memory."
-msgstr ""
+msgstr "FreeBSD 使用多个页面队列，进一步细化要重新使用的页面选择，并确定何时必须将脏页刷新到其后备存储。由于 FreeBSD 中的页表是动态实体，因此将页面从使用它的任何进程的地址空间中取消映射，几乎不需要付出任何代价。根据页面使用计数器选定候选页面后，系统正是这样处理的。系统必须区分可以随时释放的干净页，以及必须先写入后备存储才能重新使用的脏页。找到候选页面后，如果它是脏页，就将其移入非活动队列；如果它是干净页，就将其移入缓存队列。系统会根据脏页与干净页的比例，使用单独的算法确定何时必须将非活动队列中的脏页刷新到磁盘。完成刷新后，这些页面会从非活动队列移入缓存队列。此时，缓存队列中的页面仍可通过 VM 缺页以相对较低的代价重新激活。不过，缓存队列中的页面被视为“可立即释放”，系统需要分配新内存时，会按 LRU（最近最少使用）顺序重新使用它们。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:248
+#, fuzzy
 msgid ""
 "It is important to note that the FreeBSD VM system attempts to separate "
 "clean and dirty pages for the express reason of avoiding unnecessary flushes "
@@ -565,10 +605,11 @@ msgid ""
 "counts and high active queue counts when doing a `systat -vm` command.  As "
 "the VM system becomes more stressed, it makes a greater effort to maintain "
 "the various page queues at the levels determined to be the most effective."
-msgstr ""
+msgstr "需要注意的是，FreeBSD VM 系统之所以尝试将干净页和脏页分开，是为了避免不必要地刷新脏页（这会占用 I/O 带宽）；而且，当内存子系统未承受压力时，它也不会无故在各个页面队列之间移动页面。这就是为什么运行 `systat -vm` 命令时，有些系统的缓存队列计数很低，而活动队列计数很高。随着 VM 系统承受的压力增大，它会更努力地将各个页面队列维持在被认为最有效的水平。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:252
+#, fuzzy
 msgid ""
 "An urban myth has circulated for years that Linux did a better job avoiding "
 "swapouts than FreeBSD, but this in fact is not true.  What was actually "
@@ -576,16 +617,17 @@ msgid ""
 "room for more disk cache while Linux was keeping unused pages in core and "
 "leaving less memory available for cache and process pages.  I do not know "
 "whether this is still true today."
-msgstr ""
+msgstr "多年来一直流传着一种说法，认为 Linux 比 FreeBSD 更善于避免换出；但事实并非如此。实际情况是，FreeBSD 会主动换出未使用的页面，为更多磁盘缓存腾出空间；而 Linux 会将未使用的页面保留在内存中，留给缓存和进程页面的内存就更少了。我不知道如今情况是否依然如此。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Pre-Faulting and Zeroing Optimizations"
-msgstr ""
+msgstr "预先缺页与清零优化"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:264
+#, fuzzy
 msgid ""
 "Taking a VM fault is not expensive if the underlying page is already in core "
 "and can simply be mapped into the process, but it can become expensive if "
@@ -602,10 +644,11 @@ msgid ""
 "page faults, even when you run it over and over again.  These are zero-fill "
 "faults, not program code faults (which were pre-faulted in already).  Pre-"
 "copying pages on exec or fork is an area that could use more study."
-msgstr ""
+msgstr "如果底层页面已在内存中，可以直接映射到进程，那么处理 VM 缺页的代价并不高；但如果经常大量发生缺页，代价就会变得很高。反复运行 man:ls[1] 或 man:ps[1] 之类的程序就是一个很好的例子。如果程序二进制已映射到内存中，却尚未映射到页表中，那么每次运行程序时，它要访问的所有页面都必须逐一触发缺页。这些页面既然已经位于 VM 缓存中，这样做就没有必要，因此 FreeBSD 会尝试预先填充进程的页表，将 VM 缓存中已有的页面映射进去。FreeBSD 目前还不会在 exec 时对某些页面预先执行写时复制。例如，运行 `vmstat 1` 时再运行 man:ls[1]，你会发现即使反复运行，缺页次数也总是固定的。这些是清零填充缺页，而不是程序代码缺页（后者已预先处理）。在 exec 或 fork 时预先复制页面，是一个值得进一步研究的领域。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:273
+#, fuzzy
 msgid ""
 "A large percentage of page faults that occur are zero-fill faults.  You can "
 "usually see this by observing the `vmstat -s` output.  These occur when a "
@@ -619,16 +662,17 @@ msgid ""
 "number of pages the system pre-zeros is limited to avoid blowing away the "
 "memory caches.  This is an excellent example of adding complexity to the VM "
 "system to optimize the critical path."
-msgstr ""
+msgstr "发生的缺页中，有很大一部分是清零填充缺页。通常可以通过查看 `vmstat -s` 的输出发现这一点。当进程访问其 BSS 区域中的页面时，就会发生这类缺页。BSS 区域预期初始值为零，但 VM 系统不会分配任何内存，直到进程实际访问该区域。发生缺页时，VM 系统不仅必须分配一个新页面，还必须将其清零。为了优化清零操作，VM 系统可以预先将页面清零并标记为已清零；发生清零填充缺页时，也可以请求已预先清零的页面。只要 CPU 空闲，系统就会执行预清零；但为了避免冲掉内存缓存，预清零的页面数量受到限制。这是一个很好的例子，说明了为何要让 VM 系统变得更复杂，以优化关键路径。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Page Table Optimizations"
-msgstr ""
+msgstr "页表优化"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:285
+#, fuzzy
 msgid ""
 "The page table optimizations make up the most contentious part of the "
 "FreeBSD VM design and they have shown some strain with the advent of serious "
@@ -647,10 +691,11 @@ msgid ""
 "requires kernel tuning to accommodate large-shared-address-space situations "
 "such as those that can occur in a news system because it may run out of "
 "`pv_entry` structures."
-msgstr ""
+msgstr "页表优化是 FreeBSD VM 设计中争议最大的部分；随着 `mmap()` 被大量使用，这些优化也显露出了一些局限。我认为大多数 BSD 都采用了这一特性，不过我不确定它最初是什么时候引入的。主要有两项优化。第一，硬件页表不保存持久状态，因此可以随时丢弃，只需承担少量管理开销。第二，系统中的每个活动页表项都有一个对应的 `pv_entry` 结构，并与 `vm_page` 结构关联。FreeBSD 只需遍历已知存在的映射；而 Linux 必须检查所有__可能__包含特定映射的页表。在某些情况下，这会导致 O(n^2) 的开销。正因如此，内存压力较大时，FreeBSD 往往更善于选择要重新使用或换出的页面，从而在高负载下获得更好的性能。不过，对于新闻系统等可能出现大型共享地址空间的场景，FreeBSD 需要调整内核参数，因为系统可能会耗尽 `pv_entry` 结构。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:290
+#, fuzzy
 msgid ""
 "Both Linux and FreeBSD need work in this area.  FreeBSD is trying to "
 "maximize the advantage of a potentially sparse active-mapping model (not all "
@@ -662,7 +707,7 @@ msgid ""
 "case where many processes are sparsely-mapping the same shared library and "
 "also runs non-optimally when trying to determine whether a page can be "
 "reused or not."
-msgstr ""
+msgstr "Linux 和 FreeBSD 在这一领域都还需要改进。FreeBSD 正尝试充分发挥潜在稀疏活动映射模型的优势（例如，并非所有进程都需要映射共享库的所有页面），而 Linux 则在尝试简化其算法。通常，FreeBSD 在此处具有性能优势，代价是多耗费一些内存；但当一个大文件被数百个进程大量共享时，FreeBSD 就会遇到瓶颈。另一方面，当许多进程以稀疏方式映射同一个共享库时，Linux 会遇到瓶颈；而且在判断某个页面是否可以重新使用时，Linux 的表现也不理想。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:292
@@ -672,6 +717,7 @@ msgstr "结论"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:297
+#, fuzzy
 msgid ""
 "Virtual memory in modern operating systems must address a number of "
 "different issues efficiently and for many different usage patterns.  The "
@@ -680,22 +726,23 @@ msgid ""
 "cleanly replace large sections of the code.  There have been a number of "
 "improvements to the FreeBSD VM system in the last several years, and work is "
 "ongoing."
-msgstr ""
+msgstr "现代操作系统中的虚拟内存必须高效地处理许多不同问题，并适应多种使用模式。BSD 历来采用模块化、算法化的方法，使我们能够研究并理解当前实现，也能相对干净地替换大段代码。过去几年中，FreeBSD VM 系统有了许多改进，相关工作仍在继续。"
 
 #. type: Title ==
 #: documentation/content/en/articles/vm-design/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bonus QA session by Allen Briggs"
-msgstr ""
+msgstr "Allen Briggs 补充问答"
 
 #. type: Title ===
 #: documentation/content/en/articles/vm-design/_index.adoc:301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is the interleaving algorithm that you refer to in your listing of the ills of the FreeBSD 3.X swap arrangements?"
-msgstr ""
+msgstr "你在列举 FreeBSD 3.X 交换空间布局缺陷时提到的交错算法是什么？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/vm-design/_index.adoc:307
+#, fuzzy
 msgid ""
 "FreeBSD uses a fixed swap interleave which defaults to 4.  This means that "
 "FreeBSD reserves space for four swap areas even if you only have one, two, "
@@ -704,16 +751,17 @@ msgid ""
 "swap areas.  For example, if you have two swap areas A and B FreeBSD's "
 "address space representation for that swap area will be interleaved in "
 "blocks of 16 pages:"
-msgstr ""
+msgstr "FreeBSD 使用固定的交换空间交错数，默认值为 4。这意味着即使只有一个、两个或三个交换区，FreeBSD 也会为四个交换区预留空间。由于交换空间采用交错方式，如果实际上没有四个交换区，那么表示“四个交换区”的线性地址空间就会出现碎片。例如，如果有两个交换区 A 和 B，FreeBSD 对该交换空间的地址表示会按每 16 个页面为一块进行交错："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/vm-design/_index.adoc:310
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A B C D A B C D A B C D A B C D\n"
-msgstr ""
+msgstr "A B C D A B C D A B C D A B C D\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:317
+#, fuzzy
 msgid ""
 "FreeBSD 3.X uses a \"sequential list of free regions\" approach to "
 "accounting for the free swap areas.  The idea is that large blocks of free "
@@ -723,19 +771,21 @@ msgid ""
 "will have A and B shown as \"free\" and C and D shown as \"all allocated\".  "
 "Each A-B sequence requires a list node to account for because C and D are "
 "holes, so the list node cannot be combined with the next A-B sequence."
-msgstr ""
+msgstr "FreeBSD 3.X 使用“空闲区域顺序列表”的方式来跟踪空闲交换区。其思路是用一个列表节点表示较大的线性空闲空间块（[.filename]#kern/subr_rlist.c#）。但由于碎片化，顺序列表最终会变得极其零碎。在上面的例子中，完全未使用的交换空间会将 A 和 B 标记为“空闲”，将 C 和 D 标记为“已全部分配”。每个 A-B 序列都需要一个列表节点来记录，因为 C 和 D 是空洞，所以该节点无法与下一个 A-B 序列合并。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:319
+#, fuzzy
 msgid ""
 "Why do we interleave our swap space instead of just tack swap areas onto the "
 "end and do something fancier? It is a whole lot easier to allocate linear "
 "swaths of an address space and have the result automatically be interleaved "
 "across multiple disks than it is to try to put that sophistication elsewhere."
-msgstr ""
+msgstr "为什么要交错使用交换空间，而不是把交换区直接接在末尾，再用更复杂的方式处理？分配连续的地址空间块，并让结果自动分布到多块磁盘上，要容易得多；如果把这种复杂性放到其他地方处理，事情就会难得多。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:324
+#, fuzzy
 msgid ""
 "The fragmentation causes other problems.  Being a linear list under 3.X, and "
 "having such a huge amount of inherent fragmentation, allocating and freeing "
@@ -745,10 +795,11 @@ msgid ""
 "need to allocate KVM during a swap operation to create a new list node which "
 "can lead to a deadlock if the system is trying to pageout pages in a low-"
 "memory situation."
-msgstr ""
+msgstr "这种碎片化还会引发其他问题。在 3.X 中，交换空间使用线性列表；由于存在大量固有碎片，分配和释放交换空间最终会成为 O(N) 算法，而不是 O(1) 算法。再加上其他因素（如频繁交换），开销就会达到 O(N^2) 甚至 O(N^3) 级别，这很糟糕。3.X 系统在交换操作期间还可能需要分配 KVM 来创建新的列表节点；如果系统在内存不足时正试图将页面换出，就可能因此陷入死锁。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:329
+#, fuzzy
 msgid ""
 "Under 4.X we do not use a sequential list.  Instead we use a radix tree and "
 "bitmaps of swap blocks rather than ranged list nodes.  We take the hit of "
@@ -757,66 +808,71 @@ msgid ""
 "block) instead of a linked list of nodes.  The use of a radix tree instead "
 "of a sequential list gives us nearly O(1) performance no matter how "
 "fragmented the tree becomes."
-msgstr ""
+msgstr "在 4.X 中，我们不使用顺序列表，而是使用基数树和交换块位图，而非范围列表节点。我们会预先分配整个交换区所需的所有位图，但由于使用位图（每个块占一位）而不是链表节点，最终浪费的内存更少。使用基数树而非顺序列表，即使树变得非常碎片化，我们也能获得近乎 O(1) 的性能。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vm-design/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How is the separation of clean and dirty (inactive) pages related to the situation where you see low cache queue counts and high active queue counts in systat -vm? Do the systat stats roll the active and dirty pages together for the active queue count?"
-msgstr ""
+msgstr "干净页与脏（非活动）页分离这一做法，和 `systat -vm` 中缓存队列计数较低、活动队列计数较高的情况有什么关系？`systat` 的统计数据是否会把活动页和脏页合并计入活动队列计数？"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:335
+#, fuzzy
 msgid ""
 "Yes, that is confusing.  The relationship is \"goal\" verses \"reality\".  "
 "Our goal is to separate the pages but the reality is that if we are not in a "
 "memory crunch, we do not really have to."
-msgstr ""
+msgstr "是的，这确实令人困惑。两者的关系在于“目标”和“现实”。我们的目标是将页面分开，但现实是，如果系统没有内存压力，我们实际上不必这样做。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:337
+#, fuzzy
 msgid ""
 "What this means is that FreeBSD will not try very hard to separate out dirty "
 "pages (inactive queue) from clean pages (cache queue) when the system is not "
 "being stressed, nor will it try to deactivate pages (active queue -> "
 "inactive queue) when the system is not being stressed, even if they are not "
 "being used."
-msgstr ""
+msgstr "这意味着，当系统没有承受压力时，FreeBSD 不会特别积极地将脏页（非活动队列）与干净页（缓存队列）分开；即使活动队列中的页面未被使用，它也不会积极地将页面停用（从活动队列移到非活动队列）。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vm-design/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "In man:ls[1] the / vmstat 1 example, would not some of the page faults be data page faults (COW from executable file to private page)? I.e., I would expect the page faults to be some zero-fill and some program data. Or are you implying that FreeBSD does do pre-COW for the program data?"
-msgstr ""
+msgstr "在 man:ls[1] / vmstat 1 的示例中，部分缺页难道不是数据页面缺页（从可执行文件到私有页面的 COW）吗？也就是说，我预计这些缺页中会有一些是清零填充缺页，另一些是程序数据缺页。还是说你的意思是 FreeBSD 确实会对程序数据预先执行 COW？"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:344
+#, fuzzy
 msgid ""
 "A COW fault can be either zero-fill or program-data.  The mechanism is the "
 "same either way because the backing program-data is almost certainly already "
 "in the cache.  I am indeed lumping the two together.  FreeBSD does not pre-"
 "COW program data or zero-fill, but it _does_ pre-map pages that exist in its "
 "cache."
-msgstr ""
+msgstr "COW 缺页既可能是清零填充缺页，也可能是程序数据缺页。无论哪种情况，机制都相同，因为后备程序数据几乎肯定已经在缓存中。我确实把这两种情况合并在一起说了。FreeBSD 不会对程序数据或清零填充预先执行 COW，但它__确实__会预先映射缓存中已有的页面。"
 
 #. type: Title ===
 #: documentation/content/en/articles/vm-design/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "In your section on page table optimizations, can you give a little more detail about pv_entry and vm_page (or should vm_page be vm_pmap-as in 4.4, cf. pp. 180-181 of McKusick, Bostic, Karel, Quarterman)? Specifically, what kind of operation/reaction would require scanning the mappings?"
-msgstr ""
+msgstr "在你关于页表优化的章节中，能否进一步说明 `pv_entry` 和 `vm_page`（或者这里应该是 vm_pmap，如 McKusick、Bostic、Karel、Quarterman 合著的书第 180—181 页中 4.4 版所述）？具体来说，什么操作或响应会要求扫描映射？"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:349
+#, fuzzy
 msgid ""
 "A `vm_page` represents an (object,index#) tuple. A `pv_entry` represents a "
 "hardware page table entry (pte).  If you have five processes sharing the "
 "same physical page, and three of those processes's page tables actually map "
 "the page, that page will be represented by a single `vm_page` structure and "
 "three `pv_entry` structures."
-msgstr ""
+msgstr "`vm_page` 表示一个 (object,index#) 元组。`pv_entry` 表示一个硬件页表项（pte）。如果有五个进程共享同一个物理页面，其中三个进程的页表实际映射了该页面，那么该页面会由一个 `vm_page` 结构和三个 `pv_entry` 结构表示。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:352
+#, fuzzy
 msgid ""
 "`pv_entry` structures only represent pages mapped by the MMU (one `pv_entry` "
 "represents one pte).  This means that when we need to remove all hardware "
@@ -824,10 +880,11 @@ msgid ""
 "out, clear it, dirty it, and so forth) we can simply scan the linked list of "
 "pv_entry's associated with that vm_page to remove or modify the pte's from "
 "their page tables."
-msgstr ""
+msgstr "`pv_entry` 结构只表示由 MMU 映射的页面（一个 `pv_entry` 表示一个 pte）。这意味着，当我们需要移除对某个 `vm_page` 的所有硬件引用（例如为了将页面用于其他用途、将其换出、清除或标记为脏页等）时，只需扫描与该 `vm_page` 关联的 `pv_entry` 链表，即可从相应页表中移除或修改 pte。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:359
+#, fuzzy
 msgid ""
 "Under Linux there is no such linked list.  To remove all the hardware page "
 "table mappings for a `vm_page` linux must index into every VM object that "
@@ -842,18 +899,20 @@ msgid ""
 "are mapped in, reducing the number of accesses into the page tables at the "
 "same pte offset will often avoid blowing away the L1 cache line for that "
 "offset, which can lead to better performance."
-msgstr ""
+msgstr "Linux 没有这样的链表。要移除某个 `vm_page` 的所有硬件页表映射，Linux 必须索引到所有__可能__映射了该页面的 VM 对象。例如，如果有 50 个进程都映射了同一个共享库，现在要移除该库中的页面 X，就必须索引这 50 个进程各自的页表，即使实际上只有 10 个进程映射了该页面。因此，Linux 以设计简单为代价换取性能。许多在 FreeBSD 中复杂度为 O(1) 或 O(小 N) 的 VM 算法，在 Linux 中最终会达到 O(N)、O(N^2) 甚至更高。由于同一个对象中特定页面对应的 pte 往往位于所有映射该页面的页表中的相同偏移处，因此减少对页表的访问，并集中访问相同 pte 偏移，通常可以避免冲掉该偏移处的 L1 缓存行，从而提高性能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:361
+#, fuzzy
 msgid ""
 "FreeBSD has added complexity (the `pv_entry` scheme) to increase performance "
 "(to limit page table accesses to _only_ those pte's that need to be "
 "modified)."
-msgstr ""
+msgstr "FreeBSD 增加了复杂性（`pv_entry` 机制）来提高性能，将页表访问限制为__仅__访问需要修改的 pte。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:365
+#, fuzzy
 msgid ""
 "But FreeBSD has a scaling problem that Linux does not in that there are a "
 "limited number of `pv_entry` structures and this causes problems when you "
@@ -861,10 +920,11 @@ msgid ""
 "structures even though there is plenty of free memory available.  This can "
 "be fixed easily enough by bumping up the number of `pv_entry` structures in "
 "the kernel config, but we really need to find a better way to do it."
-msgstr ""
+msgstr "不过，FreeBSD 存在 Linux 没有的扩展性问题：`pv_entry` 结构数量有限，因此在数据被大量共享时会出现问题。此时，即使仍有大量可用内存，也可能耗尽 `pv_entry` 结构。通过在内核配置中增加 `pv_entry` 结构的数量，可以轻松解决这个问题；但我们确实需要找到更好的方法。"
 
 #. type: Plain text
 #: documentation/content/en/articles/vm-design/_index.adoc:368
+#, fuzzy
 msgid ""
 "In regards to the memory overhead of a page table verses the `pv_entry` "
 "scheme: Linux uses \"permanent\" page tables that are not throw away, but "
@@ -873,4 +933,4 @@ msgid ""
 "actually-mapped pte.  I think memory utilization winds up being about the "
 "same, giving FreeBSD an algorithmic advantage with its ability to throw away "
 "page tables at will with very low overhead."
-msgstr ""
+msgstr "关于页表与 `pv_entry` 机制的内存开销：Linux 使用不会被丢弃的“永久”页表，但不需要为每个可能映射的 pte 都配备一个 `pv_entry`。FreeBSD 使用可丢弃的页表，但会为每个实际映射的 pte 添加一个 `pv_entry` 结构。我认为两者最终的内存利用率大致相同；而 FreeBSD 可以随时以极低的开销丢弃页表，因此在算法上占有优势。"

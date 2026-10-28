@@ -17,100 +17,107 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flavors are a way to have multiple variations of a port"
-msgstr ""
+msgstr "Flavors 是一种为同一个 port 提供多种变体的方式"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 7. Flavors"
-msgstr ""
+msgstr "第 7 章：Flavors"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flavors"
-msgstr ""
+msgstr "Flavors"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An Introduction to Flavors"
-msgstr ""
+msgstr "Flavors 简介"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:55
+#, fuzzy
 msgid ""
 "Flavors are a way to have multiple variations of a port.  The port is built "
 "multiple times, with variations."
-msgstr ""
+msgstr "Flavors 是一种为同一个 port 提供多种变体的方式。port 会以不同变体构建多次。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:57
+#, fuzzy
 msgid ""
 "For example, a port can have a normal version with many features and quite a "
 "few dependencies, and a light \"lite\" version with only basic features and "
 "minimal dependencies."
-msgstr ""
+msgstr "例如，一个 port 可以有功能丰富、依赖较多的常规版本，也可以有仅包含基本功能且依赖最少的精简版“lite”。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:59
+#, fuzzy
 msgid ""
 "Another example could be, a port can have a GTK flavor and a QT flavor, "
 "depending on which toolkit it uses."
-msgstr ""
+msgstr "另一个例子是，一个 port 可以提供 GTK flavor 和 QT flavor，具体取决于它使用哪种工具包。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using FLAVORS"
-msgstr ""
+msgstr "使用 FLAVORS"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:65
+#, fuzzy
 msgid ""
 "To declare a port having multiple flavors, add `FLAVORS` to its [."
 "filename]#Makefile#.  The first flavor in `FLAVORS` is the default flavor."
-msgstr ""
+msgstr "要声明一个 port 有多个 flavor，请在其 [.filename]#Makefile# 中添加 `FLAVORS`。`FLAVORS` 中的第一个 flavor 是默认 flavor。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:69
+#, fuzzy
 msgid ""
 "It can help simplify the logic of the [.filename]#Makefile# to also define "
 "`FLAVOR` as:"
-msgstr ""
+msgstr "同时定义 `FLAVOR` 可以简化 [.filename]#Makefile# 中的逻辑："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FLAVOR?=\t${FLAVORS:[1]}\n"
-msgstr ""
+msgstr "FLAVOR?=\t${FLAVORS:[1]}\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:79
+#, fuzzy
 msgid ""
 "To distinguish flavors from options, which are always uppercase letters, "
 "flavor names can _only_ contain lowercase letters, numbers, and the "
 "underscore `_`."
-msgstr ""
+msgstr "为将 flavor 与始终使用大写字母的选项区分开来，flavor 名称__只能__包含小写字母、数字和下划线 `_`。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Basic Flavors Usage"
-msgstr ""
+msgstr "Flavors 的基本用法"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:86
+#, fuzzy
 msgid ""
 "If a port has a \"lite\" slave port, the slave port can be removed, and the "
 "port can be converted to flavors with:"
-msgstr ""
+msgstr "如果一个 port 有一个“lite”从属 port，可以移除该从属 port，并将这个 port 转换为 flavors："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "FLAVORS=\tdefault lite\n"
 "lite_PKGNAMESUFFIX=\t-lite\n"
@@ -118,24 +125,25 @@ msgid ""
 ".if ${FLAVOR:U} != lite\n"
 "[enable non lite features]\n"
 ".endif\n"
-msgstr ""
+msgstr "FLAVORS=\tdefault lite\nlite_PKGNAMESUFFIX=\t-lite\n[...]\n.if ${FLAVOR:U} != lite\n[enable non lite features]\n.endif\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Another Basic Flavors Usage"
-msgstr ""
+msgstr "Flavors 的另一种基本用法"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:104
+#, fuzzy
 msgid ""
 "If a port has a `-nox11` slave port, the slave port can be removed, and the "
 "port can be converted to flavors with:"
-msgstr ""
+msgstr "如果一个 port 有一个 `-nox11` 从属 port，可以移除该从属 port，并将这个 port 转换为 flavors："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "FLAVORS=\tx11 nox11\n"
 "FLAVOR?=\t${FLAVORS:[1]}\n"
@@ -144,83 +152,85 @@ msgid ""
 ".if ${FLAVOR} == x11\n"
 "[enable x11 features]\n"
 ".endif\n"
-msgstr ""
+msgstr "FLAVORS=\tx11 nox11\nFLAVOR?=\t${FLAVORS:[1]}\nnox11_PKGNAMESUFFIX=\t-nox11\n[...]\n.if ${FLAVOR} == x11\n[enable x11 features]\n.endif\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "More Complex Flavors Usage"
-msgstr ""
+msgstr "Flavors 的更复杂用法"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:125
+#, fuzzy
 msgid ""
 "Here is a slightly edited excerpt of what is present in package:devel/"
 "libpeas[], a port that uses the crossref:flavors[flavors-auto-python,Python "
 "flavors].  With the default Python 2 and 3 versions being 2.7 and 3.6, it "
 "will automatically get `FLAVORS=py27 py36`"
-msgstr ""
+msgstr "下面是对 package:devel/libpeas[] 中内容稍作编辑后的摘录。这个 port 使用 crossref:flavors[flavors-auto-python,Python flavors]。默认的 Python 2 和 3 版本分别为 2.7 和 3.6，因此它会自动获得 `FLAVORS=py27 py36`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\t\tgnome python\n"
 "USE_PYTHON=\tflavors \n"
-msgstr ""
+msgstr "USES=\t\tgnome python\nUSE_PYTHON=\tflavors \n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ".if ${FLAVOR:Upy27:Mpy2*} \n"
 "USE_GNOME=\tpygobject3 \n"
-msgstr ""
+msgstr ".if ${FLAVOR:Upy27:Mpy2*} \nUSE_GNOME=\tpygobject3 \n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CONFIGURE_ARGS+=\t--enable-python2 --disable-python3\n"
-msgstr ""
+msgstr "CONFIGURE_ARGS+=\t--enable-python2 --disable-python3\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "BUILD_WRKSRC=\t${WRKSRC}/loaders/python \n"
 "INSTALL_WRKSRC=\t${WRKSRC}/loaders/python \n"
 ".else # py3*\n"
 "USE_GNOME+=\tpy3gobject3 \n"
-msgstr ""
+msgstr "BUILD_WRKSRC=\t${WRKSRC}/loaders/python \nINSTALL_WRKSRC=\t${WRKSRC}/loaders/python \n.else # py3*\nUSE_GNOME+=\tpy3gobject3 \n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "CONFIGURE_ARGS+=\t--disable-python2 --enable-python3 \\\n"
 "\t\t\tac_cv_path_PYTHON3_CONFIG=${LOCALBASE}/bin/python${PYTHON_VER}-config \n"
-msgstr ""
+msgstr "CONFIGURE_ARGS+=\t--disable-python2 --enable-python3 \\\n\t\t\tac_cv_path_PYTHON3_CONFIG=${LOCALBASE}/bin/python${PYTHON_VER}-config \n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "BUILD_WRKSRC=\t${WRKSRC}/loaders/python3 \n"
 "INSTALL_WRKSRC=\t${WRKSRC}/loaders/python3 \n"
 ".endif\n"
-msgstr ""
+msgstr "BUILD_WRKSRC=\t${WRKSRC}/loaders/python3 \nINSTALL_WRKSRC=\t${WRKSRC}/loaders/python3 \n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "py34_PLIST=\t${.CURDIR}/pkg-plist-py3 \n"
 "py35_PLIST=\t${.CURDIR}/pkg-plist-py3 \n"
 "py36_PLIST=\t${.CURDIR}/pkg-plist-py3\n"
-msgstr ""
+msgstr "py34_PLIST=\t${.CURDIR}/pkg-plist-py3 \npy35_PLIST=\t${.CURDIR}/pkg-plist-py3 \npy36_PLIST=\t${.CURDIR}/pkg-plist-py3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:161
+#, fuzzy
 msgid ""
 "This port does not use `USE_PYTHON=distutils` but needs Python flavors "
 "anyway.  To guard against `FLAVOR` being empty, which would cause a man:"
@@ -234,436 +244,479 @@ msgid ""
 "when the built with Python 3. As there are three possible Python 3 versions, "
 "set `PLIST` for all three using the crossref:flavors[flavors-using-helpers,"
 "helper]."
-msgstr ""
+msgstr "这个 port 没有使用 `USE_PYTHON=distutils`，但仍需要 Python flavors。为防止 `FLAVOR` 为空而导致 man:make[1] 错误，请在字符串比较中使用 `${FLAVOR:U}`，而不要使用 `${FLAVOR}`。Gnome Python gobject3 绑定有两个不同的名称：Python 2 对应 pygobject3，Python 3 对应 py3gobject3。`configure` 脚本必须在 [.filename]#${WRKSRC}# 中运行，但我们只想构建并安装软件的 Python 2 或 Python 3 部分，因此要适当设置构建和安装的基础目录。注意正确的 Python 3 配置脚本路径名称。使用 Python 3 构建时，打包清单会有所不同。由于有三种可能的 Python 3 版本，请使用 crossref:flavors[flavors-using-helpers,helper] 为这三种版本都设置 `PLIST`。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flavors Helpers"
-msgstr ""
+msgstr "Flavors 辅助项"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:167
+#, fuzzy
 msgid ""
 "To make the [.filename]#Makefile# easier to write, a few flavors helpers "
 "exist."
-msgstr ""
+msgstr "有一些 flavors 辅助项可以让 [.filename]#Makefile# 更容易编写。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:169
+#, fuzzy
 msgid "This list of helpers will set their variable:"
-msgstr ""
+msgstr "以下辅助项会设置相应变量："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:171
+#, fuzzy
 msgid "`__flavor___PKGNAMEPREFIX`"
-msgstr ""
+msgstr "`__flavor___PKGNAMEPREFIX`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:172
+#, fuzzy
 msgid "`__flavor___PKGNAMESUFFIX`"
-msgstr ""
+msgstr "`__flavor___PKGNAMESUFFIX`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:173
+#, fuzzy
 msgid "`__flavor___PLIST`"
-msgstr ""
+msgstr "`__flavor___PLIST`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:174
+#, fuzzy
 msgid "`__flavor___DESCR`"
-msgstr ""
+msgstr "`__flavor___DESCR`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:176
+#, fuzzy
 msgid "This list of helpers will append to their variable:"
-msgstr ""
+msgstr "以下辅助项会向相应变量追加内容："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:178
+#, fuzzy
 msgid "`__flavor___CONFLICTS`"
-msgstr ""
+msgstr "`__flavor___CONFLICTS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:179
+#, fuzzy
 msgid "`__flavor___CONFLICTS_BUILD`"
-msgstr ""
+msgstr "`__flavor___CONFLICTS_BUILD`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:180
+#, fuzzy
 msgid "`__flavor___CONFLICTS_INSTALL`"
-msgstr ""
+msgstr "`__flavor___CONFLICTS_INSTALL`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:181
+#, fuzzy
 msgid "`__flavor___PKG_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___PKG_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:182
+#, fuzzy
 msgid "`__flavor___EXTRACT_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___EXTRACT_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:183
+#, fuzzy
 msgid "`__flavor___PATCH_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___PATCH_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:184
+#, fuzzy
 msgid "`__flavor___FETCH_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___FETCH_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:185
+#, fuzzy
 msgid "`__flavor___BUILD_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___BUILD_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:186
+#, fuzzy
 msgid "`__flavor___LIB_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___LIB_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:187
+#, fuzzy
 msgid "`__flavor___RUN_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___RUN_DEPENDS`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:188
+#, fuzzy
 msgid "`__flavor___TEST_DEPENDS`"
-msgstr ""
+msgstr "`__flavor___TEST_DEPENDS`"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flavor Specific `PKGNAME`"
-msgstr ""
+msgstr "Flavor 专属的 `PKGNAME`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:194
+#, fuzzy
 msgid ""
 "As all packages must have a different package name, flavors must change "
 "theirs, using `__flavor___PKGNAMEPREFIX` and `__flavor___PKGNAMESUFFIX` "
 "makes this easy:"
-msgstr ""
+msgstr "由于所有软件包都必须具有不同的名称，flavors 也必须修改软件包名称。使用 `__flavor___PKGNAMEPREFIX` 和 `__flavor___PKGNAMESUFFIX` 可以轻松实现："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "FLAVORS=\tnormal lite\n"
 "lite_PKGNAMESUFFIX=\t-lite\n"
-msgstr ""
+msgstr "FLAVORS=\tnormal lite\nlite_PKGNAMESUFFIX=\t-lite\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USES=php` and Flavors"
-msgstr ""
+msgstr "`USES=php` 与 Flavors"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:208
+#, fuzzy
 msgid ""
 "When using crossref:uses[uses-php,`php`] with one of these arguments, "
 "`phpize`, `ext`, `zend`, or `pecl`, the port will automatically have "
 "`FLAVORS` filled in with the PHP versions it supports."
-msgstr ""
+msgstr "使用 crossref:uses[uses-php,`php`] 并指定 `phpize`、`ext`、`zend` 或 `pecl` 这类参数时，port 会自动将其支持的 PHP 版本填入 `FLAVORS`。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Simple `USES=php` Extension"
-msgstr ""
+msgstr "简单的 `USES=php` 扩展"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:214
+#, fuzzy
 msgid "This will generate package for all the supported versions:"
-msgstr ""
+msgstr "这会为所有受支持的版本生成软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:220
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PORTNAME=\tsome-ext\n"
 "PORTVERSION=\t0.0.1\n"
 "PKGNAMEPREFIX=\t${PHP_PKGNAMEPREFIX}\n"
-msgstr ""
+msgstr "PORTNAME=\tsome-ext\nPORTVERSION=\t0.0.1\nPKGNAMEPREFIX=\t${PHP_PKGNAMEPREFIX}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "USES=\t\tphp:ext\n"
-msgstr ""
+msgstr "USES=\t\tphp:ext\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:225
+#, fuzzy
 msgid "This will generate package for all the supported versions but 7.2:"
-msgstr ""
+msgstr "这会为除 7.2 以外的所有受支持版本生成软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\t\tphp:ext\n"
 "IGNORE_WITH_PHP=\t72\n"
-msgstr ""
+msgstr "USES=\t\tphp:ext\nIGNORE_WITH_PHP=\t72\n"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PHP Flavors with PHP Applications"
-msgstr ""
+msgstr "PHP 应用程序的 PHP Flavors"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:242
+#, fuzzy
 msgid "PHP applications can also be flavorized."
-msgstr ""
+msgstr "PHP 应用程序也可以使用 flavors。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:244
+#, fuzzy
 msgid ""
 "This allows generating packages for all PHP versions, so that users can use "
 "them with whatever version they need on their servers."
-msgstr ""
+msgstr "这样便可以为所有 PHP 版本生成软件包，用户可以在服务器上使用所需版本的软件包。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:248
+#, fuzzy
 msgid ""
 "PHP applications that are flavorized _must_ append `PHP_PKGNAMESUFFIX` to "
 "their package names."
-msgstr ""
+msgstr "使用 flavors 的 PHP 应用程序__必须__将 `PHP_PKGNAMESUFFIX` 追加到其软件包名称中。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flavorizing a PHP Application"
-msgstr ""
+msgstr "为 PHP 应用程序添加 Flavor"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:255
+#, fuzzy
 msgid "Adding Flavors support to a PHP application is straightforward:"
-msgstr ""
+msgstr "为 PHP 应用程序添加 Flavors 支持非常简单："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PKGNAMESUFFIX=\t${PHP_PKGNAMESUFFIX}\n"
-msgstr ""
+msgstr "PKGNAMESUFFIX=\t${PHP_PKGNAMESUFFIX}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "USES=\tphp:flavors\n"
-msgstr ""
+msgstr "USES=\tphp:flavors\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:269
+#, fuzzy
 msgid ""
 "When adding a dependency on a PHP flavored port, use `@${PHP_FLAVOR}`.  "
 "_Never_ use `FLAVOR` directly."
-msgstr ""
+msgstr "添加对使用 PHP flavor 的 port 的依赖时，请使用 `@${PHP_FLAVOR}`。__切勿__直接使用 `FLAVOR`。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USES=python` and Flavors"
-msgstr ""
+msgstr "`USES=python` 与 Flavors"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:276
+#, fuzzy
 msgid ""
 "When using crossref:uses[uses-python,`python`] and `USE_PYTHON=distutils`, "
 "the port will automatically have `FLAVORS` filled in with the Python "
 "versions it supports."
-msgstr ""
+msgstr "使用 crossref:uses[uses-python,`python`] 并设置 `USE_PYTHON=distutils` 时，port 会自动将其支持的 Python 版本填入 `FLAVORS`。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Simple `USES=python`"
-msgstr ""
+msgstr "简单的 `USES=python`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:282
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:305
+#, fuzzy
 msgid ""
 "Supposing the current Python supported versions are 2.7, 3.4, 3.5, and 3.6, "
 "and the default Python 2 and 3 versions are 2.7 and 3.6, a port with:"
-msgstr ""
+msgstr "假设当前支持的 Python 版本为 2.7、3.4、3.5 和 3.6，默认的 Python 2 和 3 版本分别为 2.7 和 3.6，那么具有以下设置的 port："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tpython\n"
 "USE_PYTHON=\tdistutils\n"
-msgstr ""
+msgstr "USES=\tpython\nUSE_PYTHON=\tdistutils\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:290
+#, fuzzy
 msgid "Will get these flavors: `py27`, and `py36`."
-msgstr ""
+msgstr "将获得以下 flavors：`py27` 和 `py36`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tpython\n"
 "USE_PYTHON=\tdistutils allflavors\n"
-msgstr ""
+msgstr "USES=\tpython\nUSE_PYTHON=\tdistutils allflavors\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:298
+#, fuzzy
 msgid "Will get these flavors: `py27`, `py34`, `py35` and `py36`."
-msgstr ""
+msgstr "将获得以下 flavors：`py27`、`py34`、`py35` 和 `py36`。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USES=python` with Version Requirements"
-msgstr ""
+msgstr "带有版本要求的 `USES=python`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:310
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tpython:-3.5\n"
 "USE_PYTHON=\tdistutils\n"
-msgstr ""
+msgstr "USES=\tpython:-3.5\nUSE_PYTHON=\tdistutils\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:313
+#, fuzzy
 msgid "Will get this flavor: `py27`."
-msgstr ""
+msgstr "将获得以下 flavor：`py27`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tpython:-3.5\n"
 "USE_PYTHON=\tdistutils allflavors\n"
-msgstr ""
+msgstr "USES=\tpython:-3.5\nUSE_PYTHON=\tdistutils allflavors\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:321
+#, fuzzy
 msgid "Will get these flavors: `py27`, `py34`, and `py35`."
-msgstr ""
+msgstr "将获得以下 flavors：`py27`、`py34` 和 `py35`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tpython:3.4+\n"
 "USE_PYTHON=\tdistutils\n"
-msgstr ""
+msgstr "USES=\tpython:3.4+\nUSE_PYTHON=\tdistutils\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:329
+#, fuzzy
 msgid "Will get this flavor: `py36`."
-msgstr ""
+msgstr "将获得以下 flavor：`py36`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tpython:3.4+\n"
 "USE_PYTHON=\tdistutils allflavors\n"
-msgstr ""
+msgstr "USES=\tpython:3.4+\nUSE_PYTHON=\tdistutils allflavors\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:337
+#, fuzzy
 msgid "Will get these flavors: `py34`, `py35`, and `py36`."
-msgstr ""
+msgstr "将获得以下 flavors：`py34`、`py35` 和 `py36`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:341
+#, fuzzy
 msgid ""
 "`PY_FLAVOR` is available to depend on the correct version of Python "
 "modules.  All dependencies on flavored Python ports should use `PY_FLAVOR`, "
 "and not `FLAVOR` directly.."
-msgstr ""
+msgstr "可以使用 `PY_FLAVOR` 来依赖正确版本的 Python 模块。对使用 flavors 的 Python port 的所有依赖都应使用 `PY_FLAVOR`，而不是直接使用 `FLAVOR`。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "For a Port Not Using `distutils`"
-msgstr ""
+msgstr "对于未使用 `distutils` 的 Port"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:347
+#, fuzzy
 msgid ""
 "If the default Python 3 version is 3.6, the following will set `PY_FLAVOR` "
 "to `py36`:"
-msgstr ""
+msgstr "如果默认的 Python 3 版本是 3.6，以下设置会将 `PY_FLAVOR` 设为 `py36`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RUN_DEPENDS=\t${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${PY_FLAVOR}\n"
-msgstr ""
+msgstr "RUN_DEPENDS=\t${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${PY_FLAVOR}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "USES=\tpython:3.5+\n"
-msgstr ""
+msgstr "USES=\tpython:3.5+\n"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:358
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USES=lua` and Flavors"
-msgstr ""
+msgstr "`USES=lua` 与 Flavors"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:364
+#, fuzzy
 msgid ""
 "When using crossref:uses[uses-lua,`lua:module`] or crossref:uses[uses-lua,"
 "`lua:flavors`], the port will automatically have `FLAVORS` filled in with "
 "the Lua versions it supports.  However, it is not expected that ordinary "
 "applications (rather than Lua modules) should use this feature; most "
 "applications that embed or otherwise use Lua should simply use `USES=lua`."
-msgstr ""
+msgstr "使用 crossref:uses[uses-lua,`lua:module`] 或 crossref:uses[uses-lua,`lua:flavors`] 时，port 会自动将其支持的 Lua 版本填入 `FLAVORS`。不过，普通应用程序（而不是 Lua 模块）不应使用此功能；大多数嵌入 Lua 或以其他方式使用 Lua 的应用程序只需使用 `USES=lua`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:366
+#, fuzzy
 msgid ""
 "`LUA_FLAVOR` is available (and must be used) to depend on the correct "
 "version of dependencies regardless of whether the port used the `flavors` or "
 "`module` parameters."
-msgstr ""
+msgstr "无论 port 使用的是 `flavors` 还是 `module` 参数，都可以使用 `LUA_FLAVOR`（且必须使用它）来依赖正确版本的依赖项。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:368
+#, fuzzy
 msgid "See crossref:special[using-lua,Using Lua] for further information."
-msgstr ""
+msgstr "更多信息请参阅 crossref:special[using-lua,Using Lua]。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`USES=guile` and Flavors"
-msgstr ""
+msgstr "`USES=guile` 与 Flavors"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:377
+#, fuzzy
 msgid ""
 "When using crossref:uses[uses-guile,`guile:flavors`], the port will "
 "automatically have `FLAVORS` filled in with the Guile versions it supports.  "
 "However, it is not expected that ordinary applications should use this "
 "feature; it is primarily intended for use by libraries and extensions, such "
 "as `guile-lib` or `guile-cairo`."
-msgstr ""
+msgstr "使用 crossref:uses[uses-guile,`guile:flavors`] 时，port 会自动将其支持的 Guile 版本填入 `FLAVORS`。不过，普通应用程序不应使用此功能；它主要面向库和扩展，例如 `guile-lib` 或 `guile-cairo`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:379
+#, fuzzy
 msgid ""
 "`GUILE_FLAVOR` is available (and must be used) to depend on the correct "
 "version of flavored dependencies regardless of whether the port used the "
 "`flavors` parameter or not."
-msgstr ""
+msgstr "无论 port 是否使用 `flavors` 参数，都可以使用 `GUILE_FLAVOR`（且必须使用它）来依赖正确版本的 flavor 依赖项。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/flavors/_index.adoc:380
+#, fuzzy
 msgid "See crossref:special[using-guile,Using Guile] for further information."
-msgstr ""
+msgstr "更多信息请参阅 crossref:special[using-guile,Using Guile]。"

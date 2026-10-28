@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD has three firewalls built into the base system: PF, IPFW, and IPFILTER. This chapter covers how to define packet filtering rules, the differences between the firewalls built into FreeBSD and how to use them"
-msgstr ""
+msgstr "FreeBSD 的基本系统内置了三种防火墙：PF、IPFW 和 IPFILTER。本章介绍如何定义数据包过滤规则、FreeBSD 内置防火墙之间的区别，以及如何使用它们"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IV. Network Communication"
-msgstr ""
+msgstr "IV. 网络通信"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1
@@ -106,6 +106,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:69
+#, fuzzy
 msgid ""
 "FreeBSD has three firewalls built into the base system: PF, IPFW, and "
 "IPFILTER, also known as IPF.  FreeBSD also provides two traffic shapers for "
@@ -114,7 +115,7 @@ msgid ""
 "firewall uses rules to control the access of packets to and from a FreeBSD "
 "system, although they go about it in different ways and each has a different "
 "rule syntax."
-msgstr ""
+msgstr "FreeBSD 的基本系统内置了三种防火墙：PF、IPFW 和 IPFILTER（也称为 IPF）。FreeBSD 还提供两种用于控制带宽使用的流量整形器：man:altq[4] 和 man:dummynet[4]。ALTQ 传统上与 PF 密切相关，而 dummynet 与 IPFW 密切相关。每种防火墙都使用规则来控制进出 FreeBSD 系统的数据包访问，但它们的工作方式各不相同，规则语法也各有不同。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:72
@@ -150,18 +151,21 @@ msgstr "FreeBSD 中内建的几种防火墙之间的差异。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:78
+#, fuzzy
 msgid "How to use and configure the PF firewall."
-msgstr ""
+msgstr "如何使用和配置 PF 防火墙。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:79
+#, fuzzy
 msgid "How to use and configure the IPFW firewall."
-msgstr ""
+msgstr "如何使用和配置 IPFW 防火墙。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:80
+#, fuzzy
 msgid "How to use and configure the IPFILTER firewall."
-msgstr ""
+msgstr "如何使用和配置 IPFILTER 防火墙。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:82
@@ -177,6 +181,7 @@ msgstr "了解FreeBSD基础及网络概念。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:89
+#, fuzzy
 msgid ""
 "Since all firewalls are based on inspecting the values of selected packet "
 "control fields, the creator of the firewall ruleset must have an "
@@ -184,7 +189,7 @@ msgid ""
 "control fields are, and how these values are used in a normal session "
 "conversation.  For a good introduction, refer to http://www.ipprimer."
 "com[Daryl's TCP/IP Primer]."
-msgstr ""
+msgstr "由于所有防火墙都基于对选定数据包控制字段值的检查，因此防火墙规则集的编写者必须了解 TCP/IP 的工作方式、数据包控制字段中的不同值，以及这些值在正常会话通信中的用法。如需了解基础知识，请参阅 link:http://www.ipprimer.com[Daryl 的 TCP/IP 入门指南]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:92
@@ -216,30 +221,33 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:103
+#, fuzzy
 msgid ""
 "To lookup unknown port numbers, refer to [.filename]#/etc/services#.  "
 "Alternatively, visit https://en.wikipedia.org/wiki/"
 "List_of_TCP_and_UDP_port_numbers[https://en.wikipedia.org/wiki/"
 "List_of_TCP_and_UDP_port_numbers] and do a port number lookup to find the "
 "purpose of a particular port number."
-msgstr ""
+msgstr "要查询未知的端口号，请参阅 [.filename]#/etc/services#。也可以访问 link:https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers[https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers]，查询端口号以了解特定端口的用途。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:105
+#, fuzzy
 msgid ""
 "Check out this link for http://web.archive.org/web/20150803024617/http://www."
 "sans.org/security-resources/idfaq/oddports.php[port numbers used by Trojans]."
-msgstr ""
+msgstr "请参阅此链接，了解特洛伊木马使用的端口号： link:http://web.archive.org/web/20150803024617/http://www.sans.org/security-resources/idfaq/oddports.php[特洛伊木马使用的端口号]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:110
+#, fuzzy
 msgid ""
 "FTP has two modes: active mode and passive mode.  The difference is in how "
 "the data channel is acquired.  Passive mode is more secure as the data "
 "channel is acquired by the ordinal ftp session requester.  For a good "
 "explanation of FTP and the different modes, see http://www.slacksite.com/"
 "other/ftp.html[http://www.slacksite.com/other/ftp.html]."
-msgstr ""
+msgstr "FTP 有两种模式：主动模式和被动模式。区别在于数据通道的建立方式。被动模式更安全，因为数据通道由发起 FTP 会话的请求方建立。如需详细了解 FTP 及其不同模式，请参阅 link:http://www.slacksite.com/other/ftp.html[http://www.slacksite.com/other/ftp.html]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:114
@@ -353,13 +361,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:143
+#, fuzzy
 msgid ""
 "NAT stands for _Network Address Translation_.  NAT function enables the "
 "private LAN behind the firewall to share a single ISP-assigned IP address, "
 "even if that address is dynamically assigned.  NAT allows each computer in "
 "the LAN to have Internet access, without having to pay the ISP for multiple "
 "Internet accounts or IP addresses."
-msgstr ""
+msgstr "NAT 是__网络地址转换__（Network Address Translation）的缩写。NAT 功能使防火墙后方的专用 LAN 可以共享一个由 ISP 分配的 IP 地址，即使该地址是动态分配的也不例外。NAT 使 LAN 中的每台计算机都能访问 Internet，而无需向 ISP 支付多个 Internet 帐户或 IP 地址的费用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:146
@@ -385,27 +394,31 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:150
+#, fuzzy
 msgid "`10.0.0.0/8`."
-msgstr ""
+msgstr "`10.0.0.0/8`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:151
+#, fuzzy
 msgid "`172.16.0.0/12`."
-msgstr ""
+msgstr "`172.16.0.0/12`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:152
+#, fuzzy
 msgid "`192.168.0.0/16`."
-msgstr ""
+msgstr "`192.168.0.0/16`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:158
+#, fuzzy
 msgid ""
 "When working with the firewall rules, be _very careful_.  Some "
 "configurations _can lock the administrator out_ of the server.  To be on the "
 "safe side, consider performing the initial firewall configuration from the "
 "local console rather than doing it remotely over ssh."
-msgstr ""
+msgstr "配置防火墙规则时务必__格外小心__。某些配置__可能会导致管理员无法访问__服务器。为安全起见，建议在本地控制台上进行初始防火墙配置，而不要通过 ssh 远程配置。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:161
@@ -415,77 +428,85 @@ msgstr "PF"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:165
+#, fuzzy
 msgid ""
 "Since FreeBSD 5.3, a ported version of OpenBSD's PF firewall has been "
 "included as an integrated part of the base system.  PF is a complete, full-"
 "featured firewall that has optional support for ALTQ (Alternate Queuing), "
 "which provides Quality of Service (QoS)."
-msgstr ""
+msgstr "自 FreeBSD 5.3 起，OpenBSD 的 PF 防火墙移植版本已作为基本系统的组成部分提供。PF 是一款功能齐全的防火墙，可选支持 ALTQ（备用队列），后者可提供服务质量（QoS）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:168
+#, fuzzy
 msgid ""
 "The OpenBSD Project maintains the definitive reference for PF in the http://"
 "www.openbsd.org/faq/pf/[PF FAQ].  Peter Hansteen maintains a thorough PF "
 "tutorial at http://home.nuug.no/\\~peter/pf/[http://home.nuug.no/~peter/pf/]."
-msgstr ""
+msgstr "OpenBSD 项目在 link:http://www.openbsd.org/faq/pf/[PF 常见问题]中维护了 PF 的权威参考资料。Peter Hansteen 在 link:http://home.nuug.no/\\~peter/pf/[http://home.nuug.no/~peter/pf/] 提供了详尽的 PF 教程。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:173
+#, fuzzy
 msgid ""
 "When reading the http://www.openbsd.org/faq/pf/[PF FAQ], keep in mind that "
 "FreeBSD's version of PF has diverged substantially from the upstream OpenBSD "
 "version over the years.  Not all features work the same way on FreeBSD as "
 "they do in OpenBSD and vice versa."
-msgstr ""
+msgstr "阅读 link:http://www.openbsd.org/faq/pf/[PF 常见问题]时，请注意，多年来 FreeBSD 版本的 PF 已与上游 OpenBSD 版本产生了很大差异。并非所有功能在 FreeBSD 和 OpenBSD 上的工作方式都相同，反之亦然。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:177
+#, fuzzy
 msgid ""
 "The {freebsd-pf} is a good place to ask questions about configuring and "
 "running the PF firewall.  Check the mailing list archives before asking a "
 "question as it may have already been answered."
-msgstr ""
+msgstr "有关配置和运行 PF 防火墙的问题，可以在 {freebsd-pf} 邮件列表中提问。提问前请先查看邮件列表存档，因为问题可能已经得到解答。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:181
+#, fuzzy
 msgid ""
 "This section of the Handbook focuses on PF as it pertains to FreeBSD.  It "
 "demonstrates how to enable PF and ALTQ.  It also provides several examples "
 "for creating rulesets on a FreeBSD system."
-msgstr ""
+msgstr "本手册的这一节介绍与 FreeBSD 相关的 PF 内容，演示如何启用 PF 和 ALTQ，并提供若干在 FreeBSD 系统上创建规则集的示例。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling PF"
-msgstr ""
+msgstr "启用 PF"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:186
+#, fuzzy
 msgid ""
 "To use PF, its kernel module must be first loaded.  This section describes "
 "the entries that can be added to [.filename]#/etc/rc.conf# to enable PF."
-msgstr ""
+msgstr "要使用 PF，必须先加载其内核模块。本节介绍可添加到 [.filename]#/etc/rc.conf# 中以启用 PF 的条目。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:188
+#, fuzzy
 msgid "Start by adding `pf_enable=yes` to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "首先，将 `pf_enable=yes` 添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc pf_enable=yes\n"
-msgstr ""
+msgstr "# sysrc pf_enable=yes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:196
+#, fuzzy
 msgid ""
 "Additional options, described in man:pfctl[8], can be passed to PF when it "
 "is started.  Add or change this entry in [.filename]#/etc/rc.conf# and "
 "specify any required flags between the two quotes (`\"\"`):"
-msgstr ""
+msgstr "启动 PF 时可以传递其他选项，详情请参阅 man:pfctl[8]。在 [.filename]#/etc/rc.conf# 中添加或修改此条目，并在两个引号（`\"\"`）之间指定所需的标志："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:200
@@ -511,30 +532,32 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pf_rules=\"/path/to/pf.conf\"\n"
-msgstr ""
+msgstr "pf_rules=\"/path/to/pf.conf\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:214
+#, fuzzy
 msgid ""
 "Logging support for PF is provided by man:pflog[4].  To enable logging "
 "support, add `pflog_enable=yes` to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "PF 的日志记录功能由 man:pflog[4] 提供。要启用日志记录，请将 `pflog_enable=yes` 添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc pflog_enable=yes\n"
-msgstr ""
+msgstr "# sysrc pflog_enable=yes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:221
+#, fuzzy
 msgid ""
 "The following lines can also be added to change the default location of the "
 "log file or to specify any additional flags to pass to man:pflog[4] when it "
 "is started:"
-msgstr ""
+msgstr "还可以添加以下行来更改日志文件的默认位置，或指定启动 man:pflog[4] 时要传递的其他标志："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:226
@@ -548,11 +571,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:229
+#, fuzzy
 msgid ""
 "Finally, if there is a LAN behind the firewall and packets need to be "
 "forwarded for the computers on the LAN, or NAT is required, enable the "
 "following option:"
-msgstr ""
+msgstr "最后，如果防火墙后方有 LAN，且需要转发发往 LAN 中计算机的数据包，或需要使用 NAT，请启用以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:233
@@ -562,126 +586,129 @@ msgstr "gateway_enable=\"YES\"            # Enable as LAN gateway\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:236
+#, fuzzy
 msgid ""
 "After saving the needed edits, PF can be started with logging support by "
 "typing:"
-msgstr ""
+msgstr "保存所需的修改后，输入以下命令即可启动带日志记录功能的 PF："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service pf start\n"
 "# service pflog start\n"
-msgstr ""
+msgstr "# service pf start\n# service pflog start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:246
+#, fuzzy
 msgid ""
 "By default, PF reads its configuration rules from [.filename]#/etc/pf.conf# "
 "and modifies, drops, or passes packets according to the rules or definitions "
 "specified in this file.  The FreeBSD installation includes several sample "
 "files located in [.filename]#/usr/share/examples/pf/#.  Refer to the http://"
 "www.openbsd.org/faq/pf/[PF FAQ] for complete coverage of PF rulesets."
-msgstr ""
+msgstr "默认情况下，PF 从 [.filename]#/etc/pf.conf# 读取配置规则，并根据此文件中指定的规则或定义修改、丢弃或放行数据包。FreeBSD 安装中包含几个示例文件，位于 [.filename]#/usr/share/examples/pf/#。有关 PF 规则集的完整介绍，请参阅 link:http://www.openbsd.org/faq/pf/[PF 常见问题]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:250
+#, fuzzy
 msgid ""
 "To control PF, use `pfctl`.  crossref:firewalls[pfctl,Useful `pfctl` "
 "Options] summarizes some useful options to this command.  Refer to man:"
 "pfctl[8] for a description of all available options:"
-msgstr ""
+msgstr "使用 `pfctl` 控制 PF。crossref:firewalls[pfctl,Useful `pfctl` Options] 总结了此命令的一些实用选项。有关所有可用选项的说明，请参阅 man:pfctl[8]："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Useful `pfctl` Options"
-msgstr ""
+msgstr "实用的 `pfctl` 选项"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Command"
-msgstr ""
+msgstr "命令"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Purpose"
-msgstr ""
+msgstr "用途"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pfctl -e`"
-msgstr ""
+msgstr "`pfctl -e`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enable PF."
-msgstr ""
+msgstr "启用 PF。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pfctl -d`"
-msgstr ""
+msgstr "`pfctl -d`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disable PF."
-msgstr ""
+msgstr "禁用 PF。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pfctl -F all -f /etc/pf.conf`"
-msgstr ""
+msgstr "`pfctl -F all -f /etc/pf.conf`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flush all NAT, filter, state, and table rules and reload [.filename]#/etc/pf.conf#."
-msgstr ""
+msgstr "清除所有 NAT、过滤器、状态和表规则，并重新加载 [.filename]#/etc/pf.conf#。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pfctl -s [ rules \\"
-msgstr ""
+msgstr "`pfctl -s [ rules \\"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "nat \\"
-msgstr ""
+msgstr "nat \\"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:267
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "states ]`"
-msgstr ""
+msgstr "states ]`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Report on the filter rules, NAT rules, or state table."
-msgstr ""
+msgstr "显示过滤器规则、NAT 规则或状态表。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:270
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pfctl -vnf /etc/pf.conf`"
-msgstr ""
+msgstr "`pfctl -vnf /etc/pf.conf`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Check [.filename]#/etc/pf.conf# for errors, but do not load ruleset."
-msgstr ""
+msgstr "检查 [.filename]#/etc/pf.conf# 是否有错误，但不加载规则集。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:277
@@ -695,26 +722,28 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:281
+#, fuzzy
 msgid ""
 "To keep an eye on the traffic that passes through the PF firewall, consider "
 "installing the package:sysutils/pftop[] package or port.  Once installed, "
 "pftop can be run to view a running snapshot of traffic in a format which is "
 "similar to man:top[1]."
-msgstr ""
+msgstr "要监视通过 PF 防火墙的流量，可以考虑安装 package:sysutils/pftop[] 软件包或移植版本。安装后，可以运行 pftop 查看实时流量快照，其格式类似于 man:top[1]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PF Rulesets"
-msgstr ""
+msgstr "PF 规则集"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:287
+#, fuzzy
 msgid ""
 "This section demonstrates how to create a customized ruleset.  It starts "
 "with the simplest of rulesets and builds upon its concepts using several "
 "examples to demonstrate real-world usage of PF's many features."
-msgstr ""
+msgstr "本节演示如何创建自定义规则集。内容从最简单的规则集开始，逐步扩展其概念，并通过多个示例展示 PF 多种功能在实际场景中的用法。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:290
@@ -761,18 +790,19 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -e ; pfctl -f /etc/pf.conf\n"
-msgstr ""
+msgstr "# pfctl -e ; pfctl -f /etc/pf.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:310
+#, fuzzy
 msgid ""
 "In addition to keeping state, PF provides _lists_ and _macros_ which can be "
 "defined for use when creating rules.  Macros can include lists and need to "
 "be defined before use.  As an example, insert these lines at the very top of "
 "the ruleset:"
-msgstr ""
+msgstr "除了保持状态外，PF 还提供可在创建规则时定义和使用的__列表__与__宏__。宏可以包含列表，并且必须在使用前定义。例如，在规则集最前面插入以下几行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:315
@@ -786,6 +816,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:322
+#, fuzzy
 msgid ""
 "PF understands port names as well as port numbers, as long as the names are "
 "listed in [.filename]#/etc/services#.  This example creates two macros.  The "
@@ -793,7 +824,7 @@ msgid ""
 "name.  Once defined, macros can be used in rules.  In this example, all "
 "traffic is blocked except for the connections initiated by this system for "
 "the seven specified TCP services and the one specified UDP service:"
-msgstr ""
+msgstr "只要端口名称列在 [.filename]#/etc/services# 中，PF 就能识别端口名称和端口号。此示例创建两个宏：第一个是包含七个 TCP 端口名称的列表，第二个是一个 UDP 端口名称。定义宏后即可在规则中使用。在此示例中，所有流量都会被阻止，只有此系统针对指定的七种 TCP 服务和一种 UDP 服务发起的连接例外："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:330
@@ -813,12 +844,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:334
+#, fuzzy
 msgid ""
 "Even though UDP is considered to be a stateless protocol, PF is able to "
 "track some state information.  For example, when a UDP request is passed "
 "which asks a name server about a domain name, PF will watch for the response "
 "to pass it back."
-msgstr ""
+msgstr "尽管 UDP 被视为无状态协议，PF 仍能够跟踪部分状态信息。例如，放行一个用于向名称服务器查询域名的 UDP 请求后，PF 会监视响应，并放行该响应返回。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:336
@@ -830,39 +862,42 @@ msgstr "每当对规则集进行编辑时，都必须加载新规则，以使这
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:340
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:558
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -f /etc/pf.conf\n"
-msgstr ""
+msgstr "# pfctl -f /etc/pf.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:344
+#, fuzzy
 msgid ""
 "If there are no syntax errors, `pfctl` will not output any messages during "
 "the rule load.  Rules can also be tested before attempting to load them:"
-msgstr ""
+msgstr "如果没有语法错误，`pfctl` 在加载规则时不会输出任何消息。也可以先测试规则，再尝试加载："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -nf /etc/pf.conf\n"
-msgstr ""
+msgstr "# pfctl -nf /etc/pf.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:353
+#, fuzzy
 msgid ""
 "Including `-n` causes the rules to be interpreted only, but not loaded.  "
 "This provides an opportunity to correct any errors.  At all times, the last "
 "valid ruleset loaded will be enforced until either PF is disabled or a new "
 "ruleset is loaded."
-msgstr ""
+msgstr "添加 `-n` 后，只会解析规则，而不会加载规则。这样就有机会更正错误。在任何时候，最后一次成功加载的有效规则集都会继续生效，直到禁用 PF 或加载新的规则集。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:358
+#, fuzzy
 msgid ""
 "Adding `-v` to a `pfctl` ruleset verify or load will display the fully "
 "parsed rules exactly the way they will be loaded.  This is extremely useful "
 "when debugging rules."
-msgstr ""
+msgstr "在使用 `pfctl` 验证或加载规则集时添加 `-v`，会显示完全解析后的规则，也就是实际加载的内容。这对调试规则非常有用。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:361
@@ -887,57 +922,62 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:369
+#, fuzzy
 msgid ""
 "First, enable the gateway to let the machine forward the network traffic it "
 "receives on one interface to another interface.  This sysctl setting will "
 "forward IPv4 packets:"
-msgstr ""
+msgstr "首先，启用网关，使计算机能够将其在一个接口上收到的网络流量转发到另一个接口。此 sysctl 设置将转发 IPv4 数据包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl net.inet.ip.forwarding=1\n"
-msgstr ""
+msgstr "# sysctl net.inet.ip.forwarding=1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:376
+#, fuzzy
 msgid "To forward IPv6 traffic, use:"
-msgstr ""
+msgstr "要转发 IPv6 流量，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl net.inet6.ip6.forwarding=1\n"
-msgstr ""
+msgstr "# sysctl net.inet6.ip6.forwarding=1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:383
+#, fuzzy
 msgid ""
 "To enable these settings at system boot, use man:sysrc[8] to add them to [."
 "filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "要在系统启动时启用这些设置，请使用 man:sysrc[8] 将其添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:388
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysrc gateway_enable=yes\n"
 "# sysrc ipv6_gateway_enable=yes\n"
-msgstr ""
+msgstr "# sysrc gateway_enable=yes\n# sysrc ipv6_gateway_enable=yes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:391
+#, fuzzy
 msgid "Verify with `ifconfig` that both of the interfaces are up and running."
-msgstr ""
+msgstr "使用 `ifconfig` 确认两个接口均已启动并正常运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:394
+#, fuzzy
 msgid ""
 "Next, create the PF rules to allow the gateway to pass traffic.  While the "
 "following rule allows stateful traffic from hosts of the internal network to "
 "pass to the gateway, the `to` keyword does not guarantee passage all the way "
 "from source to destination:"
-msgstr ""
+msgstr "接下来，创建 PF 规则以允许网关转发流量。以下规则允许内部网络主机的有状态流量通过到达网关，但 `to` 关键字并不保证流量一定能从源端传送到目的端："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:398
@@ -990,6 +1030,7 @@ msgstr "pass from xl1:network to any port $ports keep state\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:421
+#, fuzzy
 msgid ""
 "The `interface:network` notation can be replaced with a macro to make the "
 "ruleset even more readable.  For example, a `$localnet` macro could be "
@@ -997,7 +1038,7 @@ msgid ""
 "network`).  Alternatively, the definition of `$localnet` could be changed to "
 "an _IP address/netmask_ notation to denote a network, such as "
 "`192.168.100.1/24` for a subnet of private addresses."
-msgstr ""
+msgstr "可以用宏替换 `interface:network` 表示法，让规则集更易于阅读。例如，可以将 `$localnet` 宏定义为直接连接到内部接口的网络（`$xl1:network`）。也可以将 `$localnet` 的定义改为__IP 地址/网络掩码__表示法，以指明网络，例如用 `192.168.100.1/24` 表示一个专用地址子网。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:424
@@ -1034,12 +1075,13 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:437
+#, fuzzy
 msgid ""
 "For dialup users, the external interface will use [.filename]#tun0#.  For an "
 "ADSL connection, specifically those using PPP over Ethernet (PPPoE), the "
 "correct external interface is [.filename]#tun0#, not the physical Ethernet "
 "interface."
-msgstr ""
+msgstr "拨号用户的外部接口将使用 [.filename]#tun0#。对于 ADSL 连接，尤其是使用以太网上 PPP（PPPoE）的连接，正确的外部接口是 [.filename]#tun0#，而不是物理以太网接口。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:448
@@ -1063,6 +1105,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:453
+#, fuzzy
 msgid ""
 "This ruleset introduces the `nat` rule which is used to handle the network "
 "address translation from the non-routable addresses inside the internal "
@@ -1071,7 +1114,7 @@ msgid ""
 "included when the IP address of the external interface is dynamically "
 "assigned.  It ensures that network traffic runs without serious "
 "interruptions even if the external IP address changes."
-msgstr ""
+msgstr "此规则集引入了用于处理网络地址转换的 `nat` 规则，将内部网络中的不可路由地址转换为分配给外部接口的 IP 地址。当外部接口的 IP 地址是动态分配时，nat 规则最后一部分 `($ext_if)` 外侧的括号不可省略。这样即使外部 IP 地址发生变化，网络流量也能继续运行，不会受到严重中断。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:456
@@ -1111,10 +1154,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:473
+#, fuzzy
 msgid ""
 "A few other pass rules may be needed.  This one enables SSH on the external "
 "interface:"
-msgstr ""
+msgstr "可能还需要其他几条 pass 规则。以下规则允许在外部接口上使用 SSH："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:477
@@ -1124,8 +1168,9 @@ msgstr "pass in inet proto tcp to $ext_if port ssh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:480
+#, fuzzy
 msgid "This macro definition and rule allows DNS and NTP for internal clients:"
-msgstr ""
+msgstr "此宏定义和规则允许内部客户端使用 DNS 和 NTP："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:485
@@ -1159,17 +1204,18 @@ msgstr ""
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:495
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating an FTP Proxy"
-msgstr ""
+msgstr "创建 FTP 代理"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:500
+#, fuzzy
 msgid ""
 "Configuring working FTP rules can be problematic due to the nature of the "
 "FTP protocol.  FTP pre-dates firewalls by several decades and is insecure in "
 "its design.  The most common points against using FTP include:"
-msgstr ""
+msgstr "由于 FTP 协议的特性，配置可正常工作的 FTP 规则可能会很棘手。FTP 的出现比防火墙早了几十年，其设计本身并不安全。反对使用 FTP 的常见理由包括："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:502
@@ -1178,10 +1224,11 @@ msgstr "密码明文传输。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:503
+#, fuzzy
 msgid ""
 "The protocol demands the use of at least two TCP connections (control and "
 "data) on separate ports."
-msgstr ""
+msgstr "该协议要求至少使用两个 TCP 连接（控制连接和数据连接），且这两个连接使用不同的端口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:504
@@ -1192,28 +1239,31 @@ msgstr "会话（session）创建后，数据使用随机端口传输。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:507
+#, fuzzy
 msgid ""
 "All of these points present security challenges, even before considering any "
 "potential security weaknesses in client or server software.  More secure "
 "alternatives for file transfer exist, such as man:sftp[1] or man:scp[1], "
 "which both feature authentication and data transfer over encrypted "
 "connections."
-msgstr ""
+msgstr "即使不考虑客户端或服务器软件可能存在的安全弱点，上述问题也都带来了安全挑战。还有更安全的文件传输替代方案，例如 man:sftp[1] 或 man:scp[1]，二者都支持通过加密连接进行身份验证和数据传输。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:510
+#, fuzzy
 msgid ""
 "For those situations when FTP is required, PF provides redirection of FTP "
 "traffic to a small proxy program called man:ftp-proxy[8], which is included "
 "in the base system of FreeBSD.  The role of the proxy is to dynamically "
 "insert and delete rules in the ruleset, using a set of anchors, to correctly "
 "handle FTP traffic."
-msgstr ""
+msgstr "在必须使用 FTP 的情况下，PF 可以将 FTP 流量重定向到一个名为 man:ftp-proxy[8] 的小型代理程序。该程序包含在 FreeBSD 基本系统中。代理通过一组锚点在规则集中动态插入和删除规则，以正确处理 FTP 流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:512
+#, fuzzy
 msgid "To enable the FTP proxy, add this line to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "要启用 FTP 代理，请将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:516
@@ -1223,14 +1273,15 @@ msgstr "ftpproxy_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:519
+#, fuzzy
 msgid "Then start the proxy by running:"
-msgstr ""
+msgstr "然后运行以下命令启动代理："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:523
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service ftp-proxy start\n"
-msgstr ""
+msgstr "# service ftp-proxy start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:527
@@ -1255,21 +1306,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:535
+#, fuzzy
 msgid "Second, a pass rule is needed to allow FTP traffic in to the proxy."
-msgstr ""
+msgstr "其次，需要一条 pass 规则来允许 FTP 流量进入代理。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:538
+#, fuzzy
 msgid ""
 "Third, redirection and NAT rules need to be defined before the filtering "
 "rules.  Insert this `rdr` rule immediately after the `nat` rule:"
-msgstr ""
+msgstr "第三，重定向和 NAT 规则需要在过滤规则之前定义。请将此 `rdr` 规则紧接在 `nat` 规则之后插入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:542
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "rdr pass on $int_if proto tcp from any to any port ftp -> 127.0.0.1 port 8021\n"
-msgstr ""
+msgstr "rdr pass on $int_if proto tcp from any to any port ftp -> 127.0.0.1 port 8021\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:545
@@ -1284,18 +1337,21 @@ msgstr "pass out proto tcp from $proxy to any port ftp\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:552
+#, fuzzy
 msgid "where `$proxy` expands to the address the proxy daemon is bound to."
-msgstr ""
+msgstr "其中，`$proxy` 会展开为代理守护进程绑定的地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:554
+#, fuzzy
 msgid ""
 "Save [.filename]#/etc/pf.conf#, load the new rules, and verify from a client "
 "that FTP connections are working:"
-msgstr ""
+msgstr "保存 [.filename]#/etc/pf.conf#，加载新规则，并从客户端验证 FTP 连接是否正常："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:564
+#, fuzzy
 msgid ""
 "This example covers a basic setup where the clients in the local network "
 "need to contact FTP servers elsewhere.  This basic configuration should work "
@@ -1305,21 +1361,22 @@ msgid ""
 "specific quirks that must be compensated for in the configuration, or there "
 "may be a need to integrate the proxy in specific ways such as assigning FTP "
 "traffic to a specific queue."
-msgstr ""
+msgstr "此示例介绍了基本配置：本地网络中的客户端需要连接其他位置的 FTP 服务器。此基本配置适用于大多数 FTP 客户端和服务器组合。如 man:ftp-proxy[8] 所示，可以通过在 `ftpproxy_flags=` 行中添加选项来更改代理的行为。某些客户端或服务器可能有特定的问题，需要在配置中加以处理；也可能需要以特定方式集成代理，例如将 FTP 流量分配到特定队列。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:566
+#, fuzzy
 msgid ""
 "For ways to run an FTP server protected by PF and man:ftp-proxy[8], "
 "configure a separate `ftp-proxy` in reverse mode, using `-R`, on a separate "
 "port with its own redirecting pass rule."
-msgstr ""
+msgstr "若要了解如何在 PF 和 man:ftp-proxy[8] 保护下运行 FTP 服务器，请配置一个单独的 `ftp-proxy`，使用 `-R` 以反向模式运行，并在单独的端口上设置其专用的重定向放行规则。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Managing ICMP"
-msgstr ""
+msgstr "管理 ICMP"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:571
@@ -1334,13 +1391,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:574
+#, fuzzy
 msgid ""
 "The ICMP protocol sends and receives _control messages_ between hosts and "
 "gateways, mainly to provide feedback to a sender about any unusual or "
 "difficult conditions enroute to the target host.  Routers use ICMP to "
 "negotiate packet sizes and other transmission parameters in a process often "
 "referred to as _path MTU discovery_."
-msgstr ""
+msgstr "ICMP 协议在主机和网关之间发送和接收__控制消息__，主要用于向发送方反馈前往目标主机途中出现的异常或困难情况。路由器使用 ICMP 协商数据包大小和其他传输参数，这一过程通常称为__路径 MTU 发现__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:578
@@ -1364,10 +1422,11 @@ msgstr "pass inet proto icmp from any to any\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:585
+#, fuzzy
 msgid ""
 "One solution is to let all ICMP traffic from the local network through while "
 "stopping all probes from outside the network:"
-msgstr ""
+msgstr "一种解决方案是允许来自本地网络的所有 ICMP 流量通过，同时阻止来自网络外部的所有探测："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:590
@@ -1381,12 +1440,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:595
+#, fuzzy
 msgid ""
 "Additional options are available which demonstrate some of PF's "
 "flexibility.  For example, rather than allowing all ICMP messages, one can "
 "specify the messages used by man:ping[8] and man:traceroute[8].  Start by "
 "defining a macro for that type of message:"
-msgstr ""
+msgstr "还可以使用其他选项来展示 PF 的灵活性。例如，不必允许所有 ICMP 消息，而是可以指定 man:ping[8] 和 man:traceroute[8] 使用的消息。首先，为这类消息定义一个宏："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:599
@@ -1408,6 +1468,7 @@ msgstr "pass inet proto icmp all icmp-type $icmp_types keep state\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:611
+#, fuzzy
 msgid ""
 "If other types of ICMP packets are needed, expand `icmp_types` to a list of "
 "those packet types.  Type `more /usr/src/sbin/pfctl/pfctl_parser.c` to see "
@@ -1415,14 +1476,15 @@ msgid ""
 "org/assignments/icmp-parameters/icmp-parameters.xhtml[http://www.iana.org/"
 "assignments/icmp-parameters/icmp-parameters.xhtml] for an explanation of "
 "each message type."
-msgstr ""
+msgstr "如果需要其他类型的 ICMP 数据包，请将这些数据包类型添加到 `icmp_types` 列表中。输入 `more /usr/src/sbin/pfctl/pfctl_parser.c` 可查看 PF 支持的 ICMP 消息类型列表。有关每种消息类型的说明，请参阅 link:http://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml[http://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:613
+#, fuzzy
 msgid ""
 "Since Unix `traceroute` uses UDP by default, another rule is needed to allow "
 "Unix `traceroute`:"
-msgstr ""
+msgstr "由于 Unix `traceroute` 默认使用 UDP，因此还需要另一条规则来允许 Unix `traceroute`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:618
@@ -1436,22 +1498,24 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:623
+#, fuzzy
 msgid ""
 "Since `TRACERT.EXE` on Microsoft Windows systems uses ICMP echo request "
 "messages, only the first rule is needed to allow network traces from those "
 "systems.  Unix `traceroute` can be instructed to use other protocols as "
 "well, and will use ICMP echo request messages if `-I` is used.  Check the "
 "man:traceroute[8] man page for details."
-msgstr ""
+msgstr "Microsoft Windows 系统上的 `TRACERT.EXE` 使用 ICMP 回显请求消息，因此只需第一条规则即可允许这些系统进行网络路由跟踪。Unix `traceroute` 也可以使用其他协议；使用 `-I` 时，它会使用 ICMP 回显请求消息。详情请参阅 man:traceroute[8] 手册页。"
 
 #. type: Title =====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:625
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Path MTU Discovery"
-msgstr ""
+msgstr "路径 MTU 发现"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:630
+#, fuzzy
 msgid ""
 "Internet protocols are designed to be device independent, and one "
 "consequence of device independence is that the optimal packet size for a "
@@ -1459,10 +1523,11 @@ msgid ""
 "on packet size is the _Maximum Transmission Unit_ (MTU) which sets the upper "
 "limit on the packet size for an interface.  Type `ifconfig` to view the MTUs "
 "for a system's network interfaces."
-msgstr ""
+msgstr "互联网协议的设计与设备无关，而设备独立性的一个结果是，无法始终可靠地预测给定连接的最佳数据包大小。数据包大小的主要限制是__最大传输单元__（MTU），它设定了接口数据包大小的上限。输入 `ifconfig` 可查看系统网络接口的 MTU。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:635
+#, fuzzy
 msgid ""
 "TCP/IP uses a process known as path MTU discovery to determine the right "
 "packet size for a connection.  This process sends packets of varying sizes "
@@ -1472,7 +1537,7 @@ msgid ""
 "but the do-not-fragment flag is set\".  To allow path MTU discovery in order "
 "to support connections to other MTUs, add the `destination unreachable` type "
 "to the `icmp_types` macro:"
-msgstr ""
+msgstr "TCP/IP 使用称为路径 MTU 发现的过程来确定连接的合适数据包大小。此过程会发送大小各异且设置了“不要分片”标志的数据包，并预期在达到上限时收到 ICMP 返回数据包“类型 3，代码 4”。类型 3 表示“目标不可达”，代码 4 是“需要分片，但已设置不要分片标志”的简称。若要支持连接到具有其他 MTU 的网络并启用路径 MTU 发现，请将 `destination unreachable` 类型添加到 `icmp_types` 宏中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:639
@@ -1482,17 +1547,19 @@ msgstr "icmp_types = \"{ echoreq, unreach }\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:642
+#, fuzzy
 msgid ""
 "Since the pass rule already uses that macro, it does not need to be modified "
 "to support the new ICMP type:"
-msgstr ""
+msgstr "由于放行规则已经使用了该宏，因此无需修改它即可支持新的 ICMP 类型："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:650
+#, fuzzy
 msgid ""
 "PF allows filtering on all variations of ICMP types and codes.  The list of "
 "possible types and codes are documented in man:icmp[4] and man:icmp6[4]."
-msgstr ""
+msgstr "PF 允许按所有 ICMP 类型和代码的变体进行过滤。可能的类型和代码列表记录在 man:icmp[4] 和 man:icmp6[4] 中。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:652
@@ -1502,6 +1569,7 @@ msgstr "使用 Tables"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:657
+#, fuzzy
 msgid ""
 "Some types of data are relevant to filtering and redirection at a given "
 "time, but their definition is too long to be included in the ruleset file.  "
@@ -1509,22 +1577,23 @@ msgid ""
 "manipulated without needing to reload the entire ruleset, and which can "
 "provide fast lookups.  Table names are always enclosed within `< >`, like "
 "this:"
-msgstr ""
+msgstr "某些数据在特定时刻与过滤和重定向有关，但其定义太长，不适合包含在规则集文件中。PF 支持使用表。表是定义好的列表，可以在不重新加载整个规则集的情况下进行操作，并能提供快速查找。表名始终用 `< >` 括起来，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:661
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "table <clients> { 192.168.2.0/24, !192.168.2.5 }\n"
-msgstr ""
+msgstr "table <clients> { 192.168.2.0/24, !192.168.2.5 }\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:665
+#, fuzzy
 msgid ""
 "In this example, the `192.168.2.0/24` network is part of the table, except "
 "for the address `192.168.2.5`, which is excluded using the `!` operator.  It "
 "is also possible to load tables from files where each item is on a separate "
 "line, as seen in this example [.filename]#/etc/clients#:"
-msgstr ""
+msgstr "在此示例中，`192.168.2.0/24` 网络属于该表，但使用 `!` 运算符排除的地址 `192.168.2.5` 除外。也可以从文件加载表，每个条目单独占一行，如 [.filename]#/etc/clients# 示例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:670
@@ -1543,9 +1612,9 @@ msgstr "要引用该文件，请像这样定义表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:677
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "table <clients> persist file \"/etc/clients\"\n"
-msgstr ""
+msgstr "table <clients> persist file \"/etc/clients\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:680
@@ -1562,19 +1631,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:688
+#, fuzzy
 msgid ""
 "A table's contents can be manipulated live, using `pfctl`.  This example "
 "adds another network to the table:"
-msgstr ""
+msgstr "可以使用 `pfctl` 实时操作表的内容。此示例向表中添加另一个网络："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:692
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -t clients -T add 192.168.1.0/16\n"
-msgstr ""
+msgstr "# pfctl -t clients -T add 192.168.1.0/16\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:698
+#, fuzzy
 msgid ""
 "Note that any changes made this way will take affect now, making them ideal "
 "for testing, but will not survive a power failure or reboot.  To make the "
@@ -1584,26 +1655,27 @@ msgid ""
 "regular intervals, using a command such as `pfctl -t clients -T show >/etc/"
 "clients`.  Alternatively, [.filename]#/etc/clients# can be updated with the "
 "in-memory table contents:"
-msgstr ""
+msgstr "请注意，通过这种方式所做的更改会立即生效，因此适合测试，但断电或重启后不会保留。若要永久保留更改，请修改规则集中的表定义，或编辑表所引用的文件。可以使用 man:cron[8] 作业定期将表的内容转储到磁盘，例如运行 `pfctl -t clients -T show >/etc/clients`，以维护磁盘上的表副本。或者，也可以用内存中的表内容更新 [.filename]#/etc/clients#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:702
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -t clients -T replace -f /etc/clients\n"
-msgstr ""
+msgstr "# pfctl -t clients -T replace -f /etc/clients\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:705
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Overload Tables to Protect SSH"
-msgstr ""
+msgstr "使用过载表保护 SSH"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:708
+#, fuzzy
 msgid ""
 "Those who run SSH on an external interface have probably seen something like "
 "this in the authentication logs:"
-msgstr ""
+msgstr "在外部接口上运行 SSH 的用户可能在身份验证日志中见过类似内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:717
@@ -1633,6 +1705,7 @@ msgstr "这表明有人或某些程序试图穷举用户名和密码来进入系
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:725
+#, fuzzy
 msgid ""
 "If external SSH access is needed for legitimate users, changing the default "
 "port used by SSH can offer some protection.  However, PF provides a more "
@@ -1640,7 +1713,7 @@ msgid ""
 "can do and violators can be banished to a table of addresses which are "
 "denied some or all access.  It is even possible to drop all existing "
 "connections from machines which overreach the limits."
-msgstr ""
+msgstr "如果合法用户需要从外部访问 SSH，更改 SSH 使用的默认端口可以提供一些保护。不过，PF 提供了更优雅的解决方案。放行规则可以限制连接主机的行为，并将违规主机加入拒绝其部分或全部访问的地址表。甚至可以断开超出限制的机器上所有现有连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:727
@@ -1650,9 +1723,9 @@ msgstr "要配置此功能，请在规则的表单元（tables section）中创�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:731
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "table <bruteforce> persist\n"
-msgstr ""
+msgstr "table <bruteforce> persist\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:734
@@ -1663,14 +1736,14 @@ msgstr "然后，在规则集的早期，添加规则以阻止暴力访问，同
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:742
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "block quick from <bruteforce>\n"
 "pass inet proto tcp from any to $localnet port $tcp_services \\\n"
 "    flags S/SA keep state \\\n"
 "    (max-src-conn 100, max-src-conn-rate 15/5, \\\n"
 "    overload <bruteforce> flush global)\n"
-msgstr ""
+msgstr "block quick from <bruteforce>\npass inet proto tcp from any to $localnet port $tcp_services \\\n    flags S/SA keep state \\\n    (max-src-conn 100, max-src-conn-rate 15/5, \\\n    overload <bruteforce> flush global)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:746
@@ -1685,39 +1758,44 @@ msgstr "括号内的部分确定了限制，数字应根据当地的要求进行
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:748
+#, fuzzy
 msgid ""
 "`max-src-conn` is the number of simultaneous connections allowed from one "
 "host."
-msgstr ""
+msgstr "`max-src-conn` 是允许单台主机建立的同时连接数。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:750
+#, fuzzy
 msgid ""
 "`max-src-conn-rate` is the rate of new connections allowed from any single "
 "host (_15_) per number of seconds (_5_)."
-msgstr ""
+msgstr "`max-src-conn-rate` 是允许单台主机在指定秒数内建立的新连接速率（每 _5_ 秒允许 _15_ 个）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:753
+#, fuzzy
 msgid ""
 "`overload <bruteforce>` means that any host which exceeds these limits gets "
 "its address added to the `bruteforce` table.  The ruleset blocks all traffic "
 "from addresses in the `bruteforce` table."
-msgstr ""
+msgstr "`overload <bruteforce>` 表示任何超出这些限制的主机都会将其地址添加到 `bruteforce` 表中。规则集会阻止来自 `bruteforce` 表中地址的所有流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:755
+#, fuzzy
 msgid ""
 "Finally, `flush global` says that when a host reaches the limit, that all "
 "(`global`) of that host's connections will be terminated (`flush`)."
-msgstr ""
+msgstr "最后，`flush global` 表示当主机达到限制时，该主机的所有（`global`）连接都会被终止（`flush`）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:759
+#, fuzzy
 msgid ""
 "These rules will _not_ block slow bruteforcers, as described in http://home."
 "nuug.no/\\~peter/hailmary2013/[http://home.nuug.no/~peter/hailmary2013/]."
-msgstr ""
+msgstr "如 link:http://home.nuug.no/\\~peter/hailmary2013/[http://home.nuug.no/~peter/hailmary2013/] 所述，这些规则__不会__阻止缓慢的暴力破解者。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:763
@@ -1790,17 +1868,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:786
+#, fuzzy
 msgid ""
 "For situations like these, pfctl provides the ability to expire table "
 "entries.  For example, this command will remove `<bruteforce>` table entries "
 "which have not been referenced for `86400` seconds:"
-msgstr ""
+msgstr "对于这类情况，pfctl 提供了使表条目过期的功能。例如，此命令会删除 `<bruteforce>` 表中在 `86400` 秒内未被引用的条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:790
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -t bruteforce -T expire 86400\n"
-msgstr ""
+msgstr "# pfctl -t bruteforce -T expire 86400\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:793
@@ -1815,11 +1894,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:796
+#, fuzzy
 msgid ""
 "Once installed, expiretable can be run to remove `<bruteforce>` table "
 "entries older than a specified age.  This example removes all entries older "
 "than 24 hours:"
-msgstr ""
+msgstr "安装后，可以运行 expiretable 删除超过指定时限的 `<bruteforce>` 表条目。此示例会删除所有超过 24 小时的条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:800
@@ -1829,29 +1909,32 @@ msgstr "/usr/local/sbin/expiretable -v -d -t 24h bruteforce\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:803
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Protecting Against SPAM"
-msgstr ""
+msgstr "防范垃圾邮件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:807
+#, fuzzy
 msgid ""
 "Not to be confused with the spamd daemon which comes bundled with "
 "spamassassin, package:mail/spamd[] can be configured with PF to provide an "
 "outer defense against SPAM.  This spamd hooks into the PF configuration "
 "using a set of redirections."
-msgstr ""
+msgstr "请勿将它与 spamassassin 附带的 spamd 守护进程混淆。package:mail/spamd[] 可以配置为与 PF 配合使用，提供抵御垃圾邮件的外围防护。此 spamd 通过一组重定向接入 PF 配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:809
+#, fuzzy
 msgid ""
 "Spammers tend to send a large number of messages, and SPAM is mainly sent "
 "from a few spammer friendly networks and a large number of hijacked "
 "machines, both of which are reported to _blocklists_ fairly quickly."
-msgstr ""
+msgstr "垃圾邮件发送者往往会发送大量邮件，而垃圾邮件主要来自少数对垃圾邮件发送者友好的网络和大量被劫持的机器；这些来源通常会很快被列入__阻止列表__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:813
+#, fuzzy
 msgid ""
 "When an SMTP connection from an address in a blocklist is received, spamd "
 "presents its banner and immediately switches to a mode where it answers SMTP "
@@ -1859,7 +1942,7 @@ msgid ""
 "much time as possible on the spammer's end, is called _tarpitting_.  The "
 "specific implementation which uses one byte SMTP replies is often referred "
 "to as _stuttering_."
-msgstr ""
+msgstr "收到来自阻止列表中地址的 SMTP 连接时，spamd 会显示其横幅，然后立即切换到一种逐字节应答 SMTP 流量的模式。这种旨在尽可能浪费垃圾邮件发送者时间的技术称为__延迟应答__。使用逐字节 SMTP 应答的具体实现通常称为__逐字节应答__。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:816
@@ -1874,17 +1957,18 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:819
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Configuring spamd"
-msgstr ""
+msgstr "操作步骤：配置 spamd"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:821
+#, fuzzy
 msgid ""
 "Install the package:mail/spamd[] package or port. To use spamd's greylisting "
 "features, man:fdescfs[5] must be mounted at [.filename]#/dev/fd#. Add the "
 "following line to [.filename]#/etc/fstab#:"
-msgstr ""
+msgstr "安装 package:mail/spamd[] 软件包或移植版本。若要使用 spamd 的灰名单功能，必须将 man:fdescfs[5] 挂载到 [.filename]#/dev/fd#。将以下行添加到 [.filename]#/etc/fstab#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:825
@@ -1899,18 +1983,19 @@ msgstr "然后，挂载文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:832
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#  mount fdescfs\n"
-msgstr ""
+msgstr "#  mount fdescfs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:835
+#, fuzzy
 msgid "Next, edit the PF ruleset to include:"
-msgstr ""
+msgstr "接下来，编辑 PF 规则集并加入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:844
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "table <spamd> persist\n"
 "table <spamd-white> persist\n"
@@ -1918,22 +2003,24 @@ msgid ""
 "    { $ext_if, $localnet } port smtp -> 127.0.0.1 port 8025\n"
 "rdr pass on $ext_if inet proto tcp from !<spamd-white> to \\\n"
 "    { $ext_if, $localnet } port smtp -> 127.0.0.1 port 8025\n"
-msgstr ""
+msgstr "table <spamd> persist\ntable <spamd-white> persist\nrdr pass on $ext_if inet proto tcp from <spamd> to \\\n    { $ext_if, $localnet } port smtp -> 127.0.0.1 port 8025\nrdr pass on $ext_if inet proto tcp from !<spamd-white> to \\\n    { $ext_if, $localnet } port smtp -> 127.0.0.1 port 8025\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:848
+#, fuzzy
 msgid ""
 "The two tables `<spamd>` and `<spamd-white>` are essential.  SMTP traffic "
 "from an address listed in `<spamd>` but not in `<spamd-white>` is redirected "
 "to the spamd daemon listening at port 8025."
-msgstr ""
+msgstr "`<spamd>` 和 `<spamd-white>` 这两个表至关重要。来自 `<spamd>` 中某个地址、但不在 `<spamd-white>` 中的 SMTP 流量会被重定向到监听端口 8025 的 spamd 守护进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:849
+#, fuzzy
 msgid ""
 "The next step is to configure spamd in [.filename]#/usr/local/etc/spamd."
 "conf# and to add some [.filename]#rc.conf# parameters."
-msgstr ""
+msgstr "下一步是在 [.filename]#/usr/local/etc/spamd.conf# 中配置 spamd，并添加一些 [.filename]#rc.conf# 参数。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:852
@@ -1971,12 +2058,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:862
+#, fuzzy
 msgid ""
 "This entry adds the desired blocklists, separated by colons (`:`).  To use "
 "an allowlist to subtract addresses from a blocklist, add the name of the "
 "allowlist _immediately_ after the name of that blocklist. For example: `:"
 "blocklist:allowlist:`."
-msgstr ""
+msgstr "此条目添加所需的阻止列表，各列表之间用冒号（`:`）分隔。若要使用允许列表从阻止列表中排除地址，请将允许列表名称紧接在阻止列表名称之后。例如：`:blocklist:allowlist:`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:864
@@ -2003,6 +2091,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:878
+#, fuzzy
 msgid ""
 "where the first line is the name of the blocklist and the second line "
 "specifies the list type.  The `msg` field contains the message to display to "
@@ -2011,14 +2100,15 @@ msgid ""
 "from a `file` in a mounted file system, and via `exec` of an external "
 "program.  Finally, the `file` field specifies the name of the file spamd "
 "expects to receive."
-msgstr ""
+msgstr "第一行是阻止列表的名称，第二行指定列表类型。`msg` 字段包含 SMTP 对话期间向被列入阻止列表的发送者显示的消息。`method` 字段指定 spamd-setup 获取列表数据的方式；支持的方法包括 `http`、`ftp`、从已挂载文件系统中的 `file` 获取，以及通过 `exec` 执行外部程序。最后，`file` 字段指定 spamd 预期接收的文件名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:880
+#, fuzzy
 msgid ""
 "The definition of the specified allowlist is similar, but omits the `msg` "
 "field since a message is not needed:"
-msgstr ""
+msgstr "指定允许列表的定义与此类似，但省略了 `msg` 字段，因为无需显示消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:887
@@ -2071,12 +2161,13 @@ msgstr "spamd_flags=\"-v\" # use \"\" and see spamd-setup(8) for flags\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:907
+#, fuzzy
 msgid ""
 "When finished, reload the ruleset, start spamd by typing `service obspamd "
 "start`, and complete the configuration using `spamd-setup`.  Finally, create "
 "a man:cron[8] job which calls `spamd-setup` to update the tables at "
 "reasonable intervals."
-msgstr ""
+msgstr "完成后，重新加载规则集，输入 `service obspamd start` 启动 spamd，然后使用 `spamd-setup` 完成配置。最后，创建一个调用 `spamd-setup` 并以合理间隔更新表的 man:cron[8] 作业。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:910
@@ -2087,23 +2178,25 @@ msgstr "在邮件服务器前的典型网关上，主机很快就会在几秒到
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:914
+#, fuzzy
 msgid ""
 "PF also supports _greylisting_, which temporarily rejects messages from "
 "unknown hosts with _45n_ codes.  Messages from greylisted hosts which try "
 "again within a reasonable time are let through.  Traffic from senders which "
 "are set up to behave within the limits set by RFC 1123 and RFC 2821 are "
 "immediately let through."
-msgstr ""
+msgstr "PF 还支持__灰名单__，会使用__45n__代码暂时拒绝来自未知主机的消息。来自灰名单主机的消息如果在合理时间内重试，就会被放行。来自遵守 RFC 1123 和 RFC 2821 所规定限制的发送者的流量会立即放行。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:918
+#, fuzzy
 msgid ""
 "More information about greylisting as a technique can be found at the http://"
 "www.greylisting.org/[greylisting.org] web site.  The most amazing thing "
 "about greylisting, apart from its simplicity, is that it still works.  "
 "Spammers and malware writers have been very slow to adapt to bypass this "
 "technique."
-msgstr ""
+msgstr "有关灰名单技术的更多信息，请访问 link:http://www.greylisting.org/[greylisting.org] 网站。灰名单最令人惊讶之处，除了它简单之外，就是它至今仍然有效。垃圾邮件发送者和恶意软件编写者适应并绕过这一技术的速度一直很慢。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:920
@@ -2112,22 +2205,24 @@ msgstr "配置灰名单的基本过程如下："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:922
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Configuring Greylisting"
-msgstr ""
+msgstr "操作步骤：配置灰名单"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:924
+#, fuzzy
 msgid ""
 "Make sure that man:fdescfs[5] is mounted as described in Step 1 of the "
 "previous Procedure."
-msgstr ""
+msgstr "确保已按照前一个操作步骤的第 1 步所述挂载 man:fdescfs[5]。"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:925
+#, fuzzy
 msgid ""
 "To run spamd in greylisting mode, add this line to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "若要以灰名单模式运行 spamd，请将此行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:929
@@ -2137,10 +2232,11 @@ msgstr "spamd_grey=\"YES\"  # use spamd greylisting if YES\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:932
+#, fuzzy
 msgid ""
 "Refer to the spamd man page for descriptions of additional related "
 "parameters."
-msgstr ""
+msgstr "有关其他相关参数的说明，请参阅 spamd 手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:933
@@ -2149,20 +2245,21 @@ msgstr "完成灰名单设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:938
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#  service obspamd restart\n"
 "#  service obspamlogd start\n"
-msgstr ""
+msgstr "#  service obspamd restart\n#  service obspamlogd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:942
+#, fuzzy
 msgid ""
 "Behind the scenes, the spamdb database tool and the spamlogd whitelist "
 "updater perform essential functions for the greylisting feature.  spamdb is "
 "the administrator's main interface to managing the block, grey, and allow "
 "lists via the contents of the [.filename]#/var/db/spamdb# database."
-msgstr ""
+msgstr "在幕后，spamdb 数据库工具和 spamlogd 允许列表更新程序会为灰名单功能执行重要工作。spamdb 是管理员管理阻止列表、灰名单和允许列表的主要接口，这些列表的内容存储在 [.filename]#/var/db/spamdb# 数据库中。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:944
@@ -2172,13 +2269,15 @@ msgstr "网络保健"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:947
+#, fuzzy
 msgid ""
 "This section describes how `block-policy`, `scrub`, and `antispoof` can be "
 "used to make the ruleset behave sanely."
-msgstr ""
+msgstr "本节介绍如何使用 `block-policy`、`scrub` 和 `antispoof`，使规则集的行为符合预期。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:951
+#, fuzzy
 msgid ""
 "The `block-policy` is an option which can be set in the `options` part of "
 "the ruleset, which precedes the redirection and filtering rules.  This "
@@ -2186,14 +2285,15 @@ msgid ""
 "by a rule.  The option has two possible values: `drop` drops blocked packets "
 "with no feedback, and `return` returns a status code such as `Connection "
 "refused`."
-msgstr ""
+msgstr "`block-policy` 是一个选项，可以在规则集的 `options` 部分设置；该部分位于重定向和过滤规则之前。此选项决定 PF 是否向被规则阻止的主机发送反馈。它有两个可能的值：`drop` 会丢弃被阻止的数据包且不发送反馈；`return` 会返回状态代码，例如 `Connection refused`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:954
+#, fuzzy
 msgid ""
 "If not set, the default policy is `drop`.  To change the `block-policy`, "
 "specify the desired value:"
-msgstr ""
+msgstr "如果未设置，默认策略为 `drop`。若要更改 `block-policy`，请指定所需的值："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:958
@@ -2203,6 +2303,7 @@ msgstr "set block-policy return\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:964
+#, fuzzy
 msgid ""
 "In PF, `scrub` is a keyword which enables network packet normalization.  "
 "This process reassembles fragmented packets and drops TCP packets that have "
@@ -2210,7 +2311,7 @@ msgid ""
 "protection against certain kinds of attacks based on incorrect handling of "
 "packet fragments.  A number of options are available, but the simplest form "
 "is suitable for most configurations:"
-msgstr ""
+msgstr "在 PF 中，`scrub` 是用于启用网络数据包规范化的关键字。此过程会重组分片数据包，并丢弃标志组合无效的 TCP 数据包。启用 `scrub` 可以在一定程度上防范因错误处理数据包分片而引发的某些攻击。它提供了许多选项，但最简单的形式适用于大多数配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:968
@@ -2220,18 +2321,20 @@ msgstr "scrub in all\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:972
+#, fuzzy
 msgid ""
 "Some services, such as NFS, require specific fragment handling options.  "
 "Refer to https://home.nuug.no/\\~peter/pf/en/scrub.html[https://home.nuug.no/"
 "~peter/pf/en/scrub.html] for more information."
-msgstr ""
+msgstr "某些服务（例如 NFS）需要特定的分片处理选项。更多信息请参阅 link:https://home.nuug.no/\\~peter/pf/en/scrub.html[https://home.nuug.no/~peter/pf/en/scrub.html]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:974
+#, fuzzy
 msgid ""
 "This example reassembles fragments, clears the \"do not fragment\" bit, and "
 "sets the maximum segment size to 1440 bytes:"
-msgstr ""
+msgstr "此示例会重组分片、清除“不要分片”位，并将最大分段大小设为 1440 字节："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:978
@@ -2241,11 +2344,12 @@ msgstr "scrub in all fragment reassemble no-df max-mss 1440\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:981
+#, fuzzy
 msgid ""
 "The `antispoof` mechanism protects against activity from spoofed or forged "
 "IP addresses, mainly by blocking packets appearing on interfaces and in "
 "directions which are logically not possible."
-msgstr ""
+msgstr "`antispoof` 机制可防范来自伪造或冒用 IP 地址的活动，主要通过阻止出现在逻辑上不可能的接口和方向上的数据包来实现。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:983
@@ -2304,44 +2408,47 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1005
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "martians = \"{ 127.0.0.0/8, 192.168.0.0/16, 172.16.0.0/12, \\\n"
 "\t      10.0.0.0/8, 169.254.0.0/16, 192.0.2.0/24, \\\n"
 "\t      0.0.0.0/8, 240.0.0.0/4 }\"\n"
-msgstr ""
+msgstr "martians = \"{ 127.0.0.0/8, 192.168.0.0/16, 172.16.0.0/12, \\\n\t      10.0.0.0/8, 169.254.0.0/16, 192.0.2.0/24, \\\n\t      0.0.0.0/8, 240.0.0.0/4 }\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1008
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "block drop in quick on $ext_if from $martians to any\n"
 "block drop out quick on $ext_if from any to $martians\n"
-msgstr ""
+msgstr "block drop in quick on $ext_if from $martians to any\nblock drop out quick on $ext_if from any to $martians\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1010
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling ALTQ"
-msgstr ""
+msgstr "启用 ALTQ"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1014
+#, fuzzy
 msgid ""
 "On FreeBSD, ALTQ can be used with PF to provide Quality of Service (QOS).  "
 "Once ALTQ is enabled, queues can be defined in the ruleset which determine "
 "the processing priority of outbound packets."
-msgstr ""
+msgstr "在 FreeBSD 上，可以将 ALTQ 与 PF 配合使用以提供服务质量（QOS）。启用 ALTQ 后，可以在规则集中定义队列，以确定出站数据包的处理优先级。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1016
+#, fuzzy
 msgid ""
 "Before enabling ALTQ, refer to man:altq[4] to determine if the drivers for "
 "the network cards installed on the system support it."
-msgstr ""
+msgstr "启用 ALTQ 之前，请参阅 man:altq[4]，以确定系统中安装的网卡驱动程序是否支持它。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1022
+#, fuzzy
 msgid ""
 "ALTQ is not available as a loadable kernel module.  If the system's "
 "interfaces support ALTQ, create a custom kernel using the instructions in "
@@ -2349,7 +2456,7 @@ msgid ""
 "following kernel options are available.  The first is needed to enable "
 "ALTQ.  At least one of the other options is necessary to specify the "
 "queueing scheduler algorithm:"
-msgstr ""
+msgstr "ALTQ 不能作为可加载的内核模块使用。如果系统的接口支持 ALTQ，请按照 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明创建自定义内核。可用的内核选项如下。第一个选项是启用 ALTQ 所必需的。还需要至少指定一个其他选项来选择队列调度算法："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1031
@@ -2382,10 +2489,11 @@ msgstr "CBQ"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1037
+#, fuzzy
 msgid ""
 "Class Based Queuing (CBQ) is used to divide a connection's bandwidth into "
 "different classes or queues to prioritize traffic based on filter rules."
-msgstr ""
+msgstr "基于类的队列（CBQ）用于将连接带宽划分为不同的类或队列，并根据过滤规则为流量设置优先级。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1038
@@ -2413,10 +2521,11 @@ msgstr "RIO"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1044
+#, fuzzy
 msgid ""
 "In Random Early Detection In and Out (RIO) mode, RED maintains multiple "
 "average queue lengths and multiple threshold values, one for each QOS level."
-msgstr ""
+msgstr "在随机早期检测输入和输出（RIO）模式下，RED 会维护多个平均队列长度和多个阈值，每个 QOS 级别各有一个。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1045
@@ -2426,11 +2535,12 @@ msgstr "HFSC"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1047
+#, fuzzy
 msgid ""
 "Hierarchical Fair Service Curve Packet Scheduler (HFSC) is described in "
 "http://www-2.cs.cmu.edu/\\~hzhang/HFSC/main.html[http://www-2.cs.cmu.edu/"
 "~hzhang/HFSC/main.html]."
-msgstr ""
+msgstr "分层公平服务曲线数据包调度器（HFSC）的说明见 link:http://www-2.cs.cmu.edu/\\~hzhang/HFSC/main.html[http://www-2.cs.cmu.edu/~hzhang/HFSC/main.html]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1048
@@ -2440,18 +2550,20 @@ msgstr "PRIQ"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1050
+#, fuzzy
 msgid ""
 "Priority Queuing (PRIQ) always passes traffic that is in a higher queue "
 "first."
-msgstr ""
+msgstr "优先级队列（PRIQ）总是优先传递较高优先级队列中的流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1052
+#, fuzzy
 msgid ""
 "More information about the scheduling algorithms and example rulesets are "
 "available at the https://web.archive.org/web/20151109213426/http://www."
 "openbsd.org/faq/pf/queueing.html[OpenBSD's web archive]."
-msgstr ""
+msgstr "有关调度算法和规则集示例的更多信息，请参阅 link:https://web.archive.org/web/20151109213426/http://www.openbsd.org/faq/pf/queueing.html[OpenBSD 的网页存档]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1054
@@ -2461,13 +2573,14 @@ msgstr "IPFW"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1058
+#, fuzzy
 msgid ""
 "IPFW is a stateful firewall written for FreeBSD which supports both IPv4 and "
 "IPv6.  It is comprised of several components: the kernel firewall filter "
 "rule processor and its integrated packet accounting facility, the logging "
 "facility, NAT, the man:dummynet[4] traffic shaper, a forward facility, a "
 "bridge facility, and an ipstealth facility."
-msgstr ""
+msgstr "IPFW 是为 FreeBSD 编写的有状态防火墙，支持 IPv4 和 IPv6。它由多个组件组成：内核防火墙过滤规则处理器及其集成的数据包计数功能、日志记录功能、NAT、man:dummynet[4] 流量整形器、转发功能、网桥功能以及 ipstealth 功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1061
@@ -2486,44 +2599,48 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1063
+#, fuzzy
 msgid ""
 "This section describes how to enable IPFW, provides an overview of its rule "
 "syntax, and demonstrates several rulesets for common configuration scenarios."
-msgstr ""
+msgstr "本节介绍如何启用 IPFW，概述其规则语法，并演示适用于常见配置场景的几个规则集。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1065
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling IPFW"
-msgstr ""
+msgstr "启用 IPFW"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1068
+#, fuzzy
 msgid ""
 "IPFW is included in the basic FreeBSD install as a kernel loadable module, "
 "meaning that a custom kernel is not needed in order to enable IPFW."
-msgstr ""
+msgstr "IPFW 作为内核可加载模块包含在 FreeBSD 基本安装中，因此启用 IPFW 不需要自定义内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1071
+#, fuzzy
 msgid ""
 "For those users who wish to statically compile IPFW support into a custom "
 "kernel, see crossref:firewalls[firewalls-ipfw-kernelconfig, IPFW Kernel "
 "Options]."
-msgstr ""
+msgstr "如果要将 IPFW 支持静态编译进自定义内核，请参阅 crossref:firewalls[firewalls-ipfw-kernelconfig,IPFW 内核选项]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1073
+#, fuzzy
 msgid ""
 "To configure the system to enable IPFW at boot time, add `firewall_enable="
 "\"YES\"` to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "要将系统配置为在启动时启用 IPFW，请将 `firewall_enable=\"YES\"` 添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1077
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc firewall_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc firewall_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1080
@@ -2537,9 +2654,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1084
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc firewall_type=\"open\"\n"
-msgstr ""
+msgstr "# sysrc firewall_type=\"open\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1087
@@ -2548,79 +2665,90 @@ msgstr "可用的类型有："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1089
+#, fuzzy
 msgid "`open`: passes all traffic."
-msgstr ""
+msgstr "`open`：允许所有流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1090
+#, fuzzy
 msgid "`client`: protects only this machine."
-msgstr ""
+msgstr "`client`：仅保护本机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1091
+#, fuzzy
 msgid "`simple`: protects the whole network."
-msgstr ""
+msgstr "`simple`：保护整个网络。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1092
+#, fuzzy
 msgid ""
 "`closed`: entirely disables IP traffic except for the loopback interface."
-msgstr ""
+msgstr "`closed`：完全禁用 IP 流量，但环回接口除外。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1093
+#, fuzzy
 msgid "`workstation`: protects only this machine using stateful rules."
-msgstr ""
+msgstr "`workstation`：使用有状态规则仅保护本机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1094
+#, fuzzy
 msgid "`UNKNOWN`: disables the loading of firewall rules."
-msgstr ""
+msgstr "`UNKNOWN`：禁用防火墙规则的加载。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1095
+#, fuzzy
 msgid ""
 "[.filename]#filename#: full path of the file containing the firewall ruleset."
-msgstr ""
+msgstr "[.filename]#filename#：包含防火墙规则集的文件的完整路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1097
+#, fuzzy
 msgid ""
 "If `firewall_type` is set to either `client` or `simple`, modify the default "
 "rules found in [.filename]#/etc/rc.firewall# to fit the configuration of the "
 "system."
-msgstr ""
+msgstr "如果将 `firewall_type` 设置为 `client` 或 `simple`，请修改 [.filename]#/etc/rc.firewall# 中的默认规则，使其符合系统配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1099
+#, fuzzy
 msgid "Note that the `filename` type is used to load a custom ruleset."
-msgstr ""
+msgstr "请注意，`filename` 类型用于加载自定义规则集。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1102
+#, fuzzy
 msgid ""
 "An alternate way to load a custom ruleset is to set the `firewall_script` "
 "variable to the absolute path of an _executable script_ that includes IPFW "
 "commands.  The examples used in this section assume that the "
 "`firewall_script` is set to [.filename]#/etc/ipfw.rules#:"
-msgstr ""
+msgstr "加载自定义规则集的另一种方法是将 `firewall_script` 变量设置为包含 IPFW 命令的__可执行脚本__的绝对路径。本节中的示例假定 `firewall_script` 已设置为 [.filename]#/etc/ipfw.rules#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc firewall_script=\"/etc/ipfw.rules\"\n"
-msgstr ""
+msgstr "# sysrc firewall_script=\"/etc/ipfw.rules\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1109
+#, fuzzy
 msgid "To enable logging through man:syslogd[8], include this line:"
-msgstr ""
+msgstr "要通过 man:syslogd[8] 启用日志记录，请加入以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc firewall_logging=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc firewall_logging=\"YES\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1121
@@ -2649,62 +2777,67 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# echo \"net.inet.ip.fw.verbose_limit=5\" >> /etc/sysctl.conf\n"
-msgstr ""
+msgstr "# echo \"net.inet.ip.fw.verbose_limit=5\" >> /etc/sysctl.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1132
+#, fuzzy
 msgid ""
 "To enable logging through a dedicated interface named `ipfw0`, add this line "
 "to [.filename]#/etc/rc.conf# instead:"
-msgstr ""
+msgstr "要通过名为 `ipfw0` 的专用接口启用日志记录，请将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc firewall_logif=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc firewall_logif=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1139
+#, fuzzy
 msgid "Then use tcpdump to see what is being logged:"
-msgstr ""
+msgstr "然后使用 tcpdump 查看日志记录内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tcpdump -t -n -i ipfw0\n"
-msgstr ""
+msgstr "# tcpdump -t -n -i ipfw0\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1149
+#, fuzzy
 msgid "There is no overhead due to logging unless tcpdump is attached."
-msgstr ""
+msgstr "除非连接了 tcpdump，否则日志记录不会带来额外开销。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1153
+#, fuzzy
 msgid ""
 "After saving the needed edits, start the firewall.  To enable logging limits "
 "now, also set the `sysctl` value specified above:"
-msgstr ""
+msgstr "保存所需的更改后，启动防火墙。要立即启用日志记录限制，还要设置上文指定的 `sysctl` 值："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service ipfw start\n"
 "# sysctl net.inet.ip.fw.verbose_limit=5\n"
-msgstr ""
+msgstr "# service ipfw start\n# sysctl net.inet.ip.fw.verbose_limit=5\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPFW Rule Syntax"
-msgstr ""
+msgstr "IPFW 规则语法"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1169
+#, fuzzy
 msgid ""
 "When a packet enters the IPFW firewall, it is compared against the first "
 "rule in the ruleset and progresses one rule at a time, moving from top to "
@@ -2716,7 +2849,7 @@ msgid ""
 "them.  However, if the packet matches a rule that contains the `count`, "
 "`skipto`, or `tee` keywords, the search continues.  Refer to man:ipfw[8] for "
 "details on how these keywords affect rule processing."
-msgstr ""
+msgstr "数据包进入 IPFW 防火墙时，会先与规则集中的第一条规则进行比较，然后依次从上到下逐条处理。当数据包符合某条规则的选择条件时，就会执行该规则的操作，并结束对该数据包的规则集搜索。这称为“首个匹配项生效”。如果数据包不匹配任何规则，就会被 IPFW 强制默认规则 65535 捕获，该规则会拒绝所有数据包并静默丢弃。不过，如果数据包匹配包含 `count`、`skipto` 或 `tee` 关键字的规则，搜索会继续。有关这些关键字如何影响规则处理的详情，请参阅 man:ipfw[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1175
@@ -2736,19 +2869,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1177
+#, fuzzy
 msgid ""
 "`_CMD RULE_NUMBER set SET_NUMBER ACTION log LOG_AMOUNT PROTO from SRC "
 "SRC_PORT to DST DST_PORT OPTIONS_`"
-msgstr ""
+msgstr "`_CMD RULE_NUMBER set SET_NUMBER ACTION log LOG_AMOUNT PROTO from SRC SRC_PORT to DST DST_PORT OPTIONS_`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1181
+#, fuzzy
 msgid ""
 "This section provides an overview of these keywords and their options.  It "
 "is not an exhaustive list of every possible option.  Refer to man:ipfw[8] "
 "for a complete description of the rule syntax that can be used when creating "
 "IPFW rules."
-msgstr ""
+msgstr "本节概述这些关键字及其选项，但并未列出所有可能的选项。创建 IPFW 规则时可用规则语法的完整说明，请参阅 man:ipfw[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1182
@@ -2758,8 +2893,9 @@ msgstr "CMD"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1184
+#, fuzzy
 msgid "Every rule must start with `ipfw add`."
-msgstr ""
+msgstr "每条规则都必须以 `ipfw add` 开头。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1185
@@ -2769,12 +2905,13 @@ msgstr "RULE_NUMBER"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1189
+#, fuzzy
 msgid ""
 "Each rule is associated with a number from `1` to `65534`.  The number is "
 "used to indicate the order of rule processing.  Multiple rules can have the "
 "same number, in which case they are applied according to the order in which "
 "they have been added."
-msgstr ""
+msgstr "每条规则都对应一个从 `1` 到 `65534` 的编号。此编号用于指定规则的处理顺序。多条规则可以使用相同编号，此时它们按照添加顺序应用。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1190
@@ -2784,12 +2921,13 @@ msgstr "SET_NUMBER"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1194
+#, fuzzy
 msgid ""
 "Each rule is associated with a set number from `0` to `31`.  Sets can be "
 "individually disabled or enabled, making it possible to quickly add or "
 "delete a set of rules.  If a SET_NUMBER is not specified, the rule will be "
 "added to set `0`."
-msgstr ""
+msgstr "每条规则都对应一个从 `0` 到 `31` 的规则集编号。可以单独禁用或启用规则集，因此能够快速添加或删除一组规则。如果未指定 SET_NUMBER，规则将添加到规则集 `0`。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1195
@@ -2815,13 +2953,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1200
+#, fuzzy
 msgid ""
 "`allow | accept | pass | permit`: these keywords are equivalent and allow "
 "packets that match the rule."
-msgstr ""
+msgstr "`allow | accept | pass | permit`：这些关键字含义相同，允许符合规则的数据包通过。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1205
+#, fuzzy
 msgid ""
 "`check-state`: checks the packet against the dynamic state table.  If a "
 "match is found, execute the action associated with the rule which generated "
@@ -2829,25 +2969,28 @@ msgid ""
 "does not have selection criterion.  If no `check-state` rule is present in "
 "the ruleset, the dynamic rules table is checked at the first `keep-state` or "
 "`limit` rule."
-msgstr ""
+msgstr "`check-state`：根据动态状态表检查数据包。如果找到匹配项，则执行创建该动态规则的规则所关联的操作；否则转到下一条规则。`check-state` 规则没有选择条件。如果规则集中没有 `check-state` 规则，则会在第一条 `keep-state` 或 `limit` 规则处检查动态规则表。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1208
+#, fuzzy
 msgid ""
 "`count`: updates counters for all packets that match the rule.  The search "
 "continues with the next rule."
-msgstr ""
+msgstr "`count`：更新所有匹配该规则的数据包的计数器，然后继续搜索下一条规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1210
+#, fuzzy
 msgid ""
 "`deny | drop`: either word silently discards packets that match this rule."
-msgstr ""
+msgstr "`deny | drop`：这两个关键字都会静默丢弃匹配该规则的数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1213
+#, fuzzy
 msgid "Additional actions are available.  Refer to man:ipfw[8] for details."
-msgstr ""
+msgstr "还有其他可用操作，详情请参阅 man:ipfw[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1214
@@ -2857,6 +3000,7 @@ msgstr "LOG_AMOUNT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1220
+#, fuzzy
 msgid ""
 "When a packet matches a rule with the `log` keyword, a message will be "
 "logged to man:syslogd[8] with a facility name of `SECURITY`.  Logging only "
@@ -2866,7 +3010,7 @@ msgid ""
 "removes the logging limit.  Once the limit is reached, logging can be re-"
 "enabled by clearing the logging counter or the packet counter for that rule, "
 "using `ipfw resetlog`."
-msgstr ""
+msgstr "数据包匹配带有 `log` 关键字的规则时，会向 man:syslogd[8] 记录一条消息，其 facility 名称为 `SECURITY`。只有当该规则记录的数据包数量未超过指定的 LOG_AMOUNT 时，才会进行日志记录。如果未指定 LOG_AMOUNT，则使用 `net.inet.ip.fw.verbose_limit` 的值作为限制。值为零表示不设日志记录限制。达到限制后，可以使用 `ipfw resetlog` 清除该规则的日志计数器或数据包计数器，以重新启用日志记录。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1225
@@ -2907,6 +3051,7 @@ msgstr "SRC"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1235
+#, fuzzy
 msgid ""
 "The `from` keyword must be followed by the source address or a keyword that "
 "represents the source address.  An address can be represented by `any`, `me` "
@@ -2915,7 +3060,7 @@ msgid ""
 "the number of a lookup table which contains a list of addresses.  When "
 "specifying an IP address, it can be optionally followed by its CIDR mask or "
 "subnet mask.  For example, `1.2.3.4/25` or `1.2.3.4:255.255.255.128`."
-msgstr ""
+msgstr "`from` 关键字后必须跟源地址或表示源地址的关键字。地址可以表示为 `any`、`me`（本系统某个接口上配置的任意地址）、`me6`（本系统某个接口上配置的任意 IPv6 地址），也可以表示为 `table`，后跟包含地址列表的查找表编号。指定 IP 地址时，可以选择在其后附加 CIDR 掩码或子网掩码。例如，`1.2.3.4/25` 或 `1.2.3.4:255.255.255.128`。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1236
@@ -2944,11 +3089,12 @@ msgstr "DST"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1242
+#, fuzzy
 msgid ""
 "The `to` keyword must be followed by the destination address or a keyword "
 "that represents the destination address.  The same keywords and addresses "
 "described in the SRC section can be used to describe the destination."
-msgstr ""
+msgstr "`to` 关键字后必须跟目标地址或表示目标地址的关键字。可以使用 SRC 部分中介绍的相同关键字和地址来描述目标。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1243
@@ -2976,23 +3122,26 @@ msgstr "OPTIONS"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1250
+#, fuzzy
 msgid ""
 "Several keywords can follow the source and destination.  As the name "
 "suggests, OPTIONS are optional.  Commonly used options include `in` or "
 "`out`, which specify the direction of packet flow, `icmptypes` followed by "
 "the type of ICMP message, and `keep-state`."
-msgstr ""
+msgstr "源地址和目标地址后可以跟多个关键字。顾名思义，OPTIONS 是可选的。常用选项包括指定数据包流向的 `in` 或 `out`、后跟 ICMP 消息类型的 `icmptypes`，以及 `keep-state`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1252
+#, fuzzy
 msgid ""
 "When a `keep-state` rule is matched, the firewall will create a dynamic rule "
 "which matches bidirectional traffic between the source and destination "
 "addresses and ports using the same protocol."
-msgstr ""
+msgstr "匹配 `keep-state` 规则时，防火墙会创建一条动态规则，用于匹配源和目标地址及端口之间、使用相同协议的双向流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1257
+#, fuzzy
 msgid ""
 "The dynamic rules facility is vulnerable to resource depletion from a SYN-"
 "flood attack which would open a huge number of dynamic rules.  To counter "
@@ -3001,14 +3150,15 @@ msgid ""
 "number of times this rule and IP address combination occurred.  If this "
 "count is greater than the value specified by `limit`, the packet is "
 "discarded."
-msgstr ""
+msgstr "动态规则功能容易受到 SYN 洪泛攻击导致的资源耗尽；此类攻击会打开大量动态规则。要使用 IPFW 应对此类攻击，请使用 `limit`。此选项通过检查已打开的动态规则，并统计该规则与 IP 地址组合出现的次数，来限制同时进行的会话数。如果计数超过 `limit` 指定的值，就会丢弃该数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1260
+#, fuzzy
 msgid ""
 "Dozens of OPTIONS are available.  Refer to man:ipfw[8] for a description of "
 "each available option."
-msgstr ""
+msgstr "有数十种 OPTIONS 可供使用。每个可用选项的说明请参阅 man:ipfw[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1261
@@ -3019,12 +3169,13 @@ msgstr "规则集示例"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1266
+#, fuzzy
 msgid ""
 "This section demonstrates how to create an example stateful firewall ruleset "
 "script named [.filename]#/etc/ipfw.rules#.  In this example, all connection "
 "rules use `in` or `out` to clarify the direction.  They also use `via` "
 "_interface-name_ to specify the interface the packet is traveling over."
-msgstr ""
+msgstr "本节演示如何创建一个名为 [.filename]#/etc/ipfw.rules# 的有状态防火墙规则集示例脚本。在此示例中，所有连接规则都使用 `in` 或 `out` 来明确方向；还使用 `via` __interface-name__ 指定数据包经过的接口。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1270
@@ -3041,11 +3192,12 @@ msgstr "net.inet.ip.fw.default_to_accept=\"1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1277
+#, fuzzy
 msgid ""
 "This sets the default policy of man:ipfw[8] to be more permissive than the "
 "default `deny ip from any to any`, making it slightly more difficult to get "
 "locked out of the system right after a reboot."
-msgstr ""
+msgstr "这会将 man:ipfw[8] 的默认策略设置得比默认的 `deny ip from any to any` 更宽松一些，从而降低系统重启后立即被锁在系统之外的可能性。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1282
@@ -3064,21 +3216,21 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#!/bin/sh\n"
 "# Flush out the list before we begin.\n"
 "ipfw -q -f flush\n"
-msgstr ""
+msgstr "#!/bin/sh\n# 开始之前先清空列表。\nipfw -q -f flush\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1292
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Set rules command prefix\n"
 "cmd=\"ipfw -q add\"\n"
 "pif=\"dc0\"     # interface name of NIC attached to Internet\n"
-msgstr ""
+msgstr "# 设置规则命令前缀\ncmd=\"ipfw -q add\"\npif=\"dc0\"     # 连接到互联网的网卡接口名称\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1295
@@ -3089,19 +3241,19 @@ msgstr "前两个规则允许受信任内部接口和环回接口上的所有流
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Change xl0 to LAN NIC interface name\n"
 "$cmd 00005 allow all from any to any via xl0\n"
-msgstr ""
+msgstr "# 将 xl0 改为 LAN 网卡接口名称\n$cmd 00005 allow all from any to any via xl0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# No restrictions on Loopback Interface\n"
 "$cmd 00010 allow all from any to any via lo0\n"
-msgstr ""
+msgstr "# 不限制环回接口\n$cmd 00010 allow all from any to any via lo0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1306
@@ -3125,75 +3277,75 @@ msgstr "下一条规则说明系统中的哪些服务能与 Internet 创建有�
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow access to public DNS\n"
 "# Replace x.x.x.x with the IP address of a public DNS server\n"
 "# and repeat for each DNS server in /etc/resolv.conf\n"
 "$cmd 00110 allow tcp from any to x.x.x.x 53 out via $pif setup keep-state\n"
 "$cmd 00111 allow udp from any to x.x.x.x 53 out via $pif keep-state\n"
-msgstr ""
+msgstr "# 允许访问公共 DNS\n# 将 x.x.x.x 替换为公共 DNS 服务器的 IP 地址\n# 并为 /etc/resolv.conf 中的每台 DNS 服务器重复此规则\n$cmd 00110 allow tcp from any to x.x.x.x 53 out via $pif setup keep-state\n$cmd 00111 allow udp from any to x.x.x.x 53 out via $pif keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow access to ISP's DHCP server for cable/DSL configurations.\n"
 "# Use the first rule and check log for IP address.\n"
 "# Then, uncomment the second rule, input the IP address, and delete the first rule\n"
 "$cmd 00120 allow log udp from any to any 67 out via $pif keep-state\n"
 "#$cmd 00120 allow udp from any to x.x.x.x 67 out via $pif keep-state\n"
-msgstr ""
+msgstr "# 允许在有线/DSL 配置中访问 ISP 的 DHCP 服务器。\n# 使用第一条规则并检查日志中的 IP 地址。\n# 然后取消第二条规则的注释，填入 IP 地址，并删除第一条规则\n$cmd 00120 allow log udp from any to any 67 out via $pif keep-state\n#$cmd 00120 allow udp from any to x.x.x.x 67 out via $pif keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow outbound HTTP and HTTPS connections\n"
 "$cmd 00200 allow tcp from any to any 80 out via $pif setup keep-state\n"
 "$cmd 00220 allow tcp from any to any 443 out via $pif setup keep-state\n"
-msgstr ""
+msgstr "# 允许出站 HTTP 和 HTTPS 连接\n$cmd 00200 allow tcp from any to any 80 out via $pif setup keep-state\n$cmd 00220 allow tcp from any to any 443 out via $pif setup keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow outbound email connections\n"
 "$cmd 00230 allow tcp from any to any 25 out via $pif setup keep-state\n"
 "$cmd 00231 allow tcp from any to any 110 out via $pif setup keep-state\n"
-msgstr ""
+msgstr "# 允许出站电子邮件连接\n$cmd 00230 allow tcp from any to any 25 out via $pif setup keep-state\n$cmd 00231 allow tcp from any to any 110 out via $pif setup keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow outbound ping\n"
 "$cmd 00250 allow icmp from any to any out via $pif keep-state\n"
-msgstr ""
+msgstr "# 允许出站 ping\n$cmd 00250 allow icmp from any to any out via $pif keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow outbound NTP\n"
 "$cmd 00260 allow udp from any to any 123 out via $pif keep-state\n"
-msgstr ""
+msgstr "# 允许出站 NTP\n$cmd 00260 allow udp from any to any 123 out via $pif keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow outbound SSH\n"
 "$cmd 00280 allow tcp from any to any 22 out via $pif setup keep-state\n"
-msgstr ""
+msgstr "# 允许出站 SSH\n$cmd 00280 allow tcp from any to any 22 out via $pif setup keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# deny and log all other outbound connections\n"
 "$cmd 00299 deny log all from any to any out via $pif\n"
-msgstr ""
+msgstr "# 拒绝并记录所有其他出站连接\n$cmd 00299 deny log all from any to any out via $pif\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1352
@@ -3211,7 +3363,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Deny all inbound traffic from non-routable reserved address spaces\n"
 "$cmd 00300 deny all from 192.168.0.0/16 to any in via $pif     #RFC 1918 private IP\n"
@@ -3223,83 +3375,83 @@ msgid ""
 "$cmd 00306 deny all from 192.0.2.0/24 to any in via $pif       #reserved for docs\n"
 "$cmd 00307 deny all from 204.152.64.0/23 to any in via $pif    #Sun cluster interconnect\n"
 "$cmd 00308 deny all from 224.0.0.0/3 to any in via $pif        #Class D & E multicast\n"
-msgstr ""
+msgstr "# 拒绝来自不可路由保留地址空间的所有入站流量\n$cmd 00300 deny all from 192.168.0.0/16 to any in via $pif     #RFC 1918 私有 IP\n$cmd 00301 deny all from 172.16.0.0/12 to any in via $pif      #RFC 1918 私有 IP\n$cmd 00302 deny all from 10.0.0.0/8 to any in via $pif         #RFC 1918 私有 IP\n$cmd 00303 deny all from 127.0.0.0/8 to any in via $pif        #环回地址\n$cmd 00304 deny all from 0.0.0.0/8 to any in via $pif          #环回地址\n$cmd 00305 deny all from 169.254.0.0/16 to any in via $pif     #DHCP 自动配置\n$cmd 00306 deny all from 192.0.2.0/24 to any in via $pif       #保留用于文档示例\n$cmd 00307 deny all from 204.152.64.0/23 to any in via $pif    #Sun 集群互连\n$cmd 00308 deny all from 224.0.0.0/3 to any in via $pif        #D 类和 E 类多播\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Deny public pings\n"
 "$cmd 00310 deny icmp from any to any in via $pif\n"
-msgstr ""
+msgstr "# 拒绝公共 ping\n$cmd 00310 deny icmp from any to any in via $pif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Deny ident\n"
 "$cmd 00315 deny tcp from any to any 113 in via $pif\n"
-msgstr ""
+msgstr "# 拒绝 ident\n$cmd 00315 deny tcp from any to any 113 in via $pif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Deny all Netbios services.\n"
 "$cmd 00320 deny tcp from any to any 137 in via $pif\n"
 "$cmd 00321 deny tcp from any to any 138 in via $pif\n"
 "$cmd 00322 deny tcp from any to any 139 in via $pif\n"
 "$cmd 00323 deny tcp from any to any 81 in via $pif\n"
-msgstr ""
+msgstr "# 拒绝所有 NetBIOS 服务。\n$cmd 00320 deny tcp from any to any 137 in via $pif\n$cmd 00321 deny tcp from any to any 138 in via $pif\n$cmd 00322 deny tcp from any to any 139 in via $pif\n$cmd 00323 deny tcp from any to any 81 in via $pif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Deny fragments\n"
 "$cmd 00330 deny all from any to any frag in via $pif\n"
-msgstr ""
+msgstr "# 拒绝分片\n$cmd 00330 deny all from any to any frag in via $pif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Deny ACK packets that did not match the dynamic rule table\n"
 "$cmd 00332 deny tcp from any to any established in via $pif\n"
-msgstr ""
+msgstr "# 拒绝与动态规则表不匹配的 ACK 数据包\n$cmd 00332 deny tcp from any to any established in via $pif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow traffic from ISP's DHCP server.\n"
 "# Replace x.x.x.x with the same IP address used in rule 00120.\n"
 "#$cmd 00360 allow udp from any to x.x.x.x 67 in via $pif keep-state\n"
-msgstr ""
+msgstr "# 允许来自 ISP DHCP 服务器的流量。\n# 将 x.x.x.x 替换为规则 00120 中使用的相同 IP 地址。\n#$cmd 00360 allow udp from any to x.x.x.x 67 in via $pif keep-state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1390
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow HTTP connections to internal web server\n"
 "$cmd 00400 allow tcp from any to me 80 in via $pif setup limit src-addr 2\n"
-msgstr ""
+msgstr "# 允许到内部 Web 服务器的 HTTP 连接\n$cmd 00400 allow tcp from any to me 80 in via $pif setup limit src-addr 2\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow inbound SSH connections\n"
 "$cmd 00410 allow tcp from any to me 22 in via $pif setup limit src-addr 2\n"
-msgstr ""
+msgstr "# 允许入站 SSH 连接\n$cmd 00410 allow tcp from any to me 22 in via $pif setup limit src-addr 2\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Reject and log all other incoming connections\n"
 "$cmd 00499 deny log all from any to any in via $pif\n"
-msgstr ""
+msgstr "# 拒绝并记录所有其他入站连接\n$cmd 00499 deny log all from any to any in via $pif\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1399
@@ -3320,12 +3472,13 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1407
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "In-kernel NAT"
-msgstr ""
+msgstr "内核 NAT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1412
+#, fuzzy
 msgid ""
 "FreeBSD's IPFW firewall has two implementations of NAT: the userland "
 "implementation man:natd[8], and the more recent in-kernel NAT "
@@ -3333,25 +3486,27 @@ msgid ""
 "address translation.  This can be used to provide an Internet Connection "
 "Sharing solution so that several internal computers can connect to the "
 "Internet using a single public IP address."
-msgstr ""
+msgstr "FreeBSD 的 IPFW 防火墙有两种 NAT 实现：用户空间实现 man:natd[8]，以及较新的内核 NAT 实现。两者都与 IPFW 配合提供网络地址转换。此功能可用于实现 Internet 连接共享，使多台内部计算机通过单个公共 IP 地址连接到 Internet。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1416
+#, fuzzy
 msgid ""
 "To do this, the FreeBSD machine connected to the Internet must act as a "
 "gateway.  This system must have two NICs, where one is connected to the "
 "Internet and the other is connected to the internal LAN.  Each machine "
 "connected to the LAN should be assigned an IP address in the private network "
 "space, as defined by https://www.ietf.org/rfc/rfc1918.txt[RFC 1918]."
-msgstr ""
+msgstr "为此，连接到 Internet 的 FreeBSD 计算机必须充当网关。该系统必须有两个 NIC，一个连接到 Internet，另一个连接到内部 LAN。连接到 LAN 的每台计算机都应分配一个私有网络空间中的 IP 地址，具体定义见 link:https://www.ietf.org/rfc/rfc1918.txt[RFC 1918]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1419
+#, fuzzy
 msgid ""
 "Some additional configuration is needed in order to enable the in-kernel NAT "
 "facility of IPFW.  To enable in-kernel NAT support at boot time, the "
 "following must be set in [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "要启用 IPFW 的内核 NAT 功能，还需要进行一些额外配置。要在启动时启用内核 NAT 支持，必须在 [.filename]#/etc/rc.conf# 中设置以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1425
@@ -3367,11 +3522,12 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1431
+#, fuzzy
 msgid ""
 "When `firewall_nat_enable` is set but `firewall_enable` is not, it will have "
 "no effect and do nothing.  This is because the in-kernel NAT implementation "
 "is only compatible with IPFW."
-msgstr ""
+msgstr "如果设置了 `firewall_nat_enable`，但未设置 `firewall_enable`，则不会产生任何效果，也不会执行任何操作。这是因为内核 NAT 实现仅与 IPFW 兼容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1438
@@ -3416,6 +3572,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1453
+#, fuzzy
 msgid ""
 "With in-kernel NAT it is necessary to disable TCP segmentation offloading "
 "(TSO) due to the architecture of man:libalias[3], a library implemented as a "
@@ -3423,7 +3580,7 @@ msgid ""
 "disabled on a per network interface basis using man:ifconfig[8] or on a "
 "system wide basis using man:sysctl[8].  To disable TSO system wide, the "
 "following must be set it [.filename]#/etc/sysctl.conf#:"
-msgstr ""
+msgstr "由于 man:libalias[3] 的架构，使用内核 NAT 时必须禁用 TCP 分段卸载（TSO）。man:libalias[3] 是作为内核模块实现的库，用于提供 IPFW 的内核 NAT 功能。可以使用 man:ifconfig[8] 按网络接口禁用 TSO，也可以使用 man:sysctl[8] 在整个系统范围内禁用。要在整个系统范围内禁用 TSO，必须在 [.filename]#/etc/sysctl.conf# 中设置以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1457
@@ -3433,6 +3590,7 @@ msgstr "net.inet.tcp.tso=\"0\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1466
+#, fuzzy
 msgid ""
 "A NAT instance will also be configured.  It is possible to have multiple NAT "
 "instances each with their own configuration.  For this example only one NAT "
@@ -3447,7 +3605,7 @@ msgid ""
 "NATing firewall, it is necessary to allow translated packets to be "
 "reinjected in the firewall for further processing.  This can be achieved by "
 "disabling `one_pass` behavior at the start of the firewall script."
-msgstr ""
+msgstr "还将配置一个 NAT 实例。可以配置多个 NAT 实例，并为每个实例指定自己的配置。本例只需要一个 NAT 实例，即 NAT 实例编号 1。配置可接受若干选项，例如：`if` 指定公共接口；`same_ports` 确保别名端口与本地端口号映射相同；`unreg_only` 使 NAT 实例只处理未注册（私有）地址空间；`reset` 则有助于在 IPFW 计算机的公共 IP 地址发生变化时保持 NAT 实例正常运行。有关单个 NAT 实例配置可用的所有选项，请参阅 man:ipfw[8]。配置有状态 NAT 防火墙时，必须允许转换后的数据包重新注入防火墙以作进一步处理。可以在防火墙脚本开头禁用 `one_pass` 行为来实现这一点。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1471
@@ -3461,6 +3619,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1477
+#, fuzzy
 msgid ""
 "The inbound NAT rule is inserted _after_ the two rules which allow all "
 "traffic on the trusted and loopback interfaces and after the reassemble rule "
@@ -3473,25 +3632,27 @@ msgid ""
 "with IPSEC/ESP/GRE tunneling traffic it might and the reassembling of "
 "fragments is necessary before handing the complete packet over to the in-"
 "kernel NAT facility."
-msgstr ""
+msgstr "入站 NAT 规则插入在允许可信接口和回环接口上的所有流量的两条规则之后、重组规则之后，但在 `check-state` 规则之前。所选 NAT 规则编号（本例中为 `100`）必须大于前三条规则的编号，并小于 `check-state` 规则的编号，这一点很重要。此外，由于内核 NAT 的行为，建议在第一条 NAT 规则之前、允许可信接口流量的规则之后放置一条重组规则。通常不会发生 IP 分片，但处理 IPSEC/ESP/GRE 隧道流量时可能会发生，因此在将完整数据包交给内核 NAT 功能之前，必须重组分片。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1481
+#, fuzzy
 msgid ""
 "The reassemble rule was not needed with userland man:natd[8] because the "
 "internal workings of the IPFW `divert` action already takes care of "
 "reassembling packets before delivery to the socket as also stated in man:"
 "ipfw[8]."
-msgstr ""
+msgstr "使用用户空间 man:natd[8] 时不需要重组规则，因为 IPFW `divert` 操作的内部机制已经会在将数据包传递到套接字之前对其进行重组，man:ipfw[8] 中也有说明。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1484
+#, fuzzy
 msgid ""
 "The NAT instance and rule number used in this example does not match with "
 "the default NAT instance and rule number created by [.filename]#rc."
 "firewall#.  [.filename]#rc.firewall# is a script that sets up the default "
 "firewall rules present in FreeBSD."
-msgstr ""
+msgstr "本例中使用的 NAT 实例和规则编号与 [.filename]#rc.firewall# 创建的默认 NAT 实例和规则编号不同。 [.filename]#rc.firewall# 是用于设置 FreeBSD 默认防火墙规则的脚本。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1494
@@ -3513,19 +3674,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1498
+#, fuzzy
 msgid ""
 "The outbound rules are modified to replace the `allow` action with the `"
 "$skip` variable, indicating that rule processing will continue at rule "
 "`1000`.  The seven `tcp` rules have been replaced by rule `125` as the `"
 "$good_tcpo` variable contains the seven allowed outbound ports."
-msgstr ""
+msgstr "出站规则经过修改，将 `allow` 操作替换为 `$skip` 变量，表示规则处理将继续从规则 `1000` 开始。七条 `tcp` 规则已替换为规则 `125`，因为 `$good_tcpo` 变量包含七个允许的出站端口。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1502
+#, fuzzy
 msgid ""
 "Remember that IPFW's performance is largely determined by the number of "
 "rules present in the ruleset."
-msgstr ""
+msgstr "请记住，IPFW 的性能在很大程度上取决于规则集中规则的数量。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1511
@@ -3545,6 +3708,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1517
+#, fuzzy
 msgid ""
 "The inbound rules remain the same, except for the very last rule which "
 "removes the `via $pif` in order to catch both inbound and outbound rules.  "
@@ -3553,7 +3717,7 @@ msgid ""
 "action.  In this ruleset, rule number `1000` handles passing all packets to "
 "our configured instance for NAT processing.  The next rule allows any packet "
 "which has undergone NAT processing to pass."
-msgstr ""
+msgstr "入站规则保持不变，但最后一条规则例外：它移除了 `via $pif`，以便同时捕获入站和出站规则。NAT 规则必须位于这条最后的出站规则之后，编号必须大于该规则，并且规则编号必须由 `skipto` 操作引用。在此规则集中，规则编号 `1000` 会将所有数据包传递给已配置的实例进行 NAT 处理。下一条规则允许所有经过 NAT 处理的数据包通过。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1523
@@ -3569,11 +3733,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1526
+#, fuzzy
 msgid ""
 "In this example, rules `100`, `101`, `125`, `1000`, and `1001` control the "
 "address translation of the outbound and inbound packets so that the entries "
 "in the dynamic state table always register the private LANIP address."
-msgstr ""
+msgstr "在本例中，规则 `100`、`101`、`125`、`1000` 和 `1001` 控制出站和入站数据包的地址转换，使动态状态表中的条目始终记录私有 LANIP 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1538
@@ -3610,6 +3775,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1543
+#, fuzzy
 msgid ""
 "On the inbound side, the ruleset has to deny bad packets and allow only "
 "authorized services.  A packet which matches an inbound rule is posted to "
@@ -3617,10 +3783,11 @@ msgid ""
 "generated as a response is recognized by the `check-state` rule as belonging "
 "to an existing session.  It is then sent to rule `1000` to undergo NAT "
 "before being released to the outbound interface."
-msgstr ""
+msgstr "在入站方向，规则集必须拒绝无效数据包，并仅允许已授权的服务。匹配入站规则的数据包会添加到动态状态表中，然后放行到 LAN。作为响应而生成的数据包会被 `check-state` 规则识别为属于现有会话。随后，它会被发送到规则 `1000`，经 NAT 处理后再放行到出站接口。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1551
+#, fuzzy
 msgid ""
 "Transitioning from userland man:natd[8] to in-kernel NAT might appear "
 "seamless at first but there is small catch.  When using the GENERIC kernel, "
@@ -3637,7 +3804,7 @@ msgid ""
 "etc/rc.conf#.  If a custom kernel is used, the full functionality of the "
 "userland library can be compiled in, in the kernel, using the `options "
 "LIBALIAS`."
-msgstr ""
+msgstr "从用户空间 man:natd[8] 迁移到内核 NAT，起初看起来可能很顺利，但有一个小问题。使用 GENERIC 内核时，如果在 [.filename]#/etc/rc.conf# 中启用了 `firewall_nat_enable`，IPFW 会加载 [.filename]#libalias.ko# 内核模块。该模块仅提供基本 NAT 功能，而用户空间实现 man:natd[8] 无需额外配置，即可通过其用户空间库提供全部 NAT 功能。这里的全部功能是指以下内核模块：除标准的 [.filename]#libalias.ko# 内核模块外，还可以根据需要使用 [.filename]#/etc/rc.conf# 中的 `kld_list` 指令加载 [.filename]#alias_ftp.ko#、[.filename]#alias_bbt.ko#、[.filename]#skinny.ko#、[.filename]#irc.ko#、[.filename]#alias_pptp.ko# 和 [.filename]#alias_smedia.ko#。如果使用自定义内核，可以通过在内核中编译 `options LIBALIAS` 来启用用户空间库的全部功能。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1553
@@ -3647,6 +3814,7 @@ msgstr "端口重定向"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1559
+#, fuzzy
 msgid ""
 "The drawback with NAT in general is that the LAN clients are not accessible "
 "from the Internet.  Clients on the LAN can make outgoing connections to the "
@@ -3654,24 +3822,26 @@ msgid ""
 "to run Internet services on one of the LAN client machines.  A simple way "
 "around this is to redirect selected Internet ports on the NAT providing "
 "machine to a LAN client."
-msgstr ""
+msgstr "NAT 的一个普遍缺点是，LAN 客户端无法从 Internet 访问。LAN 上的客户端可以向外建立连接，但无法接收入站连接。如果尝试在某台 LAN 客户端计算机上运行 Internet 服务，这就会带来问题。一个简单的解决方法是，将提供 NAT 的计算机上的指定 Internet 端口重定向到 LAN 客户端。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1562
+#, fuzzy
 msgid ""
 "For example, an IRC server runs on client `A` and a web server runs on "
 "client `B`.  For this to work properly, connections received on ports 6667 "
 "(IRC) and 80 (HTTP) must be redirected to the respective machines."
-msgstr ""
+msgstr "例如，客户端 `A` 上运行着 IRC 服务器，客户端 `B` 上运行着 Web 服务器。要使其正常工作，必须将端口 6667（IRC）和 80（HTTP）上收到的连接分别重定向到对应的计算机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1566
+#, fuzzy
 msgid ""
 "With in-kernel NAT all configuration is done in the NAT instance "
 "configuration.  For a full list of options that an in-kernel NAT instance "
 "can use, consult man:ipfw[8].  The IPFW syntax follows the syntax of natd. "
 "The syntax for `redirect_port` is as follows:"
-msgstr ""
+msgstr "使用内核 NAT 时，所有配置都在 NAT 实例配置中完成。有关内核 NAT 实例可用选项的完整列表，请参阅 man:ipfw[8]。IPFW 语法遵循 natd 的语法。`redirect_port` 的语法如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1572
@@ -3702,11 +3872,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1583
+#, fuzzy
 msgid ""
 "After adding these arguments to the configuration of NAT instance 1 in the "
 "above ruleset, the TCP ports will be port forwarded to the LAN client "
 "machines running the IRC and HTTP services."
-msgstr ""
+msgstr "将这些参数添加到上述规则集中 NAT 实例 1 的配置后，TCP 端口将被转发到运行 IRC 和 HTTP 服务的 LAN 客户端计算机。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1589
@@ -3722,12 +3893,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1593
+#, fuzzy
 msgid ""
 "Port ranges over individual ports can be indicated with `redirect_port`.  "
 "For example, _tcp 192.168.0.2:2000-3000 2000-3000_ would redirect all "
 "connections received on ports 2000 to 3000 to ports 2000 to 3000 on client "
 "`A`."
-msgstr ""
+msgstr "可以使用 `redirect_port` 指定端口范围，而非单个端口。例如，__tcp 192.168.0.2:2000-3000 2000-3000__ 会将所有在端口 2000 到 3000 上收到的连接重定向到客户端 `A` 上的端口 2000 到 3000。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1594
@@ -3737,6 +3909,7 @@ msgstr "地址重定向"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1600
+#, fuzzy
 msgid ""
 "Address redirection is useful if more than one IP address is available.  "
 "Each LAN client can be assigned its own external IP address by man:ipfw[8], "
@@ -3747,15 +3920,16 @@ msgid ""
 "`128.1.1.3` are available, `128.1.1.1` can be used as the man:ipfw[8] "
 "machine's external IP address, while `128.1.1.2` and `128.1.1.3` are "
 "forwarded back to LAN clients `A` and `B`."
-msgstr ""
+msgstr "如果有多个 IP 地址可用，地址重定向会很有用。man:ipfw[8] 可以为每个 LAN 客户端分配自己的外部 IP 地址，然后将 LAN 客户端发出的数据包改写为相应的外部 IP 地址，并将该 IP 地址上收到的所有流量重定向回指定的 LAN 客户端。这也称为静态 NAT。例如，如果可用 IP 地址为 `128.1.1.1`、`128.1.1.2` 和 `128.1.1.3`，则可将 `128.1.1.1` 用作 man:ipfw[8] 计算机的外部 IP 地址，而将 `128.1.1.2` 和 `128.1.1.3` 分别转发给 LAN 客户端 `A` 和 `B`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1602
+#, fuzzy
 msgid ""
 "The `redirect_addr` syntax is as below, where `localIP` is the internal IP "
 "address of the LAN client, and `publicIP` the external IP address "
 "corresponding to the LAN client."
-msgstr ""
+msgstr "`redirect_addr` 的语法如下，其中 `localIP` 是 LAN 客户端的内部 IP 地址，`publicIP` 是对应于该 LAN 客户端的外部 IP 地址。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1606
@@ -3780,43 +3954,47 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1618
+#, fuzzy
 msgid ""
 "Like `redirect_port`, these arguments are placed in a NAT instance "
 "configuration.  With address redirection, there is no need for port "
 "redirection, as all data received on a particular IP address is redirected."
-msgstr ""
+msgstr "与 `redirect_port` 一样，这些参数也放在 NAT 实例配置中。使用地址重定向时，无需进行端口重定向，因为特定 IP 地址上收到的所有数据都会被重定向。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1621
+#, fuzzy
 msgid ""
 "The external IP addresses on the man:ipfw[8] machine must be active and "
 "aliased to the external interface.  Refer to man:rc.conf[5] for details."
-msgstr ""
+msgstr "man:ipfw[8] 计算机上的外部 IP 地址必须处于活动状态，并且必须别名到外部接口。详情请参阅 man:rc.conf[5]。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1622
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Userspace NAT"
-msgstr ""
+msgstr "用户空间 NAT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1626
+#, fuzzy
 msgid ""
 "Let us start with a statement: the userspace NAT implementation: man:"
 "natd[8], has more overhead than in-kernel NAT.  For man:natd[8] to translate "
 "packets, the packets have to be copied from the kernel to userspace and back "
 "which brings in extra overhead that is not present with in-kernel NAT."
-msgstr ""
+msgstr "先说明一点：用户空间 NAT 实现 man:natd[8] 的开销高于内核 NAT。man:natd[8] 要转换数据包，必须将数据包从内核复制到用户空间，再复制回来，因此会产生内核 NAT 不存在的额外开销。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1630
+#, fuzzy
 msgid ""
 "To enable the userspace NAT daemon man:natd[8] at boot time, the following "
 "is a minimum configuration in [.filename]#/etc/rc.conf#.  Where "
 "`natd_interface` is set to the name of the NIC attached to the Internet.  "
 "The man:rc[8] script of man:natd[8] will automatically check if a dynamic IP "
 "address is used and configure itself to handle that."
-msgstr ""
+msgstr "要在启动时启用用户空间 NAT 守护进程 man:natd[8]，必须在 [.filename]#/etc/rc.conf# 中进行以下最低限度的配置。`natd_interface` 应设置为连接到 Internet 的 NIC 名称。man:natd[8] 的 man:rc[8] 脚本会自动检查是否使用动态 IP 地址，并进行相应配置。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1636
@@ -3832,6 +4010,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1641
+#, fuzzy
 msgid ""
 "In general, the above ruleset as explained for in-kernel NAT can also be "
 "used together with man:natd[8].  The exceptions are the configuration of the "
@@ -3839,7 +4018,7 @@ msgid ""
 "together with reassemble rule 99 because its functionality is included in "
 "the `divert` action.  Rule number 100 and 1000 will have to change slightly "
 "as shown below."
-msgstr ""
+msgstr "一般而言，前文针对内核 NAT 说明的规则集也可与 man:natd[8] 配合使用。例外情况是内核 NAT 实例配置 `(ipfw -q nat 1 config ...)`，与重组规则 99 一样都不需要，因为其功能已包含在 `divert` 操作中。规则编号 100 和 1000 需要稍作修改，如下所示。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1646
@@ -3853,13 +4032,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1651
+#, fuzzy
 msgid ""
 "To configure port or address redirection, a similar syntax as with in-kernel "
 "NAT is used.  Although, now, instead of specifying the configuration in our "
 "ruleset script like with in-kernel NAT, configuration of man:natd[8] is best "
 "done in a configuration file.  To do this, an extra flag must be passed via "
 "[.filename]#/etc/rc.conf# which specifies the path of the configuration file."
-msgstr ""
+msgstr "要配置端口或地址重定向，可以使用与内核 NAT 类似的语法。不过，与内核 NAT 在规则集脚本中指定配置不同，man:natd[8] 最好通过配置文件进行配置。为此，必须通过 [.filename]#/etc/rc.conf# 传递一个额外标志，用于指定配置文件的路径。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1655
@@ -3869,11 +4049,12 @@ msgstr "natd_flags=\"-f /etc/natd.conf\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1662
+#, fuzzy
 msgid ""
 "The specified file must contain a list of configuration options, one per "
 "line.  For more information about the configuration file and possible "
 "variables, consult man:natd[8].  Below are two example entries, one per line:"
-msgstr ""
+msgstr "指定的文件必须包含配置选项列表，每行一个。有关配置文件和可用变量的详细信息，请参阅 man:natd[8]。以下是两个示例条目，每行一个："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1667
@@ -3887,9 +4068,9 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1672
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The IPFW Command"
-msgstr ""
+msgstr "IPFW 命令"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1677
@@ -3910,13 +4091,14 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1681
+#, fuzzy
 msgid ""
 "`ipfw` is a useful way to display the running firewall rules to the console "
 "screen.  The IPFW accounting facility dynamically creates a counter for each "
 "rule that counts each packet that matches the rule.  During the process of "
 "testing a rule, listing the rule with its counter is one way to determine if "
 "the rule is functioning as expected."
-msgstr ""
+msgstr "`ipfw` 可用于在控制台屏幕上显示正在运行的防火墙规则。IPFW 记账功能会为每条规则动态创建一个计数器，用于统计每条匹配规则的数据包数量。在测试规则时，列出规则及其计数器，是判断规则是否按预期运行的一种方法。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1683
@@ -3925,9 +4107,9 @@ msgstr "按顺序列出所有正在运行的规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1687
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw list\n"
-msgstr ""
+msgstr "# ipfw list\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1690
@@ -3938,9 +4120,9 @@ msgstr "列出所有正在运行的规则，并带有上次匹配规则的时间
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1694
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw -t list\n"
-msgstr ""
+msgstr "# ipfw -t list\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1698
@@ -3961,9 +4143,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1702
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw -a list\n"
-msgstr ""
+msgstr "# ipfw -a list\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1705
@@ -3972,9 +4154,9 @@ msgstr "除了静态规则之外，还列出动态规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1709
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw -d list\n"
-msgstr ""
+msgstr "# ipfw -d list\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1712
@@ -3983,9 +4165,9 @@ msgstr "显示已过期的动态规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1716
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw -d -e list\n"
-msgstr ""
+msgstr "# ipfw -d -e list\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1719
@@ -3994,20 +4176,21 @@ msgstr "将计数器归零："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1723
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw zero\n"
-msgstr ""
+msgstr "# ipfw zero\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1726
+#, fuzzy
 msgid "To zero the counters for just the rule with number _NUM_:"
-msgstr ""
+msgstr "仅将编号为 __NUM__ 的规则的计数器清零："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1730
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipfw zero NUM\n"
-msgstr ""
+msgstr "# ipfw zero NUM\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1732
@@ -4017,6 +4200,7 @@ msgstr "记录防火墙信息"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1739
+#, fuzzy
 msgid ""
 "Even with the logging facility enabled, IPFW will not generate any rule "
 "logging on its own.  The firewall administrator decides which rules in the "
@@ -4025,19 +4209,21 @@ msgid ""
 "deny everything\" rule with the `log` keyword included as the last rule in "
 "the ruleset.  This way, it is possible to see all the packets that did not "
 "match any of the rules in the ruleset."
-msgstr ""
+msgstr "即使启用了日志记录功能，IPFW 也不会自行生成规则日志。防火墙管理员决定规则集中哪些规则需要记录，并为这些规则添加 `log` 关键字。通常只记录拒绝规则。惯例是在规则集末尾添加一条带有 `log` 关键字的重复规则“ipfw default deny everything”。这样便可以查看所有不匹配规则集中任何规则的数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1743
+#, fuzzy
 msgid ""
 "Logging is a two edged sword.  If one is not careful, an over abundance of "
 "log data or a DoS attack can fill the disk with log files.  Log messages are "
 "not only written to syslogd, but also are displayed on the root console "
 "screen and soon become annoying."
-msgstr ""
+msgstr "日志记录是一把双刃剑。如果不谨慎处理，过量的日志数据或 DoS 攻击可能会用日志文件填满磁盘。日志消息不仅会写入 syslogd，还会显示在 root 控制台屏幕上，很快就会令人厌烦。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1748
+#, fuzzy
 msgid ""
 "The `IPFIREWALL_VERBOSE_LIMIT=5` kernel option limits the number of "
 "consecutive messages sent to man:syslogd[8], concerning the packet matching "
@@ -4048,7 +4234,7 @@ msgid ""
 "particular rule would be logged to syslogd and the remainder identical "
 "consecutive messages would be counted and posted to syslogd with a phrase "
 "like the following:"
-msgstr ""
+msgstr "内核选项 `IPFIREWALL_VERBOSE_LIMIT=5` 会限制针对给定规则匹配数据包时，连续发送到 man:syslogd[8] 的消息数量。启用此内核选项后，针对特定规则的连续消息数量上限为指定值。记录 200 条相同的日志消息毫无益处。将此选项设为 5 时，针对特定规则的前五条连续消息会记录到 syslogd，其余相同的连续消息则会计数，并以类似以下的短语发送到 syslogd："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1752
@@ -4092,13 +4278,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1768
+#, fuzzy
 msgid ""
 "This example script is compatible with the syntax used by the man:sh[1], man:"
 "csh[1], and man:tcsh[1] shells.  Symbolic substitution fields are prefixed "
 "with a dollar sign ($).  Symbolic fields do not have the $ prefix.  The "
 "value to populate the symbolic field must be enclosed in double quotes "
 "(\"\")."
-msgstr ""
+msgstr "此示例脚本兼容 man:sh[1]、man:csh[1] 和 man:tcsh[1] shell 使用的语法。符号替换字段以美元符号（$）为前缀。符号字段本身不带 $ 前缀。填入符号字段的值必须用双引号（\"\"）括起来。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1770
@@ -4160,9 +4347,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1797
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sh /etc/ipfw.rules\n"
-msgstr ""
+msgstr "# sh /etc/ipfw.rules\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1800
@@ -4181,7 +4368,7 @@ msgstr "通过手动运行这些命令也可以完成同样的事情："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1812
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ipfw -q -f flush\n"
 "# ipfw -q add check-state\n"
@@ -4190,22 +4377,23 @@ msgid ""
 "# ipfw -q add allow tcp from any to any 80 out via tun0 setup keep-state\n"
 "# ipfw -q add allow tcp from any to 192.0.2.11 53 out via tun0 setup keep-state\n"
 "# ipfw -q add 00611 allow udp from any to 192.0.2.11 53 out via tun0 keep-state\n"
-msgstr ""
+msgstr "# ipfw -q -f flush\n# ipfw -q add check-state\n# ipfw -q add deny all from any to any frag\n# ipfw -q add deny tcp from any to any established\n# ipfw -q add allow tcp from any to any 80 out via tun0 setup keep-state\n# ipfw -q add allow tcp from any to 192.0.2.11 53 out via tun0 setup keep-state\n# ipfw -q add 00611 allow udp from any to 192.0.2.11 53 out via tun0 keep-state\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1815
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPFW Kernel Options"
-msgstr ""
+msgstr "IPFW 内核选项"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1819
+#, fuzzy
 msgid ""
 "In order to statically compile IPFW support into a custom kernel, refer to "
 "the instructions in crossref:kernelconfig[kernelconfig,Configuring the "
 "FreeBSD Kernel].  The following options are available for the custom kernel "
 "configuration file:"
-msgstr ""
+msgstr "要将 IPFW 支持静态编译到自定义内核中，请参阅 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明。自定义内核配置文件可使用以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1832
@@ -4235,10 +4423,11 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1837
+#, fuzzy
 msgid ""
 "IPFW can be loaded as a kernel module: options above are built by default as "
 "modules or can be set at runtime using tunables."
-msgstr ""
+msgstr "IPFW 可以作为内核模块加载：上面的选项默认会构建为模块，也可以在运行时通过可调参数设置。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1840
@@ -4248,65 +4437,72 @@ msgstr "IPFILTER (IPF)"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1843
+#, fuzzy
 msgid ""
 "IPFILTER, also known as IPF, is a cross-platform, open source firewall which "
 "has been ported to several operating systems, including FreeBSD, NetBSD, "
 "OpenBSD, and Solaris(TM)."
-msgstr ""
+msgstr "IPFILTER（也称为 IPF）是一款跨平台的开源防火墙，已移植到多个操作系统，包括 FreeBSD、NetBSD、OpenBSD 和 Solaris(TM)。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1846
+#, fuzzy
 msgid ""
 "IPFILTER is a kernel-side firewall and NAT mechanism that can be controlled "
 "and monitored by userland programs.  Firewall rules can be set or deleted "
 "using ipf, NAT rules can be set or deleted using ipnat, run-time statistics "
 "for the kernel parts of IPFILTER can be printed using ipfstat, and ipmon can "
 "be used to log IPFILTER actions to the system log files."
-msgstr ""
+msgstr "IPFILTER 是一种内核端防火墙和 NAT 机制，可由用户空间程序控制和监视。可以使用 ipf 设置或删除防火墙规则，使用 ipnat 设置或删除 NAT 规则，使用 ipfstat 打印 IPFILTER 内核部分的运行时统计信息，还可以使用 ipmon 将 IPFILTER 操作记录到系统日志文件中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1849
+#, fuzzy
 msgid ""
 "IPF was originally written using a rule processing logic of \"the last "
 "matching rule wins\" and only used stateless rules.  Since then, IPF has "
 "been enhanced to include the `quick` and `keep state` options."
-msgstr ""
+msgstr "IPF 最初采用“最后一条匹配规则生效”的规则处理逻辑编写，并且只使用无状态规则。此后，IPF 得到了增强，加入了 `quick` 和 `keep state` 选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1852
+#, fuzzy
 msgid ""
 "The IPF FAQ is at http://www.phildev.net/ipf/index.html[http://www.phildev."
 "net/ipf/index.html].  A searchable archive of the IPFilter mailing list is "
 "available at http://marc.info/?l=ipfilter[http://marc.info/?l=ipfilter]."
-msgstr ""
+msgstr "IPF 常见问题解答位于 link:http://www.phildev.net/ipf/index.html[]。IPFilter 邮件列表的可搜索存档位于 link:http://marc.info/?l=ipfilter[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1855
+#, fuzzy
 msgid ""
 "This section of the Handbook focuses on IPF as it pertains to FreeBSD.  It "
 "provides examples of rules that contain the `quick` and `keep state` options."
-msgstr ""
+msgstr "本手册的本节重点介绍 FreeBSD 中的 IPF，并提供包含 `quick` 和 `keep state` 选项的规则示例。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1856
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling IPF"
-msgstr ""
+msgstr "启用 IPF"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1859
+#, fuzzy
 msgid ""
 "IPF is included in the basic FreeBSD install as a kernel loadable module, "
 "meaning that a custom kernel is not needed in order to enable IPF."
-msgstr ""
+msgstr "IPF 作为内核可加载模块包含在 FreeBSD 基本安装中，因此启用 IPF 无需自定义内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1862
+#, fuzzy
 msgid ""
 "For users who prefer to statically compile IPF support into a custom kernel, "
 "refer to the instructions in crossref:kernelconfig[kernelconfig,Configuring "
 "the FreeBSD Kernel].  The following kernel options are available:"
-msgstr ""
+msgstr "如果希望将 IPF 支持静态编译到自定义内核中，请参阅 crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel] 中的说明。可用的内核选项如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1869
@@ -4324,6 +4520,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1872
+#, fuzzy
 msgid ""
 "where `options IPFILTER` enables support for IPFILTER, `options "
 "IPFILTER_LOG` enables IPF logging using the [.filename]#ipl# packet logging "
@@ -4331,17 +4528,18 @@ msgid ""
 "enables IP pools in order to speed up IP lookups, and `options "
 "IPFILTER_DEFAULT_BLOCK` changes the default behavior so that any packet not "
 "matching a firewall `pass` rule gets blocked."
-msgstr ""
+msgstr "其中，`options IPFILTER` 启用对 IPFILTER 的支持；`options IPFILTER_LOG` 启用 IPF 日志记录，并通过 [.filename]#ipl# 数据包日志伪设备记录每条含有 `log` 关键字的规则；`IPFILTER_LOOKUP` 启用 IP 池以加快 IP 查找；`options IPFILTER_DEFAULT_BLOCK` 更改默认行为，使任何不匹配防火墙 `pass` 规则的数据包都被阻止。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1876
+#, fuzzy
 msgid ""
 "To configure the system to enable IPF at boot time, add the following "
 "entries to [.filename]#/etc/rc.conf#.  These entries will also enable "
 "logging and `default pass all`.  To change the default policy to `block all` "
 "without compiling a custom kernel, remember to add a `block all` rule at the "
 "end of the ruleset."
-msgstr ""
+msgstr "要将系统配置为在启动时启用 IPF，请将以下条目添加到 [.filename]#/etc/rc.conf#。这些条目还会启用日志记录和 `default pass all`。若要在不编译自定义内核的情况下将默认策略更改为 `block all`，请记得在规则集末尾添加 `block all` 规则。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1887
@@ -4367,8 +4565,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1890
+#, fuzzy
 msgid "If NAT functionality is needed, also add these lines:"
-msgstr ""
+msgstr "如果需要 NAT 功能，也请添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1896
@@ -4384,14 +4583,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1899
+#, fuzzy
 msgid "Then, to start IPF now:"
-msgstr ""
+msgstr "然后，立即启动 IPF："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1903
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#  service ipfilter start\n"
-msgstr ""
+msgstr "#  service ipfilter start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1907
@@ -4406,16 +4606,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1911
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipf -Fa -f /etc/ipf.rules\n"
-msgstr ""
+msgstr "# ipf -Fa -f /etc/ipf.rules\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1914
+#, fuzzy
 msgid ""
 "where `-Fa` flushes all the internal rules tables and `-f` specifies the "
 "file containing the rules to load."
-msgstr ""
+msgstr "其中，`-Fa` 会清空所有内部规则表，`-f` 指定包含要加载规则的文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1917
@@ -4437,19 +4638,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1919
+#, fuzzy
 msgid ""
 "Refer to man:ipf[8] for details on the other flags available with this "
 "command."
-msgstr ""
+msgstr "有关此命令其他可用标志的详细信息，请参阅 man:ipf[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1920
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPF Rule Syntax"
-msgstr ""
+msgstr "IPF 规则语法"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1926
+#, fuzzy
 msgid ""
 "This section describes the IPF rule syntax used to create stateful rules.  "
 "When creating rules, keep in mind that unless the `quick` keyword appears in "
@@ -4458,7 +4661,7 @@ msgid ""
 "packet is a `pass`, if there is a later matching rule that is a `block`, the "
 "packet will be dropped.  Sample rulesets can be found in [.filename]#/usr/"
 "share/examples/ipfilter#."
-msgstr ""
+msgstr "本节介绍用于创建有状态规则的 IPF 规则语法。创建规则时请注意，除非规则中出现 `quick` 关键字，否则系统会按顺序读取每条规则，并应用 __最后一条匹配规则__。这意味着，即使第一个匹配数据包的规则是 `pass`，只要后面还有匹配规则是 `block`，该数据包仍会被丢弃。示例规则集位于 [.filename]#/usr/share/examples/ipfilter#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1929
@@ -4496,68 +4699,78 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1936
+#, fuzzy
 msgid ""
 "`_ACTION DIRECTION OPTIONS proto PROTO_TYPE from SRC_ADDR SRC_PORT to "
 "DST_ADDR DST_PORT TCP_FLAG|ICMP_TYPE keep state STATE_`"
-msgstr ""
+msgstr "`_ACTION DIRECTION OPTIONS proto PROTO_TYPE from SRC_ADDR SRC_PORT to DST_ADDR DST_PORT TCP_FLAG|ICMP_TYPE keep state STATE_`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1940
+#, fuzzy
 msgid ""
 "This section describes each of these keywords and their options.  It is not "
 "an exhaustive list of every possible option.  Refer to man:ipf[5] for a "
 "complete description of the rule syntax that can be used when creating IPF "
 "rules and examples for using each keyword."
-msgstr ""
+msgstr "本节介绍这些关键字及其选项，但并未列出所有可能的选项。有关创建 IPF 规则时可用的规则语法以及每个关键字的用法示例，请参阅 man:ipf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1945
+#, fuzzy
 msgid ""
 "The action keyword indicates what to do with the packet if it matches that "
 "rule.  Every rule _must_ have an action.  The following actions are "
 "recognized:"
-msgstr ""
+msgstr "action 关键字指示数据包匹配该规则时应执行的操作。每条规则__必须__指定一个操作。可识别的操作如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1947
+#, fuzzy
 msgid "`block`: drops the packet."
-msgstr ""
+msgstr "`block`：丢弃数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1949
+#, fuzzy
 msgid "`pass`: allows the packet."
-msgstr ""
+msgstr "`pass`：允许数据包通过。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1951
+#, fuzzy
 msgid "`log`: generates a log record."
-msgstr ""
+msgstr "`log`：生成日志记录。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1953
+#, fuzzy
 msgid ""
 "`count`: counts the number of packets and bytes which can provide an "
 "indication of how often a rule is used."
-msgstr ""
+msgstr "`count`：统计数据包和字节的数量，以便了解规则的使用频率。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1955
+#, fuzzy
 msgid "`auth`: queues the packet for further processing by another program."
-msgstr ""
+msgstr "`auth`：将数据包排入队列，以供其他程序进一步处理。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1957
+#, fuzzy
 msgid ""
 "`call`: provides access to functions built into IPF that allow more complex "
 "actions."
-msgstr ""
+msgstr "`call`：调用 IPF 内置函数，以执行更复杂的操作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1959
+#, fuzzy
 msgid ""
 "`decapsulate`: removes any headers in order to process the contents of the "
 "packet."
-msgstr ""
+msgstr "`decapsulate`：移除所有标头，以便处理数据包内容。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1960
@@ -4574,25 +4787,29 @@ msgstr "接下来，每个规则必须使用以下关键字之一显式指出流
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1964
+#, fuzzy
 msgid "`in`: the rule is applied against an inbound packet."
-msgstr ""
+msgstr "`in`：对入站数据包应用规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1966
+#, fuzzy
 msgid "`out`: the rule is applied against an outbound packet."
-msgstr ""
+msgstr "`out`：对出站数据包应用规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1968
+#, fuzzy
 msgid "`all`: the rule applies to either direction."
-msgstr ""
+msgstr "`all`：规则适用于两个方向。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1970
+#, fuzzy
 msgid ""
 "If the system has multiple interfaces, the interface can be specified along "
 "with the direction. An example would be `in on fxp0`."
-msgstr ""
+msgstr "如果系统有多个接口，可以同时指定接口和方向。例如，`in on fxp0`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1974
@@ -4607,55 +4824,62 @@ msgstr "选项是可选的。但是，如果指定了多个选项，必须按照
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1976
+#, fuzzy
 msgid ""
 "`log`: when performing the specified ACTION, the contents of the packet's "
 "headers will be written to the man:ipl[4] packet log pseudo-device."
-msgstr ""
+msgstr "`log`：执行指定的 ACTION 时，将数据包标头的内容写入 man:ipl[4] 数据包日志伪设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1978
+#, fuzzy
 msgid ""
 "`quick`: if a packet matches this rule, the ACTION specified by the rule "
 "occurs and no further processing of any following rules will occur for this "
 "packet."
-msgstr ""
+msgstr "`quick`：如果数据包匹配此规则，则执行规则指定的 ACTION，并且不再对该数据包处理后续规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1981
+#, fuzzy
 msgid ""
 "`on`: must be followed by the interface name as displayed by man:"
 "ifconfig[8].  The rule will only match if the packet is going through the "
 "specified interface in the specified direction."
-msgstr ""
+msgstr "`on`：后面必须跟 man:ifconfig[8] 显示的接口名称。只有当数据包沿指定方向通过指定接口时，规则才会匹配。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1983
+#, fuzzy
 msgid ""
 "When using the `log` keyword, the following qualifiers may be used in this "
 "order:"
-msgstr ""
+msgstr "使用 `log` 关键字时，可以按以下顺序使用这些限定符："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1985
+#, fuzzy
 msgid ""
 "`body`: indicates that the first 128 bytes of the packet contents will be "
 "logged after the headers."
-msgstr ""
+msgstr "`body`：表示在标头之后记录数据包内容的前 128 个字节。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1987
+#, fuzzy
 msgid ""
 "`first`: if the `log` keyword is being used in conjunction with a `keep "
 "state` option, this option is recommended so that only the triggering packet "
 "is logged and not every packet which matches the stateful connection."
-msgstr ""
+msgstr "`first`：如果 `log` 关键字与 `keep state` 选项一起使用，建议使用此选项，以便只记录触发规则的数据包，而不记录每个匹配该有状态连接的数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1990
+#, fuzzy
 msgid ""
 "Additional options are available to specify error return messages.  Refer to "
 "man:ipf[5] for more details."
-msgstr ""
+msgstr "还可以使用其他选项指定错误返回消息。更多详细信息请参阅 man:ipf[5]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:1991
@@ -4690,46 +4914,51 @@ msgstr "SRC_ADDR"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2002
+#, fuzzy
 msgid ""
 "The `from` keyword is mandatory and is followed by a keyword which "
 "represents the source of the packet.  The source can be a hostname, an IP "
 "address followed by the CIDR mask, an address pool, or the keyword `all`.  "
 "Refer to man:ipf[5] for examples."
-msgstr ""
+msgstr "`from` 关键字是必需的，其后跟一个表示数据包源的关键字。源可以是主机名、后跟 CIDR 掩码的 IP 地址、地址池，或关键字 `all`。示例请参阅 man:ipf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2006
+#, fuzzy
 msgid ""
 "There is no way to match ranges of IP addresses which do not express "
 "themselves easily using the dotted numeric form / mask-length notation.  The "
 "package:net-mgmt/ipcalc[] package or port may be used to ease the "
 "calculation of the CIDR mask.  Additional information is available at the "
 "utility's web page: http://jodies.de/ipcalc[http://jodies.de/ipcalc]."
-msgstr ""
+msgstr "对于无法轻易使用点分十进制地址/掩码长度表示法表达的 IP 地址范围，无法直接进行匹配。可以使用 package:net-mgmt/ipcalc[] 软件包或移植版本来简化 CIDR 掩码的计算。更多信息请访问该实用程序的网页：link:http://jodies.de/ipcalc[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2011
+#, fuzzy
 msgid ""
 "The port number of the source is optional.  However, if it is used, it "
 "requires PROTO_TYPE to be first defined in the rule.  The port number must "
 "also be preceded by the `proto` keyword."
-msgstr ""
+msgstr "源端口号是可选的。但如果指定了源端口，必须先在规则中定义 PROTO_TYPE。端口号前还必须加上 `proto` 关键字。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2013
+#, fuzzy
 msgid ""
 "A number of different comparison operators are supported: `=` (equal to), `!"
 "=` (not equal to), `<` (less than), `>` (greater than), `<=` (less than or "
 "equal to), and `>=` (greater than or equal to)."
-msgstr ""
+msgstr "支持多种比较运算符：`=`（等于）、`!=`（不等于）、`<`（小于）、`>`（大于）、`<=`（小于或等于）和 `>=`（大于或等于）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2015
+#, fuzzy
 msgid ""
 "To specify port ranges, place the two port numbers between `<>` (less than "
 "and greater than ), `><` (greater than and less than ), or `:` (greater than "
 "or equal to and less than or equal to)."
-msgstr ""
+msgstr "要指定端口范围，请将两个端口号置于 `<>`（小于和大于）、`><`（大于和小于）或 `:`（大于或等于且小于或等于）之间。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2016
@@ -4739,20 +4968,22 @@ msgstr "DST_ADDR"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2019
+#, fuzzy
 msgid ""
 "The `to` keyword is mandatory and is followed by a keyword which represents "
 "the destination of the packet.  Similar to SRC_ADDR, it can be a hostname, "
 "an IP address followed by the CIDR mask, an address pool, or the keyword "
 "`all`."
-msgstr ""
+msgstr "`to` 关键字是必需的，其后跟一个表示数据包目标的关键字。与 SRC_ADDR 类似，它可以是主机名、后跟 CIDR 掩码的 IP 地址、地址池，或关键字 `all`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2024
+#, fuzzy
 msgid ""
 "Similar to SRC_PORT, the port number of the destination is optional.  "
 "However, if it is used, it requires PROTO_TYPE to be first defined in the "
 "rule.  The port number must also be preceded by the `proto` keyword."
-msgstr ""
+msgstr "与 SRC_PORT 类似，目标端口号是可选的。但如果指定了目标端口，必须先在规则中定义 PROTO_TYPE。端口号前还必须加上 `proto` 关键字。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2025
@@ -4762,19 +4993,21 @@ msgstr "TCP_FLAG|ICMP_TYPE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2028
+#, fuzzy
 msgid ""
 "If `tcp` is specified as the PROTO_TYPE, flags can be specified as letters, "
 "where each letter represents one of the possible TCP flags used to determine "
 "the state of a connection.  Possible values are: `S` (SYN), `A` (ACK), `P` "
 "(PSH), `F` (FIN), `U` (URG), `R` (RST), `C` (CWN), and `E` (ECN)."
-msgstr ""
+msgstr "如果将 `tcp` 指定为 PROTO_TYPE，可以用字母指定标志，每个字母表示用于确定连接状态的一种 TCP 标志。可用值为：`S`（SYN）、`A`（ACK）、`P`（PSH）、`F`（FIN）、`U`（URG）、`R`（RST）、`C`（CWN）和 `E`（ECN）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2031
+#, fuzzy
 msgid ""
 "If `icmp` is specified as the PROTO_TYPE, the ICMP type to match can be "
 "specified.  Refer to man:ipf[5] for the allowable types."
-msgstr ""
+msgstr "如果将 `icmp` 指定为 PROTO_TYPE，可以指定要匹配的 ICMP 类型。允许的类型请参阅 man:ipf[5]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2032
@@ -4784,13 +5017,14 @@ msgstr "STATE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2036
+#, fuzzy
 msgid ""
 "If a `pass` rule contains `keep state`, IPF will add an entry to its dynamic "
 "state table and allow subsequent packets that match the connection.  IPF can "
 "track state for TCP, UDP, and ICMP sessions.  Any packet that IPF can be "
 "certain is part of an active session, even if it is a different protocol, "
 "will be allowed."
-msgstr ""
+msgstr "如果 `pass` 规则包含 `keep state`，IPF 会在其动态状态表中添加一条记录，并允许后续匹配该连接的数据包通过。IPF 可以跟踪 TCP、UDP 和 ICMP 会话的状态。对于 IPF 能够确定属于活动会话的任何数据包，即使它使用不同的协议，也会予以放行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2043
@@ -4819,27 +5053,30 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2047
+#, fuzzy
 msgid ""
 "Several keywords can be added after `keep state`.  If used, these keywords "
 "set various options that control stateful filtering, such as setting "
 "connection limits or connection age.  Refer to man:ipf[5] for the list of "
 "available options and their descriptions."
-msgstr ""
+msgstr "`keep state` 后面可以添加多个关键字。这些关键字可设置控制有状态过滤的各种选项，例如连接数限制或连接有效期。可用选项及其说明请参阅 man:ipf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2051
+#, fuzzy
 msgid ""
 "This section demonstrates how to create an example ruleset which only allows "
 "services matching `pass` rules and blocks all others."
-msgstr ""
+msgstr "本节演示如何创建一个示例规则集，该规则集只允许与 `pass` 规则匹配的服务，并阻止所有其他流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2054
+#, fuzzy
 msgid ""
 "FreeBSD uses the loopback interface ([.filename]#lo0#) and the IP address "
 "`127.0.0.1` for internal communication.  The firewall ruleset must contain "
 "rules to allow free movement of these internally used packets:"
-msgstr ""
+msgstr "FreeBSD 使用回环接口（[.filename]#lo0#）和 IP 地址 `127.0.0.1` 进行内部通信。防火墙规则集必须包含规则，以允许这些内部使用的数据包自由通过："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2060
@@ -4873,10 +5110,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2067
+#, fuzzy
 msgid ""
 "These two rules allow all traffic to pass through a trusted LAN interface "
 "named [.filename]#xl0#:"
-msgstr ""
+msgstr "以下两条规则允许所有流量通过名为 [.filename]#xl0# 的可信 LAN 接口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2073
@@ -4918,27 +5156,27 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2086
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# interface facing Internet (outbound)\n"
 "# Matches session start requests originating from or behind the\n"
 "# firewall, destined for the Internet.\n"
-msgstr ""
+msgstr "# interface facing Internet (outbound)\n# Matches session start requests originating from or behind the\n# firewall, destined for the Internet.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2092
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow outbound access to public DNS servers.\n"
 "# Replace x.x.x.x with address listed in /etc/resolv.conf.\n"
 "# Repeat for each DNS server.\n"
 "pass out quick on dc0 proto tcp from any to x.x.x.x port = 53 flags S keep state\n"
 "pass out quick on dc0 proto udp from any to x.x.x.x port = 53 keep state\n"
-msgstr ""
+msgstr "# Allow outbound access to public DNS servers.\n# Replace x.x.x.x with address listed in /etc/resolv.conf.\n# Repeat for each DNS server.\npass out quick on dc0 proto tcp from any to x.x.x.x port = 53 flags S keep state\npass out quick on dc0 proto udp from any to x.x.x.x port = 53 keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2099
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow access to ISP's specified DHCP server for cable or DSL networks.\n"
 "# Use the first rule, then check log for the IP address of DHCP server.\n"
@@ -4946,65 +5184,65 @@ msgid ""
 "# and comment out the first rule\n"
 "pass out log quick on dc0 proto udp from any to any port = 67 keep state\n"
 "#pass out quick on dc0 proto udp from any to z.z.z.z port = 67 keep state\n"
-msgstr ""
+msgstr "# Allow access to ISP's specified DHCP server for cable or DSL networks.\n# Use the first rule, then check log for the IP address of DHCP server.\n# Then, uncomment the second rule, replace z.z.z.z with the IP address,\n# and comment out the first rule\npass out log quick on dc0 proto udp from any to any port = 67 keep state\n#pass out quick on dc0 proto udp from any to z.z.z.z port = 67 keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow HTTP and HTTPS\n"
 "pass out quick on dc0 proto tcp from any to any port = 80 flags S keep state\n"
 "pass out quick on dc0 proto tcp from any to any port = 443 flags S keep state\n"
-msgstr ""
+msgstr "# Allow HTTP and HTTPS\npass out quick on dc0 proto tcp from any to any port = 80 flags S keep state\npass out quick on dc0 proto tcp from any to any port = 443 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow email\n"
 "pass out quick on dc0 proto tcp from any to any port = 110 flags S keep state\n"
 "pass out quick on dc0 proto tcp from any to any port = 25 flags S keep state\n"
-msgstr ""
+msgstr "# Allow email\npass out quick on dc0 proto tcp from any to any port = 110 flags S keep state\npass out quick on dc0 proto tcp from any to any port = 25 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow NTP\n"
 "pass out quick on dc0 proto tcp from any to any port = 37 flags S keep state\n"
-msgstr ""
+msgstr "# Allow NTP\npass out quick on dc0 proto tcp from any to any port = 37 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow FTP\n"
 "pass out quick on dc0 proto tcp from any to any port = 21 flags S keep state\n"
-msgstr ""
+msgstr "# Allow FTP\npass out quick on dc0 proto tcp from any to any port = 21 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow SSH\n"
 "pass out quick on dc0 proto tcp from any to any port = 22 flags S keep state\n"
-msgstr ""
+msgstr "# Allow SSH\npass out quick on dc0 proto tcp from any to any port = 22 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow ping\n"
 "pass out quick on dc0 proto icmp from any to any icmp-type 8 keep state\n"
-msgstr ""
+msgstr "# Allow ping\npass out quick on dc0 proto icmp from any to any icmp-type 8 keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block and log everything else\n"
 "block out log first quick on dc0 all\n"
-msgstr ""
+msgstr "# Block and log everything else\nblock out log first quick on dc0 all\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2126
@@ -5023,7 +5261,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# interface facing Internet (inbound)\n"
 "# Block all inbound traffic from non-routable or reserved address spaces\n"
@@ -5036,69 +5274,70 @@ msgid ""
 "block in quick on dc0 from 192.0.2.0/24 to any      #reserved for docs\n"
 "block in quick on dc0 from 204.152.64.0/23 to any   #Sun cluster interconnect\n"
 "block in quick on dc0 from 224.0.0.0/3 to any       #Class D & E multicast\n"
-msgstr ""
+msgstr "# interface facing Internet (inbound)\n# Block all inbound traffic from non-routable or reserved address spaces\nblock in quick on dc0 from 192.168.0.0/16 to any    #RFC 1918 private IP\nblock in quick on dc0 from 172.16.0.0/12 to any     #RFC 1918 private IP\nblock in quick on dc0 from 10.0.0.0/8 to any        #RFC 1918 private IP\nblock in quick on dc0 from 127.0.0.0/8 to any       #loopback\nblock in quick on dc0 from 0.0.0.0/8 to any         #loopback\nblock in quick on dc0 from 169.254.0.0/16 to any    #DHCP auto-config\nblock in quick on dc0 from 192.0.2.0/24 to any      #reserved for docs\nblock in quick on dc0 from 204.152.64.0/23 to any   #Sun cluster interconnect\nblock in quick on dc0 from 224.0.0.0/3 to any       #Class D & E multicast\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block fragments and too short tcp packets\n"
 "block in quick on dc0 all with frags\n"
 "block in quick on dc0 proto tcp all with short\n"
-msgstr ""
+msgstr "# Block fragments and too short tcp packets\nblock in quick on dc0 all with frags\nblock in quick on dc0 proto tcp all with short\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# block source routed packets\n"
 "block in quick on dc0 all with opt lsrr\n"
 "block in quick on dc0 all with opt ssrr\n"
-msgstr ""
+msgstr "# block source routed packets\nblock in quick on dc0 all with opt lsrr\nblock in quick on dc0 all with opt ssrr\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block OS fingerprint attempts and log first occurrence\n"
 "block in log first quick on dc0 proto tcp from any to any flags FUP\n"
-msgstr ""
+msgstr "# Block OS fingerprint attempts and log first occurrence\nblock in log first quick on dc0 proto tcp from any to any flags FUP\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block anything with special options\n"
 "block in quick on dc0 all with ipopts\n"
-msgstr ""
+msgstr "# Block anything with special options\nblock in quick on dc0 all with ipopts\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block public pings and ident\n"
 "block in quick on dc0 proto icmp all icmp-type 8\n"
 "block in quick on dc0 proto tcp from any to any port = 113\n"
-msgstr ""
+msgstr "# Block public pings and ident\nblock in quick on dc0 proto icmp all icmp-type 8\nblock in quick on dc0 proto tcp from any to any port = 113\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block incoming Netbios services\n"
 "block in log first quick on dc0 proto tcp/udp from any to any port = 137\n"
 "block in log first quick on dc0 proto tcp/udp from any to any port = 138\n"
 "block in log first quick on dc0 proto tcp/udp from any to any port = 139\n"
 "block in log first quick on dc0 proto tcp/udp from any to any port = 81\n"
-msgstr ""
+msgstr "# Block incoming Netbios services\nblock in log first quick on dc0 proto tcp/udp from any to any port = 137\nblock in log first quick on dc0 proto tcp/udp from any to any port = 138\nblock in log first quick on dc0 proto tcp/udp from any to any port = 139\nblock in log first quick on dc0 proto tcp/udp from any to any port = 81\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2168
+#, fuzzy
 msgid ""
 "Any time there are logged messages on a rule with the `log first` option, "
 "run `ipfstat -hio` to evaluate how many times the rule has been matched.  A "
 "large number of matches may indicate that the system is under attack."
-msgstr ""
+msgstr "每当带有 `log first` 选项的规则记录了消息时，运行 `ipfstat -hio` 以检查该规则的匹配次数。大量匹配可能表明系统正遭受攻击。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2171
@@ -5119,41 +5358,42 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow traffic in from ISP's DHCP server. Replace z.z.z.z with\n"
 "# the same IP address used in the outbound section.\n"
 "pass in quick on dc0 proto udp from z.z.z.z to any port = 68 keep state\n"
-msgstr ""
+msgstr "# Allow traffic in from ISP's DHCP server. Replace z.z.z.z with\n# the same IP address used in the outbound section.\npass in quick on dc0 proto udp from z.z.z.z to any port = 68 keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow public connections to specified internal web server\n"
 "pass in quick on dc0 proto tcp from any to x.x.x.x port = 80 flags S keep state\n"
-msgstr ""
+msgstr "# Allow public connections to specified internal web server\npass in quick on dc0 proto tcp from any to x.x.x.x port = 80 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Block and log only first occurrence of all remaining traffic.\n"
 "block in log first quick on dc0 all\n"
-msgstr ""
+msgstr "# Block and log only first occurrence of all remaining traffic.\nblock in log first quick on dc0 all\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring NAT"
-msgstr ""
+msgstr "配置 NAT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2188
+#, fuzzy
 msgid ""
 "To enable NAT, add these statements to [.filename]#/etc/rc.conf# and specify "
 "the name of the file containing the NAT rules:"
-msgstr ""
+msgstr "要启用 NAT，请将以下语句添加到 [.filename]#/etc/rc.conf#，并指定包含 NAT 规则的文件名："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2194
@@ -5169,37 +5409,41 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2199
+#, fuzzy
 msgid ""
 "NAT rules are flexible and can accomplish many different things to fit the "
 "needs of both commercial and home users.  The rule syntax presented here has "
 "been simplified to demonstrate common usage.  For a complete rule syntax "
 "description, refer to man:ipnat[5]."
-msgstr ""
+msgstr "NAT 规则具有很高的灵活性，可满足商业用户和家庭用户的各种需求。此处介绍的规则语法经过简化，用于演示常见用法。完整的规则语法说明请参阅 man:ipnat[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2201
+#, fuzzy
 msgid ""
 "The basic syntax for a NAT rule is as follows, where `map` starts the rule "
 "and _IF_ should be replaced with the name of the external interface:"
-msgstr ""
+msgstr "NAT 规则的基本语法如下，其中 `map` 用于开始一条规则，_IF_ 应替换为外部接口的名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "map IF LAN_IP_RANGE -> PUBLIC_ADDRESS\n"
-msgstr ""
+msgstr "map IF LAN_IP_RANGE -> PUBLIC_ADDRESS\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2210
+#, fuzzy
 msgid ""
 "The _LAN_IP_RANGE_ is the range of IP addresses used by internal clients.  "
 "Usually, it is a private address range such as `192.168.1.0/24`.  The "
 "_PUBLIC_ADDRESS_ can either be the static external IP address or the keyword "
 "`0/32` which represents the IP address assigned to _IF_."
-msgstr ""
+msgstr "_LAN_IP_RANGE_ 是内部客户端使用的 IP 地址范围，通常是私有地址范围，例如 `192.168.1.0/24`。_PUBLIC_ADDRESS_ 可以是静态外部 IP 地址，也可以是关键字 `0/32`，表示分配给 __IF__ 的 IP 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2217
+#, fuzzy
 msgid ""
 "In IPF, when a packet arrives at the firewall from the LAN with a public "
 "destination, it first passes through the outbound rules of the firewall "
@@ -5213,7 +5457,7 @@ msgid ""
 "IPF posts an entry in its internal NAT table so that when the packet returns "
 "from the Internet, it can be mapped back to its original private IP address "
 "before being passed to the firewall rules for further processing."
-msgstr ""
+msgstr "在 IPF 中，数据包从 LAN 到达防火墙且目标地址为公网地址时，会先经过防火墙规则集的出站规则。随后，数据包会进入 NAT 规则集；规则集自上而下读取，首条匹配的规则生效。IPF 会根据数据包的接口名称和源 IP 地址逐条检查 NAT 规则。如果数据包的接口名称与某条 NAT 规则匹配，就会检查其在私有 LAN 中的源 IP 地址是否位于 _LAN_IP_RANGE_ 指定的范围内。匹配时，数据包的源 IP 地址会被改写为 _PUBLIC_ADDRESS_ 指定的公网 IP 地址。IPF 会在内部 NAT 表中记录一条映射，以便数据包从 Internet 返回时，在交由防火墙规则进一步处理之前，将其映射回原始的私有 IP 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2220
@@ -5230,30 +5474,32 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2223
+#, fuzzy
 msgid ""
 "The first method is to assign a range of ports to use as source ports.  By "
 "adding the `portmap` keyword, NAT can be directed to only use source ports "
 "in the specified range:"
-msgstr ""
+msgstr "第一种方法是指定一段端口范围作为源端口。添加 `portmap` 关键字后，可以让 NAT 仅使用指定范围内的源端口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "map dc0 192.168.1.0/24 -> 0/32 portmap tcp/udp 20000:60000\n"
-msgstr ""
+msgstr "map dc0 192.168.1.0/24 -> 0/32 portmap tcp/udp 20000:60000\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2230
+#, fuzzy
 msgid ""
 "Alternately, use the `auto` keyword which tells NAT to determine the ports "
 "that are available for use:"
-msgstr ""
+msgstr "也可以使用 `auto` 关键字，让 NAT 自动确定可用端口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "map dc0 192.168.1.0/24 -> 0/32 portmap tcp/udp auto\n"
-msgstr ""
+msgstr "map dc0 192.168.1.0/24 -> 0/32 portmap tcp/udp auto\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2239
@@ -5272,21 +5518,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2242
+#, fuzzy
 msgid ""
 "The range of public IP addresses can be specified using a netmask or CIDR "
 "notation.  These two rules are equivalent:"
-msgstr ""
+msgstr "可以使用子网掩码或 CIDR 表示法指定公网 IP 地址范围。以下两条规则等效："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "map dc0 192.168.1.0/24 -> 204.134.75.0/255.255.255.0\n"
 "map dc0 192.168.1.0/24 -> 204.134.75.0/24\n"
-msgstr ""
+msgstr "map dc0 192.168.1.0/24 -> 204.134.75.0/255.255.255.0\nmap dc0 192.168.1.0/24 -> 204.134.75.0/24\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2252
+#, fuzzy
 msgid ""
 "A common practice is to have a publicly accessible web server or mail server "
 "segregated to an internal network segment.  The traffic from these servers "
@@ -5294,133 +5542,141 @@ msgid ""
 "traffic to the correct server.  For example, to map a web server using the "
 "internal address `10.0.10.25` to its public IP address of `20.20.20.5`, use "
 "this rule:"
-msgstr ""
+msgstr "一种常见做法是将可从公网访问的 Web 服务器或邮件服务器隔离在内部网段中。这些服务器的流量仍需经过 NAT，但还需要端口重定向，将入站流量转发到正确的服务器。例如，要将内部地址为 `10.0.10.25` 的 Web 服务器映射到公网 IP 地址 `20.20.20.5`，请使用以下规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "rdr dc0 20.20.20.5/32 port 80 -> 10.0.10.25 port 80\n"
-msgstr ""
+msgstr "rdr dc0 20.20.20.5/32 port 80 -> 10.0.10.25 port 80\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2259
+#, fuzzy
 msgid ""
 "If it is the only web server, this rule would also work as it redirects all "
 "external HTTP requests to `10.0.10.25`:"
-msgstr ""
+msgstr "如果这是唯一的 Web 服务器，也可以使用以下规则，将所有外部 HTTP 请求重定向到 `10.0.10.25`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "rdr dc0 0.0.0.0/0 port 80 -> 10.0.10.25 port 80\n"
-msgstr ""
+msgstr "rdr dc0 0.0.0.0/0 port 80 -> 10.0.10.25 port 80\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2268
+#, fuzzy
 msgid ""
 "IPF has a built in FTP proxy which can be used with NAT.  It monitors all "
 "outbound traffic for active or passive FTP connection requests and "
 "dynamically creates temporary filter rules containing the port number used "
 "by the FTP data channel.  This eliminates the need to open large ranges of "
 "high order ports for FTP connections."
-msgstr ""
+msgstr "IPF 内置了可与 NAT 配合使用的 FTP 代理。它会监控所有出站流量中的主动或被动 FTP 连接请求，并动态创建临时过滤规则，其中包含 FTP 数据通道使用的端口号。这样就无需为 FTP 连接开放大段高位端口范围。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2271
+#, fuzzy
 msgid ""
 "In this example, the first rule calls the proxy for outbound FTP traffic "
 "from the internal LAN.  The second rule passes the FTP traffic from the "
 "firewall to the Internet, and the third rule handles all non-FTP traffic "
 "from the internal LAN:"
-msgstr ""
+msgstr "在此示例中，第一条规则为来自内部 LAN 的出站 FTP 流量调用代理。第二条规则允许 FTP 流量从防火墙通过并进入 Internet，第三条规则则处理来自内部 LAN 的所有非 FTP 流量："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "map dc0 10.0.10.0/29 -> 0/32 proxy port 21 ftp/tcp\n"
 "map dc0 0.0.0.0/0 -> 0/32 proxy port 21 ftp/tcp\n"
 "map dc0 10.0.10.0/29 -> 0/32\n"
-msgstr ""
+msgstr "map dc0 10.0.10.0/29 -> 0/32 proxy port 21 ftp/tcp\nmap dc0 0.0.0.0/0 -> 0/32 proxy port 21 ftp/tcp\nmap dc0 10.0.10.0/29 -> 0/32\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2281
+#, fuzzy
 msgid ""
 "The FTP `map` rules go before the NAT rule so that when a packet matches an "
 "FTP rule, the FTP proxy creates temporary filter rules to let the FTP "
 "session packets pass and undergo NAT.  All LAN packets that are not FTP will "
 "not match the FTP rules but will undergo NAT if they match the third rule."
-msgstr ""
+msgstr "FTP `map` 规则必须位于 NAT 规则之前。这样，当数据包匹配 FTP 规则时，FTP 代理会创建临时过滤规则，允许 FTP 会话数据包通过并进行 NAT。所有不匹配 FTP 规则的 LAN 数据包，若匹配第三条规则，则仍会进行 NAT。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2284
+#, fuzzy
 msgid ""
 "Without the FTP proxy, the following firewall rules would instead be "
 "needed.  Note that without the proxy, all ports above `1024` need to be "
 "allowed:"
-msgstr ""
+msgstr "如果不使用 FTP 代理，则需要改用以下防火墙规则。请注意，不使用代理时，必须允许所有大于 `1024` 的端口："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow out LAN PC client FTP to public Internet\n"
 "# Active and passive modes\n"
 "pass out quick on rl0 proto tcp from any to any port = 21 flags S keep state\n"
-msgstr ""
+msgstr "# Allow out LAN PC client FTP to public Internet\n# Active and passive modes\npass out quick on rl0 proto tcp from any to any port = 21 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Allow out passive mode data channel high order port numbers\n"
 "pass out quick on rl0 proto tcp from any to any port > 1024 flags S keep state\n"
-msgstr ""
+msgstr "# Allow out passive mode data channel high order port numbers\npass out quick on rl0 proto tcp from any to any port > 1024 flags S keep state\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Active mode let data channel in from FTP server\n"
 "pass in quick on rl0 proto tcp from any to any port = 20 flags S keep state\n"
-msgstr ""
+msgstr "# Active mode let data channel in from FTP server\npass in quick on rl0 proto tcp from any to any port = 20 flags S keep state\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2300
+#, fuzzy
 msgid ""
 "Whenever the file containing the NAT rules is edited, run `ipnat` with `-CF` "
 "to delete the current NAT rules and flush the contents of the dynamic "
 "translation table.  Include `-f` and specify the name of the NAT ruleset to "
 "load:"
-msgstr ""
+msgstr "每次编辑包含 NAT 规则的文件后，都要使用 `-CF` 运行 `ipnat`，以删除当前 NAT 规则并清空动态转换表的内容。添加 `-f`，并指定要加载的 NAT 规则集名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipnat -CF -f /etc/ipnat.rules\n"
-msgstr ""
+msgstr "# ipnat -CF -f /etc/ipnat.rules\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2307
+#, fuzzy
 msgid "To display the NAT statistics:"
-msgstr ""
+msgstr "要显示 NAT 统计信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipnat -s\n"
-msgstr ""
+msgstr "# ipnat -s\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2314
+#, fuzzy
 msgid "To list the NAT table's current mappings:"
-msgstr ""
+msgstr "要列出 NAT 表当前的映射："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipnat -l\n"
-msgstr ""
+msgstr "# ipnat -l\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2321
@@ -5431,29 +5687,31 @@ msgstr "要打开详细模式并显示与规则处理和活动规则和表条目
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ipnat -v\n"
-msgstr ""
+msgstr "# ipnat -v\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Viewing IPF Statistics"
-msgstr ""
+msgstr "查看 IPF 统计信息"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2331
+#, fuzzy
 msgid ""
 "IPF includes man:ipfstat[8] which can be used to retrieve and display "
 "statistics which are gathered as packets match rules as they go through the "
 "firewall.  Statistics are accumulated since the firewall was last started or "
 "since the last time they were reset to zero using `ipf -Z`."
-msgstr ""
+msgstr "IPF 附带 man:ipfstat[8]，可用于检索并显示数据包经过防火墙并匹配规则时收集的统计信息。统计信息自防火墙上次启动后开始累积，或者在使用 `ipf -Z` 将统计信息重置为零后开始累积。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2333
+#, fuzzy
 msgid "The default `ipfstat` output looks like this:"
-msgstr ""
+msgstr "默认的 `ipfstat` 输出如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2353
@@ -5524,11 +5782,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2369
+#, fuzzy
 msgid ""
 "Include `-h` to prefix each rule with a count of how many times the rule was "
 "matched.  For example, `ipfstat -oh` displays the outbound internal rules "
 "table, prefixing each rule with its usage count:"
-msgstr ""
+msgstr "添加 `-h` 可在每条规则前显示其匹配次数。例如，`ipfstat -oh` 会显示出站内部规则表，并在每条规则前显示其使用次数："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2375
@@ -5544,38 +5803,41 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2381
+#, fuzzy
 msgid ""
 "To display the state table in a format similar to man:top[1], use `ipfstat -"
 "t`.  When the firewall is under attack, this option provides the ability to "
 "identify and see the attacking packets.  The optional sub-flags give the "
 "ability to select the destination or source IP, port, or protocol to be "
 "monitored in real time.  Refer to man:ipfstat[8] for details."
-msgstr ""
+msgstr "要以类似 man:top[1] 的格式显示状态表，请使用 `ipfstat -t`。当防火墙遭受攻击时，此选项可用于识别和查看攻击数据包。可选的子标志可指定实时监控的目标或源 IP、端口或协议。详情请参阅 man:ipfstat[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IPF Logging"
-msgstr ""
+msgstr "IPF 日志"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2386
+#, fuzzy
 msgid ""
 "IPF provides `ipmon`, which can be used to write the firewall's logging "
 "information in a human readable format.  It requires that `options "
 "IPFILTER_LOG` be first added to a custom kernel using the instructions in "
 "crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel]."
-msgstr ""
+msgstr "IPF 提供 `ipmon`，可用于以易读的格式写入防火墙日志信息。使用前，必须按照 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明，在自定义内核中添加 `options IPFILTER_LOG`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2389
+#, fuzzy
 msgid ""
 "This command is typically run in daemon mode in order to provide a "
 "continuous system log file so that logging of past events may be reviewed.  "
 "Since FreeBSD has a built in man:syslogd[8] facility to automatically rotate "
 "system logs, the default [.filename]#rc.conf# `ipmon_flags` statement uses `-"
 "Ds`:"
-msgstr ""
+msgstr "通常以守护进程模式运行此命令，以持续生成系统日志文件，方便查看过往事件。由于 FreeBSD 内置 man:syslogd[8]，可自动轮换系统日志，因此默认的 [.filename]#rc.conf# `ipmon_flags` 语句使用 `-Ds`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2396
@@ -5608,6 +5870,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2405
+#, fuzzy
 msgid ""
 "Once the logging facility is enabled in [.filename]#rc.conf# and started "
 "with `service ipmon start`, IPF will only log the rules which contain the "
@@ -5616,14 +5879,15 @@ msgid ""
 "customary to include the `log` keyword in the last rule in the ruleset.  "
 "This makes it possible to see all the packets that did not match any of the "
 "rules in the ruleset."
-msgstr ""
+msgstr "在 [.filename]#rc.conf# 中启用日志功能并通过 `service ipmon start` 启动后，IPF 只会记录包含 `log` 关键字的规则。由防火墙管理员决定规则集中哪些规则应记录日志，通常只记录拒绝规则。惯例是在规则集的最后一条规则中包含 `log` 关键字。这样便可查看所有未匹配规则集中任何规则的数据包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2408
+#, fuzzy
 msgid ""
 "By default, `ipmon -Ds` mode uses `local0` as the logging facility.  The "
 "following logging levels can be used to further segregate the logged data:"
-msgstr ""
+msgstr "默认情况下，`ipmon -Ds` 模式使用 `local0` 作为日志工具。可以使用以下日志级别进一步区分记录的数据："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2415
@@ -5641,16 +5905,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2418
+#, fuzzy
 msgid ""
 "In order to setup IPF to log all data to [.filename]#/var/log/ipfilter.log#, "
 "first create the empty file:"
-msgstr ""
+msgstr "要将 IPF 配置为把所有数据记录到 [.filename]#/var/log/ipfilter.log#，请先创建空文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2422
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# touch /var/log/ipfilter.log\n"
-msgstr ""
+msgstr "# touch /var/log/ipfilter.log\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2425
@@ -5670,10 +5935,11 @@ msgstr "local0.* /var/log/ipfilter.log\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2432
+#, fuzzy
 msgid ""
 "To activate the changes and instruct man:syslogd[8] to read the modified [."
 "filename]#/etc/syslog.conf#, run `service syslogd reload`."
-msgstr ""
+msgstr "要使更改生效并让 man:syslogd[8] 重新读取修改后的 [.filename]#/etc/syslog.conf#，请运行 `service syslogd reload`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2434
@@ -5713,52 +5979,59 @@ msgstr "处理数据包的接口的名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2442
+#, fuzzy
 msgid "The group and rule number of the rule in the format `@0:17`."
-msgstr ""
+msgstr "规则的组和编号，格式为 `@0:17`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2443
+#, fuzzy
 msgid ""
 "The action: `p` for passed, `b` for blocked, `S` for a short packet, `n` did "
 "not match any rules, and `L` for a log rule."
-msgstr ""
+msgstr "动作：`p` 表示放行，`b` 表示阻止，`S` 表示短数据包，`n` 表示未匹配任何规则，`L` 表示日志规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2444
+#, fuzzy
 msgid ""
 "The addresses written as three fields: the source address and port separated "
 "by a comma, the -> symbol, and the destination address and port. For "
 "example: `209.53.17.22,80 -> 198.73.220.17,1722`."
-msgstr ""
+msgstr "地址分为三个字段：源地址和端口（以逗号分隔）、-> 符号，以及目标地址和端口。例如：`209.53.17.22,80 -> 198.73.220.17,1722`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2445
+#, fuzzy
 msgid "`PR` followed by the protocol name or number: for example, `PR tcp`."
-msgstr ""
+msgstr "`PR` 后跟协议名称或编号，例如 `PR tcp`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2446
+#, fuzzy
 msgid ""
 "`len` followed by the header length and total length of the packet: for "
 "example, `len 20 40`."
-msgstr ""
+msgstr "`len` 后跟数据包的首部长度和总长度，例如 `len 20 40`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2449
+#, fuzzy
 msgid ""
 "If the packet is a TCP packet, there will be an additional field starting "
 "with a hyphen followed by letters corresponding to any flags that were set.  "
 "Refer to man:ipf[5] for a list of letters and their flags."
-msgstr ""
+msgstr "如果数据包是 TCP 数据包，还会有一个以连字符开头的附加字段，后跟表示已设置标志的字母。字母及其对应标志的列表请参阅 man:ipf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2452
+#, fuzzy
 msgid ""
 "If the packet is an ICMP packet, there will be two fields at the end: the "
 "first always being \"icmp\" and the next being the ICMP message and sub-"
 "message type, separated by a slash.  For example: `icmp 3/3` for a port "
 "unreachable message."
-msgstr ""
+msgstr "如果数据包是 ICMP 数据包，末尾会有两个字段：第一个始终为 \"icmp\"，第二个为 ICMP 消息类型和子类型，两者以斜杠分隔。例如，端口不可达消息表示为 `icmp 3/3`。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2454
@@ -5819,19 +6092,20 @@ msgstr "启用黑名单"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2473
+#, fuzzy
 msgid ""
 "The main configuration for blocklistd is stored in man:blocklistd.conf[5].  "
 "Various command line options are also available to change blocklistd's run-"
 "time behavior.  Persistent configuration across reboots should be stored in "
 "[.filename]#/etc/blocklistd.conf#.  To enable the daemon during system boot, "
 "add a `blocklistd_enable` line to [.filename]#/etc/rc.conf# like this:"
-msgstr ""
+msgstr "blocklistd 的主要配置存储在 man:blocklistd.conf[5] 中。还可以通过各种命令行选项更改 blocklistd 的运行时行为。要在重启后保留配置，应将其存储在 [.filename]#/etc/blocklistd.conf# 中。要在系统启动时启用此守护进程，请在 [.filename]#/etc/rc.conf# 中添加 `blocklistd_enable` 行，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2477
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc blocklistd_enable=yes\n"
-msgstr ""
+msgstr "# sysrc blocklistd_enable=yes\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2480
@@ -5840,9 +6114,9 @@ msgstr "手动启动服务，运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2484
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service blocklistd start\n"
-msgstr ""
+msgstr "# service blocklistd start\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2486
@@ -5853,12 +6127,13 @@ msgstr "创建黑名单规则集"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2491
+#, fuzzy
 msgid ""
 "Rules for blocklistd are configured in man:blocklistd.conf[5] with one entry "
 "per line.  Each rule contains a tuple separated by spaces or tabs.  Rules "
 "either belong to a `local` or a `remote`, which applies to the machine where "
 "blocklistd is running or an outside source, respectively."
-msgstr ""
+msgstr "blocklistd 规则在 man:blocklistd.conf[5] 中配置，每行一条。每条规则包含一个由空格或制表符分隔的元组。规则的对象可以是 `local` 或 `remote`，分别适用于运行 blocklistd 的计算机或外部来源。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2492
@@ -5914,33 +6189,36 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[address|interface][/mask][:port]\n"
-msgstr ""
+msgstr "[address|interface][/mask][:port]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2520
+#, fuzzy
 msgid ""
 "Addresses can be specified as IPv4 in numeric format or IPv6 in square "
 "brackets.  An interface name like `_em0_` can also be used."
-msgstr ""
+msgstr "地址可以使用数字格式的 IPv4 地址，也可以使用方括号括起的 IPv6 地址。也可以使用类似 `_em0_` 的接口名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2524
+#, fuzzy
 msgid ""
 "The socket type is defined by the second field.  TCP sockets are of type "
 "`stream`, whereas UDP is denoted as `dgram`.  The example above uses TCP, "
 "since SSH is using that protocol."
-msgstr ""
+msgstr "套接字类型由第二个字段定义。TCP 套接字的类型为 `stream`，UDP 则用 `dgram` 表示。上例使用 TCP，因为 SSH 使用该协议。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2528
+#, fuzzy
 msgid ""
 "A protocol can be used in the third field of a blocklistd rule.  The "
 "following protocols can be used: `tcp`, `udp`, `tcp6`, `udp6`, or numeric.  "
 "A wildcard, like in the example, is typically used to match all protocols "
 "unless there is a reason to distinguish traffic by a certain protocol."
-msgstr ""
+msgstr "blocklistd 规则的第三个字段可以指定协议。可使用以下协议：`tcp`、`udp`、`tcp6`、`udp6` 或数字。通常使用通配符（如示例所示）匹配所有协议，除非需要按特定协议区分流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2531
@@ -5999,10 +6277,11 @@ msgstr "ssh             stream  *       *               -ssh       3       24h\n
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2553
+#, fuzzy
 msgid ""
 "With such a rule, any new blocklist rules are added to an anchor called "
 "`blocklistd-ssh`."
-msgstr ""
+msgstr "使用此规则时，所有新的 blocklist 规则都会添加到名为 `blocklistd-ssh` 的锚点中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2557
@@ -6025,11 +6304,12 @@ msgstr "22              stream  tcp       *               */24    3       24h\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2567
+#, fuzzy
 msgid ""
 "It is important to specify the proper protocol here.  IPv4 and IPv6 "
 "treat /24 differently, that is the reason why `*` cannot be used in the "
 "third field for this rule."
-msgstr ""
+msgstr "此处必须指定正确的协议。IPv4 和 IPv6 对 `/24` 的处理方式不同，因此此规则的第三个字段不能使用 `*`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2570
@@ -6042,21 +6322,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2574
+#, fuzzy
 msgid ""
 "The sixth field, called `nfail`, sets the number of login failures required "
 "to blocklist the remote IP in question.  When a wildcard is used at this "
 "position, it means that blocks will never happen.  In the example rule "
 "above, a limit of three is defined meaning that after three attempts to log "
 "into SSH on one connection, the IP is blocked."
-msgstr ""
+msgstr "第六个字段 `nfail` 设置将相应远程 IP 地址加入阻止列表所需的登录失败次数。此字段使用通配符时，表示永不阻止。在上面的示例规则中，限制设为三次，这意味着在同一连接上尝试登录 SSH 三次后，该 IP 地址会被阻止。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2577
+#, fuzzy
 msgid ""
 "The last field in a blocklistd rule definition specifies how long a host is "
 "blocklisted.  The default unit is seconds, but suffixes like `m`, `h`, and "
 "`d` can also be specified for minutes, hours, and days, respectively."
-msgstr ""
+msgstr "blocklistd 规则定义的最后一个字段指定主机被加入阻止列表的时长。默认单位为秒，也可以使用 `m`、`h` 和 `d` 等后缀分别表示分钟、小时和天。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2581
@@ -6129,6 +6411,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2604
+#, fuzzy
 msgid ""
 "The name fields is different though: the equal sign (`=`) in a remote rule "
 "tells blocklistd to use the value from the matching local rule.  It means "
@@ -6138,7 +6421,7 @@ msgid ""
 "used here, in which case blocklistd will add rules for this address block to "
 "the anchor of that name.  The default table is used when a wildcard is "
 "specified."
-msgstr ""
+msgstr "不过，名称字段有所不同：远程规则中的等号（`=`）表示 blocklistd 使用匹配的本地规则中的值。这意味着会获取防火墙规则条目并添加 `/25` 前缀（子网掩码为 `255.255.255.128`）。当来自该地址范围的连接被加入阻止列表时，整个子网都会受到影响。此处也可以使用 PF 锚点名称，此时 blocklistd 会将此地址块的规则添加到该名称对应的锚点中。指定通配符时会使用默认表。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2608
@@ -6170,13 +6453,14 @@ msgstr "黑名单客户端配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2616
+#, fuzzy
 msgid ""
 "There are a few software packages in FreeBSD that can utilize blocklistd's "
 "functionality.  The two most prominent ones are package:ftp/freebsd-ftpd[] "
 "and man:sshd[8] to block excessive connection attempts.  To activate "
 "blocklistd in the SSH daemon, add the following line to [.filename]#/etc/ssh/"
 "sshd_config#:"
-msgstr ""
+msgstr "FreeBSD 中有一些软件包可以利用 blocklistd 的功能。其中最常用的是 package:ftp/freebsd-ftpd[] 和 man:sshd[8]，它们可用于阻止过多的连接尝试。要在 SSH 守护进程中启用 blocklistd，请将以下行添加到 [.filename]#/etc/ssh/sshd_config#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2620
@@ -6191,11 +6475,12 @@ msgstr "之后重新启动 sshd，使这些更改生效。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2625
+#, fuzzy
 msgid ""
 "Blocklisting for package:ftp/freebsd-ftpd[] is enabled using `-B`, either in "
 "[.filename]#/etc/inetd.conf# or as a flag in [.filename]#/etc/rc.conf# like "
 "this:"
-msgstr ""
+msgstr "通过 `-B` 启用 package:ftp/freebsd-ftpd[] 的阻止列表功能，可在 [.filename]#/etc/inetd.conf# 中设置，也可在 [.filename]#/etc/rc.conf# 中将其设为标志，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2629
@@ -6220,24 +6505,26 @@ msgstr "管理 Blacklistd"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2638
+#, fuzzy
 msgid ""
 "Blocklistd provides the user with a management utility called man:"
 "blocklistctl[8].  It displays blocked addresses and networks that are "
 "blocklisted by the rules defined in man:blocklistd.conf[5].  To see the list "
 "of currently blocked hosts, use `dump` combined with `-b` like this."
-msgstr ""
+msgstr "blocklistd 提供了名为 man:blocklistctl[8] 的管理工具。该工具会显示由 man:blocklistd.conf[5] 中定义的规则加入阻止列表的地址和网络。要查看当前被阻止的主机列表，请将 `dump` 与 `-b` 一起使用，如下所示。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2644
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# blocklistctl dump -b\n"
 "rulename                address/ma:port id      nfail   last access\n"
 "blocklistd        213.0.123.128/25:22   OK      6/3     2019/06/08 14:30:19\n"
-msgstr ""
+msgstr "# blocklistctl dump -b\nrulename                address/ma:port id      nfail   last access\nblocklistd        213.0.123.128/25:22   OK      6/3     2019/06/08 14:30:19\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2650
+#, fuzzy
 msgid ""
 "This example shows that there were 6 out of three permitted attempts on port "
 "22 coming from the address range `213.0.123.128/25`.  There are more "
@@ -6245,23 +6532,24 @@ msgid ""
 "logins on a single TCP connection.  A connection that is currently going on "
 "is not stopped by blocklistd.  The last connection attempt is listed in the "
 "`last access` column of the output."
-msgstr ""
+msgstr "此示例显示，来自地址范围 `213.0.123.128/25`、通过端口 22 发起的尝试中，有 6 次，而允许次数为 3 次。尝试次数多于允许次数，是因为 SSH 允许客户端在单个 TCP 连接上尝试多次登录。blocklistd 不会中断当前正在进行的连接。输出的 `last access` 列显示最近一次连接尝试的时间。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2652
+#, fuzzy
 msgid ""
 "To see the remaining time that this host will be on the blocklist, add `-r` "
 "to the previous command."
-msgstr ""
+msgstr "要查看此主机在阻止列表中的剩余时间，请在上一条命令中添加 `-r`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2658
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# blocklistctl dump -br\n"
 "rulename                address/ma:port id      nfail   remaining time\n"
 "blocklistd        213.0.123.128/25:22   OK      6/3     36s\n"
-msgstr ""
+msgstr "# blocklistctl dump -br\nrulename                address/ma:port id      nfail   remaining time\nblocklistd        213.0.123.128/25:22   OK      6/3     36s\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2661
@@ -6278,6 +6566,7 @@ msgstr "从阻止列表中删除主机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2673
+#, fuzzy
 msgid ""
 "Sometimes it is necessary to remove a host from the block list before the "
 "remaining time expires.  Unfortunately, there is no functionality in "
@@ -6290,17 +6579,17 @@ msgid ""
 "number.  In this example, it would be called `port22`.  With that "
 "information at hand, it is now possible to use man:pfctl[8] to display all "
 "addresses listed like this:"
-msgstr ""
+msgstr "有时需要在剩余时间到期前将主机从阻止列表中移除。遗憾的是，blocklistd 没有提供此功能。不过，可以使用 pfctl 从 PF 表中移除该地址。对于每个被阻止的端口，定义在 [.filename]#/etc/pf.conf# 中的 blocklistd 锚点内都有一个子锚点。例如，如果有一个用于阻止端口 22 的子锚点，它的名称就是 `blocklistd/22`。该子锚点内有一个包含被阻止地址的表。此表的名称由 port 和端口号组成。在本例中，表名为 `port22`。掌握这些信息后，就可以使用 man:pfctl[8] 显示所有列出的地址，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2680
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pfctl -a blocklistd/22 -t port22 -T show\n"
 "...\n"
 "213.0.123.128/25\n"
 "...\n"
-msgstr ""
+msgstr "# pfctl -a blocklistd/22 -t port22 -T show\n...\n213.0.123.128/25\n...\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2683
@@ -6311,9 +6600,9 @@ msgstr "在确定了要从列表中解除封禁的地址后，用下面的命令
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2687
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pfctl -a blocklistd/22 -t port22 -T delete 213.0.123.128/25\n"
-msgstr ""
+msgstr "# pfctl -a blocklistd/22 -t port22 -T delete 213.0.123.128/25\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/firewalls/_index.adoc:2691

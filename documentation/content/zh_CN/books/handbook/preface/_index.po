@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/preface/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD newcomer will find that the first section of this book guides the user through the FreeBSD installation process and gently introduces the concepts and conventions that underpin UNIX"
-msgstr ""
+msgstr "FreeBSD 新手会发现，本书第一部分将引导用户完成 FreeBSD 安装过程，并逐步介绍 UNIX 所依赖的概念和惯例"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/preface/_index.adoc:1
@@ -39,13 +39,14 @@ msgstr "目标读者"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:53
+#, fuzzy
 msgid ""
 "The FreeBSD newcomer will find that the first section of this book guides "
 "the user through the FreeBSD installation process and gently introduces the "
 "concepts and conventions that underpin UNIX(R).  Working through this "
 "section requires little more than the desire to explore, and the ability to "
 "take on board new concepts as they are introduced."
-msgstr ""
+msgstr "FreeBSD 新手会发现，本书第一部分将引导用户完成 FreeBSD 安装过程，并逐步介绍 UNIX(R) 所依赖的概念和惯例。学习本部分只需具备探索的意愿，并能够接受逐步引入的新概念。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:56
@@ -69,16 +70,17 @@ msgstr ""
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:58
+#, fuzzy
 msgid ""
 "For a list of additional sources of information, please see crossref:"
 "bibliography[bibliography,Bibliography]."
-msgstr ""
+msgstr "其他信息来源列表请参见 crossref:bibliography[bibliography,参考书目]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/preface/_index.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fourth Edition"
-msgstr ""
+msgstr "第四版"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:64
@@ -98,146 +100,163 @@ msgstr ""
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:66
+#, fuzzy
 msgid ""
 "The Handbook has been converted from link:https://docbook.org/[Docbook] to "
 "link:https://gohugo.io/[Hugo] and link:https://asciidoctor.org/[AsciiDoctor]"
-msgstr ""
+msgstr "手册已从 link:https://docbook.org/[Docbook] 转换为 link:https://gohugo.io/[Hugo] 和 link:https://asciidoctor.org/[AsciiDoctor]"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:67
+#, fuzzy
 msgid ""
 "The link:https://docs.FreeBSD.org[FreeBSD Documentation Portal] has been "
 "created."
-msgstr ""
+msgstr "link:https://docs.FreeBSD.org[FreeBSD 文档门户] 已创建。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:68
+#, fuzzy
 msgid ""
 "The crossref:introduction[introduction, Introduction] chapter has been "
 "updated to improve the FreeBSD history and fix minor typos."
-msgstr ""
+msgstr "crossref:introduction[introduction,简介] 章节已更新，以改进 FreeBSD 历史部分并修正小型拼写错误。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:69
+#, fuzzy
 msgid ""
 "The crossref:bsdinstall[bsdinstall, Install] chapter has been updated with "
 "an upgraded synopsis, the latest changes to the installer, refreshed images, "
 "added alt text to images, and the removal of references to specific versions."
-msgstr ""
+msgstr "crossref:bsdinstall[bsdinstall,安装] 章节已更新，包括升级后的概要、安装程序的最新变更、更新后的图片、为图片添加替代文本，以及删除对特定版本的引用。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:70
+#, fuzzy
 msgid ""
 "The crossref:basics[basics, Basics] chapter has updated tables, command "
 "outputs, and directory structure per man:hier."
-msgstr ""
+msgstr "crossref:basics[basics,基础知识] 章节已根据 man:hier 更新表格、命令输出和目录结构。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:71
+#, fuzzy
 msgid ""
 "The crossref:ports[ports, Ports] chapter has been updated and now simplifies "
 "package searches, updates software examples (Nginx replaces Apache), "
 "improves the man:pkg[8] bootstrap process, and adds new instructions for "
 "configuring and managing packages, including blocking and unblocking."
-msgstr ""
+msgstr "crossref:ports[ports,Ports] 章节已更新，现已简化软件包搜索、更新软件示例（以 Nginx 替代 Apache）、改进 man:pkg[8] 引导过程，并新增软件包配置和管理说明，包括阻止和解除阻止软件包。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:72
+#, fuzzy
 msgid ""
 "The crossref:x11[x11, X11] chapter has been updated to reflect the current "
 "state of graphics in FreeBSD, remove outdated references to old Intel "
 "drivers, configurations, and compiz, and relocate desktop environment "
 "instructions (such as KDE Plasma and GNOME) to the Desktop Environments "
 "chapter, as these environments now also support Wayland in addition to X11."
-msgstr ""
+msgstr "crossref:x11[x11,X11] 章节已更新，以反映 FreeBSD 图形功能的现状，删除对旧版 Intel 驱动程序、配置和 compiz 的过时引用，并将桌面环境（例如 KDE Plasma 和 GNOME）的说明移至“桌面环境”章节，因为这些环境现在除了支持 X11，也支持 Wayland。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:73
+#, fuzzy
 msgid ""
 "The crossref:wayland[wayland,Wayland] chapter has been added with "
 "information about installing and configuring Wayland under FreeBSD."
-msgstr ""
+msgstr "新增了 crossref:wayland[wayland,Wayland] 章节，介绍如何在 FreeBSD 下安装和配置 Wayland。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:74
+#, fuzzy
 msgid ""
 "The crossref:network[network, Network] chapter has been created to cover "
 "basic wired and wireless network configuration, including hostname, DNS, and "
 "troubleshooting. Sections on wired networks, wireless, and IPv6 have been "
 "moved and updated with improved command outputs, use of sysrc, and better "
 "AsciiDoc syntax."
-msgstr ""
+msgstr "新增了 crossref:network[network,网络] 章节，介绍有线和无线网络配置基础，包括主机名、DNS 和故障排除。有线网络、无线网络和 IPv6 相关章节已移至此处并更新，改进了命令输出，采用了 sysrc，并改进了 AsciiDoc 语法。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:75
+#, fuzzy
 msgid ""
 "The crossref:desktop[desktop, Desktop] chapter has been updated with "
 "upgraded installation instructions for KDE Plasma, GNOME, XFCE, MATE, "
 "Cinnamon, and LXQT, expanded browser options, a new development tools "
 "section, and updates to office productivity, document viewers, and finance "
 "sections."
-msgstr ""
+msgstr "crossref:desktop[desktop,桌面] 章节已更新，改进了 KDE Plasma、GNOME、XFCE、MATE、Cinnamon 和 LXQT 的安装说明，扩展了浏览器选项，新增开发工具部分，并更新了办公软件、文档查看器和财务软件部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:76
+#, fuzzy
 msgid ""
 "The crossref:multimedia[multimedia, Multimedia] chapter has been reworked "
 "with updates to the sound section, new tables for sound mixers, audio "
 "players, and video players, guidance on automatic headphone switching, a new "
 "conferencing and meetings section, and a revised image scanners section."
-msgstr ""
+msgstr "crossref:multimedia[multimedia,多媒体] 章节已重写，更新了声音部分，新增声音混音器、音频播放器和视频播放器表格，介绍耳机自动切换，新增会议和协作部分，并修订了图像扫描仪部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:77
+#, fuzzy
 msgid ""
 "The crossref:linuxemu[linuxemu, Linuxemu] chapter has been improved with "
 "updated instructions for setting up a Debian/Ubuntu base system using "
 "debootstrap."
-msgstr ""
+msgstr "crossref:linuxemu[linuxemu,Linux 仿真] 章节已改进，更新了使用 debootstrap 设置 Debian/Ubuntu 基础系统的说明。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:78
+#, fuzzy
 msgid ""
 "The crossref:config[config-tuning, Config] chapter has been renamed for "
 "accuracy, with updates to service management, cron and periodic, syslog, "
 "power management, and swap sections. A new entry on config files was added, "
 "and the outdated tuning section was removed."
-msgstr ""
+msgstr "crossref:config[config-tuning,配置] 章节已更名以提高准确性，并更新了服务管理、cron 和 periodic、syslog、电源管理及交换空间等部分。新增了配置文件条目，并删除了过时的调优部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:79
+#, fuzzy
 msgid ""
 "The crossref:security[security, Security] chapter has been updated with "
 "enhancements to VPN over IPSec, securing accounts, password hashes, sudo/"
 "doas, and OpenSSH/OpenSSL. New sections have been added covering IDS, secure "
 "levels, file flags, Capsicum, NFSv4 ACLs, and resource limits."
-msgstr ""
+msgstr "crossref:security[security,安全] 章节已更新，改进了通过 IPSec 使用 VPN、保护账户、密码哈希、sudo/doas 以及 OpenSSH/OpenSSL 相关内容。新增了 IDS、安全级别、文件标志、Capsicum、NFSv4 ACL 和资源限制等部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:80
+#, fuzzy
 msgid ""
 "The crossref:jails[jails, Jails] chapter has been updated to include details "
 "on jail types (Thick, Thin, VNET, and Linux Jails), host system "
 "configuration, networking options, the jail configuration file, setup "
 "procedures, upgrade methods, resource limits, and different jail managers "
 "and container solutions."
-msgstr ""
+msgstr "crossref:jails[jails,Jails] 章节已更新，补充了 jail 类型（厚型、薄型、VNET 和 Linux Jails）、主机系统配置、网络选项、jail 配置文件、设置流程、升级方法、资源限制以及不同 jail 管理器和容器解决方案的详细信息。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:81
+#, fuzzy
 msgid ""
 "The crossref:mail[mail, Mail] chapter has been updated to include "
 "information on DMA, upgrades to Sendmail, instructions for changing DMA and "
 "Sendmail to use different MTAs, and the removal of Dialup and Fetchmail "
 "sections, along with a reorganization of the chapter."
-msgstr ""
+msgstr "crossref:mail[mail,邮件] 章节已更新，补充了 DMA、Sendmail 升级、将 DMA 和 Sendmail 配置为使用不同 MTA 的说明，并删除了拨号和 Fetchmail 部分，同时重新组织了章节内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:82
+#, fuzzy
 msgid ""
 "The crossref:bibliography[bibliography,Bibliography] has been extensively "
 "updated."
-msgstr ""
+msgstr "crossref:bibliography[bibliography,参考书目] 已大幅更新。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/preface/_index.adoc:84
@@ -265,46 +284,52 @@ msgstr ""
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:90
+#, fuzzy
 msgid ""
 "crossref:wine[wine,WINE] has been added with information about how to run "
 "Windows(R) applications on FreeBSD."
-msgstr ""
+msgstr "新增了 crossref:wine[wine,WINE]，介绍如何在 FreeBSD 上运行 Windows(R) 应用程序。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:91
+#, fuzzy
 msgid ""
 "crossref:dtrace[dtrace,DTrace] has been added with information about the "
 "powerful DTrace performance analysis tool."
-msgstr ""
+msgstr "新增了 crossref:dtrace[dtrace,DTrace]，介绍功能强大的 DTrace 性能分析工具。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:92
+#, fuzzy
 msgid ""
 "crossref:filesystems[filesystems,Other File Systems] have been added with "
 "information about non-native file systems in FreeBSD, such as ZFS from "
 "Sun(TM)."
-msgstr ""
+msgstr "新增了 crossref:filesystems[filesystems,其他文件系统]，介绍 FreeBSD 中的非原生文件系统，例如 Sun(TM) 的 ZFS。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:93
+#, fuzzy
 msgid ""
 "crossref:audit[audit,Security Event Auditing] has been added to cover the "
 "new auditing capabilities in FreeBSD and explain its use."
-msgstr ""
+msgstr "新增了 crossref:audit[audit,安全事件审计]，介绍 FreeBSD 新增的审计功能及其用法。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:94
+#, fuzzy
 msgid ""
 "crossref:virtualization[virtualization,Virtualization] has been added with "
 "information about installing FreeBSD on virtualization software."
-msgstr ""
+msgstr "新增了 crossref:virtualization[virtualization,虚拟化]，介绍如何在虚拟化软件中安装 FreeBSD。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:95
+#, fuzzy
 msgid ""
 "crossref:bsdinstall[bsdinstall,Installing FreeBSD] has been added to cover "
 "installation of FreeBSD using the new installation utility, bsdinstall."
-msgstr ""
+msgstr "新增了 crossref:bsdinstall[bsdinstall,安装 FreeBSD]，介绍如何使用新的安装工具 bsdinstall 安装 FreeBSD。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/preface/_index.adoc:97
@@ -332,69 +357,77 @@ msgstr ""
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:104
+#, fuzzy
 msgid ""
 "crossref:config[config-tuning,Configuration and Tuning] has been expanded "
 "with new information about the ACPI power and resource management, the "
 "`cron` system utility, and more kernel tuning options."
-msgstr ""
+msgstr "crossref:config[config-tuning,配置与调优] 扩充了有关 ACPI 电源和资源管理、`cron` 系统工具以及更多内核调优选项的新内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:105
+#, fuzzy
 msgid ""
 "crossref:security[security,Security] has been expanded with new information "
 "about virtual private networks (VPNs), file system access control lists "
 "(ACLs), and security advisories."
-msgstr ""
+msgstr "crossref:security[security,安全] 扩充了有关虚拟专用网络（VPN）、文件系统访问控制列表（ACL）和安全公告的新内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:106
+#, fuzzy
 msgid ""
 "crossref:mac[mac,Mandatory Access Control] is a new chapter with this "
 "edition. It explains what MAC is and how this mechanism can be used to "
 "secure a FreeBSD system."
-msgstr ""
+msgstr "本版新增了 crossref:mac[mac,强制访问控制] 章节，介绍 MAC 的含义，以及如何使用这一机制保护 FreeBSD 系统。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:107
+#, fuzzy
 msgid ""
 "crossref:disks[disks,Storage] has been expanded with new information about "
 "USB storage devices, file system snapshots, file system quotas, file and "
 "network backed filesystems, and encrypted disk partitions."
-msgstr ""
+msgstr "crossref:disks[disks,存储] 扩充了有关 USB 存储设备、文件系统快照、文件系统配额、文件支持和网络支持的文件系统，以及加密磁盘分区的新内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:108
+#, fuzzy
 msgid ""
 "A troubleshooting section has been added to crossref:ppp-and-slip[ppp-and-"
 "slip,PPP]."
-msgstr ""
+msgstr "crossref:ppp-and-slip[ppp-and-slip,PPP] 新增了故障排除部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:109
+#, fuzzy
 msgid ""
 "crossref:mail[mail,Electronic Mail] has been expanded with new information "
 "about using alternative transport agents, SMTP authentication, UUCP, "
 "fetchmail, procmail, and other advanced topics."
-msgstr ""
+msgstr "crossref:mail[mail,电子邮件] 扩充了有关使用替代传输代理、SMTP 身份验证、UUCP、fetchmail、procmail 及其他高级主题的新内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:110
+#, fuzzy
 msgid ""
 "crossref:network-servers[network-servers,Network Servers] is all new with "
 "this edition. This chapter includes information about setting up the Apache "
 "HTTP Server, ftpd, and setting up a server for Microsoft(R) Windows(R) "
 "clients with Samba. Some sections from crossref:advanced-networking[advanced-"
 "networking,Advanced Networking] were moved here to improve the presentation."
-msgstr ""
+msgstr "本版全新编写了 crossref:network-servers[network-servers,网络服务器] 章节。该章节介绍如何设置 Apache HTTP Server、ftpd，以及如何使用 Samba 为 Microsoft(R) Windows(R) 客户端设置服务器。为改进内容编排，crossref:advanced-networking[advanced-networking,高级网络] 的部分内容已移至此处。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:111
+#, fuzzy
 msgid ""
 "crossref:advanced-networking[advanced-networking,Advanced Networking] has "
 "been expanded with new information about using Bluetooth(R) devices with "
 "FreeBSD, setting up wireless networks, and Asynchronous Transfer Mode (ATM) "
 "networking."
-msgstr ""
+msgstr "crossref:advanced-networking[advanced-networking,高级网络] 扩充了有关在 FreeBSD 中使用 Bluetooth(R) 设备、设置无线网络以及异步传输模式（ATM）网络的新内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:112
@@ -453,79 +486,90 @@ msgstr ""
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:124
+#, fuzzy
 msgid ""
 "The content has been logically reorganized into three parts: \"Getting "
 "Started\", \"System Administration\", and \"Appendices\"."
-msgstr ""
+msgstr "内容已按逻辑重新组织为三部分：“入门”、“系统管理”和“附录”。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:125
+#, fuzzy
 msgid ""
 "crossref:basics[basics,FreeBSD Basics] has been expanded to contain "
 "additional information about processes, daemons, and signals."
-msgstr ""
+msgstr "crossref:basics[basics,FreeBSD 基础知识] 已扩充，增加了有关进程、守护进程和信号的内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:126
+#, fuzzy
 msgid ""
 "crossref:ports[ports,Installing Applications: Packages and Ports] has been "
 "expanded to contain additional information about binary package management."
-msgstr ""
+msgstr "crossref:ports[ports,安装应用程序：软件包和 Ports] 已扩充，增加了有关二进制软件包管理的内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:127
+#, fuzzy
 msgid ""
 "crossref:x11[x11,The X Window System] has been completely rewritten with an "
 "emphasis on using modern desktop technologies such as KDE and GNOME on "
 "XFree86(TM) 4.X."
-msgstr ""
+msgstr "crossref:x11[x11,X Window 系统] 已全面重写，重点介绍如何在 XFree86(TM) 4.X 上使用 KDE 和 GNOME 等现代桌面技术。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:128
+#, fuzzy
 msgid "crossref:boot[boot,The FreeBSD Booting Process] has been expanded."
-msgstr ""
+msgstr "crossref:boot[boot,FreeBSD 引导过程] 已扩充。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:129
+#, fuzzy
 msgid ""
 "crossref:disks[disks,Storage] has been written from what used to be two "
 "separate chapters on \"Disks\" and \"Backups\". We feel that the topics are "
 "easier to comprehend when presented as a single chapter. A section on RAID "
 "(both hardware and software) has also been added."
-msgstr ""
+msgstr "crossref:disks[disks,存储] 由原先分开的“磁盘”和“备份”两章合并编写而成。我们认为，将这些主题放在同一章中更容易理解。此外还新增了 RAID（硬件和软件）部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:130
+#, fuzzy
 msgid ""
 "crossref:serialcomms[serialcomms,Serial Communications] has been completely "
 "reorganized and updated for FreeBSD 4.X/5.X."
-msgstr ""
+msgstr "crossref:serialcomms[serialcomms,串行通信] 已全面重组，并针对 FreeBSD 4.X/5.X 更新。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:131
+#, fuzzy
 msgid "crossref:ppp-and-slip[ppp-and-slip,PPP] has been substantially updated."
-msgstr ""
+msgstr "crossref:ppp-and-slip[ppp-and-slip,PPP] 已大幅更新。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:132
+#, fuzzy
 msgid ""
 "Many new sections have been added to crossref:advanced-networking[advanced-"
 "networking,Advanced Networking]."
-msgstr ""
+msgstr "crossref:advanced-networking[advanced-networking,高级网络] 新增了许多部分。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:133
+#, fuzzy
 msgid ""
 "crossref:mail[mail,Electronic Mail] has been expanded to include more "
 "information about configuring sendmail."
-msgstr ""
+msgstr "crossref:mail[mail,电子邮件] 已扩充，增加了更多有关配置 sendmail 的内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:134
+#, fuzzy
 msgid ""
 "crossref:linuxemu[linuxemu,Linux® Binary Compatibility] has been expanded to "
 "include information about installing Oracle(R) and SAP(R) R/3(R)."
-msgstr ""
+msgstr "crossref:linuxemu[linuxemu,Linux® 二进制兼容性] 已扩充，增加了有关安装 Oracle(R) 和 SAP(R) R/3(R) 的内容。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:135
@@ -534,13 +578,15 @@ msgstr "以下新主题被收录于此书第二版："
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:137
+#, fuzzy
 msgid "crossref:config[config-tuning,Configuration and Tuning]."
-msgstr ""
+msgstr "crossref:config[config-tuning,配置与调优]。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:138
+#, fuzzy
 msgid "crossref:multimedia[multimedia,Multimedia]."
-msgstr ""
+msgstr "crossref:multimedia[multimedia,多媒体]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/preface/_index.adoc:140
@@ -575,9 +621,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:introduction[introduction,Introduction]_"
-msgstr ""
+msgstr "__crossref:introduction[introduction,简介]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:155
@@ -588,76 +634,81 @@ msgstr "向新用户介绍 FreeBSD 的历史，目标，开发流程。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:bsdinstall[bsdinstall,Installing FreeBSD]_"
-msgstr ""
+msgstr "__crossref:bsdinstall[bsdinstall,安装 FreeBSD]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:158
+#, fuzzy
 msgid ""
 "Walks a user through the entire installation process of FreeBSD 9._x_ and "
 "later using bsdinstall."
-msgstr ""
+msgstr "介绍如何使用 bsdinstall 完成 FreeBSD 9.__x__ 及更高版本的完整安装过程。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:basics[basics,FreeBSD Basics]_"
-msgstr ""
+msgstr "__crossref:basics[basics,FreeBSD 基础知识]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:161
+#, fuzzy
 msgid ""
 "Covers the basic commands and functionality of the FreeBSD operating system. "
 "When familiar with Linux(R) or another flavor of UNIX(R) then this chapter "
 "can probably be skipped."
-msgstr ""
+msgstr "介绍 FreeBSD 操作系统的基本命令和功能。如果熟悉 Linux(R) 或其他 UNIX(R) 变体，可能可以跳过本章。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:ports[ports,Installing Applications: Packages and Ports]_"
-msgstr ""
+msgstr "__crossref:ports[ports,安装应用程序：软件包和 Ports]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:164
+#, fuzzy
 msgid ""
 "Covers the installation of third-party software with both FreeBSD's "
 "innovative \"Ports Collection\" and standard binary packages."
-msgstr ""
+msgstr "介绍如何使用 FreeBSD 独具创新的“Ports Collection”和标准二进制软件包安装第三方软件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:x11[x11,The X Window System]_"
-msgstr ""
+msgstr "__crossref:x11[x11,X Window 系统]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:167
+#, fuzzy
 msgid ""
 "Describes the X Window System in general and using X11 on FreeBSD in "
 "particular. Also describes common desktop environments such as KDE and GNOME."
-msgstr ""
+msgstr "概述 X Window 系统，重点介绍如何在 FreeBSD 上使用 X11。还介绍 KDE 和 GNOME 等常见桌面环境。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:wayland[wayland,Wayland]_"
-msgstr ""
+msgstr "__crossref:wayland[wayland,Wayland]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:170
+#, fuzzy
 msgid ""
 "Describes the Wayland display server in general and using Wayland on FreeBSD "
 "in particular. Also describes common compositors such as Wayfire, Hikari and "
 "Sway."
-msgstr ""
+msgstr "概述 Wayland 显示服务器，重点介绍如何在 FreeBSD 上使用 Wayland。还介绍 Wayfire、Hikari 和 Sway 等常见合成器。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:desktop[desktop,Desktop Applications]_"
-msgstr ""
+msgstr "__crossref:desktop[desktop,桌面应用程序]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:173
@@ -670,9 +721,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:multimedia[multimedia,Multimedia]_"
-msgstr ""
+msgstr "__crossref:multimedia[multimedia,多媒体]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:176
@@ -689,9 +740,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel]_"
-msgstr ""
+msgstr "__crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:179
@@ -708,9 +759,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:printing[printing,Printing]_"
-msgstr ""
+msgstr "__crossref:printing[printing,打印]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:182
@@ -721,37 +772,39 @@ msgstr "介绍了 FreeBSD 上打印机管理， 包括横幅页、打印统计�
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:linuxemu[linuxemu,Linux® Binary Compatibility]_"
-msgstr ""
+msgstr "__crossref:linuxemu[linuxemu,Linux® 二进制兼容性]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:185
+#, fuzzy
 msgid ""
 "Describes the Linux(R) compatibility features of FreeBSD. Also provides "
 "detailed installation instructions for many popular Linux(R) applications "
 "such as Oracle(R) and Mathematica(R)."
-msgstr ""
+msgstr "介绍 FreeBSD 的 Linux(R) 兼容功能，还提供许多常见 Linux(R) 应用程序（例如 Oracle(R) 和 Mathematica(R)）的详细安装说明。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:wine[wine,WINE]_"
-msgstr ""
+msgstr "__crossref:wine[wine,WINE]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:188
+#, fuzzy
 msgid ""
 "Describes WINE and provides detailed installation instructions. Also "
 "describes how WINE operates, how to install a GUI helper, how to run "
 "Windows(R) applications on FreeBSD, and offers other tips and solutions."
-msgstr ""
+msgstr "介绍 WINE 并提供详细的安装说明。还介绍 WINE 的运行方式、如何安装 GUI 辅助工具、如何在 FreeBSD 上运行 Windows(R) 应用程序，以及其他提示和解决方案。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:config[config-tuning,Configuration and Tuning]_"
-msgstr ""
+msgstr "__crossref:config[config-tuning,配置与调优]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:191
@@ -765,9 +818,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:boot[boot,The FreeBSD Booting Process]_"
-msgstr ""
+msgstr "__crossref:boot[boot,FreeBSD 引导过程]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:194
@@ -778,9 +831,9 @@ msgstr "本章介绍 FreeBSD 的启动流程以及如何使用配置选项控制
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:security[security,Security]_"
-msgstr ""
+msgstr "__crossref:security[security,安全]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:197
@@ -797,9 +850,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:jails[jails,Jails]_"
-msgstr ""
+msgstr "__crossref:jails[jails,Jails]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:200
@@ -810,9 +863,9 @@ msgstr "介绍了 FreeBSD jail 框架，以及它跟传统 chroot 有什么区�
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:mac[mac,Mandatory Access Control]_"
-msgstr ""
+msgstr "__crossref:mac[mac,强制访问控制]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:203
@@ -823,9 +876,9 @@ msgstr "解释了何谓强制访问控制 (MAC) 以及如何利用这一机制�
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:audit[audit,Security Event Auditing]_"
-msgstr ""
+msgstr "__crossref:audit[audit,安全事件审计]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:206
@@ -838,9 +891,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:disks[disks,Storage]_"
-msgstr ""
+msgstr "__crossref:disks[disks,存储]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:209
@@ -854,9 +907,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:geom[geom,GEOM: Modular Disk Transformation Framework]_"
-msgstr ""
+msgstr "__crossref:geom[geom,GEOM：模块化磁盘转换框架]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:212
@@ -867,35 +920,37 @@ msgstr "本章介绍 GEOM 框架是什么，如何用它配置软 RAID。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:zfs[zfs,The OpenZFS storage platform]_"
-msgstr ""
+msgstr "__crossref:zfs[zfs,OpenZFS 存储平台]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:215
+#, fuzzy
 msgid ""
 "Describes the OpenZFS storage platform and provides a quick-start guide and "
 "information about advanced topics running OpenZFS under FreeBSD."
-msgstr ""
+msgstr "介绍 OpenZFS 存储平台，并提供快速入门指南以及有关在 FreeBSD 下运行 OpenZFS 的高级主题信息。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:filesystems[filesystems,Other File Systems]_"
-msgstr ""
+msgstr "__crossref:filesystems[filesystems,其他文件系统]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:218
+#, fuzzy
 msgid ""
 "Examines support for non-native file systems under FreeBSD like ext2, ext3 "
 "and ext4."
-msgstr ""
+msgstr "介绍 FreeBSD 对 ext2、ext3 和 ext4 等非原生文件系统的支持。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:virtualization[virtualization,Virtualization]_"
-msgstr ""
+msgstr "__crossref:virtualization[virtualization,虚拟化]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:221
@@ -906,9 +961,9 @@ msgstr "本章介绍 FreeBSD 上的虚拟化系统以及如何在虚拟机中安
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:l10n[l10n,Localization - i18n/L10n Usage and Setup]_"
-msgstr ""
+msgstr "__crossref:l10n[l10n,本地化 - i18n/L10n 的使用与设置]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:224
@@ -921,9 +976,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:cutting-edge[updating-upgrading,Updating and Upgrading FreeBSD]_"
-msgstr ""
+msgstr "__crossref:cutting-edge[updating-upgrading,更新和升级 FreeBSD]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:227
@@ -939,35 +994,37 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:dtrace[dtrace,DTrace]_"
-msgstr ""
+msgstr "__crossref:dtrace[dtrace,DTrace]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:230
+#, fuzzy
 msgid ""
 "Describes how to configure and use the DTrace tool from Sun(TM) on FreeBSD. "
 "Dynamic tracing can help locate performance issues, by performing real time "
 "system analysis."
-msgstr ""
+msgstr "介绍如何在 FreeBSD 上配置和使用 Sun(TM) 的 DTrace 工具。动态跟踪可以通过实时系统分析帮助定位性能问题。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:usb-device-mode[usb-device-mode,USB Device Mode / USB OTG]_"
-msgstr ""
+msgstr "__crossref:usb-device-mode[usb-device-mode,USB 设备模式 / USB OTG]__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:233
+#, fuzzy
 msgid ""
 "Explains the use of USB Device Mode and USB On The Go (USB OTG) on FreeBSD."
-msgstr ""
+msgstr "介绍在 FreeBSD 上使用 USB 设备模式和 USB On The Go（USB OTG）。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:ppp-and-slip[ppp-and-slip,PPP]_"
-msgstr ""
+msgstr "_crossref:ppp-and-slip[ppp-and-slip，PPP]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:236
@@ -978,22 +1035,23 @@ msgstr "本章描述了FreeBSD 如何用用 PPP 连接远程系统。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:mail[mail,Electronic Mail]_"
-msgstr ""
+msgstr "_crossref:mail[mail，电子邮件]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:239
+#, fuzzy
 msgid ""
 "Explains the different components of an email server and dives into simple "
 "configuration topics for the most popular mail server software: sendmail."
-msgstr ""
+msgstr "介绍电子邮件服务器的不同组件，并深入讲解最流行的邮件服务器软件 sendmail 的简单配置主题。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:network-servers[network-servers,Network Servers]_"
-msgstr ""
+msgstr "_crossref:network-servers[network-servers，网络服务器]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:242
@@ -1012,9 +1070,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:firewalls[firewalls,Firewalls]_"
-msgstr ""
+msgstr "_crossref:firewalls[firewalls，防火墙]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:245
@@ -1028,23 +1086,24 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:advanced-networking[advanced-networking,Advanced Networking]_"
-msgstr ""
+msgstr "_crossref:advanced-networking[advanced-networking，高级网络]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:248
+#, fuzzy
 msgid ""
 "Describes many networking topics, including sharing an Internet connection "
 "with other computers on the LAN, advanced routing topics, wireless "
 "networking, Bluetooth(R), ATM, IPv6, and much more."
-msgstr ""
+msgstr "介绍许多网络主题，包括与局域网中的其他计算机共享 Internet 连接、高级路由主题、无线网络、Bluetooth(R)、ATM、IPv6 等。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:mirrors[mirrors,Obtaining FreeBSD]_"
-msgstr ""
+msgstr "_crossref:mirrors[mirrors，获取 FreeBSD]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:251
@@ -1063,9 +1122,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:252
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:bibliography[bibliography,Bibliography]_"
-msgstr ""
+msgstr "_crossref:bibliography[bibliography，参考书目]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:254
@@ -1084,9 +1143,9 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:eresources[eresources,Resources on the Internet]_"
-msgstr ""
+msgstr "_crossref:eresources[eresources，Internet 上的资源]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:257
@@ -1097,9 +1156,9 @@ msgstr "介绍了一些可供FreeBSD用户发布问题和参与有关FreeBSD技�
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:pgpkeys[pgpkeys,OpenPGP Keys]_"
-msgstr ""
+msgstr "_crossref:pgpkeys[pgpkeys，OpenPGP 密钥]_"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:260
@@ -1127,9 +1186,9 @@ msgstr "排版惯例"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_Italic_"
-msgstr ""
+msgstr "__斜体__"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:271
@@ -1143,28 +1202,30 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`Monospace`"
-msgstr ""
+msgstr "`等宽字体`"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:274
+#, fuzzy
 msgid ""
 "A `monospaced` font is used for error messages, commands, environment "
 "variables, names of ports, hostnames, user names, group names, device names, "
 "variables, and code fragments."
-msgstr ""
+msgstr "错误消息、命令、环境变量、移植软件名称、主机名、用户名、组名、设备名称、变量和代码片段使用`等宽`字体。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/preface/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Bold*"
-msgstr ""
+msgstr "*粗体*"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:277
+#, fuzzy
 msgid "A *bold* font is used for applications, commands, and keys."
-msgstr ""
+msgstr "应用程序、命令和按键使用*粗体*字体。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/preface/_index.adoc:279
@@ -1174,23 +1235,26 @@ msgstr "用户输入"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:283
+#, fuzzy
 msgid ""
 "Keys are shown in *bold* to stand out from other text.  Key combinations "
 "that are meant to be typed simultaneously are shown with `+` between the "
 "keys, such as:"
-msgstr ""
+msgstr "按键以*粗体*显示，以便与其他文本区分。同时按下的组合键用 `+` 连接，例如："
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:285
+#, fuzzy
 msgid "kbd:[Ctrl+Alt+Del]"
-msgstr ""
+msgstr "kbd:[Ctrl+Alt+Del]"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:287
+#, fuzzy
 msgid ""
 "Meaning the user should type the kbd:[Ctrl], kbd:[Alt], and kbd:[Del] keys "
 "at the same time."
-msgstr ""
+msgstr "表示用户应同时按下 kbd:[Ctrl]、kbd:[Alt] 和 kbd:[Del] 键。"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:289
@@ -1201,16 +1265,18 @@ msgstr "按顺序依次键入的按键用逗号隔开，例如："
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:291
+#, fuzzy
 msgid "kbd:[Ctrl+X], kbd:[Ctrl+S]"
-msgstr ""
+msgstr "kbd:[Ctrl+X]，kbd:[Ctrl+S]"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:293
+#, fuzzy
 msgid ""
 "Would mean that the user is expected to type the kbd:[Ctrl] and kbd:[X] keys "
 "simultaneously and then to type the kbd:[Ctrl] and kbd:[S] keys "
 "simultaneously."
-msgstr ""
+msgstr "表示用户应先同时按下 kbd:[Ctrl] 和 kbd:[X] 键，然后再同时按下 kbd:[Ctrl] 和 kbd:[S] 键。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/preface/_index.adoc:295
@@ -1220,31 +1286,33 @@ msgstr "示例"
 
 #. type: preface
 #: documentation/content/en/books/handbook/preface/_index.adoc:299
+#, fuzzy
 msgid ""
 "Examples starting with [.filename]#C:\\># indicate a MS-DOS(R) command.  "
 "Unless otherwise noted, these commands may be executed from a \"Command "
 "Prompt\" window in a modern Microsoft(R) Windows(R) environment."
-msgstr ""
+msgstr "以 [.filename]#C:\\># 开头的示例表示 MS-DOS(R) 命令。除非另有说明，否则这些命令可在现代 Microsoft(R) Windows(R) 环境中的“命令提示符”窗口中执行。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/preface/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "C:\\> tools\\fdimage floppies\\kern.flp A:\n"
-msgstr ""
+msgstr "C:\\> tools\\fdimage floppies\\kern.flp A:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/preface/_index.adoc:307
+#, fuzzy
 msgid ""
 "Examples starting with # indicate a command that must be invoked as the "
 "superuser in FreeBSD.  Login as `root` to type the command, or login as the "
 "normal account and use man:su[1] to gain superuser privileges."
-msgstr ""
+msgstr "以 # 开头的示例表示必须在 FreeBSD 中以超级用户身份执行的命令。登录为 `root` 后输入命令，或以普通帐户登录并使用 man:su[1] 获取超级用户权限。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/preface/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dd if=kern.flp of=/dev/fd0\n"
-msgstr ""
+msgstr "# dd if=kern.flp of=/dev/fd0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/preface/_index.adoc:315
@@ -1259,9 +1327,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/preface/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% top\n"
-msgstr ""
+msgstr "% top\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/preface/_index.adoc:322

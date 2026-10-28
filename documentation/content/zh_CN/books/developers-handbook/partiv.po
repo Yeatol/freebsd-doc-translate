@@ -17,12 +17,12 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/partiv.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part IV. Appendices"
-msgstr ""
+msgstr "第四部分．附录"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/partiv.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appendices"
-msgstr ""
+msgstr "附录"

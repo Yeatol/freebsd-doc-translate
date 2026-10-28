@@ -17,143 +17,155 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Instructions for both writers and editors of status reports"
-msgstr ""
+msgstr "状态报告撰写者和编辑者指南"
 
 #. type: Title =
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:1
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Status Report Process"
-msgstr ""
+msgstr "FreeBSD 状态报告流程"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:20
+#, fuzzy
 msgid "'''"
-msgstr ""
+msgstr "'''"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:25
+#, fuzzy
 msgid ""
 "FreeBSD status reports are published quarterly and provide the general "
 "public with a view of what is going on in the Project, and they are often "
 "augmented by special reports from Developer Summits.  As they are one of our "
 "most visible forms of communication, they are very important."
-msgstr ""
+msgstr "FreeBSD 状态报告每季度发布一次，向公众介绍项目的进展情况，通常还会加入开发者峰会的特别报告。状态报告是我们最重要、最受关注的沟通形式之一，因此十分重要。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:27
+#, fuzzy
 msgid ""
 "Throughout this document and in other places related to FreeBSD status "
 "reports as well, the expression _status report_ is used both to indicate the "
 "document published on a quarterly basis and the single entries that are in "
 "it."
-msgstr ""
+msgstr "在本文档及其他与 FreeBSD 状态报告相关的内容中，__状态报告__一词既指按季度发布的文档，也指其中的单篇报告。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:28
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Instructions for writers"
-msgstr ""
+msgstr "撰写者指南"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:32
+#, fuzzy
 msgid ""
 "This section provides some advice on writing status report entries.  "
 "Instructions on how to submit your entries are also given."
-msgstr ""
+msgstr "本节提供撰写状态报告的建议，并说明如何提交报告。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:35
+#, fuzzy
 msgid ""
 "_Do not worry if you are not a native English speaker.  The mailto:"
 "status@FreeBSD.org[status team] will check your entries for spelling and "
 "grammar, and fix it for you._"
-msgstr ""
+msgstr "__如果英语不是你的母语，请不必担心。mailto:status@FreeBSD.org[状态团队]会检查报告中的拼写和语法，并帮你修改。__"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:36
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduce Your Work"
-msgstr ""
+msgstr "介绍你的工作"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:39
+#, fuzzy
 msgid ""
 "_Do not assume that the person reading the report knows about your project._"
-msgstr ""
+msgstr "__不要假设阅读报告的人了解你的项目。__"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:43
+#, fuzzy
 msgid ""
 "The status reports have a wide distribution.  They are often one of the top "
 "news items on the FreeBSD web site and are one of the first things that "
 "people will read if they want to know a bit about what FreeBSD is.  Consider "
 "this example:"
-msgstr ""
+msgstr "状态报告的传播范围很广，常常是 FreeBSD 网站上的头条新闻之一，也是人们想要了解 FreeBSD 时首先阅读的内容之一。请看下面这个例子："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:46
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "abc(4) support was added, including frobnicator compatibility.\n"
-msgstr ""
+msgstr "添加了 abc(4) 支持，包括与 frobnicator 的兼容性。\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:52
+#, fuzzy
 msgid ""
 "Someone reading this, if they are familiar with UNIX man pages, will know "
 "that `abc(4)` is some kind of device.  But why should the reader care? What "
 "kind of device is it? Compare with this version:"
-msgstr ""
+msgstr "熟悉 UNIX 手册页的读者会知道，`abc(4)` 是某种设备。但读者为什么要关心它？这是什么设备？请看下面这个版本："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "A new driver, abc(4), was added to the tree, bringing support for\n"
 "Yoyodyne's range of Frobnicator network interfaces.\n"
-msgstr ""
+msgstr "向源码树中添加了新驱动程序 abc(4)，支持 Yoyodyne 的 Frobnicator 系列网络接口。\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:60
+#, fuzzy
 msgid ""
 "Now the reader knows that `abc` is a network interface driver.  Even if they "
 "do not use any Yoyodyne products, you have communicated that FreeBSD's "
 "support for network devices is improving."
-msgstr ""
+msgstr "现在读者知道 `abc` 是一个网络接口驱动程序。即使他们没有使用任何 Yoyodyne 产品，你也已经传达了 FreeBSD 对网络设备的支持正在改进。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:61
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Show the Importance of Your Work"
-msgstr ""
+msgstr "说明你的工作有何重要意义"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:64
+#, fuzzy
 msgid ""
 "_Status reports are not just about telling everyone that things were done, "
 "they also need to explain why they were done._"
-msgstr ""
+msgstr "__状态报告不只是告诉大家完成了哪些工作，还需要解释为什么要做这些工作。__"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:72
+#, fuzzy
 msgid ""
 "Carry on with the previous example.  Why is it interesting that we now "
 "support Yoyodyne Frobnicator cards? Are they widespread? Are they used in a "
 "specific popular device? Are they used in a particular niche where FreeBSD "
 "has (or would like to have) a presence? Are they the fastest network cards "
 "on the planet? Status reports often say things like this:"
-msgstr ""
+msgstr "接着前面的例子来说。现在支持 Yoyodyne Frobnicator 网卡，为什么值得一提？这类网卡是否很常见？是否用于某种流行设备？是否应用于 FreeBSD 已经涉足或希望涉足的特定领域？它们是否是全球速度最快的网卡？状态报告中常会出现这样的内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "We imported Cyberdyne Systems T800 into the tree.\n"
-msgstr ""
+msgstr "我们将 Cyberdyne Systems T800 导入了源码树。\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:83
+#, fuzzy
 msgid ""
 "And then they stop.  Maybe the reader is an avid Cyberdyne fan and knows "
 "what exciting new features the T800 brings.  This is unlikely.  It is far "
@@ -161,21 +173,23 @@ msgid ""
 "(especially into the ports tree: remember that there are over 35,000 other "
 "things there too...).  List some of the new features, or bug fixes.  Tell "
 "them why it is a good thing that we have the new version."
-msgstr ""
+msgstr "然后就没下文了。读者或许是 Cyberdyne 的忠实粉丝，知道 T800 带来了哪些令人兴奋的新功能，但这种情况不太可能。更可能的是，他们只是模糊地听说过你导入的东西（尤其是导入 ports 树的内容：别忘了那里还有超过 35,000 个其他软件包……）。请列出一些新功能或错误修复，并告诉读者新版本带来了什么好处。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tell Us Something New"
-msgstr ""
+msgstr "告诉我们新进展"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:87
+#, fuzzy
 msgid "_Do not recycle the same status report items._"
-msgstr ""
+msgstr "__不要重复使用相同的状态报告内容。__"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:93
+#, fuzzy
 msgid ""
 "Bear in mind that status reports are not just reports on the status of the "
 "project, they are reports on the change of status of the project.  If there "
@@ -184,21 +198,23 @@ msgid ""
 "been made since the last report? What is left to do? When is it likely to be "
 "finished (or, if \"finished\" does not really apply, when is it likely to be "
 "ready for wider use, for testing, for deployment in production, and so on)?"
-msgstr ""
+msgstr "请记住，状态报告不只是汇报项目当前的状态，还要说明项目状态发生了哪些变化。如果项目仍在进行中，可以用几句话介绍它，但报告其余部分应着重介绍新的工作。自上次报告以来取得了哪些进展？还有哪些工作待完成？预计何时完成（或者，如果并不适合用“完成”来描述，预计何时可供更多人使用、进行测试、投入生产等）？"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sponsorship"
-msgstr ""
+msgstr "赞助"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:97
+#, fuzzy
 msgid "_Do not forget about your sponsors._"
-msgstr ""
+msgstr "__不要忘记感谢你的赞助者。__"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:101
+#, fuzzy
 msgid ""
 "If you or your project has received sponsorship, a scholarship from somebody "
 "or you have been already working as a contractor or an employee for a "
@@ -206,21 +222,23 @@ msgid ""
 "thank them for their funding, but it is also beneficial for them to show "
 "that they are actively supporting the Project this way.  Last, but not "
 "least, this helps FreeBSD to learn more about its important consumers."
-msgstr ""
+msgstr "如果你或你的项目获得了赞助或奖学金，或者你已经作为承包商或公司员工参与相关工作，请在报告中注明。赞助者当然会感谢你对资助的致谢；这也有助于展示他们正在以这种方式积极支持项目。最后但同样重要的是，这能帮助 FreeBSD 更好地了解其重要的使用者。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Open Items"
-msgstr ""
+msgstr "待完成事项"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:105
+#, fuzzy
 msgid "_If help is needed, make this explicit!_"
-msgstr ""
+msgstr "__如果需要帮助，请明确说明！__"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:111
+#, fuzzy
 msgid ""
 "Is there any help needed with something? Are there tasks other people can "
 "do? There are two ways in which you can use the open items part of the "
@@ -229,147 +247,155 @@ msgid ""
 "is in a state where adding more people would not speed it up, then the "
 "latter is better.  Give some big work items that are in progress, and maybe "
 "indicate who is focussing on each one."
-msgstr ""
+msgstr "是否有需要帮助的工作？是否有其他人可以承担的任务？你可以通过状态报告中的待完成事项部分来征求帮助，或简要介绍剩余工作量。如果项目已有足够的人手，或者增加人手也无法加快进度，那么后一种方式更合适。请列出一些正在进行的重要工作，并可注明每项工作由谁负责。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:113
+#, fuzzy
 msgid ""
 "List tasks, with enough detail that people know if they are likely to be "
 "able to do them, and invite people to get in contact."
-msgstr ""
+msgstr "列出任务并提供足够详细的信息，让读者判断自己是否能够参与，同时邀请他们与你联系。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Submit your report"
-msgstr ""
+msgstr "提交报告"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:117
+#, fuzzy
 msgid "The following methods are available to submit your reports:"
-msgstr ""
+msgstr "你可以通过以下方式提交报告："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:120
+#, fuzzy
 msgid ""
 "submit a link:https://reviews.freebsd.org/[Phabricator review] and add the "
 "group _status_ to the reviewers list.  You should put your reports in the "
 "appropriate subdirectory of `doc/website/content/en/status/` (create it if "
 "it is missing);"
-msgstr ""
+msgstr "提交 link:https://reviews.freebsd.org/[Phabricator 评审]，并将 _status_ 组添加到评审者列表中。请将报告放在 `doc/website/content/en/status/` 下适当的子目录中（如果目录不存在，请创建）；"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:123
+#, fuzzy
 msgid ""
 "submit a pull request to the doc repository through link:https://github.com/"
 "freebsd/freebsd-doc[its GitHub mirror] .  You should put your reports in the "
 "appropriate subdirectory of `doc/website/content/en/status` (create it if it "
 "is missing);"
-msgstr ""
+msgstr "通过 link:https://github.com/freebsd/freebsd-doc[其 GitHub 镜像]向 doc 仓库提交拉取请求。请将报告放在 `doc/website/content/en/status` 下适当的子目录中（如果目录不存在，请创建）；"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:125
+#, fuzzy
 msgid "send an email to status-submissions@FreeBSD.org including your report."
-msgstr ""
+msgstr "发送电子邮件至 status-submissions@FreeBSD.org，并附上你的报告。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:127
+#, fuzzy
 msgid ""
 "An link:https://www.FreeBSD.org/status/report-sample.adoc[AsciiDoc sample "
 "report template] is available."
-msgstr ""
+msgstr "可使用 link:https://www.FreeBSD.org/status/report-sample.adoc[AsciiDoc 报告示例模板]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Instructions for editors"
-msgstr ""
+msgstr "编辑者指南"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:131
+#, fuzzy
 msgid "This section describes how the reviewing and publication process works."
-msgstr ""
+msgstr "本节介绍审核和发布流程。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Status reports main webpage"
-msgstr ""
+msgstr "状态报告主页"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://www.FreeBSD.org/status/[https://www.FreeBSD.org/status/]"
-msgstr ""
+msgstr "link:https://www.FreeBSD.org/status/[https://www.FreeBSD.org/status/]"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Status reports archived GitHub repository (was used for reports from 2017Q4 to 2022Q4):"
-msgstr ""
+msgstr "状态报告的 GitHub 存档仓库（用于 2017 年第四季度至 2022 年第四季度的报告）："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://www.github.com/freebsd/freebsd-quarterly[https://github.com/freebsd/freebsd-quarterly]"
-msgstr ""
+msgstr "link:https://www.github.com/freebsd/freebsd-quarterly[https://github.com/freebsd/freebsd-quarterly]"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Main status team email address"
-msgstr ""
+msgstr "状态团队主要电子邮件地址"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:mailto:status@FreeBSD.org[status@FreeBSD.org]"
-msgstr ""
+msgstr "link:mailto:status@FreeBSD.org[status@FreeBSD.org]"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Email address for reports submission"
-msgstr ""
+msgstr "报告提交电子邮件地址"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:mailto:status-submissions@FreeBSD.org[status-submissions@FreeBSD.org]"
-msgstr ""
+msgstr "link:mailto:status-submissions@FreeBSD.org[status-submissions@FreeBSD.org]"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mailing list for receiving calls for status reports"
-msgstr ""
+msgstr "接收状态报告征集通知的邮件列表"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://lists.freebsd.org/subscription/freebsd-status-calls[freebsd-status-calls@FreeBSD.org]"
-msgstr ""
+msgstr "link:https://lists.freebsd.org/subscription/freebsd-status-calls[freebsd-status-calls@FreeBSD.org]"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Phabricator status team main page"
-msgstr ""
+msgstr "Phabricator 状态团队主页"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://reviews.freebsd.org/project/profile/88/[https://reviews.freebsd.org/project/88/]"
-msgstr ""
+msgstr "link:https://reviews.freebsd.org/project/profile/88/[https://reviews.freebsd.org/project/88/]"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Timeline"
-msgstr ""
+msgstr "时间安排"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:161
+#, fuzzy
 msgid ""
 "Reports are always accepted by the status team, but the main collection "
 "process happens the last month of each quarter, hence in March, June, "
@@ -378,287 +404,304 @@ msgid ""
 "quarter.  Reports for the finished quarter are still accepted within the "
 "first 14 days of the month, but not later.  Status reports publication is "
 "done during the same months as soon as the report are ready."
-msgstr ""
+msgstr "状态团队始终接受报告，但主要征集工作在每个季度的最后一个月进行，即 3 月、6 月、9 月和 12 月。1 月、4 月、7 月和 10 月用于汇总上一季度提交的报告。已结束季度的报告仍可在次月前 14 天内提交，逾期不再接受。报告准备就绪后，会在相同的月份发布。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:163
+#, fuzzy
 msgid "Explicit calls for status reports will be sent with deadline reminders."
-msgstr ""
+msgstr "状态报告征集通知会明确发送，并附上截止日期提醒。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:166
+#, fuzzy
 msgid ""
 "Reviewing of submitted reports by people not part of the status team should "
 "be essentially complete by mid-January/April/July/October (third-party "
 "review slush).  That is, barring typos or other light copyediting, the "
 "status team should be able to assemble the submissions starting on the 15th."
-msgstr ""
+msgstr "非状态团队成员对已提交报告的审核原则上应在 1 月、4 月、7 月或 10 月中旬前完成（第三方审核宽限期）。也就是说，除拼写错误或其他轻微文字编辑外，状态团队应能从 15 日起着手汇总提交内容。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "First quarter"
-msgstr ""
+msgstr "第一季度"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Second quarter"
-msgstr ""
+msgstr "第二季度"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Third quarter"
-msgstr ""
+msgstr "第三季度"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Fourth quarter"
-msgstr ""
+msgstr "第四季度"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "First call for reports"
-msgstr ""
+msgstr "首次征集报告"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "March 1st"
-msgstr ""
+msgstr "3 月 1 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "June 1st"
-msgstr ""
+msgstr "6 月 1 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "September 1st"
-msgstr ""
+msgstr "9 月 1 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "December 1st"
-msgstr ""
+msgstr "12 月 1 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1 month left reminder"
-msgstr ""
+msgstr "剩余 1 个月提醒"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "March 15th"
-msgstr ""
+msgstr "3 月 15 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "June 15th"
-msgstr ""
+msgstr "6 月 15 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "September 15th"
-msgstr ""
+msgstr "9 月 15 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "December 15th"
-msgstr ""
+msgstr "12 月 15 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "2 weeks left reminder"
-msgstr ""
+msgstr "剩余 2 周提醒"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "March 31st"
-msgstr ""
+msgstr "3 月 31 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "June 30th"
-msgstr ""
+msgstr "6 月 30 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "September 30th"
-msgstr ""
+msgstr "9 月 30 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "December 31st"
-msgstr ""
+msgstr "12 月 31 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Submissions deadline and third-party review slush"
-msgstr ""
+msgstr "提交截止日期及第三方审核宽限期"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "April 14th"
-msgstr ""
+msgstr "4 月 14 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 14th"
-msgstr ""
+msgstr "7 月 14 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "October 14th"
-msgstr ""
+msgstr "10 月 14 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "January 14th"
-msgstr ""
+msgstr "1 月 14 日"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Call for reports"
-msgstr ""
+msgstr "征集报告"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:199
+#, fuzzy
 msgid "Calls for status reports are sent to the following recipients:"
-msgstr ""
+msgstr "状态报告征集通知会发送给以下收件人："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:201
+#, fuzzy
 msgid ""
 "the link:https://lists.freebsd.org/subscription/freebsd-status-calls[freebsd-"
 "status-calls@FreeBSD.org mailing list];"
-msgstr ""
+msgstr "link:https://lists.freebsd.org/subscription/freebsd-status-calls[freebsd-status-calls@FreeBSD.org 邮件列表]；"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:202
+#, fuzzy
 msgid ""
 "to all submitters of last status reports (they may have updates or further "
 "improvements);"
-msgstr ""
+msgstr "上一期状态报告的所有提交者（他们可能有更新或进一步改进）；"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:203
+#, fuzzy
 msgid "and, depending on the season,"
-msgstr ""
+msgstr "以及根据季节安排，"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:204
+#, fuzzy
 msgid "Various conference organizers:"
-msgstr ""
+msgstr "各会议的组织者："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:205
+#, fuzzy
 msgid ""
 "link:mailto:secretary@asiabsdcon.org[AsiaBSDCon] in March (First Quarter);"
-msgstr ""
+msgstr "3 月（第一季度）的 link:mailto:secretary@asiabsdcon.org[AsiaBSDCon]；"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:206
+#, fuzzy
 msgid "link:mailto:info@bsdcan.org[BSDCan] in May (Second Quarter);"
-msgstr ""
+msgstr "5 月（第二季度）的 link:mailto:info@bsdcan.org[BSDCan]；"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:207
+#, fuzzy
 msgid "Various conference attendees:"
-msgstr ""
+msgstr "各会议的参会者："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:210
+#, fuzzy
 msgid ""
 "EuroBSDcon in September - October (Third-Fourth Quarter); EuroBSDcon as an "
 "organization is not interested in writing reports for FreeBSD - at least it "
 "was not in October 2019: its reason is that the conference is not FreeBSD "
 "specific.  Hence, reports about this event should be asked of members of the "
 "FreeBSD community that attended it."
-msgstr ""
+msgstr "9 月至 10 月（第三至第四季度）的 EuroBSDcon。EuroBSDcon 作为一个组织并不愿意为 FreeBSD 撰写报告——至少在 2019 年 10 月时是如此：其理由是该会议并非专门针对 FreeBSD。因此，应向参加该活动的 FreeBSD 社区成员征集相关报告。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:211
+#, fuzzy
 msgid ""
 "Google Summer of Code link:mailto:soc-students@FreeBSD.org[students] and "
 "their link:mailto:soc-mentors@FreeBSD.org[mentors]."
-msgstr ""
+msgstr "Google Summer of Code 的 link:mailto:soc-students@FreeBSD.org[学生]及其 link:mailto:soc-mentors@FreeBSD.org[导师]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:215
+#, fuzzy
 msgid ""
 "The easiest way to send calls for status reports is to use the link:https://"
 "cgit.freebsd.org/doc/tree/tools/sendcalls/sendcalls[[.filename]#sendcalls# "
 "perl script] in the [.filename]#tools/sendcalls# directory of the doc git "
 "repository.  The script automatically sends calls to all intended "
 "recipients.  It can also be used through cron jobs, for example:"
-msgstr ""
+msgstr "发送状态报告征集通知最简单的方式，是使用 doc Git 仓库 `tools/sendcalls` 目录中的 link:https://cgit.freebsd.org/doc/tree/tools/sendcalls/sendcalls[[.filename]#sendcalls# Perl 脚本]。该脚本会自动向所有预期收件人发送通知，也可以通过 cron 作业运行，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "0      0       1,15,31 3,12        *       cd ~/doc/tools/sendcalls && git pull && ./sendcalls -s 'Lorenzo Salvadore'\n"
 "0      0       1,15,30 6,9        *       cd ~/doc/tools/sendcalls && git pull && ./sendcalls -s 'Lorenzo Salvadore'\n"
-msgstr ""
+msgstr "0      0       1,15,31 3,12        *       cd ~/doc/tools/sendcalls && git pull && ./sendcalls -s 'Lorenzo Salvadore'\n0      0       1,15,30 6,9        *       cd ~/doc/tools/sendcalls && git pull && ./sendcalls -s 'Lorenzo Salvadore'\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:225
+#, fuzzy
 msgid ""
 "If you are in charge of sending calls for status reports and you are indeed "
 "using a cron job, please run it on freefall and sign it with your name so "
 "that it is possible to infer who has configured the cron job, in case "
 "something goes wrong.  Also please update the example above with your name, "
 "as an additional safety measure."
-msgstr ""
+msgstr "如果你负责发送状态报告征集通知，并且确实使用 cron 作业，请在 freefall 上运行该作业并署上你的名字，以便在出现问题时能够查明是谁配置了该 cron 作业。另外，也请将上面的示例更新为你的名字，作为额外的安全措施。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:228
+#, fuzzy
 msgid ""
 "It may also be worth making a call for reports on the forums as link:https://"
 "forums.freebsd.org/threads/call-for-freebsd-2014q4-october-december-status-"
 "reports.49812/[was done in the past]."
-msgstr ""
+msgstr "也可以考虑在论坛上征集报告，就像过去曾经这样做过：link:https://forums.freebsd.org/threads/call-for-freebsd-2014q4-october-december-status-reports.49812/[征集报告]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building the report"
-msgstr ""
+msgstr "构建报告"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:233
+#, fuzzy
 msgid ""
 "Submitted reports are reviewed and merged in the proper subdirectory of [."
 "filename]#doc/website/content/en/status/# as they come in.  While the "
 "reports are being updated, people outside the status team may also review "
 "the individual entries and propose fixes."
-msgstr ""
+msgstr "收到的报告会陆续审核，并合并到 [.filename]#doc/website/content/en/status/# 下相应的子目录中。更新报告期间，状态团队以外的人员也可以审核各个条目并提出修改建议。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:236
+#, fuzzy
 msgid ""
 "Usually the last step in the content review process is writing the "
 "introduction in a file named [.filename]#intro.adoc#: a good introduction "
@@ -666,122 +709,135 @@ msgid ""
 "it is a good idea to ask different people to write the introduction to add "
 "variety: different people will bring different viewpoints and help keep it "
 "fresh."
-msgstr ""
+msgstr "内容审核流程的最后一步通常是编写引言，并将其放在名为 [.filename]#intro.adoc# 的文件中：只有收集完所有报告后，才能写出合适的引言。如果可能，最好请不同的人撰写引言，以增加多样性：不同的人会带来不同的观点，让内容保持新鲜。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:238
+#, fuzzy
 msgid ""
 "Once all the reports and the introduction are ready, the [.filename]#_index."
 "adoc# file needs to be created: this is the file in which the reports are "
 "distributed into the various categories and sorted."
-msgstr ""
+msgstr "所有报告和引言准备就绪后，需要创建 [.filename]#_index.adoc# 文件：在这个文件中，报告会被分配到不同类别并排序。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Publishing the report"
-msgstr ""
+msgstr "发布报告"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:242
+#, fuzzy
 msgid ""
 "When all the files of the status report are ready, it is time to publish it."
-msgstr ""
+msgstr "状态报告的所有文件准备就绪后，就可以发布了。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:245
+#, fuzzy
 msgid ""
 "First [.filename]#doc/website/content/en/status/_index.adoc# is edited: the "
 "next due date is updated and a link to the new report is added.  The change "
 "is then pushed on the repository and the status team checks that everything "
 "works as expected."
-msgstr ""
+msgstr "首先编辑 [.filename]#doc/website/content/en/status/_index.adoc#：更新下一个截止日期，并添加指向新报告的链接。随后将更改推送到仓库，状态团队会检查一切是否正常。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:247
+#, fuzzy
 msgid ""
 "Then the news entry for the main website page is added to [.filename]#doc/"
 "website/data/en/news/news.toml#."
-msgstr ""
+msgstr "然后，将主网站页面的新闻条目添加到 [.filename]#doc/website/data/en/news/news.toml#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:249
+#, fuzzy
 msgid "Here is a sample for the news entry:"
-msgstr ""
+msgstr "以下是新闻条目的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[[news]]\n"
 "date = \"2021-01-16\"\n"
 "title = \"October-December 2020 Status Report\"\n"
 "description = \"The <a href=\\\"https://www.FreeBSD.org/status/report-2020-10-2020-12.html\\\">October to December 2020 Status Report</a> is now available with 42 entries.\"\n"
-msgstr ""
+msgstr "[[news]]\ndate = \"2021-01-16\"\ntitle = \"October-December 2020 Status Report\"\ndescription = \"The <a href=\\\"https://www.FreeBSD.org/status/report-2020-10-2020-12.html\\\">October to December 2020 Status Report</a> is now available with 42 entries.\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:257
+#, fuzzy
 msgid ""
 "Once the HTML version of the report has been built and is online, man:w3m[1] "
 "is used to dump the website as plain-text, e.g:"
-msgstr ""
+msgstr "报告的 HTML 版本构建完成并上线后，使用 man:w3m[1] 将网站导出为纯文本，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% w3m -cols 80 -dump https://www.FreeBSD.org/status/report-2021-01-2021-03/ > /tmp/report-2021-01-2021-03.txt\n"
-msgstr ""
+msgstr "% w3m -cols 80 -dump https://www.FreeBSD.org/status/report-2021-01-2021-03/ > /tmp/report-2021-01-2021-03.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:262
+#, fuzzy
 msgid ""
 "man:w3m[1] has full proper unicode support. `-dump` simply outputs text "
 "rendering of the HTML code that can then have a few elements snipped, while "
 "`-cols` ensures that everything is wrapped to 80 columns."
-msgstr ""
+msgstr "man:w3m[1] 完全支持 Unicode。`-dump` 只会输出 HTML 代码的文本呈现结果，之后可以删去其中的少量内容；`-cols` 则确保所有内容按 80 列换行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:264
+#, fuzzy
 msgid ""
 "A link to the rendered report is added between the introduction and the "
 "first entry."
-msgstr ""
+msgstr "在引言和第一个条目之间添加指向渲染后报告的链接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:266
+#, fuzzy
 msgid ""
 "The report is finally ready to be sent, toggling disposition (the report "
 "should be inlined), and ensuring it is encoded as UTF-8."
-msgstr ""
+msgstr "最后，报告就可以发送了；请将邮件格式设置为内嵌，并确保编码为 UTF-8。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:268
+#, fuzzy
 msgid ""
 "Two emails are sent, both with subject in the format `FreeBSD Status Report "
 "- <First/Second/Third/Fourth> Quarter <year>`:"
-msgstr ""
+msgstr "需要发送两封邮件，主题格式均为 `FreeBSD Status Report - <First/Second/Third/Fourth> Quarter <year>`："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:270
+#, fuzzy
 msgid ""
 "one to link:https://lists.freebsd.org/subscription/freebsd-announce[freebsd-"
 "announce@FreeBSD.org];"
-msgstr ""
+msgstr "一封发送至 link:https://lists.freebsd.org/subscription/freebsd-announce[freebsd-announce@FreeBSD.org]；"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:274
+#, fuzzy
 msgid ""
 "This one must be approved, so if you are in charge of sending this email, "
 "ensure that someone does it (mail link:mailto:postmaster@FreeBSD."
 "org[postmaster] if it is taking long)."
-msgstr ""
+msgstr "这封邮件必须经过批准，因此如果你负责发送，请确保有人完成审批（如果等待时间过长，请发邮件至 link:mailto:postmaster@FreeBSD.org[postmaster]）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-status-report-process/_index.adoc:276
+#, fuzzy
 msgid ""
 "one to link:https://lists.freebsd.org/subscription/freebsd-hackers[freebsd-"
 "hackers@FreeBSD.org], which also has link:https://lists.freebsd.org/"
 "subscription/freebsd-current[freebsd-current@FreeBSD.org] and link:https://"
 "lists.freebsd.org/subscription/freebsd-stable[freebsd-stable@FreeBSD.org] in "
 "CC and `developers@FreeBSD.org` in BCC."
-msgstr ""
+msgstr "一封发送至 link:https://lists.freebsd.org/subscription/freebsd-hackers[freebsd-hackers@FreeBSD.org]，并将 link:https://lists.freebsd.org/subscription/freebsd-current[freebsd-current@FreeBSD.org] 和 link:https://lists.freebsd.org/subscription/freebsd-stable[freebsd-stable@FreeBSD.org] 抄送（CC），将 `developers@FreeBSD.org` 密送（BCC）。"

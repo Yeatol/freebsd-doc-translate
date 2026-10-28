@@ -20,24 +20,25 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A brief introduction to Asciidoctor"
-msgstr ""
+msgstr "Asciidoctor 简介"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 6. Asciidoctor Primer"
-msgstr ""
+msgstr "第 6 章：Asciidoctor 入门"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Asciidoctor Primer"
-msgstr ""
+msgstr "Asciidoctor 入门"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:54
+#, fuzzy
 msgid ""
 "Most FDP documentation is written with AsciiDoc.  This chapter explains what "
 "that means, how to read and understand the documentation source, and the "
@@ -46,7 +47,7 @@ msgid ""
 "[Asciidoctor documentation].  Some of the examples used in this chapter have "
 "been taken from the link:https://docs.asciidoctor.org/asciidoc/latest/syntax-"
 "quick-reference[AsciiDoc Syntax Quick Reference]."
-msgstr ""
+msgstr "FDP 文档大多使用 AsciiDoc 编写。本章将介绍这意味着什么、如何阅读和理解文档源文件，以及其中使用的技巧。有关 Asciidoctor 功能的完整参考，请参阅 link:https://docs.asciidoctor.org/home/[Asciidoctor 文档]。本章中的部分示例取自 link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference[AsciiDoc 语法快速参考]。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:56
@@ -56,15 +57,17 @@ msgstr "总览"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:62
+#, fuzzy
 msgid ""
 "In the original days of computers, electronic text was simple.  There were a "
 "few character sets like ASCII or EBCDIC, but that was about it.  Text was "
 "text, and what you saw really was what you got.  No frills, no formatting, "
 "no intelligence."
-msgstr ""
+msgstr "在计算机发展的早期，电子文本很简单。当时只有几种字符集，例如 ASCII 或 EBCDIC，仅此而已。文本就是文本，所见即所得。没有修饰，没有格式，也没有智能功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:67
+#, fuzzy
 msgid ""
 "Inevitably, this was not enough.  When text is in a machine-usable format, "
 "machines are expected to be able to use and manipulate it intelligently.  "
@@ -72,625 +75,687 @@ msgid ""
 "to a glossary, or made into hyperlinks.  Filenames could be shown in a "
 "“typewriter” style font for viewing on screen, but as “italics” when "
 "printed, or any of a myriad of other options for presentation."
-msgstr ""
+msgstr "这种状况终究无法满足需求。文本采用机器可用的格式后，人们自然希望机器能够智能地使用和处理文本。作者希望标明某些短语应当强调、加入术语表或设置为超链接。文件名可以在屏幕上以“打字机”样式的字体显示，打印时则以“斜体”显示；此外，显示方式还有无数种选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:71
+#, fuzzy
 msgid ""
 "It was once hoped that Artificial Intelligence (AI) would make this easy.  "
 "The computer would read the document and automatically identify key phrases, "
 "filenames, text that the reader should type in, examples, and more.  "
 "Unfortunately, real life has not happened quite like that, and computers "
 "still require assistance before they can meaningfully process text."
-msgstr ""
+msgstr "人们曾希望人工智能（AI）能让这一切变得简单。计算机可以阅读文档，并自动识别关键词、文件名、读者需要输入的文本、示例等内容。遗憾的是，现实并非如此，计算机仍然需要帮助才能有意义地处理文本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:74
+#, fuzzy
 msgid ""
 "More precisely, they need help identifying what is what.  Consider this text:"
-msgstr ""
+msgstr "更准确地说，它们需要帮助来识别各部分的含义。请看这段文本："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:76
+#, fuzzy
 msgid "To remove [.filename]#/tmp/foo#, use man:rm[1]."
-msgstr ""
+msgstr "要删除 [.filename]#/tmp/foo#，请使用 man:rm[1]。"
 
 #. type: delimited block - 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% rm /tmp/foo\n"
-msgstr ""
+msgstr "% rm /tmp/foo\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:85
+#, fuzzy
 msgid ""
 "It is easy for the reader to see which parts are filenames, which are "
 "commands to be typed in, which parts are references to manual pages, and so "
 "on.  But the computer processing the document cannot reliably determine "
 "this.  For this we need markup."
-msgstr ""
+msgstr "读者很容易分辨哪些部分是文件名、哪些是需要输入的命令、哪些是手册页引用，等等。但处理文档的计算机无法可靠地判断这些内容。为此，我们需要标记语言。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:87
+#, fuzzy
 msgid ""
 "The previous example is actually represented in this document like this:"
-msgstr ""
+msgstr "前面的示例在本文档中实际表示如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "To remove */tmp/foo*, use man:rm[1].\n"
-msgstr ""
+msgstr "要删除 */tmp/foo*，请使用 man:rm[1]。\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[source,shell]\n"
 "----\n"
 "% rm /tmp/foo\n"
 "----\n"
-msgstr ""
+msgstr "[source,shell]\n----\n% rm /tmp/foo\n----\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Headings"
-msgstr ""
+msgstr "标题"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:103
+#, fuzzy
 msgid ""
 "Asciidoctor supports six headings levels.  If the document type is `article` "
 "only one level 0 (`=`) can be used.  If the document type is `book` then "
 "there can be multiple level 0 (`=`) headings."
-msgstr ""
+msgstr "Asciidoctor 支持六个标题级别。如果文档类型为 `article`，只能使用一个 0 级标题（`=`）。如果文档类型为 `book`，则可以有多个 0 级标题（`=`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:105
+#, fuzzy
 msgid "This is an example of headings in an `article`."
-msgstr ""
+msgstr "以下是 `article` 中标题的示例。"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Document Title (Level 0)"
-msgstr ""
+msgstr "文档标题（0 级）"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Level 1 Section Title"
-msgstr ""
+msgstr "1 级章节标题"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Level 2 Section Title"
-msgstr ""
+msgstr "2 级章节标题"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Level 3 Section Title"
-msgstr ""
+msgstr "3 级章节标题"
 
 #. type: Title =====
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Level 4 Section Title"
-msgstr ""
+msgstr "4 级章节标题"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:118
+#, fuzzy
 msgid "====== Level 5 Section Title"
-msgstr ""
+msgstr "====== 5 级章节标题"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Another Level 1 Section Title"
-msgstr ""
+msgstr "另一个 1 级章节标题"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:125
+#, fuzzy
 msgid "Section levels cannot be skipped when nesting sections."
-msgstr ""
+msgstr "嵌套章节时不能跳过章节级别。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:127
+#, fuzzy
 msgid "The following syntax is not correct."
-msgstr ""
+msgstr "以下语法不正确。"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Document Title"
-msgstr ""
+msgstr "文档标题"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Level 1"
-msgstr ""
+msgstr "1 级"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Level 3"
-msgstr ""
+msgstr "3 级"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Paragraphs"
-msgstr ""
+msgstr "段落"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:143
+#, fuzzy
 msgid ""
 "Paragraphs don't require special markup in AsciiDoc.  A paragraph is defined "
 "by one or more consecutive lines of text.  To create a new paragraph leave "
 "one blank line."
-msgstr ""
+msgstr "在 AsciiDoc 中，段落不需要特殊标记。段落由一行或多行连续文本组成。要创建新段落，请留出一个空行。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:145
+#, fuzzy
 msgid "For example, this is a heading with two paragraphs."
-msgstr ""
+msgstr "例如，以下是一个包含两个段落的标题。"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This is the heading"
-msgstr ""
+msgstr "这是标题"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:151
+#, fuzzy
 msgid "This is the first paragraph.  This is also the first paragraph."
-msgstr ""
+msgstr "这是第一段。这也是第一段。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:153
+#, fuzzy
 msgid "And this is the second paragraph."
-msgstr ""
+msgstr "这是第二段。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lists"
-msgstr ""
+msgstr "列表"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:160
+#, fuzzy
 msgid ""
 "Asciidoctor supports a few types of lists, the most common are `ordered` and "
 "`unordered`.  To get more information about lists, see link:https://docs."
 "asciidoctor.org/asciidoc/latest/syntax-quick-reference/#lists[AsciiDoc "
 "Syntax Quick Reference]."
-msgstr ""
+msgstr "Asciidoctor 支持几种列表，最常见的是 `ordered`（有序列表）和 `unordered`（无序列表）。有关列表的更多信息，请参阅 link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#lists[AsciiDoc 语法快速参考]。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ordered lists"
-msgstr ""
+msgstr "有序列表"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:165
+#, fuzzy
 msgid "To create an ordered list use the `.` character."
-msgstr ""
+msgstr "使用 `.` 字符创建有序列表。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:167
+#, fuzzy
 msgid "For example, this is an ordered list."
-msgstr ""
+msgstr "例如，以下是一个有序列表。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ". First item\n"
 ". Second item\n"
 ".. Subsecond item\n"
 ". Third item\n"
-msgstr ""
+msgstr ". First item\n. Second item\n.. Subsecond item\n. Third item\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:176
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:197
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:240
+#, fuzzy
 msgid "And this would be rendered as."
-msgstr ""
+msgstr "它的呈现效果如下。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:178
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:199
+#, fuzzy
 msgid "First item"
-msgstr ""
+msgstr "第一项"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:179
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:200
+#, fuzzy
 msgid "Second item"
-msgstr ""
+msgstr "第二项"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:180
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:201
+#, fuzzy
 msgid "Subsecond item"
-msgstr ""
+msgstr "第二项的子项"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:181
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:202
+#, fuzzy
 msgid "Third item"
-msgstr ""
+msgstr "第三项"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Unordered lists"
-msgstr ""
+msgstr "无序列表"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:186
+#, fuzzy
 msgid "To create an unordered list use the `*` character."
-msgstr ""
+msgstr "使用 `*` 字符创建无序列表。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:188
+#, fuzzy
 msgid "For example, this is an unordered list."
-msgstr ""
+msgstr "例如，以下是一个无序列表。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "* First item\n"
 "* Second item\n"
 "** Subsecond item\n"
 "* Third item\n"
-msgstr ""
+msgstr "* First item\n* Second item\n** Subsecond item\n* Third item\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Links"
-msgstr ""
+msgstr "链接"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "External links"
-msgstr ""
+msgstr "外部链接"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:210
+#, fuzzy
 msgid "To point to another website the `link` macro should be used."
-msgstr ""
+msgstr "要链接到其他网站，应使用 `link` 宏。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://www.FreeBSD.org[FreeBSD]\n"
-msgstr ""
+msgstr "link:https://www.FreeBSD.org[FreeBSD]\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:219
+#, fuzzy
 msgid ""
 "As the Asciidoctor documentation describes, the `link` macro is not required "
 "when the target starts with a URL scheme like `https`.  However, it is a "
 "good practice to do this anyway to ensure that Asciidoctor renders the link "
 "correctly, especially in non-latin languages like Japanese."
-msgstr ""
+msgstr "正如 Asciidoctor 文档所述，当目标以 `https` 等 URL 方案开头时，不必使用 `link` 宏。不过，仍建议使用该宏，以确保 Asciidoctor 能正确呈现链接，尤其是在日语等非拉丁语系的语言中。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Links to another book or article"
-msgstr ""
+msgstr "链接到其他书籍或文章"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:226
+#, fuzzy
 msgid ""
 "To point to another book or article the Asciidoctor variables should be "
 "used.  For example, if we are in the `cups` article and we want to point to "
 "`ipsec-must` these steps should be used."
-msgstr ""
+msgstr "要链接到其他书籍或文章，应使用 Asciidoctor 变量。例如，如果我们位于 `cups` 文章中，并希望链接到 `ipsec-must`，则应执行以下步骤。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:228
+#, fuzzy
 msgid ""
 "Include the [.filename]#urls.adoc# file from [.filename]#~/doc/shared# "
 "folder."
-msgstr ""
+msgstr "从 [.filename]#~/doc/shared# 目录中包含 [.filename]#urls.adoc# 文件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\\include::shared/{lang}/urls.adoc[]\n"
-msgstr ""
+msgstr "\\include::shared/{lang}/urls.adoc[]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:234
+#, fuzzy
 msgid ""
 "Then create a link using the Asciidoctor variable to the `ipsec-must` "
 "article."
-msgstr ""
+msgstr "然后使用 Asciidoctor 变量创建指向 `ipsec-must` 文章的链接。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "extref:{ipsec-must}[IPSec-Must article]\n"
-msgstr ""
+msgstr "extref:{ipsec-must}[IPSec-Must article]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:242
+#, fuzzy
 msgid "extref:{ipsec-must}[IPSec-Must article]"
-msgstr ""
+msgstr "extref:{ipsec-must}[IPSec-Must article]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:247
+#, fuzzy
 msgid ""
 "The `extref` macro is defined as an extension.  It is designed to render the "
 "correct link across the different outputs"
-msgstr ""
+msgstr "`extref` 宏定义为一个扩展，用于在不同输出格式中呈现正确的链接"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Links to the same file or to another file in the same book"
-msgstr ""
+msgstr "链接到同一文件或同一本书中的其他文件"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:254
+#, fuzzy
 msgid ""
 "Books are structured in different directories to keep a sane layout.  To "
 "create a link from one subdirectory of a book to another subdirectory of the "
 "same book, use the `crossref` macro:"
-msgstr ""
+msgstr "书籍按不同目录组织，以保持合理的结构。要从一本书的某个子目录链接到同一本书的另一个子目录，请使用 `crossref` 宏："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:doc-build[documentation-makefile, This link]\n"
-msgstr ""
+msgstr "crossref:doc-build[documentation-makefile, This link]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:258
+#, fuzzy
 msgid "And this would be rendered as"
-msgstr ""
+msgstr "它的呈现效果如下"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:260
+#, fuzzy
 msgid "crossref:doc-build[documentation-makefile, This link]"
-msgstr ""
+msgstr "crossref:doc-build[documentation-makefile, This link]"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:265
+#, fuzzy
 msgid ""
 "The `crossref` macro is defined as an extension.  It is designed to render "
 "the correct link across the different outputs"
-msgstr ""
+msgstr "`crossref` 宏定义为一个扩展，用于在不同输出格式中呈现正确的链接"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:272
+#, fuzzy
 msgid ""
 "Use the `crossref` macro for intra-document links too.  Although it might be "
 "inconvenient to write the name of the current document, it ensures the "
 "correct link is rendered across the different outputs"
-msgstr ""
+msgstr "文档内部的链接也应使用 `crossref` 宏。虽然写出当前文档的名称可能不太方便，但这样可以确保在不同输出格式中呈现正确的链接"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:278
+#, fuzzy
 msgid ""
 "Do not use either the `xref` macro or its shortcut `<<` `>>`.  They do not "
 "work well in all output formats."
-msgstr ""
+msgstr "不要使用 `xref` 宏或其快捷写法 `<<` `>>`。它们在某些输出格式中无法正常工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:284
+#, fuzzy
 msgid ""
 "When the second parameter of the `crossref` macro contains a comma, it must "
 "be enclosed in double quotes.  Otherwise, the comma is interpreted as a "
 "parameter separator, and the text after the comma is stripped."
-msgstr ""
+msgstr "如果 `crossref` 宏的第二个参数中包含逗号，必须用双引号括起来。否则，逗号会被解释为参数分隔符，逗号之后的文本将被截断。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:286
+#, fuzzy
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:plist[documentation-comma, \"First, second\"]\n"
-msgstr ""
+msgstr "crossref:plist[documentation-comma, \"First, second\"]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:290
+#, fuzzy
 msgid ""
 "Without quotes, only `First` would be used as the link text, and the rest "
 "would be lost."
-msgstr ""
+msgstr "如果不加引号，链接文本将只使用 `First`，其余部分会丢失。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Images and Icons"
-msgstr ""
+msgstr "图像和图标"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:297
+#, fuzzy
 msgid ""
 "Images and icons play a crucial role in enhancing the overall user "
 "experience.  These visual elements are strategically integrated to convey "
 "information, clarify concepts, and provide a visually engaging interface."
-msgstr ""
+msgstr "图像和图标对于提升整体用户体验至关重要。这些视觉元素经过精心安排，可用于传达信息、阐释概念，并提供引人注目的视觉界面。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Images"
-msgstr ""
+msgstr "图像"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:302
+#, fuzzy
 msgid ""
 "Images help illustrate complex concepts, making them more accessible to "
 "users."
-msgstr ""
+msgstr "图像有助于阐释复杂概念，让用户更容易理解。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:304
+#, fuzzy
 msgid ""
 "The first step will be to add the image in the images directory in the path:"
-msgstr ""
+msgstr "首先，将图像添加到以下路径的 images 目录中："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:306
+#, fuzzy
 msgid "[.filename]#~/website/static/images/# for the website."
-msgstr ""
+msgstr "[.filename]#~/website/static/images/#（网站）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:307
+#, fuzzy
 msgid "[.filename]#~/documentation/static/images/# for the documentation."
-msgstr ""
+msgstr "[.filename]#~/documentation/static/images/#（文档）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:309
+#, fuzzy
 msgid ""
 "For example, to add a new image to the FreeBSD installation process, the "
 "image will be saved to the path [.filename]#~/documentation/static/images/"
 "books/handbook/bsdinstall/new-image3.png#."
-msgstr ""
+msgstr "例如，要为 FreeBSD 安装过程添加新图像，应将图像保存到路径 [.filename]#~/documentation/static/images/books/handbook/bsdinstall/new-image3.png#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:311
+#, fuzzy
 msgid ""
 "The next step will be to configure the Asciidoctor attributes `images-path` "
 "and `imagesdir`."
-msgstr ""
+msgstr "接下来，配置 Asciidoctor 属性 `images-path` 和 `imagesdir`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:313
+#, fuzzy
 msgid ""
 "We are going to use as an example the header of the extref:{freebsd-releng}"
 "[FreeBSD Release Engineering] article."
-msgstr ""
+msgstr "我们将以 extref:{freebsd-releng}[FreeBSD Release Engineering] 文章的标题部分为例。"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Release Engineering"
-msgstr ""
+msgstr "FreeBSD 发布工程"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:318
+#, fuzzy
 msgid ":doctype: article"
-msgstr ""
+msgstr ":doctype: article"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:320
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:324
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:328
+#, fuzzy
 msgid "[...]"
-msgstr ""
+msgstr "[...]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:322
+#, fuzzy
 msgid ":images-path: articles/freebsd-releng/ <1>"
-msgstr ""
+msgstr ":images-path: articles/freebsd-releng/ <1>"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:326
+#, fuzzy
 msgid ":imagesdir: ../../../images/{images-path} <2>"
-msgstr ""
+msgstr ":imagesdir: ../../../images/{images-path} <2>"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:332
+#, fuzzy
 msgid "Makes reference to the path inside [.filename]#/static/images# folder."
-msgstr ""
+msgstr "引用 [.filename]#/static/images# 目录中的路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:333
+#, fuzzy
 msgid "Makes reference to the Asciidoctor attribute."
-msgstr ""
+msgstr "引用 Asciidoctor 属性。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:335
+#, fuzzy
 msgid ""
 "Once the image is in the correct path and the Asciidoctor attributes have "
 "been configured in the document, the `image` macro can be used."
-msgstr ""
+msgstr "将图像放在正确路径中，并在文档中配置好 Asciidoctor 属性后，就可以使用 `image` 宏。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:337
+#, fuzzy
 msgid "This is an example:"
-msgstr ""
+msgstr "示例如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "image::new-image3.png[New step in the FreeBSD install process]\n"
-msgstr ""
+msgstr "image::new-image3.png[New step in the FreeBSD install process]\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:345
+#, fuzzy
 msgid ""
 "To improve accessibility, it is mandatory to add descriptive text to each "
 "image."
-msgstr ""
+msgstr "为提升可访问性，每张图像都必须添加描述性文本。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Icons"
-msgstr ""
+msgstr "图标"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:351
+#, fuzzy
 msgid "Icons serve as intuitive symbols for quick recognition and navigation."
-msgstr ""
+msgstr "图标是直观的符号，便于快速识别和导航。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:353
+#, fuzzy
 msgid ""
 "The first step to use icons is to add the `icons` property to the "
 "Asciidoctor properties section, at the top of each document."
-msgstr ""
+msgstr "使用图标的第一步是在每个文档顶部的 Asciidoctor 属性部分添加 `icons` 属性。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ":icons: font\n"
-msgstr ""
+msgstr ":icons: font\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:359
+#, fuzzy
 msgid ""
 "Once the Asciidoctor icon property has been set an icon supported by link:"
 "https://fontawesome.com/v4/icons/[Font Awesome] can be added."
-msgstr ""
+msgstr "设置 Asciidoctor 图标属性后，可以添加 link:https://fontawesome.com/v4/icons/[Font Awesome] 支持的图标。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:361
+#, fuzzy
 msgid "This is an example about how to use the `envelope` icon:"
-msgstr ""
+msgstr "以下是如何使用 `envelope` 图标的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "icon:envelope[link=mailto:test@example.com, title=\"contact\"]\n"
-msgstr ""
+msgstr "icon:envelope[link=mailto:test@example.com, title=\"contact\"]\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:369
+#, fuzzy
 msgid ""
 "To improve the accessibility of the website, the `title` attribute is "
 "mandatory."
-msgstr ""
+msgstr "为了提高网站的可访问性，必须使用 `title` 属性。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:372
@@ -700,7 +765,8 @@ msgstr "结论"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:375
+#, fuzzy
 msgid ""
 "This is the conclusion of this Asciidoctor primer.  For reasons of space and "
 "complexity, several things have not been covered in depth (or at all)."
-msgstr ""
+msgstr "至此，Asciidoctor 入门指南就结束了。  受篇幅和复杂性所限，有几项内容未作深入介绍（或完全没有涉及）。"

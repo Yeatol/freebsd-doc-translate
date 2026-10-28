@@ -17,41 +17,43 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/preface/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preface on assistive technologies available on FreeBSD"
-msgstr ""
+msgstr "FreeBSD 上提供的辅助技术简介"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/preface/_index.adoc:1
 #: documentation/content/en/books/accessibility/preface/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preface"
-msgstr ""
+msgstr "前言"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/preface/_index.adoc:49
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Intended Audience"
-msgstr ""
+msgstr "目标读者"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:54
+#, fuzzy
 msgid ""
 "This handbook is intended for anyone interested in the assistive "
 "technologies available in the FreeBSD operating system.  Users and "
 "administrators can learn how to configure the system for accessibility.  "
 "Developers will find resources and guidance to help them create, improve, "
 "and test accessible software."
-msgstr ""
+msgstr "本手册面向所有对 FreeBSD 操作系统中提供的辅助技术感兴趣的人。用户和管理员可以了解如何配置系统以实现无障碍访问。开发者可以找到帮助他们创建、改进和测试无障碍软件的资源与指南。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/preface/_index.adoc:56
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Organization of this Book"
-msgstr ""
+msgstr "本书结构"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:63
+#, fuzzy
 msgid ""
 "This book is organized into sections, chapters, and paragraphs, all of which "
 "can be read independently and out of order.  The first section, _crossref:"
@@ -61,109 +63,119 @@ msgid ""
 "for visual accessibility; It is intentionally free of images to maximize "
 "accessibility All sections and chapters are self-contained and can be read "
 "in any order."
-msgstr ""
+msgstr "本书分为多个部分、章节和段落，均可独立阅读，也无需按顺序阅读。第一部分，__crossref:parti[parti-general，第一部分：概述]__，介绍如何寻求帮助，并涵盖各种杂项主题。第二部分，__crossref:partii[partii-vision，第二部分：视觉]__，聚焦视觉无障碍辅助技术；本部分有意不使用图片，以尽可能提升无障碍性。所有部分和章节均各自完整，可按任意顺序阅读。"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:65
+#, fuzzy
 msgid "Chapters:"
-msgstr ""
+msgstr "章节："
 
 #. type: Labeled list
 #: documentation/content/en/books/accessibility/preface/_index.adoc:66
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:help[help,Help]_"
-msgstr ""
+msgstr "__crossref:help[help,帮助]__"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:68
+#, fuzzy
 msgid "Explains where and how to seek support within the FreeBSD community."
-msgstr ""
+msgstr "介绍如何在 FreeBSD 社区中寻求支持以及可寻求支持的渠道。"
 
 #. type: Labeled list
 #: documentation/content/en/books/accessibility/preface/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:virtual-terminal[virtual-terminal,Virtual Terminal]_"
-msgstr ""
+msgstr "__crossref:virtual-terminal[virtual-terminal,虚拟终端]__"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:71
+#, fuzzy
 msgid ""
 "Highlights features of the system's virtual console for visual accessibility."
-msgstr ""
+msgstr "介绍系统虚拟控制台中有助于视觉无障碍访问的功能。"
 
 #. type: Labeled list
 #: documentation/content/en/books/accessibility/preface/_index.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:colors[colors,Colors]_"
-msgstr ""
+msgstr "__crossref:colors[colors,色彩]__"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:74
+#, fuzzy
 msgid ""
 "Describes how to customize color settings in graphical environments for "
 "better visibility."
-msgstr ""
+msgstr "介绍如何在图形环境中自定义色彩设置，以提高可视性。"
 
 #. type: Labeled list
 #: documentation/content/en/books/accessibility/preface/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:lowvision[lowvision,Low Vision]_"
-msgstr ""
+msgstr "__crossref:lowvision[lowvision,低视力]__"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:77
+#, fuzzy
 msgid "Introduces tools and settings for users with low vision."
-msgstr ""
+msgstr "介绍为低视力用户提供的工具和设置。"
 
 #. type: Labeled list
 #: documentation/content/en/books/accessibility/preface/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:blindness[blindness,Blindness]_"
-msgstr ""
+msgstr "__crossref:blindness[blindness,失明]__"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:80
+#, fuzzy
 msgid ""
 "Covers accessibility tools and configurations for blind users, including "
 "screen readers, text-based utilities, and relevant ports."
-msgstr ""
+msgstr "介绍为盲人用户提供的无障碍工具和配置，包括屏幕阅读器、文本工具及相关移植软件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/accessibility/preface/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_crossref:development[development,Development]_"
-msgstr ""
+msgstr "__crossref:development[development,开发]__"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:83
+#, fuzzy
 msgid ""
 "Offers guidelines and resources for developers to enhance accessibility for "
 "users with visual impairments."
-msgstr ""
+msgstr "为开发者提供指南和资源，帮助他们提升视觉障碍用户的无障碍体验。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/preface/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Commands"
-msgstr ""
+msgstr "命令"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:89
+#, fuzzy
 msgid ""
 "FreeBSD offers a powerful command line interface that enables users to "
 "execute a wide range of text commands to set up and use the operating "
 "system.  This Handbook, like all official FreeBSD documentation, follows "
 "these command prompt conventions:"
-msgstr ""
+msgstr "FreeBSD 提供了强大的命令行界面，用户可以执行各种文本命令来设置和使用操作系统。本手册与所有 FreeBSD 官方文档一样，遵循以下命令提示符约定："
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:91
+#, fuzzy
 msgid "A command preceded by `%` can be executed by any regular user."
-msgstr ""
+msgstr "以 `%` 开头的命令可由任何普通用户执行。"
 
 #. type: preface
 #: documentation/content/en/books/accessibility/preface/_index.adoc:92
+#, fuzzy
 msgid ""
 "A command preceded by `#` must be executed by the `root` user (the system "
 "administrator)."
-msgstr ""
+msgstr "以 `#` 开头的命令必须由 `root` 用户（系统管理员）执行。"

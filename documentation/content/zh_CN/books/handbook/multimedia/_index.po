@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The multimedia chapter provides an overview of multimedia support on FreeBSD"
-msgstr ""
+msgstr "多媒体章节概述了 FreeBSD 对多媒体的支持"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Common Tasks"
-msgstr ""
+msgstr "第二部分：常见任务"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:1
@@ -50,6 +50,7 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:61
+#, fuzzy
 msgid ""
 "The multimedia chapter provides an overview of multimedia support on "
 "FreeBSD.  Multimedia applications and technologies have become an integral "
@@ -64,7 +65,7 @@ msgid ""
 "This chapter aims to help get the most out of FreeBSD's multimedia "
 "capabilities, providing useful information and practical examples to help "
 "get started."
-msgstr ""
+msgstr "多媒体章节概述了 FreeBSD 对多媒体的支持。  多媒体应用和技术已成为现代计算不可或缺的一部分，FreeBSD 为各种多媒体硬件和软件提供了强大而可靠的支持。  本章介绍音频、视频和图像处理等多种多媒体组件。  本章还讨论各种媒体格式和编解码器，以及用于创建和播放多媒体内容的工具和应用。  此外，本章还介绍多媒体系统的配置、故障排除和优化。  FreeBSD 为多媒体工作提供了强大的平台，既适合多媒体爱好者，也适合专业内容创作者。  本章旨在帮助你充分利用 FreeBSD 的多媒体功能，并提供有用的信息和实践示例，帮助你入门。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:63
@@ -74,32 +75,35 @@ msgstr "设定声卡"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:68
+#, fuzzy
 msgid ""
 "By default, FreeBSD will automatically detect the sound card used by the "
 "system.  FreeBSD supports a wide variety of sound cards.  The list of "
 "supported sound cards can be consulted in man:sound[4]."
-msgstr ""
+msgstr "默认情况下，FreeBSD 会自动检测系统使用的声卡。  FreeBSD 支持多种声卡。  支持的声卡列表可参阅 man:sound[4]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:72
+#, fuzzy
 msgid ""
 "It is only necessary to load the sound card module if FreeBSD has not "
 "detected it correctly."
-msgstr ""
+msgstr "只有在 FreeBSD 未能正确检测到声卡时，才需要加载声卡模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:75
+#, fuzzy
 msgid ""
 "Where it is not known which sound card the system has, or which module to "
 "use, the `snd_driver` metadriver can be loaded by executing the following "
 "command:"
-msgstr ""
+msgstr "如果不知道系统配备了哪种声卡，或者应该使用哪个模块，可以执行以下命令加载 `snd_driver` 元驱动程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload snd_driver\n"
-msgstr ""
+msgstr "# kldload snd_driver\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:82
@@ -125,17 +129,18 @@ msgstr "测试音效"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:92
+#, fuzzy
 msgid ""
 "To confirm the sound card is detected the following command can be executed:"
-msgstr ""
+msgstr "要确认声卡已被检测到，可以执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:96
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:174
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% dmesg | grep pcm\n"
-msgstr ""
+msgstr "% dmesg | grep pcm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:99
@@ -145,16 +150,17 @@ msgstr ""
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:700
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:721
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:797
+#, fuzzy
 msgid "The output should be similar to the following:"
-msgstr ""
+msgstr "输出应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pcm0: <Conexant CX20561 (Hermosa) (Analog 2.0+HP/2.0)> at nid 26,22 and 24 on hdaa0\n"
 "pcm1: <Conexant CX20561 (Hermosa) (Internal Analog Mic)> at nid 29 on hdaa0\n"
-msgstr ""
+msgstr "pcm0: <Conexant CX20561 (Hermosa) (Analog 2.0+HP/2.0)> at nid 26,22 and 24 on hdaa0\npcm1: <Conexant CX20561 (Hermosa) (Internal Analog Mic)> at nid 29 on hdaa0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:107
@@ -163,57 +169,60 @@ msgstr "声卡状态可以使用此命令查询："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cat /dev/sndstat\n"
-msgstr ""
+msgstr "# cat /dev/sndstat\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Installed devices:\n"
 "pcm0: <Conexant CX20561 (Hermosa) (Analog 2.0+HP/2.0)> (play/rec) default\n"
 "pcm1: <Conexant CX20561 (Hermosa) (Internal Analog Mic)> (rec)\n"
-msgstr ""
+msgstr "已安装的设备：\npcm0: <Conexant CX20561 (Hermosa) (Analog 2.0+HP/2.0)> (play/rec) default\npcm1: <Conexant CX20561 (Hermosa) (Internal Analog Mic)> (rec)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:124
+#, fuzzy
 msgid ""
 "If no `pcm` devices are listed, double-check that the correct device driver "
 "was loaded.  If all goes well, the sound card should now work in FreeBSD."
-msgstr ""
+msgstr "如果未列出任何 `pcm` 设备，请再次确认是否加载了正确的设备驱动程序。  如果一切正常，声卡现在应该可以在 FreeBSD 中使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:126
+#, fuzzy
 msgid ""
 "man:beep[1] can be used to produce some noise, confirming that the sound "
 "card is working:"
-msgstr ""
+msgstr "可以使用 man:beep[1] 发出声音，以确认声卡正在工作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% beep\n"
-msgstr ""
+msgstr "% beep\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mixer"
-msgstr ""
+msgstr "混音器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:136
+#, fuzzy
 msgid ""
 "FreeBSD has different utilities to set and display sound card mixer values "
 "built on the FreeBSD Sound System:"
-msgstr ""
+msgstr "FreeBSD 提供了多种基于 FreeBSD 声音系统、用于设置和显示声卡混音器值的工具："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported mixer packages"
-msgstr ""
+msgstr "支持的混音器软件包"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:140
@@ -221,75 +230,75 @@ msgstr ""
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:413
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:653
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:827
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:140
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:323
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:413
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:827
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "License"
-msgstr ""
+msgstr "许可证"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:140
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:323
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:413
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:829
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Package"
-msgstr ""
+msgstr "软件包"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:142
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:325
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Toolkit"
-msgstr ""
+msgstr "工具包"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:mixer[8]"
-msgstr ""
+msgstr "man:mixer[8]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:144
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:149
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:159
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BSD-2"
-msgstr ""
+msgstr "BSD-2"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Included in base system"
-msgstr ""
+msgstr "包含在基本系统中"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:147
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:420
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CLI"
-msgstr ""
+msgstr "命令行界面"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "dsbmixer"
-msgstr ""
+msgstr "dsbmixer"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:audio/dsbmixer[]"
-msgstr ""
+msgstr "package:audio/dsbmixer[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:152
@@ -298,15 +307,15 @@ msgstr ""
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:340
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:425
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Qt"
-msgstr ""
+msgstr "Qt"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "KDE Plasma audio widget"
-msgstr ""
+msgstr "KDE Plasma 音频小部件"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:154
@@ -318,55 +327,57 @@ msgstr ""
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:432
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:831
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:839
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 2.0"
-msgstr ""
+msgstr "GPL 2.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:audio/plasma6-plasma-pa[]"
-msgstr ""
+msgstr "package:audio/plasma6-plasma-pa[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mixertui"
-msgstr ""
+msgstr "mixertui"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:audio/mixertui[]"
-msgstr ""
+msgstr "package:audio/mixertui[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:162
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "TUI"
-msgstr ""
+msgstr "终端用户界面"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Graphics Card Sound"
-msgstr ""
+msgstr "显卡音频"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:170
+#, fuzzy
 msgid ""
 "Graphics cards often come with their own integrated sound devices, and it "
 "may be unclear which is being used as the default device.  To confirm, run "
 "dmesg and look for the pcm entries to identify how the system is enumerating "
 "the outputs.  Execute the following command:"
-msgstr ""
+msgstr "显卡通常带有集成音频设备，因此可能不清楚当前使用的是哪个默认设备。  要确认这一点，请运行 dmesg 并查找 pcm 条目，以确定系统如何枚举输出设备。执行以下命令："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:177
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:219
+#, fuzzy
 msgid "The output looks something like this:"
-msgstr ""
+msgstr "输出类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:189
@@ -402,174 +413,192 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:193
+#, fuzzy
 msgid ""
 "The graphics card (NVIDIA(R)) has been enumerated before the sound card "
 "(Realtek(R)), with the sound card appearing as `pcm4`.  The system can be "
 "configured to use the sound card as the default device by executing the "
 "following command:"
-msgstr ""
+msgstr "显卡（NVIDIA(R)）先于声卡（Realtek(R)）被枚举，声卡显示为 `pcm4`。  执行以下命令可将系统配置为使用声卡作为默认设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl hw.snd.default_unit=4\n"
-msgstr ""
+msgstr "# sysctl hw.snd.default_unit=4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:200
+#, fuzzy
 msgid ""
 "To make this change permanent add the next line to [.filename]#/etc/sysctl."
 "conf#:"
-msgstr ""
+msgstr "要使此更改永久生效，请将下一行添加到 [.filename]#/etc/sysctl.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hw.snd.default_unit=4\n"
-msgstr ""
+msgstr "hw.snd.default_unit=4\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automatically Switching to Headphones"
-msgstr ""
+msgstr "自动切换到耳机"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:210
+#, fuzzy
 msgid ""
 "Some systems may struggle with switching between audio outputs, but "
 "fortunately FreeBSD allows automatic switchover to be configured in [."
 "filename]#device.hints#."
-msgstr ""
+msgstr "某些系统可能难以在不同音频输出之间切换，但幸运的是，FreeBSD 允许在 [.filename]#device.hints# 中配置自动切换。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:212
+#, fuzzy
 msgid ""
 "Identify how the system is enumerating the audio outputs by executing the "
 "following command:"
-msgstr ""
+msgstr "执行以下命令，确定系统如何枚举音频输出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pcm0: <Realtek ALC892 Analog> at nid 23 and 26 on hdaa0\n"
 "pcm1: <Realtek ALC892 Right Analog Headphones> at nid 22 on hdaa0\n"
-msgstr ""
+msgstr "pcm0: <Realtek ALC892 Analog> at nid 23 and 26 on hdaa0\npcm1: <Realtek ALC892 Right Analog Headphones> at nid 22 on hdaa0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:227
+#, fuzzy
 msgid "Add the following lines to [.filename]#/boot/device.hints#:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/boot/device.hints#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hint.hdac.0.cad0.nid22.config=\"as=1 seq=15 device=Headphones\"\n"
 "hint.hdac.0.cad0.nid26.config=\"as=2 seq=0 device=speakers\"\n"
-msgstr ""
+msgstr "hint.hdac.0.cad0.nid22.config=\"as=1 seq=15 device=Headphones\"\nhint.hdac.0.cad0.nid26.config=\"as=2 seq=0 device=speakers\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:238
+#, fuzzy
 msgid ""
 "Keep in mind that these values are for the example indicated above.  They "
 "may vary depending on the system."
-msgstr ""
+msgstr "请注意，这些值适用于上述示例。  根据系统的不同，实际值可能有所变化。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resampling Quality"
-msgstr ""
+msgstr "重采样质量"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:244
+#, fuzzy
 msgid ""
 "The process of changing the sample rate of an audio stream is called "
 "resampling."
-msgstr ""
+msgstr "改变音频流采样率的过程称为重采样。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:246
+#, fuzzy
 msgid ""
 "This usually happens automatically in situations like recording audio with a "
 "DI (Digital Interface) or simply when playing back audio files with very low "
 "resolution."
-msgstr ""
+msgstr "这种情况通常会自动发生，例如使用 DI（数字接口）录制音频，或者播放分辨率很低的音频文件时。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:248
+#, fuzzy
 msgid ""
 "Example: DI uses 192000 kHz, application only accepts 48000 kHz (or the "
 "other way around)."
-msgstr ""
+msgstr "例如：DI 使用 192000 kHz，而应用程序仅接受 48000 kHz（反之亦然）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:250
+#, fuzzy
 msgid ""
 "If possible, this should be adjusted outside the sound device driver, but "
 "for cases where this is not possible (Or the hardware is bad at resampling), "
 "you have influence over the quality that is used for resampling."
-msgstr ""
+msgstr "如果可能，应在声卡设备驱动程序之外调整采样率；但在无法做到这一点（或硬件重采样效果不佳）的情况下，你可以调整重采样质量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:252
+#, fuzzy
 msgid ""
 "Should you be unsure if you need this, for normal music listening, doing "
 "meetings and so on the default value is totally fine and most applications "
 "use 48000 kHz anyway, so resampling rarely happens."
-msgstr ""
+msgstr "如果不确定是否需要调整，对于日常听音乐、参加会议等用途，默认值完全够用，而且大多数应用程序也使用 48000 kHz，因此很少发生重采样。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:254
+#, fuzzy
 msgid ""
 "When making music, recording sounds otherwise where quality matters or you "
 "are an audiophile, you can increase the resampling quality."
-msgstr ""
+msgstr "如果你在制作音乐、录制对质量有要求的声音，或者是发烧友，可以提高重采样质量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:256
+#, fuzzy
 msgid ""
 "For the highest possible resample quality, execute the following command:"
-msgstr ""
+msgstr "要获得尽可能高的重采样质量，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysctl hw.snd.feeder_rate_quality=4<.>\n"
 "# sysctl hw.snd.feeder_rate_round=0<.>\n"
-msgstr ""
+msgstr "# sysctl hw.snd.feeder_rate_quality=4<.>\n# sysctl hw.snd.feeder_rate_round=0<.>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:263
+#, fuzzy
 msgid "100dB stopband, 164 taps and 97% bandwidth"
-msgstr ""
+msgstr "100dB 阻带、164 个抽头和 97% 带宽"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:264
+#, fuzzy
 msgid "Large prime divisions for high accuracy"
-msgstr ""
+msgstr "采用较大的质数倍频，以提高精度"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:266
+#, fuzzy
 msgid ""
 "To keep these values after reboots, they can be added to the `/etc/sysctl."
 "conf`."
-msgstr ""
+msgstr "要在重启后保留这些值，可以将它们添加到 `/etc/sysctl.conf` 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:268
+#, fuzzy
 msgid ""
 "It is important to keep in mind that adjusting the resample quality has "
 "influence on CPU usage and delay."
-msgstr ""
+msgstr "请注意，调整重采样质量会影响 CPU 使用率和延迟。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:270
+#, fuzzy
 msgid "More details about resampling can be read in man:sound[4]"
-msgstr ""
+msgstr "有关重采样的更多详情，请参阅 man:sound[4]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:272
@@ -579,8 +608,9 @@ msgstr "疑难解答"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:275
+#, fuzzy
 msgid "Some common error messages and their solutions:"
-msgstr ""
+msgstr "以下是一些常见错误消息及其解决方法："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:277
@@ -590,78 +620,81 @@ msgstr "常见错误讯息"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Solution"
-msgstr ""
+msgstr "解决方法"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`xxx: can't open /dev/dsp!`"
-msgstr ""
+msgstr "`xxx: can't open /dev/dsp!`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Type `fstat \\"
-msgstr ""
+msgstr "输入 `fstat \\"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "grep dsp` to check if another application is holding the device open. Noteworthy troublemakers are esound and KDE's sound support."
-msgstr ""
+msgstr "grep dsp`，检查是否有其他应用程序正在占用该设备。值得注意的麻烦制造者包括 esound 和 KDE 的声音支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:293
+#, fuzzy
 msgid ""
 "Programs using package:audio/pulseaudio[] might need to restart the package:"
 "audio/pulseaudio[] daemon for the changes in `hw.snd.default_unit` to take "
 "effect.  Alternatively, package:audio/pulseaudio[] settings can be changed "
 "on the fly.  man:pacmd[1] opens a command line connection to the package:"
 "audio/pulseaudio[] daemon:"
-msgstr ""
+msgstr "使用 package:audio/pulseaudio[] 的程序可能需要重启 package:audio/pulseaudio[] 守护进程，`hw.snd.default_unit` 的更改才能生效。  也可以随时更改 package:audio/pulseaudio[] 的设置。  man:pacmd[1] 可以打开与 package:audio/pulseaudio[] 守护进程的命令行连接："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pacmd\n"
 "Welcome to PulseAudio 14.2! Use \"help\" for usage information.\n"
 ">>>\n"
-msgstr ""
+msgstr "# pacmd\nWelcome to PulseAudio 14.2! Use \"help\" for usage information.\n>>>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:303
+#, fuzzy
 msgid ""
 "The following command changes the default sink to card number 4 as in the "
 "previous example:"
-msgstr ""
+msgstr "以下命令将默认接收端更改为编号为 4 的声卡，与前面的示例相同："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "set-default-sink 4\n"
-msgstr ""
+msgstr "set-default-sink 4\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:313
+#, fuzzy
 msgid ""
 "Do not use the `exit` command to exit the command line interface. That will "
 "kill the package:audio/pulseaudio[] daemon. Use kbd:[Ctrl+D] instead."
-msgstr ""
+msgstr "请勿使用 `exit` 命令退出命令行界面，否则会终止 package:audio/pulseaudio[] 守护进程。请改用 kbd:[Ctrl+D]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audio players"
-msgstr ""
+msgstr "音频播放器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:319
@@ -678,162 +711,172 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audio players packages"
-msgstr ""
+msgstr "音频播放器软件包"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:326
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Elisa"
-msgstr ""
+msgstr "Elisa"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LGPL 3.0"
-msgstr ""
+msgstr "LGPL 3.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:328
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:audio/elisa[]"
-msgstr ""
+msgstr "package:audio/elisa[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:331
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GNOME Music"
-msgstr ""
+msgstr "GNOME Music"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:audio/gnome-music[]"
-msgstr ""
+msgstr "package:audio/gnome-music[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GTK+"
-msgstr ""
+msgstr "GTK+"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:336
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Audacious"
-msgstr ""
+msgstr "Audacious"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:multimedia/audacious[]"
-msgstr ""
+msgstr "package:multimedia/audacious[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:341
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:392
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "cmus — C* Music Player"
-msgstr ""
+msgstr "cmus — C* 音乐播放器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:audio/cmus[]"
-msgstr ""
+msgstr "package:audio/cmus[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:351
+#, fuzzy
 msgid ""
 "Elisa is a music player developed by the KDE community that strives to be "
 "simple and nice to use."
-msgstr ""
+msgstr "Elisa 是由 KDE 社区开发的音乐播放器，力求简单易用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:353
+#, fuzzy
 msgid "To install Elisa, execute:"
-msgstr ""
+msgstr "执行以下命令安装 Elisa："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install elisa\n"
-msgstr ""
+msgstr "# pkg install elisa\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:364
+#, fuzzy
 msgid ""
 "GNOME Music is the new GNOME music playing application.  It aims to combine "
 "an elegant and immersive browsing experience with simple and straightforward "
 "controls."
-msgstr ""
+msgstr "GNOME Music 是 GNOME 新推出的音乐播放应用程序。  它旨在将优雅、沉浸式的浏览体验与简单直观的控件结合起来。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:366
+#, fuzzy
 msgid "To install GNOME Music, execute:"
-msgstr ""
+msgstr "要安装 GNOME Music，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install gnome-music\n"
-msgstr ""
+msgstr "# pkg install gnome-music\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:377
+#, fuzzy
 msgid ""
 "Audacious is an open source audio player.  As a descendant of XMMS, it "
 "provides music playback while maintaining efficient use of system resources."
-msgstr ""
+msgstr "Audacious 是一款开源音频播放器。它是 XMMS 的后继项目，可播放音乐，同时高效利用系统资源。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:379
+#, fuzzy
 msgid "To install Audacious, execute:"
-msgstr ""
+msgstr "要安装 Audacious，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install audacious-qt6 audacious-plugins-qt6\n"
-msgstr ""
+msgstr "# pkg install audacious-qt6 audacious-plugins-qt6\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:388
+#, fuzzy
 msgid ""
 "Audacious supports OSS natively, but must be configured in the settings on "
 "the Audio tab."
-msgstr ""
+msgstr "Audacious 原生支持 OSS，但必须在设置的 Audio 选项卡中进行配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:395
+#, fuzzy
 msgid ""
 "cmus is a small, fast and powerful console music player for Unix-like "
 "operating systems."
-msgstr ""
+msgstr "cmus 是一款适用于类 Unix 操作系统的小巧、快速且功能强大的控制台音乐播放器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:397
+#, fuzzy
 msgid ""
 "Beside various input and output plugins, it has support for CUE sheets, uses "
 "Unicode, supports scrobbling (to e.g. last.fm or libre.fm), can run external "
 "programs on selected files like tag-editors, can be controlled via UNIX "
 "sockets and many more."
-msgstr ""
+msgstr "除了各种输入和输出插件外，它还支持 CUE 文件、使用 Unicode、支持音乐播放记录同步（例如同步到 last.fm 或 libre.fm），可以对选定的文件运行外部程序（如标签编辑器），可以通过 UNIX 套接字控制，此外还有许多其他功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:399
+#, fuzzy
 msgid "To install cmus, execute:"
-msgstr ""
+msgstr "要安装 cmus，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install cmus\n"
-msgstr ""
+msgstr "# pkg install cmus\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:406
@@ -861,15 +904,15 @@ msgstr "视频回放"
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:416
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:439
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mpv"
-msgstr ""
+msgstr "mpv"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:multimedia/mpv[]"
-msgstr ""
+msgstr "package:multimedia/mpv[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:421
@@ -881,85 +924,90 @@ msgstr "MP3播放器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:multimedia/smplayer[]"
-msgstr ""
+msgstr "package:multimedia/smplayer[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:426
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:513
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "VLC media player"
-msgstr ""
+msgstr "VLC 媒体播放器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:multimedia/vlc[]"
-msgstr ""
+msgstr "package:multimedia/vlc[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:431
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:527
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kodi (XBMC)"
-msgstr ""
+msgstr "Kodi (XBMC)"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:multimedia/kodi[]"
-msgstr ""
+msgstr "package:multimedia/kodi[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "X11"
-msgstr ""
+msgstr "X11"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:442
+#, fuzzy
 msgid ""
 "mpv is a free (as in freedom) media player for the command line. It supports "
 "a wide variety of media file formats, audio and video codecs, and subtitle "
 "types. mpv can leverage most hardware decoding APIs on all platforms."
-msgstr ""
+msgstr "mpv 是一款自由（自由软件意义上的自由）的命令行媒体播放器。它支持多种媒体文件格式、音视频编解码器和字幕类型。mpv 可以在所有平台上利用大多数硬件解码 API。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:444
+#, fuzzy
 msgid ""
 "Also targeted towards vidoephile, it has several high quality up-/"
 "downscaling algorithms which can also be, like all settings, controlled via "
 "profiles. Profiles can be selected via command-line switches or based on "
 "conditions like the folder name."
-msgstr ""
+msgstr "mpv 也面向影音发烧友，提供多种高质量的升频和降频算法。这些算法与所有设置一样，也可以通过配置文件控制。可以通过命令行开关选择配置文件，也可以根据文件夹名称等条件自动选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:446
+#, fuzzy
 msgid ""
 "It also supports high quality HDR to SDR conversion with fine-grained "
 "control, enabling everyone to enjoy HDR content on any display."
-msgstr ""
+msgstr "它还支持高质量的 HDR 到 SDR 转换，并提供精细控制，让每个人都能在任何显示器上欣赏 HDR 内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:448
+#, fuzzy
 msgid "To install mpv, execute:"
-msgstr ""
+msgstr "要安装 mpv，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:452
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install mpv\n"
-msgstr ""
+msgstr "# pkg install mpv\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:455
+#, fuzzy
 msgid "Here is a short sample [filename.]#~/.config/mpv/mpv.conf#"
-msgstr ""
+msgstr "以下是一个简短的 [filename.]#~/.config/mpv/mpv.conf# 示例"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "vo=gpu-next<.>\n"
 "gpu-context=wayland<.>\n"
@@ -967,21 +1015,21 @@ msgid ""
 "screenshot-jpeg-quality=100\n"
 "scale=ewa_lanczos4sharpest<.>\n"
 "dscale=ewa_lanczos4sharpest\n"
-msgstr ""
+msgstr "vo=gpu-next<.>\ngpu-context=wayland<.>\nhwdec=auto<.>\nscreenshot-jpeg-quality=100\nscale=ewa_lanczos4sharpest<.>\ndscale=ewa_lanczos4sharpest\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[TTRPG]<.>\n"
 "profile-cond=path:find('ttrpg')<.>\n"
 "profile=fast<.>\n"
 "save-position-on-quit=yes\n"
-msgstr ""
+msgstr "[TTRPG]<.>\nprofile-cond=path:find('ttrpg')<.>\nprofile=fast<.>\nsave-position-on-quit=yes\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[hdr]<.>\n"
 "scale=bilinear\n"
@@ -993,103 +1041,117 @@ msgid ""
 "hdr-compute-peak=yes\n"
 "hdr-peak-percentile=99.995\n"
 "hdr-contrast-recovery=0.30\n"
-msgstr ""
+msgstr "[hdr]<.>\nscale=bilinear\ndscale=bilinear\ndither=no\ncorrect-downscaling=no\nlinear-downscaling=no\nsigmoid-upscaling=no\nhdr-compute-peak=yes\nhdr-peak-percentile=99.995\nhdr-contrast-recovery=0.30\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:482
+#, fuzzy
 msgid ""
 "Uses the new gpu-next video output. A lot of features need this and/or "
 "provide higher quality when enabled"
-msgstr ""
+msgstr "使用新的 gpu-next 视频输出。许多功能需要启用它，或在启用后提供更高画质"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:483
+#, fuzzy
 msgid ""
 "Wayland users should manually set this when seeing graphical glitches or "
 "experience crashes"
-msgstr ""
+msgstr "如果 Wayland 用户遇到图像异常或崩溃，应手动设置此项"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:484
+#, fuzzy
 msgid "Automatically detects if GPU hardware decoding is available and uses it"
-msgstr ""
+msgstr "自动检测是否支持 GPU 硬件解码，并在支持时使用"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:485
+#, fuzzy
 msgid ""
 "Best scaling algorithm. Disable if your hardware is not fast enough and "
 "videos start to skip frames"
-msgstr ""
+msgstr "最佳缩放算法。如果硬件性能不足并导致视频丢帧，请禁用此项"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:486
+#, fuzzy
 msgid "Example profile for long videos of recorded TTRPG sessions"
-msgstr ""
+msgstr "用于录制的 TTRPG 游戏过程长视频的示例配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:487
+#, fuzzy
 msgid "Only applies when the path contains ttrpg"
-msgstr ""
+msgstr "仅当路径包含 ttrpg 时才生效"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:488
+#, fuzzy
 msgid "Uses the builtin fast profile for lowest possible CPU/GPU usage"
-msgstr ""
+msgstr "使用内置的 fast 配置文件，以尽可能降低 CPU/GPU 使用率"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:489
+#, fuzzy
 msgid ""
 "Example profile for users with a slow iGPU who still want to enjoy HDR "
 "content"
-msgstr ""
+msgstr "为使用较慢 iGPU、但仍想欣赏 HDR 内容的用户提供的示例配置文件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:491
+#, fuzzy
 msgid ""
 "Using this sample configuration, the TTRPG profile is automatically applied "
 "if the \"Path contains ttrpg\" condition is met."
-msgstr ""
+msgstr "使用此示例配置时，如果满足“路径包含 ttrpg”条件，就会自动应用 TTRPG 配置文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:493
+#, fuzzy
 msgid ""
 "To watch a HDR Video on an iGPU, manually specify the profile using the "
 "following command:"
-msgstr ""
+msgstr "要在 iGPU 上观看 HDR 视频，请使用以下命令手动指定配置文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:496
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ mpv --profile=hdr hdr_video.mkv\n"
-msgstr ""
+msgstr "$ mpv --profile=hdr hdr_video.mkv\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:499
+#, fuzzy
 msgid ""
 "For more examples on how mpv can be used, consult the mpv reference manual."
-msgstr ""
+msgstr "有关 mpv 用法的更多示例，请参阅 mpv 参考手册。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:504
+#, fuzzy
 msgid ""
 "SMPlayer intends to be a complete front-end for MPlayer, from basic features "
 "like playing videos, DVDs, and VCDs to more advanced features like support "
 "for MPlayer filters and more."
-msgstr ""
+msgstr "SMPlayer 旨在成为 MPlayer 的完整前端，功能涵盖播放视频、DVD 和 VCD 等基本操作，以及支持 MPlayer 滤镜等高级功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:506
+#, fuzzy
 msgid "To install SMPlayer, execute:"
-msgstr ""
+msgstr "要安装 SMPlayer，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:510
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install smplayer\n"
-msgstr ""
+msgstr "# pkg install smplayer\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:518
+#, fuzzy
 msgid ""
 "VLC media player is a highly portable multimedia player for various audio "
 "and video formats (MPEG-1, MPEG-2, MPEG-4, DivX, mp3, ogg, and more) as well "
@@ -1097,52 +1159,56 @@ msgid ""
 "server to stream in unicast or multicast in IPv4 or IPv6 on a high-bandwidth "
 "network.  VLC also has the ability to transcode media on-the-fly for "
 "streaming or saving to disk."
-msgstr ""
+msgstr "VLC 媒体播放器是一款高度可移植的播放器，支持多种音频和视频格式（MPEG-1、MPEG-2、MPEG-4、DivX、mp3、ogg 等），以及 DVD、VCD 和多种流媒体协议。它还可以用作服务器，在高带宽网络上通过 IPv4 或 IPv6 以单播或多播方式进行流媒体传输。VLC 还能够在传输媒体流时实时转码，或将转码后的内容保存到磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:520
+#, fuzzy
 msgid "To install VLC, execute:"
-msgstr ""
+msgstr "要安装 VLC，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:524
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install vlc\n"
-msgstr ""
+msgstr "# pkg install vlc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:531
+#, fuzzy
 msgid ""
 "Kodi (formerly known as XBMC) is a free and open source cross-platform media-"
 "player and entertainment hub.  It allows users to play and view most videos, "
 "music, podcasts, and other digital media files from local and network "
 "storage media and the internet."
-msgstr ""
+msgstr "Kodi（原名 XBMC）是一款自由开源的跨平台媒体播放器和娱乐中心。用户可以通过它播放和查看本地及网络存储介质和互联网中的大多数视频、音乐、播客及其他数字媒体文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:533
+#, fuzzy
 msgid "To install Kodi, execute:"
-msgstr ""
+msgstr "要安装 Kodi，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:537
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install kodi\n"
-msgstr ""
+msgstr "# pkg install kodi\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:540
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Conferencing and Meetings"
-msgstr ""
+msgstr "视频会议与会议"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:544
+#, fuzzy
 msgid ""
 "A FreeBSD desktop environment can be used to join video conferences.  This "
 "section will explain how to configure the webcam and which videoconferencing "
 "applications are supported on FreeBSD."
-msgstr ""
+msgstr "FreeBSD 桌面环境可用于参加视频会议。本节将介绍如何配置网络摄像头，以及 FreeBSD 支持哪些视频会议应用程序。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:546
@@ -1153,17 +1219,19 @@ msgstr "设定声卡"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:549
+#, fuzzy
 msgid ""
 "To allow FreeBSD access to the webcam and perform its configuration it is "
 "necessary to install certain utilities:"
-msgstr ""
+msgstr "要允许 FreeBSD 访问网络摄像头并对其进行配置，需要安装一些实用程序："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:551
+#, fuzzy
 msgid ""
 "package:multimedia/webcamd[] is a daemon that enables the use of hundreds of "
 "different USB based webcam and DVB USB devices."
-msgstr ""
+msgstr "package:multimedia/webcamd[] 是一个守护进程，可启用数百种不同的 USB 网络摄像头和 DVB USB 设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:552
@@ -1177,104 +1245,113 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:554
+#, fuzzy
 msgid "To install the required utilities, execute:"
-msgstr ""
+msgstr "要安装所需的实用程序，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:558
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install webcamd pwcview\n"
-msgstr ""
+msgstr "# pkg install webcamd pwcview\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:561
+#, fuzzy
 msgid ""
 "Enable the man:webcamd[8] service in `/etc/rc.conf` to start it at system "
 "boot:"
-msgstr ""
+msgstr "在 `/etc/rc.conf` 中启用 man:webcamd[8] 服务，以便在系统启动时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc webcamd_enable=YES\n"
-msgstr ""
+msgstr "# sysrc webcamd_enable=YES\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:569
+#, fuzzy
 msgid ""
 "The user must belong to the `webcamd` group.  To add the user to `webcamd` "
 "group execute the following command:"
-msgstr ""
+msgstr "用户必须属于 `webcamd` 组。要将用户添加到 `webcamd` 组，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:573
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pw groupmod webcamd -m username\n"
-msgstr ""
+msgstr "# pw groupmod webcamd -m username\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:576
+#, fuzzy
 msgid ""
 "Since package:multimedia/webcamd[] needs the man:cuse[3] module this module "
 "must be loaded by executing the following command:"
-msgstr ""
+msgstr "由于 package:multimedia/webcamd[] 需要 man:cuse[3] 模块，因此必须执行以下命令加载该模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:580
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload cuse\n"
-msgstr ""
+msgstr "# kldload cuse\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:583
+#, fuzzy
 msgid "To load man:cuse[3] at system boot, execute the command:"
-msgstr ""
+msgstr "要在系统启动时加载 man:cuse[3]，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:587
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc kld_list+=cuse\n"
-msgstr ""
+msgstr "# sysrc kld_list+=cuse\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:590
+#, fuzzy
 msgid ""
 "Once the utilities have been installed the list of available webcams can be "
 "shown with man:webcamd[8]:"
-msgstr ""
+msgstr "安装实用程序后，可以使用 man:webcamd[8] 查看可用网络摄像头列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:594
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# webcamd -l\n"
-msgstr ""
+msgstr "# webcamd -l\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:602
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "webcamd [-d ugen0.2] -N SunplusIT-Inc-HP-TrueVision-HD-Camera -S unknown -M 0 <.>\n"
 "webcamd [-d ugen1.3] -N Realtek-802-11n-WLAN-Adapter -S 00e04c000001 -M 0\n"
-msgstr ""
+msgstr "webcamd [-d ugen0.2] -N SunplusIT-Inc-HP-TrueVision-HD-Camera -S unknown -M 0 <.>\nwebcamd [-d ugen1.3] -N Realtek-802-11n-WLAN-Adapter -S 00e04c000001 -M 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:604
+#, fuzzy
 msgid "Available webcam"
-msgstr ""
+msgstr "可用的网络摄像头"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:606
+#, fuzzy
 msgid "Configure the available webcam executing the following command:"
-msgstr ""
+msgstr "执行以下命令配置可用的网络摄像头："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:610
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc webcamd_0_flags=\"-N SunplusIT-Inc-HP-TrueVision-HD-Camera\" <.>\n"
-msgstr ""
+msgstr "# sysrc webcamd_0_flags=\"-N SunplusIT-Inc-HP-TrueVision-HD-Camera\" <.>\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:616
+#, fuzzy
 msgid ""
 "Note here that if this is a plug-and-play USB webcam, changing the USB port "
 "to which it is connected will change the output from `webcamd -l`, "
@@ -1283,110 +1360,114 @@ msgid ""
 "or match with the device serial number if known (`-S` option) as displayed "
 "in the output of `webcamd -l`.  For static devices, for example integrated "
 "laptop cameras, you can use the device identifier (`-d` option)."
-msgstr ""
+msgstr "请注意，如果这是即插即用 USB 网络摄像头，更改其连接的 USB 端口会改变 `webcamd -l` 的输出，尤其是设备标识符；可能还需要更新 rc.conf 中的条目。为避免此问题，可以使用设备名称（`-N` 选项），和／或在已知设备序列号时按序列号匹配（`-S` 选项），具体信息见 `webcamd -l` 的输出。对于固定设备，例如笔记本电脑的内置摄像头，可以使用设备标识符（`-d` 选项）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:619
+#, fuzzy
 msgid ""
 "The man:webcamd[8] service must be started by executing the following "
 "command:"
-msgstr ""
+msgstr "必须执行以下命令启动 man:webcamd[8] 服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:623
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service webcamd start\n"
-msgstr ""
+msgstr "# service webcamd start\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:631
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Starting webcamd.\n"
 "webcamd 1616 - - Attached to ugen0.2[0]\n"
-msgstr ""
+msgstr "Starting webcamd.\nwebcamd 1616 - - Attached to ugen0.2[0]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:635
+#, fuzzy
 msgid ""
 "package:multimedia/pwcview[] can be used to check the proper functioning of "
 "the webcam.  The following command can be used to execute package:multimedia/"
 "pwcview[]:"
-msgstr ""
+msgstr "可以使用 package:multimedia/pwcview[] 检查网络摄像头是否正常工作。可以使用以下命令运行 package:multimedia/pwcview[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:639
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pwcview -f 30 -s vga\n"
-msgstr ""
+msgstr "% pwcview -f 30 -s vga\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:642
+#, fuzzy
 msgid "Then package:multimedia/pwcview[] will display the webcam:"
-msgstr ""
+msgstr "随后，package:multimedia/pwcview[] 将显示网络摄像头画面："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:643
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pwcview showing Absolute FreeBSD 3rd edition as an example"
-msgstr ""
+msgstr "pwcview 显示《Absolute FreeBSD》第三版作为示例"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:643
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pwcview.png"
-msgstr ""
+msgstr "pwcview.png"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:646
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Meetings software status"
-msgstr ""
+msgstr "会议软件状态"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:649
+#, fuzzy
 msgid ""
 "FreeBSD currently supports the following tools used to carry out "
 "videoconferences."
-msgstr ""
+msgstr "FreeBSD 目前支持以下用于召开视频会议的工具。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:650
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Meeting software"
-msgstr ""
+msgstr "会议软件"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:653
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Firefox status"
-msgstr ""
+msgstr "Firefox 状态"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:653
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chromium status"
-msgstr ""
+msgstr "Chromium 状态"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:655
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website"
-msgstr ""
+msgstr "网站"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:656
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Microsoft Teams"
-msgstr ""
+msgstr "Microsoft Teams"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:657
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:672
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:677
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Does not work"
-msgstr ""
+msgstr "无法使用"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:658
@@ -1396,63 +1477,63 @@ msgstr ""
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:668
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:673
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:678
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Works"
-msgstr ""
+msgstr "可用"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://teams.live.com[]"
-msgstr ""
+msgstr "link:https://teams.live.com[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:661
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Google Meet"
-msgstr ""
+msgstr "Google Meet"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:665
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://meet.google.com/[]"
-msgstr ""
+msgstr "link:https://meet.google.com/[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:666
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:670
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://zoom.us[]"
-msgstr ""
+msgstr "link:https://zoom.us[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:671
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Jitsi"
-msgstr ""
+msgstr "Jitsi"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:675
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://meet.jit.si/[]"
-msgstr ""
+msgstr "link:https://meet.jit.si/[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:676
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BigBlueButton"
-msgstr ""
+msgstr "BigBlueButton"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:680
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "link:https://bigbluebutton.org/[]"
-msgstr ""
+msgstr "link:https://bigbluebutton.org/[]"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:683
@@ -1462,11 +1543,12 @@ msgstr "图像扫描仪"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:686
+#, fuzzy
 msgid ""
 "In FreeBSD, access to image scanners is provided by link:http://www.sane-"
 "project.org[SANE (Scanner Access Now Easy)], which is available in the "
 "FreeBSD Ports Collection."
-msgstr ""
+msgstr "在 FreeBSD 中，通过 link:http://www.sane-project.org[SANE（Scanner Access Now Easy）] 提供对图像扫描仪的访问；SANE 可在 FreeBSD Ports Collection 中获取。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:688
@@ -1476,60 +1558,64 @@ msgstr "检查扫描仪"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:691
+#, fuzzy
 msgid ""
 "Before attempting any configuration it is important to check the scanner is "
 "supported by SANE."
-msgstr ""
+msgstr "在尝试进行任何配置之前，务必先确认 SANE 支持该扫描仪。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:693
+#, fuzzy
 msgid ""
 "With the scanner connected, run the following command to get all connected "
 "USB devices:"
-msgstr ""
+msgstr "连接扫描仪后，运行以下命令查看所有已连接的 USB 设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:697
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# usbconfig list\n"
-msgstr ""
+msgstr "# usbconfig list\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:706
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "ugen4.2: <LITE-ON Technology USB NetVista Full Width Keyboard.> at usbus4, cfg=0 md=HOST spd=LOW (1.5Mbps) pwr=ON (70mA)\n"
 "ugen4.3: <Logitech USB Optical Mouse> at usbus4, cfg=0 md=HOST spd=LOW (1.5Mbps) pwr=ON (100mA)\n"
 "ugen3.2: <HP Deskjet 1050 J410 series> at usbus3, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)\n"
-msgstr ""
+msgstr "ugen4.2: <LITE-ON Technology USB NetVista Full Width Keyboard.> at usbus4, cfg=0 md=HOST spd=LOW (1.5Mbps) pwr=ON (70mA)\nugen4.3: <Logitech USB Optical Mouse> at usbus4, cfg=0 md=HOST spd=LOW (1.5Mbps) pwr=ON (100mA)\nugen3.2: <HP Deskjet 1050 J410 series> at usbus3, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:709
+#, fuzzy
 msgid "Run the following command to obtain the `idVendor` and the `idProduct`:"
-msgstr ""
+msgstr "运行以下命令以获取 `idVendor` 和 `idProduct`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:713
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# usbconfig -d 3.2 dump_device_desc\n"
-msgstr ""
+msgstr "# usbconfig -d 3.2 dump_device_desc\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:718
+#, fuzzy
 msgid ""
 "Note here that the scanner is a plug-and-play device, and changing the USB "
 "port to which it is connected will change the output from `usbconfig list`."
-msgstr ""
+msgstr "请注意，此处的扫描仪是即插即用设备，更改其连接的 USB 端口会改变 `usbconfig list` 的输出。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:725
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ugen3.2: <HP Deskjet 1050 J410 series> at usbus3, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)\n"
-msgstr ""
+msgstr "ugen3.2: <HP Deskjet 1050 J410 series> at usbus3, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:739
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bLength = 0x0012\n"
 "bDescriptorType = 0x0001\n"
@@ -1544,62 +1630,67 @@ msgid ""
 "iManufacturer = 0x0001  <HP>\n"
 "iProduct = 0x0002  <Deskjet 1050 J410 series>\n"
 "bNumConfigurations = 0x0001\n"
-msgstr ""
+msgstr "bLength = 0x0012\nbDescriptorType = 0x0001\nbcdUSB = 0x0200\nbDeviceClass = 0x0000  <Probed by interface class>\nbDeviceSubClass = 0x0000\nbDeviceProtocol = 0x0000\nbMaxPacketSize0 = 0x0040\nidVendor = 0x03f0\nidProduct = 0x8911\nbcdDevice = 0x0100\niManufacturer = 0x0001  <HP>\niProduct = 0x0002  <Deskjet 1050 J410 series>\nbNumConfigurations = 0x0001\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:742
+#, fuzzy
 msgid ""
 "Once the `idVendor` and the `idProduct` have been obtained, it is necessary "
 "to check in the link:http://www.sane-project.org/lists/sane-mfgs-cvs."
 "html[list of supported devices of SANE] if the scanner is supported by "
 "filtering by the idProduct."
-msgstr ""
+msgstr "获取 `idVendor` 和 `idProduct` 后，需要在 link:http://www.sane-project.org/lists/sane-mfgs-cvs.html[SANE 支持设备列表]中根据 idProduct 筛选，确认扫描仪是否受支持。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:744
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SANE Configuration"
-msgstr ""
+msgstr "SANE 配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:748
+#, fuzzy
 msgid ""
 "SANE provides the access to the scanner via backends.  To be able to scan "
 "with FreeBSD the package:graphics/sane-backends[] package must be installed "
 "by running the following command:"
-msgstr ""
+msgstr "SANE 通过后端提供对扫描仪的访问。要在 FreeBSD 上扫描，必须运行以下命令安装 package:graphics/sane-backends[] 软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:752
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install sane-backends\n"
-msgstr ""
+msgstr "# pkg install sane-backends\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:758
+#, fuzzy
 msgid ""
 "Some USB scanners require firmware to be loaded.  Like the HP scanner used "
 "in the example above, which needs the package package:print/hplip[] "
 "installed."
-msgstr ""
+msgstr "某些 USB 扫描仪需要加载固件。例如，上文使用的 HP 扫描仪需要安装 package:print/hplip[] 软件包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:761
+#, fuzzy
 msgid ""
 "After installing the necessary packages man:devd[8] must be configured to "
 "allow FreeBSD access to the scanner."
-msgstr ""
+msgstr "安装所需软件包后，必须配置 man:devd[8]，以允许 FreeBSD 访问扫描仪。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:763
+#, fuzzy
 msgid ""
 "Add the `saned.conf` file to [.filename]#/usr/local/etc/devd/saned.conf# "
 "with the following content:"
-msgstr ""
+msgstr "将 `saned.conf` 文件添加到 [.filename]#/usr/local/etc/devd/saned.conf#，内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "notify 100 {\n"
 "        match \"system\" \"USB\";\n"
@@ -1610,75 +1701,81 @@ msgid ""
 "        match \"product\" \"0x8911\"; <.>\n"
 "        action \"chown -L cups:saned /dev/\\$cdev && chmod -L 660 /dev/\\$cdev\";\n"
 "};\n"
-msgstr ""
+msgstr "notify 100 {\n        match \"system\" \"USB\";\n        match \"subsystem\" \"INTERFACE\";\n        match \"type\" \"ATTACH\";\n        match \"cdev\" \"ugen[0-9].[0-9]\";\n        match \"vendor\" \"0x03f0\"; <.>\n        match \"product\" \"0x8911\"; <.>\n        action \"chown -L cups:saned /dev/\\$cdev && chmod -L 660 /dev/\\$cdev\";\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:778
+#, fuzzy
 msgid ""
 "`vendor`: Is the idVendor obtained previously by running the `usbconfig -d "
 "3.2 dump_device_desc` command."
-msgstr ""
+msgstr "`vendor`：即先前运行 `usbconfig -d 3.2 dump_device_desc` 命令获取的 idVendor。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:779
+#, fuzzy
 msgid ""
 "`product`: Is the idProduct obtained previously by running the `usbconfig -d "
 "3.2 dump_device_desc` command."
-msgstr ""
+msgstr "`product`：即先前运行 `usbconfig -d 3.2 dump_device_desc` 命令获取的 idProduct。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:781
+#, fuzzy
 msgid ""
 "After that man:devd[8] must be restarted by running the following command:"
-msgstr ""
+msgstr "之后，必须运行以下命令重启 man:devd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:785
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service devd restart\n"
-msgstr ""
+msgstr "# service devd restart\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:788
+#, fuzzy
 msgid ""
 "The SANE backends include man:scanimage[1] which can be used to list the "
 "devices and perform an image acquisition."
-msgstr ""
+msgstr "SANE 后端包含 man:scanimage[1]，可用于列出设备并执行图像采集。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:790
+#, fuzzy
 msgid ""
 "Execute man:scanimage[1] with `-L` argument to list the scanner devices:"
-msgstr ""
+msgstr "使用 `-L` 参数运行 man:scanimage[1]，列出扫描仪设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:794
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# scanimage -L\n"
-msgstr ""
+msgstr "# scanimage -L\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:801
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "device `hpaio:/usb/Deskjet_1050_J410_series?serial=XXXXXXXXXXXXXX' is a Hewlett-Packard Deskjet_1050_J410_series all-in-one\n"
-msgstr ""
+msgstr "device `hpaio:/usb/Deskjet_1050_J410_series?serial=XXXXXXXXXXXXXX' is a Hewlett-Packard Deskjet_1050_J410_series all-in-one\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:804
+#, fuzzy
 msgid ""
 "If man:scanimage[1] is not able to identify the scanner, this message will "
 "appear:"
-msgstr ""
+msgstr "如果 man:scanimage[1] 无法识别扫描仪，将显示以下消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:811
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "No scanners were identified. If you were expecting something different,\n"
 "check that the scanner is plugged in, turned on and detected by the\n"
 "sane-find-scanner tool (if appropriate). Please read the documentation\n"
 "which came with this software (README, FAQ, manpages).\n"
-msgstr ""
+msgstr "No scanners were identified. If you were expecting something different,\ncheck that the scanner is plugged in, turned on and detected by the\nsane-find-scanner tool (if appropriate). Please read the documentation\nwhich came with this software (README, FAQ, manpages).\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:814
@@ -1692,72 +1789,74 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:816
+#, fuzzy
 msgid ""
 "To activate the service and have it run at boot execute the following "
 "command:"
-msgstr ""
+msgstr "要启用此服务并使其在启动时运行，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc saned_enable=YES\n"
-msgstr ""
+msgstr "# sysrc saned_enable=YES\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:823
+#, fuzzy
 msgid ""
 "While man:scanimage[1] can be used to perform an image acquisition from the "
 "command line, it is often preferable to use a graphical interface to perform "
 "image scanning."
-msgstr ""
+msgstr "虽然可以使用 man:scanimage[1] 从命令行执行图像采集，但通常更适合使用图形界面进行扫描。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:824
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Graphical scanner programs"
-msgstr ""
+msgstr "图形扫描程序"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:830
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "skanlite"
-msgstr ""
+msgstr "skanlite"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:833
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "graphics/skanlite"
-msgstr ""
+msgstr "graphics/skanlite"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GNOME Simple Scan"
-msgstr ""
+msgstr "GNOME 简易扫描"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:835
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 3.0"
-msgstr ""
+msgstr "GPL 3.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "graphics/simple-scan"
-msgstr ""
+msgstr "graphics/simple-scan"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:838
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "XSANE"
-msgstr ""
+msgstr "XSANE"
 
 #. type: Table
 #: documentation/content/en/books/handbook/multimedia/_index.adoc:841
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "graphics/xsane"
-msgstr ""
+msgstr "graphics/xsane"
 
 #, fuzzy, no-wrap
 #~| msgid "MP3 Players"

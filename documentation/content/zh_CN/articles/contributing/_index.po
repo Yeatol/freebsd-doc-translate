@@ -19,21 +19,22 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/contributing/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to contribute to the FreeBSD Project"
-msgstr ""
+msgstr "如何为 FreeBSD 项目做贡献"
 
 #. type: Title =
 #: documentation/content/en/articles/contributing/_index.adoc:1
 #: documentation/content/en/articles/contributing/_index.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributing to FreeBSD"
-msgstr ""
+msgstr "为 FreeBSD 做贡献"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:44
+#, fuzzy
 msgid "pass:[<!-- vale FreeBSD.Pronouns = NO -->]"
-msgstr ""
+msgstr "pass:[<!-- vale FreeBSD.Pronouns = NO -->]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:47
@@ -42,10 +43,11 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:49
+#, fuzzy
 msgid ""
 "This article describes the different ways in which an individual or "
 "organization may contribute to the FreeBSD Project."
-msgstr ""
+msgstr "本文介绍个人或组织可以通过哪些不同方式为 FreeBSD 项目做贡献。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:51
@@ -54,32 +56,36 @@ msgstr "'''"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:58
+#, fuzzy
 msgid ""
 "So you want to contribute to FreeBSD? That is great! FreeBSD _relies_ on the "
 "contributions of its user base to survive.  Your contributions are not only "
 "appreciated, they are vital to FreeBSD's continued growth."
-msgstr ""
+msgstr "想为 FreeBSD 做贡献吗？太好了！FreeBSD 的生存__依赖__用户群体的贡献。我们不仅感谢您的贡献，它们对 FreeBSD 的持续发展也至关重要。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:61
+#, fuzzy
 msgid ""
 "A large and growing number of international contributors, of greatly varying "
 "ages and areas of technical expertise, develop FreeBSD.  There is always "
 "more work to be done than there are people available to do it, and more help "
 "is always appreciated."
-msgstr ""
+msgstr "越来越多来自世界各地的贡献者参与 FreeBSD 的开发，他们年龄各异，技术专长也各不相同。需要完成的工作总是多于可投入的人手，因此我们始终欢迎更多帮助。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:65
+#, fuzzy
 msgid ""
 "As a volunteer, what you do is limited only by what you want to do.  "
 "However, we do ask that you are aware of what other members of the FreeBSD "
 "community will expect of you.  You may want to take this into account before "
 "deciding to volunteer."
-msgstr ""
+msgstr "作为志愿者，您能做什么只受您意愿的限制。不过，我们希望您了解 FreeBSD 社区其他成员对您的期待。在决定成为志愿者之前，您可能需要考虑这一点。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:69
+#, fuzzy
 msgid ""
 "The FreeBSD project is responsible for an entire operating system "
 "environment, rather than just a kernel or a few scattered utilities.  As "
@@ -87,10 +93,11 @@ msgid ""
 "documentation, beta testing and presentation, to the system installer and "
 "highly specialized types of kernel development.  People of any skill level, "
 "in almost any area, can almost certainly help the project."
-msgstr ""
+msgstr "FreeBSD 项目负责的是一个完整的操作系统环境，而不只是一个内核或一些零散的实用工具。因此，我们的 [.filename]#TODO# 列表涵盖了范围广泛的任务：从文档、测试版测试和演示，到系统安装程序以及高度专业化的内核开发。几乎任何技能水平、任何领域的人都能为项目提供帮助。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:77
+#, fuzzy
 msgid ""
 "Commercial entities engaged in FreeBSD-related enterprises are also "
 "encouraged to contact us.  Do you need a special extension to make your "
@@ -100,47 +107,51 @@ msgid ""
 "free software world is challenging many existing assumptions about how "
 "software is developed, sold, and maintained, and we urge you to at least "
 "give it a second look."
-msgstr ""
+msgstr "我们也鼓励从事 FreeBSD 相关业务的商业实体与我们联系。您是否需要某种特殊扩展才能让产品正常运行？只要要求不过于离谱，我们都愿意听取。您是否正在开发增值产品？请告诉我们！我们或许可以在某些方面开展合作。自由软件世界正在挑战人们对软件开发、销售和维护方式的诸多既有认知，我们鼓励您至少重新审视这些认知。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributing/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What Is Needed"
-msgstr ""
+msgstr "需要做什么"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:82
+#, fuzzy
 msgid ""
 "The following list of tasks and sub-projects represents something of an "
 "amalgam of various [.filename]#TODO# lists and user requests."
-msgstr ""
+msgstr "下面列出的任务和子项目，综合了各种 [.filename]#TODO# 列表和用户请求。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ongoing Non-Programmer Tasks"
-msgstr ""
+msgstr "持续进行的非程序员任务"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:89
+#, fuzzy
 msgid ""
 "Many people who are involved in FreeBSD are not programmers.  The Project "
 "includes documentation writers, Web designers, and support people.  All that "
 "these people need to contribute is an investment of time and a willingness "
 "to learn."
-msgstr ""
+msgstr "参与 FreeBSD 的许多人并非程序员。项目还包括文档撰写者、Web 设计师和支持人员。这些人只需投入时间并愿意学习，就能做出贡献。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:93
+#, fuzzy
 msgid ""
 "Read through the FAQ and Handbook periodically.  If anything is poorly "
 "explained, ambiguous, out of date or incorrect, let us know.  Even better, "
 "send us a fix (AsciiDoc is not difficult to learn, but there is no objection "
 "to plain text submissions)."
-msgstr ""
+msgstr "定期阅读 FAQ 和手册。如果有任何内容解释不清、含糊过时或不正确，请告诉我们。更好的做法是直接提交修正（AsciiDoc 并不难学，不过我们也接受纯文本提交）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:99
+#, fuzzy
 msgid ""
 "Help translate FreeBSD documentation into your native language.  If "
 "documentation already exists for your language, you can help translate "
@@ -153,100 +164,112 @@ msgid ""
 "almost always join the effort.  If you only have the time or energy to "
 "translate one part of the documentation, please translate the installation "
 "instructions."
-msgstr ""
+msgstr "帮助将 FreeBSD 文档翻译成您的母语。如果已经有您所用语言的文档，您可以协助翻译其他文档，或检查现有译文是否准确且为最新版本。首先，请查看 FreeBSD 文档项目入门指南中的 extref:{fdp-primer}translations[翻译 FAQ，translations]。这样做并不意味着您承诺翻译每一份 FreeBSD 文档——作为志愿者，您可以按自己的意愿多译或少译。如果您开始翻译，其他人几乎总会加入。如果您只有时间或精力翻译文档的一部分，请翻译安装说明。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:102
+#, fuzzy
 msgid ""
 "Read the {freebsd-questions} occasionally (or even regularly).  It can be "
 "very satisfying to share your expertise and help people solve their "
 "problems; sometimes you may even learn something new yourself! These forums "
 "can also be a source of ideas for things to improve upon."
-msgstr ""
+msgstr "偶尔（甚至定期）阅读 {freebsd-questions}。分享您的专业知识并帮助他人解决问题，会让人很有成就感；有时您自己甚至也能学到新东西！这些论坛也可以成为改进工作的灵感来源。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ongoing Programmer Tasks"
-msgstr ""
+msgstr "持续进行的程序员任务"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:108
+#, fuzzy
 msgid ""
 "Most of the tasks listed here may require a considerable investment of time, "
 "an in-depth knowledge of the FreeBSD kernel, or both.  However, there are "
 "also many useful tasks which are suitable for \"weekend hackers\"."
-msgstr ""
+msgstr "这里列出的大多数任务可能需要投入大量时间、深入了解 FreeBSD 内核，或两者兼具。不过，也有许多适合“周末黑客”的实用任务。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:110
+#, fuzzy
 msgid ""
 "If you run FreeBSD-CURRENT and have a good Internet connection, there is a "
 "machine `current.FreeBSD.org` which builds a full release once a day-every "
 "now and again, try to install the latest release from it and report any "
 "failures in the process."
-msgstr ""
+msgstr "如果您运行 FreeBSD-CURRENT 且拥有良好的互联网连接，可以使用一台名为 `current.FreeBSD.org` 的机器，它每天都会构建一个完整发行版。不妨时常尝试安装最新发行版，并报告过程中遇到的任何问题。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:113
+#, fuzzy
 msgid ""
 "Learn about changes or problems that have already been proposed.  There may "
 "be a problem you can comment constructively on or with patches you can "
 "test.  Or you could even try to fix one of the problems yourself."
-msgstr ""
+msgstr "了解已经提出的变更或问题。您或许可以对某个问题提出建设性意见，或测试相关补丁；也可以尝试亲自修复其中一个问题。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:114
+#, fuzzy
 msgid ""
 "One way is to read the {freebsd-bugs} (for issues submitted through "
 "Bugzilla)."
-msgstr ""
+msgstr "一种方法是阅读 {freebsd-bugs}（了解通过 Bugzilla 提交的问题）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:115
+#, fuzzy
 msgid ""
 "If you know of any bug fixes which have been successfully applied to -"
 "CURRENT but have not been merged into -STABLE after a decent interval "
 "(normally a couple of weeks), send the committer a polite reminder."
-msgstr ""
+msgstr "如果您知道某项错误修复已成功应用到 -CURRENT，但经过适当时间（通常是几周）仍未合并到 -STABLE，请礼貌地提醒提交者。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:116
+#, fuzzy
 msgid ""
 "Move contributed software to [.filename]#src/contrib# in the source tree."
-msgstr ""
+msgstr "将贡献的软件移至源代码树中的 [.filename]#src/contrib#。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:117
+#, fuzzy
 msgid "Make sure code in [.filename]#src/contrib# is up to date."
-msgstr ""
+msgstr "确保 [.filename]#src/contrib# 中的代码保持最新。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:119
+#, fuzzy
 msgid ""
 "Build the source tree (or just part of it) with extra warnings enabled and "
 "clean up the warnings.  A list of build warnings can also be found from our "
 "https://ci.freebsd.org[CI] by selecting a build and checking \"LLVM/Clang "
 "Warnings\"."
-msgstr ""
+msgstr "启用额外警告来构建源代码树（或其中一部分），并清理这些警告。也可以在我们的 link:https://ci.freebsd.org[CI] 中选择一个构建任务并查看“LLVM/Clang Warnings”，以查找构建警告列表。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:120
+#, fuzzy
 msgid ""
 "Fix warnings for ports which do deprecated things like using `gets()` or "
 "including [.filename]#malloc.h#."
-msgstr ""
+msgstr "修复那些执行已弃用操作（例如使用 `gets()` 或包含 [.filename]#malloc.h#）的 ports 中的警告。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:121
+#, fuzzy
 msgid ""
 "If you have contributed any ports and you had to make FreeBSD-specific "
 "changes, send your patches back to the original authors (this will make your "
 "life easier when they bring out the next version)."
-msgstr ""
+msgstr "如果您贡献了任何 port，并且为此进行了 FreeBSD 特定的修改，请将补丁发回原作者（这样他们发布下一个版本时，您会省事很多）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:126
+#, fuzzy
 msgid ""
 "Get copies of formal standards like POSIX(R).  Compare FreeBSD's behavior to "
 "that required by the standard.  If the behavior differs, particularly in "
@@ -254,21 +277,23 @@ msgid ""
 "you are able, figure out how to fix it and include a patch in the PR.  If "
 "you think the standard is wrong, ask the standards body to consider the "
 "question."
-msgstr ""
+msgstr "获取 POSIX(R) 等正式标准的副本，并将 FreeBSD 的行为与标准要求进行比较。如果行为不同，尤其是在规范中细微或晦涩的部分，请提交 PR。如果可以，请找出修复方法并在 PR 中附上补丁。如果您认为标准有误，请向标准组织提出，建议其考虑这个问题。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:127
+#, fuzzy
 msgid "Suggest further tasks for this list!"
-msgstr ""
+msgstr "欢迎为此列表提出更多任务！"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Work through the Bugzilla Problem Report Database"
-msgstr ""
+msgstr "处理 Bugzilla 问题报告数据库"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:135
+#, fuzzy
 msgid ""
 "The https://bugs.FreeBSD.org/search/[FreeBSD Problem Report list] shows all "
 "the current active problem reports and requests for enhancement that have "
@@ -278,196 +303,218 @@ msgid ""
 "tasks that just need an extra pair of eyes to look over them and confirm "
 "that the fix is a good one.  Others might be much more complex, or might not "
 "even have a fix included at all."
-msgstr ""
+msgstr "link:https://bugs.FreeBSD.org/search/[FreeBSD 问题报告列表]显示了 FreeBSD 用户通过 Bugzilla 提交的所有当前未结问题报告和功能增强请求。该数据库既包含程序员任务，也包含非程序员任务。请浏览未关闭的 PR，看看是否有感兴趣的内容。其中一些任务可能非常简单，只需多一双眼睛检查并确认修复是否可靠；另一些则可能复杂得多，甚至完全没有附带修复方案。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:138
+#, fuzzy
 msgid ""
 "Start with the PRs that have not been assigned to anyone else.  If a PR is "
 "assigned to someone else, but it looks like something you can handle, email "
 "the person it is assigned to and ask if you can work on it-they might "
 "already have a patch ready to be tested, or further ideas that you can "
 "discuss with them."
-msgstr ""
+msgstr "从尚未分配给其他人的 PR 开始。如果某个 PR 已分配给其他人，但您觉得自己可以处理，请给该负责人发邮件，询问您是否可以着手处理——对方可能已经准备好了待测试的补丁，或者有更多想法可以与您讨论。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ongoing Ports Tasks"
-msgstr ""
+msgstr "持续进行的 Ports 任务"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:144
+#, fuzzy
 msgid ""
 "The Ports Collection is a perpetual work in progress.  We want to provide "
 "our users with an easy to use, up to date, high quality repository of third "
 "party software.  We need people to donate some of their time and effort to "
 "help us achieve this goal."
-msgstr ""
+msgstr "Ports Collection 始终在不断发展。我们希望为用户提供易于使用、及时更新且质量上乘的第三方软件仓库。为实现这一目标，我们需要大家贡献一些时间和精力。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:148
+#, fuzzy
 msgid ""
 "Anyone can get involved, and there are lots of different ways to do so.  "
 "Contributing to ports is an excellent way to help \"give back\" something to "
 "the project.  Whether you are looking for an ongoing role, or a fun "
 "challenge for a rainy day, we would love to have your help!"
-msgstr ""
+msgstr "任何人都可以参与，而且参与方式多种多样。为 ports 做贡献是回馈项目的绝佳方式。无论您是想承担一项长期工作，还是想在雨天迎接一项有趣的挑战，我们都非常欢迎您的帮助！"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:150
+#, fuzzy
 msgid ""
 "There are a number of easy ways you can contribute to keeping the ports tree "
 "up to date and in good working order:"
-msgstr ""
+msgstr "您可以通过以下一些简单的方式，帮助保持 ports 树更新并正常运行："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:152
+#, fuzzy
 msgid ""
 "Find some cool or useful software and extref:{porters-handbook}[create a "
 "port] for it."
-msgstr ""
+msgstr "寻找一些有趣或实用的软件，并为其 extref:{porters-handbook}[创建一个 port]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:154
+#, fuzzy
 msgid ""
 "There are a large number of ports that have no maintainer.  Become a "
 "maintainer and crossref:contributing[adopt-port, Adopting an unmaintained "
 "port]."
-msgstr ""
+msgstr "有许多 port 没有维护者。您可以成为维护者，并 crossref:contributing[adopt-port, 接管无人维护的 port]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:155
+#, fuzzy
 msgid ""
 "If you have created or adopted a port, be aware of crossref:"
 "contributing[maintain-port, The challenge for port maintainers]."
-msgstr ""
+msgstr "如果您创建或接管了一个 port，请了解 crossref:contributing[maintain-port, port 维护者面临的挑战]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:156
+#, fuzzy
 msgid ""
 "When you are looking for a quick challenge you could crossref:"
 "contributing[fix-broken, Finding and fixing a broken port]."
-msgstr ""
+msgstr "如果您想快速迎接一项挑战，可以 crossref:contributing[fix-broken, 查找并修复损坏的 port]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Pick one of the items from the Ideas page"
-msgstr ""
+msgstr "从 Ideas 页面中挑选一项"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:161
+#, fuzzy
 msgid ""
 "The https://wiki.freebsd.org/IdeasPage[FreeBSD list of projects and ideas "
 "for volunteers] is also available for people willing to contribute to the "
 "FreeBSD project.  The list is being regularly updated and contains items for "
 "both programmers and non-programmers with information about each project."
-msgstr ""
+msgstr "link:https://wiki.freebsd.org/IdeasPage[FreeBSD 志愿者项目与创意列表]也面向愿意为 FreeBSD 项目做贡献的人开放。该列表会定期更新，其中包含适合程序员和非程序员的项目，并附有各项目的相关信息。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributing/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to Contribute"
-msgstr ""
+msgstr "如何做贡献"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:166
+#, fuzzy
 msgid ""
 "Contributions to the system generally fall into one or more of the following "
 "5 categories:"
-msgstr ""
+msgstr "对系统的贡献通常属于以下 5 类中的一类或多类："
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bug Reports and General Commentary"
-msgstr ""
+msgstr "错误报告和一般意见"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:173
+#, fuzzy
 msgid ""
 "An idea or suggestion of _general_ technical interest should be mailed to "
 "the {freebsd-hackers}.  Likewise, people with an interest in such things "
 "(and a tolerance for a _high_ volume of mail!) may subscribe to the {freebsd-"
 "hackers}.  See extref:{handbook}eresources[The FreeBSD Handbook, eresources-"
 "mail] for more information about this and other mailing lists."
-msgstr ""
+msgstr "具有__普遍__技术意义的想法或建议应发送到 {freebsd-hackers}。同样，对此类内容感兴趣（且能容忍邮件__数量很多__）的人可以订阅 {freebsd-hackers}。有关此邮件列表及其他邮件列表的更多信息，请参阅 extref:{handbook}eresources[FreeBSD 手册，eresources-mail]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:176
+#, fuzzy
 msgid ""
 "If you are submitting a simple patch to the src repo, please consider "
 "submitting it to the project's GitHub mirror as https://github.com/freebsd/"
 "freebsd-src/pulls[a pull request].  Suitable submissions should:"
-msgstr ""
+msgstr "如果您要向 src 仓库提交简单补丁，请考虑将其作为 link:https://github.com/freebsd/freebsd-src/pulls[a pull request] 提交到项目的 GitHub 镜像。合适的提交应满足以下条件："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:179
+#, fuzzy
 msgid ""
 "It is ready or nearly ready to be committed.  A committer should be able to "
 "land this patch with less than 10 minutes of additional work."
-msgstr ""
+msgstr "补丁已准备就绪或几乎准备就绪，可以提交。提交者只需不到 10 分钟的额外工作即可应用该补丁。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:180
+#, fuzzy
 msgid "It passes all the GitHub CI jobs."
-msgstr ""
+msgstr "补丁通过所有 GitHub CI 作业。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:181
+#, fuzzy
 msgid "You can respond to feedback quickly."
-msgstr ""
+msgstr "您能够迅速回应反馈。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:183
+#, fuzzy
 msgid ""
 "It touches fewer than about 10 files and the changes are less than about 200 "
 "lines.  Changes larger than this may be OK, or you may be asked to submit "
 "multiple pull requests of a more manageable size."
-msgstr ""
+msgstr "涉及的文件约少于 10 个，改动约少于 200 行。更大的改动也可能被接受，也可能会要求您拆分成多个规模更易管理的 pull request。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:185
+#, fuzzy
 msgid ""
 "Each logical change is a separate commit within the pull request.  Commit "
 "messages for each change should follow extref:{committers-guide}#commit-log-"
 "message[commit log guide]."
-msgstr ""
+msgstr "每项逻辑变更都应作为 pull request 中的独立提交。每项变更的提交消息应遵循 extref:{committers-guide}#commit-log-message[提交日志指南]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:187
+#, fuzzy
 msgid ""
 "All commits have your name and valid email address as you'd like to see them "
 "in the FreeBSD repository as the author.  Fake github.com addresses cannot "
 "be used."
-msgstr ""
+msgstr "所有提交都应使用您希望在 FreeBSD 仓库中显示为作者的姓名和有效电子邮件地址。不能使用虚假的 github.com 地址。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:189
+#, fuzzy
 msgid ""
 "The scope of the pull request should not change during review.  If the "
 "review suggests changes that expand the scope, please create an independent "
 "pull request."
-msgstr ""
+msgstr "在审查期间，pull request 的范围不应改变。如果审查意见建议扩大范围，请另行创建独立的 pull request。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:191
+#, fuzzy
 msgid ""
 "Fixup commits should be squashed with the commit they are fixing.  Each "
 "commit in your branch should be suitable for FreeBSD's repository."
-msgstr ""
+msgstr "修正提交应与其所修复的提交合并压缩。您分支中的每项提交都应适合进入 FreeBSD 仓库。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:192
+#, fuzzy
 msgid ""
 "Commits should include one or more `Signed-off-by:` lines with full name and "
 "email address certifying https://developercertificate.org/[Developer "
 "Certificate of Origin]."
-msgstr ""
+msgstr "提交应包含一行或多行 `Signed-off-by:`，并附上完整姓名和电子邮件地址，以证明符合 link:https://developercertificate.org/[开发者来源证书]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:197
+#, fuzzy
 msgid ""
 "When updating pull request, please rebase with a forced push rather than a "
 "merge commit.  More complex changes may be submitted as pull requests, but "
@@ -476,26 +523,29 @@ msgid ""
 "Please avoid creating large, wide-ranging cleanup patches: they are too "
 "large and lack the focus needed for a good review.  Misdirected patches may "
 "be redirected to a more appropriate forum for the patch to be resolved."
-msgstr ""
+msgstr "更新 pull request 时，请使用强制推送进行变基，而不是创建合并提交。更复杂的变更也可以作为 pull request 提交，但如果规模过大、难以处理、长期没有活动、需要社区进一步讨论或需要大量修改，就可能会被关闭。请避免创建规模庞大、范围广泛的清理补丁：这类补丁过大，缺乏良好审查所需的重点。方向不合适的补丁可能会被转交到更适合的渠道处理。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:201
+#, fuzzy
 msgid ""
 "Pull requests submitted to the ports repository may or may not see action, "
 "based on the whims of developers.  For now, you will have a better "
 "experience if you follow the ports submission process crossref:"
 "contributing[ports-contributing, Contributing to ports]."
-msgstr ""
+msgstr "提交到 ports 仓库的 pull request 是否会得到处理，取决于开发者的安排。目前，按照 ports 提交流程 crossref:contributing[ports-contributing, 为 ports 做贡献]会有更好的体验。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:203
+#, fuzzy
 msgid ""
 "The docs team also accepts pull requests via GitHub, but has not established "
 "any policy for them yet."
-msgstr ""
+msgstr "文档团队也接受通过 GitHub 提交的 pull request，但尚未为此制定任何政策。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:210
+#, fuzzy
 msgid ""
 "If you find a bug or are submitting a specific change, please report it "
 "using the https://bugs.FreeBSD.org/submit/[Bugzilla bug submission form].  "
@@ -506,46 +556,50 @@ msgid ""
 "turns tabs into spaces and makes them unusable.  When patches are a lot "
 "larger than 20KB, consider compressing them (for example with man:gzip[1] or "
 "man:bzip2[1]) prior to uploading them."
-msgstr ""
+msgstr "如果您发现了错误或要提交特定变更，请使用 link:https://bugs.FreeBSD.org/submit/[Bugzilla 错误提交表单]进行报告。请尽量填写错误报告中的每个字段。如果补丁不超过 65KB，请直接附在报告中。如果补丁适合应用到源代码树，请在报告摘要中加入 `[PATCH]`。附上补丁时，__不要__使用剪切和粘贴，因为这样会将制表符转换为空格，导致补丁无法使用。如果补丁远大于 20KB，请考虑在上传前使用 man:gzip[1] 或 man:bzip2[1] 等工具压缩。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:213
+#, fuzzy
 msgid ""
 "After filing a report, you should receive confirmation along with a tracking "
 "number.  Keep this tracking number so that you can update us with details "
 "about the problem."
-msgstr ""
+msgstr "提交报告后，您应会收到确认信息和一个跟踪编号。请保留该编号，以便后续向我们补充问题详情。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:215
+#, fuzzy
 msgid ""
 "See also extref:{problem-reports}[this article] on how to write good problem "
 "reports."
-msgstr ""
+msgstr "另请参阅 extref:{problem-reports}[这篇文章]，了解如何撰写优质的问题报告。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Changes to the Documentation"
-msgstr ""
+msgstr "文档变更"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:221
+#, fuzzy
 msgid ""
 "Changes to the documentation are overseen by the {freebsd-doc}.  Please look "
 "at the extref:{fdp-primer}[FreeBSD Documentation Project Primer] for "
 "complete instructions.  Send submissions and changes (even small ones are "
 "welcome!) using the same method as any other bug report."
-msgstr ""
+msgstr "文档变更由 {freebsd-doc} 负责监督。完整说明请参阅 extref:{fdp-primer}[FreeBSD 文档项目入门指南]。请使用与其他错误报告相同的方式提交内容和变更（即使是小改动，我们也欢迎！）。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Changes to Existing Source Code"
-msgstr ""
+msgstr "现有源代码的变更"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:227
+#, fuzzy
 msgid ""
 "An addition or change to the existing source code is a somewhat trickier "
 "affair and depends a lot on how far out of date you are with the current "
@@ -554,38 +608,41 @@ msgid ""
 "ways for the convenience of developers working actively on the system.  See "
 "extref:{handbook}cutting-edge[The FreeBSD Handbook, current-stable] for more "
 "information about getting and using FreeBSD-CURRENT."
-msgstr ""
+msgstr "添加或修改现有源代码要复杂一些，并且很大程度上取决于您对当前 FreeBSD 开发进展的了解程度。FreeBSD 有一个名为“FreeBSD-CURRENT”的特殊持续发行版本，通过多种方式提供，方便积极参与系统开发的开发者使用。有关获取和使用 FreeBSD-CURRENT 的更多信息，请参阅 extref:{handbook}cutting-edge[FreeBSD 手册，current-stable]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:230
+#, fuzzy
 msgid ""
 "Working from older sources unfortunately means that your changes may "
 "sometimes be too obsolete or too divergent for easy re-integration into "
 "FreeBSD.  Chances of this can be minimized somewhat by subscribing to the "
 "{freebsd-announce} and the {freebsd-current} lists, where discussions on the "
 "current state of the system take place."
-msgstr ""
+msgstr "遗憾的是，使用较旧的源代码进行开发，有时会导致您的变更过时或与当前代码差异过大，难以重新集成到 FreeBSD 中。订阅 {freebsd-announce} 和 {freebsd-current} 邮件列表，可以在一定程度上降低这种风险；这些列表会讨论系统的当前状态。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:233
+#, fuzzy
 msgid ""
 "Assuming that you can manage to secure fairly up-to-date sources to base "
 "your changes on, the next step is to produce a set of diffs to send to the "
 "FreeBSD maintainers.  This is done with the man:diff[1] command."
-msgstr ""
+msgstr "假设您已经设法获取了相当新的源代码作为变更基础，下一步就是生成一组差异文件并发送给 FreeBSD 维护者。此操作可通过 man:diff[1] 命令完成。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/contributing/_index.adoc:235
+#, fuzzy
 msgid ""
 "The preferred man:diff[1] format for submitting patches is the unified "
 "output format generated by `diff -u`."
-msgstr ""
+msgstr "提交补丁时，首选使用 man:diff[1] 的统一输出格式，即由 `diff -u` 生成的格式。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/contributing/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% diff -u oldfile newfile\n"
-msgstr ""
+msgstr "% diff -u oldfile newfile\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:242
@@ -594,24 +651,27 @@ msgstr "或"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/contributing/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% diff -u -r -N olddir newdir\n"
-msgstr ""
+msgstr "% diff -u -r -N olddir newdir\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:249
+#, fuzzy
 msgid ""
 "would generate a set of unified diffs for the given source file or directory "
 "hierarchy."
-msgstr ""
+msgstr "这会为给定的源文件或目录层次结构生成一组统一差异。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:251
+#, fuzzy
 msgid "See man:diff[1] for more information."
-msgstr ""
+msgstr "更多信息请参阅 man:diff[1]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:255
+#, fuzzy
 msgid ""
 "Once you have a set of diffs (which you may test with the man:patch[1] "
 "command), you may submit them for inclusion with FreeBSD as a Bugzilla "
@@ -620,17 +680,19 @@ msgid ""
 "volunteer project!); because we are busy, we may not be able to address it "
 "immediately, but it will remain in the PR database until we do.  Indicate "
 "your submission by including `[PATCH]` in the synopsis of the report."
-msgstr ""
+msgstr "获得一组差异后（可使用 man:patch[1] 命令进行测试），你可以将其作为 Bugzilla 问题报告提交，以便将其纳入 FreeBSD。__不要__只把差异发送到 {freebsd-hackers}，否则它们会被遗漏！我们非常感谢你的提交（这是一个志愿者项目！）；由于我们事务繁忙，可能无法立即处理，但报告会一直保留在 PR 数据库中，直到我们处理为止。请在报告的概要中加入 `[PATCH]`，以表明你提交的是补丁。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:257
+#, fuzzy
 msgid ""
 "If you feel it appropriate (for example you have added, deleted, or renamed "
 "files), bundle your changes into a `tar` file."
-msgstr ""
+msgstr "如果你认为合适（例如，你添加、删除或重命名了文件），可以将更改打包成 `tar` 文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:261
+#, fuzzy
 msgid ""
 "If your change is of a potentially sensitive nature, such as if you are "
 "unsure of copyright issues governing its further distribution then you "
@@ -638,24 +700,26 @@ msgid ""
 "report.  The {core-email} reaches a much smaller group of people who do much "
 "of the day-to-day work on FreeBSD.  Note that this group is also _very busy_ "
 "and so you should only send mail to them where it is truly necessary."
-msgstr ""
+msgstr "如果你的更改可能涉及敏感问题，例如你不确定其后续分发所受的版权限制，应直接发送给 {core-email}，而不是作为错误报告提交。{core-email} 会联系到一个人数少得多的团队，他们承担着 FreeBSD 的许多日常工作。请注意，这个团队也__非常忙碌__，因此只有在确有必要时才应给他们发邮件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:264
+#, fuzzy
 msgid ""
 "Please refer to man:intro[9] and man:style[9] for some information on coding "
 "style.  We would appreciate it if you were at least aware of this "
 "information before submitting code."
-msgstr ""
+msgstr "有关编码风格的信息，请参阅 man:intro[9] 和 man:style[9]。我们希望你在提交代码前至少了解这些信息。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New Code or Major Value-Added Packages"
-msgstr ""
+msgstr "新代码或具有重要附加价值的软件包"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:269
+#, fuzzy
 msgid ""
 "In the case of a significant contribution of a large body work, or the "
 "addition of an important new feature to FreeBSD, it becomes almost always "
@@ -663,149 +727,161 @@ msgid ""
 "site for other people to access.  If you do not have access to a web or FTP "
 "site, ask on an appropriate FreeBSD mailing list for someone to host the "
 "changes for you."
-msgstr ""
+msgstr "如果要贡献大量工作，或为 FreeBSD 添加重要的新功能，通常需要将更改作为 `tar` 文件发送，或上传到网站或 FTP 站点供他人访问。如果你无法使用网站或 FTP 站点，请在合适的 FreeBSD 邮件列表上询问是否有人可以代你托管这些更改。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:274
+#, fuzzy
 msgid ""
 "When working with large amounts of code, the touchy subject of copyrights "
 "also invariably comes up.  FreeBSD prefers free software licenses such as "
 "BSD or ISC.  Copyleft licenses such as GPLv2 are sometimes permitted.  The "
 "complete listing can be found in the extref:{license-guide}[FreeBSD License "
 "Policies] article."
-msgstr ""
+msgstr "处理大量代码时，版权这个棘手的话题也总会出现。FreeBSD 倾向于采用 BSD 或 ISC 等自由软件许可证。有时也允许采用 GPLv2 等著佐权许可证。完整列表请参阅 extref:{license-guide}[FreeBSD 许可证政策]一文。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Money or Hardware"
-msgstr ""
+msgstr "资金或硬件"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:279
+#, fuzzy
 msgid ""
 "We are always very happy to accept donations to further the cause of the "
 "FreeBSD Project and, in a volunteer effort like ours, a little can go a long "
 "way! Donations of hardware are also very important to expanding our list of "
 "supported peripherals since we generally lack the funds to buy such items "
 "ourselves."
-msgstr ""
+msgstr "我们始终非常乐意接受捐赠，以推动 FreeBSD 项目的发展；对于像我们这样的志愿者项目来说，涓滴之力也能产生深远影响！硬件捐赠对于扩展我们支持的外设种类也非常重要，因为我们通常没有资金自行购买这些设备。"
 
 #. type: Title ====
 #: documentation/content/en/articles/contributing/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Donating Funds"
-msgstr ""
+msgstr "捐赠资金"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:286
+#, fuzzy
 msgid ""
 "The https://www.freebsdfoundation.org[FreeBSD Foundation] is a non-profit, "
 "tax-exempt foundation established to further the goals of the FreeBSD "
 "Project.  As a 501(c)3 entity, the Foundation is generally exempt from US "
 "federal income tax as well as Colorado State income tax.  Donations to a tax-"
 "exempt entity are often deductible from taxable federal income."
-msgstr ""
+msgstr "link:https://www.freebsdfoundation.org[FreeBSD 基金会] 是一个非营利、免税的基金会，旨在推动 FreeBSD 项目的目标。作为一个 501(c)3 实体，基金会通常免缴美国联邦所得税以及科罗拉多州所得税。向免税实体捐款通常可以从应税联邦收入中扣除。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:288
+#, fuzzy
 msgid "Donations may be sent in check form to:"
-msgstr ""
+msgstr "捐款可以支票形式寄至："
 
 #. type: delimited block * 4
 #: documentation/content/en/articles/contributing/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "The FreeBSD Foundation\n"
 "3980 Broadway Street\n"
 "STE #103-107\n"
 "Boulder CO 80304\n"
 "USA"
-msgstr ""
+msgstr "The FreeBSD Foundation\n3980 Broadway Street\nSTE #103-107\nBoulder CO 80304\nUSA"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:299
+#, fuzzy
 msgid ""
 "The FreeBSD Foundation is also able to accept https://www.freebsdfoundation."
 "org/donate/[online donations] through various payment options."
-msgstr ""
+msgstr "FreeBSD 基金会还可以通过多种付款方式接受 link:https://www.freebsdfoundation.org/donate/[在线捐款]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:302
+#, fuzzy
 msgid ""
 "More information about the FreeBSD Foundation can be found in https://people."
 "FreeBSD.org/~jdp/foundation/announcement.html[The FreeBSD Foundation -- an "
 "Introduction].  To contact the Foundation by email, write to mailto:"
 "info@FreeBSDFoundation.org[info@FreeBSDFoundation.org]."
-msgstr ""
+msgstr "有关 FreeBSD 基金会的更多信息，请参阅 link:https://people.FreeBSD.org/~jdp/foundation/announcement.html[FreeBSD 基金会——简介]。如需通过电子邮件联系基金会，请写信至 mailto:info@FreeBSDFoundation.org[info@FreeBSDFoundation.org]。"
 
 #. type: Title ====
 #: documentation/content/en/articles/contributing/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Donating Hardware"
-msgstr ""
+msgstr "捐赠硬件"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:307
+#, fuzzy
 msgid ""
 "The FreeBSD Project happily accepts donations of hardware that it can find "
 "good use for.  If you are interested in donating hardware, please contact "
 "the link:https://www.FreeBSD.org/donations/[Donations Liaison Office]."
-msgstr ""
+msgstr "FreeBSD 项目很乐意接受能够派上用场的硬件捐赠。如果你有意捐赠硬件，请联系 link:https://www.FreeBSD.org/donations/[捐赠联络办公室]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributing/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributing to ports"
-msgstr ""
+msgstr "为 Ports 做贡献"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Adopting an unmaintained port"
-msgstr ""
+msgstr "接手无人维护的 port"
 
 #. type: Title ====
 #: documentation/content/en/articles/contributing/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Choosing an unmaintained port"
-msgstr ""
+msgstr "选择无人维护的 port"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:320
+#, fuzzy
 msgid ""
 "Taking over maintainership of ports that are unmaintained is a great way to "
 "get involved.  Unmaintained ports are only updated and fixed when somebody "
 "volunteers to work on them.  There are a large number of unmaintained "
 "ports.  It is a good idea to start with adopting a port that you use "
 "regularly."
-msgstr ""
+msgstr "接手维护无人维护的 port，是参与项目的绝佳方式。只有有人自愿维护时，无人维护的 port 才会得到更新和修复。无人维护的 port 数量很多。最好从接手一个你经常使用的 port 开始。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:323
+#, fuzzy
 msgid ""
 "Unmaintained ports have their `MAINTAINER` set to `ports@FreeBSD.org`.  Many "
 "unmaintained ports can have pending updates, this can be seen at the https://"
 "portscout.freebsd.org/ports@freebsd.org.html[FreeBSD Ports distfile scanner]."
-msgstr ""
+msgstr "无人维护的 port，其 `MAINTAINER` 设置为 `ports@FreeBSD.org`。许多无人维护的 port 可能有待处理的更新，可在 link:https://portscout.freebsd.org/ports@freebsd.org.html[FreeBSD Ports distfile 扫描器]中查看。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:325
+#, fuzzy
 msgid ""
 "On https://portsfallout.com/fallout?port=&maintainer=ports%40FreeBSD."
 "org[PortsFallout] can be seen a list of unmaintained ports with errors."
-msgstr ""
+msgstr "link:https://portsfallout.com/fallout?port=&maintainer=ports%40FreeBSD.org[PortsFallout] 上可以查看存在错误的无人维护 port 列表。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:328
+#, fuzzy
 msgid ""
 "Some ports affect a large number of others due to dependencies and secondary "
 "port relationships.  Generally, we want people to have some experience "
 "before they maintain such ports."
-msgstr ""
+msgstr "由于依赖关系和次级 port 关系，有些 port 会影响大量其他 port。通常，我们希望维护这类 port 的人具备一定经验。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:332
+#, fuzzy
 msgid ""
 "You can find out whether or not a port has dependencies or secondary ports "
 "by looking at a primary index of ports called [.filename]#INDEX#.  (The name "
@@ -813,25 +889,27 @@ msgid ""
 "filename]#INDEX-13#.) Some ports have conditional dependencies that are not "
 "included in a default [.filename]#INDEX# build.  We expect you to be able to "
 "recognize such ports by looking through other ports' [.filename]#Makefile#'s."
-msgstr ""
+msgstr "你可以通过名为 [.filename]#INDEX# 的 port 主索引，了解某个 port 是否有依赖项或次级 port。（该文件名因 FreeBSD 发行版本而异，例如 [.filename]#INDEX-13#。）有些 port 存在条件依赖项，不会包含在默认的 [.filename]#INDEX# 构建中。我们希望你能够通过查看其他 port 的 [.filename]#Makefile# 来识别这类 port。"
 
 #. type: Title ====
 #: documentation/content/en/articles/contributing/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to adopt the port"
-msgstr ""
+msgstr "如何接手维护 port"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:338
+#, fuzzy
 msgid ""
 "First make sure you understand your crossref:contributing[maintain-port, The "
 "challenge for port maintainers].  Also read the extref:{porters-handbook}"
 "[Porter's Handbook].  _Please do not commit yourself to more than you feel "
 "you can comfortably handle._"
-msgstr ""
+msgstr "首先，请确保你了解 crossref:contributing[maintain-port, port 维护者面临的挑战]。还请阅读 extref:{porters-handbook}[Porter's Handbook]。__请勿承担超出自己能力范围的工作。__"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:344
+#, fuzzy
 msgid ""
 "You may request maintainership of any unmaintained port as soon as you "
 "wish.  Simply set `MAINTAINER` to your own email address and send a Problem "
@@ -840,224 +918,250 @@ msgid ""
 "because many committers are less willing to assign maintainership to someone "
 "who does not have a known track record with FreeBSD.  Submitting PRs that "
 "fix build errors or update ports are the best ways to establish one."
-msgstr ""
+msgstr "你可以随时申请维护任何无人维护的 port。只需将 `MAINTAINER` 设置为你自己的电子邮件地址，并提交一份包含该更改的问题报告。如果该 port 有构建错误或需要更新，你也可以考虑在同一个 PR 中包含其他更改。这样会有所帮助，因为许多提交者不太愿意将维护权交给在 FreeBSD 上没有已知贡献记录的人。提交修复构建错误或更新 port 的 PR，是建立贡献记录的最佳方式。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:348
+#, fuzzy
 msgid ""
 "File your PR with Product `Ports & Packages`.  A committer will examine your "
 "PR, commit the changes, and finally close the PR.  Sometimes this process "
 "can take a little while (committers are volunteers, too :)."
-msgstr ""
+msgstr "请将 PR 的产品类别设为 `Ports & Packages`。提交者会检查你的 PR、提交更改，最后关闭 PR。这个过程有时需要一些时间（提交者也是志愿者 ：)）。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The challenge for port maintainers"
-msgstr ""
+msgstr "port 维护者面临的挑战"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:353
+#, fuzzy
 msgid ""
 "This section will give you an idea of why ports need to be maintained and "
 "outline the responsibilities of a port maintainer."
-msgstr ""
+msgstr "本节将介绍为什么需要维护 port，并概述 port 维护者的职责。"
 
 #. type: Title ====
 #: documentation/content/en/articles/contributing/_index.adoc:355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why ports require maintenance"
-msgstr ""
+msgstr "为什么 port 需要维护"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:360
+#, fuzzy
 msgid ""
 "Creating a port is a once-off task.  Ensuring that a port is up to date and "
 "continues to build and run requires an ongoing maintenance effort.  "
 "Maintainers are the people who dedicate some of their time to meeting these "
 "goals."
-msgstr ""
+msgstr "创建 port 是一次性工作。要确保 port 保持最新并持续正常构建和运行，则需要持续维护。维护者会投入部分时间来实现这些目标。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:363
+#, fuzzy
 msgid ""
 "The foremost reason ports need maintenance is to bring the latest and "
 "greatest in third party software to the FreeBSD community.  An additional "
 "challenge is to keep individual ports working within the Ports Collection "
 "framework as it evolves."
-msgstr ""
+msgstr "需要维护 port 的首要原因，是为 FreeBSD 社区提供最新、最好的第三方软件。另一个挑战是随着 Ports Collection 的演进，确保各个 port 在其框架内继续正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:365
+#, fuzzy
 msgid "As a maintainer, you will need to manage the following challenges:"
-msgstr ""
+msgstr "作为维护者，你需要应对以下挑战："
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:367
+#, fuzzy
 msgid ""
 "*New software versions and updates.* New versions and updates of existing "
 "ported software become available all the time, and these need to be "
 "incorporated into the Ports Collection to provide up-to-date software."
-msgstr ""
+msgstr "*新软件版本和更新。* 已移植软件的新版本和更新不断推出，需要将其纳入 Ports Collection，以提供最新的软件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:369
+#, fuzzy
 msgid ""
 "*Changes to dependencies.* If significant changes are made to the "
 "dependencies of your port, it may need to be updated so that it will "
 "continue to work correctly."
-msgstr ""
+msgstr "*依赖项变更。* 如果 port 的依赖项发生重大变化，可能需要更新该 port，才能确保其继续正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:371
+#, fuzzy
 msgid ""
 "*Changes affecting dependent ports.* If other ports depend on a port that "
 "you maintain, changes to your port may require coordination with other "
 "maintainers."
-msgstr ""
+msgstr "*影响依赖 port 的变更。* 如果其他 port 依赖你维护的 port，你对该 port 所做的更改可能需要与其他维护者协调。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:374
+#, fuzzy
 msgid ""
 "*Interaction with other users, maintainers and developers.* Part of being a "
 "maintainer is taking on a support role.  You are not expected to provide "
 "general support (but we welcome it if you choose to do so). What you should "
 "provide is a point of coordination for FreeBSD-specific issues regarding "
 "your ports."
-msgstr ""
+msgstr "*与其他用户、维护者和开发者沟通。* 承担维护者职责也意味着提供支持。我们不要求你提供一般性支持（但如果你愿意，我们也欢迎）。你应当为涉及 FreeBSD 的 port 特定问题提供协调联系点。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:378
+#, fuzzy
 msgid ""
 "*Bug hunting.* A port may be affected by bugs which are specific to "
 "FreeBSD.  You will need to investigate, find, and fix these bugs when they "
 "are reported.  Thoroughly testing a port to identify problems before they "
 "make their way into the Ports Collection is even better."
-msgstr ""
+msgstr "*查找错误。* port 可能受到 FreeBSD 特有错误的影响。报告此类错误后，你需要调查、查明并修复它们。更好的做法是在问题进入 Ports Collection 之前，充分测试 port 并找出问题。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:381
+#, fuzzy
 msgid ""
 "*Changes to ports infrastructure and policy.* Occasionally the systems that "
 "are used to build ports and packages are updated or a new recommendation "
 "affecting the infrastructure is made.  You should be aware of these changes "
 "in case your ports are affected and require updating."
-msgstr ""
+msgstr "*Ports 基础设施和政策变更。* 用于构建 port 和软件包的系统偶尔会更新，或者会有影响基础设施的新建议出台。你应了解这些变更，以便在自己的 port 受到影响并需要更新时及时处理。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:384
+#, fuzzy
 msgid ""
 "*Changes to the base system.* FreeBSD is under constant development.  "
 "Changes to software, libraries, the kernel or even policy changes can cause "
 "flow-on change requirements to ports."
-msgstr ""
+msgstr "*基本系统变更。* FreeBSD 一直在持续开发。软件、库、内核甚至政策的变更，都可能导致 port 需要进行相应调整。"
 
 #. type: Title ====
 #: documentation/content/en/articles/contributing/_index.adoc:385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Maintainer responsibilities"
-msgstr ""
+msgstr "维护者的职责"
 
 #. type: Title =====
 #: documentation/content/en/articles/contributing/_index.adoc:387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Keep your ports up to date"
-msgstr ""
+msgstr "保持 port 为最新版本"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:390
+#, fuzzy
 msgid ""
 "This section outlines the process to follow to keep your ports up to date."
-msgstr ""
+msgstr "本节概述了保持 port 为最新版本所需遵循的流程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:393
+#, fuzzy
 msgid ""
 "This is an overview.  More information about upgrading a port is available "
 "in the extref:{porters-handbook}[Porter's Handbook]."
-msgstr ""
+msgstr "以下是概述。有关升级 port 的更多信息，请参阅 extref:{porters-handbook}[Porter's Handbook]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:397
+#, fuzzy
 msgid "Watch for updates"
-msgstr ""
+msgstr "关注更新"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:402
+#, fuzzy
 msgid ""
 "Monitor the upstream vendor for new versions, updates and security fixes for "
 "the software.  Announcement mailing lists or news web pages are useful for "
 "doing this.  Sometimes users will contact you and ask when your port will be "
 "updated.  If you are busy with other things or for any reason just cannot "
 "update it at the moment, ask if they will help you by submitting an update."
-msgstr ""
+msgstr "关注上游供应商发布的软件新版本、更新和安全修复。公告邮件列表或新闻网页都可以用来获取这些信息。有时用户会联系你，询问 port 何时更新。如果你忙于其他事情，或因任何原因暂时无法更新，可以询问他们是否愿意通过提交更新来提供帮助。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:405
+#, fuzzy
 msgid ""
 "You may also receive automated email from the `FreeBSD Ports Version Check` "
 "informing you that a newer version of your port's distfile is available.  "
 "More information about that system (including how to stop future emails) "
 "will be provided in the message."
-msgstr ""
+msgstr "你也可能收到来自 `FreeBSD Ports Version Check` 的自动邮件，告知你的 port 有更新版本的 distfile 可用。该系统的更多信息（包括如何停止后续邮件）会在邮件中说明。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:406
+#, fuzzy
 msgid "Incorporate changes"
-msgstr ""
+msgstr "合并更改"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:409
+#, fuzzy
 msgid ""
 "When they become available, incorporate the changes into the port.  You need "
 "to be able to generate a patch between the original port and your updated "
 "port."
-msgstr ""
+msgstr "有更新时，请将更改合并到 port 中。你需要能够生成原始 port 与更新后 port 之间的补丁。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:410
+#, fuzzy
 msgid "Review and test"
-msgstr ""
+msgstr "审查和测试"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:412
+#, fuzzy
 msgid "Thoroughly review and test your changes:"
-msgstr ""
+msgstr "请彻底审查并测试你的更改："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:415
+#, fuzzy
 msgid ""
 "Build, install and test your port on as many platforms and architectures as "
 "you can.  It is common for a port to work on one branch or platform and fail "
 "on another."
-msgstr ""
+msgstr "尽可能在多种平台和架构上构建、安装并测试你的 port。一个 port 在某个分支或平台上正常工作，却在另一个分支或平台上失败，这种情况很常见。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:418
+#, fuzzy
 msgid ""
 "Make sure your port's dependencies are complete.  The recommended way of "
 "doing this is by installing your own ports tinderbox.  See crossref:"
 "contributing[resources, Resources for ports maintainers and contributors] "
 "for more information."
-msgstr ""
+msgstr "确保 port 的依赖项完整。推荐的做法是安装自己的 ports tinderbox。更多信息请参阅 crossref:contributing[resources, port 维护者和贡献者资源]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:420
+#, fuzzy
 msgid ""
 "Check that the packing list is up to date.  This involves adding in any new "
 "files and directories and removing unused entries."
-msgstr ""
+msgstr "检查打包清单是否为最新版本。这包括添加任何新文件和目录，并删除未使用的条目。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:422
+#, fuzzy
 msgid ""
 "Verify your port using man:portlint[1] as a guide.  See crossref:"
 "contributing[resources, Resources for ports maintainers and contributors] "
 "for important information about using portlint."
-msgstr ""
+msgstr "以 man:portlint[1] 为指导检查你的 port。有关使用 portlint 的重要信息，请参阅 crossref:contributing[resources, port 维护者和贡献者资源]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:425
+#, fuzzy
 msgid ""
 "Consider whether changes to your port might cause any other ports to break.  "
 "If this is the case, coordinate the changes with the maintainers of those "
@@ -1065,107 +1169,120 @@ msgid ""
 "library version; in this case, at the very least, the dependent ports will "
 "need to get a `PORTREVISION` bump so that they will automatically be "
 "upgraded by automated tools such as package:ports-mgmt/poudriere[]."
-msgstr ""
+msgstr "考虑对你的 port 所做的更改是否可能导致其他 port 无法正常工作。如果会，应与这些 port 的维护者协调更改。如果更新改变了共享库版本，这一点尤其重要；此时至少需要为依赖该库的 port 增加 `PORTREVISION`，以便 package:ports-mgmt/poudriere[] 等自动化工具自动升级它们。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:427
 #: documentation/content/en/articles/contributing/_index.adoc:496
+#, fuzzy
 msgid "Submit changes"
-msgstr ""
+msgstr "提交更改"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:430
+#, fuzzy
 msgid ""
 "Send your update by submitting a Problem Report with an explanation of the "
 "changes and a patch containing the differences between the original port and "
 "the updated one.  Please refer to extref:{problem-reports}[Writing FreeBSD "
 "Problem Reports] for information on how to write a really good PR."
-msgstr ""
+msgstr "提交更新时，请附上一份问题报告，说明更改内容，并提供包含原始 port 与更新后 port 之间差异的补丁。有关如何撰写优秀 PR 的信息，请参阅 extref:{problem-reports}[撰写 FreeBSD 问题报告]。"
 
 #. type: delimited block = 6
 #: documentation/content/en/articles/contributing/_index.adoc:436
+#, fuzzy
 msgid ""
 "Please do not submit a man:shar[1] archive of the entire port; instead, use "
 "man:git-format-patch[1] or man:diff[1] `-ruN`.  In this way, committers can "
 "much more easily see exactly what changes are being made.  The Porter's "
 "Handbook section on extref:{porters-handbook}upgrading[Upgrading, port-"
 "upgrading] has more information."
-msgstr ""
+msgstr "请勿提交整个 port 的 man:shar[1] 归档；请改用 man:git-format-patch[1] 或 man:diff[1] `-ruN`。这样，提交者就能更轻松地准确查看所做的更改。Porter's Handbook 中的 extref:{porters-handbook}upgrading[升级，port-upgrading] 一节提供了更多信息。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:438
+#, fuzzy
 msgid "Wait"
-msgstr ""
+msgstr "等待"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:442
+#, fuzzy
 msgid ""
 "At some stage a committer will deal with your PR.  It may take minutes, or "
 "it may take one or two weeks - so please be patient.  If it takes any "
 "longer, please seek for help on mailing lists ({freebsd-ports}), IRC: "
 "#bsdports on EFNet or #freebsd-ports on Libera for example."
-msgstr ""
+msgstr "提交者最终会处理你的 PR。处理可能只需几分钟，也可能需要一两周，请耐心等待。如果耗时更久，请在邮件列表（{freebsd-ports}）或 IRC 上寻求帮助，例如 EFNet 上的 #bsdports 或 Libera 上的 #freebsd-ports。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:443
+#, fuzzy
 msgid "Give feedback"
-msgstr ""
+msgstr "提供反馈"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:446
+#, fuzzy
 msgid ""
 "If a committer finds a problem with your changes, they will most likely "
 "refer it back to you.  A prompt response will help get your PR committed "
 "faster, and is better for maintaining a thread of conversation when trying "
 "to resolve any problems."
-msgstr ""
+msgstr "如果提交者发现你的更改存在问题，通常会将 PR 退回给你。及时响应有助于更快提交你的 PR；在尝试解决问题时，保持对话连贯也很重要。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:447
+#, fuzzy
 msgid "And Finally"
-msgstr ""
+msgstr "最后"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:451
+#, fuzzy
 msgid ""
 "Your changes will be committed and your port will have been updated.  The PR "
 "will then be closed by the committer.  That is it!"
-msgstr ""
+msgstr "你的更改将被提交，你的 port 也就更新完成了。随后，提交者会关闭 PR。就是这样！"
 
 #. type: Title =====
 #: documentation/content/en/articles/contributing/_index.adoc:453
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ensure your ports continue to build correctly"
-msgstr ""
+msgstr "确保 port 持续正常构建"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:456
+#, fuzzy
 msgid ""
 "This section is about discovering and fixing problems that stop your ports "
 "from building correctly."
-msgstr ""
+msgstr "本节介绍如何发现并修复导致 port 无法正常构建的问题。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:459
+#, fuzzy
 msgid ""
 "FreeBSD only guarantees that the Ports Collection works on the `-STABLE` "
 "branches.  In theory, you should be able to get by with running the latest "
 "release of each stable branch (since the ABIs are not supposed to change) "
 "but if you can run the branch, that is even better."
-msgstr ""
+msgstr "FreeBSD 仅保证 Ports Collection 在 `-STABLE` 分支上正常工作。理论上，运行每个稳定分支的最新发行版应该也可以（因为 ABI 理应不会改变），但如果能运行该分支，那就更好了。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:463
+#, fuzzy
 msgid ""
 "Since the majority of FreeBSD installations run on PC-compatible machines "
 "(what is termed the `i386` architecture), we expect you to keep the port "
 "working on that architecture.  We prefer that ports also work on the `amd64` "
 "architecture running native.  It is completely fair to ask for help if you "
 "do not have one of these machines."
-msgstr ""
+msgstr "由于大多数 FreeBSD 安装都运行在 PC 兼容机器上（即所谓的 `i386` 架构），我们希望你确保 port 在该架构上正常工作。我们也希望 port 能在原生运行的 `amd64` 架构上工作。如果你没有这类机器，寻求帮助完全合情合理。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:468
+#, fuzzy
 msgid ""
 "The usual failure modes for non-`x86` machines are that the original "
 "programmers assumed that, for instance, pointers are `int`-s, or that a "
@@ -1173,218 +1290,250 @@ msgid ""
 "application authors are reworking their code to remove these assumptions - "
 "but if the author is not actively maintaining their code, you may need to do "
 "this yourself."
-msgstr ""
+msgstr "非 `x86` 机器上常见的故障通常是原始程序员作了某些假设，例如认为指针是 `int`，或者假设使用的是相对宽松的旧版 gcc 编译器。越来越多的应用作者正在修改代码以消除这些假设，但如果作者没有积极维护代码，你可能需要自己处理。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:471
+#, fuzzy
 msgid ""
 "These are the tasks you need to perform to ensure your port is able to be "
 "built:"
-msgstr ""
+msgstr "要确保 port 能够构建，你需要完成以下任务："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:475
+#, fuzzy
 msgid "Watch for build failures"
-msgstr ""
+msgstr "留意构建失败"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:477
+#, fuzzy
 msgid ""
 "Check your mail for mail from `pkg-fallout@FreeBSD.org` and the http://"
 "portscout.FreeBSD.org[distfiles scanner] to see if any of the port which are "
 "failing to build are out of date."
-msgstr ""
+msgstr "查看是否收到来自 `pkg-fallout@FreeBSD.org` 和 link:http://portscout.FreeBSD.org[distfiles 扫描器]的邮件，以确认构建失败的 port 是否已过时。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:478
 #: documentation/content/en/articles/contributing/_index.adoc:527
+#, fuzzy
 msgid "Collect information"
-msgstr ""
+msgstr "收集信息"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:482
+#, fuzzy
 msgid ""
 "Once you are aware of a problem, collect information to help you fix it.  "
 "Build errors reported by `pkg-fallout` are accompanied by logs which will "
 "show you where the build failed.  If the failure was reported to you by a "
 "user, ask them to send you information which may help in diagnosing the "
 "problem, such as:"
-msgstr ""
+msgstr "发现问题后，请收集有助于修复问题的信息。`pkg-fallout` 报告的构建错误附有日志，可显示构建失败的位置。如果问题是用户报告给你的，请让他们提供有助于诊断问题的信息，例如："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:484
+#, fuzzy
 msgid "Build logs"
-msgstr ""
+msgstr "构建日志"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:485
+#, fuzzy
 msgid ""
 "The commands and options used to build the port (including options set in [."
 "filename]#/etc/make.conf#)"
-msgstr ""
+msgstr "用于构建 port 的命令和选项（包括在 [.filename]#/etc/make.conf# 中设置的选项）"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:486
+#, fuzzy
 msgid ""
 "A list of packages installed on their system as shown by man:pkg-info[8]"
-msgstr ""
+msgstr "通过 man:pkg-info[8] 显示的系统已安装软件包列表"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:487
+#, fuzzy
 msgid "The version of FreeBSD they are running as shown by man:uname[1] `-a`"
-msgstr ""
+msgstr "通过 man:uname[1] `-a` 显示的 FreeBSD 版本"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:488
+#, fuzzy
 msgid "When their ports collection was last updated"
-msgstr ""
+msgstr "他们上次更新 ports collection 的时间"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:489
+#, fuzzy
 msgid "When their ports tree and [.filename]#INDEX# was last updated"
-msgstr ""
+msgstr "他们上次更新 ports tree 和 [.filename]#INDEX# 的时间"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:491
+#, fuzzy
 msgid "Investigate and find a solution"
-msgstr ""
+msgstr "调查并找到解决方案"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:495
+#, fuzzy
 msgid ""
 "Unfortunately there is no straightforward process to follow to do this.  "
 "Remember, though: if you are stuck, ask for help! The {freebsd-ports} is a "
 "good place to start, and the upstream developers are often very helpful."
-msgstr ""
+msgstr "遗憾的是，这件事没有可遵循的简单流程。不过请记住：如果遇到困难，就寻求帮助！{freebsd-ports} 是很好的起点，上游开发人员通常也很乐于提供帮助。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:498
+#, fuzzy
 msgid ""
 "Just as with updating a port, you should now incorporate changes, review and "
 "test, submit your changes in a PR, and provide feedback if required."
-msgstr ""
+msgstr "与更新 port 一样，现在你应该整合更改、审查并测试，然后提交更改至 PR；如有需要，还应提供反馈。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:499
+#, fuzzy
 msgid "Send patches to upstream authors"
-msgstr ""
+msgstr "向上游作者发送补丁"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:504
+#, fuzzy
 msgid ""
 "In some cases, you will have to make patches to the port to make it run on "
 "FreeBSD.  Some (but not all) upstream authors will accept such patches back "
 "into their code for the next release.  If so, this may even help their users "
 "on other BSD-based systems as well and perhaps save duplicated effort.  "
 "Please consider sending any applicable patches to the authors as a courtesy."
-msgstr ""
+msgstr "在某些情况下，你需要为 port 打补丁，使其能够在 FreeBSD 上运行。一些（但并非所有）上游作者会接受这些补丁，并将其纳入下一版代码中。如果他们接受了，这或许也能帮助其他基于 BSD 的系统用户，并避免重复劳动。请考虑将适用的补丁发送给作者，以示支持。"
 
 #. type: Title =====
 #: documentation/content/en/articles/contributing/_index.adoc:506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Investigate bug reports and Bugzilla Problem Reports related to your port"
-msgstr ""
+msgstr "调查与你的 port 相关的错误报告和 Bugzilla 问题报告"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:509
+#, fuzzy
 msgid "This section is about discovering and fixing bugs."
-msgstr ""
+msgstr "本节介绍如何发现并修复错误。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:512
+#, fuzzy
 msgid ""
 "FreeBSD-specific bugs are generally caused by assumptions about the build "
 "and runtime environments that do not apply to FreeBSD.  You are less likely "
 "to encounter a problem of this type, but it can be more subtle and difficult "
 "to diagnose."
-msgstr ""
+msgstr "FreeBSD 特有的错误通常是由对构建环境和运行时环境的假设引起的，而这些假设并不适用于 FreeBSD。你遇到此类问题的可能性较低，但这类问题可能更隐蔽，也更难诊断。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:514
+#, fuzzy
 msgid ""
 "These are the tasks you need to perform to ensure your port continues to "
 "work as intended:"
-msgstr ""
+msgstr "要确保 port 按预期持续工作，你需要完成以下任务："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:518
+#, fuzzy
 msgid "Respond to bug reports"
-msgstr ""
+msgstr "回复错误报告"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:521
+#, fuzzy
 msgid ""
 "Bugs may be reported to you through email via the https://bugs.FreeBSD.org/"
 "search/[Bugzilla Problem Report database].  Bugs may also be reported "
 "directly to you by users."
-msgstr ""
+msgstr "用户可能会通过电子邮件向你报告错误，也可能通过 link:https://bugs.FreeBSD.org/search/[Bugzilla 问题报告数据库]报告。用户也可能直接向你报告错误。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:524
+#, fuzzy
 msgid ""
 "You should respond to PRs and other reports within 14 days, but please try "
 "not to take that long.  Try to respond as soon as possible, even if it is "
 "just to say you need some more time before you can work on the PR."
-msgstr ""
+msgstr "你应在 14 天内回复 PR 和其他报告，但请尽量不要拖这么久。应尽快回复，即使只是告知你需要更多时间才能处理该 PR。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:526
+#, fuzzy
 msgid ""
 "If you have not responded after 14 days, any committer may commit from a PR "
 "that you have not responded to via a `maintainer-timeout`."
-msgstr ""
+msgstr "如果你在 14 天后仍未回复，任何提交者都可以通过 `maintainer-timeout` 提交你尚未回复的 PR。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:529
+#, fuzzy
 msgid ""
 "If the person reporting the bug has not also provided a fix, you need to "
 "collect the information that will allow you to generate one."
-msgstr ""
+msgstr "如果报告错误的人没有同时提供修复方案，你需要收集能够帮助你制定修复方案的信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:532
+#, fuzzy
 msgid ""
 "If the bug is reproducible, you can collect most of the required information "
 "yourself.  If not, ask the person who reported the bug to collect the "
 "information for you, such as:"
-msgstr ""
+msgstr "如果可以重现错误，你通常可以自行收集大部分所需信息。如果无法重现，请让报告者为你收集信息，例如："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:534
+#, fuzzy
 msgid ""
 "A detailed description of their actions, expected program behavior and "
 "actual behavior"
-msgstr ""
+msgstr "对其操作、预期的程序行为以及实际行为的详细描述"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:535
+#, fuzzy
 msgid "Copies of input data used to trigger the bug"
-msgstr ""
+msgstr "用于触发错误的输入数据副本"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:536
+#, fuzzy
 msgid ""
 "Information about their build and execution environment - for example, a "
 "list of installed packages and the output of man:env[1]"
-msgstr ""
+msgstr "有关其构建和执行环境的信息，例如已安装软件包列表以及 man:env[1] 的输出"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:537
+#, fuzzy
 msgid "Core dumps"
-msgstr ""
+msgstr "核心转储"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:538
+#, fuzzy
 msgid "Stack traces"
-msgstr ""
+msgstr "堆栈跟踪"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:540
+#, fuzzy
 msgid "Eliminate incorrect reports"
-msgstr ""
+msgstr "排除不准确的报告"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:546
+#, fuzzy
 msgid ""
 "Some bug reports may be incorrect.  For example, the user may have simply "
 "misused the program; or their installed packages may be out of date and "
@@ -1392,52 +1541,58 @@ msgid ""
 "this case report the bug to the upstream developers.  If the bug is within "
 "your capabilities to fix, you can also patch the port so that the fix is "
 "applied before the next upstream release."
-msgstr ""
+msgstr "有些错误报告可能并不准确。例如，用户可能只是误用了程序，或者其已安装的软件包已经过时，需要更新。有时，报告的问题并非 FreeBSD 特有。在这种情况下，请将错误报告给上游开发人员。如果问题在你的能力范围内，也可以修改 port，以便在上游发布下一版本之前应用修复。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:547
+#, fuzzy
 msgid "Find a solution"
-msgstr ""
+msgstr "找到解决方案"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:550
+#, fuzzy
 msgid ""
 "As with build errors, you will need to sort out a fix to the problem.  "
 "Again, remember to ask if you are stuck!"
-msgstr ""
+msgstr "与构建错误一样，你需要找出解决问题的方法。同样，请记住，遇到困难时要寻求帮助！"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:551
+#, fuzzy
 msgid "Submit or approve changes"
-msgstr ""
+msgstr "提交或批准更改"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/contributing/_index.adoc:554
+#, fuzzy
 msgid ""
 "Just as with updating a port, you should now incorporate changes, review and "
 "test, and submit your changes in a Bugzilla PR (or send a follow-up if a PR "
 "already exists for the problem).  If another user has submitted changes in "
 "the PR, you can also send a follow-up saying whether or not you approve the "
 "changes."
-msgstr ""
+msgstr "与更新 port 一样，现在你应该整合更改、审查并测试，然后将更改提交至 Bugzilla PR（如果该问题已有 PR，则发送后续回复）。如果其他用户已在 PR 中提交更改，你也可以回复说明是否批准这些更改。"
 
 #. type: Title =====
 #: documentation/content/en/articles/contributing/_index.adoc:556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Providing support"
-msgstr ""
+msgstr "提供支持"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:561
+#, fuzzy
 msgid ""
 "Part of being a maintainer is providing support - not for the software in "
 "general - but for the port and any FreeBSD-specific quirks and problems.  "
 "Users may contact you with questions, suggestions, problems and patches.  "
 "Most of the time their correspondence will be specific to FreeBSD."
-msgstr ""
+msgstr "维护者的职责之一是提供支持——不是为软件本身提供一般性支持，而是为 port 以及 FreeBSD 特有的问题和行为提供支持。用户可能会联系你咨询问题、提出建议、报告故障或提交补丁。他们的来信大多与 FreeBSD 有关。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:565
+#, fuzzy
 msgid ""
 "Occasionally you may have to invoke your skills in diplomacy, and kindly "
 "point users seeking general support to the appropriate resources.  Less "
@@ -1445,100 +1600,112 @@ msgid ""
 "date or how can they get the software to run under Foo Linux.  Take the "
 "opportunity to tell them that your port is up to date (if it is, of "
 "course!), and suggest that they try FreeBSD."
-msgstr ""
+msgstr "有时你可能需要运用外交技巧，友善地引导寻求一般性支持的用户前往适当的资源。较少见的情况是，有人会问为什么 `RPMS` 没有更新，或者怎样才能让软件在 Foo Linux 上运行。你可以借此机会告诉他们你的 port 已经是最新版本（当然，前提是确实如此！），并建议他们试试 FreeBSD。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:568
+#, fuzzy
 msgid ""
 "Sometimes users and developers will decide that you are a busy person whose "
 "time is valuable and do some of the work for you.  For example, they might:"
-msgstr ""
+msgstr "有时，用户和开发人员会觉得你事务繁忙、时间宝贵，于是主动帮你分担一些工作。例如，他们可能会："
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:570
+#, fuzzy
 msgid "submit a Bugzilla PR or send you patches to update your port,"
-msgstr ""
+msgstr "提交 Bugzilla PR，或向你发送更新 port 的补丁，"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:571
+#, fuzzy
 msgid "investigate and perhaps provide a fix to a PR, or"
-msgstr ""
+msgstr "调查某个 PR，并可能提供修复方案，或者"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:572
+#, fuzzy
 msgid "otherwise submit changes to your port."
-msgstr ""
+msgstr "以其他方式提交对你的 port 所作的更改。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:578
+#, fuzzy
 msgid ""
 "In these cases your main obligation is to respond in a timely manner.  "
 "Again, the timeout for non-responsive maintainers is 14 days.  After this "
 "period changes may be committed unapproved.  They have taken the trouble to "
 "do this for you; so please try to at least respond promptly.  Then review, "
 "approve, modify or discuss their changes with them as soon as possible."
-msgstr ""
+msgstr "在这些情况下，你最重要的义务是及时回复。同样，对不回应的维护者，期限为 14 天。超过此期限后，更改可能会在未经批准的情况下提交。他们特地为你做了这些工作，因此请尽量至少及时回复。然后尽快审查、批准、修改这些更改，或与他们讨论。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:580
+#, fuzzy
 msgid ""
 "If you can make them feel that their contribution is appreciated (and it "
 "should be) you will have a better chance persuading them to do more things "
 "for you in the future :-)."
-msgstr ""
+msgstr "如果你能让他们感受到自己的贡献受到认可（确实应该如此），就更有可能说服他们将来继续为你做更多工作 ：-)。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:582
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Finding and fixing a broken port"
-msgstr ""
+msgstr "发现并修复损坏的 port"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:585
+#, fuzzy
 msgid ""
 "There are some really good places to find a port that needs some attention."
-msgstr ""
+msgstr "有一些很好的途径，可以找到需要关注的 port。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:588
+#, fuzzy
 msgid ""
 "You can use the https://bugs.freebsd.org/search[web interface] to the "
 "Problem Report database to search through and view unresolved Bugzilla PRs.  "
 "The majority of ports PRs are updates, but with a little searching and "
 "skimming over synopses you should be able to find something interesting to "
 "work on."
-msgstr ""
+msgstr "你可以使用问题报告数据库的 link:https://bugs.freebsd.org/search[Web 界面]搜索并查看尚未解决的 Bugzilla PR。大多数 ports PR 都是更新请求，但只要稍加搜索并浏览摘要，你就应该能找到有意思的工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:590
+#, fuzzy
 msgid ""
 "https://portsfallout.com/[PortsFallout] shows port issues gathered from the "
 "FreeBSD package building."
-msgstr ""
+msgstr "link:https://portsfallout.com/[PortsFallout] 展示了从 FreeBSD 软件包构建过程中收集到的 port 问题。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:592
+#, fuzzy
 msgid ""
 "It is OK to send changes for a maintained port as well, but remember to ask "
 "the maintainer in case they are already working on the problem."
-msgstr ""
+msgstr "你也可以为有维护者负责的 port 提交更改，但请记得先询问维护者，确认他们是否已经在处理该问题。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:597
+#, fuzzy
 msgid ""
 "Once you have found a bug or problem, collect information, investigate and "
 "fix! If there is an existing PR, follow up to that.  Otherwise create a new "
 "PR.  Your changes will be reviewed and, if everything checks out, committed."
-msgstr ""
+msgstr "找到错误或问题后，请收集信息、调查并修复！如果已有 PR，请在其中跟进；否则，请创建新的 PR。你的更改会经过审查，如果一切正常，就会被提交。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "When to call it quits"
-msgstr ""
+msgstr "何时该退出"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:606
+#, fuzzy
 msgid ""
 "As your interests and commitments change, you may find that you no longer "
 "have time to continue some (or all) of your ports contributions.  That is "
@@ -1548,117 +1715,129 @@ msgid ""
 "without waiting for your response.  Remember, FreeBSD is a volunteer "
 "project, so if maintaining a port is no fun any more, it is probably time to "
 "let someone else do it!"
-msgstr ""
+msgstr "随着兴趣和承诺的变化，你可能发现自己再也没有时间继续参与部分（或全部）ports 贡献。这完全没问题！如果你不再使用某个 port，或者因为其他原因没有时间或兴趣继续担任维护者，请告知我们。这样，我们就能让其他人着手处理该 port 已存在的问题，而不必等待你的回复。请记住，FreeBSD 是一个志愿者项目，因此如果维护 port 已经不再有趣，也许是时候交给其他人了！"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:610
+#, fuzzy
 msgid ""
 "In any case, the Ports Management Team (`portmgr`) reserves the right to "
 "reset your maintainership if you have not actively maintained your port in "
 "some time.  (Currently, this is set to 3 months.)  By this, we mean that "
 "there are unresolved problems or pending updates that have not been worked "
 "on during that time."
-msgstr ""
+msgstr "无论如何，如果你有一段时间没有积极维护自己的 port，Ports 管理团队（`portmgr`）保留重置你的维护者身份的权利。（目前，这段时间设为 3 个月。）这里指的是在这段时间内未处理的未解决问题或待处理更新。"
 
 #. type: Title ===
 #: documentation/content/en/articles/contributing/_index.adoc:612
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resources for ports maintainers and contributors"
-msgstr ""
+msgstr "面向 ports 维护者和贡献者的资源"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:616
+#, fuzzy
 msgid ""
 "The extref:{porters-handbook}[Porter's Handbook] is your hitchhiker's guide "
 "to the ports system.  Keep it handy!"
-msgstr ""
+msgstr "extref:{porters-handbook}[Porter's Handbook] 是你的 ports 系统指南。请随手备查！"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:619
+#, fuzzy
 msgid ""
 "extref:{problem-reports}[Writing FreeBSD Problem Reports] describes how to "
 "best formulate and submit a Problem Report.  Following this article will "
 "greatly assist us in reducing the time needed to handle your PRs."
-msgstr ""
+msgstr "extref:{problem-reports}[编写 FreeBSD 问题报告]介绍了如何以最佳方式撰写并提交问题报告。遵循本文的指导，将大大有助于缩短我们处理 PR 所需的时间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:621
+#, fuzzy
 msgid ""
 "The https://bugs.freebsd.org/bugzilla/query.cgi[Bugzilla Problem Report "
 "database]."
-msgstr ""
+msgstr "link:https://bugs.freebsd.org/bugzilla/query.cgi[Bugzilla 问题报告数据库]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:624
+#, fuzzy
 msgid ""
 "The http://portscout.FreeBSD.org[FreeBSD Ports distfile scanner (portscout)] "
 "can show you ports for which the distfiles are not fetchable.  You can check "
 "on your own ports or use it to find ports that need their `MASTER_SITES` "
 "updated."
-msgstr ""
+msgstr "link:http://portscout.FreeBSD.org[FreeBSD Ports distfile 扫描器（portscout）]可以显示 distfile 无法获取的 port。你可以检查自己维护的 port，也可以用它查找需要更新 `MASTER_SITES` 的 port。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:627
+#, fuzzy
 msgid ""
 "package:ports-mgmt/poudriere[] is the most thorough way to test a port "
 "through the entire cycle of installation, packaging, and deinstallation.  "
 "Documentation is located at the https://github.com/freebsd/"
 "poudriere[poudriere GitHub repository]"
-msgstr ""
+msgstr "package:ports-mgmt/poudriere[] 是通过安装、打包和卸载整个流程测试 port 的最全面方法。文档位于 link:https://github.com/freebsd/poudriere[poudriere GitHub 仓库]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:631
+#, fuzzy
 msgid ""
 "man:portlint[1] is an application which can be used to verify that your port "
 "conforms to many important stylistic and functional guidelines.  portlint is "
 "a simple heuristic application, so you should use it __only as a guide__.  "
 "If portlint suggests changes which seem unreasonable, consult the extref:"
 "{porters-handbook}[Porter's Handbook] or ask for advice."
-msgstr ""
+msgstr "man:portlint[1] 是一个可用于验证 port 是否符合许多重要风格和功能准则的应用程序。portlint 是一种简单的启发式工具，因此你应__仅将其作为参考__。如果 portlint 建议的更改看起来不合理，请查阅 extref:{porters-handbook}[Porter's Handbook] 或寻求建议。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:636
+#, fuzzy
 msgid ""
 "The {freebsd-ports} is for general ports-related discussion.  It is a good "
 "place to ask for help.  You can link:https://lists.freebsd.org/[subscribe, "
 "or read and search the list archives].  Reading the archives of the {freebsd-"
 "ports-bugs} and the {svn-ports-head} may also be of interest."
-msgstr ""
+msgstr "{freebsd-ports} 用于一般性的 ports 相关讨论，也是寻求帮助的好地方。你可以 link:https://lists.freebsd.org/[订阅邮件列表，或阅读和搜索列表存档]。阅读 {freebsd-ports-bugs} 和 {svn-ports-head} 的存档也可能会有所帮助。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:638
+#, fuzzy
 msgid ""
 "https://portsfallout.com/[PortsFallout] is a place to help in searching for "
 "the https://lists.freebsd.org/archives/freebsd-pkg-fallout/[FreeBSD package-"
 "fallout archive]."
-msgstr ""
+msgstr "link:https://portsfallout.com/[PortsFallout] 可帮助查找 link:https://lists.freebsd.org/archives/freebsd-pkg-fallout/[FreeBSD 软件包构建失败邮件列表存档]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/contributing/_index.adoc:640
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Getting Started in Other Areas"
-msgstr ""
+msgstr "从其他领域开始参与"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:644
+#, fuzzy
 msgid ""
 "Looking for something interesting to get started that is not mentioned "
 "elsewhere in this article? The FreeBSD Project has several Wiki pages "
 "containing areas within which new contributors can get ideas on how to get "
 "started."
-msgstr ""
+msgstr "想找一些本文其他部分未提及的有趣起点吗？FreeBSD 项目有多个 Wiki 页面，介绍新贡献者可以从哪些领域入手并获取灵感。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:646
+#, fuzzy
 msgid ""
 "The https://wiki.freebsd.org/JuniorJobs[Junior Jobs] page has a list of "
 "projects that might be of interest to people just getting started in "
 "FreeBSD, and want to work on interesting things to get their feet wet."
-msgstr ""
+msgstr "link:https://wiki.freebsd.org/JuniorJobs[新手任务]页面列出了可能适合刚开始参与 FreeBSD、并希望通过有趣的工作积累经验的人参与的项目。"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributing/_index.adoc:647
+#, fuzzy
 msgid ""
 "The https://wiki.freebsd.org/IdeasPage[Ideas Page] contains various \"nice "
 "to have\" or \"interesting\" things to work on in the Project."
-msgstr ""
+msgstr "link:https://wiki.freebsd.org/IdeasPage[创意页面]列出了项目中各种“锦上添花”或“有趣”的待办事项。"

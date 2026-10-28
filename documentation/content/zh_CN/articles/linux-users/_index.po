@@ -19,21 +19,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/linux-users/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This document is intended to quickly familiarize intermediate to advanced Linux® users with the basics of FreeBSD."
-msgstr ""
+msgstr "本文旨在帮助中高级 Linux® 用户快速熟悉 FreeBSD 基础知识。"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/articles/linux-users/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Quickstart Guide for Linux® Users"
-msgstr ""
+msgstr "面向 Linux® 用户的 FreeBSD 快速入门指南"
 
 #. type: Title =
 #: documentation/content/en/articles/linux-users/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Quickstart Guide for Linux(R) Users"
-msgstr ""
+msgstr "面向 Linux(R) 用户的 FreeBSD 快速入门指南"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:43
@@ -42,10 +42,11 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:45
+#, fuzzy
 msgid ""
 "This document is intended to quickly familiarize intermediate to advanced "
 "Linux(R) users with the basics of FreeBSD."
-msgstr ""
+msgstr "本文旨在帮助中高级 Linux(R) 用户快速熟悉 FreeBSD 基础知识。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:47
@@ -60,28 +61,31 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:54
+#, fuzzy
 msgid ""
 "This document highlights some of the technical differences between FreeBSD "
 "and Linux(R) so that intermediate to advanced Linux(R) users can quickly "
 "familiarize themselves with the basics of FreeBSD."
-msgstr ""
+msgstr "本文介绍 FreeBSD 与 Linux(R) 之间的一些技术差异，帮助中高级 Linux(R) 用户快速熟悉 FreeBSD 基础知识。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:57
+#, fuzzy
 msgid ""
 "This document assumes that FreeBSD is already installed.  Refer to the "
 "extref:{handbook}bsdinstall[Installing FreeBSD, bsdinstall] chapter of the "
 "FreeBSD Handbook for help with the installation process."
-msgstr ""
+msgstr "本文假定 FreeBSD 已经安装。有关安装过程的帮助，请参阅 FreeBSD 手册中的 extref:{handbook}bsdinstall[安装 FreeBSD， bsdinstall] 一章。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default Shell"
-msgstr ""
+msgstr "默认 Shell"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:67
+#, fuzzy
 msgid ""
 "Linux(R) users are often surprised to find that Bash is not the default "
 "shell in FreeBSD.  In fact, Bash is not included in the default "
@@ -90,17 +94,19 @@ msgid ""
 "earlier and man:sh[1] on FreeBSD 14 and later.  man:sh[1] is very similar to "
 "Bash but with a much smaller feature-set.  Generally shell scripts written "
 "for man:sh[1] will run in Bash, but the reverse is not always true."
-msgstr ""
+msgstr "Linux(R) 用户常常会惊讶地发现，FreeBSD 的默认 shell 并不是 Bash。事实上，默认安装中并不包含 Bash。FreeBSD 默认使用与 POSIX(R) 兼容的 man:sh[1] 作为普通用户的 shell。在 FreeBSD 13 及更早版本中，`root` 默认使用 man:tcsh[1]；在 FreeBSD 14 及更高版本中则使用 man:sh[1]。man:sh[1] 与 Bash 非常相似，但功能集要精简得多。通常，为 man:sh[1] 编写的 shell 脚本可以在 Bash 中运行，但反过来并不总是如此。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:69
+#, fuzzy
 msgid ""
 "However, Bash and other shells are available for installation using the "
 "FreeBSD extref:{handbook}ports[Packages and Ports Collection, ports]."
-msgstr ""
+msgstr "不过，也可以通过 FreeBSD extref:{handbook}ports[软件包和 Ports Collection， ports] 安装 Bash 和其他 shell。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:74
+#, fuzzy
 msgid ""
 "After installing another shell, use man:chsh[1] to change a user's default "
 "shell.  It is recommended that the `root` user's default shell remain "
@@ -109,170 +115,186 @@ msgid ""
 "file system where [.filename]#/usr/local/bin# is located may not be "
 "mounted.  In this case, `root` would not have access to its default shell, "
 "preventing `root` from logging in and fixing the problem."
-msgstr ""
+msgstr "安装其他 shell 后，可以使用 man:chsh[1] 更改用户的默认 shell。建议保持 `root` 用户的默认 shell 不变，因为基础发行版中未包含的 shell 会安装到 [.filename]#/usr/local/bin#。如果发生问题，可能无法挂载 [.filename]#/usr/local/bin# 所在的文件系统。此时，`root` 将无法使用其默认 shell，因而无法登录并修复问题。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Packages and Ports: Adding Software in FreeBSD"
-msgstr ""
+msgstr "软件包和 Ports：在 FreeBSD 中添加软件"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:80
+#, fuzzy
 msgid ""
 "FreeBSD provides two methods for installing applications: binary packages "
 "and compiled ports.  Each method has its own benefits:"
-msgstr ""
+msgstr "FreeBSD 提供两种安装应用程序的方法：二进制软件包和编译 Ports。每种方法都有各自的优点："
 
 #. type: Block title
 #: documentation/content/en/articles/linux-users/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Binary Packages"
-msgstr ""
+msgstr "二进制软件包"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:83
+#, fuzzy
 msgid "Faster installation as compared to compiling large applications."
-msgstr ""
+msgstr "与编译大型应用程序相比，安装速度更快。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:84
+#, fuzzy
 msgid "Does not require an understanding of how to compile software."
-msgstr ""
+msgstr "无需了解如何编译软件。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:85
+#, fuzzy
 msgid "No need to install a compiler."
-msgstr ""
+msgstr "无需安装编译器。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-users/_index.adoc:86
 #: documentation/content/en/articles/linux-users/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports"
-msgstr ""
+msgstr "Ports"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:88
+#, fuzzy
 msgid "Ability to customize installation options."
-msgstr ""
+msgstr "可以自定义安装选项。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:89
+#, fuzzy
 msgid "Custom patches can be applied."
-msgstr ""
+msgstr "可以应用自定义补丁。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:93
+#, fuzzy
 msgid ""
 "If an application installation does not require any customization, "
 "installing the package is sufficient.  Compile the port instead whenever an "
 "application requires customization of the default options.  If needed, a "
 "custom package can be compiled from ports using `make package`."
-msgstr ""
+msgstr "如果安装应用程序时不需要任何自定义设置，安装软件包即可。如果应用程序需要自定义默认选项，则应改为编译 Ports。必要时，可以使用 `make package` 从 Ports 编译自定义软件包。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:95
+#, fuzzy
 msgid ""
 "A complete list of all available ports and packages can be found https://"
 "ports.freebsd.org[here]."
-msgstr ""
+msgstr "所有可用 Ports 和软件包的完整列表请见 link:https://ports.freebsd.org[此处]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-users/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Packages"
-msgstr ""
+msgstr "软件包"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-users/_index.adoc:102
+#, fuzzy
 msgid ""
 "Packages are pre-compiled applications, the FreeBSD equivalents of [."
 "filename]#.deb# files on Debian/Ubuntu based systems and [.filename]#.rpm# "
 "files on Red Hat/Fedora based systems.  Packages are installed using `pkg`.  "
 "For example, the following command installs Apache 2.4:"
-msgstr ""
+msgstr "软件包是预编译的应用程序，相当于 Debian/Ubuntu 系统中的 [.filename]#.deb# 文件和 Red Hat/Fedora 系统中的 [.filename]#.rpm# 文件。使用 `pkg` 安装软件包。例如，以下命令会安装 Apache 2.4："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install apache24\n"
-msgstr ""
+msgstr "# pkg install apache24\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:109
+#, fuzzy
 msgid ""
 "For more information on packages refer to section 4.4 of the FreeBSD "
 "Handbook: extref:{handbook}ports[Using pkgng for Binary Package Management, "
 "pkgng-intro]."
-msgstr ""
+msgstr "有关软件包的更多信息，请参阅《FreeBSD 手册》第 4.4 节：extref:{handbook}ports[使用 pkgng 管理二进制软件包， pkgng-intro]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:115
+#, fuzzy
 msgid ""
 "The FreeBSD Ports Collection is a framework of [.filename]#Makefiles# and "
 "patches specifically customized for installing applications from source on "
 "FreeBSD.  When installing a port, the system will fetch the source code, "
 "apply any required patches, compile the code, and install the application "
 "and any required dependencies."
-msgstr ""
+msgstr "FreeBSD Ports Collection 是由 [.filename]#Makefiles# 和补丁组成的框架，专门用于在 FreeBSD 上从源代码安装应用程序。安装一个 Port 时，系统会获取源代码、应用所需的补丁、编译代码，并安装应用程序及其所需的依赖项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:118
+#, fuzzy
 msgid ""
 "The Ports Collection, sometimes referred to as the ports tree, can be "
 "installed to [.filename]#/usr/ports# using link:{handbook}mirrors/"
 "#git[Git].  Detailed instructions for installing the Ports Collection can be "
 "found in extref:{handbook}ports[section 4.5.1, ports-using-installation-"
 "methods] of the FreeBSD Handbook."
-msgstr ""
+msgstr "Ports Collection 有时也称为 ports 树，可以使用 link:{handbook}mirrors/#git[Git] 安装到 [.filename]#/usr/ports#。有关安装 Ports Collection 的详细说明，请参阅《FreeBSD 手册》中的 extref:{handbook}ports[第 4.5.1 节， ports-using-installation-methods]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:120
+#, fuzzy
 msgid ""
 "To compile a port, change to the port's directory and start the build "
 "process. The following example installs Apache 2.4 from the Ports Collection:"
-msgstr ""
+msgstr "要编译一个 Port，请切换到该 Port 的目录并启动构建过程。以下示例从 Ports Collection 安装 Apache 2.4："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/www/apache24\n"
 "# make install clean\n"
-msgstr ""
+msgstr "# cd /usr/ports/www/apache24\n# make install clean\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:129
+#, fuzzy
 msgid ""
 "A benefit of using ports to install software is the ability to customize the "
 "installation options.  This example specifies that the mod_ldap module "
 "should also be installed:"
-msgstr ""
+msgstr "使用 Ports 安装软件的一个好处是可以自定义安装选项。此示例指定同时安装 mod_ldap 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/www/apache24\n"
 "# make WITH_LDAP=\"YES\" install clean\n"
-msgstr ""
+msgstr "# cd /usr/ports/www/apache24\n# make WITH_LDAP=\"YES\" install clean\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:137
+#, fuzzy
 msgid ""
 "Refer to extref:{handbook}ports[Using the Ports Collection, ports-using] for "
 "more information."
-msgstr ""
+msgstr "更多信息请参阅 extref:{handbook}ports[使用 Ports Collection， ports-using]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System Startup"
-msgstr ""
+msgstr "系统启动"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:146
+#, fuzzy
 msgid ""
 "Many Linux(R) distributions use the SysV init system, whereas FreeBSD uses "
 "the traditional BSD-style man:init[8].  Under the BSD-style man:init[8], "
@@ -284,19 +306,21 @@ msgid ""
 "initialization scripts located in [.filename]#/etc/rc.d/# and [.filename]#/"
 "usr/local/etc/rc.d/#. These scripts are similar to the scripts located in [."
 "filename]#/etc/init.d/# on Linux(R) systems."
-msgstr ""
+msgstr "许多 Linux(R) 发行版使用 SysV init 系统，而 FreeBSD 使用传统的 BSD 风格 man:init[8]。BSD 风格的 man:init[8] 没有运行级别，也不存在 [.filename]#/etc/inittab#。系统启动由 man:rc[8] 脚本控制。系统启动时，[.filename]#/etc/rc# 会读取 [.filename]#/etc/rc.conf# 和 [.filename]#/etc/defaults/rc.conf#，以确定要启动哪些服务。随后，系统会运行位于 [.filename]#/etc/rc.d/# 和 [.filename]#/usr/local/etc/rc.d/# 中相应的服务初始化脚本来启动这些服务。这些脚本类似于 Linux(R) 系统中 [.filename]#/etc/init.d/# 下的脚本。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:149
+#, fuzzy
 msgid ""
 "The scripts found in [.filename]#/etc/rc.d/# are for applications that are "
 "part of the \"base\" system, such as man:cron[8], man:sshd[8], and man:"
 "syslog[3].  The scripts in [.filename]#/usr/local/etc/rc.d/# are for user-"
 "installed applications such as Apache and Squid."
-msgstr ""
+msgstr "[.filename]#/etc/rc.d/# 中的脚本用于基础系统自带的应用程序，例如 man:cron[8]、man:sshd[8] 和 man:syslog[3]。[.filename]#/usr/local/etc/rc.d/# 中的脚本用于用户安装的应用程序，例如 Apache 和 Squid。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:154
+#, fuzzy
 msgid ""
 "Since FreeBSD is developed as a complete operating system, user-installed "
 "applications are not considered to be part of the \"base\" system.  User-"
@@ -306,10 +330,11 @@ msgid ""
 "filename]#/usr/local/#.  Therefore, user-installed binaries reside in [."
 "filename]#/usr/local/bin/#, configuration files are in [.filename]#/usr/"
 "local/etc/#, and so on."
-msgstr ""
+msgstr "FreeBSD 作为完整的操作系统开发，因此用户安装的应用程序不被视为基础系统的一部分。用户安装的应用程序通常通过 extref:{handbook}ports[软件包或 Ports， ports-using] 安装。为了与基础系统分开，用户安装的应用程序会安装到 [.filename]#/usr/local/# 下。因此，用户安装的二进制文件位于 [.filename]#/usr/local/bin/#，配置文件位于 [.filename]#/usr/local/etc/#，以此类推。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:159
+#, fuzzy
 msgid ""
 "Services are enabled by adding an entry for the service in [.filename]#/etc/"
 "rc.conf#.  The system defaults are found in [.filename]#/etc/defaults/rc."
@@ -318,72 +343,76 @@ msgid ""
 "available entries.  When installing additional applications, review the "
 "application's install message to determine how to enable any associated "
 "services."
-msgstr ""
+msgstr "在 [.filename]#/etc/rc.conf# 中添加服务条目即可启用该服务。系统默认设置位于 [.filename]#/etc/defaults/rc.conf#，并会被 [.filename]#/etc/rc.conf# 中的设置覆盖。有关可用条目的更多信息，请参阅 man:rc.conf[5]。安装其他应用程序时，请查看应用程序的安装提示，了解如何启用相关服务。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:161
+#, fuzzy
 msgid ""
 "The following entries in [.filename]#/etc/rc.conf# enable man:sshd[8], "
 "enable Apache 2.4, and specify that Apache should be started with SSL."
-msgstr ""
+msgstr "在 [.filename]#/etc/rc.conf# 中添加以下条目，即可启用 man:sshd[8] 和 Apache 2.4，并指定使用 SSL 启动 Apache。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# enable SSHD\n"
 "sshd_enable=\"YES\"\n"
 "# enable Apache with SSL\n"
 "apache24_enable=\"YES\"\n"
 "apache24_flags=\"-DSSL\"\n"
-msgstr ""
+msgstr "# enable SSHD\nsshd_enable=\"YES\"\n# enable Apache with SSL\napache24_enable=\"YES\"\napache24_flags=\"-DSSL\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:172
+#, fuzzy
 msgid ""
 "Once a service has been enabled in [.filename]#/etc/rc.conf#, it can be "
 "started without rebooting the system:"
-msgstr ""
+msgstr "在 [.filename]#/etc/rc.conf# 中启用服务后，无需重启系统即可启动该服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:177
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service sshd start\n"
 "# service apache24 start\n"
-msgstr ""
+msgstr "# service sshd start\n# service apache24 start\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:180
+#, fuzzy
 msgid ""
 "If a service has not been enabled, it can be started from the command line "
 "using `onestart`:"
-msgstr ""
+msgstr "如果服务尚未启用，可以在命令行使用 `onestart` 启动它："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service sshd onestart\n"
-msgstr ""
+msgstr "# service sshd onestart\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Network Configuration"
-msgstr ""
+msgstr "网络配置"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:191
+#, fuzzy
 msgid ""
 "Instead of a generic _ethX_ identifier that Linux(R) uses to identify a "
 "network interface, FreeBSD uses the driver name followed by a number.  The "
 "following output from man:ifconfig[8] shows two Intel(R) Pro 1000 network "
 "interfaces ([.filename]#em0# and [.filename]#em1#):"
-msgstr ""
+msgstr "Linux(R) 使用通用的 _ethX_ 标识符来标识网络接口，而 FreeBSD 使用驱动程序名称后跟一个数字。以下 man:ifconfig[8] 的输出显示了两个 Intel(R) Pro 1000 网络接口（[.filename]#em0# 和 [.filename]#em1#）："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% ifconfig\n"
 "em0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 1500\n"
@@ -398,384 +427,408 @@ msgid ""
 "        ether 00:50:56:a7:03:2b\n"
 "        media: Ethernet autoselect (1000baseTX <full-duplex>)\n"
 "        status: active\n"
-msgstr ""
+msgstr "% ifconfig\nem0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 1500\n        options=b<RXCSUM,TXCSUM,VLAN_MTU>\n        inet 10.10.10.100 netmask 0xffffff00 broadcast 10.10.10.255\n        ether 00:50:56:a7:70:b2\n        media: Ethernet autoselect (1000baseTX <full-duplex>)\n        status: active\nem1: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 1500\n        options=b<RXCSUM,TXCSUM,VLAN_MTU>\n        inet 192.168.10.222 netmask 0xffffff00 broadcast 192.168.10.255\n        ether 00:50:56:a7:03:2b\n        media: Ethernet autoselect (1000baseTX <full-duplex>)\n        status: active\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:212
+#, fuzzy
 msgid ""
 "An IP address can be assigned to an interface using man:ifconfig[8].  To "
 "remain persistent across reboots, the IP configuration must be included in [."
 "filename]#/etc/rc.conf#.  The following [.filename]#/etc/rc.conf# entries "
 "specify the hostname, IP address, and default gateway:"
-msgstr ""
+msgstr "可以使用 man:ifconfig[8] 为接口分配 IP 地址。若要在重启后保持设置，必须将 IP 配置写入 [.filename]#/etc/rc.conf#。以下 [.filename]#/etc/rc.conf# 条目指定主机名、IP 地址和默认网关："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hostname=\"server1.example.com\"\n"
 "ifconfig_em0=\"inet 10.10.10.100 netmask 255.255.255.0\"\n"
 "defaultrouter=\"10.10.10.1\"\n"
-msgstr ""
+msgstr "hostname=\"server1.example.com\"\nifconfig_em0=\"inet 10.10.10.100 netmask 255.255.255.0\"\ndefaultrouter=\"10.10.10.1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:221
+#, fuzzy
 msgid "Use the following entries to instead configure an interface for DHCP:"
-msgstr ""
+msgstr "若要改为通过 DHCP 配置接口，请使用以下条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "hostname=\"server1.example.com\"\n"
 "ifconfig_em0=\"DHCP\"\n"
-msgstr ""
+msgstr "hostname=\"server1.example.com\"\nifconfig_em0=\"DHCP\"\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Firewall"
-msgstr ""
+msgstr "防火墙"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:233
+#, fuzzy
 msgid ""
 "FreeBSD does not use Linux(R) IPTABLES for its firewall.  Instead, FreeBSD "
 "offers a choice of three kernel level firewalls:"
-msgstr ""
+msgstr "FreeBSD 不使用 Linux(R) 的 IPTABLES 作为防火墙，而是提供三种内核级防火墙供选择："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:235
+#, fuzzy
 msgid "extref:{handbook}firewalls[PF, firewalls-pf]"
-msgstr ""
+msgstr "extref:{handbook}firewalls[PF， firewalls-pf]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:236
+#, fuzzy
 msgid "extref:{handbook}firewalls[IPFILTER, firewalls-ipf]"
-msgstr ""
+msgstr "extref:{handbook}firewalls[IPFILTER， firewalls-ipf]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:237
+#, fuzzy
 msgid "extref:{handbook}firewalls[IPFW, firewalls-ipfw]"
-msgstr ""
+msgstr "extref:{handbook}firewalls[IPFW， firewalls-ipfw]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:241
+#, fuzzy
 msgid ""
 "PF is developed by the OpenBSD project and ported to FreeBSD.  PF was "
 "created as a replacement for IPFILTER and its syntax is similar to that of "
 "IPFILTER.  PF can be paired with man:altq[4] to provide QoS features."
-msgstr ""
+msgstr "PF 由 OpenBSD 项目开发，后移植到 FreeBSD。PF 是作为 IPFILTER 的替代品创建的，其语法与 IPFILTER 类似。PF 可以与 man:altq[4] 配合使用以提供 QoS 功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:243
+#, fuzzy
 msgid "This sample PF entry allows inbound SSH:"
-msgstr ""
+msgstr "以下 PF 示例规则允许入站 SSH 连接："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pass in on $ext_if inet proto tcp from any to ($ext_if) port 22\n"
-msgstr ""
+msgstr "pass in on $ext_if inet proto tcp from any to ($ext_if) port 22\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:251
+#, fuzzy
 msgid ""
 "IPFILTER is the firewall application developed by Darren Reed.  It is not "
 "specific to FreeBSD and has been ported to several operating systems "
 "including NetBSD, OpenBSD, SunOS, HP/UX, and Solaris."
-msgstr ""
+msgstr "IPFILTER 是由 Darren Reed 开发的防火墙应用程序。它并非 FreeBSD 专用，已移植到多个操作系统，包括 NetBSD、OpenBSD、SunOS、HP/UX 和 Solaris。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:253
+#, fuzzy
 msgid "The IPFILTER syntax to allow inbound SSH is:"
-msgstr ""
+msgstr "允许入站 SSH 的 IPFILTER 语法如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pass in on $ext_if proto tcp from any to any port = 22\n"
-msgstr ""
+msgstr "pass in on $ext_if proto tcp from any to any port = 22\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:261
+#, fuzzy
 msgid ""
 "IPFW is the firewall developed and maintained by FreeBSD.  It can be paired "
 "with man:dummynet[4] to provide traffic shaping capabilities and simulate "
 "different types of network connections."
-msgstr ""
+msgstr "IPFW 是由 FreeBSD 开发和维护的防火墙。它可以与 man:dummynet[4] 配合使用，以提供流量整形功能并模拟不同类型的网络连接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:263
+#, fuzzy
 msgid "The IPFW syntax to allow inbound SSH would be:"
-msgstr ""
+msgstr "允许入站 SSH 的 IPFW 语法如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:267
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ipfw add allow tcp from any to me 22 in via $ext_if\n"
-msgstr ""
+msgstr "ipfw add allow tcp from any to me 22 in via $ext_if\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:270
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Updating FreeBSD"
-msgstr ""
+msgstr "更新 FreeBSD"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:273
+#, fuzzy
 msgid ""
 "There are two methods for updating a FreeBSD system: from source or binary "
 "updates."
-msgstr ""
+msgstr "更新 FreeBSD 系统有两种方法：从源代码更新或进行二进制更新。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:277
+#, fuzzy
 msgid ""
 "Updating from source is the most involved update method, but offers the "
 "greatest amount of flexibility.  The process involves synchronizing a local "
 "copy of the FreeBSD source code with the FreeBSD Git repository.  Once the "
 "local source code is up-to-date, a new version of the kernel and userland "
 "can be compiled."
-msgstr ""
+msgstr "从源代码更新是最复杂的更新方法，但也提供了最大的灵活性。此过程包括将本地 FreeBSD 源代码副本与 FreeBSD Git 仓库同步。本地源代码更新到最新版本后，即可编译新版本的内核和用户空间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:281
+#, fuzzy
 msgid ""
 "Binary updates are similar to using `yum` or `apt-get` to update a Linux(R) "
 "system.  In FreeBSD, man:freebsd-update[8] can be used fetch new binary "
 "updates and install them.  These updates can be scheduled using man:cron[8]."
-msgstr ""
+msgstr "二进制更新类似于使用 `yum` 或 `apt-get` 更新 Linux(R) 系统。在 FreeBSD 中，可以使用 man:freebsd-update[8] 获取并安装新的二进制更新。可以使用 man:cron[8] 定时执行这些更新。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/linux-users/_index.adoc:285
+#, fuzzy
 msgid ""
 "When using man:cron[8] to schedule updates, use `freebsd-update cron` in the "
 "man:crontab[1] to reduce the possibility of a large number of machines all "
 "pulling updates at the same time:"
-msgstr ""
+msgstr "使用 man:cron[8] 定时执行更新时，请在 man:crontab[1] 中使用 `freebsd-update cron`，以降低大量机器同时获取更新的可能性："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0 3 * * * root /usr/sbin/freebsd-update cron\n"
-msgstr ""
+msgstr "0 3 * * * root /usr/sbin/freebsd-update cron\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/linux-users/_index.adoc:294
+#, fuzzy
 msgid ""
 "For more information on source and binary updates, refer to extref:{handbook}"
 "cutting-edge[the chapter on updating, updating-upgrading-freebsdupdate] in "
 "the FreeBSD Handbook."
-msgstr ""
+msgstr "有关源代码更新和二进制更新的更多信息，请参阅《FreeBSD 手册》中 extref:{handbook}cutting-edge[关于更新的章节， updating-upgrading-freebsdupdate]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "procfs: Gone But Not Forgotten"
-msgstr ""
+msgstr "procfs：虽已淡出，但仍未被遗忘"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/linux-users/_index.adoc:300
+#, fuzzy
 msgid ""
 "In some Linux(R) distributions, one could look at [.filename]#/proc/sys/net/"
 "ipv4/ip_forward# to determine if IP forwarding is enabled.  In FreeBSD, man:"
 "sysctl[8] is instead used to view this and other system settings."
-msgstr ""
+msgstr "在某些 Linux(R) 发行版中，可以查看 [.filename]#/proc/sys/net/ipv4/ip_forward# 来确定是否启用了 IP 转发。在 FreeBSD 中，则使用 man:sysctl[8] 查看此项及其他系统设置。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/linux-users/_index.adoc:302
+#, fuzzy
 msgid ""
 "For example, use the following to determine if IP forwarding is enabled on a "
 "FreeBSD system:"
-msgstr ""
+msgstr "例如，使用以下命令确定 FreeBSD 系统是否启用了 IP 转发："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% sysctl net.inet.ip.forwarding\n"
 "net.inet.ip.forwarding: 0\n"
-msgstr ""
+msgstr "% sysctl net.inet.ip.forwarding\nnet.inet.ip.forwarding: 0\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:310
+#, fuzzy
 msgid "Use `-a` to list all the system settings:"
-msgstr ""
+msgstr "使用 `-a` 列出所有系统设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sysctl -a | more\n"
-msgstr ""
+msgstr "% sysctl -a | more\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:317
+#, fuzzy
 msgid ""
 "If an application requires procfs, add the following entry to [.filename]#/"
 "etc/fstab#:"
-msgstr ""
+msgstr "如果应用程序需要 procfs，请在 [.filename]#/etc/fstab# 中添加以下条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "proc                /proc           procfs  rw,noauto       0       0\n"
-msgstr ""
+msgstr "proc                /proc           procfs  rw,noauto       0       0\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:324
+#, fuzzy
 msgid ""
 "Including `noauto` will prevent [.filename]#/proc# from being automatically "
 "mounted at boot."
-msgstr ""
+msgstr "添加 `noauto` 可以防止系统启动时自动挂载 [.filename]#/proc#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:326
+#, fuzzy
 msgid "To mount the file system without rebooting:"
-msgstr ""
+msgstr "无需重启即可挂载文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-users/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /proc\n"
-msgstr ""
+msgstr "# mount /proc\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common Commands"
-msgstr ""
+msgstr "常用命令"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:336
+#, fuzzy
 msgid "Some common command equivalents are as follows:"
-msgstr ""
+msgstr "一些常见命令的对应关系如下："
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) command (Red Hat/Debian)"
-msgstr ""
+msgstr "Linux(R) 命令（Red Hat/Debian）"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD equivalent"
-msgstr ""
+msgstr "FreeBSD 对应命令"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Purpose"
-msgstr ""
+msgstr "用途"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`yum install _package_` / `apt-get install _package_`"
-msgstr ""
+msgstr "`yum install _package_` / `apt-get install _package_`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg install _package_`"
-msgstr ""
+msgstr "`pkg install _package_`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Install package from remote repository"
-msgstr ""
+msgstr "从远程仓库安装软件包"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`rpm -ivh _package_` / `dpkg -i _package_`"
-msgstr ""
+msgstr "`rpm -ivh _package_` / `dpkg -i _package_`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg add _package_`"
-msgstr ""
+msgstr "`pkg add _package_`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Install local package"
-msgstr ""
+msgstr "安装本地软件包"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`rpm -qa` / `dpkg -l`"
-msgstr ""
+msgstr "`rpm -qa` / `dpkg -l`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pkg info`"
-msgstr ""
+msgstr "`pkg info`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "List installed packages"
-msgstr ""
+msgstr "列出已安装的软件包"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`lspci`"
-msgstr ""
+msgstr "`lspci`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:358
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`pciconf`"
-msgstr ""
+msgstr "`pciconf`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "List PCI devices"
-msgstr ""
+msgstr "列出 PCI 设备"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`lsmod`"
-msgstr ""
+msgstr "`lsmod`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:362
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`kldstat`"
-msgstr ""
+msgstr "`kldstat`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "List loaded kernel modules"
-msgstr ""
+msgstr "列出已加载的内核模块"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`modprobe`"
-msgstr ""
+msgstr "`modprobe`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`kldload` / `kldunload`"
-msgstr ""
+msgstr "`kldload` / `kldunload`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Load/Unload kernel modules"
-msgstr ""
+msgstr "加载/卸载内核模块"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:369
@@ -786,15 +839,15 @@ msgstr "摘要"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`truss`"
-msgstr ""
+msgstr "`truss`"
 
 #. type: Table
 #: documentation/content/en/articles/linux-users/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Trace system calls"
-msgstr ""
+msgstr "跟踪系统调用"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-users/_index.adoc:374
@@ -804,8 +857,9 @@ msgstr "结论"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-users/_index.adoc:377
+#, fuzzy
 msgid ""
 "This document has provided an overview of FreeBSD.  Refer to the extref:"
 "{handbook}[FreeBSD Handbook] for more in-depth coverage of these topics as "
 "well as the many topics not covered by this document."
-msgstr ""
+msgstr "本文概述了 FreeBSD。有关这些主题以及本文未涵盖的许多其他主题的更深入介绍，请参阅 extref:{handbook}[FreeBSD 手册]。"

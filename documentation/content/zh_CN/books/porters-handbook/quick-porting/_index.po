@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to quickly create a new FreeBSD Port"
-msgstr ""
+msgstr "如何快速创建新的 FreeBSD Port"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 3. Quick Porting"
-msgstr ""
+msgstr "第 3 章：快速移植"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:14
@@ -38,90 +38,97 @@ msgstr "快速 port"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:52
+#, fuzzy
 msgid ""
 "This section describes how to quickly create a new port.  For applications "
 "where this quick method is not adequate, the full \"Slow Porting\" process "
 "is described in crossref:slow-porting[slow-porting,Slow Porting]."
-msgstr ""
+msgstr "本节介绍如何快速创建新的 port。对于不适合采用这种快速方法的应用程序，完整的“慢速移植”流程详见 crossref:slow-porting[slow-porting,慢速移植]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:54
+#, fuzzy
 msgid ""
 "First, get the original tarball and put it into `DISTDIR`, which defaults to "
 "[.filename]#/usr/ports/distfiles#."
-msgstr ""
+msgstr "首先，获取原始 tarball 并将其放入 `DISTDIR`，该变量默认指向 [.filename]#/usr/ports/distfiles#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:60
+#, fuzzy
 msgid ""
 "These steps assume that the software compiled out-of-the-box.  In other "
 "words, absolutely no changes were required for the application to work on a "
 "FreeBSD system.  If anything had to be changed, refer to crossref:slow-"
 "porting[slow-porting,Slow Porting]."
-msgstr ""
+msgstr "以下步骤假设软件无需任何修改即可编译。换言之，应用程序在 FreeBSD 系统上正常运行完全不需要改动。如果需要进行任何修改，请参阅 crossref:slow-porting[slow-porting,慢速移植]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:65
+#, fuzzy
 msgid ""
 "It is recommended to set the `DEVELOPER` man:make[1] variable in [."
 "filename]#/etc/make.conf# before getting into porting."
-msgstr ""
+msgstr "建议在开始移植之前，在 [.filename]#/etc/make.conf# 中设置 `DEVELOPER` man:make[1] 变量。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# echo DEVELOPER=yes >> /etc/make.conf\n"
-msgstr ""
+msgstr "# echo DEVELOPER=yes >> /etc/make.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:72
+#, fuzzy
 msgid ""
 "This setting enables the \"developer mode\" that displays deprecation "
 "warnings and activates some further quality checks on calling `make`."
-msgstr ""
+msgstr "此设置会启用“开发者模式”，在调用 `make` 时显示弃用警告并执行一些额外的质量检查。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing the Makefile"
-msgstr ""
+msgstr "编写 Makefile"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:78
+#, fuzzy
 msgid "The minimal [.filename]#Makefile# would look something like this:"
-msgstr ""
+msgstr "最简 [.filename]#Makefile# 大致如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PORTNAME=\toneko\n"
 "DISTVERSION=\t1.1b\n"
 "CATEGORIES=\tgames\n"
 "MASTER_SITES=\tftp://ftp.rediris.es/sites/ftp.freebsd.org/pub/FreeBSD/\n"
-msgstr ""
+msgstr "PORTNAME=\toneko\nDISTVERSION=\t1.1b\nCATEGORIES=\tgames\nMASTER_SITES=\tftp://ftp.rediris.es/sites/ftp.freebsd.org/pub/FreeBSD/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "MAINTAINER=\tyouremail@example.com\n"
 "COMMENT=\tCat chasing a mouse all over the screen\n"
 "WWW=\t\thttp://www.daidouji.com/oneko/\n"
-msgstr ""
+msgstr "MAINTAINER=\tyouremail@example.com\nCOMMENT=\t一只在屏幕上追逐老鼠的猫\nWWW=\t\thttp://www.daidouji.com/oneko/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.port.mk>\n"
-msgstr ""
+msgstr ".include <bsd.port.mk>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:95
+#, fuzzy
 msgid ""
 "Try to figure it out.  A more detailed example is shown in the crossref:"
 "porting-samplem[porting-samplem,sample Makefile] section."
-msgstr ""
+msgstr "试着弄清楚如何编写。更详细的示例请参阅 crossref:porting-samplem[porting-samplem,示例 Makefile] 一节。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:97
@@ -131,46 +138,51 @@ msgstr "编写介绍文件"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:102
+#, fuzzy
 msgid ""
 "There are two description files that are required for any port, whether they "
 "actually package or not.  They are [.filename]#pkg-descr# and [."
 "filename]#pkg-plist#.  Their [.filename]#pkg-# prefix distinguishes them "
 "from other files."
-msgstr ""
+msgstr "每个 port 都需要两个描述文件，无论它们是否实际打包。这两个文件是 [.filename]#pkg-descr# 和 [.filename]#pkg-plist#。它们的 [.filename]#pkg-# 前缀用于与其他文件区分。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#pkg-descr#"
-msgstr ""
+msgstr "[.filename]#pkg-descr#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:108
+#, fuzzy
 msgid ""
 "This is a longer description of the port.  One to a few paragraphs concisely "
 "explaining what the port does is sufficient."
-msgstr ""
+msgstr "这是对 port 的较长描述。用一到几个段落简明说明该 port 的用途即可。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:115
+#, fuzzy
 msgid ""
 "This is _not_ a manual or an in-depth description on how to use or compile "
 "the port! _Please be careful when copying from the [.filename]#README# or "
 "manpage_.  Too often they are not a concise description of the port or are "
 "in an awkward format.  For example, manpages have justified spacing, which "
 "looks particularly bad with monospaced fonts."
-msgstr ""
+msgstr "这__不是__手册，也不是关于如何使用或编译该 port 的深入说明！__请谨慎复制 [.filename]#README# 或手册页中的内容。__它们往往不是对该 port 的简洁描述，或者格式不合适。例如，手册页采用两端对齐的间距，使用等宽字体显示时尤其难看。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:117
+#, fuzzy
 msgid ""
 "On the other hand, the content of [.filename]#pkg-descr# must be longer than "
 "the crossref:makefiles[makefile-comment,`COMMENT` line from the Makefile]. "
 "It must explain in more depth what the port is all about."
-msgstr ""
+msgstr "另一方面，[.filename]#pkg-descr# 的内容必须比 Makefile 中的 crossref:makefiles[makefile-comment,`COMMENT` 行]更长。它必须更深入地说明该 port 的用途。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:121
+#, fuzzy
 msgid ""
 "A well-written [.filename]#pkg-descr# describes the port completely enough "
 "that users would not have to consult the documentation or visit the website "
@@ -179,38 +191,41 @@ msgid ""
 "graphical toolkit, heavy dependencies, runtime environment, or "
 "implementation languages help users decide whether this port will work for "
 "them."
-msgstr ""
+msgstr "编写良好的 [.filename]#pkg-descr# 应对 port 作出足够完整的描述，让用户无需查阅文档或访问网站，就能了解软件的功能、用途以及特别出色的特性。提及图形工具包、繁重的依赖项、运行环境或实现语言等特定要求，有助于用户判断该 port 是否适合自己。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:125
+#, fuzzy
 msgid ""
 "The URL that used to be included as the last line of the [.filename]#pkg-"
 "descr# file has been moved to the [.filename]#Makefile#."
-msgstr ""
+msgstr "以前放在 [.filename]#pkg-descr# 文件末尾的 URL 已移至 [.filename]#Makefile#。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#pkg-plist#"
-msgstr ""
+msgstr "[.filename]#pkg-plist#"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:133
+#, fuzzy
 msgid ""
 "This file lists all the files installed by the port.  It is also called the "
 "\"packing list\" because the package is generated by packing the files "
 "listed here.  The pathnames are relative to the installation prefix (usually "
 "[.filename]#/usr/local#)."
-msgstr ""
+msgstr "此文件列出 port 安装的所有文件。它也称为“打包清单”，因为软件包是将此处列出的文件打包后生成的。路径名相对于安装前缀（通常是 [.filename]#/usr/local#）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:135
+#, fuzzy
 msgid "Here is a small example:"
-msgstr ""
+msgstr "下面是一个简单示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "bin/oneko\n"
 "man/man1/oneko.1.gz\n"
@@ -218,45 +233,49 @@ msgid ""
 "lib/X11/oneko/cat1.xpm\n"
 "lib/X11/oneko/cat2.xpm\n"
 "lib/X11/oneko/mouse.xpm\n"
-msgstr ""
+msgstr "bin/oneko\nman/man1/oneko.1.gz\nlib/X11/app-defaults/Oneko\nlib/X11/oneko/cat1.xpm\nlib/X11/oneko/cat2.xpm\nlib/X11/oneko/mouse.xpm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:147
+#, fuzzy
 msgid ""
 "Refer to the man:pkg-create[8] manual page for details on the packing list."
-msgstr ""
+msgstr "有关打包清单的详细信息，请参阅 man:pkg-create[8] 手册页。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:154
+#, fuzzy
 msgid ""
 "It is recommended to keep all the filenames in this file sorted "
 "alphabetically.  It will make verifying changes when upgrading the port much "
 "easier.  The sorting should be applied after variable expansion takes "
 "place.  The framework does this correctly when the package list is crossref:"
 "plist[plist-autoplist,generated automatically]."
-msgstr ""
+msgstr "建议按字母顺序排列此文件中的所有文件名。这样在升级 port 时验证更改会容易得多。排序应在变量展开后进行。软件包清单 crossref:plist[plist-autoplist,自动生成] 时，框架会正确处理排序。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:160
+#, fuzzy
 msgid ""
 "Creating a packing list manually can be a very tedious task.  If the port "
 "installs a large numbers of files, crossref:plist[plist-autoplist,creating "
 "the packing list automatically] might save time."
-msgstr ""
+msgstr "手动创建打包清单可能非常繁琐。如果 port 安装大量文件，crossref:plist[plist-autoplist,自动创建打包清单] 或许能节省时间。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:165
+#, fuzzy
 msgid ""
 "There is only one case when [.filename]#pkg-plist# can be omitted from a "
 "port.  If the port installs just a handful of files, list them in "
 "`PLIST_FILES`, within the port's [.filename]#Makefile#.  For instance, we "
 "could get along without [.filename]#pkg-plist# in the above [."
 "filename]#oneko# port by adding these lines to the [.filename]#Makefile#:"
-msgstr ""
+msgstr "只有一种情况可以在 port 中省略 [.filename]#pkg-plist#：如果 port 只安装少量文件，可在该 port 的 [.filename]#Makefile# 中通过 `PLIST_FILES` 列出这些文件。例如，可以在上面的 [.filename]#oneko# port 的 [.filename]#Makefile# 中添加以下几行，从而省去 [.filename]#pkg-plist#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "PLIST_FILES=\tbin/oneko \\\n"
 "\t\tman/man1/oneko.1.gz \\\n"
@@ -264,326 +283,362 @@ msgid ""
 "\t\tlib/X11/oneko/cat1.xpm \\\n"
 "\t\tlib/X11/oneko/cat2.xpm \\\n"
 "\t\tlib/X11/oneko/mouse.xpm\n"
-msgstr ""
+msgstr "PLIST_FILES=\tbin/oneko \\\n\t\tman/man1/oneko.1.gz \\\n\t\tlib/X11/app-defaults/Oneko \\\n\t\tlib/X11/oneko/cat1.xpm \\\n\t\tlib/X11/oneko/cat2.xpm \\\n\t\tlib/X11/oneko/mouse.xpm\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:181
+#, fuzzy
 msgid ""
 "Usage of `PLIST_FILES` should not be abused.  When looking for the origin of "
 "a file, people usually try to grep through the [.filename]#pkg-plist# files "
 "in the ports tree.  Listing files in `PLIST_FILES` in the [."
 "filename]#Makefile# makes that search more difficult."
-msgstr ""
+msgstr "不要滥用 `PLIST_FILES`。人们通常会在 ports 树的 [.filename]#pkg-plist# 文件中搜索某个文件的来源。将文件列在 [.filename]#Makefile# 的 `PLIST_FILES` 中会让这种搜索更加困难。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:186
+#, fuzzy
 msgid ""
 "If a port needs to create an empty directory, or creates directories outside "
 "of [.filename]#${PREFIX}# during installation, refer to crossref:plist[plist-"
 "dir-cleaning,Cleaning Up Empty Directories] for more information."
-msgstr ""
+msgstr "如果 port 需要创建空目录，或者在安装期间于 [.filename]#${PREFIX}# 之外创建目录，请参阅 crossref:plist[plist-dir-cleaning,清理空目录] 了解更多信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:192
+#, fuzzy
 msgid ""
 "As `PLIST_FILES` is a man:make[1] variable, any entry with spaces must be "
 "quoted.  For example, if using keywords described in man:pkg-create[8] and "
 "crossref:plist[plist-keywords,Expanding Package List with Keywords], the "
 "entry must be quoted."
-msgstr ""
+msgstr "由于 `PLIST_FILES` 是 man:make[1] 变量，任何包含空格的条目都必须加引号。例如，使用 man:pkg-create[8] 和 crossref:plist[plist-keywords,使用关键字扩展软件包清单] 中介绍的关键字时，必须为该条目加引号。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PLIST_FILES=\t\"@sample ${ETCDIR}/oneko.conf.sample\"\n"
-msgstr ""
+msgstr "PLIST_FILES=\t\"@sample ${ETCDIR}/oneko.conf.sample\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:200
+#, fuzzy
 msgid ""
 "Later we will see how [.filename]#pkg-plist# and `PLIST_FILES` can be used "
 "to fulfill crossref:plist[plist,more sophisticated tasks]."
-msgstr ""
+msgstr "稍后我们会介绍如何使用 [.filename]#pkg-plist# 和 `PLIST_FILES` 完成 crossref:plist[plist,更复杂的任务]。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the Checksum File"
-msgstr ""
+msgstr "创建校验和文件"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:207
+#, fuzzy
 msgid ""
 "Just type `make makesum`.  The ports framework will automatically generate [."
 "filename]#distinfo#.  Do not try to generate the file manually."
-msgstr ""
+msgstr "只需运行 `make makesum`。ports 框架会自动生成 [.filename]#distinfo#。不要尝试手动生成此文件。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Testing the Port"
-msgstr ""
+msgstr "测试 Port"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:213
+#, fuzzy
 msgid ""
 "Make sure that the port rules do exactly what is desired, including "
 "packaging up the port.  These are the important points to verify:"
-msgstr ""
+msgstr "确保 port 规则完全符合预期，包括正确打包该 port。请重点检查以下事项："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:215
+#, fuzzy
 msgid ""
 "[.filename]#pkg-plist# does not contain anything not installed by the port."
-msgstr ""
+msgstr "[.filename]#pkg-plist# 中不包含该 port 未安装的内容。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:216
+#, fuzzy
 msgid ""
 "[.filename]#pkg-plist# contains everything that is installed by the port."
-msgstr ""
+msgstr "[.filename]#pkg-plist# 包含该 port 安装的所有内容。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:217
+#, fuzzy
 msgid ""
 "The port can be installed using the `install` target. This verifies that the "
 "install script works correctly."
-msgstr ""
+msgstr "可以使用 `install` 目标安装该 port。这可以验证安装脚本是否正常工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:218
+#, fuzzy
 msgid ""
 "The port can be deinstalled properly using the `deinstall` target. This "
 "verifies that the deinstall script works correctly."
-msgstr ""
+msgstr "可以使用 `deinstall` 目标正确卸载该 port。这可以验证卸载脚本是否正常工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:219
+#, fuzzy
 msgid ""
 "The port only has access to network resources during the `fetch` target "
 "phase. This is important for package builders, such as package:ports-mgmt/"
 "poudriere[]."
-msgstr ""
+msgstr "该 port 只能在 `fetch` 目标阶段访问网络资源。这对 package:ports-mgmt/poudriere[] 等软件包构建工具很重要。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:220
+#, fuzzy
 msgid ""
 "Make sure that `make package` can be run as a normal user (that is, not as "
 "`root`). If that fails, the software may need to be patched. See also "
 "crossref:uses[uses-fakeroot,`fakeroot`] and crossref:uses[uses-uidfix,"
 "`uidfix`]."
-msgstr ""
+msgstr "确保普通用户（即非 `root` 用户）可以运行 `make package`。如果失败，可能需要修补软件。另请参阅 crossref:uses[uses-fakeroot,`fakeroot`] 和 crossref:uses[uses-uidfix,`uidfix`]。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Recommended Test Ordering"
-msgstr ""
+msgstr "步骤：建议的测试顺序"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:224
+#, fuzzy
 msgid "`make stage`"
-msgstr ""
+msgstr "`make stage`"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:225
+#, fuzzy
 msgid "`make stage-qa`"
-msgstr ""
+msgstr "`make stage-qa`"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:226
+#, fuzzy
 msgid "`make package`"
-msgstr ""
+msgstr "`make package`"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:227
+#, fuzzy
 msgid "`make install`"
-msgstr ""
+msgstr "`make install`"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:228
+#, fuzzy
 msgid "`make deinstall`"
-msgstr ""
+msgstr "`make deinstall`"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:229
+#, fuzzy
 msgid "`make package` (as user)"
-msgstr ""
+msgstr "`make package`（以普通用户身份运行）"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:231
+#, fuzzy
 msgid "Make certain no warnings are shown in any of the stages."
-msgstr ""
+msgstr "确保所有阶段都没有显示警告。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:234
+#, fuzzy
 msgid ""
 "Thorough automated testing can be done with package:ports-mgmt/poudriere[] "
 "from the Ports Collection, see crossref:testing[testing-poudriere,poudriere] "
 "for more information.  It maintains `jails` where all of the steps shown "
 "above can be tested without affecting the state of the host system."
-msgstr ""
+msgstr "可以使用 Ports Collection 中的 package:ports-mgmt/poudriere[] 进行全面的自动化测试。更多信息请参阅 crossref:testing[testing-poudriere,poudriere]。它会维护 `jails`，可在其中测试上述所有步骤，而不会影响主机系统的状态。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Checking the Port with `portlint`"
-msgstr ""
+msgstr "使用 `portlint` 检查 Port"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:241
+#, fuzzy
 msgid ""
 "Please use `portlint` to see if the port conforms to our guidelines.  The "
 "package:ports-mgmt/portlint[] program is part of the ports collection.  In "
 "particular, check that the crossref:porting-samplem[porting-samplem,"
 "Makefile] is in the right shape and the crossref:porting-pkgname[porting-"
 "pkgname,package] is named appropriately."
-msgstr ""
+msgstr "请使用 `portlint` 检查该 port 是否符合我们的准则。package:ports-mgmt/portlint[] 程序包含在 ports collection 中。请特别检查 crossref:porting-samplem[porting-samplem,Makefile] 的格式是否正确，以及 crossref:porting-pkgname[porting-pkgname,软件包] 的命名是否恰当。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:245
+#, fuzzy
 msgid ""
 "Do not blindly follow the output of `portlint`. It is a static lint tool and "
 "sometimes gets things wrong."
-msgstr ""
+msgstr "不要盲目遵循 `portlint` 的输出。它是一个静态检查工具，有时会给出错误结果。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Submitting the New Port"
-msgstr ""
+msgstr "提交新 Port"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:251
+#, fuzzy
 msgid ""
 "Before submitting the new port, read the crossref:porting-dads[porting-dads,"
 "DOs and DON'Ts] section."
-msgstr ""
+msgstr "提交新 port 之前，请阅读 crossref:porting-dads[porting-dads,注意事项] 一节。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:253
+#, fuzzy
 msgid ""
 "Once happy with the port, the only thing remaining is to put it in the main "
 "FreeBSD ports tree and make everybody else happy about it too."
-msgstr ""
+msgstr "对该 port 满意后，只剩下将其加入 FreeBSD ports 主树，让其他人也能受益。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:257
+#, fuzzy
 msgid ""
 "We do not need the [.filename]#work# directory or the [.filename]#pkgname."
 "txz# package, so delete them now."
-msgstr ""
+msgstr "我们不需要 [.filename]#work# 目录或 [.filename]#pkgname.txz# 软件包，现在请将它们删除。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:261
+#, fuzzy
 msgid ""
 "Next, create a man:patch[1], file.  Assuming the port is called `oneko` and "
 "is in the `games` category."
-msgstr ""
+msgstr "接下来，创建一个 man:patch[1] 文件。假设该 port 名为 `oneko`，类别为 `games`。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating a [.filename]#.diff# for a New Port"
-msgstr ""
+msgstr "为新 Port 创建 [.filename]#.diff# 文件"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:267
+#, fuzzy
 msgid ""
 "Add all the files with `git add .`, then review the diff with `git diff`. "
 "For example:"
-msgstr ""
+msgstr "使用 `git add .` 添加所有文件，然后用 `git diff` 查看差异。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git add .\n"
 "% git diff --staged\n"
-msgstr ""
+msgstr "% git add .\n% git diff --staged\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:276
+#, fuzzy
 msgid ""
 "Make sure that all required files are included, then commit the change to "
 "your local branch and generate a patch with `git format-patch`"
-msgstr ""
+msgstr "确保包含所有必需文件，然后将更改提交到本地分支，并使用 `git format-patch` 生成补丁"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git commit\n"
 "% git format-patch origin/main\n"
-msgstr ""
+msgstr "% git commit\n% git format-patch origin/main\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:285
+#, fuzzy
 msgid ""
 "Patch generated with `git format-patch` will include author identity and "
 "email addresses, making it easier for developers to apply (with `git am`) "
 "and give proper credit."
-msgstr ""
+msgstr "使用 `git format-patch` 生成的补丁会包含作者身份和电子邮件地址，方便开发者使用 `git am` 应用补丁并给予适当署名。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:289
+#, fuzzy
 msgid ""
 "To make it easier for committers to apply the patch on their working copy of "
 "the ports tree, please generate the [.filename]#.diff# from the base of your "
 "ports tree."
-msgstr ""
+msgstr "为了方便提交者将补丁应用到其 ports 树工作副本，请从 ports 树的根目录生成 [.filename]#.diff#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:296
+#, fuzzy
 msgid ""
 "Submit [.filename]#oneko.diff# with the https://bugs.freebsd.org/submit/[bug "
 "submission form].  Use product \"Ports & Packages\", component \"Individual "
 "Port(s)\", and follow the guidelines shown there.  Add a short description "
 "of the program to the Description field of the PR (perhaps a short version "
 "of `COMMENT`), and remember to add [.filename]#oneko.diff# as an attachment."
-msgstr ""
+msgstr "通过 link:https://bugs.freebsd.org/submit/[错误报告提交表单]提交 [.filename]#oneko.diff#。选择产品“Ports & Packages”和组件“Individual Port(s)”，并遵循页面上的说明。在 PR 的 Description 字段中简要描述该程序（可以使用简短版的 `COMMENT`），并记得将 [.filename]#oneko.diff# 添加为附件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:302
+#, fuzzy
 msgid ""
 "Giving a good description in the summary of the problem report makes the "
 "work of port committers and triagers a lot easier.  The expected format for "
 "new ports is \"[NEW PORT] _category/portname short description of the port_"
 "\".  Using this scheme makes it easier and faster to begin the work of "
 "committing the new port."
-msgstr ""
+msgstr "在问题报告的摘要中提供清晰的描述，可以大大方便 port 提交者和分流人员的工作。新 port 的摘要格式应为“[NEW PORT] _category/portname port 的简短描述_”。采用这种格式能让新 port 的提交工作更快、更容易开始。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:307
+#, fuzzy
 msgid ""
 "After submitting the port, please be patient.  The time needed to include a "
 "new port in FreeBSD can vary from a few days to a few months.  A simple "
 "search form of the Problem Report database can be searched at https://bugs."
 "freebsd.org/bugzilla/query.cgi[]."
-msgstr ""
+msgstr "提交 port 后，请耐心等待。将新 port 纳入 FreeBSD 所需的时间可能从几天到几个月不等。可以通过 link:https://bugs.freebsd.org/bugzilla/query.cgi[] 搜索问题报告数据库。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:309
+#, fuzzy
 msgid ""
 "To get a listing of _open_ port PRs, select _Open_ and _Ports & Packages_ in "
 "the search form, then click btn:[Search]."
-msgstr ""
+msgstr "要查看__未关闭__的 port PR 列表，请在搜索表单中选择__未关闭__和__Ports & Packages__，然后点击 btn:[搜索]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:312
+#, fuzzy
 msgid ""
 "After looking at the new port, we will reply if necessary, and commit it to "
 "the tree.  The submitter's name will also be added to the list of extref:"
 "{contributors}[Additional FreeBSD Contributors, contrib-additional] and "
 "other files."
-msgstr ""
+msgstr "查看新 port 后，我们会在必要时回复，并将其提交到代码树。提交者的姓名也会添加到 extref:{contributors}[FreeBSD 其他贡献者名单, contrib-additional] 及其他文件中。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/quick-porting/_index.adoc:317
+#, fuzzy
 msgid ""
 "Previously it was possible to submit patches for new ports using a man:"
 "shar[1] file; this is no longer the case with the evolution of man:git[1].  "
 "Committers no longer accept man:shar[1] files as their use is prone to "
 "mistake and does not add the relevant entry in the category's [."
 "filename]#Makefile#."
-msgstr ""
+msgstr "过去可以使用 man:shar[1] 文件提交新 port 的补丁，但随着 man:git[1] 的发展，这种方式已不再适用。提交者不再接受 man:shar[1] 文件，因为这种方式容易出错，而且不会在该类别的 [.filename]#Makefile# 中添加相应条目。"

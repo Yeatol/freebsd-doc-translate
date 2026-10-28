@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/boot/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "An introduction to the FreeBSD Booting Process, demonstrates how to customize the FreeBSD boot process, including everything that happens until the FreeBSD kernel has started, probed for devices, and started init"
-msgstr ""
+msgstr "FreeBSD 启动过程简介，演示如何自定义 FreeBSD 的启动过程，包括从启动开始到 FreeBSD 内核启动、探测设备并启动 init 之前发生的一切"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/boot/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/boot/_index.adoc:1
@@ -66,13 +66,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:60
+#, fuzzy
 msgid ""
 "This chapter details the configuration options that can be set.  It "
 "demonstrates how to customize the FreeBSD boot process, including everything "
 "that happens until the FreeBSD kernel has started, probed for devices, and "
 "started man:init[8].  This occurs when the text color of the boot messages "
 "changes from bright white to grey."
-msgstr ""
+msgstr "本章详细介绍可设置的配置选项，并演示如何自定义 FreeBSD 的启动过程，包括从启动开始到 FreeBSD 内核启动、探测设备并启动 man:init[8] 之前发生的一切。当启动消息的文本颜色从亮白色变为灰色时，这个过程就结束了。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:62
@@ -143,16 +144,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:85
+#, fuzzy
 msgid ""
 "This problem parallels one in the book The Adventures of Baron Munchausen.  "
 "A character had fallen part way down a manhole, and pulled himself out by "
 "grabbing his bootstraps and lifting.  In the early days of computing, the "
 "term _bootstrap_ was applied to the mechanism used to load the operating "
 "system.  It has since become shortened to \"booting\"."
-msgstr ""
+msgstr "这个问题与《The Adventures of Baron Munchausen》一书中的一个情节类似：一个角色掉进了竖井，身体悬在半空中，于是抓住自己的靴带把自己拉了出来。在计算机发展的早期，__bootstrap__ 一词用于指称加载操作系统的机制。后来，这个词逐渐简化为“booting”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:89
+#, fuzzy
 msgid ""
 "On x86 hardware, the Basic Input/Output System (BIOS) is responsible for "
 "loading the operating system.  The BIOS looks on the hard disk for the "
@@ -160,20 +163,22 @@ msgid ""
 "disk.  The BIOS has enough knowledge to load and run the MBR, and assumes "
 "that the MBR can then carry out the rest of the tasks involved in loading "
 "the operating system, possibly with the help of the BIOS."
-msgstr ""
+msgstr "在 x86 硬件上，基本输入/输出系统（BIOS）负责加载操作系统。BIOS 会在硬盘上查找主引导记录（MBR），而 MBR 必须位于磁盘上的特定位置。BIOS 知道如何加载并运行 MBR，并假定 MBR 能够在 BIOS 的协助下完成加载操作系统所需的其余任务。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:96
+#, fuzzy
 msgid ""
 "FreeBSD provides for booting from both the older MBR standard, and the newer "
 "GUID Partition Table (GPT).  GPT partitioning is often found on computers "
 "with the Unified Extensible Firmware Interface (UEFI).  However, FreeBSD can "
 "boot from GPT partitions even on machines with only a legacy BIOS with man:"
 "gptboot[8].  Work is under way to provide direct UEFI booting."
-msgstr ""
+msgstr "FreeBSD 支持从较早的 MBR 标准和较新的 GUID 分区表（GPT）启动。GPT 分区通常用于配备统一可扩展固件接口（UEFI）的计算机。不过，即使机器只配备传统 BIOS，FreeBSD 也能通过 man:gptboot[8] 从 GPT 分区启动。目前正在开发直接通过 UEFI 启动的功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:101
+#, fuzzy
 msgid ""
 "The code within the MBR is typically referred to as a _boot manager_, "
 "especially when it interacts with the user.  The boot manager usually has "
@@ -181,15 +186,16 @@ msgid ""
 "Examples of boot managers include the standard FreeBSD boot manager boot0, "
 "also called Boot Easy, and GNU GRUB, which is used by many Linux(R) "
 "distributions."
-msgstr ""
+msgstr "MBR 中的代码通常称为__引导管理器__，尤其是在它与用户交互时。引导管理器通常还会在磁盘的第一个磁道或文件系统中包含更多代码。引导管理器的示例包括标准 FreeBSD 引导管理器 boot0（也称为 Boot Easy），以及许多 Linux(R) 发行版使用的 GNU GRUB。"
 
 #.  There is extref:{faq}[a frequently asked question] about GRUB. Beyond the answer there, //
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:106
+#, fuzzy
 msgid ""
 "Users of GRUB should refer to https://www.gnu.org/software/grub/grub-"
 "documentation.html[GNU-provided documentation]."
-msgstr ""
+msgstr "GRUB 用户应参阅 link:https://www.gnu.org/software/grub/grub-documentation.html[GNU 提供的文档]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:110
@@ -226,6 +232,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:120
+#, fuzzy
 msgid ""
 "The kernel is then started and begins to probe for devices and initialize "
 "them for use.  Once the kernel boot process is finished, the kernel passes "
@@ -233,7 +240,7 @@ msgid ""
 "usable state, starts the user-level resource configuration which mounts file "
 "systems, sets up network cards to communicate on the network, and starts the "
 "processes which have been configured to run at startup."
-msgstr ""
+msgstr "随后，内核启动并开始探测设备，并将其初始化以供使用。内核启动过程完成后，内核会将控制权交给用户进程 man:init[8]。该进程会确保磁盘处于可用状态，启动用户级资源配置流程（用于挂载文件系统、配置网卡以连接网络），并启动已配置为在启动时运行的进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:122
@@ -250,63 +257,67 @@ msgstr "开机管理程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:128
+#, fuzzy
 msgid ""
 "The boot manager code in the MBR is sometimes referred to as _stage zero_ of "
 "the boot process.  By default, FreeBSD uses the boot0 boot manager."
-msgstr ""
+msgstr "MBR 中的引导管理器代码有时称为启动过程的__第零阶段__。FreeBSD 默认使用 boot0 引导管理器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:132
+#, fuzzy
 msgid ""
 "The MBR installed by the FreeBSD installer is based on [.filename]#/boot/"
 "boot0#.  The size and capability of boot0 is restricted to 446 bytes due to "
 "the slice table and `0x55AA` identifier at the end of the MBR.  If boot0 and "
 "multiple operating systems are installed, a message similar to this example "
 "will be displayed at boot time:"
-msgstr ""
+msgstr "FreeBSD 安装程序安装的 MBR 基于 [.filename]#/boot/boot0#。由于切片表和 MBR 末尾的 `0x55AA` 标识符，boot0 的大小和功能受到 446 字节的限制。如果安装了 boot0 和多个操作系统，启动时会显示类似以下示例的消息："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/boot/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#boot0# Screenshot"
-msgstr ""
+msgstr "[.filename]#boot0# 屏幕截图"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "F1 Win\n"
 "F2 FreeBSD\n"
-msgstr ""
+msgstr "F1 Win\nF2 FreeBSD\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default: F2\n"
-msgstr ""
+msgstr "默认：F2\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:150
+#, fuzzy
 msgid ""
 "Other operating systems will overwrite an existing MBR if they are installed "
 "after FreeBSD.  If this happens, or to replace the existing MBR with the "
 "FreeBSD MBR, use the following command:"
-msgstr ""
+msgstr "在 FreeBSD 之后安装其他操作系统时，它们会覆盖现有的 MBR。如果发生这种情况，或者要用 FreeBSD MBR 替换现有 MBR，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# fdisk -B -b /boot/boot0 device\n"
-msgstr ""
+msgstr "# fdisk -B -b /boot/boot0 device\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:158
+#, fuzzy
 msgid ""
 "where _device_ is the boot disk, such as [.filename]#ad0# for the first IDE "
 "disk, [.filename]#ad2# for the first IDE disk on a second IDE controller, or "
 "[.filename]#da0# for the first SCSI disk.  To create a custom configuration "
 "of the MBR, refer to man:boot0cfg[8]."
-msgstr ""
+msgstr "其中，__device__ 是启动磁盘，例如第一块 IDE 磁盘 [.filename]#ad0#、第二个 IDE 控制器上的第一块 IDE 磁盘 [.filename]#ad2#，或第一块 SCSI 磁盘 [.filename]#da0#。有关创建自定义 MBR 配置的信息，请参阅 man:boot0cfg[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/boot/_index.adoc:160
@@ -316,29 +327,32 @@ msgstr "阶段一与阶段二"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:165
+#, fuzzy
 msgid ""
 "Conceptually, the first and second stages are part of the same program on "
 "the same area of the disk.  Due to space constraints, they have been split "
 "into two, but are always installed together.  They are copied from the "
 "combined [.filename]#/boot/boot# by the FreeBSD installer or `bsdlabel`."
-msgstr ""
+msgstr "从概念上讲，第一阶段和第二阶段属于同一程序，位于磁盘的同一区域。由于空间有限，它们被拆分成两个部分，但始终会一起安装。它们由 FreeBSD 安装程序或 `bsdlabel` 从合并后的 [.filename]#/boot/boot# 中复制而来。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:168
+#, fuzzy
 msgid ""
 "These two stages are located outside file systems, in the first track of the "
 "boot slice, starting with the first sector.  This is where boot0, or any "
 "other boot manager, expects to find a program to run which will continue the "
 "boot process."
-msgstr ""
+msgstr "这两个阶段位于文件系统之外，在启动切片的第一个磁道中，从第一个扇区开始。boot0 或其他引导管理器会在此处查找一个程序来运行，以继续启动过程。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:171
+#, fuzzy
 msgid ""
 "The first stage, [.filename]#boot1#, is very simple, since it can only be "
 "512 bytes in size.  It knows just enough about the FreeBSD _bsdlabel_, which "
 "stores information about the slice, to find and execute [.filename]#boot2#."
-msgstr ""
+msgstr "第一阶段 [.filename]#boot1# 非常简单，因为它的大小只能是 512 字节。它只了解足够的 FreeBSD _bsdlabel_ 信息（该信息存储切片相关信息），以便找到并执行 [.filename]#boot2#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:176
@@ -358,41 +372,43 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/boot/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#boot2# Screenshot"
-msgstr ""
+msgstr "[.filename]#boot2# 屏幕截图"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ">> FreeBSD/i386 BOOT\n"
 "Default: 0:ad(0,a)/boot/loader\n"
 "boot:\n"
-msgstr ""
+msgstr ">> FreeBSD/i386 BOOT\nDefault: 0:ad(0,a)/boot/loader\nboot:\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:192
+#, fuzzy
 msgid ""
 "To replace the installed [.filename]#boot1# and [.filename]#boot2#, use "
 "`bsdlabel`, where _diskslice_ is the disk and slice to boot from, such as [."
 "filename]#ad0s1# for the first slice on the first IDE disk:"
-msgstr ""
+msgstr "要替换已安装的 [.filename]#boot1# 和 [.filename]#boot2#，请使用 `bsdlabel`。其中，__diskslice__ 是要从中启动的磁盘和切片，例如第一块 IDE 磁盘上的第一个切片 [.filename]#ad0s1#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# bsdlabel -B diskslice\n"
-msgstr ""
+msgstr "# bsdlabel -B diskslice\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:202
+#, fuzzy
 msgid ""
 "If just the disk name is used, such as [.filename]#ad0#, `bsdlabel` will "
 "create the disk in \"dangerously dedicated mode\", without slices.  This is "
 "probably not the desired action, so double check the _diskslice_ before "
 "pressing kbd:[Return]."
-msgstr ""
+msgstr "如果只使用磁盘名称，例如 [.filename]#ad0#，`bsdlabel` 会以“危险专用模式”创建磁盘，不包含切片。这可能不是预期操作，因此在按下 kbd:[Return] 前，请仔细确认 __diskslice__。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/boot/_index.adoc:205
@@ -402,18 +418,20 @@ msgstr "阶段三"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:209
+#, fuzzy
 msgid ""
 "The loader is the final stage of the three-stage bootstrap process.  It is "
 "located on the file system, usually as [.filename]#/boot/loader#."
-msgstr ""
+msgstr "loader 是三阶段引导过程的最后阶段。它位于文件系统中，通常路径为 [.filename]#/boot/loader#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:211
+#, fuzzy
 msgid ""
 "The loader is intended as an interactive method for configuration, using a "
 "built-in command set, backed up by a more powerful interpreter which has a "
 "more complex command set."
-msgstr ""
+msgstr "loader 用于通过内置命令集进行交互式配置，并由功能更强大、命令集更复杂的解释器提供支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:214
@@ -430,16 +448,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:217
+#, fuzzy
 msgid ""
 "The loader will then read [.filename]#/boot/loader.rc#, which by default "
 "reads in [.filename]#/boot/defaults/loader.conf# which sets reasonable "
 "defaults for variables and reads [.filename]#/boot/loader.conf# for local "
 "changes to those variables.  [.filename]#loader.rc# then acts on these "
 "variables, loading whichever modules and kernel are selected."
-msgstr ""
+msgstr "随后，loader 会读取 [.filename]#/boot/loader.rc#。默认情况下，该文件会读取 [.filename]#/boot/defaults/loader.conf#，其中设置了合理的变量默认值；然后读取 [.filename]#/boot/loader.conf#，以获取这些变量的本地修改。接着， [.filename]#loader.rc# 会根据这些变量加载所选模块和内核。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:222
+#, fuzzy
 msgid ""
 "Finally, by default, loader issues a 10 second wait for key presses, and "
 "boots the kernel if it is not interrupted.  If interrupted, the user is "
@@ -448,7 +468,7 @@ msgid ""
 "boot or reboot.  crossref:boot[boot-loader-commands,Loader Built-In "
 "Commands] lists the most commonly used loader commands.  For a complete "
 "discussion of all available commands, refer to man:loader[8]."
-msgstr ""
+msgstr "默认情况下，最后 loader 会等待 10 秒以接收按键输入；如果期间没有中断，就会启动内核。如果被中断，用户会看到一个支持该命令集的提示符，可在此调整变量、卸载所有模块、加载模块，最后启动或重新启动系统。crossref:boot[boot-loader-commands,Loader Built-In Commands] 列出了最常用的 loader 命令。有关所有可用命令的完整说明，请参阅 man:loader[8]。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/boot/_index.adoc:224
@@ -458,192 +478,193 @@ msgstr "加载程序内置指令"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Variable"
-msgstr ""
+msgstr "变量"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:230
 #: documentation/content/en/books/handbook/boot/_index.adoc:324
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "autoboot _seconds_"
-msgstr ""
+msgstr "autoboot _seconds_"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Proceeds to boot the kernel if not interrupted within the time span given, in seconds. It displays a countdown, and the default time span is 10 seconds."
-msgstr ""
+msgstr "如果在指定的秒数内未被中断，则继续启动内核。该命令会显示倒计时，默认等待时间为 10 秒。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "boot [`-options`] [`kernelname`]"
-msgstr ""
+msgstr "boot [`-options`] [`kernelname`]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Immediately proceeds to boot the kernel, with any specified options or kernel\n"
 "name. Providing a kernel name on the command-line is only applicable after an\n"
 "`unload` has been issued. Otherwise, the previously-loaded kernel will be\n"
 "used. If _kernelname_ is not provided with the full path, it will be searched under _/boot/kernel_ and _/boot/modules_."
-msgstr ""
+msgstr "立即启动内核，并使用指定的选项或内核名称。只有在执行过 `unload` 后，才可以在命令行中指定内核名称；否则，将使用先前加载的内核。如果未为 _kernelname_ 提供完整路径，则会在 _/boot/kernel_ 和 _/boot/modules_ 下查找。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "boot-conf"
-msgstr ""
+msgstr "boot-conf"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Goes through the same automatic configuration of modules based on specified variables, most commonly `kernel`. This only makes sense if `unload` is used first, before changing some variables."
-msgstr ""
+msgstr "根据指定的变量（最常见的是 `kernel`）执行相同的自动模块配置。只有在更改某些变量之前先使用 `unload`，此命令才有意义。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "help [`_topic_`]"
-msgstr ""
+msgstr "help [`_topic_`]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Shows help messages read from [.filename]#/boot/loader.help#. If the topic given is `index`, the list of available topics is displayed."
-msgstr ""
+msgstr "显示从 [.filename]#/boot/loader.help# 读取的帮助信息。如果给定的主题是 `index`，则会显示可用主题列表。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include `_filename_` ..."
-msgstr ""
+msgstr "include `_filename_` ..."
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reads the specified file and interprets it line by line. An error immediately stops the `include`."
-msgstr ""
+msgstr "读取指定文件并逐行解释。遇到错误时，`include` 会立即停止。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "load [-t ``_type_``] `_filename_`"
-msgstr ""
+msgstr "load [-t ``_type_``] `_filename_`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Loads the kernel, kernel module, or file of the type given, with the\n"
 "specified filename. Any arguments after _filename_ are passed to the file. If\n"
 "_filename_ is not provided with the full path, it will be searched under _/boot/kernel_ and _/boot/modules_."
-msgstr ""
+msgstr "加载内核、内核模块或指定类型的文件，并使用指定的文件名。_filename_ 之后的任何参数都会传递给该文件。如果未为 _filename_ 提供完整路径，则会在 _/boot/kernel_ 和 _/boot/modules_ 下查找。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ls [-l] [``_path_``]"
-msgstr ""
+msgstr "ls [-l] [``_path_``]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Displays a listing of files in the given path, or the root directory, if the path is not specified. If `-l` is specified, file sizes will also be shown."
-msgstr ""
+msgstr "显示给定路径下的文件列表；如果未指定路径，则显示根目录。如果指定了 `-l`，还会显示文件大小。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lsdev [`-v`]"
-msgstr ""
+msgstr "lsdev [`-v`]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lists all of the devices from which it may be possible to load modules. If `-v` is specified, more details are printed."
-msgstr ""
+msgstr "列出所有可能用于加载模块的设备。如果指定了 `-v`，则会显示更多详细信息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lsmod [`-v`]"
-msgstr ""
+msgstr "lsmod [`-v`]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Displays loaded modules. If `-v` is specified, more details are shown."
-msgstr ""
+msgstr "显示已加载的模块。如果指定了 `-v`，则会显示更多详细信息。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "more `_filename_`"
-msgstr ""
+msgstr "more `_filename_`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Displays the files specified, with a pause at each `LINES` displayed."
-msgstr ""
+msgstr "显示指定的文件，每显示 `LINES` 行后暂停一次。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "reboot"
-msgstr ""
+msgstr "reboot"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Immediately reboots the system."
-msgstr ""
+msgstr "立即重新启动系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "set `_variable_`, set `_variable=value_`"
-msgstr ""
+msgstr "set `_variable_`，set `_variable=value_`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sets the specified environment variables."
-msgstr ""
+msgstr "设置指定的环境变量。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "unload"
-msgstr ""
+msgstr "unload"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Removes all loaded modules."
-msgstr ""
+msgstr "移除所有已加载的模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:277
+#, fuzzy
 msgid ""
 "Here are some practical examples of loader usage.  To boot the usual kernel "
 "in single-user mode:"
-msgstr ""
+msgstr "以下是一些 loader 的实用示例。要以单用户模式启动常用内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " boot -s\n"
-msgstr ""
+msgstr " boot -s\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:284
@@ -654,11 +675,11 @@ msgstr "要卸载一般的核心与模块，然后加载先前或另一个指定
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 " unload\n"
 " load /path/to/kernelfile\n"
-msgstr ""
+msgstr " unload\n load /path/to/kernelfile\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:292
@@ -689,12 +710,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "unload\n"
 "set kernel=\"mykernel\"\n"
 "boot-conf\n"
-msgstr ""
+msgstr "unload\nset kernel=\"mykernel\"\nboot-conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:304
@@ -703,9 +724,9 @@ msgstr "要加载一个已自动化的核心设置Script可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:308
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " load -t userconfig_script /boot/kernel.conf\n"
-msgstr ""
+msgstr " load -t userconfig_script /boot/kernel.conf\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/boot/_index.adoc:311
@@ -715,13 +736,14 @@ msgstr "最终阶段"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:316
+#, fuzzy
 msgid ""
 "Once the kernel is loaded by either loader or by boot2, which bypasses "
 "loader, it examines any boot flags and adjusts its behavior as necessary.  "
 "crossref:boot[boot-kernel,Kernel Interaction During Boot] lists the commonly "
 "used boot flags.  Refer to man:boot[8] for more information on the other "
 "boot flags."
-msgstr ""
+msgstr "通过 loader 或绕过 loader 的 boot2 加载内核后，内核会检查所有启动标志，并根据需要调整其行为。crossref:boot[boot-kernel,Kernel Interaction During Boot] 列出了常用的启动标志。有关其他启动标志的更多信息，请参阅 man:boot[8]。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/boot/_index.adoc:318
@@ -731,39 +753,39 @@ msgstr "开机时核心互动参数"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Option"
-msgstr ""
+msgstr "选项"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-a`"
-msgstr ""
+msgstr "`-a`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "During kernel initialization, ask for the device to mount as the root file system."
-msgstr ""
+msgstr "在内核初始化期间，询问要将哪个设备挂载为根文件系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:328
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-C`"
-msgstr ""
+msgstr "`-C`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Boot the root file system from a CDROM."
-msgstr ""
+msgstr "从 CDROM 启动根文件系统。"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-s`"
-msgstr ""
+msgstr "`-s`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:333
@@ -774,34 +796,36 @@ msgstr "单使用者模式"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`-v`"
-msgstr ""
+msgstr "`-v`"
 
 #. type: Table
 #: documentation/content/en/books/handbook/boot/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Be more verbose during kernel startup."
-msgstr ""
+msgstr "在内核启动期间显示更多详细信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:339
+#, fuzzy
 msgid ""
 "Once the kernel has finished booting, it passes control to the user process "
 "man:init[8], which is located at [.filename]#/sbin/init#, or the program "
 "path specified in the `init_path` variable in `loader`.  This is the last "
 "stage of the boot process."
-msgstr ""
+msgstr "内核完成启动后，会将控制权交给位于 [.filename]#/sbin/init# 的用户进程 man:init[8]，或者交给 `loader` 中 `init_path` 变量指定的程序路径。这是启动过程的最后阶段。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:343
+#, fuzzy
 msgid ""
 "The boot sequence makes sure that the file systems available on the system "
 "are consistent.  If a UFS file system is not, and `fsck` cannot fix the "
 "inconsistencies, init drops the system into single-user mode so that the "
 "system administrator can resolve the problem directly.  Otherwise, the "
 "system boots into multi-user mode."
-msgstr ""
+msgstr "启动序列会确保系统上的文件系统处于一致状态。如果 UFS 文件系统不一致，且 `fsck` 无法修复这些不一致，init 就会让系统进入单用户模式，以便系统管理员直接解决问题。否则，系统将进入多用户模式。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/boot/_index.adoc:345
@@ -811,12 +835,13 @@ msgstr "单使用者模式"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:350
+#, fuzzy
 msgid ""
 "A user can specify this mode by booting with `-s` or by setting the "
 "`boot_single` variable in loader.  It can also be reached by running "
 "`shutdown now` from multi-user mode.  Single-user mode begins with this "
 "message:"
-msgstr ""
+msgstr "用户可以通过使用 `-s` 启动，或在 loader 中设置 `boot_single` 变量来指定此模式。也可以在多用户模式下运行 `shutdown now` 进入此模式。单用户模式启动时会显示以下消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:354
@@ -826,13 +851,15 @@ msgstr "Enter full pathname of shell or RETURN for /bin/sh:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:358
+#, fuzzy
 msgid ""
 "If the user presses kbd:[Enter], the system will enter the default POSIX(R) "
 "shell.  To specify a different shell, input the full path to the shell."
-msgstr ""
+msgstr "如果用户按下 kbd:[Enter]，系统将进入默认的 POSIX(R) shell。若要指定其他 shell，请输入其完整路径。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:363
+#, fuzzy
 msgid ""
 "Single-user mode is usually used to repair a system that will not boot due "
 "to an inconsistent file system or an error in a boot configuration file.  It "
@@ -840,7 +867,7 @@ msgid ""
 "actions are possible as the single-user mode prompt gives full, local access "
 "to the system and its configuration files.  There is no networking in this "
 "mode."
-msgstr ""
+msgstr "单用户模式通常用于修复因文件系统不一致或启动配置文件错误而无法启动的系统。如果忘记了 `root` 密码，也可以使用此模式重置密码。单用户模式提示符提供对系统及其配置文件的完整本地访问权限，因此可以执行这些操作。此模式下没有网络连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:366
@@ -862,18 +889,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:369
+#, fuzzy
 msgid ""
 "If the system `console` is changed to `insecure` in [.filename]#/etc/ttys#, "
 "the system will first prompt for the `root` password before initiating "
 "single-user mode.  This adds a measure of security while removing the "
 "ability to reset the `root` password when it is unknown."
-msgstr ""
+msgstr "如果在 [.filename]#/etc/ttys# 中将系统 `console` 改为 `insecure`，系统会先提示输入 `root` 密码，然后才启动单用户模式。这样可以提高一定的安全性，但如果忘记了 `root` 密码，也就无法重置它。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/boot/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring an Insecure Console in [.filename]#/etc/ttys#"
-msgstr ""
+msgstr "在 [.filename]#/etc/ttys# 中配置不安全的控制台"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:381
@@ -893,11 +921,12 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:386
+#, fuzzy
 msgid ""
 "An `insecure` console means that physical security to the console is "
 "considered to be insecure, so only someone who knows the `root` password may "
 "use single-user mode."
-msgstr ""
+msgstr "`insecure` 控制台表示控制台的物理安全性不可信，因此只有知道 `root` 密码的人才能使用单用户模式。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/boot/_index.adoc:388
@@ -936,10 +965,11 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:397
+#, fuzzy
 msgid ""
 "To learn more about the resource configuration system, refer to man:rc[8] "
 "and examine the scripts located in [.filename]#/etc/rc.d#."
-msgstr ""
+msgstr "要了解有关资源配置系统的更多信息，请参阅 man:rc[8]，并查看 [.filename]#/etc/rc.d# 中的脚本。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/boot/_index.adoc:399
@@ -949,15 +979,17 @@ msgstr "装置提示"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:404
+#, fuzzy
 msgid ""
 "During initial system startup, the boot man:loader[8] reads man:device."
 "hints[5].  This file stores kernel boot information known as variables, "
 "sometimes referred to as \"device hints\".  These \"device hints\" are used "
 "by device drivers for device configuration."
-msgstr ""
+msgstr "在系统启动初期，启动用的 man:loader[8] 会读取 man:device.hints[5]。此文件存储内核启动信息，这些信息称为变量，有时也称为“设备提示”。设备驱动程序会使用这些“设备提示”来配置设备。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:410
+#, fuzzy
 msgid ""
 "Device hints may also be specified at the Stage 3 boot loader prompt, as "
 "demonstrated in crossref:boot[boot-loader, Stage Three].  Variables can be "
@@ -965,14 +997,15 @@ msgid ""
 "in [.filename]#/boot/device.hints# can also be overridden.  Device hints "
 "entered at the boot loader are not permanent and will not be applied on the "
 "next reboot."
-msgstr ""
+msgstr "也可以在第 3 阶段启动加载器提示符中指定设备提示，示例见 crossref:boot[boot-loader, Stage Three]。可以使用 `set` 添加变量，使用 `unset` 移除变量，并使用 `show` 查看变量。也可以覆盖 [.filename]#/boot/device.hints# 中设置的变量。在启动加载器中输入的设备提示不会永久保存，下次重新启动时也不会生效。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:412
+#, fuzzy
 msgid ""
 "Once the system is booted, man:kenv[1] can be used to dump all of the "
 "variables."
-msgstr ""
+msgstr "系统启动后，可以使用 man:kenv[1] 转储所有变量。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:415
@@ -986,9 +1019,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " hint.driver.unit.keyword=\"value\"\n"
-msgstr ""
+msgstr " hint.driver.unit.keyword=\"value\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:422
@@ -997,60 +1030,69 @@ msgstr "在阶段3开机加载程序的语法则为："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:426
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " set hint.driver.unit.keyword=value\n"
-msgstr ""
+msgstr " set hint.driver.unit.keyword=value\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:430
+#, fuzzy
 msgid ""
 "where `driver` is the device driver name, `unit` is the device driver unit "
 "number, and `keyword` is the hint keyword.  The keyword may consist of the "
 "following options:"
-msgstr ""
+msgstr "其中，`driver` 是设备驱动程序名称，`unit` 是设备驱动程序单元编号，`keyword` 是提示关键字。该关键字可以由以下选项组成："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:432
+#, fuzzy
 msgid "`at`: specifies the bus which the device is attached to."
-msgstr ""
+msgstr "`at`：指定设备连接到的总线。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:433
+#, fuzzy
 msgid "`port`: specifies the start address of the I/O to be used."
-msgstr ""
+msgstr "`port`：指定要使用的 I/O 起始地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:434
+#, fuzzy
 msgid "`irq`: specifies the interrupt request number to be used."
-msgstr ""
+msgstr "`irq`：指定要使用的中断请求编号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:435
+#, fuzzy
 msgid "`drq`: specifies the DMA channel number."
-msgstr ""
+msgstr "`drq`：指定 DMA 通道编号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:436
+#, fuzzy
 msgid "`maddr`: specifies the physical memory address occupied by the device."
-msgstr ""
+msgstr "`maddr`：指定设备占用的物理内存地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:437
+#, fuzzy
 msgid "`flags`: sets various flag bits for the device."
-msgstr ""
+msgstr "`flags`：设置设备的各种标志位。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:438
+#, fuzzy
 msgid "`disabled`: if set to `1` the device is disabled."
-msgstr ""
+msgstr "`disabled`：如果设置为 `1`，则禁用该设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:441
+#, fuzzy
 msgid ""
 "Since device drivers may accept or require more hints not listed here, "
 "viewing a driver's manual page is recommended.  For more information, refer "
 "to man:device.hints[5], man:kenv[1], man:loader.conf[5], and man:loader[8]."
-msgstr ""
+msgstr "由于设备驱动程序可能接受或要求此处未列出的其他提示，建议查看驱动程序的手册页。更多信息请参阅 man:device.hints[5]、man:kenv[1]、man:loader.conf[5] 和 man:loader[8]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/boot/_index.adoc:443
@@ -1060,15 +1102,17 @@ msgstr "关机程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:446
+#, fuzzy
 msgid ""
 "Upon controlled shutdown using man:shutdown[8], man:init[8] will attempt to "
 "run the script [.filename]#/etc/rc.shutdown#, and then proceed to send all "
 "processes the `TERM` signal, and subsequently the `KILL` signal to any that "
 "do not terminate in a timely manner."
-msgstr ""
+msgstr "使用 man:shutdown[8] 执行受控关机时，man:init[8] 会尝试运行脚本 [.filename]#/etc/rc.shutdown#，然后向所有进程发送 `TERM` 信号；对于未能及时终止的进程，随后会发送 `KILL` 信号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:452
+#, fuzzy
 msgid ""
 "To power down a FreeBSD machine on architectures and systems that support "
 "power management, use `shutdown -p now` to turn the power off immediately.  "
@@ -1076,18 +1120,20 @@ msgid ""
 "member of `operator` in order to run man:shutdown[8].  One can also use man:"
 "halt[8] and man:reboot[8].  Refer to their manual pages and to man:"
 "shutdown[8] for more information."
-msgstr ""
+msgstr "对于支持电源管理的体系结构和系统，使用 `shutdown -p now` 可立即关闭 FreeBSD 计算机的电源。要重新启动 FreeBSD 系统，请使用 `shutdown -r now`。只有 `root` 或 `operator` 组成员才能运行 man:shutdown[8]。也可以使用 man:halt[8] 和 man:reboot[8]。更多信息请参阅这些命令的手册页以及 man:shutdown[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/boot/_index.adoc:454
+#, fuzzy
 msgid ""
 "Modify group membership by referring to crossref:basics[users-"
 "synopsis,“Users and Basic Account Management”]."
-msgstr ""
+msgstr "有关修改组成员身份的信息，请参阅 crossref:basics[users-synopsis，“用户与基本账户管理”]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/boot/_index.adoc:458
+#, fuzzy
 msgid ""
 "Power management requires man:acpi[4] to be loaded as a module or statically "
 "compiled into a custom kernel."
-msgstr ""
+msgstr "电源管理要求将 man:acpi[4] 作为模块加载，或将其静态编译到自定义内核中。"

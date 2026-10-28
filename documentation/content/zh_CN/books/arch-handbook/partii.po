@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/partii.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Device Drivers"
-msgstr ""
+msgstr "第二部分：设备驱动程序"
 
 #. type: Title =
 #: documentation/content/en/books/arch-handbook/partii.adoc:12

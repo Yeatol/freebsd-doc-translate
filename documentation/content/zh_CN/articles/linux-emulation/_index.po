@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A technical description about the internals of the Linux emulation layer in FreeBSD"
-msgstr ""
+msgstr "关于 FreeBSD 中 Linux 仿真层内部机制的技术说明"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux® emulation in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中的 Linux® 仿真"
 
 #. type: Title =
 #: documentation/content/en/articles/linux-emulation/_index.adoc:11
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) emulation in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中的 Linux(R) 仿真"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:43
@@ -43,6 +43,7 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:53
+#, fuzzy
 msgid ""
 "This masters thesis deals with updating the Linux(R) emulation layer (the so "
 "called _Linuxulator_).  The task was to update the layer to match the "
@@ -57,7 +58,7 @@ msgid ""
 "FreeBSD source repository and will be shipped in the upcoming 7.0R release.  "
 "We, the emulation development team, are working on making the Linux(R) 2.6 "
 "emulation the default emulation layer in FreeBSD."
-msgstr ""
+msgstr "本硕士论文讨论了 Linux(R) 仿真层（即所谓的 __Linuxulator__）的更新。任务是更新该层，使其功能与 Linux(R) 2.6 相匹配。我们选择 Linux(R) 2.6.16 内核作为参考实现。其概念大致基于 NetBSD 的实现。大部分工作于 2006 年夏季完成，作为 Google Summer of Code 学生计划的一部分。重点是将 __NPTL__（新的 POSIX(R) 线程库）支持引入仿真层，其中包括 __TLS__（线程本地存储）、__futexes__（快速用户空间互斥量）、__PID mangling__，以及其他一些小功能。在此过程中，我们发现并修复了许多小问题。我的工作已并入 FreeBSD 主源代码仓库，并将随即将发布的 7.0R 版本一同发布。我们仿真开发团队正致力于让 Linux(R) 2.6 仿真成为 FreeBSD 的默认仿真层。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:55
@@ -72,6 +73,7 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:66
+#, fuzzy
 msgid ""
 "In the last few years the open source UNIX(R) based operating systems "
 "started to be widely deployed on server and client machines.  Among these "
@@ -84,49 +86,53 @@ msgid ""
 "but it is used much more by home based users.  This leads to a situation "
 "where there are many binary only programs available for Linux(R) that lack "
 "support for FreeBSD."
-msgstr ""
+msgstr "过去几年，基于 UNIX(R) 的开源操作系统开始广泛部署在服务器和客户端计算机上。在这些操作系统中，我想特别指出两个：FreeBSD 凭借其 BSD 血统、久经考验的代码库和众多有趣的功能；Linux(R) 则凭借其广泛的用户群、热情的开放式开发社区以及大型公司的支持。FreeBSD 通常用于承担繁重网络任务的服务器级计算机，而普通用户在桌面级计算机上使用它的情况较少。Linux(R) 同样用于服务器，但家庭用户对它的使用要普遍得多。因此，许多仅提供二进制文件的 Linux(R) 程序都缺乏对 FreeBSD 的支持。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:68
+#, fuzzy
 msgid ""
 "Naturally, a need for the ability to run Linux(R) binaries on a FreeBSD "
 "system arises and this is what this thesis deals with: the emulation of the "
 "Linux(R) kernel in the FreeBSD operating system."
-msgstr ""
+msgstr "自然，人们需要能够在 FreeBSD 系统上运行 Linux(R) 二进制程序，而这正是本论文所讨论的内容：在 FreeBSD 操作系统中仿真 Linux(R) 内核。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:71
+#, fuzzy
 msgid ""
 "During the Summer of 2006 Google Inc. sponsored a project which focused on "
 "extending the Linux(R) emulation layer (the so called Linuxulator) in "
 "FreeBSD to include Linux(R) 2.6 facilities.  This thesis is written as a "
 "part of this project."
-msgstr ""
+msgstr "2006 年夏季，Google Inc. 资助了一个项目，重点是在 FreeBSD 中扩展 Linux(R) 仿真层（即所谓的 Linuxulator），以纳入 Linux(R) 2.6 的功能。本论文作为该项目的一部分撰写。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-emulation/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A look inside..."
-msgstr ""
+msgstr "深入了解……"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:79
+#, fuzzy
 msgid ""
 "In this section we are going to describe every operating system in "
 "question.  How they deal with syscalls, trapframes etc., all the low-level "
 "stuff.  We also describe the way they understand common UNIX(R) primitives "
 "like what a PID is, what a thread is, etc.  In the third subsection we talk "
 "about how UNIX(R) on UNIX(R) emulation could be done in general."
-msgstr ""
+msgstr "本节将介绍相关的每个操作系统，说明它们如何处理系统调用、陷阱帧等底层内容。我们还将介绍它们如何理解常见的 UNIX(R) 原语，例如 PID 和线程的含义等。第三个小节将讨论通常如何实现 UNIX(R) 对 UNIX(R) 的仿真。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is UNIX(R)"
-msgstr ""
+msgstr "什么是 UNIX(R)"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:93
+#, fuzzy
 msgid ""
 "UNIX(R) is an operating system with a long history that has influenced "
 "almost every other operating system currently in use.  Starting in the "
@@ -143,18 +149,19 @@ msgid ""
 "company UNIX(R) derivatives (AIX, HP-UX etc.), but these have been more and "
 "more migrated to the aforementioned systems.  Let us summarize typical "
 "UNIX(R) characteristics."
-msgstr ""
+msgstr "UNIX(R) 是一种历史悠久的操作系统，影响了当今几乎所有正在使用的其他操作系统。它始于 20 世纪 60 年代，至今仍在发展（尽管已分属不同项目）。UNIX(R) 的发展很快分成两条主要路线：BSD 系列和 System III/V 系列。两者在发展过程中相互影响，并共同形成了 UNIX(R) 标准。BSD 的贡献包括虚拟内存、TCP/IP 网络、FFS 等。System V 分支则贡献了 SysV 进程间通信原语、写时复制等。如今 UNIX(R) 本身已不复存在，但其理念被世界各地的许多其他操作系统采用，由此形成了所谓的类 UNIX(R) 操作系统。如今最具影响力的有 Linux(R)、Solaris，以及可能在某种程度上也包括 FreeBSD。还有一些公司内部的 UNIX(R) 衍生系统（AIX、HP-UX 等），但它们越来越多地迁移到了上述系统。下面总结 UNIX(R) 的典型特征。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:95
 #: documentation/content/en/articles/linux-emulation/_index.adoc:186
 #: documentation/content/en/articles/linux-emulation/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Technical details"
-msgstr ""
+msgstr "技术细节"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:103
+#, fuzzy
 msgid ""
 "Every running program constitutes a process that represents a state of the "
 "computation.  Running process is divided between kernel-space and user-"
@@ -163,16 +170,17 @@ msgid ""
 "user space.  The kernel is where the management of the processes, hardware, "
 "and low-level details take place.  The kernel provides a standard unified "
 "UNIX(R) API to the user space.  The most important ones are covered below."
-msgstr ""
+msgstr "每个正在运行的程序都构成一个进程，用来表示计算状态。运行中的进程分为内核空间和用户空间两部分。某些操作只能在内核空间执行（例如处理硬件），但进程的大部分生命周期都应处于用户空间。内核负责管理进程、硬件及底层细节。内核向用户空间提供统一的标准 UNIX(R) API。下面介绍其中最重要的部分。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Communication between kernel and user space process"
-msgstr ""
+msgstr "内核与用户空间进程之间的通信"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:113
+#, fuzzy
 msgid ""
 "Common UNIX(R) API defines a syscall as a way to issue commands from a user "
 "space process to the kernel.  The most common implementation is either by "
@@ -182,41 +190,44 @@ msgid ""
 "number 132 is man:mkfifo[2].  Some syscalls need parameters, which are "
 "passed from the user-space to the kernel-space in various ways "
 "(implementation dependent).  Syscalls are synchronous."
-msgstr ""
+msgstr "通用 UNIX(R) API 将系统调用定义为用户空间进程向内核发出命令的一种方式。最常见的实现方式是使用中断或专用指令（例如 ia32 的 `SYSENTER`/`SYSCALL` 指令）。系统调用由编号标识。例如，在 FreeBSD 中，系统调用编号 85 对应 man:swapon[2] 系统调用，编号 132 对应 man:mkfifo[2]。某些系统调用需要参数，这些参数以各种方式从用户空间传递到内核空间（取决于具体实现）。系统调用是同步的。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:117
+#, fuzzy
 msgid ""
 "Another possible way to communicate is by using a _trap_.  Traps occur "
 "asynchronously after some event occurs (division by zero, page fault etc.).  "
 "A trap can be transparent for a process (page fault) or can result in a "
 "reaction like sending a _signal_ (division by zero)."
-msgstr ""
+msgstr "另一种可能的通信方式是使用__陷阱__。陷阱会在某个事件发生后异步触发（例如除以零、缺页等）。陷阱对进程而言可能是透明的（如缺页），也可能导致相应处理，例如发送__信号__（如除以零）。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Communication between processes"
-msgstr ""
+msgstr "进程之间的通信"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:124
+#, fuzzy
 msgid ""
 "There are other APIs (System V IPC, shared memory etc.) but the single most "
 "important API is signal.  Signals are sent by processes or by the kernel and "
 "received by processes.  Some signals can be ignored or handled by a user "
 "supplied routine, some result in a predefined action that cannot be altered "
 "or ignored."
-msgstr ""
+msgstr "还有其他 API（System V IPC、共享内存等），但最重要的 API 是信号。信号由进程或内核发送，并由进程接收。某些信号可以被忽略，也可以由用户提供的例程处理；另一些信号则会触发预定义操作，且无法更改或忽略。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Process management"
-msgstr ""
+msgstr "进程管理"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:136
+#, fuzzy
 msgid ""
 "Kernel instances are processed first in the system (so called init).  Every "
 "running process can create its identical copy using the man:fork[2] "
@@ -227,16 +238,17 @@ msgid ""
 "Processes end their lives by calling the man:exit[2] syscall.  Every process "
 "is identified by a unique number called PID.  Every process has a defined "
 "parent (identified by its PID)."
-msgstr ""
+msgstr "系统首先处理内核实例（即所谓的 init）。每个运行中的进程都可以使用 man:fork[2] 系统调用创建一个自身的副本。虽然该系统调用有一些略作修改的版本，但基本语义相同。每个运行中的进程都可以使用 man:exec[3] 系统调用转变为另一个进程。该系统调用也有一些修改版本，但基本目的相同。进程通过调用 man:exit[2] 系统调用结束其生命周期。每个进程都由一个称为 PID 的唯一编号标识。每个进程都有一个确定的父进程（由其 PID 标识）。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Thread management"
-msgstr ""
+msgstr "线程管理"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:144
+#, fuzzy
 msgid ""
 "Traditional UNIX(R) does not define any API nor implementation for "
 "threading, while POSIX(R) defines its threading API but the implementation "
@@ -244,59 +256,69 @@ msgid ""
 "Handling them as separate processes (1:1 threading) or envelope the whole "
 "thread group in one process and managing the threading in userspace (1:N "
 "threading).  Comparing main features of each approach:"
-msgstr ""
+msgstr "传统 UNIX(R) 没有定义线程 API 或实现，而 POSIX(R) 定义了线程 API，但没有规定其实现。传统上，线程有两种实现方式：将线程作为独立进程处理（1:1 线程模型），或者将整个线程组封装在一个进程中并在用户空间管理线程（1:N 线程模型）。下面比较两种方法的主要特性："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:146
+#, fuzzy
 msgid "1:1 threading"
-msgstr ""
+msgstr "1:1 线程模型"
 
 #. type: Bullet: '- '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:148
+#, fuzzy
 msgid "heavyweight threads"
-msgstr ""
+msgstr "重量级线程"
 
 #. type: Bullet: '- '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:149
+#, fuzzy
 msgid ""
 "the scheduling cannot be altered by the user (slightly mitigated by the "
 "POSIX(R) API)"
-msgstr ""
+msgstr "用户无法更改调度方式（POSIX(R) API 在一定程度上缓解了这一问题）"
 
 #. type: Bullet: '+  '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:150
+#, fuzzy
 msgid "no syscall wrapping necessary"
-msgstr ""
+msgstr "无需包装系统调用"
 
 #. type: Bullet: '+  '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:151
+#, fuzzy
 msgid "can utilize multiple CPUs"
-msgstr ""
+msgstr "可以利用多个 CPU"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:153
+#, fuzzy
 msgid "1:N threading"
-msgstr ""
+msgstr "1:N 线程模型"
 
 #. type: Bullet: '+  '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:155
+#, fuzzy
 msgid "lightweight threads"
-msgstr ""
+msgstr "轻量级线程"
 
 #. type: Bullet: '+  '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:156
+#, fuzzy
 msgid "scheduling can be easily altered by the user"
-msgstr ""
+msgstr "用户可以轻松更改调度方式"
 
 #. type: Bullet: '- '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:157
+#, fuzzy
 msgid "syscalls must be wrapped"
-msgstr ""
+msgstr "必须包装系统调用"
 
 #. type: Bullet: '- '
 #: documentation/content/en/articles/linux-emulation/_index.adoc:158
+#, fuzzy
 msgid "cannot utilize more than one CPU"
-msgstr ""
+msgstr "无法利用多个 CPU"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:160
@@ -306,6 +328,7 @@ msgstr "什么是 FreeBSD？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:168
+#, fuzzy
 msgid ""
 "The FreeBSD project is one of the oldest open source operating systems "
 "currently available for daily use.  It is a direct descendant of the genuine "
@@ -315,10 +338,11 @@ msgid ""
 "Based on this patchkit a new operating system arose named FreeBSD for its "
 "liberal license.  Another group created the NetBSD operating system with "
 "different goals in mind.  We will focus on FreeBSD."
-msgstr ""
+msgstr "FreeBSD 项目是目前仍可供日常使用的最古老开源操作系统之一。它是正统 UNIX(R) 的直接后裔，因此可以称其为真正的 UNIX(R)，尽管许可问题不允许这样做。该项目始于 20 世纪 90 年代初，当时一群 BSD 用户为 386BSD 操作系统编写补丁。在这套补丁的基础上，诞生了一个因采用宽松许可证而命名为 FreeBSD 的新操作系统。另一群人则出于不同目标创建了 NetBSD 操作系统。本文将重点介绍 FreeBSD。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:173
+#, fuzzy
 msgid ""
 "FreeBSD is a modern UNIX(R)-based operating system with all the features of "
 "UNIX(R).  Preemptive multitasking, multiuser facilities, TCP/IP networking, "
@@ -327,53 +351,62 @@ msgid ""
 "extremely useful features is the ability to emulate other UNIX(R)-like "
 "operating systems.  As of December 2006 and 7-CURRENT development, the "
 "following emulation functionalities are supported:"
-msgstr ""
+msgstr "FreeBSD 是一款现代的、基于 UNIX(R) 的操作系统，具备 UNIX(R) 的所有功能。抢占式多任务处理、多用户设施、TCP/IP 网络、内存保护、对称多处理支持、合并了 VM 与缓冲区缓存的虚拟内存，这些功能一应俱全。其中一项有趣且极为实用的功能是能够仿真其他类 UNIX(R) 操作系统。截至 2006 年 12 月及 7-CURRENT 开发阶段，支持以下仿真功能："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:175
+#, fuzzy
 msgid "FreeBSD/i386 emulation on FreeBSD/amd64"
-msgstr ""
+msgstr "在 FreeBSD/amd64 上仿真 FreeBSD/i386"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:176
+#, fuzzy
 msgid "FreeBSD/i386 emulation on FreeBSD/ia64"
-msgstr ""
+msgstr "在 FreeBSD/ia64 上仿真 FreeBSD/i386"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:177
+#, fuzzy
 msgid "Linux(R)-emulation of Linux(R) operating system on FreeBSD"
-msgstr ""
+msgstr "在 FreeBSD 上仿真 Linux(R) 操作系统"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:178
+#, fuzzy
 msgid "NDIS-emulation of Windows networking drivers interface"
-msgstr ""
+msgstr "仿真 Windows 网络驱动程序接口 NDIS"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:179
+#, fuzzy
 msgid "NetBSD-emulation of NetBSD operating system"
-msgstr ""
+msgstr "仿真 NetBSD 操作系统"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:180
+#, fuzzy
 msgid "PECoff-support for PECoff FreeBSD executables"
-msgstr ""
+msgstr "支持 PECoff 格式的 FreeBSD 可执行文件"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:181
+#, fuzzy
 msgid "SVR4-emulation of System V revision 4 UNIX(R)"
-msgstr ""
+msgstr "仿真 System V 第 4 版 UNIX(R)"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:184
+#, fuzzy
 msgid ""
 "Actively developed emulations are the Linux(R) layer and various FreeBSD-on-"
 "FreeBSD layers.  Others are not supposed to work properly nor be usable "
 "these days."
-msgstr ""
+msgstr "目前仍在积极开发的仿真包括 Linux(R) 层以及各种 FreeBSD-on-FreeBSD 层。如今，其他仿真不被认为能够正常工作或可供使用。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:194
+#, fuzzy
 msgid ""
 "FreeBSD is traditional flavor of UNIX(R) in the sense of dividing the run of "
 "processes into two halves: kernel space and user space run.  There are two "
@@ -383,16 +416,17 @@ msgid ""
 "architecture as the Linuxulator only exists there but the concept is similar "
 "on other architectures.  The information was taken from [1] and the source "
 "code."
-msgstr ""
+msgstr "FreeBSD 是传统风格的 UNIX(R)，其进程运行分为两部分：内核空间和用户空间。进程进入内核有两种方式：系统调用和陷阱。返回则只有一种方式。在接下来的章节中，我们将介绍进入和离开内核的三个入口。由于 Linuxulator 仅存在于 i386 架构，以下说明均适用于该架构，但其他架构的概念也类似。相关信息取自 [1] 和源代码。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "System entries"
-msgstr ""
+msgstr "系统入口"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:203
+#, fuzzy
 msgid ""
 "FreeBSD has an abstraction called an execution class loader, which is a "
 "wedge into the man:execve[2] syscall.  This employs a structure `sysentvec`, "
@@ -403,24 +437,26 @@ msgid ""
 "the syscall processing code and at some other places.  System entries are "
 "handled by trap handlers, where we can access both the kernel-space and the "
 "user-space at once."
-msgstr ""
+msgstr "FreeBSD 有一种称为执行类加载器的抽象，它是 man:execve[2] 系统调用中的一个挂接点。它使用 `sysentvec` 结构来描述可执行文件 ABI。该结构包含 errno 转换表、信号转换表，以及用于满足系统调用需求的各种函数（栈修正、核心转储等）。FreeBSD 内核支持的每个 ABI 都必须定义此结构，因为系统调用处理代码及其他一些位置会用到它。系统入口由陷阱处理程序处理，在那里可以同时访问内核空间和用户空间。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:205
 #: documentation/content/en/articles/linux-emulation/_index.adoc:287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Syscalls"
-msgstr ""
+msgstr "系统调用"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:208
+#, fuzzy
 msgid ""
 "Syscalls on FreeBSD are issued by executing interrupt `0x80` with register `"
 "%eax` set to a desired syscall number with arguments passed on the stack."
-msgstr ""
+msgstr "FreeBSD 中通过执行中断 `0x80` 发起系统调用；寄存器 `%eax` 设置为所需的系统调用编号，参数则通过栈传递。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:214
+#, fuzzy
 msgid ""
 "When a process issues an interrupt `0x80`, the `int0x80` syscall trap "
 "handler is issued (defined in [.filename]#sys/i386/i386/exception.s#), which "
@@ -436,18 +472,19 @@ msgid ""
 "syscall handler are passed in the form of `struct thread *td`, `struct "
 "syscall args *` arguments where the second parameter is a pointer to the "
 "copied in structure of parameters."
-msgstr ""
+msgstr "进程发出中断 `0x80` 时，会调用 `int0x80` 系统调用陷阱处理程序（定义于 [.filename]#sys/i386/i386/exception.s#），该程序为调用 C 函数 man:syscall[2]（定义于 [.filename]#sys/i386/i386/trap.c#）准备参数（即将参数复制到栈上）。该函数处理传入的陷阱帧。处理过程包括准备系统调用（取决于 `sysvec` 条目）、确定系统调用是 32 位还是 64 位（这会改变参数大小），然后复制参数，其中包括系统调用本身。接着执行实际的系统调用函数，并处理返回码（包括 `ERESTART` 和 `EJUSTRETURN` 错误的特殊情况）。最后会安排执行 `userret()`，将进程切换回用户空间。传递给实际系统调用处理程序的参数形式为 `struct thread *td` 和 `struct syscall args *`；第二个参数是指向已复制参数结构的指针。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:216
 #: documentation/content/en/articles/linux-emulation/_index.adoc:306
 #: documentation/content/en/articles/linux-emulation/_index.adoc:793
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Traps"
-msgstr ""
+msgstr "陷阱"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:223
+#, fuzzy
 msgid ""
 "Handling of traps in FreeBSD is similar to the handling of syscalls.  "
 "Whenever a trap occurs, an assembler handler is called.  It is chosen "
@@ -456,32 +493,34 @@ msgid ""
 "function `trap()` (defined in [.filename]#sys/i386/i386/trap.c#), which then "
 "processes the occurred trap.  After the processing it might send a signal to "
 "the process and/or exit to userland using `userret()`."
-msgstr ""
+msgstr "FreeBSD 中陷阱的处理方式与系统调用类似。每当发生陷阱时，都会调用一个汇编处理程序。根据陷阱类型，会选择 alltraps、带有寄存器压栈的 alltraps 或 calltrap。该处理程序为调用 C 函数 `trap()`（定义于 [.filename]#sys/i386/i386/trap.c#）准备参数，随后由该函数处理发生的陷阱。处理完成后，它可能会向进程发送信号，和／或通过 `userret()` 返回用户空间。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:225
 #: documentation/content/en/articles/linux-emulation/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Exits"
-msgstr ""
+msgstr "退出"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:229
+#, fuzzy
 msgid ""
 "Exits from kernel to userspace happen using the assembler routine `doreti` "
 "regardless of whether the kernel was entered via a trap or via a syscall.  "
 "This restores the program status from the stack and returns to the userspace."
-msgstr ""
+msgstr "无论内核是通过陷阱还是系统调用进入，离开内核并返回用户空间时都会使用汇编例程 `doreti`。该例程从栈中恢复程序状态并返回用户空间。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:231
 #: documentation/content/en/articles/linux-emulation/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UNIX(R) primitives"
-msgstr ""
+msgstr "UNIX(R) 原语"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:237
+#, fuzzy
 msgid ""
 "FreeBSD operating system adheres to the traditional UNIX(R) scheme, where "
 "every process has a unique identification number, the so called _PID_ "
@@ -489,10 +528,11 @@ msgid ""
 "from `0` to `PID_MAX`.  The allocation of PID numbers is done using linear "
 "searching of PID space.  Every thread in a process receives the same PID "
 "number as result of the man:getpid[2] call."
-msgstr ""
+msgstr "FreeBSD 操作系统遵循传统的 UNIX(R) 方案，每个进程都有一个唯一的标识号，即所谓的 __PID__（进程 ID）。PID 编号采用线性或随机方式分配，范围从 `0` 到 `PID_MAX`。PID 编号通过线性搜索 PID 空间进行分配。进程中的每个线程在调用 man:getpid[2] 后都会获得相同的 PID 编号。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:248
+#, fuzzy
 msgid ""
 "There are currently two ways to implement threading in FreeBSD.  The first "
 "way is M:N threading followed by the 1:1 threading model.  The default "
@@ -508,10 +548,11 @@ msgid ""
 "userland and solely serves the kernel's needs.  It is also used for 1:1 "
 "threading library as pthread's thread ID but handling of this is internal to "
 "the library and cannot be relied on."
-msgstr ""
+msgstr "目前，FreeBSD 中有两种线程实现方式：首先是 M:N 线程模型，其次是 1:1 线程模型。默认使用的库是 M:N 线程库（`libpthread`），也可以在运行时切换到 1:1 线程库（`libthr`）。计划不久后将 1:1 库设为默认库。虽然这两个库使用相同的内核原语，但它们通过不同的 API 访问。M:N 库使用 `kse_*` 系列系统调用，而 1:1 库使用 `thr_*` 系列系统调用。因此，内核与用户空间之间没有通用的线程 ID 概念。当然，两个线程库都实现了 pthread 线程 ID API。每个内核线程（由 `struct thread` 描述）都有一个 `td tid` 标识符，但用户空间无法直接访问它，它仅供内核使用。1:1 线程库也会将它用作 pthread 线程 ID，但其处理过程是库内部实现的，不能依赖这一行为。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:256
+#, fuzzy
 msgid ""
 "As stated previously there are two implementations of threading in FreeBSD.  "
 "The M:N library divides the work between kernel space and userspace.  Thread "
@@ -524,16 +565,17 @@ msgid ""
 "None of these designs implement a fairness mechanism (such a mechanism was "
 "implemented but it was removed recently because it caused serious slowdown "
 "and made the code more difficult to deal with)."
-msgstr ""
+msgstr "如前所述，FreeBSD 中有两种线程实现。M:N 库将工作分配到内核空间和用户空间。线程是在内核中获得调度的实体，但它可以代表数量不等的用户空间线程。M 个用户空间线程映射到 N 个内核线程，从而在节省资源的同时保留利用多处理器并行能力的优势。有关该实现的更多信息，请参阅手册页或 [1]。1:1 库则将用户空间线程直接映射到内核线程，从而大幅简化了整个机制。这些设计都没有实现公平机制（曾实现过此类机制，但因导致严重减速并使代码更难维护，最近已将其移除）。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is Linux(R)"
-msgstr ""
+msgstr "什么是 Linux(R)"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:262
+#, fuzzy
 msgid ""
 "Linux(R) is a UNIX(R)-like kernel originally developed by Linus Torvalds, "
 "and now being contributed to by a massive crowd of programmers all around "
@@ -541,30 +583,33 @@ msgid ""
 "companies such as IBM or Google, Linux(R) is being associated with its fast "
 "development pace, full hardware support and benevolent dictator model of "
 "organization."
-msgstr ""
+msgstr "Linux(R) 是一种类 UNIX(R) 内核，最初由 Linus Torvalds 开发，如今世界各地的大量程序员都在为其贡献代码。从最初创立至今，Linux(R) 得到了 IBM、Google 等公司的广泛支持，并以快速的开发节奏、全面的硬件支持以及仁慈独裁者式的组织模式而闻名。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:266
+#, fuzzy
 msgid ""
 "Linux(R) development started in 1991 as a hobbyist project at University of "
 "Helsinki in Finland.  Since then it has obtained all the features of a "
 "modern UNIX(R)-like OS: multiprocessing, multiuser support, virtual memory, "
 "networking, basically everything is there.  There are also highly advanced "
 "features like virtualization etc."
-msgstr ""
+msgstr "Linux(R) 于 1991 年在芬兰赫尔辛基大学作为一个业余项目开始开发。此后，它具备了现代类 UNIX(R) 操作系统的所有特性：多处理、多用户支持、虚拟内存、网络，基本上应有尽有。它还拥有虚拟化等高度先进的功能。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:269
+#, fuzzy
 msgid ""
 "As of 2006 Linux(R) seems to be the most widely used open source operating "
 "system with support from independent software vendors like Oracle, "
 "RealNetworks, Adobe, etc.  Most of the commercial software distributed for "
 "Linux(R) can only be obtained in a binary form so recompilation for other "
 "operating systems is impossible."
-msgstr ""
+msgstr "截至 2006 年，Linux(R) 似乎是使用最广泛的开源操作系统，并得到 Oracle、RealNetworks、Adobe 等独立软件供应商的支持。为 Linux(R) 发布的大多数商业软件只能以二进制形式获取，因此无法重新编译以用于其他操作系统。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:274
+#, fuzzy
 msgid ""
 "Most of the Linux(R) development happens in a Git version control system.  "
 "Git is a distributed system so there is no central source of the Linux(R) "
@@ -573,25 +618,28 @@ msgid ""
 "Currently development happens in 2.6.C.D, where C represents major version, "
 "where new features are added or changed while D is a minor version for "
 "bugfixes only."
-msgstr ""
+msgstr "Linux(R) 的大部分开发工作都在 Git 版本控制系统中进行。Git 是一种分布式系统，因此 Linux(R) 代码没有中央来源，但有些分支被视为重要且官方的分支。Linux(R) 使用的版本号方案由四个数字组成：A.B.C.D。目前的开发版本为 2.6.C.D，其中 C 表示主版本号，会添加或更改新功能；D 是次版本号，仅用于修复错误。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:276
+#, fuzzy
 msgid "More information can be obtained from [3]."
-msgstr ""
+msgstr "更多信息请参阅 [3]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:285
+#, fuzzy
 msgid ""
 "Linux(R) follows the traditional UNIX(R) scheme of dividing the run of a "
 "process in two halves: the kernel and user space.  The kernel can be entered "
 "in two ways: via a trap or via a syscall.  The return is handled only in one "
 "way.  The further description applies to Linux(R) 2.6 on the i386(TM) "
 "architecture.  This information was taken from [2]."
-msgstr ""
+msgstr "Linux(R) 遵循传统的 UNIX(R) 方案，将进程的执行分为两部分：内核和用户空间。进入内核有两种方式：通过陷阱或系统调用。返回则只有一种处理方式。以下说明适用于 i386(TM) 架构上的 Linux(R) 2.6。此信息摘自 [2]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:295
+#, fuzzy
 msgid ""
 "Syscalls in Linux(R) are performed (in userspace) using `syscallX` macros "
 "where X substitutes a number representing the number of parameters of the "
@@ -603,65 +651,75 @@ msgid ""
 "system call trap handler.  This routine saves all registers on the stack and "
 "calls the selected syscall entry.  Note that the Linux(R) calling convention "
 "expects parameters to the syscall to be passed via registers as shown here:"
-msgstr ""
+msgstr "Linux(R) 在用户空间中使用 `syscallX` 宏执行系统调用，其中 X 替换为表示给定系统调用参数数量的数字。该宏会转换为一段代码，将系统调用编号载入 `%eax` 寄存器，然后执行中断 `0x80`。随后会调用 `syscall` 返回处理例程，该例程将负的返回值转换为正的 `errno` 值，并在出错时将 `res` 设为 `-1`。每当调用中断 `0x80` 时，进程就会进入内核中的系统调用陷阱处理程序。该例程会将所有寄存器保存到栈上，并调用所选的系统调用入口。请注意，Linux(R) 调用约定要求通过寄存器传递系统调用参数，如下所示："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:297
+#, fuzzy
 msgid "parameter -> `%ebx`"
-msgstr ""
+msgstr "参数 -> `%ebx`"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:298
+#, fuzzy
 msgid "parameter -> `%ecx`"
-msgstr ""
+msgstr "参数 -> `%ecx`"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:299
+#, fuzzy
 msgid "parameter -> `%edx`"
-msgstr ""
+msgstr "参数 -> `%edx`"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:300
+#, fuzzy
 msgid "parameter -> `%esi`"
-msgstr ""
+msgstr "参数 -> `%esi`"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:301
+#, fuzzy
 msgid "parameter -> `%edi`"
-msgstr ""
+msgstr "参数 -> `%edi`"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:302
+#, fuzzy
 msgid "parameter -> `%ebp`"
-msgstr ""
+msgstr "参数 -> `%ebp`"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:304
+#, fuzzy
 msgid ""
 "There are some exceptions to this, where Linux(R) uses different calling "
 "convention (most notably the `clone` syscall)."
-msgstr ""
+msgstr "但也有一些例外，Linux(R) 会使用不同的调用约定（最显著的例子是 `clone` 系统调用）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:309
+#, fuzzy
 msgid ""
 "The trap handlers are introduced in [.filename]#arch/i386/kernel/traps.c# "
 "and most of these handlers live in [.filename]#arch/i386/kernel/entry.S#, "
 "where handling of the traps happens."
-msgstr ""
+msgstr "陷阱处理程序在 [.filename]#arch/i386/kernel/traps.c# 中引入，其中大多数处理程序位于 [.filename]#arch/i386/kernel/entry.S#，陷阱处理就在此处进行。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:315
+#, fuzzy
 msgid ""
 "Return from the syscall is managed by syscall man:exit[3], which checks for "
 "the process having unfinished work, then checks whether we used user-"
 "supplied selectors.  If this happens stack fixing is applied and finally the "
 "registers are restored from the stack and the process returns to the "
 "userspace."
-msgstr ""
+msgstr "系统调用的返回由系统调用 man:exit[3] 管理：它会检查进程是否有未完成的工作，然后检查是否使用了用户提供的选择子。如果是，则会修正栈，最后从栈中恢复寄存器，进程返回用户空间。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:326
+#, fuzzy
 msgid ""
 "In the 2.6 version, the Linux(R) operating system redefined some of the "
 "traditional UNIX(R) primitives, notably PID, TID and thread.  PID is defined "
@@ -674,75 +732,89 @@ msgid ""
 "flags that affect behavior of the cloning process regarding thread "
 "implementation.  The semantic is a bit fuzzy as there is no single flag "
 "telling the syscall to create a thread."
-msgstr ""
+msgstr "在 2.6 版本中，Linux(R) 操作系统重新定义了一些传统的 UNIX(R) 原语，尤其是 PID、TID 和线程。PID 被定义为不必对每个进程都唯一，因此对于某些进程（线程），man:getppid[2] 会返回相同的值。进程的唯一标识由 TID 提供。这是因为 __NPTL__（New POSIX(R) Thread Library）将线程定义为普通进程（即所谓的 1:1 线程模型）。在 Linux(R) 2.6 中，使用 `clone` 系统调用创建新进程（fork 的各种变体都通过它重新实现）。此 `clone` 系统调用定义了一组标志，用于影响克隆进程的行为及线程实现方式。其语义有些模糊，因为没有单独的标志指示该系统调用创建线程。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:328
+#, fuzzy
 msgid "Implemented clone flags are:"
-msgstr ""
+msgstr "已实现的 clone 标志如下："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:330
+#, fuzzy
 msgid "`CLONE_VM` - processes share their memory space"
-msgstr ""
+msgstr "`CLONE_VM` - 进程共享其内存空间"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:331
+#, fuzzy
 msgid "`CLONE_FS` - share umask, cwd and namespace"
-msgstr ""
+msgstr "`CLONE_FS` - 共享 umask、当前工作目录和命名空间"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:332
+#, fuzzy
 msgid "`CLONE_FILES` - share open files"
-msgstr ""
+msgstr "`CLONE_FILES` - 共享打开的文件"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:333
+#, fuzzy
 msgid "`CLONE_SIGHAND` - share signal handlers and blocked signals"
-msgstr ""
+msgstr "`CLONE_SIGHAND` - 共享信号处理程序和被阻塞的信号"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:334
+#, fuzzy
 msgid "`CLONE_PARENT` - share parent"
-msgstr ""
+msgstr "`CLONE_PARENT` - 共享父进程"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:335
+#, fuzzy
 msgid "`CLONE_THREAD` - be thread (further explanation below)"
-msgstr ""
+msgstr "`CLONE_THREAD` - 成为线程（详见下文）"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:336
+#, fuzzy
 msgid "`CLONE_NEWNS` - new namespace"
-msgstr ""
+msgstr "`CLONE_NEWNS` - 新建命名空间"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:337
+#, fuzzy
 msgid "`CLONE_SYSVSEM` - share SysV undo structures"
-msgstr ""
+msgstr "`CLONE_SYSVSEM` - 共享 SysV 撤销结构"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:338
+#, fuzzy
 msgid "`CLONE_SETTLS` - setup TLS at supplied address"
-msgstr ""
+msgstr "`CLONE_SETTLS` - 在指定地址设置 TLS"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:339
+#, fuzzy
 msgid "`CLONE_PARENT_SETTID` - set TID in the parent"
-msgstr ""
+msgstr "`CLONE_PARENT_SETTID` - 在父进程中设置 TID"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:340
+#, fuzzy
 msgid "`CLONE_CHILD_CLEARTID` - clear TID in the child"
-msgstr ""
+msgstr "`CLONE_CHILD_CLEARTID` - 在子进程中清除 TID"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:341
+#, fuzzy
 msgid "`CLONE_CHILD_SETTID` - set TID in the child"
-msgstr ""
+msgstr "`CLONE_CHILD_SETTID` - 在子进程中设置 TID"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:347
+#, fuzzy
 msgid ""
 "`CLONE_PARENT` sets the real parent to the parent of the caller.  This is "
 "useful for threads because if thread A creates thread B we want thread B to "
@@ -752,10 +824,11 @@ msgid ""
 "none and enters the thread group.  `CLONE_SETTLS` sets up GDT entries for "
 "TLS handling.  The `CLONE_*_*TID` set of flags sets/clears user supplied "
 "address to TID or 0."
-msgstr ""
+msgstr "`CLONE_PARENT` 将实际父进程设为调用者的父进程。这对线程很有用，因为如果线程 A 创建线程 B，我们希望线程 B 的父进程是整个线程组的父进程。`CLONE_THREAD` 的作用与 `CLONE_PARENT`、`CLONE_VM` 和 `CLONE_SIGHAND` 相同；它会将 PID 改写为与调用者相同的 PID，将退出信号设为无，并将进程加入线程组。`CLONE_SETTLS` 会为 TLS 处理设置 GDT 项。`CLONE_*_*TID` 这一组标志会在用户提供的地址处设置或清除 TID（设为 0）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:351
+#, fuzzy
 msgid ""
 "As you can see the `CLONE_THREAD` does most of the work and does not seem to "
 "fit the scheme very well.  The original intention is unclear (even for "
@@ -764,83 +837,88 @@ msgid ""
 "separation was never fully finished.  It is also unclear what this partition "
 "is good for as glibc does not use that so only hand-written use of the clone "
 "permits a programmer to access this features."
-msgstr ""
+msgstr "如你所见，`CLONE_THREAD` 完成了大部分工作，而且似乎与这套方案不太契合。其最初意图并不明确（根据代码注释，连作者也不清楚），但我认为最初只有一个线程标志，后来被拆分到许多其他标志中，而这种拆分从未彻底完成。这个划分有何用处也不清楚，因为 glibc 并不使用它，所以只有手动使用 clone 才能让程序员使用这些功能。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:354
+#, fuzzy
 msgid ""
 "For non-threaded programs the PID and TID are the same.  For threaded "
 "programs the first thread PID and TID are the same and every created thread "
 "shares the same PID and gets assigned a unique TID (because `CLONE_THREAD` "
 "is passed in) also parent is shared for all processes forming this threaded "
 "program."
-msgstr ""
+msgstr "对于非线程程序，PID 和 TID 相同。对于线程程序，第一个线程的 PID 和 TID 相同；每个新建的线程共享相同的 PID，并获得唯一的 TID（因为传入了 `CLONE_THREAD`），而且组成该线程程序的所有进程共享同一个父进程。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/linux-emulation/_index.adoc:356
+#, fuzzy
 msgid ""
 "The code that implements man:pthread_create[3] in NPTL defines the clone "
 "flags like this:"
-msgstr ""
+msgstr "NPTL 中实现 man:pthread_create[3] 的代码如下定义 clone 标志："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:360
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int clone_flags = (CLONE_VM | CLONE_FS | CLONE_FILES | CLONE_SIGNAL\n"
-msgstr ""
+msgstr "int clone_flags = (CLONE_VM | CLONE_FS | CLONE_FILES | CLONE_SIGNAL\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:362
-#, no-wrap
+#, no-wrap, fuzzy
 msgid " | CLONE_SETTLS | CLONE_PARENT_SETTID\n"
-msgstr ""
+msgstr " | CLONE_SETTLS | CLONE_PARENT_SETTID\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "| CLONE_CHILD_CLEARTID | CLONE_SYSVSEM\n"
 "#if __ASSUME_NO_CLONE_DETACHED == 0\n"
-msgstr ""
+msgstr "| CLONE_CHILD_CLEARTID | CLONE_SYSVSEM\n#if __ASSUME_NO_CLONE_DETACHED == 0\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "| CLONE_DETACHED\n"
 "#endif\n"
-msgstr ""
+msgstr "| CLONE_DETACHED\n#endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "| 0);\n"
-msgstr ""
+msgstr "| 0);\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:373
+#, fuzzy
 msgid "The `CLONE_SIGNAL` is defined like"
-msgstr ""
+msgstr "`CLONE_SIGNAL` 的定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#define CLONE_SIGNAL (CLONE_SIGHAND | CLONE_THREAD)\n"
-msgstr ""
+msgstr "#define CLONE_SIGNAL (CLONE_SIGHAND | CLONE_THREAD)\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:380
+#, fuzzy
 msgid "the last 0 means no signal is sent when any of the threads exits."
-msgstr ""
+msgstr "最后的 0 表示任何线程退出时都不发送信号。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is emulation"
-msgstr ""
+msgstr "什么是模拟"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:387
+#, fuzzy
 msgid ""
 "According to a dictionary definition, emulation is the ability of a program "
 "or device to imitate another program or device.  This is achieved by "
@@ -850,10 +928,11 @@ msgid ""
 "etc.), software emulation of a hardware facility (OpenGL emulators, floating "
 "point units emulation etc.) and operating system emulation (either in kernel "
 "of the operating system or as a userspace program)."
-msgstr ""
+msgstr "根据词典定义，模拟是程序或设备模仿另一程序或设备的能力。实现方式是：对于给定的刺激，产生与被模拟对象相同的响应。实际上，软件领域主要有三种模拟：用于模拟机器的程序（QEMU、各种游戏机模拟器等）、硬件功能的软件模拟（OpenGL 模拟器、浮点单元模拟等），以及操作系统模拟（在操作系统内核中或作为用户空间程序实现）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:394
+#, fuzzy
 msgid ""
 "Emulation is usually used in a place, where using the original component is "
 "not feasible nor possible at all.  For example someone might want to use a "
@@ -863,10 +942,11 @@ msgid ""
 "anymore) then there is no other way but emulation.  This happens often when "
 "porting an operating system to a new (non-existent) platform.  Sometimes it "
 "is just cheaper to emulate."
-msgstr ""
+msgstr "通常，当使用原始组件不可行或完全不可能时，会采用模拟。例如，有人可能想使用为另一种操作系统开发的程序，这时模拟就派上用场了。有时除了模拟别无他法，例如要使用的硬件设备尚不存在（或已不复存在），此时只能通过模拟实现。这种情况在将操作系统移植到新的（尚不存在的）平台时经常发生。有时，模拟只是成本更低。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:406
+#, fuzzy
 msgid ""
 "Looking from an implementation point of view, there are two main approaches "
 "to the implementation of emulation.  You can either emulate the whole thing "
@@ -888,26 +968,29 @@ msgid ""
 "do not provide the same capabilities so in a case of emulating the more "
 "powerful one on the less powerful we have to emulate the missing features "
 "with full emulation described above."
-msgstr ""
+msgstr "从实现角度看，模拟主要有两种方法。你可以模拟整个对象：接受原始对象可能接收的输入、维护内部状态，并根据状态和／或输入产生正确的输出。这种模拟不需要任何特殊条件，基本上可以在任何地方针对任何设备或程序实现。其缺点是，实现这种模拟相当困难、耗时且容易出错。有时可以采用更简单的方法。设想要模拟一台从左向右打印的打印机，而实际打印机从右向左打印。显然，无需复杂的模拟层，只要反转打印文本即可。有时，模拟环境与被模拟环境非常相似，因此只需一个简单的转换层，就能实现完整可用的模拟！如你所见，这种方法实现起来要求低得多，因此比前一种方法更省时，也更不容易出错。但必要条件是这两个环境必须足够相似。第三种方法结合了前两种。大多数情况下，对象并不具备相同的能力，因此，当在较弱的对象上模拟较强的对象时，必须通过上述完整模拟来实现缺失的功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:409
+#, fuzzy
 msgid ""
 "This master thesis deals with emulation of UNIX(R) on UNIX(R), which is "
 "exactly the case, where only a thin layer of translation is sufficient to "
 "provide full emulation.  The UNIX(R) API consists of a set of syscalls, "
 "which are usually self contained and do not affect some global kernel state."
-msgstr ""
+msgstr "本硕士论文讨论的是在 UNIX(R) 上模拟 UNIX(R)，这正是只需一个简单转换层即可实现完整模拟的情况。UNIX(R) API 由一组系统调用组成，这些系统调用通常各自独立，不会影响某些全局内核状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:411
+#, fuzzy
 msgid ""
 "There are a few syscalls that affect inner state but this can be dealt with "
 "by providing some structures that maintain the extra state."
-msgstr ""
+msgstr "有少数系统调用会影响内部状态，但可以通过提供用于维护额外状态的结构来处理。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:415
+#, fuzzy
 msgid ""
 "No emulation is perfect and emulations tend to lack some parts but this "
 "usually does not cause any serious drawbacks.  Imagine a game console "
@@ -915,41 +998,44 @@ msgid ""
 "are playable and one can use the emulator.  It might not be that comfortable "
 "as the original game console but its an acceptable compromise between price "
 "and comfort."
-msgstr ""
+msgstr "模拟不可能完美，而且往往会缺少某些部分，但通常不会造成严重影响。设想一个游戏机模拟器能模拟所有功能，唯独没有音乐输出。毫无疑问，游戏仍然可以玩，模拟器也能使用。它可能不如原版游戏机舒适，但在价格和舒适度之间，这是可以接受的折衷。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:419
+#, fuzzy
 msgid ""
 "The same goes with the UNIX(R) API.  Most programs can live with a very "
 "limited set of syscalls working.  Those syscalls tend to be the oldest ones "
 "(man:read[2]/man:write[2], man:fork[2] family, man:signal[3] handling, man:"
 "exit[3], man:socket[2] API) hence it is easy to emulate because their "
 "semantics is shared among all UNIX(R)es, which exist todays."
-msgstr ""
+msgstr "UNIX(R) API 也是如此。大多数程序只需要一组非常有限的系统调用即可运行。这些系统调用往往是最古老的那些（man:read[2]/man:write[2]、man:fork[2] 系列、man:signal[3] 处理、man:exit[3]、man:socket[2] API），因此很容易模拟，因为它们的语义在当今存在的所有 UNIX(R) 系统中都是通用的。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-emulation/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Emulation"
-msgstr ""
+msgstr "模拟"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:423
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How emulation works in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中的模拟工作原理"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:428
+#, fuzzy
 msgid ""
 "As stated earlier, FreeBSD supports running binaries from several other "
 "UNIX(R)es.  This works because FreeBSD has an abstraction called the "
 "execution class loader.  This wedges into the man:execve[2] syscall, so when "
 "man:execve[2] is about to execute a binary it examines its type."
-msgstr ""
+msgstr "如前所述，FreeBSD 支持运行来自其他多个 UNIX(R) 系统的二进制文件。这得益于 FreeBSD 的一种抽象机制，称为执行类加载器。它接入 man:execve[2] 系统调用，因此当 man:execve[2] 即将执行二进制文件时，会先检查其类型。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:434
+#, fuzzy
 msgid ""
 "There are basically two types of binaries in FreeBSD.  Shell-like text "
 "scripts which are identified by `#!` as their first two characters and "
@@ -959,10 +1045,11 @@ msgid ""
 "specifies the OS ABI for this ELF file.  By reading this information, the "
 "operating system can accurately determine what type of binary the given file "
 "is."
-msgstr ""
+msgstr "FreeBSD 中的二进制文件基本上分为两类：以 `#!` 作为前两个字符、类似 shell 脚本的文本文件，以及普通的（通常为 __ELF__）二进制文件，即已编译可执行对象的表示形式。FreeBSD 中绝大多数（可以说是全部）二进制文件都属于 ELF 类型。ELF 文件包含一个头部，用于指定该 ELF 文件的操作系统 ABI。通过读取这些信息，操作系统可以准确判断给定文件属于哪种二进制文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:440
+#, fuzzy
 msgid ""
 "Every OS ABI must be registered in the FreeBSD kernel.  This applies to the "
 "FreeBSD native OS ABI, as well.  So when man:execve[2] executes a binary it "
@@ -972,10 +1059,11 @@ msgid ""
 "calls a syscall, it uses its own set of syscalls instead of some global "
 "one.  This effectively provides a very elegant and easy way of supporting "
 "execution of various binary formats."
-msgstr ""
+msgstr "每种操作系统 ABI 都必须在 FreeBSD 内核中注册，FreeBSD 原生操作系统 ABI 也不例外。因此，man:execve[2] 执行二进制文件时，会遍历已注册的 ABI 列表，找到匹配项后，开始使用该操作系统 ABI 描述中包含的信息（其系统调用表、`errno` 转换表等）。这样，每当进程调用系统调用时，使用的都是它自己的系统调用集，而不是某个全局系统调用集。这为支持运行各种二进制格式提供了一种非常优雅而简便的方式。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:445
+#, fuzzy
 msgid ""
 "The nature of emulation of different OSes (and also some other subsystems) "
 "led developers to invite a handler event mechanism.  There are various "
@@ -983,86 +1071,96 @@ msgid ""
 "subsystem can register an event handler and they are called accordingly.  "
 "For example, when a process exits there is a handler called that possibly "
 "cleans up whatever the subsystem needs to be cleaned."
-msgstr ""
+msgstr "模拟不同操作系统（以及其他一些子系统）的需求促使开发人员引入了处理程序事件机制。内核中有多个位置会调用事件处理程序列表。每个子系统都可以注册事件处理程序，内核会在相应时机调用它们。例如，进程退出时会调用一个处理程序，以便清理子系统需要清理的内容。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:447
+#, fuzzy
 msgid ""
 "Those simple facilities provide basically everything that is needed for the "
 "emulation infrastructure and in fact these are basically the only things "
 "necessary to implement the Linux(R) emulation layer."
-msgstr ""
+msgstr "这些简单的机制基本上提供了模拟基础设施所需的一切；事实上，实现 Linux(R) 模拟层基本上只需要这些机制。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common primitives in the FreeBSD kernel"
-msgstr ""
+msgstr "FreeBSD 内核中的常用原语"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:453
+#, fuzzy
 msgid ""
 "Emulation layers need some support from the operating system.  I am going to "
 "describe some of the supported primitives in the FreeBSD operating system."
-msgstr ""
+msgstr "模拟层需要操作系统提供一些支持。下面将介绍 FreeBSD 操作系统支持的一些原语。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:455
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Locking primitives"
-msgstr ""
+msgstr "锁定原语"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:458
+#, fuzzy
 msgid "Contributed by: `{attilio}`"
-msgstr ""
+msgstr "贡献者：`{attilio}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:460
+#, fuzzy
 msgid ""
 "The FreeBSD synchronization primitive set is based on the idea to supply a "
 "rather huge number of different primitives in a way that the better one can "
 "be used for every particular, appropriate situation."
-msgstr ""
+msgstr "FreeBSD 的同步原语集合基于这样一种理念：提供数量相当多的不同原语，以便在每种特定且适当的场景中都能使用最合适的原语。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:462
+#, fuzzy
 msgid ""
 "To a high level point of view you can consider three kinds of "
 "synchronization primitives in the FreeBSD kernel:"
-msgstr ""
+msgstr "从较高层次来看，可以将 FreeBSD 内核中的同步原语分为三类："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:464
+#, fuzzy
 msgid "atomic operations and memory barriers"
-msgstr ""
+msgstr "原子操作和内存屏障"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:465
+#, fuzzy
 msgid "locks"
-msgstr ""
+msgstr "锁"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:466
+#, fuzzy
 msgid "scheduling barriers"
-msgstr ""
+msgstr "调度屏障"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:469
+#, fuzzy
 msgid ""
 "Below there are descriptions for the 3 families.  For every lock, you should "
 "really check the linked manpage (where possible) for more detailed "
 "explanations."
-msgstr ""
+msgstr "下面将介绍这三个类别。对于每种锁，都应仔细查阅相应的联机手册（如有），以了解更详细的说明。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:471
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Atomic operations and memory barriers"
-msgstr ""
+msgstr "原子操作和内存屏障"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:482
+#, fuzzy
 msgid ""
 "Atomic operations are implemented through a set of functions performing "
 "simple arithmetics on memory operands in an atomic way with respect to "
@@ -1084,16 +1182,17 @@ msgid ""
 "explanatory on atomic operations, please refer to man:atomic[9].  It is far, "
 "however, noting that atomic operations (and memory barriers as well) should "
 "ideally only be used for building front-ending locks (as mutexes)."
-msgstr ""
+msgstr "原子操作通过一组函数实现，这些函数以原子方式对内存操作数执行简单运算，使其不受外部事件（中断、抢占等）的影响。原子操作只能保证小型数据类型（数量级相当于 `.long.` 架构 C 数据类型）的原子性，因此在最终代码中应很少直接使用，除非是非常简单的操作（例如在位图中设置标志）。事实上，仅基于原子操作（通常称为无锁操作）编写出语义错误的代码相当容易，也很常见。FreeBSD 内核提供了将原子操作与内存屏障结合使用的方式。内存屏障可确保原子操作相对于其他内存访问按照指定顺序发生。例如，如果需要在所有待处理写入（就指令重排序缓冲区的活动而言）完成后立即执行原子操作，就需要明确地将内存屏障与该原子操作结合使用。因此不难理解，内存屏障对于构建更高级别的锁（如引用计数、互斥锁等）起着关键作用。有关原子操作的详细说明，请参阅 man:atomic[9]。不过值得注意的是，原子操作（以及内存屏障）理想情况下只应用于构建更高层的锁（如互斥锁）。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:484
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Refcounts"
-msgstr ""
+msgstr "引用计数"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:490
+#, fuzzy
 msgid ""
 "Refcounts are interfaces for handling reference counters.  They are "
 "implemented through atomic operations and are intended to be used just for "
@@ -1103,52 +1202,58 @@ msgid ""
 "we should probably close the reference counter in some already protected "
 "paths.  A manpage discussing refcount does not exist currently, just check [."
 "filename]#sys/refcount.h# for an overview of the existing API."
-msgstr ""
+msgstr "引用计数接口用于处理引用计数器。它们通过原子操作实现，仅适用于引用计数器是唯一需要保护的对象的情况，因此即使是自旋互斥锁这样的保护方式也不再必要。对于已经使用互斥锁的结构，使用引用计数接口通常是错误的，因为我们很可能应该在某些已有保护的路径中关闭引用计数器。目前没有讨论引用计数的手册页；有关现有 API 的概述，请查看 [.filename]#sys/refcount.h#。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:492
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Locks"
-msgstr ""
+msgstr "锁"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:497
+#, fuzzy
 msgid ""
 "FreeBSD kernel has huge classes of locks.  Every lock is defined by some "
 "peculiar properties, but probably the most important is the event linked to "
 "contesting holders (or in other terms, the behavior of threads unable to "
 "acquire the lock).  FreeBSD's locking scheme presents three different "
 "behaviors for contenders:"
-msgstr ""
+msgstr "FreeBSD 内核中有许多类别的锁。每种锁都有一些独特属性，其中最重要的可能是竞争持有者相关的事件（换言之，无法获取锁的线程会如何处理）。FreeBSD 的锁定机制为竞争者提供三种不同的行为："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:499
+#, fuzzy
 msgid "spinning"
-msgstr ""
+msgstr "自旋"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:500
+#, fuzzy
 msgid "blocking"
-msgstr ""
+msgstr "阻塞"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:501
+#, fuzzy
 msgid "sleeping"
-msgstr ""
+msgstr "休眠"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:505
+#, fuzzy
 msgid "numbers are not casual"
-msgstr ""
+msgstr "数字并非随意选取"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:508
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spinning locks"
-msgstr ""
+msgstr "自旋锁"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:514
+#, fuzzy
 msgid ""
 "Spin locks let waiters to spin until they cannot acquire the lock.  An "
 "important matter do deal with is when a thread contests on a spin lock if it "
@@ -1158,16 +1263,17 @@ msgid ""
 "of priority propagation support, poorness in load balancing schemes between "
 "CPUs, etc.), spin locks are intended to protect very small paths of code, or "
 "ideally not to be used at all if not explicitly requested (explained later)."
-msgstr ""
+msgstr "自旋锁会让等待者持续自旋，直到能够获取锁。一个需要考虑的重要问题是，线程争用自旋锁时不会被调度出去。由于 FreeBSD 内核支持抢占，这使自旋锁容易引发死锁；可以通过在获取自旋锁期间禁用中断来避免此问题。基于这个原因以及其他原因（如不支持优先级继承、CPU 间负载均衡机制不足等），自旋锁只适用于保护非常短的代码路径；理想情况下，除非有明确要求（后文会解释），否则应完全避免使用。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Blocking"
-msgstr ""
+msgstr "阻塞"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:521
+#, fuzzy
 msgid ""
 "Block locks let waiters to be descheduled and blocked until the lock owner "
 "does not drop it and wakes up one or more contenders.  To avoid starvation "
@@ -1175,26 +1281,28 @@ msgid ""
 "owner.  Block locks must be implemented through the turnstile interface and "
 "are intended to be the most used kind of locks in the kernel, if no "
 "particular conditions are met."
-msgstr ""
+msgstr "阻塞锁允许等待者被调度出去并进入阻塞状态，直到锁的持有者释放锁并唤醒一个或多个竞争者。为避免饥饿问题，阻塞锁会将等待者的优先级继承给持有者。阻塞锁必须通过 turnstile 接口实现；在没有特殊条件限制时，它们是内核中最常用的锁类型。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:523
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sleeping"
-msgstr ""
+msgstr "休眠"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:528
+#, fuzzy
 msgid ""
 "Sleep locks let waiters to be descheduled and fall asleep until the lock "
 "holder does not drop it and wakes up one or more waiters.  Since sleep locks "
 "are intended to protect large paths of code and to cater asynchronous "
 "events, they do not do any form of priority propagation.  They must be "
 "implemented through the man:sleepqueue[9] interface."
-msgstr ""
+msgstr "休眠锁允许等待者被调度出去并进入休眠状态，直到锁的持有者释放锁并唤醒一个或多个等待者。休眠锁用于保护较长的代码路径并处理异步事件，因此不执行任何形式的优先级继承。它们必须通过 man:sleepqueue[9] 接口实现。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:532
+#, fuzzy
 msgid ""
 "The order used to acquire locks is very important, not only for the "
 "possibility to deadlock due at lock order reversals, but even because lock "
@@ -1207,104 +1315,120 @@ msgid ""
 "but not a sleep lock (level 3), since block locks are intended to protect "
 "smaller paths than sleep lock (these rules are not about atomic operations "
 "or scheduling barriers, however)."
-msgstr ""
+msgstr "获取锁的顺序非常重要，不仅因为反转锁顺序可能导致死锁，还因为获取锁时应遵循与锁的性质相关的特定规则。查看上表可知，实际规则是：如果线程持有级别为 n 的锁（级别是列在锁类型旁边的数字），就不允许获取级别更高的锁，因为这会破坏该代码路径所规定的语义。例如，线程持有阻塞锁（级别 2）时，可以获取自旋锁（级别 1），但不能获取休眠锁（级别 3），因为阻塞锁用于保护的代码路径比休眠锁所保护的路径短（不过，这些规则不适用于原子操作或调度屏障）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:534
+#, fuzzy
 msgid "This is a list of lock with their respective behaviors:"
-msgstr ""
+msgstr "以下列出了各种锁及其对应的行为："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:536
+#, fuzzy
 msgid "spin mutex - spinning - man:mutex[9]"
-msgstr ""
+msgstr "自旋互斥锁 - 自旋 - man:mutex[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:537
+#, fuzzy
 msgid "sleep mutex - blocking - man:mutex[9]"
-msgstr ""
+msgstr "休眠互斥锁 - 阻塞 - man:mutex[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:538
+#, fuzzy
 msgid "pool mutex - blocking - man:mtx[pool]"
-msgstr ""
+msgstr "池互斥锁 - 阻塞 - man:mtx[pool]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:539
+#, fuzzy
 msgid ""
 "sleep family - sleeping - man:sleep[9] pause tsleep msleep msleep spin "
 "msleep rw msleep sx"
-msgstr ""
+msgstr "sleep 系列 - 休眠 - man:sleep[9] pause tsleep msleep msleep spin msleep rw msleep sx"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:540
+#, fuzzy
 msgid "condvar - sleeping - man:condvar[9]"
-msgstr ""
+msgstr "条件变量 - 休眠 - man:condvar[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:541
+#, fuzzy
 msgid "rwlock - blocking - man:rwlock[9]"
-msgstr ""
+msgstr "读写锁 - 阻塞 - man:rwlock[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:542
+#, fuzzy
 msgid "sxlock - sleeping - man:sx[9]"
-msgstr ""
+msgstr "sx 锁 - 休眠 - man:sx[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:543
+#, fuzzy
 msgid "lockmgr - sleeping - man:lockmgr[9]"
-msgstr ""
+msgstr "lockmgr - 休眠 - man:lockmgr[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:544
+#, fuzzy
 msgid "semaphores - sleeping - man:sema[9]"
-msgstr ""
+msgstr "信号量 - 休眠 - man:sema[9]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:546
+#, fuzzy
 msgid ""
 "Among these locks only mutexes, sxlocks, rwlocks and lockmgrs are intended "
 "to handle recursion, but currently recursion is only supported by mutexes "
 "and lockmgrs."
-msgstr ""
+msgstr "在这些锁中，只有互斥锁、sx 锁、读写锁和 lockmgr 旨在支持递归；但目前只有互斥锁和 lockmgr 支持递归。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:548
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scheduling barriers"
-msgstr ""
+msgstr "调度屏障"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:552
+#, fuzzy
 msgid ""
 "Scheduling barriers are intended to be used to drive scheduling of "
 "threading.  They consist mainly of three different stubs:"
-msgstr ""
+msgstr "调度屏障旨在控制线程调度，主要包括以下三种不同的机制："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:554
+#, fuzzy
 msgid "critical sections (and preemption)"
-msgstr ""
+msgstr "临界区（以及抢占）"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:555
+#, fuzzy
 msgid "sched_bind"
-msgstr ""
+msgstr "sched_bind"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:556
+#, fuzzy
 msgid "sched_pin"
-msgstr ""
+msgstr "sched_pin"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:558
+#, fuzzy
 msgid ""
 "Generally, these should be used only in a particular context and even if "
 "they can often replace locks, they should be avoided because they do not let "
 "the diagnose of simple eventual problems with locking debugging tools (as "
 "man:witness[4])."
-msgstr ""
+msgstr "通常，这些机制只应在特定情境下使用；即使它们常常可以替代锁，也应避免使用，因为它们无法让锁调试工具（如 man:witness[4]）诊断潜在的简单问题。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:560
@@ -1314,6 +1438,7 @@ msgstr "临界区"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:568
+#, fuzzy
 msgid ""
 "The FreeBSD kernel has been made preemptive basically to deal with interrupt "
 "threads.  In fact, to avoid high interrupt latency, time-sharing priority "
@@ -1326,16 +1451,17 @@ msgid ""
 "is guaranteed to not happen (until the protected code is fully executed).  "
 "This can often replace a lock effectively but should be used carefully to "
 "not lose the whole advantage that preemption brings."
-msgstr ""
+msgstr "FreeBSD 内核采用抢占式设计，主要是为了处理中断线程。事实上，为降低中断延迟，分时优先级线程可以被中断线程抢占（这样，它们就不必像常规路径所预期的那样等待调度）。不过，抢占也会带来需要处理的新竞争点。通常，处理抢占最简单的方法是将其完全禁用。临界区定义了一段代码，该代码由 man:critical_enter[9] 和 man:critical_exit[9] 这对函数界定；在受保护的代码完全执行完毕之前，保证不会发生抢占。这通常可以有效替代锁，但应谨慎使用，以免失去抢占带来的全部优势。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:570
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sched_pin/sched_unpin"
-msgstr ""
+msgstr "sched_pin/sched_unpin"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:576
+#, fuzzy
 msgid ""
 "Another way to deal with preemption is the `sched_pin()` interface.  If a "
 "piece of code is closed in the `sched_pin()` and `sched_unpin()` pair of "
@@ -1344,16 +1470,17 @@ msgid ""
 "effective in the particular case when we have to access at per-cpu datas and "
 "we assume other threads will not change those data.  The latter condition "
 "will determine a critical section as a too strong condition for our code."
-msgstr ""
+msgstr "处理抢占的另一种方式是使用 `sched_pin()` 接口。如果一段代码被置于 `sched_pin()` 和 `sched_unpin()` 这对函数之间，就可以保证相应线程即使可能被抢占，也始终在同一个 CPU 上执行。当需要访问每 CPU 数据，并且假定其他线程不会更改这些数据时，固定 CPU 的方式非常有效。后一条件意味着临界区对这段代码来说限制过强。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:578
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sched_bind/sched_unbind"
-msgstr ""
+msgstr "sched_bind/sched_unbind"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:583
+#, fuzzy
 msgid ""
 "`sched_bind` is an API used to bind a thread to a particular CPU for all the "
 "time it executes the code, until a `sched_unbind` function call does not "
@@ -1362,16 +1489,17 @@ msgid ""
 "you want to avoid your thread to migrate on inactive CPUs.  Since "
 "`sched_bind` and `sched_unbind` manipulate internal scheduler structures, "
 "they need to be enclosed in `sched_lock` acquisition/releasing when used."
-msgstr ""
+msgstr "`sched_bind` 是一个 API，用于将线程绑定到特定 CPU，使其执行代码期间始终在该 CPU 上运行，直到调用 `sched_unbind` 解除绑定。在无法信任 CPU 当前状态的情形（例如，启动的极早期阶段），此功能至关重要，因为此时需要避免线程迁移到未激活的 CPU 上。由于 `sched_bind` 和 `sched_unbind` 会操作调度器的内部结构，使用时必须在获取和释放 `sched_lock` 的保护范围内进行。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:585
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Proc structure"
-msgstr ""
+msgstr "Proc 结构"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:591
+#, fuzzy
 msgid ""
 "Various emulation layers sometimes require some additional per-process "
 "data.  It can manage separate structures (a list, a tree etc.) containing "
@@ -1379,10 +1507,11 @@ msgid ""
 "consuming.  To solve this problem the FreeBSD `proc` structure contains "
 "`p_emuldata`, which is a void pointer to some emulation layer specific "
 "data.  This `proc` entry is protected by the proc mutex."
-msgstr ""
+msgstr "各种仿真层有时需要一些额外的进程级数据。它们可以为每个进程分别管理包含这些数据的结构（列表、树等），但这通常速度较慢且消耗内存。为解决此问题，FreeBSD 的 `proc` 结构包含 `p_emuldata`，这是一个指向仿真层特定数据的 void 指针。此 `proc` 字段受 proc 互斥锁保护。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:596
+#, fuzzy
 msgid ""
 "The FreeBSD `proc` structure contains a `p_sysent` entry that identifies, "
 "which ABI this process is running.  In fact, it is a pointer to the "
@@ -1390,34 +1519,36 @@ msgid ""
 "where the `sysentvec` structure for the given ABI is stored we can "
 "effectively determine whether the process belongs to our emulation layer.  "
 "The code typically looks like:"
-msgstr ""
+msgstr "FreeBSD 的 `proc` 结构包含一个 `p_sysent` 字段，用于标识该进程正在运行的 ABI。事实上，它是一个指向上文所述 `sysentvec` 的指针。因此，通过将此指针与给定 ABI 的 `sysentvec` 结构所在地址进行比较，就可以有效判断该进程是否属于我们的仿真层。代码通常如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:601
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if (__predict_true(p->p_sysent != &elf_Linux(R)_sysvec))\n"
 "\t  return;\n"
-msgstr ""
+msgstr "if (__predict_true(p->p_sysent != &elf_Linux(R)_sysvec))\n\t  return;\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:605
+#, fuzzy
 msgid ""
 "As you can see, we effectively use the `__predict_true` modifier to collapse "
 "the most common case (FreeBSD process) to a simple return operation thus "
 "preserving high performance.  This code should be turned into a macro "
 "because currently it is not very flexible, i.e. we do not support Linux(R)64 "
 "emulation nor A.OUT Linux(R) processes on i386."
-msgstr ""
+msgstr "如你所见，我们使用 `__predict_true` 修饰符，将最常见的情况（FreeBSD 进程）简化为一次直接返回操作，从而保持高性能。这段代码应改为宏，因为目前它不够灵活，例如不支持 Linux(R)64 仿真，也不支持 i386 上的 A.OUT Linux(R) 进程。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:607
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "VFS"
-msgstr ""
+msgstr "VFS"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:616
+#, fuzzy
 msgid ""
 "The FreeBSD VFS subsystem is very complex but the Linux(R) emulation layer "
 "uses just a small subset via a well defined API.  It can either operate on "
@@ -1427,16 +1558,17 @@ msgid ""
 "handler can represent a socket or an ordinary file.  A file handler contains "
 "a pointer to its vnode.  More then one file handler can point to the same "
 "vnode."
-msgstr ""
+msgstr "FreeBSD VFS 子系统非常复杂，但 Linux(R) 仿真层只通过定义良好的 API 使用其中一小部分。它既可以操作 vnode，也可以操作文件句柄。Vnode 表示 VFS 中的一个虚拟节点，即对节点的抽象表示。另一种表示是文件句柄，它从进程的角度表示一个已打开的文件。文件句柄可以表示套接字或普通文件。文件句柄包含一个指向其 vnode 的指针。多个文件句柄可以指向同一个 vnode。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "namei"
-msgstr ""
+msgstr "namei"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:625
+#, fuzzy
 msgid ""
 "The man:namei[9] routine is a central entry point to pathname lookup and "
 "translation.  It traverses the path point by point from the starting point "
@@ -1445,16 +1577,17 @@ msgid ""
 "a path is looked up using man:namei[9] it is inputed to the name cache. This "
 "behavior can be suppressed.  This routine is used all over the kernel and "
 "its performance is very critical."
-msgstr ""
+msgstr "man:namei[9] 例程是路径名查找和转换的核心入口。它从起点到终点逐段遍历路径，并使用 VFS 内部的查找函数。man:namei[9] 系统调用可以处理符号链接、绝对路径和相对路径。使用 man:namei[9] 查找路径时，路径会被加入名称缓存；可以禁用此行为。该例程在内核中广泛使用，其性能至关重要。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:627
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vn_fullpath"
-msgstr ""
+msgstr "vn_fullpath"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:633
+#, fuzzy
 msgid ""
 "The man:vn_fullpath[9] function takes the best effort to traverse VFS name "
 "cache and returns a path for a given (locked) vnode.  This process is "
@@ -1462,104 +1595,119 @@ msgid ""
 "is because it relies on VFS cache (it does not traverse the on medium "
 "structures), it does not work with hardlinks, etc.  This routine is used in "
 "several places in the Linuxulator."
-msgstr ""
+msgstr "man:vn_fullpath[9] 函数会尽力遍历 VFS 名称缓存，并返回给定（已锁定）vnode 的路径。此过程并不可靠，但对最常见的情况运行良好。其不可靠性源于它依赖 VFS 缓存（而不遍历介质上的结构），且无法处理硬链接等情况。Linuxulator 的多个位置都使用了此例程。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:635
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vnode operations"
-msgstr ""
+msgstr "Vnode 操作"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:638
+#, fuzzy
 msgid ""
 "`fgetvp` - given a thread and a file descriptor number it returns the "
 "associated vnode"
-msgstr ""
+msgstr "`fgetvp` - 给定一个线程和文件描述符编号，返回关联的 vnode"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:639
+#, fuzzy
 msgid "man:vn_lock[9] - locks a vnode"
-msgstr ""
+msgstr "man:vn_lock[9] - 锁定 vnode"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:640
+#, fuzzy
 msgid "`vn_unlock` - unlocks a vnode"
-msgstr ""
+msgstr "`vn_unlock` - 解锁 vnode"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:641
+#, fuzzy
 msgid "man:VOP_READDIR[9] - reads a directory referenced by a vnode"
-msgstr ""
+msgstr "man:VOP_READDIR[9] - 读取 vnode 所引用的目录"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:642
+#, fuzzy
 msgid ""
 "man:VOP_GETATTR[9] - gets attributes of a file or a directory referenced by "
 "a vnode"
-msgstr ""
+msgstr "man:VOP_GETATTR[9] - 获取 vnode 所引用的文件或目录的属性"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:643
+#, fuzzy
 msgid "man:VOP_LOOKUP[9] - looks up a path to a given directory"
-msgstr ""
+msgstr "man:VOP_LOOKUP[9] - 查找给定目录中的路径"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:644
+#, fuzzy
 msgid "man:VOP_OPEN[9] - opens a file referenced by a vnode"
-msgstr ""
+msgstr "man:VOP_OPEN[9] - 打开 vnode 所引用的文件"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:645
+#, fuzzy
 msgid "man:VOP_CLOSE[9] - closes a file referenced by a vnode"
-msgstr ""
+msgstr "man:VOP_CLOSE[9] - 关闭 vnode 所引用的文件"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:646
+#, fuzzy
 msgid "man:vput[9] - decrements the use count for a vnode and unlocks it"
-msgstr ""
+msgstr "man:vput[9] - 减少 vnode 的使用计数并将其解锁"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:647
+#, fuzzy
 msgid "man:vrele[9] - decrements the use count for a vnode"
-msgstr ""
+msgstr "man:vrele[9] - 减少 vnode 的使用计数"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:648
+#, fuzzy
 msgid "man:vref[9] - increments the use count for a vnode"
-msgstr ""
+msgstr "man:vref[9] - 增加 vnode 的使用计数"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:650
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File handler operations"
-msgstr ""
+msgstr "文件句柄操作"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:653
+#, fuzzy
 msgid ""
 "`fget` - given a thread and a file descriptor number it returns associated "
 "file handler and references it"
-msgstr ""
+msgstr "`fget` - 给定一个线程和文件描述符编号，返回关联的文件句柄并增加其引用计数"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:654
+#, fuzzy
 msgid "`fdrop` - drops a reference to a file handler"
-msgstr ""
+msgstr "`fdrop` - 减少文件句柄的引用计数"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:655
+#, fuzzy
 msgid "`fhold` - references a file handler"
-msgstr ""
+msgstr "`fhold` - 增加文件句柄的引用计数"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-emulation/_index.adoc:657
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) emulation layer -MD part"
-msgstr ""
+msgstr "Linux(R) 仿真层 - 机器相关部分"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:665
+#, fuzzy
 msgid ""
 "This section deals with implementation of Linux(R) emulation layer in "
 "FreeBSD operating system.  It first describes the machine dependent part "
@@ -1569,31 +1717,33 @@ msgid ""
 "should not differ very much.  The next part is the machine independent part "
 "of the Linuxulator.  This section only covers i386 and ELF handling. A.OUT "
 "is obsolete and untested."
-msgstr ""
+msgstr "本节介绍 FreeBSD 操作系统中 Linux(R) 仿真层的实现。首先介绍机器相关部分，说明用户空间与内核之间的交互如何实现以及实现位置。本节讨论系统调用、信号、ptrace、陷阱和栈修正。此部分以 i386 为例，但内容具有一般性，因此其他架构应不会有太大差异。下一部分介绍 Linuxulator 的机器无关部分。本节仅涉及 i386 和 ELF。A.OUT 已过时且未经测试。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:667
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Syscall handling"
-msgstr ""
+msgstr "系统调用处理"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:671
+#, fuzzy
 msgid ""
 "Syscall handling is mostly written in [.filename]#linux_sysvec.c#, which "
 "covers most of the routines pointed out in the `sysentvec` structure.  When "
 "a Linux(R) process running on FreeBSD issues a syscall, the general syscall "
 "routine calls linux prepsyscall routine for the Linux(R) ABI."
-msgstr ""
+msgstr "系统调用处理代码主要位于 [.filename]#linux_sysvec.c#，其中包含 `sysentvec` 结构所指向的大多数例程。当在 FreeBSD 上运行的 Linux(R) 进程发出系统调用时，通用系统调用例程会为 Linux(R) ABI 调用 linux prepsyscall 例程。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:673
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) prepsyscall"
-msgstr ""
+msgstr "Linux(R) prepsyscall"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:680
+#, fuzzy
 msgid ""
 "Linux(R) passes arguments to syscalls via registers (that is why it is "
 "limited to 6 parameters on i386) while FreeBSD uses the stack.  The Linux(R) "
@@ -1602,34 +1752,36 @@ msgid ""
 "The catch is that this is true for only _most_ of the syscalls.  Some (most "
 "notably `clone`) uses a different order but it is luckily easy to fix by "
 "inserting a dummy parameter in the `linux_clone` prototype."
-msgstr ""
+msgstr "Linux(R) 通过寄存器向系统调用传递参数（因此在 i386 上最多只能有 6 个参数），而 FreeBSD 使用栈。Linux(R) prepsyscall 例程必须将参数从寄存器复制到栈上。寄存器顺序为：`%ebx`、`%ecx`、`%edx`、`%esi`、`%edi`、`%ebp`。需要注意的是，这只适用于__大多数__系统调用。某些系统调用（尤其是 `clone`）使用不同的顺序，但只需在 `linux_clone` 原型中插入一个虚设参数，就能轻松解决。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:682
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Syscall writing"
-msgstr ""
+msgstr "编写系统调用"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:686
+#, fuzzy
 msgid ""
 "Every syscall implemented in the Linuxulator must have its prototype with "
 "various flags in [.filename]#syscalls.master#.  The form of the file is:"
-msgstr ""
+msgstr "在 Linuxulator 中实现的每个系统调用，都必须在 [.filename]#syscalls.master# 中声明其原型及各种标志。该文件的格式如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:694
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "\tAUE_FORK STD\t\t{ int linux_fork(void); }\n"
 "...\n"
 "\tAUE_CLOSE NOPROTO\t{ int close(int fd); }\n"
 "...\n"
-msgstr ""
+msgstr "...\n\tAUE_FORK STD\t\t{ int linux_fork(void); }\n...\n\tAUE_CLOSE NOPROTO\t{ int close(int fd); }\n...\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:704
+#, fuzzy
 msgid ""
 "The first column represents the syscall number.  The second column is for "
 "auditing support.  The third column represents the syscall type.  It is "
@@ -1640,61 +1792,65 @@ msgid ""
 "syscall will be substituted with the `nosys` syscall (a syscall just "
 "printing out a message about the syscall not being implemented and returning "
 "`ENOSYS`)."
-msgstr ""
+msgstr "第一列表示系统调用编号。第二列表示审计支持情况。第三列表示系统调用类型，可以是 `STD`、`OBSOL`、`NOPROTO` 或 `UNIMPL`。`STD` 表示具有完整原型和实现的标准系统调用。`OBSOL` 表示已废弃，仅定义了原型。`NOPROTO` 表示该系统调用在其他位置实现，因此不要添加 ABI 前缀等。`UNIMPL` 表示该系统调用将替换为 `nosys` 系统调用（该系统调用只会输出一条说明其尚未实现的消息，然后返回 `ENOSYS`）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:707
+#, fuzzy
 msgid ""
 "From [.filename]#syscalls.master# a script generates three files: [."
 "filename]#linux_syscall.h#, [.filename]#linux_proto.h# and [."
 "filename]#linux_sysent.c#.  The [.filename]#linux_syscall.h# contains "
 "definitions of syscall names and their numerical value, e.g.:"
-msgstr ""
+msgstr "脚本根据 [.filename]#syscalls.master# 生成三个文件：[.filename]#linux_syscall.h#、[.filename]#linux_proto.h# 和 [.filename]#linux_sysent.c#。[.filename]#linux_syscall.h# 包含系统调用名称及其数值的定义，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:715
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "...\n"
 "#define LINUX_SYS_linux_fork 2\n"
 "...\n"
 "#define LINUX_SYS_close 6\n"
 "...\n"
-msgstr ""
+msgstr "...\n#define LINUX_SYS_linux_fork 2\n...\n#define LINUX_SYS_close 6\n...\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:718
+#, fuzzy
 msgid ""
 "The [.filename]#linux_proto.h# contains structure definitions of arguments "
 "to every syscall, e.g.:"
-msgstr ""
+msgstr "[.filename]#linux_proto.h# 包含每个系统调用参数的结构定义，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:724
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct linux_fork_args {\n"
 "  register_t dummy;\n"
 "};\n"
-msgstr ""
+msgstr "struct linux_fork_args {\n  register_t dummy;\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:727
+#, fuzzy
 msgid ""
 "And finally, [.filename]#linux_sysent.c# contains structure describing the "
 "system entry table, used to actually dispatch a syscall, e.g.:"
-msgstr ""
+msgstr "最后，[.filename]#linux_sysent.c# 包含描述系统入口表的结构，该表用于实际分派系统调用，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:732
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n"
 "{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */\n"
-msgstr ""
+msgstr "{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:736
+#, fuzzy
 msgid ""
 "As you can see `linux_fork` is implemented in Linuxulator itself so the "
 "definition is of `STD` type and has no argument, which is exhibited by the "
@@ -1702,16 +1858,17 @@ msgid ""
 "real FreeBSD man:close[2] so it has no linux arguments structure associated "
 "and in the system entry table it is not prefixed with linux as it calls the "
 "real man:close[2] in the kernel."
-msgstr ""
+msgstr "如你所见，`linux_fork` 在 Linuxulator 本身中实现，因此其定义类型为 `STD`，且没有参数，这一点由虚设参数结构体现。另一方面，`close` 只是实际 FreeBSD man:close[2] 的别名，因此没有关联的 Linux 参数结构；在系统入口表中，它也没有 `linux` 前缀，因为它会在内核中调用真正的 man:close[2]。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:738
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dummy syscalls"
-msgstr ""
+msgstr "虚设系统调用"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:744
+#, fuzzy
 msgid ""
 "The Linux(R) emulation layer is not complete, as some syscalls are not "
 "implemented properly and some are not implemented at all.  The emulation "
@@ -1722,30 +1879,32 @@ msgid ""
 "that this syscall is not implemented.  The `UNIMPL` prototype is not used "
 "because we want to be able to identify the name of the syscall that was "
 "called to know what syscalls are more important to implement."
-msgstr ""
+msgstr "Linux(R) 仿真层尚未完善：有些系统调用实现不正确，还有一些则完全没有实现。仿真层使用 `DUMMY` 宏标记未实现的系统调用。这些虚设定义位于 [.filename]#linux_dummy.c# 中，形式为 `DUMMY(syscall);`，随后会转换为各种系统调用辅助文件；其实现会输出一条说明该系统调用尚未实现的消息。我们不使用 `UNIMPL` 原型，因为我们希望能够识别被调用的系统调用名称，以便判断哪些系统调用更值得优先实现。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:746
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Signal handling"
-msgstr ""
+msgstr "信号处理"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:750
+#, fuzzy
 msgid ""
 "Signal handling is done generally in the FreeBSD kernel for all binary "
 "compatibilities with a call to a compat-dependent layer.  Linux(R) "
 "compatibility layer defines `linux_sendsig` routine for this purpose."
-msgstr ""
+msgstr "对于所有二进制兼容层，信号通常由 FreeBSD 内核处理，并调用依赖于兼容层的处理程序。Linux(R) 兼容层为此定义了 `linux_sendsig` 例程。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:752
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) sendsig"
-msgstr ""
+msgstr "Linux(R) sendsig"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:759
+#, fuzzy
 msgid ""
 "This routine first checks whether the signal has been installed with a "
 "`SA_SIGINFO` in which case it calls `linux_rt_sendsig` routine instead.  "
@@ -1756,46 +1915,49 @@ msgid ""
 "routine (various registers, translated trap number and signal mask).  "
 "Finally, it copies out the signal context to the userspace and prepares "
 "context for the actual signal handler to run."
-msgstr ""
+msgstr "该例程首先检查信号是否通过 `SA_SIGINFO` 安装；如果是，则改为调用 `linux_rt_sendsig` 例程。此外，它会分配（或复用已有的）信号处理上下文，然后为信号处理程序构建参数列表。它根据信号转换表转换信号编号，并指定处理程序、转换信号集。接着，它为 `sigreturn` 例程保存上下文（各种寄存器、转换后的陷阱编号和信号掩码）。最后，它将信号上下文复制到用户空间，并为实际信号处理程序运行准备上下文。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:761
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "linux_rt_sendsig"
-msgstr ""
+msgstr "linux_rt_sendsig"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:766
+#, fuzzy
 msgid ""
 "This routine is similar to `linux_sendsig` just the signal context "
 "preparation is different.  It adds `siginfo`, `ucontext`, and some POSIX(R) "
 "parts.  It might be worth considering whether those two functions could not "
 "be merged with a benefit of less code duplication and possibly even faster "
 "execution."
-msgstr ""
+msgstr "此例程与 `linux_sendsig` 类似，只是信号上下文的准备方式不同。它会添加 `siginfo`、`ucontext` 和 POSIX(R) 的一些部分。可以考虑将这两个函数合并，以减少代码重复，甚至可能提升执行速度。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:768
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "linux_sigreturn"
-msgstr ""
+msgstr "linux_sigreturn"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:773
+#, fuzzy
 msgid ""
 "This syscall is used for return from the signal handler.  It does some "
 "security checks and restores the original process context.  It also unmasks "
 "the signal in process signal mask."
-msgstr ""
+msgstr "此系统调用用于从信号处理程序返回。它会执行一些安全检查并恢复原始进程上下文，同时取消进程信号掩码中相应信号的屏蔽。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ptrace"
-msgstr ""
+msgstr "Ptrace"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:781
+#, fuzzy
 msgid ""
 "Many UNIX(R) derivates implement the man:ptrace[2] syscall to allow various "
 "tracking and debugging features.  This facility enables the tracing process "
@@ -1805,10 +1967,11 @@ msgid ""
 "and traps).  man:ptrace[2] also lets you set various information in the "
 "traced process (registers etc.).  man:ptrace[2] is a UNIX(R)-wide standard "
 "implemented in most UNIX(R)es around the world."
-msgstr ""
+msgstr "许多 UNIX(R) 衍生系统都实现了 man:ptrace[2] 系统调用，以提供各种跟踪和调试功能。此功能使跟踪进程能够获取被跟踪进程的各种信息，例如寄存器转储、进程地址空间中的任意内存等；还可以像单步执行指令或在系统入口（系统调用和陷阱）之间那样跟踪进程。man:ptrace[2] 还允许设置被跟踪进程中的各种信息（例如寄存器）。man:ptrace[2] 是 UNIX(R) 范围内的标准，在世界各地的大多数 UNIX(R) 系统中均有实现。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:787
+#, fuzzy
 msgid ""
 "Linux(R) emulation in FreeBSD implements the man:ptrace[2] facility in [."
 "filename]#linux_ptrace.c#.  The routines for converting registers between "
@@ -1820,78 +1983,81 @@ msgid ""
 "direct data while FreeBSD uses a pointer to the data so after performing a "
 "(native) man:ptrace[2] syscall, a copyout must be done to preserve Linux(R) "
 "semantics."
-msgstr ""
+msgstr "FreeBSD 中的 Linux(R) 仿真在 [.filename]#linux_ptrace.c# 中实现了 man:ptrace[2] 功能，其中包含 Linux(R) 与 FreeBSD 之间的寄存器转换例程，以及实际的 man:ptrace[2] 系统调用仿真实现。该系统调用由一个很长的 switch 语句块组成，为每个 man:ptrace[2] 命令实现 FreeBSD 中对应的功能。Linux(R) 与 FreeBSD 的 man:ptrace[2] 命令大多相同，因此通常只需少量修改。例如，Linux(R) 中的 `PT_GETREGS` 直接操作数据，而 FreeBSD 使用指向数据的指针，因此执行（原生）man:ptrace[2] 系统调用后，必须执行 copyout 以保留 Linux(R) 语义。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:791
+#, fuzzy
 msgid ""
 "The man:ptrace[2] implementation in Linuxulator has some known weaknesses.  "
 "There have been panics seen when using `strace` (which is a man:ptrace[2] "
 "consumer) in the Linuxulator environment.  Also `PT_SYSCALL` is not "
 "implemented."
-msgstr ""
+msgstr "Linuxulator 中的 man:ptrace[2] 实现存在一些已知缺陷。在 Linuxulator 环境中使用 `strace`（一个 man:ptrace[2] 使用者）时，曾出现过内核崩溃。此外，尚未实现 `PT_SYSCALL`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:798
+#, fuzzy
 msgid ""
 "Whenever a Linux(R) process running in the emulation layer traps the trap "
 "itself is handled transparently with the only exception of the trap "
 "translation.  Linux(R) and FreeBSD differs in opinion on what a trap is so "
 "this is dealt with here.  The code is actually very short:"
-msgstr ""
+msgstr "在仿真层中运行的 Linux(R) 进程发生陷阱时，陷阱本身会被透明处理，唯一的例外是陷阱转换。Linux(R) 和 FreeBSD 对陷阱的定义不同，因此需要在此进行处理。实际代码非常简短："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:804
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "translate_traps(int signal, int trap_code)\n"
 "{\n"
-msgstr ""
+msgstr "static int\ntranslate_traps(int signal, int trap_code)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:807
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  if (signal != SIGBUS)\n"
 "    return signal;\n"
-msgstr ""
+msgstr "  if (signal != SIGBUS)\n    return signal;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:809
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  switch (trap_code) {\n"
-msgstr ""
+msgstr "  switch (trap_code) {\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:815
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    case T_PROTFLT:\n"
 "    case T_TSSFLT:\n"
 "    case T_DOUBLEFLT:\n"
 "    case T_PAGEFLT:\n"
 "      return SIGSEGV;\n"
-msgstr ""
+msgstr "    case T_PROTFLT:\n    case T_TSSFLT:\n    case T_DOUBLEFLT:\n    case T_PAGEFLT:\n      return SIGSEGV;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    default:\n"
 "      return signal;\n"
 "  }\n"
 "}\n"
-msgstr ""
+msgstr "    default:\n      return signal;\n  }\n}\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:823
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Stack fixup"
-msgstr ""
+msgstr "栈修正"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:830
+#, fuzzy
 msgid ""
 "The RTLD run-time link-editor expects so called AUX tags on stack during an "
 "`execve` so a fixup must be done to ensure this.  Of course, every RTLD "
@@ -1899,16 +2065,17 @@ msgid ""
 "routine to do this.  So does Linuxulator.  The `elf_linux_fixup` simply "
 "copies out AUX tags to the stack and adjusts the stack of the user space "
 "process to point right after those tags.  So RTLD works in a smart way."
-msgstr ""
+msgstr "RTLD 运行时链接编辑器要求在 `execve` 期间将所谓的 AUX 标签放在栈上，因此必须进行修正以确保这一点。当然，每种 RTLD 系统都不同，因此仿真层必须提供自己的栈修正例程。Linuxulator 也提供了这样的例程。`elf_linux_fixup` 只需将 AUX 标签复制到栈上，并调整用户空间进程的栈指针，使其指向这些标签之后的位置。这样 RTLD 就能正常工作。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:832
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A.OUT support"
-msgstr ""
+msgstr "A.OUT 支持"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:839
+#, fuzzy
 msgid ""
 "The Linux(R) emulation layer on i386 also supports Linux(R) A.OUT binaries.  "
 "Pretty much everything described in the previous sections must be "
@@ -1919,31 +2086,33 @@ msgid ""
 "binaries at all.  This support will probably be removed in future.  Most of "
 "the stuff necessary for loading Linux(R) A.OUT binaries is in [."
 "filename]#imgact_linux.c# file."
-msgstr ""
+msgstr "i386 上的 Linux(R) 仿真层也支持 Linux(R) A.OUT 二进制文件。要支持 A.OUT，前面各节所述的大部分内容都必须实现（陷阱转换和信号发送除外）。A.OUT 二进制文件的支持已不再维护，尤其是 2.6 仿真无法与其配合使用；不过这不会造成问题，因为 ports 中的 linux-base 可能根本不支持 A.OUT 二进制文件。今后很可能会移除此支持。加载 Linux(R) A.OUT 二进制文件所需的大部分代码位于 [.filename]#imgact_linux.c# 文件中。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-emulation/_index.adoc:841
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) emulation layer -MI part"
-msgstr ""
+msgstr "Linux(R) 仿真层——机器无关部分"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:846
+#, fuzzy
 msgid ""
 "This section talks about machine independent part of the Linuxulator.  It "
 "covers the emulation infrastructure needed for Linux(R) 2.6 emulation, the "
 "thread local storage (TLS) implementation (on i386) and futexes.  Then we "
 "talk briefly about some syscalls."
-msgstr ""
+msgstr "本节介绍 Linuxulator 中与机器无关的部分，包括 Linux(R) 2.6 仿真所需的仿真基础设施、线程本地存储（TLS）实现（在 i386 上）以及 futex。然后我们会简要介绍一些系统调用。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:848
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description of NPTL"
-msgstr ""
+msgstr "NPTL 简介"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:856
+#, fuzzy
 msgid ""
 "One of the major areas of progress in development of Linux(R) 2.6 was "
 "threading.  Prior to 2.6, the Linux(R) threading support was implemented in "
@@ -1956,10 +2125,11 @@ msgid ""
 "`SIGUSR` signals for threads synchronization, kernel resource consumption, "
 "etc.) so to overcome these problems a new threading system was developed and "
 "named NPTL."
-msgstr ""
+msgstr "Linux(R) 2.6 开发的一项重大进展是线程支持。在 2.6 之前，Linux(R) 线程支持由 linuxthreads 库实现。该库只是部分实现了 POSIX(R) 线程。它通过为每个线程使用独立进程来实现线程，并使用 `clone` 系统调用使这些进程共享地址空间（以及其他资源）。这种方法的主要缺陷是每个线程都有不同的 PID，信号处理存在问题（从 pthreads 的角度来看）等。此外，其性能也不理想（使用 `SIGUSR` 信号进行线程同步、消耗内核资源等）。为解决这些问题，开发了一种名为 NPTL 的新线程系统。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:862
+#, fuzzy
 msgid ""
 "The NPTL library focused on two things but a third thing came along so it is "
 "usually considered a part of NPTL.  Those two things were embedding of "
@@ -1968,37 +2138,40 @@ msgid ""
 "library depends on it.  Those improvements yielded in much improved "
 "performance and standards conformance.  NPTL is a standard threading library "
 "in Linux(R) systems these days."
-msgstr ""
+msgstr "NPTL 库主要关注两方面，但后来又加入了第三方面，因此通常也将其视为 NPTL 的一部分。这两方面是将线程纳入进程结构以及 futex。后来加入的第三方面是 TLS；虽然 NPTL 并不直接要求 TLS，但整个 NPTL 用户空间库都依赖它。这些改进显著提升了性能和标准符合性。如今，NPTL 是 Linux(R) 系统中的标准线程库。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:866
+#, fuzzy
 msgid ""
 "The FreeBSD Linuxulator implementation approaches the NPTL in three main "
 "areas.  The TLS, futexes and PID mangling, which is meant to simulate the "
 "Linux(R) threads.  Further sections describe each of these areas."
-msgstr ""
+msgstr "FreeBSD 的 Linuxulator 实现从三个主要方面实现对 NPTL 的支持：TLS、futex 和 PID 混淆，用以模拟 Linux(R) 线程。后续各节将分别介绍这些方面。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:868
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) 2.6 emulation infrastructure"
-msgstr ""
+msgstr "Linux(R) 2.6 仿真基础设施"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:871
+#, fuzzy
 msgid ""
 "These sections deal with the way Linux(R) threads are managed and how we "
 "simulate that in FreeBSD."
-msgstr ""
+msgstr "本节介绍 Linux(R) 线程的管理方式，以及我们如何在 FreeBSD 中进行模拟。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:873
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Runtime determining of 2.6 emulation"
-msgstr ""
+msgstr "运行时确定 2.6 仿真版本"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:882
+#, fuzzy
 msgid ""
 "The Linux(R) emulation layer in FreeBSD supports runtime setting of the "
 "emulated version.  This is done via man:sysctl[8], namely `compat.linux."
@@ -2010,26 +2183,28 @@ msgid ""
 "version setting is done system-wide and this affects all Linux(R) "
 "processes.  The man:sysctl[8] should not be changed when running any "
 "Linux(R) binary as it might harm things."
-msgstr ""
+msgstr "FreeBSD 中的 Linux(R) 仿真层支持在运行时设置仿真版本。此设置通过 man:sysctl[8] 完成，具体来说是 `compat.linux.osrelease`。设置此 man:sysctl[8] 会影响仿真层的运行时行为。将其设为 2.6.x 时，会设置 `linux_use_linux26` 的值；设为其他值时，该变量则保持未设置。此变量（以及同类的 jail 专属变量）决定代码是否使用 2.6 基础设施（主要是 PID 混淆）。版本设置在系统范围内生效，因此会影响所有 Linux(R) 进程。运行任何 Linux(R) 二进制文件时都不应更改此 man:sysctl[8]，否则可能造成问题。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:884
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linux(R) processes and thread identifiers"
-msgstr ""
+msgstr "Linux(R) 进程和线程标识符"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:891
+#, fuzzy
 msgid ""
 "The semantics of Linux(R) threading are a little confusing and uses entirely "
 "different nomenclature to FreeBSD.  A process in Linux(R) consists of a "
 "`struct task` embedding two identifier fields - PID and TGID.  PID is _not_ "
 "a process ID but it is a thread ID.  The TGID identifies a thread group in "
 "other words a process.  For single-threaded process the PID equals the TGID."
-msgstr ""
+msgstr "Linux(R) 线程语义有些令人困惑，其术语体系与 FreeBSD 完全不同。Linux(R) 中的进程由一个 `struct task` 组成，其中包含两个标识符字段：PID 和 TGID。PID __不是__进程 ID，而是线程 ID。TGID 标识线程组，换言之就是进程。对于单线程进程，PID 等于 TGID。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:897
+#, fuzzy
 msgid ""
 "The thread in NPTL is just an ordinary process that happens to have TGID not "
 "equal to PID and have a group leader not equal to itself (and shared VM etc. "
@@ -2039,63 +2214,66 @@ msgid ""
 "possible data inconsistency.  The Linux(R) kernel seems to use task -> group "
 "information in some places and task information elsewhere and it is really "
 "not very consistent and looks error-prone."
-msgstr ""
+msgstr "NPTL 中的线程只是一个普通进程，只不过它的 TGID 不等于 PID，且其线程组组长不是它本身（当然还共享 VM 等）。其他方面都与普通进程相同。共享状态并未像 FreeBSD 那样分离到某个外部结构中。这会造成信息重复，并可能导致数据不一致。Linux(R) 内核似乎在某些地方使用 task -> group 信息，在其他地方则使用 task 信息，因此其行为确实不太一致，也容易出错。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:900
+#, fuzzy
 msgid ""
 "Every NPTL thread is created by a call to the `clone` syscall with a "
 "specific set of flags (more in the next subsection).  The NPTL implements "
 "strict 1:1 threading."
-msgstr ""
+msgstr "每个 NPTL 线程都是通过调用带有一组特定标志的 `clone` 系统调用创建的（更多内容见下一小节）。NPTL 实现了严格的 1:1 线程模型。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:902
+#, fuzzy
 msgid ""
 "In FreeBSD we emulate NPTL threads with ordinary FreeBSD processes that "
 "share VM space, etc. and the PID gymnastic is just mimicked in the emulation "
 "specific structure attached to the process. The structure attached to the "
 "process looks like:"
-msgstr ""
+msgstr "在 FreeBSD 中，我们使用共享 VM 空间等资源的普通 FreeBSD 进程来仿真 NPTL 线程；PID 操作则只是在附加到进程的仿真专用结构中进行模拟。附加到进程的结构如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:907
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct linux_emuldata {\n"
 "  pid_t pid;\n"
-msgstr ""
+msgstr "struct linux_emuldata {\n  pid_t pid;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:910
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  int *child_set_tid; /* in clone(): Child.s TID to set on clone */\n"
 "  int *child_clear_tid;/* in clone(): Child.s TID to clear on exit */\n"
-msgstr ""
+msgstr "  int *child_set_tid; /* in clone(): Child.s TID to set on clone */\n  int *child_clear_tid;/* in clone(): Child.s TID to clear on exit */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:912
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  struct linux_emuldata_shared *shared;\n"
-msgstr ""
+msgstr "  struct linux_emuldata_shared *shared;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:914
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  int pdeath_signal; /* parent death signal */\n"
-msgstr ""
+msgstr "  int pdeath_signal; /* parent death signal */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:917
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  LIST_ENTRY(linux_emuldata) threads; /* list of linux threads */\n"
 "};\n"
-msgstr ""
+msgstr "  LIST_ENTRY(linux_emuldata) threads; /* list of linux threads */\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:924
+#, fuzzy
 msgid ""
 "The PID is used to identify the FreeBSD process that attaches this "
 "structure.  The `child_se_tid` and `child_clear_tid` are used for TID "
@@ -2104,72 +2282,76 @@ msgid ""
 "identifies the parent death signal and the `threads` pointer is used to link "
 "this structure to the list of threads.  The `linux_emuldata_shared` "
 "structure looks like:"
-msgstr ""
+msgstr "PID 用于标识附加此结构的 FreeBSD 进程。`child_se_tid` 和 `child_clear_tid` 用于在进程创建和退出时复制输出 TID 地址。`shared` 指针指向线程间共享的结构。`pdeath_signal` 变量标识父进程死亡信号，而 `threads` 指针用于将此结构链接到线程列表。`linux_emuldata_shared` 结构如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:928
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "struct linux_emuldata_shared {\n"
-msgstr ""
+msgstr "struct linux_emuldata_shared {\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:930
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  int refs;\n"
-msgstr ""
+msgstr "  int refs;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:932
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  pid_t group_pid;\n"
-msgstr ""
+msgstr "  pid_t group_pid;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:935
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  LIST_HEAD(, linux_emuldata) threads; /* head of list of linux threads */\n"
 "};\n"
-msgstr ""
+msgstr "  LIST_HEAD(, linux_emuldata) threads; /* head of list of linux threads */\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:940
+#, fuzzy
 msgid ""
 "The `refs` is a reference counter being used to determine when we can free "
 "the structure to avoid memory leaks.  The `group_pid` is to identify PID ( = "
 "TGID) of the whole process ( = thread group).  The `threads` pointer is the "
 "head of the list of threads in the process."
-msgstr ""
+msgstr "`refs` 是一个引用计数器，用于确定何时可以释放该结构，以避免内存泄漏。`group_pid` 用于标识整个进程（即线程组）的 PID（= TGID）。`threads` 指针指向该进程线程列表的头部。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:943
+#, fuzzy
 msgid ""
 "The `linux_emuldata` structure can be obtained from the process using "
 "`em_find`.  The prototype of the function is:"
-msgstr ""
+msgstr "可以通过进程获取 `linux_emuldata` 结构，使用的函数是 `em_find`。其函数原型为："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:947
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "struct linux_emuldata *em_find(struct proc *, int locked);\n"
-msgstr ""
+msgstr "struct linux_emuldata *em_find(struct proc *, int locked);\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:952
+#, fuzzy
 msgid ""
 "Here, `proc` is the process we want the emuldata structure from and the "
 "locked parameter determines whether we want to lock or not.  The accepted "
 "values are `EMUL_DOLOCK` and `EMUL_DOUNLOCK`.  More about locking later."
-msgstr ""
+msgstr "这里，`proc` 是我们要获取其 emuldata 结构的进程，而 locked 参数用于确定是否要加锁。可接受的值为 `EMUL_DOLOCK` 和 `EMUL_DOUNLOCK`。关于加锁的更多内容将在后文介绍。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:954
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PID mangling"
-msgstr ""
+msgstr "PID 混淆"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:961
+#, fuzzy
 msgid ""
 "As there is a difference in view as what to the idea of a process ID and "
 "thread ID is between FreeBSD and Linux(R) we have to translate the view "
@@ -2178,39 +2360,42 @@ msgid ""
 "that in kernel (in Linuxulator) PID = PID and TGID = shared -> group pid and "
 "to userland we present `PID = shared -> group_pid` and `TID = proc -> "
 "p_pid`.  The PID member of `linux_emuldata structure` is a FreeBSD PID."
-msgstr ""
+msgstr "由于 FreeBSD 和 Linux(R) 对进程 ID 与线程 ID 的理解不同，我们必须以某种方式转换这种视角。我们通过 PID 混淆来实现。这意味着我们在内核与用户空间之间伪造 PID（= TGID）和 TID（= PID）的值。一般来说，在内核中（Linuxulator 内）PID = PID，TGID = shared -> group pid；而向用户空间提供的值则是 `PID = shared -> group_pid` 和 `TID = proc -> p_pid`。`linux_emuldata` 结构中的 PID 成员是 FreeBSD PID。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:965
+#, fuzzy
 msgid ""
 "The above affects mainly getpid, getppid, gettid syscalls.  Where we use PID/"
 "TGID respectively.  In copyout of TIDs in `child_clear_tid` and "
 "`child_set_tid` we copy out FreeBSD PID."
-msgstr ""
+msgstr "上述内容主要影响 getpid、getppid 和 gettid 系统调用，我们分别在这些调用中使用 PID/TGID。在将 TID 复制输出到 `child_clear_tid` 和 `child_set_tid` 时，我们复制输出的是 FreeBSD PID。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:967
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Clone syscall"
-msgstr ""
+msgstr "Clone 系统调用"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:971
+#, fuzzy
 msgid ""
 "The `clone` syscall is the way threads are created in Linux(R).  The syscall "
 "prototype looks like this:"
-msgstr ""
+msgstr "在 Linux(R) 中，线程通过 `clone` 系统调用创建。该系统调用的原型如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:976
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int linux_clone(l_int flags, void *stack, void *parent_tidptr, int dummy,\n"
 "void * child_tidptr);\n"
-msgstr ""
+msgstr "int linux_clone(l_int flags, void *stack, void *parent_tidptr, int dummy,\nvoid * child_tidptr);\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:986
+#, fuzzy
 msgid ""
 "The `flags` parameter tells the syscall how exactly the processes should be "
 "cloned.  As described above, Linux(R) can create processes sharing various "
@@ -2226,10 +2411,11 @@ msgid ""
 "and does not let the compiler do it what results in the need of a dummy "
 "syscall.  The `child_tidptr` parameter is used as an address for copying out "
 "PID once the process has finished forking and when the process exits."
-msgstr ""
+msgstr "`flags` 参数告知系统调用应如何克隆进程。如上所述，Linux(R) 可以独立地创建共享各种资源的进程，例如两个进程可以共享文件描述符，但不共享 VM，等等。`flags` 参数的最后一个字节是新创建进程的退出信号。若 `stack` 参数不为 `NULL`，它会指出线程栈的位置；若为 `NULL`，则应对调用进程的栈执行写时复制（即执行常规的 man:fork[2] 操作）。`parent_tidptr` 参数是一个地址，用于在进程完成初始化但尚不可运行时，将进程 PID（即线程 ID）复制到该地址。`dummy` 参数的存在是因为该系统调用在 i386 上采用了非常奇特的调用约定：它直接使用寄存器，不允许编译器处理，因此需要一个虚设参数。`child_tidptr` 参数是一个地址，用于在进程完成 fork 后以及进程退出时，将 PID 复制到该地址。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1000
+#, fuzzy
 msgid ""
 "The syscall itself proceeds by setting corresponding flags depending on the "
 "flags passed in.  For example, `CLONE_VM` maps to RFMEM (sharing of VM), "
@@ -2251,15 +2437,16 @@ msgid ""
 "vfork[2] semantics might be emulated and finally the newly created process "
 "is put on a run queue and copying out its PID to the parent process via "
 "`clone` return value is done."
-msgstr ""
+msgstr "系统调用本身会根据传入的标志设置相应的标志。例如，`CLONE_VM` 对应 RFMEM（共享 VM），等等。这里唯一需要注意的是 `CLONE_FS` 和 `CLONE_FILES`：FreeBSD 不允许分别设置它们，因此如果定义了其中任意一个，我们就通过不设置 RFFDG（复制文件描述符表及其他文件系统信息）来模拟。这不会造成问题，因为这两个标志总是同时设置。设置标志后，进程会通过内部的 `fork1` 例程进行 fork，并会被特别处理，不加入运行队列，也就是不设置为可运行状态。完成 fork 后，我们可能会将新创建的进程重新指定父进程，以模拟 `CLONE_PARENT` 语义。接下来是创建仿真数据。Linux(R) 中的线程不会向其父进程发送信号，因此我们将退出信号设为 0，以禁用此行为。随后设置 `child_set_tid` 和 `child_clear_tid`，以启用代码后续部分的相关功能。此时，我们会将 PID 复制到 `parent_tidptr` 指定的地址。设置进程栈时，只需改写线程帧中的 `%esp` 寄存器（在 amd64 上为 `%rsp`）。接下来为新创建的进程设置 TLS。之后可能会模拟 man:vfork[2] 语义，最后将新创建的进程加入运行队列，并通过 `clone` 的返回值将其 PID 复制给父进程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1003
+#, fuzzy
 msgid ""
 "The `clone` syscall is able and in fact is used for emulating classic man:"
 "fork[2] and man:vfork[2] syscalls.  Newer glibc in a case of 2.6 kernel uses "
 "`clone` to implement man:fork[2] and man:vfork[2] syscalls."
-msgstr ""
+msgstr "`clone` 系统调用可以模拟传统的 man:fork[2] 和 man:vfork[2] 系统调用，事实上也正是这样使用的。在使用 2.6 内核时，较新的 glibc 会使用 `clone` 来实现 man:fork[2] 和 man:vfork[2] 系统调用。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1005
@@ -2269,6 +2456,7 @@ msgstr "锁定中"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1011
+#, fuzzy
 msgid ""
 "The locking is implemented to be per-subsystem because we do not expect a "
 "lot of contention on these.  There are two locks: `emul_lock` used to "
@@ -2277,27 +2465,29 @@ msgid ""
 "blocking mutex while `emul_shared_lock` is a sleepable blocking `sx_lock`.  "
 "Due to of the per-subsystem locking we can coalesce some locks and that is "
 "why the em_find offers the non-locking access."
-msgstr ""
+msgstr "锁按子系统实现，因为我们预计这些锁不会出现大量竞争。这里有两把锁：`emul_lock` 用于保护对 `linux_emuldata` 的操作，`emul_shared_lock` 用于操作 `linux_emuldata_shared`。`emul_lock` 是不可休眠的阻塞互斥锁，而 `emul_shared_lock` 是可休眠的阻塞 `sx_lock`。由于锁是按子系统划分的，我们可以合并一些锁，这也是 `em_find` 提供无锁访问的原因。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1013
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "TLS"
-msgstr ""
+msgstr "TLS"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1016
+#, fuzzy
 msgid "This section deals with TLS also known as thread local storage."
-msgstr ""
+msgstr "本节介绍 TLS，即线程本地存储。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1018
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction to threading"
-msgstr ""
+msgstr "线程简介"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1039
+#, fuzzy
 msgid ""
 "Threads in computer science are entities within a process that can be "
 "scheduled independently from each other.  The threads in the process share "
@@ -2329,16 +2519,17 @@ msgid ""
 "Interesting thing is that almost nothing uses more than 1 descriptor (only "
 "Wine seems to use 2) so Linux(R) pays this unnecessary price for context "
 "switches."
-msgstr ""
+msgstr "在计算机科学中，线程是进程内可独立调度的实体。同一进程中的线程共享进程范围的数据（文件描述符等），但也各自拥有用于存储自身数据的栈。有时，需要为某个线程提供进程范围内的数据副本，例如当前执行线程的名称。传统的 UNIX(R) 线程 API pthreads 通过 man:pthread_key_create[3]、man:pthread_setspecific[3] 和 man:pthread_getspecific[3] 提供了实现此功能的方法：线程可以为线程本地数据创建一个键，并使用 man:pthread_getspecific[3] 或 man:pthread_getspecific[3] 操作这些数据。很容易看出，这并不是最方便的实现方式。因此，各种 C/C++ 编译器厂商引入了更好的方法：定义一个新的修饰关键字 thread，用于指定变量是线程专属的。他们也开发了访问这类变量的新方法（至少在 i386 上是如此）。pthreads 方法通常在用户空间通过一个简单的查找表实现，性能并不理想。因此，新方法（在 i386 上）使用段寄存器来寻址存储 TLS 区域的段；实际访问线程变量时，只需将段寄存器附加到地址上即可通过它寻址。段寄存器通常是 `%gs` 和 `%fs`，它们充当段选择子。每个线程都有自己的区域来存储线程本地数据，并且每次上下文切换时都必须加载相应的段。这种方法速度很快，在整个 i386 UNIX(R) 世界中几乎被广泛采用。FreeBSD 和 Linux(R) 都实现了这种方法，效果很好。唯一的缺点是每次上下文切换都需要重新加载段，这可能会拖慢上下文切换。FreeBSD 通过只使用 1 个段描述符来避免这项开销，而 Linux(R) 使用 3 个。有趣的是，几乎没有程序会使用超过 1 个描述符（只有 Wine 似乎会使用 2 个），因此 Linux(R) 为上下文切换付出了这笔不必要的开销。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1041
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Segments on i386"
-msgstr ""
+msgstr "i386 上的段"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1048
+#, fuzzy
 msgid ""
 "The i386 architecture implements the so called segments.  A segment is a "
 "description of an area of memory.  The base address (bottom) of the memory "
@@ -2346,16 +2537,17 @@ msgid ""
 "by a segment can be accessed using segment selector registers (`%cs`, `%ds`, "
 "`%ss`, `%es`, `%fs`, `%gs`).  For example let us suppose we have a segment "
 "which base address is 0x1234 and length and this code:"
-msgstr ""
+msgstr "i386 架构实现了所谓的段。段描述一个内存区域，包括该区域的基址（底部）、末地址（顶部）、类型、保护属性等。可以使用段选择子寄存器（`%cs`、`%ds`、`%ss`、`%es`、`%fs`、`%gs`）访问段所描述的内存。例如，假设有一个基址为 0x1234、长度为某值的段，以及如下代码："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1052
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mov %edx,%gs:0x10\n"
-msgstr ""
+msgstr "mov %edx,%gs:0x10\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1061
+#, fuzzy
 msgid ""
 "This will load the content of the `%edx` register into memory location "
 "0x1244.  Some segment registers have a special use, for example `%cs` is "
@@ -2364,16 +2556,17 @@ msgid ""
 "or in a local LDT table.  LDT is accessed via an entry in the GDT.  The LDT "
 "can store more types of segments.  LDT can be per process.  Both tables "
 "define up to 8191 entries."
-msgstr ""
+msgstr "这会将 `%edx` 寄存器的内容加载到内存位置 0x1244。某些段寄存器有特殊用途，例如 `%cs` 用作代码段，`%ss` 用作栈段；而 `%fs` 和 `%gs` 通常未使用。段存储在全局 GDT 表或本地 LDT 表中。LDT 通过 GDT 中的一个条目访问。LDT 可以存储更多类型的段，也可以按进程设置。这两个表最多都可定义 8191 个条目。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1063
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Implementation on Linux(R) i386"
-msgstr ""
+msgstr "Linux(R) i386 上的实现"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1071
+#, fuzzy
 msgid ""
 "There are two main ways of setting up TLS in Linux(R).  It can be set when "
 "cloning a process using the `clone` syscall or it can call "
@@ -2385,13 +2578,13 @@ msgid ""
 "should choose the first free slot.  In practice, the vast majority of "
 "programs use only one TLS entry and does not care about the number of the "
 "entry.  We exploit this in the emulation and in fact depend on it."
-msgstr ""
+msgstr "在 Linux(R) 中设置 TLS 主要有两种方式：可以在使用 `clone` 系统调用克隆进程时设置，也可以调用 `set_thread_area`。进程向 `clone` 传递 `CLONE_SETTLS` 标志时，内核会将 `%esi` 寄存器所指向的内存视为 Linux(R) 用户空间段的表示形式，将其转换为机器段表示形式，然后加载到 GDT 槽中。GDT 槽可以通过编号指定，也可以使用 -1 表示由系统自行选择第一个空闲槽。实际上，绝大多数程序只使用一个 TLS 条目，并不关心条目的编号。我们在仿真中利用了这一点，事实上也依赖于此。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1073
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Emulation of Linux(R) TLS"
-msgstr ""
+msgstr "Linux(R) TLS 仿真"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1076
@@ -2401,6 +2594,7 @@ msgstr "i386"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1094
+#, fuzzy
 msgid ""
 "Loading of TLS for the current thread happens by calling `set_thread_area` "
 "while loading TLS for a second process in `clone` is done in the separate "
@@ -2426,7 +2620,7 @@ msgid ""
 "this (segment number 3) is shared for this use between FreeBSD processes and "
 "Linux(R) processes so the Linux(R) emulation layer does not add any overhead "
 "over plain FreeBSD."
-msgstr ""
+msgstr "当前线程的 TLS 通过调用 `set_thread_area` 加载；而在 `clone` 中为第二个进程加载 TLS，则由 `clone` 中单独的代码块完成。这两个函数非常相似，唯一的区别在于实际加载 GDT 段的时机：新创建进程的段会在下一次上下文切换时加载，而 `set_thread_area` 必须立即加载。代码大致执行以下操作：从用户空间复制 Linux(R) 格式的段描述符；检查描述符编号，但由于 FreeBSD 和 Linux(R) 的编号不同，我们会做少量模拟。我们只支持索引 6、3 和 -1：6 是 Linux(R) 实际使用的编号，3 是 FreeBSD 实际使用的编号，-1 表示自动选择。然后将描述符编号设为常量 3，并将其复制回用户空间。我们依赖用户空间进程使用描述符中的编号；这在大多数情况下都有效（从未见过失效的情况），因为用户空间进程通常会传入 1。接着，我们将描述符从 Linux(R) 格式转换为与机器相关的格式（即与操作系统无关的格式），并将其复制到 FreeBSD 定义的段描述符中。最后即可加载它。我们将描述符分配给线程的 PCB（进程控制块），并使用 `load_gs` 加载 `%gs` 段。此加载必须在临界区中完成，以免受到中断。`CLONE_SETTLS` 的处理方式完全相同，只是不执行 `load_gs` 加载。用于此目的的段（段编号 3）由 FreeBSD 进程和 Linux(R) 进程共享，因此 Linux(R) 仿真层不会给纯 FreeBSD 带来额外开销。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1096
@@ -2436,6 +2630,7 @@ msgstr "amd64"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1100
+#, fuzzy
 msgid ""
 "The amd64 implementation is similar to the i386 one but there was initially "
 "no 32bit segment descriptor used for this purpose (hence not even native "
@@ -2444,22 +2639,23 @@ msgid ""
 "set).  Apart from this the TLS loading is exactly the same just the segment "
 "numbers are different and the descriptor format and the loading differs "
 "slightly."
-msgstr ""
+msgstr "amd64 上的实现与 i386 类似，但最初并没有用于此目的的 32 位段描述符（因此连原生的 32 位 TLS 用户也无法工作），所以我们必须添加这样的段，并在每次上下文切换时加载它（当表示正在使用 32 位模式的标志被设置时）。除此之外，TLS 的加载方式完全相同，只是段编号不同，描述符格式和加载方式略有差异。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Futexes"
-msgstr ""
+msgstr "Futex"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction to synchronization"
-msgstr ""
+msgstr "同步简介"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1115
+#, fuzzy
 msgid ""
 "Threads need some kind of synchronization and POSIX(R) provides some of "
 "them: mutexes for mutual exclusion, read-write locks for mutual exclusion "
@@ -2479,330 +2675,360 @@ msgid ""
 "improved sx_lock implementation yielded 40% speedup in _ZFS_ (a heavy sx "
 "user), this is in-kernel stuff but it shows clearly how important the "
 "performance of synchronization primitives is."
-msgstr ""
+msgstr "线程需要某种同步机制，POSIX(R) 提供了其中一些：用于互斥的互斥锁、根据读写比例偏向读或写的读写锁，以及用于通知状态变化的条件变量。值得注意的是，POSIX(R) 线程 API 不支持信号量。这些同步例程的实现很大程度上取决于我们采用的线程支持类型。在纯 1:M（用户空间）模型中，可以完全在用户空间实现，因此速度很快（条件变量可能最终会通过信号实现，因此速度不快），而且实现简单。在 1:1 模型中，情况也很明确：线程必须使用内核机制进行同步（由于必须执行系统调用，因此速度很慢）。混合的 M:N 场景则结合前两种方法，或者完全依赖内核。线程同步是支持线程的程序设计中至关重要的一部分，其性能会显著影响程序表现。FreeBSD 操作系统近期的基准测试显示，改进后的 sx_lock 实现使 _ZFS_（大量使用 sx 的组件）性能提升了 40%。这是内核中的功能，但它清楚地说明了同步原语的性能有多重要。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1119
+#, fuzzy
 msgid ""
 "Threaded programs should be written with as little contention on locks as "
 "possible.  Otherwise, instead of doing useful work the thread just waits on "
 "a lock.  As a result of this, the most well written threaded programs show "
 "little locks contention."
-msgstr ""
+msgstr "多线程程序应尽可能减少锁竞争。否则，线程就只能等待锁，而无法进行有用的工作。因此，编写得最好的多线程程序通常只有很少的锁竞争。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Futexes introduction"
-msgstr ""
+msgstr "Futex 简介"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1126
+#, fuzzy
 msgid ""
 "Linux(R) implements 1:1 threading, i.e. it has to use in-kernel "
 "synchronization primitives.  As stated earlier, well written threaded "
 "programs have little lock contention.  So a typical sequence could be "
 "performed as two atomic increase/decrease mutex reference counter, which is "
 "very fast, as presented by the following example:"
-msgstr ""
+msgstr "Linux(R) 实现的是 1:1 线程模型，也就是说，它必须使用内核内的同步原语。如前所述，编写得好的多线程程序很少出现锁竞争。因此，典型的操作序列可以通过两次原子递增或递减互斥锁引用计数来完成，速度很快，如下例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "pthread_mutex_lock(&mutex);\n"
 "...\n"
 "pthread_mutex_unlock(&mutex);\n"
-msgstr ""
+msgstr "pthread_mutex_lock(&mutex);\n...\npthread_mutex_unlock(&mutex);\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1135
+#, fuzzy
 msgid ""
 "1:1 threading forces us to perform two syscalls for those mutex calls, which "
 "is very slow."
-msgstr ""
+msgstr "1:1 线程模型要求我们为这些互斥锁调用执行两次系统调用，速度非常慢。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1140
+#, fuzzy
 msgid ""
 "The solution Linux(R) 2.6 implements is called futexes.  Futexes implement "
 "the check for contention in userspace and call kernel primitives only in a "
 "case of contention.  Thus the typical case takes place without any kernel "
 "intervention.  This yields reasonably fast and flexible synchronization "
 "primitives implementation."
-msgstr ""
+msgstr "Linux(R) 2.6 实现的解决方案称为 futex。Futex 在用户空间检查是否存在竞争，只有发生竞争时才调用内核原语。因此，典型情况下无需内核介入。这样可以实现速度较快且灵活的同步原语。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Futex API"
-msgstr ""
+msgstr "Futex API"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1145
+#, fuzzy
 msgid "The futex syscall looks like this:"
-msgstr ""
+msgstr "futex 系统调用如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "int futex(void *uaddr, int op, int val, struct timespec *timeout, void *uaddr2, int val3);\n"
-msgstr ""
+msgstr "int futex(void *uaddr, int op, int val, struct timespec *timeout, void *uaddr2, int val3);\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1152
+#, fuzzy
 msgid ""
 "In this example `uaddr` is an address of the mutex in userspace, `op` is an "
 "operation we are about to perform and the other parameters have per-"
 "operation meaning."
-msgstr ""
+msgstr "在此示例中，`uaddr` 是用户空间中互斥锁的地址，`op` 是即将执行的操作，其他参数的含义则因操作而异。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1154
+#, fuzzy
 msgid "Futexes implement the following operations:"
-msgstr ""
+msgstr "Futex 实现了以下操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1156
+#, fuzzy
 msgid "`FUTEX_WAIT`"
-msgstr ""
+msgstr "`FUTEX_WAIT`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1157
+#, fuzzy
 msgid "`FUTEX_WAKE`"
-msgstr ""
+msgstr "`FUTEX_WAKE`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1158
+#, fuzzy
 msgid "`FUTEX_FD`"
-msgstr ""
+msgstr "`FUTEX_FD`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1159
+#, fuzzy
 msgid "`FUTEX_REQUEUE`"
-msgstr ""
+msgstr "`FUTEX_REQUEUE`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1160
+#, fuzzy
 msgid "`FUTEX_CMP_REQUEUE`"
-msgstr ""
+msgstr "`FUTEX_CMP_REQUEUE`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1161
+#, fuzzy
 msgid "`FUTEX_WAKE_OP`"
-msgstr ""
+msgstr "`FUTEX_WAKE_OP`"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FUTEX_WAIT"
-msgstr ""
+msgstr "FUTEX_WAIT"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1168
+#, fuzzy
 msgid ""
 "This operation verifies that on address `uaddr` the value `val` is written.  "
 "If not, `EWOULDBLOCK` is returned, otherwise the thread is queued on the "
 "futex and gets suspended.  If the argument `timeout` is non-zero it "
 "specifies the maximum time for the sleeping, otherwise the sleeping is "
 "infinite."
-msgstr ""
+msgstr "此操作会检查地址 `uaddr` 处是否写入了值 `val`。如果没有，则返回 `EWOULDBLOCK`；否则，线程会排入 futex 队列并挂起。如果 `timeout` 参数非零，则指定休眠的最长时间；否则，休眠时间无限。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FUTEX_WAKE"
-msgstr ""
+msgstr "FUTEX_WAKE"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1173
+#, fuzzy
 msgid ""
 "This operation takes a futex at `uaddr` and wakes up `val` first futexes "
 "queued on this futex."
-msgstr ""
+msgstr "此操作获取位于 `uaddr` 的 futex，并唤醒该 futex 队列中最先排入的 `val` 个线程。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FUTEX_FD"
-msgstr ""
+msgstr "FUTEX_FD"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1178
+#, fuzzy
 msgid "This operations associates a file descriptor with a given futex."
-msgstr ""
+msgstr "此操作将文件描述符与指定的 futex 关联。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FUTEX_REQUEUE"
-msgstr ""
+msgstr "FUTEX_REQUEUE"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1183
+#, fuzzy
 msgid ""
 "This operation takes `val` threads queued on futex at `uaddr`, wakes them "
 "up, and takes `val2` next threads and requeues them on futex at `uaddr2`."
-msgstr ""
+msgstr "此操作获取排在 `uaddr` 处 futex 队列中的 `val` 个线程并唤醒它们，然后再获取接下来的 `val2` 个线程，将它们重新排入 `uaddr2` 处 futex 的队列。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FUTEX_CMP_REQUEUE"
-msgstr ""
+msgstr "FUTEX_CMP_REQUEUE"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1188
+#, fuzzy
 msgid ""
 "This operation does the same as `FUTEX_REQUEUE` but it checks that `val3` "
 "equals to `val` first."
-msgstr ""
+msgstr "此操作与 `FUTEX_REQUEUE` 相同，但会先检查 `val3` 是否等于 `val`。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FUTEX_WAKE_OP"
-msgstr ""
+msgstr "FUTEX_WAKE_OP"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1194
+#, fuzzy
 msgid ""
 "This operation performs an atomic operation on `val3` (which contains coded "
 "some other value) and `uaddr`.  Then it wakes up `val` threads on futex at "
 "`uaddr` and if the atomic operation returned a positive number it wakes up "
 "`val2` threads on futex at `uaddr2`."
-msgstr ""
+msgstr "此操作会对 `val3`（其中编码了另一个值）和 `uaddr` 执行原子操作。然后，它会唤醒 `uaddr` 处 futex 队列中的 `val` 个线程；如果原子操作返回正数，则还会唤醒 `uaddr2` 处 futex 队列中的 `val2` 个线程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1196
+#, fuzzy
 msgid "The operations implemented in `FUTEX_WAKE_OP`:"
-msgstr ""
+msgstr "`FUTEX_WAKE_OP` 中实现的操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1198
+#, fuzzy
 msgid "`FUTEX_OP_SET`"
-msgstr ""
+msgstr "`FUTEX_OP_SET`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1199
+#, fuzzy
 msgid "`FUTEX_OP_ADD`"
-msgstr ""
+msgstr "`FUTEX_OP_ADD`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1200
+#, fuzzy
 msgid "`FUTEX_OP_OR`"
-msgstr ""
+msgstr "`FUTEX_OP_OR`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1201
+#, fuzzy
 msgid "`FUTEX_OP_AND`"
-msgstr ""
+msgstr "`FUTEX_OP_AND`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1202
+#, fuzzy
 msgid "`FUTEX_OP_XOR`"
-msgstr ""
+msgstr "`FUTEX_OP_XOR`"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1207
+#, fuzzy
 msgid ""
 "There is no `val2` parameter in the futex prototype.  The `val2` is taken "
 "from the `struct timespec *timeout` parameter for operations "
 "`FUTEX_REQUEUE`, `FUTEX_CMP_REQUEUE` and `FUTEX_WAKE_OP`."
-msgstr ""
+msgstr "futex 原型中没有 `val2` 参数。对于 `FUTEX_REQUEUE`、`FUTEX_CMP_REQUEUE` 和 `FUTEX_WAKE_OP` 操作，`val2` 取自 `struct timespec *timeout` 参数。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Futex emulation in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 中的 futex 仿真"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1215
+#, fuzzy
 msgid ""
 "The futex emulation in FreeBSD is taken from NetBSD and further extended by "
 "us.  It is placed in `linux_futex.c` and [.filename]#linux_futex.h# files.  "
 "The `futex` structure looks like:"
-msgstr ""
+msgstr "FreeBSD 中的 futex 仿真源自 NetBSD，并由我们进一步扩展。它位于 `linux_futex.c` 和 [.filename]#linux_futex.h# 文件中。`futex` 结构如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1221
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct futex {\n"
 "  void *f_uaddr;\n"
 "  int f_refcount;\n"
-msgstr ""
+msgstr "struct futex {\n  void *f_uaddr;\n  int f_refcount;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  LIST_ENTRY(futex) f_list;\n"
-msgstr ""
+msgstr "  LIST_ENTRY(futex) f_list;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  TAILQ_HEAD(lf_waiting_paroc, waiting_proc) f_waiting_proc;\n"
 "};\n"
-msgstr ""
+msgstr "  TAILQ_HEAD(lf_waiting_paroc, waiting_proc) f_waiting_proc;\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1229
+#, fuzzy
 msgid "And the structure `waiting_proc` is:"
-msgstr ""
+msgstr "`waiting_proc` 结构如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "struct waiting_proc {\n"
-msgstr ""
+msgstr "struct waiting_proc {\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  struct thread *wp_t;\n"
-msgstr ""
+msgstr "  struct thread *wp_t;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  struct futex *wp_new_futex;\n"
-msgstr ""
+msgstr "  struct futex *wp_new_futex;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1240
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  TAILQ_ENTRY(waiting_proc) wp_list;\n"
 "};\n"
-msgstr ""
+msgstr "  TAILQ_ENTRY(waiting_proc) wp_list;\n};\n"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "futex_get / futex_put"
-msgstr ""
+msgstr "futex_get / futex_put"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1247
+#, fuzzy
 msgid ""
 "A futex is obtained using the `futex_get` function, which searches a linear "
 "list of futexes and returns the found one or creates a new futex.  When "
 "releasing a futex from the use we call the `futex_put` function, which "
 "decreases a reference counter of the futex and if the refcount reaches zero "
 "it is released."
-msgstr ""
+msgstr "使用 `futex_get` 函数获取 futex，该函数会在线性列表中搜索 futex，并返回找到的 futex，或者创建一个新的 futex。释放使用中的 futex 时，我们调用 `futex_put` 函数；该函数会减少 futex 的引用计数，当引用计数降为零时释放该 futex。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "futex_sleep"
-msgstr ""
+msgstr "futex_sleep"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1257
+#, fuzzy
 msgid ""
 "When a futex queues a thread for sleeping it creates a `working_proc` "
 "structure and puts this structure to the list inside the futex structure "
@@ -2812,16 +3038,17 @@ msgid ""
 "destroyed.  All this is done in the `futex_sleep` function.  If we got woken "
 "up from `futex_wake` we have `wp_new_futex` set so we sleep on it.  This way "
 "the actual requeueing is done in this function."
-msgstr ""
+msgstr "当 futex 将线程加入休眠队列时，它会创建一个 `working_proc` 结构，并将其添加到 futex 结构中的列表，然后调用 man:tsleep[9] 挂起线程。休眠可以设置超时。man:tsleep[9] 返回后（线程被唤醒或超时），`working_proc` 结构会从列表中移除并销毁。所有这些操作都由 `futex_sleep` 函数完成。如果线程因 `futex_wake` 而被唤醒，则会设置 `wp_new_futex`，因此线程会在该 futex 上休眠。这样，实际的重新排队操作就在此函数中完成。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "futex_wake"
-msgstr ""
+msgstr "futex_wake"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1267
+#, fuzzy
 msgid ""
 "Waking up a thread sleeping on a futex is performed in the `futex_wake` "
 "function.  First in this function we mimic the strange Linux(R) behavior, "
@@ -2831,92 +3058,98 @@ msgid ""
 "function in the loop we wake up n threads, after this we check if there is a "
 "new futex for requeueing.  If so, we requeue up to n2 threads on the new "
 "futex.  This cooperates with `futex_sleep`."
-msgstr ""
+msgstr "唤醒在 futex 上休眠的线程由 `futex_wake` 函数完成。该函数首先模拟 Linux(R) 的奇特行为：所有操作都会唤醒 N 个线程，唯一的例外是 REQUEUE 操作会唤醒 N+1 个线程。不过，通常这不会造成区别，因为我们会唤醒所有线程。接下来，函数在循环中唤醒 n 个线程，然后检查是否有新的 futex 用于重新排队。如果有，则将最多 n2 个线程重新排入该 futex。此过程与 `futex_sleep` 协同工作。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "futex_wake_op"
-msgstr ""
+msgstr "futex_wake_op"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1274
+#, fuzzy
 msgid ""
 "The `FUTEX_WAKE_OP` operation is quite complicated.  First we obtain two "
 "futexes at addresses `uaddr` and `uaddr2` then we perform the atomic "
 "operation using `val3` and `uaddr2`.  Then `val` waiters on the first futex "
 "is woken up and if the atomic operation condition holds we wake up `val2` (i."
 "e. `timeout`) waiter on the second futex."
-msgstr ""
+msgstr "`FUTEX_WAKE_OP` 操作相当复杂。首先，我们获取地址 `uaddr` 和 `uaddr2` 处的两个 futex，然后使用 `val3` 和 `uaddr2` 执行原子操作。接着唤醒第一个 futex 上的 `val` 个等待者；如果原子操作的条件成立，则唤醒第二个 futex 上的 `val2`（即 `timeout`）个等待者。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "futex atomic operation"
-msgstr ""
+msgstr "futex 原子操作"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1281
+#, fuzzy
 msgid ""
 "The atomic operation takes two parameters `encoded_op` and `uaddr`.  The "
 "encoded operation encodes the operation itself, comparing value, operation "
 "argument, and comparing argument.  The pseudocode for the operation is like "
 "this one:"
-msgstr ""
+msgstr "原子操作接受两个参数：`encoded_op` 和 `uaddr`。编码后的操作包含操作本身、比较值、操作参数和比较参数。该操作的伪代码如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "oldval = *uaddr2\n"
 "*uaddr2 = oldval OP oparg\n"
-msgstr ""
+msgstr "oldval = *uaddr2\n*uaddr2 = oldval OP oparg\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1290
+#, fuzzy
 msgid ""
 "And this is done atomically. First a copying in of the number at `uaddr` is "
 "performed and the operation is done.  The code handles page faults and if no "
 "page fault occurs `oldval` is compared to `cmparg` argument with cmp "
 "comparator."
-msgstr ""
+msgstr "此操作以原子方式完成。首先，将 `uaddr` 处的数值复制进来，然后执行操作。代码会处理页错误；如果没有发生页错误，则使用 cmp 比较器将 `oldval` 与参数 `cmparg` 进行比较。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1292
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Futex locking"
-msgstr ""
+msgstr "Futex 锁定"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1296
+#, fuzzy
 msgid ""
 "Futex implementation uses two lock lists protecting `sx_lock` and global "
 "locks (either Giant or another `sx_lock`).  Every operation is performed "
 "locked from the start to the very end."
-msgstr ""
+msgstr "Futex 实现使用两个锁定列表来保护 `sx_lock` 和全局锁（Giant 或另一个 `sx_lock`）。每项操作从开始到结束都在锁定状态下执行。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Various syscalls implementation"
-msgstr ""
+msgstr "各种系统调用的实现"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1301
+#, fuzzy
 msgid ""
 "In this section I am going to describe some smaller syscalls that are worth "
 "mentioning because their implementation is not obvious or those syscalls are "
 "interesting from other point of view."
-msgstr ""
+msgstr "本节将介绍一些值得一提的小型系统调用，因为它们的实现并不直观，或者它们从其他角度来看很有意思。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*at family of syscalls"
-msgstr ""
+msgstr "*at 系列系统调用"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1312
+#, fuzzy
 msgid ""
 "During development of Linux(R) 2.6.16 kernel, the *at syscalls were added.  "
 "Those syscalls (`openat` for example) work exactly like their at-less "
@@ -2927,26 +3160,27 @@ msgid ""
 "`dirfd` parameter is a directory relative to which the relative pathname is "
 "checked.  The `dirfd` parameter is a file descriptor of some directory or "
 "`AT_FDCWD`.  So for example the `openat` syscall can be like this:"
-msgstr ""
+msgstr "在 Linux(R) 2.6.16 内核的开发过程中，加入了 *at 系统调用。这些系统调用（例如 `openat`）的工作方式与对应的不带 at 的系统调用完全相同，只有 `dirfd` 参数略有不同。该参数会改变系统调用所操作文件的位置。`filename` 参数为绝对路径时会忽略 `dirfd`；而路径为相对路径时，`dirfd` 就会发挥作用。`dirfd` 参数指定用于解析相对路径名的目录。它是某个目录的文件描述符，或 `AT_FDCWD`。例如，`openat` 系统调用可以这样使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "file descriptor 123 = /tmp/foo/, current working directory = /tmp/\n"
-msgstr ""
+msgstr "file descriptor 123 = /tmp/foo/, current working directory = /tmp/\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "openat(123, /tmp/bah\\, flags, mode)\t/* opens /tmp/bah */\n"
 "openat(123, bah\\, flags, mode)\t\t/* opens /tmp/foo/bah */\n"
 "openat(AT_FDWCWD, bah\\, flags, mode)\t/* opens /tmp/bah */\n"
 "openat(stdio, bah\\, flags, mode)\t/* returns error because stdio is not a directory */\n"
-msgstr ""
+msgstr "openat(123, /tmp/bah\\, flags, mode)\t/* opens /tmp/bah */\nopenat(123, bah\\, flags, mode)\t\t/* opens /tmp/foo/bah */\nopenat(AT_FDWCWD, bah\\, flags, mode)\t/* opens /tmp/bah */\nopenat(stdio, bah\\, flags, mode)\t/* returns error because stdio is not a directory */\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1330
+#, fuzzy
 msgid ""
 "This infrastructure is necessary to avoid races when opening files outside "
 "the working directory.  Imagine that a process consists of two threads, "
@@ -2956,10 +3190,11 @@ msgid ""
 "#.  We got a race.  To avoid this we can open [.filename]#/tmp/foo# and use "
 "it as `dirfd` for `openat` syscall.  This also enables user to implement per-"
 "thread working directories."
-msgstr ""
+msgstr "这套机制对于避免打开工作目录之外的文件时发生竞争至关重要。假设一个进程由线程 A 和线程 B 组成。线程 A 发出 `open(./tmp/foo/bah., flags, mode)`，但在返回前被抢占，随后线程 B 开始运行。线程 B 不会顾及线程 A 的需要，并重命名或删除 [.filename]#/tmp/foo/#。于是就发生了竞争。为避免这种情况，我们可以打开 [.filename]#/tmp/foo#，并将其用作 `openat` 系统调用的 `dirfd`。这也使用户能够为每个线程实现独立的工作目录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1333
+#, fuzzy
 msgid ""
 "Linux(R) family of *at syscalls contains: `linux_openat`, `linux_mkdirat`, "
 "`linux_mknodat`, `linux_fchownat`, `linux_futimesat`, `linux_fstatat64`, "
@@ -2967,16 +3202,17 @@ msgid ""
 "`linux_readlinkat`, `linux_fchmodat` and `linux_faccessat`.  All these are "
 "implemented using the modified man:namei[9] routine and simple wrapping "
 "layer."
-msgstr ""
+msgstr "Linux(R) 的 *at 系列系统调用包括：`linux_openat`、`linux_mkdirat`、`linux_mknodat`、`linux_fchownat`、`linux_futimesat`、`linux_fstatat64`、`linux_unlinkat`、`linux_renameat`、`linux_linkat`、`linux_symlinkat`、`linux_readlinkat`、`linux_fchmodat` 和 `linux_faccessat`。这些调用均通过修改后的 man:namei[9] 例程和简单的封装层实现。"
 
 #. type: Title =====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Implementation"
-msgstr ""
+msgstr "实现"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1343
+#, fuzzy
 msgid ""
 "The implementation is done by altering the man:namei[9] routine (described "
 "above) to take additional parameter `dirfd` in its `nameidata` structure, "
@@ -2991,23 +3227,24 @@ msgid ""
 "`dp` variable in the man:namei[9] function, which determines the starting "
 "point.  The man:namei[9] is not used directly but via a trace of different "
 "functions on various levels.  For example the `openat` goes like this:"
-msgstr ""
+msgstr "实现方式是修改 man:namei[9] 例程（如上所述），在其 `nameidata` 结构中加入额外的 `dirfd` 参数，以指定路径查找的起点，而不再每次都使用当前工作目录。文件描述符编号到 vnode 的 `dirfd` 解析由原生 *at 系统调用完成。当 `dirfd` 为 `AT_FDCWD` 时，`nameidata` 结构中的 `dvp` 项为 `NULL`；如果 `dirfd` 是其他值，我们就会获取该文件描述符对应的文件，检查文件是否有效，以及是否附有 vnode；如果有，就获取该 vnode。然后检查该 vnode 是否为目录。在实际的 man:namei[9] 例程中，我们只需将 `dvp` vnode 替换为 man:namei[9] 函数中的 `dp` 变量，该变量决定查找的起点。man:namei[9] 不会被直接调用，而是通过不同层级的一系列函数调用。例如，`openat` 的调用链如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "openat() --> kern_openat() --> vn_open() -> namei()\n"
-msgstr ""
+msgstr "openat() --> kern_openat() --> vn_open() -> namei()\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1353
+#, fuzzy
 msgid ""
 "For this reason `kern_open` and `vn_open` must be altered to incorporate the "
 "additional `dirfd` parameter.  No compat layer is created for those because "
 "there are not many users of this and the users can be easily converted.  "
 "This general implementation enables FreeBSD to implement their own *at "
 "syscalls.  This is being discussed right now."
-msgstr ""
+msgstr "因此，必须修改 `kern_open` 和 `vn_open`，使其纳入额外的 `dirfd` 参数。我们不会为它们创建兼容层，因为这类调用的用户不多，而且用户可以轻松完成转换。这种通用实现使 FreeBSD 能够实现自己的 *at 系统调用。目前正在讨论此事。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1355
@@ -3017,6 +3254,7 @@ msgstr "ioctl"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1369
+#, fuzzy
 msgid ""
 "The ioctl interface is quite fragile due to its generality.  We have to bear "
 "in mind that devices differ between Linux(R) and FreeBSD so some care must "
@@ -3037,7 +3275,7 @@ msgid ""
 "implement many Linux(R) ioctls (compared to NetBSD, for example) but the "
 "plan is to port those from NetBSD.  The trend is to use Linux(R) ioctls even "
 "in the native FreeBSD drivers because of the easy porting of applications."
-msgstr ""
+msgstr "ioctl 接口由于通用性而相当脆弱。我们必须牢记，Linux(R) 与 FreeBSD 的设备各不相同，因此要正确完成 ioctl 仿真必须格外谨慎。ioctl 处理实现在 [.filename]#linux_ioctl.c# 中，其中定义了 `linux_ioctl` 函数。该函数会遍历一组 ioctl 处理程序，以查找实现指定命令的处理程序。ioctl 系统调用有三个参数：文件描述符、命令和参数。命令是一个 16 位数字，理论上分为高 8 位（用于确定 ioctl 命令的类别）和低 8 位（表示给定集合中的实际命令）。仿真实现利用了这种划分。我们为每个集合实现处理程序，例如 `sound_handler` 或 `disk_handler`。每个处理程序都定义了最大和最小命令值，用于确定应使用哪个处理程序。这种方法存在一些问题，因为 Linux(R) 并未始终如一地使用集合划分，因此有时属于其他集合的 ioctl 会出现在不应归属的集合中（例如，SCSI 通用 ioctl 出现在 cdrom 集合中）。与 NetBSD 等系统相比，FreeBSD 目前尚未实现许多 Linux(R) ioctl，但计划从 NetBSD 移植这些实现。由于应用程序移植容易，即使在原生 FreeBSD 驱动程序中使用 Linux(R) ioctl 也已成为趋势。"
 
 #. type: Title ====
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1371
@@ -3047,13 +3285,14 @@ msgstr "调试"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1378
+#, fuzzy
 msgid ""
 "Every syscall should be debuggable.  For this purpose we introduce a small "
 "infrastructure.  We have the ldebug facility, which tells whether a given "
 "syscall should be debugged (settable via a sysctl).  For printing we have "
 "LMSG and ARGS macros.  Those are used for altering a printable string for "
 "uniform debugging messages."
-msgstr ""
+msgstr "每个系统调用都应该可以调试。为此，我们引入了一套小型机制。其中包含 ldebug 功能，用于判断是否应调试给定的系统调用（可通过 sysctl 设置）。打印方面则使用 LMSG 和 ARGS 宏，它们用于调整可打印字符串，以统一调试消息的格式。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1380
@@ -3063,12 +3302,13 @@ msgstr "结论"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Results"
-msgstr ""
+msgstr "结果"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1389
+#, fuzzy
 msgid ""
 "As of April 2007 the Linux(R) emulation layer is capable of emulating the "
 "Linux(R) 2.6.16 kernel quite well.  The remaining problems concern futexes, "
@@ -3080,10 +3320,11 @@ msgid ""
 "Fedora Core 6 linux_base was recently committed enabling some further "
 "testing of the emulation layer and giving us some more hints where we should "
 "put our effort in implementing missing stuff."
-msgstr ""
+msgstr "截至 2007 年 4 月，Linux(R) 仿真层已能够相当好地仿真 Linux(R) 2.6.16 内核。剩余问题包括 futex、尚未完成的 *at 系列系统调用、有问题的信号递送、缺少 `epoll` 和 `inotify`，以及可能存在的尚未发现的错误。尽管如此，我们基本上能够在 FreeBSD Ports Collection 中运行所有 Linux(R) 程序，使用的是基于 2.6.16 的 Fedora Core 4；也有一些初步报告称，基于 2.6.16 的 Fedora Core 6 可以成功运行。Fedora Core 6 的 linux_base 最近已提交，这使我们能够进一步测试仿真层，并更清楚地了解实现缺失功能时应投入哪些工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1393
+#, fuzzy
 msgid ""
 "We are able to run the most used applications like package:www/linux-"
 "firefox[], package:net-im/skype[] and some games from the Ports Collection.  "
@@ -3092,141 +3333,160 @@ msgid ""
 "big application that is known not to work is the Linux(R) Java(TM) "
 "Development Kit and this is because of the requirement of `epoll` facility "
 "which is not directly related to the Linux(R) kernel 2.6."
-msgstr ""
+msgstr "我们能够运行最常用的应用程序，例如 package:www/linux-firefox[]、package:net-im/skype[]，以及 Ports Collection 中的一些游戏。有些程序在 2.6 仿真环境下表现异常，目前正在调查，希望很快能够修复。已知唯一无法运行的大型应用程序是 Linux(R) Java(TM) Development Kit，这是因为它需要 `epoll` 功能，而该功能与 Linux(R) 2.6 内核并无直接关系。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1396
+#, fuzzy
 msgid ""
 "We hope to enable 2.6.16 emulation by default some time after FreeBSD 7.0 is "
 "released at least to expose the 2.6 emulation parts for some wider testing.  "
 "Once this is done we can switch to Fedora Core 6 linux_base, which is the "
 "ultimate plan."
-msgstr ""
+msgstr "我们希望在 FreeBSD 7.0 发布后的某个时间默认启用 2.6.16 仿真，至少让更多人能够测试 2.6 仿真部分。完成后，我们就可以切换到 Fedora Core 6 linux_base，这是最终计划。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Future work"
-msgstr ""
+msgstr "未来工作"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1401
+#, fuzzy
 msgid ""
 "Future work should focus on fixing the remaining issues with futexes, "
 "implement the rest of the *at family of syscalls, fix the signal delivery "
 "and possibly implement the `epoll` and `inotify` facilities."
-msgstr ""
+msgstr "未来的工作应着重解决 futex 的剩余问题，实现其余 *at 系列系统调用，修复信号递送，并酌情实现 `epoll` 和 `inotify` 功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1403
+#, fuzzy
 msgid ""
 "We hope to be able to run the most important programs flawlessly soon, so we "
 "will be able to switch to the 2.6 emulation by default and make the Fedora "
 "Core 6 the default linux_base because our currently used Fedora Core 4 is "
 "not supported any more."
-msgstr ""
+msgstr "我们希望很快就能毫无问题地运行最重要的程序，从而默认切换到 2.6 仿真，并将 Fedora Core 6 设为默认的 linux_base，因为目前使用的 Fedora Core 4 已不再受支持。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1407
+#, fuzzy
 msgid ""
 "The other possible goal is to share our code with NetBSD and DragonflyBSD.  "
 "NetBSD has some support for 2.6 emulation but its far from finished and not "
 "really tested.  DragonflyBSD has expressed some interest in porting the 2.6 "
 "improvements."
-msgstr ""
+msgstr "另一个可能的目标是与 NetBSD 和 DragonflyBSD 共享代码。NetBSD 对 2.6 仿真提供了一些支持，但远未完成，也没有经过充分测试。DragonflyBSD 已表示有兴趣移植 2.6 改进。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1412
+#, fuzzy
 msgid ""
 "Generally, as Linux(R) develops we would like to keep up with their "
 "development, implementing newly added syscalls.  Splice comes to mind "
 "first.  Some already implemented syscalls are also suboptimal, for example "
 "`mremap` and others.  Some performance improvements can also be made, finer "
 "grained locking and others."
-msgstr ""
+msgstr "总体而言，随着 Linux(R) 的发展，我们希望跟上其进度，实现新增的系统调用。首先想到的是 Splice。一些已实现的系统调用也不够理想，例如 `mremap` 等。还可以进行一些性能改进，例如采用更细粒度的锁。"
 
 #. type: Title ===
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Team"
-msgstr ""
+msgstr "团队"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1417
+#, fuzzy
 msgid "I cooperated on this project with (in alphabetical order):"
-msgstr ""
+msgstr "我在这个项目中与以下人员合作（按字母顺序排列）："
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1419
+#, fuzzy
 msgid "`{jhb}`"
-msgstr ""
+msgstr "`{jhb}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1420
+#, fuzzy
 msgid "`{kib}`"
-msgstr ""
+msgstr "`{kib}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1421
+#, fuzzy
 msgid "Emmanuel Dreyfus"
-msgstr ""
+msgstr "Emmanuel Dreyfus"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1422
+#, fuzzy
 msgid "Scot Hetzel"
-msgstr ""
+msgstr "Scot Hetzel"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1423
+#, fuzzy
 msgid "`{jkim}`"
-msgstr ""
+msgstr "`{jkim}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1424
+#, fuzzy
 msgid "`{netchild}`"
-msgstr ""
+msgstr "`{netchild}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1425
+#, fuzzy
 msgid "`{ssouhlal}`"
-msgstr ""
+msgstr "`{ssouhlal}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1426
+#, fuzzy
 msgid "Li Xiao"
-msgstr ""
+msgstr "Li Xiao"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1427
+#, fuzzy
 msgid "`{davidxu}`"
-msgstr ""
+msgstr "`{davidxu}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1429
+#, fuzzy
 msgid ""
 "I would like to thank all those people for their advice, code reviews and "
 "general support."
-msgstr ""
+msgstr "感谢所有人提供建议、代码审查和各方面的支持。"
 
 #. type: Title ==
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1431
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Literatures"
-msgstr ""
+msgstr "参考文献"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1434
+#, fuzzy
 msgid ""
 "Marshall Kirk McKusick - George V. Neville-Neil. Design and Implementation "
 "of the FreeBSD operating system. Addison-Wesley, 2005."
-msgstr ""
+msgstr "Marshall Kirk McKusick - George V. Neville-Neil。《FreeBSD 操作系统的设计与实现》。Addison-Wesley，2005 年。"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1435
+#, fuzzy
 msgid "https://tldp.org[https://tldp.org]"
-msgstr ""
+msgstr "link:https://tldp.org[https://tldp.org]"
 
 #. type: Plain text
 #: documentation/content/en/articles/linux-emulation/_index.adoc:1435
+#, fuzzy
 msgid "https://www.kernel.org[https://www.kernel.org]"
-msgstr ""
+msgstr "link:https://www.kernel.org[https://www.kernel.org]"

@@ -27,9 +27,9 @@ msgstr "SMPng 设计文档"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 8. SMPng Design Document"
-msgstr ""
+msgstr "第 8 章 SMPng 设计文档"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:51
@@ -142,6 +142,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:73
+#, fuzzy
 msgid ""
 "This requires one to take special care when using an item protected by "
 "atomic instructions. For example, in the sleep mutex implementation, we have "
@@ -153,7 +154,7 @@ msgid ""
 "another value than the one we made the decision on. Thus, we have to use an "
 "`atomic_cmpset` to set the value only if the value we made the decision on "
 "is up-to-date and valid."
-msgstr ""
+msgstr "使用受原子指令保护的项目时，必须格外谨慎。例如，在睡眠互斥锁的实现中，必须使用 `atomic_cmpset` 而不是 `atomic_set` 来设置 `MTX_CONTESTED` 位。原因是，我们会将 `mtx_lock` 的值读入变量，然后根据读到的值作出判断。然而，读到的值可能已过时，也可能在我们作出判断时发生变化。因此，执行 `atomic_set` 时，设置的位可能落在另一个值上，而不是我们据以作出判断的值。因此，必须使用 `atomic_cmpset`，仅当据以作出判断的值仍是最新且有效时才设置该值。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:75
@@ -257,6 +258,7 @@ msgstr "对中断的处理"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:94
+#, fuzzy
 msgid ""
 "Following the pattern of several other multi-threaded UNIX(R) kernels, "
 "FreeBSD deals with interrupt handlers by giving them their own thread "
@@ -266,7 +268,7 @@ msgid ""
 "to avoid starving other kernel threads. In addition, since multiple handlers "
 "may share an interrupt thread, interrupt handlers should not sleep or use a "
 "sleepable lock to avoid starving another interrupt handler."
-msgstr ""
+msgstr "与其他几个多线程 UNIX(R) 内核的做法类似，FreeBSD 为中断处理程序提供独立的线程上下文。为中断处理程序提供上下文，使其能够在锁上阻塞。然而，为避免延迟，中断线程以实时内核优先级运行。因此，中断处理程序不应运行太久，以免使其他内核线程饥饿。此外，由于多个处理程序可能共用一个中断线程，中断处理程序不应休眠，也不应使用可休眠锁，以免使其他中断处理程序饥饿。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:96
@@ -764,6 +766,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:160
+#, fuzzy
 msgid ""
 "Credential structures with a single reference are considered mutable; shared "
 "credential structures must not be modified or a race condition is risked. A "
@@ -771,17 +774,19 @@ msgid ""
 "maintain consistency. Any use of the structure requires a valid reference "
 "for the duration of the use, or the structure may be released out from under "
 "the illegitimate consumer."
-msgstr ""
+msgstr "只有一个引用的凭证结构被视为可变；不得修改共享的凭证结构，否则可能引发竞态条件。互斥锁 `cr_mtxp` 保护 `struct ucred` 的引用计数，以保持一致性。使用该结构时，整个使用期间都必须持有有效引用，否则该结构可能在未经授权的使用者使用时被释放。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:162
+#, fuzzy
 msgid ""
 "The `struct ucred` mutex is a leaf mutex and is implemented via a mutex pool "
 "for performance reasons."
-msgstr ""
+msgstr "出于性能考虑，`struct ucred` 的互斥锁是叶互斥锁，并通过互斥锁池实现。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:164
+#, fuzzy
 msgid ""
 "Usually, credentials are used in a read-only manner for access control "
 "decisions, and in this case `td_ucred` is generally preferred because it "
@@ -789,10 +794,11 @@ msgid ""
 "must be held across the check and update operations thus avoid races. The "
 "process credential `p_ucred` must be used for check and update operations to "
 "prevent time-of-check, time-of-use races."
-msgstr ""
+msgstr "凭证通常以只读方式用于访问控制判断，在这种情况下，通常优先使用 `td_ucred`，因为它不需要加锁。更新进程凭证时，必须在检查和更新操作期间持有 `proc` 锁，以避免竞态。检查和更新操作必须使用进程凭证 `p_ucred`，以防止检查时与使用时之间的竞态。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:166
+#, fuzzy
 msgid ""
 "If system call invocations will perform access control after an update to "
 "the process credential, the value of `td_ucred` must also be refreshed to "
@@ -801,7 +807,7 @@ msgid ""
 "pointer in the thread structure from the process `p_ucred` whenever a "
 "process enters the kernel, permitting use of a fresh credential for kernel "
 "access control."
-msgstr ""
+msgstr "如果系统调用在更新进程凭证后执行访问控制，还必须将 `td_ucred` 的值刷新为进程当前的值，以避免凭证变更后继续使用过时的凭证。每当进程进入内核时，内核都会自动将线程结构中的 `td_ucred` 指针刷新为进程的 `p_ucred`，从而在内核访问控制中使用最新的凭证。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:167
@@ -822,6 +828,7 @@ msgstr "Jail 结构体"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:174
+#, fuzzy
 msgid ""
 "`struct prison` stores administrative details pertinent to the maintenance "
 "of jails created using the man:jail[2] API. This includes the per-jail "
@@ -833,7 +840,7 @@ msgid ""
 "reference to the `struct prison` is sufficient to read these values. The "
 "precise locking of each entry is documented via comments in [.filename]#sys/"
 "jail.h#."
-msgstr ""
+msgstr "`struct prison` 存储通过 man:jail[2] API 创建的 jail 维护所需的管理信息，包括每个 jail 的主机名、IP 地址及相关设置。由于指向该结构实例的指针由多个凭证结构共享，因此该结构采用引用计数。单个互斥锁 `pr_mtx` 保护引用计数以及 `struct jail` 内所有可变变量的读写访问。有些变量仅在创建 jail 时设置，持有 `struct prison` 的有效引用即可读取这些值。每个字段的具体加锁要求通过 [.filename]#sys/jail.h# 中的注释说明。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:175
@@ -843,13 +850,14 @@ msgstr "MAC 框架"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:178
+#, fuzzy
 msgid ""
 "The TrustedBSD MAC Framework maintains data in a variety of kernel objects, "
 "in the form of `struct label`. In general, labels in kernel objects are "
 "protected by the same lock as the remainder of the kernel object. For "
 "example, the `v_label` label in `struct vnode` is protected by the vnode "
 "lock on the vnode."
-msgstr ""
+msgstr "TrustedBSD MAC 框架以 `struct label` 的形式在各种内核对象中维护数据。通常，内核对象中的标签受与该对象其余部分相同的锁保护。例如，`struct vnode` 中的 `v_label` 标签受该 vnode 的 vnode 锁保护。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:180
@@ -933,6 +941,7 @@ msgstr "Newbus 设备树"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:190
+#, fuzzy
 msgid ""
 "The newbus system will have one sx lock. Readers will hold a shared (read) "
 "lock (man:sx_slock[9]) and writers will hold an exclusive (write) lock (man:"
@@ -942,7 +951,7 @@ msgid ""
 "place (e.g., man:device_get_softc[9]). There will be relatively few changes "
 "to the newbus data structures, so a single lock should be sufficient and not "
 "impose a performance penalty."
-msgstr ""
+msgstr "newbus 系统将使用一个 sx 锁。读者持有共享（读）锁（man:sx_slock[9]），写者持有独占（写）锁（man:sx_xlock[9]）。内部函数完全不加锁；对外可见的函数会按需加锁。对于竞态胜负无关紧要的项目不会加锁，因为它们往往会在各处被读取（例如 man:device_get_softc[9]）。newbus 数据结构的变动相对较少，因此单个锁应该足够，且不会造成性能损失。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:191
@@ -953,8 +962,9 @@ msgstr "管道"
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:194
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:216
+#, fuzzy
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:195
@@ -1002,10 +1012,11 @@ msgstr "调度"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:210
+#, fuzzy
 msgid ""
 "Lots of references to `sched_lock` and notes pointing at specific primitives "
 "and related magic elsewhere in the document."
-msgstr ""
+msgstr "文档中多处引用了 `sched_lock`，并有指向特定原语及其他位置相关机制的说明。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:211
@@ -1032,6 +1043,7 @@ msgstr "SIGIO"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:220
+#, fuzzy
 msgid ""
 "The SIGIO service permits processes to request the delivery of a SIGIO "
 "signal to its process group when the read/write status of specified file "
@@ -1043,10 +1055,11 @@ msgid ""
 "protected by a global mutex, `sigio_lock`. Callers to SIGIO maintenance "
 "functions must pass in this field \"by reference\" so that local register "
 "copies of the field are not made when unprotected by the lock."
-msgstr ""
+msgstr "SIGIO 服务允许进程在指定文件描述符的读写状态发生变化时，请求向其进程组发送 SIGIO 信号。对于任何给定的内核对象，最多只允许一个进程或进程组注册接收 SIGIO；该进程或进程组称为所有者。每个支持 SIGIO 注册的对象都包含一个指针字段：对象未注册时该字段为 `NULL`，已注册时则指向描述注册信息的 `struct sigio`。此字段受全局互斥锁 `sigio_lock` 保护。调用 SIGIO 维护函数时，必须将此字段以“引用”形式传入，以免在未持有锁时创建该字段的本地注册副本。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:222
+#, fuzzy
 msgid ""
 "One `struct sigio` is allocated for each registered object associated with "
 "any process or process group, and contains back-pointers to the object, "
@@ -1064,7 +1077,7 @@ msgid ""
 "generally possible through use of an elevated reference count on the "
 "structure, such as reliance on a file descriptor reference to a pipe during "
 "a pipe operation."
-msgstr ""
+msgstr "每个与进程或进程组关联的已注册对象都会分配一个 `struct sigio`，其中包含指向对象和所有者的反向指针、信号信息、凭证以及注册的一般状态。每个进程或进程组都包含一个已注册 `struct sigio` 结构的列表：进程使用 `p_sigiolst`，进程组使用 `pg_sigiolst`。这些列表分别受进程锁或进程组锁保护。每个 `struct sigio` 中的大多数字段在注册期间保持不变，例外是将 `struct sigio` 链接到进程或进程组列表中的 `sio_pgsigio` 字段。通常，实现支持 SIGIO 的新内核对象时，应避免在调用 SIGIO 支持函数（例如 `fsetown` 或 `funsetown`）期间持有结构锁，以免需要定义结构锁与全局 SIGIO 锁之间的加锁顺序。通常，可以通过提高结构的引用计数来做到这一点，例如在管道操作期间依赖文件描述符引用。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:223
@@ -1521,8 +1534,9 @@ msgstr "其它问题/话题"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:298
+#, fuzzy
 msgid "Should we pass an interlock into `sema_wait`?"
-msgstr ""
+msgstr "我们是否应该向 `sema_wait` 传入一个互斥锁？"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:300
@@ -1565,8 +1579,9 @@ msgstr ""
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:314
+#, fuzzy
 msgid "See Also operation."
-msgstr ""
+msgstr "另请参阅 operation。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:315
@@ -1584,8 +1599,9 @@ msgstr "线程等待锁、 资源或条件时被阻塞。这一术语也因此�
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:319
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:356
+#, fuzzy
 msgid "See Also sleep."
-msgstr ""
+msgstr "另请参阅 sleep。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:320
@@ -1595,10 +1611,11 @@ msgstr "临界区"
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:322
+#, fuzzy
 msgid ""
 "A section of code that is not allowed to be preempted. A critical section is "
 "entered and exited using the man:critical_enter[9] API."
-msgstr ""
+msgstr "不允许被抢占的一段代码。使用 man:critical_enter[9] API 进入和退出临界区。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:323
@@ -1613,8 +1630,9 @@ msgstr "表示与机器/平台有关。"
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:327
+#, fuzzy
 msgid "See Also MI."
-msgstr ""
+msgstr "另请参阅 MI。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:328
@@ -1640,8 +1658,9 @@ msgstr "表示与机器/平台无关。"
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:335
+#, fuzzy
 msgid "See Also MD."
-msgstr ""
+msgstr "另请参阅 MD。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:336
@@ -1651,8 +1670,9 @@ msgstr "操作"
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:338
+#, fuzzy
 msgid "See memory operation."
-msgstr ""
+msgstr "参见 memory operation。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:339
@@ -1686,8 +1706,9 @@ msgstr "一种高优先级的内核线程。 目前，只有中断线程属于�
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:346
+#, fuzzy
 msgid "See Also thread."
-msgstr ""
+msgstr "另请参阅 thread。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:347
@@ -1697,15 +1718,17 @@ msgstr "睡眠"
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:349
+#, fuzzy
 msgid ""
 "A thread is asleep when it is blocked on a condition variable or a sleep "
 "queue via msleep or tsleep."
-msgstr ""
+msgstr "线程通过 msleep 或 tsleep 在条件变量或睡眠队列上阻塞时，即处于休眠状态。"
 
 #. type: .glosslist
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:351
+#, fuzzy
 msgid "See Also block."
-msgstr ""
+msgstr "另请参阅 block。"
 
 #. type: Labeled list
 #: documentation/content/en/books/arch-handbook/smp/_index.adoc:352

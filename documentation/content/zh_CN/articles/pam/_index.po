@@ -19,9 +19,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/pam/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A guide to the PAM system and modules under FreeBSD"
-msgstr ""
+msgstr "FreeBSD 下 PAM 系统和模块指南"
 
 #. Copyright (c) 2001-2003 Networks Associates Technology, Inc.
 #. All rights reserved.
@@ -65,12 +65,13 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:82
+#, fuzzy
 msgid ""
 "This article describes the underlying principles and mechanisms of the "
 "Pluggable Authentication Modules (PAM) library, and explains how to "
 "configure PAM, how to integrate PAM into applications, and how to write PAM "
 "modules."
-msgstr ""
+msgstr "本文介绍可插拔身份验证模块（PAM）库的基本原理和机制，并说明如何配置 PAM、如何将 PAM 集成到应用程序中，以及如何编写 PAM 模块。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:84
@@ -85,15 +86,17 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:91
+#, fuzzy
 msgid ""
 "The Pluggable Authentication Modules (PAM) library is a generalized API for "
 "authentication-related services which allows a system administrator to add "
 "new authentication methods simply by installing new PAM modules, and to "
 "modify authentication policies by editing configuration files."
-msgstr ""
+msgstr "可插拔身份验证模块（PAM）库是一个通用的身份验证相关服务 API，系统管理员只需安装新的 PAM 模块即可添加新的身份验证方法，并可通过编辑配置文件来修改身份验证策略。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:95
+#, fuzzy
 msgid ""
 "PAM was defined and developed in 1995 by Vipin Samar and Charlie Lai of Sun "
 "Microsystems, and has not changed much since.  In 1997, the Open Group "
@@ -101,30 +104,32 @@ msgid ""
 "standardized the PAM API and added extensions for single (or rather "
 "integrated) sign-on.  At the time of this writing, this specification has "
 "not yet been adopted as a standard."
-msgstr ""
+msgstr "PAM 由 Sun Microsystems 的 Vipin Samar 和 Charlie Lai 于 1995 年定义并开发，此后变化不大。1997 年，Open Group 发布了 X/Open 单点登录（XSSO）初步规范，该规范对 PAM API 进行了标准化，并添加了单点（或者更准确地说，集成式）登录扩展。撰写本文时，该规范尚未被采纳为标准。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:97
+#, fuzzy
 msgid ""
 "Although this article focuses primarily on FreeBSD 5.x, which uses OpenPAM, "
 "it should be equally applicable to FreeBSD 4.x, which uses Linux-PAM, and "
 "other operating systems such as Linux and Solaris(TM)."
-msgstr ""
+msgstr "虽然本文主要讨论使用 OpenPAM 的 FreeBSD 5.x，但本文同样适用于使用 Linux-PAM 的 FreeBSD 4.x，以及 Linux 和 Solaris(TM) 等其他操作系统。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Terms and Conventions"
-msgstr ""
+msgstr "术语和约定"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Definitions"
-msgstr ""
+msgstr "定义"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:109
+#, fuzzy
 msgid ""
 "The terminology surrounding PAM is rather confused.  Neither Samar and Lai's "
 "original paper nor the XSSO specification made any attempt at formally "
@@ -136,284 +141,305 @@ msgid ""
 "it is in this author's opinion by no means perfect.  What follows is an "
 "attempt, heavily inspired by Morgan, to define precise and unambiguous terms "
 "for all actors and entities involved in PAM."
-msgstr ""
+msgstr "PAM 相关术语相当混乱。Samar 和 Lai 的原始论文以及 XSSO 规范都没有尝试正式定义 PAM 中涉及的各种参与者和实体的术语；它们使用的术语（虽未定义）有时还会造成误导和歧义。1999 年，Linux-PAM 的作者 Andrew G. Morgan 撰写了一篇白皮书，首次尝试建立一套一致且明确的术语。Morgan 对术语的选择是一个巨大的进步，但在本文作者看来仍不够完善。下面将尝试借鉴 Morgan 的思路，为 PAM 中涉及的所有参与者和实体定义精确、明确的术语。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "account"
-msgstr ""
+msgstr "账户"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:112
+#, fuzzy
 msgid "The set of credentials the applicant is requesting from the arbitrator."
-msgstr ""
+msgstr "申请者向仲裁者请求的凭据集合。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "applicant"
-msgstr ""
+msgstr "申请者"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:115
+#, fuzzy
 msgid "The user or entity requesting authentication."
-msgstr ""
+msgstr "请求身份验证的用户或实体。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "arbitrator"
-msgstr ""
+msgstr "仲裁者"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:118
+#, fuzzy
 msgid ""
 "The user or entity who has the privileges necessary to verify the "
 "applicant's credentials and the authority to grant or deny the request."
-msgstr ""
+msgstr "拥有验证申请者凭据所需权限，并有权批准或拒绝请求的用户或实体。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "chain"
-msgstr ""
+msgstr "链"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:122
+#, fuzzy
 msgid ""
 "A sequence of modules that will be invoked in response to a PAM request.  "
 "The chain includes information about the order in which to invoke the "
 "modules, what arguments to pass to them, and how to interpret the results."
-msgstr ""
+msgstr "响应 PAM 请求时将调用的模块序列。链中包含模块的调用顺序、传递给模块的参数，以及如何解释模块返回结果等信息。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "client"
-msgstr ""
+msgstr "客户端"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:125
+#, fuzzy
 msgid ""
 "The application responsible for initiating an authentication request on "
 "behalf of the applicant and for obtaining the necessary authentication "
 "information from him."
-msgstr ""
+msgstr "代表申请者发起身份验证请求，并从申请者处获取必要身份验证信息的应用程序。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "facility"
-msgstr ""
+msgstr "功能类别"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:128
+#, fuzzy
 msgid ""
 "One of the four basic groups of functionality provided by PAM: "
 "authentication, account management, session management and authentication "
 "token update."
-msgstr ""
+msgstr "PAM 提供的四种基本功能类别之一：身份验证、账户管理、会话管理和身份验证令牌更新。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "module"
-msgstr ""
+msgstr "模块"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:131
+#, fuzzy
 msgid ""
 "A collection of one or more related functions implementing a particular "
 "authentication facility, gathered into a single (normally dynamically "
 "loadable) binary file and identified by a single name."
-msgstr ""
+msgstr "实现某种特定身份验证功能的一个或多个相关函数的集合，通常汇集在单个可动态加载的二进制文件中，并由一个名称标识。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "policy"
-msgstr ""
+msgstr "策略"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:135
+#, fuzzy
 msgid ""
 "The complete set of configuration statements describing how to handle PAM "
 "requests for a particular service.  A policy normally consists of four "
 "chains, one for each facility, though some services do not use all four "
 "facilities."
-msgstr ""
+msgstr "描述如何处理特定服务的 PAM 请求的完整配置语句集合。策略通常由四条链组成，每种功能类别一条，不过有些服务不会使用全部四种功能类别。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "server"
-msgstr ""
+msgstr "服务器"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:138
+#, fuzzy
 msgid ""
 "The application acting on behalf of the arbitrator to converse with the "
 "client, retrieve authentication information, verify the applicant's "
 "credentials and grant or deny requests."
-msgstr ""
+msgstr "代表仲裁者运行、与客户端通信、获取身份验证信息、验证申请者凭据并批准或拒绝请求的应用程序。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "service"
-msgstr ""
+msgstr "服务"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:142
+#, fuzzy
 msgid ""
 "A class of servers providing similar or related functionality and requiring "
 "similar authentication.  PAM policies are defined on a per-service basis, so "
 "all servers that claim the same service name will be subject to the same "
 "policy."
-msgstr ""
+msgstr "提供类似或相关功能且需要类似身份验证的一类服务器。PAM 策略按服务定义，因此所有声明相同服务名称的服务器都将受同一策略约束。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "session"
-msgstr ""
+msgstr "会话"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:146
+#, fuzzy
 msgid ""
 "The context within which service is rendered to the applicant by the "
 "server.  One of PAM's four facilities, session management, is concerned "
 "exclusively with setting up and tearing down this context."
-msgstr ""
+msgstr "服务器向申请者提供服务的上下文。PAM 的四种功能类别之一——会话管理，专门负责建立和销毁此上下文。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "token"
-msgstr ""
+msgstr "令牌"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:149
+#, fuzzy
 msgid ""
 "A chunk of information associated with the account, such as a password or "
 "passphrase, which the applicant must provide to prove his identity."
-msgstr ""
+msgstr "与账户关联的一段信息，例如密码或口令，申请者必须提供它以证明自己的身份。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "transaction"
-msgstr ""
+msgstr "事务"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:152
+#, fuzzy
 msgid ""
 "A sequence of requests from the same applicant to the same instance of the "
 "same server, beginning with authentication and session set-up and ending "
 "with session tear-down."
-msgstr ""
+msgstr "同一申请者向同一服务器实例发出的一系列请求，从身份验证和会话建立开始，到会话销毁结束。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Usage Examples"
-msgstr ""
+msgstr "使用示例"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:157
+#, fuzzy
 msgid ""
 "This section aims to illustrate the meanings of some of the terms defined "
 "above by way of a handful of simple examples."
-msgstr ""
+msgstr "本节通过几个简单示例说明上述部分术语的含义。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Client and Server Are One"
-msgstr ""
+msgstr "客户端和服务器是同一个"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pam/_index.adoc:161
+#, fuzzy
 msgid "This simple example shows `alice` man:su[1]'ing to `root`."
-msgstr ""
+msgstr "这个简单示例展示了 `alice` 使用 man:su[1] 切换到 `root`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% whoami\n"
 "alice\n"
-msgstr ""
+msgstr "% whoami\\nalice\\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% ls -l `which su`\n"
 "-r-sr-xr-x  1 root  wheel  10744 Dec  6 19:06 /usr/bin/su\n"
-msgstr ""
+msgstr "% ls -l `which su`\\n-r-sr-xr-x  1 root  wheel  10744 Dec  6 19:06 /usr/bin/su\\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% su -\n"
 "Password: xi3kiune\n"
 "# whoami\n"
 "root\n"
-msgstr ""
+msgstr "% su -\\nPassword: xi3kiune\\n# whoami\\nroot\\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:177
+#, fuzzy
 msgid "The applicant is `alice`."
-msgstr ""
+msgstr "申请者是 `alice`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:178
+#, fuzzy
 msgid "The account is `root`."
-msgstr ""
+msgstr "账户是 `root`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:179
+#, fuzzy
 msgid "The man:su[1] process is both client and server."
-msgstr ""
+msgstr "man:su[1] 进程既是客户端，也是服务器。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:180
+#, fuzzy
 msgid "The authentication token is `xi3kiune`."
-msgstr ""
+msgstr "身份验证令牌是 `xi3kiune`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:181
+#, fuzzy
 msgid "The arbitrator is `root`, which is why man:su[1] is setuid `root`."
-msgstr ""
+msgstr "仲裁者是 `root`，这就是 man:su[1] 被设置为 setuid `root` 的原因。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Client and Server Are Separate"
-msgstr ""
+msgstr "客户端和服务器是分开的"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:186
+#, fuzzy
 msgid ""
 "The example below shows `eve` try to initiate an man:ssh[1] connection to "
 "`login.example.com`, ask to log in as `bob`, and succeed.  Bob should have "
 "chosen a better password!"
-msgstr ""
+msgstr "下面的示例展示了 `eve` 尝试与 `login.example.com` 建立 man:ssh[1] 连接，请求以 `bob` 的身份登录，并成功登录。Bob 本该选一个更好的密码！"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% whoami\n"
 "eve\n"
-msgstr ""
+msgstr "% whoami\\neve\\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% ssh bob@login.example.com\n"
 "bob@login.example.com's password:\n"
@@ -422,7 +448,7 @@ msgid ""
 "Copyright (c) 1980, 1983, 1986, 1988, 1990, 1991, 1993, 1994\n"
 "\tThe Regents of the University of California.  All rights reserved.\n"
 "FreeBSD 4.4-STABLE (LOGIN) 4: Tue Nov 27 18:10:34 PST 2001\n"
-msgstr ""
+msgstr "% ssh bob@login.example.com\\nbob@login.example.com's password:\\n% god\\nLast login: Thu Oct 11 09:52:57 2001 from 192.168.0.1\\nCopyright (c) 1980, 1983, 1986, 1988, 1990, 1991, 1993, 1994\\n\\tThe Regents of the University of California.  All rights reserved.\\nFreeBSD 4.4-STABLE (LOGIN) 4: Tue Nov 27 18:10:34 PST 2001\\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:202
@@ -434,48 +460,55 @@ msgstr "欢迎使用 FreeBSD！\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:206
+#, fuzzy
 msgid "The applicant is `eve`."
-msgstr ""
+msgstr "申请者是 `eve`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:207
+#, fuzzy
 msgid "The client is Eve's man:ssh[1] process."
-msgstr ""
+msgstr "客户端是 Eve 的 man:ssh[1] 进程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:208
+#, fuzzy
 msgid "The server is the man:sshd[8] process on `login.example.com`"
-msgstr ""
+msgstr "服务器是 `login.example.com` 上的 man:sshd[8] 进程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:209
+#, fuzzy
 msgid "The account is `bob`."
-msgstr ""
+msgstr "账户是 `bob`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:210
+#, fuzzy
 msgid "The authentication token is `god`."
-msgstr ""
+msgstr "身份验证令牌是 `god`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:211
+#, fuzzy
 msgid "Although this is not shown in this example, the arbitrator is `root`."
-msgstr ""
+msgstr "虽然本例中没有显示，但仲裁者是 `root`。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sample Policy"
-msgstr ""
+msgstr "策略示例"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:215
+#, fuzzy
 msgid "The following is FreeBSD's default policy for `sshd`:"
-msgstr ""
+msgstr "以下是 FreeBSD 对 `sshd` 的默认策略："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sshd\tauth\t\trequired\tpam_nologin.so\tno_warn\n"
 "sshd\tauth\t\trequired\tpam_unix.so\tno_warn try_first_pass\n"
@@ -483,146 +516,160 @@ msgid ""
 "sshd\taccount\t\trequired\tpam_unix.so\n"
 "sshd\tsession\t\trequired\tpam_lastlog.so\tno_fail\n"
 "sshd\tpassword\trequired\tpam_permit.so\n"
-msgstr ""
+msgstr "sshd\\tauth\\t\\trequired\\tpam_nologin.so\\tno_warn\\nsshd\\tauth\\t\\trequired\\tpam_unix.so\\tno_warn try_first_pass\\nsshd\\taccount\\t\\trequired\\tpam_login_access.so\\nsshd\\taccount\\t\\trequired\\tpam_unix.so\\nsshd\\tsession\\t\\trequired\\tpam_lastlog.so\\tno_fail\\nsshd\\tpassword\\trequired\\tpam_permit.so\\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:227
+#, fuzzy
 msgid ""
 "This policy applies to the `sshd` service (which is not necessarily "
 "restricted to the man:sshd[8] server.)"
-msgstr ""
+msgstr "此策略适用于 `sshd` 服务（该服务不一定仅限于 man:sshd[8] 服务器）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:228
+#, fuzzy
 msgid "`auth`, `account`, `session` and `password` are facilities."
-msgstr ""
+msgstr "`auth`、`account`、`session` 和 `password` 是功能类别。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:229
+#, fuzzy
 msgid ""
 "[.filename]#pam_nologin.so#, [.filename]#pam_unix.so#, [."
 "filename]#pam_login_access.so#, [.filename]#pam_lastlog.so# and [."
 "filename]#pam_permit.so# are modules. It is clear from this example that [."
 "filename]#pam_unix.so# provides at least two facilities (authentication and "
 "account management.)"
-msgstr ""
+msgstr "[.filename]#pam_nologin.so#、[.filename]#pam_unix.so#、[.filename]#pam_login_access.so#、[.filename]#pam_lastlog.so# 和 [.filename]#pam_permit.so# 都是模块。从本例可以清楚看出，[.filename]#pam_unix.so# 至少提供两种功能类别（身份验证和账户管理）。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM Essentials"
-msgstr ""
+msgstr "PAM 基础知识"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Facilities and Primitives"
-msgstr ""
+msgstr "功能类别和基本操作"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:237
+#, fuzzy
 msgid ""
 "The PAM API offers six different authentication primitives grouped in four "
 "facilities, which are described below."
-msgstr ""
+msgstr "PAM API 提供六种不同的身份验证基本操作，分属以下四种功能类别。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`auth`"
-msgstr ""
+msgstr "`auth`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:241
+#, fuzzy
 msgid ""
 "_Authentication._ This facility concerns itself with authenticating the "
 "applicant and establishing the account credentials.  It provides two "
 "primitives:"
-msgstr ""
+msgstr "__身份验证。__ 此功能类别负责验证申请者的身份并建立账户凭据，包含两种基本操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:243
+#, fuzzy
 msgid ""
 "man:pam_authenticate[3] authenticates the applicant, usually by requesting "
 "an authentication token and comparing it with a value stored in a database "
 "or obtained from an authentication server."
-msgstr ""
+msgstr "man:pam_authenticate[3] 用于验证申请者的身份，通常通过请求身份验证令牌，并将其与数据库中存储的值或从身份验证服务器获取的值进行比较来完成。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:244
+#, fuzzy
 msgid ""
 "man:pam_setcred[3] establishes account credentials such as user ID, group "
 "membership and resource limits."
-msgstr ""
+msgstr "man:pam_setcred[3] 用于建立账户凭据，例如用户 ID、组成员身份和资源限制。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`account`"
-msgstr ""
+msgstr "`account`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:248
+#, fuzzy
 msgid ""
 "_Account management._ This facility handles non-authentication-related "
 "issues of account availability, such as access restrictions based on the "
 "time of day or the server's work load.  It provides a single primitive:"
-msgstr ""
+msgstr "__账户管理。__ 此功能类别处理与身份验证无关的账户可用性问题，例如基于一天中的时段或服务器负载的访问限制。它包含一种基本操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:250
+#, fuzzy
 msgid "man:pam_acct_mgmt[3] verifies that the requested account is available."
-msgstr ""
+msgstr "man:pam_acct_mgmt[3] 用于验证所请求的账户是否可用。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`session`"
-msgstr ""
+msgstr "`session`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:254
+#, fuzzy
 msgid ""
 "_Session management._ This facility handles tasks associated with session "
 "set-up and tear-down, such as login accounting.  It provides two primitives:"
-msgstr ""
+msgstr "__会话管理。__ 此功能类别处理与会话建立和销毁相关的任务，例如登录记账。它包含两种基本操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:256
+#, fuzzy
 msgid ""
 "man:pam_open_session[3] performs tasks associated with session set-up: add "
 "an entry in the [.filename]#utmp# and [.filename]#wtmp# databases, start an "
 "SSH agent, etc."
-msgstr ""
+msgstr "man:pam_open_session[3] 执行与建立会话相关的任务：在 [.filename]#utmp# 和 [.filename]#wtmp# 数据库中添加条目、启动 SSH 代理等。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:257
+#, fuzzy
 msgid ""
 "man:pam_close_session[3] performs tasks associated with session tear-down: "
 "add an entry in the [.filename]#utmp# and [.filename]#wtmp# databases, stop "
 "the SSH agent, etc."
-msgstr ""
+msgstr "man:pam_close_session[3] 执行与销毁会话相关的任务：在 [.filename]#utmp# 和 [.filename]#wtmp# 数据库中添加条目、停止 SSH 代理等。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`password`"
-msgstr ""
+msgstr "`password`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:261
+#, fuzzy
 msgid ""
 "_Password management._ This facility is used to change the authentication "
 "token associated with an account, either because it has expired or because "
 "the user wishes to change it.  It provides a single primitive:"
-msgstr ""
+msgstr "__密码管理。__ 此功能类别用于更改与账户关联的身份验证令牌，原因可能是令牌已过期，也可能是用户希望更改它。它包含一种基本操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:263
+#, fuzzy
 msgid ""
 "man:pam_chauthtok[3] changes the authentication token, optionally verifying "
 "that it is sufficiently hard to guess, has not been used previously, etc."
-msgstr ""
+msgstr "man:pam_chauthtok[3] 用于更改身份验证令牌，并可选择验证其是否足够难以猜测、是否以前未曾使用过等。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:265
@@ -632,22 +679,24 @@ msgstr "模块"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:270
+#, fuzzy
 msgid ""
 "Modules are a very central concept in PAM; after all, they are the \"M\" in "
 "\"PAM\".  A PAM module is a self-contained piece of program code that "
 "implements the primitives in one or more facilities for one particular "
 "mechanism; possible mechanisms for the authentication facility, for "
 "instance, include the UNIX(R) password database, NIS, LDAP and Radius."
-msgstr ""
+msgstr "模块是 PAM 的核心概念；毕竟，它们就是“PAM”中的“M”。PAM 模块是一段独立的程序代码，用于实现某种特定机制在一个或多个功能类别中的基本操作；例如，身份验证功能类别可能使用的机制包括 UNIX(R) 密码数据库、NIS、LDAP 和 Radius。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Module Naming"
-msgstr ""
+msgstr "模块命名"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:277
+#, fuzzy
 msgid ""
 "FreeBSD implements each mechanism in a single module, named `pam_mechanism."
 "so` (for instance, `pam_unix.so` for the UNIX(R) mechanism.)  Other "
@@ -655,50 +704,54 @@ msgid ""
 "include the facility name as well as the mechanism name in the module name.  "
 "To name one example, Solaris(TM) has a `pam_dial_auth.so.1` module which is "
 "commonly used to authenticate dialup users."
-msgstr ""
+msgstr "FreeBSD 为每种机制分别实现一个模块，命名为 `pam_mechanism.so`（例如，UNIX(R) 机制对应 `pam_unix.so`）。其他实现有时会为不同功能类别分别提供模块，并在模块名称中同时包含功能类别名称和机制名称。例如，Solaris(TM) 提供 `pam_dial_auth.so.1` 模块，通常用于验证拨号用户的身份。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Module Versioning"
-msgstr ""
+msgstr "模块版本控制"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:283
+#, fuzzy
 msgid ""
 "FreeBSD's original PAM implementation, based on Linux-PAM, did not use "
 "version numbers for PAM modules.  This would commonly cause problems with "
 "legacy applications, which might be linked against older versions of the "
 "system libraries, as there was no way to load a matching version of the "
 "required modules."
-msgstr ""
+msgstr "FreeBSD 最初基于 Linux-PAM 的 PAM 实现没有为 PAM 模块使用版本号。这通常会给旧版应用程序带来问题：它们可能链接到较旧版本的系统库，而当时无法加载与之匹配的所需模块。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:286
+#, fuzzy
 msgid ""
 "OpenPAM, on the other hand, looks for modules that have the same version "
 "number as the PAM library (currently 2), and only falls back to an "
 "unversioned module if no versioned module could be loaded.  Thus legacy "
 "modules can be provided for legacy applications, while allowing new (or "
 "newly built) applications to take advantage of the most recent modules."
-msgstr ""
+msgstr "而 OpenPAM 会查找与 PAM 库版本号相同的模块（当前为 2），只有在无法加载带版本号的模块时才会退而使用不带版本号的模块。因此，可以为旧版应用程序提供旧版模块，同时允许新的（或新构建的）应用程序使用最新模块。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:288
+#, fuzzy
 msgid ""
 "Although Solaris(TM) PAM modules commonly have a version number, they are "
 "not truly versioned, because the number is a part of the module name and "
 "must be included in the configuration."
-msgstr ""
+msgstr "Solaris(TM) PAM 模块通常带有版本号，但它们并非真正进行了版本控制，因为该编号是模块名称的一部分，必须包含在配置中。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chains and Policies"
-msgstr ""
+msgstr "链和策略"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:295
+#, fuzzy
 msgid ""
 "When a server initiates a PAM transaction, the PAM library tries to load a "
 "policy for the service specified in the man:pam_start[3] call.  The policy "
@@ -706,111 +759,121 @@ msgid ""
 "a configuration file.  This is the other central concept in PAM: the "
 "possibility for the admin to tune the system security policy (in the wider "
 "sense of the word) simply by editing a text file."
-msgstr ""
+msgstr "服务器发起 PAM 事务时，PAM 库会尝试加载 man:pam_start[3] 调用中指定服务的策略。策略规定了如何处理身份验证请求，并在配置文件中定义。这是 PAM 的另一个核心概念：管理员只需编辑文本文件，就能调整系统安全策略（广义而言）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:298
+#, fuzzy
 msgid ""
 "A policy consists of four chains, one for each of the four PAM facilities.  "
 "Each chain is a sequence of configuration statements, each specifying a "
 "module to invoke, some (optional) parameters to pass to the module, and a "
 "control flag that describes how to interpret the return code from the module."
-msgstr ""
+msgstr "策略由四条链组成，分别对应四种 PAM 功能类别。每条链都是一系列配置语句，每条语句都指定要调用的模块、要传递给模块的（可选）参数，以及用于说明如何解释模块返回码的控制标志。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:301
+#, fuzzy
 msgid ""
 "Understanding the control flags is essential to understanding PAM "
 "configuration files.  There are five different control flags:"
-msgstr ""
+msgstr "理解控制标志是理解 PAM 配置文件的关键。控制标志共有五种："
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`binding`"
-msgstr ""
+msgstr "`binding`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:305
+#, fuzzy
 msgid ""
 "If the module succeeds and no earlier module in the chain has failed, the "
 "chain is immediately terminated and the request is granted.  If the module "
 "fails, the rest of the chain is executed, but the request is ultimately "
 "denied."
-msgstr ""
+msgstr "如果模块成功，且链中此前没有模块失败，则立即终止该链并批准请求。如果模块失败，则继续执行链中的其余模块，但最终会拒绝请求。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:307
+#, fuzzy
 msgid ""
 "This control flag was introduced by Sun in Solaris(TM) 9 (SunOS(TM) 5.9), "
 "and is also supported by OpenPAM."
-msgstr ""
+msgstr "此控制标志由 Sun 在 Solaris(TM) 9（SunOS(TM) 5.9）中引入，OpenPAM 也支持此标志。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`required`"
-msgstr ""
+msgstr "`required`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:310
+#, fuzzy
 msgid ""
 "If the module succeeds, the rest of the chain is executed, and the request "
 "is granted unless some other module fails.  If the module fails, the rest of "
 "the chain is also executed, but the request is ultimately denied."
-msgstr ""
+msgstr "如果模块成功，则继续执行链中的其余模块；除非其他模块失败，否则请求将获准。如果模块失败，链中的其余模块仍会执行，但最终会拒绝请求。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`requisite`"
-msgstr ""
+msgstr "`requisite`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:314
+#, fuzzy
 msgid ""
 "If the module succeeds, the rest of the chain is executed, and the request "
 "is granted unless some other module fails.  If the module fails, the chain "
 "is immediately terminated and the request is denied."
-msgstr ""
+msgstr "如果模块成功，则继续执行链中的其余模块；除非其他模块失败，否则请求将获准。如果模块失败，则立即终止链并拒绝请求。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:315
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`sufficient`"
-msgstr ""
+msgstr "`sufficient`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:318
+#, fuzzy
 msgid ""
 "If the module succeeds and no earlier module in the chain has failed, the "
 "chain is immediately terminated and the request is granted.  If the module "
 "fails, the module is ignored and the rest of the chain is executed."
-msgstr ""
+msgstr "如果模块成功，且链中此前没有模块失败，则立即终止链并批准请求。如果模块失败，则忽略该模块并继续执行链中的其余模块。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:320
+#, fuzzy
 msgid ""
 "As the semantics of this flag may be somewhat confusing, especially when it "
 "is used for the last module in a chain, it is recommended that the `binding` "
 "control flag be used instead if the implementation supports it."
-msgstr ""
+msgstr "此标志的语义可能有些令人困惑，尤其是在将其用于链中的最后一个模块时。因此，如果实现支持 `binding` 控制标志，建议改用该标志。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`optional`"
-msgstr ""
+msgstr "`optional`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:323
+#, fuzzy
 msgid ""
 "The module is executed, but its result is ignored.  If all modules in a "
 "chain are marked `optional`, all requests will always be granted."
-msgstr ""
+msgstr "模块会执行，但其结果会被忽略。如果链中的所有模块都标记为 `optional`，则所有请求始终都会获准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:326
+#, fuzzy
 msgid ""
 "When a server invokes one of the six PAM primitives, PAM retrieves the chain "
 "for the facility the primitive belongs to, and invokes each of the modules "
@@ -819,10 +882,11 @@ msgid ""
 "`binding` or `sufficient` module succeeded, or because a `requisite` module "
 "failed.)  The request is granted if and only if at least one module was "
 "invoked, and all non-optional modules succeeded."
-msgstr ""
+msgstr "服务器调用六个 PAM 原语之一时，PAM 会检索该原语所属 facility 的链，并按列出的顺序调用链中的每个模块，直到到达链尾，或确定无需继续处理（因为 `binding` 或 `sufficient` 模块成功，或 `requisite` 模块失败）。当且仅当至少调用了一个模块，且所有非 `optional` 模块都成功时，请求才会获准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:330
+#, fuzzy
 msgid ""
 "Note that it is possible, though not very common, to have the same module "
 "listed several times in the same chain.  For instance, a module that looks "
@@ -830,147 +894,162 @@ msgid ""
 "times with different parameters specifying different directory servers to "
 "contact.  PAM treat different occurrences of the same module in the same "
 "chain as different, unrelated modules."
-msgstr ""
+msgstr "请注意，虽然不常见，但同一模块可能会在同一条链中列出多次。例如，可以多次调用一个在目录服务器中查找用户名和密码的模块，每次使用不同的参数来指定要联系的目录服务器。PAM 将同一模块在同一条链中的不同实例视为不同且互不相关的模块。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:332
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Transactions"
-msgstr ""
+msgstr "事务"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:336
+#, fuzzy
 msgid ""
 "The lifecycle of a typical PAM transaction is described below.  Note that if "
 "any of these steps fails, the server should report a suitable error message "
 "to the client and abort the transaction."
-msgstr ""
+msgstr "下面介绍典型 PAM 事务的生命周期。请注意，如果其中任何步骤失败，服务器都应向客户端报告适当的错误消息并中止事务。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:338
+#, fuzzy
 msgid ""
 "If necessary, the server obtains arbitrator credentials through a mechanism "
 "independent of PAM-most commonly by virtue of having been started by `root`, "
 "or of being setuid `root`."
-msgstr ""
+msgstr "如有必要，服务器会通过独立于 PAM 的机制获取仲裁者凭据，最常见的情况是服务器以 `root` 身份启动，或设置了 setuid `root`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:339
+#, fuzzy
 msgid ""
 "The server calls man:pam_start[3] to initialize the PAM library and specify "
 "its service name and the target account, and register a suitable "
 "conversation function."
-msgstr ""
+msgstr "服务器调用 man:pam_start[3] 来初始化 PAM 库并指定服务名称和目标账户，同时注册适当的对话函数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:340
+#, fuzzy
 msgid ""
 "The server obtains various information relating to the transaction (such as "
 "the applicant's user name and the name of the host the client runs on) and "
 "submits it to PAM using man:pam_set_item[3]."
-msgstr ""
+msgstr "服务器获取与事务相关的各种信息（例如申请者的用户名以及客户端运行所在主机的名称），并使用 man:pam_set_item[3] 将这些信息提交给 PAM。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:341
+#, fuzzy
 msgid "The server calls man:pam_authenticate[3] to authenticate the applicant."
-msgstr ""
+msgstr "服务器调用 man:pam_authenticate[3] 对申请者进行身份验证。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:342
+#, fuzzy
 msgid ""
 "The server calls man:pam_acct_mgmt[3] to verify that the requested account "
 "is available and valid. If the password is correct but has expired, man:"
 "pam_acct_mgmt[3] will return `PAM_NEW_AUTHTOK_REQD` instead of `PAM_SUCCESS`."
-msgstr ""
+msgstr "服务器调用 man:pam_acct_mgmt[3]，以验证所请求的账户是否可用且有效。如果密码正确但已过期，man:pam_acct_mgmt[3] 将返回 `PAM_NEW_AUTHTOK_REQD`，而不是 `PAM_SUCCESS`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:343
+#, fuzzy
 msgid ""
 "If the previous step returned `PAM_NEW_AUTHTOK_REQD`, the server now calls "
 "man:pam_chauthtok[3] to force the client to change the authentication token "
 "for the requested account."
-msgstr ""
+msgstr "如果上一步返回 `PAM_NEW_AUTHTOK_REQD`，服务器现在会调用 man:pam_chauthtok[3]，强制客户端更改所请求账户的身份验证令牌。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:344
+#, fuzzy
 msgid ""
 "Now that the applicant has been properly authenticated, the server calls man:"
 "pam_setcred[3] to establish the credentials of the requested account. It is "
 "able to do this because it acts on behalf of the arbitrator, and holds the "
 "arbitrator's credentials."
-msgstr ""
+msgstr "申请者通过身份验证后，服务器会调用 man:pam_setcred[3] 来建立所请求账户的凭据。服务器能够这样做，是因为它代表仲裁者行事并持有仲裁者的凭据。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:345
+#, fuzzy
 msgid ""
 "Once the correct credentials have been established, the server calls man:"
 "pam_open_session[3] to set up the session."
-msgstr ""
+msgstr "建立正确的凭据后，服务器会调用 man:pam_open_session[3] 来设置会话。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:346
+#, fuzzy
 msgid ""
 "The server now performs whatever service the client requested-for instance, "
 "provide the applicant with a shell."
-msgstr ""
+msgstr "服务器现在会提供客户端请求的服务，例如为申请者提供 shell。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:347
+#, fuzzy
 msgid ""
 "Once the server is done serving the client, it calls man:"
 "pam_close_session[3] to tear down the session."
-msgstr ""
+msgstr "服务器完成对客户端的服务后，会调用 man:pam_close_session[3] 来结束会话。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:348
+#, fuzzy
 msgid ""
 "Finally, the server calls man:pam_end[3] to notify the PAM library that it "
 "is done and that it can release whatever resources it has allocated in the "
 "course of the transaction."
-msgstr ""
+msgstr "最后，服务器调用 man:pam_end[3]，通知 PAM 库事务已完成，并可以释放事务过程中分配的资源。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM Configuration"
-msgstr ""
+msgstr "PAM 配置"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM Policy Files"
-msgstr ""
+msgstr "PAM 策略文件"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#/etc/pam.conf#"
-msgstr ""
+msgstr "[.filename]#/etc/pam.conf#"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:361
+#, fuzzy
 msgid ""
 "The traditional PAM policy file is [.filename]#/etc/pam.conf#.  This file "
 "contains all the PAM policies for your system.  Each line of the file "
 "describes one step in a chain, as shown below:"
-msgstr ""
+msgstr "传统的 PAM 策略文件是 [.filename]#/etc/pam.conf#。此文件包含系统的所有 PAM 策略。文件中的每一行描述链中的一个步骤，如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "login   auth    required        pam_nologin.so  no_warn\n"
-msgstr ""
+msgstr "login   auth    required        pam_nologin.so  no_warn\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:369
+#, fuzzy
 msgid ""
 "The fields are, in order: service name, facility name, control flag, module "
 "name, and module arguments.  Any additional fields are interpreted as "
 "additional module arguments."
-msgstr ""
+msgstr "这些字段依次为：服务名称、facility 名称、控制标志、模块名称和模块参数。任何额外字段都会被视为额外的模块参数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:373
+#, fuzzy
 msgid ""
 "A separate chain is constructed for each service / facility pair, so while "
 "the order in which lines for the same service and facility appear is "
@@ -979,165 +1058,179 @@ msgid ""
 "lines by facility, and the Solaris(TM) stock [.filename]#pam.conf# still "
 "does that, but FreeBSD's stock configuration groups configuration lines by "
 "service.  Either way is fine; either way makes equal sense."
-msgstr ""
+msgstr "每个服务与 facility 的组合都会构成一条单独的链。因此，同一服务和 facility 的行的顺序很重要，而各个服务和 facility 的排列顺序则无关紧要。原始 PAM 论文中的示例按 facility 对配置行分组，Solaris(TM) 默认的 [.filename]#pam.conf# 也采用这种方式，而 FreeBSD 的默认配置则按服务分组。两种方式都可以，也同样合理。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The [.filename]#/etc/pam.d#"
-msgstr ""
+msgstr "[.filename]#/etc/pam.d#"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:380
+#, fuzzy
 msgid ""
 "OpenPAM and Linux-PAM support an alternate configuration mechanism, which is "
 "the preferred mechanism in FreeBSD.  In this scheme, each policy is "
 "contained in a separate file bearing the name of the service it applies to.  "
 "These files are stored in [.filename]#/etc/pam.d/#."
-msgstr ""
+msgstr "OpenPAM 和 Linux-PAM 支持另一种配置机制，这也是 FreeBSD 中首选的机制。在这种方式下，每项策略都单独存放在一个文件中，文件名与其适用的服务名称相同。这些文件存放在 [.filename]#/etc/pam.d/# 中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:383
+#, fuzzy
 msgid ""
 "These per-service policy files have only four fields instead of [."
 "filename]#pam.conf#'s five: the service name field is omitted.  Thus, "
 "instead of the sample [.filename]#pam.conf# line from the previous section, "
 "one would have the following line in [.filename]#/etc/pam.d/login#:"
-msgstr ""
+msgstr "这些按服务划分的策略文件只有四个字段，而 [.filename]#pam.conf# 有五个：省略了服务名称字段。因此，上一节中 [.filename]#pam.conf# 示例行在 [.filename]#/etc/pam.d/login# 中应写为："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:387
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "auth    required        pam_nologin.so  no_warn\n"
-msgstr ""
+msgstr "auth    required        pam_nologin.so  no_warn\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:391
+#, fuzzy
 msgid ""
 "As a consequence of this simplified syntax, it is possible to use the same "
 "policy for multiple services by linking each service name to a same policy "
 "file.  For instance, to use the same policy for the `su` and `sudo` "
 "services, one could do as follows:"
-msgstr ""
+msgstr "由于语法简化，可以通过将多个服务名称链接到同一个策略文件，让多个服务使用同一策略。例如，要让 `su` 和 `sudo` 服务使用相同策略，可以这样操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /etc/pam.d\n"
 "# ln -s su sudo\n"
-msgstr ""
+msgstr "# cd /etc/pam.d\n# ln -s su sudo\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:399
+#, fuzzy
 msgid ""
 "This works because the service name is determined from the file name rather "
 "than specified in the policy file, so the same file can be used for multiple "
 "differently-named services."
-msgstr ""
+msgstr "之所以可行，是因为服务名称由文件名决定，而不是在策略文件中指定，因此同一个文件可以用于名称不同的多个服务。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:401
+#, fuzzy
 msgid ""
 "Since each service's policy is stored in a separate file, the [."
 "filename]#pam.d# mechanism also makes it very easy to install additional "
 "policies for third-party software packages."
-msgstr ""
+msgstr "由于每个服务的策略都存放在单独的文件中，[.filename]#pam.d# 机制也使安装第三方软件包的其他策略变得十分容易。"
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Policy Search Order"
-msgstr ""
+msgstr "策略搜索顺序"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:407
+#, fuzzy
 msgid ""
 "As we have seen above, PAM policies can be found in a number of places.  "
 "What happens if policies for the same service exist in multiple places?"
-msgstr ""
+msgstr "如上所述，PAM 策略可能位于多个位置。如果同一服务的策略存在于多个位置，会发生什么情况？"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:409
+#, fuzzy
 msgid ""
 "It is essential to understand that PAM's configuration system is centered on "
 "chains."
-msgstr ""
+msgstr "必须理解，PAM 的配置系统以链为核心。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Breakdown of a Configuration Line"
-msgstr ""
+msgstr "配置行解析"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:414
+#, fuzzy
 msgid ""
 "As explained in crossref:pam[pam-config-file, PAM Policy Files], each line "
 "in [.filename]#/etc/pam.conf# consists of four or more fields: the service "
 "name, the facility name, the control flag, the module name, and zero or more "
 "module arguments."
-msgstr ""
+msgstr "如 crossref:pam[pam-config-file, PAM Policy Files] 中所述，[.filename]#/etc/pam.conf# 中的每一行由四个或更多字段组成：服务名称、facility 名称、控制标志、模块名称，以及零个或多个模块参数。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:417
+#, fuzzy
 msgid ""
 "The service name is generally (though not always) the name of the "
 "application the statement applies to.  If you are unsure, refer to the "
 "individual application's documentation to determine what service name it "
 "uses."
-msgstr ""
+msgstr "服务名称通常（但并非总是）是该语句所适用的应用程序名称。如果不确定，请参阅相应应用程序的文档，以确定它使用的服务名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:419
+#, fuzzy
 msgid ""
 "Note that if you use [.filename]#/etc/pam.d/# instead of [.filename]#/etc/"
 "pam.conf#, the service name is specified by the name of the policy file, and "
 "omitted from the actual configuration lines, which then start with the "
 "facility name."
-msgstr ""
+msgstr "请注意，如果使用 [.filename]#/etc/pam.d/# 而不是 [.filename]#/etc/pam.conf#，服务名称由策略文件的名称指定，并从实际配置行中省略，因此配置行会以 facility 名称开头。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:422
+#, fuzzy
 msgid ""
 "The facility is one of the four facility keywords described in crossref:"
 "pam[pam-facilities-primitives, Facilities and Primitives]."
-msgstr ""
+msgstr "facility 是 crossref:pam[pam-facilities-primitives, Facilities and Primitives] 中所述的四个 facility 关键字之一。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Likewise, the control flag is one of the four keywords described in\n"
 "\tcrossref:pam[pam-chains-policies, Chains and Policies], describing how to interpret the return code from the module. \n"
 "Linux-PAM supports an alternate syntax that lets you specify the action to associate with each possible return code, but this should be avoided as it is non-standard and closely tied in with the way Linux-PAM dispatches service calls (which differs greatly from the way Solaris(TM) and OpenPAM do it.) \n"
 "Unsurprisingly, OpenPAM does not support this syntax.\n"
-msgstr ""
+msgstr "同样，控制标志是 crossref:pam[pam-chains-policies, Chains and Policies] 中所述的四个关键字之一，用于说明如何解释模块的返回代码。\nLinux-PAM 支持另一种语法，可为每个可能的返回代码指定相应操作，但应避免使用这种语法，因为它不是标准语法，而且与 Linux-PAM 分派服务调用的方式紧密相关（这种方式与 Solaris(TM) 和 OpenPAM 的方式有很大不同）。\n不出所料，OpenPAM 不支持此语法。\n"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:429
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Policies"
-msgstr ""
+msgstr "策略"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:432
+#, fuzzy
 msgid ""
 "To configure PAM correctly, it is essential to understand how policies are "
 "interpreted."
-msgstr ""
+msgstr "要正确配置 PAM，必须了解策略的解释方式。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:435
+#, fuzzy
 msgid ""
 "When an application calls man:pam_start[3], the PAM library loads the policy "
 "for the specified service and constructs four module chains (one for each "
 "facility.)  If one or more of these chains are empty, the corresponding "
 "chains from the policy for the `other` service are substituted."
-msgstr ""
+msgstr "应用程序调用 man:pam_start[3] 时，PAM 库会加载指定服务的策略，并构建四条模块链（每个 facility 一条）。如果其中一条或多条链为空，则会使用 `other` 服务策略中对应的链替代。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:439
+#, fuzzy
 msgid ""
 "When the application later calls one of the six PAM primitives, the PAM "
 "library retrieves the chain for the corresponding facility and calls the "
@@ -1146,44 +1239,44 @@ msgid ""
 "service function, the module type and the error code returned by the service "
 "function are used to determine what happens next.  With a few exceptions, "
 "which we discuss below, the following table applies:"
-msgstr ""
+msgstr "应用程序随后调用六个 PAM 原语之一时，PAM 库会检索相应 facility 的链，并按配置中列出的顺序，调用链中每个模块的相应服务函数。每次调用服务函数后，系统会根据模块类型和服务函数返回的错误代码决定后续操作。除下文讨论的少数例外情况外，以下表格适用："
 
 #. type: Block title
 #: documentation/content/en/articles/pam/_index.adoc:440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM Chain Execution Summary"
-msgstr ""
+msgstr "PAM 链执行摘要"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM_SUCCESS"
-msgstr ""
+msgstr "PAM_SUCCESS"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM_IGNORE"
-msgstr ""
+msgstr "PAM_IGNORE"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:448
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "other"
-msgstr ""
+msgstr "other"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "binding"
-msgstr ""
+msgstr "binding"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:450
 #: documentation/content/en/articles/pam/_index.adoc:465
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "if (!fail) break;"
-msgstr ""
+msgstr "if (!fail) break;"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:451
@@ -1196,331 +1289,354 @@ msgstr ""
 #: documentation/content/en/articles/pam/_index.adoc:470
 #: documentation/content/en/articles/pam/_index.adoc:471
 #: documentation/content/en/articles/pam/_index.adoc:472
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:453
 #: documentation/content/en/articles/pam/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fail = true;"
-msgstr ""
+msgstr "fail = true;"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "required"
-msgstr ""
+msgstr "required"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "requisite"
-msgstr ""
+msgstr "requisite"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "fail = true; break;"
-msgstr ""
+msgstr "fail = true; break;"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "sufficient"
-msgstr ""
+msgstr "sufficient"
 
 #. type: Table
 #: documentation/content/en/articles/pam/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "optional"
-msgstr ""
+msgstr "optional"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:476
+#, fuzzy
 msgid ""
 "If `fail` is true at the end of a chain, or when a \"break\" is reached, the "
 "dispatcher returns the error code returned by the first module that failed.  "
 "Otherwise, it returns `PAM_SUCCESS`."
-msgstr ""
+msgstr "如果链结束时 `fail` 为 true，或执行到“break”时 `fail` 为 true，分派器将返回第一个失败模块所返回的错误代码。否则，它将返回 `PAM_SUCCESS`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:478
+#, fuzzy
 msgid ""
 "The first exception of note is that the error code `PAM_NEW_AUTHTOK_REQD` is "
 "treated like a success, except that if no module failed, and at least one "
 "module returned `PAM_NEW_AUTHTOK_REQD`, the dispatcher will return "
 "`PAM_NEW_AUTHTOK_REQD`."
-msgstr ""
+msgstr "第一个值得注意的例外是，错误代码 `PAM_NEW_AUTHTOK_REQD` 会被视为成功；但如果没有模块失败，且至少有一个模块返回 `PAM_NEW_AUTHTOK_REQD`，分派器将返回 `PAM_NEW_AUTHTOK_REQD`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:480
+#, fuzzy
 msgid ""
 "The second exception is that man:pam_setcred[3] treats `binding` and "
 "`sufficient` modules as if they were `required`."
-msgstr ""
+msgstr "第二个例外是，man:pam_setcred[3] 会将 `binding` 和 `sufficient` 模块视为 `required` 模块。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:482
+#, fuzzy
 msgid ""
 "The third and final exception is that man:pam_chauthtok[3] runs the entire "
 "chain twice (once for preliminary checks and once to actually set the "
 "password), and in the preliminary phase it treats `binding` and `sufficient` "
 "modules as if they were `required`."
-msgstr ""
+msgstr "第三个也是最后一个例外是，man:pam_chauthtok[3] 会完整运行两次链（一次用于初步检查，一次用于实际设置密码）；在初步阶段，它会将 `binding` 和 `sufficient` 模块视为 `required` 模块。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:484
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD PAM Modules"
-msgstr ""
+msgstr "FreeBSD PAM 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_deny[8]"
-msgstr ""
+msgstr "man:pam_deny[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:491
+#, fuzzy
 msgid ""
 "The man:pam_deny[8] module is one of the simplest modules available; it "
 "responds to any request with `PAM_AUTH_ERR`.  It is useful for quickly "
 "disabling a service (add it to the top of every chain), or for terminating "
 "chains of `sufficient` modules."
-msgstr ""
+msgstr "man:pam_deny[8] 模块是最简单的模块之一；它会对任何请求返回 `PAM_AUTH_ERR`。该模块可用于快速禁用某项服务（将其添加到每条链的开头），或终止由 `sufficient` 模块组成的链。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:493
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_echo[8]"
-msgstr ""
+msgstr "man:pam_echo[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:497
+#, fuzzy
 msgid ""
 "The man:pam_echo[8] module simply passes its arguments to the conversation "
 "function as a `PAM_TEXT_INFO` message.  It is mostly useful for debugging, "
 "but can also serve to display messages such as \"Unauthorized access will be "
 "prosecuted\" before starting the authentication procedure."
-msgstr ""
+msgstr "man:pam_echo[8] 模块会将其参数作为 `PAM_TEXT_INFO` 消息传递给对话函数。它主要用于调试，也可用于在开始身份验证流程前显示“未经授权的访问将被起诉”等消息。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_exec[8]"
-msgstr ""
+msgstr "man:pam_exec[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:503
+#, fuzzy
 msgid ""
 "The man:pam_exec[8] module takes its first argument to be the name of a "
 "program to execute, and the remaining arguments are passed to that program "
 "as command-line arguments.  One possible application is to use it to run a "
 "program at login time which mounts the user's home directory."
-msgstr ""
+msgstr "man:pam_exec[8] 模块将第一个参数作为要执行的程序名称，其余参数则作为命令行参数传递给该程序。一个可能的用途是在登录时运行程序，以挂载用户的主目录。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:505
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_ftpusers[8]"
-msgstr ""
+msgstr "man:pam_ftpusers[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:508
+#, fuzzy
 msgid "The man:pam_ftpusers[8] module"
-msgstr ""
+msgstr "man:pam_ftpusers[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:510
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_group[8]"
-msgstr ""
+msgstr "man:pam_group[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:514
+#, fuzzy
 msgid ""
 "The man:pam_group[8] module accepts or rejects applicants on the basis of "
 "their membership in a particular file group (normally `wheel` for man:"
 "su[1]).  It is primarily intended for maintaining the traditional behavior "
 "of BSD man:su[1], but has many other uses, such as excluding certain groups "
 "of users from a particular service."
-msgstr ""
+msgstr "man:pam_group[8] 模块根据申请者是否属于特定文件组来接受或拒绝申请者（man:su[1] 通常使用 `wheel` 组）。该模块主要用于维护 BSD man:su[1] 的传统行为，但也有许多其他用途，例如禁止特定用户组使用某项服务。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_guest[8]"
-msgstr ""
+msgstr "man:pam_guest[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:521
+#, fuzzy
 msgid ""
 "The man:pam_guest[8] module allows guest logins using fixed login names.  "
 "Various requirements can be placed on the password, but the default behavior "
 "is to allow any password as long as the login name is that of a guest "
 "account.  The man:pam_guest[8] module can easily be used to implement "
 "anonymous FTP logins."
-msgstr ""
+msgstr "man:pam_guest[8] 模块允许使用固定登录名进行访客登录。可以对密码设置各种要求，但默认行为是只要登录名属于访客账户，就允许使用任意密码。man:pam_guest[8] 模块可轻松用于实现匿名 FTP 登录。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:523
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_krb5[8]"
-msgstr ""
+msgstr "man:pam_krb5[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:526
+#, fuzzy
 msgid "The man:pam_krb5[8] module"
-msgstr ""
+msgstr "man:pam_krb5[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:528
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_ksu[8]"
-msgstr ""
+msgstr "man:pam_ksu[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:531
+#, fuzzy
 msgid "The man:pam_ksu[8] module"
-msgstr ""
+msgstr "man:pam_ksu[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_lastlog[8]"
-msgstr ""
+msgstr "man:pam_lastlog[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:536
+#, fuzzy
 msgid "The man:pam_lastlog[8] module"
-msgstr ""
+msgstr "man:pam_lastlog[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:538
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_login_access[8]"
-msgstr ""
+msgstr "man:pam_login_access[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:541
+#, fuzzy
 msgid ""
 "The man:pam_login_access[8] module provides an implementation of the account "
 "management primitive which enforces the login restrictions specified in the "
 "man:login.access[5] table."
-msgstr ""
+msgstr "man:pam_login_access[8] 模块提供了账户管理原语的实现，用于强制执行 man:login.access[5] 表中指定的登录限制。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:543
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_nologin[8]"
-msgstr ""
+msgstr "man:pam_nologin[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:547
+#, fuzzy
 msgid ""
 "The man:pam_nologin[8] module refuses non-root logins when [.filename]#/var/"
 "run/nologin# exists.  This file is normally created by man:shutdown[8] when "
 "less than five minutes remain until the scheduled shutdown time."
-msgstr ""
+msgstr "如果 [.filename]#/var/run/nologin# 存在，man:pam_nologin[8] 模块会拒绝非 root 用户登录。通常在距离预定关机时间不足五分钟时，man:shutdown[8] 会创建此文件。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:549
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_passwdqc[8]"
-msgstr ""
+msgstr "man:pam_passwdqc[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:552
+#, fuzzy
 msgid "The man:pam_passwdqc[8] module"
-msgstr ""
+msgstr "man:pam_passwdqc[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_permit[8]"
-msgstr ""
+msgstr "man:pam_permit[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:558
+#, fuzzy
 msgid ""
 "The man:pam_permit[8] module is one of the simplest modules available; it "
 "responds to any request with `PAM_SUCCESS`.  It is useful as a placeholder "
 "for services where one or more chains would otherwise be empty."
-msgstr ""
+msgstr "man:pam_permit[8] 模块是最简单的可用模块之一；它会对任何请求返回 `PAM_SUCCESS`。对于一个或多个链为空的服务，它可用作占位符。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:560
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_radius[8]"
-msgstr ""
+msgstr "man:pam_radius[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:563
+#, fuzzy
 msgid "The man:pam_radius[8] module"
-msgstr ""
+msgstr "man:pam_radius[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_rhosts[8]"
-msgstr ""
+msgstr "man:pam_rhosts[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:568
+#, fuzzy
 msgid "The man:pam_rhosts[8] module"
-msgstr ""
+msgstr "man:pam_rhosts[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:570
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_rootok[8]"
-msgstr ""
+msgstr "man:pam_rootok[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:574
+#, fuzzy
 msgid ""
 "The man:pam_rootok[8] module reports success if and only if the real user id "
 "of the process calling it (which is assumed to be run by the applicant) is "
 "0.  This is useful for non-networked services such as man:su[1] or man:"
 "passwd[1], to which the `root` should have automatic access."
-msgstr ""
+msgstr "当且仅当调用进程的真实用户 ID 为 0 时，man:pam_rootok[8] 模块才会报告成功（假定该进程由申请者运行）。对于 man:su[1] 或 man:passwd[1] 等非网络服务，这很有用，因为 `root` 应能自动访问这些服务。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:576
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_securetty[8]"
-msgstr ""
+msgstr "man:pam_securetty[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:579
+#, fuzzy
 msgid "The man:pam_securetty[8] module"
-msgstr ""
+msgstr "man:pam_securetty[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:581
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_self[8]"
-msgstr ""
+msgstr "man:pam_self[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:585
+#, fuzzy
 msgid ""
 "The man:pam_self[8] module reports success if and only if the names of the "
 "applicant matches that of the target account.  It is most useful for non-"
 "networked services such as man:su[1], where the identity of the applicant "
 "can be easily verified."
-msgstr ""
+msgstr "当且仅当申请者的名称与目标账户的名称匹配时，man:pam_self[8] 模块才会报告成功。它最适用于 man:su[1] 等非网络服务，因为在这些服务中可以轻松验证申请者的身份。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:587
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_ssh[8]"
-msgstr ""
+msgstr "man:pam_ssh[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:593
+#, fuzzy
 msgid ""
 "The man:pam_ssh[8] module provides both authentication and session "
 "services.  The authentication service allows users who have passphrase-"
@@ -1530,27 +1646,29 @@ msgid ""
 "the authentication phase.  This feature is particularly useful for local "
 "logins, whether in X (using man:xdm[8] or another PAM-aware X login manager) "
 "or at the console."
-msgstr ""
+msgstr "man:pam_ssh[8] 模块提供身份验证和会话服务。身份验证服务允许用户输入口令短语，以使用其 [.filename]#~/.ssh# 目录中受口令短语保护的 SSH 私钥进行身份验证。会话服务会启动 man:ssh-agent[1]，并将身份验证阶段解密的密钥预先载入其中。此功能对于本地登录尤其有用，无论是通过 X（使用 man:xdm[8] 或其他支持 PAM 的 X 登录管理器）还是通过控制台登录。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:595
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_tacplus[8]"
-msgstr ""
+msgstr "man:pam_tacplus[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:598
+#, fuzzy
 msgid "The man:pam_tacplus[8] module"
-msgstr ""
+msgstr "man:pam_tacplus[8] 模块"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:600
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:pam_unix[8]"
-msgstr ""
+msgstr "man:pam_unix[8]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:605
+#, fuzzy
 msgid ""
 "The man:pam_unix[8] module implements traditional UNIX(R) password "
 "authentication, using man:getpwnam[3] to obtain the target account's "
@@ -1559,34 +1677,36 @@ msgid ""
 "expiration times) and password-changing services.  This is probably the "
 "single most useful module, as the great majority of admins will want to "
 "maintain historical behavior for at least some services."
-msgstr ""
+msgstr "man:pam_unix[8] 模块实现了传统的 UNIX(R) 密码身份验证：它使用 man:getpwnam[3] 获取目标账户的密码，并将其与申请者提供的密码进行比较。它还提供账户管理服务（强制执行账户和密码过期时间）以及密码更改服务。这可能是最有用的单个模块，因为绝大多数管理员都希望至少对某些服务保留历史行为。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:607
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM Application Programming"
-msgstr ""
+msgstr "PAM 应用程序编程"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:610
 #: documentation/content/en/articles/pam/_index.adoc:615
+#, fuzzy
 msgid "This section has not yet been written."
-msgstr ""
+msgstr "本节尚未编写。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:612
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PAM Module Programming"
-msgstr ""
+msgstr "PAM 模块编程"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:620
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sample PAM Application"
-msgstr ""
+msgstr "PAM 应用程序示例"
 
 #. type: appendix
 #: documentation/content/en/articles/pam/_index.adoc:627
+#, fuzzy
 msgid ""
 "The following is a minimal implementation of man:su[1] using PAM.  Note that "
 "it uses the OpenPAM-specific man:openpam_ttyconv[3] conversation function, "
@@ -1596,44 +1716,46 @@ msgid ""
 "surprisingly difficult to implement; the one presented in crossref:pam[pam-"
 "sample-conv, Sample PAM Conversation Function] is a good starting point, but "
 "should not be used in real-world applications."
-msgstr ""
+msgstr "以下是一个使用 PAM 实现 man:su[1] 的最简示例。请注意，它使用了 OpenPAM 专用的 man:openpam_ttyconv[3] 对话函数，其原型定义在 [.filename]#security/openpam.h# 中。如果要在使用其他 PAM 库的系统上构建此应用程序，则需要自行提供对话函数。要实现健壮的对话函数，难度远超预期；crossref:pam[pam-sample-conv, PAM 对话函数示例]中展示的函数是一个很好的起点，但不应在实际应用中使用。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:631
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include::{include-path}su.c[]\n"
-msgstr ""
+msgstr "include::{include-path}su.c[]\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:637
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sample PAM Module"
-msgstr ""
+msgstr "PAM 模块示例"
 
 #. type: appendix
 #: documentation/content/en/articles/pam/_index.adoc:641
+#, fuzzy
 msgid ""
 "The following is a minimal implementation of man:pam_unix[8], offering only "
 "authentication services.  It should build and run with most PAM "
 "implementations, but takes advantage of OpenPAM extensions if available: "
 "note the use of man:pam_get_authtok[3], which enormously simplifies "
 "prompting the user for a password."
-msgstr ""
+msgstr "以下是一个 man:pam_unix[8] 的最简实现，仅提供身份验证服务。它应该能在大多数 PAM 实现中构建并运行；如果可用，它也会利用 OpenPAM 扩展：请注意，其中使用了 man:pam_get_authtok[3]，这大大简化了提示用户输入密码的过程。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include::{include-path}pam_unix.c[]\n"
-msgstr ""
+msgstr "include::{include-path}pam_unix.c[]\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:651
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sample PAM Conversation Function"
-msgstr ""
+msgstr "PAM 对话函数示例"
 
 #. type: appendix
 #: documentation/content/en/articles/pam/_index.adoc:656
+#, fuzzy
 msgid ""
 "The conversation function presented below is a greatly simplified version of "
 "OpenPAM's man:openpam_ttyconv[3].  It is fully functional, and should give "
@@ -1642,82 +1764,89 @@ msgid ""
 "feel free to download the source code and adapt man:openpam_ttyconv[3] to "
 "your uses; we believe it to be as robust as a tty-oriented conversation "
 "function can reasonably get."
-msgstr ""
+msgstr "下面展示的对话函数是 OpenPAM 的 man:openpam_ttyconv[3] 的大幅简化版本。它功能完整，能让读者很好地了解对话函数应有的行为，但过于简单，不适合实际使用。即使你不使用 OpenPAM，也可以下载源代码并按需改造 man:openpam_ttyconv[3]；我们认为，它已达到面向 tty 的对话函数所能合理实现的健壮程度。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include::{include-path}converse.c[]\n"
-msgstr ""
+msgstr "include::{include-path}converse.c[]\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:665
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸阅读"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:667
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Papers"
-msgstr ""
+msgstr "论文"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:670
+#, fuzzy
 msgid ""
 "Making Login Services Independent of Authentication Technologies Vipin "
 "Samar. Charlie Lai. Sun Microsystems."
-msgstr ""
+msgstr "使登录服务独立于身份验证技术。Vipin Samar，Charlie Lai。Sun Microsystems。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:672
+#, fuzzy
 msgid ""
 "_link:https://pubs.opengroup.org/onlinepubs/8329799/toc.htm[X/Open Single "
 "Sign-on Preliminary Specification]_. The Open Group. 1-85912-144-6. June "
 "1997."
-msgstr ""
+msgstr "__link:https://pubs.opengroup.org/onlinepubs/8329799/toc.htm[X/Open 单点登录初步规范]__。The Open Group。1-85912-144-6。1997 年 6 月。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:674
+#, fuzzy
 msgid ""
 "_link:https://mirrors.kernel.org/pub/linux/libs/pam/pre/doc/draft-morgan-"
 "pam-07.txt[Pluggable Authentication Modules]_. Andrew G. Morgan. 1999-10-06."
-msgstr ""
+msgstr "__link:https://mirrors.kernel.org/pub/linux/libs/pam/pre/doc/draft-morgan-pam-07.txt[可插拔身份验证模块]__。Andrew G. Morgan。1999-10-06。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:675
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "User Manuals"
-msgstr ""
+msgstr "用户手册"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:678
+#, fuzzy
 msgid ""
 "_link:https://docs.oracle.com/cd/E26505_01/html/E27224/pam-1.html[PAM "
 "Administration]_. Sun Microsystems."
-msgstr ""
+msgstr "__link:https://docs.oracle.com/cd/E26505_01/html/E27224/pam-1.html[PAM 管理]__。Sun Microsystems。"
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:679
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Related Web Pages"
-msgstr ""
+msgstr "相关网页"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:682
+#, fuzzy
 msgid ""
 "_link:https://www.openpam.org/[OpenPAM homepage]_ Dag-Erling Smørgrav. "
 "ThinkSec AS."
-msgstr ""
+msgstr "__link:https://www.openpam.org/[OpenPAM 主页]__ Dag-Erling Smørgrav。ThinkSec AS。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:684
+#, fuzzy
 msgid ""
 "_link:http://www.kernel.org/pub/linux/libs/pam/[Linux-PAM homepage]_ Andrew "
 "Morgan."
-msgstr ""
+msgstr "__link:http://www.kernel.org/pub/linux/libs/pam/[Linux-PAM 主页]__ Andrew Morgan。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:685
+#, fuzzy
 msgid "_Solaris PAM homepage_. Sun Microsystems."
-msgstr ""
+msgstr "__Solaris PAM 主页__。Sun Microsystems。"

@@ -19,21 +19,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/releng/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This paper describes the approach previously used by the FreeBSD release engineering team to make production quality releases of the FreeBSD Operating System"
-msgstr ""
+msgstr "本文介绍了 FreeBSD 发布工程团队过去用于制作可投入生产的 FreeBSD 操作系统版本的方法"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/articles/releng/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Legacy FreeBSD Release Engineering"
-msgstr ""
+msgstr "FreeBSD 传统发布工程"
 
 #. type: Title =
 #: documentation/content/en/articles/releng/_index.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Release Engineering"
-msgstr ""
+msgstr "FreeBSD 发布工程"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/releng/_index.adoc:44
@@ -42,23 +42,25 @@ msgstr "摘要"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/releng/_index.adoc:50
+#, fuzzy
 msgid ""
 "This document is outdated and does not accurately describe the current "
 "release procedures of the FreeBSD Release Engineering team.  It is retained "
 "for historical purposes.  The current procedures used by the FreeBSD Release "
 "Engineering team are available in the extref:{freebsd-releng}[FreeBSD "
 "Release Engineering] article."
-msgstr ""
+msgstr "本文档已过时，无法准确描述 FreeBSD 发布工程团队当前的发布流程。本文档仅为历史参考而保留。FreeBSD 发布工程团队当前采用的流程，请参阅 extref:{freebsd-releng}[FreeBSD 发布工程]文章。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:54
+#, fuzzy
 msgid ""
 "This paper describes the approach used by the FreeBSD release engineering "
 "team to make production quality releases of the FreeBSD Operating System.  "
 "It details the methodology used for the official FreeBSD releases and "
 "describes the tools available for those interested in producing customized "
 "FreeBSD releases for corporate rollouts or commercial productization."
-msgstr ""
+msgstr "本文介绍了 FreeBSD 发布工程团队用于制作可投入生产的 FreeBSD 操作系统版本的方法。文中详细介绍了官方 FreeBSD 版本所采用的方法，并说明了有意为企业部署或商业产品化制作定制 FreeBSD 版本的人员可以使用的工具。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:56
@@ -73,6 +75,7 @@ msgstr "介绍"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:70
+#, fuzzy
 msgid ""
 "The development of FreeBSD is a very open process.  FreeBSD is comprised of "
 "contributions from thousands of people around the world.  The FreeBSD "
@@ -91,10 +94,11 @@ msgid ""
 "administration/#t-core[Core Team]footnote:[link:https://www.FreeBSD.org/"
 "administration/#t-core[FreeBSD Core Team]] of developers provide some level "
 "of direction over the project."
-msgstr ""
+msgstr "FreeBSD 的开发过程非常开放。FreeBSD 汇集了来自世界各地数千人的贡献。FreeBSD 项目向公众开放 Subversion 访问，footnote:[Subversion，link:http://subversion.apache.org[]]让其他人能够查看日志消息、开发分支之间的差异（补丁），以及正式源代码管理所提供的其他效率提升功能。这对吸引更多优秀开发者参与 FreeBSD 项目大有帮助。不过，我想大家都会同意，如果向互联网上的所有人开放主仓库的写入权限，很快就会陷入混乱。因此，只有近 300 名经过“甄选”的人员获准写入 Subversion 仓库。这些 extref:{contributors}[FreeBSD 提交者，staff-committers]footnote:[extref:{contributors}[FreeBSD 提交者，staff-committers]]通常承担了 FreeBSD 开发的大部分工作。由开发者选举产生的 link:https://www.FreeBSD.org/administration/#t-core[核心团队]footnote:[link:https://www.FreeBSD.org/administration/#t-core[FreeBSD 核心团队]]会对项目进行一定程度的指导。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:75
+#, fuzzy
 msgid ""
 "The rapid pace of `FreeBSD` development makes the main development branch "
 "unsuitable for the everyday use by the general public.  In particular, "
@@ -103,10 +107,11 @@ msgid ""
 "on several parallel tracks.  The main development branch is the _HEAD_ or "
 "_trunk_ of our Subversion tree, known as \"FreeBSD-CURRENT\" or \"-CURRENT\" "
 "for short."
-msgstr ""
+msgstr "`FreeBSD` 快速的开发节奏使主开发分支不适合公众日常使用。尤其是，要将开发系统打磨成可投入生产的版本，还需要进行稳定化工作。为解决这一矛盾，开发工作沿着多条并行路线继续进行。主开发分支是 Subversion 树中的 _HEAD_ 或 _trunk_，称为“FreeBSD-CURRENT”，简称“-CURRENT”。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:81
+#, fuzzy
 msgid ""
 "A set of more stable branches are maintained, known as \"FreeBSD-STABLE\" or "
 "\"-STABLE\" for short.  All branches live in a master Subversion repository "
@@ -116,10 +121,11 @@ msgid ""
 "made.  Changes go into this branch at a different pace, and with the general "
 "assumption that they have first gone into FreeBSD-CURRENT and have been "
 "thoroughly tested by our user community."
-msgstr ""
+msgstr "我们维护了一组更稳定的分支，称为“FreeBSD-STABLE”，简称“-STABLE”。所有分支都位于由 FreeBSD 项目维护的主 Subversion 仓库中。FreeBSD-CURRENT 是 FreeBSD 开发的“最前沿”，所有新改动都会首先进入该分支。FreeBSD-STABLE 是制作主要版本的开发分支。改动进入该分支的节奏有所不同，通常假定这些改动已先进入 FreeBSD-CURRENT，并经过用户社区的充分测试。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:86
+#, fuzzy
 msgid ""
 "The term _stable_ in the name of the branch refers to the presumed "
 "Application Binary Interface stability, which is promised by the project.  "
@@ -129,10 +135,11 @@ msgid ""
 "releases.  In most cases, binaries from the older _STABLE_ systems run "
 "unmodified on newer systems, including __HEAD__, assuming that the system "
 "management interfaces are not used."
-msgstr ""
+msgstr "分支名称中的 _stable_ 指项目承诺的应用程序二进制接口（ABI）稳定性。这意味着，在该分支较早版本系统上编译的用户应用程序，可以在同一分支较新版本的系统上运行。与早期版本相比，ABI 稳定性已大幅提高。在大多数情况下，较旧 _STABLE_ 系统上的二进制文件无需修改即可在较新的系统上运行，包括 __HEAD__，前提是不使用系统管理接口。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:89
+#, fuzzy
 msgid ""
 "In the interim period between releases, weekly snapshots are built "
 "automatically by the FreeBSD Project build machines and made available for "
@@ -142,35 +149,39 @@ msgid ""
 "buildworld`\" footnote:[extref:{handbook}cutting-edge[Rebuilding world, "
 "makeworld]] helps to keep FreeBSD-STABLE in a very reliable condition even "
 "before the quality assurance activities ramp up pending a major release."
-msgstr ""
+msgstr "在各个版本发布之间的间隔期，FreeBSD 项目的构建机器会自动构建每周快照，并提供下载，地址为 `https:/download.FreeBSD.org/snapshots/`。二进制发布快照的广泛提供，加上用户社区通过 Subversion 和“`make buildworld`”footnote:[extref:{handbook}cutting-edge[重新构建 world，makeworld]]跟进 -STABLE 开发的习惯，有助于在主要版本发布前质量保证工作开始加紧时，仍让 FreeBSD-STABLE 保持非常可靠的状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:92
+#, fuzzy
 msgid ""
 "In addition to installation ISO snapshots, weekly virtual machine images are "
 "also provided for use with VirtualBox, qemu, or other popular emulation "
 "software.  The virtual machine images can be downloaded from `https://"
 "download.FreeBSD.org/snapshots/VM-IMAGES/`."
-msgstr ""
+msgstr "除了安装用 ISO 快照外，我们还提供每周虚拟机映像，可用于 VirtualBox、qemu 或其他常见的仿真软件。虚拟机映像可从 `https://download.FreeBSD.org/snapshots/VM-IMAGES/` 下载。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:94
+#, fuzzy
 msgid ""
 "The virtual machine images are approximately 150MB man:xz[1] compressed, and "
 "contain a 10GB sparse filesystem when attached to a virtual machine."
-msgstr ""
+msgstr "虚拟机映像经 man:xz[1] 压缩后大小约为 150MB，挂载到虚拟机时包含一个 10GB 的稀疏文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:97
+#, fuzzy
 msgid ""
 "Bug reports and feature requests are continuously submitted by users "
 "throughout the release cycle.  Problems reports are entered into our "
 "Bugzilla database through the web interface provided at https://www.freebsd."
 "org/support/bugreports/[https://www.freebsd.org/support/bugreports/]."
-msgstr ""
+msgstr "在整个发布周期中，用户会持续提交错误报告和功能请求。问题报告通过位于 link:https://www.freebsd.org/support/bugreports/[https://www.freebsd.org/support/bugreports/] 的 Web 界面录入我们的 Bugzilla 数据库。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:102
+#, fuzzy
 msgid ""
 "To service our most conservative users, individual release branches were "
 "introduced with FreeBSD 4.3.  These release branches are created shortly "
@@ -178,84 +189,91 @@ msgid ""
 "critical security fixes and additions are merged onto the release branch.  "
 "In addition to source updates via Subversion, binary patchkits are available "
 "to keep systems on the _releng/X.Y_ branches updated."
-msgstr ""
+msgstr "为满足最保守用户的需求，FreeBSD 4.3 引入了各个版本专属的发布分支。这些发布分支会在正式版本发布前不久创建。版本发布后，只有最关键的安全修复和补充内容才会合并到发布分支中。除了通过 Subversion 更新源代码外，还提供二进制补丁包，以便更新 _releng/X.Y_ 分支上的系统。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What This Article Describes"
-msgstr ""
+msgstr "本文介绍的内容"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:106
+#, fuzzy
 msgid "The following sections of this article describe:"
-msgstr ""
+msgstr "本文的以下各节将介绍："
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:releng[release-proc, Release Process]"
-msgstr ""
+msgstr "crossref:releng[release-proc, 发布流程]"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:109
+#, fuzzy
 msgid ""
 "The different phases of the release engineering process leading up to the "
 "actual system build."
-msgstr ""
+msgstr "从实际构建系统之前开始的发布工程流程各阶段。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:releng[release-build, Release Building]"
-msgstr ""
+msgstr "crossref:releng[release-build, 发布构建]"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:112
+#, fuzzy
 msgid "The actual build process."
-msgstr ""
+msgstr "实际的构建流程。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:releng[extensibility, Extensibility]"
-msgstr ""
+msgstr "crossref:releng[extensibility, 可扩展性]"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:115
+#, fuzzy
 msgid "How the base release may be extended by third parties."
-msgstr ""
+msgstr "第三方如何扩展基础发行版。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:releng[lessons-learned, Lessons Learned from FreeBSD 4.4]"
-msgstr ""
+msgstr "crossref:releng[lessons-learned, 从 FreeBSD 4.4 中吸取的经验教训]"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:118
+#, fuzzy
 msgid "Some of the lessons learned through the release of FreeBSD 4.4."
-msgstr ""
+msgstr "从 FreeBSD 4.4 发布过程中吸取的一些经验教训。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:releng[future, Future Directions]"
-msgstr ""
+msgstr "crossref:releng[future, 未来方向]"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:121
+#, fuzzy
 msgid "Future directions of development."
-msgstr ""
+msgstr "未来的开发方向。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release Process"
-msgstr ""
+msgstr "发布流程"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:128
+#, fuzzy
 msgid ""
 "New releases of FreeBSD are released from the -STABLE branch at "
 "approximately four month intervals.  The FreeBSD release process begins to "
@@ -264,10 +282,11 @@ msgid ""
 "developers that they only have 15 days to integrate new changes before the "
 "code freeze.  During this time, many developers perform what have become "
 "known as \"MFC sweeps\"."
-msgstr ""
+msgstr "FreeBSD 新版本大约每四个月从 -STABLE 分支发布一次。预定发布日期前 70 至 80 天，FreeBSD 发布流程开始加速推进；此时发布工程师会向开发邮件列表发送电子邮件，提醒开发者，他们只有 15 天时间在代码冻结前合入新改动。在此期间，许多开发者会进行后来被称为“MFC 扫荡”的工作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:132
+#, fuzzy
 msgid ""
 "MFC stands for \"Merge From CURRENT\" and it describes the process of "
 "merging a tested change from our -CURRENT development branch to our -STABLE "
@@ -278,58 +297,66 @@ msgid ""
 "exercise all usages of the general-purpose operating system).  Minimal MFC "
 "period is 3 days, which is typically used only for trivial or critical "
 "bugfixes."
-msgstr ""
+msgstr "MFC 是“从 CURRENT 合并”（Merge From CURRENT）的缩写，指将经过测试的改动从 -CURRENT 开发分支合并到 -STABLE 分支的过程。项目政策要求，任何改动都必须先应用到主干，并在 -CURRENT 用户完成充分的外部测试后再合并到 -STABLE 分支（开发者应在提交到 -CURRENT 前对改动进行全面测试，但任何人都不可能测试通用操作系统的所有用法）。最短 MFC 周期为 3 天，通常仅用于琐碎或关键的错误修复。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Code Review"
-msgstr ""
+msgstr "代码审查"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:139
+#, fuzzy
 msgid ""
 "Sixty days before the anticipated release, the source repository enters a "
 "\"code freeze\".  During this time, all commits to the -STABLE branch must "
 "be approved by `{re}`.  The approval process is technically enforced by a "
 "pre-commit hook.  The kinds of changes that are allowed during this period "
 "include:"
-msgstr ""
+msgstr "预定发布日期前 60 天，源代码仓库进入“代码冻结”阶段。在此期间，所有提交到 -STABLE 分支的改动都必须获得 `{re}` 批准。该审批流程通过提交前钩子强制执行。此阶段允许的改动包括："
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:141
+#, fuzzy
 msgid "Bug fixes."
-msgstr ""
+msgstr "错误修复。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:142
+#, fuzzy
 msgid "Documentation updates."
-msgstr ""
+msgstr "文档更新。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:143
+#, fuzzy
 msgid "Security-related fixes of any kind."
-msgstr ""
+msgstr "任何类型的安全相关修复。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:144
+#, fuzzy
 msgid "Minor changes to device drivers, such as adding new Device IDs."
-msgstr ""
+msgstr "设备驱动程序的小幅改动，例如添加新的设备 ID。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:145
+#, fuzzy
 msgid "Driver updates from the vendors."
-msgstr ""
+msgstr "供应商提供的驱动程序更新。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:146
+#, fuzzy
 msgid ""
 "Any additional change that the release engineering team feels is justified, "
 "given the potential risk."
-msgstr ""
+msgstr "发布工程团队认为合理的其他改动，具体取决于其潜在风险。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:150
+#, fuzzy
 msgid ""
 "Shortly after the code freeze is started, a _BETA1_ image is built and "
 "released for widespread testing.  During the code freeze, at least one beta "
@@ -339,10 +366,11 @@ msgid ""
 "team, the documentation maintainers, and the port maintainers to ensure that "
 "all of the different components required for a successful release are "
 "available."
-msgstr ""
+msgstr "代码冻结开始后不久，会构建并发布 _BETA1_ 映像，以供广泛测试。在代码冻结期间，每两周至少发布一个 Beta 映像或候选发布版，直到最终版本准备就绪。在最终版本发布前的几天里，发布工程团队会与安全官团队、文档维护者和 Port 维护者保持密切沟通，以确保成功发布所需的所有组件均已准备就绪。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:153
+#, fuzzy
 msgid ""
 "After the quality of the BETA images is satisfying enough, and no large and "
 "potentially risky changes are planned, the release branch is created and "
@@ -351,381 +379,420 @@ msgid ""
 "branch is lifted and release branch enters a \"hard code freeze\" where it "
 "becomes much harder to justify new changes to the system unless a serious "
 "bug-fix or security issue is involved."
-msgstr ""
+msgstr "当 BETA 映像的质量达到令人满意的程度，且没有计划进行重大且可能带来风险的改动时，就会创建发布分支，并从该分支构建__候选发布版__（RC）映像，而不再从 STABLE 分支构建 BETA 映像。同时，STABLE 分支解除冻结，发布分支则进入“严格代码冻结”阶段；除非涉及严重错误修复或安全问题，否则很难再为系统中的新改动提供合理依据。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Final Release Checklist"
-msgstr ""
+msgstr "最终版本发布检查清单"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:157
+#, fuzzy
 msgid ""
 "When several BETA images have been made available for widespread testing and "
 "all major issues have been resolved, the final release \"polishing\" can "
 "begin."
-msgstr ""
+msgstr "当多个 BETA 映像已供广泛测试，且所有重大问题都已解决后，便可以开始对最终版本进行“打磨”。"
 
 #. type: Title ====
 #: documentation/content/en/articles/releng/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the Release Branch"
-msgstr ""
+msgstr "创建发布分支"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/releng/_index.adoc:164
+#, fuzzy
 msgid ""
 "In all examples below, `$FSVN` refers to the location of the FreeBSD "
 "Subversion repository, `svn+ssh://svn.FreeBSD.org/base/`."
-msgstr ""
+msgstr "在以下所有示例中，`$FSVN` 指 FreeBSD Subversion 仓库的位置 `svn+ssh://svn.FreeBSD.org/base/`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:168
+#, fuzzy
 msgid ""
 "The layout of FreeBSD branches in Subversion is described in the extref:"
 "{committers-guide}[Committer's Guide, subversion-primer-base-layout].  The "
 "first step in creating a branch is to identify the revision of the `stable/"
 "_X_` sources that you want to branch _from_."
-msgstr ""
+msgstr "extref:{committers-guide}[提交者指南，subversion-primer-base-layout]介绍了 FreeBSD 的 Subversion 分支布局。创建分支的第一步是确定要从哪个 `stable/_X_` 源代码修订版本创建分支。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/releng/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# svn log -v $FSVN/stable/9\n"
-msgstr ""
+msgstr "# svn log -v $FSVN/stable/9\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:175
+#, fuzzy
 msgid "The next step is to create the _release branch_"
-msgstr ""
+msgstr "下一步是创建__发布分支__"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/releng/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# svn cp $FSVN/stable/9@REVISION $FSVN/releng/9.2\n"
-msgstr ""
+msgstr "# svn cp $FSVN/stable/9@REVISION $FSVN/releng/9.2\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:182
+#, fuzzy
 msgid "This branch can be checked out:"
-msgstr ""
+msgstr "可以检出此分支："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/releng/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# svn co $FSVN/releng/9.2 src\n"
-msgstr ""
+msgstr "# svn co $FSVN/releng/9.2 src\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/releng/_index.adoc:191
+#, fuzzy
 msgid ""
 "Creating the `releng` branch and `release` tags is done by the link:https://"
 "www.FreeBSD.org/administration/#t-re[Release Engineering Team]."
-msgstr ""
+msgstr "创建 `releng` 分支和 `release` 标签由 link:https://www.FreeBSD.org/administration/#t-re[发布工程团队]负责。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Development Branch"
-msgstr ""
+msgstr "FreeBSD 开发分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-head.png"
-msgstr ""
+msgstr "branches-head.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 3.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 3.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng3.png"
-msgstr ""
+msgstr "branches-releng3.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 4.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 4.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng4.png"
-msgstr ""
+msgstr "branches-releng4.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 5.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 5.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng5.png"
-msgstr ""
+msgstr "branches-releng5.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 6.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 6.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng6.png"
-msgstr ""
+msgstr "branches-releng6.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 7.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 7.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng7.png"
-msgstr ""
+msgstr "branches-releng7.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 8.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 8.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng8.png"
-msgstr ""
+msgstr "branches-releng8.png"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/articles/releng/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD 9.x STABLE Branch"
-msgstr ""
+msgstr "FreeBSD 9.x STABLE 分支"
 
 #. type: Target for macro image
 #: documentation/content/en/articles/releng/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "branches-releng9.png"
-msgstr ""
+msgstr "branches-releng9.png"
 
 #. type: Title ====
 #: documentation/content/en/articles/releng/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bumping up the Version Number"
-msgstr ""
+msgstr "递增版本号"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:213
+#, fuzzy
 msgid ""
 "Before the final release can be tagged, built, and released, the following "
 "files need to be modified to reflect the correct version of FreeBSD:"
-msgstr ""
+msgstr "在最终版本可以打标签、构建并发布之前，需要修改以下文件，以反映正确的 FreeBSD 版本："
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:215
+#, fuzzy
 msgid "[.filename]#doc/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml#"
-msgstr ""
+msgstr "[.filename]#doc/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:216
+#, fuzzy
 msgid "[.filename]#doc/en_US.ISO8859-1/books/porters-handbook/book.xml#"
-msgstr ""
+msgstr "[.filename]#doc/en_US.ISO8859-1/books/porters-handbook/book.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:217
+#, fuzzy
 msgid "[.filename]#doc/en_US.ISO8859-1/htdocs/cgi/ports.cgi#"
-msgstr ""
+msgstr "[.filename]#doc/en_US.ISO8859-1/htdocs/cgi/ports.cgi#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:218
+#, fuzzy
 msgid "[.filename]#ports/Tools/scripts/release/config#"
-msgstr ""
+msgstr "[.filename]#ports/Tools/scripts/release/config#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:219
+#, fuzzy
 msgid "[.filename]#doc/shared/xml/freebsd.ent#"
-msgstr ""
+msgstr "[.filename]#doc/shared/xml/freebsd.ent#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:220
+#, fuzzy
 msgid "[.filename]#src/Makefile.inc1#"
-msgstr ""
+msgstr "[.filename]#src/Makefile.inc1#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:221
+#, fuzzy
 msgid "[.filename]#src/UPDATING#"
-msgstr ""
+msgstr "[.filename]#src/UPDATING#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:222
+#, fuzzy
 msgid "[.filename]#src/gnu/usr.bin/groff/tmac/mdoc.local#"
-msgstr ""
+msgstr "[.filename]#src/gnu/usr.bin/groff/tmac/mdoc.local#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:223
+#, fuzzy
 msgid "[.filename]#src/release/Makefile#"
-msgstr ""
+msgstr "[.filename]#src/release/Makefile#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:224
+#, fuzzy
 msgid "[.filename]#src/release/doc/en_US.ISO8859-1/shared/xml/release.dsl#"
-msgstr ""
+msgstr "[.filename]#src/release/doc/en_US.ISO8859-1/shared/xml/release.dsl#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:225
+#, fuzzy
 msgid "[.filename]#src/release/doc/shared/examples/Makefile.relnotesng#"
-msgstr ""
+msgstr "[.filename]#src/release/doc/shared/examples/Makefile.relnotesng#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:226
+#, fuzzy
 msgid "[.filename]#src/release/doc/shared/xml/release.ent#"
-msgstr ""
+msgstr "[.filename]#src/release/doc/shared/xml/release.ent#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:227
+#, fuzzy
 msgid "[.filename]#src/sys/conf/newvers.sh#"
-msgstr ""
+msgstr "[.filename]#src/sys/conf/newvers.sh#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:228
+#, fuzzy
 msgid "[.filename]#src/sys/sys/param.h#"
-msgstr ""
+msgstr "[.filename]#src/sys/sys/param.h#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:229
+#, fuzzy
 msgid "[.filename]#src/usr.sbin/pkg_install/add/main.c#"
-msgstr ""
+msgstr "[.filename]#src/usr.sbin/pkg_install/add/main.c#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:230
+#, fuzzy
 msgid "[.filename]#doc/en_US.ISO8859-1/htdocs/search/opensearch/man.xml#"
-msgstr ""
+msgstr "[.filename]#doc/en_US.ISO8859-1/htdocs/search/opensearch/man.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:232
+#, fuzzy
 msgid ""
 "The release notes and errata files also need to be adjusted for the new "
 "release (on the release branch) and truncated appropriately (on the stable/"
 "current branch):"
-msgstr ""
+msgstr "还需要调整发行说明和勘误文件，以适配新版本（在发布分支上），并在 stable/current 分支上按适当范围截断："
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:234
+#, fuzzy
 msgid "[.filename]#src/release/doc/en_US.ISO8859-1/relnotes/common/new.xml#"
-msgstr ""
+msgstr "[.filename]#src/release/doc/en_US.ISO8859-1/relnotes/common/new.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:235
+#, fuzzy
 msgid "[.filename]#src/release/doc/en_US.ISO8859-1/errata/article.xml#"
-msgstr ""
+msgstr "[.filename]#src/release/doc/en_US.ISO8859-1/errata/article.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:239
+#, fuzzy
 msgid ""
 "Sysinstall should be updated to note the number of available ports and the "
 "amount of disk space required for the Ports Collection.  footnote:[FreeBSD "
 "Ports Collection https://ports.FreeBSD.org] This information is currently "
 "kept in [.filename]#src/usr.sbin/bsdinstall/dist.c#."
-msgstr ""
+msgstr "应更新 Sysinstall，注明可用 port 的数量以及 Ports Collection 所需的磁盘空间。footnote:[FreeBSD Ports Collection link:https://ports.FreeBSD.org[]] 目前，这些信息保存在 [.filename]#src/usr.sbin/bsdinstall/dist.c# 中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:242
+#, fuzzy
 msgid ""
 "After the release has been built, a number of files should be updated to "
 "announce the release to the world.  These files are relative to `head/` "
 "within the `doc/` subversion tree."
-msgstr ""
+msgstr "发布版本构建完成后，应更新一些文件，向全世界宣布该版本。这些文件相对于 `doc/` Subversion 树中的 `head/` 目录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:244
+#, fuzzy
 msgid "[.filename]#share/images/articles/releng/branches-relengX.pic#"
-msgstr ""
+msgstr "[.filename]#share/images/articles/releng/branches-relengX.pic#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:245
+#, fuzzy
 msgid "[.filename]#head/shared/xml/release.ent#"
-msgstr ""
+msgstr "[.filename]#head/shared/xml/release.ent#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:246
+#, fuzzy
 msgid "[.filename]#en_US.ISO8859-1/htdocs/releases/*#"
-msgstr ""
+msgstr "[.filename]#en_US.ISO8859-1/htdocs/releases/*#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:247
+#, fuzzy
 msgid "[.filename]#en_US.ISO8859-1/htdocs/releng/index.xml#"
-msgstr ""
+msgstr "[.filename]#en_US.ISO8859-1/htdocs/releng/index.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:248
+#, fuzzy
 msgid "[.filename]#share/xml/news.xml#"
-msgstr ""
+msgstr "[.filename]#share/xml/news.xml#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:250
+#, fuzzy
 msgid "Additionally, update the \"BSD Family Tree\" file:"
-msgstr ""
+msgstr "此外，还要更新“BSD Family Tree”文件："
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:252
+#, fuzzy
 msgid "[.filename]#src/shared/misc/bsd-family-tree#"
-msgstr ""
+msgstr "[.filename]#src/shared/misc/bsd-family-tree#"
 
 #. type: Title ====
 #: documentation/content/en/articles/releng/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the Release Tag"
-msgstr ""
+msgstr "创建发布标签"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:256
+#, fuzzy
 msgid ""
 "When the final release is ready, the following command will create the "
 "`release/9.2.0` tag."
-msgstr ""
+msgstr "最终发布版本准备就绪后，运行以下命令即可创建 `release/9.2.0` 标签。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/releng/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0\n"
-msgstr ""
+msgstr "# svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:263
+#, fuzzy
 msgid ""
 "The Documentation and Ports managers are responsible for tagging their "
 "respective trees with the `tags/RELEASE_9_2_0` tag."
-msgstr ""
+msgstr "文档和 Ports 管理员负责为各自的树创建 `tags/RELEASE_9_2_0` 标签。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:266
+#, fuzzy
 msgid ""
 "When the Subversion `svn cp` command is used to create a __release tag__, "
 "this identifies the source at a specific point in time.  By creating tags, "
 "we ensure that future release builders will always be able to use the same "
 "source we used to create the official FreeBSD Project releases."
-msgstr ""
+msgstr "使用 Subversion 的 `svn cp` 命令创建__发布标签__时，该标签会标识某一特定时间点的源代码。创建标签可确保未来的发布构建人员始终能够使用我们用于创建 FreeBSD 项目正式发布版本的同一份源代码。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release Building"
-msgstr ""
+msgstr "构建发布版本"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:279
+#, fuzzy
 msgid ""
 "FreeBSD \"releases\" can be built by anyone with a fast machine and access "
 "to a source repository.  (That should be everyone, since we offer Subversion "
@@ -742,162 +809,182 @@ msgid ""
 "documents the `src/release/generate-release.sh` script which is used to "
 "build a release.  `generate-release.sh` is a wrapper around the Makefile "
 "target: `make release`."
-msgstr ""
+msgstr "任何拥有高速计算机并能访问源代码仓库的人都可以构建 FreeBSD“发布版本”。（由于我们提供 Subversion 访问权限，这应该是所有人都能做到的！详情请参阅 extref:{handbook}[《手册》中的 Subversion 一节，svn]。）唯一的特殊要求是必须能够使用 man:md[4] 设备。如果内核中未加载该设备，那么在创建引导介质期间执行 man:mdconfig[8] 时，应会自动加载相应的内核模块。构建发布版本所需的所有工具都可以在 Subversion 仓库的 [.filename]#src/release# 中找到。这些工具旨在提供一致的 FreeBSD 发布版本构建方式。实际上，只需一条命令即可构建完整的发布版本，包括创建适合刻录到 CDROM 或 DVD 的 ISO 映像，以及 FTP 安装目录。man:release[7] 完整说明了用于构建发布版本的 `src/release/generate-release.sh` 脚本。`generate-release.sh` 是 `make release` Makefile 目标的封装脚本。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building a Release"
-msgstr ""
+msgstr "构建发布版本"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:284
+#, fuzzy
 msgid ""
 "man:release[7] documents the exact commands required to build a FreeBSD "
 "release.  The following sequences of commands can build an 9.2.0 release:"
-msgstr ""
+msgstr "man:release[7] 说明了构建 FreeBSD 发布版本所需的确切命令。以下命令序列可用于构建 9.2.0 发布版本："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/releng/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src/release\n"
 "# sh generate-release.sh release/9.2.0 /local3/release\n"
-msgstr ""
+msgstr "# cd /usr/src/release\n# sh generate-release.sh release/9.2.0 /local3/release\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:292
+#, fuzzy
 msgid ""
 "After running these commands, all prepared release files are available in [."
 "filename]#/local3/release/R# directory."
-msgstr ""
+msgstr "运行这些命令后，所有准备好的发布文件都位于 [.filename]#/local3/release/R# 目录中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:294
+#, fuzzy
 msgid ""
 "The release [.filename]#Makefile# can be broken down into several distinct "
 "steps."
-msgstr ""
+msgstr "发布版本的 [.filename]#Makefile# 可以分解为几个不同的步骤。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:296
+#, fuzzy
 msgid ""
 "Creation of a sanitized system environment in a separate directory hierarchy "
 "with \"`make installworld`\"."
-msgstr ""
+msgstr "使用“`make installworld`”在独立的目录层次结构中创建经过净化的系统环境。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:297
+#, fuzzy
 msgid ""
 "Checkout from Subversion of a clean version of the system source, "
 "documentation, and ports into the release build hierarchy."
-msgstr ""
+msgstr "从 Subversion 检出一份干净的系统源代码、文档和 ports 版本，放入发布构建目录层次结构中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:298
+#, fuzzy
 msgid ""
 "Population of [.filename]#/etc# and [.filename]#/dev# in the chrooted "
 "environment."
-msgstr ""
+msgstr "在 chroot 环境中填充 [.filename]#/etc# 和 [.filename]#/dev#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:299
+#, fuzzy
 msgid ""
 "chroot into the release build hierarchy, to make it harder for the outside "
 "environment to taint this build."
-msgstr ""
+msgstr "chroot 到发布构建目录层次结构中，以降低外部环境污染此次构建的可能性。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:300
+#, fuzzy
 msgid "`make world` in the chrooted environment."
-msgstr ""
+msgstr "在 chroot 环境中运行 `make world`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:301
+#, fuzzy
 msgid "Build of Kerberos-related binaries."
-msgstr ""
+msgstr "构建与 Kerberos 相关的二进制文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:302
+#, fuzzy
 msgid "Build [.filename]#GENERIC# kernel."
-msgstr ""
+msgstr "构建 [.filename]#GENERIC# 内核。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:303
+#, fuzzy
 msgid ""
 "Creation of a staging directory tree where the binary distributions will be "
 "built and packaged."
-msgstr ""
+msgstr "创建暂存目录树，用于构建并打包二进制发行文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:304
+#, fuzzy
 msgid ""
 "Build and installation of the documentation toolchain needed to convert the "
 "documentation source (SGML) into HTML and text documents that will accompany "
 "the release."
-msgstr ""
+msgstr "构建并安装文档工具链，以便将文档源代码（SGML）转换为随发布版本提供的 HTML 和文本文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:305
+#, fuzzy
 msgid ""
 "Build and installation of the actual documentation (user manuals, tutorials, "
 "release notes, hardware compatibility lists, and so on.)"
-msgstr ""
+msgstr "构建并安装实际文档（用户手册、教程、发行说明、硬件兼容性列表等）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:306
+#, fuzzy
 msgid "Package up distribution tarballs of the binaries and sources."
-msgstr ""
+msgstr "将二进制文件和源代码打包成发行 tarball。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:307
+#, fuzzy
 msgid "Create FTP installation hierarchy."
-msgstr ""
+msgstr "创建 FTP 安装目录层次结构。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:308
+#, fuzzy
 msgid "_(optionally)_ Create ISO images for CDROM/DVD media."
-msgstr ""
+msgstr "__（可选）__创建用于 CDROM/DVD 介质的 ISO 映像。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:310
+#, fuzzy
 msgid ""
 "For more information about the release build infrastructure, please see man:"
 "release[7]."
-msgstr ""
+msgstr "有关发布构建基础设施的更多信息，请参阅 man:release[7]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/releng/_index.adoc:315
+#, fuzzy
 msgid ""
 "It is important to remove any site-specific settings from [.filename]#/etc/"
 "make.conf#.  For example, it would be unwise to distribute binaries that "
 "were built on a system with `CPUTYPE` set to a specific processor."
-msgstr ""
+msgstr "务必从 [.filename]#/etc/make.conf# 中移除任何特定于站点的设置。例如，分发在 `CPUTYPE` 被设置为特定处理器的系统上构建的二进制文件是不明智的。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Contributed Software (\"ports\")"
-msgstr ""
+msgstr "贡献软件（“ports”）"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:321
+#, fuzzy
 msgid ""
 "The https://ports.FreeBSD.org[FreeBSD Ports collection] is a collection of "
 "over {numports} third-party software packages available for FreeBSD.  The "
 "`{portmgr}` is responsible for maintaining a consistent ports tree that can "
 "be used to create the binary packages that accompany official FreeBSD "
 "releases."
-msgstr ""
+msgstr "link:https://ports.FreeBSD.org[FreeBSD Ports Collection] 是一个包含超过 {numports} 个可供 FreeBSD 使用的第三方软件包的集合。`{portmgr}` 负责维护一致的 ports 树，以便构建随 FreeBSD 官方发布版本提供的二进制软件包。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release ISOs"
-msgstr ""
+msgstr "发布 ISO 映像"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:327
+#, fuzzy
 msgid ""
 "Starting with FreeBSD 4.4, the FreeBSD Project decided to release all four "
 "ISO images that were previously sold on the _BSDi/Wind River Systems/FreeBSD "
@@ -907,27 +994,29 @@ msgid ""
 "bsdinstall[8] can validate and use the contents, and a [.filename]#filename."
 "txt# file that provides a manifest for the disc.  This _manifest_ can be "
 "created with a simple command:"
-msgstr ""
+msgstr "从 FreeBSD 4.4 开始，FreeBSD 项目决定发布此前在 _BSDi/Wind River Systems/FreeBSD Mall_“官方”CDROM 发行版中出售的全部四张 ISO 映像。每张光盘都必须包含 [.filename]#README.TXT# 文件，用于说明光盘内容；[.filename]#CDROM.INF# 文件，用于提供光盘元数据，以便 man:bsdinstall[8] 验证并使用其内容；以及 [.filename]#filename.txt# 文件，用于列出光盘上的文件。可以使用一条简单的命令创建此__清单__："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/releng/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/stage/cdrom# find . -type f | sed -e 's/^\\.\\///' | sort > filename.txt\n"
-msgstr ""
+msgstr "/stage/cdrom# find . -type f | sed -e 's/^\\.\\///' | sort > filename.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:334
+#, fuzzy
 msgid "The specific requirements of each CD are outlined below."
-msgstr ""
+msgstr "以下列出了每张 CD 的具体要求。"
 
 #. type: Title ====
 #: documentation/content/en/articles/releng/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disc 1"
-msgstr ""
+msgstr "光盘 1"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:341
+#, fuzzy
 msgid ""
 "The first disc is almost completely created by `make release`.  The only "
 "changes that should be made to the [.filename]#disc1# directory are the "
@@ -936,10 +1025,11 @@ msgid ""
 "contains software that allow users to create installation floppies from "
 "other operating systems.  This disc should be made bootable so that users of "
 "modern PCs do not need to create installation floppy disks."
-msgstr ""
+msgstr "第一张光盘几乎完全由 `make release` 创建。对 [.filename]#disc1# 目录唯一需要做的更改是添加 [.filename]#tools# 目录，并尽可能放入更多热门的第三方软件包。[.filename]#tools# 目录中包含可供用户在其他操作系统上创建安装软盘的软件。此光盘应设置为可引导，这样现代 PC 用户就不必创建安装软盘。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:346
+#, fuzzy
 msgid ""
 "If a custom kernel of FreeBSD is to be included, then man:bsdinstall[8] and "
 "man:release[7] must be updated to include installation instructions.  The "
@@ -949,16 +1039,17 @@ msgid ""
 "c#, [.filename]#install.c#, and [.filename]#Makefile# will need to be "
 "updated under [.filename]#src/usr.sbin/bsdinstall#.  Optionally, you may "
 "choose to update [.filename]#bsdinstall.8#."
-msgstr ""
+msgstr "如果要包含自定义的 FreeBSD 内核，就必须更新 man:bsdinstall[8] 和 man:release[7]，加入安装说明。相关代码位于 [.filename]#src/release# 和 [.filename]#src/usr.sbin/bsdinstall# 中。具体来说，需要更新 [.filename]#src/release/Makefile#，以及 [.filename]#src/usr.sbin/bsdinstall# 下的 [.filename]#dist.c#、[.filename]#dist.h#、[.filename]#menus.c#、[.filename]#install.c# 和 [.filename]#Makefile#。也可以选择更新 [.filename]#bsdinstall.8#。"
 
 #. type: Title ====
 #: documentation/content/en/articles/releng/_index.adoc:347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disc 2"
-msgstr ""
+msgstr "光盘 2"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:352
+#, fuzzy
 msgid ""
 "The second disc is also largely created by `make release`.  This disc "
 "contains a \"live filesystem\" that can be used from man:bsdinstall[8] to "
@@ -966,16 +1057,17 @@ msgid ""
 "should also contain a compressed copy of the CVS repository in the [."
 "filename]#CVSROOT# directory and commercial software demos in the [."
 "filename]#commerce# directory."
-msgstr ""
+msgstr "第二张光盘也主要由 `make release` 创建。该光盘包含一个“实时文件系统”，可通过 man:bsdinstall[8] 用于排查 FreeBSD 安装问题。此光盘应设置为可引导，还应在 [.filename]#CVSROOT# 目录中包含一份压缩的 CVS 仓库副本，并在 [.filename]#commerce# 目录中包含商业软件演示版。"
 
 #. type: Title ====
 #: documentation/content/en/articles/releng/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Multi-volume Support"
-msgstr ""
+msgstr "多卷支持"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:359
+#, fuzzy
 msgid ""
 "Sysinstall supports multiple volume package installations.  This requires "
 "that each disc have an [.filename]#INDEX# file containing all of the "
@@ -985,7 +1077,7 @@ msgid ""
 "that bsdinstall can tell which volume is which.  When a user attempts to "
 "install a package that is not on the current disc, bsdinstall will prompt "
 "the user to insert the appropriate one."
-msgstr ""
+msgstr "Sysinstall 支持跨多个卷安装软件包。这要求每张光盘都包含一个 [.filename]#INDEX# 文件，其中列出一组介质所有卷上的软件包，并增加一个字段，标明每个软件包所在的卷。该组介质中的每个卷还必须在 [.filename]#cdrom.inf# 文件中设置 `CD_VOLUME` 变量，以便 bsdinstall 区分各个卷。当用户尝试安装当前光盘上没有的软件包时，bsdinstall 会提示用户插入相应的光盘。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:361
@@ -995,88 +1087,96 @@ msgstr "distribution"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FTP Sites"
-msgstr ""
+msgstr "FTP 站点"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:370
+#, fuzzy
 msgid ""
 "When the release has been thoroughly tested and packaged for distribution, "
 "the master FTP site must be updated.  The official FreeBSD public FTP sites "
 "are all mirrors of a master server that is open only to other FTP sites.  "
 "This site is known as `ftp-master`.  When the release is ready, the "
 "following files must be modified on `ftp-master`:"
-msgstr ""
+msgstr "发布版本经过全面测试并打包以供分发后，必须更新主 FTP 站点。所有 FreeBSD 官方公共 FTP 站点都是主服务器的镜像，而主服务器仅对其他 FTP 站点开放。该站点称为 `ftp-master`。发布版本准备就绪后，必须修改 `ftp-master` 上的以下文件："
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/pub/FreeBSD/releases/arch/X.Y-RELEASE/#"
-msgstr ""
+msgstr "[.filename]#/pub/FreeBSD/releases/arch/X.Y-RELEASE/#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:373
+#, fuzzy
 msgid "The installable FTP directory as output from `make release`."
-msgstr ""
+msgstr "由 `make release` 输出的可安装 FTP 目录。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/pub/FreeBSD/ports/arch/packages-X.Y-release/#"
-msgstr ""
+msgstr "[.filename]#/pub/FreeBSD/ports/arch/packages-X.Y-release/#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:376
+#, fuzzy
 msgid "The complete package build for this release."
-msgstr ""
+msgstr "此发布版本的完整软件包构建结果。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/pub/FreeBSD/releases/arch/X.Y-RELEASE/tools#"
-msgstr ""
+msgstr "[.filename]#/pub/FreeBSD/releases/arch/X.Y-RELEASE/tools#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:379
+#, fuzzy
 msgid "A symlink to [.filename]#../../../tools#."
-msgstr ""
+msgstr "指向 [.filename]#../../../tools# 的符号链接。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/pub/FreeBSD/releases/arch/X.Y-RELEASE/packages#"
-msgstr ""
+msgstr "[.filename]#/pub/FreeBSD/releases/arch/X.Y-RELEASE/packages#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:382
+#, fuzzy
 msgid "A symlink to [.filename]#../../../ports/arch/packages-X.Y-release#."
-msgstr ""
+msgstr "指向 [.filename]#../../../ports/arch/packages-X.Y-release# 的符号链接。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/releng/_index.adoc:383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/pub/FreeBSD/releases/arch/ISO-IMAGES/X.Y/X.Y-RELEASE-arch-*.iso#"
-msgstr ""
+msgstr "[.filename]#/pub/FreeBSD/releases/arch/ISO-IMAGES/X.Y/X.Y-RELEASE-arch-*.iso#"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:386
+#, fuzzy
 msgid ""
 "The ISO images. The \"*\" is [.filename]#disc1#, [.filename]#disc2#, etc.  "
 "Only if there is a [.filename]#disc1# and there is an alternative first "
 "installation CD (for example a stripped-down install with no windowing "
 "system) there may be a [.filename]#mini# as well."
-msgstr ""
+msgstr "ISO 映像。“*”表示 [.filename]#disc1#、[.filename]#disc2# 等。只有在存在 [.filename]#disc1#，且另有一张替代的第一安装 CD（例如不包含窗口系统的精简安装盘）时，才可能还有 [.filename]#mini#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:388
+#, fuzzy
 msgid ""
 "For more information about the distribution mirror architecture of the "
 "FreeBSD FTP sites, please see the extref:{hubs}[Mirroring FreeBSD] article."
-msgstr ""
+msgstr "有关 FreeBSD FTP 站点的分发镜像架构的更多信息，请参阅 extref:{hubs}[《FreeBSD 镜像》]一文。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:396
+#, fuzzy
 msgid ""
 "It may take many hours to two days after updating `ftp-master` before a "
 "majority of the Tier-1 FTP sites have the new software depending on whether "
@@ -1092,29 +1192,31 @@ msgid ""
 "been staged and giving the time that the mirror sites should begin allowing "
 "access.  Be sure to include a time zone with the time, for example make it "
 "relative to GMT."
-msgstr ""
+msgstr "更新 `ftp-master` 后，Tier-1 FTP 站点的大多数站点可能要过数小时到两天才能获得新软件，具体取决于是否同时上传了软件包集。发布工程师必须在宣布 FTP 站点上的新软件已全面开放之前，与 {mirror-announce} 协调。理想情况下，发布软件包集应至少在发布日四天前上传。发布文件应在计划发布时间前 24 至 48 小时上传，并关闭“其他用户”的文件权限。这样镜像站点就可以下载这些文件，但公众无法从镜像站点下载。发布文件上传后，应向 {mirror-announce} 发送邮件，说明发布版本已暂存，并告知镜像站点何时开始开放访问。务必注明时区，例如将时间换算为相对于 GMT 的时间。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CD-ROM Replication"
-msgstr ""
+msgstr "CD-ROM 复制"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:401
+#, fuzzy
 msgid ""
 "Coming soon: Tips for sending FreeBSD ISOs to a replicator and quality "
 "assurance measures to be taken."
-msgstr ""
+msgstr "即将推出：将 FreeBSD ISO 映像发送给复制商的提示，以及应采取的质量保证措施。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Extensibility"
-msgstr ""
+msgstr "可扩展性"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:410
+#, fuzzy
 msgid ""
 "Although FreeBSD forms a complete operating system, there is nothing that "
 "forces you to use the system exactly as we have packaged it up for "
@@ -1126,32 +1228,34 @@ msgid ""
 "users of the software we provide.  We certainly encourage innovation in the "
 "form of advanced installation and administration tools, for example, but we "
 "cannot be expected to answer questions about it."
-msgstr ""
+msgstr "尽管 FreeBSD 是一套完整的操作系统，但没有任何规定要求你必须完全按照我们打包分发的方式使用它。我们努力让系统尽可能具备可扩展性，使其能够作为其他商业产品的基础。关于这一点，我们唯一的“规则”是：如果你要分发经过重大修改的 FreeBSD，我们鼓励你记录这些增强功能！FreeBSD 社区只能帮助支持我们所提供软件的用户。我们当然鼓励以高级安装和管理工具等形式进行创新，但不能指望我们为这些工具解答问题。"
 
 #. type: Title ===
 #: documentation/content/en/articles/releng/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Scripting `bsdinstall`"
-msgstr ""
+msgstr "编写 `bsdinstall` 脚本"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:415
+#, fuzzy
 msgid ""
 "The FreeBSD system installation and configuration tool, man:bsdinstall[8], "
 "can be scripted to provide automated installs for large sites.  This "
 "functionality can be used in conjunction with Intel(R) PXE footnote:[extref:"
 "{handbook}advanced-networking[Diskless Operation with PXE, network-"
 "diskless]] to bootstrap systems from the network."
-msgstr ""
+msgstr "FreeBSD 系统安装和配置工具 man:bsdinstall[8] 可通过脚本实现自动化安装，适用于大型站点。此功能可结合 Intel(R) PXE footnote:[extref:{handbook}advanced-networking[使用 PXE 进行无盘操作，network-diskless]]，从网络引导系统。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:417
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lessons Learned from FreeBSD 4.4"
-msgstr ""
+msgstr "从 FreeBSD 4.4 中吸取的经验"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:424
+#, fuzzy
 msgid ""
 "The release engineering process for 4.4 formally began on August 1st, 2001.  "
 "After that date all commits to the `RELENG_4` branch of FreeBSD had to be "
@@ -1161,10 +1265,11 @@ msgid ""
 "officer was very involved in the last week of the process as several "
 "security issues were found in the earlier release candidates.  A total of "
 "over _500_ emails were sent to the `{re}` in little over a month."
-msgstr ""
+msgstr "4.4 版的发布工程流程于 2001 年 8 月 1 日正式启动。此后，必须获得 `{re}` 的明确批准，才能向 FreeBSD 的 `RELENG_4` 分支提交更改。面向 x86 架构的第一个候选发布版本于 8 月 16 日发布，随后又发布了 4 个候选版本，最终于 9 月 18 日正式发布。在流程的最后一周，安全官员深度参与其中，因为此前的候选发布版本中发现了若干安全问题。一个多月的时间里，发给 `{re}` 的邮件总数超过了 __500__ 封。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:428
+#, fuzzy
 msgid ""
 "Our user community has made it very clear that the security and stability of "
 "a FreeBSD release should not be sacrificed for any self-imposed deadlines or "
@@ -1172,24 +1277,26 @@ msgid ""
 "lifetime and the need for standardized release engineering procedures has "
 "never been more apparent.  This will become even more important as FreeBSD "
 "is ported to new platforms."
-msgstr ""
+msgstr "我们的用户社区已经明确表示，不应为了人为设定的截止日期或目标发布日期而牺牲 FreeBSD 发布版本的安全性和稳定性。FreeBSD 项目在其发展历程中迅速壮大，对标准化发布工程流程的需求也比以往任何时候都更加明显。随着 FreeBSD 移植到新平台，这一点将变得更加重要。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Future Directions"
-msgstr ""
+msgstr "未来方向"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:434
+#, fuzzy
 msgid ""
 "It is imperative for our release engineering activities to scale with our "
 "growing userbase.  Along these lines we are working very hard to document "
 "the procedures involved in producing FreeBSD releases."
-msgstr ""
+msgstr "随着用户群不断扩大，发布工程活动必须具备相应的扩展能力。为此，我们正努力记录制作 FreeBSD 发布版本所涉及的流程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:436
+#, fuzzy
 msgid ""
 "_Parallelism_ - Certain portions of the release build are actually "
 "\"embarrassingly parallel\". Most of the tasks are very I/O intensive, so "
@@ -1200,40 +1307,44 @@ msgid ""
 "can be happening simultaneously as the `make world` on another disk. Using a "
 "RAID solution (hardware or software) can significantly decrease the overall "
 "build time."
-msgstr ""
+msgstr "__并行处理__——发布构建的某些部分实际上“极易并行化”。大多数任务都非常依赖 I/O，因此使用多块高速磁盘对加快 `make release` 过程而言，比使用多个处理器更重要。如果在 man:chroot[2] 环境中为不同的目录层次结构使用多块磁盘，那么可以在一块磁盘上运行 `make world` 的同时，在另一块磁盘上检出 CVS 的 [.filename]#ports# 和 [.filename]#doc# 树。使用 RAID 方案（硬件或软件）可以显著缩短整体构建时间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:437
+#, fuzzy
 msgid ""
 "_Cross-building releases_ - Building IA-64 or Alpha release on x86 hardware? "
 "`make TARGET=ia64 release`."
-msgstr ""
+msgstr "__跨架构构建发布__ —— 在 x86 硬件上构建 IA-64 或 Alpha 版本？`make TARGET=ia64 release`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:438
+#, fuzzy
 msgid ""
 "_Regression Testing_ - We need better automated correctness testing for "
 "FreeBSD."
-msgstr ""
+msgstr "__回归测试__ —— 我们需要为 FreeBSD 提供更完善的自动化正确性测试。"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:439
+#, fuzzy
 msgid ""
 "_Installation Tools_ - Our installation program has long since outlived its "
 "intended life span. Several projects are under development to provide a more "
 "advanced installation mechanism. The libh project was one such project that "
 "aimed to provide an intelligent new package framework and GUI installation "
 "program."
-msgstr ""
+msgstr "__安装工具__ —— 我们的安装程序早已超出其预期使用期限。若干项目正在开发中，旨在提供更先进的安装机制。libh 项目就是其中之一，其目标是提供智能化的新软件包框架和图形用户界面安装程序。"
 
 #. type: Title ==
 #: documentation/content/en/articles/releng/_index.adoc:441
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Acknowledgements"
-msgstr ""
+msgstr "致谢"
 
 #. type: Plain text
 #: documentation/content/en/articles/releng/_index.adoc:446
+#, fuzzy
 msgid ""
 "I would like to thank Jordan Hubbard for giving me the opportunity to take "
 "on some of the release engineering responsibilities for FreeBSD 4.4 and also "
@@ -1251,4 +1362,4 @@ msgid ""
 "and John Baldwin's proposed release engineering process notes. footnote:"
 "[John Baldwin's FreeBSD Release Engineering Proposal https://people.FreeBSD."
 "org/~jhb/docs/releng.txt]"
-msgstr ""
+msgstr "我要感谢 Jordan Hubbard 给我机会承担 FreeBSD 4.4 的部分发行工程职责，也感谢他多年来所做的一切，让 FreeBSD 成就了今天的样子。当然，如果没有 `{asami}`、`{steve}`、`{bmah}`、`{nik}`、`{obrien}`、`{kris}`、`{jhb}` 以及 FreeBSD 开发社区其他成员所做的所有发行相关工作，本次发行也不可能完成。我还要感谢 `{rgrimes}`、`{phk}` 以及其他在 FreeBSD 早期参与发行工程工具开发的人。本文参考了 CSRG 的发行工程文档 footnote:[Marshall Kirk McKusick、Michael J. Karels 和 Keith Bostic：link:http://docs.FreeBSD.org/44doc/papers/releng.html[4.3BSD 的发行工程]]、NetBSD 项目 footnote:[NetBSD 开发者文档：发行工程 link:http://www.NetBSD.org/developers/releng/index.html[]]，以及 John Baldwin 提出的发行工程流程说明。footnote:[John Baldwin 的 FreeBSD 发行工程提案 link:https://people.FreeBSD.org/~jhb/docs/releng.txt[]]"

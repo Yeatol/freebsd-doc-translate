@@ -17,19 +17,20 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/parti.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part I. General"
-msgstr ""
+msgstr "第一部分：通用"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/parti.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General"
-msgstr ""
+msgstr "通用"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/parti.adoc:14
+#, fuzzy
 msgid ""
 "The General Part includes miscellaneous information, settings, and tools "
 "that do not belong to a specific category."
-msgstr ""
+msgstr "通用部分包含不属于特定类别的杂项信息、设置和工具。"

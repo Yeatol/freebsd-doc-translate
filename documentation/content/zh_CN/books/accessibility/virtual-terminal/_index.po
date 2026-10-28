@@ -17,799 +17,825 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Available features in the virtual console useful for accessibility"
-msgstr ""
+msgstr "虚拟控制台中有助于提升可访问性的功能"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Vision"
-msgstr ""
+msgstr "第二部分．视觉"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 2. Virtual Terminal"
-msgstr ""
+msgstr "第 2 章．虚拟终端"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Virtual Terminal"
-msgstr ""
+msgstr "虚拟终端"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:57
+#, fuzzy
 msgid ""
 "Virtual Terminal, commonly referenced and documented as man:vt[4] is the "
 "system's built-in extref:{handbook}ports[virtual console].  It is installed "
 "by default, provides a command-line interface, and starts automatically at "
 "boot.  This chapter presents an overview and examples of key features and "
 "utilities relevant to visual accessibility."
-msgstr ""
+msgstr "虚拟终端通常以 man:vt[4] 的形式被引用和记录，是系统内置的 extref:{handbook}ports[虚拟控制台]。它默认安装，提供命令行界面，并在启动时自动运行。本章概述与视觉无障碍相关的主要功能和实用工具，并提供示例。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Colors"
-msgstr ""
+msgstr "颜色"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:62
+#, fuzzy
 msgid ""
 "The Virtual Terminal supports color configuration both via configuration "
 "files and interactively through a dedicated utility."
-msgstr ""
+msgstr "虚拟终端支持通过配置文件设置颜色，也支持使用专用工具进行交互式配置。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Loader.conf"
-msgstr ""
+msgstr "Loader.conf"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:69
+#, fuzzy
 msgid ""
 "Colors can be set and saved using the man:loader.conf[5] file.  To change a "
 "default color, add a line in the following format: `kern.vt.color._colornum_."
 "rgb=\"_colorspec_\"`, where:"
-msgstr ""
+msgstr "可以使用 man:loader.conf[5] 文件设置并保存颜色。要更改默认颜色，请按以下格式添加一行：`kern.vt.color._colornum_.rgb=\"_colorspec_\"`，其中："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:71
+#, fuzzy
 msgid ""
 "`_colornum_` is the numeric identifier of the color to be customized (see "
 "the table below)."
-msgstr ""
+msgstr "`_colornum_` 是要自定义颜色的数字标识符（参见下表）。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:72
+#, fuzzy
 msgid ""
 "`_colorspec_` is a specification of the color, either as a comma-separated "
 "RGB triplet (red, green, and blue, each value from 0 to 255) or as an HTML-"
 "style hexadecimal value."
-msgstr ""
+msgstr "`_colorspec_` 是颜色规范，可以是以逗号分隔的 RGB 三元组（红、绿、蓝各值范围为 0 到 255），也可以是 HTML 样式的十六进制值。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default palette: Color, color number, default color in rgb, default color in html."
-msgstr ""
+msgstr "默认调色板：颜色、颜色编号、默认颜色 RGB 值、默认颜色 HTML 值。"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Color"
-msgstr ""
+msgstr "颜色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_colornum_"
-msgstr ""
+msgstr "_colornum_"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "default _colorspec_ RGB"
-msgstr ""
+msgstr "默认 _colorspec_ RGB 值"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "default _colorspec_  html"
-msgstr ""
+msgstr "默认 _colorspec_ HTML 值"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Black"
-msgstr ""
+msgstr "黑色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:81
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0,0,0"
-msgstr ""
+msgstr "0,0,0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#000000"
-msgstr ""
+msgstr "#000000"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark red"
-msgstr ""
+msgstr "深红色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "127,0,0"
-msgstr ""
+msgstr "127,0,0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#7f0000"
-msgstr ""
+msgstr "#7f0000"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark green"
-msgstr ""
+msgstr "深绿色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0,127,0"
-msgstr ""
+msgstr "0,127,0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#007f00"
-msgstr ""
+msgstr "#007f00"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark yellow"
-msgstr ""
+msgstr "深黄色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "196,161,0"
-msgstr ""
+msgstr "196,161,0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#c4a100"
-msgstr ""
+msgstr "#c4a100"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark blue"
-msgstr ""
+msgstr "深蓝色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "51,102,163"
-msgstr ""
+msgstr "51,102,163"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#3366a3"
-msgstr ""
+msgstr "#3366a3"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark magenta"
-msgstr ""
+msgstr "深洋红色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "127,0,127"
-msgstr ""
+msgstr "127,0,127"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#7f007f"
-msgstr ""
+msgstr "#7f007f"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark cyan"
-msgstr ""
+msgstr "深青色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0,127,127"
-msgstr ""
+msgstr "0,127,127"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#007f7f"
-msgstr ""
+msgstr "#007f7f"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light gray"
-msgstr ""
+msgstr "浅灰色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "191,191,191"
-msgstr ""
+msgstr "191,191,191"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#bfbfbf"
-msgstr ""
+msgstr "#bfbfbf"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dark gray"
-msgstr ""
+msgstr "深灰色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "115,130,138"
-msgstr ""
+msgstr "115,130,138"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#73828a"
-msgstr ""
+msgstr "#73828a"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light red"
-msgstr ""
+msgstr "浅红色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "255,0,0"
-msgstr ""
+msgstr "255,0,0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#ff0000"
-msgstr ""
+msgstr "#ff0000"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light green"
-msgstr ""
+msgstr "浅绿色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0,255, 0"
-msgstr ""
+msgstr "0,255, 0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#00ff00"
-msgstr ""
+msgstr "#00ff00"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light yellow"
-msgstr ""
+msgstr "浅黄色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:135
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "255,255,0"
-msgstr ""
+msgstr "255,255,0"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#ffff00"
-msgstr ""
+msgstr "#ffff00"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light blue"
-msgstr ""
+msgstr "浅蓝色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "115,158,207"
-msgstr ""
+msgstr "115,158,207"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#739ecf"
-msgstr ""
+msgstr "#739ecf"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light magenta"
-msgstr ""
+msgstr "浅洋红色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "255,0,255"
-msgstr ""
+msgstr "255,0,255"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#ff00ff"
-msgstr ""
+msgstr "#ff00ff"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light cyan"
-msgstr ""
+msgstr "浅青色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "0,255,255"
-msgstr ""
+msgstr "0,255,255"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#00ffff"
-msgstr ""
+msgstr "#00ffff"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "White"
-msgstr ""
+msgstr "白色"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "255,255,255"
-msgstr ""
+msgstr "255,255,255"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#ffffff"
-msgstr ""
+msgstr "#ffffff"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Set background in white, text in black, boot messages in red."
-msgstr ""
+msgstr "将背景设为白色、文本设为黑色、启动消息设为红色。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:165
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:241
+#, fuzzy
 msgid "[.filename]#/boot/loader.conf#"
-msgstr ""
+msgstr "[.filename]#/boot/loader.conf#"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Background black to white\n"
 "kern.vt.color.0.rgb=\"255,255,255\"\n"
-msgstr ""
+msgstr "# Background black to white\nkern.vt.color.0.rgb=\"255,255,255\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Text light gray to black\n"
 "kern.vt.color.7.rgb=\"0,0,0\"\n"
-msgstr ""
+msgstr "# Text light gray to black\nkern.vt.color.7.rgb=\"0,0,0\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Boot white to red\n"
 "kern.vt.color.15.rgb=\"255,0,0\"\n"
-msgstr ""
+msgstr "# Boot white to red\nkern.vt.color.15.rgb=\"255,0,0\"\n"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vidcontrol"
-msgstr ""
+msgstr "Vidcontrol"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:185
+#, fuzzy
 msgid ""
 "The man:vidcontrol[1] utility allows you to configure colors interactively.  "
 "Use the `show` option to display the list of available colors:"
-msgstr ""
+msgstr "man:vidcontrol[1] 工具允许你交互式配置颜色。使用 `show` 选项可显示可用颜色列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:189
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidcontrol show\n"
-msgstr ""
+msgstr "% vidcontrol show\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:193
+#, fuzzy
 msgid ""
 "To set the foreground color, use `vidcontrol _color_`.  For example, to set "
 "the text color to green:"
-msgstr ""
+msgstr "要设置前景色，请使用 `vidcontrol _color_`。例如，要将文本颜色设为绿色："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidcontrol green\n"
-msgstr ""
+msgstr "% vidcontrol green\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:201
+#, fuzzy
 msgid ""
 "To set both foreground and background colors, use `vidcontrol _foreground_ "
 "_background_`.  For example, to set blue text on a green background:"
-msgstr ""
+msgstr "要同时设置前景色和背景色，请使用 `vidcontrol _foreground_ _background_`。例如，要将文本设为蓝色、背景设为绿色："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidcontrol blue green\n"
-msgstr ""
+msgstr "% vidcontrol blue green\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:210
+#, fuzzy
 msgid ""
 "Configurations made with man:vidcontrol[1] are not persistent across "
 "shutdown.  To make the settings permanent, add the following line to man:rc."
 "conf[5]: `allscreens_flags=\"-c _foreground_ _background_\"`."
-msgstr ""
+msgstr "使用 man:vidcontrol[1] 所做的配置在关机后不会保留。要永久保存这些设置，请在 man:rc.conf[5] 中添加以下行：`allscreens_flags=\"-c _foreground_ _background_\"`。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Set blue foreground and green background."
-msgstr ""
+msgstr "将前景色设为蓝色，背景色设为绿色。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:216
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:304
+#, fuzzy
 msgid "[.filename]#/etc/rc.conf#"
-msgstr ""
+msgstr "[.filename]#/etc/rc.conf#"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "allscreens_flags=\"-c blue green\"\n"
-msgstr ""
+msgstr "allscreens_flags=\"-c blue green\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:228
+#, fuzzy
 msgid ""
 "Setting allscreens_flags=\"-c _colors_\" in [.filename]#/etc/rc.conf# takes "
 "effect after the system boots.  To change the colors during the boot "
 "process, edit [.filename]#/boot/loader.conf# as crossref:virtual-"
 "terminal[vt4-colors-loader,previously described]."
-msgstr ""
+msgstr "在 [.filename]#/etc/rc.conf# 中设置 `allscreens_flags=\"-c _colors_\"`，会在系统启动后生效。要在启动过程中更改颜色，请编辑 [.filename]#/boot/loader.conf#，如 crossref:virtual-terminal[vt4-colors-loader,前文所述]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resolution"
-msgstr ""
+msgstr "分辨率"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:235
+#, fuzzy
 msgid ""
 "The `kern.vt.fb.default_mode=\"<width>x<height>\"` option in man:loader."
 "conf[5] allows you to configure the display resolution.  Technically, it "
 "specifies the display mode of the Virtual Terminal, allowing you to control "
 "the size of elements displayed on the screen."
-msgstr ""
+msgstr "man:loader.conf[5] 中的 `kern.vt.fb.default_mode=\"<width>x<height>\"` 选项可用于配置显示分辨率。严格来说，它指定的是虚拟终端的显示模式，从而可以控制屏幕上显示元素的大小。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sets the width to 800 and the height to 600."
-msgstr ""
+msgstr "将宽度设为 800，高度设为 600。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern.vt.fb.default_mode=\"800x600\"\n"
-msgstr ""
+msgstr "kern.vt.fb.default_mode=\"800x600\"\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Font"
-msgstr ""
+msgstr "字体"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:253
+#, fuzzy
 msgid ""
 "Virtual Terminal allows you to configure the font in use, and the system "
 "supports installing and utilizing additional fonts."
-msgstr ""
+msgstr "Virtual Terminal 允许配置正在使用的字体，系统也支持安装和使用其他字体。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Select a Font"
-msgstr ""
+msgstr "选择字体"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:259
+#, fuzzy
 msgid ""
 "The utilities man:vidfont[1] and man:vidcontrol[1] can load a font from [."
 "filename]#/usr/share/vt/fonts/#.  To list the currently available fonts:"
-msgstr ""
+msgstr "man:vidfont[1] 和 man:vidcontrol[1] 实用程序可以从 [.filename]#/usr/share/vt/fonts/# 加载字体。要列出当前可用的字体："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ls /usr/share/vt/fonts\n"
-msgstr ""
+msgstr "% ls /usr/share/vt/fonts\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:266
+#, fuzzy
 msgid "Usually a file name has the format `<name>-<width>x<height>`, where:"
-msgstr ""
+msgstr "通常，文件名格式为 `<name>-<width>x<height>`，其中："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:268
+#, fuzzy
 msgid "`<name>` is the font name."
-msgstr ""
+msgstr "`<name>` 是字体名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:269
+#, fuzzy
 msgid "`<width>x<height>` is the size."
-msgstr ""
+msgstr "`<width>x<height>` 是尺寸。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:272
+#, fuzzy
 msgid ""
 "man:vidfont[1] provides an interactive menu in a Text User Interface to "
 "select a font.  Run the following command:"
-msgstr ""
+msgstr "man:vidfont[1] 提供一个文本用户界面交互菜单，用于选择字体。运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidfont\n"
-msgstr ""
+msgstr "% vidfont\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:280
+#, fuzzy
 msgid ""
 "Alternatively, man:vidcontrol[1] provides a CLI, `vidcontrol -f _font_`.  "
 "Example for `spleen-32x64.fnt`:"
-msgstr ""
+msgstr "或者，man:vidcontrol[1] 提供命令行界面：`vidcontrol -f _font_`。以 `spleen-32x64.fnt` 为例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidcontrol -f spleen-32x64.fnt\n"
-msgstr ""
+msgstr "% vidcontrol -f spleen-32x64.fnt\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:290
+#, fuzzy
 msgid ""
 "Tip: You can omit the _.fnt_ extension when specifying the file name.  For "
 "example, to load `spleen-32x64.fnt`, use:"
-msgstr ""
+msgstr "提示：指定文件名时可以省略 _.fnt_ 扩展名。例如，要加载 `spleen-32x64.fnt`，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% vidcontrol -f spleen-32x64\n"
-msgstr ""
+msgstr "% vidcontrol -f spleen-32x64\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:298
+#, fuzzy
 msgid ""
 "Settings configured with either utility are not preserved after a reboot."
-msgstr ""
+msgstr "使用任一实用程序配置的设置在重启后都不会保留。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Select the font to load at each startup."
-msgstr ""
+msgstr "选择每次启动时加载的字体。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:308
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "allscreens_flags=\"-f spleen-32x64.fnt\"\n"
-msgstr ""
+msgstr "allscreens_flags=\"-f spleen-32x64.fnt\"\n"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "New Fonts"
-msgstr ""
+msgstr "新字体"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:317
+#, fuzzy
 msgid ""
 "The man:vtfontcvt[8] utility allows you to convert a font into the .fnt "
 "format for use in the Virtual Terminal.  The converted font must be copied "
 "to [.filename]#/usr/share/vt/fonts/# and selected as crossref:virtual-"
 "terminal[vt4-select-font,previously described]."
-msgstr ""
+msgstr "man:vtfontcvt[8] 实用程序可以将字体转换为 .fnt 格式，以便在 Virtual Terminal 中使用。转换后的字体必须复制到 [.filename]#/usr/share/vt/fonts/#，然后按 crossref:virtual-terminal[vt4-select-font,前文所述]进行选择。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bell"
-msgstr ""
+msgstr "蜂鸣器"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:322
+#, fuzzy
 msgid "The terminal bell can be activated by:"
-msgstr ""
+msgstr "可以通过以下方式启用终端蜂鸣器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl kern.vt.enable_bell=1\n"
-msgstr ""
+msgstr "# sysctl kern.vt.enable_bell=1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:329
+#, fuzzy
 msgid ""
 "To make the configuration persistent after reboot, save it in either man:"
 "loader.conf[5] or man:sysctl.conf[5]."
-msgstr ""
+msgstr "要使配置在重启后仍然生效，请将其保存在 man:loader.conf[5] 或 man:sysctl.conf[5] 中。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Active the bell at each startup."
-msgstr ""
+msgstr "设置为每次启动时启用蜂鸣器。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:337
+#, fuzzy
 msgid "[.filename]#/boot/loader.conf# or [.filename]#/etc/sysctl.conf#"
-msgstr ""
+msgstr "[.filename]#/boot/loader.conf# 或 [.filename]#/etc/sysctl.conf#"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/virtual-terminal/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern.vt.enable_bell=1\n"
-msgstr ""
+msgstr "kern.vt.enable_bell=1\n"

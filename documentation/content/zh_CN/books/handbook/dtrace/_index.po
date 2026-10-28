@@ -26,15 +26,15 @@ msgstr "如何在 FreeBSD 上开启和使用 DTrace。"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 28. DTrace"
-msgstr ""
+msgstr "第 28 章：DTrace"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:15
@@ -101,10 +101,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:66
+#, fuzzy
 msgid ""
 "The official guide to DTrace is maintained by the illumos project at https://"
 "illumos.org/books/dtrace/bookinfo.html[illumos Dynamic Tracing Guide]."
-msgstr ""
+msgstr "DTrace 的官方指南由 illumos 项目维护，网址为 link:https://illumos.org/books/dtrace/bookinfo.html[illumos 动态跟踪指南]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:68
@@ -120,10 +121,11 @@ msgstr "DTrace 是什么，它提供了些哪些特性。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:71
+#, fuzzy
 msgid ""
 "Differences between the Solaris(TM) DTrace implementation and the one "
 "provided by FreeBSD."
-msgstr ""
+msgstr "Solaris(TM) DTrace 实现与 FreeBSD 提供的实现之间的差异。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:72
@@ -139,17 +141,19 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:76
+#, fuzzy
 msgid ""
 "Understand UNIX(R) and FreeBSD basics (crossref:basics[basics,FreeBSD "
 "Basics])."
-msgstr ""
+msgstr "了解 UNIX(R) 和 FreeBSD 基础知识（crossref:basics[basics,FreeBSD 基础知识]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:77
+#, fuzzy
 msgid ""
 "Have some familiarity with security and how it pertains to FreeBSD (crossref:"
 "security[security,Security])."
-msgstr ""
+msgstr "对安全及其与 FreeBSD 的关系有一定了解（crossref:security[security,安全]）。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:79
@@ -173,19 +177,21 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload dtraceall\n"
-msgstr ""
+msgstr "# kldload dtraceall\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:91
+#, fuzzy
 msgid ""
 "Beginning with FreeBSD 10.0-RELEASE, the modules are automatically loaded "
 "when man:dtrace[1] is run."
-msgstr ""
+msgstr "从 FreeBSD 10.0-RELEASE 开始，运行 man:dtrace[1] 时会自动加载这些模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:96
+#, fuzzy
 msgid ""
 "FreeBSD uses the `DDB_CTF` kernel option to enable support for loading man:"
 "ctf[5] data from kernel modules and the kernel itself.  `CTF` is the "
@@ -195,10 +201,11 @@ msgid ""
 "tools.  The `ctfconvert` utility parses `DWARF` `ELF` debug sections created "
 "by the compiler and `ctfmerge` merges `CTF` `ELF` sections from objects into "
 "either executables or shared libraries."
-msgstr ""
+msgstr "FreeBSD 使用 `DDB_CTF` 内核选项，以支持从内核模块和内核本身加载 man:ctf[5] 数据。`CTF` 是 Solaris(TM) Compact C Type Format（紧凑 C 类型格式），它封装了一种精简形式的调试信息，类似于 `DWARF` 和历史悠久的 stabs。`CTF` 数据由 man:ctfconvert[1] 和 man:ctfmerge[1] 构建工具添加到二进制文件中。`ctfconvert` 工具会解析编译器生成的 `DWARF` `ELF` 调试节，而 `ctfmerge` 会将对象中的 `CTF` `ELF` 节合并到可执行文件或共享库中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:103
+#, fuzzy
 msgid ""
 "Some different providers exist for FreeBSD than for Solaris(TM).  Most "
 "notable is the `dtmalloc` provider, which allows tracing man:malloc[9] by "
@@ -208,19 +215,21 @@ msgid ""
 "operating systems are not compatible, in the sense that their probes have "
 "different argument types.  Thus, `D` scripts written on Solaris(TM) may or "
 "may not work unmodified on FreeBSD, and vice versa."
-msgstr ""
+msgstr "FreeBSD 与 Solaris(TM) 提供的探测器有所不同。最值得注意的是 `dtmalloc` 探测器，它允许在 FreeBSD 内核中按类型跟踪 man:malloc[9]。Solaris(TM) 中的一些探测器（例如 `cpc`）在 FreeBSD 中不存在，未来的 FreeBSD 版本中可能会提供这些探测器。此外，两种操作系统中都有的一些探测器也不兼容，因为它们的探测点参数类型不同。因此，在 Solaris(TM) 上编写的 `D` 脚本可能无需修改即可在 FreeBSD 上运行，也可能不行，反之亦然。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:107
+#, fuzzy
 msgid ""
 "Due to security differences, only `root` may use DTrace on FreeBSD.  "
 "Solaris(TM) has a few low level security checks which do not yet exist in "
 "FreeBSD.  As such, the [.filename]#/dev/dtrace/dtrace# is strictly limited "
 "to `root`."
-msgstr ""
+msgstr "由于安全方面的差异，在 FreeBSD 上只有 `root` 可以使用 DTrace。Solaris(TM) 有一些 FreeBSD 尚未具备的低级安全检查。因此，[.filename]#/dev/dtrace/dtrace# 严格限制为 `root` 使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:111
+#, fuzzy
 msgid ""
 "DTrace falls under the Common Development and Distribution License (`CDDL`) "
 "license.  To view this license on FreeBSD, see [.filename]#/usr/src/cddl/"
@@ -229,7 +238,7 @@ msgid ""
 "While a FreeBSD kernel with DTrace support is `BSD` licensed, the `CDDL` is "
 "used when the modules are distributed in binary form or the binaries are "
 "loaded."
-msgstr ""
+msgstr "DTrace 采用通用开发与发行许可证（`CDDL`）。要在 FreeBSD 上查看此许可证，请参阅 [.filename]#/usr/src/cddl/contrib/opensolaris/OPENSOLARIS.LICENSE#，也可以在线查看： link:http://opensource.org/licenses/CDDL-1.0[http://opensource.org/licenses/CDDL-1.0]。虽然支持 DTrace 的 FreeBSD 内核采用 `BSD` 许可证，但以二进制形式分发模块或加载二进制文件时使用的是 `CDDL`。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:113
@@ -239,6 +248,7 @@ msgstr "启用 DTrace 支持"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:117
+#, fuzzy
 msgid ""
 "In FreeBSD 9.2 and 10.0, DTrace support is built into the [."
 "filename]#GENERIC# kernel.  Users of earlier versions of FreeBSD or who "
@@ -246,7 +256,7 @@ msgid ""
 "lines to a custom kernel configuration file and recompile the kernel using "
 "the instructions in crossref:kernelconfig[kernelconfig,Configuring the "
 "FreeBSD Kernel]:"
-msgstr ""
+msgstr "在 FreeBSD 9.2 和 10.0 中，DTrace 支持已内置于 [.filename]#GENERIC# 内核中。使用早期 FreeBSD 版本的用户，或希望静态编译 DTrace 支持的用户，应将以下行添加到自定义内核配置文件中，并按照 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明重新编译内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:124
@@ -275,14 +285,16 @@ msgstr "options         KDTRACE_FRAME\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:135
+#, fuzzy
 msgid ""
 "This option provides support for man:dtrace_fbt[4].  While DTrace will work "
 "without this option, there will be limited support for function boundary "
 "tracing."
-msgstr ""
+msgstr "此选项为 man:dtrace_fbt[4] 提供支持。没有此选项，DTrace 仍可运行，但函数边界跟踪功能将受到限制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:139
+#, fuzzy
 msgid ""
 "Once the FreeBSD system has rebooted into the new kernel, or the DTrace "
 "kernel modules have been loaded using `kldload dtraceall`, install the "
@@ -290,7 +302,7 @@ msgid ""
 "ready-made scripts for collecting system information.  There are scripts to "
 "check open files, memory, CPU usage, and a lot more.  FreeBSD includes some "
 "scripts in the base system as well; see [.filename]#/usr/share/dtrace#."
-msgstr ""
+msgstr "FreeBSD 系统重启并运行新内核后，或使用 `kldload dtraceall` 加载 DTrace 内核模块后，请安装当前版本的 DTrace Toolkit（package:sysutils/dtrace-toolkit[]），其中包含一组用于收集系统信息的现成脚本。这些脚本可以检查打开的文件、内存、CPU 使用情况等。FreeBSD 基本系统中也包含一些脚本，详见 [.filename]#/usr/share/dtrace#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:144
@@ -307,6 +319,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:151
+#, fuzzy
 msgid ""
 "The DTrace Toolkit includes many scripts in the special language of DTrace.  "
 "This language is called the D language and it is very similar to C++.  An in "
@@ -314,7 +327,7 @@ msgid ""
 "Refer to the FreeBSD man:d[7] manual page for an overview of the D language "
 "on FreeBSD.  The D language is also covered extensively in the https://www."
 "illumos.org/books/dtrace/bookinfo.html[illumos Dynamic Tracing Guide]."
-msgstr ""
+msgstr "DTrace Toolkit 包含许多使用 DTrace 专用语言编写的脚本。这种语言称为 D 语言，与 C++ 非常相似。深入讨论该语言超出了本文档的范围。有关 FreeBSD 上 D 语言的概述，请参阅 FreeBSD man:d[7] 手册页。 link:https://www.illumos.org/books/dtrace/bookinfo.html[illumos 动态跟踪指南]也对 D 语言进行了全面介绍。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:153
@@ -325,25 +338,27 @@ msgstr "启用 DTrace 支持"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:156
+#, fuzzy
 msgid ""
 "To add DTrace support to an out-of-kernel module, which is useful for "
 "development and debugging, include the following line in the module's "
 "Makefile:"
-msgstr ""
+msgstr "要为内核外模块添加 DTrace 支持（这对于开发和调试很有用），请在模块的 Makefile 中加入以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "CFLAGS+= -DKDTRACE_HOOKS\n"
-msgstr ""
+msgstr "CFLAGS+= -DKDTRACE_HOOKS\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:164
+#, fuzzy
 msgid ""
 "This flag enables DTrace hooks during compilation, allowing for advanced "
 "debugging and monitoring of the module.  Ensure to recompile the module "
 "after this modification to activate DTrace functionality."
-msgstr ""
+msgstr "此标志会在编译期间启用 DTrace 钩子，从而允许对模块进行高级调试和监控。修改后请重新编译模块，以启用 DTrace 功能。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:166
@@ -378,17 +393,18 @@ msgstr "要查看所有探测器，管理员可以执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dtrace -l | more\n"
-msgstr ""
+msgstr "# dtrace -l | more\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:183
+#, fuzzy
 msgid ""
 "Each probe has an `ID`, a `PROVIDER` (e.g., `dtrace` or `fbt`), a `MODULE`, "
 "and a `FUNCTION NAME`.  Refer to man:dtrace[1] for more information about "
 "this command."
-msgstr ""
+msgstr "每个探测点都有一个 `ID`、一个 `PROVIDER`（例如 `dtrace` 或 `fbt`）、一个 `MODULE` 和一个 `FUNCTION NAME`。有关此命令的详细信息，请参阅 man:dtrace[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:185
@@ -413,20 +429,21 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/local/share/dtrace-toolkit\n"
 "# ./hotkernel\n"
 "Sampling... Hit Ctrl-C to end.\n"
-msgstr ""
+msgstr "# cd /usr/local/share/dtrace-toolkit\n# ./hotkernel\nSampling... Hit Ctrl-C to end.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:198
+#, fuzzy
 msgid ""
 "As instructed, use the kbd:[Ctrl+C] key combination to stop the process.  "
 "Upon termination, the script will display a list of kernel functions and "
 "timing information, sorting the output in increasing order of time:"
-msgstr ""
+msgstr "按照提示，使用 kbd:[Ctrl+C] 组合键停止进程。脚本终止后，会显示内核函数列表及其计时信息，并按耗时从低到高排序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:227
@@ -488,14 +505,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:231
+#, fuzzy
 msgid ""
 "This script will also work with kernel modules.  To use this feature, run "
 "the script with `-m`:"
-msgstr ""
+msgstr "此脚本也适用于内核模块。要使用此功能，请使用 `-m` 运行脚本："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ./hotkernel -m\n"
 "Sampling... Hit Ctrl-C to end.\n"
@@ -513,10 +531,11 @@ msgid ""
 "0xc108a253                                                 73   0.0%\n"
 "kernel                                                    874   0.4%\n"
 "0xc10981a5                                             213781  99.6%\n"
-msgstr ""
+msgstr "# ./hotkernel -m\nSampling... Hit Ctrl-C to end.\n^C\nMODULE                                                  COUNT   PCNT\n0xc107882e                                                  1   0.0%\n0xc10e6aa4                                                  1   0.0%\n0xc1076983                                                  1   0.0%\n0xc109708a                                                  1   0.0%\n0xc1075a5d                                                  1   0.0%\n0xc1077325                                                  1   0.0%\n0xc108a245                                                  1   0.0%\n0xc107730d                                                  1   0.0%\n0xc1097063                                                  2   0.0%\n0xc108a253                                                 73   0.0%\nkernel                                                    874   0.4%\n0xc10981a5                                             213781  99.6%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:256
+#, fuzzy
 msgid ""
 "The [.filename]#procsystime# script captures and prints the system call time "
 "usage for a given process `ID` (`PID`) or process name.  In the following "
@@ -524,26 +543,26 @@ msgid ""
 "filename]#procsystime# was executed and remained waiting while a few "
 "commands were typed on the other incarnation of `csh`.  These are the "
 "results of this test:"
-msgstr ""
+msgstr "[.filename]#procsystime# 脚本会捕获并显示指定进程 `ID`（`PID`）或进程名称的系统调用耗时。以下示例中，先启动了一个新的 [.filename]#/bin/csh# 实例，然后运行 [.filename]#procsystime# 并让它等待，同时在另一个 `csh` 实例中输入了几个命令。测试结果如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ./procsystime -n csh\n"
 "Tracing... Hit Ctrl-C to end...\n"
 "^C\n"
-msgstr ""
+msgstr "# ./procsystime -n csh\nTracing... Hit Ctrl-C to end...\n^C\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Elapsed Times for processes csh,\n"
-msgstr ""
+msgstr "进程 csh 的耗时，\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "         SYSCALL          TIME (ns)\n"
 "          getpid               6131\n"
@@ -564,14 +583,15 @@ msgid ""
 "           vfork            3258923\n"
 "      sigsuspend            6985124\n"
 "            read         3988049784\n"
-msgstr ""
+msgstr "         SYSCALL          TIME (ns)\n          getpid               6131\n       sigreturn               8121\n           close              19127\n           fcntl              19959\n             dup              26955\n         setpgid              28070\n            stat              31899\n       setitimer              40938\n           wait4              62717\n       sigaction              67372\n     sigprocmask             119091\n    gettimeofday             183710\n           write             263242\n          execve             492547\n           ioctl             770073\n           vfork            3258923\n      sigsuspend            6985124\n            read         3988049784\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/dtrace/_index.adoc:286
+#, fuzzy
 msgid ""
 "As shown, the man:read[2] system call used the most time in nanoseconds "
 "while the man:getpid[2] system call used the least amount of time."
-msgstr ""
+msgstr "如图所示，man:read[2] 系统调用耗时最长（以纳秒计），而 man:getpid[2] 系统调用耗时最短。"
 
 #, fuzzy
 #~ msgid ""

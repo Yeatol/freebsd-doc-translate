@@ -20,79 +20,85 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing Style and some conventions used in the FreeBSD Documentation Project"
-msgstr ""
+msgstr "FreeBSD 文档项目采用的写作风格和一些惯例"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 12. Writing Style"
-msgstr ""
+msgstr "第 12 章：写作风格"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing Style"
-msgstr ""
+msgstr "写作风格"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:51
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tips"
-msgstr ""
+msgstr "提示"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:57
+#, fuzzy
 msgid ""
 "Technical documentation can be improved by consistent use of several "
 "principles.  Most of these can be classified into three goals: _be clear_, "
 "_be complete_, and _be concise_.  These goals can conflict with each other.  "
 "Good writing consists of a balance between them."
-msgstr ""
+msgstr "遵循若干原则并保持一致，可以改进技术文档。 其中大多数原则可归纳为三个目标：__清晰__、__完整__和__简洁__。 这些目标之间可能相互冲突。 好的写作应在它们之间取得平衡。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:59
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Be Clear"
-msgstr ""
+msgstr "清晰"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:64
+#, fuzzy
 msgid ""
 "Clarity is extremely important.  The reader may be a novice, or reading the "
 "document in a second language.  Strive for simple, uncomplicated text that "
 "clearly explains the concepts."
-msgstr ""
+msgstr "清晰至关重要。 读者可能是初学者，也可能正在用第二语言阅读文档。 务必使用简单、易懂的文字，清楚地解释概念。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:68
+#, fuzzy
 msgid ""
 "Avoid flowery or embellished speech, jokes, or colloquial expressions.  "
 "Write as simply and clearly as possible.  Simple text is easier to "
 "understand and translate."
-msgstr ""
+msgstr "避免华丽或矫饰的措辞、笑话和口语表达。 尽可能写得简单、清楚。 简单的文字更容易理解和翻译。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:73
+#, fuzzy
 msgid ""
 "Keep explanations as short, simple, and clear as possible.  Avoid empty "
 "phrases like \"in order to\", which usually just means \"to\".  Avoid "
 "potentially patronizing words like \"basically\".  Avoid Latin terms like "
 "\"i.e.,\" or \"cf.\", which may be unknown outside of academic or scientific "
 "groups."
-msgstr ""
+msgstr "解释应尽可能简短、简单、清晰。 避免使用 \"in order to\" 之类的空洞短语，它通常只表示 \"to\"。 避免使用 \"basically\" 之类可能显得居高临下的词语。 避免使用 \"i.e.,\" 或 \"cf.\" 之类的拉丁语词语，学术或科学圈子之外的人可能并不熟悉它们。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:77
+#, fuzzy
 msgid ""
 "Write in a formal style.  Avoid addressing the reader as \"you\".  For "
 "example, say \"copy the file to [.filename]#/tmp#\" rather than \"you can "
 "copy the file to [.filename]#/tmp#\"."
-msgstr ""
+msgstr "使用正式的文风。 避免以 \"you\" 称呼读者。 例如，应写 \"将文件复制到 [.filename]#/tmp#\"，而不是 \"你可以将文件复制到 [.filename]#/tmp#\"。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:84
+#, fuzzy
 msgid ""
 "Give clear, correct, _tested_ examples.  A trivial example is better than no "
 "example.  A good example is better yet.  Do not give bad examples, "
@@ -100,46 +106,50 @@ msgid ""
 "done that way\".  Bad examples are worse than no examples.  Give good "
 "examples, because _even when warned not to use the example as shown_, the "
 "reader will usually just use the example as shown."
-msgstr ""
+msgstr "给出清晰、正确且__经过测试__的示例。 一个简单的示例也胜过没有示例。 好的示例更好。 不要给出糟糕的示例；道歉或类似 \"但实际上绝不应该这样做\" 的句子，往往能让人识别出这类示例。 糟糕的示例比没有示例更糟。 请给出好的示例，因为__即使警告读者不要照示例所示使用__，读者通常还是会照着示例使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:87
+#, fuzzy
 msgid ""
 "Avoid _weasel words_ like \"should\", \"might\", \"try\", or \"could\".  "
 "These words imply that the speaker is unsure of the facts, and create doubt "
 "in the reader."
-msgstr ""
+msgstr "避免使用 \"should\"、\"might\"、\"try\" 或 \"could\" 之类的__模棱两可的词语__。 这些词语暗示作者对事实并不确定，会使读者产生疑虑。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:89
+#, fuzzy
 msgid ""
 "Similarly, give instructions as imperative commands: not \"you should do this"
 "\", but merely \"do this\"."
-msgstr ""
+msgstr "同样，说明应使用祈使句：不要说 \"你应该这样做\"，而只说 \"这样做\"。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Be Complete"
-msgstr ""
+msgstr "完整"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:97
+#, fuzzy
 msgid ""
 "Do not make assumptions about the reader's abilities or skill level.  Tell "
 "them what they need to know.  Give links to other documents to provide "
 "background information without having to recreate it.  Put yourself in the "
 "reader's place, anticipate the questions they will ask, and answer them."
-msgstr ""
+msgstr "不要假设读者具备何种能力或技能水平。 应说明他们需要了解的内容。 提供其他文档的链接，以补充背景信息，而不必重复编写。 设身处地为读者着想，预想他们会提出的问题，并予以解答。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Be Concise"
-msgstr ""
+msgstr "简洁"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:104
+#, fuzzy
 msgid ""
 "While features should be documented completely, sometimes there is so much "
 "information that the reader cannot easily find the specific detail needed.  "
@@ -147,77 +157,83 @@ msgid ""
 "approach is to have an introduction, then a \"quick start\" section that "
 "describes the most common situation, followed by an in-depth reference "
 "section."
-msgstr ""
+msgstr "功能应有完整的文档说明，但有时信息过多，读者难以找到所需的具体细节。 如何在完整和简洁之间取得平衡是一项挑战。 一种做法是先写引言，再写说明最常见情况的 \"快速入门\" 部分，最后提供深入的参考部分。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Guidelines"
-msgstr ""
+msgstr "指南"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:109
+#, fuzzy
 msgid ""
 "To promote consistency between the myriad authors of the FreeBSD "
 "documentation, some guidelines have been drawn up for authors to follow."
-msgstr ""
+msgstr "为使 FreeBSD 文档的众多作者保持写作风格一致，我们制定了一些指南，供作者遵循。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use American English Spelling"
-msgstr ""
+msgstr "使用美式英语拼写"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:114
+#, fuzzy
 msgid ""
 "There are several variants of English, with different spellings for the same "
 "word.  Where spellings differ, use the American English variant.  \"color\", "
 "not \"colour\", \"rationalize\", not \"rationalise\", and so on."
-msgstr ""
+msgstr "英语有多种变体，同一个词的拼写也各不相同。 拼写存在差异时，应使用美式英语拼写，例如使用 \"color\"，而不是 \"colour\"；使用 \"rationalize\"，而不是 \"rationalise\"，等等。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:119
+#, fuzzy
 msgid ""
 "The use of British English may be accepted in the case of a contributed "
 "article, however the spelling must be consistent within the whole document.  "
 "The other documents such as books, web site, manual pages, etc. must use "
 "American English."
-msgstr ""
+msgstr "对于投稿文章，可以接受英式英语，但全文拼写必须一致。 其他文档，如书籍、网站、手册页等，必须使用美式英语。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Do not use contractions"
-msgstr ""
+msgstr "不要使用缩写形式"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:125
+#, fuzzy
 msgid ""
 "Do not use contractions.  Always spell the phrase out in full.  \"Don't use "
 "contractions\" is wrong."
-msgstr ""
+msgstr "不要使用缩写形式。 始终写出完整的词组。 \"Don't use contractions\" 这种写法是错误的。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:127
+#, fuzzy
 msgid ""
 "Avoiding contractions makes for a more formal tone, is more precise, and is "
 "slightly easier for translators."
-msgstr ""
+msgstr "避免使用缩写形式能使语气更正式、表达更准确，也让译者稍微更容易翻译。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use the serial comma"
-msgstr ""
+msgstr "使用列举逗号"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:131
+#, fuzzy
 msgid ""
 "In a list of items within a paragraph, separate each item from the others "
 "with a comma.  Separate the last item from the others with a comma and the "
 "word \"and\"."
-msgstr ""
+msgstr "在段落中的项目列表里，用逗号分隔各个项目。 最后一个项目也要与前面的项目用逗号隔开，并在逗号后加上 \"and\"。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:133
@@ -226,144 +242,163 @@ msgstr "例如："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:135
+#, fuzzy
 msgid "This is a list of one, two and three items."
-msgstr ""
+msgstr "这是一个包含 one、two 和 three 个项目的列表。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:137
+#, fuzzy
 msgid ""
 "Is this a list of three items, \"one\", \"two\", and \"three\", or a list of "
 "two items, \"one\" and \"two and three\"?"
-msgstr ""
+msgstr "这是包含三个项目 \"one\"、\"two\" 和 \"three\" 的列表，还是包含两个项目 \"one\" 和 \"two and three\" 的列表？"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:139
+#, fuzzy
 msgid "It is better to be explicit and include a serial comma:"
-msgstr ""
+msgstr "最好明确表达并加上列举逗号："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:141
+#, fuzzy
 msgid "This is a list of one, two, and three items."
-msgstr ""
+msgstr "这是一个包含 one、two 和 three 个项目的列表。"
 
 #. type: Labeled list
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Avoid redundant phrases"
-msgstr ""
+msgstr "避免冗余短语"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:144
+#, fuzzy
 msgid ""
 "Do not use redundant phrases.  In particular, \"the command\", \"the file\", "
 "and \"man command\" are often redundant."
-msgstr ""
+msgstr "不要使用冗余短语。 尤其是 \"the command\"、\"the file\" 和 \"man command\"，通常都是多余的。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:146
+#, fuzzy
 msgid "For example, commands:"
-msgstr ""
+msgstr "例如，命令："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:148
+#, fuzzy
 msgid "Wrong: Use the `git` command to update sources."
-msgstr ""
+msgstr "错误：使用 `git` 命令更新源代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:150
+#, fuzzy
 msgid "Right: Use `git` to update sources."
-msgstr ""
+msgstr "正确：使用 `git` 更新源代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:152
+#, fuzzy
 msgid "Filenames:"
-msgstr ""
+msgstr "文件名："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:154
+#, fuzzy
 msgid "Wrong: ... in the filename [.filename]#/etc/rc.local#..."
-msgstr ""
+msgstr "错误：……在文件名 [.filename]#/etc/rc.local# 中……"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:156
+#, fuzzy
 msgid "Right: ... in [.filename]#/etc/rc.local#..."
-msgstr ""
+msgstr "正确：……在 [.filename]#/etc/rc.local# 中……"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:158
+#, fuzzy
 msgid ""
 "Manual page references (the second example uses `man:[]` with the man:csh[1] "
 "entity):"
-msgstr ""
+msgstr "手册页引用（第二个示例使用 `man:[]` 和 man:csh[1] 实体）："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:160
+#, fuzzy
 msgid "Wrong: See `man csh` for more information."
-msgstr ""
+msgstr "错误：有关更多信息，请参阅 `man csh`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:162
+#, fuzzy
 msgid "Right: See man:csh[1]."
-msgstr ""
+msgstr "正确：请参阅 man:csh[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:164
+#, fuzzy
 msgid ""
 "For more information about writing style, see http://www.bartleby.com/141/"
 "[Elements of Style] by William Strunk."
-msgstr ""
+msgstr "有关更多写作风格的信息，请参阅 William Strunk 所著的 link:http://www.bartleby.com/141/[《文体要素》]。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Style Guide"
-msgstr ""
+msgstr "风格指南"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:169
+#, fuzzy
 msgid ""
 "To keep the source for the documentation consistent when many different "
 "people are editing it, please follow these style conventions."
-msgstr ""
+msgstr "为使多人编辑的文档源文件保持一致，请遵循以下风格约定。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "One sentence per line"
-msgstr ""
+msgstr "每行一句"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:176
+#, fuzzy
 msgid ""
 "Use Semantic Line Breaks in the documentation, a technique called \"one "
 "sentence per line\".  The idea of this technique is to help the users to "
 "write and read documentation.  To get more information about this technique "
 "read the link:https://sembr.org/[Semantic Line Breaks] page."
-msgstr ""
+msgstr "文档应使用语义换行，这种技巧称为 \"每行一句\"。 这项技巧旨在帮助用户编写和阅读文档。 如需了解更多信息，请阅读 link:https://sembr.org/[语义换行]页面。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:178
+#, fuzzy
 msgid "This is an example which does not use \"one sentence per line\"."
-msgstr ""
+msgstr "以下示例没有使用 \"每行一句\" 的技巧。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.\n"
-msgstr ""
+msgstr "人人生而自由，在尊严和权利上一律平等。他们赋有理性和良心，并应以手足之情的精神彼此相待。\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:184
+#, fuzzy
 msgid "And this is an example which uses the technique."
-msgstr ""
+msgstr "以下示例使用了这项技巧。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "All human beings are born free and equal in dignity and rights.\n"
 "They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.\n"
-msgstr ""
+msgstr "人人生而自由，在尊严和权利上一律平等。\n他们赋有理性和良心，并应以手足之情的精神彼此相待。\n"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:191
@@ -373,221 +408,225 @@ msgstr "缩写"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:196
+#, fuzzy
 msgid ""
 "Acronyms should be defined the first time they appear in a document, as in: "
 "\"Network Time Protocol (NTP)\".  After the acronym has been defined, use "
 "the acronym alone unless it makes more sense contextually to use the whole "
 "term.  Acronyms are usually defined only once per chapter or per document."
-msgstr ""
+msgstr "缩略词首次出现在文档中时应先给出定义，例如：\"网络时间协议（NTP）\"。 定义缩略词后，除非从上下文看使用完整术语更合适，否则应只使用缩略词。 通常每章或每份文档只需定义一次缩略词。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:198
+#, fuzzy
 msgid "All acronyms should be enclosed using the ` character."
-msgstr ""
+msgstr "所有缩略词都应使用 ` 字符括起来。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Special Character List"
-msgstr ""
+msgstr "特殊字符列表"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:204
+#, fuzzy
 msgid ""
 "This list of special characters shows the correct syntax and the output when "
 "used in FreeBSD documentation.  If a character is not on this list, ask "
 "about it on the {freebsd-doc}."
-msgstr ""
+msgstr "此特殊字符列表展示了在 FreeBSD 文档中使用时的正确语法及其输出。 如果字符不在此列表中，请在 {freebsd-doc} 上询问。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:209
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Syntax"
-msgstr ""
+msgstr "语法"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Rendered"
-msgstr ""
+msgstr "呈现结果"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Copyright"
-msgstr ""
+msgstr "版权符号"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+(C)+"
-msgstr ""
+msgstr "+(C)+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(C)"
-msgstr ""
+msgstr "(C)"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Registered"
-msgstr ""
+msgstr "注册商标符号"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+(R)+"
-msgstr ""
+msgstr "+(R)+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:221
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(R)"
-msgstr ""
+msgstr "(R)"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Trademark"
-msgstr ""
+msgstr "商标符号"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+(TM)+"
-msgstr ""
+msgstr "+(TM)+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(TM)"
-msgstr ""
+msgstr "(TM)"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Em dash"
-msgstr ""
+msgstr "长破折号"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+--+"
-msgstr ""
+msgstr "+--+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "--"
-msgstr ""
+msgstr "--"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ellipses"
-msgstr ""
+msgstr "省略号"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:231
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+...+"
-msgstr ""
+msgstr "+...+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Single right arrow"
-msgstr ""
+msgstr "单右箭头"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+->+"
-msgstr ""
+msgstr "+->+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "->"
-msgstr ""
+msgstr "->"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Double right arrow"
-msgstr ""
+msgstr "双右箭头"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+=>+"
-msgstr ""
+msgstr "+=>+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "=>"
-msgstr ""
+msgstr "=>"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Single left arrow"
-msgstr ""
+msgstr "单左箭头"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+<-+"
-msgstr ""
+msgstr "+<-+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "<-"
-msgstr ""
+msgstr "<-"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Double left arrow"
-msgstr ""
+msgstr "双左箭头"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "+<=+"
-msgstr ""
+msgstr "+<=+"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "<="
-msgstr ""
+msgstr "<="
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:252
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Linting with Vale"
-msgstr ""
+msgstr "使用 Vale 进行检查"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:257
+#, fuzzy
 msgid ""
 "To maintain clarity and consistency across all documentation and website "
 "pages, link:https://vale.sh[Vale] styles have been introduced in the "
@@ -595,26 +634,27 @@ msgid ""
 "writing customized rules and can be used in multiple scenarios.  Currently "
 "link:https://vale.sh[Vale] can be used as a command line tool, for CI/CD "
 "pipelines, and integrated into an editor of choice."
-msgstr ""
+msgstr "为确保所有文档和网站页面清晰且风格一致，文档树中引入了 link:https://vale.sh[Vale] 样式。 link:https://vale.sh[Vale] 是一款功能强大的写作检查工具，可用于编写自定义规则，并适用于多种场景。 目前，link:https://vale.sh[Vale] 可作为命令行工具使用，也可用于 CI/CD 流水线，或集成到所选编辑器中。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:259
+#, fuzzy
 msgid ""
 "The following table describes the current rule names and their respective "
 "severity."
-msgstr ""
+msgstr "下表说明了当前规则的名称及其对应的严重级别。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Severity"
-msgstr ""
+msgstr "严重级别"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:267
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.BrandTerms"
-msgstr ""
+msgstr "FreeBSD.BrandTerms"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:269
@@ -623,100 +663,101 @@ msgstr ""
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:296
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:299
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "error"
-msgstr ""
+msgstr "错误"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:270
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.ConsciousLanguage"
-msgstr ""
+msgstr "FreeBSD.ConsciousLanguage"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:272
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:278
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:281
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "warning"
-msgstr ""
+msgstr "警告"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.Contractions"
-msgstr ""
+msgstr "FreeBSD.Contractions"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:275
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "suggestion"
-msgstr ""
+msgstr "建议"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.EOLSpacing"
-msgstr ""
+msgstr "FreeBSD.EOLSpacing"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.Hang"
-msgstr ""
+msgstr "FreeBSD.Hang"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:282
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.Hyphens"
-msgstr ""
+msgstr "FreeBSD.Hyphens"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.Spacing"
-msgstr ""
+msgstr "FreeBSD.Spacing"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:288
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD.SuperfluousOptArgInLinks"
-msgstr ""
+msgstr "FreeBSD.SuperfluousOptArgInLinks"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vale.Avoid"
-msgstr ""
+msgstr "Vale.Avoid"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vale.Repetition"
-msgstr ""
+msgstr "Vale.Repetition"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vale.Spelling"
-msgstr ""
+msgstr "Vale.Spelling"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vale.Terms"
-msgstr ""
+msgstr "Vale.Terms"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Current Vale Rules"
-msgstr ""
+msgstr "当前 Vale 规则"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:311
+#, fuzzy
 msgid ""
 "FreeBSD.BrandTerms: According to the copyright rules of The FreeBSD "
 "Foundation, *freebsd* should be written as *FreeBSD*.  Similarly, every "
@@ -725,161 +766,177 @@ msgid ""
 "others and to take time to write PostgreSQL, Node.js, Let's Encrypt etc.  "
 "Missing brand names should be added to the [.filename]#.vale/styles/FreeBSD/"
 "BrandTerms.yml# in the `doc` repository."
-msgstr ""
+msgstr "FreeBSD.BrandTerms：根据 FreeBSD 基金会的版权规则，*freebsd* 应写作 *FreeBSD*。类似地，每个主要供应商和公司都有关于其品牌名称和商标的具体书写规则。应尊重他人的品牌价值，并花时间正确书写 PostgreSQL、Node.js、Let's Encrypt 等名称。缺少的品牌名称应添加到 `doc` 仓库中的 [.filename]#.vale/styles/FreeBSD/BrandTerms.yml#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:313
+#, fuzzy
 msgid ""
 "FreeBSD.ConsciousLanguage: This rule proposes use of conscious language so "
 "that sensitive words pointing to the color, age, race, or sexual orientation "
 "of people are avoided where possible."
-msgstr ""
+msgstr "FreeBSD.ConsciousLanguage：此规则建议使用包容性语言，尽可能避免使用涉及人们肤色、年龄、种族或性取向的敏感词语。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:316
+#, fuzzy
 msgid ""
 "FreeBSD.Contractions: Contracted words should not be used.  This rule avoids "
 "all contractions and suggests full words."
-msgstr ""
+msgstr "FreeBSD.Contractions：不应使用缩写形式。此规则避免使用所有缩写形式，并建议使用完整词语。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:318
+#, fuzzy
 msgid ""
 "FreeBSD.EOLSpacing: In most of the documents EOL spacing is present which is "
 "not the desirable situation."
-msgstr ""
+msgstr "FreeBSD.EOLSpacing：大多数文档中都存在行尾空格，这并非理想情况。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:321
+#, fuzzy
 msgid ""
 "FreeBSD.Hang: `Hang` is often used to mean that the application has stopped "
 "responding.  This rule proposes better wording."
-msgstr ""
+msgstr "FreeBSD.Hang：`Hang` 常用来表示应用程序已停止响应。此规则建议使用更恰当的措辞。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:323
+#, fuzzy
 msgid ""
 "FreeBSD.Hyphens: Often adverbs ending with 'ly' are added with a hyphen "
 "which is wrong."
-msgstr ""
+msgstr "FreeBSD.Hyphens：以 'ly' 结尾的副词常被错误地用连字符连接。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:325
+#, fuzzy
 msgid ""
 "FreeBSD.Spacing: Often double spaces are hard to catch with the naked eye "
 "and this is addressed here."
-msgstr ""
+msgstr "FreeBSD.Spacing：连续两个空格通常很难用肉眼发现，此规则旨在解决这一问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:327
+#, fuzzy
 msgid ""
 "FreeBSD.SuperfluousOptArgInLinks: Suggest to empty square brackets in `link:"
 "` macros when the displayed text coincides with the URL."
-msgstr ""
+msgstr "FreeBSD.SuperfluousOptArgInLinks：当显示文本与 URL 相同时，建议在 `link:` 宏中使用空方括号。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:331
+#, fuzzy
 msgid ""
 "Vale.Avoid: Enforces the *DO NOT USE* vocabulary terms for The FreeBSD "
 "Project.  If any word is found that should not be in the documentation, the "
 "word should be added to [.filename]#.vale/styles/Vocab/Terms/reject.txt# in "
 "the `doc` repository.  The list is empty at the moment."
-msgstr ""
+msgstr "Vale.Avoid：强制执行 FreeBSD 项目的 *禁止使用* 词汇表。如果发现文档中不应出现的词语，应将其添加到 `doc` 仓库中的 [.filename]#.vale/styles/Vocab/Terms/reject.txt#。目前该列表为空。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:334
+#, fuzzy
 msgid ""
 "Vale.Repetition: Same words are often typed twice when leaving the keyboard "
 "and rejoining the work again.  This rule finds repeated words and warns the "
 "users."
-msgstr ""
+msgstr "Vale.Repetition：离开键盘后再次继续工作时，常会不小心重复输入同一个词语。此规则会查找重复词语并向用户发出警告。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:337
+#, fuzzy
 msgid ""
 "Vale.Spelling: At the moment there is a mix of en_US and en_GB spellings in "
 "the documentation and website.  Vale comes with an in built dictionary from "
 "which uses strictly en_US and do not accept the en_GB variant of any words."
-msgstr ""
+msgstr "Vale.Spelling：目前，文档和网站混用了 en_US 和 en_GB 拼写。Vale 内置的词典严格使用 en_US 拼写，不接受任何词语的 en_GB 变体。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:341
+#, fuzzy
 msgid ""
 "Vale.Terms: Enforces the *PREFERRED* vocabulary terms for The FreeBSD "
 "Project.  At the moment the list of terms is empty and the FreeBSD specific "
 "terms will be added gradually.  If any word is found to be correct and not "
 "available in the dictionary the word should be added to the [.filename]#."
 "vale/styles/Vocab/Terms/accept.txt# in the `doc` repository."
-msgstr ""
+msgstr "Vale.Terms：强制执行 FreeBSD 项目的 *首选* 词汇表。目前词汇列表为空，之后会逐步添加 FreeBSD 专用词语。如果发现某个词语正确但词典中没有，应将其添加到 `doc` 仓库中的 [.filename]#.vale/styles/Vocab/Terms/accept.txt#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:343
+#, fuzzy
 msgid ""
 "More rules will be introduced in the upcoming days when and where required."
-msgstr ""
+msgstr "今后会在需要时引入更多规则。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Vale"
-msgstr ""
+msgstr "使用 Vale"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:349
+#, fuzzy
 msgid ""
 "link:https://vale.sh[Vale] can be used from the command line and from within "
 "an editor or IDE.  package:textproc/vale[] can be installed as following:"
-msgstr ""
+msgstr "link:https://vale.sh[Vale] 可通过命令行以及编辑器或 IDE 使用。可按如下方式安装 package:textproc/vale[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ pkg install vale\n"
-msgstr ""
+msgstr "$ pkg install vale\n"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Vale on the command line"
-msgstr ""
+msgstr "在命令行中使用 Vale"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:359
+#, fuzzy
 msgid ""
 "Assuming that the `doc` repository was cloned into [.filename]#~/doc# the "
 "following commands are required to run:"
-msgstr ""
+msgstr "假设已将 `doc` 仓库克隆到 [.filename]#~/doc#，运行时需要使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% vale .\n"
-msgstr ""
+msgstr "% cd ~/doc\n% vale .\n"
 
 #. type: delimited block = 6
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:370
+#, fuzzy
 msgid ""
 "link:https://vale.sh[Vale] is a CPU and memory intensive program due to the "
 "nature of the application and can take a while to show any output on the "
 "screen.  A better way to run the application is on specific folders or files "
 "rather than the entire `doc` repository as that is already done in the CI "
 "pipeline."
-msgstr ""
+msgstr "由于应用程序的性质，link:https://vale.sh[Vale] 会大量占用 CPU 和内存，可能需要一段时间才会在屏幕上显示输出。更好的做法是仅对特定目录或文件运行该程序，而不是扫描整个 `doc` 仓库；CI 流水线中已采用这种方式。"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Vale in editors"
-msgstr ""
+msgstr "在编辑器中使用 Vale"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/writing-style/_index.adoc:377
+#, fuzzy
 msgid ""
 "link:https://vale.sh[Vale] works with major mainstream editors like package:"
 "editors/vim[], package:editors/emacs[], package:editors/vscode[].  At the "
 "moment the necessary configuration for package:editors/vim[] is described in "
 "crossref:editor-config[editor-config-vim, Vim].  A configuration for package:"
 "editors/emacs[] is being worked on."
-msgstr ""
+msgstr "link:https://vale.sh[Vale] 可与主流编辑器配合使用，例如 package:editors/vim[]、package:editors/emacs[] 和 package:editors/vscode[]。目前，package:editors/vim[] 所需的配置说明见 crossref:editor-config[editor-config-vim, Vim]。package:editors/emacs[] 的配置仍在编写中。"

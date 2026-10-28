@@ -27,9 +27,9 @@ msgstr "编写 FreeBSD 设备驱动程序"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 9. Writing FreeBSD Device Drivers"
-msgstr ""
+msgstr "第 9 章 编写 FreeBSD 设备驱动程序"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:51
@@ -58,11 +58,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:56
+#, fuzzy
 msgid ""
 "Most devices in a UNIX(R)-like operating system are accessed through device-"
 "nodes, sometimes also called special files. These files are usually located "
 "under the directory [.filename]#/dev# in the filesystem hierarchy."
-msgstr ""
+msgstr "类 UNIX(R) 操作系统中的大多数设备都通过设备节点访问，有时也称为特殊文件。这些文件通常位于文件系统层次结构中的 [.filename]#/dev# 目录下。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:58
@@ -95,18 +96,21 @@ msgstr "kld 接口通过下面的特权命令使用："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:67
+#, fuzzy
 msgid "`kldload` - loads a new kernel module"
-msgstr ""
+msgstr "`kldload` - 加载新的内核模块"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:68
+#, fuzzy
 msgid "`kldunload` - unloads a kernel module"
-msgstr ""
+msgstr "`kldunload` - 卸载内核模块"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:69
+#, fuzzy
 msgid "`kldstat` - lists loaded modules"
-msgstr ""
+msgstr "`kldstat` - 列出已加载的模块"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:71
@@ -115,17 +119,17 @@ msgstr "内核模块的程序框架"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * KLD Skeleton\n"
 " * Inspired by Andrew Reiter's Daemonnews article\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * KLD Skeleton\n * Inspired by Andrew Reiter's Daemonnews article\n */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <sys/types.h>\n"
 "#include <sys/systm.h>  /* uprintf */\n"
@@ -133,30 +137,30 @@ msgid ""
 "#include <sys/param.h>  /* defines used in kernel.h */\n"
 "#include <sys/module.h>\n"
 "#include <sys/kernel.h> /* types used in module initialization */\n"
-msgstr ""
+msgstr "#include <sys/types.h>\n#include <sys/systm.h>  /* uprintf */\n#include <sys/errno.h>\n#include <sys/param.h>  /* defines used in kernel.h */\n#include <sys/module.h>\n#include <sys/kernel.h> /* types used in module initialization */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Load handler that deals with the loading and unloading of a KLD.\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * Load handler that deals with the loading and unloading of a KLD.\n */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "skel_loader(struct module *m, int what, void *arg)\n"
 "{\n"
 "\tint err = 0;\n"
-msgstr ""
+msgstr "static int\nskel_loader(struct module *m, int what, void *arg)\n{\n\tint err = 0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tswitch (what) {\n"
 "\tcase MOD_LOAD:                /* kldload */\n"
@@ -171,30 +175,30 @@ msgid ""
 "\t}\n"
 "\treturn(err);\n"
 "}\n"
-msgstr ""
+msgstr "\tswitch (what) {\n\tcase MOD_LOAD:                /* kldload */\n\t\tuprintf(\"Skeleton KLD loaded.\\n\");\n\t\tbreak;\n\tcase MOD_UNLOAD:\n\t\tuprintf(\"Skeleton KLD unloaded.\\n\");\n\t\tbreak;\n\tdefault:\n\t\terr = EOPNOTSUPP;\n\t\tbreak;\n\t}\n\treturn(err);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/* Declare this module to the rest of the kernel */\n"
-msgstr ""
+msgstr "/* Declare this module to the rest of the kernel */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static moduledata_t skel_mod = {\n"
 "\t\"skel\",\n"
 "\tskel_loader,\n"
 "\tNULL\n"
 "};\n"
-msgstr ""
+msgstr "static moduledata_t skel_mod = {\n\t\"skel\",\n\tskel_loader,\n\tNULL\n};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DECLARE_MODULE(skeleton, skel_mod, SI_SUB_KLD, SI_ORDER_ANY);\n"
-msgstr ""
+msgstr "DECLARE_MODULE(skeleton, skel_mod, SI_SUB_KLD, SI_ORDER_ANY);\n"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:120
@@ -211,30 +215,31 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SRCS=skeleton.c\n"
 "KMOD=skeleton\n"
-msgstr ""
+msgstr "SRCS=skeleton.c\nKMOD=skeleton\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.kmod.mk>\n"
-msgstr ""
+msgstr ".include <bsd.kmod.mk>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:133
+#, fuzzy
 msgid ""
 "Running `make` with this makefile will create a file [.filename]#skeleton."
 "ko# that can be loaded into the kernel by typing:"
-msgstr ""
+msgstr "使用此 Makefile 运行 `make` 会创建文件 [.filename]#skeleton.ko#，之后可通过输入以下命令将其加载到内核中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload -v ./skeleton.ko\n"
-msgstr ""
+msgstr "# kldload -v ./skeleton.ko\n"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:140
@@ -263,13 +268,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example of a Sample Echo Pseudo-Device Driver for FreeBSD 10.X - 12.X"
-msgstr ""
+msgstr "FreeBSD 10.X - 12.X 示例：简单回显伪设备驱动程序"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Simple Echo pseudo-device KLD\n"
@@ -278,11 +283,11 @@ msgid ""
 " * Søren (Xride) Straarup\n"
 " * Eitan Adler\n"
 " */\n"
-msgstr ""
+msgstr "/*\n * Simple Echo pseudo-device KLD\n *\n * Murray Stokely\n * Søren (Xride) Straarup\n * Eitan Adler\n */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#include <sys/types.h>\n"
 "#include <sys/systm.h>  /* uprintf */\n"
@@ -292,28 +297,28 @@ msgid ""
 "#include <sys/conf.h>   /* cdevsw struct */\n"
 "#include <sys/uio.h>    /* uio struct */\n"
 "#include <sys/malloc.h>\n"
-msgstr ""
+msgstr "#include <sys/types.h>\n#include <sys/systm.h>  /* uprintf */\n#include <sys/param.h>  /* defines used in kernel.h */\n#include <sys/module.h>\n#include <sys/kernel.h> /* types used in module initialization */\n#include <sys/conf.h>   /* cdevsw struct */\n#include <sys/uio.h>    /* uio struct */\n#include <sys/malloc.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#define BUFFERSIZE 255\n"
-msgstr ""
+msgstr "#define BUFFERSIZE 255\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* Function prototypes */\n"
 "static d_open_t      echo_open;\n"
 "static d_close_t     echo_close;\n"
 "static d_read_t      echo_read;\n"
 "static d_write_t     echo_write;\n"
-msgstr ""
+msgstr "/* Function prototypes */\nstatic d_open_t      echo_open;\nstatic d_close_t     echo_close;\nstatic d_read_t      echo_read;\nstatic d_write_t     echo_write;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* Character device entry points */\n"
 "static struct cdevsw echo_cdevsw = {\n"
@@ -324,38 +329,38 @@ msgid ""
 "\t.d_write = echo_write,\n"
 "\t.d_name = \"echo\",\n"
 "};\n"
-msgstr ""
+msgstr "/* Character device entry points */\nstatic struct cdevsw echo_cdevsw = {\n\t.d_version = D_VERSION,\n\t.d_open = echo_open,\n\t.d_close = echo_close,\n\t.d_read = echo_read,\n\t.d_write = echo_write,\n\t.d_name = \"echo\",\n};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "struct s_echo {\n"
 "\tchar msg[BUFFERSIZE + 1];\n"
 "\tint len;\n"
 "};\n"
-msgstr ""
+msgstr "struct s_echo {\n\tchar msg[BUFFERSIZE + 1];\n\tint len;\n};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* vars */\n"
 "static struct cdev *echo_dev;\n"
 "static struct s_echo *echomsg;\n"
-msgstr ""
+msgstr "/* vars */\nstatic struct cdev *echo_dev;\nstatic struct s_echo *echomsg;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "MALLOC_DECLARE(M_ECHOBUF);\n"
 "MALLOC_DEFINE(M_ECHOBUF, \"echobuffer\", \"buffer for echo module\");\n"
-msgstr ""
+msgstr "MALLOC_DECLARE(M_ECHOBUF);\nMALLOC_DEFINE(M_ECHOBUF, \"echobuffer\", \"buffer for echo module\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * This function is called by the kld[un]load(2) system calls to\n"
@@ -365,11 +370,11 @@ msgid ""
 "echo_loader(struct module *m __unused, int what, void *arg __unused)\n"
 "{\n"
 "\tint error = 0;\n"
-msgstr ""
+msgstr "/*\n * This function is called by the kld[un]load(2) system calls to\n * determine what actions to take when a module is loaded or unloaded.\n */\nstatic int\necho_loader(struct module *m __unused, int what, void *arg __unused)\n{\n\tint error = 0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tswitch (what) {\n"
 "\tcase MOD_LOAD:                /* kldload */\n"
@@ -383,11 +388,11 @@ msgid ""
 "\t\t    \"echo\");\n"
 "\t\tif (error != 0)\n"
 "\t\t\tbreak;\n"
-msgstr ""
+msgstr "\tswitch (what) {\n\tcase MOD_LOAD:                /* kldload */\n\t\terror = make_dev_p(MAKEDEV_CHECKNAME | MAKEDEV_WAITOK,\n\t\t    &echo_dev,\n\t\t    &echo_cdevsw,\n\t\t    0,\n\t\t    UID_ROOT,\n\t\t    GID_WHEEL,\n\t\t    0600,\n\t\t    \"echo\");\n\t\tif (error != 0)\n\t\t\tbreak;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\techomsg = malloc(sizeof(*echomsg), M_ECHOBUF, M_WAITOK |\n"
 "\t\t    M_ZERO);\n"
@@ -404,50 +409,50 @@ msgid ""
 "\t}\n"
 "\treturn (error);\n"
 "}\n"
-msgstr ""
+msgstr "\t\techomsg = malloc(sizeof(*echomsg), M_ECHOBUF, M_WAITOK |\n\t\t    M_ZERO);\n\t\tprintf(\"Echo device loaded.\\n\");\n\t\tbreak;\n\tcase MOD_UNLOAD:\n\t\tdestroy_dev(echo_dev);\n\t\tfree(echomsg, M_ECHOBUF);\n\t\tprintf(\"Echo device unloaded.\\n\");\n\t\tbreak;\n\tdefault:\n\t\terror = EOPNOTSUPP;\n\t\tbreak;\n\t}\n\treturn (error);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "echo_open(struct cdev *dev __unused, int oflags __unused, int devtype __unused,\n"
 "    struct thread *td __unused)\n"
 "{\n"
 "\tint error = 0;\n"
-msgstr ""
+msgstr "static int\necho_open(struct cdev *dev __unused, int oflags __unused, int devtype __unused,\n    struct thread *td __unused)\n{\n\tint error = 0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tuprintf(\"Opened device \\\"echo\\\" successfully.\\n\");\n"
 "\treturn (error);\n"
 "}\n"
-msgstr ""
+msgstr "\tuprintf(\"Opened device \\\"echo\\\" successfully.\\n\");\n\treturn (error);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "static int\n"
 "echo_close(struct cdev *dev __unused, int fflag __unused, int devtype __unused,\n"
 "    struct thread *td __unused)\n"
 "{\n"
-msgstr ""
+msgstr "static int\necho_close(struct cdev *dev __unused, int fflag __unused, int devtype __unused,\n    struct thread *td __unused)\n{\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tuprintf(\"Closing device \\\"echo\\\".\\n\");\n"
 "\treturn (0);\n"
 "}\n"
-msgstr ""
+msgstr "\tuprintf(\"Closing device \\\"echo\\\".\\n\");\n\treturn (0);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * The read function just takes the buf that was saved via\n"
@@ -459,11 +464,11 @@ msgid ""
 "{\n"
 "\tsize_t amt;\n"
 "\tint error;\n"
-msgstr ""
+msgstr "/*\n * The read function just takes the buf that was saved via\n * echo_write() and returns it to userland for accessing.\n * uio(9)\n */\nstatic int\necho_read(struct cdev *dev __unused, struct uio *uio, int ioflag __unused)\n{\n\tsize_t amt;\n\tint error;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/*\n"
 "\t * How big is this read operation?  Either as big as the user wants,\n"
@@ -472,27 +477,27 @@ msgid ""
 "\t */\n"
 "\tamt = MIN(uio->uio_resid, uio->uio_offset >= echomsg->len + 1 ? 0 :\n"
 "\t    echomsg->len + 1 - uio->uio_offset);\n"
-msgstr ""
+msgstr "\t/*\n\t * How big is this read operation?  Either as big as the user wants,\n\t * or as big as the remaining data.  Note that the 'len' does not\n\t * include the trailing null character.\n\t */\n\tamt = MIN(uio->uio_resid, uio->uio_offset >= echomsg->len + 1 ? 0 :\n\t    echomsg->len + 1 - uio->uio_offset);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tif ((error = uiomove(echomsg->msg, amt, uio)) != 0)\n"
 "\t\tuprintf(\"uiomove failed!\\n\");\n"
-msgstr ""
+msgstr "\tif ((error = uiomove(echomsg->msg, amt, uio)) != 0)\n\t\tuprintf(\"uiomove failed!\\n\");\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\treturn (error);\n"
 "}\n"
-msgstr ""
+msgstr "\treturn (error);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * echo_write takes in a character string and saves it\n"
@@ -503,11 +508,11 @@ msgid ""
 "{\n"
 "\tsize_t amt;\n"
 "\tint error;\n"
-msgstr ""
+msgstr "/*\n * echo_write takes in a character string and saves it\n * to buf for later accessing.\n */\nstatic int\necho_write(struct cdev *dev __unused, struct uio *uio, int ioflag __unused)\n{\n\tsize_t amt;\n\tint error;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/*\n"
 "\t * We either write from the beginning or are appending -- do\n"
@@ -515,55 +520,55 @@ msgid ""
 "\t */\n"
 "\tif (uio->uio_offset != 0 && (uio->uio_offset != echomsg->len))\n"
 "\t\treturn (EINVAL);\n"
-msgstr ""
+msgstr "\t/*\n\t * We either write from the beginning or are appending -- do\n\t * not allow random access.\n\t */\n\tif (uio->uio_offset != 0 && (uio->uio_offset != echomsg->len))\n\t\treturn (EINVAL);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* This is a new message, reset length */\n"
 "\tif (uio->uio_offset == 0)\n"
 "\t\techomsg->len = 0;\n"
-msgstr ""
+msgstr "\t/* This is a new message, reset length */\n\tif (uio->uio_offset == 0)\n\t\techomsg->len = 0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Copy the string in from user memory to kernel memory */\n"
 "\tamt = MIN(uio->uio_resid, (BUFFERSIZE - echomsg->len));\n"
-msgstr ""
+msgstr "\t/* Copy the string in from user memory to kernel memory */\n\tamt = MIN(uio->uio_resid, (BUFFERSIZE - echomsg->len));\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\terror = uiomove(echomsg->msg + uio->uio_offset, amt, uio);\n"
-msgstr ""
+msgstr "\terror = uiomove(echomsg->msg + uio->uio_offset, amt, uio);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t/* Now we need to null terminate and record the length */\n"
 "\techomsg->len = uio->uio_offset;\n"
 "\techomsg->msg[echomsg->len] = 0;\n"
-msgstr ""
+msgstr "\t/* Now we need to null terminate and record the length */\n\techomsg->len = uio->uio_offset;\n\techomsg->msg[echomsg->len] = 0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tif (error != 0)\n"
 "\t\tuprintf(\"Write failed: bad address!\\n\");\n"
 "\treturn (error);\n"
 "}\n"
-msgstr ""
+msgstr "\tif (error != 0)\n\t\tuprintf(\"Write failed: bad address!\\n\");\n\treturn (error);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DEV_MODULE(echo, echo_loader, NULL);\n"
-msgstr ""
+msgstr "DEV_MODULE(echo, echo_loader, NULL);\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:320
@@ -572,14 +577,14 @@ msgstr "驱动程序被加载后，你应该能够键入一些东西，如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:328
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# echo -n \"Test Data\" > /dev/echo\n"
 "# cat /dev/echo\n"
 "Opened device \"echo\" successfully.\n"
 "Test Data\n"
 "Closing device \"echo\".\n"
-msgstr ""
+msgstr "# echo -n \"Test Data\" > /dev/echo\n# cat /dev/echo\nOpened device \"echo\" successfully.\nTest Data\nClosing device \"echo\".\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:331
@@ -594,6 +599,7 @@ msgstr "块设备（已消亡）"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:336
+#, fuzzy
 msgid ""
 "Other UNIX(R) systems may support a second type of disk device known as "
 "block devices. Block devices are disk devices for which the kernel provides "
@@ -601,20 +607,22 @@ msgid ""
 "dangerously unreliable. The caching will reorder the sequence of write "
 "operations, depriving the application of the ability to know the exact disk "
 "contents at any one instant in time."
-msgstr ""
+msgstr "其他 UNIX(R) 系统可能支持第二种磁盘设备，称为块设备。块设备是由内核提供缓存的磁盘设备。这种缓存会使块设备几乎无法使用，或者至少变得极不可靠。缓存会改变写操作的顺序，使应用程序无法获知任一时刻磁盘上的确切内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:338
+#, fuzzy
 msgid ""
 "This makes predictable and reliable crash recovery of on-disk data "
 "structures (filesystems, databases, etc.) impossible. Since writes may be "
 "delayed, there is no way the kernel can report to the application which "
 "particular write operation encountered a write error, this further compounds "
 "the consistency problem."
-msgstr ""
+msgstr "这使得磁盘上数据结构（文件系统、数据库等）无法实现可预测且可靠的崩溃恢复。由于写入可能会延迟，内核无法向应用程序报告究竟是哪一次写操作遇到了写入错误，这进一步加剧了一致性问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:340
+#, fuzzy
 msgid ""
 "For this reason, no serious applications rely on block devices, and in fact, "
 "almost all applications which access disks directly take great pains to "
@@ -623,7 +631,7 @@ msgid ""
 "different semantics significantly complicated the relevant kernel code, "
 "FreeBSD dropped support for cached disk devices as part of the modernization "
 "of the disk I/O infrastructure."
-msgstr ""
+msgstr "因此，没有严肃的应用程序会依赖块设备；事实上，几乎所有直接访问磁盘的应用程序都会竭力明确指定始终使用字符设备（或“原始”设备）。由于将每个磁盘（分区）别名映射到两个语义不同的设备会显著增加相关内核代码的复杂度，FreeBSD 在更新磁盘 I/O 基础设施时取消了对带缓存磁盘设备的支持。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/driverbasics/_index.adoc:342

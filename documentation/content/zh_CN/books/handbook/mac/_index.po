@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/mac/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter focuses on the MAC framework and the set of pluggable security policy modules FreeBSD provides for enabling various security mechanisms"
-msgstr ""
+msgstr "本章重点介绍 MAC 框架，以及 FreeBSD 提供的一组可插拔安全策略模块，这些模块可用于启用各种安全机制"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/mac/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/mac/_index.adoc:1
@@ -50,6 +50,7 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:61
+#, fuzzy
 msgid ""
 "FreeBSD supports security extensions based on the POSIX(R).1e draft.  These "
 "security mechanisms include file system Access Control Lists (crossref:"
@@ -62,14 +63,15 @@ msgid ""
 "administrators and the operating system.  This is in contrast to the default "
 "security mechanism of Discretionary Access Control (DAC) where enforcement "
 "is left to the discretion of users."
-msgstr ""
+msgstr "FreeBSD 支持基于 POSIX(R).1e 草案的安全扩展。这些安全机制包括文件系统访问控制列表（crossref:security[fs-acl,“访问控制列表”]）和强制访问控制（MAC）。MAC 允许加载访问控制模块，以实施安全策略。一些模块为系统的一小部分提供保护，用于强化特定服务；另一些模块则为所有主体和对象提供全面的带标签安全机制。定义中的“强制”表示由管理员和操作系统执行控制措施。这与默认安全机制自主访问控制（DAC）不同，后者将执行控制措施的权力留给用户自行决定。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:63
+#, fuzzy
 msgid ""
 "This chapter focuses on the MAC framework and the set of pluggable security "
 "policy modules FreeBSD provides for enabling various security mechanisms."
-msgstr ""
+msgstr "本章重点介绍 MAC 框架，以及 FreeBSD 提供的一组可插拔安全策略模块，这些模块可用于启用各种安全机制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:65
@@ -80,41 +82,47 @@ msgstr "读完本章节，你将会知道："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:67
+#, fuzzy
 msgid "The terminology associated with the MAC framework."
-msgstr ""
+msgstr "与 MAC 框架相关的术语。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:68
+#, fuzzy
 msgid ""
 "The capabilities of MAC security policy modules as well as the difference "
 "between a labeled and non-labeled policy."
-msgstr ""
+msgstr "MAC 安全策略模块的功能，以及带标签策略与无标签策略之间的区别。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:69
+#, fuzzy
 msgid ""
 "The considerations to take into account before configuring a system to use "
 "the MAC framework."
-msgstr ""
+msgstr "在配置系统使用 MAC 框架之前需要考虑的事项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:70
+#, fuzzy
 msgid ""
 "Which MAC security policy modules are included in FreeBSD and how to "
 "configure them."
-msgstr ""
+msgstr "FreeBSD 中包含哪些 MAC 安全策略模块，以及如何配置它们。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:71
+#, fuzzy
 msgid "How to implement a more secure environment using the MAC framework."
-msgstr ""
+msgstr "如何使用 MAC 框架实现更安全的环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:72
+#, fuzzy
 msgid ""
 "How to test the MAC configuration to ensure the framework has been properly "
 "implemented."
-msgstr ""
+msgstr "如何测试 MAC 配置，以确保框架已正确实施。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:74
@@ -125,17 +133,19 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:76
+#, fuzzy
 msgid ""
 "Understand UNIX(R) and FreeBSD basics (crossref:basics[basics,FreeBSD "
 "Basics])."
-msgstr ""
+msgstr "了解 UNIX(R) 和 FreeBSD 基础知识（crossref:basics[basics,FreeBSD 基础知识]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:77
+#, fuzzy
 msgid ""
 "Have some familiarity with security and how it pertains to FreeBSD (crossref:"
 "security[security,Security])."
-msgstr ""
+msgstr "对安全及其与 FreeBSD 的关系有一定了解（crossref:security[security,安全]）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:84
@@ -167,6 +177,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:92
+#, fuzzy
 msgid ""
 "While this chapter covers a broad range of security issues relating to the "
 "MAC framework, the development of new MAC security policy modules will not "
@@ -175,7 +186,7 @@ msgid ""
 "and new module development.  Refer to man:mac_test[4], man:mac_stub[4] and "
 "man:mac_none[4] for more information on these security policy modules and "
 "the various mechanisms they provide."
-msgstr ""
+msgstr "本章涵盖了与 MAC 框架相关的广泛安全问题，但不涉及开发新的 MAC 安全策略模块。MAC 框架中包含的一些安全策略模块具有特定特性，可用于测试和开发新模块。有关这些安全策略模块及其提供的各种机制的更多信息，请参阅 man:mac_test[4]、man:mac_stub[4] 和 man:mac_none[4]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mac/_index.adoc:94
@@ -185,8 +196,9 @@ msgstr "本章出现的重要术语"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:97
+#, fuzzy
 msgid "The following key terms are used when referring to the MAC framework:"
-msgstr ""
+msgstr "提及 MAC 框架时会用到以下关键术语："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:99
@@ -206,17 +218,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:100
+#, fuzzy
 msgid ""
 "_integrity_: the level of trust which can be placed on data. As the "
 "integrity of the data is elevated, so does the ability to trust that data."
-msgstr ""
+msgstr "__完整性__：可对数据赋予的信任程度。数据的完整性越高，对其可信度也越高。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:101
+#, fuzzy
 msgid ""
 "_level_: the increased or decreased setting of a security attribute. As the "
 "level increases, its security is considered to elevate as well."
-msgstr ""
+msgstr "__级别__：安全属性的升高或降低。级别升高时，其安全性也被认为随之提高。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:102
@@ -239,21 +253,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:103
+#, fuzzy
 msgid ""
 "_multilabel_: this property is a file system option which can be set in "
 "single-user mode using man:tunefs[8], during boot using man:fstab[5], or "
 "during the creation of a new file system. This option permits an "
 "administrator to apply different MAC labels on different objects. This "
 "option only applies to security policy modules which support labeling."
-msgstr ""
+msgstr "__多标签__：这是一个文件系统选项，可在单用户模式下使用 man:tunefs[8] 设置，也可在启动时通过 man:fstab[5] 设置，或在创建新文件系统时设置。此选项允许管理员为不同对象应用不同的 MAC 标签。此选项仅适用于支持标签的安全策略模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:104
+#, fuzzy
 msgid ""
 "_single label_: a policy where the entire file system uses one label to "
 "enforce access control over the flow of data. Whenever `multilabel` is not "
 "set, all files will conform to the same label setting."
-msgstr ""
+msgstr "__单标签__：一种使用单个标签对整个文件系统实施数据流访问控制的策略。未设置 `multilabel` 时，所有文件都将遵循相同的标签设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:105
@@ -300,31 +316,34 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:108
+#, fuzzy
 msgid ""
 "_high-watermark_: this type of policy permits the raising of security levels "
 "for the purpose of accessing higher level information. In most cases, the "
 "original level is restored after the process is complete. Currently, the "
 "FreeBSD MAC framework does not include this type of policy."
-msgstr ""
+msgstr "__高水位__：此类策略允许提高安全级别，以便访问更高级别的信息。在大多数情况下，进程完成后会恢复原始级别。目前，FreeBSD MAC 框架不包含此类策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:109
+#, fuzzy
 msgid ""
 "_low-watermark_: this type of policy permits lowering security levels for "
 "the purpose of accessing information which is less secure. In most cases, "
 "the original security level of the user is restored after the process is "
 "complete. The only security policy module in FreeBSD to use this is man:"
 "mac_lomac[4]."
-msgstr ""
+msgstr "__低水位__：此类策略允许降低安全级别，以便访问安全性较低的信息。在大多数情况下，进程完成后会恢复用户的原始安全级别。FreeBSD 中唯一使用此机制的安全策略模块是 man:mac_lomac[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:110
+#, fuzzy
 msgid ""
 "_sensitivity_: usually used when discussing Multilevel Security (MLS). A "
 "sensitivity level describes how important or secret the data should be. As "
 "the sensitivity level increases, so does the importance of the secrecy, or "
 "confidentiality, of the data."
-msgstr ""
+msgstr "__敏感度__：通常用于讨论多级安全（MLS）。敏感度级别描述数据的重要程度或机密程度。敏感度级别越高，数据的保密性或机密性也越重要。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mac/_index.adoc:112
@@ -406,16 +425,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:133
+#, fuzzy
 msgid ""
 "A single label policy is somewhat similar to DAC as `root` configures the "
 "policies so that users are placed in the appropriate categories and access "
 "levels.  A notable difference is that many policy modules can also restrict "
 "`root`.  Basic control over objects will then be released to the group, but "
 "`root` may revoke or modify the settings at any time."
-msgstr ""
+msgstr "单标签策略与 DAC 有些相似，因为 `root` 会配置策略，将用户置于适当的类别和访问级别中。一个显著区别是，许多策略模块也可以限制 `root`。随后，基本的对象控制权会交给组，但 `root` 可随时撤销或修改这些设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:138
+#, fuzzy
 msgid ""
 "When appropriate, a multi label policy can be set on a UFS file system by "
 "passing `multilabel` to man:tunefs[8].  A multi label policy permits each "
@@ -424,7 +445,7 @@ msgid ""
 "implement the labeling feature, such as `biba`, `lomac`, and `mls`.  Some "
 "policies, such as `seeotheruids`, `portacl` and `partition`, do not use "
 "labels at all."
-msgstr ""
+msgstr "在适当情况下，可将 `multilabel` 传递给 man:tunefs[8]，在 UFS 文件系统上设置多标签策略。多标签策略允许每个主体或对象拥有各自独立的 MAC 标签。只有实现了标签功能的策略（例如 `biba`、`lomac` 和 `mls`）才需要决定使用多标签还是单标签策略。有些策略（例如 `seeotheruids`、`portacl` 和 `partition`）完全不使用标签。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:141
@@ -445,25 +466,27 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:144
+#, fuzzy
 msgid ""
 "The following command will set `multilabel` on the specified UFS file "
 "system.  This may only be done in single-user mode and is not a requirement "
 "for the swap file system:"
-msgstr ""
+msgstr "以下命令会在指定的 UFS 文件系统上设置 `multilabel`。此操作只能在单用户模式下进行，且不要求在交换文件系统上执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tunefs -l enable /\n"
-msgstr ""
+msgstr "# tunefs -l enable /\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:154
+#, fuzzy
 msgid ""
 "Some users have experienced problems with setting the `multilabel` flag on "
 "the root partition.  If this is the case, please review crossref:mac[mac-"
 "troubleshoot, Troubleshooting the MAC Framework]."
-msgstr ""
+msgstr "有些用户在根分区上设置 `multilabel` 标志时遇到过问题。如果遇到这种情况，请参阅 crossref:mac[mac-troubleshoot, MAC 框架故障排除]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:160
@@ -510,18 +533,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:168
+#, fuzzy
 msgid ""
 "All configuration may be done using `setfmac`, which is used to set MAC "
 "labels on system objects, and `setpmac`, which is used to set the labels on "
 "system subjects.  For example, to set the `biba` MAC label to `high` on [."
 "filename]#test#:"
-msgstr ""
+msgstr "所有配置都可以通过 `setfmac` 和 `setpmac` 完成：前者用于设置系统对象的 MAC 标签，后者用于设置系统主体的标签。例如，要将 `biba` MAC 标签设为 `high` 并应用于 [.filename]#test#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# setfmac biba/high test\n"
-msgstr ""
+msgstr "# setfmac biba/high test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:180
@@ -549,31 +573,33 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:182
+#, fuzzy
 msgid ""
 "The system administrator may use `setpmac` to override the policy module's "
 "settings by assigning a different label to the invoked process:"
-msgstr ""
+msgstr "系统管理员可以使用 `setpmac`，为调用的进程分配不同的标签，从而覆盖策略模块的设置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# setfmac biba/high test\n"
 "Permission denied\n"
 "# setpmac biba/low setfmac biba/high test\n"
 "# getfmac test\n"
 "test: biba/high\n"
-msgstr ""
+msgstr "# setfmac biba/high test\nPermission denied\n# setpmac biba/low setfmac biba/high test\n# getfmac test\ntest: biba/high\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:195
+#, fuzzy
 msgid ""
 "For currently running processes, such as sendmail, `getpmac` is usually used "
 "instead.  This command takes a process ID (PID) in place of a command name.  "
 "If users attempt to manipulate a file not in their access, subject to the "
 "rules of the loaded policy modules, the `Operation not permitted` error will "
 "be displayed."
-msgstr ""
+msgstr "对于正在运行的进程（例如 sendmail），通常改用 `getpmac`。此命令接受进程 ID（PID），而不是命令名称。如果用户尝试操作其访问权限不允许访问的文件（具体取决于已加载策略模块的规则），将显示 `Operation not permitted` 错误。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:196
@@ -583,41 +609,46 @@ msgstr "预定义标签"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:199
+#, fuzzy
 msgid ""
 "A few FreeBSD policy modules which support the labeling feature offer three "
 "predefined labels: `low`, `equal`, and `high`, where:"
-msgstr ""
+msgstr "FreeBSD 中有少数支持标签功能的策略模块提供三个预定义标签：`low`、`equal` 和 `high`，其含义如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:201
+#, fuzzy
 msgid ""
 "`low` is considered the lowest label setting an object or subject may have. "
 "Setting this on objects or subjects blocks their access to objects or "
 "subjects marked high."
-msgstr ""
+msgstr "`low` 被视为对象或主体可具有的最低标签设置。将此标签应用于对象或主体后，它们将无法访问标记为 `high` 的对象或主体。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:202
+#, fuzzy
 msgid ""
 "`equal` sets the subject or object to be disabled or unaffected and should "
 "only be placed on objects considered to be exempt from the policy."
-msgstr ""
+msgstr "`equal` 会将主体或对象设为禁用或不受影响的状态，因此只应应用于被认为不受策略约束的对象。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:203
+#, fuzzy
 msgid ""
 "`high` grants an object or subject the highest setting available in the Biba "
 "and MLS policy modules."
-msgstr ""
+msgstr "`high` 会在 Biba 和 MLS 策略模块中为对象或主体授予可用的最高设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:207
+#, fuzzy
 msgid ""
 "Such policy modules include man:mac_biba[4], man:mac_mls[4] and man:"
 "mac_lomac[4].  Each of the predefined labels establishes a different "
 "information flow directive.  Refer to the manual page of the module to "
 "determine the traits of the generic label configurations."
-msgstr ""
+msgstr "此类策略模块包括 man:mac_biba[4]、man:mac_mls[4] 和 man:mac_lomac[4]。每个预定义标签都会确立不同的信息流指令。有关通用标签配置的特性，请参阅相应模块的手册页。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:208
@@ -647,10 +678,11 @@ msgstr "biba/10:2+3+6(5:2+3-20:2+3+4+5+6)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:220
+#, fuzzy
 msgid ""
 "may be interpreted as \"Biba Policy Label/Grade 10:Compartments 2, 3 and 6: "
 "(grade 5 ...\")"
-msgstr ""
+msgstr "可以解释为“Biba 策略标签／等级 10：区间 2、3 和 6：（等级 5 …）”"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:223
@@ -687,6 +719,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:231
+#, fuzzy
 msgid ""
 "The grade and compartments in a subject and object pair are used to "
 "construct a relationship known as _dominance_, in which a subject dominates "
@@ -697,7 +730,7 @@ msgid ""
 "objects also have a set of compartments.  Users may have to subset their "
 "rights using `su` or `setpmac` in order to access objects in a compartment "
 "from which they are not restricted."
-msgstr ""
+msgstr "主体和对象对中的等级和区间用于构建一种称为 __支配关系__ 的关系：主体支配对象、对象支配主体、双方互不支配，或双方相互支配。“双方相互支配”表示两个标签相等。由于 Biba 具有信息流特性，用户拥有一组可能对应于不同项目的区间权限，而对象也有一组区间。若要访问不受其权限涵盖的区间中的对象，用户可能需要使用 `su` 或 `setpmac` 缩小自己的权限范围。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:232
@@ -803,10 +836,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:274
+#, fuzzy
 msgid ""
 "After any change to [.filename]#login.conf#, the login class capability "
 "database must be rebuilt using `cap_mkdb`."
-msgstr ""
+msgstr "每次更改 [.filename]#login.conf# 后，都必须使用 `cap_mkdb` 重新构建登录类能力数据库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:277
@@ -845,34 +879,37 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:285
+#, fuzzy
 msgid ""
 "When setting the MAC label on network interfaces, `maclabel` may be passed "
 "to `ifconfig`:"
-msgstr ""
+msgstr "设置网络接口的 MAC 标签时，可以将 `maclabel` 传递给 `ifconfig`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ifconfig bge0 maclabel biba/equal\n"
-msgstr ""
+msgstr "# ifconfig bge0 maclabel biba/equal\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:293
+#, fuzzy
 msgid ""
 "This example will set the MAC label of `biba/equal` on the `bge0` "
 "interface.  When using a setting similar to `biba/high(low-high)`, the "
 "entire label should be quoted to prevent an error from being returned."
-msgstr ""
+msgstr "此示例会将 `biba/equal` MAC 标签设置到 `bge0` 接口。使用类似 `biba/high(low-high)` 的设置时，应将整个标签括起来，以避免返回错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:297
+#, fuzzy
 msgid ""
 "Each policy module which supports labeling has a tunable which may be used "
 "to disable the MAC label on network interfaces.  Setting the label to "
 "`equal` will have a similar effect.  Review the output of `sysctl`, the "
 "policy manual pages, and the information in the rest of this chapter for "
 "more information on those tunables."
-msgstr ""
+msgstr "每个支持标签的策略模块都有一个可调参数，可用于禁用网络接口上的 MAC 标签。将标签设为 `equal` 也会产生类似效果。有关这些可调参数的更多信息，请查看 `sysctl` 的输出、策略手册页以及本章其余部分的内容。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mac/_index.adoc:299
@@ -906,18 +943,20 @@ msgstr "需要限制哪类信息或资源的访问， 以及应采用何种限�
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:307
+#, fuzzy
 msgid "Which MAC modules will be required to achieve this goal."
-msgstr ""
+msgstr "实现此目标需要哪些 MAC 模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:310
+#, fuzzy
 msgid ""
 "A trial run of the trusted system and its configuration should occur "
 "_before_ a MAC implementation is used on production systems.  Since "
 "different environments have different needs and requirements, establishing a "
 "complete security profile will decrease the need of changes once the system "
 "goes live."
-msgstr ""
+msgstr "在生产系统中实施 MAC 之前，应先对受信任的系统及其配置进行试运行。由于不同环境有不同的需求和要求，预先建立完整的安全配置文件可以减少系统正式运行后所需的更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:316
@@ -980,6 +1019,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:327
+#, fuzzy
 msgid ""
 "It is the duty of the system administrator to carefully select the correct "
 "security policy modules.  For an environment that needs to limit access "
@@ -987,10 +1027,11 @@ msgid ""
 "mac_biba[4] policy modules make good starting points.  For an environment "
 "where strict confidentiality of file system objects is required, consider "
 "the man:mac_bsdextended[4] and man:mac_mls[4] policy modules."
-msgstr ""
+msgstr "系统管理员有责任谨慎选择合适的安全策略模块。对于需要限制网络访问控制的环境，man:mac_portacl[4]、man:mac_ifoff[4] 和 man:mac_biba[4] 策略模块是不错的起点。对于要求文件系统对象严格保密的环境，可考虑使用 man:mac_bsdextended[4] 和 man:mac_mls[4] 策略模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:334
+#, fuzzy
 msgid ""
 "Policy decisions could be made based on network configuration.  If only "
 "certain users should be permitted access to man:ssh[1], the man:"
@@ -1003,7 +1044,7 @@ msgid ""
 "different security policy modules provided by the MAC framework, users could "
 "be divided into these groups and then given access to the appropriate "
 "objects."
-msgstr ""
+msgstr "策略决策可以基于网络配置制定。如果只允许特定用户访问 man:ssh[1]，man:mac_portacl[4] 策略模块是不错的选择。对于文件系统，某些用户可能认为对象是机密的，而其他用户则不这么认为。例如，一个大型开发团队可能会拆分为多个较小的项目：项目 A 的开发人员可能不允许访问项目 B 的开发人员编写的对象，但两个项目都可能需要访问项目 C 的开发人员创建的对象。利用 MAC 框架提供的不同安全策略模块，可以将用户划分为这些组，并授予他们对相应对象的访问权限。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:338
@@ -1052,6 +1093,7 @@ msgstr "可用的MAC策略"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:354
+#, fuzzy
 msgid ""
 "The default FreeBSD kernel includes `options MAC`.  This means that every "
 "module included with the MAC framework can be loaded with `kldload` as a run-"
@@ -1059,7 +1101,7 @@ msgid ""
 "filename]#/boot/loader.conf# so that it will load during boot.  Each module "
 "also provides a kernel option for those administrators who choose to compile "
 "their own custom kernel."
-msgstr ""
+msgstr "FreeBSD 默认内核包含 `options MAC`。这意味着可以使用 `kldload` 将 MAC 框架包含的每个模块作为运行时内核模块加载。测试模块后，将模块名称添加到 [.filename]#/boot/loader.conf#，使其在启动时加载。每个模块还提供一个内核选项，供选择编译自定义内核的管理员使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:357
@@ -1084,59 +1126,67 @@ msgstr "MAC 其他 UID 可见策略"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:362
+#, fuzzy
 msgid "Module name: [.filename]#mac_seeotheruids.ko#"
-msgstr ""
+msgstr "模块名称：[.filename]#mac_seeotheruids.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:364
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_SEEOTHERUIDS`"
-msgstr ""
+msgstr "内核配置行：`options MAC_SEEOTHERUIDS`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:366
+#, fuzzy
 msgid "Boot option: `mac_seeotheruids_load=\"YES\"`"
-msgstr ""
+msgstr "启动选项：`mac_seeotheruids_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:369
+#, fuzzy
 msgid ""
 "The man:mac_seeotheruids[4] module extends the `security.bsd.see_other_uids` "
 "and `security.bsd.see_other_gids sysctl` tunables.  This option does not "
 "require any labels to be set before configuration and can operate "
 "transparently with other modules."
-msgstr ""
+msgstr "man:mac_seeotheruids[4] 模块扩展了 `security.bsd.see_other_uids` 和 `security.bsd.see_other_gids sysctl` 可调参数。配置此选项前无需设置任何标签，并且它可以透明地与其他模块配合运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:371
+#, fuzzy
 msgid ""
 "After loading the module, the following `sysctl` tunables may be used to "
 "control its features:"
-msgstr ""
+msgstr "加载模块后，可以使用以下 `sysctl` 可调参数控制其功能："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:373
+#, fuzzy
 msgid ""
 "`security.mac.seeotheruids.enabled` enables the module and implements the "
 "default settings which deny users the ability to view processes and sockets "
 "owned by other users."
-msgstr ""
+msgstr "`security.mac.seeotheruids.enabled` 用于启用模块并实施默认设置，禁止用户查看由其他用户拥有的进程和套接字。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:374
+#, fuzzy
 msgid ""
 "`security.mac.seeotheruids.specificgid_enabled` allows specified groups to "
 "be exempt from this policy. To exempt specific groups, use the `security.mac."
 "seeotheruids.specificgid=_XXX_ sysctl` tunable, replacing _XXX_ with the "
 "numeric group ID to be exempted."
-msgstr ""
+msgstr "`security.mac.seeotheruids.specificgid_enabled` 允许指定的组不受此策略限制。若要豁免特定组，请使用 `security.mac.seeotheruids.specificgid=_XXX_ sysctl` 可调参数，并将 _XXX_ 替换为要豁免的数字组 ID。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:375
+#, fuzzy
 msgid ""
 "`security.mac.seeotheruids.primarygroup_enabled` is used to exempt specific "
 "primary groups from this policy. When using this tunable, `security.mac."
 "seeotheruids.specificgid_enabled` may not be set."
-msgstr ""
+msgstr "`security.mac.seeotheruids.primarygroup_enabled` 用于豁免特定主组，使其不受此策略限制。使用此可调参数时，不得设置 `security.mac.seeotheruids.specificgid_enabled`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:377
@@ -1146,21 +1196,25 @@ msgstr "MAC BSD 扩展策略"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:380
+#, fuzzy
 msgid "Module name: [.filename]#mac_bsdextended.ko#"
-msgstr ""
+msgstr "模块名称：[.filename]#mac_bsdextended.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:382
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_BSDEXTENDED`"
-msgstr ""
+msgstr "内核配置行：`options MAC_BSDEXTENDED`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:384
+#, fuzzy
 msgid "Boot option: `mac_bsdextended_load=\"YES\"`"
-msgstr ""
+msgstr "启动选项：`mac_bsdextended_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:390
+#, fuzzy
 msgid ""
 "The man:mac_bsdextended[4] module enforces a file system firewall.  It "
 "provides an extension to the standard file system permissions model, "
@@ -1172,69 +1226,74 @@ msgid ""
 "other firewall modules in FreeBSD, a file containing the access control "
 "rules can be created and read by the system at boot time using an man:rc."
 "conf[5] variable."
-msgstr ""
+msgstr "man:mac_bsdextended[4] 模块实施文件系统防火墙。它扩展了标准文件系统权限模型，允许管理员创建类似防火墙的规则集，以保护文件系统层次结构中的文件、实用程序和目录。尝试访问文件系统对象时，系统会逐条检查规则，直到找到匹配规则或检查完所有规则。可以使用 `security.mac.bsdextended.firstmatch_enabled` 更改此行为。与 FreeBSD 中的其他防火墙模块类似，可以通过 man:rc.conf[5] 变量指定一个包含访问控制规则的文件，供系统在启动时读取。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:393
+#, fuzzy
 msgid ""
 "The rule list may be entered using man:ugidfw[8] which has a syntax similar "
 "to man:ipfw[8].  More tools can be written by using the functions in the man:"
 "libugidfw[3] library."
-msgstr ""
+msgstr "可以使用 man:ugidfw[8] 输入规则列表，其语法与 man:ipfw[8] 类似。还可以使用 man:libugidfw[3] 库中的函数编写更多工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:395
+#, fuzzy
 msgid ""
 "After the man:mac_bsdextended[4] module has been loaded, the following "
 "command may be used to list the current rule configuration:"
-msgstr ""
+msgstr "加载 man:mac_bsdextended[4] 模块后，可以使用以下命令列出当前规则配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ugidfw list\n"
 "0 slots, 0 rules\n"
-msgstr ""
+msgstr "# ugidfw list\n0 slots, 0 rules\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:404
+#, fuzzy
 msgid ""
 "By default, no rules are defined and everything is completely accessible.  "
 "To create a rule which blocks all access by users but leaves `root` "
 "unaffected:"
-msgstr ""
+msgstr "默认情况下未定义任何规则，因此所有内容都完全可访问。要创建一条禁止所有用户访问、但不限制 `root` 的规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ugidfw add subject not uid root new object not uid root mode n\n"
-msgstr ""
+msgstr "# ugidfw add subject not uid root new object not uid root mode n\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:412
+#, fuzzy
 msgid ""
 "While this rule is simple to implement, it is a very bad idea as it blocks "
 "all users from issuing any commands.  A more realistic example blocks "
 "`user1` all access, including directory listings, to ``_user2_``'s home "
 "directory:"
-msgstr ""
+msgstr "虽然这条规则很容易实现，但它非常不妥，因为它会阻止所有用户执行任何命令。下面是一个更实际的示例：禁止 `user1` 访问 ``_user2_`` 的主目录中的任何内容，包括列出目录内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:417
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ugidfw set 2 subject uid user1 object uid user2 mode n\n"
 "# ugidfw set 3 subject uid user1 object gid user2 mode n\n"
-msgstr ""
+msgstr "# ugidfw set 2 subject uid user1 object uid user2 mode n\n# ugidfw set 3 subject uid user1 object gid user2 mode n\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:421
+#, fuzzy
 msgid ""
 "Instead of `user1`, `not uid _user2_` could be used in order to enforce the "
 "same access restrictions for all users.  However, the `root` user is "
 "unaffected by these rules."
-msgstr ""
+msgstr "可以用 `not uid _user2_` 替代 `user1`，以对所有用户实施相同的访问限制。不过，这些规则不会影响 `root` 用户。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:425
@@ -1253,63 +1312,72 @@ msgstr "MAC 接口屏蔽策略"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:431
+#, fuzzy
 msgid "Module name: [.filename]#mac_ifoff.ko#"
-msgstr ""
+msgstr "模块名称：[.filename]#mac_ifoff.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:433
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_IFOFF`"
-msgstr ""
+msgstr "内核配置行：`options MAC_IFOFF`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:435
+#, fuzzy
 msgid "Boot option: `mac_ifoff_load=\"YES\"`"
-msgstr ""
+msgstr "引导选项：`mac_ifoff_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:438
+#, fuzzy
 msgid ""
 "The man:mac_ifoff[4] module is used to disable network interfaces on the fly "
 "and to keep network interfaces from being brought up during system boot.  It "
 "does not use labels and does not depend on any other MAC modules."
-msgstr ""
+msgstr "man:mac_ifoff[4] 模块用于动态禁用网络接口，并防止网络接口在系统引导期间启动。它不使用标签，也不依赖任何其他 MAC 模块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:440
+#, fuzzy
 msgid ""
 "Most of this module's control is performed through these `sysctl` tunables:"
-msgstr ""
+msgstr "此模块的大部分控制通过以下 `sysctl` 可调参数完成："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:442
+#, fuzzy
 msgid ""
 "`security.mac.ifoff.lo_enabled` enables or disables all traffic on the "
 "loopback, man:lo[4], interface."
-msgstr ""
+msgstr "`security.mac.ifoff.lo_enabled` 启用或禁用回环接口 man:lo[4] 上的所有流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:443
+#, fuzzy
 msgid ""
 "`security.mac.ifoff.bpfrecv_enabled` enables or disables all traffic on the "
 "Berkeley Packet Filter interface, man:bpf[4]."
-msgstr ""
+msgstr "`security.mac.ifoff.bpfrecv_enabled` 启用或禁用 Berkeley Packet Filter 接口 man:bpf[4] 上的所有流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:444
+#, fuzzy
 msgid ""
 "`security.mac.ifoff.other_enabled` enables or disables traffic on all other "
 "interfaces."
-msgstr ""
+msgstr "`security.mac.ifoff.other_enabled` 启用或禁用所有其他接口上的流量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:447
+#, fuzzy
 msgid ""
 "One of the most common uses of man:mac_ifoff[4] is network monitoring in an "
 "environment where network traffic should not be permitted during the boot "
 "sequence.  Another use would be to write a script which uses an application "
 "such as package:security/aide[] to automatically block network traffic if it "
 "finds new or altered files in protected directories."
-msgstr ""
+msgstr "man:mac_ifoff[4] 最常见的用途之一是在网络流量不应于引导过程中传输的环境中进行网络监控。另一种用途是编写脚本，使用 package:security/aide[] 之类的应用程序，在受保护目录中发现新增或已更改的文件时自动阻止网络流量。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:449
@@ -1319,56 +1387,65 @@ msgstr "MAC 端口访问控制表策略"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:452
+#, fuzzy
 msgid "Module name: [.filename]#mac_portacl.ko#"
-msgstr ""
+msgstr "模块名称： [.filename]#mac_portacl.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:454
+#, fuzzy
 msgid "Kernel configuration line: `MAC_PORTACL`"
-msgstr ""
+msgstr "内核配置行：`MAC_PORTACL`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:456
+#, fuzzy
 msgid "Boot option: `mac_portacl_load=\"YES\"`"
-msgstr ""
+msgstr "引导选项：`mac_portacl_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:458
+#, fuzzy
 msgid ""
 "The man:mac_portacl[4] module is used to limit binding to local TCP and UDP "
 "ports, making it possible to allow non-`root` users to bind to specified "
 "privileged ports below 1024."
-msgstr ""
+msgstr "man:mac_portacl[4] 模块用于限制对本地 TCP 和 UDP 端口的绑定，从而允许非 `root` 用户绑定到指定的 1024 以下特权端口。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:461
+#, fuzzy
 msgid ""
 "Once loaded, this module enables the MAC policy on all sockets.  The "
 "following tunables are available:"
-msgstr ""
+msgstr "加载后，此模块会在所有套接字上启用 MAC 策略。可用的可调参数如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:463
+#, fuzzy
 msgid ""
 "`security.mac.portacl.enabled` enables or disables the policy completely."
-msgstr ""
+msgstr "`security.mac.portacl.enabled` 完全启用或禁用此策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:464
+#, fuzzy
 msgid ""
 "`security.mac.portacl.port_high` sets the highest port number that man:"
 "mac_portacl[4] protects."
-msgstr ""
+msgstr "`security.mac.portacl.port_high` 设置 man:mac_portacl[4] 保护的最高端口号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:465
+#, fuzzy
 msgid ""
 "`security.mac.portacl.suser_exempt`, when set to a non-zero value, exempts "
 "the `root` user from this policy."
-msgstr ""
+msgstr "`security.mac.portacl.suser_exempt` 设置为非零值时，会使 `root` 用户不受此策略限制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:466
+#, fuzzy
 msgid ""
 "`security.mac.portacl.rules` specifies the policy as a text string of the "
 "form `rule[,rule,...]`, with as many rules as needed, and where each rule is "
@@ -1376,63 +1453,67 @@ msgid ""
 "`gid`. The `protocol` parameter can be `tcp` or `udp`. The `port` parameter "
 "is the port number to allow the specified user or group to bind to. Only "
 "numeric values can be used for the user ID, group ID, and port parameters."
-msgstr ""
+msgstr "`security.mac.portacl.rules` 以 `rule[,rule,...]` 格式的文本字符串指定策略，可以包含任意数量的规则；每条规则的格式为 `idtype:id:protocol:port`。`idtype` 可以是 `uid` 或 `gid`。`protocol` 参数可以是 `tcp` 或 `udp`。`port` 参数是允许指定用户或组绑定的端口号。用户 ID、组 ID 和端口参数只能使用数字值。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:469
+#, fuzzy
 msgid ""
 "By default, ports below 1024 can only be used by privileged processes which "
 "run as `root`.  For man:mac_portacl[4] to allow non-privileged processes to "
 "bind to ports below 1024, set the following tunables as follows:"
-msgstr ""
+msgstr "默认情况下，1024 以下的端口只能由以 `root` 身份运行的特权进程使用。若要让 man:mac_portacl[4] 允许非特权进程绑定到 1024 以下的端口，请按如下方式设置可调参数："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:475
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysctl security.mac.portacl.port_high=1023\n"
 "# sysctl net.inet.ip.portrange.reservedlow=0\n"
 "# sysctl net.inet.ip.portrange.reservedhigh=0\n"
-msgstr ""
+msgstr "# sysctl security.mac.portacl.port_high=1023\n# sysctl net.inet.ip.portrange.reservedlow=0\n# sysctl net.inet.ip.portrange.reservedhigh=0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:478
+#, fuzzy
 msgid ""
 "To prevent the `root` user from being affected by this policy, set `security."
 "mac.portacl.suser_exempt` to a non-zero value."
-msgstr ""
+msgstr "若要避免 `root` 用户受此策略影响，请将 `security.mac.portacl.suser_exempt` 设置为非零值。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:482
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl security.mac.portacl.suser_exempt=1\n"
-msgstr ""
+msgstr "# sysctl security.mac.portacl.suser_exempt=1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:485
+#, fuzzy
 msgid ""
 "To allow the `www` user with UID 80 to bind to port 80 without ever needing "
 "`root` privilege:"
-msgstr ""
+msgstr "若要允许 UID 为 80 的 `www` 用户绑定到端口 80，而无需使用 `root` 权限："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:489
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl security.mac.portacl.rules=uid:80:tcp:80\n"
-msgstr ""
+msgstr "# sysctl security.mac.portacl.rules=uid:80:tcp:80\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:492
+#, fuzzy
 msgid ""
 "This next example permits the user with the UID of 1001 to bind to TCP ports "
 "110 (POP3) and 995 (POP3s):"
-msgstr ""
+msgstr "以下示例允许 UID 为 1001 的用户绑定到 TCP 端口 110（POP3）和 995（POP3s）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:496
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl security.mac.portacl.rules=uid:1001:tcp:110,uid:1001:tcp:995\n"
-msgstr ""
+msgstr "# sysctl security.mac.portacl.rules=uid:1001:tcp:110,uid:1001:tcp:995\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:499
@@ -1442,33 +1523,38 @@ msgstr "MAC 进程分区策略"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:502
+#, fuzzy
 msgid "Module name: [.filename]#mac_partition.ko#"
-msgstr ""
+msgstr "模块名称： [.filename]#mac_partition.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:504
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_PARTITION`"
-msgstr ""
+msgstr "内核配置行：`options MAC_PARTITION`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:506
+#, fuzzy
 msgid "Boot option: `mac_partition_load=\"YES\"`"
-msgstr ""
+msgstr "引导选项：`mac_partition_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:510
+#, fuzzy
 msgid ""
 "The man:mac_partition[4] policy drops processes into specific \"partitions\" "
 "based on their MAC label.  Most configuration for this policy is done using "
 "man:setpmac[8].  One `sysctl` tunable is available for this policy:"
-msgstr ""
+msgstr "man:mac_partition[4] 策略根据进程的 MAC 标签，将进程置于特定的“分区”中。此策略的大部分配置通过 man:setpmac[8] 完成。此策略有一个可用的 `sysctl` 可调参数："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:512
+#, fuzzy
 msgid ""
 "`security.mac.partition.enabled` enables the enforcement of MAC process "
 "partitions."
-msgstr ""
+msgstr "`security.mac.partition.enabled` 启用 MAC 进程分区强制策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:515
@@ -1487,17 +1573,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:518
+#, fuzzy
 msgid ""
 "This example adds `top` to the label set on users in the `insecure` class.  "
 "All processes spawned by users in the `insecure` class will stay in the "
 "`partition/13` label."
-msgstr ""
+msgstr "此示例将 `top` 添加到 `insecure` 类用户的标签集合中。`insecure` 类用户启动的所有进程都将保留在 `partition/13` 标签中。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:522
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# setpmac partition/13 top\n"
-msgstr ""
+msgstr "# setpmac partition/13 top\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:525
@@ -1506,9 +1593,9 @@ msgstr "下面的命令将显示 partition 标签以及进程列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ps Zax\n"
-msgstr ""
+msgstr "# ps Zax\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:532
@@ -1521,16 +1608,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:536
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ps -ZU trhodes\n"
-msgstr ""
+msgstr "# ps -ZU trhodes\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:541
+#, fuzzy
 msgid ""
 "Users can see processes in ``root``'s label unless the man:"
 "mac_seeotheruids[4] policy is loaded."
-msgstr ""
+msgstr "除非加载 man:mac_seeotheruids[4] 策略，否则用户可以看到 ``root`` 的标签中的进程。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:544
@@ -1540,28 +1628,33 @@ msgstr "MAC 多级 (Multi-Level) 安全模块"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:547
+#, fuzzy
 msgid "Module name: [.filename]#mac_mls.ko#"
-msgstr ""
+msgstr "模块名称： [.filename]#mac_mls.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:549
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_MLS`"
-msgstr ""
+msgstr "内核配置行：`options MAC_MLS`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:551
+#, fuzzy
 msgid "Boot option: `mac_mls_load=\"YES\"`"
-msgstr ""
+msgstr "引导选项：`mac_mls_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:553
+#, fuzzy
 msgid ""
 "The man:mac_mls[4] policy controls access between subjects and objects in "
 "the system by enforcing a strict information flow policy."
-msgstr ""
+msgstr "man:mac_mls[4] 策略通过强制实施严格的信息流策略，控制系统中主体与对象之间的访问。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:557
+#, fuzzy
 msgid ""
 "In MLS environments, a \"clearance\" level is set in the label of each "
 "subject or object, along with compartments.  Since these clearance levels "
@@ -1569,7 +1662,7 @@ msgid ""
 "to thoroughly configure every subject or object.  To ease this "
 "administrative overhead, three labels are included in this policy: `mls/"
 "low`, `mls/equal`, and `mls/high`, where:"
-msgstr ""
+msgstr "在 MLS 环境中，每个主体或对象的标签都会设置一个“许可级别”以及若干隔离区。由于这些许可级别可能达到数千以上，要彻底配置每个主体或对象将是一项艰巨的任务。为减轻管理负担，此策略包含三个标签：`mls/low`、`mls/equal` 和 `mls/high`，其含义如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:559
@@ -1586,10 +1679,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:560
+#, fuzzy
 msgid ""
 "`mls/equal` should be placed on objects which should be exempt from the "
 "policy."
-msgstr ""
+msgstr "`mls/equal` 应用于不受此策略限制的对象。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:561
@@ -1604,8 +1698,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:563
+#, fuzzy
 msgid "MLS provides:"
-msgstr ""
+msgstr "MLS 提供："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:565
@@ -1643,74 +1738,83 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:570
+#, fuzzy
 msgid "The following `sysctl` tunables are available:"
-msgstr ""
+msgstr "可用的 `sysctl` 可调参数如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:572
+#, fuzzy
 msgid "`security.mac.mls.enabled` is used to enable or disable the MLS policy."
-msgstr ""
+msgstr "`security.mac.mls.enabled` 用于启用或禁用 MLS 策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:573
+#, fuzzy
 msgid ""
 "`security.mac.mls.ptys_equal` labels all man:pty[4] devices as `mls/equal` "
 "during creation."
-msgstr ""
+msgstr "`security.mac.mls.ptys_equal` 在创建 man:pty[4] 设备时将其标记为 `mls/equal`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:574
+#, fuzzy
 msgid ""
 "`security.mac.mls.revocation_enabled` revokes access to objects after their "
 "label changes to a label of a lower grade."
-msgstr ""
+msgstr "`security.mac.mls.revocation_enabled` 在对象的标签更改为较低级别的标签后撤销对该对象的访问权限。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:575
+#, fuzzy
 msgid ""
 "`security.mac.mls.max_compartments` sets the maximum number of compartment "
 "levels allowed on a system."
-msgstr ""
+msgstr "`security.mac.mls.max_compartments` 设置系统允许的最大隔离区级别数。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:577
+#, fuzzy
 msgid ""
 "To manipulate MLS labels, use man:setfmac[8]. To assign a label to an object:"
-msgstr ""
+msgstr "若要操作 MLS 标签，请使用 man:setfmac[8]。若要为对象分配标签："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:581
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# setfmac mls/5 test\n"
-msgstr ""
+msgstr "# setfmac mls/5 test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:584
+#, fuzzy
 msgid "To get the MLS label for the file [.filename]#test#:"
-msgstr ""
+msgstr "若要获取文件 [.filename]#test# 的 MLS 标签："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:588
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# getfmac test\n"
-msgstr ""
+msgstr "# getfmac test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:591
+#, fuzzy
 msgid ""
 "Another approach is to create a master policy file in [.filename]#/etc/# "
 "which specifies the MLS policy information and to feed that file to "
 "`setfmac`."
-msgstr ""
+msgstr "另一种方法是在 [.filename]#/etc/# 中创建主策略文件，指定 MLS 策略信息，然后将该文件传递给 `setfmac`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:595
+#, fuzzy
 msgid ""
 "When using the MLS policy module, an administrator plans to control the flow "
 "of sensitive information.  The default `block read up block write down` sets "
 "everything to a low state.  Everything is accessible and an administrator "
 "slowly augments the confidentiality of the information."
-msgstr ""
+msgstr "使用 MLS 策略模块时，管理员的目标是控制敏感信息的流动。默认策略 `block read up block write down` 会将所有内容设为低级别。所有内容都可访问，管理员再逐步提高信息的机密性。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:600
@@ -1750,28 +1854,32 @@ msgstr "MAC Biba 模块"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:607
+#, fuzzy
 msgid "Module name: [.filename]#mac_biba.ko#"
-msgstr ""
+msgstr "模块名称： [.filename]#mac_biba.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:609
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_BIBA`"
-msgstr ""
+msgstr "内核配置行：`options MAC_BIBA`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:611
+#, fuzzy
 msgid "Boot option: `mac_biba_load=\"YES\"`"
-msgstr ""
+msgstr "引导选项：`mac_biba_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:615
+#, fuzzy
 msgid ""
 "The man:mac_biba[4] module loads the MAC Biba policy.  This policy is "
 "similar to the MLS policy with the exception that the rules for information "
 "flow are slightly reversed.  This is to prevent the downward flow of "
 "sensitive information whereas the MLS policy prevents the upward flow of "
 "sensitive information."
-msgstr ""
+msgstr "man:mac_biba[4] 模块加载 MAC Biba 策略。此策略与 MLS 策略类似，不同之处在于信息流规则的方向略有反转。这是为了防止敏感信息向下流动，而 MLS 策略则防止敏感信息向上流动。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:619
@@ -1787,8 +1895,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:621
+#, fuzzy
 msgid "Supported labels are `biba/low`, `biba/equal`, and `biba/high`, where:"
-msgstr ""
+msgstr "支持的标签包括 `biba/low`、`biba/equal` 和 `biba/high`，其含义如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:623
@@ -1804,18 +1913,20 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:624
+#, fuzzy
 msgid ""
 "`biba/equal` should only be placed on objects considered to be exempt from "
 "the policy."
-msgstr ""
+msgstr "`biba/equal` 只能用于被视为不受此策略限制的对象。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:625
+#, fuzzy
 msgid ""
 "`biba/high` permits writing to objects set at a lower label, but does not "
 "permit reading that object. It is recommended that this label be placed on "
 "objects that affect the integrity of the entire system."
-msgstr ""
+msgstr "`biba/high` 允许向标签较低的对象写入，但不允许读取该对象。建议将此标签用于影响整个系统完整性的对象。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:627
@@ -1831,12 +1942,13 @@ msgstr "层次式的完整性级别，并提供了一组非层次式的完整性
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:630
+#, fuzzy
 msgid ""
 "Fixed rules are `no write up, no read down`, the opposite of MLS. A subject "
 "can have write access to objects on its own level or below, but not above. "
 "Similarly, a subject can have read access to objects on its own level or "
 "above, but not below."
-msgstr ""
+msgstr "固定规则为 `no write up, no read down`，与 MLS 相反。主体可以写入处于自身级别或更低级别的对象，但不能写入更高级别的对象。同样，主体可以读取处于自身级别或更高级别的对象，但不能读取更低级别的对象。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:631
@@ -1845,8 +1957,9 @@ msgstr "完整性：防止对数据进行不正确的修改。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:632
+#, fuzzy
 msgid "Integrity levels instead of MLS sensitivity levels."
-msgstr ""
+msgstr "使用完整性级别，而不是 MLS 敏感级别。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:634
@@ -1855,43 +1968,48 @@ msgstr "下列 <command>sysctl</command> 参数可以用于维护 Biba 策略：
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:636
+#, fuzzy
 msgid ""
 "`security.mac.biba.enabled` is used to enable or disable enforcement of the "
 "Biba policy on the target machine."
-msgstr ""
+msgstr "`security.mac.biba.enabled` 用于在目标计算机上启用或禁用 Biba 策略强制机制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:637
+#, fuzzy
 msgid ""
 "`security.mac.biba.ptys_equal` is used to disable the Biba policy on man:"
 "pty[4] devices."
-msgstr ""
+msgstr "`security.mac.biba.ptys_equal` 用于禁用 man:pty[4] 设备上的 Biba 策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:638
+#, fuzzy
 msgid ""
 "`security.mac.biba.revocation_enabled` forces the revocation of access to "
 "objects if the label is changed to dominate the subject."
-msgstr ""
+msgstr "`security.mac.biba.revocation_enabled` 会在标签更改为支配主体的级别时，强制撤销对对象的访问权限。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:640
+#, fuzzy
 msgid ""
 "To access the Biba policy setting on system objects, use `setfmac` and "
 "`getfmac`:"
-msgstr ""
+msgstr "若要访问系统对象上的 Biba 策略设置，请使用 `setfmac` 和 `getfmac`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:646
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# setfmac biba/low test\n"
 "# getfmac test\n"
 "test: biba/low\n"
-msgstr ""
+msgstr "# setfmac biba/low test\n# getfmac test\ntest: biba/low\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:652
+#, fuzzy
 msgid ""
 "Integrity, which is different from sensitivity, is used to guarantee that "
 "information is not manipulated by untrusted parties.  This includes "
@@ -1901,7 +2019,7 @@ msgid ""
 "administrator to configure which files and programs a user may see and "
 "invoke while assuring that the programs and files are trusted by the system "
 "for that user."
-msgstr ""
+msgstr "完整性不同于敏感性，它用于确保信息不会被不受信任的各方篡改。这包括主体与对象之间传递的信息。它确保用户只能修改或访问明确授权给他们的信息。man:mac_biba[4] 安全策略模块允许管理员配置用户可以查看和调用哪些文件及程序，同时确保系统信任这些程序和文件能够供该用户使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:658
@@ -1970,26 +2088,30 @@ msgstr "MAC LOMAC 模块"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:668
+#, fuzzy
 msgid "Module name: [.filename]#mac_lomac.ko#"
-msgstr ""
+msgstr "模块名称： [.filename]#mac_lomac.ko#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:670
+#, fuzzy
 msgid "Kernel configuration line: `options MAC_LOMAC`"
-msgstr ""
+msgstr "内核配置行：`options MAC_LOMAC`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:672
+#, fuzzy
 msgid "Boot option: `mac_lomac_load=\"YES\"`"
-msgstr ""
+msgstr "引导选项：`mac_lomac_load=\"YES\"`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:674
+#, fuzzy
 msgid ""
 "Unlike the MAC Biba policy, the man:mac_lomac[4] policy permits access to "
 "lower integrity objects only after decreasing the integrity level to not "
 "disrupt any integrity rules."
-msgstr ""
+msgstr "与 MAC Biba 策略不同，man:mac_lomac[4] 策略允许访问低完整性对象，但会先降低完整性级别，以避免破坏任何完整性规则。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:678
@@ -2025,24 +2147,26 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:683
+#, fuzzy
 msgid ""
 "Like the Biba and MLS policies, `setfmac` and `setpmac` are used to place "
 "labels on system objects:"
-msgstr ""
+msgstr "与 Biba 和 MLS 策略一样，可使用 `setfmac` 和 `setpmac` 为系统对象设置标签："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:688
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# setfmac /usr/home/trhodes lomac/high[low]\n"
 "# getfmac /usr/home/trhodes lomac/high[low]\n"
-msgstr ""
+msgstr "# setfmac /usr/home/trhodes lomac/high[low]\n# getfmac /usr/home/trhodes lomac/high[low]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:691
+#, fuzzy
 msgid ""
 "The auxiliary grade `low` is a feature provided only by the MACLOMAC policy."
-msgstr ""
+msgstr "辅助级别 `low` 是 MACLOMAC 策略独有的功能。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mac/_index.adoc:693
@@ -2067,11 +2191,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:699
+#, fuzzy
 msgid ""
 "For this scenario, the man:mac_bsdextended[4] and man:mac_seeotheruids[4] "
 "policy modules could co-exist and block access to system objects while "
 "hiding user processes."
-msgstr ""
+msgstr "对于此场景，man:mac_bsdextended[4] 和 man:mac_seeotheruids[4] 策略模块可以共存，阻止对系统对象的访问，同时隐藏用户进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:701
@@ -2087,10 +2212,11 @@ msgstr "mac_seeotheruids_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:708
+#, fuzzy
 msgid ""
 "The man:mac_bsdextended[4] security policy module may be activated by adding "
 "this line to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/etc/rc.conf#，即可启用 man:mac_bsdextended[4] 安全策略模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:712
@@ -2115,27 +2241,30 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:722
+#, fuzzy
 msgid ""
 "Add the required users to this machine and reboot.  For testing purposes, "
 "try logging in as a different user across two consoles.  Run `ps aux` to see "
 "if processes of other users are visible.  Verify that running man:ls[1] on "
 "another user's home directory fails."
-msgstr ""
+msgstr "在此计算机上添加所需用户，然后重新启动。为进行测试，请尝试在两个控制台上分别以不同用户登录。运行 `ps aux`，查看是否能看到其他用户的进程。验证对其他用户的主目录运行 man:ls[1] 是否会失败。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:724
+#, fuzzy
 msgid ""
 "Do not try to test with the `root` user unless the specific ``sysctl``s have "
 "been modified to block super user access."
-msgstr ""
+msgstr "除非已修改特定的 ``sysctl`` 项以阻止超级用户访问，否则不要使用 `root` 用户进行测试。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:729
+#, fuzzy
 msgid ""
 "When a new user is added, their man:mac_bsdextended[4] rule will not be in "
 "the ruleset list.  To update the ruleset quickly, unload the security policy "
 "module and reload it again using man:kldunload[8] and man:kldload[8]."
-msgstr ""
+msgstr "添加新用户时，其 man:mac_bsdextended[4] 规则不会出现在规则集列表中。若要快速更新规则集，请使用 man:kldunload[8] 卸载安全策略模块，然后使用 man:kldload[8] 重新加载。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mac/_index.adoc:732
@@ -2145,22 +2274,24 @@ msgstr "MAC Jail 中的 Nagios"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:736
+#, fuzzy
 msgid ""
 "This section demonstrates the steps that are needed to implement the Nagios "
 "network monitoring system in a MAC environment.  This is meant as an example "
 "which still requires the administrator to test that the implemented policy "
 "meets the security requirements of the network before using in a production "
 "environment."
-msgstr ""
+msgstr "本节演示在 MAC 环境中实施 Nagios 网络监控系统所需的步骤。这只是一个示例；在生产环境中使用之前，管理员仍需测试已实施的策略是否满足网络的安全要求。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:739
+#, fuzzy
 msgid ""
 "This example requires `multilabel` to be set on each file system.  It also "
 "assumes that package:net-mgmt/nagios-plugins[], package:net-mgmt/nagios[], "
 "and package:www/apache22[] are all installed, configured, and working "
 "correctly before attempting the integration into the MAC framework."
-msgstr ""
+msgstr "此示例要求在每个文件系统上启用 `multilabel`。此外，示例假定在尝试将其集成到 MAC 框架之前，已安装、配置并正常运行 package:net-mgmt/nagios-plugins[]、package:net-mgmt/nagios[] 和 package:www/apache22[]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:740
@@ -2246,9 +2377,9 @@ msgstr "保存编辑并发出以下命令以重建数据库："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cap_mkdb /etc/login.conf\n"
-msgstr ""
+msgstr "# cap_mkdb /etc/login.conf\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:784
@@ -2258,43 +2389,46 @@ msgstr "配置用户"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:787
+#, fuzzy
 msgid "Set the `root` user to the default class using:"
-msgstr ""
+msgstr "使用以下命令将 `root` 用户设为默认类："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:791
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pw usermod root -L default\n"
-msgstr ""
+msgstr "# pw usermod root -L default\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:796
+#, fuzzy
 msgid ""
 "All user accounts that are not `root` will now require a login class.  The "
 "login class is required, otherwise users will be refused access to common "
 "commands.  The following `sh` script should do the trick:"
-msgstr ""
+msgstr "现在，所有非 `root` 用户帐户都必须指定登录类。若未指定登录类，用户将无法使用常用命令。以下 `sh` 脚本可完成此操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:801
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# for x in `awk -F: '($3 >= 1001) && ($3 != 65534) { print $1 }' \\\n"
 "\t/etc/passwd`; do pw usermod $x -L default; done;\n"
-msgstr ""
+msgstr "# for x in `awk -F: '($3 >= 1001) && ($3 != 65534) { print $1 }' \\\n\t/etc/passwd`; do pw usermod $x -L default; done;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:804
+#, fuzzy
 msgid "Next, drop the `nagios` and `www` accounts into the insecure class:"
-msgstr ""
+msgstr "接下来，将 `nagios` 和 `www` 帐户设为不安全类："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:809
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# pw usermod nagios -L insecure\n"
 "# pw usermod www -L insecure\n"
-msgstr ""
+msgstr "# pw usermod nagios -L insecure\n# pw usermod www -L insecure\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mac/_index.adoc:811
@@ -2313,97 +2447,99 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:818
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# This is the default BIBA policy for this system.\n"
-msgstr ""
+msgstr "# This is the default BIBA policy for this system.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:821
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# System:\n"
 "/var/run(/.*)?\t\t\tbiba/equal\n"
-msgstr ""
+msgstr "# System:\n/var/run(/.*)?\t\t\tbiba/equal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:823
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/(/.*)?\t\t\tbiba/equal\n"
-msgstr ""
+msgstr "/dev/(/.*)?\t\t\tbiba/equal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:826
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/var\t\t\t\tbiba/equal\n"
 "/var/spool(/.*)?\t\tbiba/equal\n"
-msgstr ""
+msgstr "/var\t\t\t\tbiba/equal\n/var/spool(/.*)?\t\tbiba/equal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:828
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/var/log(/.*)?\t\t\tbiba/equal\n"
-msgstr ""
+msgstr "/var/log(/.*)?\t\t\tbiba/equal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:831
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/tmp(/.*)?\t\t\tbiba/equal\n"
 "/var/tmp(/.*)?\t\t\tbiba/equal\n"
-msgstr ""
+msgstr "/tmp(/.*)?\t\t\tbiba/equal\n/var/tmp(/.*)?\t\tbiba/equal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:834
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/var/spool/mqueue\t\tbiba/equal\n"
 "/var/spool/clientmqueue\t\tbiba/equal\n"
-msgstr ""
+msgstr "/var/spool/mqueue\t\tbiba/equal\n/var/spool/clientmqueue\t\tbiba/equal\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:837
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# For Nagios:\n"
 "/usr/local/etc/nagios(/.*)?\tbiba/10\n"
-msgstr ""
+msgstr "# For Nagios:\n/usr/local/etc/nagios(/.*)?\tbiba/10\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:839
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/var/spool/nagios(/.*)?\t\tbiba/10\n"
-msgstr ""
+msgstr "/var/spool/nagios(/.*)?\t\tbiba/10\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:842
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# For apache\n"
 "/usr/local/etc/apache(/.*)?\tbiba/10\n"
-msgstr ""
+msgstr "# For apache\n/usr/local/etc/apache(/.*)?\tbiba/10\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:847
+#, fuzzy
 msgid ""
 "This policy enforces security by setting restrictions on the flow of "
 "information.  In this specific configuration, users, including `root`, "
 "should never be allowed to access Nagios.  Configuration files and processes "
 "that are a part of Nagios will be completely self contained or jailed."
-msgstr ""
+msgstr "此策略通过限制信息流来强制实施安全性。在此特定配置中，任何用户（包括 `root`）都不应被允许访问 Nagios。Nagios 的配置文件和进程应完全独立运行或被置于 jail 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:850
+#, fuzzy
 msgid ""
 "This file will be read after running `setfsmac` on every file system.  This "
 "example sets the policy on the root file system:"
-msgstr ""
+msgstr "在每个文件系统上运行 `setfsmac` 后，将读取此文件。以下示例为根文件系统设置策略："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:854
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# setfsmac -ef /etc/policy.contexts /\n"
-msgstr ""
+msgstr "# setfsmac -ef /etc/policy.contexts /\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:857
@@ -2479,59 +2615,64 @@ msgstr "测试配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:891
+#, fuzzy
 msgid ""
 "First, ensure that the web server and Nagios will not be started on system "
 "initialization and reboot.  Ensure that `root` cannot access any of the "
 "files in the Nagios configuration directory.  If `root` can list the "
 "contents of [.filename]#/var/spool/nagios#, something is wrong.  Instead, a "
 "\"permission denied\" error should be returned."
-msgstr ""
+msgstr "首先，确保系统初始化和重新引导时不会启动 Web 服务器和 Nagios。确保 `root` 无法访问 Nagios 配置目录中的任何文件。如果 `root` 可以列出 [.filename]#/var/spool/nagios# 的内容，就说明有问题。相反，应返回“权限被拒绝”错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:893
+#, fuzzy
 msgid "If all seems well, Nagios, Apache, and Sendmail can now be started:"
-msgstr ""
+msgstr "如果一切正常，现在可以启动 Nagios、Apache 和 Sendmail："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:899
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /etc/mail && make stop && \\\n"
 "setpmac biba/equal make start && setpmac biba/10\\(10-10\\) apachectl start && \\\n"
 "setpmac biba/10\\(10-10\\) /usr/local/etc/rc.d/nagios.sh forcestart\n"
-msgstr ""
+msgstr "# cd /etc/mail && make stop && \\\nsetpmac biba/equal make start && setpmac biba/10\\(10-10\\) apachectl start && \\\nsetpmac biba/10\\(10-10\\) /usr/local/etc/rc.d/nagios.sh forcestart\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:904
+#, fuzzy
 msgid ""
 "Double check to ensure that everything is working properly.  If not, check "
 "the log files for error messages.  If needed, use man:sysctl[8] to disable "
 "the man:mac_biba[4] security policy module and try starting everything again "
 "as usual."
-msgstr ""
+msgstr "再次检查以确保一切正常运行。如果不正常，请检查日志文件中的错误消息。如有需要，可使用 man:sysctl[8] 禁用 man:mac_biba[4] 安全策略模块，然后再像往常一样尝试启动所有服务。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:909
+#, fuzzy
 msgid ""
 "The `root` user can still change the security enforcement and edit its "
 "configuration files.  The following command will permit the degradation of "
 "the security policy to a lower grade for a newly spawned shell:"
-msgstr ""
+msgstr "`root` 用户仍然可以更改安全强制机制并编辑其配置文件。以下命令允许新启动的 shell 将安全策略降级到较低级别："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:913
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# setpmac biba/10 csh\n"
-msgstr ""
+msgstr "# setpmac biba/10 csh\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:918
+#, fuzzy
 msgid ""
 "To block this from happening, force the user into a range using man:login."
 "conf[5].  If man:setpmac[8] attempts to run a command outside of the "
 "compartment's range, an error will be returned and the command will not be "
 "executed.  In this case, set root to `biba/high(high-high)`."
-msgstr ""
+msgstr "要阻止这种情况发生，请使用 man:login.conf[5] 将用户限制在某个范围内。如果 man:setpmac[8] 尝试运行超出该隔离环境范围的命令，将返回错误，且不会执行该命令。在此例中，将 root 设置为 `biba/high(high-high)`。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mac/_index.adoc:921
@@ -2547,9 +2688,9 @@ msgstr "本节讨论常见的配置错误以及如何解决这些问题。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mac/_index.adoc:925
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The `multilabel` flag does not stay enabled on the root ([.filename]#/#) partition"
-msgstr ""
+msgstr "`multilabel` 标志在根（[.filename]#/#）分区上不会保持启用状态"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:927
@@ -2558,10 +2699,11 @@ msgstr "以下步骤可以解决此暂时性错误："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:931
+#, fuzzy
 msgid ""
 "Edit [.filename]#/etc/fstab# and set the root partition to `ro` for read-"
 "only."
-msgstr ""
+msgstr "编辑 [.filename]#/etc/fstab#，将根分区设置为 `ro`（只读）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:932
@@ -2570,8 +2712,9 @@ msgstr "重新启动到单用户模式。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:933
+#, fuzzy
 msgid "Run `tunefs -l enable` on [.filename]#/#."
-msgstr ""
+msgstr "在 [.filename]#/# 上运行 `tunefs -l enable`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:934
@@ -2580,62 +2723,69 @@ msgstr "重启系统。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:935
+#, fuzzy
 msgid ""
 "Run `mount -urw`[.filename]#/# and change the `ro` back to `rw` in [."
 "filename]#/etc/fstab# and reboot the system again."
-msgstr ""
+msgstr "运行 `mount -urw`[.filename]#/#，将 [.filename]#/etc/fstab# 中的 `ro` 改回 `rw`，然后再次重新引导系统。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:936
+#, fuzzy
 msgid ""
 "Double-check the output from `mount` to ensure that `multilabel` has been "
 "properly set on the root file system."
-msgstr ""
+msgstr "再次检查 `mount` 的输出，确保已在根文件系统上正确设置 `multilabel`。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mac/_index.adoc:938
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "After establishing a secure environment with MAC, Xorg no longer starts"
-msgstr ""
+msgstr "使用 MAC 建立安全环境后，Xorg 不再启动"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:941
+#, fuzzy
 msgid ""
 "This could be caused by the MAC `partition` policy or by a mislabeling in "
 "one of the MAC labeling policies.  To debug, try the following:"
-msgstr ""
+msgstr "这可能是 MAC `partition` 策略导致的，也可能是某项 MAC 标签策略中的标签设置有误。要排查问题，请尝试以下步骤："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:945
+#, fuzzy
 msgid ""
 "Check the error message. If the user is in the `insecure` class, the "
 "`partition` policy may be the culprit. Try setting the user's class back to "
 "the `default` class and rebuild the database with `cap_mkdb`. If this does "
 "not alleviate the problem, go to step two."
-msgstr ""
+msgstr "检查错误消息。如果用户属于 `insecure` 类，问题可能出在 `partition` 策略上。尝试将用户的类改回 `default`，然后使用 `cap_mkdb` 重建数据库。如果这不能解决问题，请继续执行第二步。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:946
+#, fuzzy
 msgid ""
 "Double-check that the label policies are set correctly for the user, Xorg, "
 "and the [.filename]#/dev# entries."
-msgstr ""
+msgstr "再次检查是否已为用户、Xorg 和 [.filename]#/dev# 条目正确设置标签策略。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mac/_index.adoc:947
+#, fuzzy
 msgid ""
 "If neither of these resolve the problem, send the error message and a "
 "description of the environment to the {freebsd-questions}."
-msgstr ""
+msgstr "如果这两种方法都无法解决问题，请将错误消息和环境描述发送至 {freebsd-questions}。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mac/_index.adoc:949
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The `_secure_path: unable to stat .login_conf` error appears"
-msgstr ""
+msgstr "出现 `_secure_path: unable to stat .login_conf` 错误"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:954
+#, fuzzy
 msgid ""
 "This error can appear when a user attempts to switch from the `root` user to "
 "another user in the system.  This message usually occurs when the user has a "
@@ -2645,31 +2795,34 @@ msgid ""
 "will happen whether or not `root` has used `su` to become `joe` as the Biba "
 "integrity model will not permit `root` to view objects set at a lower "
 "integrity level."
-msgstr ""
+msgstr "当用户尝试从 `root` 用户切换到系统中的另一个用户时，可能会出现此错误。通常，这是因为该用户的标签级别高于其尝试切换到的用户。例如，如果 `joe` 的默认标签为 `biba/low`，而 `root` 的标签为 `biba/high`，那么 `root` 就无法查看 ``joe`` 的主目录。无论 `root` 是否使用 `su` 切换到 `joe`，都会发生这种情况，因为 Biba 完整性模型不允许 `root` 查看设置为较低完整性级别的对象。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mac/_index.adoc:955
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The system no longer recognizes `root`"
-msgstr ""
+msgstr "系统不再识别 `root`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:957
+#, fuzzy
 msgid "When this occurs, `whoami` returns `0` and `su` returns `who are you?`."
-msgstr ""
+msgstr "发生这种情况时，`whoami` 会返回 `0`，而 `su` 会返回 `who are you?`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:961
+#, fuzzy
 msgid ""
 "This can happen if a labeling policy has been disabled by man:sysctl[8] or "
 "the policy module was unloaded.  If the policy is disabled, the login "
 "capabilities database needs to be reconfigured.  Double check [.filename]#/"
 "etc/login.conf# to ensure that all `label` options have been removed and "
 "rebuild the database with `cap_mkdb`."
-msgstr ""
+msgstr "如果标签策略已被 man:sysctl[8] 禁用，或策略模块已卸载，就可能发生这种情况。如果策略已禁用，则需要重新配置登录能力数据库。仔细检查 [.filename]#/etc/login.conf#，确保已移除所有 `label` 选项，然后使用 `cap_mkdb` 重建数据库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mac/_index.adoc:965
+#, fuzzy
 msgid ""
 "This may also happen if a policy restricts access to [.filename]#master."
 "passwd#.  This is usually caused by an administrator altering the file under "
@@ -2677,4 +2830,4 @@ msgid ""
 "In these cases, the user information would be read by the system and access "
 "would be blocked as the file has inherited the new label.  Disable the "
 "policy using man:sysctl[8] and everything should return to normal."
-msgstr ""
+msgstr "如果某项策略限制对 [.filename]#master.passwd# 的访问，也可能发生这种情况。这通常是管理员在与系统所用通用策略冲突的标签下修改该文件导致的。在这种情况下，系统会读取用户信息，但由于该文件继承了新的标签，访问会被阻止。使用 man:sysctl[8] 禁用该策略后，一切应恢复正常。"

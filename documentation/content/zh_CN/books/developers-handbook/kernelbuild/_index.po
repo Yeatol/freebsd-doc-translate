@@ -18,101 +18,109 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:1
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building and Installing a FreeBSD Kernel"
-msgstr ""
+msgstr "构建和安装 FreeBSD 内核"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 9. Building and Installing a FreeBSD Kernel"
-msgstr ""
+msgstr "第 9 章：构建和安装 FreeBSD 内核"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:54
+#, fuzzy
 msgid ""
 "Being a kernel developer requires understanding of the kernel build "
 "process.  To debug the FreeBSD kernel it is required to be able to build "
 "one.  There are two known ways to do so:"
-msgstr ""
+msgstr "内核开发人员需要了解内核构建过程。要调试 FreeBSD 内核，必须能够构建内核。已知有两种方法可以做到这一点："
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:56
+#, fuzzy
 msgid ""
 "The supported procedure to build and install a kernel is documented in the "
 "extref:{handbook}kernelconfig/[Building and Installing a Custom Kernel, "
 "kernelconfig-building] chapter of the FreeBSD Handbook."
-msgstr ""
+msgstr "FreeBSD 手册的 extref:{handbook}kernelconfig/[构建和安装自定义内核, kernelconfig-building] 章节介绍了构建和安装内核的受支持流程。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:61
+#, fuzzy
 msgid ""
 "It is supposed that the reader of this chapter is familiar with the "
 "information described in the extref:{handbook}kernelconfig/[Building and "
 "Installing a Custom Kernel, kernelconfig-building] chapter of the FreeBSD "
 "Handbook.  If this is not the case, please read through the above mentioned "
 "chapter to understand how the build process works."
-msgstr ""
+msgstr "本章假定读者熟悉 FreeBSD 手册 extref:{handbook}kernelconfig/[构建和安装自定义内核, kernelconfig-building] 章节中介绍的信息。如果您还不熟悉，请阅读上述章节，了解构建过程的工作原理。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building the Faster but Brittle Way"
-msgstr ""
+msgstr "更快但不够可靠的构建方法"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:68
+#, fuzzy
 msgid ""
 "Building the kernel this way may be useful when working on the kernel code "
 "and it may actually be faster than the documented procedure when only a "
 "single option or two were tweaked in the kernel configuration file.  On the "
 "other hand, it might lead to unexpected kernel build breakage."
-msgstr ""
+msgstr "以这种方式构建内核，在处理内核代码时可能很有用；如果只调整了内核配置文件中的一两个选项，这种方法实际上可能比文档中介绍的流程更快。另一方面，这也可能导致内核构建意外失败。"
 
 #. type: .procedure
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:71
+#, fuzzy
 msgid "Run man:config[8] to generate the kernel source code:"
-msgstr ""
+msgstr "运行 man:config[8] 以生成内核源代码："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /usr/sbin/config MYKERNEL\n"
-msgstr ""
+msgstr "# /usr/sbin/config MYKERNEL\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:78
+#, fuzzy
 msgid ""
 "Change into the build directory. man:config[8] will print the name of this "
 "directory after being run as above."
-msgstr ""
+msgstr "切换到构建目录。按上述方式运行 man:config[8] 后，它会显示该目录的名称。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cd ../compile/MYKERNEL\n"
-msgstr ""
+msgstr "# cd ../compile/MYKERNEL\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:85
+#, fuzzy
 msgid "Compile the kernel:"
-msgstr ""
+msgstr "编译内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# make depend\n"
 "# make\n"
-msgstr ""
+msgstr "# make depend\n# make\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:93
+#, fuzzy
 msgid "Install the new kernel:"
-msgstr ""
+msgstr "安装新内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/kernelbuild/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make install\n"
-msgstr ""
+msgstr "# make install\n"

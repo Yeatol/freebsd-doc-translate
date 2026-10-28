@@ -17,11 +17,13 @@ msgstr ""
 
 #. type: .abstract-title
 #: documentation/content/en/books/handbook/introduction.adoc:3
+#, fuzzy
 msgid "Abstract"
-msgstr ""
+msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/books/handbook/introduction.adoc:8
+#, fuzzy
 msgid ""
 "Welcome to FreeBSD! This handbook covers the installation and day to day use "
 "of _FreeBSD {rel151-current}-RELEASE_, _FreeBSD {rel144-current}-RELEASE_ "
@@ -29,10 +31,11 @@ msgid ""
 "many individuals.  Some sections might be outdated.  Those interested in "
 "helping to update and expand this document should send email to the {freebsd-"
 "doc}."
-msgstr ""
+msgstr "欢迎使用 FreeBSD！本手册介绍 FreeBSD {rel151-current}-RELEASE、FreeBSD {rel144-current}-RELEASE 和 {rel135-current}-RELEASE 的安装和日常使用。本书是许多人持续努力的成果。部分章节可能已经过时。有意帮助更新和扩展本文档的读者，请向 {freebsd-doc} 发送电子邮件。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/handbook/introduction.adoc:12
+#, fuzzy
 msgid ""
 "The latest version of this book is available from the https://www.FreeBSD."
 "org/[FreeBSD web site].  Previous versions can be obtained from https://docs."
@@ -41,4 +44,4 @@ msgid ""
 "freebsd.org/doc/[FreeBSD download server] or one of the numerous link:"
 "#mirrors[mirror sites].  Searches can be performed on the handbook and other "
 "documents on the link:https://www.FreeBSD.org/search/[search page]."
-msgstr ""
+msgstr "本书的最新版本可从 link:https://www.FreeBSD.org/[FreeBSD 网站]获取。以前的版本可从 link:https://docs.FreeBSD.org/doc/[https://docs.FreeBSD.org/doc/]获取。本书可从 link:https://download.freebsd.org/doc/[FreeBSD 下载服务器]或众多 link:#mirrors[镜像站点]之一下载，提供多种格式和压缩选项。您可以在手册及其他文档的 link:https://www.FreeBSD.org/search/[搜索页面]进行搜索。"

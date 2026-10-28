@@ -20,128 +20,138 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration used in the texts editors in the FreeBSD Documentation Project"
-msgstr ""
+msgstr "FreeBSD 文档项目文本编辑器的配置"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 13. Editor Configuration"
-msgstr ""
+msgstr "第 13 章：编辑器配置"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Editor Configuration"
-msgstr ""
+msgstr "编辑器配置"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:51
+#, fuzzy
 msgid ""
 "Adjusting your text editor configuration can make working on document files "
 "quicker and easier, and help documents conform to FDP guidelines."
-msgstr ""
+msgstr "调整文本编辑器配置可以让文档文件的编辑更快捷、更轻松，并帮助文档符合 FDP 指南。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vim"
-msgstr ""
+msgstr "Vim"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:57
+#, fuzzy
 msgid ""
 "Install from package:editors/vim[], then follow the configuration "
 "instructions in crossref:editor-config[editor-config-vim-config, "
 "Configuration].  More advanced users can use a proper linter like link:"
 "https://github.com/dense-analysis/ale[Ale] which can also act as a Vim link:"
 "https://langserver.org/[Language Server Protocol] client."
-msgstr ""
+msgstr "从 package:editors/vim[] 安装，然后按照 crossref:editor-config[editor-config-vim-config, 配置] 中的说明进行配置。更高级的用户可以使用 link:https://github.com/dense-analysis/ale[Ale] 这样的专业代码检查工具，它还可以作为 Vim 的 link:https://langserver.org/[语言服务器协议] 客户端。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:59
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:308
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use"
-msgstr ""
+msgstr "使用"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:62
+#, fuzzy
 msgid ""
 "Manual page writers can use the following keyboard shortcuts to reformat:"
-msgstr ""
+msgstr "手册页编写者可以使用以下快捷键重新排版："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:64
+#, fuzzy
 msgid ""
 "Press kbd:[P] to reformat paragraphs or text that has been selected in "
 "Visual mode."
-msgstr ""
+msgstr "按 kbd:[P] 可重新排版段落或可视模式下选中的文本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:65
+#, fuzzy
 msgid "Press kbd:[T] to replace groups of eight spaces with a tab."
-msgstr ""
+msgstr "按 kbd:[T] 可将连续的八个空格替换为一个制表符。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:68
+#, fuzzy
 msgid ""
 "A linter named link:https://vale.sh[Vale] has been introduced to check "
 "grammatical and cosmetic errors on the documents.  Vale has support for "
 "various editors and IDEs."
-msgstr ""
+msgstr "文档中新增了名为 link:https://vale.sh[Vale] 的代码检查工具，用于检查语法和格式错误。Vale 支持多种编辑器和 IDE。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:71
+#, fuzzy
 msgid ""
 "Vale may already be installed as a dependency of the package:textproc/"
 "docproj[] meta-port.  If not, install package:textproc/vale[] with:"
-msgstr ""
+msgstr "Vale 可能已作为 package:textproc/docproj[] 元端口的依赖项安装。如果尚未安装，请使用以下命令安装 package:textproc/vale[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "$ pkg install vale\n"
-msgstr ""
+msgstr "$ pkg install vale\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:78
+#, fuzzy
 msgid ""
 "Install link:https://github.com/dense-analysis/ale[Ale] to integrate into "
 "package:editors/vim[], for using package:textproc/vale[]."
-msgstr ""
+msgstr "安装 link:https://github.com/dense-analysis/ale[Ale]，将其集成到 package:editors/vim[] 中，以使用 package:textproc/vale[]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% mkdir -p ~/.vim/pack/vendor/start\n"
 "% git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/vendor/start/ale\n"
-msgstr ""
+msgstr "% mkdir -p ~/.vim/pack/vendor/start\n% git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/vendor/start/ale\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:86
+#, fuzzy
 msgid ""
 "Users who are using plugin managers for package:editors/vim[] do not need "
 "the above and should follow the instructions of that plugin manager to "
 "install link:https://github.com/dense-analysis/ale[Ale]."
-msgstr ""
+msgstr "使用 package:editors/vim[] 插件管理器的用户无需执行上述步骤，应按照相应插件管理器的说明安装 link:https://github.com/dense-analysis/ale[Ale]。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:89
+#, fuzzy
 msgid ""
 "At this moment due to a bug in link:https://vale.sh[Vale] it is necessary to "
 "copy the link:https://vale.sh[Vale] configuration to the home directory.  "
 "Considering the repository was cloned into [.filename]#~/doc# copy as "
 "following:"
-msgstr ""
+msgstr "目前，由于 link:https://vale.sh[Vale] 存在一个错误，需要将 link:https://vale.sh[Vale] 配置复制到主目录。假设仓库克隆到了 [.filename]#~/doc#，请按如下方式复制："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cp -R ~/doc/.vale* ~/\n"
-msgstr ""
+msgstr "% cp -R ~/doc/.vale* ~/\n"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:96
@@ -152,60 +162,61 @@ msgstr "设置"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:99
+#, fuzzy
 msgid "Edit [.filename]#~/.vimrc#, adding these lines to the end of the file:"
-msgstr ""
+msgstr "编辑 [.filename]#~/.vimrc#，在文件末尾添加以下行："
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`~/.vimrc`"
-msgstr ""
+msgstr "`~/.vimrc`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "if has(\"autocmd\")\n"
 "  au BufNewFile,BufRead *.adoc call Set_ADOC()\n"
 "  au BufNewFile,BufRead *.[1-9] call Set_MAN()\n"
 "endif \" has(autocmd)\n"
-msgstr ""
+msgstr "if has(\"autocmd\")\n  au BufNewFile,BufRead *.adoc call Set_ADOC()\n  au BufNewFile,BufRead *.[1-9] call Set_MAN()\nendif \" has(autocmd)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function Set_Highlights()\n"
 "  \"match ExtraWhitespace /^\\s* \\s*\\|\\s\\+$/\n"
 "  return 0\n"
 "endfunction \" Set_Highlights_Adoc()\n"
-msgstr ""
+msgstr "function Set_Highlights()\n  \"match ExtraWhitespace /^\\s* \\s*\\|\\s\\+$/\n  return 0\nendfunction \" Set_Highlights_Adoc()\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function Set_Highlights_MAN()\n"
 "  highlight default link OverLength ErrorMsg\n"
 "  match OverLength /\\%71v.\\+/\n"
 "  return 0\n"
 "endfunction \" Set_Highlights_MAN()\n"
-msgstr ""
+msgstr "function Set_Highlights_MAN()\n  highlight default link OverLength ErrorMsg\n  match OverLength /\\%71v.\\+/\n  return 0\nendfunction \" Set_Highlights_MAN()\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function ShowSpecial()\n"
 "  setlocal list listchars=tab:>>,trail:*,eol:$\n"
 "  hi def link nontext ErrorMsg\n"
 "  return 0\n"
 "endfunction \" ShowSpecial()\n"
-msgstr ""
+msgstr "function ShowSpecial()\n  setlocal list listchars=tab:>>,trail:*,eol:$\n  hi def link nontext ErrorMsg\n  return 0\nendfunction \" ShowSpecial()\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function Set_COMMON()\n"
 "  setlocal number\n"
@@ -219,11 +230,11 @@ msgid ""
 "  call Set_Highlights()\n"
 "  return 0\n"
 "endfunction \" Set_COMMON()\n"
-msgstr ""
+msgstr "function Set_COMMON()\n  setlocal number\n  setlocal shiftwidth=2\n  setlocal tabstop=8\n  setlocal softtabstop=2\n  setlocal formatprg=\"fmt -p\"\n  setlocal autoindent\n  setlocal smartindent\n  call ShowSpecial()\n  call Set_Highlights()\n  return 0\nendfunction \" Set_COMMON()\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function Set_ADOC()\n"
 "  setlocal syntax=asciidoc\n"
@@ -231,11 +242,11 @@ msgid ""
 "  call Set_COMMON()\n"
 "  return 0\n"
 "endfunction \" Set_ADOC()\n"
-msgstr ""
+msgstr "function Set_ADOC()\n  setlocal syntax=asciidoc\n  setlocal filetype=asciidoc\n  call Set_COMMON()\n  return 0\nendfunction \" Set_ADOC()\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "function Set_MAN()\n"
 "  setlocal syntax=man\n"
@@ -249,11 +260,11 @@ msgid ""
 "  call Set_Highlights_MAN()\n"
 "  return 0\n"
 "endfunction \" Set_Man()\n"
-msgstr ""
+msgstr "function Set_MAN()\n  setlocal syntax=man\n  setlocal filetype=man\n  setlocal textwidth=70\n  \" Rewrap paragraphs\n  noremap P gqj\n  \" Replace spaces with tabs\n  noremap T :s/        /\\t/<CR>\n  call Set_COMMON()\n  call Set_Highlights_MAN()\n  return 0\nendfunction \" Set_Man()\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "let g:ale_fixers = {\n"
 "\\   '*': ['remove_trailing_lines', 'trim_whitespace'],\n"
@@ -262,83 +273,89 @@ msgid ""
 "\\   'asciidoc': ['vale'],\n"
 "\\}\n"
 "let g:ale_fix_on_save = 1\n"
-msgstr ""
+msgstr "let g:ale_fixers = {\n\\   '*': ['remove_trailing_lines', 'trim_whitespace'],\n\\}\nlet g:ale_linters = {\n\\   'asciidoc': ['vale'],\n\\}\nlet g:ale_fix_on_save = 1\n"
 
 #. type: delimited block = 6
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:171
+#, fuzzy
 msgid ""
 "Above configuration will automatically remove trailing line, trailing space "
 "and multiple spaces which might display additional unwanted changes in `git "
 "diff` output.  In such cases properly mention that in the commit log."
-msgstr ""
+msgstr "上述配置会自动删除行尾空行、行尾空格和多余空格，这些内容可能会在 `git diff` 输出中造成不必要的更改。在这种情况下，请在提交日志中明确说明。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:177
+#, fuzzy
 msgid "Install from package:editors/emacs[] or package:editors/emacs-devel[]."
-msgstr ""
+msgstr "从 package:editors/emacs[] 或 package:editors/emacs-devel[] 安装。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Automated Proofreading with Flycheck and Igor"
-msgstr ""
+msgstr "使用 Flycheck 和 Igor 自动校对"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:183
+#, fuzzy
 msgid ""
 "The link:https://www.flycheck.org/[Flycheck] package is available from link:"
 "https://melpa.org/[Milkypostman's Emacs Lisp Package Archive] (MELPA).  If "
 "MELPA is not already in Emacs's packages-archives, it can be added by "
 "evaluating"
-msgstr ""
+msgstr "link:https://www.flycheck.org/[Flycheck] 软件包可从 link:https://melpa.org/[Milkypostman 的 Emacs Lisp 软件包档案]（MELPA）获取。如果 MELPA 尚未加入 Emacs 的 packages-archives，可通过求值以下表达式添加："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(add-to-list 'package-archives '(\"melpa\" . \"http://stable.melpa.org/packages/\") t)\n"
-msgstr ""
+msgstr "(add-to-list 'package-archives '(\"melpa\" . \"http://stable.melpa.org/packages/\") t)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:190
+#, fuzzy
 msgid ""
 "Add the line to Emacs's initialization file (one of [.filename]#~/.emacs#, [."
 "filename]#~/.emacs.el#, or [.filename]#~.emacs.d/init.el#) to make this "
 "change permanent."
-msgstr ""
+msgstr "将该行添加到 Emacs 的初始化文件（[.filename]#~/.emacs#、[.filename]#~/.emacs.el# 或 [.filename]#~.emacs.d/init.el# 之一），使此更改永久生效。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:192
+#, fuzzy
 msgid "To install Flycheck, evaluate"
-msgstr ""
+msgstr "要安装 Flycheck，请对以下表达式求值："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(package-install 'flycheck)\n"
-msgstr ""
+msgstr "(package-install 'flycheck)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:199
+#, fuzzy
 msgid "Create a Flycheck checker for package:textproc/igor[] by evaluating"
-msgstr ""
+msgstr "要为 package:textproc/igor[] 创建 Flycheck 检查器，请对以下表达式求值："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "(flycheck-define-checker igor\n"
 "  \"FreeBSD Documentation Project sanity checker.\n"
-msgstr ""
+msgstr "(flycheck-define-checker igor\n  \"FreeBSD Documentation Project sanity checker.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "See URLs https://www.freebsd.org/docproj/ and\n"
 "http://www.freshports.org/textproc/igor/.\"\n"
@@ -346,46 +363,48 @@ msgid ""
 "  :error-parser flycheck-parse-checkstyle\n"
 "  :modes (nxml-mode)\n"
 "  :standard-input t)\n"
-msgstr ""
+msgstr "See URLs https://www.freebsd.org/docproj/ and\nhttp://www.freshports.org/textproc/igor/.\"\n  :command (\"igor\" \"-X\" source-inplace)\n  :error-parser flycheck-parse-checkstyle\n  :modes (nxml-mode)\n  :standard-input t)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  (add-to-list 'flycheck-checkers 'igor 'append)\n"
-msgstr ""
+msgstr "  (add-to-list 'flycheck-checkers 'igor 'append)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:216
+#, fuzzy
 msgid ""
 "Again, add these lines to Emacs's initialization file to make the changes "
 "permanent."
-msgstr ""
+msgstr "同样，将这些行添加到 Emacs 的初始化文件中，使更改永久生效。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Documentation Specific Settings"
-msgstr ""
+msgstr "FreeBSD 文档专用设置"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:221
+#, fuzzy
 msgid ""
 "To apply settings specific to the FreeBSD documentation project, create [."
 "filename]#.dir-locals.el# in the root directory of the documentation "
 "repository and add these lines to the file:"
-msgstr ""
+msgstr "要应用 FreeBSD 文档项目专用的设置，请在文档仓库的根目录中创建 [.filename]#.dir-locals.el#，并在文件中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ";;; Directory Local Variables\n"
 ";;; For more information see (info \"(emacs) Directory Variables\")\n"
-msgstr ""
+msgstr ";;; Directory Local Variables\n;;; For more information see (info \"(emacs) Directory Variables\")\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "((nxml-mode\n"
 "  (eval . (turn-on-auto-fill))\n"
@@ -394,36 +413,38 @@ msgid ""
 "  (eval . (flycheck-mode 1))\n"
 "  (flycheck-checker . igor)\n"
 "  (eval . (add-to-list 'rng-schema-locating-files \"~/.emacs.d/schema/schemas.xml\"))))\n"
-msgstr ""
+msgstr "((nxml-mode\n  (eval . (turn-on-auto-fill))\n  (fill-column . 70)\n  (eval . (require 'flycheck))\n  (eval . (flycheck-mode 1))\n  (flycheck-checker . igor)\n  (eval . (add-to-list 'rng-schema-locating-files \"~/.emacs.d/schema/schemas.xml\"))))\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "nano"
-msgstr ""
+msgstr "nano"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:240
+#, fuzzy
 msgid "Install from package:editors/nano[]."
-msgstr ""
+msgstr "从 package:editors/nano[] 安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:246
+#, fuzzy
 msgid ""
 "Currently there is no adoc/asciidoc syntax highlight file with nano "
 "distribution.  So let's create one from scratch and use an editor to create "
 "new file or add lines in the [.filename]#~/.nanorc# with these contents:"
-msgstr ""
+msgstr "目前 nano 发行版中没有 adoc/asciidoc 语法高亮文件。因此，我们从头创建一个：使用编辑器新建文件，或将以下内容添加到 [.filename]#~/.nanorc#："
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`~/.nanorc`"
-msgstr ""
+msgstr "`~/.nanorc`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "syntax \"asciidoc\" \"\\.(adoc|asc|asciidoc)$\"\n"
 "# main header\n"
@@ -473,50 +494,54 @@ msgid ""
 "color ,yellow \"( )+TAB\"\n"
 "# highlight indents that have an odd number of spaces\n"
 "color ,red \"^(([ ]{2})+|(TAB+))*[ ]{1}[^ ]{1}\"\n"
-msgstr ""
+msgstr "syntax \"asciidoc\" \"\\.(adoc|asc|asciidoc)$\"\n# main header\ncolor red \"^====+$\"\n# h1\ncolor red \"^==[[:space:]].*$\"\ncolor red \"^----+$\"\n# h2\ncolor magenta \"^===[[:space:]].*$\"\ncolor magenta \"^~~~~+$\"\n# h4\ncolor green \"^====[[:space:]].*$\"\ncolor green \"^\\^\\^\\^\\^+$\"\n# h5\ncolor brightblue \"^=====[[:space:]].*$\"\ncolor brightblue \"^\\+\\+\\+\\++$\"\n# attributes\ncolor brightgreen \":.*:\"\ncolor brightred \"\\{[a-z0-9]*\\}\"\ncolor red \"\\\\\\{[a-z0-9]*\\}\"\ncolor red \"\\+\\+\\+\\{[a-z0-9]*\\}\\+\\+\\+\"\n# Paragraph Title\ncolor yellow \"^\\..*$\"\n# source\ncolor magenta \"^\\[(source,.+|NOTE|TIP|IMPORTANT|WARNING|CAUTION)\\]\"\n# Other markup\ncolor yellow \".*[[:space:]]\\+$\"\ncolor yellow \"_[^_]+_\"\ncolor yellow \"\\*[^\\*]+\\*\"\ncolor yellow \"\\+[^\\+]+\\+\"\ncolor yellow \"`[^`]+`\"\ncolor yellow \"\\^[^\\^]+\\^\"\ncolor yellow \"~[^~]+~\"\ncolor yellow \"'[^']+'\"\ncolor cyan \"`{1,2}[^']+'{1,2}\"\n# bullets\ncolor brightmagenta \"^[[:space:]]*[\\*\\.-]{1,5}[[:space:]]\"\n# anchors\ncolor brightwhite \"\\[\\[.*\\]\\]\"\ncolor brightwhite \"<<.*>>\"\n# trailing whitespace\ncolor ,blue \"[[:space:]]+$\"\n# multiples of eight spaces at the start a line\n# (after zero or more tabs) should be a tab\ncolor ,blue \"^([TAB]*[ ]{8})+\"\n# tabs after spaces\ncolor ,yellow \"( )+TAB\"\n# highlight indents that have an odd number of spaces\ncolor ,red \"^(([ ]{2})+|(TAB+))*[ ]{1}[^ ]{1}\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:301
+#, fuzzy
 msgid "Process the file to create embedded tabs:"
-msgstr ""
+msgstr "处理该文件以生成内嵌制表符："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% perl -i'' -pe 's/TAB/\\t/g' ~/.nanorc\n"
-msgstr ""
+msgstr "% perl -i'' -pe 's/TAB/\\t/g' ~/.nanorc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:311
+#, fuzzy
 msgid "Specify additional helpful options when running the editor:"
-msgstr ""
+msgstr "运行编辑器时指定其他有用选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:315
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% nano -AKipwz -T8 _index.adoc\n"
-msgstr ""
+msgstr "% nano -AKipwz -T8 _index.adoc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:318
+#, fuzzy
 msgid ""
 "Users of man:csh[1] can define an alias in [.filename]#~/.cshrc# to automate "
 "these options:"
-msgstr ""
+msgstr "man:csh[1] 用户可以在 [.filename]#~/.cshrc# 中定义别名，以自动应用这些选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alias nano \"nano -AKipwz -r 70 -T8\"\n"
-msgstr ""
+msgstr "alias nano \"nano -AKipwz -r 70 -T8\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:325
+#, fuzzy
 msgid "After the alias is defined, the options will be added automatically:"
-msgstr ""
+msgstr "定义别名后，这些选项会自动添加："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/editor-config/_index.adoc:329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% nano _index.adoc\n"
-msgstr ""
+msgstr "% nano _index.adoc\n"

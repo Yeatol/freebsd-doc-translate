@@ -20,448 +20,470 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation Directory Structure explanation used in the FreeBSD Documentation Project"
-msgstr ""
+msgstr "FreeBSD 文档项目中用于说明文档目录结构的说明"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 4. Documentation Directory Structure"
-msgstr ""
+msgstr "第 4 章：文档目录结构"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation Directory Structure"
-msgstr ""
+msgstr "文档目录结构"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:51
+#, fuzzy
 msgid "Files and directories in the *doc/* tree follow a structure meant to:"
-msgstr ""
+msgstr "*doc/* 树中的文件和目录遵循一种结构，旨在："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:53
+#, fuzzy
 msgid "Make it easy to automate converting the document to other formats."
-msgstr ""
+msgstr "便于自动将文档转换为其他格式。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:54
+#, fuzzy
 msgid ""
 "Promote consistency between the different documentation organizations, to "
 "make it easier to switch between working on different documents."
-msgstr ""
+msgstr "促进不同文档组织之间的一致性，从而更容易在不同文档的工作之间切换。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:55
+#, fuzzy
 msgid ""
 "Make it easy to decide where in the tree new documentation should be placed."
-msgstr ""
+msgstr "便于确定新文档应放置在目录树中的哪个位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:58
+#, fuzzy
 msgid ""
 "In addition, the documentation tree must accommodate documents in many "
 "different languages.  It is important that the documentation tree structure "
 "does not enforce any particular defaults or cultural preferences."
-msgstr ""
+msgstr "此外，文档目录树必须容纳多种语言的文档。重要的是，文档目录树结构不应强加任何特定的默认设置或文化偏好。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Top Level, doc/"
-msgstr ""
+msgstr "顶层目录：doc/"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:63
+#, fuzzy
 msgid ""
 "There are three sections under *doc/*, documentation and website share the "
 "same structure."
-msgstr ""
+msgstr "*doc/* 下有三个部分，文档和网站共用相同的结构。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:67
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Directory"
-msgstr ""
+msgstr "目录"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:69
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Usage"
-msgstr ""
+msgstr "用途"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*documentation*"
-msgstr ""
+msgstr "*documentation*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contains all the articles and books in AsciiDoc format.\n"
 "Contains subdirectories to further categorize the information by languages."
-msgstr ""
+msgstr "包含所有 AsciiDoc 格式的文章和书籍。\n包含子目录，用于按语言进一步分类信息。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:74
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*tools*"
-msgstr ""
+msgstr "*tools*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contains a set of tools used to translate the documentation and the website using link:https://weblate.org/en/[Weblate].\n"
 "The Weblate instance can be found link:https://translate-dev.freebsd.org[here]."
-msgstr ""
+msgstr "包含一组工具，用于通过 link:https://weblate.org/en/[Weblate] 翻译文档和网站。\nWeblate 实例位于 link:https://translate-dev.freebsd.org[此处]。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*shared*"
-msgstr ""
+msgstr "*shared*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contains files that are not specific to the various translations of the documentation.\n"
 "Contains subdirectories to further categorize the information by languages and three files to store the authors, releases and mirrors information.\n"
 "This directory is shared between `documentation` and the `website`."
-msgstr ""
+msgstr "包含与文档各种译本无关的文件。\n包含子目录，用于按语言进一步分类信息；还包含三个文件，用于存储作者、发行版和镜像站信息。\n此目录由 `documentation` 和 `website` 共用。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*website*"
-msgstr ""
+msgstr "*website*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contains the link:https://www.FreeBSD.org[FreeBSD website] in AsciiDoc format.\n"
 "Contains subdirectories to further categorize the information by languages."
-msgstr ""
+msgstr "包含 AsciiDoc 格式的 link:https://www.FreeBSD.org[FreeBSD 网站]。\n包含子目录，用于按语言进一步分类信息。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Directories"
-msgstr ""
+msgstr "各个目录"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:92
+#, fuzzy
 msgid ""
 "These directories contain the documentation and the website.  The "
 "documentation is organized into subdirectories below this level, following "
 "the link:https://gohugo.io/getting-started/directory-structure/[Hugo "
 "directory structure]."
-msgstr ""
+msgstr "这些目录包含文档和网站。文档按照 link:https://gohugo.io/getting-started/directory-structure/[Hugo 目录结构]组织在此层级下的子目录中。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*archetypes*"
-msgstr ""
+msgstr "*archetypes*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain templates to create new articles, books and webpages.\n"
 "For more information take a look link:https://gohugo.io/content-management/archetypes/[here]."
-msgstr ""
+msgstr "包含用于创建新文章、书籍和网页的模板。\n更多信息请参阅 link:https://gohugo.io/content-management/archetypes/[此处]。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*config*"
-msgstr ""
+msgstr "*config*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain the Hugo configuration files.\n"
 "One main file and one file per language.\n"
 "For more information take a look link:https://gohugo.io/getting-started/configuration/[here]."
-msgstr ""
+msgstr "包含 Hugo 配置文件。\n包括一个主文件和每种语言对应的一个文件。\n更多信息请参阅 link:https://gohugo.io/getting-started/configuration/[此处]。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*content*"
-msgstr ""
+msgstr "*content*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain the books, articles and webpages.\n"
 "One directory exists for each available translation of the documentation, for example `en` and `zh-tw`."
-msgstr ""
+msgstr "包含书籍、文章和网页。\n每种可用的文档译本都有一个对应的目录，例如 `en` 和 `zh-tw`。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*data*"
-msgstr ""
+msgstr "*data*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain custom data for build the website in link:https://en.wikipedia.org/wiki/TOML[TOML] format.\n"
 "This directory is used to store the events, news, press, etc.\n"
 "For more information take a look link:https://gohugo.io/templates/data-templates/[here]."
-msgstr ""
+msgstr "包含用于构建网站的自定义数据，采用 link:https://en.wikipedia.org/wiki/TOML[TOML] 格式。\n此目录用于存储活动、新闻、新闻稿等内容。\n更多信息请参阅 link:https://gohugo.io/templates/data-templates/[此处]。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*static*"
-msgstr ""
+msgstr "*static*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain static assets.\n"
 "Images, security advisories, the pgpkeys, etc.\n"
 "For more information take a look link:https://gohugo.io/content-management/static-files/[here]."
-msgstr ""
+msgstr "包含静态资源。\n例如图像、安全公告、pgpkeys 等。\n更多信息请参阅 link:https://gohugo.io/content-management/static-files/[此处]。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:123
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*themes*"
-msgstr ""
+msgstr "*themes*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain the templates in the form of `.html` files that specify how the website looks.\n"
 "For more information take a look link:https://gohugo.io/templates/[here]."
-msgstr ""
+msgstr "包含 `.html` 格式的模板，用于指定网站的外观。\n更多信息请参阅 link:https://gohugo.io/templates/[此处]。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Contain tools used to enhance the documentation build.\n"
 "For example to generate the Table of Contents of the books, etc."
-msgstr ""
+msgstr "包含用于增强文档构建过程的工具。\n例如，用于生成书籍目录等的工具。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*beastie.png*"
-msgstr ""
+msgstr "*beastie.png*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This image does not need an introduction ;)"
-msgstr ""
+msgstr "这张图不言自明，;)"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*LICENSE*"
-msgstr ""
+msgstr "*LICENSE*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "License of the documentation, shared and website. BSD 2-Clause License."
-msgstr ""
+msgstr "文档、共享内容和网站的许可证。BSD 2-Clause License。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Makefile*"
-msgstr ""
+msgstr "*Makefile*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The *Makefile* defines the build process of the documentation and the website."
-msgstr ""
+msgstr "*Makefile* 定义了文档和网站的构建过程。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Document-Specific Information"
-msgstr ""
+msgstr "特定文档的信息"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:144
+#, fuzzy
 msgid ""
 "This section contains specific notes about particular documents managed by "
 "the FDP."
-msgstr ""
+msgstr "本节包含有关 FDP 管理的特定文档的说明。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Books: books/"
-msgstr ""
+msgstr "书籍：books/"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:149
+#, fuzzy
 msgid "The books are written in AsciiDoc."
-msgstr ""
+msgstr "书籍使用 AsciiDoc 编写。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:152
+#, fuzzy
 msgid ""
 "For each FreeBSD book, the AsciiDoc document type (aka doctype) is `book`.  "
 "Books have ``part``s, each of which contains several ``chapter``s."
-msgstr ""
+msgstr "对于每本 FreeBSD 书籍，AsciiDoc 文档类型（即 doctype）为 `book`。书籍包含 ``part``，每个 ``part`` 又包含多个 ``chapter``。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:154
+#, fuzzy
 msgid ""
 "When the document is converted to HTML 5 (using the built-in `html5` "
 "backend):"
-msgstr ""
+msgstr "将文档转换为 HTML 5 时（使用内置的 `html5` 后端）："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:156
+#, fuzzy
 msgid ""
 "AsciiDoc section level 0 (`=`) at the beginning of a ``chapter`` of a `book` "
 "will be `<h1>`"
-msgstr ""
+msgstr "`book` 的 ``chapter`` 开头的 AsciiDoc 0 级章节（`=`）将生成 `<h1>`"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:157
+#, fuzzy
 msgid ""
 "AsciiDoc section level 1 (`==`) must be used for the first logical section "
 "of a chapter, and will be `<h2>`"
-msgstr ""
+msgstr "章节的第一个逻辑部分必须使用 AsciiDoc 1 级章节（`==`），并将生成 `<h2>`"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:158
+#, fuzzy
 msgid ""
 "AsciiDoc section level 2 (`===`) must be used for the first logical "
 "subsection, and will be `<h3>`"
-msgstr ""
+msgstr "第一个逻辑子部分必须使用 AsciiDoc 2 级章节（`===`），并将生成 `<h3>`"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:160
+#, fuzzy
 msgid ""
 "– and so on. Reference: link:https://docs.asciidoctor.org/asciidoc/latest/"
 "sections/titles-and-levels/[Section Titles and Levels | Asciidoctor Docs]."
-msgstr ""
+msgstr "– 以此类推。参考：link:https://docs.asciidoctor.org/asciidoc/latest/sections/titles-and-levels/[章节标题和级别 | Asciidoctor 文档]。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:162
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Physical Organization"
-msgstr ""
+msgstr "物理组织结构"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:165
+#, fuzzy
 msgid ""
 "There are a number of files and directories within the books directory, all "
 "with the same structure."
-msgstr ""
+msgstr "books 目录中有多个文件和目录，它们都采用相同的结构。"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:167
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "_index.adoc"
-msgstr ""
+msgstr "_index.adoc"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:170
+#, fuzzy
 msgid ""
 "The *_index.adoc* file defines some AsciiDoc variables that affect how the "
 "AsciiDoc source is converted to other formats and list the Table of "
 "Contents, Table of Examples, Table of Figures, Table of Tables and the "
 "abstract section."
-msgstr ""
+msgstr "*_index.adoc* 文件定义了一些 AsciiDoc 变量，这些变量会影响 AsciiDoc 源文件转换为其他格式的方式；该文件还列出目录、示例目录、插图目录、表格目录和摘要部分。"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "book.adoc"
-msgstr ""
+msgstr "book.adoc"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:176
+#, fuzzy
 msgid ""
 "The *book.adoc* file defines some AsciiDoc variables that affect how the "
 "AsciiDoc source is converted to other formats and list the Table of "
 "Contents, Table of Examples, Table of Figures, Table of Tables, the abstract "
 "section and all the chapters.  This file is used to generate the PDF with "
 "`asciidoctor-pdf` and to generate the book in one `html` page."
-msgstr ""
+msgstr "*book.adoc* 文件定义了一些 AsciiDoc 变量，这些变量会影响 AsciiDoc 源文件转换为其他格式的方式；该文件还列出目录、示例目录、插图目录、表格目录、摘要部分以及所有章节。此文件用于通过 `asciidoctor-pdf` 生成 PDF，并将整本书生成在一个 `html` 页面中。"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "part*.adoc"
-msgstr ""
+msgstr "part*.adoc"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:180
+#, fuzzy
 msgid ""
 "The **part*.adoc** files store a brief introduction of one part of the book."
-msgstr ""
+msgstr "**part*.adoc** 文件存储书中某一部分的简短介绍。"
 
 #. type: Title ====
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "directory/_index.adoc"
-msgstr ""
+msgstr "directory/_index.adoc"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:185
+#, fuzzy
 msgid ""
 "Each chapter in the Handbook is stored in a file called *_index.adoc* in a "
 "separate directory from the other chapters."
-msgstr ""
+msgstr "《手册》的每个章节都存储在单独的目录中，文件名为 *_index.adoc*。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:187
+#, fuzzy
 msgid "For example, this is an example of the header of one chapter:"
-msgstr ""
+msgstr "例如，以下是一个章节标题的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:190
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "title: Chapter 8. Configuring the FreeBSD Kernel\n"
 "part: Part II. Common Tasks\n"
 "prev: books/handbook/multimedia\n"
 "next: books/handbook/printing\n"
 "---\n"
-msgstr ""
+msgstr "title: Chapter 8. Configuring the FreeBSD Kernel\npart: Part II. Common Tasks\nprev: books/handbook/multimedia\nnext: books/handbook/printing\n---\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:198
+#, fuzzy
 msgid "[[kernelconfig]]"
-msgstr ""
+msgstr "[[kernelconfig]]"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:198
@@ -471,72 +493,81 @@ msgstr "配置 FreeBSD 内核"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:200
+#, fuzzy
 msgid "..."
-msgstr ""
+msgstr "..."
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:203
+#, fuzzy
 msgid ""
 "When the HTML5 version of the Handbook is produced, this will yield "
 "*kernelconfig/index.html*."
-msgstr ""
+msgstr "生成《手册》的 HTML5 版本时，这将生成 *kernelconfig/index.html*。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:205
+#, fuzzy
 msgid ""
 "A brief look will show that there are many directories with individual "
 "*_index.adoc* files, including *basics/_index.adoc*, *introduction/_index."
 "adoc*, and *printing/_index.adoc*."
-msgstr ""
+msgstr "简单查看一下就会发现，目录中有许多包含 *_index.adoc* 文件的子目录，例如 *basics/_index.adoc*、*introduction/_index.adoc* 和 *printing/_index.adoc*。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:211
+#, fuzzy
 msgid ""
 "Do not name chapters or directories after their ordering within the "
 "Handbook.  This ordering can change as the content within the Handbook is "
 "reorganized.  Reorganization should be possible without renaming files, "
 "unless entire chapters are being promoted or demoted within the hierarchy."
-msgstr ""
+msgstr "不要根据章节在《手册》中的顺序为章节或目录命名。随着《手册》内容的重新组织，顺序可能会改变。除非整个章节在层次结构中被提升或降级，否则重新组织内容时应无需重命名文件。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Articles: articles/"
-msgstr ""
+msgstr "文章：articles/"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:217
+#, fuzzy
 msgid "The articles are written in AsciiDoc."
-msgstr ""
+msgstr "文章使用 AsciiDoc 编写。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:220
+#, fuzzy
 msgid ""
 "The articles are organized as an AsciiDoc `article`.  The articles are "
 "divided into sections (`=`) and subsections (`==`, `===`) and so on."
-msgstr ""
+msgstr "文章采用 AsciiDoc `article` 类型组织。文章分为多个章节（`=`）、子章节（`==`、`===`）等。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:225
+#, fuzzy
 msgid "There is one *_index.adoc* file per article."
-msgstr ""
+msgstr "每篇文章都有一个 *_index.adoc* 文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:230
+#, fuzzy
 msgid ""
 "The *_index.adoc* file contains all the AsciiDoc variables and the content."
-msgstr ""
+msgstr "*_index.adoc* 文件包含所有 AsciiDoc 变量和文章内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:232
+#, fuzzy
 msgid ""
 "For example, this is an example of one article, the structure is pretty "
 "similar to one book chapter:"
-msgstr ""
+msgstr "例如，以下是一篇文章的示例，其结构与书籍章节非常相似："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "title: Why you should use a BSD style license for your Open Source Project\n"
 "authors:\n"
@@ -544,7 +575,7 @@ msgid ""
 "    email: brucem@alumni.cse.ucsc.edu\n"
 "trademarks: [\"freebsd\", \"intel\", \"general\"]\n"
 "---\n"
-msgstr ""
+msgstr "title: Why you should use a BSD style license for your Open Source Project\nauthors:\n  - author: Bruce Montague\n    email: brucem@alumni.cse.ucsc.edu\ntrademarks: [\"freebsd\", \"intel\", \"general\"]\n---\n"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:243
@@ -554,10 +585,11 @@ msgstr "为什么你应当在开源项目中使用BSD风格的许可证"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:251
+#, fuzzy
 msgid ""
 ":doctype: article :toc: macro :toclevels: 1 :icons: font :sectnums: :source-"
 "highlighter: rouge :experimental:"
-msgstr ""
+msgstr ":doctype: article :toc: macro :toclevels: 1 :icons: font :sectnums: :source-highlighter: rouge :experimental:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:253
@@ -566,13 +598,15 @@ msgstr "'''"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:255
+#, fuzzy
 msgid "toc::[]"
-msgstr ""
+msgstr "toc::[]"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:257
+#, fuzzy
 msgid "[[intro]]"
-msgstr ""
+msgstr "[[intro]]"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:257
@@ -582,44 +616,48 @@ msgstr "介绍"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Managing Contributor Lists"
-msgstr ""
+msgstr "管理贡献者名单"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:264
+#, fuzzy
 msgid ""
 "The FreeBSD project recognizes contributors in several different lists in "
 "the documentation and in printed materials.  This section describes how the "
 "documentation team manages changes to these lists."
-msgstr ""
+msgstr "FreeBSD 项目在文档和印刷材料中的多个名单中列出贡献者。本节介绍文档团队如何管理这些名单的变更。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mentor and New Committer Relationship Lists"
-msgstr ""
+msgstr "导师与新提交者关系名单"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:269
+#, fuzzy
 msgid ""
 "Since FreeBSD 7.0, FreeBSD has maintained link:https://cgit.freebsd.org/src/"
 "tree/share/misc[three lists of contributor mentor / mentee relationships] - "
 "one for source code, one for ports and one for documentation.  These files "
 "are in *\".dot\"* format, intended for use with the popular graphing toolkit "
 "package:graphics/graphviz[] available as a FreeBSD package or port."
-msgstr ""
+msgstr "自 FreeBSD 7.0 起，FreeBSD 一直维护 link:https://cgit.freebsd.org/src/tree/share/misc[三份贡献者导师／学员关系名单]——分别对应源代码、ports 和文档。这些文件采用 *“.dot”* 格式，供常用的绘图工具包 package:graphics/graphviz[] 使用；该工具包可作为 FreeBSD 软件包或 Port 安装。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:274
+#, fuzzy
 msgid ""
 "man:dot[1] is installed as part of the package:graphics/graphviz[] package "
 "or port.  The [.filename]#dot# program reads files in *\".dot\"* format and "
 "creates a graphical image of the directed graph."
-msgstr ""
+msgstr "man:dot[1] 随 package:graphics/graphviz[] 软件包或 Port 一同安装。[.filename]#dot# 程序读取 *“.dot”* 格式的文件，并生成有向图的图像。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:279
+#, fuzzy
 msgid ""
 "The three files often serve as a learning experience for new committers of "
 "all three teams who are instructed to add themselves, and their mentor, to "
@@ -627,25 +665,26 @@ msgid ""
 "section for new committers, an \"alumni\" section for when the commit bit is "
 "returned, and a \"mentor / mentee\" section showing the relationships.  The "
 "format for each type of entry is explained at the top of the file."
-msgstr ""
+msgstr "这三份文件通常也用于帮助三个团队的新提交者熟悉流程：他们会被要求在首次提交时将自己和导师添加到相应文件中。每个文件都包含一个供新提交者使用的“current”部分、一个在提交权限交还时使用的“alumni”部分，以及一个显示导师／学员关系的“mentor / mentee”部分。文件顶部说明了每种条目的格式。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Contributor Lists"
-msgstr ""
+msgstr "一般贡献者名单"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:284
+#, fuzzy
 msgid ""
 "extref:{contributors}[Contributors] to FreeBSD are maintained in article "
 "format.  The source file for managing the *Contributors* article file is "
 "located at:"
-msgstr ""
+msgstr "FreeBSD 的 extref:{contributors}[贡献者]以文章形式维护。用于管理 *Contributors* 文章的源文件位于："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "doc\n"
 " /documentation\n"
@@ -657,49 +696,54 @@ msgid ""
 "           [.filename]#_index.po# – Translation page\n"
 "           [.filename]#contrib-develinmemoriam.adoc# - content of “In Memoriam” section\n"
 "           [.filename]#contrib-develinmemoriam.po# – Translation page\n"
-msgstr ""
+msgstr "doc\n /documentation\n   /content\n     /{language}\n       /articles\n         /contributors\n           [.filename]#_index.adoc# – 包含适用于各个部分的包含文件列表。\n           [.filename]#_index.po# – 翻译页面\n           [.filename]#contrib-develinmemoriam.adoc# - “In Memoriam”部分的内容\n           [.filename]#contrib-develinmemoriam.po# – 翻译页面\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:300
+#, fuzzy
 msgid ""
 "Copies of this contributors directory may exist in other content language "
 "directories."
-msgstr ""
+msgstr "其他内容语言目录中可能也有此贡献者目录的副本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:303
+#, fuzzy
 msgid ""
 "Note that the file [.filename]#contrib-develinmemoriam.adoc# is also found "
 "in this directory.  See below for additional information."
-msgstr ""
+msgstr "请注意，此目录中也有 [.filename]#contrib-develinmemoriam.adoc# 文件。更多信息请见下文。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:308
+#, fuzzy
 msgid ""
 "The [.filename]#contributors/_index.adoc# file is designed as a collection "
 "of include files.  The include files are listed in the Hugo specific section "
 "of the source file.  The section is divided into several parts with \"ifdef::"
 "\" statements.  There is a sub-section for website output and one for non-"
 "website (including PDF) output."
-msgstr ""
+msgstr "[.filename]#contributors/_index.adoc# 文件由多个包含文件组成。包含文件列在源文件中 Hugo 专用的部分。该部分通过多个“ifdef::”语句划分为若干部分，其中包含一个用于网站输出的子部分，以及一个用于非网站输出（包括 PDF）的子部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:312
+#, fuzzy
 msgid ""
 "The text for each section of the *Contributors* page contains an \"include::"
 "\" statement.  For example, the entry for \"Port Manager Alumni\" is "
 "`include::{include-contrib-portmgralumni}[]`.  This pulls in the text for "
 "port manager alumni into the rendered output."
-msgstr ""
+msgstr "*Contributors* 页面每个部分的文本都包含一条“include::”语句。例如，“Port Manager Alumni”条目为 `include::{include-contrib-portmgralumni}[]`。此语句会将 Port 管理员校友的文本引入生成的输出中。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:314
+#, fuzzy
 msgid "To make a change, edit the appropriate include file:"
-msgstr ""
+msgstr "要进行更改，请编辑相应的 include 文件："
 
 #. type: delimited block - 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "include-contrib-committers:     [.filename]#~/doc/shared/contrib-committers.adoc#\n"
 "include-contrib-corealumni:     [.filename]#~/doc/shared/contrib-corealumni.adoc#\n"
@@ -707,425 +751,444 @@ msgid ""
 "include-contrib-portmgralumni:  [.filename]#~/doc/shared/contrib-portmgralumni.adoc#\n"
 "include-contrib-additional:     [.filename]#~/doc/shared/contrib-additional.adoc#\n"
 "include-contrib-386bsd:         [.filename]#~/doc/shared/contrib-386bsd.adoc#\n"
-msgstr ""
+msgstr "include-contrib-committers:     [.filename]#~/doc/shared/contrib-committers.adoc#\ninclude-contrib-corealumni:     [.filename]#~/doc/shared/contrib-corealumni.adoc#\ninclude-contrib-develalumni:    [.filename]#~/doc/shared/contrib-develalumni.adoc#\ninclude-contrib-portmgralumni:  [.filename]#~/doc/shared/contrib-portmgralumni.adoc#\ninclude-contrib-additional:     [.filename]#~/doc/shared/contrib-additional.adoc#\ninclude-contrib-386bsd:         [.filename]#~/doc/shared/contrib-386bsd.adoc#\n"
 
 #. type: delimited block - 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Also, edit the [.filename]#authors.adoc# file:  [.filename]#~/doc/shared/authors.adoc#\n"
 "and any related translations.\n"
-msgstr ""
+msgstr "此外，还要编辑 [.filename]#authors.adoc# 文件：  [.filename]#~/doc/shared/authors.adoc#\n以及任何相关的译文。\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:332
+#, fuzzy
 msgid ""
 "In general, if a person is being added, there is only one edit necessary, "
 "and they can be added to the appropriate include file.  If a person is being "
 "moved from \"current\" to \"alumni\" status, two edits are required - one to "
 "remove and one to insert for the appropriate files.  The order of entries "
 "for all files is found in the table below."
-msgstr ""
+msgstr "一般来说，新增人员时只需编辑一次，将其加入相应的 include 文件即可。若要将某人从“现任”状态转为“校友”状态，则需要编辑两处：从相应文件中移除该人员，并将其加入相应的文件。所有文件中条目的排列顺序见下表。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:335
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Purpose"
-msgstr ""
+msgstr "用途"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:335
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Section Anchor"
-msgstr ""
+msgstr "章节锚点"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File in ~/doc/shared/"
-msgstr ""
+msgstr "~/doc/shared/ 中的文件"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:336
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Order Specification"
-msgstr ""
+msgstr "排序规范"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*FreeBSD Developers*"
-msgstr ""
+msgstr "*FreeBSD 开发者*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include-contrib-committers"
-msgstr ""
+msgstr "include-contrib-committers"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-committers.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-committers.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alphabetical order by last name"
-msgstr ""
+msgstr "按姓氏字母顺序排列"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Core Team Alumni*"
-msgstr ""
+msgstr "*核心团队校友*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include-contrib-corealumni"
-msgstr ""
+msgstr "include-contrib-corealumni"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-corealumni.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-corealumni.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:338
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:339
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:340
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:413
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "rough reverse chronological order"
-msgstr ""
+msgstr "大致按时间倒序排列"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Development Team Alumni*"
-msgstr ""
+msgstr "*开发团队校友*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include-contrib-develalumni"
-msgstr ""
+msgstr "include-contrib-develalumni"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-develalumni.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-develalumni.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Ports Management Team Alumni*"
-msgstr ""
+msgstr "*Ports 管理团队校友*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include-contrib-portmgralumni"
-msgstr ""
+msgstr "include-contrib-portmgralumni"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-portmgralumni.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-portmgralumni.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Additional FreeBSD Contributors*"
-msgstr ""
+msgstr "*其他 FreeBSD 贡献者*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include-contrib-additional"
-msgstr ""
+msgstr "include-contrib-additional"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-additional.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-additional.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:341
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alphabetical order by first name"
-msgstr ""
+msgstr "按名字字母顺序排列"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*386BSD Patch Kit Patch Contributors*"
-msgstr ""
+msgstr "*386BSD Patch Kit 补丁贡献者*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "include-contrib-386bsd"
-msgstr ""
+msgstr "include-contrib-386bsd"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-386bsd.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-386bsd.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Contributors to the central server project*"
-msgstr ""
+msgstr "*中央服务器项目贡献者*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:342
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:343
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:344
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No include file used"
-msgstr ""
+msgstr "未使用 include 文件"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:342
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:343
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:344
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contributors/_index.adoc#"
-msgstr ""
+msgstr "[.filename]#contributors/_index.adoc#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:343
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:344
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:345
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "unordered"
-msgstr ""
+msgstr "无固定顺序"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Direct funding*"
-msgstr ""
+msgstr "*直接资助*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Hardware contributors*"
-msgstr ""
+msgstr "*硬件贡献者*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Special contributors*"
-msgstr ""
+msgstr "*特别贡献者*"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\"In Memoriam\" Section"
-msgstr ""
+msgstr "“纪念”章节"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:351
+#, fuzzy
 msgid ""
 "When notifying the BSD community of the death of a community member, the "
 "following procedure should be used:"
-msgstr ""
+msgstr "向 BSD 社区通报社区成员去世的消息时，应遵循以下流程："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:353
+#, fuzzy
 msgid ""
 "Use the file [.filename]#~/doc/shared/authors.adoc# to look up the person's "
 "name and attribute reference, such as `{foobsd}`."
-msgstr ""
+msgstr "使用 [.filename]#~/doc/shared/authors.adoc# 文件查找此人的姓名和属性引用，例如 `{foobsd}`。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:355
+#, fuzzy
 msgid ""
 "If they are a current member of one or more FreeBSD project teams in [."
 "filename]#~/doc/website/content/en/administration.adoc#, remove all "
 "instances of their attribute reference.  Also, complete the following edits:"
-msgstr ""
+msgstr "如果此人是 [.filename]#~/doc/website/content/en/administration.adoc# 中一个或多个 FreeBSD 项目团队的现任成员，请移除其属性引用的所有实例。此外，还需进行以下编辑："
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:357
+#, fuzzy
 msgid ""
 "[.filename]#~/doc/shared/contrib-committers.adoc# - Remove the attribute "
 "reference."
-msgstr ""
+msgstr "[.filename]#~/doc/shared/contrib-committers.adoc# - 移除属性引用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:358
+#, fuzzy
 msgid ""
 "[.filename]#~/doc/shared/contrib-corealumni.adoc# - If they are a _current_ "
 "member of the core team, create an entry showing start and end dates."
-msgstr ""
+msgstr "[.filename]#~/doc/shared/contrib-corealumni.adoc# - 如果此人是核心团队的__现任__成员，请创建一条注明起止日期的记录。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:359
+#, fuzzy
 msgid ""
 "[.filename]#~/doc/shared/contrib-develalumni.adoc# - Add the attribute "
 "reference and dates of activity as a committer."
-msgstr ""
+msgstr "[.filename]#~/doc/shared/contrib-develalumni.adoc# - 添加属性引用以及此人作为 committer 的活动日期。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:360
+#, fuzzy
 msgid ""
 "[.filename]#~/doc/shared/contrib-portmgralumni.adoc# - Add the attribute "
 "reference if necessary."
-msgstr ""
+msgstr "[.filename]#~/doc/shared/contrib-portmgralumni.adoc# - 如有必要，添加属性引用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:361
+#, fuzzy
 msgid "[.filename]#~/doc/shared/contrib-additional.adoc# - Remove the entry."
-msgstr ""
+msgstr "[.filename]#~/doc/shared/contrib-additional.adoc# - 移除该条目。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:363
+#, fuzzy
 msgid ""
 "[.filename]#~/doc/shared/contrib-386bsd.adoc# - This is a historical "
 "document only.  No changes are needed."
-msgstr ""
+msgstr "[.filename]#~/doc/shared/contrib-386bsd.adoc# - 这仅是历史文档，无需更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:366
+#, fuzzy
 msgid ""
 "In the [.filename]#~/doc/shared/authors.adoc# file, comment out (using one "
 "backslash '\\') the email address to avoid creating the email link \"mailto:"
 "\" See the example for `itojun` below:"
-msgstr ""
+msgstr "在 [.filename]#~/doc/shared/authors.adoc# 文件中，使用一个反斜杠 '\\' 注释掉电子邮件地址，以避免生成电子邮件链接“mailto:”。请参见下面 `itojun` 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[shared/authors.adoc]\n"
-msgstr ""
+msgstr "[shared/authors.adoc]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:372
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[..]\n"
-msgstr ""
+msgstr "[..]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 ":itojun-name: Jun-ichiro Itoh\n"
 ":itojun-email: \\itojun@FreeBSD.org\n"
 ":itojun: {itojun-name} <{itojun-email}>\n"
-msgstr ""
+msgstr ":itojun-name: Jun-ichiro Itoh\n:itojun-email: \\itojun@FreeBSD.org\n:itojun: {itojun-name} <{itojun-email}>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:381
+#, fuzzy
 msgid ""
 "Since the member is deceased (which should be double checked), add them to "
 "the \"In Memoriam\" file [.filename]#contrib-develinmemoriam.adoc#."
-msgstr ""
+msgstr "由于该成员已经去世（应再次核实），请将其加入“纪念”文件 [.filename]#contrib-develinmemoriam.adoc#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:384
+#, fuzzy
 msgid ""
 "Try to find some factual information about their contributions to FreeBSD "
 "over the years and add it with their entry in the file.  This may require "
 "asking in the development mailing lists, contacting colleagues, contacting "
 "the FreeBSD Foundation, or searching through the commit logs."
-msgstr ""
+msgstr "尝试查找一些关于此人多年来对 FreeBSD 所作贡献的事实信息，并将其与该文件中的条目一同添加。这可能需要在开发邮件列表中询问、联系同事或 FreeBSD 基金会，或者查阅提交日志。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:386
+#, fuzzy
 msgid "To find the date of their first commit, use:"
-msgstr ""
+msgstr "要查找此人的首次提交日期，请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/src\n"
 "% git log --reverse --author=foobsd     # search for first commit of foobsd\n"
-msgstr ""
+msgstr "% cd ~/src\n% git log --reverse --author=foobsd     # search for first commit of foobsd\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:395
+#, fuzzy
 msgid ""
 "This will print out their commits in reverse order.  The date of the first "
 "commit will be at the top."
-msgstr ""
+msgstr "此命令会按倒序输出此人的提交记录。首次提交的日期会显示在最上方。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:397
+#, fuzzy
 msgid "Ensure that the format of the dates match other entries:"
-msgstr ""
+msgstr "确保日期格式与其他条目一致："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(year of commit bit start - year of commit bit end; RIP year deceased)\n"
-msgstr ""
+msgstr "(取得 committer 身份的年份 - 结束 committer 身份的年份；RIP 去世年份)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "For example:\n"
-msgstr ""
+msgstr "例如：\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:405
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "* Foo BSD (2007 - 2010; RIP 2016)\n"
-msgstr ""
+msgstr "* Foo BSD (2007 - 2010; RIP 2016)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:408
+#, fuzzy
 msgid "Check the ordering of the entries in the file."
-msgstr ""
+msgstr "检查文件中条目的排列顺序。"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File in ~/doc/documentation/content/{language}/articles/contributors/"
-msgstr ""
+msgstr "~/doc/documentation/content/{language}/articles/contributors/ 中的文件"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Development Team: In Memoriam*"
-msgstr ""
+msgstr "*开发团队：纪念*"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib-develinmemoriam.adoc#"
-msgstr ""
+msgstr "[.filename]#contrib-develinmemoriam.adoc#"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:416
+#, fuzzy
 msgid "See the \"In Memoriam\" file for similar entries."
-msgstr ""
+msgstr "请参阅“纪念”文件中的类似条目。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/structure/_index.adoc:418
+#, fuzzy
 msgid ""
 "Finally, if applicable, move the committer member entry from the \"current\" "
 "section to the \"alumni\" section of the appropriate link:https://cgit."
 "freebsd.org/src/tree/share/misc[list of contributor mentor / mentee "
 "relationships] along with an appropriate date.  It is not necessary to "
 "change the mentor / mentee relationship."
-msgstr ""
+msgstr "最后，如适用，请将 committer 成员条目从相应 link:https://cgit.freebsd.org/src/tree/share/misc[贡献者导师／学员关系列表]的“现任”部分移至“校友”部分，并添加适当的日期。无需更改导师／学员关系。"

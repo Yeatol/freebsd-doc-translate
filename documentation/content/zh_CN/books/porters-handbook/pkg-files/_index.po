@@ -17,270 +17,296 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tricks about the pkg-* files"
-msgstr ""
+msgstr "关于 pkg-* 文件的技巧"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 9. pkg-*"
-msgstr ""
+msgstr "第 9 章：pkg-*"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pkg-*"
-msgstr ""
+msgstr "pkg-*"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:51
+#, fuzzy
 msgid ""
 "There are some tricks we have not mentioned yet about the [.filename]#pkg-*# "
 "files that come in handy sometimes."
-msgstr ""
+msgstr "有些关于 [.filename]#pkg-*# 文件的实用技巧我们还没有提到。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:53
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pkg-message"
-msgstr ""
+msgstr "pkg-message"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:57
+#, fuzzy
 msgid ""
 "To display a message when the package is installed, place the message in [."
 "filename]#pkg-message#.  This capability is often useful to display "
 "additional installation steps to be taken after a `pkg install` or `pkg "
 "upgrade`."
-msgstr ""
+msgstr "若要在安装软件包时显示消息，请将消息放在 [.filename]#pkg-message# 中。此功能通常用于显示在执行 `pkg install` 或 `pkg upgrade` 后需要采取的其他安装步骤。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:61
+#, fuzzy
 msgid ""
 "[.filename]#pkg-message# must contain only information that is _vital_ to "
 "setup and operation on FreeBSD, and that is unique to the port in question."
-msgstr ""
+msgstr "[.filename]#pkg-message# 中只能包含对 FreeBSD 上的设置和运行__至关重要__，且对相关移植软件独有的信息。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:62
+#, fuzzy
 msgid ""
 "Setup information should only be shown on initial install. Upgrade "
 "instructions should be shown only when upgrading from the relevant version."
-msgstr ""
+msgstr "设置说明只应在首次安装时显示。升级说明只应在从相关版本升级时显示。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:63
+#, fuzzy
 msgid ""
 "Do not surround the messages with either whitespace or lines of symbols "
 "(like `----------`, `**********`, or `==========`). Leave the formatting to "
 "man:pkg[8]."
-msgstr ""
+msgstr "请勿在消息前后添加空白或符号行（例如 `----------`、`**********` 或 `==========`）。格式应由 man:pkg[8] 处理。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:64
+#, fuzzy
 msgid ""
 "Committers have blanket approval to constrain existing messages to install "
 "or upgrade ranges using the UCL format specifications."
-msgstr ""
+msgstr "提交者已获得广泛授权，可以使用 UCL 格式规范，将现有消息限定在特定的安装或升级范围内。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:65
+#, fuzzy
 msgid "Please be sure to refer to the proper tools for handling services."
-msgstr ""
+msgstr "请务必使用适当的工具来处理服务。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:66
+#, fuzzy
 msgid ""
 "Use `service name start` to start a service rather than using `/usr/local/"
 "etc/rc.d/name start`"
-msgstr ""
+msgstr "请使用 `service name start` 启动服务，而不要使用 `/usr/local/etc/rc.d/name start`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:67
+#, fuzzy
 msgid "Use `sysrc name_enable=YES` to change options in rc.conf"
-msgstr ""
+msgstr "请使用 `sysrc name_enable=YES` 更改 rc.conf 中的选项"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:71
+#, fuzzy
 msgid "pkg-message supports two formats:"
-msgstr ""
+msgstr "pkg-message 支持两种格式："
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "raw"
-msgstr ""
+msgstr "纯文本"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:75
+#, fuzzy
 msgid "A regular plain text file.  Its message is only displayed on install."
-msgstr ""
+msgstr "普通的纯文本文件。其消息只会在安装时显示。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UCL"
-msgstr ""
+msgstr "UCL"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:79
+#, fuzzy
 msgid ""
 "If the file starts with \"`[`\" then it is considered to be a UCL file.  The "
 "UCL format is described on https://github.com/vstakhov/libucl[libucl's "
 "GitHub page]."
-msgstr ""
+msgstr "如果文件以 \"`[`\" 开头，则会被视为 UCL 文件。UCL 格式的说明见 link:https://github.com/vstakhov/libucl[libucl 的 GitHub 页面]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:83
+#, fuzzy
 msgid ""
 "Do not add an entry for [.filename]#pkg-message# in [.filename]#pkg-plist#."
-msgstr ""
+msgstr "请勿在 [.filename]#pkg-plist# 中添加 [.filename]#pkg-message# 条目。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UCL in pkg-message"
-msgstr ""
+msgstr "pkg-message 中的 UCL"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:91
+#, fuzzy
 msgid ""
 "The format is the following.  It should be an array of objects.  The objects "
 "themselves can have these keywords:"
-msgstr ""
+msgstr "格式如下。内容应为对象数组。对象本身可以使用以下关键字："
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`message`"
-msgstr ""
+msgstr "`message`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:95
+#, fuzzy
 msgid "The actual message to be displayed.  This keyword is mandatory."
-msgstr ""
+msgstr "要显示的实际消息。此关键字为必填项。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`type`"
-msgstr ""
+msgstr "`type`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:98
+#, fuzzy
 msgid "When the message should be displayed."
-msgstr ""
+msgstr "消息的显示时机。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`maximum_version`"
-msgstr ""
+msgstr "`maximum_version`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:102
+#, fuzzy
 msgid ""
 "Only if `type` is `upgrade`.  Display if upgrading from a version strictly "
 "lower than the version specified."
-msgstr ""
+msgstr "仅当 `type` 为 `upgrade` 时使用。如果升级来源版本严格低于指定版本，则显示。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`minimum_version`"
-msgstr ""
+msgstr "`minimum_version`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:106
+#, fuzzy
 msgid ""
 "Only if `type` is `upgrade`.  Display if upgrading from a version strictly "
 "greater than the version specified."
-msgstr ""
+msgstr "仅当 `type` 为 `upgrade` 时使用。如果升级来源版本严格高于指定版本，则显示。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:108
+#, fuzzy
 msgid "The `maximum_version` and `minimum_version` keywords can be combined."
-msgstr ""
+msgstr "可以同时使用 `maximum_version` 和 `minimum_version` 关键字。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:110
+#, fuzzy
 msgid "The `type` keyword can have three values:"
-msgstr ""
+msgstr "`type` 关键字可以取以下三个值："
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`install`"
-msgstr ""
+msgstr "`install`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:113
+#, fuzzy
 msgid "The message should only be displayed when the package is installed."
-msgstr ""
+msgstr "消息只应在安装软件包时显示。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`remove`"
-msgstr ""
+msgstr "`remove`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:116
+#, fuzzy
 msgid "The message should only be displayed when the package is removed."
-msgstr ""
+msgstr "消息只应在移除软件包时显示。"
 
 #. type: Labeled list
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`upgrade`"
-msgstr ""
+msgstr "`upgrade`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:119
+#, fuzzy
 msgid "the message should only be displayed during an upgrade of the package.."
-msgstr ""
+msgstr "消息只应在升级软件包时显示。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:124
+#, fuzzy
 msgid ""
 "To preserve the compatibility with non UCL [.filename]#pkg-message# files, "
 "the first line of a UCL [.filename]#pkg-message# _MUST be_ a single \"`[`\", "
 "and the last line _MUST be_ a single \"`]`\"."
-msgstr ""
+msgstr "为兼容非 UCL 格式的 [.filename]#pkg-message# 文件，UCL 格式的 [.filename]#pkg-message# 首行__必须是__单独一个 \"`[`\"，末行__必须是__单独一个 \"`]`\"。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UCL Short Strings"
-msgstr ""
+msgstr "UCL 短字符串"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:132
+#, fuzzy
 msgid ""
 "The message is delimited by double quotes `\"`, this is used for simple "
 "single line strings:"
-msgstr ""
+msgstr "消息以双引号 `\"` 分隔，适用于简单的单行字符串："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[\n"
 "{ type: install\n"
 "  message: \"Simple message\"\n"
 "}\n"
 "]\n"
-msgstr ""
+msgstr "[\n{ type: install\n  message: \"Simple message\"\n}\n]\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UCL Multiline Strings"
-msgstr ""
+msgstr "UCL 多行字符串"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:153
+#, fuzzy
 msgid ""
 "Multiline strings use the standard here document notation.  The multiline "
 "delimiter _must_ start just after `<<` symbols without any whitespace and it "
@@ -288,11 +314,11 @@ msgid ""
 "the delimiter string on a line of its own without any whitespace.  The "
 "message from crossref:pkg-files[porting-message-ucl-short-ex,UCL Short "
 "Strings] can be written as:"
-msgstr ""
+msgstr "多行字符串使用标准的 here document 表示法。多行分隔符__必须__紧跟在 `<<` 符号之后，中间不能有空白，并且__必须__仅由大写字母组成。要结束多行字符串，请在单独一行上添加分隔符字符串，前后均不能有空白。crossref:pkg-files[porting-message-ucl-short-ex,UCL 短字符串]中的消息可以写成："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[\n"
 "{ type: install\n"
@@ -301,24 +327,25 @@ msgid ""
 "EOM\n"
 "}\n"
 "]\n"
-msgstr ""
+msgstr "[\n{ type: install\n  message: <<EOM\nSimple message\nEOM\n}\n]\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Display a Message on Install/Deinstall"
-msgstr ""
+msgstr "在安装/卸载时显示消息"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:173
+#, fuzzy
 msgid ""
 "When a message only needs to be displayed on installation or uninstallation, "
 "set the type:"
-msgstr ""
+msgstr "如果消息只需在安装或卸载时显示，请设置 type："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[\n"
 "{\n"
@@ -327,24 +354,25 @@ msgid ""
 "}\n"
 "{ type: install, message: \"package being installed.\"}\n"
 "]\n"
-msgstr ""
+msgstr "[\n{\n  type: remove\n  message: \"package being removed.\"\n}\n{ type: install, message: \"package being installed.\"}\n]\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Display a Message on Upgrade"
-msgstr ""
+msgstr "在升级时显示消息"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:193
+#, fuzzy
 msgid ""
 "When a port is upgraded, the message displayed can be even more tailored to "
 "the port's needs."
-msgstr ""
+msgstr "移植软件升级时，可以根据其需求进一步定制所显示的消息。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[\n"
 "{\n"
@@ -368,25 +396,27 @@ msgid ""
 "  message: \"Upgrading from > 1.0 and < 3.0 remove that file.\"\n"
 "}\n"
 "]\n"
-msgstr ""
+msgstr "[\n{\n  type: upgrade\n  message: \"Package is being upgraded.\"\n}\n{\n  type: upgrade\n  maximum_version: \"1.0\"\n  message: \"Upgrading from before 1.0 need to do this.\"\n}\n{\n  type: upgrade\n  minimum_version: \"1.0\"\n  message: \"Upgrading from after 1.0 should do that.\"\n}\n{\n  type: upgrade\n  maximum_version: \"3.0\"\n  minimum_version: \"1.0\"\n  message: \"Upgrading from > 1.0 and < 3.0 remove that file.\"\n}\n]\n"
 
 #. type: delimited block = 5
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:224
+#, fuzzy
 msgid ""
 "When displaying a message on upgrade, it is important to limit when it is "
 "being shown to the user.  Most of the time it is by using `maximum_version` "
 "to limit its usage to upgrades from before a certain version when something "
 "specific needs to be done."
-msgstr ""
+msgstr "在升级时显示消息，应谨慎限制其显示条件。大多数情况下，可以使用 `maximum_version` 将消息限制为从某个指定版本之前升级时显示，以便在需要执行特定操作时提醒用户。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pkg-install, pkg-pre-install, and pkg-post-install"
-msgstr ""
+msgstr "pkg-install、pkg-pre-install 和 pkg-post-install"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:235
+#, fuzzy
 msgid ""
 "If the port needs to execute commands when the binary package is installed "
 "with `pkg add` or `pkg install`, use [.filename]#pkg-install#.  It is run "
@@ -395,10 +425,11 @@ msgid ""
 "${PKGNAME} POST-INSTALL` after it has been installed.  `$2` can be tested to "
 "determine which mode the script is being run in.  The `PKG_PREFIX` "
 "environment variable is set to the package installation directory."
-msgstr ""
+msgstr "如果移植软件需要在使用 `pkg add` 或 `pkg install` 安装二进制软件包时执行命令，请使用 [.filename]#pkg-install#。`pkg` 会运行该脚本两次：第一次在安装软件包之前运行 `${SH} pkg-install ${PKGNAME} PRE-INSTALL`，第二次在安装完成后运行 `${SH} pkg-install ${PKGNAME} POST-INSTALL`。可以检查 `$2` 来确定脚本当前运行的模式。环境变量 `PKG_PREFIX` 会被设置为软件包的安装目录。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:239
+#, fuzzy
 msgid ""
 "If using [.filename]#pkg-pre-install# or [.filename]#pkg-post-install# "
 "instead, the script is run only once (before or after installing the "
@@ -406,43 +437,48 @@ msgid ""
 "install.lua# or [.filename]#pkg-post-install.lua# will run a lua script "
 "instead of a shell script.  Lua scripts run by `pkg` provide some extensions "
 "and a few restrictions, both explained in man:pkg-lua-script[5]."
-msgstr ""
+msgstr "如果改用 [.filename]#pkg-pre-install# 或 [.filename]#pkg-post-install#，脚本只会运行一次（在安装软件包之前或之后），并接收单个参数 `${PKGNAME}`。使用 [.filename]#pkg-pre-install.lua# 或 [.filename]#pkg-post-install.lua# 会运行 Lua 脚本，而不是 shell 脚本。由 `pkg` 运行的 Lua 脚本提供了一些扩展，也有少量限制，详见 man:pkg-lua-script[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:243
+#, fuzzy
 msgid ""
 "Using [.filename]#pkg-pre-install# (or [.filename]#pkg-pre-install.lua#) and "
 "[.filename]#pkg-post-install# (or [.filename]#pkg-post-install.lua#) is "
 "preferred to using [.filename]#pkg-install#."
-msgstr ""
+msgstr "与使用 [.filename]#pkg-install# 相比，优先使用 [.filename]#pkg-pre-install#（或 [.filename]#pkg-pre-install.lua#）和 [.filename]#pkg-post-install#（或 [.filename]#pkg-post-install.lua#）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:246
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:273
+#, fuzzy
 msgid "These scripts are automatically added to the packing list."
-msgstr ""
+msgstr "这些脚本会自动添加到打包清单中。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:251
+#, fuzzy
 msgid ""
 "These scripts are here to simplify package configuration after "
 "installation.  They _must not_ be abused to start services, stop services, "
 "or run any other commands that will modify the currently running system."
-msgstr ""
+msgstr "这些脚本用于简化安装后的软件包配置。不得滥用这些脚本来启动或停止服务，也不得运行任何其他会修改当前运行系统的命令。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pkg-deinstall, pkg-pre-deinstall, and pkg-post-deinstall"
-msgstr ""
+msgstr "pkg-deinstall、pkg-pre-deinstall 和 pkg-post-deinstall"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:257
+#, fuzzy
 msgid "These scripts execute when a package is removed."
-msgstr ""
+msgstr "移除软件包时会执行这些脚本。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:262
+#, fuzzy
 msgid ""
 "The [.filename]#pkg-deinstall# script is run twice by `pkg delete`.  The "
 "first time as `${SH} pkg-deinstall ${PKGNAME} DEINSTALL` before the port is "
@@ -450,10 +486,11 @@ msgid ""
 "DEINSTALL` after the port has been de-installed.  `$2` can be tested to "
 "determine which mode the script is being run in.  The `PKG_PREFIX` "
 "environment variable is set to the package installation directory."
-msgstr ""
+msgstr "`pkg delete` 会运行 [.filename]#pkg-deinstall# 脚本两次。第一次在卸载移植软件之前运行 `${SH} pkg-deinstall ${PKGNAME} DEINSTALL`，第二次在卸载完成后运行 `${SH} pkg-deinstall ${PKGNAME} POST-DEINSTALL`。可以检查 `$2` 来确定脚本当前运行的模式。环境变量 `PKG_PREFIX` 会被设置为软件包的安装目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:266
+#, fuzzy
 msgid ""
 "If using [.filename]#pkg-pre-deinstall# or [.filename]#pkg-post-deinstall# "
 "instead, the script is run only once (before or after deinstalling the "
@@ -461,32 +498,35 @@ msgid ""
 "deinstall.lua# or [.filename]#pkg-post-deinstall.lua# will run a lua script "
 "instead of a shell script.  Lua scripts run by `pkg` provide some extensions "
 "and a few restrictions, both explained in man:pkg-lua-script[5]."
-msgstr ""
+msgstr "如果改用 [.filename]#pkg-pre-deinstall# 或 [.filename]#pkg-post-deinstall#，脚本只会运行一次（在卸载软件包之前或之后），并接收单个参数 `${PKGNAME}`。使用 [.filename]#pkg-pre-deinstall.lua# 或 [.filename]#pkg-post-deinstall.lua# 会运行 Lua 脚本，而不是 shell 脚本。由 `pkg` 运行的 Lua 脚本提供了一些扩展，也有少量限制，详见 man:pkg-lua-script[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:270
+#, fuzzy
 msgid ""
 "Using [.filename]#pkg-pre-deinstall# (or [.filename]#pkg-pre-deinstall.lua#) "
 "and [.filename]#pkg-post-deinstall# (or [.filename]#pkg-post-deinstall.lua#) "
 "is preferred to using [.filename]#pkg-deinstall#."
-msgstr ""
+msgstr "与使用 [.filename]#pkg-deinstall# 相比，优先使用 [.filename]#pkg-pre-deinstall#（或 [.filename]#pkg-pre-deinstall.lua#）和 [.filename]#pkg-post-deinstall#（或 [.filename]#pkg-post-deinstall.lua#）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:278
+#, fuzzy
 msgid ""
 "These scripts are here to simplify cleanup after package deinstallation.  "
 "They _must not_ be abused to start services, stop services, or run any other "
 "commands that will modify the currently running system."
-msgstr ""
+msgstr "这些脚本用于简化软件包卸载后的清理工作。不得滥用这些脚本来启动或停止服务，也不得运行任何其他会修改当前运行系统的命令。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Changing the Names of pkg-*"
-msgstr ""
+msgstr "更改 pkg-* 文件的名称"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:286
+#, fuzzy
 msgid ""
 "All the names of [.filename]#pkg-\\*# are defined using variables that can "
 "be changed in the [.filename]#Makefile# if needed.  This is especially "
@@ -495,150 +535,153 @@ msgid ""
 "dads[porting-wrkdir,writing to places other than `WRKDIR`] for why it is a "
 "bad idea to write directly into the directory containing the [.filename]#pkg-"
 "*# files."
-msgstr ""
+msgstr "[.filename]#pkg-*# 的所有文件名都通过变量定义，必要时可以在 [.filename]#Makefile# 中更改。这在多个移植软件共用同一组 [.filename]#pkg-*# 文件，或需要写入其中一个文件时尤其有用。有关为何不应直接写入包含 [.filename]#pkg-*# 文件的目录，请参见 crossref:porting-dads[porting-wrkdir,写入 `WRKDIR` 以外的位置]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:289
+#, fuzzy
 msgid ""
 "Here is a list of variable names and their default values.  (`PKGDIR` "
 "defaults to `${MASTERDIR}`.)"
-msgstr ""
+msgstr "以下列出了变量名及其默认值。（`PKGDIR` 默认为 `${MASTERDIR}`。）"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Variable"
-msgstr ""
+msgstr "变量"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default value"
-msgstr ""
+msgstr "默认值"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`DESCR`"
-msgstr ""
+msgstr "`DESCR`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-descr`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-descr`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PLIST`"
-msgstr ""
+msgstr "`PLIST`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-plist`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-plist`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGINSTALL`"
-msgstr ""
+msgstr "`PKGINSTALL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-install`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-install`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGPREINSTALL`"
-msgstr ""
+msgstr "`PKGPREINSTALL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:308
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-pre-install`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-pre-install`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGPOSTINSTALL`"
-msgstr ""
+msgstr "`PKGPOSTINSTALL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-post-install`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-post-install`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGDEINSTALL`"
-msgstr ""
+msgstr "`PKGDEINSTALL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-deinstall`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-deinstall`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:315
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGPREDEINSTALL`"
-msgstr ""
+msgstr "`PKGPREDEINSTALL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-pre-deinstall`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-pre-deinstall`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:318
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGPOSTDEINSTALL`"
-msgstr ""
+msgstr "`PKGPOSTDEINSTALL`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-post-deinstall`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-post-deinstall`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`PKGMESSAGE`"
-msgstr ""
+msgstr "`PKGMESSAGE`"
 
 #. type: Table
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`${PKGDIR}/pkg-message`"
-msgstr ""
+msgstr "`${PKGDIR}/pkg-message`"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Making Use of `SUB_FILES` and `SUB_LIST`"
-msgstr ""
+msgstr "使用 `SUB_FILES` 和 `SUB_LIST`"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:328
+#, fuzzy
 msgid ""
 "`SUB_FILES` and `SUB_LIST` are useful for dynamic values in port files, such "
 "as the installation `PREFIX` in [.filename]#pkg-message#."
-msgstr ""
+msgstr "`SUB_FILES` 和 `SUB_LIST` 可用于在移植软件文件中处理动态值，例如 [.filename]#pkg-message# 中的安装 `PREFIX`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:334
+#, fuzzy
 msgid ""
 "`SUB_FILES` specifies a list of files to be automatically modified.  Each [."
 "filename]#file# in the `SUB_FILES` list must have a corresponding [."
@@ -648,10 +691,11 @@ msgid ""
 "filename]#pkg-message#, [.filename]#pkg-install#, and [.filename]#pkg-"
 "deinstall#, the corresponding Makefile variable is automatically set to "
 "point to the processed version."
-msgstr ""
+msgstr "`SUB_FILES` 指定要自动修改的文件列表。`SUB_FILES` 列表中的每个 [.filename]#file# 都必须在 `FILESDIR` 中有对应的 [.filename]#file.in#。修改后的文件将生成为 [.filename]#${WRKDIR}/file#。作为 `USE_RC_SUBR` 值定义的文件会自动添加到 `SUB_FILES`。对于 [.filename]#pkg-message#、[.filename]#pkg-install# 和 [.filename]#pkg-deinstall#，相应的 Makefile 变量会自动设置为指向处理后的文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:339
+#, fuzzy
 msgid ""
 "`SUB_LIST` is a list of `VAR=VALUE` pairs.  For each pair, `%%VAR%%` will be "
 "replaced with `VALUE` in each file listed in `SUB_FILES`.  Several common "
@@ -659,40 +703,43 @@ msgid ""
 "`DOCSDIR`, `EXAMPLESDIR`, `WWWDIR`, and `ETCDIR`.  Any line beginning with "
 "`@comment` followed by a space, will be deleted from resulting files after a "
 "variable substitution."
-msgstr ""
+msgstr "`SUB_LIST` 是由 `VAR=VALUE` 对组成的列表。对于每一对，`SUB_FILES` 中列出的每个文件里的 `%%VAR%%` 都会被替换为 `VALUE`。系统会自动定义若干常用对：`PREFIX`、`LOCALBASE`、`DATADIR`、`DOCSDIR`、`EXAMPLESDIR`、`WWWDIR` 和 `ETCDIR`。任何以 `@comment` 后接一个空格开头的行，都会在变量替换后从生成的文件中删除。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:341
+#, fuzzy
 msgid ""
 "This example replaces `%%ARCH%%` with the system architecture in a [."
 "filename]#pkg-message#:"
-msgstr ""
+msgstr "此示例将 `%%ARCH%%` 替换为系统架构，并写入 [.filename]#pkg-message#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SUB_FILES=\tpkg-message\n"
 "SUB_LIST=\tARCH=${ARCH}\n"
-msgstr ""
+msgstr "SUB_FILES=\tpkg-message\nSUB_LIST=\tARCH=${ARCH}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:349
+#, fuzzy
 msgid ""
 "Note that for this example, [.filename]#pkg-message.in# must exist in "
 "`FILESDIR`."
-msgstr ""
+msgstr "请注意，在此示例中，`FILESDIR` 中必须存在 [.filename]#pkg-message.in#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:351
+#, fuzzy
 msgid "Example of a good [.filename]#pkg-message.in#:"
-msgstr ""
+msgstr "优秀的 [.filename]#pkg-message.in# 示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/pkg-files/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Now it is time to configure this package.\n"
 "Copy %%PREFIX%%/shared/examples/putsy/%%ARCH%%.conf into your home directory\n"
 "as .putsy.conf and edit it.\n"
-msgstr ""
+msgstr "现在可以配置此软件包了。\n将 %%PREFIX%%/shared/examples/putsy/%%ARCH%%.conf 复制到您的主目录，\n命名为 .putsy.conf 并进行编辑。\n"

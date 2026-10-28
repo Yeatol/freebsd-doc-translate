@@ -26,9 +26,9 @@ msgstr "引导过程与内核初始化"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 1. Bootstrapping and Kernel Initialization"
-msgstr ""
+msgstr "第 1 章. 引导与内核初始化"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:51
@@ -105,6 +105,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:81
+#, fuzzy
 msgid ""
 "The key to understanding this process is that it is a series of stages of "
 "increasing complexity.  These stages are [.filename]#boot1#, [."
@@ -112,7 +113,7 @@ msgid ""
 "detail).  The boot system executes each stage in sequence.  The last stage, "
 "[.filename]#loader#, is responsible for loading the FreeBSD kernel.  Each "
 "stage is examined in the following sections."
-msgstr ""
+msgstr "理解此过程的关键在于，它由一系列复杂程度逐步增加的阶段组成。这些阶段是 [.filename]#boot1#、[.filename]#boot2# 和 [.filename]#loader#（更多详情请参见 man:boot[8]）。引导系统按顺序执行各个阶段。最后一个阶段 [.filename]#loader# 负责加载 FreeBSD 内核。以下各节将逐一介绍这些阶段。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:84
@@ -127,25 +128,25 @@ msgstr "下面是由不同引导阶段生成的输出的示例。实际输出可
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*FreeBSD Component*"
-msgstr ""
+msgstr "*FreeBSD 组件*"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "*Output (may vary)*"
-msgstr ""
+msgstr "*输出（可能有所不同）*"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`boot0`"
-msgstr ""
+msgstr "`boot0`"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[source,bash]\n"
 "....\n"
@@ -153,17 +154,17 @@ msgid ""
 "F2    BSD\n"
 "F5    Disk 2\n"
 "...."
-msgstr ""
+msgstr "[source,bash]\n....\nF1    FreeBSD\nF2    BSD\nF5    Disk 2\n...."
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`boot2` footnote:[This prompt will appear if the user presses a key just after selecting an OS to boot at the boot0 stage.]"
-msgstr ""
+msgstr "`boot2` footnote:[如果用户在 boot0 阶段选择要引导的操作系统后立即按下某个键，就会出现此提示。]"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[source,bash]\n"
 "....\n"
@@ -171,13 +172,13 @@ msgid ""
 "Default: 0:ad(0p4)/boot/loader\n"
 "boot:\n"
 "...."
-msgstr ""
+msgstr "[source,bash]\n....\n>>FreeBSD/x86 BOOT\nDefault: 0:ad(0p4)/boot/loader\nboot:\n...."
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#loader#"
-msgstr ""
+msgstr "[.filename]#loader#"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:129
@@ -210,9 +211,9 @@ msgstr ""
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kernel"
-msgstr ""
+msgstr "内核"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:143
@@ -240,9 +241,9 @@ msgstr ""
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The BIOS"
-msgstr ""
+msgstr "BIOS"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:157
@@ -272,12 +273,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:160
+#, fuzzy
 msgid ""
 "The value of `0xfffffff0` is slightly less than 4 GB, so unless the machine "
 "has 4 GB of physical memory, it cannot point to a valid memory address.  The "
 "computer's hardware translates this address so that it points to a BIOS "
 "memory block."
-msgstr ""
+msgstr "`0xfffffff0` 的值略小于 4 GB，因此，除非计算机具有 4 GB 物理内存，否则它无法指向有效的内存地址。计算机硬件会转换此地址，使其指向一个 BIOS 内存块。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:165
@@ -313,6 +315,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:178
+#, fuzzy
 msgid ""
 "The very last thing in the POST is the `INT 0x19` instruction.  The `INT "
 "0x19` handler reads 512 bytes from the first sector of boot device into the "
@@ -324,24 +327,26 @@ msgid ""
 "sector 1, the first sector, has a special purpose.  It is also called the "
 "MBR, or Master Boot Record.  The remaining sectors on the first track are "
 "never used."
-msgstr ""
+msgstr "POST 的最后一项是 `INT 0x19` 指令。`INT 0x19` 处理程序从引导设备的第一个扇区读取 512 字节，并将其载入地址 `0x7c00` 处的内存。术语 __first sector__ 源自硬盘架构：磁性盘片被划分为若干圆柱形磁道。磁道编号从 0 开始，每条磁道又划分为若干扇区（通常为 64 个）。扇区编号从 1 开始。磁道 0 是磁性盘片最外侧的磁道；扇区 1，也就是第一个扇区，有特殊用途。它也称为 MBR，即主引导记录。第一条磁道上的其余扇区从不使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:182
+#, fuzzy
 msgid ""
 "This sector is our boot-sequence starting point.  As we will see, this "
 "sector contains a copy of our [.filename]#boot0# program.  A jump is made by "
 "the BIOS to address `0x7c00` so it starts executing."
-msgstr ""
+msgstr "此扇区是引导序列的起点。正如我们将看到的，此扇区包含 [.filename]#boot0# 程序的副本。BIOS 会跳转到地址 `0x7c00`，从而开始执行该程序。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Master Boot Record (`boot0`)"
-msgstr ""
+msgstr "主引导记录（`boot0`）"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:193
+#, fuzzy
 msgid ""
 "After control is received from the BIOS at memory address `0x7c00`, [."
 "filename]#boot0# starts executing.  It is the first piece of code under "
@@ -354,19 +359,21 @@ msgid ""
 "FreeBSD's installation procedure wrote to the hard disk's MBR if you chose "
 "the \"bootmanager\" option at installation time.  Indeed, [.filename]#boot0# "
 "_is_ the MBR."
-msgstr ""
+msgstr "BIOS 在内存地址 `0x7c00` 处将控制权交给程序后，[.filename]#boot0# 就开始执行。它是第一段由 FreeBSD 控制的代码。[.filename]#boot0# 的任务很简单：扫描分区表，并让用户选择从哪个分区引导。分区表是一种嵌入 MBR 中的特殊标准数据结构（因此也嵌入 [.filename]#boot0# 中），用于描述四个标准 PC“分区”。[.filename]#boot0# 在文件系统中的路径是 [.filename]#/boot/boot0#。这是一个很小的 512 字节文件；如果在安装时选择了“bootmanager”选项，FreeBSD 安装程序就会将其写入硬盘的 MBR。事实上，[.filename]#boot0# __就是__ MBR。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:196
+#, fuzzy
 msgid ""
 "As mentioned previously, we're calling the BIOS `INT 0x19` to load the MBR "
 "([.filename]#boot0#) into memory at address `0x7c00`.  The source file for [."
 "filename]#boot0# can be found in [.filename]#stand/i386/boot0/boot0.S# - "
 "which is an awesome piece of code written by Robert Nordier."
-msgstr ""
+msgstr "如前所述，我们调用 BIOS `INT 0x19`，将 MBR（[.filename]#boot0#）加载到内存地址 `0x7c00` 处。[.filename]#boot0# 的源文件位于 [.filename]#stand/i386/boot0/boot0.S#，这是 Robert Nordier 编写的一段出色代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:201
+#, fuzzy
 msgid ""
 "A special structure starting from offset `0x1be` in the MBR is called the "
 "_partition table_.  It has four records of 16 bytes each, called _partition "
@@ -374,7 +381,7 @@ msgid ""
 "terminology, sliced.  One byte of those 16 says whether a partition (slice) "
 "is bootable or not.  Exactly one record must have that flag set, otherwise [."
 "filename]#boot0#'s code will refuse to proceed."
-msgstr ""
+msgstr "从 MBR 偏移量 `0x1be` 开始的特殊结构称为 __partition table__。它包含四条各 16 字节的记录，称为 __partition records__，用于表示硬盘如何划分分区，或者用 FreeBSD 的术语来说，如何划分切片。这 16 个字节中的一个用于指示分区（切片）是否可引导。必须且只能有一条记录设置此标志，否则 [.filename]#boot0# 的代码将拒绝继续执行。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:203
@@ -403,6 +410,7 @@ msgstr "8字节 LBA格式描述符"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:212
+#, fuzzy
 msgid ""
 "A partition record descriptor contains information about where exactly the "
 "partition resides on the drive.  Both descriptors, LBA and CHS, describe the "
@@ -410,10 +418,11 @@ msgid ""
 "the starting sector for the partition and the partition's length, while CHS "
 "(Cylinder Head Sector) has coordinates for the first and last sectors of the "
 "partition.  The partition table ends with the special signature `0xaa55`."
-msgstr ""
+msgstr "分区记录描述符包含有关分区在驱动器上具体位置的信息。LBA 和 CHS 这两种描述符都描述相同的信息，但方式不同：LBA（逻辑块寻址）提供分区的起始扇区和分区长度；CHS（柱面、磁头、扇区）则提供分区第一个和最后一个扇区的坐标。分区表以特殊签名 `0xaa55` 结尾。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:217
+#, fuzzy
 msgid ""
 "The MBR must fit into 512 bytes, a single disk sector.  This program uses "
 "low-level \"tricks\" like taking advantage of the side effects of certain "
@@ -421,10 +430,11 @@ msgid ""
 "the most out of the fewest possible instructions.  Care must also be taken "
 "when handling the partition table, which is embedded in the MBR itself.  For "
 "these reasons, be very careful when modifying [.filename]#boot0.S#."
-msgstr ""
+msgstr "MBR 必须能容纳在 512 字节，即一个磁盘扇区内。此程序采用一些底层“技巧”，例如利用某些指令的副作用，以及重用先前操作留下的寄存器值，以尽可能减少指令数量。处理嵌入 MBR 本身的分区表时也必须格外小心。因此，修改 [.filename]#boot0.S# 时务必谨慎。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:222
+#, fuzzy
 msgid ""
 "Note that the [.filename]#boot0.S# source file is assembled \"as is\": "
 "instructions are translated one by one to binary, with no additional "
@@ -433,10 +443,11 @@ msgid ""
 "linker.  For example, the text section of the program is set to be located "
 "at address `0x600`.  In practice this means that [.filename]#boot0# must be "
 "loaded to memory address `0x600` in order to function properly."
-msgstr ""
+msgstr "请注意，源文件 [.filename]#boot0.S# 是“原样”汇编的：指令逐条转换为二进制，不附加任何信息（例如 ELF 文件格式）。这种底层控制通过链接时传递给链接器的特殊控制标志实现。例如，程序的文本段被设置为位于地址 `0x600`。实际上，这意味着必须将 [.filename]#boot0# 加载到内存地址 `0x600`，才能正常运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:229
+#, fuzzy
 msgid ""
 "It is worth looking at the [.filename]#Makefile# for [.filename]#boot0# ([."
 "filename]#stand/i386/boot0/Makefile#), as it defines some of the run-time "
@@ -448,7 +459,7 @@ msgid ""
 "filename]#Makefile#.  For example, look at the linker directives which "
 "command the linker to start the text section at address `0x600`, and to "
 "build the output file \"as is\" (strip out any file formatting):"
-msgstr ""
+msgstr "值得查看 [.filename]#boot0# 的 [.filename]#Makefile#（[.filename]#stand/i386/boot0/Makefile#），因为它定义了 [.filename]#boot0# 的一些运行时行为。例如，如果使用连接到串行端口（COM1）的终端进行 I/O，就必须定义宏 `SIO`（`-DSIO`）。`-DPXE` 可启用通过 PXE 引导的功能，按 kbd:[F6] 即可使用。此外，程序还定义了一组 __flags__，用于进一步修改其行为。以上内容都在 [.filename]#Makefile# 中有所体现。例如，查看链接器指令，它们要求链接器将文本段置于地址 `0x600`，并按“原样”生成输出文件（去除所有文件格式信息）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:234
@@ -463,25 +474,27 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/Makefile# [[boot-boot0-makefile-as-is]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/Makefile# [[boot-boot0-makefile-as-is]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:238
+#, fuzzy
 msgid ""
 "Let us now start our study of the MBR, or [.filename]#boot0#, starting where "
 "execution begins."
-msgstr ""
+msgstr "现在，我们从 MBR（即 [.filename]#boot0#）开始研究，先从程序开始执行的位置讲起。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:244
+#, fuzzy
 msgid ""
 "Some modifications have been made to some instructions in favor of better "
 "exposition.  For example, some macros are expanded, and some macro tests are "
 "omitted when the result of the test is known.  This applies to all of the "
 "code examples shown."
-msgstr ""
+msgstr "为了更清楚地说明问题，我们对部分指令做了一些修改。例如，展开了一些宏，并省略了结果已知的宏测试。所有代码示例都采用了这些处理。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:255
@@ -505,12 +518,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-entrypoint]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-entrypoint]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:263
+#, fuzzy
 msgid ""
 "This first block of code is the entry point of the program.  It is where the "
 "BIOS transfers control.  First, it makes sure that the string operations "
@@ -520,14 +534,15 @@ msgid ""
 "about the state of the segment registers, it initializes them.  Finally, it "
 "sets the stack pointer register (`%sp`) to ($LOAD = address `0x7c00`), so we "
 "have a working stack."
-msgstr ""
+msgstr "这段代码是程序的入口点，也是 BIOS 转移控制权的位置。首先，它确保字符串操作会自动递增指针操作数（`cld` 指令）footnote:[如有疑问，请参阅官方 Intel 手册，其中介绍了每条指令的确切语义。]。随后，由于它不假定段寄存器处于任何特定状态，因此会对其进行初始化。最后，它将栈指针寄存器（`%sp`）设置为（$LOAD = 地址 `0x7c00`），从而建立可用的栈。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:265
+#, fuzzy
 msgid ""
 "The next block is responsible for the relocation and subsequent jump to the "
 "relocated code."
-msgstr ""
+msgstr "下一段代码负责重定位，并随后跳转到重定位后的代码。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:279
@@ -559,12 +574,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-relocation]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-relocation]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:292
+#, fuzzy
 msgid ""
 "As [.filename]#boot0# is loaded by the BIOS to address `0x7C00`, it copies "
 "itself to address `0x600` and then transfers control there (recall that it "
@@ -582,10 +598,11 @@ msgid ""
 "_relocation_.  Since the last update of this document, the copy instructions "
 "have changed in the code, so instead of the movsb and stosb, movsw and stosw "
 "have been introduced, which copy 2 bytes(1 word) in one iteration."
-msgstr ""
+msgstr "由于 BIOS 将 [.filename]#boot0# 加载到地址 `0x7C00`，它会将自身复制到地址 `0x600`，然后将控制权转移到那里（请记住，它链接时设定的执行地址是 `0x600`）。源地址 `0x7c00` 被复制到寄存器 `%si`。目标地址 `0x600` 被复制到寄存器 `%di`。要复制的字数 `256`（程序大小为 512 字节）被复制到寄存器 `%cx`。接下来，`rep` 指令会按 `%cx` 寄存器指定的次数重复执行后续指令 `movsw`。`movsw` 指令将 `%si` 指向的字复制到 `%di` 指向的地址。该操作再重复 255 次。每次重复时，源寄存器和目标寄存器 `%si` 与 `%di` 都会递增 1。因此，复制完 256 个字（512 字节）后，`%di` 的值为 `0x600`+`512`= `0x800`，而 `%si` 的值为 `0x7c00`+`512`= `0x7e00`；至此，代码__重定位__完成。自本文档上次更新以来，复制指令已发生变化：现在引入了 `movsw` 和 `stosw`，取代 `movsb` 和 `stosb`，它们每次迭代可复制 2 字节（1 个字）。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:303
+#, fuzzy
 msgid ""
 "Next, the destination register `%di` is copied to `%bp`.  `%bp` gets the "
 "value `0x800`.  The value `8` is copied to `%cl` in preparation for a new "
@@ -599,14 +616,15 @@ msgid ""
 "value 1 and a jump is made to the main function from the relocated code.  "
 "Note that until this jump to the relocated code, any reference to an "
 "absolute address was avoided."
-msgstr ""
+msgstr "接下来，目标寄存器 `%di` 被复制到 `%bp`。`%bp` 获得值 `0x800`。值 `8` 被复制到 `%cl`，为新的字符串操作（类似前面的 `movsw`）做准备。现在，`stosw` 执行 8 次。此指令将值 `0` 写入目标寄存器 `%di`（其值为 `0x800`）指向的地址，然后递增该寄存器。此操作再重复 7 次，因此 `%di` 最终的值为 `0x810`。实际上，这会清除地址范围 `0x800`-`0x80f`。该范围用作（伪）分区表，以便将 MBR 写回磁盘。最后，将此伪分区的 CHS 寻址扇区字段设为值 1，然后跳转到重定位代码中的主函数。请注意，在跳转到重定位代码之前，代码一直避免引用绝对地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:305
+#, fuzzy
 msgid ""
 "The following code block tests whether the drive number provided by the BIOS "
 "should be used, or the one stored in [.filename]#boot0#."
-msgstr ""
+msgstr "以下代码块会测试应使用 BIOS 提供的驱动器编号，还是使用存储在 [.filename]#boot0# 中的编号。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:317
@@ -630,12 +648,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-drivenumber]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-drivenumber]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:326
+#, fuzzy
 msgid ""
 "This code tests the `SETDRV` bit (`0x20`) in the _flags_ variable.  Recall "
 "that register `%bp` points to address location `0x800`, so the test is done "
@@ -646,14 +665,15 @@ msgid ""
 "MBR is used instead of the one provided by the BIOS.  We assume the "
 "defaults, and that the BIOS provided a valid drive number, so we jump to "
 "`save_curdrive`."
-msgstr ""
+msgstr "此代码会测试 __flags__ 变量中的 `SETDRV` 位（`0x20`）。请记住，寄存器 `%bp` 指向地址 `0x800`，因此测试的是地址 `0x800`-`69`= `0x7bb` 处的 __flags__ 变量。这说明了可以对 [.filename]#boot0# 进行哪些修改。默认情况下不会设置 `SETDRV` 标志，但可以在 [.filename]#Makefile# 中设置。设置后，将使用 MBR 中存储的驱动器编号，而不是 BIOS 提供的编号。我们假定采用默认设置，并且 BIOS 提供了有效的驱动器编号，因此跳转到 `save_curdrive`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:328
+#, fuzzy
 msgid ""
 "The next block saves the drive number provided by the BIOS, and calls `putn` "
 "to print a new line on the screen."
-msgstr ""
+msgstr "下一段代码保存 BIOS 提供的驱动器编号，并调用 `putn` 在屏幕上输出换行符。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:340
@@ -681,19 +701,21 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-savedrivenumber]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-savedrivenumber]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:344
+#, fuzzy
 msgid ""
 "Note that we assume `TEST` is not defined, so the conditional code in it is "
 "not assembled and will not appear in our executable [.filename]#boot0#."
-msgstr ""
+msgstr "请注意，我们假定未定义 `TEST`，因此其中的条件代码不会被汇编，也不会出现在可执行文件 [.filename]#boot0# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:350
+#, fuzzy
 msgid ""
 "Our next block implements the actual scanning of the partition table.  It "
 "prints to the screen the partition type for each of the four entries in the "
@@ -701,19 +723,19 @@ msgid ""
 "system file systems.  Examples of recognized partition types are NTFS "
 "(Windows(R), ID 0x7), `ext2fs` (Linux(R), ID 0x83), and, of course, `ffs`/"
 "`ufs2` (FreeBSD, ID 0xa5).  The implementation is fairly simple."
-msgstr ""
+msgstr "下一段代码实现对分区表的实际扫描。它会在屏幕上输出分区表中四个条目各自的分区类型，并将每种类型与一组已知操作系统文件系统类型进行比较。可识别的分区类型包括 NTFS（Windows(R)，ID 0x7）、`ext2fs`（Linux(R)，ID 0x83），以及 `ffs`/`ufs2`（FreeBSD，ID 0xa5）。其实现相当简单。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      movw $(partbl+0x4),%bx\t# Partition table (+4)\n"
 "      xorw %dx,%dx\t\t# Item number\n"
-msgstr ""
+msgstr "      movw $(partbl+0x4),%bx\t# Partition table (+4)\n      xorw %dx,%dx\t\t# Item number\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "read_entry:\n"
 "      movb %ch,-0x4(%bx)\t# Zero active flag (ch == 0)\n"
@@ -730,43 +752,45 @@ msgid ""
 "      movb (%di),%cl\t\t# Partition\n"
 "      addw %cx,%di\t\t#  description\n"
 "      callw putx\t\t# Display it\n"
-msgstr ""
+msgstr "read_entry:\n      movb %ch,-0x4(%bx)\t# Zero active flag (ch == 0)\n      btw %dx,_FLAGS(%bp)\t# Entry enabled?\n      jnc next_entry\t\t# No\n      movb (%bx),%al\t\t# Load type\n      test %al, %al\t\t# skip empty partition\n      jz next_entry\n      movw $bootable_ids,%di\t# Lookup tables\n      movb $(TLEN+1),%cl\t# Number of entries\n      repne\t\t\t# Locate\n      scasb\t\t\t#  type\n      addw $(TLEN-1), %di\t# Adjust\n      movb (%di),%cl\t\t# Partition\n      addw %cx,%di\t\t#  description\n      callw putx\t\t# Display it\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "next_entry:\n"
 "      incw %dx\t\t\t# Next item\n"
 "      addb $0x10,%bl\t\t# Next entry\n"
 "      jnc read_entry\t\t# Till done\n"
-msgstr ""
+msgstr "next_entry:\n      incw %dx\t\t\t# Next item\n      addb $0x10,%bl\t\t# Next entry\n      jnc read_entry\t\t# Till done\n"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-partition-scan]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-partition-scan]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:382
+#, fuzzy
 msgid ""
 "It is important to note that the active flag for each entry is cleared, so "
 "after the scanning, _no_ partition entry is active in our memory copy of [."
 "filename]#boot0#.  Later, the active flag will be set for the selected "
 "partition.  This ensures that only one active partition exists if the user "
 "chooses to write the changes back to disk."
-msgstr ""
+msgstr "请注意，每个条目的活动标志都会被清除，因此扫描完成后，我们内存中 [.filename]#boot0# 副本里的__没有任何__分区条目处于活动状态。之后，会为选定的分区设置活动标志。这样，如果用户选择将更改写回磁盘，就能确保只有一个活动分区。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:387
+#, fuzzy
 msgid ""
 "The next block tests for other drives.  At startup, the BIOS writes the "
 "number of drives present in the computer to address `0x475`.  If there are "
 "any other drives present, [.filename]#boot0# prints the current drive to "
 "screen.  The user may command [.filename]#boot0# to scan partitions on "
 "another drive later."
-msgstr ""
+msgstr "下一段代码会检查是否存在其他驱动器。启动时，BIOS 会将计算机中存在的驱动器数量写入地址 `0x475`。如果还存在其他驱动器，[.filename]#boot0# 就会在屏幕上输出当前驱动器。之后，用户可以命令 [.filename]#boot0# 扫描另一个驱动器上的分区。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:396
@@ -788,23 +812,25 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-test-drives]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-test-drives]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:401
+#, fuzzy
 msgid ""
 "We make the assumption that a single drive is present, so the jump to "
 "`print_drive` is not performed.  We also assume nothing strange happened, so "
 "we jump to `print_prompt`."
-msgstr ""
+msgstr "我们假设只有一个驱动器，因此不会跳转到 `print_drive`。我们还假设没有发生异常情况，所以跳转到 `print_prompt`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:403
+#, fuzzy
 msgid ""
 "This next block just prints out a prompt followed by the default option:"
-msgstr ""
+msgstr "下一段代码只负责输出提示信息，随后显示默认选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:413
@@ -828,17 +854,18 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-prompt]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-prompt]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:417
+#, fuzzy
 msgid ""
 "Finally, a jump is performed to `start_input`, where the BIOS services are "
 "used to start a timer and for reading user input from the keyboard; if the "
 "timer expires, the default option will be selected:"
-msgstr ""
+msgstr "最后，代码会跳转到 `start_input`，在那里使用 BIOS 服务启动计时器并读取用户通过键盘输入的内容；如果计时器到期，就会选择默认选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:433
@@ -874,12 +901,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-start-input]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-start-input]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:448
+#, fuzzy
 msgid ""
 "An interrupt is requested with number `0x1a` and argument `0` in register `"
 "%ah`.  The BIOS has a predefined set of services, requested by applications "
@@ -902,10 +930,11 @@ msgid ""
 "can be changed in the [.filename]#Makefile#).  Until this time has passed, [."
 "filename]#boot0# continually asks the BIOS for any user input; this is done "
 "through `int 0x16`, argument `1` in `%ah`."
-msgstr ""
+msgstr "程序使用寄存器 `%ah` 中的参数 `0` 请求编号为 `0x1a` 的中断。BIOS 提供一组预定义服务，应用程序通过 `int` 指令生成软件中断来请求这些服务，并通过寄存器传递参数（本例中为 `%ah`）。具体来说，此处请求的是自上次午夜以来的时钟滴答数；BIOS 通过 RTC（实时时钟）计算此值。此时钟可设置为以 2 Hz 到 8192 Hz 的频率运行。BIOS 在启动时将其设置为 18.2 Hz。请求完成后，BIOS 会在寄存器 `%cx` 和 `%dx` 中返回 32 位结果（低位字节位于 `%dx`）。该结果（`%dx` 部分）被复制到寄存器 `%di`，然后将变量 `TICKS` 的值加到 `%di` 上。此变量位于 [.filename]#boot0# 中，相对于寄存器 `%bp`（请记住，它指向 `0x800`）的偏移量为 `_TICKS`（一个负值）。此变量的默认值为 `0xb6`（十进制的 182）。其思路是让 [.filename]#boot0# 不断向 BIOS 查询时间；当寄存器 `%dx` 返回的值大于存储在 `%di` 中的值时，时间就到，程序将选择默认选项。由于 RTC 每秒滴答 18.2 次，此条件将在 10 秒后满足（可在 [.filename]#Makefile# 中更改此默认行为）。在此时间到达之前，[.filename]#boot0# 会持续向 BIOS 查询用户是否有输入；这是通过 `int 0x16` 实现的，参数 `1` 存放在 `%ah` 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:456
+#, fuzzy
 msgid ""
 "Whether a key was pressed or the time expired, subsequent code validates the "
 "selection.  Based on the selection, the register `%si` is set to point to "
@@ -915,14 +944,15 @@ msgid ""
 "enabled at compile time, the in-memory version of [.filename]#boot0# with "
 "these modified values is written back to the MBR on disk.  We leave the "
 "details of this implementation to the reader."
-msgstr ""
+msgstr "无论用户按下了按键还是计时器已到期，后续代码都会验证选项。根据所选选项，寄存器 `%si` 会指向分区表中相应的分区条目。这个新选项会覆盖先前的默认选项，并成为新的默认选项。最后，会设置所选分区的 ACTIVE 标志。如果编译时启用了相应功能，就会将包含这些修改值的 [.filename]#boot0# 内存版本写回磁盘上的 MBR。此处将具体实现细节留给读者。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:458
+#, fuzzy
 msgid ""
 "We now end our study with the last code block from the [.filename]#boot0# "
 "program:"
-msgstr ""
+msgstr "现在，我们用 [.filename]#boot0# 程序的最后一个代码块结束本次研究："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:471
@@ -952,27 +982,30 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:473
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-check-bootable]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot0/boot0.S# [[boot-boot0-check-bootable]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:477
+#, fuzzy
 msgid ""
 "Recall that `%si` points to the selected partition entry.  This entry tells "
 "us where the partition begins on disk.  We assume, of course, that the "
 "partition selected is actually a FreeBSD slice."
-msgstr ""
+msgstr "请记住，`%si` 指向选定的分区条目。该条目告诉我们分区在磁盘上的起始位置。当然，我们假设所选分区实际上是一个 FreeBSD 切片。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:481
+#, fuzzy
 msgid ""
 "From now on, we will favor the use of the technically more accurate term "
 "\"slice\" rather than \"partition\"."
-msgstr ""
+msgstr "从现在起，我们将优先使用技术上更准确的术语“切片”，而不是“分区”。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:487
+#, fuzzy
 msgid ""
 "The transfer buffer is set to `0x7c00` (register `%bx`), and a read for the "
 "first sector of the FreeBSD slice is requested by calling `intx13`.  We "
@@ -981,39 +1014,43 @@ msgid ""
 "Finally, the value at `%si` (the pointer to the selected partition table) is "
 "preserved for use by the next stage, and a jump is performed to address "
 "`0x7c00`, where execution of our next stage (the just-read block) is started."
-msgstr ""
+msgstr "传输缓冲区设置为 `0x7c00`（寄存器 `%bx`），并通过调用 `intx13` 请求读取 FreeBSD 分区的第一个扇区。我们假定一切顺利，因此不会跳转到 `beep`。尤其是，新读取的扇区必须以魔数序列 `0xaa55` 结尾。最后，保留 `%si` 的值（指向所选分区表的指针）供下一阶段使用，并跳转到地址 `0x7c00`，从而开始执行下一阶段（刚读取的块）。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:489
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`boot1` Stage"
-msgstr ""
+msgstr "`boot1` 阶段"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:492
+#, fuzzy
 msgid "So far we have gone through the following sequence:"
-msgstr ""
+msgstr "到目前为止，我们经历了以下流程："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:496
+#, fuzzy
 msgid ""
 "The BIOS did some early hardware initialization, including the POST.  The "
 "MBR ([.filename]#boot0#) was loaded from absolute disk sector one to address "
 "`0x7c00`.  Execution control was passed to that location."
-msgstr ""
+msgstr "BIOS 执行了一些早期硬件初始化，包括 POST。MBR（[.filename]#boot0#）从磁盘绝对扇区 1 加载到地址 `0x7c00`。随后，执行控制权转交给该地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:499
+#, fuzzy
 msgid ""
 "[.filename]#boot0# relocated itself to the location it was linked to execute "
 "(`0x600`), followed by a jump to continue execution at the appropriate "
 "place.  Finally, [.filename]#boot0# loaded the first disk sector from the "
 "FreeBSD slice to address `0x7c00`.  Execution control was passed to that "
 "location."
-msgstr ""
+msgstr "[.filename]#boot0# 将自身重定位到链接时指定的执行位置（`0x600`），然后跳转到适当的位置继续执行。最后，[.filename]#boot0# 将 FreeBSD 分区的第一个磁盘扇区加载到地址 `0x7c00`。随后，执行控制权转交给该地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:512
+#, fuzzy
 msgid ""
 "[.filename]#boot1# is the next step in the boot-loading sequence.  It is the "
 "first of three boot stages.  Note that we have been dealing exclusively with "
@@ -1035,24 +1072,26 @@ msgid ""
 "bytes of this single file, so when [.filename]#boot0# loads the first sector "
 "of the FreeBSD slice (512 bytes), it is actually loading [.filename]#boot1# "
 "and transferring control to it."
-msgstr ""
+msgstr "[.filename]#boot1# 是引导加载流程的下一步，也是三个引导阶段中的第一个。请注意，到目前为止，我们处理的全都是磁盘扇区。实际上，BIOS 加载绝对第一个扇区，而 [.filename]#boot0# 加载 FreeBSD 分区的第一个扇区。两者都加载到地址 `0x7c00`。从概念上讲，我们可以认为这些磁盘扇区分别包含文件 [.filename]#boot0# 和 [.filename]#boot1#，但实际上，对 [.filename]#boot1# 来说并不完全如此。严格来说，与 [.filename]#boot0# 不同，[.filename]#boot1# 并不属于引导块 footnote:[虽然存在文件 /boot/boot1，但它并未写入 FreeBSD 分区的起始位置。它会与 boot2 连接成 boot，后者才会写入 FreeBSD 分区的起始位置，并在启动时读取。]。实际上，最终写入磁盘的是一个完整的文件 [.filename]#boot#（[.filename]#/boot/boot#）。该文件由 [.filename]#boot1#、[.filename]#boot2# 和 `Boot Extender`（或 BTX）组成。这个文件大于一个扇区（大于 512 字节）。幸运的是，[.filename]#boot1# 恰好占据该文件的前 512 字节，因此，当 [.filename]#boot0# 加载 FreeBSD 分区的第一个扇区（512 字节）时，实际上加载的正是 [.filename]#boot1#，并将控制权交给它。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:517
+#, fuzzy
 msgid ""
 "The main task of [.filename]#boot1# is to load the next boot stage.  This "
 "next stage is somewhat more complex.  It is composed of a server called the "
 "\"Boot Extender\", or BTX, and a client, called [.filename]#boot2#.  As we "
 "will see, the last boot stage, [.filename]#loader#, is also a client of the "
 "BTX server."
-msgstr ""
+msgstr "[.filename]#boot1# 的主要任务是加载下一个引导阶段。下一阶段稍微复杂一些，由一个名为“Boot Extender”（或 BTX）的服务器和一个名为 [.filename]#boot2# 的客户端组成。我们将看到，最后一个引导阶段 [.filename]#loader# 也是 BTX 服务器的客户端。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:519
+#, fuzzy
 msgid ""
 "Let us now look in detail at what exactly is done by [.filename]#boot1#, "
 "starting like we did for [.filename]#boot0#, at its entry point:"
-msgstr ""
+msgstr "现在，让我们像分析 [.filename]#boot0# 时那样，从 [.filename]#boot1# 的入口点开始，详细看看它具体执行了什么："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:524
@@ -1066,16 +1105,17 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:526
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-entry]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-entry]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:528
+#, fuzzy
 msgid ""
 "The entry point at `start` simply jumps past a special data area to the "
 "label `main`, which in turn looks like this:"
-msgstr ""
+msgstr "`start` 处的入口点只需跳过一个特殊数据区域，转到标签 `main`，其代码如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:543
@@ -1109,22 +1149,24 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:545
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-main]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-main]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:550
+#, fuzzy
 msgid ""
 "Just like [.filename]#boot0#, this code relocates [.filename]#boot1#, this "
 "time to memory address `0x700`.  However, unlike [.filename]#boot0#, it does "
 "not jump there.  [.filename]#boot1# is linked to execute at address "
 "`0x7c00`, effectively where it was loaded in the first place.  The reason "
 "for this relocation will be discussed shortly."
-msgstr ""
+msgstr "与 [.filename]#boot0# 一样，这段代码会将 [.filename]#boot1# 重定位到内存地址 `0x700`。不过，与 [.filename]#boot0# 不同，它不会跳转到那里。[.filename]#boot1# 链接时指定的执行地址是 `0x7c00`，实际上也就是它最初加载的位置。稍后会讨论进行此重定位的原因。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:555
+#, fuzzy
 msgid ""
 "Next comes a loop that looks for the FreeBSD slice.  Although [."
 "filename]#boot0# loaded [.filename]#boot1# from the FreeBSD slice, no "
@@ -1134,7 +1176,7 @@ msgid ""
 "pass this information), so it assumes nothing.], so [.filename]#boot1# must "
 "rescan the partition table to find where the FreeBSD slice starts.  "
 "Therefore it rereads the MBR:"
-msgstr ""
+msgstr "接下来是一个用于查找 FreeBSD 分区的循环。虽然 [.filename]#boot0# 从 FreeBSD 分区加载了 [.filename]#boot1#，但并未向它传递任何有关该分区的信息 footnote:[实际上，我们确实通过寄存器 %si 传递了指向该分区条目的指针。不过，boot1 不会假定自己是由 boot0 加载的（也许是其他 MBR 加载了它，并未传递此信息），因此它不会作任何假设。]，所以 [.filename]#boot1# 必须重新扫描分区表，查找 FreeBSD 分区的起始位置。因此，它会重新读取 MBR："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:563
@@ -1154,12 +1196,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-find-freebsd]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-find-freebsd]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:573
+#, fuzzy
 msgid ""
 "In the code above, register `%dl` maintains information about the boot "
 "device.  This is passed on by the BIOS and preserved by the MBR.  Numbers "
@@ -1168,7 +1211,7 @@ msgid ""
 "through `%si` and `%dh`.  The memory address at label `part4` is copied to `"
 "%si`.  This memory address holds a \"fake partition\" to be used by "
 "`nread`.  The following is the data in the fake partition:"
-msgstr ""
+msgstr "在上面的代码中，寄存器 `%dl` 保存了引导设备的信息。该信息由 BIOS 传递，并由 MBR 保留。数值 `0x80` 及以上表示我们正在处理硬盘，因此代码会调用 `nread` 来读取 MBR。传递给 `nread` 的参数通过 `%si` 和 `%dh` 传递。标签 `part4` 处的内存地址被复制到 `%si`。该内存地址保存着一个供 `nread` 使用的“伪分区”。伪分区中的数据如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:581
@@ -1188,24 +1231,26 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:583
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot2-make-fake-partition]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot2-make-fake-partition]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:588
+#, fuzzy
 msgid ""
 "In particular, the LBA for this fake partition is hardcoded to zero.  This "
 "is used as an argument to the BIOS for reading absolute sector one from the "
 "hard drive.  Alternatively, CHS addressing could be used.  In this case, the "
 "fake partition holds cylinder 0, head 0 and sector 1, which is equivalent to "
 "absolute sector one."
-msgstr ""
+msgstr "具体来说，这个伪分区的 LBA 被硬编码为零。它作为参数传给 BIOS，用于读取硬盘上的绝对扇区 1。也可以改用 CHS 寻址。在这种情况下，伪分区保存的是柱面 0、磁头 0 和扇区 1，这与绝对扇区 1 等效。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:590
+#, fuzzy
 msgid "Let us now proceed to take a look at `nread`:"
-msgstr ""
+msgstr "现在让我们继续看看 `nread`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:600
@@ -1229,12 +1274,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:602
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-nread]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-nread]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:611
+#, fuzzy
 msgid ""
 "Recall that `%si` points to the fake partition.  The word footnote:[In the "
 "context of 16-bit real mode, a word is 2 bytes.] at offset `0x8` is copied "
@@ -1245,14 +1291,15 @@ msgid ""
 "is very interesting.  In this context, it accomplishes nothing.  However, as "
 "we will see shortly, [.filename]#boot2#, in conjunction with the BTX server, "
 "also uses `xread.1`.  This mechanism will be discussed in the next section."
-msgstr ""
+msgstr "请记住，`%si` 指向伪分区。偏移 `0x8` 处的字 footnote:[在 16 位实模式下，一个字为 2 字节。]被复制到寄存器 `%ax`，偏移 `0xa` 处的字则被复制到 `%cx`。BIOS 将它们解释为表示待读取 LBA 的低 4 字节值（高 4 字节假定为零）。寄存器 `%bx` 保存 MBR 将被加载到的内存地址。将 `%cs` 压入堆栈的指令非常有意思。在此处，该指令没有任何作用。不过，稍后我们会看到，[.filename]#boot2# 与 BTX 服务器配合使用时也会用到 `xread.1`。下一节将讨论这一机制。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:613
+#, fuzzy
 msgid ""
 "The code at `xread.1` further calls the `read` function, which actually "
 "calls the BIOS asking for the disk sector:"
-msgstr ""
+msgstr "`xread.1` 处的代码会进一步调用 `read` 函数，后者实际上会调用 BIOS 请求读取磁盘扇区："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:630
@@ -1290,24 +1337,26 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:632
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-xread1]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-xread1]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:636
+#, fuzzy
 msgid ""
 "Note the long return instruction at the end of this block.  This instruction "
 "pops out the `%cs` register pushed by `nread`, and returns.  Finally, "
 "`nread` also returns."
-msgstr ""
+msgstr "请注意这个代码块末尾的远返回指令。该指令弹出 `nread` 压入的 `%cs` 寄存器，然后返回。最后，`nread` 也会返回。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:638
+#, fuzzy
 msgid ""
 "With the MBR loaded to memory, the actual loop for searching the FreeBSD "
 "slice begins:"
-msgstr ""
+msgstr "将 MBR 加载到内存后，就开始执行搜索 FreeBSD 分区的实际循环："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:658
@@ -1351,18 +1400,19 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-find-part]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-find-part]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:664
+#, fuzzy
 msgid ""
 "If a FreeBSD slice is identified, execution continues at `main.5`.  Note "
 "that when a FreeBSD slice is found `%si` points to the appropriate entry in "
 "the partition table, and `%dh` holds the partition number.  We assume that a "
 "FreeBSD slice is found, so we continue execution at `main.5`:"
-msgstr ""
+msgstr "如果识别出 FreeBSD 分区，执行流程将从 `main.5` 继续。请注意，找到 FreeBSD 分区后，`%si` 指向分区表中相应的条目，而 `%dh` 保存分区号。我们假定已找到 FreeBSD 分区，因此从 `main.5` 继续执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:679
@@ -1396,12 +1446,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:681
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-main5]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-main5]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:687
+#, fuzzy
 msgid ""
 "Recall that at this point, register `%si` points to the FreeBSD slice entry "
 "in the MBR partition table, so a call to `nread` will effectively read "
@@ -1412,7 +1463,7 @@ msgid ""
 "beginning of the FreeBSD slice is not [.filename]#/boot/boot1#, but [."
 "filename]#/boot/boot#.  Let us look at the size of these files in the "
 "filesystem:"
-msgstr ""
+msgstr "请记住，此时寄存器 `%si` 指向 MBR 分区表中的 FreeBSD 分区条目，因此调用 `nread` 实际上会读取该分区起始处的扇区。传入寄存器 `%dh` 的参数告知 `nread` 读取 16 个磁盘扇区。请记住，前 512 字节，即 FreeBSD 分区的第一个扇区，对应 [.filename]#boot1# 程序。还要记住，写入 FreeBSD 分区起始处的文件不是 [.filename]#/boot/boot1#，而是 [.filename]#/boot/boot#。我们来看看文件系统中这些文件的大小："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:694
@@ -1430,6 +1481,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:702
+#, fuzzy
 msgid ""
 "Both [.filename]#boot0# and [.filename]#boot1# are 512 bytes each, so they "
 "fit _exactly_ in one disk sector.  [.filename]#boot2# is much bigger, "
@@ -1442,10 +1494,11 @@ msgid ""
 "and [.filename]#boot2# are _not_ written to disk.  The command used to "
 "concatenate [.filename]#boot1# and [.filename]#boot2# into a single [."
 "filename]#boot# is merely `cat boot1 boot2 > boot`."
-msgstr ""
+msgstr "[.filename]#boot0# 和 [.filename]#boot1# 都是 512 字节，因此恰好能放入一个磁盘扇区。[.filename]#boot2# 大得多，其中包含 BTX 服务器和 [.filename]#boot2# 客户端。最后，一个仅名为 [.filename]#boot# 的文件比 [.filename]#boot2# 大 512 字节。该文件由 [.filename]#boot1# 和 [.filename]#boot2# 连接而成。如前所述，写入磁盘绝对第一个扇区（MBR）的文件是 [.filename]#boot0#，写入 FreeBSD 分区第一个扇区的文件是 [.filename]#boot#；[.filename]#boot1# 和 [.filename]#boot2# __不会__写入磁盘。将 [.filename]#boot1# 和 [.filename]#boot2# 连接成单个 [.filename]#boot# 文件的命令就是 `cat boot1 boot2 > boot`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:706
+#, fuzzy
 msgid ""
 "So [.filename]#boot1# occupies exactly the first 512 bytes of [."
 "filename]#boot# and, because [.filename]#boot# is written to the first "
@@ -1455,10 +1508,11 @@ msgid ""
 "bytes, exactly the size of boot].  We will see more details about how [."
 "filename]#boot# is formed from [.filename]#boot1# and [.filename]#boot2# in "
 "the next section."
-msgstr ""
+msgstr "因此，[.filename]#boot1# 恰好占据 [.filename]#boot# 的前 512 字节；由于 [.filename]#boot# 被写入 FreeBSD 分区的第一个扇区，[.filename]#boot1# 恰好能放入该扇区。`nread` 读取 FreeBSD 分区的前 16 个扇区时，实际上会读取整个 [.filename]#boot# 文件 footnote:[512*16=8192 字节，正好是 boot 的大小。]。下一节将更详细地介绍 [.filename]#boot# 如何由 [.filename]#boot1# 和 [.filename]#boot2# 组成。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:712
+#, fuzzy
 msgid ""
 "Recall that `nread` uses memory address `0x8c00` as the transfer buffer to "
 "hold the sectors read.  This address is conveniently chosen.  Indeed, "
@@ -1467,10 +1521,11 @@ msgid ""
 "`0x8fff`) is used to store the _bsdlabel_ footnote:[Historically known as "
 "disklabel.  If you ever wondered where FreeBSD stored this information, it "
 "is in this region - see man:bsdlabel[8]]."
-msgstr ""
+msgstr "请记住，`nread` 使用内存地址 `0x8c00` 作为传输缓冲区来存放读取的扇区。这个地址的选择很合适。实际上，由于 [.filename]#boot1# 位于前 512 字节中，它会落在地址范围 `0x8c00`-`0x8dff` 内。后续的 512 字节（范围 `0x8e00`-`0x8fff`）用于存放 __bsdlabel__ footnote:[过去称为 disklabel。如果你曾好奇 FreeBSD 将这些信息存储在哪里，它就在这一区域，参见 man:bsdlabel[8]。]。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:720
+#, fuzzy
 msgid ""
 "Starting at address `0x9000` is the beginning of the BTX server, and "
 "immediately following is the [.filename]#boot2# client.  The BTX server acts "
@@ -1481,30 +1536,31 @@ msgid ""
 "in the memory buffer, and copies it to memory address `0xc000`.  This is "
 "because the BTX server arranges [.filename]#boot2# to execute in a segment "
 "starting at `0xa000`.  We explore this in detail in the following section."
-msgstr ""
+msgstr "BTX 服务器从地址 `0x9000` 开始，紧接着是 [.filename]#boot2# 客户端。BTX 服务器充当内核，在保护模式下以最高特权级执行。与之相反，BTX 客户端（例如 [.filename]#boot2#）在用户模式下执行。下一节将介绍这是如何实现的。调用 `nread` 后的代码会在内存缓冲区中定位 [.filename]#boot2# 的起始位置，并将其复制到内存地址 `0xc000`。这是因为 BTX 服务器会安排 [.filename]#boot2# 在从 `0xa000` 开始的段中执行。下一节将对此进行详细探讨。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:723
+#, fuzzy
 msgid ""
 "The last code block of [.filename]#boot1# enables access to memory above 1MB "
 "footnote:[This is necessary for legacy reasons.] and concludes with a jump "
 "to the starting point of the BTX server:"
-msgstr ""
+msgstr "[.filename]#boot1# 的最后一个代码块会启用对 1MB 以上内存的访问 footnote:[这是出于兼容旧系统的需要。]，并以跳转到 BTX 服务器的起始位置结束："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:731
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "seta20:\n"
 "\tcli\t\t\t# Disable interrupts\n"
 "seta20.1:\n"
 "\tdec %cx\t\t\t# Timeout?\n"
 "\tjz seta20.3\t\t# Yes\n"
-msgstr ""
+msgstr "seta20:\n\tcli\t\t\t# Disable interrupts\nseta20.1:\n\tdec %cx\t\t\t# Timeout?\n\tjz seta20.3\t\t# Yes\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:746
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tinb $0x64,%al\t\t# Get status\n"
 "\ttestb $0x2,%al\t\t# Busy?\n"
@@ -1520,50 +1576,55 @@ msgid ""
 "seta20.3:\n"
 "\tsti\t\t\t# Enable interrupts\n"
 "\tjmp 0x9010\t\t# Start BTX\n"
-msgstr ""
+msgstr "\tinb $0x64,%al\t\t# Get status\n\ttestb $0x2,%al\t\t# Busy?\n\tjnz seta20.1\t\t# Yes\n\tmovb $0xd1,%al\t\t# Command: Write\n\toutb %al,$0x64\t\t#  output port\nseta20.2:\n\tinb $0x64,%al\t\t# Get status\n\ttestb $0x2,%al\t\t# Busy?\n\tjnz seta20.2\t\t# Yes\n\tmovb $0xdf,%al\t\t# Enable\n\toutb %al,$0x60\t\t#  A20\nseta20.3:\n\tsti\t\t\t# Enable interrupts\n\tjmp 0x9010\t\t# Start BTX\n"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:748
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-seta20]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot1.S# [[boot-boot1-seta20]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:750
+#, fuzzy
 msgid "Note that right before the jump, interrupts are enabled."
-msgstr ""
+msgstr "请注意，在跳转之前，代码会启用中断。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:752
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The BTX Server"
-msgstr ""
+msgstr "BTX 服务器"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:756
+#, fuzzy
 msgid ""
 "Next in our boot sequence is the BTX Server.  Let us quickly remember how we "
 "got here:"
-msgstr ""
+msgstr "启动流程的下一步是 BTX 服务器。我们快速回顾一下到达此处的过程："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:758
+#, fuzzy
 msgid ""
 "The BIOS loads the absolute sector one (the MBR, or [.filename]#boot0#), to "
 "address `0x7c00` and jumps there."
-msgstr ""
+msgstr "BIOS 将绝对扇区 1（MBR，或 [.filename]#boot0#）加载到地址 `0x7c00`，然后跳转到该地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:760
+#, fuzzy
 msgid ""
 "[.filename]#boot0# relocates itself to `0x600`, the address it was linked to "
 "execute, and jumps over there.  It then reads the first sector of the "
 "FreeBSD slice (which consists of [.filename]#boot1#) into address `0x7c00` "
 "and jumps over there."
-msgstr ""
+msgstr "[.filename]#boot0# 将自身重定位到 `0x600`，也就是链接时指定的执行地址，然后跳转到那里。接着，它将 FreeBSD 分区的第一个扇区（由 [.filename]#boot1# 组成）读取到地址 `0x7c00`，然后跳转到那里。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:765
+#, fuzzy
 msgid ""
 "[.filename]#boot1# loads the first 16 sectors of the FreeBSD slice into "
 "address `0x8c00`.  This 16 sectors, or 8192 bytes, is the whole file [."
@@ -1571,65 +1632,68 @@ msgid ""
 "filename]#boot2#.  [.filename]#boot2#, in turn, contains the BTX server and "
 "the [.filename]#boot2# client.  Finally, a jump is made to address `0x9010`, "
 "the entry point of the BTX server."
-msgstr ""
+msgstr "[.filename]#boot1# 将 FreeBSD 分区的前 16 个扇区加载到地址 `0x8c00`。这 16 个扇区共 8192 字节，就是整个 [.filename]#boot# 文件。该文件由 [.filename]#boot1# 和 [.filename]#boot2# 连接而成。而 [.filename]#boot2# 又包含 BTX 服务器和 [.filename]#boot2# 客户端。最后，代码跳转到地址 `0x9010`，即 BTX 服务器的入口点。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:769
+#, fuzzy
 msgid ""
 "Before studying the BTX Server in detail, let us further review how the "
 "single, all-in-one [.filename]#boot# file is created.  The way [."
 "filename]#boot# is built is defined in its [.filename]#Makefile# ([."
 "filename]#stand/i386/boot2/Makefile#).  Let us look at the rule that creates "
 "the [.filename]#boot# file:"
-msgstr ""
+msgstr "在详细研究 BTX 服务器之前，我们再回顾一下这个包含所有内容的单一 [.filename]#boot# 文件是如何创建的。[.filename]#boot# 的构建方式定义在其 [.filename]#Makefile#（[.filename]#stand/i386/boot2/Makefile#）中。我们来看看创建 [.filename]#boot# 文件的规则："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:774
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot: boot1 boot2\n"
 "\tcat boot1 boot2 > boot\n"
-msgstr ""
+msgstr "      boot: boot1 boot2\n\tcat boot1 boot2 > boot\n"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:776
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:779
+#, fuzzy
 msgid ""
 "This tells us that [.filename]#boot1# and [.filename]#boot2# are needed, and "
 "the rule simply concatenates them to produce a single file called [."
 "filename]#boot#.  The rules for creating [.filename]#boot1# are also quite "
 "simple:"
-msgstr ""
+msgstr "这说明需要 [.filename]#boot1# 和 [.filename]#boot2#，而该规则只是将它们连接起来，生成一个名为 [.filename]#boot# 的文件。创建 [.filename]#boot1# 的规则也相当简单："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:784
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot1: boot1.out\n"
 "\t${OBJCOPY} -S -O binary boot1.out ${.TARGET}\n"
-msgstr ""
+msgstr "      boot1: boot1.out\n\t${OBJCOPY} -S -O binary boot1.out ${.TARGET}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:787
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot1.out: boot1.o\n"
 "\t${LD} ${LD_FLAGS} -e start --defsym ORG=${ORG1} -T ${LDSCRIPT} -o ${.TARGET} boot1.o\n"
-msgstr ""
+msgstr "      boot1.out: boot1.o\n\t${LD} ${LD_FLAGS} -e start --defsym ORG=${ORG1} -T ${LDSCRIPT} -o ${.TARGET} boot1.o\n"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:789
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot1]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot1]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:798
+#, fuzzy
 msgid ""
 "To apply the rule for creating [.filename]#boot1#, [.filename]#boot1.out# "
 "must be resolved.  This, in turn, depends on the existence of [."
@@ -1643,61 +1707,62 @@ msgid ""
 "filename]#objcopy#: `-S` tells it to strip all relocation and symbolic "
 "information; `-O binary` indicates the output format, that is, a simple, "
 "unformatted binary file."
-msgstr ""
+msgstr "要应用创建 [.filename]#boot1# 的规则，必须先生成 [.filename]#boot1.out#。而这又取决于 [.filename]#boot1.o# 是否存在。这个文件只是将我们熟悉的 [.filename]#boot1.S# 汇编而成，尚未链接。接着，应用创建 [.filename]#boot1.out# 的规则。这告诉我们，[.filename]#boot1.o# 应使用 `start` 作为入口点进行链接，并从地址 `0x7c00` 开始。最后，按照相应规则，从 [.filename]#boot1.out# 创建 [.filename]#boot1#。该规则使用 [.filename]#objcopy# 命令处理 [.filename]#boot1.out#。请注意传递给 `objcopy` 的标志：`-S` 表示剥离所有重定位和符号信息；`-O binary` 表示输出格式为简单的、未格式化的二进制文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:800
+#, fuzzy
 msgid ""
 "Having [.filename]#boot1#, let us take a look at how [.filename]#boot2# is "
 "constructed:"
-msgstr ""
+msgstr "有了 [.filename]#boot1#，我们来看看 [.filename]#boot2# 是如何构建的："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:807
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot2: boot2.ld\n"
 "\t@set -- `ls -l ${.ALLSRC}`; x=$$((${BOOT2SIZE}-$$5)); \\\n"
 "\t    echo \"$$x bytes available\"; test $$x -ge 0\n"
 "\t${DD} if=${.ALLSRC} of=${.TARGET} bs=${BOOT2SIZE} conv=sync\n"
-msgstr ""
+msgstr "      boot2: boot2.ld\n\t@set -- `ls -l ${.ALLSRC}`; x=$$((${BOOT2SIZE}-$$5)); \\\n\t    echo \"$$x bytes available\"; test $$x -ge 0\n\t${DD} if=${.ALLSRC} of=${.TARGET} bs=${BOOT2SIZE} conv=sync\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:811
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot2.ld: boot2.ldr boot2.bin ${BTXKERN}\n"
 "\tbtxld -v -E ${ORG2} -f bin -b ${BTXKERN} -l boot2.ldr \\\n"
 "\t    -o ${.TARGET} -P 1 boot2.bin\n"
-msgstr ""
+msgstr "      boot2.ld: boot2.ldr boot2.bin ${BTXKERN}\n\tbtxld -v -E ${ORG2} -f bin -b ${BTXKERN} -l boot2.ldr \\\n\t    -o ${.TARGET} -P 1 boot2.bin\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:814
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot2.ldr:\n"
 "\t${DD} if=/dev/zero of=${.TARGET} bs=512 count=1\n"
-msgstr ""
+msgstr "      boot2.ldr:\n\t${DD} if=/dev/zero of=${.TARGET} bs=512 count=1\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:817
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot2.bin: boot2.out\n"
 "\t${OBJCOPY} -S -O binary boot2.out ${.TARGET}\n"
-msgstr ""
+msgstr "      boot2.bin: boot2.out\n\t${OBJCOPY} -S -O binary boot2.out ${.TARGET}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:820
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot2.out: ${BTXCRT} boot2.o sio.o ashldi3.o\n"
 "\t${LD} ${LD_FLAGS} --defsym ORG=${ORG2} -T ${LDSCRIPT} -o ${.TARGET} ${.ALLSRC}\n"
-msgstr ""
+msgstr "      boot2.out: ${BTXCRT} boot2.o sio.o ashldi3.o\n\t${LD} ${LD_FLAGS} --defsym ORG=${ORG2} -T ${LDSCRIPT} -o ${.TARGET} ${.ALLSRC}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:827
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "      boot2.h: boot1.out\n"
 "\t${NM} -t d ${.ALLSRC} | awk '/([0-9])+ T xread/ \\\n"
@@ -1705,20 +1770,21 @@ msgid ""
 "\t    printf(\"#define XREADORG %#x\\n\", REL1 + x) }' \\\n"
 "\t    ORG1=`printf \"%d\" ${ORG1}` \\\n"
 "\t    REL1=`printf \"%d\" ${REL1}` > ${.TARGET}\n"
-msgstr ""
+msgstr "      boot2.h: boot1.out\n\t${NM} -t d ${.ALLSRC} | awk '/([0-9])+ T xread/ \\\n\t    { x = $$1 - ORG1; \\\n\t    printf(\"#define XREADORG %#x\\n\", REL1 + x) }' \\\n\t    ORG1=`printf \"%d\" ${ORG1}` \\\n\t    REL1=`printf \"%d\" ${REL1}` > ${.TARGET}\n"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:829
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot2]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot2]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:833
+#, fuzzy
 msgid ""
 "The mechanism for building [.filename]#boot2# is far more elaborate.  Let us "
 "point out the most relevant facts.  The dependency list is as follows:"
-msgstr ""
+msgstr "构建 [.filename]#boot2# 的机制复杂得多。这里指出其中最相关的事实。依赖列表如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:841
@@ -1740,18 +1806,19 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:843
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot2-more]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/Makefile# [[boot-boot1-make-boot2-more]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:846
+#, fuzzy
 msgid ""
 "Note that initially there is no header file [.filename]#boot2.h#, but its "
 "creation depends on [.filename]#boot1.out#, which we already have.  The rule "
 "for its creation is a bit terse, but the important thing is that the output, "
 "[.filename]#boot2.h#, is something like this:"
-msgstr ""
+msgstr "请注意，最初并不存在头文件 [.filename]#boot2.h#，但它的创建依赖于我们已经拥有的 [.filename]#boot1.out#。创建规则写得比较简略，但重要的是，输出文件 [.filename]#boot2.h# 的内容大致如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:850
@@ -1761,12 +1828,13 @@ msgstr "#define XREADORG 0x725\n"
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:852
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/boot2/boot2.h# [[boot-boot1-make-boot2h]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/boot2/boot2.h# [[boot-boot1-make-boot2h]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:858
+#, fuzzy
 msgid ""
 "Recall that [.filename]#boot1# was relocated (i.e., copied from `0x7c00` to "
 "`0x700`).  This relocation will now make sense, because as we will see, the "
@@ -1776,10 +1844,11 @@ msgid ""
 "the output of [.filename]#boot2.h#, is at location `0x725`.  Indeed, the BTX "
 "server uses the `xread` function from [.filename]#boot1#'s relocated code.  "
 "This function is now accessible from within the [.filename]#boot2# client."
-msgstr ""
+msgstr "请回想一下，[.filename]#boot1# 已经重定位（即从 `0x7c00` 复制到 `0x700`）。现在这种重定位就有意义了，因为我们将看到，BTX 服务器会回收一些内存，其中包括 [.filename]#boot1# 最初加载的位置。不过，BTX 服务器需要访问 [.filename]#boot1# 的 `xread` 函数；根据 [.filename]#boot2.h# 的输出，该函数位于 `0x725`。事实上，BTX 服务器使用的是 [.filename]#boot1# 重定位后代码中的 `xread` 函数。现在， [.filename]#boot2# 客户端可以访问这个函数。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:867
+#, fuzzy
 msgid ""
 "The next rule directs the linker to link various files ([.filename]#ashldi3."
 "o#, [.filename]#boot2.o# and [.filename]#sio.o#).  Note that the output "
@@ -1794,10 +1863,11 @@ msgid ""
 "boot2.bin is a _raw_ binary.  Now, note that a file [.filename]#boot2.ldr# "
 "is created as a 512-byte file full of zeros.  This space is reserved for the "
 "bsdlabel."
-msgstr ""
+msgstr "下一条规则指示链接器链接多个文件（[.filename]#ashldi3.o#、[.filename]#boot2.o# 和 [.filename]#sio.o#）。请注意，输出文件 [.filename]#boot2.out# 的链接执行地址为 `0x2000`（${ORG2}）。请回想一下，[.filename]#boot2# 将在 BTX 服务器设置的特殊用户段中以用户模式执行。此段从 `0xa000` 开始。另外还要记住，[.filename]#boot# 中的 [.filename]#boot2# 部分已复制到地址 `0xc000`，也就是用户段起始位置偏移 `0x2000` 处，因此将控制权交给 [.filename]#boot2# 时，它就能正常工作。接下来，通过去除符号和格式信息，从 [.filename]#boot2.out# 创建 [.filename]#boot2.bin#；boot2.bin 是一个__原始__二进制文件。现在请注意，文件 [.filename]#boot2.ldr# 被创建为一个全由零组成的 512 字节文件。这部分空间为 bsdlabel 预留。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:872
+#, fuzzy
 msgid ""
 "Now that we have files [.filename]#boot1#, [.filename]#boot2.bin# and [."
 "filename]#boot2.ldr#, only the BTX server is missing before creating the all-"
@@ -1807,10 +1877,11 @@ msgid ""
 "also compiled as a _raw_ binary, and that it is linked to execute at address "
 "`0x9000`.  The details can be found in [.filename]#stand/i386/btx/btx/"
 "Makefile#."
-msgstr ""
+msgstr "现在我们有了文件 [.filename]#boot1#、[.filename]#boot2.bin# 和 [.filename]#boot2.ldr#，在创建包含所有内容的 [.filename]#boot# 文件之前，只差 BTX 服务器了。BTX 服务器位于 [.filename]#stand/i386/btx/btx#；它有自己的 [.filename]#Makefile# 和一套构建规则。重要的是，它同样被编译为__原始__二进制文件，并且链接为在地址 `0x9000` 执行。详情请参见 [.filename]#stand/i386/btx/btx/Makefile#。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:879
+#, fuzzy
 msgid ""
 "Having the files that comprise the [.filename]#boot# program, the final step "
 "is to _merge_ them.  This is done by a special program called [."
@@ -1823,60 +1894,66 @@ msgid ""
 "sectors, or 8192 bytes, is what is actually written to the beginning of the "
 "FreeBSD slice during installation.  Let us now proceed to study the BTX "
 "server program."
-msgstr ""
+msgstr "组成 [.filename]#boot# 程序的文件都准备好后，最后一步就是将它们__合并__。这项工作由一个名为 [.filename]#btxld# 的专用程序完成（源代码位于 [.filename]#/usr/src/usr.sbin/btxld#）。传给该程序的一些参数包括输出文件名（[.filename]#boot#）、入口点（`0x2000`）和文件格式（原始二进制文件）。最后，这个工具将各个文件合并为 [.filename]#boot#，其中包含 [.filename]#boot1#、[.filename]#boot2#、`bsdlabel` 和 BTX 服务器。该文件恰好占用 16 个扇区，即 8192 字节；安装过程中，实际写入 FreeBSD 分区起始位置的就是这个文件。现在让我们继续研究 BTX 服务器程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:882
+#, fuzzy
 msgid ""
 "The BTX server prepares a simple environment and switches from 16-bit real "
 "mode to 32-bit protected mode, right before passing control to the client.  "
 "This includes initializing and updating the following data structures:"
-msgstr ""
+msgstr "BTX 服务器会准备一个简单的环境，并在将控制权交给客户端之前，从 16 位实模式切换到 32 位保护模式。这包括初始化和更新以下数据结构："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:885
+#, fuzzy
 msgid ""
 "Modifies the `Interrupt Vector Table (IVT)`.  The IVT provides exception and "
 "interrupt handlers for Real-Mode code."
-msgstr ""
+msgstr "修改 `Interrupt Vector Table (IVT)`。IVT 为实模式代码提供异常和中断处理程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:888
+#, fuzzy
 msgid ""
 "The `Interrupt Descriptor Table (IDT)` is created.  Entries are provided for "
 "processor exceptions, hardware interrupts, two system calls and V86 "
 "interface.  The IDT provides exception and interrupt handlers for Protected-"
 "Mode code."
-msgstr ""
+msgstr "创建 `Interrupt Descriptor Table (IDT)`。其中为处理器异常、硬件中断、两个系统调用和 V86 接口提供条目。IDT 为保护模式代码提供异常和中断处理程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:890
+#, fuzzy
 msgid ""
 "A `Task-State Segment (TSS)` is created.  This is necessary because the "
 "processor works in the _least_ privileged level when executing the client ([."
 "filename]#boot2#), but in the _most_ privileged level when executing the BTX "
 "server."
-msgstr ""
+msgstr "创建 `Task-State Segment (TSS)`。这是必要的，因为执行客户端（[.filename]#boot2#）时，处理器处于__最低__特权级；而执行 BTX 服务器时，处理器处于__最高__特权级。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:893
+#, fuzzy
 msgid ""
 "The GDT (Global Descriptor Table) is set up.  Entries (descriptors) are "
 "provided for supervisor code and data, user code and data, and real-mode "
 "code and data.  footnote:[Real-mode code and data are necessary when "
 "switching back to real mode from protected mode, as suggested by the Intel "
 "manuals.]"
-msgstr ""
+msgstr "设置 GDT（Global Descriptor Table，全局描述符表）。其中为监管程序代码和数据、用户代码和数据，以及实模式代码和数据提供条目（描述符）。footnote:[从保护模式切换回实模式时，需要实模式代码和数据，这一点在 Intel 手册中有所说明。]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:898
+#, fuzzy
 msgid ""
 "Let us now start studying the actual implementation.  Recall that [."
 "filename]#boot1# made a jump to address `0x9010`, the BTX server's entry "
 "point.  Before studying program execution there, note that the BTX server "
 "has a special header at address range `0x9000-0x900f`, right before its "
 "entry point.  This header is defined as follows:"
-msgstr ""
+msgstr "现在让我们开始研究具体实现。请回想一下，[.filename]#boot1# 跳转到了地址 `0x9010`，即 BTX 服务器的入口点。在研究此处的程序执行之前，请注意，BTX 服务器在地址范围 `0x9000-0x900f` 内、入口点之前有一个特殊头部。该头部定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:914
@@ -1912,12 +1989,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:916
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-header]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-header]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:921
+#, fuzzy
 msgid ""
 "Note the first two bytes are `0xeb` and `0xe`.  In the IA-32 architecture, "
 "these two bytes are interpreted as a relative jump past the header into the "
@@ -1925,12 +2003,13 @@ msgid ""
 "`0x9000`) instead of address `0x9010`.  Note that the last field in the BTX "
 "header is a pointer to the client's ([.filename]#boot2#) entry pointb2.  "
 "This field is patched at link time."
-msgstr ""
+msgstr "请注意，前两个字节是 `0xeb` 和 `0xe`。在 IA-32 架构中，这两个字节会被解释为相对跳转，跳过头部进入入口点，因此理论上 [.filename]#boot1# 可以跳转到此处（地址 `0x9000`），而不是地址 `0x9010`。请注意，BTX 头部的最后一个字段是指向客户端（[.filename]#boot2#）入口点b2 的指针。此字段会在链接时修补。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:923
+#, fuzzy
 msgid "Immediately following the header is the BTX server's entry point:"
-msgstr ""
+msgstr "紧接着头部的是 BTX 服务器的入口点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:937
@@ -1962,12 +2041,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:939
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-init]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-init]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:943
+#, fuzzy
 msgid ""
 "This code disables interrupts, sets up a working stack (starting at address "
 "`0x1800`) and clears the flags in the EFLAGS register.  Note that the "
@@ -1975,14 +2055,15 @@ msgid ""
 "places it in the EFLAGS register.  As the value actually popped is `2`, the "
 "EFLAGS register is effectively cleared (IA-32 requires that bit 2 of the "
 "EFLAGS register always be 1)."
-msgstr ""
+msgstr "这段代码会禁用中断、设置工作栈（从地址 `0x1800` 开始），并清除 EFLAGS 寄存器中的标志。请注意，`popfl` 指令会从栈中弹出一个双字（4 字节）并将其放入 EFLAGS 寄存器。由于实际弹出的值是 `2`，EFLAGS 寄存器实际上被清除了（IA-32 要求 EFLAGS 寄存器的第 2 位始终为 1）。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:946
+#, fuzzy
 msgid ""
 "Our next code block clears (sets to `0`) the memory range `0x5e00-0x8fff`.  "
 "This range is where the various data structures will be created:"
-msgstr ""
+msgstr "接下来的代码块会清除（设为 `0`）内存范围 `0x5e00-0x8fff`。各种数据结构将在此范围内创建："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:956
@@ -2006,21 +2087,23 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:958
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-clear-mem]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-clear-mem]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:961
+#, fuzzy
 msgid ""
 "Recall that [.filename]#boot1# was originally loaded to address `0x7c00`, "
 "so, with this memory initialization, that copy effectively disappeared.  "
 "However, also recall that [.filename]#boot1# was relocated to `0x700`, so "
 "_that_ copy is still in memory, and the BTX server will make use of it."
-msgstr ""
+msgstr "请回想一下，[.filename]#boot1# 最初加载到地址 `0x7c00`，因此经过此次内存初始化后，该副本实际上已消失。不过也请记住，[.filename]#boot1# 已重定位到 `0x700`，所以__那个__副本仍在内存中，BTX 服务器会使用它。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:969
+#, fuzzy
 msgid ""
 "Next, the real-mode IVT (Interrupt Vector Table is updated.  The IVT is an "
 "array of segment/offset pairs for exception and interrupt handlers.  The "
@@ -2034,7 +2117,7 @@ msgid ""
 "in 16-bit real mode, but not 32-bit protected mode.  Processor mode will be "
 "switched to 32-bit protected mode shortly.  However, the BTX server sets up "
 "a mechanism to effectively use the handlers provided by the BIOS:"
-msgstr ""
+msgstr "接下来，更新实模式 IVT（Interrupt Vector Table，中断向量表）。IVT 是一个由异常和中断处理程序的段/偏移对组成的数组。BIOS 通常将硬件中断映射到中断向量 `0x8` 至 `0xf` 和 `0x70` 至 `0x77`；但如后文所述，控制硬件中断实际映射的芯片 8259A 可编程中断控制器会被配置为将这些中断向量从 `0x8-0xf` 重新映射到 `0x20-0x27`，并从 `0x70-0x77` 重新映射到 `0x28-0x2f`。因此，系统为中断向量 `0x20-0x2f` 提供处理程序。之所以不直接使用 BIOS 提供的处理程序，是因为它们适用于 16 位实模式，而不适用于 32 位保护模式。处理器很快就会切换到 32 位保护模式。不过，BTX 服务器会设置一种机制，以便有效使用 BIOS 提供的处理程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:984
@@ -2068,12 +2151,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:986
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-ivt]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-ivt]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:991
+#, fuzzy
 msgid ""
 "The next block creates the IDT (Interrupt Descriptor Table).  The IDT is "
 "analogous, in protected mode, to the IVT in real mode.  That is, the IDT "
@@ -2082,7 +2166,7 @@ msgid ""
 "an array of segment/offset pairs, although the structure is somewhat more "
 "complex, because segments in protected mode are different than in real mode, "
 "and various protection mechanisms apply:"
-msgstr ""
+msgstr "下一个代码块创建 IDT（Interrupt Descriptor Table，中断描述符表）。在保护模式下，IDT 与实模式下的 IVT 类似。也就是说，IDT 描述了处理器在保护模式下执行时使用的各种异常和中断处理程序。本质上，它也由段/偏移对组成的数组构成，不过其结构更复杂，因为保护模式下的段与实模式下的段不同，并且适用各种保护机制："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1018
@@ -2140,12 +2224,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1020
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-idt]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-idt]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1028
+#, fuzzy
 msgid ""
 "Each entry in the `IDT` is 8 bytes long.  Besides the segment/offset "
 "information, they also describe the segment type, privilege level, and "
@@ -2165,10 +2250,11 @@ msgid ""
 "interrupts are protected from code executing in lesser privilege levels.  "
 "Hardware-generated interrupts and processor-generated exceptions are "
 "_always_ handled adequately, regardless of the actual privileges involved."
-msgstr ""
+msgstr "`IDT` 中的每个条目长 8 字节。除了段/偏移信息外，条目还描述段类型、特权级，以及该段是否存在于内存中。其构造方式如下：中断向量 `0` 至 `0xf`（异常）由函数 `intx00` 处理；中断向量 `0x10`（也是异常）由 `intx10` 处理；之后配置为从中断向量 `0x20` 到 `0x2f` 的硬件中断由函数 `intx20` 处理。最后，用于系统调用的中断向量 `0x30` 由 `intx30` 处理，而向量 `0x31` 和 `0x32` 由 `intx31` 处理。需要注意的是，只有中断向量 `0x30`、`0x31` 和 `0x32` 的描述符被赋予特权级 3，与 [.filename]#boot2# 客户端的特权级相同。这意味着客户端可以通过 `int` 指令执行软件生成的中断而不会失败（[.filename]#boot2# 就是通过这种方式使用 BTX 服务器提供的服务）。另外请注意，只有软件生成的中断会受到较低特权级代码的保护。无论涉及的实际特权级如何，硬件生成的中断和处理器生成的异常__始终__会得到妥善处理。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1033
+#, fuzzy
 msgid ""
 "The next step is to initialize the TSS (Task-State Segment).  The TSS is a "
 "hardware feature that helps the operating system or executive software "
@@ -2177,7 +2263,7 @@ msgid ""
 "multitasking facilities are used or different privilege levels are defined.  "
 "Since the [.filename]#boot2# client is executed in privilege level 3, but "
 "the BTX server runs in privilege level 0, a TSS must be defined:"
-msgstr ""
+msgstr "下一步是初始化 TSS（Task-State Segment，任务状态段）。TSS 是一种硬件功能，可帮助操作系统或执行软件通过进程抽象实现多任务处理。IA-32 架构规定，如果使用多任务处理功能或定义了不同的特权级，就__至少__必须创建并使用一个 TSS。由于 [.filename]#boot2# 客户端在特权级 3 下执行，而 BTX 服务器在特权级 0 下运行，因此必须定义一个 TSS："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1042
@@ -2199,12 +2285,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1044
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-tss]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-tss]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1048
+#, fuzzy
 msgid ""
 "Note that a value is given for the Privilege Level 0 stack pointer and stack "
 "segment in the TSS.  This is needed because, if an interrupt or exception is "
@@ -2213,14 +2300,15 @@ msgid ""
 "working stack is needed.  Finally, the I/O Map Base Address field of the TSS "
 "is given a value, which is a 16-bit offset from the beginning of the TSS to "
 "the I/O Permission Bitmap and the Interrupt Redirection Bitmap."
-msgstr ""
+msgstr "请注意，TSS 中为特权级 0 的栈指针和栈段指定了值。这是必要的，因为如果在特权级 3 下执行 [.filename]#boot2# 时收到中断或异常，处理器会自动切换到特权级 0，因此需要新的工作栈。最后，为 TSS 的 I/O Map Base Address 字段指定一个值；它是从 TSS 起始位置到 I/O 权限位图和中断重定向位图的 16 位偏移量。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1051
+#, fuzzy
 msgid ""
 "After the IDT and TSS are created, the processor is ready to switch to "
 "protected mode.  This is done in the next block:"
-msgstr ""
+msgstr "创建 IDT 和 TSS 后，处理器就可以切换到保护模式了。下一段代码会完成此操作："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1069
@@ -2260,12 +2348,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1071
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-prot]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-prot]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1084
+#, fuzzy
 msgid ""
 "First, a call is made to `setpic` to program the 8259A PIC (Programmable "
 "Interrupt Controller).  This chip is connected to multiple hardware "
@@ -2284,16 +2373,17 @@ msgid ""
 "Supervisor Data Segment is selected for the stack by assigning the segment "
 "selector SEL_SDATA to the `%ss` register.  This data segment also has a "
 "privilege level of `0`."
-msgstr ""
+msgstr "首先，调用 `setpic` 来配置 8259A PIC（可编程中断控制器）。该芯片连接多个硬件中断源。设备发出中断时，它会向处理器发送相应的中断向量。如前所述，可以自定义配置，将特定中断关联到特定中断向量。接下来，分别使用 `lidt` 和 `lgdt` 指令加载 IDTR（中断描述符表寄存器）和 GDTR（全局描述符表寄存器）。这些寄存器会加载 IDT 和 GDT 的基地址和界限地址。接下来的三条指令设置 `%cr0` 寄存器中的保护使能（PE）位，从而使处理器切换到 32 位保护模式。随后，使用段选择子 SEL_SCODE 执行一次长跳转到 `init.8`，该选择子选择监管程序代码段。完成此跳转后，处理器实际上处于 CPL 0，也就是最高特权级。最后，将段选择子 SEL_SDATA 赋给 `%ss` 寄存器，为栈选择监管程序数据段。该数据段的特权级也为 `0`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1086
+#, fuzzy
 msgid ""
 "Our last code block is responsible for loading the TR (Task Register) with "
 "the segment selector for the TSS we created earlier, and setting the User "
 "Mode environment before passing execution control to the [.filename]#boot2# "
 "client."
-msgstr ""
+msgstr "最后一个代码块负责将 TSS 的段选择子加载到 TR（任务寄存器），并在将执行控制权交给 [.filename]#boot2# 客户端之前设置用户模式环境。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1122
@@ -2366,12 +2456,13 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#stand/i386/btx/btx/btx.S# [[btx-end]]"
-msgstr ""
+msgstr "[.filename]#stand/i386/btx/btx/btx.S# [[btx-end]]"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1148
+#, fuzzy
 msgid ""
 "Note that the client's environment include a stack segment selector and "
 "stack pointer (registers `%ss` and `%esp`).  Indeed, once the TR is loaded "
@@ -2403,26 +2494,28 @@ msgid ""
 "register, does two more pops out of the stack.  These values go to the stack "
 "pointer (`%esp`) and the stack segment (`%ss`).  Now, execution continues at "
 "``boot0``'s entry point."
-msgstr ""
+msgstr "请注意，客户端环境包含一个栈段选择子和栈指针（寄存器 `%ss` 和 `%esp`）。实际上，用适当的栈段选择子加载 TR（指令 `ltr`）后，会计算栈指针，并将其与栈段选择子一起压入栈中。接下来，将值 `0x202` 压入栈中；控制权交给客户端时，EFLAGS 将获得此值。随后，将用户模式代码段选择子和客户端入口点压入栈中。请回想一下，该入口点会在链接时修补到 BTX 头部中。最后，将段寄存器 `%gs`、`%fs`、`%ds` 和 `%es` 的段选择子（存储在寄存器 `%ecx` 中）连同 `%edx` 中的值（`0xa000`）一起压入栈中。请记住压入栈中的各个值（它们很快就会被弹出）。接下来，也将其余通用寄存器的值压入栈中（注意，`loop` 会将值 `0` 压入栈中七次）。现在开始从栈中弹出值。首先，`popa` 指令会从栈中弹出最近压入的七个值，并按 `%edi`、`%esi`、`%ebp`、`%ebx`、`%edx`、`%ecx`、`%eax` 的顺序存入通用寄存器。然后，将压入栈中的各个段选择子弹出并存入相应的段寄存器。栈中还剩五个值；执行 `iret` 指令时会将它们弹出。该指令首先弹出从 BTX 头部压入的值。此值是指向 [.filename]#boot2# 入口点的指针，会被放入指令指针寄存器 `%eip`。接下来，弹出用户代码段的段选择子并复制到寄存器 `%cs`。请记住，该段的特权级为 3，也就是最低特权级。这意味着我们必须提供此特权级的栈值。因此，处理器除了继续弹出 EFLAGS 寄存器的值之外，还会再从栈中弹出两个值。这两个值分别写入栈指针（`%esp`）和栈段（`%ss`）。现在，执行会从 ``boot0`` 的入口点继续。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1152
+#, fuzzy
 msgid ""
 "It is important to note how the User Code Segment is defined.  This "
 "segment's _base address_ is set to `0xa000`.  This means that code memory "
 "addresses are _relative_ to address 0xa000; if code being executed is "
 "fetched from address `0x2000`, the _actual_ memory addressed is "
 "`0xa000+0x2000=0xc000`."
-msgstr ""
+msgstr "请务必注意用户代码段的定义方式。该段的__基地址__设为 `0xa000`。这意味着代码内存地址是相对于地址 0xa000 的；如果执行的代码从地址 `0x2000` 取出，则实际访问的内存地址为 `0xa000+0x2000=0xc000`。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "boot2 Stage"
-msgstr ""
+msgstr "boot2 阶段"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1161
+#, fuzzy
 msgid ""
 "`boot2` defines an important structure, `struct bootinfo`.  This structure "
 "is initialized by `boot2` and passed to the loader, and then further to the "
@@ -2430,7 +2523,7 @@ msgid ""
 "loader.  This structure, among other information, contains the kernel "
 "filename, BIOS harddisk geometry, BIOS drive number for boot device, "
 "physical memory available, `envp` pointer etc.  The definition for it is:"
-msgstr ""
+msgstr "`boot2` 定义了一个重要结构 `struct bootinfo`。该结构由 `boot2` 初始化并传递给加载器，再由加载器传递给内核。此结构中的一些节点由 `boot2` 设置，其余节点由加载器设置。该结构还包含内核文件名、BIOS 硬盘几何参数、启动设备的 BIOS 驱动器编号、可用物理内存、`envp` 指针等信息。其定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1186
@@ -2484,6 +2577,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1193
+#, fuzzy
 msgid ""
 "`boot2` enters into an infinite loop waiting for user input, then calls "
 "`load()`.  If the user does not press anything, the loop breaks by a "
@@ -2494,56 +2588,59 @@ msgid ""
 "header is prepended with [.filename]#a.out#'s `struct exec` structure.  "
 "`load()` scans the loader's ELF header, loading the content of [.filename]#/"
 "boot/loader# into memory, and passing the execution to the loader's entry:"
-msgstr ""
+msgstr "`boot2` 会进入无限循环等待用户输入，然后调用 `load()`。如果用户没有按下任何键，循环会在超时后结束，此时 `load()` 将加载默认文件（[.filename]#/boot/loader#）。函数 `ino_t lookup(char *filename)` 和 `int xfsread(ino_t inode, void *buf, size_t nbyte)` 用于将文件内容读入内存。[.filename]#/boot/loader# 是一个 ELF 二进制文件，但其 ELF 头部前面带有 [.filename]#a.out# 的 `struct exec` 结构。`load()` 会扫描加载器的 ELF 头部，将 [.filename]#/boot/loader# 的内容加载到内存中，并将执行权交给加载器的入口点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "stand/i386/boot2/boot2.c:\n"
 "    __exec((caddr_t)addr, RB_BOOTINFO | (opts & RBX_MASK),\n"
 "\t   MAKEBOOTDEV(dev_maj[dsk.type], dsk.slice, dsk.unit, dsk.part),\n"
 "\t   0, 0, 0, VTOP(&bootinfo));\n"
-msgstr ""
+msgstr "stand/i386/boot2/boot2.c:\n    __exec((caddr_t)addr, RB_BOOTINFO | (opts & RBX_MASK),\n\t   MAKEBOOTDEV(dev_maj[dsk.type], dsk.slice, dsk.unit, dsk.part),\n\t   0, 0, 0, VTOP(&bootinfo));\n"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "loader Stage"
-msgstr ""
+msgstr "loader 阶段"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1208
+#, fuzzy
 msgid ""
 "loader is a BTX client as well.  I will not describe it here in detail, "
 "there is a comprehensive man page written by Mike Smith, man:loader[8].  The "
 "underlying mechanisms and BTX were discussed above."
-msgstr ""
+msgstr "loader 也是一个 BTX 客户端。这里不详细介绍它；Mike Smith 编写了全面的手册页 man:loader[8]。上文已经讨论了其底层机制和 BTX。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1211
+#, fuzzy
 msgid ""
 "The main task for the loader is to boot the kernel.  When the kernel is "
 "loaded into memory, it is being called by the loader:"
-msgstr ""
+msgstr "loader 的主要任务是启动内核。内核加载到内存后，loader 会调用它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "stand/common/boot.c:\n"
 "    /* Call the exec handler from the loader matching the kernel */\n"
 "    file_formats[fp->f_loader]->l_exec(fp);\n"
-msgstr ""
+msgstr "stand/common/boot.c:\n    /* Call the exec handler from the loader matching the kernel */\n    file_formats[fp->f_loader]->l_exec(fp);\n"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kernel Initialization"
-msgstr ""
+msgstr "内核初始化"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1227
+#, fuzzy
 msgid ""
 "Let us take a look at the command that links the kernel.  This will help "
 "identify the exact location where the loader passes execution to the "
@@ -2551,20 +2648,21 @@ msgid ""
 "now excluded from [.filename]#sys/conf/Makefile.i386#.  The content that "
 "interests us can be found in [.filename]#/usr/obj/usr/src/i386.i386/sys/"
 "GENERIC/#."
-msgstr ""
+msgstr "让我们看看链接内核的命令。这有助于确定 loader 将执行权交给内核的确切位置，也就是内核的实际入口点。此命令现在已从 [.filename]#sys/conf/Makefile.i386# 中移除。我们关注的内容可以在 [.filename]#/usr/obj/usr/src/i386.i386/sys/GENERIC/# 中找到。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/obj/usr/src/i386.i386/sys/GENERIC/kernel.meta:\n"
 "ld -m elf_i386_fbsd -Bdynamic -T /usr/src/sys/conf/ldscript.i386 --build-id=sha1 --no-warn-mismatch \\\n"
 "--warn-common --export-dynamic  --dynamic-linker /red/herring -X -o kernel locore.o\n"
 "<lots of kernel .o files>\n"
-msgstr ""
+msgstr "/usr/obj/usr/src/i386.i386/sys/GENERIC/kernel.meta:\nld -m elf_i386_fbsd -Bdynamic -T /usr/src/sys/conf/ldscript.i386 --build-id=sha1 --no-warn-mismatch \\\n--warn-common --export-dynamic  --dynamic-linker /red/herring -X -o kernel locore.o\n<lots of kernel .o files>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1240
+#, fuzzy
 msgid ""
 "A few interesting things can be seen here.  First, the kernel is an ELF "
 "dynamically linked binary, but the dynamic linker for kernel is [.filename]#/"
@@ -2572,26 +2670,27 @@ msgid ""
 "the file [.filename]#sys/conf/ldscript.i386# gives an idea about what ld "
 "options are used when compiling a kernel.  Reading through the first few "
 "lines, the string"
-msgstr ""
+msgstr "这里可以看到一些有趣的内容。首先，内核是一个 ELF 动态链接二进制文件，但内核的动态链接器是 [.filename]#/red/herring#，这显然是一个伪造的文件。其次，查看文件 [.filename]#sys/conf/ldscript.i386#，可以了解编译内核时使用了哪些 ld 选项。阅读前几行，可以看到字符串"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/conf/ldscript.i386:\n"
 "ENTRY(btext)\n"
-msgstr ""
+msgstr "sys/conf/ldscript.i386:\nENTRY(btext)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1249
+#, fuzzy
 msgid ""
 "says that a kernel's entry point is the symbol `btext`.  This symbol is "
 "defined in [.filename]#locore.s#:"
-msgstr ""
+msgstr "这表示内核的入口点是符号 `btext`。该符号定义在 [.filename]#locore.s# 中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/locore.s:\n"
 "\t.text\n"
@@ -2601,28 +2700,29 @@ msgid ""
 " *\n"
 " */\n"
 "NON_GPROF_ENTRY(btext)\n"
-msgstr ""
+msgstr "sys/i386/i386/locore.s:\n\t.text\n/**********************************************************************\n *\n * This is where the bootblocks start us, set the ball rolling...\n *\n */\nNON_GPROF_ENTRY(btext)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1264
+#, fuzzy
 msgid ""
 "First, the register EFLAGS is set to a predefined value of 0x00000002.  Then "
 "all the segment registers are initialized:"
-msgstr ""
+msgstr "首先，将寄存器 EFLAGS 设置为预定义值 0x00000002。然后初始化所有段寄存器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/locore.s:\n"
 "/* Don't trust what the BIOS gives for eflags. */\n"
 "\tpushl\t$PSL_KERNEL\n"
 "\tpopfl\n"
-msgstr ""
+msgstr "sys/i386/i386/locore.s:\n/* Don't trust what the BIOS gives for eflags. */\n\tpushl\t$PSL_KERNEL\n\tpopfl\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/*\n"
 " * Don't trust what the BIOS gives for %fs and %gs.  Trust the bootstrap\n"
@@ -2631,47 +2731,49 @@ msgid ""
 "\tmov\t%ds, %ax\n"
 "\tmov\t%ax, %fs\n"
 "\tmov\t%ax, %gs\n"
-msgstr ""
+msgstr "/*\n * Don't trust what the BIOS gives for %fs and %gs.  Trust the bootstrap\n * to set %cs, %ds, %es and %ss.\n */\n\tmov\t%ds, %ax\n\tmov\t%ax, %fs\n\tmov\t%ax, %gs\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1283
+#, fuzzy
 msgid ""
 "btext calls the routines `recover_bootinfo()`, `identify_cpu()`, which are "
 "also defined in [.filename]#locore.s#.  Here is a description of what they "
 "do:"
-msgstr ""
+msgstr "btext 调用例程 `recover_bootinfo()` 和 `identify_cpu()`，它们也定义在 [.filename]#locore.s# 中。以下是它们功能的说明："
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`recover_bootinfo`"
-msgstr ""
+msgstr "`recover_bootinfo`"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "This routine parses the parameters to the kernel passed from the bootstrap.\n"
 "The kernel may have been booted in 3 ways: by the loader, described above, by the old disk boot blocks, or by the old diskless boot procedure.\n"
 "This function determines the booting method, and stores the `struct bootinfo` structure into the kernel memory."
-msgstr ""
+msgstr "此例程解析由引导程序传递给内核的参数。内核可以通过三种方式启动：通过上文所述的 loader、通过旧式磁盘引导块，或通过旧式无盘引导过程。此函数确定启动方式，并将 `struct bootinfo` 结构存储到内核内存中。"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`identify_cpu`"
-msgstr ""
+msgstr "`identify_cpu`"
 
 #. type: Table
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This function tries to find out what CPU it is running on, storing the value found in a variable `_cpu`."
-msgstr ""
+msgstr "此函数尝试确定当前运行的 CPU，并将找到的值存储在变量 `_cpu` 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1298
+#, fuzzy
 msgid "The next steps are enabling VME, if the CPU supports it:"
-msgstr ""
+msgstr "接下来的步骤是在 CPU 支持 VME 时启用它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1306
@@ -2691,8 +2793,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1309
+#, fuzzy
 msgid "Then, enabling paging:"
-msgstr ""
+msgstr "然后启用分页："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1319
@@ -2715,37 +2818,39 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1322
+#, fuzzy
 msgid ""
 "The next three lines of code are because the paging was set, so the jump is "
 "needed to continue the execution in virtualized address space:"
-msgstr ""
+msgstr "接下来的三行代码是因为分页已启用，所以需要跳转以便在虚拟化地址空间中继续执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1328
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/mpboot.s:\n"
 "\tpushl\t$mp_begin\t\t\t\t/* jump to high mem */\n"
 "\tret\n"
-msgstr ""
+msgstr "sys/i386/i386/mpboot.s:\n\tpushl\t$mp_begin\t\t\t\t/* jump to high mem */\n\tret\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/* now running relocated at KERNBASE where the system is linked to run */\n"
 "mp_begin:\t/* now running relocated at KERNBASE */\n"
-msgstr ""
+msgstr "/* now running relocated at KERNBASE where the system is linked to run */\nmp_begin:\t/* now running relocated at KERNBASE */\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1336
+#, fuzzy
 msgid ""
 "The function `init386()` is called with a pointer to the first free physical "
 "page, after that `mi_startup()`.  `init386` is an architecture dependent "
 "initialization function, and `mi_startup()` is an architecture independent "
 "one (the 'mi_' prefix stands for Machine Independent).  The kernel never "
 "returns from `mi_startup()`, and by calling it, the kernel finishes booting:"
-msgstr ""
+msgstr "函数 `init386()` 接收一个指向第一个空闲物理页的指针作为参数，随后调用 `mi_startup()`。`init386` 是依赖于体系结构的初始化函数，而 `mi_startup()` 是独立于体系结构的函数（前缀“mi_”表示 Machine Independent，即与机器无关）。内核不会从 `mi_startup()` 返回；调用它后，内核便完成启动："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1346
@@ -2768,12 +2873,13 @@ msgstr ""
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1348
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`init386()`"
-msgstr ""
+msgstr "`init386()`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1353
+#, fuzzy
 msgid ""
 "`init386()` is defined in [.filename]#sys/i386/i386/machdep.c# and performs "
 "low-level initialization specific to the i386 chip. The switch to protected "
@@ -2781,14 +2887,15 @@ msgid ""
 "task, in which the kernel continues to operate.  Before looking at the code, "
 "consider the tasks the processor must complete to initialize protected mode "
 "execution:"
-msgstr ""
+msgstr "`init386()` 定义在 [.filename]#sys/i386/i386/machdep.c# 中，执行 i386 芯片特有的底层初始化。切换到保护模式是由 loader 完成的。loader 创建了第一个任务，内核会在其中继续运行。在查看代码之前，请考虑处理器必须完成哪些任务才能初始化保护模式下的执行："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1355
+#, fuzzy
 msgid ""
 "Initialize the kernel tunable parameters, passed from the bootstrapping "
 "program."
-msgstr ""
+msgstr "初始化由引导程序传递的内核可调参数。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1356
@@ -2829,64 +2936,69 @@ msgstr "建立proc0(0号进程，即内核的进程)的pcb(进程控制块)。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1365
+#, fuzzy
 msgid ""
 "`init386()` initializes the tunable parameters passed from bootstrap by "
 "setting the environment pointer (envp) and calling `init_param1()`.  The "
 "envp pointer has been passed from loader in the `bootinfo` structure:"
-msgstr ""
+msgstr "`init386()` 通过设置环境指针（envp）并调用 `init_param1()`，来初始化从引导程序传递的可调参数。envp 指针由 loader 在 `bootinfo` 结构中传递："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/machdep.c:\n"
 "\t/* Init basic tunables, hz etc */\n"
 "\tinit_param1();\n"
-msgstr ""
+msgstr "sys/i386/i386/machdep.c:\n\t/* Init basic tunables, hz etc */\n\tinit_param1();\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1375
+#, fuzzy
 msgid ""
 "`init_param1()` is defined in [.filename]#sys/kern/subr_param.c#.  That file "
 "has a number of sysctls, and two functions, `init_param1()` and "
 "`init_param2()`, that are called from `init386()`:"
-msgstr ""
+msgstr "`init_param1()` 定义在 [.filename]#sys/kern/subr_param.c# 中。该文件包含多个 sysctl，以及两个由 `init386()` 调用的函数：`init_param1()` 和 `init_param2()`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/kern/subr_param.c:\n"
 "\thz = -1;\n"
 "\tTUNABLE_INT_FETCH(\"kern.hz\", &hz);\n"
 "\tif (hz == -1)\n"
 "\t\thz = vm_guest > VM_GUEST_NO ? HZ_VM : HZ;\n"
-msgstr ""
+msgstr "sys/kern/subr_param.c:\n\thz = -1;\n\tTUNABLE_INT_FETCH(\"kern.hz\", &hz);\n\tif (hz == -1)\n\t\thz = vm_guest > VM_GUEST_NO ? HZ_VM : HZ;\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1386
+#, fuzzy
 msgid ""
 "TUNABLE_<typename>_FETCH is used to fetch the value from the environment:"
-msgstr ""
+msgstr "TUNABLE_<typename>_FETCH 用于从环境中获取值："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/src/sys/sys/kernel.h:\n"
 "#define\tTUNABLE_INT_FETCH(path, var)\tgetenv_int((path), (var))\n"
-msgstr ""
+msgstr "/usr/src/sys/sys/kernel.h:\n#define\tTUNABLE_INT_FETCH(path, var)\tgetenv_int((path), (var))\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1395
+#, fuzzy
 msgid ""
 "Sysctl `kern.hz` is the system clock tick.  Additionally, these sysctls are "
 "set by `init_param1()`: `kern.maxswzone, kern.maxbcache, kern.maxtsiz, kern."
 "dfldsiz, kern.maxdsiz, kern.dflssiz, kern.maxssiz, kern.sgrowsiz`."
-msgstr ""
+msgstr "Sysctl `kern.hz` 是系统时钟节拍。此外，`init_param1()` 还会设置以下 sysctl：`kern.maxswzone, kern.maxbcache, kern.maxtsiz, kern.dfldsiz, kern.maxdsiz, kern.dflssiz, kern.maxssiz, kern.sgrowsiz`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1403
+#, fuzzy
 msgid ""
 "Then `init386()` prepares the Global Descriptors Table (GDT).  Every task on "
 "an x86 is running in its own virtual address space, and this space is "
@@ -2899,20 +3011,20 @@ msgid ""
 "such as CS, DS etc are the selectors, i.e., indexes, into GDT (to be more "
 "precise, an index is not a selector itself, but the INDEX field of a "
 "selector).  FreeBSD's GDT holds descriptors for 15 selectors per CPU:"
-msgstr ""
+msgstr "随后，`init386()` 准备全局描述符表（GDT）。x86 上的每个任务都在自己的虚拟地址空间中运行，该空间通过段：偏移量对寻址。例如，假设处理器将要执行的当前指令位于 CS:EIP，那么该指令的线性虚拟地址就是“代码段 CS 的虚拟地址” + EIP。为方便起见，段从虚拟地址 0 开始，到 4GB 边界结束。因此，在此示例中，该指令的线性虚拟地址就是 EIP 的值。CS、DS 等段寄存器是选择子，也就是 GDT 中的索引（更准确地说，索引本身并不是选择子，而是选择子的 INDEX 字段）。FreeBSD 的 GDT 为每个 CPU 保存 15 个选择子的描述符："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1409
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/machdep.c:\n"
 "union descriptor gdt0[NGDT];\t/* initial global descriptor table */\n"
 "union descriptor *gdt = gdt0;\t/* global descriptor table */\n"
-msgstr ""
+msgstr "sys/i386/i386/machdep.c:\nunion descriptor gdt0[NGDT];\t/* initial global descriptor table */\nunion descriptor *gdt = gdt0;\t/* global descriptor table */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/x86/include/segments.h:\n"
 "/*\n"
@@ -2938,19 +3050,21 @@ msgid ""
 "#define\tGBIOSARGS_SEL\t17\t/* BIOS interface (Arguments) */\n"
 "#define\tGNDIS_SEL\t18\t/* For the NDIS layer */\n"
 "#define\tNGDT\t\t19\n"
-msgstr ""
+msgstr "sys/x86/include/segments.h:\n/*\n * Entries in the Global Descriptor Table (GDT)\n */\n#define\tGNULL_SEL\t0\t/* Null Descriptor */\n#define\tGPRIV_SEL\t1\t/* SMP Per-Processor Private Data */\n#define\tGUFS_SEL\t2\t/* User %fs Descriptor (order critical: 1) */\n#define\tGUGS_SEL\t3\t/* User %gs Descriptor (order critical: 2) */\n#define\tGCODE_SEL\t4\t/* Kernel Code Descriptor (order critical: 1) */\n#define\tGDATA_SEL\t5\t/* Kernel Data Descriptor (order critical: 2) */\n#define\tGUCODE_SEL\t6\t/* User Code Descriptor (order critical: 3) */\n#define\tGUDATA_SEL\t7\t/* User Data Descriptor (order critical: 4) */\n#define\tGBIOSLOWMEM_SEL\t8\t/* BIOS low memory access (must be entry 8) */\n#define\tGPROC0_SEL\t9\t/* Task state process slot zero and up */\n#define\tGLDT_SEL\t10\t/* Default User LDT */\n#define\tGUSERLDT_SEL\t11\t/* User LDT */\n#define\tGPANIC_SEL\t12\t/* Task state to consider panic from */\n#define\tGBIOSCODE32_SEL\t13\t/* BIOS interface (32bit Code) */\n#define\tGBIOSCODE16_SEL\t14\t/* BIOS interface (16bit Code) */\n#define\tGBIOSDATA_SEL\t15\t/* BIOS interface (Data) */\n#define\tGBIOSUTIL_SEL\t16\t/* BIOS interface (Utility) */\n#define\tGBIOSARGS_SEL\t17\t/* BIOS interface (Arguments) */\n#define\tGNDIS_SEL\t18\t/* For the NDIS layer */\n#define\tNGDT\t\t19\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1438
+#, fuzzy
 msgid ""
 "Note that those #defines are not selectors themselves, but just a field "
 "INDEX of a selector, so they are exactly the indices of the GDT.  for "
 "example, an actual selector for the kernel code (GCODE_SEL) has the value "
 "0x20."
-msgstr ""
+msgstr "请注意，这些 #defines 本身并不是选择子，而只是选择子的 INDEX 字段，因此它们正是 GDT 的索引。例如，内核代码（GCODE_SEL）的实际选择子值为 0x20。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1446
+#, fuzzy
 msgid ""
 "The next step is to initialize the Interrupt Descriptor Table (IDT).  This "
 "table is referenced by the processor when a software or hardware interrupt "
@@ -2961,49 +3075,52 @@ msgid ""
 "will be the kernel's syscall gate.  The IDT may have a maximum of 256 "
 "(0x100) records.  The kernel allocates NIDT records for the IDT, where NIDT "
 "is the maximum (256):"
-msgstr ""
+msgstr "下一步是初始化中断描述符表（IDT）。当发生软件或硬件中断时，处理器会查找此表。例如，要进行系统调用，用户应用程序会发出 `INT 0x80` 指令。这是一个软件中断，因此处理器硬件会在 IDT 中查找索引为 0x80 的记录。该记录指向处理中断的例程；在此例中，它指向内核的系统调用门。IDT 最多可包含 256（0x100）条记录。内核为 IDT 分配 NIDT 条记录，其中 NIDT 是最大值（256）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1452
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/machdep.c:\n"
 "static struct gate_descriptor idt0[NIDT];\n"
 "struct gate_descriptor *idt = &idt0[0];\t/* interrupt descriptor table */\n"
-msgstr ""
+msgstr "sys/i386/i386/machdep.c:\nstatic struct gate_descriptor idt0[NIDT];\nstruct gate_descriptor *idt = &idt0[0];\t/* interrupt descriptor table */\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1456
+#, fuzzy
 msgid ""
 "For each interrupt, an appropriate handler is set.  The syscall gate for "
 "`INT 0x80` is set as well:"
-msgstr ""
+msgstr "为每个中断设置适当的处理程序。也会为 `INT 0x80` 设置系统调用门："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1462
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/machdep.c:\n"
 "\tsetidt(IDT_SYSCALL, &IDTVEC(int0x80_syscall),\n"
 "\t\t\tSDT_SYS386IGT, SEL_UPL, GSEL(GCODE_SEL, SEL_KPL));\n"
-msgstr ""
+msgstr "sys/i386/i386/machdep.c:\n\tsetidt(IDT_SYSCALL, &IDTVEC(int0x80_syscall),\n\t\t\tSDT_SYS386IGT, SEL_UPL, GSEL(GCODE_SEL, SEL_KPL));\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1465
+#, fuzzy
 msgid ""
 "So when a userland application issues the `INT 0x80` instruction, control "
 "will transfer to the function `_Xint0x80_syscall`, which is in the kernel "
 "code segment and will be executed with supervisor privileges."
-msgstr ""
+msgstr "因此，当用户空间应用程序发出 `INT 0x80` 指令时，控制权将转移到函数 `_Xint0x80_syscall`。该函数位于内核代码段中，并以超级用户权限执行。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1467
+#, fuzzy
 msgid "Console and DDB are then initialized:"
-msgstr ""
+msgstr "随后初始化控制台和 DDB："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1478
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/machdep.c:\n"
 "\tcninit();\n"
@@ -3013,26 +3130,28 @@ msgid ""
 "\tif (boothowto & RB_KDB)\n"
 "\t\tkdb_enter(KDB_WHY_BOOTFLAGS, \"Boot flags requested debugger\");\n"
 "#endif\n"
-msgstr ""
+msgstr "sys/i386/i386/machdep.c:\n\tcninit();\n/* skipped */\n  kdb_init();\n#ifdef KDB\n\tif (boothowto & RB_KDB)\n\t\tkdb_enter(KDB_WHY_BOOTFLAGS, \"Boot flags requested debugger\");\n#endif\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1481
+#, fuzzy
 msgid ""
 "The Task State Segment is another x86 protected mode structure, the TSS is "
 "used by the hardware to store task information when a task switch occurs."
-msgstr ""
+msgstr "任务状态段（TSS）是另一种 x86 保护模式结构；发生任务切换时，硬件会使用 TSS 存储任务信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1484
+#, fuzzy
 msgid ""
 "The Local Descriptors Table is used to reference userland code and data.  "
 "Several selectors are defined to point to the LDT, they are the system call "
 "gates and the user code and data selectors:"
-msgstr ""
+msgstr "局部描述符表用于引用用户空间代码和数据。有几个选择子定义为指向 LDT，它们是系统调用门以及用户代码和数据选择子："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1493
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/x86/include/segments.h:\n"
 "#define\tLSYS5CALLS_SEL\t0\t/* forced by intel BCS */\n"
@@ -3040,100 +3159,105 @@ msgid ""
 "#define\tLUCODE_SEL\t3\n"
 "#define\tLUDATA_SEL\t5\n"
 "#define\tNLDT\t\t(LUDATA_SEL + 1)\n"
-msgstr ""
+msgstr "sys/x86/include/segments.h:\n#define\tLSYS5CALLS_SEL\t0\t/* forced by intel BCS */\n#define\tLSYS5SIGR_SEL\t1\n#define\tLUCODE_SEL\t3\n#define\tLUDATA_SEL\t5\n#define\tNLDT\t\t(LUDATA_SEL + 1)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1498
+#, fuzzy
 msgid ""
 "Next, proc0's Process Control Block (`struct pcb`) structure is "
 "initialized.  proc0 is a `struct proc` structure that describes a kernel "
 "process.  It is always present while the kernel is running, therefore it is "
 "linked with thread0:"
-msgstr ""
+msgstr "接下来初始化 proc0 的进程控制块（`struct pcb`）结构。proc0 是描述内核进程的 `struct proc` 结构。内核运行期间它始终存在，因此与 thread0 关联："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/i386/i386/machdep.c:\n"
 "register_t\n"
 "init386(int first)\n"
 "{\n"
 "    /* ... skipped ... */\n"
-msgstr ""
+msgstr "sys/i386/i386/machdep.c:\nregister_t\ninit386(int first)\n{\n    /* ... skipped ... */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1510
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    proc_linkup0(&proc0, &thread0);\n"
 "    /* ... skipped ... */\n"
 "}\n"
-msgstr ""
+msgstr "    proc_linkup0(&proc0, &thread0);\n    /* ... skipped ... */\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1514
+#, fuzzy
 msgid ""
 "The structure `struct pcb` is a part of a proc structure.  It is defined in "
 "[.filename]#/usr/include/machine/pcb.h# and has a process's information "
 "specific to the i386 architecture, such as registers values."
-msgstr ""
+msgstr "结构 `struct pcb` 是 proc 结构的一部分。它定义在 [.filename]#/usr/include/machine/pcb.h# 中，包含进程特有的 i386 架构信息，例如寄存器值。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1515
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`mi_startup()`"
-msgstr ""
+msgstr "`mi_startup()`"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1518
+#, fuzzy
 msgid ""
 "This function performs a bubble sort of all the system initialization "
 "objects and then calls the entry of each object one by one:"
-msgstr ""
+msgstr "此函数对所有系统初始化对象进行冒泡排序，然后逐一调用每个对象的入口函数："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1523
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/kern/init_main.c:\n"
 "\tfor (sipp = sysinit; sipp < sysinit_end; sipp++) {\n"
-msgstr ""
+msgstr "sys/kern/init_main.c:\n\tfor (sipp = sysinit; sipp < sysinit_end; sipp++) {\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1525
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\t\t/* ... skipped ... */\n"
-msgstr ""
+msgstr "\t\t/* ... skipped ... */\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1530
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\t/* Call function */\n"
 "\t\t(*((*sipp)->func))((*sipp)->udata);\n"
 "\t\t/* ... skipped ... */\n"
 "\t}\n"
-msgstr ""
+msgstr "\t\t/* Call function */\n\t\t(*((*sipp)->func))((*sipp)->udata);\n\t\t/* ... skipped ... */\n\t}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1533
+#, fuzzy
 msgid ""
 "Although the sysinit framework is described in the extref:{developers-"
 "handbook}[Developers' Handbook], I will discuss the internals of it."
-msgstr ""
+msgstr "虽然 extref:{developers-handbook}[开发者手册] 中介绍了 sysinit 框架，但这里将讨论其内部实现。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1537
+#, fuzzy
 msgid ""
 "Every system initialization object (sysinit object) is created by calling a "
 "SYSINIT() macro.  Let us take as example an `announce` sysinit object.  This "
 "object prints the copyright message:"
-msgstr ""
+msgstr "每个系统初始化对象（sysinit 对象）都是通过调用 SYSINIT() 宏创建的。以 `announce` sysinit 对象为例。该对象会打印版权信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1548
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/kern/init_main.c:\n"
 "static void\n"
@@ -3143,71 +3267,75 @@ msgid ""
 "}\n"
 "/* ... skipped ... */\n"
 "SYSINIT(announce, SI_SUB_COPYRIGHT, SI_ORDER_FIRST, print_caddr_t, copyright);\n"
-msgstr ""
+msgstr "sys/kern/init_main.c:\nstatic void\nprint_caddr_t(void *data __unused)\n{\n\tprintf(\"%s\", (char *)data);\n}\n/* ... skipped ... */\nSYSINIT(announce, SI_SUB_COPYRIGHT, SI_ORDER_FIRST, print_caddr_t, copyright);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1552
+#, fuzzy
 msgid ""
 "The subsystem ID for this object is SI_SUB_COPYRIGHT (0x0800001).  So, the "
 "copyright message will be printed out first, just after the console "
 "initialization."
-msgstr ""
+msgstr "此对象的子系统 ID 为 SI_SUB_COPYRIGHT（0x0800001）。因此，版权信息会在控制台初始化后立即首先打印。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1556
+#, fuzzy
 msgid ""
 "Let us take a look at what exactly the macro `SYSINIT()` does.  It expands "
 "to a `C_SYSINIT()` macro.  The `C_SYSINIT()` macro then expands to a static "
 "`struct sysinit` structure declaration with another `DATA_SET` macro call:"
-msgstr ""
+msgstr "下面来看宏 `SYSINIT()` 的具体作用。它会展开为宏 `C_SYSINIT()`。随后，宏 `C_SYSINIT()` 会展开为一个静态 `struct sysinit` 结构声明，并调用另一个 `DATA_SET` 宏："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1564
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/include/sys/kernel.h:\n"
 "      #define C_SYSINIT(uniquifier, subsystem, order, func, ident) \\\n"
 "      static struct sysinit uniquifier ## _sys_init = { \\ subsystem, \\\n"
 "      order, \\ func, \\ (ident) \\ }; \\ DATA_WSET(sysinit_set,uniquifier ##\n"
 "      _sys_init);\n"
-msgstr ""
+msgstr "/usr/include/sys/kernel.h:\n      #define C_SYSINIT(uniquifier, subsystem, order, func, ident) \\\n      static struct sysinit uniquifier ## _sys_init = { \\ subsystem, \\\n      order, \\ func, \\ (ident) \\ }; \\ DATA_WSET(sysinit_set,uniquifier ##\n      _sys_init);\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "#define\tSYSINIT(uniquifier, subsystem, order, func, ident)\t\\\n"
 "\tC_SYSINIT(uniquifier, subsystem, order,\t\t\t\\\n"
 "\t(sysinit_cfunc_t)(sysinit_nfunc_t)func, (void *)(ident))\n"
-msgstr ""
+msgstr "#define\tSYSINIT(uniquifier, subsystem, order, func, ident)\t\\\n\tC_SYSINIT(uniquifier, subsystem, order,\t\t\t\\\n\t(sysinit_cfunc_t)(sysinit_nfunc_t)func, (void *)(ident))\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1571
+#, fuzzy
 msgid ""
 "The `DATA_SET()` macro expands to a `_MAKE_SET()`, and that macro is the "
 "point where all the sysinit magic is hidden:"
-msgstr ""
+msgstr "宏 `DATA_SET()` 会展开为 `_MAKE_SET()`；所有 sysinit 机制的奥秘就隐藏在这个宏中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1577
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/usr/include/linker_set.h:\n"
 "#define TEXT_SET(set, sym) _MAKE_SET(set, sym)\n"
 "#define DATA_SET(set, sym) _MAKE_SET(set, sym)\n"
-msgstr ""
+msgstr "/usr/include/linker_set.h:\n#define TEXT_SET(set, sym) _MAKE_SET(set, sym)\n#define DATA_SET(set, sym) _MAKE_SET(set, sym)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1581
+#, fuzzy
 msgid ""
 "After executing these macros, various sections were made in the kernel, "
 "including`set.sysinit_set`.  Running objdump on a kernel binary, you may "
 "notice the presence of such small sections:"
-msgstr ""
+msgstr "执行这些宏后，内核中会生成多个段，其中包括 `set.sysinit_set`。对内核二进制文件运行 objdump 时，可以看到这些较小段的存在："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1593
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% llvm-objdump -h /kernel\n"
 "Sections:\n"
@@ -3218,40 +3346,43 @@ msgid ""
 " 21 set_cons_set                       00000014 0182c768 DATA\n"
 " 33 set_scrndr_set                     00000024 0182c828 DATA\n"
 " 41 set_sysinit_set                    000014d8 018fabb0 DATA\n"
-msgstr ""
+msgstr "% llvm-objdump -h /kernel\nSections:\nIdx Name                               Size     VMA      Type\n 10 set_sysctl_set                     000021d4 01827078 DATA\n 16 set_kbddriver_set                  00000010 0182a4d0 DATA\n 20 set_scterm_set                     0000000c 0182c75c DATA\n 21 set_cons_set                       00000014 0182c768 DATA\n 33 set_scrndr_set                     00000024 0182c828 DATA\n 41 set_sysinit_set                    000014d8 018fabb0 DATA\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1597
+#, fuzzy
 msgid ""
 "This screen dump shows that the size of set.sysinit_set section is 0x14d8 "
 "bytes, so `0x14d8/sizeof(void *)` sysinit objects are compiled into the "
 "kernel.  The other sections such as `set.sysctl_set` represent other linker "
 "sets."
-msgstr ""
+msgstr "此屏幕输出表明，set.sysinit_set 段的大小为 0x14d8 字节，因此编译进内核的 sysinit 对象数量为 `0x14d8/sizeof(void *)`。其他段（例如 `set.sysctl_set`）代表其他链接器集合。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1599
+#, fuzzy
 msgid ""
 "By defining a variable of type `struct sysinit` the content of `set."
 "sysinit_set` section will be \"collected\" into that variable:"
-msgstr ""
+msgstr "通过定义一个 `struct sysinit` 类型的变量，`set.sysinit_set` 段的内容就会被“收集”到该变量中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1604
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/kern/init_main.c:\n"
 "  SET_DECLARE(sysinit_set, struct sysinit);\n"
-msgstr ""
+msgstr "sys/kern/init_main.c:\n  SET_DECLARE(sysinit_set, struct sysinit);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1607
+#, fuzzy
 msgid "The `struct sysinit` is defined as follows:"
-msgstr ""
+msgstr "`struct sysinit` 的定义如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1617
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/sys/kernel.h:\n"
 "  struct sysinit {\n"
@@ -3260,15 +3391,16 @@ msgid ""
 "\tsysinit_cfunc_t func;\t\t\t/* function\t\t*/\n"
 "\tconst void\t*udata;\t\t\t/* multiplexer/argument */\n"
 "};\n"
-msgstr ""
+msgstr "sys/sys/kernel.h:\n  struct sysinit {\n\tenum sysinit_sub_id\tsubsystem;\t/* subsystem identifier*/\n\tenum sysinit_elem_order\torder;\t\t/* init order within subsystem*/\n\tsysinit_cfunc_t func;\t\t\t/* function\t\t*/\n\tconst void\t*udata;\t\t\t/* multiplexer/argument */\n};\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1622
+#, fuzzy
 msgid ""
 "Returning to the `mi_startup()` discussion, it is must be clear now, how the "
 "sysinit objects are being organized.  The `mi_startup()` function sorts them "
 "and calls each.  The very last object is the system scheduler:"
-msgstr ""
+msgstr "回到对 `mi_startup()` 的讨论，现在应该已经清楚 sysinit 对象是如何组织的了。`mi_startup()` 函数会对它们排序并逐一调用。最后一个对象是系统调度程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1634
@@ -3296,24 +3428,26 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1639
+#, fuzzy
 msgid ""
 "The system scheduler sysinit object is defined in the file [.filename]#sys/"
 "vm/vm_glue.c#, and the entry point for that object is `scheduler()`.  That "
 "function is actually an infinite loop, and it represents a process with PID "
 "0, the swapper process.  The thread0 structure, mentioned before, is used to "
 "describe it."
-msgstr ""
+msgstr "系统调度器 sysinit 对象定义在文件 [.filename]#sys/vm/vm_glue.c# 中，该对象的入口点是 `scheduler()`。该函数实际上是一个无限循环，代表 PID 为 0 的进程，即交换进程。前面提到的 thread0 结构用于描述该进程。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1641
+#, fuzzy
 msgid ""
 "The first user process, called _init_, is created by the sysinit object "
 "`init`:"
-msgstr ""
+msgstr "第一个用户进程称为 __init__，由 sysinit 对象 `init` 创建："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1652
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/kern/init_main.c:\n"
 "static void\n"
@@ -3323,11 +3457,11 @@ msgid ""
 "\tstruct ucred *newcred, *oldcred;\n"
 "\tstruct thread *td;\n"
 "\tint error;\n"
-msgstr ""
+msgstr "sys/kern/init_main.c:\nstatic void\ncreate_init(const void *udata __unused)\n{\n\tstruct fork_req fr;\n\tstruct ucred *newcred, *oldcred;\n\tstruct thread *td;\n\tint error;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1685
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tbzero(&fr, sizeof(fr));\n"
 "\tfr.fr_flags = RFFDG | RFPROC | RFSTOPPED;\n"
@@ -3361,10 +3495,11 @@ msgid ""
 "\tcpu_fork_kthread_handler(FIRST_THREAD_IN_PROC(initproc), start_init, NULL);\n"
 "}\n"
 "SYSINIT(init, SI_SUB_CREATE_INIT, SI_ORDER_FIRST, create_init, NULL);\n"
-msgstr ""
+msgstr "\tbzero(&fr, sizeof(fr));\n\tfr.fr_flags = RFFDG | RFPROC | RFSTOPPED;\n\tfr.fr_procp = &initproc;\n\terror = fork1(&thread0, &fr);\n\tif (error)\n\t\tpanic(\"cannot fork init: %d\\n\", error);\n\tKASSERT(initproc->p_pid == 1, (\"create_init: initproc->p_pid != 1\"));\n\t/* divorce init's credentials from the kernel's */\n\tnewcred = crget();\n\tsx_xlock(&proctree_lock);\n\tPROC_LOCK(initproc);\n\tinitproc->p_flag |= P_SYSTEM | P_INMEM;\n\tinitproc->p_treeflag |= P_TREE_REAPER;\n\toldcred = initproc->p_ucred;\n\tcrcopy(newcred, oldcred);\n#ifdef MAC\n\tmac_cred_create_init(newcred);\n#endif\n#ifdef AUDIT\n\taudit_cred_proc1(newcred);\n#endif\n\tproc_set_cred(initproc, newcred);\n\ttd = FIRST_THREAD_IN_PROC(initproc);\n\tcrcowfree(td);\n\ttd->td_realucred = crcowget(initproc->p_ucred);\n\ttd->td_ucred = td->td_realucred;\n\tPROC_UNLOCK(initproc);\n\tsx_xunlock(&proctree_lock);\n\tcrfree(oldcred);\n\tcpu_fork_kthread_handler(FIRST_THREAD_IN_PROC(initproc), start_init, NULL);\n}\nSYSINIT(init, SI_SUB_CREATE_INIT, SI_ORDER_FIRST, create_init, NULL);\n"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1691
+#, fuzzy
 msgid ""
 "The function `create_init()` allocates a new process by calling `fork1()`, "
 "but does not mark it runnable.  When this new process is scheduled for "
@@ -3373,11 +3508,11 @@ msgid ""
 "the [.filename]#init# binary, probing [.filename]#/sbin/init# first, then [."
 "filename]#/sbin/oinit#, [.filename]#/sbin/init.bak#, and finally [."
 "filename]#/rescue/init#:"
-msgstr ""
+msgstr "函数 `create_init()` 通过调用 `fork1()` 分配一个新进程，但不会将其标记为可运行。当调度器调度这个新进程执行时，将调用 `start_init()`。该函数定义在 [.filename]#init_main.c# 中。它会尝试加载并执行 [.filename]#init# 二进制文件，依次探测 [.filename]#/sbin/init#、[.filename]#/sbin/oinit#、[.filename]#/sbin/init.bak#，最后探测 [.filename]#/rescue/init#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/boot/_index.adoc:1701
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "sys/kern/init_main.c:\n"
 "static char init_path[MAXPATHLEN] =\n"
@@ -3386,4 +3521,4 @@ msgid ""
 "#else\n"
 "    \"/sbin/init:/sbin/oinit:/sbin/init.bak:/rescue/init\";\n"
 "#endif\n"
-msgstr ""
+msgstr "sys/kern/init_main.c:\nstatic char init_path[MAXPATHLEN] =\n#ifdef\tINIT_PATH\n    __XSTRING(INIT_PATH);\n#else\n    \"/sbin/init:/sbin/oinit:/sbin/init.bak:/rescue/init\";\n#endif\n"

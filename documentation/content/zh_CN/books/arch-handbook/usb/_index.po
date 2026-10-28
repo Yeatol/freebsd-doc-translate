@@ -27,9 +27,9 @@ msgstr "USB设备"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 13. USB Devices"
-msgstr ""
+msgstr "第 13 章 USB 设备"
 
 #. type: Title =
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:14
@@ -148,33 +148,37 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:67
+#, fuzzy
 msgid ""
 "USB 2.0 Specification (http://www.usb.org/developers/docs/usb20_docs/[http://"
 "www.usb.org/developers/docs/usb20_docs/])"
-msgstr ""
+msgstr "USB 2.0 规范（ link:http://www.usb.org/developers/docs/usb20_docs/[http://www.usb.org/developers/docs/usb20_docs/]）"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:68
+#, fuzzy
 msgid ""
 "Universal Host Controller Interface (UHCI) Specification (link:ftp://ftp."
 "netbsd.org/pub/NetBSD/misc/blymn/uhci11d.pdf[ftp://ftp.netbsd.org/pub/NetBSD/"
 "misc/blymn/uhci11d.pdf])"
-msgstr ""
+msgstr "通用主机控制器接口（UHCI）规范（link:ftp://ftp.netbsd.org/pub/NetBSD/misc/blymn/uhci11d.pdf[ftp://ftp.netbsd.org/pub/NetBSD/misc/blymn/uhci11d.pdf]）"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:69
+#, fuzzy
 msgid ""
 "Open Host Controller Interface (OHCI) Specification(link:ftp://ftp.compaq."
 "com/pub/supportinformation/papers/hcir1_0a.pdf[ftp://ftp.compaq.com/pub/"
 "supportinformation/papers/hcir1_0a.pdf])"
-msgstr ""
+msgstr "开放主机控制器接口（OHCI）规范(link:ftp://ftp.compaq.com/pub/supportinformation/papers/hcir1_0a.pdf[ftp://ftp.compaq.com/pub/supportinformation/papers/hcir1_0a.pdf])"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:70
+#, fuzzy
 msgid ""
 "Developer section of USB home page (http://www.usb.org/developers/[http://"
 "www.usb.org/developers/])"
-msgstr ""
+msgstr "USB 主页的开发者专区（ link:http://www.usb.org/developers/[http://www.usb.org/developers/]）"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:71
@@ -409,8 +413,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:99
+#, fuzzy
 msgid "Refer to the UHCI Specification for a more elaborate description."
-msgstr ""
+msgstr "更详细的说明请参阅 UHCI 规范。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:100
@@ -951,13 +956,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:176
+#, fuzzy
 msgid ""
 "Example: Firmware download Many devices that have been developed are based "
 "on a general purpose processor with an additional USB core added to it. "
 "Since the development of drivers and firmware for USB devices is still very "
 "new, many devices require the downloading of the firmware after they have "
 "been connected."
-msgstr ""
+msgstr "示例：固件下载。许多已开发的设备都基于通用处理器，并额外集成了 USB 核心。由于 USB 设备驱动程序和固件的开发仍处于起步阶段，许多设备连接后都需要下载固件。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/usb/_index.adoc:178

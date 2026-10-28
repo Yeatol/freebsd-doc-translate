@@ -17,328 +17,351 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Assistive technologies for low vision"
-msgstr ""
+msgstr "低视力辅助技术"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Vision"
-msgstr ""
+msgstr "第二部分：视觉"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 4. Low Vision"
-msgstr ""
+msgstr "第 4 章：低视力"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Low Vision"
-msgstr ""
+msgstr "低视力"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:55
+#, fuzzy
 msgid ""
 "This chapter outlines accessibility features available in graphical desktop "
 "environments designed for users with low vision, such as virtual magnifiers, "
 "easy-to-read fonts, and screen scaling."
-msgstr ""
+msgstr "本章概述了为低视力用户设计的图形桌面环境中提供的无障碍功能，例如虚拟放大镜、易读字体和屏幕缩放。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:57
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Desktop Size"
-msgstr ""
+msgstr "桌面尺寸"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:61
+#, fuzzy
 msgid ""
 "Graphical environments allow users to adjust the desktop display size, a "
 "feature commonly known as screen scaling or HiDPI scaling.  The goal is to "
 "enlarge desktop elements such as icons, text, and windows to improve "
 "visibility and accessibility."
-msgstr ""
+msgstr "图形环境允许用户调整桌面的显示尺寸，此功能通常称为屏幕缩放或 HiDPI 缩放。其目的是放大图标、文本和窗口等桌面元素，以提高可见性和无障碍性。"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:63
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:109
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:344
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "KDE Plasma"
-msgstr ""
+msgstr "KDE Plasma"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:66
+#, fuzzy
 msgid "Open the `_Display Configuration_` module:"
-msgstr ""
+msgstr "打开 __Display Configuration__ 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_kscreen\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_kscreen\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:74
+#, fuzzy
 msgid ""
 "Select the scaling via the `_Global Scale_` bar.  The change will take "
 "effect after a KDE Plasma restart."
-msgstr ""
+msgstr "通过 __Global Scale__ 栏选择缩放比例。重启 KDE Plasma 后，更改才会生效。"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:76
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:126
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:363
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:416
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "XFCE"
-msgstr ""
+msgstr "XFCE"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:79
+#, fuzzy
 msgid ""
 "To set a custom scaling factor, for example 4, run the following command:"
-msgstr ""
+msgstr "要设置自定义缩放比例（例如 4），请运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s 4\n"
-msgstr ""
+msgstr "% xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s 4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:88
+#, fuzzy
 msgid ""
 "Alternatively, HiDPI scaling can be enabled with a fixed 2x factor using the "
 "graphical interface.  This option is available in the `_Appearance_` dialog, "
 "under the `_Settings_` tab as `_Window Scaling_`.  To open the "
 "`_Appearance_` dialog, execute:"
-msgstr ""
+msgstr "或者，也可以通过图形界面启用固定为 2 倍的 HiDPI 缩放。此选项位于 __Appearance__ 对话框的 __Settings__ 选项卡下，名称为 __Window Scaling__。要打开 __Appearance__ 对话框，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:92
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfce4-appearance-settings\n"
-msgstr ""
+msgstr "% xfce4-appearance-settings\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Font"
-msgstr ""
+msgstr "字体"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:100
+#, fuzzy
 msgid ""
 "The package:x11-fonts/atkinson-hyperlegible[] provides the _atkinson-"
 "hyperlegible_ font.  It is designed for good readability, the letter shapes "
 "aim to increase character recognition.  To install, execute:"
-msgstr ""
+msgstr "package:x11-fonts/atkinson-hyperlegible[] 软件包提供 _atkinson-hyperlegible_ 字体。该字体旨在提高可读性，其字形设计力求提升字符辨识度。要安装它，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install atkinson-hyperlegible\n"
-msgstr ""
+msgstr "# pkg install atkinson-hyperlegible\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:107
+#, fuzzy
 msgid ""
 "The remainder of this section describes how to set up fonts in various "
 "graphical environments using _atkinson-hyperlegible_ as an example."
-msgstr ""
+msgstr "本节其余部分将以 _atkinson-hyperlegible_ 为例，介绍如何在各种图形环境中设置字体。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:113
+#, fuzzy
 msgid ""
 "KDE allows selecting a font and its size via the `_Fonts_` module.  Run:"
-msgstr ""
+msgstr "KDE 允许通过 __Fonts__ 模块选择字体及其大小。运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_fonts\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_fonts\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:121
+#, fuzzy
 msgid ""
 "Click on the Adjust `_All Fonts..._` button to select the font and its size "
 "for all graphical elements.  Alternatively, you can choose the font and size "
 "for individual elements using the forms below."
-msgstr ""
+msgstr "单击 Adjust __All Fonts...__ 按钮，为所有图形元素选择字体及其大小。或者，也可以使用下方的表单为各个元素分别选择字体和大小。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:124
+#, fuzzy
 msgid ""
 "At the bottom of the window, you can also select options such as `_Anti-"
 "Aliasing_`, `_Sub-pixel Rendering_`, `_Hinting_`, and `_Force Font DPI_`.  "
 "Each option has an icon on the right to open a help dialog."
-msgstr ""
+msgstr "在窗口底部，还可以选择 __Anti-Aliasing__、__Sub-pixel Rendering__、__Hinting__ 和 __Force Font DPI__ 等选项。每个选项右侧都有一个图标，单击即可打开帮助对话框。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:129
+#, fuzzy
 msgid ""
 "XFCE allows you to select the font and size for window titles and content "
 "text, as well as the font size for icon labels."
-msgstr ""
+msgstr "XFCE 允许为窗口标题和内容文本选择字体及大小，也允许设置图标标签的字体大小。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% xfconf-query -c xfwm4 -p /general/title_font -s \"Atkinson Hyperlegible 15\" <1>\n"
 "% xfconf-query -c xsettings -p /Gtk/FontName -s \"Atkinson Hyperlegible 15\" <2>\n"
 "% xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s \"Atkinson Hyperlegible 15\" <3>\n"
 "% xfconf-query -c xfce4-desktop -p /desktop-icons/use-custom-font-size -s true <4>\n"
 "% xfconf-query -c xfce4-desktop -p /desktop-icons/font-size -s 15.0 <5>\n"
-msgstr ""
+msgstr "% xfconf-query -c xfwm4 -p /general/title_font -s \"Atkinson Hyperlegible 15\" <1>\n% xfconf-query -c xsettings -p /Gtk/FontName -s \"Atkinson Hyperlegible 15\" <2>\n% xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s \"Atkinson Hyperlegible 15\" <3>\n% xfconf-query -c xfce4-desktop -p /desktop-icons/use-custom-font-size -s true <4>\n% xfconf-query -c xfce4-desktop -p /desktop-icons/font-size -s 15.0 <5>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:140
+#, fuzzy
 msgid "Set the window title font to _Atkinson Hyperlegible_, size 15."
-msgstr ""
+msgstr "将窗口标题字体设为 _Atkinson Hyperlegible_，大小为 15。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:141
+#, fuzzy
 msgid "Set the window content font to _Atkinson Hyperlegible_, size 15."
-msgstr ""
+msgstr "将窗口内容字体设为 _Atkinson Hyperlegible_，大小为 15。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:142
+#, fuzzy
 msgid ""
 "Set the monospace font within windows to _Atkinson Hyperlegible_, size 15."
-msgstr ""
+msgstr "将窗口内的等宽字体设为 _Atkinson Hyperlegible_，大小为 15。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:143
+#, fuzzy
 msgid "Enable custom font sizing for icons."
-msgstr ""
+msgstr "为图标启用自定义字体大小。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:144
+#, fuzzy
 msgid "Set the icon font size to 15.0."
-msgstr ""
+msgstr "将图标字体大小设为 15.0。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:146
+#, fuzzy
 msgid ""
 "Alternatively, you can configure the same settings using the graphical XFCE "
 "configuration dialogs."
-msgstr ""
+msgstr "或者，也可以使用 XFCE 图形配置对话框设置相同选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:148
+#, fuzzy
 msgid ""
 "To select the font for window titles, open the `_Window Manager_` dialog:"
-msgstr ""
+msgstr "要为窗口标题选择字体，请打开 __Window Manager__ 对话框："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfwm4-settings\n"
-msgstr ""
+msgstr "% xfwm4-settings\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:155
+#, fuzzy
 msgid ""
 "To choose the font used inside windows, open the `_Appearance_` dialog and "
 "go to the `_Fonts_` tab:"
-msgstr ""
+msgstr "要选择窗口内使用的字体，请打开 __Appearance__ 对话框并转到 __Fonts__ 选项卡："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:165
+#, fuzzy
 msgid ""
 "In the Fonts tab, you can also adjust options such as `_anti-aliasing_`, "
 "`_Hinting_`, `_Sub-pixel order_`, and `_Custom DPI_`.  For more details, see "
 "the https://docs.xfce.org/xfce/xfce4-settings/appearance#fonts[XFCE "
 "documentation]."
-msgstr ""
+msgstr "在 Fonts 选项卡中，还可以调整 __anti-aliasing__、__Hinting__、__Sub-pixel order__ 和 __Custom DPI__ 等选项。详情请参阅 link:https://docs.xfce.org/xfce/xfce4-settings/appearance#fonts[XFCE 文档]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:168
+#, fuzzy
 msgid ""
 "To set the font size for icons, open the `_Desktop_` dialog and go to the "
 "`_Desktop Icons_` tab where you can adjust the icon font size:"
-msgstr ""
+msgstr "要设置图标的字体大小，请打开 __Desktop__ 对话框并转到 __Desktop Icons__ 选项卡，然后即可调整图标字体大小："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfdesktop-settings\n"
-msgstr ""
+msgstr "% xfdesktop-settings\n"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Magnify"
-msgstr ""
+msgstr "放大"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:180
+#, fuzzy
 msgid ""
 "This section describes various utilities that magnify portions of the "
 "screen, acting as virtual magnifying lenses.  Some tools continuously "
 "enlarge the area beneath the mouse cursor, while others do not.  Certain "
 "utilities automatically move the magnified window to follow the cursor, "
 "whereas others keep it fixed in place."
-msgstr ""
+msgstr "本节介绍了多种用于放大屏幕局部区域、充当虚拟放大镜的工具。有些工具会持续放大鼠标光标下方的区域，有些则不会。有些工具会自动移动放大窗口以跟随光标，有些则将窗口固定在原处。"
 
 #. type: Block title
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Screen magnifier utilities."
-msgstr ""
+msgstr "屏幕放大工具。"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Auto Update"
-msgstr ""
+msgstr "自动更新"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Auto Move Lens"
-msgstr ""
+msgstr "放大镜自动移动"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Package"
-msgstr ""
+msgstr "软件包"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:187
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "lupe"
-msgstr ""
+msgstr "lupe"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:188
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:193
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:189
@@ -348,466 +371,507 @@ msgstr ""
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:204
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:208
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/lupe[]"
-msgstr ""
+msgstr "package:x11/lupe[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:192
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kmag"
-msgstr ""
+msgstr "kmag"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:accessibility/kmag[]"
-msgstr ""
+msgstr "package:accessibility/kmag[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:197
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xlupe"
-msgstr ""
+msgstr "xlupe"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/xlupe[]"
-msgstr ""
+msgstr "package:x11/xlupe[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:202
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xmag"
-msgstr ""
+msgstr "xmag"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/xmag[]"
-msgstr ""
+msgstr "package:x11/xmag[]"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:207
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "xzoom"
-msgstr ""
+msgstr "xzoom"
 
 #. type: Table
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/xzoom[]"
-msgstr ""
+msgstr "package:x11/xzoom[]"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:214
+#, fuzzy
 msgid ""
 "The rest of this section details the steps to install, configure, and launch "
 "the utilities."
-msgstr ""
+msgstr "本节其余部分将详细介绍如何安装、配置和启动这些工具。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:220
+#, fuzzy
 msgid ""
 "The man:lupe[1] utility is a screen magnifier for the X Window System that "
 "updates the magnified area in real time.  To install it, run:"
-msgstr ""
+msgstr "man:lupe[1] 工具是适用于 X Window System 的屏幕放大工具，可实时更新放大区域。要安装它，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install lupe\n"
-msgstr ""
+msgstr "# pkg install lupe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:228
+#, fuzzy
 msgid ""
 "By default, lupe magnifies the screen content beneath the mouse pointer "
 "within a circular area (25×25 pixels) displayed at the center of the "
 "screen.  To start lupe, run:"
-msgstr ""
+msgstr "默认情况下，lupe 会放大鼠标指针下方的屏幕内容，并在屏幕中央的圆形区域（25×25 像素）中显示。要启动 lupe，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% lupe\n"
-msgstr ""
+msgstr "% lupe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:235
+#, fuzzy
 msgid "To exit lupe, press the `q` key."
-msgstr ""
+msgstr "要退出 lupe，请按 `q` 键。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:240
+#, fuzzy
 msgid ""
 "Start lupe with the `-noshape` option to display the magnified area in a "
 "separate, movable window.  Without this option, the magnifier is locked to "
 "the center of the screen."
-msgstr ""
+msgstr "使用 `-noshape` 选项启动 lupe，可在独立且可移动的窗口中显示放大区域。不使用此选项时，放大镜会固定在屏幕中央。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:247
+#, fuzzy
 msgid ""
 "The man:kmag[1] utility provides a screen magnifier that displays a zoomed "
 "view of the area under the mouse cursor in a dedicated window.  The "
 "magnifier window includes a menu with various options and settings for "
 "customization."
-msgstr ""
+msgstr "man:kmag[1] 工具提供屏幕放大功能，可在专用窗口中显示鼠标光标下方区域的放大视图。放大镜窗口包含一个菜单，其中提供了各种自定义选项和设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:249
+#, fuzzy
 msgid "To install kmag, run:"
-msgstr ""
+msgstr "要安装 kmag，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install kmag\n"
-msgstr ""
+msgstr "# pkg install kmag\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:256
+#, fuzzy
 msgid "To launch kmag, execute:"
-msgstr ""
+msgstr "要启动 kmag，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kmag\n"
-msgstr ""
+msgstr "% kmag\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:267
+#, fuzzy
 msgid ""
 "The package:x11/xlupe[] utility is a screen magnifier for the X Window "
 "System that updates the magnified view in real time.  To install it, run:"
-msgstr ""
+msgstr "package:x11/xlupe[] 工具是适用于 X Window System 的屏幕放大工具，可实时更新放大视图。要安装它，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xlupe\n"
-msgstr ""
+msgstr "# pkg install xlupe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:274
+#, fuzzy
 msgid "To launch xlupe, execute:"
-msgstr ""
+msgstr "要启动 xlupe，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xlupe\n"
-msgstr ""
+msgstr "% xlupe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:281
+#, fuzzy
 msgid ""
 "The utility does not include a manual page, but it starts in a graphical "
 "window with buttons that allow you to configure its options interactively."
-msgstr ""
+msgstr "该工具没有手册页，但启动后会显示一个图形窗口，其中的按钮可用于交互式配置选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:287
+#, fuzzy
 msgid ""
 "The man:xmag[1] utility is a basic screen magnifier for the X Window "
 "System.  Unlike other magnifiers, it does not update the magnified area in "
 "real time."
-msgstr ""
+msgstr "man:xmag[1] 工具是适用于 X Window System 的基础屏幕放大工具。与其他放大工具不同，它不会实时更新放大区域。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:289
+#, fuzzy
 msgid "To install it, run:"
-msgstr ""
+msgstr "要安装它，请运行："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:291
+#, fuzzy
 msgid "To install, execute:"
-msgstr ""
+msgstr "要安装，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xmag\n"
-msgstr ""
+msgstr "# pkg install xmag\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:298
+#, fuzzy
 msgid "To launch xmag, execute:"
-msgstr ""
+msgstr "要启动 xmag，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mag\n"
-msgstr ""
+msgstr "% mag\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:309
+#, fuzzy
 msgid ""
 "xmag does not display a magnified area immediately upon launch.  Click "
 "anywhere on the screen with the left mouse button to select a region, and "
 "xmag will open a window showing a magnified view of that area.  The "
 "application window includes a few buttons offering limited functionality."
-msgstr ""
+msgstr "xmag 启动后不会立即显示放大区域。单击屏幕任意位置以选取区域，xmag 随即会打开一个窗口，显示该区域的放大视图。应用程序窗口中有几个按钮，提供有限的功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:316
+#, fuzzy
 msgid ""
 "The man:xzoom[1] utility is a screen magnifier for the X Window System that "
 "updates the magnified view in real time.  To install it, run:"
-msgstr ""
+msgstr "man:xzoom[1] 工具是适用于 X Window System 的屏幕放大工具，可实时更新放大视图。要安装它，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xzoom\n"
-msgstr ""
+msgstr "# pkg install xzoom\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:323
+#, fuzzy
 msgid "To launch xzoom, execute:"
-msgstr ""
+msgstr "要启动 xzoom，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xzoom\n"
-msgstr ""
+msgstr "% xzoom\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:333
+#, fuzzy
 msgid ""
 "Unlike other magnifiers, xzoom does not automatically follow the mouse "
 "cursor or magnify the area beneath it in its own window.  Interaction is "
 "keyboard-driven, refer to man:xzoom[1] for available commands and usage "
 "details."
-msgstr ""
+msgstr "与其他放大工具不同，xzoom 不会自动跟随鼠标光标，也不会在自身窗口中放大光标下方的区域。它通过键盘操作，命令和用法详情请参阅 man:xzoom[1]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mouse"
-msgstr ""
+msgstr "鼠标"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appearance"
-msgstr ""
+msgstr "外观"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:342
+#, fuzzy
 msgid ""
 "Some desktop environments allow you to change the size, color, and other "
 "graphical properties of the mouse cursor."
-msgstr ""
+msgstr "某些桌面环境允许更改鼠标光标的大小、颜色和其他图形属性。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:348
+#, fuzzy
 msgid ""
 "KDE Plasma provides the `_Cursors_` module to select the mouse cursor theme "
 "and size.  To launch it, run:"
-msgstr ""
+msgstr "KDE Plasma 提供 __Cursors__ 模块，可用于选择鼠标光标主题和大小。要启动该模块，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_cursortheme\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_cursortheme\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:357
+#, fuzzy
 msgid ""
 "Select an installed cursor theme in the window.  There is a `_Size_` drop-"
 "down menu in the top left corner to choose the mouse cursor size, available "
 "sizes depend on the selected theme."
-msgstr ""
+msgstr "在窗口中选择已安装的光标主题。左上角有一个 __Size__ 下拉菜单，可用于选择鼠标光标大小；可选大小取决于所选主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:361
+#, fuzzy
 msgid ""
 "Click the `_Get New..._` icon in the top right corner to install a new "
 "theme.  You can install new themes from the new window.  As a suggestion, "
 "search for `_Large Mouse Cursors_`, a black and white high contrast theme."
-msgstr ""
+msgstr "单击右上角的 __Get New...__ 图标可安装新主题。可以在新窗口中安装主题。建议搜索 __Large Mouse Cursors__，这是一个黑白高对比度主题。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:367
+#, fuzzy
 msgid ""
 "XFCE allows you to set the size and color of the mouse pointer via `_Mouse "
 "and Touchpad_` dialog.  To run the dialog start:"
-msgstr ""
+msgstr "XFCE 允许通过 __Mouse and Touchpad__ 对话框设置鼠标指针的大小和颜色。要打开该对话框，请启动："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfce4-mouse-settings\n"
-msgstr ""
+msgstr "% xfce4-mouse-settings\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:374
+#, fuzzy
 msgid "Then click on the `_Theme_` tab to select a size and a style."
-msgstr ""
+msgstr "然后点击 __主题__ 选项卡，选择大小和样式。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:378
+#, fuzzy
 msgid ""
 "Some themes, included the _Default_, do not support cursor size "
 "customization."
-msgstr ""
+msgstr "某些主题（包括 __默认__ 主题）不支持自定义光标大小。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:382
+#, fuzzy
 msgid ""
 "Alternatively, you can achieve the same result via the `xfconf-query` "
 "command.  The following example sets the current theme cursor to size 50:"
-msgstr ""
+msgstr "或者，你也可以使用 `xfconf-query` 命令实现相同的效果。以下示例将当前主题的光标大小设置为 50："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfconf-query -c xsettings -n -p /Gtk/CursorThemeSize -s 50\n"
-msgstr ""
+msgstr "% xfconf-query -c xsettings -n -p /Gtk/CursorThemeSize -s 50\n"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Find Cursor"
-msgstr ""
+msgstr "查找光标"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:392
+#, fuzzy
 msgid ""
 "Some desktop environments provide visual feedback of the mouse pointer's "
 "current position."
-msgstr ""
+msgstr "某些桌面环境会以视觉提示显示鼠标指针的当前位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:398
+#, fuzzy
 msgid ""
 "KDE Plasma draws two circular lines moving around the mouse cursor.  Open "
 "the `Desktop Effects` module:"
-msgstr ""
+msgstr "KDE Plasma 会在鼠标光标周围绘制两条移动的圆形线条。打开 `桌面特效` 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:402
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% kcmshell6 kcm_kwin_effects\n"
-msgstr ""
+msgstr "% kcmshell6 kcm_kwin_effects\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:407
+#, fuzzy
 msgid ""
 "Enable the `_Track Mouse_` checkbox.  Draw circular lines by pressing `Meta` "
 "+ `Ctrl` keys.  You can change the shortcut via the `_Configure_` button "
 "related to `_Track Mouse_`."
-msgstr ""
+msgstr "勾选 __跟踪鼠标__ 复选框。按下 `Meta` + `Ctrl` 键即可绘制圆形线条。你可以通过 __跟踪鼠标__ 旁边的 __配置__ 按钮更改快捷键。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:412
+#, fuzzy
 msgid ""
 "On keyboards where the `Meta` key is not present, it is usually replaced by "
 "the `Super` key.  Refer to https://en.wikipedia.org/wiki/Meta_key and "
 "https://en.wikipedia.org/wiki/Super_key_(keyboard_button) for more "
 "information."
-msgstr ""
+msgstr "对于没有 `Meta` 键的键盘，通常使用 `Super` 键代替。更多信息请参阅 link:https://en.wikipedia.org/wiki/Meta_key[] 和 link:https://en.wikipedia.org/wiki/Super_key_(keyboard_button)[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:420
+#, fuzzy
 msgid "Xfce draws large red circles around the mouse pointer.  Type:"
-msgstr ""
+msgstr "Xfce 会在鼠标指针周围绘制较大的红色圆圈。输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfce4-find-cursor\n"
-msgstr ""
+msgstr "% xfce4-find-cursor\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:427
+#, fuzzy
 msgid "The above command draws circles for a few seconds."
-msgstr ""
+msgstr "上述命令会绘制圆圈并持续几秒钟。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:429
+#, fuzzy
 msgid "**Keyboard Shortcut**"
-msgstr ""
+msgstr "**键盘快捷键**"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:433
+#, fuzzy
 msgid ""
 "XFCE allows to add a keyboard shortcut.  Circles are drawn for as long as "
 "the shortcut keys are pressed.  To use the shortcut before enable the "
 "feature then choose the key combination to bind to `xfce4-find-cursor`."
-msgstr ""
+msgstr "XFCE 允许添加键盘快捷键。按住快捷键时，圆圈会持续绘制。要使用快捷键，请先启用此功能，然后选择要绑定到 `xfce4-find-cursor` 的组合键。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:435
+#, fuzzy
 msgid "Example to enable and bind `Ctrl` + `Super` + `k`:"
-msgstr ""
+msgstr "启用功能并绑定 `Ctrl` + `Super` + `k` 的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:439
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "xfconf-query -c accessibility -p /FindCursor -s true\n"
 "xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Ctrl><Super>k' -s xfce4-find-cursor\n"
-msgstr ""
+msgstr "xfconf-query -c accessibility -p /FindCursor -s true\nxfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Ctrl><Super>k' -s xfce4-find-cursor\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:442
+#, fuzzy
 msgid "**Keyboard Shortcut via Dialogs**"
-msgstr ""
+msgstr "**通过对话框设置键盘快捷键**"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:445
+#, fuzzy
 msgid ""
 "Alternatively, you can achieve the same result via the XFCE configuration "
 "dialogs.  First step, open the XFCE `_Accessibility_` dialog:"
-msgstr ""
+msgstr "或者，你也可以通过 XFCE 配置对话框实现相同的效果。第一步，打开 XFCE 的 __辅助功能__ 对话框："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfce4-accessibility-settings\n"
-msgstr ""
+msgstr "% xfce4-accessibility-settings\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:452
+#, fuzzy
 msgid ""
 "Click on `_Mouse_` tab and enable the `_Show location of pointer on "
 "keypress_` checkbox."
-msgstr ""
+msgstr "点击 __鼠标__ 选项卡，然后勾选 __按键时显示指针位置__ 复选框。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:454
+#, fuzzy
 msgid "Second step, open the XFCE `_Keyboard_` dialog:"
-msgstr ""
+msgstr "第二步，打开 XFCE 的 __键盘__ 对话框："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xfce4-keyboard-settings\n"
-msgstr ""
+msgstr "% xfce4-keyboard-settings\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/lowvision/_index.adoc:463
+#, fuzzy
 msgid ""
 "Click on `_Application Shortcuts_` tab.  Click on `_+ Add_` button, it opens "
 "the `_Shortcut Command_` dialog.  Write _xfce4-find-cursor_ in the form, "
 "then click on the `_OK_` button.  Choose a key combination to bind to `xfce4-"
 "find-cursor` in the new dialog."
-msgstr ""
+msgstr "点击 __应用程序快捷键__ 选项卡。点击 __+ 添加__ 按钮，打开 __快捷键命令__ 对话框。在输入框中输入 __xfce4-find-cursor__，然后点击 __确定__ 按钮。在新对话框中选择要绑定到 `xfce4-find-cursor` 的组合键。"

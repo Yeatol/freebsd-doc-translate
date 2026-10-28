@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Handbook Bibliography"
-msgstr ""
+msgstr "FreeBSD 手册参考书目"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part V. Appendices"
-msgstr ""
+msgstr "第五部分：附录"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appendix B. Bibliography"
-msgstr ""
+msgstr "附录 B：参考书目"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:16
@@ -44,13 +44,14 @@ msgstr "参考资料"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:54
+#, fuzzy
 msgid ""
 "While manual pages provide a definitive reference for individual pieces of "
 "the FreeBSD operating system, they seldom illustrate how to put the pieces "
 "together to make the whole operating system run smoothly.  For this, there "
 "is no substitute for a good book or users' manual on UNIX(R) system "
 "administration."
-msgstr ""
+msgstr "手册页为 FreeBSD 操作系统的各个组成部分提供了权威参考，但很少说明如何将这些部分组合起来，使整个操作系统平稳运行。要做到这一点，一本优秀的 UNIX(R) 系统管理书籍或用户手册不可或缺。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:56
@@ -61,90 +62,101 @@ msgstr "参考资料"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:59
+#, fuzzy
 msgid ""
 "*Absolute FreeBSD: The Complete Guide To FreeBSD*, Third Edition, published "
 "by link:https://nostarch.com/absfreebsd3[No Starch Press], 2018. ISBN: "
 "978-1593278922"
-msgstr ""
+msgstr "*Absolute FreeBSD: The Complete Guide To FreeBSD*，第三版，由 link:https://nostarch.com/absfreebsd3[No Starch Press] 出版，2018 年。ISBN：978-1593278922"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:60
+#, fuzzy
 msgid ""
 "*FreeBSD Mastery: Storage Essentials*, published by link:https://www."
 "tiltedwindmillpress.com/product/freebsd-mastery-storage-essentials/[Tilted "
 "Windmill Press], 2014. ISBN: 978-1642350098"
-msgstr ""
+msgstr "*FreeBSD Mastery: Storage Essentials*，由 link:https://www.tiltedwindmillpress.com/product/freebsd-mastery-storage-essentials/[Tilted Windmill Press] 出版，2014 年。ISBN：978-1642350098"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:61
+#, fuzzy
 msgid ""
 "*FreeBSD Mastery: Specialty Filesystems*, published by link:https://www."
 "tiltedwindmillpress.com/product/fmspf/[Tilted Windmill Press], 2015. ISBN: "
 "978-1642350111"
-msgstr ""
+msgstr "*FreeBSD Mastery: Specialty Filesystems*，由 link:https://www.tiltedwindmillpress.com/product/fmspf/[Tilted Windmill Press] 出版，2015 年。ISBN：978-1642350111"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:62
+#, fuzzy
 msgid ""
 "*FreeBSD Mastery: ZFS*, published by link:https://www.tiltedwindmillpress."
 "com/product/fmzfs/[Tilted Windmill Press], 2015. ISBN: 978-1642350005"
-msgstr ""
+msgstr "*FreeBSD Mastery: ZFS*，由 link:https://www.tiltedwindmillpress.com/product/fmzfs/[Tilted Windmill Press] 出版，2015 年。ISBN：978-1642350005"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:63
+#, fuzzy
 msgid ""
 "*FreeBSD Mastery: Advanced ZFS*, published by link:https://www."
 "tiltedwindmillpress.com/product/fmaz/[Tilted Windmill Press], 2016. ISBN: "
 "978-0692688687"
-msgstr ""
+msgstr "*FreeBSD Mastery: Advanced ZFS*，由 link:https://www.tiltedwindmillpress.com/product/fmaz/[Tilted Windmill Press] 出版，2016 年。ISBN：978-0692688687"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:64
+#, fuzzy
 msgid ""
 "*FreeBSD Mastery: Jails*, published by link:https://www.tiltedwindmillpress."
 "com/product/fmjail/[Tilted Windmill Press], 2019. ISBN: 978-1642350241"
-msgstr ""
+msgstr "*FreeBSD Mastery: Jails*，由 link:https://www.tiltedwindmillpress.com/product/fmjail/[Tilted Windmill Press] 出版，2019 年。ISBN：978-1642350241"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:65
+#, fuzzy
 msgid ""
 "*FreeBSD Device Drivers: A Guide for the Intrepid*, published by link:"
 "https://nostarch.com/bsddrivers.htm[No Starch Press], 2012. ISBN: "
 "978-1593272043"
-msgstr ""
+msgstr "*FreeBSD Device Drivers: A Guide for the Intrepid*，由 link:https://nostarch.com/bsddrivers.htm[No Starch Press] 出版，2012 年。ISBN：978-1593272043"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:66
+#, fuzzy
 msgid ""
 "*The Design And Implementation Of The Freebsd Operating System*, Second "
 "Edition, published by link:https://www.pearson.com/store/p/design-and-"
 "implementation-of-the-freebsd-operating-system-the/"
 "P200000000463/9780321968975[Pearson Education, Inc.], 2014. ISBN: "
 "978-0321968975"
-msgstr ""
+msgstr "*The Design And Implementation Of The Freebsd Operating System*，第二版，由 link:https://www.pearson.com/store/p/design-and-implementation-of-the-freebsd-operating-system-the/P200000000463/9780321968975[Pearson Education, Inc.] 出版，2014 年。ISBN：978-0321968975"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:67
+#, fuzzy
 msgid ""
 "*UNIX and Linux System Administration Handbook*, Fifth Edition, published by "
 "link:https://www.pearson.com/en-us/subject-catalog/p/unix-and-linux-system-"
 "administration-handbook/P200000000513/9780137460359[Pearson Education, "
 "Inc.], 2017. ISBN: 978-0134277554"
-msgstr ""
+msgstr "*UNIX and Linux System Administration Handbook*，第五版，由 link:https://www.pearson.com/en-us/subject-catalog/p/unix-and-linux-system-administration-handbook/P200000000513/9780137460359[Pearson Education, Inc.] 出版，2017 年。ISBN：978-0134277554"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:68
+#, fuzzy
 msgid ""
 "*Designing BSD Rootkits*, published by link:https://nostarch.com/rootkits."
 "htm[No Starch Press], 2007. ISBN: 978-1593271428"
-msgstr ""
+msgstr "*Designing BSD Rootkits*，由 link:https://nostarch.com/rootkits.htm[No Starch Press] 出版，2007 年。ISBN：978-1593271428"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:69
+#, fuzzy
 msgid ""
 "*FreeBSD Jails using VNETs*, published in link:https://rderik.gumroad.com/l/"
 "uwOLZ[gumroad]"
-msgstr ""
+msgstr "*FreeBSD Jails using VNETs*，由 link:https://rderik.gumroad.com/l/uwOLZ[gumroad] 出版"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:71
@@ -154,92 +166,103 @@ msgstr "安全参考文献"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:74
+#, fuzzy
 msgid ""
 "*The Book of PF: A No-Nonsense Guide to the OpenBSD Firewall*, Third "
 "Edition, published by link:https://nostarch.com/pf3[No Starch Press], 2014. "
 "ISBN: 978-1593275891"
-msgstr ""
+msgstr "*The Book of PF: A No-Nonsense Guide to the OpenBSD Firewall*，第三版，由 link:https://nostarch.com/pf3[No Starch Press] 出版，2014 年。ISBN：978-1593275891"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:75
+#, fuzzy
 msgid ""
 "*SSH Mastery: OpenSSH, PuTTY, Tunnels, and Keys*, Second Edition, 2018. "
 "ISBN: 978-1642350029"
-msgstr ""
+msgstr "*SSH Mastery: OpenSSH, PuTTY, Tunnels, and Keys*，第二版，2018 年。ISBN：978-1642350029"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UNIX(R) History"
-msgstr ""
+msgstr "UNIX(R) 历史"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:80
+#, fuzzy
 msgid ""
 "Lion, John _Lion's Commentary on UNIX, 6th Ed. With Source Code_. ITP Media "
 "Group, 1996. ISBN 1573980137"
-msgstr ""
+msgstr "Lion, John __Lion's Commentary on UNIX, 6th Ed. With Source Code__。ITP Media Group，1996 年。ISBN 1573980137"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:81
+#, fuzzy
 msgid ""
 "Raymond, Eric S. _The New Hacker's Dictionary, 3rd edition_. MIT Press, "
 "1996. ISBN 0-262-68092-0. Also known as the http://www.catb.org/~esr/jargon/"
 "html/index.html[Jargon File]"
-msgstr ""
+msgstr "Raymond, Eric S. __The New Hacker's Dictionary, 3rd edition__。MIT Press，1996 年。ISBN 0-262-68092-0。也称为 link:http://www.catb.org/~esr/jargon/html/index.html[Jargon File]"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:82
+#, fuzzy
 msgid ""
 "Salus, Peter H. _A quarter century of UNIX_. Addison-Wesley Publishing "
 "Company, Inc., 1994. ISBN 0-201-54777-5"
-msgstr ""
+msgstr "Salus, Peter H. __A quarter century of UNIX__。Addison-Wesley Publishing Company, Inc.，1994 年。ISBN 0-201-54777-5"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:83
+#, fuzzy
 msgid ""
 "Simon Garfinkel, Daniel Weise, Steven Strassmann. _The UNIX-HATERS "
 "Handbook_. IDG Books Worldwide, Inc., 1994. ISBN 1-56884-203-1. Out of "
 "print, but available http://www.simson.net/ref/ugh.pdf[online]."
-msgstr ""
+msgstr "Simon Garfinkel, Daniel Weise, Steven Strassmann。__The UNIX-HATERS Handbook__。IDG Books Worldwide, Inc.，1994 年。ISBN 1-56884-203-1。已绝版，但可在线阅读 link:http://www.simson.net/ref/ugh.pdf[此书]。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:84
+#, fuzzy
 msgid ""
 "Don Libes, Sandy Ressler _Life with UNIX_ - special edition. Prentice-Hall, "
 "Inc., 1989. ISBN 0-13-536657-7"
-msgstr ""
+msgstr "Don Libes, Sandy Ressler __Life with UNIX__ - 特别版。Prentice-Hall, Inc.，1989 年。ISBN 0-13-536657-7"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:85
+#, fuzzy
 msgid ""
 "_The BSD family tree_. https://cgit.freebsd.org/src/tree/share/misc/bsd-"
 "family-tree[https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree] or "
 "link:file://localhost/usr/share/misc/bsd-family-tree[/usr/share/misc/bsd-"
 "family-tree] on a FreeBSD machine."
-msgstr ""
+msgstr "__The BSD family tree__。 link:https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree[https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree]，或在 FreeBSD 机器上查看 link:file://localhost/usr/share/misc/bsd-family-tree[/usr/share/misc/bsd-family-tree]。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:86
+#, fuzzy
 msgid "_Networked Computer Science Technical Reports Library_."
-msgstr ""
+msgstr "__Networked Computer Science Technical Reports Library__。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:87
+#, fuzzy
 msgid ""
 "_Old BSD releases from the Computer Systems Research group (CSRG)_. http://"
 "www.mckusick.com/csrg/[http://www.mckusick.com/csrg/]: The 4CD set covers "
 "all BSD versions from 1BSD to 4.4BSD and 4.4BSD-Lite2 (but not 2.11BSD, "
 "unfortunately). The last disk also holds the final sources plus the SCCS "
 "files."
-msgstr ""
+msgstr "__Old BSD releases from the Computer Systems Research group (CSRG)__。link:http://www.mckusick.com/csrg/[http://www.mckusick.com/csrg/]：这套 4 张 CD 包含从 1BSD 到 4.4BSD 和 4.4BSD-Lite2 的所有 BSD 版本（遗憾的是不包括 2.11BSD）。最后一张光盘还包含最终版本的源代码以及 SCCS 文件。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:88
+#, fuzzy
 msgid ""
 "Kernighan, Brian _Unix: A History and a Memoir_.  Kindle Direct Publishing, "
 "2020.  ISBN 978-169597855-3"
-msgstr ""
+msgstr "Kernighan, Brian __Unix: A History and a Memoir__。Kindle Direct Publishing，2020 年。ISBN 978-169597855-3"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:90
@@ -249,25 +272,28 @@ msgstr "学术期刊，报纸和杂志"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:93
+#, fuzzy
 msgid ""
 "https://www.admin-magazin.de/[Admin Magazin] (in German), published by "
 "Medialinx AG. ISSN: 2190-1066"
-msgstr ""
+msgstr "link:https://www.admin-magazin.de/[Admin Magazin]（德语），由 Medialinx AG 出版。ISSN：2190-1066"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:94
+#, fuzzy
 msgid ""
 "https://www.bsdnow.tv/[BSD Now - Video Podcast], published by Jupiter "
 "Broadcasting LLC"
-msgstr ""
+msgstr "link:https://www.bsdnow.tv/[BSD Now - Video Podcast]，由 Jupiter Broadcasting LLC 出版"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/bibliography/_index.adoc:94
+#, fuzzy
 msgid ""
 "https://freebsdfoundation.org/our-work/journal/[FreeBSD Journal], published "
 "by S&W Publishing, sponsored by The FreeBSD Foundation. ISBN: "
 "978-0-615-88479-0"
-msgstr ""
+msgstr "link:https://freebsdfoundation.org/our-work/journal/[FreeBSD Journal]，由 S&W Publishing 出版，并由 The FreeBSD Foundation 赞助。ISBN：978-0-615-88479-0"
 
 #, no-wrap
 #~ msgid "Books Specific to FreeBSD"

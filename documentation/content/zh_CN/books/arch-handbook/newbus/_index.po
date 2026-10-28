@@ -27,16 +27,17 @@ msgstr "Newbus"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 14. Newbus"
-msgstr ""
+msgstr "第 14 章：Newbus"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:56
+#, fuzzy
 msgid ""
 "_Special thanks to Matthew N. Dodd, Warner Losh, Bill Paul, Doug Rabson, "
 "Mike Smith, Peter Wemm and Scott Long_."
-msgstr ""
+msgstr "__特别感谢 Matthew N. Dodd、Warner Losh、Bill Paul、Doug Rabson、Mike Smith、Peter Wemm 和 Scott Long__。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:58
@@ -77,10 +78,11 @@ msgstr "设备驱动程序的类型"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:69
+#, fuzzy
 msgid ""
 "There used to be days in UNIX(R), and thus FreeBSD, in which there were four "
 "types of devices defined:"
-msgstr ""
+msgstr "在 UNIX(R)（因此也包括 FreeBSD）中，过去曾有四种设备类型："
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:71
@@ -184,6 +186,7 @@ msgstr "最显著的改变之一是从平面和特殊系统演变为设备树布
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:95
+#, fuzzy
 msgid ""
 "At the top level resides the _\"root\"_ device which is the parent to hang "
 "all other devices on. For each architecture, there is typically a single "
@@ -192,20 +195,22 @@ msgid ""
 "Alpha, various different models of Alpha have different top-level devices "
 "corresponding to the different hardware chipsets, including _lca_, _apecs_, "
 "_cia_ and _tsunami_."
-msgstr ""
+msgstr "最顶层是 __\"root\"__ 设备，所有其他设备都以它为父设备。对于每种体系结构，通常都有一个 __\"root\"__ 的直接子设备，诸如 __主机到 PCI 桥__ 等设备都连接在它上面。对于 x86，这个 __\"root\"__ 设备就是 __\"nexus\"__ 设备。对于 Alpha，不同型号的 Alpha 有不同的顶层设备，对应不同的硬件芯片组，包括 __lca__、__apecs__、__cia__ 和 __tsunami__。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:97
+#, fuzzy
 msgid ""
 "A device in the Newbus context represents a single hardware entity in the "
 "system. For instance each PCI device is represented by a Newbus device. Any "
 "device in the system can have children; a device which has children is often "
 "called a _\"bus\"_. Examples of common busses in the system are ISA and PCI, "
 "which manage lists of devices attached to ISA and PCI busses respectively."
-msgstr ""
+msgstr "在 Newbus 的上下文中，设备表示系统中的一个硬件实体。例如，每个 PCI 设备都由一个 Newbus 设备表示。系统中的任何设备都可以有子设备；有子设备的设备通常称为 __\"总线\"__。系统中常见的总线有 ISA 和 PCI，它们分别管理连接到 ISA 和 PCI 总线的设备列表。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:99
+#, fuzzy
 msgid ""
 "Often, a connection between different kinds of bus is represented by a _"
 "\"bridge\"_ device, which normally has one child for the attached bus. An "
@@ -214,7 +219,7 @@ msgid ""
 "for the attached bus. This layout simplifies the implementation of the PCI "
 "bus tree, allowing common code to be used for both top-level and bridged "
 "busses."
-msgstr ""
+msgstr "不同类型总线之间的连接通常由 __\"桥\"__ 设备表示，该设备通常有一个子设备，即所连接的总线。例如，__PCI 到 PCI 桥__ 在父 PCI 总线上由设备 __[.filename]#pcibN#__ 表示，并有一个用于所连接总线的子设备 __[.filename]#pciN#__。这种布局简化了 PCI 总线树的实现，使顶层总线和桥接总线都能使用通用代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:101
@@ -229,6 +234,7 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:105
+#, fuzzy
 msgid ""
 "An ISA device might want to map its IO port at `0x230`, so it asks its "
 "parent, in this case the ISA bus. The ISA bus hands it over to the PCI-to-"
@@ -237,7 +243,7 @@ msgid ""
 "there is room to translate the requests. For example, the `0x230` IO port "
 "request might become memory-mapped at `0xb0000230` on a MIPS box by the PCI "
 "bridge."
-msgstr ""
+msgstr "ISA 设备可能需要将其 IO 端口映射到 `0x230`，因此会向其父设备（此处为 ISA 总线）提出请求。ISA 总线将请求传递给 PCI 到 ISA 桥，后者再向 PCI 总线提出请求；请求随后到达主机到 PCI 桥，最终到达 nexus。这种向上传递的优点在于，可以转换请求。例如，在 MIPS 设备上，PCI 桥可能会将 `0x230` IO 端口请求转换为映射到 `0xb0000230` 的内存请求。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:108
@@ -273,11 +279,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:112
+#, fuzzy
 msgid ""
 "This support is integrated into the resource allocation mechanism. When a "
 "resource is allocated, a driver can retrieve the associated "
 "`bus_space_tag_t` and `bus_space_handle_t` from the resource."
-msgstr ""
+msgstr "此支持已集成到资源分配机制中。分配资源时，驱动程序可以从该资源获取关联的 `bus_space_tag_t` 和 `bus_space_handle_t`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:114
@@ -343,49 +350,50 @@ msgstr "Newbus的方法"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "      # Foo subsystem/driver (a comment...)\n"
-msgstr ""
+msgstr "      # Foo 子系统/驱动程序（注释……）\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\t  INTERFACE foo\n"
-msgstr ""
+msgstr "\t  INTERFACE foo\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tMETHOD int doit {\n"
 "\t\tdevice_t dev;\n"
 "\t};\n"
-msgstr ""
+msgstr "\tMETHOD int doit {\n\t\tdevice_t dev;\n\t};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t# DEFAULT is the method that will be used, if a method was not\n"
 "\t# provided via: DEVMETHOD()\n"
-msgstr ""
+msgstr "\t# DEFAULT 是未通过 DEVMETHOD() 提供方法时\n\t# 将使用的方法\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tMETHOD void doit_to_child {\n"
 "\t\tdevice_t dev;\n"
 "\t\tdriver_t child;\n"
 "\t} DEFAULT doit_generic_to_child;\n"
-msgstr ""
+msgstr "\tMETHOD void doit_to_child {\n\t\tdevice_t dev;\n\t\tdriver_t child;\n\t} DEFAULT doit_generic_to_child;\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:145
+#, fuzzy
 msgid ""
 "When this interface is compiled, it generates a header file \"[."
 "filename]#foo_if.h#\" which contains function declarations:"
-msgstr ""
+msgstr "编译此接口时，会生成一个头文件 \"[.filename]#foo_if.h#\"，其中包含函数声明："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:150
@@ -412,16 +420,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:155
+#, fuzzy
 msgid ""
 "The system defines two main interfaces. The first fundamental interface is "
 "called _\"device\"_ and includes methods which are relevant to all devices. "
 "Methods in the _\"device\"_ interface include _\"probe\"_, _\"attach\"_ and _"
 "\"detach\"_ to control detection of hardware and _\"shutdown\"_, _\"suspend"
 "\"_ and _\"resume\"_ for critical event notification."
-msgstr ""
+msgstr "系统定义了两个主要接口。第一个基础接口称为 __\"device\"__，包含与所有设备相关的方法。__\"device\"__ 接口中的方法包括用于控制硬件检测的 __\"probe\"__、__\"attach\"__ 和 __\"detach\"__，以及用于关键事件通知的 __\"shutdown\"__、__\"suspend\"__ 和 __\"resume\"__。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:157
+#, fuzzy
 msgid ""
 "The second, more complex interface is _\"bus\"_. This interface contains "
 "methods suitable for devices which have children, including methods to "
@@ -430,10 +440,11 @@ msgid ""
 "notification (`_child_detached_`, `_driver_added_`) and resource management "
 "(`_alloc_resource_`, `_activate_resource_`, `_deactivate_resource_`, "
 "`_release_resource_`)."
-msgstr ""
+msgstr "第二个更复杂的接口是 __\"bus\"__。此接口包含适用于具有子设备的设备的方法，包括用于访问总线特定的逐设备信息的方法 footnote:[man:bus_generic_read_ivar[9] 和 man:bus_generic_write_ivar[9]]、事件通知（`__child_detached__`、`__driver_added__`）以及资源管理（`__alloc_resource__`、`__activate_resource__`、`__deactivate_resource__`、`__release_resource__`）。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:159
+#, fuzzy
 msgid ""
 "Many methods in the \"bus\" interface are performing services for some child "
 "of the bus device. These methods would normally use the first two arguments "
@@ -443,16 +454,17 @@ msgid ""
 "For instance the method `BUS_TEARDOWN_INTR(device_t dev, device_t "
 "child, ...)` can be called using the function `bus_teardown_intr(device_t "
 "child, ...)`."
-msgstr ""
+msgstr "__\"bus\"__ 接口中的许多方法都为总线设备的某个子设备提供服务。这些方法通常使用前两个参数分别指定提供服务的总线和请求服务的子设备。为了简化驱动程序代码，许多这类方法都有访问器函数，用于查找父设备并调用其方法。例如，可以使用函数 `bus_teardown_intr(device_t child, ...)` 调用方法 `BUS_TEARDOWN_INTR(device_t dev, device_t child, ...)`。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:161
+#, fuzzy
 msgid ""
 "Some bus types in the system define additional interfaces to provide access "
 "to bus-specific functionality. For instance, the PCI bus driver defines the "
 "\"pci\" interface which has two methods `_read_config_` and `_write_config_` "
 "for accessing the configuration registers of a PCI device."
-msgstr ""
+msgstr "系统中的某些总线类型定义了其他接口，以提供对总线特定功能的访问。例如，PCI 总线驱动程序定义了 __\"pci\"__ 接口，其中包含 __read_config__ 和 __write_config__ 两个方法，用于访问 PCI 设备的配置寄存器。"
 
 #. type: Title ==
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:163
@@ -476,18 +488,20 @@ msgstr "源代码目录树中的重要位置"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:170
+#, fuzzy
 msgid ""
 "[.filename]#src/sys/[arch]/[arch]# - Kernel code for a specific machine "
 "architecture resides in this directory. For example, the `i386` "
 "architecture, or the `SPARC64` architecture."
-msgstr ""
+msgstr "[.filename]#src/sys/[arch]/[arch]# - 特定机器体系结构的内核代码位于此目录中。例如，`i386` 体系结构或 `SPARC64` 体系结构。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:172
+#, fuzzy
 msgid ""
 "[.filename]#src/sys/dev/[bus]# - device support for a specific `[bus]` "
 "resides in this directory."
-msgstr ""
+msgstr "[.filename]#src/sys/dev/[bus]# - 特定 `[bus]` 的设备支持代码位于此目录中。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:174
@@ -499,11 +513,12 @@ msgstr "<filename>src/sys/dev/pci</filename> - PCI总线支持代码位于 这�
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:176
+#, fuzzy
 msgid ""
 "[.filename]#src/sys/[isa|pci]# - PCI/ISA device drivers reside in this "
 "directory. The PCI/ISA bus support code used to exist in this directory in "
 "FreeBSD version `4.0`."
-msgstr ""
+msgstr "[.filename]#src/sys/[isa|pci]# - PCI/ISA 设备驱动程序位于此目录中。在 FreeBSD `4.0` 中，PCI/ISA 总线支持代码曾位于此目录。"
 
 #. type: Title ===
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:177
@@ -513,37 +528,42 @@ msgstr "重要结构和类型定义"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:180
+#, fuzzy
 msgid ""
 "`devclass_t` - This is a type definition of a pointer to a `struct devclass`."
-msgstr ""
+msgstr "`devclass_t` - 这是指向 `struct devclass` 的指针类型定义。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:182
+#, fuzzy
 msgid ""
 "`device_method_t` - This is the same as `kobj_method_t` (see [.filename]#src/"
 "sys/kobj.h#)."
-msgstr ""
+msgstr "`device_method_t` - 这与 `kobj_method_t` 相同（参见 [.filename]#src/sys/kobj.h#）。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:184
+#, fuzzy
 msgid ""
 "`device_t` - This is a type definition of a pointer to a `struct device`. "
 "`device_t` represents a device in the system. It is a kernel object. See [."
 "filename]#src/sys/sys/bus_private.h# for implementation details."
-msgstr ""
+msgstr "`device_t` - 这是指向 `struct device` 的指针类型定义。`device_t` 表示系统中的一个设备。它是一个内核对象。实现细节请参见 [.filename]#src/sys/sys/bus_private.h#。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:186
+#, fuzzy
 msgid ""
 "`driver_t` - This is a type definition which references `struct driver`. The "
 "`driver` struct is a class of the `device` kernel object; it also holds data "
 "private to the driver."
-msgstr ""
+msgstr "`driver_t` - 这是对 `struct driver` 的引用类型定义。`driver` 结构体是 `device` 内核对象的一个类；它还保存驱动程序的私有数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:188
+#, fuzzy
 msgid "*_driver_t_ Implementation*"
-msgstr ""
+msgstr "*__driver_t__ 实现*"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:194
@@ -561,16 +581,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:197
+#, fuzzy
 msgid ""
 "A `device_state_t` type, which is an enumeration, `device_state`. It "
 "contains the possible states of a Newbus device before and after the "
 "autoconfiguration process."
-msgstr ""
+msgstr "`device_state_t` 是一种枚举类型，即 `device_state`。它包含 Newbus 设备在自动配置过程前后的所有可能状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:199
+#, fuzzy
 msgid "*Device States _device_state_t*"
-msgstr ""
+msgstr "*设备状态 __device_state_t__*"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/arch-handbook/newbus/_index.adoc:210

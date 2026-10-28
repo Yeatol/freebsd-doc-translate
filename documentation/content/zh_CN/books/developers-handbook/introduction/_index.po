@@ -20,15 +20,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction to the FreeBSD Developers Handbook"
-msgstr ""
+msgstr "FreeBSD 开发者手册简介"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 1. Introduction"
-msgstr ""
+msgstr "第 1 章：简介"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:17
@@ -87,17 +87,18 @@ msgstr "BSD 愿景"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:70
+#, fuzzy
 msgid ""
 "To produce the best UNIX(R) like operating system package possible, with due "
 "respect to the original software tools ideology as well as usability, "
 "performance and stability."
-msgstr ""
+msgstr "尽可能打造最佳的类 UNIX(R) 操作系统，同时尊重原始软件工具理念，并兼顾易用性、性能和稳定性。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:72
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Architectural Guidelines"
-msgstr ""
+msgstr "架构指南"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:75
@@ -113,62 +114,70 @@ msgstr "若非必要，勿增实体。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:78
+#, fuzzy
 msgid ""
 "It is as important to decide what a system is not as to decide what it is. "
 "Do not serve all the world's needs; rather, make the system extensible so "
 "that additional needs can be met in an upwardly compatible fashion."
-msgstr ""
+msgstr "决定系统不是什么，与决定系统是什么同样重要。不要试图满足全世界的所有需求，而应使系统具备可扩展性，以便以向上兼容的方式满足更多需求。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:79
+#, fuzzy
 msgid ""
 "The only thing worse than generalizing from one example is generalizing from "
 "no examples at all."
-msgstr ""
+msgstr "以一个例子为依据进行概括，已经够糟；以零个例子为依据进行概括则更糟。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:80
+#, fuzzy
 msgid ""
 "If a problem is not completely understood, it is probably best to provide no "
 "solution at all."
-msgstr ""
+msgstr "如果问题尚未被完全理解，最好就不要提供解决方案。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:81
+#, fuzzy
 msgid ""
 "If you can get 90 percent of the desired effect for 10 percent of the work, "
 "use the simpler solution."
-msgstr ""
+msgstr "如果只需 10% 的工作就能达到 90% 的预期效果，那就采用更简单的解决方案。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:82
+#, fuzzy
 msgid "Isolate complexity as much as possible."
-msgstr ""
+msgstr "尽可能隔离复杂性。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:83
+#, fuzzy
 msgid ""
 "Provide mechanism, rather than policy. In particular, place user interface "
 "policy in the client's hands."
-msgstr ""
+msgstr "提供机制，而不是策略。尤其要让客户端决定用户界面策略。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:85
+#, fuzzy
 msgid "From Scheifler & Gettys: \"X Window System\""
-msgstr ""
+msgstr "摘自 Scheifler 和 Gettys：《X Window System》"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Layout of /usr/src"
-msgstr ""
+msgstr "/usr/src 的目录结构"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/introduction/_index.adoc:91
+#, fuzzy
 msgid ""
 "The complete source code for FreeBSD is available from our link:https://cgit."
 "freebsd.org/src/[public Git repository].  The source code is normally "
 "installed in [.filename]#/usr/src#.  The layout of the source tree is "
 "described by the top-level link:https://cgit.freebsd.org/src/tree/README."
 "md[README.md] file."
-msgstr ""
+msgstr "FreeBSD 的完整源代码可从我们的 link:https://cgit.freebsd.org/src/[公共 Git 仓库]获取。源代码通常安装在 [.filename]#/usr/src# 中。源代码树的目录结构见顶层的 link:https://cgit.freebsd.org/src/tree/README.md[README.md] 文件。"

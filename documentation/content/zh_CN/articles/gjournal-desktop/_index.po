@@ -20,9 +20,9 @@ msgstr ""
 #. type: Title =
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:1
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:13
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Implementing UFS Journaling on a Desktop PC"
-msgstr ""
+msgstr "在桌面 PC 上实现 UFS 日志记录"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:45
@@ -31,6 +31,7 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:51
+#, fuzzy
 msgid ""
 "A journaling file system uses a log to record file system updates and "
 "preserves consistency in the event of a system crash or power failure.  "
@@ -44,7 +45,7 @@ msgid ""
 "mechanisms and explains their appropriate use on modern FreeBSD systems.  "
 "_The content has been reviewed and updated for FreeBSD versions 13 through "
 "15_."
-msgstr ""
+msgstr "日志文件系统使用日志记录文件系统更新，并在系统崩溃或断电时保持一致性。尽管尚未保存的文件更改仍可能丢失，但日志记录大幅降低了因非正常关机导致文件系统损坏的风险，并显著缩短了恢复时间。FreeBSD 使用的 UFS 文件系统虽然没有将日志记录作为磁盘上的固有功能实现，但 FreeBSD 通过文件系统级机制（带日志记录的 Soft Updates）以及 GEOM 框架（`gjournal`）提供日志记录支持。本文介绍可用的 UFS 日志记录机制，并说明如何在现代 FreeBSD 系统中恰当使用这些机制。__本文内容已针对 FreeBSD 13 至 15 版本进行审阅和更新__。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:53
@@ -59,6 +60,7 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:62
+#, fuzzy
 msgid ""
 "While professional servers are usually well protected from unforeseen "
 "shutdowns, the typical desktop is at the mercy of power failures, accidental "
@@ -67,348 +69,388 @@ msgid ""
 "required running `fsck`, which on large file systems could take a "
 "significant amount of time.  On rare occasions, file system corruption "
 "reaches a point where user intervention is required and data may be lost."
-msgstr ""
+msgstr "专业服务器通常会针对意外关机采取充分的防护措施，而普通桌面系统则容易受到断电、意外重置以及其他与用户相关的事件影响，这些情况可能导致非正常关机，使文件系统处于不一致状态。传统上，这需要运行 `fsck`，而在大型文件系统上，这可能耗费大量时间。少数情况下，文件系统损坏会严重到需要用户介入，并可能导致数据丢失。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:64
+#, fuzzy
 msgid ""
 "FreeBSD provides two distinct journaling mechanisms for the UFS file system:"
-msgstr ""
+msgstr "FreeBSD 为 UFS 文件系统提供两种不同的日志记录机制："
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:66
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:154
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:157
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Soft Updates with journaling"
-msgstr ""
+msgstr "带日志记录的 Soft Updates"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:67
+#, fuzzy
 msgid "GEOM journaling (`gjournal`)"
-msgstr ""
+msgstr "GEOM 日志记录（`gjournal`）"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:69
+#, fuzzy
 msgid ""
 "These mechanisms operate at different layers of the system and have "
 "different performance and semantic characteristics."
-msgstr ""
+msgstr "这些机制运行在系统的不同层，并具有不同的性能和语义特征。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:73
+#, fuzzy
 msgid ""
 "For most modern FreeBSD systems, including desktops and general-purpose "
 "servers, *Soft Updates with journaling* is the recommended solution."
-msgstr ""
+msgstr "对于大多数现代 FreeBSD 系统，包括桌面系统和通用服务器，*带日志记录的 Soft Updates* 是推荐方案。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:75
+#, fuzzy
 msgid ""
 "GEOM journaling is a legacy and specialized mechanism and should only be "
 "used when its specific semantics are required."
-msgstr ""
+msgstr "GEOM 日志记录是一种旧式的专用机制，仅应在确实需要其特定语义时使用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:78
+#, fuzzy
 msgid ""
 "This article explains both mechanisms, their differences, and correct modern "
 "usage."
-msgstr ""
+msgstr "本文介绍这两种机制、它们的区别以及现代环境中的正确用法。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:80
+#, fuzzy
 msgid "Read this chapter to learn:"
-msgstr ""
+msgstr "阅读本章，了解以下内容："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:82
+#, fuzzy
 msgid ""
 "The journaling mechanisms available for the UFS file system in FreeBSD and "
 "how they differ."
-msgstr ""
+msgstr "FreeBSD 中 UFS 文件系统可用的日志记录机制及其区别。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:83
+#, fuzzy
 msgid ""
 "When to use file system-level Soft Updates journaling and when GEOM "
 "journaling may be appropriate."
-msgstr ""
+msgstr "何时使用文件系统级的 Soft Updates 日志记录，以及何时适合使用 GEOM 日志记录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:84
+#, fuzzy
 msgid ""
 "How to enable or disable Soft Updates journaling on existing UFS file "
 "systems."
-msgstr ""
+msgstr "如何在现有 UFS 文件系统上启用或禁用 Soft Updates 日志记录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:85
+#, fuzzy
 msgid ""
 "How to configure GEOM journaling on new or existing partitions, including "
 "required kernel support and journal sizing considerations."
-msgstr ""
+msgstr "如何在新分区或现有分区上配置 GEOM 日志记录，包括所需的内核支持和日志大小注意事项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:86
+#, fuzzy
 msgid ""
 "What configuration changes are required to mount journaled file systems and "
 "how journaling affects system behavior."
-msgstr ""
+msgstr "挂载日志文件系统需要进行哪些配置更改，以及日志记录会如何影响系统行为。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:87
+#, fuzzy
 msgid "How to diagnose and resolve common issues related to UFS journaling."
-msgstr ""
+msgstr "如何诊断和解决与 UFS 日志记录相关的常见问题。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:89
+#, fuzzy
 msgid "Before reading this article:"
-msgstr ""
+msgstr "阅读本文前："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:91
+#, fuzzy
 msgid "Understand basic UNIX(R) and FreeBSD concepts."
-msgstr ""
+msgstr "了解 UNIX(R) 和 FreeBSD 的基本概念。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:92
+#, fuzzy
 msgid "Be familiar with the FreeBSD installation process using bsdinstall."
-msgstr ""
+msgstr "熟悉使用 bsdinstall 安装 FreeBSD 的过程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:93
+#, fuzzy
 msgid ""
 "Have basic knowledge of disk partitioning and file systems, including tools "
 "such as gpart(8), newfs(8), and mount(8)."
-msgstr ""
+msgstr "具备磁盘分区和文件系统的基础知识，包括 gpart(8)、newfs(8) 和 mount(8) 等工具。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:98
+#, fuzzy
 msgid ""
 "Some of the procedures described in this article involve modifying file "
 "system or disk configuration and may require unmounting file systems or "
 "changing on-disk metadata.  Before making such changes on a system in "
 "production, ensure that reliable _backups_ of all important data are "
 "available."
-msgstr ""
+msgstr "本文介绍的一些操作涉及修改文件系统或磁盘配置，并且可能需要卸载文件系统或更改磁盘上的元数据。在生产系统上进行此类更改之前，请确保已为所有重要数据创建可靠的__备份__。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:101
+#, fuzzy
 msgid ""
 "Enabling file system-level Soft Updates journaling is generally safe and "
 "does not require disk repartitioning.  However, configuring GEOM journaling "
 "involves low-level disk operations and should be attempted only by "
 "experienced administrators who fully understand the implications."
-msgstr ""
+msgstr "启用文件系统级的 Soft Updates 日志记录通常是安全的，并且不需要重新分区磁盘。不过，配置 GEOM 日志记录涉及底层磁盘操作，只有完全了解其影响的资深管理员才应尝试。"
 
 #. type: Title ==
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:104
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Understanding Journaling in FreeBSD"
-msgstr ""
+msgstr "了解 FreeBSD 中的日志记录"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Soft Updates with Journaling (Recommended)"
-msgstr ""
+msgstr "带日志记录的 Soft Updates（推荐）"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:108
+#, fuzzy
 msgid ""
 "Soft Updates is the default UFS consistency mechanism in FreeBSD. When "
 "combined with journaling, it provides *metadata journaling* within the file "
 "system itself."
-msgstr ""
+msgstr "Soft Updates 是 FreeBSD 中 UFS 默认的一致性机制。与日志记录结合使用时，它会在文件系统内部提供*元数据日志记录*。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:110
+#, fuzzy
 msgid "Advantages of Soft Updates with journaling include:"
-msgstr ""
+msgstr "带日志记录的 Soft Updates 具有以下优点："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:112
+#, fuzzy
 msgid "Very fast crash recovery (typically seconds)"
-msgstr ""
+msgstr "崩溃后恢复速度很快（通常只需几秒）"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:113
+#, fuzzy
 msgid "Normal `sync(2)` and `fsync(2)` semantics"
-msgstr ""
+msgstr "遵循标准的 `sync(2)` 和 `fsync(2)` 语义"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:114
+#, fuzzy
 msgid "No additional partitions or GEOM layers"
-msgstr ""
+msgstr "无需额外分区或 GEOM 层"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:115
+#, fuzzy
 msgid "Simple configuration and maintenance"
-msgstr ""
+msgstr "配置和维护简单"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:117
+#, fuzzy
 msgid "From `tunefs(8)`:"
-msgstr ""
+msgstr "摘自 `tunefs(8)`："
 
 #. type: delimited block _ 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:120
+#, fuzzy
 msgid ""
 "Enabling journaling reduces the time spent by fsck_ffs(8) cleaning up a file "
 "system after a crash to a few seconds from minutes to hours."
-msgstr ""
+msgstr "启用日志记录后，崩溃后由 fsck_ffs(8) 清理文件系统所需的时间将从几分钟到几小时缩短到几秒。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:123
+#, fuzzy
 msgid ""
 "This mechanism is suitable for nearly all UFS-based systems and is the "
 "default recommendation."
-msgstr ""
+msgstr "这种机制适用于几乎所有基于 UFS 的系统，也是默认推荐方案。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM Journaling (`gjournal`)"
-msgstr ""
+msgstr "GEOM 日志记录（`gjournal`）"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:127
+#, fuzzy
 msgid ""
 "GEOM journaling operates at the block level, below the file system. It "
 "journals all block writes, including *both metadata and file data*."
-msgstr ""
+msgstr "GEOM 日志记录在块级别运行，位于文件系统之下。它会记录所有块写入操作，包括*元数据和文件数据*。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:129
+#, fuzzy
 msgid "Key characteristics of GEOM journaling:"
-msgstr ""
+msgstr "GEOM 日志记录的主要特征："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:131
+#, fuzzy
 msgid "Implemented as a GEOM class (`geom_journal`)"
-msgstr ""
+msgstr "作为 GEOM 类（`geom_journal`）实现"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:132
+#, fuzzy
 msgid "Journals all block I/O, not just metadata"
-msgstr ""
+msgstr "记录所有块 I/O，而不仅仅是元数据"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:133
+#, fuzzy
 msgid "Requires explicit cooperation from UFS using the `-J` flag"
-msgstr ""
+msgstr "需要 UFS 使用 `-J` 标志显式配合"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:134
+#, fuzzy
 msgid "Disables Soft Updates"
-msgstr ""
+msgstr "禁用 Soft Updates"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:135
+#, fuzzy
 msgid "Alters the semantics of `sync(2)` and `fsync(2)`"
-msgstr ""
+msgstr "改变 `sync(2)` 和 `fsync(2)` 的语义"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:139
+#, fuzzy
 msgid ""
 "On GEOM-journaled file systems, `sync(2)` and `fsync(2)` do not guarantee "
 "that data has been committed to stable storage. To ensure persistence, "
 "`gjournal sync` must be used."
-msgstr ""
+msgstr "在使用 GEOM 日志记录的文件系统上，`sync(2)` 和 `fsync(2)` 不保证数据已提交到稳定存储。要确保数据持久化，必须使用 `gjournal sync`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:142
+#, fuzzy
 msgid ""
 "Because of these differences, GEOM journaling is not recommended for general-"
 "purpose desktop or server use."
-msgstr ""
+msgstr "鉴于这些差异，不建议在通用桌面或服务器系统上使用 GEOM 日志记录。"
 
 #. type: Title ==
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Choosing the Appropriate Journaling Method"
-msgstr ""
+msgstr "选择合适的日志记录方法"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:146
+#, fuzzy
 msgid "The following table summarizes recommended usage:"
-msgstr ""
+msgstr "下表总结了推荐的用法："
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Use case"
-msgstr ""
+msgstr "使用场景"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Recommended mechanism"
-msgstr ""
+msgstr "推荐机制"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Desktop or laptop system"
-msgstr ""
+msgstr "桌面或笔记本电脑系统"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General-purpose server"
-msgstr ""
+msgstr "通用服务器"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Legacy UFS systems"
-msgstr ""
+msgstr "旧式 UFS 系统"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File system-independent journaling requirements"
-msgstr ""
+msgstr "与文件系统无关的日志记录需求"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:163
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM journaling"
-msgstr ""
+msgstr "GEOM 日志记录"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Specialized block-level logging needs"
-msgstr ""
+msgstr "专用的块级日志记录需求"
 
 #. type: Title ==
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Soft Updates with Journaling"
-msgstr ""
+msgstr "使用带日志记录的 Soft Updates"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:172
+#, fuzzy
 msgid ""
 "Soft Updates with journaling provide file system-level journaling for UFS.  "
 "This mechanism preserves file system consistency while retaining the "
 "allocation and ordering optimizations of Soft Updates.  Unlike GEOM "
 "journaling, no separate journal device or partition is required."
-msgstr ""
+msgstr "带日志记录的 Soft Updates 为 UFS 提供文件系统级日志记录。这种机制在保持 Soft Updates 的分配和排序优化的同时，维护文件系统的一致性。与 GEOM 日志记录不同，它不需要单独的日志设备或分区。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:173
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:178
+#, fuzzy
 msgid ""
 "Soft Updates with journaling record file system metadata changes in a "
 "journal stored inside the file system itself, implemented as a hidden file "
@@ -416,215 +458,238 @@ msgid ""
 "of a crash or power failure, pending metadata operations are replayed from "
 "the journal, allowing the file system to be mounted quickly without a full "
 "consistency check."
-msgstr ""
+msgstr "带日志记录的 Soft Updates 会在文件系统内部的日志中记录文件系统元数据更改。该日志以隐藏文件的形式实现，文件名为 [.filename]#.sujournal#，位于文件系统根目录中。如果发生崩溃或断电，待处理的元数据操作会从日志中重放，使文件系统无需进行完整的一致性检查即可快速挂载。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:181
+#, fuzzy
 msgid ""
 "This form of journaling applies to file system metadata only.  File data "
 "integrity remains the responsibility of applications."
-msgstr ""
+msgstr "这种日志记录方式仅适用于文件系统元数据。文件数据的完整性仍由应用程序负责。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling Journaling on an Existing File System"
-msgstr ""
+msgstr "在现有文件系统上启用日志记录"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:185
+#, fuzzy
 msgid ""
 "The file system must be unmounted or mounted read-only before changing "
 "journaling settings."
-msgstr ""
+msgstr "更改日志记录设置前，必须先卸载文件系统，或将其以只读方式挂载。"
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# umount /usr\n"
 "# tunefs -n enable -j enable /dev/ada0p2\n"
 "# mount /usr\n"
-msgstr ""
+msgstr "# umount /usr\n# tunefs -n enable -j enable /dev/ada0p2\n# mount /usr\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:194
+#, fuzzy
 msgid ""
 "No additional configuration is required. Standard mount options may be used."
-msgstr ""
+msgstr "无需其他配置。可以使用标准挂载选项。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Journal Storage and Size"
-msgstr ""
+msgstr "日志存储和大小"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:199
+#, fuzzy
 msgid ""
 "A default journal size is selected automatically when journaling is "
 "enabled.  In most cases, the default size is sufficient and does not require "
 "adjustment."
-msgstr ""
+msgstr "启用日志记录时会自动选择默认日志大小。在大多数情况下，默认大小已经足够，无需调整。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:201
+#, fuzzy
 msgid ""
 "If necessary, the journal size in bytes can be specified explicitly using "
 "the `-S` option to `tunefs(8)`:"
-msgstr ""
+msgstr "如有必要，可使用 `tunefs(8)` 的 `-S` 选项显式指定日志大小（以字节为单位）："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tunefs -S 64000000 /dev/ada0p2\n"
-msgstr ""
+msgstr "# tunefs -S 64000000 /dev/ada0p2\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:208
+#, fuzzy
 msgid ""
 "Journal size tuning is rarely required and should be considered only for "
 "file systems with unusually high metadata update rates."
-msgstr ""
+msgstr "通常无需调整日志大小；只有元数据更新率异常高的文件系统才需要考虑调整。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Checking Soft Updates with Journaling"
-msgstr ""
+msgstr "检查带日志记录的 Soft Updates 状态"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:212
+#, fuzzy
 msgid ""
 "The journaling status of a UFS file system using Soft Updates can be "
 "verified with `tunefs(8)` or `dumpfs(8)`."
-msgstr ""
+msgstr "可以使用 `tunefs(8)` 或 `dumpfs(8)` 检查使用 Soft Updates 的 UFS 文件系统的日志记录状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:214
+#, fuzzy
 msgid "To display the current file system settings, run:"
-msgstr ""
+msgstr "运行以下命令以显示当前文件系统设置："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tunefs -p /dev/ada0p2 | grep -i journal\n"
 "tunefs: soft updates journaling: (-j)   enabled\n"
 "tunefs: gjournal: (-J)                  disabled\n"
-msgstr ""
+msgstr "# tunefs -p /dev/ada0p2 | grep -i journal\ntunefs: soft updates journaling: (-j)   enabled\ntunefs: gjournal: (-J)                  disabled\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:223
+#, fuzzy
 msgid "Look for the following indicators in the output:"
-msgstr ""
+msgstr "在输出中查找以下状态："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:225
+#, fuzzy
 msgid "Soft Updates enabled"
-msgstr ""
+msgstr "已启用 Soft Updates"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:226
+#, fuzzy
 msgid "Soft Updates journaling enabled"
-msgstr ""
+msgstr "已启用 Soft Updates 日志记录"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:228
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:643
+#, fuzzy
 msgid ""
 "Alternatively, `dumpfs(8)` can be used to inspect the file system superblock:"
-msgstr ""
+msgstr "也可以使用 `dumpfs(8)` 检查文件系统超级块："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dumpfs /dev/ada0p2 | grep -i journal\n"
 "flags   soft-updates+journal\n"
-msgstr ""
+msgstr "# dumpfs /dev/ada0p2 | grep -i journal\nflags   soft-updates+journal\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:236
+#, fuzzy
 msgid "These commands are read-only and do not modify file system state."
-msgstr ""
+msgstr "这些命令是只读的，不会修改文件系统状态。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File System Checks and Maintenance"
-msgstr ""
+msgstr "文件系统检查和维护"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:240
+#, fuzzy
 msgid ""
 "Although journaling dramatically reduces recovery time after a crash, it "
 "does not eliminate the need for periodic full file system checks."
-msgstr ""
+msgstr "尽管日志记录能大幅缩短崩溃后的恢复时间，但它不能免除定期进行完整文件系统检查的需要。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:242
+#, fuzzy
 msgid "Journaling guarantees consistency, not correctness"
-msgstr ""
+msgstr "日志记录保证一致性，而非正确性"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:243
+#, fuzzy
 msgid "Media errors are not repaired by journaling"
-msgstr ""
+msgstr "日志记录无法修复介质错误"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:244
+#, fuzzy
 msgid "Periodic `fsck` should still be scheduled"
-msgstr ""
+msgstr "仍应安排定期运行 `fsck`"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:245
+#, fuzzy
 msgid "Background `fsck` can be used on live file systems"
-msgstr ""
+msgstr "可以在运行中的文件系统上使用后台 `fsck`"
 
 #. type: Title ==
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using GEOM Journaling (Advanced)"
-msgstr ""
+msgstr "使用 GEOM 日志记录（高级）"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:251
+#, fuzzy
 msgid ""
 "This section is intended for advanced users who understand the implications "
 "of block-level journaling and altered sync semantics."
-msgstr ""
+msgstr "本节面向了解块级日志记录影响及同步语义变化的高级用户。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:258
+#, fuzzy
 msgid ""
 "This functionality is provided by loading the [.filename]#geom_journal.ko# "
 "module into the kernel (or building it into a custom kernel) and using the "
 "`gjournal` command to configure the file systems.  In general, you would "
 "like to journal large file systems, like [.filename]#/usr#.  You will need "
 "however (see the following section) to reserve some free disk space."
-msgstr ""
+msgstr "此功能通过将 [.filename]#geom_journal.ko# 模块加载到内核中（或将其编译进自定义内核），并使用 `gjournal` 命令配置文件系统来提供。通常应为较大的文件系统（例如 [.filename]#/usr#）启用日志记录。不过，需要预留一些磁盘空间（见下一节）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:261
+#, fuzzy
 msgid ""
 "GEOM journaling is implemented by the `geom_journal` kernel module and is "
 "configured using the `gjournal(8)` utility.  It provides block-level "
 "journaling below the file system layer and requires explicit cooperation "
 "from UFS."
-msgstr ""
+msgstr "GEOM 日志记录由 `geom_journal` 内核模块实现，并使用 `gjournal(8)` 工具进行配置。它在文件系统层之下提供块级日志记录，并且需要 UFS 显式配合。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:264
+#, fuzzy
 msgid ""
 "When GEOM journaling is used, some disk space is needed to keep the journal "
 "itself.  The provider that contains the file system data is referred to as "
 "the _data provider_, while the provider that stores the journal is referred "
 "to as the _journal provider_."
-msgstr ""
+msgstr "使用 GEOM 日志记录时，需要一些磁盘空间来存放日志本身。包含文件系统数据的提供者称为__数据提供者__，而存储日志的提供者称为__日志提供者__。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:269
+#, fuzzy
 msgid ""
 "When journaling an existing (non-empty) file system, the data and journal "
 "providers must be separate.  When journaling a new, empty file system, a "
@@ -632,581 +697,633 @@ msgid ""
 "both cases, `gjournal(8)` combines the data and journal providers to create "
 "a new journaled provider, which is then mounted by the file system.  For "
 "example:"
-msgstr ""
+msgstr "为现有的（非空）文件系统启用日志记录时，数据提供者和日志提供者必须分开。为新的空文件系统启用日志记录时，可以使用单个提供者同时存储数据和日志信息。在这两种情况下，`gjournal(8)` 都会组合数据提供者和日志提供者，创建新的日志提供者，然后由文件系统挂载该提供者。例如："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:271
+#, fuzzy
 msgid ""
 "The `/usr` file system resides on `/dev/ada0p2` and already contains data."
-msgstr ""
+msgstr "`/usr` 文件系统位于 `/dev/ada0p2`，且其中已包含数据。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:272
+#, fuzzy
 msgid ""
 "Free disk space has been allocated in a separate partition, `/dev/ada0p4`, "
 "to hold the journal."
-msgstr ""
+msgstr "已在单独的分区 `/dev/ada0p4` 上分配空闲磁盘空间，用于存放日志。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:274
+#, fuzzy
 msgid ""
 "After configuring GEOM journaling, a new provider `/dev/ada0p2.journal` is "
 "created.  This journaled provider combines `/dev/ada0p2` as the data "
 "provider and `/dev/ada0p4` as the journal provider and is used for all "
 "subsequent file system operations."
-msgstr ""
+msgstr "配置 GEOM 日志后，会创建新的提供者 `/dev/ada0p2.journal`。这个日志提供者将 `/dev/ada0p2` 用作数据提供者，将 `/dev/ada0p4` 用作日志提供者，并用于后续所有文件系统操作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:277
+#, fuzzy
 msgid ""
 "The amount of disk space required for the journal depends primarily on the "
 "write workload of the file system rather than on the size of the data "
 "provider.  Systems with sustained or bursty write activity require larger "
 "journals to avoid excessive journal switching or write throttling."
-msgstr ""
+msgstr "日志所需的磁盘空间主要取决于文件系统的写入负载，而不是数据提供者的大小。持续或突发写入活动的系统需要更大的日志，以避免频繁切换日志或限制写入速度。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:279
+#, fuzzy
 msgid "From the man page `gjournal(8)`:"
-msgstr ""
+msgstr "摘自手册页 `gjournal(8)`："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:281
+#, fuzzy
 msgid "The default journal size is 1 GB."
-msgstr ""
+msgstr "默认日志大小为 1 GB。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:282
+#, fuzzy
 msgid ""
 "The recommended minimum journal size is twice the amount of installed "
 "physical memory."
-msgstr ""
+msgstr "建议的最小日志大小为已安装物理内存的两倍。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:283
+#, fuzzy
 msgid ""
 "The journal size should be chosen based on expected write load, not file "
 "system size."
-msgstr ""
+msgstr "日志大小应根据预期写入负载来选择，而不是根据文件系统大小。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:285
+#, fuzzy
 msgid ""
 "An undersized journal may result in degraded performance or forced journal "
 "switches under heavy write load."
-msgstr ""
+msgstr "日志空间过小可能会导致性能下降，或在写入负载较重时强制切换日志。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:287
+#, fuzzy
 msgid ""
 "For more information about journaling, please read the manual page of man:"
 "gjournal[8]."
-msgstr ""
+msgstr "有关日志的更多信息，请参阅手册页 man:gjournal[8]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Steps During the Installation of FreeBSD"
-msgstr ""
+msgstr "FreeBSD 安装过程中的步骤"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:293
+#, fuzzy
 msgid ""
 "This section describes optional installation-time preparation for systems "
 "that are configured to use GEOM journaling.  The goal is to reserve disk "
 "space for journal providers that will later be associated with the `/usr` "
 "and `/var` file systems."
-msgstr ""
+msgstr "本节介绍为配置为使用 GEOM 日志的系统进行的可选安装准备工作。目的是预留磁盘空间，供稍后与 `/usr` 和 `/var` 文件系统关联的日志提供者使用。"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reserving Space for Journaling"
-msgstr ""
+msgstr "为日志预留空间"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:298
+#, fuzzy
 msgid ""
 "On a typical system with a single disk, the operating system, installed "
 "software, and user data all reside on the same device.  The default "
 "automatic partitioning performed by the FreeBSD installer allocates most "
 "available space to `/usr`, with smaller partitions for `/var` and other "
 "mount points."
-msgstr ""
+msgstr "在典型的单磁盘系统中，操作系统、已安装的软件和用户数据都位于同一设备上。FreeBSD 安装程序默认执行的自动分区会将大部分可用空间分配给 `/usr`，并为 `/var` 和其他挂载点分配较小的分区。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:302
+#, fuzzy
 msgid ""
 "By default, the installer allocates all available disk space to file systems "
 "and does not leave unused space.  When GEOM journaling is planned for "
 "existing (non-empty) file systems, additional disk space must be reserved to "
 "hold journal providers.  Each file system that will be journaled requires "
 "its own journal provider."
-msgstr ""
+msgstr "默认情况下，安装程序会将所有可用磁盘空间分配给文件系统，不会留下未使用的空间。如果计划为现有（非空）文件系统启用 GEOM 日志，则必须预留额外磁盘空间来存放日志提供者。每个要启用日志的文件系统都需要一个单独的日志提供者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:304
+#, fuzzy
 msgid ""
 "Since `/usr` typically occupies the largest portion of the disk, it is "
 "usually the most practical partition to reduce slightly in order to make "
 "room for journal providers."
-msgstr ""
+msgstr "由于 `/usr` 通常占用磁盘的大部分空间，因此通常最适合稍微缩小该分区，为日志提供者腾出空间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:306
+#, fuzzy
 msgid "In our example GEOM journaling is planned for both `/usr` and `/var`."
-msgstr ""
+msgstr "在我们的示例中，计划为 `/usr` 和 `/var` 启用 GEOM 日志。"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Partitioning Strategy"
-msgstr ""
+msgstr "分区策略"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:311
+#, fuzzy
 msgid ""
 "During installation, use the manual partitioning mode provided by the "
 "installer.  Create any supported file system type for `/`, and create "
 "standard UFS partitions for `/usr` and `/var`, but reduce the size of `/usr` "
 "to leave sufficient unallocated space at the end of the disk."
-msgstr ""
+msgstr "安装时，请使用安装程序提供的手动分区模式。为 `/` 创建任意受支持类型的文件系统，并为 `/usr` 和 `/var` 创建标准 UFS 分区，但要缩小 `/usr` 的大小，以便在磁盘末尾留下足够的未分配空间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:313
+#, fuzzy
 msgid ""
 "From the remaining unallocated space, create two additional partitions that "
 "will be used exclusively as journal providers:"
-msgstr ""
+msgstr "在剩余的未分配空间中，再创建两个专门用作日志提供者的分区："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:315
+#, fuzzy
 msgid "One partition for the `/usr` journal"
-msgstr ""
+msgstr "一个分区用于 `/usr` 日志"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:316
+#, fuzzy
 msgid "One partition for the `/var` journal"
-msgstr ""
+msgstr "一个分区用于 `/var` 日志"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:319
+#, fuzzy
 msgid ""
 "These partitions must not be assigned mount points and must not be used for "
 "swap.  They will remain unused until they are explicitly associated with "
 "their corresponding data providers using `gjournal(8)` after installation."
-msgstr ""
+msgstr "这些分区不得分配挂载点，也不得用作交换空间。在安装后使用 `gjournal(8)` 将它们明确关联到相应的数据提供者之前，这些分区将保持未使用状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:321
+#, fuzzy
 msgid "A typical layout may look like the following:"
-msgstr ""
+msgstr "典型的布局如下所示："
 
 #. type: Block title
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Partitions Reserved for GEOM Journaling"
-msgstr ""
+msgstr "为 GEOM 日志预留的分区"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Provider"
-msgstr ""
+msgstr "提供者"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Intended Use"
-msgstr ""
+msgstr "预期用途"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "备注"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/ada0p2"
-msgstr ""
+msgstr "/dev/ada0p2"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/var"
-msgstr ""
+msgstr "/var"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:333
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UFS file system (data provider)"
-msgstr ""
+msgstr "UFS 文件系统（数据提供者）"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/ada0p3"
-msgstr ""
+msgstr "/dev/ada0p3"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/usr"
-msgstr ""
+msgstr "/usr"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/ada0p4"
-msgstr ""
+msgstr "/dev/ada0p4"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Journal for /var"
-msgstr ""
+msgstr "/var 的日志"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:341
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Unformatted, unused partition"
-msgstr ""
+msgstr "未格式化、未使用的分区"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/ada0p5"
-msgstr ""
+msgstr "/dev/ada0p5"
 
 #. type: Table
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Journal for /usr"
-msgstr ""
+msgstr "/usr 的日志"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:348
+#, fuzzy
 msgid ""
 "The exact device names will vary depending on the disk layout and "
 "partitioning scheme.  It is strongly recommended to record the provider "
 "names during installation, as they will be required during journal "
 "configuration."
-msgstr ""
+msgstr "确切的设备名称会因磁盘布局和分区方案而异。强烈建议在安装时记录提供者名称，因为配置日志时需要用到这些名称。"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Journal Size Considerations"
-msgstr ""
+msgstr "日志大小注意事项"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:354
+#, fuzzy
 msgid ""
 "Journal size depends on the expected write workload rather than on the size "
 "of the file system.  For general-purpose systems, journal sizes of 1–2 GB "
 "are commonly sufficient.  Systems with sustained or bursty write activity "
 "may require larger journals."
-msgstr ""
+msgstr "日志大小取决于预期写入负载，而不是文件系统的大小。对于通用系统，1–2 GB 的日志通常足够。持续或突发写入活动的系统可能需要更大的日志。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:356
+#, fuzzy
 msgid ""
 "Allocate journal space conservatively during installation, as resizing "
 "partitions later may require additional downtime."
-msgstr ""
+msgstr "安装时应谨慎分配日志空间，因为之后调整分区大小可能需要额外停机时间。"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Completing the Installation"
-msgstr ""
+msgstr "完成安装"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:361
+#, fuzzy
 msgid ""
 "After reserving the required partitions, complete the FreeBSD installation "
 "normally.  It is recommended to postpone the installation of third-party "
 "software and additional system configuration until GEOM journaling has been "
 "fully configured."
-msgstr ""
+msgstr "预留所需分区后，按常规完成 FreeBSD 安装。建议暂缓安装第三方软件和进行其他系统配置，直到 GEOM 日志完成全部配置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:364
+#, fuzzy
 msgid ""
 "At this stage, the system will boot using the standard UFS file systems.  "
 "The reserved journal partitions will remain unused until journaling is "
 "explicitly enabled."
-msgstr ""
+msgstr "此时，系统将使用标准 UFS 文件系统启动。预留的日志分区在明确启用日志之前将保持未使用状态。"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "First Boot After Installation"
-msgstr ""
+msgstr "安装后的首次启动"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:370
+#, fuzzy
 msgid ""
 "After the first successful boot, no immediate configuration changes are "
 "required.  The system should be verified to boot and operate normally before "
 "proceeding."
-msgstr ""
+msgstr "首次成功启动后，无需立即更改配置。继续操作前，应确认系统能够正常启动和运行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:372
+#, fuzzy
 msgid ""
 "Once the base system is confirmed to be functional, the next steps involve:"
-msgstr ""
+msgstr "确认基本系统正常运行后，接下来需要："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:374
+#, fuzzy
 msgid "Loading or enabling GEOM journaling support"
-msgstr ""
+msgstr "加载或启用 GEOM 日志支持"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:375
+#, fuzzy
 msgid "Associating journal providers with their corresponding data providers"
-msgstr ""
+msgstr "将日志提供者与相应的数据提供者关联"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:376
+#, fuzzy
 msgid "Updating `/etc/fstab` to mount the journaled devices"
-msgstr ""
+msgstr "更新 `/etc/fstab`，以挂载启用了日志的设备"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:378
+#, fuzzy
 msgid "These steps are described in the following section."
-msgstr ""
+msgstr "这些步骤将在下一节中介绍。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Setting Up Journaling"
-msgstr ""
+msgstr "设置日志"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling GEOM Journaling on Existing File Systems"
-msgstr ""
+msgstr "在现有文件系统上启用 GEOM 日志"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:386
+#, fuzzy
 msgid ""
 "This section describes how to enable GEOM journaling on the `/usr` and `/"
 "var` file systems using the partitions prepared during installation."
-msgstr ""
+msgstr "本节介绍如何使用安装期间准备的分区，在 `/usr` 和 `/var` 文件系统上启用 GEOM 日志。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:389
+#, fuzzy
 msgid ""
 "Once the required journal providers have been reserved, GEOM journaling can "
 "be configured.  Because the file systems to be journaled must not be "
 "mounted, the system must be switched to single-user mode."
-msgstr ""
+msgstr "预留所需的日志提供者后，即可配置 GEOM 日志。由于要启用日志的文件系统必须处于未挂载状态，因此必须将系统切换到单用户模式。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:391
+#, fuzzy
 msgid "Log in as `root` and enter:"
-msgstr ""
+msgstr "以 `root` 身份登录并输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:395
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:718
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# shutdown now\n"
-msgstr ""
+msgstr "# shutdown now\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:400
+#, fuzzy
 msgid ""
 "Press kbd:[Enter] to obtain a root shell.  Unmount the file systems that "
 "will be journaled.  In this example, `/usr` and `/var`:"
-msgstr ""
+msgstr "按 kbd:[Enter] 进入 root shell。卸载要启用日志的文件系统。本例中为 `/usr` 和 `/var`："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:404
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:725
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# umount /usr /var\n"
-msgstr ""
+msgstr "# umount /usr /var\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:407
+#, fuzzy
 msgid "Load the GEOM journaling kernel module:"
-msgstr ""
+msgstr "加载 GEOM 日志内核模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:411
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:690
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal load\n"
-msgstr ""
+msgstr "# gjournal load\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:415
+#, fuzzy
 msgid ""
 "Next, associate each data provider with its corresponding journal provider.  "
 "Use your notes to determine which partition will be used for each journal."
-msgstr ""
+msgstr "接下来，将每个数据提供者与相应的日志提供者关联。根据记录确定每个日志所用的分区。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:417
+#, fuzzy
 msgid "In this example:"
-msgstr ""
+msgstr "在本例中："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:419
+#, fuzzy
 msgid ""
 "`/usr` resides on `/dev/ada0p3` and its journal provider is `/dev/ada0p5`"
-msgstr ""
+msgstr "`/usr` 位于 `/dev/ada0p3`，其日志提供者为 `/dev/ada0p5`"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:420
+#, fuzzy
 msgid ""
 "`/var` resides on `/dev/ada0p2` and its journal provider is `/dev/ada0p4`"
-msgstr ""
+msgstr "`/var` 位于 `/dev/ada0p2`，其日志提供者为 `/dev/ada0p4`"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:422
+#, fuzzy
 msgid "Create the journaled providers using `gjournal(8)`:"
-msgstr ""
+msgstr "使用 `gjournal(8)` 创建启用了日志的提供者："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:429
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gjournal label ada0p3 ada0p5\n"
 "GEOM_JOURNAL: Journal 2948326772: ada0p5 contains journal.\n"
 "GEOM_JOURNAL: Journal 2948326772: ada0p3 contains data.\n"
 "GEOM_JOURNAL: Journal ada0p3 clean.\n"
-msgstr ""
+msgstr "# gjournal label ada0p3 ada0p5\nGEOM_JOURNAL: Journal 2948326772: ada0p5 contains journal.\nGEOM_JOURNAL: Journal 2948326772: ada0p3 contains data.\nGEOM_JOURNAL: Journal ada0p3 clean.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gjournal label ada0p2 ada0p4\n"
 "GEOM_JOURNAL: Journal 3193218002: ada0p4 contains journal.\n"
 "GEOM_JOURNAL: Journal 3193218002: ada0p2 contains data.\n"
 "GEOM_JOURNAL: Journal ada0p2 clean.\n"
-msgstr ""
+msgstr "# gjournal label ada0p2 ada0p4\nGEOM_JOURNAL: Journal 3193218002: ada0p4 contains journal.\nGEOM_JOURNAL: Journal 3193218002: ada0p2 contains data.\nGEOM_JOURNAL: Journal ada0p2 clean.\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:441
+#, fuzzy
 msgid ""
 "If `gjournal` reports that the last sector of a provider is in use, the "
 "command will fail.  On freshly created or unused partitions, it is safe to "
 "retry the operation with the `-f` flag to force initialization:"
-msgstr ""
+msgstr "如果 `gjournal` 报告某个提供者的最后一个扇区正在使用，该命令将失败。对于新建或未使用的分区，可以安全地使用 `-f` 标志强制初始化并重试："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal label -f /dev/ada0p2 /dev/ada0p4\n"
-msgstr ""
+msgstr "# gjournal label -f /dev/ada0p2 /dev/ada0p4\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:449
+#, fuzzy
 msgid "After labeling, two new journaled providers are created:"
-msgstr ""
+msgstr "添加标签后，将创建两个新的日志提供者："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:451
+#, fuzzy
 msgid "`/dev/ada0p3.journal` for `/usr`"
-msgstr ""
+msgstr "`/usr` 使用 `/dev/ada0p3.journal`"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:452
+#, fuzzy
 msgid "`/dev/ada0p2.journal` for `/var`"
-msgstr ""
+msgstr "`/var` 使用 `/dev/ada0p2.journal`"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:454
+#, fuzzy
 msgid ""
 "These devices will replace the original data providers when mounting the "
 "file systems."
-msgstr ""
+msgstr "挂载文件系统时，这些设备将取代原始数据提供者。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:456
+#, fuzzy
 msgid ""
 "Before mounting, we must however set the journal flag on them and clear the "
 "Soft Updates flag:"
-msgstr ""
+msgstr "不过，在挂载之前，我们必须为这些设备设置日志标志并清除 Soft Updates 标志："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tunefs -J enable -n disable -j disable /dev/ada0p3.journal\n"
 "tunefs: soft updates journaling cleared but soft updates still set\n"
 "tunefs: remove .sujournal to reclaim space\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared\n"
-msgstr ""
+msgstr "# tunefs -J enable -n disable -j disable /dev/ada0p3.journal\ntunefs: soft updates journaling cleared but soft updates still set\ntunefs: remove .sujournal to reclaim space\ntunefs: gjournal set\ntunefs: soft updates cleared\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tunefs -J enable -n disable -j disable /dev/ada0p2.journal\n"
 "tunefs: soft updates journaling cleared but soft updates still set\n"
 "tunefs: remove .sujournal to reclaim space\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared\n"
-msgstr ""
+msgstr "# tunefs -J enable -n disable -j disable /dev/ada0p2.journal\ntunefs: soft updates journaling cleared but soft updates still set\ntunefs: remove .sujournal to reclaim space\ntunefs: gjournal set\ntunefs: soft updates cleared\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:473
+#, fuzzy
 msgid ""
 "Now, mount the new devices manually at their respective places to verify "
 "correct operation (note that we can now use the `async` mount option) and "
 "remove [.filename]#.sujournal# to reclaim space:"
-msgstr ""
+msgstr "现在，手动将新设备挂载到各自的位置，以验证其运行是否正常（注意，现在可以使用 `async` 挂载选项），并删除 [.filename]#.sujournal# 以回收空间："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:480
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount -o async /dev/ada0p2.journal /var\n"
 "# rm /var/.sujournal\n"
 "# mount -o async /dev/ada0p3.journal /usr\n"
 "# rm /usr/.sujournal\n"
-msgstr ""
+msgstr "# mount -o async /dev/ada0p2.journal /var\n# rm /var/.sujournal\n# mount -o async /dev/ada0p3.journal /usr\n# rm /usr/.sujournal\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:483
+#, fuzzy
 msgid ""
 "Edit [.filename]#/etc/fstab# and update the entries for [.filename]#/usr# "
 "and [.filename]#/var#:"
-msgstr ""
+msgstr "编辑 [.filename]#/etc/fstab#，并更新 [.filename]#/usr# 和 [.filename]#/var# 的条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:488
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/dev/ada0p3.journal    /usr    ufs     rw,async      2       2\n"
 "/dev/ada0p2.journal    /var    ufs     rw,async      2       2\n"
-msgstr ""
+msgstr "/dev/ada0p3.journal    /usr    ufs     rw,async      2       2\n/dev/ada0p2.journal    /var    ufs     rw,async      2       2\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:493
+#, fuzzy
 msgid ""
 "Make sure the above entries are correct, or you will have trouble starting "
 "up normally after you reboot!"
-msgstr ""
+msgstr "请确保上述条目正确，否则重启后可能无法正常启动！"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:496
+#, fuzzy
 msgid ""
 "Finally, edit [.filename]#/boot/loader.conf# and add the following line so "
 "the man:gjournal[8] module is loaded at every boot:"
-msgstr ""
+msgstr "最后，编辑 [.filename]#/boot/loader.conf# 并添加以下行，以便在每次启动时加载 man:gjournal[8] 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:500
@@ -1218,27 +1335,29 @@ msgstr "geom_journal_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:504
+#, fuzzy
 msgid ""
 "Congratulations! Your system is now set for journaling.  You can either type "
 "`exit` to return to multi-user mode, or reboot to test your configuration "
 "(recommended)."
-msgstr ""
+msgstr "恭喜！系统现已配置为使用日志。可以输入 `exit` 返回多用户模式，也可以重启以测试配置（推荐）。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:508
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:762
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# shutdown -r now\n"
-msgstr ""
+msgstr "# shutdown -r now\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:511
+#, fuzzy
 msgid "During the boot you will see messages like the following:"
-msgstr ""
+msgstr "启动过程中会看到类似以下的消息："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:521
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dmesg | grep GEOM_JOURNAL\n"
 "GEOM_JOURNAL: Journal 2948326772: ada0p4 contains journal.\n"
@@ -1247,50 +1366,55 @@ msgid ""
 "GEOM_JOURNAL: Journal ada0p2 clean.\n"
 "GEOM_JOURNAL: Journal 3193218002: ada0p3 contains data.\n"
 "GEOM_JOURNAL: Journal ada0p3 clean.\n"
-msgstr ""
+msgstr "# dmesg | grep GEOM_JOURNAL\nGEOM_JOURNAL: Journal 2948326772: ada0p4 contains journal.\nGEOM_JOURNAL: Journal 3193218002: ada0p5 contains journal.\nGEOM_JOURNAL: Journal 2948326772: ada0p2 contains data.\nGEOM_JOURNAL: Journal ada0p2 clean.\nGEOM_JOURNAL: Journal 3193218002: ada0p3 contains data.\nGEOM_JOURNAL: Journal ada0p3 clean.\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:524
+#, fuzzy
 msgid "After an unclean shutdown, the messages will vary slightly, i.e.:"
-msgstr ""
+msgstr "非正常关机后，消息会略有不同，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:528
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM_JOURNAL: Journal ada0p2 consistent.\n"
-msgstr ""
+msgstr "GEOM_JOURNAL: Journal ada0p2 consistent.\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:531
+#, fuzzy
 msgid ""
 "This usually means that man:gjournal[8] used the information in the journal "
 "provider to return the file system to a consistent state."
-msgstr ""
+msgstr "这通常意味着 man:gjournal[8] 使用日志提供者中的信息，将文件系统恢复到了一个一致的状态。"
 
 #. type: Title ====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Enabling GEOM Journaling on Newly Created Partitions"
-msgstr ""
+msgstr "在新建分区上启用 GEOM 日志"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:537
+#, fuzzy
 msgid ""
 "The procedure described earlier is required when enabling GEOM journaling on "
 "file systems that already contain data.  When journaling a newly created, "
 "empty partition, the process is simpler because both the data and journal "
 "providers can reside within the same partition."
-msgstr ""
+msgstr "在已包含数据的文件系统上启用 GEOM 日志时，需要执行前面介绍的步骤。对于新建的空分区，过程更简单，因为数据提供者和日志提供者可以位于同一个分区中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:539
+#, fuzzy
 msgid ""
 "This approach is typically used for new disks or newly allocated partitions "
 "that have not yet been formatted with a file system."
-msgstr ""
+msgstr "这种方法通常用于尚未格式化文件系统的新磁盘或新分配的分区。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:544
+#, fuzzy
 msgid ""
 "While the above procedure is necessary for journaling partitions that "
 "already contain data, journaling an empty partition is somewhat easier, "
@@ -1298,241 +1422,263 @@ msgid ""
 "partition.  For example, assume a new disk was installed, and a new "
 "partition [.filename]#/dev/ada1p1# was created.  Creating the journal would "
 "be as simple as:"
-msgstr ""
+msgstr "对于已经包含数据的分区，必须执行上述步骤才能启用日志记录；而为空分区启用日志记录要简单一些，因为数据和日志提供者可以存储在同一分区中。例如，假设安装了一块新磁盘，并创建了一个新分区 [.filename]#/dev/ada1p1#。创建日志只需执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:548
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal label /dev/ada1p1\n"
-msgstr ""
+msgstr "# gjournal label /dev/ada1p1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:554
+#, fuzzy
 msgid ""
 "The journal size will be 1 GB by default.  You may adjust it by using the `-"
 "s` option.  The value can be given in bytes, or appended by `K`, `M` or `G` "
 "to denote Kilobytes, Megabytes or Gigabytes respectively.  Note that "
 "`gjournal` will not allow you to create unsuitably small journal sizes."
-msgstr ""
+msgstr "默认日志大小为 1 GB。可以使用 `-s` 选项调整大小。值可以用字节表示，也可以在数值后附加 `K`、`M` 或 `G`，分别表示千字节、兆字节或吉字节。请注意，`gjournal` 不允许创建过小的日志。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:556
+#, fuzzy
 msgid ""
 "For example, to create a 2 GB journal, you could use the following command:"
-msgstr ""
+msgstr "例如，要创建 2 GB 的日志，可以使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:560
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal label -s 2G /dev/ada1p1\n"
-msgstr ""
+msgstr "# gjournal label -s 2G /dev/ada1p1\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:563
+#, fuzzy
 msgid ""
 "You can then initialize a UFS file system on your new partition, enable "
 "journaling using `newfs(8)` on the `.journal` device, and disable Soft "
 "Updates using `tunefs(8)`:"
-msgstr ""
+msgstr "然后，可以在新分区上初始化 UFS 文件系统，使用 `newfs(8)` 在 `.journal` 设备上启用日志记录，并使用 `tunefs(8)` 禁用 Soft Updates："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# newfs -J /dev/ada1p1.journal\n"
 "# tunefs -n disable -j disable /dev/ada1p1.journal\n"
-msgstr ""
+msgstr "# newfs -J /dev/ada1p1.journal\n# tunefs -n disable -j disable /dev/ada1p1.journal\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:572
+#, fuzzy
 msgid ""
 "After the file system has been created, it can be mounted normally.  For "
 "example, to mount it at `/data`:"
-msgstr ""
+msgstr "创建文件系统后，可以像平常一样挂载。例如，将其挂载到 `/data`："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:576
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /dev/ada1p1.journal /data\n"
-msgstr ""
+msgstr "# mount /dev/ada1p1.journal /data\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:579
+#, fuzzy
 msgid ""
 "To ensure the file system is mounted automatically at boot, add an entry to "
 "[.filename]#/etc/fstab#:"
-msgstr ""
+msgstr "要确保文件系统在启动时自动挂载，请在 [.filename]#/etc/fstab# 中添加一条记录："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:583
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "/dev/ada1p1.journal    /data   ufs     rw,async      2       2\n"
-msgstr ""
+msgstr "/dev/ada1p1.journal    /data   ufs     rw,async      2       2\n"
 
 #. type: Title =====
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:585
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Notes on Usage"
-msgstr ""
+msgstr "使用注意事项"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:588
+#, fuzzy
 msgid "When using a single provider for both data and journal storage:"
-msgstr ""
+msgstr "使用同一个提供者同时存储数据和日志时："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:590
+#, fuzzy
 msgid "The partition must be empty before labeling"
-msgstr ""
+msgstr "标记之前分区必须为空"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:591
+#, fuzzy
 msgid "The journal space is allocated from within the partition"
-msgstr ""
+msgstr "日志空间从分区内部划分"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:592
+#, fuzzy
 msgid "The file system size will be reduced by the size of the journal"
-msgstr ""
+msgstr "文件系统大小将缩减日志的大小"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:594
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building Journaling into Your Custom Kernel"
-msgstr ""
+msgstr "将日志功能编入自定义内核"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:598
+#, fuzzy
 msgid ""
 "If you do not wish to load `geom_journal` as a module, you can build its "
 "functions right into your kernel.  Edit your custom kernel configuration "
 "file, and make sure it includes these two lines:"
-msgstr ""
+msgstr "如果不想将 `geom_journal` 作为模块加载，可以将其功能直接编入内核。编辑自定义内核配置文件，并确保其中包含以下两行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:602
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options UFS_GJOURNAL <1>\n"
-msgstr ""
+msgstr "options UFS_GJOURNAL <1>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:604
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "options GEOM_JOURNAL <2>\n"
-msgstr ""
+msgstr "options GEOM_JOURNAL <2>\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:607
+#, fuzzy
 msgid "Note: This is already in GENERIC"
-msgstr ""
+msgstr "注意：这已包含在 GENERIC 中"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:608
+#, fuzzy
 msgid "You will have to add this one"
-msgstr ""
+msgstr "需要添加这一行"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:611
+#, fuzzy
 msgid ""
 "Rebuild and reinstall your kernel following the relevant extref:{handbook}"
 "kernelconfig[instructions in the FreeBSD Handbook., kernelconfig]"
-msgstr ""
+msgstr "按照 extref:{handbook}kernelconfig[FreeBSD 手册中的相关说明。, kernelconfig] 重新构建并安装内核"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:613
+#, fuzzy
 msgid ""
 "Do not forget to remove the relevant \"load\" entry from [.filename]#/boot/"
 "loader.conf# if you have previously used it."
-msgstr ""
+msgstr "如果以前使用过，请不要忘记从 [.filename]#/boot/loader.conf# 中删除相应的 \"load\" 条目。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:614
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Checking GEOM Journaling"
-msgstr ""
+msgstr "检查 GEOM 日志"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:617
+#, fuzzy
 msgid ""
 "GEOM journaling status can be verified by inspecting active GEOM providers."
-msgstr ""
+msgstr "检查活动的 GEOM 提供者即可验证 GEOM 日志状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:619
+#, fuzzy
 msgid "To list all active GEOM journal devices, run:"
-msgstr ""
+msgstr "要列出所有活动的 GEOM 日志设备，请运行："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:623
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal list\n"
-msgstr ""
+msgstr "# gjournal list\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:626
+#, fuzzy
 msgid "Or to view a summary of journal status:"
-msgstr ""
+msgstr "或者，查看日志状态摘要："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:630
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal status\n"
-msgstr ""
+msgstr "# gjournal status\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:634
+#, fuzzy
 msgid ""
 "Journaled file systems are identified by device names ending in `.journal`.  "
 "The presence of these providers indicates that GEOM journaling is active."
-msgstr ""
+msgstr "带日志的文件系统，其设备名称以 `.journal` 结尾。这些提供者的存在表明 GEOM 日志功能已启用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:636
+#, fuzzy
 msgid "Additional information about GEOM device stacking can be obtained with:"
-msgstr ""
+msgstr "可以使用以下命令获取有关 GEOM 设备堆叠的更多信息："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:640
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# geom -t\n"
-msgstr ""
+msgstr "# geom -t\n"
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:648
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dumpfs /dev/ada0p2.journal | grep -i journal\n"
 "flags   gjournal\n"
-msgstr ""
+msgstr "# dumpfs /dev/ada0p2.journal | grep -i journal\nflags   gjournal\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:652
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Troubleshooting Journaling"
-msgstr ""
+msgstr "日志功能故障排除"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:655
+#, fuzzy
 msgid ""
 "The following section covers frequently asked questions regarding problems "
 "related to journaling."
-msgstr ""
+msgstr "以下部分介绍与日志功能相关问题的常见问答。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:656
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I am experiencing kernel panics during periods of high disk activity. Is this related to GEOM journaling?"
-msgstr ""
+msgstr "磁盘活动繁忙时系统会发生内核崩溃。这与 GEOM 日志有关吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:659
+#, fuzzy
 msgid ""
 "On modern FreeBSD systems, kernel panics caused solely by an undersized GEOM "
 "journal are rare."
-msgstr ""
+msgstr "在现代 FreeBSD 系统中，单纯由 GEOM 日志空间不足导致的内核崩溃很少见。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:662
+#, fuzzy
 msgid ""
 "Under sustained or burst-heavy write workloads, an undersized journal "
 "typically results in write throttling or temporary I/O stalls while the "
@@ -1540,23 +1686,25 @@ msgid ""
 "exceptional cases, usually in combination with additional problems such as I/"
 "O errors or resource exhaustion, where continuing operation could risk file "
 "system integrity."
-msgstr ""
+msgstr "在持续写入或突发写入负载下，日志空间不足通常会导致写入限流，或在日志刷新到数据提供者期间出现暂时的 I/O 停顿。只有在极少数情况下才可能发生内核崩溃，通常还伴有 I/O 错误或资源耗尽等其他问题；在这些情况下，继续运行可能会危及文件系统完整性。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:664
+#, fuzzy
 msgid ""
 "If panics are observed during heavy write activity, increasing the size of "
 "the journal provider for the affected file system is recommended."
-msgstr ""
+msgstr "如果在大量写入期间发生内核崩溃，建议增大受影响文件系统的日志提供者容量。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:665
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "I made some mistake during configuration, and I cannot boot normally now. Can this be fixed some way?"
-msgstr ""
+msgstr "配置时出了差错，现在无法正常启动。有什么办法可以修复吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:671
+#, fuzzy
 msgid ""
 "You either forgot (or misspelled) the entry in [.filename]#/boot/loader."
 "conf#, or there are errors in your [.filename]#/etc/fstab# file.  These are "
@@ -1564,30 +1712,32 @@ msgid ""
 "prompts for single-user mode (for example after a failed mount or `fsck` "
 "error), press kbd:[Enter] to get to the default single user shell.  Then "
 "locate the root of the problem:"
-msgstr ""
+msgstr "可能是忘记了在 [.filename]#/boot/loader.conf# 中添加条目（或拼错了），也可能是 [.filename]#/etc/fstab# 文件中有错误。这些问题通常很容易修复。系统启动时，如果启动过程停止并提示进入单用户模式（例如，挂载失败或出现 `fsck` 错误后），按 kbd:[Enter] 进入默认的单用户 shell。然后找出问题所在："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:675
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cat /boot/loader.conf\n"
-msgstr ""
+msgstr "# cat /boot/loader.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:678
+#, fuzzy
 msgid "Ensure that the following line exists and is spelled correctly:"
-msgstr ""
+msgstr "确认存在以下行且拼写正确："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:686
+#, fuzzy
 msgid ""
 "If the `geom_journal_load` entry is missing or misspelled, the journaled "
 "devices are never created.  Load the module manually, mount all partitions, "
 "and continue with multi-user boot:"
-msgstr ""
+msgstr "如果缺少 `geom_journal_load` 条目或其拼写有误，就不会创建日志设备。手动加载模块，挂载所有分区，然后继续启动到多用户模式："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:697
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "GEOM_JOURNAL: Journal 2948326772: ada0p4 contains journal.\n"
 "GEOM_JOURNAL: Journal 3193218002: ada0p5 contains journal.\n"
@@ -1595,92 +1745,101 @@ msgid ""
 "GEOM_JOURNAL: Journal ada0p2 clean.\n"
 "GEOM_JOURNAL: Journal 3193218002: ada0p3 contains data.\n"
 "GEOM_JOURNAL: Journal ada0p3 clean.\n"
-msgstr ""
+msgstr "GEOM_JOURNAL: Journal 2948326772: ada0p4 contains journal.\nGEOM_JOURNAL: Journal 3193218002: ada0p5 contains journal.\nGEOM_JOURNAL: Journal 2948326772: ada0p2 contains data.\nGEOM_JOURNAL: Journal ada0p2 clean.\nGEOM_JOURNAL: Journal 3193218002: ada0p3 contains data.\nGEOM_JOURNAL: Journal ada0p3 clean.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:701
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount -a\n"
 "# exit\n"
 "(boot continues)\n"
-msgstr ""
+msgstr "# mount -a\n# exit\n(boot continues)\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:706
+#, fuzzy
 msgid ""
 "If, on the other hand, this entry is correct, have a look at [.filename]#/"
 "etc/fstab#.  You will probably find a misspelled or missing entry.  In this "
 "case, mount all remaining partitions by hand and continue with the multi-"
 "user boot."
-msgstr ""
+msgstr "另一方面，如果该条目正确，请检查 [.filename]#/etc/fstab#。很可能是条目拼写有误或缺失。在这种情况下，手动挂载其余分区，然后继续启动到多用户模式。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:707
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can I remove journaling and return to my standard file system with Soft Updates?"
-msgstr ""
+msgstr "可以移除日志功能并恢复为使用 Soft Updates 的标准文件系统吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:712
+#, fuzzy
 msgid ""
 "Sure.  Use the following procedure, which reverses the changes.  The "
 "partitions you created for the journal providers can then be used for other "
 "purposes, if you so wish."
-msgstr ""
+msgstr "当然可以。使用以下步骤即可撤销所做的更改。如果愿意，之后可以将为日志提供者创建的分区用于其他用途。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:714
+#, fuzzy
 msgid "Login as `root` and switch to single user mode:"
-msgstr ""
+msgstr "以 `root` 身份登录并切换到单用户模式："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:721
+#, fuzzy
 msgid "Unmount the journaled partitions:"
-msgstr ""
+msgstr "卸载带日志的分区："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:728
+#, fuzzy
 msgid "Synchronize the journals:"
-msgstr ""
+msgstr "同步日志："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:732
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gjournal sync\n"
-msgstr ""
+msgstr "# gjournal sync\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:735
+#, fuzzy
 msgid "Stop the journaling providers:"
-msgstr ""
+msgstr "停止日志提供者："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:740
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gjournal stop ada0p2.journal\n"
 "# gjournal stop ada0p3.journal\n"
-msgstr ""
+msgstr "# gjournal stop ada0p2.journal\n# gjournal stop ada0p3.journal\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:744
+#, fuzzy
 msgid ""
 "Next step should be done with unloaded gjournal kernel module.  If the "
 "following command fails:"
-msgstr ""
+msgstr "接下来的步骤应在卸载 gjournal 内核模块后执行。如果以下命令失败："
 
 #. type: source
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:749
+#, fuzzy
 msgid "...  # gjournal unload ..."
-msgstr ""
+msgstr "...  # gjournal unload ..."
 
 #. type: source
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:751
+#, fuzzy
 msgid ""
 "ensure that the following line exists in [.filename]#/boot/loader.conf# and "
 "is spelled correctly:"
-msgstr ""
+msgstr "请确认 [.filename]#/boot/loader.conf# 中存在以下行且拼写正确："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:755
@@ -1690,197 +1849,215 @@ msgstr "geom_journal_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:758
+#, fuzzy
 msgid "Reboot your desktop without gjournal kernel module:"
-msgstr ""
+msgstr "不加载 gjournal 内核模块，重新启动桌面系统："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:765
+#, fuzzy
 msgid ""
 "Boot into single-user mode again. Clear the journaling metadata from all the "
 "devices used:"
-msgstr ""
+msgstr "再次进入单用户模式。清除所有相关设备上的日志元数据："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gjournal clear ada0p2\n"
 "# gjournal clear ada0p3\n"
 "# gjournal clear ada0p4\n"
 "# gjournal clear ada0p5\n"
-msgstr ""
+msgstr "# gjournal clear ada0p2\n# gjournal clear ada0p3\n# gjournal clear ada0p4\n# gjournal clear ada0p5\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:775
+#, fuzzy
 msgid ""
 "Clear the file system journaling flag, and restore the Soft Updates flags:"
-msgstr ""
+msgstr "清除文件系统日志标志，并恢复 Soft Updates 标志："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tunefs -J disable -n enable -j enable ada0p2\n"
 "tunefs: soft updates journaling set\n"
 "tunefs: gjournal cleared\n"
 "tunefs: soft updates set\n"
-msgstr ""
+msgstr "# tunefs -J disable -n enable -j enable ada0p2\ntunefs: soft updates journaling set\ntunefs: gjournal cleared\ntunefs: soft updates set\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:787
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# tunefs -J disable -n enable -j enable ada0p3\n"
 "tunefs: soft updates journaling set\n"
 "tunefs: gjournal cleared\n"
 "tunefs: soft updates set\n"
-msgstr ""
+msgstr "# tunefs -J disable -n enable -j enable ada0p3\ntunefs: soft updates journaling set\ntunefs: gjournal cleared\ntunefs: soft updates set\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:790
+#, fuzzy
 msgid "Remount the old devices by hand:"
-msgstr ""
+msgstr "手动重新挂载原来的设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:795
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount -o rw /dev/ada0p2 /var\n"
 "# mount -o rw /dev/ada0p3 /usr\n"
-msgstr ""
+msgstr "# mount -o rw /dev/ada0p2 /var\n# mount -o rw /dev/ada0p3 /usr\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:798
+#, fuzzy
 msgid "Edit [.filename]#/etc/fstab# and restore it to its original state:"
-msgstr ""
+msgstr "编辑 [.filename]#/etc/fstab#，将其恢复到原来的状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:803
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "/dev/ada0p2     /usr            ufs     rw      2       2\n"
 "/dev/ada0p3     /var            ufs     rw      2       2\n"
-msgstr ""
+msgstr "/dev/ada0p2     /usr            ufs     rw      2       2\n/dev/ada0p3     /var            ufs     rw      2       2\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:806
+#, fuzzy
 msgid ""
 "Finally, edit [.filename]#/boot/loader.conf#, remove the entry that loads "
 "the `geom_journal` module (or re-enable it if gjournal is still required for "
 "other partitions), and reboot."
-msgstr ""
+msgstr "最后，编辑 [.filename]#/boot/loader.conf#，删除用于加载 `geom_journal` 模块的条目（如果其他分区仍需要 gjournal，则重新启用该条目），然后重新启动。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:807
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How do I temporarily boot without GEOM journaling?"
-msgstr ""
+msgstr "如何在不使用 GEOM 日志的情况下临时启动？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:810
+#, fuzzy
 msgid ""
 "To boot the system without GEOM journaling, prevent the journal module from "
 "loading during startup."
-msgstr ""
+msgstr "要在不使用 GEOM 日志的情况下启动系统，请阻止日志模块在启动期间加载。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:812
+#, fuzzy
 msgid ""
 "Comment out or remove the following line from [.filename]#/boot/loader.conf# "
 "and reboot:"
-msgstr ""
+msgstr "从 [.filename]#/boot/loader.conf# 中注释掉或删除以下行，然后重新启动："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:820
+#, fuzzy
 msgid ""
 "After booting without GEOM journaling, journaled devices (`*.journal`) will "
 "not be created.  File Systems must be mounted using their original (non-"
 "journaled) providers, or mounted manually as needed for recovery or "
 "maintenance."
-msgstr ""
+msgstr "在不使用 GEOM 日志的情况下启动后，不会创建带日志的设备（`*.journal`）。必须使用原始的（非日志）提供者挂载文件系统，或根据需要手动挂载以进行恢复或维护。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:822
+#, fuzzy
 msgid ""
 "This method does not modify on-disk journal metadata and can be safely used "
 "for troubleshooting."
-msgstr ""
+msgstr "此方法不会修改磁盘上的日志元数据，可安全用于故障排除。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:823
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can I resize a GEOM journal after it has been created?"
-msgstr ""
+msgstr "创建 GEOM 日志后可以调整其大小吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:826
+#, fuzzy
 msgid ""
 "No. A GEOM journal cannot be resized in place after it has been created."
-msgstr ""
+msgstr "不可以。创建 GEOM 日志后无法就地调整其大小。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:830
+#, fuzzy
 msgid ""
 "The journal size is fixed at the time the journal is labeled.  To change the "
 "journal size, GEOM journaling must be removed and reconfigured with a new "
 "journal provider of the desired size.  For file systems containing data, "
 "this requires unmounting the file system and recreating the journal using "
 "appropriately sized providers, as described earlier in this article."
-msgstr ""
+msgstr "日志大小在标记日志时即已固定。要更改日志大小，必须移除并重新配置 GEOM 日志，并使用所需大小的新日志提供者。对于包含数据的文件系统，需要先卸载文件系统，再使用大小合适的提供者重新创建日志，具体步骤如本文前文所述。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:832
+#, fuzzy
 msgid ""
 "Plan journal sizes conservatively to accommodate peak write activity, as "
 "resizing requires reinitialization of the journal configuration."
-msgstr ""
+msgstr "规划日志大小时应留有余量，以满足写入活动高峰的需要，因为调整大小需要重新初始化日志配置。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:833
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What happens after an unclean shutdown or power failure?"
-msgstr ""
+msgstr "非正常关机或断电后会发生什么？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:836
+#, fuzzy
 msgid ""
 "After an unclean shutdown or power failure, GEOM journaling and Soft Updates "
 "with journaling replay the pending journal records during the next boot to "
 "return the file system to a consistent state."
-msgstr ""
+msgstr "非正常关机或断电后，GEOM 日志和带日志的 Soft Updates 会在下次启动时重放待处理的日志记录，使文件系统恢复到一致状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:839
+#, fuzzy
 msgid ""
 "If the journal replay completes successfully, the file system is mounted "
 "normally and no full file system check is required.  Journal replay "
 "typically takes only a few seconds and depends on the amount of recent write "
 "activity rather than the size of the file system."
-msgstr ""
+msgstr "如果日志重放成功，文件系统会正常挂载，无需执行完整的文件系统检查。日志重放通常只需几秒钟，耗时取决于近期写入活动的数量，而不是文件系统的大小。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:841
+#, fuzzy
 msgid ""
 "A full file system check may still be required in rare cases, such as when "
 "underlying storage errors are detected or the journal itself is inconsistent."
-msgstr ""
+msgstr "在少数情况下，例如检测到底层存储错误或日志本身不一致时，仍可能需要执行完整的文件系统检查。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:842
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How does GEOM journaling interact with fsck?"
-msgstr ""
+msgstr "GEOM 日志如何与 fsck 交互？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:845
+#, fuzzy
 msgid ""
 "GEOM journaling and Soft Updates with journaling interact with `fsck_ffs(8)` "
 "in different ways, reflecting their different integration levels in the "
 "FreeBSD storage stack."
-msgstr ""
+msgstr "GEOM 日志和带日志的 Soft Updates 与 `fsck_ffs(8)` 的交互方式不同，这反映了它们在 FreeBSD 存储栈中的集成程度不同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:850
+#, fuzzy
 msgid ""
 "For GEOM journaling, crash recovery is performed by the GEOM framework "
 "itself.  During system startup, the `geom_journal` class detects journal "
@@ -1891,10 +2068,11 @@ msgid ""
 "that no file system check is required.  When `fsck_ffs(8)` is later invoked "
 "during boot, it reads this state from the superblock and skips the file "
 "system check."
-msgstr ""
+msgstr "对于 GEOM 日志，崩溃恢复由 GEOM 框架本身执行。系统启动期间，`geom_journal` 类会检测日志元数据，并在 GEOM 对提供者进行探测时重放任何待处理的日志记录，此时带日志的设备尚未对系统的上层可见。如果日志重放成功，文件系统将恢复到一致状态，并更新 UFS 超级块以表明无需进行文件系统检查。启动过程中稍后调用 `fsck_ffs(8)` 时，它会从超级块读取此状态并跳过文件系统检查。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:855
+#, fuzzy
 msgid ""
 "For Soft Updates with journaling, recovery is initiated by `fsck_ffs(8)` "
 "itself.  During the file system check phase at boot time, `fsck_ffs(8)` "
@@ -1903,18 +2081,19 @@ msgid ""
 "system is consistent, `fsck_ffs(8)` terminates early without performing a "
 "full check.  If journal replay cannot complete successfully, a traditional "
 "file system check is performed."
-msgstr ""
+msgstr "对于带日志的 Soft Updates，恢复由 `fsck_ffs(8)` 本身启动。启动时进入文件系统检查阶段后，`fsck_ffs(8)` 会检测文件系统是否支持带日志的 Soft Updates，并调用日志重放逻辑。如果日志重放报告文件系统处于一致状态，`fsck_ffs(8)` 会提前退出，不执行完整检查。如果日志重放无法成功完成，则会执行传统的文件系统检查。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:857
+#, fuzzy
 msgid ""
 "As a result, the recovery path during system startup depends on the "
 "journaling mechanism in use, as illustrated by the following boot sequence:"
-msgstr ""
+msgstr "因此，系统启动期间的恢复路径取决于所使用的日志机制，如以下启动顺序所示："
 
 #. type: delimited block - 4
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:884
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Firmware / Boot Loader\n"
 "        |\n"
@@ -1941,189 +2120,207 @@ msgid ""
 "        |\n"
 "        v\n"
 "Normal system operation\n"
-msgstr ""
+msgstr "固件 / 引导加载器\n        |\n        v\n内核初始化\n        |\n        v\nGEOM 框架（提供者探测）\n        |\n        +--> GEOM 日志（gjournal）\n        |       - 日志重放在此处进行\n        |       - 文件系统一致性得到恢复\n        |       - 超级块得到更新\n        |\n        v\n文件系统检查阶段（fsck_ffs）\n        |\n        +--> 带日志的 Soft Updates\n        |       - 由 fsck 启动日志重放\n        |       - 如果文件系统一致，fsck 会提前退出\n        |\n        v\n挂载文件系统\n        |\n        v\n系统正常运行\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:888
+#, fuzzy
 msgid ""
 "`fsck_ffs(8)` is still used when journal replay cannot be completed, when "
 "underlying storage errors are detected, or during periodic manual or "
 "scheduled file system checks.  GEOM journaling reduces recovery time after "
 "crashes but does not replace `fsck_ffs(8)` entirely."
-msgstr ""
+msgstr "如果无法完成日志重放、检测到底层存储错误，或在定期手动检查或计划的文件系统检查期间，仍会使用 `fsck_ffs(8)`。GEOM 日志可以缩短崩溃后的恢复时间，但不能完全取代 `fsck_ffs(8)`。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:889
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Why does `gjournal clear` report \"Operation not permitted\" even in single-user mode?"
-msgstr ""
+msgstr "为什么即使在单用户模式下，`gjournal clear` 仍会报告 \"Operation not permitted\"？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:894
+#, fuzzy
 msgid ""
 "In GEOM, the same underlying storage can be exposed through multiple "
 "provider names at the same time.  For example, a partition may be visible "
 "both under its disk-based name (e.g. `vtbd0p7`) and under a GPT label (e.g. "
 "`/dev/gpt/labelname`).  These are different GEOM providers referring to the "
 "same physical storage."
-msgstr ""
+msgstr "在 GEOM 中，同一底层存储可以同时通过多个提供者名称公开。例如，一个分区可能既以基于磁盘的名称（如 `vtbd0p7`）显示，也以 GPT 标签（如 `/dev/gpt/labelname`）显示。这些是不同的 GEOM 提供者，但指向同一物理存储。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:897
+#, fuzzy
 msgid ""
 "When `gjournal stop` or `gjournal clear` is executed on one provider name, "
 "the GEOM framework may immediately detect the journal metadata again through "
 "another provider name during the tasting process.  As a result, the journal "
 "is re-attached automatically, and attempts to clear its metadata fail with "
 "an \"Operation not permitted\" error."
-msgstr ""
+msgstr "在某个提供者名称上执行 `gjournal stop` 或 `gjournal clear` 时，GEOM 框架可能会在探测过程中立即通过另一个提供者名称再次检测到日志元数据。因此，日志会自动重新附加，清除其元数据的尝试则会因 \"Operation not permitted\" 错误而失败。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:900
+#, fuzzy
 msgid ""
 "It is technically possible to suppress this behavior by disabling GEOM "
 "tasting or by preventing the creation of alternative provider names, but "
 "doing so is strongly discouraged.  Such changes may negatively affect other "
 "GEOM classes and system components that rely on normal provider discovery."
-msgstr ""
+msgstr "虽然在技术上可以通过禁用 GEOM 探测或阻止创建备用提供者名称来抑制此行为，但强烈不建议这样做。这些更改可能会对依赖正常提供者发现机制的其他 GEOM 类和系统组件造成负面影响。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:903
+#, fuzzy
 msgid ""
 "For this reason, the recommended and safe procedure is to unload the "
 "`geom_journal` module entirely before removing journal metadata, as "
 "described earlier in this article.  With the module unloaded, no tasting "
 "occurs and the journal cannot be re-attached, allowing `gjournal clear` to "
 "complete successfully."
-msgstr ""
+msgstr "因此，推荐且安全的做法是在移除日志元数据之前彻底卸载 `geom_journal` 模块，具体说明见本文前文。卸载模块后不会进行探测，日志也无法重新附加，因此 `gjournal clear` 可以成功完成。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:904
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can GEOM journaling be used on the root file system?"
-msgstr ""
+msgstr "可以在根文件系统上使用 GEOM 日志吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:907
+#, fuzzy
 msgid ""
 "Yes. GEOM journaling can be used on the root file system, but it requires "
 "additional care during system configuration."
-msgstr ""
+msgstr "可以。在根文件系统上使用 GEOM 日志是可行的，但系统配置时需要格外谨慎。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:910
+#, fuzzy
 msgid ""
 "The GEOM journal module must be loaded early during the boot process so that "
 "the journaled root device is available before the root file system is "
 "mounted.  Misconfiguration may prevent the system from booting normally, so "
 "this setup is generally recommended only for experienced users who fully "
 "understand the boot sequence and recovery procedures."
-msgstr ""
+msgstr "必须在引导过程的早期加载 GEOM 日志模块，以便在挂载根文件系统之前，使启用日志的根设备可用。配置错误可能导致系统无法正常引导，因此通常只建议充分了解引导顺序和恢复流程的有经验用户采用此配置。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:912
+#, fuzzy
 msgid ""
 "For these reasons, GEOM journaling is more commonly applied to non-root file "
 "systems such as `/usr` and `/var`."
-msgstr ""
+msgstr "因此，GEOM 日志更常用于 `/usr` 和 `/var` 等非根文件系统。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:913
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What are the performance implications of using GEOM journaling?"
-msgstr ""
+msgstr "使用 GEOM 日志会对性能产生什么影响？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:917
+#, fuzzy
 msgid ""
 "GEOM journaling introduces additional write I/O because all write operations "
 "are first recorded in the journal before being committed to the data "
 "provider.  This results in increased write latency and higher overall write "
 "amplification compared to non-journaled file systems."
-msgstr ""
+msgstr "GEOM 日志会增加写入 I/O，因为所有写操作在提交到数据提供者之前，都会先记录到日志中。与未启用日志的文件系统相比，这会增加写入延迟和总体写入放大。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:921
+#, fuzzy
 msgid ""
 "Read performance is typically unaffected.  The performance impact is most "
 "noticeable on write-heavy workloads and depends on journal size, placement, "
 "and the speed of the underlying storage.  Using a sufficiently sized journal "
 "and fast storage for the journal provider minimizes performance penalties."
-msgstr ""
+msgstr "读取性能通常不会受到影响。性能影响在写入密集型工作负载下最明显，并取决于日志大小、存放位置以及底层存储的速度。为日志提供者配置足够大的日志空间并使用快速存储，可以最大限度地减少性能损失。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:922
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can GEOM journaling be used together with other GEOM classes?"
-msgstr ""
+msgstr "GEOM 日志可以与其他 GEOM 类一起使用吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:925
+#, fuzzy
 msgid "Yes. GEOM journaling can be stacked with other GEOM classes."
-msgstr ""
+msgstr "可以。GEOM 日志可以与其他 GEOM 类堆叠使用。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:928
+#, fuzzy
 msgid ""
 "When used together, GEOM journaling typically operates on top of providers "
 "created by other GEOM classes such as `gmirror(8)` or `graid3(8)`.  The "
 "order of stacking is important and should follow the documented layering "
 "requirements of the involved GEOM classes."
-msgstr ""
+msgstr "组合使用时，GEOM 日志通常运行在其他 GEOM 类创建的提供者之上，例如 `gmirror(8)` 或 `graid3(8)`。堆叠顺序很重要，应遵循所涉及 GEOM 类的文档要求。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:930
+#, fuzzy
 msgid ""
 "GEOM journaling maintains file system consistency across the stacked "
 "providers, but it does not replace redundancy or error detection provided by "
 "other GEOM classes."
-msgstr ""
+msgstr "GEOM 日志可在堆叠的提供者之间维持文件系统一致性，但不能取代其他 GEOM 类提供的冗余或错误检测功能。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:931
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Can GEOM journaling and Soft Updates be enabled at the same time?"
-msgstr ""
+msgstr "可以同时启用 GEOM 日志和 Soft Updates 吗？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:934
+#, fuzzy
 msgid ""
 "No. GEOM journaling and Soft Updates must not be enabled at the same time on "
 "the same file system."
-msgstr ""
+msgstr "不可以。在同一文件系统上不得同时启用 GEOM 日志和 Soft Updates。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:937
+#, fuzzy
 msgid ""
 "GEOM journaling requires exclusive control over write ordering and "
 "consistency guarantees.  If Soft Updates are enabled together with GEOM "
 "journaling, the file system may behave unpredictably and data integrity "
 "cannot be guaranteed."
-msgstr ""
+msgstr "GEOM 日志需要独占控制写入顺序并提供一致性保证。如果同时启用了 Soft Updates 和 GEOM 日志，文件系统可能会出现不可预测的行为，且无法保证数据完整性。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:939
+#, fuzzy
 msgid ""
 "When using GEOM journaling, Soft Updates must be disabled on the affected "
 "file system, as described earlier in this article."
-msgstr ""
+msgstr "使用 GEOM 日志时，必须在受影响的文件系统上禁用 Soft Updates，具体说明见本文前文。"
 
 #. type: Title ===
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:941
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is the difference between Soft Updates and Soft Updates with Journaling?"
-msgstr ""
+msgstr "Soft Updates 与带日志的 Soft Updates 有什么区别？"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:944
+#, fuzzy
 msgid ""
 "Both Soft Updates and Soft Updates with Journaling are designed to maintain "
 "file system consistency, but they use different mechanisms and behave "
 "differently after a system crash."
-msgstr ""
+msgstr "Soft Updates 和带日志的 Soft Updates 都旨在维持文件系统一致性，但使用的机制不同，系统崩溃后的行为也不同。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:948
+#, fuzzy
 msgid ""
 "_Soft Updates_ ensure consistency by carefully ordering metadata writes in "
 "memory so that only safe states are written to disk.  If a crash occurs, any "
@@ -2131,76 +2328,85 @@ msgid ""
 "file system in a consistent but possibly older state.  However, resource "
 "accounting may be temporarily inaccurate, and a full `fsck_ffs(8)` run is "
 "required to reclaim unused blocks and inodes."
-msgstr ""
+msgstr "__Soft Updates__ 通过在内存中谨慎安排元数据写入顺序，确保只有安全状态会写入磁盘。如果发生崩溃，尚未写入的元数据更新会直接丢失，文件系统仍保持一致，但状态可能较旧。不过，资源统计可能会暂时不准确，并且需要完整运行一次 `fsck_ffs(8)`，以回收未使用的块和 inode。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:952
+#, fuzzy
 msgid ""
 "_Soft Updates with Journaling_ build on top of _Soft Updates_ by adding a "
 "metadata journal stored within the file system.  Metadata changes are first "
 "recorded in the journal and are replayed automatically during the next boot "
 "after an unclean shutdown.  This allows the file system to be restored to a "
 "consistent state quickly, usually without requiring a full `fsck_ffs(8)` run."
-msgstr ""
+msgstr "__带日志的 Soft Updates__ 在 __Soft Updates__ 的基础上增加了存储在文件系统内的元数据日志。元数据更改会先记录到日志中，并在非正常关机后的下次引导期间自动重放。这样可以快速将文件系统恢复到一致状态，通常无需完整运行一次 `fsck_ffs(8)`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:954
+#, fuzzy
 msgid ""
 "In short, _Soft Updates_ provide consistency without a journal, while _Soft "
 "Updates with Journaling_ add fast and automatic recovery after crashes at "
 "the cost of additional disk space and minor performance overhead."
-msgstr ""
+msgstr "简而言之，__Soft Updates__ 无需日志即可提供一致性，而 __带日志的 Soft Updates__ 则以额外的磁盘空间和少量性能开销为代价，在崩溃后实现快速自动恢复。"
 
 #. type: Title ==
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:957
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸阅读"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:961
+#, fuzzy
 msgid ""
 "Journaling is a fairly new feature of FreeBSD, and as such, it is not very "
 "well documented yet.  You may however find the following additional "
 "references useful:"
-msgstr ""
+msgstr "日志功能在 FreeBSD 中相对较新，因此目前相关文档还不多。不过，以下补充资料可能会对你有所帮助："
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:963
+#, fuzzy
 msgid ""
 "A extref:{handbook}geom[section on journaling, geom-gjournal] is now part of "
 "the FreeBSD Handbook."
-msgstr ""
+msgstr "FreeBSD 手册现在已包含一篇 extref:{handbook}geom[关于日志的章节，geom-gjournal]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:964
+#, fuzzy
 msgid ""
 "https://lists.freebsd.org/pipermail/freebsd-current/2006-June/064043."
 "html[This post] in {freebsd-current} by man:gjournal[8]'s developer, `{pjd}`."
-msgstr ""
+msgstr "link:https://lists.freebsd.org/pipermail/freebsd-current/2006-June/064043.html[这篇帖子]发表于 {freebsd-current}，作者是 man:gjournal[8] 的开发者 `{pjd}`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:965
+#, fuzzy
 msgid ""
 "https://lists.freebsd.org/pipermail/freebsd-questions/2008-April/173501."
 "html[This post] in {freebsd-questions} by `{ivoras}`."
-msgstr ""
+msgstr "link:https://lists.freebsd.org/pipermail/freebsd-questions/2008-April/173501.html[这篇帖子]发表于 {freebsd-questions}，作者是 `{ivoras}`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:966
+#, fuzzy
 msgid ""
 "https://www.youtube.com/watch?v=_NuhRkiInvA[Journaled Soft-Updates, Dr. Kirk "
 "McKusick, BSDCan 2010] on YouTube"
-msgstr ""
+msgstr "link:https://www.youtube.com/watch?v=_NuhRkiInvA[YouTube 上的《带日志的 Soft-Updates》，Dr. Kirk McKusick，BSDCan 2010]"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:967
+#, fuzzy
 msgid ""
 "https://www.youtube.com/watch?v=xMpmOezBJZo[GEOM - in Infrastructure We "
 "Trust, Pawel Jakub Dawidek, AsiaBSDCon 2008] on YouTube"
-msgstr ""
+msgstr "link:https://www.youtube.com/watch?v=xMpmOezBJZo[YouTube 上的《GEOM——我们信赖的基础设施》，Pawel Jakub Dawidek，AsiaBSDCon 2008]"
 
 #. type: Plain text
 #: documentation/content/en/articles/gjournal-desktop/_index.adoc:967
+#, fuzzy
 msgid "The manual pages of man:gjournal[8], man:geom[8], and man:tunefs[8]."
-msgstr ""
+msgstr "手册页：man:gjournal[8]、man:geom[8] 和 man:tunefs[8]。"

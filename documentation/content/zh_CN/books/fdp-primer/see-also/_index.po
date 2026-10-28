@@ -20,79 +20,86 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "More information about the FreeBSD Documentation Project"
-msgstr ""
+msgstr "有关 FreeBSD 文档项目的更多信息"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 15. See Also"
-msgstr ""
+msgstr "第 15 章：另请参阅"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "See Also"
-msgstr ""
+msgstr "另请参阅"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:52
+#, fuzzy
 msgid ""
 "This document is deliberately not an exhaustive discussion of AsciiDoc and "
 "the FreeBSD Documentation Project.  For more information about these, you "
 "are encouraged to see the following web sites."
-msgstr ""
+msgstr "本文档并未打算全面介绍 AsciiDoc 和 FreeBSD 文档项目。有关这些内容的更多信息，请参阅以下网站。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:54
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The FreeBSD Documentation Project"
-msgstr ""
+msgstr "FreeBSD 文档项目"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:57
+#, fuzzy
 msgid ""
 "link:https://www.FreeBSD.org/docproj/[The FreeBSD Documentation Project web "
 "pages]"
-msgstr ""
+msgstr "link:https://www.FreeBSD.org/docproj/[FreeBSD 文档项目网页]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:58
+#, fuzzy
 msgid "extref:{handbook}[The FreeBSD Handbook]"
-msgstr ""
+msgstr "extref:{handbook}[FreeBSD 手册]"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:60
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hugo"
-msgstr ""
+msgstr "Hugo"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:63
+#, fuzzy
 msgid "link:https://gohugo.io/[Hugo]"
-msgstr ""
+msgstr "link:https://gohugo.io/[Hugo]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:64
+#, fuzzy
 msgid "link:https://gohugo.io/documentation/[Hugo documentation]"
-msgstr ""
+msgstr "link:https://gohugo.io/documentation/[Hugo 文档]"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:66
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "AsciiDoctor"
-msgstr ""
+msgstr "Asciidoctor"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:69
+#, fuzzy
 msgid "link:https://asciidoctor.org/[AsciiDoctor]"
-msgstr ""
+msgstr "link:https://asciidoctor.org/[Asciidoctor]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:70
+#, fuzzy
 msgid "link:https://docs.asciidoctor.org/[AsciiDoctor Documentation Portal]"
-msgstr ""
+msgstr "link:https://docs.asciidoctor.org/[Asciidoctor 文档门户]"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:72
@@ -102,20 +109,24 @@ msgstr "HTML"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:75
+#, fuzzy
 msgid "link:http://www.w3.org/[The World Wide Web Consortium]"
-msgstr ""
+msgstr "link:http://www.w3.org/[万维网联盟]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:76
+#, fuzzy
 msgid "link:https://dev.w3.org/html5/spec-LC/[The HTML 5 specification]"
-msgstr ""
+msgstr "link:https://dev.w3.org/html5/spec-LC/[HTML 5 规范]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:77
+#, fuzzy
 msgid "link:https://www.w3.org/Style/CSS/specs.en.html[CSS specification]"
-msgstr ""
+msgstr "link:https://www.w3.org/Style/CSS/specs.en.html[CSS 规范]"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/see-also/_index.adoc:77
+#, fuzzy
 msgid "link:https://sass-lang.com/[Sass]"
-msgstr ""
+msgstr "link:https://sass-lang.com/[Sass]"

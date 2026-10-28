@@ -17,85 +17,91 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to get a working copy of the FreeBSD Documentation Project"
-msgstr ""
+msgstr "如何获取 FreeBSD 文档项目的工作副本"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 3. The Working Copy"
-msgstr ""
+msgstr "第 3 章：工作副本"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Working Copy"
-msgstr ""
+msgstr "工作副本"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:52
+#, fuzzy
 msgid ""
 "The _working copy_ is a copy of the FreeBSD repository documentation tree "
 "downloaded onto the local computer.  Changes are made to the local working "
 "copy, tested, and then submitted as patches to be committed to the main "
 "repository."
-msgstr ""
+msgstr "__工作副本__ 是下载到本地计算机上的 FreeBSD 仓库文档树副本。您可以在本地工作副本中进行修改并测试，然后将修改作为补丁提交，以便合并到主仓库中。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:55
+#, fuzzy
 msgid ""
 "A full copy of the documentation tree can occupy 550 megabytes of disk "
 "space.  Allow for a full gigabyte of space to have room for temporary files "
 "and test versions of various output formats."
-msgstr ""
+msgstr "完整的文档树可能会占用 550 MB 的磁盘空间。请预留 1 GB 的空间，以便存放临时文件和各种输出格式的测试版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:58
+#, fuzzy
 msgid ""
 "link:https://git-scm.com/[Git] is used to manage the FreeBSD documentation "
 "files.  It is obtained by installing the package:devel/git[] package, which "
 "also has a lighter flavor called git-lite:"
-msgstr ""
+msgstr "FreeBSD 文档文件由 link:https://git-scm.com/[Git] 管理。安装 package:devel/git[] 软件包即可获取 Git，该软件包还提供一个更精简的版本，名为 git-lite："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install git-lite\n"
-msgstr ""
+msgstr "# pkg install git-lite\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:65
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation and Manual Pages"
-msgstr ""
+msgstr "文档和手册页"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:71
+#, fuzzy
 msgid ""
 "FreeBSD documentation is not just books and articles.  Manual pages for all "
 "the commands and configuration files are also part of the documentation, and "
 "part of the FDP's territory.  Two repositories are involved: `doc` for the "
 "books and articles, and `src` for the operating system and manual pages.  To "
 "edit manual pages, the `src` repository must be checked out separately."
-msgstr ""
+msgstr "FreeBSD 文档不只有书籍和文章。所有命令和配置文件的手册页也属于文档的一部分，归 FDP 管辖。这里涉及两个仓库：存放书籍和文章的 `doc`，以及存放操作系统和手册页的 `src`。要编辑手册页，必须单独检出 `src` 仓库。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:74
+#, fuzzy
 msgid ""
 "Repositories may contain multiple versions of documentation and source "
 "code.  New modifications are almost always made only to the latest version, "
 "called `main`."
-msgstr ""
+msgstr "仓库可能包含多个版本的文档和源代码。新的修改几乎总是只针对最新版本，也就是 `main`。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Choosing a Directory"
-msgstr ""
+msgstr "选择目录"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:81
+#, fuzzy
 msgid ""
 "FreeBSD documentation is traditionally stored in [.filename]#/usr/doc/#, and "
 "system source code with manual pages in [.filename]#/usr/src/#.  These "
@@ -103,47 +109,50 @@ msgid ""
 "copies in other locations to avoid interfering with existing information in "
 "the main directories.  The examples that follow use [.filename]#~/doc# and [."
 "filename]#~/src#, both subdirectories of the user's home directory."
-msgstr ""
+msgstr "按照惯例，FreeBSD 文档存放在 [.filename]#/usr/doc/# 中，系统源代码和手册页则存放在 [.filename]#/usr/src/# 中。这些目录树可以移动，用户也可以将工作副本放在其他位置，以免影响主目录中的现有内容。以下示例使用 [.filename]#~/doc# 和 [.filename]#~/src#，它们都是用户主目录的子目录。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Checking Out a Copy"
-msgstr ""
+msgstr "检出副本"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:87
+#, fuzzy
 msgid ""
 "A download of a working copy from the repository is called a _clone_, and "
 "done with `git clone`.  This example clones a copy of the latest version "
 "(`main`) of the main documentation tree:"
-msgstr ""
+msgstr "从仓库下载工作副本称为 __克隆__，使用 `git clone` 完成。以下示例克隆主文档树的最新版本（`main`）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
-msgstr ""
+msgstr "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:94
+#, fuzzy
 msgid "A checkout of the source code to work on manual pages is very similar:"
-msgstr ""
+msgstr "检出用于编辑手册页的源代码与此非常相似："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git clone https://git.FreeBSD.org/src.git ~/src\n"
-msgstr ""
+msgstr "% git clone https://git.FreeBSD.org/src.git ~/src\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Updating a Working Copy"
-msgstr ""
+msgstr "更新工作副本"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:107
+#, fuzzy
 msgid ""
 "The documents and files in the FreeBSD repository change daily.  People "
 "modify files and commit changes frequently.  Even a short time after an "
@@ -151,113 +160,120 @@ msgid ""
 "working copy and the main FreeBSD repository.  To update the local version "
 "with the changes that have been made to the main repository, use `git pull` "
 "on the directory containing the local working copy:"
-msgstr ""
+msgstr "FreeBSD 仓库中的文档和文件每天都会发生变化。人们经常修改文件并提交更改。初次检出后，即使只过很短时间，本地工作副本也会与 FreeBSD 主仓库中的内容有所不同。要将主仓库中的更改更新到本地版本，请在本地工作副本所在目录中运行 `git pull`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% git pull --ff-only\n"
-msgstr ""
+msgstr "% cd ~/doc\n% git pull --ff-only\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:117
+#, fuzzy
 msgid ""
 "Get in the protective habit of using `git pull` before editing document "
 "files.  Someone else may have edited that file very recently, and the local "
 "working copy will not include the latest changes until it has been updated.  "
 "Editing the newest version of a file is much easier than trying to combine "
 "an older, edited local file with the newer version from the repository."
-msgstr ""
+msgstr "养成先运行 `git pull` 再编辑文档文件的习惯，以免遇到问题。其他人可能刚刚编辑过该文件；在更新之前，本地工作副本不会包含最新更改。编辑文件的最新版本，要比尝试将较旧的本地修改与仓库中的较新版本合并容易得多。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Reverting Changes"
-msgstr ""
+msgstr "撤销更改"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:124
+#, fuzzy
 msgid ""
 "Sometimes it turns out that changes were not necessary after all, or the "
 "writer just wants to start over.  Files can be \"reset\" to their unchanged "
 "form with `git restore`.  For example, to erase the edits made to [."
 "filename]#_index.adoc# and reset it to unmodified form:"
-msgstr ""
+msgstr "有时会发现修改其实没有必要，或者作者只是想重新开始。可以使用 `git restore` 将文件“重置”为未修改状态。例如，要删除对 [.filename]#_index.adoc# 所做的编辑并将其恢复为未修改状态："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git restore _index.adoc\n"
-msgstr ""
+msgstr "% git restore _index.adoc\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Making a Diff"
-msgstr ""
+msgstr "生成差异文件"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:135
+#, fuzzy
 msgid ""
 "After edits to a file or group of files are completed, the differences "
 "between the local working copy and the version on the FreeBSD repository "
 "must be collected into a single file for submission.  These _diff_ files are "
 "produced by redirecting the output of `git diff` into a file:"
-msgstr ""
+msgstr "完成对一个或多个文件的编辑后，必须收集本地工作副本与 FreeBSD 仓库中版本之间的差异，并将其写入单个文件以便提交。这类 __差异文件__ 可通过将 `git diff` 的输出重定向到文件来生成："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% git diff > doc-fix-spelling.diff\n"
-msgstr ""
+msgstr "% cd ~/doc\n% git diff > doc-fix-spelling.diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:144
+#, fuzzy
 msgid ""
 "Give the file a meaningful name that identifies the contents.  The example "
 "above is for spelling fixes to the whole documentation tree."
-msgstr ""
+msgstr "为文件取一个能说明其内容的名称。上面的示例用于修正整个文档树中的拼写错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:146
+#, fuzzy
 msgid ""
 "If the diff file is to be submitted with the web \"link:https://bugs.FreeBSD."
 "org/bugzilla/enter_bug.cgi[Submit a FreeBSD problem report]\" interface, add "
 "a [.filename]#.txt# extension to give the earnest and simple-minded web form "
 "a clue that the contents are plain text."
-msgstr ""
+msgstr "如果要通过 Web“link:https://bugs.FreeBSD.org/bugzilla/enter_bug.cgi[提交 FreeBSD 问题报告]”界面提交差异文件，请添加 [.filename]#.txt# 扩展名，提示这个严肃而简单的 Web 表单，文件内容是纯文本。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:149
+#, fuzzy
 msgid ""
 "Be careful: `git diff` includes all changes made in the current directory "
 "and any subdirectories.  If there are files in the working copy with edits "
 "that are not ready to be submitted yet, provide a list of only the files "
 "that are to be included:"
-msgstr ""
+msgstr "请注意：`git diff` 会包含当前目录及其所有子目录中的更改。如果工作副本中还有尚未准备好提交的修改，请只列出要包含的文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% git diff disks/_index.adoc printers/_index.adoc > disks-printers.diff\n"
-msgstr ""
+msgstr "% cd ~/doc\n% git diff disks/_index.adoc printers/_index.adoc > disks-printers.diff\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Git References"
-msgstr ""
+msgstr "Git 参考资料"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:160
+#, fuzzy
 msgid ""
 "These examples show very basic usage of Git.  More detail is available in "
 "the https://git-scm.com/book/en/v2[Git Book] and the https://git-scm.com/"
 "doc[Git documentation]."
-msgstr ""
+msgstr "这些示例介绍了 Git 的基本用法。更多详情请参阅 link:https://git-scm.com/book/en/v2[Git Book] 和 link:https://git-scm.com/doc[Git 文档]。"

@@ -19,21 +19,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Secure Programming in FreeBSD"
-msgstr ""
+msgstr "FreeBSD 安全编程"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 3. Secure Programming"
-msgstr ""
+msgstr "第 3 章：安全编程"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Secure Programming"
-msgstr ""
+msgstr "安全编程"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:53
@@ -43,20 +43,22 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:56
+#, fuzzy
 msgid ""
 "This chapter describes some of the security issues that have plagued UNIX(R) "
 "programmers for decades and some of the new tools available to help "
 "programmers avoid writing exploitable code."
-msgstr ""
+msgstr "本章介绍 UNIX(R) 程序员数十年来一直面临的一些安全问题，以及一些可帮助程序员避免编写可被利用代码的新工具。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Secure Design Methodology"
-msgstr ""
+msgstr "安全设计方法"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:63
+#, fuzzy
 msgid ""
 "Writing secure applications takes a very scrutinous and pessimistic outlook "
 "on life.  Applications should be run with the principle of \"least privilege"
@@ -64,36 +66,39 @@ msgid ""
 "that it needs to accomplish its function.  Previously tested code should be "
 "reused whenever possible to avoid common mistakes that others may have "
 "already fixed."
-msgstr ""
+msgstr "编写安全应用程序，需要以审慎且悲观的态度看待事物。应用程序应遵循“最小权限”原则运行，确保任何进程都不会拥有超出完成其功能所需最低限度的访问权限。应尽可能复用经过测试的代码，以避免他人可能已经修复的常见错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:67
+#, fuzzy
 msgid ""
 "One of the pitfalls of the UNIX(R) environment is how easy it is to make "
 "assumptions about the sanity of the environment.  Applications should never "
 "trust user input (in all its forms), system resources, inter-process "
 "communication, or the timing of events.  UNIX(R) processes do not execute "
 "synchronously so logical operations are rarely atomic."
-msgstr ""
+msgstr "UNIX(R) 环境的一个陷阱是，人们很容易想当然地认为环境是可靠的。应用程序绝不能信任用户输入（无论其形式如何）、系统资源、进程间通信或事件的时序。UNIX(R) 进程并非同步执行，因此逻辑操作很少是原子的。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:69
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Buffer Overflows"
-msgstr ""
+msgstr "缓冲区溢出"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:75
+#, fuzzy
 msgid ""
 "Buffer Overflows have been around since the very beginnings of the von "
 "Neumann crossref:bibliography[COD,1] architecture.  They first gained "
 "widespread notoriety in 1988 with the Morris Internet worm.  Unfortunately, "
 "the same basic attack remains effective today.  By far the most common type "
 "of buffer overflow attack is based on corrupting the stack."
-msgstr ""
+msgstr "缓冲区溢出自冯·诺依曼 crossref:bibliography[COD,1] 架构问世之初便已存在。它们在 1988 年随 Morris Internet 蠕虫而广为人知。遗憾的是，同一种基本攻击至今仍然有效。最常见的缓冲区溢出攻击，远远是基于破坏栈的攻击。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:84
+#, fuzzy
 msgid ""
 "Most modern computer systems use a stack to pass arguments to procedures and "
 "to store local variables.  A stack is a last in first out (LIFO) buffer in "
@@ -110,150 +115,153 @@ msgid ""
 "exploits since overflowing a local variable in a function can overwrite the "
 "return address of that function, potentially allowing a malicious user to "
 "execute any code he or she wants."
-msgstr ""
+msgstr "大多数现代计算机系统都使用栈向过程传递参数并存储局部变量。栈是进程映像高地址内存区域中的后进先出（LIFO）缓冲区。程序调用函数时，会创建一个新的“栈帧”。栈帧由传递给函数的参数以及大小可变的局部变量空间组成。“栈指针”是一个寄存器，用于保存栈顶的当前位置。由于新值不断压入栈顶，该值也会持续变化，因此许多实现还提供一个位于栈帧起始位置附近的“帧指针”，以便更轻松地相对于该值访问局部变量。crossref:bibliography[COD,1] 函数调用的返回地址也存储在栈上，这是栈溢出利用得以发生的原因：函数中的局部变量溢出时，可能会覆盖该函数的返回地址，从而可能让恶意用户执行其想要的任意代码。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:87
+#, fuzzy
 msgid ""
 "Although stack-based attacks are by far the most common, it would also be "
 "possible to overrun the stack with a heap-based (malloc/free) attack."
-msgstr ""
+msgstr "尽管基于栈的攻击最为常见，但也可以通过基于堆（malloc/free）的攻击造成栈溢出。"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:90
+#, fuzzy
 msgid ""
 "The C programming language does not perform automatic bounds checking on "
 "arrays or pointers as many other languages do.  In addition, the standard C "
 "library is filled with a handful of very dangerous functions."
-msgstr ""
+msgstr "与许多其他语言不同，C 编程语言不会对数组或指针自动执行边界检查。此外，标准 C 库中包含少数几个非常危险的函数。"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`strcpy`(char *dest, const char *src)"
-msgstr ""
+msgstr "`strcpy`(char *dest, const char *src)"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:100
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May overflow the dest buffer"
-msgstr ""
+msgstr "可能导致 dest 缓冲区溢出"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:101
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`strcat`(char *dest, const char *src)"
-msgstr ""
+msgstr "`strcat`(char *dest, const char *src)"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`getwd`(char *buf)"
-msgstr ""
+msgstr "`getwd`(char *buf)"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May overflow the buf buffer"
-msgstr ""
+msgstr "可能导致 buf 缓冲区溢出"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`gets`(char *s)"
-msgstr ""
+msgstr "`gets`(char *s)"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May overflow the s buffer"
-msgstr ""
+msgstr "可能导致 s 缓冲区溢出"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`[vf]scanf`(const char *format, ...)"
-msgstr ""
+msgstr "`[vf]scanf`(const char *format, ...)"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May overflow its arguments."
-msgstr ""
+msgstr "可能导致其参数溢出。"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`realpath`(char *path, char resolved_path[])"
-msgstr ""
+msgstr "`realpath`(char *path, char resolved_path[])"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May overflow the path buffer"
-msgstr ""
+msgstr "可能导致 path 缓冲区溢出"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`[v]sprintf`(char *str, const char *format, ...)"
-msgstr ""
+msgstr "`[v]sprintf`(char *str, const char *format, ...)"
 
 #. type: Table
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May overflow the str buffer."
-msgstr ""
+msgstr "可能导致 str 缓冲区溢出。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Example Buffer Overflow"
-msgstr ""
+msgstr "缓冲区溢出示例"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:134
+#, fuzzy
 msgid ""
 "The following example code contains a buffer overflow designed to overwrite "
 "the return address and skip the instruction immediately following the "
 "function call. (Inspired by crossref:bibliography[Phrack,4])"
-msgstr ""
+msgstr "以下示例代码包含一个缓冲区溢出，旨在覆盖返回地址并跳过函数调用之后的那条指令。（灵感来自 crossref:bibliography[Phrack,4]）"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:138
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#include <stdio.h>\n"
-msgstr ""
+msgstr "#include <stdio.h>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "void manipulate(char *buffer) {\n"
 "  char newbuffer[80];\n"
 "  strcpy(newbuffer,buffer);\n"
 "}\n"
-msgstr ""
+msgstr "void manipulate(char *buffer) {\n  char newbuffer[80];\n  strcpy(newbuffer,buffer);\n}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "int main() {\n"
 "  char ch,buffer[4096];\n"
 "  int i=0;\n"
-msgstr ""
+msgstr "int main() {\n  char ch,buffer[4096];\n  int i=0;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "  while ((buffer[i++] = getchar()) != '\\n') {};\n"
-msgstr ""
+msgstr "  while ((buffer[i++] = getchar()) != '\\n') {};\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:156
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  i=1;\n"
 "  manipulate(buffer);\n"
@@ -261,30 +269,33 @@ msgid ""
 "  printf(\"The value of i is : %d\\n\",i);\n"
 "  return 0;\n"
 "}\n"
-msgstr ""
+msgstr "  i=1;\n  manipulate(buffer);\n  i=2;\n  printf(\"The value of i is : %d\\n\",i);\n  return 0;\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:159
+#, fuzzy
 msgid ""
 "Let us examine what the memory image of this process would look like if we "
 "were to input 160 spaces into our little program before hitting return."
-msgstr ""
+msgstr "假设我们在按下回车键之前，向这个小程序输入 160 个空格，来看看该进程的内存映像会是什么样子。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:163
+#, fuzzy
 msgid ""
 "Obviously more malicious input can be devised to execute actual compiled "
 "instructions (such as exec(/bin/sh))."
-msgstr ""
+msgstr "显然，还可以构造更具恶意的输入来执行实际编译后的指令（例如 exec(/bin/sh)）。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Avoiding Buffer Overflows"
-msgstr ""
+msgstr "避免缓冲区溢出"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:174
+#, fuzzy
 msgid ""
 "The most straightforward solution to the problem of stack-overflows is to "
 "always use length restricted memory and string copy functions.  `strncpy` "
@@ -299,42 +310,46 @@ msgid ""
 "also a significant performance loss compared to `strcpy` when copying a "
 "short string into a large buffer since `strncpy` NUL fills up the size "
 "specified."
-msgstr ""
+msgstr "解决栈溢出问题最直接的方法，是始终使用带长度限制的内存和字符串复制函数。标准 C 库提供了 `strncpy` 和 `strncat`。这些函数接受一个长度参数，其值不应大于目标缓冲区的大小。随后，这些函数会将源中的最多 'length' 个字节复制到目标中。然而，这些函数存在若干问题。如果输入缓冲区的大小与目标缓冲区相同，两个函数都不能保证以 NUL 结尾。`strncpy` 和 `strncat` 对长度参数的使用方式也不一致，因此程序员很容易混淆其正确用法。此外，与 `strcpy` 相比，将短字符串复制到大缓冲区时性能会显著下降，因为 `strncpy` 会将指定大小的缓冲区填充为 NUL。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:177
+#, fuzzy
 msgid ""
 "Another memory copy implementation exists to get around these problems.  The "
 "`strlcpy` and `strlcat` functions guarantee that they will always null "
 "terminate the destination string when given a non-zero length argument."
-msgstr ""
+msgstr "还有另一种内存复制实现可以避开这些问题。`strlcpy` 和 `strlcat` 函数保证：当长度参数非零时，始终会以空字符结束目标字符串。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Compiler based run-time bounds checking"
-msgstr ""
+msgstr "基于编译器的运行时边界检查"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:182
+#, fuzzy
 msgid ""
 "Unfortunately there is still a very large assortment of code in public use "
 "which blindly copies memory around without using any of the bounded copy "
 "routines we just discussed.  Fortunately, there is a way to help prevent "
 "such attacks - run-time bounds checking, which is implemented by several C/C+"
 "+ compilers."
-msgstr ""
+msgstr "遗憾的是，当前仍有大量公开使用的代码，在不使用我们刚才讨论过的任何有界复制例程的情况下盲目地复制内存。幸运的是，有一种方法可以帮助防止此类攻击——运行时边界检查，若干 C/C++ 编译器都实现了这一机制。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:185
+#, fuzzy
 msgid ""
 "ProPolice is one such compiler feature, and is integrated into man:gcc[1] "
 "versions 4.1 and later.  It replaces and extends the earlier StackGuard man:"
 "gcc[1] extension."
-msgstr ""
+msgstr "ProPolice 是此类编译器功能之一，已集成到 man:gcc[1] 4.1 及更高版本中。它取代并扩展了早期的 StackGuard man:gcc[1] 扩展。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:189
+#, fuzzy
 msgid ""
 "ProPolice helps to protect against stack-based buffer overflows and other "
 "attacks by laying pseudo-random numbers in key areas of the stack before "
@@ -344,48 +359,54 @@ msgid ""
 "variable stored on the stack in an attempt to get malicious code to run is "
 "unlikely to succeed, as the attacker would have to also manage to leave the "
 "pseudo-random canaries untouched."
-msgstr ""
+msgstr "ProPolice 会在调用任何函数之前，将伪随机数放入栈中的关键位置，以帮助防范基于栈的缓冲区溢出和其他攻击。函数返回时会检查这些“金丝雀值”，如果发现它们已被更改，就会立即终止可执行文件。因此，任何试图修改返回地址或栈上其他变量以运行恶意代码的行为都不太可能成功，因为攻击者还必须设法保持伪随机金丝雀值不变。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:191
+#, fuzzy
 msgid ""
 "Recompiling your application with ProPolice is an effective means of "
 "stopping most buffer-overflow attacks, but it can still be compromised."
-msgstr ""
+msgstr "使用 ProPolice 重新编译应用程序是阻止大多数缓冲区溢出攻击的有效方法，但仍有可能被攻破。"
 
 #. type: Title ====
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Library based run-time bounds checking"
-msgstr ""
+msgstr "基于库的运行时边界检查"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:196
+#, fuzzy
 msgid ""
 "Compiler-based mechanisms are completely useless for binary-only software "
 "for which you cannot recompile.  For these situations there are a number of "
 "libraries which re-implement the unsafe functions of the C-library "
 "(`strcpy`, `fscanf`, `getwd`, etc..) and ensure that these functions can "
 "never write past the stack pointer."
-msgstr ""
+msgstr "基于编译器的机制对无法重新编译的纯二进制软件完全无用。针对这些情况，有若干库重新实现了 C 库中的不安全函数（`strcpy`、`fscanf`、`getwd` 等），并确保这些函数绝不会写入栈指针所指位置之外。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:198
+#, fuzzy
 msgid "libsafe"
-msgstr ""
+msgstr "libsafe"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:199
+#, fuzzy
 msgid "libverify"
-msgstr ""
+msgstr "libverify"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:200
+#, fuzzy
 msgid "libparanoia"
-msgstr ""
+msgstr "libparanoia"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:205
+#, fuzzy
 msgid ""
 "Unfortunately these library-based defenses have a number of shortcomings.  "
 "These libraries only protect against a very small set of security related "
@@ -393,48 +414,52 @@ msgid ""
 "if the application was compiled with -fomit-frame-pointer.  Also, the "
 "LD_PRELOAD and LD_LIBRARY_PATH environment variables can be overwritten/"
 "unset by the user."
-msgstr ""
+msgstr "遗憾的是，这些基于库的防御措施存在若干缺点。这些库只能防范极少数与安全相关的问题，而且并未修复根本问题。如果应用程序使用 -fomit-frame-pointer 编译，这些防御措施可能会失效。此外，用户可以覆盖或取消设置 LD_PRELOAD 和 LD_LIBRARY_PATH 环境变量。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "SetUID issues"
-msgstr ""
+msgstr "SetUID 问题"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:211
+#, fuzzy
 msgid ""
 "There are at least 6 different IDs associated with any given process, and "
 "you must therefore be very careful with the access that your process has at "
 "any given time.  In particular, all seteuid applications should give up "
 "their privileges as soon as it is no longer required."
-msgstr ""
+msgstr "任何给定进程至少关联着 6 种不同的 ID，因此必须非常谨慎地管理进程在任何时刻拥有的访问权限。尤其是，所有 seteuid 应用程序都应在不再需要特权时立即放弃这些特权。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:214
+#, fuzzy
 msgid ""
 "The real user ID can only be changed by a superuser process.  The login "
 "program sets this when a user initially logs in and it is seldom changed."
-msgstr ""
+msgstr "只有超级用户进程才能更改真实用户 ID。用户初次登录时，login 程序会设置此 ID，此后它很少改变。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:218
+#, fuzzy
 msgid ""
 "The effective user ID is set by the `exec()` functions if a program has its "
 "seteuid bit set.  An application can call `seteuid()` at any time to set the "
 "effective user ID to either the real user ID or the saved set-user-ID.  When "
 "the effective user ID is set by `exec()` functions, the previous value is "
 "saved in the saved set-user-ID."
-msgstr ""
+msgstr "如果程序设置了 seteuid 位，有效用户 ID 会由 `exec()` 函数设置。应用程序可以随时调用 `seteuid()`，将有效用户 ID 设置为真实用户 ID 或保存的 set-user-ID。由 `exec()` 函数设置有效用户 ID 时，先前的值会保存到保存的 set-user-ID 中。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Limiting your program's environment"
-msgstr ""
+msgstr "限制程序的运行环境"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:228
+#, fuzzy
 msgid ""
 "The traditional method of restricting a process is with the `chroot()` "
 "system call.  This system call changes the root directory from which all "
@@ -446,10 +471,11 @@ msgid ""
 "root privilege.  This could be accomplished by creating device nodes to read "
 "kernel memory, attaching a debugger to a process outside of the man:"
 "chroot[8] environment, or in many other creative ways."
-msgstr ""
+msgstr "传统上，使用 `chroot()` 系统调用来限制进程。此系统调用会更改进程及其所有子进程引用其他路径时所使用的根目录。要使此调用成功，进程必须对指定目录具有执行（搜索）权限。只有在对新环境调用 `chdir()` 后，新环境才会真正生效。还应注意，如果进程拥有 root 权限，就可以轻易逃离 chroot 环境。这可以通过创建设备节点来读取内核内存、将调试器附加到 man:chroot[8] 环境之外的进程，或以其他许多巧妙方式实现。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:233
+#, fuzzy
 msgid ""
 "The behavior of the `chroot()` system call can be controlled somewhat with "
 "the kern.chroot_allow_open_directories `sysctl` variable.  When this value "
@@ -458,78 +484,89 @@ msgid ""
 "EPERM if there are any directories open and the process is already subject "
 "to a `chroot()` call.  For any other value, the check for open directories "
 "will be bypassed completely."
-msgstr ""
+msgstr "可以通过 kern.chroot_allow_open_directories `sysctl` 变量，在一定程度上控制 `chroot()` 系统调用的行为。该值设为 0 时，如果有任何目录处于打开状态，`chroot()` 就会以 EPERM 失败。若设为默认值 1，则仅当有目录处于打开状态且进程已经受 `chroot()` 调用限制时，`chroot()` 才会以 EPERM 失败。设为其他任何值时，将完全跳过对打开目录的检查。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD's jail functionality"
-msgstr ""
+msgstr "FreeBSD 的 jail 功能"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:238
+#, fuzzy
 msgid ""
 "The concept of a Jail extends upon the `chroot()` by limiting the powers of "
 "the superuser to create a true `virtual server'.  Once a prison is set up "
 "all network communication must take place through the specified IP address, "
 "and the power of \"root privilege\" in this jail is severely constrained."
-msgstr ""
+msgstr "Jail 的概念扩展了 `chroot()`，通过限制超级用户的权限来创建真正的“虚拟服务器”。设置好 prison 后，所有网络通信都必须通过指定的 IP 地址进行，而且该 jail 中的“root 权限”受到严格限制。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:242
+#, fuzzy
 msgid ""
 "While in a prison, any tests of superuser power within the kernel using the "
 "`suser()` call will fail.  However, some calls to `suser()` have been "
 "changed to a new interface `suser_xxx()`.  This function is responsible for "
 "recognizing or denying access to superuser power for imprisoned processes."
-msgstr ""
+msgstr "处于 prison 中时，内核中使用 `suser()` 调用进行的超级用户权限检查会失败。不过，一些 `suser()` 调用已更改为新的接口 `suser_xxx()`。此函数负责识别或拒绝被监禁进程的超级用户权限访问。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:244
+#, fuzzy
 msgid "A superuser process within a jailed environment has the power to:"
-msgstr ""
+msgstr "jail 环境中的超级用户进程可以："
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:246
+#, fuzzy
 msgid ""
 "Manipulate credential with `setuid`, `seteuid`, `setgid`, `setegid`, "
 "`setgroups`, `setreuid`, `setregid`, `setlogin`"
-msgstr ""
+msgstr "使用 `setuid`、`seteuid`、`setgid`、`setegid`、`setgroups`、`setreuid`、`setregid`、`setlogin` 操作凭证"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:247
+#, fuzzy
 msgid "Set resource limits with `setrlimit`"
-msgstr ""
+msgstr "使用 `setrlimit` 设置资源限制"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:248
+#, fuzzy
 msgid "Modify some sysctl nodes (kern.hostname)"
-msgstr ""
+msgstr "修改某些 sysctl 节点（kern.hostname）"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:249
+#, fuzzy
 msgid "`chroot()`"
-msgstr ""
+msgstr "`chroot()`"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:250
+#, fuzzy
 msgid "Set flags on a vnode: `chflags`, `fchflags`"
-msgstr ""
+msgstr "设置 vnode 标志：`chflags`、`fchflags`"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:251
+#, fuzzy
 msgid ""
 "Set attributes of a vnode such as file permission, owner, group, size, "
 "access time, and modification time."
-msgstr ""
+msgstr "设置 vnode 属性，例如文件权限、所有者、组、大小、访问时间和修改时间。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:252
+#, fuzzy
 msgid "Bind to privileged ports in the Internet domain (ports < 1024)"
-msgstr ""
+msgstr "绑定到 Internet 域中的特权端口（端口 < 1024）"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:256
+#, fuzzy
 msgid ""
 "`Jail` is a very useful tool for running applications in a secure "
 "environment but it does have some shortcomings.  Currently, the IPC "
@@ -537,47 +574,51 @@ msgid ""
 "as MySQL cannot be run within a jail.  Superuser access may have a very "
 "limited meaning within a jail, but there is no way to specify exactly what "
 "\"very limited\" means."
-msgstr ""
+msgstr "`Jail` 是在安全环境中运行应用程序的非常有用的工具，但也存在一些缺点。目前，IPC 机制尚未转换为 `suser_xxx`，因此 MySQL 等应用程序无法在 jail 中运行。超级用户在 jail 中的访问权限可能受到非常严格的限制，但却无法明确界定“非常严格”究竟意味着什么。"
 
 #. type: Title ===
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "POSIX(R).1e Process Capabilities"
-msgstr ""
+msgstr "POSIX(R).1e 进程能力"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:260
+#, fuzzy
 msgid ""
 "POSIX(R) has released a working draft that adds event auditing, access "
 "control lists, fine grained privileges, information labeling, and mandatory "
 "access control."
-msgstr ""
+msgstr "POSIX(R) 发布了一份工作草案，其中增加了事件审计、访问控制列表、细粒度特权、信息标记和强制访问控制。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:263
+#, fuzzy
 msgid ""
 "This is a work in progress and is the focus of the http://www.trustedbsd.org/"
 "[TrustedBSD] project.  Some of the initial work has been committed to "
 "FreeBSD-CURRENT (cap_set_proc(3))."
-msgstr ""
+msgstr "这项工作仍在进行中，是 link:http://www.trustedbsd.org/[TrustedBSD] 项目的重点。部分初期工作已提交至 FreeBSD-CURRENT（cap_set_proc(3)）。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Trust"
-msgstr ""
+msgstr "信任"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:269
+#, fuzzy
 msgid ""
 "An application should never assume that anything about the users environment "
 "is sane.  This includes (but is certainly not limited to): user input, "
 "signals, environment variables, resources, IPC, mmaps, the filesystem "
 "working directory, file descriptors, the # of open files, etc."
-msgstr ""
+msgstr "应用程序绝不能假设用户环境中的任何内容都是可靠的。这包括（但当然不限于）：用户输入、信号、环境变量、资源、IPC、mmaps、文件系统工作目录、文件描述符、打开文件的数量等。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:274
+#, fuzzy
 msgid ""
 "You should never assume that you can catch all forms of invalid input that a "
 "user might supply.  Instead, your application should use positive filtering "
@@ -585,34 +626,37 @@ msgid ""
 "validation has been the cause of many exploits, especially with CGI scripts "
 "on the world wide web.  For filenames you need to be extra careful about "
 "paths (\"../\", \"/\"), symbolic links, and shell escape characters."
-msgstr ""
+msgstr "绝不要假设自己能够捕获用户可能提供的所有形式的无效输入。相反，应用程序应采用正向过滤，只允许特定的、你认为安全的输入子集。不当的数据验证导致了许多漏洞，尤其是万维网上的 CGI 脚本。处理文件名时，必须格外小心路径（“../”、“/”）、符号链接和 shell 转义字符。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:277
+#, fuzzy
 msgid ""
 "Perl has a really cool feature called \"Taint\" mode which can be used to "
 "prevent scripts from using data derived outside the program in an unsafe "
 "way.  This mode will check command line arguments, environment variables, "
 "locale information, the results of certain syscalls (`readdir()`, "
 "`readlink()`, `getpwxxx()`), and all file input."
-msgstr ""
+msgstr "Perl 有一项非常酷的功能，称为 “Taint” 模式，可用于防止脚本以不安全的方式使用程序外部来源的数据。此模式会检查命令行参数、环境变量、区域设置信息、某些系统调用的结果（`readdir()`、`readlink()`、`getpwxxx()`），以及所有文件输入。"
 
 #. type: Title ==
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Race Conditions"
-msgstr ""
+msgstr "竞态条件"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:283
+#, fuzzy
 msgid ""
 "A race condition is anomalous behavior caused by the unexpected dependence "
 "on the relative timing of events.  In other words, a programmer incorrectly "
 "assumed that a particular event would always happen before another."
-msgstr ""
+msgstr "竞态条件是由事件相对时序的意外依赖所导致的异常行为。换句话说，程序员错误地假定某个特定事件总会先于另一个事件发生。"
 
 #. type:  XXX figure here! 
 #: documentation/content/en/books/developers-handbook/secure/_index.adoc:289
+#, fuzzy
 msgid ""
 "Some of the common causes of race conditions are signals, access checks, and "
 "file opens.  Signals are asynchronous events by nature so special care must "
@@ -622,4 +666,4 @@ msgid ""
 "`open()` directly.  Along the same lines, an application should always set a "
 "proper umask before `open()` to obviate the need for spurious `chmod()` "
 "calls."
-msgstr ""
+msgstr "竞态条件的一些常见原因包括信号、访问检查和文件打开。信号本质上是异步事件，因此处理时必须格外小心。先使用 `access(2)` 检查访问权限，再调用 `open(2)`，显然不是原子操作。用户可以在这两次调用之间移动文件。特权应用程序应改为调用 `seteuid()`，然后直接调用 `open()`。同理，应用程序应始终在调用 `open()` 之前设置适当的 umask，以避免不必要的 `chmod()` 调用。"

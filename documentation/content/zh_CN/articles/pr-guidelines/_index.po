@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "These guidelines describe recommended handling practices for FreeBSD Problem Reports (PRs)."
-msgstr ""
+msgstr "本指南介绍 FreeBSD 问题报告（PR）的推荐处理方法。"
 
 #. type: Title =
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:1
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:12
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Problem Report Handling Guidelines With Bugzilla"
-msgstr ""
+msgstr "使用 Bugzilla 处理问题报告的指南"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:44
@@ -37,13 +37,14 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:47
+#, fuzzy
 msgid ""
 "These guidelines describe recommended handling practices for FreeBSD Problem "
 "Reports (PRs) as submitted via Bugzilla.  Whilst developed for the FreeBSD "
 "Bugzilla Database Maintenance Team mailto:freebsd-bugbusters@FreeBSD."
 "org[freebsd-bugbusters@FreeBSD.org], these guidelines should be followed by "
 "anyone working with FreeBSD Problem Reports."
-msgstr ""
+msgstr "本指南介绍通过 Bugzilla 提交的 FreeBSD 问题报告（PR）的推荐处理方法。虽然本指南是为 FreeBSD Bugzilla 数据库维护团队 mailto:freebsd-bugbusters@FreeBSD.org[freebsd-bugbusters@FreeBSD.org] 编写的，但所有处理 FreeBSD 问题报告的人都应遵循本指南。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:49
@@ -58,82 +59,92 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:57
+#, fuzzy
 msgid ""
 "Bugzilla is an issue management system used by the FreeBSD Project.  As "
 "accurate tracking of outstanding software defects is important to FreeBSD's "
 "quality, the correct use of the software is essential to the forward "
 "progress of the Project."
-msgstr ""
+msgstr "Bugzilla 是 FreeBSD 项目使用的问题管理系统。准确跟踪尚未解决的软件缺陷对 FreeBSD 的质量至关重要，因此正确使用该系统对项目的持续发展十分重要。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:60
+#, fuzzy
 msgid ""
 "Access to Bugzilla is available to the entire FreeBSD community.  In order "
 "to maintain consistency within the database and provide a consistent user "
 "experience, guidelines have been established covering common aspects of bug "
 "management such as presenting followup, handling close requests, and so "
 "forth."
-msgstr ""
+msgstr "整个 FreeBSD 社区都可以访问 Bugzilla。为保持数据库的一致性并提供一致的用户体验，我们制定了相关指南，涵盖错误管理的常见事项，例如提交后续回复、处理关闭请求等。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:62
+#, fuzzy
 msgid ""
 "Note: in this Article, the term \"PR\" means \"Bugzilla Problem Report\"."
-msgstr ""
+msgstr "注意：本文中的“PR”是指“Bugzilla 问题报告”。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Problem Report Life-cycle"
-msgstr ""
+msgstr "问题报告的生命周期"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:69
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:90
+#, fuzzy
 msgid "This section is obsolete and being rewritten as of January 2026."
-msgstr ""
+msgstr "本节已过时，自 2026 年 1 月起正在重写。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:71
+#, fuzzy
 msgid ""
 "The Reporter submits a bug report on the website. The bug is in the `Needs "
 "Triage` state."
-msgstr ""
+msgstr "报告者在网站上提交错误报告。此时错误处于 `Needs Triage` 状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:72
+#, fuzzy
 msgid ""
 "Jane Random BugBuster confirms that the bug report has sufficient "
 "information to be reproducible. If not, she goes back and forth with the "
 "reporter to obtain the needed information. At this point the bug is set to "
 "the `Open` state."
-msgstr ""
+msgstr "Jane Random BugBuster 确认错误报告包含足够的信息，可以重现问题。如果信息不足，她会与报告者反复沟通以获取所需信息。此时，错误被设为 `Open` 状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:73
+#, fuzzy
 msgid ""
 "Joe Random Committer takes interest in the report and assigns it to himself, "
 "or Jane Random BugBuster decides that Joe is best suited to handle it and "
 "assigns it to him. The bug should be set to the `In Discussion` state."
-msgstr ""
+msgstr "Joe Random Committer 对该报告感兴趣并将其分配给自己，或者 Jane Random BugBuster 认为 Joe 最适合处理该问题，于是将报告分配给他。应将错误设为 `In Discussion` 状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:74
+#, fuzzy
 msgid ""
 "Joe has a brief exchange with the originator (making sure it all goes into "
 "the audit trail) and determines the cause of the problem."
-msgstr ""
+msgstr "Joe 与问题提出者进行了简短交流（确保所有内容都记录在审计记录中），并查明了问题的原因。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:75
+#, fuzzy
 msgid ""
 "Joe pulls an all-nighter and whips up a patch that he thinks fixes the "
 "problem, and submits it in a follow-up, asking the originator to test it. He "
 "then sets the report's state to `Patch Ready`."
-msgstr ""
+msgstr "Joe 熬夜赶工，编写了一个他认为可以修复问题的补丁，并在后续回复中提交补丁，请问题提出者进行测试。随后，他将报告的状态设为 `Patch Ready`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:76
+#, fuzzy
 msgid ""
 "A couple of iterations later, both Joe and the originator are satisfied with "
 "the patch, and Joe commits it to `-CURRENT` (or directly to `-STABLE` if the "
@@ -141,17 +152,19 @@ msgid ""
 "Report in his commit log (and credit the originator if they submitted all or "
 "part of the patch) and, if appropriate, start an MFC countdown. The bug is "
 "set to the `Needs MFC` state."
-msgstr ""
+msgstr "经过几轮修改后，Joe 和问题提出者都对补丁感到满意。Joe 将补丁提交到 `-CURRENT`（如果问题在 `-CURRENT` 中不存在，则直接提交到 `-STABLE`），并确保在提交日志中引用该问题报告（如果问题提出者提交了全部或部分补丁，也要注明其贡献）；如适用，还会启动 MFC 倒计时。错误被设为 `Needs MFC` 状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:77
+#, fuzzy
 msgid ""
 "If the patch does not need MFCing, Joe then closes the report as `Issue "
 "Resolved`."
-msgstr ""
+msgstr "如果补丁无需 MFC，Joe 随后会将报告以 `Issue Resolved` 状态关闭。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:82
+#, fuzzy
 msgid ""
 "Many reports are submitted with very little information about the problem, "
 "and some are either very complex to solve, or just scratch the surface of a "
@@ -159,99 +172,107 @@ msgid ""
 "necessary information needed to solve the problem.  If the problem contained "
 "within cannot be solved, or has occurred again, it is necessary to re-open "
 "the report."
-msgstr ""
+msgstr "许多报告提供的问题信息很少，有些问题要么非常复杂、难以解决，要么只是暴露了更大问题的表面症状；在这些情况下，获取解决问题所需的全部信息非常重要。如果报告中的问题无法解决，或者再次出现，则需要重新打开报告。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Problem Report State"
-msgstr ""
+msgstr "问题报告状态"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:93
+#, fuzzy
 msgid ""
 "It is important to update the state of a Problem Report when certain actions "
 "are taken.  The state should accurately reflect the current state of work on "
 "the issue."
-msgstr ""
+msgstr "采取某些操作后，更新问题报告的状态非常重要。状态应准确反映当前的问题处理进度。"
 
 #. type: Block title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "A small example on when to change PR state"
-msgstr ""
+msgstr "何时更改 PR 状态的简单示例"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:99
+#, fuzzy
 msgid ""
 "When a PR has been worked on and the developer(s) responsible feel "
 "comfortable about the fix, they will submit a followup to the PR and change "
 "its state to \"feedback\".  At this point, the originator should evaluate "
 "the fix in their context and respond indicating whether the defect has "
 "indeed been remedied."
-msgstr ""
+msgstr "开发者处理 PR 并对修复方案感到满意后，会在 PR 中提交后续回复，并将其状态更改为“feedback”。此时，问题提出者应在自己的环境中评估修复方案，并回复确认缺陷是否确已解决。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:102
+#, fuzzy
 msgid "A Problem Report may be in one of the following states:"
-msgstr ""
+msgstr "问题报告可能处于以下状态之一："
 
 #. type: Labeled list
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "open"
-msgstr ""
+msgstr "open"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:105
+#, fuzzy
 msgid "Initial state; the problem has been pointed out and it needs reviewing."
-msgstr ""
+msgstr "初始状态；问题已被指出，尚待审查。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "analyzed"
-msgstr ""
+msgstr "analyzed"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:108
+#, fuzzy
 msgid "The problem has been reviewed and a solution is being sought."
-msgstr ""
+msgstr "问题已审查，正在寻求解决方案。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "feedback"
-msgstr ""
+msgstr "feedback"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:111
+#, fuzzy
 msgid ""
 "Further work requires additional information from the originator or the "
 "community; possibly information regarding the proposed solution."
-msgstr ""
+msgstr "后续处理需要问题提出者或社区提供更多信息；可能需要提供与拟议解决方案有关的信息。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "patched"
-msgstr ""
+msgstr "patched"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:114
+#, fuzzy
 msgid ""
 "A patch has been committed, but something (MFC, or maybe confirmation from "
 "originator) is still pending."
-msgstr ""
+msgstr "补丁已提交，但仍有事项待处理（MFC，或等待问题提出者确认）。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "suspended"
-msgstr ""
+msgstr "suspended"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:120
+#, fuzzy
 msgid ""
 "The problem is not being worked on, due to lack of information or "
 "resources.  This is a prime candidate for somebody who is looking for a "
@@ -259,98 +280,108 @@ msgid ""
 "closed, rather than suspended.  The documentation project uses suspended for "
 "wish-list items that entail a significant amount of work which no one "
 "currently has time for."
-msgstr ""
+msgstr "由于缺少信息或资源，问题暂未处理。这是适合想要承担项目的人接手的任务。如果问题根本无法解决，应关闭报告，而不是将其挂起。文档项目会将需要大量工作、但目前无人有时间处理的愿望清单项目设为挂起状态。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "closed"
-msgstr ""
+msgstr "closed"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:123
+#, fuzzy
 msgid ""
 "A problem report is closed when any changes have been integrated, "
 "documented, and tested, or when fixing the problem is abandoned."
-msgstr ""
+msgstr "当所有更改都已集成、记录并测试，或者已放弃修复问题时，问题报告即被关闭。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:127
+#, fuzzy
 msgid ""
 "The \"patched\" state is directly related to feedback, so you may go "
 "directly to \"closed\" state if the originator cannot test the patch, and it "
 "works in your own testing."
-msgstr ""
+msgstr "“patched”状态与反馈直接相关，因此，如果问题提出者无法测试补丁，而你自己的测试确认补丁有效，则可以直接将状态改为“closed”。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Types of Problem Reports"
-msgstr ""
+msgstr "问题报告的类型"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:133
+#, fuzzy
 msgid ""
 "While handling problem reports, either as a developer who has direct access "
 "to the Problem Reports database or as a contributor who browses the database "
 "and submits followups with patches, comments, suggestions or change "
 "requests, you will come across several different types of PRs."
-msgstr ""
+msgstr "处理问题报告时，无论你是可以直接访问问题报告数据库的开发者，还是浏览数据库并通过提交补丁、评论、建议或变更请求来跟进的贡献者，都会遇到几种不同类型的 PR。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:135
+#, fuzzy
 msgid "crossref:pr-guidelines[pr-unassigned, Unassigned PRs]"
-msgstr ""
+msgstr "crossref:pr-guidelines[pr-unassigned, 未分配的 PR]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:136
+#, fuzzy
 msgid "crossref:pr-guidelines[pr-assigned, Assigned PRs]"
-msgstr ""
+msgstr "crossref:pr-guidelines[pr-assigned, 已分配的 PR]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:137
+#, fuzzy
 msgid "crossref:pr-guidelines[pr-dups, Duplicate PRs]"
-msgstr ""
+msgstr "crossref:pr-guidelines[pr-dups, 重复的 PR]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:138
+#, fuzzy
 msgid "crossref:pr-guidelines[pr-stale, Stale PRs]"
-msgstr ""
+msgstr "crossref:pr-guidelines[pr-stale, 长期未处理的 PR]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:139
+#, fuzzy
 msgid "crossref:pr-guidelines[pr-misfiled-notpr, Non-Bug PRs]"
-msgstr ""
+msgstr "crossref:pr-guidelines[pr-misfiled-notpr, 非错误类 PR]"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:141
+#, fuzzy
 msgid ""
 "The following sections describe what each different type of PRs is used for, "
 "when a PR belongs to one of these types, and what treatment each different "
 "type receives."
-msgstr ""
+msgstr "以下各节介绍每种 PR 的用途、PR 在何种情况下属于相应类型，以及各类型 PR 的处理方式。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Unassigned PRs"
-msgstr ""
+msgstr "未分配的 PR"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:149
+#, fuzzy
 msgid ""
 "When PRs arrive, they are initially assigned to a generic (placeholder) "
 "assignee.  These are always prepended with `freebsd-`.  The exact value for "
 "this default depends on the category; in most cases, it corresponds to a "
 "specific FreeBSD mailing list.  Here is the current list, with the most "
 "common ones listed first:"
-msgstr ""
+msgstr "PR 刚提交时，最初会分配给一个通用（占位）受理人。这些受理人名称都以 `freebsd-` 开头。默认受理人的具体值取决于类别；在大多数情况下，它对应某个 FreeBSD 邮件列表。以下是当前列表，按常见程度从高到低排列："
 
 #. type: Block title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default Assignees - most common"
-msgstr ""
+msgstr "默认受理人——常见类别"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:155
@@ -358,102 +389,102 @@ msgstr ""
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:239
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:349
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:459
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:156
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Categories"
-msgstr ""
+msgstr "类别"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:158
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default Assignee"
-msgstr ""
+msgstr "默认受理人"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "base system"
-msgstr ""
+msgstr "基础系统"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bin, conf, gnu, kern, misc"
-msgstr ""
+msgstr "bin, conf, gnu, kern, misc"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-bugs"
-msgstr ""
+msgstr "freebsd-bugs"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "architecture-specific"
-msgstr ""
+msgstr "特定于体系结构"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "arm, amd64, i386, mips"
-msgstr ""
+msgstr "arm, amd64, i386, mips"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-_arch_"
-msgstr ""
+msgstr "freebsd-_arch_"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "architecture-specific: powerpc"
-msgstr ""
+msgstr "特定于体系结构：powerpc"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "powerpc64"
-msgstr ""
+msgstr "powerpc64"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:170
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-ppc"
-msgstr ""
+msgstr "freebsd-ppc"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "architecture-specific: riscv64"
-msgstr ""
+msgstr "特定于体系结构：riscv64"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "riscv64"
-msgstr ""
+msgstr "riscv64"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-risc"
-msgstr ""
+msgstr "freebsd-risc"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ports collection"
-msgstr ""
+msgstr "Ports 集合"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:176
@@ -476,151 +507,152 @@ msgstr ""
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:435
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:440
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ports"
-msgstr ""
+msgstr "ports"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-ports-bugs"
-msgstr ""
+msgstr "freebsd-ports-bugs"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "documentation shipped with the system"
-msgstr ""
+msgstr "随系统提供的文档"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "docs"
-msgstr ""
+msgstr "docs"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-doc"
-msgstr ""
+msgstr "freebsd-doc"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD web pages (not including docs)"
-msgstr ""
+msgstr "FreeBSD 网页（不包括文档）"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-www"
-msgstr ""
+msgstr "freebsd-www"
 
 #. type: Block title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Default Assignees - other"
-msgstr ""
+msgstr "默认受理人——其他类别"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "advocacy efforts"
-msgstr ""
+msgstr "倡导工作"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "advocacy"
-msgstr ""
+msgstr "advocacy"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-advocacy"
-msgstr ""
+msgstr "freebsd-advocacy"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Java Virtual Machine(TM) problems"
-msgstr ""
+msgstr "Java 虚拟机(TM)问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "java"
-msgstr ""
+msgstr "java"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:203
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-java"
-msgstr ""
+msgstr "freebsd-java"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "standards compliance"
-msgstr ""
+msgstr "标准合规性"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "standards"
-msgstr ""
+msgstr "standards"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-standards"
-msgstr ""
+msgstr "freebsd-standards"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "threading libraries"
-msgstr ""
+msgstr "线程库"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "threads"
-msgstr ""
+msgstr "threads"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-threads"
-msgstr ""
+msgstr "freebsd-threads"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:usb[4] subsystem"
-msgstr ""
+msgstr "man:usb[4] 子系统"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:213
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "usb"
-msgstr ""
+msgstr "usb"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-usb"
-msgstr ""
+msgstr "freebsd-usb"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:220
+#, fuzzy
 msgid ""
 "Do not be surprised to find that the submitter of the PR has assigned it to "
 "the wrong category.  If you fix the category, do not forget to fix the "
@@ -628,84 +660,88 @@ msgid ""
 "understanding that just because their problem manifested on an i386 system, "
 "that it might be generic to all of FreeBSD, and thus be more appropriate for "
 "`kern`.  The converse is also true, of course.)"
-msgstr ""
+msgstr "如果 PR 的提交者将其分配到了错误的类别，不要感到意外。如果你更正了类别，也别忘了更正受理人。（特别是，提交者似乎很难理解：问题虽然是在 i386 系统上出现的，却可能是 FreeBSD 的通用问题，因此更适合归入 `kern`。当然，反过来也是如此。）"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:223
+#, fuzzy
 msgid ""
 "Certain PRs may be reassigned away from these generic assignees by anyone.  "
 "There are several types of assignees: specialized mailing lists; mail "
 "aliases (used for certain limited-interest items); and individuals."
-msgstr ""
+msgstr "任何人都可以将某些 PR 从这些通用受理人名下重新分配出去。受理人有几种类型：专门的邮件列表、邮件别名（用于某些受众有限的事项）以及个人。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:226
+#, fuzzy
 msgid ""
 "For assignees which are mailing lists, please use the long form when making "
 "the assignment (e.g., `freebsd-foo` instead of `foo`); this will avoid "
 "duplicate emails sent to the mailing list."
-msgstr ""
+msgstr "对于邮件列表受理人，请使用完整名称进行分配（例如，使用 `freebsd-foo` 而不是 `foo`）；这样可以避免向邮件列表发送重复邮件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:230
+#, fuzzy
 msgid ""
 "Since the list of individuals who have volunteered to be the default "
 "assignee for certain types of PRs changes so often, it is much more suitable "
 "for https://wiki.freebsd.org/AssigningPRs[the FreeBSD wiki]."
-msgstr ""
+msgstr "由于自愿担任特定类型 PR 默认受理人的个人名单变动频繁，因此更适合将其维护在 link:https://wiki.freebsd.org/AssigningPRs[FreeBSD 维基]上。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:233
+#, fuzzy
 msgid "Here is a sample list of such entities; it is probably not complete."
-msgstr ""
+msgstr "以下是此类实体的示例列表，可能并不完整。"
 
 #. type: Block title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common Assignees - base system"
-msgstr ""
+msgstr "常见受理人——基础系统"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:240
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:350
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Suggested Category"
-msgstr ""
+msgstr "建议类别"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:241
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:351
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:461
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Suggested Assignee"
-msgstr ""
+msgstr "建议受理人"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:243
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:353
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Assignee Type"
-msgstr ""
+msgstr "受理人类型"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem specific to the ARM(R) architecture"
-msgstr ""
+msgstr "ARM(R) 架构特有的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "arm"
-msgstr ""
+msgstr "arm"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-arm"
-msgstr ""
+msgstr "freebsd-arm"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:248
@@ -740,15 +776,15 @@ msgstr ""
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:428
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:433
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:447
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mailing list"
-msgstr ""
+msgstr "邮件列表"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:249
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem specific to the MIPS(R) architecture"
-msgstr ""
+msgstr "MIPS(R) 架构特有的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:250
@@ -769,250 +805,250 @@ msgstr ""
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:330
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:335
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kern"
-msgstr ""
+msgstr "kern"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-mips"
-msgstr ""
+msgstr "freebsd-mips"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem specific to the PowerPC(R) architecture"
-msgstr ""
+msgstr "PowerPC(R) 架构特有的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with Advanced Configuration and Power Management (man:acpi[4])"
-msgstr ""
+msgstr "与高级配置与电源管理（man:acpi[4]）有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-acpi"
-msgstr ""
+msgstr "freebsd-acpi"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with embedded or small-footprint FreeBSD systems (e.g., NanoBSD/PicoBSD/FreeBSD-arm)"
-msgstr ""
+msgstr "与嵌入式或小型 FreeBSD 系统有关的问题（例如 NanoBSD/PicoBSD/FreeBSD-arm）"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-embedded"
-msgstr ""
+msgstr "freebsd-embedded"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with FireWire(R) drivers"
-msgstr ""
+msgstr "与 FireWire(R) 驱动程序有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-firewire"
-msgstr ""
+msgstr "freebsd-firewire"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the filesystem code"
-msgstr ""
+msgstr "与文件系统代码有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-fs"
-msgstr ""
+msgstr "freebsd-fs"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the man:geom[4] subsystem"
-msgstr ""
+msgstr "与 man:geom[4] 子系统有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-geom"
-msgstr ""
+msgstr "freebsd-geom"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the man:ipfw[4] subsystem"
-msgstr ""
+msgstr "与 man:ipfw[4] 子系统有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-ipfw"
-msgstr ""
+msgstr "freebsd-ipfw"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "man:jail[8] subsystem"
-msgstr ""
+msgstr "man:jail[8] 子系统"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-jail"
-msgstr ""
+msgstr "freebsd-jail"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:294
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with Linux(R) or SVR4 emulation"
-msgstr ""
+msgstr "与 Linux(R) 或 SVR4 仿真有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-emulation"
-msgstr ""
+msgstr "freebsd-emulation"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the networking stack"
-msgstr ""
+msgstr "与网络协议栈有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-net"
-msgstr ""
+msgstr "freebsd-net"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the man:pf[4] subsystem"
-msgstr ""
+msgstr "与 man:pf[4] 子系统有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-pf"
-msgstr ""
+msgstr "freebsd-pf"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the man:scsi[4] subsystem"
-msgstr ""
+msgstr "与 man:scsi[4] 子系统有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-scsi"
-msgstr ""
+msgstr "freebsd-scsi"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the man:sound[4] subsystem"
-msgstr ""
+msgstr "与 man:sound[4] 子系统有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-multimedia"
-msgstr ""
+msgstr "freebsd-multimedia"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problems with the man:wlan[4] subsystem and wireless drivers"
-msgstr ""
+msgstr "与 man:wlan[4] 子系统及无线驱动程序有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:321
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-wireless"
-msgstr ""
+msgstr "freebsd-wireless"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:324
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with man:sysinstall[8] or man:bsdinstall[8]"
-msgstr ""
+msgstr "与 man:sysinstall[8] 或 man:bsdinstall[8] 有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:325
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:465
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bin"
-msgstr ""
+msgstr "bin"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-sysinstall"
-msgstr ""
+msgstr "freebsd-sysinstall"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the system startup scripts (man:rc[8])"
-msgstr ""
+msgstr "与系统启动脚本（man:rc[8]）有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-rc"
-msgstr ""
+msgstr "freebsd-rc"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with VIMAGE or VNET functionality and related code"
-msgstr ""
+msgstr "与 VIMAGE 或 VNET 功能及相关代码有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-virtualization"
-msgstr ""
+msgstr "freebsd-virtualization"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:339
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with Xen emulation"
-msgstr ""
+msgstr "与 Xen 仿真有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-xen"
-msgstr ""
+msgstr "freebsd-xen"
 
 #. type: Block title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common Assignees - Ports Collection"
-msgstr ""
+msgstr "Ports Collection 的常见指派对象"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with the ports framework (__not__ with an individual port!)"
-msgstr ""
+msgstr "与 ports 框架有关的问题（__而非__单个 port！）"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "portmgr"
-msgstr ""
+msgstr "portmgr"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:358
@@ -1024,301 +1060,306 @@ msgstr ""
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:443
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:468
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:472
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alias"
-msgstr ""
+msgstr "alias"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by apache@FreeBSD.org"
-msgstr ""
+msgstr "由 apache@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "apache"
-msgstr ""
+msgstr "apache"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by autotools@FreeBSD.org"
-msgstr ""
+msgstr "由 autotools@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "autotools"
-msgstr ""
+msgstr "autotools"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:369
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by doceng@FreeBSD.org"
-msgstr ""
+msgstr "由 doceng@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "doceng"
-msgstr ""
+msgstr "doceng"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by eclipse@FreeBSD.org"
-msgstr ""
+msgstr "由 eclipse@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-eclipse"
-msgstr ""
+msgstr "freebsd-eclipse"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:379
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by gecko@FreeBSD.org"
-msgstr ""
+msgstr "由 gecko@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:381
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "gecko"
-msgstr ""
+msgstr "gecko"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:384
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by gnome@FreeBSD.org"
-msgstr ""
+msgstr "由 gnome@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "gnome"
-msgstr ""
+msgstr "gnome"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by hamradio@FreeBSD.org"
-msgstr ""
+msgstr "由 hamradio@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "hamradio"
-msgstr ""
+msgstr "hamradio"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by haskell@FreeBSD.org"
-msgstr ""
+msgstr "由 haskell@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:396
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "haskell"
-msgstr ""
+msgstr "haskell"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:399
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by java@FreeBSD.org"
-msgstr ""
+msgstr "由 java@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:404
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by kde@FreeBSD.org"
-msgstr ""
+msgstr "由 kde@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:406
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kde"
-msgstr ""
+msgstr "kde"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:409
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by mono@FreeBSD.org"
-msgstr ""
+msgstr "由 mono@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mono"
-msgstr ""
+msgstr "mono"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by office@FreeBSD.org"
-msgstr ""
+msgstr "由 office@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:416
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-office"
-msgstr ""
+msgstr "freebsd-office"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by perl@FreeBSD.org"
-msgstr ""
+msgstr "由 perl@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "perl"
-msgstr ""
+msgstr "perl"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by python@FreeBSD.org"
-msgstr ""
+msgstr "由 python@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:426
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-python"
-msgstr ""
+msgstr "freebsd-python"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:429
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by ruby@FreeBSD.org"
-msgstr ""
+msgstr "由 ruby@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:431
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-ruby"
-msgstr ""
+msgstr "freebsd-ruby"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by secteam@FreeBSD.org"
-msgstr ""
+msgstr "由 secteam@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:436
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "secteam"
-msgstr ""
+msgstr "secteam"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:439
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by vbox@FreeBSD.org"
-msgstr ""
+msgstr "由 vbox@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:441
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "vbox"
-msgstr ""
+msgstr "vbox"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:444
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "port which is maintained by x11@FreeBSD.org"
-msgstr ""
+msgstr "由 x11@FreeBSD.org 维护的 port"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "freebsd-x11"
-msgstr ""
+msgstr "freebsd-x11"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:450
+#, fuzzy
 msgid ""
 "Ports PRs which have a maintainer who is a ports committer may be reassigned "
 "by anyone (but note that not every FreeBSD committer is necessarily a ports "
 "committer, so you cannot simply go by the email address alone.)"
-msgstr ""
+msgstr "如果某个 Ports PR 的维护者是 ports 提交者，任何人都可以重新指派该 PR（但请注意，并非每位 FreeBSD 提交者都是 ports 提交者，因此不能仅凭电子邮件地址判断）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:453
+#, fuzzy
 msgid ""
 "For other PRs, please do not reassign them to individuals (other than "
 "yourself) unless you are certain that the assignee really wants to track the "
 "PR.  This will help to avoid the case where no one looks at fixing a "
 "particular problem because everyone assumes that the assignee is already "
 "working on it."
-msgstr ""
+msgstr "对于其他 PR，除非你确定受指派人确实希望跟进该 PR，否则请不要将其重新指派给他人（你自己除外）。这样可以避免出现无人着手解决某个问题的情况，因为大家都以为受指派人已经在处理了。"
 
 #. type: Block title
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:455
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Common Assignees - Other"
-msgstr ""
+msgstr "其他常见指派对象"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with Problem Report database"
-msgstr ""
+msgstr "与问题报告数据库有关的问题"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:466
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:471
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "bugmeister"
-msgstr ""
+msgstr "bugmeister"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "problem with Bugzilla https://bugs.freebsd.org/submit/[web form]."
-msgstr ""
+msgstr "与 Bugzilla https://bugs.freebsd.org/submit/[Web 表单]有关的问题。"
 
 #. type: Table
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "doc"
-msgstr ""
+msgstr "doc"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:475
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Assigned PRs"
-msgstr ""
+msgstr "已指派的 PR"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:478
+#, fuzzy
 msgid ""
 "If a PR has the `responsible` field set to the username of a FreeBSD "
 "developer, it means that the PR has been handed over to that particular "
 "person for further work."
-msgstr ""
+msgstr "如果 PR 的 `responsible` 字段设置为某位 FreeBSD 开发者的用户名，表示该 PR 已移交给此人继续处理。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:483
+#, fuzzy
 msgid ""
 "Assigned PRs should not be touched by anyone but the assignee or "
 "bugmeister.  If you have comments, submit a followup.  If for some reason "
 "you think the PR should change state or be reassigned, send a message to the "
 "assignee.  If the assignee does not respond within two weeks, unassign the "
 "PR and do as you please."
-msgstr ""
+msgstr "除受指派人或 bugmeister 外，其他人不应处理已指派的 PR。如果你有意见，请提交后续评论。如果你认为 PR 应更改状态或重新指派，请向受指派人发送消息。如果受指派人在两周内没有回应，请取消该 PR 的指派，然后按你的判断处理。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:485
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Duplicate PRs"
-msgstr ""
+msgstr "重复的 PR"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:489
+#, fuzzy
 msgid ""
 "If you find more than one PR that describe the same issue, choose the one "
 "that contains the largest amount of useful information and close the others, "
@@ -1326,132 +1367,147 @@ msgid ""
 "non-overlapping useful information, submit all the missing information to "
 "one in a followup, including references to the others; then close the other "
 "PRs (which are now completely superseded)."
-msgstr ""
+msgstr "如果你发现多个 PR 描述了同一个问题，请选择包含最多有用信息的 PR，并关闭其他 PR，同时明确注明取代它们的 PR 编号。如果多个 PR 各自包含不重复的有用信息，请在其中一个 PR 的后续评论中补充所有缺失的信息，并引用其他 PR；然后关闭其他 PR（因为这些 PR 现已被完全取代）。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Stale PRs"
-msgstr ""
+msgstr "过期的 PR"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:494
+#, fuzzy
 msgid ""
 "A PR is considered stale if it has not been modified in more than six "
 "months. Apply the following procedure to deal with stale PRs:"
-msgstr ""
+msgstr "如果某个 PR 超过六个月未更新，即视为过期。请按以下流程处理过期的 PR："
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:496
+#, fuzzy
 msgid ""
 "If the PR contains sufficient detail, try to reproduce the problem in `-"
 "CURRENT` and `-STABLE`. If you succeed, submit a followup detailing your "
 "findings and try to find someone to assign it to. Set the state to \"analyzed"
 "\" if appropriate."
-msgstr ""
+msgstr "如果 PR 包含足够详细的信息，请尝试在 `-CURRENT` 和 `-STABLE` 中重现该问题。如果成功，请提交后续评论，详细说明你的发现，并尝试寻找合适的人来接手。必要时将状态设为 \"analyzed\"。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:497
+#, fuzzy
 msgid ""
 "If the PR describes an issue which you know is the result of a usage error "
 "(incorrect configuration or otherwise), submit a followup explaining what "
 "the originator did wrong, then close the PR with the reason \"User error\" "
 "or \"Configuration error\"."
-msgstr ""
+msgstr "如果你知道 PR 描述的问题是由使用错误（配置错误或其他原因）导致的，请提交后续评论，说明发起者哪里做错了，然后以 \"User error\" 或 \"Configuration error\" 为由关闭该 PR。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:498
+#, fuzzy
 msgid ""
 "If the PR describes an error which you know has been corrected in both `-"
 "CURRENT` and `-STABLE`, close it with a message stating when it was fixed in "
 "each branch."
-msgstr ""
+msgstr "如果你知道 PR 描述的错误已在 `-CURRENT` 和 `-STABLE` 中修复，请关闭该 PR，并说明它在各分支中的修复时间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:499
+#, fuzzy
 msgid ""
 "If the PR describes an error which you know has been corrected in `-"
 "CURRENT`, but not in `-STABLE`, try to find out when the person who "
 "corrected it is planning to MFC it, or try to find someone else (maybe "
 "yourself?) to do it. Set the state to \"patched\" and assign it to whomever "
 "will do the MFC."
-msgstr ""
+msgstr "如果你知道 PR 描述的错误已在 `-CURRENT` 中修复，但尚未在 `-STABLE` 中修复，请尝试了解修复者计划何时将该修复 MFC，或者另找人（也可以是你自己）来完成此事。将状态设为 \"patched\"，并指派给负责 MFC 的人。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:500
+#, fuzzy
 msgid ""
 "In other cases, ask the originator to confirm if the problem still exists in "
 "newer versions. If the originator does not reply within a month, close the "
 "PR with the notation \"Feedback timeout\"."
-msgstr ""
+msgstr "在其他情况下，请询问提交者，确认问题在较新版本中是否仍然存在。如果提交者一个月内没有回复，请关闭该 PR，并注明 \"Feedback timeout\"。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:502
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Non-Bug PRs"
-msgstr ""
+msgstr "非缺陷 PR"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:505
+#, fuzzy
 msgid ""
 "Developers that come across PRs that look like they should have been posted "
 "to {freebsd-bugs} or some other list should close the PR, informing the "
 "submitter in a comment why this is not really a PR and where the message "
 "should be posted."
-msgstr ""
+msgstr "开发者如果发现某些 PR 看起来应该发布到 {freebsd-bugs} 或其他邮件列表，应关闭该 PR，并在评论中告知提交者这并不是真正的 PR，以及应该将消息发布到哪里。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:508
+#, fuzzy
 msgid ""
 "The email addresses that Bugzilla listens to for incoming PRs have been "
 "published as part of the FreeBSD documentation, have been announced and "
 "listed on the web-site.  This means that spammers found them."
-msgstr ""
+msgstr "Bugzilla 接收 PR 的电子邮件地址已作为 FreeBSD 文档的一部分发布，也曾公告并列在网站上。这意味着垃圾邮件发送者也找到了这些地址。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:510
+#, fuzzy
 msgid "Whenever you close one of these PRs, please do the following:"
-msgstr ""
+msgstr "每当您关闭这类 PR 时，请执行以下操作："
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:512
+#, fuzzy
 msgid "Set the component to `junk` (under `Supporting Services`)."
-msgstr ""
+msgstr "将组件设为 `junk`（位于 `Supporting Services` 下）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:513
+#, fuzzy
 msgid "Set Responsible to `nobody@FreeBSD.org`."
-msgstr ""
+msgstr "将负责人设为 `nobody@FreeBSD.org`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:514
+#, fuzzy
 msgid "Set State to `Issue Resolved`."
-msgstr ""
+msgstr "将状态设为 `Issue Resolved`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:516
+#, fuzzy
 msgid ""
 "Setting the category to `junk` makes it obvious that there is no useful "
 "content within the PR, and helps to reduce the clutter within the main "
 "categories."
-msgstr ""
+msgstr "将类别设为 `junk`，可以明确表明该 PR 中没有有用内容，并有助于减少主要类别中的杂乱信息。"
 
 #. type: Title ==
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:518
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸阅读"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:522
+#, fuzzy
 msgid ""
 "This is a list of resources relevant to the proper writing and processing of "
 "problem reports.  It is by no means complete."
-msgstr ""
+msgstr "以下列出了一些与正确撰写和处理问题报告相关的资源，但并不完整。"
 
 #. type: Plain text
 #: documentation/content/en/articles/pr-guidelines/_index.adoc:523
+#, fuzzy
 msgid ""
 "extref:{problem-reports}[How to Write FreeBSD Problem Reports]-guidelines "
 "for Problem Report originators."
-msgstr ""
+msgstr "extref:{problem-reports}[如何撰写 FreeBSD 问题报告]——面向问题报告提交者的指南。"

@@ -19,9 +19,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Essential reading if you plan on providing a port of a third party piece of software"
-msgstr ""
+msgstr "如果您计划为第三方软件编写 port，这是必读内容"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/_index.adoc:1

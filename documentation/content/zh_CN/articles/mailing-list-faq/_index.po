@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to best use the mailing lists, such as how to help avoid frequently-repeated discussions"
-msgstr ""
+msgstr "如何更好地使用邮件列表，例如如何避免反复讨论常见话题"
 
 #. type: Title =
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:1
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:10
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Frequently Asked Questions About The FreeBSD Mailing Lists"
-msgstr ""
+msgstr "FreeBSD 邮件列表常见问题解答"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:42
@@ -37,6 +37,7 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:48
+#, fuzzy
 msgid ""
 "This is the FAQ for the FreeBSD mailing lists.  If you are interested in "
 "helping with this project, send email to the {freebsd-doc}.  The latest "
@@ -45,7 +46,7 @@ msgid ""
 "extref:{mailing-list-faq}[HTML] file with HTTP or as plain text, PostScript, "
 "PDF, etc. from the https://download.freebsd.org/doc/[FreeBSD FTP server].  "
 "You may also want to link:https://www.FreeBSD.org/search/[Search the FAQ]."
-msgstr ""
+msgstr "本文档是 FreeBSD 邮件列表的常见问题解答。如果您有兴趣帮助这个项目，请给 {freebsd-doc} 发送电子邮件。本文档的最新版本始终可从 extref:{mailing-list-faq}[FreeBSD 万维网服务器]获取。您也可以通过 HTTP 下载一个完整的 extref:{mailing-list-faq}[HTML] 文件，或从 link:https://download.freebsd.org/doc/[FreeBSD FTP 服务器]下载纯文本、PostScript、PDF 等格式的文件。您也可以 link:https://www.FreeBSD.org/search/[搜索本常见问题解答]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:50
@@ -60,169 +61,184 @@ msgstr "介绍"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:58
+#, fuzzy
 msgid ""
 "As is usual with FAQs, this document aims to cover the most frequently asked "
 "questions concerning the FreeBSD mailing lists (and of course answer "
 "them!).  Although originally intended to reduce bandwidth and avoid the same "
 "old questions being asked over and over again, FAQs have become recognized "
 "as valuable information resources."
-msgstr ""
+msgstr "与常见问题解答通常的做法一样，本文档旨在涵盖有关 FreeBSD 邮件列表的最常见问题，并为这些问题提供解答！虽然常见问题解答最初是为了减少带宽占用，并避免反复有人提出相同的老问题，但如今已被公认为宝贵的信息资源。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:62
+#, fuzzy
 msgid ""
 "This document attempts to represent a community consensus, and as such it "
 "can never really be __authoritative__.  However, if you find technical "
 "errors within this document, or have suggestions about items that should be "
 "added, please either submit a PR, or email the {freebsd-doc}.  Thanks."
-msgstr ""
+msgstr "本文档力求体现社区共识，因此永远不可能真正具有__权威性__。不过，如果您发现本文档中有技术错误，或建议添加某些内容，请提交 PR，或给 {freebsd-doc} 发送电子邮件。谢谢。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:63
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is the purpose of the FreeBSD mailing lists?"
-msgstr ""
+msgstr "FreeBSD 邮件列表的用途是什么？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:66
+#, fuzzy
 msgid ""
 "The FreeBSD mailing lists serve as the primary communication channels for "
 "the FreeBSD community, covering many different topic areas and communities "
 "of interest."
-msgstr ""
+msgstr "FreeBSD 邮件列表是 FreeBSD 社区的主要交流渠道，涵盖许多不同的主题领域和兴趣社群。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Who is the audience for the FreeBSD mailing lists?"
-msgstr ""
+msgstr "FreeBSD 邮件列表面向哪些人？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:72
+#, fuzzy
 msgid ""
 "This depends on charter of each individual list.  Some lists are more "
 "oriented to developers; some are more oriented towards the FreeBSD community "
 "as a whole.  Please see link:https://lists.FreeBSD.org/[this list] for the "
 "current summary."
-msgstr ""
+msgstr "这取决于各个邮件列表的章程。有些列表更面向开发者，有些则更面向整个 FreeBSD 社区。请参阅 link:https://lists.FreeBSD.org/[此列表]，了解当前的概述。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:74
+#, fuzzy
 msgid "Lists are English language, unless stated otherwise."
-msgstr ""
+msgstr "除非另有说明，邮件列表均使用英语。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Are the FreeBSD mailing lists open for anyone to participate?"
-msgstr ""
+msgstr "任何人都可以参与 FreeBSD 邮件列表吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:80
+#, fuzzy
 msgid ""
 "Again, this depends on charter of each individual list.  Please read the "
 "charter of a mailing list before you post to it, and respect it when you "
 "post.  This will help everyone to have a better experience with the lists."
-msgstr ""
+msgstr "同样，这取决于各个邮件列表的章程。请在向邮件列表发帖前阅读其章程，并在发帖时遵守章程。这有助于所有人更好地使用邮件列表。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:82
+#, fuzzy
 msgid ""
 "If after reading the above lists, you still do not know which mailing list "
 "to post a question to, you will probably want to post to freebsd-questions "
 "(but see below, first)."
-msgstr ""
+msgstr "如果阅读上述列表后，您仍不知道该向哪个邮件列表提问，那么您可能需要向 freebsd-questions 发帖（但请先参阅下文）。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:85
+#, fuzzy
 msgid ""
 "Note that you must subscribe to a mailing list before you can post.  You can "
 "elect to subscribe without receiving messages posted to the mailing list."
-msgstr ""
+msgstr "请注意，您必须先订阅邮件列表才能发帖。您可以选择订阅但不接收邮件列表中发布的消息。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I subscribe?"
-msgstr ""
+msgstr "如何订阅？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:89
+#, fuzzy
 msgid ""
 "You can use link:https://lists.FreeBSD.org/[the Mlmmj web interface] to "
 "subscribe to any of the public lists."
-msgstr ""
+msgstr "您可以使用 link:https://lists.FreeBSD.org/[Mlmmj 网页界面]订阅任何公开邮件列表。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How can I unsubscribe?"
-msgstr ""
+msgstr "如何取消订阅？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:93
+#, fuzzy
 msgid ""
 "You can use the same interface as above; or, you can follow the instructions "
 "that are at the bottom of every mailing list message that is sent."
-msgstr ""
+msgstr "您可以使用上述相同的界面；也可以按照每封邮件列表消息底部的说明操作。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:97
+#, fuzzy
 msgid ""
 "Please do not send unsubscribe messages directly to the public lists "
 "themselves.  First, this will not accomplish your goal, and second, it will "
 "irritate the existing subscribers, and you will probably get flamed.  This "
 "is a classical mistake when using mailing lists; please try to avoid it."
-msgstr ""
+msgstr "请勿直接向公开邮件列表发送取消订阅的消息。首先，这样做无法实现您的目的；其次，会惹恼现有订阅者，您很可能还会因此遭到严厉批评。这是使用邮件列表时常见的错误，请尽量避免。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Are archives available?"
-msgstr ""
+msgstr "有邮件存档吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:102
+#, fuzzy
 msgid ""
 "Yes. Threaded archives with all e-mails since 1994 are available link:"
 "https://mail-archive.freebsd.org/mail/[here].  You can also access https://"
 "lists.freebsd.org/pipermail[mailman archive] and link:https://lists.freebsd."
 "org/archives[mlmmj archive] directly."
-msgstr ""
+msgstr "有。自 1994 年以来的邮件线程存档可在 link:https://mail-archive.freebsd.org/mail/[此处]查阅。您也可以直接访问 link:https://lists.freebsd.org/pipermail[Mailman 存档]和 link:https://lists.freebsd.org/archives[Mlmmj 存档]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Are mailing lists available in a digest format?"
-msgstr ""
+msgstr "邮件列表提供摘要格式吗？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:106
+#, fuzzy
 msgid "Yes. See link:https://lists.FreeBSD.org/[the Mlmmj web interface]."
-msgstr ""
+msgstr "有。请参阅 link:https://lists.FreeBSD.org/[Mlmmj 网页界面]。"
 
 #. type: Title ==
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mailing List Etiquette"
-msgstr ""
+msgstr "邮件列表礼仪"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:112
+#, fuzzy
 msgid ""
 "Participation in the mailing lists, like participation in any community, "
 "requires a common basis for communication.  Please make only appropriate "
 "postings, and follow common rules of etiquette."
-msgstr ""
+msgstr "参与邮件列表与参与任何社群一样，都需要共同的交流基础。请只发布恰当的内容，并遵守通行的礼仪规则。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What should I do before I post?"
-msgstr ""
+msgstr "发帖前应该做什么？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:118
+#, fuzzy
 msgid ""
 "You have already taken the most important step by reading this document.  "
 "However, if you are new to FreeBSD, you may first need to familiarize "
@@ -234,10 +250,11 @@ msgid ""
 "to get best results from the FreeBSD-questions mailing list], extref:"
 "{explaining-bsd}[Explaining BSD], and extref:{new-users}[FreeBSD First "
 "Steps]."
-msgstr ""
+msgstr "您已经通过阅读本文档完成了最重要的一步。不过，如果您刚接触 FreeBSD，可能还需要先熟悉这款软件及其背后的社会历史，可以阅读许多现有的 link:https://www.FreeBSD.org/docs/books/[书籍和文章]。特别值得一读的内容包括 extref:{faq}[《FreeBSD 常见问题解答》（FAQ）]、extref:{handbook}[《FreeBSD 手册》]，以及以下文章：extref:{freebsd-questions-article}[《如何在 FreeBSD-questions 邮件列表上获得最佳答复》]、extref:{explaining-bsd}[《解释 BSD》]和 extref:{new-users}[《FreeBSD 入门》]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:123
+#, fuzzy
 msgid ""
 "It is always considered bad form to ask a question that is already answered "
 "in the above documents.  This is not because the volunteers who work on this "
@@ -246,48 +263,53 @@ msgid ""
 "in.  This is particularly true if there is an existing answer to the "
 "question that is already available.  Always keep in mind that almost all of "
 "the work done on FreeBSD is done by volunteers, and that we are only human."
-msgstr ""
+msgstr "询问上述文档中已经解答的问题，一向被认为是不妥的。这并不是因为参与这个项目的志愿者特别刻薄，而是因为反复回答相同的问题一定次数后，人们难免会感到沮丧。如果问题已经有现成的答案，这种情况尤其如此。请始终牢记，FreeBSD 的工作几乎全由志愿者完成，而我们也都是普通人。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What constitutes an inappropriate posting?"
-msgstr ""
+msgstr "哪些发帖行为不恰当？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:127
+#, fuzzy
 msgid "Postings must be in accordance with the charter of the mailing list."
-msgstr ""
+msgstr "发帖内容必须符合邮件列表的章程。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:128
+#, fuzzy
 msgid ""
 "Personal attacks are discouraged. As good net-citizens, we should try to "
 "hold ourselves to high standards of behavior."
-msgstr ""
+msgstr "不鼓励人身攻击。作为良好的网络公民，我们应努力坚持较高的行为标准。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:129
+#, fuzzy
 msgid ""
 "Spam is not allowed, ever. The mailing lists are actively processed to ban "
 "offenders to this rule."
-msgstr ""
+msgstr "任何时候都不允许发送垃圾邮件。邮件列表会主动处理违规者并将其封禁。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What is considered proper etiquette when posting to the mailing lists?"
-msgstr ""
+msgstr "在邮件列表发帖时应遵守哪些礼仪？"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:133
+#, fuzzy
 msgid ""
 "Please wrap lines at 75 characters, since not everyone uses fancy GUI mail "
 "reading programs."
-msgstr ""
+msgstr "请将每行控制在 75 个字符以内，因为并非所有人都使用功能丰富的图形界面邮件阅读程序。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:134
+#, fuzzy
 msgid ""
 "Please respect the fact that bandwidth is not infinite. Not everyone reads "
 "email through high-speed connections, so if your posting involves something "
@@ -296,10 +318,11 @@ msgid ""
 "provide a URL to it. Remember, too, that these postings will be archived "
 "indefinitely, so huge postings will simply inflate the size of the archives "
 "long after their purpose has expired."
-msgstr ""
+msgstr "请体谅带宽并非无限。并非所有人都通过高速连接收发电子邮件，因此，如果您的帖子包含类似 [.filename]#config.log# 的内容或很长的堆栈跟踪信息，请考虑将这些信息放到某个网站上，并只提供相应的 URL。还请记住，这些帖子会被永久存档，因此，即使其用途早已消失，过长的帖子仍会不断增加存档的大小。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:135
+#, fuzzy
 msgid ""
 "Format your message so that it is legible, and PLEASE DO NOT SHOUT!!!!!. Do "
 "not underestimate the effect that a poorly formatted mail message has, and "
@@ -307,59 +330,67 @@ msgid ""
 "see of you, and if it is poorly formatted, badly spelled, full of errors, "
 "and/or has lots of exclamation points, it will give people a poor impression "
 "of you."
-msgstr ""
+msgstr "请妥善设置邮件格式，使其易于阅读，并且请勿大喊大叫！！！不要低估格式糟糕的邮件所造成的影响，这不仅限于 FreeBSD 邮件列表。别人只能通过您的邮件了解您；如果邮件格式糟糕、拼写错误、错误百出，和／或满是感叹号，就会给别人留下不好的印象。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:136
+#, fuzzy
 msgid ""
 "Please use an appropriate human language for a particular mailing list. Many "
 "non-English mailing lists are link:https://www.FreeBSD.org/community/"
 "mailinglists/[available]."
-msgstr ""
+msgstr "请在特定邮件列表中使用恰当的人类语言。许多非英语邮件列表均可在 link:https://www.FreeBSD.org/community/mailinglists/[此处]找到。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:140
+#, fuzzy
 msgid ""
 "For the ones that are not, we do appreciate that many people do not speak "
 "English as their first language, and we try to make allowances for that.  It "
 "is considered particularly poor form to criticize non-native speakers for "
 "spelling or grammatical errors.  FreeBSD has an excellent track record in "
 "this regard; please, help us to uphold that tradition."
-msgstr ""
+msgstr "对于没有此类列表的情况，我们理解许多人并非以英语为母语，并会尽量予以包容。批评非母语人士的拼写或语法错误尤其不妥。FreeBSD 在这方面一直做得很好；请帮助我们延续这一传统。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:141
+#, fuzzy
 msgid ""
 "Please use a standards-compliant Mail User Agent (MUA). A lot of badly "
 "formatted messages come from http://www.lemis.com/grog/email/email.php[bad "
 "mailers or badly configured mailers]. The following mailers are known to "
 "send out badly formatted messages without you finding out about them:"
-msgstr ""
+msgstr "请使用符合标准的邮件用户代理（MUA）。许多格式糟糕的消息都来自 link:http://www.lemis.com/grog/email/email.php[糟糕的邮件客户端或配置不当的邮件客户端]。已知以下邮件客户端会在您未察觉的情况下发送格式错误的消息："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:143
+#, fuzzy
 msgid "exmh"
-msgstr ""
+msgstr "exmh"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:144
+#, fuzzy
 msgid "Microsoft(R) Exchange"
-msgstr ""
+msgstr "Microsoft(R) Exchange"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:145
+#, fuzzy
 msgid "Microsoft(R) Outlook(R)"
-msgstr ""
+msgstr "Microsoft(R) Outlook(R)"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:147
+#, fuzzy
 msgid ""
 "Try not to use MIME: a lot of people use mailers which do not get on very "
 "well with MIME."
-msgstr ""
+msgstr "尽量不要使用 MIME：许多人使用的邮件客户端对 MIME 的支持并不理想。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:148
+#, fuzzy
 msgid ""
 "Make sure your time and time zone are set correctly. This may seem a little "
 "silly, since your message still gets there, but many of the people on these "
@@ -367,10 +398,11 @@ msgid ""
 "incoming messages by subject and by date, and if your message does not come "
 "before the first answer, they may assume that they missed it and not bother "
 "to look."
-msgstr ""
+msgstr "请确保正确设置了时间和时区。这看起来或许有些无关紧要，因为您的消息仍然能够送达，但许多邮件列表成员每天会收到数百封消息。他们经常按主题和日期对收到的消息排序；如果您的消息排在第一个答复之后，他们可能会以为自己错过了您的消息，从而不再查看。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:149
+#, fuzzy
 msgid ""
 "A lot of the information you need to supply is the output of programs, such "
 "as man:dmesg[8], or console messages, which usually appear in [.filename]#/"
@@ -380,21 +412,23 @@ msgid ""
 "trim the information to what is relevant, or cut and paste into your "
 "message. For the output of programs like `dmesg`, redirect the output to a "
 "file and include that. For example,"
-msgstr ""
+msgstr "您需要提供的许多信息来自程序的输出，例如 man:dmesg[8]，或通常出现在 [.filename]#/var/log/messages# 中的控制台消息。不要尝试重新输入这些信息；这不仅非常麻烦，而且难免出错。要发送日志文件内容，可以复制文件并用编辑器删去不相关的信息，或者将相关内容复制并粘贴到消息中。对于 `dmesg` 之类程序的输出，请将输出重定向到文件并附上该文件。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:153
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% dmesg > /tmp/dmesg.out\n"
-msgstr ""
+msgstr "% dmesg > /tmp/dmesg.out\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:156
+#, fuzzy
 msgid "This redirects the information to the file [.filename]#/tmp/dmesg.out#."
-msgstr ""
+msgstr "这会将信息重定向到文件 [.filename]#/tmp/dmesg.out#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:157
+#, fuzzy
 msgid ""
 "When using cut-and-paste, please be aware that some such operations badly "
 "mangle their messages. This is of particular concern when posting contents "
@@ -403,77 +437,86 @@ msgid ""
 "www.FreeBSD.org/support/[Problem Reports database]. [.filename]#Makefiles# "
 "with tabs changed to either spaces, or the annoying `=3B` escape sequence, "
 "create a great deal of aggravation for committers."
-msgstr ""
+msgstr "使用复制粘贴时，请注意某些操作会严重破坏消息格式。对于 [.filename]#Makefiles# 的内容，这一点尤其重要，因为 `tab` 是有特殊意义的字符。这是向 link:https://www.FreeBSD.org/support/[问题报告数据库]提交内容时非常常见且令人恼火的问题。如果 [.filename]#Makefiles# 中的制表符被改为空格，或被替换为讨厌的 `=3B` 转义序列，就会给提交者带来很多麻烦。"
 
 #. type: Title ===
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What are the special etiquette consideration when replying to an existing posting on the mailing lists?"
-msgstr ""
+msgstr "回复邮件列表中的现有帖子时，有哪些特别需要注意的礼仪？"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:161
+#, fuzzy
 msgid ""
 "Please include relevant text from the original message. Trim it to the "
 "minimum, but do not overdo it. It should still be possible for somebody who "
 "did not read the original message to understand what you are talking about."
-msgstr ""
+msgstr "请引用原消息中的相关内容。尽量精简，但也不要删得过多。没有读过原消息的人仍应能够理解您在讨论什么。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:163
+#, fuzzy
 msgid ""
 "This is especially important for postings of the type \"yes, I see this too"
 "\", where the initial posting was dozens or hundreds of lines."
-msgstr ""
+msgstr "对于“是的，我也遇到了这个问题”这类帖子，这一点尤其重要，因为原帖可能有几十行甚至几百行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:164
+#, fuzzy
 msgid ""
 "Use some technique to identify which text came from the original message, "
 "and which text you add. A common convention is to prepend \"`>`\" to the "
 "original message. Leaving white space after the \"`>`\" and leaving empty "
 "lines between your text and the original text both make the result more "
 "readable."
-msgstr ""
+msgstr "请使用某种方式区分原消息中的文字和您添加的内容。常见做法是在原消息前加上“`>`”。在“`>`”后留一个空格，并在您的文字与原文之间留空行，都会让内容更易于阅读。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:165
+#, fuzzy
 msgid ""
 "Please ensure that the attributions of the text you are quoting is correct. "
 "People can become offended if you attribute words to them that they "
 "themselves did not write."
-msgstr ""
+msgstr "请确保正确标注所引用文字的出处。如果把别人没有写过的话归到他们名下，他们可能会感到被冒犯。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:166
+#, fuzzy
 msgid ""
 "Please do not `top post`. By this, we mean that if you are replying to a "
 "message, please put your replies after the text that you copy in your reply."
-msgstr ""
+msgstr "请不要 `top post`。也就是说，如果您要回复一条消息，请把回复内容放在您引用的原文之后。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:168
+#, fuzzy
 msgid "A: Because it reverses the logical flow of conversation."
-msgstr ""
+msgstr "答：因为这会颠倒对话的逻辑顺序。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:169
+#, fuzzy
 msgid "Q: Why is top posting frowned upon?"
-msgstr ""
+msgstr "问：为什么不鼓励顶端回复？"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:171
+#, fuzzy
 msgid "(Thanks to Randy Bush for the joke.)"
-msgstr ""
+msgstr "（感谢 Randy Bush 提供这个笑话。）"
 
 #. type: Title ==
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Recurring Topics On The Mailing Lists"
-msgstr ""
+msgstr "邮件列表中的常见话题"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:180
+#, fuzzy
 msgid ""
 "Participation in the mailing lists, like participation in any community, "
 "requires a common basis for communication.  Many of the mailing lists "
@@ -483,10 +526,11 @@ msgid ""
 "fall into one of these categories.  By doing so, you will help the mailing "
 "lists to stay on-topic, and probably save yourself being flamed in the "
 "process."
-msgstr ""
+msgstr "参与邮件列表与参与任何社群一样，都需要共同的交流基础。许多邮件列表默认参与者了解本项目的历史。尤其是，有些话题似乎总会被社区新人反复提起。每位发帖者都有责任确保自己的帖子不属于这些话题。这样做有助于邮件列表保持主题相关，也可能让您免受严厉批评。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:184
+#, fuzzy
 msgid ""
 "The best method to avoid this is to familiarize yourself with the http://"
 "docs.FreeBSD.org/mail/[mailing list archives], to help yourself understand "
@@ -494,35 +538,38 @@ msgid ""
 "org/search/#mailinglists[mailing list search interface] is invaluable.  (If "
 "that method does not yield useful results, please supplement it with a "
 "search with your favorite major search engine)."
-msgstr ""
+msgstr "避免这种情况的最佳方法是熟悉 link:http://docs.FreeBSD.org/mail/[邮件列表存档]，以便了解此前讨论的背景。在这方面， link:https://www.FreeBSD.org/search/#mailinglists[邮件列表搜索界面]非常有用。（如果这种方法找不到有用的结果，请再使用您常用的大型搜索引擎进行搜索。）"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:187
+#, fuzzy
 msgid ""
 "By familiarizing yourself with the archives, not only will you learn what "
 "topics have been discussed before, but also how discussion tends to proceed "
 "on that list, who the participants are, and who the target audience is.  "
 "These are always good things to know before you post to any mailing list, "
 "not just a FreeBSD mailing list."
-msgstr ""
+msgstr "熟悉存档不仅能让您了解以前讨论过哪些话题，还能让您了解该列表通常如何展开讨论、有哪些参与者，以及目标受众是谁。在任何邮件列表发帖前，了解这些情况总是有益的，不仅限于 FreeBSD 邮件列表。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:190
+#, fuzzy
 msgid ""
 "There is no doubt that the archives are quite extensive, and some questions "
 "recur more often than others, sometimes as followups where the subject line "
 "no longer accurately reflects the new content.  Nevertheless, the burden is "
 "on you, the poster, to do your homework to help avoid these recurring topics."
-msgstr ""
+msgstr "毫无疑问，存档内容相当丰富；有些问题比其他问题更常反复出现，有时后续讨论的主题行已无法准确反映新内容。尽管如此，发帖者仍有责任做好功课，尽量避免这些反复出现的话题。"
 
 #. type: Title ==
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What Is A \"Bikeshed\"?"
-msgstr ""
+msgstr "什么是“自行车棚”话题？"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:197
+#, fuzzy
 msgid ""
 "Literally, a `bikeshed` is a small outdoor shelter into which one may store "
 "one's two-wheeled form of transportation.  However, in FreeBSD parlance, the "
@@ -531,21 +578,23 @@ msgid ""
 "is explained in more detail extref:{faq}[in this document, bikeshed-"
 "painting].  You simply must have a working knowledge of this concept before "
 "posting to any FreeBSD mailing list."
-msgstr ""
+msgstr "从字面上说，`bikeshed` 是一种小型户外棚屋，可以用来存放两轮交通工具。不过，在 FreeBSD 的用语中，这个词指的是简单到几乎任何人都能发表意见，而且往往几乎所有人都会发表意见的话题。该词的由来在 extref:{faq}[本文档的此处，bikeshed-painting]有更详细的解释。在 FreeBSD 邮件列表发帖前，您必须对这个概念有基本的了解。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:199
+#, fuzzy
 msgid ""
 "More generally, a bikeshed is a topic that will tend to generate immediate "
 "meta-discussions and flames if you have not read up on their history."
-msgstr ""
+msgstr "更广义地说，如果您不了解某个话题的历史，那么它往往会立刻引发关于讨论本身的讨论和激烈争论；这类话题也称为自行车棚话题。"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:202
+#, fuzzy
 msgid ""
 "Please help us to keep the mailing lists as useful for as many people as "
 "possible by avoiding bikesheds whenever you can.  Thanks."
-msgstr ""
+msgstr "请尽可能避免讨论自行车棚话题，帮助我们让邮件列表对更多人保持实用。谢谢。"
 
 #. type: Title ==
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:204
@@ -555,25 +604,27 @@ msgstr "鸣谢"
 
 #. type: Labeled list
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{grog}`"
-msgstr ""
+msgstr "`{grog}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:208
+#, fuzzy
 msgid ""
 "Original author of most of the material on mailing list etiquette, taken "
 "from the article on extref:{freebsd-questions-article}[How to get best "
 "results from the FreeBSD-questions mailing list]."
-msgstr ""
+msgstr "邮件列表礼仪相关材料的大部分内容由原作者撰写，摘自 extref:{freebsd-questions-article}[《如何在 FreeBSD-questions 邮件列表上获得最佳答复》]一文。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{linimon}`"
-msgstr ""
+msgstr "`{linimon}`"
 
 #. type: Plain text
 #: documentation/content/en/articles/mailing-list-faq/_index.adoc:210
+#, fuzzy
 msgid "Creation of the rough draft of this FAQ."
-msgstr ""
+msgstr "撰写本常见问题解答的初步草稿。"

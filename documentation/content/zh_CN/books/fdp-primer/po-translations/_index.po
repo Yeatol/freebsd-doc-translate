@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How to work with PO translation in the FreeBSD Documentation Project"
-msgstr ""
+msgstr "如何在 FreeBSD 文档项目中使用 PO 翻译"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 9. PO Translations"
-msgstr ""
+msgstr "第 9 章 PO 翻译"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "PO Translations"
-msgstr ""
+msgstr "PO 翻译"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:51
@@ -44,6 +44,7 @@ msgstr "介绍"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:57
+#, fuzzy
 msgid ""
 "The http://www.gnu.org/software/gettext/[GNU gettext] system offers "
 "translators an easy way to create and maintain translations of documents.  "
@@ -51,7 +52,7 @@ msgid ""
 "(Portable Object) file.  Translated versions of the strings are entered with "
 "a separate editor.  The strings can be used directly or built into a "
 "complete translated version of the original document."
-msgstr ""
+msgstr "link:http://www.gnu.org/software/gettext/[GNU gettext] 系统为译者提供了便捷的文档翻译和维护方式。可翻译的字符串会从原始文档中提取到 PO（Portable Object，可移植对象）文件中。译者使用单独的编辑器输入这些字符串的译文。译文可以直接使用，也可以构建成完整的原始文档译本。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:59
@@ -61,793 +62,834 @@ msgstr "快速开始"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:63
+#, fuzzy
 msgid ""
 "The procedure shown in crossref:overview[overview-quick-start,Quick Start] "
 "is assumed to have already been performed.  The `TRANSLATOR` option is "
 "required and already enabled by default in the package:textproc/docproj[] "
 "port."
-msgstr ""
+msgstr "假定已经完成 crossref:overview[overview-quick-start,快速入门] 中所示的步骤。package:textproc/docproj[] 移植中需要启用 `TRANSLATOR` 选项；默认情况下该选项已启用。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:65
+#, fuzzy
 msgid ""
 "This example shows the creation of a Spanish translation of the short extref:"
 "{leap-seconds}[Leap Seconds] article."
-msgstr ""
+msgstr "本例演示如何创建短文 extref:{leap-seconds}[闰秒] 的西班牙语译本。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Install a PO Editor"
-msgstr ""
+msgstr "步骤：安装 PO 编辑器"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:72
+#, fuzzy
 msgid ""
 "A PO editor is needed to edit translation files. This example uses package:"
 "editors/poedit[]."
-msgstr ""
+msgstr "编辑翻译文件需要 PO 编辑器。本例使用 package:editors/poedit[]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:76
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install poedit\n"
-msgstr ""
+msgstr "# pkg install poedit\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:82
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Initial Setup"
-msgstr ""
+msgstr "步骤：初始设置"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:85
+#, fuzzy
 msgid ""
 "When a new translation is first created, the directory structure must be "
 "created or copied from the English original:"
-msgstr ""
+msgstr "首次创建新译本时，必须创建目录结构，或从英文原文复制目录结构："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:90
+#, fuzzy
 msgid ""
 "Create a directory for the new translation.  The English article source is "
 "in [.filename]#~/doc/documentation/content/en/articles/leap-seconds/#.  The "
 "Spanish translation will go in [.filename]#~/doc/documentation/content/es/"
 "articles/leap-seconds/#.  The path is the same except for the name of the "
 "language directory."
-msgstr ""
+msgstr "为新译本创建目录。英文文章源文件位于 [.filename]#~/doc/documentation/content/en/articles/leap-seconds/#。西班牙语译本将放在 [.filename]#~/doc/documentation/content/es/articles/leap-seconds/#。除了语言目录名称不同，路径其余部分相同。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mkdir ~/doc/documentation/content/es/articles/leap-seconds\n"
-msgstr ""
+msgstr "% mkdir ~/doc/documentation/content/es/articles/leap-seconds\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:97
+#, fuzzy
 msgid ""
 "Copy the [.filename]#_index.po# from the original document into the "
 "translation directory:"
-msgstr ""
+msgstr "将原文中的 [.filename]#_index.po# 复制到翻译目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cp ~/doc/documentation/content/en/articles/leap-seconds/_index.po \\\n"
 "  ~/doc/documentation/content/es/articles/leap-seconds/\n"
-msgstr ""
+msgstr "% cp ~/doc/documentation/content/en/articles/leap-seconds/_index.po \\\n  ~/doc/documentation/content/es/articles/leap-seconds/\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:106
+#, fuzzy
 msgid ""
 "Suppose the document or language is also being translated via Weblate.  In "
 "that case, it is good to get the `.po` file from there and upload the "
 "translation document back into the platform, centralizing the translating "
 "efforts via Weblate to avoid rework."
-msgstr ""
+msgstr "假设该文档或语言也正在通过 Weblate 翻译。在这种情况下，最好从 Weblate 获取 `.po` 文件，并将译文文档上传回平台，以便通过 Weblate 集中翻译工作，避免重复劳动。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:108
+#, fuzzy
 msgid ""
 "See how to download the `.po` files in the crossref:weblate[weblate-"
 "translating-offline,Translating Offline on Weblate] chapter."
-msgstr ""
+msgstr "关于如何下载 `.po` 文件，请参阅 crossref:weblate[weblate-translating-offline,在 Weblate 上离线翻译] 章节。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Translation"
-msgstr ""
+msgstr "步骤：翻译"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:117
+#, fuzzy
 msgid ""
 "Use a PO editor to enter translations in the PO file.  There are several "
 "different editors available. [.filename]#poedit# from package:editors/"
 "poedit[] is shown here."
-msgstr ""
+msgstr "使用 PO 编辑器在 PO 文件中输入译文。有多种编辑器可供选择。此处以 package:editors/poedit[] 中的 [.filename]#poedit# 为例。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% poedit documentation/content/es/articles/leap-seconds/_index.po\n"
-msgstr ""
+msgstr "% poedit documentation/content/es/articles/leap-seconds/_index.po\n"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Generating a Translated Document"
-msgstr ""
+msgstr "步骤：生成译文文档"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:129
+#, fuzzy
 msgid "Generate the translated document:"
-msgstr ""
+msgstr "生成译文文档："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% ./tools/translate.sh documentation es articles/leap-seconds\n"
-msgstr ""
+msgstr "% cd ~/doc\n% ./tools/translate.sh documentation es articles/leap-seconds\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:137
+#, fuzzy
 msgid ""
 "The name of the generated document matches the name of the English original, "
 "usually [.filename]#_index.adoc#."
-msgstr ""
+msgstr "生成的文档与英文原文同名，通常为 [.filename]#_index.adoc#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:139
+#, fuzzy
 msgid ""
 "Check the generated file by rendering it to HTML and viewing it with a web "
 "browser:"
-msgstr ""
+msgstr "将生成的文件渲染为 HTML，并在 Web 浏览器中查看，以检查文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:144
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation\n"
 "% make\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation\n% make\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating New Translations"
-msgstr ""
+msgstr "创建新译本"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:153
+#, fuzzy
 msgid ""
 "The first step to creating a new translated document is locating or creating "
 "a directory to hold it.  FreeBSD puts translated documents in a subdirectory "
 "named for their language and region in the format [.filename]#lang#.  _lang_ "
 "is a two-character lowercase code."
-msgstr ""
+msgstr "创建新译本文档的第一步是找到或创建用于存放该文档的目录。FreeBSD 将译文放在以语言和地区命名的子目录中，格式为 [.filename]#lang#。__lang__ 是一个由两个小写字符组成的代码。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Language Names"
-msgstr ""
+msgstr "语言名称"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Region"
-msgstr ""
+msgstr "地区"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:162
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translated Directory Name"
-msgstr ""
+msgstr "译文目录名称"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "English"
-msgstr ""
+msgstr "英语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "United States"
-msgstr ""
+msgstr "美国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#en#"
-msgstr ""
+msgstr "[.filename]#en#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bengali"
-msgstr ""
+msgstr "孟加拉语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:168
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Bangladesh"
-msgstr ""
+msgstr "孟加拉国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#bn-bd#"
-msgstr ""
+msgstr "[.filename]#bn-bd#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Danish"
-msgstr ""
+msgstr "丹麦语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Denmark"
-msgstr ""
+msgstr "丹麦"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:174
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#da#"
-msgstr ""
+msgstr "[.filename]#da#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "German"
-msgstr ""
+msgstr "德语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Germany"
-msgstr ""
+msgstr "德国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#de#"
-msgstr ""
+msgstr "[.filename]#de#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Greek"
-msgstr ""
+msgstr "希腊语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Greece"
-msgstr ""
+msgstr "希腊"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#el#"
-msgstr ""
+msgstr "[.filename]#el#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spanish"
-msgstr ""
+msgstr "西班牙语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spain"
-msgstr ""
+msgstr "西班牙"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#es#"
-msgstr ""
+msgstr "[.filename]#es#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "French"
-msgstr ""
+msgstr "法语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "France"
-msgstr ""
+msgstr "法国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#fr#"
-msgstr ""
+msgstr "[.filename]#fr#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hungarian"
-msgstr ""
+msgstr "匈牙利语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:192
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Hungary"
-msgstr ""
+msgstr "匈牙利"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#hu#"
-msgstr ""
+msgstr "[.filename]#hu#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:195
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Italian"
-msgstr ""
+msgstr "意大利语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Italy"
-msgstr ""
+msgstr "意大利"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:198
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#it#"
-msgstr ""
+msgstr "[.filename]#it#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Japanese"
-msgstr ""
+msgstr "日语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Japan"
-msgstr ""
+msgstr "日本"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#ja#"
-msgstr ""
+msgstr "[.filename]#ja#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Korean"
-msgstr ""
+msgstr "韩语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:204
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Korea"
-msgstr ""
+msgstr "韩国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#ko#"
-msgstr ""
+msgstr "[.filename]#ko#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:207
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mongolian"
-msgstr ""
+msgstr "蒙古语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mongolia"
-msgstr ""
+msgstr "蒙古国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:210
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#mn#"
-msgstr ""
+msgstr "[.filename]#mn#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dutch"
-msgstr ""
+msgstr "荷兰语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Netherlands"
-msgstr ""
+msgstr "荷兰"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#nl#"
-msgstr ""
+msgstr "[.filename]#nl#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Polish"
-msgstr ""
+msgstr "波兰语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Poland"
-msgstr ""
+msgstr "波兰"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#pl#"
-msgstr ""
+msgstr "[.filename]#pl#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Portuguese"
-msgstr ""
+msgstr "葡萄牙语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Brazil"
-msgstr ""
+msgstr "巴西"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:222
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#pt-br#"
-msgstr ""
+msgstr "[.filename]#pt-br#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Russian"
-msgstr ""
+msgstr "俄语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Russia"
-msgstr ""
+msgstr "俄罗斯"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#ru#"
-msgstr ""
+msgstr "[.filename]#ru#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Turkish"
-msgstr ""
+msgstr "土耳其语"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:228
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Turkey"
-msgstr ""
+msgstr "土耳其"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#tr#"
-msgstr ""
+msgstr "[.filename]#tr#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:231
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chinese"
-msgstr ""
+msgstr "中文"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "China"
-msgstr ""
+msgstr "中国"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#zh-cn#"
-msgstr ""
+msgstr "[.filename]#zh-cn#"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Taiwan"
-msgstr ""
+msgstr "台湾"
 
 #. type: Table
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#zh-tw#"
-msgstr ""
+msgstr "[.filename]#zh-tw#"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:243
+#, fuzzy
 msgid ""
 "The translations are in subdirectories of the main documentation directory, "
 "here assumed to be [.filename]#~/doc/documentation/# as shown in crossref:"
 "overview[overview-quick-start, Quick Start].  For example, German "
 "translations are located in [.filename]#~/doc/documentation/content/de/#, "
 "and French translations are in [.filename]#~/doc/documentation/content/fr/#."
-msgstr ""
+msgstr "译文位于主文档目录的子目录中，此处假定主目录为 [.filename]#~/doc/documentation/#，如 crossref:overview[overview-quick-start,快速入门] 所示。例如，德语译文位于 [.filename]#~/doc/documentation/content/de/#，法语译文位于 [.filename]#~/doc/documentation/content/fr/#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:245
+#, fuzzy
 msgid ""
 "Each language directory contains separate subdirectories named for the type "
 "of documents, usually [.filename]#articles/# and [.filename]#books/#."
-msgstr ""
+msgstr "每个语言目录都包含以文档类型命名的独立子目录，通常为 [.filename]#articles/# 和 [.filename]#books/#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:249
+#, fuzzy
 msgid ""
 "Combining these directory names gives the complete path to an article or "
 "book.  For example, the French translation of the NanoBSD article is in [."
 "filename]#~/doc/documentation/content/fr/articles/nanobsd/#, and the "
 "Mongolian translation of the Handbook is in [.filename]#~/doc/documentation/"
 "content/mn/books/handbook/#."
-msgstr ""
+msgstr "组合这些目录名称即可得到文章或书籍的完整路径。例如，NanoBSD 文章的法语译本位于 [.filename]#~/doc/documentation/content/fr/articles/nanobsd/#，手册的蒙古语译本位于 [.filename]#~/doc/documentation/content/mn/books/handbook/#。"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:252
+#, fuzzy
 msgid ""
 "A new language directory must be created when translating a document to a "
 "new language.  If the language directory already exists, only a subdirectory "
 "in the [.filename]#articles/# or [.filename]#books/# directory is needed."
-msgstr ""
+msgstr "将文档翻译成一种新语言时，必须创建新的语言目录。如果该语言目录已存在，则只需在 [.filename]#articles/# 或 [.filename]#books/# 目录下创建子目录。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating a Spanish Translation of the Porter's Handbook"
-msgstr ""
+msgstr "创建西班牙语版《Porter 手册》"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:259
+#, fuzzy
 msgid ""
 "Create a new Spanish translation of the extref:{porters-handbook}[Porter's "
 "Handbook].  The original is a book in [.filename]#~/doc/documentation/"
 "content/en/books/porters-handbook/#."
-msgstr ""
+msgstr "创建 extref:{porters-handbook}[《Porter 手册》] 的西班牙语新译本。原文是一本书，位于 [.filename]#~/doc/documentation/content/en/books/porters-handbook/#。"
 
 #. type: delimited block = 6
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:264
+#, fuzzy
 msgid ""
 "The Spanish language books directory [.filename]#~/doc/documentation/content/"
 "es/books/# already exists, so only a new subdirectory for the Porter's "
 "Handbook is needed:"
-msgstr ""
+msgstr "西班牙语书籍目录 [.filename]#~/doc/documentation/content/es/books/# 已存在，因此只需为《Porter 手册》创建一个新的子目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc/documentation/content/es/books\n"
 "% mkdir porters-handbook\n"
-msgstr ""
+msgstr "% cd ~/doc/documentation/content/es/books\n% mkdir porters-handbook\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:272
+#, fuzzy
 msgid "Copy the content from the original book:"
-msgstr ""
+msgstr "从原书复制内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd porters-handbook\n"
 "% cp -R ~/doc/documentation/content/en/books/porters-handbook/* .\n"
-msgstr ""
+msgstr "% cd porters-handbook\n% cp -R ~/doc/documentation/content/en/books/porters-handbook/* .\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:280
+#, fuzzy
 msgid ""
 "Now the document structure is ready for the translator to begin translating "
 "with `po4a` command."
-msgstr ""
+msgstr "现在文档结构已准备就绪，译者可以开始使用 `po4a` 命令进行翻译。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Translating"
-msgstr ""
+msgstr "翻译"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:289
+#, fuzzy
 msgid ""
 "The gettext system greatly reduces the number of things that must be tracked "
 "by a translator.  Strings to be translated are extracted from the original "
 "document into a PO file.  Then a PO editor is used to enter the translated "
 "versions of each string."
-msgstr ""
+msgstr "gettext 系统大大减少了译者需要跟踪的事项。待翻译的字符串会从原始文档中提取到 PO 文件中。然后使用 PO 编辑器输入每个字符串的译文。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:291
+#, fuzzy
 msgid ""
 "The FreeBSD PO translation system does not overwrite PO files, so the "
 "extraction step can be run at any time to update the PO file."
-msgstr ""
+msgstr "FreeBSD PO 翻译系统不会覆盖 PO 文件，因此可以随时运行提取步骤来更新 PO 文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:296
+#, fuzzy
 msgid ""
 "A PO editor is used to edit the file.  package:editors/poedit[] is shown in "
 "these examples because it is simple and has minimal requirements.  Other PO "
 "editors offer features to make the job of translating easier.  The Ports "
 "Collection offers several of these editors, including package:devel/"
 "gtranslator[]."
-msgstr ""
+msgstr "使用 PO 编辑器编辑该文件。此处的示例使用 package:editors/poedit[]，因为它简单且要求很少。其他 PO 编辑器提供了让翻译工作更轻松的功能。Ports Collection 提供了多个此类编辑器，包括 package:devel/gtranslator[]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:299
+#, fuzzy
 msgid ""
 "It is important to preserve the PO file.  It contains all of the work that "
 "translators have done."
-msgstr ""
+msgstr "保留 PO 文件非常重要。文件中包含译者完成的所有工作。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:304
+#, fuzzy
 msgid ""
 "Translating documents online proves to be the easiest method for document "
 "translation on FreeBSD, as it allows multiple users to collaborate on the "
 "same file, distributing the workload effectively.  For more details, please "
 "refer to the next chapter, crossref:weblate[weblate-introduction,Weblate "
 "Translations]."
-msgstr ""
+msgstr "在线翻译文档被证明是 FreeBSD 文档翻译最简便的方法，因为它允许多名用户协作处理同一个文件，从而有效分配工作量。详情请参阅下一章 crossref:weblate[weblate-introduction,Weblate Translations]。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Tips for Translators"
-msgstr ""
+msgstr "给译者的提示"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:310
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preserving AsciiDoc macros"
-msgstr ""
+msgstr "保留 AsciiDoc 宏"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:313
+#, fuzzy
 msgid "Preserve AsciiDoc macros that are shown in the English original."
-msgstr ""
+msgstr "保留英文原文中出现的 AsciiDoc 宏。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:318
+#, fuzzy
 msgid "English original:"
-msgstr ""
+msgstr "英文原文："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:324
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "msgid \"\"\n"
 "\"This example shows the creation of a Spanish translation of the short \"\n"
 "\"extref:{leap-seconds}[Leap Seconds] article.\"\n"
-msgstr ""
+msgstr "msgid \"\"\n\"This example shows the creation of a Spanish translation of the short \"\n\"extref:{leap-seconds}[Leap Seconds] article.\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:327
+#, fuzzy
 msgid "Spanish translation:"
-msgstr ""
+msgstr "西班牙语译文："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:333
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "msgid \"\"\n"
 "\"Este ejemplo muestra la creación de un artículo con poco contenido como el artículo \"\n"
 "\"extref:{leap-seconds}[Leap Seconds].\"\n"
-msgstr ""
+msgstr "msgid \"\"\n\"Este ejemplo muestra la creación de un artículo con poco contenido como el artículo \"\n\"extref:{leap-seconds}[Leap Seconds].\"\n"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Preserving Spaces"
-msgstr ""
+msgstr "保留空格"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:342
+#, fuzzy
 msgid ""
 "Preserve existing spaces at the beginning and end of strings to be "
 "translated.  The translated version must have these spaces also."
-msgstr ""
+msgstr "保留待翻译字符串开头和结尾处已有的空格。译文也必须包含这些空格。"
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Verbatim Tags"
-msgstr ""
+msgstr "原样保留的标记"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:347
+#, fuzzy
 msgid "The contents of some tags should be copied verbatim, not translated:"
-msgstr ""
+msgstr "某些标记的内容应原样复制，而不应翻译："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:349
+#, fuzzy
 msgid "`man:man[1]`"
-msgstr ""
+msgstr "`man:man[1]`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:350
+#, fuzzy
 msgid "`package:package[]`"
-msgstr ""
+msgstr "`package:package[]`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:351
+#, fuzzy
 msgid "`link`"
-msgstr ""
+msgstr "`link`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:352
+#, fuzzy
 msgid "`image`"
-msgstr ""
+msgstr "`image`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:353
+#, fuzzy
 msgid "`include`"
-msgstr ""
+msgstr "`include`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:354
+#, fuzzy
 msgid "`Admonitions`"
-msgstr ""
+msgstr "`Admonitions`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:355
+#, fuzzy
 msgid "`id's`"
-msgstr ""
+msgstr "`id's`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:356
+#, fuzzy
 msgid "`Heading tags`"
-msgstr ""
+msgstr "`Heading tags`"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:357
+#, fuzzy
 msgid "`source`"
-msgstr ""
+msgstr "`source`"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building a Translated Document"
-msgstr ""
+msgstr "构建已翻译的文档"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:365
+#, fuzzy
 msgid ""
 "A translated version of the original document can be created at any time.  "
 "Any untranslated portions of the original will be included in English in the "
@@ -855,62 +897,67 @@ msgid ""
 "of the translation has been completed.  This makes it easy for the "
 "translator to see when enough strings have been translated to make building "
 "the final document worthwhile."
-msgstr ""
+msgstr "可以随时根据原始文档创建译文。原文中尚未翻译的部分会以英文出现在生成的文档中。大多数 PO 编辑器都有进度指示器，显示翻译已完成的比例。这样译者就可以轻松判断是否已有足够的字符串完成翻译，值得构建最终文档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:367
+#, fuzzy
 msgid ""
 "The Weblate chapter provides a complete example of how to crossref:"
 "weblate[weblate-building,Build the Translated Document]."
-msgstr ""
+msgstr "Weblate 章节提供了一个完整示例，说明如何 crossref:weblate[weblate-building,构建已翻译的文档]。"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:369
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Submitting the New Translation"
-msgstr ""
+msgstr "提交新译文"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:373
+#, fuzzy
 msgid ""
 "Prepare the new translation files for submission.  This includes adding the "
 "files to the version control system, setting additional properties on them, "
 "then creating a diff for submission."
-msgstr ""
+msgstr "准备要提交的新译文文件。这包括将文件添加到版本控制系统、为其设置其他属性，然后创建差异文件以供提交。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:375
+#, fuzzy
 msgid ""
 "The diff files created by these examples can be attached to a https://bugs."
 "freebsd.org/bugzilla/enter_bug.cgi?product=Documentation[documentation bug "
 "report] or https://reviews.freebsd.org/[code review]."
-msgstr ""
+msgstr "这些示例创建的差异文件可以附加到 link:https://bugs.freebsd.org/bugzilla/enter_bug.cgi?product=Documentation[文档问题报告] 或 link:https://reviews.freebsd.org/[代码审查]。"
 
 #. type: Block title
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Spanish Translation of the NanoBSD Article"
-msgstr ""
+msgstr "NanoBSD 文章的西班牙语译文"
 
 #. type: delimited block = 6
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:384
+#, fuzzy
 msgid ""
 "Create a diff of the new files from the [.filename]#~/doc/# base directory "
 "so the full path is shown with the filenames. This helps committers identify "
 "the target language directory."
-msgstr ""
+msgstr "从 [.filename]#~/doc/# 基础目录为新文件创建差异文件，以便文件名中显示完整路径。这有助于提交者确定目标语言目录。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd ~/doc\n"
 "% git diff documentation/content/es/articles/nanobsd/ > /tmp/es_nanobsd.diff\n"
-msgstr ""
+msgstr "% cd ~/doc\n% git diff documentation/content/es/articles/nanobsd/ > /tmp/es_nanobsd.diff\n"
 
 #. type: delimited block = 6
 #: documentation/content/en/books/fdp-primer/po-translations/_index.adoc:393
+#, fuzzy
 msgid ""
 "The Weblate chapter provides a complete example of how to crossref:"
 "weblate[weblate-submitting-translations,Submit the New Translation]."
-msgstr ""
+msgstr "Weblate 章节提供了一个完整示例，说明如何 crossref:weblate[weblate-submitting-translations,提交新译文]。"

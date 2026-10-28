@@ -20,9 +20,9 @@ msgstr ""
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:1
 #: documentation/content/en/articles/nanobsd/_index.adoc:45
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This document provides information about the NanoBSD tools, which can be used to create FreeBSD system images for embedded applications, suitable for use on a USB key, memory card or other mass storage media."
-msgstr ""
+msgstr "本文档介绍 NanoBSD 工具，该工具可用于为嵌入式应用创建 FreeBSD 系统映像，适合存储在 USB 闪存盘、存储卡或其他大容量存储介质上。"
 
 #. type: Title ==
 #: documentation/content/en/articles/nanobsd/_index.adoc:1
@@ -44,11 +44,12 @@ msgstr "'''"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:55
+#, fuzzy
 msgid ""
 "NanoBSD is a tool developed by {phk} and now maintained by {imp}.  It "
 "creates a FreeBSD system image for embedded applications, suitable for use "
 "on a USB key, memory card or other mass storage media."
-msgstr ""
+msgstr "NanoBSD 是由 {phk} 开发、现由 {imp} 维护的工具。它可以为嵌入式应用创建 FreeBSD 系统映像，适合存储在 USB 闪存盘、存储卡或其他大容量存储介质上。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:59
@@ -67,8 +68,9 @@ msgstr ""
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:61
+#, fuzzy
 msgid "The features of NanoBSD include:"
-msgstr ""
+msgstr "NanoBSD 的特性包括："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:63
@@ -83,20 +85,22 @@ msgstr ""
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:64
+#, fuzzy
 msgid ""
 "No missing functionality - If it is possible to do something with FreeBSD, "
 "it is possible to do the same thing with NanoBSD, unless the specific "
 "feature or features were explicitly removed from the NanoBSD image when it "
 "was created."
-msgstr ""
+msgstr "功能完整——如果某项功能可以在 FreeBSD 中实现，那么在 NanoBSD 中也可以实现，除非创建映像时明确从 NanoBSD 映像中移除了该功能。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:65
+#, fuzzy
 msgid ""
 "Everything is read-only at run-time - It is safe to pull the power-plug. "
 "There is no necessity to run man:fsck[8] after a non-graceful shutdown of "
 "the system."
-msgstr ""
+msgstr "运行时所有内容均为只读——拔掉电源是安全的。系统非正常关机后，无需运行 man:fsck[8]。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:66
@@ -123,15 +127,17 @@ msgstr "NanoBSD 的设计"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:75
+#, fuzzy
 msgid ""
 "Once the image is present on the medium, it is possible to boot NanoBSD.  "
 "The mass storage medium is divided into three parts by default:"
-msgstr ""
+msgstr "将映像写入介质后，即可启动 NanoBSD。默认情况下，大容量存储介质分为三个部分："
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:77
+#, fuzzy
 msgid "Two image partitions: `code#1` and `code#2`."
-msgstr ""
+msgstr "两个映像分区：`code#1` 和 `code#2`。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:78
@@ -150,10 +156,11 @@ msgstr "这些分区默认情况下以只读方式挂接。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:82
+#, fuzzy
 msgid ""
 "The [.filename]#/etc# and [.filename]#/var# directories are man:md[4] "
 "(malloc) disks."
-msgstr ""
+msgstr "[.filename]#/etc# 和 [.filename]#/var# 目录是 man:md[4]（malloc）磁盘。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/nanobsd/_index.adoc:85
@@ -172,20 +179,20 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/articles/nanobsd/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Making Persistent Changes to [.filename]#/etc/resolv.conf#"
-msgstr ""
+msgstr "持久化更改 [.filename]#/etc/resolv.conf#"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# vi /etc/resolv.conf\n"
 "[...]\n"
 "# mount /cfg\n"
 "# cp /etc/resolv.conf /cfg\n"
 "# umount /cfg\n"
-msgstr ""
+msgstr "# vi /etc/resolv.conf\n[...]\n# mount /cfg\n# cp /etc/resolv.conf /cfg\n# umount /cfg\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:104
@@ -218,47 +225,51 @@ msgstr "构建 NanoBSD 映像"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:112
+#, fuzzy
 msgid ""
 "The source code of FreeBSD is required to build NanoBSD.  To obtain the "
 "source code:"
-msgstr ""
+msgstr "构建 NanoBSD 需要 FreeBSD 源代码。获取源代码的方法如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# git clone https://git.FreeBSD.org/src.git /usr/src\n"
-msgstr ""
+msgstr "# git clone https://git.FreeBSD.org/src.git /usr/src\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:119
+#, fuzzy
 msgid ""
 "For more details, follow the steps extref:{handbook}cutting-edge#updating-"
 "src-obtaining-src[here]."
-msgstr ""
+msgstr "更多详情，请按照 extref:{handbook}cutting-edge#updating-src-obtaining-src[此处]的步骤操作。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:122
+#, fuzzy
 msgid ""
 "A NanoBSD image is built using a simple [.filename]#nanobsd.sh# shell "
 "script, which can be found in the [.filename]#/usr/src/tools/tools/nanobsd# "
 "directory.  This script creates an image, which can be copied on the storage "
 "medium using the man:dd[1] utility."
-msgstr ""
+msgstr "使用简单的 [.filename]#nanobsd.sh# shell 脚本构建 NanoBSD 映像，该脚本位于 [.filename]#/usr/src/tools/tools/nanobsd# 目录中。此脚本会创建映像，之后可使用 man:dd[1] 工具将其复制到存储介质上。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:124
+#, fuzzy
 msgid "The necessary commands to build a NanoBSD image are:"
-msgstr ""
+msgstr "构建 NanoBSD 映像所需的命令如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src/tools/tools/nanobsd <.>\n"
 "# sh nanobsd.sh <.>\n"
 "# cd /usr/obj/nanobsd.full <.>\n"
 "# dd if=_.disk.full of=/dev/da0 bs=64k <.>\n"
-msgstr ""
+msgstr "# cd /usr/src/tools/tools/nanobsd <.>\n# sh nanobsd.sh <.>\n# cd /usr/obj/nanobsd.full <.>\n# dd if=_.disk.full of=/dev/da0 bs=64k <.>\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:134
@@ -283,258 +294,297 @@ msgstr "进入构建好的映像文件所在的目录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:140
+#, fuzzy
 msgid "Install NanoBSD onto the storage medium."
-msgstr ""
+msgstr "将 NanoBSD 安装到存储介质上。"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Options When Building a NanoBSD Image"
-msgstr ""
+msgstr "构建 NanoBSD 映像时的选项"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:145
+#, fuzzy
 msgid ""
 "When building a NanoBSD image, several build options can be passed to [."
 "filename]#nanobsd.sh# on the command line.  These options can have a "
 "significant impact on the build process."
-msgstr ""
+msgstr "构建 NanoBSD 映像时，可以在命令行中向 [.filename]#nanobsd.sh# 传递多个构建选项。这些选项可能会对构建过程产生重大影响。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:147
+#, fuzzy
 msgid "Some options are for verbosity purposes:"
-msgstr ""
+msgstr "有些选项用于控制输出详细程度："
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:149
+#, fuzzy
 msgid "`-h`: prints the help summary page."
-msgstr ""
+msgstr "`-h`：打印帮助摘要页面。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:150
+#, fuzzy
 msgid "`-q`: makes output quieter."
-msgstr ""
+msgstr "`-q`：减少输出信息。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:151
+#, fuzzy
 msgid "`-v`: makes output more verbose."
-msgstr ""
+msgstr "`-v`：增加输出信息。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:154
+#, fuzzy
 msgid ""
 "Some other options can be used to restrict the building process.  Sometimes "
 "it is not necessary to rebuild everything from sources, especially if an "
 "image has already been built, and only little change is made."
-msgstr ""
+msgstr "其他一些选项可用于限制构建过程。有时无需从源代码重新构建所有内容，特别是在映像已经构建完成且只需进行少量更改时。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:156
+#, fuzzy
 msgid "`-k`: do not build the kernel."
-msgstr ""
+msgstr "`-k`：不构建内核。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:157
+#, fuzzy
 msgid "`-w`: do not build world."
-msgstr ""
+msgstr "`-w`：不构建 world。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:158
+#, fuzzy
 msgid "`-b`: do not build either kernel and world."
-msgstr ""
+msgstr "`-b`：既不构建内核，也不构建 world。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:159
+#, fuzzy
 msgid ""
 "`-i`: do not build a disk image at all. As a file will not be created, it "
 "will not be possible to man:dd[1] it to a storage media."
-msgstr ""
+msgstr "`-i`：完全不构建磁盘映像。由于不会创建文件，因此无法使用 man:dd[1] 将其写入存储介质。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:160
+#, fuzzy
 msgid ""
 "`-f`: do not build a disk image of the first partition (which is useful for "
 "upgrade purposes)."
-msgstr ""
+msgstr "`-f`：不构建第一个分区的磁盘映像（这对升级很有用）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:161
+#, fuzzy
 msgid ""
 "`-p`: do not prepare the image. Skip running customization and early-"
 "customization scripts for incremental image refinement from world, kernel, "
 "or packages."
-msgstr ""
+msgstr "`-p`：不准备映像。跳过自定义脚本和 early-customization 脚本，以便从 world、内核或软件包逐步完善映像。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:162
+#, fuzzy
 msgid ""
 "`-n`: add `-DNO_CLEAN` to `buildworld`, `buildkernel`. Also, all the files "
 "that have already been built in a previous run are kept."
-msgstr ""
+msgstr "`-n`：在 `buildworld` 和 `buildkernel` 中添加 `-DNO_CLEAN`。此外，保留之前运行时已构建的所有文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:165
+#, fuzzy
 msgid ""
 "A configuration file can be used to tweak as many elements as desired.  Load "
 "it with `-c`"
-msgstr ""
+msgstr "可以使用配置文件调整所需的任意多个元素。使用 `-c` 加载该文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:167
+#, fuzzy
 msgid "The last options are:"
-msgstr ""
+msgstr "最后几个选项如下："
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:169
+#, fuzzy
 msgid ""
 "`-K`: do not install a kernel. A disk image without a kernel will not be "
 "able to achieve a normal boot sequence."
-msgstr ""
+msgstr "`-K`：不安装内核。没有内核的磁盘映像无法正常启动。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:170
+#, fuzzy
 msgid "`-W`: do not install world."
-msgstr ""
+msgstr "`-W`：不安装 world。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:171
+#, fuzzy
 msgid "`-B`: do not install either kernel and world."
-msgstr ""
+msgstr "`-B`：既不安装内核，也不安装 world。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:172
+#, fuzzy
 msgid ""
 "`-I`: build a disk image from an existing build or install. Do not build or "
 "install kernel, world, and the etc configuration file, just create the disk "
 "image."
-msgstr ""
+msgstr "`-I`：根据现有的构建结果或安装内容创建磁盘映像。不构建或安装内核、world 和 etc 配置文件，只创建磁盘映像。"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Complete Image Building Process"
-msgstr ""
+msgstr "完整的映像构建过程"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:178
+#, fuzzy
 msgid ""
 "The complete image building process is going through a lot of steps.  The "
 "exact steps taken will depend on the chosen options when starting the "
 "script.  Assuming the script is run with no particular options, this is what "
 "will happen."
-msgstr ""
+msgstr "完整的映像构建过程包含许多步骤。具体执行哪些步骤取决于启动脚本时选择的选项。假设运行脚本时未指定任何选项，过程如下。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:180
+#, fuzzy
 msgid ""
 "`run_early_customize`: Commands that are defined in a supplied configuration "
 "file."
-msgstr ""
+msgstr "`run_early_customize`：执行所提供配置文件中定义的命令。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:181
+#, fuzzy
 msgid ""
 "`clean_build`: Just cleans the build environment by deleting the previously "
 "built files."
-msgstr ""
+msgstr "`clean_build`：删除之前构建的文件，以清理构建环境。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:182
+#, fuzzy
 msgid ""
 "`make_conf_build`: Assemble make.conf from the `CONF_WORLD` and `CONF_BUILD` "
 "variables."
-msgstr ""
+msgstr "`make_conf_build`：根据 `CONF_WORLD` 和 `CONF_BUILD` 变量组装 make.conf。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:183
+#, fuzzy
 msgid "`build_world`: Build world."
-msgstr ""
+msgstr "`build_world`：构建 world。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:184
+#, fuzzy
 msgid "`build_kernel`: Build the kernel files."
-msgstr ""
+msgstr "`build_kernel`：构建内核文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:185
+#, fuzzy
 msgid "`clean_world`: Clean the destination directory."
-msgstr ""
+msgstr "`clean_world`：清理目标目录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:186
+#, fuzzy
 msgid ""
 "`make_conf_install`: Assemble make.conf from the `CONF_WORLD` and "
 "`CONF_INSTALL` variables."
-msgstr ""
+msgstr "`make_conf_install`：根据 `CONF_WORLD` 和 `CONF_INSTALL` 变量组装 make.conf。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:187
+#, fuzzy
 msgid "`install_world`: Install all files built during `buildworld`."
-msgstr ""
+msgstr "`install_world`：安装 `buildworld` 构建的所有文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:188
+#, fuzzy
 msgid ""
 "`install_etc`: Install the necessary files in the [.filename]#/etc# "
 "directory, based on the `make distribution` command."
-msgstr ""
+msgstr "`install_etc`：根据 `make distribution` 命令，在 [.filename]#/etc# 目录中安装所需文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:189
+#, fuzzy
 msgid ""
 "`setup_nanobsd_etc`: The first configuration specific to NanoBSD takes place "
 "at this stage. The [.filename]#/etc/diskless# is created and the root "
 "filesystem is defined as read-only."
-msgstr ""
+msgstr "`setup_nanobsd_etc`：在此阶段进行 NanoBSD 的首次专用配置。此步骤会创建 [.filename]#/etc/diskless#，并将根文件系统设为只读。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:190
+#, fuzzy
 msgid "`install_kernel`: The kernel and modules files are installed."
-msgstr ""
+msgstr "`install_kernel`：安装内核和模块文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:191
+#, fuzzy
 msgid ""
 "`run_customize`: All the customizing routines defined by the user will be "
 "called."
-msgstr ""
+msgstr "`run_customize`：调用用户定义的所有自定义例程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:192
+#, fuzzy
 msgid ""
 "`setup_nanobsd`: A special configuration directory layout is setup. The [."
 "filename]#/usr/local/etc# gets moved to [.filename]#/etc/local# and a "
 "symbolic link is created back from [.filename]#/etc/local# to [.filename]#/"
 "usr/local/etc#."
-msgstr ""
+msgstr "`setup_nanobsd`：设置专用的配置目录结构。将 [.filename]#/usr/local/etc# 移至 [.filename]#/etc/local#，并创建从 [.filename]#/etc/local# 指回 [.filename]#/usr/local/etc# 的符号链接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:193
+#, fuzzy
 msgid "`prune_usr`: The empty directories from [.filename]#/usr# are removed."
-msgstr ""
+msgstr "`prune_usr`：删除 [.filename]#/usr# 中的空目录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:194
+#, fuzzy
 msgid ""
 "`run_late_customize`: The very last custom scripts can be run at this point."
-msgstr ""
+msgstr "`run_late_customize`：此时可以运行最后的自定义脚本。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:195
+#, fuzzy
 msgid "`fixup_before_diskimage`: List all installed files in a metalog."
-msgstr ""
+msgstr "`fixup_before_diskimage`：在 metalog 中列出所有已安装的文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:196
+#, fuzzy
 msgid ""
 "`create_diskimage`: Creates the actual disk image, based on the disk "
 "geometries provides parameters."
-msgstr ""
+msgstr "`create_diskimage`：根据提供的磁盘几何参数创建实际的磁盘映像。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:197
+#, fuzzy
 msgid "`last_orders`: Does nothing for now."
-msgstr ""
+msgstr "`last_orders`：目前不执行任何操作。"
 
 #. type: Title ===
 #: documentation/content/en/articles/nanobsd/_index.adoc:198
@@ -544,11 +594,12 @@ msgstr "定制 NanoBSD 映像"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:202
+#, fuzzy
 msgid ""
 "This is probably the most important and most interesting feature of "
 "NanoBSD.  This is also where you will be spending most of the time when "
 "developing with NanoBSD."
-msgstr ""
+msgstr "这可能是 NanoBSD 最重要、最有趣的特性，也是使用 NanoBSD 进行开发时最常花费时间的地方。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:204
@@ -563,9 +614,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sh nanobsd.sh -c myconf.nano\n"
-msgstr ""
+msgstr "# sh nanobsd.sh -c myconf.nano\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:211
@@ -590,6 +641,7 @@ msgstr "配置选项"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:220
+#, fuzzy
 msgid ""
 "With configuration settings, it is possible to configure options passed to "
 "both the `buildworld` and `installworld` stages of the NanoBSD build "
@@ -598,7 +650,7 @@ msgid ""
 "will fit on as little as 64MB.  You can use the configuration options to "
 "trim down FreeBSD even more, until it will consists of just the kernel and "
 "two or three files in the userland."
-msgstr ""
+msgstr "通过配置设置，可以配置传递给 NanoBSD 构建过程中的 `buildworld` 和 `installworld` 阶段的选项，以及传递给 NanoBSD 主构建过程的内部选项。利用这些选项，可以精简系统，使其仅占用 64MB 空间。还可以进一步精简 FreeBSD，直至只剩下内核和用户空间中的两三个文件。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:223
@@ -610,109 +662,125 @@ msgstr "配置文件中包含用以代替默认值的配置选项。 最重要�
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:225
+#, fuzzy
 msgid "`NANO_NAME` - Name of build (used to construct the workdir names)."
-msgstr ""
+msgstr "`NANO_NAME` - 构建名称（用于构造工作目录名称）。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:226
+#, fuzzy
 msgid "`NANO_SRC` - Path to the source tree used to build the image."
-msgstr ""
+msgstr "`NANO_SRC` - 用于构建映像的源代码树路径。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:227
+#, fuzzy
 msgid "`NANO_KERNEL` - Name of kernel configuration file used to build kernel."
-msgstr ""
+msgstr "`NANO_KERNEL` - 用于构建内核的内核配置文件名称。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:228
+#, fuzzy
 msgid "`CONF_BUILD` - Options passed to the `buildworld` stage of the build."
-msgstr ""
+msgstr "`CONF_BUILD` - 传递给构建过程 `buildworld` 阶段的选项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:229
+#, fuzzy
 msgid ""
 "`CONF_INSTALL` - Options passed to the `installworld` stage of the build."
-msgstr ""
+msgstr "`CONF_INSTALL` - 传递给构建过程 `installworld` 阶段的选项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:230
+#, fuzzy
 msgid ""
 "`CONF_WORLD` - Options passed to both the `buildworld` and the "
 "`installworld` stage of the build."
-msgstr ""
+msgstr "`CONF_WORLD` - 同时传递给构建过程 `buildworld` 和 `installworld` 阶段的选项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:231
+#, fuzzy
 msgid ""
 "`FlashDevice` - Defines what type of media to use. Check [."
 "filename]#FlashDevice.sub# for more details."
-msgstr ""
+msgstr "`FlashDevice` - 定义要使用的介质类型。详情请参阅 [.filename]#FlashDevice.sub#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:233
+#, fuzzy
 msgid ""
 "There are many more configuration options that could be relevant depending "
 "upon the kind of NanoBSD that is desired."
-msgstr ""
+msgstr "根据所需 NanoBSD 的类型，还有许多其他相关配置选项。"
 
 #. type: Title =====
 #: documentation/content/en/articles/nanobsd/_index.adoc:234
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Customization"
-msgstr ""
+msgstr "常规自定义"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:237
+#, fuzzy
 msgid ""
 "There are three stages, by design, at which it is possible to make changes "
 "that affect the building process, just by setting up a variable in the "
 "provided configuration file:"
-msgstr ""
+msgstr "按照设计，可在三个阶段通过设置所提供配置文件中的变量来更改影响构建过程的内容："
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:239
+#, fuzzy
 msgid "`run_early_customize`: before anything else happens."
-msgstr ""
+msgstr "`run_early_customize`：在其他操作开始之前。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:240
+#, fuzzy
 msgid "`run_customize`: after all the standard files have been laid out."
-msgstr ""
+msgstr "`run_customize`：所有标准文件部署完成之后。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:241
+#, fuzzy
 msgid ""
 "`run_late_customize`: at the very end of the process, just before the actual "
 "NanoBSD image is built."
-msgstr ""
+msgstr "`run_late_customize`：在整个过程即将结束、实际构建 NanoBSD 映像之前。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:243
+#, fuzzy
 msgid ""
 "To customize a NanoBSD image, at any of these steps, it is best to add a "
 "specific value to one of the corresponding variables."
-msgstr ""
+msgstr "要在上述任一阶段自定义 NanoBSD 映像，最好为相应变量添加特定值。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:246
+#, fuzzy
 msgid ""
 "The `NANO_EARLY_CUSTOMIZE` variable is used at the first step of the "
 "building process.  At this point, there is no example as to what can be done "
 "using that variable, but it may change in the future."
-msgstr ""
+msgstr "`NANO_EARLY_CUSTOMIZE` 变量用于构建过程的第一阶段。目前还没有使用该变量可以执行哪些操作的示例，但将来可能会有所变化。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:249
+#, fuzzy
 msgid ""
 "The `NANO_CUSTOMIZE` variable is used after the kernel, world and etc "
 "configuration files have been installed, and the etc files have been setup "
 "as to be a NanoBSD installation.  So it is the correct step in the building "
 "process to tweak configuration options and add packages, like in the "
 "cust_nobeastie example."
-msgstr ""
+msgstr "安装内核、world 和 etc 配置文件，并将 etc 文件设置为 NanoBSD 安装所需的状态后，将使用 `NANO_CUSTOMIZE` 变量。因此，这是调整配置选项和添加软件包的合适构建阶段，例如 cust_nobeastie 示例。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:253
+#, fuzzy
 msgid ""
 "The `NANO_LATE_CUSTOMIZE` variable is used just before the disk image is "
 "created, so it is the very last moment to change anything.  Remember that "
@@ -720,34 +788,38 @@ msgid ""
 "[.filename]#conf# and [.filename]#cfg# directories and subdirectories are "
 "already modified, so it is not time to change them at this point.  Rather, "
 "it is possible to add or remove specific files."
-msgstr ""
+msgstr "在创建磁盘映像之前，将使用 `NANO_LATE_CUSTOMIZE` 变量；这是进行任何更改的最后时机。请注意，`setup_nanobsd` 例程已经执行，[.filename]#etc#、[.filename]#conf# 和 [.filename]#cfg# 目录及其子目录也已修改，因此此时不应再更改它们。不过，可以添加或删除特定文件。"
 
 #. type: Title =====
 #: documentation/content/en/articles/nanobsd/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Booting Options"
-msgstr ""
+msgstr "启动选项"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:258
+#, fuzzy
 msgid ""
 "There are also variables that can change the way the NanoBSD image boots.  "
 "Two options are passed to man:boot0cfg[8] to initialize the boot sector of "
 "the disk image:"
-msgstr ""
+msgstr "还有一些变量可以改变 NanoBSD 映像的启动方式。传递给 man:boot0cfg[8] 的两个选项用于初始化磁盘映像的引导扇区："
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:260
+#, fuzzy
 msgid "`NANO_BOOT0CFG`"
-msgstr ""
+msgstr "`NANO_BOOT0CFG`"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:261
+#, fuzzy
 msgid "`NANO_BOOTLOADER`"
-msgstr ""
+msgstr "`NANO_BOOTLOADER`"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:266
+#, fuzzy
 msgid ""
 "With `NANO_BOOTLOADER` a bootloader file can be chosen.  The most common "
 "possible options are between [.filename]#boot0sio# and [.filename]#boot0# "
@@ -755,10 +827,11 @@ msgid ""
 "avoid supplying a different bootloader, but it is possible.  To do so, it is "
 "best to have checked the extref:{handbook}boot[FreeBSD Handbook] chapter on "
 "the boot process."
-msgstr ""
+msgstr "使用 `NANO_BOOTLOADER` 可以选择引导加载程序文件。最常见的选项是 [.filename]#boot0sio# 和 [.filename]#boot0#，具体取决于设备是否有串行端口。最好避免提供其他引导加载程序，不过也可以这样做。若要如此操作，建议先查阅 extref:{handbook}boot[FreeBSD 手册]中有关启动过程的章节。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:273
+#, fuzzy
 msgid ""
 "With `NANO_BOOT0CFG`, the booting process can be tweaked, like selecting on "
 "which partition the NanoBSD image will actually boot.  It is best to check "
@@ -768,60 +841,66 @@ msgid ""
 "changed to `\"-o packet -s 1 -m 3 -t 36\"`.  That way the booting process "
 "would start after approximately 2 seconds; because it is rare that waiting "
 "10 seconds before actually booting is desired."
-msgstr ""
+msgstr "使用 `NANO_BOOT0CFG` 可以调整启动过程，例如选择 NanoBSD 映像实际从哪个分区启动。更改此变量的默认值之前，最好先查阅 man:boot0cfg[8] 手册页。一个值得调整的选项是启动过程的超时时间。为此，可以将 `NANO_BOOT0CFG` 变量改为 `\"-o packet -s 1 -m 3 -t 36\"`。这样，启动过程会在大约 2 秒后开始，因为通常不需要等 10 秒才开始启动。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:276
+#, fuzzy
 msgid ""
 "Good to know: the `NANO_BOOT2CFG` variable is only used in the "
 "`cust_comconsole` routine that can be called at the `NANO_CUSTOMIZE` step if "
 "the appliance has a serial port and all console input and output has to take "
 "place through it.  Be sure to check the relevant parameters of the serial "
 "port, as setting a bad parameter value can make it useless."
-msgstr ""
+msgstr "请注意：`NANO_BOOT2CFG` 变量仅在 `cust_comconsole` 例程中使用。若设备有串行端口，且所有控制台输入和输出都必须通过该端口进行，则可在 `NANO_CUSTOMIZE` 阶段调用此例程。请务必检查串行端口的相关参数，因为错误的参数值可能会使其无法使用。"
 
 #. type: Title =====
 #: documentation/content/en/articles/nanobsd/_index.adoc:277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disk Image Creation"
-msgstr ""
+msgstr "磁盘映像创建"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:281
+#, fuzzy
 msgid ""
 "In the end of the boot process is the disk image creation.  With this step, "
 "the NanoBSD script provides a file that can simply be copied onto a disk for "
 "the appliance, and that will make it boot and start."
-msgstr ""
+msgstr "启动过程的最后一步是创建磁盘映像。此步骤中，NanoBSD 脚本会生成一个文件，可直接复制到设备的磁盘上，使设备能够启动并运行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:283
+#, fuzzy
 msgid ""
 "There are many variables that need to be set just right for the script to "
 "produce a usable disk image."
-msgstr ""
+msgstr "要让脚本生成可用的磁盘映像，必须正确设置多个变量。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:285
+#, fuzzy
 msgid ""
 "The `NANO_DRIVE` variable must be set to the drive name of the media at "
 "runtime. Usually, the default value `ada0`, which represents the first `IDE`/"
 "`ATA`/`SATA` device on the appliance is expected to be the correct one, but "
 "a different type of storage could also be used - like a USB key, in which "
 "case, it would rather be `da0`."
-msgstr ""
+msgstr "`NANO_DRIVE` 变量必须设置为运行时介质的驱动器名称。通常，默认值 `ada0`（表示设备中的第一个 `IDE`/`ATA`/`SATA` 设备）是正确的，但也可以使用其他类型的存储设备，例如 USB 闪存盘，此时应使用 `da0`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:286
+#, fuzzy
 msgid ""
 "The `NANO_MEDIASIZE` variable must be set to the size (in 512-byte sectors) "
 "of the storage media that will be used. If you set it wrong, it is possible "
 "that the NanoBSD image will not boot at all, and a message at boot time will "
 "be warning about incorrect disk geometry."
-msgstr ""
+msgstr "`NANO_MEDIASIZE` 变量必须设置为将使用的存储介质大小（以 512 字节扇区为单位）。如果设置错误，NanoBSD 映像可能完全无法启动，并且启动时会显示有关磁盘几何参数错误的警告。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:288
+#, fuzzy
 msgid ""
 "The [.filename]#/etc#, [.filename]#/var#, and [.filename]#/tmp# directories "
 "are allocated as man:md[4] (malloc) disks at boot time; so their sizes can "
@@ -834,10 +913,11 @@ msgid ""
 "in size, so 20MB is a good starting point, whereas the [.filename]#/var# and "
 "especially [.filename]#/tmp# can grow much larger if not careful about it. "
 "For memory constrained systems, smaller filesystem sizes may be chosen."
-msgstr ""
+msgstr "[.filename]#/etc#、[.filename]#/var# 和 [.filename]#/tmp# 目录会在启动时分配为 man:md[4]（malloc）磁盘，因此可以根据设备的需要调整其大小。`NANO_RAM_ETCSIZE` 变量设置 [.filename]#/etc# 的大小；`NANO_RAM_TMPVARSIZE` 变量设置 [.filename]#/var# 和 [.filename]#/tmp# 目录的大小，因为 [.filename]#/tmp# 是指向 [.filename]#/var/tmp# 的符号链接。默认情况下，这两个 malloc 磁盘的大小均为 20MB。它们始终可以更改，但通常 [.filename]#/etc# 不会增长太多，因此 20MB 是一个不错的起始值；而 [.filename]#/var#，尤其是 [.filename]#/tmp#，如果不加注意，可能会增长得大得多。对于内存受限的系统，可以选择较小的文件系统大小。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:289
+#, fuzzy
 msgid ""
 "As NanoBSD is mainly designed to build a system image for an appliance, it "
 "is assumed that the storage media used will be relatively small. For that "
@@ -847,10 +927,11 @@ msgid ""
 "syntax must respect the man:newfs[8] command format. Also, by default, the "
 "filesystem has Soft Updates enabled. The extref:{handbook}[FreeBSD Handbook] "
 "can be checked about this."
-msgstr ""
+msgstr "NanoBSD 主要用于为设备构建系统映像，因此假定所用存储介质相对较小。出于这个原因，所布局的文件系统配置为较小的块大小（4Kb）和较小的片段大小（512b）。可以通过 `NANO_NEWFS` 变量修改文件系统配置选项，但语法必须符合 man:newfs[8] 命令格式。此外，文件系统默认启用了 Soft Updates。可以查阅 extref:{handbook}[FreeBSD 手册]了解相关信息。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:290
+#, fuzzy
 msgid ""
 "The different partition sizes can be set through the use of `NANO_CODESIZE`, "
 "`NANO_CONFSIZE`, and `NANO_DATASIZE` as a multiple of 512-byte sectors. "
@@ -862,7 +943,7 @@ msgid ""
 "hold all configuration files. Finally, `NANO_DATASIZE` defines the size of "
 "an optional partition, that can be used on the appliance. The last partition "
 "can be used, for example, to keep files created on the fly on disk."
-msgstr ""
+msgstr "可以使用 `NANO_CODESIZE`、`NANO_CONFSIZE` 和 `NANO_DATASIZE` 设置各分区的大小，单位为 512 字节扇区。`NANO_CODESIZE` 定义映像前两个分区 `code#1` 和 `code#2` 的大小。它们必须足够大，能够容纳 `buildworld` 和 `buildkernel` 过程生成的所有文件。`NANO_CONFSIZE` 定义配置文件分区的大小，因此不需要太大；但也不能小到无法容纳所有配置文件。最后，`NANO_DATASIZE` 定义一个可选分区的大小，可供设备使用。例如，最后一个分区可用于在磁盘上保存运行时创建的文件。"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:291
@@ -872,22 +953,23 @@ msgstr "功能定制"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:295
+#, fuzzy
 msgid ""
 "It is possible to fine-tune NanoBSD using shell functions in the "
 "configuration file.  The following example illustrates the basic model of "
 "custom functions:"
-msgstr ""
+msgstr "可以通过配置文件中的 shell 函数对 NanoBSD 进行精细调整。以下示例说明了自定义函数的基本模式："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "cust_foo () (\n"
 "\techo \"bar=baz\" > \\\n"
 "\t\t${NANO_WORLDDIR}/etc/foo\n"
 ")\n"
 "customize_cmd cust_foo\n"
-msgstr ""
+msgstr "cust_foo () (\n\techo \"bar=baz\" > \\\n\t\t${NANO_WORLDDIR}/etc/foo\n)\ncustomize_cmd cust_foo\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:306
@@ -923,30 +1005,34 @@ msgstr "除此之外， 还有几个默认的预定义定制函数："
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:319
+#, fuzzy
 msgid ""
 "`cust_comconsole` - Disables man:getty[8] on the VGA devices (the [."
 "filename]#/dev/ttyv*# device nodes) and enables the use of the COM1 serial "
 "port as the system console."
-msgstr ""
+msgstr "`cust_comconsole` - 禁用 VGA 设备（[.filename]#/dev/ttyv*# 设备节点）上的 man:getty[8]，并启用将 COM1 串行端口用作系统控制台。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:320
+#, fuzzy
 msgid "`cust_allow_ssh_root` - Allow `root` to login via man:sshd[8]."
-msgstr ""
+msgstr "`cust_allow_ssh_root` - 允许 `root` 通过 man:sshd[8] 登录。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:321
+#, fuzzy
 msgid ""
 "`cust_install_files` - Installs files from the [.filename]#nanobsd/Files# "
 "directory, which contains some useful scripts for system administration."
-msgstr ""
+msgstr "`cust_install_files` - 从 [.filename]#nanobsd/Files# 目录安装文件，该目录包含一些有用的系统管理脚本。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:322
+#, fuzzy
 msgid ""
 "`cust_pkgng` - Installs packages from the [.filename]#nanobsd/Pkg# directory "
 "(needs also pkg-* package to bootstrap)."
-msgstr ""
+msgstr "`cust_pkgng` - 从 [.filename]#nanobsd/Pkg# 目录安装软件包（还需要 pkg-* 软件包进行引导安装）。"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:323
@@ -956,33 +1042,38 @@ msgstr "安装预编译软件包"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:326
+#, fuzzy
 msgid ""
 "Packages can be added to a NanoBSD image, to provide specific "
 "functionalities on the appliance. To do so, either:"
-msgstr ""
+msgstr "可以向 NanoBSD 映像添加软件包，以便为设备提供特定功能。为此，可以："
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:328
+#, fuzzy
 msgid "Add the `cust_pkgng` to the `NANO_CUSTOMIZE` variable, or"
-msgstr ""
+msgstr "将 `cust_pkgng` 添加到 `NANO_CUSTOMIZE` 变量中，或者"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:329
+#, fuzzy
 msgid ""
 "Add a `'customize_cmd cust_pkgng'` command in a customized configuration "
 "file."
-msgstr ""
+msgstr "在自定义配置文件中添加 `'customize_cmd cust_pkgng'` 命令。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:332
+#, fuzzy
 msgid ""
 "Both methods achieve the same result: launching the `cust_pkgng` routine.  "
 "This routine will go through `NANO_PACKAGE_DIR` directory to find either all "
 "packages or just the list of packages in the `NANO_PACKAGE_LIST` variable."
-msgstr ""
+msgstr "两种方法效果相同：启动 `cust_pkgng` 例程。该例程会遍历 `NANO_PACKAGE_DIR` 目录，查找其中的所有软件包，或者只查找 `NANO_PACKAGE_LIST` 变量中列出的软件包。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:338
+#, fuzzy
 msgid ""
 "It is common, when installing applications through pkg on a standard FreeBSD "
 "environment, that the install process puts configuration files, in the [."
@@ -995,7 +1086,7 @@ msgid ""
 "to lay out files properly from the [.filename]#/usr/src/tools/tools/nanobsd/"
 "Files# directory.  Usually a statement, sometimes multiple statements, in "
 "the [.filename]#/etc/rc.conf# also needs to be added for each package."
-msgstr ""
+msgstr "在标准 FreeBSD 环境中通过 pkg 安装应用程序时，安装过程通常会将配置文件放入 [.filename]#usr/local/etc# 目录，并将启动脚本放入 [.filename]#/usr/local/etc/rc.d# 目录。因此，安装所需软件包后，还需要进行配置，才能使其开箱即用。为此，必须将必要的配置文件安装到正确的目录中。可以通过编写专用例程来实现，也可以使用通用的 `cust_install_files` 例程，从 [.filename]#/usr/src/tools/tools/nanobsd/Files# 目录正确地放置文件。通常还需要为每个软件包在 [.filename]#/etc/rc.conf# 中添加一条或多条语句。"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:339
@@ -1005,35 +1096,36 @@ msgstr "配置文件举例"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:342
+#, fuzzy
 msgid ""
 "A complete example of a configuration file for building a custom NanoBSD "
 "image can be:"
-msgstr ""
+msgstr "用于构建自定义 NanoBSD 映像的完整配置文件示例如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "NANO_NAME=custom\n"
 "NANO_SRC=/usr/src\n"
 "NANO_KERNEL=MYKERNEL\n"
 "NANO_IMAGES=2\n"
-msgstr ""
+msgstr "NANO_NAME=custom\nNANO_SRC=/usr/src\nNANO_KERNEL=MYKERNEL\nNANO_IMAGES=2\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "CONF_BUILD='\n"
 "WITHOUT_KLDLOAD=YES\n"
 "WITHOUT_NETGRAPH=YES\n"
 "WITHOUT_PAM=YES\n"
 "'\n"
-msgstr ""
+msgstr "CONF_BUILD='\nWITHOUT_KLDLOAD=YES\nWITHOUT_NETGRAPH=YES\nWITHOUT_PAM=YES\n'\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "CONF_INSTALL='\n"
 "WITHOUT_ACPI=YES\n"
@@ -1050,11 +1142,11 @@ msgid ""
 "WITHOUT_MISC=YES\n"
 "WITHOUT_SHARE=YES\n"
 "'\n"
-msgstr ""
+msgstr "CONF_INSTALL='\nWITHOUT_ACPI=YES\nWITHOUT_BLUETOOTH=YES\nWITHOUT_FORTRAN=YES\nWITHOUT_HTML=YES\nWITHOUT_LPR=YES\nWITHOUT_MAN=YES\nWITHOUT_SENDMAIL=YES\nWITHOUT_SHAREDOCS=YES\nWITHOUT_EXAMPLES=YES\nWITHOUT_INSTALLLIB=YES\nWITHOUT_CALENDAR=YES\nWITHOUT_MISC=YES\nWITHOUT_SHARE=YES\n'\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "CONF_WORLD='\n"
 "WITHOUT_BIND=YES\n"
@@ -1066,45 +1158,47 @@ msgid ""
 "WITHOUT_SYSCONS=YES\n"
 "WITHOUT_INFO=YES\n"
 "'\n"
-msgstr ""
+msgstr "CONF_WORLD='\nWITHOUT_BIND=YES\nWITHOUT_MODULES=YES\nWITHOUT_KERBEROS=YES\nWITHOUT_GAMES=YES\nWITHOUT_RESCUE=YES\nWITHOUT_LOCALES=YES\nWITHOUT_SYSCONS=YES\nWITHOUT_INFO=YES\n'\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:384
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FlashDevice SanDisk 1G\n"
-msgstr ""
+msgstr "FlashDevice SanDisk 1G\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "cust_nobeastie() (\n"
 "\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
 "\techo \"beastie_disable=\\\"YES\\\"\" >> ${NANO_WORLDDIR}/boot/loader.conf\n"
 ")\n"
-msgstr ""
+msgstr "cust_nobeastie() (\n\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n\techo \"beastie_disable=\\\"YES\\\"\" >> ${NANO_WORLDDIR}/boot/loader.conf\n)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "customize_cmd cust_comconsole\n"
 "customize_cmd cust_install_files\n"
 "customize_cmd cust_allow_ssh_root\n"
 "customize_cmd cust_nobeastie\n"
-msgstr ""
+msgstr "customize_cmd cust_comconsole\ncustomize_cmd cust_install_files\ncustomize_cmd cust_allow_ssh_root\ncustomize_cmd cust_nobeastie\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:398
+#, fuzzy
 msgid ""
 "All the build and install compilation options can be found in the man:src."
 "conf[5] man page, but not all options can or should be used when building a "
 "NanoBSD image.  The build and install options should be defined according to "
 "the needs of the image being built."
-msgstr ""
+msgstr "所有构建和安装编译选项都可以在 man:src.conf[5] 手册页中找到，但并非所有选项都能或都应在构建 NanoBSD 映像时使用。应根据所构建映像的需求定义构建和安装选项。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:402
+#, fuzzy
 msgid ""
 "For example, the ftp client and server might not be needed.  Adding "
 "`WITHOUT_FTP=TRUE` to a configuration file in the `CONF_BUILD` section will "
@@ -1112,16 +1206,17 @@ msgid ""
 "build programs then it is possible to add the `WITHOUT_BINUTILS=TRUE` in the "
 "`CONF_INSTALL` section; but not in the `CONF_BUILD` section as they will be "
 "used to build the NanoBSD image."
-msgstr ""
+msgstr "例如，可能不需要 FTP 客户端和服务器。在配置文件的 `CONF_BUILD` 部分添加 `WITHOUT_FTP=TRUE`，即可避免构建它们。此外，如果 NanoBSD 设备不会用于构建程序，则可以在 `CONF_INSTALL` 部分添加 `WITHOUT_BINUTILS=TRUE`；但不能将其添加到 `CONF_BUILD` 部分，因为构建 NanoBSD 映像时需要使用这些工具。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:404
+#, fuzzy
 msgid ""
 "Not building a particular set of programs - through a compilation option - "
 "shortens the overall building time and lowers the required size for the disk "
 "image, whereas not installing the same specific set of programs does not "
 "lower the overall building time."
-msgstr ""
+msgstr "通过编译选项不构建某一组程序，可以缩短整体构建时间并减小所需磁盘映像的大小；而不安装同一组特定程序并不会缩短整体构建时间。"
 
 #. type: Title ===
 #: documentation/content/en/articles/nanobsd/_index.adoc:405
@@ -1131,19 +1226,22 @@ msgstr "更新 NanoBSD"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:408
+#, fuzzy
 msgid "The update process of NanoBSD is relatively simple:"
-msgstr ""
+msgstr "NanoBSD 的更新过程相对简单："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:412
+#, fuzzy
 msgid "Build a new NanoBSD image, as usual."
-msgstr ""
+msgstr "照常构建新的 NanoBSD 映像。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:413
+#, fuzzy
 msgid ""
 "Upload the new image into an unused partition of a running NanoBSD appliance."
-msgstr ""
+msgstr "将新映像上传到正在运行的 NanoBSD 设备中未使用的分区。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:415
@@ -1182,26 +1280,28 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:421
+#, fuzzy
 msgid ""
 "To install new image onto the running NanoBSD system, it is possible to use "
 "either the [.filename]#updatep1# or [.filename]#updatep2# script located in "
 "the [.filename]#/root# directory, depending from which partition is running "
 "the current system."
-msgstr ""
+msgstr "要将新映像安装到正在运行的 NanoBSD 系统中，可以使用 [.filename]#/root# 目录中的 [.filename]#updatep1# 或 [.filename]#updatep2# 脚本，具体取决于当前系统从哪个分区运行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:423
+#, fuzzy
 msgid ""
 "According to which services are available on the host serving the new "
 "NanoBSD image and what type of transfer is preferred, it is possible to use "
 "one of these three methods:"
-msgstr ""
+msgstr "根据提供新 NanoBSD 映像的主机上可用的服务以及首选的传输类型，可以使用以下三种方法之一："
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using man:ftp[1]"
-msgstr ""
+msgstr "使用 man:ftp[1]"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:427
@@ -1212,17 +1312,17 @@ msgstr "如果传输速度是第一要务， 采用下面的例子："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:432
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ftp myhost\n"
 "get _.disk.image \"| sh updatep1\"\n"
-msgstr ""
+msgstr "# ftp myhost\nget _.disk.image \"| sh updatep1\"\n"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using man:ssh[1]"
-msgstr ""
+msgstr "使用 man:ssh[1]"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:437
@@ -1231,22 +1331,23 @@ msgstr "如果更倾向于安全传输， 应参考下面的例子："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:441
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ssh myhost cat _.disk.image.gz | zcat | sh updatep1\n"
-msgstr ""
+msgstr "# ssh myhost cat _.disk.image.gz | zcat | sh updatep1\n"
 
 #. type: Title ====
 #: documentation/content/en/articles/nanobsd/_index.adoc:443
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using man:nc[1]"
-msgstr ""
+msgstr "使用 man:nc[1]"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:446
+#, fuzzy
 msgid ""
 "Try this example if the remote host is not running the man:ftpd[8] or man:"
 "sshd[8] service:"
-msgstr ""
+msgstr "如果远程主机未运行 man:ftpd[8] 或 man:sshd[8] 服务，请尝试以下示例："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:450
@@ -1262,16 +1363,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "myhost# nc -l 2222 < _.disk.image\n"
-msgstr ""
+msgstr "myhost# nc -l 2222 < _.disk.image\n"
 
 #. type: delimited block = 6
 #: documentation/content/en/articles/nanobsd/_index.adoc:459
+#, fuzzy
 msgid ""
 "Make sure that the chosen port is not blocked by the firewall to receive "
 "incoming connections from the NanoBSD host."
-msgstr ""
+msgstr "确保所选端口未被防火墙阻止，以便接收来自 NanoBSD 主机的入站连接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/nanobsd/_index.adoc:461
@@ -1284,6 +1386,6 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/nanobsd/_index.adoc:465
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# nc myhost 2222 | sh updatep1\n"
-msgstr ""
+msgstr "# nc myhost 2222 | sh updatep1\n"

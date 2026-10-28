@@ -19,21 +19,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/disks/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter covers the use of disks and storage media in FreeBSD. This includes SCSI and IDE disks, CD and DVD media, memory-backed disks, and USB storage devices."
-msgstr ""
+msgstr "本章介绍 FreeBSD 中磁盘和存储介质的使用，包括 SCSI 和 IDE 磁盘、CD 和 DVD 介质、内存支持的磁盘以及 USB 存储设备。"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/disks/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 21. Storage"
-msgstr ""
+msgstr "第 21 章：存储"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/disks/_index.adoc:15
@@ -49,11 +49,12 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:56
+#, fuzzy
 msgid ""
 "This chapter covers the use of disks and storage media in FreeBSD.  This "
 "includes SCSI and IDE disks, CD and DVD media, memory-backed disks, and USB "
 "storage devices."
-msgstr ""
+msgstr "本章介绍 FreeBSD 中磁盘和存储介质的使用。这包括 SCSI 和 IDE 磁盘、CD 和 DVD 介质、内存支持的磁盘以及 USB 存储设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:58
@@ -75,13 +76,15 @@ msgstr "如何增加分区空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:62
+#, fuzzy
 msgid "How to configure FreeBSD to use USB storage devices."
-msgstr ""
+msgstr "如何配置 FreeBSD 以使用 USB 存储设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:63
+#, fuzzy
 msgid "How to use CD and DVD media on a FreeBSD system."
-msgstr ""
+msgstr "如何在 FreeBSD 系统上使用 CD 和 DVD 介质。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:64
@@ -122,10 +125,11 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:73
+#, fuzzy
 msgid ""
 "Know how to crossref:kernelconfig[kernelconfig,configure and install a new "
 "FreeBSD kernel]."
-msgstr ""
+msgstr "了解如何 crossref:kernelconfig[kernelconfig,配置并安装新的 FreeBSD 内核]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:75
@@ -135,34 +139,38 @@ msgstr "添加磁盘"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:80
+#, fuzzy
 msgid ""
 "This section describes how to add a new SATA disk to a machine that "
 "currently only has a single drive.  First, turn off the computer and install "
 "the drive in the computer following the instructions of the computer, "
 "controller, and drive manufacturers.  Reboot the system and become `root`."
-msgstr ""
+msgstr "本节介绍如何为目前只有一个驱动器的计算机添加一块新的 SATA 磁盘。首先关闭计算机，并按照计算机、控制器和磁盘制造商的说明安装磁盘。重新启动系统并切换到 `root` 用户。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:83
+#, fuzzy
 msgid ""
 "Inspect [.filename]#/var/run/dmesg.boot# to ensure the new disk was found.  "
 "In this example, the newly added SATA drive will appear as [.filename]#ada1#."
-msgstr ""
+msgstr "检查 [.filename]#/var/run/dmesg.boot#，确认系统已发现新磁盘。在此示例中，新添加的 SATA 驱动器将显示为 [.filename]#ada1#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:86
+#, fuzzy
 msgid ""
 "For this example, a single large partition will be created on the new disk.  "
 "The https://en.wikipedia.org/wiki/GUID_Partition_Table[GPT] partitioning "
 "scheme will be used in preference to the older and less versatile MBR scheme."
-msgstr ""
+msgstr "在此示例中，将在新磁盘上创建一个大分区。这里优先使用 link:https://en.wikipedia.org/wiki/GUID_Partition_Table[GPT] 分区方案，而不是较旧且灵活性较低的 MBR 方案。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:91
+#, fuzzy
 msgid ""
 "If the disk to be added is not blank, old partition information can be "
 "removed with `gpart delete`.  See man:gpart[8] for details."
-msgstr ""
+msgstr "如果要添加的磁盘并非空盘，可以使用 `gpart delete` 删除旧的分区信息。详情请参阅 man:gpart[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:95
@@ -181,34 +189,36 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart create -s GPT ada1\n"
 "# gpart add -t freebsd-ufs -a 1M ada1\n"
-msgstr ""
+msgstr "# gpart create -s GPT ada1\n# gpart add -t freebsd-ufs -a 1M ada1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:104
+#, fuzzy
 msgid ""
 "Depending on use, several smaller partitions may be desired.  See man:"
 "gpart[8] for options to create partitions smaller than a whole disk."
-msgstr ""
+msgstr "根据用途，可能需要创建多个较小的分区。有关创建小于整个磁盘的分区的选项，请参阅 man:gpart[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:106
+#, fuzzy
 msgid "The disk partition information can be viewed with `gpart show`:"
-msgstr ""
+msgstr "可以使用 `gpart show` 查看磁盘分区信息："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% gpart show ada1\n"
 "=>        34  1465146988  ada1  GPT  (699G)\n"
 "          34        2014        - free -  (1.0M)\n"
 "        2048  1465143296     1  freebsd-ufs  (699G)\n"
 "  1465145344        1678        - free -  (839K)\n"
-msgstr ""
+msgstr "% gpart show ada1\n=>        34  1465146988  ada1  GPT  (699G)\n          34        2014        - free -  (1.0M)\n        2048  1465143296     1  freebsd-ufs  (699G)\n  1465145344        1678        - free -  (839K)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:117
@@ -217,22 +227,23 @@ msgstr "在磁盘分区上创建文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# newfs -U /dev/ada1p1\n"
-msgstr ""
+msgstr "# newfs -U /dev/ada1p1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:124
+#, fuzzy
 msgid ""
 "An empty directory is created as a _mountpoint_, a location for mounting the "
 "new disk in the original disk's file system:"
-msgstr ""
+msgstr "创建一个空目录作为__挂载点__，以便将新磁盘挂载到原磁盘的文件系统中："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkdir /newdisk\n"
-msgstr ""
+msgstr "# mkdir /newdisk\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:131
@@ -257,9 +268,9 @@ msgstr "可以手动装载新磁盘，无需重启系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /newdisk\n"
-msgstr ""
+msgstr "# mount /newdisk\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:145
@@ -269,6 +280,7 @@ msgstr "调整或增加磁盘"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:151
+#, fuzzy
 msgid ""
 "A disk's capacity can increase without any changes to the data already "
 "present.  This happens commonly with virtual machines, when the virtual disk "
@@ -276,15 +288,16 @@ msgid ""
 "written to a USB memory stick, but does not use the full capacity.  Here we "
 "describe how to resize or _grow_ disk contents to take advantage of "
 "increased capacity."
-msgstr ""
+msgstr "无需更改已有数据，磁盘容量也可以增加。这种情况常见于虚拟机：虚拟磁盘容量不足时会被扩容。有时，磁盘映像会写入 USB 闪存盘，但并未使用其全部容量。下面介绍如何调整磁盘内容的大小，或将其__扩展__，以利用增加的容量。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:154
+#, fuzzy
 msgid ""
 "Determine the device name of the disk to be resized by inspecting [."
 "filename]#/var/run/dmesg.boot#.  In this example, there is only one SATA "
 "disk in the system, so the drive will appear as [.filename]#ada0#."
-msgstr ""
+msgstr "检查 [.filename]#/var/run/dmesg.boot#，确定要调整大小的磁盘设备名称。在此示例中，系统中只有一块 SATA 磁盘，因此该驱动器将显示为 [.filename]#ada0#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:156
@@ -293,7 +306,7 @@ msgstr "查看当前磁盘的分区状况："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:165
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart show ada0\n"
 "=>      34  83886013  ada0  GPT  (48G) [CORRUPT]\n"
@@ -301,24 +314,25 @@ msgid ""
 "       162  79691648     2  freebsd-ufs  (38G)\n"
 "  79691810   4194236     3  freebsd-swap  (2G)\n"
 "  83886046         1        - free -  (512B)\n"
-msgstr ""
+msgstr "# gpart show ada0\n=>      34  83886013  ada0  GPT  (48G) [CORRUPT]\n        34       128     1  freebsd-boot  (64k)\n       162  79691648     2  freebsd-ufs  (38G)\n  79691810   4194236     3  freebsd-swap  (2G)\n  83886046         1        - free -  (512B)\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:171
+#, fuzzy
 msgid ""
 "If the disk was formatted with the https://en.wikipedia.org/wiki/"
 "GUID_Partition_Table[GPT] partitioning scheme, it may show as \"corrupted\" "
 "because the GPT backup partition table is no longer at the end of the "
 "drive.  Fix the backup partition table with `gpart`:"
-msgstr ""
+msgstr "如果磁盘使用 link:https://en.wikipedia.org/wiki/GUID_Partition_Table[GPT] 分区方案进行格式化，可能会显示为“已损坏”，因为 GPT 备份分区表不再位于驱动器末尾。使用 `gpart` 修复备份分区表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart recover ada0\n"
 "ada0 recovered\n"
-msgstr ""
+msgstr "# gpart recover ada0\nada0 recovered\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:181
@@ -329,7 +343,7 @@ msgstr "现在，新分区可以使用添加的磁盘空间，现有分区也可
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart show ada0\n"
 "=>       34  102399933  ada0  GPT  (48G)\n"
@@ -337,7 +351,7 @@ msgid ""
 "        162   79691648     2  freebsd-ufs  (38G)\n"
 "   79691810    4194236     3  freebsd-swap  (2G)\n"
 "   83886046   18513921        - free -  (8.8G)\n"
-msgstr ""
+msgstr "# gpart show ada0\n=>       34  102399933  ada0  GPT  (48G)\n         34        128     1  freebsd-boot  (64k)\n        162   79691648     2  freebsd-ufs  (38G)\n   79691810    4194236     3  freebsd-swap  (2G)\n   83886046   18513921        - free -  (8.8G)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:195
@@ -366,19 +380,20 @@ msgstr "停用交换分区："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# swapoff /dev/ada0p3\n"
-msgstr ""
+msgstr "# swapoff /dev/ada0p3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:204
+#, fuzzy
 msgid ""
 "Delete the third partition, specified by the `-i` flag, from the disk _ada0_."
-msgstr ""
+msgstr "从磁盘__ada0__中删除第三个分区，使用 `-i` 标志指定该分区。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart delete -i 3 ada0\n"
 "ada0p3 deleted\n"
@@ -387,7 +402,7 @@ msgid ""
 "         34        128     1  freebsd-boot  (64k)\n"
 "        162   79691648     2  freebsd-ufs  (38G)\n"
 "   79691810   22708157        - free -  (10G)\n"
-msgstr ""
+msgstr "# gpart delete -i 3 ada0\nada0p3 deleted\n# gpart show ada0\n=>       34  102399933  ada0  GPT  (48G)\n         34        128     1  freebsd-boot  (64k)\n        162   79691648     2  freebsd-ufs  (38G)\n   79691810   22708157        - free -  (10G)\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:222
@@ -405,9 +420,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl kern.geom.debugflags=16\n"
-msgstr ""
+msgstr "# sysctl kern.geom.debugflags=16\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:235
@@ -425,7 +440,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart resize -i 2 -s 47G -a 4k ada0\n"
 "ada0p2 resized\n"
@@ -434,7 +449,7 @@ msgid ""
 "         34        128     1  freebsd-boot  (64k)\n"
 "        162   98566144     2  freebsd-ufs  (47G)\n"
 "   98566306    3833661        - free -  (1.8G)\n"
-msgstr ""
+msgstr "# gpart resize -i 2 -s 47G -a 4k ada0\nada0p2 resized\n# gpart show ada0\n=>       34  102399933  ada0  GPT  (48G)\n         34        128     1  freebsd-boot  (64k)\n        162   98566144     2  freebsd-ufs  (47G)\n   98566306    3833661        - free -  (1.8G)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:249
@@ -448,7 +463,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart add -t freebsd-swap -a 4k ada0\n"
 "ada0p3 added\n"
@@ -458,17 +473,18 @@ msgid ""
 "        162   98566144     2  freebsd-ufs  (47G)\n"
 "   98566306    3833661     3  freebsd-swap  (1.8G)\n"
 "# swapon /dev/ada0p3\n"
-msgstr ""
+msgstr "# gpart add -t freebsd-swap -a 4k ada0\nada0p3 added\n# gpart show ada0\n=>       34  102399933  ada0  GPT  (48G)\n         34        128     1  freebsd-boot  (64k)\n        162   98566144     2  freebsd-ufs  (47G)\n   98566306    3833661     3  freebsd-swap  (1.8G)\n# swapon /dev/ada0p3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:263
+#, fuzzy
 msgid ""
 "Grow the UFS file system to use the new capacity of the resized partition:"
-msgstr ""
+msgstr "扩展 UFS 文件系统，以使用调整大小后的分区所提供的新容量："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# growfs /dev/ada0p2\n"
 "Device is mounted read-write; resizing will result in temporary write suspension for /.\n"
@@ -477,20 +493,21 @@ msgid ""
 "super-block backups (for fsck -b #) at:\n"
 " 80781312, 82063552, 83345792, 84628032, 85910272, 87192512, 88474752,\n"
 " 89756992, 91039232, 92321472, 93603712, 94885952, 96168192, 97450432\n"
-msgstr ""
+msgstr "# growfs /dev/ada0p2\nDevice is mounted read-write; resizing will result in temporary write suspension for /.\nIt's strongly recommended to make a backup before growing the file system.\nOK to grow file system on /dev/ada0p2, mounted on /, from 38GB to 47GB? [Yes/No] Yes\nsuper-block backups (for fsck -b #) at:\n 80781312, 82063552, 83345792, 84628032, 85910272, 87192512, 88474752,\n 89756992, 91039232, 92321472, 93603712, 94885952, 96168192, 97450432\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:276
+#, fuzzy
 msgid ""
 "If the file system is ZFS, the resize is triggered by running the `online` "
 "subcommand with `-e`:"
-msgstr ""
+msgstr "如果文件系统为 ZFS，可以通过运行带有 `-e` 的 `online` 子命令来触发调整大小："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# zpool online -e zroot /dev/ada0p2\n"
-msgstr ""
+msgstr "# zpool online -e zroot /dev/ada0p2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:283
@@ -501,33 +518,36 @@ msgstr "这样，文件系统和分区就都调整好了。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:285
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "USB Storage Devices"
-msgstr ""
+msgstr "USB 存储设备"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:289
+#, fuzzy
 msgid ""
 "Many external storage solutions, such as hard drives, USB thumbdrives, and "
 "CD and DVD burners, use the Universal Serial Bus (USB).  FreeBSD provides "
 "support for USB 1.x, 2.0, and 3.0 devices."
-msgstr ""
+msgstr "许多外部存储设备，例如硬盘、USB 闪存盘以及 CD 和 DVD 刻录机，都使用通用串行总线（USB）。FreeBSD 支持 USB 1.x、2.0 和 3.0 设备。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:294
+#, fuzzy
 msgid ""
 "USB 3.0 support is not compatible with some hardware, including Haswell "
 "(Lynx point) chipsets.  If FreeBSD boots with a `failed with error 19` "
 "message, disable xHCI/USB3 in the system BIOS."
-msgstr ""
+msgstr "USB 3.0 支持与某些硬件不兼容，包括 Haswell（Lynx Point）芯片组。如果 FreeBSD 启动时显示 `failed with error 19` 消息，请在系统 BIOS 中禁用 xHCI/USB3。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:298
+#, fuzzy
 msgid ""
 "Support for USB storage devices is built into the [.filename]#GENERIC# "
 "kernel.  For a custom kernel, be sure that the following lines are present "
 "in the kernel configuration file:"
-msgstr ""
+msgstr "[.filename]#GENERIC# 内核内置了对 USB 存储设备的支持。对于自定义内核，请确保内核配置文件中包含以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:311
@@ -557,20 +577,22 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:315
+#, fuzzy
 msgid ""
 "FreeBSD uses the man:umass[4] driver which uses the SCSI subsystem to access "
 "USB storage devices.  Since any USB device will be seen as a SCSI device by "
 "the system, if the USB device is a CD or DVD burner, do _not_ include "
 "`device atapicam` in a custom kernel configuration file."
-msgstr ""
+msgstr "FreeBSD 使用 man:umass[4] 驱动程序，通过 SCSI 子系统访问 USB 存储设备。由于系统会将任何 USB 设备视为 SCSI 设备，如果 USB 设备是 CD 或 DVD 刻录机，__不要__在自定义内核配置文件中包含 `device atapicam`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:317
+#, fuzzy
 msgid ""
 "The rest of this section demonstrates how to verify that a USB storage "
 "device is recognized by FreeBSD and how to configure the device so that it "
 "can be used."
-msgstr ""
+msgstr "本节接下来将演示如何确认 FreeBSD 已识别 USB 存储设备，以及如何配置该设备以供使用。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:318
@@ -580,11 +602,12 @@ msgstr "设备配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:323
+#, fuzzy
 msgid ""
 "To test the USB configuration, plug in the USB device.  Use `dmesg` to "
 "confirm that the drive appears in the system message buffer.  It should look "
 "something like this:"
-msgstr ""
+msgstr "要测试 USB 配置，请插入 USB 设备。使用 `dmesg` 确认该驱动器出现在系统消息缓冲区中。输出应类似于："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:335
@@ -622,43 +645,46 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:340
+#, fuzzy
 msgid ""
 "Since the USB device is seen as a SCSI one, `camcontrol` can be used to list "
 "the USB storage devices attached to the system:"
-msgstr ""
+msgstr "由于 USB 设备会被视为 SCSI 设备，可以使用 `camcontrol` 列出连接到系统的 USB 存储设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# camcontrol devlist\n"
 "<STECH Simple Drive 1.04>          at scbus4 target 0 lun 0 (pass3,da0)\n"
-msgstr ""
+msgstr "# camcontrol devlist\n<STECH Simple Drive 1.04>          at scbus4 target 0 lun 0 (pass3,da0)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:349
+#, fuzzy
 msgid ""
 "Alternately, `usbconfig` can be used to list the device.  Refer to man:"
 "usbconfig[8] for more information about this command."
-msgstr ""
+msgstr "也可以使用 `usbconfig` 列出设备。有关此命令的更多信息，请参阅 man:usbconfig[8]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:354
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# usbconfig\n"
 "ugen0.3: <Simple Drive STECH> at usbus0, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)\n"
-msgstr ""
+msgstr "# usbconfig\nugen0.3: <Simple Drive STECH> at usbus0, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:358
+#, fuzzy
 msgid ""
 "If the device has not been formatted, refer to crossref:disks[disks-adding, "
 "Adding Disks] for instructions on how to format and create partitions on the "
 "USB drive.  If the drive comes with a file system, it can be mounted by "
 "`root` using the instructions in crossref:basics[mount-unmount,“Mounting and "
 "Unmounting File Systems”]."
-msgstr ""
+msgstr "如果设备尚未格式化，请参阅 crossref:disks[disks-adding, 添加磁盘]，了解如何格式化 USB 驱动器并在其上创建分区。如果驱动器自带文件系统，`root` 可以按照 crossref:basics[mount-unmount，“挂载和卸载文件系统”] 中的说明挂载它。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:363
@@ -675,12 +701,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:367
+#, fuzzy
 msgid ""
 "To make the device mountable as a normal user, one solution is to make all "
 "users of the device a member of the `operator` group using man:pw[8].  Next, "
 "ensure that `operator` is able to read and write the device by adding these "
 "lines to [.filename]#/etc/devfs.rules#:"
-msgstr ""
+msgstr "若要让普通用户也能挂载该设备，一种方法是使用 man:pw[8] 将所有设备使用者加入 `operator` 组。然后，在 [.filename]#/etc/devfs.rules# 中添加以下行，确保 `operator` 组能够读取和写入该设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:372
@@ -694,30 +721,33 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:377
+#, fuzzy
 msgid ""
 "If internal SCSI disks are also installed in the system, change the second "
 "line as follows:"
-msgstr ""
+msgstr "如果系统中也安装了内部 SCSI 磁盘，请按如下方式更改第二行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:381
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "add path 'da[3-9]*' mode 0660 group operator\n"
-msgstr ""
+msgstr "add path 'da[3-9]*' mode 0660 group operator\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:386
+#, fuzzy
 msgid ""
 "This will exclude the first three SCSI disks ([.filename]#da0# to [."
 "filename]#da2#) from belonging to the `operator` group.  Replace _3_ with "
 "the number of internal SCSI disks.  Refer to man:devfs.rules[5] for more "
 "information about this file."
-msgstr ""
+msgstr "这样，前三块 SCSI 磁盘（[.filename]#da0# 至 [.filename]#da2#）就不会归属于 `operator` 组。将 _3_ 替换为内部 SCSI 磁盘的数量。有关此文件的更多信息，请参阅 man:devfs.rules[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:389
+#, fuzzy
 msgid "Next, enable the ruleset in [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "接下来，在 [.filename]#/etc/rc.conf# 中启用规则集："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:393
@@ -743,21 +773,23 @@ msgstr "vfs.usermount=1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:403
+#, fuzzy
 msgid ""
 "Since this only takes effect after the next reboot, use `sysctl` to set this "
 "variable now:"
-msgstr ""
+msgstr "由于此设置要到下次重新启动后才生效，请使用 `sysctl` 立即设置此变量："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:408
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# sysctl vfs.usermount=1\n"
 "vfs.usermount: 0 -> 1\n"
-msgstr ""
+msgstr "# sysctl vfs.usermount=1\nvfs.usermount: 0 -> 1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:414
+#, fuzzy
 msgid ""
 "The final step is to create a directory where the file system is to be "
 "mounted.  This directory needs to be owned by the user that is to mount the "
@@ -765,40 +797,42 @@ msgid ""
 "owned by that user as [.filename]#/mnt/username#.  In the following example, "
 "replace _username_ with the login name of the user and _usergroup_ with the "
 "user's primary group:"
-msgstr ""
+msgstr "最后一步是创建一个用于挂载文件系统的目录。该目录必须归要挂载文件系统的用户所有。一种方法是让 `root` 在 [.filename]#/mnt/username# 下创建一个归该用户所有的子目录。在以下示例中，将 _username_ 替换为用户的登录名，并将 _usergroup_ 替换为该用户的主组："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir /mnt/username\n"
 "# chown username:usergroup /mnt/username\n"
-msgstr ""
+msgstr "# mkdir /mnt/username\n# chown username:usergroup /mnt/username\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:423
+#, fuzzy
 msgid ""
 "Suppose a USB thumbdrive is plugged in, and a device [.filename]#/dev/da0s1# "
 "appears.  If the device is formatted with a FAT file system, the user can "
 "mount it using:"
-msgstr ""
+msgstr "假设已插入一个 USB 闪存盘，并出现设备 [.filename]#/dev/da0s1#。如果该设备使用 FAT 文件系统，用户可以使用以下命令挂载它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mount -t msdosfs -o -m=644,-M=755 /dev/da0s1 /mnt/username\n"
-msgstr ""
+msgstr "% mount -t msdosfs -o -m=644,-M=755 /dev/da0s1 /mnt/username\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:430
+#, fuzzy
 msgid "Before the device can be unplugged, it _must_ be unmounted first:"
-msgstr ""
+msgstr "拔出设备前，__必须__先将其卸载："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% umount /mnt/username\n"
-msgstr ""
+msgstr "% umount /mnt/username\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:437
@@ -831,10 +865,11 @@ msgstr "自动挂载可移动设备"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:449
+#, fuzzy
 msgid ""
 "USB devices can be automatically mounted by uncommenting this line in [."
 "filename]#/etc/auto_master#:"
-msgstr ""
+msgstr "取消 [.filename]#/etc/auto_master# 中这一行的注释，即可自动挂载 USB 设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:453
@@ -844,8 +879,9 @@ msgstr "/media\t\t-media\t\t-nosuid\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:456
+#, fuzzy
 msgid "Then add these lines to [.filename]#/etc/devd.conf#:"
-msgstr ""
+msgstr "然后将以下行添加到 [.filename]#/etc/devd.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:464
@@ -865,25 +901,27 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:467
+#, fuzzy
 msgid ""
 "Reload the configuration if man:autofs[5] and man:devd[8] are already "
 "running:"
-msgstr ""
+msgstr "如果 man:autofs[5] 和 man:devd[8] 已在运行，请重新加载配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:472
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service automount restart\n"
 "# service devd restart\n"
-msgstr ""
+msgstr "# service automount restart\n# service devd restart\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:475
+#, fuzzy
 msgid ""
 "man:autofs[5] can be set to start at boot by adding this line to [."
 "filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/etc/rc.conf#，即可让 man:autofs[5] 在启动时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:479
@@ -893,8 +931,9 @@ msgstr "autofs_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:482
+#, fuzzy
 msgid "man:autofs[5] requires man:devd[8] to be enabled, as it is by default."
-msgstr ""
+msgstr "man:autofs[5] 需要启用 man:devd[8]，而 man:devd[8] 默认已启用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:484
@@ -903,13 +942,13 @@ msgstr "用下列命令启动这些服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# service automount start\n"
 "# service automountd start\n"
 "# service autounmountd start\n"
 "# service devd start\n"
-msgstr ""
+msgstr "# service automount start\n# service automountd start\n# service autounmountd start\n# service devd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:496
@@ -939,22 +978,23 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# automount -fu\n"
-msgstr ""
+msgstr "# automount -fu\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:507
+#, fuzzy
 msgid ""
 "This mechanism is typically used for memory cards and USB memory sticks.  It "
 "can be used with any block device, including optical drives or iSCSILUNs."
-msgstr ""
+msgstr "此机制通常用于存储卡和 USB 闪存盘。它也可用于任何块设备，包括光驱或 iSCSI LUN。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:509
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating and Using CD Media"
-msgstr ""
+msgstr "创建和使用 CD 介质"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:515
@@ -974,13 +1014,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:519
+#, fuzzy
 msgid ""
 "The FreeBSD Ports Collection provides several utilities for burning and "
 "duplicating audio and data CDs.  This chapter demonstrates the use of "
 "several command line utilities.  For CD burning software with a graphical "
 "utility, consider installing the package:sysutils/xcdroast[] or package:"
 "sysutils/k3b[] packages or ports."
-msgstr ""
+msgstr "FreeBSD Ports Collection 提供了多个用于刻录和复制音频 CD 与数据 CD 的工具。本章将演示若干命令行工具的用法。如需带图形界面的 CD 刻录软件，可考虑安装 package:sysutils/xcdroast[] 或 package:sysutils/k3b[] 软件包或移植软件。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:521
@@ -990,16 +1031,18 @@ msgstr "支持的设备"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:525
+#, fuzzy
 msgid ""
 "The [.filename]#GENERIC# kernel provides support for SCSI, USB, and ATAPICD "
 "readers and burners.  If a custom kernel is used, the options that need to "
 "be present in the kernel configuration file vary by the type of device."
-msgstr ""
+msgstr "[.filename]#GENERIC# 内核支持 SCSI、USB 和 ATAPI CD 读取器及刻录机。如果使用自定义内核，内核配置文件中需要包含的选项取决于设备类型。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:527
+#, fuzzy
 msgid "For a SCSI burner, make sure these options are present:"
-msgstr ""
+msgstr "对于 SCSI 刻录机，请确保包含以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:534
@@ -1017,8 +1060,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:537
+#, fuzzy
 msgid "For a USB burner, make sure these options are present:"
-msgstr ""
+msgstr "对于 USB 刻录机，请确保包含以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:550
@@ -1048,8 +1092,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:553
+#, fuzzy
 msgid "For an ATAPI burner, make sure these options are present:"
-msgstr ""
+msgstr "对于 ATAPI 刻录机，请确保包含以下选项："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:560
@@ -1067,10 +1112,11 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:565
+#, fuzzy
 msgid ""
 "On FreeBSD versions prior to 10.x, this line is also needed in the kernel "
 "configuration file if the burner is an ATAPI device:"
-msgstr ""
+msgstr "对于 10.x 之前的 FreeBSD 版本，如果刻录机是 ATAPI 设备，内核配置文件中还需要包含这一行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:569
@@ -1116,7 +1162,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:592
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% dmesg | grep cd\n"
 "cd0 at ahcich1 bus 0 scbus1 target 0 lun 0\n"
@@ -1124,41 +1170,44 @@ msgid ""
 "cd0: Serial Number M3OD3S34152\n"
 "cd0: 150.000MB/s transfers (SATA 1.x, UDMA6, ATAPI 12bytes, PIO 8192bytes)\n"
 "cd0: Attempt to query device size failed: NOT READY, Medium not present - tray closed\n"
-msgstr ""
+msgstr "% dmesg | grep cd\ncd0 at ahcich1 bus 0 scbus1 target 0 lun 0\ncd0: <HL-DT-ST DVDRAM GU70N LT20> Removable CD-ROM SCSI-0 device\ncd0: Serial Number M3OD3S34152\ncd0: 150.000MB/s transfers (SATA 1.x, UDMA6, ATAPI 12bytes, PIO 8192bytes)\ncd0: Attempt to query device size failed: NOT READY, Medium not present - tray closed\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:595
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Burning a CD"
-msgstr ""
+msgstr "刻录 CD"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:599
+#, fuzzy
 msgid ""
 "In FreeBSD, `cdrecord` can be used to burn CDs.  This command is installed "
 "with the package:sysutils/cdrtools[] package or port."
-msgstr ""
+msgstr "在 FreeBSD 中，可以使用 `cdrecord` 刻录 CD。此命令随 package:sysutils/cdrtools[] 软件包或移植软件安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:602
+#, fuzzy
 msgid ""
 "While `cdrecord` has many options, basic usage is simple.  Specify the name "
 "of the ISO file to burn and, if the system has multiple burner devices, "
 "specify the name of the device to use:"
-msgstr ""
+msgstr "`cdrecord` 有许多选项，但基本用法很简单。指定要刻录的 ISO 文件名；如果系统中有多个刻录设备，还要指定要使用的设备名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:606
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cdrecord dev=device imagefile.iso\n"
-msgstr ""
+msgstr "# cdrecord dev=device imagefile.iso\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:609
+#, fuzzy
 msgid ""
 "To determine the device name of the burner, use `-scanbus` which might "
 "produce results like this:"
-msgstr ""
+msgstr "要确定刻录机的设备名称，请使用 `-scanbus`，该命令可能会生成如下结果："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:633
@@ -1210,13 +1259,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:638
+#, fuzzy
 msgid ""
 "Locate the entry for the CD burner and use the three numbers separated by "
 "commas as the value for `dev`.  In this case, the Yamaha burner device is "
 "`1,5,0`, so the appropriate input to specify that device is `dev=1,5,0`.  "
 "Refer to the manual page for `cdrecord` for other ways to specify this value "
 "and for information on writing audio tracks and controlling the write speed."
-msgstr ""
+msgstr "找到 CD 刻录机对应的条目，并将其中以逗号分隔的三个数字作为 `dev` 的值。在本例中，Yamaha 刻录机设备为 `1,5,0`，因此指定该设备的输入值应为 `dev=1,5,0`。有关指定此值的其他方法，以及写入音轨和控制写入速度的信息，请参阅 `cdrecord` 手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:640
@@ -1227,27 +1277,29 @@ msgstr "您也可以使用以下命令获取刻录机的设备地址："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# camcontrol devlist\n"
 "<MATSHITA CDRW/DVD UJDA740 1.00>   at scbus1 target 0 lun 0 (cd0,pass0)\n"
-msgstr ""
+msgstr "# camcontrol devlist\n<MATSHITA CDRW/DVD UJDA740 1.00>   at scbus1 target 0 lun 0 (cd0,pass0)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:649
+#, fuzzy
 msgid ""
 "Use the numeric values for `scbus`, `target`, and `lun`.  For this example, "
 "`1,0,0` is the device name to use."
-msgstr ""
+msgstr "使用 `scbus`、`target` 和 `lun` 的数值。本例中应使用 `1,0,0` 作为设备名称。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:651
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Writing Data to an ISO File System"
-msgstr ""
+msgstr "将数据写入 ISO 文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:656
+#, fuzzy
 msgid ""
 "In order to produce a data CD, the data files that are going to make up the "
 "tracks on the CD must be prepared before they can be burned to the CD.  In "
@@ -1256,42 +1308,46 @@ msgid ""
 "within a UNIX(R) file system.  The simplest usage is to specify the name of "
 "the ISO file to create and the path to the files to place into the ISO 9660 "
 "file system:"
-msgstr ""
+msgstr "要制作数据 CD，必须先准备好将构成 CD 音轨的数据文件，然后才能将其刻录到 CD。在 FreeBSD 中，package:sysutils/cdrtools[] 会安装 `mkisofs`，它可用于生成 ISO 9660 文件系统，该文件系统是 UNIX(R) 文件系统中某个目录树的映像。最简单的用法是指定要创建的 ISO 文件名，以及要放入 ISO 9660 文件系统的文件路径："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:660
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkisofs -o imagefile.iso /path/to/tree\n"
-msgstr ""
+msgstr "# mkisofs -o imagefile.iso /path/to/tree\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:663
+#, fuzzy
 msgid ""
 "This command maps the file names in the specified path to names that fit the "
 "limitations of the standard ISO 9660 file system, and will exclude files "
 "that do not meet the standard for ISO file systems."
-msgstr ""
+msgstr "此命令会将指定路径中的文件名映射为符合标准 ISO 9660 文件系统限制的名称，并排除不符合 ISO 文件系统标准的文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:666
+#, fuzzy
 msgid ""
 "A number of options are available to overcome the restrictions imposed by "
 "the standard.  In particular, `-R` enables the Rock Ridge extensions common "
 "to UNIX(R) systems and `-J` enables Joliet extensions used by Microsoft(R) "
 "systems."
-msgstr ""
+msgstr "有许多选项可用于克服标准施加的限制。尤其是，`-R` 启用 UNIX(R) 系统常用的 Rock Ridge 扩展，`-J` 启用 Microsoft(R) 系统使用的 Joliet 扩展。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:669
+#, fuzzy
 msgid ""
 "For CDs that are going to be used only on FreeBSD systems, `-U` can be used "
 "to disable all filename restrictions.  When used with `-R`, it produces a "
 "file system image that is identical to the specified FreeBSD tree, even if "
 "it violates the ISO 9660 standard."
-msgstr ""
+msgstr "对于只在 FreeBSD 系统上使用的 CD，可以使用 `-U` 禁用所有文件名限制。与 `-R` 一起使用时，即使违反 ISO 9660 标准，也会生成与指定 FreeBSD 目录树完全相同的文件系统映像。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:677
+#, fuzzy
 msgid ""
 "The last option of general use is `-b`.  This is used to specify the "
 "location of a boot image for use in producing an \"El Torito\" bootable CD.  "
@@ -1303,100 +1359,108 @@ msgid ""
 "case, `-no-emul-boot` should be used.  So, if [.filename]#/tmp/myboot# holds "
 "a bootable FreeBSD system with the boot image in [.filename]#/tmp/myboot/"
 "boot/cdboot#, this command would produce [.filename]#/tmp/bootable.iso#:"
-msgstr ""
+msgstr "最后一个常用选项是 `-b`。它用于指定启动映像的位置，以制作 “El Torito” 可启动 CD。此选项需要一个参数，即要写入 CD 的目录树顶层下启动映像的路径。默认情况下，`mkisofs` 会创建“软盘仿真”模式的 ISO 映像，因此启动映像大小必须恰好为 1200、1440 或 2880 KB。某些引导加载程序（例如 FreeBSD 发行介质所用的引导加载程序）不使用仿真模式。在这种情况下，应使用 `-no-emul-boot`。因此，如果 [.filename]#/tmp/myboot# 中保存了一个可启动的 FreeBSD 系统，且启动映像位于 [.filename]#/tmp/myboot/boot/cdboot#，则以下命令会生成 [.filename]#/tmp/bootable.iso#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:681
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkisofs -R -no-emul-boot -b boot/cdboot -o /tmp/bootable.iso /tmp/myboot\n"
-msgstr ""
+msgstr "# mkisofs -R -no-emul-boot -b boot/cdboot -o /tmp/bootable.iso /tmp/myboot\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:684
+#, fuzzy
 msgid "The resulting ISO image can be mounted as a memory disk with:"
-msgstr ""
+msgstr "可以使用以下命令将生成的 ISO 映像挂载为内存磁盘："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:689
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mdconfig -a -t vnode -f /tmp/bootable.iso -u 0\n"
 "# mount -t cd9660 /dev/md0 /mnt\n"
-msgstr ""
+msgstr "# mdconfig -a -t vnode -f /tmp/bootable.iso -u 0\n# mount -t cd9660 /dev/md0 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:692
+#, fuzzy
 msgid ""
 "One can then verify that [.filename]#/mnt# and [.filename]#/tmp/myboot# are "
 "identical."
-msgstr ""
+msgstr "随后可以验证 [.filename]#/mnt# 和 [.filename]#/tmp/myboot# 是否完全相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:695
+#, fuzzy
 msgid ""
 "There are many other options available for `mkisofs` to fine-tune its "
 "behavior.  Refer to man:mkisofs[8] for details."
-msgstr ""
+msgstr "`mkisofs` 还有许多其他选项可用于微调其行为。详情请参阅 man:mkisofs[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:700
+#, fuzzy
 msgid ""
 "It is possible to copy a data CD to an image file that is functionally "
 "equivalent to the image file created with `mkisofs`.  To do so, use [."
 "filename]#dd# with the device name as the input file and the name of the ISO "
 "to create as the output file:"
-msgstr ""
+msgstr "可以将数据 CD 复制到映像文件中，其功能与使用 `mkisofs` 创建的映像文件相同。为此，请使用 [.filename]#dd#，将设备名称作为输入文件，并将要创建的 ISO 文件名作为输出文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:704
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dd if=/dev/cd0 of=file.iso bs=2048\n"
-msgstr ""
+msgstr "# dd if=/dev/cd0 of=file.iso bs=2048\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:707
+#, fuzzy
 msgid ""
 "The resulting image file can be burned to CD as described in crossref:"
 "disks[cdrecord, Burning a CD]."
-msgstr ""
+msgstr "生成的映像文件可以按照 crossref:disks[cdrecord, Burning a CD] 中的说明刻录到 CD。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:710
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using Data CDs"
-msgstr ""
+msgstr "使用数据 CD"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:713
+#, fuzzy
 msgid ""
 "Once an ISO has been burned to a CD, it can be mounted by specifying the "
 "file system type, the name of the device containing the CD, and an existing "
 "mount point:"
-msgstr ""
+msgstr "将 ISO 刻录到 CD 后，可以通过指定文件系统类型、包含该 CD 的设备名称以及现有挂载点来挂载它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:717
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount -t cd9660 /dev/cd0 /mnt\n"
-msgstr ""
+msgstr "# mount -t cd9660 /dev/cd0 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:720
+#, fuzzy
 msgid ""
 "Since `mount` assumes that a file system is of type `ufs`, an `Incorrect "
 "super block` error will occur if `-t cd9660` is not included when mounting a "
 "data CD."
-msgstr ""
+msgstr "由于 `mount` 默认假定文件系统类型为 `ufs`，挂载数据 CD 时如果未包含 `-t cd9660`，就会出现 `Incorrect super block` 错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:725
+#, fuzzy
 msgid ""
 "While any data CD can be mounted this way, disks with certain ISO 9660 "
 "extensions might behave oddly.  For example, Joliet disks store all "
 "filenames in two-byte Unicode characters.  If some non-English characters "
 "show up as question marks, specify the local charset with `-C`.  For more "
 "information, refer to man:mount_cd9660[8]."
-msgstr ""
+msgstr "虽然任何数据 CD 都可以这样挂载，但带有某些 ISO 9660 扩展的光盘可能会出现异常。例如，Joliet 光盘会将所有文件名存储为双字节 Unicode 字符。如果某些非英语字符显示为问号，请使用 `-C` 指定本地字符集。详情请参阅 man:mount_cd9660[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:730
@@ -1418,22 +1482,25 @@ msgstr "cd9660_iconv_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:737
+#, fuzzy
 msgid ""
 "and then rebooting the machine, or by directly loading the module with "
 "`kldload`."
-msgstr ""
+msgstr "然后重启机器，或者直接使用 `kldload` 加载模块。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:742
+#, fuzzy
 msgid ""
 "Occasionally, `Device not configured` will be displayed when trying to mount "
 "a data CD.  This usually means that the CD drive has not detected a disk in "
 "the tray, or that the drive is not visible on the bus.  It can take a couple "
 "of seconds for a CD drive to detect media, so be patient."
-msgstr ""
+msgstr "尝试挂载数据 CD 时，有时会显示 `Device not configured`。这通常意味着 CD 驱动器未检测到托盘中的光盘，或者驱动器在总线上不可见。CD 驱动器检测介质可能需要几秒钟，请耐心等待。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:746
+#, fuzzy
 msgid ""
 "Sometimes, a SCSICD drive may be missed because it did not have enough time "
 "to answer the bus reset.  To resolve this, a custom kernel can be created "
@@ -1441,7 +1508,7 @@ msgid ""
 "custom kernel configuration file and rebuild the kernel using the "
 "instructions in crossref:kernelconfig[kernelconfig-building,“Building and "
 "Installing a Custom Kernel”]:"
-msgstr ""
+msgstr "有时，SCSICD 驱动器可能会因没有足够时间响应总线重置而未被检测到。要解决此问题，可以创建一个自定义内核，以增加默认的 SCSI 延迟。在自定义内核配置文件中添加以下选项，然后按照 crossref:kernelconfig[kernelconfig-building,“Building and Installing a Custom Kernel”] 中的说明重新构建内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:750
@@ -1451,18 +1518,20 @@ msgstr "options SCSI_DELAY=15000\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:753
+#, fuzzy
 msgid ""
 "This tells the SCSI bus to pause 15 seconds during boot, to give the CD "
 "drive every possible chance to answer the bus reset."
-msgstr ""
+msgstr "此设置会使 SCSI 总线在启动时暂停 15 秒，让 CD 驱动器尽可能有机会响应总线重置。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:758
+#, fuzzy
 msgid ""
 "It is possible to burn a file directly to CD, without creating an ISO 9660 "
 "file system.  This is known as burning a raw data CD and some people do this "
 "for backup purposes."
-msgstr ""
+msgstr "可以直接将文件刻录到 CD，而不创建 ISO 9660 文件系统。这称为刻录原始数据 CD，有些人会用这种方式进行备份。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:762
@@ -1479,42 +1548,45 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:766
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tar xzvf /dev/cd1\n"
-msgstr ""
+msgstr "# tar xzvf /dev/cd1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:769
+#, fuzzy
 msgid "In order to mount a data CD, the data must be written using `mkisofs`."
-msgstr ""
+msgstr "要挂载数据 CD，必须使用 `mkisofs` 写入数据。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Duplicating Audio CDs"
-msgstr ""
+msgstr "复制音频 CD"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:775
+#, fuzzy
 msgid ""
 "To duplicate an audio CD, extract the audio data from the CD to a series of "
 "files, then write these files to a blank CD."
-msgstr ""
+msgstr "要复制音频 CD，先从 CD 提取音频数据并保存为一系列文件，然后将这些文件写入空白 CD。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:779
+#, fuzzy
 msgid ""
 "crossref:disks[using-cdrecord, Duplicating an Audio CD] describes how to "
 "duplicate and burn an audio CD.  If the FreeBSD version is less than 10.0 "
 "and the device is ATAPI, the `atapicam` module must be first loaded using "
 "the instructions in crossref:disks[atapicam, Supported Devices]."
-msgstr ""
+msgstr "crossref:disks[using-cdrecord, Duplicating an Audio CD] 介绍了如何复制和刻录音频 CD。如果 FreeBSD 版本低于 10.0 且设备为 ATAPI，则必须按照 crossref:disks[atapicam, Supported Devices] 中的说明先加载 `atapicam` 模块。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Duplicating an Audio CD"
-msgstr ""
+msgstr "步骤：复制音频 CD"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/disks/_index.adoc:784
@@ -1530,9 +1602,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:788
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cdda2wav -vall -B -Owav\n"
-msgstr ""
+msgstr "% cdda2wav -vall -B -Owav\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:792
@@ -1549,85 +1621,95 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:793
+#, fuzzy
 msgid "Use `cdrecord` to write the [.filename]#.wav# files:"
-msgstr ""
+msgstr "使用 `cdrecord` 写入 [.filename]#.wav# 文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:797
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cdrecord -v dev=2,0 -dao -useinfo  *.wav\n"
-msgstr ""
+msgstr "% cdrecord -v dev=2,0 -dao -useinfo  *.wav\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:800
+#, fuzzy
 msgid ""
 "Make sure that _2,0_ is set appropriately, as described in crossref:"
 "disks[cdrecord, Burning a CD]."
-msgstr ""
+msgstr "请确保按 crossref:disks[cdrecord, Burning a CD] 中的说明正确设置 __2,0__。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:802
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating and Using DVD Media"
-msgstr ""
+msgstr "创建和使用 DVD 介质"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:806
+#, fuzzy
 msgid ""
 "Compared to the CD, the DVD is the next generation of optical media storage "
 "technology.  The DVD can hold more data than any CD and is the standard for "
 "video publishing."
-msgstr ""
+msgstr "与 CD 相比，DVD 是新一代光存储介质技术。DVD 的存储容量大于任何 CD，并且是视频发行的标准介质。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:808
+#, fuzzy
 msgid "Five physical recordable formats can be defined for a recordable DVD:"
-msgstr ""
+msgstr "可刻录 DVD 有五种物理格式："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:810
+#, fuzzy
 msgid ""
 "DVD-R: This was the first DVD recordable format available. The DVD-R "
 "standard is defined by the http://www.dvdforum.org/forum.shtml[DVD Forum]. "
 "This format is write once."
-msgstr ""
+msgstr "DVD-R：这是最早推出的可刻录 DVD 格式。DVD-R 标准由 link:http://www.dvdforum.org/forum.shtml[DVD Forum] 制定。此格式只能写入一次。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:811
+#, fuzzy
 msgid ""
 "DVD-RW: This is the rewritable version of the DVD-R standard. A DVD-RW can "
 "be rewritten about 1000 times."
-msgstr ""
+msgstr "DVD-RW：这是 DVD-R 标准的可重写版本。DVD-RW 大约可以重写 1000 次。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:815
+#, fuzzy
 msgid ""
 "DVD-RAM: This is a rewritable format which can be seen as a removable hard "
 "drive. However, this media is not compatible with most DVD-ROM drives and "
 "DVD-Video players as only a few DVD writers support the DVD-RAM format. "
 "Refer to crossref:disks[creating-dvd-ram, Using a DVD-RAM] for more "
 "information on DVD-RAM use."
-msgstr ""
+msgstr "DVD-RAM：这是一种可重写格式，可视为可移动硬盘。不过，这种介质与大多数 DVD-ROM 驱动器和 DVD-Video 播放器不兼容，因为只有少数 DVD 刻录机支持 DVD-RAM 格式。有关 DVD-RAM 使用的更多信息，请参阅 crossref:disks[creating-dvd-ram, Using a DVD-RAM]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:816
+#, fuzzy
 msgid ""
 "DVD+RW: This is a rewritable format defined by the https://en.wikipedia.org/"
 "wiki/DVD%2BRW_Alliance[DVD+RW Alliance]. A DVD+RW can be rewritten about "
 "1000 times."
-msgstr ""
+msgstr "DVD+RW：这是一种由 link:https://en.wikipedia.org/wiki/DVD%2BRW_Alliance[DVD+RW Alliance] 制定的可重写格式。DVD+RW 大约可以重写 1000 次。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:817
+#, fuzzy
 msgid "DVD+R: This format is the write once variation of the DVD+RW format."
-msgstr ""
+msgstr "DVD+R：此格式是 DVD+RW 格式的单次写入版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:819
+#, fuzzy
 msgid ""
 "A single layer recordable DVD can hold up to 4,700,000,000 bytes which is "
 "actually 4.38 GB or 4485 MB as 1 kilobyte is 1024 bytes."
-msgstr ""
+msgstr "单层可刻录 DVD 最多可容纳 4,700,000,000 字节，实际为 4.38 GB 或 4485 MB，因为 1 千字节等于 1024 字节。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:825
@@ -1652,27 +1734,30 @@ msgstr "设置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:831
+#, fuzzy
 msgid ""
 "To perform DVD recording, use man:growisofs[1].  This command is part of the "
 "package:sysutils/dvd+rw-tools[] utilities which support all DVD media types."
-msgstr ""
+msgstr "要刻录 DVD，请使用 man:growisofs[1]。此命令属于 package:sysutils/dvd+rw-tools[] 工具集，该工具集支持所有 DVD 介质类型。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:836
+#, fuzzy
 msgid ""
 "These tools use the SCSI subsystem to access the devices, therefore crossref:"
 "disks[atapicam,ATAPI/CAM support] must be loaded or statically compiled into "
 "the kernel.  This support is not needed if the burner uses the USB "
 "interface.  Refer to crossref:disks[usb-disks, USB Storage Devices] for more "
 "details on USB device configuration."
-msgstr ""
+msgstr "这些工具使用 SCSI 子系统访问设备，因此必须加载 crossref:disks[atapicam,ATAPI/CAM support]，或将其静态编译进内核。如果刻录机使用 USB 接口，则不需要此支持。有关 USB 设备配置的更多详情，请参阅 crossref:disks[usb-disks, USB Storage Devices]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:838
+#, fuzzy
 msgid ""
 "DMA access must also be enabled for ATAPI devices, by adding the following "
 "line to [.filename]#/boot/loader.conf#:"
-msgstr ""
+msgstr "还必须为 ATAPI 设备启用 DMA 访问，方法是在 [.filename]#/boot/loader.conf# 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:842
@@ -1683,33 +1768,36 @@ msgstr "hw.ata.atapi_dma=\"1\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:845
+#, fuzzy
 msgid ""
 "Before attempting to use dvd+rw-tools, consult the http://fy.chalmers.se/"
 "~appro/linux/DVD+RW/hcn.html[Hardware Compatibility Notes]."
-msgstr ""
+msgstr "尝试使用 dvd+rw-tools 之前，请查阅 link:http://fy.chalmers.se/~appro/linux/DVD+RW/hcn.html[硬件兼容性说明]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:849
+#, fuzzy
 msgid ""
 "For a graphical user interface, consider using package:sysutils/k3b[] which "
 "provides a user friendly interface to man:growisofs[1] and many other "
 "burning tools."
-msgstr ""
+msgstr "如需图形用户界面，可考虑使用 package:sysutils/k3b[]。它为 man:growisofs[1] 和许多其他刻录工具提供了易用的界面。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:851
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Burning Data DVDs"
-msgstr ""
+msgstr "刻录数据 DVD"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:855
+#, fuzzy
 msgid ""
 "Since man:growisofs[1] is a front-end to crossref:disks[mkisofs,mkisofs], it "
 "will invoke man:mkisofs[8] to create the file system layout and perform the "
 "write on the DVD.  This means that an image of the data does not need to be "
 "created before the burning process."
-msgstr ""
+msgstr "由于 man:growisofs[1] 是 crossref:disks[mkisofs,mkisofs] 的前端，它会调用 man:mkisofs[8] 创建文件系统布局并将其写入 DVD。这意味着刻录前无需创建数据映像。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:857
@@ -1722,49 +1810,54 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:861
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -dvd-compat -Z /dev/cd0 -J -R /path/to/data\n"
-msgstr ""
+msgstr "# growisofs -dvd-compat -Z /dev/cd0 -J -R /path/to/data\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:865
+#, fuzzy
 msgid ""
 "In this example, `-J -R` is passed to man:mkisofs[8] to create an ISO 9660 "
 "file system with Joliet and Rock Ridge extensions.  Refer to man:mkisofs[8] "
 "for more details."
-msgstr ""
+msgstr "在本例中，`-J -R` 会传递给 man:mkisofs[8]，以创建带有 Joliet 和 Rock Ridge 扩展的 ISO 9660 文件系统。详情请参阅 man:mkisofs[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:870
+#, fuzzy
 msgid ""
 "For the initial session recording, `-Z` is used for both single and multiple "
 "sessions.  Replace _/dev/cd0_, with the name of the DVD device.  Using `-dvd-"
 "compat` indicates that the disk will be closed and that the recording will "
 "be unappendable.  This should also provide better media compatibility with "
 "DVD-ROM drives."
-msgstr ""
+msgstr "对于首次刻录会话，单会话和多会话都使用 `-Z`。将 _/dev/cd0_ 替换为 DVD 设备名称。使用 `-dvd-compat` 表示光盘将被关闭，之后不能再追加刻录。这也应能提高介质与 DVD-ROM 驱动器的兼容性。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:872
+#, fuzzy
 msgid "To burn a pre-mastered image, such as _imagefile.iso_, use:"
-msgstr ""
+msgstr "要刻录预先制作好的映像（例如 _imagefile.iso_），请使用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:876
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -dvd-compat -Z /dev/cd0=imagefile.iso\n"
-msgstr ""
+msgstr "# growisofs -dvd-compat -Z /dev/cd0=imagefile.iso\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:880
+#, fuzzy
 msgid ""
 "The write speed should be detected and automatically set according to the "
 "media and the drive being used.  To force the write speed, use `-speed=`. "
 "Refer to man:growisofs[1] for example usage."
-msgstr ""
+msgstr "写入速度应根据所用介质和驱动器自动检测并设置。要强制指定写入速度，请使用 `-speed=`。用法示例请参阅 man:growisofs[1]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:887
+#, fuzzy
 msgid ""
 "In order to support working files larger than 4.38GB, an UDF/ISO-9660 hybrid "
 "file system must be created by passing `-udf -iso-level 3` to man:mkisofs[8] "
@@ -1773,7 +1866,7 @@ msgid ""
 "Since a disk created this way must be mounted as an UDF file system with man:"
 "mount_udf[8], it will be usable only on an UDF aware operating system.  "
 "Otherwise it will look as if it contains corrupted files."
-msgstr ""
+msgstr "要支持大于 4.38GB 的工作文件，必须通过向 man:mkisofs[8] 及所有相关程序（例如 man:growisofs[1]）传递 `-udf -iso-level 3`，创建 UDF/ISO-9660 混合文件系统。只有在创建 ISO 映像文件或直接向光盘写入文件时才需要这样做。由于此方式创建的光盘必须使用 man:mount_udf[8] 挂载为 UDF 文件系统，因此只能在支持 UDF 的操作系统上使用。否则，光盘中的文件看起来会像已损坏。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:889
@@ -1782,9 +1875,9 @@ msgstr "创建 UDF 格式的 ISO 文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:893
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mkisofs -R -J -udf -iso-level 3 -o imagefile.iso /path/to/data\n"
-msgstr ""
+msgstr "% mkisofs -R -J -udf -iso-level 3 -o imagefile.iso /path/to/data\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:896
@@ -1793,31 +1886,33 @@ msgstr "直接将文件写入光盘："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:900
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -dvd-compat -udf -iso-level 3 -Z /dev/cd0 -J -R /path/to/data\n"
-msgstr ""
+msgstr "# growisofs -dvd-compat -udf -iso-level 3 -Z /dev/cd0 -J -R /path/to/data\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:903
+#, fuzzy
 msgid ""
 "When an ISO image already contains large files, no additional options are "
 "required for man:growisofs[1] to burn that image on a disk."
-msgstr ""
+msgstr "如果 ISO 映像中已经包含大文件，则 man:growisofs[1] 刻录该映像时无需额外选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:906
+#, fuzzy
 msgid ""
 "Be sure to use an up-to-date version of package:sysutils/cdrtools[], which "
 "contains man:mkisofs[8], as an older version may not contain large files "
 "support.  If the latest version does not work, install package:sysutils/"
 "cdrtools-devel[] and read its man:mkisofs[8]."
-msgstr ""
+msgstr "请确保使用最新版本的 package:sysutils/cdrtools[]，其中包含 man:mkisofs[8]；较旧版本可能不支持大文件。如果最新版本无法正常工作，请安装 package:sysutils/cdrtools-devel[] 并阅读其 man:mkisofs[8] 手册页。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:908
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Burning a DVD-Video"
-msgstr ""
+msgstr "刻录 DVD-Video"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:912
@@ -1847,47 +1942,50 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:919
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -Z /dev/cd0 -dvd-video /path/to/video\n"
-msgstr ""
+msgstr "# growisofs -Z /dev/cd0 -dvd-video /path/to/video\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:923
+#, fuzzy
 msgid ""
 "`-dvd-video` is passed to man:mkisofs[8] to instruct it to create a DVD-"
 "Video file system layout.  This option implies the `-dvd-compat` man:"
 "growisofs[1] option."
-msgstr ""
+msgstr "`-dvd-video` 会传递给 man:mkisofs[8]，指示它创建 DVD-Video 文件系统布局。此选项隐含启用 man:growisofs[1] 的 `-dvd-compat` 选项。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:924
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using a DVD+RW"
-msgstr ""
+msgstr "使用 DVD+RW"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:929
+#, fuzzy
 msgid ""
 "Unlike CD-RW, a virgin DVD+RW needs to be formatted before first use.  It is "
 "_recommended_ to let man:growisofs[1] take care of this automatically "
 "whenever appropriate.  However, it is possible to use `dvd+rw-format` to "
 "format the DVD+RW:"
-msgstr ""
+msgstr "与 CD-RW 不同，未使用过的 DVD+RW 首次使用前需要格式化。通常__建议__由 man:growisofs[1] 在适当情况下自动处理此操作。不过，也可以使用 `dvd+rw-format` 格式化 DVD+RW："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:933
 #: documentation/content/en/books/handbook/disks/_index.adoc:1023
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dvd+rw-format /dev/cd0\n"
-msgstr ""
+msgstr "# dvd+rw-format /dev/cd0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:937
+#, fuzzy
 msgid ""
 "Only perform this operation once and keep in mind that only virgin DVD+RW "
 "medias need to be formatted.  Once formatted, the DVD+RW can be burned as "
 "usual."
-msgstr ""
+msgstr "此操作只需执行一次，并且请记住，只有未使用过的 DVD+RW 介质需要格式化。格式化后，DVD+RW 即可照常刻录。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:940
@@ -1902,44 +2000,48 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:944
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -Z /dev/cd0 -J -R /path/to/newdata\n"
-msgstr ""
+msgstr "# growisofs -Z /dev/cd0 -J -R /path/to/newdata\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:949
+#, fuzzy
 msgid ""
 "The DVD+RW format supports appending data to a previous recording.  This "
 "operation consists of merging a new session to the existing one as it is not "
 "considered to be multi-session writing.  man:growisofs[1] will _grow_ the "
 "ISO 9660 file system present on the media."
-msgstr ""
+msgstr "DVD+RW 格式支持向之前的刻录内容追加数据。此操作会将新会话合并到现有会话中，因此不被视为多会话写入。man:growisofs[1] 会扩展介质上已有的 ISO 9660 文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:951
+#, fuzzy
 msgid "For example, to append data to a DVD+RW, use the following:"
-msgstr ""
+msgstr "例如，要向 DVD+RW 追加数据，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:955
 #: documentation/content/en/books/handbook/disks/_index.adoc:1043
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -M /dev/cd0 -J -R /path/to/nextdata\n"
-msgstr ""
+msgstr "# growisofs -M /dev/cd0 -J -R /path/to/nextdata\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:958
+#, fuzzy
 msgid ""
 "The same man:mkisofs[8] options used to burn the initial session should be "
 "used during next writes."
-msgstr ""
+msgstr "后续写入时应使用与首次会话刻录时相同的 man:mkisofs[8] 选项。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:963
+#, fuzzy
 msgid ""
 "Use `-dvd-compat` for better media compatibility with DVD-ROM drives.  When "
 "using DVD+RW, this option will not prevent the addition of data."
-msgstr ""
+msgstr "使用 `-dvd-compat` 可提高介质与 DVD-ROM 驱动器的兼容性。使用 DVD+RW 时，此选项不会阻止追加数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:966
@@ -1948,109 +2050,119 @@ msgstr "使用以下命令清空数据："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:970
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -Z /dev/cd0=/dev/zero\n"
-msgstr ""
+msgstr "# growisofs -Z /dev/cd0=/dev/zero\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:972
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using a DVD-RW"
-msgstr ""
+msgstr "使用 DVD-RW"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:976
+#, fuzzy
 msgid ""
 "A DVD-RW accepts two disc formats: incremental sequential and restricted "
 "overwrite.  By default, DVD-RW discs are in sequential format."
-msgstr ""
+msgstr "DVD-RW 支持两种光盘格式：增量顺序格式和受限覆写格式。默认情况下，DVD-RW 光盘采用顺序格式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:979
+#, fuzzy
 msgid ""
 "A virgin DVD-RW can be directly written without being formatted.  However, a "
 "non-virgin DVD-RW in sequential format needs to be blanked before writing a "
 "new initial session."
-msgstr ""
+msgstr "全新的 DVD-RW 无需格式化即可直接写入。不过，采用顺序格式且已使用过的 DVD-RW，在写入新的初始会话前需要先擦除。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:981
+#, fuzzy
 msgid "To blank a DVD-RW in sequential mode:"
-msgstr ""
+msgstr "要擦除顺序模式下的 DVD-RW："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:985
 #: documentation/content/en/books/handbook/disks/_index.adoc:1030
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dvd+rw-format -blank=full /dev/cd0\n"
-msgstr ""
+msgstr "# dvd+rw-format -blank=full /dev/cd0\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:992
+#, fuzzy
 msgid ""
 "A full blanking using `-blank=full` will take about one hour on a 1x media.  "
 "A fast blanking can be performed using `-blank`, if the DVD-RW will be "
 "recorded in Disk-At-Once (DAO) mode.  To burn the DVD-RW in DAO mode, use "
 "the command:"
-msgstr ""
+msgstr "使用 `-blank=full` 完全擦除，在 1x 速率的介质上大约需要一小时。如果 DVD-RW 将以一次刻录（DAO）模式刻录，可以使用 `-blank` 快速擦除。要以 DAO 模式刻录 DVD-RW，请使用以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:996
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -use-the-force-luke=dao -Z /dev/cd0=imagefile.iso\n"
-msgstr ""
+msgstr "# growisofs -use-the-force-luke=dao -Z /dev/cd0=imagefile.iso\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:999
+#, fuzzy
 msgid ""
 "Since man:growisofs[1] automatically attempts to detect fast blanked media "
 "and engage DAO write, `-use-the-force-luke=dao` should not be required."
-msgstr ""
+msgstr "由于 man:growisofs[1] 会自动尝试检测已快速擦除的介质并启用 DAO 写入，因此通常不需要使用 `-use-the-force-luke=dao`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1001
+#, fuzzy
 msgid ""
 "One should instead use restricted overwrite mode with any DVD-RW as this "
 "format is more flexible than the default of incremental sequential."
-msgstr ""
+msgstr "对于任何 DVD-RW，都应改用受限覆写模式，因为这种格式比默认的增量顺序格式更灵活。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1004
+#, fuzzy
 msgid ""
 "To write data on a sequential DVD-RW, use the same instructions as for the "
 "other DVD formats:"
-msgstr ""
+msgstr "要向顺序格式的 DVD-RW 写入数据，请使用与其他 DVD 格式相同的说明："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1008
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# growisofs -Z /dev/cd0 -J -R /path/to/data\n"
-msgstr ""
+msgstr "# growisofs -Z /dev/cd0 -J -R /path/to/data\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1012
+#, fuzzy
 msgid ""
 "To append some data to a previous recording, use `-M` with man:"
 "growisofs[1].  However, if data is appended on a DVD-RW in incremental "
 "sequential mode, a new session will be created on the disc and the result "
 "will be a multi-session disc."
-msgstr ""
+msgstr "要向之前的刻录内容追加数据，请将 `-M` 与 man:growisofs[1] 配合使用。不过，如果以增量顺序模式向 DVD-RW 追加数据，光盘上会创建一个新会话，结果将是一张多会话光盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1017
+#, fuzzy
 msgid ""
 "A DVD-RW in restricted overwrite format does not need to be blanked before a "
 "new initial session.  Instead, overwrite the disc with `-Z`.  It is also "
 "possible to grow an existing ISO 9660 file system written on the disc with `-"
 "M`.  The result will be a one-session DVD."
-msgstr ""
+msgstr "受限覆写格式的 DVD-RW 无需在开始新的初始会话前擦除。只需使用 `-Z` 覆写光盘即可。也可以使用 `-M` 扩展光盘上已有的 ISO 9660 文件系统。最终将得到一张单会话 DVD。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1019
+#, fuzzy
 msgid ""
 "To put a DVD-RW in restricted overwrite format, the following command must "
 "be used:"
-msgstr ""
+msgstr "要将 DVD-RW 设置为受限覆写格式，必须使用以下命令："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1026
@@ -2065,19 +2177,21 @@ msgstr "多阶段刻录（Multi-Session）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1037
+#, fuzzy
 msgid ""
 "Few DVD-ROM drives support multi-session DVDs and most of the time only read "
 "the first session.  DVD+R, DVD-R and DVD-RW in sequential format can accept "
 "multiple sessions.  The notion of multiple sessions does not exist for the "
 "DVD+RW and the DVD-RW restricted overwrite formats."
-msgstr ""
+msgstr "只有少数 DVD-ROM 驱动器支持多会话 DVD，而且大多数情况下只能读取第一个会话。DVD+R、DVD-R 和顺序格式的 DVD-RW 都支持多个会话。DVD+RW 和受限覆写格式的 DVD-RW 不存在多会话的概念。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1039
+#, fuzzy
 msgid ""
 "Using the following command after an initial non-closed session on a DVD+R, "
 "DVD-R, or DVD-RW in sequential format, will add a new session to the disc:"
-msgstr ""
+msgstr "在 DVD+R、DVD-R 或顺序格式的 DVD-RW 上完成一个未关闭的初始会话后，使用以下命令可向光盘添加一个新会话："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1048
@@ -2118,31 +2232,34 @@ msgstr "取得更多资讯"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1058
+#, fuzzy
 msgid ""
 "To obtain more information about a DVD, use `dvd+rw-mediainfo _/dev/cd0_` "
 "while the disc in the specified drive."
-msgstr ""
+msgstr "要获取有关 DVD 的更多信息，请在光盘位于指定驱动器中时运行 `dvd+rw-mediainfo _/dev/cd0_`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1060
+#, fuzzy
 msgid ""
 "More information about dvd+rw-tools can be found in man:growisofs[1], on the "
 "http://fy.chalmers.se/~appro/linux/DVD+RW/[dvd+rw-tools web site], and in "
 "the http://lists.debian.org/cdwrite/[cdwrite mailing list] archives."
-msgstr ""
+msgstr "有关 dvd+rw-tools 的更多信息，请参阅 man:growisofs[1]、 link:http://fy.chalmers.se/~appro/linux/DVD+RW/[dvd+rw-tools 网站]，以及 link:http://lists.debian.org/cdwrite/[cdwrite 邮件列表]存档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1064
+#, fuzzy
 msgid ""
 "When creating a problem report related to the use of dvd+rw-tools, always "
 "include the output of `dvd+rw-mediainfo`."
-msgstr ""
+msgstr "提交与使用 dvd+rw-tools 有关的问题报告时，请务必附上 `dvd+rw-mediainfo` 的输出。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1067
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using a DVD-RAM"
-msgstr ""
+msgstr "使用 DVD-RAM"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1071
@@ -2169,37 +2286,40 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1086
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dd if=/dev/zero of=/dev/acd0 bs=2k count=1\n"
 "# bsdlabel -Bw acd0\n"
 "# newfs /dev/acd0\n"
-msgstr ""
+msgstr "# dd if=/dev/zero of=/dev/acd0 bs=2k count=1\n# bsdlabel -Bw acd0\n# newfs /dev/acd0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1089
+#, fuzzy
 msgid ""
 "The DVD device, [.filename]#acd0#, must be changed according to the "
 "configuration."
-msgstr ""
+msgstr "DVD 设备 [.filename]#acd0# 必须根据实际配置进行更改。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1091
+#, fuzzy
 msgid ""
 "Once the DVD-RAM has been formatted, it can be mounted as a normal hard "
 "drive:"
-msgstr ""
+msgstr "DVD-RAM 格式化后，可以像普通硬盘一样挂载："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1095
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /dev/acd0 /mnt\n"
-msgstr ""
+msgstr "# mount /dev/acd0 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1098
+#, fuzzy
 msgid "Once mounted, the DVD-RAM will be both readable and writeable."
-msgstr ""
+msgstr "挂载后，DVD-RAM 即可读写。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:1100
@@ -2214,18 +2334,20 @@ msgstr "本章介绍如何在 FreeBSD 中格式化 3.5 寸软盘。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1107
+#, fuzzy
 msgid "*Procedure: Steps to Format a Floppy*"
-msgstr ""
+msgstr "*操作步骤：软盘格式化步骤*"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1112
+#, fuzzy
 msgid ""
 "A floppy disk needs to be low-level formatted before it can be used.  This "
 "is usually done by the vendor, but formatting is a good way to check media "
 "integrity.  To low-level format the floppy disk on FreeBSD, use man:"
 "fdformat[8].  When using this utility, make note of any error messages, as "
 "these can help determine if the disk is good or bad."
-msgstr ""
+msgstr "软盘在使用前需要进行低级格式化。通常由供应商完成此操作，但格式化也是检查介质完整性的好方法。要在 FreeBSD 上对软盘进行低级格式化，请使用 man:fdformat[8]。使用此工具时，请留意任何错误消息，因为这些消息有助于判断磁盘是否完好。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1114
@@ -2237,9 +2359,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /usr/sbin/fdformat -f 1440 /dev/fd0\n"
-msgstr ""
+msgstr "# /usr/sbin/fdformat -f 1440 /dev/fd0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1121
@@ -2255,14 +2377,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1123
+#, fuzzy
 msgid "To write the disk label, use man:bsdlabel[8]:"
-msgstr ""
+msgstr "要写入磁盘标签，请使用 man:bsdlabel[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /sbin/bsdlabel -B -w /dev/fd0 fd1440\n"
-msgstr ""
+msgstr "# /sbin/bsdlabel -B -w /dev/fd0 fd1440\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1130
@@ -2281,17 +2404,18 @@ msgstr "使用以下命令将软盘格式化成FAT格式："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /sbin/newfs_msdos /dev/fd0\n"
-msgstr ""
+msgstr "# /sbin/newfs_msdos /dev/fd0\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1142
+#, fuzzy
 msgid ""
 "The disk is now ready for use.  To use the floppy, mount it with man:"
 "mount_msdosfs[8].  One can also install and use package:emulators/mtools[] "
 "from the Ports Collection."
-msgstr ""
+msgstr "现在磁盘已可使用。要使用软盘，请通过 man:mount_msdosfs[8] 挂载。也可以从 Ports Collection 安装并使用 package:emulators/mtools[]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:1144
@@ -2353,10 +2477,11 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1155
+#, fuzzy
 msgid ""
 "Hardware or software RAID, which minimizes or avoids downtime when a disk "
 "fails."
-msgstr ""
+msgstr "硬件或软件 RAID，可在磁盘故障时最大限度地减少或避免停机。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1159
@@ -2393,6 +2518,7 @@ msgstr "文件系统备份"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1168
+#, fuzzy
 msgid ""
 "The traditional UNIX(R) programs for backing up a file system are man:"
 "dump[8], which creates the backup, and man:restore[8], which restores the "
@@ -2403,7 +2529,7 @@ msgid ""
 "tree that spans multiple file systems.  Instead of writing files and "
 "directories, `dump` writes the raw data blocks that comprise files and "
 "directories."
-msgstr ""
+msgstr "传统的 UNIX(R) 文件系统备份程序是 man:dump[8]（用于创建备份）和 man:restore[8]（用于恢复备份）。这些工具在磁盘块级别运行，位于文件系统所创建的文件、链接和目录抽象层之下。与其他备份软件不同，`dump` 会备份整个文件系统，无法只备份文件系统的一部分，也无法备份跨越多个文件系统的目录树。`dump` 不会写入文件和目录，而是写入构成文件和目录的原始数据块。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1172
@@ -2420,80 +2546,86 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1176
+#, fuzzy
 msgid ""
 "When used to restore data, `restore` stores temporary files in [.filename]#/"
 "tmp/# by default.  When using a recovery disk with a small [.filename]#/"
 "tmp#, set `TMPDIR` to a directory with more free space for the restore to "
 "succeed."
-msgstr ""
+msgstr "使用 `restore` 恢复数据时，默认会将临时文件存放在 [.filename]#/tmp/# 中。如果使用的恢复盘上的 [.filename]#/tmp# 空间较小，请将 `TMPDIR` 设置为有更多可用空间的目录，以确保恢复成功。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1180
+#, fuzzy
 msgid ""
 "When using `dump`, be aware that some quirks remain from its early days in "
 "Version 6 of AT&T UNIX(R),circa 1975.  The default parameters assume a "
 "backup to a 9-track tape, rather than to another type of media or to the "
 "high-density tapes available today.  These defaults must be overridden on "
 "the command line."
-msgstr ""
+msgstr "使用 `dump` 时请注意，它仍保留着一些源自 1975 年左右 AT&T UNIX(R) 第 6 版早期设计的特性。默认参数假设备份目标是 9 轨磁带，而不是其他类型的介质或如今可用的高密度磁带。必须在命令行中覆盖这些默认值。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1183
+#, fuzzy
 msgid ""
 "It is possible to backup a file system across the network to another system "
 "or a tape drive attached to another computer.  While the man:rdump[8] and "
 "man:rrestore[8] utilities can be used for this purpose, they are not "
 "considered to be secure."
-msgstr ""
+msgstr "可以通过网络将文件系统备份到另一台系统，或备份到连接在另一台计算机上的磁带驱动器。虽然可以使用 man:rdump[8] 和 man:rrestore[8] 完成此操作，但它们并不安全。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1186
+#, fuzzy
 msgid ""
 "Instead, one can use `dump` and `restore` more securely over an SSH "
 "connection.  This example creates a full, compressed backup of [.filename]#/"
 "usr# and sends the backup file to the specified host over an SSH connection."
-msgstr ""
+msgstr "作为替代，可以通过 SSH 连接更安全地使用 `dump` 和 `restore`。此示例将 [.filename]#/usr# 完整压缩备份，并通过 SSH 连接将备份文件发送到指定主机。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `dump` over ssh"
-msgstr ""
+msgstr "通过 ssh 使用 `dump`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# /sbin/dump -0uan -f - /usr | gzip -2 | ssh -c blowfish \\\n"
 "          targetuser@targetmachine.example.com dd of=/mybigfiles/dump-usr-l0.gz\n"
-msgstr ""
+msgstr "# /sbin/dump -0uan -f - /usr | gzip -2 | ssh -c blowfish \\\n          targetuser@targetmachine.example.com dd of=/mybigfiles/dump-usr-l0.gz\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1198
+#, fuzzy
 msgid ""
 "This example sets `RSH` in order to write the backup to a tape drive on a "
 "remote system over an SSH connection:"
-msgstr ""
+msgstr "此示例设置 `RSH`，以便通过 SSH 连接将备份写入远程系统上的磁带驱动器："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `dump` over ssh with `RSH` Set"
-msgstr ""
+msgstr "设置 `RSH` 后通过 ssh 使用 `dump`"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# env RSH=/usr/bin/ssh /sbin/dump -0uan -f targetuser@targetmachine.example.com:/dev/sa0 /usr\n"
-msgstr ""
+msgstr "# env RSH=/usr/bin/ssh /sbin/dump -0uan -f targetuser@targetmachine.example.com:/dev/sa0 /usr\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1211
+#, fuzzy
 msgid ""
 "Systems using the crossref:zfs[,Z file system (ZFS)] can make use of man:"
 "zfs[8] for creating snapshots, as well as crossref:zfs[zfs-zfs-send,sending "
 "and receiving] them to/from remote systems."
-msgstr ""
+msgstr "使用 crossref:zfs[,Z 文件系统（ZFS）]的系统可以使用 man:zfs[8] 创建快照，也可以将快照发送到远程系统或从远程系统接收快照（crossref:zfs[zfs-zfs-send,发送和接收]）。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1213
@@ -2510,12 +2642,13 @@ msgstr "有很多备份软件可用于备份文件和目录。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1220
+#, fuzzy
 msgid ""
 "A good choice for making a backup of all of the files in a directory is man:"
 "tar[1].  This utility dates back to Version 6 of AT&T UNIX(R) and by default "
 "assumes a recursive backup to a local tape device.  Switches can be used to "
 "instead specify the name of a backup file."
-msgstr ""
+msgstr "要备份目录中的所有文件，man:tar[1] 是不错的选择。此工具可追溯至 AT&T UNIX(R) 第 6 版，默认会递归备份到本地磁带设备。可以使用选项指定备份文件的名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1223
@@ -2532,15 +2665,15 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Backing Up the Current Directory with `tar`"
-msgstr ""
+msgstr "使用 `tar` 备份当前目录"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tar czvf /tmp/mybackup.tgz .\n"
-msgstr ""
+msgstr "# tar czvf /tmp/mybackup.tgz .\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1236
@@ -2558,80 +2691,85 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Restoring Up the Current Directory with `tar`"
-msgstr ""
+msgstr "使用 `tar` 恢复当前目录"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tar xzvf /tmp/mybackup.tgz\n"
-msgstr ""
+msgstr "# tar xzvf /tmp/mybackup.tgz\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1248
+#, fuzzy
 msgid ""
 "There are dozens of available switches which are described in man:tar[1].  "
 "This utility also supports the use of exclude patterns to specify which "
 "files should not be included when backing up the specified directory or "
 "restoring files from a backup."
-msgstr ""
+msgstr "man:tar[1] 中介绍了数十种可用选项。此工具还支持使用排除模式，指定备份目录或从备份恢复文件时不应包含哪些文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1251
+#, fuzzy
 msgid ""
 "To create a backup using a specified list of files and directories, man:"
 "cpio[1] is a good choice.  Unlike `tar`, `cpio` does not know how to walk "
 "the directory tree and it must be provided the list of files to backup."
-msgstr ""
+msgstr "要使用指定的文件和目录列表创建备份，man:cpio[1] 是不错的选择。与 `tar` 不同，`cpio` 不会遍历目录树，因此必须提供要备份的文件列表。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1254
+#, fuzzy
 msgid ""
 "For example, a list of files can be created using `ls` or `find`.  This "
 "example creates a recursive listing of the current directory which is then "
 "piped to `cpio` in order to create an output backup file named [.filename]#/"
 "tmp/mybackup.cpio#."
-msgstr ""
+msgstr "例如，可以使用 `ls` 或 `find` 创建文件列表。此示例递归列出当前目录的内容，然后将列表通过管道传给 `cpio`，以创建名为 [.filename]#/tmp/mybackup.cpio# 的备份文件。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `ls` and `cpio` to Make a Recursive Backup of the Current Directory"
-msgstr ""
+msgstr "使用 `ls` 和 `cpio` 递归备份当前目录"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ls -R | cpio -ovF /tmp/mybackup.cpio\n"
-msgstr ""
+msgstr "# ls -R | cpio -ovF /tmp/mybackup.cpio\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1267
+#, fuzzy
 msgid ""
 "A backup utility which tries to bridge the features provided by `tar` and "
 "`cpio` is man:pax[1].  Over the years, the various versions of `tar` and "
 "`cpio` became slightly incompatible.  POSIX(R) created `pax` which attempts "
 "to read and write many of the various `cpio` and `tar` formats, plus new "
 "formats of its own."
-msgstr ""
+msgstr "man:pax[1] 是一种备份工具，旨在整合 `tar` 和 `cpio` 的功能。多年来，`tar` 和 `cpio` 的不同版本逐渐出现了一些不兼容之处。POSIX(R) 创建了 `pax`，使其能够读写多种 `cpio` 和 `tar` 格式，以及自身的新格式。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1269
+#, fuzzy
 msgid "The `pax` equivalent to the previous examples would be:"
-msgstr ""
+msgstr "前面示例对应的 `pax` 命令如下："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1270
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Backing Up the Current Directory with `pax`"
-msgstr ""
+msgstr "使用 `pax` 备份当前目录"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1276
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pax -wf /tmp/mybackup.pax .\n"
-msgstr ""
+msgstr "# pax -wf /tmp/mybackup.pax .\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1280
@@ -2641,15 +2779,17 @@ msgstr "使用磁带备份数据"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1285
+#, fuzzy
 msgid ""
 "While tape technology has continued to evolve, modern backup systems tend to "
 "combine off-site backups with local removable media.  FreeBSD supports any "
 "tape drive that uses SCSI, such as LTO or DAT.  There is limited support for "
 "SATA and USB tape drives."
-msgstr ""
+msgstr "磁带技术不断发展，现代备份系统通常结合异地备份与本地可移动介质。FreeBSD 支持所有使用 SCSI 的磁带驱动器，例如 LTO 或 DAT。对 SATA 和 USB 磁带驱动器的支持有限。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1289
+#, fuzzy
 msgid ""
 "For SCSI tape devices, FreeBSD uses the man:sa[4] driver and the [."
 "filename]#/dev/sa0#, [.filename]#/dev/nsa0#, and [.filename]#/dev/esa0# "
@@ -2658,7 +2798,7 @@ msgid ""
 "tape after writing a file, which allows writing more than one file to a "
 "tape.  Using [.filename]#/dev/esa0# ejects the tape after the device is "
 "closed."
-msgstr ""
+msgstr "对于 SCSI 磁带设备，FreeBSD 使用 man:sa[4] 驱动程序以及 [.filename]#/dev/sa0#、[.filename]#/dev/nsa0# 和 [.filename]#/dev/esa0# 设备。物理设备名称为 [.filename]#/dev/sa0#。使用 [.filename]#/dev/nsa0# 时，备份应用程序在写入文件后不会倒带，因此可以向磁带写入多个文件。使用 [.filename]#/dev/esa0# 时，设备关闭后会弹出磁带。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1292
@@ -2675,65 +2815,70 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mt -f /dev/nsa0 fsf 3\n"
-msgstr ""
+msgstr "# mt -f /dev/nsa0 fsf 3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1299
+#, fuzzy
 msgid "This utility supports many operations. Refer to man:mt[1] for details."
-msgstr ""
+msgstr "此工具支持多种操作。详情请参阅 man:mt[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1301
+#, fuzzy
 msgid ""
 "To write a single file to tape using `tar`, specify the name of the tape "
 "device and the file to backup:"
-msgstr ""
+msgstr "要使用 `tar` 将单个文件写入磁带，请指定磁带设备名称和要备份的文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tar cvf /dev/sa0 file\n"
-msgstr ""
+msgstr "# tar cvf /dev/sa0 file\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1308
+#, fuzzy
 msgid ""
 "To recover files from a `tar` archive on tape into the current directory:"
-msgstr ""
+msgstr "要将磁带上的 `tar` 归档文件恢复到当前目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1312
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tar xvf /dev/sa0\n"
-msgstr ""
+msgstr "# tar xvf /dev/sa0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1316
+#, fuzzy
 msgid ""
 "To backup a UFS file system, use `dump`.  This examples backs up [."
 "filename]#/usr# without rewinding the tape when finished:"
-msgstr ""
+msgstr "要备份 UFS 文件系统，请使用 `dump`。以下示例备份 [.filename]#/usr#，完成后不倒带："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dump -0aL -b64 -f /dev/nsa0 /usr\n"
-msgstr ""
+msgstr "# dump -0aL -b64 -f /dev/nsa0 /usr\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1323
+#, fuzzy
 msgid ""
 "To interactively restore files from a `dump` file on tape into the current "
 "directory:"
-msgstr ""
+msgstr "要以交互方式将磁带上 `dump` 文件中的文件恢复到当前目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1327
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# restore -i -f /dev/nsa0\n"
-msgstr ""
+msgstr "# restore -i -f /dev/nsa0\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1330
@@ -2763,42 +2908,49 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1336
+#, fuzzy
 msgid "Popular utilities include:"
-msgstr ""
+msgstr "常用工具包括："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1338
+#, fuzzy
 msgid "Amanda (package:misc/amanda-server[] and package:misc/amanda-client[]),"
-msgstr ""
+msgstr "Amanda（package:misc/amanda-server[] 和 package:misc/amanda-client[]），"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1339
+#, fuzzy
 msgid ""
 "Bacula (package:sysutils/bacula13-server[] and package:sysutils/bacula13-"
 "client[]),"
-msgstr ""
+msgstr "Bacula（package:sysutils/bacula13-server[] 和 package:sysutils/bacula13-client[]），"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1340
+#, fuzzy
 msgid ""
 "Bareos (package:sysutils/bareos-server[] and package:sysutils/bareos-"
 "client[]),"
-msgstr ""
+msgstr "Bareos（package:sysutils/bareos-server[] 和 package:sysutils/bareos-client[]），"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1341
+#, fuzzy
 msgid "package:net/rsync[],"
-msgstr ""
+msgstr "package:net/rsync[]，"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1342
+#, fuzzy
 msgid "package:sysutils/duply[], and"
-msgstr ""
+msgstr "package:sysutils/duply[]，以及"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1343
+#, fuzzy
 msgid "package:sysutils/duplicity[]."
-msgstr ""
+msgstr "package:sysutils/duplicity[]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1344
@@ -2820,23 +2972,27 @@ msgstr "替以下指令的输出建立一份可打印的复本："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1351
+#, fuzzy
 msgid "`gpart show`"
-msgstr ""
+msgstr "`gpart show`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1352
+#, fuzzy
 msgid "`more /etc/fstab`"
-msgstr ""
+msgstr "`more /etc/fstab`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1353
+#, fuzzy
 msgid "`pkg prime-list`"
-msgstr ""
+msgstr "`pkg prime-list`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1354
+#, fuzzy
 msgid "`dmesg`"
-msgstr ""
+msgstr "`dmesg`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1358
@@ -2888,20 +3044,22 @@ msgstr "以内存为介质的文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1371
+#, fuzzy
 msgid ""
 "In addition to physical disks, FreeBSD also supports the creation and use of "
 "memory disks.  One possible use for a memory disk is to access the contents "
 "of an ISO file system without the overhead of first burning it to a CD or "
 "DVD, then mounting the CD/DVD media."
-msgstr ""
+msgstr "除了物理磁盘外，FreeBSD 还支持创建和使用内存磁盘。内存磁盘的一种用途是在不必先将 ISO 文件系统刻录到 CD 或 DVD、再挂载 CD/DVD 介质的情况下访问其内容，从而避免相关开销。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1375
+#, fuzzy
 msgid ""
 "In FreeBSD, the man:md[4] driver is used to provide support for memory "
 "disks.  The [.filename]#GENERIC# kernel includes this driver.  When using a "
 "custom kernel configuration file, ensure it includes this line:"
-msgstr ""
+msgstr "在 FreeBSD 中，man:md[4] 驱动程序用于提供内存磁盘支持。[.filename]#GENERIC# 内核包含此驱动程序。使用自定义内核配置文件时，请确保其中包含以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1379
@@ -2917,6 +3075,7 @@ msgstr "连接与解除连接既有的映象档"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1388
+#, fuzzy
 msgid ""
 "To mount an existing file system image, use `mdconfig` to specify the name "
 "of the ISO file and a free unit number.  Then, refer to that unit number to "
@@ -2924,25 +3083,26 @@ msgid ""
 "will appear in the mount point.  This example attaches _diskimage.iso_ to "
 "the memory device [.filename]#/dev/md0# then mounts that memory device on [."
 "filename]#/mnt#:"
-msgstr ""
+msgstr "要挂载现有文件系统映像，请使用 `mdconfig` 指定 ISO 文件名称和一个空闲单元编号，然后使用该单元编号将其挂载到现有挂载点。挂载后，ISO 中的文件会显示在该挂载点中。此示例将 _diskimage.iso_ 关联到内存设备 [.filename]#/dev/md0#，然后将该内存设备挂载到 [.filename]#/mnt#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mdconfig -f diskimage.iso -u 0\n"
 "# mount -t cd9660 /dev/md0 /mnt\n"
-msgstr ""
+msgstr "# mdconfig -f diskimage.iso -u 0\n# mount -t cd9660 /dev/md0 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1398
+#, fuzzy
 msgid ""
 "Notice that `-t cd9660` was used to mount an ISO format.  If a unit number "
 "is not specified with `-u`, `mdconfig` will automatically allocate an unused "
 "memory device and output the name of the allocated unit, such as [."
 "filename]#md4#.  Refer to man:mdconfig[8] for more details about this "
 "command and its options."
-msgstr ""
+msgstr "请注意，挂载 ISO 格式时使用了 `-t cd9660`。如果未使用 `-u` 指定单元编号，`mdconfig` 会自动分配一个未使用的内存设备，并输出所分配单元的名称，例如 [.filename]#md4#。有关此命令及其选项的更多详情，请参阅 man:mdconfig[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1402
@@ -2958,18 +3118,19 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1407
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# umount /mnt\n"
 "# mdconfig -d -u 0\n"
-msgstr ""
+msgstr "# umount /mnt\n# mdconfig -d -u 0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1410
+#, fuzzy
 msgid ""
 "To determine if any memory disks are still attached to the system, type "
 "`mdconfig -l`."
-msgstr ""
+msgstr "要确定系统上是否仍有已连接的内存磁盘，请输入 `mdconfig -l`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1412
@@ -2992,17 +3153,18 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1422
+#, fuzzy
 msgid ""
 "To create a new memory-backed file system, specify a type of `swap` and the "
 "size of the memory disk to create.  Then, format the memory disk with a file "
 "system and mount as usual.  This example creates a 5M memory disk on unit "
 "`1`.  That memory disk is then formatted with the UFS file system before it "
 "is mounted:"
-msgstr ""
+msgstr "要创建新的内存支持文件系统，请指定类型为 `swap`，并指定要创建的内存磁盘大小。然后，像往常一样使用文件系统格式化内存磁盘并挂载。本例在单元 `1` 上创建了一个 5M 的内存磁盘。随后使用 UFS 文件系统格式化该内存磁盘并将其挂载："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1436
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mdconfig -a -t swap -s 5m -u 1\n"
 "# newfs -U md1\n"
@@ -3015,7 +3177,7 @@ msgid ""
 "# df /mnt\n"
 "Filesystem 1K-blocks Used Avail Capacity  Mounted on\n"
 "/dev/md1        4718    4  4338     0%    /mnt\n"
-msgstr ""
+msgstr "# mdconfig -a -t swap -s 5m -u 1\n# newfs -U md1\n/dev/md1: 5.0MB (10240 sectors) block size 16384, fragment size 2048\n        using 4 cylinder groups of 1.27MB, 81 blks, 192 inodes.\n        with soft updates\nsuper-block backups (for fsck -b #) at:\n 160, 2752, 5344, 7936\n# mount /dev/md1 /mnt\n# df /mnt\nFilesystem 1K-blocks Used Avail Capacity  Mounted on\n/dev/md1        4718    4  4338     0%    /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1440
@@ -3029,24 +3191,25 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dd if=/dev/zero of=newimage bs=1k count=5k\n"
 "5120+0 records in\n"
 "5120+0 records out\n"
-msgstr ""
+msgstr "# dd if=/dev/zero of=newimage bs=1k count=5k\n5120+0 records in\n5120+0 records out\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1449
+#, fuzzy
 msgid ""
 "Next, attach that file to a memory disk, label the memory disk and format it "
 "with the UFS file system, mount the memory disk, and verify the size of the "
 "file-backed disk:"
-msgstr ""
+msgstr "接下来，将该文件连接到内存磁盘，为内存磁盘创建标签并使用 UFS 文件系统格式化，然后挂载内存磁盘，并确认基于文件的磁盘大小："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mdconfig -f newimage -u 0\n"
 "# bsdlabel -w md0 auto\n"
@@ -3059,10 +3222,11 @@ msgid ""
 "# df /mnt\n"
 "Filesystem 1K-blocks Used Avail Capacity  Mounted on\n"
 "/dev/md0a       4710    4  4330     0%    /mnt\n"
-msgstr ""
+msgstr "# mdconfig -f newimage -u 0\n# bsdlabel -w md0 auto\n# newfs -U md0a\n/dev/md0a: 5.0MB (10224 sectors) block size 16384, fragment size 2048\n        using 4 cylinder groups of 1.25MB, 80 blks, 192 inodes.\nsuper-block backups (for fsck -b #) at:\n 160, 2720, 5280, 7840\n# mount /dev/md0a /mnt\n# df /mnt\nFilesystem 1K-blocks Used Avail Capacity  Mounted on\n/dev/md0a       4710    4  4330     0%    /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1468
+#, fuzzy
 msgid ""
 "It takes several commands to create a file- or memory-backed file system "
 "using `mdconfig`.  FreeBSD also comes with `mdmfs` which automatically "
@@ -3070,13 +3234,13 @@ msgid ""
 "it.  For example, after creating _newimage_ with `dd`, this one command is "
 "equivalent to running the `bsdlabel`, `newfs`, and `mount` commands shown "
 "above:"
-msgstr ""
+msgstr "使用 `mdconfig` 创建基于文件或内存的文件系统需要运行多个命令。FreeBSD 还提供了 `mdmfs`，可自动配置内存磁盘、使用 UFS 文件系统格式化并挂载。例如，使用 `dd` 创建 __newimage__ 后，下面这条命令等同于运行上述 `bsdlabel`、`newfs` 和 `mount` 命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1472
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mdmfs -F newimage -s 5m md0 /mnt\n"
-msgstr ""
+msgstr "# mdmfs -F newimage -s 5m md0 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1475
@@ -3089,16 +3253,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1479
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mdmfs -s 5m md1 /mnt\n"
-msgstr ""
+msgstr "# mdmfs -s 5m md1 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1483
+#, fuzzy
 msgid ""
 "If the unit number is not specified, `mdmfs` will automatically select an "
 "unused memory device.  For more details about `mdmfs`, refer to man:mdmfs[8]."
-msgstr ""
+msgstr "如果未指定单元编号，`mdmfs` 将自动选择一个未使用的内存设备。有关 `mdmfs` 的更多详情，请参阅 man:mdmfs[8]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:1485
@@ -3108,22 +3273,25 @@ msgstr "文件系统快照"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1488
+#, fuzzy
 msgid ""
 "FreeBSD offers a feature in conjunction with soft updates: file system "
 "snapshots."
-msgstr ""
+msgstr "FreeBSD 提供了一项与软更新结合使用的功能：文件系统快照。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1491
+#, fuzzy
 msgid ""
 "UFS snapshots allow a user to create images of specified file systems, and "
 "treat them as a file.  When using the crossref:zfs[,Z file system (ZFS)], "
 "refer to crossref:zfs[zfs-zfs-snapshot,\"Managing Snapshots\"] on how to use "
 "snapshots."
-msgstr ""
+msgstr "UFS 快照允许用户创建指定文件系统的映像，并将其视为文件。使用 crossref:zfs[,Z 文件系统（ZFS）] 时，请参阅 crossref:zfs[zfs-zfs-snapshot,\"管理快照\"]，了解如何使用快照。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1496
+#, fuzzy
 msgid ""
 "Snapshot files must be created in the file system that the action is "
 "performed on, and a user may create no more than 20 snapshots per file "
@@ -3133,53 +3301,57 @@ msgid ""
 "While snapshots may be removed in any order, all the used space may not be "
 "acquired because another snapshot will possibly claim some of the released "
 "blocks."
-msgstr ""
+msgstr "快照文件必须创建在执行操作的文件系统中，每个文件系统最多可创建 20 个快照。活动快照会记录在超级块中，因此在卸载和重新挂载以及系统重启后仍会保留。不再需要快照时，可以使用 man:rm[1] 将其删除。虽然可以按任意顺序删除快照，但未必能收回所有已用空间，因为其他快照可能会占用部分已释放的块。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1499
+#, fuzzy
 msgid ""
 "The un-alterable `snapshot` file flag is set by man:mksnap_ffs[8] after "
 "initial creation of a snapshot file.  man:unlink[1] makes an exception for "
 "snapshot files since it allows them to be removed."
-msgstr ""
+msgstr "快照文件创建后，man:mksnap_ffs[8] 会设置不可更改的 `snapshot` 文件标志。man:unlink[1] 对快照文件作了例外处理，因此允许删除这些文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1502
+#, fuzzy
 msgid ""
 "Snapshots are created using man:mount[8].  To place a snapshot of [."
 "filename]#/var# in the file [.filename]#/var/snapshot/snap#, use the "
 "following command:"
-msgstr ""
+msgstr "使用 man:mount[8] 创建快照。要将 [.filename]#/var# 的快照保存到文件 [.filename]#/var/snapshot/snap#，请运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount -u -o snapshot /var/snapshot/snap /var\n"
-msgstr ""
+msgstr "# mount -u -o snapshot /var/snapshot/snap /var\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1509
+#, fuzzy
 msgid "Alternatively, use man:mksnap_ffs[8] to create the snapshot:"
-msgstr ""
+msgstr "也可以使用 man:mksnap_ffs[8] 创建快照："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1513
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mksnap_ffs /var /var/snapshot/snap\n"
-msgstr ""
+msgstr "# mksnap_ffs /var /var/snapshot/snap\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1516
+#, fuzzy
 msgid ""
 "One can find snapshot files on a file system, such as [.filename]#/var#, "
 "using man:find[1]:"
-msgstr ""
+msgstr "可以使用 man:find[1] 查找文件系统（例如 [.filename]#/var#）中的快照文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1520
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# find /var -flags snapshot\n"
-msgstr ""
+msgstr "# find /var -flags snapshot\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1523
@@ -3188,42 +3360,46 @@ msgstr "当快照文件被创建好后，可以用于下面一些目的："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1525
+#, fuzzy
 msgid ""
 "Some administrators will use a snapshot file for backup purposes, because "
 "the snapshot can be transferred to CDs or tape."
-msgstr ""
+msgstr "一些管理员会将快照文件用于备份，因为快照可以传输到 CD 或磁带上。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1526
+#, fuzzy
 msgid ""
 "The file system integrity checker, man:fsck[8], may be run on the snapshot. "
 "Assuming that the file system was clean when it was mounted, this should "
 "always provide a clean and unchanging result."
-msgstr ""
+msgstr "可以对快照运行文件系统完整性检查程序 man:fsck[8]。假设挂载时文件系统处于干净状态，此检查应始终得到干净且不变的结果。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1527
+#, fuzzy
 msgid ""
 "Running man:dump[8] on the snapshot will produce a dump file that is "
 "consistent with the file system and the timestamp of the snapshot. man:"
 "dump[8] can also take a snapshot, create a dump image, and then remove the "
 "snapshot in one command by using `-L`."
-msgstr ""
+msgstr "对快照运行 man:dump[8] 会生成与文件系统及快照时间戳一致的转储文件。使用 `-L` 时，man:dump[8] 还可以通过一条命令完成创建快照、生成转储映像并删除快照。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1528
+#, fuzzy
 msgid ""
 "The snapshot can be mounted as a frozen image of the file system. To man:"
 "mount[8] the snapshot [.filename]#/var/snapshot/snap# run:"
-msgstr ""
+msgstr "可以将快照挂载为文件系统的冻结映像。要使用 man:mount[8] 挂载快照 [.filename]#/var/snapshot/snap#，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mdconfig -a -t vnode -o readonly -f /var/snapshot/snap -u 4\n"
 "# mount -r /dev/md4 /mnt\n"
-msgstr ""
+msgstr "# mdconfig -a -t vnode -o readonly -f /var/snapshot/snap -u 4\n# mount -r /dev/md4 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1539
@@ -3241,19 +3417,20 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1544
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# umount /mnt\n"
 "# mdconfig -d -u 4\n"
-msgstr ""
+msgstr "# umount /mnt\n# mdconfig -d -u 4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1547
+#, fuzzy
 msgid ""
 "For more information about `softupdates` and file system snapshots, "
 "including technical papers, visit Marshall Kirk McKusick's website at http://"
 "www.mckusick.com/[http://www.mckusick.com/]."
-msgstr ""
+msgstr "有关 `softupdates` 和文件系统快照的更多信息（包括技术论文），请访问 Marshall Kirk McKusick 的网站 link:http://www.mckusick.com/[http://www.mckusick.com/]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:1549
@@ -3282,11 +3459,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1556
+#, fuzzy
 msgid ""
 "This section describes how to configure disk quotas for the UFS file "
 "system.  To configure quotas on the ZFS file system, refer to crossref:"
 "zfs[zfs-zfs-quota,\"Dataset, User, and Group Quotas\"]"
-msgstr ""
+msgstr "本节介绍如何为 UFS 文件系统配置磁盘配额。要为 ZFS 文件系统配置配额，请参阅 crossref:zfs[zfs-zfs-quota,\"数据集、用户和组配额\"]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1557
@@ -3301,20 +3479,21 @@ msgstr "查看 FreeBSD 内核是否支持磁盘配额："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% sysctl kern.features.ufs_quota\n"
 "kern.features.ufs_quota: 1\n"
-msgstr ""
+msgstr "% sysctl kern.features.ufs_quota\nkern.features.ufs_quota: 1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1569
+#, fuzzy
 msgid ""
 "In this example, the `1` indicates quota support.  If the value is instead "
 "`0`, add the following line to a custom kernel configuration file and "
 "rebuild the kernel using the instructions in crossref:"
 "kernelconfig[kernelconfig,Configuring the FreeBSD Kernel]:"
-msgstr ""
+msgstr "本例中，`1` 表示支持配额。如果值为 `0`，请将以下行添加到自定义内核配置文件中，并按照 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明重新构建内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1573
@@ -3324,8 +3503,9 @@ msgstr "options QUOTA\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1576
+#, fuzzy
 msgid "Next, enable disk quotas in [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "接下来，在 [.filename]#/etc/rc.conf# 中启用磁盘配额："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1580
@@ -3335,13 +3515,14 @@ msgstr "quota_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1586
+#, fuzzy
 msgid ""
 "Normally on bootup, the quota integrity of each file system is checked by "
 "man:quotacheck[8].  This program insures that the data in the quota database "
 "properly reflects the data on the file system.  This is a time consuming "
 "process that will significantly affect the time the system takes to boot.  "
 "To skip this step, add this variable to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "通常在启动时，man:quotacheck[8] 会检查每个文件系统的配额完整性。该程序会确保配额数据库中的数据正确反映文件系统上的数据。此过程耗时较长，会显著延长系统启动时间。要跳过此步骤，请将此变量添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1590
@@ -3387,12 +3568,13 @@ msgstr "/dev/da1s2g    /home    ufs rw,userquota,groupquota 1 2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1612
+#, fuzzy
 msgid ""
 "By default, quota files are stored in the root directory of the file system "
 "as [.filename]#quota.user# and [.filename]#quota.group#.  Refer to man:"
 "fstab[5] for more information.  Specifying an alternate location for the "
 "quota files is not recommended."
-msgstr ""
+msgstr "默认情况下，配额文件存储在文件系统的根目录中，名称为 [.filename]#quota.user# 和 [.filename]#quota.group#。更多信息请参阅 man:fstab[5]。不建议为配额文件指定其他位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1614
@@ -3407,11 +3589,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1617
+#, fuzzy
 msgid ""
 "In the normal course of operations, there should be no need to manually run "
 "man:quotacheck[8], man:quotaon[8], or man:quotaoff[8].  However, one should "
 "read these manual pages to be familiar with their operation."
-msgstr ""
+msgstr "正常情况下，无需手动运行 man:quotacheck[8]、man:quotaon[8] 或 man:quotaoff[8]。不过，应阅读这些手册页以熟悉它们的操作。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1618
@@ -3427,9 +3610,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1625
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# quota -v\n"
-msgstr ""
+msgstr "# quota -v\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1628
@@ -3442,8 +3625,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1630
+#, fuzzy
 msgid "The system is now ready to be assigned quota limits with `edquota`."
-msgstr ""
+msgstr "现在可以使用 `edquota` 设置配额限制。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1634
@@ -3508,15 +3692,16 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1647
+#, fuzzy
 msgid ""
 "In the following example, the quota for the `test` account is being edited.  "
 "When `edquota` is invoked, the editor specified by `EDITOR` is opened in "
 "order to edit the quota limits.  The default editor is set to vi."
-msgstr ""
+msgstr "以下示例正在编辑 `test` 帐户的配额。调用 `edquota` 时，会打开 `EDITOR` 指定的编辑器以编辑配额限制。默认编辑器为 vi。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1656
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# edquota -u test\n"
 "Quotas for user test:\n"
@@ -3524,7 +3709,7 @@ msgid ""
 "        inodes in use: 7, limits (soft = 50, hard = 60)\n"
 "/usr/var: kbytes in use: 0, limits (soft = 50, hard = 75)\n"
 "        inodes in use: 0, limits (soft = 50, hard = 60)\n"
-msgstr ""
+msgstr "# edquota -u test\nQuotas for user test:\n/usr: kbytes in use: 65, limits (soft = 50, hard = 75)\n        inodes in use: 7, limits (soft = 50, hard = 60)\n/usr/var: kbytes in use: 0, limits (soft = 50, hard = 75)\n        inodes in use: 0, limits (soft = 50, hard = 60)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1662
@@ -3553,24 +3738,26 @@ msgstr "当离开编辑器的时候，新的配额限制设置将会被保存。
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1674
+#, fuzzy
 msgid ""
 "Sometimes it is desirable to set quota limits on a range of users.  This can "
 "be done by first assigning the desired quota limit to a user.  Then, use `-"
 "p` to duplicate that quota to a specified range of user IDs (UIDs).  The "
 "following command will duplicate those quota limits for UIDs `10,000` "
 "through `19,999`:"
-msgstr ""
+msgstr "有时需要为一组用户设置配额限制。可以先为某个用户指定所需的配额限制，然后使用 `-p` 将该配额复制到指定范围的用户 ID（UID）。以下命令将这些配额限制复制给 UID `10,000` 到 `19,999`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1678
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# edquota -p test 10000-19999\n"
-msgstr ""
+msgstr "# edquota -p test 10000-19999\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1681
+#, fuzzy
 msgid "For more information, refer to man:edquota[8]."
-msgstr ""
+msgstr "更多信息请参阅 man:edquota[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1682
@@ -3580,23 +3767,25 @@ msgstr "检查配额限制和磁盘使用"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1688
+#, fuzzy
 msgid ""
 "To check individual user or group quotas and disk usage, use man:quota[1].  "
 "A user may only examine their own quota and the quota of a group they are a "
 "member of.  Only the superuser may view all user and group quotas.  To get a "
 "summary of all quotas and disk usage for file systems with quotas enabled, "
 "use man:repquota[8]."
-msgstr ""
+msgstr "要检查单个用户或组的配额和磁盘用量，请使用 man:quota[1]。用户只能查看自己的配额以及所属组的配额。只有超级用户可以查看所有用户和组的配额。要汇总启用了配额的文件系统上的所有配额和磁盘用量，请使用 man:repquota[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1692
+#, fuzzy
 msgid ""
 "Normally, file systems that the user is not using any disk space on will not "
 "show in the output of `quota`, even if the user has a quota limit assigned "
 "for that file system.  Use `-v` to display those file systems.  The "
 "following is sample output from `quota -v` for a user that has quota limits "
 "on two file systems."
-msgstr ""
+msgstr "通常，如果用户在某个文件系统上没有使用任何磁盘空间，即使该文件系统为其设置了配额限制，该文件系统也不会显示在 `quota` 的输出中。使用 `-v` 可显示这些文件系统。以下是对两个文件系统设置了配额限制的用户运行 `quota -v` 后的示例输出。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1699
@@ -3632,18 +3821,20 @@ msgstr "通过 NFS 使用磁盘配额"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1708
+#, fuzzy
 msgid ""
 "Quotas are enforced by the quota subsystem on the NFS server.  The man:rpc."
 "rquotad[8] daemon makes quota information available to `quota` on NFS "
 "clients, allowing users on those machines to see their quota statistics."
-msgstr ""
+msgstr "配额由 NFS 服务器上的配额子系统强制执行。man:rpc.rquotad[8] 守护进程会向 NFS 客户端上的 `quota` 提供配额信息，使这些计算机上的用户能够查看其配额统计信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1710
+#, fuzzy
 msgid ""
 "On the NFS server, enable `rpc.rquotad` by removing the `+#+` from this line "
 "in [.filename]*/etc/inetd.conf*:"
-msgstr ""
+msgstr "在 NFS 服务器上，删除 [.filename]*/etc/inetd.conf* 中这一行开头的 `+#+`，以启用 `rpc.rquotad`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1714
@@ -3653,14 +3844,15 @@ msgstr "rquotad/1      dgram rpc/udp wait root /usr/libexec/rpc.rquotad rpc.rquo
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1717
+#, fuzzy
 msgid "Then, restart `inetd`:"
-msgstr ""
+msgstr "然后重启 `inetd`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1721
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service inetd restart\n"
-msgstr ""
+msgstr "# service inetd restart\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:1724
@@ -3670,6 +3862,7 @@ msgstr "加密磁盘分区"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1729
+#, fuzzy
 msgid ""
 "FreeBSD offers excellent online protections against unauthorized data "
 "access.  File permissions and crossref:mac[mac,Mandatory Access Control] "
@@ -3678,7 +3871,7 @@ msgid ""
 "permissions enforced by the operating system are irrelevant if an attacker "
 "has physical access to a computer and can move the computer's hard drive to "
 "another system to copy and analyze the data."
-msgstr ""
+msgstr "FreeBSD 提供了出色的在线防护措施，防止未经授权的数据访问。文件权限和 crossref:mac[mac,强制访问控制]（MAC）有助于在操作系统运行且计算机已开机时，阻止未经授权的用户访问数据。但是，如果攻击者能物理接触计算机，并将硬盘移至另一台系统来复制和分析数据，那么操作系统强制实施的权限便毫无作用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1733
@@ -3712,17 +3905,19 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1740
+#, fuzzy
 msgid "GBDE disk-encryption is deprecated, and removed in FreeBSD 15.0."
-msgstr ""
+msgstr "GBDE 磁盘加密已弃用，并已从 FreeBSD 15.0 中移除。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1742
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disk Encryption with gbde"
-msgstr ""
+msgstr "使用 gbde 加密磁盘"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1747
+#, fuzzy
 msgid ""
 "The objective of the man:gbde[4] facility is to provide a formidable "
 "challenge for an attacker to gain access to the contents of a _cold_ storage "
@@ -3731,30 +3926,32 @@ msgid ""
 "valid passphrase, it offers no protection to the contents of the storage "
 "device.  Thus, it is important to provide physical security while the system "
 "is running and to protect the passphrase used by the encryption mechanism."
-msgstr ""
+msgstr "man:gbde[4] 的目标是让攻击者难以访问__冷__存储设备中的内容。但是，如果计算机在运行时遭到入侵，且存储设备已连接并处于活动状态，或者攻击者获得了有效的密码短语，那么它无法保护存储设备中的内容。因此，系统运行时必须做好物理安全防护，并妥善保护加密机制使用的密码短语。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1752
+#, fuzzy
 msgid ""
 "This facility provides several barriers to protect the data stored in each "
 "disk sector.  It encrypts the contents of a disk sector using 128-bit AES in "
 "CBC mode.  Each sector on the disk is encrypted with a different AES key.  "
 "For more information on the cryptographic design, including how the sector "
 "keys are derived from the user-supplied passphrase, refer to man:gbde[4]."
-msgstr ""
+msgstr "此功能通过多种机制保护存储在每个磁盘扇区中的数据。它使用 CBC 模式的 128 位 AES 加密磁盘扇区内容。磁盘上的每个扇区都使用不同的 AES 密钥加密。有关加密设计的更多信息，包括如何根据用户提供的密码短语派生扇区密钥，请参阅 man:gbde[4]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1754
+#, fuzzy
 msgid ""
 "FreeBSD provides a kernel module for gbde which can be loaded with this "
 "command:"
-msgstr ""
+msgstr "FreeBSD 提供了 gbde 内核模块，可使用以下命令加载："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1758
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload geom_bde\n"
-msgstr ""
+msgstr "# kldload geom_bde\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1761
@@ -3764,8 +3961,9 @@ msgstr "若使用自定义内核，请在您的内核配置中加入下面一行
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1763
+#, fuzzy
 msgid "`options GEOM_BDE`"
-msgstr ""
+msgstr "`options GEOM_BDE`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1765
@@ -3778,9 +3976,9 @@ msgstr "下面的例子将演示如何将加密分区挂载到<filename>/private
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1767
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Encrypting a Partition with gbde"
-msgstr ""
+msgstr "步骤：使用 gbde 加密分区"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/disks/_index.adoc:1769
@@ -3789,33 +3987,35 @@ msgstr "添加新的硬盘"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/disks/_index.adoc:1772
+#, fuzzy
 msgid ""
 "Install the new drive to the system as explained in crossref:disks[disks-"
 "adding, Adding Disks].  For the purposes of this example, a new hard drive "
 "partition has been added as [.filename]#/dev/ad4s1c# and [.filename]#/dev/"
 "ad0s1*# represents the existing standard FreeBSD partitions."
-msgstr ""
+msgstr "按照 crossref:disks[disks-adding, 添加磁盘] 中的说明，将新驱动器安装到系统中。在本例中，新增的硬盘分区为 [.filename]#/dev/ad4s1c#，而 [.filename]#/dev/ad0s1*# 表示现有的标准 FreeBSD 分区。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1779
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ls /dev/ad*\n"
 "/dev/ad0        /dev/ad0s1b     /dev/ad0s1e     /dev/ad4s1\n"
 "/dev/ad0s1      /dev/ad0s1c     /dev/ad0s1f     /dev/ad4s1c\n"
 "/dev/ad0s1a     /dev/ad0s1d     /dev/ad4\n"
-msgstr ""
+msgstr "# ls /dev/ad*\n/dev/ad0        /dev/ad0s1b     /dev/ad0s1e     /dev/ad4s1\n/dev/ad0s1      /dev/ad0s1c     /dev/ad0s1f     /dev/ad4s1c\n/dev/ad0s1a     /dev/ad0s1d     /dev/ad4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1782
+#, fuzzy
 msgid "Create a Directory to Hold `gbde` Lock Files"
-msgstr ""
+msgstr "创建用于存放 `gbde` 锁文件的目录"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkdir /etc/gbde\n"
-msgstr ""
+msgstr "# mkdir /etc/gbde\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1791
@@ -3834,21 +4034,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1792
+#, fuzzy
 msgid "Initialize the `gbde` Partition"
-msgstr ""
+msgstr "初始化 `gbde` 分区"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1797
+#, fuzzy
 msgid ""
 "A gbde partition must be initialized before it can be used.  This "
 "initialization needs to be performed only once.  This command will open the "
 "default editor, in order to set various configuration options in a "
 "template.  For use with the UFS file system, set the sector_size to 2048:"
-msgstr ""
+msgstr "使用前必须先初始化 gbde 分区。此初始化只需执行一次。该命令会打开默认编辑器，以便在模板中设置各种配置选项。若用于 UFS 文件系统，请将 sector_size 设为 2048："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1809
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gbde init /dev/ad4s1c -i -L /etc/gbde/ad4s1c.lock\n"
 "#\n"
@@ -3859,10 +4061,11 @@ msgid ""
 "#\n"
 "sector_size\t=\t2048\n"
 "[...]\n"
-msgstr ""
+msgstr "# gbde init /dev/ad4s1c -i -L /etc/gbde/ad4s1c.lock\n#\n# Sector size is the smallest unit of data which can be read or written.\n# Making it too small decreases performance and decreases available space.\n# Making it too large may prevent filesystems from working.  512 is the\n# minimum and always safe.  For UFS, use the fragment size\n#\nsector_size\t=\t2048\n[...]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1815
+#, fuzzy
 msgid ""
 "Once the edit is saved, the user will be asked twice to type the passphrase "
 "used to secure the data.  The passphrase must be the same both times.  The "
@@ -3870,24 +4073,26 @@ msgid ""
 "passphrase.  For tips on how to select a secure passphrase that is easy to "
 "remember, see http://world.std.com/\\~reinhold/diceware.html[http://world."
 "std.com/~reinhold/diceware.htm]."
-msgstr ""
+msgstr "保存编辑内容后，系统会要求用户输入两次用于保护数据的密码短语。两次输入必须相同。gbde 保护数据的能力完全取决于密码短语的强度。有关如何选择安全且易于记忆的密码短语的建议，请参阅 link:http://world.std.com/\\~reinhold/diceware.html[http://world.std.com/~reinhold/diceware.htm]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1819
+#, fuzzy
 msgid ""
 "This initialization creates a lock file for the gbde partition.  In this "
 "example, it is stored as [.filename]#/etc/gbde/ad4s1c.lock#.  Lock files "
 "must end in \".lock\" in order to be correctly detected by the [.filename]#/"
 "etc/rc.d/gbde# start up script."
-msgstr ""
+msgstr "初始化过程会为 gbde 分区创建一个锁文件。本例中，该文件存储为 [.filename]#/etc/gbde/ad4s1c.lock#。锁文件必须以“.lock”结尾，才能被 [.filename]#/etc/rc.d/gbde# 启动脚本正确识别。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1824
+#, fuzzy
 msgid ""
 "Lock files _must_ be backed up together with the contents of any encrypted "
 "partitions.  Without the lock file, the legitimate owner will be unable to "
 "access the data on the encrypted partition."
-msgstr ""
+msgstr "锁文件__必须__与任何加密分区的内容一同备份。没有锁文件，合法所有者将无法访问加密分区中的数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1827
@@ -3896,9 +4101,9 @@ msgstr "把加密分区和内核进行关联"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1831
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gbde attach /dev/ad4s1c -l /etc/gbde/ad4s1c.lock\n"
-msgstr ""
+msgstr "# gbde attach /dev/ad4s1c -l /etc/gbde/ad4s1c.lock\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1835
@@ -3915,13 +4120,13 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1842
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ls /dev/ad*\n"
 "/dev/ad0        /dev/ad0s1b     /dev/ad0s1e     /dev/ad4s1\n"
 "/dev/ad0s1      /dev/ad0s1c     /dev/ad0s1f     /dev/ad4s1c\n"
 "/dev/ad0s1a     /dev/ad0s1d     /dev/ad4        /dev/ad4s1c.bde\n"
-msgstr ""
+msgstr "# ls /dev/ad*\n/dev/ad0        /dev/ad0s1b     /dev/ad0s1e     /dev/ad4s1\n/dev/ad0s1      /dev/ad0s1c     /dev/ad0s1f     /dev/ad4s1c\n/dev/ad0s1a     /dev/ad0s1d     /dev/ad4        /dev/ad4s1c.bde\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1845
@@ -3930,18 +4135,19 @@ msgstr "在加密设备上创建文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1849
+#, fuzzy
 msgid ""
 "Once the encrypted device has been attached to the kernel, a file system can "
 "be created on the device.  This example creates a UFS file system with soft "
 "updates enabled.  Be sure to specify the partition which has a [.filename]#*."
 "bde# extension:"
-msgstr ""
+msgstr "将加密设备连接到内核后，就可以在该设备上创建文件系统。本例创建了一个启用软更新的 UFS 文件系统。请务必指定带有 [.filename]#*.bde# 扩展名的分区："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1853
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# newfs -U /dev/ad4s1c.bde\n"
-msgstr ""
+msgstr "# newfs -U /dev/ad4s1c.bde\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1856
@@ -3955,11 +4161,11 @@ msgstr "为加密文件系统创建一个挂载点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1863
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir /private\n"
 "# mount /dev/ad4s1c.bde /private\n"
-msgstr ""
+msgstr "# mkdir /private\n# mount /dev/ad4s1c.bde /private\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1866
@@ -3973,7 +4179,7 @@ msgstr "现在应该能查看和使用该加密文件系统了："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1879
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% df -H\n"
 "Filesystem        Size   Used  Avail Capacity  Mounted on\n"
@@ -3983,7 +4189,7 @@ msgid ""
 "/dev/ad0s1e      1037M   1.1M   953M     0%    /tmp\n"
 "/dev/ad0s1d       6.1G   1.9G   3.7G    35%    /usr\n"
 "/dev/ad4s1c.bde   150G   4.1K   138G     0%    /private\n"
-msgstr ""
+msgstr "% df -H\nFilesystem        Size   Used  Avail Capacity  Mounted on\n/dev/ad0s1a      1037M    72M   883M     8%    /\n/devfs            1.0K   1.0K     0B   100%    /dev\n/dev/ad0s1f       8.1G    55K   7.5G     0%    /home\n/dev/ad0s1e      1037M   1.1M   953M     0%    /tmp\n/dev/ad0s1d       6.1G   1.9G   3.7G    35%    /usr\n/dev/ad4s1c.bde   150G   4.1K   138G     0%    /private\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1883
@@ -4000,64 +4206,69 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1889
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "gbde_autoattach_all=\"YES\"\n"
 "gbde_devices=\"ad4s1c\"\n"
 "gbde_lockdir=\"/etc/gbde\"\n"
-msgstr ""
+msgstr "gbde_autoattach_all=\"YES\"\ngbde_devices=\"ad4s1c\"\ngbde_lockdir=\"/etc/gbde\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1894
+#, fuzzy
 msgid ""
 "This requires that the passphrase be entered at the console at boot time.  "
 "After typing the correct passphrase, the encrypted partition will be mounted "
 "automatically.  Additional gbde boot options are available and listed in man:"
 "rc.conf[5]."
-msgstr ""
+msgstr "这要求在启动时于控制台输入口令。输入正确的口令后，加密分区将自动挂载。其他 gbde 启动选项请参见 man:rc.conf[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1900
+#, fuzzy
 msgid ""
 "sysinstall is incompatible with gbde-encrypted devices.  All [.filename]#*."
 "bde# devices must be detached from the kernel before starting sysinstall or "
 "it will crash during its initial probing for devices.  To detach the "
 "encrypted device used in the example, use the following command:"
-msgstr ""
+msgstr "sysinstall 与 gbde 加密设备不兼容。启动 sysinstall 之前，必须从内核分离所有 [.filename]#*.bde# 设备，否则它会在最初探测设备时崩溃。要分离示例中使用的加密设备，请运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1904
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gbde detach /dev/ad4s1c\n"
-msgstr ""
+msgstr "# gbde detach /dev/ad4s1c\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:1908
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disk Encryption with `geli`"
-msgstr ""
+msgstr "使用 `geli` 加密磁盘"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1913
+#, fuzzy
 msgid ""
 "An alternative cryptographic GEOM class is available using `geli`.  This "
 "control utility adds some features and uses a different scheme for doing "
 "cryptographic work.  It provides the following features:"
-msgstr ""
+msgstr "`geli` 提供了另一种加密 GEOM 类。此控制工具增加了一些功能，并采用不同的加密处理方案。它提供以下功能："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1915
+#, fuzzy
 msgid ""
 "Utilizes the man:crypto[9] framework and automatically uses cryptographic "
 "hardware when it is available."
-msgstr ""
+msgstr "使用 man:crypto[9] 框架，并在可用时自动使用加密硬件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1916
+#, fuzzy
 msgid ""
 "Supports multiple cryptographic algorithms such as AES-XTS, AES-CBC, and "
 "Camellia-CBC."
-msgstr ""
+msgstr "支持多种加密算法，例如 AES-XTS、AES-CBC 和 Camellia-CBC。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1917
@@ -4098,8 +4309,9 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1923
+#, fuzzy
 msgid "More features and usage examples can be found in man:geli[8]."
-msgstr ""
+msgstr "更多功能和使用示例请参见 man:geli[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1929
@@ -4121,14 +4333,15 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/disks/_index.adoc:1931
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Procedure: Encrypting a Partition with `geli`"
-msgstr ""
+msgstr "操作步骤：使用 `geli` 加密分区"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/disks/_index.adoc:1933
+#, fuzzy
 msgid "Load `geli` Support"
-msgstr ""
+msgstr "加载 `geli` 支持"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/disks/_index.adoc:1935
@@ -4154,9 +4367,9 @@ msgstr "现在，加载内核模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1946
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload geom_eli\n"
-msgstr ""
+msgstr "# kldload geom_eli\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1949
@@ -4200,13 +4413,13 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1971
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dd if=/dev/random of=/root/da2.key bs=64 count=1\n"
 "# geli init -K /root/da2.key -s 4096 /dev/da2\n"
 "Enter new passphrase:\n"
 "Reenter new passphrase:\n"
-msgstr ""
+msgstr "# dd if=/dev/random of=/root/da2.key bs=64 count=1\n# geli init -K /root/da2.key -s 4096 /dev/da2\nEnter new passphrase:\nReenter new passphrase:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1974
@@ -4218,16 +4431,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1977
+#, fuzzy
 msgid ""
 "If the key file is given as \"-\", standard input will be used.  For "
 "example, this command generates three key files:"
-msgstr ""
+msgstr "如果密钥文件指定为 \"-\"，则使用标准输入。例如，以下命令会生成三个密钥文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1981
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cat keyfile1 keyfile2 keyfile3 | geli init -K - /dev/da2\n"
-msgstr ""
+msgstr "# cat keyfile1 keyfile2 keyfile3 | geli init -K - /dev/da2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1984
@@ -4243,24 +4457,25 @@ msgstr "若要访问 Provider，请指定密钥文件、磁盘名称和密码：
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1991
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# geli attach -k /root/da2.key /dev/da2\n"
 "Enter passphrase:\n"
-msgstr ""
+msgstr "# geli attach -k /root/da2.key /dev/da2\nEnter passphrase:\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:1994
+#, fuzzy
 msgid "This creates a new device with an [.filename]#.eli# extension:"
-msgstr ""
+msgstr "这会创建一个带有 [.filename]#.eli# 扩展名的新设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:1999
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ls /dev/da2*\n"
 "/dev/da2  /dev/da2.eli\n"
-msgstr ""
+msgstr "# ls /dev/da2*\n/dev/da2  /dev/da2.eli\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2002
@@ -4269,19 +4484,20 @@ msgstr "创建新的文件系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2004
+#, fuzzy
 msgid ""
 "Next, format the device with the UFS file system and mount it on an existing "
 "mount point:"
-msgstr ""
+msgstr "接下来，使用 UFS 文件系统格式化该设备，并将其挂载到现有挂载点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2010
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# dd if=/dev/random of=/dev/da2.eli bs=1m\n"
 "# newfs /dev/da2.eli\n"
 "# mount /dev/da2.eli /private\n"
-msgstr ""
+msgstr "# dd if=/dev/random of=/dev/da2.eli bs=1m\n# newfs /dev/da2.eli\n# mount /dev/da2.eli /private\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2013
@@ -4290,7 +4506,7 @@ msgstr "加密文件系统现在应该可以使用了："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2024
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# df -H\n"
 "Filesystem     Size   Used  Avail Capacity  Mounted on\n"
@@ -4300,7 +4516,7 @@ msgid ""
 "/dev/ad0s1d    989M   1.5M   909M     0%    /tmp\n"
 "/dev/ad0s1e    3.9G   1.3G   2.3G    35%    /var\n"
 "/dev/da2.eli   150G   4.1K   138G     0%    /private\n"
-msgstr ""
+msgstr "# df -H\nFilesystem     Size   Used  Avail Capacity  Mounted on\n/dev/ad0s1a    248M    89M   139M    38%    /\n/devfs         1.0K   1.0K     0B   100%    /dev\n/dev/ad0s1f    7.7G   2.3G   4.9G    32%    /usr\n/dev/ad0s1d    989M   1.5M   909M     0%    /tmp\n/dev/ad0s1e    3.9G   1.3G   2.3G    35%    /var\n/dev/da2.eli   150G   4.1K   138G     0%    /private\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2027
@@ -4317,30 +4533,32 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2032
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# umount /private\n"
 "# geli detach da2.eli\n"
-msgstr ""
+msgstr "# umount /private\n# geli detach da2.eli\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2035
+#, fuzzy
 msgid ""
 "An [.filename]#rc.d# script is provided to simplify the mounting of `geli`-"
 "encrypted devices at boot time. For this example, add these lines to [."
 "filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "系统提供了一个 [.filename]#rc.d# 脚本，用于简化启动时挂载 `geli` 加密设备的操作。对于此示例，将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2040
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "geli_devices=\"da2\"\n"
 "geli_da2_flags=\"-k /root/da2.key\"\n"
-msgstr ""
+msgstr "geli_devices=\"da2\"\ngeli_da2_flags=\"-k /root/da2.key\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2050
+#, fuzzy
 msgid ""
 "This configures [.filename]#/dev/da2# as a `geli` provider with a master key "
 "of [.filename]#/root/da2.key#.  The system will automatically detach the "
@@ -4353,7 +4571,7 @@ msgid ""
 "typically by an entry in [.filename]#/etc/fstab#.  Refer to crossref:"
 "basics[mount-unmount,“Mounting and Unmounting File Systems”] for "
 "instructions on how to configure a file system to mount at boot time."
-msgstr ""
+msgstr "这会将 [.filename]#/dev/da2# 配置为使用 [.filename]#/root/da2.key# 作为主密钥的 `geli` 提供者。系统关闭前会自动将该提供者从内核分离。启动过程中，脚本会在附加提供者之前提示输入口令。口令提示前后可能会显示其他内核消息。如果启动过程似乎停滞，请仔细查看其他消息中是否有口令提示。输入正确的口令后，提供者便会附加。随后挂载文件系统，通常通过 [.filename]#/etc/fstab# 中的条目完成。有关如何配置文件系统以便在启动时挂载的说明，请参见 crossref:basics[mount-unmount，“挂载和卸载文件系统”]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:2052
@@ -4389,11 +4607,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2062
+#, fuzzy
 msgid ""
 "This section demonstrates how to configure an encrypted swap partition using "
 "man:gbde[8] or man:geli[8] encryption.  It assumes that [.filename]#/dev/"
 "ada0s1b# is the swap partition."
-msgstr ""
+msgstr "本节演示如何使用 man:gbde[8] 或 man:geli[8] 加密来配置加密交换分区。假设交换分区为 [.filename]#/dev/ada0s1b#。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:2063
@@ -4418,16 +4637,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2071
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# dd if=/dev/random of=/dev/ada0s1b bs=1m\n"
-msgstr ""
+msgstr "# dd if=/dev/random of=/dev/ada0s1b bs=1m\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2074
+#, fuzzy
 msgid ""
 "To encrypt the swap partition using man:gbde[8], add the `.bde` suffix to "
 "the swap line in [.filename]#/etc/fstab#:"
-msgstr ""
+msgstr "要使用 man:gbde[8] 加密交换分区，请在 [.filename]#/etc/fstab# 中交换分区对应行的末尾添加 `.bde` 后缀："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2079
@@ -4441,23 +4661,25 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2082
+#, fuzzy
 msgid ""
 "To instead encrypt the swap partition using man:geli[8], initialize the "
 "device with a onetime key:"
-msgstr ""
+msgstr "若要改用 man:geli[8] 加密交换分区，请使用一次性密钥初始化设备："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2086
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# geom eli onetime -d /dev/ada0s1b\n"
-msgstr ""
+msgstr "# geom eli onetime -d /dev/ada0s1b\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2089
+#, fuzzy
 msgid ""
 "Afterwards, add a line for the device with the `.eli` suffix to [.filename]#/"
 "etc/fstab#:"
-msgstr ""
+msgstr "随后，在 [.filename]#/etc/fstab# 中添加该设备对应的行，并在设备名后加上 `.eli` 后缀："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2094
@@ -4471,12 +4693,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2099
+#, fuzzy
 msgid ""
 "By default, man:geli[8] uses the AES algorithm with a key length of 128 "
 "bits.  Normally the default settings will suffice.  If desired, these "
 "defaults can be altered in the options field in [.filename]#/etc/fstab#. The "
 "possible flags are:"
-msgstr ""
+msgstr "默认情况下，man:geli[8] 使用密钥长度为 128 位的 AES 算法。通常默认设置已足够。如有需要，可以在 [.filename]#/etc/fstab# 的选项字段中修改这些默认值。可用的标志如下："
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/disks/_index.adoc:2100
@@ -4486,11 +4709,12 @@ msgstr "aalgo"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2103
+#, fuzzy
 msgid ""
 "Data integrity verification algorithm used to ensure that the encrypted data "
 "has not been tampered with.  See man:geli[8] for a list of supported "
 "algorithms."
-msgstr ""
+msgstr "用于确保加密数据未被篡改的数据完整性验证算法。支持的算法列表请参见 man:geli[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/disks/_index.adoc:2104
@@ -4500,10 +4724,11 @@ msgstr "ealgo"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2107
+#, fuzzy
 msgid ""
 "Encryption algorithm used to protect the data.  See man:geli[8] for a list "
 "of supported algorithms."
-msgstr ""
+msgstr "用于保护数据的加密算法。支持的算法列表请参见 man:geli[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/disks/_index.adoc:2108
@@ -4513,10 +4738,11 @@ msgstr "keylen"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2111
+#, fuzzy
 msgid ""
 "The length of the key used for the encryption algorithm.  See man:geli[8] "
 "for the key lengths that are supported by each encryption algorithm."
-msgstr ""
+msgstr "加密算法所用密钥的长度。各加密算法支持的密钥长度请参见 man:geli[8]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/disks/_index.adoc:2112
@@ -4570,44 +4796,47 @@ msgstr "验证所作的配置能够发挥作用"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2128
+#, fuzzy
 msgid ""
 "Once the system has rebooted, proper operation of the encrypted swap can be "
 "verified using `swapinfo`."
-msgstr ""
+msgstr "系统重启后，可以使用 `swapinfo` 验证加密交换空间是否正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2130
+#, fuzzy
 msgid "If man:gbde[8] is being used:"
-msgstr ""
+msgstr "如果使用 man:gbde[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% swapinfo\n"
 "Device          1K-blocks     Used    Avail Capacity\n"
 "/dev/ada0s1b.bde   542720        0   542720     0\n"
-msgstr ""
+msgstr "% swapinfo\nDevice          1K-blocks     Used    Avail Capacity\n/dev/ada0s1b.bde   542720        0   542720     0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2139
+#, fuzzy
 msgid "If man:geli[8] is being used:"
-msgstr ""
+msgstr "如果使用 man:geli[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% swapinfo\n"
 "Device          1K-blocks     Used    Avail Capacity\n"
 "/dev/ada0s1b.eli   542720        0   542720     0\n"
-msgstr ""
+msgstr "% swapinfo\nDevice          1K-blocks     Used    Avail Capacity\n/dev/ada0s1b.eli   542720        0   542720     0\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/disks/_index.adoc:2148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Highly Available Storage (HAST)"
-msgstr ""
+msgstr "高可用存储（HAST）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2154
@@ -4634,13 +4863,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2156
+#, fuzzy
 msgid "The following are the main features of HAST:"
-msgstr ""
+msgstr "HAST 的主要功能如下："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2158
+#, fuzzy
 msgid "Can be used to mask I/O errors on local hard drives."
-msgstr ""
+msgstr "可用于屏蔽本地硬盘上的 I/O 错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2159
@@ -4663,25 +4894,29 @@ msgstr "可以在已经部署好的环境中添加冗余。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2162
+#, fuzzy
 msgid ""
 "Together with CARP, Heartbeat, or other tools, it can be used to build a "
 "robust and durable storage system."
-msgstr ""
+msgstr "配合 CARP、Heartbeat 或其他工具，可构建稳健且持久的存储系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2166
+#, fuzzy
 msgid "What HAST is, how it works, and which features it provides."
-msgstr ""
+msgstr "了解 HAST 是什么、如何工作以及提供哪些功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2167
+#, fuzzy
 msgid "How to set up and use HAST on FreeBSD."
-msgstr ""
+msgstr "了解如何在 FreeBSD 上设置和使用 HAST。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2168
+#, fuzzy
 msgid "How to integrate CARP and man:devd[8] to build a robust storage system."
-msgstr ""
+msgstr "了解如何集成 CARP 和 man:devd[8] 以构建稳健的存储系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2170
@@ -4692,32 +4927,36 @@ msgstr "在阅读这节之前， 您应了解："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2172
+#, fuzzy
 msgid ""
 "Understand UNIX(R) and FreeBSD basics (crossref:basics[basics,FreeBSD "
 "Basics])."
-msgstr ""
+msgstr "了解 UNIX(R) 和 FreeBSD 的基础知识（crossref:basics[basics,FreeBSD 基础知识]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2173
+#, fuzzy
 msgid ""
 "Know how to configure network interfaces and other core FreeBSD subsystems "
 "(crossref:config[config-tuning,Configuration and Tuning])."
-msgstr ""
+msgstr "了解如何配置网络接口和其他 FreeBSD 核心子系统（crossref:config[config-tuning,配置与调优]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2174
+#, fuzzy
 msgid ""
 "Have a good understanding of FreeBSD networking (crossref:partiv[network-"
 "communication,\"Network Communication\"])."
-msgstr ""
+msgstr "深入了解 FreeBSD 网络（crossref:partiv[network-communication,\"网络通信\"]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2176
+#, fuzzy
 msgid ""
 "The HAST project was sponsored by The FreeBSD Foundation with support from "
 "http://www.omc.net/[http://www.omc.net/] and http://www.transip.nl/[http://"
 "www.transip.nl/]."
-msgstr ""
+msgstr "HAST 项目由 The FreeBSD Foundation 资助，并得到 link:http://www.omc.net/[http://www.omc.net/] 和 link:http://www.transip.nl/[http://www.transip.nl/] 的支持。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:2177
@@ -4727,37 +4966,41 @@ msgstr "HAST 的运行机制"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2181
+#, fuzzy
 msgid ""
 "HAST provides synchronous block-level replication between two physical "
 "machines: the _primary_ node and the _secondary_ node.  These two machines "
 "together are referred to as a cluster."
-msgstr ""
+msgstr "HAST 在两台物理机器之间提供同步的块级复制：__主节点__和__辅助节点__。这两台机器合称为一个集群。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2185
+#, fuzzy
 msgid ""
 "Since HAST works in a primary-secondary configuration, it allows only one of "
 "the cluster nodes to be active at any given time.  The primary node, also "
 "called _active_, is the one which will handle all the I/O requests to HAST-"
 "managed devices.  The secondary node is automatically synchronized from the "
 "primary node."
-msgstr ""
+msgstr "由于 HAST 采用主从配置，因此集群中任意时刻只能有一个节点处于活动状态。主节点也称为__活动节点__，负责处理发往 HAST 管理设备的所有 I/O 请求。辅助节点会自动与主节点同步。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2187
+#, fuzzy
 msgid ""
 "The physical components of the HAST system are the local disk on primary "
 "node, and the disk on the remote, secondary node."
-msgstr ""
+msgstr "HAST 系统的物理组件包括主节点上的本地磁盘，以及远程辅助节点上的磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2191
+#, fuzzy
 msgid ""
 "HAST operates synchronously on a block level, making it transparent to file "
 "systems and applications.  HAST provides regular GEOM providers in [."
 "filename]#/dev/hast/# for use by other tools or applications.  There is no "
 "difference between using HAST-provided devices and raw disks or partitions."
-msgstr ""
+msgstr "HAST 在块级别同步运行，因此对文件系统和应用程序透明。HAST 在 [.filename]#/dev/hast/# 中提供常规 GEOM 提供者，供其他工具或应用程序使用。使用 HAST 提供的设备与使用原始磁盘或分区并无区别。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2195
@@ -4790,10 +5033,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2202
+#, fuzzy
 msgid ""
 "There are many ways to handle synchronization.  HAST implements several "
 "replication modes to handle different synchronization methods:"
-msgstr ""
+msgstr "同步处理有多种方式。HAST 实现了几种复制模式，以适应不同的同步方法："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2204
@@ -4814,11 +5058,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2205
+#, fuzzy
 msgid ""
 "_fullsync_: This mode reports a write operation as completed when both the "
 "local write and the remote write complete. This is the safest and the "
 "slowest replication mode."
-msgstr ""
+msgstr "__fullsync__：仅当本地写入和远程写入都完成时，此模式才会报告写入操作已完成。这是最安全、也是最慢的复制模式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2206
@@ -4841,36 +5086,41 @@ msgstr "HAST 的配置"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2210
+#, fuzzy
 msgid "The HAST framework consists of several components:"
-msgstr ""
+msgstr "HAST 框架由以下几个组件组成："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2212
+#, fuzzy
 msgid ""
 "The man:hastd[8] daemon which provides data synchronization. When this "
 "daemon is started, it will automatically load `geom_gate.ko`."
-msgstr ""
+msgstr "提供数据同步的 man:hastd[8] 守护进程。启动该守护进程时，它会自动加载 `geom_gate.ko`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2213
+#, fuzzy
 msgid "The userland management utility, man:hastctl[8]."
-msgstr ""
+msgstr "用户空间管理工具 man:hastctl[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2214
+#, fuzzy
 msgid ""
 "The man:hast.conf[5] configuration file. This file must exist before "
 "starting hastd."
-msgstr ""
+msgstr "man:hast.conf[5] 配置文件。启动 hastd 之前必须先创建此文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2216
+#, fuzzy
 msgid ""
 "Users who prefer to statically build `GEOM_GATE` support into the kernel "
 "should add this line to the custom kernel configuration file, then rebuild "
 "the kernel using the instructions in crossref:kernelconfig[kernelconfig,"
 "Configuring the FreeBSD Kernel]:"
-msgstr ""
+msgstr "希望在内核中静态构建 `GEOM_GATE` 支持的用户，应将以下行添加到自定义内核配置文件中，然后按照 crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 中的说明重新构建内核："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2220
@@ -4880,6 +5130,7 @@ msgstr "options\tGEOM_GATE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2226
+#, fuzzy
 msgid ""
 "The following example describes how to configure two nodes in primary-"
 "secondary operation using HAST to replicate the data between the two.  The "
@@ -4888,18 +5139,19 @@ msgid ""
 "dedicated hard drive [.filename]#/dev/ad6# of the same size for HAST "
 "operation.  The HAST pool, sometimes referred to as a resource or the GEOM "
 "provider in [.filename]#/dev/hast/#, will be called `test`."
-msgstr ""
+msgstr "以下示例说明如何配置两个节点，以主从模式运行 HAST，在两者之间复制数据。两个节点分别称为 `hasta`（IP 地址为 `172.16.0.1`）和 `hastb`（IP 地址为 `172.16.0.2`）。两个节点都将配备一块专用于 HAST、大小相同的硬盘 [.filename]#/dev/ad6#。HAST 池有时也称为资源，或称为 [.filename]#/dev/hast/# 中的 GEOM 提供者，其名称为 `test`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2230
+#, fuzzy
 msgid ""
 "Configuration of HAST is done using [.filename]#/etc/hast.conf#.  This file "
 "should be identical on both nodes.  The simplest configuration is:"
-msgstr ""
+msgstr "HAST 使用 [.filename]#/etc/hast.conf# 进行配置。两个节点上的该文件必须相同。最简单的配置如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2243
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "resource test {\n"
 "\ton hasta {\n"
@@ -4911,117 +5163,127 @@ msgid ""
 "\t\tremote 172.16.0.1\n"
 "\t}\n"
 "}\n"
-msgstr ""
+msgstr "resource test {\n\ton hasta {\n\t\tlocal /dev/ad6\n\t\tremote 172.16.0.2\n\t}\n\ton hastb {\n\t\tlocal /dev/ad6\n\t\tremote 172.16.0.1\n\t}\n}\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2246
+#, fuzzy
 msgid "For more advanced configuration, refer to man:hast.conf[5]."
-msgstr ""
+msgstr "有关更高级的配置，请参见 man:hast.conf[5]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2250
+#, fuzzy
 msgid ""
 "It is also possible to use host names in the `remote` statements if the "
 "hosts are resolvable and defined either in [.filename]#/etc/hosts# or in the "
 "local DNS."
-msgstr ""
+msgstr "如果主机名可解析，且已在 [.filename]#/etc/hosts# 或本地 DNS 中定义，也可以在 `remote` 语句中使用主机名。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2254
+#, fuzzy
 msgid ""
 "Once the configuration exists on both nodes, the HAST pool can be created.  "
 "Run these commands on both nodes to place the initial metadata onto the "
 "local disk and to start man:hastd[8]:"
-msgstr ""
+msgstr "两个节点上都配置好文件后，即可创建 HAST 池。在两个节点上运行以下命令，将初始元数据写入本地磁盘并启动 man:hastd[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# hastctl create test\n"
 "# service hastd onestart\n"
-msgstr ""
+msgstr "# hastctl create test\n# service hastd onestart\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2265
+#, fuzzy
 msgid ""
 "It is _not_ possible to use GEOM providers with an existing file system or "
 "to convert an existing storage to a HAST-managed pool.  This procedure needs "
 "to store some metadata on the provider and there will not be enough required "
 "space available on an existing provider."
-msgstr ""
+msgstr "__不能__将带有现有文件系统的 GEOM 提供者用于此操作，也不能将现有存储转换为 HAST 管理的池。此过程需要在提供者上存储一些元数据，而现有提供者没有足够的可用空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2269
+#, fuzzy
 msgid ""
 "A HAST node's `primary` or `secondary` role is selected by an administrator, "
 "or software like Heartbeat, using man:hastctl[8].  On the primary node, "
 "`hasta`, issue this command:"
-msgstr ""
+msgstr "HAST 节点的 `primary` 或 `secondary` 角色由管理员或 Heartbeat 等软件使用 man:hastctl[8] 选择。在主节点 `hasta` 上运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2273
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# hastctl role primary test\n"
-msgstr ""
+msgstr "# hastctl role primary test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2276
+#, fuzzy
 msgid "Run this command on the secondary node, `hastb`:"
-msgstr ""
+msgstr "在辅助节点 `hastb` 上运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# hastctl role secondary test\n"
-msgstr ""
+msgstr "# hastctl role secondary test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2283
+#, fuzzy
 msgid "Verify the result by running `hastctl` on each node:"
-msgstr ""
+msgstr "在每个节点上运行 `hastctl`，验证结果："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# hastctl status test\n"
-msgstr ""
+msgstr "# hastctl status test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2293
+#, fuzzy
 msgid ""
 "Check the `status` line in the output.  If it says `degraded`, something is "
 "wrong with the configuration file.  It should say `complete` on each node, "
 "meaning that the synchronization between the nodes has started.  The "
 "synchronization completes when `hastctl status` reports 0 bytes of `dirty` "
 "extents."
-msgstr ""
+msgstr "检查输出中的 `status` 行。如果显示 `degraded`，则配置文件存在问题。每个节点上都应显示 `complete`，这表示节点间的同步已开始。当 `hastctl status` 报告 `dirty` 范围为 0 字节时，同步即告完成。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2298
+#, fuzzy
 msgid ""
 "The next step is to create a file system on the GEOM provider and mount it.  "
 "This must be done on the `primary` node.  Creating the file system can take "
 "a few minutes, depending on the size of the hard drive.  This example "
 "creates a UFS file system on [.filename]#/dev/hast/test#:"
-msgstr ""
+msgstr "下一步是在 GEOM 提供者上创建文件系统并挂载。此操作必须在 `primary` 节点上完成。创建文件系统可能需要几分钟，具体取决于硬盘大小。此示例在 [.filename]#/dev/hast/test# 上创建 UFS 文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# newfs -U /dev/hast/test\n"
 "# mkdir /hast/test\n"
 "# mount /dev/hast/test /hast/test\n"
-msgstr ""
+msgstr "# newfs -U /dev/hast/test\n# mkdir /hast/test\n# mount /dev/hast/test /hast/test\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2308
+#, fuzzy
 msgid ""
 "Once the HAST framework is configured properly, the final step is to make "
 "sure that HAST is started automatically during system boot.  Add this line "
 "to [.filename]#/etc/rc.conf#:"
-msgstr ""
+msgstr "正确配置 HAST 框架后，最后一步是确保 HAST 在系统启动时自动启动。将以下行添加到 [.filename]#/etc/rc.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2312
@@ -5055,6 +5317,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2324
+#, fuzzy
 msgid ""
 "To accomplish this task, the Common Address Redundancy Protocol (CARP) is "
 "used to provide for automatic failover at the IP layer.  CARP allows "
@@ -5064,20 +5327,22 @@ msgid ""
 "(CARP)”].  In this example, each node will have its own management IP "
 "address and a shared IP address of _172.16.0.254_.  The primary HAST node of "
 "the cluster must be the primary CARP node."
-msgstr ""
+msgstr "为实现此任务，可使用通用地址冗余协议（CARP）在 IP 层提供自动故障切换。CARP 允许同一网络段上的多个主机共享一个 IP 地址。请根据 crossref:advanced-networking[carp，“通用地址冗余协议（CARP）”] 中的文档，在集群的两个节点上设置 CARP。在此示例中，每个节点都有自己的管理 IP 地址，并共享地址 __172.16.0.254__。集群中的 HAST 主节点必须是 CARP 主节点。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2328
+#, fuzzy
 msgid ""
 "The HAST pool created in the previous section is now ready to be exported to "
 "the other hosts on the network.  This can be accomplished by exporting it "
 "through NFS or Samba, using the shared IP address _172.16.0.254_.  The only "
 "problem which remains unresolved is an automatic failover should the primary "
 "node fail."
-msgstr ""
+msgstr "上一节创建的 HAST 池现已准备好导出给网络中的其他主机。可以通过 NFS 或 Samba 使用共享 IP 地址 __172.16.0.254__ 将其导出。尚未解决的唯一问题是主节点发生故障时如何自动进行故障切换。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2332
+#, fuzzy
 msgid ""
 "In the event of CARP interfaces going up or down, the FreeBSD operating "
 "system generates a man:devd[8] event, making it possible to watch for state "
@@ -5085,15 +5350,16 @@ msgid ""
 "indication that one of the nodes failed or came back online.  These state "
 "change events make it possible to run a script which will automatically "
 "handle the HAST failover."
-msgstr ""
+msgstr "当 CARP 接口启动或停止时，FreeBSD 操作系统会生成 man:devd[8] 事件，因此可以监视 CARP 接口的状态变化。CARP 接口状态发生变化，表明其中一个节点发生故障或重新上线。利用这些状态变化事件，可以运行脚本自动处理 HAST 故障转移。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2334
+#, fuzzy
 msgid ""
 "To catch state changes on the CARP interfaces, add this configuration to [."
 "filename]#/etc/devd.conf# on each node, while replacing `<vhid>` with the "
 "virtual host id and `<ifname>` with the associated interface name:"
-msgstr ""
+msgstr "要捕获 CARP 接口的状态变化，请在每个节点的 [.filename]#/etc/devd.conf# 中添加以下配置，并将 `<vhid>` 替换为虚拟主机 ID，将 `<ifname>` 替换为关联的接口名称："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2343
@@ -5131,25 +5397,27 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2353
+#, fuzzy
 msgid ""
 "Restart man:devd[8] on both nodes to put the new configuration into effect:"
-msgstr ""
+msgstr "在两个节点上重启 man:devd[8]，使新配置生效："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2357
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service devd restart\n"
-msgstr ""
+msgstr "# service devd restart\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2361
+#, fuzzy
 msgid ""
 "When the specified interface state changes by going up or down , the system "
 "generates a notification, allowing the man:devd[8] subsystem to run the "
 "specified automatic failover script, [.filename]#/usr/local/sbin/carp-hast-"
 "switch#.  For further clarification about this configuration, refer to man:"
 "devd.conf[5]."
-msgstr ""
+msgstr "当指定接口状态发生变化（启动或停止）时，系统会生成通知，使 man:devd[8] 子系统能够运行指定的自动故障转移脚本 [.filename]#/usr/local/sbin/carp-hast-switch#。有关此配置的更多说明，请参阅 man:devd.conf[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2363
@@ -5158,75 +5426,75 @@ msgstr "下面是一个这种脚本的示例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2367
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "#!/bin/sh\n"
-msgstr ""
+msgstr "#!/bin/sh\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Original script by Freddie Cash <fjwcash@gmail.com>\n"
 "# Modified by Michael W. Lucas <mwlucas@BlackHelicopters.org>\n"
 "# and Viktor Petersson <vpetersson@wireload.net>\n"
-msgstr ""
+msgstr "# Original script by Freddie Cash <fjwcash@gmail.com>\n# Modified by Michael W. Lucas <mwlucas@BlackHelicopters.org>\n# and Viktor Petersson <vpetersson@wireload.net>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# The names of the HAST resources, as listed in /etc/hast.conf\n"
 "resources=\"test\"\n"
-msgstr ""
+msgstr "# The names of the HAST resources, as listed in /etc/hast.conf\nresources=\"test\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# delay in mounting HAST resource after becoming primary\n"
 "# make your best guess\n"
 "delay=3\n"
-msgstr ""
+msgstr "# delay in mounting HAST resource after becoming primary\n# make your best guess\ndelay=3\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# logging\n"
 "log=\"local0.debug\"\n"
 "name=\"carp-hast\"\n"
-msgstr ""
+msgstr "# logging\nlog=\"local0.debug\"\nname=\"carp-hast\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2384
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# end of user configurable stuff\n"
-msgstr ""
+msgstr "# end of user configurable stuff\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "case \"$1\" in\n"
 "\tprimary)\n"
 "\t\tlogger -p $log -t $name \"Switching to primary provider for ${resources}.\"\n"
 "\t\tsleep ${delay}\n"
-msgstr ""
+msgstr "case \"$1\" in\n\tprimary)\n\t\tlogger -p $log -t $name \"Switching to primary provider for ${resources}.\"\n\t\tsleep ${delay}\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\t# Wait for any \"hastd secondary\" processes to stop\n"
 "\t\tfor disk in ${resources}; do\n"
 "\t\t\twhile $( pgrep -lf \"hastd: ${disk} \\(secondary\\)\" > /dev/null 2>&1 ); do\n"
 "\t\t\t\tsleep 1\n"
 "\t\t\tdone\n"
-msgstr ""
+msgstr "\t\t# Wait for any \"hastd secondary\" processes to stop\n\t\tfor disk in ${resources}; do\n\t\t\twhile $( pgrep -lf \"hastd: ${disk} \\(secondary\\)\" > /dev/null 2>&1 ); do\n\t\t\t\tsleep 1\n\t\t\tdone\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\t\t# Switch role for each disk\n"
 "\t\t\thastctl role primary ${disk}\n"
@@ -5235,11 +5503,11 @@ msgid ""
 "\t\t\t\texit 1\n"
 "\t\t\tfi\n"
 "\t\tdone\n"
-msgstr ""
+msgstr "\t\t\t# Switch role for each disk\n\t\t\thastctl role primary ${disk}\n\t\t\tif [ $? -ne 0 ]; then\n\t\t\t\tlogger -p $log -t $name \"Unable to change role to primary for resource ${disk}.\"\n\t\t\t\texit 1\n\t\t\tfi\n\t\tdone\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\t# Wait for the /dev/hast/* devices to appear\n"
 "\t\tfor disk in ${resources}; do\n"
@@ -5247,28 +5515,28 @@ msgid ""
 "\t\t\t\t[ -c \"/dev/hast/${disk}\" ] && break\n"
 "\t\t\t\tsleep 0.5\n"
 "\t\t\tdone\n"
-msgstr ""
+msgstr "\t\t# Wait for the /dev/hast/* devices to appear\n\t\tfor disk in ${resources}; do\n\t\t\tfor I in $( jot 60 ); do\n\t\t\t\t[ -c \"/dev/hast/${disk}\" ] && break\n\t\t\t\tsleep 0.5\n\t\t\tdone\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2416
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\t\tif [ ! -c \"/dev/hast/${disk}\" ]; then\n"
 "\t\t\t\tlogger -p $log -t $name \"GEOM provider /dev/hast/${disk} did not appear.\"\n"
 "\t\t\t\texit 1\n"
 "\t\t\tfi\n"
 "\t\tdone\n"
-msgstr ""
+msgstr "\t\t\tif [ ! -c \"/dev/hast/${disk}\" ]; then\n\t\t\t\tlogger -p $log -t $name \"GEOM provider /dev/hast/${disk} did not appear.\"\n\t\t\t\texit 1\n\t\t\tfi\n\t\tdone\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\t\tlogger -p $log -t $name \"Role for HAST resources ${resources} switched to primary.\"\n"
-msgstr ""
+msgstr "\t\tlogger -p $log -t $name \"Role for HAST resources ${resources} switched to primary.\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\tlogger -p $log -t $name \"Mounting disks.\"\n"
 "\t\tfor disk in ${resources}; do\n"
@@ -5276,25 +5544,25 @@ msgid ""
 "\t\t\tfsck -p -y -t ufs /dev/hast/${disk}\n"
 "\t\t\tmount /dev/hast/${disk} /hast/${disk}\n"
 "\t\tdone\n"
-msgstr ""
+msgstr "\t\tlogger -p $log -t $name \"Mounting disks.\"\n\t\tfor disk in ${resources}; do\n\t\t\tmkdir -p /hast/${disk}\n\t\t\tfsck -p -y -t ufs /dev/hast/${disk}\n\t\t\tmount /dev/hast/${disk} /hast/${disk}\n\t\tdone\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "\t;;\n"
-msgstr ""
+msgstr "\t;;\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\tsecondary)\n"
 "\t\tlogger -p $log -t $name \"Switching to secondary provider for ${resources}.\"\n"
-msgstr ""
+msgstr "\tsecondary)\n\t\tlogger -p $log -t $name \"Switching to secondary provider for ${resources}.\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2448
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "\t\t# Switch roles for the HAST resources\n"
 "\t\tfor disk in ${resources}; do\n"
@@ -5313,7 +5581,7 @@ msgid ""
 "\t\tdone\n"
 "\t;;\n"
 "esac\n"
-msgstr ""
+msgstr "\t\t# Switch roles for the HAST resources\n\t\tfor disk in ${resources}; do\n\t\t\tif ! mount | grep -q \"^/dev/hast/${disk} on \"\n\t\t\tthen\n\t\t\telse\n\t\t\t\tumount -f /hast/${disk}\n\t\t\tfi\n\t\t\tsleep $delay\n\t\t\thastctl role secondary ${disk} 2>&1\n\t\t\tif [ $? -ne 0 ]; then\n\t\t\t\tlogger -p $log -t $name \"Unable to switch role to secondary for resource ${disk}.\"\n\t\t\t\texit 1\n\t\t\tfi\n\t\t\tlogger -p $log -t $name \"Role switched to secondary for resource ${disk}.\"\n\t\tdone\n\t;;\nesac\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2451
@@ -5328,13 +5596,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2453
+#, fuzzy
 msgid "Promotes the HAST pool to primary on the other node."
-msgstr ""
+msgstr "在另一个节点上将 HAST 池提升为主角色。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2454
+#, fuzzy
 msgid "Checks the file system under the HAST pool."
-msgstr ""
+msgstr "检查 HAST 池中的文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2455
@@ -5348,13 +5618,15 @@ msgstr "当节点变为辅助节点时："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2459
+#, fuzzy
 msgid "Unmounts the HAST pool."
-msgstr ""
+msgstr "卸载 HAST 池。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2460
+#, fuzzy
 msgid "Degrades the HAST pool to secondary."
-msgstr ""
+msgstr "将 HAST 池降级为辅助角色。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2465
@@ -5373,27 +5645,30 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2471
+#, fuzzy
 msgid ""
 "For this example, a standard UFS file system was used.  To reduce the time "
 "needed for recovery, a journal-enabled UFS or ZFS file system can be used "
 "instead."
-msgstr ""
+msgstr "本例使用了标准 UFS 文件系统。若要缩短恢复所需的时间，可以改用启用了日志功能的 UFS 文件系统或 ZFS 文件系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2474
+#, fuzzy
 msgid ""
 "Instead of using the highly available storage locally, it can also be shared "
 "to other computers on a network via crossref:network-servers[network-nfs,"
 "NFS], crossref:network-servers[network-iscsi,iSCSI], man:sshfs[1], or "
 "programs in ports (i.e. package:net/samba419[])."
-msgstr ""
+msgstr "除了在本地使用高可用存储外，也可以通过 crossref:network-servers[network-nfs,NFS]、crossref:network-servers[network-iscsi,iSCSI]、man:sshfs[1] 或 ports 中的软件（即 package:net/samba419[]）将其共享给网络中的其他计算机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2476
+#, fuzzy
 msgid ""
 "More detailed information with additional examples can be found at http://"
 "wiki.FreeBSD.org/HAST[http://wiki.FreeBSD.org/HAST]."
-msgstr ""
+msgstr "更多详细信息和示例请参阅 link:http://wiki.FreeBSD.org/HAST[http://wiki.FreeBSD.org/HAST]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/disks/_index.adoc:2477
@@ -5416,12 +5691,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/disks/_index.adoc:2486
+#, fuzzy
 msgid ""
 "When troubleshooting HAST, the debugging level of man:hastd[8] should be "
 "increased by starting `hastd` with `-d`.  This argument may be specified "
 "multiple times to further increase the debugging level.  Consider also using "
 "`-F`, which starts `hastd` in the foreground."
-msgstr ""
+msgstr "排查 HAST 问题时，应通过使用 `-d` 启动 `hastd` 来提高 man:hastd[8] 的调试级别。可以多次指定此参数，以进一步提高调试级别。也可以使用 `-F`，使 `hastd` 在前台运行。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/disks/_index.adoc:2488
@@ -5457,12 +5733,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/disks/_index.adoc:2503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# hastctl role init test\n"
 "# hastctl create test\n"
 "# hastctl role secondary test\n"
-msgstr ""
+msgstr "# hastctl role init test\n# hastctl create test\n# hastctl role secondary test\n"
 
 #~ msgid "After reading this section, you will know:"
 #~ msgstr "读完这节， 您将了解："

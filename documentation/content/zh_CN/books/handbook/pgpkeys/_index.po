@@ -20,37 +20,38 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "List of OpenPGP keys of the FreeBSD officers are shown here"
-msgstr ""
+msgstr "此处列出了 FreeBSD 官员的 OpenPGP 密钥"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part V. Appendices"
-msgstr ""
+msgstr "第五部分：附录"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appendix D. OpenPGP Keys"
-msgstr ""
+msgstr "附录 D：OpenPGP 密钥"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OpenPGP Keys"
-msgstr ""
+msgstr "OpenPGP 密钥"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:60
+#, fuzzy
 msgid ""
 "The OpenPGP keys of the `FreeBSD.org` officers are shown here.  These keys "
 "can be used to verify a signature or send encrypted email to one of the "
 "officers.  A full list of FreeBSD OpenPGP keys is available in the extref:"
 "{pgpkeys}[PGP Keys] article.  The complete keyring can be downloaded at link:"
 "https://docs.FreeBSD.org/pgpkeys/pgpkeys.txt[pgpkeys.txt]."
-msgstr ""
+msgstr "此处列出了 `FreeBSD.org` 官员的 OpenPGP 密钥。这些密钥可用于验证签名，或向其中一位官员发送加密电子邮件。完整的 FreeBSD OpenPGP 密钥列表请参见 extref:{pgpkeys}[PGP 密钥]文章。完整密钥环可从 link:https://docs.FreeBSD.org/pgpkeys/pgpkeys.txt[pgpkeys.txt] 下载。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:62
@@ -60,24 +61,24 @@ msgstr "官员"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{security-officer-name} `<{security-officer-email}>`"
-msgstr ""
+msgstr "{security-officer-name} `<{security-officer-email}>`"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:67
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{core-secretary-name} `<{core-secretary-email}>`"
-msgstr ""
+msgstr "{core-secretary-name} `<{core-secretary-email}>`"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{portmgr-secretary-name} `<{portmgr-secretary-email}>`"
-msgstr ""
+msgstr "{portmgr-secretary-name} `<{portmgr-secretary-email}>`"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/pgpkeys/_index.adoc:73
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{doceng-secretary-email}`"
-msgstr ""
+msgstr "`{doceng-secretary-email}`"

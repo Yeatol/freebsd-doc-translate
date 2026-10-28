@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter demonstrates how to install numerous desktop environments, including web browsers, productivity software, document viewers, and financial software"
-msgstr ""
+msgstr "本章介绍如何安装多种桌面环境，包括 Web 浏览器、办公软件、文档查看器和财务软件"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Common Tasks"
-msgstr ""
+msgstr "第二部分：常见任务"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1
@@ -69,38 +69,42 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:59
+#, fuzzy
 msgid "Prerequisites:"
-msgstr ""
+msgstr "前提条件："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:61
+#, fuzzy
 msgid ""
 "Readers of this chapter should already understand how to install either the "
 "crossref:x11[x11,X Window System] or crossref:wayland[wayland,Wayland] on "
 "FreeBSD."
-msgstr ""
+msgstr "阅读本章的读者应已了解如何在 FreeBSD 上安装 crossref:x11[x11,X Window System] 或 crossref:wayland[wayland,Wayland]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:63
+#, fuzzy
 msgid ""
 "Readers are instructed throughout this chapter to install official "
 "packages.  Refer to the section on crossref:ports[ports-using,using the "
 "ports collection] to build customized packages from ports."
-msgstr ""
+msgstr "本章将指导读者安装官方软件包。有关如何从 Ports 构建自定义软件包，请参阅 crossref:ports[ports-using,使用 Ports Collection] 一节。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:69
+#, fuzzy
 msgid ""
 "This section describes how to install and configure some popular desktop "
 "environments on a FreeBSD system.  A desktop environment can range from a "
 "simple window manager to a complete suite of desktop applications."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上安装和配置一些常见的桌面环境。桌面环境可以是简单的窗口管理器，也可以是一整套桌面应用程序。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported desktop environments"
-msgstr ""
+msgstr "受支持的桌面环境"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:73
@@ -109,9 +113,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:912
 #: documentation/content/en/books/handbook/desktop/_index.adoc:994
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:73
@@ -120,9 +124,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:912
 #: documentation/content/en/books/handbook/desktop/_index.adoc:994
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "License"
-msgstr ""
+msgstr "许可证"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:75
@@ -131,16 +135,16 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:912
 #: documentation/content/en/books/handbook/desktop/_index.adoc:994
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Package"
-msgstr ""
+msgstr "软件包"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:76
 #: documentation/content/en/books/handbook/desktop/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Plasma"
-msgstr ""
+msgstr "Plasma"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:77
@@ -149,115 +153,117 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:572
 #: documentation/content/en/books/handbook/desktop/_index.adoc:592
 #: documentation/content/en/books/handbook/desktop/_index.adoc:926
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 2.0 or later"
-msgstr ""
+msgstr "GPL 2.0 或更高版本"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:79
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/kde[]"
-msgstr ""
+msgstr "package:x11/kde[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:80
 #: documentation/content/en/books/handbook/desktop/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GNOME"
-msgstr ""
+msgstr "GNOME"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:83
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/gnome[]"
-msgstr ""
+msgstr "package:x11/gnome[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:84
 #: documentation/content/en/books/handbook/desktop/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "XFCE"
-msgstr ""
+msgstr "XFCE"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:85
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL, LGPL, BSD"
-msgstr ""
+msgstr "GPL、LGPL、BSD"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:87
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11-wm/xfce4[]"
-msgstr ""
+msgstr "package:x11-wm/xfce4[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:88
 #: documentation/content/en/books/handbook/desktop/_index.adoc:329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MATE"
-msgstr ""
+msgstr "MATE"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 2.0, LGPL 2.0"
-msgstr ""
+msgstr "GPL 2.0、LGPL 2.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:91
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/mate[]"
-msgstr ""
+msgstr "package:x11/mate[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:92
 #: documentation/content/en/books/handbook/desktop/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Cinnamon"
-msgstr ""
+msgstr "Cinnamon"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:95
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11/cinnamon[]"
-msgstr ""
+msgstr "package:x11/cinnamon[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:96
 #: documentation/content/en/books/handbook/desktop/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LXQT"
-msgstr ""
+msgstr "LXQT"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL, LGPL"
-msgstr ""
+msgstr "GPL、LGPL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11-wm/lxqt[]"
-msgstr ""
+msgstr "package:x11-wm/lxqt[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:106
+#, fuzzy
 msgid ""
 "Plasma is an easy-to-use desktop environment made by the KDE community.  "
 "This desktop provides a suite of applications with a consistent look and "
 "feel, a standardized menu and toolbars, keybindings, color-schemes, "
 "internationalization, and a centralized, dialog-driven desktop configuration."
-msgstr ""
+msgstr "Plasma 是由 KDE 社区开发的易用桌面环境。它提供一套外观和使用体验一致的应用程序，以及标准化的菜单和工具栏、键盘快捷键、配色方案、国际化支持和集中式的对话框驱动桌面配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:109
+#, fuzzy
 msgid ""
 "More information on Plasma can be found at the link:https://kde.org/plasma-"
 "desktop[Plasma homepage].  For FreeBSD-specific information, consult the "
 "link:https://freebsd.kde.org/[FreeBSD homepage at KDE]."
-msgstr ""
+msgstr "有关 Plasma 的更多信息，请参阅 link:https://kde.org/plasma-desktop[Plasma 主页]。有关 FreeBSD 的特定信息，请参阅 link:https://freebsd.kde.org/[KDE 上的 FreeBSD 主页]。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:111
@@ -268,34 +274,36 @@ msgstr "要安装套件可："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:114
+#, fuzzy
 msgid ""
 "To install the Plasma desktop with a basic set of KDE Applications, execute:"
-msgstr ""
+msgstr "要安装带有一组基本 KDE Applications 的 Plasma 桌面，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install kde\n"
-msgstr ""
+msgstr "# pkg install kde\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:122
+#, fuzzy
 msgid ""
 "Additional KDE Applications are tagged with the `kde-applications` "
 "category.  Search for them by executing the following command:"
-msgstr ""
+msgstr "其他 KDE Applications 带有 `kde-applications` 分类标签。执行以下命令即可搜索这些应用程序："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pkg search -S origin kde-applications\n"
-msgstr ""
+msgstr "% pkg search -S origin kde-applications\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Minimal Plasma installation"
-msgstr ""
+msgstr "最小化安装 Plasma"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:132
@@ -306,40 +314,43 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install plasma6-plasma\n"
-msgstr ""
+msgstr "# pkg install plasma6-plasma\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:142
+#, fuzzy
 msgid ""
 "This installation is *really* minimal.  The Konsole terminal emulator must "
 "be installed separately executing:"
-msgstr ""
+msgstr "此安装确实非常精简。必须另外安装 Konsole 终端模拟器，执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install konsole\n"
-msgstr ""
+msgstr "# pkg install konsole\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configure Plasma"
-msgstr ""
+msgstr "配置 Plasma"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:154
+#, fuzzy
 msgid ""
 "Plasma uses man:dbus-daemon[1] for a message bus and hardware abstraction.  "
 "This application is automatically installed as a dependency of Plasma."
-msgstr ""
+msgstr "Plasma 使用 man:dbus-daemon[1] 提供消息总线和硬件抽象功能。此应用程序会作为 Plasma 的依赖项自动安装。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:156
+#, fuzzy
 msgid "Enable the D-Bus service in man:rc.conf[5] to start at system boot:"
-msgstr ""
+msgstr "在 man:rc.conf[5] 中启用 D-Bus 服务，使其在系统启动时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:160
@@ -348,90 +359,96 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:373
 #: documentation/content/en/books/handbook/desktop/_index.adoc:439
 #: documentation/content/en/books/handbook/desktop/_index.adoc:505
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc dbus_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc dbus_enable=\"YES\"\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Start Plasma"
-msgstr ""
+msgstr "启动 Plasma"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:167
+#, fuzzy
 msgid ""
 "The preferred way to start Plasma is automatically via the package:x11/"
 "sddm[] display manager.  To install package:x11/sddm[], execute:"
-msgstr ""
+msgstr "推荐通过 package:x11/sddm[] 显示管理器自动启动 Plasma。要安装 package:x11/sddm[]，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:171
 #: documentation/content/en/books/handbook/desktop/_index.adoc:516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install sddm\n"
-msgstr ""
+msgstr "# pkg install sddm\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:174
+#, fuzzy
 msgid "Enable the SDDM service in man:rc.conf[5] to start at system boot:"
-msgstr ""
+msgstr "在 man:rc.conf[5] 中启用 SDDM 服务，使其在系统启动时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:178
 #: documentation/content/en/books/handbook/desktop/_index.adoc:523
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc sddm_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc sddm_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:181
+#, fuzzy
 msgid ""
 "A keyboard language, in this case Spanish, can be set in SDDM with the "
 "following command:"
-msgstr ""
+msgstr "可以使用以下命令在 SDDM 中设置键盘语言，此处以西班牙语为例："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:185
 #: documentation/content/en/books/handbook/desktop/_index.adoc:530
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc sddm_lang=\"es_ES\"\n"
-msgstr ""
+msgstr "# sysrc sddm_lang=\"es_ES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:189
+#, fuzzy
 msgid ""
 "Alternatively, start Plasma in an Xorg session is by manually invoking man:"
 "startx[1].  For this to work, the following line is needed in ~/.xinitrc:"
-msgstr ""
+msgstr "也可以在 Xorg 会话中手动调用 man:startx[1] 来启动 Plasma。要使其正常工作，需在 ~/.xinitrc 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session startplasma-x11\" > ~/.xinitrc\n"
-msgstr ""
+msgstr "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session startplasma-x11\" > ~/.xinitrc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:196
+#, fuzzy
 msgid ""
 "Experimentally, start Plasma manually in a Wayland session by executing the "
 "following command:"
-msgstr ""
+msgstr "目前可以在 Wayland 会话中通过执行以下命令手动启动 Plasma："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% exec dbus-launch ck-launch-session startplasma-wayland\n"
-msgstr ""
+msgstr "% exec dbus-launch ck-launch-session startplasma-wayland\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:207
+#, fuzzy
 msgid ""
 "GNOME is a user-friendly desktop environment.  It includes a panel for "
 "starting applications and displaying status, a desktop, a set of tools and "
 "applications, and a set of conventions that make it easy for applications to "
 "cooperate and be consistent with each other."
-msgstr ""
+msgstr "GNOME 是一种易于使用的桌面环境。它包含用于启动应用程序和显示状态的面板、桌面、一组工具和应用程序，以及一套约定，使应用程序能够轻松协作并保持一致。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:209
@@ -442,124 +459,133 @@ msgstr "要安装套件可："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:212
+#, fuzzy
 msgid ""
 "To install the GNOME meta package with GNOME Desktop and Applications, "
 "execute:"
-msgstr ""
+msgstr "要安装包含 GNOME 桌面和应用程序的 GNOME 元软件包，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:216
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install gnome\n"
-msgstr ""
+msgstr "# pkg install gnome\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:219
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Minimal GNOME installation"
-msgstr ""
+msgstr "最小化安装 GNOME"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:222
+#, fuzzy
 msgid ""
 "To install the GNOME-lite meta package with a GNOME desktop slimmed down for "
 "only the basics, execute:"
-msgstr ""
+msgstr "要安装 GNOME-lite 元软件包，以获取仅包含基本功能的精简 GNOME 桌面，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install gnome-lite\n"
-msgstr ""
+msgstr "# pkg install gnome-lite\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configure GNOME"
-msgstr ""
+msgstr "配置 GNOME"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:233
+#, fuzzy
 msgid ""
 "GNOME requires `/proc` to be mounted.  Add this line to `/etc/fstab` to "
 "mount this file system automatically during system startup:"
-msgstr ""
+msgstr "GNOME 要求挂载 `/proc`。将以下行添加到 `/etc/fstab`，以便在系统启动时自动挂载此文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:238
 #: documentation/content/en/books/handbook/desktop/_index.adoc:364
 #: documentation/content/en/books/handbook/desktop/_index.adoc:430
 #: documentation/content/en/books/handbook/desktop/_index.adoc:495
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
 "proc                    /proc           procfs  rw              0       0\n"
-msgstr ""
+msgstr "# Device                Mountpoint      FStype  Options         Dump    Pass#\nproc                    /proc           procfs  rw              0       0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:242
+#, fuzzy
 msgid ""
 "GNOME uses man:dbus-daemon[1] for a message bus and hardware abstraction.  "
 "This application is automatically installed as a dependency of GNOME."
-msgstr ""
+msgstr "GNOME 使用 man:dbus-daemon[1] 提供消息总线和硬件抽象功能。此应用程序会作为 GNOME 的依赖项自动安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:244
+#, fuzzy
 msgid "Enable D-BUS service in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "在 `/etc/rc.conf` 中启用 D-BUS 服务，使其在系统启动时运行："
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Start GNOME"
-msgstr ""
+msgstr "启动 GNOME"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:255
+#, fuzzy
 msgid ""
 "GNOME Display Manager is the preferred display manager for GNOME.  GDM is "
 "installed as part of the GNOME package."
-msgstr ""
+msgstr "GNOME Display Manager 是 GNOME 推荐使用的显示管理器。GDM 随 GNOME 软件包一同安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:257
+#, fuzzy
 msgid "Enable GDM in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "在 `/etc/rc.conf` 中启用 GDM，使其在系统启动时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:261
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc gdm_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc gdm_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:265
+#, fuzzy
 msgid ""
 "A second method to start GNOME is by manually invoking man:startx[1].  For "
 "this to work, the following line is needed in `~/.xinitrc`:"
-msgstr ""
+msgstr "另一种启动 GNOME 的方法是手动调用 man:startx[1]。要使其正常工作，需在 `~/.xinitrc` 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo \"exec gnome-session\" > ~/.xinitrc\n"
-msgstr ""
+msgstr "% echo \"exec gnome-session\" > ~/.xinitrc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:277
+#, fuzzy
 msgid ""
 "XFCE is a desktop environment based on the GTK+, lightweight and provides a "
 "simple, efficient, easy-to-use desktop.  It is fully configurable, has a "
 "main panel with menus, applets, and application launchers, provides a file "
 "manager and sound manager, and is themeable.  Since it is fast, light, and "
 "efficient, it is ideal for older or slower machines with memory limitations."
-msgstr ""
+msgstr "XFCE 是一种基于 GTK+ 的轻量级桌面环境，提供简单、高效且易于使用的桌面。它完全可配置，带有包含菜单、小程序和应用程序启动器的主面板，提供文件管理器和声音管理器，并支持主题。它速度快、占用资源少且效率高，非常适合内存受限的旧款或较慢的计算机。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Install XFCE"
-msgstr ""
+msgstr "安装 XFCE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:282
@@ -570,44 +596,47 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xfce\n"
-msgstr ""
+msgstr "# pkg install xfce\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configure XFCE"
-msgstr ""
+msgstr "配置 XFCE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:293
+#, fuzzy
 msgid ""
 "XFCE uses man:dbus-daemon[1] for a message bus and hardware abstraction.  "
 "This application is automatically installed as a dependency of XFCE."
-msgstr ""
+msgstr "XFCE 使用 man:dbus-daemon[1] 提供消息总线和硬件抽象功能。此应用程序会作为 XFCE 的依赖项自动安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:295
 #: documentation/content/en/books/handbook/desktop/_index.adoc:501
+#, fuzzy
 msgid "Enable D-BUS in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "在 `/etc/rc.conf` 中启用 D-BUS，使其在系统启动时运行："
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Start XFCE"
-msgstr ""
+msgstr "启动 XFCE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:305
 #: documentation/content/en/books/handbook/desktop/_index.adoc:379
 #: documentation/content/en/books/handbook/desktop/_index.adoc:445
+#, fuzzy
 msgid ""
 "package:x11/lightdm[] is a display manager that supports different display "
 "technologies and is a good choice as it is very lightweight, requires little "
 "memory usage, and has fast performance."
-msgstr ""
+msgstr "package:x11/lightdm[] 是一种支持不同显示技术的显示管理器。它非常轻量、占用内存少且性能出色，是不错的选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:307
@@ -621,44 +650,47 @@ msgstr "要安装套件可："
 #: documentation/content/en/books/handbook/desktop/_index.adoc:311
 #: documentation/content/en/books/handbook/desktop/_index.adoc:385
 #: documentation/content/en/books/handbook/desktop/_index.adoc:451
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install lightdm lightdm-gtk-greeter\n"
-msgstr ""
+msgstr "# pkg install lightdm lightdm-gtk-greeter\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:314
 #: documentation/content/en/books/handbook/desktop/_index.adoc:388
 #: documentation/content/en/books/handbook/desktop/_index.adoc:454
+#, fuzzy
 msgid "Enable lightdm in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "在 `/etc/rc.conf` 中启用 lightdm，使其在系统启动时运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:318
 #: documentation/content/en/books/handbook/desktop/_index.adoc:392
 #: documentation/content/en/books/handbook/desktop/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysrc lightdm_enable=\"YES\"\n"
-msgstr ""
+msgstr "# sysrc lightdm_enable=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:322
+#, fuzzy
 msgid ""
 "A second method to start XFCE is by manually invoking man:startx[1].  For "
 "this to work, the following line is needed in `~/.xinitrc`:"
-msgstr ""
+msgstr "另一种启动 XFCE 的方法是手动调用 man:startx[1]。要使其正常工作，需在 `~/.xinitrc` 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo '. /usr/local/etc/xdg/xfce4/xinitrc' > ~/.xinitrc\n"
-msgstr ""
+msgstr "% echo '. /usr/local/etc/xdg/xfce4/xinitrc' > ~/.xinitrc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:333
+#, fuzzy
 msgid ""
 "The MATE Desktop Environment is the continuation of GNOME 2.  It provides an "
 "intuitive and attractive desktop environment using traditional metaphors."
-msgstr ""
+msgstr "MATE 桌面环境是 GNOME 2 的延续。它采用传统的桌面隐喻，提供直观且美观的桌面环境。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:335
@@ -669,91 +701,97 @@ msgstr "要安装套件可："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:338
+#, fuzzy
 msgid ""
 "To install the MATE meta package that includes the MATE Desktop with some "
 "extra applications such as text editor, archiver manager, etc., execute:"
-msgstr ""
+msgstr "要安装包含 MATE 桌面及文本编辑器、归档管理器等额外应用程序的 MATE 元软件包，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:342
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install mate\n"
-msgstr ""
+msgstr "# pkg install mate\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:345
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Minimal MATE installation"
-msgstr ""
+msgstr "最小化安装 MATE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:348
+#, fuzzy
 msgid ""
 "To install the MATE lite meta package with MATE desktop slimmed down for "
 "only the basics, execute:"
-msgstr ""
+msgstr "要安装 MATE lite 元软件包，以获取仅包含基本功能的精简 MATE 桌面，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install mate-base\n"
-msgstr ""
+msgstr "# pkg install mate-base\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configure MATE"
-msgstr ""
+msgstr "配置 MATE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:359
+#, fuzzy
 msgid ""
 "MATE requires `/proc` to be mounted.  Add this line to `/etc/fstab` to mount "
 "this file system automatically during system startup:"
-msgstr ""
+msgstr "MATE 要求挂载 `/proc`。将以下行添加到 `/etc/fstab`，以便在系统启动时自动挂载此文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:369
+#, fuzzy
 msgid ""
 "MATE uses man:dbus-daemon[1] for a message bus and hardware abstraction.  "
 "This application is automatically installed as a dependency of MATE.  Enable "
 "D-BUS in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "MATE 使用 man:dbus-daemon[1] 提供消息总线和硬件抽象功能。此应用程序会作为 MATE 的依赖项自动安装。在 `/etc/rc.conf` 中启用 D-BUS，使其在系统启动时运行："
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Start MATE"
-msgstr ""
+msgstr "启动 MATE"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:396
+#, fuzzy
 msgid ""
 "A second method to start MATE is by manually invoking man:startx[1].  For "
 "this to work, the following line is needed in `~/.xinitrc`:"
-msgstr ""
+msgstr "另一种启动 MATE 的方法是手动调用 man:startx[1]。要使其正常工作，需在 `~/.xinitrc` 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session mate-session\" > ~/.xinitrc\n"
-msgstr ""
+msgstr "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session mate-session\" > ~/.xinitrc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:409
+#, fuzzy
 msgid ""
 "Cinnamon is a UNIX(R) desktop which provides advanced innovative features "
 "and a traditional user experience.  The desktop layout is similar to Gnome "
 "2.  The underlying technology is forked from Gnome Shell.  The emphasis is "
 "put on making users feel at home and providing them with an easy to use and "
 "comfortable desktop experience."
-msgstr ""
+msgstr "Cinnamon 是一种 UNIX(R) 桌面环境，提供先进且创新的功能，以及传统的用户体验。其桌面布局类似于 Gnome 2。其底层技术源自 Gnome Shell 的分支。Cinnamon 注重让用户感到宾至如归，并为他们提供易于使用且舒适的桌面体验。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Install Cinnamon"
-msgstr ""
+msgstr "安装 Cinnamon"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:414
@@ -764,36 +802,38 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install cinnamon\n"
-msgstr ""
+msgstr "# pkg install cinnamon\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configure Cinnamon"
-msgstr ""
+msgstr "配置 Cinnamon"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:425
+#, fuzzy
 msgid ""
 "Cinnamon requires `/proc` to be mounted.  Add this line to `/etc/fstab` to "
 "mount this file system automatically during system startup:"
-msgstr ""
+msgstr "Cinnamon 需要挂载 `/proc`。将此行添加到 `/etc/fstab`，以便在系统启动时自动挂载此文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:435
+#, fuzzy
 msgid ""
 "Cinnamon uses man:dbus-daemon[1] for a message bus and hardware "
 "abstraction.  This application is automatically installed as a dependency of "
 "Cinnamon.  Enable D-BUS in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "Cinnamon 使用 man:dbus-daemon[1] 提供消息总线和硬件抽象功能。此应用程序会作为 Cinnamon 的依赖项自动安装。在 `/etc/rc.conf` 中启用 D-BUS，以便在系统启动时启动："
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:442
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Start Cinnamon"
-msgstr ""
+msgstr "启动 Cinnamon"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:447
@@ -804,31 +844,33 @@ msgstr "要安装套件可："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:462
+#, fuzzy
 msgid ""
 "A second method to start Cinnamon is by manually invoking man:startx[1].  "
 "For this to work, the following line is needed in `~/.xinitrc`:"
-msgstr ""
+msgstr "启动 Cinnamon 的另一种方法是手动调用 man:startx[1]。要使此方法生效，需要在 `~/.xinitrc` 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session cinnamon-session\" > ~/.xinitrc\n"
-msgstr ""
+msgstr "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session cinnamon-session\" > ~/.xinitrc\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:474
+#, fuzzy
 msgid ""
 "LXQt is an advanced, easy-to-use, and fast desktop environment based on Qt "
 "technologies.  It has been tailored for users who value simplicity, speed, "
 "and an intuitive interface.  Unlike most desktop environments, LXQt also "
 "works fine with less powerful machines."
-msgstr ""
+msgstr "LXQt 是一个基于 Qt 技术的先进、易用且快速的桌面环境。它专为重视简洁、速度和直观界面的用户打造。与大多数桌面环境不同，LXQt 在性能较弱的机器上也能良好运行。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:476
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Install LXQT"
-msgstr ""
+msgstr "安装 LXQT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:479
@@ -839,67 +881,73 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:483
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install lxqt\n"
-msgstr ""
+msgstr "# pkg install lxqt\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:486
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configure LXQT"
-msgstr ""
+msgstr "配置 LXQT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:490
+#, fuzzy
 msgid ""
 "LXQT requires `/proc` to be mounted.  Add this line to `/etc/fstab` to mount "
 "this file system automatically during system startup:"
-msgstr ""
+msgstr "LXQT 需要挂载 `/proc`。将此行添加到 `/etc/fstab`，以便在系统启动时自动挂载此文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:499
+#, fuzzy
 msgid ""
 "LXQT uses man:dbus-daemon[1] for a message bus and hardware abstraction.  "
 "This application is automatically installed as a dependency of LXQT."
-msgstr ""
+msgstr "LXQT 使用 man:dbus-daemon[1] 提供消息总线和硬件抽象功能。此应用程序会作为 LXQT 的依赖项自动安装。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/desktop/_index.adoc:508
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Start LXQT"
-msgstr ""
+msgstr "启动 LXQT"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:512
+#, fuzzy
 msgid ""
 "The preferred LXQT display manager is package:x11/sddm[].  To install "
 "package:x11/sddm[], execute:"
-msgstr ""
+msgstr "LXQT 推荐使用 package:x11/sddm[] 作为显示管理器。要安装 package:x11/sddm[]，请执行："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:519
+#, fuzzy
 msgid "Enable SDDM service in `/etc/rc.conf` to start at system boot:"
-msgstr ""
+msgstr "在 `/etc/rc.conf` 中启用 SDDM 服务，以便在系统启动时启动："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:526
+#, fuzzy
 msgid ""
 "The keyboard language can be set in SDDM by running the following command "
 "(for example, for Spanish):"
-msgstr ""
+msgstr "可以通过运行以下命令在 SDDM 中设置键盘语言（例如，设置为西班牙语）："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:534
+#, fuzzy
 msgid ""
 "A second method to start LXQT is by manually invoking man:startx[1].  For "
 "this to work, the following line is needed in `~/.xinitrc`:"
-msgstr ""
+msgstr "启动 LXQT 的另一种方法是手动调用 man:startx[1]。要使此方法生效，需要在 `~/.xinitrc` 中添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:538
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session startlxqt\" > ~/.xinitrc\n"
-msgstr ""
+msgstr "% echo \"exec dbus-launch --exit-with-x11 ck-launch-session startlxqt\" > ~/.xinitrc\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/desktop/_index.adoc:541
@@ -909,17 +957,18 @@ msgstr "浏览器"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:544
+#, fuzzy
 msgid ""
 "This section describes how to install and configure some popular web "
 "browsers on a FreeBSD system, from full web browsers with high resource "
 "consumption to command line web browsers with reduced resource usage."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上安装和配置一些常用的 Web 浏览器，涵盖资源占用较高的完整功能浏览器，以及资源占用较低的命令行浏览器。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:545
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported browsers"
-msgstr ""
+msgstr "支持的浏览器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:550
@@ -927,9 +976,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:914
 #: documentation/content/en/books/handbook/desktop/_index.adoc:996
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Resources Needed"
-msgstr ""
+msgstr "所需资源"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:551
@@ -942,15 +991,15 @@ msgstr "Firefox"
 #: documentation/content/en/books/handbook/desktop/_index.adoc:552
 #: documentation/content/en/books/handbook/desktop/_index.adoc:567
 #: documentation/content/en/books/handbook/desktop/_index.adoc:916
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MPL 2.0"
-msgstr ""
+msgstr "MPL 2.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:553
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/firefox[]"
-msgstr ""
+msgstr "package:www/firefox[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:555
@@ -965,9 +1014,9 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1001
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1110
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Heavy"
-msgstr ""
+msgstr "资源占用高"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:556
@@ -979,41 +1028,41 @@ msgstr "Chromium"
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:557
 #: documentation/content/en/books/handbook/desktop/_index.adoc:562
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BSD-3 and others"
-msgstr ""
+msgstr "BSD-3 及其他许可证"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:558
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/chromium[]"
-msgstr ""
+msgstr "package:www/chromium[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:561
 #: documentation/content/en/books/handbook/desktop/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Iridium browser"
-msgstr ""
+msgstr "Iridium 浏览器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/iridium-browser[]"
-msgstr ""
+msgstr "package:www/iridium-browser[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:566
 #: documentation/content/en/books/handbook/desktop/_index.adoc:658
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Falkon"
-msgstr ""
+msgstr "Falkon"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/falkon-qtonly[]"
-msgstr ""
+msgstr "package:www/falkon-qtonly[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:571
@@ -1024,9 +1073,9 @@ msgstr "Konqueror"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:573
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:x11-fm/konqueror[]"
-msgstr ""
+msgstr "package:x11-fm/konqueror[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:575
@@ -1036,31 +1085,31 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:929
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1006
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1011
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Medium"
-msgstr ""
+msgstr "资源占用中等"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:576
 #: documentation/content/en/books/handbook/desktop/_index.adoc:687
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Gnome Web (Epiphany)"
-msgstr ""
+msgstr "Gnome Web（Epiphany）"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:577
 #: documentation/content/en/books/handbook/desktop/_index.adoc:582
 #: documentation/content/en/books/handbook/desktop/_index.adoc:587
 #: documentation/content/en/books/handbook/desktop/_index.adoc:791
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 3.0 or later"
-msgstr ""
+msgstr "GPL 3.0 或更高版本"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:578
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/epiphany[]"
-msgstr ""
+msgstr "package:www/epiphany[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:581
@@ -1072,22 +1121,22 @@ msgstr "浏览器"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:583
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/qutebrowser[]"
-msgstr ""
+msgstr "package:www/qutebrowser[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:586
 #: documentation/content/en/books/handbook/desktop/_index.adoc:712
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Dillo"
-msgstr ""
+msgstr "Dillo"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:588
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/dillo2[]"
-msgstr ""
+msgstr "package:www/dillo2[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:590
@@ -1096,83 +1145,87 @@ msgstr ""
 #: documentation/content/en/books/handbook/desktop/_index.adoc:784
 #: documentation/content/en/books/handbook/desktop/_index.adoc:789
 #: documentation/content/en/books/handbook/desktop/_index.adoc:794
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Light"
-msgstr ""
+msgstr "资源占用低"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:591
 #: documentation/content/en/books/handbook/desktop/_index.adoc:725
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Links"
-msgstr ""
+msgstr "Links"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:593
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/links[]"
-msgstr ""
+msgstr "package:www/links[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:596
 #: documentation/content/en/books/handbook/desktop/_index.adoc:737
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "w3m"
-msgstr ""
+msgstr "w3m"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:597
 #: documentation/content/en/books/handbook/desktop/_index.adoc:761
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "MIT"
-msgstr ""
+msgstr "MIT"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:598
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:www/w3m[]"
-msgstr ""
+msgstr "package:www/w3m[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:607
+#, fuzzy
 msgid ""
 "Firefox is an open source browser that features a standards-compliant HTML "
 "display engine, tabbed browsing, popup blocking, extensions, improved "
 "security, and more.  Firefox is based on the Mozilla codebase."
-msgstr ""
+msgstr "Firefox 是一款开源浏览器，具有符合标准的 HTML 显示引擎、标签式浏览、弹出窗口拦截、扩展程序、增强的安全性等功能。Firefox 基于 Mozilla 代码库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:609
+#, fuzzy
 msgid ""
 "To install the package of the latest release version of Firefox, execute:"
-msgstr ""
+msgstr "要安装 Firefox 最新正式版本的软件包，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:613
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install firefox\n"
-msgstr ""
+msgstr "# pkg install firefox\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:616
+#, fuzzy
 msgid ""
 "To instead install Firefox Extended Support Release (ESR) version, execute:"
-msgstr ""
+msgstr "要安装 Firefox 延长支持版（ESR），请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:620
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install firefox-esr\n"
-msgstr ""
+msgstr "# pkg install firefox-esr\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:628
+#, fuzzy
 msgid ""
 "Chromium is an open source browser project that aims to build a safer, "
 "faster, and more stable web browsing experience.  Chromium features tabbed "
 "browsing, popup blocking, extensions, and much more.  Chromium is the open "
 "source project upon which the Google Chrome web browser is based."
-msgstr ""
+msgstr "Chromium 是一个开源浏览器项目，旨在打造更安全、更快速且更稳定的网页浏览体验。Chromium 具有标签式浏览、弹出窗口拦截、扩展程序等功能。Google Chrome 网页浏览器正是基于 Chromium 这一开源项目构建的。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:630
@@ -1183,47 +1236,52 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:634
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install chromium\n"
-msgstr ""
+msgstr "# pkg install chromium\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:639
+#, fuzzy
 msgid ""
 "The executable for Chromium is [.filename]#/usr/local/bin/chrome#, not [."
 "filename]#/usr/local/bin/chromium#."
-msgstr ""
+msgstr "Chromium 的可执行文件是 [.filename]#/usr/local/bin/chrome#，而不是 [.filename]#/usr/local/bin/chromium#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:642
+#, fuzzy
 msgid ""
 "Available search engines in Chromium are region-locked.  Refer to the "
 "section on crossref:l10n[using-localization, Using Localization] to "
 "configure an appropriate locale."
-msgstr ""
+msgstr "Chromium 中可用的搜索引擎受地区限制。请参阅 crossref:l10n[using-localization, 使用本地化] 一节，了解如何配置适当的区域设置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:649
+#, fuzzy
 msgid ""
 "Iridium is a free, open, and libre browser modification of the Chromium code "
 "base, with privacy being enhanced in several key areas.  Automatic "
 "transmission of partial queries, keywords, metrics to central services is "
 "inhibited and only occurs with consent."
-msgstr ""
+msgstr "Iridium 是对 Chromium 代码库进行修改的自由开源浏览器，在多个关键方面增强了隐私保护。未经用户同意，不会自动向中心服务传输部分查询内容、关键词和指标；只有在获得同意后才会进行此类传输。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:651
+#, fuzzy
 msgid "To install Iridium, execute:"
-msgstr ""
+msgstr "要安装 Iridium，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:655
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install iridium-browser\n"
-msgstr ""
+msgstr "# pkg install iridium-browser\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:665
+#, fuzzy
 msgid ""
 "Falkon is a new-ish and very fast QtWebEngine browser.  It aims to be a "
 "lightweight web browser available on all major platforms.  Falkon has all "
@@ -1231,7 +1289,7 @@ msgid ""
 "bookmarks, history (both also in sidebar) and tabs.  Beyond that, AdBlock "
 "plugin can block ads, Click2Flash can block Flash content and SSL Manager "
 "can edit the local CA Certificates database."
-msgstr ""
+msgstr "Falkon 是一款较新的快速 QtWebEngine 浏览器，旨在成为可用于所有主流平台的轻量级 Web 浏览器。Falkon 具备人们对 Web 浏览器通常期待的各项标准功能，包括书签、历史记录（两者也可在侧边栏中查看）和标签页。此外，AdBlock 插件可以拦截广告，Click2Flash 可以拦截 Flash 内容，而 SSL Manager 可以编辑本地 CA 证书数据库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:667
@@ -1242,17 +1300,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:671
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install falkon\n"
-msgstr ""
+msgstr "# pkg install falkon\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:678
+#, fuzzy
 msgid ""
 "Konqueror is more than a web browser as it is also a file manager and a "
 "multimedia viewer.  It supports WebKit, a rendering engine used by many "
 "modern browsers including Chromium, as well as its own KHTML engine."
-msgstr ""
+msgstr "Konqueror 不仅是 Web 浏览器，也是文件管理器和多媒体查看器。它支持许多现代浏览器（包括 Chromium）使用的 WebKit 渲染引擎，也支持自己的 KHTML 引擎。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:680
@@ -1263,34 +1322,37 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:684
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install konqueror\n"
-msgstr ""
+msgstr "# pkg install konqueror\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:690
+#, fuzzy
 msgid ""
 "Gnome Web (Epiphany) is a web browser designed to be as lightweight and fast "
 "as possible, at the expense of many of the features found in other browsers."
-msgstr ""
+msgstr "Gnome Web（Epiphany）是一款 Web 浏览器，设计目标是在尽可能轻量和快速的同时，舍弃其他浏览器中的许多功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:692
+#, fuzzy
 msgid "To install Gnome Web (Epiphany), execute:"
-msgstr ""
+msgstr "要安装 Gnome Web（Epiphany），请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:696
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install epiphany\n"
-msgstr ""
+msgstr "# pkg install epiphany\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:703
+#, fuzzy
 msgid ""
 "Qutebrowser is a keyboard-focused browser with a minimal GUI.  It is based "
 "on Python and PyQt5 and free software, licensed under the GPL."
-msgstr ""
+msgstr "Qutebrowser 是一款以键盘操作为主、图形界面简洁的浏览器。它基于 Python 和 PyQt5，是一款采用 GPL 许可的自由软件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:705
@@ -1301,18 +1363,19 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:709
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install qutebrowser\n"
-msgstr ""
+msgstr "# pkg install qutebrowser\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:716
+#, fuzzy
 msgid ""
 "Dillo aims to be a multiplatform alternative browser that is small, stable, "
 "developer-friendly, usable, fast, and extensible.  This new, experimental "
 "version of Dillo is based upon FLTK toolkit, rather than GTK1, and has been "
 "substantially rewritten."
-msgstr ""
+msgstr "Dillo 旨在成为一款跨平台的替代浏览器，具有体积小、稳定、便于开发、易用、快速且可扩展等特点。这个新的实验版本基于 FLTK 工具包，而非 GTK1，并经过了大幅重写。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:718
@@ -1323,16 +1386,17 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:722
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install dillo\n"
-msgstr ""
+msgstr "# pkg install dillo\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:728
+#, fuzzy
 msgid ""
 "A lynx-like web browser with text and graphics modes with many features like "
 "displaying tables, menus, etc."
-msgstr ""
+msgstr "一款类似 Lynx 的 Web 浏览器，具有文本和图形模式，并支持显示表格、菜单等多种功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:730
@@ -1343,17 +1407,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:734
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install links\n"
-msgstr ""
+msgstr "# pkg install links\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:741
+#, fuzzy
 msgid ""
 "w3m is a pager/text-based web browser.  It is a similar application to Lynx, "
 "but it has several features Lynx does not have like rendering tables and "
 "rendering frames."
-msgstr ""
+msgstr "w3m 是一款分页器兼文本式 Web 浏览器。它与 Lynx 类似，但还支持 Lynx 不具备的一些功能，例如渲染表格和框架。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:743
@@ -1364,206 +1429,216 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:747
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install w3m\n"
-msgstr ""
+msgstr "# pkg install w3m\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/desktop/_index.adoc:750
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Development tools"
-msgstr ""
+msgstr "开发工具"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:753
+#, fuzzy
 msgid ""
 "This section describes how to install and configure some popular development "
 "tools on a FreeBSD system."
-msgstr ""
+msgstr "本节介绍如何在 FreeBSD 系统上安装和配置一些常用的开发工具。"
 
 #. type: Block title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:754
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported development tools"
-msgstr ""
+msgstr "支持的开发工具"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:760
 #: documentation/content/en/books/handbook/desktop/_index.adoc:797
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Visual Studio Code"
-msgstr ""
+msgstr "Visual Studio Code"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:762
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/vscode[]"
-msgstr ""
+msgstr "package:editors/vscode[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:765
 #: documentation/content/en/books/handbook/desktop/_index.adoc:810
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Qt Creator"
-msgstr ""
+msgstr "Qt Creator"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:766
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "QtGPL"
-msgstr ""
+msgstr "QtGPL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:767
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:devel/qtcreator[]"
-msgstr ""
+msgstr "package:devel/qtcreator[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:770
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Kdevelop"
-msgstr ""
+msgstr "Kdevelop"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:771
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 2.0 or later and LGPL 2.0 or later"
-msgstr ""
+msgstr "GPL 2.0 或更高版本及 LGPL 2.0 或更高版本"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:772
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:devel/kdevelop[]"
-msgstr ""
+msgstr "package:devel/kdevelop[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:775
 #: documentation/content/en/books/handbook/desktop/_index.adoc:843
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Eclipse IDE"
-msgstr ""
+msgstr "Eclipse IDE"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:776
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "EPL"
-msgstr ""
+msgstr "EPL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:777
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:java/eclipse[]"
-msgstr ""
+msgstr "package:java/eclipse[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:780
 #: documentation/content/en/books/handbook/desktop/_index.adoc:857
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Vim"
-msgstr ""
+msgstr "Vim"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:781
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "VIM"
-msgstr ""
+msgstr "VIM"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/vim[]"
-msgstr ""
+msgstr "package:editors/vim[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:785
 #: documentation/content/en/books/handbook/desktop/_index.adoc:874
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Neovim"
-msgstr ""
+msgstr "Neovim"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Apache 2.0"
-msgstr ""
+msgstr "Apache 2.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:787
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/neovim[]"
-msgstr ""
+msgstr "package:editors/neovim[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:790
 #: documentation/content/en/books/handbook/desktop/_index.adoc:888
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GNU Emacs"
-msgstr ""
+msgstr "GNU Emacs"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:792
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/emacs[]"
-msgstr ""
+msgstr "package:editors/emacs[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:801
+#, fuzzy
 msgid ""
 "Visual Studio Code is a type of tool that combines the simplicity of a code "
 "editor with what developers need for their core edit-build-debug cycle.  It "
 "provides comprehensive editing and debugging support, an extensibility "
 "model, and lightweight integration with existing tools."
-msgstr ""
+msgstr "Visual Studio Code 是一种工具，它将代码编辑器的简洁性与开发者在核心编辑、构建和调试周期中的需求结合起来。它提供全面的编辑和调试支持、可扩展模型，以及与现有工具的轻量级集成。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:803
+#, fuzzy
 msgid "To install Visual Studio Code, execute:"
-msgstr ""
+msgstr "要安装 Visual Studio Code，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:807
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install vscode\n"
-msgstr ""
+msgstr "# pkg install vscode\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:814
+#, fuzzy
 msgid ""
 "Qt Creator is a cross-platform IDE (integrated development environment) "
 "tailored to the needs of Qt developers.  Functionalities included with Qt "
 "Creator are:"
-msgstr ""
+msgstr "Qt Creator 是一款跨平台 IDE（集成开发环境），专为满足 Qt 开发者的需求而设计。Qt Creator 包含以下功能："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:816
+#, fuzzy
 msgid "code editor with C++, QML and ECMAscript support;"
-msgstr ""
+msgstr "支持 C++、QML 和 ECMAscript 的代码编辑器；"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:817
+#, fuzzy
 msgid "rapid code navigation tools;"
-msgstr ""
+msgstr "快速代码导航工具；"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:818
+#, fuzzy
 msgid "static code checking and style hints when typing;"
-msgstr ""
+msgstr "输入时进行静态代码检查并提供样式提示；"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:819
+#, fuzzy
 msgid "context sensitive help;"
-msgstr ""
+msgstr "上下文相关的帮助；"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:820
+#, fuzzy
 msgid "visual debugger;"
-msgstr ""
+msgstr "可视化调试器；"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:821
+#, fuzzy
 msgid "integrated GUI layout and forms designer."
-msgstr ""
+msgstr "集成的 GUI 布局和窗体设计器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:823
@@ -1574,23 +1649,24 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:827
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install qtcreator\n"
-msgstr ""
+msgstr "# pkg install qtcreator\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:830
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "kdevelop"
-msgstr ""
+msgstr "kdevelop"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:834
+#, fuzzy
 msgid ""
 "Open source, feature-full, plugin extensible IDE for C/C++ and other "
 "programming languages.  It is based on KDevPlatform and the KDE and Qt "
 "libraries, and it has been under development since 1998."
-msgstr ""
+msgstr "一款开源、功能全面且可通过插件扩展的 IDE，支持 C/C++ 及其他编程语言。它基于 KDevPlatform、KDE 和 Qt 库，自 1998 年起持续开发。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:836
@@ -1601,47 +1677,51 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:840
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install kdevelop\n"
-msgstr ""
+msgstr "# pkg install kdevelop\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:848
+#, fuzzy
 msgid ""
 "The Eclipse Platform is an open extensible IDE for anything and yet nothing "
 "in particular.  The Eclipse Platform provides building blocks and a "
 "foundation for constructing and running integrated software-development "
 "tools.  The Eclipse Platform allows tool builders to independently develop "
 "tools that integrate with other people's tools."
-msgstr ""
+msgstr "Eclipse Platform 是一款开放且可扩展的 IDE，既可用于各种用途，也不专属于任何特定用途。Eclipse Platform 提供构建和运行集成软件开发工具所需的构件和基础。它允许工具构建者独立开发工具，并与其他人开发的工具集成。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:850
+#, fuzzy
 msgid "To install Eclipse IDE, execute:"
-msgstr ""
+msgstr "要安装 Eclipse IDE，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:854
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install eclipse\n"
-msgstr ""
+msgstr "# pkg install eclipse\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:861
+#, fuzzy
 msgid ""
 "Vim is a highly configurable text editor built to enable efficient text "
 "editing.  It is an improved version of the vi editor distributed with most "
 "UNIX systems."
-msgstr ""
+msgstr "Vim 是一款高度可配置的文本编辑器，旨在实现高效的文本编辑。它是随大多数 UNIX 系统发行的 vi 编辑器的改进版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:865
+#, fuzzy
 msgid ""
 "Vim is often called a \"programmer's editor,\" and so useful for programming "
 "that many consider it an entire IDE.  It is not just for programmers, "
 "though.  Vim is perfect for all kinds of text editing, from composing email "
 "to editing configuration files."
-msgstr ""
+msgstr "Vim 常被称为“程序员的编辑器”，它对编程非常有用，以至于许多人认为它就是一套完整的 IDE。不过，它并非只适用于程序员。Vim 适用于各种文本编辑，从撰写电子邮件到编辑配置文件，都十分得心应手。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:867
@@ -1652,19 +1732,20 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:871
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install vim\n"
-msgstr ""
+msgstr "# pkg install vim\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:879
+#, fuzzy
 msgid ""
 "Neovim is an aggressive refactor of package:editors/vim[].  It represents a "
 "complete overhaul of the codebase with many sanity improvements, including "
 "sensible defaults, a built-in terminal emulator, asynchronous plugin "
 "architecture, and powerful APIs designed for speed and extensibility.  It "
 "retains full compatibility with almost all Vim plugins and scripts."
-msgstr ""
+msgstr "Neovim 是对 package:editors/vim[] 的一次大规模重构。它全面改造了代码库并进行了许多改进，包括合理的默认设置、内置终端模拟器、异步插件架构，以及为速度和可扩展性而设计的强大 API。它与几乎所有 Vim 插件和脚本完全兼容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:881
@@ -1675,17 +1756,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:885
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install neovim\n"
-msgstr ""
+msgstr "# pkg install neovim\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:892
+#, fuzzy
 msgid ""
 "GNU Emacs is an extensible, customizable, free/libre text editor.  At its "
 "core is an interpreter for Emacs Lisp, a dialect of the Lisp programming "
 "language with extensions to support text editing."
-msgstr ""
+msgstr "GNU Emacs 是一款可扩展、可定制的自由文本编辑器。其核心是 Emacs Lisp 解释器；Emacs Lisp 是 Lisp 编程语言的一种方言，并通过扩展支持文本编辑。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:894
@@ -1696,18 +1778,19 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:898
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install emacs\n"
-msgstr ""
+msgstr "# pkg install emacs\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/desktop/_index.adoc:901
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Desktop office productivity"
-msgstr ""
+msgstr "桌面办公生产力"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:906
+#, fuzzy
 msgid ""
 "When it comes to productivity, users often look for an office suite or an "
 "easy-to-use word processor.  While some desktop environments like crossref:"
@@ -1715,7 +1798,7 @@ msgid ""
 "default productivity package.  Several office suites and graphical word "
 "processors are available for FreeBSD, regardless of the installed desktop "
 "environments."
-msgstr ""
+msgstr "谈到生产力，用户通常会寻找办公套件或易用的文字处理器。尽管 KDE Plasma 等某些桌面环境（参见 crossref:desktop[kde-environment, KDE Plasma]）提供办公套件，但并没有默认的生产力软件包。无论安装了哪种桌面环境，FreeBSD 都提供多种办公套件和图形化文字处理器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:908
@@ -1729,9 +1812,9 @@ msgstr ""
 
 #. type: Block title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:909
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported Desktop office productivity suites"
-msgstr ""
+msgstr "支持的桌面办公生产力套件"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:915
@@ -1742,9 +1825,9 @@ msgstr "LibreOffice"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:917
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/libreoffice[]"
-msgstr ""
+msgstr "package:editors/libreoffice[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:920
@@ -1755,15 +1838,15 @@ msgstr "Calligra"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:921
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "LGPL and GPL"
-msgstr ""
+msgstr "LGPL 和 GPL"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:922
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/calligra[]"
-msgstr ""
+msgstr "package:editors/calligra[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:925
@@ -1774,9 +1857,9 @@ msgstr "AbiWord"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:927
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:editors/abiword[]"
-msgstr ""
+msgstr "package:editors/abiword[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:939
@@ -1803,29 +1886,31 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:941
+#, fuzzy
 msgid "To install LibreOffice, execute:"
-msgstr ""
+msgstr "要安装 LibreOffice，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:945
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install libreoffice\n"
-msgstr ""
+msgstr "# pkg install libreoffice\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:950
+#, fuzzy
 msgid ""
 "The LibreOffice package comes by default only in English.  To have a "
 "localized version of LibreOffice it is necessary to install a language "
 "pack.  For example, for the version localized in Spanish, it is necessary to "
 "install the package package:editors/libreoffice-es[] with the command:"
-msgstr ""
+msgstr "LibreOffice 软件包默认仅包含英文版本。若要使用本地化版本的 LibreOffice，需要安装语言包。例如，要使用西班牙语版本，需要通过以下命令安装 package:editors/libreoffice-es[] 软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:954
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install es-libreoffice\n"
-msgstr ""
+msgstr "# pkg install es-libreoffice\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:957
@@ -1835,49 +1920,54 @@ msgstr "Calligra"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:962
+#, fuzzy
 msgid ""
 "The KDE Plasma desktop environment includes an office suite which can be "
 "installed separately from KDE Plasma.  Calligra includes standard components "
 "that can be found in other office suites.  Words is the word processor, "
 "Sheets is the spreadsheet program, Stage manages slide presentations, and "
 "Karbon is used to draw graphical documents."
-msgstr ""
+msgstr "KDE Plasma 桌面环境包含一套办公套件，也可以脱离 KDE Plasma 单独安装。Calligra 包含其他办公套件中常见的标准组件：Words 是文字处理器，Sheets 是电子表格程序，Stage 用于制作幻灯片演示，Karbon 则用于绘制图形文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:964
+#, fuzzy
 msgid "To install Calligra, execute:"
-msgstr ""
+msgstr "要安装 Calligra，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:968
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install calligra\n"
-msgstr ""
+msgstr "# pkg install calligra\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:975
+#, fuzzy
 msgid ""
 "AbiWord is a free word processing program similar in look and feel to "
 "Microsoft(R) Word.  It is fast, contains many features, and is user-friendly."
-msgstr ""
+msgstr "AbiWord 是一款免费的文字处理程序，外观和使用体验与 Microsoft(R) Word 类似。它速度快、功能丰富且易于使用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:977
+#, fuzzy
 msgid ""
 "AbiWord can import or export many file formats, including some proprietary "
 "ones like Microsoft(R) [.filename]#.rtf#."
-msgstr ""
+msgstr "AbiWord 可以导入或导出多种文件格式，包括一些专有格式，例如 Microsoft(R) [.filename]#.rtf#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:979
+#, fuzzy
 msgid "To install AbiWord, execute:"
-msgstr ""
+msgstr "要安装 AbiWord，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:983
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install abiword\n"
-msgstr ""
+msgstr "# pkg install abiword\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/desktop/_index.adoc:986
@@ -1887,11 +1977,12 @@ msgstr "文件阅览程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:990
+#, fuzzy
 msgid ""
 "Some new document formats have gained popularity since the advent of UNIX(R) "
 "and the viewers they require may not be available in the base system.  This "
 "section demonstrates how to install the following document viewers:"
-msgstr ""
+msgstr "自 UNIX(R) 问世以来，一些新的文档格式逐渐流行起来，而查看这些格式所需的程序可能不包含在基本系统中。本节介绍如何安装以下文档查看器："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:991
@@ -1913,28 +2004,28 @@ msgstr "Okular"
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1008
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1013
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 2.0"
-msgstr ""
+msgstr "GPL 2.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:999
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:graphics/okular[]"
-msgstr ""
+msgstr "package:graphics/okular[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1002
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1038
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Evince"
-msgstr ""
+msgstr "Evince"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1004
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:graphics/evince[]"
-msgstr ""
+msgstr "package:graphics/evince[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1007
@@ -1945,9 +2036,9 @@ msgstr "ePDFView"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1009
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:graphics/epdfview[]"
-msgstr ""
+msgstr "package:graphics/epdfview[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1012
@@ -1958,48 +2049,50 @@ msgstr "Xpdf"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1014
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:graphics/xpdf[]"
-msgstr ""
+msgstr "package:graphics/xpdf[]"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1016
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1021
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "light"
-msgstr ""
+msgstr "轻量级"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1017
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1078
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Zathura"
-msgstr ""
+msgstr "Zathura"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1018
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Zlib"
-msgstr ""
+msgstr "Zlib"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1019
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:graphics/zathura[]"
-msgstr ""
+msgstr "package:graphics/zathura[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1027
+#, fuzzy
 msgid "Okular is a universal document viewer, part of the KDE Plasma project."
-msgstr ""
+msgstr "Okular 是一款通用文档查看器，是 KDE Plasma 项目的一部分。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1029
+#, fuzzy
 msgid ""
 "Okular combines excellent functionality with the versatility of supporting "
 "different kind of documents, like PDF, Postscript, DjVu, CHM, XPS, ePub and "
 "others."
-msgstr ""
+msgstr "Okular 功能强大且用途广泛，支持多种类型的文档，例如 PDF、Postscript、DjVu、CHM、XPS、ePub 等。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1031
@@ -2010,17 +2103,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1035
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install okular\n"
-msgstr ""
+msgstr "# pkg install okular\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1043
+#, fuzzy
 msgid ""
 "Evince is a document viewer for multiple document formats including PDF and "
 "Postscript.  Part of the GNOME project.  The goal of evince is to replace "
 "document viewers such as ggv and gpdf with a single, simple application."
-msgstr ""
+msgstr "Evince 是一款支持多种文档格式的查看器，包括 PDF 和 Postscript。它是 GNOME 项目的一部分。Evince 的目标是用一个简单的应用程序取代 ggv 和 gpdf 等文档查看器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1045
@@ -2031,17 +2125,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1049
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install evince\n"
-msgstr ""
+msgstr "# pkg install evince\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1056
+#, fuzzy
 msgid ""
 "ePDFView is a lightweight PDF document viewer that only uses the Gtk+ and "
 "Poppler libraries.  The aim of ePDFView is to make a simple PDF document "
 "viewer, similar to Evince but without using the GNOME libraries."
-msgstr ""
+msgstr "ePDFView 是一款轻量级 PDF 文档查看器，仅使用 Gtk+ 和 Poppler 库。ePDFView 旨在打造一款简单的 PDF 文档查看器，类似 Evince，但不依赖 GNOME 库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1058
@@ -2052,17 +2147,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1062
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install epdfview\n"
-msgstr ""
+msgstr "# pkg install epdfview\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1069
+#, fuzzy
 msgid ""
 "For users that prefer a small FreeBSD PDF viewer, Xpdf provides a light-"
 "weight and efficient viewer which requires few resources.  It uses the "
 "standard X fonts and does not require any additional toolkit."
-msgstr ""
+msgstr "对于偏好小巧 FreeBSD PDF 查看器的用户，Xpdf 提供了一款轻量且高效的查看器，所需资源很少。它使用标准 X 字体，无需任何额外工具包。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1071
@@ -2073,17 +2169,18 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1075
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install xpdf\n"
-msgstr ""
+msgstr "# pkg install xpdf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1082
+#, fuzzy
 msgid ""
 "Zathura is a highly customizable and functional document viewer. It provides "
 "a minimalistic and space saving interface as well as an easy usage that "
 "mainly focuses on keyboard interaction."
-msgstr ""
+msgstr "Zathura 是一款高度可定制且功能丰富的文档查看器。它提供简洁、节省空间的界面，使用方便，并主要通过键盘进行交互。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1084
@@ -2094,18 +2191,19 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1088
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install zathura zathura-pdf-mupdf\n"
-msgstr ""
+msgstr "# pkg install zathura zathura-pdf-mupdf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1091
+#, fuzzy
 msgid ""
 "Additionally, one can install package:graphics/zathura-pdf-poppler[] for "
 "alternative PDF support, package:graphics/zathura-ps[] for PostScript "
 "support, package:graphics/zathura-djvu[] for DjVu support, and package:"
 "graphics/zathura-cb[] for comic book support."
-msgstr ""
+msgstr "此外，还可以安装 package:graphics/zathura-pdf-poppler[] 以支持其他 PDF 格式，安装 package:graphics/zathura-ps[] 以支持 PostScript，安装 package:graphics/zathura-djvu[] 以支持 DjVu，以及安装 package:graphics/zathura-cb[] 以支持漫画书格式。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1093
@@ -2115,11 +2213,12 @@ msgstr "财务"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1097
+#, fuzzy
 msgid ""
 "For managing personal finances on a FreeBSD desktop, some powerful and easy-"
 "to-use applications can be installed.  Some are compatible with widespread "
 "file formats, such as the formats used by Quicken and Excel."
-msgstr ""
+msgstr "在 FreeBSD 桌面上管理个人财务时，可以安装一些功能强大且易于使用的应用程序。其中一些应用程序兼容常见文件格式，例如 Quicken 和 Excel 使用的格式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1099
@@ -2128,9 +2227,9 @@ msgstr "这节涵盖了下面这些软件："
 
 #. type: Block title
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Supported Finance programs"
-msgstr ""
+msgstr "支持的财务管理程序"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1106
@@ -2141,9 +2240,9 @@ msgstr "KMyMoney"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:finance/kmymoney[]"
-msgstr ""
+msgstr "package:finance/kmymoney[]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1111
@@ -2154,18 +2253,19 @@ msgstr "GnuCash"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GPL 2.0 and GPL 3.0"
-msgstr ""
+msgstr "GPL 2.0 和 GPL 3.0"
 
 #. type: Table
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "package:finance/gnucash[]"
-msgstr ""
+msgstr "package:finance/gnucash[]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1124
+#, fuzzy
 msgid ""
 "KMyMoney is a personal finance application created by the KDE community.  "
 "KMyMoney aims to provide the important features found in commercial personal "
@@ -2173,7 +2273,7 @@ msgid ""
 "double-entry accounting among its features.  KMyMoney imports from standard "
 "Quicken QIF files, tracks investments, handles multiple currencies, and "
 "provides a wealth of reports."
-msgstr ""
+msgstr "KMyMoney 是由 KDE 社区开发的个人财务管理应用程序。它旨在提供商业个人财务管理应用程序中的重要功能，同时注重易用性和规范的复式记账。KMyMoney 可导入标准 Quicken QIF 文件、跟踪投资、处理多种货币，并提供丰富的报表。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1126
@@ -2184,28 +2284,30 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install kmymoney\n"
-msgstr ""
+msgstr "# pkg install kmymoney\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1138
+#, fuzzy
 msgid ""
 "GnuCash is part of the GNOME effort to provide user-friendly, yet powerful, "
 "applications to end-users.  GnuCash can be used to keep track of income and "
 "expenses, bank accounts, and stocks.  It features an intuitive interface "
 "while remaining professional."
-msgstr ""
+msgstr "GnuCash 是 GNOME 项目的一部分，旨在为最终用户提供易用而强大的应用程序。GnuCash 可用于跟踪收入和支出、银行账户及股票。它在保持专业功能的同时，提供直观的界面。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1143
+#, fuzzy
 msgid ""
 "GnuCash provides a smart register, a hierarchical system of accounts, and "
 "many keyboard accelerators and auto-completion methods.  It can split a "
 "single transaction into several more detailed pieces.  GnuCash can import "
 "and merge Quicken QIF files.  It also handles most international date and "
 "currency formats."
-msgstr ""
+msgstr "GnuCash 提供智能账簿、分层账户体系，以及许多键盘快捷键和自动补全方式。它可以将一笔交易拆分为多个更详细的项目。GnuCash 可以导入并合并 Quicken QIF 文件，也支持大多数国际日期和货币格式。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1145
@@ -2216,9 +2318,9 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/desktop/_index.adoc:1149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install gnucash\n"
-msgstr ""
+msgstr "# pkg install gnucash\n"
 
 #~ msgid "Readers of this chapter should know how to:"
 #~ msgstr "在阅读这章之前，你必须了解如何："

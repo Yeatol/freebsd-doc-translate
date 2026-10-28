@@ -19,9 +19,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/developers-handbook/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "For people who want to develop software for FreeBSD (and not just people who are developing FreeBSD itself)"
-msgstr ""
+msgstr "面向希望为 FreeBSD 开发软件（而不只是开发 FreeBSD 本身）的人士"
 
 #. type: Title =
 #: documentation/content/en/books/developers-handbook/_index.adoc:1
@@ -37,12 +37,13 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/books/developers-handbook/_index.adoc:55
+#, fuzzy
 msgid ""
 "Welcome to the Developers' Handbook.  This manual is a _work in progress_ "
 "and is the work of many individuals.  Many sections do not yet exist and "
 "some of those that do exist need to be updated.  If you are interested in "
 "helping with this project, send email to the {freebsd-doc}."
-msgstr ""
+msgstr "欢迎阅读《开发者手册》。本手册仍在__编写中__，由许多人共同编写。许多章节尚不存在，已有的一些章节也需要更新。如果您有兴趣帮助这个项目，请发送电子邮件至 {freebsd-doc}。"
 
 #. type: .abstract-title
 #: documentation/content/en/books/developers-handbook/_index.adoc:58

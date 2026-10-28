@@ -20,9 +20,9 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/partiv.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part IV. Network Communication"
-msgstr ""
+msgstr "第四部分：网络通信"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/partiv.adoc:12
@@ -49,8 +49,9 @@ msgstr "序列通信"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/partiv.adoc:19
+#, fuzzy
 msgid "`PPP` and `PPP` over Ethernet"
-msgstr ""
+msgstr "以太网上的 `PPP` 和 `PPP`"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/partiv.adoc:20

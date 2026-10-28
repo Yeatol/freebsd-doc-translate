@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Describes the approach used by the FreeBSD release engineering team to make production quality releases of the FreeBSD Operating System. It describes the tools available for those interested in producing customized FreeBSD releases for corporate rollouts or commercial productization"
-msgstr ""
+msgstr "介绍 FreeBSD 发布工程团队用于制作生产级 FreeBSD 操作系统版本的方法，并介绍为企业部署或商业产品化定制 FreeBSD 版本时可用的工具"
 
 #. type: Title =
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:1
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:16
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD Release Engineering"
-msgstr ""
+msgstr "FreeBSD 发布工程"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:62
@@ -37,10 +37,11 @@ msgstr "摘要"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:64
+#, fuzzy
 msgid ""
 "This article describes the release engineering process of the FreeBSD "
 "Project."
-msgstr ""
+msgstr "本文介绍 FreeBSD 项目的发布工程流程。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:66
@@ -49,441 +50,463 @@ msgstr "'''"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:70
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction to the FreeBSD Release Engineering Process"
-msgstr ""
+msgstr "FreeBSD 发布工程流程简介"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:74
+#, fuzzy
 msgid ""
 "Development of FreeBSD has a very specific workflow.  In general, all "
 "changes to the FreeBSD base system are committed to the {branchHead} branch, "
 "which reflects the top of the source tree."
-msgstr ""
+msgstr "FreeBSD 的开发遵循非常明确的工作流程。通常，FreeBSD 基本系统的所有更改都会提交到 {branchHead} 分支，该分支代表源代码树的最新状态。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:77
+#, fuzzy
 msgid ""
 "After a reasonable testing period, changes can then be merged to the "
 "{branchStable} branches.  The default minimum timeframe before merging to "
 "{branchStable} branches is three (3) days."
-msgstr ""
+msgstr "经过一段合理的测试期后，更改即可合并到 {branchStable} 分支。合并到 {branchStable} 分支前的默认最短等待时间为三（3）天。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:79
+#, fuzzy
 msgid ""
 "Although a general rule to wait a minimum of three days before merging from "
 "{branchHead}, there are a few special circumstances where an immediate merge "
 "may be necessary, such as a critical security fix, or a bug fix that "
 "directly inhibits the release build process."
-msgstr ""
+msgstr "通常，从 {branchHead} 合并更改前至少要等待三天，但在某些特殊情况下可能需要立即合并，例如修复严重安全问题，或修复直接妨碍发布构建流程的错误。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:82
+#, fuzzy
 msgid ""
 "After several months, and the number of changes in the {branchStable} branch "
 "have grown significantly, it is time to release the next version of "
 "FreeBSD.  These releases have been historically referred to as \"point\" "
 "releases."
-msgstr ""
+msgstr "数月后，随着 {branchStable} 分支中的更改显著增多，就到了发布下一个 FreeBSD 版本的时候。这类版本历来称为“点”版本。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:85
+#, fuzzy
 msgid ""
 "In between releases from the {branchStable} branches, approximately every "
 "two (2) years, a release will be cut directly from {branchHead}.  These "
 "releases have been historically referred to as \"dot-zero\" releases."
-msgstr ""
+msgstr "在 {branchStable} 分支版本的发布间隔期间，大约每两（2）年会直接从 {branchHead} 切出一个版本。这类版本历来称为“点零”版本。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:87
+#, fuzzy
 msgid ""
 "This article will highlight the workflow and responsibilities of the "
 "{teamRe} for both \"dot-zero\" and \"point\"' releases."
-msgstr ""
+msgstr "本文将介绍 {teamRe} 负责“点零”和“点”版本时的工作流程与职责。"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:89
+#, fuzzy
 msgid "The following sections of this article describe:"
-msgstr ""
+msgstr "本文的以下各节将介绍："
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:90
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-prep, General Information and Preparation]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-prep, 发布的一般信息与准备工作]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:92
+#, fuzzy
 msgid "General information and preparation before starting the release cycle."
-msgstr ""
+msgstr "启动发布周期前的一般信息与准备工作。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:93
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-website, Website Changes During the Release Cycle]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-website, 发布周期中的网站更改]"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:95
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website Changes During the Release Cycle"
-msgstr ""
+msgstr "发布周期中的网站更改"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-terms, Release Engineering Terminology]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-terms, 发布工程术语]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:98
+#, fuzzy
 msgid ""
 "Terminology and general information, such as the \"code slush\" and \"code "
 "freeze\", used throughout this document."
-msgstr ""
+msgstr "本文中使用的术语和一般信息，例如“代码缓冲期”和“代码冻结”。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:99
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-head, Release from {branchHead}]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-head, 从 {branchHead} 发布]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:101
+#, fuzzy
 msgid "The Release Engineering process for a \"dot-zero\" release."
-msgstr ""
+msgstr "“点零”版本的发布工程流程。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:102
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-stable, Release from {branchStable}]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-stable, 从 {branchStable} 发布]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:104
+#, fuzzy
 msgid "The Release Engineering process for a \"point\" release."
-msgstr ""
+msgstr "“点”版本的发布工程流程。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-building, Building FreeBSD Installation Media]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-building, 构建 FreeBSD 安装介质]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:107
+#, fuzzy
 msgid ""
 "Information related to the specific procedures to build installation medium."
-msgstr ""
+msgstr "构建安装介质的具体步骤相关信息。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:108
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-mirrors, Publishing FreeBSD Installation Media to Project Mirrors]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-mirrors, 将 FreeBSD 安装介质发布到项目镜像站]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:110
+#, fuzzy
 msgid "Procedures to publish installation medium."
-msgstr ""
+msgstr "发布安装介质的步骤。"
 
 #. type: Labeled list
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:111
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "crossref:freebsd-releng[releng-wrapup, Wrapping up the Release Cycle]"
-msgstr ""
+msgstr "crossref:freebsd-releng[releng-wrapup, 完成发布周期]"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:113
+#, fuzzy
 msgid "Wrapping up the release cycle."
-msgstr ""
+msgstr "完成发布周期。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Information and Preparation"
-msgstr ""
+msgstr "一般信息与准备工作"
 
 #. type: .abstract-title
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:120
+#, fuzzy
 msgid ""
 "Approximately two months before the start of the release cycle, the {teamRe} "
 "decides on a schedule for the release.  The schedule includes the various "
 "milestone points of the release cycle, such as freeze dates, branch dates, "
 "and build dates.  For example:"
-msgstr ""
+msgstr "发布周期开始前约两个月，{teamRe} 会确定发布计划。计划包括发布周期的各个里程碑，例如冻结日期、分支日期和构建日期。例如："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Milestone"
-msgstr ""
+msgstr "里程碑"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Anticipated Date"
-msgstr ""
+msgstr "预计日期"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchHead} slush:"
-msgstr ""
+msgstr "{branchHead} 缓冲期："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "May 27, 2016"
-msgstr ""
+msgstr "2016 年 5 月 27 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchHead} freeze:"
-msgstr ""
+msgstr "{branchHead} 冻结："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "June 10, 2016"
-msgstr ""
+msgstr "2016 年 6 月 10 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchHead} KBI freeze:"
-msgstr ""
+msgstr "{branchHead} KBI 冻结："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:136
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "June 24, 2016"
-msgstr ""
+msgstr "2016 年 6 月 24 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`doc/` tree slush [1]:"
-msgstr ""
+msgstr "`doc/` 树缓冲期 [1]："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports quarterly branch [2]:"
-msgstr ""
+msgstr "Ports 季度分支 [2]："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 1, 2016"
-msgstr ""
+msgstr "2016 年 7 月 1 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchStablex} branch:"
-msgstr ""
+msgstr "{branchStablex} 分支："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:145
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:148
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 8, 2016"
-msgstr ""
+msgstr "2016 年 7 月 8 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`doc/` tree tag [3]:"
-msgstr ""
+msgstr "`doc/` 树打标签 [3]："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BETA1 build starts:"
-msgstr ""
+msgstr "开始构建 BETA1："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchHead} thaw:"
-msgstr ""
+msgstr "{branchHead} 解冻："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 9, 2016"
-msgstr ""
+msgstr "2016 年 7 月 9 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BETA2 build starts:"
-msgstr ""
+msgstr "开始构建 BETA2："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 15, 2016"
-msgstr ""
+msgstr "2016 年 7 月 15 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "BETA3 build starts [*]:"
-msgstr ""
+msgstr "开始构建 BETA3 [*]："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 22, 2016"
-msgstr ""
+msgstr "2016 年 7 月 22 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchRelengx} branch:"
-msgstr ""
+msgstr "{branchRelengx} 分支："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:163
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 29, 2016"
-msgstr ""
+msgstr "2016 年 7 月 29 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RC1 build starts:"
-msgstr ""
+msgstr "开始构建 RC1："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{branchStablex} thaw:"
-msgstr ""
+msgstr "{branchStablex} 解冻："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "July 30, 2016"
-msgstr ""
+msgstr "2016 年 7 月 30 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RC2 build starts:"
-msgstr ""
+msgstr "开始构建 RC2："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "August 5, 2016"
-msgstr ""
+msgstr "2016 年 8 月 5 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Final Ports package builds [4]:"
-msgstr ""
+msgstr "Ports 最终软件包构建 [4]："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "August 6, 2016"
-msgstr ""
+msgstr "2016 年 8 月 6 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports release tag:"
-msgstr ""
+msgstr "Ports 发布标签："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:178
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "August 12, 2016"
-msgstr ""
+msgstr "2016 年 8 月 12 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RC3 build starts [*]:"
-msgstr ""
+msgstr "开始构建 RC3 [*]："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RELEASE build starts:"
-msgstr ""
+msgstr "开始构建 RELEASE："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "August 19, 2016"
-msgstr ""
+msgstr "2016 年 8 月 19 日"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RELEASE announcement:"
-msgstr ""
+msgstr "发布 RELEASE 公告："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:186
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "September 2, 2016"
-msgstr ""
+msgstr "2016 年 9 月 2 日"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:191
+#, fuzzy
 msgid "Items marked with \"[*]\" are \"as needed\"."
-msgstr ""
+msgstr "标有“[*]”的项目表示“按需”进行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:194
+#, fuzzy
 msgid "The `doc/` tree slush is coordinated by the {teamDoceng}."
-msgstr ""
+msgstr "`doc/` 树缓冲期由 {teamDoceng} 协调。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:195
+#, fuzzy
 msgid ""
 "The Ports quarterly branch used is determined by when the final `RC` build "
 "is planned. A new quarterly branch is created on the first day of the "
 "quarter, so this metric should be used when taking the release cycle "
 "milestones into account. The quarterly branch is created by the "
 "{teamPortmgr}."
-msgstr ""
+msgstr "所使用的 Ports 季度分支取决于计划进行最后一次 `RC` 构建的时间。新的季度分支会在季度第一天创建，因此制定发布周期里程碑时应考虑这一时间安排。季度分支由 {teamPortmgr} 创建。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:196
+#, fuzzy
 msgid "The `doc/` tree is tagged by the {teamDoceng}."
-msgstr ""
+msgstr "`doc/` 树由 {teamDoceng} 打标签。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:197
+#, fuzzy
 msgid ""
 "The final Ports package build is done by the {teamPortmgr} after the final "
 "(or what is expected to be final) `RC` build."
-msgstr ""
+msgstr "最后一次（或预计为最后一次）`RC` 构建完成后，由 {teamPortmgr} 执行 Ports 最终软件包构建。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:201
+#, fuzzy
 msgid ""
 "If the release is being created from an existing {branchStable} branch, the "
 "KBI freeze date can be excluded, since the KBI is already considered frozen "
 "on established {branchStable} branches."
-msgstr ""
+msgstr "如果发布版本基于现有的 {branchStable} 分支创建，则可省略 KBI 冻结日期，因为成熟的 {branchStable} 分支已被视为处于 KBI 冻结状态。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:206
+#, fuzzy
 msgid ""
 "When writing the release cycle schedule, a number of things need to be taken "
 "into consideration, in particular milestones where the target date depends "
@@ -492,36 +515,40 @@ msgid ""
 "the time of the last `RC`.  This in part defines which quarterly branch is "
 "used, when the release tag can happen, and what revision of the ports tree "
 "is used for the final `RELEASE` build."
-msgstr ""
+msgstr "编写发布周期计划时，需要考虑多项因素，尤其是目标日期取决于其他预定里程碑的里程碑。例如，Ports Collection 的发布标签来自最后一次 `RC` 时处于活动状态的季度分支。这在一定程度上决定了使用哪个季度分支、何时可以创建发布标签，以及最终 `RELEASE` 构建使用哪个版本的 ports 树。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:208
+#, fuzzy
 msgid ""
 "After general agreement on the schedule, the {teamRe} emails the schedule to "
 "the FreeBSD Developers."
-msgstr ""
+msgstr "计划达成普遍共识后，{teamRe} 会通过电子邮件将计划发送给 FreeBSD 开发者。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:211
+#, fuzzy
 msgid ""
 "It is somewhat typical that many developers will inform the {teamRe} about "
 "various works-in-progress.  In some cases, an extension for the in-progress "
 "work will be requested, and in other cases, a request for \"blanket approval"
 "\" to a particular subset of the tree will be made."
-msgstr ""
+msgstr "许多开发者通常会向 {teamRe} 通报各种进行中的工作。有时会有人请求延长进行中工作的期限；另一些情况下，则会请求对树中特定子集给予“全面批准”。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:215
+#, fuzzy
 msgid ""
 "When such requests are made, it is important to make sure timelines (even if "
 "estimated) are discussed.  For blanket approvals, the length of time for the "
 "blanket approval should be made clear.  For example, a FreeBSD developer may "
 "request blanket approvals from the start of the code slush until the start "
 "of the `RC` builds."
-msgstr ""
+msgstr "提出此类请求时，务必讨论时间安排（即使只是估算）。对于全面批准，应明确批准的有效期限。例如，FreeBSD 开发者可能会请求从代码缓冲期开始到 `RC` 构建开始期间获得全面批准。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:220
+#, fuzzy
 msgid ""
 "To keep track of blanket approvals, the {teamRe} uses an internal repository "
 "to keep a running log of such requests, which defines the area upon which a "
@@ -530,184 +557,203 @@ msgid ""
 "granting blanket approval to [.filename]#release/doc/# to all {teamRe} "
 "members until the final `RC` to update the release notes and other release-"
 "related documentation."
-msgstr ""
+msgstr "为跟踪全面批准，{teamRe} 使用内部仓库持续记录此类请求，其中会注明获准全面批准的范围、作者、批准到期时间以及批准理由。例如，可以向所有 {teamRe} 成员授予对 [.filename]#release/doc/# 的全面批准，直至最终 `RC`，以便更新发行说明和其他与发布相关的文档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:225
+#, fuzzy
 msgid ""
 "The {teamRe} also uses this repository to track pending approval requests "
 "that are received just prior to starting various builds during the release "
 "cycle, which the Release Engineer specifies the cutoff period with an email "
 "to the FreeBSD developers."
-msgstr ""
+msgstr "{teamRe} 还使用此仓库跟踪发布周期中各项构建开始前收到的待审批请求。发布工程师会通过电子邮件向 FreeBSD 开发者说明截止时间。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:228
+#, fuzzy
 msgid ""
 "Depending on the underlying set of code in question, and the overall impact "
 "the set of code has on FreeBSD as a whole, such requests may be approved or "
 "denied by the {teamRe}."
-msgstr ""
+msgstr "{teamRe} 会根据相关代码的具体内容及其对整个 FreeBSD 的总体影响，批准或拒绝此类请求。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:232
+#, fuzzy
 msgid ""
 "The same applies to work-in-progress extensions.  For example, in-progress "
 "work for a new device driver that is otherwise isolated from the rest of the "
 "tree may be granted an extension.  A new scheduler, however, may not be "
 "feasible, especially if such dramatic changes do not exist in another branch."
-msgstr ""
+msgstr "进行中工作的延期申请也适用同样的规则。例如，与树中其他部分相互独立的新设备驱动程序开发工作可能会获准延期。但新的调度器可能不适合延期，尤其是在其他分支中没有类似重大更改的情况下。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:234
+#, fuzzy
 msgid ""
 "The schedule is also added to the Project website, in the `doc/` repository, "
 "in [.filename]#~/website/content/en/releases/{branchRevision}R/schedule."
 "adoc#. This file is continuously updated as the release cycle progresses."
-msgstr ""
+msgstr "计划也会添加到项目网站的 `doc/` 仓库中，路径为 [.filename]#~/website/content/en/releases/{branchRevision}R/schedule.adoc#。随着发布周期推进，该文件会持续更新。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:238
+#, fuzzy
 msgid ""
 "In most cases, the [.filename]#schedule.adoc# can be copied from a prior "
 "release and updated accordingly."
-msgstr ""
+msgstr "在大多数情况下，可以复制先前版本的 [.filename]#schedule.adoc# 并据此更新。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:241
+#, fuzzy
 msgid ""
 "In addition to adding [.filename]#schedule.adoc# to the website, [."
 "filename]#~/shared/releases.adoc# is also updated to add the link to the "
 "schedule to various subpages, as well as enabling the link to the schedule "
 "on the Project website index page."
-msgstr ""
+msgstr "除了将 [.filename]#schedule.adoc# 添加到网站外，还会更新 [.filename]#~/shared/releases.adoc#，以便在各个子页面添加计划链接，并在项目网站索引页启用该链接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:243
+#, fuzzy
 msgid ""
 "The schedule is also linked from [.filename]#~/website/content/en/releng/"
 "_index.adoc#."
-msgstr ""
+msgstr "计划也会从 [.filename]#~/website/content/en/releng/_index.adoc# 链接。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:245
+#, fuzzy
 msgid ""
 "Approximately one month prior to the scheduled \"code slush\", the {teamRe} "
 "sends a reminder email to the FreeBSD Developers."
-msgstr ""
+msgstr "计划的“代码缓冲期”开始前约一个月，{teamRe} 会向 FreeBSD 开发者发送提醒邮件。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release Engineering Terminology"
-msgstr ""
+msgstr "发布工程术语"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:250
+#, fuzzy
 msgid ""
 "This section describes some of the terminology used throughout the rest of "
 "this document."
-msgstr ""
+msgstr "本节介绍本文其余部分中使用的一些术语。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:252
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Code Slush"
-msgstr ""
+msgstr "代码缓冲期"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:255
+#, fuzzy
 msgid ""
 "Although the code slush is not a hard freeze on the tree, the {teamRe} "
 "requests that bugs in the existing code base take priority over new features."
-msgstr ""
+msgstr "代码缓冲期并不意味着冻结代码树，但 {teamRe} 要求优先修复现有代码库中的错误，而不是开发新功能。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:257
+#, fuzzy
 msgid "The code slush does not enforce commit approvals to the branch."
-msgstr ""
+msgstr "代码缓冲期不会要求分支提交必须获得批准。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The Code Freeze"
-msgstr ""
+msgstr "代码冻结"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:262
+#, fuzzy
 msgid ""
 "The code freeze marks the point in time where all commits to the branch "
 "require explicit approval from the {teamRe}."
-msgstr ""
+msgstr "代码冻结标志着分支中的所有提交都必须获得 {teamRe} 明确批准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:265
+#, fuzzy
 msgid ""
 "The FreeBSD Git repository contains several hooks to perform sanity checks "
 "before any commit is actually committed to the tree.  One of these hooks "
 "will evaluate if committing to a particular branch requires specific "
 "approval."
-msgstr ""
+msgstr "FreeBSD Git 仓库包含多个钩子，会在实际向代码树提交之前执行合理性检查。其中一个钩子会检查向特定分支提交是否需要获得批准。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:267
+#, fuzzy
 msgid ""
 "To enforce commit approvals by the {teamRe}, the Release Engineering Team "
 "must approve any changes to the branch, in which case the commit log must "
 "include an `Approved by: re (login)` line, where \"login\" is the login ID "
 "of the approver."
-msgstr ""
+msgstr "为落实 {teamRe} 的提交审批要求，Release Engineering Team 必须批准对分支所做的任何更改；此时提交日志必须包含一行 `Approved by: re (login)`，其中“login”是批准者的登录 ID。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:271
+#, fuzzy
 msgid ""
 "During the code freeze, FreeBSD committers are urged to follow the link:"
 "https://wiki.freebsd.org/Releng/ChangeRequestGuidelines[Change Request "
 "Guidelines]."
-msgstr ""
+msgstr "代码冻结期间，FreeBSD 提交者应遵循 link:https://wiki.freebsd.org/Releng/ChangeRequestGuidelines[变更请求指南]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "The KBI/KPI Freeze"
-msgstr ""
+msgstr "KBI/KPI 冻结"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:278
+#, fuzzy
 msgid ""
 "KBI/KPI stability implies that the caller of a function across two different "
 "releases of software that implement the function results in the same end "
 "state.  The caller, whether it is a process, thread, or function, expects "
 "the function to operate in a certain way, otherwise the KBI/KPI stability on "
 "the branch is broken."
-msgstr ""
+msgstr "KBI/KPI 稳定性意味着，在两个不同的软件版本中调用实现该函数的函数，都会得到相同的最终状态。调用方无论是进程、线程还是函数，都期望该函数以特定方式运行；否则，该分支的 KBI/KPI 稳定性就会遭到破坏。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:283
+#, fuzzy
 msgid ""
 "This section describes the changes to the website that should occur as the "
 "release cycle progresses."
-msgstr ""
+msgstr "本节介绍随着发行周期推进，网站应进行的更改。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:287
+#, fuzzy
 msgid ""
 "The files specified throughout this section are relative to the `{branchHead}"
 "` branch of the `doc` repository."
-msgstr ""
+msgstr "本节中指定的文件均相对于 `doc` 仓库的 `{branchHead}` 分支。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website Changes Before the Release Cycle Begins"
-msgstr ""
+msgstr "发行周期开始前的网站更改"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:293
+#, fuzzy
 msgid ""
 "When the release cycle schedule is available, these files need to be updated "
 "to enable different functionalities on the FreeBSD Project website:"
-msgstr ""
+msgstr "发行周期日程确定后，需要更新以下文件，以便在 FreeBSD 项目网站上启用不同的功能："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:298
@@ -717,9 +763,9 @@ msgstr ""
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:491
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:547
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:637
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File to Edit"
-msgstr ""
+msgstr "要编辑的文件"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:300
@@ -730,105 +776,109 @@ msgstr ""
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:549
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:639
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:767
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "What to Change"
-msgstr ""
+msgstr "要更改的内容"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:301
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:304
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/shared/releases.adoc#"
-msgstr ""
+msgstr "[.filename]#~/shared/releases.adoc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:303
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Change `beta-upcoming` from `IGNORE` to `INCLUDE`"
-msgstr ""
+msgstr "将 `beta-upcoming` 从 `IGNORE` 改为 `INCLUDE`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:306
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Change `beta-testing` from `IGNORE` to `INCLUDE`"
-msgstr ""
+msgstr "将 `beta-testing` 从 `IGNORE` 改为 `INCLUDE`"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website Changes During `BETA` or `RC`"
-msgstr ""
+msgstr "`BETA` 或 `RC` 期间的网站更改"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:312
+#, fuzzy
 msgid ""
 "When transitioning from `PRERELEASE` to `BETA`, these files need to be "
 "updated to enable the \"Help Test\" block on the download page. All files "
 "are relative to [.filename]#head/# in the `doc` repository:"
-msgstr ""
+msgstr "从 `PRERELEASE` 过渡到 `BETA` 时，需要更新以下文件，以便在下载页面启用“帮助测试”区块。所有文件均相对于 `doc` 仓库中的 [.filename]#head/#："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `betarel-vers` to `BETA__1__`"
-msgstr ""
+msgstr "将 `betarel-vers` 更新为 `BETA__1__`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/data/en/news/news.toml#"
-msgstr ""
+msgstr "[.filename]#~/website/data/en/news/news.toml#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Add an entry announcing the `BETA`"
-msgstr ""
+msgstr "添加一条宣布 `BETA` 的条目"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:326
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:789
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/static/security/advisory-template.txt#"
-msgstr ""
+msgstr "[.filename]#~/website/static/security/advisory-template.txt#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:328
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:330
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Add the new `BETA`, `RC`, or final `RELEASE` to the template"
-msgstr ""
+msgstr "将新的 `BETA`、`RC` 或最终的 `RELEASE` 添加到模板中"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:329
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:792
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/static/security/errata-template.txt#"
-msgstr ""
+msgstr "[.filename]#~/website/static/security/errata-template.txt#"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:333
+#, fuzzy
 msgid ""
 "Once the {branchRelengx} branch is created, the various release-related "
 "documents need to be added to the `doc/` repository."
-msgstr ""
+msgstr "创建 {branchRelengx} 分支后，需要将各种与发行版相关的文档添加到 `doc/` 仓库。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:337
+#, fuzzy
 msgid ""
 "The relevant release-related documents exist in the [.filename]#doc# "
 "repository for FreeBSD 12.x and later."
-msgstr ""
+msgstr "FreeBSD 12.x 及更高版本的相关发行版文档位于 [.filename]#doc# 仓库中。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports Changes During `BETA`, `RC`, and the Final `RELEASE`"
-msgstr ""
+msgstr "`BETA`、`RC` 和最终 `RELEASE` 期间的 Ports 更改"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:344
+#, fuzzy
 msgid ""
 "For each build during the release cycle, the `MANIFEST` files containing the "
 "`SHA256` of the various distribution sets, such as `base.txz`, `kernel.txz`, "
@@ -836,117 +886,126 @@ msgid ""
 "This allows utilities other than man:bsdinstall[8], such as package:ports-"
 "mgmt/poudriere[], to safely use these distribution sets by providing a "
 "mechanism through which the checksums can be verified."
-msgstr ""
+msgstr "在发行周期的每次构建中，包含各个发行集（例如 `base.txz`、`kernel.txz` 等）的 `SHA256` 值的 `MANIFEST` 文件都会添加到 package:misc/freebsd-release-manifests[] port 中。这样，package:ports-mgmt/poudriere[] 等 man:bsdinstall[8] 以外的工具便可安全地使用这些发行集，因为该 port 提供了一种验证校验和的机制。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release from {branchHead}"
-msgstr ""
+msgstr "从 {branchHead} 发行"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:349
+#, fuzzy
 msgid ""
 "This section describes the general procedures of the FreeBSD release cycle "
 "from the {branchHead} branch."
-msgstr ""
+msgstr "本节介绍从 `{branchHead}` 分支进行 FreeBSD 发行的一般流程。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:351
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD \"`ALPHA`\" Builds"
-msgstr ""
+msgstr "FreeBSD“`ALPHA`”构建"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:355
+#, fuzzy
 msgid ""
 "Starting with the FreeBSD 10.0-RELEASE cycle, the notion of \"`ALPHA`\" "
 "builds was introduced.  Unlike the `BETA` and `RC` builds, `ALPHA` builds "
 "are not included in the FreeBSD Release schedule."
-msgstr ""
+msgstr "从 FreeBSD 10.0-RELEASE 发行周期开始，引入了“`ALPHA`”构建的概念。与 `BETA` 和 `RC` 构建不同，`ALPHA` 构建不列入 FreeBSD 发行日程。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:357
+#, fuzzy
 msgid ""
 "The idea behind `ALPHA` builds is to provide regular FreeBSD-provided builds "
 "before the creation of the {branchStable} branch."
-msgstr ""
+msgstr "`ALPHA` 构建旨在于创建 `{branchStable}` 分支之前，定期提供由 FreeBSD 项目构建的版本。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:359
+#, fuzzy
 msgid "FreeBSD `ALPHA` snapshots should be built approximately once a week."
-msgstr ""
+msgstr "FreeBSD `ALPHA` 快照应大约每周构建一次。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:362
+#, fuzzy
 msgid ""
 "For the first `ALPHA` build, the `BRANCH` value in [.filename]#sys/conf/"
 "newvers.sh# needs to be changed from `CURRENT` to `ALPHA1`.  For subsequent "
 "`ALPHA` builds, increment each `ALPHA__N__` value by one."
-msgstr ""
+msgstr "首次 `ALPHA` 构建时，需要将 [.filename]#sys/conf/newvers.sh# 中的 `BRANCH` 值从 `CURRENT` 改为 `ALPHA1`。后续的 `ALPHA` 构建中，每次将 `ALPHA__N__` 的值递增 1。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:364
+#, fuzzy
 msgid ""
 "See crossref:freebsd-releng[releng-building, Building FreeBSD Installation "
 "Media] for information on building the `ALPHA` images."
-msgstr ""
+msgstr "有关构建 `ALPHA` 镜像的信息，请参见 crossref:freebsd-releng[releng-building, 构建 FreeBSD 安装介质]。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the {branchStablex} Branch"
-msgstr ""
+msgstr "创建 {branchStablex} 分支"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:371
+#, fuzzy
 msgid ""
 "When creating the {branchStable} branch, several changes are required in "
 "both the new {branchStable} branch and the {branchHead} branch.  The files "
 "listed are relative to the repository root.  To create the new "
 "{branchStablex} branch in Git:"
-msgstr ""
+msgstr "创建 `{branchStable}` 分支时，需要在新的 `{branchStable}` 分支和 `{branchHead}` 分支中进行若干更改。下列文件路径均相对于仓库根目录。要在 Git 中创建新的 `{branchStablex}` 分支："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:375
+#, fuzzy
 msgid "Make sure that you are in the {branchHead} branch"
-msgstr ""
+msgstr "确保当前位于 `{branchHead}` 分支"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git checkout -b {branchStablex}\n"
-msgstr ""
+msgstr "% git checkout -b {branchStablex}\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:383
+#, fuzzy
 msgid ""
 "Once the {branchStablex} branch has been created, make the following edits:"
-msgstr ""
+msgstr "创建 `{branchStablex}` 分支后，请进行以下编辑："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:391
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:446
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:643
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#UPDATING#"
-msgstr ""
+msgstr "[.filename]#UPDATING#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:393
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the FreeBSD version, and remove the notice about `WITNESS`"
-msgstr ""
+msgstr "更新 FreeBSD 版本，并删除有关 `WITNESS` 的提示"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib/jemalloc/include/jemalloc/jemalloc_FreeBSD.h#"
-msgstr ""
+msgstr "[.filename]#contrib/jemalloc/include/jemalloc/jemalloc_FreeBSD.h#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "[source,shell,subs=\"attributes\"]\n"
 "....\n"
@@ -954,76 +1013,76 @@ msgid ""
 "#define MALLOC_PRODUCTION\n"
 "#endif\n"
 "...."
-msgstr ""
+msgstr "[source,shell,subs=\"attributes\"]\n....\n#ifndef MALLOC_PRODUCTION\n#define MALLOC_PRODUCTION\n#endif\n...."
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:404
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:464
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:500
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#lib/clang/llvm.build.mk#"
-msgstr ""
+msgstr "[.filename]#lib/clang/llvm.build.mk#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:406
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Uncomment `-DNDEBUG`"
-msgstr ""
+msgstr "取消注释 `-DNDEBUG`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:407
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/\\*/conf/GENERIC*#"
-msgstr ""
+msgstr "[.filename]#sys/\\*/conf/GENERIC*#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:409
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove debugging support"
-msgstr ""
+msgstr "删除调试支持"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/*/conf/MINIMAL#"
-msgstr ""
+msgstr "[.filename]#sys/*/conf/MINIMAL#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:413
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#release/release.conf.sample#"
-msgstr ""
+msgstr "[.filename]#release/release.conf.sample#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `SRCBRANCH`"
-msgstr ""
+msgstr "更新 `SRCBRANCH`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:416
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/*/conf/GENERIC-NODEBUG#"
-msgstr ""
+msgstr "[.filename]#sys/*/conf/GENERIC-NODEBUG#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove these kernel configurations"
-msgstr ""
+msgstr "删除这些内核配置"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/arm/conf/std.arm*#"
-msgstr ""
+msgstr "[.filename]#sys/arm/conf/std.arm*#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove debugging options"
-msgstr ""
+msgstr "删除调试选项"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:422
@@ -1032,267 +1091,275 @@ msgstr ""
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:550
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:565
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:640
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/conf/newvers.sh#"
-msgstr ""
+msgstr "[.filename]#sys/conf/newvers.sh#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the `BRANCH` value to reflect `BETA1`"
-msgstr ""
+msgstr "更新 `BRANCH` 值，使其反映 `BETA1`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:425
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#share/mk/src.opts.mk#"
-msgstr ""
+msgstr "[.filename]#share/mk/src.opts.mk#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Move `REPRODUCIBLE_BUILD` from `\\__DEFAULT_NO_OPTIONS` to `__DEFAULT_YES_OPTIONS`"
-msgstr ""
+msgstr "将 `REPRODUCIBLE_BUILD` 从 `\\__DEFAULT_NO_OPTIONS` 移至 `__DEFAULT_YES_OPTIONS`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Move `LLVM_ASSERTIONS` from `\\__DEFAULT_YES_OPTIONS` to `__DEFAULT_NO_OPTIONS`"
-msgstr ""
+msgstr "将 `LLVM_ASSERTIONS` 从 `\\__DEFAULT_YES_OPTIONS` 移至 `__DEFAULT_NO_OPTIONS`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:431
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#libexec/rc/rc.conf#"
-msgstr ""
+msgstr "[.filename]#libexec/rc/rc.conf#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Set `dumpdev` from `AUTO` to `NO` (it is configurable via for those that want it enabled by default)"
-msgstr ""
+msgstr "将 `dumpdev` 从 `AUTO` 设为 `NO`（希望默认启用该功能的用户可以配置此项）"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#release/Makefile#"
-msgstr ""
+msgstr "[.filename]#release/Makefile#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:435
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove the `debug.witness.trace` entries"
-msgstr ""
+msgstr "删除 `debug.witness.trace` 条目"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:438
+#, fuzzy
 msgid ""
 "Then in the {branchHead} branch, which will now become a new major version:"
-msgstr ""
+msgstr "然后，在现将成为新主版本的 `{branchHead}` 分支中："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:448
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the FreeBSD version"
-msgstr ""
+msgstr "更新 FreeBSD 版本"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:451
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the `BRANCH` value to reflect `CURRENT`, and increment `REVISION`"
-msgstr ""
+msgstr "更新 `BRANCH` 值，使其反映 `CURRENT`，并递增 `REVISION`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:452
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:497
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#Makefile.inc1#"
-msgstr ""
+msgstr "[.filename]#Makefile.inc1#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `TARGET_TRIPLE` and `MACHINE_TRIPLE`"
-msgstr ""
+msgstr "更新 `TARGET_TRIPLE` 和 `MACHINE_TRIPLE`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:455
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:553
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/sys/param.h#"
-msgstr ""
+msgstr "[.filename]#sys/sys/param.h#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:457
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:555
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:569
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `__FreeBSD_version`"
-msgstr ""
+msgstr "更新 `__FreeBSD_version`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#gnu/usr.bin/cc/cc_tools/freebsd-native.h#"
-msgstr ""
+msgstr "[.filename]#gnu/usr.bin/cc/cc_tools/freebsd-native.h#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `FBSD_MAJOR` and `FBSD_CC_VER`"
-msgstr ""
+msgstr "更新 `FBSD_MAJOR` 和 `FBSD_CC_VER`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:461
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#contrib/gcc/config.gcc#"
-msgstr ""
+msgstr "[.filename]#contrib/gcc/config.gcc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Append the `freebsdversion.h` section"
-msgstr ""
+msgstr "附加 `freebsdversion.h` 部分"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the value of `OS_VERSION`"
-msgstr ""
+msgstr "更新 `OS_VERSION` 的值"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:467
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#lib/clang/freebsd_cc_version.h#"
-msgstr ""
+msgstr "[.filename]#lib/clang/freebsd_cc_version.h#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `FREEBSD_CC_VERSION`"
-msgstr ""
+msgstr "更新 `FREEBSD_CC_VERSION`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#lib/clang/include/lld/Common/Version.inc#"
-msgstr ""
+msgstr "[.filename]#lib/clang/include/lld/Common/Version.inc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:472
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `LLD_REVISION_STRING`"
-msgstr ""
+msgstr "更新 `LLD_REVISION_STRING`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:473
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#Makefile.libcompat#"
-msgstr ""
+msgstr "[.filename]#Makefile.libcompat#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:474
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:504
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `LIB32CPUFLAGS`"
-msgstr ""
+msgstr "更新 `LIB32CPUFLAGS`"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:477
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release from {branchStable}"
-msgstr ""
+msgstr "从 {branchStable} 发行"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:480
+#, fuzzy
 msgid ""
 "This section describes the general procedures of the FreeBSD release cycle "
 "from an established {branchStable} branch."
-msgstr ""
+msgstr "本节介绍从已建立的 `{branchStable}` 分支进行 FreeBSD 发行的一般流程。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:482
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD `stable` Branch Code Slush"
-msgstr ""
+msgstr "FreeBSD `stable` 分支代码冻结准备阶段"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:486
+#, fuzzy
 msgid ""
 "In preparation for the code freeze on a `stable` branch, several files need "
 "to be updated to reflect the release cycle is officially in progress.  These "
 "files are all relative to the top-most level of the stable branch:"
-msgstr ""
+msgstr "为准备 `stable` 分支的代码冻结，需要更新若干文件，以表明发行周期已正式开始。这些文件的路径均相对于 stable 分支的顶层目录："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:496
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the `BRANCH` value to reflect `PRERELEASE`"
-msgstr ""
+msgstr "更新 `BRANCH` 值，使其反映 `PRERELEASE`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `TARGET_TRIPLE`"
-msgstr ""
+msgstr "更新 `TARGET_TRIPLE`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:502
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `OS_VERSION`"
-msgstr ""
+msgstr "更新 `OS_VERSION`"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:507
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD `BETA` Builds"
-msgstr ""
+msgstr "FreeBSD `BETA` 构建"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:512
+#, fuzzy
 msgid ""
 "Following the code slush, the next phase of the release cycle is the code "
 "freeze.  This is the point at which all commits to the stable branch require "
 "explicit approval from the {teamRe}.  This is enforced by {git-admin-email} "
 "who handles the repository."
-msgstr ""
+msgstr "代码冻结准备阶段之后，发行周期的下一阶段是代码冻结。此时，向 stable 分支提交的所有更改都必须获得 {teamRe} 的明确批准。负责管理仓库的 {git-admin-email} 将负责执行这一要求。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:517
+#, fuzzy
 msgid ""
 "There are two general exceptions to requiring commit approval during the "
 "release cycle.  The first is any change that needs to be committed by the "
 "Release Engineer to proceed with the day-to-day workflow of the release "
 "cycle, the other is security fixes that may occur during the release cycle."
-msgstr ""
+msgstr "发行周期内，提交更改通常有两种例外情况。第一种是发行工程师为推进发行周期的日常工作流程而必须提交的任何更改；另一种是在发行周期内可能出现的安全修复。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:521
+#, fuzzy
 msgid ""
 "Once the code freeze is in effect, the next build from the branch is labeled "
 "`BETA1`.  This is done by updating the `BRANCH` value in [.filename]#sys/"
 "conf/newvers.sh# from `PRERELEASE` to `BETA1`."
-msgstr ""
+msgstr "代码冻结生效后，该分支的下一次构建会标记为 `BETA1`。为此，需要将 [.filename]#sys/conf/newvers.sh# 中的 `BRANCH` 值从 `PRERELEASE` 改为 `BETA1`。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:524
+#, fuzzy
 msgid ""
 "Once this is done, the first set of `BETA` builds are started.  Subsequent "
 "`BETA` builds do not require updates to any files other than [.filename]#sys/"
 "conf/newvers.sh#, incrementing the `BETA` build number."
-msgstr ""
+msgstr "完成此操作后，将开始第一批 `BETA` 构建。后续的 `BETA` 构建无需更新 [.filename]#sys/conf/newvers.sh# 之外的任何文件，只需递增 `BETA` 构建编号。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:526
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating the {branchRelengx} Branch"
-msgstr ""
+msgstr "创建 {branchRelengx} 分支"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:532
+#, fuzzy
 msgid ""
 "When the first `RC` (Release Candidate) build is ready to begin, the "
 "{branchReleng} branch is created.  This is a multi-step process that must be "
@@ -1300,130 +1367,138 @@ msgid ""
 "`__FreeBSD_version` values, for example.  The paths listed below are "
 "relative to the repository root.  The order of commits and what to change "
 "are:"
-msgstr ""
+msgstr "准备开始首次 `RC`（候选发行版）构建时，将创建 `{branchReleng}` 分支。这一过程包含多个步骤，必须按特定顺序执行，以避免例如 `__FreeBSD_version` 值重叠之类的异常。下列路径均相对于仓库根目录。提交顺序和更改内容如下："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:536
+#, fuzzy
 msgid "Make sure that you are in the {branchStablex} branch"
-msgstr ""
+msgstr "确保当前位于 `{branchStablex}` 分支"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:541
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git checkout -b {branchRelengx}\n"
-msgstr ""
+msgstr "% git checkout -b {branchRelengx}\n"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:552
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Change `BETA__X__` to `RC1`"
-msgstr ""
+msgstr "将 `BETA__X__` 改为 `RC1`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#sys/conf/kern.opts.mk#"
-msgstr ""
+msgstr "[.filename]#sys/conf/kern.opts.mk#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:558
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Move `REPRODUCIBLE_BUILD` from `__DEFAULT_NO_OPTIONS` to `__DEFAULT_YES_OPTIONS`"
-msgstr ""
+msgstr "将 `REPRODUCIBLE_BUILD` 从 `__DEFAULT_NO_OPTIONS` 移至 `__DEFAULT_YES_OPTIONS`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:559
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#etc/pkg/FreeBSD.conf#"
-msgstr ""
+msgstr "[.filename]#etc/pkg/FreeBSD.conf#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:561
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:564
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Replace `latest` with `quarterly` as the default package repository location"
-msgstr ""
+msgstr "将默认软件包仓库位置从 `latest` 更改为 `quarterly`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:562
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#release/pkg_repos/release-dvd.conf#"
-msgstr ""
+msgstr "[.filename]#release/pkg_repos/release-dvd.conf#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:567
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update `BETA__X__` with `PRERELEASE`"
-msgstr ""
+msgstr "将 `BETA__X__` 更新为 `PRERELEASE`"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:572
+#, fuzzy
 msgid ""
 "Then, {git-admin-email} adds new approvers for the releng branch as did for "
 "the stable branch."
-msgstr ""
+msgstr "然后，{git-admin-email}会像为 stable 分支添加审批者那样，为 releng 分支添加新的审批者。"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:577
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% git add .\n"
 "% git commit\n"
-msgstr ""
+msgstr "% git add .\n% git commit\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:580
+#, fuzzy
 msgid ""
 "Now that two new `__FreeBSD_version` values exist, also update [.filename]#~/"
 "documentation/content/en/books/porters-handbook/versions/chapter.adoc# in "
 "the Documentation Project repository."
-msgstr ""
+msgstr "现在有了两个新的 `__FreeBSD_version` 值，还需在 Documentation Project 仓库中更新 [.filename]#~/documentation/content/en/books/porters-handbook/versions/chapter.adoc#。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:582
+#, fuzzy
 msgid ""
 "After the first `RC` build has completed and tested, the {branchStable} "
 "branch can be \"thawed\" by {git-admin-email}."
-msgstr ""
+msgstr "第一个 `RC` 构建完成并经过测试后，{git-admin-email}可以解除对 {branchStable} 分支的“冻结”。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:584
+#, fuzzy
 msgid ""
 "Following the availability of the first `RC`, {teamBugmeister} should be "
 "emailed to add the new FreeBSD `-RELEASE` to the `versions` available in the "
 "drop-down menu shown in the bug tracker."
-msgstr ""
+msgstr "第一个 `RC` 发布后，应向 {teamBugmeister}发送邮件，请其在问题跟踪器下拉菜单的可用 `versions` 中添加新的 FreeBSD `-RELEASE`。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:586
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building FreeBSD Installation Media"
-msgstr ""
+msgstr "构建 FreeBSD 安装介质"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:589
+#, fuzzy
 msgid ""
 "This section describes the general procedures producing FreeBSD development "
 "snapshots and releases."
-msgstr ""
+msgstr "本节介绍制作 FreeBSD 开发快照和发行版的一般流程。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:591
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release Build Scripts"
-msgstr ""
+msgstr "发行版构建脚本"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:594
+#, fuzzy
 msgid ""
 "Prior to FreeBSD 9.0-RELEASE, [.filename]#src/release/Makefile# was updated "
 "to support man:bsdinstall[8], and the [.filename]#src/release/generate-"
 "release.sh# script was introduced as a wrapper to automate invoking the man:"
 "release[7] targets."
-msgstr ""
+msgstr "在 FreeBSD 9.0-RELEASE 之前，[.filename]#src/release/Makefile# 已更新为支持 man:bsdinstall[8]，并引入了 [.filename]#src/release/generate-release.sh# 脚本作为封装程序，以自动调用 man:release[7] 目标。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:597
+#, fuzzy
 msgid ""
 "Prior to FreeBSD 9.2-RELEASE, [.filename]#src/release/release.sh# was "
 "introduced, which heavily based on [.filename]#src/release/generate-release."
@@ -1431,66 +1506,71 @@ msgid ""
 "options and environment variables.  Support for configuration files provided "
 "support for cross building each architecture for a release by specifying a "
 "separate configuration file for each invocation."
-msgstr ""
+msgstr "在 FreeBSD 9.2-RELEASE 之前，引入了 [.filename]#src/release/release.sh#。该脚本主要基于 [.filename]#src/release/generate-release.sh#，并支持指定配置文件来覆盖各种选项和环境变量。配置文件支持使每次调用都能指定单独的配置文件，从而为发行版交叉构建各个架构。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:599
+#, fuzzy
 msgid ""
 "As a brief example of using [.filename]#src/release/release.sh# to build a "
 "single release in [.filename]#/scratch#:"
-msgstr ""
+msgstr "以下简要示例展示了如何使用 [.filename]#src/release/release.sh# 在 [.filename]#/scratch# 中构建单个发行版："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:603
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /bin/sh /usr/src/release/release.sh\n"
-msgstr ""
+msgstr "# /bin/sh /usr/src/release/release.sh\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:606
+#, fuzzy
 msgid ""
 "As a brief example of using [.filename]#src/release/release.sh# to build a "
 "single, cross-built release using a different target directory, create a "
 "custom [.filename]#release.conf# containing:"
-msgstr ""
+msgstr "以下简要示例展示了如何使用 [.filename]#src/release/release.sh#，在不同的目标目录中交叉构建单个发行版。请创建自定义的 [.filename]#release.conf#，内容如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:614
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# release.sh configuration for powerpc/powerpc64\n"
 "CHROOTDIR=\"/scratch-powerpc64\"\n"
 "TARGET=\"powerpc\"\n"
 "TARGET_ARCH=\"powerpc64\"\n"
 "KERNEL=\"GENERIC64\"\n"
-msgstr ""
+msgstr "# release.sh configuration for powerpc/powerpc64\nCHROOTDIR=\"/scratch-powerpc64\"\nTARGET=\"powerpc\"\nTARGET_ARCH=\"powerpc64\"\nKERNEL=\"GENERIC64\"\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:617
+#, fuzzy
 msgid "Then invoke [.filename]#src/release/release.sh# as:"
-msgstr ""
+msgstr "然后按如下方式调用 [.filename]#src/release/release.sh#："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:621
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# /bin/sh /usr/src/release/release.sh -c $HOME/release.conf\n"
-msgstr ""
+msgstr "# /bin/sh /usr/src/release/release.sh -c $HOME/release.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:624
+#, fuzzy
 msgid ""
 "See man:release[7] and [.filename]#src/release/release.conf.sample# for more "
 "details and example usage."
-msgstr ""
+msgstr "更多详情和用法示例，请参阅 man:release[7] 和 [.filename]#src/release/release.conf.sample#。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:626
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Building FreeBSD Releases"
-msgstr ""
+msgstr "构建 FreeBSD 发行版"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:630
+#, fuzzy
 msgid ""
 "During the release cycle, a copy of [.filename]#CHECKSUM.SHA512# and [."
 "filename]#CHECKSUM.SHA256# for each architecture are stored in the {teamRe} "
@@ -1498,88 +1578,95 @@ msgid ""
 "announcement emails.  Each [.filename]#MANIFEST# containing the hashes of [."
 "filename]#base.txz#, [.filename]#kernel.txz#, etc. are added to package:misc/"
 "freebsd-release-manifests[] in the Ports Collection, as well."
-msgstr ""
+msgstr "在发行周期中，每种架构的 [.filename]#CHECKSUM.SHA512# 和 [.filename]#CHECKSUM.SHA256# 副本都会存储在 {teamRe} 内部仓库中，并包含在各类公告邮件中。每个包含 [.filename]#base.txz#、[.filename]#kernel.txz# 等文件哈希值的 [.filename]#MANIFEST# 也会添加到 Ports Collection 中的 package:misc/freebsd-release-manifests[]。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:632
+#, fuzzy
 msgid "In preparation for the release build, several files need to be updated:"
-msgstr ""
+msgstr "准备构建发行版时，需要更新若干文件："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:642
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the `BRANCH` value to `RELEASE`"
-msgstr ""
+msgstr "将 `BRANCH` 的值更新为 `RELEASE`"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:645
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Add the anticipated announcement date"
-msgstr ""
+msgstr "添加预计公告日期"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:646
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#lib/csu/common/crtbrand.S#"
-msgstr ""
+msgstr "[.filename]#lib/csu/common/crtbrand.S#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:647
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Replace `__FreeBSD_version` with the value in [.filename]#sys/sys/param.h#"
-msgstr ""
+msgstr "将 `__FreeBSD_version` 替换为 [.filename]#sys/sys/param.h# 中的值"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:652
+#, fuzzy
 msgid ""
 "After building the final `RELEASE`, the {branchRelengx} branch is tagged as "
 "{tagReleasex} using the revision from which the `RELEASE` was built.  "
 "Similar to creating the {branchStablex} and {branchRelengx} branches, this "
 "is done with `git tag`.  From the repository root:"
-msgstr ""
+msgstr "构建最终的 `RELEASE` 后，使用构建该 `RELEASE` 所依据的修订版本，为 {branchRelengx} 分支打上 {tagReleasex} 标签。与创建 {branchStablex} 和 {branchRelengx} 分支类似，此操作使用 `git tag` 完成。在仓库根目录中执行："
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:656
+#, fuzzy
 msgid "Make sure that you are in the {branchRelengx} branch"
-msgstr ""
+msgstr "确保当前位于 {branchRelengx} 分支"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:661
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% git tag {tagReleasex}\n"
-msgstr ""
+msgstr "% git tag {tagReleasex}\n"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:664
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Publishing FreeBSD Installation Media to Project Mirrors"
-msgstr ""
+msgstr "将 FreeBSD 安装介质发布到项目镜像站"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:667
+#, fuzzy
 msgid ""
 "This section describes the procedure to publish FreeBSD development "
 "snapshots and releases to the Project mirrors."
-msgstr ""
+msgstr "本节介绍将 FreeBSD 开发快照和发行版发布到项目镜像站的流程。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:669
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Staging FreeBSD Installation Media Images"
-msgstr ""
+msgstr "暂存 FreeBSD 安装介质镜像"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:672
+#, fuzzy
 msgid "Staging FreeBSD snapshots and releases is a two part process:"
-msgstr ""
+msgstr "暂存 FreeBSD 快照和发行版分为两个步骤："
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:674
+#, fuzzy
 msgid "Creating the directory structure to match the hierarchy on `ftp-master`"
-msgstr ""
+msgstr "创建与 `ftp-master` 上层级结构相匹配的目录结构"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:677
+#, fuzzy
 msgid ""
 "If `EVERYTHINGISFINE` is defined in the build configuration files, [."
 "filename]#main.conf# in the case of the build scripts referenced above, this "
@@ -1587,290 +1674,309 @@ msgid ""
 "creating the directory structure in [.filename]#${DESTDIR}/R/ftp-stage# with "
 "a path structure matching what is expected on `ftp-master`.  This is "
 "equivalent to running the following in the man:chroot[8] directly:"
-msgstr ""
+msgstr "如果在构建配置文件中定义了 `EVERYTHINGISFINE`（对于上述构建脚本而言即 [.filename]#main.conf#），那么构建完成后会在 man:chroot[8] 中自动执行此操作，在 [.filename]#${DESTDIR}/R/ftp-stage# 中创建符合 `ftp-master` 预期路径结构的目录。这相当于直接在 man:chroot[8] 中运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:681
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage\n"
-msgstr ""
+msgstr "# make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:684
+#, fuzzy
 msgid ""
 "After each architecture is built, [.filename]#thermite.sh# will rsync the [."
 "filename]#${DESTDIR}/R/ftp-stage# from the build to [.filename]#/snap/ftp/"
 "snapshots# or [.filename]#/snap/ftp/releases# on the build host, "
 "respectively."
-msgstr ""
+msgstr "每种架构构建完成后，[.filename]#thermite.sh# 会使用 rsync 将构建目录中的 [.filename]#${DESTDIR}/R/ftp-stage# 同步到构建主机上的 [.filename]#/snap/ftp/snapshots# 或 [.filename]#/snap/ftp/releases#，具体取决于构建的是快照还是发行版。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:685
+#, fuzzy
 msgid ""
 "Copying the files to a staging directory on `ftp-master` before moving the "
 "files into [.filename]#pub/# to begin propagation to the Project mirrors"
-msgstr ""
+msgstr "先将文件复制到 `ftp-master` 上的暂存目录，再将文件移入 [.filename]#pub/#，以开始向项目镜像站传播"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:687
+#, fuzzy
 msgid ""
 "Once all builds have finished, [.filename]#/snap/ftp/snapshots#, or [."
 "filename]#/snap/ftp/releases# for a release, is polled by `ftp-master` using "
 "rsync to [.filename]#/archive/tmp/snapshots# or [.filename]#/archive/tmp/"
 "releases#, respectively."
-msgstr ""
+msgstr "所有构建完成后，`ftp-master` 会使用 rsync 轮询 [.filename]#/snap/ftp/snapshots#（发行版则为 [.filename]#/snap/ftp/releases#），并分别将其同步到 [.filename]#/archive/tmp/snapshots# 或 [.filename]#/archive/tmp/releases#。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:691
+#, fuzzy
 msgid ""
 "On `ftp-master` in the FreeBSD Project infrastructure, this step requires "
 "`root` level access, as this step must be executed as the `archive` user."
-msgstr ""
+msgstr "在 FreeBSD Project 基础设施中的 `ftp-master` 上，此步骤需要 `root` 级别的访问权限，因为必须以 `archive` 用户身份执行。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:694
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Publishing FreeBSD Installation Media"
-msgstr ""
+msgstr "发布 FreeBSD 安装介质"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:698
+#, fuzzy
 msgid ""
 "Once the images are staged in [.filename]#/archive/tmp/#, they are ready to "
 "be made public by putting them in [.filename]#/archive/pub/FreeBSD#.  To "
 "reduce propagation time, man:pax[1] is used to create hard links from [."
 "filename]#/archive/tmp# to [.filename]#/archive/pub/FreeBSD#."
-msgstr ""
+msgstr "镜像暂存到 [.filename]#/archive/tmp/# 后，即可将其放入 [.filename]#/archive/pub/FreeBSD# 并公开发布。为缩短传播时间，使用 man:pax[1] 在 [.filename]#/archive/tmp# 和 [.filename]#/archive/pub/FreeBSD# 之间创建硬链接。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:702
+#, fuzzy
 msgid ""
 "For this to be effective, both [.filename]#/archive/tmp# and [.filename]#/"
 "archive/pub# must reside on the same logical filesystem."
-msgstr ""
+msgstr "要使此操作生效，[.filename]#/archive/tmp# 和 [.filename]#/archive/pub# 必须位于同一个逻辑文件系统中。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:705
+#, fuzzy
 msgid ""
 "There is a caveat, however, where rsync must be used after man:pax[1] to "
 "correct the symbolic links in [.filename]#pub/FreeBSD/snapshots/ISO-IMAGES# "
 "which man:pax[1] will replace with a hard link, increasing the propagation "
 "time."
-msgstr ""
+msgstr "不过有一点需要注意：man:pax[1] 会将 [.filename]#pub/FreeBSD/snapshots/ISO-IMAGES# 中的符号链接替换为硬链接，因此之后必须使用 rsync 修正这些符号链接，这会增加传播时间。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:709
+#, fuzzy
 msgid ""
 "As with the staging steps, this requires `root` level access, as this step "
 "must be executed as the `archive` user."
-msgstr ""
+msgstr "与暂存步骤一样，此步骤需要 `root` 级别的访问权限，因为必须以 `archive` 用户身份执行。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:712
+#, fuzzy
 msgid "As the `archive` user:"
-msgstr ""
+msgstr "以 `archive` 用户身份执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:718
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% cd /archive/tmp/snapshots\n"
 "% pax -r -w -l . /archive/pub/FreeBSD/snapshots\n"
 "% /usr/local/bin/rsync -avH /archive/tmp/snapshots/* /archive/pub/FreeBSD/snapshots/\n"
-msgstr ""
+msgstr "% cd /archive/tmp/snapshots\n% pax -r -w -l . /archive/pub/FreeBSD/snapshots\n% /usr/local/bin/rsync -avH /archive/tmp/snapshots/* /archive/pub/FreeBSD/snapshots/\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:721
+#, fuzzy
 msgid "Replace _snapshots_ with _releases_ as appropriate."
-msgstr ""
+msgstr "根据需要，将 __snapshots__ 替换为 __releases__。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:723
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Wrapping up the Release Cycle"
-msgstr ""
+msgstr "结束发行周期"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:726
+#, fuzzy
 msgid "This section describes general post-release tasks."
-msgstr ""
+msgstr "本节介绍发行后的常规任务。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:728
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Post-Release Errata Notices"
-msgstr ""
+msgstr "发行后勘误通知"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:732
+#, fuzzy
 msgid ""
 "As the release cycle approaches conclusion, it is common to have several EN "
 "(Errata Notice) candidates to address issues that were discovered late in "
 "the cycle.  Following the release, the {teamRe} and the {teamSecteam} "
 "revisit changes that were not approved prior to the final release, and "
 "depending on the scope of the change in question, may issue an EN."
-msgstr ""
+msgstr "随着发行周期接近尾声，通常会有若干 EN（勘误通知）候选项，用于处理周期后期发现的问题。发行后，{teamRe} 和 {teamSecteam} 会重新审查最终发行前未获批准的更改，并根据相关更改的范围决定是否发布 EN。"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:736
+#, fuzzy
 msgid "The actual process of issuing ENs is handled by the {teamSecteam}."
-msgstr ""
+msgstr "EN 的实际发布流程由 {teamSecteam} 负责。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:739
+#, fuzzy
 msgid ""
 "To request an Errata Notice after a release cycle has completed, a developer "
 "should fill out the https://www.freebsd.org/security/errata-template."
 "txt[Errata Notice template], in particular the `Background`, `Problem "
 "Description`, `Impact`, and if applicable, `Workaround` sections."
-msgstr ""
+msgstr "发行周期结束后，如需申请勘误通知，开发者应填写 link:https://www.freebsd.org/security/errata-template.txt[勘误通知模板]，尤其是 `Background`、`Problem Description`、`Impact`，以及适用时的 `Workaround` 部分。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:741
+#, fuzzy
 msgid ""
 "The completed Errata Notice template should be emailed together with either "
 "a patch against the {branchReleng} branch or a list of revisions from the "
 "{branchStable} branch."
-msgstr ""
+msgstr "填写完成的勘误通知模板应通过电子邮件发送，并附上针对 {branchReleng} 分支的补丁，或来自 {branchStable} 分支的修订版本列表。"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:745
+#, fuzzy
 msgid ""
 "For Errata Notice requests immediately following the release, the request "
 "should be emailed to both the {teamRe} and the {teamSecteam}.  Once the "
 "{branchReleng} branch has been handed over to the {teamSecteam} as described "
 "in crossref:freebsd-releng[releng-wrapup-handoff, Handoff to the "
 "{teamSecteam}], Errata Notice requests should be sent to the {teamSecteam}."
-msgstr ""
+msgstr "发行后立即提交勘误通知申请时，应将邮件同时发送给 {teamRe} 和 {teamSecteam}。按照 crossref:freebsd-releng[releng-wrapup-handoff, 移交给 {teamSecteam}] 中的说明，将 {branchReleng} 分支移交给 {teamSecteam} 后，勘误通知申请应发送给 {teamSecteam}。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:747
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Handoff to the {teamSecteam}"
-msgstr ""
+msgstr "移交给 {teamSecteam}"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:750
+#, fuzzy
 msgid ""
 "Roughly two weeks following the release, the Release Engineer updates the "
 "Git repository changing the approver from the Release engineering team to "
 "the security officer for the {branchRelengx} branch."
-msgstr ""
+msgstr "发行后约两周，Release Engineer 会更新 Git 仓库，将 {branchRelengx} 分支的审批者从 Release Engineering Team 更改为 Security Officer。"
 
 #. type: Title ==
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:752
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Release End-of-Life"
-msgstr ""
+msgstr "发行版生命周期结束"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:755
+#, fuzzy
 msgid ""
 "This section describes the website-related files to update when a release "
 "reaches EoL (End-of-Life)."
-msgstr ""
+msgstr "本节介绍发行版达到 EoL（生命周期结束）时需要更新的网站相关文件。"
 
 #. type: Title ===
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Website Updates for End-of-Life"
-msgstr ""
+msgstr "生命周期结束时的网站更新"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:760
+#, fuzzy
 msgid ""
 "When a release reaches End-of-Life, references to that release should be "
 "removed and/or updated on the website:"
-msgstr ""
+msgstr "发行版达到生命周期结束状态时，应在网站上删除和／或更新对该发行版的引用："
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:765
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "File"
-msgstr ""
+msgstr "文件"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:768
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/themes/beastie/layouts/index.html#"
-msgstr ""
+msgstr "[.filename]#~/website/themes/beastie/layouts/index.html#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:770
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:788
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove `u-relXXX-announce` and `u-relXXX-announce` references."
-msgstr ""
+msgstr "删除 `u-relXXX-announce` 和 `u-relXXX-announce` 引用。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:771
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/content/en/releases/_index.adoc#"
-msgstr ""
+msgstr "[.filename]#~/website/content/en/releases/_index.adoc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:773
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Move the `u-relXXX-*` variables from the supported release list to the Legacy Releases list."
-msgstr ""
+msgstr "将 `u-relXXX-*` 变量从受支持的发行版列表移至旧版发行版列表。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:774
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/content/en/releng/_index.adoc#"
-msgstr ""
+msgstr "[.filename]#~/website/content/en/releng/_index.adoc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:776
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Update the appropriate releng branch to reflect the branch is no longer supported."
-msgstr ""
+msgstr "更新相应的 releng 分支信息，以反映该分支已不再受支持。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:777
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/content/en/security/_index.adoc#"
-msgstr ""
+msgstr "[.filename]#~/website/content/en/security/_index.adoc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:779
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove the branch from the supported branch list."
-msgstr ""
+msgstr "从受支持分支列表中删除该分支。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:780
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/content/en/security/unsupported.adoc#"
-msgstr ""
+msgstr "[.filename]#~/website/content/en/security/unsupported.adoc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Add the branch to the unsupported branch list."
-msgstr ""
+msgstr "将该分支添加到不受支持的分支列表中。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:783
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/content/en/where.adoc#"
-msgstr ""
+msgstr "[.filename]#~/website/content/en/where.adoc#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:785
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove the URLs for the release."
-msgstr ""
+msgstr "删除该发行版的 URL。"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:786
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#~/website/themes/beastie/layouts/partials/sidenav.html#"
-msgstr ""
+msgstr "[.filename]#~/website/themes/beastie/layouts/partials/sidenav.html#"
 
 #. type: Table
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:791
 #: documentation/content/en/articles/freebsd-releng/_index.adoc:793
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Remove references to the release and releng branch."
-msgstr ""
+msgstr "删除对该发行版和 releng 分支的引用。"

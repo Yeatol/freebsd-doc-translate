@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/geom/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "In FreeBSD, the GEOM framework permits access and control to classes, such as Master Boot Records and BSD labels, through the use of providers, or the disk devices in /dev."
-msgstr ""
+msgstr "在 FreeBSD 中，GEOM 框架通过提供者（即 /dev 中的磁盘设备）提供对主引导记录和 BSD 标签等类的访问和控制。"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/geom/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/geom/_index.adoc:1
@@ -50,22 +50,24 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:56
+#, fuzzy
 msgid ""
 "In FreeBSD, the GEOM framework permits access and control to classes, such "
 "as Master Boot Records and BSD labels, through the use of providers, or the "
 "disk devices in [.filename]#/dev#.  By supporting various software RAID "
 "configurations, GEOM transparently provides access to the operating system "
 "and operating system utilities."
-msgstr ""
+msgstr "在 FreeBSD 中，GEOM 框架通过提供者（即 [.filename]#/dev# 中的磁盘设备）提供对主引导记录和 BSD 标签等类的访问和控制。通过支持各种软件 RAID 配置，GEOM 可向操作系统及其工具透明地提供访问。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:60
+#, fuzzy
 msgid ""
 "This chapter covers the use of disks under the GEOM framework in FreeBSD.  "
 "This includes the major RAID control utilities which use the framework for "
 "configuration.  This chapter is not a definitive guide to RAID "
 "configurations and only GEOM-supported RAID classifications are discussed."
-msgstr ""
+msgstr "本章介绍在 FreeBSD 中如何通过 GEOM 框架使用磁盘，包括使用该框架进行配置的主要 RAID 控制工具。本章并非 RAID 配置的权威指南，只讨论 GEOM 支持的 RAID 分类。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:62
@@ -76,27 +78,31 @@ msgstr "读完本章节，你将会知道："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:64
+#, fuzzy
 msgid "What type of RAID support is available through GEOM."
-msgstr ""
+msgstr "GEOM 提供了哪些类型的 RAID 支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:65
+#, fuzzy
 msgid ""
 "How to use the base utilities to configure, maintain, and manipulate the "
 "various RAID levels."
-msgstr ""
+msgstr "如何使用基本工具配置、维护和操作各种 RAID 级别。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:66
+#, fuzzy
 msgid ""
 "How to mirror, stripe, encrypt, and remotely connect disk devices through "
 "GEOM."
-msgstr ""
+msgstr "如何通过 GEOM 镜像、条带化、加密磁盘设备，以及远程连接磁盘设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:67
+#, fuzzy
 msgid "How to troubleshoot disks attached to the GEOM framework."
-msgstr ""
+msgstr "如何排查连接到 GEOM 框架的磁盘问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:69
@@ -107,16 +113,18 @@ msgstr "在阅读这个章节之前，您应当："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:71
+#, fuzzy
 msgid ""
 "Understand how FreeBSD treats disk devices (crossref:disks[disks,Storage])."
-msgstr ""
+msgstr "了解 FreeBSD 如何处理磁盘设备（crossref:disks[disks,存储]）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:72
+#, fuzzy
 msgid ""
 "Know how to configure and install a new kernel (crossref:"
 "kernelconfig[kernelconfig,Configuring the FreeBSD Kernel])."
-msgstr ""
+msgstr "了解如何配置和安装新内核（crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核]）。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:74
@@ -126,12 +134,13 @@ msgstr "RAID0 - 条带"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:79
+#, fuzzy
 msgid ""
 "Striping combines several disk drives into a single volume.  Striping can be "
 "performed through the use of hardware RAID controllers.  The GEOM disk "
 "subsystem provides software support for disk striping, also known as RAID0, "
 "without the need for a RAID disk controller."
-msgstr ""
+msgstr "条带化将多个磁盘驱动器组合成一个卷。可以使用硬件 RAID 控制器进行条带化。GEOM 磁盘子系统提供软件条带化支持，也称为 RAID0，无需 RAID 磁盘控制器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:83
@@ -151,55 +160,60 @@ msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/geom/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disk Striping Illustration"
-msgstr ""
+msgstr "磁盘条带化示意图"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/geom/_index.adoc:84
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "striping.png"
-msgstr ""
+msgstr "striping.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:87
+#, fuzzy
 msgid ""
 "Each disk in a RAID0 stripe must be of the same size, since I/O requests are "
 "interleaved to read or write to multiple disks in parallel."
-msgstr ""
+msgstr "RAID0 条带中的每块磁盘都必须大小相同，因为 I/O 请求会交错进行，以便并行读写多块磁盘。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:93
+#, fuzzy
 msgid ""
 "RAID0 does _not_ provide any redundancy.  This means that if one disk in the "
 "array fails, all of the data on the disks is lost.  If the data is "
 "important, implement a backup strategy that regularly saves backups to a "
 "remote system or device."
-msgstr ""
+msgstr "RAID0 __不__提供任何冗余。这意味着，如果阵列中的一块磁盘发生故障，磁盘上的所有数据都会丢失。如果数据很重要，请实施备份策略，定期将数据备份到远程系统或设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:97
+#, fuzzy
 msgid ""
 "The process for creating a software, GEOM-based RAID0 on a FreeBSD system "
 "using commodity disks is as follows.  Once the stripe is created, refer to "
 "man:gstripe[8] for more information on how to control an existing stripe."
-msgstr ""
+msgstr "以下介绍如何在 FreeBSD 系统上使用常规磁盘创建基于 GEOM 的软件 RAID0 条带。创建条带后，请参阅 man:gstripe[8]，了解如何控制现有条带。"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:101
+#, fuzzy
 msgid "*Procedure: Creating a Stripe of Unformatted ATA Disks*"
-msgstr ""
+msgstr "*操作步骤：为未格式化的 ATA 磁盘创建条带*"
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:103
+#, fuzzy
 msgid "Load the [.filename]#geom_stripe.ko# module:"
-msgstr ""
+msgstr "加载 [.filename]#geom_stripe.ko# 模块："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload geom_stripe\n"
-msgstr ""
+msgstr "# kldload geom_stripe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:110
@@ -214,22 +228,23 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:111
+#, fuzzy
 msgid ""
 "Determine the device names for the disks which will be striped, and create "
 "the new stripe device. For example, to stripe two unused and unpartitioned "
 "ATA disks with device names of [.filename]#/dev/ad2# and [.filename]#/dev/"
 "ad3#:"
-msgstr ""
+msgstr "确定要用于条带化的磁盘设备名称，并创建新的条带设备。例如，要将两块未使用且未分区的 ATA 磁盘（设备名称为 [.filename]#/dev/ad2# 和 [.filename]#/dev/ad3#）组成条带："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gstripe label -v st0 /dev/ad2 /dev/ad3\n"
 "Metadata value stored on /dev/ad2.\n"
 "Metadata value stored on /dev/ad3.\n"
 "Done.\n"
-msgstr ""
+msgstr "# gstripe label -v st0 /dev/ad2 /dev/ad3\nMetadata value stored on /dev/ad2.\nMetadata value stored on /dev/ad3.\nDone.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:121
@@ -242,24 +257,25 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# bsdlabel -wB /dev/stripe/st0\n"
-msgstr ""
+msgstr "# bsdlabel -wB /dev/stripe/st0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:128
+#, fuzzy
 msgid ""
 "This process should create two other devices in [.filename]#/dev/stripe# in "
 "addition to [.filename]#st0#. Those include [.filename]#st0a# and [."
 "filename]#st0c#. At this point, a UFS file system can be created on [."
 "filename]#st0a# using `newfs`:"
-msgstr ""
+msgstr "此过程除了创建 [.filename]#st0# 外，还应在 [.filename]#/dev/stripe# 中创建另外两个设备，包括 [.filename]#st0a# 和 [.filename]#st0c#。此时，可以使用 `newfs` 在 [.filename]#st0a# 上创建 UFS 文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# newfs -U /dev/stripe/st0a\n"
-msgstr ""
+msgstr "# newfs -U /dev/stripe/st0a\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:136
@@ -279,9 +295,9 @@ msgstr "要挂接刚创建的条带盘："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:141
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /dev/stripe/st0a /mnt\n"
-msgstr ""
+msgstr "# mount /dev/stripe/st0a /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:144
@@ -297,12 +313,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:150
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mkdir /stripe\n"
 "# echo \"/dev/stripe/st0a /stripe ufs rw 2 2\" \\\n"
 ">> /etc/fstab\n"
-msgstr ""
+msgstr "# mkdir /stripe\n# echo \"/dev/stripe/st0a /stripe ufs rw 2 2\" \\\n>> /etc/fstab\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:153
@@ -317,9 +333,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# echo 'geom_stripe_load=\"YES\"' >> /boot/loader.conf\n"
-msgstr ""
+msgstr "# echo 'geom_stripe_load=\"YES\"' >> /boot/loader.conf\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:161
@@ -371,6 +387,7 @@ msgstr ""
 
 #. type: delimited block * 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:178
+#, fuzzy
 msgid ""
 "Traditionally, the two drives in a mirror are identical in model and "
 "capacity, but man:gmirror[8] does not require that.  Mirrors created with "
@@ -378,7 +395,7 @@ msgid ""
 "in the mirror.  Extra space on larger drives will be unused.  Drives "
 "inserted into the mirror later must have at least as much capacity as the "
 "smallest drive already in the mirror."
-msgstr ""
+msgstr "传统上，镜像中的两个驱动器型号和容量相同，但 man:gmirror[8] 并无此要求。使用不同驱动器创建的镜像，其容量等于镜像中最小驱动器的容量。较大驱动器的额外空间将不会使用。之后插入镜像的驱动器，其容量必须至少与镜像中现有最小驱动器的容量相同。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:182
@@ -389,11 +406,12 @@ msgstr "虽然镜像过程不会损坏原有数据，不过在操作之前先进
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:188
+#, fuzzy
 msgid ""
 "While man:dump[8] is used in these procedures to copy file systems, it does "
 "not work on file systems with soft updates journaling.  See man:tunefs[8] "
 "for information on detecting and disabling soft updates journaling."
-msgstr ""
+msgstr "这些步骤使用 man:dump[8] 复制文件系统，但它无法用于启用了软更新日志记录的文件系统。有关如何检测和禁用软更新日志记录的信息，请参阅 man:tunefs[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:191
@@ -416,53 +434,57 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:199
+#, fuzzy
 msgid ""
 "GPT metadata can be erased with man:gpart[8].  This example erases both "
 "primary and backup GPT partition tables from disk [.filename]#ada8#:"
-msgstr ""
+msgstr "可以使用 man:gpart[8] 擦除 GPT 元数据。此示例将擦除磁盘 [.filename]#ada8# 上的主 GPT 分区表和备份 GPT 分区表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gpart destroy -F ada8\n"
-msgstr ""
+msgstr "# gpart destroy -F ada8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:207
+#, fuzzy
 msgid ""
 "A disk can be removed from an active mirror and the metadata erased in one "
 "step using man:gmirror[8].  Here, the example disk [.filename]#ada8# is "
 "removed from the active mirror [.filename]#gm4#:"
-msgstr ""
+msgstr "可以使用 man:gmirror[8] 一步从活动镜像中移除磁盘并擦除其元数据。此处的示例从活动镜像 [.filename]#gm4# 中移除磁盘 [.filename]#ada8#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gmirror remove gm4 ada8\n"
-msgstr ""
+msgstr "# gmirror remove gm4 ada8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:214
+#, fuzzy
 msgid ""
 "If the mirror is not running, but old mirror metadata is still on the disk, "
 "use `gmirror clear` to remove it:"
-msgstr ""
+msgstr "如果镜像未运行，但磁盘上仍有旧的镜像元数据，请使用 `gmirror clear` 将其移除："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gmirror clear ada8\n"
-msgstr ""
+msgstr "# gmirror clear ada8\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:223
+#, fuzzy
 msgid ""
 "man:gmirror[8] stores one block of metadata at the end of the disk.  As GPT "
 "partition schemes also store metadata at the end of the disk, mirroring "
 "entire GPT disks with man:gmirror[8] is not recommended.  MBR partitioning "
 "is used here because it only stores a partition table at the start of the "
 "disk and does not conflict with the mirror metadata."
-msgstr ""
+msgstr "man:gmirror[8] 会在磁盘末尾存储一个块的元数据。由于 GPT 分区方案也会在磁盘末尾存储元数据，因此不建议使用 man:gmirror[8] 镜像整个 GPT 磁盘。此处使用 MBR 分区，因为它只会在磁盘开头存储分区表，不会与镜像元数据冲突。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:225
@@ -497,9 +519,9 @@ msgstr ""
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:237
 #: documentation/content/en/books/handbook/geom/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gmirror load\n"
-msgstr ""
+msgstr "# gmirror load\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:240
@@ -508,9 +530,9 @@ msgstr "使用两个新驱动器建立镜像："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gmirror label -v gm0 /dev/ada1 /dev/ada2\n"
-msgstr ""
+msgstr "# gmirror label -v gm0 /dev/ada1 /dev/ada2\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:248
@@ -525,13 +547,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:252
+#, fuzzy
 msgid ""
 "MBR and bsdlabel partition tables can now be created on the mirror with man:"
 "gpart[8].  This example uses a traditional file system layout, with "
 "partitions for [.filename]#/#, swap, [.filename]#/var#, [.filename]#/tmp#, "
 "and [.filename]#/usr#.  A single [.filename]#/# and a swap partition will "
 "also work."
-msgstr ""
+msgstr "现在可以使用 man:gpart[8] 在镜像上创建 MBR 和 bsdlabel 分区表。此示例采用传统的文件系统布局，包含 [.filename]#/#、交换分区、[.filename]#/var#、[.filename]#/tmp# 和 [.filename]#/usr# 分区。也可以只创建一个 [.filename]#/# 分区和一个交换分区。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:254
@@ -546,7 +569,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:264
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart create -s MBR mirror/gm0\n"
 "# gpart add -t freebsd -a 4k mirror/gm0\n"
@@ -555,11 +578,11 @@ msgid ""
 "         63         63                    - free -  (31k)\n"
 "        126  156301299                 1  freebsd  (74G)\n"
 "  156301425         61                    - free -  (30k)\n"
-msgstr ""
+msgstr "# gpart create -s MBR mirror/gm0\n# gpart add -t freebsd -a 4k mirror/gm0\n# gpart show mirror/gm0\n=>       63  156301423  mirror/gm0  MBR  (74G)\n         63         63                    - free -  (31k)\n        126  156301299                 1  freebsd  (74G)\n  156301425         61                    - free -  (30k)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart create -s BSD mirror/gm0s1\n"
 "# gpart add -t freebsd-ufs  -a 4k -s 2g mirror/gm0s1\n"
@@ -576,25 +599,26 @@ msgid ""
 "   16777218    2097152                   5  freebsd-ufs  (1.0G)\n"
 "   18874370  137426928                   6  freebsd-ufs  (65G)\n"
 "  156301298          1                      - free -  (512B)\n"
-msgstr ""
+msgstr "# gpart create -s BSD mirror/gm0s1\n# gpart add -t freebsd-ufs  -a 4k -s 2g mirror/gm0s1\n# gpart add -t freebsd-swap -a 4k -s 4g mirror/gm0s1\n# gpart add -t freebsd-ufs  -a 4k -s 2g mirror/gm0s1\n# gpart add -t freebsd-ufs  -a 4k -s 1g mirror/gm0s1\n# gpart add -t freebsd-ufs  -a 4k mirror/gm0s1\n# gpart show mirror/gm0s1\n=>        0  156301299  mirror/gm0s1  BSD  (74G)\n          0          2                      - free -  (1.0k)\n          2    4194304                   1  freebsd-ufs  (2.0G)\n    4194306    8388608                   2  freebsd-swap (4.0G)\n   12582914    4194304                   4  freebsd-ufs  (2.0G)\n   16777218    2097152                   5  freebsd-ufs  (1.0G)\n   18874370  137426928                   6  freebsd-ufs  (65G)\n  156301298          1                      - free -  (512B)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:286
 #: documentation/content/en/books/handbook/geom/_index.adoc:504
+#, fuzzy
 msgid ""
 "Make the mirror bootable by installing bootcode in the MBR and bsdlabel and "
 "setting the active slice:"
-msgstr ""
+msgstr "通过在 MBR 和 bsdlabel 中安装引导代码并设置活动分区，使镜像可引导："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:292
 #: documentation/content/en/books/handbook/geom/_index.adoc:510
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart bootcode -b /boot/mbr mirror/gm0\n"
 "# gpart set -a active -i 1 mirror/gm0\n"
 "# gpart bootcode -b /boot/boot mirror/gm0s1\n"
-msgstr ""
+msgstr "# gpart bootcode -b /boot/mbr mirror/gm0\n# gpart set -a active -i 1 mirror/gm0\n# gpart bootcode -b /boot/boot mirror/gm0s1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:295
@@ -603,24 +627,25 @@ msgstr "在新镜像上格式化文件系统，启用 soft-updates。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# newfs -U /dev/mirror/gm0s1a\n"
 "# newfs -U /dev/mirror/gm0s1d\n"
 "# newfs -U /dev/mirror/gm0s1e\n"
 "# newfs -U /dev/mirror/gm0s1f\n"
-msgstr ""
+msgstr "# newfs -U /dev/mirror/gm0s1a\n# newfs -U /dev/mirror/gm0s1d\n# newfs -U /dev/mirror/gm0s1e\n# newfs -U /dev/mirror/gm0s1f\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:305
+#, fuzzy
 msgid ""
 "File systems from the original [.filename]#ada0# disk can now be copied onto "
 "the mirror with man:dump[8] and man:restore[8]."
-msgstr ""
+msgstr "现在可以使用 man:dump[8] 和 man:restore[8] 将原始 [.filename]#ada0# 磁盘上的文件系统复制到镜像上。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount /dev/mirror/gm0s1a /mnt\n"
 "# dump -C16 -b64 -0aL -f - / | (cd /mnt && restore -rf -)\n"
@@ -630,7 +655,7 @@ msgid ""
 "# dump -C16 -b64 -0aL -f - /var | (cd /mnt/var && restore -rf -)\n"
 "# dump -C16 -b64 -0aL -f - /tmp | (cd /mnt/tmp && restore -rf -)\n"
 "# dump -C16 -b64 -0aL -f - /usr | (cd /mnt/usr && restore -rf -)\n"
-msgstr ""
+msgstr "# mount /dev/mirror/gm0s1a /mnt\n# dump -C16 -b64 -0aL -f - / | (cd /mnt && restore -rf -)\n# mount /dev/mirror/gm0s1d /mnt/var\n# mount /dev/mirror/gm0s1e /mnt/tmp\n# mount /dev/mirror/gm0s1f /mnt/usr\n# dump -C16 -b64 -0aL -f - /var | (cd /mnt/var && restore -rf -)\n# dump -C16 -b64 -0aL -f - /tmp | (cd /mnt/tmp && restore -rf -)\n# dump -C16 -b64 -0aL -f - /usr | (cd /mnt/usr && restore -rf -)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:319
@@ -678,20 +703,22 @@ msgstr "geom_mirror_load=\"YES\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:340
+#, fuzzy
 msgid ""
 "Reboot the system to test the new mirror and verify that all data has been "
 "copied.  The BIOS will see the mirror as two individual drives rather than a "
 "mirror.  Since the drives are identical, it does not matter which is "
 "selected to boot."
-msgstr ""
+msgstr "重新启动系统以测试新镜像，并确认所有数据均已复制。BIOS 会将镜像识别为两个独立驱动器，而不是一个镜像。由于驱动器相同，选择其中哪一个启动都没有影响。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:343
+#, fuzzy
 msgid ""
 "See crossref:geom[gmirror-troubleshooting, Troubleshooting] if there are "
 "problems booting.  Powering down and disconnecting the original [."
 "filename]#ada0# disk will allow it to be kept as an offline backup."
-msgstr ""
+msgstr "如果启动时遇到问题，请参阅 crossref:geom[gmirror-troubleshooting, 故障排除]。关闭电源并断开原始 [.filename]#ada0# 磁盘后，即可将其作为离线备份保存。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:345
@@ -725,26 +752,29 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:355
+#, fuzzy
 msgid "Load the [.filename]#geom_mirror.ko# kernel module:"
-msgstr ""
+msgstr "加载 [.filename]#geom_mirror.ko# 内核模块："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:362
+#, fuzzy
 msgid "Check the media size of the original disk with `diskinfo`:"
-msgstr ""
+msgstr "使用 `diskinfo` 检查原始磁盘的介质大小："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:369
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# diskinfo -v ada0 | head -n3\n"
 "/dev/ada0\n"
 "        512             # sectorsize\n"
 "        1000204821504   # mediasize in bytes (931G)\n"
-msgstr ""
+msgstr "# diskinfo -v ada0 | head -n3\n/dev/ada0\n        512             # sectorsize\n        1000204821504   # mediasize in bytes (931G)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:376
+#, fuzzy
 msgid ""
 "Create a mirror on the new disk.  To make certain that the mirror capacity "
 "is not any larger than the original [.filename]#ada0# drive, man:gnop[8] is "
@@ -754,17 +784,17 @@ msgid ""
 "filename]#gzero.nop#, even if the new [.filename]#ada1# drive has more "
 "space.  Note that the _1000204821504_ in the second line is equal to [."
 "filename]#ada0#'s media size as shown by `diskinfo` above."
-msgstr ""
+msgstr "在新磁盘上创建镜像。为确保镜像容量不大于原始 [.filename]#ada0# 驱动器，使用 man:gnop[8] 创建一个同等大小的虚拟驱动器。此驱动器不存储任何数据，仅用于限制镜像大小。创建镜像时，man:gmirror[8] 会将容量限制为 [.filename]#gzero.nop# 的大小，即使新的 [.filename]#ada1# 驱动器容量更大也是如此。请注意，第二行中的__1000204821504__等于上文 `diskinfo` 显示的 [.filename]#ada0# 介质大小。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# geom zero load\n"
 "# gnop create -s 1000204821504 gzero\n"
 "# gmirror label -v gm0 gzero.nop ada1\n"
 "# gmirror forget gm0\n"
-msgstr ""
+msgstr "# geom zero load\n# gnop create -s 1000204821504 gzero\n# gmirror label -v gm0 gzero.nop ada1\n# gmirror forget gm0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:388
@@ -804,12 +834,12 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart show ada0\n"
 "=>        63  1953525105        ada0  MBR  (931G)\n"
 "          63  1953525105           1  freebsd  [active]  (931G)\n"
-msgstr ""
+msgstr "# gpart show ada0\n=>        63  1953525105        ada0  MBR  (931G)\n          63  1953525105           1  freebsd  [active]  (931G)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:404
@@ -824,38 +854,40 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:406
+#, fuzzy
 msgid ""
 "In either case, partition tables on the primary disk should be first copied "
 "using `gpart backup` and `gpart restore`."
-msgstr ""
+msgstr "无论采用哪种情况，都应先使用 `gpart backup` 和 `gpart restore` 复制主磁盘上的分区表。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:411
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart backup ada0 > table.ada0\n"
 "# gpart backup ada0s1 > table.ada0s1\n"
-msgstr ""
+msgstr "# gpart backup ada0 > table.ada0\n# gpart backup ada0s1 > table.ada0s1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:415
+#, fuzzy
 msgid ""
 "These commands create two files, [.filename]#table.ada0# and [."
 "filename]#table.ada0s1#.  This example is from a 1 TB drive:"
-msgstr ""
+msgstr "这些命令会创建两个文件：[.filename]#table.ada0# 和 [.filename]#table.ada0s1#。以下示例来自一块 1 TB 磁盘："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cat table.ada0\n"
 "MBR 4\n"
 "1 freebsd         63 1953525105   [active]\n"
-msgstr ""
+msgstr "# cat table.ada0\nMBR 4\n1 freebsd         63 1953525105   [active]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cat table.ada0s1\n"
 "BSD 8\n"
@@ -865,7 +897,7 @@ msgid ""
 "5  freebsd-ufs   88080384   41943040\n"
 "6  freebsd-ufs  130023424  838860800\n"
 "7  freebsd-ufs  968884224  984640881\n"
-msgstr ""
+msgstr "# cat table.ada0s1\nBSD 8\n1  freebsd-ufs          0    4194304\n2 freebsd-swap    4194304   33554432\n4  freebsd-ufs   37748736   50331648\n5  freebsd-ufs   88080384   41943040\n6  freebsd-ufs  130023424  838860800\n7  freebsd-ufs  968884224  984640881\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:438
@@ -887,16 +919,16 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:444
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cat table.ada0\n"
 "MBR 4\n"
 "1 freebsd         63 1953525104   [active]\n"
-msgstr ""
+msgstr "# cat table.ada0\nMBR 4\n1 freebsd         63 1953525104   [active]\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:456
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cat table.ada0s1\n"
 "BSD 8\n"
@@ -906,7 +938,7 @@ msgid ""
 "5  freebsd-ufs   88080384   41943040\n"
 "6  freebsd-ufs  130023424  838860800\n"
 "7  freebsd-ufs  968884224  984640880\n"
-msgstr ""
+msgstr "# cat table.ada0s1\nBSD 8\n1  freebsd-ufs          0    4194304\n2 freebsd-swap    4194304   33554432\n4  freebsd-ufs   37748736   50331648\n5  freebsd-ufs   88080384   41943040\n6  freebsd-ufs  130023424  838860800\n7  freebsd-ufs  968884224  984640880\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:459
@@ -917,39 +949,41 @@ msgstr "如果磁盘末尾至少有一个未分配扇区，则无需修改即可
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:461
+#, fuzzy
 msgid "Now restore the partition table into [.filename]#mirror/gm0#:"
-msgstr ""
+msgstr "现在将分区表恢复到 [.filename]#mirror/gm0#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart restore mirror/gm0 < table.ada0\n"
 "# gpart restore mirror/gm0s1 < table.ada0s1\n"
-msgstr ""
+msgstr "# gpart restore mirror/gm0 < table.ada0\n# gpart restore mirror/gm0s1 < table.ada0s1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:470
+#, fuzzy
 msgid ""
 "Check the partition table with `gpart show`.  This example has [."
 "filename]#gm0s1a# for [.filename]#/#, [.filename]#gm0s1d# for [.filename]#/"
 "var#, [.filename]#gm0s1e# for [.filename]#/usr#, [.filename]#gm0s1f# for [."
 "filename]#/data1#, and [.filename]#gm0s1g# for [.filename]#/data2#."
-msgstr ""
+msgstr "使用 `gpart show` 检查分区表。此示例中，[.filename]#gm0s1a# 对应 [.filename]#/#，[.filename]#gm0s1d# 对应 [.filename]#/var#，[.filename]#gm0s1e# 对应 [.filename]#/usr#，[.filename]#gm0s1f# 对应 [.filename]#/data1#，而 [.filename]#gm0s1g# 对应 [.filename]#/data2#。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:477
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart show mirror/gm0\n"
 "=>        63  1953525104  mirror/gm0  MBR  (931G)\n"
 "          63  1953525042           1  freebsd  [active]  (931G)\n"
 "  1953525105          62              - free -  (31k)\n"
-msgstr ""
+msgstr "# gpart show mirror/gm0\n=>        63  1953525104  mirror/gm0  MBR  (931G)\n          63  1953525042           1  freebsd  [active]  (931G)\n  1953525105          62              - free -  (31k)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart show mirror/gm0s1\n"
 "=>         0  1953525042  mirror/gm0s1  BSD  (931G)\n"
@@ -960,7 +994,7 @@ msgid ""
 "    81788928   629145600             6  freebsd-ufs  (300G)\n"
 "   710934528  1242590514             7  freebsd-ufs  (592G)\n"
 "  1953525042          63                - free -  (31k)\n"
-msgstr ""
+msgstr "# gpart show mirror/gm0s1\n=>         0  1953525042  mirror/gm0s1  BSD  (931G)\n           0     2097152             1  freebsd-ufs  (1.0G)\n     2097152    16777216             2  freebsd-swap  (8.0G)\n    18874368    41943040             4  freebsd-ufs  (20G)\n    60817408    20971520             5  freebsd-ufs  (10G)\n    81788928   629145600             6  freebsd-ufs  (300G)\n   710934528  1242590514             7  freebsd-ufs  (592G)\n  1953525042          63                - free -  (31k)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:490
@@ -981,14 +1015,14 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:501
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# newfs -U /dev/mirror/gm0s1a\n"
 "# newfs -U /dev/mirror/gm0s1d\n"
 "# newfs -U /dev/mirror/gm0s1e\n"
 "# newfs -U /dev/mirror/gm0s1f\n"
 "# newfs -U /dev/mirror/gm0s1g\n"
-msgstr ""
+msgstr "# newfs -U /dev/mirror/gm0s1a\n# newfs -U /dev/mirror/gm0s1d\n# newfs -U /dev/mirror/gm0s1e\n# newfs -U /dev/mirror/gm0s1f\n# newfs -U /dev/mirror/gm0s1g\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:514
@@ -1002,16 +1036,17 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:518
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# cp /etc/fstab /etc/fstab.orig\n"
-msgstr ""
+msgstr "# cp /etc/fstab /etc/fstab.orig\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:521
+#, fuzzy
 msgid ""
 "Edit [.filename]#/etc/fstab#, replacing [.filename]#/dev/ada0# with [."
 "filename]#mirror/gm0#."
-msgstr ""
+msgstr "编辑 [.filename]#/etc/fstab#，将 [.filename]#/dev/ada0# 替换为 [.filename]#mirror/gm0#。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:531
@@ -1045,15 +1080,16 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:542
+#, fuzzy
 msgid ""
 "File systems from the original disk can now be copied onto the mirror with "
 "man:dump[8] and man:restore[8].  Each file system dumped with `dump -L` will "
 "create a snapshot first, which can take some time."
-msgstr ""
+msgstr "现在可以使用 man:dump[8] 和 man:restore[8] 将原始磁盘上的文件系统复制到镜像上。使用 `dump -L` 转储的每个文件系统都会先创建快照，这可能需要一些时间。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:555
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount /dev/mirror/gm0s1a /mnt\n"
 "# dump -C16 -b64 -0aL -f - /    | (cd /mnt && restore -rf -)\n"
@@ -1065,16 +1101,17 @@ msgid ""
 "# dump -C16 -b64 -0aL -f - /var | (cd /mnt/var && restore -rf -)\n"
 "# dump -C16 -b64 -0aL -f - /data1 | (cd /mnt/data1 && restore -rf -)\n"
 "# dump -C16 -b64 -0aL -f - /data2 | (cd /mnt/data2 && restore -rf -)\n"
-msgstr ""
+msgstr "# mount /dev/mirror/gm0s1a /mnt\n# dump -C16 -b64 -0aL -f - /    | (cd /mnt && restore -rf -)\n# mount /dev/mirror/gm0s1d /mnt/var\n# mount /dev/mirror/gm0s1e /mnt/usr\n# mount /dev/mirror/gm0s1f /mnt/data1\n# mount /dev/mirror/gm0s1g /mnt/data2\n# dump -C16 -b64 -0aL -f - /usr | (cd /mnt/usr && restore -rf -)\n# dump -C16 -b64 -0aL -f - /var | (cd /mnt/var && restore -rf -)\n# dump -C16 -b64 -0aL -f - /data1 | (cd /mnt/data1 && restore -rf -)\n# dump -C16 -b64 -0aL -f - /data2 | (cd /mnt/data2 && restore -rf -)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:560
+#, fuzzy
 msgid ""
 "Restart the system, booting from [.filename]#ada1#.  If everything is "
 "working, the system will boot from [.filename]#mirror/gm0#, which now "
 "contains the same data as [.filename]#ada0# had previously.  See crossref:"
 "geom[gmirror-troubleshooting, Troubleshooting] if there are problems booting."
-msgstr ""
+msgstr "重新启动系统，并从 [.filename]#ada1# 启动。如果一切正常，系统将从 [.filename]#mirror/gm0# 启动，该镜像现在包含原先 [.filename]#ada0# 上的相同数据。如果启动时遇到问题，请参阅 crossref:geom[gmirror-troubleshooting, 故障排除]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:562
@@ -1086,13 +1123,15 @@ msgstr "此时，镜像仍仅包含单个<filename>ada1</filename>磁盘。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:564
+#, fuzzy
 msgid ""
 "After booting from [.filename]#mirror/gm0# successfully, the final step is "
 "inserting [.filename]#ada0# into the mirror."
-msgstr ""
+msgstr "成功从 [.filename]#mirror/gm0# 启动后，最后一步是将 [.filename]#ada0# 添加到镜像中。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:570
+#, fuzzy
 msgid ""
 "When [.filename]#ada0# is inserted into the mirror, its former contents will "
 "be overwritten by data from the mirror.  Make certain that [."
@@ -1101,32 +1140,33 @@ msgid ""
 "by man:dump[8] and man:restore[8] are not identical to what was on [."
 "filename]#ada0#, revert [.filename]#/etc/fstab# to mount the file systems on "
 "[.filename]#ada0#, reboot, and start the whole procedure again."
-msgstr ""
+msgstr "将 [.filename]#ada0# 插入镜像时，其原有内容将被镜像中的数据覆盖。在将 [.filename]#ada0# 添加到镜像之前，请确保 [.filename]#mirror/gm0# 与 [.filename]#ada0# 的内容相同。如果 man:dump[8] 和 man:restore[8] 之前复制的内容与 [.filename]#ada0# 上的内容不一致，请将 [.filename]#/etc/fstab# 恢复原状，以便从 [.filename]#ada0# 挂载文件系统，然后重新启动并从头开始整个操作。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:576
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gmirror insert gm0 ada0\n"
 "GEOM_MIRROR: Device gm0: rebuilding provider ada0\n"
-msgstr ""
+msgstr "# gmirror insert gm0 ada0\nGEOM_MIRROR: Device gm0: rebuilding provider ada0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:580
+#, fuzzy
 msgid ""
 "Synchronization between the two disks will start immediately.  Use `gmirror "
 "status` to view the progress."
-msgstr ""
+msgstr "两个磁盘之间的同步将立即开始。使用 `gmirror status` 查看进度。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:587
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gmirror status\n"
 "      Name    Status  Components\n"
 "mirror/gm0  DEGRADED  ada1 (ACTIVE)\n"
 "                      ada0 (SYNCHRONIZING, 64%)\n"
-msgstr ""
+msgstr "# gmirror status\n      Name    Status  Components\nmirror/gm0  DEGRADED  ada1 (ACTIVE)\n                      ada0 (SYNCHRONIZING, 64%)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:590
@@ -1135,23 +1175,24 @@ msgstr "一段时间后，同步完成。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:598
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "GEOM_MIRROR: Device gm0: rebuilding provider ada0 finished.\n"
 "# gmirror status\n"
 "      Name    Status  Components\n"
 "mirror/gm0  COMPLETE  ada1 (ACTIVE)\n"
 "                      ada0 (ACTIVE)\n"
-msgstr ""
+msgstr "GEOM_MIRROR: Device gm0: rebuilding provider ada0 finished.\n# gmirror status\n      Name    Status  Components\nmirror/gm0  COMPLETE  ada1 (ACTIVE)\n                      ada0 (ACTIVE)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:602
+#, fuzzy
 msgid ""
 "[.filename]#mirror/gm0# now consists of the two disks [.filename]#ada0# and "
 "[.filename]#ada1#, and the contents are automatically synchronized with each "
 "other.  In use, [.filename]#mirror/gm0# will behave just like the original "
 "single drive."
-msgstr ""
+msgstr "现在，[.filename]#mirror/gm0# 由 [.filename]#ada0# 和 [.filename]#ada1# 两个磁盘组成，二者的内容会自动保持同步。使用时，[.filename]#mirror/gm0# 的行为与原来的单个磁盘完全相同。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:604
@@ -1161,11 +1202,12 @@ msgstr "故障排除"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:608
+#, fuzzy
 msgid ""
 "If the system no longer boots, BIOS settings may have to be changed to boot "
 "from one of the new mirrored drives.  Either mirror drive can be used for "
 "booting, as they contain identical data."
-msgstr ""
+msgstr "如果系统无法再启动，可能需要更改 BIOS 设置，以便从新的镜像磁盘之一启动。两个镜像磁盘都可以用于启动，因为它们包含相同的数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:610
@@ -1176,53 +1218,53 @@ msgstr "如果启动失败，并提示类似消息，则镜像设备出现问题
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:614
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mounting from ufs:/dev/mirror/gm0s1a failed with error 19.\n"
-msgstr ""
+msgstr "Mounting from ufs:/dev/mirror/gm0s1a failed with error 19.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Loader variables:\n"
 "  vfs.root.mountfrom=ufs:/dev/mirror/gm0s1a\n"
 "  vfs.root.mountfrom.options=rw\n"
-msgstr ""
+msgstr "Loader variables:\n  vfs.root.mountfrom=ufs:/dev/mirror/gm0s1a\n  vfs.root.mountfrom.options=rw\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:623
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Manual root filesystem specification:\n"
 "  <fstype>:<device> [options]\n"
 "      Mount <device> using filesystem <fstype>\n"
 "      and with the specified (optional) option list.\n"
-msgstr ""
+msgstr "Manual root filesystem specification:\n  <fstype>:<device> [options]\n      Mount <device> using filesystem <fstype>\n      and with the specified (optional) option list.\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:628
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "    e.g. ufs:/dev/da0s1a\n"
 "        zfs:tank\n"
 "        cd9660:/dev/acd0 ro\n"
 "          (which is equivalent to: mount -t cd9660 -o ro /dev/acd0 /)\n"
-msgstr ""
+msgstr "    e.g. ufs:/dev/da0s1a\n        zfs:tank\n        cd9660:/dev/acd0 ro\n          (which is equivalent to: mount -t cd9660 -o ro /dev/acd0 /)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:632
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  ?               List valid disk boot devices\n"
 "  .               Yield 1 second (for background tasks)\n"
 "  <empty line>    Abort manual input\n"
-msgstr ""
+msgstr "  ?               List valid disk boot devices\n  .               Yield 1 second (for background tasks)\n  <empty line>    Abort manual input\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:634
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mountroot>\n"
-msgstr ""
+msgstr "mountroot>\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:639
@@ -1240,11 +1282,11 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:644
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gmirror load\n"
 "# mount /dev/mirror/gm0s1a /mnt\n"
-msgstr ""
+msgstr "# gmirror load\n# mount /dev/mirror/gm0s1a /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:647
@@ -1263,6 +1305,7 @@ msgstr "保存文件并重新启动。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:660
+#, fuzzy
 msgid ""
 "Other problems that cause `error 19` require more effort to fix.  Although "
 "the system should boot from [.filename]#ada0#, another prompt to select a "
@@ -1271,16 +1314,16 @@ msgid ""
 "[.filename]#/etc/fstab# then mount the file systems from the original disk "
 "([.filename]#ada0#) instead of the mirror.  Reboot the system and try the "
 "procedure again."
-msgstr ""
+msgstr "其他导致 `error 19` 的问题需要更多步骤才能修复。虽然系统应该能从 [.filename]#ada0# 启动，但如果 [.filename]#/etc/fstab# 不正确，系统会再次提示选择一个 shell。在引导加载器提示符下输入 `ufs:/dev/ada0s1a`，然后按 kbd:[Enter]。撤销对 [.filename]#/etc/fstab# 的修改，然后从原始磁盘（[.filename]#ada0#）而不是镜像挂载文件系统。重新启动系统并重试此操作。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:666
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Enter full pathname of shell or RETURN for /bin/sh:\n"
 "# cp /etc/fstab.orig /etc/fstab\n"
 "# shutdown -r now\n"
-msgstr ""
+msgstr "Enter full pathname of shell or RETURN for /bin/sh:\n# cp /etc/fstab.orig /etc/fstab\n# shutdown -r now\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:668
@@ -1330,24 +1373,25 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:683
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gmirror forget gm0\n"
-msgstr ""
+msgstr "# gmirror forget gm0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:688
+#, fuzzy
 msgid ""
 "Any old metadata should be cleared from the replacement disk using the "
 "instructions in crossref:geom[geom-mirror-metadata, Metadata Issues].  Then "
 "the replacement disk, [.filename]#ada4# for this example, is inserted into "
 "the mirror:"
-msgstr ""
+msgstr "应按照 crossref:geom[geom-mirror-metadata, Metadata Issues] 中的说明，清除替换磁盘上所有旧元数据。然后将替换磁盘（本例中为 [.filename]#ada4#）插入镜像："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:692
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# gmirror insert gm0 /dev/ada4\n"
-msgstr ""
+msgstr "# gmirror insert gm0 /dev/ada4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:697
@@ -1370,18 +1414,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:700
+#, fuzzy
 msgid ""
 "Progress can be monitored with `gmirror status`, which shows drives that are "
 "being synchronized and the percentage of completion.  During "
 "resynchronization, the status will be `DEGRADED`, changing to `COMPLETE` "
 "when the process is finished."
-msgstr ""
+msgstr "可以使用 `gmirror status` 监视进度；该命令会显示正在同步的磁盘及完成百分比。重新同步期间，状态为 `DEGRADED`；过程完成后，状态将变为 `COMPLETE`。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:702
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "RAID3 - Byte-level Striping with Dedicated Parity"
-msgstr ""
+msgstr "RAID3 - 按字节级条带化并使用专用奇偶校验"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:710
@@ -1408,39 +1453,43 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:714
+#, fuzzy
 msgid ""
 "At least 3 physical hard drives are required to build a RAID3 array.  Each "
 "disk must be of the same size, since I/O requests are interleaved to read or "
 "write to multiple disks in parallel.  Also, due to the nature of RAID3, the "
 "number of drives must be equal to 3, 5, 9, 17, and so on, or 2^n + 1."
-msgstr ""
+msgstr "创建 RAID3 阵列至少需要 3 个物理硬盘。每个磁盘的大小必须相同，因为 I/O 请求会交错分配，以便并行读写多个磁盘。此外，由于 RAID3 的特性，磁盘数量必须为 3、5、9、17 等，即 2^n + 1。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:716
+#, fuzzy
 msgid ""
 "This section demonstrates how to create a software RAID3 on a FreeBSD system."
-msgstr ""
+msgstr "本节演示如何在 FreeBSD 系统上创建软件 RAID3。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:720
+#, fuzzy
 msgid ""
 "While it is theoretically possible to boot from a RAID3 array on FreeBSD, "
 "that configuration is uncommon and is not advised."
-msgstr ""
+msgstr "虽然理论上可以在 FreeBSD 上从 RAID3 阵列启动，但这种配置并不常见，也不建议使用。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:722
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Creating a Dedicated RAID3 Array"
-msgstr ""
+msgstr "创建专用 RAID3 阵列"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:726
+#, fuzzy
 msgid ""
 "In FreeBSD, support for RAID3 is implemented by the man:graid3[8] GEOM "
 "class.  Creating a dedicated RAID3 array on FreeBSD requires the following "
 "steps."
-msgstr ""
+msgstr "在 FreeBSD 中，RAID3 支持由 man:graid3[8] GEOM 类实现。在 FreeBSD 上创建专用 RAID3 阵列需要执行以下步骤。"
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/geom/_index.adoc:729
@@ -1454,9 +1503,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:733
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# graid3 load\n"
-msgstr ""
+msgstr "# graid3 load\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:736
@@ -1465,9 +1514,9 @@ msgstr "或者:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:740
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# kldload geom_raid3\n"
-msgstr ""
+msgstr "# kldload geom_raid3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:743
@@ -1478,46 +1527,48 @@ msgstr "创建用于挂载卷的挂点目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:747
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mkdir /multimedia\n"
-msgstr ""
+msgstr "# mkdir /multimedia\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:750
+#, fuzzy
 msgid ""
 "Determine the device names for the disks which will be added to the array, "
 "and create the new RAID3 device. The final device listed will act as the "
 "dedicated parity disk. This example uses three unpartitioned ATA drives: [."
 "filename]#ada1# and [.filename]#ada2# for data, and [.filename]#ada3# for "
 "parity."
-msgstr ""
+msgstr "确定要添加到阵列中的磁盘设备名称，然后创建新的 RAID3 设备。列表中的最后一个设备将用作专用奇偶校验磁盘。本例使用三个未分区的 ATA 磁盘：[.filename]#ada1# 和 [.filename]#ada2# 存储数据，[.filename]#ada3# 用于奇偶校验。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:758
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid3 label -v gr0 /dev/ada1 /dev/ada2 /dev/ada3\n"
 "Metadata value stored on /dev/ada1.\n"
 "Metadata value stored on /dev/ada2.\n"
 "Metadata value stored on /dev/ada3.\n"
 "Done.\n"
-msgstr ""
+msgstr "# graid3 label -v gr0 /dev/ada1 /dev/ada2 /dev/ada3\nMetadata value stored on /dev/ada1.\nMetadata value stored on /dev/ada2.\nMetadata value stored on /dev/ada3.\nDone.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:761
+#, fuzzy
 msgid ""
 "Partition the newly created [.filename]#gr0# device and put a UFS file "
 "system on it:"
-msgstr ""
+msgstr "对新建的 [.filename]#gr0# 设备进行分区，并在其上创建 UFS 文件系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:767
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gpart create -s GPT /dev/raid3/gr0\n"
 "# gpart add -t freebsd-ufs /dev/raid3/gr0\n"
 "# newfs -j /dev/raid3/gr0p1\n"
-msgstr ""
+msgstr "# gpart create -s GPT /dev/raid3/gr0\n# gpart add -t freebsd-ufs /dev/raid3/gr0\n# newfs -j /dev/raid3/gr0p1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:771
@@ -1532,14 +1583,15 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:775
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /dev/raid3/gr0p1 /multimedia/\n"
-msgstr ""
+msgstr "# mount /dev/raid3/gr0p1 /multimedia/\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:778
+#, fuzzy
 msgid "The RAID3 array is now ready to use."
-msgstr ""
+msgstr "现在可以使用 RAID3 阵列了。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:780
@@ -1585,12 +1637,13 @@ msgstr "/dev/raid3/gr0p1\t/multimedia\tufs\trw\t2\t2\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:797
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Software RAID Devices"
-msgstr ""
+msgstr "软件 RAID 设备"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:802
+#, fuzzy
 msgid ""
 "Some motherboards and expansion cards add some simple hardware, usually just "
 "a ROM, that allows the computer to boot from a RAID array.  After booting, "
@@ -1598,22 +1651,24 @@ msgid ""
 "main processor.  This \"hardware-assisted software RAID\" gives RAID arrays "
 "that are not dependent on any particular operating system, and which are "
 "functional even before an operating system is loaded."
-msgstr ""
+msgstr "一些主板和扩展卡会增加一些简单的硬件，通常只有一个 ROM，使计算机能够从 RAID 阵列启动。启动后，对 RAID 阵列的访问由运行在计算机主处理器上的软件处理。这种“硬件辅助的软件 RAID”创建的 RAID 阵列不依赖于任何特定操作系统，并且即使在操作系统加载之前也能正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:805
+#, fuzzy
 msgid ""
 "Several levels of RAID are supported, depending on the hardware in use.  See "
 "man:graid[8] for a complete list."
-msgstr ""
+msgstr "根据所用硬件的不同，系统支持多个 RAID 级别。完整列表请参见 man:graid[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:808
+#, fuzzy
 msgid ""
 "man:graid[8] requires the [.filename]#geom_raid.ko# kernel module, which is "
 "included in the [.filename]#GENERIC# kernel starting with FreeBSD 9.1.  If "
 "needed, it can be loaded manually with `graid load`."
-msgstr ""
+msgstr "man:graid[8] 需要 [.filename]#geom_raid.ko# 内核模块；从 FreeBSD 9.1 开始，该模块已包含在 [.filename]#GENERIC# 内核中。如有需要，可以使用 `graid load` 手动加载。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:810
@@ -1623,21 +1678,23 @@ msgstr "创建阵列"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:815
+#, fuzzy
 msgid ""
 "Software RAID devices often have a menu that can be entered by pressing "
 "special keys when the computer is booting.  The menu can be used to create "
 "and delete RAID arrays.  man:graid[8] can also create arrays directly from "
 "the command line."
-msgstr ""
+msgstr "软件 RAID 设备通常提供一个菜单，可以在计算机启动时按特定按键进入。可以使用该菜单创建和删除 RAID 阵列。man:graid[8] 也可以直接从命令行创建阵列。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:819
+#, fuzzy
 msgid ""
 "`graid label` is used to create a new array.  The motherboard used for this "
 "example has an Intel software RAID chipset, so the Intel metadata format is "
 "specified.  The new array is given a label of [.filename]#gm0#, it is a "
 "mirror (RAID1), and uses drives [.filename]#ada0# and [.filename]#ada1#."
-msgstr ""
+msgstr "使用 `graid label` 创建新阵列。本例使用的主板配有 Intel 软件 RAID 芯片组，因此指定了 Intel 元数据格式。新阵列的标签为 [.filename]#gm0#，类型为镜像（RAID1），使用 [.filename]#ada0# 和 [.filename]#ada1# 两个磁盘。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:824
@@ -1652,7 +1709,7 @@ msgstr "当驱动器上的一些空间被制成新阵列时，这些空间将被
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:838
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid label Intel gm0 RAID1 ada0 ada1\n"
 "GEOM_RAID: Intel-a29ea104: Array Intel-a29ea104 created.\n"
@@ -1664,7 +1721,7 @@ msgid ""
 "GEOM_RAID: Intel-a29ea104: Volume gm0 state changed from STARTING to OPTIMAL.\n"
 "Intel-a29ea104 created\n"
 "GEOM_RAID: Intel-a29ea104: Provider raid/r0 for volume gm0 created.\n"
-msgstr ""
+msgstr "# graid label Intel gm0 RAID1 ada0 ada1\nGEOM_RAID: Intel-a29ea104: Array Intel-a29ea104 created.\nGEOM_RAID: Intel-a29ea104: Disk ada0 state changed from NONE to ACTIVE.\nGEOM_RAID: Intel-a29ea104: Subdisk gm0:0-ada0 state changed from NONE to ACTIVE.\nGEOM_RAID: Intel-a29ea104: Disk ada1 state changed from NONE to ACTIVE.\nGEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 state changed from NONE to ACTIVE.\nGEOM_RAID: Intel-a29ea104: Array started.\nGEOM_RAID: Intel-a29ea104: Volume gm0 state changed from STARTING to OPTIMAL.\nIntel-a29ea104 created\nGEOM_RAID: Intel-a29ea104: Provider raid/r0 for volume gm0 created.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:841
@@ -1674,36 +1731,38 @@ msgstr "状态检查显示新镜像已准备就绪，可供使用："
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:848
 #: documentation/content/en/books/handbook/geom/_index.adoc:1024
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid status\n"
 "   Name   Status  Components\n"
 "raid/r0  OPTIMAL  ada0 (ACTIVE (ACTIVE))\n"
 "                  ada1 (ACTIVE (ACTIVE))\n"
-msgstr ""
+msgstr "# graid status\n   Name   Status  Components\nraid/r0  OPTIMAL  ada0 (ACTIVE (ACTIVE))\n                  ada1 (ACTIVE (ACTIVE))\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:853
+#, fuzzy
 msgid ""
 "The array device appears in [.filename]#/dev/raid/#.  The first array is "
 "called [.filename]#r0#.  Additional arrays, if present, will be [."
 "filename]#r1#, [.filename]#r2#, and so on."
-msgstr ""
+msgstr "阵列设备会出现在 [.filename]#/dev/raid/# 中。第一个阵列名为 [.filename]#r0#。如果还有其他阵列，则依次命名为 [.filename]#r1#、[.filename]#r2# 等。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:857
+#, fuzzy
 msgid ""
 "The BIOS menu on some of these devices can create arrays with special "
 "characters in their names.  To avoid problems with those special characters, "
 "arrays are given simple numbered names like [.filename]#r0#.  To show the "
 "actual labels, like [.filename]#gm0# in the example above, use man:sysctl[8]:"
-msgstr ""
+msgstr "某些设备的 BIOS 菜单可以创建名称中带有特殊字符的阵列。为避免这些特殊字符引发问题，阵列会使用 [.filename]#r0# 这样的简单编号名称。若要显示实际标签（例如上例中的 [.filename]#gm0#），请使用 man:sysctl[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:861
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# sysctl kern.geom.raid.name_format=1\n"
-msgstr ""
+msgstr "# sysctl kern.geom.raid.name_format=1\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:864
@@ -1713,6 +1772,7 @@ msgstr "多磁盘区"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:870
+#, fuzzy
 msgid ""
 "Some software RAID devices support more than one _volume_ on an array.  "
 "Volumes work like partitions, allowing space on the physical drives to be "
@@ -1720,30 +1780,32 @@ msgid ""
 "support two volumes.  This example creates a 40 G mirror for safely storing "
 "the operating system, followed by a 20 G RAID0 (stripe) volume for fast "
 "temporary storage:"
-msgstr ""
+msgstr "某些软件 RAID 设备支持在一个阵列上创建多个__卷__。卷的作用类似分区，可以将物理磁盘上的空间划分为不同用途。例如，Intel 软件 RAID 设备支持两个卷。本例创建一个 40 G 的镜像，用于安全存储操作系统；随后创建一个 20 G 的 RAID0（条带）卷，用于快速临时存储："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:875
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid label -S 40G Intel gm0 RAID1 ada0 ada1\n"
 "# graid add -S 20G gm0 RAID0\n"
-msgstr ""
+msgstr "# graid label -S 40G Intel gm0 RAID1 ada0 ada1\n# graid add -S 20G gm0 RAID0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:879
+#, fuzzy
 msgid ""
 "Volumes appear as additional [.filename]#rX# entries in [.filename]#/dev/"
 "raid/#.  An array with two volumes will show [.filename]#r0# and [."
 "filename]#r1#."
-msgstr ""
+msgstr "卷会作为额外的 [.filename]#rX# 项出现在 [.filename]#/dev/raid/# 中。包含两个卷的阵列会显示为 [.filename]#r0# 和 [.filename]#r1#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:881
+#, fuzzy
 msgid ""
 "See man:graid[8] for the number of volumes supported by different software "
 "RAID devices."
-msgstr ""
+msgstr "不同软件 RAID 设备支持的卷数量，请参见 man:graid[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:883
@@ -1753,28 +1815,31 @@ msgstr "转换单一磁盘为镜像"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:887
+#, fuzzy
 msgid ""
 "Under certain specific conditions, it is possible to convert an existing "
 "single drive to a man:graid[8] array without reformatting.  To avoid data "
 "loss during the conversion, the existing drive must meet these minimum "
 "requirements:"
-msgstr ""
+msgstr "在某些特定条件下，可以将现有的单个磁盘转换为 man:graid[8] 阵列，而无需重新格式化。为避免转换期间丢失数据，现有磁盘必须满足以下最低要求："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:889
+#, fuzzy
 msgid ""
 "The drive must be partitioned with the MBR partitioning scheme. GPT or other "
 "partitioning schemes with metadata at the end of the drive will be "
 "overwritten and corrupted by the man:graid[8] metadata."
-msgstr ""
+msgstr "磁盘必须使用 MBR 分区方案。GPT 或其他在磁盘末尾存储元数据的分区方案会被 man:graid[8] 元数据覆盖并损坏。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:890
+#, fuzzy
 msgid ""
 "There must be enough unpartitioned and unused space at the end of the drive "
 "to hold the man:graid[8] metadata. This metadata varies in size, but the "
 "largest occupies 64 M, so at least that much free space is recommended."
-msgstr ""
+msgstr "磁盘末尾必须有足够的未分区且未使用空间，以容纳 man:graid[8] 元数据。该元数据的大小因格式而异，但最大占用 64 M，因此建议至少预留这么多空间。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:893
@@ -1791,22 +1856,23 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:897
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# graid label Intel gm0 RAID1 ada0 NONE\n"
-msgstr ""
+msgstr "# graid label Intel gm0 RAID1 ada0 NONE\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:901
+#, fuzzy
 msgid ""
 "man:graid[8] metadata was written to the end of the drive in the unused "
 "space.  A second drive can now be inserted into the mirror:"
-msgstr ""
+msgstr "man:graid[8] 元数据已写入磁盘末尾的未使用空间。现在可以将第二个磁盘插入镜像："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:905
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# graid insert raid/r0 ada1\n"
-msgstr ""
+msgstr "# graid insert raid/r0 ada1\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:909
@@ -1866,14 +1932,14 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:927
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid insert raid/r0 ada1\n"
 "GEOM_RAID: Intel-a29ea104: Disk ada1 state changed from NONE to ACTIVE.\n"
 "GEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 state changed from NONE to NEW.\n"
 "GEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 state changed from NEW to REBUILD.\n"
 "GEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 rebuild start at 0.\n"
-msgstr ""
+msgstr "# graid insert raid/r0 ada1\nGEOM_RAID: Intel-a29ea104: Disk ada1 state changed from NONE to ACTIVE.\nGEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 state changed from NONE to NEW.\nGEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 state changed from NEW to REBUILD.\nGEOM_RAID: Intel-a29ea104: Subdisk gm0:1-ada1 rebuild start at 0.\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:930
@@ -1890,13 +1956,13 @@ msgstr "可以从阵列中永久删除单个驱动器，并擦除其元数据：
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:940
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid remove raid/r0 ada1\n"
 "GEOM_RAID: Intel-a29ea104: Disk ada1 state changed from ACTIVE to OFFLINE.\n"
 "GEOM_RAID: Intel-a29ea104: Subdisk gm0:1-[unknown] state changed from ACTIVE to NONE.\n"
 "GEOM_RAID: Intel-a29ea104: Volume gm0 state changed from OPTIMAL to DEGRADED.\n"
-msgstr ""
+msgstr "# graid remove raid/r0 ada1\nGEOM_RAID: Intel-a29ea104: Disk ada1 state changed from ACTIVE to OFFLINE.\nGEOM_RAID: Intel-a29ea104: Subdisk gm0:1-[unknown] state changed from ACTIVE to NONE.\nGEOM_RAID: Intel-a29ea104: Volume gm0 state changed from OPTIMAL to DEGRADED.\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:943
@@ -1918,9 +1984,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:951
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# graid stop raid/r0\n"
-msgstr ""
+msgstr "# graid stop raid/r0\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:954
@@ -1945,30 +2011,31 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:965
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid status\n"
 "   Name    Status  Components\n"
 "raid/r0  DEGRADED  ada0 (ACTIVE (ACTIVE))\n"
 "                   ada1 (ACTIVE (REBUILD 28%))\n"
-msgstr ""
+msgstr "# graid status\n   Name    Status  Components\nraid/r0  DEGRADED  ada0 (ACTIVE (ACTIVE))\n                   ada1 (ACTIVE (REBUILD 28%))\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:969
+#, fuzzy
 msgid ""
 "Some types of arrays, like `RAID0` or `CONCAT`, may not be shown in the "
 "status report if disks have failed.  To see these partially-failed arrays, "
 "add `-ga`:"
-msgstr ""
+msgstr "如果磁盘发生故障，某些类型的阵列（例如 `RAID0` 或 `CONCAT`）可能不会显示在状态报告中。要查看这些部分故障的阵列，请添加 `-ga`："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:975
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# graid status -ga\n"
 "          Name  Status  Components\n"
 "Intel-e2d07d9a  BROKEN  ada6 (ACTIVE (ACTIVE))\n"
-msgstr ""
+msgstr "# graid status -ga\n          Name  Status  Components\nIntel-e2d07d9a  BROKEN  ada6 (ACTIVE (ACTIVE))\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:978
@@ -1994,9 +2061,9 @@ msgstr ""
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:986
 #: documentation/content/en/books/handbook/geom/_index.adoc:1031
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# graid delete raid/r0\n"
-msgstr ""
+msgstr "# graid delete raid/r0\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:989
@@ -2006,31 +2073,34 @@ msgstr "删除预期之外的数组"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:994
+#, fuzzy
 msgid ""
 "Drives may unexpectedly contain man:graid[8] metadata, either from previous "
 "use or manufacturer testing.  man:graid[8] will detect these drives and "
 "create an array, interfering with access to the individual drive.  To remove "
 "the unwanted metadata:"
-msgstr ""
+msgstr "磁盘上可能意外留有 man:graid[8] 元数据，这些元数据可能来自之前的使用或制造商测试。man:graid[8] 会检测到这些磁盘并创建阵列，从而妨碍对单个磁盘的访问。要移除不需要的元数据："
 
 #. type: .procedure
 #: documentation/content/en/books/handbook/geom/_index.adoc:997
+#, fuzzy
 msgid ""
 "Boot the system. At the boot menu, select `2` for the loader prompt. Enter:"
-msgstr ""
+msgstr "启动系统。在启动菜单中选择 `2` 进入加载器提示符，然后输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1002
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "OK set kern.geom.raid.enable=0\n"
 "OK boot\n"
-msgstr ""
+msgstr "OK set kern.geom.raid.enable=0\nOK boot\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1005
+#, fuzzy
 msgid "The system will boot with man:graid[8] disabled."
-msgstr ""
+msgstr "系统将在禁用 man:graid[8] 的情况下启动。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1006
@@ -2039,8 +2109,9 @@ msgstr "备份受影响驱动器上的所有数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1007
+#, fuzzy
 msgid "As a workaround, man:graid[8] array detection can be disabled by adding"
-msgstr ""
+msgstr "作为临时解决办法，可以通过添加以下内容来禁用 man:graid[8] 阵列检测"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1011
@@ -2050,16 +2121,18 @@ msgstr "kern.geom.raid.enable=0\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1014
+#, fuzzy
 msgid "to [.filename]#/boot/loader.conf#."
-msgstr ""
+msgstr "到 [.filename]#/boot/loader.conf# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1017
+#, fuzzy
 msgid ""
 "To permanently remove the man:graid[8] metadata from the affected drive, "
 "boot a FreeBSD installation CD-ROM or memory stick, and select `Shell`.  Use "
 "`status` to find the name of the array, typically `raid/r0`:"
-msgstr ""
+msgstr "若要从受影响的磁盘永久移除 man:graid[8] 元数据，请从 FreeBSD 安装 CD-ROM 或 U 盘启动，并选择 `Shell`。使用 `status` 查找阵列名称，通常为 `raid/r0`："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1027
@@ -2088,12 +2161,13 @@ msgstr ""
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:1040
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "GEOM Gate Network"
-msgstr ""
+msgstr "GEOM Gate 网络"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1045
+#, fuzzy
 msgid ""
 "GEOM provides a simple mechanism for providing remote access to devices such "
 "as disks, CDs, and file systems through the use of the GEOM Gate network "
@@ -2101,10 +2175,11 @@ msgid ""
 "handles requests made by clients using ggatec.  The devices should not "
 "contain any sensitive data as the connection between the client and the "
 "server is not encrypted."
-msgstr ""
+msgstr "GEOM Gate 网络守护进程 ggated 提供了一种简单机制，可通过网络远程访问磁盘、CD 和文件系统等设备。设备所在的系统运行服务器守护进程，处理由使用 ggatec 的客户端发出的请求。由于客户端与服务器之间的连接未加密，设备中不应包含任何敏感数据。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1049
+#, fuzzy
 msgid ""
 "Similar to NFS, which is discussed in crossref:network-servers[network-nfs,"
 "\"Network File System (NFS)\"], ggated is configured using an exports file.  "
@@ -2112,7 +2187,7 @@ msgid ""
 "resources and what level of access they are offered.  For example, to give "
 "the client `192.168.1.5` read and write access to the fourth slice on the "
 "first SCSI disk, create [.filename]#/etc/gg.exports# with this line:"
-msgstr ""
+msgstr "与 crossref:network-servers[network-nfs,\"Network File System (NFS)\"] 中介绍的 NFS 类似，ggated 使用 exports 文件进行配置。该文件指定允许哪些系统访问导出的资源，以及可授予它们何种访问权限。例如，若要允许客户端 `192.168.1.5` 对第一块 SCSI 磁盘上的第四个 slice 进行读写访问，请创建 [.filename]#/etc/gg.exports#，并添加以下行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1053
@@ -2122,27 +2197,30 @@ msgstr "192.168.1.5 RW /dev/da0s4d\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1057
+#, fuzzy
 msgid ""
 "Before exporting the device, ensure it is not currently mounted.  Then, "
 "start ggated:"
-msgstr ""
+msgstr "导出设备之前，请确保当前未挂载该设备。然后启动 ggated："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1061
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# ggated\n"
-msgstr ""
+msgstr "# ggated\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1065
+#, fuzzy
 msgid ""
 "Several options are available for specifying an alternate listening port or "
 "changing the default location of the exports file.  Refer to man:ggated[8] "
 "for details."
-msgstr ""
+msgstr "可以使用多个选项指定其他监听端口，或更改 exports 文件的默认位置。详情请参见 man:ggated[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1070
+#, fuzzy
 msgid ""
 "To access the exported device on the client machine, first use `ggatec` to "
 "specify the IP address of the server and the device name of the exported "
@@ -2150,24 +2228,25 @@ msgid ""
 "mount.  Mount that specified device name on a free mount point.  This "
 "example connects to the [.filename]#/dev/da0s4d# partition on `192.168.1.1`, "
 "then mounts [.filename]#/dev/ggate0# on [.filename]#/mnt#:"
-msgstr ""
+msgstr "要在客户端访问导出的设备，首先使用 `ggatec` 指定服务器的 IP 地址和导出设备的设备名称。如果成功，此命令将显示一个用于挂载的 `ggate` 设备名称。将该设备挂载到一个空闲的挂载点。以下示例连接到 `192.168.1.1` 上的 [.filename]#/dev/da0s4d# 分区，然后将 [.filename]#/dev/ggate0# 挂载到 [.filename]#/mnt#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1076
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# ggatec create -o rw 192.168.1.1 /dev/da0s4d\n"
 "ggate0\n"
 "# mount /dev/ggate0 /mnt\n"
-msgstr ""
+msgstr "# ggatec create -o rw 192.168.1.1 /dev/da0s4d\nggate0\n# mount /dev/ggate0 /mnt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1080
+#, fuzzy
 msgid ""
 "The device on the server may now be accessed through [.filename]#/mnt# on "
 "the client.  For more details about `ggatec` and a few usage examples, refer "
 "to man:ggatec[8]."
-msgstr ""
+msgstr "现在可以在客户端通过 [.filename]#/mnt# 访问服务器上的设备。有关 `ggatec` 的更多详情和一些使用示例，请参阅 man:ggatec[8]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1085
@@ -2182,10 +2261,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1088
+#, fuzzy
 msgid ""
 "When the device is no longer needed, unmount it with `umount` so that the "
 "resource is available to other clients."
-msgstr ""
+msgstr "不再需要该设备时，使用 `umount` 卸载它，以便其他客户端可以使用此资源。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:1090
@@ -2214,6 +2294,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1101
+#, fuzzy
 msgid ""
 "One solution is to chain SCSI devices in order so a new device added to the "
 "SCSI card will be issued unused device numbers.  But what about USB devices "
@@ -2222,25 +2303,27 @@ msgid ""
 "these devices after the system has been booted.  Another method is to use "
 "only a single ATA drive and never list the SCSI devices in [.filename]#/etc/"
 "fstab#."
-msgstr ""
+msgstr "一种解决方案是按顺序连接 SCSI 设备，这样添加到 SCSI 卡的新设备就会分配到未使用的设备编号。但如果 USB 设备可能取代主 SCSI 磁盘，该怎么办？这是因为 USB 设备通常会在 SCSI 卡之前被探测到。一种解决方案是在系统启动后再插入这些设备。另一种方法是只使用一个 ATA 驱动器，并且不要在 [.filename]#/etc/fstab# 中列出 SCSI 设备。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1105
+#, fuzzy
 msgid ""
 "A better solution is to use `glabel` to label the disk devices and use the "
 "labels in [.filename]#/etc/fstab#.  Since `glabel` stores the label in the "
 "last sector of a given provider, the label will remain persistent across "
 "reboots.  By using this label as a device, the file-system may always be "
 "mounted regardless of what device node it is accessed through."
-msgstr ""
+msgstr "更好的解决方案是使用 `glabel` 为磁盘设备添加标签，并在 [.filename]#/etc/fstab# 中使用这些标签。由于 `glabel` 将标签存储在给定提供者的最后一个扇区中，因此标签在重新启动后仍会保留。使用此标签作为设备时，无论通过哪个设备节点访问文件系统，始终都可以挂载它。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1110
+#, fuzzy
 msgid ""
 "`glabel` can create both transient and permanent labels. Only permanent "
 "labels are consistent across reboots.  Refer to man:glabel[8] for more "
 "information on the differences between labels."
-msgstr ""
+msgstr "`glabel` 可以创建临时标签和永久标签。只有永久标签在重新启动后仍保持不变。有关这些标签之间差异的更多信息，请参阅 man:glabel[8]。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/geom/_index.adoc:1112
@@ -2250,6 +2333,7 @@ msgstr "标签类型和使用示范"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1120
+#, fuzzy
 msgid ""
 "Permanent labels can be a generic or a file system label.  Permanent file "
 "system labels can be created with man:tunefs[8] or man:newfs[8].  These "
@@ -2258,7 +2342,7 @@ msgid ""
 "system labels will be created in [.filename]#/dev/ufs#.  Generic permanent "
 "labels can be created with `glabel label`.  These are not file system "
 "specific and will be created in [.filename]#/dev/label#."
-msgstr ""
+msgstr "永久标签可以是通用标签，也可以是文件系统标签。永久文件系统标签可以使用 man:tunefs[8] 或 man:newfs[8] 创建。这类标签会创建在 [.filename]#/dev# 的子目录中，并根据文件系统类型命名。例如，UFS2 文件系统标签会创建在 [.filename]#/dev/ufs# 中。通用永久标签可以使用 `glabel label` 创建。这些标签不特定于文件系统，并会创建在 [.filename]#/dev/label# 中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1124
@@ -2276,23 +2360,25 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1126
+#, fuzzy
 msgid ""
 "To create a permanent label for a UFS2 file system without destroying any "
 "data, issue the following command:"
-msgstr ""
+msgstr "要在不破坏任何数据的情况下为 UFS2 文件系统创建永久标签，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# tunefs -L home /dev/da3\n"
-msgstr ""
+msgstr "# tunefs -L home /dev/da3\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1133
+#, fuzzy
 msgid ""
 "A label should now exist in [.filename]#/dev/ufs# which may be added to [."
 "filename]#/etc/fstab#:"
-msgstr ""
+msgstr "现在 [.filename]#/dev/ufs# 中应该已存在一个标签，可将其添加到 [.filename]#/etc/fstab#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1137
@@ -2302,8 +2388,9 @@ msgstr "/dev/ufs/home\t\t/home            ufs     rw              2      2\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1142
+#, fuzzy
 msgid "The file system must not be mounted while attempting to run `tunefs`."
-msgstr ""
+msgstr "尝试运行 `tunefs` 时，文件系统不得处于挂载状态。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1145
@@ -2312,9 +2399,9 @@ msgstr "现在可以像平时一样挂接文件系统了："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# mount /home\n"
-msgstr ""
+msgstr "# mount /home\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1152
@@ -2332,10 +2419,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1155
+#, fuzzy
 msgid ""
 "File systems may also be created with a default label by using the `-L` flag "
 "with `newfs`.  Refer to man:newfs[8] for more information."
-msgstr ""
+msgstr "也可以在使用 `newfs` 创建文件系统时通过 `-L` 标志设置默认标签。更多信息请参阅 man:newfs[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1157
@@ -2344,9 +2432,9 @@ msgstr "下列命令可以清除标签："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# glabel destroy home\n"
-msgstr ""
+msgstr "# glabel destroy home\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1164
@@ -2380,14 +2468,15 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1174
+#, fuzzy
 msgid ""
 "Reboot the system, and at the man:loader[8] prompt, press kbd:[4] to boot "
 "into single user mode.  Then enter the following commands:"
-msgstr ""
+msgstr "重新启动系统，在 man:loader[8] 提示符处按 kbd:[4] 进入单用户模式。然后输入以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# glabel label rootfs /dev/ad0s1a\n"
 "GEOM_LABEL: Label for provider /dev/ad0s1a is label/rootfs\n"
@@ -2400,7 +2489,7 @@ msgid ""
 "# glabel label swap /dev/ad0s1b\n"
 "GEOM_LABEL: Label for provider /dev/ad0s1b is label/swap\n"
 "# exit\n"
-msgstr ""
+msgstr "# glabel label rootfs /dev/ad0s1a\nGEOM_LABEL: Label for provider /dev/ad0s1a is label/rootfs\n# glabel label var /dev/ad0s1d\nGEOM_LABEL: Label for provider /dev/ad0s1d is label/var\n# glabel label usr /dev/ad0s1f\nGEOM_LABEL: Label for provider /dev/ad0s1f is label/usr\n# glabel label tmp /dev/ad0s1e\nGEOM_LABEL: Label for provider /dev/ad0s1e is label/tmp\n# glabel label swap /dev/ad0s1b\nGEOM_LABEL: Label for provider /dev/ad0s1b is label/swap\n# exit\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1193
@@ -2445,7 +2534,7 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# mount\n"
 "/dev/label/rootfs on / (ufs, local)\n"
@@ -2453,10 +2542,11 @@ msgid ""
 "/dev/label/tmp on /tmp (ufs, local, soft-updates)\n"
 "/dev/label/usr on /usr (ufs, local, soft-updates)\n"
 "/dev/label/var on /var (ufs, local, soft-updates)\n"
-msgstr ""
+msgstr "# mount\n/dev/label/rootfs on / (ufs, local)\ndevfs on /dev (devfs, local)\n/dev/label/tmp on /tmp (ufs, local, soft-updates)\n/dev/label/usr on /usr (ufs, local, soft-updates)\n/dev/label/var on /var (ufs, local, soft-updates)\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1223
+#, fuzzy
 msgid ""
 "The man:glabel[8] class supports a label type for UFS file systems, based on "
 "the unique file system id, `ufsid`.  These labels may be found in [."
@@ -2464,26 +2554,27 @@ msgid ""
 "It is possible to use `ufsid` labels to mount partitions using [.filename]#/"
 "etc/fstab#.  Use `glabel status` to receive a list of file systems and their "
 "corresponding `ufsid` labels:"
-msgstr ""
+msgstr "man:glabel[8] 类支持一种基于唯一文件系统 ID `ufsid` 的 UFS 文件系统标签。这些标签位于 [.filename]#/dev/ufsid# 中，并在系统启动时自动创建。可以使用 `ufsid` 标签通过 [.filename]#/etc/fstab# 挂载分区。使用 `glabel status` 列出文件系统及其对应的 `ufsid` 标签："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% glabel status\n"
 "                  Name  Status  Components\n"
 "ufsid/486b6fc38d330916     N/A  ad4s1d\n"
 "ufsid/486b6fc16926168e     N/A  ad4s1f\n"
-msgstr ""
+msgstr "% glabel status\n                  Name  Status  Components\nufsid/486b6fc38d330916     N/A  ad4s1d\nufsid/486b6fc16926168e     N/A  ad4s1f\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1234
+#, fuzzy
 msgid ""
 "In the above example, [.filename]#ad4s1d# represents [.filename]#/var#, "
 "while [.filename]#ad4s1f# represents [.filename]#/usr#.  Using the `ufsid` "
 "values shown, these partitions may now be mounted with the following entries "
 "in [.filename]#/etc/fstab#:"
-msgstr ""
+msgstr "在上面的示例中，[.filename]#ad4s1d# 表示 [.filename]#/var#，而 [.filename]#ad4s1f# 表示 [.filename]#/usr#。使用显示的 `ufsid` 值，现在可以在 [.filename]#/etc/fstab# 中添加以下条目来挂载这些分区："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1239
@@ -2508,19 +2599,20 @@ msgstr ""
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/geom/_index.adoc:1244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "UFS Journaling Through GEOM"
-msgstr ""
+msgstr "通过 GEOM 实现 UFS 日志记录"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1250
+#, fuzzy
 msgid ""
 "Support for journals on UFS file systems is available on FreeBSD.  The "
 "implementation is provided through the GEOM subsystem and is configured "
 "using `gjournal`.  Unlike other file system journaling implementations, the "
 "`gjournal` method is block based and not implemented as part of the file "
 "system.  It is a GEOM extension."
-msgstr ""
+msgstr "FreeBSD 支持在 UFS 文件系统上使用日志。此功能通过 GEOM 子系统实现，并使用 `gjournal` 配置。与其他文件系统日志记录实现不同，`gjournal` 方法基于块，不作为文件系统的一部分实现，而是 GEOM 的扩展。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1253
@@ -2598,53 +2690,58 @@ msgstr "options\tGEOM_JOURNAL\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1276
+#, fuzzy
 msgid ""
 "Once the module is loaded, a journal can be created on a new file system "
 "using the following steps.  In this example, [.filename]#da4# is a new SCSI "
 "disk:"
-msgstr ""
+msgstr "加载模块后，可以按照以下步骤在新文件系统上创建日志。本例中，[.filename]#da4# 是一块新的 SCSI 磁盘："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# gjournal load\n"
 "# gjournal label /dev/da4\n"
-msgstr ""
+msgstr "# gjournal load\n# gjournal label /dev/da4\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1284
+#, fuzzy
 msgid ""
 "This will load the module and create a [.filename]#/dev/da4.journal# device "
 "node on [.filename]#/dev/da4#."
-msgstr ""
+msgstr "这将加载模块，并在 [.filename]#/dev/da4# 上创建 [.filename]#/dev/da4.journal# 设备节点。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1286
+#, fuzzy
 msgid ""
 "A UFS file system may now be created on the journaled device, then mounted "
 "on an existing mount point:"
-msgstr ""
+msgstr "现在可以在带日志的设备上创建 UFS 文件系统，然后将其挂载到现有挂载点："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1291
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# newfs -O 2 -J /dev/da4.journal\n"
 "# mount /dev/da4.journal /mnt\n"
-msgstr ""
+msgstr "# newfs -O 2 -J /dev/da4.journal\n# mount /dev/da4.journal /mnt\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/geom/_index.adoc:1297
+#, fuzzy
 msgid ""
 "In the case of several slices, a journal will be created for each individual "
 "slice.  For instance, if [.filename]#ad4s1# and [.filename]#ad4s2# are both "
 "slices, then `gjournal` will create [.filename]#ad4s1.journal# and [."
 "filename]#ad4s2.journal#."
-msgstr ""
+msgstr "如果有多个分区片段，则会为每个分区片段分别创建日志。例如，如果 [.filename]#ad4s1# 和 [.filename]#ad4s2# 都是分区片段，那么 `gjournal` 将创建 [.filename]#ad4s1.journal# 和 [.filename]#ad4s2.journal#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1303
+#, fuzzy
 msgid ""
 "Journaling may also be enabled on current file systems by using `tunefs`.  "
 "However, _always_ make a backup before attempting to alter an existing file "
@@ -2652,12 +2749,13 @@ msgid ""
 "journal, but this does not protect against data loss incurred as a result of "
 "misusing `tunefs`.  Refer to man:gjournal[8] and man:tunefs[8] for more "
 "information about these commands."
-msgstr ""
+msgstr "也可以使用 `tunefs` 为现有文件系统启用日志记录。不过，尝试修改现有文件系统之前，__务必__先备份。在大多数情况下，如果无法创建日志，`gjournal` 会失败，但这并不能防止因误用 `tunefs` 而造成的数据丢失。有关这些命令的更多信息，请参阅 man:gjournal[8] 和 man:tunefs[8]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/geom/_index.adoc:1305
+#, fuzzy
 msgid ""
 "It is possible to journal the boot disk of a FreeBSD system.  Refer to the "
 "article extref:{gjournal-desktop}[Implementing UFS Journaling on a Desktop "
 "PC] for detailed instructions."
-msgstr ""
+msgstr "可以为 FreeBSD 系统的启动磁盘启用日志记录。详细说明请参阅文章 extref:{gjournal-desktop}[在台式机上实现 UFS 日志记录]。"

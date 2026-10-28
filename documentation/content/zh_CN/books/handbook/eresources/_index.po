@@ -20,21 +20,21 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/eresources/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "FreeBSD additional resources on internet like websites, mailing lists, mirrors, etc"
-msgstr ""
+msgstr "FreeBSD 的互联网附加资源，如网站、邮件列表、镜像等"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/eresources/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part V. Appendices"
-msgstr ""
+msgstr "第五部分：附录"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/eresources/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Appendix C. Resources on the Internet"
-msgstr ""
+msgstr "附录 C：互联网上的资源"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/eresources/_index.adoc:16
@@ -44,32 +44,36 @@ msgstr "网络资源"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:54
+#, fuzzy
 msgid ""
 "Development of FreeBSD is too rapid for print media to be practical for "
 "keeping people informed.  For awareness of developments: electronic "
 "alternatives to print are best."
-msgstr ""
+msgstr "FreeBSD 的开发速度太快，印刷媒体难以实用地及时向人们通报进展。要了解最新动态，电子媒体是印刷媒体的最佳替代方式。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:56
+#, fuzzy
 msgid ""
 "The FreeBSD user community provides much technical support -- with forums, "
 "chat and email amongst the most popular and effective means of communication."
-msgstr ""
+msgstr "FreeBSD 用户社区提供了大量技术支持，论坛、聊天和电子邮件是最受欢迎且最有效的沟通方式。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:59
+#, fuzzy
 msgid ""
 "The most important points of contact are outlined below.  The link:https://"
 "wiki.freebsd.org/Community[Community wiki area] may be more up-to-date."
-msgstr ""
+msgstr "以下列出了最重要的联系渠道。link:https://wiki.freebsd.org/Community[社区 Wiki 页面]可能包含更新的信息。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:61
+#, fuzzy
 msgid ""
 "Please make the {freebsd-doc} aware of any resource that is either "
 "redundant, or not yet listed below."
-msgstr ""
+msgstr "如果发现以下资源已过时或尚未列出，请告知 {freebsd-doc}。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/eresources/_index.adoc:63
@@ -79,81 +83,91 @@ msgstr "网站"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:66
+#, fuzzy
 msgid ""
 "The link:https://forums.FreeBSD.org/[FreeBSD Forums] provide a web based "
 "discussion forum for FreeBSD questions and technical discussion."
-msgstr ""
+msgstr "link:https://forums.FreeBSD.org/[FreeBSD 论坛]提供基于 Web 的讨论论坛，供用户提问和讨论技术问题。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:67
+#, fuzzy
 msgid ""
 "The link:https://wiki.FreeBSD.org/[FreeBSD Wiki] provides various bits of "
 "information that hadn't yet made it into the Handbook."
-msgstr ""
+msgstr "link:https://wiki.FreeBSD.org/[FreeBSD Wiki]提供各种尚未收录到《手册》中的信息。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:68
+#, fuzzy
 msgid ""
 "The link:https://docs.FreeBSD.org/[Documentation Portal] offers much more "
 "than the FreeBSD Handbook alone; there are more than forty books and "
 "articles."
-msgstr ""
+msgstr "link:https://docs.FreeBSD.org/[文档门户]提供的内容远不止 FreeBSD《手册》；其中有四十多本书籍和文章。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:69
+#, fuzzy
 msgid ""
 "The link:https://freebsdfoundation.org/our-work/journal/browser-based-"
 "edition/[FreeBSD Journal] is a free, professionally-edited, bi-monthly "
 "technical magazine released by link:https://freebsdfoundation.org[The "
 "FreeBSD Foundation]."
-msgstr ""
+msgstr "link:https://freebsdfoundation.org/our-work/journal/browser-based-edition/[FreeBSD Journal]是由 link:https://freebsdfoundation.org[FreeBSD 基金会]发行的免费专业技术杂志，每两个月出版一期。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:70
+#, fuzzy
 msgid ""
 "The link:http://www.youtube.com/bsdconferences[BSDConferences YouTube "
 "Channel] provides a collection of high quality videos from BSD conferences "
 "around the world. This is a great way to watch key developers give "
 "presentations about new work in FreeBSD."
-msgstr ""
+msgstr "link:http://www.youtube.com/bsdconferences[BSDConferences YouTube 频道]汇集了世界各地 BSD 会议的高质量视频。通过这些视频，可以观看核心开发者介绍 FreeBSD 的新工作。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:71
+#, fuzzy
 msgid ""
 "link:https://www.freebsd.org/status/[FreeBSD Status Reports] are released "
 "every three months and track progress of FreeBSD development."
-msgstr ""
+msgstr "link:https://www.freebsd.org/status/[FreeBSD 状态报告]每三个月发布一次，跟踪 FreeBSD 的开发进展。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:72
+#, fuzzy
 msgid ""
 "There's a link:https://www.reddit.com/r/freebsd/[FreeBSD-focused Reddit "
 "group] at r/freebsd."
-msgstr ""
+msgstr "r/freebsd 上有一个 link:https://www.reddit.com/r/freebsd/[专注于 FreeBSD 的 Reddit 群组]。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:73
+#, fuzzy
 msgid ""
 "link:https://superuser.com/questions/tagged/freebsd[Super User] and link:"
 "https://serverfault.com/questions/tagged/freebsd[Server Fault], the Stack "
 "Exchange services for system administrators."
-msgstr ""
+msgstr "link:https://superuser.com/questions/tagged/freebsd[Super User]和 link:https://serverfault.com/questions/tagged/freebsd[Server Fault]是面向系统管理员的 Stack Exchange 服务。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:74
+#, fuzzy
 msgid ""
 "link:https://wiki.freebsd.org/Discord[FreeBSD Discord server], a "
 "communications and community-building service, where FreeBSD community "
 "members can socialise, obtain support or support others, learn, contribute, "
 "collaborate, and stay up to date with all things FreeBSD-related."
-msgstr ""
+msgstr "link:https://wiki.freebsd.org/Discord[FreeBSD Discord 服务器]是一项用于沟通和建立社区的服务，FreeBSD 社区成员可以在这里交流、获取帮助或帮助他人、学习、贡献、协作，并及时了解 FreeBSD 相关动态。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:75
+#, fuzzy
 msgid ""
 "link:https://wiki.freebsd.org/IRC/Channels[IRC channels], a widely "
 "implemented, technically mature, open standard text chat."
-msgstr ""
+msgstr "link:https://wiki.freebsd.org/IRC/Channels[IRC 频道]是一种广泛实现且技术成熟的开放标准文本聊天方式。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/eresources/_index.adoc:77
@@ -183,101 +197,117 @@ msgstr ""
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:84
+#, fuzzy
 msgid "Technical list threads should remain technical."
-msgstr ""
+msgstr "技术邮件列表中的讨论应始终围绕技术主题。"
 
 #. type: appendix
 #: documentation/content/en/books/handbook/eresources/_index.adoc:86
+#, fuzzy
 msgid ""
 "All users and developers of FreeBSD should subscribe to the {freebsd-"
 "announce}."
-msgstr ""
+msgstr "所有 FreeBSD 用户和开发者都应订阅 {freebsd-announce}。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/eresources/_index.adoc:91
+#, fuzzy
 msgid ""
 "To test FreeBSD mailing list capabilities, aim for the {freebsd-test}.  "
 "Please do not send test messages to any other list."
-msgstr ""
+msgstr "如需测试 FreeBSD 邮件列表功能，请使用 {freebsd-test}。请勿向其他列表发送测试消息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:94
+#, fuzzy
 msgid ""
 "When in doubt about what list to post a question to, see extref:{freebsd-"
 "questions-article}[How to get best results from the FreeBSD-questions "
 "mailing list]."
-msgstr ""
+msgstr "如果不确定应该向哪个列表提问，请参阅 extref:{freebsd-questions-article}[如何从 FreeBSD-questions 邮件列表获得最佳答复]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:96
+#, fuzzy
 msgid "Before posting to any list, please:"
-msgstr ""
+msgstr "向任何列表发帖之前，请先："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:98
+#, fuzzy
 msgid ""
 "learn about how to best use the mailing lists, such as how to help avoid "
 "frequently-repeated discussions, by reading the extref:{mailing-list-faq}"
 "[Mailing List Frequently Asked Questions] (FAQ) document"
-msgstr ""
+msgstr "阅读 extref:{mailing-list-faq}[邮件列表常见问题解答]（FAQ）文档，了解如何更好地使用邮件列表，例如如何避免重复讨论"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:99
+#, fuzzy
 msgid ""
 "search the archives, to tell whether someone else has already posted the "
 "same."
-msgstr ""
+msgstr "搜索邮件存档，确认是否已有他人发布过相同的问题。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:101
+#, fuzzy
 msgid "Archive search interfaces include:"
-msgstr ""
+msgstr "邮件存档搜索入口包括："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:103
+#, fuzzy
 msgid "https://lists.freebsd.org/search[] (FreeBSD, experimental)"
-msgstr ""
+msgstr "link:https://lists.freebsd.org/search[https://lists.freebsd.org/search]（FreeBSD，实验性）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:104
+#, fuzzy
 msgid "https://www.freebsd.org/search/[] (DuckDuckGo)"
-msgstr ""
+msgstr "link:https://www.freebsd.org/search/[https://www.freebsd.org/search/]（DuckDuckGo）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:107
+#, fuzzy
 msgid ""
 "Note that this also means that messages sent to FreeBSD mailing lists are "
 "archived in perpetuity.  When protecting privacy is a concern, consider "
 "using a disposable secondary email address and posting only public "
 "information."
-msgstr ""
+msgstr "请注意，发送到 FreeBSD 邮件列表的消息都会永久存档。如果担心隐私，请考虑使用临时的备用电子邮件地址，并且只发布公开信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:109
+#, fuzzy
 msgid "FreeBSD-provided archives:"
-msgstr ""
+msgstr "FreeBSD 提供的邮件存档："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:111
+#, fuzzy
 msgid "do not present links as links"
-msgstr ""
+msgstr "不要将链接显示为链接"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:112
+#, fuzzy
 msgid "do not present inline images"
-msgstr ""
+msgstr "不要显示内嵌图片"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:113
+#, fuzzy
 msgid "do not present HTML content of HTML messages."
-msgstr ""
+msgstr "不要显示 HTML 邮件中的 HTML 内容。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:116
+#, fuzzy
 msgid ""
 "The FreeBSD public mailing lists can be consulted link:{mailing-lists-url}"
 "[here]."
-msgstr ""
+msgstr "FreeBSD 公共邮件列表可在 link:{mailing-lists-url}[此处]查阅。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/eresources/_index.adoc:118
@@ -288,21 +318,23 @@ msgstr "如何订阅"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:121
+#, fuzzy
 msgid "At {mailing-lists-url}, click the name of a list to reveal its options."
-msgstr ""
+msgstr "在 {mailing-lists-url}，点击列表名称即可查看其选项。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:124
+#, fuzzy
 msgid ""
 "To post, after subscribing, send mail to `listname@FreeBSD.org`.  The "
 "message will be redistributed to list members."
-msgstr ""
+msgstr "订阅后，如需发帖，请发送邮件至 `listname@FreeBSD.org`。消息将转发给列表成员。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/eresources/_index.adoc:126
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Lists Basic Rules"
-msgstr ""
+msgstr "列表基本规则"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:131
@@ -332,6 +364,7 @@ msgstr "具体规则:"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:135
+#, fuzzy
 msgid ""
 "The topic of any posting should adhere to the basic description of the list "
 "it is posted to. If the list is about technical issues, the posting should "
@@ -339,10 +372,11 @@ msgid ""
 "detracts from the value of the mailing list for everyone on it and will not "
 "be tolerated. For free-form discussion on no particular topic, the {freebsd-"
 "chat} is freely available and should be used instead."
-msgstr ""
+msgstr "发帖主题应符合所发列表的基本说明。如果列表讨论的是技术问题，帖子就应包含技术讨论。持续的无关闲聊或人身攻击会降低邮件列表对所有成员的价值，并且不被允许。如需就任何主题自由讨论，可以使用 {freebsd-chat}。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:136
+#, fuzzy
 msgid ""
 "No posting should be made to more than 2 mailing lists, and only to 2 when a "
 "clear and obvious need to post to both lists exists. For most lists, there "
@@ -352,7 +386,7 @@ msgid ""
 "mailing lists on the `Cc` line, trim the `Cc` line before replying. _The "
 "person who replies is still responsible for cross-posting, no matter who the "
 "originator might have been._"
-msgstr ""
+msgstr "每封帖子最多只能发送到两个邮件列表，且只有在确实有明确必要同时发送到两个列表时才应这样做。大多数列表的订阅者有大量重叠，除非是非常特殊的组合（例如“-stable 和 -scsi”），否则没有理由一次向多个列表发帖。如果收到的消息在 `Cc` 行中列出了多个邮件列表，请在回复前删减 `Cc` 行。__无论最初发帖者是谁，回复者仍须负责处理交叉发帖。__"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:137
@@ -486,30 +520,35 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:167
+#, fuzzy
 msgid "If a multi-part message includes text/plain and text/html parts:"
-msgstr ""
+msgstr "如果一封多部分消息同时包含 text/plain 和 text/html 部分："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:169
+#, fuzzy
 msgid "addressees will receive both parts"
-msgstr ""
+msgstr "收件人会收到这两部分"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:170
+#, fuzzy
 msgid ""
 "lists.freebsd.org will present text/plain with an option to view original "
 "text (source, with raw HTML amongst the parts)."
-msgstr ""
+msgstr "lists.freebsd.org 会显示 text/plain，并提供查看原始文本的选项（源内容，其中包含作为各部分之一的原始 HTML）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:172
+#, fuzzy
 msgid "If text/plain does not accompany text/html:"
-msgstr ""
+msgstr "如果 text/html 部分没有附带 text/plain 部分："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:174
+#, fuzzy
 msgid "there will be conversion from HTML to plain text."
-msgstr ""
+msgstr "系统会将 HTML 转换为纯文本。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/eresources/_index.adoc:176
@@ -534,65 +573,76 @@ msgstr "BSD 特别的新闻组"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:183
+#, fuzzy
 msgid ""
 "link:news:comp.unix.bsd.freebsd.announce[comp.unix.bsd.freebsd.announce]"
-msgstr ""
+msgstr "link:news:comp.unix.bsd.freebsd.announce[comp.unix.bsd.freebsd.announce]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:184
+#, fuzzy
 msgid "link:news:comp.unix.bsd.freebsd.misc[comp.unix.bsd.freebsd.misc]"
-msgstr ""
+msgstr "link:news:comp.unix.bsd.freebsd.misc[comp.unix.bsd.freebsd.misc]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:185
+#, fuzzy
 msgid "link:news:de.comp.os.unix.bsd[de.comp.os.unix.bsd] (German)"
-msgstr ""
+msgstr "link:news:de.comp.os.unix.bsd[de.comp.os.unix.bsd]（德语）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:186
+#, fuzzy
 msgid "link:news:fr.comp.os.bsd[fr.comp.os.bsd] (French)"
-msgstr ""
+msgstr "link:news:fr.comp.os.bsd[fr.comp.os.bsd]（法语）"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/eresources/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Other UNIX(R) Newsgroups of Interest"
-msgstr ""
+msgstr "其他值得关注的 UNIX(R) 新闻组"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:190
+#, fuzzy
 msgid "link:news:comp.unix[comp.unix]"
-msgstr ""
+msgstr "link:news:comp.unix[comp.unix]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:191
+#, fuzzy
 msgid "link:news:comp.unix.questions[comp.unix.questions]"
-msgstr ""
+msgstr "link:news:comp.unix.questions[comp.unix.questions]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:192
+#, fuzzy
 msgid "link:news:comp.unix.admin[comp.unix.admin]"
-msgstr ""
+msgstr "link:news:comp.unix.admin[comp.unix.admin]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:193
+#, fuzzy
 msgid "link:news:comp.unix.programmer[comp.unix.programmer]"
-msgstr ""
+msgstr "link:news:comp.unix.programmer[comp.unix.programmer]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:194
+#, fuzzy
 msgid "link:news:comp.unix.shell[comp.unix.shell]"
-msgstr ""
+msgstr "link:news:comp.unix.shell[comp.unix.shell]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:195
+#, fuzzy
 msgid "link:news:comp.unix.misc[comp.unix.misc]"
-msgstr ""
+msgstr "link:news:comp.unix.misc[comp.unix.misc]"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:196
+#, fuzzy
 msgid "link:news:comp.unix.bsd[comp.unix.bsd]"
-msgstr ""
+msgstr "link:news:comp.unix.bsd[comp.unix.bsd]"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/eresources/_index.adoc:197
@@ -602,8 +652,9 @@ msgstr "X Window系统"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/eresources/_index.adoc:199
+#, fuzzy
 msgid "link:news:comp.windows.x[comp.windows.x]"
-msgstr ""
+msgstr "link:news:comp.windows.x[comp.windows.x]"
 
 #, fuzzy
 #~ msgid ""

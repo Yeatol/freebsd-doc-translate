@@ -17,639 +17,689 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Assistive technologies for blindness"
-msgstr ""
+msgstr "盲人辅助技术"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Vision"
-msgstr ""
+msgstr "第二部分：视觉"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 5. Blindness"
-msgstr ""
+msgstr "第 5 章：失明"
 
 #. type: Title =
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:15
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Blindness"
-msgstr ""
+msgstr "失明"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:52
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:56
+#, fuzzy
 msgid ""
 "This chapter describes assistive technologies for users who are blind, "
 "focusing primarily on screen readers and tools designed to work in "
 "conjunction with them.  The chapter deliberately contains no images and aims "
 "to minimize the use of elements other than plain text."
-msgstr ""
+msgstr "本章介绍为盲人用户提供的辅助技术，主要介绍屏幕阅读器及其配套工具。本章特意不包含任何图像，并尽量减少纯文本以外元素的使用。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:58
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Screen Reader"
-msgstr ""
+msgstr "屏幕阅读器"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:62
+#, fuzzy
 msgid ""
 "Currently, screen readers function only within the extref:{handbook}x11[X "
 "Window System] and are not supported in the crossref:virtual-"
 "terminal[virtual-terminal,Virtual Terminal].  FreeBSD does not currently "
 "support Braille displays, so they rely exclusively on speech synthesizers."
-msgstr ""
+msgstr "目前，屏幕阅读器只能在 extref:{handbook}x11[X Window System] 中运行，crossref:virtual-terminal[virtual-terminal,虚拟终端] 尚不支持屏幕阅读器。FreeBSD 目前不支持盲文显示器，因此屏幕阅读器只能使用语音合成器。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:64
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Orca"
-msgstr ""
+msgstr "Orca"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:68
+#, fuzzy
 msgid ""
 "Orca is a widely used and well-known open source screen reader.  It offers a "
 "comprehensive set of features and is available on FreeBSD through the "
 "package:accessibility/orca[] package."
-msgstr ""
+msgstr "Orca 是一款广泛使用且广为人知的开源屏幕阅读器，功能全面，可通过 package:accessibility/orca[] 软件包在 FreeBSD 上使用。"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:70
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:73
+#, fuzzy
 msgid "To install it, execute:"
-msgstr ""
+msgstr "执行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:77
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install orca\n"
-msgstr ""
+msgstr "# pkg install orca\n"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Launch"
-msgstr ""
+msgstr "启动"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:84
+#, fuzzy
 msgid "Orca can be launched in several ways.  From a terminal, type:"
-msgstr ""
+msgstr "启动 Orca 有多种方式。在终端中输入："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:88
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% orca\n"
-msgstr ""
+msgstr "% orca\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:95
+#, fuzzy
 msgid ""
 "Some desktop environments (extref:{handbook}desktop/#kde-environment[KDE "
 "Plasma], extref:{handbook}desktop/#xfce-environment[XFCE], extref:{handbook}"
 "desktop/#gnome-environment[GNOME])  provide a keyboard shortcut to launch "
 "Orca: `Super` + `Alt` + `s`."
-msgstr ""
+msgstr "某些桌面环境（extref:{handbook}desktop/#kde-environment[KDE Plasma]、extref:{handbook}desktop/#xfce-environment[XFCE]、extref:{handbook}desktop/#gnome-environment[GNOME]）提供了启动 Orca 的键盘快捷键：`Super` + `Alt` + `s`。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:100
+#, fuzzy
 msgid ""
 "The Super key is usually labeled as Windows icon, Command icon, or \"Super"
 "\".  Refer to https://en.wikipedia.org/wiki/Super_key_(keyboard_button) for "
 "more information."
-msgstr ""
+msgstr "Super 键通常标有 Windows 图标、Command 图标或“Super”。更多信息请参阅 link:https://en.wikipedia.org/wiki/Super_key_(keyboard_button)[]。"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:103
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:366
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Usage"
-msgstr ""
+msgstr "使用方法"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:108
+#, fuzzy
 msgid ""
 "Orca provides a manual page: man:orca[1].  However, most of the "
 "documentation is available online.  The main reference is the starting point "
 "in the https://gnome.pages.gitlab.gnome.org/orca/help/[Orca Users Guide], "
 "which includes:"
-msgstr ""
+msgstr "Orca 提供了手册页：man:orca[1]。不过，大部分文档都可以在线查阅。主要参考资料是 link:https://gnome.pages.gitlab.gnome.org/orca/help/[Orca 用户指南]的入门部分，其中包括："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:110
+#, fuzzy
 msgid "Getting Started"
-msgstr ""
+msgstr "入门"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:111
+#, fuzzy
 msgid "Reading Documents and Web Pages"
-msgstr ""
+msgstr "阅读文档和网页"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:112
+#, fuzzy
 msgid "Reviewing and Interacting with Screen Contents"
-msgstr ""
+msgstr "查看和操作屏幕内容"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:115
+#, fuzzy
 msgid ""
 "The screen reader includes many keyboard commands for navigation and "
 "interaction.  Refer to the https://gnome.pages.gitlab.gnome.org/orca/help/"
 "commands.html[Orca's Commands] page for a full list."
-msgstr ""
+msgstr "屏幕阅读器包含许多用于导航和交互的键盘命令。完整列表请参阅 link:https://gnome.pages.gitlab.gnome.org/orca/help/commands.html[Orca 命令]页面。"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:117
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuration"
-msgstr ""
+msgstr "配置"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:120
+#, fuzzy
 msgid ""
 "Orca can be configured through a graphical settings interface. To open it, "
 "run:"
-msgstr ""
+msgstr "Orca 可通过图形化设置界面进行配置。运行以下命令即可打开："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% orca -s\n"
-msgstr ""
+msgstr "% orca -s\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:127
+#, fuzzy
 msgid ""
 "Configuration options are documented on the https://gnome.pages.gitlab.gnome."
 "org/orca/help/preferences.html[Orca's Preferences Dialogs] page."
-msgstr ""
+msgstr "配置选项的说明请参阅 link:https://gnome.pages.gitlab.gnome.org/orca/help/preferences.html[Orca 首选项对话框]页面。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:129
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "yasr"
-msgstr ""
+msgstr "yasr"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:134
+#, fuzzy
 msgid ""
 "The package:accessibility/yasr[] utility is a lightweight screen reader that "
 "operates exclusively in a terminal environment.  Yasr requires a speech "
 "synthesizer to work.  Its default configuration file is set up to use "
 "package:accessibility/eflite[]."
-msgstr ""
+msgstr "package:accessibility/yasr[] 是一款轻量级屏幕阅读器，仅在终端环境中运行。Yasr 需要语音合成器才能工作。其默认配置文件已设置为使用 package:accessibility/eflite[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:136
+#, fuzzy
 msgid "To install both yasr and eflite, run:"
-msgstr ""
+msgstr "运行以下命令安装 yasr 和 eflite："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install yasr eflite\n"
-msgstr ""
+msgstr "# pkg install yasr eflite\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:143
+#, fuzzy
 msgid "To start the screen reader, execute:"
-msgstr ""
+msgstr "执行以下命令启动屏幕阅读器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% yasr\n"
-msgstr ""
+msgstr "% yasr\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:151
+#, fuzzy
 msgid ""
 "The global configuration file for yasr is located at [.filename]#/usr/local/"
 "share/yasr/yasr.conf#.  To create a user-specific configuration file, copy "
 "the global one to your home directory:"
-msgstr ""
+msgstr "yasr 的全局配置文件位于 [.filename]#/usr/local/share/yasr/yasr.conf#。若要创建用户专用的配置文件，请将全局配置文件复制到主目录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cp /usr/local/share/yasr/yasr.conf ~/.yasr.conf\n"
-msgstr ""
+msgstr "% cp /usr/local/share/yasr/yasr.conf ~/.yasr.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:158
+#, fuzzy
 msgid ""
 "For details on configuration options and keyboard shortcuts, refer to man:"
 "yasr[1]."
-msgstr ""
+msgstr "有关配置选项和键盘快捷键的详细信息，请参阅 man:yasr[1]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Speech Synthesizer"
-msgstr ""
+msgstr "语音合成器"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:164
+#, fuzzy
 msgid ""
 "The purpose of the speech synthesizer is to provide audio output for screen "
 "readers by converting on-screen text to speech.  This section explains how "
 "to install speech synthesizers, perform a basic functionality test, and "
 "locate their documentation for further configuration."
-msgstr ""
+msgstr "语音合成器的作用是将屏幕上的文本转换为语音，为屏幕阅读器提供音频输出。本节介绍如何安装语音合成器、执行基本功能测试，以及在哪里查找进一步配置所需的文档。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:168
+#, fuzzy
 msgid ""
 "Information about the FreeBSD audio subsystem can be found in extref:"
 "{handbook}multimedia[Multimedia] and in the man:sound[4] manual page."
-msgstr ""
+msgstr "有关 FreeBSD 音频子系统的信息，请参阅 extref:{handbook}multimedia[多媒体]和 man:sound[4] 手册页。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:171
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "eSpeak NG"
-msgstr ""
+msgstr "eSpeak NG"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:174
+#, fuzzy
 msgid ""
 "The package:audio/espeak-ng[] package provides man:espeak-ng[1], a "
 "multilingual speech synthesizer."
-msgstr ""
+msgstr "package:audio/espeak-ng[] 软件包提供 man:espeak-ng[1]，这是一款多语言语音合成器。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:176
+#, fuzzy
 msgid "To install, run:"
-msgstr ""
+msgstr "运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install espeak-ng\n"
-msgstr ""
+msgstr "# pkg install espeak-ng\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:183
+#, fuzzy
 msgid "To test, execute the following command:"
-msgstr ""
+msgstr "执行以下命令进行测试："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% espeak-ng \"Hello World, FreeBSD!\"\n"
-msgstr ""
+msgstr "% espeak-ng \"Hello World, FreeBSD!\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:191
+#, fuzzy
 msgid ""
 "eSpeak NG is a versatile and feature-rich utility.  For more information, "
 "consult its manual page, man:espeak-ng[1], and the https://github.com/espeak-"
 "ng/espeak-ng/blob/master/docs/index.md[official online documentation]."
-msgstr ""
+msgstr "eSpeak NG 是一款用途广泛、功能丰富的工具。更多信息请参阅其手册页 man:espeak-ng[1]以及 link:https://github.com/espeak-ng/espeak-ng/blob/master/docs/index.md[官方在线文档]。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Flite"
-msgstr ""
+msgstr "Flite"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:198
+#, fuzzy
 msgid ""
 "package:audio/flite[] is a speech synthesizer that is part of the http://"
 "festvox.org[FestVox] project.  It is designed as a small and fast "
 "alternative to crossref:blindness[festival, Festival], built using the "
 "FestVox suite.  To install, run:"
-msgstr ""
+msgstr "package:audio/flite[] 是 FestVox 项目的一部分，是一款语音合成器。它使用 FestVox 套件构建，旨在成为 crossref:blindness[festival,Festival] 的小巧快速替代方案。运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install flite\n"
-msgstr ""
+msgstr "# pkg install flite\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:205
+#, fuzzy
 msgid "To test, execute the following commands:"
-msgstr ""
+msgstr "执行以下命令进行测试："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% flite \"Hello world, BSD!\"\n"
 "% flite_time 10:30\n"
 "The time is now, exactly half past ten, in the morning.\n"
-msgstr ""
+msgstr "% flite \"Hello world, BSD!\"\n% flite_time 10:30\nThe time is now, exactly half past ten, in the morning.\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:215
+#, fuzzy
 msgid ""
 "The project does not provide a manual page.  Documentation is available in [."
 "filename]#/usr/local/share/doc/flite/README.md# and http://www.festvox.org/"
 "flite/doc/index.html[online]."
-msgstr ""
+msgstr "该项目不提供手册页。文档可在 [.filename]#/usr/local/share/doc/flite/README.md# 和 link:http://www.festvox.org/flite/doc/index.html[在线]查阅。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Festival"
-msgstr ""
+msgstr "Festival"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:221
+#, fuzzy
 msgid ""
 "The package:audio/festival[] package provides man:festival[1], a "
 "multilingual speech synthesizer.  To install, run:"
-msgstr ""
+msgstr "package:audio/festival[] 软件包提供 man:festival[1]，这是一款多语言语音合成器。运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install festival\n"
-msgstr ""
+msgstr "# pkg install festival\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:229
+#, fuzzy
 msgid ""
 "Festival needs at least one festvox-_voice_ package to generate a synthetic "
 "voice.  Run the following command to list available voice packages:"
-msgstr ""
+msgstr "Festival 至少需要一个 festvox-__voice__ 软件包才能生成合成语音。运行以下命令列出可用的语音软件包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% pkg search festvox\n"
-msgstr ""
+msgstr "% pkg search festvox\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:237
+#, fuzzy
 msgid ""
 "Then install a voice package.  For example, to install the American English "
 "male voice festvox-kal16-1.4.0, run:"
-msgstr ""
+msgstr "然后安装一个语音软件包。例如，运行以下命令安装美式英语男声 festvox-kal16-1.4.0："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install festvox-kal16\n"
-msgstr ""
+msgstr "# pkg install festvox-kal16\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:244
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:282
+#, fuzzy
 msgid "To test, execute:"
-msgstr ""
+msgstr "执行以下命令进行测试："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo \"Hello world, BSD!\" | festival --tts\n"
-msgstr ""
+msgstr "% echo \"Hello world, BSD!\" | festival --tts\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:253
+#, fuzzy
 msgid "In the case of the error `Can't access NAS server`, example:"
-msgstr ""
+msgstr "如果出现错误 `Can't access NAS server`，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% echo \"Hello world, BSD!\" | festival --tts\n"
 "Can't access NAS server %\n"
-msgstr ""
+msgstr "% echo \"Hello world, BSD!\" | festival --tts\nCan't access NAS server %\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:261
+#, fuzzy
 msgid ""
 "Add the following line to [.filename]#/usr/local/share/festival/lib/siteinit."
 "scm#:"
-msgstr ""
+msgstr "将以下行添加到 [.filename]#/usr/local/share/festival/lib/siteinit.scm#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "(Parameter.set 'Audio_Method 'freebsd16audio)\n"
-msgstr ""
+msgstr "(Parameter.set 'Audio_Method 'freebsd16audio)\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:269
+#, fuzzy
 msgid ""
 "For more information about Festival, consult its manual page, man:"
 "festival[1], and the http://www.festvox.org/docs/manual-2.4.0/festival_toc."
 "html[official online documentation]."
-msgstr ""
+msgstr "有关 Festival 的更多信息，请参阅其手册页 man:festival[1]以及 link:http://www.festvox.org/docs/manual-2.4.0/festival_toc.html[官方在线文档]。"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Speech Dispatcher"
-msgstr ""
+msgstr "Speech Dispatcher"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:275
+#, fuzzy
 msgid ""
 "The Speech Dispatcher project provides a high-level device independent layer "
 "for access to speech synthesis.  To install package:accessibility/speech-"
 "dispatcher[], run:"
-msgstr ""
+msgstr "Speech Dispatcher 项目提供了一个高层、与设备无关的语音合成访问层。运行以下命令安装 package:accessibility/speech-dispatcher[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install speech-dispatcher\n"
-msgstr ""
+msgstr "# pkg install speech-dispatcher\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% spd-say \"Hello world, FreeBSD!\"\n"
-msgstr ""
+msgstr "% spd-say \"Hello world, FreeBSD!\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:289
+#, fuzzy
 msgid ""
 "Speech Dispatcher provides two manual pages, man:spd-say[1] and man:speech-"
 "dispatcher[1], as well as https://freebsoft.org/speechd[online "
 "documentation]."
-msgstr ""
+msgstr "Speech Dispatcher 提供两个手册页：man:spd-say[1] 和 man:speech-dispatcher[1]，并提供 link:https://freebsoft.org/speechd[在线文档]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:294
+#, fuzzy
 msgid ""
 "The package:audio/festival-freebsoft-utils[] package provides additional "
 "features for crossref:blindness[festival,Festival] to interact with Speech "
 "Dispatcher.  Refer to the https://freebsoft.org/festival-freebsoft-"
 "utils[online documentation] to know more."
-msgstr ""
+msgstr "package:audio/festival-freebsoft-utils[] 软件包为 crossref:blindness[festival,Festival] 提供了与 Speech Dispatcher 交互的附加功能。更多信息请参阅 link:https://freebsoft.org/festival-freebsoft-utils[在线文档]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:297
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Ports Collection"
-msgstr ""
+msgstr "Ports 集合"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:302
+#, fuzzy
 msgid ""
 "FreeBSD provides the extref:{handbook}ports[Ports Collection], which offers "
 "a simple way to install applications.  Some ports allow you to configure "
 "options before building and installation.  By default, configuration is "
 "handled through a TUI menu not accessible by a screen reader."
-msgstr ""
+msgstr "FreeBSD 提供了 extref:{handbook}ports[Ports 集合]，可用于轻松安装应用程序。某些 Port 允许在构建和安装之前配置选项。默认情况下，配置通过屏幕阅读器无法访问的 TUI 菜单进行。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:305
+#, fuzzy
 msgid ""
 "The package:ports-mgmt/portoptscli[] utility is a text-only tool "
 "specifically designed to configure ports using a screen reader.  To install "
 "it, run:"
-msgstr ""
+msgstr "package:ports-mgmt/portoptscli[] 是一款纯文本工具，专为使用屏幕阅读器配置 Port 而设计。运行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install portoptscli\n"
-msgstr ""
+msgstr "# pkg install portoptscli\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:312
+#, fuzzy
 msgid "Then add to [.filename]#/etc/make.conf#:"
-msgstr ""
+msgstr "然后将以下内容添加到 [.filename]#/etc/make.conf#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DIALOG4PORTS=/usr/local/bin/portoptscli\n"
-msgstr ""
+msgstr "DIALOG4PORTS=/usr/local/bin/portoptscli\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:319
+#, fuzzy
 msgid ""
 "From now on, the Ports framework will automatically invoke portoptscli "
 "whenever a port offers configurable options."
-msgstr ""
+msgstr "从此以后，只要某个 Port 提供可配置选项，Ports 框架就会自动调用 portoptscli。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:321
+#, fuzzy
 msgid ""
 "For detailed information about its features and usage, refer to the manual "
 "page man:portoptscli[1] and consult the online https://gitlab.com/alfix/"
 "portoptscli/-/raw/main/README.txt[README]."
-msgstr ""
+msgstr "有关其功能和用法的详细信息，请参阅手册页 man:portoptscli[1]，并查阅在线 link:https://gitlab.com/alfix/portoptscli/-/raw/main/README.txt[README]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Editor"
-msgstr ""
+msgstr "编辑器"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "ed"
-msgstr ""
+msgstr "ed"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:331
+#, fuzzy
 msgid ""
 "The man:ed[1] utility is a line-oriented text editor used to create, view, "
 "and modify text files.  It is included by default in a standard FreeBSD "
 "installation.  To start the editor, run:"
-msgstr ""
+msgstr "man:ed[1] 是一款面向行的文本编辑器，可用于创建、查看和修改文本文件。它默认包含在标准 FreeBSD 安装中。运行以下命令启动编辑器："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ed\n"
-msgstr ""
+msgstr "% ed\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:339
+#, fuzzy
 msgid ""
 "ed is a powerful editor.  Refer to its manual page man:ed[1] for a complete "
 "overview of its features and command syntax."
-msgstr ""
+msgstr "ed 是一款功能强大的编辑器。有关其功能和命令语法的完整概述，请参阅手册页 man:ed[1]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:344
+#, fuzzy
 msgid ""
 "ed does not support multibyte characters and may not handle non-ASCII text "
 "correctly.  Alternatively, consider using crossref:blindness[edbrowse,"
 "edbrowse], which offers robust text editing features in addition to its "
 "browsing capabilities."
-msgstr ""
+msgstr "ed 不支持多字节字符，可能无法正确处理非 ASCII 文本。也可以考虑使用 crossref:blindness[edbrowse,edbrowse]，它除了具备浏览功能外，还提供了强大的文本编辑功能。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Internet and WEB"
-msgstr ""
+msgstr "互联网和万维网"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Edbrowse"
-msgstr ""
+msgstr "Edbrowse"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:354
+#, fuzzy
 msgid ""
 "Edbrowse is a text-based browser, editor, IRC chat client, and mail client, "
 "specifically designed for screen reader users.  Its interface is similar to "
 "man:ed[1], but with extended functionality."
-msgstr ""
+msgstr "Edbrowse 是一款基于文本的浏览器、编辑器、IRC 聊天客户端和邮件客户端，专为屏幕阅读器用户设计。其界面类似于 man:ed[1]，但功能更丰富。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:359
+#, fuzzy
 msgid "To install package:www/edbrowse[], execute:"
-msgstr ""
+msgstr "执行以下命令安装 package:www/edbrowse[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:363
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install edbrowse\n"
-msgstr ""
+msgstr "# pkg install edbrowse\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:369
+#, fuzzy
 msgid "To launch Edbrowse, run:"
-msgstr ""
+msgstr "运行以下命令启动 Edbrowse："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% edbrowse\n"
-msgstr ""
+msgstr "% edbrowse\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:377
+#, fuzzy
 msgid ""
 "The first time you run edbrowse, it will not find the configuration file [."
 "filename]#~/.ebrc#.  It will automatically create a default configuration "
 "file, display a message, and exit:"
-msgstr ""
+msgstr "首次运行 edbrowse 时，它会找不到配置文件 [.filename]#~/.ebrc#。程序会自动创建默认配置文件、显示一条消息，然后退出："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% edbrowse\n"
 "Your edbrowse config file is missing; a default file has been created for you.\n"
@@ -657,176 +707,194 @@ msgid ""
 "/home/yournickname/.ebrc\n"
 "edbrowse -c to edit\n"
 "%\n"
-msgstr ""
+msgstr "% edbrowse\nYour edbrowse config file is missing; a default file has been created for you.\nBefore running edbrowse again, take the time to personalize your config file:\n/home/yournickname/.ebrc\nedbrowse -c to edit\n%\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:390
+#, fuzzy
 msgid ""
 "You can now relaunch Edbrowse; it will use the default configuration file.  "
 "To customize it, either run:"
-msgstr ""
+msgstr "现在可以重新启动 Edbrowse；它将使用默认配置文件。若要自定义配置文件，请运行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% edbrowse -c\n"
-msgstr ""
+msgstr "% edbrowse -c\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:397
+#, fuzzy
 msgid "Or use your preferred text editor, for example:"
-msgstr ""
+msgstr "或者使用你偏好的文本编辑器，例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% ed ~/.ebrc\n"
-msgstr ""
+msgstr "% ed ~/.ebrc\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:407
+#, fuzzy
 msgid ""
 "Example configuration files are provided in [.filename]#/usr/local/share/doc/"
 "edbrowse/#.  These include:"
-msgstr ""
+msgstr "示例配置文件位于 [.filename]#/usr/local/share/doc/edbrowse/#。其中包括："
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:409
+#, fuzzy
 msgid "sample.ebrc: with comments in English"
-msgstr ""
+msgstr "sample.ebrc：包含英文注释"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:410
+#, fuzzy
 msgid "sample_fr.ebrc: with comments in French"
-msgstr ""
+msgstr "sample_fr.ebrc：包含法文注释"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:411
+#, fuzzy
 msgid "sample_it.ebrc: with comments in Italian"
-msgstr ""
+msgstr "sample_it.ebrc：包含意大利文注释"
 
 #. type: Title ====
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:414
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:418
+#, fuzzy
 msgid ""
 "The utility provides a manual page: man:edbrowse[1].  However, the main "
 "documentation is available online in the https://edbrowse.org/usersguide."
 "html[User's Guide]."
-msgstr ""
+msgstr "该实用程序提供了手册页：man:edbrowse[1]。不过，主要文档可在网上查阅，详见 link:https://edbrowse.org/usersguide.html[用户指南]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:421
+#, fuzzy
 msgid ""
 "The package also installs a local copy of the documentation at [.filename]#/"
 "usr/local/share/doc/edbrowse/usersguide.html#.  To view it using edbrowse, "
 "run:"
-msgstr ""
+msgstr "该软件包还会在 [.filename]#/usr/local/share/doc/edbrowse/usersguide.html# 安装一份本地文档副本。要使用 edbrowse 查看该文档，请运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% edbrowse /usr/local/share/doc/edbrowse/usersguide.html\n"
-msgstr ""
+msgstr "% edbrowse /usr/local/share/doc/edbrowse/usersguide.html\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:428
+#, fuzzy
 msgid ""
 "Translated versions of the user guide are available in the same directory:"
-msgstr ""
+msgstr "用户指南的译本位于同一目录："
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:430
+#, fuzzy
 msgid "usersguide_es.html: Spanish"
-msgstr ""
+msgstr "usersguide_es.html：西班牙语"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:431
+#, fuzzy
 msgid "usersguide_fr.html: French"
-msgstr ""
+msgstr "usersguide_fr.html：法语"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:432
+#, fuzzy
 msgid "usersguide_pt_br.html: Brazilian Portuguese"
-msgstr ""
+msgstr "usersguide_pt_br.html：巴西葡萄牙语"
 
 #. type: Title ===
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Web Apps"
-msgstr ""
+msgstr "Web 应用"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:438
+#, fuzzy
 msgid ""
 "Some web applications can use APIs to send output to audio devices.  Refer "
 "to crossref:blindness[speech-synthesizer,Speech Synthesizer] to install a "
 "utility and the corresponding library."
-msgstr ""
+msgstr "一些 Web 应用可以使用 API 将输出发送到音频设备。请参阅 crossref:blindness[speech-synthesizer,语音合成器]，以安装实用程序及相应的库。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:441
+#, fuzzy
 msgid ""
 "The extref:{handbook}desktop/#firefox[Firefox] browser can report the error "
 "message: `You can’t use speech synthesis because the Speech Dispatcher "
 "library is missing` or https://support.mozilla.org/en-US/kb/speechd-"
 "setup[other errors].  To solve, install crossref:blindness[speech-dispatcher,"
 "Speech Dispatcher]."
-msgstr ""
+msgstr "extref:{handbook}desktop/#firefox[Firefox] 浏览器可能会报告错误消息：`You can’t use speech synthesis because the Speech Dispatcher library is missing`，或报告 link:https://support.mozilla.org/en-US/kb/speechd-setup[其他错误]。要解决此问题，请安装 crossref:blindness[speech-dispatcher,Speech Dispatcher]。"
 
 #. type: Title ==
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:443
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Liblouis"
-msgstr ""
+msgstr "Liblouis"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:448
+#, fuzzy
 msgid ""
 "package:devel/liblouis[] is a translator for many languages to and from "
 "Braille.  It provides a large number of conversion tables.  To install, "
 "execute:"
-msgstr ""
+msgstr "package:devel/liblouis[] 是一款可将多种语言转换为盲文或从盲文转换为多种语言的翻译器。它提供了大量转换表。要安装它，请执行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:452
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install liblouis\n"
-msgstr ""
+msgstr "# pkg install liblouis\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:456
+#, fuzzy
 msgid ""
 "The package installs both libraries and utilities.  The translation utility "
 "is man:lou_translate[1]."
-msgstr ""
+msgstr "该软件包会安装库和实用程序。翻译实用程序是 man:lou_translate[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:459
+#, fuzzy
 msgid ""
 "The following example demonstrates how to transcribe the text `FreeBSD "
 "Accessibility Handbook` into Braille with English Grade 2 translation table "
 "and the unicode.dis display table.  The final output is Braille encoded as "
 "Unicode dot patterns."
-msgstr ""
+msgstr "以下示例演示如何使用英语二级盲文转换表和 unicode.dis 显示表，将文本 `FreeBSD Accessibility Handbook` 转写为盲文。最终输出是以 Unicode 点字模式编码的盲文。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% echo \"FreeBSD Accessibility Handbook\" | lou_translate -f unicode.dis,en-us-g2.ctb\n"
 "⠠⠋⠗⠑⠑⠠⠠⠃⠎⠙⠀⠠⠁⠒⠑⠎⠎⠊⠃⠊⠇⠰⠽⠀⠠⠓⠯⠃⠕⠕⠅\n"
-msgstr ""
+msgstr "% echo \"FreeBSD Accessibility Handbook\" | lou_translate -f unicode.dis,en-us-g2.ctb\n⠠⠋⠗⠑⠑⠠⠠⠃⠎⠙⠀⠠⠁⠒⠑⠎⠎⠊⠃⠊⠇⠰⠽⠀⠠⠓⠯⠃⠕⠕⠅\n"
 
 #. type: Plain text
 #: documentation/content/en/books/accessibility/blindness/_index.adoc:466
+#, fuzzy
 msgid ""
 "Documentation and additional examples for this utility are available on the "
 "project website, specifically in the https://liblouis.io/documentation/"
 "liblouis.html#Testing-Translation-Tables-interactively[Testing Translation "
 "Tables interactively] section of the official documentation."
-msgstr ""
+msgstr "该实用程序的文档和更多示例可在项目网站上查阅，具体请参见官方文档中的 link:https://liblouis.io/documentation/liblouis.html#Testing-Translation-Tables-interactively[交互式测试转换表] 部分。"

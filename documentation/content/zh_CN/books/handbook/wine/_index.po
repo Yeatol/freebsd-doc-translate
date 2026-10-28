@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/wine/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter will describe how to install WINE on a FreeBSD system and how to configure WINE"
-msgstr ""
+msgstr "本章将介绍如何在 FreeBSD 系统上安装 WINE，以及如何配置 WINE"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/wine/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Part II. Common Tasks"
-msgstr ""
+msgstr "第二部分．常见任务"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/wine/_index.adoc:1
@@ -50,14 +50,16 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:56
+#, fuzzy
 msgid ""
 "https://www.winehq.org/[WINE], which stands for Wine Is Not an Emulator, is "
 "technically a software translation layer.  It allows installing and running "
 "software written for Windows(R) on FreeBSD (and other) systems."
-msgstr ""
+msgstr "link:https://www.winehq.org/[WINE] 是 Wine Is Not an Emulator（Wine 不是模拟器）的缩写，严格来说它是一个软件转换层。它允许在 FreeBSD（以及其他）系统上安装和运行为 Windows(R) 编写的软件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:60
+#, fuzzy
 msgid ""
 "It operates by intercepting system calls, or requests from the software to "
 "the operating system, and translating them from Windows(R) calls to calls "
@@ -65,7 +67,7 @@ msgid ""
 "into what the Windows(R) software is expecting.  So in some ways, it "
 "_emulates_ a Windows(R) environment, in that it provides many of the "
 "resources Windows(R) applications are expecting."
-msgstr ""
+msgstr "它通过拦截系统调用（即软件向操作系统发出的请求），并将其从 Windows(R) 调用转换为 FreeBSD 能够理解的调用来运行。它还会根据需要将响应转换为 Windows(R) 软件所期望的格式。因此，从某些方面来说，它__模拟__了 Windows(R) 环境，因为它提供了 Windows(R) 应用程序所期望的许多资源。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:68
@@ -95,6 +97,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:73
+#, fuzzy
 msgid ""
 "The WINE Project, on the other hand, is much lighter on system's resources.  "
 "It will translate system calls on the fly, so while it is difficult to be as "
@@ -103,16 +106,17 @@ msgid ""
 "different system calls and other functionality it needs to support.  As a "
 "result there may be applications that do not work as expected on WINE, will "
 "not work at all, or will not even install to begin with."
-msgstr ""
+msgstr "另一方面，WINE 对系统资源的占用要小得多。它会即时转换系统调用，因此虽然很难达到真正 Windows(R) 计算机的速度，但性能可以非常接近。另一方面，WINE 需要不断跟进变化中的目标，支持所有不同的系统调用及其他功能。因此，有些应用程序在 WINE 中可能无法按预期运行、完全无法运行，甚至根本无法安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:76
+#, fuzzy
 msgid ""
 "At the end of the day, WINE provides another option to try to get a "
 "particular Windows(R) software program running on FreeBSD.  It can always "
 "serve as the first option which, if successful, offers a good experience "
 "without unnecessarily depleting the host FreeBSD system's resources."
-msgstr ""
+msgstr "归根结底，WINE 提供了另一种选择，可尝试在 FreeBSD 上运行特定的 Windows(R) 软件程序。它始终可以作为首选方案；如果运行成功，就能获得良好的使用体验，同时不会不必要地消耗 FreeBSD 主机系统的资源。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:78
@@ -165,32 +169,36 @@ msgstr "在阅读这个章节之前，您应当先具备以下知识："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:89
+#, fuzzy
 msgid "Understand the crossref:basics[basics,basics of UNIX(R) and FreeBSD]."
-msgstr ""
+msgstr "了解 crossref:basics[basics,UNIX(R) 和 FreeBSD 基础知识]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:90
+#, fuzzy
 msgid "Know how to crossref:bsdinstall[bsdinstall,install FreeBSD]."
-msgstr ""
+msgstr "了解如何 crossref:bsdinstall[bsdinstall,安装 FreeBSD]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:91
+#, fuzzy
 msgid ""
 "Know how to crossref:advanced-networking[advanced-networking,set up a "
 "network connection]."
-msgstr ""
+msgstr "了解如何 crossref:advanced-networking[advanced-networking,设置网络连接]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:92
+#, fuzzy
 msgid ""
 "Know how to crossref:ports[ports,install additional third-party software]."
-msgstr ""
+msgstr "了解如何 crossref:ports[ports,安装其他第三方软件]。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wine/_index.adoc:94
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "WINE Overview & Concepts"
-msgstr ""
+msgstr "WINE 概述与概念"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:97
@@ -207,36 +215,40 @@ msgstr "WINE 是什么？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:103
+#, fuzzy
 msgid ""
 "As mentioned in the crossref:wine[wine-synopsis,Synopsis] for this chapter, "
 "WINE is a compatibility layer that allows Windows(R) applications to run on "
 "other operating systems.  In theory, it means these programs should run on "
 "systems like FreeBSD, macOS, and Android."
-msgstr ""
+msgstr "如本章 crossref:wine[wine-synopsis,简介]所述，WINE 是一个兼容层，允许 Windows(R) 应用程序在其他操作系统上运行。理论上，这意味着这些程序应该能够在 FreeBSD、macOS 和 Android 等系统上运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:105
+#, fuzzy
 msgid "When WINE runs a Windows(R) executable, two things occur:"
-msgstr ""
+msgstr "WINE 运行 Windows(R) 可执行文件时，会发生两件事："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:107
+#, fuzzy
 msgid ""
 "Firstly, WINE implements an environment that mimics that of various versions "
 "of Windows(R). For example, if an application requests access to a resource "
 "such as RAM, WINE has a memory interface that looks and acts (as far as the "
 "application is concerned) like Windows(R)."
-msgstr ""
+msgstr "首先，WINE 会实现一个模拟不同版本 Windows(R) 的环境。例如，如果应用程序请求访问某种资源（如 RAM），WINE 会提供一个内存接口；就应用程序而言，该接口看起来和运行起来都与 Windows(R) 中的接口相同。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:108
+#, fuzzy
 msgid ""
 "Then, once that application makes use of that interface, WINE takes the "
 "incoming request for space in memory and translates it to something "
 "compatible with the host system. In the same way when the application "
 "retrieves that data, WINE facilitates fetching it from the host system and "
 "passing it back to the Windows(R) application."
-msgstr ""
+msgstr "然后，当应用程序使用该接口时，WINE 会接收对内存空间的请求，并将其转换为与主机系统兼容的形式。同样，当应用程序读取这些数据时，WINE 会从主机系统获取数据，并将其传回 Windows(R) 应用程序。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:110
@@ -252,34 +264,38 @@ msgstr "在FreeBSD系统上安装WINE需要一些不同的组件："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:115
+#, fuzzy
 msgid ""
 "FreeBSD applications for tasks such as running the Windows(R) executables, "
 "configuring the WINE sub-system, or compiling programs with WINE support."
-msgstr ""
+msgstr "用于运行 Windows(R) 可执行文件、配置 WINE 子系统或编译支持 WINE 的程序等任务的 FreeBSD 应用程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:116
+#, fuzzy
 msgid ""
 "A large number of libraries that implement the core functions of Windows(R) "
 "(for example [.filename]#/lib/wine/api-ms-core-memory-l1-1-1.dll.so#, which "
 "is part of the aforementioned memory interface)."
-msgstr ""
+msgstr "大量实现 Windows(R) 核心功能的库（例如 [.filename]#/lib/wine/api-ms-core-memory-l1-1-1.dll.so#，它是前述内存接口的一部分）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:117
+#, fuzzy
 msgid ""
 "A number of Windows(R) executables, which are (or mimic) common utilities "
 "(such as [.filename]#/lib/wine/notepad.exe.so#, which provides the standard "
 "Windows(R) text editor)."
-msgstr ""
+msgstr "一些 Windows(R) 可执行文件，它们是常用工具或模拟这些工具（例如 [.filename]#/lib/wine/notepad.exe.so#，它提供标准的 Windows(R) 文本编辑器）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:118
+#, fuzzy
 msgid ""
 "Additional Windows(R) assets, in particular fonts (like the Tahoma font, "
 "which is stored in [.filename]#share/wine/fonts/tahoma.ttf# in the install "
 "root)."
-msgstr ""
+msgstr "其他 Windows(R) 资源，尤其是字体（例如 Tahoma 字体，它存储在安装根目录下的 [.filename]#share/wine/fonts/tahoma.ttf# 中）。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:120
@@ -289,6 +305,7 @@ msgstr "图形与文本模式/终端程序在WINE中的比较"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:125
+#, fuzzy
 msgid ""
 "As an operating system where terminal utilities are \"first-class citizens,"
 "\" it is natural to assume that WINE will contain extensive support for text-"
@@ -296,7 +313,7 @@ msgid ""
 "especially the most popular ones, are designed with a graphical user "
 "interface (GUI) in mind.  Therefore, WINE's utilities are designed by "
 "default to launch graphical programs."
-msgstr ""
+msgstr "作为一个将终端工具视为“头等公民”的操作系统，人们自然会以为 WINE 会广泛支持文本模式程序。然而，大多数 Windows(R) 应用程序，尤其是最流行的应用程序，都是为图形用户界面（GUI）设计的。因此，WINE 的工具默认设计为启动图形程序。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:127
@@ -307,26 +324,29 @@ msgstr "但是，有三种方法可以运行这些所谓的控制台用户界面
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:129
+#, fuzzy
 msgid ""
 "The _Bare Streams_ approach will display the output directly to standard "
 "output."
-msgstr ""
+msgstr "__裸流__方式会将输出直接显示到标准输出。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:130
+#, fuzzy
 msgid ""
 "The _wineconsole_ utility can be used with either the _user_ or _curses_ "
 "backend to utilize some of the enhancements the WINE system provides for CUI "
 "applications."
-msgstr ""
+msgstr "可以将 __wineconsole__ 工具与 __user__ 或 __curses__ 后端搭配使用，以利用 WINE 系统为 CUI 应用程序提供的一些增强功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:132
+#, fuzzy
 msgid ""
 "These approaches are described in greater detail on the https://wiki.winehq."
 "org/Wine_User%27s_Guide#Text_mode_programs_.28CUI:"
 "_Console_User_Interface.29[WINE Wiki]."
-msgstr ""
+msgstr "link:https://wiki.winehq.org/Wine_User%27s_Guide#Text_mode_programs_.28CUI:_Console_User_Interface.29[WINE Wiki] 中对这些方式有更详细的说明。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:134
@@ -385,13 +405,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:151
+#, fuzzy
 msgid ""
 "While the company once produced a native FreeBSD version of their CrossOver "
 "solution, it appears to have long been abandoned.  While some resources "
 "(such as a https://www.codeweavers.com/compatibility/crossover/forum/"
 "freebsd[dedicated forum]) are still present, they also have seen no activity "
 "for some time."
-msgstr ""
+msgstr "该公司曾经推出过原生 FreeBSD 版的 CrossOver，但似乎早已停止维护。虽然仍有一些资源（例如 link:https://www.codeweavers.com/compatibility/crossover/forum/freebsd[专用论坛]），但这些资源也已经有一段时间没有活动了。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:153
@@ -400,19 +421,21 @@ msgstr "Steam Proton"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:156
+#, fuzzy
 msgid ""
 "Gaming company Steam also uses WINE to enable Windows(R) games to install "
 "and run on other systems.  it is primary target is Linux-based systems, "
 "though some support exists for macOS as well."
-msgstr ""
+msgstr "游戏公司 Steam 也使用 WINE，使 Windows(R) 游戏能够在其他系统上安装和运行。其主要目标平台是基于 Linux 的系统，但也提供了一些对 macOS 的支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:158
+#, fuzzy
 msgid ""
 "While Steam does not offer a native FreeBSD client, there are several "
 "options for using the Linux(R) client using FreeBSD's Linux Compatibility "
 "Layer."
-msgstr ""
+msgstr "Steam 没有提供原生 FreeBSD 客户端，但可以通过 FreeBSD 的 Linux 兼容层，以几种方式使用 Linux(R) 客户端。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:160
@@ -439,10 +462,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:167
+#, fuzzy
 msgid ""
 "These solutions are covered in greater detail in the later section on "
 "crossref:wine[wine-management-guis,GUI frontends], and include the following:"
-msgstr ""
+msgstr "这些解决方案将在后面关于 crossref:wine[wine-management-guis,图形界面前端]的章节中详细介绍，包括："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:169
@@ -452,9 +476,9 @@ msgstr "winetricks"
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:170
 #: documentation/content/en/books/handbook/wine/_index.adoc:566
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mizutamari"
-msgstr ""
+msgstr "水溜"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:172
@@ -469,15 +493,17 @@ msgstr "对于 FreeBSD 用户，可以使用以下方法代替使用 WINE："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:177
+#, fuzzy
 msgid ""
 "Dual-Booting: A straightforward option is to run desired Windows(R) "
 "applications natively on that OS. This of course means exiting FreeBSD in "
 "order to boot Windows(R), so this method is not feasible if access to "
 "programs in both systems is required simultaneously."
-msgstr ""
+msgstr "双启动：一种简单直接的选择是在 Windows(R) 系统上原生运行所需的应用程序。当然，这意味着必须退出 FreeBSD 才能启动 Windows(R)，因此，如果需要同时访问两个系统中的程序，这种方法就不适用了。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:186
+#, fuzzy
 msgid ""
 "Virtual Machines: Virtual Machines (VMs), as mentioned earlier in this "
 "chapter, are software processes that emulate full sets of hardware, on which "
@@ -488,10 +514,11 @@ msgid ""
 "VM is running. A few examples of VM managers include the open source "
 "solutions qemu, bhyve, and VirtualBox. See the chapter on crossref:"
 "virtualization[virtualization,Virtualization] for more detail."
-msgstr ""
+msgstr "虚拟机：如本章前文所述，虚拟机（VM）是模拟完整硬件集的软件进程，可在其上安装并运行其他操作系统（包括 Windows(R)）。现代工具让虚拟机易于创建和管理，但这种方法需要付出代价。主机系统的相当一部分资源必须分配给每台虚拟机，并且只要虚拟机在运行，主机就无法收回这些资源。虚拟机管理器包括开源解决方案 qemu、bhyve 和 VirtualBox。有关详情，请参阅 crossref:virtualization[virtualization,虚拟化]章节。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:187
+#, fuzzy
 msgid ""
 "Remote Access: Like many other UNIX(R)-like systems, FreeBSD can run a "
 "variety of applications enabling users to remotely access Windows(R) "
@@ -499,7 +526,7 @@ msgid ""
 "xrdp that connect to the standard Windows(R) Remote Desktop Protocol, other "
 "open source standards such as vnc can also be used (provided a compatible "
 "server is present on the other side)."
-msgstr ""
+msgstr "远程访问：与许多其他类 UNIX(R) 系统一样，FreeBSD 可以运行各种应用程序，让用户远程访问 Windows(R) 计算机并使用其程序或数据。除了连接到标准 Windows(R) 远程桌面协议的 xrdp 等客户端外，也可以使用 vnc 等其他开源标准（前提是另一端运行兼容的服务器）。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/wine/_index.adoc:189
@@ -533,13 +560,14 @@ msgstr "GUI"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:203
+#, fuzzy
 msgid ""
 "Most Windows(R) programs are expecting to have a graphical user interface "
 "available.  If WINE is installed without one present, its dependencies will "
 "include the Wayland compositor, and so a GUI will be installed along with "
 "WINE.  But it is useful to have the GUI of choice installed, configured, and "
 "working correctly before installing WINE."
-msgstr ""
+msgstr "大多数 Windows(R) 程序都需要图形用户界面。如果安装 WINE 时系统中没有图形界面，其依赖项将包括 Wayland 合成器，因此 WINE 安装时也会一并安装图形界面。不过，最好在安装 WINE 之前先安装、配置并确保所选图形界面正常运行。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:205
@@ -574,9 +602,9 @@ msgstr "使用以下方法安装包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wine-gecko\n"
-msgstr ""
+msgstr "# pkg install wine-gecko\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:220
@@ -585,11 +613,11 @@ msgstr "或使用 Port 套件集安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:225
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/emulators/wine-gecko\n"
 "# make install\n"
-msgstr ""
+msgstr "# cd /usr/ports/emulators/wine-gecko\n# make install\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:228
@@ -621,9 +649,9 @@ msgstr "要安装套件可："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:237
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wine-mono\n"
-msgstr ""
+msgstr "# pkg install wine-mono\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:240
@@ -632,11 +660,11 @@ msgstr "从Port套件集安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/emulators/wine-mono\n"
 "# make install\n"
-msgstr ""
+msgstr "# cd /usr/ports/emulators/wine-mono\n# make install\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:248
@@ -653,9 +681,9 @@ msgstr "有了先决条件，用下面的命令通过 pkg 安装WINE："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:255
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install wine\n"
-msgstr ""
+msgstr "# pkg install wine\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:258
@@ -664,11 +692,11 @@ msgstr "或使用以下方法从源码编译 WINE 子系统："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/emulators/wine\n"
 "# make install\n"
-msgstr ""
+msgstr "# cd /usr/ports/emulators/wine\n# make install\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:266
@@ -678,13 +706,14 @@ msgstr "32 位和 64 位的区别"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:271
+#, fuzzy
 msgid ""
 "Like most software, Windows(R) applications made the upgrade from the older "
 "32-bit architecture to 64 bits.  And most recent software is written for 64-"
 "bit operating systems, although modern OSes can sometimes continue to run "
 "older 32-bit programs as well.  FreeBSD is no different, having had support "
 "for 64-bit since the 5.x series."
-msgstr ""
+msgstr "与大多数软件一样，Windows(R) 应用程序也从较旧的 32 位架构升级到了 64 位。如今的大多数软件都是为 64 位操作系统编写的，不过现代操作系统有时也能继续运行较旧的 32 位程序。FreeBSD 也不例外，自 5.x 系列起便支持 64 位架构。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:274
@@ -706,11 +735,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:276
+#, fuzzy
 msgid ""
 "On modern, 64-bit machine and want to run 64-bit Windows(R) software, simply "
 "install the ports mentioned in the above sections. The ports system will "
 "automatically install the 64-bit version."
-msgstr ""
+msgstr "如果使用的是现代 64 位计算机，并且想运行 64 位 Windows(R) 软件，只需安装上述章节中提到的 ports。ports 系统会自动安装 64 位版本。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:277
@@ -784,9 +814,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wine program.exe\n"
-msgstr ""
+msgstr "% wine program.exe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:298
@@ -797,9 +827,9 @@ msgstr "对于接受命令行参数的应用程序，像往常一样在可执行
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wine program2.exe -file file.txt\n"
-msgstr ""
+msgstr "% wine program2.exe -file file.txt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:305
@@ -810,9 +840,9 @@ msgstr "或者提供可执行文件的完整路径来在脚本中使用它，例
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:309
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% wine /home/user/bin/program.exe\n"
-msgstr ""
+msgstr "% wine /home/user/bin/program.exe\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:312
@@ -836,18 +866,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:319
+#, fuzzy
 msgid ""
 "On most desktops, check to make sure this association is correct by right-"
 "clicking on the file, and looking for an entry in the context menu to open "
 "the file.  One of the options (hopefully the default one) will be with the "
 "*Wine Windows Program Loader*, as shown in the below screenshot:"
-msgstr ""
+msgstr "在大多数桌面环境中，可以右键单击该文件并查看上下文菜单中的打开选项，以确认文件关联是否正确。其中一个选项（希望是默认选项）应为 *Wine Windows Program Loader*，如下方截图所示："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-run-np++-1.png"
-msgstr ""
+msgstr "wine-run-np++-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:323
@@ -897,6 +928,7 @@ msgstr "WINE 前缀"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:338
+#, fuzzy
 msgid ""
 "A WINE _prefix_ is a directory, usually located beneath the default location "
 "of [.filename]#$HOME/.wine# though it can be located elsewhere.  The prefix "
@@ -904,7 +936,7 @@ msgid ""
 "and run the Windows(R) environment a given application needs.  By default, a "
 "brand new WINE installation will create the following structure when first "
 "launched by a user:"
-msgstr ""
+msgstr "WINE __前缀__是一个目录，通常位于默认位置 [.filename]#$HOME/.wine# 下，但也可以位于其他位置。前缀包含一组配置和支持文件，供 WINE 配置和运行特定应用程序所需的 Windows(R) 环境。默认情况下，用户首次启动全新安装的 WINE 时，会创建以下目录结构："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:340
@@ -920,25 +952,29 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:341
+#, fuzzy
 msgid ""
 "[.filename]#dosdevices/#: contains information on mappings of Windows(R) "
 "resources to resources on the host FreeBSD system. For example, after a new "
 "WINE installation, this should contain at least two entries which enable "
 "access to the FreeBSD filesystem using Windows(R)-style drive letters:"
-msgstr ""
+msgstr "[.filename]#dosdevices/#：包含 Windows(R) 资源到 FreeBSD 主机系统资源的映射信息。例如，全新安装 WINE 后，该目录至少应包含以下两个条目，以便通过 Windows(R) 风格的驱动器盘符访问 FreeBSD 文件系统："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:343
+#, fuzzy
 msgid "[.filename]#c:@#: A link to [.filename]#drive_c# described below."
-msgstr ""
+msgstr "[.filename]#c:@#：指向下文所述的 [.filename]#drive_c# 的链接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:344
+#, fuzzy
 msgid "[.filename]#z:@#: A link to the root directory of the system."
-msgstr ""
+msgstr "[.filename]#z:@#：指向系统根目录的链接。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:346
+#, fuzzy
 msgid ""
 "[.filename]#drive_c/#: emulates the main (i.e., [.filename]#C:#) drive of a "
 "Windows(R) system. It contains a directory structure and associated files "
@@ -947,15 +983,16 @@ msgid ""
 "the OS itself. Furthermore, applications installed within a prefix will be "
 "located in either _Program Files_ or _Program Files (x86)_, depending on "
 "their architecture."
-msgstr ""
+msgstr "[.filename]#drive_c/#：模拟 Windows(R) 系统的主驱动器（即 [.filename]#C:#）。其中包含目录结构和相关文件，与标准 Windows(R) 系统相对应。全新的 WINE 前缀会包含 Windows(R) 10 的目录，例如 _Users_ 和 _Windows_，后者存放操作系统本身。此外，在前缀中安装的应用程序将位于 _Program Files_ 或 _Program Files (x86)_ 中，具体取决于其架构。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:347
+#, fuzzy
 msgid ""
 "[.filename]#system.reg#: This Registry file contains information on the "
 "Windows(R) installation, which in the case of WINE is the environment in [."
 "filename]#drive_c#."
-msgstr ""
+msgstr "[.filename]#system.reg#：此注册表文件包含有关 Windows(R) 安装的信息；在 WINE 中，它指的是 [.filename]#drive_c# 内的环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:348
@@ -996,10 +1033,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:357
+#, fuzzy
 msgid ""
 "The most common reason is to emulate different versions of Windows(R), "
 "according to the compatibility needs of the software in question."
-msgstr ""
+msgstr "最常见的原因是根据相关软件的兼容性需求模拟不同版本的 Windows(R)。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:358
@@ -1030,40 +1068,43 @@ msgstr "使用以下命令从命令行创建前缀："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% WINEPREFIX=\"/home/username/.wine-new\" winecfg\n"
-msgstr ""
+msgstr "% WINEPREFIX=\"/home/username/.wine-new\" winecfg\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:369
+#, fuzzy
 msgid ""
 "This will run the `winecfg` program, which can be used to configure wine "
 "prefixes (more on this in a later section).  But by providing a directory "
 "path value for the `WINEPREFIX` environment variable, a new prefix is "
 "created at that location if one does not already exist."
-msgstr ""
+msgstr "这将运行 `winecfg` 程序，该程序可用于配置 WINE 前缀（后文将进一步介绍）。为 `WINEPREFIX` 环境变量指定目录路径后，如果该位置尚不存在前缀，就会在那里创建一个新前缀。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:371
+#, fuzzy
 msgid ""
 "Supplying the same variable to the wine program will similarly cause the "
 "selected program to be run with the specified prefix:"
-msgstr ""
+msgstr "将同一个变量传递给 wine 程序，也可以让指定程序在所选前缀下运行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:375
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% WINEPREFIX=\"/home/username/.wine-new\" wine program.exe\n"
-msgstr ""
+msgstr "% WINEPREFIX=\"/home/username/.wine-new\" wine program.exe\n"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:378
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring WINE Prefixes with winecfg"
-msgstr ""
+msgstr "使用 winecfg 配置 WINE 前缀"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:383
+#, fuzzy
 msgid ""
 "As described above WINE includes a tool called `winecfg` to configure "
 "prefixes from within a GUI.  It contains a variety of functions, which are "
@@ -1071,16 +1112,17 @@ msgid ""
 "or provided the location of a prefix within the `WINEPREFIX` variable, it "
 "enables the configuration of the selected prefix as described in the below "
 "sections."
-msgstr ""
+msgstr "如上文所述，WINE 包含一个名为 `winecfg` 的工具，可通过图形界面配置前缀。它包含多种功能，详见下文各节。在某个前缀中运行 `winecfg`，或通过 `WINEPREFIX` 变量指定前缀位置后，即可按照下文各节所述配置所选前缀。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:386
+#, fuzzy
 msgid ""
 "Selections made on the _Applications_ tab will affect the scope of changes "
 "made in the _Libraries_ and _Graphics_ tabs, which will be limited to the "
 "application selected.  See the section on https://wiki.winehq.org/Wine_User"
 "%27s_Guide#Using_Winecfg[Using Winecfg] in the WINE Wiki for more details."
-msgstr ""
+msgstr "在 _Applications_ 标签页中所做的选择，会影响 _Libraries_ 和 _Graphics_ 标签页中更改的适用范围；这些更改仅对所选应用程序生效。更多详情请参阅 WINE Wiki 中的 link:https://wiki.winehq.org/Wine_User%27s_Guide#Using_Winecfg[使用 Winecfg] 章节。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:388
@@ -1090,19 +1132,20 @@ msgstr "应用程序"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:390
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-1.png"
-msgstr ""
+msgstr "wine-config-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:395
+#, fuzzy
 msgid ""
 "The _Applications_ contains controls enabling the association of programs "
 "with a particular version of Windows(R).  On first start-up the _Application "
 "settings_ section will contain a single entry: _Default Settings_.  This "
 "corresponds to all the default configurations of the prefix, which (as the "
 "disabled _Remove application_ button implies) cannot be deleted."
-msgstr ""
+msgstr "_Applications_ 标签页包含用于将程序与特定版本 Windows(R) 关联的控件。首次启动时，_Application settings_ 区域中只有一个条目：_Default Settings_。它对应前缀的所有默认配置；正如禁用的 _Remove application_ 按钮所示，该条目无法删除。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:397
@@ -1111,8 +1154,9 @@ msgstr "但是，可以使用以下过程添加其他应用程序："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:399
+#, fuzzy
 msgid "Click the _Add application_ button."
-msgstr ""
+msgstr "单击 _Add application_ 按钮。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:400
@@ -1121,8 +1165,9 @@ msgstr "使用提供的对话框选择所需的程序的可执行文件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:401
+#, fuzzy
 msgid "Select the version of Windows(R) to be used with the selected program."
-msgstr ""
+msgstr "选择要用于所选程序的 Windows(R) 版本。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:403
@@ -1132,12 +1177,13 @@ msgstr "库"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:405
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-2.png"
-msgstr ""
+msgstr "wine-config-2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:410
+#, fuzzy
 msgid ""
 "WINE provides a set of open source library files as part of its distribution "
 "that provide the same functions as their Windows(R) counterparts.  However, "
@@ -1145,35 +1191,39 @@ msgid ""
 "pace with new updates to these libraries.  As a result, the versions that "
 "ship with WINE may be missing functionality that the latest Windows(R) "
 "programs are expecting."
-msgstr ""
+msgstr "WINE 发行版包含一组开源库文件，提供与对应 Windows(R) 库相同的功能。不过，如本章前文所述，WINE 项目始终在努力跟进这些库的新版本。因此，随 WINE 一同发布的版本可能缺少最新 Windows(R) 程序所需的功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:412
+#, fuzzy
 msgid ""
 "However, `winecfg` makes it possible specify overrides for the built-in "
 "libraries, particularly there is a version of Windows(R) available on the "
 "same machine as the host FreeBSD installation. For each library to be "
 "overridden, do the following:"
-msgstr ""
+msgstr "不过，`winecfg` 可以为内置库指定替代项；尤其是在主机 FreeBSD 安装所在的计算机上有可用的 Windows(R) 版本时。要替换某个库，请执行以下操作："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:414
+#, fuzzy
 msgid ""
 "Open the _New override for library_ drop-down and select the library to be "
 "replaced."
-msgstr ""
+msgstr "打开 _New override for library_ 下拉菜单，并选择要替换的库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:415
+#, fuzzy
 msgid "Click the _Add_ button."
-msgstr ""
+msgstr "单击 _Add_ 按钮。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:416
+#, fuzzy
 msgid ""
 "The new override will appear in the _Existing overrides_ list, notice the "
 "_native, builtin_ designation in parentheses."
-msgstr ""
+msgstr "新的替代项将显示在 _Existing overrides_ 列表中；请注意括号中的 _native, builtin_ 标记。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:417
@@ -1182,8 +1232,9 @@ msgstr "点击要选择的库。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:418
+#, fuzzy
 msgid "Click the _Edit_ button."
-msgstr ""
+msgstr "单击 _Edit_ 按钮。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:419
@@ -1207,16 +1258,17 @@ msgstr "图形"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-3.png"
-msgstr ""
+msgstr "wine-config-3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:428
+#, fuzzy
 msgid ""
 "The _Graphics_ tab provides some options to make the windows of programs run "
 "via WINE operate smoothly with FreeBSD:"
-msgstr ""
+msgstr "_Graphics_ 标签页提供了一些选项，可使通过 WINE 运行的程序窗口在 FreeBSD 上流畅运行："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:430
@@ -1262,9 +1314,9 @@ msgstr "桌面集成"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:438
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-4.png"
-msgstr ""
+msgstr "wine-config-4.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:441
@@ -1289,12 +1341,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:445
+#, fuzzy
 msgid ""
 "Mappings of directories in the host FreeBSD system to useful folders within "
 "the Windows(R) environment. To change an existing association, select the "
 "desired item and click _Browse_, then use the provided dialog to select a "
 "directory."
-msgstr ""
+msgstr "将主机 FreeBSD 系统中的目录映射到 Windows(R) 环境中的常用文件夹。要更改现有关联，请选择所需条目并单击 _Browse_，然后使用提供的对话框选择目录。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:447
@@ -1304,12 +1357,13 @@ msgstr "驱动器"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-5.png"
-msgstr ""
+msgstr "wine-config-5.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:454
+#, fuzzy
 msgid ""
 "The _Drives_ tab allows linking of directories in the host FreeBSD system to "
 "drive letters in the Windows(R) environment.  The default values in this tab "
@@ -1317,7 +1371,7 @@ msgid ""
 "filename]#dosdevices/# in the current WINE prefix.  Changes made via this "
 "dialog will reflect in [.filename]#dosdevices#, and properly-formatted links "
 "created in that directory will display in this tab."
-msgstr ""
+msgstr "_Drives_ 选项卡允许将 FreeBSD 主机系统中的目录链接到 Windows(R) 环境中的驱动器号。此选项卡中的默认值应该很熟悉，因为它们显示的是当前 WINE 前缀中 [.filename]#dosdevices/# 的内容。通过此对话框所做的更改会反映到 [.filename]#dosdevices# 中，而在该目录中创建的格式正确的链接也会显示在此选项卡中。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:456
@@ -1331,8 +1385,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:458
+#, fuzzy
 msgid "Click the _Add _ button."
-msgstr ""
+msgstr "点击 __添加 __ 按钮。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:459
@@ -1341,15 +1396,17 @@ msgstr "在提供的对话框中，选择一个可用的驱动器号。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:460
+#, fuzzy
 msgid "Click _OK_."
-msgstr ""
+msgstr "点击 _确定_。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:461
+#, fuzzy
 msgid ""
 "Fill in the _Path_ input box by either typing the path to the resource, or "
 "click _Browse _ and use the provided dialog to select it."
-msgstr ""
+msgstr "在 _路径_ 输入框中填写路径，可以直接输入资源路径，也可以点击 __浏览 __ 并使用提供的对话框进行选择。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:464
@@ -1372,16 +1429,17 @@ msgstr "声音"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:468
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-6.png"
-msgstr ""
+msgstr "wine-config-6.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:471
+#, fuzzy
 msgid ""
 "This tab contains some configurable options for routing sound from "
 "Windows(R) programs to the native FreeBSD sound system, including:"
-msgstr ""
+msgstr "此选项卡包含一些可配置选项，用于将 Windows(R) 程序的声音传送到 FreeBSD 原生声音系统，包括："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:473
@@ -1406,9 +1464,9 @@ msgstr "关于"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:479
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "wine-config-7.png"
-msgstr ""
+msgstr "wine-config-7.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:483
@@ -1471,24 +1529,25 @@ msgstr ""
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Installing winetricks"
-msgstr ""
+msgstr "安装 winetricks"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:502
+#, fuzzy
 msgid ""
 "To install `winetricks` on a FreeBSD using binary packages, use the "
 "following commands (note `winetricks` requires either the i386-wine or i386-"
 "wine-devel package, and is therefore not installed automatically with other "
 "dependencies):"
-msgstr ""
+msgstr "要在 FreeBSD 上使用二进制软件包安装 `winetricks`，请使用以下命令（注意：`winetricks` 需要 i386-wine 或 i386-wine-devel 软件包，因此不会随其他依赖项自动安装）："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install i386-wine winetricks\n"
-msgstr ""
+msgstr "# pkg install i386-wine winetricks\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:509
@@ -1497,26 +1556,27 @@ msgstr "使用以下命令从源码编译安装 winetricks："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:516
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/emulators/i386-wine\n"
 "# make install\n"
 "# cd /usr/ports/emulators/winetricks\n"
 "# make install\n"
-msgstr ""
+msgstr "# cd /usr/ports/emulators/i386-wine\n# make install\n# cd /usr/ports/emulators/winetricks\n# make install\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:519
+#, fuzzy
 msgid ""
 "If a manual installation is required, refer to the https://github.com/"
 "Winetricks/winetricks[Github] account for instructions."
-msgstr ""
+msgstr "如果需要手动安装，请参阅 link:https://github.com/Winetricks/winetricks[Github] 账户中的说明。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:521
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using winetricks"
-msgstr ""
+msgstr "使用 winetricks"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:524
@@ -1527,36 +1587,38 @@ msgstr "使用以下方法安装包："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:528
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% winetricks\n"
-msgstr ""
+msgstr "% winetricks\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:532
+#, fuzzy
 msgid ""
 "Note: this should be in a 32-bit prefix to run `winetricks`.  Launching "
 "`winetricks` displays a window with a number of choices, as follows:"
-msgstr ""
+msgstr "注意：运行 `winetricks` 时应使用 32 位前缀。启动 `winetricks` 会显示一个包含多个选项的窗口，如下所示："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-run-1.png"
-msgstr ""
+msgstr "winetricks-run-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:536
+#, fuzzy
 msgid ""
 "Selecting either _Install an application_, _Install a benchmark_, or "
 "_Install a game_ shows a list with supported options, such as the one below "
 "for applications:"
-msgstr ""
+msgstr "选择 __安装应用程序__、__安装基准测试__ 或 __安装游戏__，会显示支持选项的列表，例如下面的应用程序列表："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:537
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-run-2.png"
-msgstr ""
+msgstr "winetricks-run-2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:541
@@ -1573,9 +1635,9 @@ msgstr ""
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:542
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-app-install-1.png"
-msgstr ""
+msgstr "winetricks-app-install-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:545
@@ -1586,9 +1648,9 @@ msgstr "规避这些操作后，将运行应用程序的实际安装程序："
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:546
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-app-install-2.png"
-msgstr ""
+msgstr "winetricks-app-install-2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:549
@@ -1600,36 +1662,38 @@ msgstr "安装结束后，可以使用桌面环境的菜单启动 Windows 程序
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:550
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-menu-1.png"
-msgstr ""
+msgstr "winetricks-menu-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:553
+#, fuzzy
 msgid ""
 "In order to remove the application, run `winetricks` again, and select _Run "
 "an uninstaller_."
-msgstr ""
+msgstr "要移除应用程序，请再次运行 `winetricks`，然后选择 __运行卸载程序__。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-uninstall-1.png"
-msgstr ""
+msgstr "winetricks-uninstall-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:558
+#, fuzzy
 msgid ""
 "A Windows(R)-style dialog will appear with a list of installed programs and "
 "components.  Select the application to be removed, then click the _Modify/"
 "Remove_ button."
-msgstr ""
+msgstr "此时会出现一个 Windows(R) 风格的对话框，其中列出了已安装的程序和组件。选择要移除的应用程序，然后点击 __修改/移除__ 按钮。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:559
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-uninstall-2.png"
-msgstr ""
+msgstr "winetricks-uninstall-2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:562
@@ -1640,18 +1704,19 @@ msgstr "这将运行应用程序的内置安装程序，它也应该有卸载的
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "winetricks-uninstall-3.png"
-msgstr ""
+msgstr "winetricks-uninstall-3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:570
+#, fuzzy
 msgid ""
 "https://codeberg.org/Alexander88207/Mizutamari[Mizutamari] is an application "
 "similar to `winetricks`, although it was inspired by the https://lutris.net/"
 "[Lutris] gaming system for Linux.  But while it is focused on games, there "
 "are also non-gaming applications available for install through Mizutamari."
-msgstr ""
+msgstr "link:https://codeberg.org/Alexander88207/Mizutamari[Mizutamari] 是一个类似于 `winetricks` 的应用程序，不过它的灵感来自 Linux 游戏系统 link:https://lutris.net/[Lutris]。不过，Mizutamari 虽然专注于游戏，也提供了可供安装的非游戏应用程序。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:572
@@ -1669,25 +1734,26 @@ msgstr "使用以下命令安装编译好的 Homura："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:579
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install mizuma\n"
-msgstr ""
+msgstr "# pkg install mizuma\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:583
+#, fuzzy
 msgid ""
 "Mizutamari is available in the FreeBSD Ports system.  However, instead of "
 "looking in the _emulators_ section of Ports or binary packages, look for it "
 "in the _games_ section."
-msgstr ""
+msgstr "Mizutamari 可通过 FreeBSD Ports 系统获取。不过，不要在 Ports 或二进制软件包的 _emulators_ 分类中查找，而应在 _games_ 分类中查找。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:588
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/games/mizuma\n"
 "# make install\n"
-msgstr ""
+msgstr "# cd /usr/ports/games/mizuma\n# make install\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:591
@@ -1698,29 +1764,31 @@ msgstr "使用 Homura"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:595
+#, fuzzy
 msgid ""
 "Mizutamari's usage is quite similar to that of `winetricks`.  When using it "
 "for the first time, launch it from the command line (or a desktop "
 "environment runner applet) with:"
-msgstr ""
+msgstr "Mizutamari 的用法与 `winetricks` 非常相似。首次使用时，请从命令行（或桌面环境的运行器小程序）启动它："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% Mizuma\n"
-msgstr ""
+msgstr "% Mizuma\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:603
+#, fuzzy
 msgid ""
 "This should result in a friendly welcome message.  Click _OK_ to continue."
-msgstr ""
+msgstr "这应该会显示一条友好的欢迎消息。点击 _确定_ 继续。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:604
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-launch-1.png"
-msgstr ""
+msgstr "homura-launch-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:607
@@ -1731,9 +1799,9 @@ msgstr "该程序还将提供在兼容环境的应用程序菜单中放置链接
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:608
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-run-2.png"
-msgstr ""
+msgstr "homura-run-2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:611
@@ -1749,9 +1817,9 @@ msgstr ""
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:612
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-run-3.png"
-msgstr ""
+msgstr "homura-run-3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:616
@@ -1770,24 +1838,25 @@ msgstr ""
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:617
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-1.png"
-msgstr ""
+msgstr "homura-install-1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:622
+#, fuzzy
 msgid ""
 "To select one of Mizutamari's supported applications to install, select "
 "_Installation_, and click _OK_.  This will display a list of applications "
 "Homura can install automatically.  Select one, and click _OK_ to start the "
 "process."
-msgstr ""
+msgstr "要从 Mizutamari 支持的应用程序中选择要安装的应用程序，请选择 __安装__，然后点击 _确定_。这会显示 Homura 可以自动安装的应用程序列表。选择一个应用程序，然后点击 _确定_ 开始安装。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:623
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-2.png"
-msgstr ""
+msgstr "homura-install-2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:627
@@ -1802,9 +1871,9 @@ msgstr "Homura 将会下载已选择的程序。在支持的桌面上可能会�
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:628
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-3.png"
-msgstr ""
+msgstr "homura-install-3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:632
@@ -1820,9 +1889,9 @@ msgstr ""
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:633
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-4.png"
-msgstr ""
+msgstr "homura-install-4.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:637
@@ -1841,9 +1910,9 @@ msgstr ""
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-5.png"
-msgstr ""
+msgstr "homura-install-5.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:641
@@ -1852,9 +1921,9 @@ msgstr "自动下载所需的软件包。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:642
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-6.png"
-msgstr ""
+msgstr "homura-install-6.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:647
@@ -1871,9 +1940,9 @@ msgstr ""
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:648
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-7.png"
-msgstr ""
+msgstr "homura-install-7.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:651
@@ -1882,24 +1951,25 @@ msgstr "这将会列出已安装的应用程序。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:652
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-install-8.png"
-msgstr ""
+msgstr "homura-install-8.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:657
+#, fuzzy
 msgid ""
 "To run the new program, select it from the list, and click _OK_.  To "
 "uninstall the application, select _Uninstallation_ from the main screen, "
 "which will display a similar list.  Select the program to be removed, and "
 "click _OK_."
-msgstr ""
+msgstr "要运行新程序，请从列表中选择它，然后点击 _确定_。要卸载应用程序，请在主界面中选择 __卸载__，这会显示一个类似的列表。选择要移除的程序，然后点击 _确定_。"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/wine/_index.adoc:658
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "homura-uninstall-1.png"
-msgstr ""
+msgstr "homura-uninstall-1.png"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:661
@@ -1954,23 +2024,25 @@ msgstr "WINE 前缀的相关问题"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:679
+#, fuzzy
 msgid ""
 "Like most UNIX(R)-like operating systems, FreeBSD is designed for multiple "
 "users to be logged in and working at the same time.  On the other hand, "
 "Windows(R) is multi-user in the sense that there can be multiple user "
 "accounts set up on one system.  But the expectation is that only one will be "
 "using the physical machine (a desktop or laptop PC) at any given moment."
-msgstr ""
+msgstr "与大多数类 UNIX(R) 操作系统一样，FreeBSD 的设计允许多名用户同时登录和工作。另一方面，Windows(R) 的多用户特性是指可以在一台系统上设置多个用户账户。但通常情况下，在任何给定时刻，只有一名用户会使用这台实体计算机（台式机或笔记本电脑）。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:683
+#, fuzzy
 msgid ""
 "More recent consumer versions of Windows(R) have taken some steps to improve "
 "the OS in multi-user scenarios.  But it is still largely structured around a "
 "single-user experience.  Furthermore, the measures the WINE project has "
 "taken to create a compatible environment means, unlike FreeBSD applications "
 "(including WINE itself), it will resemble this single-user environment."
-msgstr ""
+msgstr "较新的 Windows(R) 消费者版本已采取一些措施来改善操作系统在多用户场景下的表现，但其整体结构仍主要围绕单用户体验设计。此外，WINE 项目为创建兼容环境所采取的措施意味着，与 FreeBSD 应用程序（包括 WINE 本身）不同，WINE 会呈现这种单用户环境。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:687
@@ -2074,14 +2146,16 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:702
+#, fuzzy
 msgid ""
 "Finally, add the location as a drive to the user's prefix using the "
 "`winecfg` as described in the above section on WINE Configuration in this "
 "chapter."
-msgstr ""
+msgstr "最后，按照本章前文“WINE 配置”一节所述，使用 `winecfg` 将该位置添加为用户前缀中的一个驱动器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:706
+#, fuzzy
 msgid ""
 "Once complete, applications can be installed to this location, and "
 "subsequently run using the assigned drive letter (or the standard UNIX(R)-"
@@ -2091,7 +2165,7 @@ msgid ""
 "exhibit unexpected behavior when run by a user who is not the owner, despite "
 "being a member of the group that should have full \"read/write/execute\" "
 "permissions for the entire directory."
-msgstr ""
+msgstr "完成后，便可在此位置安装应用程序，之后可使用分配的驱动器号（或标准的 UNIX(R) 风格目录路径）运行这些应用程序。不过，如上所述，同一时间只能有一名用户运行这些应用程序（它们可能会访问安装目录中的文件）。某些应用程序在由非所有者用户运行时，即使该用户属于具有整个目录“读/写/执行”权限的组，也可能表现异常。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:708
@@ -2134,102 +2208,105 @@ msgstr "使用 root 权限和以下命令创建新用户："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:721
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# adduser\n"
-msgstr ""
+msgstr "# adduser\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:726
+#, fuzzy
 msgid ""
 "Enter the username (e.g., _windows_) and Full name (\"Microsoft Windows\").  "
 "Then accept the defaults for the remainder of the questions.  Next, install "
 "the `sudo` utility using binary packages with the following:"
-msgstr ""
+msgstr "输入用户名（例如 _windows_）和全名（\"Microsoft Windows\"）。然后对其余问题接受默认值。接下来，使用二进制软件包安装 `sudo` 工具："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:730
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install sudo\n"
-msgstr ""
+msgstr "# pkg install sudo\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:733
+#, fuzzy
 msgid "Once installed, edit [.filename]#/etc/sudoers# as follows:"
-msgstr ""
+msgstr "安装完成后，按如下方式编辑 [.filename]#/etc/sudoers#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:737
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# User alias specification\n"
-msgstr ""
+msgstr "# 用户别名定义\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:740
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# define which users can run the wine/windows programs\n"
 "User_Alias WINDOWS_USERS = user1,user2\n"
-msgstr ""
+msgstr "# 定义哪些用户可以运行 wine/windows 程序\nUser_Alias WINDOWS_USERS = user1,user2\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:743
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# define which users can administrate (become root)\n"
 "User_Alias ADMIN = user1\n"
-msgstr ""
+msgstr "# 定义哪些用户可以进行管理操作（成为 root）\nUser_Alias ADMIN = user1\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:745
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# Cmnd alias specification\n"
-msgstr ""
+msgstr "# 命令别名定义\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:748
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# define which commands the WINDOWS_USERS may run\n"
 "Cmnd_Alias WINDOWS = /usr/bin/wine,/usr/bin/winecfg\n"
-msgstr ""
+msgstr "# 定义 WINDOWS_USERS 可以运行哪些命令\nCmnd_Alias WINDOWS = /usr/bin/wine,/usr/bin/winecfg\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:754
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Defaults\n"
 "Defaults:WINDOWS_USERS env_reset\n"
 "Defaults:WINDOWS_USERS env_keep += DISPLAY\n"
 "Defaults:WINDOWS_USERS env_keep += XAUTHORITY\n"
 "Defaults    !lecture,tty_tickets,!fqdn\n"
-msgstr ""
+msgstr "# 默认设置\nDefaults:WINDOWS_USERS env_reset\nDefaults:WINDOWS_USERS env_keep += DISPLAY\nDefaults:WINDOWS_USERS env_keep += XAUTHORITY\nDefaults    !lecture,tty_tickets,!fqdn\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# User privilege specification\n"
 "root    ALL=(ALL) ALL\n"
-msgstr ""
+msgstr "# 用户权限定义\nroot    ALL=(ALL) ALL\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:760
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Members of the admin user_alias, defined above, may gain root privileges\n"
 "ADMIN ALL=(ALL) ALL\n"
-msgstr ""
+msgstr "# 上文定义的 admin 用户别名中的成员可以获得 root 权限\nADMIN ALL=(ALL) ALL\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:763
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# The WINDOWS_USERS may run WINDOWS programs as user windows without a password\n"
 "WINDOWS_USERS ALL = (windows) NOPASSWD: WINDOWS\n"
-msgstr ""
+msgstr "# WINDOWS_USERS 可以将 WINDOWS 程序作为 windows 用户运行，且无需输入密码\nWINDOWS_USERS ALL = (windows) NOPASSWD: WINDOWS\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:768
+#, fuzzy
 msgid ""
 "The result of these changes is the users named in the _User_Alias_ section "
 "are permitted to run the programs listed in the _Cmnd Alias_ section using "
@@ -2238,20 +2315,21 @@ msgid ""
 "users designates as _WINDOWS_USERS_ can run the WINE and `winecfg` "
 "applications as user _windows_.  As a bonus, the configuration here means "
 "they will not be required to enter the password for the _windows_ user."
-msgstr ""
+msgstr "这些更改的结果是，_User_Alias_ 部分中列出的用户可以使用 _Defaults_ 部分所列的资源（当前显示器），以文件最后一行所列用户的身份运行 _Cmnd Alias_ 部分中列出的程序。换句话说，指定为 _WINDOWS_USERS_ 的用户可以以 _windows_ 用户身份运行 WINE 和 `winecfg` 应用程序。此外，这里的配置意味着他们无需输入 _windows_ 用户的密码。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:770
+#, fuzzy
 msgid ""
 "Next provide access to the display back to the _windows_ user, as whom the "
 "WINE programs will be running:"
-msgstr ""
+msgstr "接下来，向运行 WINE 程序时所使用的 _windows_ 用户授予显示器访问权限："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:774
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% xhost +local:windows\n"
-msgstr ""
+msgstr "% xhost +local:windows\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:778
@@ -2268,9 +2346,9 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% sudo -u windows wine program.exe\n"
-msgstr ""
+msgstr "% sudo -u windows wine program.exe\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:788
@@ -2327,13 +2405,14 @@ msgstr "如何在同一个系统上安装 32 位和 64 位的 WINE？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:802
+#, fuzzy
 msgid ""
 "As described earlier in this section, the wine and i386-wine packages "
 "conflict with one another, and therefore cannot be installed on the same "
 "system in the normal way.  However, multiple installs can be achieved using "
 "mechanisms like chroots/jails, or by building WINE from source (note this "
 "does _not_ mean building the port)."
-msgstr ""
+msgstr "如本节前文所述，wine 和 i386-wine 软件包彼此冲突，因此通常无法在同一系统上同时安装。不过，可以通过 chroot/ jail 等机制，或从源代码构建 WINE（注意：这并不意味着构建该 Port）来实现多套安装。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:804
@@ -2402,12 +2481,13 @@ msgstr "优化"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:825
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How Should Windows(R) Hardware (e.g., Graphics) Drivers be Handled?"
-msgstr ""
+msgstr "应如何处理 Windows(R) 硬件（例如图形）驱动程序？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:831
+#, fuzzy
 msgid ""
 "Operating system drivers transfer commands between applications and "
 "hardware.  WINE emulates a Windows(R) environment, including the drivers, "
@@ -2416,13 +2496,13 @@ msgid ""
 "use the host systems drivers.  If, for example, a graphics card that "
 "benefits from dedicated drivers, install them using the standard FreeBSD "
 "methods, not Windows(R) installers."
-msgstr ""
+msgstr "操作系统驱动程序负责在应用程序和硬件之间传递命令。WINE 会模拟 Windows(R) 环境，包括驱动程序，而这些驱动程序会使用 FreeBSD 的原生驱动程序来传递命令。不建议安装 Windows(R) 驱动程序，因为 WINE 系统的设计目的是使用主机系统的驱动程序。例如，如果显卡可从专用驱动程序中受益，请使用 FreeBSD 的标准方法安装驱动程序，而不要使用 Windows(R) 安装程序。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:833
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Is There a way to Make Windows(R) Fonts Look Better?"
-msgstr ""
+msgstr "有没有办法让 Windows(R) 字体看起来更清晰？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:836
@@ -2435,30 +2515,31 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:838
+#, fuzzy
 msgid ""
 "According to https://forums.freebsd.org/threads/make-wine-ui-fonts-look-"
 "good.68273/[a post in the FreeBSD Forums], adding the following to [."
 "filename]#.config/fontconfig/fonts.conf# will add anti-aliasing and make "
 "text more readable."
-msgstr ""
+msgstr "根据 link:https://forums.freebsd.org/threads/make-wine-ui-fonts-look-good.68273/[FreeBSD 论坛上的一篇帖子]，在 [.filename]#.config/fontconfig/fonts.conf# 中添加以下内容可以启用抗锯齿，让文字更易于阅读。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:843
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "<?xml version=\"1.0\"?>\n"
 "<!DOCTYPE fontconfig SYSTEM \"fonts.dtd>\"\n"
-msgstr ""
+msgstr "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"fonts.dtd>\"\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:845
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "<fontconfig>\n"
-msgstr ""
+msgstr "<fontconfig>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/wine/_index.adoc:854
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "  <!-- antialias all fonts -->\n"
 "  <match target=\"font\">\n"
@@ -2468,16 +2549,17 @@ msgid ""
 "    <edit name=\"rgba\" mode=\"assign\"><const>rgb</const></edit>>\n"
 "  </match>\n"
 "</fontconfig>\n"
-msgstr ""
+msgstr "  <!-- antialias all fonts -->\n  <match target=\"font\">\n    <edit name=\"antialias\" mode=\"assign\"><bool>true</bool></edit>>\n    <edit name=\"hinting\" mode=\"assign\"><bool>true</bool></edit>>\n    <edit name=\"hintstyle\" mode=\"assign\"><const>hintslight</const></edit>>\n    <edit name=\"rgba\" mode=\"assign\"><const>rgb</const></edit>>\n  </match>\n</fontconfig>\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:858
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Does Having Windows(R) Installed Elsewhere on a System Help WINE Operate?"
-msgstr ""
+msgstr "在系统的其他位置安装 Windows(R) 是否有助于 WINE 运行？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:863
+#, fuzzy
 msgid ""
 "It may, depending on the application being run.  As mentioned in the section "
 "describing `winecfg`, some built-in WINE DLLs and other libraries can be "
@@ -2485,7 +2567,7 @@ msgid ""
 "Windows(R) partition or drive is mounted to the FreeBSD system and "
 "accessible to the user, configuring some of these overrides will use native "
 "Windows(R) libraries and may decrease the chance of unexpected behavior."
-msgstr ""
+msgstr "这取决于所运行的应用程序。正如介绍 `winecfg` 的一节所述，可以为某些内置 WINE DLL 和其他库指定备用版本的路径，从而覆盖它们。如果 Windows(R) 分区或驱动器已挂载到 FreeBSD 系统且用户可以访问，配置其中某些覆盖项就会使用原生 Windows(R) 库，并可能降低出现意外行为的概率。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:865
@@ -2501,12 +2583,13 @@ msgstr "在哪查看应用程序是否可以在 WINE 上正常工作？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:872
+#, fuzzy
 msgid ""
 "The first step in determining compatibility should be the https://appdb."
 "winehq.org/[WINE AppDB].  This is a compilation of reports of programs "
 "working (or not) on all supported platforms, although (as previously "
 "mentioned), solutions for one platform are often applicable to others."
-msgstr ""
+msgstr "判断兼容性的第一步应是查看 link:https://appdb.winehq.org/[WINE AppDB]。其中汇总了各受支持平台上程序能否正常工作的报告，不过正如前文所述，适用于一个平台的解决方案通常也适用于其他平台。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:874
@@ -2516,31 +2599,34 @@ msgstr "有什么可以让游戏运行得更流畅？"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:879
+#, fuzzy
 msgid ""
 "Perhaps.  Many Windows(R) games rely on DirectX, a proprietary Microsoft "
 "graphics layer.  However there are projects in the open source community "
 "attempting to implement support for this technology."
-msgstr ""
+msgstr "也许可以。许多 Windows(R) 游戏依赖 DirectX，这是 Microsoft 的专有图形层。不过，开源社区中有一些项目正在尝试实现对这项技术的支持。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:882
+#, fuzzy
 msgid ""
 "The _dxvk_ project, which is an attempt to implement DirectX using the "
 "FreeBSD-compatible Vulkan graphics sub-system, is one such.  Although its "
 "primary target is WINE on Linux, https://forums.freebsd.org/threads/what-"
 "about-gaming-on-freebsd.723/page-9[some FreeBSD users report] compiling and "
 "using dxvk."
-msgstr ""
+msgstr "_dxvk_ 项目就是其中之一，它尝试使用与 FreeBSD 兼容的 Vulkan 图形子系统实现 DirectX。虽然该项目主要面向 Linux 上的 WINE，但 link:https://forums.freebsd.org/threads/what-about-gaming-on-freebsd.723/page-9[一些 FreeBSD 用户报告]称，他们已成功编译并使用 dxvk。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:886
+#, fuzzy
 msgid ""
 "In addition, work is under way on a https://www.freshports.org/emulators/"
 "wine-proton/[wine-proton port].  This will bring the work of Valve, "
 "developer of the Steam gaming platform, to FreeBSD.  Proton is a "
 "distribution of WINE designed to allow many Windows(R) games to run on other "
 "operating systems with minimal setup."
-msgstr ""
+msgstr "此外， link:https://www.freshports.org/emulators/wine-proton/[wine-proton port] 也正在开发中。这将把 Steam 游戏平台开发者 Valve 的相关成果带到 FreeBSD。Proton 是 WINE 的一个发行版本，旨在让许多 Windows(R) 游戏以最少的配置运行于其他操作系统上。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/wine/_index.adoc:888
@@ -2557,25 +2643,28 @@ msgstr "有很多 FreeBSD 用户讨论 WINE 相关问题的地方，这些可以
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:893
+#, fuzzy
 msgid ""
 "https://forums.freebsd.org/[The FreeBSD forums], particularly the "
 "_Installation and Maintenance of Ports or Packages_ or _Emulation and "
 "virtualization_ forums."
-msgstr ""
+msgstr "link:https://forums.freebsd.org/[FreeBSD 论坛]，特别是 _Ports 或软件包的安装与维护_ 论坛和 _仿真与虚拟化_ 论坛。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:894
+#, fuzzy
 msgid ""
 "https://wiki.freebsd.org/IRC/Channels[FreeBSD IRC channels] including "
 "#freebsd (for general support), #freebsd-games, and others."
-msgstr ""
+msgstr "link:https://wiki.freebsd.org/IRC/Channels[FreeBSD IRC 频道]，包括 #freebsd（提供一般支持）、#freebsd-games 等。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:895
+#, fuzzy
 msgid ""
 "https://discord.gg/2CCuhCt[The BSD World Discord server's] channels "
 "including _bsd-desktop_, _bsd-gaming_, _bsd-wine_, and others."
-msgstr ""
+msgstr "link:https://discord.gg/2CCuhCt[BSD World Discord 服务器]中的频道，包括 _bsd-desktop_、_bsd-gaming_、_bsd-wine_ 等。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/wine/_index.adoc:897
@@ -2592,11 +2681,12 @@ msgstr "有一些专注于其他操作系统的资源可能对 FreeBSD 用户有
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:902
+#, fuzzy
 msgid ""
 "https://wiki.winehq.org/[The WINE Wiki] has a wealth of information on using "
 "WINE, much of which is applicable across many of WINE's supported operating "
 "systems."
-msgstr ""
+msgstr "link:https://wiki.winehq.org/[WINE Wiki] 提供了大量有关使用 WINE 的信息，其中许多内容适用于 WINE 支持的多种操作系统。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:903
@@ -2615,12 +2705,13 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/wine/_index.adoc:903
+#, fuzzy
 msgid ""
 "Finally, Codeweavers (a developer of a commercial version of WINE) is an "
 "active upstream contributor. Oftentimes answers to questions in https://www."
 "codeweavers.com/support/forums[their support forum] can be of aid in "
 "troubleshooting problems with the open source version of WINE."
-msgstr ""
+msgstr "最后，Codeweavers（WINE 商业版本的开发者）也是一位活跃的上游贡献者。通常，link:https://www.codeweavers.com/support/forums[他们的支持论坛]中对问题的解答有助于排查开源版 WINE 的问题。"
 
 #, no-wrap
 #~ msgid "Homura"

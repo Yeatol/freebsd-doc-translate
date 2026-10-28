@@ -17,53 +17,57 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Description about creating a FreeBSD Port when the program need some modifications"
-msgstr ""
+msgstr "关于在程序需要进行一些修改时创建 FreeBSD Port 的说明"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Chapter 4. Slow Porting"
-msgstr ""
+msgstr "第 4 章：缓慢移植"
 
 #. type: Title =
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:14
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Slow Porting"
-msgstr ""
+msgstr "缓慢移植"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:52
+#, fuzzy
 msgid ""
 "Okay, so it was not that simple, and the port required some modifications to "
 "get it to work.  In this section, we will explain, step by step, how to "
 "modify it to get it to work with the ports paradigm."
-msgstr ""
+msgstr "好吧，事情并没有那么简单，这个 Port 需要经过一些修改才能正常工作。本节将逐步说明如何修改它，使其符合 Ports 的工作方式。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:54
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "How Things Work"
-msgstr ""
+msgstr "工作原理"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:58
+#, fuzzy
 msgid ""
 "First, this is the sequence of events which occurs when the user first types "
 "`make` in the port's directory.  Having [.filename]#bsd.port.mk# in another "
 "window while reading this really helps to understand it."
-msgstr ""
+msgstr "首先，用户首次在 Port 目录中输入 `make` 时，会依次发生以下事件。阅读本文时，在另一个窗口中打开 [.filename]#bsd.port.mk# 会很有帮助。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:60
+#, fuzzy
 msgid ""
 "But do not worry, not many people understand exactly how [.filename]#bsd."
 "port.mk# is working... _:-)_"
-msgstr ""
+msgstr "不过别担心，没多少人能完全理解 [.filename]#bsd.port.mk# 是如何工作的…… _:-)_"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:63
+#, fuzzy
 msgid ""
 "The `fetch` target is run. The `fetch` target is responsible for making sure "
 "that the tarball exists locally in `DISTDIR`. If `fetch` cannot find the "
@@ -73,85 +77,96 @@ msgid ""
 "`FETCH`, assuming that the requesting site has direct access to the "
 "Internet. If that succeeds, it will save the file in `DISTDIR` for future "
 "use and proceed."
-msgstr ""
+msgstr "运行 `fetch` 目标。`fetch` 目标负责确保 tarball 已存在于本地 `DISTDIR` 中。如果 `fetch` 在 `DISTDIR` 中找不到所需文件，就会查询 Makefile 中设置的 URL `MASTER_SITES`，以及我们用于备份 distfile 的 FTP 镜像。随后，它会尝试使用 `FETCH` 获取指定的发行文件，前提是请求该文件的站点可以直接访问 Internet。如果获取成功，就会将文件保存到 `DISTDIR` 以供以后使用，然后继续。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:64
+#, fuzzy
 msgid ""
 "The `extract` target is run. It looks for the port's distribution file "
 "(typically a compressed tarball) in `DISTDIR` and unpacks it into a "
 "temporary subdirectory specified by `WRKDIR` (defaults to [.filename]#work#)."
-msgstr ""
+msgstr "运行 `extract` 目标。它会在 `DISTDIR` 中查找 Port 的发行文件（通常是压缩的 tarball），并将其解压到 `WRKDIR` 指定的临时子目录中（默认为 [.filename]#work#）。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:65
+#, fuzzy
 msgid ""
 "The `patch` target is run. First, any patches defined in `PATCHFILES` are "
 "applied. Second, if any patch files named [.filename]#patch-*# are found in "
 "`PATCHDIR` (defaults to the [.filename]#files# subdirectory), they are "
 "applied at this time in alphabetical order."
-msgstr ""
+msgstr "运行 `patch` 目标。首先应用 `PATCHFILES` 中定义的补丁。其次，如果在 `PATCHDIR` 中找到名为 [.filename]#patch-*# 的补丁文件（默认为 [.filename]#files# 子目录），则按字母顺序依次应用。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:66
+#, fuzzy
 msgid ""
 "The `configure` target is run. This can do any one of many different things."
-msgstr ""
+msgstr "运行 `configure` 目标。它可以执行多种不同操作中的任意一种。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:67
+#, fuzzy
 msgid "If it exists, [.filename]#scripts/configure# is run."
-msgstr ""
+msgstr "如果 [.filename]#scripts/configure# 存在，则运行它。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:68
+#, fuzzy
 msgid ""
 "If `HAS_CONFIGURE` or `GNU_CONFIGURE` is set, [.filename]#WRKSRC/configure# "
 "is run."
-msgstr ""
+msgstr "如果设置了 `HAS_CONFIGURE` 或 `GNU_CONFIGURE`，则运行 [.filename]#WRKSRC/configure#。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:70
+#, fuzzy
 msgid ""
 "The `build` target is run. This is responsible for descending into the "
 "port's private working directory (`WRKSRC`) and building it."
-msgstr ""
+msgstr "运行 `build` 目标。它负责进入 Port 的专用工作目录（`WRKSRC`）并构建 Port。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:71
+#, fuzzy
 msgid ""
 "The `stage` target is run. This puts the final set of built files into a "
 "temporary directory (`STAGEDIR`, see crossref:special[staging,Staging]). The "
 "hierarchy of this directory mirrors that of the system on which the package "
 "will be installed."
-msgstr ""
+msgstr "运行 `stage` 目标。它会将最终构建的文件放入临时目录（`STAGEDIR`，参见 crossref:special[staging,暂存]）。该目录的层次结构与将要安装此软件包的系统相同。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:72
+#, fuzzy
 msgid ""
 "The `package` target is run. This creates a package using the files from the "
 "temporary directory created during the `stage` target and the port's [."
 "filename]#pkg-plist#."
-msgstr ""
+msgstr "运行 `package` 目标。它使用 `stage` 目标期间创建的临时目录中的文件以及 Port 的 [.filename]#pkg-plist# 创建软件包。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:73
+#, fuzzy
 msgid ""
 "The `install` target is run. This installs the package created during the "
 "`package` target into the host system."
-msgstr ""
+msgstr "运行 `install` 目标。它会将 `package` 目标创建的软件包安装到主机系统中。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:75
+#, fuzzy
 msgid ""
 "The above are the default actions. In addition, define targets `pre-"
 "_something_` or `post-_something_`, or put scripts with those names, in the "
 "[.filename]#scripts# subdirectory, and they will be run before or after the "
 "default actions are done."
-msgstr ""
+msgstr "以上是默认操作。此外，可以定义 `pre-_something_` 或 `post-_something_` 目标，或者在 [.filename]#scripts# 子目录中放置同名脚本；它们会在默认操作执行之前或之后运行。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:81
+#, fuzzy
 msgid ""
 "For example, if there is a `post-extract` target defined in the [."
 "filename]#Makefile#, and a file [.filename]#pre-build# in the [."
@@ -161,19 +176,21 @@ msgid ""
 "[.filename]#Makefile# targets if the actions are simple enough, because it "
 "will be easier for someone to figure out what kind of non-default action the "
 "port requires."
-msgstr ""
+msgstr "例如，如果在 [.filename]#Makefile# 中定义了 `post-extract` 目标，并且 [.filename]#scripts# 子目录中有一个 [.filename]#pre-build# 文件，那么 `post-extract` 目标会在常规解压操作之后调用，而 [.filename]#pre-build# 会在默认构建规则执行之前运行。如果操作足够简单，建议使用 [.filename]#Makefile# 目标，因为这样更容易让人了解该 Port 需要执行哪些非默认操作。"
 
 #. type: .procedure
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:85
+#, fuzzy
 msgid ""
 "The default actions are done by the `do-_something_` targets from [."
 "filename]#bsd.port.mk#.  For example, the commands to extract a port are in "
 "the target `do-extract`.  If the default target does not do the job right, "
 "redefine the `do-_something_` target in the [.filename]#Makefile#."
-msgstr ""
+msgstr "默认操作由 [.filename]#bsd.port.mk# 中的 `do-_something_` 目标执行。例如，解压 Port 的命令位于 `do-extract` 目标中。如果默认目标无法正确完成工作，就在 [.filename]#Makefile# 中重新定义相应的 `do-_something_` 目标。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:91
+#, fuzzy
 msgid ""
 "The \"main\" targets (for example, `extract`, `configure`, etc.) do nothing "
 "more than make sure all the stages up to that one are completed and call the "
@@ -181,32 +198,35 @@ msgid ""
 "the extraction, fix `do-extract`, but never ever change the way `extract` "
 "operates! Additionally, the target `post-deinstall` is invalid and is not "
 "run by the ports infrastructure."
-msgstr ""
+msgstr "“主要”目标（例如 `extract`、`configure` 等）所做的只是确保此前的所有阶段均已完成，然后调用实际目标或脚本；它们并非设计为可修改的。要修复解压过程，请修复 `do-extract`，但绝不要更改 `extract` 的工作方式！此外，`post-deinstall` 目标无效，Ports 基础设施不会运行它。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:94
+#, fuzzy
 msgid ""
 "Now that what goes on when the user types `make install` is better "
 "understood, let us go through the recommended steps to create the perfect "
 "port."
-msgstr ""
+msgstr "现在我们对用户输入 `make install` 时发生的事情有了更好的了解，接下来看看创建完美 Port 的推荐步骤。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:96
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Getting the Original Sources"
-msgstr ""
+msgstr "获取原始源码"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:100
+#, fuzzy
 msgid ""
 "Get the original sources (normally) as a compressed tarball ([.filename]#foo."
 "tar.gz# or [.filename]#foo.tar.bz2#) and copy it into `DISTDIR`.  Always use "
 "_mainstream_ sources when and where possible."
-msgstr ""
+msgstr "获取原始源码（通常为）压缩 tarball（[.filename]#foo.tar.gz# 或 [.filename]#foo.tar.bz2#），并将其复制到 `DISTDIR`。只要有可能，就始终使用__上游__源码。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:107
+#, fuzzy
 msgid ""
 "Set the variable `MASTER_SITES` to reflect where the original tarball "
 "resides.  Shorthand definitions exist for most mainstream sites in [."
@@ -216,18 +236,20 @@ msgid ""
 "sites tend to change over time, this becomes a maintenance nightmare for "
 "everyone involved.  See crossref:makefiles[makefile-master_sites,"
 "`MASTER_SITES`] for details."
-msgstr ""
+msgstr "设置变量 `MASTER_SITES`，以指明原始 tarball 所在的位置。大多数上游站点的简写定义都在 [.filename]#bsd.sites.mk# 中。请尽可能使用这些站点及其对应定义，以避免在源码库中反复出现相同的信息。这些站点往往会随时间变化，这会给所有相关人员带来维护上的噩梦。详情请参见 crossref:makefiles[makefile-master_sites,`MASTER_SITES`]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:109
+#, fuzzy
 msgid ""
 "If there is no FTP/HTTP site that is well-connected to the net, or can only "
 "find sites that have irritatingly non-standard formats, put a copy on a "
 "reliable FTP or HTTP server (for example, a home page)."
-msgstr ""
+msgstr "如果没有连接良好的 FTP/HTTP 站点，或者只能找到格式令人恼火、非标准的站点，请将副本放到可靠的 FTP 或 HTTP 服务器上（例如个人主页）。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:113
+#, fuzzy
 msgid ""
 "If a convenient and reliable place to put the distfile cannot be found, we "
 "can \"house\" it ourselves on `ftp.FreeBSD.org`; however, this is the least-"
@@ -235,10 +257,11 @@ msgid ""
 "public_distfiles/# of someone's `freefall` account.  Ask the person who "
 "commits the port to do this. This person will also set `MASTER_SITES` to "
 "`LOCAL/_username_` where `_username_` is their FreeBSD cluster login."
-msgstr ""
+msgstr "如果找不到方便可靠的 distfile 存放位置，我们可以将其“托管”在 `ftp.FreeBSD.org` 上；不过，这是最不推荐的方案。必须将 distfile 放入某人的 `freefall` 账户中的 [.filename]#~/public_distfiles/#。请联系负责提交该 Port 的人员处理。此人还会将 `MASTER_SITES` 设置为 `LOCAL/_username_`，其中 `_username_` 是其 FreeBSD 集群登录名。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:118
+#, fuzzy
 msgid ""
 "If the port's distfile changes all the time without any kind of version "
 "update by the author, consider putting the distfile on a home page and "
@@ -249,26 +272,28 @@ msgid ""
 "our FTP site.  Also, if there is only one master site for the port, it is "
 "recommended to house a backup on a home page and list it as the second "
 "`MASTER_SITES`."
-msgstr ""
+msgstr "如果 Port 的 distfile 总是在变化，而作者却不更新版本号，可以考虑将 distfile 放到个人主页上，并将其列为第一个 `MASTER_SITES`。尽量劝说 Port 作者不要这样做；建立某种源代码版本控制确实很有帮助。托管特定版本可以避免用户遇到 `checksum mismatch` 错误，也能减轻 FTP 站点维护人员的工作量。此外，如果该 Port 只有一个主站点，建议在个人主页上托管一个备份，并将其列为第二个 `MASTER_SITES`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:122
+#, fuzzy
 msgid ""
 "If the port requires additional patches that are available on the Internet, "
 "fetch them too and put them in `DISTDIR`.  Do not worry if they come from a "
 "site other than where the main source tarball comes, we have a way to handle "
 "these situations (see the description of crossref:makefiles[porting-"
 "patchfiles,PATCHFILES] below)."
-msgstr ""
+msgstr "如果该 Port 需要可从 Internet 获取的其他补丁，也请获取这些补丁并将其放入 `DISTDIR`。不必担心它们来自与主源码 tarball 不同的站点；我们有办法处理这种情况（参见下文 crossref:makefiles[porting-patchfiles,PATCHFILES] 的说明）。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Modifying the Port"
-msgstr ""
+msgstr "修改 Port"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:129
+#, fuzzy
 msgid ""
 "Unpack a copy of the tarball in a private directory and make whatever "
 "changes are necessary to get the port to compile properly under the current "
@@ -276,91 +301,99 @@ msgid ""
 "to automate the process shortly.  Everything, including the deletion, "
 "addition, or modification of files has to be doable using an automated "
 "script or patch file when the port is finished."
-msgstr ""
+msgstr "在专用目录中解压一份 tarball，并进行必要的修改，使 Port 能在当前版本的 FreeBSD 上正确编译。请__仔细记录__操作步骤，因为稍后需要将其自动化。Port 完成后，包括删除、添加或修改文件在内的所有操作，都必须能够通过自动化脚本或补丁文件完成。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:132
+#, fuzzy
 msgid ""
 "If the port requires significant user interaction/customization to compile "
 "or install, take a look at one of Larry Wall's classic Configure scripts and "
 "perhaps do something similar.  The goal of the new ports collection is to "
 "make each port as \"plug-and-play\" as possible for the end-user while using "
 "a minimum of disk space."
-msgstr ""
+msgstr "如果该 Port 在编译或安装时需要用户进行大量交互或自定义，请参考 Larry Wall 的经典 Configure 脚本，并考虑采用类似的做法。新的 Ports Collection 旨在让每个 Port 对最终用户而言尽可能“即插即用”，同时尽量减少磁盘空间占用。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:136
+#, fuzzy
 msgid ""
 "Unless explicitly stated, patch files, scripts, and other files created and "
 "contributed to the FreeBSD ports collection are assumed to be covered by the "
 "standard BSD copyright conditions."
-msgstr ""
+msgstr "除非另有明确说明，为 FreeBSD Ports Collection 创建并贡献的补丁文件、脚本及其他文件，均被视为受标准 BSD 版权条款保护。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Patching"
-msgstr ""
+msgstr "打补丁"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:143
+#, fuzzy
 msgid ""
 "In the preparation of the port, files that have been added or changed can be "
 "recorded with man:diff[1] for later feeding to man:patch[1].  Doing this "
 "with a typical file involves saving a copy of the original file before "
 "making any changes using a [.filename]#.orig# suffix."
-msgstr ""
+msgstr "准备 Port 时，可以使用 man:diff[1] 记录新增或修改的文件，以便稍后将差异交给 man:patch[1]。对于典型文件，可以在修改前使用 [.filename]#.orig# 后缀保存原始文件副本。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:147
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% cp file file.orig\n"
-msgstr ""
+msgstr "% cp file file.orig\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:151
+#, fuzzy
 msgid ""
 "After all changes have been made, `cd` back to the port directory.  Use "
 "`make makepatch` to generate updated patch files in the [.filename]#files# "
 "directory."
-msgstr ""
+msgstr "完成所有修改后，使用 `cd` 返回 Port 目录。运行 `make makepatch`，在 [.filename]#files# 目录中生成更新后的补丁文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:156
+#, fuzzy
 msgid ""
 "Use `BINARY_ALIAS` to substitute hardcoded commands during the build and "
 "avoid patching build files.  See crossref:makefiles[binary-alias,Use "
 "`BINARY_ALIAS` to Rename Commands Instead of Patching the Build] for more "
 "information."
-msgstr ""
+msgstr "使用 `BINARY_ALIAS` 在构建期间替换硬编码命令，从而避免修补构建文件。详情请参见 crossref:makefiles[binary-alias,使用 `BINARY_ALIAS` 重命名命令，而不是修补构建文件]。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:159
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "General Rules for Patching"
-msgstr ""
+msgstr "打补丁的一般规则"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:166
+#, fuzzy
 msgid ""
 "Patch files are stored in `PATCHDIR`, usually [.filename]#files/#, from "
 "where they will be automatically applied.  All patches must be relative to "
 "`WRKSRC`.  Typically `WRKSRC` is a subdirectory of `WRKDIR`, the directory "
 "where the distfile is extracted.  Use `make -V WRKSRC` to see the actual "
 "path.  The patch names are to follow these rules:"
-msgstr ""
+msgstr "补丁文件存放在 `PATCHDIR` 中，通常是 [.filename]#files/#；它们会从该目录自动应用。所有补丁都必须相对于 `WRKSRC`。`WRKSRC` 通常是 `WRKDIR` 的子目录，也就是解压 distfile 的目录。运行 `make -V WRKSRC` 可查看实际路径。补丁名称应遵循以下规则："
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:168
+#, fuzzy
 msgid ""
 "Avoid having more than one patch modify the same file. For example, having "
 "both [.filename]#patch-foobar.c# and [.filename]#patch-foobar.c2# making "
 "changes to [.filename]#${WRKSRC}/foobar.c# makes them fragile and difficult "
 "to debug."
-msgstr ""
+msgstr "避免多个补丁修改同一个文件。例如，若 [.filename]#patch-foobar.c# 和 [.filename]#patch-foobar.c2# 都修改 [.filename]#${WRKSRC}/foobar.c#，补丁就会变得脆弱且难以调试。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:169
+#, fuzzy
 msgid ""
 "When creating names for patch files, replace each underscore (`\\_`) with "
 "two underscores (`\\__`) and each slash (`/`) with one underscore (`_`). For "
@@ -369,24 +402,27 @@ msgid ""
 "name patches like [.filename]#patch-aa# or [.filename]#patch-ab#. Always use "
 "the path and file name in patch names. Using `make makepatch` automatically "
 "generates the correct names."
-msgstr ""
+msgstr "创建补丁文件名时，将每个下划线（`\\_`）替换为两个下划线（`\\__`），并将每个斜杠（`/`）替换为一个下划线（`_`）。例如，要修补名为 [.filename]#src/freeglut_joystick.c# 的文件，应将对应补丁命名为 [.filename]#patch-src_freeglut__joystick.c#。不要将补丁命名为 [.filename]#patch-aa# 或 [.filename]#patch-ab#。补丁名称中始终使用路径和文件名。运行 `make makepatch` 会自动生成正确的名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:170
+#, fuzzy
 msgid ""
 "A patch may modify multiple files if the changes are related and the patch "
 "is named appropriately. For example, [.filename]#patch-add-missing-stdlib.h#."
-msgstr ""
+msgstr "如果修改内容彼此相关，且补丁名称恰当，一个补丁可以修改多个文件。例如，[.filename]#patch-add-missing-stdlib.h#。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:171
+#, fuzzy
 msgid ""
 "Only use characters `[-+.\\_a-zA-Z0-9]` for naming patches. In particular, "
 "__do not use `::` as a path separator,__ use `_` instead."
-msgstr ""
+msgstr "补丁名称只能使用字符 `[-+.\\_a-zA-Z0-9]`。特别是，__不要使用 `::` 作为路径分隔符，__应改用 `_`。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:176
+#, fuzzy
 msgid ""
 "Minimize the amount of non-functional whitespace changes in patches.  It is "
 "common in the Open Source world for projects to share large amounts of a "
@@ -396,69 +432,75 @@ msgid ""
 "functional changes.  It not only increases the size of the ports repository "
 "but makes it hard to find out what exactly caused the problem and what was "
 "changed at all."
-msgstr ""
+msgstr "尽量减少补丁中非功能性的空白变更。在开源领域，不同项目共享大量代码库很常见，但它们遵循的代码风格和缩进规则可能不同。从一个项目中取用可正常工作的功能代码，以修复另一个项目中的类似问题时，请务必小心：最终补丁可能会包含大量非功能性变更。这不仅会增加 Ports 仓库的体积，还会让人难以查明究竟是什么导致了问题，以及到底修改了什么。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:178
+#, fuzzy
 msgid ""
 "If a file must be deleted, do it in the `post-extract` target rather than as "
 "part of the patch."
-msgstr ""
+msgstr "如果必须删除文件，请在 `post-extract` 目标中执行，而不要将删除操作作为补丁的一部分。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Manual Patch Generation"
-msgstr ""
+msgstr "手动生成补丁"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:187
+#, fuzzy
 msgid ""
 "Manual patch creation is usually not necessary.  Automatic patch generation "
 "as described earlier in this section is the preferred method.  However, "
 "manual patching may be required occasionally."
-msgstr ""
+msgstr "通常不需要手动创建补丁。本节前面所述的自动生成补丁是首选方法。不过，有时可能需要手动打补丁。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:192
+#, fuzzy
 msgid ""
 "Patches are saved into files named [.filename]#patch-*# where * indicates "
 "the pathname of the file that is patched, such as [.filename]#patch-"
 "Imakefile# or [.filename]#patch-src-config.h#.  Patches with file names "
 "which do not start with [.filename]#patch-# will not be applied "
 "automatically."
-msgstr ""
+msgstr "补丁保存在名为 [.filename]#patch-*# 的文件中，其中 * 表示被修补文件的路径名，例如 [.filename]#patch-Imakefile# 或 [.filename]#patch-src-config.h#。文件名不以 [.filename]#patch-# 开头的补丁不会自动应用。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:195
+#, fuzzy
 msgid ""
 "After the file has been modified, man:diff[1] is used to record the "
 "differences between the original and the modified version.  `-u` causes man:"
 "diff[1] to produce \"unified\" diffs, the preferred form."
-msgstr ""
+msgstr "修改文件后，使用 man:diff[1] 记录原始版本与修改版本之间的差异。`-u` 会让 man:diff[1] 生成“统一”格式的差异，这是首选格式。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% diff -u file.orig file > patch-pathname-file\n"
-msgstr ""
+msgstr "% diff -u file.orig file > patch-pathname-file\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:202
+#, fuzzy
 msgid ""
 "When generating patches for new, added files, `-N` is used to tell man:"
 "diff[1] to treat the non-existent original file as if it existed but was "
 "empty:"
-msgstr ""
+msgstr "为新增文件生成补丁时，使用 `-N` 告诉 man:diff[1] 将不存在的原始文件视为空文件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% diff -u -N newfile.orig newfile > patch-pathname-newfile\n"
-msgstr ""
+msgstr "% diff -u -N newfile.orig newfile > patch-pathname-newfile\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:212
+#, fuzzy
 msgid ""
 "Using the recurse (`-r`) option to man:diff[1] to generate patches is fine, "
 "but please look at the resulting patches to make sure there is no "
@@ -469,122 +511,130 @@ msgid ""
 "take the diffs of `configure` (it often grows to a few thousand lines!).  "
 "Instead, define `USES=autoreconf` and take the diffs of [."
 "filename]#configure.in#."
-msgstr ""
+msgstr "使用 man:diff[1] 的递归（`-r`）选项生成补丁没有问题，但请检查生成的补丁，确保其中没有不必要的内容。特别是，两个备份文件之间的差异、Port 使用 `Imake` 或 GNU `configure` 时的 [.filename]##Makefile## 差异等都没有必要，必须删除。如果必须编辑 [.filename]#configure.in# 并运行 `autoconf` 重新生成 `configure`，不要对 `configure` 生成差异（它通常会膨胀到几千行！）。应改为定义 `USES=autoreconf`，并对 [.filename]#configure.in# 生成差异。"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Simple Automatic Replacements"
-msgstr ""
+msgstr "简单的自动替换"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:218
+#, fuzzy
 msgid ""
 "Simple replacements can be performed directly from the port [."
 "filename]#Makefile# using the in-place mode of man:sed[1].  This is useful "
 "when changes use the value of a variable:"
-msgstr ""
+msgstr "可以在 Port 的 [.filename]#Makefile# 中直接使用 man:sed[1] 的原地编辑模式进行简单替换。当修改内容需要使用变量的值时，这种方法很有用："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "post-patch:\n"
 "\t@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/Makefile\n"
-msgstr ""
+msgstr "post-patch:\n\t@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/Makefile\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:229
+#, fuzzy
 msgid ""
 "Only use man:sed[1] to replace variable content.  You must use patch files "
 "instead of man:sed[1] to replace static content."
-msgstr ""
+msgstr "man:sed[1] 只能用于替换变量内容。替换静态内容时，必须使用补丁文件，而不是 man:sed[1]。"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:234
+#, fuzzy
 msgid ""
 "Quite often, software being ported uses the CR/LF convention in source "
 "files.  This may cause problems with further patching, compiler warnings, or "
 "script execution (like `/bin/sh^M not found`.)  To quickly convert all files "
 "from CR/LF to just LF, add this entry to the port [.filename]#Makefile#:"
-msgstr ""
+msgstr "移植的软件经常在源文件中使用 CR/LF 换行约定。这可能会导致后续打补丁、编译器警告或脚本执行出现问题（例如 `/bin/sh^M not found`）。要快速将所有文件的 CR/LF 转换为 LF，请在 Port 的 [.filename]#Makefile# 中添加以下条目："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "USES=\tdos2unix\n"
-msgstr ""
+msgstr "USES=\tdos2unix\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:241
+#, fuzzy
 msgid "A list of specific files to convert can be given:"
-msgstr ""
+msgstr "可以指定要转换的文件列表："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:246
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_FILES=\tutil.c util.h\n"
-msgstr ""
+msgstr "USES=\tdos2unix\nDOS2UNIX_FILES=\tutil.c util.h\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:253
+#, fuzzy
 msgid ""
 "Use `DOS2UNIX_REGEX` to convert a group of files across subdirectories.  Its "
 "argument is a man:find[1]-compatible regular expression.  More on the format "
 "is in man:re_format[7].  This option is useful for converting all files of a "
 "given extension.  For example, convert all source code files, leaving binary "
 "files intact:"
-msgstr ""
+msgstr "使用 `DOS2UNIX_REGEX` 可以转换跨子目录的一组文件。其参数是兼容 man:find[1] 的正则表达式。有关格式的更多信息，请参见 man:re_format[7]。此选项适用于转换指定扩展名的所有文件。例如，转换所有源代码文件，同时保留二进制文件不变："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:258
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_REGEX=\t.*\\.([ch]|cpp)\n"
-msgstr ""
+msgstr "USES=\tdos2unix\nDOS2UNIX_REGEX=\t.*\\.([ch]|cpp)\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:261
+#, fuzzy
 msgid ""
 "A similar option is `DOS2UNIX_GLOB`, which runs `find` for each element "
 "listed in it."
-msgstr ""
+msgstr "类似的选项还有 `DOS2UNIX_GLOB`，它会对其中列出的每个元素运行 `find`。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_GLOB=\t*.c *.cpp *.h\n"
-msgstr ""
+msgstr "USES=\tdos2unix\nDOS2UNIX_GLOB=\t*.c *.cpp *.h\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:270
+#, fuzzy
 msgid ""
 "The base directory for the conversion can be set.  This is useful when there "
 "are multiple distfiles and several contain files which require line-ending "
 "conversion."
-msgstr ""
+msgstr "可以设置转换的基目录。当有多个 distfile，且其中多个包含需要进行行尾转换的文件时，这很有用。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_WRKSRC=\t${WRKDIR}\n"
-msgstr ""
+msgstr "USES=\tdos2unix\nDOS2UNIX_WRKSRC=\t${WRKDIR}\n"
 
 #. type: Title ===
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Patching Conditionally"
-msgstr ""
+msgstr "有条件地应用补丁"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:285
+#, fuzzy
 msgid ""
 "Some ports need patches that are only applied for specific FreeBSD versions "
 "or when a particular option is enabled or disabled.  Conditional patches are "
@@ -593,136 +643,143 @@ msgid ""
 "this is not necessary.  However, their file names _must not_ start with [."
 "filename]#patch-#.  If they do, they are applied unconditionally by the "
 "framework which is undesired for conditional patches."
-msgstr ""
+msgstr "某些 port 需要的补丁仅适用于特定 FreeBSD 版本，或仅在启用或禁用某个选项时应用。通过将补丁文件的完整路径放入 `EXTRA_PATCHES`，可以指定有条件应用的补丁。条件补丁文件名通常以 [.filename]#extra-# 开头，但这并非必要。不过，其文件名__不得__以 [.filename]#patch-# 开头。否则，框架会无条件应用这些补丁，这不适用于条件补丁。"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Applying a Patch for a Specific FreeBSD Version"
-msgstr ""
+msgstr "为特定 FreeBSD 版本应用补丁"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.port.options.mk>\n"
-msgstr ""
+msgstr ".include <bsd.port.options.mk>\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# Patch in the iconv const qualifier before this\n"
 ".if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100069\n"
 "EXTRA_PATCHES=\t${PATCHDIR}/extra-patch-fbsd10\n"
 ".endif\n"
-msgstr ""
+msgstr "# 在此之前为 iconv 添加 const 限定符补丁\n.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100069\nEXTRA_PATCHES=\t${PATCHDIR}/extra-patch-fbsd10\n.endif\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:300
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ".include <bsd.port.mk>\n"
-msgstr ""
+msgstr ".include <bsd.port.mk>\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Optionally Applying a Patch"
-msgstr ""
+msgstr "有条件地应用补丁"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:310
+#, fuzzy
 msgid ""
 "When an crossref:makefiles[makefile-options,option] requires a patch, use "
 "``opt_EXTRA_PATCHES`` and ``opt_EXTRA_PATCHES_OFF`` to make the patch "
 "conditional on the `opt` option.  See crossref:makefiles[options-variables,"
 "\"Generic Variables Replacement, `OPT_VARIABLE` and `OPT_VARIABLE_OFF`\"] "
 "for more information."
-msgstr ""
+msgstr "当 crossref:makefiles[makefile-options,选项]需要补丁时，使用 ``opt_EXTRA_PATCHES`` 和 ``opt_EXTRA_PATCHES_OFF``，使补丁根据 `opt` 选项有条件地应用。有关更多信息，请参见 crossref:makefiles[options-variables,\"通用变量替换：`OPT_VARIABLE` 和 `OPT_VARIABLE_OFF`\"]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "OPTIONS_DEFINE=\t  FOO BAR\n"
 "FOO_EXTRA_PATCHES=  ${PATCHDIR}/extra-patch-foo\n"
 "BAR_EXTRA_PATCHES_OFF=\t${PATCHDIR}/extra-patch-bar.c \\\n"
 "\t\t${PATCHDIR}/extra-patch-bar.h\n"
-msgstr ""
+msgstr "OPTIONS_DEFINE=\t  FOO BAR\nFOO_EXTRA_PATCHES=  ${PATCHDIR}/extra-patch-foo\nBAR_EXTRA_PATCHES_OFF=\t${PATCHDIR}/extra-patch-bar.c \\\n\t\t${PATCHDIR}/extra-patch-bar.h\n"
 
 #. type: Block title
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using `EXTRA_PATCHES` With a Directory"
-msgstr ""
+msgstr "将 `EXTRA_PATCHES` 与目录搭配使用"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:327
+#, fuzzy
 msgid ""
 "Sometimes, there are many patches that are needed for a feature, in this "
 "case, it is possible to point `EXTRA_PATCHES` to a directory, and it will "
 "automatically apply all files named [.filename]#patch-*# in it."
-msgstr ""
+msgstr "有时，某项功能需要许多补丁。这种情况下，可以将 `EXTRA_PATCHES` 指向一个目录，系统会自动应用其中所有名为 [.filename]#patch-*# 的文件。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:330
+#, fuzzy
 msgid ""
 "Create a subdirectory in [.filename]#${PATCHDIR}#, and move the patches in "
 "it.  For example:"
-msgstr ""
+msgstr "在 [.filename]#${PATCHDIR}# 中创建一个子目录，并将补丁移入其中。例如："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:336
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "% ls -l files/foo-patches\n"
 "-rw-r--r--  1 root  wheel    350 Jan 16 01:27 patch-Makefile.in\n"
 "-rw-r--r--  1 root  wheel   3084 Jan 18 15:37 patch-configure.ac\n"
-msgstr ""
+msgstr "% ls -l files/foo-patches\n-rw-r--r--  1 root  wheel    350 Jan 16 01:27 patch-Makefile.in\n-rw-r--r--  1 root  wheel   3084 Jan 18 15:37 patch-configure.ac\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:339
+#, fuzzy
 msgid "Then add this to the [.filename]#Makefile#:"
-msgstr ""
+msgstr "然后将以下内容添加到 [.filename]#Makefile#："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "OPTIONS_DEFINE=\tFOO\n"
 "FOO_EXTRA_PATCHES=\t${PATCHDIR}/foo-patches\n"
-msgstr ""
+msgstr "OPTIONS_DEFINE=\tFOO\nFOO_EXTRA_PATCHES=\t${PATCHDIR}/foo-patches\n"
 
 #. type: Plain text
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:347
+#, fuzzy
 msgid ""
 "The framework will then use all the files named [.filename]#patch-*# in that "
 "directory."
-msgstr ""
+msgstr "随后，框架会使用该目录中所有名为 [.filename]#patch-*# 的文件。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring"
-msgstr ""
+msgstr "配置"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:354
+#, fuzzy
 msgid ""
 "Include any additional customization commands in the [.filename]#configure# "
 "script and save it in the [.filename]#scripts# subdirectory.  As mentioned "
 "above, it is also possible do this with [.filename]#Makefile# targets and/or "
 "scripts with the name [.filename]#pre-configure# or [.filename]#post-"
 "configure#."
-msgstr ""
+msgstr "将任何额外的自定义命令加入 [.filename]#configure# 脚本，并将其保存在 [.filename]#scripts# 子目录中。如上所述，也可以通过 [.filename]#Makefile# 目标和／或名为 [.filename]#pre-configure# 或 [.filename]#post-configure# 的脚本来实现。"
 
 #. type: Title ==
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Handling User Input"
-msgstr ""
+msgstr "处理用户输入"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:363
+#, fuzzy
 msgid ""
 "If the port requires user input to build, configure, or install, set "
 "`IS_INTERACTIVE` in the [.filename]#Makefile#.  This will allow \"overnight "
@@ -730,12 +787,13 @@ msgid ""
 "environment (and if the user sets the variable `INTERACTIVE`, then _only_ "
 "those ports requiring interaction are built).  This will save a lot of "
 "wasted time on the set of machines that continually build ports (see below)."
-msgstr ""
+msgstr "如果构建、配置或安装 port 需要用户输入，请在 [.filename]#Makefile# 中设置 `IS_INTERACTIVE`。这样，“通宵构建”就可以跳过该 port。如果用户在其环境中设置了变量 `BATCH`（并且用户设置了变量 `INTERACTIVE`，则__只有__需要交互的 port 会被构建）。这可以为持续构建 port 的机器节省大量时间（见下文）。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/porters-handbook/slow-porting/_index.adoc:365
+#, fuzzy
 msgid ""
 "It is also recommended that if there are reasonable default answers to the "
 "questions, `PACKAGE_BUILDING` be used to turn off the interactive script "
 "when it is set.  This will allow us to build the packages for CDROMs and FTP."
-msgstr ""
+msgstr "此外，如果这些问题有合理的默认答案，建议使用 `PACKAGE_BUILDING`，在其设置时关闭交互式脚本。这样我们就可以为 CDROM 和 FTP 构建软件包。"

@@ -19,16 +19,16 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "List of OpenPGP keys that can be used to verify a signature or send encrypted email to FreeBSD.org officers or developers."
-msgstr ""
+msgstr "可用于验证签名或向 FreeBSD.org 官员和开发人员发送加密电子邮件的 OpenPGP 密钥列表。"
 
 #. type: Title =
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1
 #: documentation/content/en/articles/pgpkeys/_index.adoc:7
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "OpenPGP Keys"
-msgstr ""
+msgstr "OpenPGP 密钥"
 
 #. type: Plain text
 #: documentation/content/en/articles/pgpkeys/_index.adoc:44
@@ -37,11 +37,12 @@ msgstr "'''"
 
 #. type: Plain text
 #: documentation/content/en/articles/pgpkeys/_index.adoc:49
+#, fuzzy
 msgid ""
 "These OpenPGP keys can be used to verify a signature or send encrypted email "
 "to `FreeBSD.org` officers or developers.  The complete keyring can be "
 "downloaded at link:https://docs.FreeBSD.org/pgpkeys/pgpkeys.txt[pgpkeys.txt]."
-msgstr ""
+msgstr "这些 OpenPGP 密钥可用于验证签名或向 `FreeBSD.org` 官员和开发人员发送加密电子邮件。完整密钥环可从 link:https://docs.FreeBSD.org/pgpkeys/pgpkeys.txt[pgpkeys.txt] 下载。"
 
 #
 #
@@ -57,3047 +58,3047 @@ msgstr "官员"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:62
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{security-officer-name} `<{security-officer-email}>`"
-msgstr ""
+msgstr "{security-officer-name} `<{security-officer-email}>`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:65
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{core-secretary-name} `<{core-secretary-email}>`"
-msgstr ""
+msgstr "{core-secretary-name} `<{core-secretary-email}>`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:68
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{portmgr-secretary-name} `<{portmgr-secretary-email}>`"
-msgstr ""
+msgstr "{portmgr-secretary-name} `<{portmgr-secretary-email}>`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:71
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "{doceng-secretary-name} `<{doceng-secretary-email}>`"
-msgstr ""
+msgstr "{doceng-secretary-name} `<{doceng-secretary-email}>`"
 
 #. type: Title ==
 #: documentation/content/en/articles/pgpkeys/_index.adoc:75
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Core Team Members"
-msgstr ""
+msgstr "核心团队成员"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:77
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1451
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{adamw}`"
-msgstr ""
+msgstr "`{adamw}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:80
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{adrian}`"
-msgstr ""
+msgstr "`{adrian}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:83
 #: documentation/content/en/articles/pgpkeys/_index.adoc:365
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bapt}`"
-msgstr ""
+msgstr "`{bapt}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:86
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1274
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{glebius}`"
-msgstr ""
+msgstr "`{glebius}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:89
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{hrs}`"
-msgstr ""
+msgstr "`{hrs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:92
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{imp}`"
-msgstr ""
+msgstr "`{imp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:95
 #: documentation/content/en/articles/pgpkeys/_index.adoc:953
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jrm}`"
-msgstr ""
+msgstr "`{jrm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:98
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kevans}`"
-msgstr ""
+msgstr "`{kevans}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:101
 #: documentation/content/en/articles/pgpkeys/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{olivier}`"
-msgstr ""
+msgstr "`{olivier}`"
 
 #. type: Title ==
 #: documentation/content/en/articles/pgpkeys/_index.adoc:105
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Developers"
-msgstr ""
+msgstr "开发人员"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:107
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jgh}`"
-msgstr ""
+msgstr "`{jgh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:110
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ariff}`"
-msgstr ""
+msgstr "`{ariff}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:113
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tabthorpe}`"
-msgstr ""
+msgstr "`{tabthorpe}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:116
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{eadler}`"
-msgstr ""
+msgstr "`{eadler}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:119
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pauamma}`"
-msgstr ""
+msgstr "`{pauamma}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:122
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{shaun}`"
-msgstr ""
+msgstr "`{shaun}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:125
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{brix}`"
-msgstr ""
+msgstr "`{brix}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:128
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mandree}`"
-msgstr ""
+msgstr "`{mandree}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:131
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{will}`"
-msgstr ""
+msgstr "`{will}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:134
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dim}`"
-msgstr ""
+msgstr "`{dim}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:137
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{anholt}`"
-msgstr ""
+msgstr "`{anholt}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:140
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fernape}`"
-msgstr ""
+msgstr "`{fernape}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:143
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mva}`"
-msgstr ""
+msgstr "`{mva}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:146
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{araujo}`"
-msgstr ""
+msgstr "`{araujo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:149
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mat}`"
-msgstr ""
+msgstr "`{mat}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{syuu}`"
-msgstr ""
+msgstr "`{syuu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{asami}`"
-msgstr ""
+msgstr "`{asami}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:158
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jsa}`"
-msgstr ""
+msgstr "`{jsa}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:161
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jadawin}`"
-msgstr ""
+msgstr "`{jadawin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:164
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jwb}`"
-msgstr ""
+msgstr "`{jwb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:167
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dbaio}`"
-msgstr ""
+msgstr "`{dbaio}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:170
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{timur}`"
-msgstr ""
+msgstr "`{timur}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jhb}`"
-msgstr ""
+msgstr "`{jhb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:176
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gjb}`"
-msgstr ""
+msgstr "`{gjb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:179
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{snb}`"
-msgstr ""
+msgstr "`{snb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:182
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{barner}`"
-msgstr ""
+msgstr "`{barner}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:185
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lbartoletti}`"
-msgstr ""
+msgstr "`{lbartoletti}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:188
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{art}`"
-msgstr ""
+msgstr "`{art}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:191
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tobez}`"
-msgstr ""
+msgstr "`{tobez}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{damien}`"
-msgstr ""
+msgstr "`{damien}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:197
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bdragon}`"
-msgstr ""
+msgstr "`{bdragon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:200
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tcberner}`"
-msgstr ""
+msgstr "`{tcberner}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:203
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tdb}`"
-msgstr ""
+msgstr "`{tdb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:206
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mbr}`"
-msgstr ""
+msgstr "`{mbr}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:209
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bvs}`"
-msgstr ""
+msgstr "`{bvs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:212
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jbo}`"
-msgstr ""
+msgstr "`{jbo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:215
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{novel}`"
-msgstr ""
+msgstr "`{novel}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:218
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{garga}`"
-msgstr ""
+msgstr "`{garga}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:221
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kbowling}`"
-msgstr ""
+msgstr "`{kbowling}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:224
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{alexbl}`"
-msgstr ""
+msgstr "`{alexbl}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:227
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ebrandi}`"
-msgstr ""
+msgstr "`{ebrandi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:230
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{harti}`"
-msgstr ""
+msgstr "`{harti}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:233
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{obraun}`"
-msgstr ""
+msgstr "`{obraun}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:236
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{makc}`"
-msgstr ""
+msgstr "`{makc}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:239
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jmb}`"
-msgstr ""
+msgstr "`{jmb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dab}`"
-msgstr ""
+msgstr "`{dab}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:245
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{antoine}`"
-msgstr ""
+msgstr "`{antoine}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:248
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{db}`"
-msgstr ""
+msgstr "`{db}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:251
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{brueffer}`"
-msgstr ""
+msgstr "`{brueffer}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:254
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{markus}`"
-msgstr ""
+msgstr "`{markus}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:257
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{br}`"
-msgstr ""
+msgstr "`{br}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:260
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jch}`"
-msgstr ""
+msgstr "`{jch}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:263
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{laurent}`"
-msgstr ""
+msgstr "`{laurent}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:266
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mchoo}`"
-msgstr ""
+msgstr "`{mchoo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:269
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jchandra}`"
-msgstr ""
+msgstr "`{jchandra}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:272
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jcamou}`"
-msgstr ""
+msgstr "`{jcamou}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:275
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{acm}`"
-msgstr ""
+msgstr "`{acm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:278
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{olce}`"
-msgstr ""
+msgstr "`{olce}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:281
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gahr}`"
-msgstr ""
+msgstr "`{gahr}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:284
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dchagin}`"
-msgstr ""
+msgstr "`{dchagin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:287
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{perky}`"
-msgstr ""
+msgstr "`{perky}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:290
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jon}`"
-msgstr ""
+msgstr "`{jon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:293
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jonathan}`"
-msgstr ""
+msgstr "`{jonathan}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:296
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{loader}`"
-msgstr ""
+msgstr "`{loader}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:299
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{luoqi}`"
-msgstr ""
+msgstr "`{luoqi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:302
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ache}`"
-msgstr ""
+msgstr "`{ache}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{melifaro}`"
-msgstr ""
+msgstr "`{melifaro}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:308
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cjh}`"
-msgstr ""
+msgstr "`{cjh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:311
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{davidch}`"
-msgstr ""
+msgstr "`{davidch}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:314
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{milki}`"
-msgstr ""
+msgstr "`{milki}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:317
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cjc}`"
-msgstr ""
+msgstr "`{cjc}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:320
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{marcus}`"
-msgstr ""
+msgstr "`{marcus}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:323
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fuz}`"
-msgstr ""
+msgstr "`{fuz}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:326
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nik}`"
-msgstr ""
+msgstr "`{nik}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:329
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{benjsc}`"
-msgstr ""
+msgstr "`{benjsc}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:332
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lcook}`"
-msgstr ""
+msgstr "`{lcook}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:335
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ngie}`"
-msgstr ""
+msgstr "`{ngie}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:338
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rakuco}`"
-msgstr ""
+msgstr "`{rakuco}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:341
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{alc}`"
-msgstr ""
+msgstr "`{alc}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:347
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dch}`"
-msgstr ""
+msgstr "`{dch}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:350
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cracauer}`"
-msgstr ""
+msgstr "`{cracauer}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:353
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bcran}`"
-msgstr ""
+msgstr "`{bcran}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:356
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cc}`"
-msgstr ""
+msgstr "`{cc}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:359
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{culot}`"
-msgstr ""
+msgstr "`{culot}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:362
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{alfredo}`"
-msgstr ""
+msgstr "`{alfredo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ceri}`"
-msgstr ""
+msgstr "`{ceri}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:371
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{edavis}`"
-msgstr ""
+msgstr "`{edavis}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:374
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{alexey}`"
-msgstr ""
+msgstr "`{alexey}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:377
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bsd}`"
-msgstr ""
+msgstr "`{bsd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:380
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{carl}`"
-msgstr ""
+msgstr "`{carl}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:383
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{carlavilla}`"
-msgstr ""
+msgstr "`{carlavilla}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:386
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vd}`"
-msgstr ""
+msgstr "`{vd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:389
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rdivacky}`"
-msgstr ""
+msgstr "`{rdivacky}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:392
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{danfe}`"
-msgstr ""
+msgstr "`{danfe}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:395
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dd}`"
-msgstr ""
+msgstr "`{dd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:398
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bdrewery}`"
-msgstr ""
+msgstr "`{bdrewery}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:401
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gad}`"
-msgstr ""
+msgstr "`{gad}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:404
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kd}`"
-msgstr ""
+msgstr "`{kd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:407
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{olivierd}`"
-msgstr ""
+msgstr "`{olivierd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:410
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bruno}`"
-msgstr ""
+msgstr "`{bruno}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:413
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ale}`"
-msgstr ""
+msgstr "`{ale}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:416
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jlduran}`"
-msgstr ""
+msgstr "`{jlduran}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:419
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nemysis}`"
-msgstr ""
+msgstr "`{nemysis}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:422
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{peadar}`"
-msgstr ""
+msgstr "`{peadar}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{deischen}`"
-msgstr ""
+msgstr "`{deischen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:428
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{diizzy}`"
-msgstr ""
+msgstr "`{diizzy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:431
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ue}`"
-msgstr ""
+msgstr "`{ue}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:434
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{madpilot}`"
-msgstr ""
+msgstr "`{madpilot}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:437
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rafan}`"
-msgstr ""
+msgstr "`{rafan}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:440
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kami}`"
-msgstr ""
+msgstr "`{kami}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:443
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{farrokhi}`"
-msgstr ""
+msgstr "`{farrokhi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:446
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jedgar}`"
-msgstr ""
+msgstr "`{jedgar}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:449
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mfechner}`"
-msgstr ""
+msgstr "`{mfechner}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:452
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{feld}`"
-msgstr ""
+msgstr "`{feld}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:455
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{green}`"
-msgstr ""
+msgstr "`{green}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:458
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fanf}`"
-msgstr ""
+msgstr "`{fanf}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:461
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{blackend}`"
-msgstr ""
+msgstr "`{blackend}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:464
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{petef}`"
-msgstr ""
+msgstr "`{petef}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:467
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{decke}`"
-msgstr ""
+msgstr "`{decke}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:470
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{landonf}`"
-msgstr ""
+msgstr "`{landonf}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:473
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{billf}`"
-msgstr ""
+msgstr "`{billf}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:476
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{grembo}`"
-msgstr ""
+msgstr "`{grembo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:479
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sgalabov}`"
-msgstr ""
+msgstr "`{sgalabov}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:482
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kgalazka}`"
-msgstr ""
+msgstr "`{kgalazka}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:485
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{avg}`"
-msgstr ""
+msgstr "`{avg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:488
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tiga}`"
-msgstr ""
+msgstr "`{tiga}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:491
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{beat}`"
-msgstr ""
+msgstr "`{beat}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:494
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sjg}`"
-msgstr ""
+msgstr "`{sjg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:497
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gibbs}`"
-msgstr ""
+msgstr "`{gibbs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:500
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pfg}`"
-msgstr ""
+msgstr "`{pfg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:503
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{girgen}`"
-msgstr ""
+msgstr "`{girgen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:506
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{eugen}`"
-msgstr ""
+msgstr "`{eugen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:509
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pgollucci}`"
-msgstr ""
+msgstr "`{pgollucci}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:512
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{trociny}`"
-msgstr ""
+msgstr "`{trociny}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:515
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dmgk}`"
-msgstr ""
+msgstr "`{dmgk}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:518
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{daichi}`"
-msgstr ""
+msgstr "`{daichi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:521
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{grehan}`"
-msgstr ""
+msgstr "`{grehan}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:524
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jamie}`"
-msgstr ""
+msgstr "`{jamie}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:527
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{adridg}`"
-msgstr ""
+msgstr "`{adridg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:530
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{wg}`"
-msgstr ""
+msgstr "`{wg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bar}`"
-msgstr ""
+msgstr "`{bar}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:536
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jmg}`"
-msgstr ""
+msgstr "`{jmg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:539
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mjg}`"
-msgstr ""
+msgstr "`{mjg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:542
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jhale}`"
-msgstr ""
+msgstr "`{jhale}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:545
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jah}`"
-msgstr ""
+msgstr "`{jah}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:548
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dannyboy}`"
-msgstr ""
+msgstr "`{dannyboy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:551
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dhartmei}`"
-msgstr ""
+msgstr "`{dhartmei}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:554
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ohauer}`"
-msgstr ""
+msgstr "`{ohauer}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:557
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ehaupt}`"
-msgstr ""
+msgstr "`{ehaupt}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:560
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jhay}`"
-msgstr ""
+msgstr "`{jhay}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:563
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bhd}`"
-msgstr ""
+msgstr "`{bhd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:566
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sheldonh}`"
-msgstr ""
+msgstr "`{sheldonh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:569
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mikeh}`"
-msgstr ""
+msgstr "`{mikeh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:572
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mheinen}`"
-msgstr ""
+msgstr "`{mheinen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:575
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{niels}`"
-msgstr ""
+msgstr "`{niels}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:578
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ghelmer}`"
-msgstr ""
+msgstr "`{ghelmer}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:581
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mux}`"
-msgstr ""
+msgstr "`{mux}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:584
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{wen}`"
-msgstr ""
+msgstr "`{wen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:587
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dhn}`"
-msgstr ""
+msgstr "`{dhn}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:590
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jhibbits}`"
-msgstr ""
+msgstr "`{jhibbits}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:593
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jhixson}`"
-msgstr ""
+msgstr "`{jhixson}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:596
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pho}`"
-msgstr ""
+msgstr "`{pho}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:599
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{oh}`"
-msgstr ""
+msgstr "`{oh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:602
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mhorne}`"
-msgstr ""
+msgstr "`{mhorne}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:605
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bhughes}`"
-msgstr ""
+msgstr "`{bhughes}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:608
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sunpoet}`"
-msgstr ""
+msgstr "`{sunpoet}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:611
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lwhsu}`"
-msgstr ""
+msgstr "`{lwhsu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:614
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{foxfair}`"
-msgstr ""
+msgstr "`{foxfair}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:617
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{whu}`"
-msgstr ""
+msgstr "`{whu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:620
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{chinsan}`"
-msgstr ""
+msgstr "`{chinsan}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:623
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{zlei}`"
-msgstr ""
+msgstr "`{zlei}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:626
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{davide}`"
-msgstr ""
+msgstr "`{davide}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:629
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jkh}`"
-msgstr ""
+msgstr "`{jkh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:632
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{versus}`"
-msgstr ""
+msgstr "`{versus}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:635
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pi}`"
-msgstr ""
+msgstr "`{pi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{weongyo}`"
-msgstr ""
+msgstr "`{weongyo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:641
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{peterj}`"
-msgstr ""
+msgstr "`{peterj}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:644
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jinmei}`"
-msgstr ""
+msgstr "`{jinmei}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:647
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ahze}`"
-msgstr ""
+msgstr "`{ahze}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:650
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{markj}`"
-msgstr ""
+msgstr "`{markj}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:653
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{trevor}`"
-msgstr ""
+msgstr "`{trevor}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:656
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{erj}`"
-msgstr ""
+msgstr "`{erj}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:659
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{allanjude}`"
-msgstr ""
+msgstr "`{allanjude}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:662
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bjk}`"
-msgstr ""
+msgstr "`{bjk}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:665
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{phk}`"
-msgstr ""
+msgstr "`{phk}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:668
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pluknet}`"
-msgstr ""
+msgstr "`{pluknet}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:671
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cokane}`"
-msgstr ""
+msgstr "`{cokane}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:674
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mce}`"
-msgstr ""
+msgstr "`{mce}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:677
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{karels}`"
-msgstr ""
+msgstr "`{karels}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:680
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kato}`"
-msgstr ""
+msgstr "`{kato}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:683
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vkashyap}`"
-msgstr ""
+msgstr "`{vkashyap}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:686
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pkubaj}`"
-msgstr ""
+msgstr "`{pkubaj}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:689
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kris}`"
-msgstr ""
+msgstr "`{kris}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:692
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{keramida}`"
-msgstr ""
+msgstr "`{keramida}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:695
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fjoe}`"
-msgstr ""
+msgstr "`{fjoe}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:698
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{manolis}`"
-msgstr ""
+msgstr "`{manolis}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:701
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{stevek}`"
-msgstr ""
+msgstr "`{stevek}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:704
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jkim}`"
-msgstr ""
+msgstr "`{jkim}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:707
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{zack}`"
-msgstr ""
+msgstr "`{zack}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:710
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{akiyano}`"
-msgstr ""
+msgstr "`{akiyano}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:713
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jceel}`"
-msgstr ""
+msgstr "`{jceel}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:716
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{andreas}`"
-msgstr ""
+msgstr "`{andreas}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:719
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kai}`"
-msgstr ""
+msgstr "`{kai}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:722
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{corvink}`"
-msgstr ""
+msgstr "`{corvink}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:725
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jkois}`"
-msgstr ""
+msgstr "`{jkois}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:728
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sergei}`"
-msgstr ""
+msgstr "`{sergei}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:731
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{maxim}`"
-msgstr ""
+msgstr "`{maxim}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:734
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{taras}`"
-msgstr ""
+msgstr "`{taras}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:737
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tobik}`"
-msgstr ""
+msgstr "`{tobik}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:740
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jkoshy}`"
-msgstr ""
+msgstr "`{jkoshy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:743
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{wkoszek}`"
-msgstr ""
+msgstr "`{wkoszek}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:746
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ak}`"
-msgstr ""
+msgstr "`{ak}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:749
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gabor}`"
-msgstr ""
+msgstr "`{gabor}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:752
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{anchie}`"
-msgstr ""
+msgstr "`{anchie}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:755
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rushani}`"
-msgstr ""
+msgstr "`{rushani}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:758
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kuriyama}`"
-msgstr ""
+msgstr "`{kuriyama}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:761
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rene}`"
-msgstr ""
+msgstr "`{rene}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:764
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jlaffaye}`"
-msgstr ""
+msgstr "`{jlaffaye}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:767
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{clement}`"
-msgstr ""
+msgstr "`{clement}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:770
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mlaier}`"
-msgstr ""
+msgstr "`{mlaier}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:773
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{martymac}`"
-msgstr ""
+msgstr "`{martymac}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:776
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{glarkin}`"
-msgstr ""
+msgstr "`{glarkin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:779
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dru}`"
-msgstr ""
+msgstr "`{dru}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:782
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lawrance}`"
-msgstr ""
+msgstr "`{lawrance}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:785
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{njl}`"
-msgstr ""
+msgstr "`{njl}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:788
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jlh}`"
-msgstr ""
+msgstr "`{jlh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:791
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{leeym}`"
-msgstr ""
+msgstr "`{leeym}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:794
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sam}`"
-msgstr ""
+msgstr "`{sam}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:797
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jylefort}`"
-msgstr ""
+msgstr "`{jylefort}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:800
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{grog}`"
-msgstr ""
+msgstr "`{grog}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:803
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{oliver}`"
-msgstr ""
+msgstr "`{oliver}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:806
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{netchild}`"
-msgstr ""
+msgstr "`{netchild}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:809
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{leitao}`"
-msgstr ""
+msgstr "`{leitao}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:812
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ae}`"
-msgstr ""
+msgstr "`{ae}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:815
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lesi}`"
-msgstr ""
+msgstr "`{lesi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:818
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{achim}`"
-msgstr ""
+msgstr "`{achim}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:821
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cel}`"
-msgstr ""
+msgstr "`{cel}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:824
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{glewis}`"
-msgstr ""
+msgstr "`{glewis}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:827
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vishwin}`"
-msgstr ""
+msgstr "`{vishwin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:830
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{delphij}`"
-msgstr ""
+msgstr "`{delphij}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:833
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{avatar}`"
-msgstr ""
+msgstr "`{avatar}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:836
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ijliao}`"
-msgstr ""
+msgstr "`{ijliao}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:839
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rlibby}`"
-msgstr ""
+msgstr "`{rlibby}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:842
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pclin}`"
-msgstr ""
+msgstr "`{pclin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:845
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{yzlin}`"
-msgstr ""
+msgstr "`{yzlin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:848
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{linimon}`"
-msgstr ""
+msgstr "`{linimon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:851
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{arved}`"
-msgstr ""
+msgstr "`{arved}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:854
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dryice}`"
-msgstr ""
+msgstr "`{dryice}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:857
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nemoliu}`"
-msgstr ""
+msgstr "`{nemoliu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:860
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kevlo}`"
-msgstr ""
+msgstr "`{kevlo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:863
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{zml}`"
-msgstr ""
+msgstr "`{zml}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:866
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nox}`"
-msgstr ""
+msgstr "`{nox}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:869
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{avl}`"
-msgstr ""
+msgstr "`{avl}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:872
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{scottl}`"
-msgstr ""
+msgstr "`{scottl}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:875
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rmacklem}`"
-msgstr ""
+msgstr "`{rmacklem}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:878
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vmaffione}`"
-msgstr ""
+msgstr "`{vmaffione}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:881
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bmah}`"
-msgstr ""
+msgstr "`{bmah}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:884
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rm}`"
-msgstr ""
+msgstr "`{rm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:887
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mtm}`"
-msgstr ""
+msgstr "`{mtm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:890
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dwmalone}`"
-msgstr ""
+msgstr "`{dwmalone}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:893
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{christos}`"
-msgstr ""
+msgstr "`{christos}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:896
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{marino}`"
-msgstr ""
+msgstr "`{marino}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:899
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{emaste}`"
-msgstr ""
+msgstr "`{emaste}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:902
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cherry}`"
-msgstr ""
+msgstr "`{cherry}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:905
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{matusita}`"
-msgstr ""
+msgstr "`{matusita}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:908
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mm}`"
-msgstr ""
+msgstr "`{mm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:911
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sem}`"
-msgstr ""
+msgstr "`{sem}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:914
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rcm}`"
-msgstr ""
+msgstr "`{rcm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:917
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mckusick}`"
-msgstr ""
+msgstr "`{mckusick}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:920
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tmclaugh}`"
-msgstr ""
+msgstr "`{tmclaugh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:923
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jmelo}`"
-msgstr ""
+msgstr "`{jmelo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:926
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mmel}`"
-msgstr ""
+msgstr "`{mmel}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:929
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jmmv}`"
-msgstr ""
+msgstr "`{jmmv}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:932
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kadesai}`"
-msgstr ""
+msgstr "`{kadesai}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:935
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ken}`"
-msgstr ""
+msgstr "`{ken}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:938
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{markm}`"
-msgstr ""
+msgstr "`{markm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:941
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dinoex}`"
-msgstr ""
+msgstr "`{dinoex}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:944
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sanpei}`"
-msgstr ""
+msgstr "`{sanpei}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:947
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rmh}`"
-msgstr ""
+msgstr "`{rmh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:950
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{driesm}`"
-msgstr ""
+msgstr "`{driesm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:956
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{freqlabs}`"
-msgstr ""
+msgstr "`{freqlabs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:959
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mmoll}`"
-msgstr ""
+msgstr "`{mmoll}`}"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:962
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cmt}`"
-msgstr ""
+msgstr "`{cmt}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:965
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{stephen}`"
-msgstr ""
+msgstr "`{stephen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:968
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{marcel}`"
-msgstr ""
+msgstr "`{marcel}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:971
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dougm}`"
-msgstr ""
+msgstr "`{dougm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:974
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kmoore}`"
-msgstr ""
+msgstr "`{kmoore}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:977
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{marck}`"
-msgstr ""
+msgstr "`{marck}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:980
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mav}`"
-msgstr ""
+msgstr "`{mav}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:983
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rich}`"
-msgstr ""
+msgstr "`{rich}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:986
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{knu}`"
-msgstr ""
+msgstr "`{knu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:989
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tmm}`"
-msgstr ""
+msgstr "`{tmm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:992
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{max}`"
-msgstr ""
+msgstr "`{max}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:995
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{maho}`"
-msgstr ""
+msgstr "`{maho}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:998
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{yoichi}`"
-msgstr ""
+msgstr "`{yoichi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1001
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bland}`"
-msgstr ""
+msgstr "`{bland}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1004
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gnn}`"
-msgstr ""
+msgstr "`{gnn}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1007
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{khng}`"
-msgstr ""
+msgstr "`{khng}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1010
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{simon}`"
-msgstr ""
+msgstr "`{simon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1013
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rnoland}`"
-msgstr ""
+msgstr "`{rnoland}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1016
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{anders}`"
-msgstr ""
+msgstr "`{anders}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1019
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lofi}`"
-msgstr ""
+msgstr "`{lofi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1022
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{obrien}`"
-msgstr ""
+msgstr "`{obrien}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1025
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{olgeni}`"
-msgstr ""
+msgstr "`{olgeni}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1028
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{philip}`"
-msgstr ""
+msgstr "`{philip}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1031
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jpaetzel}`"
-msgstr ""
+msgstr "`{jpaetzel}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1034
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{zirias}`"
-msgstr ""
+msgstr "`{zirias}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1037
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{hiren}`"
-msgstr ""
+msgstr "`{hiren}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1040
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{hmp}`"
-msgstr ""
+msgstr "`{hmp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1043
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fluffy}`"
-msgstr ""
+msgstr "`{fluffy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1046
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sat}`"
-msgstr ""
+msgstr "`{sat}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1049
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{np}`"
-msgstr ""
+msgstr "`{np}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1052
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{royger}`"
-msgstr ""
+msgstr "`{royger}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1055
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rpaulo}`"
-msgstr ""
+msgstr "`{rpaulo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1058
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{misha}`"
-msgstr ""
+msgstr "`{misha}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1061
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cperciva}`"
-msgstr ""
+msgstr "`{cperciva}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1064
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dumbbell}`"
-msgstr ""
+msgstr "`{dumbbell}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1067
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rpokala}`"
-msgstr ""
+msgstr "`{rpokala}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1070
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mp}`"
-msgstr ""
+msgstr "`{mp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1073
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{roam}`"
-msgstr ""
+msgstr "`{roam}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1076
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{den}`"
-msgstr ""
+msgstr "`{den}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1079
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{csjp}`"
-msgstr ""
+msgstr "`{csjp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1082
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{grahamperrin}`"
-msgstr ""
+msgstr "`{grahamperrin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1085
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gerald}`"
-msgstr ""
+msgstr "`{gerald}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1088
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{scottph}`"
-msgstr ""
+msgstr "`{scottph}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1091
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jacula}`"
-msgstr ""
+msgstr "`{jacula}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1094
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{0mp}`"
-msgstr ""
+msgstr "`{0mp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1097
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jdp}`"
-msgstr ""
+msgstr "`{jdp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1100
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{krion}`"
-msgstr ""
+msgstr "`{krion}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vladlen}`"
-msgstr ""
+msgstr "`{vladlen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1106
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sepotvin}`"
-msgstr ""
+msgstr "`{sepotvin}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1109
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cpm}`"
-msgstr ""
+msgstr "`{cpm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1112
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{markp}`"
-msgstr ""
+msgstr "`{markp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1115
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{alepulver}`"
-msgstr ""
+msgstr "`{alepulver}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1118
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kp}`"
-msgstr ""
+msgstr "`{kp}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1121
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{thomas}`"
-msgstr ""
+msgstr "`{thomas}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1124
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{hq}`"
-msgstr ""
+msgstr "`{hq}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1127
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bofh}`"
-msgstr ""
+msgstr "`{bofh}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1130
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fox}`"
-msgstr ""
+msgstr "`{fox}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1133
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lbr}`"
-msgstr ""
+msgstr "`{lbr}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1136
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{crees}`"
-msgstr ""
+msgstr "`{crees}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rees}`"
-msgstr ""
+msgstr "`{rees}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1142
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mr}`"
-msgstr ""
+msgstr "`{mr}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1145
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bcr}`"
-msgstr ""
+msgstr "`{bcr}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1148
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{trhodes}`"
-msgstr ""
+msgstr "`{trhodes}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1151
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{benno}`"
-msgstr ""
+msgstr "`{benno}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1154
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{beech}`"
-msgstr ""
+msgstr "`{beech}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1157
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{roberto}`"
-msgstr ""
+msgstr "`{roberto}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1160
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rodrigc}`"
-msgstr ""
+msgstr "`{rodrigc}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1163
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{michaelo}`"
-msgstr ""
+msgstr "`{michaelo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{igoro}`"
-msgstr ""
+msgstr "`{igoro}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1169
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dtxdf}`"
-msgstr ""
+msgstr "`{dtxdf}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1172
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ler}`"
-msgstr ""
+msgstr "`{ler}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1175
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{leres}`"
-msgstr ""
+msgstr "`{leres}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1178
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{robak}`"
-msgstr ""
+msgstr "`{robak}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1181
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{guido}`"
-msgstr ""
+msgstr "`{guido}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1184
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rea}`"
-msgstr ""
+msgstr "`{rea}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1187
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ray}`"
-msgstr ""
+msgstr "`{ray}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1190
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{niklas}`"
-msgstr ""
+msgstr "`{niklas}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1193
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{salvadore}`"
-msgstr ""
+msgstr "`{salvadore}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1196
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bsam}`"
-msgstr ""
+msgstr "`{bsam}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1199
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{marks}`"
-msgstr ""
+msgstr "`{marks}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1202
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bschmidt}`"
-msgstr ""
+msgstr "`{bschmidt}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1205
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{wosch}`"
-msgstr ""
+msgstr "`{wosch}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cy}`"
-msgstr ""
+msgstr "`{cy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{das}`"
-msgstr ""
+msgstr "`{das}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1214
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{scheidell}`"
-msgstr ""
+msgstr "`{scheidell}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1217
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{matthew}`"
-msgstr ""
+msgstr "`{matthew}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1220
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tmseck}`"
-msgstr ""
+msgstr "`{tmseck}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1223
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{johans}`"
-msgstr ""
+msgstr "`{johans}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1226
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bakul}`"
-msgstr ""
+msgstr "`{bakul}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1229
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gshapiro}`"
-msgstr ""
+msgstr "`{gshapiro}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1232
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{wxs}`"
-msgstr ""
+msgstr "`{wxs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1235
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nork}`"
-msgstr ""
+msgstr "`{nork}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1238
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{syrinx}`"
-msgstr ""
+msgstr "`{syrinx}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1241
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vanilla}`"
-msgstr ""
+msgstr "`{vanilla}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ashafer}`"
-msgstr ""
+msgstr "`{ashafer}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1247
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ashish}`"
-msgstr ""
+msgstr "`{ashish}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1250
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{asiciliano}`"
-msgstr ""
+msgstr "`{asiciliano}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1253
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{chs}`"
-msgstr ""
+msgstr "`{chs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1256
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bms}`"
-msgstr ""
+msgstr "`{bms}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1259
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{demon}`"
-msgstr ""
+msgstr "`{demon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1262
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jesper}`"
-msgstr ""
+msgstr "`{jesper}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1265
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{scop}`"
-msgstr ""
+msgstr "`{scop}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{anray}`"
-msgstr ""
+msgstr "`{anray}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1271
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{flo}`"
-msgstr ""
+msgstr "`{flo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1277
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kensmith}`"
-msgstr ""
+msgstr "`{kensmith}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1280
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ben}`"
-msgstr ""
+msgstr "`{ben}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1283
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{des}`"
-msgstr ""
+msgstr "`{des}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1286
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sobomax}`"
-msgstr ""
+msgstr "`{sobomax}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1289
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{asomers}`"
-msgstr ""
+msgstr "`{asomers}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1292
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{brian}`"
-msgstr ""
+msgstr "`{brian}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1295
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sson}`"
-msgstr ""
+msgstr "`{sson}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1298
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nsouch}`"
-msgstr ""
+msgstr "`{nsouch}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1301
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ssouhlal}`"
-msgstr ""
+msgstr "`{ssouhlal}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1304
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{loos}`"
-msgstr ""
+msgstr "`{loos}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{brnrd}`"
-msgstr ""
+msgstr "`{brnrd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1310
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rink}`"
-msgstr ""
+msgstr "`{rink}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1313
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vsevolod}`"
-msgstr ""
+msgstr "`{vsevolod}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1316
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pstef}`"
-msgstr ""
+msgstr "`{pstef}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1319
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{zi}`"
-msgstr ""
+msgstr "`{zi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1322
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lstewart}`"
-msgstr ""
+msgstr "`{lstewart}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1325
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{murray}`"
-msgstr ""
+msgstr "`{murray}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1328
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vs}`"
-msgstr ""
+msgstr "`{vs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1331
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{xride}`"
-msgstr ""
+msgstr "`{xride}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1334
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{marius}`"
-msgstr ""
+msgstr "`{marius}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1337
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{cs}`"
-msgstr ""
+msgstr "`{cs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1340
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{clsung}`"
-msgstr ""
+msgstr "`{clsung}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1343
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gsutter}`"
-msgstr ""
+msgstr "`{gsutter}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1346
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{metal}`"
-msgstr ""
+msgstr "`{metal}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1349
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ryusuke}`"
-msgstr ""
+msgstr "`{ryusuke}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1352
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nyan}`"
-msgstr ""
+msgstr "`{nyan}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1355
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sahil}`"
-msgstr ""
+msgstr "`{sahil}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1358
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tota}`"
-msgstr ""
+msgstr "`{tota}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1361
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{romain}`"
-msgstr ""
+msgstr "`{romain}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1364
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{eduardo}`"
-msgstr ""
+msgstr "`{eduardo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1367
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{sylvio}`"
-msgstr ""
+msgstr "`{sylvio}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1370
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{itetcu}`"
-msgstr ""
+msgstr "`{itetcu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1373
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mi}`"
-msgstr ""
+msgstr "`{mi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1376
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gordon}`"
-msgstr ""
+msgstr "`{gordon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1379
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{lth}`"
-msgstr ""
+msgstr "`{lth}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1382
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fabient}`"
-msgstr ""
+msgstr "`{fabient}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1385
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{thierry}`"
-msgstr ""
+msgstr "`{thierry}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1388
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{thompsa}`"
-msgstr ""
+msgstr "`{thompsa}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{flz}`"
-msgstr ""
+msgstr "`{flz}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1394
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{jilles}`"
-msgstr ""
+msgstr "`{jilles}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1397
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ganbold}`"
-msgstr ""
+msgstr "`{ganbold}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1400
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tuexen}`"
-msgstr ""
+msgstr "`{tuexen}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1403
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{chuck}`"
-msgstr ""
+msgstr "`{chuck}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1406
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gonzo}`"
-msgstr ""
+msgstr "`{gonzo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1409
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{uzsolt}`"
-msgstr ""
+msgstr "`{uzsolt}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1412
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ume}`"
-msgstr ""
+msgstr "`{ume}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1415
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ups}`"
-msgstr ""
+msgstr "`{ups}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1418
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{fsu}`"
-msgstr ""
+msgstr "`{fsu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1421
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mikael}`"
-msgstr ""
+msgstr "`{mikael}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1424
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{manu}`"
-msgstr ""
+msgstr "`{manu}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1427
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ram}`"
-msgstr ""
+msgstr "`{ram}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1430
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bryanv}`"
-msgstr ""
+msgstr "`{bryanv}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1433
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nectar}`"
-msgstr ""
+msgstr "`{nectar}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1436
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{avilla}`"
-msgstr ""
+msgstr "`{avilla}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1439
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nivit}`"
-msgstr ""
+msgstr "`{nivit}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1442
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ivoras}`"
-msgstr ""
+msgstr "`{ivoras}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1445
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{stefan}`"
-msgstr ""
+msgstr "`{stefan}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1448
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kaiw}`"
-msgstr ""
+msgstr "`{kaiw}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1454
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{naddy}`"
-msgstr ""
+msgstr "`{naddy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1457
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{peter}`"
-msgstr ""
+msgstr "`{peter}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1460
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nwhitehorn}`"
-msgstr ""
+msgstr "`{nwhitehorn}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1463
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{obiwac}`"
-msgstr ""
+msgstr "`{obiwac}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1466
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{miwi}`"
-msgstr ""
+msgstr "`{miwi}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nate}`"
-msgstr ""
+msgstr "`{nate}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1472
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{twinterg}`"
-msgstr ""
+msgstr "`{twinterg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1475
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{def}`"
-msgstr ""
+msgstr "`{def}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1478
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{wollman}`"
-msgstr ""
+msgstr "`{wollman}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1481
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{joerg}`"
-msgstr ""
+msgstr "`{joerg}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1484
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ygy}`"
-msgstr ""
+msgstr "`{ygy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1487
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{emax}`"
-msgstr ""
+msgstr "`{emax}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1490
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{oshogbo}`"
-msgstr ""
+msgstr "`{oshogbo}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1493
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{andy}`"
-msgstr ""
+msgstr "`{andy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1496
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{riggs}`"
-msgstr ""
+msgstr "`{riggs}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{egypcio}`"
-msgstr ""
+msgstr "`{egypcio}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1502
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bz}`"
-msgstr ""
+msgstr "`{bz}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1505
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dsl}`"
-msgstr ""
+msgstr "`{dsl}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1508
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{zeising}`"
-msgstr ""
+msgstr "`{zeising}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1511
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{phantom}`"
-msgstr ""
+msgstr "`{phantom}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1514
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tz}`"
-msgstr ""
+msgstr "`{tz}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1517
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rigoletto}`"
-msgstr ""
+msgstr "`{rigoletto}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1520
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kaktus}`"
-msgstr ""
+msgstr "`{kaktus}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1523
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{samm}`"
-msgstr ""
+msgstr "`{samm}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1526
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{arrowd}`"
-msgstr ""
+msgstr "`{arrowd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1529
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ronald}`"
-msgstr ""
+msgstr "`{ronald}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1532
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{meta}`"
-msgstr ""
+msgstr "`{meta}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1535
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{rnagy}`"
-msgstr ""
+msgstr "`{rnagy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1538
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vvd}`"
-msgstr ""
+msgstr "`{vvd}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1541
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{gbe}`"
-msgstr ""
+msgstr "`{gbe}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1544
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bnovkov}`"
-msgstr ""
+msgstr "`{bnovkov}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1547
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{ivy}`"
-msgstr ""
+msgstr "`{ivy}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1550
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{khorben}`"
-msgstr ""
+msgstr "`{khorben}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1553
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{vexeduxr}`"
-msgstr ""
+msgstr "`{vexeduxr}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1556
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{alven}`"
-msgstr ""
+msgstr "`{alven}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1559
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{pouria}`"
-msgstr ""
+msgstr "`{pouria}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1562
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{siva}`"
-msgstr ""
+msgstr "`{siva}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1565
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{nxjoseph}`"
-msgstr ""
+msgstr "`{nxjoseph}"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1568
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{kenrap}`"
-msgstr ""
+msgstr "`{kenrap}`"
 
 #. type: Title ==
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1572
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Other Cluster Account Holders"
-msgstr ""
+msgstr "其他集群帐户持有者"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1574
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{bk}`"
-msgstr ""
+msgstr "`{bk}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1577
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{deb}`"
-msgstr ""
+msgstr "`{deb}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1580
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{debdrup}`"
-msgstr ""
+msgstr "`{debdrup}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1583
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dutchdaemon}`"
-msgstr ""
+msgstr "`{dutchdaemon}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1586
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{keymaster}`"
-msgstr ""
+msgstr "`{keymaster}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1589
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{mwlucas}`"
-msgstr ""
+msgstr "`{mwlucas}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1592
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{dhw}`"
-msgstr ""
+msgstr "`{dhw}`"
 
 #. type: Title ===
 #: documentation/content/en/articles/pgpkeys/_index.adoc:1595
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "`{tpearson}`"
-msgstr ""
+msgstr "`{tpearson}`"

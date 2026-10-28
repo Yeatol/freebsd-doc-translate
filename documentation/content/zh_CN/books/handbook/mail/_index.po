@@ -19,15 +19,15 @@ msgstr ""
 
 #. type: Yaml Front Matter Hash Value: description
 #: documentation/content/en/books/handbook/mail/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This chapter provides a basic introduction to running a mail server on FreeBSD, as well as an introduction to sending and receiving email using FreeBSD"
-msgstr ""
+msgstr "本章介绍在 FreeBSD 上运行邮件服务器的基础知识，以及如何使用 FreeBSD 收发电子邮件"
 
 #. type: Yaml Front Matter Hash Value: part
 #: documentation/content/en/books/handbook/mail/_index.adoc:1
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "IV. Network Communication"
-msgstr ""
+msgstr "IV. 网络通信"
 
 #. type: Yaml Front Matter Hash Value: title
 #: documentation/content/en/books/handbook/mail/_index.adoc:1
@@ -50,6 +50,7 @@ msgstr "概要"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:57
+#, fuzzy
 msgid ""
 "\"Electronic Mail\", better known as email, is one of the most widely used "
 "forms of communication today.  This chapter provides a basic introduction to "
@@ -57,12 +58,13 @@ msgid ""
 "receiving email using FreeBSD.  For a complete coverage of this subject, "
 "refer to the books listed in crossref:bibliography[bibliography,"
 "Bibliography]."
-msgstr ""
+msgstr "“电子邮件”（更常称为 email）是当今最广泛使用的通信形式之一。本章介绍在 FreeBSD 上运行邮件服务器的基础知识，以及如何使用 FreeBSD 收发电子邮件。有关此主题的完整介绍，请参阅 crossref:bibliography[bibliography,Bibliography] 中列出的书籍。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:59
+#, fuzzy
 msgid "This chapter covers:"
-msgstr ""
+msgstr "本章涵盖以下内容："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:61
@@ -73,13 +75,15 @@ msgstr "哪些软件元件与收发电子邮件有关。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:62
+#, fuzzy
 msgid "How to configure DragonFly Mail Agent."
-msgstr ""
+msgstr "如何配置 DragonFly Mail Agent。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:63
+#, fuzzy
 msgid "Where basic Sendmail configuration files are located in FreeBSD."
-msgstr ""
+msgstr "FreeBSD 中 Sendmail 基本配置文件的位置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:64
@@ -88,10 +92,11 @@ msgstr "远端邮箱（Mailbox）与本机邮箱的差异。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:65
+#, fuzzy
 msgid ""
 "How to install and configure an alternate Mail Transfer Agent, replacing "
 "DragonFly Mail Agent or Sendmail."
-msgstr ""
+msgstr "如何安装和配置其他邮件传输代理，以取代 DragonFly Mail Agent 或 Sendmail。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:66
@@ -114,15 +119,17 @@ msgstr "如何设定SMTP认证来增加安全性。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:69
+#, fuzzy
 msgid ""
 "How to install and use a Mail User Agent, such as mutt, to send and receive "
 "email."
-msgstr ""
+msgstr "如何安装和使用 mutt 等邮件用户代理来收发电子邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:70
+#, fuzzy
 msgid "How to download mail from a remote POP or IMAP server."
-msgstr ""
+msgstr "如何从远程 POP 或 IMAP 服务器下载邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:71
@@ -137,20 +144,22 @@ msgstr "邮件组件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:77
+#, fuzzy
 msgid ""
 "There are five major parts involved in an email exchange: the Mail User "
 "Agent (MUA), the Mail Transfer Agent (MTA), a mail host, a remote or local "
 "mailbox, and DNS.  This section provides an overview of these components."
-msgstr ""
+msgstr "电子邮件交换涉及五个主要部分：邮件用户代理（MUA）、邮件传输代理（MTA）、邮件主机、远程或本地邮箱以及 DNS。本节概述这些组件。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:78
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mail User Agent (MUA)"
-msgstr ""
+msgstr "邮件用户代理（MUA）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:85
+#, fuzzy
 msgid ""
 "The Mail User Agent (MUA) is an application which is used to compose, send, "
 "and receive emails.  This application can be a command line program, such as "
@@ -161,23 +170,24 @@ msgid ""
 "accessed through a web browser.  More information about installing and using "
 "a MUA on FreeBSD can be found in crossref:mail[mail-agents, Mail User "
 "Agents]."
-msgstr ""
+msgstr "邮件用户代理（MUA）是一种用于撰写、发送和接收电子邮件的应用程序。它可以是命令行程序，例如内置的 `mail` 工具，也可以是 Ports Collection 中的第三方应用程序，例如 alpine、elm 或 mutt。Ports Collection 中还提供了数十种图形程序，包括 Claws Mail、Evolution 和 Thunderbird。一些组织提供可通过 Web 浏览器访问的 Web 邮件程序。有关在 FreeBSD 上安装和使用 MUA 的更多信息，请参阅 crossref:mail[mail-agents, Mail User Agents]。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:86
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mail Transfer Agent (MTA)"
-msgstr ""
+msgstr "邮件传输代理（MTA）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:90
+#, fuzzy
 msgid ""
 "The Mail Transfer Agent (MTA) is responsible for receiving incoming mail and "
 "delivering outgoing mail.  Starting with FreeBSD version 14.0, the default "
 "MTA is DragonFly Mail Agent (man:dma[8]); in earlier versions, it is man:"
 "sendmail[8].  Other MTAs, including Exim, Postfix, and qmail, may be "
 "installed to replace the default MTA."
-msgstr ""
+msgstr "邮件传输代理（MTA）负责接收传入邮件并投递传出邮件。从 FreeBSD 14.0 版本开始，默认 MTA 为 DragonFly Mail Agent（man:dma[8]）；在早期版本中，默认 MTA 为 man:sendmail[8]。可以安装其他 MTA（包括 Exim、Postfix 和 qmail）来取代默认 MTA。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:91
@@ -206,28 +216,30 @@ msgstr ""
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:97
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Domain Name System (DNS)"
-msgstr ""
+msgstr "域名系统（DNS）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:101
+#, fuzzy
 msgid ""
 "The Domain Name System (DNS) and its daemon man:named[8] play a large role "
 "in the delivery of mail.  In order to deliver mail from one site to another, "
 "the MTA will look up the remote site in DNS to determine which host will "
 "receive mail for the destination.  This process also occurs when mail is "
 "sent from a remote host to the MTA."
-msgstr ""
+msgstr "域名系统（DNS）及其守护进程 man:named[8] 在邮件投递中发挥重要作用。要将邮件从一个站点投递到另一个站点，MTA 会在 DNS 中查询远程站点，以确定哪个主机将接收发往目标地址的邮件。从远程主机向 MTA 发送邮件时也会进行此查询。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mail/_index.adoc:103
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "DragonFly Mail Agent (DMA)"
-msgstr ""
+msgstr "DragonFly Mail Agent（DMA）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:109
+#, fuzzy
 msgid ""
 "DragonFly Mail Agent (DMA) is the default MTA in FreeBSD starting with "
 "version 14.0.  man:dma[8] is a small Mail Transport Agent (MTA), designed "
@@ -235,46 +247,49 @@ msgid ""
 "Agents (MUA) and delivers the mails either locally or to a remote "
 "destination.  Remote delivery includes several features like TLS/SSL support "
 "and SMTP authentication."
-msgstr ""
+msgstr "从 FreeBSD 14.0 版本开始，DragonFly Mail Agent（DMA）是默认的 MTA。man:dma[8] 是一个小型邮件传输代理（MTA），专为家庭和办公室使用而设计。它接收本地安装的邮件用户代理（MUA）发来的邮件，并将邮件投递到本地或远程目标。远程投递包括 TLS/SSL 支持和 SMTP 身份验证等功能。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:112
+#, fuzzy
 msgid ""
 "man:dma[8] is not intended as a replacement for real, big MTAs like man:"
 "sendmail[8] or man:postfix[1].  Consequently, man:dma[8] does not listen on "
 "port 25 for incoming connections."
-msgstr ""
+msgstr "man:dma[8] 并非用于取代 man:sendmail[8] 或 man:postfix[1] 等成熟的大型 MTA。因此，man:dma[8] 不会监听端口 25 上的传入连接。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:114
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Configuring DragonFly Mail Agent (DMA)"
-msgstr ""
+msgstr "配置 DragonFly Mail Agent（DMA）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:118
+#, fuzzy
 msgid ""
 "DMA comes with a default configuration that will be suitable for many "
 "deployments.  Custom settings are defined in [.filename]#/etc/dma/dma.conf#, "
 "and SMTP authentication is configured in [.filename]#/etc/dma/auth.conf#."
-msgstr ""
+msgstr "DMA 附带的默认配置适用于许多部署场景。自定义设置定义在 [.filename]#/etc/dma/dma.conf# 中，SMTP 身份验证则配置在 [.filename]#/etc/dma/auth.conf# 中。"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/mail/_index.adoc:120
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using DMA to Route Outgoing Mail through Gmail (STARTTLS:SMTP example)"
-msgstr ""
+msgstr "使用 DMA 通过 Gmail 路由传出邮件（STARTTLS:SMTP 示例）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:123
+#, fuzzy
 msgid ""
 "This example [.filename]#/etc/dma/dma.conf# can be used to send mail using "
 "Google's SMTP servers."
-msgstr ""
+msgstr "此 [.filename]#/etc/dma/dma.conf# 示例可用于通过 Google 的 SMTP 服务器发送邮件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:132
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SMARTHOST smtp.gmail.com\n"
 "PORT 587\n"
@@ -282,131 +297,137 @@ msgid ""
 "SECURETRANSFER\n"
 "STARTTLS\n"
 "MASQUERADE username@gmail.com\n"
-msgstr ""
+msgstr "SMARTHOST smtp.gmail.com\nPORT 587\nAUTHPATH /etc/dma/auth.conf\nSECURETRANSFER\nSTARTTLS\nMASQUERADE username@gmail.com\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:135
 #: documentation/content/en/books/handbook/mail/_index.adoc:169
 #: documentation/content/en/books/handbook/mail/_index.adoc:197
+#, fuzzy
 msgid ""
 "Authentication can be set with one line in [.filename]#/etc/dma/auth.conf#:"
-msgstr ""
+msgstr "在 [.filename]#/etc/dma/auth.conf# 中添加一行即可设置身份验证："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:139
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "username@gmail.com|smtp.gmail.com:password\n"
-msgstr ""
+msgstr "username@gmail.com|smtp.gmail.com:password\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:145
+#, fuzzy
 msgid ""
 "With enabled 2-factor authentication a generated application-specific "
 "password as the normal login password will be rejected.  See Google "
 "documentation for more information on https://myaccount.google.com/"
 "apppasswords[app-specific passwords]."
-msgstr ""
+msgstr "启用双重身份验证后，使用生成的应用专用密码作为常规登录密码会被拒绝。有关更多信息，请参阅 Google 关于 link:https://myaccount.google.com/apppasswords[应用专用密码]的文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:148
 #: documentation/content/en/books/handbook/mail/_index.adoc:176
 #: documentation/content/en/books/handbook/mail/_index.adoc:204
+#, fuzzy
 msgid "Execute the following command to test the configuration:"
-msgstr ""
+msgstr "执行以下命令测试配置："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:152
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo this is a test | mail -v -s testing-email username@gmail.com\n"
-msgstr ""
+msgstr "% echo this is a test | mail -v -s testing-email username@gmail.com\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/mail/_index.adoc:155
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using DMA to Route Outgoing Mail through Fastmail (SSL/TLS example)"
-msgstr ""
+msgstr "使用 DMA 通过 Fastmail 路由传出邮件（SSL/TLS 示例）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:158
+#, fuzzy
 msgid ""
 "This example [.filename]#/etc/dma/dma.conf# can be used to send mail using "
 "Fastmail's SMTP servers."
-msgstr ""
+msgstr "此 [.filename]#/etc/dma/dma.conf# 示例可用于通过 Fastmail 的 SMTP 服务器发送邮件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:166
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SMARTHOST smtp.fastmail.com\n"
 "PORT 465\n"
 "AUTHPATH /etc/dma/auth.conf\n"
 "SECURETRANSFER\n"
 "MAILNAME example.server.com\n"
-msgstr ""
+msgstr "SMARTHOST smtp.fastmail.com\nPORT 465\nAUTHPATH /etc/dma/auth.conf\nSECURETRANSFER\nMAILNAME example.server.com\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:173
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "username@fastmail.com|smtp.fastmail.com:password\n"
-msgstr ""
+msgstr "username@fastmail.com|smtp.fastmail.com:password\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:180
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo this is a test | mail -v -s testing-email username@fastmail.com\n"
-msgstr ""
+msgstr "% echo this is a test | mail -v -s testing-email username@fastmail.com\n"
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/mail/_index.adoc:183
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Using DMA to Route Outgoing Mail through a Custom Mail Host"
-msgstr ""
+msgstr "使用 DMA 通过自定义邮件主机路由传出邮件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:186
+#, fuzzy
 msgid ""
 "This example [.filename]#/etc/dma/dma.conf# can be used to send mail using a "
 "custom mail host."
-msgstr ""
+msgstr "此 [.filename]#/etc/dma/dma.conf# 示例可用于通过自定义邮件主机发送邮件。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:194
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "SMARTHOST mail.example.org\n"
 "PORT 587\n"
 "AUTHPATH /etc/dma/auth.conf\n"
 "SECURETRANSFER\n"
 "STARTTLS\n"
-msgstr ""
+msgstr "SMARTHOST mail.example.org\nPORT 587\nAUTHPATH /etc/dma/auth.conf\nSECURETRANSFER\nSTARTTLS\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:201
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "username@example.org|mail.example.org:password\n"
-msgstr ""
+msgstr "username@example.org|mail.example.org:password\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:208
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% echo this is a test | mail -v -s testing-email username@example.org\n"
-msgstr ""
+msgstr "% echo this is a test | mail -v -s testing-email username@example.org\n"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mail/_index.adoc:211
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Sendmail"
-msgstr ""
+msgstr "Sendmail"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:215
+#, fuzzy
 msgid ""
 "Sendmail is a venerable and versatile Mail Transfer Agent (MTA) with a long "
 "history in UNIX(R) and UNIX-like systems.  It was a part of the FreeBSD base "
 "system until FreeBSD 13, offering robust email transport capabilities, "
 "extensive customization options, and support for complex routing and "
 "filtering."
-msgstr ""
+msgstr "Sendmail 是一个历史悠久且用途广泛的邮件传输代理（MTA），长期应用于 UNIX(R) 和类 UNIX 系统。在 FreeBSD 13 及更早版本中，它是基本系统的一部分，提供可靠的电子邮件传输能力、丰富的自定义选项，以及对复杂路由和过滤的支持。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:217
@@ -417,15 +438,16 @@ msgstr "基础设定"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:220
+#, fuzzy
 msgid ""
 "The configuration files for Sendmail are located in [.filename]#/etc/mail/#."
-msgstr ""
+msgstr "Sendmail 的配置文件位于 [.filename]#/etc/mail/#。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:221
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mail/access#"
-msgstr ""
+msgstr "[.filename]#/etc/mail/access#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:229
@@ -455,11 +477,12 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:231
+#, fuzzy
 msgid ""
 "Examples of using these options for both IPv4 and IPv6 addresses can be "
 "found in the FreeBSD sample configuration, [.filename]#/etc/mail/access."
 "sample#:"
-msgstr ""
+msgstr "FreeBSD 示例配置 [.filename]#/etc/mail/access.sample# 中提供了适用于 IPv4 和 IPv6 地址的这些选项示例："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:235
@@ -477,23 +500,24 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:237
+#, fuzzy
 msgid ""
 "Whenever this file is updated, update its database and restart Sendmail:"
-msgstr ""
+msgstr "每次更新此文件后，都要更新其数据库并重启 Sendmail："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:242
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# makemap hash /etc/mail/access < /etc/mail/access\n"
 "# service sendmail restart\n"
-msgstr ""
+msgstr "# makemap hash /etc/mail/access < /etc/mail/access\n# service sendmail restart\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:244
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mail/aliases#"
-msgstr ""
+msgstr "[.filename]#/etc/mail/aliases#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:247
@@ -526,6 +550,7 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:265
+#, fuzzy
 msgid ""
 "The mailbox name on the left side of the colon is expanded to the target(s) "
 "on the right.  The first entry expands the `root` mailbox to the `localuser` "
@@ -538,20 +563,21 @@ msgid ""
 "how to send mail to a program, [.filename]#/usr/local/bin/procmail#, through "
 "a UNIX(R) pipe.  Refer to man:aliases[5] for more information about the "
 "format of this file."
-msgstr ""
+msgstr "冒号左侧的邮箱名称会展开为右侧的目标邮箱。第一条记录将 `root` 邮箱展开为 `localuser` 邮箱，随后会在 [.filename]#/etc/mail/aliases# 数据库中查询该邮箱。如果找不到匹配项，邮件将投递给 `localuser`。第二条记录展示了邮件列表的用法。发送给 `ftp-bugs` 的邮件会展开为三个本地邮箱：`joe`、`eric` 和 `paul`。远程邮箱可以指定为 __user@example.com__。第三条记录展示了如何将邮件写入文件，本例中为 [.filename]#/dev/null#。最后一条记录展示了如何通过 UNIX(R) 管道将邮件发送给程序 [.filename]#/usr/local/bin/procmail#。有关此文件格式的更多信息，请参阅 man:aliases[5]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:267
+#, fuzzy
 msgid ""
 "Whenever this file is updated, run `newaliases` to update and initialize the "
 "aliases database."
-msgstr ""
+msgstr "每次更新此文件后，都要运行 `newaliases` 来更新并初始化别名数据库。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:268
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mail/sendmail.cf#"
-msgstr ""
+msgstr "[.filename]#/etc/mail/sendmail.cf#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:273
@@ -570,24 +596,26 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:276
+#, fuzzy
 msgid ""
 "The master Sendmail configuration file can be built from man:m4[1] macros "
 "that define the features and behavior of Sendmail.  Refer to [.filename]#/"
 "usr/src/contrib/sendmail/cf/README# for some of the details."
-msgstr ""
+msgstr "Sendmail 主配置文件可以通过定义 Sendmail 功能和行为的 man:m4[1] 宏生成。有关详情，请参阅 [.filename]#/usr/src/contrib/sendmail/cf/README#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:278
+#, fuzzy
 msgid ""
 "Whenever changes to this file are made, Sendmail needs to be restarted for "
 "the changes to take effect."
-msgstr ""
+msgstr "每次修改此文件后，都需要重启 Sendmail 使更改生效。"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:279
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mail/virtusertable#"
-msgstr ""
+msgstr "[.filename]#/etc/mail/virtusertable#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:283
@@ -652,20 +680,21 @@ msgstr ""
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:305
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# makemap hash /etc/mail/virtusertable < /etc/mail/virtusertable\n"
 "# service sendmail restart\n"
-msgstr ""
+msgstr "# makemap hash /etc/mail/virtusertable < /etc/mail/virtusertable\n# service sendmail restart\n"
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/mail/_index.adoc:307
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "[.filename]#/etc/mail/relay-domains#"
-msgstr ""
+msgstr "[.filename]#/etc/mail/relay-domains#"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:311
+#, fuzzy
 msgid ""
 "In a default FreeBSD installation, Sendmail is configured to only send mail "
 "from the host it is running on.  For example, if a POP server is available, "
@@ -673,15 +702,16 @@ msgid ""
 "able to send outgoing emails from outside locations.  Typically, a few "
 "moments after the attempt, an email will be sent from `MAILER-DAEMON` with a "
 "`5.7 Relaying Denied` message."
-msgstr ""
+msgstr "在 FreeBSD 的默认安装中，Sendmail 配置为仅从其所在主机发送邮件。例如，如果有 POP 服务器，用户便可以从远程位置查收邮件，但无法从外部位置发送邮件。通常，在尝试发送邮件后不久，会收到一封来自 `MAILER-DAEMON`、包含 `5.7 Relaying Denied` 消息的电子邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:314
+#, fuzzy
 msgid ""
 "The most straightforward solution is to add the ISP's FQDN to [.filename]#/"
 "etc/mail/relay-domains#.  If multiple addresses are needed, add them one per "
 "line:"
-msgstr ""
+msgstr "最直接的解决方案是将 ISP 的 FQDN 添加到 [.filename]#/etc/mail/relay-domains#。如果需要添加多个地址，请每行添加一个："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:321
@@ -699,10 +729,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:324
+#, fuzzy
 msgid ""
 "After creating or editing this file, restart Sendmail with `service sendmail "
 "restart`."
-msgstr ""
+msgstr "创建或编辑此文件后，使用 `service sendmail restart` 重启 Sendmail。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:327
@@ -725,15 +756,17 @@ msgstr "更改邮件传输代理程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:334
+#, fuzzy
 msgid ""
 "Starting with FreeBSD version 14.0, man:dma[8] is the default MTA, and "
 "before 14.0, the default MTA is man:sendmail[8].  However, the system "
 "administrator can change the system's MTA.  A wide choice of alternative "
 "MTAs is available from the `mail` category of the FreeBSD Ports Collection."
-msgstr ""
+msgstr "从 FreeBSD 14.0 版本开始，man:dma[8] 是默认 MTA；在 14.0 之前，默认 MTA 是 man:sendmail[8]。不过，系统管理员可以更改系统的 MTA。FreeBSD Ports Collection 的 `mail` 分类中提供了多种可选 MTA。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:341
+#, fuzzy
 msgid ""
 "If the default's outgoing mail service is disabled, it is important that it "
 "is replaced with an alternative mail delivery system.  Otherwise, system "
@@ -741,20 +774,21 @@ msgid ""
 "email.  Many parts of the system expect a functional MTA.  If applications "
 "continue to use the default binaries to try to send email after they are "
 "disabled, mail could go into an inactive queue and never be delivered."
-msgstr ""
+msgstr "如果禁用了默认的传出邮件服务，务必使用其他邮件投递系统替代。否则，man:periodic[8] 等系统功能将无法通过电子邮件投递其结果。系统的许多部分都依赖可正常工作的 MTA。如果应用程序在默认二进制文件被禁用后仍尝试使用它们发送电子邮件，邮件可能会进入未启用的队列，永远无法投递。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:344
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Replacing Sendmail with Other MTA"
-msgstr ""
+msgstr "使用其他 MTA 替代 Sendmail"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:347
+#, fuzzy
 msgid ""
 "In order to completely disable man:sendmail[8] execute the following "
 "commands:"
-msgstr ""
+msgstr "要完全禁用 man:sendmail[8]，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:354
@@ -772,10 +806,11 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:357
+#, fuzzy
 msgid ""
 "To only disable man:sendmail[8]'s incoming mail service execute the "
 "following command:"
-msgstr ""
+msgstr "要仅禁用 man:sendmail[8] 的传入邮件服务，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:361
@@ -785,23 +820,25 @@ msgstr "sendmail_enable=\"NO\"\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:364
+#, fuzzy
 msgid "Then stop the man:sendmail[8] service:"
-msgstr ""
+msgstr "然后停止 man:sendmail[8] 服务："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:368
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service sendmail onestop\n"
-msgstr ""
+msgstr "# service sendmail onestop\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:373
+#, fuzzy
 msgid ""
 "Some extra configuration is needed as man:sendmail[8] is so ubiquitous that "
 "some software assumes it is already installed and configured.  Check [."
 "filename]#/etc/periodic.conf# and make sure that these values are set to "
 "`NO`.  If this file does not exist, create it with these entries:"
-msgstr ""
+msgstr "由于 man:sendmail[8] 应用极为广泛，一些软件会假定它已安装并配置，因此还需要进行一些额外配置。检查 [.filename]#/etc/periodic.conf#，确保这些值均设置为 `NO`。如果此文件不存在，请创建文件并添加以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:380
@@ -820,37 +857,41 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:385
+#, fuzzy
 msgid ""
 "The next step is to install another MTA, man:dma[8] will be used in this "
 "example.  As pointed above, man:dma[8] is the default MTA in FreeBSD "
 "starting with version 14.0.  Therefore, it is only necessary to install it "
 "from the ports when using a previous version."
-msgstr ""
+msgstr "下一步是安装另一个 MTA，本例将使用 man:dma[8]。如上所述，从 FreeBSD 14.0 版本开始，man:dma[8] 是默认 MTA。因此，只有在使用更早版本时，才需要从 ports 安装它。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:387
+#, fuzzy
 msgid "To install it execute the following command:"
-msgstr ""
+msgstr "执行以下命令进行安装："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:391
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install dma\n"
-msgstr ""
+msgstr "# pkg install dma\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:394
+#, fuzzy
 msgid ""
 "Perform the configuration as indicated in crossref:mail[configuring-"
 "dragonfly-mail-agent, Configuring DragonFly Mail Agent (DMA)]."
-msgstr ""
+msgstr "按照 crossref:mail[configuring-dragonfly-mail-agent, Configuring DragonFly Mail Agent (DMA)] 中的说明进行配置。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:396
+#, fuzzy
 msgid ""
 "Then change all the entries in the file [.filename]#/etc/mail/mailer.conf# "
 "to man:dma[8]:"
-msgstr ""
+msgstr "然后将文件 [.filename]#/etc/mail/mailer.conf# 中的所有条目都更改为使用 man:dma[8]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:407
@@ -875,17 +916,19 @@ msgstr ""
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:412
+#, fuzzy
 msgid ""
 "When using the version of man:dma[8] included in the base system, the paths "
 "will change to [.filename]#/usr/libexec/dma#."
-msgstr ""
+msgstr "使用基本系统中包含的 man:dma[8] 版本时，路径会更改为 [.filename]#/usr/libexec/dma#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:415
+#, fuzzy
 msgid ""
 "To ensure that anything in the queue is flushed at boot or before shutdown, "
 "execute the following command:"
-msgstr ""
+msgstr "要确保队列中的所有邮件在启动时或关机前都得到清空，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:419
@@ -896,50 +939,55 @@ msgstr "saslauthd_enable=\"YES\"\n"
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:423
 #: documentation/content/en/books/handbook/mail/_index.adoc:476
+#, fuzzy
 msgid ""
 "Once everything is configured, it is recommended to reboot the system.  "
 "Rebooting provides the opportunity to ensure that the system is correctly "
 "configured to start the new MTA automatically on boot."
-msgstr ""
+msgstr "完成所有配置后，建议重启系统。重启可用于确认系统已正确配置，能够在启动时自动启动新的 MTA。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:425
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Replacing DragonFly Mail Agent (DMA) with Other MTA"
-msgstr ""
+msgstr "使用其他 MTA 替代 DragonFly Mail Agent（DMA）"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:429
+#, fuzzy
 msgid ""
 "As noted above, starting with FreeBSD version 14.0, the default MTA is DMA.  "
 "In this example, package:mail/postfix[] will be used as the alternative MTA."
-msgstr ""
+msgstr "如上所述，从 FreeBSD 14.0 版本开始，默认 MTA 是 DMA。本例将使用 package:mail/postfix[] 作为替代 MTA。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:433
+#, fuzzy
 msgid ""
 "Before installing package:mail/postfix[] some extra configuration is "
 "needed.  Check [.filename]#/etc/periodic.conf# and make sure that these "
 "values are set to `NO`.  If this file does not exist, create it with these "
 "entries:"
-msgstr ""
+msgstr "安装 package:mail/postfix[] 之前，需要进行一些额外配置。检查 [.filename]#/etc/periodic.conf#，确保这些值均设置为 `NO`。如果此文件不存在，请创建文件并添加以下内容："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:443
+#, fuzzy
 msgid "Then install package:mail/postfix[]:"
-msgstr ""
+msgstr "然后安装 package:mail/postfix[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:447
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# pkg install postfix\n"
-msgstr ""
+msgstr "# pkg install postfix\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:450
+#, fuzzy
 msgid ""
 "To start package:mail/postfix[] at system boot execute the following command:"
-msgstr ""
+msgstr "要让 package:mail/postfix[] 在系统启动时运行，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:454
@@ -949,35 +997,38 @@ msgstr "postfix_enable=\"YES\"\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:460
+#, fuzzy
 msgid ""
 "It is good practice to read the installation message after installing an "
 "application.  Provides useful information about settings, etc."
-msgstr ""
+msgstr "安装应用程序后，最好阅读安装提示，其中提供了有关设置等方面的实用信息。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:463
+#, fuzzy
 msgid ""
 "If postfix is *not* already activated in [.filename]#/usr/local/etc/mail/"
 "mailer.conf# execute the following commands:"
-msgstr ""
+msgstr "如果 [.filename]#/usr/local/etc/mail/mailer.conf# 中尚未启用 postfix，请执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:469
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "mv /usr/local/etc/mail/mailer.conf /usr/local/etc/mail/mailer.conf.old\n"
 "install -d /usr/local/etc/mail\n"
 "install -m 0644 /usr/local/share/postfix/mailer.conf.postfix /usr/local/etc/mail/mailer.conf\n"
-msgstr ""
+msgstr "mv /usr/local/etc/mail/mailer.conf /usr/local/etc/mail/mailer.conf.old\ninstall -d /usr/local/etc/mail\ninstall -m 0644 /usr/local/share/postfix/mailer.conf.postfix /usr/local/etc/mail/mailer.conf\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:473
+#, fuzzy
 msgid ""
 "When employing SASL, ensure that postfix has access to read the sasldb "
 "file.  This is accomplished by adding postfix to group mail and making the [."
 "filename]#/usr/local/etc/sasldb*# file(s) readable by group mail (this "
 "should be the default for new installs)."
-msgstr ""
+msgstr "使用 SASL 时，请确保 postfix 有权限读取 sasldb 文件。为此，请将 postfix 添加到 mail 组，并使 mail 组可以读取 [.filename]#/usr/local/etc/sasldb*# 文件（新安装时默认应如此）。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mail/_index.adoc:478
@@ -987,6 +1038,7 @@ msgstr "邮件使用者代理程序"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:484
+#, fuzzy
 msgid ""
 "A MUA is an application that is used to send and receive email.  As email "
 "\"evolves\" and becomes more complex, MUAs are becoming increasingly "
@@ -994,41 +1046,44 @@ msgid ""
 "`mail` category of the FreeBSD Ports Collection contains numerous MUAs.  "
 "These include graphical email clients such as Evolution or Balsa and console "
 "based clients such as mutt or alpine."
-msgstr ""
+msgstr "MUA 是用于发送和接收电子邮件的应用程序。随着电子邮件不断“发展”并变得日益复杂，MUA 的功能也越来越强大，为用户提供了更多功能和灵活性。FreeBSD Ports Collection 的 `mail` 类别中包含众多 MUA，其中包括 Evolution 或 Balsa 等图形界面电子邮件客户端，以及 mutt 或 alpine 等基于控制台的客户端。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:486
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mail"
-msgstr ""
+msgstr "mail"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:491
+#, fuzzy
 msgid ""
 "man:mail[1] is the default MUA installed with FreeBSD.  It is a console "
 "based MUA that offers the basic functionality required to send and receive "
 "text-based email.  It provides limited attachment support and can only "
 "access local mailboxes."
-msgstr ""
+msgstr "man:mail[1] 是 FreeBSD 默认安装的 MUA。它是一个基于控制台的 MUA，提供发送和接收基于文本的电子邮件所需的基本功能。它对附件的支持有限，并且只能访问本地邮箱。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:493
+#, fuzzy
 msgid ""
 "Although man:mail[1] does not natively support interaction with POP or IMAP "
 "servers, these mailboxes may be downloaded to a local `mbox` using an "
 "application such as fetchmail or getmail."
-msgstr ""
+msgstr "虽然 man:mail[1] 原生不支持与 POP 或 IMAP 服务器交互，但可以使用 fetchmail 或 getmail 等应用程序将这些邮箱下载到本地 `mbox`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:495
+#, fuzzy
 msgid "In order to send and receive email, run man:mail[1]:"
-msgstr ""
+msgstr "要发送和接收电子邮件，请运行 man:mail[1]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:499
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mail\n"
-msgstr ""
+msgstr "% mail\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:504
@@ -1046,9 +1101,10 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:506
+#, fuzzy
 msgid ""
 "Messages are automatically numbered, as can be seen in the following example:"
-msgstr ""
+msgstr "邮件会自动编号，如以下示例所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:514
@@ -1068,18 +1124,20 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:517
+#, fuzzy
 msgid ""
 "Messages can now be read by typing kbd:[t] followed by the message number."
-msgstr ""
+msgstr "现在可以输入 kbd:[t]，然后输入邮件编号来阅读邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:519
+#, fuzzy
 msgid "This example reads the first email:"
-msgstr ""
+msgstr "以下示例读取第一封电子邮件："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:531
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "& t 1\n"
 "Message 1:\n"
@@ -1090,27 +1148,30 @@ msgid ""
 "Subject: test\n"
 "Date: Mon,  8 Mar 2004 14:05:52 +0200 (SAST)\n"
 "From: root@localhost (Charlie Root)\n"
-msgstr ""
+msgstr "& t 1\nMessage 1:\nFrom root@localhost  Mon Mar  8 14:05:52 2004\nX-Original-To: username@localhost\nDelivered-To: username@localhost\nTo: username@localhost\nSubject: test\nDate: Mon,  8 Mar 2004 14:05:52 +0200 (SAST)\nFrom: root@localhost (Charlie Root)\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:533
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "This is a test message, please reply if you receive it.\n"
-msgstr ""
+msgstr "这是一封测试邮件，如果您收到此邮件，请回复。\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:536
+#, fuzzy
 msgid ""
 "As seen in this example, the message will be displayed with full headers."
-msgstr ""
+msgstr "如本示例所示，邮件将连同完整邮件头一起显示。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:538
+#, fuzzy
 msgid "To display the list of messages again, press kbd:[h]."
-msgstr ""
+msgstr "要重新显示邮件列表，请按 kbd:[h]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:543
+#, fuzzy
 msgid ""
 "If the email requires a reply, press either kbd:[R] or kbd:[r] man:mail[1] "
 "keys.  kbd:[R] instructs man:mail[1] to reply only to the sender of the "
@@ -1118,82 +1179,87 @@ msgid ""
 "commands can be suffixed with the mail number of the message to reply to.  "
 "After typing the response, the end of the message should be marked by a "
 "single kbd:[.] on its own line."
-msgstr ""
+msgstr "如果需要回复邮件，请按 man:mail[1] 的 kbd:[R] 或 kbd:[r] 键。kbd:[R] 会让 man:mail[1] 只回复邮件发件人，而 kbd:[r] 会回复邮件的所有其他收件人。可以在这些命令后加上要回复的邮件编号。输入回复内容后，应在单独一行输入 kbd:[.] 来标记邮件结尾。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:545
+#, fuzzy
 msgid "An example can be seen below:"
-msgstr ""
+msgstr "示例如下："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:551
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "& R 1\n"
 "To: root@localhost\n"
 "Subject: Re: test\n"
-msgstr ""
+msgstr "& R 1\nTo: root@localhost\nSubject: Re: test\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:555
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Thank you, I did get your email.\n"
 ".\n"
 "EOT\n"
-msgstr ""
+msgstr "谢谢，我确实收到了您的邮件。\n.\nEOT\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:561
+#, fuzzy
 msgid ""
 "In order to send a new email, press kbd:[m], followed by the recipient email "
 "address.  Multiple recipients may be specified by separating each address "
 "with the kbd:[,] delimiter.  The subject of the message may then be entered, "
 "followed by the message contents.  The end of the message should be "
 "specified by putting a single kbd:[.] on its own line."
-msgstr ""
+msgstr "要发送新邮件，请按 kbd:[m]，然后输入收件人的电子邮件地址。多个收件人地址之间可以用 kbd:[,] 分隔。接着输入邮件主题，再输入邮件正文。要结束邮件，请在单独一行输入 kbd:[.]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:566
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "& mail root@localhost\n"
 "Subject: I mastered mail\n"
-msgstr ""
+msgstr "& mail root@localhost\nSubject: I mastered mail\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:570
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "Now I can send and receive email using mail ... :)\n"
 ".\n"
 "EOT\n"
-msgstr ""
+msgstr "现在我可以使用 mail 收发电子邮件了…… :)\n.\nEOT\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:574
+#, fuzzy
 msgid ""
 "While using man:mail[1], press kbd:[?] to display help at any time.  Refer "
 "to man:mail[1] for more help on how to use man:mail[1]."
-msgstr ""
+msgstr "使用 man:mail[1] 时，可随时按 kbd:[?] 显示帮助。有关 man:mail[1] 用法的更多信息，请参阅 man:mail[1]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:579
+#, fuzzy
 msgid ""
 "man:mail[1] was not designed to handle attachments and thus deals with them "
 "poorly.  Newer MUAs handle attachments in a more intelligent way."
-msgstr ""
+msgstr "man:mail[1] 并非为处理附件而设计，因此处理附件的效果不佳。较新的 MUA 能以更智能的方式处理附件。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:582
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mutt"
-msgstr ""
+msgstr "Mutt"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:585
+#, fuzzy
 msgid "Mutt is a powerful MUA, with many features, including:"
-msgstr ""
+msgstr "Mutt 是一款功能强大的 MUA，具有许多功能，包括："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:587
@@ -1222,93 +1288,101 @@ msgstr "可定制性强。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:593
+#, fuzzy
 msgid ""
 "Refer to link:http://www.mutt.org[http://www.mutt.org] for more information "
 "on Mutt."
-msgstr ""
+msgstr "有关 Mutt 的更多信息，请参阅 link:http://www.mutt.org[http://www.mutt.org]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:599
+#, fuzzy
 msgid ""
 "A Mutt fork called NeoMutt is worth mentioning, which brings added "
 "features.  See more on the link:https://neomutt.org/about.html[NeoMutt "
 "website].  If NeoMutt was chosen, replace the following command examples "
 "from `mutt` to `neomutt`."
-msgstr ""
+msgstr "值得一提的是 Mutt 的一个分支 NeoMutt，它增加了一些功能。详情请参阅 link:https://neomutt.org/about.html[NeoMutt 网站]。如果选择使用 NeoMutt，请将以下命令示例中的 `mutt` 替换为 `neomutt`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:603
+#, fuzzy
 msgid ""
 "Mutt may be installed using the package:mail/mutt[] port.  After the port "
 "has been installed, Mutt can be started by issuing the following command:"
-msgstr ""
+msgstr "可以通过 package:mail/mutt[] 移植软件包安装 Mutt。安装该移植软件包后，可以运行以下命令启动 Mutt："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:607
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% mutt\n"
-msgstr ""
+msgstr "% mutt\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:612
+#, fuzzy
 msgid ""
 "Mutt will automatically read and display the contents of the user mailbox in "
 "[.filename]#/var/mail#.  If no mails are found, Mutt will wait for commands "
 "from the user.  The example below shows Mutt displaying a list of messages:"
-msgstr ""
+msgstr "Mutt 会自动读取并显示 [.filename]#/var/mail# 中的用户邮箱内容。如果没有找到邮件，Mutt 会等待用户输入命令。以下示例展示了 Mutt 显示的邮件列表："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:613
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mutt email client showing a list of messages"
-msgstr ""
+msgstr "Mutt 电子邮件客户端显示邮件列表"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:613
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mutt1.png"
-msgstr ""
+msgstr "mutt1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:617
+#, fuzzy
 msgid ""
 "To read an email, select it using the cursor keys and press kbd:[Enter].  An "
 "example of Mutt displaying email can be seen below:"
-msgstr ""
+msgstr "要阅读电子邮件，请使用光标键选中它，然后按 kbd:[Enter]。以下示例展示了 Mutt 显示的电子邮件："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mutt email client displaying an email"
-msgstr ""
+msgstr "Mutt 电子邮件客户端显示一封电子邮件"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:618
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mutt2.png"
-msgstr ""
+msgstr "mutt2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:623
+#, fuzzy
 msgid ""
 "Similar to man:mail[1], Mutt can be used to reply only to the sender of the "
 "message as well as to all recipients.  To reply only to the sender of the "
 "email, press kbd:[r].  To send a group reply to the original sender as well "
 "as all the message recipients, press kbd:[g]."
-msgstr ""
+msgstr "与 man:mail[1] 类似，Mutt 可以只回复邮件发件人，也可以回复所有收件人。要只回复发件人，请按 kbd:[r]。要向原发件人及邮件的所有收件人发送群组回复，请按 kbd:[g]。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:629
+#, fuzzy
 msgid ""
 "By default, Mutt uses the man:vi[1] editor for creating and replying to "
 "emails.  Each user can customize this by creating or editing the [."
 "filename]#.muttrc# in their home directory and setting the `editor` variable "
 "or by setting the `EDITOR` environment variable.  Refer to link:http://www."
 "mutt.org/[http://www.mutt.org/] for more information about configuring Mutt."
-msgstr ""
+msgstr "默认情况下，Mutt 使用 man:vi[1] 编辑器撰写和回复电子邮件。每位用户都可以在自己的主目录中创建或编辑 [.filename]#.muttrc#，并设置 `editor` 变量来自定义编辑器；也可以设置 `EDITOR` 环境变量。有关配置 Mutt 的更多信息，请参阅 link:http://www.mutt.org/[http://www.mutt.org/]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:637
+#, fuzzy
 msgid ""
 "To compose a new mail message, press kbd:[m].  After a valid subject has "
 "been given, Mutt will start man:vi[1] so the email can be written.  Once the "
@@ -1316,39 +1390,41 @@ msgid ""
 "resume, displaying a summary screen of the mail that is to be delivered.  In "
 "order to send the mail, press kbd:[y].  An example of the summary screen can "
 "be seen below:"
-msgstr ""
+msgstr "要撰写新邮件，请按 kbd:[m]。输入有效的主题后，Mutt 会启动 man:vi[1]，以便撰写邮件。邮件内容完成后，请在 `vi` 中保存并退出。Mutt 随后会返回并显示待发送邮件的摘要界面。要发送邮件，请按 kbd:[y]。摘要界面示例如下："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Mutt email client showing the summary screen"
-msgstr ""
+msgstr "Mutt 电子邮件客户端显示摘要界面"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:638
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "mutt3.png"
-msgstr ""
+msgstr "mutt3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:642
+#, fuzzy
 msgid ""
 "Mutt contains extensive help which can be accessed from most of the menus by "
 "pressing kbd:[?].  The top line also displays the keyboard shortcuts where "
 "appropriate."
-msgstr ""
+msgstr "Mutt 提供了丰富的帮助信息，在大多数菜单中按 kbd:[?] 即可查看。适用时，屏幕顶行也会显示键盘快捷键。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:644
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alpine"
-msgstr ""
+msgstr "alpine"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:647
+#, fuzzy
 msgid ""
 "alpine is aimed at a beginner user, but also includes some advanced features."
-msgstr ""
+msgstr "alpine 面向初学者，同时也包含一些高级功能。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:653
@@ -1369,20 +1445,22 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:657
+#, fuzzy
 msgid ""
 "The current version of alpine may be installed using the package:mail/"
 "alpine[] port.  Once the port has installed, alpine can be started by "
 "issuing the following command:"
-msgstr ""
+msgstr "可以通过 package:mail/alpine[] 移植软件包安装当前版本的 alpine。安装该移植软件包后，可以运行以下命令启动 alpine："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:661
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "% alpine\n"
-msgstr ""
+msgstr "% alpine\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:667
+#, fuzzy
 msgid ""
 "The first time alpine runs, it displays a greeting page with a brief "
 "introduction, as well as a request from the alpine development team to send "
@@ -1390,19 +1468,19 @@ msgid ""
 "their client.  To send this anonymous message, press kbd:[Enter].  "
 "Alternatively, press kbd:[E] to exit the greeting without sending an "
 "anonymous message.  An example of the greeting page is shown below:"
-msgstr ""
+msgstr "alpine 首次运行时会显示欢迎页面，其中包含简短介绍，并请求用户向 alpine 开发团队发送一封匿名邮件，以便他们估算有多少用户在使用该客户端。要发送这封匿名邮件，请按 kbd:[Enter]。也可以按 kbd:[E] 退出欢迎页面，而不发送匿名邮件。欢迎页面示例如下："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:668
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alpine email client showing the greeting page"
-msgstr ""
+msgstr "alpine 电子邮件客户端显示欢迎页面"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:668
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pine1.png"
-msgstr ""
+msgstr "pine1.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:673
@@ -1426,93 +1504,98 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:676
+#, fuzzy
 msgid ""
 "The default directory opened by alpine is [.filename]#inbox#.  To view the "
 "message index, press kbd:[I], or select the [.guimenuitem]#MESSAGE INDEX# "
 "option shown below:"
-msgstr ""
+msgstr "alpine 默认打开的目录是 [.filename]#inbox#。要查看邮件索引，请按 kbd:[I]，或选择下方显示的 [.guimenuitem]#MESSAGE INDEX# 选项："
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:677
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alpine email client showing the default directory"
-msgstr ""
+msgstr "alpine 电子邮件客户端显示默认目录"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:677
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pine2.png"
-msgstr ""
+msgstr "pine2.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:681
+#, fuzzy
 msgid ""
 "The message index shows messages in the current directory and can be "
 "navigated by using the cursor keys.  Highlighted messages can be read by "
 "pressing kbd:[Enter]."
-msgstr ""
+msgstr "邮件索引会显示当前目录中的邮件，可以使用光标键浏览。按 kbd:[Enter] 可以阅读高亮显示的邮件。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:682
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alpine email client showing the message index"
-msgstr ""
+msgstr "alpine 电子邮件客户端显示邮件索引"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:682
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pine3.png"
-msgstr ""
+msgstr "pine3.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:687
+#, fuzzy
 msgid ""
 "In the screenshot below, a sample message is displayed by alpine.  "
 "Contextual keyboard shortcuts are displayed at the bottom of the screen.  An "
 "example of one of a shortcut is kbd:[r], which tells the MUA to reply to the "
 "current message being displayed."
-msgstr ""
+msgstr "下方的屏幕截图展示了 alpine 显示的一封示例邮件。屏幕底部会显示上下文相关的键盘快捷键。例如，kbd:[r] 可让 MUA 回复当前显示的邮件。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:688
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alpine email client showing an email"
-msgstr ""
+msgstr "alpine 电子邮件客户端显示一封电子邮件"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:688
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pine4.png"
-msgstr ""
+msgstr "pine4.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:694
+#, fuzzy
 msgid ""
 "Replying to an email in alpine is done using the pico editor, which is "
 "installed by default with alpine.  pico makes it easy to navigate the "
 "message and is easier for novice users to use than man:vi[1] or man:"
 "mail[1].  Once the reply is complete, the message can be sent by pressing "
 "kbd:[Ctrl+X].  alpine will ask for confirmation before sending the message."
-msgstr ""
+msgstr "在 alpine 中回复电子邮件时会使用 pico 编辑器，该编辑器默认随 alpine 一起安装。pico 便于浏览邮件，对于新手用户来说，比 man:vi[1] 或 man:mail[1] 更容易使用。完成回复后，按 kbd:[Ctrl+X] 即可发送邮件。alpine 会在发送前请求确认。"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: documentation/content/en/books/handbook/mail/_index.adoc:695
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "alpine email client showing the message compose window"
-msgstr ""
+msgstr "alpine 电子邮件客户端显示邮件撰写窗口"
 
 #. type: Target for macro image
 #: documentation/content/en/books/handbook/mail/_index.adoc:695
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "pine5.png"
-msgstr ""
+msgstr "pine5.png"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:698
+#, fuzzy
 msgid ""
 "alpine can be customized using the [.guimenuitem]#SETUP# option from the "
 "main menu."
-msgstr ""
+msgstr "可以通过主菜单中的 [.guimenuitem]#SETUP# 选项自定义 alpine。"
 
 #. type: Title ==
 #: documentation/content/en/books/handbook/mail/_index.adoc:700
@@ -1548,13 +1631,15 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:711
+#, fuzzy
 msgid "Run a DNS server for the domain."
-msgstr ""
+msgstr "为该域运行 DNS 服务器。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:712
+#, fuzzy
 msgid "Get mail delivered directly to the FQDN for the machine."
-msgstr ""
+msgstr "让邮件直接投递到该机器的 FQDN。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:716
@@ -1576,15 +1661,17 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:718
+#, fuzzy
 msgid ""
 "Make sure that the lowest-numbered MX record in DNS points to the host's "
 "static IP address."
-msgstr ""
+msgstr "确保 DNS 中编号最小的 MX 记录指向主机的静态 IP 地址。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:719
+#, fuzzy
 msgid "Make sure there is no MX entry in the DNS for the host."
-msgstr ""
+msgstr "确保 DNS 中没有该主机的 MX 记录。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:721
@@ -1599,45 +1686,47 @@ msgstr "试试这个："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:727
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# hostname\n"
-msgstr ""
+msgstr "# hostname\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:730
 #: documentation/content/en/books/handbook/mail/_index.adoc:742
 #: documentation/content/en/books/handbook/mail/_index.adoc:760
+#, fuzzy
 msgid "The output should be similar to the following:"
-msgstr ""
+msgstr "输出应类似于以下内容："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:734
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example.FreeBSD.org\n"
-msgstr ""
+msgstr "example.FreeBSD.org\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:739
 #: documentation/content/en/books/handbook/mail/_index.adoc:757
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# host example.FreeBSD.org\n"
-msgstr ""
+msgstr "# host example.FreeBSD.org\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:746
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "example.FreeBSD.org has address 204.216.27.XX\n"
-msgstr ""
+msgstr "example.FreeBSD.org has address 204.216.27.XX\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:751
+#, fuzzy
 msgid ""
 "In this example, mail sent directly to mailto:yourlogin@example.FreeBSD."
 "org[yourlogin@example.FreeBSD.org] should work without problems, assuming a "
 "full-featured MTA is running correctly on `example.FreeBSD.org`.  Note that "
 "man:dma[8] does not listen on port 25 for incoming connections and cannot be "
 "used in this scenario."
-msgstr ""
+msgstr "在此示例中，直接发送到 mailto:yourlogin@example.FreeBSD.org[yourlogin@example.FreeBSD.org] 的邮件应该可以正常投递，前提是 `example.FreeBSD.org` 上运行的功能齐全的 MTA 正常工作。请注意，man:dma[8] 不会监听端口 25 上的传入连接，因此不能用于此场景。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:753
@@ -1646,32 +1735,35 @@ msgstr "对这个例子："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:765
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "example.FreeBSD.org has address 204.216.27.XX\n"
 "example.FreeBSD.org mail is handled (pri=10) by nevdull.FreeBSD.org\n"
-msgstr ""
+msgstr "example.FreeBSD.org has address 204.216.27.XX\nexample.FreeBSD.org mail is handled (pri=10) by nevdull.FreeBSD.org\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:768
+#, fuzzy
 msgid ""
 "All mail sent to `example.FreeBSD.org` will be collected on `nevdull` under "
 "the same username instead of being sent directly to the local host."
-msgstr ""
+msgstr "所有发送到 `example.FreeBSD.org` 的邮件都会投递到 `nevdull` 上同名的用户，而不是直接发送到本地主机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:772
+#, fuzzy
 msgid ""
 "The above information is handled by the DNS server.  The DNS record that "
 "carries mail routing information is the link:https://en.wikipedia.org/wiki/"
 "MX_record[mail exchanger record (MX record)].  If no MX record exists, mail "
 "will be delivered directly to the host by way of its IP address."
-msgstr ""
+msgstr "上述信息由 DNS 服务器处理。用于承载邮件路由信息的 DNS 记录称为 link:https://en.wikipedia.org/wiki/MX_record[邮件交换记录（MX 记录）]。如果不存在 MX 记录，邮件将通过 IP 地址直接投递到主机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:774
+#, fuzzy
 msgid "The MX entry for `freefall.FreeBSD.org` at one time looked like this:"
-msgstr ""
+msgstr "`freefall.FreeBSD.org` 的 MX 记录曾如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:781
@@ -1689,19 +1781,21 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:786
+#, fuzzy
 msgid ""
 "`freefall` had many MX entries.  The lowest MX number is the host that "
 "receives mail directly, if available.  If it is not accessible for some "
 "reason, the next lower-numbered host will accept messages temporarily, and "
 "pass it along when a lower-numbered host becomes available."
-msgstr ""
+msgstr "`freefall` 有多个 MX 记录。如果可用，MX 编号最小的主机将直接接收邮件。如果由于某种原因该主机无法访问，编号次小的主机将临时接收邮件，并在编号更小的主机恢复可用后转发邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:789
+#, fuzzy
 msgid ""
 "Alternate MX sites should have separate Internet connections in order to be "
 "most useful.  The ISP can provide this service."
-msgstr ""
+msgstr "备用 MX 站点应使用独立的 Internet 连接，这样才能发挥最大作用。ISP 可以提供这项服务。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:791
@@ -1711,36 +1805,40 @@ msgstr "网域中的邮件"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:794
+#, fuzzy
 msgid ""
 "When configuring an MTA for a network, any mail sent to hosts in its domain "
 "should be diverted to the MTA so that users can receive their mail on the "
 "master mail server."
-msgstr ""
+msgstr "为网络配置 MTA 时，应将发往其域内主机的邮件转发到 MTA，以便用户在主邮件服务器上收取邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:797
+#, fuzzy
 msgid ""
 "To make life easiest, a user account with the same _username_ should exist "
 "on both the MTA and the system with the MUA.  Use man:adduser[8] to create "
 "the user accounts."
-msgstr ""
+msgstr "为方便起见，MTA 和运行 MUA 的系统上应具有相同的__用户名__用户账户。使用 man:adduser[8] 创建用户账户。"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:802
+#, fuzzy
 msgid ""
 "In addition to adding local users to the host, there are alternative methods "
 "known as virtual users.  Programs like link:https://www.cyrusimap.org/"
 "[Cyrus] and link:https://www.dovecot.org/[Dovecot] can be integrated into "
 "MTAs to handle users, mail storage, and also provide access via POP3 and "
 "IMAP."
-msgstr ""
+msgstr "除了在主机上添加本地用户之外，还有一种称为虚拟用户的替代方法。可以将 link:https://www.cyrusimap.org/[Cyrus] 和 link:https://www.dovecot.org/[Dovecot] 等程序集成到 MTA 中，以处理用户和邮件存储，并提供 POP3 和 IMAP 访问。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:806
+#, fuzzy
 msgid ""
 "The MTA must be the designated mail exchanger for each workstation on the "
 "network.  This is done in the DNS configuration with an MX record:"
-msgstr ""
+msgstr "MTA 必须是网络中每台工作站指定的邮件交换服务器。这需要在 DNS 配置中设置 MX 记录："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:811
@@ -1754,34 +1852,39 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:815
+#, fuzzy
 msgid ""
 "This will redirect mail for the workstation to the MTA no matter where the A "
 "record points.  The mail is sent to the MX host."
-msgstr ""
+msgstr "无论 A 记录指向何处，这都会将发往工作站的邮件转发到 MTA。邮件将发送到 MX 主机。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:818
+#, fuzzy
 msgid ""
 "This must be configured on a DNS server.  If the network does not run its "
 "own DNS server, talk to the ISP or DNS provider."
-msgstr ""
+msgstr "这必须在 DNS 服务器上配置。如果网络没有自己的 DNS 服务器，请联系 ISP 或 DNS 提供商。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:820
+#, fuzzy
 msgid "The following is an example of virtual email hosting."
-msgstr ""
+msgstr "以下是虚拟电子邮件托管的示例。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:822
+#, fuzzy
 msgid ""
 "Consider a customer with the domain `customer1.org`, where all the mail for "
 "`customer1.org` should be sent to `mail.myhost.com`."
-msgstr ""
+msgstr "假设有一位客户，其域名为 `customer1.org`，所有发往 `customer1.org` 的邮件都应发送到 `mail.myhost.com`。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:824
+#, fuzzy
 msgid "The DNS entry should look like this:"
-msgstr ""
+msgstr "DNS 记录应如下所示："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:828
@@ -1791,30 +1894,34 @@ msgstr "customer1.org\t\tMX\t10\tmail.myhost.com\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:832
+#, fuzzy
 msgid ""
 "An `A` record is _not_ needed for `customer1.org` in order to only handle "
 "email for that domain.  However, running `ping` against `customer1.org` will "
 "not work unless an `A` record exists for it."
-msgstr ""
+msgstr "对于 `customer1.org`，如果只处理该域的电子邮件，则__不__需要 `A` 记录。但是，除非存在对应的 `A` 记录，否则对 `customer1.org` 执行 `ping` 将无法正常工作。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:835
+#, fuzzy
 msgid ""
 "Tell the MTA which domains and/or hostnames it should accept mail for.  "
 "Either of the following will work for Sendmail:"
-msgstr ""
+msgstr "告知 MTA 应为哪些域和／或主机名接收邮件。以下任一方式都适用于 Sendmail："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:837
+#, fuzzy
 msgid ""
 "Add the hosts to [.filename]#/etc/mail/local-host-names# when using the "
 "`FEATURE(use_cw_file)`."
-msgstr ""
+msgstr "使用 `FEATURE(use_cw_file)` 时，将主机添加到 [.filename]#/etc/mail/local-host-names#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:838
+#, fuzzy
 msgid "Add a `Cwyour.host.com` line to [.filename]#/etc/sendmail.cf#."
-msgstr ""
+msgstr "在 [.filename]#/etc/sendmail.cf# 中添加一行 `Cwyour.host.com`。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:840
@@ -1835,10 +1942,11 @@ msgstr "有时，人们想通过中继发送邮件。例如："
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:846
+#, fuzzy
 msgid ""
 "The computer is a desktop machine that needs to use programs such as man:"
 "mail[1], using the ISP's mail relay."
-msgstr ""
+msgstr "这台计算机是桌面机器，需要使用 man:mail[1] 等程序，并通过 ISP 的邮件中继发送邮件。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:847
@@ -1851,49 +1959,54 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:850
+#, fuzzy
 msgid ""
 "While any MTA is capable of filling this particular niche, it can be "
 "difficult to properly configure a full-featured MTA just to handle "
 "offloading mail.  Programs such as Sendmail and Postfix are overkill for "
 "this use."
-msgstr ""
+msgstr "任何 MTA 都可以胜任这一特定用途，但仅为转发邮件而正确配置功能齐全的 MTA 可能很困难。Sendmail 和 Postfix 等程序用于此用途有些大材小用。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:852
+#, fuzzy
 msgid ""
 "Additionally, a typical Internet access service agreement may forbid one "
 "from running a \"mail server\"."
-msgstr ""
+msgstr "此外，典型的互联网接入服务协议可能禁止用户运行“邮件服务器”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:856
+#, fuzzy
 msgid ""
 "The easiest way to fulfill those needs is to use the man:dma[8] MTA included "
 "in the crossref:mail[configuring-dragonfly-mail-agent, base system].  For "
 "systems up to 13.2, need be to installed from ports."
-msgstr ""
+msgstr "满足这些需求的最简单方法是使用 crossref:mail[configuring-dragonfly-mail-agent, 基本系统]中包含的 man:dma[8] MTA。对于 13.2 及更早版本的系统，需要从 ports 安装。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:858
+#, fuzzy
 msgid ""
 "In addition to man:dma[8], third-party software can be used to achieve the "
 "same, like package:mail/ssmtp[]."
-msgstr ""
+msgstr "除了 man:dma[8]，也可以使用第三方软件实现相同功能，例如 package:mail/ssmtp[]。"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:863
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/ports/mail/ssmtp\n"
 "# make install replace clean\n"
-msgstr ""
+msgstr "# cd /usr/ports/mail/ssmtp\n# make install replace clean\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:866
+#, fuzzy
 msgid ""
 "Once installed, package:mail/ssmtp[] can be configured with [.filename]#/usr/"
 "local/etc/ssmtp/ssmtp.conf#:"
-msgstr ""
+msgstr "安装后，可以通过 [.filename]#/usr/local/etc/ssmtp/ssmtp.conf# 配置 package:mail/ssmtp[]："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:873
@@ -1911,32 +2024,36 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:878
+#, fuzzy
 msgid ""
 "Use the real email address for `root`.  Enter the ISP's outgoing mail relay "
 "in place of `mail.example.com`.  Some ISPs call this the \"outgoing mail "
 "server\" or \"SMTP server\"."
-msgstr ""
+msgstr "为 `root` 使用真实的电子邮件地址。将 ISP 的外发邮件中继填入 `mail.example.com` 所在的位置。有些 ISP 将其称为“外发邮件服务器”或“SMTP 服务器”。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:880
+#, fuzzy
 msgid "Make sure to disable Sendmail, including the outgoing mail service."
-msgstr ""
+msgstr "请务必禁用 Sendmail，包括外发邮件服务。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:882
+#, fuzzy
 msgid ""
 "package:mail/ssmtp[] has some other options available. Refer to the examples "
 "in [.filename]#/usr/local/etc/ssmtp# or the manual page of ssmtp for more "
 "information."
-msgstr ""
+msgstr "package:mail/ssmtp[] 还提供其他选项。有关详情，请参阅 [.filename]#/usr/local/etc/ssmtp# 中的示例或 ssmtp 的手册页。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:884
+#, fuzzy
 msgid ""
 "Setting up ssmtp in this manner allows any software on the computer that "
 "needs to send mail to function properly, while not violating the ISP's usage "
 "policy or allowing the computer to be hijacked for spamming."
-msgstr ""
+msgstr "以这种方式设置 ssmtp 后，计算机上任何需要发送邮件的软件都能正常工作，同时不会违反 ISP 的使用政策，也不会让计算机遭劫持而被用于发送垃圾邮件。"
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/mail/_index.adoc:886
@@ -1947,12 +2064,13 @@ msgstr "SMTP认证"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:890
+#, fuzzy
 msgid ""
 "Configuring SMTP authentication on the MTA provides a number of benefits.  "
 "SMTP authentication adds a layer of security to Sendmail, and provides "
 "mobile users who switch hosts the ability to use the same MTA without the "
 "need to reconfigure their mail client's settings each time."
-msgstr ""
+msgstr "在 MTA 上配置 SMTP 身份验证有多项好处。SMTP 身份验证为 Sendmail 增加了一层安全保护，并使切换主机的移动用户能够使用同一个 MTA，而不必每次都重新配置邮件客户端。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:894
@@ -1986,10 +2104,11 @@ msgstr "pwcheck_method: saslauthd\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:903
+#, fuzzy
 msgid ""
 "Next, install package:security/cyrus-sasl2-saslauthd[] and add execute the "
 "following command:"
-msgstr ""
+msgstr "接下来，安装 package:security/cyrus-sasl2-saslauthd[]，并添加执行以下命令："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:907
@@ -2004,18 +2123,19 @@ msgstr "最后启动 saslauthd ："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:914
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "# service saslauthd start\n"
-msgstr ""
+msgstr "# service saslauthd start\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:918
+#, fuzzy
 msgid ""
 "This daemon serves as a broker for Sendmail to authenticate against the "
 "FreeBSD man:passwd[5] database.  This saves the trouble of creating a new "
 "set of usernames and passwords for each user that needs to use SMTP "
 "authentication, and keeps the login and mail password the same."
-msgstr ""
+msgstr "此守护进程充当代理，让 Sendmail 能够通过 FreeBSD man:passwd[5] 数据库进行身份验证。这样就不必为每个需要使用 SMTP 身份验证的用户另建一组用户名和密码，并且登录密码与邮件密码可以保持一致。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:920
@@ -2035,20 +2155,22 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:929
+#, fuzzy
 msgid ""
 "These lines provide Sendmail the proper configuration options for linking to "
 "package:cyrus-sasl2[] at compile time.  Make sure that package:cyrus-sasl2[] "
 "has been installed before recompiling Sendmail."
-msgstr ""
+msgstr "这些行会为 Sendmail 提供正确的配置选项，以便在编译时链接到 package:cyrus-sasl2[]。重新编译 Sendmail 前，请确保已安装 package:cyrus-sasl2[]。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:931
+#, fuzzy
 msgid "Recompile Sendmail by executing the following commands:"
-msgstr ""
+msgstr "执行以下命令重新编译 Sendmail："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:940
-#, no-wrap
+#, no-wrap, fuzzy
 msgid ""
 "# cd /usr/src/lib/libsmutil\n"
 "# make cleandir && make obj && make\n"
@@ -2056,7 +2178,7 @@ msgid ""
 "# make cleandir && make obj && make\n"
 "# cd /usr/src/usr.sbin/sendmail\n"
 "# make cleandir && make obj && make && make install\n"
-msgstr ""
+msgstr "# cd /usr/src/lib/libsmutil\n# make cleandir && make obj && make\n# cd /usr/src/lib/libsm\n# make cleandir && make obj && make\n# cd /usr/src/usr.sbin/sendmail\n# make cleandir && make obj && make && make install\n"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:943
@@ -2070,17 +2192,19 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:946
+#, fuzzy
 msgid ""
 "After Sendmail has been compiled and reinstalled, edit [.filename]#/etc/mail/"
 "freebsd.mc# or the local [.filename]#.mc#.  Many administrators choose to "
 "use the output from man:hostname[1] as the name of [.filename]#.mc# for "
 "uniqueness."
-msgstr ""
+msgstr "Sendmail 编译并重新安装后，编辑 [.filename]#/etc/mail/freebsd.mc# 或本地的 [.filename]#.mc# 文件。许多管理员会使用 man:hostname[1] 的输出作为 [.filename]#.mc# 的名称，以确保其唯一。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:948
+#, fuzzy
 msgid "Add these lines:"
-msgstr ""
+msgstr "添加以下几行："
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/mail/_index.adoc:954
@@ -2096,48 +2220,54 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:958
+#, fuzzy
 msgid ""
 "These options configure the different methods available to Sendmail for "
 "authenticating users.  To use a method other than pwcheck, refer to the "
 "Sendmail documentation."
-msgstr ""
+msgstr "这些选项用于配置 Sendmail 可采用的不同用户身份验证方法。若要使用 pwcheck 以外的方法，请参阅 Sendmail 文档。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:961
+#, fuzzy
 msgid ""
 "Finally, run man:make[1] while in [.filename]#/etc/mail#.  That will run the "
 "new [.filename]#.mc# and create a [.filename]#.cf# named either [."
 "filename]#freebsd.cf# or the name used for the local [.filename]#.mc#."
-msgstr ""
+msgstr "最后，在 [.filename]#/etc/mail# 中运行 man:make[1]。该命令会处理新的 [.filename]#.mc# 文件，并生成一个 [.filename]#.cf# 文件，名称为 [.filename]#freebsd.cf# 或本地 [.filename]#.mc# 文件所用的名称。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:963
+#, fuzzy
 msgid ""
 "Then, run `make install restart`, which will copy the file to [."
 "filename]#sendmail.cf#, and properly restart Sendmail."
-msgstr ""
+msgstr "然后运行 `make install restart`，这会将文件复制为 [.filename]#sendmail.cf#，并正确重启 Sendmail。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:965
+#, fuzzy
 msgid ""
 "For more information about this process, refer to [.filename]#/etc/mail/"
 "Makefile#."
-msgstr ""
+msgstr "有关此过程的更多信息，请参阅 [.filename]#/etc/mail/Makefile#。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:968
+#, fuzzy
 msgid ""
 "To test the configuration, use a MUA to send a test message.  For further "
 "investigation, set the `LogLevel` of Sendmail to `13` and watch [.filename]#/"
 "var/log/maillog# for any errors."
-msgstr ""
+msgstr "要测试配置，请使用 MUA 发送一封测试邮件。若要进一步排查问题，请将 Sendmail 的 `LogLevel` 设置为 `13`，并检查 [.filename]#/var/log/maillog# 中是否有错误。"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/mail/_index.adoc:969
+#, fuzzy
 msgid ""
 "For more information, refer to http://www.sendmail.org/~ca/email/auth."
 "html[SMTP authentication]."
-msgstr ""
+msgstr "有关更多信息，请参阅 link:http://www.sendmail.org/~ca/email/auth.html[SMTP 身份验证]。"
 
 #~ msgid "After reading this chapter, you will know:"
 #~ msgstr "读完本章节，你将会知道："
